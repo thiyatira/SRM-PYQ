@@ -58,9 +58,8 @@ const SUBJECT_FILES: Record<string, string[]> = {
     // "2022-23_CT2_Set7_QP-Key.json",
     "2023-05-09_CT2_SetA_QP.json",
     "2023-07_ET_Sample-QP.json",
-    "2023-09-11_CT1_Set1_QP-Key.json",
-    "2023-10-05_CT1_Set1_QP.json",
     "2023-10_CT1_Set5-6_Key.json",
+    "2023-10-05_CT1_Set1_QP.json",
     "2023-11-03_CT2_Set3_Key.json",
     "2023-11-28_CT2_QP-Key.json",
     "2023-24_CT1_Set2_QP.json",
@@ -134,6 +133,7 @@ const Home: React.FC = () => {
   const [units, setUnits] = useState<string[]>([]);
   const [filterPaper, setFilterPaper] = useState("all");
   const [filterUnit, setFilterUnit] = useState("all");
+  const [filterMinMarks, setFilterMinMarks] = useState(0);
   const [showAllAnswers, setShowAllAnswers] = useState(false);
   const [loading, setLoading] = useState(false);
   const [dark, setDark] = useDarkMode();
@@ -179,7 +179,8 @@ const Home: React.FC = () => {
   const filteredQuestions = questions.filter(q => {
     const paperMatch = !filterPaper || filterPaper === 'all' || (q.source && q.source === filterPaper);
     const unitMatch = !filterUnit || filterUnit === 'all' || (extractUnit(q.chapter) === filterUnit);
-    return paperMatch && unitMatch;
+    const marksMatch = (q.marks || 0) >= filterMinMarks;
+    return paperMatch && unitMatch && marksMatch;
   });
 
   const unitMap: Record<string, Question[]> = {};
@@ -188,6 +189,16 @@ const Home: React.FC = () => {
     if (!unitMap[unitKey]) unitMap[unitKey] = [];
     unitMap[unitKey].push(q);
   }
+
+  // Sort questions within each unit by marks
+  Object.keys(unitMap).forEach(unit => {
+    unitMap[unit].sort((a, b) => {
+      const marksA = a.marks || 0;
+      const marksB = b.marks || 0;
+      return marksA - marksB;
+    });
+  });
+
   const sortedUnits = Object.keys(unitMap).sort((a, b) => {
     const anum = parseInt((a || "").replace(/\D/g, '')) || 99;
     const bnum = parseInt((b || "").replace(/\D/g, '')) || 99;
@@ -204,7 +215,7 @@ const Home: React.FC = () => {
         <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-6">
           <div className="flex items-center gap-2">
             <label htmlFor="subjectSelect" className="font-semibold text-gray-800 dark:text-gray-200">Subject:</label>
-            <select id="subjectSelect" value={subject} onChange={e => { setSubject(e.target.value); setFilterPaper('all'); setFilterUnit('all'); }} className="rounded bg-white dark:bg-neutral-700 text-gray-900 dark:text-white px-3 py-1 border border-gray-300 dark:border-neutral-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <select id="subjectSelect" value={subject} onChange={e => { setSubject(e.target.value); setFilterPaper('all'); setFilterUnit('all'); setFilterMinMarks(0); }} className="rounded bg-white dark:bg-neutral-700 text-gray-900 dark:text-white px-3 py-1 border border-gray-300 dark:border-neutral-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
               {SUBJECTS.map(s => (
                 <option key={s.code} value={s.code}>{s.name}</option>
               ))}
@@ -239,6 +250,27 @@ const Home: React.FC = () => {
             {showAllAnswers ? "Hide All Answers" : "Show All Answers"}
           </button>
         </div>
+
+        {/* Mark Filter Slider */}
+        <div className="flex flex-col items-center mb-6">
+          <label htmlFor="markFilter" className="font-semibold text-gray-800 dark:text-gray-200 mb-2">
+            Minimum Marks: {filterMinMarks}
+          </label>
+          <div className="flex items-center gap-4 w-full max-w-md">
+            <span className="text-sm text-gray-600 dark:text-gray-400">0</span>
+            <input
+              id="markFilter"
+              type="range"
+              min="0"
+              max="20"
+              value={filterMinMarks}
+              onChange={(e) => setFilterMinMarks(parseInt(e.target.value))}
+              className="flex-1 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-neutral-700"
+            />
+            <span className="text-sm text-gray-600 dark:text-gray-400">20</span>
+          </div>
+        </div>
+
         <div id="content">
           {loading ? (
             <div className="text-center text-gray-500 dark:text-gray-400">Loading...</div>
