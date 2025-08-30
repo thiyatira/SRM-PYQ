@@ -72,6 +72,21 @@ const SUBJECT_FILES: Record<string, string[]> = {
   ]
 };
 
+interface Question {
+  question_text: string;
+  answer: string;
+  chapter?: string;
+  marks?: number;
+  source?: string;
+  answer_source?: string;
+}
+
+interface PaperData {
+  questions: Question[];
+  source?: string;
+  paper_title?: string;
+}
+
 function extractUnit(chapter?: string) {
   if (!chapter) return "Other";
   const match = chapter.match(/Unit\s*([1-5])/i);
@@ -81,7 +96,7 @@ function extractUnit(chapter?: string) {
 
 function markdownToHtml(md?: string) {
   if (!md) return "";
-  let html = md
+  const html = md
     .replace(/```([\s\S]*?)```/g, (m, code) => `<pre><code>${code.replace(/</g, "&lt;").replace(/>/g, "&gt;")}</code></pre>`)
     .replace(/`([^`]+)`/g, '<code>$1</code>')
     .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
@@ -114,7 +129,7 @@ const useDarkMode = () => {
 
 const Home: React.FC = () => {
   const [subject, setSubject] = useState("PPS");
-  const [questions, setQuestions] = useState<any[]>([]);
+  const [questions, setQuestions] = useState<Question[]>([]);
   const [papers, setPapers] = useState<string[]>([]);
   const [units, setUnits] = useState<string[]>([]);
   const [filterPaper, setFilterPaper] = useState("all");
@@ -127,23 +142,24 @@ const Home: React.FC = () => {
     async function load() {
       setLoading(true);
       const fileList = SUBJECT_FILES[subject] || [];
-      let allQuestions: any[] = [];
-      let allPapersSet = new Set<string>();
-      let allUnitsSet = new Set<string>();
+      let allQuestions: Question[] = [];
+      const allPapersSet = new Set<string>();
+      const allUnitsSet = new Set<string>();
       for (const file of fileList) {
         try {
           const res = await fetch(`/data/${subject}/${file}`);
           if (!res.ok) continue;
-          const data = await res.json();
-          let qs: any[] = [];
+          const data: PaperData | Question[] = await res.json();
+          let qs: Question[] = [];
           if (Array.isArray(data)) {
             qs = data;
           } else if (data.questions) {
             qs = data.questions;
           }
           for (const q of qs) {
-            q.source = data.source || data.paper_title || file;
-            allPapersSet.add(q.source);
+            const source = Array.isArray(data) ? file : (data.source || data.paper_title || file);
+            q.source = source;
+            allPapersSet.add(source);
             const unit = extractUnit(q.chapter);
             if (unit) allUnitsSet.add(unit);
           }
@@ -161,12 +177,12 @@ const Home: React.FC = () => {
   }, [subject]);
 
   const filteredQuestions = questions.filter(q => {
-    let paperMatch = !filterPaper || filterPaper === 'all' || (q.source && q.source === filterPaper);
-    let unitMatch = !filterUnit || filterUnit === 'all' || (extractUnit(q.chapter) === filterUnit);
+    const paperMatch = !filterPaper || filterPaper === 'all' || (q.source && q.source === filterPaper);
+    const unitMatch = !filterUnit || filterUnit === 'all' || (extractUnit(q.chapter) === filterUnit);
     return paperMatch && unitMatch;
   });
 
-  const unitMap: Record<string, any[]> = {};
+  const unitMap: Record<string, Question[]> = {};
   for (const q of filteredQuestions) {
     const unitKey = extractUnit(q.chapter);
     if (!unitMap[unitKey]) unitMap[unitKey] = [];
