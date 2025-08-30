@@ -1,0 +1,158 @@
+{
+    "paper_title": "CONTINOUS LEARNING (THEORY) ASSESSMENT– II",
+    "source": "2021-01-12_CT2_Key.pdf",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "Which of the following operator takes only integer operands?\nA) +\nB) /\nC) %\nD) None of these",
+            "marks": 1,
+            "answer": "ANSWER:C",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming - Writing algorithms & Pseudo code - Single line and multiline comments - Introduction to C: Structure of the C program - Input and output statements. Variables and identifiers, Constants, Keywords - Values, Names, Scope, Binding, Storage Classes - Numeric Data types: integer, floating point Non-Numeric Data types: char and string - L value and R value in expression, Increment and decrement operator - Comma, Arrow and Assignment operator, Bitwise and Size-of operator - Arithmetic, Relational and logical Operators - Condition Operators, Operator Precedence - Expressions with pre / post increment operator."
+        },
+        {
+            "question_number": "2",
+            "question_text": "In an expression involving || operator, evaluation\nI) Will be stopped if one of its components evaluates to false\nII) Will be stopped if one of its components evaluates to true\nIII) Takes place from right to left\nIV) Takes place from left to right\n\nA) I and II\nB) I and III\nC) II and III\nD) II and IV",
+            "marks": 1,
+            "answer": "ANSWER:D",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming - Writing algorithms & Pseudo code - Single line and multiline comments - Introduction to C: Structure of the C program - Input and output statements. Variables and identifiers, Constants, Keywords - Values, Names, Scope, Binding, Storage Classes - Numeric Data types: integer, floating point Non-Numeric Data types: char and string - L value and R value in expression, Increment and decrement operator - Comma, Arrow and Assignment operator, Bitwise and Size-of operator - Arithmetic, Relational and logical Operators - Condition Operators, Operator Precedence - Expressions with pre / post increment operator."
+        },
+        {
+            "question_number": "3",
+            "question_text": "Find the output of the following:\nvoid main()\n{\nint i=0, j=1, k=2, m;\nm= i++ || j++ || k++ ;\nprintf(\"%d %d %d %d\", m, i, j, k);\n}\nA) 1 1 2 3\nB) 1 1 2 2\nC) 0 1 2 2\nD) 0 1 2 3",
+            "marks": 1,
+            "answer": "ANSWER:B",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming - Writing algorithms & Pseudo code - Single line and multiline comments - Introduction to C: Structure of the C program - Input and output statements. Variables and identifiers, Constants, Keywords - Values, Names, Scope, Binding, Storage Classes - Numeric Data types: integer, floating point Non-Numeric Data types: char and string - L value and R value in expression, Increment and decrement operator - Comma, Arrow and Assignment operator, Bitwise and Size-of operator - Arithmetic, Relational and logical Operators - Condition Operators, Operator Precedence - Expressions with pre / post increment operator."
+        },
+        {
+            "question_number": "4",
+            "question_text": "What will be the output?\nvoid main()\n{\nint a=10, b=20;\nchar x=1, y=0;\nif(a,b,x,y)\nprintf(“EXAM”);\n}\nA) XAM is printed\nB) EXAM is printed\nC) COMPILER ERROR\nD) Nothing is printed",
+            "marks": 1,
+            "answer": "ANSWER:D",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming - Writing algorithms & Pseudo code - Single line and multiline comments - Introduction to C: Structure of the C program - Input and output statements. Variables and identifiers, Constants, Keywords - Values, Names, Scope, Binding, Storage Classes - Numeric Data types: integer, floating point Non-Numeric Data types: char and string - L value and R value in expression, Increment and decrement operator - Comma, Arrow and Assignment operator, Bitwise and Size-of operator - Arithmetic, Relational and logical Operators - Condition Operators, Operator Precedence - Expressions with pre / post increment operator."
+        },
+        {
+            "question_number": "5",
+            "question_text": "Which operator from the following has the lowest priority?\nA) Assignment\nB) Division\nC) Comma\nD) Dot",
+            "marks": 1,
+            "answer": "ANSWER:C",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming - Writing algorithms & Pseudo code - Single line and multiline comments - Introduction to C: Structure of the C program - Input and output statements. Variables and identifiers, Constants, Keywords - Values, Names, Scope, Binding, Storage Classes - Numeric Data types: integer, floating point Non-Numeric Data types: char and string - L value and R value in expression, Increment and decrement operator - Comma, Arrow and Assignment operator, Bitwise and Size-of operator - Arithmetic, Relational and logical Operators - Condition Operators, Operator Precedence - Expressions with pre / post increment operator."
+        },
+        {
+            "question_number": "6",
+            "question_text": "Array elements are always stored in --------- memory locations.\nA) Sequential\nB) Random\nC) Sequential and Random\nD) None of these",
+            "marks": 1,
+            "answer": "ANSWER:A",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else - Conditional Statements : else if and nested if - Conditional Statements : Switch case - Un-conditional Control Statements : break, continue, goto - Looping Control Statements: for, while, do.while - Looping Control Statements: nested for, nested while - Introduction to Arrays -One Dimensional (1D) Array Declaration and initialization - Accessing, Indexing and operations with 1D Arrays - Array Programs – 1D - Initializing and Accessing 2D Array, Array Programs – 2D - Pointer and address-of operators -Pointer Declaration and dereferencing, Void Pointers, Null pointers Pointer based Array manipulation."
+        },
+        {
+            "question_number": "7",
+            "question_text": "Let x be an array. Which of the following operations are illegal (throws error)?\nI) ++x\nII) x+1\nIII) x++\nIV) x*2\n\nA) I and II\nB) I, III and IV\nC) I, II and III\nD) I, III and IV",
+            "marks": 1,
+            "answer": "ANSWER:B (Note: The provided answer B in the key is more accurate as operations I, III, and IV attempt to modify the address of the array, which is illegal. Operation II, x+1, is a legal pointer arithmetic operation that evaluates to an address but doesn't modify x itself.)",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else - Conditional Statements : else if and nested if - Conditional Statements : Switch case - Un-conditional Control Statements : break, continue, goto - Looping Control Statements: for, while, do.while - Looping Control Statements: nested for, nested while - Introduction to Arrays -One Dimensional (1D) Array Declaration and initialization - Accessing, Indexing and operations with 1D Arrays - Array Programs – 1D - Initializing and Accessing 2D Array, Array Programs – 2D - Pointer and address-of operators -Pointer Declaration and dereferencing, Void Pointers, Null pointers Pointer based Array manipulation."
+        },
+        {
+            "question_number": "8",
+            "question_text": "What is the output of C Program.?\nint main() { int a[3] = {10,12,14}; a[1]=20; int i=0; while(i<3) { printf(\"%d \", a[i]); i++; } }\nA) 20 12 14\nB) 10 20 14\nC) 10 12 20\nD) Compiler error",
+            "marks": 1,
+            "answer": "ANSWER:B",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else - Conditional Statements : else if and nested if - Conditional Statements : Switch case - Un-conditional Control Statements : break, continue, goto - Looping Control Statements: for, while, do.while - Looping Control Statements: nested for, nested while - Introduction to Arrays -One Dimensional (1D) Array Declaration and initialization - Accessing, Indexing and operations with 1D Arrays - Array Programs – 1D - Initializing and Accessing 2D Array, Array Programs – 2D - Pointer and address-of operators -Pointer Declaration and dereferencing, Void Pointers, Null pointers Pointer based Array manipulation."
+        },
+        {
+            "question_number": "9",
+            "question_text": "What is the Format specifier used to print a String or Character array in C Printf or Scanf function?\nA) %c\nB) %C\nC) %s\nD) %w",
+            "marks": 1,
+            "answer": "ANSWER:C",
+            "answer_source": "provided",
+            "chapter": "Unit 3: String Basics - String Declaration and Initialization - String Functions: gets(), puts(), getchar(),putchar(), printf() - Built-inString Functions: atoi, strlen, strcat, strcmp -String Functions: sprint, sscanf, strrev, strcpy, strstr, strtok - Operations on Strings - Function prototype declaration, function definition - Actual and formal parameters - Function with and without Arguments - Function with and without return values - Call by Value, Call by Reference - Passing Array to Function - Passing Array elements to Function - Function Pointers."
+        },
+        {
+            "question_number": "10",
+            "question_text": "What is the output of this C code?\nint main()\n{\nvoid foo(), f();\nf();\n}\nvoid foo()\n{\nprintf(\"2 \");\n}\nvoid f()\n{\nprintf(\"1 \");\nfoo();\n}\nA. Compile time error as foo is local to main\nB. 1 2\nC. 2 1\nD. Compile time error due to declaration of functions inside main",
+            "marks": 1,
+            "answer": "ANSWER:B (Note: While modern compilers would issue a warning or error for declaring functions inside another function, this was permissible in older C standards. Assuming a standard that allows it, the output is '1 2'.)",
+            "answer_source": "provided",
+            "chapter": "Unit 3: String Basics - String Declaration and Initialization - String Functions: gets(), puts(), getchar(),putchar(), printf() - Built-inString Functions: atoi, strlen, strcat, strcmp -String Functions: sprint, sscanf, strrev, strcpy, strstr, strtok - Operations on Strings - Function prototype declaration, function definition - Actual and formal parameters - Function with and without Arguments - Function with and without return values - Call by Value, Call by Reference - Passing Array to Function - Passing Array elements to Function - Function Pointers."
+        },
+        {
+            "question_number": "11",
+            "question_text": "Write C program to input a sequence of characters from user and check whether given character array has an alphabet or digit or special character using if else.",
+            "marks": 4,
+            "answer": "Logic:\nA character is an alphabet if it is between 'a'-'z' or 'A'-'Z'.\nA character is a digit if it is between '0'-'9'.\nOtherwise, it is a special character.\n\n```c\n#include <stdio.h>\n\nint main()\n{\n    char ch;\n\n    /* Input character from user */\n    printf(\"Enter any character: \");\n    scanf(\"%c\", &ch);\n\n    /* Alphabet check */\n    if((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))\n    {\n        printf(\"'%c' is alphabet.\\n\", ch);\n    }\n    else if(ch >= '0' && ch <= '9')\n    {\n        printf(\"'%c' is digit.\\n\", ch);\n    }\n    else\n    {\n        printf(\"'%c' is special character.\\n\", ch);\n    }\n\n    return 0;\n}\n```\n**SAMPLE INPUT and OUTPUT:**\nEnter any character: a\n'a' is alphabet.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else - Conditional Statements : else if and nested if - Conditional Statements : Switch case - Un-conditional Control Statements : break, continue, goto - Looping Control Statements: for, while, do.while - Looping Control Statements: nested for, nested while - Introduction to Arrays -One Dimensional (1D) Array Declaration and initialization - Accessing, Indexing and operations with 1D Arrays - Array Programs – 1D - Initializing and Accessing 2D Array, Array Programs – 2D - Pointer and address-of operators -Pointer Declaration and dereferencing, Void Pointers, Null pointers Pointer based Array manipulation."
+        },
+        {
+            "question_number": "12",
+            "question_text": "Discuss about the Conditional iterators in C language.",
+            "marks": 4,
+            "answer": "In computer programming, conditional loops or repetitive control structures are known as conditional iterators. They execute a block of code as long as a specified condition is true.\n\n**while loop syntax:**\n```c\n<initialization>;\nwhile (<test_condition>)\n{\n    <statement1>;\n    ...\n    <statementN>;\n    <update>;\n}\n```\n\n**for loop syntax:**\n```c\nfor (<initialization>; <test_condition>; <update>)\n{\n    <statement1>;\n    ...\n    <statementN>;\n}\n```\n\n**Example:** Calculate the sum of the integer numbers between 1 and 10.\n```c\n#include <stdio.h>\n\nint main() {\n    // Using a while loop\n    int sum_while = 0;\n    int i = 1;\n    while (i <= 10) {\n        sum_while = sum_while + i;\n        i = i + 1;\n    }\n    printf(\"Sum with while loop = %d\\n\", sum_while);\n\n    // Same example with for loop\n    int sum_for = 0;\n    for (int j = 1; j <= 10; j = j + 1) {\n        sum_for = sum_for + j;\n    }\n    printf(\"Sum with for loop = %d\\n\", sum_for);\n\n    return 0;\n}\n```\n**SAMPLE OUTPUT:**\nSum with while loop = 55\nSum with for loop = 55",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else - Conditional Statements : else if and nested if - Conditional Statements : Switch case - Un-conditional Control Statements : break, continue, goto - Looping Control Statements: for, while, do.while - Looping Control Statements: nested for, nested while - Introduction to Arrays -One Dimensional (1D) Array Declaration and initialization - Accessing, Indexing and operations with 1D Arrays - Array Programs – 1D - Initializing and Accessing 2D Array, Array Programs – 2D - Pointer and address-of operators -Pointer Declaration and dereferencing, Void Pointers, Null pointers Pointer based Array manipulation."
+        },
+        {
+            "question_number": "13",
+            "question_text": "Write short notes on: strrev, strcpy, strstr, strtok",
+            "marks": 4,
+            "answer": "**strrev():**\n- Reverses a given string in C language. Note: `strrev` is not a standard C library function and might not be available on all compilers (e.g., GCC on Linux). \n- *Syntax:* `char *strrev(char *string);`\n- *Example:* `char name[30] = \"Hello\"; strrev(name);` would change `name` to `\"olleH\"`.\n\n**strcpy():**\n- Copies the second string (source) into the first string (destination), including the null terminator.\n- *Syntax:* `char *strcpy(char *destination, const char *source);`\n- *Example:* `char s1[10]; char s2[10] = \"MIKE\"; strcpy(s1, s2);` results in `s1` containing `\"MIKE\"`.\n\n**strstr():**\n- Finds the first occurrence of a sub-string within another string.\n- *Syntax:* `char *strstr(const char *haystack, const char *needle);`\n- *Features:* On success, it returns a pointer to the beginning of the located substring in the haystack. On failure (if the needle is not found), it returns null.\n- *Example:* `char *p = strstr(\"This is a test\", \"test\");` would make `p` point to the 't' of \"test\".\n\n**strtok():**\n- Tokenizes or parses a given string using a specified set of delimiters.\n- *Syntax:* `char *strtok(char *str, const char *delimiters);`\n- *Features:* It modifies the original string by placing null characters ('\\0') after each token. The first call uses the string as the first argument, and subsequent calls use NULL to continue tokenizing the same string.\n- *Example:* `char str[] = \"Problem_Solving_in_c\"; char* token = strtok(str, \"_\");` The first call returns `\"Problem\"`.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: String Basics - String Declaration and Initialization - String Functions: gets(), puts(), getchar(),putchar(), printf() - Built-inString Functions: atoi, strlen, strcat, strcmp -String Functions: sprint, sscanf, strrev, strcpy, strstr, strtok - Operations on Strings - Function prototype declaration, function definition - Actual and formal parameters - Function with and without Arguments - Function with and without return values - Call by Value, Call by Reference - Passing Array to Function - Passing Array elements to Function - Function Pointers."
+        },
+        {
+            "question_number": "14",
+            "question_text": "How an array construction is done for real-time application and what are the common programming errors in it?",
+            "marks": 4,
+            "answer": "Array construction involves declaring an array of a specific type and size. For real-time applications, this is often done with a fixed size determined at compile time to ensure predictable memory usage and performance.\n\nCommon programming errors with arrays in C include:\n\n**(i) Variable Size Declaration:** Array size must be a constant expression, not a variable (unless using Variable Length Arrays, a C99 feature not supported by all compilers).\n*Error:* `int n=10; int arr[n];`\n*Fix:* `const int n=10; int arr[n];` or `#define SIZE 10; int arr[SIZE];`\n\n**(ii) Empty Initialization:** An array declaration requires a size if it's not initialized. If initialized, the compiler can deduce the size, but the initializer list cannot be empty.\n*Error:* `int arr[];` or `int arr[] = {};`\n*Fix:* `int arr[10];` or `int arr[] = {1, 2, 3};`\n\n**(iii) No Bounds Checking:** C does not automatically check if an array index is within its valid bounds. Accessing an element outside the defined range (e.g., `arr[10]` in a 10-element array `arr[0]` to `arr[9]`) leads to undefined behavior, often causing data corruption or program crashes.\n*Error:* `int a[5]; printf(\"%d\", a[7]);`\n*Fix:* Always ensure loop counters and indices are within `0` and `size-1`.\n\n**(iv) Case Sensitivity:** C is case-sensitive. Using a different case for an array variable name will result in a compiler error.\n*Error:* `int arr[5]; printf(\"%d\", ARR[2]);`\n*Fix:* Use the exact same case as the declaration: `printf(\"%d\", arr[2]);`",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else - Conditional Statements : else if and nested if - Conditional Statements : Switch case - Un-conditional Control Statements : break, continue, goto - Looping Control Statements: for, while, do.while - Looping Control Statements: nested for, nested while - Introduction to Arrays -One Dimensional (1D) Array Declaration and initialization - Accessing, Indexing and operations with 1D Arrays - Array Programs – 1D - Initializing and Accessing 2D Array, Array Programs – 2D - Pointer and address-of operators -Pointer Declaration and dereferencing, Void Pointers, Null pointers Pointer based Array manipulation."
+        },
+        {
+            "question_number": "15",
+            "question_text": "Compare the call by value and reference in function call with an example.",
+            "marks": 4,
+            "answer": "**Call by Value:**\nThis method copies the actual value of an argument into the formal parameter of the function. Changes made to the parameter inside the function have no effect on the original argument in the calling function.\n```c\n/* function definition to swap the values */\nvoid swap_by_value (int x, int y)\n{\n    int temp;\n    temp = x;   /* save the value of x */\n    x = y;      /* put y into x */\n    y = temp;   /* put temp into y */\n    // x and y are swapped here, but this doesn't affect the original variables.\n}\n// In main: swap_by_value(a, b); 'a' and 'b' remain unchanged.\n```\n\n**Call by Reference:**\nThis method copies the address of an argument into the formal parameter (a pointer). Inside the function, the address is used to access and modify the actual argument used in the call. This means that changes made to the parameter affect the argument.\n```c\n/* function definition to swap the values */\nvoid swap_by_reference (int *x, int *y)\n{\n    int temp;\n    temp = *x;  /* save the value at address x */\n    *x = *y;    /* put value at y into x */\n    *y = temp;  /* put temp into y */\n}\n// In main: swap_by_reference(&a, &b); 'a' and 'b' are successfully swapped.\n```",
+            "answer_source": "provided",
+            "chapter": "Unit 3: String Basics - String Declaration and Initialization - String Functions: gets(), puts(), getchar(),putchar(), printf() - Built-inString Functions: atoi, strlen, strcat, strcmp -String Functions: sprint, sscanf, strrev, strcpy, strstr, strtok - Operations on Strings - Function prototype declaration, function definition - Actual and formal parameters - Function with and without Arguments - Function with and without return values - Call by Value, Call by Reference - Passing Array to Function - Passing Array elements to Function - Function Pointers."
+        },
+        {
+            "question_number": "16a",
+            "question_text": "Enumerate and compare for loop syntax with while loop using an example in C language. Discuss the common problems in loops.",
+            "marks": 12,
+            "answer": "**Comparison of `for` and `while` loops:**\n\n**`while` loop:**\n- **Syntax:** The initialization, condition check, and update are distinct parts. It is generally preferred when the number of iterations is not known beforehand.\n```c\n<initialization>;\nwhile (<test_condition>)\n{\n    // loop body\n    <update>;\n}\n```\n\n**`for` loop:**\n- **Syntax:** The initialization, condition check, and update are all concisely written in one line. It is generally preferred when the number of iterations is known.\n```c\nfor (<initialization>; <test_condition>; <update>)\n{\n    // loop body\n}\n```\n\n**Example: Sum of numbers from 1 to 10**\n```c\n// while loop example\nint sum_w = 0, i = 1;\nwhile (i <= 10) {\n    sum_w += i;\n    i++;\n}\nprintf(\"Sum (while): %d\\n\", sum_w);\n\n// for loop example\nint sum_f = 0;\nfor (int j = 1; j <= 10; j++) {\n    sum_f += j;\n}\nprintf(\"Sum (for): %d\\n\", sum_f);\n```\n\n**Common Problems in Loops:**\n1.  **Infinite Loops:** Occur when the loop's termination condition is never met. This is often caused by forgetting to include the update statement (e.g., `i++`) or having a condition that always evaluates to true.\n2.  **Off-by-One Errors:** The loop runs one time too many or one time too few. This is typically due to using `<` instead of `<=` or starting the index from 1 when it should be 0.\n3.  **Incorrect Semicolon:** Placing a semicolon immediately after the loop condition (`for(...);` or `while(...);`) creates an empty loop body, and the intended code block will execute only once after the loop finishes, which is usually not the desired behavior.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else - Conditional Statements : else if and nested if - Conditional Statements : Switch case - Un-conditional Control Statements : break, continue, goto - Looping Control Statements: for, while, do.while - Looping Control Statements: nested for, nested while - Introduction to Arrays -One Dimensional (1D) Array Declaration and initialization - Accessing, Indexing and operations with 1D Arrays - Array Programs – 1D - Initializing and Accessing 2D Array, Array Programs – 2D - Pointer and address-of operators -Pointer Declaration and dereferencing, Void Pointers, Null pointers Pointer based Array manipulation."
+        },
+        {
+            "question_number": "16b",
+            "question_text": "Write a C program to find maximum and minimum between two numbers using functions",
+            "marks": 12,
+            "answer": "```c\n#include <stdio.h>\n\n/* Function declarations (prototypes) */\nint max(int num1, int num2);\nint min(int num1, int num2);\n\nint main()\n{\n    int num1, num2, maximum, minimum;\n\n    /* Input two numbers from user */\n    printf(\"Enter any two numbers: \");\n    scanf(\"%d%d\", &num1, &num2);\n\n    maximum = max(num1, num2); // Call maximum function\n    minimum = min(num1, num2); // Call minimum function\n\n    printf(\"\\nMaximum = %d\\n\", maximum);\n    printf(\"Minimum = %d\\n\", minimum);\n\n    return 0;\n}\n\n/**\n * Find maximum between two numbers.\n */\nint max(int num1, int num2)\n{\n    return (num1 > num2) ? num1 : num2;\n}\n\n/**\n * Find minimum between two numbers.\n */\nint min(int num1, int num2)\n{\n    return (num1 > num2) ? num2 : num1;\n}\n```\n**SAMPLE INPUT and OUTPUT:**\nEnter any two numbers: 10 20\nMaximum = 20\nMinimum = 10",
+            "answer_source": "provided",
+            "chapter": "Unit 3: String Basics - String Declaration and Initialization - String Functions: gets(), puts(), getchar(),putchar(), printf() - Built-inString Functions: atoi, strlen, strcat, strcmp -String Functions: sprint, sscanf, strrev, strcpy, strstr, strtok - Operations on Strings - Function prototype declaration, function definition - Actual and formal parameters - Function with and without Arguments - Function with and without return values - Call by Value, Call by Reference - Passing Array to Function - Passing Array elements to Function - Function Pointers."
+        },
+        {
+            "question_number": "17a",
+            "question_text": "Write a C program to compute addition of two matrices.",
+            "marks": 12,
+            "answer": "```c\n#include <stdio.h>\n\nint main() {\n    int r, c, a[100][100], b[100][100], sum[100][100], i, j;\n\n    printf(\"Enter the number of rows (between 1 and 100): \");\n    scanf(\"%d\", &r);\n    printf(\"Enter the number of columns (between 1 and 100): \");\n    scanf(\"%d\", &c);\n\n    printf(\"\\nEnter elements of 1st matrix:\\n\");\n    for (i = 0; i < r; ++i)\n        for (j = 0; j < c; ++j) {\n            printf(\"Enter element a%d%d: \", i + 1, j + 1);\n            scanf(\"%d\", &a[i][j]);\n        }\n\n    printf(\"Enter elements of 2nd matrix:\\n\");\n    for (i = 0; i < r; ++i)\n        for (j = 0; j < c; ++j) {\n            printf(\"Enter element b%d%d: \", i + 1, j + 1);\n            scanf(\"%d\", &b[i][j]);\n        }\n\n    // adding two matrices\n    for (i = 0; i < r; ++i)\n        for (j = 0; j < c; ++j) {\n            sum[i][j] = a[i][j] + b[i][j];\n        }\n\n    // printing the result\n    printf(\"\\nSum of two matrices: \\n\");\n    for (i = 0; i < r; ++i) {\n        for (j = 0; j < c; ++j) {\n            printf(\"%d   \", sum[i][j]);\n        }\n        printf(\"\\n\");\n    }\n\n    return 0;\n}\n```",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else - Conditional Statements : else if and nested if - Conditional Statements : Switch case - Un-conditional Control Statements : break, continue, goto - Looping Control Statements: for, while, do.while - Looping Control Statements: nested for, nested while - Introduction to Arrays -One Dimensional (1D) Array Declaration and initialization - Accessing, Indexing and operations with 1D Arrays - Array Programs – 1D - Initializing and Accessing 2D Array, Array Programs – 2D - Pointer and address-of operators -Pointer Declaration and dereferencing, Void Pointers, Null pointers Pointer based Array manipulation."
+        },
+        {
+            "question_number": "17b",
+            "question_text": "Write a C program to convert given uppercase string to lowercase and viceversa.",
+            "marks": 12,
+            "answer": "A string is a sequence of characters terminated by a null character '\\0'. We can iterate through the string and convert each character's case.\n\n```c\n#include <stdio.h>\n#include <string.h>\n\nint main()\n{\n    char str[100];\n    int i;\n    \n    printf(\"\\nEnter any string :: \");\n    // Using fgets for safer input than gets\n    fgets(str, sizeof(str), stdin);\n    // Remove newline character if present\n    str[strcspn(str, \"\\n\")] = 0;\n\n    printf(\"\\nThe input String is :: [ %s ]\\n\", str);\n    \n    for(i = 0; i < strlen(str); i++)\n    {\n        if(str[i] >= 'a' && str[i] <= 'z')\n        {\n            str[i] = str[i] - 32; // Convert to uppercase\n        }\n        else if(str[i] >= 'A' && str[i] <= 'Z')\n        {\n            str[i] = str[i] + 32; // Convert to lowercase\n        }\n    }\n    \n    printf(\"\\nThe Converted String is :: [ %s ]\\n\", str);\n    \n    return 0;\n}\n```\n**SAMPLE INPUT and OUTPUT:**\nEnter any string :: CodezClub\nThe input String is :: [ CodezClub ]\nThe Converted String is :: [ cODEZcLUB ]",
+            "answer_source": "provided",
+            "chapter": "Unit 3: String Basics - String Declaration and Initialization - String Functions: gets(), puts(), getchar(),putchar(), printf() - Built-inString Functions: atoi, strlen, strcat, strcmp -String Functions: sprint, sscanf, strrev, strcpy, strstr, strtok - Operations on Strings - Function prototype declaration, function definition - Actual and formal parameters - Function with and without Arguments - Function with and without return values - Call by Value, Call by Reference - Passing Array to Function - Passing Array elements to Function - Function Pointers."
+        }
+    ]
+}

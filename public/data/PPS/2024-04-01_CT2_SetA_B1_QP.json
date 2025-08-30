@@ -1,0 +1,126 @@
+{
+  "paper_title": "Programming For Problem Solving (SRM Institute of Science and Technology) - CT1 Set B",
+  "source": "2024-04-01 CT2 SetA B1",
+  "questions": [
+    {
+      "question_number": "1",
+      "question_text": "Which of the following is a valid way to write a multi-line comment in C?\nA) // This is a multi-line comment //\nB) /* This is a multi-line comment */\nC) # This is a multi-line comment #\nD) -- This is a multi-line comment --",
+      "marks": 1,
+      "answer": "The correct syntax for a multi-line comment in C is to enclose the comment block between `/*` and `*/`. Therefore, option B `/* This is a multi-line comment */` is the valid way. Options A, C, and D are not valid multi-line comment syntaxes in C (A is for single-line, C is common in shell scripts/Python but not C, D is incorrect).",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Evolution of Programming & Languages - Single line and multiline comments"
+    },
+    {
+      "question_number": "2",
+      "question_text": "Which function is used to take user input in a C program?\nA) printf()\nB) input()\nC) scan()\nD) scanf()",
+      "marks": 1,
+      "answer": "In C programming, the `scanf()` function is primarily used to read formatted input from the standard input device (usually the keyboard). `printf()` is for output, and `input()`/`scan()` are not standard C library functions for general input. Therefore, option D is correct.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Evolution of Programming & Languages - Input and output statements"
+    },
+    {
+      "question_number": "3",
+      "question_text": "What is the scope of a variable declared inside a function in C?\nA) Global\nB) Local\nC) Static\nD) Register",
+      "marks": 1,
+      "answer": "A variable declared inside a function has `local` scope. This means it is only accessible within the function where it is declared and ceases to exist once the function execution completes. Global variables are declared outside all functions. Static and Register are storage classes that modify the variable's lifetime and storage location but do not change its fundamental scope to global if declared inside a function. Therefore, option B is correct.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Evolution of Programming & Languages - Values, Names, Scope, Binding, Storage Classes"
+    },
+    {
+      "question_number": "4",
+      "question_text": "Which storage class in C retains the value of a variable between function calls?\nA) auto\nB) static\nC) extern\nD) register",
+      "marks": 1,
+      "answer": "The `static` storage class in C ensures that a local variable retains its value between multiple function calls. Unlike `auto` variables which are re-initialized each time the function is called, a `static` local variable is initialized only once and its value persists across subsequent calls. Therefore, option B is correct.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Evolution of Programming & Languages - Values, Names, Scope, Binding, Storage Classes"
+    },
+    {
+      "question_number": "5",
+      "question_text": "Which of the following is a valid variable name in C?\nA) int\nB) !var\nC) var_name\nD) #var",
+      "marks": 1,
+      "answer": "In C, variable names must follow specific rules: they can consist of letters (A-Z, a-z), digits (0-9), and underscores (_). They must start with a letter or an underscore, and they cannot be C keywords. \n- `int` is a keyword.\n- `!var` starts with an invalid character (`!`).\n- `var_name` follows all rules (starts with a letter, uses letters and underscore).\n- `#var` starts with an invalid character (`#`).\nTherefore, option C is correct.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Evolution of Programming & Languages - Variables and identifiers, Constants, Keywords"
+    },
+    {
+      "question_number": "6",
+      "question_text": "Which of the following loops in C executes at least once, even if the condition is false?\nA) for loop\nB) while loop\nC) do-while loop\nD) Nested for loop",
+      "marks": 1,
+      "answer": "The `do-while` loop is an exit-controlled loop, meaning its condition is evaluated after the loop body has executed at least once. This guarantees that the code inside the loop will run at least one time, regardless of whether the condition is initially true or false. `for` and `while` loops are entry-controlled, meaning their condition is checked before the first iteration. Therefore, option C is correct.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Looping Control Statements: do.while"
+    },
+    {
+      "question_number": "7",
+      "question_text": "Which of the following operators has the highest precedence in C?\nA) + (Addition)\nB) * (Multiplication)\nC) && (Logical AND)\nD) = (Assignment)",
+      "marks": 1,
+      "answer": "Among the given operators, the multiplication operator `*` has the highest precedence. In C operator precedence: `*` (multiplication) has higher precedence than `+` (addition), which has higher precedence than `&&` (logical AND), which in turn has higher precedence than `=` (assignment). Therefore, option B is correct.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Evolution of Programming & Languages - Operator Precedence"
+    },
+    {
+      "question_number": "8",
+      "question_text": "Which statement is used for multiple conditional choices in C?\nA) if\nB) if-else\nC) switch\nD) while",
+      "marks": 1,
+      "answer": "The `switch` statement in C is specifically designed for handling multiple conditional choices based on the value of a single expression. While `if` and `if-else` can handle multiple conditions through nested `if-else if` structures, `switch` provides a more structured and often more readable way for a large number of discrete choices. `while` is a looping construct. Therefore, option C is correct.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Conditional Statements : Switch case"
+    },
+    {
+      "question_number": "9",
+      "question_text": "What is the output of 5 % 2 in C?\nA) 1\nB) 2\nC) 0\nD) 5",
+      "marks": 1,
+      "answer": "The `%` operator in C is the modulo operator, which calculates the remainder of a division. When 5 is divided by 2, the quotient is 2, and the remainder is 1. Therefore, `5 % 2` evaluates to 1. So, option A is correct.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Evolution of Programming & Languages - Arithmetic, Relational and logical Operators"
+    },
+    {
+      "question_number": "10",
+      "question_text": "Which data type is used to store a single character in C?\nA) int\nB) char\nC) float\nD) double",
+      "marks": 1,
+      "answer": "The `char` data type in C is specifically used to store a single character. It typically occupies 1 byte of memory and can represent a character using its ASCII value. `int` is for integers, `float` and `double` are for floating-point numbers. Therefore, option B is correct.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Evolution of Programming & Languages - Non-Numeric Data types: char and string"
+    },
+    {
+      "question_number": "11",
+      "question_text": "Devise an algorithm to read the age of two of your friends and find the sum, product and difference of their ages.",
+      "marks": 4,
+      "answer": "```\nAlgorithm: Calculate Age Statistics\n\n1. START\n2. DECLARE integer variables: age1, age2, sum, product, difference\n3. PROMPT user to enter the age of the first friend.\n4. READ age1.\n5. PROMPT user to enter the age of the second friend.\n6. READ age2.\n7. CALCULATE sum = age1 + age2.\n8. CALCULATE product = age1 * age2.\n9. CALCULATE difference = age1 - age2. (For absolute difference, use: difference = ABS(age1 - age2))\n10. DISPLAY \"Sum of ages:\", sum\n11. DISPLAY \"Product of ages:\", product\n12. DISPLAY \"Difference of ages:\", difference\n13. END\n```",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Evolution of Programming & Languages - Writing algorithms & Pseudo code"
+    },
+    {
+      "question_number": "12",
+      "question_text": "You are tasked with devising an algorithm for a basic calculator for a small grocery store to help the cashier to calculate the total price of two items. The cashier will input the price of both items, and your algorithm should calculate and display the total cost.",
+      "marks": 4,
+      "answer": "```\nAlgorithm: Grocery Store Total Price Calculator\n\n1. START\n2. DECLARE float variables: price_item1, price_item2, total_cost\n3. PROMPT cashier to enter the price of the first item.\n4. READ price_item1.\n5. PROMPT cashier to enter the price of the second item.\n6. READ price_item2.\n7. CALCULATE total_cost = price_item1 + price_item2.\n8. DISPLAY \"Total cost of two items:\", total_cost\n9. END\n```",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Evolution of Programming & Languages - Writing algorithms & Pseudo code"
+    },
+    {
+      "question_number": "13",
+      "question_text": "Debug the code given below so as to generate the desired output \"Better Luck\"\n\n#include <stdio.h>\nint main()\n{\nint i;\nprintf(\"Enter any number\\n\");\nscanf(\"%d\", i);\nswitch(i)\n{\ncase 1:\nprintf(\"Do\\n\");\nbreak;\ncase 2:\nprintf(\"Well\\n\");\nbreak;\ncase 3:\nprintf(\"Do Better\\n\");\nbreak;\ncase:\nprintf(\"Better Luck\\n\");\n}\n}",
+      "marks": 4,
+      "answer": "The provided code has two main issues for it to work correctly and output \"Better Luck\" as intended:\n1.  **`scanf` argument**: `scanf(\"%d\", i);` is incorrect. The `scanf` function requires the memory address of the variable where the input should be stored. It should be `scanf(\"%d\", &i);`.\n2.  **`switch` default case**: The line `case:` is incomplete and syntactically incorrect. To handle any input value that does not match `case 1`, `case 2`, or `case 3`, a `default` case should be used.\n\nHere's the debugged code:\n```c\n#include <stdio.h>\nint main()\n{\n    int i;\n    printf(\"Enter any number\\n\");\n    scanf(\"%d\", &i); // Debug 1: Added '&' before 'i'\n    switch(i)\n    {\n        case 1:\n            printf(\"Do\\n\");\n            break;\n        case 2:\n            printf(\"Well\\n\");\n            break;\n        case 3:\n            printf(\"Do Better\\n\");\n            break;\n        default: // Debug 2: Changed 'case:' to 'default:'\n            printf(\"Better Luck\\n\");\n            break;\n    }\n    return 0; // Good practice to include return statement for main\n}\n```\nTo generate the desired output \"Better Luck\", the user would need to input any integer value other than 1, 2, or 3.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Introduction to C: Structure of the C program - Input and output statements. Unit 2: Conditional Statements : Switch case"
+    },
+    {
+      "question_number": "14",
+      "question_text": "Complete the program by filling in the missing parts in some statements.\n#include<\n>\nvoid main()\n{\nint m;\nprintf(\"Input m value\");\nscanf(\n&m);\n(m)\n{\ncase 9:\nprintf(\"Autumn\");\nbreak;\ncase 6:\nprintf(\"Summer\");\nbreak;\ncase 5:\nprintf(\"Spring\");\n\ncase 1:\nprintf(\"Winter\");\n}\n}",
+      "marks": 10,
+      "answer": "The missing parts in the program are:\n1.  The header file for input/output functions: `<stdio.h>`\n2.  The format specifier for `scanf` to read an integer: `\"%d\"`\n3.  The `switch` keyword to initiate the switch statement: `switch`\n4.  A `break` statement after `printf(\"Spring\");` to prevent fall-through.\n\nHere is the completed program:\n```c\n#include <stdio.h> // Missing part 1: Standard input/output library\nvoid main()\n{\n    int m;\n    printf(\"Input m value\");\n    scanf(\"%d\", &m); // Missing part 2: Format specifier for integer input\n    switch(m) // Missing part 3: The switch keyword\n    {\n        case 9:\n            printf(\"Autumn\\n\");\n            break;\n        case 6:\n            printf(\"Summer\\n\");\n            break;\n        case 5:\n            printf(\"Spring\\n\");\n            break; // Missing part 4: Break statement to exit switch after case 5\n        case 1:\n            printf(\"Winter\\n\");\n            break; // Added break for completeness, although not explicitly marked missing\n    }\n    // It's good practice to add 'return 0;' in 'main' for C programs.\n    // Since 'void main()' is used, an explicit 'return' is not required but 'int main()' is preferred.\n}\n```",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Introduction to C: Structure of the C program - Input and output statements. Unit 2: Conditional Statements : Switch case"
+    },
+    {
+      "question_number": "15",
+      "question_text": "Create a tax calculator program that applies different tax rates based on income brackets and marital status.",
+      "marks": 10,
+      "answer": "```c\n#include <stdio.h>\n\nint main() {\n    double income;\n    char marital_status; // 'S' for Single, 'M' for Married\n    double tax_amount = 0.0;\n\n    printf(\"Welcome to the Tax Calculator!\\n\");\n    printf(\"--------------------------------\\n\");\n\n    // Get income from the user\n    printf(\"Enter your annual income: $\");\n    scanf(\"%lf\", &income);\n\n    // Get marital status from the user\n    // The space before %c is crucial to consume any leftover newline characters from previous inputs.\n    printf(\"Enter your marital status (S for Single, M for Married): \");\n    scanf(\" %c\", &marital_status); \n\n    // Convert status to uppercase for easier comparison\n    if (marital_status >= 'a' && marital_status <= 'z') {\n        marital_status = marital_status - 32; // Convert to uppercase\n    }\n\n    // Implement tax logic based on marital status and income brackets\n    if (marital_status == 'S') {\n        printf(\"\\n--- Calculating Tax for Single Filer ---\\n\");\n        if (income <= 10000) {\n            tax_amount = income * 0.10; // 10% tax\n        } else if (income <= 40000) {\n            // 10% on first 10,000, 15% on remaining\n            tax_amount = (10000 * 0.10) + ((income - 10000) * 0.15);\n        } else if (income <= 80000) {\n            // 10% on first 10,000, 15% on next 30,000, 20% on remaining\n            tax_amount = (10000 * 0.10) + (30000 * 0.15) + ((income - 40000) * 0.20);\n        } else {\n            // 10% on first 10,000, 15% on next 30,000, 20% on next 40,000, 25% on remaining\n            tax_amount = (10000 * 0.10) + (30000 * 0.15) + (40000 * 0.20) + ((income - 80000) * 0.25);\n        }\n    } else if (marital_status == 'M') {\n        printf(\"\\n--- Calculating Tax for Married Filer ---\\n\");\n        // Married brackets are often different, typically higher for the same rate\n        if (income <= 20000) {\n            tax_amount = income * 0.10; // 10% tax\n        } else if (income <= 80000) {\n            // 10% on first 20,000, 15% on remaining\n            tax_amount = (20000 * 0.10) + ((income - 20000) * 0.15);\n        } else if (income <= 160000) {\n            // 10% on first 20,000, 15% on next 60,000, 20% on remaining\n            tax_amount = (20000 * 0.10) + (60000 * 0.15) + ((income - 80000) * 0.20);\n        } else {\n            // 10% on first 20,000, 15% on next 60,000, 20% on next 80,000, 25% on remaining\n            tax_amount = (20000 * 0.10) + (60000 * 0.15) + (80000 * 0.20) + ((income - 160000) * 0.25);\n        }\n    } else {\n        printf(\"Error: Invalid marital status entered. Please use 'S' for Single or 'M' for Married.\\n\");\n        return 1; // Indicate an error\n    }\n\n    // Display results\n    printf(\"\\n--- Tax Calculation Summary ---\\n\");\n    printf(\"Annual Income: $%.2f\\n\", income);\n    printf(\"Marital Status: %c\\n\", marital_status);\n    printf(\"Total Estimated Tax: $%.2f\\n\", tax_amount);\n    printf(\"--------------------------------\\n\");\n\n    return 0; // Indicate successful execution\n}\n```\n\n**Explanation:**\n1.  **Includes**: `stdio.h` for input/output operations.\n2.  **Variables**: `income` (double for decimal values), `marital_status` (char for 'S' or 'M'), `tax_amount` (double to store calculated tax).\n3.  **Input**: Prompts the user to enter their `income` and `marital_status`. The `scanf(\" %c\", &marital_status);` includes a space before `%c` to consume any leftover newline character from the previous input, ensuring the character input works correctly.\n4.  **Case Conversion**: A simple check converts lowercase 's' or 'm' to uppercase for consistent comparison.\n5.  **Conditional Logic (`if-else if-else`)**:\n    *   It first checks the `marital_status`.\n    *   Inside each `marital_status` block (Single or Married), it uses a series of `if-else if` statements to determine the correct `tax_amount` based on the `income` brackets. This example uses progressive tax rates, where different portions of income are taxed at different rates.\n    *   An `else` block handles invalid marital status input.\n6.  **Output**: Displays the entered income, marital status, and the calculated `tax_amount` formatted to two decimal places.\n7.  **Return 0**: Indicates successful program execution.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Input and output statements - Numeric Data types: integer, floating point - Arithmetic, Relational and logical Operators. Unit 2: Conditional Control -Statements :Simple if, if...else - Conditional Statements : else if and nested if"
+    }
+  ]
+}

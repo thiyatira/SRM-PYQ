@@ -1,0 +1,142 @@
+{
+    "paper_title": "CT 1 Question Paper - Programming for Problem Solving",
+    "source": "2022-23 CT1 QP2",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "Every C program consists of ______ function(s).\n\n*   Only one\n*   Only two\n*   One or two\n*   One or many",
+            "marks": 1,
+            "answer": "Only one (the main() function is mandatory for program execution).",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to C: Structure of the C program"
+        },
+        {
+            "question_number": "2",
+            "question_text": "Which of the following is not a correct variable type?\n\n*   Float\n*   Real\n*   Int\n*   Double",
+            "marks": 1,
+            "answer": "Real (Float, Int, and Double are standard C data types, 'Real' is not a keyword or standard type name in C, though it's a general term for floating-point numbers).",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Numeric Data types: integer, floating point Non-Numeric Data types: char and string"
+        },
+        {
+            "question_number": "3",
+            "question_text": "Which of the following is not a valid C variable name?\n\n*   int number;\n*   float rate;\n*   int variable_count;\n*   int $main;",
+            "marks": 1,
+            "answer": "int $main; (Variable names in C cannot contain special characters like '$' except for underscore '_').",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Variables and identifiers, Keywords"
+        },
+        {
+            "question_number": "4",
+            "question_text": "Which of these is NOT a relational or logical operator?\n\n*   =\n*   ==\n*   !=\n*   ||",
+            "marks": 1,
+            "answer": "= (The '=' operator is the assignment operator. '==', '!=', '||' are relational or logical operators).",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Arithmetic, Relational and logical Operators"
+        },
+        {
+            "question_number": "5",
+            "question_text": "What will be the output of the following code snippet?\n```c\n#include <stdio.h>\nint main() {\n    int a = 3, b = 5;\n    int t = a;\n    a = b;\n    b = t;\n    printf(\"%d %d\", a, b);\n    return 0;\n}\n```\n\n*   3 5\n*   3 3\n*   5 5\n*   5 3",
+            "marks": 1,
+            "answer": "5 3 (The code performs a swap of variables 'a' and 'b' using a temporary variable 't'. Initially, a=3, b=5. After swap, a becomes 5 and b becomes 3).",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Input and output statements. Variables and identifiers, Assignment operator"
+        },
+        {
+            "question_number": "6",
+            "question_text": "What is the output of the following code snippet?\n```c\nint main() {\n    int sum = 2 + 4 / 2 + 6 * 2;\n    printf(\"%d\", sum);\n    return 0;\n}\n```\n\n*   2\n*   15\n*   16\n*   18",
+            "marks": 1,
+            "answer": "16 (According to operator precedence, division and multiplication are performed before addition. So, sum = 2 + (4/2) + (6*2) = 2 + 2 + 12 = 16).",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Arithmetic, Relational and logical Operators, Operator Precedence"
+        },
+        {
+            "question_number": "7",
+            "question_text": "What will be the output of the following code snippet?\n```c\n#include <stdio.h>\nint main() {\n    int a = 3;\n    int res = a++ + ++a + a++ + ++a;\n    printf(\"%d\", res);\n    return 0;\n}\n```\n\n*   12\n*   24\n*   20\n*   18",
+            "marks": 1,
+            "answer": "20 (The expression evaluates as follows: \n1. `a=3`\n2. `a++` evaluates to 3, then `a` becomes 4.\n3. `++a` makes `a` 5, then evaluates to 5.\n4. `a++` evaluates to 5, then `a` becomes 6.\n5. `++a` makes `a` 7, then evaluates to 7.\nSo, `res = 3 + 5 + 5 + 7 = 20`. Note: Such expressions with multiple increments on the same variable in a single statement lead to undefined behavior in C, but given the options, this interpretation is expected.)",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Increment and decrement operator, Expressions with pre / post increment operator"
+        },
+        {
+            "question_number": "8",
+            "question_text": "Which of the following is true for variable names in C?\n\n*   They can contain alphanumeric characters as well as special characters\n*   It is not an error to declare a variable to be one of the keywords(like goto, static)\n*   Variable names cannot start with a digit\n*   Variable can be of any length",
+            "marks": 1,
+            "answer": "Variable names cannot start with a digit (C variable names can contain alphanumeric characters and underscores, but not other special characters. They cannot be keywords. They cannot start with a digit. While there's no strict limit on length, only a certain number of initial characters are guaranteed to be significant).",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Variables and identifiers, Keywords"
+        },
+        {
+            "question_number": "9",
+            "question_text": "Operator % in C Language is called.?\n\n*   Percentage Operator\n*   Quotient Operator\n*   Modulus\n*   Division",
+            "marks": 1,
+            "answer": "Modulus (The '%' operator in C gives the remainder of an integer division).",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Arithmetic, Relational and logical Operators"
+        },
+        {
+            "question_number": "10",
+            "question_text": "What will be the output of the following code snippet?\n```c\nvoid solve() {\n    printf(\"%d \", 9/2);\n    printf(\"%f\", 9.0 / 2);\n}\n```\n\n*   4 4.5000\n*   4 4\n*   4.500 4.500\n*   4.5 4.50",
+            "marks": 1,
+            "answer": "4 4.5000 (9/2 performs integer division, resulting in 4. 9.0/2 performs floating-point division, resulting in 4.5. The `%f` format specifier typically prints 6 digits after the decimal point by default, so 4.5 is displayed as 4.500000. Option '4 4.5000' is the closest representation).",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Numeric Data types: integer, floating point, Input and output statements"
+        },
+        {
+            "question_number": "11",
+            "question_text": "Define keyword, constant and variable.",
+            "marks": 2,
+            "answer": "A **keyword** is a reserved word in C that has a predefined meaning and cannot be used as an identifier (e.g., `int`, `if`, `while`). A **constant** is a fixed value that cannot be altered during program execution (e.g., `5`, `'A'`, `3.14`). A **variable** is a named storage location in memory used to hold a value that can change during the program's execution (e.g., `int age = 20;`).",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Variables and identifiers, Constants, Keywords"
+        },
+        {
+            "question_number": "12",
+            "question_text": "Why do we use header files?",
+            "marks": 2,
+            "answer": "Header files in C contain declarations of functions, macros, and variables that are used by the program. They allow us to use pre-defined functionalities (like input/output operations from `stdio.h` or mathematical functions from `math.h`) without having to write them ourselves, promoting code reusability and modularity. The `#include` directive effectively copies the contents of the header file into the source code during preprocessing.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to C: Structure of the C program"
+        },
+        {
+            "question_number": "13",
+            "question_text": "What is variable? Give the rules for variable declaration.",
+            "marks": 2,
+            "answer": "A **variable** is a symbolic name given to a memory location that stores data, which can change its value during the execution of a program. \n\nRules for variable declaration in C:\n1.  **Start with letter or underscore:** A variable name must start with an alphabet (a-z, A-Z) or an underscore (_).\n2.  **No digits at start:** It cannot start with a digit.\n3.  **Alphanumeric and underscore:** After the initial character, it can contain alphabets, digits (0-9), and underscores.\n4.  **No special characters:** No other special characters (like $, #, @, %, etc.) are allowed.\n5.  **No keywords:** A variable name cannot be a C keyword (e.g., `int`, `for`, `while`).\n6.  **Case-sensitive:** C is case-sensitive, so `age` and `Age` are treated as different variables.\n7.  **Meaningful names:** It's good practice to use meaningful and descriptive names.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Variables and identifiers, Names, Scope, Binding, Storage Classes"
+        },
+        {
+            "question_number": "14",
+            "question_text": "Write a C program to check whether the person is eligible to vote.",
+            "marks": 2,
+            "answer": "```c\n#include <stdio.h>\n\nint main() {\n    int age;\n\n    printf(\"Enter your age: \");\n    scanf(\"%d\", &age);\n\n    if (age >= 18) {\n        printf(\"You are eligible to vote.\\n\");\n    } else {\n        printf(\"You are not eligible to vote yet.\\n\");\n    }\n\n    return 0;\n}\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
+        },
+        {
+            "question_number": "15",
+            "question_text": "Write a C program to find the largest of three numbers",
+            "marks": 2,
+            "answer": "```c\n#include <stdio.h>\n\nint main() {\n    int num1, num2, num3;\n\n    printf(\"Enter three numbers: \");\n    scanf(\"%d %d %d\", &num1, &num2, &num3);\n\n    if (num1 >= num2 && num1 >= num3) {\n        printf(\"The largest number is: %d\\n\", num1);\n    } else if (num2 >= num1 && num2 >= num3) {\n        printf(\"The largest number is: %d\\n\", num2);\n    } else {\n        printf(\"The largest number is: %d\\n\", num3);\n    }\n\n    return 0;\n}\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Conditional Control Statements : else if and nested if"
+        },
+        {
+            "question_number": "16",
+            "question_text": "Write a program that prints the numbers 1 to 4 on the same line. Write the program using the following methods.\na. Using one printf statement with no conversion specifiers.\nb. Using one printf statement with four conversion specifiers.\nc. Using four printf statements.",
+            "marks": 5,
+            "answer": "```c\n#include <stdio.h>\n\nint main() {\n    // a. Using one printf statement with no conversion specifiers.\n    printf(\"Method A: 1 2 3 4\\n\");\n\n    // b. Using one printf statement with four conversion specifiers.\n    int n1 = 1, n2 = 2, n3 = 3, n4 = 4;\n    printf(\"Method B: %d %d %d %d\\n\", n1, n2, n3, n4);\n\n    // c. Using four printf statements.\n    printf(\"Method C: \");\n    printf(\"1 \");\n    printf(\"2 \");\n    printf(\"3 \");\n    printf(\"4\\n\");\n\n    return 0;\n}\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Input and output statements"
+        },
+        {
+            "question_number": "17",
+            "question_text": "Display the following checkerboard pattern with eight Printf statements and then display the same pattern with as few Printf statements as possible.\n\n********\n********\n********\n********\n********\n********",
+            "marks": 5,
+            "answer": "```c\n#include <stdio.h>\n\nint main() {\n    // Using eight printf statements\n    printf(\"********\\n\");\n    printf(\"********\\n\");\n    printf(\"********\\n\");\n    printf(\"********\\n\");\n    printf(\"********\\n\");\n    printf(\"********\\n\");\n    \n    printf(\"\\n\"); // Separator for clarity\n\n    // Using as few printf statements as possible (e.g., using a loop)\n    // For a 6x8 pattern, a loop is efficient\n    for (int i = 0; i < 6; i++) {\n        printf(\"********\\n\");\n    }\n    // Alternatively, for a truly minimal number of printf calls \n    // without loops, concatenate the string (though less readable):\n    // printf(\"********\\n********\\n********\\n********\\n********\\n********\\n\");\n\n    return 0;\n}\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Input and output statements"
+        }
+    ]
+}

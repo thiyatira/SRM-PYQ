@@ -1,0 +1,166 @@
+{
+    "paper_title": "Programming For Problem Solving (SRM Institute of Science and Technology)",
+    "source": "2022-23 CT2 Sample-QP",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "National Highways Department announces a scheme for the four-wheeler in the toll gate for 50th year celebration. If the vehicle number is divisible by both 7 and 3 then they should pay one-third of the fee. If the vehicle number is divisible by 7 or 3 then they should pay half of the fee. Otherwise, they have to pay full fees. Write a c program for the same.",
+            "marks": 5,
+            "answer": "#include <stdio.h>\nint main()\n{\nint vehicleno;\nint pay, tollfee=100;\nprintf(\"enter the vehicle number\");\nscanf(\"%d\",&vehicleno);\nif (vehicleno%7==0 && vehicleno%3==0)\npay=tollfee/3;\nelse if (vehicleno%7==0 || vehicleno%3==0)\npay=tollfee/2;\nelse\npay=tollfee;\nprintf(\"the payable amount is %d\",pay);\nreturn 0;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Conditional Control -Statements"
+        },
+        {
+            "question_number": "2",
+            "question_text": "Mrs. Ninu wants to teach her five-year-old daughter on \u201c seasons and months\". If Ninu tells her daughter the name of the month, she must tell her the season for that month. Given the month number M, the task is to print the season name of the year based on the month number. Write a C program to implement the same.",
+            "marks": 5,
+            "answer": "#include <stdio.h>\nvoid main()\n{\n// Checks out the season according\n// to the month number entered by the user\nint M;\nprintf(\"enter the number of month\");\nscanf(\"%d\",&M);\nswitch (M)\n{\ncase 12:\ncase 1:\ncase 2:\nprintf(\"\\nWINTER\");\nbreak;\ncase 3:\ncase 4:\ncase 5:\nprintf(\"\\nSPRING\");\nbreak;\ncase 6:\ncase 7:\ncase 8:\nprintf(\"\\nSUMMER\");\nbreak;\ncase 9:\ncase 10:\ncase 11:\nprintf(\"\\nAUTUMN\");\nbreak;\ndefault:\n// Handles the condition if number entered\n// is not among the valid 12 months\nprintf(\"\\nInvalid Month number\");\nbreak;\n}\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Conditional Control -Statements"
+        },
+        {
+            "question_number": "3",
+            "question_text": "Mr. Bob has been deputed as the Election officer for the Tamil Nadu State Election. He wanted to perform an analysis to check whether a candidate is eligible for voting when he/she enters his/her age. Write a C program to read the age of a candidate and determine whether it is eligible for casting his/her own vote.",
+            "marks": 5,
+            "answer": "#include <stdio.h>\nvoid main()\n{\nint vote_age;\nprintf(\"Input the age of the candidate : \");\nscanf(\"%d\",&vote_age);\nif (vote_age<18)\n{\nprintf(\"Sorry, You are not eligible to caste your vote.\\n\");\nprintf(\"You would be able to caste your vote after %d\\nyear.\\n\",18-vote_age);\n}\nelse\nprintf(\"Congratulation! You are eligible for casting your\\nvote.\\n\");\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Conditional Control -Statements"
+        },
+        {
+            "question_number": "4",
+            "question_text": "Divya is interested to walk on the number line. She started from 1 and will go on walking along the number line in the positive direction. She got a bag to collect those numbers from 1, 2, 3, and so on up to N. Help her to find the sum of that numbers by writing C code.",
+            "marks": 5,
+            "answer": "#include <stdio.h>\nint main()\n{\nint i, n, sum = 0;\n/* Input upper limit from user */\nprintf(\"Enter any number: \");\nscanf(\"%d\", &n);\nprintf(\"Natural nos from 1 to %d :\\n\", n);\n/*\n* Start loop counter from 1 (i=1)\nand go till n (i<=n)\n*\n* increment the loop count by 1 to get the\nnext value.\n* For each repetition print the value of i.\n*/\nfor(i=1; i<=n; i++)\n{\nsum += i\n}\nprintf(\"%d\\n\", sum);\nreturn 0;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Looping Control Statements: for, while, do.while"
+        },
+        {
+            "question_number": "5",
+            "question_text": "Ms. Ahalya is a C programmer and she has been assigned work on Student Grade Calculation. She is familiar with control flow statements. Assist her in developing a C program to compute student grades based on the following criteria:\nMark Grade\nMark<50 F\n50<=marks<60 C\n60<=marks<70 B\n70<=marks<80 B+\n80<=marks<90 A\n90<=marks<=100 A+",
+            "marks": 5,
+            "answer": "#include <stdio.h>\nint main(void)\n{\nint num;\nprintf(\"Enter your mark \");\nscanf(\"%d\",&num);\nprintf(\" You entered %d Marks \\n\", num); // printing outputs\nif(num >= 90)\n{\nprintf(\" You got A+ grade \\n\"); // printing outputs\n}\nelse if (num >=80)\n{\nprintf(\" You got A grade \\n\");\n}\nelse if (num >=70)\n{\nprintf(\" You got B+ grade \\n\");\n}\nelse if (num >=60)\n{\nprintf(\" You got B grade \\n\");\n}\nelse if (num >=50)\n{\nprintf(\" You got C grade \\n\");\n}\nelse if (num < 50)\n{\nprintf(\" You Failed in this exam \\n\");\nprintf(\" Better Luck Next Time \\n\");\n}\nreturn 0;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
+        },
+        {
+            "question_number": "6",
+            "question_text": "Mr. John is a trainee at XYZ Software company and he has been assigned with the following tasks to find the solutions.\nHelp him to find the output from the following program.\n\n#include<stdio.h>\nvoid main ()\n{\nint num[26], temp;\nnum[0] = 100 ;\nnum[25] = 200;\ntemp = num[25];\nnum[25] = num[0];\nnum[0] = temp;\nprintf (\"\\n%d %d\", num[0], num[25]);\n}\n\nOUTPUT\n200 100",
+            "marks": 5,
+            "answer": "The program swaps the values stored at `num[0]` and `num[25]` using a temporary variable. Initially, `num[0]` is 100 and `num[25]` is 200. `temp` gets 200. `num[25]` then gets 100 (value of `num[0]`). Finally, `num[0]` gets 200 (value of `temp`). The `printf` statement then prints the new `num[0]` and `num[25]`.\nOutput: 200 100",
+            "answer_source": "provided",
+            "chapter": "Unit 2: One Dimensional (1D) Array Declaration and initialization"
+        },
+        {
+            "question_number": "7",
+            "question_text": "A class of 10 students appeared 5 subjects in annual examination. Write a program to read the marks obtained by each student in various subjects and print the total marks scored by each of them.\nHINT:\nConsider the inputs as an array of students and subjects.",
+            "marks": 5,
+            "answer": "#include<stdio.h>\n#include<conio.h>\n#define FIRST 360\n#define SECOND 240\nvoid main()\n{\nint n, m, i, j, roll number, marks, total;\nprintf(\"Enter number of students and subjects\");\nscanf(\"%d%d\", &n,&m);\nprintf(\"\\n\");\nfor(i=1; i<=n; ++i)\n{\nprintf(\"Enter roll number:\");\nscanf(\"%d\", &roll_number);\ntotal=0;\nprintf(\"Enter marks of %d subjects for ROLL NO\u201d, m, roll\nnumber);\nfor(j=1; j<=m; j++)\n{\nscanf(\"%d\", &marks);\ntotal=total+marks;\n}\nprintf(\u201cTOTAL MARKS =%d\", total);\n}\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Initializing and Accessing 2D Array, Array Programs \u2013 2D"
+        },
+        {
+            "question_number": "8",
+            "question_text": "Help John to point out the errors, if any, in the following program segment:\n\n/* mixed has some char and some int values */\nint char mixed[100];\nmain()\n{\nint a[10], i;\nfor (i = 1; i <= 10 ; i++)\n{\nscanf(\"%d\", a[i]);\nprintf (\"%d\", a[i]);\n}\n}",
+            "marks": 5,
+            "answer": "OUTPUT:\nError:\n1. `int char mixed[100];` is illegal: You cannot declare a variable with two data types (`int` and `char`) simultaneously like this. For mixed data types, a `struct` or `union` would be used. If it's intended to be an array of characters, it should be `char mixed[100];`. If it's an array of integers, `int mixed[100];`.\n2. `scanf(\"%d\", a[i]);` is missing the address-of operator `&`: The `scanf` function requires the address of the variable where the input should be stored. It should be `scanf(\"%d\", &a[i]);`.\n3. Loop bounds: The array `a` is declared with size 10 (`int a[10];`), meaning valid indices are 0 to 9. The loop `for (i = 1; i <= 10 ; i++)` attempts to access `a[10]`, which is out of bounds and can lead to a runtime error or undefined behavior.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Variables and identifiers, Constants, Keywords"
+        },
+        {
+            "question_number": "9",
+            "question_text": "After summer vacation, the University is reopening the college for UG and PG courses. In the first day and first hour, the B. Tech students are having Computer Programming class. As soon as the Professor entered the class, he saw that students were sitting in random order. So, he decided to arrange the student in his class in ascending order (Height). Assist the Professor to arrange the student in ascending order based on the height of the students. Write a program for the above given scenario.\nHINT:\nINPUT ARRAY: {123,112,130,145,162}",
+            "marks": 5,
+            "answer": "#include <stdio.h>\nvoid main()\n{\nint arr1[10];\nint n, i, j, tmp;\nprintf(\"\\n\\nsort elements of array in ascending order :\\n\");\nprintf(\"------------------------------------\\n\");\nprintf(\"Input the size of array: \");\nscanf(\"%d\", &n);\nprintf(\"Input %d elements in the array :\\n\",n);\nfor(i=0;i<n;i++)\n{\nprintf(\"element - %d : \",i);\nscanf(\"%d\",&arr1[i]);\n}\nfor(i=0; i<n; i++)\n{\nfor(j=i+1; j<n; j++)\n{\nif(arr1[i] < arr1[j])\n{\ntmp = arr1[i];\narr1[i] = arr1[j];\narr1[j] = tmp;\n}\n}\n}\nprintf(\"\\nElements of array is sorted in descending order:\\n\");\nfor(i=0; i<n; i++)\n{\nprintf(\"%d \", arr1[i]);\n}\nprintf(\"\\n\\n\");\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Accessing, Indexing and operations with 1D Arrays"
+        },
+        {
+            "question_number": "10",
+            "question_text": "Write a program in C to read 'n' number of values in an array and display it in reverse order.\nTest Data:\nInput the number of elements to store in the array :3\nInput 3 number of elements in the array :\nelement - 0:2\nelement - 1:5\nelement - 2:7\nExpected Output :\nThe values store into the array are :\n257\nThe values store into the array in reverse are :\n752",
+            "marks": 5,
+            "answer": "#include <stdio.h>\nvoid main()\n{\nint i,n,a[100];\nprintf(\"\\n\\nRead n number of values in an array and display\\nit in reverse order:\\n\");\nprintf(\"-----------------------------------------\\n\");\nprintf(\"Input the number of elements to store in the array :\");\nscanf(\"%d\",&n);\nprintf(\"Input %d number of elements in the array :\\n\",n);\nfor(i=0;i<n;i++)\n{\nprintf(\"element - %d : \",i);\nscanf(\"%d\",&a[i]);\n}\nprintf(\"\\nThe values store into the array are : \\n\");\nfor(i=0;i<n;i++)\n{\nprintf(\"% 5d\",a[i]);\n}\nprintf(\"\\n\\nThe values store into the array in reverse are :\\n\");\nfor(i=n-1;i>=0;i--)\n{\nprintf(\"% 5d\",a[i]);\n}\nprintf(\"\\n\\n\");\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Accessing, Indexing and operations with 1D Arrays"
+        },
+        {
+            "question_number": "11",
+            "question_text": "Mr. Adam is a software programmer at Orange Systems. He wanted to assess the trainee's skillset in C language. Hence, he has assigned some tasks to the trainees to complete in the allotted time. Assist them in completing the tasks listed below.\nConsider the fragment.\nchar str[] = \" I am Gr8DON\u201d;\nstr[4] = '\\0';\nprintf(\"%s\", str);\nWhat is printed? Justify the answer.",
+            "marks": 5,
+            "answer": "OUTPUT:\nI am\nJustification: When null character '\\0' is reached, the printing of the string is terminated. The array `str` is initialized to \" I am Gr8DON\". The statement `str[4] = '\\0';` places a null terminator character at index 4. When `printf(\"%s\", str);` is called, it prints characters from the beginning of the string until it encounters the null terminator. Thus, it prints \" I am\" followed by the null terminator, effectively terminating the string at that point.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: String Basics - String Declaration and Initialization"
+        },
+        {
+            "question_number": "12",
+            "question_text": "Adam is willing to play with C strings. He would like to find the length of a given string without using string functions. Assist him to complete the task.\nInput: \"Programming for Problem Solving\"",
+            "marks": 5,
+            "answer": "#include <stdio.h>\n#include <string.h>\nvoid main()\n{\nchar str1[50] = \"Programming for Problem Solving\";\nint i, l = 0;\nfor (i = 0; str1[i] != '\\0'; i++)\n{\nl++;\n}\nprintf(\"The string contains %d number of characters. \\n\",l);\nprintf(\"So, the length of the string %s is : %d\\n\\n\", str1, l);\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Operations on Strings"
+        },
+        {
+            "question_number": "13",
+            "question_text": "Mr. Adam is interested in separating the individual characters with a blank from the input string. Help him to complete the task in the given time.",
+            "marks": 5,
+            "answer": "#include <stdio.h>\n#include <stdlib.h>\nvoid main()\n{\nchar str[100]; /* Declares a string of size 100 */\nint i= 0;\nprintf(\"\\n\\nSeparate the individual characters from a string\n:\n\");\nprintf(\"----------------------------------------------\\n\");\nprintf(\"Input the string : \");\nfgets(str, sizeof str, stdin);\nprintf(\"The characters of the string are : \\n\");\nwhile(str[i]!='\\0')\n{\nprintf(\"%c \", str[i]);\ni++;\n}\nprintf(\"\\n\");\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Operations on Strings"
+        },
+        {
+            "question_number": "14",
+            "question_text": "Mr. Bob is learning C. He wants to learn how strings are declared and initialized. Help him by explaining any four string manipulation functions with examples.",
+            "marks": 5,
+            "answer": "Here are four common string manipulation functions in C with examples:\n\n1.  **`strlen()` - String Length:**\n    *   **Purpose:** Calculates the length of a string (excluding the null terminator `\\0`).\n    *   **Syntax:** `size_t strlen(const char *str);`\n    *   **Example:**\n        ```c\n        #include <stdio.h>\n        #include <string.h>\n        int main() {\n            char myString[] = \"Hello\";\n            printf(\"Length of '%s' is %lu\\n\", myString, strlen(myString));\n            return 0;\n        }\n        // Output: Length of 'Hello' is 5\n        ```\n\n2.  **`strcpy()` - String Copy:**\n    *   **Purpose:** Copies the contents of one string to another. The destination array must be large enough to hold the source string, including the null terminator.\n    *   **Syntax:** `char *strcpy(char *dest, const char *src);`\n    *   **Example:**\n        ```c\n        #include <stdio.h>\n        #include <string.h>\n        int main() {\n            char source[] = \"C Programming\";\n            char destination[20]; // Ensure enough space\n            strcpy(destination, source);\n            printf(\"Copied string: %s\\n\", destination);\n            return 0;\n        }\n        // Output: Copied string: C Programming\n        ```\n\n3.  **`strcat()` - String Concatenation:**\n    *   **Purpose:** Appends the source string to the end of the destination string. The destination array must have enough space to accommodate both strings.\n    *   **Syntax:** `char *strcat(char *dest, const char *src);`\n    *   **Example:**\n        ```c\n        #include <stdio.h>\n        #include <string.h>\n        int main() {\n            char str1[50] = \"Hello\";\n            char str2[] = \" World\";\n            strcat(str1, str2);\n            printf(\"Concatenated string: %s\\n\", str1);\n            return 0;\n        }\n        // Output: Concatenated string: Hello World\n        ```\n\n4.  **`strcmp()` - String Comparison:**\n    *   **Purpose:** Compares two strings lexicographically. It returns 0 if the strings are identical, a negative value if the first string is less than the second, and a positive value if the first string is greater than the second.\n    *   **Syntax:** `int strcmp(const char *str1, const char *str2);`\n    *   **Example:**\n        ```c\n        #include <stdio.h>\n        #include <string.h>\n        int main() {\n            char s1[] = \"apple\";\n            char s2[] = \"banana\";\n            char s3[] = \"apple\";\n            printf(\"strcmp(s1, s2): %d (negative)\\n\", strcmp(s1, s2)); // apple < banana\n            printf(\"strcmp(s1, s3): %d (zero)\\n\", strcmp(s1, s3));   // apple == apple\n            return 0;\n        }\n        // Output examples:\n        // strcmp(s1, s2): -1 (negative)\n        // strcmp(s1, s3): 0 (zero)\n        ```",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Built-inString Functions: atoi, strlen, strcat, strcmp"
+        },
+        {
+            "question_number": "15",
+            "question_text": "Sushan is working on strings. He has got the numbers as a string which is given below as an input. His task is to convert the numbers in the form of string and convert the same to integer. Assist him to complete the given task.\nInput: 155342",
+            "marks": 5,
+            "answer": "#include<stdio.h>\n#include <stdlib.h>\nint main() {\n// Converting a numeric string\nchar str[10] = \"155342\";\nint x = atoi(str);\nprintf(\"Converting '155342': %d\\n\", x);\n// Converting an alphanumeric string\nchar str2[10] = \"Hello!\";\nx = atoi(str2);\nprintf(\"Converting 'Hello!': %d\\n\", x);\n// Converting a partial string\nchar str3[10] = \"99Hello!\";\nx = atoi(str3);\nprintf(\"Converting '99Hello!': %d\\n\", x);\nreturn 0;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Built-inString Functions: atoi"
+        },
+        {
+            "question_number": "16",
+            "question_text": "Find the types of pointer used for the given cases and explain\na) Consider a scenario where a person living in country A decides to move country B for his/her vacations, where certain services like YouTube are not accessible. Now, whenever he/she tries to hit www.youtube.com, they would receive some HTTP errors, which would mean that there is no pointer or route available for www.youtube.com at that location.\nb) Which type of pointer is the most conventional way of storing raw addresses in C programming?",
+            "marks": 5,
+            "answer": "a) The scenario describes a situation where a resource (www.youtube.com) is not accessible, implying that the pointer to that resource (route) is invalid or non-existent in the new location. This analogy relates to **Dangling Pointers**.\n\n**Dangling Pointers:**\nThe pointers pointing to a deallocated memory block or unallocated memory block are known as Dangling Pointers. This condition generates an error known as Dangling Pointer Problem. Dangling Pointer occurs when a pointer pointing to a variable goes out of scope or when an object/variable's memory contains uninitialized values or points to deallocated memory.\n\nb) The most conventional way of storing raw addresses in C programming without specific type association is using **Void Pointers**.\n\n**Void Pointers:**\nThe void pointer in C is a pointer that is not associated with any data types. It points to some data location in the storage. It is also called the general-purpose pointer. It may be explicitly type-casted as another type.\n\n**Syntax:** `void *name_of_pointer;`\nHere, the `void` keyword acts as the pointer type, and it is followed by the pointer name\u2014to which the pointer type points and allocates the address location in the code. The declaration of a pointer happens with the name and type of pointer that supports any given data type. For example, `void *ptr` means the pointer `ptr` is expecting a void type and can point to data of any type.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Pointer Declaration and dereferencing, Void Pointers, Null pointers"
+        },
+        {
+            "question_number": "17",
+            "question_text": "Mr. Charles is interested in C pointer concepts and he wanted to count the number of vowels in a string using a pointer. Help him to complete the task.",
+            "marks": 5,
+            "answer": "#include <stdio.h>\nint main()\n{\nchar str[100];\nchar *ptr;\nint cntV,cntC;\nprintf(\"Enter a string: \");\ngets(str);\n//assign address of str to ptr\nptr=str;\ncntV=cntC=0;\nwhile(*ptr!='\\0')\n{\nif(*ptr=='A' ||*ptr=='E' ||*ptr=='I' ||*ptr=='O' ||*ptr=='U'\n||*ptr=='a' ||*ptr=='e' ||*ptr=='i' ||*ptr=='o' ||*ptr=='u')\ncntV++;\nelse\ncntC++;\n//increase the pointer, to point next character\nptr++;\n}\nprintf(\"Total number of VOWELS: %d, CONSONANT:\n%d\\n\",cntV,cntC);\nreturn 0;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Pointer based Array manipulation"
+        },
+        {
+            "question_number": "18",
+            "question_text": "Mr. Charles wants to find the output of the following code snippet.\n1. int x = 5, y = 15;\n2. int * p1, * p2;\n3. p1 = &x;\n4. p2 = &y;\n5. *p1 = 10;\n6. *p2 = *p1;\n7. p1 = p2;\n8. *p1 = 20;\n9. printf(\"%d %d\",x,y);",
+            "marks": 5,
+            "answer": "OUTPUT:\n10 20\n\nEXPLANATION:\n1.  `int x = 5, y = 15;` initializes `x` to 5 and `y` to 15.\n2.  `int *p1, *p2;` declares two integer pointers `p1` and `p2`.\n3.  `p1 = &x;` makes `p1` point to the memory address of `x`.\n4.  `p2 = &y;` makes `p2` point to the memory address of `y`.\n5.  `*p1 = 10;` dereferences `p1` and assigns 10 to the variable it points to, which is `x`. So, `x` becomes 10.\n6.  `*p2 = *p1;` dereferences `p1` (value is 10) and assigns this value to the variable `p2` points to, which is `y`. So, `y` becomes 10.\n7.  `p1 = p2;` makes `p1` now point to the same memory address as `p2`. Since `p2` points to `y`, `p1` also now points to `y`. (Original `x` is no longer pointed to by `p1`).\n8.  `*p1 = 20;` dereferences `p1` (which now points to `y`) and assigns 20 to the variable it points to. So, `y` becomes 20.\n9.  `printf(\"%d %d\",x,y);` prints the current values of `x` and `y`.\n    *   `x` is 10.\n    *   `y` is 20.\n\nTherefore, the output is `10 20`.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Pointer Declaration and dereferencing"
+        },
+        {
+            "question_number": "19",
+            "question_text": "Krishna is very fond of natural numbers. He wants to display all the natural numbers in between 1 to 100 using a function. Your task is to help him to display the natural number in between 1 to 100 iteratively.",
+            "marks": 5,
+            "answer": "#include<stdio.h>\nint number(int val) {\nif(val<=100) {\nprintf(\"%d\\t\",val);\nnumber(val+1);\n}\n}\nint main() {\nint val = 1;\nnumber(val);\nreturn 0;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Function prototype declaration, function definition"
+        },
+        {
+            "question_number": "20",
+            "question_text": "Mr. Charles is interested in C function concepts and he wanted to find out the maximum and minimum of some values using a function which will return an array.\nTest Data:\nInput 5 values\n25 11 35 65 20\nExpected Output :\nNumber of values you want to input: Input 5 values\nMinimum value is: 11\nMaximum value is: 65",
+            "marks": 5,
+            "answer": "#include <stdio.h>\n/* Function declarations */\nint max(int num1, int num2);\nint min(int num1, int num2);\nint main()\n{\nint num1, num2, maximum, minimum;\n/* Input two numbers from user */\nprintf(\"Enter any two numbers: \");\nscanf(\"%d%d\", &num1, &num2);\nmaximum = max(num1, num2); // Call maximum function\nminimum = min(num1, num2); // Call minimum\nfunction\nprintf(\"\\nMaximum = %d\\n\", maximum);\nprintf(\"Minimum = %d\", minimum);\nreturn 0;\n}\n/*** Find maximum between two numbers.*/\nint max(int num1, int num2)\n{\nreturn (num1 > num2)? num1 : num2;\n}\n/*** Find minimum between two numbers.*/\nint min(int num1, int num2)\n{\nreturn (num1 > num2 ) ? num2 : num1;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Function with and without return values"
+        }
+    ]
+}

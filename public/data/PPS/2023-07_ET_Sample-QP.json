@@ -1,0 +1,270 @@
+{
+  "paper_title": "21CSS101J - PROGRAMMING FOR PROBLEM SOLVING",
+  "source": "2023-07 ET Sample-QP",
+  "questions": [
+    {
+      "question_number": "1",
+      "question_text": "What is the first step in the problem-solving process?\n(A) Generate potential solutions\n(B) Define the problem\n(C) Implement the solution\n(D) Evaluate alternatives",
+      "marks": 1,
+      "answer": "The first step in the problem-solving process is to (B) Define the problem. Before attempting to solve any problem, it's crucial to clearly understand and define what the problem is.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
+    },
+    {
+      "question_number": "2",
+      "question_text": "What is an algorithm?\n(A) A step-by-step procedure to solve a problem\n(B) A graphical representation of a process\n(C) A programming language\n(D) A flowchart symbol",
+      "marks": 1,
+      "answer": "An algorithm is (A) A step-by-step procedure to solve a problem. It is a finite set of well-defined instructions to accomplish a specific task.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Evolution of Programming & Languages - Writing algorithms & Pseudo code"
+    },
+    {
+      "question_number": "3",
+      "question_text": "Which of the following is NOT a characteristic of a good algorithm?\n(A) Finiteness\n(B) Determinism\n(C) Ambiguity\n(D) Feasibility",
+      "marks": 1,
+      "answer": "The characteristic that is NOT of a good algorithm is (C) Ambiguity. Good algorithms must be unambiguous, meaning each step must be clear and precisely defined.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Evolution of Programming & Languages - Writing algorithms & Pseudo code"
+    },
+    {
+      "question_number": "4",
+      "question_text": "What is a flowchart?\n(A) A programming language\n(B) A step-by-step procedure to solve a problem\n(C) A graphical representation of a process or algorithm\n(D) A function in a programming language",
+      "marks": 1,
+      "answer": "A flowchart is (C) A graphical representation of a process or algorithm. It uses standard symbols to depict the steps and decision points in a process.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Evolution of Programming & Languages - Writing algorithms & Pseudo code"
+    },
+    {
+      "question_number": "5",
+      "question_text": "Which flowchart symbol is used to represent a decision point in a process?\n(A) Rectangle\n(B) Circle\n(C) Arrow\n(D) Diamond",
+      "marks": 1,
+      "answer": "The flowchart symbol used to represent a decision point is (D) Diamond. This symbol indicates a point where a choice must be made, typically resulting in different paths.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Evolution of Programming & Languages - Writing algorithms & Pseudo code"
+    },
+    {
+      "question_number": "6",
+      "question_text": "What does the scanf() function do in C?\n(A) Prints output to the console\n(B) Reads input from the user\n(C) Copies one string to another\n(D) Concatenates two strings",
+      "marks": 1,
+      "answer": "The `scanf()` function in C (B) Reads input from the user. It is used to get formatted input from the standard input device, typically the keyboard.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Introduction to C: Structure of the C program - Input and output statements"
+    },
+    {
+      "question_number": "7",
+      "question_text": "How do you compare two strings in C?\n(A) str1 == str2\n(B) strcmp(str1, str2)\n(C) strcomp(str1, str2)\n(D) strcompare(str1, str2)",
+      "marks": 1,
+      "answer": "To compare two strings in C, you use (B) `strcmp(str1, str2)`. The `==` operator compares memory addresses for pointers, not the content of the strings.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Built-inString Functions: atoi, strlen, strcat, strcmp"
+    },
+    {
+      "question_number": "8",
+      "question_text": "What will be the output of the expression 11^5?\n(A) 12\n(B) 13\n(C) 10\n(D) 11",
+      "marks": 1,
+      "answer": "In C, `^` is the bitwise XOR operator.\nDecimal 11 in binary is `1011`.\nDecimal 5 in binary is `0101`.\nPerforming bitwise XOR:\n  `1011` (11)\n`^ 0101` (5)\n------\n  `1110` (14)\nSo, the output of the expression 11^5 is 14. None of the provided options (A) 12, (B) 13, (C) 10, (D) 11 are correct.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Arithmetic, Relational and logical Operators - Bitwise and Size-of operator"
+    },
+    {
+      "question_number": "9",
+      "question_text": "What is the purpose of the strlen() function in C?\n(A) To compare two strings\n(B) To concatenate two strings\n(C) To calculate the length of a string\n(D) To convert a string to uppercase",
+      "marks": 1,
+      "answer": "The purpose of the `strlen()` function in C is (C) To calculate the length of a string. It returns the number of characters in a string, excluding the null terminator.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Built-inString Functions: atoi, strlen, strcat, strcmp"
+    },
+    {
+      "question_number": "10",
+      "question_text": "Which library should be included to use the strcpy() function in C?\n(A) stdlib.h\n(C) string.h\n(B) stdio.h\n(D) math.h",
+      "marks": 1,
+      "answer": "To use the `strcpy()` function in C, the library that should be included is (C) `string.h`. This header file contains declarations for string manipulation functions.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Built-inString Functions: sprint, sscanf, strrev, strcpy, strstr, strtok"
+    },
+    {
+      "question_number": "11",
+      "question_text": "What is the correct way to declare a string variable in C?\n(A) string s;\n(B) char s[];\n(C) char* s;\n(D) str s;",
+      "marks": 1,
+      "answer": "Both (B) `char s[];` and (C) `char* s;` are valid ways to declare a string variable in C, depending on the specific use case. However, `char s[];` is typically used for declaring a character array that can hold a string, requiring either an explicit size (e.g., `char s[100];`) or initialization with a string literal (e.g., `char s[] = \"hello\";`). `char* s;` declares a pointer to a character, which can point to a string, often a string literal or dynamically allocated memory.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Non-Numeric Data types: char and string"
+    },
+    {
+      "question_number": "12",
+      "question_text": "s = 'foobar',\nThen what is the output of s[-2]\n(A) o\n(C) b\n(B) r\n(D) a",
+      "marks": 1,
+      "answer": "This is a Python string indexing question. In Python, negative indexing accesses characters from the end of the string. `s[-2]` refers to the second-to-last character.\nFor `s = 'foobar'`, the characters are:\nf o o b a r\n-6 -5 -4 -3 -2 -1\nSo, `s[-2]` is 'a'. The output is (D) a.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Python: Introduction to Python - Working with String functions"
+    },
+    {
+      "question_number": "13",
+      "question_text": "We can combine strings and numbers by using the _____ method.\n(A) combine()\n(C) index()\n(B) concat()\n(D) format()",
+      "marks": 1,
+      "answer": "In Python, we can combine strings and numbers using the (D) `format()` method (or f-strings). For example, `\"My number is {}\".format(10)`.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Python: Introduction to Python - Working with Input, Output functions"
+    },
+    {
+      "question_number": "14",
+      "question_text": "Which formatted output value is used to print hexadecimal values?\n(A) %s\n(C) %h\n(B) %o\n(D) %x",
+      "marks": 1,
+      "answer": "To print hexadecimal values in C using formatted output functions like `printf()`, the format specifier (D) `%x` (or `%X` for uppercase) is used.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Introduction to C: Structure of the C program - Input and output statements"
+    },
+    {
+      "question_number": "15",
+      "question_text": "Which string function converts a character into an integer?\n(A) len()\n(C) ord()\n(B) str()\n(D) char()",
+      "marks": 1,
+      "answer": "In Python, the string function that converts a character into its corresponding integer (Unicode code point) is (C) `ord()`. For example, `ord('A')` returns 65.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Python: Introduction to Python - Working with String functions"
+    },
+    {
+      "question_number": "16",
+      "question_text": "With respect to String operation, the + operator _____ the given strings.\n(A) Adds\n(C) Multiplies\n(B) Concatenates\n(D) Compares",
+      "marks": 1,
+      "answer": "In Python, with respect to string operations, the `+` operator (B) Concatenates the given strings. For example, `'Hello' + 'World'` results in `'HelloWorld'`.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Python: Introduction to Python - Working with String functions"
+    },
+    {
+      "question_number": "17",
+      "question_text": "_____ is used when data is in Tabular format.\n(A) NumPy\n(C) MatPlotlib\n(B) Pandas\n(D) Random",
+      "marks": 1,
+      "answer": "(B) Pandas is used when data is in Tabular format. It provides data structures like DataFrames and Series, which are ideal for handling structured and tabular data.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Introduction to Pandas - Creating Series Objects, Data Frame Objects"
+    },
+    {
+      "question_number": "18",
+      "question_text": "The Interface of Matplotlib used for data visualization is _____ \n(A) Seaborn\n(C) Pyplot\n(B) Matlab\n(D) Pandas",
+      "marks": 1,
+      "answer": "The primary interface of Matplotlib used for data visualization is (C) Pyplot. It provides a MATLAB-like interface for making plots and visualizations.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Introduction to Python Libraries"
+    },
+    {
+      "question_number": "19",
+      "question_text": "_____ is a high level API built on TensorFlow.\n(A) PyBrain\n(C) Pandas\n(B) Keras\n(D) Scrapy",
+      "marks": 1,
+      "answer": "(B) Keras is a high-level API built on TensorFlow (and other backend engines like Theano or CNTK). It is designed for fast experimentation with deep neural networks.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Introduction to Python Libraries"
+    },
+    {
+      "question_number": "20",
+      "question_text": "Which of the following module is to be imported to create Series?\n(A) NumPy\n(C) Pandas\n(B) MatPlotlib\n(D) Random",
+      "marks": 1,
+      "answer": "To create Series objects, the (C) Pandas module needs to be imported. Series is a one-dimensional labeled array in Pandas.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Introduction to Pandas - Creating Series Objects, Data Frame Objects"
+    },
+    {
+      "question_number": "21a",
+      "question_text": "Define problem-solving and discuss the six steps involved in problem-solving.",
+      "marks": 8,
+      "answer": "Problem-solving is the process of identifying a problem, analyzing its nature, devising strategies to resolve it, implementing the chosen strategy, and evaluating the outcome.\n\nThe six steps involved in problem-solving are:\n1.  **Define the Problem:** Clearly identify and understand what the problem is. This involves gathering facts, defining objectives, and understanding constraints.\n2.  **Analyze the Problem:** Break down the problem into smaller, manageable parts. Identify the root causes, analyze relationships between different components, and determine what data is available or needed.\n3.  **Develop Solutions (Generate Alternatives):** Brainstorm and create various possible solutions to the problem. Do not evaluate them at this stage; focus on quantity.\n4.  **Choose the Best Solution:** Evaluate the generated alternatives against the problem definition and objectives. Consider factors like feasibility, cost, time, risks, and impact. Select the most appropriate solution.\n5.  **Implement the Solution:** Put the chosen solution into action. This may involve coding, configuring systems, or executing a plan. Careful planning and execution are crucial.\n6.  **Evaluate the Solution:** After implementation, assess whether the solution effectively solves the original problem. Monitor its performance, gather feedback, and make adjustments or improvements as necessary. If the problem persists, the process might need to be repeated.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
+    },
+    {
+      "question_number": "21b.i",
+      "question_text": "Define algorithm, and describe the characteristics of an algorithm?",
+      "marks": 4,
+      "answer": "An **algorithm** is a finite sequence of well-defined, unambiguous instructions, typically used to solve a class of specific problems or to perform a computation. It is a step-by-step procedure to transform input into desired output.\n\n**Characteristics of a good algorithm:**\n1.  **Finiteness:** An algorithm must terminate after a finite number of steps.\n2.  **Definiteness:** Each step of an algorithm must be precisely and unambiguously defined. There should be no room for interpretation.\n3.  **Input:** An algorithm must have zero or more well-defined inputs.\n4.  **Output:** An algorithm must have one or more well-defined outputs, which should be produced at the end of the algorithm.\n5.  **Effectiveness:** Each operation in the algorithm must be sufficiently basic so that it can be carried out in principle by a person using only pencil and paper. It must be feasible.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Evolution of Programming & Languages - Writing algorithms & Pseudo code"
+    },
+    {
+      "question_number": "21b.ii",
+      "question_text": "Mention flowchart, and discuss the symbols/shapes are commonly used in flowcharts?",
+      "marks": 4,
+      "answer": "A **flowchart** is a pictorial representation or graphical diagram that illustrates the steps and decision points of a process or algorithm. It uses various standard symbols to represent different types of actions or steps.\n\n**Commonly used flowchart symbols/shapes:**\n1.  **Terminal (Oval/Rounded Rectangle):** Represents the beginning (Start) or end (End) of a process.\n2.  **Process (Rectangle):** Indicates a step where an action or process is performed (e.g., calculation, data manipulation).\n3.  **Input/Output (Parallelogram):** Represents an input operation (receiving data) or an output operation (displaying data).\n4.  **Decision (Diamond):** Indicates a point where a decision must be made. It typically has one entry point and two or more exit points, usually labeled 'Yes'/'No' or 'True'/'False'.\n5.  **Flow Line (Arrow):** Shows the direction of flow and connects one symbol to another.\n6.  **Connector (Small Circle):** Used to indicate a jump from one point in the process flow to another, often used to connect different parts of a flowchart on the same page or different pages.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Evolution of Programming & Languages - Writing algorithms & Pseudo code"
+    },
+    {
+      "question_number": "22a",
+      "question_text": "Analyze the various Storage Classes in C with suitable examples.",
+      "marks": 8,
+      "answer": "Storage classes in C determine the scope, visibility, and lifetime of variables. They also determine the location where the variable will be stored. There are four main storage classes in C:\n\n1.  **`auto` (Automatic Storage Class):**\n    *   **Scope:** Local to the block in which they are declared.\n    *   **Lifetime:** They are created when the block is entered and destroyed when the block is exited.\n    *   **Default Value:** Garbage value.\n    *   **Keyword:** `auto` (though it's the default for local variables and rarely used explicitly).\n    *   **Example:**\n        ```c\n        void func() {\n            int x = 10; // auto is implied\n            auto int y = 20; // Explicit auto\n            // x and y are local to func(), destroyed on exit\n        }\n        ```\n\n2.  **`register` (Register Storage Class):**\n    *   **Scope:** Local to the block in which they are declared.\n    *   **Lifetime:** Created on entry to the block, destroyed on exit.\n    *   **Default Value:** Garbage value.\n    *   **Keyword:** `register`.\n    *   **Purpose:** Suggests to the compiler to store the variable in a CPU register for faster access. However, the compiler makes the final decision.\n    *   **Example:**\n        ```c\n        void func() {\n            register int count = 0; // Suggests storing count in a register\n            for (int i = 0; i < 10; i++) {\n                count++;\n            }\n        }\n        ```\n\n3.  **`static` (Static Storage Class):**\n    *   **Scope:**\n        *   **Local static:** Local to the block, but lifetime throughout the program execution.\n        *   **Global static:** Local to the file in which they are declared (file scope).\n    *   **Lifetime:** Persists for the entire duration of the program.\n    *   **Default Value:** Zero.\n    *   **Keyword:** `static`.\n    *   **Purpose:** For local variables, they retain their value between function calls. For global variables and functions, they limit visibility to the current compilation unit (file).\n    *   **Example:**\n        ```c\n        void counter() {\n            static int count = 0; // Initialized once, retains value\n            count++;\n            printf(\"Count: %d\\n\", count);\n        }\n        int main() {\n            counter(); // Output: Count: 1\n            counter(); // Output: Count: 2\n            return 0;\n        }\n        ```\n\n4.  **`extern` (External Storage Class):**\n    *   **Scope:** Global (can be accessed across multiple files).\n    *   **Lifetime:** Throughout the program execution.\n    *   **Default Value:** Zero.\n    *   **Keyword:** `extern`.\n    *   **Purpose:** Used to declare a variable or function that is defined in another source file or globally in the current file. It informs the compiler that the variable/function exists elsewhere.\n    *   **Example (File1.c):**\n        ```c\n        int globalVar = 100; // Definition\n        void func_from_file1() {\n            printf(\"Inside func_from_file1\\n\");\n        }\n        ```\n    *   **Example (File2.c):**\n        ```c\n        #include <stdio.h>\n        extern int globalVar; // Declaration, refers to globalVar in File1.c\n        extern void func_from_file1(); // Declaration\n        int main() {\n            printf(\"Global variable from another file: %d\\n\", globalVar);\n            func_from_file1();\n            return 0;\n        }\n        ```\nThese storage classes provide flexibility in managing variables, memory, and access control within a C program.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Values, Names, Scope, Binding, Storage Classes"
+    },
+    {
+      "question_number": "22b",
+      "question_text": "Explain with example ++i, i++, --i, & i--.",
+      "marks": 8,
+      "answer": "The `++` (increment) and `--` (decrement) operators are unary operators in C that increase or decrease the value of a variable by 1. They come in two forms: prefix and postfix.\n\n1.  **`++i` (Pre-increment):**\n    *   **Explanation:** The value of `i` is incremented first, and then the new (incremented) value is used in the expression.\n    *   **Example:**\n        ```c\n        int i = 5;\n        int j = ++i; // i becomes 6, then j gets 6\n        printf(\"i = %d, j = %d\\n\", i, j); // Output: i = 6, j = 6\n        ```\n\n2.  **`i++` (Post-increment):**\n    *   **Explanation:** The current value of `i` is used in the expression first, and then `i` is incremented.\n    *   **Example:**\n        ```c\n        int i = 5;\n        int j = i++; // j gets 5, then i becomes 6\n        printf(\"i = %d, j = %d\\n\", i, j); // Output: i = 6, j = 5\n        ```\n\n3.  **`--i` (Pre-decrement):**\n    *   **Explanation:** The value of `i` is decremented first, and then the new (decremented) value is used in the expression.\n    *   **Example:**\n        ```c\n        int i = 5;\n        int j = --i; // i becomes 4, then j gets 4\n        printf(\"i = %d, j = %d\\n\", i, j); // Output: i = 4, j = 4\n        ```\n\n4.  **`i--` (Post-decrement):**\n    *   **Explanation:** The current value of `i` is used in the expression first, and then `i` is decremented.\n    *   **Example:**\n        ```c\n        int i = 5;\n        int j = i--; // j gets 5, then i becomes 4\n        printf(\"i = %d, j = %d\\n\", i, j); // Output: i = 4, j = 5\n        ```\n\n**Key Difference Summary:**\n*   **Prefix (`++i`, `--i`):** Update then Use.\n*   **Postfix (`i++`, `i--`):** Use then Update.\n\nIt's important to understand this distinction, especially when these operators are used within larger expressions, as the timing of the increment/decrement affects the value assigned or used in that expression.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Increment and decrement operator - Expressions with pre / post increment operator"
+    },
+    {
+      "question_number": "23a",
+      "question_text": "Describe function and its types in C? And explain recursion function with an example.",
+      "marks": 8,
+      "answer": "**Functions in C:**\nA function in C is a self-contained block of statements that performs a specific task. Functions are fundamental to modular programming, allowing complex problems to be broken down into smaller, manageable units. This promotes code reusability, reduces redundancy, and improves program readability and maintainability.\n\n**Types of Functions in C:**\nFunctions in C can be broadly categorized into two types:\n\n1.  **Library Functions (Built-in Functions):** These are pre-defined functions provided by the C standard library. They are readily available for use by including appropriate header files (e.g., `printf()` and `scanf()` from `<stdio.h>`, `strlen()` and `strcpy()` from `<string.h>`, `sqrt()` and `pow()` from `<math.h>`).\n2.  **User-Defined Functions:** These are functions created by the programmer to perform specific tasks as required by the program's logic. Programmers define their own functions to encapsulate code for a particular operation.\n\nUser-defined functions can further be classified based on whether they take arguments and/or return a value:\n*   **Function with no arguments and no return value:** Performs a task independently (e.g., a function to just print a message).\n*   **Function with no arguments and a return value:** Computes something and returns a result but takes no external inputs (e.g., a function to get system time).\n*   **Function with arguments and no return value:** Takes inputs to perform a task but doesn't explicitly send back a result (e.g., a function to print the sum of two numbers).\n*   **Function with arguments and a return value:** Takes inputs, performs computation, and returns a result (e.g., a function to calculate the square of a number).\n\n**Recursion Function with an Example:**\n**Recursion** is a programming technique where a function calls itself, directly or indirectly, to solve a problem. A recursive function solves a problem by breaking it down into smaller instances of the same problem until a base case is reached, which can be solved directly without further recursion. \n\n**Key components of a recursive function:**\n1.  **Base Case:** A condition that stops the recursion. Without a base case, the function would call itself indefinitely, leading to a stack overflow.\n2.  **Recursive Step:** The part where the function calls itself with a modified (usually smaller or simpler) input, moving closer to the base case.\n\n**Example: Calculating Factorial using Recursion**\nThe factorial of a non-negative integer `n`, denoted as `n!`, is the product of all positive integers less than or equal to `n`. `0!` is defined as 1.\n\n*   **Mathematical Definition:**\n    *   `n! = n * (n-1)!` for `n > 0`\n    *   `0! = 1`\n\n*   **C Program for Factorial using Recursion:**\n    ```c\n    #include <stdio.h>\n\n    // Recursive function to calculate factorial\n    long long int factorial(int n) {\n        // Base case: if n is 0 or 1, factorial is 1\n        if (n == 0 || n == 1) {\n            return 1;\n        } \n        // Recursive step: n * factorial(n-1)\n        else {\n            return n * factorial(n - 1);\n        }\n    }\n\n    int main() {\n        int num = 5;\n        printf(\"Factorial of %d = %lld\\n\", num, factorial(num)); // Output: Factorial of 5 = 120\n        \n        num = 0;\n        printf(\"Factorial of %d = %lld\\n\", num, factorial(num)); // Output: Factorial of 0 = 1\n\n        return 0;\n    }\n    ```\n\nIn this example, `factorial(n)` calls itself with `n-1` until `n` becomes 0 or 1 (the base cases). This breaks down the problem of `n!` into `n * (n-1)!`, ultimately solving it through repeated self-calls.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Function prototype declaration, function definition"
+    },
+    {
+      "question_number": "23b",
+      "question_text": "Write a C Program to replace all VOWELS with star (*) and print the output.",
+      "marks": 8,
+      "answer": "```c\n#include <stdio.h>\n#include <string.h>\n#include <ctype.h> // For toupper() or tolower() if needed for case-insensitivity\n\nint main() {\n    char str[100]; // Declare a character array (string) to store input\n    int i;\n\n    printf(\"Enter a string: \");\n    // Read input string from the user. gets() is risky, fgets() is safer.\n    // Using fgets() for safety. Reads up to 99 chars + null terminator.\n    fgets(str, sizeof(str), stdin);\n\n    // Remove trailing newline character if fgets() captured it\n    str[strcspn(str, \"\\n\")] = 0;\n\n    printf(\"Original string: %s\\n\", str);\n\n    // Iterate through the string to find and replace vowels\n    for (i = 0; str[i] != '\\0'; i++) {\n        // Convert character to uppercase for case-insensitive check\n        char ch = toupper(str[i]); \n\n        // Check if the character is a vowel\n        if (ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {\n            str[i] = '*'; // Replace vowel with an asterisk\n        }\n    }\n\n    printf(\"String after replacing vowels: %s\\n\", str);\n\n    return 0;\n}\n```\n\n**Explanation:**\n1.  **Includes:** `stdio.h` for input/output, `string.h` for `strcspn` (to handle `fgets` newline), and `ctype.h` for `toupper()` for case-insensitive checking.\n2.  **Declare String:** `char str[100]` declares a character array to store the input string.\n3.  **Read Input:** `fgets()` is used to safely read a string from the user. `strcspn()` and `str[...]=0` are used to remove the trailing newline character that `fgets()` might include.\n4.  **Loop Through String:** A `for` loop iterates through each character of the string until the null terminator (`\\0`) is encountered.\n5.  **Check for Vowel:** Inside the loop, `toupper(str[i])` converts the current character to uppercase so that both 'a' and 'A' (and other vowel pairs) are checked. An `if` condition then checks if the uppercase character is any of 'A', 'E', 'I', 'O', or 'U'.\n6.  **Replace Vowel:** If the character is a vowel, it is replaced with an asterisk (`*`).\n7.  **Print Output:** Finally, the modified string is printed to the console.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: String Basics - Operations on Strings"
+    },
+    {
+      "question_number": "24a",
+      "question_text": "Describe about the different types of data structures in python.",
+      "marks": 8,
+      "answer": "Python offers several built-in data structures, each with unique characteristics and use cases. These structures allow developers to organize and store data efficiently.\n\n1.  **Lists:**\n    *   **Description:** Ordered, mutable (changeable) collections of items. Lists can contain items of different data types.\n    *   **Characteristics:** Enclosed in square brackets `[]`. Elements are indexed, allowing access by position. Support slicing and various methods for adding, removing, and modifying elements.\n    *   **Example:** `my_list = [1, \"apple\", 3.14, True]`\n\n2.  **Tuples:**\n    *   **Description:** Ordered, immutable (unchangeable) collections of items. Like lists, they can contain items of different data types.\n    *   **Characteristics:** Enclosed in parentheses `()`. Elements are indexed and support slicing. Once created, elements cannot be modified, added, or removed. Often used for heterogeneous collections where the elements have meaning by position (e.g., coordinates, database records).\n    *   **Example:** `my_tuple = (1, \"banana\", 2.71)`\n\n3.  **Sets:**\n    *   **Description:** Unordered collections of unique items. Sets do not allow duplicate elements.\n    *   **Characteristics:** Enclosed in curly braces `{}` (except for empty sets, which are created with `set()`). Elements are not indexed. Support mathematical set operations like union, intersection, difference, and symmetric difference. Useful for membership testing and eliminating duplicates.\n    *   **Example:** `my_set = {1, 2, 3, 2, 4}` (results in `{1, 2, 3, 4}`)\n\n4.  **Dictionaries:**\n    *   **Description:** Unordered, mutable collections of key-value pairs. Each key must be unique and immutable (e.g., strings, numbers, tuples).\n    *   **Characteristics:** Enclosed in curly braces `{}`. Values are accessed using their associated keys. Dictionaries are highly optimized for retrieving values when the key is known.\n    *   **Example:** `my_dict = {\"name\": \"Alice\", \"age\": 30, \"city\": \"New York\"}`\n\nThese fundamental data structures empower Python developers to handle a wide range of data organization and manipulation tasks effectively.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Working with List structures"
+    },
+    {
+      "question_number": "24b",
+      "question_text": "Explain the significant features of the Pandas and Numpy library.",
+      "marks": 8,
+      "answer": "**NumPy (Numerical Python):**\nNumPy is the fundamental package for numerical computation in Python. It provides support for large, multi-dimensional arrays and matrices, along with a collection of high-level mathematical functions to operate on these arrays.\n\n**Significant Features of NumPy:**\n1.  **N-dimensional Array Object (`ndarray`):** The core feature of NumPy is its `ndarray` object, which is a powerful N-dimensional array capable of storing large datasets efficiently. It is much faster and more memory-efficient than Python's built-in lists for numerical operations.\n2.  **Vectorized Operations:** NumPy allows you to perform operations on entire arrays (or parts of arrays) without writing explicit loops. This 'vectorization' significantly speeds up computations, especially for mathematical and statistical tasks.\n3.  **Broadcasting:** A powerful mechanism that allows NumPy to work with arrays of different shapes when performing arithmetic operations. It intelligently stretches arrays to match dimensions without needing to make copies.\n4.  **Mathematical Functions:** Provides a vast collection of functions for linear algebra, Fourier transforms, random number generation, and more.\n5.  **Integration:** Forms the basis for many other scientific computing libraries in Python, including Pandas, SciPy, and Matplotlib.\n\n**Pandas (Python Data Analysis Library):**\nPandas is a fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation tool, built on top of the Python programming language. It is particularly well-suited for working with tabular and relational data.\n\n**Significant Features of Pandas:**\n1.  **DataFrame Object:** The primary data structure in Pandas, representing tabular data with labeled rows and columns (similar to a spreadsheet or SQL table). It can handle various data types and allows for easy manipulation and analysis of structured data.\n2.  **Series Object:** A one-dimensional labeled array capable of holding any data type. It can be thought of as a single column of a DataFrame or a list with an index.\n3.  **Data Alignment:** Pandas automatically aligns data based on labels (index/column names), preventing common errors when working with heterogeneous or messy data.\n4.  **Missing Data Handling:** Provides robust tools for handling missing data (represented as `NaN`), including detection, filling, and dropping methods.\n5.  **Flexible Data Manipulation:** Offers powerful features for data loading (from CSV, Excel, SQL databases), cleaning, filtering, merging, reshaping, group-by operations, and time-series functionality.\n6.  **High Performance:** Implemented in C and Cython, which makes it very fast for large datasets despite being a Python library.\n\nIn essence, NumPy provides the foundation for numerical arrays and operations, while Pandas builds on this foundation to offer powerful and convenient tools specifically for structured data analysis and manipulation.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Introduction to Pandas - Comparison between Numpy and Pandas"
+    },
+    {
+      "question_number": "25a",
+      "question_text": "Explain function and module with suitable example.",
+      "marks": 8,
+      "answer": "**Function (Python context):**\nA function is a block of organized, reusable code that performs a single, related action. Functions provide better modularity for your application and a high degree of code reusing. In Python, functions are defined using the `def` keyword.\n\n**Example of a Python Function:**\n```python\n# Function definition\ndef greet(name): # 'name' is a parameter\n    \"\"\"This function greets the person passed in as a parameter.\"\"\"\n    return f\"Hello, {name}! How are you?\"\n\n# Function call\nmessage = greet(\"Alice\") # \"Alice\" is an argument\nprint(message) # Output: Hello, Alice! How are you?\n\nprint(greet(\"Bob\")) # Output: Hello, Bob! How are you?\n```\n\n**Module (Python context):**\nA module is a file containing Python definitions and statements. The filename is the module name with the `.py` extension. Modules allow you to logically organize your Python code. By grouping related code into a module, you can make the code easier to understand and use.\n\n**Example of a Python Module:**\nLet's create a file named `my_calculations.py` (this is our module).\n\n**`my_calculations.py`:**\n```python\n# This is a module named my_calculations\n\ndef add(a, b):\n    \"\"\"Adds two numbers and returns the sum.\"\"\"\n    return a + b\n\ndef subtract(a, b):\n    \"\"\"Subtracts two numbers and returns the difference.\"\"\"\n    return a - b\n\nPI = 3.14159\n\nprint(\"my_calculations module loaded!\") # This will run when imported\n```\n\nNow, we can use this module in another Python script (e.g., `main.py`):\n\n**`main.py`:**\n```python\nimport my_calculations # Import the module\n\n# Access functions and variables from the module\nsum_result = my_calculations.add(10, 5)\nprint(f\"Sum: {sum_result}\") # Output: Sum: 15\n\ndiff_result = my_calculations.subtract(10, 5)\nprint(f\"Difference: {diff_result}\") # Output: Difference: 5\n\nprint(f\"Value of PI: {my_calculations.PI}\") # Output: Value of PI: 3.14159\n\n# You can also import specific items from a module\nfrom my_calculations import add, PI\nprint(f\"Add using direct import: {add(2, 3)}\") # Output: Add using direct import: 5\nprint(f\"PI using direct import: {PI}\") # Output: PI using direct import: 3.14159\n```\n\nWhen `main.py` is run, the output would first show \"my_calculations module loaded!\" (from the module itself) and then the results of `add`, `subtract`, and `PI` access. Modules are crucial for structuring larger Python projects, promoting code reuse, and preventing naming conflicts.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Python: Introduction to Python"
+    },
+    {
+      "question_number": "25b",
+      "question_text": "Explain list and tuple with suitable example.",
+      "marks": 8,
+      "answer": "**Lists in Python:**\nA list is an ordered, mutable (changeable) collection of items. Lists are one of the most versatile and commonly used data structures in Python. They can contain items of different data types (heterogeneous).\n\n**Characteristics of Lists:**\n*   **Ordered:** Elements maintain their insertion order.\n*   **Mutable:** Elements can be added, removed, or changed after the list is created.\n*   **Indexed:** Each element has an index (starting from 0 for the first element), allowing access by position.\n*   **Iterable:** Can be looped over using `for` loops.\n*   **Syntax:** Defined using square brackets `[]`.\n\n**Example of a List:**\n```python\n# Creating a list\nmy_list = [10, 'hello', 3.14, True]\nprint(f\"Original list: {my_list}\") # Output: Original list: [10, 'hello', 3.14, True]\n\n# Accessing elements by index\nprint(f\"First element: {my_list[0]}\")   # Output: First element: 10\nprint(f\"Second element: {my_list[1]}\")  # Output: Second element: hello\n\n# Modifying an element (mutable property)\nmy_list[0] = 20\nprint(f\"List after modifying first element: {my_list}\") # Output: List after modifying first element: [20, 'hello', 3.14, True]\n\n# Adding an element\nmy_list.append('world')\nprint(f\"List after appending: {my_list}\") # Output: List after appending: [20, 'hello', 3.14, True, 'world']\n\n# Removing an element\nmy_list.remove(3.14)\nprint(f\"List after removing 3.14: {my_list}\") # Output: List after removing 3.14: [20, 'hello', True, 'world']\n```\n\n**Tuples in Python:**\nA tuple is an ordered, immutable (unchangeable) collection of items. Like lists, tuples can contain items of different data types. They are typically used for collections of heterogeneous data where the elements have distinct meanings, or when you need a sequence that won't change.\n\n**Characteristics of Tuples:**\n*   **Ordered:** Elements maintain their insertion order.\n*   **Immutable:** Once a tuple is created, its elements cannot be changed, added, or removed.\n*   **Indexed:** Each element has an index (starting from 0), allowing access by position.\n*   **Iterable:** Can be looped over using `for` loops.\n*   **Syntax:** Defined using parentheses `()` (though parentheses are optional for single-element tuples and for creating them by simply separating items with commas).\n\n**Example of a Tuple:**\n```python\n# Creating a tuple\nmy_tuple = (10, 'hello', 3.14, True)\nprint(f\"Original tuple: {my_tuple}\") # Output: Original tuple: (10, 'hello', 3.14, True)\n\n# Accessing elements by index\nprint(f\"First element: {my_tuple[0]}\") # Output: First element: 10\nprint(f\"Second element: {my_tuple[1]}\") # Output: Second element: hello\n\n# Attempting to modify an element (will raise an error)\ntry:\n    my_tuple[0] = 20\nexcept TypeError as e:\n    print(f\"Error when trying to modify: {e}\") # Output: Error when trying to modify: 'tuple' object does not support item assignment\n\n# Tuples can be used as keys in dictionaries because they are immutable\nmy_dict = {(1, 2): 'coordinates'}\nprint(f\"Dictionary with tuple key: {my_dict}\") # Output: Dictionary with tuple key: {(1, 2): 'coordinates'}\n```\n\n**Key Differences:**\n| Feature    | List                               | Tuple                                |\n| :--------- | :--------------------------------- | :----------------------------------- |\n| Mutability | Mutable (can be changed)           | Immutable (cannot be changed)        |\n| Syntax     | Square brackets `[]`               | Parentheses `()`                     |\n| Use Case   | Collection of similar items, dynamic data, frequently modified data | Collection of heterogeneous items, fixed data, dictionary keys, function arguments |\n| Performance| Slightly slower for creation/access | Slightly faster for creation/access (due to immutability)|\n\nChoosing between a list and a tuple depends on whether the collection of items needs to be changed after its creation and the semantic meaning of the data.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Working with List structures - Working with Tuples data structures"
+    },
+    {
+      "question_number": "26",
+      "question_text": "(i) Write a C program to calculate the sum of digits of a five digit number.\n(ii) Mr. Bob has been deputed as the Election officer for the Tamil Nadu State Election. He wanted to perform an analysis to check whether a candidate is eligible for voting when he/she enters his/her age. Write a C program to read the age of a candidate and determine whether it is eligible for casting his/her own vote.",
+      "marks": 15,
+      "answer": "**Part (i): C Program to Calculate Sum of Digits of a Five-Digit Number**\n```c\n#include <stdio.h>\n\nint main() {\n    int num, originalNum, sum = 0, remainder;\n\n    // Prompt user to enter a five-digit number\n    printf(\"Enter a five-digit number: \");\n    scanf(\"%d\", &num);\n\n    // Validate if it's a five-digit number (optional but good practice)\n    if (num < 10000 || num > 99999) {\n        printf(\"Error: Please enter a valid five-digit number.\\n\");\n        return 1; // Indicate an error\n    }\n\n    originalNum = num; // Store the original number for display\n\n    // Loop to extract and sum digits\n    while (num > 0) {\n        remainder = num % 10; // Get the last digit\n        sum += remainder;     // Add it to sum\n        num /= 10;            // Remove the last digit\n    }\n\n    printf(\"The sum of digits of %d is: %d\\n\", originalNum, sum);\n\n    return 0;\n}\n```\n\n**Explanation (Part i):**\n1.  The program takes a five-digit integer as input.\n2.  It uses a `while` loop that continues as long as `num` is greater than 0.\n3.  Inside the loop:\n    *   `num % 10` extracts the last digit (remainder when divided by 10).\n    *   This digit is added to `sum`.\n    *   `num / 10` removes the last digit from `num` (integer division truncates the decimal part).\n4.  The loop repeats until all digits have been extracted and summed.\n\n**Part (ii): C Program for Voting Eligibility Check**\n```c\n#include <stdio.h>\n\nint main() {\n    int age;\n\n    // Prompt user to enter the candidate's age\n    printf(\"Enter the candidate's age: \");\n    scanf(\"%d\", &age);\n\n    // Check eligibility for voting\n    if (age >= 18) {\n        printf(\"The candidate with age %d is eligible for casting their own vote.\\n\", age);\n    } else {\n        printf(\"The candidate with age %d is NOT eligible for casting their own vote.\\n\", age);\n    }\n\n    return 0;\n}\n```\n\n**Explanation (Part ii):**\n1.  The program declares an integer variable `age`.\n2.  It prompts the user to input the candidate's age using `printf()` and reads the input using `scanf()`.\n3.  An `if-else` statement checks if the `age` is greater than or equal to 18 (the common legal voting age).\n4.  Based on the condition, an appropriate message is printed indicating whether the candidate is eligible to vote or not.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Looping Control Statements: for, while, do.while"
+    },
+    {
+      "question_number": "27",
+      "question_text": "What is Dictionary? Explain Python dictionaries in detail discussing its operations and methods.",
+      "marks": 15,
+      "answer": "**What is a Dictionary?**\nIn Python, a dictionary is an unordered, mutable collection of key-value pairs. Each key-value pair maps the key to its associated value. Dictionaries are optimized for retrieving values when the key is known. They are also known as associative arrays, hash maps, or hash tables in other programming languages.\n\n**Key Characteristics:**\n*   **Unordered:** In Python versions before 3.7, dictionaries were officially unordered. From Python 3.7 onwards, dictionaries maintain insertion order, though they are still primarily optimized for key-based lookups rather than sequence-based access.\n*   **Mutable:** Dictionaries can be modified after creation; you can add, remove, or change key-value pairs.\n*   **Keys must be unique:** Each key in a dictionary must be unique. If you try to assign a value to an existing key, the old value will be overwritten.\n*   **Keys must be immutable:** Keys must be of an immutable type (e.g., strings, numbers, tuples). Mutable types like lists or other dictionaries cannot be used as keys.\n*   **Values can be of any type:** Values can be of any data type and can be duplicates.\n*   **Syntax:** Defined by enclosing a comma-separated list of key-value pairs (colon-separated) within curly braces `{}`.\n\n**Example:**\n```python\nstudent = {\n    \"name\": \"Alice\",\n    \"age\": 22,\n    \"major\": \"Computer Science\",\n    \"gpa\": 3.8,\n    \"courses\": [\"Data Structures\", \"Algorithms\"]\n}\n```\n\n**Operations on Dictionaries:**\n\n1.  **Creating a Dictionary:**\n    *   Empty dictionary: `my_dict = {}` or `my_dict = dict()`\n    *   With initial values: `my_dict = {'key1': 'value1', 'key2': 'value2'}`\n\n2.  **Accessing Values:**\n    *   Using square brackets: `student['name']` (returns 'Alice'). Raises `KeyError` if key not found.\n    *   Using `get()` method: `student.get('age')` (returns 22). Returns `None` (or a specified default value) if key not found, instead of raising an error.\n\n3.  **Adding/Updating Elements:**\n    *   Assigning a value to a new key adds it: `student['university'] = 'Tech University'`\n    *   Assigning a value to an existing key updates it: `student['age'] = 23`\n\n4.  **Deleting Elements:**\n    *   Using `del` statement: `del student['gpa']` (removes the 'gpa' key-value pair).\n    *   Using `pop()` method: `removed_course = student.pop('major')` (removes 'major' and returns its value).\n    *   Using `popitem()`: Removes and returns an arbitrary (key, value) pair. In Python 3.7+, it removes the last inserted item.\n    *   `clear()`: Removes all items from the dictionary: `student.clear()`\n\n5.  **Iterating Through a Dictionary:**\n    *   **Keys:** `for key in student: print(key)`\n    *   **Values:** `for value in student.values(): print(value)`\n    *   **Key-Value Pairs:** `for key, value in student.items(): print(f\"{key}: {value}\")`\n\n**Dictionary Methods:**\n\n1.  **`dict.keys()`:** Returns a view object that displays a list of all the keys in the dictionary.\n    ```python\n    print(student.keys()) # Output: dict_keys(['name', 'age', 'major', 'gpa', 'courses', 'university'])\n    ```\n\n2.  **`dict.values()`:** Returns a view object that displays a list of all the values in the dictionary.\n    ```python\n    print(student.values()) # Output: dict_values(['Alice', 23, 'Computer Science', 3.8, ['Data Structures', 'Algorithms'], 'Tech University'])\n    ```\n\n3.  **`dict.items()`:** Returns a view object that displays a list of a dictionary's key-value tuple pairs.\n    ```python\n    print(student.items()) # Output: dict_items([('name', 'Alice'), ('age', 23), ...])\n    ```\n\n4.  **`dict.get(key, default)`:** Returns the value for `key` if `key` is in the dictionary, else `default`. If `default` is not given, it defaults to `None`.\n    ```python\n    print(student.get('age'))      # Output: 23\n    print(student.get('email', 'N/A')) # Output: N/A\n    ```\n\n5.  **`dict.update(other_dict)`:** Updates the dictionary with the key-value pairs from `other_dict`. If `other_dict` has keys that already exist, their values are updated; otherwise, new key-value pairs are added.\n    ```python\n    new_info = {\"age\": 24, \"city\": \"New York\"}\n    student.update(new_info)\n    print(student) # 'age' updated to 24, 'city' added\n    ```\n\n6.  **`dict.pop(key, default)`:** Removes the specified `key` and returns the corresponding `value`. If `key` is not found, `default` is returned if provided, otherwise a `KeyError` is raised.\n    ```python\n    removed_major = student.pop('major')\n    print(f\"Removed major: {removed_major}\") # Output: Removed major: Computer Science\n    ```\n\n7.  **`dict.popitem()`:** Removes and returns an arbitrary (key, value) pair. As of Python 3.7, it removes the last inserted item. Raises `KeyError` if the dictionary is empty.\n\n8.  **`dict.clear()`:** Removes all items from the dictionary.\n    ```python\n    student.clear()\n    print(student) # Output: {}\n    ```\n\nDictionaries are incredibly powerful and are essential for many Python programming tasks, especially when dealing with structured data where elements are associated with unique identifiers.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Working with Dictionaries"
+    }
+  ]
+}

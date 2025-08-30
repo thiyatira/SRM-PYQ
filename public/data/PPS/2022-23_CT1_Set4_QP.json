@@ -1,0 +1,142 @@
+{
+    "paper_title": "Pps ct 1 set 4 - Pyqs for CT",
+    "source": "2022-23 CT1 Set4",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "Which of the following is not a valid C variable name?\na) int age;\nb) float salary;\nc) char ch;\nd) int $main;",
+            "marks": 1,
+            "answer": "A C variable name must start with an alphabet (A-Z, a-z) or an underscore (_), followed by zero or more alphabets, digits (0-9), or underscores. Special characters like '$' are not allowed in standard C variable names. Therefore, `int $main;` is not a valid C variable name because it contains the '$' character.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Evolution of Programming & Languages - Variables and identifiers, Keywords"
+        },
+        {
+            "question_number": "2",
+            "question_text": "What is the output of the following code snippet?\n#include <stdio.h>\nint main()\n{\n    float s, double a; char b;\n    printf(\"%d\", sizeof(s)+sizeof(a)*sizeof(b));\n    return 0;\n}\na) 14\nb) 13\nc) 12\nd) Compilation Error",
+            "marks": 1,
+            "answer": "Let's determine the typical size (in bytes) of each data type and then evaluate the expression:\n-   `float s`: Typically 4 bytes.\n-   `double a`: Typically 8 bytes.\n-   `char b`: Typically 1 byte.\n\nThe expression is `sizeof(s) + sizeof(a) * sizeof(b)`. According to operator precedence, multiplication (`*`) is performed before addition (`+`).\nSo, the expression evaluates as:\n`4 + 8 * 1`\n`4 + 8`\n`12`\n\nThe `printf(\"%d\", ...)` statement will correctly print the integer result of 12.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Evolution of Programming & Languages - Numeric Data types: integer, floating point Non-Numeric Data types: char and string - Size-of operator - Operator Precedence"
+        },
+        {
+            "question_number": "3",
+            "question_text": "Choose the correct answer.\n#include <stdio.h>\nint main()\n{\n    int value = 350;\n    int value = 892;\n    printf(\"SRMIST!%d\",value);\n    return 0;\n}\na) SRMIST!350\nb) Redefinition of value\nc) SRMIST!892\nd) SRMIST! Followed by a junk value.",
+            "marks": 1,
+            "answer": "In C, a variable cannot be declared more than once within the same scope. The code attempts to declare `int value` twice in the `main` function:\n1.  `int value = 350;`\n2.  `int value = 892;`\nThis constitutes a redefinition of the variable `value`, which will lead to a compilation error. The compiler will report an error like \"redefinition of 'value'\".",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Evolution of Programming & Languages - Variables and identifiers, Scope, Binding"
+        },
+        {
+            "question_number": "4",
+            "question_text": "#include <stdio.h>\nint main()\n{\n    int x, y = 5, z = 5;\n    x = y == z;\n    printf(\"%d\", x);\n    getchar();\n    return 0;\n}\na) 0\nb) 1\nc) 5\nd) Compile error",
+            "marks": 1,
+            "answer": "The expression `y == z` is a relational expression. It checks if the value of `y` is equal to the value of `z`. Since `y` is 5 and `z` is 5, the condition `y == z` is true.\nIn C, a true relational expression evaluates to the integer value 1, and a false expression evaluates to 0. Therefore, `y == z` results in 1, which is then assigned to the integer variable `x`. The `printf(\"%d\", x);` statement will print the value of `x`, which is 1.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Evolution of Programming & Languages - Relational and logical Operators - L value and R value in expression"
+        },
+        {
+            "question_number": "5",
+            "question_text": "After working of the prefix and postfix operators, select\nall the correct statements for the code given below:\nVoid main() {\n    int x, y, z, k;\n    x = 10; y = -x; z= x++; k = ++x;\n}\na) Value of y will be -10 and k will be 12.\nb) Value of z will be 11\nc) Value of k will be 10 and k will be 11\nd) Value of k will be 11",
+            "marks": 1,
+            "answer": "Let's trace the execution of the code line by line:\n1.  `x = 10;`\n    *   `x` is 10.\n2.  `y = -x;`\n    *   `y` becomes -10. `x` remains 10.\n3.  `z = x++;`\n    *   This is a postfix increment. The current value of `x` (10) is assigned to `z`, and *then* `x` is incremented.\n    *   `z` becomes 10.\n    *   `x` becomes 11.\n4.  `k = ++x;`\n    *   This is a prefix increment. `x` is incremented *first*, and *then* its new value is assigned to `k`.\n    *   `x` (which was 11) becomes 12.\n    *   `k` becomes 12.\n\nAt the end of the `main` function, the values are: `x = 12`, `y = -10`, `z = 10`, `k = 12`.\n\nNow, let's evaluate the given options:\na) Value of y will be -10 and k will be 12. (Correct, as `y` is -10 and `k` is 12)\nb) Value of z will be 11 (Incorrect, `z` is 10)\nc) Value of k will be 10 and k will be 11 (Incorrect, `k` is 12)\nd) Value of k will be 11 (Incorrect, `k` is 12)\n\nTherefore, option 'a' is the correct statement.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Evolution of Programming & Languages - Increment and decrement operator - Expressions with pre / post increment operator"
+        },
+        {
+            "question_number": "6",
+            "question_text": "#include <stdio.h>\n// Assume base address of \"GeeksQuiz\" to be 2000\nint main()\n{\n    printf(5 + \"GeeksQuiz\");\n    return 0;\n}\na) GeeksQuiz\nb) Quiz\nc) 2005\nd) Compile time error",
+            "marks": 1,
+            "answer": "In C, a string literal like `\"GeeksQuiz\"` is stored in memory, and its name (e.g., `\"GeeksQuiz\"`) acts as a pointer to its first character. When an integer is added to a character pointer (pointer arithmetic), the pointer is advanced by that many character positions.\n\nThe string \"GeeksQuiz\" consists of the characters: 'G', 'e', 'e', 'k', 's', 'Q', 'u', 'i', 'z', '\\0'.\nIf `\"GeeksQuiz\"` points to 'G' (at index 0), then `5 + \"GeeksQuiz\"` will point to the character at index 5. Counting from 0:\n-   G (index 0)\n-   e (index 1)\n-   e (index 2)\n-   k (index 3)\n-   s (index 4)\n-   Q (index 5)\n\nSo, `5 + \"GeeksQuiz\"` points to the character 'Q'. The `printf()` function, when used with a string format specifier (which is implicit here as it's passed a `char*`), will print the string starting from the memory location pointed to until it encounters a null terminator (`\\0`). Thus, it will print \"Quiz\".",
+            "answer_source": "generated",
+            "chapter": "Unit 3: String Basics - String Functions: printf() - Operations on Strings - Pointer and address-of operators"
+        },
+        {
+            "question_number": "7.",
+            "question_text": "C is a _____ language\na) High Level\nb) Low Level\nc) Middle Level\nd) Machine Level",
+            "marks": 1,
+            "answer": "C is widely recognized as a **Middle-Level Language**. It possesses characteristics of both high-level languages (like structured programming features, portability across different hardware platforms, and abstraction from machine details) and low-level languages (such as direct memory manipulation using pointers, bitwise operations, and close interaction with hardware). This versatility makes C suitable for a wide range of applications, from operating systems to embedded systems and general-purpose software.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
+        },
+        {
+            "question_number": "8.",
+            "question_text": "The equality operator is represented by\na) :=\nb) .EQ.\nc) =\nd) ==",
+            "marks": 1,
+            "answer": "In the C programming language, the operator used to test if two values are equal is `==` (double equals sign). The single equals sign (`=`) is the assignment operator, used to assign a value to a variable.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Evolution of Programming & Languages - Relational and logical Operators - Assignment operator"
+        },
+        {
+            "question_number": "9.",
+            "question_text": "What will be the output of the expression 11 ^ 5?\na) 5\nb) 6\nc) 11\nd) 13",
+            "marks": 1,
+            "answer": "The `^` operator in C performs a bitwise XOR (Exclusive OR) operation. To calculate `11 ^ 5`, we first convert both numbers to their binary representations (assuming a standard integer size for demonstration, but the pattern holds):\n\n11 in decimal is `1011` in binary.\n5 in decimal is `0101` in binary.\n\nNow, perform the bitwise XOR operation. The result bit is 1 if the corresponding bits are different, and 0 if they are the same:\n\n```\n  1011 (Decimal 11)\nXOR 0101 (Decimal 5)\n-----\n  1110 (Result in binary)\n```\n\nConverting `1110` from binary back to decimal:\n`(1 * 2^3) + (1 * 2^2) + (1 * 2^1) + (0 * 2^0)`\n`= (1 * 8) + (1 * 4) + (1 * 2) + (0 * 1)`\n`= 8 + 4 + 2 + 0`\n`= 14`\n\nTherefore, the output of the expression `11 ^ 5` is 14.\n\n**(Note: If option 'd) 13' was considered correct in the original context, it might indicate an error in the question or the provided answer key, as per standard C bitwise operations, the result is 14.)**",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Evolution of Programming & Languages - Bitwise and Size-of operator"
+        },
+        {
+            "question_number": "10.",
+            "question_text": "The operator + in a+=4 means\na) a=a+4\nb) a+4=a\nc) a=4\nd) a=4+4",
+            "marks": 1,
+            "answer": "The `+=` operator in C is a compound assignment operator. It is a shorthand for expressing an operation where the result of an arithmetic operation is assigned back to the same variable. Specifically, `a += 4` is equivalent to `a = a + 4`. This means the current value of `a` is incremented by 4, and the new value is stored back into `a`.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Evolution of Programming & Languages - Assignment operator"
+        },
+        {
+            "question_number": "11",
+            "question_text": "#include <stdio.h>\nint main() {\n    char operator = '+';\n    int num1 =12;\n    int num2 = 10;\n    int result = (operator =='+' _________ );\n    // Complete the statement by using ternary operator to get the result\n    // = 22, if not result = 2 .\n    printf(\"%d\", result);\n    return 0;\n}\n",
+            "marks": 2,
+            "answer": "The goal is to complete the statement using the ternary operator to achieve `result = 22` if `operator` is `'+'`, and `result = 2` otherwise. The ternary operator has the syntax `condition ? expression_if_true : expression_if_false`.\n\nGiven:\n-   `condition`: `(operator == '+')`\n-   If true, `result` should be 22. We can achieve this with `num1 + num2` (`12 + 10 = 22`).\n-   If false, `result` should be 2. We can achieve this with `num1 - num2` (`12 - 10 = 2`).\n\nSo, the missing expression is `? (num1 + num2) : (num1 - num2)`.\n\nThe complete C statement would be:\n```c\nint result = (operator == '+') ? (num1 + num2) : (num1 - num2);\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Evolution of Programming & Languages - Condition Operators"
+        },
+        {
+            "question_number": "12",
+            "question_text": "Illustrate the available datatype modifiers in C?",
+            "marks": 2,
+            "answer": "In C, datatype modifiers are keywords used with basic data types (`int`, `char`, `double`) to change their default properties, primarily related to their range of values or storage size. The main datatype modifiers are `signed`, `unsigned`, `short`, and `long`.\n\n1.  **`signed`**: This is the default modifier for `int` and `char`. It indicates that the variable can store both positive and negative values. One bit is typically reserved for the sign (0 for positive, 1 for negative). For example, `signed int` is generally the same as `int`.\n2.  **`unsigned`**: This modifier is used with `int` and `char`. It specifies that the variable can only store non-negative (zero or positive) values. By dedicating all bits to the magnitude, the maximum positive value that can be stored is approximately doubled compared to its `signed` counterpart. Example: `unsigned int`, `unsigned char`.\n3.  **`short`**: This modifier is used with `int` (`short int` or just `short`). It indicates that the integer variable should occupy less storage space (typically 2 bytes) compared to a regular `int`. This limits the range of values but can be memory-efficient.\n4.  **`long`**: This modifier is used with `int` (`long int` or `long`) and `double` (`long double`). It indicates that the variable should occupy more storage space, thereby allowing it to store a wider range of values for integers or provide higher precision for floating-point numbers. `long long int` (or `long long`) is also available for even larger integer ranges, typically 8 bytes.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Evolution of Programming & Languages - Numeric Data types: integer, floating point Non-Numeric Data types: char and string"
+        },
+        {
+            "question_number": "13",
+            "question_text": "Pick the correct one from the following declaration is not\nsupported by C language?\na) String str;\nb) char *str;\nc) float str = 3e2;\nd) Both String str; & float str = 3e2;",
+            "marks": 2,
+            "answer": "In standard C, there is no built-in `String` data type as a primitive type. Strings are typically represented as arrays of characters (e.g., `char greeting[] = \"Hello\";`) or as pointers to characters (e.g., `char *name = \"Alice\";`).\n\nLet's analyze the given options:\na) `String str;`: This declaration uses `String` as a data type. Since `String` is not a fundamental or standard library type in C (like `int`, `float`, `char`, or a custom `typedef`), this declaration is not supported by the C language.\nb) `char *str;`: This is a valid declaration for a pointer to a character, which is commonly used to handle strings in C.\nc) `float str = 3e2;`: This is a valid declaration. `3e2` is a floating-point literal in scientific notation, meaning `3 * 10^2 = 300.0`. This is correctly assigned to a `float` variable.\n\nTherefore, `a) String str;` is the declaration not supported by the C language.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: String Basics - String Declaration and Initialization - Non-Numeric Data types: char and string"
+        },
+        {
+            "question_number": "14",
+            "question_text": "Conclude the output of the following c program?\n#include <stdio.h>\nint main()\n{\n    int a=5;\n    int b=10;\n    int c;\n    c=a+b;\n    printf(\"%i\", c);\n    return 0;\n}\n(A) 5\n(B) 10\n(C) 15\n(D) Compilation error",
+            "marks": 2,
+            "answer": "Let's trace the execution of the C program:\n1.  `int a = 5;` initializes integer `a` with the value 5.\n2.  `int b = 10;` initializes integer `b` with the value 10.\n3.  `int c;` declares an integer variable `c`.\n4.  `c = a + b;` calculates the sum of `a` and `b` (`5 + 10 = 15`) and assigns this result to `c`. So, `c` now holds 15.\n5.  `printf(\"%i\", c);` prints the integer value of `c` to the console. The `%i` format specifier is a valid way to print an integer (it's equivalent to `%d`).\n\nThus, the program will print `15` to the console.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Evolution of Programming & Languages - Input and output statements. Variables and identifiers, Arithmetic, Relational and logical Operators"
+        },
+        {
+            "question_number": "15",
+            "question_text": "Rushanth is playing with a tennikoit ball (Circle) He knows the\nradius of the ball. Help him to find the area and perimeter of the\nball using a C program.\nHint:\nPerimeter of a circle = 2\u03c0r\nArea of a circle = \u03c0r",
+            "marks": 2,
+            "answer": "To find the area and perimeter (circumference) of a circle, we need to know its radius. The standard mathematical formulas are:\n*   **Circumference (Perimeter)** = `2 * \u03c0 * radius`\n*   **Area** = `\u03c0 * radius * radius` (or `\u03c0r^2`)\n\n**(Note: The hint provided in the question for the area of a circle, `\u03c0r`, is incorrect. The correct formula for the area of a circle is `\u03c0r^2`.)**\n\nHere's a C program that prompts the user for the radius and then calculates and displays the circumference and area:\n\n```c\n#include <stdio.h>\n#define PI 3.14159 // Define PI as a constant for precision\n\nint main() {\n    float radius;         // To store the radius of the circle\n    float area;           // To store the calculated area\n    float circumference;  // To store the calculated circumference (perimeter)\n\n    // Prompt the user to enter the radius\n    printf(\"Enter the radius of the circle: \");\n    scanf(\"%f\", &radius); // Read the radius input from the user\n\n    // Input validation: Check if the radius is non-negative\n    if (radius < 0) {\n        printf(\"Error: Radius cannot be negative. Please enter a positive value.\\n\");\n    } else {\n        // Calculate the circumference (perimeter)\n        circumference = 2 * PI * radius;\n\n        // Calculate the area using the correct formula (PI * r^2)\n        area = PI * radius * radius;\n\n        // Display the results, formatted to two decimal places for readability\n        printf(\"Perimeter (Circumference) of the circle: %.2f units\\n\", circumference);\n        printf(\"Area of the circle: %.2f square units\\n\", area);\n    }\n\n    return 0; // Indicate successful execution\n}\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming - Introduction to C: Structure of the C program - Input and output statements. Variables and identifiers, Constants. Conditional Control -Statements :Simple if, if...else"
+        },
+        {
+            "question_number": "16",
+            "question_text": "Mithran and Niranjan are two friends. Another friend\nMuthu is facing some issue to pay his tuition fees.\nTherefore, Mithran and Niranjan are giving some\namount to Muthu to pay the fees. Write a C program\nto calculate how much amount Muthu is going to be\npaid. In addition, draw the flow chart for the same.",
+            "marks": 5,
+            "answer": "This problem requires a C program to sum two amounts (contributions from Mithran and Niranjan) and a description of the corresponding flowchart.\n\n**C Program:**\n```c\n#include <stdio.h>\n\nint main() {\n    float mithranContribution;   // Variable to store Mithran's contribution\n    float niranjanContribution;  // Variable to store Niranjan's contribution\n    float totalAmountPaid;       // Variable to store the sum of contributions\n\n    // Prompt user for Mithran's contribution and read input\n    printf(\"Enter the amount contributed by Mithran: Rs. \");\n    scanf(\"%f\", &mithranContribution);\n\n    // Prompt user for Niranjan's contribution and read input\n    printf(\"Enter the amount contributed by Niranjan: Rs. \");\n    scanf(\"%f\", &niranjanContribution);\n\n    // Calculate the total amount Muthu will receive\n    totalAmountPaid = mithranContribution + niranjanContribution;\n\n    // Display the total amount to the user\n    printf(\"\\nTotal amount Muthu will be paid: Rs. %.2f\\n\", totalAmountPaid);\n\n    return 0; // Indicate successful program execution\n}\n```\n\n**Flowchart Description:**\n1.  **Start:** Begin with an oval symbol, indicating the start of the program.\n2.  **Input Mithran's Contribution:** Use a parallelogram symbol to represent the input operation, where the program prompts the user for and reads `mithranContribution`.\n3.  **Input Niranjan's Contribution:** Use another parallelogram for the input operation, where the program prompts for and reads `niranjanContribution`.\n4.  **Calculate Total Amount:** Use a rectangular symbol to represent the processing step, where the calculation `totalAmountPaid = mithranContribution + niranjanContribution` is performed.\n5.  **Display Total Amount:** Use a parallelogram for the output operation, where the program prints the `totalAmountPaid`.\n6.  **End:** Conclude with an oval symbol, indicating the end of the program.\n\nArrows are used to connect these symbols in sequence, showing the logical flow of the program from start to finish.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming - Writing algorithms & Pseudo code - Introduction to C: Structure of the C program - Input and output statements. Variables and identifiers, Arithmetic, Relational and logical Operators"
+        },
+        {
+            "question_number": "17",
+            "question_text": "Kumar had taken the loan amount Rs. 30000 before 3\nyears in the HDFC bank at 2.5% interest. He went to\nbank for make the payment of his loan. Therefore,\ncould you help him to pay the correct amount by\nwriting a C program to find the simple loan amount?\nSolution:\n#include <stdio.h>\nvoid main() {\n    float amount, rate, simple_interest;\n    int months;\n    printf(\"Provide amount and interest in\nthe format $amount rate%% : \");\n    // Read amount and rate using scanf()\n    scanf(\"$%f%f%%\", &amount, &rate);\n    printf(\"Enter the period in months : \");\n    scanf(\"%d\", &months);\n    // Fill the missing expression to calculate simple interest\n    printf(\"Simple interest : %f\\n\",\nsimple_interest);\n}",
+            "marks": 5,
+            "answer": "The task is to complete the C program to calculate simple interest. The simple interest formula is `(Principal * Rate * Time) / 100`. In the provided code snippet:\n-   `amount` represents the Principal.\n-   `rate` represents the annual interest rate (as a percentage).\n-   `months` represents the time period in months. To use this in the annual simple interest formula, `months` must be converted to years by dividing by 12.\n\nSo, `Time` in years = `months / 12.0`.\nThe rate `rate` is already a percentage, so it needs to be divided by 100 (or `100.0` for floating-point arithmetic).\n\nTherefore, the missing expression to calculate simple interest is:\n`simple_interest = (amount * rate * months) / (100.0 * 12);`\n\n**Complete C Program with corrections for input format and calculation of total payable amount:**\n\n```c\n#include <stdio.h>\n\nvoid main() {\n    float amount, rate, simple_interest;\n    int months;\n    float total_payable_amount;\n\n    // Prompt for and read principal amount and annual interest rate\n    // Corrected scanf format for common user input (e.g., \"30000 2.5\")\n    printf(\"Provide principal amount and annual interest rate (e.g., 30000 2.5): \");\n    scanf(\"%f %f\", &amount, &rate);\n\n    // Prompt for and read the period in months\n    printf(\"Enter the period in months (e.g., 36 for 3 years): \");\n    scanf(\"%d\", &months);\n\n    // Calculate simple interest using the formula:\n    // SI = (Principal * Rate * Time_in_years) / 100\n    // Time_in_years = months / 12.0\n    simple_interest = (amount * rate * months) / (100.0 * 12); \n\n    // Calculate the total amount Kumar needs to pay (Principal + Simple Interest)\n    total_payable_amount = amount + simple_interest;\n\n    // Display the calculated simple interest and total payable amount\n    printf(\"\\nSimple interest calculated: Rs. %.2f\\n\", simple_interest);\n    printf(\"Total amount to be paid (Principal + Interest): Rs. %.2f\\n\", total_payable_amount);\n}\n```\n\n**Note:** The original problem states Kumar took a loan for \"3 years at 2.5% interest\". When running this program for the specific scenario, the user should enter `30000` for amount, `2.5` for rate, and `36` (3 years * 12 months/year) for months. Also, the original `scanf` format `\"$%f%f%%\"` is highly specific and would require the user to type literal characters like '$' and '%%', which is not typical for numerical input. I've adjusted it to `\"%f %f\"` for better usability.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming - Introduction to C: Structure of the C program - Input and output statements. Variables and identifiers, Arithmetic, Relational and logical Operators"
+        }
+    ]
+}

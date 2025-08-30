@@ -1,0 +1,166 @@
+{
+    "paper_title": "Programming For Problem Solving (SRM Institute of Science and Technology) - PPS CT2 - Prev year QP Set-7 - Answer Key",
+    "source": "2022-23 CT2 Set7",
+    "questions": [
+        {
+            "question_number": "1a(i)",
+            "question_text": "Problem:\nNetwork Admin wants to know how many student users are there in the college, get the total users, staff users details from the client. Note for every 3 staff user there is one non-teaching staff user assigned by default.\nSample Input:\n\u2022 Total Users: 856\n\u2022 Staff Users: 126\nSample Output:\n\u2022 Student Users: 688",
+            "marks": 5,
+            "answer": "#include <stdio.h>\n\nint main()\n{\nint stuu, su, tu, ntu;\nprintf(\"Total users: \");\nscanf(\"%d\",&tu);\nprintf(\"Staff Users: \");\nscanf(\"%d\",&su);\nntu=su/3;\nstuu=tu-(su+ntu);\nprintf(\"Student Users = %d\",stuu);\nreturn 0;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming - Writing algorithms & Pseudo code - Single line and multiline comments - Introduction to C: Structure of the C program - Input and output statements. Variables and identifiers, Constants, Keywords - Values, Names, Scope, Binding, Storage Classes - Numeric Data types: integer, floating point Non-Numeric Data types: char and string - L value and R value in expression, Increment and decrement operator - Comma, Arrow and Assignment operator, Bitwise and Size-of operator - Arithmetic, Relational and logical Operators - Condition Operators, Operator Precedence - Expressions with pre / post increment operator."
+        },
+        {
+            "question_number": "1a(ii)",
+            "question_text": "Problem:\nJeni needs to design a program to calculate all arithmetic operations by using a switch case concept, kindly help jeni to design a code\nSample Input:\n\u2022 Enter two numbers: 5 6\n\u2022 Enter your choice: 1. Add 2. Sub 3.Mul 4. Div 5. Mod 3\nOutput Format:\n\u2022 Multiplication Result is 30",
+            "marks": 5,
+            "answer": "#include<stdio.h>\n\nint main()\n{\nint a, b, choice;\n\nprintf(\"Enter your choice\\n\");\nprintf(\"1. Addition\\n2. Subtraction\\n3. Multiplication\\n4. Division\\n\");\nscanf(\"%d\", &choice);\n\nif(choice > 4 )\n{\nprintf(\"Select with in the range!\\n\");\n}\nelse\n{\nprintf(\"Enter 2 integer numbers\\n\");\nscanf(\"%d %d\", &a, &b);\n}\n\nswitch(choice)\n{\ncase 1: printf(\"%d + %d = %d\\n\", a, b, (a+b));\nbreak;\n\ncase 2: printf(\"%d - %d = %d\\n\", a, b, (a-b));\nbreak;\n\ncase 3: printf(\"%d x %d = %d\\n\", a, b, (a*b));\nbreak;\n\ncase 4: if( b != 0)\nprintf(\"%d / %d = %d\\n\", a, b, (a/b));\nelse\nprintf(\"Number can't be divided by 0\\n\");\nbreak;\n\ndefault: printf(\"You entered wrong choice\\n\");\nbreak;\n}\nreturn 0;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else - Conditional Statements : else if and nested if - Conditional Statements : Switch case"
+        },
+        {
+            "question_number": "1a(iii)",
+            "question_text": "Problem:\nProfessor needs to calculate the total and aggregate of a student and he wants to display the grade obtained by the student. If the student scores an aggregate greater than 75%, then the grade is Distinction. If aggregate is 60>= and <75, then the grade is First Division. If aggregate is 50 >= and <60, then the grade is Second Division. If aggregate is 40>= and <50, then the grade is Third Division. Else the grade is Fail.\nSample Input:\nEnter Marks for each subject\nSample Output:\nDisplay the total, aggregate and grade",
+            "marks": 5,
+            "answer": "#include <stdio.h>\n\nint main()\n{\nfloat m1, m2,m3, total, avg;\nprintf(\"Enter Marks for 3 subjects\");\nscanf(\"%f%f%f\",&m1,&m2,&m3);\ntotal=m1+m2+m3;\navg=total/3;\nif(avg>=75)\nprintf(\"Distinction\");\nelse if(avg>=60)\nprintf(\"First\");\nelse if(avg>=50)\nprintf(\"Second\");\nelse if(avg>=40)\nprintf(\"Third\");\nelse\nprintf(\"Fail\");\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else - Conditional Statements : else if and nested if"
+        },
+        {
+            "question_number": "1a(iv)",
+            "question_text": "Problem:\nSeetha likes to play with the arrays and she becomes more familiar in using arrays and Now she posted a test to her friend Geetha by giving a List of 10 positive numbers as an array and she asked geetha to add all even numbers in the list and display the result.\nSample Input:\n\u2022 Enter the numbers: 10 11 12 13 14 15 16 17 18 20.\nSample Output:\nSum of even numbers is: 90",
+            "marks": 5,
+            "answer": "#include<stdio.h>\n\nint main()\n{\nint a[10],sum=0,i;\nprintf(\"Enter 10 numbers\");\nfor(i=0;i<10;i++)\n{\nscanf(\"%d\",&a[i]);\nif(a[i]%2==0)\nsum+=a[i];\n}\nprintf(\"Sum of all even numbers = %d\",sum);\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Introduction to Arrays -One Dimensional (1D) Array Declaration and initialization - Accessing, Indexing and operations with 1D Arrays - Array Programs \u2013 1D"
+        },
+        {
+            "question_number": "1a(v)",
+            "question_text": "Problem:\nAlice has N subject marks with him. He needs to find the maximum difference between the marks scored. Help him to solve the problem with arrays.\nSample Input:\n\u2022 N\n\u2022 Marks\nSample Output:\n\u2022 Display the maximum difference",
+            "marks": 5,
+            "answer": "#include<stdio.h>\n\nint main()\n{\nint a[10],sum=0,i,j,t,n;\nprintf(\"Enter n Subjects\");\nscanf(\"%d\",&n);\nprintf(\"Enter n Subjects marks\");\nfor(i=0;i<n;i++)\nscanf(\"%d\",&a[i]);\n{\n}\nfor (i=0; i<n-1; i++){\nfor (j=i+1; j<n; j++){\nif (a[i] > a[j]) {\nt=a[i];\na[i] = a[j];\na[j] = t;\n}\n}\n}\nprintf(\"the Maximum Diff is %d\", a[n-1]-a[0]);\n}\nAlternatively, you can find maximum and minimum and subtract the difference",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Introduction to Arrays -One Dimensional (1D) Array Declaration and initialization - Accessing, Indexing and operations with 1D Arrays - Array Programs \u2013 1D"
+        },
+        {
+            "question_number": "1b(i)",
+            "question_text": "Problem:\nJeni, pavi and diana are close friends, jeni's age is 19, pavi's age is 17, and diana's age is 16, find who is elder among those by writing a C program using conditional statement.\nSample Input:\n\u2022 Enter three friend age: 19 17 16\nSample Output:\n\u2022 The eldest among three is: 19",
+            "marks": 5,
+            "answer": "#include <stdio.h>\n\nvoid main()\n{\nint a, b, c, big;\nprintf(\"Enter three friends age : \");\nscanf(\"%d %d %d\", &a, &b, &c);\nbig = a>b ? (a > c ? a : c) : (b>c? b : c);\nprintf(\"\\nThe eldest among three is : %d\", big);\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Condition Operators"
+        },
+        {
+            "question_number": "1b(ii)",
+            "question_text": "Problem:\nRaja is class representative for section A which consists of 10 students including him, help raja to sort all the register numbers and display it in an ascending order.\nSample Input:\n\u2022 Enter ten register numbers :77 88 66 99 55 44 22 33 11 102\nSample Output:\n\u2022 The Sorted list is: 1122 33 44 55 66 77 88 99 102",
+            "marks": 5,
+            "answer": "#include<stdio.h>\n\nint main()\n{\nint a[10],sum=0,i,j,t,n;\nprintf(\"Enter number of students\");\nscanf(\"%d\",&n);\nprintf(\"Enter n Register numbers\");\nfor(i=0;i<n;i++)\nscanf(\"%d\",&a[i]);\n{\n}\nfor (i=0; i<n-1; i++){\nfor (j=i+1; j<n; j++){\nif (a[i] > a[j]) {\nt=a[i];\na[i] = a[j];\na[j] = t;\n}\n}\n}\nprintf(\"The Sorted Liost is \\n\");\nfor(i=0;i<n;i++)\n{\nprintf(\"%d\\n\",a[i]);\n}\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Introduction to Arrays -One Dimensional (1D) Array Declaration and initialization - Accessing, Indexing and operations with 1D Arrays - Array Programs \u2013 1D"
+        },
+        {
+            "question_number": "1b(iii)",
+            "question_text": "Problem:\nA Shopkeeper wants to know how many chocolates he is having in his shop, he is having 100 chocolate in box1, 150 in box2, 200 in box3, 250 in box4 and 300 in box5 can you help him to find the total number chocolates ?\nHint:\nUse one dimensional array to accept number of chocolates,\nSample Input:\n\u2022 Enter number of chocolates in Each box: 100 150 200 250 300\nSample Output:\n\u2022 Total number of chocolates : 1000",
+            "marks": 5,
+            "answer": "#include<stdio.h>\nint main()\n{\nint a[10],sum=0,i,n;\nprintf(\"Enter number of Chocolates in each box\");\nfor(i=0;i<5;i++)\n{\nscanf(\"%d\",&a[i]);\nsum+=a[i];\n}\nprintf(\"The Total number of chocolates is %d \\n\",sum);\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Introduction to Arrays -One Dimensional (1D) Array Declaration and initialization - Accessing, Indexing and operations with 1D Arrays - Array Programs \u2013 1D"
+        },
+        {
+            "question_number": "1b(iv)",
+            "question_text": "Problem:\nAuditor needs to calculate tax for an individual. For calculating tax you need to apply the following conditions,\na.If income is less than or equal to 1,50,000 then no tax\nb.If taxable income is 1,50,001 \u2013 3,00,000 then charge 10% tax\nc.If taxable income is 3,00,001 \u2013 5,00,000 the charge 20% tax\nd.If taxable income is above 5,00,001 then charge 30% tax\nSample Input:\n\u2022 Enter the income 200000.\nSample Output:\nIncome Tax= 20000",
+            "marks": 5,
+            "answer": "#include<stdio.h>\nint main()\n{\nfloat in;\nprintf(\"Enter the income\");\nscanf(\"%f\",&in);\nif(in<=150000)\nprintf(\"No Tax\");\nelse if(in>=150001 && in<=300000 )\nprintf(\"Tax=%f\",in*0.1);\nelse if(in>=300001 && in<=500000 )\nprintf(\"Tax=%f\",in*0.2);\nelse if(in>=500001)\nprintf(\"Tax=%f\",in*0.3);\nelse\nprintf(\"Enter correct value\");\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else - Conditional Statements : else if and nested if"
+        },
+        {
+            "question_number": "1b(v)",
+            "question_text": "Problem:\nMohini with his family going for a Magic show. The seating arrangement is triangular in size Show staff's insisted the audience to sit in odd row if the seat number is odd and in even row if the seat number is even. But the instruction is very confusing for Mohini and family. So help them with the seating layout so that they can sit in correct seats.\nInput Format:\nSingle value representing the number of rows in the theatre.\nOutput Format:\nPrint the layout based on the number of rows.\n1\n2 4\n1 3 5\n2 4 6 8\n1 3 5 7 9\n2 4 6 8 10 12.",
+            "marks": 5,
+            "answer": "#include<stdio.h>\nint main()\n{\nint i,j,k,n;\nprintf(\"Enter how many rows you want : \");\nscanf(\"%d\", &n);\nfor(i=1; i<=n; i++)\n{\nif(i%2 == 0)\nk=2;\nelse\nk=1;\nfor(j=1; j<=i; j++)\n{\nprintf(\" %d\", k);\nk+=2;\n}\nprintf(\"\\n\");\n}\nreturn 0;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Looping Control Statements: nested for, nested while"
+        },
+        {
+            "question_number": "2a(i)",
+            "question_text": "Problem\nThe citizens of Byteland regularly play a game. They have blocks each denoting some integer from 0 to 9. These are arranged together in a random manner without seeing to form different numbers keeping in mind that the first block is never a 0. Once they form a number they read in the reverse order to check if the number and its reverse is the same. If both are same then the player wins. We call such numbers palindrome. Ash happens to see this game and wants to simulate the same in the computer. As the first step he wants to take an input from the user and check if the number is a palindrome and declare if the user wins or not.\nInput\nGet N integers\nOutput\nFor each input output \"wins\" if the number is a palindrome and \"loses\" if not, in a new line.",
+            "marks": 5,
+            "answer": "#include <stdio.h>\nint main(void)\n{\nint t,n,i,r,rev;\nscanf(\"%d\",&t);\nfor(i=1;i<=t;i++)\n{\nscanf(\"%d\",&n);\nint n1=n;\nrev=0;\nwhile(n!=0)\n{\nr=n%10;\nrev=rev*10+r;\nn=n/10;\n}\nif(rev==n1){\nprintf(\"wins\\n\");\n}\nelse {\nprintf(\"loses\\n\");\n}\n}\nreturn 0;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Looping Control Statements: for, while, do.while"
+        },
+        {
+            "question_number": "2a(ii)",
+            "question_text": "Problem:\nSantosh needs to know the length of his first name and Last name so just help Santosh to find the length of his name by getting his first name and last name separately and display the length of first name and last name separately.\nSample Input:\n\u2022 Enter first name: Santosh\n\u2022 Enter Last name: Raj\nSample Output:\n\u2022 Length of the first name is: 7\n\u2022 Length of the Last name is: 3",
+            "marks": 5,
+            "answer": "#include<stdio.h>\n#include<string.h>\nint main()\n{\nchar str[1000], str1[1000];\nint i;\nprintf(\"Enter the first name: \");\nscanf(\"%s\", str);\nprintf(\"Enter the Last name: \");\nscanf(\"%s\", str1);\nprintf(\"Length of the first name is %ld\", strlen(str));\nprintf(\"Length of the Last name is %ld\", strlen(str1));\nreturn 0;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Built-inString Functions: atoi, strlen, strcat, strcmp"
+        },
+        {
+            "question_number": "2a(iii)",
+            "question_text": "Problem:\nRamu is learning the new concept string in C programming, he wants to do some examples programs related to strings, so he decided to design a code which finds the vowels in the given string please help ramu to design a code.\nSample Input:\nEnter a string: srm institute of science and technology\nSample Output:\nNumber of vowels in the string are: 12",
+            "marks": 5,
+            "answer": "#include <stdio.h>\nint main()\n{\nint c = 0, count = 0;\nchar s[1000];\nprintf(\"Input a string\\n\");\ngets(s);\nwhile (s[c] != '\\0') {\nif (s[c] == 'a' || s[c] == 'A' || s[c] == 'e' || s[c] == 'E' || s[c] ==\n'i' || s[c] == 'I' || s[c] =='o' || s[c]=='O' || s[c] == 'u' || s[c] == 'U')\ncount++;\nc++;\n}\nprintf(\"Number of vowels in the string: %d\", count);\nreturn 0;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 3: String Basics - String Declaration and Initialization - Operations on Strings"
+        },
+        {
+            "question_number": "2a(iv)",
+            "question_text": "Problem:\nAmir has an interest in handling strings he wants to know how many time the character 'a' is present in his friend name Ramakrishnan, so help amir to find the same.\nSample Input:\nEnter Name: Ramakrishnan\nSample Output:\n\u2022 Character 'a' present: 3 times",
+            "marks": 5,
+            "answer": "#include <stdio.h>\nint main()\n{\nint c = 0, count = 0;\nchar s[1000];\nprintf(\"Input a string\\n\");\ngets(s);\nwhile (s[c] != '\\0') {\nif (s[c] == 'a')\ncount++;\nc++;\n}\nprintf(\"Number of 'a' in the string: %d\", count);\nreturn 0;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 3: String Basics - String Declaration and Initialization - Operations on Strings"
+        },
+        {
+            "question_number": "2a(v)",
+            "question_text": "Problem:\nAlice needs to implement the strings concept she want to count the number of articles ('a', 'an and 'the') in the sentence \"An apple a day keeps the doctor away\", so she need to know how to use predefined string handling functions to count the number of articles, help her to calculate.\nSample Output:\nDisplay the count of number of articles",
+            "marks": 5,
+            "answer": "#include<stdio.h>\n#include<stdlib.h>\nint main()\n{\nchar str[1000], str1[1000];\nint count = 0;\nint i = 0; // Added missing i declaration\ngets(str);\nwhile(str[i] != '\\0'){\nif(strcmp(str+i,\"a \") == 0 || strcmp(str+i,\"an \") == 0 ||\nstrcmp(str+i,\"the \") == 0 || strcmp(str+i,\"A \") == 0 ||\nstrcmp(str+i,\"An \") == 0 || strcmp(str+i,\"The \") == 0)\ncount++;\ni++;\n}\nprintf(\"%d\",count);\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Built-inString Functions: atoi, strlen, strcat, strcmp - String Functions: sprint, sscanf, strrev, strcpy, strstr, strtok - Operations on Strings"
+        },
+        {
+            "question_number": "2b(i)",
+            "question_text": "Problem:\nMeena has an array of numbers like 10 20 30 40 50 60 70, and she is having a pointer variable which she used to store the address of the array variable, she needs to display the address of 10 and the address of 40 by accessing the pointer variable\nSample Input:\nEnter array of numbers: 10 20 30 40 50 60 70\nSample Output:\n\u2022 Address of 10 is: 1000\n\u2022 Address of 40 is: 1012",
+            "marks": 5,
+            "answer": "#include<stdio.h>\nint main()\n{\nint a[10],i, *ptr;\nprintf(\"Enter n Register numbers\");\nfor(i=0;i<7;i++)\n{\nscanf(\"%d\",&a[i]);\n}\nptr=a;\nprintf(\"%d element address is %d\",a[0],ptr);\nprintf(\"%d element address is %d\",a[3],ptr+3);\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Pointer and address-of operators -Pointer Declaration and dereferencing, Void Pointers, Null pointers Pointer based Array manipulation."
+        },
+        {
+            "question_number": "2b(ii)",
+            "question_text": "Problem:\nAlice, Bob and Charlie are friends everyone had a task to find the binary equivalent of decimal number, Alice and bob has completed the task but Charlie needs to implement the task by using a function concept. The function should convert decimal to binary string. So please help Charlie to develop the same:\nHint:\nConsider the number 12\n12 / 2 = 6 Re 0\n6 / 2 = 3 Re 0\n3 / 2 = 1 Re 1\n1 / 2 = 0 Re 1 stop\nBinary equivalent of 12 is 1100\nSample Input:\n\u2022 Get input number\nSample Output:\n\u2022 Binary equivalent",
+            "marks": 5,
+            "answer": "#include <stdio.h>\n#include <conio.h>\nvoid main()\n{\nint num, binary_num, decimal_num = 0, base = 1, rem;\nprintf (\" Enter a binary number with the combination of 0s and 1s \\n\");\nscanf(\"%d\", &num);\nbinary_num = num;\nwhile (num > 0)\n{\nrem = num % 10; /* divide the binary number by 10 and store the remainder in rem variable. */\ndecimal_num = decimal_num + rem * base;\nnum = num / 10; // divide the number with quotient\nbase = base * 2;\n}\nprintf (\" The binary number is %d \\t\", binary_num); // print the binary number\nprintf (\" \\n The decimal number is %d \\t\", decimal_num); // print the decimal\ngetch();\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Function prototype declaration, function definition - Actual and formal parameters - Function with and without Arguments - Function with and without return values"
+        },
+        {
+            "question_number": "2b(iii)",
+            "question_text": "Problem:\nRaja has to travel to his native place. For this, he can avail any one of two flight services.\n\u2022 The first flight service charges X rupees.\n\u2022 The second flight service charges Y rupees.\nRaja wants to spend the minimum amount of money. Which flight service should Ravi take? Use pointers to implement the concept\nSample Input:\n\u2022 Get X and Y values\nSample Output:\n\u2022 Display which flight has minimum charge",
+            "marks": 5,
+            "answer": "#include<stdio.h>\nint main()\n{\nint x,y;\nint *a, *b;\nprintf(\"Enter first flight charges\");\nscanf(\"%d\",&x);\nprintf(\"Enter Second flight charges\");\nscanf(\"%d\",&y);\na=&x;\nb=&y;\nif(*a>*b)\nprintf(\"The minimum flight charge is %d\",*b);\nelse\nprintf(\"The minimum flight charge is %d\",*a);\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Pointer and address-of operators -Pointer Declaration and dereferencing, Void Pointers, Null pointers Pointer based Array manipulation."
+        },
+        {
+            "question_number": "2b(iv)",
+            "question_text": "Problem:\nKavitha is playing a game called swapping, she needs to swap the two numbers using C program she has completed that task by using functions, but the problem is when she calls the function swap the numbers get swapped but when she prints the value in main function it is not getting swapped then she comes to know that she needs to implement swapping concept by using pointers so help Kavitha to perform swapping of two numbers by using call by reference method.\nSample Input:\nEnter values to swap\nSample Output:\nDisplay values after swapping",
+            "marks": 5,
+            "answer": "#include <stdio.h>\nvoid swap(int *, int *); //prototype of the function\nint main()\n{\nint a = 10;\nint b = 20;\nprintf(\"Before swapping the values in main a = %d, b = %d\\n\",a,b);\nswap(&a,&b);\nprintf(\"After swapping values in main a = %d, b = %d\\n\",a,b);\n}\nvoid swap (int *a, int *b)\n{\nint temp;\ntemp = *a;\n*a=*b;\n*b=temp;\nprintf(\"After swapping values in function a = %d, b = %d\\n\",*a,*b);\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Call by Value, Call by Reference - Passing Array to Function - Passing Array elements to Function - Function Pointers."
+        },
+        {
+            "question_number": "2b(v)",
+            "question_text": "Problem:\nTwo friends who are good in mathematics and one of them challenged the other one to find the Prime Number in a given range say \"A\" and \"B\" , here A & B are the ranges. Use functions to print the prime numbers between the ranges.\nInput:\nGet ranges A and B\nOutput:\nPrint the prime numbers",
+            "marks": 5,
+            "answer": "#include <stdio.h>\n#include<math.h>\n\nint isPrime(int x) {\nint flag = 1;\nfor (int j = 2; j <= sqrt(x); ++j) {\nif (x % j == 0) {\nflag = 0;\nbreak;\n}\n}\nreturn(flag);\n}\n\nint main()\n{\nint a, b, i, j, flag;\nprintf(\"Enter lower bound of the interval: \");\nscanf(\"%d\", &a); // Take input\nprintf(\"Enter upper bound of the interval: \");\nscanf(\"%d\", &b); // Take input\nprintf(\"\\nPrime numbers between %d and %d are: \", a, b);\nfor (i = a; i <= b; i++) {\nif (i == 1 || i == 0)\ncontinue;\nif(isPrime(i))\nprintf(\"%d \", i);\n}\nreturn 0;\n}\nInstead of sqrt(x), x/2 or pow(x, 0.5) are alternate choices.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Function prototype declaration, function definition - Actual and formal parameters - Function with and without Arguments - Function with and without return values"
+        }
+    ]
+}

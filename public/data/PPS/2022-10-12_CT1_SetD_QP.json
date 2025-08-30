@@ -1,0 +1,142 @@
+{
+  "paper_title": "Programming For Problem Solving - CT1 Set D",
+  "source": "2022-10-12 CT1 SetD",
+  "questions": [
+    {
+      "question_number": "1",
+      "question_text": "Which of the following is not a valid C variable name?\nint age;\nfloat salary;\nchar ch;\nint $main;",
+      "marks": 1,
+      "answer": "The invalid C variable name is `int $main;`.\n\n**Justification:**\nIn C, variable names (identifiers) must follow certain rules:\n1.  They must start with an alphabet (a-z, A-Z) or an underscore (_).\n2.  They can contain alphabets, digits (0-9), and underscores.\n3.  They cannot contain special characters like `$, #, @, %` etc.\n4.  Keywords (like `int`, `float`, `char`) cannot be used as variable names.\n\n-   `int age;` is valid.\n-   `float salary;` is valid.\n-   `char ch;` is valid.\n-   `int $main;` is invalid because the dollar sign (`$`) is not allowed in C variable names.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Variables and identifiers, Constants, Keywords"
+    },
+    {
+      "question_number": "2",
+      "question_text": "What is the output of the following code snippet?\n#include <stdio.h>\nint main()\n{\nfloat s; double a; char b;\nprintf(\"%d\", sizeof(s)+sizeof(a)*sizeof(b));\nreturn 0;\n}\n\n• 14\n• 13\n• 12\n• Compilation Error",
+      "marks": 1,
+      "answer": "The output of the code snippet will be `12`.\n\n**Explanation:**\n1.  `sizeof(s)`: `s` is a `float`. On most systems, a `float` occupies 4 bytes.\n2.  `sizeof(a)`: `a` is a `double`. On most systems, a `double` occupies 8 bytes.\n3.  `sizeof(b)`: `b` is a `char`. A `char` occupies 1 byte.\n4.  The expression is `sizeof(s) + sizeof(a) * sizeof(b)`.\n5.  Substituting the sizes: `4 + 8 * 1`.\n6.  According to operator precedence, multiplication `*` is performed before addition `+`.\n    *   `8 * 1 = 8`\n    *   `4 + 8 = 12`\n7.  The `printf` function then prints this integer value using the `%d` format specifier. Therefore, the output is `12`.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Numeric Data types: integer, floating point Non-Numeric Data types: char and string - Size-of operator"
+    },
+    {
+      "question_number": "3",
+      "question_text": "Choose the correct answer.\n#include <stdio.h>\nint main()\n{\nint value = 350;\nint value = 892;\nprintf(\"SRMIST!%d\", value);\nreturn 0;\n}\n• SRMIST!350\n• Redefinition of value\n• SRMIST!892\n• SRMIST! Followed by a junk value.",
+      "marks": 1,
+      "answer": "The correct answer is **Redefinition of value**.\n\n**Explanation:**\nIn C, you cannot declare two variables with the same name within the same scope. The lines `int value = 350;` and `int value = 892;` attempt to declare the variable `value` twice in the `main` function's scope. This is a compilation error, specifically a 'redefinition' error. The program will not compile successfully.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Variables and identifiers, Scope, Binding"
+    },
+    {
+      "question_number": "4",
+      "question_text": "#include <stdio.h>\nint main()\n{\nint x, y = 5, z = 5;\nx = y = z;\nprintf(\"%d\", x);\ngetchar();\nreturn 0;\n}\n• 0\n• 1\n• 5\n• Compile error",
+      "marks": 1,
+      "answer": "The output of the program will be `5`.\n\n**Explanation:**\n1.  `int x, y = 5, z = 5;`: Variables `y` and `z` are initialized to `5`. `x` is declared but not yet initialized.\n2.  `x = y = z;`: This is an assignment chain, which evaluates from right to left due to the right-to-left associativity of the assignment operator (`=`).\n    *   First, `y = z` is evaluated. The value of `z` (which is 5) is assigned to `y`. The result of this assignment expression is `5`.\n    *   Then, `x = 5` (the result of `y = z`) is evaluated. The value `5` is assigned to `x`.\n3.  After this line, `x` is `5`, `y` is `5`, and `z` is `5`.\n4.  `printf(\"%d\", x);`: This prints the current integer value of `x`, which is `5`.\n5.  `getchar();` and `return 0;` are standard C program elements.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Comma, Arrow and Assignment operator, Operator Precedence - Expressions"
+    },
+    {
+      "question_number": "5",
+      "question_text": "After working of the prefix and postfix operators, select all the correct statements for the code given below:\nvoid main() {\nint x, y, z, k;\nx = 10; y = -x; z = x++; k = ++x;\n}\n• Value of y will be -10 and k will be 12.\n• Value of z will be 11\n• Value of k will be 10 and k will be 11\n• Value of k will be 11",
+      "marks": 1,
+      "answer": "The correct statement is: **Value of y will be -10 and k will be 12.**\n\n**Explanation:**\nLet's trace the values of the variables:\n1.  `x = 10;`: `x` is `10`.\n2.  `y = -x;`: `y` becomes `-10`.\n3.  `z = x++;`: This is a postfix increment. The current value of `x` (`10`) is assigned to `z`, and *then* `x` is incremented. So, `z` is `10`, and `x` becomes `11`.\n4.  `k = ++x;`: This is a prefix increment. `x` is incremented *first* (from `11` to `12`), and *then* the new value of `x` (`12`) is assigned to `k`. So, `x` is `12`, and `k` is `12`.\n\nFinal values:\n*   `x = 12`\n*   `y = -10`\n*   `z = 10`\n*   `k = 12`\n\nChecking the options:\n*   \"Value of y will be -10 and k will be 12.\" - **Correct**.\n*   \"Value of z will be 11\" - Incorrect, `z` is `10`.\n*   \"Value of k will be 10 and k will be 11\" - Incorrect, `k` is `12`.\n*   \"Value of k will be 11\" - Incorrect, `k` is `12`.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Increment and decrement operator, Expressions with pre / post increment operator"
+    },
+    {
+      "question_number": "6",
+      "question_text": "#include <stdio.h>\n// Assume base address of \"GeeksQuiz\" to be 2000\nintmain()\n{\nprintf(5 + \"GeeksQuiz\");\nreturn 0;\n}\n• GeeksQuiz\n• Quiz\n• 2005\n• Compile time error",
+      "marks": 1,
+      "answer": "The output of the program is `Quiz`.\n\n**Explanation:**\n1. In C, a string literal like \"GeeksQuiz\" is stored in memory, and the name refers to the address of its first character.\n2. The expression `5 + \"GeeksQuiz\"` uses pointer arithmetic: it points to the address 5 characters after the start of the string, i.e., to the character 'Q'.\n3. So, `5 + \"GeeksQuiz\"` is equivalent to the string \"Quiz\".\n4. The `printf` function prints the string starting from this address, so the output is `Quiz`.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: String Basics - String Functions: printf()"
+    },
+    {
+      "question_number": "7.",
+      "question_text": "C is a ______ language\nHigh Level\n• Low Level\n• Middle Level\n• Machine Level",
+      "marks": 1,
+      "answer": "C is a **Middle Level** language.\n\n**Explanation:**\nC is often referred to as a middle-level language because it combines features of both high-level and low-level languages.\n*   **High-level features:** It supports structured programming, provides data abstraction, and is relatively easy for humans to read and write.\n*   **Low-level features:** It allows direct memory manipulation using pointers, provides access to hardware (through system calls or embedded assembly), and enables bitwise operations, which are characteristics of assembly or low-level languages.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Evolution of Programming & Languages"
+    },
+    {
+      "question_number": "8.",
+      "question_text": "The equality operator is represented by\n• :=\n• .EQ.\n• =\n• ==",
+      "marks": 1,
+      "answer": "In C, the equality operator is represented by `==`.\n\n**Explanation:**\n*   `==` is the equality operator, used to compare if two operands are equal (e.g., `x == y`). It returns a non-zero value (typically 1) if true, and 0 if false.\n*   `=` is the assignment operator, used to assign a value to a variable (e.g., `x = 5`).\n*   `:=` is an assignment operator in some other languages (like Pascal, Python for assignment expressions, SQL for variable assignment) but not in standard C for equality.\n*   `.EQ.` is used in Fortran for equality comparison.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Arithmetic, Relational and logical Operators"
+    },
+    {
+      "question_number": "9.",
+      "question_text": "What will be the output of the expression 11^5?\n• 5\n• 6\n• 14\n• 13",
+      "marks": 1,
+      "answer": "The output of the expression `11^5` will be `14`.\n\n**Explanation:**\nIn C, the caret symbol `^` is the bitwise XOR (exclusive OR) operator, not the exponentiation operator.\n\nTo calculate `11 ^ 5`:\n1.  Convert `11` to binary: `1011`\n2.  Convert `5` to binary: `0101`\n3.  Perform bitwise XOR:\n    ```\n      1011 (11 in decimal)\n    ^ 0101 ( 5 in decimal)\n    ------\n      1110 (14 in decimal)\n    ```\n    *   (1 XOR 0 = 1)\n    *   (0 XOR 1 = 1)\n    *   (1 XOR 0 = 1)\n    *   (1 XOR 1 = 0)\n4.  Convert the binary result `1110` back to decimal: `1*8 + 1*4 + 1*2 + 0*1 = 8 + 4 + 2 = 14`.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Bitwise and Size-of operator"
+    },
+    {
+      "question_number": "10.",
+      "question_text": "The operator + in a+=4 means\n• a=a+4\n• a+4=a\n• a=4\n• a=4+4",
+      "marks": 1,
+      "answer": "The operator `+=` in `a+=4` means `a = a + 4`.\n\n**Explanation:**\n`+=` is a compound assignment operator. It's a shorthand for performing an operation and then assigning the result back to the left-hand operand. Specifically, `a op= b` is equivalent to `a = a op b`.\n\nTherefore, `a += 4` is equivalent to `a = a + 4`.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Comma, Arrow and Assignment operator, Arithmetic, Relational and logical Operators"
+    },
+    {
+      "question_number": "11",
+      "question_text": "#include <stdio.h>\nint main() {\nchar operator = '+';\nint num1 =12;\nint num2 = 10;\nint result = (operator =='+' );\n// Complete the statement by using ternary operator to get the result = 22, if not result = 2.\nprintf(\"%d\", result);\nreturn 0;\n}",
+      "marks": 2,
+      "answer": "To complete the statement using the ternary operator to get `result = 22` if the condition is true and `result = 2` if false, the missing part should be:\n\n```c\n#include <stdio.h>\nint main() {\n    char operator_char = '+'; // Renamed 'operator' to 'operator_char' to avoid keyword conflict, though it's allowed as a variable name in C.\n    int num1 = 12;\n    int num2 = 10;\n    // Complete the statement by using ternary operator to get the result = 22, if not result = 2.\n    int result = (operator_char == '+') ? (num1 + num2) : (num1 - num2);\n    printf(\"%d\", result);\n    return 0;\n}\n```\n\n**Explanation:**\n1.  The ternary operator syntax is `condition ? expression_if_true : expression_if_false;`.\n2.  The `condition` is `operator_char == '+'`. Since `operator_char` is `'+'`, this condition evaluates to `true` (or a non-zero value).\n3.  If the condition is `true`, the `expression_if_true` is executed. We need `22` in this case, which is `num1 + num2` (`12 + 10`).\n4.  If the condition were `false`, the `expression_if_false` would be executed. We need `2` in this case, which is `num1 - num2` (`12 - 10`).\n5.  Therefore, the expression `(operator_char == '+') ? (num1 + num2) : (num1 - num2)` correctly assigns `22` to `result`.\n\nOutput of the program:\n`22`",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Condition Operators, Operator Precedence - Expressions"
+    },
+    {
+      "question_number": "12",
+      "question_text": "List out any four data type modifiers in C.",
+      "marks": 2,
+      "answer": "Four data type modifiers in C are:\n1.  **`signed`**: Specifies that a variable can hold both positive and negative values. For integer types (`int`, `char`, `short`, `long`), they are `signed` by default, but the keyword can be used explicitly (e.g., `signed int`).\n2.  **`unsigned`**: Specifies that a variable can only hold non-negative values (zero and positive values). This essentially doubles the positive range by eliminating the need to store a sign bit (e.g., `unsigned int`).\n3.  **`long`**: Increases the storage size of integer types, and can also be used with `double` (e.g., `long int`, `long long int`, `long double`).\n4.  **`short`**: Decreases the storage size of integer types (e.g., `short int`).\n\nThese modifiers are used in conjunction with basic data types (like `int`, `char`, `float`, `double`) to alter their size, range, or precision.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Numeric Data types: integer, floating point Non-Numeric Data types: char and string"
+    },
+    {
+      "question_number": "13",
+      "question_text": "Pick the correct one from the following declaration is not supported by C language? Justify the answer.\na) String str;\nb) char *str;\nc) float str = 3e2;\nd) Both String str; & float str = 3e2;",
+      "marks": 2,
+      "answer": "The declaration not supported by C language is **a) `String str;`**.\n\n**Justification:**\n*   **a) `String str;`**: C does not have a built-in `String` data type like many other modern languages (e.g., Java, C++, Python). In C, strings are typically represented as arrays of characters (`char[]`) or pointers to characters (`char*`). Directly using `String` as a data type will result in a compilation error because it's an undefined type unless a custom `struct` or `typedef` named `String` has been created by the programmer.\n*   **b) `char *str;`**: This is a valid declaration for a pointer to a character. It's commonly used in C to store and manipulate strings (where `str` points to the first character of a string).\n*   **c) `float str = 3e2;`**: This is a valid declaration and initialization. `3e2` is scientific notation for `3 * 10^2`, which is `300.0`. This is a valid float literal, and `str` is a valid variable name of type `float`.\n*   **d) Both String str; & float str = 3e2;**: Since `float str = 3e2;` is valid, this option is incorrect as it implies both are unsupported.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: String Basics"
+    },
+    {
+      "question_number": "14",
+      "question_text": "Find out the output of the following C program?\n#include <stdio.h>\nint main()\n{\nint _=5;\nint=10;\nint\n=+;\nprintf(\"%i\", );\nreturn 0;\n}",
+      "marks": 2,
+      "answer": "The program will result in a **Compile-time error**.\n\n**Explanation:**\nLet's analyze the problematic lines:\n1.  `int _=5;`: This line is actually valid in C. `_` (underscore) is a valid identifier (variable name), and it's initialized to 5.\n2.  `int=10;`: This line is invalid. You are attempting to use `int` as a variable name and assign `10` to it. `int` is a keyword and cannot be used as an identifier. This will cause a syntax error (expected identifier before '=' token).\n3.  `int =+;`: This line is also invalid. Similar to the above, `int` is a keyword. Additionally, `=+;` is incomplete and syntactically incorrect for a declaration or assignment.\n4.  `printf(\"%i\", );`: This line is invalid. The `printf` function with a format specifier like `%i` (or `%d`) requires a corresponding argument. Here, the argument is missing, leading to a syntax error.\n\nBecause of these fundamental syntax errors, the program cannot be compiled successfully, and thus it will not produce any runtime output.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Variables and identifiers, Constants, Keywords"
+    },
+    {
+      "question_number": "15",
+      "question_text": "Rushanth is playing with a tennikoit ball (Circle) He knows the radius of the ball. Help him to find the area and perimeter of the ball using an expression in C programming.\nHint: Perimeter of a circle = 2nr\nArea of a circle = πr",
+      "marks": 2,
+      "answer": "To find the area and perimeter (circumference) of a circle in C, given its radius, we can use the following expressions. We'll define `PI` as a constant.\n\n**Note on the hint:** The hint provided in the question states \"Area of a circle = πr\". This is mathematically incorrect. The correct formula for the area of a circle is `πr^2` (pi times radius squared). I will use the correct formula in the C expressions.\n\n**C Expressions:**\n\n```c\n#include <stdio.h>\n#define PI 3.14159265358979323846\n\nint main() {\n    double radius = 7.5; // Example radius\n    double area;          // To store the calculated area\n    double perimeter;     // To store the calculated perimeter (circumference)\n\n    // Expression for Area of a circle (using the correct formula πr²)\n    area = PI * radius * radius;\n\n    // Expression for Perimeter (Circumference) of a circle (2πr)\n    perimeter = 2 * PI * radius;\n\n    printf(\"For a circle with radius %.2f:\n\", radius);\n    printf(\"Area = %.2f\n\", area);\n    printf(\"Perimeter = %.2f\n\", perimeter);\n\n    return 0;\n}\n```\n\n**Expressions extracted:**\n1.  **Area:** `area = PI * radius * radius;`\n2.  **Perimeter (Circumference):** `perimeter = 2 * PI * radius;`",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Arithmetic, Relational and logical Operators - Expressions"
+    },
+    {
+      "question_number": "16",
+      "question_text": "Mithran and Niranjan are two friends. Another friend Muthu is facing some issue to pay his tuition fees. Therefore, Mithran and Niranjan are giving some amount to Muthu to pay the fees. Write a C program to calculate how much amount Muthu is going to be paid. In addition, draw the flow chart for the same.",
+      "marks": 5,
+      "answer": "**C Program to Calculate Total Amount Paid to Muthu:**\n\n```c\n#include <stdio.h>\n\nint main() {\n    float mithran_amount; // Amount contributed by Mithran\n    float niranjan_amount; // Amount contributed by Niranjan\n    float total_amount;    // Total amount Muthu receives\n\n    // Input the amount from Mithran\n    printf(\"Enter the amount Mithran is giving: \");\n    scanf(\"%f\", &mithran_amount);\n\n    // Input the amount from Niranjan\n    printf(\"Enter the amount Niranjan is giving: \");\n    scanf(\"%f\", &niranjan_amount);\n\n    // Calculate the total amount\n    total_amount = mithran_amount + niranjan_amount;\n\n    // Display the total amount Muthu is going to be paid\n    printf(\"Muthu is going to be paid a total of: %.2f\n\", total_amount);\n\n    return 0;\n}\n```\n\n--- \n\n**Flowchart:**\n\n```\n+-------+\n| START |\n+-------+\n    |\n    V\n+-----------------------+\n| DECLARE mithran_amount, |\n| niranjan_amount,        |\n| total_amount            |\n+-----------------------+\n    |\n    V\n+---------------------------------+\n| INPUT \"Enter amount from Mithran\" |\n| READ mithran_amount             |\n+---------------------------------+\n    |\n    V\n+---------------------------------+\n| INPUT \"Enter amount from Niranjan\"|\n| READ niranjan_amount            |\n+---------------------------------+\n    |\n    V\n+---------------------------------+\n| CALCULATE total_amount =        |\n|   mithran_amount + niranjan_amount |\n+---------------------------------+\n    |\n    V\n+---------------------------------+\n| OUTPUT \"Total amount: \",        |\n|   total_amount                  |\n+---------------------------------+\n    |\n    V\n+-----+\n| END |\n+-----+\n```",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Problem solving through programming - Writing algorithms & Pseudo code - Introduction to C: Structure of the C program - Input and output statements"
+    },
+    {
+      "question_number": "17",
+      "question_text": "Kumar had taken the loan amount Rs. 30000 before 3 years in the HDFC bank at 2.5% interest. He went to bank for make the payment of his loan. Therefore, could you help him to pay the correct amount by writing a C program to find the simple interest of his loan amount?",
+      "marks": 5,
+      "answer": "**C Program to Calculate Simple Interest:**\n\n```c\n#include <stdio.h>\n\nint main() {\n    // Given values\n    float principal_amount = 30000.0; // P = Rs. 30000\n    float rate_of_interest = 2.5;     // R = 2.5% (per annum)\n    float time_in_years = 3.0;      // T = 3 years\n    float simple_interest;          // To store the calculated simple interest\n    float total_amount_payable;     // To store the total amount (Principal + SI)\n\n    // Formula for Simple Interest (SI = (P * R * T) / 100)\n    simple_interest = (principal_amount * rate_of_interest * time_in_years) / 100.0;\n\n    // Calculate the total amount payable (Principal + Simple Interest)\n    total_amount_payable = principal_amount + simple_interest;\n\n    // Display the results\n    printf(\"Loan Details:\n\");\n    printf(\"Principal Amount: Rs. %.2f\n\", principal_amount);\n    printf(\"Annual Interest Rate: %.2f%%\n\", rate_of_interest);\n    printf(\"Time Period: %.0f years\n\", time_in_years);\n    printf(\"---------------------------------\n\");\n    printf(\"Simple Interest: Rs. %.2f\n\", simple_interest);\n    printf(\"Total Amount Payable: Rs. %.2f\n\", total_amount_payable);\n\n    return 0;\n}\n```\n\n**Explanation:**\n1.  The program defines variables for the `principal_amount` (P), `rate_of_interest` (R), and `time_in_years` (T) based on the problem statement.\n2.  It uses the standard formula for simple interest: `SI = (P * R * T) / 100`.\n3.  It then calculates the `total_amount_payable` by adding the `principal_amount` to the `simple_interest`.\n4.  Finally, it prints all the relevant details, including the simple interest and the total amount Kumar needs to pay.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Problem solving through programming - Introduction to C: Structure of the C program - Input and output statements - Arithmetic, Relational and logical Operators"
+    }
+  ]
+}

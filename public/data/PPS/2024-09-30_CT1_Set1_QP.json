@@ -1,0 +1,158 @@
+{
+    "paper_title": "Programming For Problem Solving - Question paper 30-9-2024",
+    "source": "2024-09-30 CT1 Set1",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "Mention the starting point of c program execution.\n(a)#include\n(b)void main()\n(c)Opening curly braces ''\n(d)None of these",
+            "marks": 1,
+            "answer": "The starting point of C program execution is the `main()` function. In the given options, `(b)void main()` correctly identifies this. `main()` is the entry point from where the program begins its execution.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to C: Structure of the C program"
+        },
+        {
+            "question_number": "2",
+            "question_text": "How Many Keywords are there in C?\n(a)31\n(b)32\n(c)64\n(d)63",
+            "marks": 1,
+            "answer": "The C language standard (C90/C99/C11) defines 32 keywords. Therefore, the correct answer is (b) 32.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Keywords"
+        },
+        {
+            "question_number": "3",
+            "question_text": "Identify the output\nvoid main()\n{\nfloat a = 654.1239;\nprintf(\"%0.3f\", a);\n}\n(a)Compiler error\n(b)654.123900\n(c)654,123\n(d)654.124",
+            "marks": 1,
+            "answer": "The `printf` format specifier `\"%0.3f\"` means to print a floating-point number with a precision of 3 digits after the decimal point. It will round the number if necessary. `654.1239` rounded to 3 decimal places becomes `654.124`. So the output is (d) 654.124.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Input and output statements."
+        },
+        {
+            "question_number": "4",
+            "question_text": "Which operator is used to compare two values?\n(a)Logical operator\n(b)Relational operator\n(c)Assignment operator\n(d) None of these",
+            "marks": 1,
+            "answer": "Relational operators (e.g., `==`, `!=`, `<`, `>`, `<=`, `>=`) are used to compare two values. Logical operators combine boolean expressions, and assignment operators assign values. Therefore, the correct answer is (b) Relational operator.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Arithmetic, Relational and logical Operators"
+        },
+        {
+            "question_number": "5",
+            "question_text": "After executing the code segment given below what will be the value of a?\na = 10 + 2 * 12 / (3 * 2) + 5;\n(a)31\n(b)19\n(c)11\n(d)29",
+            "marks": 1,
+            "answer": "Let's evaluate the expression step-by-step following operator precedence (PEMDAS/BODMAS):\n`a = 10 + 2 * 12 / (3 * 2) + 5;`\n1.  Parentheses: `(3 * 2)` becomes `6`\n    `a = 10 + 2 * 12 / 6 + 5;`\n2.  Multiplication/Division (from left to right):\n    `2 * 12` becomes `24`\n    `a = 10 + 24 / 6 + 5;`\n    `24 / 6` becomes `4`\n    `a = 10 + 4 + 5;`\n3.  Addition:\n    `10 + 4` becomes `14`\n    `a = 14 + 5;`\n    `a` becomes `19`\nThe correct value is (b) 19.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Operator Precedence"
+        },
+        {
+            "question_number": "6",
+            "question_text": "Which loop statement is faster in C Language?\nA) for\nB) while\nC) do while\nD) All work at same speed",
+            "marks": 1,
+            "answer": "In C, `for`, `while`, and `do-while` loops are all implemented using similar underlying machine instructions for conditional jumps. There is no inherent performance difference between them. The choice of loop depends on the specific use case and programmer preference rather than speed. Therefore, the correct answer is (D) All work at same speed.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Looping Control Statements: for, while, do.while"
+        },
+        {
+            "question_number": "7",
+            "question_text": "In the given code segment, how many times the value of i is checked?\ni = 0;\nwhile (i < 3) i++;\na) 2\nb) 3\nc) 4\nd) 1",
+            "marks": 1,
+            "answer": "Let's trace the loop:\n1.  `i = 0`. Condition `(0 < 3)` is true. `i` becomes `1`. (Check 1)\n2.  `i = 1`. Condition `(1 < 3)` is true. `i` becomes `2`. (Check 2)\n3.  `i = 2`. Condition `(2 < 3)` is true. `i` becomes `3`. (Check 3)\n4.  `i = 3`. Condition `(3 < 3)` is false. The loop terminates. (Check 4)\nThe condition `i < 3` is checked 4 times. Therefore, the correct answer is (c) 4.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Looping Control Statements: for, while, do.while"
+        },
+        {
+            "question_number": "8",
+            "question_text": "Value stored in b after executing the code segment given below\nint a = 3;\nint b = ++a + a++ + --a;\na) 12\nb) 13\nc) 10\nd) Cannot be decided",
+            "marks": 1,
+            "answer": "The expression `b = ++a + a++ + --a;` involves multiple modifications and accesses to the variable `a` within a single expression without sequence points. According to the C standard, the order of evaluation of operands for operators like `+` is unspecified, and modifying a variable multiple times or modifying and accessing it without an intervening sequence point leads to undefined behavior. Therefore, the value stored in `b` cannot be reliably determined and may vary between compilers. The most appropriate answer is (d) Cannot be decided.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Increment and decrement operator - Expressions with pre / post increment operator."
+        },
+        {
+            "question_number": "9",
+            "question_text": "What is the output of the program.?\n#include<stdio.h>\nint main()\n{\nprintf(\"Hello Boss.\");\n}\n-A) Hello Boss\nB) Hello Boss\nC) No output\nD) Compiler error",
+            "marks": 1,
+            "answer": "The program `printf(\"Hello Boss.\");` will print the string \"Hello Boss.\" to the console. The `int main()` indicates a standard C program structure. Therefore, the output is \"Hello Boss.\".",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to C: Structure of the C program - Input and output statements."
+        },
+        {
+            "question_number": "10",
+            "question_text": "Choose the correct output of the program?\nint main()\n{\nregister a = 10;\n{\nregister a = 15;\nprintf(\"%d \", a);\n}\nprintf(\"%d \", a);\nreturn 20;\n}\n",
+            "marks": 1,
+            "answer": "In C, variables declared with `register` storage class within different blocks (scopes) are distinct. The `register` keyword is a hint to the compiler, but modern compilers often optimize storage regardless. However, the scope rules still apply:\n1.  `register a = 10;` declares `a` in the outer scope.\n2.  Inside the inner block `{}`, `register a = 15;` declares a *new* variable `a` that shadows the outer `a`.\n3.  `printf(\"%d \", a);` inside the inner block prints the value of the *inner* `a`, which is `15`.\n4.  After the inner block finishes, the inner `a` ceases to exist.\n5.  `printf(\"%d \", a);` outside the inner block refers to the *outer* `a`, which still holds `10`.\nTherefore, the output will be `15 10` (with a space separating the numbers).",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Values, Names, Scope, Binding, Storage Classes"
+        },
+        {
+            "question_number": "11",
+            "question_text": "With suitable examples discuss the concept of variables in C.",
+            "marks": 4,
+            "answer": "In C, a variable is a named storage location in memory that holds a value. It's essentially a symbolic name for a memory address. Variables are used to store data that can be changed during program execution.\n\n**Key characteristics of variables in C:**\n1.  **Name (Identifier):** A unique name given to the variable (e.g., `age`, `score`, `temperature`).\n2.  **Data Type:** Specifies the type of data the variable can hold (e.g., `int` for integers, `float` for floating-point numbers, `char` for characters). The data type determines the size of the memory allocated and the range of values it can store.\n3.  **Value:** The actual data stored in the variable. This value can be changed.\n4.  **Scope:** The region of the program where the variable can be accessed.\n5.  **Storage Class:** Determines the lifetime, scope, and initial value of a variable (e.g., `auto`, `static`, `extern`, `register`).\n\n**Declaration and Initialization:**\nBefore using a variable, it must be declared, which involves specifying its data type and name. It can also be initialized with an initial value at the time of declaration or later.\n\n**Example:**\n```c\n#include <stdio.h>\n\nint main() {\n    // Declaration of integer variable 'age'\n    int age;\n\n    // Initialization of 'age'\n    age = 30;\n\n    // Declaration and initialization of floating-point variable 'price'\n    float price = 19.99;\n\n    // Declaration and initialization of character variable 'grade'\n    char grade = 'A';\n\n    // Declaration and initialization of a constant variable (using const keyword)\n    const int MAX_SCORE = 100;\n\n    printf(\"Age: %d\\n\", age);\n    printf(\"Price: %.2f\\n\", price);\n    printf(\"Grade: %c\\n\", grade);\n    printf(\"Maximum Score: %d\\n\", MAX_SCORE);\n\n    // Modifying the value of a variable\n    age = age + 1; // age becomes 31\n    printf(\"New Age: %d\\n\", age);\n\n    // Example of scope: 'i' is only visible inside the loop\n    for (int i = 0; i < 3; i++) {\n        printf(\"Loop iteration: %d\\n\", i);\n    }\n    // printf(\"%d\", i); // This would cause a compilation error as 'i' is out of scope here\n\n    return 0;\n}\n```\nThis example demonstrates how variables are declared, initialized, and used to store and manipulate different types of data, showcasing their fundamental role in C programming.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Variables and identifiers, Constants, Keywords - Numeric Data types: integer, floating point Non-Numeric Data types: char and string - Values, Names, Scope, Binding, Storage Classes"
+        },
+        {
+            "question_number": "12",
+            "question_text": "Devise an algorithm to read the age of two of your friends and find the sum, product and difference of their ages.",
+            "marks": 4,
+            "answer": "**Algorithm to Calculate Sum, Product, and Difference of Two Ages:**\n\n**1. Start**\n**2. Input:**\n    a. Read the age of Friend 1 and store it in a variable, say `age1`.\n    b. Read the age of Friend 2 and store it in a variable, say `age2`.\n**3. Process:**\n    a. Calculate the sum of ages: `sum = age1 + age2`\n    b. Calculate the product of ages: `product = age1 * age2`\n    c. Calculate the difference of ages: `difference = age1 - age2`\n**4. Output:**\n    a. Display the calculated `sum`.\n    b. Display the calculated `product`.\n    c. Display the calculated `difference`.\n**5. End**",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Problem solving through programming - Writing algorithms & Pseudo code - Input and output statements. Variables and identifiers"
+        },
+        {
+            "question_number": "13",
+            "question_text": "Debug the code given below so as to generate the desired output 1 2 4 5.\n#include<stdio.h>\nvoid main()\n{\nfor(int i=1;i<5;i++)\nif(3)\nbreak;\nprintf(\"%d\\n\",i);\n}",
+            "marks": 4,
+            "answer": "The original code `if(3) break;` causes an unconditional `break` because `3` evaluates to true, terminating the loop immediately. To achieve the output `1 2 4 5`, we need to iterate from 1 up to 5 (inclusive), and specifically skip printing when `i` is 3.\n\n**Original Code:**\n```c\n#include<stdio.h>\nvoid main()\n{\nfor(int i=1;i<5;i++)\nif(3)\nbreak;\nprintf(\"%d\\n\",i);\n}\n```\n\n**Debugged Code:**\n```c\n#include<stdio.h>\nvoid main() // Using void main() for consistency with the original problem.\n                // In C, 'int main()' returning 0 is the standard.\n{\n    for(int i=1; i<=5; i++) // Loop from i=1 to i=5 (inclusive)\n    {\n        if(i == 3) // Check if i is 3\n        {\n            continue; // If i is 3, skip the rest of this iteration and go to the next.\n        }\n        printf(\"%d \", i); // Print the value of i followed by a space.\n    }\n    // Optional: printf(\"\\n\"); to add a newline at the end of output.\n}\n```\n**Explanation of Changes:**\n1.  **Loop Condition:** Changed `i<5` to `i<=5` (or `i<6`) to ensure `i` iterates up to and includes `5`.\n2.  **Conditional Statement:** Changed `if(3) break;` to `if(i == 3) continue;`.\n    *   `if(i == 3)`: This condition checks if the current value of `i` is `3`.\n    *   `continue;`: If the condition is true, `continue` statement skips the remaining statements in the current iteration of the loop and proceeds to the next iteration. This effectively prevents `3` from being printed.\n3.  **Print Statement:** Moved `printf(\"%d \", i);` inside the `for` loop, after the `if` block, so that it executes for all `i` except `3`. A space ` ` is added for desired output formatting instead of `\\n`.\n\n**Output of Debugged Code:**\n`1 2 4 5 ` (with a trailing space)",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Looping Control Statements: for - Un-conditional Control Statements : break, continue"
+        },
+        {
+            "question_number": "14",
+            "question_text": "Complete the program by filling in the missing parts in some statements.\n#include<\nvoid main()\n{\nint m;\nprintf(\"Input m value\");\nscanf(\" \",&m);\n(m)\n{\ncase 9:\nprintf(\"Autumn\");\nbreak;\ncase 6:\nprintf(\"Summer\");\nbreak;\ncase 5:\nprintf(\"Spring\");\ncase 1:\nprintf(\"Winter\");\n}\n}",
+            "marks": 4,
+            "answer": "The program is designed to use a `switch-case` statement to print season names based on an integer input `m`. The missing parts are standard C library inclusion, the format specifier for `scanf`, and the `switch` statement itself.\n\n**Completed Program:**\n```c\n#include<stdio.h> // Missing: Standard input-output library header\nvoid main()\n{\n    int m;\n    printf(\"Input m value\");\n    scanf(\"%d\", &m); // Missing: Format specifier %d for integer input\n    switch(m)        // Missing: The switch statement with 'm' as the control expression\n    {\n        case 9:\n            printf(\"Autumn\");\n            break;\n        case 6:\n            printf(\"Summer\");\n            break;\n        case 5:\n            printf(\"Spring\");\n            break;\n        case 1:\n            printf(\"Winter\");\n            break;\n        // Optionally, a default case can be added for invalid inputs:\n        // default:\n        //     printf(\"Invalid month value\");\n        //     break;\n    }\n}\n```\n**Missing parts filled in:**\n1.  `#include<stdio.h>`\n2.  `scanf(\"%d\", &m);`\n3.  `switch(m)`",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Input and output statements. Variables and identifiers - Unit 2: Conditional Control -Statements : Switch case"
+        },
+        {
+            "question_number": "15",
+            "question_text": "You are assigned to create a program for a school that calculates the average marks of students in a class.",
+            "marks": 10,
+            "answer": "An algorithm and C program to calculate the average marks of students in a class:\n\n**Algorithm:**\n1.  **Start**\n2.  **Declare Variables:**\n    *   `numStudents`: integer to store the number of students.\n    *   `totalMarks`: integer (or float, depending on expected precision) to store the sum of marks. Initialize to 0.\n    *   `marks`: integer to store marks of individual student.\n    *   `averageMarks`: float to store the calculated average.\n3.  **Input Number of Students:**\n    *   Prompt the user to enter the total number of students in the class.\n    *   Read `numStudents`.\n4.  **Validate Input:**\n    *   If `numStudents` is less than or equal to 0, display an error and go back to step 3 or terminate.\n5.  **Loop for Marks Input:**\n    *   For `i` from 1 to `numStudents`:\n        *   Prompt the user to enter marks for student `i`.\n        *   Read `marks`.\n        *   Add `marks` to `totalMarks`: `totalMarks = totalMarks + marks`.\n6.  **Calculate Average:**\n    *   `averageMarks = (float)totalMarks / numStudents` (Cast to float for accurate division).\n7.  **Output Result:**\n    *   Display the calculated `averageMarks`.\n8.  **End**\n\n**C Program:**\n```c\n#include <stdio.h>\n\nint main() {\n    int numStudents;\n    int totalMarks = 0;\n    int marks;\n    float averageMarks;\n\n    // Input number of students\n    printf(\"Enter the number of students in the class: \");\n    scanf(\"%d\", &numStudents);\n\n    // Input validation\n    if (numStudents <= 0) {\n        printf(\"Number of students must be positive. Exiting.\\n\");\n        return 1; // Indicate an error\n    }\n\n    // Loop to get marks for each student\n    for (int i = 1; i <= numStudents; i++) {\n        printf(\"Enter marks for student %d: \", i);\n        scanf(\"%d\", &marks);\n        // Basic validation for marks (optional but good practice)\n        if (marks < 0 || marks > 100) { // Assuming marks are between 0 and 100\n            printf(\"Invalid marks entered. Please enter marks between 0 and 100.\\n\");\n            i--; // Decrement i to re-enter marks for the same student\n            continue;\n        }\n        totalMarks += marks; // Add marks to total\n    }\n\n    // Calculate average marks\n    averageMarks = (float)totalMarks / numStudents;\n\n    // Display the result\n    printf(\"\\nTotal marks of the class: %d\\n\", totalMarks);\n    printf(\"Average marks of the class: %.2f\\n\", averageMarks);\n\n    return 0; // Indicate successful execution\n}\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Problem solving through programming - Writing algorithms & Pseudo code - Introduction to C: Structure of the C program - Input and output statements. Variables and identifiers - Unit 2: Looping Control Statements: for, while, do.while"
+        },
+        {
+            "question_number": "17",
+            "question_text": "Design an algorithm and implement the same using C program for carrying out the following tasks\n1. Read age, year of study, section, 10th marks, 12th marks.\n2. Product of age and year of study\n3. Sum and Difference of 10th and 12th marks\n4. Double the age without using the multiplication operator (Hint: use the shift operator)",
+            "marks": 10,
+            "answer": "**Algorithm:**\n1.  **Start**\n2.  **Declare Variables:**\n    *   `age`, `yearOfStudy`, `section`, `marks10`, `marks12`: integer variables.\n    *   `productAgeYear`, `sumMarks`, `diffMarks`: integer variables.\n    *   `doubledAge`: integer variable for age doubled.\n3.  **Input Data:**\n    *   Prompt user to enter `age`. Read `age`.\n    *   Prompt user to enter `year of study`. Read `yearOfStudy`.\n    *   Prompt user to enter `section`. Read `section`.\n    *   Prompt user to enter `10th marks`. Read `marks10`.\n    *   Prompt user to enter `12th marks`. Read `marks12`.\n4.  **Calculate Product of Age and Year of Study:**\n    *   `productAgeYear = age * yearOfStudy`\n5.  **Calculate Sum and Difference of 10th and 12th Marks:**\n    *   `sumMarks = marks10 + marks12`\n    *   `diffMarks = marks10 - marks12`\n6.  **Double Age using Shift Operator:**\n    *   `doubledAge = age << 1` (Left shift by 1 bit multiplies by 2)\n7.  **Output Results:**\n    *   Display `productAgeYear`.\n    *   Display `sumMarks`.\n    *   Display `diffMarks`.\n    *   Display `doubledAge`.\n8.  **End**\n\n**C Program:**\n```c\n#include <stdio.h>\n\nint main() {\n    int age, yearOfStudy, section, marks10, marks12;\n    int productAgeYear, sumMarks, diffMarks;\n    int doubledAge;\n\n    // 1. Read Inputs\n    printf(\"Enter age: \");\n    scanf(\"%d\", &age);\n    printf(\"Enter year of study: \");\n    scanf(\"%d\", &yearOfStudy);\n    printf(\"Enter section (e.g., 1 for A, 2 for B): \");\n    scanf(\"%d\", &section);\n    printf(\"Enter 10th marks: \");\n    scanf(\"%d\", &marks10);\n    printf(\"Enter 12th marks: \");\n    scanf(\"%d\", &marks12);\n\n    // 2. Product of age and year of study\n    productAgeYear = age * yearOfStudy;\n    printf(\"\\nProduct of Age and Year of Study: %d\\n\", productAgeYear);\n\n    // 3. Sum and Difference of 10th and 12th marks\n    sumMarks = marks10 + marks12;\n    diffMarks = marks10 - marks12; // Can be negative if marks12 > marks10\n    printf(\"Sum of 10th and 12th Marks: %d\\n\", sumMarks);\n    printf(\"Difference of 10th and 12th Marks: %d\\n\", diffMarks);\n\n    // 4. Double the age without using multiplication operator (using shift operator)\n    doubledAge = age << 1; // Left shift by 1 bit is equivalent to multiplying by 2\n    printf(\"Age doubled (using shift operator): %d\\n\", doubledAge);\n\n    return 0;\n}\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Problem solving through programming - Writing algorithms & Pseudo code - Input and output statements. Variables and identifiers - Arithmetic, Relational and logical Operators - Bitwise and Size-of operator"
+        },
+        {
+            "question_number": "18",
+            "question_text": "Write a C program that reads an integer from the user and performs the arithmetic operations sequentially. The program should output a single final result.\n1. Add 10 to the number.\n2. Multiply the result by 2.\n3. Subtract 5 from the result.\n4. Divide the result by 3 (integer division).",
+            "marks": 10,
+            "answer": "**C Program:**\n```c\n#include <stdio.h>\n\nint main() {\n    int num;\n    int result;\n\n    // Read an integer from the user\n    printf(\"Enter an integer: \");\n    scanf(\"%d\", &num);\n\n    // 1. Add 10 to the number\n    result = num + 10;\n    printf(\"After adding 10: %d\\n\", result); // Optional: show intermediate steps\n\n    // 2. Multiply the result by 2\n    result = result * 2;\n    printf(\"After multiplying by 2: %d\\n\", result); // Optional\n\n    // 3. Subtract 5 from the result\n    result = result - 5;\n    printf(\"After subtracting 5: %d\\n\", result); // Optional\n\n    // 4. Divide the result by 3 (integer division)\n    result = result / 3; // Integer division truncates the decimal part\n    printf(\"After dividing by 3 (integer division): %d\\n\", result); // Optional\n\n    // Output a single final result\n    printf(\"\\nFinal Result: %d\\n\", result);\n\n    return 0;\n}\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Input and output statements. Variables and identifiers - Arithmetic, Relational and logical Operators"
+        },
+        {
+            "question_number": "19",
+            "question_text": "Write a C program that checks two given temperatures and returns true if one temperature is less than 0 and the other is greater than 100, otherwise, it returns false.",
+            "marks": 10,
+            "answer": "**C Program:**\n```c\n#include <stdio.h>\n#include <stdbool.h> // For boolean data type in C99 and later\n\n// Function to check the temperature condition\nbool checkTemperatureCondition(int temp1, int temp2) {\n    // Condition 1: temp1 < 0 AND temp2 > 100\n    bool condition1 = (temp1 < 0 && temp2 > 100);\n\n    // Condition 2: temp2 < 0 AND temp1 > 100\n    bool condition2 = (temp2 < 0 && temp1 > 100);\n\n    // Return true if either condition is met\n    return condition1 || condition2;\n}\n\nint main() {\n    int temperature1, temperature2;\n    bool result;\n\n    printf(\"Enter Temperature 1: \");\n    scanf(\"%d\", &temperature1);\n\n    printf(\"Enter Temperature 2: \");\n    scanf(\"%d\", &temperature2);\n\n    result = checkTemperatureCondition(temperature1, temperature2);\n\n    if (result) {\n        printf(\"The condition is TRUE.\\n\");\n    } else {\n        printf(\"The condition is FALSE.\\n\");\n    }\n\n    return 0;\n}\n```\n**Explanation:**\nThe program defines a function `checkTemperatureCondition` that takes two integer temperatures. It checks if:\n1.  The first temperature is less than 0 AND the second is greater than 100, OR\n2.  The second temperature is less than 0 AND the first is greater than 100.\nIt uses logical AND (`&&`) and logical OR (`||`) operators to combine these conditions. The `main` function gets input from the user and calls this function, then prints the boolean result.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else - Unit 1: Arithmetic, Relational and logical Operators - Unit 3: Function prototype declaration, function definition"
+        },
+        {
+            "question_number": "19(b)",
+            "question_text": "Write a C program and an algorithm to help your CR in determining the average age of your class.",
+            "marks": 10,
+            "answer": "**Algorithm to Determine Average Age of a Class:**\n1.  **Start**\n2.  **Declare Variables:**\n    *   `numStudents`: integer to store the number of students.\n    *   `totalAge`: integer to store the sum of all ages. Initialize to 0.\n    *   `currentAge`: integer to store the age of an individual student.\n    *   `averageAge`: float to store the calculated average age.\n3.  **Input Number of Students:**\n    *   Prompt the user to enter the total number of students in the class.\n    *   Read `numStudents`.\n4.  **Validate Input:**\n    *   If `numStudents` is less than or equal to 0, display an error message and terminate.\n5.  **Loop for Age Input:**\n    *   For `i` from 1 to `numStudents`:\n        *   Prompt the user to enter the age for student `i`.\n        *   Read `currentAge`.\n        *   Add `currentAge` to `totalAge`: `totalAge = totalAge + currentAge`.\n6.  **Calculate Average Age:**\n    *   `averageAge = (float)totalAge / numStudents` (Cast to float for accurate division).\n7.  **Output Result:**\n    *   Display the calculated `averageAge`.\n8.  **End**\n\n**C Program:**\n```c\n#include <stdio.h>\n\nint main() {\n    int numStudents;\n    int totalAge = 0;\n    int currentAge;\n    float averageAge;\n\n    // Get the number of students from the user\n    printf(\"Enter the number of students in the class: \");\n    scanf(\"%d\", &numStudents);\n\n    // Validate the number of students\n    if (numStudents <= 0) {\n        printf(\"Error: Number of students must be a positive integer.\\n\");\n        return 1; // Indicate an error\n    }\n\n    // Loop to collect age for each student\n    for (int i = 1; i <= numStudents; i++) {\n        printf(\"Enter age for student %d: \", i);\n        scanf(\"%d\", &currentAge);\n\n        // Basic validation for age (optional)\n        if (currentAge < 0 || currentAge > 150) { // Assuming age is realistic\n            printf(\"Warning: Invalid age entered for student %d. Please re-enter.\\n\", i);\n            i--; // Decrement i to re-enter age for the same student\n            continue;\n        }\n        totalAge += currentAge; // Add current student's age to total\n    }\n\n    // Calculate the average age\n    averageAge = (float)totalAge / numStudents;\n\n    // Display the average age\n    printf(\"\\nTotal number of students: %d\\n\", numStudents);\n    printf(\"Sum of all ages: %d\\n\", totalAge);\n    printf(\"Average age of the class: %.2f\\n\", averageAge);\n\n    return 0; // Indicate successful execution\n}\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Problem solving through programming - Writing algorithms & Pseudo code - Introduction to C: Structure of the C program - Input and output statements. Variables and identifiers - Unit 2: Looping Control Statements: for, while, do.while"
+        }
+    ]
+}

@@ -1,0 +1,150 @@
+{
+    "paper_title": "Programming for Problem Solving (Engineering Science Course) - CT-3 Set C",
+    "source": "2021-22 CT3 SetC",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "Which of the following is the correct syntax to send an array as a parameter to function?\na) func(array);\nb) func(&array);\nc) func(*array);\nd) func(array[]);",
+            "marks": 1,
+            "answer": "Answer: a) func(array);",
+            "answer_source": "provided",
+            "chapter": "Unit 3: String Basics"
+        },
+        {
+            "question_number": "2",
+            "question_text": "The keyword used to define a C macro is --------\na) macro\nb) #define\nc) define\nd) macrodef",
+            "marks": 1,
+            "answer": "Answer: c) define",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "3",
+            "question_text": "The symbol * and &amp represents -------- respectively in pointers.\na) Address at operator and Value of operator\nb) Pointer and Reference\nc) Value of operator and Address at operator\nd) Dereference and Reference",
+            "marks": 1,
+            "answer": "Answer: c) Value of operator and Address at operator",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Conditional Control -Statements"
+        },
+        {
+            "question_number": "4",
+            "question_text": "Identify the output of the following program\n#include <stdio.h>\nint *money()\n{\nint *pocket = 5;\nreturn pocket;\n}\nvoid main()\n{\nint *kit = money();\nprintf(\"%d\", kit);\n}\na) 5\nb) 0\nc) Compile time error\nd) Garbage value",
+            "marks": 1,
+            "answer": "Answer: a) 5",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Conditional Control -Statements"
+        },
+        {
+            "question_number": "5",
+            "question_text": "What is the output of this C code?\n#include <stdio.h>\nvoid foo(int*);\nint main()\n{\nint i = 10;\nfoo((&i)++);\n}\nvoid foo(int *p)\n{\nprintf(\"%d\\n\", *p);\n}\na) 10\nb) 9\nc) 11\nd) 12",
+            "marks": 1,
+            "answer": "Answer: Compile time error is the correct answer\na) 10\tb) 9\nc) 11\td) 12",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "6",
+            "question_text": "How structure, union, and enumeration are connected?\na. By defining new data types\nb. By defining new variable\nc. By defining new structures\nd. By defining new pointers",
+            "marks": 1,
+            "answer": "Answer:- a",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "7",
+            "question_text": "Predict the value of 'm' in the following code\n#include <stdio.h>\nint main()\n{\nunsigned int s = 5;\nunsigned int r = 7;\nint m = 0;\nm = s ^ r;\nprintf(\"%d\\n\", m);\nreturn 0;\n}\na) 1\tb) 2\nc) 3\td) 4",
+            "marks": 1,
+            "answer": "Answer:- b",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "8",
+            "question_text": "Size of the union defined in the following code is ----\n#include<stdio.h>\nunion srm\n{\nint x; float y; double z;\n};\nint main()\n{\nprintf(\"%lu\", sizeof(union srm));\nreturn 0;\n}\na) 2\tb) 4\nc) 8\td) 16",
+            "marks": 1,
+            "answer": "Answer:- c",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "9",
+            "question_text": "Dynamic Memory Allocation means\n a) memory can be allocated at compile time.\n b) faster than that using static memory allocation.\n c) memory can't be increased while executing program.\n d) memory can be allocated at run time.",
+            "marks": 1,
+            "answer": "Answer:- d",
+            "answer_source": "provided",
+            "chapter": "Unit 3: String Basics"
+        },
+        {
+            "question_number": "10",
+            "question_text": "The equivalent memory function(s) which has the same effect as calloc --------\na) malloc and memset\nb) realloc\nc) malloc\nd) recalloc and memset",
+            "marks": 1,
+            "answer": "Answer:- a",
+            "answer_source": "provided",
+            "chapter": "Unit 3: String Basics"
+        },
+        {
+            "question_number": "11",
+            "question_text": "Write a macro to determine whether the given number is odd or even",
+            "marks": 5,
+            "answer": "Answer:\n#include<stdio.h>\n#define ODD_EVEN(num) ( (num % 2 == 0) ? printf(\"Even\\n\") : printf(\"ODD\\n\"))\nint main()\n{\nint num;\nprintf(\"Enter a positive number\\n\");\nscanf(\"%d\", &num);\nODD_EVEN(num);\nreturn 0;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "12",
+            "question_text": "The marks scored by Stella in 6 subjects are given and Bala was asked to find out the total marks of Stella. Help Bala to write a program for this using array of pointers.",
+            "marks": 5,
+            "answer": "Answer: Marks scored can be maintained in an array and summed using pointers as below\n#include<stdio.h>\nint main()\n{\nint mark [6]={45,56,67,78,89,91},sum=0;\nint i;\nint *p[6];\nfor (i=0;i<6;i++)\n{\np[i]=&mark[i];\n}\nfor (i=0;i<6;i++)\n{\nsum = sum + *p[i];\n}\nprintf(\"Sum= %d \", sum);\nreturn 0;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Conditional Control -Statements"
+        },
+        {
+            "question_number": "13",
+            "question_text": "Mention various library functions and its purpose of dynamic memory allocation in C.",
+            "marks": 5,
+            "answer": "Answer:\ni.   malloc() - Used to allocate a single block of memory to store values of specific data types.\nii.  calloc() - used to allocate memory in multiple blocks of same size during program execution.\niii. free() - memory at location pointed to by pointer is released.\niv. realloc() - used to modify or reallocate the memory space which is previously allocated.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: String Basics"
+        },
+        {
+            "question_number": "14",
+            "question_text": "Our SRM Institute is conducting an inter collegiate Competition named \"Problem Solving through Programming in C\". In that competition, suppose your class student scored a centum mark and got First Prize. Now it is your duty to write a c program to display the concerned student register number, name, contest _name, and marks scored.",
+            "marks": 10,
+            "answer": "Answer:-\nUsing typedef struct\n#include <stdio.h>\n#include <string.h>\ntypedef struct Students\n{\nchar reg_no[15];\nchar name[50];\nchar contest_name [100];\nint marks;\nchar prize[15];\n} Student;\nint main()\n{\nStudent stud;\nstrcpy( stud.reg_no, \"100479\");\nstrcpy( stud.name, \"Manikandan K\");\nstrcpy( stud.contest_name, \" Problem Solving\nthrough Programming in C \");\nstud.marks = 100;\nstrcpy( stud.prize, \"FIRST\");\nprintf( \"Student Reg_no : %s\\n\", stud.reg_no);\nprintf( \"Student Name : %s\\n\", stud.name);\nprintf( \"Student contest_name: %s\\n\", stud.\ncontest_name);\nprintf( \"Student Marks : %d\\n\", stud.marks);\nprintf( \"Student Prize : %s\\n\", stud.prize);\nreturn 0;\n}\nOutput:\nStudent Reg_no : 100479\nStudent Name : Manikandan K\nStudent contest_name: Problem Solving\nthrough Programming in C\nStudent Marks: 100\nStudent Prize : FIRST",
+            "answer_source": "provided",
+            "chapter": "Unit 3: String Basics"
+        },
+        {
+            "question_number": "15 a",
+            "question_text": "In a certain code language, numerals are each represented by a symbol or a letter. They are as follows\nNumeral     0  1  2  3  4  5  6  7  8  9\nSymbol code *  B  E  A  @  F  K  %  R  M\nNumerals are to be coded as per the codes in the table and the following conditions:\na. If the first and the last digits are odd, both are to be coded as 'X'.\nb. If the first and the last digits are even, both are to be coded as '$'.\nc. If the last digit is '0', it is to be coded as '#'.\nFor example, 487692 is coded as $R%KM$. Write a program with a function that takes as input a sequence of numbers in an array and displays the corresponding code to represent it.",
+            "marks": 10,
+            "answer": "Answer:\n#include<stdio.h>\nchar *symbol_code=\"*BEA@FK%RM\";\nint a[20],n,i;\nchar final_code[30];\nint main()\n{\nprintf(\"Enter the no of digits of input number\");\nscanf(\"%d\",&n);\nfor(i=0;i<n;i++)\n{\nprintf(\"Enter digit %d\",i+1);\nscanf(\"%d\",&a[i]);\nfinal_code[i]=symbol_code[a[i]];\n}\nif(a[0]%2==1 && a[n-1]%2==1)\n{\nfinal_code[0]='X';\nfinal_code[n-1]='X';\n}\nif(a[0]%2==0 && a[n-1]%2==0)\n{\nfinal_code[0]='$';\nfinal_code[n-1]='$';\n}\nif(a[n-1]==0)\n{\nfinal_code[n-1]='#';\n}\nprintf(\"Final code is %s\", final_code);\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 3: String Basics"
+        },
+        {
+            "question_number": "15 b",
+            "question_text": "Ravi has given positive integers to Kumar and asked him to sort the list. Kumar wants to solve the problem with the help of pointers. Can you help him in writing the solution?",
+            "marks": 10,
+            "answer": "Answer:\n#include <stdio.h>\nvoid main()\n{\nint *a,i,j,tmp,n;\nprintf(\"Enter the number of elements to store in the array: \");\nscanf(\"%d\",&n);\nprintf(\"Enter the elements\");\nfor(i=0;i<n;i++)\n{\nprintf(\" element - %d : \",i+1);\nscanf(\"%d\",a+i);\n}\nfor(i=0;i<n;i++)\n{\nfor(j=i+1;j<n;j++)\n{\nif( *(a+i) > *(a+j))\n{\ntmp = *(a+i);\n*(a+i) = *(a+j);\n*(a+j) = tmp;\n}\n}\n}\nprintf(\"\\n The elements in the array after sorting : \\n\");\nfor(i=0;i<n;i++)\n{\nprintf(\" element - %d : %d \\n\",i+1,*(a+i));\n}\nprintf(\"\\n\");\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Conditional Control -Statements"
+        },
+        {
+            "question_number": "16 a",
+            "question_text": "Write a program to multiply two integers with bitwise operators using functions in C.",
+            "marks": 10,
+            "answer": "Answer:-\nRussian Multiplication: The powers of two in the decomposition of the multiplicand are found by writing it on the left and progressively halving the left column, discarding any remainder, until the value is 1 (or \u20131, in which case the eventual sum is negated), while doubling the right column as before. Lines with even numbers on the left column are struck out, and the remaining numbers on the right are added together.\n#include <stdio.h>\nint add (int x, int y)\n{\nwhile (y!= 0)\n{\nint carry = x & y;\nx = x^y;\ny = carry << 1;\n}\nreturn x;\n}\nint main ()\n{\nint a, b, result;\nprintf (\"\\nEnter the numbers to be multiplied:\") ;\nscanf (\"%d%d\", &a, &b);\nresult = 0;\nwhile (b!= 0)\n{\nif (b & 1)\nresult = add (result, a);\na <<= 1;\nb >>= 1;\n}\nprintf (\"\\nResult: %d\", result);\nreturn 0;\n}\nOutput:-\nEnter the numbers to be multiplied: 5 7\nResult : 35",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "16 b",
+            "question_text": "Discuss about File Handling in C with syntax and suitable example",
+            "marks": 10,
+            "answer": "Answer:- Definition & Operation Mode \u2013 2 Mark\nAny Four Operations with syntax and example \u2013 4 * 2 = 8 Marks\nDefinition:\nA file is a container in computer storage devices which is used for storing output or information permanently in the form of a sequence of bytes on the disk.\nOperations on File: -\n1. fopen()\topens new or existing file\n1. fprintf()\twrite data into the file\n2. fscanf()\treads data from the file\n3. fputc()\twrites a character into the file\n4. fgetc()\treads a character from file\n5. fclose()\tclose the file\n6. fseek()\tsets the file pointer to given position\n7. fputw()\treads an integer from file\n8. getw()\treads an integer from file\n9. ftell()\treturns current position\n10. Rewind()\tsets the file pointer to the beginning of the file\nFile Opening Modes\nr - Open text file read mode. If file exists, the marker is positioned beginning.\nIf file doesn't exist, it is created.\nw- Open text file in write mode\n\u2022 If file exists, it is erased.\na- \u2022 If file exists, the marker is positioned beginning\nOpen text file in append mode\n\u2022 If file exists, the marker is positioned at end.\n\u2022 If file doesn't exist, it is created.\nAdditional Modes\n\u2022 r+ - open for reading and writing, start at beginning\n\u2022 w+ - open for reading and writing (overwrite file)\n\u2022 a+ - open for reading and writing (append if file exists)\nFile Open\nSyntax:\nFILE *fp;\nfp=fopen (\"filename\", \"'mode\");\nExample:\nspData = fopen(\u201cMYFILE.TXT\u201d, \u201cw\u201d);\nspData = fopen(\u201cA:\\MYFILE.TXT\u201d, \u201cw\u201d);\nClosing a File\nSyntax:\nint fclose(FILE *fp);\nExample:\nfclose (fp);\nfscanf:-\nSyntax:\nfscanf (fp,\"string\",identifiers);\nExample:\nFILE *fp;\nFp=fopen(\"input.txt\",\"r\"); int I;\nfscanf (fp,\"%d\",i);\nfprintf:-\nSyntax:\nfprintf (fp,\"string\",variables);\nExample:\nint I = 12;\nfloat x = 2.356; char ch = \u2018s'; FILE *fp;\nfp=fopen(\"out.txt\",\"w\");\nfprintf (fp, \"%d %f %c\", I, x, ch);\ngetc()\nSyntax:\nidentifier = getc (file pointer);\nExample:\nFILE *fp;\nfp=fopen(\"input.txt\",\"r\"); char ch;\nch = getc (fp);\nputc()\nwrite a single character to the output file, pointed to by fp.\nExample:\nFILE *fp; char ch;\nputc (ch,fp);\nEnd of File\n\u2022 There are a number of ways to test for the end-of-file condition. Another way is to use the value returned by the fscanf function:\nFILE *fptr1;\nint istatus;\nistatus = fscanf (fptr1, \"%d\", &var) ;\nif ( istatus == feof(fptr1))\n{\nprintf (\"End-of-file encountered.\\n\") ;\n}\nReading and Writing Files\n#include <stdio.h>\nint main ()\n{\nFILE *outfile, *infile ;\nint b = 5, f;\nfloat a = 13.72,\nc = 6.68, e, g;\noutfile = fopen (\"testdata\u201d, \u201cw\u201d);\nfprintf (outfile, \u201c %f %d %f\", a, b, c) ;\nfclose (outfile);\ninfile = fopen (\u201ctestdata\u201d, \u201cr\u201d) ;\nfscanf (infile,\"%f %d %f\", &e, &f, &g) ;\nprintf (\"%f %d %f \\n \u201c, a, b, c);\nprintf (\"%f %d %f \\n \u201c, e, f, g);\n}\nfread()\nDeclaration:\nsize_t fread(void *ptr, size_t size, size_t n, FILE *stream);\nRemarks:\nfread reads a specified number of equal-sized data items from an input stream into a block.\nPtr = Points to a block into which data is read\nsize = Length of each item read, in bytes\nn = Number of items read stream = file pointer\nExample:\n#include <stdio.h>\nint main()\n{\nFILE *f;\nchar buffer[11];\nif (f = fopen(\"fred.txt\", \"r\"))\n{\nfread(buffer, 1, 10, f);\nbuffer[10] = 0; fclose(f);\nprintf(\u201cfirst 10 characters of the file:\\n%s\\n\", buffer);\n}\nreturn 0;\n}\nfwrite()\nDeclaration:\nsize_t fwrite(const void *ptr, size_t size, size_t n, FILE*stream);\nRemarks:\nfwrite appends a specified number of equal-sized data items to an output file.\nPtr = Pointer to any object; the data written begins at ptr\nsize = Length of each item of data\nn =Number of data items to be appended\nstream = file pointer\nExample:\n#include <stdio.h>\nint main()\n{\nchar a[10]={'1','2','3','4','5','6','7','8','9','a'};\nFILE *fs;\nfs=fopen(\"Project.txt\",\"w\");\nfwrite(a,1,10,fs);\nfclose(fs);\nreturn 0;\n}\nfseek()\nThis function sets the file position indicator for the stream pointed to by stream or you can say it seeks a specified place within a file and modify it.\nSEEK_SET - Seeks from beginning of file\nSEEK_CUR - Seeks from current position\nSEEK_END \u2013 Seeks from end of file\nExample:\n#include <stdio.h>\nint main(){\nFILE * f;\nf = fopen(\"myfile.txt\u201d, \u201cw\u201d);\nfputs(\"Hello World\", f);\nfseek(f, 6, SEEK_SET);\nfputs(\" India\", f);\nfclose(f);\nreturn 0;}",
+            "answer_source": "provided",
+            "chapter": "Unit 3: String Basics"
+        }
+    ]
+}

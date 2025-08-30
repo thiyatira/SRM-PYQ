@@ -1,0 +1,150 @@
+{
+    "paper_title": "Set A -Answer Key CT-3 - PPS CLAT - 3 SET-A QUESTION PAPER",
+    "source": "2021-22 CT3 SetA",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "Identify the correct syntax to send a 3-dimensional array as a parameter (Assuming declaration int a[5][4][3];)\na) func(a);\nb) func(a[0][0]);\nc) func(&a);\nd) func(*a);",
+            "marks": 1,
+            "answer": "Answer: a) func(a);",
+            "answer_source": "provided",
+            "chapter": "Unit 3: String Basics"
+        },
+        {
+            "question_number": "2",
+            "question_text": "At what stage of building a C program does Pragma work?\na) Before Compilation\nb) During Compilation\nc) After Compilation\nd) During Linking",
+            "marks": 1,
+            "answer": "Answer: a) Before Compilation",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "3",
+            "question_text": "Pick out the incorrect statement with respect to NULL pointer.\na) int *ptr = NULL;\nb) NULL is a macro defined in stdio.h\nc) datatype *NULL=ptr;\nd) NULL pointer points to 0 address",
+            "marks": 1,
+            "answer": "Answer: C) datatype *NULL=ptr;",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
+        },
+        {
+            "question_number": "4",
+            "question_text": "Find the output of this C code\n#include <stdio.h>\nint main()\n{\n    int i= 97, *p = &i;\n    foo(&i);\n    printf(\"%d \", *p);\n}\nvoid foo(int *p)\n{\n    int j = 2;\n    p = &j;\n    printf(\"%d\", *p);\n}\na) 2 97\nb) 97 2\nc) 2 2\nd) 97 97",
+            "marks": 1,
+            "answer": "Answer:a) 2 97",
+            "answer_source": "provided",
+            "chapter": "Unit 3: String Basics"
+        },
+        {
+            "question_number": "5",
+            "question_text": "What is the output of this C code?\n#include <stdio.h>\nvoid main()\n{\n    int k = 5;\n    int *p = &k;\n    int **m = &p;\n    printf(\"%d%d%d\\n\", k, *p, **p);\n}\na) 5 5 5\nb) Compile time warning\nc) 5 5 0\nd) Compile time error",
+            "marks": 1,
+            "answer": "Answer:d) Compile time error",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
+        },
+        {
+            "question_number": "6",
+            "question_text": "The preprocessor directive used to give additional information to the compiler, beyond which is conveyed in the language is\na) #define\nb) #include\nc) #pragma\nd) #ifdef",
+            "marks": 1,
+            "answer": "Answer: c) #pragma",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "7",
+            "question_text": "Predict the output of the following C code\n#include <stdio.h>\nint main()\n{\n    int ary[4] = {1, 2, 3, 4};\n    printf(\"%d\\n\", *ary);\n}\na)1\nb)2\nc)3\nd)4",
+            "marks": 1,
+            "answer": "Answer: a)1",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
+        },
+        {
+            "question_number": "8",
+            "question_text": "Among the given pointers which of the following cannot be incremented?\na) int\nb) char\nc) float\nd) void",
+            "marks": 1,
+            "answer": "Answer : d)Void",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
+        },
+        {
+            "question_number": "9",
+            "question_text": "The declaration instruction for the variable 'ptr' as the pointer to array of 6 floats is\na) float *ptr[6]\nb) float [6]*ptr\nc) float(*ptr)[6]\nd) float(*ptr)(6)",
+            "marks": 1,
+            "answer": "Answer: d) float(*ptr)(6)",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
+        },
+        {
+            "question_number": "10",
+            "question_text": "The size of a union is determined by the size of the\na) First member in the union\nb) Last member in the union\nc) Biggest member in the union\nd) Sum of the sizes of all members",
+            "marks": 1,
+            "answer": "Answer: c) Biggest member in the union",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
+        },
+        {
+            "question_number": "11",
+            "question_text": "Write a macro MAX (a, b) to find the maximum of a and b",
+            "marks": 5,
+            "answer": "#include <stdio.h>\n#define MAX(a,b) ((a>b)?a:b)\nint main()\n{\n    int a,b,max;\n    printf(\"Enter first number: \");\n    scanf(\"%d\",&a);\n    printf(\"Enter second number: \");\n    scanf(\"%d\",&b);\n    max=MAX(a,b);\n    printf(\"Maximum number is:%d\\n\",max);\n    return 0;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "12",
+            "question_text": "If 'a' is pointing to 'num' and 'b' is pointing to 'a', Can you access the value of 'num' with 'b'. Justify your answer.",
+            "marks": 5,
+            "answer": "Yes. We can access the value of 'num' with 'b'.\nJustification:\nThe given statements says *a=&num and **b=&a. That means we are using Double pointer 'b' to store the address of 'a' which is in turn a pointer to store the address of 'num'. With the help of the instruction printf(\"%d\",**b); we can print the value of 'num'\nExample:\n#include <stdio.h>\nint main()\n{\n    int num=5;int *a=&num,**b=&a;\n    printf(\"num is: %d\\n\",**b);\n    return 0;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
+        },
+        {
+            "question_number": "13",
+            "question_text": "Differentiate between malloc(), calloc() and realloc().",
+            "marks": 5,
+            "answer": "Malloc()\nThis function only carries unuseful/garbage values\nFaster allocation time than calloc()\nDo not initialize the memory.\nLess secure than calloc()\nMore time-efficient.\nReturns the starting address.\nCreates and assign only a single block of memory\n\nCalloc()\nThis function only carries unuseful/garbage values\nFaster allocation time than calloc()\nDo not initialize the memory.\nLess secure than calloc()\nMore time-efficient.\nReturns the starting address.\nCreates and assign only a single block of memory",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
+        },
+        {
+            "question_number": "14",
+            "question_text": "Raja wants to add two distances in inches and feet using unions. Write a logic to implement the above scenario",
+            "marks": 5,
+            "answer": "#include <stdio.h>\nunion Distance {\n    int feet;\n    float inch;\n} d1, d2, result;\n\nint main() {\n    // take first distance input\n    printf(\"Enter 1st distance\\n\");\n    printf(\"Enter feet: \");\n    scanf(\"%d\", &d1.feet);\n    printf(\"Enter inch: \");\n    scanf(\"%f\", &d1.inch);\n\n    // take second distance input\n    printf(\"\\nEnter 2nd distance\\n\");\n    printf(\"Enter feet: \");\n    scanf(\"%d\", &d2.feet);\n    printf(\"Enter inch: \");\n    scanf(\"%f\", &d2.inch);\n\n    // adding distances\n    result.feet = d1.feet + d2.feet;\n    result.inch = d1.inch + d2.inch;\n\n    // convert inches to feet if greater than 12\n    while (result.inch >= 12.0) {\n        result.inch = result.inch - 12.0;\n        ++result.feet;\n    }\n\n    printf(\"\\nSum of distances = %d\\'-%.1f\\\"\", result.feet,\n           result.inch);\n    return 0;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
+        },
+        {
+            "question_number": "15 a",
+            "question_text": "Elaborate on passing array elements to Functions with an example program.",
+            "marks": 10,
+            "answer": "Answer:\n*\tArrays can be passed as a parameter to a function.\n*\tWhen it is being passed, the name of the array is enough as an argument instead passing it as an entire array.\n*\tSince the name of the array itself holds the address, no need to include & in the function call.\n*\tSince it passes address, in case of any modification occurs in called function automatically reflects back in the calling function.\n*\tMultidimensional arrays are also allowed to be passed as arguments to functions.\n\u2022\tThe first dimension is omitted when a multi dimensional array is used as a formal parameter in a function.\nFormal and Actual Parameters One-Dimensional Array:\nActual Parameters: int a[10];\nFunction call: add(a); here, a is the base address of the array\nadd is the function\nFormal Parameters: within the function body\nvoid add(int a[])\n{\n...\n}\nint a[] - is a formal parameter, since it is a on dimensional array size doesn't matter.\n\nFormal and Actual Parameters in Multi Dimensional Array:\nActual Parameters: int a[10][10];\nFunction call: add(a); here, a is the base address of the array\n'a' b is the base address of the array 'b' add is the function\nFormal Parameters: within the function body void add(int a[][10])\n{\n...\n}\nint a[][10] - is a formal parameter, the first dimension is omitted only column value is taken into the account.\n\nPassing Single element of an array:\nExample :\nint a[5]={0,1,2,3,4};\nFunction call:\nadd(a[1]);\nHere, add is the function name, a[1] is the second element of the array, value 1 is passed to the array.\n\nPassing an entire array to a function:\nint main()\n{\nint a[50],i,n;\nscanf(\"%d\",&n);\nfor(i=1;i<=n;i++)\nscanf(\"%d\",&a[i]);\nadd(a,n);\nfor(i=1;i<=n;i++)\nprintf(\"%d\\n\",a[i]);\nreturn 0;\n}\nvoid add(int a[],int n)\n{\nint r;\nfor(r=1;r<=n;r++)\n{\na[r]=a[r]+5;\n}\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 3: String Basics"
+        },
+        {
+            "question_number": "15 b",
+            "question_text": "Develop a program in C to print a string in reverse using a pointer",
+            "marks": 10,
+            "answer": "Answer:\n#include <stdio.h>\n#include <stdlib.h>\n#include<string.h>\nint main()\n{\n    char str1[100],str2[100];\n    char *p1,*p2;\n    printf(\"Enter a String\\n\");\n    gets(str1);\n    p1=str1+strlen(str1)-1;\n    p2=str2;\n    while(p1>=str1)\n    {\n        *p2=*p1;\n        p2++;\n        p1--;\n    }\n    *p2='\\0';\n    printf(\"Original String: %s\\n\",str1);\n    printf(\"Reverse String: %s\",str2);\n    return 0;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 3: String Basics"
+        },
+        {
+            "question_number": "16 a",
+            "question_text": "Rahul wants to check whether two files named A.TXT and B.TXT are identical or not. Use suitable component to solve the above problem.",
+            "marks": 10,
+            "answer": "#include<stdio.h>\nint main() {\n    FILE *fp1, *fp2;\n    int ch1, ch2;\n    char fname1[40], fname2[40];\n\n    printf(\"Enter name of first file :\");\n    gets(fname1);\n    printf(\"Enter name of second file:\");\n    gets(fname2);\n\n    fp1 = fopen(fname1, \"r\");\n    fp2 = fopen(fname2, \"r\");\n\n    if (fp1 == NULL) {\n        printf(\"Cannot open %s for reading \", fname1);\n        exit(1);\n    } else if (fp2 == NULL) {\n        printf(\"Cannot open %s for reading \", fname2);\n        exit(1);\n    } else {\n        ch1 = getc(fp1);\n        ch2 = getc(fp2);\n\n        while ((ch1 != EOF) && (ch2 != EOF) && (ch1 == ch2)) {\n            ch1 = getc(fp1);\n            ch2 = getc(fp2);\n        }\n\n        if (ch1 == ch2)\n            printf(\"Files are identical n\");\n        else if (ch1 != ch2)\n            printf(\"Files are Not identical n\");\n\n        fclose(fp1);\n        fclose(fp2);\n        return (0);\n    }\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "16 b",
+            "question_text": "A company wants to maintain employee database name, age, salary, date of birth and Aadhar no. Write a program to read and display the above employee information using suitable method.",
+            "marks": 10,
+            "answer": "include <stdio.h>\n/*structure declaration*/\nstruct employee {\n    char name[30];\n    int age;\n    float salary;\n    char Aadharno[30];\n    int dob;\n};\n\nint main()\n{\n    struct employee emp;\n    printf(\"\\nEnter details :\\n\");\n    printf(\"Name?:\");\n    gets(emp.name);\n    printf(\"age:\");\n    scanf(\"%d\",&emp.age);\n    printf(\"Salary :\");\n    scanf(\"%f\",&emp.salary);\n    printf(\"Aadharno :\");\n    gets(emp.Aadharno);\n    printf(\"dob\");\n    scanf(\"%d\",&emp.dob);\n\n    printf(\"\\nEntered detail is:\");\n    printf(\"Name: %s\",emp.name);\n    printf(\"age: %d\",emp.age);\n    printf(\"Salary: %f\\n\",emp.salary);\n    printf(\"Aadharno:%s\",emp.Aadharno);\n    return 0;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        }
+    ]
+}

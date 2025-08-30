@@ -1,0 +1,134 @@
+{
+    "paper_title": "Programming For Problem Solving (SRM Institute of Science and Technology)",
+    "source": "2022-23 CT1 SetD",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "Which of the following is not a valid C variable name?\na) int age;\nb) float salary;\nc) char ch;\nd) int $main;",
+            "marks": 1,
+            "answer": "D",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "2",
+            "question_text": "What is the output of the following code snippet?\n#include <stdio.h>\nint main()\n{\nfloat s; double a; char b;\nprintf(\"%d\", sizeof(s)+sizeof(a)*sizeof(b));\nreturn 0;\n}\na) 14\nb) 13\nc) 12\nd) Compilation Error",
+            "marks": 1,
+            "answer": "C",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "3",
+            "question_text": "Choose the correct answer.\n#include <stdio.h>\nint main()\n{\nint value = 350;\nint value = 892;\nprintf(\"SRMIST!%d\",value);\nreturn 0;\n}\na) SRMIST!350\nb) Redefinition of value\nc) SRMIST!892\nd) SRMIST! Followed by a junk value.",
+            "marks": 1,
+            "answer": "B [Since the value is already defined. Redefining it results in an error]",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "4",
+            "question_text": "#include <stdio.h>\nint main()\n{\nint x, y = 5, z = 5;\nx = y == z;\nprintf(\"%d\", x);\ngetchar();\nreturn 0;\n}\na) 0\nb) 1\nc) 5\nd) Compile error",
+            "marks": 1,
+            "answer": "B",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "5",
+            "question_text": "After working of the prefix and postfix operators, select all the correct statements for the code given below:\nvoid main() {\nint x, y, z, k;\nx = 10; y = -x; z = x++; k = ++x;\n}\na) Value of y will be -10 and k will be 12.\nb) Value of z will be 11\nc) Value of k will be 10 and k will be 11\nd) Value of k will be 11",
+            "marks": 1,
+            "answer": "A",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "6",
+            "question_text": "#include <stdio.h>\n// Assume base address of \"GeeksQuiz\" to be 2000\nint main()\n{\nprintf(5 + \"GeeksQuiz\");\nreturn 0;\n}\na) GeeksQuiz\nb) Quiz\nc) 2005\nd) Compile time error",
+            "marks": 1,
+            "answer": "B",
+            "answer_source": "provided",
+            "chapter": "Unit 3: String Basics"
+        },
+        {
+            "question_number": "7.",
+            "question_text": "C is a ____ language\na) High Level\nb) Low Level\nc) Middle Level\nd) Machine Level",
+            "marks": 1,
+            "answer": "C",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "8.",
+            "question_text": "The equality operator is represented by\na) :=\nb).EQ.\nc) =\nd) ==",
+            "marks": 1,
+            "answer": "D",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "9.",
+            "question_text": "What will be the output of the express 11 ^ 5?\na) 5\nb) 6\nc) 11\nd) 14",
+            "marks": 1,
+            "answer": "D [XOR: 1^1=0,0^0=0, 1^0=1 so, 11--->1011 5---> 0101 ------ 1110 Which is equivalent of 14 in decimal]",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "10.",
+            "question_text": "The operator + in a+=4 means\na) a=a+4\nb) a+4=a\nc) a=4\nd) a=4+4",
+            "marks": 1,
+            "answer": "A",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "11",
+            "question_text": "#include <stdio.h>\nint main() {\nchar operator = '+';\nint num1 =12;\nint num2 = 10;\nint result = (operator = ='+') ? (----------) : (-------------);\n// Complete the statement by using ternary operator to get the result = 22, if not result = 2.\nprintf(\"%d\", result);\nreturn 0;\n}",
+            "marks": 2,
+            "answer": "int result = (operator =='+') ? (num1 + num2) : (num1 \u2013 num2);",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "12",
+            "question_text": "Illustrate the available datatype modifiers in C?",
+            "marks": 2,
+            "answer": "\u2022 signed - It is default modifier of int and char data type if no modifier is specified. It says that user can store negative or positive values.\n\u2022 unsigned - It is used on int and char data type. It says that user can store only positive values.\n\u2022 short - It limits user to store small int values and occupies 2 bytes of memory space in every operating system. It can be used only on integer data type.\n\u2022 long - This can be used to increased size of the int or double data types to 2 more bytes.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "13",
+            "question_text": "Pick the correct one from the following declaration is not supported by C language?\na) String str;\nb) char *str;\nc) float str = 3e2;\nd) Both String str; & float str = 3e2;",
+            "marks": 2,
+            "answer": "A",
+            "answer_source": "provided",
+            "chapter": "Unit 3: String Basics"
+        },
+        {
+            "question_number": "14",
+            "question_text": "Conclude the output of the following c program?\n#include <stdio.h>\nint main()\n{\nint a=5;\nint b=10;\nint c;\nc=a+b;\nprintf(\"%i\", c);\nreturn 0;\n}\n(A) 5\n(B) 10\n(C) 15\n(D) Compilation error",
+            "marks": 2,
+            "answer": "(C)",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "15",
+            "question_text": "Rushanth is playing with a tennikoit ball (Circle) He knows the radius of the ball. Help him to find the area and perimeter of the ball using a C program.\nHint:\nPerimeter of a circle = 2\u03c0r\nArea of a circle = \u03c0r\u00b2",
+            "marks": 2,
+            "answer": "Answer:\nPictorial Presentation:\nC = 2\u3160r\ncircumference\nradius\nd (diameter)\nArea\nA = \u03c0r\u00b2\nw3resource.com\n#include <stdio.h>\nint main() {\nint radius;\nfloat area, perimeter;\nradius = 6;\nperimeter = 2*3.14*radius;\nprintf(\"Perimeter of the Circle = %f inches\\n\", perimeter);\narea = 3.14*radius*radius;\nprintf(\"Area of the Circle = %f square inches\\n\", area);\nreturn(0);\n}\nOutput: Perimeter of the Circle = 37.680000 inches\nArea of the\nCircle = 113.040001 square inches",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "16",
+            "question_text": "Mithran and Niranjan are two friends. Another friend Muthu is facing some issue to pay his tuition fees. Therefore, Mithran and Niranjan are giving some amount to Muthu to pay the fees. Write a C program to calculate how much amount Muthu is going to be paid. In addition, draw the flow chart for the same.",
+            "marks": 5,
+            "answer": "Answer:\n#include <stdio.h>\nint main() {\nint num1, num2,num3, sum;\nprintf(\"Enter three integers: \");\n//Storing user input into variable num1 & num2\nscanf(\"%d%d%d\", &num1,&num2,&num3);\n// Adding two input numbers\nsum = num1 + num2 + num3;\nprintf(\"Sum of %d and %d and %d is: %d\", num1,\nnum2, num3, sum);\n}\nreturn 0;\nOutput:\nEnter three integers: 1\n6\n9\nSum of 1 and 6 and 9 is: 16\nFlowchart: Provided as an image in the original document, depicting: START -> Read a,b,c values -> Sum = a+b+c -> STOP.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        }
+    ]
+}

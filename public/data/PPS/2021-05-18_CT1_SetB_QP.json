@@ -1,0 +1,206 @@
+{
+    "paper_title": "18CSS101J-PPS CT1 Questions",
+    "source": "2021-05-18 CT1 SetB",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "To represent process flow, which of the following is used?\na) Rectangle\nb) Diamond\nc) Circle\nd) Parallelogram",
+            "marks": 1,
+            "answer": "a) Rectangle. In flowcharts, a Rectangle symbol is used to indicate input or output operations.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming - Writing algorithms & Pseudo code"
+        },
+        {
+            "question_number": "2",
+            "question_text": "In the below mentioned operators, which of the following has the highest precedence?\na) Unary +\nb) *\nc) >=\nd) =",
+            "marks": 1,
+            "answer": "a) Unary +. In C operator precedence, unary operators (like unary '+', unary '-') have higher precedence than multiplicative operators ('*'), relational operators ('>='), and assignment operators ('=').",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Arithmetic, Relational and logical Operators - Operator Precedence"
+        },
+        {
+            "question_number": "3",
+            "question_text": "Which of the following is a valid assignment operator?\na) +=\nb)\nc) *=\nd) All of the mentioned",
+            "marks": 1,
+            "answer": "d) All of the mentioned. '+=' (add and assign), '=' (simple assignment), and '*=' (multiply and assign) are all valid assignment operators in C.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Comma, Arrow and Assignment operator, Bitwise and Size-of operator"
+        },
+        {
+            "question_number": "4",
+            "question_text": "Give the correct answer for the following C code?\n#include <stdio.h>\nvoid main()\n{\nint x = 4, y, z;\ny = --x;\nz = x--;\nprintf(\"%d%d%d\", x, y, z);\n}",
+            "marks": 1,
+            "answer": "d) 233.\nExplanation:\n1. `int x = 4, y, z;` initializes `x` to 4. `y` and `z` are uninitialized.\n2. `y = --x;` (pre-decrement) decrements `x` to 3, then assigns this new value to `y`. So, `x` is 3, `y` is 3.\n3. `z = x--;` (post-decrement) assigns the current value of `x` (which is 3) to `z`, then decrements `x`. So, `z` is 3, and `x` becomes 2.\n4. `printf(\"%d%d%d\", x, y, z);` prints the final values: `x` (2), `y` (3), `z` (3). The output is 233.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Increment and decrement operator - Expressions with pre / post increment operator"
+        },
+        {
+            "question_number": "5",
+            "question_text": "Mention the variable name which is not valid in C?\na) int number;\nb) float rate;\nc) int variable_count;\nd) int $main;",
+            "marks": 1,
+            "answer": "d) int $main;. Variable names in C must start with an alphabet or an underscore, and can contain alphanumeric characters or underscores. Special characters like '$' are not allowed in identifiers.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Variables and identifiers, Constants, Keywords"
+        },
+        {
+            "question_number": "6",
+            "question_text": "Which is not a basic data type ?\na) float\nb) int\nc) real\nd) char",
+            "marks": 1,
+            "answer": "c) real. `float`, `int`, and `char` are fundamental data types in C. 'real' is a general mathematical term for floating-point numbers but not a keyword for a data type in C.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Numeric Data types: integer, floating point Non-Numeric Data types: char and string"
+        },
+        {
+            "question_number": "7",
+            "question_text": "Name the entities whose values can be changed?\na) Constants\nb) Variables\nc) Modules\nd) Tokens",
+            "marks": 1,
+            "answer": "b) Variables. Variables are named storage locations in memory whose values can be modified during program execution.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Variables and identifiers, Constants, Keywords - Values, Names, Scope, Binding, Storage Classes"
+        },
+        {
+            "question_number": "8",
+            "question_text": "Name the father of C Language?\na) James\nb) Dr.E.F.Codd\nc) Dennis Ritchie\nd) Bjarne Stroustrup",
+            "marks": 1,
+            "answer": "c) Dennis Ritchie. Dennis Ritchie developed the C programming language at Bell Labs.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "9",
+            "question_text": "Which among the following options is true for the variable names in C?\na) They can contain alphanumeric characters as well as special characters\nb) It is not an error to declare a variable to be one of the keywords(like goto,\nstatic)\nc) Variable names can't start with a digit\nd) Variable can be of any length",
+            "marks": 1,
+            "answer": "c) Variable names can't start with a digit. Variable names must begin with an alphabet or an underscore. Option (a) is false (only underscore allowed as special char). Option (b) is false (keywords are reserved). Option (d) is false (only a certain number of initial characters are significant, not arbitrary length).",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Variables and identifiers, Constants, Keywords"
+        },
+        {
+            "question_number": "10",
+            "question_text": "Which of the following can never be a variable name in C?\na) friend\nb) value_ab\nc) %number\nd) export",
+            "marks": 1,
+            "answer": "c) %number. Variable names in C cannot contain special characters like '%'. 'friend' and 'export' are not C keywords and are valid identifiers (though 'friend' is a keyword in C++). 'value_ab' is a valid identifier.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Variables and identifiers, Constants, Keywords"
+        },
+        {
+            "question_number": "11",
+            "question_text": "What is short int in C programming?\na) Basic datatype of C\nb) Qualifier\nc) short is the qualifier and int is the basic data type\nd) All of the mentioned",
+            "marks": 1,
+            "answer": "c) short is the qualifier and int is the basic data type. `short` is a type modifier or qualifier that alters the base data type `int` to specify a smaller integer type.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Numeric Data types: integer, floating point Non-Numeric Data types: char and string"
+        },
+        {
+            "question_number": "12",
+            "question_text": "An algorithm is not\na) a set of instructions used for solving problems in a step-by-step manner\nb) Ordered sequence of steps\nc) Description of a process independent of any programming language.\nd) Infinite number of steps",
+            "marks": 1,
+            "answer": "d) Infinite number of steps. A key characteristic of an algorithm is that it must terminate after a finite number of steps.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming - Writing algorithms & Pseudo code"
+        },
+        {
+            "question_number": "13",
+            "question_text": "Output of this C code is ?\nint main()\n{\nchar chr;\nchr = 128;\nprintf(\"%d\\n\", chr);\nreturn 0;\n}",
+            "marks": 1,
+            "answer": "c) Depends on the compiler. The `char` type can be signed or unsigned depending on the compiler and architecture. If `char` is signed, its typical range is -128 to 127, so assigning 128 would result in an overflow, often wrapping to -128. If `char` is unsigned, its typical range is 0 to 255, so 128 would be stored as 128. When printed with `%d`, the `char` value is promoted to `int`. Thus, the output is implementation-defined.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Numeric Data types: integer, floating point Non-Numeric Data types: char and string"
+        },
+        {
+            "question_number": "14",
+            "question_text": "Which of the following is not a storage class in C?\na) automatic storage class\nb) register storage class\nc) external storage class\nd) internal storage class",
+            "marks": 1,
+            "answer": "d) internal storage class. The standard storage classes in C are `auto`, `register`, `static`, and `extern`. 'internal' is not a standard C storage class.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Values, Names, Scope, Binding, Storage Classes"
+        },
+        {
+            "question_number": "15",
+            "question_text": "Single line comments are denoted by ____.\na) //\nb) \\\\\nc) /*\nd) */",
+            "marks": 1,
+            "answer": "a) //. In C (and C++), `//` denotes a single-line comment. `/*` and `*/` are used for multi-line comments.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Single line and multiline comments"
+        },
+        {
+            "question_number": "16",
+            "question_text": "Many features of C were derived from an earlier language called ____.\na) FORTRAN\nb) BASIC\nc) B\nd) PASCAL",
+            "marks": 1,
+            "answer": "c) B. The C programming language evolved from the B language, which itself was a descendant of BCPL.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "17",
+            "question_text": "Name the method which uses a list of well-defined instructions to complete a task\na) Algorithm\nb) Flowchart\nc) Programs\nd) Functions",
+            "marks": 1,
+            "answer": "a) Algorithm. An algorithm is a precise sequence of steps to solve a problem or accomplish a task.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Problem solving through programming - Writing algorithms & Pseudo code"
+        },
+        {
+            "question_number": "18",
+            "question_text": "What will be the output of the following pseudocode?\nInteger a, b\nSet a = 15, b = 7\na = a mod (a - 3)\nb = b mod (b - 3)\na = a mod 1\nb = b mod 1\nPrint a + b",
+            "marks": 1,
+            "answer": "d) 0.\nExplanation:\n1. `Set a = 15, b = 7`\n2. `a = a mod (a - 3)` => `a = 15 mod (15 - 3)` => `a = 15 mod 12` => `a = 3`\n3. `b = b mod (b - 3)` => `b = 7 mod (7 - 3)` => `b = 7 mod 4` => `b = 3`\n4. `a = a mod 1` => `a = 3 mod 1` => `a = 0` (Any integer modulo 1 is 0).\n5. `b = b mod 1` => `b = 3 mod 1` => `b = 0`.\n6. `Print a + b` => `Print 0 + 0` => `0`.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Problem solving through programming - Writing algorithms & Pseudo code"
+        },
+        {
+            "question_number": "19",
+            "question_text": "Resolving errors in a program is known as...\na) Debugging\nb) Refixing\nc) Error Checking\nd) Problem Solving",
+            "marks": 1,
+            "answer": "a) Debugging. Debugging is the process of identifying, analyzing, and removing errors (bugs) from a computer program.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "20",
+            "question_text": "C Programming was created at ?\na) MIT University\nb) AT&T Bell Laboratory\nc) L&T Laboratory\nd) Haward University",
+            "marks": 1,
+            "answer": "b) AT&T Bell Laboratory. The C programming language was developed by Dennis Ritchie at Bell Labs (which was part of AT&T) in the early 1970s.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "21",
+            "question_text": "A box that can represent two different conditions.\na) Rectangle\nb) Diamond\nc) Circle\nd) Parallelogram",
+            "marks": 1,
+            "answer": "b) Diamond. In flowcharts, a diamond shape is used to represent a decision point where a condition is evaluated, leading to two or more possible paths.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming - Writing algorithms & Pseudo code"
+        },
+        {
+            "question_number": "22",
+            "question_text": "What is the output of this statement \"printf(\"%d\", (p++))\"?\na) value of (p+1)\nb) current value of p\nc) garbage value\nd) Error.",
+            "marks": 1,
+            "answer": "b) current value of p. The post-increment operator `p++` means the value of `p` is used in the expression *first*, and then `p` is incremented. So, `printf` will display the value of `p` before it is incremented.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Increment and decrement operator - Expressions with pre / post increment operator"
+        },
+        {
+            "question_number": "23",
+            "question_text": "Find the output of the program?\nvoid main()\n{\nint n=5;\nfloat n=5;\nprintf(\"%d\",x);\n}",
+            "marks": 1,
+            "answer": "c) Compilation Error.\nExplanation:\n1. Redeclaration of `n`: You cannot declare two variables with the same name (`n`) in the same scope in C, even if they have different types (`int` and `float`). This will result in a compilation error.\n2. Undefined variable `x`: The `printf` statement attempts to print the value of `x`, but `x` is not declared or initialized anywhere in the program. This will also cause a compilation error.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Variables and identifiers, Constants, Keywords - Numeric Data types: integer, floating point Non-Numeric Data types: char and string"
+        },
+        {
+            "question_number": "24",
+            "question_text": "What will this program print?\nmain()\n{\nint i = 2;\n{\nint i = 4, j = 5;\nprintf(\"%d %d\", i, j);\n}\nprintf(\"%d %d\", i, j);\n}",
+            "marks": 1,
+            "answer": "a) 4525.\nExplanation:\n1. `int i = 2;`: An `int` variable `i` is declared and initialized to 2 in the `main` function's scope.\n2. Inside the inner block `{}`:\n   `int i = 4, j = 5;`: A *new* `int` variable `i` (shadowing the outer `i`) is declared and initialized to 4. A new `int` variable `j` is declared and initialized to 5. These are local to the inner block.\n   `printf(\"%d %d\", i, j);`: This prints the `i` from the inner block (4) and `j` (5). Output: `4 5`.\n3. After the inner block, the inner `i` and `j` are destroyed.\n4. `printf(\"%d %d\", i, j);`: In this line, `i` refers to the outer `i` (which is still 2). However, `j` was only declared within the inner block and is now out of scope, making this line a **compile-time error** in strict C. Assuming the question implies that 'j' was declared outside the block (e.g., `int i = 2, j;` then `j = 5;` inside), then `j` would persist and its value would be 5. In this interpreted scenario, the output would be `2 5`.\nCombining both print statements under this interpretation gives `4 5 2 5` (represented as 4525). Given the MCQ options, this interpretation is likely intended despite the strict C error.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Values, Names, Scope, Binding, Storage Classes"
+        },
+        {
+            "question_number": "25",
+            "question_text": "How many bytes does \"int = D\" use?\n1. 0\n2. 1\n3. 2 or 4\n4. 10",
+            "marks": 1,
+            "answer": "3) 2 or 4. The size of an `int` data type in C is implementation-defined. It typically occupies 2 bytes on 16-bit systems or 4 bytes on 32-bit and 64-bit systems. The `= D` part of the question appears to be extraneous or a typo, as it's syntactically incorrect in this context; the question is about the size of the `int` type itself.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Numeric Data types: integer, floating point Non-Numeric Data types: char and string"
+        }
+    ]
+}

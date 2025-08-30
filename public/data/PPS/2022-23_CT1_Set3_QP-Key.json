@@ -1,0 +1,142 @@
+{
+    "paper_title": "21CSS101J: Programming for Problem Solving",
+    "source": "2022-23 CT1 Set3",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "Every C program consists of __________ function(s).\n(a) Only one\n(b) Only two\n(c) One or two\n(d) One or many",
+            "marks": 1,
+            "answer": "(d) One or many",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to C: Structure of the C program"
+        },
+        {
+            "question_number": "2",
+            "question_text": "Which of the following is not a correct variable type?\n(a) Float\n(b) Real\n(c) Int\n(d) Double",
+            "marks": 1,
+            "answer": "(b) Real",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Numeric Data types: integer, floating point"
+        },
+        {
+            "question_number": "3",
+            "question_text": "Which of the following is not a valid C variable name?\na) int number;\nb) float rate;\nc) intvariable_count;\nd) int $main;",
+            "marks": 1,
+            "answer": "d) int $main;",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Variables and identifiers, Constants, Keywords"
+        },
+        {
+            "question_number": "4",
+            "question_text": "Which of these is NOT a relational or logical operator?\n(a) =\n(b) ||\n(c) <=\n(d) !=",
+            "marks": 1,
+            "answer": "(a) =",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Arithmetic, Relational and logical Operators"
+        },
+        {
+            "question_number": "5",
+            "question_text": "What will be the output of the following code snippet?\n\n#include <stdio.h>\nint main() {\nint a = 3, b = 5;\nint t = a;\na = b;\nb = t;\nprintf(\"%d %d\", a, b);\nreturn 0;\n}\n(a) 3 5\n(b) 3 3\n(c) 5 5\n(d) 5 3",
+            "marks": 1,
+            "answer": "(d) 5 3",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Input and output statements. Variables and identifiers"
+        },
+        {
+            "question_number": "6",
+            "question_text": "What is the output of the following code snippet?\n\nint main() {\nint sum = 2 + 4 / 2 + 6 * 2;\nprintf(\"%d\", sum);\nreturn 0;\n}\n(a) 2\n(b) 15\n(c) 16\n(d) 18",
+            "marks": 1,
+            "answer": "(d) 18",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Operator Precedence"
+        },
+        {
+            "question_number": "7",
+            "question_text": "What will be the output of the following code snippet?\n\n#include <stdio.h>\nint main() {\nint a = 3;\nint res = a++ + ++a + a++ + ++a;\nprintf(\"%d\", res);\n}\n(a) 12\n(b) 24\n(c) 20\n(d) 18",
+            "marks": 1,
+            "answer": "(b) 24",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Expressions with pre / post increment operator"
+        },
+        {
+            "question_number": "8",
+            "question_text": "Which of the following is true for variable names in C?\na) They can contain alphanumeric characters as well as special characters\nb) It is not an error to declare a variable to be one of the keywords(like goto, static)\nc) Variable names cannot start with a digit\nd) Variable can be of any length",
+            "marks": 1,
+            "answer": "c) Variable names cannot start with a digit",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Variables and identifiers, Constants, Keywords"
+        },
+        {
+            "question_number": "9",
+            "question_text": "Operator % in C Language is called.?\n(a) Percentage Operator\n(b) Quotient Operator\n(c) Modulus\n(d) Division",
+            "marks": 1,
+            "answer": "(c) Modulus",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Arithmetic, Relational and logical Operators"
+        },
+        {
+            "question_number": "10",
+            "question_text": "What will be the output of the following code snippet?\n\nvoid solve() {\nprintf(\"%d \", 9 / 2);\nprintf(\"%f\", 9.0 / 2);\n}\n(a) 4 4.5000\n(b) 4 4\n(c) 4.500 4.500\n(d) 4.5 4.50",
+            "marks": 1,
+            "answer": "(a) 4 4.5000",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Numeric Data types: integer, floating point"
+        },
+        {
+            "question_number": "B-1",
+            "question_text": "Define keyword, constant and variable.",
+            "marks": 2,
+            "answer": "Keywords\nEvery word in a C program is classified as either a keyword or an identifier. All keywords have fixed meanings predefined in the language and these meanings can not be changed.\n\nIdentifier / Literals\nIn programming languages, constants are usually called as literals and variables are called as identifiers.\n\nConstants / Variables\nAs name suggests, a constant is an entity whose value doesn't change during the course of program execution. A variable, on the other hand, is an entity whose value may change during the course of program execution.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Variables and identifiers, Constants, Keywords"
+        },
+        {
+            "question_number": "B-2",
+            "question_text": "Why do we use header files?",
+            "marks": 2,
+            "answer": "A header file is a file with extension .h which contains C function declarations and macro definitions to be shared between several source files. There are two types of header files:\n\n\u27a4 The files that the programmer writes (user defined)\n\u27a4 The files that comes with your compiler.(System header files)\n\nEach header file contains information (or declarations) for a particular group of functions. Like stdio.h header file contains declarations of standard input and output functions available in C which is used for get the input and print the output. Similarly, the header file math.h contains declarations of mathematical functions available in C.\n\nWhen we want to use any function in our c program then first we need to import their definition from c library, for importing their declaration and definition we need to include header file in program by using #include. Header file include at the top of any C program.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to C: Structure of the C program"
+        },
+        {
+            "question_number": "B-3",
+            "question_text": "What is variable? Give the rules for variable declaration.",
+            "marks": 2,
+            "answer": "A variable name can start with the alphabet, and underscore only. It can't start with a digit. No whitespace is allowed within the variable name. A variable name must not be any reserved word or keyword, e.g. int, goto, etc.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Variables and identifiers, Constants, Keywords"
+        },
+        {
+            "question_number": "B-4",
+            "question_text": "Write a C program to check whether the person is eligible to vote.",
+            "marks": 2,
+            "answer": "#include<stdio.h>\nint main() {\nint age;\nprintf(\"Enter your age\\n\");\nscanf(\"%d\", &age);\n\n(age >= 18) ? printf(\"Yes, you are eligible for voting!\"): printf(\"You, you are not eligible for voting!\");\n\nreturn 0;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Condition Operators"
+        },
+        {
+            "question_number": "B-5",
+            "question_text": "Write a C program to find the largest of three numbers",
+            "marks": 2,
+            "answer": "\u2022 #include <stdio.h>\n\u2022 int a, b, c, big;\n\u2022 printf(\"Enter three numbers : \");\n\u2022 scanf(\"%d %d %d\", &a, &b, &c);\n\u2022 big = a > b ? (a > c?a:c): (b > c ? b : c) ;\n\u2022 printf(\"\\nThe biggest number is : %d\", big) ;\n\u2022 }",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Condition Operators"
+        },
+        {
+            "question_number": "C-1A",
+            "question_text": "Write a program that prints the numbers 1 to 4 on the same line. Write the program using the following methods.\na) Using one printf statement with no conversion specifiers.\nb) Using one printf statement with four conversion specifiers.\nc) Using four printf statements.",
+            "marks": 5,
+            "answer": "#include <stdio.h>\n\nint main() {\nint x, y, z, a;\n\n// a\nprintf( \"1, 2, 3, 4\\n\");\n\nx = 1;\ny = 2;\nz = 3;\na = 4;\n\n// b\nprintf(\"%d,%d, %d %d\\n\", x, y, z, a);\n\n// c\nprintf(\"1, \");\nprintf(\"2, \");\nprintf(\"3, \");\nprintf(\"4\\n\");\n\nreturn 0;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Input and output statements"
+        },
+        {
+            "question_number": "C-1B",
+            "question_text": "Display the following checkerboard pattern with eight Printf statementsand then display the same pattern with as fewPrintf statements as possible.\n\n********\n********\n********\n********\n********\n********\n********\n********",
+            "marks": 5,
+            "answer": "int main()\n{\nprintf(\"********\\n\");\nprintf(\"********\\n\");\nprintf(\"********\\n\");\nprintf(\"********\\n\");\nprintf(\"********\\n\");\nprintf(\"********\\n\");\nprintf(\"********\\n\");\nprintf(\"********\\n\");\n\nprintf(\"\\n\\n\");\n\nprintf(\"********\\n********\\n********\\n********\\n********\\n********\\n********\\n********\\n\");\n\nreturn 0;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Input and output statements"
+        }
+    ]
+}

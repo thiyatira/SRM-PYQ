@@ -1,0 +1,142 @@
+{
+    "paper_title": "Pps ct 1 set 2 - Pyqs for CT",
+    "source": "2022-23 CT1",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "Which one of the following has the least precedence?\nA. ++\nB. &&\nC. ()\nD. ,",
+            "marks": 1,
+            "answer": "D. The comma operator (`,`) has the lowest precedence among the given options in C. Parentheses `()` are used for grouping and have the highest precedence. The `++` (increment) is a unary operator with high precedence. `&&` (logical AND) has lower precedence than unary operators but higher than the comma operator.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "2",
+            "question_text": "Identify\nthecorrectorderofevaluationfortheexpressionD=5\n0+12* 4/32% 4-10\na. */%+- =\nb. =*/%+- \nc. /*%-+= \nd. %/- +=*",
+            "marks": 1,
+            "answer": "A. The correct order of evaluation for the expression `D = 50 + 12 * 4 / 32 % 4 - 10` (following standard C operator precedence and associativity) is as follows:\n1. Multiplication (`*`), Division (`/`), Modulo (`%`) are evaluated first, from left to right, due to their higher precedence.\n2. Addition (`+`), Subtraction (`-`) are evaluated next, from left to right.\n3. Assignment (`=`) is evaluated last, as it has the lowest precedence among these operators.\nTherefore, the order of operator evaluation is `*/%+- =`.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "3",
+            "question_text": "Identify which is not a valid C variable name?\nA. int number;\nB. float rate;\nC. int variable_count;\nD. int$main;",
+            "marks": 1,
+            "answer": "D. `int$main;` is not a valid C variable name. C variable names (identifiers) must start with an alphabet or an underscore (`_`), and can contain letters, digits, or underscores. Special characters like `$` are not allowed in C identifiers.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "4",
+            "question_text": "The format specifier that is used to read or write a character IS\nA. %f\nB. %d\nC. %c\nD. %s",
+            "marks": 1,
+            "answer": "C. The format specifier `%c` is used in C's `printf()` and `scanf()` functions to read or write a single character.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "5",
+            "question_text": "What is the result of logical or relational expression in C?\na) True or False\nb) 0 or 1\nc) 0 if an expression is false and any positive number if an expression is true\nd) false if 0",
+            "marks": 1,
+            "answer": "B. In C, logical and relational expressions evaluate to `0` for false and `1` for true. C does not have explicit `True` or `False` boolean types; instead, it uses integer values where `0` is false and any non-zero value (typically `1` for true results) is considered true.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "6",
+            "question_text": "The following operator type is used to compare two values\nA. Unary\nB. Relational\nC. Assignment\nD. Equal",
+            "marks": 1,
+            "answer": "B. Relational operators are used to compare two values. Examples include `==` (equal to), `!=` (not equal to), `<` (less than), `>` (greater than), `<=` (less than or equal to), and `>=` (greater than or equal to). While `Equal` (referring to `==`) is a specific operator, `Relational` is the *type* of operator used for comparison.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "7",
+            "question_text": "The size of() operator is a ____ type of operator used to calculate the size of the data types\nA. Unary\nB. Binary\nC. Relational\nD. Logical",
+            "marks": 1,
+            "answer": "A. The `sizeof()` operator is a unary operator because it takes only one operand (either a type name or an expression) to determine its size in bytes.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "8",
+            "question_text": "Identify the invalid expression\nA. Result = a++ -b * 2;\nB. Result = ++a * 5;\nC. Result =/ 4;\nD. Result = 2, 4",
+            "marks": 1,
+            "answer": "D. The expression `Result = 2, 4` is syntactically valid C code due to the comma operator. The assignment `Result = 2` occurs first (due to higher precedence of `=`), and then `4` is evaluated. `Result` will store the value `2`. While syntactically correct, it is often considered 'invalid' in a pedagogical sense if the intent was to assign multiple values or achieve a different outcome, as it can be misleading compared to standard assignment. However, `Result =/ 4;` (Option C) is a more definitive syntax error as `=/` is not a valid operator in C (unless `Result /= 4;` was intended). Given the provided answer implies D, the context might be about expressions that don't perform typical assignments as one might expect.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "9",
+            "question_text": "____ is used to write the pseudo code with hierarchy.\na. Colon\nb. Braces\nc. Parenthesis\nd. Indentation",
+            "marks": 1,
+            "answer": "D. Indentation is commonly used in pseudocode to visually represent the hierarchical structure and control flow of an algorithm, making it more readable and understandable by clearly showing nested blocks of code.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "10",
+            "question_text": "A binding is ____ if it first occurs ____ execution or can change during execution of the program.\na. static, before\nb. static, during\nc. dynamic, before\nd. dynamic, during",
+            "marks": 1,
+            "answer": "D. A binding is considered **dynamic** if it first occurs **during** execution or can change during the execution of the program. This means the association between a name and an attribute (like a memory address or type) is resolved at runtime.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "11",
+            "question_text": "Write a Pseudocode for finding sum and average of three numbers.",
+            "marks": 2,
+            "answer": "Pseudocode SUM_AVG\nBEGIN\n  READ A, B, and C\n  CALCULATE sum = A + B + C\n  CALCULATE average = SUM / 3\n  PRINT sum and average\nEND",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "12",
+            "question_text": "Illustrate a C program to calculate simple interest.",
+            "marks": 2,
+            "answer": "#include <stdio.h>\nmain()\n{\n  int p,n; \n  float r,si;\n  p = 1000;\n  n = 3;\n  r = 8.5;\n  si = p * n * r / 100;\n  printf(\" Simple Interest = %f\", si);\n}",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "13",
+            "question_text": "Distinguish between \u2018=' and \u2018==' operator with example.",
+            "marks": 2,
+            "answer": "The main distinction between the `=` and `==` operators in C is their purpose:\n*   `=` (Assignment Operator): This operator is used to assign a value to a variable. The value on the right-hand side is stored into the variable on the left-hand side.\n    Example:\n    `int i;`\n    `i = 5;` // This assigns the integer value 5 to the variable `i`.\n\n*   `==` (Relational/Equality Operator): This operator is used to compare two values for equality. It returns `1` (true) if the values are equal, and `0` (false) otherwise.\n    Example:\n    `if (i == 5)` // This compares if the value of `i` is exactly equal to 5. If `i` is 5, it returns true (1).",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "14",
+            "question_text": "Where does global, static, and local, register variables, free memory and C Program instructions get stored?",
+            "marks": 2,
+            "answer": "The storage locations for different types of variables and program components in a C program's memory layout are typically:\n*   **Global Variables**: Stored in the Data Segment. Specifically, initialized global variables go into the initialized data segment, and uninitialized global variables go into the BSS (Block Started by Symbol) segment. These segments are typically allocated by the linker.\n*   **Static Variables**: Similar to global variables, static variables (both global and local static) are stored in the Data Segment (initialized data or BSS). Their lifetime is the entire program execution. The key difference from global variables is their scope (local static variables have local scope, global static variables have file scope).\n*   **Local Variables**: Stored on the Stack. These variables are created when a function is called and destroyed when the function returns. Their lifetime is limited to the function's execution.\n*   **Register Variables**: These are also local variables, but the `register` keyword is a hint to the compiler to store them in CPU registers for faster access, if available. If registers are not available, they behave like ordinary local variables and are stored on the stack. Modern compilers are often better at optimizing variable placement than manual `register` hints.\n*   **Free Memory (Heap)**: This is dynamically allocated memory at runtime using functions like `malloc()`, `calloc()`, and `realloc()`. It's managed by the programmer and persists until explicitly freed (`free()`) or the program ends.\n*   **C Program Instructions (Code)**: Stored in the Text Segment (or Code Segment). This segment contains the executable machine code of the program and is typically read-only.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "15",
+            "question_text": "Compute the size of the int, float, char and double variable by using a C program with suitable code.",
+            "marks": 2,
+            "answer": "#include<stdio.h>\nint main()\n{\n  printf(\"Size of char: %ld byte\\n\",sizeof(char));\n  printf(\"Size of int: %ld bytes\\n\",sizeof(int));\n  printf(\"Size of float: %ld bytes\\n\",sizeof(float));\n  printf(\"Size of double: %ld bytes\\n\",sizeof(double));\n  return 0;\n}",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "16",
+            "question_text": "Write a suitable C program to calculate Gross Salary of an employee. Given Basic Pay, HRA and DA. PF is 12% of the Basic Pay.",
+            "marks": 5,
+            "answer": "#include <stdio.h>\n\nint main()\n{\n  char name[30];\n  float basic, hra, da, pf, gross;\n\n  printf(\"Enter name: \");\n  gets(name);\n\n  printf(\"Enter Basic Salary: \");\n  scanf(\"%f\",&basic);\n\n  printf(\"Enter HRA: \");\n  scanf(\"%f\",&hra);\n\n  printf(\"Enter D.A.: \");\n  scanf(\"%f\",&da);\n\n  /*pf automatic calculated 12%*/\n  pf = (basic * 12) / 100;\n  gross = basic + da + hra + pf;\n\n  printf(\"\\nName: %s \\nBASIC: %f \\nHRA: %f \\nDA: %f\\nPF: %f \\n***GROSS SALARY: %f ***\\n\",\n         name, basic, hra, da, pf, gross);\n\n  return 0;\n}",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        },
+        {
+            "question_number": "17",
+            "question_text": "Draw the flowchart for the given constraints \u201cInput the quantity purchased and the rate. Calculate the total purchase price and display it along with the gift to be presented. The gifts to the customers are given as under:\nAmount of Purchase (Rs.) | Gift\n100 and above but less than 500 | A key ring\n500 and above but less than 1000 | A leather purse\n1000 and above | A pocket calculator\nThe flowchart will end with a 'Thank you' message.",
+            "marks": 5,
+            "answer": "A flowchart representing the process for calculating total purchase price and determining gifts based on the provided constraints would be structured as follows:\n\n1.  **Start** (Oval/Terminal symbol)\n2.  **Input: Quantity Purchased (Q)** (Parallelogram/Input-Output symbol)\n3.  **Input: Rate (R)** (Parallelogram/Input-Output symbol)\n4.  **Process: Calculate Total Purchase Price (T = Q * R)** (Rectangle/Process symbol)\n5.  **Display: Total Purchase Price (T)** (Parallelogram/Input-Output symbol)\n6.  **Decision: Is T >= 100 AND T < 500?** (Diamond/Decision symbol)\n    *   **If Yes (True)**: **Display: \"Gift is Keyring\"** (Parallelogram/Input-Output symbol)\n    *   **If No (False)**: Continue to the next decision.\n7.  **Decision: Is T >= 500 AND T < 1000?** (Diamond/Decision symbol)\n    *   **If Yes (True)**: **Display: \"Gift is Leather Purse\"** (Parallelogram/Input-Output symbol)\n    *   **If No (False)**: Continue to the next decision.\n8.  **Decision: Is T >= 1000?** (Diamond/Decision symbol)\n    *   **If Yes (True)**: **Display: \"Gift is Pocket Calculator\"** (Parallelogram/Input-Output symbol)\n    *   **If No (False)**: (Implies T < 100, where no gift is specified. This path would merge without displaying a gift-specific message)\n9.  All paths from the gift display/no-gift path merge to the next step.\n10. **Display: \"Thank you\"** (Parallelogram/Input-Output symbol)\n11. **Stop** (Oval/Terminal symbol)",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Evolution of Programming & Languages"
+        }
+    ]
+}

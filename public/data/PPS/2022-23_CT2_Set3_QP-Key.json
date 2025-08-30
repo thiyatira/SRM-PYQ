@@ -1,0 +1,166 @@
+{
+    "paper_title": "PPS CT2 - Prev year QP Set-3",
+    "source": "2022-23 CT2 Set3",
+    "questions": [
+        {
+            "question_number": "1a (i)",
+            "question_text": "There is a group of N friends who wish to enrol in a course together. The course has a maximum capacity of M students that can register for it. If there are K other students who have already enrolled in the course, determine if it will still be possible for all the N friends to do so or not.\nInput Format:\n\u2022 Each test case consists of a single line containing three integers N, M and K - the size of the friend group, the capacity of the course and the number of students already registered for the course.\nOutput Format:\n\u2022 For each test case, output Yes if it will be possible for all the N friends to register for the course. Otherwise output No.\nInput:\n3\n2 50 27\n5 40 38\n100 100 0\nOutput:\nYes\nNo\nYes",
+            "marks": 5,
+            "answer": "#include <stdio.h>\nint main() {\nint t;\nscanf(\"%d\",&t);\nwhile(t--)\n{\nint n,m,k;\nscanf(\"%d %d %d\",&n, &m, &k);\nm-=k;\nif(n<=m)\nprintf(\"YES\\n\");\nelse\nprintf(\"NO\\n\");\n}\nreturn 0;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
+        },
+        {
+            "question_number": "1a (ii)",
+            "question_text": "Karan bought car insurance. The policy of the insurance is:\n\u2022 Karan's car meets an accident and required Rs Y lakhs for repairing. Determine the amount that will be rebated by the insurance company.\nInput Format:\n\u2022 The first and only line of each test case contains two space-separated integers X and Y.\nOutput Format:\n\u2022 For each test case, output the amount (in lakhs) that will be rebated by the insurance company.\nInput:\n4\n5 3\n5 8\n4 4\n15 12\nOutput:\n3\n5\n4\n12",
+            "marks": 5,
+            "answer": "#include <stdio.h>\nint main() {\nint n;\nscanf(\"%d\",&n);\nwhile(n>0)\n{\nint x,y,min;\nscanf(\"%d %d\",&x,&y);\nif (x<y)\nmin=x;\nelse\nmin=y;\nprintf(\"%d\\n\",min);\nn--;\n}\nreturn 0;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
+        },
+        {
+            "question_number": "1a (iii)",
+            "question_text": "Rahul has N friends. He promised that he would gift a pair of shoes (consisting of one left shoe and one right shoe) to each of his N friends. Rahul was about to go to the marketplace to buy shoes, but he suddenly remembers that he already had M left shoes. What is the minimum number of extra shoes that Rahul will have to buy to ensure that he is able to gift a pair of shoes to each of his N friends?\nInput Format:\n\u2022 Each test case contains two integers N and M - the number of Rahuls's friends and the number of left shoes Rahul has.\nOutput Format:\nFor each test case, output the minimum number of extra shoes that Rahul will have to buy to ensure that he is able to get N pairs of shoes.",
+            "marks": 5,
+            "answer": "#include<stdio.h>\nint main()\n{\nint n,m,t;\nscanf(\"%d\",&t);\nfor(int i=1;i<=t;i++)\n{\nscanf(\"%d%d\",&n,&m);\nif(m<=n)\n{\nint k=(2*n)-m;\nprintf(\"%d\",k);\n}\nelse\n{\nprintf(\"%d\",n);\n}\nprintf(\"\\n\");\n}\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
+        },
+        {
+            "question_number": "1a (iv)",
+            "question_text": "In a test, there are N problems, each carrying X marks. In each problem, Amala either received X marks or 0 marks. Determine whether is it possible for her to achieve exactly Y marks.\nInput Format:\n\u2022 Each test case consists of three integers N, X and Y, the number of problems, the maximum score for each problem, and the score Amala wants.\nOutput Format:\nFor each test case, output YES if Amala can achieve exactly Y marks, NO otherwise.\nInput:\n5\n1 8 4\n3 6 12\n4 5 0\n10 10 100\n8 5 36\nOutput:\nNO\nYES\nYES\nYES\nNO",
+            "marks": 5,
+            "answer": "#include <stdio.h>\nint main(void) {\nint t,n,x,y;\nscanf(\"%d\",&t);\nwhile(t--)\n{\nscanf(\"%d %d %d\",&n,&x,&y);\nif(y<x&&y!=0)\nprintf(\"No\\n\");\nelse if(y==0)\nprintf(\"Yes\\n\");\nelse if(y%x==0)\nprintf(\"Yes\\n\");\nelse\nprintf(\"No\\n\");\n}\nreturn 0;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Conditional Control -Statements :else if and nested if"
+        },
+        {
+            "question_number": "1b",
+            "question_text": "Alice, Bob and Charlie are bidding for an artifact at an auction. Alice bids A rupees, Bob bids B rupees, and Charlie bids C rupees (where A, B, and C are distinct). According to the rules of the auction, the person who bids the highest amount will win the auction. Determine who will win the auction.\nInput Format:\n\u2022 Each test case contains three integers A, B, and C, - the amount bid by Alice, Bob, and Charlie respectively.\nOutput Format:\n\u2022 For each test case, output who (out of Alice, Bob, and Charlie) will win the auction.",
+            "marks": 5,
+            "answer": "#include <stdio.h>\nint main(void) {\nint t,a,b,c;\nscanf(\"%d\",&t);\nfor(int i=0;i<t;i++){\nscanf(\"%d %d %d\",&a,&b,&c);\nif(a>b && a>c){\nprintf(\"Alice\\n\");\n}\nelse if(b>c){\nprintf(\"Bob\\n\");\n}\nelse {\nprintf(\"Charlie\\n\");\n}\n}\nreturn 0;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Conditional Control -Statements :else if and nested if"
+        },
+        {
+            "question_number": "1b (OR-i)",
+            "question_text": "Most programmers will tell you that one of the ways to improve your performance in competitive programming is to practice a lot of problems. Naveen decides to solve at least 10 problems every week for 4 weeks. Given the number of problems he actually solved in each week over 4 weeks as P1,P2,P3, and P4, output the number of weeks in which he met his target.\nInput Format:\n\u2022 There is a single line of input, with 4 integers P1, P2,P3, and P4. These are the number of problems solved by Naveen in each of the 4 weeks.\nOutput Format:\nOutput a single integer in a single line - the number of weeks in which Naveen solved at least 10 problems.\nInput:\n12 15 8 10\nOutput:\n3",
+            "marks": 5,
+            "answer": "#include <stdio.h>\nint main(void) {\nint arr[4],i,count=0;\n// your code goes here\nfor(i=0;i<4;i++)\n{\nscanf(\"%d\",&arr[i]);\n}\nfor(i=0;i<4;i++)\n{\nif(arr[i]>=10)\ncount++;\nelse\ncontinue;\n}\nprintf(\"%d\",count);\nreturn 0;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Looping Control Statements: for, while, do.while"
+        },
+        {
+            "question_number": "1b (OR-ii)",
+            "question_text": "Nakul wants to go to a music concert with his friends. The seats for the audience is arranged in descending order of the maximum number of tickets booked for a single booking. As per the seating arrangement booking with the highest number of people is allotted the seats in the front rows and the with the lowest number of people is allotted the seats in the last row. The event management firm has planned to develop the software which displays the exact seat layout if the total number of rows is provided. Can you help them with the logic of doing so?\nInput Format:\nThe only line of input has a single integer representing the total number of rows for the concert.\nOutput Format:\nPrint the seating arrangement layout based on the number of rows provided.\nInput:\nEnter the number of rows: 7\nOutput:\n7\t7\t7\t7\t7\t7\t7\n6\t6\t6\t6\t6\t6\n5\t5\t5\t5\t5\n4\t4\t4\t4\n3\t3\t3\n2\t2\n1",
+            "marks": 5,
+            "answer": "#include <stdio.h>\nint main()\n{\nint i, j, rows;\nprintf(\"Enter the number of rows: \");\nscanf(\"%d\", &rows);\nfor (i = rows; i >= 1; --i) {\nfor (j = 1; j <= i; ++j) {\nprintf(\"%d\\t\",rows);\n}\nprintf(\"\\n\");\n}\nreturn 0;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Looping Control Statements: nested for, nested while"
+        },
+        {
+            "question_number": "1b (OR-iii)",
+            "question_text": "Vasya likes the number 239. Therefore, he considers a number pretty if its last digit is 2, 3 or 9. Vasya wants to watch the numbers between L and R (both inclusive), so he asked you to determine how many pretty numbers are in this range. Can you help him?\nInput Format:\nEach test case contains two space-separated integers L and R.\nOutput Format:\nFor each test case, print a single line containing one integer - the number of pretty numbers between L and R.\nInput\n2\n1 10\n11 33\nOutput\n3\n8",
+            "marks": 5,
+            "answer": "int main(void) {\nint t,j,count=0,i;\nlong int l,r;\nscanf(\"%d\",&t);\nfor(i=0;i<t;i++)\n{\nscanf(\"\\n%ld %ld\",&l,&r);\nfor(j=l;j<=r;j++)\n{\nif((j%10==2)||(j%10==3)||(j%10==9))\ncount++;\n}\nprintf(\"\\n%d\",count);\ncount=0;\n}\nreturn 0;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Arithmetic, Relational and logical Operators"
+        },
+        {
+            "question_number": "1b (OR-iv)",
+            "question_text": "Shreyansh likes to play with arrays. He started solving many problems related to array and after a while he thought that he had become an expert in this field and could solve any problem related to array. Seeing this shubham decided to challenge him with a problem related to array. Shubham gave him the following problem.\n\u2022 Given an array A[] with N integers and count the total number of prime numbers in the array.",
+            "marks": 5,
+            "answer": "#include<stdio.h>\nint main()\n{\nint minimum, maximum, flag, count=0, i, j;\nprintf(\"Enter minimum number: \");\nscanf(\"%d\", &minimum);\nprintf(\"Enter maximum number: \");\nscanf(\"%d\", &maximum);\n/* Generating and counting prime numbers */\nfor(i=minimum; i<=maximum; i++)\n{\nflag = 0;\nfor(j=2; j <= i/2; j++)\n{\nif(i%j==0)\n{\nflag=1;\nbreak;\n}\n}\nif(flag==0 && i>=2)\n{\nprintf(\"%d\\t\",i);\ncount++;\n}\n}\nprintf(\"\\n Prime Count = %d\", count);\nreturn(0);\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Looping Control Statements: nested for, nested while"
+        },
+        {
+            "question_number": "1b (OR-v)",
+            "question_text": "Arun is a professor and he wants to find who has secured first mark and second mark in his subject. Help him to find the same.\nInput Format:\nGet N students marks in his class\nOutput Format:\nprint the first mark and second mark",
+            "marks": 5,
+            "answer": "#include <stdio.h>\nint main() {\nint array[10] = {101, 11, 3, 4, 50, 69, 7, 8, 9, 0};\nint loop, largest, second;\nif(array[0] > array[1]) {\nlargest = array[0];\nsecond = array[1];\n} else {\nlargest = array[1];\nsecond = array[0];\n}\nfor(loop = 2; loop < 10; loop++) {\nif(largest < array[loop]) {\nsecond = largest;\nlargest = array[loop];\n} else if( second < array[loop]) {\nsecond = array[loop];\n}\n}\nprintf(\"Largest - %d \\nSecond - %d \\n\", largest, second);\nreturn 0;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 2: One Dimensional (1D) Array Declaration and initialization"
+        },
+        {
+            "question_number": "2a (i)",
+            "question_text": "Neha has a string S with her fname and Iname. She needs to know the number of characters in fname and Iname. Help her to find the length of fname and Iname. After finding the length she needs to combine the fname and Iname. Help her to implement the logic.\nInput format:\nGet the first name and last name\nOutput:\nDisplay the number of characters and combined string",
+            "marks": 5,
+            "answer": "#include<stdio.h>\n#include<string.h>\nvoid main()\n{\nclrscr();\nchar s1[25],s2[25];\nint l;\nprintf(\"Enter first string=\");\nscanf(\"%s\",s1);\nprintf(\"Enter second string=\");\nscanf(\"%s\",s2);\nstrcat(s1,s2);\nl=strlen(s1);\nprintf(\"Concatenate string=%s\\n\",s1);\nprintf(\"Length of concatenate string=%d\",l);\ngetch();\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Built-inString Functions: atoi, strlen, strcat, strcmp"
+        },
+        {
+            "question_number": "2a (ii)",
+            "question_text": "Chan has a string S with him. He is happy if the string contains a contiguous substring of length strictly greater than 2 in which all its characters are vowels. Determine whether Chan is happy or not.\nInput Format:\nGet single line of input, a string S.\nOutput Format:\nif Chan is happy, print HAPPY else print SAD.",
+            "marks": 5,
+            "answer": "#include <stdio.h>\n#include<string.h>\nint main(void)\n{\nint t;\nscanf(\"%d\",&t);\nchar s[1000];\nwhile(t--)\n{\nint i,count=0;\nscanf(\"%s\",s);\nfor(i=0;i<strlen(s)-1;i++)\n{\nif(s[i]=='a'||s[i]=='e'||s[i]=='i'||s[i]=='o'||s[i]=='u')\n{\ncount++;\n}\nelse\n{\nif(count>2)\nbreak;\nelse\ncount=0;\n}\n}\nif(count>2)\n{\nprintf(\"Happy\\n\");\n}\nelse\n{\nprintf(\"Sad\\n\");\ncount=0;\n}\n}\nreturn 0;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Operations on Strings"
+        },
+        {
+            "question_number": "2a (iii)",
+            "question_text": "Charvy invented a modified wordle. There is a hidden word S and a guess word T, both of equal length. Charvy defines a string M to determine the correctness of the guess word. For the ith index:\n\u2022 If the character at the ith index is same both in S and T then the ith character of M is G otherwise B.\n\u2022 Given the hidden word S and guess T, determine string M.\nInput Format\n\u2022 Each test case contains of two lines of input.\n\u2022 First line contains the string S - the hidden word.\n\u2022 Second line contains the string T - the guess word.\nOutput Format\nFor each test case, print the value of string M\nInput:\n1\ncat\nrat\nOutput:\nBGG",
+            "marks": 5,
+            "answer": "#include <stdio.h>\nint main() {\nint t, x, y, z,n1;\nchar s[n1], r[n1];\nscanf(\"%d\", &t);\nscanf(\"%d\",&n1);\nwhile (t--){\nscanf(\"%s %s\", &s, &r);\nfor(x = 0; x < n1; x++)\n{\nif (s[x] == r[x])\n{\nprintf(\"G\");\n}else{\nprintf(\"B\");\n}\n}\nprintf(\"\\n\");\n}\nreturn 0;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Operations on Strings"
+        },
+        {
+            "question_number": "2a (iv)",
+            "question_text": "Amir has a string S with him. He needs to know the occurrence of a particular character and also number of occurrences of that character. Help him to find the logic for the same.\nInput format:\nGet the input string and a character to check occurrence\nOutput:\nTotal number of occurrences of the given character.",
+            "marks": 5,
+            "answer": "#include <string.h>\nint main()\n{\nchar s[1000],c;\nint i,count=0;\nprintf(\"Enter the string : \");\ngets(s);\nprintf(\"Enter character to be searched: \");\nc=getchar();\nfor(i=0;s[i];i++)\n{\nif(s[i]==c)\n{\ncount++;\n}\n}\nprintf(\"character '%c' occurs %d times \\n \",c,count);\nreturn 0;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Operations on Strings"
+        },
+        {
+            "question_number": "2a (v)",
+            "question_text": "Meena has a string S with combination of upper case and lower case characters of length N. She needs to convert it to lower case. Help her do the same.\nInput Format\nEnter the string: SRMist\nOutput Format\nGiven string: SRMist\nLower case : srmist",
+            "marks": 5,
+            "answer": "#include<stdio.h>\nvoid main() {\nint i;\nchar string[40];\nprintf(\"Enter the string : \");\ngets(string);\n//For loop to read each alphabet//\nfor(i=0;string[i]!='\\0';i++){\nif(string[i]>=65&&string[i]<=90){\nstring[i]=string[i]+32;\n}\n}\nprintf(\"The converted lower case string is : \");\nputs(string);\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Operations on Strings"
+        },
+        {
+            "question_number": "2b (OR-i)",
+            "question_text": "Shivam is the youngest programmer in the world, he is just 12 years old. Shivam is learning programming and today he is writing basic program. The task is very simple: given two integers A and B, write a program to add these two numbers using pointers and output it.\nInput Format:\nGet two integers\nOutput Format:\nSum of two numbers",
+            "marks": 5,
+            "answer": "#include <stdio.h>\nint main()\n{\nint fno, sno, *ptr, *qtr, sum;\nprintf(\"\\n\\n Pointer : Add two numbers :\\n\");\nprintf(\" Input the first number : \");\nscanf(\"%d\", &fno);\nprintf(\" Input the second number : \");\nscanf(\"%d\", &sno);\nptr = &fno;\nqtr = &sno;\nsum = *ptr + *qtr;\nprintf(\" The sum of the entered numbers is : %d\\n\\n\",sum);\nreturn 0;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Pointer Declaration and dereferencing, Void Pointers, Null pointers"
+        },
+        {
+            "question_number": "2b (OR-ii)",
+            "question_text": "Yogesh got his three subject marks Maths, Physics and Chemistry from college. Now he want to find out in which subject he get highest marks. The marks in Maths is A, physics is B and chemistry is C. Use pointers to implement the logic.\nInput Format\n\u2022 Input contains A, B, C i.e. Marks in maths, physics and chemistry respectively.\nOutput Format\nThe subject in which he gets highest marks.",
+            "marks": 5,
+            "answer": "#include <stdio.h>\nint main()\n{\nint mat,phy,che, *ptr1=&mat,*ptr2=&phy,*ptr3=&che;\nscanf(\"%d\", ptr1);\nscanf(\"%d\", ptr2);\nscanf(\"%d\", ptr3);\nif(*ptr1>*ptr2 && *ptr1>*ptr3)\n{\nprintf(\"Maths\");\n}\nelse if(*ptr2>*ptr3 && *ptr2>*ptr3)\n{\nprintf(\"Physics\");\n}\nelse\nprintf(\"Chemistry\");\nreturn 0;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Pointer Declaration and dereferencing, Void Pointers, Null pointers"
+        },
+        {
+            "question_number": "2b (OR-iii)",
+            "question_text": "Ravi has to travel to another place. For this, he can avail any one of two cab services.\n\u2022 The first cab service charges X rupees.\n\u2022 The second cab service charges Y rupees.\nRavi wants to spend the minimum amount of money. Which cab service should Ravi take? Use pointers to implement the concept\nInput Format\n\u2022 Each test case contains two integers X and Y- the prices of first and second cab services respectively.\nOutput Format\nFor each test case, output FIRST if the first cab service is cheaper, output SECOND if the second cab service is cheaper, output ANY if both cab services have the same price.\nInput:\n3\n20 60\n40 40\n50 30\nOutput:\nFirst\nAny\nSecond",
+            "marks": 5,
+            "answer": "#include <stdio.h>\n#include <stdlib.h>\nvoid main()\n{\nint n, fno,sno, *ptr1=&fno,*ptr2=&sno;\nscanf(\"%d\", &n);\nfor (int i = 0; i < n; i++)\n{\nscanf(\"%d\", ptr1);\nscanf(\"%d\", ptr2);\nif(*ptr1<*ptr2)\n{\nprintf(\"\\nFirst\");\n}\nelse if(*ptr2<*ptr1)\n{\nprintf(\"\\nSecond\");\n}\nelse\nprintf(\"\\nAny\");\n}\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Pointer Declaration and dereferencing, Void Pointers, Null pointers"
+        },
+        {
+            "question_number": "2b (OR-iv)",
+            "question_text": "Bunty is a 10 year old boy playing a game of swap the two numbers A & B and write them on a board in correct order. He is in confusion of doing this. So help him by taking this two number A and B as input and after Swapping print the output on screen using pointers and functions.\nInput Format\nInput line contains two numbers A and B.\nOutput Format\nOutput in a single line the two numbers after swap them.",
+            "marks": 5,
+            "answer": "#include <stdio.h>\nvoid swapNumbers(int *x,int *y);\nint main()\n{\nint e1,e2;\nscanf(\"%d\",&e1);\nscanf(\"%d\",&e2);\nswapNumbers(&e1,&e2);\nprintf(\"%d %d\",e1,e2);\nreturn 0;\n}\nvoid swapNumbers(int *x,int *y)\n{\nint tmp;\ntmp=*x;\n*x=*y;\n*y=tmp;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Call by Value, Call by Reference"
+        },
+        {
+            "question_number": "2b (OR-v)",
+            "question_text": "Alice and Bob are very good friends and they always distribute all the eatables equally among themselves. Alice has A chocolates and Bob has B chocolates. Determine whether Alice and Bob can distribute all the chocolates equally among themselves. Implement the logic using functions\nNote that: It is not allowed to break a chocolate into more than one piece. No chocolate shall be left in the distribution.\nInput Format:\nEach test case contains two space-separated integers A and B, the number of chocolates that Alice and Bob have, respectively.\nOutput Format:\nFor each test case, output on a new line YES if Alice and Bob can distribute all the chocolates equally, else output NO.",
+            "marks": 5,
+            "answer": "#include <stdio.h>\nvoid solve()\n{\nint a, b;\nscanf(\"%d%d\", &a, &b);\n((a + b) % 2 == 0) ? printf(\"YES\\n\") : printf(\"NO\\n\");\n}\nint main(void) {\nint T;\nscanf(\"%d\", &T);\nwhile(T--){\nsolve();\n}\nreturn 0;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Function prototype declaration, function definition"
+        }
+    ]
+}

@@ -1,0 +1,342 @@
+{
+    "paper_title": "18CSS101J 1 SEM - End sem paper Programming For Problem Solving (SRM Institute of Science and Technology)",
+    "source": "2019-01 ET",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "The two forms of integer types are\n(A) Singed and unsigned\n(C) Short and double\n(B) Long and double\n(D) Signed and enum",
+            "marks": 1,
+            "answer": "The fundamental forms of integer types are signed and unsigned, which determine whether the variable can hold positive and negative values or only non-negative values, respectively. (A) Signed and unsigned.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Numeric Data types: integer, floating point Non-Numeric Data types: char and string"
+        },
+        {
+            "question_number": "2",
+            "question_text": "To use sqrt function, we need to use the following header\n(A) conio.h\n(B) stdlib.h\n(C) iostream.h\n(D) math.h",
+            "marks": 1,
+            "answer": "The `sqrt` function, which calculates the square root of a number, is part of the C standard library's mathematics functions. These functions are declared in the `math.h` header file. (D) math.h.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to C: Structure of the C program"
+        },
+        {
+            "question_number": "3",
+            "question_text": "A bitwise operator stands for\n(A) Right shift\n(B) One's complement\n(C) Bitwise exclusive OR\n(D) Bitwise inclusive OR",
+            "marks": 1,
+            "answer": "All the options listed (Right shift, One's complement, Bitwise exclusive OR, Bitwise inclusive OR) are indeed bitwise operators in C. The question asks for 'A bitwise operator', implying any valid example. For example, 'Right shift' (>>) is a bitwise operator. (A) Right shift. However, if the question seeks the most general term or an encompassing concept, it's poorly phrased as all options are specific bitwise operators.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Bitwise and Size-of operator"
+        },
+        {
+            "question_number": "4",
+            "question_text": "The escape sequence \\t means\n(A) Vertical tab\n(B) Horizontal tab\n(C) Backspace\n(D) Formfeed",
+            "marks": 1,
+            "answer": "The escape sequence `\\t` represents a horizontal tab character. (B) Horizontal tab.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Input and output statements. Variables and identifiers, Constants, Keywords"
+        },
+        {
+            "question_number": "5",
+            "question_text": "The condition when break statement is not used in the switch case statement is called\n(A) Fall off\n(C) Fall out\n(B) Fall through\n(D) Falling off",
+            "marks": 1,
+            "answer": "When a `break` statement is omitted from a `switch` case, execution continues from the current case into the next case, executing its code. This behavior is known as 'fall-through'. (B) Fall through.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Conditional Statements : Switch case"
+        },
+        {
+            "question_number": "6",
+            "question_text": "The continue statement is applicable to\n(A) Only loops\n(C) Switch only\n(B) Loops and switch\n(D) Control statements",
+            "marks": 1,
+            "answer": "The `continue` statement is used to skip the rest of the current iteration of a loop and proceed to the next iteration. It is only applicable within looping control statements (`for`, `while`, `do-while`). (A) Only loops.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Un-conditional Control Statements : break, continue, goto"
+        },
+        {
+            "question_number": "7",
+            "question_text": "An example for unconditional statement is\n(A) If statement\n(C) For\n(B) While\n(D) Goto",
+            "marks": 1,
+            "answer": "An unconditional statement transfers control without checking any condition. The `goto` statement is an unconditional jump statement in C. `If`, `for`, and `while` are conditional or looping statements. (D) Goto.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Un-conditional Control Statements : break, continue, goto"
+        },
+        {
+            "question_number": "8",
+            "question_text": "The array size for char pattern = {'k', 'p', 'l', 'd', 'lo'} is\n(A) 6\n(C) 5\n(B) 4\n(D) 3",
+            "marks": 1,
+            "answer": "The array initializer `{'k', 'p', 'l', 'd', 'lo'}` contains 5 distinct initializer elements. Even though `'lo'` is a multi-character literal (which might lead to a warning or implementation-defined behavior if assigned to a `char`), it counts as one element in the initializer list. Therefore, the array size would be 5 elements. (C) 5.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: One Dimensional (1D) Array Declaration and initialization"
+        },
+        {
+            "question_number": "9",
+            "question_text": "A function calling itself directly or indirectly is called as\n(A) Function call\n(C) Recursion\n(B) Function prototype\n(D) Call by value",
+            "marks": 1,
+            "answer": "A function that calls itself, either directly or indirectly, is known as a recursive function, and the process is called recursion. (C) Recursion.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Function prototype declaration, function definition"
+        },
+        {
+            "question_number": "10",
+            "question_text": "In order to use string functions, we need which header file\n(A) conio.h\n(B) stdio.h\n(C) stdlib.h\n(D) string.h",
+            "marks": 1,
+            "answer": "The standard C library functions for string manipulation (e.g., `strlen`, `strcpy`, `strcat`, `strcmp`) are declared in the `string.h` header file. (D) string.h.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Built-inString Functions: atoi, strlen, strcat, strcmp"
+        },
+        {
+            "question_number": "11",
+            "question_text": "The size of the following array int arr [20] [3] is\n(A) 40\n(C) 60\n(B) 23\n(D) 50",
+            "marks": 1,
+            "answer": "A 2D array `int arr[20][3]` has 20 rows and 3 columns. The total number of integer elements in the array is `20 * 3 = 60`. (C) 60.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Initializing and Accessing 2D Array, Array Programs \u2013 2D"
+        },
+        {
+            "question_number": "12",
+            "question_text": "The string function that is used to join two strings is\n(A) strlen\n(C) strcmp\n(B) strcat\n(D) strcpy",
+            "marks": 1,
+            "answer": "The `strcat` function (string concatenate) is used to append one string to the end of another string, effectively joining them. (B) strcat.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Built-inString Functions: atoi, strlen, strcat, strcmp"
+        },
+        {
+            "question_number": "13",
+            "question_text": "A Null directive is of the from\n(A) #\n(C) # include\n(B) ##\n(D) #include <NULL>",
+            "marks": 1,
+            "answer": "In C, a null directive is a single `#` character on a line by itself. It does nothing and is ignored by the preprocessor. (A) #.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to C: Structure of the C program"
+        },
+        {
+            "question_number": "14",
+            "question_text": "The function int tolower (int c) converts\n(A) c into lower case\n(C) c into upper case\n(B) converts c from lower case to upper case\n(D) c into integer",
+            "marks": 1,
+            "answer": "The `tolower()` function converts an uppercase letter to its lowercase equivalent. If the character `c` is already lowercase or not an alphabet, it returns `c` unchanged. (A) c into lower case.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: String Functions: sprint, sscanf, strrev, strcpy, strstr, strtok"
+        },
+        {
+            "question_number": "15",
+            "question_text": "The preprocessor directive used for processing data and time is\n(A) datatime.h\n(C) time.h\n(B) date.h\n(D) dated.h",
+            "marks": 1,
+            "answer": "The standard C library header file that provides functions for date and time manipulation is `time.h`. (C) time.h.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to C: Structure of the C program"
+        },
+        {
+            "question_number": "16",
+            "question_text": "In a function, if return type is omitted, it is assumed to return\n(A) Null\n(C) Double\n(B) Integer\n(D) Void",
+            "marks": 1,
+            "answer": "In older C standards (C89/C90), if a function's return type was omitted, it was implicitly assumed to return `int`. In modern C standards (C99 and later), omitting the return type is a compilation error. Assuming the context of older C or a specific teaching curriculum, `int` is the historical answer. (B) Integer.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Function with and without return values"
+        },
+        {
+            "question_number": "17",
+            "question_text": "A collection of different types of variables is referred to as\n(A) Structures\n(C) Stacks\n(B) Arrays\n(D) Queues",
+            "marks": 1,
+            "answer": "A structure (`struct`) in C is a user-defined data type that allows you to combine items of different data types under a single name. Arrays store elements of the same type. Stacks and queues are abstract data types, not direct collections of different types of variables in this sense. (A) Structures.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Numeric Data types: integer, floating point Non-Numeric Data types: char and string"
+        },
+        {
+            "question_number": "18",
+            "question_text": "Members of the union are accessed by\n(A) Union-name \u2192 member\n(C) Union-name \u21d2 member\n(B) Union-name = member\n(D) Union-name $ member",
+            "marks": 1,
+            "answer": "Members of a union (or struct) are accessed using the dot operator (`.`) if directly using the union variable (e.g., `myUnion.member`). If accessing via a pointer to the union, the arrow operator (`->`) is used (e.g., `union_ptr->member`). Therefore, `Union-name -> member` represents a correct way to access a member using a pointer to a union. (A) Union-name \u2192 member.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Values, Names, Scope, Binding, Storage Classes"
+        },
+        {
+            "question_number": "19",
+            "question_text": "The line void free (void *p)\n(A) Allocates the space pointed to by p\n(B) Deallocates the space pointed to by p\n(C) Terminates the program abruptly\n(D) Sets null value to p",
+            "marks": 1,
+            "answer": "The `free()` function deallocates the memory block previously allocated by functions like `malloc()`, `calloc()`, or `realloc()`. (B) Deallocates the space pointed to by p.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Pointer Declaration and dereferencing, Void Pointers, Null pointers Pointer based Array manipulation"
+        },
+        {
+            "question_number": "20",
+            "question_text": "Unions provide a way to\n(A) Manipulate different kinds of data in a single area of storage\n(B) Save same kind of data in continuous storage\n(C) Save different types of data in different areas\n(D) Save data of same types",
+            "marks": 1,
+            "answer": "Unions allow you to store different data types in the same memory location. Only one member of the union can hold a value at any given time. This provides a way to manipulate different kinds of data within a single, shared memory area, optimizing memory usage. (A) Manipulate different kinds of data in a single area of storage.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Numeric Data types: integer, floating point Non-Numeric Data types: char and string"
+        },
+        {
+            "question_number": "21",
+            "question_text": "Define an algorithm. Write an algorithm to accept an input from the user and calculate the sum of the squares.",
+            "marks": 4,
+            "answer": "An algorithm is a finite set of well-defined, unambiguous instructions to solve a problem or accomplish a task. It is a step-by-step procedure for solving a computational problem, characterized by finiteness, definiteness, input, output, and effectiveness.\n\n**Algorithm to calculate the sum of squares up to N:**\n\n1.  **START**\n2.  **READ** `N` (the upper limit for which to calculate the sum of squares)\n3.  Initialize `sum_of_squares = 0`\n4.  Initialize `counter = 1`\n5.  **WHILE** `counter <= N` **DO**\n    a.  Calculate `square = counter * counter`\n    b.  Add `square` to `sum_of_squares` (`sum_of_squares = sum_of_squares + square`)\n    c.  Increment `counter` (`counter = counter + 1`)\n6.  **END WHILE**\n7.  **PRINT** `sum_of_squares`\n8.  **STOP**",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Writing algorithms & Pseudo code"
+        },
+        {
+            "question_number": "22",
+            "question_text": "Differentiate between entry controlled and exit controlled loop.",
+            "marks": 4,
+            "answer": "**Entry Controlled Loop:**\n*   **Condition Check:** The test condition is evaluated *before* the loop body is executed.\n*   **Execution Guarantee:** The loop body may not execute even once if the condition is false initially.\n*   **Examples in C:** `for` loop and `while` loop.\n*   **Structure:**\n    ```c\n    while (condition) {\n        // loop body\n    }\n    // or\n    for (initialization; condition; increment/decrement) {\n        // loop body\n    }\n    ```\n\n**Exit Controlled Loop:**\n*   **Condition Check:** The test condition is evaluated *after* the loop body is executed.\n*   **Execution Guarantee:** The loop body is guaranteed to execute at least once, regardless of the initial condition.\n*   **Examples in C:** `do-while` loop.\n*   **Structure:**\n    ```c\n    do {\n        // loop body\n    } while (condition);\n    ```",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Looping Control Statements: for, while, do.while"
+        },
+        {
+            "question_number": "23",
+            "question_text": "Write a C program to find the factorial of a given number using recursion.",
+            "marks": 4,
+            "answer": "```c\n#include <stdio.h>\n\n// Function to calculate factorial using recursion\nlong long factorial(int n) {\n    // Base case: factorial of 0 or 1 is 1\n    if (n == 0 || n == 1) {\n        return 1;\n    }\n    // Recursive case: n * factorial(n-1)\n    else {\n        return n * factorial(n - 1);\n    }\n}\n\nint main() {\n    int num;\n    printf(\"Enter a non-negative integer: \");\n    scanf(\"%d\", &num);\n\n    if (num < 0) {\n        printf(\"Factorial is not defined for negative numbers.\\n\");\n    } else {\n        printf(\"Factorial of %d = %lld\\n\", num, factorial(num));\n    }\n    return 0;\n}\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Function prototype declaration, function definition"
+        },
+        {
+            "question_number": "24",
+            "question_text": "Write a C program to reverse an array using pointers.",
+            "marks": 4,
+            "answer": "```c\n#include <stdio.h>\n\n// Function to reverse an array using pointers\nvoid reverseArray(int *arr, int size) {\n    int *left = arr;               // Pointer to the first element\n    int *right = arr + size - 1;   // Pointer to the last element\n    int temp;\n\n    while (left < right) {\n        // Swap elements pointed to by left and right\n        temp = *left;\n        *left = *right;\n        *right = temp;\n\n        // Move pointers towards the center\n        left++;\n        right--;\n    }\n}\n\nint main() {\n    int arr[] = {10, 20, 30, 40, 50};\n    int size = sizeof(arr) / sizeof(arr[0]);\n\n    printf(\"Original array: \");\n    for (int i = 0; i < size; i++) {\n        printf(\"%d \", arr[i]);\n    }\n    printf(\"\\n\");\n\n    reverseArray(arr, size);\n\n    printf(\"Reversed array: \");\n    for (int i = 0; i < size; i++) {\n        printf(\"%d \", arr[i]);\n    }\n    printf(\"\\n\");\n\n    return 0;\n}\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Pointer based Array manipulation"
+        },
+        {
+            "question_number": "25",
+            "question_text": "Compare and contrast calloc() and malloc().",
+            "marks": 4,
+            "answer": "| Feature          | `malloc()`                                    | `calloc()`                                            |\n| :--------------- | :-------------------------------------------- | :---------------------------------------------------- |\n| **Purpose**      | Allocates a block of uninitialized memory.    | Allocates a block of memory and initializes it to zero. |\n| **Arguments**    | Takes a single argument: `size` (in bytes).   | Takes two arguments: `num_elements`, `element_size` (in bytes). |\n| **Initialization** | Does not initialize the allocated memory; it contains garbage values. | Initializes all bytes in the allocated memory block to zero. |\n| **Return Type**  | Returns `void*` (a pointer to the allocated memory) or `NULL` on failure. | Returns `void*` (a pointer to the allocated memory) or `NULL` on failure. |\n| **Use Case**     | Suitable when you need raw memory and don't care about initial values, or when you plan to explicitly initialize. | Preferred when you need an array of elements and want them all initialized to zero (e.g., for numerical arrays or structs). |\n| **Example**      | `ptr = (int*) malloc(5 * sizeof(int));`       | `ptr = (int*) calloc(5, sizeof(int));`                |\n\nBoth functions are used for dynamic memory allocation, and both return a `void*` pointer to the allocated space (which should be cast to the appropriate type) or `NULL` if allocation fails. The allocated memory must be freed using `free()` to prevent memory leaks.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Pointer Declaration and dereferencing, Void Pointers, Null pointers Pointer based Array manipulation"
+        },
+        {
+            "question_number": "26",
+            "question_text": "Sketch a flowchart to find the sum of n numbers and write the pseudo code for it.",
+            "marks": 4,
+            "answer": "**Flowchart to find the sum of n numbers (Textual Representation):**\n\n```\n+-------+\n| START |\n+-------+\n    |\n    v\n+---------+\n| Input N |\n+---------+\n    |\n    v\n+-----------------------+\n| sum = 0, count = 0    |\n+-----------------------+\n    |\n    v\n+-----------------+\n| Is count < N?   |<-------+\n| (Decision)      |       |\n+-----------------+\n    | Yes           | No\n    v               v\n+----------+       +---------+\n| Input    |       | Output  |\n| Number   |       | Sum     |\n+----------+       +---------+\n    |\n    v\n+------------------+\n| sum = sum + Number |\n+------------------+\n    |\n    v\n+-----------------+\n| count = count + 1 |\n+-----------------+\n    |\n    +-------------------->\n\n+----+\n| END|\n+----+\n```\n\n**Pseudo Code to find the sum of n numbers:**\n\n```\nALGORITHM Sum_of_N_Numbers\n1.  START\n2.  READ N  // Get the total number of inputs\n3.  INITIALIZE sum = 0\n4.  INITIALIZE count = 0\n5.  WHILE count < N DO\n6.      READ Number // Get an individual number from the user\n7.      sum = sum + Number\n8.      count = count + 1\n9.  END WHILE\n10. PRINT sum\n11. STOP\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Writing algorithms & Pseudo code"
+        },
+        {
+            "question_number": "27",
+            "question_text": "Consider a structure book with the members title, author, publication and price. Display the book details by initializing the structure members and by getting input from the user.",
+            "marks": 4,
+            "answer": "```c\n#include <stdio.h>\n#include <string.h> // For strcpy and strcspn\n\n// Define the structure for a book\nstruct Book {\n    char title[100];\n    char author[50];\n    char publication[50];\n    float price;\n};\n\nint main() {\n    // 1. Initializing structure members at declaration\n    struct Book book1 = {\"The C Programming Language\", \"Dennis Ritchie\", \"Prentice Hall\", 45.50};\n\n    printf(\"--- Book Details (Initialized) ---\\n\");\n    printf(\"Title: %s\\n\", book1.title);\n    printf(\"Author: %s\\n\", book1.author);\n    printf(\"Publication: %s\\n\", book1.publication);\n    printf(\"Price: %.2f\\n\\n\", book1.price);\n\n    // 2. Getting input from the user for another book\n    struct Book book2;\n\n    printf(\"--- Enter Details for Book 2 ---\\n\");\n\n    printf(\"Enter title: \");\n    fgets(book2.title, sizeof(book2.title), stdin);\n    book2.title[strcspn(book2.title, \"\\n\")] = 0; // Remove trailing newline\n\n    printf(\"Enter author: \");\n    fgets(book2.author, sizeof(book2.author), stdin);\n    book2.author[strcspn(book2.author, \"\\n\")] = 0;\n\n    printf(\"Enter publication: \");\n    fgets(book2.publication, sizeof(book2.publication), stdin);\n    book2.publication[strcspn(book2.publication, \"\\n\")] = 0;\n\n    printf(\"Enter price: \");\n    scanf(\"%f\", &book2.price);\n    while (getchar() != '\\n'); // Consume the remaining newline character after scanf\n\n    printf(\"\\n--- Book Details (User Input) ---\\n\");\n    printf(\"Title: %s\\n\", book2.title);\n    printf(\"Author: %s\\n\", book2.author);\n    printf(\"Publication: %s\\n\", book2.publication);\n    printf(\"Price: %.2f\\n\", book2.price);\n\n    return 0;\n}\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Numeric Data types: integer, floating point Non-Numeric Data types: char and string"
+        },
+        {
+            "question_number": "28.a.i",
+            "question_text": "State the rules for writing a pseudo code. Draw a flow chart for converting from celsius to Fahrenheit.",
+            "marks": 8,
+            "answer": "**Rules for Writing Pseudocode:**\n1.  **Start and End:** Begin the pseudocode with `START` and end it with `STOP` or `END`.\n2.  **Keywords:** Use clear, unambiguous keywords for common operations (e.g., `READ`, `GET`, `INPUT` for input; `PRINT`, `DISPLAY`, `OUTPUT` for output; `CALCULATE`, `COMPUTE` for processing; `IF...THEN...ELSE`, `WHILE...DO`, `FOR...END FOR` for control structures).\n3.  **Indentation:** Use indentation to show hierarchy and structure, making control flow clear (e.g., statements inside loops or conditional blocks).\n4.  **Clarity and Simplicity:** Use plain English statements that are concise and easily understandable, avoiding programming language-specific syntax or symbols (like `{`, `}`, `;`).\n5.  **Variables:** Declare variables (optional, but good practice) and assign values clearly (e.g., `SET variable = value` or `variable <- value`).\n6.  **Sequence:** Instructions should flow from top to bottom, indicating the order of execution.\n7.  **Comments:** Add comments (e.g., using `//` or `/* */`) for complex logic or to explain steps.\n\n**Flowchart for converting Celsius to Fahrenheit (Textual Representation):**\n\n```\n+-------+\n| START |\n+-------+\n    |\n    v\n+------------------------+\n| Input CelsiusTemperature |\n+------------------------+\n    |\n    v\n+--------------------------------------+\n| FahrenheitTemperature = (CelsiusTemperature * 9 / 5) + 32 |\n+--------------------------------------+\n    |\n    v\n+------------------------+\n| Output FahrenheitTemperature |\n+------------------------+\n    |\n    v\n+-----+\n| END |\n+-----+\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Writing algorithms & Pseudo code"
+        },
+        {
+            "question_number": "28.a.ii",
+            "question_text": "Differentiate between critical and creative thinking.",
+            "marks": 4,
+            "answer": "**Critical Thinking:**\n*   **Focus:** Involves analyzing, evaluating, and judging information or ideas to determine their validity, accuracy, and worth. It's about breaking down information and identifying strengths, weaknesses, and potential biases.\n*   **Nature:** Convergent, logical, analytical, objective, evaluative.\n*   **Purpose:** To assess existing ideas, find flaws, solve problems by analysis, and make reasoned judgments.\n*   **Process:** Systematically applying logic and reasoning to information.\n*   **Outcome:** Refinement, selection, problem resolution, informed decision-making.\n\n**Creative Thinking:**\n*   **Focus:** Involves generating new ideas, concepts, or solutions. It's about looking at situations from novel perspectives and exploring possibilities.\n*   **Nature:** Divergent, imaginative, generative, subjective, innovative.\n*   **Purpose:** To produce original thoughts, find new approaches, or invent solutions to problems.\n*   **Process:** Brainstorming, imagining, connecting disparate ideas, challenging assumptions.\n*   **Outcome:** Innovation, novel solutions, new perspectives, original creations.\n\nIn essence, critical thinking is about *evaluating what is* or *what works best*, while creative thinking is about *generating what could be* or *what might work*.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Problem solving through programming"
+        },
+        {
+            "question_number": "28.b",
+            "question_text": "List down the various storage classes in C. Explain Extern and Static storage classes with suitable examples.",
+            "marks": 12,
+            "answer": "**Various Storage Classes in C:**\nC provides five storage classes that define the scope, lifetime, and linkage of variables and functions:\n1.  `auto`\n2.  `register`\n3.  `static`\n4.  `extern`\n5.  `_Thread_local` (introduced in C11)\n\n**1. `extern` Storage Class:**\n*   **Purpose:** The `extern` keyword is used to declare a global variable or function that is defined in another source file or later in the current file. It tells the compiler that the variable/function exists elsewhere and its memory allocation is handled there. This facilitates sharing variables across multiple source files.\n*   **Scope:** Global (accessible from any function in any file where declared).\n*   **Lifetime:** As long as the program executes.\n*   **Default Value:** Zero (if initialized globally).\n*   **Example:**\n    `file1.c`:\n    ```c\n    int globalVar = 100; // Definition of globalVar\n    void func1() {\n        printf(\"Inside func1: globalVar = %d\\n\", globalVar);\n    }\n    ```\n    `file2.c`:\n    ```c\n    #include <stdio.h>\n    extern int globalVar; // Declaration: globalVar is defined in file1.c\n    void func2() {\n        globalVar = 200; // Modifying the globalVar\n        printf(\"Inside func2: globalVar = %d\\n\", globalVar);\n    }\n    ```\n    `main.c`:\n    ```c\n    #include <stdio.h>\n    extern int globalVar;    // Declaration\n    extern void func1();    // Declaration\n    extern void func2();    // Declaration\n    int main() {\n        printf(\"Before calls: globalVar = %d\\n\", globalVar);\n        func1();\n        func2();\n        printf(\"After calls: globalVar = %d\\n\", globalVar);\n        return 0;\n    }\n    ```\n    To compile: `gcc main.c file1.c file2.c -o myprogram`\n\n**2. `static` Storage Class:**\n*   **Purpose:** The `static` keyword has different effects based on its context:\n    *   **Local Variable:** A `static` local variable retains its value between function calls. Its lifetime is for the entire program execution, but its scope is limited to the function or block where it is declared.\n    *   **Global Variable/Function:** A `static` global variable or function has *internal linkage*, meaning it is visible and accessible only within the source file in which it is defined. This prevents name clashes with variables/functions of the same name in other files and promotes encapsulation.\n*   **Scope:**\n    *   Local `static`: Local to the function/block.\n    *   Global `static`: File scope (visible only in the defining file).\n*   **Lifetime:** As long as the program executes.\n*   **Default Value:** Zero.\n*   **Example (Local Static Variable):**\n    ```c\n    #include <stdio.h>\n    void counter() {\n        static int count = 0; // 'count' is initialized only once\n        count++;\n        printf(\"Count: %d\\n\", count);\n    }\n    int main() {\n        counter(); // Output: Count: 1\n        counter(); // Output: Count: 2\n        counter(); // Output: Count: 3\n        return 0;\n    }\n    ```\n*   **Example (Global Static Variable/Function):**\n    `fileA.c`:\n    ```c\n    #include <stdio.h>\n    static int fileASpecificVar = 10; // Visible only in fileA.c\n    static void fileASpecificFunc() { // Visible only in fileA.c\n        printf(\"Inside fileASpecificFunc. fileASpecificVar = %d\\n\", fileASpecificVar);\n    }\n    void publicFuncA() {\n        printf(\"Inside publicFuncA. Calling fileASpecificFunc...\\n\");\n        fileASpecificFunc();\n    }\n    ```\n    `fileB.c`:\n    ```c\n    #include <stdio.h>\n    // extern int fileASpecificVar; // This would cause a linker error\n    void publicFuncB() {\n        printf(\"Inside publicFuncB. Cannot access fileASpecificVar.\\n\");\n    }\n    ```\n    `main.c`:\n    ```c\n    #include <stdio.h>\n    extern void publicFuncA();\n    extern void publicFuncB();\n    int main() {\n        publicFuncA();\n        publicFuncB();\n        return 0;\n    }\n    ```\n    In this example, `fileASpecificVar` and `fileASpecificFunc` are private to `fileA.c`.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Values, Names, Scope, Binding, Storage Classes"
+        },
+        {
+            "question_number": "29.a",
+            "question_text": "Classify the various decision making constructs in C. Explain with suitable examples.",
+            "marks": 12,
+            "answer": "Decision-making constructs (or conditional statements) in C allow the program to execute different blocks of code based on whether a specified condition evaluates to true or false. They are fundamental for controlling program flow.\n\nThe various decision-making constructs in C are:\n\n1.  **`if` statement:**\n    *   **Purpose:** Executes a block of code if a specified condition is true.\n    *   **Syntax:**\n        ```c\n        if (condition) {\n            // Code to be executed if condition is true\n        }\n        ```\n    *   **Example:**\n        ```c\n        int num = 10;\n        if (num > 0) {\n            printf(\"%d is positive.\\n\", num);\n        }\n        ```\n\n2.  **`if...else` statement:**\n    *   **Purpose:** Executes one block of code if the condition is true, and another block if the condition is false.\n    *   **Syntax:**\n        ```c\n        if (condition) {\n            // Code if condition is true\n        } else {\n            // Code if condition is false\n        }\n        ```\n    *   **Example:**\n        ```c\n        int num = -5;\n        if (num > 0) {\n            printf(\"%d is positive.\\n\", num);\n        } else {\n            printf(\"%d is non-positive.\\n\", num);\n        }\n        ```\n\n3.  **`else if` ladder (or `if...else if...else` statement):**\n    *   **Purpose:** Used when there are multiple conditions to be tested in a sequence. Execution proceeds down the ladder, and once a condition is true, its corresponding block is executed, and the rest of the ladder is skipped.\n    *   **Syntax:**\n        ```c\n        if (condition1) {\n            // Code if condition1 is true\n        } else if (condition2) {\n            // Code if condition2 is true\n        } else if (condition3) {\n            // Code if condition3 is true\n        } else {\n            // Code if none of the above conditions are true\n        }\n        ```\n    *   **Example:**\n        ```c\n        int score = 85;\n        if (score >= 90) {\n            printf(\"Grade: A\\n\");\n        } else if (score >= 80) {\n            printf(\"Grade: B\\n\");\n        } else if (score >= 70) {\n            printf(\"Grade: C\\n\");\n        } else {\n            printf(\"Grade: Fail\\n\");\n        }\n        ```\n\n4.  **Nested `if` statement:**\n    *   **Purpose:** An `if` statement placed inside another `if`, `else if`, or `else` block. Used when a decision needs to be made after an initial condition has already been met.\n    *   **Syntax:**\n        ```c\n        if (condition1) {\n            if (condition2) {\n                // Code if both condition1 and condition2 are true\n            } else {\n                // Code if condition1 is true, but condition2 is false\n            }\n        } else {\n            // Code if condition1 is false\n        }\n        ```\n    *   **Example:**\n        ```c\n        int a = 10, b = 20, c = 5;\n        if (a > b) {\n            if (a > c) {\n                printf(\"%d is the largest.\\n\", a);\n            } else {\n                printf(\"%d is the largest.\\n\", c);\n            }\n        } else { // b >= a\n            if (b > c) {\n                printf(\"%d is the largest.\\n\", b);\n            } else {\n                printf(\"%d is the largest.\\n\", c);\n            }\n        }\n        ```\n\n5.  **`switch` statement:**\n    *   **Purpose:** Allows a variable or expression to be tested for equality against a list of constant values (cases). It is an efficient alternative to a long `if-else if` ladder when dealing with multiple conditions based on a single variable's discrete values.\n    *   **Syntax:**\n        ```c\n        switch (expression) {\n            case constant_value1:\n                // Code block 1\n                break; // Important to prevent fall-through\n            case constant_value2:\n                // Code block 2\n                break;\n            // ...\n            default:\n                // Code block if no case matches\n                break;\n        }\n        ```\n    *   **Example:**\n        ```c\n        char grade = 'B';\n        switch (grade) {\n            case 'A':\n                printf(\"Excellent!\\n\");\n                break;\n            case 'B':\n                printf(\"Very good!\\n\");\n                break;\n            case 'C':\n                printf(\"Good.\\n\");\n                break;\n            default:\n                printf(\"Needs improvement.\\n\");\n                break;\n        }\n        ```",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
+        },
+        {
+            "question_number": "29.b.i",
+            "question_text": "Write a C program to get 'n' numbers as input from the user and sort in ascending order.",
+            "marks": 8,
+            "answer": "```c\n#include <stdio.h>\n#include <stdlib.h> // For malloc, free\n\n// Function to sort an array using Bubble Sort\nvoid bubbleSort(int arr[], int n) {\n    int i, j, temp;\n    for (i = 0; i < n - 1; i++) {\n        // Last i elements are already in place, so we iterate less each time\n        for (j = 0; j < n - i - 1; j++) {\n            // Swap if the element found is greater than the next element\n            if (arr[j] > arr[j + 1]) {\n                temp = arr[j];\n                arr[j] = arr[j + 1];\n                arr[j + 1] = temp;\n            }\n        }\n    }\n}\n\nint main() {\n    int n, i;\n    int *arr; // Pointer for dynamic array allocation\n\n    printf(\"Enter the number of elements (n): \");\n    scanf(\"%d\", &n);\n\n    if (n <= 0) {\n        printf(\"Please enter a positive number of elements.\\n\");\n        return 1;\n    }\n\n    // Dynamically allocate memory for n integers\n    arr = (int *)malloc(n * sizeof(int));\n    if (arr == NULL) {\n        printf(\"Memory allocation failed!\\n\");\n        return 1;\n    }\n\n    printf(\"Enter %d integers:\\n\", n);\n    for (i = 0; i < n; i++) {\n        printf(\"Element %d: \", i + 1);\n        scanf(\"%d\", &arr[i]);\n    }\n\n    printf(\"\\nOriginal array: \");\n    for (i = 0; i < n; i++) {\n        printf(\"%d \", arr[i]);\n    }\n    printf(\"\\n\");\n\n    bubbleSort(arr, n); // Sort the array in ascending order\n\n    printf(\"Sorted array (ascending): \");\n    for (i = 0; i < n; i++) {\n        printf(\"%d \", arr[i]);\n    }\n    printf(\"\\n\");\n\n    free(arr); // Free the dynamically allocated memory\n    return 0;\n}\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Array Programs \u2013 1D"
+        },
+        {
+            "question_number": "29.b.ii",
+            "question_text": "Write short notes on conditional operators. Give suitable examples.",
+            "marks": 4,
+            "answer": "**Conditional Operator (Ternary Operator):**\nThe conditional operator is C's only ternary operator, meaning it takes three operands. It provides a concise way to write a simple `if-else` statement that returns a value based on a condition, all in a single line.\n\n*   **Syntax:** `condition ? expression_if_true : expression_if_false;`\n*   **How it works:**\n    1.  The `condition` is evaluated first.\n    2.  If `condition` is true (non-zero), `expression_if_true` is executed, and its result becomes the result of the entire conditional expression.\n    3.  If `condition` is false (zero), `expression_if_false` is executed, and its result becomes the result of the entire conditional expression.\n*   **Return Value:** The conditional operator always returns a value. The two expressions (`expression_if_true` and `expression_if_false`) should typically evaluate to compatible types.\n\n**Examples:**\n\n1.  **Assigning a value based on a condition:**\n    ```c\n    int a = 10, b = 20;\n    int max = (a > b) ? a : b; // max will be 20\n    printf(\"The maximum of %d and %d is %d\\n\", a, b, max);\n\n    int age = 15;\n    char* status = (age >= 18) ? \"Adult\" : \"Minor\";\n    printf(\"Age %d: %s\\n\", age, status); // Output: Age 15: Minor\n    ```\n\n2.  **Printing messages conditionally:**\n    ```c\n    int num = 7;\n    printf(\"The number %d is %s.\\n\", num, (num % 2 == 0) ? \"Even\" : \"Odd\");\n    // Output: The number 7 is Odd.\n    ```\n\nThe conditional operator is useful for situations where you need to choose between two values or expressions based on a simple condition, making the code more compact and sometimes more readable.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Condition Operators, Operator Precedence"
+        },
+        {
+            "question_number": "30.a",
+            "question_text": "Illustrate the various function prototypes with example.",
+            "marks": 12,
+            "answer": "A function prototype (or function declaration) specifies the function's name, return type, and parameters. It informs the compiler about the function's signature before its actual definition, allowing for type-checking during function calls and ensuring correct argument passing.\n\nHere are various function prototypes categorized by their argument and return types:\n\n1.  **Function with No Arguments and No Return Value (`void` return type):**\n    *   **Prototype:** `void greet();`\n    *   **Explanation:** Performs an action, takes no input, and doesn't return any value.\n\n2.  **Function with No Arguments and a Return Value:**\n    *   **Prototype:** `int get_number();`\n    *   **Explanation:** Computes or fetches a value to return, but needs no input parameters.\n\n3.  **Function with Arguments and No Return Value (`void` return type):**\n    *   **Prototype:** `void print_sum(int a, int b);`\n    *   **Explanation:** Takes input parameters to perform an action, but the result is not returned to the caller (e.g., it might be printed directly).\n\n4.  **Function with Arguments and a Return Value:**\n    *   **Prototype:** `int add(int x, int y);`\n    *   **Explanation:** Takes input parameters, performs computations, and returns a single value as its result to the calling function.\n\n**Complete Example illustrating these prototypes:**\n\n```c\n#include <stdio.h>\n\n// --- Function Prototypes ---\nvoid greet();                             // 1. No arguments, no return value\nint get_number();                         // 2. No arguments, returns an int\nvoid print_sum(int a, int b);             // 3. Two int arguments, no return value\nint add(int x, int y);                    // 4. Two int arguments, returns an int\ndouble multiply(double val1, double val2); // Example with different data types\n\nint main() {\n    printf(\"--- Function Calls ---\\n\");\n\n    greet(); // Call function 1\n\n    int num = get_number(); // Call function 2\n    printf(\"Retrieved number: %d\\n\", num);\n\n    print_sum(10, 20); // Call function 3\n\n    int sum_result = add(25, 15); // Call function 4\n    printf(\"Addition result: %d\\n\", sum_result);\n\n    double product_result = multiply(3.5, 2.0); // Call function with different types\n    printf(\"Multiplication result: %.2f\\n\", product_result);\n\n    return 0;\n}\n\n// --- Function Definitions ---\n\nvoid greet() {\n    printf(\"Hello from greet function!\\n\");\n}\n\nint get_number() {\n    return 42;\n}\n\nvoid print_sum(int a, int b) {\n    printf(\"Sum of %d and %d is %d\\n\", a, b, a + b);\n}\n\nint add(int x, int y) {\n    return x + y;\n}\n\ndouble multiply(double val1, double val2) {\n    return val1 * val2;\n}\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Function prototype declaration, function definition"
+        },
+        {
+            "question_number": "30.b",
+            "question_text": "Write a C program to read two matrices a and b as input from the user and get the option from user as 1 for addition and 2 for transpose of matrix a.",
+            "marks": 12,
+            "answer": "```c\n#include <stdio.h>\n#include <stdlib.h> // For exit() if needed, though not strictly used for graceful exit here\n\n#define MAX_ROWS 10\n#define MAX_COLS 10\n\n// Function to read a matrix from the user\nvoid readMatrix(int matrix[MAX_ROWS][MAX_COLS], int rows, int cols, char name) {\n    printf(\"Enter elements for Matrix %c (%d x %d):\\n\", name, rows, cols);\n    for (int i = 0; i < rows; i++) {\n        for (int j = 0; j < cols; j++) {\n            printf(\"Enter element [%d][%d]: \", i + 1, j + 1);\n            scanf(\"%d\", &matrix[i][j]);\n        }\n    }\n}\n\n// Function to print a matrix\nvoid printMatrix(int matrix[MAX_ROWS][MAX_COLS], int rows, int cols, char name) {\n    printf(\"\\nMatrix %c (%d x %d):\\n\", name, rows, cols);\n    for (int i = 0; i < rows; i++) {\n        for (int j = 0; j < cols; j++) {\n            printf(\"%5d \", matrix[i][j]);\n        }\n        printf(\"\\n\");\n    }\n}\n\n// Function for matrix addition\nvoid addMatrices(int matA[MAX_ROWS][MAX_COLS], int matB[MAX_ROWS][MAX_COLS],\n                 int result[MAX_ROWS][MAX_COLS], int rows, int cols) {\n    for (int i = 0; i < rows; i++) {\n        for (int j = 0; j < cols; j++) {\n            result[i][j] = matA[i][j] + matB[i][j];\n        }\n    }\n}\n\n// Function for matrix transpose\nvoid transposeMatrix(int matA[MAX_ROWS][MAX_COLS], int result[MAX_COLS][MAX_ROWS],\n                             int rows, int cols) {\n    for (int i = 0; i < rows; i++) {\n        for (int j = 0; j < cols; j++) {\n            result[j][i] = matA[i][j];\n        }\n    }\n}\n\nint main() {\n    int matA[MAX_ROWS][MAX_COLS], matB[MAX_ROWS][MAX_COLS], sumMat[MAX_ROWS][MAX_COLS];\n    // Transpose matrix dimensions are swapped (cols x rows)\n    int transposeMat[MAX_COLS][MAX_ROWS];\n    int r1, c1, r2, c2; // Rows and columns for Matrix A and B\n    int choice;\n\n    printf(\"Enter rows and columns for Matrix A (max %d x %d): \", MAX_ROWS, MAX_COLS);\n    scanf(\"%d %d\", &r1, &c1);\n    if (r1 <= 0 || c1 <= 0 || r1 > MAX_ROWS || c1 > MAX_COLS) {\n        printf(\"Invalid dimensions for Matrix A.\\n\");\n        return 1;\n    }\n\n    printf(\"Enter rows and columns for Matrix B (max %d x %d): \", MAX_ROWS, MAX_COLS);\n    scanf(\"%d %d\", &r2, &c2);\n    if (r2 <= 0 || c2 <= 0 || r2 > MAX_ROWS || c2 > MAX_COLS) {\n        printf(\"Invalid dimensions for Matrix B.\\n\");\n        return 1;\n    }\n\n    // Read elements for Matrix A and B\n    readMatrix(matA, r1, c1, 'A');\n    readMatrix(matB, r2, c2, 'B');\n\n    // Print original matrices for verification\n    printMatrix(matA, r1, c1, 'A');\n    printMatrix(matB, r2, c2, 'B');\n\n    printf(\"\\nChoose an operation:\\n\");\n    printf(\"1. Matrix Addition (A + B)\\n\");\n    printf(\"2. Transpose of Matrix A (A^T)\\n\");\n    printf(\"Enter your choice (1 or 2): \");\n    scanf(\"%d\", &choice);\n\n    switch (choice) {\n        case 1:\n            // For addition, matrices must have the same dimensions\n            if (r1 == r2 && c1 == c2) {\n                addMatrices(matA, matB, sumMat, r1, c1);\n                printf(\"\\nResult of Matrix Addition (A + B):\\n\");\n                printMatrix(sumMat, r1, c1, 'S'); // 'S' for Sum Matrix\n            } else {\n                printf(\"\\nMatrices dimensions are not compatible for addition.\\n\");\n            }\n            break;\n        case 2:\n            transposeMatrix(matA, transposeMat, r1, c1);\n            printf(\"\\nTranspose of Matrix A (A^T):\\n\");\n            // For transpose, rows and columns are swapped for printing\n            printMatrix(transposeMat, c1, r1, 'T'); // 'T' for Transpose Matrix\n            break;\n        default:\n            printf(\"Invalid choice. Please enter 1 or 2.\\n\");\n            break;\n    }\n\n    return 0;\n}\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Initializing and Accessing 2D Array, Array Programs \u2013 2D"
+        },
+        {
+            "question_number": "31.a.i",
+            "question_text": "Write a C program to swap two elements using call by reference.",
+            "marks": 8,
+            "answer": "```c\n#include <stdio.h>\n\n// Function to swap two integers using call by reference\n// It takes pointers to integers as arguments, allowing it to modify the original variables.\nvoid swap(int *ptr1, int *ptr2) {\n    int temp;          // Temporary variable to hold a value during swap\n    temp = *ptr1;      // Dereference ptr1 to get its value, store in temp\n    *ptr1 = *ptr2;     // Dereference ptr1 and ptr2, assign value of ptr2 to the location ptr1 points to\n    *ptr2 = temp;      // Dereference ptr2, assign value of temp to the location ptr2 points to\n}\n\nint main() {\n    int a = 10;\n    int b = 20;\n\n    printf(\"Before swapping: a = %d, b = %d\\n\", a, b);\n\n    // Call the swap function, passing the addresses of 'a' and 'b'.\n    // The pointers 'ptr1' and 'ptr2' in swap() will receive these addresses.\n    swap(&a, &b);\n\n    printf(\"After swapping:  a = %d, b = %d\\n\", a, b);\n\n    return 0;\n}\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Call by Value, Call by Reference"
+        },
+        {
+            "question_number": "31.a.ii",
+            "question_text": "Classify the various preprocessor directives available in C.",
+            "marks": 4,
+            "answer": "Preprocessor directives are instructions to the C preprocessor, the first phase of compilation. They begin with a `#` symbol and are processed before the actual compilation. They are used for tasks like file inclusion, macro expansion, and conditional compilation.\n\nC preprocessor directives can be classified into these categories:\n\n1.  **Macro Definition/Undefinition Directives:**\n    *   `#define`: Used to define macros, which are symbolic constants or function-like code snippets.\n        *   Example: `#define PI 3.14159`\n    *   `#undef`: Used to undefine a previously defined macro.\n        *   Example: `#undef PI`\n\n2.  **File Inclusion Directives:**\n    *   `#include`: Used to insert the content of another file (header file) into the current source file.\n        *   `#include <filename>`: For standard library headers.\n        *   `#include \"filename\"`: For user-defined headers.\n        *   Example: `#include <stdio.h>`\n\n3.  **Conditional Compilation Directives:**\n    These directives allow parts of the code to be compiled only if certain conditions are met, useful for platform-specific code or debugging.\n    *   `#if`: Checks if a constant expression is true.\n    *   `#elif`: Short for \"else if\", for multiple conditions.\n    *   `#else`: Specifies code to be compiled if none of the preceding `#if` or `#elif` conditions are true.\n    *   `#endif`: Marks the end of an `#if`, `#ifdef`, or `#ifndef` block.\n    *   `#ifdef`: Checks if a macro is defined.\n    *   `#ifndef`: Checks if a macro is NOT defined.\n        *   Example:\n            ```c\n            #ifdef DEBUG\n                printf(\"Debug mode active.\\n\");\n            #endif\n            ```\n\n4.  **Error Directive:**\n    *   `#error`: Causes the preprocessor to issue an error message and halt compilation.\n        *   Example: `#error \"This OS is not supported!\"`\n\n5.  **Pragma Directive:**\n    *   `#pragma`: Provides a way to give implementation-specific instructions to the compiler. Its behavior is compiler-dependent.\n        *   Example: `#pragma once` (common in some compilers for header guards)\n\n6.  **Line Control Directive:**\n    *   `#line`: Used to change the current line number and filename reported by the compiler, often used by tools that generate C code.\n        *   Example: `#line 100 \"generated_code.c\"`\n\n7.  **Null Directive:**\n    *   `#`: A single `#` character on a line, which does nothing. It is ignored by the preprocessor.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to C: Structure of the C program"
+        },
+        {
+            "question_number": "31.b.i",
+            "question_text": "Write short notes on Constant pointers",
+            "marks": 4,
+            "answer": "**Constant Pointers (Pointer to Constant Value):**\nA constant pointer is a pointer variable whose value (the memory address it holds) cannot be changed after its initialization. This means a constant pointer will always point to the same memory location throughout its lifetime. However, the data *at* that memory location can be modified, unless the data itself is declared as constant.\n\n**Declaration Syntax:**\n`type *const pointer_name;`\n\n**Example:**\n```c\n#include <stdio.h>\n\nint main() {\n    int x = 10;\n    int y = 20;\n\n    int *const ptr_x = &x; // ptr_x is a constant pointer to an int\n\n    printf(\"Initial value of *ptr_x: %d (points to address %p)\\n\", *ptr_x, (void*)ptr_x);\n\n    // You CAN change the value of the data being pointed to:\n    *ptr_x = 100; // This changes the value of x to 100\n    printf(\"Value of x after *ptr_x = 100: %d\\n\", x);\n    printf(\"Value of *ptr_x after modification: %d (still points to %p)\\n\", *ptr_x, (void*)ptr_x);\n\n    // You CANNOT change where the constant pointer points:\n    // ptr_x = &y; // ERROR: assignment of read-only variable 'ptr_x'\n    // Attempting this line would result in a compilation error because ptr_x cannot be reassigned.\n\n    return 0;\n}\n```\nIn summary, for a constant pointer, the address stored in the pointer itself is immutable. It will always point to the same variable it was initialized with.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Pointer Declaration and dereferencing, Void Pointers, Null pointers Pointer based Array manipulation"
+        },
+        {
+            "question_number": "31.b.ii",
+            "question_text": "Function pointers",
+            "marks": 4,
+            "answer": "**Function Pointers:**\nA function pointer is a variable that stores the memory address of a function. Just like a regular pointer stores the address of a variable, a function pointer stores the entry point (start address) of the executable code of a function. This allows functions to be passed as arguments to other functions, returned from functions, or stored in data structures, providing a mechanism for implementing callback functions, event handlers, and generic algorithms.\n\n**Declaration Syntax:**\n`return_type (*pointer_name)(parameter_list);`\n\n**Example:**\n```c\n#include <stdio.h>\n\n// A simple function that adds two integers\nint add(int a, int b) {\n    return a + b;\n}\n\n// A simple function that subtracts two integers\nint subtract(int a, int b) {\n    return a - b;\n}\n\nint main() {\n    // Declare a function pointer 'operation_ptr' that can point to\n    // functions taking two ints and returning an int.\n    int (*operation_ptr)(int, int);\n\n    // Assign the address of the 'add' function to the pointer\n    operation_ptr = &add; // '&' is optional for function names, can also be just 'add'\n\n    // Call the 'add' function using the function pointer\n    int result_add = (*operation_ptr)(10, 5); // '*' is optional for calling, can also be 'operation_ptr(10, 5)'\n    printf(\"Result of addition (via pointer): %d\\n\", result_add); // Output: 15\n\n    // Assign the address of the 'subtract' function to the pointer\n    operation_ptr = subtract; // Assigning 'subtract' function's address\n\n    // Call the 'subtract' function using the function pointer\n    int result_subtract = operation_ptr(10, 5);\n    printf(\"Result of subtraction (via pointer): %d\\n\", result_subtract); // Output: 5\n\n    return 0;\n}\n```\nFunction pointers are crucial for dynamic function calls and implementing polymorphism in C.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Function Pointers"
+        },
+        {
+            "question_number": "31.b.iii",
+            "question_text": "Null pointers",
+            "marks": 4,
+            "answer": "**Null Pointers:**\nA null pointer is a pointer that does not point to any valid memory location. It is a special pointer value that indicates the pointer is not currently associated with any memory block or object. In C, `NULL` is a macro defined in several standard library headers (e.g., `<stddef.h>`, `<stdio.h>`, `<stdlib.h>`) and typically expands to an integer constant expression with value 0, or `((void*)0)`. The C++11 standard introduced `nullptr` as a type-safe alternative.\n\n**Purpose and Use:**\n*   **Initialization:** To initialize a pointer variable when it doesn't point to a valid object, preventing it from holding a garbage address.\n*   **Error Handling:** Functions that return pointers (e.g., `malloc`, `fopen`) often return `NULL` to signal failure (e.g., memory allocation failed, file not found).\n*   **Sentinel Value:** In data structures like linked lists, a null pointer can mark the end of the list.\n*   **Avoiding Dangling Pointers:** After `free()`ing dynamically allocated memory, it's good practice to set the pointer to `NULL` to avoid it becoming a dangling pointer.\n\n**Example:**\n```c\n#include <stdio.h>\n#include <stdlib.h> // For malloc and NULL\n\nint main() {\n    int *ptr1 = NULL; // Initializing ptr1 to NULL - safe state\n\n    // Always check for NULL before dereferencing to prevent crashes\n    if (ptr1 == NULL) {\n        printf(\"ptr1 is a null pointer.\\n\");\n    }\n\n    // Example with dynamic memory allocation and error checking\n    int *arr = (int *)malloc(5 * sizeof(int));\n    if (arr == NULL) {\n        printf(\"Memory allocation failed!\\n\");\n    } else {\n        printf(\"Memory allocated successfully for array. (Address: %p)\\n\", (void*)arr);\n        // ... use arr ...\n        free(arr);   // Deallocate the memory\n        arr = NULL;  // Set the pointer to NULL to avoid dangling pointer\n        printf(\"Memory freed and arr set to NULL.\\n\");\n    }\n\n    if (arr == NULL) {\n        printf(\"arr is now a null pointer after freeing.\\n\");\n    }\n\n    return 0;\n}\n```\nDereferencing a null pointer (`*ptr1` when `ptr1` is `NULL`) results in undefined behavior, which commonly leads to program crashes (e.g., segmentation fault). Therefore, checking for `NULL` is a fundamental safety practice in C programming.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Pointer Declaration and dereferencing, Void Pointers, Null pointers Pointer based Array manipulation"
+        },
+        {
+            "question_number": "32.a",
+            "question_text": "Write a C program to find the number of characters in a given name using the structure.",
+            "marks": 12,
+            "answer": "```c\n#include <stdio.h>\n#include <string.h> // For strlen() and strcspn()\n\n// Define a structure to hold a person's name\nstruct PersonName {\n    char firstName[50];\n    char lastName[50];\n};\n\nint main() {\n    struct PersonName person;\n    int totalChars = 0;\n\n    printf(\"Enter first name: \");\n    // Use fgets to read string including spaces and to prevent buffer overflow.\n    // It reads the newline character as well, so we remove it.\n    fgets(person.firstName, sizeof(person.firstName), stdin);\n    person.firstName[strcspn(person.firstName, \"\\n\")] = 0; // Remove trailing newline\n\n    printf(\"Enter last name: \");\n    fgets(person.lastName, sizeof(person.lastName), stdin);\n    person.lastName[strcspn(person.lastName, \"\\n\")] = 0; // Remove trailing newline\n\n    printf(\"\\nFull Name: %s %s\\n\", person.firstName, person.lastName);\n\n    // Calculate number of characters in first name\n    totalChars += strlen(person.firstName);\n\n    // Calculate number of characters in last name\n    totalChars += strlen(person.lastName);\n\n    // If we want to include the space between first and last name in the total count:\n    // if (strlen(person.firstName) > 0 && strlen(person.lastName) > 0) {\n    //     totalChars += 1; // For the space character\n    // }\n\n    printf(\"Total number of characters in the full name (excluding spaces): %d\\n\", totalChars);\n\n    return 0;\n}\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Operations on Strings"
+        },
+        {
+            "question_number": "32.b",
+            "question_text": "Summarize the various file operations used in C. Give suitable examples.",
+            "marks": 12,
+            "answer": "File operations in C enable programs to interact with files stored on disk, allowing for persistent storage and retrieval of data. The standard C library (`<stdio.h>`) provides a set of functions for these operations.\n\nThe primary file operations include:\n\n1.  **Opening a File (`fopen()`):**\n    *   **Purpose:** Establishes a connection between the program and a file on disk, returning a file pointer (`FILE *`) that is used for all subsequent operations on that file. If the file cannot be opened, it returns `NULL`.\n    *   **Syntax:** `FILE *fp = fopen(\"filename.txt\", \"mode\");`\n    *   **Common Modes:**\n        *   `\"r\"`: Read mode (file must exist).\n        *   `\"w\"`: Write mode (creates a new file or truncates an existing one).\n        *   `\"a\"`: Append mode (creates if not exists, writes at the end if exists).\n        *   `\"r+\"`: Read and write (file must exist).\n        *   `\"w+\"`: Read and write (creates or truncates).\n        *   `\"a+\"`: Read and append (creates if not exists, writes at end if exists).\n        *   Add 'b' for binary mode (e.g., `\"rb\"`, `\"wb\"`).\n    *   **Example:** `FILE *file = fopen(\"data.txt\", \"w\");`\n\n2.  **Writing to a File:**\n    *   **Character by Character (`fputc()`):** Writes a single character to the file.\n        *   **Syntax:** `fputc(char_to_write, fp);`\n        *   **Example:** `fputc('H', file);`\n    *   **String (`fputs()`):** Writes a null-terminated string to the file.\n        *   **Syntax:** `fputs(string, fp);`\n        *   **Example:** `fputs(\"Hello, File!\\n\", file);`\n    *   **Formatted Output (`fprintf()`):** Writes formatted data to the file, similar to `printf()`.\n        *   **Syntax:** `fprintf(fp, \"format_string\", variables);`\n        *   **Example:** `fprintf(file, \"Number: %d\\n\", 123);`\n    *   **Block of Data (`fwrite()`):** Writes blocks of binary data to the file.\n        *   **Syntax:** `fwrite(buffer, size_of_element, num_elements, fp);`\n        *   **Example:** `int data[] = {1, 2, 3}; fwrite(data, sizeof(int), 3, file);`\n\n3.  **Reading from a File:**\n    *   **Character by Character (`fgetc()`):** Reads a single character from the file. Returns `EOF` at the end of the file or on error.\n        *   **Syntax:** `char ch = fgetc(fp);`\n        *   **Example:** `char ch = fgetc(file);`\n    *   **String (`fgets()`):** Reads a line or a specified number of characters into a buffer.\n        *   **Syntax:** `fgets(buffer, max_chars, fp);`\n        *   **Example:** `char line[100]; fgets(line, sizeof(line), file);`\n    *   **Formatted Input (`fscanf()`):** Reads formatted data from the file, similar to `scanf()`.\n        *   **Syntax:** `fscanf(fp, \"format_string\", &variables);`\n        *   **Example:** `int num; fscanf(file, \"%d\", &num);`\n    *   **Block of Data (`fread()`):** Reads blocks of binary data from the file.\n        *   **Syntax:** `fread(buffer, size_of_element, num_elements, fp);`\n        *   **Example:** `int read_data[3]; fread(read_data, sizeof(int), 3, file);`\n\n4.  **Closing a File (`fclose()`):**\n    *   **Purpose:** Flushes any buffered data to the file, releases the file handle, and breaks the connection. This is crucial to prevent data loss and free system resources.\n    *   **Syntax:** `fclose(fp);`\n    *   **Example:** `fclose(file);`\n\n5.  **Other Important File Operations:**\n    *   `fseek()`: Sets the file position indicator to a specified offset from a reference point (beginning, current, or end of file).\n    *   `ftell()`: Returns the current file position indicator.\n    *   `rewind()`: Sets the file position indicator to the beginning of the file.\n    *   `remove()`: Deletes a file from the disk.\n    *   `rename()`: Renames a file.\n\n**Example demonstrating common file operations:**\n\n```c\n#include <stdio.h>\n#include <stdlib.h> // For exit() (though not used directly for failure here)\n\nint main() {\n    FILE *fp;             // File pointer\n    char buffer[100];    // Buffer for reading lines\n    int number_to_write = 45;\n    char *text_to_write = \"Hello C File I/O!\";\n\n    // 1. Write to a file (create/overwrite)\n    fp = fopen(\"example.txt\", \"w\");\n    if (fp == NULL) {\n        perror(\"Error opening file for writing\");\n        return 1;\n    }\n    fprintf(fp, \"This is a test line.\\n\");\n    fprintf(fp, \"The number is: %d\\n\", number_to_write);\n    fputs(text_to_write, fp);\n    fputc('\\n', fp); // Add a newline after the string\n    fclose(fp);\n    printf(\"Data written to example.txt\\n\");\n\n    // 2. Read from the file\n    fp = fopen(\"example.txt\", \"r\");\n    if (fp == NULL) {\n        perror(\"Error opening file for reading\");\n        return 1;\n    }\n    printf(\"\\nReading from example.txt:\\n\");\n    while (fgets(buffer, sizeof(buffer), fp) != NULL) {\n        printf(\"%s\", buffer); // Print each line read\n    }\n    fclose(fp);\n\n    // 3. Append to the file\n    fp = fopen(\"example.txt\", \"a\");\n    if (fp == NULL) {\n        perror(\"Error opening file for appending\");\n        return 1;\n    }\n    fprintf(fp, \"This line was appended.\\n\");\n    fclose(fp);\n    printf(\"\\nData appended to example.txt\\n\");\n\n    // 4. Read again to show appended content\n    fp = fopen(\"example.txt\", \"r\");\n    if (fp == NULL) {\n        perror(\"Error opening file for reading after append\");\n        return 1;\n    }\n    printf(\"\\nReading again from example.txt (after append):\\n\");\n    while (fgets(buffer, sizeof(buffer), fp) != NULL) {\n        printf(\"%s\", buffer);\n    }\n    fclose(fp);\n\n    // 5. Delete the file\n    if (remove(\"example.txt\") == 0) {\n        printf(\"\\nexample.txt deleted successfully.\\n\");\n    }\n    else {\n        perror(\"\\nError deleting example.txt\");\n    }\n\n    return 0;\n}\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Input and output statements"
+        }
+    ]
+}

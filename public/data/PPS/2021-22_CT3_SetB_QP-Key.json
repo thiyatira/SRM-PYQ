@@ -1,0 +1,150 @@
+{
+    "paper_title": "Programming For Problem Solving (SRM Institute of Science and Technology)",
+    "source": "2021-22 CT3 SetB",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "In C, if you pass an array as an argument to a function, what actually gets passed?\na) The entire array\nb) The number of elements in the array\nc) Base address of the array\nd) The last element of the array",
+            "marks": 1,
+            "answer": "c) Base address of the array",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Function prototype declaration, function definition"
+        },
+        {
+            "question_number": "2",
+            "question_text": "At which stage the following code #include<stdio.h> gets replaced by the contents of the file stdio.h?\na) During Preprocessing\nb) During Compilation\nc) During Linking\nd) During Execution",
+            "marks": 1,
+            "answer": "a) During Preprocessing",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to C: Structure of the C program"
+        },
+        {
+            "question_number": "3",
+            "question_text": "How many numbers of pointer (*) does C have against a pointer variable declaration?\na) Only one\nb) Two\nc) Three\nd) No limits.",
+            "marks": 1,
+            "answer": "d) No limits.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Pointer Declaration and dereferencing"
+        },
+        {
+            "question_number": "4",
+            "question_text": "Predict the output of the given code snippet\n#include <stdio.h>\nvoid foo(int*);\nint main()\n{\nint i= 10, *p = &i;\nfoo(p++);\n}\nvoid foo(int *p)\n{\nprintf(\"%d\\n\", *p);\n}\na) 10\nb) 11\nc) Garbage value\nd) Compilation error",
+            "marks": 1,
+            "answer": "a) 10",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Pointer Declaration and dereferencing"
+        },
+        {
+            "question_number": "5",
+            "question_text": "What is the output of this C code?\n#include <stdio.h>\nvoid main()\n{\nint k = 5;\nint *p = &k;\nint **m = &p;\n**m = 6;\nprintf(\"%d\\n\", k);\n}\na) 5\nb) 0\nc) 6\nd) Compilation error",
+            "marks": 1,
+            "answer": "c) 6",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Pointer Declaration and dereferencing"
+        },
+        {
+            "question_number": "6",
+            "question_text": "Identify the output of the following program\nint main() {\nstruct {\nint color[10];\nboat1, boat2;\n}boat_ship;\nboat_ship.boat1 = 10; boat2 = boat1;\nprintf(\"boat2=%d\", boat2.size); return 0;\n}\na) boat2=0\nb) boat2=~1\nc) boat2=10\nd) Compiler error",
+            "marks": 1,
+            "answer": "C",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Numeric Data types: integer, floating point Non-Numeric Data types: char and string"
+        },
+        {
+            "question_number": "7",
+            "question_text": "The size of the following union declaration is----- (Assuming size of double = 8, size of int = 4, size of char = 1)\n#include <stdio.h>\nunion uTemp\n{\ndouble a; int b[10]; char c;\n}u;\na) 4\nb) 8\nc) 40\nd) 80",
+            "marks": 1,
+            "answer": "C",
+            "answer_source": "provided",
+            "chapter": "Unit 2: One Dimensional (1D) Array Declaration and initialization"
+        },
+        {
+            "question_number": "8",
+            "question_text": "What will be the output of the following C code?\n#include <stdio.h>\ntypedef int integer;\nint main()\n{\ninteger i = 10, *ptr;\nfloat f = 20, integer j=1;\nptr = &j; printf(\"%d\\n\", *ptr); return 0;\n}\na) 200\nb) 100\nc) 20\nd) 10",
+            "marks": 1,
+            "answer": "D",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Pointer Declaration and dereferencing"
+        },
+        {
+            "question_number": "9",
+            "question_text": "Choose a correct syntax for FSCANF and FPRINTF in C language.\na) fprintf(\"format specifier\",variables), fp); fscanf(\"format specifier\",variables, fp);\nb) fprintf(fp,count,\"format specifier\",variables); fscanf(fp,count, \"format specifier\",variables);\nc) fprintf(fp,\"format specifier\",variables); fscanf(fp,\"format specifier\",variables);\nd) fprintf(fp,\"format specifier\",variables); fscanf(\"format specifier\",variables);",
+            "marks": 1,
+            "answer": "C",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Input and output statements"
+        },
+        {
+            "question_number": "10",
+            "question_text": "What is the output of this C code?\n#include <stdio.h>\n#include <stdlib.h>\nint main()\n{\nint *ptr1, *ptr2;\nptr1 = malloc(4); *ptr1 = 10;\n*ptr2 = free(ptr1); printf(\"%d\\n\",*ptr2);\nreturn 0;\n}\na) 10\nb) It will print the address stored in ptr1\nc) It will print the address stored in ptr2\nd) It will give an error",
+            "marks": 1,
+            "answer": "D",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Pointer Declaration and dereferencing"
+        },
+        {
+            "question_number": "11",
+            "question_text": "Define a macro to find the maximum of three integers",
+            "marks": 5,
+            "answer": "#include<stdio.h>\n#define max(x, y, z) ( (x > y && x > z) ? x : ( y >z)?y:z)\nint main()\n{\nint a, b, c;\nprintf(\"Enter 3 integer numbers\\n\");\nscanf(\"%d%d%d\", &a, &b, &c);\nprintf(\"Maximum of 3 numbers is %d\\n\", max(a, b, c));\nreturn 0;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Condition Operators, Operator Precedence"
+        },
+        {
+            "question_number": "12",
+            "question_text": "A class teacher wants to maintain the list of top 5 students' names. She tries to develop a program for this using array of pointers. Is it possible? Justify your answer.",
+            "marks": 5,
+            "answer": "Yes.It is possible to maintain the list of top 5 students' names using an array of pointers\nJustification:\nAn array of pointers to strings is an array of character pointers where each pointer points to the first character of the string or the base address of the string.\nDeclaration and initialization of an array of pointers to strings:\nchar *topper[5] = {\n\"Michal\",\n\"Celine\",\n\"Tina\",\n\"Robert\",\n\"James\"\n};\nEach element of the 'topper' array is a string literal and since a string literal points to the base address of the first character, the base type of each element of the 'topper' array is a pointer to char or (char*).\nThe 0th element i.e topper[0] points to the base address of string \"Michal\". Similarly, the 1st element i.e topper[1] points to the base address of string \"Celine\" and so on.\n[Image description: A visual representation of the 'toppers' array with 5 elements. Each element (1st to 5th) points to a student's name: 1st \u2192 Michal, 2nd \u2192 Celine, 3rd \u2192 Tina, 4th \u2192 Robert, 5th \u2192 James.]",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Pointer based Array manipulation"
+        },
+        {
+            "question_number": "13",
+            "question_text": "Tavisha is getting the student's information such as roll_no, fname and lname of 5 students and she wanted to prints the records in ascending order on the basis of roll_no. she is quite confused to accomplish this task. Can you please help her to do the same?",
+            "marks": 5,
+            "answer": "for(i=0; i<5; i++)\n{\nprintf(\"\\n Enter roll number:\");\nscanf(\"%d\", &s[i].roll_no);\nprintf(\"\\n Enter first name:\");\nscanf(\"%s\", &s[i].f_name);\nprintf(\"\\n Enter Lastname:\");\nscanf(\"%s\", &s[i].l_name);\n}\nfor(i=0; i<5; i++)\n{\nfor(j=i+1; j<5; j++)\n{\nif(s[i].roll_no<s[j].roll_no)\n{\ntemp = s[i].roll_no;\ns[i].roll_no=s[j].roll_no;\ns[j].roll_no=temp;\n}\n}\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Looping Control Statements: nested for, nested while"
+        },
+        {
+            "question_number": "14",
+            "question_text": "Categorize the basic operations that can be performed on a file with suitable declarations.",
+            "marks": 5,
+            "answer": "fopen - open a file- specify how its opened\n(read/write) and type (binary/text)\nfilepointer=fopen(\"filename\", \"mode\");\nfclose - close an opened file\nfclose(spData);\nfread - read from a file\nsize_t fread(void *ptr, size_t size, size_t n, FILE\n*stream);\nfwrite - write to a file\nsize_t fwrite(const void *ptr, size_t size, size_t n,\nFILE*stream);\nfseek/fsetpos - move a file pointer to somewhere\nin a file.\nfseek(FILE *stream, long int offset, int whence)\nftell/fgetpos - tell you where the file pointer is\nlocated.\noffset = ftell(file pointer );",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Input and output statements"
+        },
+        {
+            "question_number": "15 a",
+            "question_text": "Demonstrate a C function that will fill an array with a specified value, i.e. every array element should become the specified value. The function must have this prototype: int fillArray(int size, int array[], int value); The function should take three parameters: the length of the array, the array itself, and the value to fill the array with. For example, if the specified value was 42, and the array contained the following 6 elements: 3,1, 4, 1, 5, 9. Your function should replace each of those elements with the value 42: 42, 42, 42, 42, 42,42",
+            "marks": 10,
+            "answer": "#include <stdio.h>\nint fillArray(int size, int array[], int value);\nint main() {\nint a[10],i,n,fill_value;\nprintf(\"Enter the number of elements\");\nscanf(\"%d\",&n);\nprintf(\"Enter the elements\");\nfor(i=0;i<n;i++)\n{\nscanf(\"%d\",&a[i]);\n}\nprintf(\"Enter the value to fill\");\nscanf(\"%d\",&fill_value);\nprintf(\"Arrays elements before filling\\n\");\nfor(i=0;i<n;i++)\n{\nprintf(\"%d\\t\",a[i]);\n}\nfillArray(n,a,fill_value);\nprintf(\"\\nArrays elements after filling\\n\");\nfor(i=0;i<n;i++)\n{\nprintf(\"%d\\t\",a[i]);\n}\nreturn 0;\n}\nint fillArray(int size, int array[], int value)\n{\nint i;\nfor(i=0;i<size;i++)\n{\narray[i]=value;\n}\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Passing Array to Function"
+        },
+        {
+            "question_number": "15 b",
+            "question_text": "Explain in detail with an example illustrating pointer declaration and dereferencing pointers, Void Pointers and size of Void Pointers.",
+            "marks": 10,
+            "answer": "Definition\nA pointer is a variable whose value is the address of another variable, i.e., direct address of the memory location. This is done by using unary operator * that returns the value of the variable located at the address specified by its operand.\nDeclaration:\nSyntax: Datatype *pointervariable;\nSyntax Example\nint *ip; /* pointer to an integer */\ndouble *dp; /* pointer to a double */\nfloat *fp; /* pointer to a float */\nchar *ch /* pointer to a character */\nExample:\nint var = 20;\nint *ip;\nip = &var;\nReference operator (&) and Dereference operator (*)\n& is called reference operator. It gives the address of a variable.\n* is called dereference operator. It gives the value from the address\nVoid Pointer:\n1.Void pointer is a generic pointer and can point to any type of object. The type of object can be char, int, float or any other type.\nExample\n[Image description: C code snippet showing `int a=10; void *ptr=&a; printf(\"%u\",ptr);` outputting address `65524`]\n2.A pointer to any type of object can be assigned to a void pointer.\n[Image description: C code snippet showing `int a=10; int *iptr=&a; void *vptr=iptr; printf(\"int is implicitely converted to void %u\\n%u\",vptr,iptr);` outputting `int is implicitely converted to void* 65524 65524`]\nSize of Void pointer:\nThe size of void pointer varies system to system. If the system is 16-bit, size of void pointer is 2 bytes. If the system is 32-bit, size of void pointer is 4 bytes. If the system is 64-bit, size of void pointer is 8 bytes.\nHere is an example to find the size of void pointer in C language,\n[Image description: C code snippet showing `printf(\"The size of pointer value: %d\", sizeof(ptr));` outputting `4`]",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Pointer Declaration and dereferencing, Void Pointers"
+        },
+        {
+            "question_number": "16 a",
+            "question_text": "Sejal is working on the menu creation of a library. She wanted to create a structure containing book information like accession number, name of the author, book title, and flag to know whether the book is issued or not.\nHelp her to create a menu in which the following can be done.\n1 - Display book information\n2- Add a new book\n3- Display all the books in the library of a particular author\n4 - Display the number of books of a particular title\n5 - Display the total number of books in the library\n6- Issue a book\n(If we issue a book, then its number gets decreased by 1 and if we add a book, its number gets increased by 1)",
+            "marks": 10,
+            "answer": "#include\n<stdio.h>\n#include\n<string.h>\nstruct book\n{\nint an;\nchar title[30];\nchar author[30];\nint issued;\n};\nvoid\ndisplay(struct book b)\n{\nprintf(\"Accession\nnumber-\\t%d\\nBook-\\t\n%s\\nAuthor-\\t%s\\n\",b.an,b.title,b.author);\nif(b.issued == 0)\n{\nprintf(\"Issued-\\ntNo\\n\");\n}\nelse\n{\nprintf(\"Issued-\\ntYes\\n\");\n}\n}\nvoid add()\n{\n//Do yourself\n//issued will be 0\nby defalut\n}\n//passing array\nvoid\nbook_by_author(struct\nbook *b,int\nnumber_of_books,char\nauth[])\n{\nint i;\nfor(i=0;i<number_of_boo\nks;i++)\n{\nif(strcmp((b+i)->author,auth))\n{\ndisplay(*(b+i));\n}\n}\n}\nvoid\nbook_by_title()\n{\n//do it yourself\n}\nvoid\nissue_a_book(struct book\nb)\n{\nb.issued =1;\n}\nint main()\n{\n//write yourself\nreturn 0;\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Function prototype declaration, function definition"
+        },
+        {
+            "question_number": "16 b",
+            "question_text": "Assume you need to allocate dynamic memory of 10 byte for storing some information. Say how this can be done. Can the allocated memory be released if not needed? If not released what are the consequences?",
+            "marks": 10,
+            "answer": "int *ptr;\nptr=(type *)malloc(size);\nExample program for malloc() function:\n#include<stdio.h>\n#include<malloc.h>\n#include<conio.h>\nvoid main()\n{\nfloat *fp;\nfp=(float *)malloc(10);\nprintf(\"Enter a float value : \");\nscanf(\"%f\", &fp);\nprintf(\"The address of pointer in memory is : %u\",\nfp);\nprintf(\"The value stored in memory is : %f\", *fp);\ngetch();\n}\nInt *ptr;\nptr = (type *)calloc(n,m);\nExample program 1 for calloc() function:\n#include<stdio.h>\n#include<calloc.h>\n#include<conio.h>\nvoid main()\n{\nfloat *fp;\nfp=(float *)calloc(10,4);\nprintf(\"Enter a float value: \");\nscanf(\"%f\", &fp);\nprintf(\"The address of pointer in memory is : %u\",\nfp);\nprintf(\"The value stored in memory is : %f\", *fp);\ngetch();\n}\nfree() function: It is used to release the memory space\nwhich is allocated using malloc() or calloc() function\nSyntax: free(ptr);\nWhen program ends, variable ptr goes away, but the\nspace ptr points at does not (allocated on the heap). This\nis called memory leakage problem.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Pointer Declaration and dereferencing, Void Pointers"
+        }
+    ]
+}

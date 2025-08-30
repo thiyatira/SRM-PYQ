@@ -1,0 +1,287 @@
+
+{
+  "paper_title": "18CSS101J-1 to 2 Sem - PYQ",
+  "source": "2022-05 ET",
+  "questions": [
+    {
+      "question_number": "26. a.",
+      "question_text": "What is a flowchart? List and define the purpose of symbols used to represent a flowchart with an example.",
+      "marks": 10,
+      "answer": "A flowchart is a graphical representation of an algorithm, process, or workflow. It uses various symbols to depict different types of actions, decisions, or data flows. Flowcharts are used in programming to visualize the step-by-step logic of a program, making it easier to understand, design, and debug.\n\nPurpose of common flowchart symbols:\n1.  **Terminator (Oval/Rounded Rectangle)**:\n    *   **Purpose**: Represents the start or end of a program or process.\n    *   **Example**: \"Start\", \"End\".\n2.  **Process (Rectangle)**:\n    *   **Purpose**: Indicates an operation or action, such as calculations, data manipulation, or assignment.\n    *   **Example**: \"Calculate sum = a + b\", \"Assign x = 10\".\n3.  **Input/Output (Parallelogram)**:\n    *   **Purpose**: Represents data entering or leaving the system, such as reading input from a user or printing output to the screen.\n    *   **Example**: \"Read N\", \"Print result\".\n4.  **Decision (Diamond)**:\n    *   **Purpose**: Represents a point where a decision is made. It typically has one entry point and two exit points, usually labeled \"Yes/No\" or \"True/False\".\n    *   **Example**: \"Is N > 0?\", \"Is a == b?\".\n5.  **Flow Lines (Arrows)**:\n    *   **Purpose**: Connects symbols and indicates the direction of flow or the sequence of operations.\n    *   **Example**: Arrows pointing from one symbol to the next.\n6.  **Connector (Circle)**:\n    *   **Purpose**: Used to indicate that the flowchart continues on another page or in another section of the same page, avoiding messy flow lines.\n    *   **Example**: A circle with a letter or number inside, indicating a jump to a corresponding connector.\n\n**Example Flowchart: To find the sum of two numbers**\n\n```mermaid\ngraph TD\n    A[Start] --> B(Read num1)\n    B --> C(Read num2)\n    C --> D[sum = num1 + num2]\n    D --> E(Print sum)\n    E --> F[End]\n```",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
+    },
+    {
+      "question_number": "26. b.",
+      "question_text": "Illustrate the uses of bitwise operators through suitable examples.",
+      "marks": 10,
+      "answer": "Bitwise operators in C work on individual bits of integer data types (char, short, int, long). They perform operations on bit patterns. There are six bitwise operators:\n\n1.  **Bitwise AND (`&`)**:\n    *   **Purpose**: Sets each bit to 1 if both corresponding bits are 1, otherwise 0.\n    *   **Use Case**: Checking if a specific bit is set, masking bits.\n    *   **Example**: `5 & 3`\n        *   `5` in binary: `0101`\n        *   `3` in binary: `0011`\n        *   `5 & 3` = `0001` (decimal `1`)\n    *   **Code Example**:\n        ```c\n        #include <stdio.h>\n        int main() {\n            int a = 5;  // 0101\n            int b = 3;  // 0011\n            int result = a & b; // 0001 (1)\n            printf(\"5 & 3 = %d\\n\", result); // Output: 1\n            return 0;\n        }\n        ```\n\n2.  **Bitwise OR (`|`)**:\n    *   **Purpose**: Sets each bit to 1 if at least one of the corresponding bits is 1, otherwise 0.\n    *   **Use Case**: Setting specific bits, combining flag values.\n    *   **Example**: `5 | 3`\n        *   `5` in binary: `0101`\n        *   `3` in binary: `0011`\n        *   `5 | 3` = `0111` (decimal `7`)\n    *   **Code Example**:\n        ```c\n        #include <stdio.h>\n        int main() {\n            int a = 5;  // 0101\n            int b = 3;  // 0011\n            int result = a | b; // 0111 (7)\n            printf(\"5 | 3 = %d\\n\", result); // Output: 7\n            return 0;\n        }\n        ```\n\n3.  **Bitwise XOR (`^`)**:\n    *   **Purpose**: Sets each bit to 1 if the corresponding bits are different, otherwise 0.\n    *   **Use Case**: Toggling bits, swapping numbers without a temporary variable, encryption.\n    *   **Example**: `5 ^ 3`\n        *   `5` in binary: `0101`\n        *   `3` in binary: `0011`\n        *   `5 ^ 3` = `0110` (decimal `6`)\n    *   **Code Example**:\n        ```c\n        #include <stdio.h>\n        int main() {\n            int a = 5;  // 0101\n            int b = 3;  // 0011\n            int result = a ^ b; // 0110 (6)\n            printf(\"5 ^ 3 = %d\\n\", result); // Output: 6\n            return 0;\n        }\n        ```\n\n4.  **Bitwise NOT (`~`)**:\n    *   **Purpose**: Inverts all bits of its operand (0 becomes 1, and 1 becomes 0). This is a unary operator.\n    *   **Use Case**: Complementing bits. Note that for signed integers, this can be tricky due to two's complement representation.\n    *   **Example**: `~5`\n        *   `5` in 8-bit binary: `00000101`\n        *   `~5` = `11111010` (This is -6 in two's complement for an 8-bit signed integer)\n    *   **Code Example**:\n        ```c\n        #include <stdio.h>\n        int main() {\n            unsigned char a = 5;  // 00000101\n            unsigned char result = ~a; // 11111010 (250)\n            printf(\"~5 (unsigned char) = %d\\n\", result); // Output: 250\n\n            int b = 5;\n            int result_int = ~b; // -6\n            printf(\"~5 (int) = %d\\n\", result_int); // Output: -6\n            return 0;\n        }\n        ```\n\n5.  **Left Shift (`<<`)**:\n    *   **Purpose**: Shifts the bits of the left operand to the left by the number of positions specified by the right operand. Vacated bits are filled with zeros. Effectively multiplies by powers of 2.\n    *   **Use Case**: Fast multiplication by powers of 2, bit manipulation.\n    *   **Example**: `5 << 1`\n        *   `5` in binary: `0101`\n        *   `5 << 1` = `1010` (decimal `10`)\n    *   **Code Example**:\n        ```c\n        #include <stdio.h>\n        int main() {\n            int a = 5;  // 0101\n            int result = a << 1; // 1010 (10)\n            printf(\"5 << 1 = %d\\n\", result); // Output: 10\n            return 0;\n        }\n        ```\n\n6.  **Right Shift (`>>`)**:\n    *   **Purpose**: Shifts the bits of the left operand to the right by the number of positions specified by the right operand. Vacated bits are filled with zeros for unsigned types, and with the sign bit for signed types (arithmetic shift) or zeros (logical shift). Effectively divides by powers of 2.\n    *   **Use Case**: Fast division by powers of 2, extracting specific bit fields.\n    *   **Example**: `5 >> 1`\n        *   `5` in binary: `0101`\n        *   `5 >> 1` = `0010` (decimal `2`)\n    *   **Code Example**:\n        ```c\n        #include <stdio.h>\n        int main() {\n            int a = 5;  // 0101\n            int result = a >> 1; // 0010 (2)\n            printf(\"5 >> 1 = %d\\n\", result); // Output: 2\n\n            int b = -8; // 11111000 (assuming 8-bit two's complement)\n            int result_signed = b >> 1; // 11111100 (-4 for arithmetic shift)\n            printf(\"-8 >> 1 = %d\\n\", result_signed); // Output: -4\n            return 0;\n        }\n        ```",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
+    },
+    {
+      "question_number": "27. a.",
+      "question_text": "Write a C program to display 'n' terms of natural numbers and their sum. Sample input: 7 Expected output: The first seven natural numbers are: 1 2 3 4 5 6 7 Sum upto 7 terms: 28",
+      "marks": 10,
+      "answer": "```c\n#include <stdio.h>\n\nint main() {\n    int n, i, sum = 0;\n\n    // Get input from the user\n    printf(\"Input the number of terms (n): \");\n    scanf(\"%d\", &n);\n\n    printf(\"The first %d natural numbers are: \", n);\n\n    // Loop to display numbers and calculate sum\n    for (i = 1; i <= n; i++) {\n        printf(\"%d \", i);\n        sum += i;\n    }\n    printf(\"\\n\"); // Newline after numbers\n\n    // Display the sum\n    printf(\"Sum upto %d terms: %d\\n\", n, sum);\n\n    return 0;\n}\n```\n\n**Sample Input/Output:**\nInput the number of terms (n): 7\nThe first 7 natural numbers are: 1 2 3 4 5 6 7 \nSum upto 7 terms: 28",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
+    },
+    {
+      "question_number": "27. b.",
+      "question_text": "Write a C program to find the minimum and maximum element in an array. Sample input: Input the number of elements to be read:5 Input five elements of the array: Element 1: 34 Element 2: 60 Element 3: 03 Element 4: 22 Element 5: 18 Expected output: Minimum element: 03 Maximum element: 60",
+      "marks": 10,
+      "answer": "```c\n#include <stdio.h>\n\nint main() {\n    int n;\n    printf(\"Input the number of elements to be read: \");\n    scanf(\"%d\", &n);\n\n    // Declare an array of size n\n    int arr[n]; // C99 feature: Variable Length Arrays\n\n    // Input array elements\n    printf(\"Input %d elements of the array:\\n\", n);\n    for (int i = 0; i < n; i++) {\n        printf(\"Element %d: \", i + 1);\n        scanf(\"%d\", &arr[i]);\n    }\n\n    // Initialize min and max with the first element of the array\n    int min = arr[0];\n    int max = arr[0];\n\n    // Traverse the array to find min and max\n    for (int i = 1; i < n; i++) {\n        if (arr[i] < min) {\n            min = arr[i];\n        }\n        if (arr[i] > max) {\n            max = arr[i];\n        }\n    }\n\n    // Display the results\n    printf(\"Expected output:\\n\");\n    printf(\"Minimum element: %02d\\n\", min); // %02d for 2-digit padding\n    printf(\"Maximum element: %02d\\n\", max); // %02d for 2-digit padding\n\n    return 0;\n}\n```\n\n**Sample Input/Output:**\nInput the number of elements to be read: 5\nInput five elements of the array:\nElement 1: 34\nElement 2: 60\nElement 3: 03\nElement 4: 22\nElement 5: 18\nExpected output:\nMinimum element: 03\nMaximum element: 60",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
+    },
+    {
+      "question_number": "28. a.",
+      "question_text": "What is the difference between pass by value and pass by reference? Explain with an example.",
+      "marks": 4,
+      "answer": "**Pass by Value:**\n*   When arguments are passed by value, a *copy* of the actual argument's value is passed to the function's formal parameters.\n*   Changes made to the formal parameters inside the function do not affect the original actual arguments in the calling function.\n*   This mechanism protects the original data from accidental modification.\n\n**Pass by Reference:**\n*   When arguments are passed by reference, the *memory address* of the actual argument is passed to the function's formal parameters (which are typically pointers).\n*   The function works directly with the original data located at that address. Changes made to the data through the pointer within the function *do* affect the original actual arguments in the calling function.\n*   This mechanism allows functions to modify the original data of the caller and is often used for efficiency with large data structures or when multiple return values are needed.\n\n**Example to illustrate:**\nImagine you have two variables, `x` and `y`, and you want to swap their values using a function.\n\n```c\n#include <stdio.h>\n\n// Function to swap using pass by value (won't work for original values)\nvoid swap_by_value(int a, int b) {\n    int temp = a;\n    a = b;\n    b = temp;\n    printf(\"Inside swap_by_value: a = %d, b = %d\\n\", a, b);\n}\n\n// Function to swap using pass by reference (will modify original values)\nvoid swap_by_reference(int *ptrA, int *ptrB) {\n    int temp = *ptrA;\n    *ptrA = *ptrB;\n    *ptrB = temp;\n    printf(\"Inside swap_by_reference: *ptrA = %d, *ptrB = %d\\n\", *ptrA, *ptrB);\n}\n\nint main() {\n    int x = 10, y = 20;\n\n    printf(\"Before swap_by_value: x = %d, y = %d\\n\", x, y); // x=10, y=20\n    swap_by_value(x, y);\n    printf(\"After swap_by_value: x = %d, y = %d\\n\\n\", x, y); // x=10, y=20 (unchanged)\n\n    int a = 30, b = 40;\n\n    printf(\"Before swap_by_reference: a = %d, b = %d\\n\", a, b); // a=30, b=40\n    swap_by_reference(&a, &b);\n    printf(\"After swap_by_reference: a = %d, b = %d\\n\", a, b); // a=40, b=30 (changed)\n\n    return 0;\n}\n```\n\n**Output:**\n```\nBefore swap_by_value: x = 10, y = 20\nInside swap_by_value: a = 20, b = 10\nAfter swap_by_value: x = 10, y = 20\n\nBefore swap_by_reference: a = 30, b = 40\nInside swap_by_reference: *ptrA = 40, *ptrB = 30\nAfter swap_by_reference: a = 40, b = 30\n```\nThis example clearly shows that `swap_by_value` only changed the local copies, while `swap_by_reference` modified the original variables `a` and `b` in `main`.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: String Basics - String Declaration and Initialization"
+    },
+    {
+      "question_number": "28. b.",
+      "question_text": "Write the C coding for swapping two numbers using pass by reference. Trace with an example.",
+      "marks": 6,
+      "answer": "```c\n#include <stdio.h>\n\n// Function to swap two numbers using pass by reference\nvoid swap(int *ptrA, int *ptrB) {\n    printf(\"\\nInside swap function:\\n\");\n    printf(\"  Initial values: *ptrA = %d, *ptrB = %d\\n\", *ptrA, *ptrB);\n    int temp;\n\n    // Step 1: Store the value pointed by ptrA in temp\n    temp = *ptrA;\n    printf(\"  temp = *ptrA (temp = %d)\\n\", temp);\n\n    // Step 2: Assign the value pointed by ptrB to the location pointed by ptrA\n    *ptrA = *ptrB;\n    printf(\"  *ptrA = *ptrB (*ptrA = %d)\\n\", *ptrA);\n\n    // Step 3: Assign the value in temp to the location pointed by ptrB\n    *ptrB = temp;\n    printf(\"  *ptrB = temp (*ptrB = %d)\\n\", *ptrB);\n    printf(\"  Final values: *ptrA = %d, *ptrB = %d\\n\", *ptrA, *ptrB);\n}\n\nint main() {\n    int num1 = 100;\n    int num2 = 200;\n\n    printf(\"Before swap in main: num1 = %d, num2 = %d\\n\", num1, num2);\n\n    // Call the swap function, passing the addresses of num1 and num2\n    swap(&num1, &num2);\n\n    printf(\"After swap in main: num1 = %d, num2 = %d\\n\", num1, num2);\n\n    return 0;\n}\n```\n\n**Trace with Example (`num1 = 100`, `num2 = 200`):**\n\n1.  **`main()` function starts:**\n    *   `num1` is declared and initialized to `100`. Let's say its address is `0x1000`.\n    *   `num2` is declared and initialized to `200`. Let's say its address is `0x1004`.\n    *   `printf` outputs: \"Before swap in main: num1 = 100, num2 = 200\".\n\n2.  **`swap(&num1, &num2)` is called:**\n    *   The address of `num1` (`0x1000`) is passed to `ptrA`.\n    *   The address of `num2` (`0x1004`) is passed to `ptrB`.\n    *   So, `ptrA` holds `0x1000` and `ptrB` holds `0x1004`.\n\n3.  **Inside `swap` function:**\n    *   `printf` outputs: \"Inside swap function:\".\n    *   `printf` outputs: \"  Initial values: *ptrA = 100, *ptrB = 200\". (`*ptrA` dereferences `0x1000` to get `100`, `*ptrB` dereferences `0x1004` to get `200`).\n    *   `int temp;` A local variable `temp` is declared.\n    *   `temp = *ptrA;`\n        *   `*ptrA` (value at `0x1000`) which is `100` is assigned to `temp`.\n        *   `temp` is now `100`.\n        *   `printf` outputs: \"  temp = *ptrA (temp = 100)\".\n    *   `*ptrA = *ptrB;`\n        *   `*ptrB` (value at `0x1004`) which is `200` is assigned to the memory location pointed by `ptrA` (`0x1000`).\n        *   `num1` (at `0x1000`) is now `200`.\n        *   `printf` outputs: \"  *ptrA = *ptrB (*ptrA = 200)\".\n    *   `*ptrB = temp;`\n        *   The value of `temp` (`100`) is assigned to the memory location pointed by `ptrB` (`0x1004`).\n        *   `num2` (at `0x1004`) is now `100`.\n        *   `printf` outputs: \"  *ptrB = temp (*ptrB = 100)\".\n    *   `printf` outputs: \"  Final values: *ptrA = 200, *ptrB = 100\".\n    *   `swap` function finishes.\n\n4.  **Back in `main()` function:**\n    *   `printf` outputs: \"After swap in main: num1 = 200, num2 = 100\". (The original variables `num1` and `num2` have been successfully swapped).\n\n**Output of the code:**\n```\nBefore swap in main: num1 = 100, num2 = 200\n\nInside swap function:\n  Initial values: *ptrA = 100, *ptrB = 200\n  temp = *ptrA (temp = 100)\n  *ptrA = *ptrB (*ptrA = 200)\n  *ptrB = temp (*ptrB = 100)\n  Final values: *ptrA = 200, *ptrB = 100\nAfter swap in main: num1 = 200, num2 = 100\n```",
+      "answer_source": "generated",
+      "chapter": "Unit 3: String Basics - String Declaration and Initialization"
+    },
+    {
+      "question_number": "29. a.",
+      "question_text": "Write a C program to reverse a string using recursive function. For a specific example trace the program.",
+      "marks": 10,
+      "answer": "```c\n#include <stdio.h>\n#include <string.h>\n\n// Recursive function to reverse a string\nvoid reverseStringRecursive(char *str, int start, int end) {\n    // Base case: if start index is greater than or equal to end index, stop recursion\n    if (start >= end) {\n        return;\n    }\n\n    // Swap characters at start and end positions\n    char temp = str[start];\n    str[start] = str[end];\n    str[end] = temp;\n\n    // Recursively call for the inner part of the string\n    reverseStringRecursive(str, start + 1, end - 1);\n}\n\nint main() {\n    char myString[] = \"hello\";\n    int length = strlen(myString);\n\n    printf(\"Original string: %s\\n\", myString);\n\n    reverseStringRecursive(myString, 0, length - 1);\n\n    printf(\"Reversed string: %s\\n\", myString);\n\n    return 0;\n}\n```\n\n**Trace for `myString = \"hello\"`:**\n\n*   `length` = 5\n*   Initial call: `reverseStringRecursive(myString, 0, 4)`\n\n1.  **Call 1: `reverseStringRecursive(\"hello\", 0, 4)`**\n    *   `start = 0`, `end = 4`. (`start < end` is true)\n    *   `temp = str[0]` (temp = 'h')\n    *   `str[0] = str[4]` (str becomes \"oello\")\n    *   `str[4] = temp` (str becomes \"oellh\")\n    *   Recursive call: `reverseStringRecursive(\"oellh\", 1, 3)`\n\n2.  **Call 2: `reverseStringRecursive(\"oellh\", 1, 3)`**\n    *   `start = 1`, `end = 3`. (`start < end` is true)\n    *   `temp = str[1]` (temp = 'e')\n    *   `str[1] = str[3]` (str becomes \"ollhe\")\n    *   `str[3] = temp` (str becomes \"ollhe\")\n    *   Recursive call: `reverseStringRecursive(\"ollhe\", 2, 2)`\n\n3.  **Call 3: `reverseStringRecursive(\"ollhe\", 2, 2)`**\n    *   `start = 2`, `end = 2`. (`start >= end` is true)\n    *   **Base case met.** Function returns.\n\n4.  **Return to Call 2:**\n    *   Call 2 completes.\n\n5.  **Return to Call 1:**\n    *   Call 1 completes.\n\n**Final state of `myString` in `main`:** \"olleh\"\n\n**Output:**\n```\nOriginal string: hello\nReversed string: olleh\n```",
+      "answer_source": "generated",
+      "chapter": "Unit 3: String Basics - String Declaration and Initialization"
+    },
+    {
+      "question_number": "29. b.",
+      "question_text": "Define structure in C. Also explain how pointers are used with structure with suitable example.",
+      "marks": 2,
+      "answer": "**Structure in C:**\nA structure in C is a user-defined data type that allows you to combine different data types into a single unit. It's a way to create a complex data type by grouping variables of various types (e.g., `int`, `float`, `char`, arrays, or even other structures) under a single name. Each variable within a structure is called a member.\n\n**Syntax:**\n```c\nstruct structure_name {\n    data_type member1;\n    data_type member2;\n    // ... other members\n};\n```\n\n**Example:**\n```c\nstruct Student {\n    int roll_number;\n    char name[50];\n    float marks;\n};\n```\n\n**Pointers with Structures:**\nPointers can be used with structures just like with any other data type. A pointer to a structure holds the memory address of a structure variable. This is particularly useful for:\n1.  **Dynamic Memory Allocation**: Creating structures on the heap using `malloc()` or `calloc()`.\n2.  **Passing Structures to Functions**: Passing the address of a structure to a function to avoid copying large amounts of data and to allow the function to modify the original structure.\n3.  **Linked Data Structures**: Implementing complex data structures like linked lists, trees, and graphs, where each node is a structure containing data and pointers to other nodes.\n\n**Accessing Members using Pointers:**\nWhen you have a pointer to a structure, you cannot use the `.` (dot) operator to access its members directly. Instead, you must use the `->` (arrow) operator. Alternatively, you can dereference the pointer first and then use the dot operator: `(*struct_ptr).member_name` is equivalent to `struct_ptr->member_name`.\n\n**Example:**\n```c\n#include <stdio.h>\n#include <string.h>\n#include <stdlib.h>\n\n// Define a structure for a Point\nstruct Point {\n    int x;\n    int y;\n};\n\nint main() {\n    // 1. Declare a structure variable and a pointer to it\n    struct Point p1;\n    struct Point *ptr_p1;\n\n    // Make ptr_p1 point to p1\n    ptr_p1 = &p1;\n\n    // 2. Access members using the dot operator with the variable\n    p1.x = 10;\n    p1.y = 20;\n    printf(\"Using dot operator: p1.x = %d, p1.y = %d\\n\", p1.x, p1.y);\n\n    // 3. Access members using the arrow operator with the pointer\n    ptr_p1->x = 30; // Modifies p1.x\n    ptr_p1->y = 40; // Modifies p1.y\n    printf(\"Using arrow operator: ptr_p1->x = %d, ptr_p1->y = %d\\n\", ptr_p1->x, ptr_p1->y);\n    printf(\"Original p1 after pointer modification: p1.x = %d, p1.y = %d\\n\", p1.x, p1.y);\n\n    // 4. Access members using dereference and dot operator (equivalent to arrow operator)\n    (*ptr_p1).x = 50;\n    (*ptr_p1).y = 60;\n    printf(\"Using dereference and dot: (*ptr_p1).x = %d, (*ptr_p1).y = %d\\n\", (*ptr_p1).x, (*ptr_p1).y);\n\n    // 5. Dynamic allocation of a structure\n    struct Point *dynamic_p = (struct Point *)malloc(sizeof(struct Point));\n    if (dynamic_p == NULL) {\n        printf(\"Memory allocation failed!\\n\");\n        return 1;\n    }\n    dynamic_p->x = 70;\n    dynamic_p->y = 80;\n    printf(\"Dynamically allocated point: x = %d, y = %d\\n\", dynamic_p->x, dynamic_p->y);\n\n    free(dynamic_p); // Free allocated memory\n\n    return 0;\n}\n```\n\nIn this example, `ptr_p1` is a pointer to the `struct Point` variable `p1`. We demonstrate how to assign `p1`'s address to `ptr_p1` and then use `ptr_p1->x` and `ptr_p1->y` to access and modify the members `x` and `y` of `p1`.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
+    },
+    {
+      "question_number": "30. a.",
+      "question_text": "Write a C program to illustrate array of structures.",
+      "marks": 10,
+      "answer": "An array of structures is a collection of structure variables, where each element of the array is a structure. This allows you to store multiple records or entities of the same type. For example, an array of `Student` structures can store details for multiple students.\n\n```c\n#include <stdio.h>\n#include <string.h>\n\n// Define a structure for a Student\nstruct Student {\n    int roll_number;\n    char name[50];\n    float marks;\n};\n\nint main() {\n    // Declare an array of 3 Student structures\n    struct Student students[3]; \n\n    // Initialize the first student's data\n    students[0].roll_number = 101;\n    strcpy(students[0].name, \"Alice\");\n    students[0].marks = 85.5;\n\n    // Initialize the second student's data\n    students[1].roll_number = 102;\n    strcpy(students[1].name, \"Bob\");\n    students[1].marks = 90.0;\n\n    // Get input for the third student from the user\n    printf(\"Enter details for student 3:\\n\");\n    printf(\"Roll Number: \");\n    scanf(\"%d\", &students[2].roll_number);\n    printf(\"Name: \");\n    scanf(\"%s\", students[2].name); // Read string without space\n    printf(\"Marks: \");\n    scanf(\"%f\", &students[2].marks);\n\n    printf(\"\\n--- Student Details ---\\n\");\n    printf(\"Roll No.\\tName\\t\\tMarks\\n\");\n    printf(\"-----------------------------------\\n\");\n\n    // Loop through the array of structures and print details\n    for (int i = 0; i < 3; i++) {\n        printf(\"%d\\t\\t%-10s\\t%.2f\\n\", \n               students[i].roll_number,\n               students[i].name,\n               students[i].marks);\n    }\n\n    return 0;\n}\n```\n\n**Example Input/Output:**\n```\nEnter details for student 3:\nRoll Number: 103\nName: Charlie\nMarks: 78.9\n\n--- Student Details ---\nRoll No.        Name            Marks\n-----------------------------------\n101             Alice           85.50\n102             Bob             90.00\n103             Charlie         78.90\n```\n\n**Explanation:**\n1.  A `struct Student` is defined with members `roll_number`, `name`, and `marks`.\n2.  In `main()`, `struct Student students[3];` declares an array named `students` that can hold 3 `Student` structures. Each element `students[0]`, `students[1]`, `students[2]` is an independent `Student` variable.\n3.  Members of each structure in the array are accessed using the array index followed by the dot (`.`) operator (e.g., `students[0].roll_number`).\n4.  The program demonstrates both direct initialization and user input for populating the array of structures.\n5.  A `for` loop is used to iterate through the array and print the details of each student.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
+    },
+    {
+      "question_number": "30. b.",
+      "question_text": "Write a C program to find the average of number stored in sequential access file.",
+      "marks": 10,
+      "answer": "```c\n#include <stdio.h>\n#include <stdlib.h> // For exit()\n\nint main() {\n    FILE *fp;\n    char filename[] = \"numbers.txt\"; // Name of the file\n    int num;\n    int sum = 0;\n    int count = 0;\n    double average;\n\n    // Create a sample file with numbers (if it doesn't exist or for testing)\n    fp = fopen(filename, \"w\");\n    if (fp == NULL) {\n        printf(\"Error creating file %s\\n\", filename);\n        return 1;\n    }\n    fprintf(fp, \"10\\n20\\n30\\n40\\n50\\n\"); // Write some numbers to the file\n    fclose(fp);\n    printf(\"Sample numbers written to %s.\\n\", filename);\n\n    // Open the file in read mode\n    fp = fopen(filename, \"r\");\n\n    // Check if the file was opened successfully\n    if (fp == NULL) {\n        printf(\"Error opening file %s\\n\", filename);\n        return 1;\n    }\n\n    printf(\"Reading numbers from %s...\\n\", filename);\n    // Read numbers from the file until end-of-file is reached\n    while (fscanf(fp, \"%d\", &num) == 1) {\n        sum += num;\n        count++;\n        printf(\"  Read: %d (Current Sum: %d, Count: %d)\\n\", num, sum, count);\n    }\n\n    // Close the file\n    fclose(fp);\n\n    // Calculate and print the average\n    if (count > 0) {\n        average = (double)sum / count;\n        printf(\"\\nTotal Sum: %d\\n\", sum);\n        printf(\"Total Numbers: %d\\n\", count);\n        printf(\"Average: %.2f\\n\", average);\n    } else {\n        printf(\"No numbers found in the file or file is empty.\\n\");\n    }\n\n    return 0;\n}\n```\n\n**Explanation:**\n1.  **File Creation (for demonstration)**: The program first creates a file named `numbers.txt` and writes a few integers into it. This ensures that a file exists to be read for calculation. In a real-world scenario, this file would already exist.\n2.  **File Opening**: `fopen(filename, \"r\")` attempts to open `numbers.txt` in read mode (`\"r\"`). If the file cannot be opened (e.g., it doesn't exist, or permissions are wrong), `fopen` returns `NULL`. Error handling is included.\n3.  **Reading Data Sequentially**: The `while (fscanf(fp, \"%d\", &num) == 1)` loop reads integers one by one from the file. `fscanf` returns the number of items successfully read. It returns `1` if an integer is read successfully, and `EOF` (End-Of-File) or `0` if it fails to read an integer or reaches the end of the file.\n4.  **Sum and Count**: Inside the loop, each `num` read is added to `sum`, and `count` is incremented.\n5.  **File Closing**: `fclose(fp)` closes the file, releasing the resources associated with it.\n6.  **Average Calculation**: After reading all numbers, the `average` is calculated by dividing `sum` by `count`. A type cast to `double` is used to ensure floating-point division. An `if (count > 0)` check prevents division by zero if the file was empty.\n\n**Example Output (if `numbers.txt` contains 10, 20, 30, 40, 50):**\n```\nSample numbers written to numbers.txt.\nReading numbers from numbers.txt...\n  Read: 10 (Current Sum: 10, Count: 1)\n  Read: 20 (Current Sum: 30, Count: 2)\n  Read: 30 (Current Sum: 60, Count: 3)\n  Read: 40 (Current Sum: 100, Count: 4)\n  Read: 50 (Current Sum: 150, Count: 5)\n\nTotal Sum: 150\nTotal Numbers: 5\nAverage: 30.00\n```",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
+    },
+    {
+      "question_number": "1",
+      "question_text": "Which of the following is an invalid expression in C language?\n(A) result = a+++b;\n(B) result =+++a*5;\n(C) result = %a;\n(D) result =-2.4;",
+      "marks": 1,
+      "answer": "The correct option is (C).\n\n**Explanation:**\n*   **(A) `result = a+++b;`**: This is valid. It's interpreted as `result = (a++) + b;`. The post-increment operator `a++` increments `a` after its value is used in the expression.\n*   **(B) `result =+++a*5;`**: This is valid. It's interpreted as `result = (++a) * 5;`. The pre-increment operator `++a` increments `a` before its value is used in the expression.\n*   **(C) `result = %a;`**: This is invalid. The `%` (modulo) operator is a binary operator and requires two operands (e.g., `b % a`). It cannot be used as a unary operator to find the remainder of a single number, nor does it serve any other unary purpose like a percentage operator in C.\n*   **(D) `result =-2.4;`**: This is valid. It's interpreted as `result = -2.4;`. The unary minus operator `-` is applied to the literal `2.4`.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
+    },
+    {
+      "question_number": "2",
+      "question_text": "What symbol does the C preprocessor start with?\n(A) #\n(B) $\n(C) \" \"\n(D) &",
+      "marks": 1,
+      "answer": "The correct option is (A).\n\n**Explanation:**\nIn C, preprocessor directives (like `#include`, `#define`, `#ifdef`) always begin with the hash symbol (`#`).",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
+    },
+    {
+      "question_number": "3",
+      "question_text": "The format specifier that is used to read or write an integer is\n(A) %i\n(B) %d\n(C) %i or %d\n(D) %s",
+      "marks": 1,
+      "answer": "The correct option is (C).\n\n**Explanation:**\nBoth `%i` and `%d` are valid format specifiers for reading and writing integer values in C's `printf()` and `scanf()` functions. While `%d` is more commonly used, `%i` also works for decimal integers. `%s` is used for strings.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
+    },
+    {
+      "question_number": "4",
+      "question_text": "is not a storage class.\n(A) static\n(B) auto\n(C) struct\n(D) extern",
+      "marks": 1,
+      "answer": "The correct option is (C).\n\n**Explanation:**\n*   **(A) `static`**: Is a storage class specifier.\n*   **(B) `auto`**: Is a storage class specifier (default for local variables).\n*   **(C) `struct`**: Is a keyword used to define a user-defined data type (structure), not a storage class.\n*   **(D) `extern`**: Is a storage class specifier.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
+    },
+    {
+      "question_number": "5",
+      "question_text": "What is the output of this statement printf(\"%d\", (a++));\n(A) Error messages\n(B) Garbage value\n(C) The current value of a\n(D) The value of (a+1)",
+      "marks": 1,
+      "answer": "The correct option is (C).\n\n**Explanation:**\nThe post-increment operator `a++` means that the *current value* of `a` is used in the expression, and *then* `a` is incremented. So, `printf` will print the value `a` had *before* the increment.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
+    },
+    {
+      "question_number": "6",
+      "question_text": "What is the result of logical or relational expression in C?\n(A) True or False\n(B) 0 or 1\n(C) False if 0\n(D) 0 if an expression is false and\nany positive number if an\nexpression is true",
+      "marks": 1,
+      "answer": "The correct option is (D).\n\n**Explanation:**\nIn C, there is no distinct boolean type `True` or `False` (before C99 `_Bool` and `stdbool.h`). Instead, `0` is treated as false, and any non-zero value is treated as true. Relational and logical expressions evaluate to `0` for false and `1` for true.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
+    },
+    {
+      "question_number": "7",
+      "question_text": "What is the output of the following C program?\nint main ()\n{\nint a [ ]={1,2,3,4};\nprintf (\"%d\", a[0]); return 0;\n}\n(A) 1\n(B) 2\n(C) 4\n(D) Compilation error",
+      "marks": 1,
+      "answer": "The correct option is (A).\n\n**Explanation:**\nThe array `a` is initialized with elements `{1, 2, 3, 4}`. Array indices in C start from `0`. Therefore, `a[0]` refers to the first element of the array, which is `1`.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
+    },
+    {
+      "question_number": "8",
+      "question_text": "Which is these best describes an array?\n(A) A data structure that shows a hierarchical behavior\n(B) Container of objects of similar objects\n(C) Arrays are immutable once initialized\n(D) Array is not a data structure",
+      "marks": 1,
+      "answer": "The correct option is (B).\n\n**Explanation:**\n*   **(A) A data structure that shows a hierarchical behavior**: This describes data structures like trees or graphs, not arrays.\n*   **(B) Container of objects of similar objects**: An array is a collection of elements of the *same* data type, stored in contiguous memory locations. So it's a container for similar objects.\n*   **(C) Arrays are immutable once initialized**: This is false. Array elements can be modified after initialization.\n*   **(D) Array is not a data structure**: This is false. An array is a fundamental data structure.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
+    },
+    {
+      "question_number": "9",
+      "question_text": "Which of the following operators takes only integer operands?\n(A) +\n(B) *\n(C) /\n(D) %",
+      "marks": 1,
+      "answer": "The correct option is (D).\n\n**Explanation:**\n*   `(A) +`, `(B) *`, `(C) /`: These arithmetic operators can operate on both integer and floating-point operands.\n*   `(D) %`: The modulo operator (`%`) computes the remainder of a division and requires both its operands to be of integer type.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
+    },
+    {
+      "question_number": "10",
+      "question_text": "How many times will the following loop in C program execute?\nfor (j = 1; j <= 10; j = j −1)\n(A) Forever\n(B) Never\n(C) 10 times\n(D) 1",
+      "marks": 1,
+      "answer": "The correct option is (A).\n\n**Explanation:**\n*   **Initialization**: `j = 1`\n*   **Condition**: `j <= 10`\n*   **Update**: `j = j - 1` (decrements `j`)\n\nThe loop starts with `j = 1`. In each iteration, `j` is decremented. Since `j` starts at `1` and keeps decreasing (`0`, `-1`, `-2`, ...), the condition `j <= 10` will always remain true. For example, if `j` is `1`, `1 <= 10` is true. If `j` becomes `0`, `0 <= 10` is true. If `j` becomes `-5`, `-5 <= 10` is true. Thus, the loop will never terminate and will execute forever.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
+    },
+    {
+      "question_number": "11",
+      "question_text": "Which loop in C program is faster, for while or do...while?\n(A) for\n(B) while\n(C) do...while\n(D) All work at same speed",
+      "marks": 1,
+      "answer": "The correct option is (D).\n\n**Explanation:**\nFrom a performance perspective, `for`, `while`, and `do...while` loops generally execute at the same speed. The choice between them is typically based on the logical structure of the problem, readability, and convenience, not on inherent speed differences. A good compiler will optimize them to very similar machine code. Any minor differences would be negligible and highly dependent on the specific compiler, optimization settings, and target architecture.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
+    },
+    {
+      "question_number": "12",
+      "question_text": "Choose a correct statement about C string.\nchar ary [ ] = \"Hello...!\";\n(A) Character array, ary is a string\n(B) Ary has no null character at the end\n(C) String size is not mentioned\n(D) String cannot contain special characters",
+      "marks": 1,
+      "answer": "The correct option is (A).\n\n**Explanation:**\n*   **(A) Character array, ary is a string**: In C, strings are fundamentally character arrays terminated by a null character (`\\0`). `char ary[] = "Hello...!";` correctly declares `ary` as a character array and initializes it with a string literal, including the implicit null terminator.\n*   **(B) Ary has no null character at the end**: This is false. When a string literal is used for initialization, the compiler automatically appends a null character (`\\0`) at the end.\n*   **(C) String size is not mentioned**: This is false. When initializing a character array with a string literal without specifying a size, the compiler automatically determines the size based on the length of the string literal plus one for the null terminator.\n*   **(D) String cannot contain special characters**: This is false. C strings can contain various special characters, including punctuation, spaces, and escape sequences.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: String Basics - String Declaration and Initialization"
+    },
+    {
+      "question_number": "13",
+      "question_text": "What is the output of C program with arrays?\nint main ()\n{\nchar str = {\"P\", \"E\", \"T\", \"\\0\"};\nprintf (\"%s\", str); return 0;\n}\n(A) P\n(B) PET\n(C) PET\\0\n(D) Complier error",
+      "marks": 1,
+      "answer": "The correct option is (B).\n\n**Explanation:**\nThe declaration `char str[] = {'P', 'E', 'T', '\\0'};` creates a character array initialized with the characters 'P', 'E', 'T', and a null terminator `\\0`. In C, a string is a sequence of characters terminated by a null character. When `printf(\"%s\", str);` is called, it prints characters from the `str` array until it encounters the null terminator `\\0`. Thus, it will print \"PET\".",
+      "answer_source": "generated",
+      "chapter": "Unit 3: String Basics - String Declaration and Initialization"
+    },
+    {
+      "question_number": "14",
+      "question_text": "Which function will you choose to join two words in C program?\n(A) strcpy ()\n(B) strcat ()\n(C) strjoin ()\n(D) strncat ()",
+      "marks": 1,
+      "answer": "The correct option is (B).\n\n**Explanation:**\n*   **(A) `strcpy()`**: Copies one string to another.\n*   **(B) `strcat()`**: Concatenates (joins) two strings. It appends the source string to the destination string.\n*   **(C) `strjoin()`**: This is not a standard C library function.\n*   **(D) `strncat()`**: Concatenates a specified number of characters from one string to another.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: String Basics - String Declaration and Initialization"
+    },
+    {
+      "question_number": "15",
+      "question_text": "What will strcmp() function do?\n(A) Compares the first 'n' characters of the object\n(B) Undefined function\n(C) Copies the string\n(D) Compares the string",
+      "marks": 1,
+      "answer": "The correct option is (D).\n\n**Explanation:**\n*   **(D) Compares the string**: The `strcmp()` function (string compare) compares two strings lexicographically. It returns `0` if the strings are equal, a negative value if the first string is less than the second, and a positive value if the first string is greater than the second.\n*   **(A) Compares the first 'n' characters of the object**: This describes `strncmp()`, not `strcmp()`.\n*   **(C) Copies the string**: This describes `strcpy()` or `strncpy()`.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: String Basics - String Declaration and Initialization"
+    },
+    {
+      "question_number": "16",
+      "question_text": "What is the keyword used to define a C macro?\n(A) def\n(B) define\n(C) defy\n(D) definition",
+      "marks": 1,
+      "answer": "The correct option is (B).\n\n**Explanation:**\nIn C, macros are defined using the preprocessor directive `#define`. For example, `#define PI 3.14159` defines a macro named `PI`.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
+    },
+    {
+      "question_number": "17",
+      "question_text": "What is the C keyword used to create global constants?\n(A) constant\n(B) def\n(C) define\n(D) CONSTANT",
+      "marks": 1,
+      "answer": "The correct option is (A).\n\n**Explanation:**\n*   **(A) `const` (keyword `constant` is not a C keyword, but `const` is)**: The `const` keyword is used to declare variables whose values cannot be changed after initialization. When declared globally, it creates a global constant.\n*   **(C) `define`**: `#define` is a preprocessor directive used to create symbolic constants (macros), not a keyword to declare variables.\n\nWhile `#define` can also create global symbolic constants, `const` is the keyword used to declare a variable as constant.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
+    },
+    {
+      "question_number": "18",
+      "question_text": "Comment on the following pointer declaration in C?\nint *ptr, P;\n(A) ptr is a pointer to integer, P is not a pointer\n(B) ptr and P, both are pointers to integer\n(C) ptr is pointer to integer, P may or may not be\n(D) ptr and P both are not pointers to integer",
+      "marks": 1,
+      "answer": "The correct option is (A).\n\n**Explanation:**\nIn C, the `*` operator binds to the variable name, not the type. So, in the declaration `int *ptr, P;`:\n*   `*ptr` means `ptr` is a pointer to an `int`.\n*   `P` (without `*`) means `P` is a regular `int` variable.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
+    },
+    {
+      "question_number": "19",
+      "question_text": "Address stored in the pointer variable is of type\nin C programs.\n(A) integer\n(B) float\n(C) character\n(D) boolean",
+      "marks": 1,
+      "answer": "The correct option is (A).\n\n**Explanation:**\nWhile a pointer variable stores a memory address (which is a numerical value), the type of *address itself* is typically conceptualized as an unsigned integer, representing a location in memory. When referring to the *value* stored in a pointer variable, it's an address, which is essentially an integer. Though `void*` can point to any type, the underlying address is a numerical representation.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
+    },
+    {
+      "question_number": "20",
+      "question_text": "A function which calls itself is called as\n(A) self function\n(B) static function\n(C) auto function\n(D) recursive function",
+      "marks": 1,
+      "answer": "The correct option is (D).\n\n**Explanation:**\nA function that calls itself is known as a recursive function. Recursion is a programming technique where a function solves a problem by calling itself with smaller instances of the same problem until a base case is reached.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: String Basics - String Declaration and Initialization"
+    },
+    {
+      "question_number": "21",
+      "question_text": "What will be the output of the following C code on a 64 bit machine?\n#include <stdio.h>\nint main ()\n{\nunion var\n{\nint num;\nchar c;\n}\nv1;\nprintf (\"%d\", size of (v1));\nreturn 0;\n}\n(A) 8\n(B) 5\n(C) 4\n(D) 9",
+      "marks": 1,
+      "answer": "The correct option is (C).\n\n**Explanation:**\nA `union` is a special data type in C that allows storing different data types in the same memory location. The `sizeof` a union is determined by the size of its largest member. On most 64-bit systems:\n*   `int` typically takes 4 bytes.\n*   `char` typically takes 1 byte.\n\nTherefore, the largest member is `int` (4 bytes). The `sizeof(v1)` will be 4 bytes. Padding might occur for alignment, but for `int` and `char` in a union, the size will be `sizeof(int)`. (It's common for an `int` to be 4 bytes on both 32-bit and 64-bit systems; a `long int` might be 8 bytes on 64-bit). Assuming `int` is 4 bytes, the output is 4.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
+    },
+    {
+      "question_number": "22",
+      "question_text": "What is the output of this C code?\n#include <stdio.h>\nmain ()\n{\nchar *p = \"SRM Test Paper\";\np [0] = 'a';\np [1] = 'b';\nprintf (\"%s\", p);\n}\n(A) abM Test paper\n(B) SRM Test paper\n(C) Compile Time Error\n(D) Run Time Error",
+      "marks": 1,
+      "answer": "The correct option is (D).\n\n**Explanation:**\n1.  `char *p = \"SRM Test Paper\";` declares `p` as a pointer to a `char` and makes it point to a string literal. String literals like \"SRM Test Paper\" are typically stored in read-only memory segments.\n2.  `p[0] = 'a';` and `p[1] = 'b';` attempt to modify the characters in this read-only string literal. This action leads to *undefined behavior*. While some compilers might allow it and produce output like \"abM Test Paper\", standard C guarantees that modifying a string literal is undefined behavior, which often results in a runtime error such as a segmentation fault.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: String Basics - String Declaration and Initialization"
+    },
+    {
+      "question_number": "23",
+      "question_text": "EOF is an integer type defined in stdio.h and has a value\n(A) 1\n(B) 0\n(C) -1\n(D) Null",
+      "marks": 1,
+      "answer": "The correct option is (C).\n\n**Explanation:**\n`EOF` (End Of File) is a macro defined in `stdio.h` that represents a special integer value (typically -1). It's used to indicate that the end of a file has been reached or that an input function encountered an error.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
+    },
+    {
+      "question_number": "24",
+      "question_text": "Which one of the following is correct syntax for opening a file in C language?\n(A) FILE *fopen (const *filename, const char *mode);\n(B) FILE *fopen (const *filename);\n(C) FILE *open (const *filename, const char *mode);\n(D) FILE *open (const *filename);",
+      "marks": 1,
+      "answer": "The correct option is (A).\n\n**Explanation:**\n*   The standard C library function for opening files is `fopen()`, not `open()` (which is a POSIX system call).\n*   `fopen()` takes two arguments: the filename (a string, typically `const char*`) and the mode (another string, `const char*`).\n*   It returns a `FILE*` pointer, which is used to refer to the opened file.\n*   Thus, `FILE *fopen (const char *filename, const char *mode);` is the correct prototype. Option (A) has `const *filename` instead of `const char *filename`, but it's the closest representation of the correct arguments and return type among the choices.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
+    },
+    {
+      "question_number": "25",
+      "question_text": "The correct syntax to access the member of the ith structure in the array of structure is?\nstruct temp\n{\nint b;\n} s[50];\n(A) s.b.[i];\n(B) s.[i].b;\n(C) s.b[i];\n(D) s [i].b;",
+      "marks": 1,
+      "answer": "The correct option is (D).\n\n**Explanation:**\nGiven an array of structures `s[50]` where each element is of type `struct temp` with a member `b`:\n*   To access the `i`-th structure in the array, you use `s[i]`. `s[i]` itself is a `struct temp` variable.\n*   To access a member (`b`) of that specific structure `s[i]`, you then use the dot operator (`.`).\n*   Therefore, the correct syntax is `s[i].b`.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
+    }
+  ]
+}
