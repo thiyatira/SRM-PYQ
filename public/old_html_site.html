@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SRMIST: PYQs - PPS & POE</title>
+    <style>
+        :root {
+            --bg: #f9f9f9;
+            --fg: #222;
+            --card-bg: #fff;
+            --card-shadow: #eee;
+            --answer-bg: #e8f5e9;
+            --chapter-title: #2c3e50;
+            --source: #888;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2em;
+            background: var(--bg);
+            color: var(--fg);
+            transition: background 0.2s, color 0.2s;
+        }
+        h1 { text-align: center; }
+        .chapter-section {
+            margin-bottom: 2em;
+            background: var(--card-bg);
+            padding: 1.5em;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px var(--card-shadow);
+        }
+        .question { margin-bottom: 1.5em; }
+        .question pre {
+            background: #f4f4f4;
+            padding: 0.5em;
+            border-radius: 4px;
+            font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', monospace;
+            font-size: 1em;
+            white-space: pre-wrap;
+            word-break: break-word;
+            overflow-x: auto;
+            display: block;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+        .question code {
+            background: #f4f4f4;
+            padding: 0.15em 0.4em;
+            border-radius: 4px;
+            font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', monospace;
+            font-size: 1em;
+            white-space: pre;
+            word-break: normal;
+            display: inline;
+            box-sizing: border-box;
+        }
+        .question-number { font-weight: bold; }
+        .answer {
+            margin-top: 0.5em;
+            background: var(--answer-bg);
+            padding: 0.8em;
+            border-radius: 4px;
+            overflow-x: auto;
+            display: none;
+        }
+        .answer.visible {
+            display: block;
+        }
+        .toggle-answer-btn {
+            margin-top: 0.7em;
+            margin-bottom: 0.2em;
+            padding: 0.3em 0.8em;
+            border-radius: 4px;
+            border: 1px solid #bbb;
+            background: #eee;
+            color: #222;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+            display: inline-block;
+        }
+        .toggle-answer-btn.active,
+        .toggle-answer-btn:hover {
+            background: #222;
+            color: #fff;
+        }
+        .chapter-title {
+            color: var(--chapter-title);
+            border-bottom: 2px solid #eee;
+            padding-bottom: 0.3em;
+            margin-bottom: 1em;
+        }
+        .source { font-size: 0.95em; color: var(--source); }
+        .filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2em;
+        }
+        .filters label {
+            font-weight: bold;
+            margin-right: 0.5em;
+        }
+        .filters select, .filters button {
+            padding: 0.3em 0.7em;
+            border-radius: 4px;
+            border: 1px solid #bbb;
+            font-size: 1em;
+        }
+        .filters button {
+            background: #eee;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .filters button.active, .filters button:hover {
+            background: #222;
+            color: #fff;
+        }
+        /* Global answer toggle button style */
+        #globalAnswerToggle {
+            margin: 0 auto 1.5em auto;
+            display: block;
+            padding: 0.5em 1.2em;
+            border-radius: 4px;
+            border: 1px solid #bbb;
+            background: #eee;
+            color: #222;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+        }
+        #globalAnswerToggle.active,
+        #globalAnswerToggle:hover {
+            background: #222;
+            color: #fff;
+        }
+        /* Dark mode styles */
+        body.dark {
+            --bg: #181a1b;
+            --fg: #f1f1f1;
+            --card-bg: #23272a;
+            --card-shadow: #111;
+            --answer-bg: #22332a;
+            --chapter-title: #8ecae6;
+            --source: #aaa;
+        }
+        body.dark .question pre, body.dark .question code {
+            background: #23272a;
+            color: #e0e0e0;
+        }
+        body.dark .filters button {
+            background: #23272a;
+            color: #f1f1f1;
+            border: 1px solid #444;
+        }
+        body.dark .filters button.active, body.dark .filters button:hover {
+            background: #8ecae6;
+            color: #222;
+        }
+        body.dark .toggle-answer-btn {
+            background: #23272a;
+            color: #f1f1f1;
+            border: 1px solid #444;
+        }
+        body.dark .toggle-answer-btn.active,
+        body.dark .toggle-answer-btn:hover {
+            background: #8ecae6;
+            color: #222;
+        }
+        body.dark #globalAnswerToggle {
+            background: #23272a;
+            color: #f1f1f1;
+            border: 1px solid #444;
+        }
+        body.dark #globalAnswerToggle.active,
+        body.dark #globalAnswerToggle:hover {
+            background: #8ecae6;
+            color: #222;
+        }
+        @media (max-width: 600px) {
+            .chapter-section { padding: 1em; }
+            .filters { flex-direction: column; gap: 0.5em; }
+            #globalAnswerToggle { width: 100%; }
+        }
+        /* Subject switcher style */
+        .subject-switcher {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1.5em;
+            gap: 1em;
+        }
+        .subject-switcher label {
+            font-weight: bold;
+            margin-right: 0.5em;
+        }
+        .subject-switcher select {
+            padding: 0.3em 0.7em;
+            border-radius: 4px;
+            border: 1px solid #bbb;
+            font-size: 1em;
+        }
+        body.dark .subject-switcher select {
+            background: #23272a;
+            color: #f1f1f1;
+            border: 1px solid #444;
+        }
+    </style>
+</head>
+<body class="dark">
+    <h1 style="text-align:center; font-size:2.2em; margin-bottom:0.2em;">SRM PYQs</h1>
+    <h2 id="mainTitle" style="text-align:center; font-size:1.3em; font-weight:normal; margin-top:0; margin-bottom:1.2em;">SRMIST: Programming for Problem Solving 21CSS101J PYQs</h2>
+    <div class="subject-switcher" id="subjectSwitcher">
+        <label for="subjectSelect">Subject:</label>
+        <select id="subjectSelect">
+            <option value="PPS" selected>PPS (Programming for Problem Solving)</option>
+            <option value="POE">POE (Philosophy of Engineering)</option>
+        </select>
+    </div>
+    <button id="globalAnswerToggle">Show All Answers</button>
+    <div class="filters" id="filters">
+        <label for="paperFilter">Q Paper:</label>
+        <select id="paperFilter"></select>
+        <label for="chapterFilter">Unit:</label>
+        <select id="chapterFilter"></select>
+        <button id="toggleDark">☀️ Light Mode</button>
+    </div>
+    <div id="content"></div>
+    <script>
+        // Helper: Markdown to HTML (very basic, for code blocks and line breaks)
+        function markdownToHtml(md) {
+            if (!md) return "";
+            // Code blocks
+            md = md.replace(/```([\s\S]*?)```/g, function(match, code) {
+                return '<pre><code>' + code.replace(/</g, "&lt;").replace(/>/g, "&gt;") + '</code></pre>';
+            });
+            // Inline code
+            md = md.replace(/`([^`]+)`/g, '<code>$1</code>');
+            // Bold
+            md = md.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+            // Italic
+            md = md.replace(/\*([^*]+)\*/g, '<em>$1</em>');
+            // Lists
+            md = md.replace(/^\s*-\s+(.*)$/gm, '<li>$1</li>');
+            md = md.replace(/(<li>[\s\S]+?<\/li>)/g, '<ul>$1</ul>');
+            // Line breaks
+            md = md.replace(/\n/g, '<br>');
+            // Simple links
+            md = md.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>');
+            return md;
+        }
+
+        // Extracts "Unit X" (X=1-5) from a chapter string, returns "Unit 1", "Unit 2", etc., or "Other"
+        function extractUnit(chapter) {
+            if (!chapter) return "Other";
+            const match = chapter.match(/Unit\s*([1-5])/i);
+            if (match) return `Unit ${parseInt(match[1])}`;
+            return "Other";
+        }
+
+        // Hardcoded file lists for both subjects
+        const SUBJECT_FILES = {
+            "PPS": [
+                "data/PPS/2019-01_ET_QP.json",
+                "data/PPS/2021-01-12_CT2_Key.json",
+                "data/PPS/2021-01-12_CT2_QP.json",
+                "data/PPS/2021-05-18_CT1_SetB_QP.json",
+                "data/PPS/2021-22_CT1_MCQ-Key.json",
+                "data/PPS/2021-22_CT3_SetA_QP-Key.json",
+                "data/PPS/2021-22_CT3_SetB_QP-Key.json",
+                "data/PPS/2021-22_CT3_SetC_QP-Key.json",
+                "data/PPS/2022-05_ET_QP.json",
+                "data/PPS/2022-10-12_CT1_SetD_QP.json",
+                "data/PPS/2022-12_ET_QP.json",
+                "data/PPS/2022-23_CT1_QP.json",
+                "data/PPS/2022-23_CT1_QP2.json",
+                "data/PPS/2022-23_CT1_Set3_QP-Key.json",
+                "data/PPS/2022-23_CT1_Set4_QP.json",
+                "data/PPS/2022-23_CT1_SetD_QP-Key.json",
+                "data/PPS/2022-23_CT2_QP.json",
+                "data/PPS/2022-23_CT2_Sample-QP.json",
+             // "data/PPS/2022-23_CT2_Set3_QP-Key.json",
+             // "data/PPS/2022-23_CT2_Set7_QP-Key.json",
+                "data/PPS/2023-05-09_CT2_SetA_QP.json",
+                "data/PPS/2023-07_ET_Sample-QP.json",
+                "data/PPS/2023-10_CT1_Set5-6_Key.json",
+                "data/PPS/2023-10-05_CT1_Set1_QP.json",
+                "data/PPS/2023-11-03_CT2_Set3_Key.json",
+                "data/PPS/2023-11-28_CT2_QP-Key.json",
+                "data/PPS/2023-24_CT1_Set2_QP.json",
+                "data/PPS/2024-04-01_CT2_SetA_B1_QP.json",
+                "data/PPS/2024-04-01_CT2_SetC_QP.json",
+                "data/PPS/2024-09-30_CT1_Set1_QP.json",
+                "data/PPS/2024-12-10_CT2_Set3_QP.json",
+                "data/PPS/2025-02-24_CT1_SetB_QP.json"
+            ],
+            "POE": [
+                "data/POE/2021-11-01_CT1_QP.json",
+                "data/POE/2022-10-20_CT1_QP.json",
+                "data/POE/2022-11-23_CT2_QP.json",
+                "data/POE/2022-12-23_CT3_QP.json",
+                "data/POE/2023-01_ET_QP.json",
+                "data/POE/2023-02-20_CT1_SetC_B2_QP-Key.json",
+                "data/POE/2023-04-17_CT1_SetD_B2_QP.json",
+                "data/POE/2023-05_ET_QP.json",
+                "data/POE/2023-09-25_CT1_SetA_QP.json",
+                "data/POE/2023-10-13_CT1_QP.json",
+                "data/POE/2023-11-03_CT2_SetD_B2_QP-Key.json",
+                "data/POE/2023-11-25_CT3_QP-Key.json",
+                "data/POE/2023-12_ET_SetA_QP.json",
+                "data/POE/2023-12_ET_SetB_QP.json",
+                "data/POE/2024-01_ET_QP.json",
+                "data/POE/2024-03-28_CT2_SetA_QP-Key.json",
+                "data/POE/2024-03-28_CT2_SetA_QP.json",
+                "data/POE/2024-09-24_CT1_SetA_QP.json",
+                "data/POE/2024-09-27_CT1_SetC_QP.json",
+                "data/POE/2024-11-22_CT2_SetC_B2_QP.json",
+                "data/POE/2024-11-22_CT2_SetD_B2_QP.json",
+                "data/POE/2024-12-11_CT3_SetD_B2_QP.json",
+                "data/POE/2025-01-31_CT1_SetA_QP-Key.json",
+                "data/POE/2025-03-10_CT2_SetB_QP-Key.json",
+                "data/POE/2025-04-23_CT3_SetB_QP-Key.json",
+                "data/POE/2025-05_ET_QP.json"
+            ]
+        };
+
+        // Subject display names and titles
+        const SUBJECT_DISPLAY = {
+            "PPS": {
+                name: "PPS (Programming for Problem Solving)",
+                title: "21CSS101J: Programming for Problem Solving"
+            },
+            "POE": {
+                name: "POE (Philosophy of Engineering)",
+                title: "21GNH101J: Philosophy of Engineering"
+            }
+        };
+
+        // Load and parse a JSON file
+        async function loadJsonFile(filename) {
+            try {
+                const response = await fetch(filename);
+                if (!response.ok) throw new Error("Not found: " + filename);
+                return await response.json();
+            } catch (e) {
+                // If file not found or invalid, skip
+                return null;
+            }
+        }
+
+        // Group questions by unit (Unit 1, Unit 2, ..., Unit 5, Other)
+        function groupByUnit(questions) {
+            const unitMap = {};
+            for (const q of questions) {
+                const unit = extractUnit(q.chapter);
+                if (!unitMap[unit]) unitMap[unit] = [];
+                unitMap[unit].push(q);
+            }
+            return unitMap;
+        }
+
+        // Render all units and questions with global numbering and filters
+        function renderUnits(unitMap, filterPaper, filterUnit, allQuestions, globalShowAllAnswers) {
+            const contentDiv = document.getElementById('content');
+            contentDiv.innerHTML = '';
+            // Flatten all questions for global numbering, with current filters
+            let filteredQuestions = allQuestions.filter(q => {
+                let paperMatch = !filterPaper || filterPaper === 'all' || (q.source && q.source === filterPaper);
+                let unitMatch = !filterUnit || filterUnit === 'all' || (extractUnit(q.chapter) === filterUnit);
+                return paperMatch && unitMatch;
+            });
+            // Sort by unit number, then by question_number if available
+            filteredQuestions.sort((a, b) => {
+                // Sort by Unit number
+                const getUnitNum = q => {
+                    const m = extractUnit(q.chapter).match(/Unit\s*(\d+)/i);
+                    return m ? parseInt(m[1]) : 99;
+                };
+                const unitA = getUnitNum(a), unitB = getUnitNum(b);
+                if (unitA !== unitB) return unitA - unitB;
+                // Then by question_number if numeric
+                const numA = parseInt(a.question_number), numB = parseInt(b.question_number);
+                if (!isNaN(numA) && !isNaN(numB)) return numA - numB;
+                return 0;
+            });
+
+            // Group filtered questions by unit for display
+            const unitMapFiltered = {};
+            for (const q of filteredQuestions) {
+                const unitKey = extractUnit(q.chapter);
+                if (!unitMapFiltered[unitKey]) unitMapFiltered[unitKey] = [];
+                unitMapFiltered[unitKey].push(q);
+            }
+            // Sort units by Unit number
+            const sortedUnits = Object.keys(unitMapFiltered).sort((a, b) => {
+                const anum = parseInt((a||"").replace(/\D/g, '')) || 99;
+                const bnum = parseInt((b||"").replace(/\D/g, '')) || 99;
+                return anum - bnum;
+            });
+
+            // Global numbering
+            let globalNum = 1;
+            for (const unit of sortedUnits) {
+                const questions = unitMapFiltered[unit];
+                // Use the unit as title
+                const section = document.createElement('div');
+                section.className = 'chapter-section';
+                section.innerHTML = `<h2 class="chapter-title">${unit}</h2>`;
+                for (const q of questions) {
+                    const qDiv = document.createElement('div');
+                    qDiv.className = 'question';
+                    // Each answer gets a unique id for toggling
+                    const answerId = `answer-${Math.random().toString(36).substr(2, 9)}`;
+                    qDiv.innerHTML = `
+                        <div class="question-number">Q${globalNum++} (${q.marks || ''} mark${q.marks == 1 ? '' : 's'})</div>
+                        <div class="question-text">${markdownToHtml(q.question_text)}</div>
+                        ${
+                            globalShowAllAnswers
+                            ? ''
+                            : `<button class="toggle-answer-btn" data-answer-id="${answerId}">Show Answer</button>`
+                        }
+                        <div class="answer${globalShowAllAnswers ? ' visible' : ''}" id="${answerId}"><strong>Answer:</strong> ${markdownToHtml(q.answer)}</div>
+                        <div class="source">Source: ${q.source || q.answer_source || ''}</div>
+                    `;
+                    section.appendChild(qDiv);
+                }
+                contentDiv.appendChild(section);
+            }
+            if (filteredQuestions.length === 0) {
+                contentDiv.innerHTML = '<div style="text-align:center;color:#888;">No questions found for selected filters.</div>';
+            }
+
+            // Add event listeners for all toggle buttons (only if not globalShowAllAnswers)
+            if (!globalShowAllAnswers) {
+                // Remove any previous event listeners by replacing the node
+                const newContentDiv = contentDiv.cloneNode(true);
+                contentDiv.parentNode.replaceChild(newContentDiv, contentDiv);
+                newContentDiv.addEventListener('click', function(e) {
+                    if (e.target && e.target.classList.contains('toggle-answer-btn')) {
+                        const btn = e.target;
+                        const answerId = btn.getAttribute('data-answer-id');
+                        const answerDiv = document.getElementById(answerId);
+                        if (answerDiv) {
+                            const isVisible = answerDiv.classList.contains('visible');
+                            if (isVisible) {
+                                answerDiv.classList.remove('visible');
+                                btn.classList.remove('active');
+                                btn.textContent = 'Show Answer';
+                            } else {
+                                answerDiv.classList.add('visible');
+                                btn.classList.add('active');
+                                btn.textContent = 'Hide Answer';
+                            }
+                        }
+                    }
+                });
+            }
+        }
+
+        // Populate filter dropdowns
+        function populateFilters(allQuestions, allPapers, allUnits, selectedPaper, selectedUnit) {
+            const paperFilter = document.getElementById('paperFilter');
+            const chapterFilter = document.getElementById('chapterFilter');
+            // Papers
+            paperFilter.innerHTML = `<option value="all">All</option>` +
+                allPapers.map(p => `<option value="${p.replace(/"/g, "&quot;")}"${selectedPaper===p?' selected':''}>${p}</option>`).join('');
+            // Units
+            chapterFilter.innerHTML = `<option value="all">All</option>` +
+                allUnits.map(u => `<option value="${u.replace(/"/g, "&quot;")}"${selectedUnit===u?' selected':''}>${u}</option>`).join('');
+        }
+
+        // Dark mode toggle
+        function setupDarkMode() {
+            const btn = document.getElementById('toggleDark');
+            function setDark(dark) {
+                if (dark) {
+                    document.body.classList.add('dark');
+                    btn.classList.add('active');
+                    btn.innerText = "☀️ Light Mode";
+                    localStorage.setItem('darkMode', '1');
+                } else {
+                    document.body.classList.remove('dark');
+                    btn.classList.remove('active');
+                    btn.innerText = "🌙 Dark Mode";
+                    localStorage.setItem('darkMode', '0');
+                }
+            }
+            // Initial: dark mode by default
+            let dark;
+            if (localStorage.getItem('darkMode') === null) {
+                dark = true;
+                localStorage.setItem('darkMode', '1');
+            } else {
+                dark = localStorage.getItem('darkMode') === '1';
+            }
+            setDark(dark);
+            btn.onclick = () => {
+                dark = !dark;
+                setDark(dark);
+            };
+        }
+
+        // Main logic for loading and rendering for a subject
+        async function loadAndRenderSubject(subjectKey) {
+            // Update title
+            document.title = SUBJECT_DISPLAY[subjectKey].title;
+            document.getElementById('mainTitle').innerText = SUBJECT_DISPLAY[subjectKey].title;
+
+            const files = SUBJECT_FILES[subjectKey];
+            let allQuestions = [];
+            let allPapersSet = new Set();
+            let allUnitsSet = new Set();
+            for (const file of files) {
+                const data = await loadJsonFile(file);
+                if (!data) continue;
+                // Support both {questions: [...]} and array at root
+                let questions = [];
+                if (Array.isArray(data)) {
+                    questions = data;
+                } else if (data.questions) {
+                    questions = data.questions;
+                }
+                // Attach source info and normalize unit
+                for (const q of questions) {
+                    q.source = data.source || data.paper_title || file;
+                    allPapersSet.add(q.source);
+                    const unit = extractUnit(q.chapter);
+                    if (unit) allUnitsSet.add(unit);
+                }
+                allQuestions = allQuestions.concat(questions);
+            }
+            // Only allow Unit 1-5 and "Other"
+            const allowedUnits = ["Unit 1", "Unit 2", "Unit 3", "Unit 4", "Unit 5", "Other"];
+            const allUnits = allowedUnits.filter(u => allUnitsSet.has(u));
+            // Sort for dropdowns
+            const allPapers = Array.from(allPapersSet).sort();
+
+            // Initial filter state
+            let filterPaper = 'all';
+            let filterUnit = 'all';
+
+            // Global answer toggle state
+            let globalShowAllAnswers = false;
+
+            // Populate filters
+            populateFilters(allQuestions, allPapers, allUnits, filterPaper, filterUnit);
+
+            // Group by unit (Unit 1, Unit 2, ...)
+            const unitMap = groupByUnit(allQuestions);
+
+            // Render
+            renderUnits(unitMap, filterPaper, filterUnit, allQuestions, globalShowAllAnswers);
+
+            // Filter change handlers
+            document.getElementById('paperFilter').addEventListener('change', function() {
+                filterPaper = this.value;
+                // Update units for this paper
+                let unitsForPaper = new Set();
+                allQuestions.forEach(q => {
+                    if ((filterPaper === 'all' || q.source === filterPaper)) {
+                        const unit = extractUnit(q.chapter);
+                        if (unit) unitsForPaper.add(unit);
+                    }
+                });
+                // Only allow Unit 1-5 and "Other"
+                const allowedUnits = ["Unit 1", "Unit 2", "Unit 3", "Unit 4", "Unit 5", "Other"];
+                const unitsArr = allowedUnits.filter(u => unitsForPaper.has(u));
+                populateFilters(allQuestions, allPapers, unitsArr, filterPaper, 'all');
+                filterUnit = 'all';
+                renderUnits(unitMap, filterPaper, filterUnit, allQuestions, globalShowAllAnswers);
+            });
+            document.getElementById('chapterFilter').addEventListener('change', function() {
+                filterUnit = this.value;
+                renderUnits(unitMap, filterPaper, filterUnit, allQuestions, globalShowAllAnswers);
+            });
+
+            // Global answer toggle button logic
+            const globalBtn = document.getElementById('globalAnswerToggle');
+            function updateGlobalBtn() {
+                if (globalShowAllAnswers) {
+                    globalBtn.textContent = "Hide All Answers";
+                    globalBtn.classList.add('active');
+                } else {
+                    globalBtn.textContent = "Show All Answers";
+                    globalBtn.classList.remove('active');
+                }
+            }
+            // Remove previous event listeners by replacing the node
+            const newGlobalBtn = globalBtn.cloneNode(true);
+            globalBtn.parentNode.replaceChild(newGlobalBtn, globalBtn);
+            newGlobalBtn.addEventListener('click', function() {
+                globalShowAllAnswers = !globalShowAllAnswers;
+                renderUnits(unitMap, filterPaper, filterUnit, allQuestions, globalShowAllAnswers);
+                updateGlobalBtn();
+            });
+            updateGlobalBtn();
+
+            // Dark mode
+            setupDarkMode();
+        }
+
+        // Subject switcher logic
+        (function() {
+            let currentSubject = localStorage.getItem('pyqSubject') || "PPS";
+            const subjectSelect = document.getElementById('subjectSelect');
+            subjectSelect.value = currentSubject;
+
+            // Initial load
+            loadAndRenderSubject(currentSubject);
+
+            subjectSelect.addEventListener('change', function() {
+                currentSubject = this.value;
+                localStorage.setItem('pyqSubject', currentSubject);
+                // Remove all event listeners from filters/global toggle by replacing nodes
+                // (handled in loadAndRenderSubject)
+                loadAndRenderSubject(currentSubject);
+            });
+        })();
+    </script>
+</body>
+</html>

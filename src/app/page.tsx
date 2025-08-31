@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 const SUBJECTS = [
   { code: "PPS", name: "PPS (Programming for Problem Solving)", title: "21CSS101J: Programming for Problem Solving" },
   { code: "POE", name: "POE (Philosophy of Engineering)", title: "21GNH101J: Philosophy of Engineering" },
+  { code: "FRENCH", name: "French", title: "21LEH103T: French" },
 ];
 
 const SUBJECT_FILES: Record<string, string[]> = {
@@ -68,6 +69,20 @@ const SUBJECT_FILES: Record<string, string[]> = {
     "2024-09-30_CT1_Set1_QP.json",
     "2024-12-10_CT2_Set3_QP.json",
     "2025-02-24_CT1_SetB_QP.json"
+  ],
+  "FRENCH": [
+    "2022-23_CT1_SetA_QP.json",
+    "2022-23_CT2_SetA_QP.json",
+    "2022-23_CT3_SetB_QP.json",
+    "2023-05_ET_QP.json",
+    "2023-09-12_CT1_Set1_QP.json",
+    "2023-09-12_CT1_Set2_QP.json",
+    "2023-10-16_CT1_Set1_QP.json",
+    "2023-12_ET_QP.json",
+    "2023-XX-XX_CT2_Set2_QP.json",
+    "2024-05_ET_QP.json",
+    "2024-07_ET_QP.json",
+    "2025-05_ET_QP.json"
   ]
 };
 
