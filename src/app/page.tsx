@@ -2,9 +2,10 @@
 import React, { useEffect, useState } from "react";
 
 const SUBJECTS = [
-  { code: "PPS", name: "PPS (Programming for Problem Solving)", title: "21CSS101J: Programming for Problem Solving" },
-  { code: "POE", name: "POE (Philosophy of Engineering)", title: "21GNH101J: Philosophy of Engineering" },
+  { code: "PPS", name: "Programming for Problem Solving", title: "21CSS101J: Programming for Problem Solving" },
+  { code: "POE", name: "Philosophy of Engineering", title: "21GNH101J: Philosophy of Engineering" },
   { code: "FRENCH", name: "French", title: "21LEH103T: French" },
+  { code: "ICB", name: "Introduction to Computational Biology", title: "21BTB102T: Introduction to Computational Biology" },
 ];
 
 const SUBJECT_FILES: Record<string, string[]> = {
@@ -83,6 +84,27 @@ const SUBJECT_FILES: Record<string, string[]> = {
     "2024-05_ET_QP.json",
     "2024-07_ET_QP.json",
     "2025-05_ET_QP.json"
+  ],
+  "ICB": [
+    "2022-10-21_CT1_SetR_QP.json",
+    "2023-01_ET_QP.json",
+    "2023-05_ET_QP.json",
+    "2023-06_ET_QP.json",
+    "2023-07_ET_QP_2.json",
+    "2023-07_ET_QP.json",
+    "2023-11-29_CT3_SetA_QP.json",
+    "2023-12_ET_QP.json",
+    "2024-01_ET_QP.json",
+    "2024-05_ET_QP.json",
+    "2024-07_ET_QP.json",
+    "2024-10-01_CT1_SetB_QP.json",
+    "2024-10-04_CT1_SetB_QP.json",
+    "2024-10-18_CT1_SetB_QP.json",
+    "2024-11_ET_QP.json",
+    "2024-12_ET_QP.json",
+    "2024-12-04_CT2_SetA_QP.json",
+    "2024-12-04_CT2_SetB_QP.json",
+    "2024-25_CT1_QP.json"
   ]
 };
 

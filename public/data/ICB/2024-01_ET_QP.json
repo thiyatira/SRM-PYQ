@@ -1,0 +1,230 @@
+{
+    "paper_title": "21BTB102T - INTRODUCTION TO COMPUTATIONAL BIOLOGY",
+    "source": "2024-01 ET",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "A sequence of amino acids bonded together by ______ bonds.\n(A) Hydrogen\n(C) Peptide\n(B) Glycosidic bond\n(D) Ionic",
+            "marks": 1,
+            "answer": "(C) Peptide. Amino acids are linked by peptide bonds to form polypeptide chains.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basics in Biochemistry"
+        },
+        {
+            "question_number": "2",
+            "question_text": "Homologous partner of chromosome for X is\n(A) XY\n(C) Y\n(B) 23\n(D) 1",
+            "marks": 1,
+            "answer": "(C) Y. In human males, the X chromosome pairs with the Y chromosome during meiosis, making Y its homologous partner in this context.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Cell and Evolution"
+        },
+        {
+            "question_number": "3",
+            "question_text": "Inner cell mass is obtained from\n(A) Blastocyst\n(C) Gastrula\n(B) Morula\n(D) Zygote",
+            "marks": 1,
+            "answer": "(A) Blastocyst. The inner cell mass is a cluster of cells within the blastocyst, which eventually forms the embryo.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Cell and Evolution"
+        },
+        {
+            "question_number": "4",
+            "question_text": "The transfer of genetic material through viruses is called\n(A) Translation\n(C) Conjugation\n(B) Transduction\n(D) Transformation",
+            "marks": 1,
+            "answer": "(B) Transduction. Transduction is the process by which genetic material is transferred from one bacterium to another by a virus.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Cell and Evolution"
+        },
+        {
+            "question_number": "5",
+            "question_text": "Cholesterol is a\n(A) Steroid\n(C) Enzyme\n(B) Transporter\n(D) Synthetic compound",
+            "marks": 1,
+            "answer": "(A) Steroid. Cholesterol is a type of lipid classified as a steroid, essential for cell membranes and hormone synthesis.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basics in Biochemistry"
+        },
+        {
+            "question_number": "6",
+            "question_text": "DNA is different from RNA because of the base\n(A) Cytosine\n(C) Uracil\n(B) Guanine\n(D) Adenine",
+            "marks": 1,
+            "answer": "(C) Uracil. DNA contains Adenine, Guanine, Cytosine, and Thymine, while RNA contains Adenine, Guanine, Cytosine, and Uracil (instead of Thymine).",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basics in Biochemistry"
+        },
+        {
+            "question_number": "7",
+            "question_text": "The algorithm compares a protein query sequence against a nucleotide\nsequence database dynamically translated in all reading frames.\n(A) BLASTn\n(C) tBLASTn\n(B) BLASTP\n(D) BLASTX",
+            "marks": 1,
+            "answer": "(D) BLASTX. BLASTX compares a protein query sequence against a nucleotide sequence database that has been dynamically translated in all six reading frames.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basics in Biochemistry"
+        },
+        {
+            "question_number": "8",
+            "question_text": "The mechanism of delivering amino acids for translation is done by\n(A) tRNA\n(C) mRNA\n(B) gRNA\n(D) rDNA",
+            "marks": 1,
+            "answer": "(A) tRNA. Transfer RNA (tRNA) molecules carry specific amino acids to the ribosome during protein synthesis (translation) according to the mRNA codons.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basics in Biochemistry"
+        },
+        {
+            "question_number": "9",
+            "question_text": "PDB was established in 1972 at\n(A) BNL\n(C) RCSB\n(B) CNL\n(D) GGE",
+            "marks": 1,
+            "answer": "(A) BNL. The Protein Data Bank (PDB) was initially established in 1972 at the Brookhaven National Laboratory (BNL).",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Structure Biology"
+        },
+        {
+            "question_number": "10",
+            "question_text": "______ determines the propensity or intrinsic tendency of each residue\nto be in the helix, strand, and \u1e9e-turn conformation\n(A) PHD\n(C) GOR\n(B) Chou Fasman\n(D) PROTFUN",
+            "marks": 1,
+            "answer": "(B) Chou Fasman. The Chou-Fasman method is an early and widely used algorithm that predicts protein secondary structures (alpha-helices, beta-sheets, and beta-turns) based on the amino acid sequence and their propensities for certain conformations.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Structure Biology"
+        },
+        {
+            "question_number": "11",
+            "question_text": "Which among these is odd?\n(A) Space fill\n(C) Side chain model\n(B) Ribbon\n(D) Ball and stick",
+            "marks": 1,
+            "answer": "(C) Side chain model. Space-fill, Ribbon, and Ball-and-stick are common general visualization styles for protein structures. \"Side chain model\" describes a specific component of a protein (the side chains) rather than a holistic representation style.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Structure Biology"
+        },
+        {
+            "question_number": "12",
+            "question_text": "The anticodon for ACU is\n(A) TGA\n(C) UGA\n(B) GAT\n(D) UCA",
+            "marks": 1,
+            "answer": "(C) UGA. The anticodon on tRNA is complementary and antiparallel to the mRNA codon. For mRNA codon ACU, the complementary base pairs are U-A, G-C, U-A, so the anticodon is UGA.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basics in Biochemistry"
+        },
+        {
+            "question_number": "13",
+            "question_text": "Clustering is a type of ______ machine learning algorithm.\n(A) Supervised\n(C) Reciprocal\n(B) Unsupervised\n(D) Cosupervised",
+            "marks": 1,
+            "answer": "(B) Unsupervised. Clustering is a machine learning technique used to group data points into clusters based on their similarity without prior labeled data, hence it is unsupervised.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Neurobiology"
+        },
+        {
+            "question_number": "14",
+            "question_text": "Albert Einstein had inordinate number of ______ cells.\n(A) Nerve\n(C) Liver\n(B) Glial\n(D) Brain cells",
+            "marks": 1,
+            "answer": "(B) Glial. Studies of Albert Einstein's brain suggested he had an unusually high number of glial cells relative to neurons in certain cortical areas, particularly the inferior parietal lobe.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Neurobiology"
+        },
+        {
+            "question_number": "15",
+            "question_text": "The spiking period is followed by a ______ period.\n(A) Refractory\n(C) Unspike\n(B) Resolution\n(D) Unrest",
+            "marks": 1,
+            "answer": "(A) Refractory. Following an action potential (spiking), a neuron enters a refractory period during which it is less responsive or completely unresponsive to further stimulation, preventing immediate re-firing and ensuring unidirectional signal propagation.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Neurobiology"
+        },
+        {
+            "question_number": "16",
+            "question_text": "Alzheimer's disease causes deficit in\n(A) Proteins\n(C) Cognition\n(B) Hormones\n(D) Sugars",
+            "marks": 1,
+            "answer": "(C) Cognition. Alzheimer's disease is a neurodegenerative disorder characterized by progressive loss of memory, thinking skills, and other cognitive abilities.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Neurobiology"
+        },
+        {
+            "question_number": "17",
+            "question_text": "Diphtheria and tetanus are developed as ______ vaccine.\n(A) Peptide\n(C) Recombinant\n(B) Live\n(D) Toxoid",
+            "marks": 1,
+            "answer": "(D) Toxoid. Diphtheria and tetanus vaccines are toxoid vaccines, which means they are made from inactivated bacterial toxins (toxoids) that stimulate an immune response without causing the disease.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Immunobiology"
+        },
+        {
+            "question_number": "18",
+            "question_text": "______ is a agranular leukocyte.\n(A) Basophil\n(C) Monocyte\n(B) Eosinophil\n(D) Lymphocyte",
+            "marks": 1,
+            "answer": "(D) Lymphocyte. Leukocytes are broadly classified into granulocytes (neutrophils, eosinophils, basophils) and agranulocytes (lymphocytes, monocytes). Lymphocytes are agranular.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Immunobiology"
+        },
+        {
+            "question_number": "19",
+            "question_text": "MHC is present on ______\n(A) Human cells\n(C) Virus\n(B) Bacteria\n(D) Parasite",
+            "marks": 1,
+            "answer": "(A) Human cells. Major Histocompatibility Complex (MHC) molecules are proteins found on the surface of most nucleated cells in vertebrates, including human cells, playing a critical role in presenting antigens to T cells and initiating immune responses.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Immunobiology"
+        },
+        {
+            "question_number": "20",
+            "question_text": "Antibodies are made from ______ cells.\n(A) B\n(C) NK\n(B) T\n(D) M",
+            "marks": 1,
+            "answer": "(A) B. B lymphocytes (B cells) are the primary cells responsible for producing antibodies. Upon activation, B cells differentiate into plasma cells, which are antibody-secreting factories.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Immunobiology"
+        },
+        {
+            "question_number": "21",
+            "question_text": "Provide a comprehensive enumeration of the different organelles that are\npresent in a cell?",
+            "marks": 10,
+            "answer": "Cells contain various organelles, each with specialized functions. Key organelles in eukaryotic cells include:\n*   **Nucleus:** Contains the cell's genetic material (DNA) and controls cell growth and reproduction.\n*   **Mitochondria:** The \"powerhouses\" of the cell, responsible for cellular respiration and ATP production.\n*   **Endoplasmic Reticulum (ER):** A network of membranes involved in protein and lipid synthesis. Rough ER (with ribosomes) synthesizes proteins for secretion, while smooth ER synthesizes lipids and detoxifies.\n*   **Golgi Apparatus (Golgi Complex):** Modifies, sorts, and packages proteins and lipids for secretion or delivery to other organelles.\n*   **Ribosomes:** Sites of protein synthesis, found free in the cytoplasm or attached to the rough ER.\n*   **Lysosomes:** Contain digestive enzymes to break down waste materials and cellular debris.\n*   **Peroxisomes:** Involved in metabolic processes, including the breakdown of fatty acids and detoxification.\n*   **Cytoskeleton:** A network of protein filaments (microtubules, microfilaments, intermediate filaments) providing structural support, facilitating cell movement, and organizing organelles.\n*   **Cell Membrane:** The outer boundary of the cell, regulating passage of substances.\n*   **Centrosomes (in animal cells):** Organize microtubules and are involved in cell division.\n*   **Vacuoles (prominent in plant cells):** Store water, nutrients, and waste products.\n*   **Cell Wall (in plant and fungal cells):** Provides structural support and protection.\n*   **Chloroplasts (in plant cells):** Sites of photosynthesis.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Cell and Evolution"
+        },
+        {
+            "question_number": "22",
+            "question_text": "Describe biochemistry of carbohydrates in detail.",
+            "marks": 10,
+            "answer": "Carbohydrates are organic molecules composed of carbon, hydrogen, and oxygen, with the general formula (CH\u2082O)n. They are a primary source of energy for living organisms and play crucial structural and recognition roles.\n*   **Classification:**\n    *   **Monosaccharides:** Simple sugars like glucose, fructose, and galactose. They are the basic units and cannot be hydrolyzed further. Glucose is a key energy source, fructose is found in fruits, and galactose is part of lactose.\n    *   **Disaccharides:** Formed by the glycosidic linkage of two monosaccharides. Examples include sucrose (glucose + fructose), lactose (glucose + galactose), and maltose (glucose + glucose).\n    *   **Oligosaccharides:** Contain 3 to 10 monosaccharide units. Often found attached to proteins (glycoproteins) and lipids (glycolipids) on cell surfaces, involved in cell recognition.\n    *   **Polysaccharides:** Long chains of many monosaccharide units, either linear or branched. Examples include:\n        *   **Starch:** Energy storage in plants (amylose and amylopectin).\n        *   **Glycogen:** Energy storage in animals, primarily in liver and muscles.\n        *   **Cellulose:** Structural component of plant cell walls, providing rigidity.\n        *   **Chitin:** Structural component of fungal cell walls and arthropod exoskeletons.\n*   **Functions:**\n    *   **Energy Source:** Glucose is the main fuel for cellular respiration. Starch and glycogen serve as energy reserves.\n    *   **Structural Support:** Cellulose in plants and chitin in fungi/arthropods provide rigidity and protection.\n    *   **Cell Recognition:** Oligosaccharides on cell surfaces act as markers for cell-cell communication and immune recognition.\n    *   **Lubrication and Protection:** Glycosaminoglycans (a type of polysaccharide) are components of connective tissues, providing lubrication and cushioning.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basics in Biochemistry"
+        },
+        {
+            "question_number": "23",
+            "question_text": "Give the tools for the prediction of secondary structure in proteins.",
+            "marks": 10,
+            "answer": "Secondary structure prediction in proteins aims to predict local conformations (alpha-helices, beta-sheets, turns, and coils) from the amino acid sequence. Several computational tools and algorithms have been developed for this purpose:\n*   **Chou-Fasman Method:** An early, empirical method that uses propensity values for each amino acid to be in a helix, sheet, or turn, based on known protein structures. It's relatively simple but has limited accuracy (around 50-60%).\n*   **GOR (Garnier-Osguthorpe-Robson) Method:** Another knowledge-based method that uses information theory to predict secondary structures. It considers a window of amino acids and uses statistical preferences for different structures. It generally offers improved accuracy over Chou-Fasman.\n*   **Neural Network-based Methods (e.g., PHD, PSIPRED):** These are among the most accurate methods. They use artificial neural networks trained on large datasets of known protein structures.\n    *   **PHD (Profile-based neural network prediction of protein secondary structure):** Developed by Burkhard Rost and Chris Sander, it uses evolutionary information from multiple sequence alignments to improve prediction accuracy.\n    *   **PSIPRED (Protein Secondary Structure Prediction Server):** Also utilizes PSI-BLAST generated position-specific scoring matrices (PSSMs) as input to a two-stage neural network, achieving accuracies often above 80%.\n*   **Support Vector Machines (SVMs):** Some modern predictors use SVMs, which are powerful supervised learning models, to classify amino acid residues into secondary structure types.\n*   **Homology-based methods:** If a protein has a significant sequence similarity to another protein with a known 3D structure, its secondary structure can be inferred through homology modeling.\n*   **Consensus methods:** Combine predictions from multiple different algorithms to produce a more reliable prediction, often outperforming individual methods.\nTools like JPred, PORTER, RaptorX, and I-TASSER integrate multiple approaches for comprehensive structural prediction.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Structure Biology"
+        },
+        {
+            "question_number": "24",
+            "question_text": "Describe machine learning methods for biology.",
+            "marks": 10,
+            "answer": "Machine learning (ML) involves algorithms that learn from data to make predictions or decisions without being explicitly programmed. In biology, ML is transforming various fields by enabling the analysis of vast and complex biological datasets.\n*   **Genomics and Proteomics:**\n    *   **Variant Calling & Annotation:** ML models can identify disease-associated genetic variants from sequencing data and predict their functional impact.\n    *   **Gene Expression Analysis:** Clustering (unsupervised ML) and classification (supervised ML) are used to group genes with similar expression patterns or classify cell types based on their transcriptomes.\n    *   **Protein Folding Prediction:** Algorithms like AlphaFold use deep learning to predict a protein's 3D structure from its amino acid sequence, a long-standing challenge in biology.\n    *   **Peptide/Epitope Prediction:** Used in immunoinformatics to identify peptides that bind to MHC molecules, crucial for vaccine design.\n*   **Drug Discovery and Development:**\n    *   **Target Identification:** ML can prioritize potential drug targets by analyzing pathways and disease associations.\n    *   **Virtual Screening:** Predict the binding affinity of small molecules to protein targets, reducing the need for extensive experimental screening.\n    *   **Drug Repurposing:** Identify existing drugs that might be effective for new diseases.\n    *   **Pharmacogenomics:** Predict patient response to drugs based on genetic profiles.\n*   **Neurobiology:**\n    *   **Brain Imaging Analysis:** ML aids in segmenting brain regions, detecting abnormalities (e.g., tumors, lesions), and correlating brain activity with behavior from fMRI or EEG data.\n    *   **Neural Circuit Mapping:** Analyzing complex neuronal connectivity and activity patterns.\n    *   **Modeling Neural Networks:** ANNs themselves are inspired by biological neurons and can be used to model and understand brain function.\n*   **Ecology and Evolution:**\n    *   **Species Classification:** Identify and classify species from images or genomic data.\n    *   **Disease Outbreak Prediction:** Model the spread of infectious diseases.\n    *   **Evolutionary Relationships:** Infer phylogenetic trees and analyze evolutionary patterns.\n*   **Clinical Diagnostics:**\n    *   **Disease Diagnosis:** Classify diseases from patient data (medical images, lab results, electronic health records).\n    *   **Prognosis Prediction:** Forecast disease progression and patient outcomes.\n    *   **Personalized Medicine:** Tailor treatments based on individual patient characteristics.\nKey ML techniques used include classification (e.g., SVMs, Random Forests, Deep Learning), regression, clustering (e.g., K-means, hierarchical clustering), and dimensionality reduction (e.g., PCA).",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Neurobiology"
+        },
+        {
+            "question_number": "25",
+            "question_text": "Give a detailed note on humoral immune response.",
+            "marks": 10,
+            "answer": "The humoral immune response is an arm of the adaptive immune system primarily mediated by B lymphocytes (B cells) and the antibodies they produce. It targets extracellular pathogens (bacteria, viruses in the blood/lymph) and their toxins.\n*   **Key Players:**\n    *   **B Lymphocytes (B cells):** Each B cell expresses a unique B cell receptor (BCR) on its surface, which is an antibody molecule specific for a particular antigen.\n    *   **Helper T cells (T_H cells):** Crucial for activating most B cells, providing co-stimulatory signals.\n    *   **Antigens:** Molecules that can elicit an immune response, typically proteins or polysaccharides.\n    *   **Antibodies (Immunoglobulins):** Soluble proteins secreted by plasma cells, capable of binding specifically to antigens.\n*   **Steps of Humoral Response:**\n    1.  **Antigen Recognition and Binding:** A naive B cell encounters its specific antigen. The antigen binds to the B cell receptor (BCR) on the B cell surface. This internalizes the antigen, which is then processed and presented on MHC class II molecules.\n    2.  **T Cell Help (for T-dependent antigens):** For most protein antigens (T-dependent antigens), the activated B cell presents the processed antigen to an activated Helper T cell (T_H cell) that recognizes the same antigen fragment. The T_H cell provides co-stimulatory signals and secretes cytokines, which are essential for full B cell activation.\n    3.  **B Cell Activation and Proliferation:** With T cell help (or directly for T-independent antigens, though less robustly), the B cell becomes fully activated. It then rapidly proliferates, creating a clone of identical B cells.\n    4.  **Differentiation:** These proliferated B cells differentiate into two main types:\n        *   **Plasma Cells:** These are antibody-secreting factories. They produce and release large quantities of soluble antibodies (e.g., IgM, IgG, IgA, IgE) specific to the antigen. Plasma cells are short-lived.\n        *   **Memory B Cells:** These are long-lived cells that persist in the body for months or years. They are pre-primed to respond quickly and strongly to subsequent encounters with the same antigen, leading to a faster and more potent secondary immune response.\n    5.  **Antibody Effector Functions:** Antibodies combat pathogens through various mechanisms:\n        *   **Neutralization:** Binding to toxins or viral particles, preventing them from interacting with host cells.\n        *   **Opsonization:** Coating pathogens, making them more easily recognized and phagocytosed by macrophages and neutrophils.\n        *   **Complement Activation:** Triggering the complement cascade, leading to pathogen lysis and inflammation.\n        *   **Antibody-Dependent Cell-mediated Cytotoxicity (ADCC):** Marking infected cells for destruction by NK cells.\nThe humoral response provides long-term protection against re-infection due to the generation of memory B cells and circulating antibodies.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Immunobiology"
+        },
+        {
+            "question_number": "26",
+            "question_text": "List the types, properties and future applications of stem cell technology.",
+            "marks": 10,
+            "answer": "Stem cells are undifferentiated cells that have the remarkable capacity to self-renew (divide and make more stem cells) and to differentiate into specialized cell types. Stem cell technology involves harnessing these properties for therapeutic and research purposes.\n*   **Types of Stem Cells:**\n    1.  **Embryonic Stem Cells (ESCs):**\n        *   **Origin:** Derived from the inner cell mass of a blastocyst (early-stage embryo).\n        *   **Potency:** Pluripotent, meaning they can differentiate into any cell type of the three germ layers (ectoderm, mesoderm, endoderm) but not into extraembryonic tissues (like placenta).\n        *   **Properties:** Indefinite self-renewal in vitro, high differentiation potential. Ethical concerns exist due to their embryonic origin.\n    2.  **Adult Stem Cells (ASCs) / Somatic Stem Cells:**\n        *   **Origin:** Found in various differentiated tissues throughout the body (e.g., bone marrow, blood, brain, fat, skin).\n        *   **Potency:** Multipotent, meaning they can differentiate into a limited range of cell types within their tissue of origin (e.g., hematopoietic stem cells can form all blood cell types). Some are oligopotent or unipotent.\n        *   **Properties:** Involved in tissue maintenance and repair. Less prone to ethical concerns than ESCs, but harder to isolate and expand, and have lower differentiation potential.\n    3.  **Induced Pluripotent Stem Cells (iPSCs):**\n        *   **Origin:** Reprogrammed somatic (adult) cells (e.g., skin fibroblasts) into a pluripotent state by introducing specific transcription factors (e.g., Oct4, Sox2, Klf4, c-Myc).\n        *   **Potency:** Pluripotent, similar to ESCs, can differentiate into any cell type of the three germ layers.\n        *   **Properties:** Overcome ethical issues of ESCs and can be patient-specific, reducing immune rejection risk. Offer a significant promise for regenerative medicine.\n    4.  **Mesenchymal Stem Cells (MSCs):**\n        *   **Origin:** Found in bone marrow, adipose tissue, umbilical cord, etc.\n        *   **Potency:** Multipotent, can differentiate into bone, cartilage, fat cells, and muscle cells.\n        *   **Properties:** Immunomodulatory and anti-inflammatory properties, making them attractive for various therapies.\n*   **Future Applications of Stem Cell Technology:**\n    1.  **Regenerative Medicine:** Repairing or replacing damaged tissues and organs (e.g., regenerating nerve cells for spinal cord injury, pancreatic beta cells for diabetes, cardiac muscle for heart failure, cartilage for arthritis).\n    2.  **Disease Modeling:** Creating patient-specific iPSCs to generate cell types affected by a disease, allowing researchers to study disease mechanisms in a dish, screen drugs, and understand disease progression.\n    3.  **Drug Discovery and Toxicology Screening:** Using stem cell-derived cells (e.g., cardiomyocytes, hepatocytes, neurons) for high-throughput screening of drug efficacy and toxicity in a more physiologically relevant manner than traditional cell lines.\n    4.  **Gene Therapy:** Correcting genetic defects in patient-derived stem cells and then transplanting these corrected cells back into the patient.\n    5.  **Understanding Development:** Studying the early stages of human development and cell differentiation pathways using ESCs and iPSCs.\n    6.  **Cancer Research:** Understanding how cancer stem cells contribute to tumor initiation, progression, and recurrence, leading to new anti-cancer therapies.\n    7.  **Immunomodulation:** MSCs are being investigated for their ability to suppress immune responses in autoimmune diseases or transplant rejection.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Cell and Evolution"
+        },
+        {
+            "question_number": "27",
+            "question_text": "Cell theory - Device experiments to prove them.",
+            "marks": 15,
+            "answer": "The Cell Theory is one of the fundamental tenets of biology, stating that all living organisms are composed of cells, and cells are the basic unit of life. It comprises three main points:\n1.  All living organisms are composed of one or more cells.\n2.  The cell is the basic unit of structure and organization in organisms.\n3.  All cells arise from pre-existing cells.\n\n**Historical Context and Experimental Proofs:**\n\n*   **Early Microscopy and Observation (Points 1 & 2):**\n    *   **Robert Hooke (1665):** Observed cork under a crude microscope and coined the term \"cell\" for the small, box-like structures. This was the first observation suggesting a fundamental unit.\n    *   **Antonie van Leeuwenhoek (late 1600s):** With improved microscopes, observed \"animalcules\" (protozoa, bacteria, sperm cells) in various samples, demonstrating that microscopic life forms were also composed of these basic units.\n    *   **Matthias Schleiden (1838) and Theodor Schwann (1839):** Independently proposed that all plants are composed of cells (Schleiden) and all animals are composed of cells (Schwann). Their combined work formally established the first two tenets: all living things are made of cells, and the cell is the basic unit of life.\n    *   **Experiments to Prove 1 & 2:**\n        *   **Observation with Microscopes:** The most direct \"experiment\" was the widespread adoption of microscopy. Scientists observed an enormous diversity of living organisms \u2013 from simple bacteria to complex tissues in plants and animals \u2013 and consistently found them to be composed of individual cell units. Dissecting tissues and observing them under magnification invariably revealed cellular structures.\n        *   **Early Tissue Culture (Implicit):** While not explicitly for cell theory proof, early attempts at culturing tissues (e.g., in the late 19th/early 20th century) showed that cells could be isolated and maintained, acting as independent living units.\n\n*   **Cells Arise from Pre-existing Cells (Point 3 - \"Omnis cellula e cellula\"):**\n    *   **Challenge to Spontaneous Generation:** Before this tenet, it was widely believed that life could arise spontaneously from non-living matter (e.g., maggots from rotting meat).\n    *   **Francesco Redi (1668):** Designed an experiment to disprove spontaneous generation of maggots from meat. He placed meat in three jars: open, sealed, and covered with gauze. Maggots only appeared in the open jar, where flies could lay eggs, suggesting life comes from life.\n    *   **Louis Pasteur (1859):** Conducted definitive experiments using \"swan-neck\" flasks to demonstrate that microbes do not spontaneously generate in nutrient broths.\n        *   **Experiment:** He boiled broth in swan-neck flasks, sterilizing it. The curved neck allowed air in but trapped airborne dust and microbes. The broth remained sterile. If the neck was broken, allowing microbes direct access, the broth became cloudy with microbial growth. This elegantly proved that life (microbes) only arose from pre-existing life (airborne microbes).\n        *   **Implication for Cell Theory:** Pasteur's work was crucial as it applied to cells as well. If even the simplest life forms (microbes) don't spontaneously generate, then larger cells also must arise from pre-existing cells through processes like cell division.\n    *   **Rudolf Virchow (1855):** Formalized the third tenet, \"Omnis cellula e cellula\" (all cells arise from pre-existing cells), which built upon the observations of cell division and disproved spontaneous generation for cellular life.\n\n**Modern Experimental Confirmations:**\n*   **Detailed Cell Division Studies:** Advances in microscopy (light and electron microscopy) and molecular biology have allowed scientists to observe and meticulously document the processes of mitosis and meiosis, providing overwhelming evidence for cell division as the mechanism by which new cells are formed from existing ones.\n*   **Genetic Lineage Tracing:** Techniques like fluorescent reporters and genetic engineering allow scientists to track the lineage of cells from a single parent cell through multiple divisions, directly demonstrating their origin from pre-existing cells.\n*   **In Vitro Cell Culture:** The routine ability to culture cells in laboratories, where they proliferate and divide, forming new cells from existing ones, serves as a continuous experimental confirmation of Virchow's postulate.\n\nIn summary, the cell theory was established through a combination of meticulous observation enabled by microscopy and critical experiments that debunked spontaneous generation, ultimately demonstrating the fundamental role of cells as the building blocks of life and their origin solely from other living cells.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Cell and Evolution"
+        },
+        {
+            "question_number": "28",
+            "question_text": "What the body does, in reaction, when a vaccination is given to it.",
+            "marks": 15,
+            "answer": "When a vaccination is given, the body mounts an immune response to the vaccine antigens, which are typically weakened, inactivated, or fragments of pathogens, or genetic material encoding pathogen components. The goal is to induce protective immunity without causing the disease. The body's reaction involves both innate and adaptive immune responses.\n\n**Immediate (Innate) Response:**\n1.  **Antigen Presentation:** Vaccine components (antigens) are recognized by various immune cells, particularly antigen-presenting cells (APCs) like dendritic cells and macrophages, at the injection site. These APCs engulf the antigens.\n2.  **Inflammation:** The injection itself, along with certain adjuvants (components in vaccines that boost the immune response), can trigger a local inflammatory response. This involves the release of cytokines and chemokines, leading to redness, swelling, heat, and pain at the injection site. This inflammation helps recruit more immune cells to the area.\n3.  **APC Activation and Migration:** Activated APCs process the antigens and migrate to regional lymph nodes. During this migration, they mature and upregulate molecules necessary for activating T cells.\n\n**Later (Adaptive) Response:**\n1.  **T Cell Activation:** In the lymph nodes, APCs present processed antigens on MHC class I (for intracellular pathogens/vaccines inducing cytotoxic T cells) and MHC class II (for extracellular pathogens/vaccines inducing helper T cells) molecules to naive T lymphocytes. This leads to the activation and clonal expansion of specific T cells:\n    *   **Helper T Cells (CD4+ T_H cells):** These are crucial for coordinating the immune response. They help activate B cells and enhance cytotoxic T cell responses.\n    *   **Cytotoxic T Lymphocytes (CTLs or CD8+ T cells):** If the vaccine primes for cellular immunity (e.g., against viral infections or some cancers), CTLs are activated to kill infected cells.\n2.  **B Cell Activation and Antibody Production (Humoral Response):**\n    *   B cells with receptors specific for the vaccine antigen become activated (often with help from activated T_H cells).\n    *   These B cells proliferate and differentiate into **plasma cells**, which are antibody factories, secreting large quantities of specific antibodies (e.g., IgM initially, followed by IgG). These antibodies circulate in the blood and lymph, capable of neutralizing pathogens or marking them for destruction.\n3.  **Generation of Memory Cells:** This is the most critical outcome of vaccination. Both T cells and B cells differentiate into long-lived **memory T cells** and **memory B cells**. These cells persist in the body for extended periods (months to decades).\n    *   Upon subsequent exposure to the actual pathogen, these memory cells can rapidly recognize the antigen and mount a much faster, stronger, and more effective secondary immune response than the primary response, often preventing the disease altogether or significantly reducing its severity.\n\nIn essence, vaccination \"teaches\" the immune system to recognize a specific pathogen without causing disease, preparing it for a rapid and effective defense upon future encounters. This process relies on generating a robust adaptive immune response, particularly the formation of memory cells and specific antibodies.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Immunobiology"
+        }
+    ]
+}

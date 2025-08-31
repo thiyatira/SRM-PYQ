@@ -1,0 +1,158 @@
+{
+  "paper_title": "INTRODUCTION TO COMPUTATIONAL BIOLOGY",
+  "source": "2024-12-04 CT2 SetB",
+  "questions": [
+    {
+      "question_number": "1.",
+      "question_text": "How many codons code for 20 amino acids\na) 50 b) 96 c) 64 d) 46",
+      "marks": 1,
+      "answer": "There are 61 sense codons that specifically code for the 20 amino acids. The genetic code includes 64 codons in total, with three of these being stop codons.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basics in Biochemistry"
+    },
+    {
+      "question_number": "2.",
+      "question_text": "The start codon AUG codes for........\na) Methionine b) lysine c) leucine d)glycine",
+      "marks": 1,
+      "answer": "a) Methionine",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basics in Biochemistry"
+    },
+    {
+      "question_number": "3.",
+      "question_text": "RNA polymerase is a part of…………………\na) Replication b) translation c) transcription d)splicing",
+      "marks": 1,
+      "answer": "c) transcription",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basics in Biochemistry"
+    },
+    {
+      "question_number": "4.",
+      "question_text": "Find the ODD feature about dendrites\na) Short b) many in number c) unbranched d)pushes electric signal towards cell body",
+      "marks": 1,
+      "answer": "c) unbranched. Dendrites are typically highly branched structures that increase the surface area for receiving signals.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Neurobiology"
+    },
+    {
+      "question_number": "5.",
+      "question_text": "The action potential in a neuron is also called\na) Depolarization b) polarization c) repolarization d) refractory",
+      "marks": 1,
+      "answer": "An action potential is a rapid, transient, all-or-none change in the membrane potential of an excitable cell, often referred to as a 'nerve impulse' or 'spike'. While 'depolarization' is a critical phase of the action potential, it is not synonymous with the entire event.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Neurobiology"
+    },
+    {
+      "question_number": "6.",
+      "question_text": "The electrical signal is converted to chemical signal at the\na) Synapse b) soma c)axon d) dendron",
+      "marks": 1,
+      "answer": "a) Synapse",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Neurobiology"
+    },
+    {
+      "question_number": "7.",
+      "question_text": "Afferent pathways conducts nerve signal\na)Away from CNS b) towards CNS c)only in PNS d)none of them",
+      "marks": 1,
+      "answer": "b) towards CNS (Afferent neurons transmit sensory information from the periphery to the central nervous system).",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Neurobiology"
+    },
+    {
+      "question_number": "8.",
+      "question_text": "...............is part of a nonself cell\na) Epitope b) tepitope c) paratope d) bepitope",
+      "marks": 1,
+      "answer": "a) Epitope (An epitope is the specific part of an antigen, often on a non-self cell or molecule, that is recognized by the immune system).",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Immunobiology"
+    },
+    {
+      "question_number": "9.",
+      "question_text": "Other than the RBCs and WBCs.......makes up for the 45\" cellular content in the blood\na) Stem cells b) platelets c)bacteria d)globins",
+      "marks": 1,
+      "answer": "b) platelets (Blood is composed of plasma, red blood cells (RBCs), white blood cells (WBCs), and platelets. The formed elements – RBCs, WBCs, and platelets – make up about 45% of total blood volume).",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Immunobiology"
+    },
+    {
+      "question_number": "10.",
+      "question_text": "Basophils are usually less than ..........% in a normal human\na) 2 b) 4 c) 1 d)20",
+      "marks": 1,
+      "answer": "c) 1 (Basophils are the least common type of granulocyte, typically constituting less than 1% of circulating white blood cells).",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Immunobiology"
+    },
+    {
+      "question_number": "11.",
+      "question_text": "........are produced by WBCs against allergies\na) Histamines b) morphine c)leukocrines d)prostaglandins",
+      "marks": 1,
+      "answer": "a) Histamines (Histamines are released by mast cells and basophils, which are types of white blood cells, in response to allergens, contributing to allergic symptoms).",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Immunobiology"
+    },
+    {
+      "question_number": "12. a",
+      "question_text": "Write on the different structure databases available",
+      "marks": 8,
+      "answer": "Structure databases store experimentally determined three-dimensional (3D) structures of biomolecules like proteins, nucleic acids, and macromolecular complexes. These databases are crucial for understanding molecular function, drug discovery, and computational biology. Key examples include:\n1.  **Protein Data Bank (PDB)**: The most comprehensive repository for 3D structural data of proteins, nucleic acids, and their complexes. Structures are primarily determined by X-ray crystallography, NMR spectroscopy, and cryo-electron microscopy. Each entry has a unique 4-character ID.\n2.  **Cambridge Structural Database (CSD)**: Specializes in small molecule organic and organometallic crystal structures, storing over a million entries. It's vital for cheminformatics and materials science.\n3.  **Electron Microscopy Data Bank (EMDB)**: A public repository for 3D cryo-electron microscopy data (maps or volumes) of macromolecular complexes and cellular components, often complementing PDB entries for larger complexes.\n4.  **Biological Magnetic Resonance Bank (BMRB)**: Houses NMR spectroscopic data (raw data, assigned chemical shifts, coupling constants) for proteins, nucleic acids, and other biomolecules, providing detailed information about their dynamics and solution structures.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Structure Biology"
+    },
+    {
+      "question_number": "12. b",
+      "question_text": "List the steps of translation and explain the termination step in detail",
+      "marks": 8,
+      "answer": "Translation is the process by which messenger RNA (mRNA) is decoded by a ribosome to produce a specific amino acid chain, or polypeptide. It occurs in three main stages:\n\n1.  **Initiation**: The small ribosomal subunit binds to the mRNA molecule, typically at the 5' cap in eukaryotes or a Shine-Dalgarno sequence in prokaryotes. The initiator tRNA, carrying methionine (or N-formylmethionine in prokaryotes), then binds to the start codon (AUG) on the mRNA. Finally, the large ribosomal subunit joins the complex, forming a complete functional ribosome with the initiator tRNA in the P (peptidyl) site.\n\n2.  **Elongation**: This is the stage where the polypeptide chain grows. It involves three substeps for each amino acid addition:\n    *   **Codon Recognition**: An aminoacyl-tRNA (tRNA with its specific amino acid) with an anticodon complementary to the mRNA codon in the A (aminoacyl) site binds to the ribosome.\n    *   **Peptide Bond Formation**: A peptide bond is formed between the amino acid in the A site and the growing polypeptide chain in the P site. This reaction is catalyzed by peptidyl transferase activity, a ribozyme within the large ribosomal subunit.\n    *   **Translocation**: The ribosome moves (translocates) one codon down the mRNA in the 3' direction. This movement shifts the tRNA from the A site to the P site, the tRNA from the P site to the E (exit) site, and releases the deacylated tRNA from the E site.\n\n3.  **Termination**: This step concludes polypeptide synthesis and occurs when the ribosome encounters one of the three stop codons (UAA, UAG, or UGA) in the A site of the mRNA. Unlike sense codons, stop codons do not specify any amino acid and thus no corresponding tRNAs exist for them.\n    *   **Binding of Release Factors**: Instead, protein molecules called release factors (RFs) bind to the stop codon in the A site. In prokaryotes, RF1 recognizes UAA and UAG, while RF2 recognizes UAA and UGA. In eukaryotes, a single release factor, eRF1, recognizes all three stop codons. Another factor, eRF3 (GTP-dependent), helps eRF1.\n    *   **Hydrolysis of Polypeptide-tRNA Bond**: The binding of release factors alters the activity of the peptidyl transferase center, causing it to catalyze the hydrolysis of the bond between the polypeptide chain and the tRNA in the P site. This liberates the completed polypeptide from the ribosome.\n    *   **Ribosome Dissociation**: Following the release of the polypeptide, the ribosome dissociates into its large and small subunits, and the mRNA is released, making the components available for another round of translation.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Structure Biology"
+    },
+    {
+      "question_number": "13. a",
+      "question_text": "Explain different disorders related to nervous system",
+      "marks": 8,
+      "answer": "Disorders of the nervous system, also known as neurological disorders, are conditions that affect the brain, spinal cord, and nerves throughout the body. These disorders can lead to a wide range of symptoms, including impaired movement, sensation, cognition, and mood. Here are explanations of some common nervous system disorders:\n\n1.  **Alzheimer's Disease**: This is a progressive neurodegenerative disease and the most common cause of dementia. It is characterized by the accumulation of abnormal protein deposits (amyloid plaques and neurofibrillary tangles of tau protein) in the brain, leading to the death of neurons. Symptoms typically begin with mild memory loss and gradually worsen, affecting thinking, reasoning, language, and behavior.\n\n2.  **Parkinson's Disease**: A progressive disorder of the central nervous system that primarily affects movement. It results from the degeneration of dopamine-producing neurons in a specific area of the brain called the substantia nigra. Key symptoms include tremor (shaking), bradykinesia (slowed movement), rigidity (stiffness), and postural instability (impaired balance and coordination).\n\n3.  **Multiple Sclerosis (MS)**: An autoimmune disease in which the body's immune system attacks the myelin sheath, the protective covering around nerve fibers in the central nervous system (brain and spinal cord). This damage disrupts the electrical signals sent by the brain, leading to a variety of symptoms such as fatigue, numbness or weakness in limbs, vision problems, balance issues, and cognitive impairment. MS symptoms can vary widely and often involve periods of relapse and remission.\n\n4.  **Epilepsy**: A neurological disorder characterized by recurrent, unprovoked seizures, which are sudden, uncontrolled disturbances in brain electrical activity. Seizures can manifest in various ways, from brief staring spells to severe convulsions, depending on which part of the brain is affected. The causes can range from genetic predispositions to brain injury, stroke, or tumors, though often the cause is unknown.\n\n5.  **Stroke**: Occurs when blood flow to a part of the brain is interrupted or reduced, depriving brain tissue of oxygen and nutrients. Within minutes, brain cells begin to die. There are two main types: ischemic stroke (caused by a blood clot blocking an artery) and hemorrhagic stroke (caused by a burst blood vessel leaking blood into the brain). Symptoms appear suddenly and can include weakness or numbness on one side of the body, difficulty speaking or understanding speech, vision problems, and severe headache.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Neurobiology"
+    },
+    {
+      "question_number": "13. b",
+      "question_text": "Explain the methods of supervised learning",
+      "marks": 8,
+      "answer": "Supervised learning is a paradigm in machine learning where an algorithm learns from a labeled dataset. This dataset consists of input features (X) and their corresponding correct output labels (Y). The goal of supervised learning is to learn a mapping function from the input to the output, enabling the model to predict the output for new, unseen data. It is primarily used for two types of problems:\n\n1.  **Regression**: Regression tasks involve predicting a continuous numerical output. The model learns the relationship between input features and a continuous target variable. Examples include predicting house prices, stock values, temperature, or a student's test score.\n    *   **Algorithms**: Common regression algorithms include:\n        *   **Linear Regression**: Models a linear relationship between input features and the output. It finds the best-fitting straight line (or hyperplane in higher dimensions) that minimizes the sum of squared residuals.\n        *   **Polynomial Regression**: Used when the relationship between variables is curvilinear. It fits a polynomial equation to the data.\n        *   **Decision Tree Regressors**: Splits the data into branches based on features to predict a continuous value at the leaf nodes.\n        *   **Support Vector Regression (SVR)**: An extension of Support Vector Machines for regression, aiming to find a function that deviates from the target by no more than a certain margin.\n\n2.  **Classification**: Classification tasks involve predicting a categorical (discrete) output label. The model learns to assign input data points to one of several predefined classes. Examples include classifying emails as spam or not spam, identifying diseases (e.g., benign or malignant tumor), or recognizing objects in images.\n    *   **Algorithms**: Common classification algorithms include:\n        *   **Logistic Regression**: Despite its name, it's a powerful classification algorithm that uses a logistic (sigmoid) function to model the probability of a binary outcome (e.g., 0 or 1).\n        *   **Support Vector Machines (SVMs)**: Finds the optimal hyperplane that best separates data points of different classes in a high-dimensional space, maximizing the margin between them.\n        *   **Decision Trees**: Creates a tree-like model of decisions based on input features, where each leaf node represents a class label.\n        *   **Random Forests**: An ensemble method that builds multiple decision trees during training and outputs the mode of the classes (for classification) or mean prediction (for regression) of the individual trees.\n        *   **K-Nearest Neighbors (KNN)**: A non-parametric algorithm that classifies a data point based on the majority class of its 'k' nearest neighbors in the feature space.\n        *   **Artificial Neural Networks (ANNs)**: Multi-layered networks capable of learning complex non-linear relationships, used extensively for both classification and regression, particularly in deep learning.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Neurobiology"
+    },
+    {
+      "question_number": "14. a",
+      "question_text": "Explain different types of immune cells with description",
+      "marks": 8,
+      "answer": "The immune system is a complex network of cells, tissues, and organs that work together to defend the body against pathogens (like bacteria, viruses, fungi) and other harmful substances. Key types of immune cells, or leukocytes (white blood cells), include:\n\n1.  **Lymphocytes**: These are central to adaptive immunity, providing specific and long-lasting protection.\n    *   **B cells**: Primarily responsible for humoral immunity. Upon activation, they differentiate into plasma cells, which produce and secrete large quantities of antibodies. They also act as antigen-presenting cells (APCs) and can become memory B cells.\n    *   **T cells**: Critical for cell-mediated immunity. They mature in the thymus and recognize antigens presented by other cells.\n        *   **Helper T cells (CD4+)**: Coordinate immune responses by secreting cytokines that activate other immune cells, including B cells, cytotoxic T cells, and macrophages.\n        *   **Cytotoxic T cells (CD8+)**: Directly kill virus-infected cells, cancer cells, and cells damaged in other ways. They recognize specific antigens presented on the surface of these target cells.\n        *   **Regulatory T cells (Tregs)**: Suppress excessive immune responses, helping to maintain self-tolerance and prevent autoimmune diseases.\n\n2.  **Phagocytes**: These cells engulf and digest foreign particles, pathogens, and cellular debris in a process called phagocytosis.\n    *   **Macrophages**: Large, long-lived phagocytes that reside in tissues. They also function as professional APCs, initiating adaptive immune responses, and play a role in wound healing.\n    *   **Neutrophils**: The most abundant type of white blood cell, they are typically the first responders to infection or inflammation. They are highly phagocytic and release antimicrobial substances.\n    *   **Dendritic Cells (DCs)**: Highly specialized APCs that bridge innate and adaptive immunity. They capture antigens in tissues, process them, and migrate to lymph nodes to present them to T cells, thereby initiating primary immune responses.\n\n3.  **Granulocytes**: Named for the granules in their cytoplasm, which contain various enzymes and mediators.\n    *   **Eosinophils**: Primarily involved in defense against parasitic infections and play a role in allergic reactions. Their granules contain toxic proteins that can kill parasites.\n    *   **Basophils**: The least common granulocyte, they release histamine and other inflammatory mediators in response to allergens and parasites, contributing to allergic symptoms and inflammation.\n\n4.  **Natural Killer (NK) Cells**: Part of the innate immune system, NK cells are capable of recognizing and killing virus-infected cells and certain tumor cells without prior sensitization. They detect changes on the cell surface that indicate stress or infection, often by the absence of MHC class I molecules.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Immunobiology"
+    },
+    {
+      "question_number": "14. b",
+      "question_text": "Differentiate innate and acquired immunity",
+      "marks": 8,
+      "answer": "The immune system is broadly divided into two interconnected branches: innate (non-specific) immunity and acquired (adaptive or specific) immunity. They differ significantly in their mechanism, speed, specificity, and ability to remember past infections.\n\nHere's a differentiation:\n\nFeature: Innate Immunity vs Acquired (Adaptive) Immunity\n\n1. Specificity:\n   - Innate: Non-specific; recognizes general pathogen-associated molecular patterns (PAMPs) found on many pathogens.\n   - Acquired: Highly specific; targets particular antigens on specific pathogens or cells.\n2. Response Time:\n   - Innate: Rapid; immediate (within minutes to hours) upon exposure.\n   - Acquired: Slower; takes days (5-7 days) for a primary response. Faster and stronger for secondary responses.\n3. Memory:\n   - Innate: No immunological memory; responds the same way to repeated exposures.\n   - Acquired: Develops immunological memory; subsequent exposures elicit a faster, stronger, and more effective response.\n4. Components:\n   - Innate: Cellular: Phagocytes (macrophages, neutrophils, dendritic cells), Natural Killer (NK) cells, mast cells, basophils, eosinophils. Humoral: Complement system, interferons, antimicrobial peptides, acute-phase proteins.\n   - Acquired: Cellular: Lymphocytes (B cells, T cells - Helper T, Cytotoxic T, Regulatory T). Humoral: Antibodies produced by plasma cells (differentiated B cells).\n5. Diversity:\n   - Innate: Limited repertoire of germline-encoded receptors (Pattern Recognition Receptors - PRRs).\n   - Acquired: Vast and diverse repertoire of highly specific receptors (B-cell Receptors - BCRs, T-cell Receptors - TCRs) generated through genetic recombination.\n6. Evolutionary Age:\n   - Innate: Evolutionarily older; found in nearly all multicellular organisms.\n   - Acquired: Evolutionarily newer; primarily found in vertebrates.\n7. Tolerance:\n   - Innate: Generally recognizes 'self' and tolerates it, but less sophisticated mechanisms.\n   - Acquired: Develops robust self-tolerance mechanisms (e.g., clonal deletion, anergy) to prevent autoimmunity.\n8. Examples:\n   - Innate: Skin, mucous membranes, cough reflex, stomach acid, phagocytosis by macrophages, fever, inflammation.\n   - Acquired: Antibody production, cell-mediated cytotoxicity by cytotoxic T cells, vaccination-induced immunity.\n\nBoth systems are crucial and collaborate. Innate immunity provides the first line of defense and also helps to activate and shape the adaptive immune response.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Immunobiology"
+    },
+    {
+      "question_number": "15",
+      "question_text": "Display how to create an artificial immune system",
+      "marks": 15,
+      "answer": "An Artificial Immune System (AIS) is a class of computational intelligence systems inspired by the principles and processes of the vertebrate immune system. AIS algorithms are used for problem-solving in areas like optimization, pattern recognition, anomaly detection, and data mining. Creating an AIS involves translating biological immune concepts into computational models.\n\nHere's a general approach to creating an Artificial Immune System:\n\n**1. Understanding Core Immune System Principles (Biological Inspiration):**\n   Before designing an AIS, it's essential to understand the key functionalities of the biological immune system that can be abstracted into an algorithm:\n   *   **Self-Nonself Discrimination**: The ability to distinguish between harmless internal components (self) and potentially dangerous foreign elements (nonself).\n   *   **Diversity**: The generation of a vast and diverse repertoire of immune cells (lymphocytes) capable of recognizing a wide array of potential threats.\n   *   **Memory**: The capacity to remember past encounters with pathogens, leading to faster and more robust responses upon re-exposure.\n   *   **Clonal Selection**: The process by which immune cells that bind strongly to an antigen are stimulated to proliferate (clone), mutate, and differentiate.\n   *   **Negative Selection**: A mechanism to eliminate self-reactive immune cells, thereby preventing autoimmune reactions.\n   *   **Immune Network Theory**: The idea that immune cells and antibodies interact in a regulatory network, influencing each other's activation and suppression.\n\n**2. Problem Formulation and Data Representation:**\n   *   **Define Antigens (Problem Data)**: The problem's data instances or potential solutions are represented as 'antigens'. This typically involves encoding them as numerical vectors, binary strings, or other suitable data structures.\n   *   **Define Antibodies/Receptors (Detectors/Solutions)**: The components of the AIS that will interact with the antigens are 'antibodies' or 'receptors'. These represent potential solutions in optimization problems or detectors in anomaly detection. They are also encoded in a compatible format to antigens.\n   *   **Define Affinity (Similarity Metric)**: A mathematical function is needed to quantify the 'affinity' or 'binding strength' between an antigen and an antibody. This is usually a similarity or distance measure (e.g., Euclidean distance, Hamming distance, cosine similarity), indicating how well an antibody recognizes an antigen.\n\n**3. Choosing and Implementing an AIS Algorithm Paradigm:**\n   Based on the problem type, one chooses an appropriate AIS paradigm:\n\n   *   **Clonal Selection Algorithms (CSAs)**: (e.g., CLONALG, AINE)\n      *   **Inspiration**: Clonal selection and affinity maturation of B cells.\n      *   **Process**: An initial population of antibodies (candidate solutions) is generated. These antibodies are exposed to antigens (problem instances/fitness evaluation). High-affinity antibodies are selected, cloned proportionally to their affinity, and subjected to somatic hypermutation (small random changes). A subset of the best mutated clones is selected to form the next generation. Memory cells are often maintained to retain good solutions.\n      *   **Applications**: Optimization, pattern recognition, function approximation.\n\n   *   **Negative Selection Algorithms (NSAs)**: (e.g., NSA, LISYS)\n      *   **Inspiration**: Negative selection of T cells in the thymus (self-tolerance).\n      *   **Process**: A 'self' set of data is defined. A diverse population of 'detectors' is generated. Any detector that binds to 'self' is eliminated (negative selection). The remaining 'nonself' detectors are then used to monitor new data. If a detector matches new data, that data is flagged as an anomaly or 'nonself'.\n      *   **Applications**: Anomaly detection, fault detection, intrusion detection.\n\n   *   **Immune Network Algorithms (INAs)**: (e.g., AINet, aiNet)\n      *   **Inspiration**: Idiotypic network theory, where antibodies and T cells interact to regulate each other.\n      *   **Process**: Antibodies form a network where they can stimulate or suppress each other based on their similarity. This dynamic interaction leads to the emergence of stable 'clones' or clusters that represent patterns in the data.\n      *   **Applications**: Data clustering, optimization, classification.\n\n**4. Algorithm Execution and Refinement:**\n   *   **Initialization**: Randomly generate an initial population of antibodies/detectors.\n   *   **Iteration**: Repeatedly apply the chosen algorithm's steps (selection, cloning, mutation, evaluation, network interaction, etc.) over multiple generations.\n   *   **Stopping Criteria**: Define conditions for termination, such as a maximum number of iterations, convergence of solutions, or achieving a satisfactory performance metric.\n   *   **Output/Solution Extraction**: Once the algorithm terminates, the best antibodies/detectors represent the solution (e.g., optimized parameters, detected anomalies, clustered data).",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Immunobiology"
+    },
+    {
+      "question_number": "16",
+      "question_text": "Where a person is scared his/her heartbeat is faster, while sleeping the heartbeat is slower. Do you control how your heart beats? Explain?",
+      "marks": 15,
+      "answer": "No, a person generally does not consciously control how their heart beats. The regulation of heartbeat, along with other vital involuntary bodily functions such as breathing, digestion, and blood pressure, is primarily managed by the **autonomic nervous system (ANS)**.\n\nHere's an explanation of how the heart rate is regulated in the scenarios mentioned and why it's not under conscious control:\n\n**1. The Autonomic Nervous System (ANS):**\n   The ANS is a division of the peripheral nervous system that operates largely unconsciously, regulating internal organs and glands. It has two main branches that typically work in opposition to each other to maintain homeostasis:\n   *   **Sympathetic Nervous System**: Often referred to as the 'fight-or-flight' system. It activates the body's resources for action during times of stress, danger, or excitement.\n   *   **Parasympathetic Nervous System**: Known as the 'rest-and-digest' system. It promotes calming and restorative processes, conserving energy during periods of rest.\n\n**2. Heartbeat during Scared/Fear (Sympathetic Activation):**\n   When a person is scared, startled, or experiences acute stress, the sympathetic nervous system is highly activated. This leads to:\n   *   **Release of Neurotransmitters and Hormones**: The sympathetic nerves release norepinephrine (a neurotransmitter) directly onto the heart, and the adrenal glands release adrenaline (epinephrine) and noradrenaline (norepinephrine) into the bloodstream.\n   *   **Cardiac Effects**: These chemicals bind to receptors on the heart's pacemaker cells (sinoatrial node) and cardiac muscle cells, causing:\n      *   An increase in the rate of electrical impulses generated by the SA node, leading to a faster heart rate.\n      *   An increase in the force of ventricular contraction, pumping blood more forcefully.\n      *   Dilation of blood vessels supplying skeletal muscles, preparing the body for physical exertion (fight or flight).\n   This rapid increase in heart rate and strength of contraction ensures that oxygen and nutrients are quickly delivered to muscles and the brain, preparing the body to respond to a perceived threat.\n\n**3. Heartbeat during Sleep (Parasympathetic Dominance):**\n   During sleep or periods of relaxation, the parasympathetic nervous system dominates. This leads to:\n   *   **Release of Acetylcholine**: The vagus nerve (a major parasympathetic nerve) releases acetylcholine onto the heart.\n   *   **Cardiac Effects**: Acetylcholine acts on the heart's pacemaker cells, causing:\n      *   A decrease in the rate of electrical impulses from the SA node, resulting in a slower heart rate.\n      *   A slight reduction in the force of contraction.\n   This slower heart rate conserves energy and allows the body to rest and repair itself, aligning with the 'rest-and-digest' function.\n\n**4. Lack of Conscious Control:**\n   While a person can indirectly influence their heart rate through conscious actions like deep breathing exercises, meditation, or vigorous physical activity, direct voluntary control over each heartbeat is not possible. The heart's pacemaker cells (SA node) generate their own electrical rhythm (intrinsic rhythm), and the ANS merely modulates this rhythm, speeding it up or slowing it down based on the body's internal and external environment. This involuntary control is essential for survival, as it ensures continuous blood circulation without requiring constant conscious effort.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Neurobiology"
+    }
+  ]
+}

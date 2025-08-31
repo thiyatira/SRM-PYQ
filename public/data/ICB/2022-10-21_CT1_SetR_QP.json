@@ -1,0 +1,518 @@
+{
+    "paper_title": "Introduction to Computational Biology - Continuous Learning Assessment Test I",
+    "source": "2022-10-21 CT1 SetR",
+    "questions": [
+        {
+            "question_number": "A-1",
+            "question_text": "Diploid cell has ______ chromosomes (a)23 (b)24 (c)46 (d)92",
+            "marks": 1,
+            "answer": "A diploid cell in humans has 46 chromosomes (2n). Therefore, the correct option is (c) 46.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Cell and Evolution"
+        },
+        {
+            "question_number": "A-2",
+            "question_text": "Always the new generation will have better fitness score than the older one (a)true (b)false",
+            "marks": 1,
+            "answer": "False. While genetic algorithms and natural selection generally drive towards higher fitness, it is not guaranteed that *every* new generation will have a better fitness score than the older one, as random mutations or environmental changes can lead to fluctuations.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Cell and Evolution"
+        },
+        {
+            "question_number": "A-3",
+            "question_text": "metaphase phase has chromosomes in the centre of the cell",
+            "marks": 1,
+            "answer": "Metaphase. During the metaphase stage of cell division, chromosomes align along the metaphase plate, which is in the center of the cell.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Cell and Evolution"
+        },
+        {
+            "question_number": "A-4",
+            "question_text": "Inner cell mass is obtained from ______ (a) blastocyst (b)morula (c)gastrula (d) zygote",
+            "marks": 1,
+            "answer": "The inner cell mass is obtained from (a) blastocyst. The inner cell mass is a cluster of cells within the blastocyst that will eventually form the embryo.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Cell and Evolution"
+        },
+        {
+            "question_number": "A-5",
+            "question_text": "Homologous pair of chromosome for X is (a)Y (b)23 (c) XY (d) 1",
+            "marks": 1,
+            "answer": "For males, the homologous pair for the X chromosome is (a) Y. In females, two X chromosomes form a homologous pair. For males, the sex chromosomes are XY, making the Y chromosome the homolog of the X.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Cell and Evolution"
+        },
+        {
+            "question_number": "A-6",
+            "question_text": "GenBank is a (a)primary (b) secondary (c)tertiary (d)composite database",
+            "marks": 1,
+            "answer": "GenBank is a (a) primary database. Primary databases store original experimental data, such as nucleotide and protein sequences, directly submitted by researchers.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basics in Biochemistry"
+        },
+        {
+            "question_number": "A-7",
+            "question_text": "The Rough draft of human genome was published through (a)HGP (b)HHF (c)HMM (d)HRP",
+            "marks": 1,
+            "answer": "The rough draft of the human genome was published through (a) HGP (Human Genome Project). The HGP was an international scientific research project with the goal of determining the base pair sequence of the human genome.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basics in Biochemistry"
+        },
+        {
+            "question_number": "A-8",
+            "question_text": "The blueprint for the construction of a protein is (a) tRNA(b) gRNA (c)mRNA (d) cDNA",
+            "marks": 1,
+            "answer": "The blueprint for the construction of a protein is (c) mRNA (messenger RNA). mRNA carries the genetic information from DNA in the nucleus to the ribosomes in the cytoplasm, where proteins are synthesized.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basics in Biochemistry"
+        },
+        {
+            "question_number": "A-9",
+            "question_text": "A molecule containing sugar, phosphate and a base is called (a) nucleoside (b) Nucleotide (c)aminoacid (d) carbohydrate",
+            "marks": 1,
+            "answer": "A molecule containing sugar, phosphate, and a base is called (b) Nucleotide. Nucleotides are the basic building blocks of nucleic acids (DNA and RNA). A nucleoside is just a sugar and a base without the phosphate group.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basics in Biochemistry"
+        },
+        {
+            "question_number": "A-10",
+            "question_text": "Production of glucagon is because of (a)hyperglycemia (b) Hyperkalemia (c) Hypokalemia (d) hypoglycemia",
+            "marks": 1,
+            "answer": "Production of glucagon is because of (d) hypoglycemia (low blood glucose). Glucagon is a hormone secreted by the pancreas that raises blood glucose levels, counteracting hypoglycemia.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basics in Biochemistry"
+        },
+        {
+            "question_number": "A-11",
+            "question_text": "Give a note on genetic algorithms (unit 1- no. 62 onwards)",
+            "marks": 10,
+            "answer": "Genetic algorithms (GAs) are a class of heuristic search algorithms inspired by the process of natural selection and evolution. They are used to solve optimization and search problems by mimicking biological evolution, including selection, crossover (recombination), and mutation. A GA works by maintaining a population of candidate solutions, each represented as a 'chromosome' (a string of genes). The 'fitness' of each solution is evaluated, and fitter solutions are more likely to be selected to 'reproduce' and create new 'offspring' through crossover and mutation. This iterative process allows the algorithm to explore the solution space effectively, converging towards optimal or near-optimal solutions over generations. GAs are particularly useful for complex problems where traditional optimization methods are inefficient.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Cell and Evolution"
+        },
+        {
+            "question_number": "A-12",
+            "question_text": "Write a detailed note on carbohydrates with illustrated examples (unit 2- no. 16-22)",
+            "marks": 10,
+            "answer": "Carbohydrates are organic macromolecules primarily composed of carbon, hydrogen, and oxygen, generally with a hydrogen-to-oxygen ratio of 2:1. They are essential for energy storage, structural support, and cellular communication in living organisms. \n\n**Types of Carbohydrates:**\n1.  **Monosaccharides (Simple Sugars)**: The simplest form of carbohydrates, typically 3-7 carbon atoms, which cannot be hydrolyzed into smaller units. They are the basic building blocks. \n    *   **Examples**: Glucose (primary energy source for cells), Fructose (found in fruits), Galactose (part of milk sugar).\n2.  **Disaccharides**: Formed when two monosaccharides are linked together by a glycosidic bond, a covalent bond formed via a dehydration reaction. \n    *   **Examples**: Sucrose (table sugar = Glucose + Fructose), Lactose (milk sugar = Glucose + Galactose), Maltose (malt sugar = Glucose + Glucose).\n3.  **Polysaccharides (Complex Carbohydrates)**: Long chains of monosaccharide units linked by glycosidic bonds. They can be linear or branched and serve as energy storage or structural components.\n    *   **Energy Storage**: Starch (in plants, e.g., potatoes, grains) and Glycogen (in animals, stored in liver and muscles) are polymers of glucose used for energy storage. \n    *   **Structural Support**: Cellulose (main component of plant cell walls, providing rigidity) and Chitin (found in fungal cell walls and arthropod exoskeletons) are also glucose polymers, but with different linkages, making them indigestible by most animals.\n\nCarbohydrates play vital roles, from immediate energy supply to long-term energy reserves and structural integrity.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basics in Biochemistry"
+        },
+        {
+            "question_number": "A-13",
+            "question_text": "Explain the characteristics of a eukaryotic cell (unit 1- no. 11-31)",
+            "marks": 10,
+            "answer": "Eukaryotic cells are distinguished by their complex internal organization, primarily the presence of membrane-bound organelles. They are typically larger and more complex than prokaryotic cells. \n\n**Key Characteristics of Eukaryotic Cells:**\n1.  **Membrane-bound Nucleus**: Contains the cell's genetic material (DNA) organized into linear chromosomes. The nucleus is enclosed by a double membrane called the nuclear envelope.\n2.  **Internal Membrane-bound Organelles**: Possess specialized compartments that perform specific functions, allowing for compartmentalization of cellular processes. These include:\n    *   **Mitochondria**: Responsible for cellular respiration and ATP (energy) production.\n    *   **Endoplasmic Reticulum (ER)**: Network of membranes involved in protein synthesis (Rough ER) and lipid synthesis/detoxification (Smooth ER).\n    *   **Golgi Apparatus**: Modifies, sorts, and packages proteins and lipids.\n    *   **Lysosomes**: Contain digestive enzymes for waste breakdown and recycling.\n    *   **Peroxisomes**: Involved in metabolic reactions, especially fatty acid breakdown.\n    *   **Vacuoles**: (More prominent in plant cells) Storage and maintenance of turgor pressure.\n3.  **Larger Ribosomes**: Eukaryotic cells have 80S ribosomes, which are larger than the 70S ribosomes found in prokaryotes.\n4.  **Complex Cytoskeleton**: A network of protein filaments (microfilaments, intermediate filaments, microtubules) that provides structural support, facilitates cell movement, and aids in intracellular transport.\n5.  **Cell Division**: Reproduce through mitosis for somatic cells and meiosis for germ cells, involving a complex spindle apparatus to ensure accurate chromosome segregation.\n6.  **Larger Size**: Generally 10-100 micrometers in diameter, significantly larger than prokaryotic cells.\n7.  **Genetic Material**: DNA is linear, organized into multiple chromosomes, and associated with histone proteins to form chromatin.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Cell and Evolution"
+        },
+        {
+            "question_number": "A-14",
+            "question_text": "Write about genomics with a special note on comparative genomics (unit 2- no 51-55)",
+            "marks": 10,
+            "answer": "Genomics is the study of an organism's entire genome, which includes the complete set of DNA, including all its genes, their interrelationships, and their influence on the organism. It goes beyond individual genes to analyze the structure, function, evolution, and mapping of whole genomes. Genomics utilizes high-throughput sequencing technologies and bioinformatics tools to understand the complete genetic makeup of organisms, providing insights into biological functions, disease mechanisms, and evolutionary history.\n\n**Comparative Genomics**: This is a subfield of genomics that involves the systematic comparison of the genomes of different species. By analyzing similarities and differences in DNA sequences, gene order, gene content, and non-coding regions across various organisms, comparative genomics helps to:\n1.  **Identify Conserved Regions**: Discover genes, regulatory elements, and other genomic features that have been preserved across evolutionary time, indicating their functional importance.\n2.  **Uncover Evolutionary Relationships**: Reconstruct phylogenetic relationships and understand the evolutionary paths that led to species divergence, including gene duplication and loss events.\n3.  **Predict Gene Function**: Infer the function of unknown genes in one organism based on the known functions of their homologous genes in other, better-studied organisms.\n4.  **Identify Disease Genes**: Highlight regions of the human genome associated with diseases by examining their counterparts in model organisms, facilitating the discovery of new therapeutic targets.\n5.  **Understand Species-Specific Traits**: Identify genetic differences that contribute to unique characteristics of different species, from adaptations to environmental niches to developmental pathways.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basics in Biochemistry"
+        },
+        {
+            "question_number": "A-15a",
+            "question_text": "How did the eukaryotic cell develop organelles -which was missing in prokaryotes- which were the first organisms on earth? (the endosymbiotic theory)",
+            "marks": 10,
+            "answer": "The most widely accepted explanation for the evolution of eukaryotic organelles, particularly mitochondria and chloroplasts, is the **endosymbiotic theory**. This theory, prominently championed by Lynn Margulis, posits that these organelles originated from free-living prokaryotic cells that were engulfed by a larger host cell, establishing a symbiotic relationship.\n\nSpecifically:\n1.  **Origin of Mitochondria**: It is thought that an anaerobic ancestral eukaryotic-like cell engulfed an aerobic \u03b1-proteobacterium. Instead of being digested, the bacterium survived within the host, providing it with a more efficient way to produce ATP through aerobic respiration. Over evolutionary time, this bacterium became the mitochondrion, losing most of its genes to the host nucleus and becoming an indispensable organelle.\n2.  **Origin of Chloroplasts**: Later, some eukaryotic cells that already contained mitochondria further engulfed photosynthetic cyanobacteria. These cyanobacteria provided the host cell with the ability to perform photosynthesis, eventually evolving into chloroplasts.\n\nEvidence supporting the endosymbiotic theory includes:\n*   Mitochondria and chloroplasts have their own circular DNA, similar to bacterial DNA, and independent of the host cell's nuclear DNA.\n*   They possess their own ribosomes (70S), which are structurally similar to bacterial ribosomes.\n*   They reproduce by binary fission, similar to bacteria, and independently of the host cell's division.\n*   They are enclosed by double membranes, where the inner membrane resembles a prokaryotic membrane, and the outer membrane resembles the eukaryotic host cell's phagosomal membrane.\n\nOther organelles, like the endoplasmic reticulum and Golgi apparatus, are thought to have arisen from the infolding of the prokaryotic plasma membrane, creating internal compartments.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Cell and Evolution"
+        },
+        {
+            "question_number": "A-15b",
+            "question_text": "Give the ethical and legal issues of using stem cell. (Ethical issues specific to human cloning include: the safety and efficacy of the procedure, cloning for destructive embryonic stem cell research, the effects of reproductive cloning on the child/parent relationship, and the commodification of human life as a research product.)",
+            "marks": 10,
+            "answer": "The use of stem cells, particularly human embryonic stem cells (hESCs), presents a complex array of ethical and legal challenges due to their origin and potential applications.\n\n**Ethical Issues:**\n1.  **Moral Status of the Embryo**: The most significant ethical debate revolves around the destruction of early human embryos (typically blastocysts) to derive hESCs. Different perspectives exist on when human life begins and whether an embryo has moral status deserving of protection, leading to controversies about the acceptability of research that involves embryo destruction.\n2.  **Source of Embryos**: Many hESCs are derived from 'surplus' embryos created during in vitro fertilization (IVF) and donated for research. While these embryos would otherwise be discarded, questions arise regarding informed consent from donors and the potential for creating embryos specifically for research.\n3.  **Therapeutic vs. Reproductive Cloning**: Therapeutic cloning (Somatic Cell Nuclear Transfer or SCNT) aims to create patient-specific stem cells to treat diseases, while reproductive cloning aims to create a genetically identical human being. Although distinct, the shared techniques raise concerns about a 'slippery slope' towards reproductive cloning, which is almost universally condemned due to concerns about human dignity, individuality, and potential exploitation.\n4.  **Commodification of Life**: The process of deriving and using hESCs can lead to concerns about treating human embryos or their derivatives as commodities for research or commercial products, potentially devaluing human life.\n5.  **Potential for Misuse/Unforeseen Consequences**: Concerns about genetic manipulation, germline modification, and the long-term societal impacts of stem cell technologies (e.g., 'designer babies') require careful consideration.\n\n**Legal Issues:**\n1.  **Varying Regulations**: Legal frameworks for stem cell research vary significantly across countries, ranging from outright bans on hESC research (e.g., some European countries) to permissive regulations with strict oversight (e.g., UK, USA with federal funding restrictions).\n2.  **Funding Restrictions**: In many countries, public funding for hESC research is restricted, often due to political and ethical debates, leading to reliance on private funding.\n3.  **Patient Safety and Efficacy**: Legal systems must ensure that stem cell therapies are rigorously tested for safety and efficacy before clinical application, preventing unproven and potentially harmful treatments offered by unregulated clinics.\n4.  **Intellectual Property**: Issues related to patenting stem cell lines and derived technologies create legal complexities regarding ownership and access to treatments.\n5.  **Informed Consent**: Establishing clear legal guidelines for obtaining truly informed consent from embryo donors or patients participating in stem cell clinical trials is crucial.\n\nThese issues necessitate ongoing dialogue and robust regulatory frameworks to navigate the scientific promise and ethical responsibilities associated with stem cell research.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Cell and Evolution"
+        },
+        {
+            "question_number": "B-1",
+            "question_text": "Haploid cell has ______ chromosomes (a)23 (b)24 (c)46 (d)92",
+            "marks": 1,
+            "answer": "A haploid cell in humans has (a) 23 chromosomes. Haploid cells, such as gametes (sperm and egg), contain a single set of chromosomes (n).",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Cell and Evolution"
+        },
+        {
+            "question_number": "B-2",
+            "question_text": "The transfer of genetic material through viruses is called (a) translation (b) transduction (c) conjugation (d) transformation",
+            "marks": 1,
+            "answer": "The transfer of genetic material through viruses is called (b) transduction. This process involves a virus infecting a bacterium or other cell and transferring genetic material from one cell to another.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Cell and Evolution"
+        },
+        {
+            "question_number": "B-3",
+            "question_text": "Cyclins regulate the ______ cell cycle",
+            "marks": 1,
+            "answer": "Cyclins regulate the **cell cycle**. Cyclins are a family of proteins that activate cyclin-dependent kinases (CDKs) to control the progression of cells through different phases of the cell cycle.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Cell and Evolution"
+        },
+        {
+            "question_number": "B-4",
+            "question_text": "Afferent pathway is (a) brain to motor neurons (b) heart to brain (c)sensory neuron to brain(d) lungs to brain",
+            "marks": 1,
+            "answer": "An afferent pathway is (c) sensory neuron to brain. Afferent neurons carry sensory information from the peripheral nervous system towards the central nervous system (brain and spinal cord).",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Neurobiology"
+        },
+        {
+            "question_number": "B-5",
+            "question_text": "Sister chromatids are joined by (a) centromere (b) centrosome (c)centriole (d)telomere",
+            "marks": 1,
+            "answer": "Sister chromatids are joined by (a) centromere. The centromere is the constricted region of a chromosome where sister chromatids are attached to each other and where spindle fibers attach during cell division.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Cell and Evolution"
+        },
+        {
+            "question_number": "B-6",
+            "question_text": "Cholesterol is a (a) steroid (b)hormone (c) enzyme (d)synthetic compound",
+            "marks": 1,
+            "answer": "Cholesterol is a (a) steroid. It is a type of lipid and a crucial component of animal cell membranes, also serving as a precursor for steroid hormones.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basics in Biochemistry"
+        },
+        {
+            "question_number": "B-7",
+            "question_text": "What is the bond between carbohydrates (a)alkyl (b)glycosidic (c)peptide (d)phosphate",
+            "marks": 1,
+            "answer": "The bond between carbohydrates is (b) glycosidic. A glycosidic bond links monosaccharide units together to form disaccharides and polysaccharides.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basics in Biochemistry"
+        },
+        {
+            "question_number": "B-8",
+            "question_text": "The mechanism of delivering aminoacids for translation is done by (a) tRNA(b) gRNA (c)mRNA (d) rDNA",
+            "marks": 1,
+            "answer": "The mechanism of delivering amino acids for translation is done by (a) tRNA (transfer RNA). tRNA molecules carry specific amino acids to the ribosome, where they are matched to mRNA codons during protein synthesis.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basics in Biochemistry"
+        },
+        {
+            "question_number": "B-9",
+            "question_text": "DNA is different from RNA because of the base (a) cytosine (b) guanine (c)uracil (d) adenine",
+            "marks": 1,
+            "answer": "DNA is different from RNA because of the base (c) uracil. RNA contains uracil (U) in place of thymine (T), which is found in DNA. Both contain adenine, guanine, and cytosine.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basics in Biochemistry"
+        },
+        {
+            "question_number": "B-10",
+            "question_text": "The algorithm compares a protein query sequence against a nucleotide sequence database dynamically translated in all reading frames. (a) BLASTn (b) BLASTP (c) tBLASTn (d) BLASTX",
+            "marks": 1,
+            "answer": "The algorithm that compares a protein query sequence against a nucleotide sequence database dynamically translated in all reading frames is (c) tBLASTn. This tool is useful for finding distant relationships between proteins and nucleotide sequences.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basics in Biochemistry"
+        },
+        {
+            "question_number": "B-11",
+            "question_text": "Illustrate and explain meiosis unit 1(no-49-52)",
+            "marks": 10,
+            "answer": "Meiosis is a specialized form of cell division that results in four haploid daughter cells, each containing half the number of chromosomes of the parent cell and genetically distinct from each other and the parent. This process is essential for sexual reproduction. It involves two consecutive rounds of division: Meiosis I and Meiosis II.\n\n**Meiosis I (Reductional Division):**\n1.  **Prophase I**: Chromosomes condense, homologous chromosomes pair up (synapsis) to form bivalents, and crossing over (exchange of genetic material between non-sister chromatids) occurs, leading to genetic recombination. The nuclear envelope breaks down.\n2.  **Metaphase I**: Homologous chromosome pairs align at the metaphase plate.\n3.  **Anaphase I**: Homologous chromosomes separate and move to opposite poles of the cell, while sister chromatids remain attached.\n4.  **Telophase I & Cytokinesis**: Two haploid daughter cells are formed, each with chromosomes still consisting of two sister chromatids. The nuclear envelope may reform.\n\n**Meiosis II (Equational Division):**\n1.  **Prophase II**: Chromosomes condense again in each haploid cell. The nuclear envelope breaks down (if reformed).\n2.  **Metaphase II**: Chromosomes align individually at the metaphase plate in each of the two cells.\n3.  **Anaphase II**: Sister chromatids separate and move to opposite poles, becoming individual chromosomes.\n4.  **Telophase II & Cytokinesis**: Four distinct haploid cells are formed. Each cell contains a single set of unreplicated chromosomes. The nuclear envelope reforms around each set of chromosomes.\n\nMeiosis generates genetic diversity through crossing over and independent assortment of homologous chromosomes, ensuring that offspring are genetically unique from their parents.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Cell and Evolution"
+        },
+        {
+            "question_number": "B-12",
+            "question_text": "Write a detailed note on proteins with illustrated examples (unit 2- slide no 29-38)",
+            "marks": 10,
+            "answer": "Proteins are complex macromolecules that are fundamental to life, performing a vast array of functions within cells. They are polymers made up of amino acid monomers linked together by peptide bonds. The specific sequence and three-dimensional folding of amino acids determine a protein's function. \n\n**Structural Levels of Proteins:**\n1.  **Primary Structure**: The linear sequence of amino acids in a polypeptide chain. This sequence is determined by the genetic code. (e.g., The unique sequence of 51 amino acids in Insulin).\n2.  **Secondary Structure**: Localized, repeating folding patterns of the polypeptide backbone, primarily stabilized by hydrogen bonds between amino acid residues. Common forms include alpha-helices (spiral shape, e.g., in keratin) and beta-sheets (pleated sheet arrangement, e.g., in silk fibroin).\n3.  **Tertiary Structure**: The overall three-dimensional shape of a single polypeptide chain, resulting from interactions (ionic bonds, hydrogen bonds, disulfide bridges, hydrophobic interactions) between the amino acid side chains (R-groups). This globular or fibrous shape is crucial for function (e.g., the compact folding of Myoglobin).\n4.  **Quaternary Structure**: The arrangement of multiple polypeptide subunits (two or more tertiary structures) to form a functional protein complex. (e.g., Hemoglobin, which consists of four globin subunits, two alpha and two beta chains).\n\n**Functions and Examples:**\n*   **Enzymatic**: Catalyze biochemical reactions (e.g., Amylase breaks down starch; DNA Polymerase synthesizes DNA).\n*   **Structural**: Provide support and shape (e.g., Collagen in connective tissues; Keratin in hair and nails).\n*   **Transport**: Carry substances (e.g., Hemoglobin transports oxygen in blood; Glucose transporters move glucose across cell membranes).\n*   **Motor/Contractile**: Enable movement (e.g., Actin and Myosin in muscle contraction).\n*   **Defense**: Protect the body from pathogens (e.g., Antibodies/Immunoglobulins).\n*   **Signaling**: Act as hormones or receptors (e.g., Insulin regulates blood sugar; Receptor proteins on cell surfaces).\n*   **Storage**: Store amino acids (e.g., Ovalbumin in egg whites; Casein in milk).",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basics in Biochemistry"
+        },
+        {
+            "question_number": "B-13",
+            "question_text": "Explain the characteristics and uses of stem cells unit 1( no- 54-61)",
+            "marks": 10,
+            "answer": "Stem cells are unique undifferentiated cells with the remarkable ability to both renew themselves and differentiate into specialized cell types. This makes them crucial for development, growth, and repair in multicellular organisms.\n\n**Characteristics of Stem Cells:**\n1.  **Self-Renewal**: Stem cells can undergo numerous rounds of cell division to produce more stem cells, thus maintaining their population over long periods. This process ensures a continuous supply of cells.\n2.  **Potency (Differentiation Capacity)**: Stem cells have the ability to differentiate into specialized cells. Their potency varies:\n    *   **Totipotent**: Can differentiate into all cell types, including embryonic and extraembryonic tissues (e.g., zygote, cells from the first few divisions).\n    *   **Pluripotent**: Can differentiate into all cell types of the three germ layers (ectoderm, mesoderm, endoderm) that form the embryo, but not extraembryonic tissues (e.g., embryonic stem cells).\n    *   **Multipotent**: Can differentiate into a limited range of cell types within a specific lineage or tissue (e.g., hematopoietic stem cells can form various blood cells).\n    *   **Unipotent**: Can differentiate into only one cell type, but still possess the capacity for self-renewal (e.g., epidermal basal cells).\n\n**Uses and Applications of Stem Cells:**\n1.  **Regenerative Medicine and Tissue Repair**: Stem cells can be used to replace or repair damaged tissues and organs. Examples include using hematopoietic stem cells for bone marrow transplants, neural stem cells for neurodegenerative diseases, or cardiac stem cells for heart repair.\n2.  **Disease Modeling**: Patient-specific induced pluripotent stem cells (iPSCs) can be differentiated into various cell types (e.g., neurons, cardiomyocytes) in vitro to create models of human diseases. These models allow researchers to study disease mechanisms, identify new drug targets, and test potential therapies.\n3.  **Drug Discovery and Toxicology Screening**: Stem cell-derived cells can be used for high-throughput screening of drug candidates and assessing their toxicity on various human tissues, leading to more effective and safer medications.\n4.  **Developmental Biology Research**: Studying how stem cells differentiate provides insights into normal embryonic development, organogenesis, and the causes of birth defects.\n5.  **Personalized Medicine**: With the advent of iPSCs, it's possible to generate patient-specific cells for therapy, reducing immune rejection risks.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Cell and Evolution"
+        },
+        {
+            "question_number": "B-14",
+            "question_text": "Write about BLAST algorithm and its types ((unit 2- slide no 60 inwards)",
+            "marks": 10,
+            "answer": "BLAST (Basic Local Alignment Search Tool) is a fundamental bioinformatics algorithm used to compare biological sequence information, such as DNA or protein sequences, against a large database of sequences. Its primary goal is to find regions of local similarity between the query sequence and database sequences, which can then be used to infer functional and evolutionary relationships. Unlike global alignment algorithms that align sequences along their entire length, BLAST focuses on finding short, highly similar matches, making it significantly faster for searching massive databases.\n\n**Mechanism (simplified)**: BLAST works by breaking the query sequence into short words, searching for exact or near-exact matches of these words in the database, and then extending these matches into larger alignments. It identifies 'high-scoring segment pairs' (HSPs) that meet specific statistical significance thresholds.\n\n**Types of BLAST Algorithms:**\n1.  **BLASTn (nucleotide BLAST)**: Used to compare a nucleotide query sequence against a nucleotide sequence database. It is typically used to identify homologous genes or regions, or to confirm the presence of a specific sequence in a genome.\n2.  **BLASTp (protein BLAST)**: Compares an amino acid (protein) query sequence against a protein sequence database. Protein sequences are generally more conserved than nucleotide sequences, making BLASTp more sensitive for detecting distant evolutionary relationships.\n3.  **BLASTx**: Compares a nucleotide query sequence that has been translated in all six possible reading frames (three forward, three reverse) against a protein sequence database. This is useful when a DNA sequence is known, but its protein product or function is unknown, as protein-level comparisons are often more informative.\n4.  **tBLASTn**: Compares a protein query sequence against a nucleotide sequence database that is dynamically translated in all six reading frames. This is particularly useful for finding highly divergent genes in expressed sequence tag (EST) databases or genomic DNA, where the gene might not be annotated as a protein yet.\n5.  **tBLASTx**: Compares a nucleotide query sequence (translated in all six reading frames) against a nucleotide sequence database (also translated in all six reading frames). This is the most computationally intensive and sensitive BLAST variant, used for very distant evolutionary relationships where both DNA sequences are divergent but might share conserved protein regions.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basics in Biochemistry"
+        },
+        {
+            "question_number": "B-15a",
+            "question_text": "Human genome project - found the complete sequence of 46 chromosomes.- using this information what can be done. (Personalised medicines, new drug targets, prediction of risks to diseases, familial disease identification, And many more)",
+            "marks": 10,
+            "answer": "The Human Genome Project (HGP), completed in 2003, successfully sequenced and mapped the entire human genome, comprising the complete sequence of approximately 3 billion base pairs across 23 pairs of chromosomes (total 46 chromosomes in diploid cells). This foundational knowledge has opened up unprecedented opportunities in biology and medicine:\n\n1.  **Personalized Medicine (Pharmacogenomics)**: By knowing an individual's unique genetic variations, medical treatments can be tailored to be more effective and safer. Genomics can predict how a patient will respond to specific drugs, allowing for optimal dosage and selection of medications, thereby minimizing adverse side effects and improving therapeutic outcomes.\n2.  **Identification of New Drug Targets**: The complete human gene catalog allows researchers to identify proteins and pathways involved in various diseases. This facilitates the discovery and development of novel drug targets, leading to more targeted and potentially more effective therapies.\n3.  **Prediction of Disease Risks**: Genomic information can be used to assess an individual's genetic predisposition to a wide range of diseases, from monogenic disorders to complex conditions like cancer, heart disease, and diabetes. This enables proactive screening, early diagnosis, and implementation of preventative strategies or lifestyle modifications.\n4.  **Familial Disease Identification and Genetic Counseling**: Genomic sequencing helps identify disease-causing mutations within families, aiding in the diagnosis of inherited disorders, carrier screening, and providing genetic counseling to families at risk.\n5.  **Improved Diagnostics**: Genomics offers more precise and rapid diagnostic tools for genetic disorders, infectious diseases, and cancer subtyping, leading to earlier and more accurate diagnoses.\n6.  **Gene Therapy and Gene Editing**: Understanding the genetic basis of diseases paves the way for developing gene therapies to correct faulty genes or using advanced gene-editing technologies (like CRISPR) to treat or prevent genetic disorders.\n7.  **Understanding Human Biology and Evolution**: The HGP has provided deep insights into human genetic variation, population genetics, and the evolutionary history of our species.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basics in Biochemistry"
+        },
+        {
+            "question_number": "B-15b",
+            "question_text": "Justify why structure of a protein determines the function of the protein. (Protein function is based on structure. Shape of a protein determines function like hormones, enzymes will be globular, and will do various metabolic functions while fibrous like keratin hold the cell structure)",
+            "marks": 10,
+            "answer": "The fundamental principle in biochemistry is that a protein's specific three-dimensional structure dictates its biological function. This relationship is crucial because the intricate arrangement of amino acids, and the subsequent folding of the polypeptide chain, creates unique sites and surfaces necessary for specific molecular interactions.\n\n**Justification:**\n1.  **Specificity of Binding**: The precise shape of a protein forms active sites (for enzymes) or binding pockets (for receptors, antibodies, transporters). Only molecules (substrates, ligands, antigens) with a complementary shape and chemical properties can fit into these sites. This 'lock-and-key' or 'induced-fit' mechanism ensures high specificity for biological reactions and interactions. For example, an enzyme's active site is perfectly shaped to bind to its specific substrate, enabling it to catalyze a particular reaction.\n2.  **Molecular Interactions**: Proteins interact with other molecules (DNA, RNA, other proteins, small molecules) based on their surface complementarity, including charge distribution, hydrogen bonding capabilities, and hydrophobic regions. These interactions drive processes like gene regulation, signal transduction, and formation of multi-protein complexes.\n3.  **Diverse Functions from Diverse Structures**: Different protein structures give rise to a vast array of functions:\n    *   **Globular Proteins**: Compact, often spherical shapes (e.g., enzymes, hormones like insulin, antibodies). Their specific folds create functional domains and active sites that enable metabolic catalysis, signaling, transport, and immune defense. For instance, the globular structure of hemoglobin allows it to bind and release oxygen efficiently.\n    *   **Fibrous Proteins**: Extended, elongated structures (e.g., keratin, collagen). These proteins are typically involved in providing structural support and mechanical strength to cells, tissues, and organisms (e.g., keratin forms strong structures like hair and nails; collagen provides tensile strength to connective tissues).\n4.  **Conformational Changes**: Many proteins undergo dynamic changes in their 3D structure (conformational changes) upon binding to a ligand or in response to environmental cues. These changes are often essential for their function, such as in allosteric regulation of enzymes or the opening/closing of ion channels.\n\nIf a protein loses its correct 3D structure (denaturation), it typically loses its function, even if its primary amino acid sequence remains intact. This irreversible loss of function underscores the critical link between protein structure and biological activity.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basics in Biochemistry"
+        },
+        {
+            "question_number": "C-1",
+            "question_text": "Meiosis produces (a) Haploid (b) Diploid (c) multiploidy (d) uniploid cells",
+            "marks": 1,
+            "answer": "Meiosis produces (a) Haploid cells. It is a reductional division that halves the chromosome number, producing gametes with a single set of chromosomes.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Cell and Evolution"
+        },
+        {
+            "question_number": "C-2",
+            "question_text": "The genetic algorithm is inspired by (a) nature (b) nervous system (c) evolution (d) immunsystem",
+            "marks": 1,
+            "answer": "The genetic algorithm is inspired by (c) evolution, specifically the principles of natural selection and genetics.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Cell and Evolution"
+        },
+        {
+            "question_number": "C-3",
+            "question_text": "Pluripotent cell can form into any type of cell except placenta",
+            "marks": 1,
+            "answer": "A pluripotent cell can form into any type of cell except placenta. Pluripotent stem cells can differentiate into all cell types of the three germ layers (ectoderm, mesoderm, and endoderm) but not extraembryonic tissues such as the placenta.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Cell and Evolution"
+        },
+        {
+            "question_number": "C-4",
+            "question_text": "Efferent pathway is (a) brain to motor neurons (b) heart to brain (c)sensory neuron to brain(d) lungs to brain",
+            "marks": 1,
+            "answer": "An efferent pathway is (a) brain to motor neurons. Efferent neurons carry signals from the central nervous system (brain and spinal cord) to muscles and glands, initiating a response.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Neurobiology"
+        },
+        {
+            "question_number": "C-5",
+            "question_text": "Sister chromatids are separated in mitosis at (a) prophase (b) anaphase (c)metaphase (d)interphase",
+            "marks": 1,
+            "answer": "Sister chromatids are separated in mitosis at (b) anaphase. During anaphase, the cohesin proteins holding sister chromatids together are cleaved, allowing them to move to opposite poles.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Cell and Evolution"
+        },
+        {
+            "question_number": "C-6",
+            "question_text": "Starch is a (a) polysaccharide (b)monosaccharide (c) lipid (d)wax",
+            "marks": 1,
+            "answer": "Starch is a (a) polysaccharide. It is a complex carbohydrate made up of many glucose units, serving as the primary energy storage in plants.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basics in Biochemistry"
+        },
+        {
+            "question_number": "C-7",
+            "question_text": "What is the bond between nucleotides (a)alkyl (b)glycosidic (c)peptide (d)phosphodiester",
+            "marks": 1,
+            "answer": "The bond between nucleotides is (d) phosphodiester. Phosphodiester bonds form the sugar-phosphate backbone of DNA and RNA by linking the 5' phosphate of one nucleotide to the 3' hydroxyl of the next.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basics in Biochemistry"
+        },
+        {
+            "question_number": "C-8",
+            "question_text": "The RNA attached to ribosomes are (a) tRNA(b) gRNA (c)mRNA (d) rRNA",
+            "marks": 1,
+            "answer": "The RNA attached to ribosomes are (d) rRNA (ribosomal RNA). rRNA is a structural and catalytic component of ribosomes, which are the cellular machinery for protein synthesis.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basics in Biochemistry"
+        },
+        {
+            "question_number": "C-9",
+            "question_text": "\"DNA is different from RNA because of\" -Find the odd one(a) single stranded (b)5' oxygen (c)uracil (d) more stable",
+            "marks": 1,
+            "answer": "The odd one out is (b) 5' oxygen. Both DNA and RNA contain a 5' oxygen as part of their sugar-phosphate backbone. DNA is typically double-stranded (not single-stranded like RNA), RNA contains uracil (not thymine), and DNA is generally more stable than RNA.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basics in Biochemistry"
+        },
+        {
+            "question_number": "C-10",
+            "question_text": "compares a protein query sequence against a protein sequence database dynamically translated in all reading frames. (a)BLASTn (b) BLASTp (c) tBLASTn (d) BLASTX",
+            "marks": 1,
+            "answer": "The algorithm that compares a protein query sequence against a nucleotide sequence database dynamically translated in all reading frames is (c) tBLASTn. (Note: The question text has a slight ambiguity: 'protein sequence database dynamically translated'. Assuming it meant a *nucleotide* database dynamically translated, tBLASTn is the correct choice).",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basics in Biochemistry"
+        },
+        {
+            "question_number": "C-11",
+            "question_text": "Illustrate and explain homeostasis (unit 1- 33-37)",
+            "marks": 10,
+            "answer": "Homeostasis is the biological process by which organisms maintain a stable internal environment (e.g., temperature, pH, fluid balance) despite changes in external conditions. It is a dynamic state of equilibrium crucial for optimal cell and organ function. Most homeostatic mechanisms involve negative feedback loops.\n\n**Components of a Homeostatic Control System:**\n1.  **Stimulus**: A change in the internal or external environment that deviates from the normal set point (e.g., rise in body temperature).\n2.  **Receptor/Sensor**: Detects the change and sends signals to the control center (e.g., thermoreceptors in the skin and hypothalamus).\n3.  **Control Center**: Receives and processes information from the receptor, then sends commands to the effector (e.g., the hypothalamus in temperature regulation).\n4.  **Effector**: Carries out the response to restore homeostasis (e.g., sweat glands, blood vessels).\n5.  **Response**: The action that counteracts the initial stimulus, bringing the system back to its set point (e.g., sweating and vasodilation to lower body temperature).\n\n**Illustration (Temperature Regulation Example):**\n*   **Stimulus**: Body temperature rises above 37\u00b0C.\n*   **Receptors**: Thermoreceptors in skin and hypothalamus detect the rise.\n*   **Control Center**: Hypothalamus processes information.\n*   **Effectors**: \n    *   Blood vessels in the skin dilate, increasing blood flow to the surface to release heat.\n    *   Sweat glands increase sweat production, which cools the body as it evaporates.\n*   **Response**: Body temperature decreases, returning to the set point. \n\nConversely, if body temperature drops, shivering and vasoconstriction occur to generate and conserve heat. This continuous feedback ensures the body's internal conditions remain within a narrow, life-sustaining range.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Cell and Evolution"
+        },
+        {
+            "question_number": "C-12",
+            "question_text": "Write a detailed note on restriction digestion (unit 2- slide number 32-35)",
+            "marks": 10,
+            "answer": "Restriction digestion is a molecular biology technique that uses restriction enzymes (also known as restriction endonucleases) to cut DNA molecules at specific nucleotide recognition sites. These enzymes are naturally found in bacteria, where they serve as a defense mechanism against invading bacteriophages by cleaving foreign DNA.\n\n**Mechanism:**\n1.  **Recognition**: Each restriction enzyme recognizes a specific, short DNA sequence, typically 4 to 8 base pairs long. These recognition sites are often palindromic, meaning they read the same forwards on one strand as backwards on the complementary strand (e.g., GAATTC reads the same as CTTAAG in the 3' to 5' direction).\n2.  **Cleavage**: Once bound to its recognition site, the enzyme cleaves the phosphodiester bonds on both strands of the DNA molecule. The manner of cleavage can produce two types of ends:\n    *   **Blunt Ends**: The enzyme cuts straight across both DNA strands at the same position, leaving no single-stranded overhangs (e.g., SmaI produces blunt ends).\n    *   **Sticky Ends (Cohesive Ends)**: The enzyme makes staggered cuts on the two DNA strands, leaving short single-stranded overhangs. These overhangs are complementary to each other and can form hydrogen bonds with other DNA fragments cut by the same enzyme or an enzyme producing compatible sticky ends (e.g., EcoRI produces sticky ends).\n\n**Applications of Restriction Digestion:**\n1.  **Gene Cloning and Recombinant DNA Technology**: Sticky ends are invaluable in gene cloning, as they allow DNA fragments from different sources (e.g., a gene and a plasmid vector) to be joined together (ligated) more efficiently.\n2.  **DNA Fingerprinting (RFLP Analysis)**: Variations in restriction sites among individuals can lead to differences in the lengths of DNA fragments after digestion (Restriction Fragment Length Polymorphisms or RFLPs), which are used in forensic science, paternity testing, and disease diagnostics.\n3.  **Genome Mapping**: Restriction enzymes are used to create physical maps of genomes by cutting DNA at known locations, helping to determine the arrangement of genes.\n4.  **Genetic Engineering**: Essential for cutting and inserting genes into vectors for various biotechnology applications, including the production of therapeutic proteins and genetically modified organisms.\n\nThe specificity of restriction enzymes makes them indispensable tools for manipulating DNA in laboratories.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basics in Biochemistry"
+        },
+        {
+            "question_number": "C-13",
+            "question_text": "Explain the characteristics of cell cycle and its control (unit 1 39-41)",
+            "marks": 10,
+            "answer": "The cell cycle is an ordered series of events that leads to cell growth, DNA replication, and cell division, producing two daughter cells. This process is fundamental for the growth, development, and repair of multicellular organisms. \n\n**Characteristics of the Cell Cycle:**\n1.  **Interphase**: The longest phase of the cell cycle, during which the cell grows and prepares for division. It is divided into three sub-phases:\n    *   **G1 Phase (First Gap)**: Cell grows, carries out normal metabolic functions, and synthesizes proteins and organelles.\n    *   **S Phase (Synthesis)**: DNA replication occurs, resulting in the duplication of chromosomes. Each chromosome now consists of two sister chromatids.\n    *   **G2 Phase (Second Gap)**: Cell continues to grow, synthesizes proteins needed for mitosis, and ensures DNA replication is complete and error-free.\n2.  **M Phase (Mitotic Phase)**: Involves two main processes:\n    *   **Mitosis**: The division of the nucleus, ensuring that each daughter cell receives an identical set of chromosomes. It includes prophase, metaphase, anaphase, and telophase.\n    *   **Cytokinesis**: The division of the cytoplasm, resulting in two separate daughter cells.\n3.  **G0 Phase**: A quiescent stage outside the cell cycle that some cells enter if they do not need to divide, or if conditions are not favorable for division (e.g., mature nerve cells, muscle cells).\n\n**Control of the Cell Cycle:**\nThe cell cycle is tightly regulated by a complex system of molecular checkpoints and regulatory proteins to ensure that events occur in the correct sequence and only when conditions are appropriate. Key regulators include:\n1.  **Cyclins and Cyclin-Dependent Kinases (CDKs)**: CDKs are enzymes that, when activated by binding to specific cyclins, phosphorylate target proteins to drive the cell through different phases. Different cyclin-CDK complexes are active at different stages of the cell cycle.\n2.  **Cell Cycle Checkpoints**: Critical control points where the cell monitors internal and external conditions before progressing to the next stage:\n    *   **G1 Checkpoint (Restriction Point)**: Determines if the cell is ready to divide, checking for cell size, nutrient availability, growth factors, and DNA damage.\n    *   **G2 Checkpoint**: Ensures DNA replication is complete and DNA is undamaged before entering mitosis.\n    *   **M Checkpoint (Spindle Assembly Checkpoint)**: Monitors chromosome attachment to the spindle fibers during metaphase, ensuring proper segregation of sister chromatids.\n3.  **Tumor Suppressor Genes and Proto-oncogenes**: These genes encode proteins that act as 'brakes' (tumor suppressors, e.g., p53) or 'accelerators' (proto-oncogenes) for the cell cycle. Mutations in these genes can lead to uncontrolled cell division and cancer.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Cell and Evolution"
+        },
+        {
+            "question_number": "C-14",
+            "question_text": "Explain genomics and its types (unit 2- slide number 51-55)",
+            "marks": 10,
+            "answer": "Genomics is the study of the entire genome of an organism, including its complete set of DNA, all its genes, their organization, their functions, and their interactions. It encompasses the sequencing, mapping, and functional analysis of whole genomes, aiming to understand how genes contribute to an organism's traits and overall biological processes. Genomics represents a shift from studying individual genes to examining the entire genetic blueprint in a holistic manner.\n\n**Types of Genomics:**\n1.  **Structural Genomics**: Focuses on determining the physical structure of an organism's entire genome. This involves:\n    *   **Genome Sequencing**: Determining the precise order of nucleotides (A, T, C, G) in the DNA.\n    *   **Genome Mapping**: Creating genetic and physical maps to locate genes and other features on chromosomes.\n    *   **Gene Annotation**: Identifying and describing the location and function of all genes and other functional elements within the sequence.\n    The Human Genome Project is a prime example of structural genomics.\n2.  **Functional Genomics**: Aims to understand the function of genes, gene products (proteins and RNA), and how they interact to produce a phenotype. This involves high-throughput approaches such as:\n    *   **Transcriptomics**: Studying all the RNA molecules (transcripts) in a cell or tissue under specific conditions (e.g., RNA sequencing).\n    *   **Proteomics**: Studying the entire set of proteins (proteome) in an organism, including their expression levels, modifications, and interactions.\n    *   **Metabolomics**: Studying the complete set of small-molecule metabolites.\n3.  **Comparative Genomics**: Involves comparing the genomes of different species. This helps identify conserved regions, evolutionary relationships, genes responsible for species-specific traits, and human disease genes by studying their homologs in model organisms. It provides insights into evolutionary biology and allows for functional inference.\n4.  **Pharmacogenomics**: A subfield that studies how an individual's genetic makeup influences their response to drugs. It aims to develop personalized medicine by predicting drug efficacy and potential adverse reactions based on genetic information.\n5.  **Metagenomics**: The study of genetic material recovered directly from environmental samples (e.g., soil, water, gut microbiome) without the need for culturing individual organisms. It allows for the analysis of entire microbial communities and their functional potential.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basics in Biochemistry"
+        },
+        {
+            "question_number": "C-15a",
+            "question_text": "Explain how invitro fertilization is related to stem cell- (embryonic stem cells)",
+            "marks": 10,
+            "answer": "In vitro fertilization (IVF) is closely related to embryonic stem cell (ESC) research primarily because IVF procedures generate surplus human embryos that can be a source for deriving human embryonic stem cells.\n\n**IVF Process and Embryo Creation:**\nDuring IVF, eggs are retrieved from a woman and fertilized by sperm in a laboratory setting. Typically, multiple embryos are created to increase the chances of a successful pregnancy. Only a select number of these embryos (often one or two) are implanted into the woman's uterus. The remaining viable embryos can be cryopreserved (frozen) for future use, donated for reproductive purposes by other individuals, or, if the donor parents provide explicit informed consent, donated for scientific research.\n\n**Derivation of Embryonic Stem Cells:**\nHuman embryonic stem cells are pluripotent stem cells derived from the inner cell mass of a blastocyst, which is an early-stage embryo, typically 5-7 days old. When IVF-created embryos are donated for research, scientists can isolate the inner cell mass from these blastocysts. These cells are then cultured in a laboratory to establish stable human embryonic stem cell lines. These cell lines can proliferate indefinitely in an undifferentiated state and have the potential to differentiate into virtually any cell type in the body.\n\n**Ethical and Research Implications:**\nThis link between IVF and ESC research gives rise to significant ethical considerations regarding the moral status of the human embryo and the destruction of embryos for research. However, for many researchers and patients, the use of these 'spare' IVF embryos offers a valuable opportunity to study human development, understand disease mechanisms, and develop potential regenerative medicine therapies without creating embryos specifically for research, thereby utilizing material that would otherwise be discarded.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Cell and Evolution"
+        },
+        {
+            "question_number": "C-15b",
+            "question_text": "Mesoderm forms the circulatory system- what is the parts and function of circulatory system (heart,vascular system of arteries and veins, lungs etc)",
+            "marks": 10,
+            "answer": "The mesoderm is one of the three primary germ layers formed during early embryonic development, and it indeed gives rise to the entire circulatory system, including the heart, blood vessels, and blood cells, as well as other tissues like muscle and bone.\n\n**Parts and Functions of the Circulatory System (Cardiovascular System):**\n1.  **Heart**: A muscular, four-chambered organ located in the chest, acting as the central pump of the circulatory system.\n    *   **Parts**: Composed of two atria (collecting chambers) and two ventricles (pumping chambers), separated by a septum. It contains valves (e.g., tricuspid, mitral, pulmonary, aortic) to ensure unidirectional blood flow.\n    *   **Function**: Propels blood throughout the body. The right side pumps deoxygenated blood to the lungs (pulmonary circulation), and the left side pumps oxygenated blood to the rest of the body (systemic circulation).\n2.  **Blood Vessels**: A vast network of tubes that transport blood throughout the body.\n    *   **Arteries**: Thick-walled, muscular, and elastic vessels that carry oxygenated blood *away* from the heart to the body's tissues (except for the pulmonary artery, which carries deoxygenated blood to the lungs). They branch into smaller arterioles.\n    *   **Veins**: Thinner-walled vessels, often with valves to prevent backflow, that carry deoxygenated blood *back* to the heart from the body's tissues (except for the pulmonary veins, which carry oxygenated blood from the lungs to the heart). They merge from smaller venules.\n    *   **Capillaries**: Microscopic, thin-walled vessels that form extensive networks within tissues. This is the primary site for the exchange of gases (oxygen, carbon dioxide), nutrients, hormones, and waste products between the blood and tissue cells.\n3.  **Blood**: A specialized fluid connective tissue that circulates throughout the body.\n    *   **Components**: Plasma (the liquid matrix), red blood cells (erythrocytes, for oxygen transport), white blood cells (leukocytes, for immune defense), and platelets (thrombocytes, for blood clotting).\n    *   **Function**: Transports oxygen from the lungs to cells, carbon dioxide from cells to the lungs, delivers nutrients and hormones, removes metabolic waste products, helps regulate body temperature, and protects the body from pathogens through immune responses.\n\nThe lungs are primarily part of the **respiratory system**, responsible for gas exchange with the external environment. However, they are intimately connected to the circulatory system, as the pulmonary circulation facilitates the oxygenation of blood and removal of carbon dioxide. The circulatory system is vital for maintaining homeostasis and ensuring the survival and function of all body cells.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Cell and Evolution"
+        },
+        {
+            "question_number": "D-1",
+            "question_text": "Mitosis produces gametes (a) True (b) False",
+            "marks": 1,
+            "answer": "(b) False. Mitosis produces two genetically identical diploid somatic cells. Gametes (sex cells) are produced by meiosis, which results in haploid cells.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Cell and Evolution"
+        },
+        {
+            "question_number": "D-2",
+            "question_text": "The organism that is unicellular but eukaryotic is (a) plant (b) animalia (c)protist (d) Monera",
+            "marks": 1,
+            "answer": "The organism that is unicellular but eukaryotic is (c) protist. Protists are a diverse kingdom of largely unicellular eukaryotic organisms (e.g., amoebas, paramecia). Monera refers to prokaryotes (bacteria and archaea), which are unicellular but not eukaryotic.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Cell and Evolution"
+        },
+        {
+            "question_number": "D-3",
+            "question_text": "Fitness score is used to find the best solutions in genetic algorithm",
+            "marks": 1,
+            "answer": "Fitness score. In a genetic algorithm, the fitness score quantifies the quality of a candidate solution, indicating how well it solves the problem. Solutions with higher fitness scores are preferred for reproduction.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Cell and Evolution"
+        },
+        {
+            "question_number": "D-4",
+            "question_text": "Which is the control system involved in homeostasis (a) CNS (b) kidney (c)heart (d)stomach",
+            "marks": 1,
+            "answer": "The control system primarily involved in coordinating overall homeostasis is the (a) CNS (Central Nervous System), especially the hypothalamus. While kidneys, heart, and stomach play roles in specific homeostatic processes, the CNS acts as the central regulatory hub.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Cell and Evolution"
+        },
+        {
+            "question_number": "D-5",
+            "question_text": "Meiosis I leads to separation of (a) two nucleus (b) sister chromatids (c)two cells (d) homologous chromosomes",
+            "marks": 1,
+            "answer": "Meiosis I leads to the separation of (d) homologous chromosomes. This is the reductional division where homologous pairs move to opposite poles, reducing the chromosome number by half.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Cell and Evolution"
+        },
+        {
+            "question_number": "D-6",
+            "question_text": "Estrogen is a (a) steroid (b) biomolecule (c) enzyme (d) protein",
+            "marks": 1,
+            "answer": "Estrogen is a (a) steroid. It is a type of lipid-based hormone characterized by a four-ring carbon structure.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basics in Biochemistry"
+        },
+        {
+            "question_number": "D-7",
+            "question_text": "Choose the disaccharide (a) Sucrose (b)ribose(c)fructose (d)glucose",
+            "marks": 1,
+            "answer": "(a) Sucrose is the disaccharide. Ribose, fructose, and glucose are monosaccharides. Sucrose is formed from glucose and fructose.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basics in Biochemistry"
+        },
+        {
+            "question_number": "D-8",
+            "question_text": "Choose the odd one out (a) tRNA(b) gRNA (c)mRNA (d) rRNA",
+            "marks": 1,
+            "answer": "(b) gRNA (guide RNA) is the odd one out. tRNA, mRNA, and rRNA are the three main types of RNA directly involved in protein synthesis. gRNA has a role in RNA editing or gene editing (e.g., CRISPR-Cas9), which is distinct from the primary roles of the other three.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basics in Biochemistry"
+        },
+        {
+            "question_number": "D-9",
+            "question_text": "UNIPROTKB is a Sequence database for (a) nucleic acids (b) proteins (c) DNA (d) lipids",
+            "marks": 1,
+            "answer": "UniProtKB (Universal Protein Resource Knowledgebase) is a sequence database for (b) proteins. It provides comprehensive, high-quality, and freely accessible protein sequence and functional information.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basics in Biochemistry"
+        },
+        {
+            "question_number": "D-10",
+            "question_text": "Two similar protein sequences indicate (a) Similar function (b) Different function (c) both (d) no meaning",
+            "marks": 1,
+            "answer": "Two similar protein sequences generally indicate (a) Similar function. High sequence similarity often implies conserved structure and, consequently, conserved function due to evolutionary pressure.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basics in Biochemistry"
+        },
+        {
+            "question_number": "D-11",
+            "question_text": "Illustrate and explain mitosis (Unit 1- slide no 44-47)",
+            "marks": 10,
+            "answer": "Mitosis is a type of cell division that results in two daughter cells each having the same number and kind of chromosomes as the parent nucleus, typical of ordinary tissue growth. It is essential for growth, repair, and asexual reproduction in multicellular organisms. Mitosis ensures that each new cell receives an identical set of genetic material.\n\n**Phases of Mitosis:**\n1.  **Prophase**: The longest phase of mitosis. Chromatin condenses into visible chromosomes, each consisting of two identical sister chromatids joined at the centromere. The nucleolus disappears, and the mitotic spindle (composed of microtubules) begins to form from the centrosomes, which move towards opposite poles.\n2.  **Prometaphase (often considered part of Prophase/Metaphase)**: The nuclear envelope breaks down. Kinetochore microtubules (a type of spindle fiber) attach to the kinetochores (protein structures at the centromere) of each sister chromatid, pulling chromosomes towards the center of the cell.\n3.  **Metaphase**: Chromosomes are maximally condensed and align along the metaphase plate (an imaginary plane equidistant from the two poles of the spindle). This alignment ensures that each daughter cell receives one complete set of chromosomes.\n4.  **Anaphase**: The shortest mitotic stage. Sister chromatids abruptly separate, becoming individual chromosomes. These newly separated chromosomes are pulled by the shortening kinetochore microtubules towards opposite poles of the cell. The cell elongates.\n5.  **Telophase**: Chromosomes arrive at the poles and begin to decondense. New nuclear envelopes form around the two sets of chromosomes, and nucleoli reappear. The spindle fibers disassemble.\n\n**Cytokinesis**: Typically overlaps with telophase. It is the division of the cytoplasm, which results in the formation of two distinct daughter cells. In animal cells, a cleavage furrow forms and pinches the cell in two. In plant cells, a cell plate forms in the middle and grows outwards to create a new cell wall.\n\nEach daughter cell produced by mitosis is genetically identical to the parent cell.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Cell and Evolution"
+        },
+        {
+            "question_number": "D-12",
+            "question_text": "Write a detailed note on lipids and its different types and uses (Unit 2- slide no 23-28)",
+            "marks": 10,
+            "answer": "Lipids are a diverse group of organic macromolecules that are primarily hydrophobic (water-insoluble) due to their high proportion of hydrocarbons. They are essential for various biological functions, including energy storage, structural components of cell membranes, and signaling.\n\n**Characteristics of Lipids:**\n*   **Hydrophobic**: Generally insoluble in water but soluble in nonpolar organic solvents.\n*   **High Energy Content**: Due to many C-H bonds, they store more energy per gram than carbohydrates or proteins.\n*   **Diverse Structures**: Encompass a wide range of molecules with different chemical structures and functions.\n\n**Different Types of Lipids and Their Uses:**\n1.  **Fats (Triglycerides)**: Composed of a glycerol molecule covalently linked to three fatty acid chains. Fatty acids can be saturated (no double bonds) or unsaturated (one or more double bonds).\n    *   **Uses**: Primary form of long-term energy storage in animals and some plants. They also provide insulation against cold (e.g., subcutaneous fat in mammals) and cushion vital organs.\n2.  **Phospholipids**: Similar to triglycerides but with one fatty acid replaced by a phosphate group, often with an additional polar head group. They are amphipathic, having both hydrophilic (water-loving) and hydrophobic (water-fearing) regions.\n    *   **Uses**: The main structural component of biological membranes (e.g., cell membrane). They spontaneously form a lipid bilayer in aqueous environments, which is crucial for membrane integrity and selective permeability.\n3.  **Steroids**: Characterized by a four-ring carbon skeleton. While structurally distinct from other lipids, they are grouped with them due to their hydrophobicity.\n    *   **Uses**: Cholesterol is a vital component of animal cell membranes, influencing membrane fluidity. It also serves as a precursor for the synthesis of other important steroid molecules, including sex hormones (e.g., estrogen, testosterone) and adrenal cortical hormones (e.g., cortisol). Vitamin D is also a steroid derivative.\n4.  **Waxes**: Esters of long-chain fatty acids with long-chain alcohols.\n    *   **Uses**: Act as protective coatings due to their water-repellent properties. Found on the surfaces of leaves and fruits (cuticle) to prevent water loss, and on animal skin, fur, and feathers to provide waterproofing (e.g., beeswax, earwax).\n\nLipids are indispensable for cell structure, energy metabolism, signaling pathways, and protection in living organisms.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basics in Biochemistry"
+        },
+        {
+            "question_number": "D-13",
+            "question_text": "List a detailed role of cell organelles in eukaryotic cell (Unit 1- slide no 12-31)",
+            "marks": 10,
+            "answer": "Eukaryotic cells are characterized by their complex internal organization, featuring numerous membrane-bound organelles, each with specialized functions that enable the cell to perform diverse and intricate processes.\n\nHere are the detailed roles of key eukaryotic cell organelles:\n1.  **Nucleus**: The control center of the cell.\n    *   **Role**: Houses the cell's genetic material (DNA), organized into chromosomes. It controls gene expression, coordinates cell growth, differentiation, and reproduction by regulating protein synthesis via transcription of DNA into mRNA.\n2.  **Mitochondria**: The 'powerhouses' of the cell.\n    *   **Role**: Site of cellular respiration, where glucose and other fuel molecules are broken down to generate adenosine triphosphate (ATP), the primary energy currency of the cell.\n3.  **Endoplasmic Reticulum (ER)**: An extensive network of membranes.\n    *   **Rough ER**: Studded with ribosomes, it is involved in the synthesis, folding, modification, and quality control of proteins destined for secretion, insertion into membranes, or delivery to other organelles.\n    *   **Smooth ER**: Lacks ribosomes. Involved in lipid synthesis (e.g., steroids, phospholipids), detoxification of drugs and poisons, and storage of calcium ions (especially in muscle cells).\n4.  **Golgi Apparatus (Golgi Complex)**: A stack of flattened membrane-bound sacs (cisternae).\n    *   **Role**: Modifies, sorts, and packages proteins and lipids synthesized in the ER into vesicles for secretion or transport to other cellular destinations.\n5.  **Lysosomes**: Membrane-bound sacs containing hydrolytic enzymes.\n    *   **Role**: Responsible for intracellular digestion, breaking down waste materials, cellular debris, worn-out organelles, and foreign invaders (e.g., bacteria).\n6.  **Peroxisomes**: Small, spherical organelles containing enzymes that perform various metabolic functions.\n    *   **Role**: Involved in the breakdown of fatty acids, amino acids, and detoxification of harmful substances, producing hydrogen peroxide as a byproduct, which is then converted to water and oxygen.\n7.  **Ribosomes**: (Not membrane-bound) Complexes of rRNA and proteins.\n    *   **Role**: Sites of protein synthesis (translation), where genetic information from mRNA is used to assemble amino acids into proteins.\n8.  **Vacuoles**: (Especially prominent in plant cells) Large membrane-bound sacs.\n    *   **Role**: Storage of water, nutrients, ions, and waste products. In plants, the central vacuole maintains turgor pressure against the cell wall.\n9.  **Cytoskeleton**: A dynamic network of protein filaments (microfilaments, intermediate filaments, microtubules).\n    *   **Role**: Provides structural support, maintains cell shape, facilitates cell movement, and plays a crucial role in intracellular transport of organelles and vesicles.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Cell and Evolution"
+        },
+        {
+            "question_number": "D-14",
+            "question_text": "Write about the macromolecule nucleic acids (Unit 1- slide no 39-45)",
+            "marks": 10,
+            "answer": "Nucleic acids are essential macromolecules that serve as the carriers of genetic information in all known forms of life. They are polymers made up of repeating monomer units called nucleotides. The two main types of nucleic acids are Deoxyribonucleic Acid (DNA) and Ribonucleic Acid (RNA).\n\n**Structure of a Nucleotide:**\nEach nucleotide consists of three main components:\n1.  **A Nitrogenous Base**: A nitrogen-containing organic molecule. The purines are Adenine (A) and Guanine (G). The pyrimidines are Cytosine (C), Thymine (T, found only in DNA), and Uracil (U, found only in RNA).\n2.  **A Pentose Sugar**: A five-carbon sugar. This is deoxyribose in DNA and ribose in RNA.\n3.  **A Phosphate Group**: A negatively charged group linked to the sugar.\n\n**DNA (Deoxyribonucleic Acid):**\n*   **Function**: Primarily responsible for storing and transmitting genetic information. It contains the instructions for building and maintaining an organism.\n*   **Structure**: Typically forms a double helix, composed of two long strands of nucleotides coiled around each other. The two strands are antiparallel, and bases pair specifically: Adenine (A) pairs with Thymine (T) via two hydrogen bonds, and Guanine (G) pairs with Cytosine (C) via three hydrogen bonds. The sugar-phosphate backbone forms the outer structure, with bases facing inwards.\n*   **Stability**: The double-helical structure and the deoxyribose sugar make DNA chemically more stable than RNA, suitable for its role as the long-term genetic archive.\n*   **Location**: Found mainly in the nucleus of eukaryotic cells, and in mitochondria and chloroplasts. In prokaryotes, it is located in the nucleoid region.\n\n**RNA (Ribonucleic Acid):**\n*   **Function**: Involved in various aspects of gene expression and regulation, including carrying genetic messages, participating in protein synthesis, and regulating gene activity.\n*   **Structure**: Usually single-stranded, but can fold into complex three-dimensional structures. It contains ribose sugar instead of deoxyribose and uracil (U) in place of thymine (T), so A pairs with U, and G pairs with C.\n*   **Types**: There are several types of RNA, each with specific roles:\n    *   **Messenger RNA (mRNA)**: Carries genetic code from DNA to ribosomes.\n    *   **Ribosomal RNA (rRNA)**: A structural and catalytic component of ribosomes.\n    *   **Transfer RNA (tRNA)**: Carries specific amino acids to the ribosome during protein synthesis.\n*   **Location**: Found throughout the cell (nucleus, cytoplasm, ribosomes).\n\nNucleic acids are fundamental to all life processes, enabling heredity and the synthesis of proteins.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basics in Biochemistry"
+        },
+        {
+            "question_number": "D-15a",
+            "question_text": "Diabetes disease - what is the role of carbohydrates in this disease - (Blood sugar should be 120mg/dL- anything higher is diabetes- caused by insulin resistance due to which cells receive less sugar and hence metabolism and cellular functions are disrupted)",
+            "marks": 10,
+            "answer": "Diabetes mellitus is a chronic metabolic disease characterized by elevated blood glucose levels (hyperglycemia). Carbohydrates play a central and critical role in the development and management of diabetes because they are the primary dietary source of glucose, which directly impacts blood sugar levels.\n\n**Role of Carbohydrates in Diabetes:**\n1.  **Glucose Source**: When carbohydrates are consumed, they are broken down into glucose, which is absorbed into the bloodstream. This glucose is then used by cells for energy or stored as glycogen.\n2.  **Insulin Response**: In healthy individuals, the pancreas releases insulin in response to rising blood glucose levels. Insulin acts as a key, allowing glucose to enter cells from the bloodstream. This lowers blood sugar and provides cells with energy.\n3.  **In Type 1 Diabetes**: The body's immune system mistakenly attacks and destroys the insulin-producing beta cells in the pancreas. As a result, little to no insulin is produced. Without insulin, glucose cannot enter cells and accumulates in the blood. For individuals with Type 1 diabetes, carbohydrate intake must be carefully monitored and matched with insulin injections to manage blood glucose.\n4.  **In Type 2 Diabetes**: The body's cells become resistant to the effects of insulin (insulin resistance), meaning insulin cannot effectively facilitate glucose uptake. Initially, the pancreas compensates by producing more insulin, but over time, it may not be able to keep up, leading to high blood glucose. A high intake of carbohydrates exacerbates this condition by constantly challenging an already impaired insulin system, leading to persistent hyperglycemia.\n\n**Impact of Disrupted Metabolism**: Prolonged hyperglycemia, due to insufficient insulin action or production, disrupts normal cellular functions and metabolism. Cells are starved of energy despite abundant glucose in the blood. This can lead to a range of severe complications, including damage to blood vessels, nerves, kidneys, eyes, and an increased risk of heart disease and stroke. Effective management of carbohydrate intake, alongside medication, is crucial for controlling blood glucose levels and preventing diabetes-related complications.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basics in Biochemistry"
+        },
+        {
+            "question_number": "D-15b",
+            "question_text": "Iterate how genomics can be used to make personalized medicines - (genomics means whole genome of a patient is known. Hence by looking at the genomic information- medicines that will cause less sideeffects to the patient can be prescribed)",
+            "marks": 10,
+            "answer": "Genomics is transforming medicine by enabling the development of personalized (or precision) medicine, an approach that tailors medical treatment to each individual's unique genetic makeup. This is made possible by knowing a patient's whole genome, which provides a comprehensive blueprint of their biological predispositions and responses.\n\nHere's how genomics contributes to personalized medicine:\n1.  **Pharmacogenomics**: This field studies how an individual's genes affect their response to drugs. Genetic variations (polymorphisms) can influence drug metabolism enzymes, drug transporters, or drug targets. By analyzing a patient's genome, clinicians can:\n    *   **Predict Drug Efficacy**: Determine if a particular drug is likely to be effective for a patient. For example, some anti-cancer drugs are only effective in patients with specific genetic mutations in their tumors.\n    *   **Minimize Adverse Drug Reactions**: Identify genetic predispositions to severe side effects. For instance, individuals with certain genetic variants may metabolize drugs too slowly, leading to toxic accumulation, or too quickly, making the drug ineffective. Genomics helps avoid such medications or adjust dosages accordingly.\n    *   **Optimize Dosage**: Prescribe the most appropriate dose of a medication to maximize benefit and minimize harm, moving away from a 'one-size-fits-all' approach.\n2.  **Disease Risk Assessment and Prevention**: Genomic sequencing can identify genetic markers and predispositions to various diseases, including hereditary cancers (e.g., BRCA1/2 mutations), cardiovascular conditions, and neurodegenerative disorders. This allows for proactive screening, early intervention strategies, and personalized lifestyle recommendations to prevent or delay disease onset.\n3.  **Targeted Therapies**: In areas like oncology, genomics allows for precise characterization of a patient's tumor at a molecular level. Identifying specific mutations or gene fusions in cancer cells enables the selection of highly targeted therapies that block these specific molecular pathways, leading to more effective treatments with fewer side effects than traditional chemotherapy.\n4.  **Improved Diagnostics**: Genomics offers more precise and rapid diagnostic tools for rare genetic disorders, infectious diseases, and even in identifying specific strains of pathogens, leading to more accurate and timely treatment.\n\nIn essence, by leveraging genomic information, healthcare providers can make more informed decisions about disease prevention, diagnosis, and treatment, leading to better outcomes, reduced healthcare costs from ineffective treatments, and a truly individualized patient experience.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basics in Biochemistry"
+        }
+    ]
+}
