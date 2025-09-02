@@ -108,6 +108,13 @@ const SUBJECT_FILES: Record<string, string[]> = {
   ]
 };
 
+const SUBJECT_DIRS: Record<string, string> = {
+  POE: "POE",
+  PPS: "PPS",
+  FRENCH: "French",
+  ICB: "ICB",
+};
+
 interface Question {
   question_text: string;
   answer: string;
@@ -182,9 +189,10 @@ const Home: React.FC = () => {
       let allQuestions: Question[] = [];
       const allPapersSet = new Set<string>();
       const allUnitsSet = new Set<string>();
+      const dir = SUBJECT_DIRS[subject] || subject;
       for (const file of fileList) {
         try {
-          const res = await fetch(`/data/${subject}/${file}`);
+          const res = await fetch(`/data/${dir}/${file}`);
           if (!res.ok) continue;
           const data: PaperData | Question[] = await res.json();
           let qs: Question[] = [];
