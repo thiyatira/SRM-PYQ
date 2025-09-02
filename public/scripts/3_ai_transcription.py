@@ -25,78 +25,57 @@ OUTPUT_DIR = "json_outputs"
 
 # 4. List of PDF files to process (as provided in the request)
 PDF_FILES = [
-"2021-11-01_CT1_QP.pdf",
-"2022-10-20_CT1_QP.pdf",
-"2022-11-23_CT2_QP.pdf",
-"2022-12-23_CT3_QP.pdf",
-"2023-01_ET_QP.pdf",
-"2023-02-20_CT1_SetC_B2_QP-Key.pdf",
-"2023-04-17_CT1_SetD_B2_QP.pdf",
-"2023-05_ET_QP.pdf",
-"2023-09-25_CT1_SetA_QP.pdf",
-"2023-10-13_CT1_QP.pdf",
-"2023-11-03_CT2_SetD_B2_QP-Key.pdf",
-"2023-11-25_CT3_QP-Key.pdf",
-"2023-12_ET_SetA_QP.pdf",
-"2023-12_ET_SetB_QP.pdf",
-"2024-01_ET_QP.pdf",
-"2024-03-28_CT2_SetA_QP-Key.pdf",
-"2024-03-28_CT2_SetA_QP.pdf",
-"2024-09-24_CT1_SetA_QP.pdf",
-"2024-09-27_CT1_SetC_QP.pdf",
-"2024-11-22_CT2_SetC_B2_QP.pdf",
-"2024-11-22_CT2_SetD_B2_QP.pdf",
-"2024-12-11_CT3_SetD_B2_QP.pdf",
-"2025-01-31_CT1_SetA_QP-Key.pdf",
-"2025-03-10_CT2_SetB_QP-Key.pdf",
-"2025-04-23_CT3_SetB_QP-Key.pdf",
-"2025-05_ET_QP.pdf"
+    "2022-10-21_CT1_SetR_QP.pdf",
+    "2022-12_ET_QP.pdf",
+    "2023-01_ET_QP.pdf",
+    "2023-05_ET_QP.pdf",
+    "2023-06_ET_QP.pdf",
+    "2023-07_ET_QP_2.pdf",
+    "2023-07_ET_QP.pdf",
+    "2023-11-29_CT3_SetA_QP.pdf",
+    "2023-12_ET_QP.pdf",
+    "2024-01_ET_QP.pdf",
+    "2024-05_ET_QP.pdf",
+    "2024-07_ET_QP.pdf",
+    "2024-10-01_CT1_SetB_QP.pdf",
+    "2024-10-04_CT1_SetB_QP.pdf",
+    "2024-10-18_CT1_SetB_QP.pdf",
+    "2024-11_ET_QP.pdf",
+    "2024-12_ET_QP.pdf",
+    "2024-12-04_CT2_SetA_QP.pdf",
+    "2024-12-04_CT2_SetB_QP.pdf",
+    "2024-25_CT1_QP.pdf",
 ]
 
 # 5. The syllabus for context
 SYLLABUS = """
-Programming for Problem Solving (Engineering Science Course)
-Course: Programming for Problem Solving
-Code: 21CSS101J
-Course Philosophy of Engineering
-Code 21GNH101J
+Introduction to ComputaƟonal Biology (Basic Science Course)
+Course IntroducƟon to ComputaƟonal Biology
+Code 21BTB102T
 Course Content
 Unit Title & Content Hours
-Unit 1: IntroducƟon to Philosophy of Engineering- Define Engineering - History of Engineering
-Development - PracƟce 1: Compare Prehistory, Medieval and Present Engineering Development -
-RelaƟon between Arts, MathemaƟcs, Science, Technology and Engineering - STEAM Pyramid -
-PracƟce 2: STEAM Pyramid Analysis: Is Art Context Necessary? - Desired AƩributes of an Engineer -
-Engineering Habits of Mind - PracƟce 3: Case Study on AƩributes of an Engineer.
-9
-Unit 2: Ontology of Engineering- Ontology - Reference Ontology and ApplicaƟon Ontology - PracƟce 4:
-Reference Ontology using Concept/Mind Mapping - Suites of Ontology Modules - FuncƟons and
-CapabiliƟes - PracƟce 5: Engineering ApplicaƟon Ontology using Concept/Mind Mapping - Product
-Life Cycle - CommodiƟes, Services and Infrastructure - PracƟce 6: Product Life Cycle Ontology using
-Concept/Mind Mapping.
- 9
-Unit 3: Epistemology of Engineering- RelaƟons between Science, Technology and Engineering - QuesƟons
-on Philosophy of Engineering - PracƟce 7: Analyze the nature, contents and complexity of the
-knowledge base in engineering Four Dimensions of Engineering - RIASEC Model - PracƟce 8: Case
-Study on RIASEC Theory of Career Choice - Epistemology of Engineering Design - Rigour, CreaƟvity
-and Change in Engineering - PracƟce 9: Analyze DisƟncƟve Features of Epistemology of Engineering
-Design.
-9
-Unit 4: Methodology of Engineering -Difference between ScienƟfic Method and Engineering Design
-(ADDIE)- CDIO Engineers in Industry - PracƟce 10: Relate ADDIE and CDIO Methodology - Conceive
-and Design - Engineering Design Process PracƟce 11: Illustrate the Engineering Design Process for
-the given ApplicaƟon - Implement and Operate - OperaƟonal Factors in System Design - PracƟce 12:
-Analyze the Requirements of OperaƟonal Engineers.
-9
-Unit 5: Axiology of Engineering- Engineering and Society- Engineers Code of Ethics - PracƟce 13: Evaluate
-Popular InvenƟons and apply their new point of view to Re-Design - Sustainability and Diversity -
-Engineer’s role to achieve Sustainable Development - PracƟce 14: Case Study on Achieving
-Sustainable Development Goals - Socio-PoliƟcs of Technology & Engineering - Professional
-Engineering OrganizaƟons - PracƟce 15: Case Study on Professional Engineering OrganizaƟons.
+ Unit 1: Cell and EvoluƟon - Cell theory, Whitaker’s kingdom classificaƟon, cell organelles, and their
+funcƟons, homeostasis, ReplicaƟon and cell Division, Ɵssue differenƟaƟon, stem cells and their
+applicaƟons, geneƟc algorithms.
+6
+Unit 2: Basics in Biochemistry - Structure and funcƟons of carbohydrates, lipids, proteins, enzymes, DNA,
+RNA, and hormones. The human genome project, genomics, Sequence databases, BLAST tool.
+6
+Unit 3: Structure Biology - Protein synthesis, Secondary structure of the protein, Structure and funcƟon,
+Structural databases, protein visualizing tools, Secondary structure predicƟon algorithms.
+6
+Unit 4: Neurobiology - Basic of Neurons, glial cells, Brain and its parts, ArƟficial neural networks, concepts,
+and differences with biological neural networks. – uses of ANN, machine learning, and data mining
+in biology.
+6
+Unit 5: Immunobiology- Elements of the immune system, Types of the immune response, AcƟve and
+passive immunity, ImmunoinformaƟcs, epitope predicƟon tools.
+6 
 """
 
 # 6. The master prompt template for the LLM
 PROMPT_TEMPLATE = """
-You are an expert academic assistant specializing in computer science education. Your task is to analyze and transcribe a university-level question paper PDF into a structured JSON format.
+You are an expert academic assistant specializing in education. Your task is to analyze and transcribe a university-level question paper PDF into a structured JSON format.
 
 **Instructions:**
 1.  Read the provided PDF file, which is a question paper. The filename may contain "QP" (Question Paper) and "Key" (Answer Key).
@@ -110,7 +89,7 @@ The `questions` key should be a list of objects, where each object represents a 
 -   `question_number`: (string) The number of the question as it appears on the paper (e.g., "1a", "2", "3(b)").
 -   `question_text`: (string) The full and exact text of the question. Preserve formatting like code snippets or newlines where important.
 -   `marks`: (integer or null) The marks allocated to the question. If marks are not mentioned, use `null`.
--   `answer`: (string) The answer to the question.
+-   `answer`: (string) The answer to the question. (use shorter answers for memory based bio qs)
     -   If the PDF filename contains "Key", it means answers are provided. Transcribe the answer for each question **exactly** as it is given.
     -   If the PDF filename does **not** contain "Key", you must generate a concise, accurate, and well-explained answer suitable for a university student.
 -   `answer_source`: (string) Must be one of two values:

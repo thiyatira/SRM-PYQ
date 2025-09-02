@@ -4,7 +4,7 @@ from PIL import Image, ImageDraw, ImageFont
 import fitz  # PyMuPDF
 
 # Create output directory
-output_dir = Path("second_page_images")
+output_dir = Path("first_page_images")
 output_dir.mkdir(exist_ok=True)
 
 # Get all PDF files in current directory
@@ -12,12 +12,12 @@ pdf_files = [f for f in os.listdir('.') if f.lower().endswith('.pdf') and os.pat
 
 for pdf_file in pdf_files:
     try:
-        # Open PDF and render second page as image using PyMuPDF
+        # Open PDF and render first page as image using PyMuPDF
         doc = fitz.open(pdf_file)
-        if doc.page_count < 2:
-            print(f"Less than 2 pages found in {pdf_file}")
+        if doc.page_count < 1:
+            print(f"No pages found in {pdf_file}")
             continue
-        page = doc.load_page(1)  # 1 is the second page (0-based index)
+        page = doc.load_page(0)  # 0 is the first page (0-based index)
         # Render at 2x resolution for better quality
         zoom = 2
         mat = fitz.Matrix(zoom, zoom)
@@ -62,7 +62,7 @@ for pdf_file in pdf_files:
         draw.text((x, y), text, font=font, fill=(255,255,255,255))
 
         # Save image to output directory
-        out_path = output_dir / (Path(pdf_file).stem + "_secondpage.png")
+        out_path = output_dir / (Path(pdf_file).stem + "_firstpage.png")
         img.convert('RGB').save(out_path)
         print(f"Saved: {out_path}")
     except Exception as e:
