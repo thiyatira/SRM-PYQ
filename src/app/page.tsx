@@ -6,6 +6,7 @@ const SUBJECTS = [
   { code: "POE", name: "Philosophy of Engineering", title: "21GNH101J: Philosophy of Engineering" },
   { code: "FRENCH", name: "French", title: "21LEH103T: French" },
   { code: "ICB", name: "Introduction to Computational Biology", title: "21BTB102T: Introduction to Computational Biology" },
+  { code: "CHEMISTRY", name: "Chemistry", title: "18CYB101J: Chemistry" },
 ];
 
 const SUBJECT_FILES: Record<string, string[]> = {
@@ -105,6 +106,16 @@ const SUBJECT_FILES: Record<string, string[]> = {
     "2024-12-04_CT2_SetA_QP.json",
     "2024-12-04_CT2_SetB_QP.json",
     "2024-25_CT1_QP.json"
+  ],
+  "CHEMISTRY": [
+    "2019_Nov_ET.json",
+    "2022_July_ET.json",
+    "2023_Dec_ET.json",
+    "2023_Jan_ET.json",
+    "2023_May_ET.json",
+    "2024_Dec_ET.json",
+    "2024_Jan_ET.json",
+    "2025_May_ET.json"
   ]
 };
 
@@ -113,6 +124,7 @@ const SUBJECT_DIRS: Record<string, string> = {
   PPS: "PPS",
   FRENCH: "French",
   ICB: "ICB",
+  CHEMISTRY: "Chemistry",
 };
 
 interface Question {
