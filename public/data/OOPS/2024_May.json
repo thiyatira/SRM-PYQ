@@ -1,0 +1,262 @@
+{
+    "paper_title": "B.Tech/ M.Tech (Integrated) DEGREE EXAMINATION, MAY 2024 - 21CSC101T - OBJECT ORIENTED DESIGN AND PROGRAMMING",
+    "source": "MAY 2024",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "Which feature of OODP indicates code reusability?\n(A) Inheritance\n(B) Encapsulation\n(C) Abstraction\n(D) Polymorphism",
+            "marks": 1,
+            "answer": "(A) Inheritance. Explanation: Inheritance allows a new class to acquire properties and behaviors of an existing class, promoting code reusability.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "2",
+            "question_text": "Which of the following access specifier allows the user to inherit the private members of a class?\n(A) Private\n(B) Protected\n(C) Default\n(D) Public",
+            "marks": 1,
+            "answer": "(B) Protected. Explanation: Private members are never inherited directly. However, the question asks what allows \"inheriting\" (making them accessible to derived classes) which implies the need for 'protected' access specifier instead of private if they are meant to be inherited.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "3",
+            "question_text": "What happens if a user forgets to define a constructor inside a class?\n(A) Objects are not created properly\n(B) Segmentation fault\n(C) Error occurs\n(D) Compiler provides a default constructor to avoid faults/errors",
+            "marks": 1,
+            "answer": "(D) Compiler provides a default constructor to avoid faults/errors. Explanation: If no constructor is explicitly defined, the C++ compiler automatically generates a default constructor.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "4",
+            "question_text": "Which of the following C++ operators can be overloaded?\n(A) Size operator (size of)\n(B) Conditional operator (?:)\n(C) Arithmetic operator (+,-,*,/)\n(D) Class member access operator",
+            "marks": 1,
+            "answer": "(C) Arithmetic operator (+,-,*,/). Explanation: Arithmetic operators can be overloaded. Operators like sizeof, ?:, . (member access), and :: cannot be overloaded in C++.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "5",
+            "question_text": "Which of the following is true about constructors?\n(A) A class can have more than one constructors\n(B) They cannot be inherited\n(C) Their address can be referred\n(D) Constructors can have return values",
+            "marks": 1,
+            "answer": "(A) A class can have more than one constructors. Explanation: This is known as constructor overloading. Constructors do not have return types, cannot be inherited, and their addresses cannot be taken.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "6",
+            "question_text": "Which of the following keyword is used to overload an operator?\n(A) overload\n(B) friend\n(C) operator\n(D) over rider",
+            "marks": 1,
+            "answer": "(C) operator. Explanation: The 'operator' keyword is used to declare an operator overloading function.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "7",
+            "question_text": "Which of the following permits function overloading in C++?\n(A) Type of arguments\n(B) Number of arguments\n(C) Number of objects\n(D) Type and number of arguments",
+            "marks": 1,
+            "answer": "(D) Type and number of arguments. Explanation: Function overloading allows multiple functions with the same name as long as they differ in the number and/or type of their parameters.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "8",
+            "question_text": "Dynamic aspects related to a system are shown with help of\n(A) Sequence diagrams\n(B) Interaction diagrams\n(C) Deployment diagrams\n(D) Use case diagrams",
+            "marks": 1,
+            "answer": "(B) Interaction diagrams. Explanation: Interaction diagrams (which include sequence and collaboration diagrams) model the dynamic aspects of a system by showing object interactions over time.",
+            "answer_source": "General UML Knowledge",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "9",
+            "question_text": "In multilevel inheritance one class inherits\n(A) Only from one class\n(B) More than one class\n(C) Atleast one class\n(D) As many classes as required",
+            "marks": 1,
+            "answer": "(A) Only from one class. Explanation: In multilevel inheritance, a class acts as a base class for a derived class, which in turn acts as a base class for another derived class. At each level, a derived class inherits directly from only one base class.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "10",
+            "question_text": "How can you make the private members inheritable?\n(A) By making their visibility mode as public only\n(B) By making their visibility mode as private in derived class\n(C) By making their visibility mode as protected only\n(D) It can be done both by making the visibility mode public or protected",
+            "marks": 1,
+            "answer": "(C) By making their visibility mode as protected only. Explanation: Private members are never inherited. To make members accessible to derived classes while keeping them hidden from the outside, they must be made protected in the base class.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "11",
+            "question_text": "Which of the following combines two concurrent activities and re-introduces them to a flow where only one activity can be performed at a time?\n(A) Joint symbol\n(B) Fork symbol\n(C) Decision symbol\n(D) Note symbol",
+            "marks": 1,
+            "answer": "(A) Joint symbol. Explanation: In activity diagrams, a join node combines multiple concurrent flows back into a single flow.",
+            "answer_source": "General UML Knowledge",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "12",
+            "question_text": "Identify what happens when an attempt is made to instantiate an object of an abstract class\n(A) Success message\n(B) Warning message\n(C) Compilation error\n(D) Objects gets created",
+            "marks": 1,
+            "answer": "(C) Compilation error. Explanation: Abstract classes contain at least one pure virtual function and cannot be instantiated.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "13",
+            "question_text": "What is an abstract class?\n(A) Class specifically used as a base class with at least one virtual function\n(B) Class specifically used as a base class with at least one pure virtual function\n(C) Class from which any class is derived\n(D) Any class is C++ is an abstract class",
+            "marks": 1,
+            "answer": "(B) Class specifically used as a base class with at least one pure virtual function. Explanation: An abstract class serves as a blueprint for derived classes and is defined by having at least one pure virtual function.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "14",
+            "question_text": "Which is the correct syntax of defining a pure virtual function?\n(A) Pure virtual return_type_func( );\n(B) Virtual return_type_func ( ) pure;\n(C) Virtual return_type func ( ) = 0;\n(D) Virtual return_type func( );",
+            "marks": 1,
+            "answer": "(C) Virtual return_type func ( ) = 0;. Explanation: A pure virtual function is declared using the 'virtual' keyword and appending '= 0' to the declaration.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "15",
+            "question_text": "Which among the following best describes member function overriding?\n(A) Member functions having same name in base and derived classes\n(B) Member functions having same name in base class only\n(C) Member functions having same name in derived class only\n(D) Member functions having same name and different signature inside main function",
+            "marks": 1,
+            "answer": "(A) Member functions having same name in base and derived classes. Explanation: Overriding occurs when a derived class provides a specific implementation for a function that is already provided by its base class (same name and signature).",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "16",
+            "question_text": "________ keyword is used before a function in a base class which is to be overridden in derived class.\n(A) void\n(B) static\n(C) virtual\n(D) friend",
+            "marks": 1,
+            "answer": "(C) virtual. Explanation: The 'virtual' keyword in the base class allows a member function to be overridden in a derived class, enabling runtime polymorphism.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "17",
+            "question_text": "Once a class template is defined, we can create an object of that class using a specific basic or user-defined data types to replace the generic data types used during\n(A) Function definition\n(B) Object definition\n(C) Class definition\n(D) Function declaration",
+            "marks": 1,
+            "answer": "(B) Object definition. Explanation: When an object of a class template is created (instantiated), the specific data types are provided to replace the generic types.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "18",
+            "question_text": "Which container can have the same key?\n(A) Map\n(B) Multimap\n(C) Unordered map\n(D) Set",
+            "marks": 1,
+            "answer": "(B) Multimap. Explanation: Multimaps are associative containers that allow multiple elements to have equivalent keys.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 5"
+        },
+        {
+            "question_number": "19",
+            "question_text": "What type of access does dequeue and vector provide?\n(A) Linear access\n(B) Random access\n(C) Parallel access\n(D) Sequence access",
+            "marks": 1,
+            "answer": "(B) Random access. Explanation: Both vectors and deques provide random access iterators, allowing direct access to any element in constant time using indexing.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 5"
+        },
+        {
+            "question_number": "20",
+            "question_text": "Choose the correct output for the following code:\nint main ( )\n{\ndeque <int>d;\nd.push_back (10);\nd.push_back (300);\nd.push_front (20);\nfor (int i=0; i<d.size ( ); i++)\n{\ncout << d[i] << “ ”;\n}\nreturn 0;\n}\n(A) 10 20 300\n(B) 20 10 300\n(C) 100 10 20\n(D) Syntax error",
+            "marks": 1,
+            "answer": "(B) 20 10 300. Explanation: push_back(10) adds 10. push_back(300) adds 300 to the end -> [10, 300]. push_front(20) adds 20 to the front -> [20, 10, 300].",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 5"
+        },
+        {
+            "question_number": "21. a.",
+            "question_text": "Write a C++ program to calculate and display the area of a rectangle. Create a class with two private data members length and breadth and three functions. First function to get the values of length and breadth, second function to calculate the area and third function to display area. Length and breadth should be entered by the user.",
+            "marks": 8,
+            "answer": "```cpp\n#include <iostream>\nusing namespace std;\n\nclass Rectangle {\nprivate:\n    float length;\n    float breadth;\n    float area;\n\npublic:\n    // Function to get length and breadth from user\n    void getDimensions() {\n        cout << \"Enter length of rectangle: \";\n        cin >> length;\n        cout << \"Enter breadth of rectangle: \";\n        cin >> breadth;\n    }\n\n    // Function to calculate area\n    void calculateArea() {\n        area = length * breadth;\n    }\n\n    // Function to display area\n    void displayArea() {\n        cout << \"Area of the rectangle is: \" << area << endl;\n    }\n};\n\nint main() {\n    Rectangle rect;\n    rect.getDimensions();\n    rect.calculateArea();\n    rect.displayArea();\n\n    return 0;\n}\n```",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "21. b.",
+            "question_text": "Design and illustrate the use case model activities involved in ordering food in a restaurant from the point when the customer enters a restaurant to the point when he leaves the restaurant.",
+            "marks": 8,
+            "answer": "**Use Case Model for Ordering Food in a Restaurant:**\n\n**Actors:**\n1.  **Customer:** The person ordering food.\n2.  **Waiter:** Takes order, serves food, handles bill.\n3.  **Chef (Kitchen):** Prepares food.\n4.  **Cashier:** Processes payment.\n\n**Use Cases:**\n1.  **Enter Restaurant & Be Seated:** Customer arrives and is given a table.\n2.  **Browse Menu:** Customer looks at options.\n3.  **Place Order:** Customer gives order to Waiter. Includes `<include>` \"Record Order\".\n4.  **Prepare Food:** Chef cooks the requested items.\n5.  **Serve Food:** Waiter brings food to the Customer.\n6.  **Consume Food:** Customer eats.\n7.  **Request Bill:** Customer asks for the check.\n8.  **Pay Bill:** Customer pays Cashier (or Waiter). Includes `<extend>` \"Pay by Card\" or \"Pay by Cash\".\n9.  **Leave Restaurant:** Customer exits.\n\n*(In an exam, draw the diagram with stick figures for actors on the outside, an enclosing system boundary box labeled 'Restaurant System', and ovals inside for use cases connected with solid lines to the actors.)*",
+            "answer_source": "General UML Knowledge",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "22. a.",
+            "question_text": "Write a C++ program that simulates a bookstore inventory system. Define a class called “Book” with attributes such as title, author and price. Implement a class with constructors, including a default constructor, a parameterized constructor and a copy constructor to initialize book objects and display their information.",
+            "marks": 8,
+            "answer": "```cpp\n#include <iostream>\n#include <string>\nusing namespace std;\n\nclass Book {\nprivate:\n    string title;\n    string author;\n    float price;\n\npublic:\n    // Default Constructor\n    Book() {\n        title = \"Unknown Title\";\n        author = \"Unknown Author\";\n        price = 0.0;\n    }\n\n    // Parameterized Constructor\n    Book(string t, string a, float p) {\n        title = t;\n        author = a;\n        price = p;\n    }\n\n    // Copy Constructor\n    Book(const Book &b) {\n        title = b.title;\n        author = b.author;\n        price = b.price;\n    }\n\n    // Display function\n    void display() const {\n        cout << \"Title: \" << title << \", Author: \" << author << \", Price: $\" << price << endl;\n    }\n};\n\nint main() {\n    // Using Default Constructor\n    Book b1;\n    cout << \"Book 1 (Default): \";\n    b1.display();\n\n    // Using Parameterized Constructor\n    Book b2(\"C++ Programming\", \"Bjarne Stroustrup\", 59.99);\n    cout << \"Book 2 (Parameterized): \";\n    b2.display();\n\n    // Using Copy Constructor\n    Book b3 = b2;\n    cout << \"Book 3 (Copy of Book 2): \";\n    b3.display();\n\n    return 0;\n}\n```",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "22. b.",
+            "question_text": "Draw and illustrate the sequence and collaboration diagram for the withdrawal scenario in the bank ATM system. The system starts the process by employing a standard procedure for validating the card and account holder.",
+            "marks": 8,
+            "answer": "**Sequence Diagram for ATM Withdrawal:**\n\n**Objects:** Customer, ATM_Machine, Bank_Server, Account.\n\n**Steps:**\n1.  Customer -> ATM_Machine: insertCard()\n2.  ATM_Machine -> Customer: requestPIN()\n3.  Customer -> ATM_Machine: enterPIN(pin)\n4.  ATM_Machine -> Bank_Server: verifyPIN(cardNo, pin)\n5.  Bank_Server -> ATM_Machine: pinValid()\n6.  ATM_Machine -> Customer: displayMenu()\n7.  Customer -> ATM_Machine: selectWithdrawal(amount)\n8.  ATM_Machine -> Bank_Server: checkBalance(amount)\n9.  Bank_Server -> Account: verifyFunds(amount)\n10. Account -> Bank_Server: fundsAvailable()\n11. Bank_Server -> ATM_Machine: transactionApproved()\n12. ATM_Machine -> Customer: dispenseCash()\n13. ATM_Machine -> Bank_Server: updateBalance()\n14. ATM_Machine -> Customer: ejectCard()\n\n**Collaboration Diagram (Communication Diagram):**\nShows the same interactions but focuses on the structural organization of objects. Objects are connected by links, and messages are numbered to show the sequence (e.g., 1: insertCard(), 2: requestPIN(), etc. alongside the links connecting Customer, ATM_Machine, Bank_Server, and Account).",
+            "answer_source": "General UML Knowledge",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "23. a.",
+            "question_text": "Define three classes with names shapes, rectangle and circle. Make use of the member functions getdata ( ), printdata ( ) and area ( ), to find the area of circle and rectangle. Whether type of inheritance is hierarchical? Explain with the sample output.",
+            "marks": 8,
+            "answer": "Yes, this is an example of **Hierarchical Inheritance** because two derived classes (`Rectangle` and `Circle`) inherit from a single base class (`Shapes`).\n\n```cpp\n#include <iostream>\nusing namespace std;\n\nclass Shapes {\npublic:\n    // Base class to provide a common interface if needed\n};\n\nclass Rectangle : public Shapes {\nprivate:\n    float length, breadth;\npublic:\n    void getdata() {\n        cout << \"Enter length and breadth for Rectangle: \";\n        cin >> length >> breadth;\n    }\n    float area() {\n        return length * breadth;\n    }\n    void printdata() {\n        cout << \"Area of Rectangle: \" << area() << endl;\n    }\n};\n\nclass Circle : public Shapes {\nprivate:\n    float radius;\npublic:\n    void getdata() {\n        cout << \"Enter radius for Circle: \";\n        cin >> radius;\n    }\n    float area() {\n        return 3.14159 * radius * radius;\n    }\n    void printdata() {\n        cout << \"Area of Circle: \" << area() << endl;\n    }\n};\n\nint main() {\n    Rectangle rect;\n    rect.getdata();\n    rect.printdata();\n\n    Circle circ;\n    circ.getdata();\n    circ.printdata();\n\n    return 0;\n}\n```\n**Sample Output:**\n```text\nEnter length and breadth for Rectangle: 5 4\nArea of Rectangle: 20\nEnter radius for Circle: 3\nArea of Circle: 28.2743\n```",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "23. b.",
+            "question_text": "Draw the state chart diagram with three different states for order management system. The customers should be able to book the orders in online order management system. The diagram should have joint pseudo state, self-transition, entry and exit connectors, choice pseudo state etc.",
+            "marks": 8,
+            "answer": "**State Chart Diagram for Order Management System:**\n\n**States:**\n1.  **Idle / Cart State:** Where items are added.\n2.  **Processing State:** Handling payment and inventory checks.\n3.  **Shipped / Completed State:** Order dispatched.\n\n**Transitions & Elements:**\n-   **Initial State:** Solid circle leading to 'Idle'.\n-   **Idle State:** \n    -   *Self-transition:* `addItem()` / update cart.\n    -   *Transition:* `checkout()` -> goes to Processing.\n-   **Processing State:**\n    -   *Entry:* Calculate total.\n    -   *Exit:* Generate invoice.\n    -   *Fork/Join:* Can be used if payment processing and inventory reservation happen concurrently.\n    -   **Choice Pseudo State (Diamond):** Checks payment success.\n        -   `[Payment Failed]` -> Returns to Idle (or Cancelled).\n        -   `[Payment Success]` -> Transitions to Shipped.\n-   **Shipped State:** Order is complete.\n-   **Final State:** Bullseye symbol representing the end of the order lifecycle.",
+            "answer_source": "General UML Knowledge",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "24. a.",
+            "question_text": "Write a C++ program for implementing the concept of class template. Create the template class myFirstClass. Inside this, cerate a constructor that will initialize the two members num1 and num2 of the class. Find minimum and maximum of that two numbers using different data types arguments such as int, float, double and string concepts using function template concepts.",
+            "marks": 8,
+            "answer": "```cpp\n#include <iostream>\n#include <string>\nusing namespace std;\n\ntemplate <class T>\nclass myFirstClass {\nprivate:\n    T num1, num2;\npublic:\n    myFirstClass(T n1, T n2) : num1(n1), num2(n2) {}\n\n    T getMin() {\n        return (num1 < num2) ? num1 : num2;\n    }\n\n    T getMax() {\n        return (num1 > num2) ? num1 : num2;\n    }\n\n    void display() {\n        cout << \"Min: \" << getMin() << \", Max: \" << getMax() << endl;\n    }\n};\n\nint main() {\n    // Integer\n    myFirstClass<int> objInt(10, 20);\n    cout << \"Integer -> \"; objInt.display();\n\n    // Float\n    myFirstClass<float> objFloat(15.5f, 10.2f);\n    cout << \"Float -> \"; objFloat.display();\n\n    // Double\n    myFirstClass<double> objDouble(123.456, 789.012);\n    cout << \"Double -> \"; objDouble.display();\n\n    // String\n    myFirstClass<string> objString(\"Apple\", \"Banana\");\n    cout << \"String -> \"; objString.display();\n\n    return 0;\n}\n```",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "24. b.",
+            "question_text": "Create a integer vector object vect1. Insert 5 elements into the vector [10,20,30,40,50] by calling the appropriate insert function. Using multiple catch block exception handling techniques implement the C++ code for the following exception.\n(i) Type conversion; illegal values, improper casts\n(ii) Bound violations; illegal array indices\n(iii) Bad references; null pointers.\nWrite a complete C++ exception handling code to meet the above cases.",
+            "marks": 8,
+            "answer": "```cpp\n#include <iostream>\n#include <vector>\n#include <stdexcept>\n#include <typeinfo>\nusing namespace std;\n\nint main() {\n    vector<int> vect1;\n    // Inserting elements\n    vect1.push_back(10);\n    vect1.push_back(20);\n    vect1.push_back(30);\n    vect1.push_back(40);\n    vect1.push_back(50);\n\n    try {\n        int choice;\n        cout << \"Enter 1 for Bound violation, 2 for Bad cast, 3 for Null pointer logic: \";\n        cin >> choice;\n\n        if (choice == 1) {\n            // (ii) Bound violation using at() which throws out_of_range\n            cout << \"Accessing out of bounds: \" << vect1.at(10) << endl;\n        } \n        else if (choice == 2) {\n            // (i) Type conversion/Bad cast simulation\n            class Base { virtual void dummy() {} };\n            class Derived : public Base { int a; };\n            Base *b = new Base;\n            Derived *d = dynamic_cast<Derived*>(b);\n            if (d == nullptr) throw bad_cast();\n        } \n        else if (choice == 3) {\n            // (iii) Bad references / Null pointer simulation\n            int* ptr = nullptr;\n            if (!ptr) throw runtime_error(\"Null pointer exception\");\n            cout << *ptr;\n        }\n    } \n    catch (const out_of_range& e) {\n        cout << \"Exception caught: Bound violation - \" << e.what() << endl;\n    } \n    catch (const bad_cast& e) {\n        cout << \"Exception caught: Improper cast - \" << e.what() << endl;\n    } \n    catch (const runtime_error& e) {\n        cout << \"Exception caught: Bad reference/Null pointer - \" << e.what() << endl;\n    } \n    catch (...) {\n        cout << \"Unknown exception caught!\" << endl;\n    }\n\n    return 0;\n}\n```",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "25. a.",
+            "question_text": "Write a C++ program for sequence container list using array of integer data type and implement the following methods. Create user defined function PrintList ( ) and display output.\n(i) Push_front ( )\n(ii) insert ( )\n(iii) sort ( )\n(iv) splice ( )\n(v) merge ( )\n(vi) POP_back ( )",
+            "marks": 8,
+            "answer": "```cpp\n#include <iostream>\n#include <list>\nusing namespace std;\n\n// User defined function to print list\nvoid PrintList(const list<int>& lst, const string& msg) {\n    cout << msg << \": \";\n    for (int val : lst) {\n        cout << val << \" \";\n    }\n    cout << endl;\n}\n\nint main() {\n    // Array of integer data type\n    int arr[] = {40, 10, 30};\n    int n = sizeof(arr) / sizeof(arr[0]);\n\n    // Initialize list with array\n    list<int> myList(arr, arr + n);\n    PrintList(myList, \"Initial List\");\n\n    // (i) Push_front()\n    myList.push_front(50);\n    PrintList(myList, \"After push_front(50)\");\n\n    // (ii) insert() at beginning + 2\n    auto it = myList.begin();\n    advance(it, 2);\n    myList.insert(it, 25);\n    PrintList(myList, \"After insert(25)\");\n\n    // (iii) sort()\n    myList.sort();\n    PrintList(myList, \"After sort()\");\n\n    // Prepare second list for splice and merge\n    list<int> list2 = {5, 15};\n    \n    // (iv) splice() - move all elements from list2 to beginning of myList\n    myList.splice(myList.begin(), list2);\n    PrintList(myList, \"After splice(list2)\");\n\n    // (v) merge() - both lists must be sorted first\n    list<int> list3 = {20, 35, 60};\n    myList.sort(); // ensure sorted\n    list3.sort();\n    myList.merge(list3);\n    PrintList(myList, \"After merge(list3)\");\n\n    // (vi) pop_back()\n    myList.pop_back();\n    PrintList(myList, \"After pop_back()\");\n\n    return 0;\n}\n```",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 5"
+        },
+        {
+            "question_number": "25. b.",
+            "question_text": "Write a C++ program to demonstrate the working of STL and perform the following operations in the STL queue and map.\n(i) Insert\n(ii) Delete\n(iii) Display\n(iv) Find",
+            "marks": 8,
+            "answer": "```cpp\n#include <iostream>\n#include <queue>\n#include <map>\nusing namespace std;\n\nint main() {\n    cout << \"--- STL Queue Operations ---\\n\";\n    queue<int> q;\n    // (i) Insert\n    q.push(10); q.push(20); q.push(30);\n    cout << \"Queue after insertion: \";\n    // (iii) Display (Queue doesn't have iterators, must copy/pop to display)\n    queue<int> qCopy = q;\n    while(!qCopy.empty()) { cout << qCopy.front() << \" \"; qCopy.pop(); }\n    cout << endl;\n    // (ii) Delete\n    q.pop();\n    cout << \"Queue after deletion (pop front): \";\n    qCopy = q;\n    while(!qCopy.empty()) { cout << qCopy.front() << \" \"; qCopy.pop(); }\n    cout << \"\\nQueue has no built-in find method (linear search needed).\\n\\n\";\n\n    cout << \"--- STL Map Operations ---\\n\";\n    map<int, string> m;\n    // (i) Insert\n    m.insert({1, \"Apple\"});\n    m[2] = \"Banana\";\n    m[3] = \"Cherry\";\n    // (iii) Display\n    cout << \"Map contents:\\n\";\n    for(auto const& pair : m) {\n        cout << pair.first << \": \" << pair.second << endl;\n    }\n    // (iv) Find\n    auto it = m.find(2);\n    if(it != m.end()) cout << \"Found key 2: \" << it->second << endl;\n    else cout << \"Key 2 not found.\\n\";\n    // (ii) Delete\n    m.erase(2);\n    cout << \"Map after deleting key 2:\\n\";\n    for(auto const& pair : m) {\n        cout << pair.first << \": \" << pair.second << endl;\n    }\n\n    return 0;\n}\n```",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 5"
+        },
+        {
+            "question_number": "26",
+            "question_text": "Define method overloading. Develop a C++ program that utilizes function overloading to calculate the volume of different geometric shapes, such as cubes, cylinders and spheres. Implement the functions with \n(i) Different number of arguments with same return type \n(ii) Same number of arguments with different return types to handle each shapes specific calculations",
+            "marks": 15,
+            "answer": "**Method Overloading** is a feature in C++ where multiple functions can have the same name but different parameters (number, type, or both). The compiler determines which function to execute based on the arguments passed during the function call.\n\n*Note: C++ does NOT allow function overloading based solely on the return type. Therefore, condition (ii) \"Same number of arguments with different return types\" is strictly impossible in standard C++ overloading rules. To fulfill the intent, we can use different argument types (e.g., `int` vs `double`) along with different return types.*\n\n```cpp\n#include <iostream>\n#include <cmath>\nusing namespace std;\n\n// (i) Different number of arguments with same return type\n// Volume of a Cube: V = a^3 (1 argument)\ndouble calculateVolume(double side) {\n    return side * side * side;\n}\n\n// Volume of a Cylinder: V = pi * r^2 * h (2 arguments)\ndouble calculateVolume(double radius, double height) {\n    return 3.14159 * radius * radius * height;\n}\n\n// (ii) Different argument types (needed for overloading) and different return types\n// Volume of a Sphere: V = (4/3) * pi * r^3 \n// Taking an integer radius and returning a float to demonstrate different types.\nfloat calculateVolume(int radius) {\n    return (4.0f / 3.0f) * 3.14159f * radius * radius * radius;\n}\n\nint main() {\n    double cubeSide = 5.0;\n    double cylRadius = 3.0, cylHeight = 7.0;\n    int sphereRadius = 4;\n\n    cout << \"Volume of Cube (side 5.0): \" \n         << calculateVolume(cubeSide) << endl; // Calls 1-arg double version\n\n    cout << \"Volume of Cylinder (radius 3.0, height 7.0): \" \n         << calculateVolume(cylRadius, cylHeight) << endl; // Calls 2-arg version\n\n    cout << \"Volume of Sphere (radius 4): \" \n         << calculateVolume(sphereRadius) << endl; // Calls 1-arg int version\n\n    return 0;\n}\n```",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "27",
+            "question_text": "Write a C++ program for the below mentioned inheritance scenario:\nCreate a class named shape with a function that prints “This is a shape”.\nCreate another named class “Polygon” inheriting the shape class with the same function that prints “Polygon is a shape”. Create two other classes named rectangle and triangle having the same function which prints “Rectangle is a polygon” and “Triangle is a polygon” respectively. Again, make another class named square having the same function which prints “Square is a rectangle”.\nNow try calling the function by the objects of each of these classes.",
+            "marks": 15,
+            "answer": "```cpp\n#include <iostream>\nusing namespace std;\n\n// Base class\nclass Shape {\npublic:\n    void print() {\n        cout << \"This is a shape\" << endl;\n    }\n};\n\n// Polygon inherits from Shape (Single Inheritance)\nclass Polygon : public Shape {\npublic:\n    void print() {\n        cout << \"Polygon is a shape\" << endl;\n    }\n};\n\n// Rectangle inherits from Polygon (Multilevel Inheritance)\nclass Rectangle : public Polygon {\npublic:\n    void print() {\n        cout << \"Rectangle is a polygon\" << endl;\n    }\n};\n\n// Triangle inherits from Polygon (Hierarchical Inheritance from Polygon)\nclass Triangle : public Polygon {\npublic:\n    void print() {\n        cout << \"Triangle is a polygon\" << endl;\n    }\n};\n\n// Square inherits from Rectangle (Multilevel Inheritance)\nclass Square : public Rectangle {\npublic:\n    void print() {\n        cout << \"Square is a rectangle\" << endl;\n    }\n};\n\nint main() {\n    // Creating objects of each class\n    Shape s;\n    Polygon p;\n    Rectangle r;\n    Triangle t;\n    Square sq;\n\n    // Calling the print function for each object\n    // This demonstrates function overriding/hiding\n    cout << \"Calling print from Shape object: \";\n    s.print();\n\n    cout << \"Calling print from Polygon object: \";\n    p.print();\n\n    cout << \"Calling print from Rectangle object: \";\n    r.print();\n\n    cout << \"Calling print from Triangle object: \";\n    t.print();\n\n    cout << \"Calling print from Square object: \";\n    sq.print();\n\n    return 0;\n}\n```",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 3"
+        }
+    ]
+}

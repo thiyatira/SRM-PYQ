@@ -1,0 +1,262 @@
+{
+    "paper_title": "B.Tech/M.Tech (Integrated) DEGREE EXAMINATION, JULY 2025 - 21CSC101T - OBJECT ORIENTED DESIGN AND PROGRAMMING",
+    "source": "JULY 2025",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "Which of the following is a valid declaration of a static variable in C++?\n(A) static int x;\n(B) int static x;\n(C) int x;\n(D) stat int x;",
+            "marks": 1,
+            "answer": "(A) static int x;. Explanation: The keyword `static` comes before the data type in a valid declaration.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "2",
+            "question_text": "Which access specifier allows members to be accessed within the same class and derived classes?\n(A) public\n(B) private\n(C) protected\n(D) internal",
+            "marks": 1,
+            "answer": "(C) protected. Explanation: 'protected' access specifier restricts access to the class itself and its derived classes.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "3",
+            "question_text": "In C++, which keyword is used to declare a constant variable?\n(A) constant\n(B) const\n(C) final\n(D) readonly",
+            "marks": 1,
+            "answer": "(B) const. Explanation: The 'const' keyword is used to declare variables whose values cannot be changed after initialization.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "4",
+            "question_text": "What does UML stand for?\n(A) Unified Modeling Language\n(B) Universal Modeling Language\n(C) Unified Method Language\n(D) Unified Management Language",
+            "marks": 1,
+            "answer": "(A) Unified Modeling Language. Explanation: UML is a standard visual modeling language used in object-oriented software engineering.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "5",
+            "question_text": "In operator overloading, which keyword is used to define the operator function?\n(A) op\n(B) operator\n(C) overload\n(D) oper",
+            "marks": 1,
+            "answer": "(B) operator. Explanation: The 'operator' keyword is specifically designated in C++ to overload operators.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "6",
+            "question_text": "C++ supports ___________ inheritance, which allows a derived class to inherit from many base classes, even if the base classes are unrelated.\n(A) Multilevel\n(B) Single level\n(C) Multiple\n(D) Hierarchical",
+            "marks": 1,
+            "answer": "(C) Multiple. Explanation: Multiple inheritance is when a class derives from more than one base class.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "7",
+            "question_text": "___________ emphasizes on time sequence of messages from one object to another.\n(A) Sequence diagram\n(B) Collaboration diagram\n(C) Class diagram\n(D) State diagram",
+            "marks": 1,
+            "answer": "(A) Sequence diagram. Explanation: Sequence diagrams detail how operations are carried out over time by showing object interactions.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "8",
+            "question_text": "Which among the following best describes constructor overloading?\n(A) Defining one constructor in each class of program\n(B) Defining more than one constructor in single class\n(C) Defining more than one constructor in single class with different signature\n(D) Defining destructor with each constructor",
+            "marks": 1,
+            "answer": "(C) Defining more than one constructor in single class with different signature. Explanation: Constructor overloading involves having multiple constructors with different parameter lists in the same class.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "9",
+            "question_text": "A function which has no implementation is called\n(A) Pure virtual function\n(B) virtual function\n(C) friend function\n(D) any user defined function",
+            "marks": 1,
+            "answer": "(A) Pure virtual function. Explanation: A pure virtual function is declared with '= 0' and has no body in the base class.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "10",
+            "question_text": "Elements of round corner boxes to represent the situation of objects\n(A) Lifeline\n(B) Iteration\n(C) transition\n(D) state",
+            "marks": 1,
+            "answer": "(D) state. Explanation: In statechart diagrams, a state is depicted as a rectangle with rounded corners.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "11",
+            "question_text": "Collaboration and sequence diagram are considered as\n(A) interaction diagram\n(B) non-structural\n(C) structural diagram\n(D) non-behavioural",
+            "marks": 1,
+            "answer": "(A) interaction diagram. Explanation: Both diagrams model the interaction between objects in a system.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "12",
+            "question_text": "When a virtual function is redefined by the derived class, it is called\n(A) Overloading\n(B) Overriding\n(C) Rewriting\n(D) Overwriting",
+            "marks": 1,
+            "answer": "(B) Overriding. Explanation: Providing a new implementation for a base class virtual function in a derived class is called overriding.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "13",
+            "question_text": "Which feature of C++ allows for writing generic functions and classes?\n(A) Inheritance\n(B) Function Overloading\n(C) Templates\n(D) Pointers",
+            "marks": 1,
+            "answer": "(C) Templates. Explanation: Templates allow creating functions and classes that operate with generic types.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "14",
+            "question_text": "________ is used to handle exceptional situations during program execution.\n(A) break and continue\n(B) try and catch\n(C) if-else statements\n(D) switch-case",
+            "marks": 1,
+            "answer": "(B) try and catch. Explanation: Exceptions are handled using try blocks to test code and catch blocks to handle errors.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "15",
+            "question_text": "What is the purpose of the 'finally' block in exception handling?\n(A) To catch exceptions\n(B) To throw exceptions\n(C) To clean up resources\n(D) To define custom exceptions",
+            "marks": 1,
+            "answer": "(C) To clean up resources. Explanation: The finally block executes after try and catch blocks to ensure resource cleanup, regardless of whether an exception occurred.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "16",
+            "question_text": "________ UML diagram illustrates the system's internal structure, showing how software components are connected or related.\n(A) Use Case Diagram\n(B) Component Diagram\n(C) Deployment Diagram\n(D) State Diagram",
+            "marks": 1,
+            "answer": "(B) Component Diagram. Explanation: Component diagrams model the physical aspects of object-oriented systems, illustrating dependencies between structural components.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "17",
+            "question_text": "Which container provides constant time insertion and deletion at both the beginning and end?\n(A) Vector\n(B) List\n(C) Dequeue\n(D) Array",
+            "marks": 1,
+            "answer": "(C) Dequeue. Explanation: Double-ended queues (deque) allow fast insertions and deletions at both the front and rear.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 5"
+        },
+        {
+            "question_number": "18",
+            "question_text": "________ header file must be included to use the transform() algorithm in C++.\n(A) <algorithm>\n(B) <iostream>\n(C) <vector>\n(D) <iterator>",
+            "marks": 1,
+            "answer": "(A) <algorithm>. Explanation: The 'transform()' function is part of the STL algorithms, defined in the <algorithm> header.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 5"
+        },
+        {
+            "question_number": "19",
+            "question_text": "________ container stores elements in a sorted order based on keys.\n(A) Vector\n(B) List\n(C) Stack\n(D) Map",
+            "marks": 1,
+            "answer": "(D) Map. Explanation: Maps are associative containers that store elements formed by a combination of a key value and a mapped value, sorted by key.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 5"
+        },
+        {
+            "question_number": "20",
+            "question_text": "________ is the purpose of an iterator in C++ STL.\n(A) To store elements in a container\n(B) To iterate over the elements of a container\n(C) To sort elements in a container\n(D) To search for elements in a container",
+            "marks": 1,
+            "answer": "(B) To iterate over the elements of a container. Explanation: Iterators act like pointers that allow traversing through elements of a container.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 5"
+        },
+        {
+            "question_number": "21(a)",
+            "question_text": "Illustrate class and object with example.",
+            "marks": 8,
+            "answer": "A class is a blueprint or template that defines the properties (attributes) and behaviors (methods) of a specific type of object. An object is an instance of a class. When a class is defined, no memory is allocated until an object of that class is created. \n\nExample in C++:\n```cpp\n#include <iostream>\nusing namespace std;\n\n// Class definition\nclass Car {\npublic:\n    string brand;\n    string model;\n    int year;\n\n    void displayInfo() {\n        cout << \"Brand: \" << brand << \", Model: \" << model << \", Year: \" << year << endl;\n    }\n};\n\nint main() {\n    // Object creation\n    Car car1;\n    car1.brand = \"Toyota\";\n    car1.model = \"Corolla\";\n    car1.year = 2020;\n\n    car1.displayInfo(); // Output: Brand: Toyota, Model: Corolla, Year: 2020\n    return 0;\n}\n```\nHere, `Car` is a class with attributes and a method. `car1` is an object of the `Car` class.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "21(b)",
+            "question_text": "Develop a use case diagram to show the bank customer relationship and explain the notations.",
+            "marks": 8,
+            "answer": "**Use Case Diagram Notations:**\n1. **Actor:** Represents a user or external system interacting with the system (e.g., Bank Customer, Bank Teller). Depicted as a stick figure.\n2. **Use Case:** Represents a specific functionality or action the system provides (e.g., Deposit Funds, Withdraw Funds, Check Balance). Depicted as an oval.\n3. **System Boundary:** Defines the scope of the system. Depicted as a rectangle enclosing use cases.\n4. **Association:** Shows the interaction between an actor and a use case. Depicted as a solid line.\n\n**Example Scenario (Bank Customer):**\n- **Actors:** Customer, Bank Teller.\n- **Use Cases:** Open Account, Deposit Money, Withdraw Money, Check Balance.\n- **Relationships:** The Customer is associated with all these use cases. The Bank Teller might be involved in Deposit/Withdraw use cases as well.",
+            "answer_source": "General UML Knowledge",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "22(a)",
+            "question_text": "Write a program to add 2 complex number using friend function and + operator.",
+            "marks": 8,
+            "answer": "```cpp\n#include <iostream>\nusing namespace std;\n\nclass Complex {\nprivate:\n    float real;\n    float imag;\n\npublic:\n    Complex(float r = 0, float i = 0) : real(r), imag(i) {}\n\n    // Friend function declaration for operator overloading\n    friend Complex operator+(const Complex& c1, const Complex& c2);\n\n    void display() const {\n        cout << real << \" + \" << imag << \"i\" << endl;\n    }\n};\n\n// Definition of the friend function\nComplex operator+(const Complex& c1, const Complex& c2) {\n    return Complex(c1.real + c2.real, c1.imag + c2.imag);\n}\n\nint main() {\n    Complex c1(3.5, 2.5);\n    Complex c2(1.5, 4.5);\n\n    Complex sum = c1 + c2; // Calls the overloaded + operator\n\n    cout << \"Complex Number 1: \"; c1.display();\n    cout << \"Complex Number 2: \"; c2.display();\n    cout << \"Sum: \"; sum.display();\n\n    return 0;\n}\n```",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "22(b)",
+            "question_text": "Draw UML sequence diagram for Library Management diagram for borrowing a book.",
+            "marks": 8,
+            "answer": "A Sequence Diagram illustrates how objects interact in a specific time sequence.\n\n**Components involved:**\n- **Student (Actor)**\n- **Librarian (Actor/System Interface)**\n- **LibrarySystem (Object)**\n- **BookDatabase (Object)**\n\n**Sequence of interactions for Borrowing a Book:**\n1. Student -> Librarian: Request to borrow a book (e.g., provides Book ID and Student ID).\n2. Librarian -> LibrarySystem: verifyStudent(StudentID).\n3. LibrarySystem -> Librarian: Return student status (Valid).\n4. Librarian -> LibrarySystem: checkAvailability(BookID).\n5. LibrarySystem -> BookDatabase: queryBook(BookID).\n6. BookDatabase -> LibrarySystem: return availability status (Available).\n7. LibrarySystem -> BookDatabase: updateBookStatus(BookID, Borrowed).\n8. LibrarySystem -> Librarian: confirmBorrowing().\n9. Librarian -> Student: Issue Book.",
+            "answer_source": "General UML Knowledge",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "23(a)",
+            "question_text": "What are the types of inheritance? Explain with neat diagram and example program.",
+            "marks": 8,
+            "answer": "**Types of Inheritance in C++:**\n1. **Single Inheritance:** A derived class inherits from one base class.\n2. **Multiple Inheritance:** A derived class inherits from more than one base class.\n3. **Multilevel Inheritance:** A derived class acts as a base class for another derived class.\n4. **Hierarchical Inheritance:** Multiple derived classes inherit from a single base class.\n5. **Hybrid Inheritance:** A combination of two or more types of inheritance.\n\n**Example Program (Single Inheritance):**\n```cpp\n#include <iostream>\nusing namespace std;\n\nclass Animal { // Base Class\npublic:\n    void eat() {\n        cout << \"Eating...\" << endl;\n    }\n};\n\nclass Dog : public Animal { // Derived Class\npublic:\n    void bark() {\n        cout << \"Barking...\" << endl;\n    }\n};\n\nint main() {\n    Dog myDog;\n    myDog.eat();  // Inherited method\n    myDog.bark(); // Own method\n    return 0;\n}\n```",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "23(b)",
+            "question_text": "Draw the activity diagram with swim lanes for railway reservation system. The passenger should be able to book ticket in online railway reservation. The diagram should include fork, joint, decision etc.",
+            "marks": 8,
+            "answer": "An Activity Diagram represents the workflow of a system.\n\n**Swimlanes:**\n- **Passenger:** Logs in, fills journey details, selects train, makes payment.\n- **Reservation System:** Authenticates, fetches train list, calculates fare, generates ticket.\n- **Payment Gateway:** Processes transaction.\n\n**Workflow (including fork, join, decision):**\n1. **Start:** Passenger logs in.\n2. **Decision:** Authentication successful? If No, retry. If Yes, proceed.\n3. Passenger enters source, destination, date.\n4. System fetches available trains and displays them.\n5. Passenger selects a train.\n6. System calculates fare.\n7. **Fork:** System simultaneously reserves a tentative seat AND redirects to Payment Gateway.\n8. Passenger makes payment.\n9. Payment Gateway verifies transaction.\n10. **Decision:** Payment successful? If No, cancel tentative reservation. If Yes, proceed.\n11. **Join:** Successful payment AND tentative seat reserved.\n12. System confirms booking and generates PNR/ticket.\n13. **End.**",
+            "answer_source": "General UML Knowledge",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "24(a)",
+            "question_text": "Write a CPP program to find the largest of two numbers using function templates.",
+            "marks": 8,
+            "answer": "```cpp\n#include <iostream>\nusing namespace std;\n\n// Function template to find the largest of two numbers\ntemplate <typename T>\nT findLargest(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    int int1 = 10, int2 = 20;\n    float float1 = 15.5, float2 = 10.2;\n    char char1 = 'A', char2 = 'Z';\n\n    cout << \"Largest integer: \" << findLargest(int1, int2) << endl;\n    cout << \"Largest float: \" << findLargest(float1, float2) << endl;\n    cout << \"Largest character: \" << findLargest(char1, char2) << endl;\n\n    return 0;\n}\n```",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "24(b)",
+            "question_text": "Discuss Component and Deployment diagram. Illustrate the notations of Component and Deployment diagram for Vehicle Registration System.",
+            "marks": 8,
+            "answer": "**Component Diagram:** Shows the structural relationships between physical components (e.g., source code, executables) of a system. \n- **Notations:** Component (rectangle with two smaller rectangles on the side), Interfaces (lollipops), Dependencies (dashed arrows).\n- **Vehicle Registration System Example:** Components might include `UI_Component`, `Registration_Controller`, `Database_Connector`, and `Payment_Module`.\n\n**Deployment Diagram:** Models the physical deployment of software artifacts on hardware nodes.\n- **Notations:** Node (3D box representing hardware like servers, PCs), Artifacts (manifestations of components deployed on nodes), Communication Paths (solid lines connecting nodes).\n- **Vehicle Registration System Example:** Nodes could be `Client_PC` (running Web Browser), `Web_Server` (running Registration App), and `Database_Server` (hosting SQL DB).",
+            "answer_source": "General UML Knowledge",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "25(a)",
+            "question_text": "Elaborate in detail about Associative Container: Map, Multi-map and Set, Muti-set with example program.",
+            "marks": 8,
+            "answer": "Associative containers are designed for fast retrieval of data based on keys.\n\n1. **Set:** Stores unique elements sorted by their value. The value itself is the key.\n2. **Multiset:** Similar to Set, but allows duplicate values.\n3. **Map:** Stores key-value pairs. Keys are unique and sorted. \n4. **Multimap:** Similar to Map, but allows multiple elements to have the same key.\n\n**Example using Map:**\n```cpp\n#include <iostream>\n#include <map>\nusing namespace std;\n\nint main() {\n    map<int, string> studentMap;\n    // Inserting elements\n    studentMap[1] = \"Alice\";\n    studentMap[2] = \"Bob\";\n    studentMap[1] = \"Charlie\"; // Overwrites \"Alice\" because keys are unique\n\n    cout << \"Map contents:\" << endl;\n    for (auto const& pair : studentMap) {\n        cout << \"Roll No: \" << pair.first << \", Name: \" << pair.second << endl;\n    }\n    return 0;\n}\n```",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 5"
+        },
+        {
+            "question_number": "25(b)",
+            "question_text": "Explain in detail about the components that make up the Standard Template Libraries (STL).",
+            "marks": 8,
+            "answer": "The Standard Template Library (STL) provides a set of common classes and interfaces for data structures and algorithms in C++. It has three main components:\n\n1. **Containers:** Classes used to store collections of data. They manage storage space and provide access to elements. \n   - **Sequence Containers:** e.g., `vector`, `list`, `deque`.\n   - **Associative Containers:** e.g., `set`, `map`.\n   - **Container Adapters:** e.g., `stack`, `queue`.\n\n2. **Algorithms:** Functions that perform operations on containers. They are implemented as templates and can work with different container types.\n   - Examples: `sort()`, `find()`, `count()`, `transform()`, `binary_search()`.\n\n3. **Iterators:** Objects that act like pointers. They are used to traverse elements in a container. They bridge the gap between containers and algorithms, allowing algorithms to manipulate data in containers without knowing the underlying structure. Types include input, output, forward, bidirectional, and random-access iterators.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 5"
+        },
+        {
+            "question_number": "26",
+            "question_text": "A Book shop maintains details of books that are being sold like bookid, title, author, price. Whenever a customer gives the above details display them to the user and if they provide a discount % along with the other details mentioned above, calculate the new discounted price, and display all the details. Implement the above scenario using constructor overloading.",
+            "marks": 15,
+            "answer": "```cpp\n#include <iostream>\n#include <string>\nusing namespace std;\n\nclass Book {\nprivate:\n    int bookId;\n    string title;\n    string author;\n    float price;\n    float discount;\n    float finalPrice;\n\npublic:\n    // Constructor without discount\n    Book(int id, string t, string a, float p) {\n        bookId = id;\n        title = t;\n        author = a;\n        price = p;\n        discount = 0;\n        finalPrice = p;\n    }\n\n    // Constructor with discount\n    Book(int id, string t, string a, float p, float d) {\n        bookId = id;\n        title = t;\n        author = a;\n        price = p;\n        discount = d;\n        finalPrice = price - (price * (discount / 100.0));\n    }\n\n    void display() const {\n        cout << \"\\nBook ID: \" << bookId\n             << \"\\nTitle: \" << title\n             << \"\\nAuthor: \" << author\n             << \"\\nOriginal Price: $\" << price;\n        if (discount > 0) {\n            cout << \"\\nDiscount: \" << discount << \"%\"\n                 << \"\\nDiscounted Price: $\" << finalPrice;\n        }\n        cout << \"\\n--------------------------\" << endl;\n    }\n};\n\nint main() {\n    // Customer provides details without discount\n    Book book1(101, \"C++ Primer\", \"Stanley B. Lippman\", 50.0);\n    cout << \"Details of Book 1:\";\n    book1.display();\n\n    // Customer provides details with a 10% discount\n    Book book2(102, \"Clean Code\", \"Robert C. Martin\", 40.0, 10.0);\n    cout << \"Details of Book 2:\";\n    book2.display();\n\n    return 0;\n}\n```",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "27",
+            "question_text": "Create a class to print the area of a square and a rectangle. The class has two functions with the same name but a different number of parameters. The function for printing the area of a rectangle has two parameters which are its length and breadth respectively while the other function for printing the area of the square has one parameter which is the side of the square.",
+            "marks": 15,
+            "answer": "```cpp\n#include <iostream>\nusing namespace std;\n\nclass ShapeArea {\npublic:\n    // Function to calculate and print the area of a square\n    // Takes one parameter: side of the square\n    void printArea(double side) {\n        double area = side * side;\n        cout << \"Area of Square with side \" << side << \" is: \" << area << endl;\n    }\n\n    // Function to calculate and print the area of a rectangle\n    // Takes two parameters: length and breadth\n    void printArea(double length, double breadth) {\n        double area = length * breadth;\n        cout << \"Area of Rectangle with length \" << length \n             << \" and breadth \" << breadth << \" is: \" << area << endl;\n    }\n};\n\nint main() {\n    ShapeArea shape;\n\n    // Calling method for square\n    shape.printArea(5.0);\n\n    // Calling method for rectangle\n    shape.printArea(4.5, 6.0);\n\n    return 0;\n}\n```",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 2"
+        }
+    ]
+}

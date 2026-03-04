@@ -1,0 +1,262 @@
+{
+    "paper_title": "B.Tech./M.Tech(Integrated) DEGREE EXAMINATION, JULY 2023 - 21CSC101T - OBJECT ORIENTED DESIGN AND PROGRAMMING",
+    "source": "JULY 2023",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "A member function can always access the data\n(A) in the object of which it is a member\n(B) in the class of which it is a member\n(C) in any object of the class of which it is a member\n(D) in the public part of its class",
+            "marks": 1,
+            "answer": "(A) in the object of which it is a member. Explanation: A member function operates on the specific object that calls it and has access to its data members.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "2",
+            "question_text": "The Unified Modeling Language is ________\n(A) a program that builds physical models\n(B) a way to look at the organization of a program\n(C) the combination of C++ and FORTRAN\n(D) helpful in developing software systems",
+            "marks": 1,
+            "answer": "(D) helpful in developing software systems. Explanation: UML is a visual modeling language used to specify, visualize, construct, and document the artifacts of software systems.",
+            "answer_source": "General UML Knowledge",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "3",
+            "question_text": "A variable defined within a block is visible\n(A) from the point of definition onward in the program\n(B) from the point of definition onward in the function\n(C) from the point of definition onward in the block\n(D) throughout the function",
+            "marks": 1,
+            "answer": "(C) from the point of definition onward in the block. Explanation: Variables defined inside a block (enclosed in braces `{}`) have local scope limited to that specific block.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "4",
+            "question_text": "Which of the following is the perfect set of operators that can't be overloaded in C++?\n(A) +=, ?, :: , >>\n(B) >>, <<, ?, *, sizeof()\n(C) :: , . , .* , ?:\n(D) :: , ->, * , new, delete",
+            "marks": 1,
+            "answer": "(C) :: , . , .* , ?:. Explanation: In C++, the scope resolution operator (`::`), member access operator (`.`), pointer-to-member operator (`.*`), and conditional/ternary operator (`?:`) cannot be overloaded.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "5",
+            "question_text": "Which of the following is true about constructors?\n(A) A class can have more than one constructor\n(B) They cannot be inherited\n(C) Their address can be referred\n(D) Constructors can have return values",
+            "marks": 1,
+            "answer": "(A) A class can have more than one constructor. Explanation: A class can have multiple constructors (constructor overloading) provided they have different parameter lists.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "6",
+            "question_text": "Which of the following keyword is used to overload an operator?\n(A) overload\n(B) operator\n(C) friend\n(D) overrider",
+            "marks": 1,
+            "answer": "(B) operator. Explanation: The keyword `operator` is used to define a function that overloads an operator in C++.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "7",
+            "question_text": "Overload an operator by naming it a\n(A) variable\n(B) built-in type\n(C) function\n(D) class",
+            "marks": 1,
+            "answer": "(C) function. Explanation: Operator overloading is achieved by creating a special function named `operator` followed by the symbol of the operator being overloaded.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "8",
+            "question_text": "Dynamic aspects related to a system are shown with help of\n(A) sequence diagrams\n(B) interaction diagrams\n(C) deployment diagrams\n(D) use case diagrams",
+            "marks": 1,
+            "answer": "(B) interaction diagrams. Explanation: Interaction diagrams (sequence and collaboration diagrams) model the dynamic behavior and interactions between objects over time.",
+            "answer_source": "General UML Knowledge",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "9",
+            "question_text": "Use of pointers or reference to an abstract class gives rise to which among the following feature?\n(A) Static Polymorphism\n(B) Runtime polymorphism\n(C) Compile time Polymorphism\n(D) Polymorphism within methods",
+            "marks": 1,
+            "answer": "(B) Runtime polymorphism. Explanation: Using base class pointers or references to call virtual functions in derived classes enables late binding or runtime polymorphism.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "10",
+            "question_text": "How can you make the private members inheritable?\n(A) By making their visibility mode as public only\n(B) By making their visibility mode as protected only\n(C) By making their visibility mode as private in derived class\n(D) It can be done both by making the visibility mode public or protected",
+            "marks": 1,
+            "answer": "(B) By making their visibility mode as protected only. Explanation: To allow derived classes to access members while keeping them hidden from the outside world, they must be declared as `protected` in the base class.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "11",
+            "question_text": "Which of the following Combines two concurrent activities and re-introduces them to a flow where only one activity can be performed at a time?\n(A) Joint symbol\n(B) Fork symbol\n(C) Decision symbol\n(D) Note symbol",
+            "marks": 1,
+            "answer": "(A) Joint symbol. Explanation: In an activity diagram, a join node merges multiple concurrent execution flows into a single flow.",
+            "answer_source": "General UML Knowledge",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "12",
+            "question_text": "Name the function whose definition can be substituted at a place where its function call is made?\n(A) friends function\n(B) inline function\n(C) volatile function\n(D) external function",
+            "marks": 1,
+            "answer": "(B) inline function. Explanation: An inline function is a request to the compiler to replace the function call with the actual code of the function to reduce function call overhead.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "13",
+            "question_text": "What type of core-relationship is represented by the symbol in the figure below? \n(Figure shows Company diamond attached to class 1 Department)\n(A) Aggregation\n(B) Dependency\n(C) Composition\n(D) Association",
+            "marks": 1,
+            "answer": "(C) Composition. Explanation: A filled diamond represents composition (a strong \"has-a\" relationship where the child's lifecycle depends on the parent). An empty diamond would mean aggregation.",
+            "answer_source": "General UML Knowledge",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "14",
+            "question_text": "________ statement is used to catch all types of exceptions.\n(A) catch()\n(B) catch(Test t)\n(C) catch(...)\n(D) Exception()",
+            "marks": 1,
+            "answer": "(C) catch(...). Explanation: The ellipsis `...` in a catch block acts as a default handler that catches any exception regardless of its type.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "15",
+            "question_text": "________ diagram in UML shows a complete of a modeled system at a specific time.\n(A) Sequence\n(B) Class diagram\n(C) Collaboration\n(D) Object",
+            "marks": 1,
+            "answer": "(D) Object. Explanation: An Object Diagram is a snapshot of the system's structure at a specific point in time, showing instances (objects) and their relationships.",
+            "answer_source": "General UML Knowledge",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "16",
+            "question_text": "In component diagrams, building block which is represented with two rectangles laid on left side is classified as\n(A) type of components\n(B) interfaces\n(C) dependency relationships\n(D) State dependency",
+            "marks": 1,
+            "answer": "(A) type of components. Explanation: A component is visually represented as a rectangle with two smaller rectangles protruding from its left side.",
+            "answer_source": "General UML Knowledge",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "17",
+            "question_text": "What kind of library is Standard Template Library?\n(A) Polymorphic\n(B) Generic\n(C) Both Polymorphic & Generic\n(D) Void",
+            "marks": 1,
+            "answer": "(B) Generic. Explanation: The STL is built extensively using C++ templates, making it a generic programming library where algorithms and containers work with any data type.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 5"
+        },
+        {
+            "question_number": "18",
+            "question_text": "What type of access does deque and vector provide?\n(A) Linear access\n(B) Random access\n(C) Parallel access\n(D) Sequence access",
+            "marks": 1,
+            "answer": "(B) Random access. Explanation: Both `std::vector` and `std::deque` provide fast, constant-time `O(1)` random access to elements using an index (e.g., `vec[i]`).",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 5"
+        },
+        {
+            "question_number": "19",
+            "question_text": "Which operator is used to insert the data into file?\n(A) >>\n(B) >\n(C) <\n(D) <<",
+            "marks": 1,
+            "answer": "(D) <<. Explanation: The insertion operator `<<` is used with output streams (like `ofstream`) to write or insert data into a file.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "20",
+            "question_text": "Which function is used to position back from the end of file object?\n(A) seekg\n(B) seekp\n(C) grepv\n(D) execvp",
+            "marks": 1,
+            "answer": "(A) seekg (or seekp). Explanation: `seekg` (seek get) is used for input streams to move the read pointer, while `seekp` (seek put) is used for output streams to move the write pointer.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "21. a.",
+            "question_text": "With a suitable example C++ program explain how to design a class. Give all possible representation in a class (such as: name, attribute, visibility, methods, and responsibilities).",
+            "marks": 8,
+            "answer": "A class is a blueprint for creating objects. It encapsulates data (attributes) and functions (methods) that operate on that data. \n\n**Example: Designing a `BankAccount` class.**\n- **Name:** BankAccount\n- **Attributes (Data Members):** accountNumber, balance.\n- **Visibility:** `private` for attributes (Encapsulation), `public` for methods.\n- **Methods (Member Functions):** deposit(), withdraw(), displayBalance().\n- **Responsibilities:** Manage funds securely and provide account info.\n\n```cpp\n#include <iostream>\nusing namespace std;\n\nclass BankAccount { // Class Name\nprivate: // Visibility\n    // Attributes\n    int accountNumber;\n    double balance;\n\npublic: // Visibility\n    // Constructor (Method)\n    BankAccount(int accNo, double initialBal) {\n        accountNumber = accNo;\n        balance = initialBal;\n    }\n\n    // Methods defining responsibilities\n    void deposit(double amount) {\n        if(amount > 0) balance += amount;\n    }\n\n    void withdraw(double amount) {\n        if(amount > 0 && balance >= amount) balance -= amount;\n        else cout << \"Insufficient funds!\\n\";\n    }\n\n    void displayBalance() {\n        cout << \"Account: \" << accountNumber << \" | Balance: $\" << balance << endl;\n    }\n};\n\nint main() {\n    BankAccount myAccount(101, 500.0);\n    myAccount.deposit(150.0);\n    myAccount.withdraw(50.0);\n    myAccount.displayBalance(); // Output: Account: 101 | Balance: $600\n    return 0;\n}\n```",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "21. b.",
+            "question_text": "Design and illustrate the use case model for activities involved in ordering food in a restaurant from the point when the customer enters a restaurant to the point when he leaves the restaurant.",
+            "marks": 8,
+            "answer": "**Use Case Model for Ordering Food in a Restaurant:**\n\n**Actors:**\n1.  **Customer:** Primary actor who places the order and eats.\n2.  **Waiter:** Handles orders and serves food.\n3.  **Chef:** Prepares the meal.\n4.  **Cashier:** Handles payment.\n\n**Use Cases:**\n1.  **Be Seated:** Customer enters and gets a table.\n2.  **View Menu:** Customer browses options.\n3.  **Place Order:** Customer orders food. (Involves Waiter).\n4.  **Prepare Food:** Chef cooks the order.\n5.  **Serve Food:** Waiter brings food to Customer.\n6.  **Eat Food:** Customer consumes the meal.\n7.  **Pay Bill:** Customer requests and pays the bill. (Involves Cashier/Waiter). \n    - Can include an `<extend>` relationship like \"Pay by Card\" or \"Pay by Cash\".\n8.  **Leave Restaurant:** Customer departs.\n\n*(Diagram description: Draw a system boundary box labeled 'Restaurant'. Place 'Customer' stick figure on the left. Place 'Waiter', 'Chef', 'Cashier' on the right. Inside the box, draw ovals for the use cases listed above. Connect the 'Customer' to Be Seated, View Menu, Place Order, Eat Food, Pay Bill, Leave. Connect 'Waiter' to Place Order, Serve Food, Pay Bill. Connect 'Chef' to Prepare Food. Connect 'Cashier' to Pay Bill.)*",
+            "answer_source": "General UML Knowledge",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "22. a.",
+            "question_text": "Create a C++ program that simulates a bookstore inventory system. Design a class called \"Book\" with attributes such as title, author, and price. Implement constructors, including a default constructor, a copy constructor and a parameterized constructor, to initialize book objects and display their information.",
+            "marks": 8,
+            "answer": "```cpp\n#include <iostream>\n#include <string>\nusing namespace std;\n\nclass Book {\nprivate:\n    string title;\n    string author;\n    double price;\n\npublic:\n    // 1. Default Constructor\n    Book() {\n        title = \"Unknown\";\n        author = \"Unknown\";\n        price = 0.0;\n    }\n\n    // 2. Parameterized Constructor\n    Book(string t, string a, double p) {\n        title = t;\n        author = a;\n        price = p;\n    }\n\n    // 3. Copy Constructor\n    Book(const Book &b) {\n        title = b.title;\n        author = b.author;\n        price = b.price;\n    }\n\n    // Method to display book info\n    void display() const {\n        cout << \"Title: \" << title << \" | Author: \" << author \n             << \" | Price: $\" << price << endl;\n    }\n};\n\nint main() {\n    // Using Default Constructor\n    Book book1;\n    cout << \"Book 1 (Default): \";\n    book1.display();\n\n    // Using Parameterized Constructor\n    Book book2(\"The C++ Programming Language\", \"Bjarne Stroustrup\", 59.99);\n    cout << \"Book 2 (Parameterized): \";\n    book2.display();\n\n    // Using Copy Constructor\n    Book book3 = book2;\n    cout << \"Book 3 (Copied from Book 2): \";\n    book3.display();\n\n    return 0;\n}\n```",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "22. b.",
+            "question_text": "List out the types of Interaction diagram and Notations. Draw the collaboration diagram for Flight Ticket Reservation System.",
+            "marks": 8,
+            "answer": "**Types of Interaction Diagrams:**\n1.  **Sequence Diagram:** Emphasizes the time ordering of messages.\n2.  **Collaboration (Communication) Diagram:** Emphasizes the structural organization of objects that send and receive messages.\n\n**Common Notations:**\n-   **Objects:** Rectangles containing the object name (e.g., `user:Customer`).\n-   **Links:** Solid lines connecting objects to show relationships/communication paths.\n-   **Messages:** Arrows indicating the direction of communication.\n-   **Sequence Numbers:** Numbers attached to messages (e.g., 1, 1.1, 2) to denote chronological order.\n\n**Collaboration Diagram for Flight Ticket Reservation:**\n*Objects Involved:* `C:Customer`, `UI:BookingInterface`, `Sys:ReservationSystem`, `DB:FlightDatabase`, `Pay:PaymentGateway`.\n\n*Message Sequence (to be drawn along links between objects):*\n1: `searchFlight(details)` [C -> UI]\n1.1: `queryAvailableFlights(details)` [UI -> Sys]\n1.1.1: `fetchData()` [Sys -> DB]\n1.1.2: `returnFlightList()` [DB -> Sys]\n1.2: `displayFlights()` [Sys -> UI]\n2: `selectFlight(flightID)` [C -> UI]\n3: `enterPassengerDetails()` [C -> UI]\n4: `initiatePayment(amount)` [UI -> Pay]\n5: `paymentSuccess()` [Pay -> UI]\n6: `confirmBooking(flightID, details)` [UI -> Sys]\n6.1: `updateSeats()` [Sys -> DB]\n7: `generateTicket()` [Sys -> UI]\n8: `showTicket()` [UI -> C]",
+            "answer_source": "General UML Knowledge",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "23. a.",
+            "question_text": "Create three classes with names Shape, Rectangle and Circle and make use of the functions getdata(), printdata(), and area(). To find the area of circle and rectangle, type of inheritance is Hierarchical? Explain with output?",
+            "marks": 8,
+            "answer": "Yes, this scenario uses **Hierarchical Inheritance** because multiple derived classes (`Rectangle` and `Circle`) inherit from a single common base class (`Shape`).\n\n```cpp\n#include <iostream>\nusing namespace std;\n\nclass Shape { // Base Class\npublic:\n    virtual void getdata() = 0; \n    virtual void printdata() = 0;\n    virtual float area() = 0;\n};\n\nclass Rectangle : public Shape { // Derived Class 1\nprivate:\n    float length, breadth;\npublic:\n    void getdata() override {\n        cout << \"Enter Length & Breadth for Rectangle: \";\n        cin >> length >> breadth;\n    }\n    float area() override { return length * breadth; }\n    void printdata() override {\n        cout << \"Area of Rectangle: \" << area() << endl;\n    }\n};\n\nclass Circle : public Shape { // Derived Class 2\nprivate:\n    float radius;\npublic:\n    void getdata() override {\n        cout << \"Enter Radius for Circle: \";\n        cin >> radius;\n    }\n    float area() override { return 3.14159 * radius * radius; }\n    void printdata() override {\n        cout << \"Area of Circle: \" << area() << endl;\n    }\n};\n\nint main() {\n    Rectangle rect;\n    rect.getdata();\n    rect.printdata();\n\n    Circle circ;\n    circ.getdata();\n    circ.printdata();\n    return 0;\n}\n```\n**Sample Output:**\n```\nEnter Length & Breadth for Rectangle: 5 4\nArea of Rectangle: 20\nEnter Radius for Circle: 3\nArea of Circle: 28.2743\n```",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "23. b.",
+            "question_text": "Draw the State chart diagram with three different states for Order Management System. The customers should be able to book the orders in Online Order Management System. The diagram should have joint pseudostate, self-transistion, entry and exit connectors, choice pseudostate etc.",
+            "marks": 8,
+            "answer": "**State Chart Diagram for Order Management System:**\n\n**States:**\n1.  **Shopping State:** Customer is browsing and adding items to the cart.\n2.  **Checkout / Processing State:** Order details are confirmed, and payment is processed.\n3.  **Shipped / Completed State:** Order is finalized and dispatched.\n\n**Transitions & Elements:**\n-   **Initial State:** A solid black circle leading to the 'Shopping State'.\n-   **Shopping State:**\n    -   *Self-transition:* `addItem()` or `updateQuantity()` loops back to Shopping.\n    -   *Transition:* `proceedToCheckout()` moves to the Processing State.\n-   **Processing State:**\n    -   *Entry action:* `entry / calculateTotal()`\n    -   *Exit action:* `exit / sendConfirmationEmail()`\n    -   *Joint Pseudostate (Fork/Join):* Can be used if inventory check and payment processing happen concurrently, joining back before finalizing.\n    -   **Choice Pseudostate (Diamond):** Validates payment.\n        -   `[Payment Failed]` -> Returns to Shopping State or a Cancelled state.\n        -   `[Payment Successful]` -> Transitions to the Shipped State.\n-   **Shipped State:** \n    -   Indicates order is fulfilled.\n-   **Final State:** A bullseye (circle with a dot inside) indicating the end of the order lifecycle.",
+            "answer_source": "General UML Knowledge",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "24. a.",
+            "question_text": "Write a simple Calculator Program to performing the four basic arithmetic operations in C++ using a class template. Constructor of this class takes two arguments of generic datatypes. Calculator class template consists of five main functions – show(), addition(), subtraction(), multiplication(), and division(). The show() function is responsible for calling the rest of the four generic functions.",
+            "marks": 8,
+            "answer": "```cpp\n#include <iostream>\nusing namespace std;\n\ntemplate <class T>\nclass Calculator {\nprivate:\n    T num1;\n    T num2;\n\npublic:\n    // Constructor\n    Calculator(T n1, T n2) {\n        num1 = n1;\n        num2 = n2;\n    }\n\n    T addition() { return num1 + num2; }\n    T subtraction() { return num1 - num2; }\n    T multiplication() { return num1 * num2; }\n    T division() {\n        if (num2 != 0) return num1 / num2;\n        else {\n            cout << \"Error: Division by zero! \";\n            return 0;\n        }\n    }\n\n    // Show function calls others\n    void show() {\n        cout << \"Numbers: \" << num1 << \" and \" << num2 << endl;\n        cout << \"Addition: \" << addition() << endl;\n        cout << \"Subtraction: \" << subtraction() << endl;\n        cout << \"Multiplication: \" << multiplication() << endl;\n        cout << \"Division: \" << division() << endl;\n        cout << \"--------------------------\" << endl;\n    }\n};\n\nint main() {\n    // Integer Calculator\n    Calculator<int> intCalc(20, 5);\n    cout << \"Integer Results:\\n\";\n    intCalc.show();\n\n    // Float Calculator\n    Calculator<float> floatCalc(15.5f, 2.5f);\n    cout << \"Float Results:\\n\";\n    floatCalc.show();\n\n    return 0;\n}\n```",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "24. b.",
+            "question_text": "Discuss Component diagram and Deployment diagram. Illustrate the notations of Component and Deployment diagram for Vehicle Registration System.",
+            "marks": 8,
+            "answer": "**Component Diagram:** Visualizes the structural relationships and dependencies between physical software components (e.g., executables, libraries, databases) in a system.\n- **Notations:** Components are rectangles with two smaller rectangles protruding from the left side. Interfaces are represented by \"lollipop\" (provided interface) or socket (required interface) symbols. Dependencies are dashed arrows.\n- **Vehicle Registration System:** Components might include `Registration_UI`, `Validation_Logic`, `Payment_Gateway_API`, and `Vehicle_DB_Driver`.\n\n**Deployment Diagram:** Maps the software architecture created in component diagrams onto the physical hardware architecture. It shows how software artifacts are deployed on hardware nodes.\n- **Notations:** Nodes (hardware/execution environments) are drawn as 3D boxes. Artifacts (software deployed on nodes) are rectangles with `<<artifact>>`. Communication paths are solid lines connecting nodes.\n- **Vehicle Registration System:** \n  - **Node 1: User PC/Mobile** containing artifact `Web Browser`.\n  - **Node 2: Web Server** containing artifact `Registration_App.war`.\n  - **Node 3: Database Server** containing artifact `Registration_Database`.\n  - *Connections:* User PC <--(Internet)--> Web Server <--(TCP/IP)--> Database Server.",
+            "answer_source": "General UML Knowledge",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "25. a.",
+            "question_text": "Explain the various functions given below related to Algorithms in Standard Template Library (STL). Discuss with syntax and example program.\n• Count()\n• Merge()\n• Sort()\n• Search()",
+            "marks": 8,
+            "answer": "```cpp\n#include <iostream>\n#include <vector>\n#include <algorithm>\nusing namespace std;\n\nint main() {\n    // 1. count(): Counts occurrences of a specific value.\n    // Syntax: count(start_iterator, end_iterator, value);\n    vector<int> v = {10, 20, 10, 30, 10};\n    int c = count(v.begin(), v.end(), 10);\n    cout << \"Count of 10 is: \" << c << \"\\n\";\n\n    // 2. sort(): Sorts elements in ascending order.\n    // Syntax: sort(start_iterator, end_iterator);\n    vector<int> vSort = {50, 20, 40, 10, 30};\n    sort(vSort.begin(), vSort.end());\n    cout << \"Sorted: \";\n    for(int x : vSort) cout << x << \" \"; \n    cout << \"\\n\";\n\n    // 3. merge(): Merges two sorted ranges into a new sorted range.\n    // Syntax: merge(start1, end1, start2, end2, result_start);\n    vector<int> v1 = {1, 3, 5}, v2 = {2, 4, 6}, v3(6);\n    merge(v1.begin(), v1.end(), v2.begin(), v2.end(), v3.begin());\n    cout << \"Merged: \";\n    for(int x : v3) cout << x << \" \";\n    cout << \"\\n\";\n\n    // 4. search(): Searches for a subsequence within a sequence.\n    // Syntax: search(start1, end1, start2, end2);\n    vector<int> mainVec = {1, 2, 3, 4, 5};\n    vector<int> subVec = {3, 4};\n    auto it = search(mainVec.begin(), mainVec.end(), subVec.begin(), subVec.end());\n    if (it != mainVec.end())\n        cout << \"Subsequence found at index: \" << distance(mainVec.begin(), it) << \"\\n\";\n    else\n        cout << \"Subsequence not found.\\n\";\n\n    return 0;\n}\n```",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 5"
+        },
+        {
+            "question_number": "25. b.",
+            "question_text": "Elaborate in detail about Associative Containers: Map, Multi-map and Set, Multi-set with example program?",
+            "marks": 8,
+            "answer": "Associative containers are optimized for rapid data retrieval based on keys. They typically use balanced binary search trees (like Red-Black trees) internally.\n\n1.  **Set (`std::set`):** Stores unique elements in a sorted order. The value itself is the key.\n2.  **Multi-set (`std::multiset`):** Like a set, but allows duplicate elements.\n3.  **Map (`std::map`):** Stores key-value pairs. Keys must be unique, and elements are sorted based on the key.\n4.  **Multi-map (`std::multimap`):** Like a map, but allows multiple values to have the same key.\n\n**Example Program:**\n```cpp\n#include <iostream>\n#include <set>\n#include <map>\nusing namespace std;\n\nint main() {\n    // Set Example\n    set<int> mySet = {30, 10, 20, 10}; // Duplicates ignored, sorted\n    cout << \"Set: \";\n    for(int val : mySet) cout << val << \" \"; // Output: 10 20 30\n    cout << \"\\n\";\n\n    // Map Example\n    map<int, string> myMap;\n    myMap[1] = \"Apple\";\n    myMap[3] = \"Cherry\";\n    myMap[2] = \"Banana\";\n    myMap[1] = \"Apricot\"; // Overwrites \"Apple\"\n    \n    cout << \"Map:\\n\";\n    for(auto const& pair : myMap) {\n        cout << pair.first << \": \" << pair.second << \"\\n\"; \n        // Output sorted by key: 1: Apricot, 2: Banana, 3: Cherry\n    }\n    return 0;\n}\n```",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 5"
+        },
+        {
+            "question_number": "26",
+            "question_text": "Consider a scenario where you are developing a banking application in C++. How does the implementation of object-oriented programming concepts such as classes, objects, inheritance, and polymorphism contribute to creating a robust and flexible banking system? Highlight comments the use of encapsulation, constructors, methods, and objects to implement OOP concepts in the Program.",
+            "marks": 15,
+            "answer": "```cpp\n#include <iostream>\n#include <string>\nusing namespace std;\n\n/* 1. CLASSES AND ENCAPSULATION:\n   A class 'Account' encapsulates the data (accountNumber, balance)\n   and the methods that operate on them. \n   Private access modifiers hide internal state to ensure security. */\nclass Account {\nprotected: // Protected so derived classes can access\n    string accountNumber;\n    double balance;\n\npublic:\n    /* 2. CONSTRUCTORS:\n       Initialize the object's state when created. */\n    Account(string accNum, double initialBal) : accountNumber(accNum), balance(initialBal) {}\n\n    // Virtual destructor for proper cleanup of derived classes\n    virtual ~Account() {}\n\n    /* 3. METHODS & ABSTRACTION:\n       Methods define behavior. Virtual keyword enables Polymorphism. */\n    virtual void deposit(double amount) {\n        balance += amount;\n        cout << \"Deposited: $\" << amount << \". New Balance: $\" << balance << endl;\n    }\n\n    // Pure virtual function makes Account an Abstract Class\n    virtual void withdraw(double amount) = 0;\n\n    void displayBalance() const {\n        cout << \"Account: \" << accountNumber << \" | Balance: $\" << balance << endl;\n    }\n};\n\n/* 4. INHERITANCE:\n   SavingsAccount inherits from Account, reusing its code and extending it. */\nclass SavingsAccount : public Account {\nprivate:\n    double interestRate;\n\npublic:\n    SavingsAccount(string accNum, double initialBal, double rate)\n        : Account(accNum, initialBal), interestRate(rate) {}\n\n    /* 5. POLYMORPHISM (Method Overriding):\n       Provides specific implementation for withdrawal for Savings. */\n    void withdraw(double amount) override {\n        if (balance - amount >= 0) {\n            balance -= amount;\n            cout << \"Savings Withdrawal: $\" << amount << endl;\n        } else {\n            cout << \"Insufficient funds in Savings!\" << endl;\n        }\n    }\n\n    void applyInterest() {\n        double interest = balance * (interestRate / 100);\n        deposit(interest);\n    }\n};\n\nclass CheckingAccount : public Account {\nprivate:\n    double overdraftLimit;\n\npublic:\n    CheckingAccount(string accNum, double initialBal, double limit)\n        : Account(accNum, initialBal), overdraftLimit(limit) {}\n\n    // Overriding withdraw to handle overdraft\n    void withdraw(double amount) override {\n        if (balance + overdraftLimit >= amount) {\n            balance -= amount;\n            cout << \"Checking Withdrawal: $\" << amount << endl;\n        } else {\n            cout << \"Overdraft limit exceeded!\" << endl;\n        }\n    }\n};\n\nint main() {\n    /* 6. OBJECTS:\n       Instantiating concrete objects of derived classes. */\n    SavingsAccount savings(\"SA123\", 1000.0, 5.0);\n    CheckingAccount checking(\"CA456\", 500.0, 200.0);\n\n    /* POLYMORPHISM IN ACTION:\n       Using base class pointers to call overridden methods. */\n    Account* acc1 = &savings;\n    Account* acc2 = &checking;\n\n    cout << \"--- Operations ---\\n\";\n    acc1->deposit(200.0);\n    acc1->withdraw(500.0);\n    \n    acc2->withdraw(600.0); // Uses overdraft\n\n    return 0;\n}\n```\n**Discussion:**\n- **Robustness:** Encapsulation prevents unauthorized manipulation of account balances. \n- **Flexibility:** Inheritance allows adding new account types (e.g., `FixedDepositAccount`) without altering existing code. Polymorphism allows the system to treat all account types uniformly via base pointers, simplifying transaction processing.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "27",
+            "question_text": "Define method overloading. Develop a C++ program that utilizes function overloading to calculate the volume of different geometric shapes, such as cubes, cylinders, and spheres. Implement functions with\n(i) Different number of arguments with same return types\n(ii) Same number of Arguments with different return types to handle each shape's specific calculations.",
+            "marks": 15,
+            "answer": "**Method Overloading** allows multiple functions in the same scope to share the same name as long as their parameter lists (number or type of arguments) differ. The compiler determines which function to invoke based on the arguments provided.\n\n*Note on part (ii): Standard C++ does not allow function overloading based solely on the return type. Functions must differ in their parameter lists. To fulfill the requirement of \"different return types\" while having the \"same number of arguments,\" the types of those arguments must be different (e.g., `int` vs `double`).*\n\n```cpp\n#include <iostream>\n#include <cmath>\nusing namespace std;\n\n// (i) Different number of arguments with same return type (double)\n// Volume of a Cube: V = side^3 (1 parameter)\ndouble calculateVolume(double side) {\n    cout << \"Calculating Cube Volume...\\n\";\n    return side * side * side;\n}\n\n// Volume of a Cylinder: V = pi * radius^2 * height (2 parameters)\ndouble calculateVolume(double radius, double height) {\n    cout << \"Calculating Cylinder Volume...\\n\";\n    return 3.14159 * radius * radius * height;\n}\n\n// (ii) Same number of arguments (1 parameter) but different argument TYPE \n// to allow overloading, and demonstrating a different return type (float).\n// Volume of a Sphere: V = (4/3) * pi * radius^3\n// Taking 'int' as parameter instead of 'double' to distinguish from the Cube function.\nfloat calculateVolume(int radius) {\n    cout << \"Calculating Sphere Volume...\\n\";\n    return (4.0f / 3.0f) * 3.14159f * radius * radius * radius;\n}\n\nint main() {\n    double cubeSide = 5.0;\n    double cylRadius = 3.0, cylHeight = 7.0;\n    int sphereRadius = 4; // Using int to trigger the sphere overload\n\n    // Calls double calculateVolume(double)\n    double volCube = calculateVolume(cubeSide);\n    cout << \"Volume of Cube: \" << volCube << \"\\n\\n\";\n\n    // Calls double calculateVolume(double, double)\n    double volCylinder = calculateVolume(cylRadius, cylHeight);\n    cout << \"Volume of Cylinder: \" << volCylinder << \"\\n\\n\";\n\n    // Calls float calculateVolume(int)\n    float volSphere = calculateVolume(sphereRadius);\n    cout << \"Volume of Sphere: \" << volSphere << \"\\n\\n\";\n\n    return 0;\n}\n```",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 2"
+        }
+    ]
+}
