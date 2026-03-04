@@ -7,6 +7,7 @@ const SUBJECTS = [
   { code: "FRENCH", name: "French", title: "21LEH103T: French" },
   { code: "ICB", name: "Introduction to Computational Biology", title: "21BTB102T: Introduction to Computational Biology" },
   { code: "CHEMISTRY", name: "Chemistry", title: "18CYB101J: Chemistry" },
+  { code: "OOPS", name: "Object Oriented Design and Programming", title: "21CSC101T: Object Oriented Design and Programming" },
 ];
 
 const SUBJECT_FILES: Record<string, string[]> = {
@@ -116,6 +117,15 @@ const SUBJECT_FILES: Record<string, string[]> = {
     "2024_Dec_ET.json",
     "2024_Jan_ET.json",
     "2025_May_ET.json"
+  ],
+  "OOPS": [
+    "2019_Nov.json",
+    "2022_May.json",
+    "2023_December.json",
+    "2023_July.json",
+    "2023_May.json",
+    "2024_May.json",
+    "2025_July.json"
   ]
 };
 

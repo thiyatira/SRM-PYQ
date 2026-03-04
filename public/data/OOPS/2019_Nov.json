@@ -1,0 +1,358 @@
+{
+    "paper_title": "B.Tech. DEGREE EXAMINATION, NOVEMBER 2019 - OBJECT ORIENTED DESIGN AND PROGRAMMING",
+    "source": "NOVEMBER 2019",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "Only the ______ can have access to the private members and private functions.\n(A) Data functions\n(B) Inline functions\n(C) Member functions\n(D) Member variables",
+            "marks": 1,
+            "answer": "(C) Member functions. \nExplanation: In Object-Oriented Programming, private members and functions of a class are strictly hidden from outside access to ensure encapsulation. Only the member functions of that specific class have the privilege to access them.",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "2",
+            "question_text": "Constructors are normally used to ______ and to allocate memory.\n(A) Define variables\n(B) Allocate variables\n(C) Initialize variables\n(D) Initialize object",
+            "marks": 1,
+            "answer": "(D) Initialize object. \nExplanation: A constructor is a special member function that is automatically called when an object of a class is created. Its primary purpose is to initialize the object's data members and allocate necessary memory.",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "3",
+            "question_text": "Destructor is a member function whose name is same as the class name but is preceded by a\n(A) Tilde\n(B) Hash\n(C) Dot\n(D) Scope resolution",
+            "marks": 1,
+            "answer": "(A) Tilde. \nExplanation: In C++, a destructor is denoted by the tilde symbol (~) followed by the class name (e.g., `~MyClass()`). It is invoked automatically when an object goes out of scope to free resources.",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "4",
+            "question_text": "A UML diagram that facilitates requirements gathering and interacts between system and external users, is called as\n(A) Flow chart diagram\n(B) Sequence diagram\n(C) Data flow diagram\n(D) Use case diagram",
+            "marks": 1,
+            "answer": "(D) Use case diagram. \nExplanation: A Use Case Diagram represents the dynamic behavior of a system. It shows the interaction between the system's use cases and the external entities (actors), making it a key tool for requirements gathering.",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "5",
+            "question_text": "State whether the following statements are true (or) false for overloading operators.\n(i) Only existing operators can be overloaded\n(ii) We can change the basic meaning of a operator\n(A) True, true\n(B) True, false\n(C) False, true\n(D) False, false",
+            "marks": 1,
+            "answer": "(B) True, false. \nExplanation: (i) is True because C++ does not allow the creation of new operators; only existing ones like +, -, *, etc., can be overloaded. (ii) is False because you cannot change the fundamental grammatical syntax or basic meaning (e.g., you cannot change operator precedence or arity).",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "6",
+            "question_text": "______ overloaded by means of a member function, take no explicit arguments and return no explicit values.\n(A) Unary operators\n(B) Binary operators\n(C) Arithmetic operators\n(D) Function operators",
+            "marks": 1,
+            "answer": "(A) Unary operators. \nExplanation: When a unary operator (like ++ or --) is overloaded as a member function of a class, it does not take any explicit arguments because the object invoking it acts as the implicit operand.",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "7",
+            "question_text": "Which of the following cannot be overloaded in C++?\n(A) Increment operator\n(B) Constructor\n(C) Destructor\n(D) New and delete operator",
+            "marks": 1,
+            "answer": "(C) Destructor. \nExplanation: Destructors cannot be overloaded because a class can only have exactly one destructor. They do not take any arguments, making overloading impossible.",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "8",
+            "question_text": "Activity diagram, use case diagram, collaboration diagram and sequence diagram are considered as types of\n(A) Non-behavioural diagrams\n(B) Non structural diagrams\n(C) Structural diagrams\n(D) Behavioural diagrams",
+            "marks": 1,
+            "answer": "(D) Behavioural diagrams. \nExplanation: In UML, behavioral diagrams illustrate the dynamic behavior of the system, such as how data moves, how objects interact over time, and the flow of control. Activity, Use Case, Collaboration, and Sequence diagrams all fall under this category.",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "9",
+            "question_text": "How many basic types of inheritance are provided as OOP feature?\n(A) 4\n(B) 3\n(C) 2\n(D) 1",
+            "marks": 1,
+            "answer": "(B) 3. \nExplanation: If referring strictly to access modes in C++ inheritance, there are 3 visibility modes: public, private, and protected. (Note: If referring to forms of inheritance conceptually, there are 5: Single, Multiple, Multilevel, Hierarchical, and Hybrid, but 5 is not an option. Thus, 3 is the most logically intended answer for C++ base visibility).",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "10",
+            "question_text": "Which type of inheritance leads to diamond problem?\n(A) Single level\n(B) Multi-level\n(C) Multiple\n(D) Hierarchical",
+            "marks": 1,
+            "answer": "(C) Multiple. \nExplanation: The diamond problem is an ambiguity that arises in multiple inheritance when two classes inherit from the same base class, and then a fourth class inherits from both of those derived classes.",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "11",
+            "question_text": "If a ______ is defined in the base class, it need not be necessarily redefined in the derived class.\n(A) Member function\n(B) Virtual function\n(C) Static function\n(D) Real function",
+            "marks": 1,
+            "answer": "(B) Virtual function. \nExplanation: A virtual function provides a default implementation in the base class. It is optional to redefine (override) it in the derived class, unlike a pure virtual function which must be redefined.",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "12",
+            "question_text": "Inheritance relationships are represented in the UML notation by\n(A) Lines with solid diamond at one end\n(B) Lines with hollow diamond at one end\n(C) Lines with hollow triangular arrow at one end\n(D) Lines with solid triangular arrow at both ends",
+            "marks": 1,
+            "answer": "(C) Lines with hollow triangular arrow at one end. \nExplanation: In UML class diagrams, inheritance (generalization) is shown using a solid line with a hollow, unfilled triangular arrowhead pointing to the base (parent) class.",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "13",
+            "question_text": "______ are used for generic programming.\n(A) Inheritance\n(B) Virtual functions\n(C) Templates\n(D) Operator overloading",
+            "marks": 1,
+            "answer": "(C) Templates. \nExplanation: Templates in C++ allow you to write generic programs. A single function or class can operate on different data types without rewriting the entire code for each type.",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "14",
+            "question_text": "An exception thrown from outside try block will\n(A) Call function return\n(B) Be ignored\n(C) Hang the machine\n(D) Call function terminate",
+            "marks": 1,
+            "answer": "(D) Call function terminate. \nExplanation: If an exception is thrown in a C++ program and is not caught by any matching `catch` block (e.g., thrown outside a `try` block), the program invokes the `std::terminate()` function, which aborts the program.",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "15",
+            "question_text": "The user-defined exception defines\n(A) Inheriting and overriding exception class functionality\n(B) Overriding class functionality\n(C) Inheriting class functionality\n(D) Function overloading",
+            "marks": 1,
+            "answer": "(A) Inheriting and overriding exception class functionality. \nExplanation: To create a user-defined exception in C++, a class typically inherits from the standard `std::exception` class and overrides its `what()` method to provide a custom error message.",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "16",
+            "question_text": "Class diagram, component diagram, object diagram and deployment diagram are considered as types of\n(A) Structural diagrams\n(B) Behavioural diagrams\n(C) Non-behavioural diagrams\n(D) Non structural diagrams",
+            "marks": 1,
+            "answer": "(A) Structural diagrams. \nExplanation: Structural UML diagrams show the static structure of the system and its parts on different abstraction and implementation levels and how they are related to each other.",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "17",
+            "question_text": "A common activity performed on a container is called\n(A) Functioning\n(B) Iterator\n(C) Traversal\n(D) Deletion of objects",
+            "marks": 1,
+            "answer": "(C) Traversal. \nExplanation: Traversal is the process of accessing each element within a container sequentially. In C++ STL, this is commonly done using Iterators.",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 5"
+        },
+        {
+            "question_number": "18",
+            "question_text": "What does STL stand for?\n(A) Simple template library\n(B) Standard template library\n(C) Static type library\n(D) Single type-based library",
+            "marks": 1,
+            "answer": "(B) Standard template library. \nExplanation: STL stands for Standard Template Library. It is a set of C++ template classes to provide common programming data structures and functions such as lists, stacks, arrays, etc.",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 5"
+        },
+        {
+            "question_number": "19",
+            "question_text": "Which stream class is used to both read and write on files?\n(A) ofstream\n(B) ifstream\n(C) fstream\n(D) iostream",
+            "marks": 1,
+            "answer": "(C) fstream. \nExplanation: The `fstream` class in C++ provides the capability to both read from and write to a file, whereas `ifstream` is only for reading and `ofstream` is only for writing.",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "20",
+            "question_text": "Which among following is correct syntax of closing a file in C++?\n(A) myfile$close ( );\n(B) myfile@close ( );\n(C) Myfile:close ( );\n(D) Myfile.close ( );",
+            "marks": 1,
+            "answer": "(D) Myfile.close ( ); \nExplanation: In C++, file streams are objects. To call a member function like `close()` on an object like `Myfile`, the dot (.) operator is used.",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "21",
+            "question_text": "Illustrate the working of constructor and destructor in C++ with suitable example.",
+            "marks": 4,
+            "answer": "A **Constructor** is a special member function invoked automatically when an object is created. It has the same name as the class and initializes the object. A **Destructor** is invoked automatically when an object is destroyed. It has the same name as the class preceded by a tilde (~) and deallocates resources.\n\n**Example:**\n```cpp\n#include <iostream>\nusing namespace std;\n\nclass Demo {\npublic:\n    // Constructor\n    Demo() {\n        cout << \"Constructor called! Object created.\" << endl;\n    }\n    \n    // Destructor\n    ~Demo() {\n        cout << \"Destructor called! Object destroyed.\" << endl;\n    }\n};\n\nint main() {\n    cout << \"Inside main function.\" << endl;\n    {\n        Demo obj; // Constructor is called here\n    } // Destructor is called here as obj goes out of scope\n    cout << \"Exiting main function.\" << endl;\n    return 0;\n}\n```\n**Output:**\nInside main function.\nConstructor called! Object created.\nDestructor called! Object destroyed.\nExiting main function.",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "22",
+            "question_text": "Draw UML use case diagram for bank ATM.",
+            "marks": 4,
+            "answer": "A Use Case Diagram for a Bank ATM identifies the actors and the primary functionalities (use cases) of the system.\n\n**Actors:**\n1. **Customer:** The person using the ATM.\n2. **Bank Server / System:** The central bank system verifying credentials.\n3. **ATM Technician:** The person maintaining the machine.\n\n**Use Cases:**\n- **Check Balance:** Customer checks their account balance.\n- **Withdraw Cash:** Customer withdraws money.\n- **Deposit Funds:** Customer deposits cash/cheques.\n- **Change PIN:** Customer updates their security PIN.\n- **Authenticate User:** Required for all transactions (Uses `<<include>>`).\n- **Maintenance / Refill Cash:** Performed by the Technician.\n\n**Relationships:**\n- Customer interacts with Check Balance, Withdraw Cash, Deposit Funds, and Change PIN.\n- All customer transactions `<<include>>` the \"Authenticate User\" use case.\n- Bank Server interacts with \"Authenticate User\" and transaction use cases.\n- Technician interacts with \"Maintenance\".",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "23",
+            "question_text": "Demonstrate function overloading in C++ with example.",
+            "marks": 4,
+            "answer": "Function Overloading is a feature in C++ where two or more functions can have the same name but different parameters (different type, number, or sequence of parameters). It is a form of compile-time polymorphism.\n\n**Example:**\n```cpp\n#include <iostream>\nusing namespace std;\n\nclass MathOperations {\npublic:\n    // Function with two int parameters\n    int add(int a, int b) {\n        return a + b;\n    }\n    \n    // Function with three int parameters\n    int add(int a, int b, int c) {\n        return a + b + c;\n    }\n    \n    // Function with double parameters\n    double add(double a, double b) {\n        return a + b;\n    }\n};\n\nint main() {\n    MathOperations math;\n    cout << \"Add 2 ints: \" << math.add(10, 20) << endl;\n    cout << \"Add 3 ints: \" << math.add(10, 20, 30) << endl;\n    cout << \"Add 2 doubles: \" << math.add(5.5, 2.5) << endl;\n    return 0;\n}\n```",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "24",
+            "question_text": "Illustrate friend function in C++ with suitable example.",
+            "marks": 4,
+            "answer": "A **friend function** in C++ is a function that is not a member of a class but has access to its private and protected members. It is declared inside the class using the `friend` keyword.\n\n**Example:**\n```cpp\n#include <iostream>\nusing namespace std;\n\nclass Box {\nprivate:\n    int width;\npublic:\n    Box(int w) : width(w) {}\n    \n    // Declare friend function\n    friend void printWidth(Box b);\n};\n\n// Definition of friend function (not a member function)\nvoid printWidth(Box b) {\n    // Can directly access private member 'width'\n    cout << \"Width of box is: \" << b.width << endl;\n}\n\nint main() {\n    Box myBox(15);\n    printWidth(myBox); // Calling friend function\n    return 0;\n}\n```",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "25",
+            "question_text": "How templates work in C++?",
+            "marks": 4,
+            "answer": "Templates in C++ provide a blueprint or formula for creating a generic class or a function. They allow developers to write code that works with any data type without repeating the entire code for each type.\n\n**How it works (Instantiation):**\n1. **Definition:** You define a template using the `template <class T>` or `template <typename T>` syntax.\n2. **Compile-time generation:** When you call a template function or create a template class object (e.g., passing `int` or `float`), the compiler automatically generates a specific version of the function or class for that exact data type at compile time.\n3. **Type Safety:** Since the code generation happens at compile time, templates ensure strict type checking.\nThis mechanism is called **Template Instantiation**. It prevents code redundancy and promotes generic programming.",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "26",
+            "question_text": "What are all the components of state chart diagram in UML?",
+            "marks": 4,
+            "answer": "A State Chart Diagram (State Machine Diagram) in UML models the dynamic behavior of an individual object based on its internal state transitions. Its core components are:\n1. **Initial State (Pseudo-state):** Represents the starting point of the object, denoted by a solid filled black circle.\n2. **State:** Represents a condition or situation during the life of an object. Denoted by a rectangle with rounded corners.\n3. **Transition:** A directed arrow indicating the movement from one state to another, triggered by an event.\n4. **Event / Trigger:** An occurrence that triggers a state transition (written over the transition arrow).\n5. **Action:** A behavior executed during a transition or upon entering/exiting a state.\n6. **Final State:** Represents the end of the object's lifecycle or completion of the process, denoted by a filled black circle inside a hollow circle (bullseye).",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "27",
+            "question_text": "Write a C++ program to open a file for reading.",
+            "marks": 4,
+            "answer": "To read from a file in C++, we use the `ifstream` class available in the `<fstream>` header.\n\n**Example Program:**\n```cpp\n#include <iostream>\n#include <fstream>\n#include <string>\nusing namespace std;\n\nint main() {\n    // Create an input file stream object and open file\n    ifstream inputFile(\"data.txt\");\n    string line;\n\n    // Check if the file opened successfully\n    if (inputFile.is_open()) {\n        cout << \"File opened successfully. Reading contents:\\n\";\n        // Read the file line by line\n        while (getline(inputFile, line)) {\n            cout << line << endl;\n        }\n        // Close the file after reading\n        inputFile.close();\n    } else {\n        cout << \"Error: Unable to open the file.\" << endl;\n    }\n    return 0;\n}\n```",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "28. a.i",
+            "question_text": "Write a C++ program for the following specifications\nClass: SRMIST_Library private members of the class SRMIST_Library are\nBook_No - integer type\nBook_Title - 20 characters\nPrice - float (price per copy)\nTOT_COST ( ) - to calculate the total cost for N number of copies where N is passed to the function as argument\nPublic members of the class SRMIST_Library are\nInput ( ) - to read Book No, Book_Title and price\nPurchase ( ) - function to ask the user to input the number of copies to be purchased\nIt invokes TOT_COST ( ) and prints the total cost to be paid by the user.",
+            "marks": 8,
+            "answer": "```cpp\n#include <iostream>\n#include <string>\nusing namespace std;\n\nclass SRMIST_Library {\nprivate:\n    int Book_No;\n    char Book_Title[20];\n    float Price;\n\n    // Private member function to calculate total cost\n    float TOT_COST(int N) {\n        return Price * N;\n    }\n\npublic:\n    // Public function to input details\n    void Input() {\n        cout << \"Enter Book Number: \";\n        cin >> Book_No;\n        cin.ignore(); // clear buffer\n        cout << \"Enter Book Title: \";\n        cin.getline(Book_Title, 20);\n        cout << \"Enter Price per copy: \";\n        cin >> Price;\n    }\n\n    // Public function to process purchase\n    void Purchase() {\n        int copies;\n        cout << \"Enter the number of copies to purchase: \";\n        cin >> copies;\n        \n        // Invoke TOT_COST to get the total cost\n        float totalCost = TOT_COST(copies);\n        cout << \"Total cost to be paid: $\" << totalCost << endl;\n    }\n};\n\nint main() {\n    SRMIST_Library book;\n    cout << \"--- Enter Book Details ---\\n\";\n    book.Input();\n    cout << \"\\n--- Purchase Details ---\\n\";\n    book.Purchase();\n    return 0;\n}\n```",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "28. a.ii",
+            "question_text": "Differentiate access specifiers public, private and protected with example.",
+            "marks": 4,
+            "answer": "Access specifiers define the scope and visibility of class members (data and functions).\n\n1. **Public (`public`)**: Members declared public are accessible from anywhere outside the class, within the entire program.\n2. **Private (`private`)**: Members declared private are accessible only from within the class itself. They cannot be accessed by derived classes or outside functions (unless they are friends).\n3. **Protected (`protected`)**: Members act similar to private members but with one key difference: they CAN be accessed by child/derived classes.\n\n**Example:**\n```cpp\nclass Base {\nprivate:\n    int priv_data;    // Only accessible inside Base\nprotected:\n    int prot_data;    // Accessible in Base and Derived classes\npublic:\n    int pub_data;     // Accessible anywhere\n};\n\nclass Derived : public Base {\npublic:\n    void display() {\n        // priv_data = 10; // ERROR: Not accessible\n        prot_data = 20; // VALID\n        pub_data = 30;  // VALID\n    }\n};\n\nint main() {\n    Base b;\n    // b.priv_data = 1; // ERROR\n    // b.prot_data = 2; // ERROR\n    b.pub_data = 3;     // VALID\n    return 0;\n}\n```",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "28. b.i",
+            "question_text": "Draw a class diagram for below scenario, and be sure to label all associations with appropriate multiplicities.\nA SRM cricket league is made up of at least eight cricket teams. Each cricket team is composed of eleven to fifteen players and one player captains the team. A team has a name and reward. Players have a number and position. Cricket teams play games against each other. Each game has a score and location. Teams are sometimes lead by a warch. A warch has a level of accreditation and a number of years of experience and can warch multiple teams. Coaches and players are people and people have names and addresses.",
+            "marks": 8,
+            "answer": "*Note: The prompt text contains a typo 'warch' which likely means 'Coach'. The answer assumes 'Coach' based on the context.* \n\n**Entities and Relationships (Textual Representation of Class Diagram):**\n\n1. **Class: Person**\n   - Attributes: `name: String`, `address: String`\n   - Acts as a base class.\n\n2. **Class: Player (inherits Person)**\n   - Attributes: `number: int`, `position: String`\n   \n3. **Class: Coach (inherits Person)**\n   - Attributes: `accreditationLevel: String`, `yearsOfExperience: int`\n\n4. **Class: Team**\n   - Attributes: `name: String`, `reward: String`\n\n5. **Class: League**\n   - Attributes: (implicit, maybe `name`)\n\n6. **Class: Game**\n   - Attributes: `score: String`, `location: String`\n\n**Associations & Multiplicities:**\n- **League to Team:** A League is made up of Teams. Multiplicity: League `1` <---> `8..*` Team.\n- **Team to Player (Composition):** A Team has Players. Multiplicity: Team `1` <---> `11..15` Player.\n- **Team to Player (Captain):** One Player is the captain. Multiplicity: Team `1` <---> `1` Player (Role: Captain).\n- **Team to Coach:** A team is sometimes led by a Coach, a coach can lead multiple teams. Multiplicity: Team `0..*` <---> `0..*` Coach.\n- **Team to Game:** Teams play Games. A Game involves exactly 2 teams. Multiplicity: Game `1` <---> `2` Team.",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "28. b.ii",
+            "question_text": "Demonstrate the following <<include>> and <<extend>> in use case diagram with examples.",
+            "marks": 4,
+            "answer": "In Use Case Diagrams, `<<include>>` and `<<extend>>` represent relationships between use cases.\n\n**1. `<<include>>` Relationship:**\n- **Definition:** Represents a mandatory dependency. The base use case absolutely requires the functionality of the included use case to complete its task.\n- **Notation:** A dashed arrow pointing from the base use case TO the included use case, labeled with `<<include>>`.\n- **Example:** In an ATM system, the \"Withdraw Cash\" use case cannot be completed without verifying the user. Thus, \"Withdraw Cash\" `<<include>>` \"Authenticate User\".\n\n**2. `<<extend>>` Relationship:**\n- **Definition:** Represents an optional behavior. The extended use case adds supplementary behavior to the base use case under specific conditions.\n- **Notation:** A dashed arrow pointing FROM the extending use case TO the base use case, labeled with `<<extend>>`.\n- **Example:** While \"Purchasing Items\" online, a user might choose to use a discount code. Applying the code is optional. Thus, \"Apply Promo Code\" `<<extend>>` \"Checkout Items\".",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "29. a.i",
+            "question_text": "Write a C++ program to demonstrate unary increment (++) and unary decrement (--) operator overloading.",
+            "marks": 8,
+            "answer": "```cpp\n#include <iostream>\nusing namespace std;\n\nclass Counter {\nprivate:\n    int value;\npublic:\n    // Constructor\n    Counter(int v = 0) : value(v) {}\n\n    // Overloading prefix increment operator (++)\n    void operator++() {\n        ++value;\n    }\n\n    // Overloading prefix decrement operator (--)\n    void operator--() {\n        --value;\n    }\n\n    // Function to display the value\n    void display() const {\n        cout << \"Current Value: \" << value << endl;\n    }\n};\n\nint main() {\n    Counter c(10);\n    \n    cout << \"Initial state:\\n\";\n    c.display();\n    \n    cout << \"\\nApplying Prefix Increment (++):\\n\";\n    ++c; // Calls operator++()\n    c.display();\n    \n    cout << \"\\nApplying Prefix Decrement (--):\\n\";\n    --c; // Calls operator--()\n    c.display();\n\n    return 0;\n}\n```",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "29. a.ii",
+            "question_text": "Write a C++ program to demonstrate unary minus (-) operator overloading.",
+            "marks": 4,
+            "answer": "```cpp\n#include <iostream>\nusing namespace std;\n\nclass Number {\nprivate:\n    int x, y;\npublic:\n    // Constructor\n    Number(int a = 0, int b = 0) : x(a), y(b) {}\n\n    // Overloading unary minus (-) operator\n    void operator-() {\n        x = -x;\n        y = -y;\n    }\n\n    // Function to display values\n    void display() const {\n        cout << \"x = \" << x << \", y = \" << y << endl;\n    }\n};\n\nint main() {\n    Number num(15, -20);\n    \n    cout << \"Original values:\\n\";\n    num.display();\n    \n    // Applying unary minus\n    -num; \n    \n    cout << \"Values after applying unary minus (-):\\n\";\n    num.display();\n\n    return 0;\n}\n```",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "29. b",
+            "question_text": "Illustrate various messages in UML sequence diagram with example.",
+            "marks": 12,
+            "answer": "A UML Sequence Diagram models the interaction between objects in a sequential, time-ordered manner. Communication between lifelines (objects) occurs via **Messages**. \n\n**Types of Messages in Sequence Diagrams:**\n\n1. **Synchronous Message (Solid line with solid arrowhead):**\n   The sender waits for the receiver to process the message and return a response before continuing. \n   *Example:* A `Customer` object calls `verifyPIN()` on an `ATM` object and waits for verification.\n\n2. **Asynchronous Message (Solid line with stick/open arrowhead):**\n   The sender dispatches the message and immediately continues its execution without waiting for a response.\n   *Example:* A `User` clicks \"Download\" and the `Browser` starts downloading in the background while the user keeps browsing.\n\n3. **Return / Reply Message (Dashed line with stick arrowhead):**\n   Indicates the return of control or data back to the caller from a synchronous message.\n   *Example:* The `ATM` returns `true` (PIN is valid) back to the `Customer`.\n\n4. **Self Message (Line that loops back to the same lifeline):**\n   An object calls a method on itself.\n   *Example:* The `ATM` object calling its own internal `dispenseCash()` method.\n\n5. **Create Message (Dashed or solid line pointing to a new object box):**\n   Used to instantiate a new object during the sequence. Often points directly to the header of a lifeline.\n   *Example:* A `System` object sends a `<<create>>` message to instantiate a new `Transaction` object.\n\n6. **Delete Message (Message ending with an 'X'):**\n   Destroys an object, terminating its lifeline.\n   *Example:* Upon completing the process, `System` destroys the `Transaction` object.",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "30. a",
+            "question_text": "Write a C++ program to demonstrate hierarchical inheritance to get square and cube of a number.",
+            "marks": 12,
+            "answer": "Hierarchical inheritance is a type of inheritance where multiple derived classes inherit from a single base class.\n\n```cpp\n#include <iostream>\nusing namespace std;\n\n// Base Class\nclass Number {\nprotected:\n    int num;\npublic:\n    void setNumber(int n) {\n        num = n;\n    }\n};\n\n// Derived Class 1\nclass Square : public Number {\npublic:\n    int getSquare() {\n        return num * num;\n    }\n};\n\n// Derived Class 2\nclass Cube : public Number {\npublic:\n    int getCube() {\n        return num * num * num;\n    }\n};\n\nint main() {\n    Square sqObj;\n    Cube cbObj;\n    int val;\n\n    cout << \"Enter a number: \";\n    cin >> val;\n\n    // Using Square object\n    sqObj.setNumber(val); // Inherited from Base\n    cout << \"Square of \" << val << \" is: \" << sqObj.getSquare() << endl;\n\n    // Using Cube object\n    cbObj.setNumber(val); // Inherited from Base\n    cout << \"Cube of \" << val << \" is: \" << cbObj.getCube() << endl;\n\n    return 0;\n}\n```\n**Explanation:**\nThe `Number` class acts as the base class containing the data member `num` and a setter method. Both `Square` and `Cube` classes inherit from `Number` independently (hierarchical setup). One computes the square, and the other computes the cube using the inherited `num`.",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "30. b",
+            "question_text": "Explain about UML activity diagram with various notations.",
+            "marks": 12,
+            "answer": "An **Activity Diagram** in UML represents the dynamic behavior of a system. It is essentially a flowchart that shows the flow of control from one activity to another, supporting parallel and conditional behaviors.\n\n**Core Notations of an Activity Diagram:**\n\n1. **Initial Node (Start State):**\n   - Represents the starting point of the workflow.\n   - **Notation:** A solid black filled circle.\n\n2. **Activity / Action State:**\n   - Represents a step, task, or operation being performed in the workflow.\n   - **Notation:** A rectangle with rounded corners containing the name of the activity.\n\n3. **Control Flow (Transitions):**\n   - Shows the sequence of execution. Moves control from one node to the next.\n   - **Notation:** A solid line with an open arrowhead.\n\n4. **Decision Node:**\n   - Used for conditional branching. One incoming flow splits into multiple outgoing flows based on guard conditions.\n   - **Notation:** A diamond shape.\n\n5. **Merge Node:**\n   - Brings together multiple alternate flows created by a Decision Node back into a single flow.\n   - **Notation:** A diamond shape (similar to decision node but with multiple inputs and one output).\n\n6. **Fork Node:**\n   - Used to split a single flow into multiple concurrent (parallel) flows.\n   - **Notation:** A thick black horizontal or vertical line with one incoming flow and multiple outgoing flows.\n\n7. **Join Node:**\n   - Synchronizes multiple concurrent flows. It waits for all incoming flows to finish before proceeding.\n   - **Notation:** A thick black horizontal or vertical line with multiple incoming flows and one outgoing flow.\n\n8. **Final Node (End State):**\n   - Represents the termination of the entire activity diagram.\n   - **Notation:** A solid black circle surrounded by a hollow circle (bullseye).",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "31. a.i",
+            "question_text": "Write a C++ program to demonstrate division by zero exception.",
+            "marks": 8,
+            "answer": "```cpp\n#include <iostream>\nusing namespace std;\n\nint main() {\n    double numerator, denominator, result;\n\n    cout << \"Enter numerator: \";\n    cin >> numerator;\n    cout << \"Enter denominator: \";\n    cin >> denominator;\n\n    try {\n        // Check for division by zero\n        if (denominator == 0) {\n            // Throw an exception (can be string, int, or custom object)\n            throw \"Division by zero error!\";\n        }\n        \n        // If no exception, perform division\n        result = numerator / denominator;\n        cout << \"Result: \" << result << endl;\n    }\n    catch (const char* msg) {\n        // Catch block to handle the thrown exception\n        cout << \"Exception caught: \" << msg << endl;\n    }\n\n    cout << \"Program execution continues...\" << endl;\n\n    return 0;\n}\n```",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "31. a.ii",
+            "question_text": "Illustrate user defined exception with suitable example.",
+            "marks": 4,
+            "answer": "In C++, we can define our own custom exceptions by creating classes that inherit from `std::exception` and overriding the `what()` method.\n\n**Example:**\n```cpp\n#include <iostream>\n#include <exception>\nusing namespace std;\n\n// User-defined exception class\nclass AgeException : public exception {\npublic:\n    // Override what() method\n    const char* what() const throw() {\n        return \"Age must be 18 or older to vote!\";\n    }\n};\n\nint main() {\n    int age;\n    cout << \"Enter your age: \";\n    cin >> age;\n\n    try {\n        if (age < 18) {\n            throw AgeException(); // Throwing custom exception\n        }\n        cout << \"You are eligible to vote.\" << endl;\n    }\n    catch (AgeException& e) {\n        // Catching custom exception\n        cout << \"Caught Custom Exception: \" << e.what() << endl;\n    }\n    return 0;\n}\n```",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "31. b.i",
+            "question_text": "Draw deployment diagram in UML for order management system.",
+            "marks": 6,
+            "answer": "A Deployment Diagram models the physical architecture of the system, showing how software artifacts are mapped onto hardware nodes.\n\n**Textual Representation of Deployment Diagram for Order Management System:**\n\n1. **Node 1: Client Device (Customer PC / Smartphone)**\n   - **Type:** Device\n   - **Component:** Web Browser or Mobile App UI\n   - **Communication:** Connects via HTTPS to the Web Server.\n\n2. **Node 2: Web Server**\n   - **Type:** Execution Environment (e.g., Apache/Tomcat)\n   - **Component:** Order UI / Web Presentation Layer, Order processing API.\n   - **Communication:** Connects via TCP/IP to the Application Server.\n\n3. **Node 3: Application Server**\n   - **Type:** Device\n   - **Component:** Order Management Business Logic, Payment Gateway Integration Module.\n   - **Communication:** Connects to Database Server via JDBC/ODBC and external Payment API.\n\n4. **Node 4: Database Server**\n   - **Type:** Device\n   - **Component:** Relational Database (MySQL/Oracle).\n   - **Artifact:** Orders Table, User Profile Data, Inventory Data.\n\n**Connections (Communication Paths):**\n- Client PC <----(HTTPS)----> Web Server\n- Web Server <----(TCP/IP / RPC)----> Application Server\n- Application Server <----(JDBC/SQL)----> Database Server",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "31. b.ii",
+            "question_text": "Write a C++ program to implement bubble sort using templates in C++.",
+            "marks": 6,
+            "answer": "```cpp\n#include <iostream>\nusing namespace std;\n\n// Template function for Bubble Sort\ntemplate <typename T>\nvoid bubbleSort(T arr[], int n) {\n    for (int i = 0; i < n - 1; i++) {\n        for (int j = 0; j < n - i - 1; j++) {\n            if (arr[j] > arr[j + 1]) {\n                // Swap elements\n                T temp = arr[j];\n                arr[j] = arr[j + 1];\n                arr[j + 1] = temp;\n            }\n        }\n    }\n}\n\n// Utility function to print array\ntemplate <typename T>\nvoid printArray(T arr[], int n) {\n    for (int i = 0; i < n; i++) {\n        cout << arr[i] << \" \";\n    }\n    cout << endl;\n}\n\nint main() {\n    // Testing with integer array\n    int intArr[] = {64, 34, 25, 12, 22, 11, 90};\n    int n1 = sizeof(intArr)/sizeof(intArr[0]);\n    cout << \"Unsorted Integer Array: \";\n    printArray(intArr, n1);\n    bubbleSort(intArr, n1);\n    cout << \"Sorted Integer Array: \";\n    printArray(intArr, n1);\n\n    // Testing with float array\n    float floatArr[] = {4.2, 1.5, 9.8, 3.3};\n    int n2 = sizeof(floatArr)/sizeof(floatArr[0]);\n    cout << \"\\nUnsorted Float Array: \";\n    printArray(floatArr, n2);\n    bubbleSort(floatArr, n2);\n    cout << \"Sorted Float Array: \";\n    printArray(floatArr, n2);\n\n    return 0;\n}\n```",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "32. a.i",
+            "question_text": "Demonstrate the associative container in C++.",
+            "marks": 8,
+            "answer": "Associative containers in the C++ STL implement sorted data structures that can be quickly searched (typically using Red-Black trees). Keys are unique (in `set` and `map`) or repeatable (in `multiset` and `multimap`). \n\n**Demonstration using `std::map`:**\nA `map` stores data in Key-Value pairs where keys are unique.\n\n```cpp\n#include <iostream>\n#include <map>\n#include <string>\nusing namespace std;\n\nint main() {\n    // Create a map (associative container) with string keys and int values\n    map<string, int> studentMarks;\n\n    // Inserting elements\n    studentMarks[\"Alice\"] = 85;\n    studentMarks[\"Bob\"] = 92;\n    studentMarks[\"Charlie\"] = 78;\n\n    // Alternately using insert()\n    studentMarks.insert(make_pair(\"Diana\", 88));\n\n    cout << \"--- Student Marks (Auto-sorted by Key) ---\\n\";\n    // Traversing the map using an iterator\n    for (map<string, int>::iterator it = studentMarks.begin(); it != studentMarks.end(); ++it) {\n        cout << \"Name: \" << it->first << \", Marks: \" << it->second << endl;\n    }\n\n    // Finding an element\n    string searchName = \"Bob\";\n    if (studentMarks.find(searchName) != studentMarks.end()) {\n        cout << \"\\nFound \" << searchName << \"'s marks: \" << studentMarks[searchName] << endl;\n    } else {\n        cout << searchName << \" not found.\" << endl;\n    }\n\n    return 0;\n}\n```",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 5"
+        },
+        {
+            "question_number": "32. a.ii",
+            "question_text": "Write short notes on streams in C++.",
+            "marks": 4,
+            "answer": "In C++, a **stream** is an abstraction representing a flow of data (a sequence of bytes). It acts as an interface between the program and I/O devices (like keyboard, screen, or files).\n\n1. **Input Stream:** Flow of data from a source (like keyboard/file) into the program. Controlled by `istream` class (e.g., `cin`).\n2. **Output Stream:** Flow of data from the program to a destination (like screen/file). Controlled by `ostream` class (e.g., `cout`).\n3. **Hierarchy:** Standard stream classes are derived from `ios` class. `<iostream>` handles console I/O, while `<fstream>` handles file I/O (`ifstream` for reading, `ofstream` for writing).\nStreams heavily utilize the insertion (`<<`) and extraction (`>>`) operators for formatting data easily.",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "32. b.i",
+            "question_text": "Write a C++ program to implement stack in STL.",
+            "marks": 8,
+            "answer": "A stack is a container adapter in C++ STL that operates on the LIFO (Last In First Out) principle. Elements are pushed to the top and popped from the top.\n\n```cpp\n#include <iostream>\n#include <stack>\nusing namespace std;\n\nvoid displayStackStatus(stack<int> s) {\n    cout << \"Current stack size: \" << s.size() << endl;\n    if (s.empty()) {\n        cout << \"Stack is empty.\\n\";\n    } else {\n        cout << \"Top element: \" << s.top() << \"\\n\";\n    }\n}\n\nint main() {\n    stack<int> myStack;\n\n    cout << \"--- Pushing elements into stack ---\\n\";\n    myStack.push(10);\n    myStack.push(20);\n    myStack.push(30);\n    \n    displayStackStatus(myStack);\n\n    cout << \"\\n--- Popping elements from stack ---\\n\";\n    while (!myStack.empty()) {\n        cout << \"Popping: \" << myStack.top() << endl;\n        myStack.pop(); // Removes the top element\n    }\n\n    cout << \"\\n--- Stack Status after popping ---\\n\";\n    displayStackStatus(myStack);\n\n    return 0;\n}\n```",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 5"
+        },
+        {
+            "question_number": "32. b.ii",
+            "question_text": "Brief about iterators in C++.",
+            "marks": 4,
+            "answer": "An **Iterator** in C++ STL is an object (similar to a pointer) that points to an element inside a container (like vector, list, map). Iterators are used to traverse, access, and manipulate elements within these containers seamlessly, regardless of the container's underlying structure.\n\n**Key functions:**\n- `begin()`: Returns an iterator to the first element.\n- `end()`: Returns an iterator pointing just past the last element.\n\n**Categories of Iterators:**\n1. **Input/Output Iterators:** Used for basic single-pass read or write.\n2. **Forward Iterators:** Can read/write and move forward iteratively.\n3. **Bidirectional Iterators:** Can move both forward and backward (e.g., used in `list`, `map`).\n4. **Random Access Iterators:** Can jump directly to any element in constant time (e.g., used in `vector`, `array`).",
+            "answer_source": "General Knowledge",
+            "chapter": "Unit 5"
+        }
+    ]
+}

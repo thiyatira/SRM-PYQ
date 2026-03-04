@@ -1,0 +1,72 @@
+
+`[Date/Year]_[ExamType]_[SetInfo]_[DocumentType].pdf`
+
+---
+
+### Formal Rules and Data Breakdown
+
+Here is a detailed breakdown of each component in the filename structure.
+
+#### 1. `[Date/Year]` (Required)
+This is the first component and indicates the time frame of the examination. It appears in one of three formats:
+
+*   **Format 1: Academic Year (`YYYY-YY`)**
+    *   **Example:** `2021-22`, `2022-23`
+    *   **Data Encoded:** Represents the academic session (e.g., 2021 to 2022) to which the paper belongs. This is common for internal assessments like Cycle Tests.
+
+*   **Format 2: Full Date (`YYYY-MM-DD`)**
+    *   **Example:** `2021-01-12`, `2024-04-01`
+    *   **Data Encoded:** The exact date the examination was conducted.
+
+*   **Format 3: Year and Month (`YYYY-MM`)**
+    *   **Example:** `2019-01`, `2022-12`
+    *   **Data Encoded:** The month and year of the examination period. This format is primarily used for End Term examinations.
+
+#### 2. `[ExamType]` (Required)
+This component identifies the type of assessment.
+
+*   **`ET`**
+    *   **Data Encoded:** Stands for **E**nd **T**erm or End Semester Examination. This is the final, comprehensive exam for the semester.
+    *   **Example:** `2019-01_ET_QP.pdf`
+
+*   **`CT<n>`**
+    *   **Data Encoded:** Stands for **C**ycle **T**est, where `<n>` is a digit (1, 2, 3) representing the specific cycle test number.
+    *   **Example:** `2021-01-12_CT2_Key.pdf`
+
+#### 3. `[SetInfo]` (Optional)
+This component specifies the version or set of the question paper. It is not always present.
+
+*   **Format 1: Alphabetic Set (`Set<Letter>`)**
+    *   **Data Encoded:** A specific set identified by a letter (A, B, C, etc.). This is used when multiple versions of a paper are distributed to prevent cheating.
+    *   **Example:** `2021-05-18_CT1_SetB_QP.pdf`
+
+*   **Format 2: Numeric Set (`Set<Number>`)**
+    *   **Data Encoded:** A specific set identified by a number.
+    *   **Example:** `2022-23_CT1_Set3_QP-Key.pdf`
+
+*   **Format 3: Combined Set and Batch (`Set<Letter>_B<Number>`)**
+    *   **Data Encoded:** A specific set for a particular student batch. `B1` likely means "Batch 1".
+    *   **Example:** `2024-04-01_CT2_SetA_B1_QP.pdf`
+
+#### 4. `[DocumentType]` (Required)
+This final component describes the contents of the PDF file. It can be a single identifier or a compound one.
+
+*   **Primary Types:**
+    *   **`QP`**: Stands for **Q**uestion **P**aper.
+    *   **`Key`**: The official Answer Key for the paper.
+
+*   **Compound & Modified Types:**
+    *   **`QP-Key`**: A single document containing both the Question Paper and its Answer Key.
+    *   **`MCQ-Key`**: The Answer Key specifically for the Multiple Choice Questions section of the exam.
+    *   **`Sample-QP`**: A sample or model question paper, used for practice.
+    *   **`QP<n>`**: A specific version or iteration of a question paper (e.g., `QP2`).
+
+---
+
+### Conclusion: Encoded Data Summary
+
+The naming scheme efficiently encodes the following key pieces of information for each file:
+*   **Time:** When the exam was held (Academic Year, Month, or specific Day).
+*   **Assessment Type:** Whether it was a Cycle Test or an End Term exam.
+*   **Versioning:** The specific set or version of the paper (if applicable).
+*   **Content:** Whether the file is a question paper, an answer key, or a combination.

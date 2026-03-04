@@ -1,0 +1,286 @@
+{
+    "paper_title": "B.Tech/ M.Tech (Integrated) DEGREE EXAMINATION, DECEMBER 2023 - 21CSC101T - OBJECT ORIENTED DESIGN AND PROGRAMMING",
+    "source": "DECEMBER 2023",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "Which of the following is not an OOPS concept?\n(A) Encapsulation\n(B) Polymorphism\n(C) Exception\n(D) Abstraction",
+            "marks": 1,
+            "answer": "(C) Exception. Explanation: While exception handling is supported in many OOP languages, the core OOPS concepts are Encapsulation, Abstraction, Inheritance, and Polymorphism.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "2",
+            "question_text": "Who developed object-oriented programming?\n(A) Adele Goldberg\n(B) Dennis Ritchie\n(C) Alan Kay\n(D) Andrea Ferro",
+            "marks": 1,
+            "answer": "(C) Alan Kay. Explanation: Alan Kay is credited with coining the term \"object-oriented programming\" and developing Smalltalk, one of the first true OOP languages.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "3",
+            "question_text": "________ diagram in UML shows a complete model of a system at a specific time.\n(A) Object\n(B) Class\n(C) Sequence\n(D) Collaboration",
+            "marks": 1,
+            "answer": "(A) Object. Explanation: An object diagram provides a snapshot of the instances in a system and their relationships at a given moment in time.",
+            "answer_source": "General UML Knowledge",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "4",
+            "question_text": "Which features of OOPS derives the class from another class?\n(A) Inheritance\n(B) Data hiding\n(C) Encapsulation\n(D) Polymorphism",
+            "marks": 1,
+            "answer": "(A) Inheritance. Explanation: Inheritance is the mechanism by which one class acquires the properties and behaviors of another class.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "5",
+            "question_text": "How many time a constructor is called in the life-time of an object?\n(A) Twice\n(B) Thrice\n(C) Only once\n(D) Depends on the way of creation of object",
+            "marks": 1,
+            "answer": "(C) Only once. Explanation: A constructor is invoked exactly once for a given object, specifically at the moment of its creation to initialize it.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "6",
+            "question_text": "Sequence diagram is ________ oriented.\n(A) Class\n(B) Time\n(C) Activity\n(D) Relationship",
+            "marks": 1,
+            "answer": "(B) Time. Explanation: Sequence diagrams emphasize the time-ordering of messages sent between objects.",
+            "answer_source": "General UML Knowledge",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "7",
+            "question_text": "When a destructor is called?\n(A) After the end of object life\n(B) Anytime in between objects lifespan\n(C) At end of whole program\n(D) Just before the end of the object life",
+            "marks": 1,
+            "answer": "(D) Just before the end of the object life. Explanation: A destructor is called automatically right before the memory allocated to the object is reclaimed.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "8",
+            "question_text": "How many parameters does a default constructor require?\n(A) 1\n(B) 2\n(C) 0\n(D) 3",
+            "marks": 1,
+            "answer": "(C) 0. Explanation: A default constructor is one that can be called with no arguments.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "9",
+            "question_text": "Behaviour diagram does not include ________.\n(A) Use case diagrams\n(B) State diagrams\n(C) Activity diagrams\n(D) Component diagrams",
+            "marks": 1,
+            "answer": "(D) Component diagrams. Explanation: Component diagrams are structural diagrams, not behavioral diagrams.",
+            "answer_source": "General UML Knowledge",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "10",
+            "question_text": "Which members cannot be accessed in derived class in multiple inheritance?\n(A) Private members of base\n(B) Public members of base\n(C) Protected members of base\n(D) Constructor of base",
+            "marks": 1,
+            "answer": "(A) Private members of base. Explanation: Private members of a base class are never directly accessible from a derived class, regardless of the inheritance type.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "11",
+            "question_text": "________ keyword is used before a function in a base class which is to be overridden in derived class?\n(A) Void\n(B) Static\n(C) Virtual\n(D) Friend",
+            "marks": 1,
+            "answer": "(C) Virtual. Explanation: The `virtual` keyword tells the compiler to support dynamic binding, allowing the derived class to override the method.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "12",
+            "question_text": "In an activity diagram, transitions belong to ________.\n(A) Trigger oriented transitions\n(B) Self-transitions\n(C) Internal transitions\n(D) Completion transitions",
+            "marks": 1,
+            "answer": "(D) Completion transitions. Explanation: In activity diagrams, standard flows from one action to the next occur upon completion of the preceding action.",
+            "answer_source": "General UML Knowledge",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "13",
+            "question_text": "Function template can accept\n(A) Any type of parameters\n(B) Only one parameter\n(C) Only parameters of the basic type\n(D) Only parameters of the derived type",
+            "marks": 1,
+            "answer": "(A) Any type of parameters. Explanation: Templates allow functions to operate with generic types, meaning they can accept parameters of built-in or user-defined types.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "14",
+            "question_text": "Which among the following are not the valid notations for package and component diagrams?\n(A) Notes\n(B) Box\n(C) Nodes\n(D) Extension mechanism",
+            "marks": 1,
+            "answer": "(C) Nodes. Explanation: Nodes are specific to Deployment Diagrams, representing hardware resources. They are not standard notations for package or component diagrams.",
+            "answer_source": "General UML Knowledge",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "15",
+            "question_text": "Which of the following is used for generic programming?\n(A) Virtual functions\n(B) Modules\n(C) Templates\n(D) Abstract class",
+            "marks": 1,
+            "answer": "(C) Templates. Explanation: Templates are the foundation of generic programming in C++, allowing code to work with any data type.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "16",
+            "question_text": "________ an ability to automatically resize when appending elements.\n(A) Array\n(B) Vector\n(C) Dynamic array\n(D) Container",
+            "marks": 1,
+            "answer": "(B) Vector. Explanation: `std::vector` in C++ STL manages a dynamic array internally and automatically resizes itself when new elements are appended.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 5"
+        },
+        {
+            "question_number": "17",
+            "question_text": "State the return type of find method.\n(A) Iterator\n(B) Integer\n(C) Boolean\n(D) Float",
+            "marks": 1,
+            "answer": "(A) Iterator. Explanation: The `std::find` algorithm returns an iterator pointing to the first occurrence of the element, or the end iterator if not found.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 5"
+        },
+        {
+            "question_number": "18",
+            "question_text": "How many instance are allowed by map container, while inserting an element?\n(A) 2\n(B) 1\n(C) 3\n(D) Multiple",
+            "marks": 1,
+            "answer": "(B) 1. Explanation: A `std::map` only allows unique keys. If you try to insert an element with a key that already exists, the insertion fails.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 5"
+        },
+        {
+            "question_number": "19",
+            "question_text": "Which container can have the same keys?\n(A) Map\n(B) Multimap\n(C) Unordered map\n(D) Set",
+            "marks": 1,
+            "answer": "(B) Multimap. Explanation: `std::multimap` is an associative container that allows multiple elements to have equivalent keys.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 5"
+        },
+        {
+            "question_number": "20",
+            "question_text": "What are the containers?\n(A) Containers store objects and data\n(B) Containers stores all the algorithms\n(C) Containers contain overloaded functions\n(D) Containers contain set of iterators",
+            "marks": 1,
+            "answer": "(A) Containers store objects and data. Explanation: In STL, containers are data structures that manage collections of objects.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 5"
+        },
+        {
+            "question_number": "21. a. i.",
+            "question_text": "List and discuss the characteristics of object oriented programming language.",
+            "marks": 4,
+            "answer": "1. **Encapsulation:** The bundling of data and the methods that operate on that data into a single unit (class), hiding the internal state from the outside.\n2. **Abstraction:** Displaying only the essential information to the user and hiding the background details or implementation complexities.\n3. **Inheritance:** A mechanism where a new class (derived class) is created from an existing class (base class), inheriting its attributes and behaviors, promoting code reusability.\n4. **Polymorphism:** The ability of different objects to respond to the same function call in their own specific way (e.g., method overloading and overriding).",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "21. a. ii.",
+            "question_text": "Discuss the different types of access specifier with suitable examples.",
+            "marks": 4,
+            "answer": "1. **Private:** Members are accessible only within the class itself. It enforces data hiding. \n   *Example:* `class A { private: int x; };`\n2. **Protected:** Members are accessible within the class and its derived classes, but not from outside. \n   *Example:* `class A { protected: int y; }; class B : public A { void func() { y = 10; } };`\n3. **Public:** Members are accessible from anywhere the object is visible.\n   *Example:* `class A { public: void display() {} }; int main() { A obj; obj.display(); }`",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "21. b. i.",
+            "question_text": "Distinguish between aggregation and composition with examples.",
+            "marks": 4,
+            "answer": "**Aggregation:** A \"has-a\" relationship where the child can exist independently of the parent. It is a weak association.\n*Example:* A `Department` has `Teachers`. If the `Department` closes, the `Teachers` still exist.\n\n**Composition:** A strict \"has-a\" relationship where the child's lifecycle is strictly tied to the parent's. It is a strong association.\n*Example:* A `House` has `Rooms`. If the `House` is destroyed, the `Rooms` are also destroyed.",
+            "answer_source": "General UML Knowledge",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "21. b. ii.",
+            "question_text": "Create a class named triangle with two data members - 'base' and 'height' and a member function 'area' to calculate the area of the triangle.",
+            "marks": 4,
+            "answer": "```cpp\n#include <iostream>\nusing namespace std;\n\nclass Triangle {\nprivate:\n    float base;\n    float height;\n\npublic:\n    void setDimensions(float b, float h) {\n        base = b;\n        height = h;\n    }\n\n    float area() {\n        return 0.5 * base * height;\n    }\n};\n\nint main() {\n    Triangle t;\n    t.setDimensions(10.0, 5.0);\n    cout << \"Area of triangle is: \" << t.area() << endl;\n    return 0;\n}\n```",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "22. a.",
+            "question_text": "Elaborate the sequence diagrams on how a user gets a passport from the passport office.",
+            "marks": 8,
+            "answer": "**Sequence Diagram for Getting a Passport:**\n\n**Actors/Objects:** `User`, `PassportPortal_UI`, `Passport_System`, `PoliceDept`.\n\n**Flow of Events (Messages):**\n1.  `User -> PassportPortal_UI`: `submitApplication(details, docs)`\n2.  `PassportPortal_UI -> Passport_System`: `verifyDetails()`\n3.  `Passport_System -> PassportPortal_UI`: `scheduleAppointment()`\n4.  `PassportPortal_UI -> User`: `notifyAppointment(date, time)`\n5.  `User -> Passport_System`: `attendInterview(biometrics)`\n6.  `Passport_System -> PoliceDept`: `initiateVerification(details)`\n7.  `PoliceDept -> User`: `conductVerification()`\n8.  `PoliceDept -> Passport_System`: `sendVerificationReport(status)`\n9.  `Passport_System -> Passport_System`: `printPassport()` [Self-message if status=Clear]\n10. `Passport_System -> User`: `dispatchPassport()`\n\n*(In the exam, this flow should be drawn with vertical lifelines and horizontal message arrows in chronological order down the page.)*",
+            "answer_source": "General UML Knowledge",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "22. b.",
+            "question_text": "A state land registration authority is keeping the track of the native addresses and total area of the flat people across the state. Since total population is high and the area to be monitored is huge, the government decided to develop software as per the details. House name, number, city, state, width, height, number of rooms are the data members and print the details of the house using constructor concepts such as default constructor and parameterized constructor.",
+            "marks": 8,
+            "answer": "```cpp\n#include <iostream>\n#include <string>\nusing namespace std;\n\nclass House {\nprivate:\n    string houseName, city, state;\n    int houseNumber, numberOfRooms;\n    float width, height, area;\n\npublic:\n    // Default Constructor\n    House() {\n        houseName = \"Unknown\"; city = \"Unknown\"; state = \"Unknown\";\n        houseNumber = 0; numberOfRooms = 0; width = 0.0; height = 0.0; area = 0.0;\n    }\n\n    // Parameterized Constructor\n    House(string hName, int hNum, string c, string s, float w, float h, int rooms) {\n        houseName = hName; houseNumber = hNum; city = c; state = s;\n        width = w; height = h; numberOfRooms = rooms;\n        area = width * height;\n    }\n\n    void displayDetails() {\n        cout << \"House: \" << houseName << \" (#\" << houseNumber << \")\\n\";\n        cout << \"Location: \" << city << \", \" << state << \"\\n\";\n        cout << \"Dimensions: \" << width << \"x\" << height << \" | Area: \" << area << \" sq units\\n\";\n        cout << \"Rooms: \" << numberOfRooms << \"\\n-----------------------\\n\";\n    }\n};\n\nint main() {\n    House h1; // Calls default constructor\n    cout << \"Default Details:\\n\";\n    h1.displayDetails();\n\n    House h2(\"Rose Villa\", 101, \"Chennai\", \"TN\", 30.5, 40.0, 4); // Calls parameterized constructor\n    cout << \"Parameterized Details:\\n\";\n    h2.displayDetails();\n\n    return 0;\n}\n```",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "23. a.",
+            "question_text": "Illustrate a C++ program to create a multilevel inheritance of person, employee and teacher classes by explaining differences between public, private and protected inheritances with public, private and protected data.",
+            "marks": 8,
+            "answer": "```cpp\n#include <iostream>\n#include <string>\nusing namespace std;\n\n// Base Class\nclass Person {\nprivate: \n    string aadhar; // Not inherited\nprotected:\n    int age;       // Inherited, behaves as protected\npublic:\n    string name;   // Inherited, behaves as public in 'public' inheritance\n    void setPersonDetails(string n, int a, string ad) { name = n; age = a; aadhar = ad; }\n};\n\n// Level 1 Derived Class\nclass Employee : public Person { // Public Inheritance: public->public, protected->protected\nprotected:\n    int empId;\npublic:\n    void setEmployeeDetails(int id) { empId = id; }\n};\n\n// Level 2 Derived Class\nclass Teacher : protected Employee { // Protected Inheritance: public & protected -> protected\nprivate:\n    string subject;\npublic:\n    void setTeacherDetails(string sub) { subject = sub; }\n    void display() {\n        // Can access inherited protected & public members\n        cout << \"Name: \" << name << \" | Age: \" << age \n             << \" | EmpID: \" << empId << \" | Subject: \" << subject << endl;\n        // cout << aadhar; // ERROR: Private member of Person\n    }\n    // Helper since name, age, empId are now protected in Teacher\n    void setup(string n, int a, string ad, int id, string sub) {\n        setPersonDetails(n, a, ad); \n        setEmployeeDetails(id);\n        setTeacherDetails(sub);\n    }\n};\n\nint main() {\n    Teacher t;\n    t.setup(\"Alice\", 35, \"1234\", 1001, \"Maths\");\n    t.display();\n    // t.name = \"Bob\"; // ERROR: 'name' is protected in Teacher due to protected inheritance\n    return 0;\n}\n```\n**Explanation:**\n- **Public Inheritance:** Base public -> Derived public; Base protected -> Derived protected.\n- **Protected Inheritance:** Base public & protected -> Derived protected.\n- **Private Inheritance:** Base public & protected -> Derived private.\n- **Data:** Private data is never accessible in derived classes. Protected is accessible in derived classes but not outside. Public is accessible everywhere.",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "23. b. i.",
+            "question_text": "Demonstrate function overriding with an example.",
+            "marks": 4,
+            "answer": "Function overriding occurs when a derived class provides a specific implementation for a function that is already defined in its base class.\n```cpp\n#include <iostream>\nusing namespace std;\n\nclass Animal {\npublic:\n    virtual void sound() { cout << \"Animal makes a sound\" << endl; }\n};\n\nclass Dog : public Animal {\npublic:\n    // Overriding the base class method\n    void sound() override { cout << \"Dog barks\" << endl; }\n};\n\nint main() {\n    Animal* a = new Dog();\n    a->sound(); // Output: Dog barks (Runtime polymorphism)\n    delete a;\n    return 0;\n}\n```",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "23. b. ii.",
+            "question_text": "Construct activity diagram for the given scenario using fork and join operation with component explanation.\n(1) A customer can access menus of restaurant\n(2) To be able to login into the account\n(3) Select items to order\n(4) Make payment for order",
+            "marks": 4,
+            "answer": "**Activity Diagram Structure:**\n1.  **Initial Node (Solid circle):** Starts the workflow.\n2.  **Fork Node (Heavy horizontal bar):** Splits the flow into two concurrent activities. \n    - Activity A: Access Menus of restaurant\n    - Activity B: Login into the account\n3.  **Join Node (Heavy horizontal bar):** Waits for both \"Access Menus\" and \"Login\" to complete before proceeding.\n4.  **Action Node:** \"Select items to order\" (follows the Join).\n5.  **Action Node:** \"Make payment for order\".\n6.  **Final Node (Bullseye):** Ends the workflow.\n\n*Explanation:* The customer can simultaneously browse menus while the system processes their login (Fork). They can only proceed to select items once both viewing the menu and logging in are complete (Join).",
+            "answer_source": "General UML Knowledge",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "24. a.",
+            "question_text": "Write a program that allows the user to add the elements in two vectors. Swap the vector elements and display using STL vector.",
+            "marks": 8,
+            "answer": "```cpp\n#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    vector<int> v1, v2;\n    int n, elem;\n\n    cout << \"Enter number of elements for vectors: \";\n    cin >> n;\n\n    cout << \"Enter elements for Vector 1:\\n\";\n    for (int i = 0; i < n; i++) {\n        cin >> elem;\n        v1.push_back(elem);\n    }\n\n    cout << \"Enter elements for Vector 2:\\n\";\n    for (int i = 0; i < n; i++) {\n        cin >> elem;\n        v2.push_back(elem);\n    }\n\n    cout << \"\\nBefore Swapping:\\nVector 1: \";\n    for (int x : v1) cout << x << \" \";\n    cout << \"\\nVector 2: \";\n    for (int x : v2) cout << x << \" \";\n\n    // STL function to swap vectors\n    v1.swap(v2);\n\n    cout << \"\\n\\nAfter Swapping:\\nVector 1: \";\n    for (int x : v1) cout << x << \" \";\n    cout << \"\\nVector 2: \";\n    for (int x : v2) cout << x << \" \";\n    cout << endl;\n\n    return 0;\n}\n```",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "24. b.",
+            "question_text": "Write a C++ program containing a possible exception using a try block to throw it and a catch block to handle it properly.",
+            "marks": 8,
+            "answer": "```cpp\n#include <iostream>\nusing namespace std;\n\nint main() {\n    double numerator, denominator, result;\n\n    cout << \"Enter numerator: \";\n    cin >> numerator;\n    cout << \"Enter denominator: \";\n    cin >> denominator;\n\n    try {\n        // Condition that causes an exception\n        if (denominator == 0) {\n            throw \"Division by zero error!\"; // Throwing a string literal exception\n        }\n        \n        result = numerator / denominator;\n        cout << \"Result: \" << result << endl;\n\n    } catch (const char* msg) { // Catching the thrown exception\n        cerr << \"Exception Caught: \" << msg << endl;\n    } catch (...) { // Default catch block for any other unknown exceptions\n        cerr << \"An unexpected error occurred.\" << endl;\n    }\n\n    cout << \"Program continues normally...\" << endl;\n    return 0;\n}\n```",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "25. a.",
+            "question_text": "Write a program for sequence container list (array of integer data type) and implement the following methods. Create user defined function print list ( ) and display output.\n(i) push_front ( )\n(ii) insert ( )\n(iii) sort ( )\n(iv) pop_back ( )",
+            "marks": 8,
+            "answer": "```cpp\n#include <iostream>\n#include <list>\nusing namespace std;\n\n// User defined function to print list\nvoid print_list(const list<int>& lst) {\n    for (int val : lst) {\n        cout << val << \" \";\n    }\n    cout << endl;\n}\n\nint main() {\n    list<int> myList = {20, 40, 30};\n    cout << \"Initial List: \"; print_list(myList);\n\n    // (i) push_front()\n    myList.push_front(10);\n    cout << \"After push_front(10): \"; print_list(myList);\n\n    // (ii) insert() - Insert 25 after the first element\n    auto it = myList.begin();\n    advance(it, 1); \n    myList.insert(it, 25);\n    cout << \"After insert(25): \"; print_list(myList);\n\n    // (iii) sort()\n    myList.sort();\n    cout << \"After sort(): \"; print_list(myList);\n\n    // (iv) pop_back()\n    myList.pop_back();\n    cout << \"After pop_back(): \"; print_list(myList);\n\n    return 0;\n}\n```",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 5"
+        },
+        {
+            "question_number": "25. b.",
+            "question_text": "Explain about for_each ( ), transform ( ), merge ( ), search ( ) algorithms with suitable examples.",
+            "marks": 8,
+            "answer": "1.  **`for_each()`:** Applies a given function to every element in a range.\n    ```cpp\n    vector<int> v = {1, 2, 3};\n    for_each(v.begin(), v.end(), [](int &n){ n *= 2; }); // Modifies v to {2, 4, 6}\n    ```\n2.  **`transform()`:** Applies a function to elements of one (or two) ranges and stores the result in a destination range.\n    ```cpp\n    vector<int> v1 = {1, 2, 3}, v2(3);\n    transform(v1.begin(), v1.end(), v2.begin(), [](int n){ return n+1; }); // v2 becomes {2, 3, 4}\n    ```\n3.  **`merge()`:** Merges two sorted ranges into a single sorted destination range.\n    ```cpp\n    vector<int> a = {1, 3}, b = {2, 4}, result(4);\n    merge(a.begin(), a.end(), b.begin(), b.end(), result.begin()); // result is {1, 2, 3, 4}\n    ```\n4.  **`search()`:** Finds the first occurrence of a sub-range within another main range.\n    ```cpp\n    vector<int> main = {10, 20, 30, 40}, sub = {20, 30};\n    auto it = search(main.begin(), main.end(), sub.begin(), sub.end());\n    // 'it' points to the element '20' in 'main'\n    ```",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 5"
+        },
+        {
+            "question_number": "26",
+            "question_text": "A university conducts examinations and the results are announced. Prepare a report for the following:\n(i) Print the marks in the register number order, semester wise for each department\n(ii) Print the arrear list semester wise\n(iii) Prepare a rank list for each department\nIdentity the problem statement and design the component for each sequence. Draw UML component diagrams, and explain all notations in component diagram.",
+            "marks": 15,
+            "answer": "**Problem Statement:** The university needs an automated Examination Result Management System to process student marks and generate specific reports: ordered mark sheets, arrear lists, and department rank lists.\n\n**Component Design & Sequences:**\n1.  **Marks Report Generator:** Interfaces with the `Student_DB` and `Marks_DB`. It queries data, sorts by department -> semester -> register number, and formats the output.\n2.  **Arrear List Generator:** Queries the `Marks_DB` for records where marks < passing criteria. Groups the output by semester.\n3.  **Rank List Generator:** Aggregates total marks per student per department, sorts in descending order, and generates the rank list.\n\n**UML Component Diagram Notations:**\n-   **Component:** Represented as a rectangle with a small icon (two rectangles on its left side) in the top right corner. It represents a modular part of the system (e.g., `ResultProcessor`).\n-   **Provided Interface (Lollipop):** A circle connected by a solid line to the component. It defines the services the component offers (e.g., `IGenerateReport`).\n-   **Required Interface (Socket):** A half-circle connected by a solid line. It defines the services the component needs from others (e.g., `IDatabaseQuery`).\n-   **Dependency:** A dashed arrow indicating that one component requires another to function.\n\n*(Diagram Structure for Exam: Draw components like `UI_Dashboard`, `Report_Engine` (containing the generators), and `Database_Manager`. `UI_Dashboard` depends on `Report_Engine` via interface `IReportReq`. `Report_Engine` depends on `Database_Manager` via interface `IDataAccess`.)*",
+            "answer_source": "General UML Knowledge",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "27",
+            "question_text": "Ram and Shiva are working as accountants in a bank. They need to know all the arithmetic operations to verify the accounts. Since they are beginner in mathematics, they found difficulty in doing such arithmetic operations. Help them to check accounts by applying arithmetic operations including add, substract, multiply and divide using class template.",
+            "marks": 15,
+            "answer": "```cpp\n#include <iostream>\nusing namespace std;\n\n// Class Template for Account Verification operations\ntemplate <class T>\nclass AccountChecker {\nprivate:\n    T value1;\n    T value2;\n\npublic:\n    // Constructor to initialize values\n    AccountChecker(T v1, T v2) {\n        value1 = v1;\n        value2 = v2;\n    }\n\n    T add() {\n        return value1 + value2;\n    }\n\n    T subtract() {\n        return value1 - value2;\n    }\n\n    T multiply() {\n        return value1 * value2;\n    }\n\n    T divide() {\n        if (value2 != 0) {\n            return value1 / value2;\n        } else {\n            cout << \"Error: Division by Zero! \";\n            return 0;\n        }\n    }\n\n    void displayResults() {\n        cout << \"Values: \" << value1 << \" and \" << value2 << endl;\n        cout << \"Addition (Credit/Deposit): \" << add() << endl;\n        cout << \"Subtraction (Debit/Withdrawal): \" << subtract() << endl;\n        cout << \"Multiplication (Interest Calc): \" << multiply() << endl;\n        cout << \"Division (Split amounts): \" << divide() << endl;\n        cout << \"-----------------------------------\\n\";\n    }\n};\n\nint main() {\n    cout << \"--- Bank Account Verification Tool ---\\n\\n\";\n\n    // Using integers for basic amounts\n    cout << \"Checking basic integer amounts:\\n\";\n    AccountChecker<int> intCalc(5000, 250);\n    intCalc.displayResults();\n\n    // Using floats for amounts with decimals/paise\n    cout << \"Checking precise float amounts:\\n\";\n    AccountChecker<float> floatCalc(10500.50f, 150.25f);\n    floatCalc.displayResults();\n\n    return 0;\n}\n```",
+            "answer_source": "General C++ Knowledge",
+            "chapter": "Unit 4"
+        }
+    ]
+}
