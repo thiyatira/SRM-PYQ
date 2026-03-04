@@ -135,6 +135,7 @@ const SUBJECT_DIRS: Record<string, string> = {
   FRENCH: "French",
   ICB: "ICB",
   CHEMISTRY: "Chemistry",
+  OOPS: "OOPS",
 };
 
 interface Question {
@@ -193,7 +194,7 @@ const useDarkMode = () => {
 };
 
 const Home: React.FC = () => {
-  const [subject, setSubject] = useState("PPS");
+  const [subject, setSubject] = useState("OOPS");
   const [questions, setQuestions] = useState<Question[]>([]);
   const [papers, setPapers] = useState<string[]>([]);
   const [units, setUnits] = useState<string[]>([]);
