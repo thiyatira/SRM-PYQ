@@ -211,6 +211,72 @@ const PyqSection: React.FC = () => {
   const [showAllAnswers, setShowAllAnswers] = useState(false);
   const [loading, setLoading] = useState(false);
 
+  function handlePrint() {
+    const subjectInfo = SUBJECTS.find((s) => s.code === subject);
+    const katexCssUrl = "https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css";
+
+    // Build sorted units from filteredQuestions
+    const pUnitMap: Record<string, Question[]> = {};
+    for (const q of filteredQuestions) {
+      const unitKey = extractUnit(q.chapter);
+      if (!pUnitMap[unitKey]) pUnitMap[unitKey] = [];
+      pUnitMap[unitKey].push(q);
+    }
+    const pSortedUnits = Object.keys(pUnitMap).sort((a, b) => {
+      const an = parseInt(a.replace(/\D/g, "")) || 99;
+      const bn = parseInt(b.replace(/\D/g, "")) || 99;
+      return an - bn;
+    });
+
+    let qNum = 1;
+    let body = "";
+    for (const unit of pSortedUnits) {
+      body += `<h2 class="unit-heading">${unit}</h2>`;
+      for (const q of pUnitMap[unit]) {
+        body += `
+          <div class="question">
+            <div class="q-header">Q${qNum++} <span class="marks">(${q.marks || ""} mark${q.marks === 1 ? "" : "s"})</span></div>
+            <div class="q-text">${markdownToHtml(q.question_text)}</div>
+            <div class="answer"><strong>Answer:</strong> ${markdownToHtml(q.answer)}</div>
+            <div class="source">Source: ${q.source || ""}</div>
+          </div>`;
+      }
+    }
+
+    const html = `<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>${subjectInfo?.title ?? "PYQs"}</title>
+  <link rel="stylesheet" href="${katexCssUrl}">
+  <style>
+    body { font-family: Georgia, serif; margin: 20mm; color: #000; font-size: 11pt; }
+    h1 { text-align: center; font-size: 16pt; margin-bottom: 4px; }
+    h2.subtitle { text-align: center; font-size: 12pt; font-weight: normal; margin-bottom: 20px; }
+    h2.unit-heading { font-size: 14pt; border-bottom: 1px solid #333; margin-top: 24px; padding-bottom: 4px; }
+    .question { margin-bottom: 20px; page-break-inside: avoid; }
+    .q-header { font-weight: bold; font-size: 12pt; }
+    .marks { font-weight: normal; font-size: 10pt; }
+    .q-text { margin: 4px 0 6px 0; }
+    .answer { background: #f0f7f0; border-left: 3px solid #4a8; padding: 6px 10px; margin-top: 6px; font-size: 10pt; }
+    .source { font-size: 9pt; color: #555; margin-top: 4px; }
+    @media print { body { margin: 15mm; } }
+  </style>
+</head>
+<body>
+  <h1>${subjectInfo?.name ?? "Questions"}</h1>
+  <h2 class="subtitle">${subjectInfo?.title ?? ""}</h2>
+  ${body}
+</body>
+</html>`;
+
+    const win = window.open("", "_blank");
+    if (!win) return;
+    win.document.write(html);
+    win.document.close();
+    win.onload = () => win.print();
+  }
+
   useEffect(() => {
     async function load() {
       setLoading(true);
@@ -371,6 +437,13 @@ const PyqSection: React.FC = () => {
           onClick={() => setShowAllAnswers((v) => !v)}
         >
           {showAllAnswers ? "Hide All Answers" : "Show All Answers"}
+        </button>
+        <button
+          type="button"
+          className="rounded px-4 py-2 font-medium border border-blue-400 bg-blue-50 text-blue-900 dark:bg-blue-900/40 dark:text-blue-200 dark:border-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800/50 transition-colors duration-200"
+          onClick={handlePrint}
+        >
+          🖨️ Print / Save PDF
         </button>
       </div>
 
