@@ -4,21 +4,26 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:all": "concurrently -n web,api -c cyan,magenta \"npm run dev\" \"npm run dev --prefix backend\"",
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
+    "katex": "^0.16.45",
     "next": "^15.5.7",
     "react": "^19.1.2",
     "react-dom": "^19.1.2"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@types/katex": "^0.16.8",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "autoprefixer": "^10.4.21",
+    "concurrently": "^9.1.2",
     "eslint": "^9",
     "eslint-config-next": "^15.5.7",
     "postcss": "^8.5.6",
