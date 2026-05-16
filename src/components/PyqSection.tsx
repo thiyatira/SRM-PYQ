@@ -6,10 +6,13 @@ import katex from "katex";
 const SUBJECTS = [
   { code: "PPS", name: "Programming for Problem Solving", title: "21CSS101J: Programming for Problem Solving" },
   { code: "POE", name: "Philosophy of Engineering", title: "21GNH101J: Philosophy of Engineering" },
+  { code: "COMMENG", name: "Communicative English", title: "21LEH101T: Communicative English" },
   { code: "FRENCH", name: "French", title: "21LEH103T: French" },
   { code: "ICB", name: "Introduction to Computational Biology", title: "21BTB102T: Introduction to Computational Biology" },
   { code: "CHEMISTRY", name: "Chemistry", title: "18CYB101J: Chemistry" },
+  { code: "EEE", name: "Electrical And Electronics Engineering", title: "21EES101T: Electrical And Electronics Engineering" },
   { code: "OOPS", name: "Object Oriented Design and Programming", title: "21CSC101T: Object Oriented Design and Programming" },
+  { code: "OODP", name: "Object Oriented Design and Programming", title: "21CSC101T: Object Oriented Design and Programming" },
   { code: "ADVANCEDCALC", name: "Advanced Calculus and Complex Analysis", title: "21MAB102T: Advanced Calculus and Complex Analysis" },
 ];
 
@@ -41,6 +44,9 @@ const SUBJECT_FILES: Record<string, string[]> = {
     "2025-03-10_CT2_SetB_QP-Key.json",
     "2025-04-23_CT3_SetB_QP-Key.json",
     "2025-05_ET_QP.json",
+  ],
+  COMMENG: [
+    "all_questions.json",
   ],
   PPS: [
     "2019-01_ET_QP.json",
@@ -119,6 +125,9 @@ const SUBJECT_FILES: Record<string, string[]> = {
     "2024_Jan_ET.json",
     "2025_May_ET.json",
   ],
+  EEE: [
+    "all_questions.json",
+  ],
   OOPS: [
     "2019_Nov.json",
     "2022_May.json",
@@ -128,6 +137,9 @@ const SUBJECT_FILES: Record<string, string[]> = {
     "2024_May.json",
     "2025_July.json",
   ],
+  OODP: [
+    "all_questions.json",
+  ],
   ADVANCEDCALC: [
     "all_questions.json",
   ],
@@ -136,10 +148,13 @@ const SUBJECT_FILES: Record<string, string[]> = {
 const SUBJECT_DIRS: Record<string, string> = {
   POE: "POE",
   PPS: "PPS",
+  COMMENG: "CommunicativeEnglish",
   FRENCH: "French",
   ICB: "ICB",
   CHEMISTRY: "Chemistry",
+  EEE: "ElectricalAndElectronicsEngineering",
   OOPS: "OOPS",
+  OODP: "OODP",
   ADVANCEDCALC: "AdvancedCalculus",
 };
 
@@ -201,7 +216,7 @@ function markdownToHtml(md?: string) {
 }
 
 const PyqSection: React.FC = () => {
-  const [subject, setSubject] = useState("ADVANCEDCALC");
+  const [subject, setSubject] = useState("COMMENG");
   const [questions, setQuestions] = useState<Question[]>([]);
   const [papers, setPapers] = useState<string[]>([]);
   const [units, setUnits] = useState<string[]>([]);
