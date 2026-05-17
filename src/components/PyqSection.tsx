@@ -11,6 +11,7 @@ const SUBJECTS = [
   { code: "ICB", name: "Introduction to Computational Biology", title: "21BTB102T: Introduction to Computational Biology" },
   { code: "CHEMISTRY", name: "Chemistry", title: "18CYB101J: Chemistry" },
   { code: "EEE", name: "Electrical And Electronics Engineering", title: "21EES101T: Electrical And Electronics Engineering" },
+  { code: "SPCM", name: "Semiconductor Physics and Computational Methods", title: "21PYB102J: Semiconductor Physics and Computational Methods" },
   { code: "OOPS", name: "Object Oriented Design and Programming", title: "21CSC101T: Object Oriented Design and Programming" },
   { code: "OODP", name: "Object Oriented Design and Programming", title: "21CSC101T: Object Oriented Design and Programming" },
   { code: "ADVANCEDCALC", name: "Advanced Calculus and Complex Analysis", title: "21MAB102T: Advanced Calculus and Complex Analysis" },
@@ -143,6 +144,9 @@ const SUBJECT_FILES: Record<string, string[]> = {
   ADVANCEDCALC: [
     "all_questions.json",
   ],
+  SPCM: [
+    "all_questions.json",
+  ],
 };
 
 const SUBJECT_DIRS: Record<string, string> = {
@@ -156,6 +160,7 @@ const SUBJECT_DIRS: Record<string, string> = {
   OOPS: "OOPS",
   OODP: "OODP",
   ADVANCEDCALC: "AdvancedCalculus",
+  SPCM: "SemiconductorPhysicsAndComputationalMethods",
 };
 
 interface Question {
@@ -216,12 +221,14 @@ function markdownToHtml(md?: string) {
 }
 
 const PyqSection: React.FC = () => {
-  const [subject, setSubject] = useState("COMMENG");
+  const [subject, setSubject] = useState("SPCM");
   const [questions, setQuestions] = useState<Question[]>([]);
   const [papers, setPapers] = useState<string[]>([]);
   const [units, setUnits] = useState<string[]>([]);
-  const [filterPaper, setFilterPaper] = useState("all");
-  const [filterUnit, setFilterUnit] = useState("all");
+  const [filterPapers, setFilterPapers] = useState<Set<string>>(new Set());
+  const [filterUnits, setFilterUnits] = useState<Set<string>>(new Set());
+  const [paperDropdownOpen, setPaperDropdownOpen] = useState(false);
+  const [unitDropdownOpen, setUnitDropdownOpen] = useState(false);
   const [filterMinMarks, setFilterMinMarks] = useState(0);
   const [showAllAnswers, setShowAllAnswers] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -348,8 +355,8 @@ const PyqSection: React.FC = () => {
   }, [subject]);
 
   const filteredQuestions = questions.filter((q) => {
-    const paperMatch = !filterPaper || filterPaper === "all" || (q.source && q.source === filterPaper);
-    const unitMatch = !filterUnit || filterUnit === "all" || extractUnit(q.chapter) === filterUnit;
+    const paperMatch = filterPapers.size === 0 || filterPapers.has(q.source || "");
+    const unitMatch = filterUnits.size === 0 || filterUnits.has(extractUnit(q.chapter));
     const marksMatch = (q.marks || 0) >= filterMinMarks;
     return paperMatch && unitMatch && marksMatch;
   });
@@ -389,9 +396,11 @@ const PyqSection: React.FC = () => {
             value={subject}
             onChange={(e) => {
               setSubject(e.target.value);
-              setFilterPaper("all");
-              setFilterUnit("all");
+              setFilterPapers(new Set());
+              setFilterUnits(new Set());
               setFilterMinMarks(0);
+              setPaperDropdownOpen(false);
+              setUnitDropdownOpen(false);
             }}
             className="rounded bg-white dark:bg-neutral-700 text-gray-900 dark:text-white px-3 py-1 border border-gray-300 dark:border-neutral-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
           >
@@ -403,45 +412,92 @@ const PyqSection: React.FC = () => {
           </select>
         </div>
       </div>
+      {(paperDropdownOpen || unitDropdownOpen) && (
+        <div
+          className="fixed inset-0 z-10"
+          onClick={() => { setPaperDropdownOpen(false); setUnitDropdownOpen(false); }}
+        />
+      )}
       <div className="flex flex-wrap gap-4 items-center justify-center mb-8">
         <div className="flex items-center gap-2">
-          <label htmlFor="paperFilter" className="font-semibold text-gray-800 dark:text-gray-200">
-            Q Paper:
-          </label>
-          <select
-            id="paperFilter"
-            value={filterPaper}
-            onChange={(e) => {
-              setFilterPaper(e.target.value);
-              setFilterUnit("all");
-            }}
-            className="rounded bg-white dark:bg-neutral-700 text-gray-900 dark:text-white px-3 py-1 border border-gray-300 dark:border-neutral-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          >
-            <option value="all">All</option>
-            {papers.map((p) => (
-              <option key={p} value={p}>
-                {p}
-              </option>
-            ))}
-          </select>
+          <label className="font-semibold text-gray-800 dark:text-gray-200">Q Paper:</label>
+          <div className="relative">
+            <button
+              type="button"
+              onClick={() => { setPaperDropdownOpen((v) => !v); setUnitDropdownOpen(false); }}
+              className="rounded bg-white dark:bg-neutral-700 text-gray-900 dark:text-white px-3 py-1 border border-gray-300 dark:border-neutral-600 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+            >
+              {filterPapers.size === 0 ? "All" : `${filterPapers.size} selected`} ▾
+            </button>
+            {paperDropdownOpen && (
+              <div className="absolute left-0 top-full z-20 mt-1 bg-white dark:bg-neutral-700 border border-gray-300 dark:border-neutral-600 rounded shadow-lg max-h-60 overflow-y-auto min-w-[200px]">
+                <label className="flex items-center gap-2 px-3 py-2 cursor-pointer hover:bg-gray-50 dark:hover:bg-neutral-600 border-b border-gray-200 dark:border-neutral-500">
+                  <input
+                    type="checkbox"
+                    checked={filterPapers.size === 0}
+                    onChange={() => setFilterPapers(new Set())}
+                  />
+                  <span className="font-medium text-sm">All</span>
+                </label>
+                {papers.map((p) => (
+                  <label key={p} className="flex items-center gap-2 px-3 py-2 cursor-pointer hover:bg-gray-50 dark:hover:bg-neutral-600">
+                    <input
+                      type="checkbox"
+                      checked={filterPapers.has(p)}
+                      onChange={() => {
+                        setFilterPapers((prev) => {
+                          const next = new Set(prev);
+                          if (next.has(p)) next.delete(p); else next.add(p);
+                          return next;
+                        });
+                      }}
+                    />
+                    <span className="text-sm">{p}</span>
+                  </label>
+                ))}
+              </div>
+            )}
+          </div>
         </div>
         <div className="flex items-center gap-2">
-          <label htmlFor="chapterFilter" className="font-semibold text-gray-800 dark:text-gray-200">
-            Unit:
-          </label>
-          <select
-            id="chapterFilter"
-            value={filterUnit}
-            onChange={(e) => setFilterUnit(e.target.value)}
-            className="rounded bg-white dark:bg-neutral-700 text-gray-900 dark:text-white px-3 py-1 border border-gray-300 dark:border-neutral-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          >
-            <option value="all">All</option>
-            {units.map((u) => (
-              <option key={u} value={u}>
-                {u}
-              </option>
-            ))}
-          </select>
+          <label className="font-semibold text-gray-800 dark:text-gray-200">Unit:</label>
+          <div className="relative">
+            <button
+              type="button"
+              onClick={() => { setUnitDropdownOpen((v) => !v); setPaperDropdownOpen(false); }}
+              className="rounded bg-white dark:bg-neutral-700 text-gray-900 dark:text-white px-3 py-1 border border-gray-300 dark:border-neutral-600 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+            >
+              {filterUnits.size === 0 ? "All" : `${filterUnits.size} selected`} ▾
+            </button>
+            {unitDropdownOpen && (
+              <div className="absolute left-0 top-full z-20 mt-1 bg-white dark:bg-neutral-700 border border-gray-300 dark:border-neutral-600 rounded shadow-lg max-h-60 overflow-y-auto min-w-[160px]">
+                <label className="flex items-center gap-2 px-3 py-2 cursor-pointer hover:bg-gray-50 dark:hover:bg-neutral-600 border-b border-gray-200 dark:border-neutral-500">
+                  <input
+                    type="checkbox"
+                    checked={filterUnits.size === 0}
+                    onChange={() => setFilterUnits(new Set())}
+                  />
+                  <span className="font-medium text-sm">All</span>
+                </label>
+                {units.map((u) => (
+                  <label key={u} className="flex items-center gap-2 px-3 py-2 cursor-pointer hover:bg-gray-50 dark:hover:bg-neutral-600">
+                    <input
+                      type="checkbox"
+                      checked={filterUnits.has(u)}
+                      onChange={() => {
+                        setFilterUnits((prev) => {
+                          const next = new Set(prev);
+                          if (next.has(u)) next.delete(u); else next.add(u);
+                          return next;
+                        });
+                      }}
+                    />
+                    <span className="text-sm">{u}</span>
+                  </label>
+                ))}
+              </div>
+            )}
+          </div>
         </div>
         <button
           type="button"
