@@ -1,0 +1,110 @@
+{
+    "paper_title": "SRM Institute of Science and Technology - CLA-T2 - 21CSC203P Advanced Programming Practice",
+    "source": "<FILENAME>",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "Write a program to create an applet for displaying a rectangle with the string \"Rectangle Shape\".",
+            "marks": 4,
+            "answer": "import java.applet.*;\nimport java.awt.*;\n\npublic class rect_applet extends Applet {\n    int height, width;\n    public void init() {\n        height = getSize().height;\n        width = getSize().width;\n        setName(\"rect_Applet\");\n    }\n    public void paint(Graphics g) {\n        g.drawRoundRect(10, 30, 120, 120, 2, 3);\n        g.drawString(\"Rectangle Shape \", 10, 50);\n    }\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "2",
+            "question_text": "What is JDBC Driver and explain their types?",
+            "marks": 4,
+            "answer": "JDBC Driver is a software component that enables Java application to interact with the database. There are 4 types of JDBC drivers:\n1. JDBC-ODBC bridge driver: Converts JDBC method calls into ODBC function calls.\n2. Native-API driver (partially java driver): Uses client-side libraries of the database to convert calls into native database API calls.\n3. Network Protocol driver (fully java driver): Uses middleware (application server) that converts JDBC calls directly or indirectly into vendor-specific database protocol.\n4. Thin driver (fully java driver): Converts JDBC calls directly into vendor-specific database protocol.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "3",
+            "question_text": "What are the advantages of using MVC in developing complex applications?",
+            "marks": 4,
+            "answer": "1. Modularization and Separation of Concerns: Clear separation between Model, View, and Controller isolates different functionality.\n2. Scalability: Developers can extend or modify components without affecting others.\n3. Parallel Development: Teams can work on different components concurrently.\n4. Reusability: Components can be reused across different parts of the application or projects.\n5. Maintenance and Updates: Changes in one component do not necessarily require changes in others.\n6. User Interface Adaptability: Simplifies creating multiple interfaces for various devices/platforms.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "4",
+            "question_text": "i. What is functional programming? List the Characteristics of functional programming.\n\nii. What is the output of the following code segment?\nc = map(lambda x:x+x,filter(lambda x: (x>=3), (1,2,3,4)))\nprint(list(c))",
+            "marks": 4,
+            "answer": "i. Functional programming is a programming paradigm where code is bound into pure mathematical functions. It is a declarative programming style focused on what to solve rather than how to solve.\nCharacteristics:\n- Focuses on results, not process.\n- Emphasis on computation.\n- Data is immutable.\n- Decomposes problems into functions.\n- Supports higher-order functions and lazy evaluation.\n- Does not rely on loop flow controls or mutable state.\n\nii. Output: [6, 8]",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "5",
+            "question_text": "Given that fact that: Lucy is a Professor, Danny is a Professor, James is a Lecturer, All professors are Dean\nWrite a Query to reterive all deans?",
+            "marks": 4,
+            "answer": "from pyDatalog import pyDatalog\npyDatalog.create_terms('X,professor,lecturer, dean')\n+professor('lucy')\n+professor('danny')\n+lecturer('james')\ndean(X) <= professor(X)\nprint(dean(X))",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "6",
+            "question_text": "Write a Python SymPy program to solve the following\ni. sym.diff(sym.sin(x), x)\nii. Evaluate Pi: sym.pi.evalf()\nFind the output of the following\niii. sym.integrate(2*x+sym.sinh(x),x)\niv. sym.expand(sym.cos(x+y),trig=true)",
+            "marks": 4,
+            "answer": "i. cos(x)\nii. 3.14159265358979\niii. x**2 + cosh(x)\niv. -sin(x)sin(y) + cos(x)cos(y)",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+        },
+        {
+            "question_number": "7",
+            "question_text": "Explain about the options available with grid() method of Geometry manager.",
+            "marks": 4,
+            "answer": "1. column: Specifies column number for placing widget (starts at 0).\n2. row: Specifies row number for placing widget (starts at 0).\n3. columnspan: Specifies width of widget by spanning across multiple columns.\n4. rowspan: Specifies height of widget by spanning across multiple rows.\n5. padx, pady: Padding pixels outside the widget's border.\n6. ipadx, ipady: Internal padding pixels inside the widget's border.\n7. sticky: Positions the widget inside its cell if larger than widget (N, S, E, W, NE, NW, etc.).",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+        },
+        {
+            "question_number": "8a",
+            "question_text": "i. What is a thread? How will you set priority to a thread?\n\nii. Develop a Java program to process the mathematical equation: p = sin (x) + cos (y) + tan (z) using multithreading concept. Since the trigonometric functions are independent operations without any dependencies between them, they can be executed concurrently. After that their results can be combined to produce the final result. The main/default thread is called MathThreads, which acts like a master thread. It creates three worker threads (MathSin, MathCos, and MathTan) and assigns them to compute values for different data inputs. All three worker threads are concurrently executed on shared or dedicated CPUs depending on the type of machine. Although the master thread can continue its execution, in this case, it needs to make sure that all operations are completed before combining individual results. This is accomplished by waiting for each thread to complete by invoking join() method associated with each worker thread.",
+            "marks": 10,
+            "answer": "i. A thread is an independent path of execution within a multithreaded program. Priority is set using setPriority(int level) method on a Thread object, where level ranges between Thread.MIN_PRIORITY (1) and Thread.MAX_PRIORITY (10).\n\nii. Code snippet:\nimport static java.lang.Math.*;\n\nclass A extends Thread {\n    double res1;\n    public void run() {\n        res1 = sin(Math.toRadians(90));\n        System.out.println(res1);\n    }\n}\nclass B extends Thread {\n    double res2;\n    public void run() {\n        res2 = cos(Math.toRadians(0));\n        System.out.println(res2);\n    }\n}\nclass C extends Thread {\n    double res3;\n    public void run() {\n        res3 = tan(Math.toRadians(45));\n        System.out.println(res3);\n    }\n}\nclass trigo {\n    public static void main(String args[]) {\n        A threadA = new A();\n        B threadB = new B();\n        C threadC = new C();\n        System.out.println(\"Start Thread A\");\n        threadA.start();\n        System.out.println(\"Start Thread B\");\n        threadB.start();\n        System.out.println(\"Start Thread C\");\n        threadC.start();\n        try {\n            threadA.join();\n            threadB.join();\n            threadC.join();\n        } catch (InterruptedException e) {\n            System.out.println(\"Interrupted\");\n        }\n        System.out.println(threadA.res1 + threadB.res2 + threadC.res3);\n    }\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "8b",
+            "question_text": "List the steps involved in establishing a JDBC connection with MySQL database and explain each step with code snippets.",
+            "marks": 10,
+            "answer": "Steps for JDBC connectivity:\n1. Import Packages: import java.sql.*;\n2. Load Driver: Class.forName(\"com.mysql.cj.jdbc.Driver\");\n3. Establish Connection: Connection con = DriverManager.getConnection(url, user, password);\n4. Create Statement: Statement st = con.createStatement();\n5. Execute Query: ResultSet rs = st.executeQuery(\"SELECT * FROM table\"); or int count = st.executeUpdate(sql);\n6. Process Results: Loop through ResultSet.\n7. Close Connection: con.close();",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "9a",
+            "question_text": "i. Explain Concurrent Programming and its issues.\nii. Explain Concurrent Programming and its issues. Write a program to implement Race Condition in Python.",
+            "marks": 10,
+            "answer": "i. Concurrent programming involves execution of multiple computing tasks simultaneously or interleaved. Key issues include resource sharing, task interaction, race conditions, deadlocks, starvation, and priority inversion.\n\nii. Python code implementing Race Condition:\nfrom threading import Thread\nx = 0\n\ndef add_one():\n    global x\n    for i in range(100000):\n        x += 1\n\ndef subtract_one():\n    global x\n    for i in range(100000):\n        x -= 1\n\nthread1 = Thread(target=add_one)\nthread2 = Thread(target=subtract_one)\nthread1.start()\nthread2.start()\nthread1.join()\nthread2.join()\nprint(x)",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "9b",
+            "question_text": "i. Explain briefly about any 4 socket methods.\nii. Write a Socket based Client Server Application to simulate a Simple Chat.",
+            "marks": 10,
+            "answer": "i. Socket Methods:\n- recv(): Receives TCP data.\n- send(): Sends TCP data.\n- bind(): Binds address (host, port) to socket.\n- listen(): Listens for incoming connections.\n- accept(): Accepts an incoming connection.\n\nii. Server & Client Chat Code:\nServer:\nimport socket, threading\ndef handle_client(client_socket, client_address):\n    client_message = client_socket.recv(1024).decode('utf-8')\n    while client_message != 'quit':\n        for client in clients:\n            if client != client_socket:\n                client.sendall(client_message.encode('utf-8'))\n        client_message = client_socket.recv(1024).decode('utf-8')\n    client_socket.close()\n\nserver_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\nserver_socket.bind((socket.gethostname(), 9999))\nserver_socket.listen(5)\nclients = []\nwhile True:\n    cs, ca = server_socket.accept()\n    clients.append(cs)\n    threading.Thread(target=handle_client, args=(cs, ca)).start()\n\nClient:\nimport socket, threading\ndef receive_messages():\n    while True:\n        print(client_socket.recv(1024).decode('utf-8'))\nclient_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\nclient_socket.connect((socket.gethostname(), 9999))\nthreading.Thread(target=receive_messages).start()\nwhile True:\n    client_socket.sendall(input().encode('utf-8'))",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "10a",
+            "question_text": "i. Draw the DFA for the language accepting strings ending with ‘00’ over input alphabets ∑={0, 1}.\nii. Construct the NFA and give the transition table for the regular expression a+aa*b+a*b.",
+            "marks": 10,
+            "answer": "i. DFA with states {q0, q1, q2}, initial state q0, final state q2:\n- q0 --0--> q1, q0 --1--> q0\n- q1 --0--> q2, q1 --1--> q0\n- q2 --0--> q2, q2 --1--> q0\n\nii. NFA constructed using Thompson's construction for regex a + aa*b + a*b, with corresponding state transition table mapping states and inputs {a, b, ε}.",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+        },
+        {
+            "question_number": "10b",
+            "question_text": "i. What is Event Handler in Event Driven Programming?\nii. Write a python code to Design the following GUI screen using tKinter:\nGUI form containing:\n- Empid\n- Employee Name Entry\n- Job Dropdown (Manager)\n- Employee type Radio buttons (Regular, Temporary)\n- Salary Spinbox (19)\n- Buttons: Insert, Update, Delete, Select",
+            "marks": 10,
+            "answer": "i. An event handler is a callback function that runs asynchronously in response to a user action or system trigger (such as button clicks or keypresses).\n\nii. Python Tkinter code:\nimport tkinter as tk\nfrom tkinter import ttk\n\nroot = tk.Tk()\nroot.title(\"Empid\")\n\ntk.Label(root, text=\"Employee Name :\").grid(row=0, column=0, sticky='w')\ntk.Entry(root).grid(row=0, column=1)\n\ntk.Label(root, text=\"Job\").grid(row=1, column=0, sticky='w')\njob_cb = ttk.Combobox(root, values=[\"Manager\", \"Developer\", \"Tester\"])\njob_cb.set(\"Manager\")\njob_cb.grid(row=1, column=1)\n\ntk.Label(root, text=\"Employee type\").grid(row=2, column=0, sticky='w')\nemp_type = tk.StringVar(value=\"Regular\")\ntk.Radiobutton(root, text=\"Regular\", variable=emp_type, value=\"Regular\").grid(row=2, column=1)\ntk.Radiobutton(root, text=\"Temporary\", variable=emp_type, value=\"Temporary\").grid(row=2, column=2)\n\ntk.Label(root, text=\"Salary\").grid(row=3, column=0, sticky='w')\ntk.Spinbox(root, from_=1, to=100, textvariable=tk.StringVar(value=\"19\")).grid(row=3, column=1)\n\ntk.Button(root, text=\"Insert\").grid(row=4, column=0)\ntk.Button(root, text=\"Update\").grid(row=4, column=1)\ntk.Button(root, text=\"Delete\").grid(row=5, column=0)\ntk.Button(root, text=\"Select\").grid(row=5, column=1)\n\nroot.mainloop()",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+        }
+    ]
+}

@@ -1,0 +1,206 @@
+{
+    "paper_title": "SRM Institute of Science and Technology - 21CSC203P Advanced Programming Practice",
+    "source": "<FILENAME>",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "Which of the following statements about Java Threads is correct?\na. Java threads don't allow parts of a program to be executed in parallel\nb. Java is a single-threaded language\nc. Java's garbage collector runs as a high priority thread\nd. Ready, running and sleeping are three states that a thread can be in during its life cycle",
+            "marks": 1,
+            "answer": "d. Ready, running and sleeping are three states that a thread can be in during its life cycle",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "2",
+            "question_text": "What will be the output of the following Java code?\nclass multithreaded_programming\n{\n    public static void main (String [] args[])\n    {\n        Thread t = Thread.currentThread ();\n        System.out.println (t);\n    }\n}\na. thread [5, main]\nb. thread [main, 5]\nc. thread [main, 0]\nd. Thread [main, 5, main]",
+            "marks": 1,
+            "answer": "d. Thread [main, 5, main]\n\nExplanation: Printing a Thread object invokes its `toString()` method, which outputs `Thread[threadName, priority, groupName]`. Here, the main thread has priority 5 and belongs to the 'main' thread group.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "3",
+            "question_text": "What is the primary role of the DriverManager class in JDBC?\na. To manage database transactions\nb. To load the driver class\nc. To manage database drivers and establish database connections\nd. To retrieve metadata from the database",
+            "marks": 1,
+            "answer": "c. To manage database drivers and establish database connections",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "4",
+            "question_text": "Which of the following is a top-level container in Swing?\na. JPanel\nb. JLabel\nc. JFrame\nd. JButton",
+            "marks": 1,
+            "answer": "c. JFrame",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "5",
+            "question_text": "What is the layout manager used in the Java code given below?\nimport java.awt.*;\npublic class LayoutExample extends Frame {\n    public static void main(String[] args){\n        LayoutExample frame = new LayoutExample();\n        Button b1 = new Button (\"Button 1\");\n        Button b2 = new Button (\"Button 2\");\n        Button b3 = new Button (\"Button 3\");\n        frame.add(b1);\n        frame.add(b2);\n        frame.add(b3);\n        frame.setLayout (new FlowLayout());\n        frame.setLayout(new GridLayout(2, 2));\n        frame.setSize(300, 200);\n        frame.setVisible(true);\n    }\n}\na. Grid Layout\nb. Border Layout\nc. Flow Layout\nd. Card Layout",
+            "marks": 1,
+            "answer": "a. Grid Layout\n\nExplanation: `frame.setLayout(new GridLayout(2, 2))` is called after `FlowLayout`, so it overrides the previous setting and applies `GridLayout`.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "6",
+            "question_text": "In functional programming, which of the following is an example of a higher-order function?\na. A function that returns the square of a number\nb. A function that adds two numbers\nc. A function that takes another function as an argument or returns a function\nd. A function that uses global variables to modify input data",
+            "marks": 1,
+            "answer": "c. A function that takes another function as an argument or returns a function",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "7",
+            "question_text": "Find the output\ndef multi_func(fun_name, arg1, arg2):\n    return fun_name(fun_name(arg1, arg2), 20)\n\ndef sum(x, y):\n    return x + y\n\nprint(multi_func(sum, 10, 20))",
+            "marks": 1,
+            "answer": "50\n\nExplanation:\n1. Inner function call: `sum(10, 20)` evaluates to `30`.\n2. Outer function call: `fun_name(30, 20)` executes `sum(30, 20)`, evaluating to `50`.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "8",
+            "question_text": "To create parallel programming in Python which of the following header file to be imported\na. multithread\nb. multiprocessing\nc. threadprocessing\nd. parallelprocessing",
+            "marks": 1,
+            "answer": "b. multiprocessing",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "9",
+            "question_text": "To create a socket, we must use socket.socket() function available in the Python socket module\na. socket.socket()\nb. socket().thread\nc. socket.port()\nd. TCP.UDP.scoket()",
+            "marks": 1,
+            "answer": "a. socket.socket()",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "10",
+            "question_text": "Which of the following methods is used to send data over a TCP socket in Python?\na. socket.sendto()\nb. socket.send()\nc. socket.write()\nd. socket.transmit()",
+            "marks": 1,
+            "answer": "b. socket.send()",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "16(ii)",
+            "question_text": "Darshan wants to maintain a mini catalog of his friend's name. He started off by identifying five close friends. He needs to sort them in chronological order to add in the mini catalog. Help Darshan to devise the mini catalog using the structured programming paradigm.",
+            "marks": 8,
+            "answer": "Implementation using structured programming (procedural step-by-step logic):\n1. Define an array of strings to store 5 names.\n2. Collect the 5 names from input.\n3. Apply a standard sorting algorithm (e.g., selection sort or string comparison using `compareTo` / `strcmp`) to order the names alphabetically.\n4. Iterate through the array and display the sorted list.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Programming Paradigm"
+        },
+        {
+            "question_number": "17a(i)",
+            "question_text": "Signify the importance of accessibility in Java.",
+            "marks": 4,
+            "answer": "Accessibility in Java (enforced via access modifiers `public`, `protected`, `default`, `private`) provides:\n1. Encapsulation: Prevents unauthorized modification of internal state.\n2. Abstraction: Hides implementation details and exposes only necessary APIs.\n3. Security & Control: Controls sub-class access across packages.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Java Programming Paradigms"
+        },
+        {
+            "question_number": "17a(ii)",
+            "question_text": "Marc needs to calculate the area for different shapes of circle, triangle, rectangle, square. He has been instructed to use hierarchy form of classes to execute the computation. Adapt the suitable feature and help Marc in estimating the area of different shapes using Java.",
+            "marks": 8,
+            "answer": "Solution using Object-Oriented Inheritance & Polymorphism:\n1. Create an abstract base class `Shape` with an abstract method `double calculateArea()`.\n2. Extend `Shape` with classes `Circle`, `Triangle`, `Rectangle`, and `Square`.\n3. Override `calculateArea()` in each subclass using its respective area formula.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Java Programming Paradigms"
+        },
+        {
+            "question_number": "17b(i)",
+            "question_text": "Describe the built-in packages in Java.",
+            "marks": 4,
+            "answer": "Built-in packages are pre-packaged collections of classes and interfaces provided by Java standard API:\n- `java.lang`: Core language features (String, Math, System, Thread); imported automatically.\n- `java.util`: Data structures, Collection framework, Date/Time tools.\n- `java.io`: Input/Output streams for file handling.\n- `java.net`: Networking utilities (Sockets, URLs).",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Java Programming Paradigms"
+        },
+        {
+            "question_number": "17b(ii)",
+            "question_text": "Allen needs to compute arithmetic operations. He has been instructed to define the task as a bundle module. Help Allen in devising the computation using Java. Hint - User-defined package.",
+            "marks": 8,
+            "answer": "Create a user-defined package named `arithmetic` containing a class `Calculator` with methods for addition, subtraction, multiplication, and division. Save under directory `arithmetic/`, compile using `javac -d . Calculator.java`, and import via `import arithmetic.Calculator;` in the main application program.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Java Programming Paradigms"
+        },
+        {
+            "question_number": "Set2-1",
+            "question_text": "double num = 3.9999;\nint result = (int) num;\nSystem.out.println(result);\nWhy is the result not what you expected, and how can you preserve the value correctly?",
+            "marks": null,
+            "answer": "The output is `3` because explicit type casting `(int)` truncates the floating point value rather than rounding it. To preserve the value accurately through rounding, use `Math.round(num)`.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Java Programming Paradigms"
+        },
+        {
+            "question_number": "Set2-2",
+            "question_text": "public class Test {\n    int x = 10;\n    void show() {\n        int x = 5;\n        System.out.println(x);\n    }\n}\n// In the main method\nTest test = new Test();\ntest.show();\nWhy is the output different than expected, and how can you access the class variable instead of the local variable?",
+            "marks": null,
+            "answer": "The local variable `x = 5` shadows the instance variable `x = 10`. To explicitly access the instance variable, use `this.x` (e.g., `System.out.println(this.x);`).",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Java Programming Paradigms"
+        },
+        {
+            "question_number": "Set2-3",
+            "question_text": "public class Example {\n    public void display() {\n        static int count = 0;\n        System.out.println(count);\n    }\n}\nWhy does the compiler reject the code, and how can you fix it?",
+            "marks": null,
+            "answer": "Java does not permit local variables inside methods to be declared as `static`. To fix it, move `static int count = 0;` outside the method to make it a class-level static member variable.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Java Programming Paradigms"
+        },
+        {
+            "question_number": "Set2-4",
+            "question_text": "public class Test {\n    void print() {\n        System.out.println(\"Hello\");\n    }\n}\n// In the main method\nTest obj = null;\nobj.print();\nA. The program will print \"Hello\".\nB. The program will compile but throw a NullPointerException.\nC. The program will compile with a warning but will run successfully.\nD. The program will not compile due to a syntax error.",
+            "marks": null,
+            "answer": "B. The program will compile but throw a NullPointerException.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Java Programming Paradigms"
+        },
+        {
+            "question_number": "Set2-5",
+            "question_text": "public class MyClass {\n    MyClass(int value) {\n        // Constructor logic\n    }\n}\n// In the main method\nMyClass obj = new MyClass(); // Error here\nA. The code will compile successfully.\nB. The code will compile with a warning.\nC. The code will fail to compile because a default constructor is missing.\nD. The code will run but throw an exception.",
+            "marks": null,
+            "answer": "C. The code will fail to compile because a default constructor is missing.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Java Programming Paradigms"
+        },
+        {
+            "question_number": "Set2-6",
+            "question_text": "What will be the result of the following code?\ndouble value = 8.75;\nint result = (int) value;\nSystem.out.println(result);\nA. The result will be 8.75.\nB. The result will be 8.\nC. The result will be 9.\nD. The code will fail to compile.",
+            "marks": null,
+            "answer": "B. The result will be 8.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Java Programming Paradigms"
+        },
+        {
+            "question_number": "Set2-7",
+            "question_text": "What is the output of the following code involving integer division?\nint a = 5;\nint b = 2;\nint result = a / b;\nSystem.out.println(result);\nA. The output will be 2.5.\nB. The output will be 2.\nC. The output will be 3.\nD. The code will fail to compile.",
+            "marks": null,
+            "answer": "B. The output will be 2.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Java Programming Paradigms"
+        },
+        {
+            "question_number": "Set2-8",
+            "question_text": "What will be the result of the following for loop that contains an off-by-one condition?\nfor (int i = 0; i < 5; i++) {\n    System.out.println(i);\n}\nA. The loop will print numbers from 0 to 4.\nB. The loop will print numbers from 0 to 5.\nC. The loop will print numbers from 1 to 5.\nD. The code will fail to compile.",
+            "marks": null,
+            "answer": "A. The loop will print numbers from 0 to 4.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Java Programming Paradigms"
+        },
+        {
+            "question_number": "Set2-9",
+            "question_text": "What is the output of a switch statement when no break is used between cases?\nint day = 2;\nswitch (day) {\n    case 1:\n        System.out.println(\"Monday\");\n    case 2:\n        System.out.println(\"Tuesday\");\n    case 3:\n        System.out.println(\"Wednesday\");\n        break;\n    default:\n        System.out.println(\"Invalid day\");\n}\nA. The output will be Tuesday only.\nB. The output will be Monday, Tuesday, and Wednesday.\nC. The output will be Tuesday and Wednesday.\nD. The code will fail to compile.",
+            "marks": null,
+            "answer": "C. The output will be Tuesday and Wednesday.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Java Programming Paradigms"
+        },
+        {
+            "question_number": "Set2-10",
+            "question_text": "What will be the result if an array is declared but not initialized?\nint[] arr;\narr[0] = 10;\nA. The code will compile successfully.\nB. The code will throw a NullPointerException at runtime.\nC. The code will throw a compile-time error.\nD. The code will run but produce no output.",
+            "marks": null,
+            "answer": "C. The code will throw a compile-time error.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Java Programming Paradigms"
+        }
+    ]
+}

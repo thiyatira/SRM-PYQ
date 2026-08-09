@@ -15,6 +15,7 @@ const SUBJECTS = [
   { code: "OOPS", name: "Object Oriented Design and Programming", title: "21CSC101T: Object Oriented Design and Programming" },
   { code: "OODP", name: "Object Oriented Design and Programming", title: "21CSC101T: Object Oriented Design and Programming" },
   { code: "ADVANCEDCALC", name: "Advanced Calculus and Complex Analysis", title: "21MAB102T: Advanced Calculus and Complex Analysis" },
+  { code: "APP", name: "Advanced Programming Practice", title: "21CSC203P: Advanced Programming Practice" },
 ];
 
 const SUBJECT_FILES: Record<string, string[]> = {
@@ -147,6 +148,17 @@ const SUBJECT_FILES: Record<string, string[]> = {
   SPCM: [
     "all_questions.json",
   ],
+  APP: [
+    "2022 CLAT 1 Set A.json",
+    "2023 CLAT 2 Set A.json",
+    "2023 CLAT 2 Set C.json",
+    "2024 Quiz 2 Set B.json",
+    "2024 Quiz 2-3 Set C.json",
+    "2024 Quiz 2-3 Set D.json",
+    "2025 Assessment 2 Set E.json",
+    "2025 Assessment 2 Set F.json",
+    "CLAT 1 Set D.json",
+  ],
 };
 
 const SUBJECT_DIRS: Record<string, string> = {
@@ -161,6 +173,7 @@ const SUBJECT_DIRS: Record<string, string> = {
   OODP: "OODP",
   ADVANCEDCALC: "AdvancedCalculus",
   SPCM: "SemiconductorPhysicsAndComputationalMethods",
+  APP: "APP",
 };
 
 interface Question {
