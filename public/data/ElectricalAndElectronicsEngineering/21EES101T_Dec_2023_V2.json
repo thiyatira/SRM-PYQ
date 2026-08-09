@@ -1,0 +1,158 @@
+{
+    "paper_title": "21EES101T_Dec_2023_V2",
+    "source": "21EES101T_Dec_2023_V2",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "The expression for rms voltage of an AC sinusoid is given by\n(A) Vm/2\n(B) Vm/\\sqrt{2}\n(C) Vdc/\\sqrt{2}\n(D) Vdc/\\sqrt{3}",
+            "marks": 1,
+            "answer": "(B)\nExplanation: For a pure sinusoidal AC waveform, the Root Mean Square (RMS) value is always the peak voltage (Vm) divided by the square root of 2.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "2",
+            "question_text": "The law proposed by ohm is relevant in condition with\n(A) Temperature constant\n(B) Pressure constant\n(C) Volume constant\n(D) Constant pressure and temperature",
+            "marks": 1,
+            "answer": "(A)\nExplanation: Ohm's Law states that current is directly proportional to voltage, provided physical conditions like temperature remain strictly constant.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "3",
+            "question_text": "In a pure inductive circuit (L), the current _______ by a voltage of 90 degree.\n(A) Leads\n(B) Lags\n(C) In phase\n(D) Greater than and equal",
+            "marks": 1,
+            "answer": "(B)\nExplanation: In an ideal purely inductive AC circuit, the current lags the applied voltage by an exact phase angle of 90 degrees.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "4",
+            "question_text": "According to superposition theorem, while considering an individual source, all other voltage sources can be .\n(A) Replaced by current sources\n(B) Short circuited\n(C) Open circuited\n(D) Replaced by external resistor",
+            "marks": 1,
+            "answer": "(B)\nExplanation: In Superposition Theorem, when analyzing the effect of one source, ideal voltage sources are deactivated by being short-circuited (0 V).",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "5",
+            "question_text": "The diode is used in\n(A) Uncontrolled rectifiers\n(B) Stepping down AC voltage circuits\n(C) Stepping up AC voltage circuits\n(D) Controlled rectifiers",
+            "marks": 1,
+            "answer": "(A)\nExplanation: Standard PN junction diodes are two-terminal devices without a control gate, making them the main component of uncontrolled rectifiers.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "6",
+            "question_text": "The voltage controlled semiconductor device is\n(A) Zener diode\n(B) BJT\n(C) PN diode\n(D) MOSFET",
+            "marks": 1,
+            "answer": "(D)\nExplanation: Unlike BJTs which are current-controlled, a MOSFET operates by adjusting the channel conductivity using the voltage applied to the gate terminal.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "7",
+            "question_text": "The logical expression Y=AB+AC is known as\n(A) Standard sum of product form\n(B) Sum of product form\n(C) Standard product of sum form\n(D) Product of sum form",
+            "marks": 1,
+            "answer": "(B)\nExplanation: Y=AB+AC features product terms (AND operations like AB, AC) that are summed (OR operation) together, fitting the definition of Sum of Product (SOP) form.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "8",
+            "question_text": "The input X-NOR gate gives high output\n(A) When one input is high and other is low\n(B) Only when both inputs are low\n(C) When both inputs are same\n(D) Only when both the inputs are high",
+            "marks": 1,
+            "answer": "(C)\nExplanation: An EX-NOR (Exclusive-NOR) gate acts as an equivalence detector, yielding a high output ('1') only when its inputs match exactly.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "9",
+            "question_text": "The material used for the yoke of a DC machine is to provide a\n(A) Current path\n(B) Flux path\n(C) Mechanical support\n(D) Conversion from AC to DC",
+            "marks": 1,
+            "answer": "(B)\nExplanation: While the yoke also serves as an outer mechanical cover, its functional electromechanical purpose is to provide a low-reluctance return path for the magnetic flux.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "10",
+            "question_text": "Rotor windings are not present in\n(A) DC shunt motor\n(B) DC series motor\n(C) Squirrel cage induction motor\n(D) Slip ring induction motor",
+            "marks": 1,
+            "answer": "(C)\nExplanation: A Squirrel cage induction motor utilizes solid aluminum or copper conductor bars shorted by end rings instead of traditional wound coils on the rotor.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "11",
+            "question_text": "Which of the following motor is more suitable for EV applications?\n(A) BLDC motor\n(B) Stepper motor\n(C) DC shunt motor\n(D) Induction motor",
+            "marks": 1,
+            "answer": "(A)\nExplanation: Brushless DC (BLDC) motors (along with PMSMs) provide high power density, reliability, and excellent efficiency, making them a premier choice for Electric Vehicle (EV) propulsion.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "13",
+            "question_text": "In LVDT, when the iron core is exactly at centre, then net output of transducer is\n(A) Zero\n(B) Maximum\n(C) Average\n(D) Unpredictable",
+            "marks": 1,
+            "answer": "(A)\nExplanation: When the core of an LVDT is exactly at the geometric center (null position), the induced voltages in the two identical secondary coils cancel each other perfectly, giving zero net output.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "14",
+            "question_text": "Which type of transducer is most commonly used in testing of structural load bearing limitations?\n(A) Thermocouple\n(B) Thermistor\n(C) LDR\n(D) Strain gauge",
+            "marks": 1,
+            "answer": "(D)\nExplanation: Strain gauges measure mechanical deformation or strain caused by forces, making them the standard tool for structural load and stress testing.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "15",
+            "question_text": "The current flow in photodiode when light fall on its junction is called\n(A) Knee current\n(B) Saturation current\n(C) Photo current\n(D) Pinchoff current",
+            "marks": 1,
+            "answer": "(C)\nExplanation: The current generated in a semiconductor device purely as a result of incident photons creating electron-hole pairs is explicitly termed 'photo current'.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "16",
+            "question_text": "Which transducer is used for light spectrum detection?\n(A) Laser\n(B) Photo transistor\n(C) LED\n(D) LVDT",
+            "marks": 1,
+            "answer": "(B)\nExplanation: A photo transistor is an active light-detecting sensor that converts light photons into a corresponding electrical signal.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "17",
+            "question_text": "Earth wire is made up of\n(A) Copper\n(B) Iron\n(C) Aluminium\n(D) Galvanized steel",
+            "marks": 1,
+            "answer": "(D)\nExplanation: For overhead transmission lines and general robust grounding applications, Galvanized steel (GI) is commonly used for earth wires because of its high tensile strength and rust resistance.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "18",
+            "question_text": "Solar efficiency will be commonly in the range of\n(A) 3% to 5%\n(B) 90% to 95%\n(C) 40% to 50%\n(D) 10% to 20%",
+            "marks": 1,
+            "answer": "(D)\nExplanation: Standard commercial silicon-based solar photovoltaic panels typically operate at an energy conversion efficiency of roughly 15% to 22%.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "19",
+            "question_text": "The most widely used material for solar cell fabrication is\n(A) Germanium\n(B) Silicon\n(C) Aluminium\n(D) Silver",
+            "marks": 1,
+            "answer": "(B)\nExplanation: Due to its suitable bandgap, abundance, and extensive manufacturing infrastructure, Silicon is overwhelmingly the dominant material for solar cell fabrication.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "20",
+            "question_text": "The predominant material used for PV cell manufacturing is\n(A) Silicon\n(B) Titanium\n(C) Arsenide\n(D) Gallium",
+            "marks": 1,
+            "answer": "(A)\nExplanation: Crystalline silicon dominates the Photovoltaic (PV) industry market as the primary semiconductor material.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        }
+    ]
+}

@@ -1,0 +1,166 @@
+{
+    "paper_title": "2025_July_ET_Set1",
+    "source": "2025_July_ET_Set1",
+    "questions": [
+        {
+            "question_number": "U1Q18",
+            "question_text": "Area of the double integral in cartesian coordinates is\n(A) $\\iint dx dy$\n(B) $\\iint x dx dy$\n(C) $\\iint r dr d\\theta$\n(D) $\\iint r^2 dr d\\theta$",
+            "marks": 2,
+            "answer": "(A)\nExplanation: Area in the Cartesian plane is the sum of differential area elements $dx dy$. Therefore, Area = $\\iint dx dy$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Integral Calculus"
+        },
+        {
+            "question_number": "U1Q19",
+            "question_text": "Find the value of $\\int_0^1 \\int_0^1 dx dy$ is\n(A) 0\n(B) 2\n(C) 1\n(D) -1",
+            "marks": 2,
+            "answer": "(C)\nExplanation: This is the product of independent integrals: $(\\int_0^1 dx) \\cdot (\\int_0^1 dy) = 1 \\times 1 = 1$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Integral Calculus"
+        },
+        {
+            "question_number": "U1Q20",
+            "question_text": "The name of the curve $r = a(1+\\cos \\theta)$ is\n(A) Ellipse\n(B) Cardioid\n(C) Lemniscate\n(D) Hemisphere",
+            "marks": 2,
+            "answer": "(B)\nExplanation: By definition of plane polar curves, $r = a(1 \\pm \\cos \\theta)$ and $r = a(1 \\pm \\sin \\theta)$ represent cardioids.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Integral Calculus"
+        },
+        {
+            "question_number": "U1Q21",
+            "question_text": "The value of $\\int_0^3 \\int_0^2 \\int_0^1 dx dy dz$ is equal to\n(A) 0\n(B) 2\n(C) 4\n(D) 6",
+            "marks": 2,
+            "answer": "(D)\nExplanation: This triple integral computes the volume of a rectangular parallelepiped. Limits are independent, so it evaluates as $(1-0) \\times (2-0) \\times (3-0) = 6$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Integral Calculus"
+        },
+        {
+            "question_number": "U2Q18",
+            "question_text": "If $\\nabla \\cdot \\vec{F} = 0$ then the vector is\n(A) solenoidal\n(B) irrotational\n(C) unit normal\n(D) directional derivative",
+            "marks": 2,
+            "answer": "(A)\nExplanation: By definition, a vector field with zero divergence ($\\nabla \\cdot \\vec{F} = 0$) is called solenoidal.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Vector Calculus"
+        },
+        {
+            "question_number": "U2Q19",
+            "question_text": "The value of $|\\nabla \\phi|$ for $\\phi = x^2 + y^2 - z$ at the point $(1, 1, 1)$ is\n(A) 2\n(B) -3\n(C) 3\n(D) 4",
+            "marks": 2,
+            "answer": "(C)\nExplanation: $\\nabla \\phi = \\frac{\\partial \\phi}{\\partial x}\\mathbf{i} + \\frac{\\partial \\phi}{\\partial y}\\mathbf{j} + \\frac{\\partial \\phi}{\\partial z}\\mathbf{k} = 2x\\mathbf{i} + 2y\\mathbf{j} - 1\\mathbf{k}$.\nAt $(1, 1, 1)$, $\\nabla \\phi = 2\\mathbf{i} + 2\\mathbf{j} - \\mathbf{k}$.\nMagnitude $|\\nabla \\phi| = \\sqrt{2^2 + 2^2 + (-1)^2} = \\sqrt{4 + 4 + 1} = \\sqrt{9} = 3$.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Vector Calculus"
+        },
+        {
+            "question_number": "U2Q20",
+            "question_text": "If $\\vec{r}$ is the position vector of the point $(x,y,z)$ with respect to the origin then $\\nabla \\cdot \\vec{r}$ is\n(A) 2\n(B) -3\n(C) 0\n(D) 3",
+            "marks": 2,
+            "answer": "(D)\nExplanation: Let $\\vec{r} = x\\mathbf{i} + y\\mathbf{j} + z\\mathbf{k}$. $\\nabla \\cdot \\vec{r} = \\frac{\\partial x}{\\partial x} + \\frac{\\partial y}{\\partial y} + \\frac{\\partial z}{\\partial z} = 1 + 1 + 1 = 3$.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Vector Calculus"
+        },
+        {
+            "question_number": "U2Q21",
+            "question_text": "The relation between a volume and surface integral is known as ______ theorem\n(A) Green's theorem\n(B) Gauss divergence theorem\n(C) Stoke's theorem\n(D) Convolution theorem",
+            "marks": 2,
+            "answer": "(B)\nExplanation: The Gauss Divergence Theorem relates the flux of a vector field over a closed surface (surface integral) to the divergence of the field within the enclosed volume (volume integral).",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Vector Calculus"
+        },
+        {
+            "question_number": "U3Q18",
+            "question_text": "$L \\{ \\sinh at \\} =$\n(A) $\\frac{s}{s^2+a^2}$\n(B) $\\frac{a}{s^2-a^2}$\n(C) $\\frac{a}{s^2+a^2}$\n(D) $\\frac{s}{s^2-a^2}$",
+            "marks": 2,
+            "answer": "(B)\nExplanation: By definition, $\\sinh at = \\frac{e^{at} - e^{-at}}{2}$. Taking the Laplace transform: \n$L(\\sinh at) = \\frac{1}{2} [L(e^{at}) - L(e^{-at})] = \\frac{1}{2} [\\frac{1}{s-a} - \\frac{1}{s+a}] = \\frac{1}{2} [\\frac{(s+a) - (s-a)}{s^2-a^2}] = \\frac{1}{2} [\\frac{2a}{s^2-a^2}] = \\frac{a}{s^2-a^2}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Laplace Transform"
+        },
+        {
+            "question_number": "U3Q19",
+            "question_text": "If $L \\{ f(t) \\} = F(s)$ then $L \\{ t f(t) \\} =$\n(A) $\\frac{d}{ds} F'(s)$\n(B) $\\frac{d}{ds} F(s)$\n(C) $-\\frac{d}{ds} F(s)$\n(D) $-\\frac{d}{ds} F'(s)$",
+            "marks": 2,
+            "answer": "(C)\nExplanation: Multiplication by $t$ in the time domain corresponds to taking the negative derivative in the $s$-domain. By the derivative of transforms property, $L \\{ t^n f(t) \\} = (-1)^n \\frac{d^n}{ds^n} F(s)$. For $n=1$, it is $-\\frac{d}{ds} F(s)$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Laplace Transform"
+        },
+        {
+            "question_number": "U3Q20",
+            "question_text": "$L(t^5) =$\n(A) $\\frac{4!}{s^5}$\n(B) $\\frac{4!}{s^4}$\n(C) $\\frac{3!}{s^4}$\n(D) $\\frac{5!}{s^6}$",
+            "marks": 2,
+            "answer": "(D)\nExplanation: Using the formula $L(t^n) = \\frac{n!}{s^{n+1}}$, for $n=5$, we obtain $L(t^5) = \\frac{5!}{s^{5+1}} = \\frac{5!}{s^6}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Laplace Transform"
+        },
+        {
+            "question_number": "U3Q21",
+            "question_text": "The inverse Laplace transform of $\\frac{2}{s-2}$ is\n(A) $2e^{-at}$\n(B) $2e^{2t}$\n(C) $2te^{at}$\n(D) $2te^{-at}$",
+            "marks": 2,
+            "answer": "(B)\nExplanation: We use the standard transform $L^{-1}(\\frac{1}{s-a}) = e^{at}$. By linearity, $L^{-1}(\\frac{2}{s-2}) = 2 L^{-1}(\\frac{1}{s-2}) = 2e^{2t}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Laplace Transform"
+        },
+        {
+            "question_number": "U4Q18",
+            "question_text": "A function $u$ is said to be harmonic if and only if\n(A) $u_{xx} + u_{yy} = 0$\n(B) $u_{xx} + u_{xy} = 0$\n(C) $u_x + u_y = 0$\n(D) $u_x^2 + u_y^2 = 0$",
+            "marks": 2,
+            "answer": "(A)\nExplanation: A real-valued function $u(x,y)$ is harmonic in a domain if it has continuous second-order partial derivatives and satisfies Laplace's equation, $\\nabla^2 u = \\frac{\\partial^2 u}{\\partial x^2} + \\frac{\\partial^2 u}{\\partial y^2} = 0$.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Analytic Functions"
+        },
+        {
+            "question_number": "U4Q19",
+            "question_text": "The fixed points of $w = \\frac{z-1}{z+1}$ are\n(A) $0, -1$\n(B) $0, 1$\n(C) $\\pm i$\n(D) $\\pm 1$",
+            "marks": 2,
+            "answer": "(C)\nExplanation: For fixed points, put $w = z$. $z = \\frac{z-1}{z+1} \\implies z(z+1) = z-1 \\implies z^2+z = z-1 \\implies z^2 = -1$. Therefore, $z = \\pm i$.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Analytic Functions"
+        },
+        {
+            "question_number": "U4Q20",
+            "question_text": "An analytic function with constant modulus is\n(A) arbitrary\n(B) harmonic\n(C) holomorphic\n(D) constant",
+            "marks": 2,
+            "answer": "(D)\nExplanation: Applying the Cauchy-Riemann equations to $u^2 + v^2 = \\text{constant}$ leads to $u_x = v_x = u_y = v_y = 0$, meaning the function must be a constant.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Analytic Functions"
+        },
+        {
+            "question_number": "U4Q21",
+            "question_text": "If the function $f(z) = u+iv$ is analytic, then the curve $u = \\text{constant}$ and $v = \\text{constant}$\n(A) harmonic\n(B) Intersect each other arbitrarily\n(C) parallel\n(D) cut orthogonally",
+            "marks": 2,
+            "answer": "(D)\nExplanation: The level curves of the real and imaginary parts of an analytic function always form orthogonal families (they cut orthogonally).",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Analytic Functions"
+        },
+        {
+            "question_number": "U5Q18",
+            "question_text": "A curve which does not cross itself is called a\n(A) Closed curve\n(B) Simple curve\n(C) Multiple curve\n(D) Open curve",
+            "marks": 2,
+            "answer": "(B)\nExplanation: A curve is called simple (or a Jordan curve) if it does not intersect itself.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Complex Integration"
+        },
+        {
+            "question_number": "U5Q19",
+            "question_text": "A point $z=z_0$ at which a function $f(z)$ fails to be analytic is called a ______\n(A) singular point\n(B) Residue\n(C) integrals\n(D) normal",
+            "marks": 2,
+            "answer": "(A)\nExplanation: A point where a function is not analytic, but every neighborhood of it contains points where the function is analytic, is defined as a singularity or singular point.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Complex Integration"
+        },
+        {
+            "question_number": "U5Q20",
+            "question_text": "The poles of $f(z) = \\frac{4z}{(z-1)^3(z-2)}$ are\n(A) $-1$ and $2$\n(B) $-1$ and $-2$\n(C) $1$ and $2$\n(D) $1$ and $-2$",
+            "marks": 2,
+            "answer": "(C)\nExplanation: Poles occur where the denominator evaluates to zero. Solving $(z-1)^3(z-2) = 0$ yields $z=1$ (a pole of order 3) and $z=2$ (a simple pole).",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Complex Integration"
+        },
+        {
+            "question_number": "U5Q21",
+            "question_text": "Evaluate $\\int_C \\frac{z}{z-1} dz$, where $C$ is $|z|=2$ is\n(A) 0\n(B) $4\\pi i$\n(C) $2\\pi i$\n(D) $\\pi i$",
+            "marks": 2,
+            "answer": "(C)\nExplanation: The pole $z=1$ lies inside the circle $|z|=2$.\nUsing Cauchy's Integral Formula: $\\oint_C \\frac{f(z)}{z-a} dz = 2\\pi i f(a)$.\nHere $f(z) = z$ and $a = 1$.\nIntegral $= 2\\pi i \\cdot f(1) = 2\\pi i (1) = 2\\pi i$.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Complex Integration"
+        }
+    ]
+}

@@ -1,0 +1,166 @@
+{
+    "paper_title": "21EES101T_Dec_2023_V1",
+    "source": "21EES101T_Dec_2023_V1",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "A potential difference of 10 V is applied across a conductor whose resistance is 2.5 ohm. What is the value of current flowing through it?\n(A) 4 amperes\n(B) 2 amperes\n(C) 6 amperes\n(D) 10 amperes",
+            "marks": 1,
+            "answer": "(A)\nExplanation: According to Ohm's Law, I = V / R = 10 V / 2.5 Ω = 4 A.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "2",
+            "question_text": "Which of the following formulas defines KCL, where i1, i2 represent incoming currents and i3, i4 represent outgoing currents from a circuit node?\n(A) i1+i2=i3+i4\n(B) i1+i3=i2+i4\n(C) i1-i2=i3-i4\n(D) i4-i1=i2+i3",
+            "marks": 1,
+            "answer": "(A)\nExplanation: Kirchhoff's Current Law states that the sum of incoming currents equals the sum of outgoing currents at a node (i1 + i2 = i3 + i4).",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "3",
+            "question_text": "Pick out the correct statement from the following about parallel combination of resistors.\n(A) The current across the resistors are the same\n(B) The resistance offered by all resistors are the same\n(C) The potential difference is same across each resistor\n(D) The equivalent overall resistance is larger than the largest resistor",
+            "marks": 1,
+            "answer": "(C)\nExplanation: In a parallel electrical circuit, the voltage (potential difference) across all connected branches is identical.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "4",
+            "question_text": "What is the type of current obtained by finding the square of the currents and then finding their average and then finding the square root?\n(A) RMS current\n(B) Average current\n(C) Instantaneous current\n(D) Total current",
+            "marks": 1,
+            "answer": "(A)\nExplanation: This is the mathematical definition of the Root Mean Square (RMS) value of an alternating quantity.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "5",
+            "question_text": "Which of the following terminal does not belong to the MOSFET?\n(A) Drain\n(B) Gate\n(C) Base\n(D) Source",
+            "marks": 1,
+            "answer": "(C)\nExplanation: The 'Base' is a terminal of a Bipolar Junction Transistor (BJT). A MOSFET has Gate, Drain, and Source terminals.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "6",
+            "question_text": "Which of the following the charge carrier is available in BJT?\n(A) Holes\n(B) Electrons\n(C) Neutrons\n(D) Both holes and electrons",
+            "marks": 1,
+            "answer": "(D)\nExplanation: BJT stands for Bipolar Junction Transistor. 'Bipolar' indicates that its operation involves both majority and minority charge carriers (holes and electrons).",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "7",
+            "question_text": "The approximate equivalent circuit of an IGBT consists of\n(A) a BJT & a MOSFET\n(B) a MOSFET & a MCT\n(C) two BJTs\n(D) two MOSFETs",
+            "marks": 1,
+            "answer": "(A)\nExplanation: An Insulated Gate Bipolar Transistor (IGBT) combines the isolated gate control of a MOSFET with the high-current handling of a BJT.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "8",
+            "question_text": "The NOR gate output will be high if the two inputs are _______\n(A) 00\n(B) 01\n(C) 10\n(D) 11",
+            "marks": 1,
+            "answer": "(A)\nExplanation: A NOR gate is the inverse of an OR gate. It only outputs a '1' (HIGH) when all its inputs are '0' (LOW).",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "9",
+            "question_text": "The basic function of a transformer is to change\n(A) the level of the voltage\n(B) the power level\n(C) the power factor\n(D) the frequency",
+            "marks": 1,
+            "answer": "(A)\nExplanation: A transformer is a static device used to step up or step down the level of AC voltage while keeping the frequency and power level (ideally) constant.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "10",
+            "question_text": "An 50 Hz induction motor with 1000 rpm speed will have\n(A) 2 poles\n(B) 6 poles\n(C) 4 poles\n(D) 8 poles",
+            "marks": 1,
+            "answer": "(B)\nExplanation: Synchronous speed Ns = 120 * f / P. Rearranging for P: P = 120 * 50 / 1000 = 6000 / 1000 = 6 poles.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "11",
+            "question_text": "The direction of rotation of motor is determined by _______\n(A) Faraday's law\n(B) Lenz's law\n(C) Coulomb's law\n(D) Fleming's left-hand rule",
+            "marks": 1,
+            "answer": "(D)\nExplanation: Fleming's Left-Hand Rule determines the direction of the force (and therefore rotation) acting on a current-carrying conductor in a magnetic field.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "12",
+            "question_text": "Which of the following motor rotates in discrete angular steps?\n(A) Servo motor\n(B) DC motor\n(C) Stepper motor\n(D) Linear Induction Motor",
+            "marks": 1,
+            "answer": "(C)\nExplanation: A stepper motor moves precisely by dividing a full rotation into a large number of discrete angular steps.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "13",
+            "question_text": "The function of transducer is to convert\n(A) Electrical signal into non electrical quantity\n(B) Non electrical quantity into electrical signal\n(C) Electrical signal into mechanical quantity\n(D) Non electrical quantity into mechanical signal",
+            "marks": 1,
+            "answer": "(B)\nExplanation: Transducers act as sensors that convert a physical, non-electrical parameter (like temperature, pressure, displacement) into an equivalent measurable electrical signal.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "14",
+            "question_text": "With the increase in the intensity of light, the resistance of a photovoltaic cell\n(A) Increases\n(B) Decreases\n(C) Remains same\n(D) become negative",
+            "marks": 1,
+            "answer": "(B)\nExplanation: When exposed to higher light intensity, a semiconductor photo-device generates more electron-hole pairs, which increases conductivity and directly decreases its internal resistance.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "15",
+            "question_text": "What is the principle of operation of LVDT?\n(A) Mutual inductance\n(B) Self-inductance\n(C) Permanence\n(D) Reluctance",
+            "marks": 1,
+            "answer": "(A)\nExplanation: A Linear Variable Differential Transformer (LVDT) works on the principle of variable mutual inductance between a primary coil and two secondary coils depending on core position.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "16",
+            "question_text": "By which properties, the orientation of molecules in a layer of liquid crystals can be changed?\n(A) Magnetic field\n(B) Electric field\n(C) Electromagnetic field\n(D) Galois field",
+            "marks": 1,
+            "answer": "(B)\nExplanation: Liquid Crystal Displays (LCDs) function by applying an electric field to change the orientation and alignment of the liquid crystal molecules.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "17",
+            "question_text": "The voltage of the single phase supply to residential consumers is\n(A) 110 V\n(B) 210 V\n(C) 230 V\n(D) 400 V",
+            "marks": 1,
+            "answer": "(C)\nExplanation: In the Indian electrical standard, the typical single-phase domestic residential AC supply is maintained at 230 V.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "18",
+            "question_text": "The capacity of a battery is expressed in terms of\n(A) Current rating\n(B) Voltage rating\n(C) Ampere hour rating\n(D) Power rating",
+            "marks": 1,
+            "answer": "(C)\nExplanation: Battery capacity indicates the total electrical charge it can deliver and is universally expressed in Ampere-hours (Ah).",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "19",
+            "question_text": "Chemical energy is converted to _______ energy by a fuel cell\n(A) solar\n(B) electrical\n(C) potential\n(D) mechanical",
+            "marks": 1,
+            "answer": "(B)\nExplanation: A fuel cell creates an electrochemical reaction (using a fuel like hydrogen) to convert chemical energy directly into electrical energy.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "20",
+            "question_text": "For a consumer most economic power factor is\n(A) 0.5 lagging\n(B) 0.5 leading\n(C) 0.95 lagging\n(D) 0.95 leading",
+            "marks": 1,
+            "answer": "(C)\nExplanation: Operating near unity, specifically around 0.95 lagging, minimizes reactive power penalties without incurring excessive capacitor bank costs, making it the most economic target.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        }
+    ]
+}

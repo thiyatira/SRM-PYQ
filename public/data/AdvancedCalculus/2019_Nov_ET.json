@@ -1,0 +1,166 @@
+{
+    "paper_title": "2019_Nov_ET",
+    "source": "2019_Nov_ET",
+    "questions": [
+        {
+            "question_number": "U1Q10",
+            "question_text": "$\\int_1^a \\int_1^b \\frac{dx dy}{xy}$ is equal to\n(A) $\\log a + \\log b$\n(B) $\\log b - \\log a$\n(C) $\\log a \\times \\log b$\n(D) $\\log(a-b)$",
+            "marks": 2,
+            "answer": "(C)\nExplanation: The variables are separable: $(\\int_1^a \\frac{dx}{x}) \\cdot (\\int_1^b \\frac{dy}{y}) = [\\ln x]_1^a \\cdot [\\ln y]_1^b = (\\ln a - \\ln 1) \\cdot (\\ln b - \\ln 1) = \\log a \\times \\log b$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Integral Calculus"
+        },
+        {
+            "question_number": "U1Q11",
+            "question_text": "The change of order of integration of $\\int_0^1 \\int_0^x dy dx$ is\n(A) $\\int_0^y \\int_0^1 dx dy$\n(B) $\\int_0^1 \\int_y^1 dx dy$\n(C) $\\int_0^1 \\int_0^1 dx dy$\n(D) $\\int_0^1 \\int_0^y dx dy$",
+            "marks": 2,
+            "answer": "(B)\nExplanation: The region of integration is $0 \\le y \\le x \\le 1$. Taking horizontal strips gives $y \\le x \\le 1$ with $y$ limits from $0$ to $1$. The new integral is $\\int_0^1 \\int_y^1 dx dy$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Integral Calculus"
+        },
+        {
+            "question_number": "U1Q12",
+            "question_text": "The name of the curve $r = a(1+\\cos \\theta)$ is\n(A) Ellipse\n(B) Cardioid\n(C) Lemniscate\n(D) Hemisphere",
+            "marks": 2,
+            "answer": "(B)\nExplanation: $r = a(1+\\cos \\theta)$ is the standard polar equation of a cardioid.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Integral Calculus"
+        },
+        {
+            "question_number": "U1Q13",
+            "question_text": "Evaluate $\\int_0^1 \\int_0^1 dx dy$\n(A) 4\n(B) 2\n(C) 0\n(D) 1",
+            "marks": 2,
+            "answer": "(D)\nExplanation: $[x]_0^1 \\cdot [y]_0^1 = 1 \\cdot 1 = 1$. This is the area of a square of dimension 1x1.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Integral Calculus"
+        },
+        {
+            "question_number": "U2Q10",
+            "question_text": "The work done by the conservative force when it moves a particle around a closed curve is\n(A) $\\nabla \\times \\vec{F} = 0$\n(B) $\\nabla \\cdot \\vec{F} = 0$\n(C) $0$\n(D) $\\nabla \\cdot (\\nabla \\times \\vec{F}) = 0$",
+            "marks": 2,
+            "answer": "(C)\nExplanation: By definition, the line integral (work done) of a conservative force field over any closed loop is zero.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Vector Calculus"
+        },
+        {
+            "question_number": "U2Q11",
+            "question_text": "The connection between a line integral and the double integral is known as\n(A) Stokes' theorem\n(B) Green's theorem\n(C) Divergence theorem\n(D) Convolution theorem",
+            "marks": 2,
+            "answer": "(B)\nExplanation: Green's theorem relates a line integral around a simple closed curve in a plane to a double integral over the plane region bounded by the curve.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Vector Calculus"
+        },
+        {
+            "question_number": "U2Q12",
+            "question_text": "The value of $\\nabla \\phi$ for $\\phi = xy+yz+zx$ at the point $(-1, 1, 1)$ is\n(A) $2\\mathbf{i}$\n(B) $3\\mathbf{i}$\n(C) $4\\mathbf{j}$\n(D) $3\\mathbf{k}$",
+            "marks": 2,
+            "answer": "(A)\nExplanation: $\\nabla \\phi = (y+z)\\mathbf{i} + (x+z)\\mathbf{j} + (x+y)\\mathbf{k}$.\nAt $(-1, 1, 1)$, $\\nabla \\phi = (1+1)\\mathbf{i} + (-1+1)\\mathbf{j} + (-1+1)\\mathbf{k} = 2\\mathbf{i}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Vector Calculus"
+        },
+        {
+            "question_number": "U2Q13",
+            "question_text": "$\\text{curl}(\\text{grad } \\phi)$ is\n(A) $\\phi$\n(B) 1\n(C) $-1$\n(D) 0",
+            "marks": 2,
+            "answer": "(D)\nExplanation: The curl of a gradient field is always zero ($\\nabla \\times \\nabla \\phi = 0$).",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Vector Calculus"
+        },
+        {
+            "question_number": "U3Q10",
+            "question_text": "Laplace transform of $\\sin 3t$ is\n(A) $\\frac{3}{s^2-9}$\n(B) $\\frac{3}{s^2+9}$\n(C) $\\frac{s}{s^2+9}$\n(D) $\\frac{s}{s^2-9}$",
+            "marks": 2,
+            "answer": "(B)\nExplanation: The Laplace transform of $\\sin at$ is given by $\\frac{a}{s^2+a^2}$. Substituting $a=3$, we get $\\frac{3}{s^2+3^2} = \\frac{3}{s^2+9}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Laplace Transform"
+        },
+        {
+            "question_number": "U3Q11",
+            "question_text": "If $L(f(t)) = F(s)$ then $L(f'(t))$\n(A) $s L(f(t)) - f(0)$\n(B) $L(f(t)) - f(0)$\n(C) $s L(f(t)) + f(0)$\n(D) $L(f(t)) + f(0)$",
+            "marks": 2,
+            "answer": "(A)\nExplanation: The Laplace transform of a derivative is a fundamental property: $L(f'(t)) = sF(s) - f(0) = sL(f(t)) - f(0)$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Laplace Transform"
+        },
+        {
+            "question_number": "U3Q12",
+            "question_text": "The inverse Laplace transform of $\\frac{1}{s^2-a^2}$ is\n(A) $\\frac{\\sinh at}{a}$\n(B) $\\sin at$\n(C) $\\frac{\\sin at}{a}$\n(D) $\\frac{\\sinh at}{a}$ *(Note: Options A and D are identical)*",
+            "marks": 2,
+            "answer": "(A)\nExplanation: The standard formula for the inverse Laplace transform of $\\frac{1}{s^2-a^2}$ is $\\frac{1}{a} \\sinh at$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Laplace Transform"
+        },
+        {
+            "question_number": "U3Q13",
+            "question_text": "The inverse Laplace transform of $\\frac{2}{s-b}$ is\n(A) $2te^{-bt}$\n(B) $2e^{-bt}$\n(C) $2e^{bt}$\n(D) $2te^{bt}$",
+            "marks": 2,
+            "answer": "(C)\nExplanation: Using the linearity property, $L^{-1}(\\frac{2}{s-b}) = 2 L^{-1}(\\frac{1}{s-b})$. Since $L^{-1}(\\frac{1}{s-b}) = e^{bt}$, the answer is $2e^{bt}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Laplace Transform"
+        },
+        {
+            "question_number": "U4Q10",
+            "question_text": "The function $f(z) = u+iv$ is analytic if\n(A) $u_x = v_y$ and $u_y = -v_x$\n(B) $u_x + v_y = 0$ and $u_y - v_x = 0$\n(C) $u_x + v_y = 0$ and $u_y + v_x = 0$\n(D) $u_y = v_x$ and $u_x = v_y$",
+            "marks": 2,
+            "answer": "(A)\nExplanation: The necessary conditions for a function $f(z) = u(x,y) + iv(x,y)$ to be analytic are the Cauchy-Riemann equations: $\\frac{\\partial u}{\\partial x} = \\frac{\\partial v}{\\partial y}$ and $\\frac{\\partial u}{\\partial y} = -\\frac{\\partial v}{\\partial x}$. This matches option A.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Analytic Functions"
+        },
+        {
+            "question_number": "U4Q11",
+            "question_text": "If a function $u(x,y)$ satisfies $u_{xx} + u_{yy} = 0$ then $u$ is\n(A) Differentiable\n(B) Continuous\n(C) Harmonic\n(D) Analytic",
+            "marks": 2,
+            "answer": "(C)\nExplanation: A real-valued function $u(x,y)$ satisfying Laplace's equation $u_{xx} + u_{yy} = 0$ is defined as a harmonic function.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Analytic Functions"
+        },
+        {
+            "question_number": "U4Q12",
+            "question_text": "The invariant points of the transformation $w = \\frac{z-1}{z+1}$ are\n(A) $-1$ and $i$\n(B) $i$ and 1\n(C) 1 and $-i$\n(D) $i$ and $-i$",
+            "marks": 2,
+            "answer": "(D)\nExplanation: Set $w = z$ to find invariant points.\n$z = \\frac{z-1}{z+1} \\implies z(z+1) = z-1 \\implies z^2 + z = z - 1 \\implies z^2 = -1$.\nSolving $z^2 = -1$ gives $z = i$ and $z = -i$.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Analytic Functions"
+        },
+        {
+            "question_number": "U4Q13",
+            "question_text": "Any analytic function with constant modulus is\n(A) Harmonic\n(B) Constants\n(C) Harmonic\n(D) Analytic",
+            "marks": 2,
+            "answer": "(B)\nExplanation: By the properties of analytic functions and Cauchy-Riemann equations, if $|f(z)| = \\text{constant}$, then $f(z)$ must be a constant function.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Analytic Functions"
+        },
+        {
+            "question_number": "U5Q10",
+            "question_text": "A curve which does not cross itself is called a\n(A) Not a curve\n(B) Closed curve\n(C) Multiple curve\n(D) Simple curve",
+            "marks": 2,
+            "answer": "(D)\nExplanation: By definition in complex analysis and topology, a curve that never intersects itself (except possibly matching its starting and ending points) is called a simple curve or a Jordan curve.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Complex Integration"
+        },
+        {
+            "question_number": "U5Q11",
+            "question_text": "If $f(z) = \\frac{\\sin z}{z}$ then\n(A) $z=0$ is a removable singularity\n(B) $z=0$ is a simple pole\n(C) $z=0$ is an essential singularity\n(D) $z=0$ is a zero of $f(z)$",
+            "marks": 2,
+            "answer": "(A)\nExplanation: Since $\\lim_{z \\to 0} \\frac{\\sin z}{z} = 1$ (a finite value), the singularity at $z=0$ can be \"removed\" by defining $f(0) = 1$. Thus, it is a removable singularity.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Complex Integration"
+        },
+        {
+            "question_number": "U5Q12",
+            "question_text": "The value of $\\oint_C \\frac{5z^2+8z+5}{z+1} dz$ where $C: |z|=1/2$\n(A) $-2\\pi i$\n(B) $2\\pi i$\n(C) 0\n(D) $\\pi i$",
+            "marks": 2,
+            "answer": "(C)\nExplanation: The integrand has a singularity at $z = -1$. The contour $C$ is a circle centered at the origin with radius $1/2$. Because $|-1| = 1 > 1/2$, the singularity lies outside the contour. By Cauchy's Integral Theorem, the integral evaluates to 0.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Complex Integration"
+        },
+        {
+            "question_number": "U5Q13",
+            "question_text": "The value of $\\int_C \\frac{z}{z-2} dz$ where $C$ is the circle $|z|=1$ is\n(A) $i\\pi/2$\n(B) 0\n(C) 2\n(D) $\\pi/2$",
+            "marks": 2,
+            "answer": "(B)\nExplanation: The pole $z=2$ is located outside the contour $|z|=1$. By Cauchy's Integral Theorem, the integral of an analytic function over a closed curve not enclosing any singularities is 0.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Complex Integration"
+        }
+    ]
+}

@@ -1,0 +1,166 @@
+{
+    "paper_title": "2023_May_ET",
+    "source": "2023_May_ET",
+    "questions": [
+        {
+            "question_number": "U1Q34",
+            "question_text": "Evaluation of $\\int_0^2 \\int_0^1 dx dy$ is\n(A) 0\n(B) 1\n(C) 4\n(D) 2",
+            "marks": 2,
+            "answer": "(D)\nExplanation: Integral is $[x]_0^1 \\cdot [y]_0^2 = 1 \\times 2 = 2$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Integral Calculus"
+        },
+        {
+            "question_number": "U1Q35",
+            "question_text": "Area of the double integral in Cartesian co-ordinate is\n(A) $\\iint dy dx$\n(B) $\\iint x dx dy$\n(C) $\\iint x^2 dx dy$\n(D) $\\iint r dr d\\theta$",
+            "marks": 2,
+            "answer": "(A)\nExplanation: Area over a plane in Cartesian coordinates is given by the integral of $1$ with respect to the area element $dy dx$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Integral Calculus"
+        },
+        {
+            "question_number": "U1Q36",
+            "question_text": "The region of integration of the integral $\\int_0^1 \\int_0^x f(x,y) dx dy$ is\n(A) Square\n(B) Rectangle\n(C) Triangle\n(D) Circle",
+            "marks": 2,
+            "answer": "(C)\nExplanation: The limits of integration ($y$ from $0$ to $x$, and $x$ from $0$ to $1$) define a triangular region bounded by $y=0$, $y=x$, and $x=1$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Integral Calculus"
+        },
+        {
+            "question_number": "U1Q37",
+            "question_text": "Evaluation of $\\iint_0^1 \\int_0^2 \\int_0^3 dx dy dz$ is equal to\n(A) 3\n(B) 4\n(C) 2\n(D) 6",
+            "marks": 2,
+            "answer": "(D)\nExplanation: Volume = $1 \\times 2 \\times 3 = 6$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Integral Calculus"
+        },
+        {
+            "question_number": "U2Q34",
+            "question_text": "If $\\vec{r}$ is the position vector of the point $(x,y,z)$ with respect to the origin then $\\nabla \\cdot \\vec{r}$ is\n(A) 2\n(B) 3\n(C) 0\n(D) 1",
+            "marks": 2,
+            "answer": "(B)\nExplanation: Divergence of $\\vec{r} = x\\mathbf{i} + y\\mathbf{j} + z\\mathbf{k}$ is $\\frac{\\partial x}{\\partial x} + \\frac{\\partial y}{\\partial y} + \\frac{\\partial z}{\\partial z} = 1 + 1 + 1 = 3$.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Vector Calculus"
+        },
+        {
+            "question_number": "U2Q35",
+            "question_text": "If $\\phi = xyz$ then $\\nabla \\phi$ is\n(A) $yz\\mathbf{i} + zx\\mathbf{j} + xy\\mathbf{k}$\n(B) $xy\\mathbf{i} + yz\\mathbf{j} + zx\\mathbf{k}$\n(C) $zx\\mathbf{i} + xy\\mathbf{j} + yz\\mathbf{k}$\n(D) 0",
+            "marks": 2,
+            "answer": "(A)\nExplanation: $\\nabla \\phi = \\frac{\\partial}{\\partial x}(xyz)\\mathbf{i} + \\frac{\\partial}{\\partial y}(xyz)\\mathbf{j} + \\frac{\\partial}{\\partial z}(xyz)\\mathbf{k} = yz\\mathbf{i} + xz\\mathbf{j} + xy\\mathbf{k}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Vector Calculus"
+        },
+        {
+            "question_number": "U2Q36",
+            "question_text": "The unit normal vector to the surface $x^2+y^2-z^2=1$ at $(1,1,1)$ is\n(A) $(\\mathbf{i}+\\mathbf{j}-\\mathbf{k})/\\sqrt{3}$\n(B) $(2\\mathbf{i}+2\\mathbf{j}-2\\mathbf{k})/\\sqrt{2}$\n(C) $(3\\mathbf{i}+3\\mathbf{j}-3\\mathbf{k})/2\\sqrt{3}$\n(D) $(\\mathbf{i}+\\mathbf{j}-\\mathbf{k})/3\\sqrt{2}$",
+            "marks": 2,
+            "answer": "(A)\nExplanation: $\\nabla \\phi = (2, 2, -2)$. The magnitude is $2\\sqrt{3}$. Dividing the vector by its magnitude yields $\\frac{1}{\\sqrt{3}}(\\mathbf{i}+\\mathbf{j}-\\mathbf{k})$.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Vector Calculus"
+        },
+        {
+            "question_number": "U2Q37",
+            "question_text": "If $\\vec{u}$ and $\\vec{v}$ are irrotational then $\\vec{u} \\times \\vec{v}$ is\n(A) Solenoidal\n(B) Irrotational\n(C) Constant vector\n(D) Zero vector",
+            "marks": 2,
+            "answer": "(A)\nExplanation: We use the vector identity: $\\nabla \\cdot (\\vec{u} \\times \\vec{v}) = \\vec{v} \\cdot (\\nabla \\times \\vec{u}) - \\vec{u} \\cdot (\\nabla \\times \\vec{v})$. Since $\\vec{u}$ and $\\vec{v}$ are irrotational, $\\nabla \\times \\vec{u} = \\vec{0}$ and $\\nabla \\times \\vec{v} = \\vec{0}$. Thus, the divergence of their cross product is 0, meaning $\\vec{u} \\times \\vec{v}$ is a solenoidal vector.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Vector Calculus"
+        },
+        {
+            "question_number": "U3Q34",
+            "question_text": "Find $L[e^{-at}]$\n(A) $\\frac{1}{s+1}$\n(B) $\\frac{1}{s-1}$\n(C) $\\frac{1}{s+a}$\n(D) $\\frac{1}{s-a}$",
+            "marks": 2,
+            "answer": "(C)\nExplanation: The standard transform is $L(e^{kt}) = \\frac{1}{s-k}$. Here $k=-a$, so $L(e^{-at}) = \\frac{1}{s-(-a)} = \\frac{1}{s+a}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Laplace Transform"
+        },
+        {
+            "question_number": "U3Q35",
+            "question_text": "If $L[f(t)] = F(s)$ then $L[t f(t)] =$\n(A) $\\frac{d}{ds} F(s)$\n(B) $-\\frac{d}{ds} F(s)$\n(C) $(-1)^n \\frac{d^n}{ds^n} F(s)$\n(D) $\\frac{d^2}{ds^2} F(s)$",
+            "marks": 2,
+            "answer": "(B)\nExplanation: Multiplication by $t$ corresponds to taking the negative derivative of the transform in the $s$-domain: $L[t f(t)] = - \\frac{d}{ds} F(s)$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Laplace Transform"
+        },
+        {
+            "question_number": "U3Q36",
+            "question_text": "Find $L^{-1}[\\frac{1}{(s-1)^2}]$\n(A) $te^{-t}$\n(B) $te^t$\n(C) $t^2 e^t$\n(D) $t$",
+            "marks": 2,
+            "answer": "(B)\nExplanation: By the First Shifting Theorem, $L^{-1}[F(s-a)] = e^{at} f(t)$. We know $L^{-1}(\\frac{1}{s^2}) = t$. Here $F(s) = \\frac{1}{s^2}$ is shifted to $s-1$ (so $a=1$). Thus, the inverse is $e^{1t} \\cdot t = te^t$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Laplace Transform"
+        },
+        {
+            "question_number": "U3Q37",
+            "question_text": "Using the final value theorem, find the value of the function $f(t) = 1+e^{-t}(\\sin t + \\cos t)$\n(A) 1\n(B) 0\n(C) $\\infty$\n(D) -2",
+            "marks": 2,
+            "answer": "(A)\nExplanation: The Final Value Theorem states $\\lim_{t \\to \\infty} f(t) = \\lim_{s \\to 0} sF(s)$. Evaluating directly in the time domain: $\\lim_{t \\to \\infty} [1 + e^{-t}(\\sin t + \\cos t)] = 1 + 0 \\times (\\text{bounded function}) = 1$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Laplace Transform"
+        },
+        {
+            "question_number": "U4Q34",
+            "question_text": "If a function $u(x,y)$ satisfies $u_{xx} + u_{yy} = 0$ then $u$ is\n(A) Analytic\n(B) Harmonic\n(C) Differentiable\n(D) Continuous",
+            "marks": 2,
+            "answer": "(B)\nExplanation: The equation $u_{xx} + u_{yy} = 0$ is Laplace's equation. Functions satisfying this are defined as harmonic functions.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Analytic Functions"
+        },
+        {
+            "question_number": "U4Q35",
+            "question_text": "The points at which the function $f(z) = \\frac{1}{z^2+1}$ fails to be analytic is\n(A) $z=\\pm 1$\n(B) $z=0$\n(C) $z=\\pm i$\n(D) $z=\\pm 2$",
+            "marks": 2,
+            "answer": "(C)\nExplanation: A rational function fails to be analytic at points where its denominator is zero. $z^2+1 = 0 \\implies z^2 = -1 \\implies z = \\pm i$.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Analytic Functions"
+        },
+        {
+            "question_number": "U4Q36",
+            "question_text": "An analytic function with constant modulus is\n(A) Zero\n(B) Analytic\n(C) Constant\n(D) Harmonic",
+            "marks": 2,
+            "answer": "(C)\nExplanation: Based on the Cauchy-Riemann equations, if $u^2+v^2 = \\text{const}$, it can be proven that $u$ and $v$ are constants individually. Hence $f(z)$ is constant.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Analytic Functions"
+        },
+        {
+            "question_number": "U4Q37",
+            "question_text": "The transformation $w = z+c$ where $c$ is a complex constant represents\n(A) Rotation\n(B) Magnification\n(C) Translation\n(D) Magnification and rotation",
+            "marks": 2,
+            "answer": "(C)\nExplanation: The mapping $w = z+c$ shifts every point $z$ by the vector $c$. This is a geometric translation.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Analytic Functions"
+        },
+        {
+            "question_number": "U5Q34",
+            "question_text": "The value of $\\int_C \\frac{z dz}{z-2}$, where $C$ is the circle $|z|=1$ is\n(A) 0\n(B) $\\pi i / 2$\n(C) $\\pi/2$\n(D) 2",
+            "marks": 2,
+            "answer": "(A)\nExplanation: The integrand $f(z) = \\frac{z}{z-2}$ has a simple pole at $z=2$. The contour $C$ is a circle centered at the origin with radius 1. Since $|2| = 2 > 1$, the pole lies strictly outside the contour. Thus, the function is analytic inside $C$, and by Cauchy's Integral Theorem, the integral is 0.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Complex Integration"
+        },
+        {
+            "question_number": "U5Q35",
+            "question_text": "Let $C_1: |z-a|=R_1$ and $C_2: |z-a|=R_2$ be two concentric circles $(R_2 < R_1)$, the annular region is defined as\n(A) Within $C_1$\n(B) Within $C_2$\n(C) Within $C_1$ and outside $C_2$\n(D) Within $C_2$ and outside $C_1$",
+            "marks": 2,
+            "answer": "(C)\nExplanation: An annulus is the region between two concentric circles. If $R_2 < R_1$, the region is bounded by $R_2 < |z-a| < R_1$. Geometrically, this means the region is inside the larger circle $C_1$ and outside the smaller circle $C_2$.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Complex Integration"
+        },
+        {
+            "question_number": "U5Q36",
+            "question_text": "If $f(z) = \\frac{\\sin z}{z}$, then\n(A) $z=0$ is a simple pole\n(B) $z=0$ is a pole of order 2\n(C) $z=0$ is a removable singularity\n(D) $z=0$ is a zero of $f(z)$",
+            "marks": 2,
+            "answer": "(C)\nExplanation: $\\lim_{z \\to 0} \\frac{\\sin z}{z} = 1$. The existence of a finite limit proves it is a removable singularity.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Complex Integration"
+        },
+        {
+            "question_number": "U5Q37",
+            "question_text": "If $f(z)$ is analytic inside and on $C$, the value of $\\int_C \\frac{f(z)}{z-a} dz$ where $C$ is the simple closed curve and 'a' is any point within $C$ is\n(A) $f(a)$\n(B) $2\\pi i f(a)$\n(C) $2\\pi i f'(a)$\n(D) 0",
+            "marks": 2,
+            "answer": "(B)\nExplanation: By Cauchy's Integral Formula, the contour integral is equal to $2\\pi i f(a)$.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Complex Integration"
+        }
+    ]
+}

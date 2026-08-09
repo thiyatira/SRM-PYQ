@@ -1,0 +1,158 @@
+{
+    "paper_title": "21EES101T_Nov_2024",
+    "source": "21EES101T_Nov_2024",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "The network contains resistors and ideal voltage sources. If the value of all the resistors is doubled, the voltage across each resistor is\nA) Halved\nB) Doubled\nC) Increased Four Times\nD) No Changes",
+            "marks": 1,
+            "answer": "(D)\nExplanation: In a linear circuit with ideal voltage sources, uniformly doubling all resistance values halves the currents but leaves the voltage distribution across the resistors unchanged.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "2",
+            "question_text": "A star circuit has an element of resistance 10Ω. The equivalent delta elements be\nA) 15Ω\nB) 30Ω\nC) 10Ω\nD) 7.5Ω",
+            "marks": 1,
+            "answer": "(B)\nExplanation: To convert a balanced Star (Y) network to a Delta (Δ) network, the equivalent resistance is multiplied by 3. R_delta = 3 * R_star = 3 * 10 = 30 Ω.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "3",
+            "question_text": "If the source impedance is complex, then maximum power transfer occurs when the load impedance is _______ the source impedance.\nA) equal to\nB) negative of\nC) complex conjugate of\nD) negative of complex conjugate of",
+            "marks": 1,
+            "answer": "(C)\nExplanation: According to the Maximum Power Transfer Theorem for AC circuits, maximum real power is transferred to the load when the load impedance is the complex conjugate of the source impedance.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "4",
+            "question_text": "The power factor is the ratio of _______ of the _______ power.\nA) average, apparent\nB) apparent, reactive\nC) reactive, average\nD) apparent, average",
+            "marks": 1,
+            "answer": "(A)\nExplanation: Power factor is defined as the ratio of true (or average/active) power to the apparent power in an AC circuit.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "5",
+            "question_text": "The resistance of the reverse bias diode is\nA) Zero\nB) Low\nC) neagtive\nD) infinity",
+            "marks": 1,
+            "answer": "(D)\nExplanation: Ideally, a reverse-biased diode completely blocks current flow, effectively acting as an open circuit with infinite resistance.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "6",
+            "question_text": "The maximum efficiency of full wave rectification is\nA) 40.6%\nB) 100%\nC) 81.2%\nD) 85.6%",
+            "marks": 1,
+            "answer": "(C)\nExplanation: The theoretical maximum efficiency of a full-wave rectifier is 81.2%, which is exactly double that of a half-wave rectifier (40.6%).",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "7",
+            "question_text": "MOSFET is a\nA) unipolar, voltage controlled, two-terminal device\nB) bipolar, current-controlled, three-terminal device\nC) unipolar, voltage controlled, three-terminal device\nD) bipolar, current controlled, two terminal device",
+            "marks": 1,
+            "answer": "(C)\nExplanation: A MOSFET uses only one type of charge carrier (unipolar), operates by controlling the electric field via gate voltage (voltage-controlled), and features three terminals (Gate, Drain, Source).",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "8",
+            "question_text": "The logical expression y=A+A'B is equivalent to\nA) Y=AB\nB) Y=A'B\nC) Y=A'+B\nD) Y=A+B",
+            "marks": 1,
+            "answer": "(D)\nExplanation: By the Boolean algebra absorption law, A + A'B simplifies directly to A + B.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "9",
+            "question_text": "What is the relation between the electrical and mechanical torque in a steady state?\nA) The electrical torque should be greater than the mechanical torque\nB) The electrical torque should be either more or less than the mechanical torque\nC) The electrical torque is equal to and opposite to mechanical torque\nD) mechanical torque should be greater than the electrical torque.",
+            "marks": 1,
+            "answer": "(C)\nExplanation: For a motor to maintain a steady state (constant speed), the driving electrical torque must perfectly balance the opposing mechanical load torque, making them equal and opposite.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "10",
+            "question_text": "The laminated cores in electrical machines are used to reduce\nA) Copper loss\nB) Eddy current loss\nC) Hysteresis loss\nD) Mechanical loss",
+            "marks": 1,
+            "answer": "(B)\nExplanation: Laminated cores increase the electrical resistance parallel to the magnetic field, effectively minimizing the flow of induced eddy currents and the associated losses.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "11",
+            "question_text": "The difference between the stator synchronous speed and rotor speed is called\nA) Leading speed\nB) Lagging speed\nC) Slip Speed\nD) Slow Speed",
+            "marks": 1,
+            "answer": "(C)\nExplanation: The absolute difference between the synchronous speed of the rotating magnetic field and the actual speed of the rotor is officially termed the slip speed.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "13",
+            "question_text": "Which of the following is the disadvantage of PMMC Instrument?\nA) The PMMC is a very delicate instrument\nB) It has a high torque to weight ratio\nC) It produces low losses due to Hysteresis\nD) It does not have a uniformly divide scale.",
+            "marks": 1,
+            "answer": "(A)\nExplanation: High torque-to-weight ratio, low hysteresis, and a uniform scale are advantages. Being highly delicate and susceptible to mechanical damage is its main physical disadvantage.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "14",
+            "question_text": "A thermistor is inherently suitable for temperature measurement involving\nA) High span and low sensitivity\nB) Low span and high sensitivity\nC) High span and high sensitivity\nD) Low span and low sensitivity",
+            "marks": 1,
+            "answer": "(B)\nExplanation: Thermistors offer extremely high sensitivity (large resistance change per degree) but are highly non-linear, making them suitable only for a narrow or low temperature span.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "15",
+            "question_text": "When light falls upon LDR, then the resistance value\nA) Increases\nB) Decreases\nC) No change\nD) Zero",
+            "marks": 1,
+            "answer": "(B)\nExplanation: A Light Dependent Resistor (LDR) works on the principle of photoconductivity; as incident light intensity increases, it frees more charge carriers, thus decreasing its electrical resistance.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "16",
+            "question_text": "Which sensor can detect nearby objects?\nA) Proximity sensor\nB) Humidity sensor\nC) Touch sensor\nD) Pressure sensor",
+            "marks": 1,
+            "answer": "(A)\nExplanation: Proximity sensors are specifically designed to detect the presence or distance of nearby objects without any physical contact.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "17",
+            "question_text": "Moisture content in the soil _______ the earth soil resistance.\nA) Increases\nB) Decrease\nC) Does not affect\nD) Infinity",
+            "marks": 1,
+            "answer": "(B)\nExplanation: Water/moisture contains dissolved ions which significantly increase the conductivity of the soil, thereby directly decreasing the overall soil resistance.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "18",
+            "question_text": "The lines feeding the power from the distribution transformer to the distributors are called\nA) Feeders\nB) Surge Arrester\nC) Isolation Switches\nD) Circuit breaker",
+            "marks": 1,
+            "answer": "(A)\nExplanation: In an electrical distribution system, the primary lines delivering power from substations or distribution transformers directly to distribution points are called feeders.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "19",
+            "question_text": "The _______ link has two conductors one is positive, and the other one is negative to the earth.\nA) Biplor\nB) Unipolar\nC) Homepolar\nD) None of the above",
+            "marks": 1,
+            "answer": "(A)\nExplanation: A Bipolar (Biplor) HVDC transmission link uses two active conductors, one operating at a positive voltage and the other at a negative voltage relative to the ground.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "20",
+            "question_text": "Solar Cell also called as\nA) Photoconductive Cell\nB) Photovoltaic Cell\nC) Photo Emitter\nD) Photo Transistor",
+            "marks": 1,
+            "answer": "(B)\nExplanation: Solar cells operate on the photovoltaic effect to generate voltage and current from sunlight, hence they are also known as photovoltaic cells.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        }
+    ]
+}

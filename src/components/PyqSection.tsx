@@ -13,7 +13,6 @@ const SUBJECTS = [
   { code: "EEE", name: "Electrical And Electronics Engineering", title: "21EES101T: Electrical And Electronics Engineering" },
   { code: "SPCM", name: "Semiconductor Physics and Computational Methods", title: "21PYB102J: Semiconductor Physics and Computational Methods" },
   { code: "OOPS", name: "Object Oriented Programming", title: "21CSC101T: Object Oriented Design and Programming" },
-  { code: "OODP", name: "Object Oriented Design and Programming", title: "21CSC101T: Object Oriented Design and Programming" },
   { code: "ADVANCEDCALC", name: "Advanced Calculus and Complex Analysis", title: "21MAB102T: Advanced Calculus and Complex Analysis" },
   { code: "APP", name: "Advanced Programming Practice", title: "21CSC203P: Advanced Programming Practice" },
 ];
@@ -48,7 +47,19 @@ const SUBJECT_FILES: Record<string, string[]> = {
     "2025-05_ET_QP.json",
   ],
   COMMENG: [
-    "all_questions.json",
+    "2019_May_English_18LEH101J.json",
+    "2019_Nov_English_18LEH101J.json",
+    "2023_Dec_English_21LEH101T.json",
+    "2023_Jan_English_21LEH101T.json",
+    "2023_July_English_21LEH101T.json",
+    "2023_May_English_21LEH101T.json",
+    "2024_Dec_English_21LEH101T.json",
+    "2024_Jan_English_21LEH101T.json",
+    "2024_May_English_21LEH101T.json",
+    "2024_Nov_English_21LEH101T.json",
+    "2025_Dec_English_21LEH101T.json",
+    "2025_July_English_21LEH101T.json",
+    "2025_Nov_English_21LEH101T.json",
   ],
   PPS: [
     "2019-01_ET_QP.json",
@@ -128,7 +139,20 @@ const SUBJECT_FILES: Record<string, string[]> = {
     "2025_May_ET.json",
   ],
   EEE: [
-    "all_questions.json",
+    "18EES101J_May_2019.json",
+    "18EES101J_Nov_2019.json",
+    "21EES101T_Dec_2023_V1.json",
+    "21EES101T_Dec_2023_V2.json",
+    "21EES101T_Dec_2024.json",
+    "21EES101T_Dec_2025.json",
+    "21EES101T_Jan_2023.json",
+    "21EES101T_Jan_2024.json",
+    "21EES101T_Jul_2023.json",
+    "21EES101T_Jul_2025.json",
+    "21EES101T_July_2022.json",
+    "21EES101T_May_2023.json",
+    "21EES101T_May_2024.json",
+    "21EES101T_Nov_2024.json",
   ],
   OOPS: [
     "2019_Nov.json",
@@ -139,14 +163,36 @@ const SUBJECT_FILES: Record<string, string[]> = {
     "2024_May.json",
     "2025_July.json",
   ],
-  OODP: [
-    "all_questions.json",
-  ],
   ADVANCEDCALC: [
-    "all_questions.json",
+    "2019_May_ET.json",
+    "2019_Nov_ET.json",
+    "2022_May_ET.json",
+    "2023_July_ET.json",
+    "2023_May_ET.json",
+    "2023_Nov_ET.json",
+    "2024_May_ET.json",
+    "2024_Nov_ET.json",
+    "2025_Dec_ET.json",
+    "2025_July_ET_Set1.json",
+    "2025_July_ET_Set2.json",
+    "2025_May_ET.json",
   ],
   SPCM: [
-    "all_questions.json",
+    "DECEMBER_2023_21PYB102J.json",
+    "DEC_2024_21PYB102J.json",
+    "DEC_2025_21PYB102J.json",
+    "JANUARY_2023_21PYB102J.json",
+    "JANUARY_2024_21PYB102J.json",
+    "JAN_2023_21PYB102J.json",
+    "JULY_2023_21PYB102J.json",
+    "JULY_2024_21PYB102J.json",
+    "JULY_2025_21PYB102J.json",
+    "MAY_2019_18PYB103J.json",
+    "MAY_2023_21PYB102J.json",
+    "MAY_2024_21PYB102J.json",
+    "NOV_2018_18PYB103J.json",
+    "NOV_2024_21PYB102J.json",
+    "NOV_2025_21PYB102J.json",
   ],
   APP: [
     "2022 CLAT 1 Set A.json",
@@ -170,7 +216,6 @@ const SUBJECT_DIRS: Record<string, string> = {
   CHEMISTRY: "Chemistry",
   EEE: "ElectricalAndElectronicsEngineering",
   OOPS: "OOPS",
-  OODP: "OODP",
   ADVANCEDCALC: "AdvancedCalculus",
   SPCM: "SemiconductorPhysicsAndComputationalMethods",
   APP: "APP",
@@ -189,8 +234,6 @@ interface PaperData {
   questions: Question[];
   source?: string;
   paper_title?: string;
-  single?: boolean;
-  paper_source_key?: string;
 }
 
 function extractUnit(chapter?: string) {
@@ -332,25 +375,12 @@ const PyqSection: React.FC = () => {
             qs = data.questions;
           }
 
-          // Handle single=true case where all papers are in one file
-          if (!Array.isArray(data) && data.single === true) {
-            const sourceKey = data.paper_source_key || "paper_title";
-            for (const q of qs) {
-              const source = (q as unknown as Record<string, unknown>)[sourceKey] as string || file;
-              q.source = source;
-              allPapersSet.add(source);
-              const unit = extractUnit(q.chapter);
-              if (unit) allUnitsSet.add(unit);
-            }
-          } else {
-            // Original behavior: use file name or data.source
-            for (const q of qs) {
-              const source = Array.isArray(data) ? file : data.source || data.paper_title || file;
-              q.source = source;
-              allPapersSet.add(source);
-              const unit = extractUnit(q.chapter);
-              if (unit) allUnitsSet.add(unit);
-            }
+          const sourceName = file.replace(/\.json$/i, "");
+          for (const q of qs) {
+            q.source = sourceName;
+            allPapersSet.add(sourceName);
+            const unit = extractUnit(q.chapter);
+            if (unit) allUnitsSet.add(unit);
           }
           allQuestions = allQuestions.concat(qs);
         } catch {

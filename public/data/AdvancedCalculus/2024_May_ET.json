@@ -1,0 +1,158 @@
+{
+    "paper_title": "2024_May_ET",
+    "source": "2024_May_ET",
+    "questions": [
+        {
+            "question_number": "U1Q46",
+            "question_text": "$\\iint_0^{1,x} dx dy$ is equal to\n(A) 1\n(B) $1/2$\n(C) 2\n(D) 3",
+            "marks": 2,
+            "answer": "(B)\nExplanation: Assuming the proper notation intended is $\\int_0^1 \\int_0^x dy dx$. Inner integral evaluates to $x$. Outer integral is $\\int_0^1 x dx = [\\frac{x^2}{2}]_0^1 = \\frac{1}{2}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Integral Calculus"
+        },
+        {
+            "question_number": "U1Q47",
+            "question_text": "Area of the double integral in polar co-ordinates is equal to\n(A) $\\iint_R dr d\\theta$\n(B) $\\iint_R r^2 dr d\\theta$\n(C) $\\iint_R (r+1) dr d\\theta$\n(D) $\\iint_R r dr d\\theta$",
+            "marks": 2,
+            "answer": "(D)\nExplanation: To calculate area via double integration in polar coordinates, the integrand is 1 and the differential area is $r dr d\\theta$. Thus, Area = $\\iint_R r dr d\\theta$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Integral Calculus"
+        },
+        {
+            "question_number": "U1Q48",
+            "question_text": "In polar, the integral value of $\\int_0^\\infty \\int_0^{\\pi/2} e^{-(x^2+y^2)} dx dy =$\n(A) $\\pi/2$\n(B) $\\pi/4$\n(C) 0\n(D) $\\pi$",
+            "marks": 2,
+            "answer": "(B)\nExplanation: Converting to polar: $x^2+y^2=r^2$ and $dx dy = r dr d\\theta$. The first quadrant limits are $r \\in [0, \\infty)$ and $\\theta \\in [0, \\pi/2]$.\nIntegral becomes $\\int_0^{\\pi/2} d\\theta \\int_0^\\infty e^{-r^2} r dr$.\nInner integral: substitute $u=r^2$, $du=2r dr$. $\\int_0^\\infty \\frac{1}{2} e^{-u} du = \\frac{1}{2}$.\nOuter integral: $\\frac{1}{2} \\cdot [\\theta]_0^{\\pi/2} = \\frac{1}{2} \\cdot \\frac{\\pi}{2} = \\frac{\\pi}{4}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Integral Calculus"
+        },
+        {
+            "question_number": "U1Q49",
+            "question_text": "$\\int_0^1 \\int_0^2 \\int_0^4 dx dy dz$\n(A) 8\n(B) 4\n(C) 2\n(D) 6",
+            "marks": 2,
+            "answer": "(A)\nExplanation: The limits form a rectangular prism whose volume is calculated by the product of its dimensions: $1 \\times 2 \\times 4 = 8$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Integral Calculus"
+        },
+        {
+            "question_number": "U2Q46",
+            "question_text": "The maximum directional derivative of $\\phi = xyz^2$ at $(1,0,3)$ is\n(A) 9\n(B) $9\\mathbf{j} + 6\\mathbf{k}$\n(C) $2\\mathbf{i} + 4\\mathbf{j} - \\mathbf{k}$\n(D) -9",
+            "marks": 2,
+            "answer": "(A)\nExplanation: The maximum directional derivative is $|\\nabla \\phi|$.\n$\\nabla \\phi = \\frac{\\partial \\phi}{\\partial x}\\mathbf{i} + \\frac{\\partial \\phi}{\\partial y}\\mathbf{j} + \\frac{\\partial \\phi}{\\partial z}\\mathbf{k} = yz^2\\mathbf{i} + xz^2\\mathbf{j} + 2xyz\\mathbf{k}$.\nAt $(1,0,3)$, $\\nabla \\phi = (0)(3^2)\\mathbf{i} + (1)(3^2)\\mathbf{j} + 2(1)(0)(3)\\mathbf{k} = 0\\mathbf{i} + 9\\mathbf{j} + 0\\mathbf{k}$.\nMagnitude = $\\sqrt{0^2 + 9^2 + 0^2} = 9$.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Vector Calculus"
+        },
+        {
+            "question_number": "U2Q47",
+            "question_text": "$\\text{curl}(\\text{grad } \\phi)$\n(A) -1\n(B) 1\n(C) 0\n(D) 2",
+            "marks": 2,
+            "answer": "(C)\nExplanation: The curl of the gradient of any scalar field evaluates to the zero vector. ($\\nabla \\times \\nabla \\phi = 0$).",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Vector Calculus"
+        },
+        {
+            "question_number": "U2Q48",
+            "question_text": "The value of 'a' so that $\\vec{F} = (x+z)\\mathbf{i}+(3x+ay)\\mathbf{j}+(x-5z)\\mathbf{k}$ is solenoidal\n(A) 1\n(B) 4\n(C) 2\n(D) 3",
+            "marks": 2,
+            "answer": "(B)\nExplanation: A vector field is solenoidal if its divergence is zero. \n$\\nabla \\cdot \\vec{F} = \\frac{\\partial}{\\partial x}(x+z) + \\frac{\\partial}{\\partial y}(3x+ay) + \\frac{\\partial}{\\partial z}(x-5z) = 0$.\n$1 + a - 5 = 0 \\implies a - 4 = 0 \\implies a = 4$.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Vector Calculus"
+        },
+        {
+            "question_number": "U2Q49",
+            "question_text": "The value of $\\int_C \\vec{F} \\cdot d\\vec{r}$ is\n(A) $\\iiint_V \\text{div } \\vec{F} dv$\n(B) $\\iint_S \\text{div } \\vec{F} \\cdot \\hat{n} ds$\n(C) $\\iint_S \\vec{F} \\cdot \\hat{n} ds$\n(D) $\\iint_S \\text{curl } \\vec{F} \\cdot \\hat{n} ds$",
+            "marks": 2,
+            "answer": "(D)\nExplanation: By Stokes' theorem, the line integral of a vector field $\\vec{F}$ around a closed curve $C$ is equal to the surface integral of the curl of $\\vec{F}$ over the surface $S$ bounded by $C$. Thus, $\\oint_C \\vec{F} \\cdot d\\vec{r} = \\iint_S (\\nabla \\times \\vec{F}) \\cdot \\hat{n} ds = \\iint_S \\text{curl } \\vec{F} \\cdot \\hat{n} ds$. (Note: Option A is divergence theorem, matching closed surface flux $\\iint \\vec{F}\\cdot \\hat{n} ds$. Since the question asks for line integral $\\int_C \\vec{F}\\cdot d\\vec{r}$, Stokes' theorem is the correct match.)",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Vector Calculus"
+        },
+        {
+            "question_number": "U3Q46",
+            "question_text": "$L[\\sinh at]$ is\n(A) $\\frac{a}{s^2-a^2}$\n(B) $\\frac{s}{s^2-a^2}$\n(C) $\\frac{s}{s^2+a^2}$\n(D) $\\frac{a}{s^2+a^2}$",
+            "marks": 2,
+            "answer": "(A)\nExplanation: The Laplace transform of the hyperbolic sine function, $\\sinh at$, is a standard formula derived from the definition $\\frac{e^{at}-e^{-at}}{2}$, yielding $\\frac{a}{s^2-a^2}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Laplace Transform"
+        },
+        {
+            "question_number": "U3Q47",
+            "question_text": "An example of a function for which the Laplace transform does not exist is\n(A) $f(t)=t^2$\n(B) $f(t)=\\tan t$\n(C) $f(t)=\\sin t$\n(D) $f(t)=e^{-at}$",
+            "marks": 2,
+            "answer": "(B)\nExplanation: The function $\\tan t$ possesses infinite, non-integrable singularities (at $t = \\pi/2, 3\\pi/2$, etc.) on the positive real axis, making it fail the piecewise continuity requirement for the existence of a Laplace transform.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Laplace Transform"
+        },
+        {
+            "question_number": "U3Q48",
+            "question_text": "Find $L^{-1} \\left[\\frac{1}{(s+a)^2}\\right]$\n(A) $t e^t$\n(B) $t e^{-at}$\n(C) $t$\n(D) $e^{at}$",
+            "marks": 2,
+            "answer": "(B)\nExplanation: We know that $L^{-1}(\\frac{1}{s^2}) = t$. Applying the First Shifting Theorem, replacing $s$ with $s+a$ means we multiply the time-domain function by $e^{-at}$. Therefore, the inverse is $t e^{-at}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Laplace Transform"
+        },
+        {
+            "question_number": "U3Q49",
+            "question_text": "Using the initial value theorem, find the value of the function $f(t) = a e^{-bt}$\n(A) $a$\n(B) $a^2$\n(C) $ab$\n(D) 0",
+            "marks": 2,
+            "answer": "(A)\nExplanation: The initial value theorem evaluates the initial value of the function in the time domain: $\\lim_{t \\to 0} f(t)$. For $f(t) = a e^{-bt}$, substituting $t=0$ gives $a e^0 = a \\cdot 1 = a$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Laplace Transform"
+        },
+        {
+            "question_number": "U4Q46",
+            "question_text": "If $u$ and $v$ are harmonic then $u+iv$ is\n(A) Harmonic\n(B) Need not be analytic\n(C) Analytic\n(D) Continuous",
+            "marks": 2,
+            "answer": "(B)\nExplanation: For $u+iv$ to be analytic, it is not enough for $u$ and $v$ to merely be harmonic; they must be harmonic conjugates, meaning they must specifically satisfy the Cauchy-Riemann equations. Any two random harmonic functions added as $u+iv$ need not be analytic.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Analytic Functions"
+        },
+        {
+            "question_number": "U4Q47",
+            "question_text": "The invariant points of the transformation $w = \\frac{1-iz}{z-i}$\n(A) 0\n(B) $\\pm i$\n(C) $\\pm 2$\n(D) $\\pm 1$",
+            "marks": 2,
+            "answer": "(D)\nExplanation: Set $w=z$. $z = \\frac{1-iz}{z-i} \\implies z(z-i) = 1-iz \\implies z^2 - iz = 1 - iz \\implies z^2 = 1$.\nTherefore, $z = \\pm 1$.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Analytic Functions"
+        },
+        {
+            "question_number": "U4Q48",
+            "question_text": "The transformation $w = z+c$ where $c$ is a complex constant represents\n(A) Rotation\n(B) Magnification\n(C) Translation\n(D) Magnification and rotation",
+            "marks": 2,
+            "answer": "(C)\nExplanation: The transformation maps each point $z$ to a new point $w$ by shifting it by a constant vector $c$. This describes a translation.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Analytic Functions"
+        },
+        {
+            "question_number": "U4Q49",
+            "question_text": "An analytic function with constant modulus is\n(A) Zero\n(B) Analytic\n(C) Constant\n(D) Harmonic",
+            "marks": 2,
+            "answer": "(C)\nExplanation: If $f(z)$ is analytic and $|f(z)|$ is constant in a domain, then $f(z)$ reduces to a constant function throughout that domain.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Analytic Functions"
+        },
+        {
+            "question_number": "U5Q46",
+            "question_text": "The value $\\oint_C \\frac{z dz}{z-3}$ where $C$ is the circle $|z|=1$ is\n(A) 0\n(B) $\\pi/2 i$\n(C) $\\pi/2$\n(D) 3",
+            "marks": 2,
+            "answer": "(A)\nExplanation: The integrand $f(z) = \\frac{z}{z-3}$ has a simple pole at $z=3$. The contour $C$ is $|z|=1$. Because $|3| = 3 > 1$, the pole lies outside the contour. By Cauchy's Integral Theorem, the integral evaluates to 0.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Complex Integration"
+        },
+        {
+            "question_number": "U5Q47",
+            "question_text": "If $f(z)$ is analytic inside an on $C$, the value of $\\int_C \\frac{f(z)}{z-a} dz$ is ______\n(A) $f(a)$\n(B) $2\\pi i f(a)$\n(C) $\\pi i f(a)$\n(D) 0",
+            "marks": 2,
+            "answer": "(B)\nExplanation: Cauchy's Integral Formula explicitly states that the contour integral of $\\frac{f(z)}{z-a}$ equals $2\\pi i f(a)$.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Complex Integration"
+        },
+        {
+            "question_number": "U5Q48",
+            "question_text": "Let $C:|z-a|=r$ be a circle, $f(z)$ can be expanded as a Taylor's series if\n(A) $f(z)$ is defined within $C$\n(B) $f(z)$ is analytic within $C$\n(C) $f(z)$ is not analytic within $C$\n(D) $f(z)$ is analytic outside $C$",
+            "marks": 2,
+            "answer": "(B)\nExplanation: Taylor's Theorem for complex variables requires the function $f(z)$ to be analytic everywhere inside the circular region $C$ centered at $a$.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Complex Integration"
+        }
+    ]
+}

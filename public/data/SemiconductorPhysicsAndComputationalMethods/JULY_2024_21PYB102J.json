@@ -1,0 +1,166 @@
+{
+    "paper_title": "JULY_2024_21PYB102J",
+    "source": "JULY_2024_21PYB102J",
+    "questions": [
+        {
+            "question_number": "Q1",
+            "question_text": "Free electron moves always in _______ direction.\n(A) Random directions\n(B) Positive directions\n(C) Negative directions\n(D) Up and down",
+            "marks": 1,
+            "answer": "(A)\nExplanation: In the absence of an external electric field, free electrons in a metal move randomly due to thermal energy.",
+            "answer_source": "generated",
+            "chapter": "Unit 1-Energy Bands in Solids"
+        },
+        {
+            "question_number": "Q2",
+            "question_text": "Which of the following method for the band structure calculation is also known as “LCAO” approximation?\n(A) Cellular method\n(B) Tight binding method\n(C) APW method\n(D) Pseudo potential method",
+            "marks": 1,
+            "answer": "(B)\nExplanation: The tight-binding model uses a Linear Combination of Atomic Orbitals (LCAO) to calculate the electronic band structure.",
+            "answer_source": "generated",
+            "chapter": "Unit 1-Energy Bands in Solids"
+        },
+        {
+            "question_number": "Q3",
+            "question_text": "What is the shape of E-K diagram for a free electron?\n(A) Square\n(B) Circle\n(C) Parabola\n(D) Straight line",
+            "marks": 1,
+            "answer": "(C)\nExplanation: For a free electron, the energy E is proportional to the square of the wave vector k (E = ħ²k²/2m), which represents a parabola.",
+            "answer_source": "generated",
+            "chapter": "Unit 1-Energy Bands in Solids"
+        },
+        {
+            "question_number": "Q4",
+            "question_text": "_______ explains the behaviour of metal, semiconductor and insulator.\n(A) Classical free electron theory\n(B) Band theory\n(C) Drude and Lorentz theory\n(D) Quantum free electron theory",
+            "marks": 1,
+            "answer": "(B)\nExplanation: Band theory explains the electrical properties of materials based on the energy gap between the valence and conduction bands.",
+            "answer_source": "generated",
+            "chapter": "Unit 1-Energy Bands in Solids"
+        },
+        {
+            "question_number": "Q5",
+            "question_text": "If “n” is number of electrons in the conduction band “p” is number of holes in the valence band, for an intrinsic semiconductor ________.\n(A) n = p\n(B) n > p\n(C) n < p\n(D) n ≠ p at T = ok",
+            "marks": 1,
+            "answer": "(A)\nExplanation: In an intrinsic semiconductor, every electron excited to the conduction band leaves behind exactly one hole in the valence band.",
+            "answer_source": "generated",
+            "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
+        },
+        {
+            "question_number": "Q6",
+            "question_text": "The energy difference between vacuum level to the conduction band edge is termed as ________.\n(A) Fermi energy\n(B) Work function\n(C) Ionization potential\n(D) Electron affinity",
+            "marks": 1,
+            "answer": "(D)\nExplanation: Electron affinity is the energy released when an electron is added to the conduction band from the vacuum level.",
+            "answer_source": "generated",
+            "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
+        },
+        {
+            "question_number": "Q7",
+            "question_text": "In LED what is the shape of domes made from plastics which is used to minimize the losses caused by bulk absorption thereby increasing the external efficiency?\n(A) Hemispherical\n(B) Cylindrical\n(C) Octahedral\n(D) Spherical",
+            "marks": 1,
+            "answer": "(A)\nExplanation: Hemispherical domes help in reducing total internal reflection and bulk absorption losses.",
+            "answer_source": "generated",
+            "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
+        },
+        {
+            "question_number": "Q8",
+            "question_text": "Which one of the following is a three particle transition?\n(A) Auger transition\n(B) Photon transition\n(C) Phonon transition\n(D) Band to band transition",
+            "marks": 1,
+            "answer": "(A)\nExplanation: Auger recombination is a non-radiative process involving three carriers (e.g., two electrons and one hole).",
+            "answer_source": "generated",
+            "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
+        },
+        {
+            "question_number": "Q9",
+            "question_text": "The Fermi’s golden rule helps to identify the ________.\n(A) Momentum of electrons\n(B) Transition rate per unit volume\n(C) Velocity of light\n(D) Absorption energy of electron",
+            "marks": 1,
+            "answer": "(B)\nExplanation: Fermi's golden rule is used to calculate the probability of a quantum transition (transition rate) per unit time.",
+            "answer_source": "generated",
+            "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
+        },
+        {
+            "question_number": "Q10",
+            "question_text": "The optical joint density of states is directly proportional to ________.\n(A) E⁻¹/²\n(B) E\n(C) E¹/²\n(D) E²",
+            "marks": 1,
+            "answer": "(C)\nExplanation: For bulk semiconductors with parabolic bands, the joint density of states is proportional to the square root of the energy.",
+            "answer_source": "generated",
+            "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
+        },
+        {
+            "question_number": "Q11",
+            "question_text": "The process of inducing radiative emission from a molecule with a help of another photon is called ________.\n(A) Carrier generation\n(B) Stimulated emission\n(C) Stimulated absorption\n(D) Spontaneous emission",
+            "marks": 1,
+            "answer": "(B)\nExplanation: Stimulated emission occurs when an incoming photon induces an excited electron to drop to a lower state and emit a second, identical photon.",
+            "answer_source": "generated",
+            "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
+        },
+        {
+            "question_number": "Q12",
+            "question_text": "The total current, through the junction of a photovoltaic cell is ________.\n(A) Itotal = -IL\n(B) Itotal = Io(e^(qv/βKT) - 1)\n(C) Itotal = Io(e^(qv/βKT) - 1) + IL\n(D) Itotal = Io(e^(qv/βKT) - 1) - IL",
+            "marks": 1,
+            "answer": "(D)\nExplanation: In a solar cell, the total current is the diode dark current minus the light-generated photocurrent (IL).",
+            "answer_source": "generated",
+            "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
+        },
+        {
+            "question_number": "Q13",
+            "question_text": "The resistivity of a bar measured through two probes 1 and 2 is ________.\n(A) ρ = RV / l\n(B) ρ = Rl / V\n(C) ρ = Rwh / l\n(D) ρ = Rl / wh",
+            "marks": 1,
+            "answer": "(C)\nExplanation: Resistivity ρ = R * (Area/Length). For a bar with width 'w' and height 'h', Area = w * h. Thus ρ = Rwh/l.",
+            "answer_source": "generated",
+            "chapter": "Unit 4- Electrical and Optical Measurements"
+        },
+        {
+            "question_number": "Q14",
+            "question_text": "________ equation is very useful in understanding the transport properties such as electrical conductivity, thermal conductivity and thermoelectric power.\n(A) Planck Einstein equation\n(B) Heisenberg equation\n(C) Euler equation\n(D) Boltzmann transport equation",
+            "marks": 1,
+            "answer": "(D)\nExplanation: The Boltzmann Transport Equation (BTE) describes the statistical distribution of particles and is fundamental for calculating transport coefficients.",
+            "answer_source": "generated",
+            "chapter": "Unit 4- Electrical and Optical Measurements"
+        },
+        {
+            "question_number": "Q15",
+            "question_text": "At room temperature, the voltage across the depletion layer for silicon is about ________ Volts.\n(A) 0.3 - 0.4 Volts\n(B) 0.6 - 0.7 Volts\n(C) 0.5 - 0.6 Volts\n(D) 0.2 - 0.3 Volts",
+            "marks": 1,
+            "answer": "(B)\nExplanation: The built-in potential barrier (Vbi) for a standard Silicon p-n junction is typically around 0.6 to 0.7 V.",
+            "answer_source": "generated",
+            "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
+        },
+        {
+            "question_number": "Q16",
+            "question_text": "What is the bandgap of GaAs semiconductor whose energy of top of valence band and bottom of conduction band comes to be 0.8 eV and 2.2 eV.\n(A) Eg = 1.1 eV\n(B) Eg = 2.2 eV\n(C) Eg = 0.8 eV\n(D) Eg = 1.4 eV",
+            "marks": 1,
+            "answer": "(D)\nExplanation: Bandgap Eg = Ec - Ev = 2.2 eV - 0.8 eV = 1.4 eV.",
+            "answer_source": "generated",
+            "chapter": "Unit 1-Energy Bands in Solids"
+        },
+        {
+            "question_number": "Q17",
+            "question_text": "________ density of states is independent of energy.\n(A) 3D\n(B) 0D\n(C) 1D\n(D) 2D",
+            "marks": 1,
+            "answer": "(D)\nExplanation: In a 2D quantum well system, the density of states is a constant step function, making it independent of energy within each subband.",
+            "answer_source": "generated",
+            "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
+        },
+        {
+            "question_number": "Q18",
+            "question_text": "In nanometer length scale the corresponding property is ________ dependent.\n(A) Shape\n(B) Size\n(C) Size and shape\n(D) Shape and volume",
+            "marks": 1,
+            "answer": "(C)\nExplanation: Properties of nanomaterials change significantly based on both their size (quantum confinement) and their specific shape/morphology.",
+            "answer_source": "generated",
+            "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
+        },
+        {
+            "question_number": "Q19",
+            "question_text": "In an armchair carbon nanotube, the geometry is ________.\n(A) (n, 0)\n(B) (n, m)\n(C) (n, 1)\n(D) (n, n)",
+            "marks": 1,
+            "answer": "(D)\nExplanation: Armchair carbon nanotubes are identified by the chiral indices where n = m, denoted as (n, n).",
+            "answer_source": "generated",
+            "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
+        },
+        {
+            "question_number": "Q20",
+            "question_text": "________ is the fabrication process for carbon nanotubes carried out at vacuum conditions.\n(A) Chemical vapour deposition\n(B) Arc-discharge method\n(C) Powder method\n(D) Physical vapour deposition",
+            "marks": 1,
+            "answer": "(D)\nExplanation: Physical Vapour Deposition (PVD) techniques, such as laser ablation or sputtering, are typically conducted under high vacuum conditions.",
+            "answer_source": "generated",
+            "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
+        }
+    ]
+}
