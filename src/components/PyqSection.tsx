@@ -12,7 +12,7 @@ const SUBJECTS = [
   { code: "CHEMISTRY", name: "Chemistry", title: "18CYB101J: Chemistry" },
   { code: "EEE", name: "Electrical And Electronics Engineering", title: "21EES101T: Electrical And Electronics Engineering" },
   { code: "SPCM", name: "Semiconductor Physics and Computational Methods", title: "21PYB102J: Semiconductor Physics and Computational Methods" },
-  { code: "OOPS", name: "Object Oriented Design and Programming", title: "21CSC101T: Object Oriented Design and Programming" },
+  { code: "OOPS", name: "Object Oriented Programming", title: "21CSC101T: Object Oriented Design and Programming" },
   { code: "OODP", name: "Object Oriented Design and Programming", title: "21CSC101T: Object Oriented Design and Programming" },
   { code: "ADVANCEDCALC", name: "Advanced Calculus and Complex Analysis", title: "21MAB102T: Advanced Calculus and Complex Analysis" },
   { code: "APP", name: "Advanced Programming Practice", title: "21CSC203P: Advanced Programming Practice" },
@@ -234,7 +234,7 @@ function markdownToHtml(md?: string) {
 }
 
 const PyqSection: React.FC = () => {
-  const [subject, setSubject] = useState("SPCM");
+  const [subject, setSubject] = useState("APP");
   const [questions, setQuestions] = useState<Question[]>([]);
   const [papers, setPapers] = useState<string[]>([]);
   const [units, setUnits] = useState<string[]>([]);
