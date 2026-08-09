@@ -1,0 +1,198 @@
+{
+    "paper_title": "21EES101T_July_2022",
+    "source": "21EES101T_July_2022",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "Find the maximum power transferred to the load for given Thevenin's equivalent circuit?\n(A) 5W\n(B) 2.5W\n(C) 10W\n(D) 25W",
+            "marks": 1,
+            "answer": "(C)\nExplanation: Maximum power is transferred when RL = Rth = 2.5 Ω. Power P_max = (Vth^2) / (4*Rth) = (10^2) / (4 * 2.5) = 100 / 10 = 10 W.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "2",
+            "question_text": "The nodal method of circuit analysis is based on\n(A) Kirchhoff current law\n(B) Kirchhoff voltage law\n(C) Thevenin's theorem\n(D) Norton's theorem",
+            "marks": 1,
+            "answer": "(A)\nExplanation: Nodal voltage analysis relies systematically on applying Kirchhoff's Current Law (KCL) at each node.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "3",
+            "question_text": "For a three phase star connected system with a line voltage of 400V, calculate the value of phase voltage.\n(A) 210.54 V\n(B) 275.28 V\n(C) 331.33 V\n(D) 230.94 V",
+            "marks": 1,
+            "answer": "(D)\nExplanation: In a star-connected system, V_phase = V_line / √3 = 400 / 1.732 = 230.94 V.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "4",
+            "question_text": "A 100 Watts lamp is connected across 220V DC supply. Find the value of current drawn by the lamp?\n(A) 2.2A\n(B) 0.454A\n(C) 10A\n(D) 5A",
+            "marks": 1,
+            "answer": "(B)\nExplanation: From P = VI, Current I = P / V = 100W / 220V = 0.4545 A.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "5",
+            "question_text": "According to superposition theorem, while considering an individual source, all other voltage sources can be substituted as\n(A) Current sources\n(B) Short circuit\n(C) Open circuit\n(D) External resistor",
+            "marks": 1,
+            "answer": "(B)\nExplanation: By the principles of superposition, to eliminate their effect, ideal voltage sources are replaced by a short circuit (0 V).",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "6",
+            "question_text": "Which of the following is not a terminal of BJT?\n(A) Gate\n(B) Base\n(C) Emitter\n(D) Collector",
+            "marks": 1,
+            "answer": "(A)\nExplanation: Gate is associated with FET devices. A BJT has Emitter, Base, and Collector terminals.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "7",
+            "question_text": "JFET is _______ device.\n(A) Voltage controlled\n(B) Current controlled\n(C) Impedance controlled\n(D) Frequency controlled",
+            "marks": 1,
+            "answer": "(A)\nExplanation: A Junction Field Effect Transistor (JFET) operates by controlling the current using the input voltage applied to its gate, making it a voltage-controlled device.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "8",
+            "question_text": "Which of the following device is used to convert AC to DC supply?\n(A) Rectifier\n(B) Inverter\n(C) Cyclo converter\n(D) Chopper",
+            "marks": 1,
+            "answer": "(A)\nExplanation: A rectifier is utilized specifically to convert alternating current (AC) to direct current (DC).",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "9",
+            "question_text": "The output of a logic gate is '1' when all its input is at logic '0'. The gate is\n(A) AND\n(B) EX-OR\n(C) OR\n(D) EX-NOR",
+            "marks": 1,
+            "answer": "(D)\nExplanation: For an EX-NOR gate, the output is '1' when all inputs are identical, meaning EX-NOR(0,0) evaluates to '1'.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "10",
+            "question_text": "Simplify the following Boolean expression Y(A,B,C) = Σm(0,1,2,3,6)\n(A) Y = \\overline{A} + B\\overline{C}\n(B) Y = A + B\\overline{C}\n(C) Y = \\overline{A} + BC\n(D) Y = BC",
+            "marks": 1,
+            "answer": "(A)\nExplanation: Grouping minterms {0,1,2,3} yields A' and grouping {2,6} yields BC'. The simplified equation is Y = A' + BC'.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "11",
+            "question_text": "The function of brushes in a DC generator is _______\n(A) To increase the voltage\n(B) To increase the current\n(C) To bring the power developed to the load\n(D) To provide flux density in air gap",
+            "marks": 1,
+            "answer": "(C)\nExplanation: Carbon brushes ride on the commutator to collect the generated current and transfer the electrical power developed in the rotating armature to the external stationary load circuit.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "13",
+            "question_text": "The stator frame of an induction motor is usually made of _______\n(A) Silicon steel\n(B) Cast iron\n(C) Aluminum\n(D) Bronze",
+            "marks": 1,
+            "answer": "(B)\nExplanation: The outer body (stator frame) of induction motors provides structural support and protection and is traditionally made of robust cast iron.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "14",
+            "question_text": "The efficiency of an induction motor is about _______\n(A) 100%\n(B) 80 – 90%\n(C) 50 – 60%\n(D) Less than 50%",
+            "marks": 1,
+            "answer": "(B)\nExplanation: Standard 3-phase induction motors generally have a high operational efficiency typically in the range of 80% to 90%.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "15",
+            "question_text": "Which of the following is not an advantage of BLDC motor over conventional DC motor?\n(A) Less maintenance\n(B) Long life\n(C) No risk of explosion or possibility of RF radiation\n(D) Low cost",
+            "marks": 1,
+            "answer": "(D)\nExplanation: Because BLDC motors lack mechanical commutators, they are low-maintenance and long-lasting, but they require complex electronic controllers which makes them more expensive than conventional DC motors.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "16",
+            "question_text": "Which of the following represent active transducer?\n(A) Strain gauge\n(B) Thermistor\n(C) LVDT\n(D) Thermocouple",
+            "marks": 1,
+            "answer": "(D)\nExplanation: A thermocouple is an active transducer because it self-generates an output voltage upon experiencing a temperature gradient without the need for an external excitation supply.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "17",
+            "question_text": "What is the principle of operation of LVDT?\n(A) Mutual inductance\n(B) Self-inductance\n(C) Permanence\n(D) Reluctance",
+            "marks": 1,
+            "answer": "(A)\nExplanation: The Linear Variable Differential Transformer operates on the principle of variable mutual inductance between a primary and two secondary coils.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "18",
+            "question_text": "The symbol represents _______ device.\n(A) LED\n(B) Photodiode\n(C) LCD\n(D) Laser diode",
+            "marks": 1,
+            "answer": "(A)\nExplanation: The circuit symbol showing a standard diode with outgoing arrows represents light emission, meaning it is a Light Emitting Diode (LED).",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "19",
+            "question_text": "The photodiode will be generally connected in _______\n(A) Forward bias\n(B) Reverse bias\n(C) No biasing required\n(D) Neutral",
+            "marks": 1,
+            "answer": "(B)\nExplanation: A photodiode is operated in reverse bias mode to widen its depletion region, allowing light to generate electron-hole pairs effectively increasing the reverse leakage current.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "20",
+            "question_text": "A device is an adjustable resistor whose resistance differs inversely with the concentration of light?\n(A) Photoresistor\n(B) Thermistor\n(C) Photo transistor\n(D) Thermocouple",
+            "marks": 1,
+            "answer": "(A)\nExplanation: A photoresistor or LDR (Light Dependent Resistor) decreases in resistance as the incident light intensity (concentration of light) increases.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "21",
+            "question_text": "Earthing is an essential protection to provide against.\n(A) Danger of electric shock\n(B) Overloading\n(C) Voltage fluctuation\n(D) High temperature of the conductors",
+            "marks": 1,
+            "answer": "(A)\nExplanation: Earthing ensures that any leakage currents are diverted safely to the ground, offering primary protection against electric shocks.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "22",
+            "question_text": "The size of the earth wire is determined by\n(A) The atmospheric conditions\n(B) The voltage of the service wire\n(C) The ampere capacity of the service wire\n(D) The frequency range of service wire",
+            "marks": 1,
+            "answer": "(C)\nExplanation: The gauge/thickness of an earth wire must be sufficiently large to carry safely any potential fault current, hence it is directly based on the ampere capacity rating of the service wire.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "23",
+            "question_text": "Electric vehicles and hybrid vehicles have the following components common except _______\n(A) Battery\n(B) ECU\n(C) Generator\n(D) Internal combustion engine",
+            "marks": 1,
+            "answer": "(D)\nExplanation: Pure Electric Vehicles run strictly on electricity. Hybrid vehicles, however, combine an Internal Combustion Engine (ICE) with an electric propulsion system.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "24",
+            "question_text": "Photovoltaic cell or solar cell converts _______\n(A) Thermal energy into electricity\n(B) Solar radiation into electricity\n(C) Solar radiation into thermal energy\n(D) Solar radiation into kinetic energy",
+            "marks": 1,
+            "answer": "(B)\nExplanation: Solar or photovoltaic cells use the photovoltaic effect to directly convert incident solar radiation (light) into electrical energy.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "25",
+            "question_text": "What is the frequency range of AC supply followed in Indian standard?\n(A) 50 Hz\n(B) 60 Hz\n(C) 40 Hz\n(D) 75 Hz",
+            "marks": 1,
+            "answer": "(A)\nExplanation: The standard frequency for AC power supply uniformly maintained across the Indian grid is 50 Hz.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        }
+    ]
+}

@@ -1,0 +1,166 @@
+{
+    "paper_title": "21EES101T_Jul_2023",
+    "source": "21EES101T_Jul_2023",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "A 60 Watts lamp is connected across 120 V D.C. supply. Determine the value of current drawn by the lamp.\n(A) 0.75A\n(B) 0.5A\n(C) 0.25A\n(D) 1A",
+            "marks": 1,
+            "answer": "(B)\nExplanation: From the power formula P = VI, Current I = P / V = 60W / 120V = 0.5 A.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "2",
+            "question_text": "For a three phase star connected system with a line voltage of 400V, calculate the value of phase voltage.\n(A) 210.54V\n(B) 275.28V\n(C) 331.33V\n(D) 230.94V",
+            "marks": 1,
+            "answer": "(D)\nExplanation: In a balanced star configuration, the phase voltage Vph = VLine / √3 = 400 / 1.732 ≈ 230.94 V.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "3",
+            "question_text": "To neglect the current source in Thevenin's theorem, the terminals across the sources are _______\n(A) Replaced by source resistance\n(B) Replaced by capacitance\n(C) Short circuited\n(D) Open circuited",
+            "marks": 1,
+            "answer": "(D)\nExplanation: An ideal current source has infinite internal resistance, so to deactivate or 'neglect' it during equivalent resistance calculation, it must be open-circuited.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "4",
+            "question_text": "For a purely resistive circuit, the power factor is _______.\n(A) 1\n(B) 0.75\n(C) 0.5\n(D) Zero",
+            "marks": 1,
+            "answer": "(A)\nExplanation: In a pure resistive AC circuit, voltage and current are perfectly in phase, making the phase angle 0°. Thus, Power Factor = cos(0) = 1.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "5",
+            "question_text": "Among the following, which transistor has silicon dioxide insulating layer?\n(A) Diode\n(B) BJT\n(C) FET\n(D) MOSFET",
+            "marks": 1,
+            "answer": "(D)\nExplanation: MOSFET stands for Metal-Oxide-Semiconductor Field-Effect Transistor, where the gate is electrically isolated from the channel by a thin layer of silicon dioxide.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "6",
+            "question_text": "A combination of AND function and NOT function is results in\n(A) AND\n(B) OR\n(C) NAND\n(D) NOR",
+            "marks": 1,
+            "answer": "(C)\nExplanation: Inverting the output of an AND gate produces a Not-AND logic, universally referred to as a NAND gate.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "7",
+            "question_text": "In an NPN transistors, the majority carriers in the base are _______.\n(A) Free electrons\n(B) Holes\n(C) Both holes and electrons\n(D) Neither holes nor electrons",
+            "marks": 1,
+            "answer": "(B)\nExplanation: The central base region of an NPN transistor is formed from P-type semiconductor material, making 'holes' the majority charge carriers.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "8",
+            "question_text": "The knee voltage (cut-in voltage) of silicon diode is _______.\n(A) 0.2 V\n(B) 0.5 V\n(C) 0.7 V\n(D) 1 V",
+            "marks": 1,
+            "answer": "(C)\nExplanation: The typical forward threshold or knee voltage required to overcome the depletion region barrier in a standard silicon PN junction diode is approximately 0.7 V.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "9",
+            "question_text": "Among the following, which motor has permanent magnets in their rotor construction?\n(A) DC motor\n(B) Transformer\n(C) Induction motor\n(D) BLDC motor",
+            "marks": 1,
+            "answer": "(D)\nExplanation: A Brushless DC (BLDC) motor eliminates physical brushes by having permanent magnets mounted directly on its rotor and the electromagnets on the stator.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "10",
+            "question_text": "A chopper is a device that converts _______.\n(A) Fixed AC to variable AC\n(B) Fixed DC to variable AC\n(C) Fixed AC to variable DC\n(D) Fixed DC to variable DC",
+            "marks": 1,
+            "answer": "(D)\nExplanation: In power electronics, a chopper is a solid-state DC-to-DC converter that regulates a fixed DC input into a controlled, variable DC output.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "11",
+            "question_text": "Fleming left hand rule is applicable to _______.\n(A) DC motor\n(B) Transformer\n(C) DC generator\n(D) AC motor",
+            "marks": 1,
+            "answer": "(A)\nExplanation: Fleming's Left-Hand Rule is classically utilized to determine the direction of the mechanical force on a current-carrying conductor in a magnetic field, perfectly describing motor action.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "12",
+            "question_text": "Stepper motor is a _______ device.\n(A) Mechanical\n(B) Analog\n(C) Incremental\n(D) Storage",
+            "marks": 1,
+            "answer": "(C)\nExplanation: A stepper motor is inherently a digital electromechanical device that moves the rotor in precise incremental steps based on input pulses.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "13",
+            "question_text": "In PMMC instruments, the damping torque is provided by\n(A) Air friction\n(B) Magnetic damping\n(C) Gravity\n(D) Eddy current damping",
+            "marks": 1,
+            "answer": "(D)\nExplanation: PMMC (Permanent Magnet Moving Coil) instruments utilize an aluminum former for the coil. Movement through the magnetic field induces eddy currents in the former, creating excellent eddy current damping.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "14",
+            "question_text": "Moving iron instruments are mainly preferred to measure _______ quantities.\n(A) DC\n(B) AC\n(C) Both AC and DC\n(D) Neither AC nor DC",
+            "marks": 1,
+            "answer": "(C)\nExplanation: Moving Iron instruments operate based on magnetic attraction or repulsion, which functions regardless of current direction, making them suitable to measure both AC and DC quantities.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "15",
+            "question_text": "The commonly used material in fabricating solar cell is _______.\n(A) Germanium\n(B) Silicon\n(C) Aluminium\n(D) Silver",
+            "marks": 1,
+            "answer": "(B)\nExplanation: Silicon is extensively used to fabricate solar cells due to its ideal bandgap for solar spectrum absorption and the maturity of silicon manufacturing processes.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "16",
+            "question_text": "Thermocouple is working under _______ effect.\n(A) Peltier\n(B) Seebeck\n(C) Thomson\n(D) Hall",
+            "marks": 1,
+            "answer": "(B)\nExplanation: Thermocouples measure temperature differences by relying on the Seebeck effect, which generates an electromotive force (EMF) at the junction of two dissimilar metals.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "17",
+            "question_text": "Which one is the most common fuel used in fuel cells?\n(A) Water\n(B) Hydrogen\n(C) Nitrogen\n(D) Sulphur",
+            "marks": 1,
+            "answer": "(B)\nExplanation: Hydrogen is the primary energy carrier and most common fuel used in commercial fuel cells to generate electricity, with water as the only byproduct.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "18",
+            "question_text": "Which types of battery is highly preferred for EVs?\n(A) Lithium-ion battery\n(B) Lead-acid battery\n(C) Nickel-cadmium battery\n(D) Sodium-sulphur",
+            "marks": 1,
+            "answer": "(A)\nExplanation: Lithium-ion batteries offer an outstanding combination of high energy density, reduced weight, and long cycle life, making them the superior choice for Electric Vehicles (EVs).",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "19",
+            "question_text": "The size of the earth wire is determined on the basis of _______.\n(A) The atmospheric condition\n(B) The voltage of the service wire\n(C) The ampere capacity of the service wire\n(D) The frequency range of the service wire",
+            "marks": 1,
+            "answer": "(C)\nExplanation: Earth wires must be appropriately sized to safely conduct maximum possible fault currents, which is directly proportional to the ampere capacity rating of the main service line.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "20",
+            "question_text": "What is the frequency range of AC supply followed in Indian standard?\n(A) 50 Hz\n(B) 60 Hz\n(C) 100 Hz\n(D) 1000 Hz",
+            "marks": 1,
+            "answer": "(A)\nExplanation: The central standard for commercial electrical AC power transmission and distribution in India is set universally at 50 Hz.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        }
+    ]
+}

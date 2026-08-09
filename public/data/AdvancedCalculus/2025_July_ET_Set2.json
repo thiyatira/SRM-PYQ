@@ -1,0 +1,166 @@
+{
+    "paper_title": "2025_July_ET_Set2",
+    "source": "2025_July_ET_Set2",
+    "questions": [
+        {
+            "question_number": "U1Q42",
+            "question_text": "The value of $\\int_1^a \\int_1^b \\frac{dx dy}{xy}$ is\n(A) $\\log a \\log b$\n(B) $a \\cdot b$\n(C) $\\log(ab)$\n(D) $\\log a + \\log b$",
+            "marks": 2,
+            "answer": "(A)\nExplanation: The integral separates into $(\\int_1^a \\frac{1}{x} dx) \\cdot (\\int_1^b \\frac{1}{y} dy) = [\\log x]_1^a \\cdot [\\log y]_1^b = (\\log a - 0)(\\log b - 0) = \\log a \\log b$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Integral Calculus"
+        },
+        {
+            "question_number": "U1Q43",
+            "question_text": "Changing to polar coordinates, the double integral $\\iint f(x,y) dx dy$ becomes\n(A) $\\iint \\phi(r, \\theta) dr d\\theta$\n(B) $\\iint \\phi(r, \\theta) r dr d\\theta$\n(C) $\\iint \\phi(r, \\theta) r^2 dr d\\theta$\n(D) $\\iint \\phi(r, \\theta) r dr d\\theta$ *(Note: Option B and D are identical in source text)*",
+            "marks": 2,
+            "answer": "(D)\nExplanation: In changing to polar coordinates $(x=r\\cos\\theta, y=r\\sin\\theta)$, the Cartesian area element $dx dy$ is replaced by the Jacobian times $dr d\\theta$, which is $r dr d\\theta$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Integral Calculus"
+        },
+        {
+            "question_number": "U1Q44",
+            "question_text": "The integral $\\int_0^1 \\int_x^1 dy dx$, after change of order of integration becomes\n(A) $\\int_0^y \\int_0^1 dx dy$\n(B) $\\int_0^1 \\int_0^y dx dy$\n(C) $\\int_0^1 \\int_0^x dx dy$\n(D) $\\int_0^1 \\int_x^1 dx dy$",
+            "marks": 2,
+            "answer": "(B)\nExplanation: Original limits: $x \\le y \\le 1$ and $0 \\le x \\le 1$. Reversing means placing horizontal strips from $x=0$ to $x=y$, with $y$ going from $0$ to $1$. Resulting integral: $\\int_0^1 \\int_0^y dx dy$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Integral Calculus"
+        },
+        {
+            "question_number": "U1Q45",
+            "question_text": "$\\int_0^1 \\int_0^1 \\int_0^1 e^{x+y+z} dx dy dz$ is equal to\n(A) $(e-1)^3$\n(B) $e^3$\n(C) $(e-1)^2$\n(D) $3e$",
+            "marks": 2,
+            "answer": "(A)\nExplanation: Using property of exponents $e^{x+y+z} = e^x e^y e^z$. It separates into $(\\int_0^1 e^x dx)(\\int_0^1 e^y dy)(\\int_0^1 e^z dz) = [e^x]_0^1 [e^y]_0^1 [e^z]_0^1 = (e-1)(e-1)(e-1) = (e-1)^3$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Integral Calculus"
+        },
+        {
+            "question_number": "U2Q42",
+            "question_text": "If $\\phi = x^2+y^2+z^2-8$, then $\\text{grad } \\phi$ at $(2,0,2)$\n(A) $\\mathbf{i} + 4\\mathbf{k}$\n(B) $4\\mathbf{i} + 4\\mathbf{k}$\n(C) $4\\mathbf{i} + \\mathbf{k}$\n(D) $4\\mathbf{i} + 4\\mathbf{j} + 4\\mathbf{k}$",
+            "marks": 2,
+            "answer": "(B)\nExplanation: $\\text{grad } \\phi = \\nabla \\phi = \\frac{\\partial \\phi}{\\partial x}\\mathbf{i} + \\frac{\\partial \\phi}{\\partial y}\\mathbf{j} + \\frac{\\partial \\phi}{\\partial z}\\mathbf{k} = 2x\\mathbf{i} + 2y\\mathbf{j} + 2z\\mathbf{k}$.\nAt the point $(2,0,2)$, $\\nabla \\phi = 2(2)\\mathbf{i} + 2(0)\\mathbf{j} + 2(2)\\mathbf{k} = 4\\mathbf{i} + 4\\mathbf{k}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Vector Calculus"
+        },
+        {
+            "question_number": "U2Q43",
+            "question_text": "If $\\phi = x^2 - y^2$, then $\\nabla^2 \\phi$ is equal to\n(A) 0\n(B) 2\n(C) -2\n(D) 1",
+            "marks": 2,
+            "answer": "(A)\nExplanation: The Laplacian $\\nabla^2 \\phi = \\frac{\\partial^2 \\phi}{\\partial x^2} + \\frac{\\partial^2 \\phi}{\\partial y^2}$. \n$\\frac{\\partial \\phi}{\\partial x} = 2x \\implies \\frac{\\partial^2 \\phi}{\\partial x^2} = 2$.\n$\\frac{\\partial \\phi}{\\partial y} = -2y \\implies \\frac{\\partial^2 \\phi}{\\partial y^2} = -2$.\n$\\nabla^2 \\phi = 2 + (-2) = 0$.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Vector Calculus"
+        },
+        {
+            "question_number": "U2Q44",
+            "question_text": "The unit normal vector to the surface $x^2+y^2=z$ at the point $(1,2,5)$ is\n(A) $\\frac{2\\mathbf{i}+4\\mathbf{j}-\\mathbf{k}}{\\sqrt{21}}$\n(B) $\\frac{\\mathbf{i}+\\mathbf{j}-\\mathbf{k}}{\\sqrt{3}}$\n(C) $\\frac{\\mathbf{i}+4\\mathbf{j}-5\\mathbf{k}}{\\sqrt{42}}$\n(D) $\\frac{\\mathbf{i}-\\mathbf{j}-\\mathbf{k}}{\\sqrt{2}}$",
+            "marks": 2,
+            "answer": "(A)\nExplanation: Define the surface as $\\phi = x^2+y^2-z = 0$. \n$\\nabla \\phi = 2x\\mathbf{i} + 2y\\mathbf{j} - 1\\mathbf{k}$.\nAt the point $(1,2,5)$, $\\nabla \\phi = 2(1)\\mathbf{i} + 2(2)\\mathbf{j} - \\mathbf{k} = 2\\mathbf{i} + 4\\mathbf{j} - \\mathbf{k}$.\nThe magnitude is $\\sqrt{2^2 + 4^2 + (-1)^2} = \\sqrt{4 + 16 + 1} = \\sqrt{21}$.\nUnit normal vector = $\\frac{2\\mathbf{i}+4\\mathbf{j}-\\mathbf{k}}{\\sqrt{21}}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Vector Calculus"
+        },
+        {
+            "question_number": "U2Q45",
+            "question_text": "If $\\vec{F} = x^2 \\mathbf{i} + xy^2 \\mathbf{j}$, value of $\\int_C \\vec{F} \\cdot d\\vec{r}$ where $C$ is the segment on $y=x$ from $(0,0)$ to $(1,1)$ is\n(A) $7/6$\n(B) $7/12$\n(C) $7$\n(D) $7/2$",
+            "marks": 2,
+            "answer": "(B)\nExplanation: $\\int_C \\vec{F} \\cdot d\\vec{r} = \\int_C (x^2 dx + xy^2 dy)$.\nAlong the line $y=x$, we have $dy = dx$. \nSubstituting $y$ and $dy$: $\\int_0^1 (x^2 dx + x(x^2) dx) = \\int_0^1 (x^2 + x^3) dx$.\nIntegrating: $[\\frac{x^3}{3} + \\frac{x^4}{4}]_0^1 = \\frac{1}{3} + \\frac{1}{4} = \\frac{4+3}{12} = \\frac{7}{12}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Vector Calculus"
+        },
+        {
+            "question_number": "U3Q42",
+            "question_text": "$L[t^2 e^{2t}]$ is\n(A) $\\frac{1}{(s-2)^2}$\n(B) $\\frac{1}{(s-\\log 2)^2}$\n(C) $\\frac{2}{(s-2)^3}$\n(D) $\\frac{2}{(s-2)^2}$",
+            "marks": 2,
+            "answer": "(C)\nExplanation: First, $L(t^2) = \\frac{2!}{s^{2+1}} = \\frac{2}{s^3}$. Applying the First Shifting Theorem for $e^{2t}$, we replace $s$ with $s-2$. This gives $\\frac{2}{(s-2)^3}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Laplace Transform"
+        },
+        {
+            "question_number": "U3Q43",
+            "question_text": "$L[e^{2t} \\sin t]$ is\n(A) $\\frac{s}{(s-2)^2}$\n(B) $\\frac{1}{(s-\\log 2)^2}$\n(C) $\\frac{1}{(s-2)^2+1}$\n(D) $\\frac{1}{(s-2)^2}$",
+            "marks": 2,
+            "answer": "(C)\nExplanation: The Laplace transform of $\\sin t$ is $\\frac{1}{s^2+1^2} = \\frac{1}{s^2+1}$. Multiplying by $e^{2t}$ shifts the transform by replacing $s$ with $s-2$, yielding $\\frac{1}{(s-2)^2+1}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Laplace Transform"
+        },
+        {
+            "question_number": "U3Q44",
+            "question_text": "If $L[f(t)] = \\frac{s}{(s+2)^2}$, then $f(t)$ is equal to\n(A) $e^t \\cos t$\n(B) $e^{-2t} \\cdot t$\n(C) $e^{-2t}(1-2t)$\n(D) $e^{-t} 2t$",
+            "marks": 2,
+            "answer": "(C)\nExplanation: We need to find $L^{-1}(\\frac{s}{(s+2)^2})$. Rewrite the numerator as $s+2-2$:\n$L^{-1}(\\frac{s+2-2}{(s+2)^2}) = L^{-1}(\\frac{s+2}{(s+2)^2}) - L^{-1}(\\frac{2}{(s+2)^2})$\n$= L^{-1}(\\frac{1}{s+2}) - 2 L^{-1}(\\frac{1}{(s+2)^2})$\n$= e^{-2t} - 2 (t e^{-2t}) = e^{-2t}(1 - 2t)$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Laplace Transform"
+        },
+        {
+            "question_number": "U3Q45",
+            "question_text": "$L[\\int_0^t e^{-u} \\cos u du]$ is\n(A) $\\frac{s+1}{s^2+2s+2}$\n(B) $\\frac{s+1}{s(s^2+2s+2)}$\n(C) $\\frac{s}{s^2+2s+2}$\n(D) $\\frac{s+1}{(s+1)^2}$",
+            "marks": 2,
+            "answer": "(B)\nExplanation: The Laplace transform of an integral $\\int_0^t g(u)du$ is $\\frac{1}{s} L(g(t))$. Here, $g(t) = e^{-t} \\cos t$.\n$L(\\cos t) = \\frac{s}{s^2+1}$. By shifting theorem, $L(e^{-t}\\cos t) = \\frac{s+1}{(s+1)^2+1} = \\frac{s+1}{s^2+2s+2}$.\nThus, $L[\\int_0^t e^{-u} \\cos u du] = \\frac{1}{s} \\left(\\frac{s+1}{s^2+2s+2}\\right) = \\frac{s+1}{s(s^2+2s+2)}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Laplace Transform"
+        },
+        {
+            "question_number": "U4Q42",
+            "question_text": "If $f(z) = u+ic$ is analytic where $c$ is a constant, then $u$ is\n(A) analytic\n(B) constant\n(C) differentiable\n(D) harmonic",
+            "marks": 2,
+            "answer": "(B)\nExplanation: If $f(z) = u+iv$ is analytic, C-R equations hold: $u_x = v_y$ and $u_y = -v_x$. Here $v = c$ (a constant), so $v_x = 0$ and $v_y = 0$. Therefore, $u_x = 0$ and $u_y = 0$, meaning $u$ must be a constant function.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Analytic Functions"
+        },
+        {
+            "question_number": "U4Q43",
+            "question_text": "The function $f(z) = |z|^2$\n(A) constant\n(B) is analytic\n(C) does not satisfy C-R equations at $(0,0)$\n(D) is not analytic",
+            "marks": 2,
+            "answer": "(D)\nExplanation: $f(z) = |z|^2 = x^2+y^2$. So $u=x^2+y^2$ and $v=0$. C-R equations demand $u_x=v_y \\implies 2x=0$ and $u_y=-v_x \\implies 2y=0$. They are only satisfied at the origin $(0,0)$. Since it's not satisfied in any neighborhood of $(0,0)$, the function is nowhere analytic.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Analytic Functions"
+        },
+        {
+            "question_number": "U4Q44",
+            "question_text": "The invariant points of the transformation $w = \\frac{3z-5}{z+1}$ are\n(A) $i, -i$\n(B) $2i, -2i$\n(C) $1 \\pm 2i$\n(D) $2-i, 2+i$",
+            "marks": 2,
+            "answer": "(C)\nExplanation: Set $w = z$. $z = \\frac{3z-5}{z+1} \\implies z^2+z = 3z-5 \\implies z^2-2z+5 = 0$.\n$z = \\frac{2 \\pm \\sqrt{4-20}}{2} = \\frac{2 \\pm \\sqrt{-16}}{2} = \\frac{2 \\pm 4i}{2} = 1 \\pm 2i$.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Analytic Functions"
+        },
+        {
+            "question_number": "U4Q45",
+            "question_text": "The image of the circle $|z|=2$ under the map $w = 1/z$ is\n(A) a circle of radius 2\n(B) a circle of radius $1/2$\n(C) a circle through the origin\n(D) unit circle",
+            "marks": 2,
+            "answer": "(B)\nExplanation: Given $|z|=2$ and $w = 1/z$. Then $|w| = |1/z| = 1/|z| = 1/2$. This represents a circle centered at the origin with radius $1/2$.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Analytic Functions"
+        },
+        {
+            "question_number": "U5Q42",
+            "question_text": "The order of the pole $z=0$ for $\\frac{1-e^z}{z^4}$ is\n(A) 2\n(B) 3\n(C) 5\n(D) 4",
+            "marks": 2,
+            "answer": "(B)\nExplanation: Expand $e^z$ as a Taylor series: $e^z = 1 + z + \\frac{z^2}{2!} + \\frac{z^3}{3!} + \\dots$\nThen $1 - e^z = -z - \\frac{z^2}{2!} - \\frac{z^3}{3!} - \\dots$\nSubstitute into the function: $f(z) = \\frac{-z - z^2/2 - z^3/6 - \\dots}{z^4} = -\\frac{1}{z^3} - \\frac{1}{2z^2} - \\frac{1}{6z} - \\dots$\nThe highest negative power of $z$ is $3$, meaning $z=0$ is a pole of order 3.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Complex Integration"
+        },
+        {
+            "question_number": "U5Q43",
+            "question_text": "For $\\frac{\\sin z}{z}, z=0$ is ______ singularity.\n(A) removable singularity\n(B) pole\n(C) essential singularity\n(D) Not a singularity",
+            "marks": 2,
+            "answer": "(A)\nExplanation: The limit $\\lim_{z \\to 0} \\frac{\\sin z}{z} = 1$. Since the function is undefined at $z=0$ but has a finite limit as it approaches 0, the singularity is removable.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Complex Integration"
+        },
+        {
+            "question_number": "U5Q44",
+            "question_text": "The Poles of $f(z) = \\frac{z^2-1}{(z-1)^2(z+2)}$ are\n(A) $z=1, -2$ are of order 2\n(B) $z=1$ is of order 2, $z=-2$ is of order 1\n(C) $z=1, -2$ are of order 1\n(D) $z=1$ is of order 1, $z=-2$ is order 2",
+            "marks": 2,
+            "answer": "(C)\nExplanation: Simplify the function first:\n$f(z) = \\frac{(z-1)(z+1)}{(z-1)^2(z+2)} = \\frac{z+1}{(z-1)(z+2)}$.\nThe roots of the denominator in lowest terms give the poles. The factors are $(z-1)^1$ and $(z+2)^1$.\nThus, $z=1$ and $z=-2$ are both simple poles (poles of order 1).",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Complex Integration"
+        },
+        {
+            "question_number": "U5Q45",
+            "question_text": "The value of the integral $\\int_C \\frac{\\cos \\pi z}{z-1} dz$, if $C$ is $|z|=3/2$ is\n(A) $2\\pi i$\n(B) $4\\pi i$\n(C) $\\pi i$\n(D) $-2\\pi i$",
+            "marks": 2,
+            "answer": "(D)\nExplanation: The function has a simple pole at $z=1$. The contour $C$ is a circle of radius $1.5$ centered at the origin, which encloses the pole $z=1$.\nBy Cauchy's Integral Formula: $\\int_C \\frac{f(z)}{z-a} dz = 2\\pi i f(a)$.\nHere $f(z) = \\cos \\pi z$ and $a = 1$.\nIntegral $= 2\\pi i \\cos(\\pi \\cdot 1) = 2\\pi i (-1) = -2\\pi i$.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Complex Integration"
+        }
+    ]
+}
