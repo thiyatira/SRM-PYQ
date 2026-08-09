@@ -1,0 +1,158 @@
+{
+    "paper_title": "SRM Institute of Science and Technology - CLA-T2 - 21CSC203P Advanced Programming Practice",
+    "source": "<FILENAME>",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "What are the advantages of multi-threading?",
+            "marks": 4,
+            "answer": "Advantages of multi-threading:\n1. Responsiveness: Keeps application responsive even if a task takes long.\n2. Resource Sharing: Threads share memory and resources of the process.\n3. Economy: Lower cost for context switching and thread creation compared to process creation.\n4. Scalability: Takes advantage of multiprocessor architectures.\n5. Better Communication: Inter-thread communication is easy and efficient.\n6. Utilization of multiprocessor architecture: Enables parallel execution across cores.\n7. Minimized system resource usage: Saves memory and CPU overhead.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "2",
+            "question_text": "Compare AWT and Swing.",
+            "marks": 4,
+            "answer": "Comparison between AWT and Swing:\n- Component Package: AWT is provided by java.awt; Swing is provided by javax.swing.\n- OS Dependency: AWT components are platform-dependent (heavyweight); Swing components are platform-independent (lightweight) and written entirely in Java.\n- Look and Feel: AWT components depend on operating system look and feel; Swing supports pluggable look and feel.\n- Number of Components: AWT offers a smaller set of GUI components; Swing provides a rich set of components (tables, scroll panes, color choosers, etc.).\n- Memory and Performance: AWT requires more memory and is slower; Swing requires less memory and performs faster.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "3",
+            "question_text": "Write a python cocde to print the even numbers, odd numbers from the list of given numbers using Imperative approach [ 2,5,8,23,14,37,47,18,20,36,29]",
+            "marks": 4,
+            "answer": "num = [2, 5, 8, 23, 14, 37, 47, 18, 20, 36, 29]\nodd = []\neven = []\nfor i in num:\n    if i % 2 == 0:\n        even.append(i)\n    else:\n        odd.append(i)\nprint(\"Odd numbers:\", odd)\nprint(\"Even numbers:\", even)",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "4",
+            "question_text": "Differentiate TCP and UDP.",
+            "marks": 4,
+            "answer": "Differences between TCP and UDP:\n1. Full Name: TCP stands for Transmission Control Protocol; UDP stands for User Datagram Protocol.\n2. Connection Type: TCP is connection-oriented; UDP is connectionless.\n3. Reliability: TCP guarantees delivery of data packets; UDP is unreliable with no delivery guarantee.\n4. Speed & Overhead: TCP is slower due to error checking and flow control (20-byte header); UDP is faster with minimal overhead (8-byte header).\n5. Flow & Error Control: TCP uses three-way handshake, flow control, and checksum retransmission; UDP has no flow control or retransmission mechanism.\n6. Use Cases: TCP is used for HTTP, email, SSH; UDP is used for live video/audio streaming, VoIP, online gaming.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "5",
+            "question_text": "What is Socket? Explain in details.",
+            "marks": 4,
+            "answer": "A socket is a software abstraction representing an endpoint of a two-way communication link between two programs running on a network. An endpoint is defined by a combination of an IP address and a port number.\n\nTypes of Sockets:\n1. Stream Socket (TCP / SOCK_STREAM): Provides reliable, connected, continuous bidirectional byte-stream communication.\n2. Datagram Socket (UDP / SOCK_DGRAM): Connectionless socket that transfers independent packets (datagrams) without connection establishment or delivery guarantee.\n\nPython Example:\nimport socket\ns = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\nprint('Socket Created')",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "6",
+            "question_text": "What is Automata? Give examples.",
+            "marks": 4,
+            "answer": "Automata theory is the study of abstract computing devices and machines. It provides simplified mathematical models of real computational processes.\n\nKey Automata Types & Examples:\n- Finite Automata (DFA/NFA): Devices with finite memory, used to model small stateful systems, lexical analyzers, etc.\n- Pushdown Automata: Devices with stack-based infinite memory, used to model parsers for context-free languages.\n- Turing Machines: Abstract machines with unlimited tape memory, capable of modeling any computer algorithm.\n\nAlphabets & Languages Example:\nAlphabet Σ = {a, b}\nLanguage L1 = set of all strings containing 'SRM' as a substring.",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+        },
+        {
+            "question_number": "7",
+            "question_text": "Find the out the geometry managers for the following options and give its syntax:\na. I have a set of radio widgets and want place it next to each other along horizontal axis.\nb. I have a button widget which I want to place it on specify coordinates denoting the screen.",
+            "marks": 4,
+            "answer": "a. Geometry Manager: Grid Manager (`grid`)\nSyntax:\nrb1 = tk.Radiobutton(root, text=\"Option 1\", variable=var, value=1)\nrb2 = tk.Radiobutton(root, text=\"Option 2\", variable=var, value=2)\nrb1.grid(row=0, column=0)\nrb2.grid(row=0, column=1)\n\nb. Geometry Manager: Place Manager (`place`)\nSyntax:\nb1 = tk.Button(root, text=\"Submit\", command=root.destroy)\nb1.place(x=50, y=50)",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+        },
+        {
+            "question_number": "8(a)(i)",
+            "question_text": "(i) What is the difference between the paint() and repaint() methods in a Java Applet?",
+            "marks": 4,
+            "answer": "Differences between paint() and repaint():\n1. paint(): Executed whenever the component needs to be rendered/drawn on screen. Holds painting instructions. It should not be called directly by application code.\n2. repaint(): Asynchronous request sent to the AWT/Swing thread to update the UI. It internally schedules a call to the update() and paint() methods. Can be called directly whenever UI state changes.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "8(a)(ii)",
+            "question_text": "(ii) Write a java program that implements a multi-thread application that has three threads. First thread generates random integer every 1 second and if the value is even, second thread computes the square of the number and prints. If the value is odd, the third thread will print the value of cube of the number.",
+            "marks": 6,
+            "answer": "import java.util.Random;\n\nclass Square extends Thread {\n    int x;\n    Square(int n) { x = n; }\n    public void run() {\n        System.out.println(\"Square of \" + x + \" = \" + (x * x));\n    }\n}\n\nclass Cube extends Thread {\n    int x;\n    Cube(int n) { x = n; }\n    public void run() {\n        System.out.println(\"Cube of \" + x + \" = \" + (x * x * x));\n    }\n}\n\nclass Rnumber extends Thread {\n    public void run() {\n        Random random = new Random();\n        for (int i = 0; i < 5; i++) {\n            int val = random.nextInt(10);\n            System.out.println(\"Random Integer generated : \" + val);\n            if (val % 2 == 0) {\n                new Square(val).start();\n            } else {\n                new Cube(val).start();\n            }\n            try { Thread.sleep(1000); } catch (InterruptedException e) { System.out.println(e); }\n        }\n    }\n}\n\npublic class ThreadP {\n    public static void main(String[] args) {\n        new Rnumber().start();\n    }\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "8(b)(i)",
+            "question_text": "(i) Discuss the five steps for connecting JDBC.",
+            "marks": 4,
+            "answer": "Key Steps for Connecting JDBC:\n1. Import Packages: `import java.sql.*;`\n2. Load Driver: `Class.forName(\"com.mysql.cj.jdbc.Driver\");`\n3. Establish Connection: `Connection con = DriverManager.getConnection(url, user, password);`\n4. Create and Execute Query: `Statement stmt = con.createStatement(); ResultSet rs = stmt.executeQuery(query);`\n5. Retrieve Results: Process the `ResultSet` object.\n6. Close Connection: `con.close();`",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "8(b)(ii)",
+            "question_text": "(ii) Create two objects threadobj1 and threadobj2 for the class UserThreadPriority. Set the name of threadobj1 as “ThreadA” and threadobj2 as “ThreadB”. Get a String and a Character from the user and assign into UserThreadPriority class variable k and c respectively. Call the start() method for the thread objects threadobj1 and threadobj2.",
+            "marks": 6,
+            "answer": "import java.util.Scanner;\n\npublic class UserThreadPriority implements Runnable {\n    private String k;\n    private char c;\n    private Thread thread;\n\n    public UserThreadPriority(String k, char c) {\n        this.k = k;\n        this.c = c;\n        this.thread = new Thread(this);\n    }\n\n    public void run() {\n        System.out.println(\"Thread name: \" + thread.getName());\n        System.out.println(\"String: \" + k);\n        System.out.println(\"Character: \" + c);\n    }\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        System.out.print(\"Enter a string: \");\n        String k = scanner.nextLine();\n        System.out.print(\"Enter a character: \");\n        char c = scanner.next().charAt(0);\n\n        UserThreadPriority threadobj1 = new UserThreadPriority(k, c);\n        UserThreadPriority threadobj2 = new UserThreadPriority(k, c);\n\n        threadobj1.thread.setName(\"ThreadA\");\n        threadobj2.thread.setName(\"ThreadB\");\n\n        threadobj1.thread.start();\n        threadobj2.thread.start();\n    }\n}",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "9(a)(i)",
+            "question_text": "(i) Explain Parallel Programming and illustrate parallelism using a multithreaded application in python.",
+            "marks": 4,
+            "answer": "Multithreading and Parallel Programming in Python:\n- Multitasking is the execution of multiple tasks simultaneously.\n- Multithreading executes multiple threads concurrently by rapidly switching CPU context.\n- Python GIL (Global Interpreter Lock) restricts true parallel execution of bytecode on CPU-bound tasks in a single process, but concurrent I/O or threading structures can be organized as follows:\n\nExample Code:\nimport threading\n\ndef calculate_square(num):\n    print(\"Calculate square:\", [n*n for n in num])\n\ndef calculate_cube(num):\n    print(\"Calculate cube:\", [n*n*n for n in num])\n\nlst = [2, 4, 6, 8, 10]\nt1 = threading.Thread(target=calculate_square, args=(lst,))\nt2 = threading.Thread(target=calculate_cube, args=(lst,))\nt1.start()\nt2.start()\nt1.join()\nt2.join()",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "9(a)(ii)",
+            "question_text": "(ii) Create a TCP server that echoes back any message it receives from a client. Develop a Python client to send messages to the server and display the echoed response.",
+            "marks": 6,
+            "answer": "# TCP Server:\nimport socket\nserver_address = ('localhost', 12345)\nserver_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\nserver_socket.bind(server_address)\nserver_socket.listen(1)\nprint(\"TCP server running...\")\nwhile True:\n    client_socket, client_address = server_socket.accept()\n    try:\n        while True:\n            data = client_socket.recv(1024)\n            if not data: break\n            client_socket.sendall(data)\n    finally:\n        client_socket.close()\n\n# TCP Client:\nimport socket\nclient_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\nclient_socket.connect(('localhost', 12345))\ntry:\n    while True:\n        msg = input(\"Enter message (or 'exit'): \")\n        if msg == 'exit': break\n        client_socket.sendall(msg.encode())\n        resp = client_socket.recv(1024)\n        print(f\"Server echoed: {resp.decode()}\")\nfinally:\n    client_socket.close()",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "9(b)(i)",
+            "question_text": "(i) Illustrate in detail about functional programming paradigm with examples.",
+            "marks": 4,
+            "answer": "Functional Programming (FP) Paradigm:\n- FP is a declarative paradigm that treats computation as the evaluation of mathematical functions, avoiding state changes and mutable data.\n- Originates from Lambda Calculus.\n\nKey Concepts:\n1. Pure Functions: Functions whose return value depends solely on arguments with no side effects.\n2. Immutability: Data cannot be altered after creation.\n3. First-Class & Higher-Order Functions: Functions passed as arguments, returned, or assigned to variables (e.g., `map()`, `filter()`, `reduce()`).\n4. Recursion: Used instead of explicit loops.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "9(b)(ii)",
+            "question_text": "(ii) Design a expense tracker that is used to keep track of the user’s expenses. It has to give correct information to the users on their expenses and help them spend better using PySimpleGUI and PyData libraries.",
+            "marks": 6,
+            "answer": "Expense Tracker Implementation Steps:\n1. Module Imports: `import datetime`, `import sqlite3`, `from tkcalendar import DateEntry`, `import tkinter as tk`, `from tkinter import ttk, messagebox`\n2. GUI Layout Creation: Set up windows, entries for date, description, and amount.\n3. Database Operations: Create SQLite tables (`CREATE TABLE expenses (...)`), insert entries, query total spending.\n4. Visualization / Reporting: Format data using Treeview tables and summarize spending categories.",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+        },
+        {
+            "question_number": "10(a)(i)",
+            "question_text": "(i) What is Symbolic Programming Paradigms? Explain.",
+            "marks": 4,
+            "answer": "Symbolic Programming Paradigm:\n- A paradigm where programs can manipulate their own mathematical expressions, logic formulas, and code structure as data.\n- Widely used in artificial intelligence, algebra systems, and automated theorem proving.\n- Key Languages & Libraries: LISP, Prolog, SymPy (Python).\n\nSymPy Capabilities in Python:\n- Algebraic manipulations\n- Differentiation and Integration\n- Equation solving and Linear Algebra\n- Evaluates symbolic expressions (`evalf()`), rational numbers (`Rational(5, 2)`), limits (`limit()`), and infinite constants (`oo`).",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+        },
+        {
+            "question_number": "10(a)(ii)",
+            "question_text": "(ii) Construct a NFA and give the transmission table for the following regular expression for the given language = (a + ba)*bb (a + ab)*.",
+            "marks": 6,
+            "answer": "NFA Construction for (a + ba)* bb (a + ab)*:\n\nStates: q0 (Start), q1, q2, q3 (Accepting states: q1, q3)\nTransitions:\n- q0 on 'a' -> q0; q0 on 'b' -> q1\n- q1 on 'a' -> q0; q1 on 'b' -> q1\n- q2 on 'a' -> q3; q2 on 'b' -> q2\n- q3 on 'a' -> q3; q3 on 'b' -> q3\n\nTransition Table:\nState | 'a' | 'b'\n------|-----|-----\nq0    | q0  | q1\nq1    | q0  | q1\nq2    | q3  | q2\nq3    | q3  | q3\n\nPython NFA Simulation:\n```python\nnfa = {\n    0: {'a': {0}, 'b': {1}},\n    1: {'b': {1}},\n    2: {'a': {3}, 'b': {2}},\n    3: {'a': {3}}\n}\naccepting_states = {1, 3}\n```",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+        },
+        {
+            "question_number": "10(b)(i)",
+            "question_text": "(i) What functions are available for solving equations in SymPy.",
+            "marks": 4,
+            "answer": "Functions in SymPy for Solving Equations:\n1. `solve(equation, variable)`: Primary function to solve algebraic, transcendental, and systems of equations symbolically.\n2. `solveset(equation, variable)`: Modern alternative returning solution sets.\n3. `dsolve(equation)`: Solves ordinary differential equations (ODEs).\n4. `linsolve([eq1, eq2], (x, y))`: Solves systems of linear equations.\n5. `nonlinsolve()`: Solves systems of non-linear equations.\n\nExample:\nfrom sympy import symbols, Eq, solve\nx, y = symbols('x y')\neq = Eq(x**2 + y, 5)\nsol = solve(eq, x)",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+        },
+        {
+            "question_number": "10(b)(ii)",
+            "question_text": "(ii) Create the calendar using Tkinter by showing data month and year with scroll down menu to fix the particular data month and year and press the click button to show the message of clicked date, month and year.",
+            "marks": 6,
+            "answer": "import calendar\nfrom datetime import date\nfrom tkinter import *\n\ndef printCalendar():\n    m = int(month_box.get())\n    y = int(year_box.get())\n    output_calendar = calendar.month(y, m)\n    calendar_field.delete(1.0, 'end')\n    calendar_field.insert('end', output_calendar)\n\nguiWindow = Tk()\nguiWindow.title(\"GUI Calendar\")\nguiWindow.geometry('500x550')\n\nentry_frame = Frame(guiWindow)\nentry_frame.pack()\n\nmonth_var = IntVar(value=date.today().month)\nyear_var = IntVar(value=date.today().year)\n\nmonth_box = Spinbox(entry_frame, from_=1, to=12, textvariable=month_var)\nyear_box = Spinbox(entry_frame, from_=1900, to=2100, textvariable=year_var)\nmonth_box.pack()\nyear_box.pack()\n\nbtn = Button(guiWindow, text=\"Show Calendar\", command=printCalendar)\nbtn.pack()\n\ncalendar_field = Text(guiWindow, width=20, height=10)\ncalendar_field.pack()\n\nguiWindow.mainloop()",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+        }
+    ]
+}

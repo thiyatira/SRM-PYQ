@@ -1,0 +1,86 @@
+{
+    "paper_title": "SRM Institute of Science and Technology - Test: QUIZ 2& 3 - 21CSE203P Advanced Programming Practices",
+    "source": "<FILENAME>",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "Consider the following program and predict the output:\n\nclass MyThread implements Runnable {\n public void run() { \nSystem.out.println(Thread.currentThread().getName());\n }\n}\npublic class ThreadTest {\n public static void main(String arg[]) {\n Thread thread = new Thread(new MyThread());\n thread.run();\n thread.run();\n thread.start();\n }\n}",
+            "marks": 1,
+            "answer": "Output:\nmain\nmain\nThread-0\n\nExplanation: Calling thread.run() executes the run() method synchronously on the current thread ('main'). Calling thread.start() spawns a new thread ('Thread-0') which executes run() asynchronously.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "2",
+            "question_text": "What is the significance of the Thread.yield() method in Java?\nA) It pauses the current thread permanently.\nB) It gives the processor a hint that the current thread is willing to yield its execution.\nC) It puts the current thread to sleep for a specified time.\nD) It kills the current thread immediately.",
+            "marks": 1,
+            "answer": "Option B) It gives the processor a hint that the current thread is willing to yield its execution.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "3",
+            "question_text": "Which of the following is the correct syntax for establishing a connection to a MySQL database in JDBC?\nA) Connection conn = DriverManager.getConnection(\"jdbc:mysql://localhost:3306/db_name\");\nB) Connection conn = DriverManager.connect(\"mysql://localhost/db_name\");\nC) Connection conn = new Connection(\"mysql:localhost/db_name\");\nD) Connection conn = DriverManager.connect(\"localhost\", \"db_name\");",
+            "marks": 1,
+            "answer": "Option A) Connection conn = DriverManager.getConnection(\"jdbc:mysql://localhost:3306/db_name\");",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "4",
+            "question_text": "What will be the output of the following code?\nimport javax.swing.*;\n\npublic class SwingExceptionApp {\n public static void main(String[] args) {\n JFrame frame = new JFrame(\"Exception Example\");\n JButton button = new JButton(\"Press Me\");\n\n button.addActionListener(e -> {\n throw new RuntimeException(\"An error occurred!\");\n });\n\n frame.add(button);\n frame.setSize(200, 200);\n frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);\n frame.setVisible(true);\n }\n}",
+            "marks": 1,
+            "answer": "When the button is clicked, the application will throw a RuntimeException, and the program will terminate with the message \"An error occurred!\"",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "5",
+            "question_text": "In the MVC architecture, what does the 'View' represent?\nA) The data structure of the application\nB) The user interface and presentation logic\nC) The interaction with the database\nD) The application logic",
+            "marks": 1,
+            "answer": "Option B) The user interface and presentation logic",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "6",
+            "question_text": "What is the output of the following code snippet?\nlist(map(lambda x: x * 2, [1, 2, 3, 4]))",
+            "marks": 1,
+            "answer": "[2, 4, 6, 8]",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "7",
+            "question_text": "numbers = [1, 2, 3, 4, 5]\nresult = [x for x in numbers if x % 2 == 0 print(x)]\n\nWhat's wrong in the above code?",
+            "marks": 1,
+            "answer": "print(x) is used incorrectly inside the list comprehension. Separate the print() statement from the list comprehension.\n\nCorrected Code:\nresult = [x for x in numbers if x % 2 == 0]\nfor x in result:\n print(x)",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "8",
+            "question_text": "In Prolog, what is the result of the following query?\n\n?- likes(john, pizza).\n\nA) The query is invalid\nB) It checks whether the fact \"john likes pizza\" is true\nC) It declares a fact that John likes pizza\nD) It returns the list of food items John likes",
+            "marks": 1,
+            "answer": "Option B) It checks whether the fact \"john likes pizza\" is true",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "9",
+            "question_text": "def add(a, b):\n return a + b\nresult = add(3, 5)\nprint(result)\n\nIs the function add is a pure function? Explain why?",
+            "marks": 1,
+            "answer": "Yes, the add function is a pure function because:\n• It always produces the same output for the same inputs (e.g., add(3, 5) always returns 8).\n• It has no side effects (does not modify any external state or variables).",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "10",
+            "question_text": "from functools import reduce\n\ndef multiply(x, y):\n return x * y\n\nnumbers = [1, 2, 3, 4]\nresult = reduce(multiply, numbers)\nprint(result)\n\nWhat is the output of this code?",
+            "marks": 1,
+            "answer": "24\n\nExplanation: The reduce function applies the multiply function cumulatively to the numbers list, resulting in 1 * 2 * 3 * 4 = 24.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        }
+    ]
+}

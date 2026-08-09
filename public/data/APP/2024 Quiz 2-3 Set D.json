@@ -1,0 +1,86 @@
+{
+    "paper_title": "QUIZ-2 &3 - 21CSC203P - ADVANCED PROGRAMMING PRACTICES",
+    "source": "<FILENAME>",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "What will be the output of the following code?\n\nclass MyRunnable implements Runnable {\n    public void run() {\n        for (int i = 0; i < 3; i++) {\n            System.out.println(Thread.currentThread().getName() + \" is executing task \" + i);\n        }\n    }\n    public static void main(String[] args) {\n        Thread t1 = new Thread(new MyRunnable(), \"Thread-1\");\n        Thread t2 = new Thread(new MyRunnable(), \"Thread-2\");\n        t1.start();\n        t2.start();\n    }\n}",
+            "marks": 1,
+            "answer": "Provided Answer: main main Thread-0\n\nExplanation: The provided key states 'main main Thread-0'. Programmatically, starting two threads t1 and t2 with names 'Thread-1' and 'Thread-2' will execute run() in parallel and print each thread's execution messages interleaved.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "2",
+            "question_text": "Which of the following is not a type of JDBC driver?\na) Type 1: JDBC-ODBC Bridge Driver\nb) Type 2: Native-API Driver\nc) Type 3: Network Protocol Driver\nd) Type 5: Database Protocol Driver",
+            "marks": 1,
+            "answer": "Option 4: Type 5: Database Protocol Driver.\n\nExplanation: Standard JDBC driver classifications only range from Type 1 to Type 4 (Type 1: JDBC-ODBC Bridge, Type 2: Native-API, Type 3: Network Protocol, Type 4: Native-Protocol/Thin). Type 5 is not a standard JDBC driver type.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "3",
+            "question_text": "Which of the following methods is used to move the ResultSet cursor to the next row?\na) next()\nb) move()\nc) getRow()\nd) fetch()",
+            "marks": 1,
+            "answer": "Option 1: a) next()\n\nExplanation: In JDBC, the `next()` method of the `ResultSet` interface moves the cursor forward one row from its current position and returns true if the new current row is valid.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "4",
+            "question_text": "Consider a system with a single-core CPU where Task A and Task B are both running. Task A starts running first, then pauses to wait for an I/O operation. While Task A is paused, Task B starts running. Once the I/O operation is complete, Task A resumes execution, and both tasks continue to be interleaved. What type of execution is happening in this scenario?",
+            "marks": 1,
+            "answer": "Concurrent Execution.\n\nExplanation: Interleaving execution of multiple tasks by switching context on a single-core CPU when one task is idle/waiting for I/O is known as concurrent execution.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "5",
+            "question_text": "What will be the output after its execution?\npublic class main\n{\npublic static void main(String args[])\n{\nThread thread1=Thread.currentThread();\nthread1.run ();\nThread thread2=Thread.currentThread();\nThread2.run ();\nSystem.out.print(Thread.activeCount());\n}}",
+            "marks": 1,
+            "answer": "Ans : 1\n\nExplanation: Calling `run()` directly on a `Thread` object executes the method synchronously within the current calling thread (main thread) without spawning a new execution thread. Therefore, the active thread count remains 1.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "6",
+            "question_text": "A ____ control is a dialogue window that allows the user to pick a file?\nA. JChoosFile\nB. JFilefield\nC. JFile\nD. JFileChooser",
+            "marks": 1,
+            "answer": "Option 4: D. JFileChooser\n\nExplanation: `JFileChooser` is a Java Swing component that presents a GUI dialogue window allowing users to navigate and select files or directories.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "7",
+            "question_text": "For the program given below, what will be the output after its execution?\n\n% Facts\nparent(john, mary).\nparent(mary, alice).\nparent(mary, bob).\n\n% Rule\ngrandparent(X, Y) :- parent(X, Z), parent(Z, Y).\n\n% Query Example\n?- grandparent(john, alice).",
+            "marks": 1,
+            "answer": "Ans : True\n\nExplanation: In Prolog (Logic Programming), `grandparent(john, alice)` resolves to true because `parent(john, mary)` and `parent(mary, alice)` both hold true, satisfying the rule with `Z = mary`.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "8",
+            "question_text": "def double(x):\n return x * 2\ndef applyFunction(func, value):\n return func(value)\nresult = applyFunction(double, 10)\nprint(result)\n\nWhat will be the output after its execution?",
+            "marks": 1,
+            "answer": "Ans: 20\n\nExplanation: `applyFunction` accepts a higher-order function `double` and an argument `10`. Calling `double(10)` evaluates to `10 * 2 = 20`.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "9",
+            "question_text": "def make_multiplier(n):\n def multiplier(x):\n return x * n\n return multiplier\ndouble = make_multiplier(2)\ntriple = make_multiplier(3)\nprint(double(5))\nprint(triple(5))\n\nWhat will be the output after its execution?",
+            "marks": 1,
+            "answer": "Answer: 10 15\n\nExplanation: `make_multiplier` creates a closure. `double(5)` computes `5 * 2 = 10` and `triple(5)` computes `5 * 3 = 15`.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "10",
+            "question_text": "numbers = [1, 2, 3, 4, 5, 6]\neven_numbers = list(filter(lambda x: x % 2 == 0, numbers))\nprint(even_numbers)\n\nWhat will be the output after its execution?",
+            "marks": 1,
+            "answer": "Answer: [2, 4, 6] (or 2, 4, 6)\n\nExplanation: The `filter` built-in function along with the lambda expression retains elements from `numbers` that satisfy `x % 2 == 0`, resulting in `[2, 4, 6]`.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        }
+    ]
+}

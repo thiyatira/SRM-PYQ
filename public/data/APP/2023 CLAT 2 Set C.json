@@ -1,0 +1,158 @@
+{
+    "paper_title": "SRM Institute of Science and Technology - CLA-T2 Examination - 21CSC203P Advanced Programming Practice",
+    "source": "<FILENAME>",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "What is the difference between process-based multitasking and thread-based multitasking? In which scenarios would you choose one over the other?",
+            "marks": 4,
+            "answer": "Process-based multitasking and thread-based multitasking are two approaches to achieving multitasking in computer systems:\n\n1. Process-Based Multitasking:\n- Processes: Each task is a separate process with its own memory space, program counter, and system resources running independently.\n- Isolation: Processes are isolated; if one crashes, it does not affect others.\n- Scalability: Resource-intensive creation due to separate memory allocation.\n- Scenarios to choose: When strong isolation between tasks is required (e.g., OS, web servers, mission-critical apps) or for parallelism across multi-core CPUs.\n\n2. Thread-Based Multitasking:\n- Threads: Multiple threads run within the same process sharing memory space and resources.\n- Lightweight: Faster creation and destruction compared to processes.\n- Communication: Easy data sharing through shared memory.\n- Scenarios to choose: When high efficiency, low overhead, close collaboration/data sharing, or responsive user interface (GUI) applications with background processing are needed.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "2",
+            "question_text": "What programming languages and libraries are commonly used for concurrent programming, and what features do they offer to facilitate concurrent development?",
+            "marks": 4,
+            "answer": "Commonly used programming languages and libraries for concurrent programming:\n\n1. Java: Built-in `java.lang.Thread` class and high-level utilities in `java.util.concurrent` (thread pools, concurrent data structures, Locks, Semaphores).\n2. C++: Standard `<thread>` library introduced in C++11 along with `<mutex>`, `<condition_variable>`, and `<future>` headers for synchronization and asynchronous operations.\n3. Python: `threading` module for thread-based concurrency, `multiprocessing` for process-based concurrency, and `asyncio` for event-driven asynchronous programming.\n4. Go (Golang): Lightweight `goroutines` managed by Go runtime and built-in `channels` for safe communication/synchronization.\n5. Rust: Ownership and borrowing system ensuring compile-time memory/concurrency safety, plus primitives like `std::thread` and `std::mpsc` channels.\n6. Erlang: Built around the Actor Model with independent actors communicating via message passing, supported by the OTP framework.\n7. .NET (C#): Task Parallel Library (TPL) with `Task` class and native `async/await` keywords for non-blocking asynchronous execution.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "3",
+            "question_text": "What are the limitations or challenges of shared memory system?",
+            "marks": 4,
+            "answer": "Limitations/Challenges of shared memory systems:\n1. Data Race Conditions: Occur when multiple threads/processes access and modify shared data concurrently without proper synchronization, leading to data corruption or unpredictable behavior.\n2. Synchronization Overhead: Using locks, semaphores, or mutexes to prevent data races introduces complexity and performance overhead.\n3. Deadlocks: Incorrect management of lock ordering can cause threads/processes to be permanently blocked waiting for resources held by each other.\n4. Resource Contention: High competition among concurrent threads for shared resources leads to degraded performance and throughput.\n5. Complexity: Designing, implementing, and debugging concurrent programs with shared memory is significantly harder.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "4",
+            "question_text": "What is the role of the bind() function in socket configuration? How do you use it to specify a local address and port for a TCP socket?",
+            "marks": 4,
+            "answer": "Role of `bind()` function:\nIts primary role is to associate/bind a specific local network address (IP address) and port number with a created socket endpoint.\n\nSteps to specify local address and port for a TCP socket:\n1. Create a socket using `socket()` with type `SOCK_STREAM` for TCP.\n2. Define a structure `struct sockaddr_in` containing the local IP address (e.g., `INADDR_ANY` or specific local IP), address family (`AF_INET`), and port number (converted to network byte order using `htons()`).\n3. Pass the socket descriptor, address structure cast to `struct sockaddr*`, and its size to `bind(sockfd, (struct sockaddr *)&addr, sizeof(addr))`.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "5",
+            "question_text": "What is the significance of the listen() function in TCP socket configuration, and what is the maximum number of pending connections it can handle?",
+            "marks": 4,
+            "answer": "Significance of `listen()` function:\nIt converts an active TCP socket into a passive listening socket, enabling it to accept incoming client connection requests on the server side.\n\nQueue for Incoming Connections & Backlog:\n- Calling `listen(sockfd, backlog)` creates an incoming connection queue known as the backlog.\n- The `backlog` parameter specifies the maximum number of pending connection requests that can be queued while the server processes existing ones.\n- The maximum allowable value depends on the operating system configuration and implementation limits (typically `SOMAXCONN`, e.g., 128 or 4096 depending on OS settings).",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "6",
+            "question_text": "How do symbolic programming languages handle variables and bindings differently from languages in other paradigms, such as procedural or object-oriented languages?",
+            "marks": 4,
+            "answer": "Differences in handling variables and bindings:\n1. Dynamic Binding & Symbolic Data: In symbolic languages (e.g., Lisp, Prolog), variables can hold symbols, expressions, and complete code representations, whereas procedural/OOP languages generally bind variables directly to concrete typed values in memory.\n2. Static vs. Dynamic Typing: Procedural/OOP languages often enforce static typing at compile time for safety, while symbolic languages heavily utilize dynamic typing and pattern matching/unification for symbolic manipulation and evaluation.",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+        },
+        {
+            "question_number": "7",
+            "question_text": "Can events in a database system be monitored or logged?",
+            "marks": 4,
+            "answer": "Yes, events in a database system can be monitored and logged through several mechanisms:\n1. Database Triggers: Execute predefined procedure/code automatically in response to DML/DDL events (INSERT, UPDATE, DELETE).\n2. Audit Logging & Transaction Logs: Built-in database engine capabilities (like WAL or binlogs) that record transaction histories, query logs, system events, and security access details.\n3. Event Handlers & CDC (Change Data Capture): Frameworks that track modifications and trigger asynchronous event streams/alerts for external applications.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+        },
+        {
+            "question_number": "8.a(i)",
+            "question_text": "Explain in detail about Concurrent Programming Paradigm.",
+            "marks": 4,
+            "answer": "Concurrent Programming Paradigm focuses on writing software where multiple tasks execute concurrently to improve execution efficiency and responsiveness on modern multi-core processors.\n\nKey Concepts:\n1. Threads and Processes: Basic units of concurrency. Threads share memory space within a process; processes are isolated with separate memory spaces.\n2. Synchronization: Mechanisms such as locks, mutexes, and semaphores prevent data race conditions.\n3. Communication: Shared Memory model vs Message Passing model.\n4. Benefits: Higher CPU utilization, improved system responsiveness, and horizontal scalability.\n5. Challenges: Deadlocks, data races, and synchronization overhead.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "8.a(ii)",
+            "question_text": "Write a java program that implements a multi-thread application that has three threads. First thread generates random integer every 1 second and if the value is even, second thread computes the square of the number and prints. If the value is odd, the third thread will print the value of cube of the number.",
+            "marks": 6,
+            "answer": "```java\nimport java.util.Random;\n\npublic class MultithreadExample {\n    public static void main(String[] args) {\n        RandomNumberGenerator generator = new RandomNumberGenerator();\n        SquareCalculator squareThread = new SquareCalculator();\n        CubePrinter cubeThread = new CubePrinter();\n        \n        generator.start();\n        squareThread.start();\n        cubeThread.start();\n    }\n}\n\nclass RandomNumberGenerator extends Thread {\n    private boolean running = true;\n    @Override\n    public void run() {\n        Random random = new Random();\n        while (running) {\n            int randomNumber = random.nextInt(100);\n            System.out.println(\"Generated: \" + randomNumber);\n            if (randomNumber % 2 == 0) {\n                SquareCalculator.newNumber(randomNumber);\n            } else {\n                CubePrinter.newNumber(randomNumber);\n            }\n            try {\n                Thread.sleep(1000); // Sleep for 1 second\n            } catch (InterruptedException e) {\n                e.printStackTrace();\n            }\n        }\n    }\n}\n\nclass SquareCalculator extends Thread {\n    private static int number;\n    public static void newNumber(int num) {\n        number = num;\n    }\n    @Override\n    public void run() {\n        while (true) {\n            if (number % 2 == 0) {\n                int square = number * number;\n                System.out.println(\"Square: \" + square);\n            }\n        }\n    }\n}\n\nclass CubePrinter extends Thread {\n    private static int number;\n    public static void newNumber(int num) {\n        number = num;\n    }\n    @Override\n    public void run() {\n        while (true) {\n            if (number % 2 != 0) {\n                int cube = number * number * number;\n                System.out.println(\"Cube: \" + cube);\n            }\n        }\n    }\n}\n```",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "8.b(i)",
+            "question_text": "Discuss the five steps for connecting JDBC.",
+            "marks": 4,
+            "answer": "Five steps for connecting to a database using JDBC:\n\n1. Import Required Packages: Import `java.sql.*` to access core JDBC classes and interfaces.\n2. Load and Register JDBC Driver: Load the platform-specific driver class using `Class.forName(\"com.mysql.cj.jdbc.Driver\")`.\n3. Establish Database Connection: Obtain a Connection object via `DriverManager.getConnection(url, username, password)`.\n4. Execute SQL Queries and Process Results: Create a `Statement` or `PreparedStatement` object to run queries (`executeQuery()`, `executeUpdate()`) and process returned data using `ResultSet`.\n5. Close Connection and Resources: Explicitly close `ResultSet`, `Statement`, and `Connection` objects to free database resources (`close()`).",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "8.b(ii)",
+            "question_text": "Create a java program for the following: Use ThreadA to find number of digits present in the string k and store into variable dc, finally print the value of dc(output format: ThreadA:digitscount). Use ThreadB to find number of alphabetic present in the string k and store into variable cc, finally print the value of cc (output format:ThreadB:digitscount).",
+            "marks": 6,
+            "answer": "```java\npublic class CharacterCount {\n    private static String k = \"Hello123World456\";\n    public static void main(String[] args) {\n        ThreadA threadA = new ThreadA();\n        ThreadB threadB = new ThreadB();\n        threadA.start();\n        threadB.start();\n        try {\n            threadA.join();\n            threadB.join();\n        } catch (InterruptedException e) {\n            e.printStackTrace();\n        }\n        int dc = threadA.getDigitCount();\n        int cc = threadB.getCharacterCount();\n        System.out.println(\"ThreadA:\" + dc);\n        System.out.println(\"ThreadB:\" + cc);\n    }\n}\n\nclass ThreadA extends Thread {\n    private int digitCount = 0;\n    @Override\n    public void run() {\n        for (char c : CharacterCount.k.toCharArray()) {\n            if (Character.isDigit(c)) {\n                digitCount++;\n            }\n        }\n    }\n    public int getDigitCount() {\n        return digitCount;\n    }\n}\n\nclass ThreadB extends Thread {\n    private int characterCount = 0;\n    @Override\n    public void run() {\n        for (char c : CharacterCount.k.toCharArray()) {\n            if (Character.isLetter(c)) {\n                characterCount++;\n            }\n        }\n    }\n    public int getCharacterCount() {\n        return characterCount;\n    }\n}\n```",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "9.a(i)",
+            "question_text": "Write a program to implement First Order Logic.",
+            "marks": 4,
+            "answer": "```python\nfrom pyke import knowledge_engine\n\n# Define a simple knowledge base with facts and rules.\nfacts = [\n    (\"man\", \"John\"),\n    (\"woman\", \"Mary\"),\n    (\"parent\", \"John\", \"Tom\"),\n    (\"parent\", \"Mary\", \"Tom\"),\n]\n\nengine = knowledge_engine.engine(__file__)\nwith engine.prove_goal(\"man($x)\") as gen:\n    for vars, plan in gen:\n        print(f\"{vars['x']} is a man.\")\n\nwith engine.prove_goal(\"parent($x, Tom)\") as gen:\n    for vars, plan in gen:\n        print(f\"{vars['x']} is a parent of Tom.\")\n```",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "9.a(ii)",
+            "question_text": "Write a python program to Check if a Number is Even or Odd and also check whether it is Prime or not.",
+            "marks": 6,
+            "answer": "```python\ndef is_even_or_odd(number):\n    if number % 2 == 0:\n        return \"Even\"\n    else:\n        return \"Odd\"\n\ndef is_prime(number):\n    if number <= 1:\n        return False\n    if number <= 3:\n        return True\n    if number % 2 == 0 or number % 3 == 0:\n        return False\n    i = 5\n    while i * i <= number:\n        if number % i == 0 or number % (i + 2) == 0:\n            return False\n        i += 6\n    return True\n\n# Input a number from the user\nnum = int(input(\"Enter a number: \"))\n\n# Check if the number is even or odd\neven_or_odd = is_even_or_odd(num)\nprint(f\"{num} is {even_or_odd}.\")\n\n# Check if the number is prime or not\nprime = is_prime(num)\nif prime:\n    print(f\"{num} is a prime number.\")\nelse:\n    print(f\"{num} is not a prime number.\")\n```",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "9.b(i)",
+            "question_text": "Illustrate the prolog features with examples.",
+            "marks": 4,
+            "answer": "Prolog Features & Examples:\n\n1. Facts and Rules:\n```prolog\n% Facts\nlikes(john, pizza).\nlikes(mary, pizza).\nlikes(mary, ice_cream).\n% Rule\neats(john, X) :- likes(john, X).\n```\n\n2. Querying and Inference:\n`?- likes(john, pizza).` -> `true.`\n`?- eats(john, ice_cream).` -> `false.`\n\n3. Variables:\n`?- likes(X, pizza).` -> `X = john ; X = mary.`\n\n4. Negation:\n`dislikes(Person, Food) :- \\+ likes(Person, Food).`\n\n5. Lists & Recursion:\n```prolog\nsum_list([], 0).\nsum_list([Head | Tail], Sum) :- sum_list(Tail, RestSum), Sum is Head + RestSum.\n\nfactorial(0, 1).\nfactorial(N, Result) :- N > 0, N1 is N - 1, factorial(N1, PartialResult), Result is N * PartialResult.\n```",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "9.b(ii)",
+            "question_text": "Write a python program to calculate the area and perimeter of different geometric shapes (circle, rectangle, triangle, etc.).",
+            "marks": 6,
+            "answer": "```python\nimport math\n\ndef circle_area_and_perimeter(radius):\n    area = math.pi * radius**2\n    perimeter = 2 * math.pi * radius\n    return area, perimeter\n\ndef rectangle_area_and_perimeter(length, width):\n    area = length * width\n    perimeter = 2 * (length + width)\n    return area, perimeter\n\ndef triangle_area_and_perimeter(base, height, side1, side2, side3):\n    area = 0.5 * base * height\n    perimeter = side1 + side2 + side3\n    return area, perimeter\n\nshape = input(\"Enter the shape (circle, rectangle, triangle): \")\nif shape == \"circle\":\n    radius = float(input(\"Enter the radius: \"))\n    area, perimeter = circle_area_and_perimeter(radius)\nelif shape == \"rectangle\":\n    length = float(input(\"Enter the length: \"))\n    width = float(input(\"Enter the width: \"))\n    area, perimeter = rectangle_area_and_perimeter(length, width)\nelif shape == \"triangle\":\n    base = float(input(\"Enter the base length: \"))\n    height = float(input(\"Enter the height: \"))\n    side1 = float(input(\"Enter the length of side 1: \"))\n    side2 = float(input(\"Enter the length of side 2: \"))\n    side3 = float(input(\"Enter the length of side 3: \"))\n    area, perimeter = triangle_area_and_perimeter(base, height, side1, side2, side3)\nelse:\n    print(\"Unsupported shape\")\n\nif shape in [\"circle\", \"rectangle\", \"triangle\"]:\n    print(f\"Area: {area}\")\n    print(f\"Perimeter: {perimeter}\")\n```",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "10.a(i)",
+            "question_text": "How can you use third-party libraries with Tkinter to enhance its functionality? How do you install Tkinter?",
+            "marks": 4,
+            "answer": "Installing Tkinter & Using Third-Party Libraries:\n\n1. Installing Tkinter:\nTkinter is included in Python's standard library by default. On Linux, it can be installed via `sudo apt-get install python3-tk` if missing.\n\n2. Steps to use third-party libraries:\n- Install via pip: `pip install <library_name>`\n- Import in code: `import <library_name>`\n- Integrate widgets/features into Tkinter windows and bind events.\n\n3. Examples of popular third-party libraries:\n- `ttkthemes`: Adds advanced visual themes to Tkinter widgets.\n- `Pillow (PIL)`: Enables image loading, processing, and display.\n- `Matplotlib`: Used to embed interactive plots and graphs.\n- `ttkwidgets`: Provides additional themed GUI controls.",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+        },
+        {
+            "question_number": "10.a(ii)",
+            "question_text": "Construct a NFA and give the transmission table for the following regular expression for the given language = (a + ba)*bb (a + ab)*.",
+            "marks": 6,
+            "answer": "NFA Construction for `(a + ba)*bb (a + ab)*`:\n\n1. NFA States & Transitions:\n- State q0: Initial state for `(a + ba)*`\n- State q1: State reached after reading 'b'\n- State q2: State reached after reading 'bb'\n- State q3: Accepting state for `(a + ab)*`\n\n2. Transition Table:\n| State | 'a' | 'b' |\n|---|---|---|\n| q0 | {q0} | {q1} |\n| q1 | {q0} | {q1, q2} |\n| q2 | {q3} | {q2} |\n| q3 | {q3} | {q3} |\n\n3. Python Simulation:\n```python\nnfa = {\n    0: {'a': {0}, 'b': {1}},\n    1: {'b': {1}},\n    2: {'a': {3}, 'b': {2}},\n    3: {'a': {3}},\n}\naccepting_states = {1, 3}\n\ndef simulate_nfa(input_string):\n    current_states = {0}\n    for char in input_string:\n        next_states = set()\n        for state in current_states:\n            if char in nfa[state]:\n                next_states.update(nfa[state][char])\n        current_states = next_states\n    return any(state in current_states for state in accepting_states)\n```",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+        },
+        {
+            "question_number": "10.b(i)",
+            "question_text": "What functions are available for solving equations in SymPy?",
+            "marks": 4,
+            "answer": "Key SymPy functions for solving equations:\n\n1. `solve()`: Primary function for symbolic algebraic, transcendental, and systems of equations.\nExample:\n```python\nfrom sympy import symbols, Eq, solve\nx, y = symbols('x y')\nequation = Eq(x**2 + y, 5)\nsolutions = solve(equation, x)\n```\n\n2. `solveset()`: Returns set representations (`FiniteSet`, `Interval`) of solutions.\n```python\nfrom sympy import symbols, Eq, solveset, S\nx = symbols('x')\nsolutions = solveset(Eq(x**2 - 4, 0), x, domain=S.Reals)\n```\n\n3. `linsolve()`: Designed specifically for linear systems of equations.\n```python\nfrom sympy import symbols, linsolve\nx, y = symbols('x y')\nsolutions = linsolve((2*x + 3*y - 5, 4*x - 6*y - 2), x, y)\n```\n\n4. `dsolve()`: Solves ordinary differential equations (ODEs).\n```python\nfrom sympy import symbols, Eq, Function, dsolve\nx = symbols('x')\nf = Function('f')(x)\nsolution = dsolve(Eq(f.diff(x) - 2*f, 0), f)\n```",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+        },
+        {
+            "question_number": "10.b(ii)",
+            "question_text": "Develop a Python function that takes an NFA and returns the set of states that can be reached from a given state on a specific input symbol.",
+            "marks": 6,
+            "answer": "```python\ndef find_reachable_states(nfa, start_state, input_symbol):\n    def dfs(current_state):\n        reachable_states = {current_state}\n        transitions = nfa.get(current_state, {}).get(input_symbol, set())\n        for next_state in transitions:\n            reachable_states.update(dfs(next_state))\n        return reachable_states\n\n    return dfs(start_state)\n\n# Example usage\nnfa = {\n    'q0': {'a': {'q0', 'q1'}, 'b': {'q0'}},\n    'q1': {'a': {'q1'}, 'b': {'q2'}},\n    'q2': {'a': {'q2'}, 'b': {'q2'}}\n}\nstart_state = 'q0'\ninput_symbol = 'a'\nreachable_states = find_reachable_states(nfa, start_state, input_symbol)\nprint(\"Reachable states:\", reachable_states)\n```",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+        }
+    ]
+}

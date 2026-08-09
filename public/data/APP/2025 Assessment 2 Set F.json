@@ -1,0 +1,94 @@
+{
+    "paper_title": "SRM Institute of Science and Technology - School of Computing - Assessment II - 21CSC203P Advanced Programming Practice",
+    "source": "<FILENAME>",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "The following code is meant to square all numbers in a list using map(), but it has an error. Identify and correct the mistake.\nnumbers = [1, 2, 3, 4]\nresult = map(lambda x: x*x, num)\nprint(result)",
+            "marks": 2,
+            "answer": "Errors identified:\n1. Variable name mismatch: `num` was passed instead of `numbers`.\n2. In Python 3, `map()` returns an iterator object. To print the actual squared values, it should be wrapped in `list()`.\n\nCorrected Code:\n```python\nnumbers = [1, 2, 3, 4]\nresult = list(map(lambda x: x * x, numbers))\nprint(result)  # Output: [1, 4, 9, 16]\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "2",
+            "question_text": "Complete the rule to find siblings using PyDatalog.\nfrom pyDatalog import pyDatalog\npyDatalog._______('parent, sibling, X, Y, Z')\nsibling(X, Y) <= (parent(Z, X) & parent(Z, Y) & (_______))",
+            "marks": 2,
+            "answer": "Completed PyDatalog Rule:\n\n```python\nfrom pyDatalog import pyDatalog\n\npyDatalog.create_terms('parent, sibling, X, Y, Z')\nsibling(X, Y) <= (parent(Z, X) & parent(Z, Y) & (X != Y))\n```\nExplanation: \n- `create_terms` defines the logical terms.\n- `(X != Y)` ensures that a person is not listed as their own sibling.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "3",
+            "question_text": "Write a short Python program using the multiprocessing module to create two processes that each print their process ID. Explain why this approach uses a distributed memory model.",
+            "marks": 2,
+            "answer": "Python Code:\n```python\nimport multiprocessing\nimport os\n\n\ndef print_pid():\n    print(f\"Process ID: {os.getpid()}\")\n\n\nif __name__ == \"__main__\":\n    p1 = multiprocessing.Process(target=print_pid)\n    p2 = multiprocessing.Process(target=print_pid)\n    p1.start()\n    p2.start()\n    p1.join()\n    p2.join()\n```\n\nExplanation: The `multiprocessing` module spawns distinct operating system processes, each having its own isolated virtual address space and private Python interpreter instance. Since memory is not shared between processes by default (avoiding GIL contention), it uses a distributed memory paradigm.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "4",
+            "question_text": "Write a Python program using the SymPy library to perform the following symbolic operations. Define a symbolic variable x and Compute and display the derivative of the expression x^4 + 3x^2 + 3x + 1",
+            "marks": 2,
+            "answer": "```python\nimport sympy as sp\n\nx = sp.Symbol('x')\nexpr = x**4 + 3*x**2 + 3*x + 1\nderivative = sp.diff(expr, x)\nprint(\"Derivative:\", derivative)  # Output: 4*x**3 + 6*x + 3\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+        },
+        {
+            "question_number": "5",
+            "question_text": "Create a Tkinter program which is intended to display the message \"Hello World!\" in a label when the button is clicked.",
+            "marks": 2,
+            "answer": "```python\nimport tkinter as tk\n\ndef show_message():\n    label.config(text=\"Hello World!\")\n\nroot = tk.Tk()\nroot.title(\"Tkinter App\")\n\nlabel = tk.Label(root, text=\"\")\nlabel.pack()\n\nbutton = tk.Button(root, text=\"Click Me\", command=show_message)\nbutton.pack()\n\nroot.mainloop()\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+        },
+        {
+            "question_number": "6a",
+            "question_text": "i) You have the following list of employee salaries:\nsalaries = [4500, 5200, 6100, 4800, 7000]\nUsing a functional programming approach in Python, write a program to increase only the salaries above $5000 by 10% and display the updated list.\n\nii) What is a pure function in Python? Give an example.",
+            "marks": 5,
+            "answer": "i) Functional approach solution:\n```python\nsalaries = [4500, 5200, 6100, 4800, 7000]\nupdated_salaries = list(map(lambda s: s * 1.10 if s > 5000 else s, salaries))\nprint(updated_salaries)  # Output: [4500, 5720.0, 6710.0, 4800, 7700.0]\n```\n\nii) Pure Function Definition:\nA pure function is a function where:\n1. It produces the exact same output every time for the same input arguments.\n2. It causes no side effects (does not modify external variables, global state, or perform I/O operations).\n\nExample:\n```python\ndef add(a, b):\n    return a + b\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "6b",
+            "question_text": "Suppose you have a family tree:\n• Mary is the parent of John and Jane.\n• John is the parent of Tom.\n• Jane is the parent of Fred.\nFind out who are Tom's cousins.",
+            "marks": 5,
+            "answer": "Using PyDatalog to define family relationships and query Tom's cousins:\n\n```python\nfrom pyDatalog import pyDatalog\n\npyDatalog.create_terms('parent, sibling, cousin, X, Y, P1, P2, GP')\n\n# Facts\n+parent('Mary', 'John')\n+parent('Mary', 'Jane')\n+parent('John', 'Tom')\n+parent('Jane', 'Fred')\n\n# Rules\nsibling(X, Y) <= (parent(GP, X) & parent(GP, Y) & (X != Y))\ncousin(X, Y) <= (parent(P1, X) & parent(P2, Y) & sibling(P1, P2))\n\n# Query\nprint(cousin('Tom', Y))\n```\n\nResult:\nFred is Tom's cousin because Fred's parent (Jane) and Tom's parent (John) are siblings sharing the same parent (Mary).",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "7a",
+            "question_text": "Build a TCP client-server using Python sockets to send a string from client to server. Give client and server code snippets for the string exchange.",
+            "marks": 5,
+            "answer": "Server Code (`server.py`):\n```python\nimport socket\n\nserver_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\nserver_socket.bind(('localhost', 12345))\nserver_socket.listen(1)\nprint(\"Server is listening...\")\n\nconn, addr = server_socket.accept()\nprint(f\"Connected by {addr}\")\n\ndata = conn.recv(1024).decode()\nprint(f\"Received string from client: {data}\")\n\nconn.close()\nserver_socket.close()\n```\n\nClient Code (`client.py`):\n```python\nimport socket\n\nclient_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\nclient_socket.connect(('localhost', 12345))\n\nmessage = \"Hello from TCP Client!\"\nclient_socket.send(message.encode())\n\nclient_socket.close()\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "7b",
+            "question_text": "Write a Python program using the SymPy library to perform the following symbolic operations:\n• Define a symbolic variable x.\n• Compute and display the derivative, integral, and factorization of the expression x^4 + 4x^3 + 6x^2 + 4x + 1",
+            "marks": 5,
+            "answer": "```python\nimport sympy as sp\n\n# Define symbolic variable\nx = sp.Symbol('x')\n\n# Define expression\nexpr = x**4 + 4*x**3 + 6*x**2 + 4*x + 1\n\n# Compute derivative, integral, and factorization\nderivative = sp.diff(expr, x)\nintegral = sp.integrate(expr, x)\nfactorization = sp.factor(expr)\n\n# Display results\nprint(\"Derivative:\", derivative)    # 4*x**3 + 12*x**2 + 12*x + 4\nprint(\"Integral:\", integral)        # x**5/5 + x**4 + 2*x**3 + 2*x**2 + x\nprint(\"Factorization:\", factorization) # (x + 1)**4\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+        },
+        {
+            "question_number": "8a",
+            "question_text": "A student is creating a simple \"Math Operation App\" using Tkinter to perform addition and subtraction of two numbers entered by the user. Design a Tkinter window with two Entry boxes to accept two numbers and two buttons labeled \"Add\" and \"Sub\". When the button is clicked, display the sum and difference of the two numbers in a label.",
+            "marks": 5,
+            "answer": "```python\nimport tkinter as tk\n\ndef perform_add():\n    try:\n        num1 = float(entry1.get())\n        num2 = float(entry2.get())\n        lbl_result.config(text=f\"Sum: {num1 + num2}\")\n    except ValueError:\n        lbl_result.config(text=\"Invalid input!\")\n\ndef perform_sub():\n    try:\n        num1 = float(entry1.get())\n        num2 = float(entry2.get())\n        lbl_result.config(text=f\"Diff: {num1 - num2}\")\n    except ValueError:\n        lbl_result.config(text=\"Invalid input!\")\n\nroot = tk.Tk()\nroot.title(\"Math Operation App\")\nroot.geometry(\"300x250\")\n\ntk.Label(root, text=\"Enter first number\").pack()\nentry1 = tk.Entry(root)\nentry1.pack()\n\ntk.Label(root, text=\"Enter second number\").pack()\nentry2 = tk.Entry(root)\nentry2.pack()\n\nbtn_add = tk.Button(root, text=\"Add\", command=perform_add)\nbtn_add.pack(pady=5)\n\nbtn_sub = tk.Button(root, text=\"Sub\", command=perform_sub)\nbtn_sub.pack(pady=5)\n\nlbl_result = tk.Label(root, text=\"\")\nlbl_result.pack(pady=10)\n\nroot.mainloop()\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+        },
+        {
+            "question_number": "8b",
+            "question_text": "Write a Python program using the Automata library to simulate a DFA that accepts binary strings ending with '01'. Define states, transitions, input symbols, initial and final states. Test the DFA for the inputs: '01', '1001', '1010'.",
+            "marks": 5,
+            "answer": "```python\nfrom automata.fa.dfa import DFA\n\n# DFA definition for strings ending in '01'\ndfa = DFA(\n    states={'q0', 'q1', 'q2'},\n    input_symbols={'0', '1'},\n    transitions={\n        'q0': {'0': 'q1', '1': 'q0'},  # q0: start state / neutral\n        'q1': {'0': 'q1', '1': 'q2'},  # q1: last seen symbol is '0'\n        'q2': {'0': 'q1', '1': 'q0'}   # q2: last seen pattern is '01' (accepting)\n    },\n    initial_state='q0',\n    final_states={'q2'}\n)\n\n# Test inputs\ntest_inputs = ['01', '1001', '1010']\nfor input_str in test_inputs:\n    is_accepted = dfa.accepts_input(input_str)\n    print(f\"Input '{input_str}': {'Accepted' if is_accepted else 'Rejected'}\")\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+        }
+    ]
+}
