@@ -1,0 +1,263 @@
+{
+    "formal_filename": "2025-06_ET_QP.json",
+    "paper_title": "B.TECH/ M.Tech (Integrated) DEGREE EXAMINATION, JUNE 2025 Third Semester 21CSC201J - DATA STRUCTURES AND ALGORITHMS",
+    "source": "2025-06 ET",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "How do you access a member of a structure using a pointer in C?\nA) ptr.member\nB) ptr->member\nC) *ptr.member\nD) ptr&.member",
+            "marks": 1,
+            "answer": "B) ptr->member\n\n**Rationale:** In C, when accessing members of a structure through a pointer, the arrow operator (`->`) is used. It is equivalent to dereferencing the pointer first and then using the dot operator: `(*ptr).member`.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "2",
+            "question_text": "What is the output of the following code?\n\n```c\nint x = 10;\nint *p = &x;\nprintf(\"%d\", *p);\n\n```\n\nA) Address of x\nB) 10\nC) Garbage value\nD) Compilation error",
+            "marks": 1,
+            "answer": "B) 10\n\n**Rationale:** The pointer `p` is assigned the memory address of `x`. The expression `*p` dereferences the pointer, returning the integer value stored at that address, which is `10`.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "3",
+            "question_text": "Which of the following statements about matrix multiplication is true?\nA) Matrix multiplication is commutative\nB) Matrix multiplication is associative\nC) Matrix multiplication is distributive over addition\nD) Both b and c",
+            "marks": 1,
+            "answer": "D) Both b and c\n\n**Rationale:** Matrix multiplication is generally not commutative ($AB \\neq BA$). However, it is associative ($A(BC) = (AB)C$) and distributive over addition ($A(B+C) = AB + AC$).",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "4",
+            "question_text": "What is the best time complexity of a linear search?\nA) O(1)\nB) O(n)\nC) O(log n)\nD) O(n^2)",
+            "marks": 1,
+            "answer": "A) O(1)\n\n**Rationale:** The best-case scenario occurs when the target element is located at the first position (index 0) of the list/array, resulting in a constant time complexity of $O(1)$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "5",
+            "question_text": "In a singly linked list, how is an element inserted at the beginning of the list?\nA) By creating a new node and updating the head pointer\nB) By shifting all elements one position to the right\nC) By swapping the first two nodes\nD) By appending the element at the end",
+            "marks": 1,
+            "answer": "A) By creating a new node and updating the head pointer\n\n**Rationale:** Inserting a node at the beginning of a singly linked list involves setting the `next` pointer of the newly created node to point to the current `head` node, and then updating the `head` pointer to point to this new node.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: List Structure"
+        },
+        {
+            "question_number": "6",
+            "question_text": "What is the disadvantage of inserting an element at the beginning in an array-based implementation of List ADT?\nA) Requires extra space\nB) Takes constant time\nC) Requires shifting all elements\nD) Cannot be done",
+            "marks": 1,
+            "answer": "C) Requires shifting all elements\n\n**Rationale:** In a contiguous memory array-based implementation, inserting an element at index 0 requires shifting all existing $n$ elements one index to the right to make space, which takes $O(n)$ time.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: List Structure"
+        },
+        {
+            "question_number": "7",
+            "question_text": "How is the end of the list detected in a circular singly linked list?\nA) When the next pointer is NULL\nB) When the next pointer points to the head\nC) When the previous pointer is NULL\nD) When the previous pointer points to the tail",
+            "marks": 1,
+            "answer": "B) When the next pointer points to the head\n\n**Rationale:** In a circular singly linked list, there are no `NULL` pointers; the `next` pointer of the last node points back to the `head` of the list.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: List Structure"
+        },
+        {
+            "question_number": "8",
+            "question_text": "In the Josephus problem, how is the next person to be eliminated chosen in a circular linked list?\nA) Randomly\nB) By a fixed number of steps\nC) By a linear search\nD) By sorting the list",
+            "marks": 1,
+            "answer": "B) By a fixed number of steps\n\n**Rationale:** The classic Josephus problem involves eliminating every $k$-th person (where $k$ is a fixed number of steps) in a circle until only one survivor remains.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: List Structure"
+        },
+        {
+            "question_number": "9",
+            "question_text": "What is the time complexity of the push operation in a stack implemented using an array?\nA) O(1)\nB) O(n)\nC) O(log n)\nD) O(n log n)",
+            "marks": 1,
+            "answer": "A) O(1)\n\n**Rationale:** Inserting a new element on top of an array-based stack involves checking for overflow, incrementing the `top` index variable, and assigning the value, which are all constant-time operations.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "10",
+            "question_text": "What is the postfix expression for the infix expression (A + B) * (C + D)?\nA) AB + CD + *\nB) AB + C + D *\nC) AB + CD * +\nD) ABCD + * +",
+            "marks": 1,
+            "answer": "A) AB + CD + *\n\n**Rationale:**\n1. Evaluate parenthesized expressions first:\n   - `(A + B)` becomes `AB+`\n   - `(C + D)` becomes `CD+`\n2. Multiply the two terms:\n   - `(AB+) * (CD+)` becomes `AB+ CD+ *`",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "11",
+            "question_text": "How many moves are required to solve the Tower of Hanoi problem with 4 disks?\nA) 16\nB) 15\nC) 14\nD) 24",
+            "marks": 1,
+            "answer": "B) 15\n\n**Rationale:** The minimum number of moves required to solve the Tower of Hanoi problem with $n$ disks is $2^n - 1$. For $n = 4$, the required moves are $2^4 - 1 = 16 - 1 = 15$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "12",
+            "question_text": "In a circular queue implemented using an array, how do you check if the queue is full?\nA) front == rear\nB) (rear + 1) % size == front\nC) front == size\nD) rear == size",
+            "marks": 1,
+            "answer": "B) (rear + 1) % size == front\n\n**Rationale:** A circular queue of capacity `size` is full when the circular successor of the `rear` index matches the `front` index, meaning no more elements can be written without overwriting `front`.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "13",
+            "question_text": "In a binary tree, the maximum number of nodes at level L is:\nA) 2^L\nB) 2^(L-1)\nC) 2^(L+1)\nD) L^2",
+            "marks": 1,
+            "answer": "A) 2^L\n\n**Rationale:** By convention, if the root node is at level $0$, the maximum number of nodes at level $L$ is $2^L$. (e.g., Level 0: $2^0=1$ node, Level 1: $2^1=2$ nodes, Level 2: $2^2=4$ nodes).",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "14",
+            "question_text": "A complete binary tree is defined as:\nA) A binary tree in which all levels are completely filled.\nB) A binary tree in which all levels except possibly the last are completely filled.\nC) A binary tree with nodes having at most two children.\nD) A binary tree in which each node has exactly two children.",
+            "marks": 1,
+            "answer": "B) A binary tree in which all levels except possibly the last are completely filled.\n\n**Rationale:** In a complete binary tree, every level except possibly the last is completely filled, and all nodes in the last level are as far left as possible.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "15",
+            "question_text": "In an AVL tree, which rotation is applied when the tree becomes left-heavy due to the insertion of a new node in the left subtree of the left child?\nA) Right rotation\nB) Left rotation\nC) Left-right rotation\nD) Right-left rotation",
+            "marks": 1,
+            "answer": "A) Right rotation\n\n**Rationale:** This represents the Left-to-Left (LL) imbalance scenario. A single right rotation around the unbalanced node balances the tree.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "16",
+            "question_text": "What is the maximum height of a Red-Black tree with n nodes?\nA) 2*log(n+1)\nB) 2*log(n)\nC) log(n+1)\nD) log(n)",
+            "marks": 1,
+            "answer": "A) 2*log(n+1)\n\n**Rationale:** Due to Red-Black Tree properties (no consecutive red nodes, equal black height), the maximum height of a Red-Black tree containing $n$ internal nodes is bounded by $2 \\log_2(n+1)$.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "17",
+            "question_text": "Quadratic probing is primarily used to:\nA) Avoid clustering.\nB) Handle large datasets.\nC) It is only applicable to undirected graphs.\nD) All edges must point in the same direction.",
+            "marks": 1,
+            "answer": "A) Avoid clustering.\n\n**Rationale:** Quadratic probing resolves collisions in a hash table and avoids the issue of \"primary clustering\" (which is prevalent in linear probing) by looking for vacant spots at quadratic intervals.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "18",
+            "question_text": "In a topological sorting of a graph, which of the following is true?\nA) The graph must be cyclic.\nB) It is possible to have multiple valid orderings.\nC) It is only applicable to undirected graphs.\nD) All edges must point in the same direction.",
+            "marks": 1,
+            "answer": "B) It is possible to have multiple valid orderings.\n\n**Rationale:** A Directed Acyclic Graph (DAG) may have more than one valid topological sort depending on the graph's structure and the specific paths of dependency.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Graph"
+        },
+        {
+            "question_number": "19",
+            "question_text": "Which of the following data structures is commonly used to implement Kruskal's algorithm?\nA) Stack\nB) Queue\nC) Disjoint Set (Union-Find)\nD) Priority Queue",
+            "marks": 1,
+            "answer": "C) Disjoint Set (Union-Find)\n\n**Rationale:** Kruskal's algorithm uses the Disjoint Set (Union-Find) data structure to keep track of connected components and detect cycles in $O(\\log V)$ or $O(\\alpha(V))$ time.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Graph"
+        },
+        {
+            "question_number": "20",
+            "question_text": "In Dijkstra's algorithm, which data structure is commonly used to select the next vertex with the minimum distance?\nA) Stack\nB) Queue\nC) Priority Queue (Min-Heap)\nD) Hash Table",
+            "marks": 1,
+            "answer": "C) Priority Queue (Min-Heap)\n\n**Rationale:** A min-priority queue (typically implemented as a binary min-heap) is used to efficiently select and extract the vertex with the minimum tentative distance.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Graph"
+        },
+        {
+            "question_number": "21 a.",
+            "question_text": "Define and explain the differences between primitive data types and structures in programming. Provide an example in C demonstrating the declaration and usage of both.",
+            "marks": 8,
+            "answer": "### 1. Definitions\n- **Primitive Data Type:** A basic, built-in data type provided by the programming language itself (e.g., `int`, `char`, `float`, `double`). It stores a single value and is directly supported by the machine hardware.\n- **Structure:** A user-defined, composite data type that allows grouping of logically related variables of different data types (members) under a single name.\n\n### 2. Key Differences\n| Feature | Primitive Data Type | Structure (Composite) |\n| :--- | :--- | :--- |\n| **Origin** | Built-in / System-defined | User-defined |\n| **Content** | Single value | Group of multiple variables (members) |\n| **Homogeneity** | Holds uniform single type | Can contain heterogeneous data types |\n| **Memory Allocation** | Determined by the compiler / compiler-preset size | Cumulative size of its internal members (plus padding) |\n\n### 3. C Example\n\n```c\n#include <stdio.h>\n#include <string.h>\n\n// Defining a structure\nstruct Student {\n    int rollNo;         // Primitive member\n    char name[50];      // Array of characters\n    float gpa;          // Primitive member\n};\n\nint main() {\n    // 1. Primitive data type declaration & usage\n    int totalStudents = 1;\n    \n    // 2. Structure declaration, initialization, and usage\n    struct Student s1;\n    s1.rollNo = 101;\n    strcpy(s1.name, \"John Doe\");\n    s1.gpa = 3.85;\n\n    printf(\"Total Students (Primitive Variable): %d\\n\", totalStudents);\n    printf(\"Student Details (Structure Variable):\\n\");\n    printf(\"Roll No: %d, Name: %s, GPA: %.2f\\n\", s1.rollNo, s1.name, s1.gpa);\n\n    return 0;\n}\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "21 b.",
+            "question_text": "Discuss dynamic memory allocation in C and illustrate how to dynamically allocate memory for a 2D matrix. Also, provide a simple example of matrix multiplication.",
+            "marks": 8,
+            "answer": "### 1. Dynamic Memory Allocation in C\nDynamic memory allocation refers to the process of allocating memory at runtime rather than compile-time. It uses heap space and is managed using standard library functions from `<stdlib.h>`:\n- `malloc()`: Allocates uninitialized memory blocks.\n- `calloc()`: Allocates memory and initializes all bytes to zero.\n- `realloc()`: Resizes previously allocated memory blocks.\n- `free()`: Deallocates heap memory to prevent memory leaks.\n\n### 2. Allocating a 2D Matrix Dynamically\nA 2D matrix is represented as an array of pointers pointing to individual row arrays:\n\n```c\nint rows = 3, cols = 3;\nint **matrix = (int **)malloc(rows * sizeof(int *));\nfor (int i = 0; i < rows; i++) {\n    matrix[i] = (int *)malloc(cols * sizeof(int));\n}\n\n```\n\n### 3. Matrix Multiplication Example\n\n```c\n#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    int r1 = 2, c1 = 2, r2 = 2, c2 = 2;\n\n    // Allocate Matrix A, B, and C (Result)\n    int **A = (int **)malloc(r1 * sizeof(int *));\n    int **B = (int **)malloc(r2 * sizeof(int *));\n    int **C = (int **)malloc(r1 * sizeof(int *));\n    for(int i = 0; i < 2; i++) {\n        A[i] = (int *)malloc(c1 * sizeof(int));\n        B[i] = (int *)malloc(c2 * sizeof(int));\n        C[i] = (int *)calloc(c2, sizeof(int)); // initialized to 0\n    }\n\n    // Initialize Matrix A and B\n    A[0][0] = 1; A[0][1] = 2; A[1][0] = 3; A[1][1] = 4;\n    B[0][0] = 5; B[0][1] = 6; B[1][0] = 7; B[1][1] = 8;\n\n    // Matrix Multiplication logic\n    for (int i = 0; i < r1; i++) {\n        for (int j = 0; j < c2; j++) {\n            for (int k = 0; k < c1; k++) {\n                C[i][j] += A[i][k] * B[k][j];\n            }\n        }\n    }\n\n    // Output\n    printf(\"Resultant Matrix C:\\n\");\n    for (int i = 0; i < r1; i++) {\n        for (int j = 0; j < c2; j++) {\n            printf(\"%d \", C[i][j]);\n        }\n        printf(\"\\n\");\n    }\n\n    // Deallocate memory\n    for(int i = 0; i < 2; i++) {\n        free(A[i]); free(B[i]); free(C[i]);\n    }\n    free(A); free(B); free(C);\n    return 0;\n}\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "22 a.",
+            "question_text": "Define and differentiate between Singly Linked List, Doubly Linked List, and Circular Linked List. Provide a scenario where each type is preferred.",
+            "marks": 8,
+            "answer": "### 1. Definitions\n- **Singly Linked List (SLL):** A collection of nodes where each node contains data and a pointer to the *next* node in the sequence. The last node points to `NULL`.\n- **Doubly Linked List (DLL):** A sequence of nodes where each node contains data, a pointer to the *next* node, and a pointer to the *previous* node. The `prev` of the first node and the `next` of the last node are `NULL`.\n- **Circular Linked List (CLL):** A linked list (singly or doubly) where the last node points back to the first node (head), making a complete ring.\n\n### 2. Comparison Table\n\n| Feature | Singly Linked List | Doubly Linked List | Circular Linked List |\n| :--- | :--- | :--- | :--- |\n| **Pointer overhead** | 1 pointer (`next`) | 2 pointers (`next`, `prev`) | 1 or 2 pointers |\n| **Traversal** | Uni-directional | Bi-directional | Circular / Infinite loop possible |\n| **Complexity of operations** | Standard | High (updating two links per insertion/deletion) | Moderate (tracking head to prevent infinite loop) |\n| **Null pointers** | Yes (at the end) | Yes (at both ends) | No |\n\n### 3. Preferred Application Scenarios\n- **Singly Linked List:** Preferred when memory space is tight and traversal is strictly forward-only (e.g., implementing basic stacks, hash-chaining buckets).\n- **Doubly Linked List:** Preferred when frequent forward-and-backward traversal is necessary (e.g., Undo-Redo features in software, Browser History, text editor cursors).\n- **Circular Linked List:** Preferred in continuous cycle-based systems (e.g., Round Robin CPU Scheduling, multiplayer board game turns, buffering media playback loops).",
+            "answer_source": "generated",
+            "chapter": "Unit 2: List Structure"
+        },
+        {
+            "question_number": "22 b.",
+            "question_text": "Explain the Josephus Problem. Describe how a Circular Linked List can be used to solve this problem. Write the algorithm for the same.",
+            "marks": 8,
+            "answer": "### 1. Explanation of the Josephus Problem\nThe Josephus problem is a classic theoretical problem: $n$ people stand in a circle waiting to be eliminated. Starting from a specified spot, you count along the circle and eliminate every $k$-th person. The elimination process continues around the circle (with the remaining people closing the gap) until only one person remains. The goal is to determine the position of this final survivor.\n\n### 2. Solving Using a Circular Linked List\nA Circular Linked List perfectly models this problem because the last person in the circle is linked back to the first person. \n- Represent each person as a node containing their original position (1 to $n$).\n- The list is initialized circularly.\n- To eliminate a person, traverse $k-1$ steps, delete the $k$-th node, and repeat the process starting from the node immediately following the deleted node until only one node remains (`node->next == node`).\n\n### 3. Algorithm\n\n```text\nAlgorithm Josephus(n, k):\nInput: Number of people n, elimination step size k\nOutput: Position of the last survivor\n\n1. Create a circular singly linked list with nodes numbered 1 to n.\n2. Set curr = head\n3. Set prev = tail node (node pointing to head)\n4. While the list has more than 1 node (i.e., curr != curr.next):\n\n```\n\na. For count = 1 to k - 1:\n        prev = curr\n        curr = curr.next\n    b. // Eliminate the k-th node\n    c. prev.next = curr.next\n    d. Free/delete curr node\n    e. curr = prev.next  // Move to the next starting node\n5. Return curr.data // The data of the sole remaining node",
+            "answer_source": "generated",
+            "chapter": "Unit 2: List Structure"
+        },
+        {
+            "question_number": "23 a.",
+            "question_text": "Describe the priority queue and its implementation using a linked list. How does it differ from a normal queue?",
+            "marks": 8,
+            "answer": "### 1. Description of Priority Queue\nA Priority Queue is an Abstract Data Type (ADT) where each element has an assigned \"priority.\" Elements are dequeued based on their priority rather than their arrival sequence (FIFO). In a typical configuration:\n- Higher-priority elements are processed before lower-priority elements.\n- Elements with the same priority are processed according to standard queue ordering (FIFO).\n\n### 2. Differences from a Normal Queue\n\n| Feature | Normal Queue | Priority Queue |\n| :--- | :--- | :--- |\n| **Ordering Principle** | First-In-First-Out (FIFO) | Based entirely on item priority |\n| **Enqueue / Dequeue** | Inserts at rear, removes from front | Insertion/Deletion is priority-dependent |\n| **Time Complexity** | $O(1)$ Enqueue & Dequeue | Insertion or deletion is $O(n)$ in linear structures ($O(\\log n)$ in Heaps) |\n\n### 3. Implementation Using a Linked List\nThere are two main strategies for representing a Priority Queue using a linked list:\n1. **Ordered Linked List (Ascending/Descending):** Elements are kept sorted by priority during insertion ($O(n)$ enqueue). Dequeuing is highly efficient ($O(1)$) as we simply remove the node from the head.\n2. **Unordered Linked List:** Insertion is performed at the head/tail ($O(1)$ enqueue). Dequeuing requires traversing the list to find the element with the highest priority, taking $O(n)$ time.\n\n**Example of Enqueue (Sorted Insertion for Min-Priority):**\n\n```text\nInsert(Node head, element, priority):\n1. Create newNode(element, priority)\n2. If head is NULL or priority < head.priority:\n       newNode.next = head\n       head = newNode\n3. Else:\n       temp = head\n       while temp.next != NULL and temp.next.priority <= priority:\n           temp = temp.next\n       newNode.next = temp.next\n       temp.next = newNode\n4. Return head\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "23 b.",
+            "question_text": "What is a circular queue? How is it different from a linear queue? Illustrate with an example.",
+            "marks": 8,
+            "answer": "### 1. Definition of a Circular Queue\nA Circular Queue is an extended linear queue where the last position is circularly connected back to the first position. It is implemented using array indices wrapped around via modulo arithmetic: `(index + 1) % size`.\n\n### 2. Differences: Linear Queue vs. Circular Queue\n- **Space Utilization:** In a linear queue, when elements are dequeued, the empty slots at the front cannot be reused because the `rear` pointer only advances forward. This leads to a \"Queue Full\" scenario even if free spaces exist. A circular queue resolves this by wrapping indices around to fill those unoccupied spaces.\n- **Pointers Update:** \n  - Linear Queue: `rear = rear + 1`\n  - Circular Queue: `rear = (rear + 1) % size`\n\n### 3. Illustration with an Example\nSuppose we have a queue of size 4.\n\n**Step 1: Enqueue 10, 20, 30**\n\n```text\nIndex:   [0]   [1]   [2]   [3]\nData:    10    20    30    -\n       front         rear\n\n```\n\n**Step 2: Dequeue twice (removes 10 and 20)**\n\n```text\nIndex:   [0]   [1]   [2]   [3]\nData:    -     -     30    -\n                     front\n                     rear\n\n```\n\n**Step 3: In a Linear Queue**, trying to enqueue two more elements results in a **Queue Full** condition once `rear` hits index 3, even though cells `[0]` and `[1]` are empty.\n\n**Step 4: In a Circular Queue**, we can continue to enqueue (e.g., 40 and 50):\n- Enqueue 40: `rear = (2 + 1) % 4 = 3`. Write 40 at index 3.\n- Enqueue 50: `rear = (3 + 1) % 4 = 0`. Write 50 at index 0.\n\n```text\nIndex:   [0]   [1]   [2]   [3]\nData:    50    -     30    40\n        rear        front\n\n```\n\nThe empty spots are successfully utilized.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "24 a.",
+            "question_text": "Describe the different ways to represent a binary tree in memory. Compare the advantages and disadvantages of using a linked representation versus an array representation.",
+            "marks": 8,
+            "answer": "### 1. Representation Schemes\n#### A. Sequential (Array-based) Representation\nNodes are stored in a contiguous 1D array. For any node stored at index $i$ (using 0-based indexing):\n- Left child is at index: $2i + 1$\n- Right child is at index: $2i + 2$\n- Parent is at index: $\\lfloor(i - 1)/2\\rfloor$\n\n#### B. Linked Representation\nEach node is a dynamic structure containing a data field and two self-referential pointers to its children:\n\n```c\nstruct Node {\n    int data;\n    struct Node *left;\n    struct Node *right;\n};\n\n```\n\n---\n\n### 2. Tradeoff Comparison\n\n| Feature | Array Representation | Linked Representation |\n| :--- | :--- | :--- |\n| **Access Speed** | $O(1)$ random access to any element via calculation. | Requires traversing pointers from the root node. |\n| **Space Efficiency** | High efficiency for *Complete Binary Trees*. Extreme waste for sparse/skewed trees due to unfilled placeholder slots. | No memory is wasted on empty/absent nodes; however, there is a pointer memory overhead (two pointers per node). |\n| **Dynamic Resizing** | Fixed size; expanding requires reallocation of the entire array. | Dynamically grows and shrinks easily. |\n| **Implementation Complexity** | Simple and clean. | Complex pointer manipulation and risk of memory leaks. |",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "24 b.",
+            "question_text": "Explain the properties of a Red-Black Tree. How do these properties ensure that the tree remains balanced? Illustrate with an example.",
+            "marks": 8,
+            "answer": "### 1. Properties of a Red-Black Tree\nA Red-Black Tree is a self-balancing Binary Search Tree (BST) that enforces the following properties:\n1. **Node Color:** Every node is colored either red or black.\n2. **Root Property:** The root of the tree is always black.\n3. **Leaf Property:** Every leaf node (NIL) is black.\n4. **Red Property:** If a node is red, both of its children must be black (no adjacent red nodes allowed).\n5. **Black-Height Property:** For each node, all simple paths from that node to its descendant leaves must contain the exact same number of black nodes.\n\n### 2. How Properties Guarantee Balance\n- Property 4 limits the occurrence of red nodes (you can't have two red nodes in sequence).\n- Property 5 states that all paths have the same number of black nodes.\n- Consequently, the shortest possible path from root to leaf contains only black nodes ($B$), and the longest possible path alternates between red and black nodes ($2B$).\n- This guarantees that **the maximum path length is no more than twice the minimum path length**, preventing the tree from degenerating into a linear list and ensuring $O(\\log n)$ operations.\n\n### 3. Balancing Example (Insertion)\nSuppose we insert elements `10`, `20`, and `30` in sequence:\n- **Insert 10:** Inserted as root $\\rightarrow$ Colored Black. (Balanced)\n- **Insert 20:** Inserted as right child of 10 $\\rightarrow$ Colored Red. (Balanced)\n- **Insert 30:** Inserted as right child of 20 $\\rightarrow$ Colored Red. This violates the \"no consecutive red nodes\" property (20 and 30 are both red).\n- **Resolution:** A single **Left Rotation** is performed around node `10`, and colors are adjusted (node `20` becomes Black; nodes `10` and `30` become Red). \n\n```text\n20 (B)\n    /   \\\n  10(R) 30(R)\n\n```\n\nAll Red-Black Tree properties are satisfied.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "25 a.",
+            "question_text": "Describe Depth-First Search (DFS) and Breadth-First Search (BFS) graph traversal techniques. Compare their applications.",
+            "marks": 8,
+            "answer": "### 1. Depth-First Search (DFS)\n- **Strategy:** Traverses as deep as possible along each branch before backtracking.\n- **Data Structure:** Uses a **Stack** (either the system call stack recursively or an explicit stack data structure).\n- **Algorithm Sketch:** \n  1. Mark starting vertex $v$ as visited.\n  2. For each unvisited neighbor $u$ of $v$, call $DFS(u)$ recursively.\n\n### 2. Breadth-First Search (BFS)\n- **Strategy:** Explores all neighbor nodes at the current level/depth before moving deeper.\n- **Data Structure:** Uses a **Queue** (FIFO).\n- **Algorithm Sketch:**\n  1. Enqueue starting node and mark it as visited.\n  2. Loop while queue is not empty: Dequeue vertex $v$, explore all its unvisited neighbors, mark them visited, and enqueue them.\n\n### 3. Application Comparison\n\n| Application | DFS | BFS |\n| :--- | :--- | :--- |\n| **Shortest Path** | Poor choice; does not inherently find the shortest path. | Perfect for unweighted graphs (guarantees finding the minimum step path). |\n| **Cycle Detection** | Highly efficient using back-edges. | Possible, but slightly more complex to track. |\n| **Topological Sort** | Used natively via post-order ordering. | Used in Kahn's algorithm (using in-degrees). |\n| **Maze / Puzzle Solving** | Prefers pursuing a single path to the end (great for finding any solution). | Explores all options step-by-step; best for finding the shortest exit path. |",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Graph"
+        },
+        {
+            "question_number": "25 b.",
+            "question_text": "Explain the process of topological sorting of a Directed Acyclic Graph (DAG). What are its applications?",
+            "marks": 8,
+            "answer": "### 1. Explanation of Topological Sorting\nTopological Sorting of a Directed Acyclic Graph (DAG) is a linear ordering of its vertices such that for every directed edge $u \\to v$, vertex $u$ comes before vertex $v$ in the ordering. If the graph contains a cycle, topological sorting is impossible.\n\n### 2. Process / Algorithms\nThere are two standard algorithms to obtain a topological sort:\n\n#### A. Kahn's Algorithm (BFS-based)\n1. Calculate the **in-degree** (number of incoming edges) for every vertex.\n2. Enqueue all vertices with an in-degree of `0` into a Queue.\n3. Loop while the Queue is not empty:\n   - Dequeue a vertex $u$ and append it to the sorted list.\n   - Decrease the in-degree of all neighbors of $u$ by 1.\n   - If any neighbor's in-degree drops to `0`, enqueue it.\n4. If the size of the sorted list is not equal to the total vertices, a cycle exists.\n\n#### B. DFS-based Algorithm\n1. Maintain a visited set and a temporary/final stack.\n2. For each unvisited vertex, invoke $DFS(v)$.\n3. In $DFS(v)$:\n   - Mark $v$ as visited.\n   - Recursively call DFS for all its unvisited neighbors.\n   - After exploring all neighbors, push $v$ to the Stack.\n4. Once all nodes are visited, pop elements from the Stack to get the topological order.\n\n### 3. Applications\n- **Build Systems / Dependency Resolution:** Determining compilation order of code files containing dependencies (e.g., `make`, `maven`).\n- **Task Scheduling:** Project management scheduling where task $A$ must finish before task $B$ starts.\n- **Data Serialization:** Formatting objects with nested dependencies.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Graph"
+        },
+        {
+            "question_number": "26",
+            "question_text": "Discuss the importance of mathematical notations in analyzing algorithms. Explain asymptotic notations Big O, Omega, and Theta with examples, and describe how they are used to express the efficiency of algorithms.",
+            "marks": 15,
+            "answer": "### 1. Importance of Mathematical Notations\nWhen evaluating algorithms, hardware, compilers, and operating environments introduce vast differences in physical execution time. Mathematical (asymptotic) notations analyze algorithms independent of hardware by focusing on the mathematical growth rate of the runtime or memory footprint relative to input size $n$.\n\n---\n\n### 2. Asymptotic Notations\n\n#### A. Big-O Notation ($O$): Upper Bound\n- **Definition:** $f(n) = O(g(n))$ if there exist positive constants $c$ and $n_0$ such that:\n  $$0 \\le f(n) \\le c \\cdot g(n) \\quad \\text{for all } n \\ge n_0$$\n- **Purpose:** Represents the worst-case execution time (guarantees the algorithm will not exceed this limit).\n- **Example:** For $f(n) = 3n + 2$, we can choose $c = 4$ and $n_0 = 2$. Since $3n + 2 \\le 4n$ for all $n \\ge 2$, $f(n) = O(n)$.\n\n#### B. Big-Omega Notation ($\\Omega$): Lower Bound\n- **Definition:** $f(n) = \\Omega(g(n))$ if there exist positive constants $c$ and $n_0$ such that:\n  $$0 \\le c \\cdot g(n) \\le f(n) \\quad \\text{for all } n \\ge n_0$$\n- **Purpose:** Represents the best-case boundary (guarantees the algorithm will take at least this much time).\n- **Example:** For $f(n) = 3n + 2$, we can choose $c = 3$ and $n_0 = 1$. Since $3n + 2 \\ge 3n$ for all $n \\ge 1$, $f(n) = \\Omega(n)$.\n\n#### C. Big-Theta Notation ($\\Theta$): Tight Bound\n- **Definition:** $f(n) = \\Theta(g(n))$ if there exist positive constants $c_1, c_2$ and $n_0$ such that:\n  $$c_1 \\cdot g(n) \\le f(n) \\le c_2 \\cdot g(n) \\quad \\text{for all } n \\ge n_0$$\n- **Purpose:** Represents a precise rate of growth (the algorithm's runtime behaves exactly like $g(n)$ up to constant factors).\n- **Example:** Since $3n+2$ is both $O(n)$ and $\\Omega(n)$, it is bounded tightly as $\\Theta(n)$.\n\n---\n\n### 3. Application in Algorithm Analysis\nThese notations express performance metrics dynamically. For instance, in a **Linear Search** of $n$ elements:\n- **Best Case:** The target is at the first index $\\Rightarrow \\Omega(1)$ time.\n- **Worst Case:** The target is absent or at the final index $\\Rightarrow O(n)$ time.\n- **Average Case:** Traversal averages $n/2$ iterations $\\Rightarrow \\Theta(n)$ time.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "27",
+            "question_text": "Explain the concept of open addressing in hashing. Discuss the various probing techniques used in open addressing, including linear probing, quadratic probing, and double hashing. Evaluate their performance in terms of clustering and efficiency.",
+            "marks": 15,
+            "answer": "### 1. Concept of Open Addressing\nIn hashing, collisions occur when two different keys map to the same hash index. In **Open Addressing**, all items are stored directly within the hash table array itself. If a slot is already occupied, the algorithm systematically probes subsequent slots in the table until an empty slot is found.\n\nThe general probe sequence function is:\n$$h(k, i) = (h'(k) + f(i)) \\pmod m$$\nwhere $h'(k)$ is the primary hash function, $i$ is the probe attempt number ($0, 1, 2, \\dots$), and $m$ is the table size.\n\n---\n\n### 2. Probing Techniques\n\n#### A. Linear Probing\n- **Formula:** $f(i) = i$\n  $$h(k, i) = (h'(k) + i) \\pmod m$$\n- **Mechanism:** If index $H$ is taken, the algorithm checks $H+1, H+2, H+3, \\dots$ sequentially.\n- **Problem:** Suffers from **Primary Clustering**. Long consecutive blocks of filled slots build up, which significantly slows down lookups and insertions.\n\n#### B. Quadratic Probing\n- **Formula:** $f(i) = c_1 \\cdot i + c_2 \\cdot i^2$\n  $$h(k, i) = (h'(k) + c_1 \\cdot i + c_2 \\cdot i^2) \\pmod m$$\n- **Mechanism:** Checks cells at quadratic offsets (e.g., $H+1^2, H+2^2, H+3^2, \\dots$).\n- **Problem:** Eliminates primary clustering but suffers from **Secondary Clustering**—keys that hash to the same primary index will trace the exact same probing path.\n\n#### C. Double Hashing\n- **Formula:** $f(i) = i \\cdot h_2(k)$\n  $$h(k, i) = (h_1(k) + i \\cdot h_2(k)) \\pmod m$$\n- **Mechanism:** Uses a second independent hash function $h_2(k)$ to calculate the step size. \n- **Advantage:** Probing sequence depends directly on the key $key$, eliminating both primary and secondary clustering.\n\n---\n\n### 3. Evaluation of Performance\n\n| Probing Technique | Primary Clustering | Secondary Clustering | Cache Performance | Complexity |\n| :--- | :--- | :--- | :--- | :--- |\n| **Linear Probing** | High | High | Excellent (contiguous memory reads) | Low |\n| **Quadratic Probing**| Low | High | Poor | Medium |\n| **Double Hashing** | None | None | Poor | High (requires 2 hash functions) |\n\n- **Load Factor ($\\alpha = n/m$):** In open addressing, the load factor must be kept below $1.0$ (typically $\\alpha < 0.7$). As $\\alpha \\to 1$, the number of average probes for both successful and unsuccessful searches increases exponentially, causing performance to degrade from $O(1)$ to $O(n)$.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        }
+    ]
+}

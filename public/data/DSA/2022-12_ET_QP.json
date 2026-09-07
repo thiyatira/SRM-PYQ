@@ -1,0 +1,295 @@
+{
+    "formal_filename": "2022-12_ET_QP.json",
+    "paper_title": "B.Tech. DEGREE EXAMINATION, DECEMBER 2022, Third/Fourth Semester, 18CSC201J - DATA STRUCTURES AND ALGORITHMS",
+    "source": "2022-12 ET",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "Which of the following cases occur when searching an unsorted array using linear search the value to be searched is equal to the first element of the array?\n(A) Best case\n(B) Worst case\n(C) Amortized case\n(D) Moderate case",
+            "marks": 1,
+            "answer": "(A) Best case. In linear search, finding the target element at the very first position requires only 1 comparison, which is the best-case scenario with a time complexity of $O(1)$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "2",
+            "question_text": "Which one of the following is non-primitive data type?\n(A) Float\n(B) Boolean\n(C) String\n(D) Trees",
+            "marks": 1,
+            "answer": "(D) Trees. Non-primitive data types are complex structures derived from primitive ones. In standard data structures classification, Trees represent non-linear, non-primitive structures.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "3",
+            "question_text": "Linear time algorithms are represented by ________ notations.\n(A) O(1)\n(B) O(n^k)\n(C) O(n)\n(D) O(k^n)",
+            "marks": 1,
+            "answer": "(C) O(n). Linear time complexity signifies that the running time increases linearly with the size of the input, denoted by $O(n)$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "4",
+            "question_text": "Assume int is of 4 bytes what is the size of int au[10]?\n(A) 400\n(B) 40\n(C) 44\n(D) 404",
+            "marks": 1,
+            "answer": "(B) 40. The array `au` holds 10 integer elements. Given each integer is 4 bytes, the total size is $10 \\times 4 = 40$ bytes.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "5",
+            "question_text": "Find the complexity of the following statement in terms of time?\nFor (i = 0; i < 100; i = i * 5)\n{print (\"success\")}\n(A) f(n) = n\n(B) f(n) = log n\n(C) f(n) = n/2\n(D) f(n) = n log (n)",
+            "marks": 1,
+            "answer": "(B) f(n) = log n. If we generalize the limit from 100 to $n$, and assume the loop starts at `i = 1` (to prevent an infinite loop where $0 \\times 5 = 0$), the variable `i` grows exponentially by a factor of 5 ($1, 5, 25, 125, \\dots$). The number of iterations is proportional to $\\log_5 n$, representing logarithmic time complexity $O(\\log n)$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "6",
+            "question_text": "Time complexity experienced while counting the number of elements in the singly linked list is\n(A) O (log n)\n(B) O (n^2)\n(C) O (n)\n(D) O (n log n)",
+            "marks": 1,
+            "answer": "(C) O (n). To find the size of a singly linked list, we must traverse from the head node to the last node sequentially, which takes $O(n)$ time where $n$ is the number of elements.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: List Structure"
+        },
+        {
+            "question_number": "7",
+            "question_text": "The special value \"Null\" is seen in ________ node of a linked list.\n(A) Last\n(B) Head\n(C) First\n(D) (N-1)^th node",
+            "marks": 1,
+            "answer": "(A) Last. In a standard singly linked list, the `next` pointer of the final (last) node is set to `NULL` to indicate the termination of the list.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: List Structure"
+        },
+        {
+            "question_number": "8",
+            "question_text": "Find the output of the following code snippet for the list 1->2->3->4->5->6?\n\n```c\nvoid solve (struct node* start)\n{if (start == null) return;\n print f (\"%d\", start -> data);\n if (start -> next != null)\n {solve (start -> next -> next);\n printf (\"%d\", start -> data);}}\n\n```\n\n(A) 1 2 3 4 5 6\n(B) 1 3 5 5 3 1\n(C) 1 3 5 1 3 5\n(D) 2 4 6 1 3 5",
+            "marks": 1,
+            "answer": "(B) 1 3 5 5 3 1. \n- `solve(1)` prints `1` and calls `solve(3)`.\n- `solve(3)` prints `3` and calls `solve(5)`.\n- `solve(5)` prints `5`, calls `solve(NULL)` (which returns immediately), and then prints `5`.\n- The call stack unwinds: `solve(3)` resumes and prints `3`.\n- Finally, `solve(1)` resumes and prints `1`.\n- This yields `1 3 5 5 3 1`.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: List Structure"
+        },
+        {
+            "question_number": "9",
+            "question_text": "Consider the following code snippet\n\n```c\nstruct node\n{ int data; struct node * next;}\ntype def struct node NODE;\nNODE * ptr;\n\n```\n\n(A) ptr = (NODE*) malloc (sizeof (NODE));\n(B) ptr = (NODE*) malloc (NODE);\n(C) ptr = (NODE*) malloc (sizeof (NODE*));\n(D) ptr = malloc (NODE)",
+            "marks": 1,
+            "answer": "(A) ptr = (NODE*) malloc (sizeof (NODE));. In C, `malloc` expects the size of the block to be allocated, which is obtained using `sizeof(NODE)`. The returned generic pointer `void*` is cast to `NODE*`.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "10",
+            "question_text": "________ is the linked list in which none of the nodes contain a null pointer?\n(A) Circular linked list\n(B) Singly linked list\n(C) Doubly linked list\n(D) Priority list",
+            "marks": 1,
+            "answer": "(A) Circular linked list. In a circular linked list, the last node links back to the first node, meaning no pointer is set to `NULL`.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: List Structure"
+        },
+        {
+            "question_number": "11",
+            "question_text": "Convert the infix expression to postfix expression (A + B) / (C - D)\n(A) AB + CD / -\n(B) AB + / CD -\n(C) AB / + CD -\n(D) AB + CD - /",
+            "marks": 1,
+            "answer": "(D) AB + CD - /. First evaluate parenthesized terms: $(A+B) \\to AB+$ and $(C-D) \\to CD-$. Finally, apply the division operator: $(AB+)(CD-)/$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "12",
+            "question_text": "The condition to represent circular queue as full is ________\n(A) Front = max -1 and rear = 0\n(B) Front = 0 and rear = 0\n(C) Front = max -1 and rear = max -1\n(D) Front = 0 and rear = max -1",
+            "marks": 1,
+            "answer": "(D) Front = 0 and rear = max -1. In a circular queue of size `max` utilizing 0-based indexing, when `Front` is at index `0` and `Rear` is at the last index `max - 1`, the queue is full.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "13",
+            "question_text": "If the elements \"A\", \"B\", \"C\", \"D\" and \"E\" are placed in a stack and are popped one at a time, in which order will they be popped?\n(A) A B C D E\n(B) A B D E C\n(C) C A B E C\n(D) E D C B A",
+            "marks": 1,
+            "answer": "(D) E D C B A. Since a stack operates on a Last-In, First-Out (LIFO) order, the elements pushed in order A, B, C, D, E will be popped in reverse order: E, D, C, B, A.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "14",
+            "question_text": "Choose the correct sequence of elements after following the sequence of operations performed on stack: push (100), push(10), push(20), pop, push(20), pop, pop, pop, push(20), pop\n(A) 20, 20, 10, 100, 20\n(B) 20, 100, 10, 20, 20\n(C) 100, 10, 20, 20, 20\n(D) 20, 20, 20, 10, 100",
+            "marks": 1,
+            "answer": "(A) 20, 20, 10, 100, 20. \nLet's trace the operations:\n- `push(100)`: Stack = [100]\n- `push(10)`: Stack = [100, 10]\n- `push(20)`: Stack = [100, 10, 20]\n- `pop`: Popped 20, Stack = [100, 10]\n- `push(20)`: Stack = [100, 10, 20]\n- `pop`: Popped 20, Stack = [100, 10]\n- `pop`: Popped 10, Stack = [100]\n- `pop`: Popped 100, Stack = []\n- `push(20)`: Stack = [20]\n- `pop`: Popped 20, Stack = []\nThe sequence of popped elements is: 20, 20, 10, 100, 20.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "15",
+            "question_text": "Which of the following permutations can be obtained in the output (in the same order) using a stack assuming that the input is the sequence 1, 2, 3, 4, 5 in that order?\n(A) 5, 4, 3, 1, 2\n(B) 1, 5, 2, 3, 4\n(C) 3, 4, 5, 2, 1\n(D) 3, 4, 5, 1, 2",
+            "marks": 1,
+            "answer": "(C) 3, 4, 5, 2, 1. \nThis output is achieved via the following sequence of stack operations:\n- Push 1, Push 2, Push 3\n- Pop -> prints 3\n- Push 4\n- Pop -> prints 4\n- Push 5\n- Pop -> prints 5\n- Pop -> prints 2\n- Pop -> prints 1\nThis produces exactly `3, 4, 5, 2, 1`.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "16",
+            "question_text": "A binary search tree contains the values 1, 2, 3, 4, 5, 6, 7, 8. The tree is traversed in post-order and the values are printed out. Which of the following sequence is a valid output?\n(A) 5, 3, 1, 2, 6, 4, 8, 7\n(B) 1, 2, 3, 4, 5, 6, 7, 8\n(C) 8, 7, 6, 5, 4, 3, 2, 1\n(D) 5, 3, 2, 4, 1, 6, 7, 8",
+            "marks": 1,
+            "answer": "(C) 8, 7, 6, 5, 4, 3, 2, 1. This sequence represents a valid post-order traversal of a right-skewed BST where every node $i$ (for $1 \\le i \\le 7$) has node $i+1$ as its right child and no left child. In post-order traversal (Left, Right, Root), the nodes are printed in reverse order.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "17",
+            "question_text": "A binary search tree is generated by inserting in order of the following integers: 50, 15, 62, 5, 20, 58, 91, 3, 8, 37, 60, 24. Number of nodes in the left sub tree and right sub tree of the root respectively is?\n(A) (4, 7)\n(B) (7, 4)\n(C) (3, 3)\n(D) (8, 3)",
+            "marks": 1,
+            "answer": "(B) (7, 4). The root of the BST is the first element, 50. All elements less than 50 belong to the left subtree: {15, 5, 20, 3, 8, 37, 24} (7 nodes). All elements greater than 50 belong to the right subtree: {62, 58, 91, 60} (4 nodes).",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "18",
+            "question_text": "In the balanced binary tree in the figure given below, how many nodes will become unbalanced when a node is inserted as a child of the node \"g\".\n[Figure showing a tree with root 'a', left child 'b' (with children 'c', 'd'; 'c' has child 'g'), right child 'e' (with left child 'f')]\n(A) 1\n(B) 3\n(C) 7\n(D) 10",
+            "marks": 1,
+            "answer": "(B) 3. When a node is inserted as a child of `g`:\n- The height of `g` becomes 2.\n- Node `c` height becomes 3, and its Balance Factor (BF) becomes $2 - 0 = 2$ (unbalanced).\n- Node `b` height becomes 4, and its BF becomes $3 - 1 = 2$ (unbalanced).\n- Node `a` height becomes 5, and its BF becomes $4 - 2 = 2$ (unbalanced).\nThus, 3 ancestral nodes (`c`, `b`, `a`) become unbalanced.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "19",
+            "question_text": "A binary search tree contains the numbers 1, 2, 3, 4, 5, 6, 7, 8. When the tree is traversed in preorder and the values in each node is printed out, the sequence of values. Obtained is 5, 3, 1, 2, 4, 6, 8, 7. If the tree is traversed in post order, the sequence is?\n(A) 2, 1, 4, 3, 7, 8, 6, 5\n(B) 2, 1, 4, 3, 6, 7, 8, 5\n(C) 1, 2, 3, 4, 8, 7, 6, 5\n(D) 7, 8, 6, 4, 2, 1, 3, 5",
+            "marks": 1,
+            "answer": "(A) 2, 1, 4, 3, 7, 8, 6, 5. Reconstructing the tree from the preorder sequence:\n- Root is 5.\n- Left subtree (elements 1, 2, 3, 4) root is 3. 3 has left child 1 (which has right child 2) and right child 4.\n- Right subtree (elements 6, 7, 8) root is 6. 6 has right child 8 (which has left child 7).\nPerforming a post-order (Left, Right, Root) traversal yields: `2, 1, 4, 3, 7, 8, 6, 5`.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "20",
+            "question_text": "In a binary max heap containing 'N' numbers, the smallest element can be found in time\n(A) \\theta (n)\n(B) \\theta (n log n)\n(C) \\theta (n log log n)\n(D) \\theta (1)",
+            "marks": 1,
+            "answer": "(A) \\theta (n). In a max-heap, the minimum element always resides in one of the leaf nodes. Since there are $\\lceil N/2 \\rceil$ leaves and they are unsorted, we must perform a linear search across all of them, which takes $\\theta(n)$ time.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "21",
+            "question_text": "Graphs are represented using ________\n(A) Adjacency tree\n(B) Adjacency graph\n(C) Adjacency queue\n(D) Adjacency linked list",
+            "marks": 1,
+            "answer": "(D) Adjacency linked list. The primary methods for representing graphs are the Adjacency Matrix and the Adjacency List (which consists of an array of linked lists).",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Graph"
+        },
+        {
+            "question_number": "22",
+            "question_text": "A graph with all vertices having equal degree is known as ________\n(A) Multi graph\n(B) Regular graph\n(C) Simple graph\n(D) Complete graph",
+            "marks": 1,
+            "answer": "(B) Regular graph. A regular graph is one where every vertex has the same degree.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Graph"
+        },
+        {
+            "question_number": "23",
+            "question_text": "Maximum clique of size '2' is possible with ________ graph.\n(A) Perfect\n(B) Tree\n(C) Cartesian\n(D) Histogram",
+            "marks": 1,
+            "answer": "(B) Tree. A clique is a complete subgraph. A clique of size 2 is an edge ($K_2$). Since a tree contains no cycles, it cannot contain any $K_3$ (triangles) or larger complete subgraphs. Thus, its maximum clique size is 2.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Graph"
+        },
+        {
+            "question_number": "24",
+            "question_text": "The number of elements in adjacency matrix of a graph having 7 vertices is ________\n(A) 7\n(B) 77\n(C) 14\n(D) 49",
+            "marks": 1,
+            "answer": "(D) 49. An adjacency matrix for $V$ vertices is a $V \\times V$ square matrix. For 7 vertices, the size is $7 \\times 7 = 49$ elements.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Graph"
+        },
+        {
+            "question_number": "25",
+            "question_text": "A vertex with one degree is called ________ vertex.\n(A) Pendant\n(B) Isolated\n(C) Source\n(D) Simple",
+            "marks": 1,
+            "answer": "(A) Pendant. A vertex of degree 1 is formally referred to as a pendant vertex or leaf node.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Graph"
+        },
+        {
+            "question_number": "26. a.",
+            "question_text": "Develop a sequential search algorithm for unordered data. Illustrate with an example and mention its best, worst and average case time complexity.",
+            "marks": 10,
+            "answer": "### 1. Sequential Search (Linear Search) Algorithm\nLinear search sequentially checks each element of the list until a match is found or the whole list has been searched.\n\n```c\nint linearSearch(int arr[], int n, int target) {\n    for (int i = 0; i < n; i++) {\n        if (arr[i] == target) {\n            return i; // Target found, return index\n        }\n    }\n    return -1; // Target not found\n}\n\n```\n\n### 2. Illustration\nConsider an unordered array: `arr = [15, 3, 20, 8, 37, 24]` and we want to find `target = 8`.\n- **Step 1:** Compare `arr[0]` (15) with 8. $15 \\neq 8$.\n- **Step 2:** Compare `arr[1]` (3) with 8. $3 \\neq 8$.\n- **Step 3:** Compare `arr[2]` (20) with 8. $20 \\neq 8$.\n- **Step 4:** Compare `arr[3]` (8) with 8. Match found! Return index `3`.\n\n### 3. Complexity Analysis\n- **Best Case:** The target element is at the first position. Only 1 comparison is needed. Time Complexity: $O(1)$.\n- **Worst Case:** The target is at the last position or not present. All $n$ elements must be checked. Time Complexity: $O(n)$.\n- **Average Case:** Assuming the target is equally likely to be at any position, the average number of comparisons is $\\frac{n+1}{2}$. Time Complexity: $O(n)$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "26. b.",
+            "question_text": "Write an algorithm to sort given list in O (n) time and justify the time complexity with suitable example.\n3, 8, 5, 4, 1, 9, -2",
+            "marks": 10,
+            "answer": "To sort a list of integers in $O(n)$ time when the range of elements is small and known, we can use **Counting Sort**.\n\n### 1. Counting Sort Algorithm (modified for negative numbers)\n\n```c\nvoid countingSort(int arr[], int n) {\n    int max = arr[0], min = arr[0];\n    for (int i = 1; i < n; i++) {\n        if (arr[i] > max) max = arr[i];\n        if (arr[i] < min) min = arr[i];\n    }\n    int range = max - min + 1;\n    int* count = (int*)calloc(range, sizeof(int));\n    int* output = (int*)malloc(n * sizeof(int));\n\n    for (int i = 0; i < n; i++) {\n        count[arr[i] - min]++;\n    }\n    for (int i = 1; i < range; i++) {\n        count[i] += count[i - 1];\n    }\n    for (int i = n - 1; i >= 0; i--) {\n        output[count[arr[i] - min] - 1] = arr[i];\n        count[arr[i] - min]--;\n    }\n    for (int i = 0; i < n; i++) {\n        arr[i] = output[i];\n    }\n    free(count); free(output);\n}\n\n```\n\n### 2. Illustration with Example: `3, 8, 5, 4, 1, 9, -2`\n- **Step 1:** Find min and max: $\\min = -2$, $\\max = 9$. Range = $9 - (-2) + 1 = 12$.\n- **Step 2:** Create count array of size 12 initialized to 0. \n- **Step 3:** Populate frequency counts:\n  `count[0]` (for -2) = 1, `count[3]` (for 1) = 1, `count[5]` (for 3) = 1, `count[6]` (for 4) = 1, `count[7]` (for 5) = 1, `count[10]` (for 8) = 1, `count[11]` (for 9) = 1.\n- **Step 4:** Compute prefix sums of `count` and place elements in the sorted output array: `[-2, 1, 3, 4, 5, 8, 9]`.\n\n### 3. Justification of O(n) Complexity\nCounting sort takes $O(n + k)$ where $n$ is the number of elements and $k$ is the range of input values. Since the range $k = 12$ is small and constant relative to $n$, the overall running time is linear, i.e., $O(n)$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "27. a.",
+            "question_text": "Given two polynomials represented by a linked list 4x^3 + 7x^2 + 9 and 15x^3 + 2x^2 + 4, write a procedure that ADD two polynomials.",
+            "marks": 10,
+            "answer": "### Linked List Representation of a Term\nEach node in the linked list represents a term: `coeff` (coefficient), `power` (exponent), and a `next` pointer.\n\n```c\nstruct Node {\n    int coeff;\n    int power;\n    struct Node* next;\n};\n\nstruct Node* addPolynomials(struct Node* poly1, struct Node* poly2) {\n    struct Node* result = NULL;\n    while (poly1 != NULL && poly2 != NULL) {\n        if (poly1->power > poly2->power) {\n            insertTerm(&result, poly1->coeff, poly1->power);\n            poly1 = poly1->next;\n        } else if (poly1->power < poly2->power) {\n            insertTerm(&result, poly2->coeff, poly2->power);\n            poly2 = poly2->next;\n        } else {\n            int sumCoeff = poly1->coeff + poly2->coeff;\n            if (sumCoeff != 0) {\n                insertTerm(&result, sumCoeff, poly1->power);\n            }\n            poly1 = poly1->next;\n            poly2 = poly2->next;\n        }\n    }\n    while (poly1 != NULL) {\n        insertTerm(&result, poly1->coeff, poly1->power);\n        poly1 = poly1->next;\n    }\n    while (poly2 != NULL) {\n        insertTerm(&result, poly2->coeff, poly2->power);\n        poly2 = poly2->next;\n    }\n    return result;\n}\n\n```\n\n### Step-by-Step Addition of the given Polynomials:\n- **Poly 1:** $4x^3 + 7x^2 + 9$ \n- **Poly 2:** $15x^3 + 2x^2 + 4$\n- **Step 1:** Add terms with exponent 3: $(4 + 15)x^3 = 19x^3$\n- **Step 2:** Add terms with exponent 2: $(7 + 2)x^2 = 9x^2$\n- **Step 3:** Add terms with exponent 0: $(9 + 4) = 13$\n- **Result:** $19x^3 + 9x^2 + 13$",
+            "answer_source": "generated",
+            "chapter": "Unit 2: List Structure"
+        },
+        {
+            "question_number": "27. b.",
+            "question_text": "Discuss the following operations of doubly linked list with examples\n(i) Insert a node at middle\n(ii) Delete a value given by a user from list\n(iii) Modify a value in the list with user provided value",
+            "marks": 10,
+            "answer": "### (i) Insert a Node at Middle\nTo insert a new node at a given position/middle:\n1. Traverse to the node at position `pos-1` (let this node be `temp`).\n2. Update the links: \n   - `newNode->next = temp->next`\n   - `newNode->prev = temp`\n   - If `temp->next != NULL`, then `temp->next->prev = newNode`\n   - `temp->next = newNode`\n**Example:** Insert `25` in `10 <-> 20 <-> 30` at position 3:\nResult: `10 <-> 20 <-> 25 <-> 30`.\n\n### (ii) Delete a Value Given by a User\n1. Search for the node containing the target value.\n2. Adjust adjacent pointers to bypass the node:\n   - `nodeToDelete->prev->next = nodeToDelete->next`\n   - `nodeToDelete->next->prev = nodeToDelete->prev`\n3. Free the deleted node's memory.\n**Example:** Delete `20` from `10 <-> 20 <-> 30`:\nResult: `10 <-> 30`.\n\n### (iii) Modify a Value in the List\n1. Search the list to locate the node with the target value.\n2. If found, replace its data field with the new value.\n**Example:** Update `30` to `35` in `10 <-> 20 <-> 30`:\nResult: `10 <-> 20 <-> 35`.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: List Structure"
+        },
+        {
+            "question_number": "28. a. i.",
+            "question_text": "Write an algorithm to transform infix expression to prefix expression.",
+            "marks": 5,
+            "answer": "### Algorithm to Convert Infix to Prefix:\n1. **Reverse** the input infix string (swap opening brackets '(' with closing ')' and vice versa).\n2. Convert the reversed infix expression to its equivalent **postfix** expression using the standard stack-based infix-to-postfix algorithm.\n3. **Reverse** the resulting postfix expression to obtain the final **prefix** expression.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "28. a. ii.",
+            "question_text": "Consider the following arithmetic, infix expression Q:\nQ: A + (B * C - (D | E ^ F) * G) * H into equivalent prefix expression P.",
+            "marks": 5,
+            "answer": "Let's perform the prefix conversion step-by-step:\n1. Convert internal term $E \\uparrow F$ to prefix: $\\uparrow E F$\n2. Convert $D | (E \\uparrow F)$ to prefix: $| D \\uparrow E F$\n3. Convert $T_2 * G$ to prefix: $* | D \\uparrow E F G$\n4. Convert $B * C$ to prefix: $* B C$\n5. Convert $T_4 - T_3$ to prefix: $- * B C * | D \\uparrow E F G$\n6. Convert $T_5 * H$ to prefix: $* - * B C * | D \\uparrow E F G H$\n7. Convert $A + T_6$ to prefix: $+ A * - * B C * | D \\uparrow E F G H$\n\nEquivalent Prefix Expression $P$ is:\n$$\\mathbf{+ A * - * B C * | D \\uparrow E F G H}$$",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "28. b.",
+            "question_text": "Explain the insertion and deletion operation in circular queue with example.",
+            "marks": 10,
+            "answer": "In a circular queue, the last position is connected back to the first position to form a circle.\n\n### 1. Insertion (Enqueue)\n**Algorithm:**\n1. Check if the queue is full: `((rear + 1) % size == front)`. If yes, output \"Overflow\".\n2. If empty (`front == -1`), initialize both `front` and `rear` to 0.\n3. Else, update `rear = (rear + 1) % size`.\n4. Place the element at `queue[rear]`.\n\n### 2. Deletion (Dequeue)\n**Algorithm:**\n1. Check if the queue is empty: `(front == -1)`. If yes, output \"Underflow\".\n2. Retrieve `queue[front]`.\n3. If it contains only one element (`front == rear`), reset both `front` and `rear` to -1.\n4. Else, update `front = (front + 1) % size`.\n\n### 3. Example\nLet size = 3.\n- **Enqueue(10):** `front = 0`, `rear = 0`. Queue: `[10, _, _]`\n- **Enqueue(20):** `front = 0`, `rear = 1`. Queue: `[10, 20, _]`\n- **Enqueue(30):** `front = 0`, `rear = 2`. Queue: `[10, 20, 30]`\n- **Dequeue():** Returns 10. `front = 1`, `rear = 2`. Queue: `[_, 20, 30]`\n- **Enqueue(40):** `rear = (2+1)%3 = 0`. Queue: `[40, 20, 30]` (Circular utilization of index 0).",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "29. a.",
+            "question_text": "Define binary search tree? Construct the same using the elements given\n45, 39, 56, 12, 34, 78, 32, 10, 89, 81\nFind in-order, pre-order and post-order traversal of the same tree.",
+            "marks": 10,
+            "answer": "### 1. Definition of Binary Search Tree (BST)\nA binary tree where for each node:\n- All elements in the left subtree are smaller than the node's value.\n- All elements in the right subtree are greater than the node's value.\n- Left and right subtrees must also be BSTs.\n\n### 2. Construction of Tree\nUsing elements: `45, 39, 56, 12, 34, 78, 32, 10, 89, 81`\n\n```text\n45\n         /  \\\n       39    56\n       /       \\\n      12        78\n     /  \\         \\\n    10  34         89\n        /         /\n       32        81\n\n```\n\n### 3. Traversals\n- **In-order (Left, Root, Right):** `10, 12, 32, 34, 39, 45, 56, 78, 81, 89`\n- **Pre-order (Root, Left, Right):** `45, 39, 12, 10, 34, 32, 56, 78, 89, 81`\n- **Post-order (Left, Right, Root):** `10, 32, 34, 12, 39, 81, 89, 78, 56, 45`",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "29. b.",
+            "question_text": "Define AVL tree? Construct the same by inserting given elements in the same order.\n18, 81, 29, 15, 19, 26, 25 and 1\nDelete 15 after inserting all elements in the tree show the changes in the tree as. The insertion and deletion operation progresses.",
+            "marks": 10,
+            "answer": "### 1. Definition of AVL Tree\nAn AVL Tree is a self-balancing binary search tree where the balance factor of any node (height of left subtree - height of right subtree) is at most $\\pm1$.\n\n### 2. Insertion Progress\n- **Insert 18, 81**: \n  \n\n```text\n18 -> 81\n\n```\n\n- **Insert 29**: Requires RL rotation at 18.\n  \n\n```text\n29\n     /  \\\n   18    81\n\n```\n\n- **Insert 15, 19, 26**: (balanced)\n- **Insert 25**: Requires RL rotation at 19, then LR rotation at 29.\n  \n\n```text\n25\n       /    \\\n     18      29\n    /  \\    /  \\\n   15  19  26  81\n\n```\n\n- **Insert 1**:\n  \n\n```text\n25\n       /    \\\n     18      29\n    /  \\    /  \\\n   15  19  26  81\n   /\n  1\n\n```\n\n### 3. Deletion of 15\nDeleting 15, we replace it with its single child, 1. \n\n```text\n25 (BF: 0)\n       /    \\\n     18      29\n    /  \\    /  \\\n   1   19  26  81\n\n```\n\nAll nodes are balanced; no further rotations are needed.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "30. a.",
+            "question_text": "A hash function 'b' defined by h(key) = key mod 17, with linear probing and quadratic probing to insert keys 44, 45, 76, 55, 91, 18, 63, 108 into a table. What will be the location of keys in the table? Illustrate.",
+            "marks": 10,
+            "answer": "### 1. Initial Hash Values (key mod 17):\n- $h(44) = 10$\n- $h(45) = 11$\n- $h(76) = 8$\n- $h(55) = 4$\n- $h(91) = 6$\n- $h(18) = 1$\n- $h(63) = 12$\n- $h(108) = 6$\n\n### 2. Linear Probing table:\n- 18, 55, 91, 76, 44, 45, and 63 map directly to slots 1, 4, 6, 8, 10, 11, and 12 respectively.\n- **108** hashes to 6 (collision). Linear probing tests index $7$, which is empty. Thus, 108 is placed in slot 7.\n\n### 3. Quadratic Probing table:\n- **108** hashes to 6 (collision). Alternate index probe: $(6 + 1^2) \\pmod{17} = 7$. Slot 7 is empty. Thus, 108 goes to slot 7.\n\n**Final Table (same for both in this instance):**\n- Slot 1: 18\n- Slot 4: 55\n- Slot 6: 91\n- Slot 7: 108\n- Slot 8: 76\n- Slot 10: 44\n- Slot 11: 45\n- Slot 12: 63",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "30. b.",
+            "question_text": "Provide necessary algorithm to construct a minimum spanning tree using prim's logic for the given undirected weighted graph.\n[Graph diagram containing vertices a, b, c, d, e, f with weights]",
+            "marks": 10,
+            "answer": "### 1. Prim's Algorithm\n1. Initialize MST with a random vertex.\n2. In each iteration, select the minimum weight edge connecting the tree to a non-tree vertex.\n3. Add the edge and vertex to the tree. Repeat until all vertices are included.\n\n### 2. Step-by-Step Execution on Given Graph\nGiven edge weights:\n- $(b, a) = 1$\n- $(a, e) = 2$\n- $(c, e) = 3$\n- $(a, d) = 5$\n- $(d, f) = 3$\n- $(e, f) = 8$\n- $(b, c) = 6$\n- $(a, c) = 6$\n- $(d, e) = 7$\n\n**Execution starting at vertex 'b':**\n- Start vertex: `b`\n- Add edge **(b, a)** weight 1. Vertices in MST: `{b, a}`.\n- Add edge **(a, e)** weight 2. Vertices in MST: `{b, a, e}`.\n- Add edge **(e, c)** weight 3. Vertices in MST: `{b, a, e, c}`.\n- Add edge **(a, d)** weight 5. Vertices in MST: `{b, a, e, c, d}`.\n- Add edge **(d, f)** weight 3. Vertices in MST: `{b, a, e, c, d, f}`.\n\n**Total MST Weight:** $1 + 2 + 3 + 5 + 3 = 14$.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Graph"
+        }
+    ]
+}

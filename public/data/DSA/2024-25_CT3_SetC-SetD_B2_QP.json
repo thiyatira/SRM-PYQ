@@ -1,0 +1,286 @@
+{
+    "paper_title": "SRM Institute of Science and Technology - School of Computing - Test: FJ-III - 21CSC201J DATA STRUCTURES AND ALGORITHMS",
+    "source": "2024-25(ODD) Batch 2 (Set C & Set D)",
+    "questions": [
+        {
+            "question_number": "Set D - 1",
+            "question_text": "A stack data structure may not be used for\na) Implementation of recursive function\nb) Allocation resources and scheduling\nc) Reversing string\nd) Evaluation of string in postfix form",
+            "marks": 1,
+            "answer": "b) Allocation resources and scheduling\n\nExplanation: Resource allocation and process scheduling are typically managed using a First-In-First-Out (FIFO) queue or a priority queue, whereas function call management (recursion), string reversal, and postfix expression evaluation naturally follow Last-In-First-Out (LIFO) stack semantics.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "Set D - 2",
+            "question_text": "Postfix form of the following expression\n$$D + (E * F \\wedge G)$$\na) $DFG^{\\wedge}E*+$\nb) $DEFG^{\\wedge}*+$\nc) $GFED^{\\wedge}*+$\nd) $GF^{\\wedge}E*D+$",
+            "marks": 1,
+            "answer": "b) $DEFG^{\\wedge}*+$\n\nExplanation:\n1. Inside parentheses, exponentiation has higher precedence than multiplication: $F \\wedge G \\to FG^{\\wedge}$.\n2. Next, multiplication: $E * (FG^{\\wedge}) \\to EFG^{\\wedge}*$.\n3. Finally, addition with $D$: $D + (EFG^{\\wedge}*) \\to DEFG^{\\wedge}*+$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "Set D - 3",
+            "question_text": "A circular queue is implemented using an array of size 10. The array index starts with 0, front is 6 and rear is 9. The insertion of the next element takes place at the array index.\na) 0\nb) 7\nc) 9\nd) 10",
+            "marks": 1,
+            "answer": "a) 0\n\nExplanation: In a circular queue of capacity $N = 10$, the next insertion index is calculated as:\n$$\\text{rear} = (\\text{rear} + 1) \\bmod N = (9 + 1) \\bmod 10 = 0$$",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "Set D - 4",
+            "question_text": "The data structure required for Breadth First Traversal on a graph is.\na) Stack\nb) Array\nc) Queue\nd) Tree",
+            "marks": 1,
+            "answer": "c) Queue\n\nExplanation: Breadth-First Search (BFS) explores vertices level-by-level in FIFO order, requiring a Queue data structure to keep track of discovered vertices yet to be explored.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Graph"
+        },
+        {
+            "question_number": "Set D - 5",
+            "question_text": "Given an empty AVL tree, how would you construct an AVL tree when a set of numbers are given without performing any rotations?\na) Build the tree directly by inserting the elements as they are given, following the binary search tree (BST) properties\nb) Construct the tree using the input values in sorted order to ensure balance.\nc) Use a recursive function to insert each number, ensuring it follows AVL properties without rotations.\nd) Use a linked list to store the input values and convert it into an AVL tree later.",
+            "marks": 1,
+            "answer": "a) Build the tree directly by inserting the elements as they are given, following the binary search tree (BST) properties\n\nExplanation: If the input sequence already arrives in an order such that at every step the balance factor of every node remains in $\\{-1, 0, +1\\}$, the tree can simply be built by standard BST insertions without triggering any rotation operations.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "Set D - 6",
+            "question_text": "If a B-tree of order 5 has a height of 2, what is the minimum number of keys it can contain?\na) 6\nb) 5\nc) 1\nd) 10",
+            "marks": 1,
+            "answer": "b) 5\n\nExplanation: For a B-tree of order $m = 5$ with height defined as 2 levels (level 1 = root, level 2 = leaf nodes):\n- Root contains at least 1 key and 2 children.\n- Each non-root child node must contain at least $\\lceil m/2 \\rceil - 1 = \\lceil 5/2 \\rceil - 1 = 3 - 1 = 2$ keys.\n- Minimum total keys = $1 \\text{ (root)} + 2 \\times 2 \\text{ (leaves)} = 5$ keys.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "Set D - 7",
+            "question_text": "Which of the following statements is true regarding topological sorting of a directed graph?\na) It can be applied to both directed and undirected graphs.\nb) A topological sort exists only if the graph has cycles.\nc) It provides a linear ordering of vertices such that for every directed edge u->v, vertex u comes before vertex v in the ordering.\nd) It can be performed in any arbitrary order.",
+            "marks": 1,
+            "answer": "c) It provides a linear ordering of vertices such that for every directed edge u->v, vertex u comes before vertex v in the ordering.\n\nExplanation: By definition, topological sorting of a Directed Acyclic Graph (DAG) produces a linear sequence of vertices where for every directed edge $(u, v)$, $u$ precedes $v$.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Graph"
+        },
+        {
+            "question_number": "Set D - 8",
+            "question_text": "Which of the following statements is /are TRUE for an undirected graph?\nP: The number of odd-degree vertices are even\nQ: Sum of degrees of all vertices are even\na) P only\nb) Q only\nc) Both P and Q\nd) Neither P nor Q",
+            "marks": 1,
+            "answer": "c) Both P and Q\n\nExplanation: According to the Handshaking Lemma, $\\sum_{v \\in V} \\deg(v) = 2|E|$, which is always an even number (Statement Q is TRUE). Because the total sum is even, the sum of odd degrees must also be even, which implies that the number of vertices with odd degrees must be even (Statement P is TRUE).",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Graph"
+        },
+        {
+            "question_number": "Set D - 9",
+            "question_text": "Draw the stack structure for the set of integers and write the appropriate pseudocode in each case when the following operations are performed on an empty stack.\n1. Push the numbers 10, 20, and 30 onto the stack.\n2. Pop the top element from the stack.\n3. Push the number 40 onto the stack.\n4. Peek at the top element without removing it.\n5. Pop all elements from the stack one by one until it is empty.",
+            "marks": 5,
+            "answer": "### Stack Trace & State Structure:\n- **Initial State**: Stack is empty, `top = -1`.\n- **Step 1: Push 10, 20, 30**:\n  - Push 10: Stack = `[10]` (`top = 0`)\n  - Push 20: Stack = `[10, 20]` (`top = 1`)\n  - Push 30: Stack = `[10, 20, 30]` (`top = 2`)\n  - *Structure (top to bottom)*: `| 30 | -> | 20 | -> | 10 |`\n- **Step 2: Pop top element**:\n  - Popped value = 30. Stack = `[10, 20]` (`top = 1`)\n- **Step 3: Push 40**:\n  - Stack = `[10, 20, 40]` (`top = 2`)\n  - *Structure (top to bottom)*: `| 40 | -> | 20 | -> | 10 |`\n- **Step 4: Peek**:\n  - Return element at `top` (value = 40). Stack contents remain unchanged: `[10, 20, 40]`.\n- **Step 5: Pop until empty**:\n  - Pop 40 -> Stack = `[10, 20]`\n  - Pop 20 -> Stack = `[10]`\n  - Pop 10 -> Stack = `[]` (`top = -1`, stack is empty).\n\n### Pseudocode:\n\n```c\nProcedure StackOperations():\n    Initialize stack S with top = -1\n    \n    // 1. Push 10, 20, 30\n    push(S, 10)\n    push(S, 20)\n    push(S, 30)\n    \n    // 2. Pop top element\n    poppedVal = pop(S) // returns 30\n    \n    // 3. Push 40\n    push(S, 40)\n    \n    // 4. Peek\n    peekVal = peek(S)  // returns 40\n    \n    // 5. Pop all elements until empty\n    While not isEmpty(S) do:\n        print(pop(S))\n    EndWhile\nEndProcedure\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "Set D - 10",
+            "question_text": "Given the following binary tree,\n\n```text\n40\n        /    \\\n      20      60\n     /  \\    /  \\\n   10   30  50   70\n  /  \\     /  \\    \\\n 5   15   45  55   80\n\n```\n\n1. Perform an in-order traversal on this tree and write the sequence of node values visited.\n2. Perform a preorder traversal on this tree and write the sequence of node values visited.\n3. Perform a post order traversal on this tree and write the sequence of node values visited.",
+            "marks": 5,
+            "answer": "1. **In-order Traversal (Left, Root, Right):**\n   $$5, 10, 15, 20, 30, 40, 45, 50, 55, 60, 70, 80$$\n   *(Note: This traversal yields the keys in sorted ascending order because the tree is a valid Binary Search Tree)*.\n\n2. **Pre-order Traversal (Root, Left, Right):**\n   $$40, 20, 10, 5, 15, 30, 60, 50, 45, 55, 70, 80$$\n\n3. **Post-order Traversal (Left, Right, Root):**\n   $$5, 15, 10, 30, 20, 45, 55, 50, 80, 70, 60, 40$$",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "Set D - 11",
+            "question_text": "Given a weighted, undirected graph with vertices labeled from a to f and the following edge weights, Determine the minimum spanning tree for the following graph using Prim's algorithm.\nEdges: $(a,b)=3$, $(b,c)=1$, $(a,f)=5$, $(b,f)=4$, $(c,f)=4$, $(c,d)=6$, $(f,d)=5$, $(f,e)=2$, $(a,e)=6$, $(e,d)=8$.",
+            "marks": 5,
+            "answer": "### Prim's Algorithm Execution (Starting at vertex $a$):\n- **Step 1**: Start with $V_{MST} = \\{a\\}$. Available cut edges: $(a, b): 3$, $(a, f): 5$, $(a, e): 6$.\n  - Minimum weight edge: $(a, b)$ with weight 3.\n  - Add edge $(a, b)$, $V_{MST} = \\{a, b\\}$.\n- **Step 2**: Available cut edges from $\\{a, b\\}$: $(b, c): 1$, $(b, f): 4$, $(a, f): 5$, $(a, e): 6$.\n  - Minimum weight edge: $(b, c)$ with weight 1.\n  - Add edge $(b, c)$, $V_{MST} = \\{a, b, c\\}$.\n- **Step 3**: Available cut edges from $\\{a, b, c\\}$: $(b, f): 4$, $(c, f): 4$, $(a, f): 5$, $(c, d): 6$, $(a, e): 6$.\n  - Minimum weight edge: $(b, f)$ with weight 4 (or $(c, f)$).\n  - Add edge $(b, f)$, $V_{MST} = \\{a, b, c, f\\}$.\n- **Step 4**: Available cut edges from $\\{a, b, c, f\\}$: $(f, e): 2$, $(f, d): 5$, $(c, d): 6$, $(a, e): 6$.\n  - Minimum weight edge: $(f, e)$ with weight 2.\n  - Add edge $(f, e)$, $V_{MST} = \\{a, b, c, e, f\\}$.\n- **Step 5**: Available cut edges to unvisited vertex $d$: $(f, d): 5$, $(c, d): 6$, $(e, d): 8$.\n  - Minimum weight edge: $(f, d)$ with weight 5.\n  - Add edge $(f, d)$, $V_{MST} = \\{a, b, c, d, e, f\\}$.\n\n### Final Minimum Spanning Tree:\n- **Edges Included**: $\\{(a, b), (b, c), (b, f), (f, e), (f, d)\\}$\n- **Total MST Weight**: $3 + 1 + 4 + 2 + 5 = 15$.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Graph"
+        },
+        {
+            "question_number": "Set D - 12. A",
+            "question_text": "Consider a linked queue implementation, in which elements are organized in a linear sequence, allowing for efficient operations for inserting and deleting items.\ni. Write the pseudocode for the enqueue operation to insert an element into the linked queue.\nii. Write the pseudocode for the dequeue operation to delete an element from the linked queue.\niii. Provide a brief example illustrating the steps taken to insert an element and delete an element from the linked queue.",
+            "marks": 9,
+            "answer": "### i. Pseudocode for Enqueue:\n\n```c\nStructure Node:\n    data: Integer\n    next: Node Pointer\n\nStructure Queue:\n    front: Node Pointer = NULL\n    rear: Node Pointer = NULL\n\nProcedure Enqueue(Q: Queue, value: Integer):\n    newNode = allocate Node\n    newNode.data = value\n    newNode.next = NULL\n    \n    If Q.rear == NULL Then\n        Q.front = newNode\n        Q.rear = newNode\n    Else\n        Q.rear.next = newNode\n        Q.rear = newNode\n    EndIf\nEndProcedure\n\n```\n\n### ii. Pseudocode for Dequeue:\n\n```c\nProcedure Dequeue(Q: Queue) -> Integer:\n    If Q.front == NULL Then\n        Print \"Queue Underflow\"\n        Return -1\n    EndIf\n    \n    temp = Q.front\n    deletedValue = temp.data\n    Q.front = Q.front.next\n    \n    If Q.front == NULL Then\n        Q.rear = NULL\n    EndIf\n    \n    free(temp)\n    Return deletedValue\nEndProcedure\n\n```\n\n### iii. Example Walkthrough:\n- **Initial Empty Queue**: `front = NULL`, `rear = NULL`.\n- **Enqueue(10)**:\n  - New node `[10|NULL]` is created.\n  - Since `rear == NULL`, `front = rear = [10|NULL]`.\n- **Enqueue(20)**:\n  - New node `[20|NULL]` is created.\n  - `rear.next = [20|NULL]`; `rear = [20|NULL]`.\n  - Chain: `front -> [10] -> [20] <- rear`.\n- **Dequeue()**:\n  - Store `temp = front` (10).\n  - Advance `front = front.next` (points to node 20).\n  - Return 10. Queue now contains only node 20: `front = rear = [20]`.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "Set D - 12. B. a",
+            "question_text": "Write a pseudocode and evaluate the postfix expression\n$$6 \\ 2 \\ 3 \\ + \\ - \\ 3 \\ 8 \\ 2 \\ / \\ + \\ * \\ 2 \\ \\wedge \\ 3 \\ +$$",
+            "marks": 5,
+            "answer": "### Evaluation Step-by-Step:\n| Token | Action | Stack State |\n| :--- | :--- | :--- |\n| `6` | Push 6 | `[6]` |\n| `2` | Push 2 | `[6, 2]` |\n| `3` | Push 3 | `[6, 2, 3]` |\n| `+` | Pop 3, 2; Push $2 + 3 = 5$ | `[6, 5]` |\n| `-` | Pop 5, 6; Push $6 - 5 = 1$ | `[1]` |\n| `3` | Push 3 | `[1, 3]` |\n| `8` | Push 8 | `[1, 3, 8]` |\n| `2` | Push 2 | `[1, 3, 8, 2]` |\n| `/` | Pop 2, 8; Push $8 / 2 = 4$ | `[1, 3, 4]` |\n| `+` | Pop 4, 3; Push $3 + 4 = 7$ | `[1, 7]` |\n| `*` | Pop 7, 1; Push $1 * 7 = 7$ | `[7]` |\n| `2` | Push 2 | `[7, 2]` |\n| `^` | Pop 2, 7; Push $7^2 = 49$ | `[49]` |\n| `3` | Push 3 | `[49, 3]` |\n| `+` | Pop 3, 49; Push $49 + 3 = 52$ | `[52]` |\n\n**Final Result = 52**.\n\n### Pseudocode:\n\n```c\nProcedure EvaluatePostfix(expr):\n    Initialize empty stack S\n    For each token in expr do:\n        If token is operand then:\n            push(S, token)\n        Else (token is operator):\n            val2 = pop(S)\n            val1 = pop(S)\n            result = applyOperator(token, val1, val2)\n            push(S, result)\n        EndIf\n    EndFor\n    Return pop(S)\nEndProcedure\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "Set D - 12. B. b",
+            "question_text": "Design a recursive algorithm to find the number of moves in tower of Hanoi problem.",
+            "marks": 4,
+            "answer": "### Mathematical Recurrence:\nFor $n$ disks, the number of moves $M(n)$ satisfies:\n$$M(n) = 2M(n-1) + 1, \\quad \\text{with } M(1) = 1$$\nClosed form: $M(n) = 2^n - 1$.\n\n### Recursive Algorithm:\n\n```c\nProcedure CountHanoiMoves(n: Integer) -> Integer:\n    // Base case: 1 disk requires exactly 1 move\n    If n == 1 Then\n        Return 1\n    EndIf\n    // Recursive step: Move n-1 disks, move 1 disk, then move n-1 disks\n    Return 2 * CountHanoiMoves(n - 1) + 1\nEndProcedure\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "Set D - 13. A",
+            "question_text": "Consider a scenario where you have a hash table with a length of 10 slots, initially empty. You need to insert a series of integer keys: 22, 41, 53, 36, 49, 57, 23, and 38. For each key,\ni. Calculate its initial hash position using $h(k)=(2k+3) \\bmod 10$.\nii. Show the final state of the hash table after inserting all keys using linear probing, showing how collisions are resolved.\niii. Show the final state of the hash table after inserting all keys using quadratic probing, and explain how each collision is resolved with this method",
+            "marks": 9,
+            "answer": "### i. Initial Hash Calculations ($h(k) = (2k + 3) \\bmod 10$):\n- $k = 22: (2 \\times 22 + 3) \\bmod 10 = 47 \\bmod 10 = 7$\n- $k = 41: (2 \\times 41 + 3) \\bmod 10 = 85 \\bmod 10 = 5$\n- $k = 53: (2 \\times 53 + 3) \\bmod 10 = 109 \\bmod 10 = 9$\n- $k = 36: (2 \\times 36 + 3) \\bmod 10 = 75 \\bmod 10 = 5$\n- $k = 49: (2 \\times 49 + 3) \\bmod 10 = 101 \\bmod 10 = 1$\n- $k = 57: (2 \\times 57 + 3) \\bmod 10 = 117 \\bmod 10 = 7$\n- $k = 23: (2 \\times 23 + 3) \\bmod 10 = 49 \\bmod 10 = 9$\n- $k = 38: (2 \\times 38 + 3) \\bmod 10 = 79 \\bmod 10 = 9$\n\n### ii. Linear Probing ($h(k, i) = (h(k) + i) \\bmod 10$):\n1. Insert 22 $\\to$ slot 7\n2. Insert 41 $\\to$ slot 5\n3. Insert 53 $\\to$ slot 9\n4. Insert 36 $\\to$ $h=5$ (collides with 41) $\\to$ slot $(5+1)\\%10 = 6$\n5. Insert 49 $\\to$ slot 1\n6. Insert 57 $\\to$ $h=7$ (collides with 22) $\\to$ slot $(7+1)\\%10 = 8$\n7. Insert 23 $\\to$ $h=9$ (collides with 53) $\\to$ slot $(9+1)\\%10 = 0$\n8. Insert 38 $\\to$ $h=9$ (collides) $\\to$ tries $0, 1$ (occupied) $\\to$ slot 2\n\n**Final Table (Linear Probing):**\n`[0: 23, 1: 49, 2: 38, 3: empty, 4: empty, 5: 41, 6: 36, 7: 22, 8: 57, 9: 53]`\n\n### iii. Quadratic Probing ($h(k, i) = (h(k) + i^2) \\bmod 10$):\n1. Insert 22 $\\to$ slot 7\n2. Insert 41 $\\to$ slot 5\n3. Insert 53 $\\to$ slot 9\n4. Insert 36 $\\to$ $h=5$ (collides) $\\to$ $(5 + 1^2)\\%10 = 6$\n5. Insert 49 $\\to$ slot 1\n6. Insert 57 $\\to$ $h=7$ (collides) $\\to$ $(7 + 1^2)\\%10 = 8$\n7. Insert 23 $\\to$ $h=9$ (collides) $\\to$ $(9 + 1^2)\\%10 = 0$\n8. Insert 38 $\\to$ $h=9$ (collides) $\\to$ $i=1$: $(9+1)\\%10=0$ (collides) $\\to$ $i=2$: $(9+4)\\%10 = 3$\n\n**Final Table (Quadratic Probing):**\n`[0: 23, 1: 49, 2: empty, 3: 38, 4: empty, 5: 41, 6: 36, 7: 22, 8: 57, 9: 53]`",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "Set D - 13. B",
+            "question_text": "You are given an initially empty AVL tree, insert the following sequence of integers in the given order: 33, 13, 53, 9, 21, 61, 8, 11, 19, 27, 17.\ni. For each insertion, update the tree and check the balance factor at each node. If any node becomes unbalanced, perform the necessary rotations to maintain balance by specifying each rotation and indicating the nodes involved.\nii. After all insertions, show the final structure of the AVL tree, with nodes organized to reflect the balanced structure.",
+            "marks": 9,
+            "answer": "### Step-by-Step AVL Insertions:\n1. **Insert 33, 13, 53**: Balanced. Root = 33, Left = 13, Right = 53.\n2. **Insert 9, 21**: Added as children of 13. Balanced.\n3. **Insert 61**: Added as right child of 53. Balanced.\n4. **Insert 8**: Added as left child of 9. Unbalance occurs at node 13 ($BF = +2$, left child 9 has $BF = +1$). Perform **LL Rotation** at node 13. Subtree rooted at 9: Left = 8, Right = 13 (with 13's left = NULL, right = 21).\n5. **Insert 11**: Inserted as right child of 9. Balanced.\n6. **Insert 19**: Inserted under 21 (left child of 21). Balanced.\n7. **Insert 27**: Inserted as right child of 21. Balanced.\n8. **Insert 17**: Inserted as left child of 19. Node 21 becomes unbalanced ($BF = +2$, child 19 has $BF = +1$). Perform **LL Rotation** at node 21.\n\n### ii. Final Balanced AVL Tree Structure:\n\n```text\n33\n            /      \\\n          13        53\n        /    \\        \\\n       9      21       61\n      / \\    /  \\\n     8  11  19  27\n            /\n           17\n\n```\n\nAll node balance factors are within $\\{-1, 0, +1\\}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "Set D - 14. A",
+            "question_text": "Devise a single-source shortest path algorithm to find the shortest distances from the source node 'C' in a weighted, undirected graph. Implement an efficient algorithm that computes the shortest paths from 'C' to all other nodes, considering edge weights. Outline the steps of the algorithm, detailing the edge relaxation process and how shortest path estimates are updated. Present the final shortest distances from node 'C' to all other nodes, along with the paths taken to reach them.\nGraph Edges: $(A,B)=4$, $(A,C)=5$, $(B,C)=11$, $(B,D)=9$, $(C,E)=3$, $(B,E)=7$, $(D,E)=13$, $(D,F)=2$, $(E,F)=6$.",
+            "marks": 9,
+            "answer": "### Dijkstra's Algorithm (Source = C):\n- **Edge Relaxation Condition**: If $\\text{dist}[u] + w(u, v) < \\text{dist}[v]$, then $\\text{dist}[v] = \\text{dist}[u] + w(u, v)$ and $\\text{parent}[v] = u$.\n\n### Step-by-Step Execution:\n1. **Initialization**: $\\text{dist}[C] = 0$; all other $\\text{dist} = \\infty$.\n2. **Extract C ($\text{dist}=0$)**: Relax neighbors of C:\n   - $A: 0 + 5 = 5$, $\\text{parent}[A] = C$\n   - $E: 0 + 3 = 3$, $\\text{parent}[E] = C$\n   - $B: 0 + 11 = 11$, $\\text{parent}[B] = C$\n3. **Extract E ($\text{dist}=3$)**: Relax neighbors of E:\n   - $B: \\min(11, 3 + 7) = 10$, $\\text{parent}[B] = E$\n   - $F: 3 + 6 = 9$, $\\text{parent}[F] = E$\n   - $D: 3 + 13 = 16$, $\\text{parent}[D] = E$\n4. **Extract A ($\text{dist}=5$)**: Relax neighbors of A:\n   - $B: \\min(10, 5 + 4) = 9$, $\\text{parent}[B] = A$\n5. **Extract B ($\text{dist}=9$)**: Neighbors do not yield shorter distances ($D: 9 + 9 = 18 > 16$).\n6. **Extract F ($\text{dist}=9$)**: Relax neighbors of F:\n   - $D: \\min(16, 9 + 2) = 11$, $\\text{parent}[D] = F$\n7. **Extract D ($\text{dist}=11$)**: All vertices finalized.\n\n### Final Distances and Paths from C:\n- **Vertex C**: Distance = 0 | Path: `C`\n- **Vertex E**: Distance = 3 | Path: `C -> E`\n- **Vertex A**: Distance = 5 | Path: `C -> A`\n- **Vertex B**: Distance = 9 | Path: `C -> A -> B`\n- **Vertex F**: Distance = 9 | Path: `C -> E -> F`\n- **Vertex D**: Distance = 11 | Path: `C -> E -> F -> D`",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Graph"
+        },
+        {
+            "question_number": "Set D - 14. B",
+            "question_text": "Perform a graph traversal on the given undirected graph G using both Breadth-First Search (BFS) and Depth-First Search (DFS), starting from a designated root node.\n1. Describe how to initialize the data structures required for both BFS and DFS, including the specific methods used to mark nodes as visited, supported by appropriate pseudocode.\n2. Provide a detailed, step-by-step of the BFS and DFS traversal processes, starting from the specified root node. Ensure to record the order in which nodes are visited during each traversal method.\n[Graph vertices: 0, 1, 2, 3, 4, 5, 6; Edges: (0,1), (0,3), (1,2), (1,5), (2,3), (2,4), (2,6), (3,4), (4,6)]",
+            "marks": 9,
+            "answer": "### 1. Data Structure Initialization & Pseudocode:\n- **Visited Tracking**: A boolean array `visited[0..V-1]` initialized to `False` to prevent re-processing nodes and avoid cycles.\n- **BFS Structure**: A FIFO **Queue**.\n- **DFS Structure**: A LIFO **Stack** (or system call stack via recursion).\n\n```c\nProcedure BFS(G, startNode):\n    visited = array of size V initialized to False\n    Q = empty queue\n    visited[startNode] = True\n    Enqueue(Q, startNode)\n    While Q is not empty do:\n        u = Dequeue(Q)\n        Print u\n        For each neighbor v of u do:\n            If not visited[v] then:\n                visited[v] = True\n                Enqueue(Q, v)\n            EndIf\n        EndFor\n    EndWhile\nEndProcedure\n\n```\n\n### 2. Traversal Walkthrough (Starting Node = 0, numeric order):\n- **BFS Traversal**:\n  - Level 0: Visit `0`\n  - Level 1: Neighbors of 0 $\\to$ Visit `1`, `3`\n  - Level 2: Neighbors of 1 & 3 $\\to$ From 1: Visit `2`, `5`; From 3: Visit `4`\n  - Level 3: Neighbors of 2, 5, 4 $\\to$ Visit `6`\n  - **BFS Visited Order**: **0, 1, 3, 2, 5, 4, 6**\n\n- **DFS Traversal (Recursive / Stack)**:\n  - Visit 0 $\\to$ move to lowest unvisited neighbor `1`\n  - Visit 1 $\\to$ move to `2`\n  - Visit 2 $\\to$ move to `3`\n  - Visit 3 $\\to$ move to `4`\n  - Visit 4 $\\to$ move to `6`\n  - Backtrack to 1 $\\to$ move to `5`\n  - **DFS Visited Order**: **0, 1, 2, 3, 4, 6, 5**",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Graph"
+        },
+        {
+            "question_number": "Set C - 1",
+            "question_text": "Given the following which involves a series of stack operations:\n\n```text\npush(10);\npush(20);\npush(30);\npop();\npush(40);\npush(50);\npop();\npop();\npush(60);\npush(70);\npop();\n\n```\n\nWhat is the sequence of elements in the stack from top to bottom after all operations have been performed?\na. 10, 20, 60\nb. 20, 10, 60\nc. 60, 20, 10\nd. 60, 10, 20",
+            "marks": 1,
+            "answer": "c. 60, 20, 10\n\nExplanation:\n- push(10), push(20), push(30) $\\to$ `[10, 20, 30]`\n- pop() $\\to$ removes 30, stack = `[10, 20]`\n- push(40), push(50) $\\to$ `[10, 20, 40, 50]`\n- pop(), pop() $\\to$ removes 50, then 40, stack = `[10, 20]`\n- push(60), push(70) $\\to$ `[10, 20, 60, 70]`\n- pop() $\\to$ removes 70, stack = `[10, 20, 60]`\nReading from top to bottom: 60, 20, 10.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "Set C - 2",
+            "question_text": "Imagine you are developing a feature for a text editor that allows users to undo their last set of changes. You decide to use a stack to implement this feature. Each time a user makes a change, the previous state of the text is pushed onto the stack. When the user selects \"Undo\", the most recent state is popped from the stack, and the text reverts to that state.\nGiven the following sequence of text states:\n1. \"Hello\"\n2. \"Hello World\"\n3. \"Hello World!\"\n4. \"Hello World!!!\"\nIf the user makes three consecutive \"Undo\" operations, AFTER THE ABOVE 4 STATES what will be the current state of the text?\na. \"Hello World!!!\"\nb. \"Hello World\"\nc. \"Hello\"\nd. \"\"",
+            "marks": 1,
+            "answer": "c. \"Hello\"\n\nExplanation: Each undo reverts to the previously pushed state:\n- 1st Undo: reverts from state 4 to state 3 (\"Hello World!\")\n- 2nd Undo: reverts from state 3 to state 2 (\"Hello World\")\n- 3rd Undo: reverts from state 2 to state 1 (\"Hello\")",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "Set C - 3",
+            "question_text": "Which of the following statements represent \"circular queue is full\" condition IF an array is used to implement a queue?\na. FRONT = 0; REAR = 0\nb. FRONT = (REAR + 1 MOD LENGTH)\nc. CQ[FRONT] = ITEM\nd. CQ[REAR] = ITEM",
+            "marks": 1,
+            "answer": "b. FRONT = (REAR + 1 MOD LENGTH)\n\nExplanation: In a circular array implementation, the queue is recognized as full when advancing `REAR` by one circular position meets `FRONT`, represented by `FRONT == (REAR + 1) % LENGTH`.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "Set C - 4",
+            "question_text": "Choose the incorrect statement from the given options.\na. In any binary tree, maximum number of nodes on level l is $2^l$, where $l \\ge 0$.\nb. Maximum number of nodes possible in a binary tree of height h is $2^h + 1$.\nc. Maximum number of nodes possible in a binary tree of height h is $2^h - 1$.\nd. Minimum number of nodes possible in a binary tree of height h is h.",
+            "marks": 1,
+            "answer": "b. Maximum number of nodes possible in a binary tree of height h is $2^h + 1$.\n\nExplanation: The maximum number of nodes in a binary tree of height $h$ (levels 1 through $h$) is $\\sum_{i=0}^{h-1} 2^i = 2^h - 1$. Hence, $2^h + 1$ is incorrect.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "Set C - 5",
+            "question_text": "Which of the following is False in the case of Binary Search Tree?\na. In-order traversal on a BST gives the data in ascending order\nb. Pre-order traversal on a BST gives the data in ascending order\nc. the minimum value is at the left-most node\nd. the maximum value is at the right-most node.",
+            "marks": 1,
+            "answer": "b. Pre-order traversal on a BST gives the data in ascending order\n\nExplanation: In-order traversal (Left-Root-Right) yields elements in sorted ascending order, whereas pre-order traversal (Root-Left-Right) does not produce sorted output.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "Set C - 6",
+            "question_text": "Which of the following arrays represents a level order representation of a valid Min-Heap?\na. [2, 3, 4, 5, 10, 7, 8]\nb. [5, 3, 8, 10, 12, 9, 15]\nc. [1, 4, 7, 6, 9, 8, 3]\nd. [10, 20, 40, 70, 50, 60, 30]",
+            "marks": 1,
+            "answer": "a. [2, 3, 4, 5, 10, 7, 8]\n\nExplanation: In a min-heap, every parent $A[i]$ must satisfy $A[i] \\le A[2i+1]$ and $A[i] \\le A[2i+2]$:\n- For (a): $A[0]=2 \\le 3, 4$; $A[1]=3 \\le 5, 10$; $A[2]=4 \\le 7, 8$. All heap conditions are satisfied.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "Set C - 7",
+            "question_text": "Consider a weighted, directed graph with V vertices and E edges. Which data structure is typically suitable for efficiently finding the shortest paths between all pairs of vertices?\na. Adjacency matrix\nb. Priority queue\nc. Stack\nd. Hash table",
+            "marks": 1,
+            "answer": "a. Adjacency matrix\n\nExplanation: The standard all-pairs shortest path algorithm (Floyd-Warshall Algorithm) operates directly on an adjacency matrix representation with $O(V^3)$ time complexity.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Graph"
+        },
+        {
+            "question_number": "Set C - 8",
+            "question_text": "When implementing a Depth-first search (DFS) algorithm on a graph, what data structure is typically used to keep track of vertices in the order they are visited?\na. Stack\nb. Linked list\nc. Heap\nd. Queue",
+            "marks": 1,
+            "answer": "a. Stack\n\nExplanation: Depth-First Search explores as deep as possible along each branch before backtracking, which inherently follows LIFO order managed using a Stack.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Graph"
+        },
+        {
+            "question_number": "Set C - 9",
+            "question_text": "Using the algorithmic method with a stack, convert each of the following infix expressions into their equivalent postfix forms. Follow the steps involved in handling operators, precedence, and parentheses to accurately complete each transformation.\na. $A * B + C * D$\nb. $(A + B) * C - D * F + C$",
+            "marks": 5,
+            "answer": "### a. Conversion of $A * B + C * D$:\n- Token `A` $\\to$ Postfix: `A`\n- Token `*` $\\to$ Push to Stack: `[*]`\n- Token `B` $\\to$ Postfix: `A B`\n- Token `+` $\\to$ Pop `*` (higher precedence), Push `+`: Postfix: `A B *`, Stack: `[+]`\n- Token `C` $\\to$ Postfix: `A B * C`\n- Token `*` $\\to$ Push `*` (higher precedence than `+`): Stack: `[+, *]`\n- Token `D` $\\to$ Postfix: `A B * C D`\n- End $\\to$ Pop remaining operators: `*`, `+`\n**Final Postfix**: $$A B * C D * +$$\n\n### b. Conversion of $(A + B) * C - D * F + C$:\n- `(` $\\to$ Stack: `[(`\n- `A` $\\to$ Postfix: `A`\n- `+` $\\to$ Stack: `[(, +]`\n- `B` $\\to$ Postfix: `A B`\n- `)` $\\to$ Pop until `(`: Postfix: `A B +`, Stack: `[]`\n- `*` $\\to$ Stack: `[*]`\n- `C` $\\to$ Postfix: `A B + C`\n- `-` $\\to$ Pop `*`, push `-`: Postfix: `A B + C *`, Stack: `[-]`\n- `D` $\\to$ Postfix: `A B + C * D`\n- `*` $\\to$ Push `*`: Stack: `[-, *]`\n- `F` $\\to$ Postfix: `A B + C * D F`\n- `+` $\\to$ Pop `*`, then pop `-`, push `+`: Postfix: `A B + C * D F * -`, Stack: `[+]`\n- `C` $\\to$ Postfix: `A B + C * D F * - C`\n- End $\\to$ Pop `+`: Postfix: `A B + C * D F * - C +`\n**Final Postfix**: $$A B + C * D F * - C +$$",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "Set C - 10",
+            "question_text": "Given an initially empty AVL tree, insert the following nodes in order: 30, 20, 25, 10. For each insertion, illustrate the changes in the AVL tree structure and explain any necessary rotations applied to maintain the tree's balance factor.",
+            "marks": 5,
+            "answer": "1. **Insert 30**: Root node. $BF(30) = 0$.\n2. **Insert 20**: Placed as left child of 30. $BF(30) = +1$, $BF(20) = 0$. Balanced.\n3. **Insert 25**: Placed as right child of 20.\n   - Balance factors: $BF(20) = -1$, $BF(30) = +2$ (unbalanced, Left-Right case).\n   - **Perform LR Rotation**:\n     - Left rotate on 20 $\\to$ 25 becomes left child of 30, 20 becomes left child of 25.\n     - Right rotate on 30 $\\to$ 25 becomes new root with left child 20 and right child 30.\n   - Subtree structure: `25` at root, `20` (left), `30` (right). All $BF = 0$.\n4. **Insert 10**: Placed as left child of 20.\n   - $BF(10) = 0, BF(20) = +1, BF(30) = 0, BF(25) = +1$.\n   - All balance factors are within $\\{-1, 0, +1\\}$, no rotation needed.\n\n**Final AVL Tree Structure:**\n\n```text\n25\n     /  \\\n   20    30\n   /\n  10\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "Set C - 11",
+            "question_text": "Consider five cities: (1) New Delhi, (2) Mumbai, (3) Chennai, (4) Bangalore, and (5) Kolkata, and a list of flights that connect these cities as shown in the following table. Use the information given to construct a graph.\n\n| Flight No. | Origin | Destination |\n| :--- | :--- | :--- |\n| 101 | 2 | 3 |\n| 102 | 3 | 2 |\n| 103 | 5 | 3 |\n| 104 | 3 | 4 |\n| 105 | 2 | 5 |\n| 106 | 5 | 2 |\n| 107 | 5 | 1 |\n| 108 | 1 | 4 |\n| 109 | 5 | 4 |\n| 110 | 4 | 5 |",
+            "marks": 5,
+            "answer": "### Graph Representation:\n- **Vertices**: $V = \\{1, 2, 3, 4, 5\\}$ representing:\n  - 1: New Delhi, 2: Mumbai, 3: Chennai, 4: Bangalore, 5: Kolkata\n- **Directed Edges**: $E = \\{(2,3), (3,2), (5,3), (3,4), (2,5), (5,2), (5,1), (1,4), (5,4), (4,5)\\}$\n\n### Adjacency List Representation:\n- **1 (New Delhi)** $\\to$ 4\n- **2 (Mumbai)** $\\to$ 3, 5\n- **3 (Chennai)** $\\to$ 2, 4\n- **4 (Bangalore)** $\\to$ 5\n- **5 (Kolkata)** $\\to$ 1, 2, 3, 4\n\n### Adjacency Matrix (Rows = Origin, Cols = Destination):\n$$\\begin{pmatrix} & 1 & 2 & 3 & 4 & 5 \\\\ 1 & 0 & 0 & 0 & 1 & 0 \\\\ 2 & 0 & 0 & 1 & 0 & 1 \\\\ 3 & 0 & 1 & 0 & 1 & 0 \\\\ 4 & 0 & 0 & 0 & 0 & 1 \\\\ 5 & 1 & 1 & 1 & 1 & 0 \\end{pmatrix}$$",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Graph"
+        },
+        {
+            "question_number": "Set C - 12. A",
+            "question_text": "A palindrome is a word, phrase, or sequence that reads the same backward as forward, disregarding spaces, punctuation, and capitalization. Using a stack data structure, write pseudocode to determine if a given string is a palindrome \"Able was I ere I saw Elba\". The algorithm must utilize a stack to store characters from the string and perform comparisons to determine if the string reads the same in both directions. The pseudocode should clearly indicate if the input string is a palindrome.",
+            "marks": 9,
+            "answer": "### Algorithm & Pseudocode:\n\n```c\nProcedure IsPalindrome(str: String) -> Boolean:\n    // Step 1: Preprocess string (filter alphanumeric and convert to lowercase)\n    cleanStr = \"\"\n    For each char ch in str do:\n        If isAlphaNumeric(ch) Then:\n            cleanStr = cleanStr + toLowerCase(ch)\n        EndIf\n    EndFor\n    \n    // Step 2: Push all cleaned characters onto a stack\n    Initialize empty character stack S\n    n = length(cleanStr)\n    For i = 0 to n - 1 do:\n        push(S, cleanStr[i])\n    EndFor\n    \n    // Step 3: Pop characters and compare with string from left to right\n    For i = 0 to n - 1 do:\n        poppedChar = pop(S)\n        If cleanStr[i] != poppedChar Then:\n            Print \"The input string is NOT a palindrome.\"\n            Return False\n        EndIf\n    EndFor\n    \n    Print \"The input string IS a palindrome.\"\n    Return True\nEndProcedure\n\n```\n\n- **Tracing with \"Able was I ere I saw Elba\"**:\n  - Cleaned string: `\"ablewasiereisawelba\"`\n  - Characters popped from the stack reverse the cleaned string, matching every corresponding position. Thus, it correctly outputs that the input string is a palindrome.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "Set C - 12. B",
+            "question_text": "In an office environment, multiple users send print jobs (123, 234, 345, 456, 567) to a shared printer. To manage these print requests efficiently, which data structure can be used to ensure that documents are printed in the order they are received (First-In-First-Out) Write a suitable Pseudocode to manage print jobs 1. Enqueue (Add Print Job): 2. Dequeue (Process Print Job): 3. Peek (View Next Print Job).",
+            "marks": 9,
+            "answer": "### Data Structure:\nA **Queue (FIFO - First-In-First-Out)** data structure is optimal for print spooling/job scheduling.\n\n### Pseudocode:\n\n```c\nStructure PrintJobQueue:\n    array queue[MAX_SIZE]\n    front = 0\n    rear = -1\n    count = 0\n\n// 1. Enqueue (Add Print Job)\nProcedure Enqueue(jobID: Integer):\n    If count == MAX_SIZE Then:\n        Print \"Printer Queue is Full (Buffer Overflow)\"\n        Return\n    EndIf\n    rear = (rear + 1) % MAX_SIZE\n    queue[rear] = jobID\n    count = count + 1\n    Print \"Job \" + jobID + \" successfully added to print queue.\"\nEndProcedure\n\n// 2. Dequeue (Process Print Job)\nProcedure Dequeue() -> Integer:\n    If count == 0 Then:\n        Print \"No print jobs to process (Queue Underflow)\"\n        Return -1\n    EndIf\n    processedJob = queue[front]\n    front = (front + 1) % MAX_SIZE\n    count = count - 1\n    Print \"Printing Job: \" + processedJob\n    Return processedJob\nEndProcedure\n\n// 3. Peek (View Next Print Job)\nProcedure Peek() -> Integer:\n    If count == 0 Then:\n        Print \"Print Queue is Empty\"\n        Return -1\n    EndIf\n    Print \"Next Job in Line: \" + queue[front]\n    Return queue[front]\nEndProcedure\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "Set C - 13. A",
+            "question_text": "Consider a library database managed by a Binary Search Tree (BST), where each book is represented by a unique identification number (ID) stored in a node. The BST structure allows for efficient management of book records through operations such as insertion, search, and deletion.\n1. Insertion: A new book with a unique ID is to be added to the database. Describe how the BST insertion process adds this ID as a new node in the tree while maintaining the BST's ordering properties.\n2. Search: A librarian needs to check if a book with a specific ID is present in the database. Explain how the search function uses the BST property to efficiently locate the book's ID by comparing it with nodes from the root down to either locate the node or confirm its absence in the tree.\n3. Deletion: A book with a specific ID is to be removed from the database. Discuss how the deletion process works under different conditions:\n   - No children: If the node is a leaf node in the tree.\n   - One child: Replace the node with its single child, maintaining the BST property.\n   - Two children: Replace the node with its successor / predecessor, maintaining the BST property.\nProvide an appropriate Pseudocode for the above said operations and illustrate the same with the suitable example.",
+            "marks": 9,
+            "answer": "### Description of Operations:\n1. **Insertion**: Compare the new ID with the current node starting from the root. If ID is smaller, move left; if greater, move right. Insert the new node as a leaf at the vacant position.\n2. **Search**: Start at the root. If `key == root.id`, return found. If `key < root.id`, search left subtree; otherwise, search right subtree. If NULL is reached, the ID does not exist.\n3. **Deletion**:\n   - *Case 1 (Leaf)*: Set parent's pointer to NULL and delete node.\n   - *Case 2 (One child)*: Bypass the node by linking its parent directly to its child.\n   - *Case 3 (Two children)*: Find the in-order successor (minimum node in right subtree), copy its value to the target node, then recursively delete the in-order successor.\n\n### Pseudocode:\n\n```c\nStructure Node:\n    id: Integer\n    left, right: Node Pointer\n\nFunction Insert(root, key):\n    If root == NULL Then Return new Node(key)\n    If key < root.id Then root.left = Insert(root.left, key)\n    Else If key > root.id Then root.right = Insert(root.right, key)\n    Return root\nEndFunction\n\nFunction Search(root, key):\n    If root == NULL or root.id == key Then Return root\n    If key < root.id Then Return Search(root.left, key)\n    Return Search(root.right, key)\nEndFunction\n\nFunction Delete(root, key):\n    If root == NULL Then Return root\n    If key < root.id Then root.left = Delete(root.left, key)\n    Else If key > root.id Then root.right = Delete(root.right, key)\n    Else:\n        If root.left == NULL Then Return root.right\n        Else If root.right == NULL Then Return root.left\n        successor = FindMin(root.right)\n        root.id = successor.id\n        root.right = Delete(root.right, successor.id)\n    EndIf\n    Return root\nEndFunction\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "Set C - 13. B",
+            "question_text": "In an array-based max-heap, describe the procedures for inserting a new element and deleting the maximum element Explain how the insertion process places the new element at the end of the array and uses an up-heap operation to maintain the heap property Then, Perform the deletion process, where the root element is removed, and adjusted using a \"down-heap\" operation to maintain the heap structure. Given an initial heap performs the deletion of the maximum element, then Insert 38, and provide the final array representation of the heap.\nInitial Heap Tree:\n\n```text\n40\n        /    \\\n      23      32\n     /  \\    /  \\\n   13   11  25  21\n  /  \\\n 8   10\n```",
+            "marks": 9,
+            "answer": "### Initial Heap Array Representation:\n`Index: [0,  1,  2,  3,  4,  5,  6, 7,  8]`\n`Array: [40, 23, 32, 13, 11, 25, 21, 8, 10]`\n\n### Step 1: Deletion of Maximum Element (40):\n1. Replace root (40) with the last element (10). Heap size decreases to 8:\n   `[10, 23, 32, 13, 11, 25, 21, 8]`\n2. **Down-Heap (Max-Heapify at index 0)**:\n   - Children of index 0 (value 10): Left = index 1 (23), Right = index 2 (32). Largest child is 32 at index 2.\n   - Swap 10 and 32: `[32, 23, 10, 13, 11, 25, 21, 8]`\n   - Down-heap at index 2 (value 10): Children are index 5 (25) and index 6 (21). Largest child is 25.\n   - Swap 10 and 25: `[32, 23, 25, 13, 11, 10, 21, 8]`\n   - Index 5 has no children. Down-heap terminates.\n\n### Step 2: Insert 38:\n1. Append 38 to the end of array at index 8:\n   `[32, 23, 25, 13, 11, 10, 21, 8, 38]`\n2. **Up-Heap (Percolate Up from index 8)**:\n   - Parent of index 8: $\\lfloor(8 - 1) / 2\\rfloor = 3$ (value 13).\n   - Since $38 > 13$, swap: `[32, 23, 25, 38, 11, 10, 21, 8, 13]`\n   - Parent of index 3: $\\lfloor(3 - 1) / 2\\rfloor = 1$ (value 23).\n   - Since $38 > 23$, swap: `[32, 38, 25, 23, 11, 10, 21, 8, 13]`\n   - Parent of index 1: $\\lfloor(1 - 1) / 2\\rfloor = 0$ (value 32).\n   - Since $38 > 32$, swap: `[38, 32, 25, 23, 11, 10, 21, 8, 13]`\n   - Index 0 is root. Up-heap terminates.\n\n### Final Array Representation:\n`[38, 32, 25, 23, 11, 10, 21, 8, 13]`",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "Set C - 14. A",
+            "question_text": "When is a spanning tree of a graph called a minimum spanning tree? Describe the concept of a minimum spanning tree and explain how Kruskal's Algorithm can be applied to find it. Using Kruskal's Algorithm, demonstrate step-by-step how to obtain the minimum spanning tree for the following graph, starting from an arbitrary vertex.\nGraph Vertices: A, B, C, D, E, F, G, H\nEdges: $(A,G)=1$, $(G,F)=2$, $(A,C)=3$, $(B,E)=3$, $(A,B)=4$, $(C,F)=5$, $(D,H)=5$, $(E,G)=6$, $(F,H)=7$, $(C,D)=8$.",
+            "marks": 9,
+            "answer": "### Minimum Spanning Tree (MST) Concept:\nA spanning tree of a connected, undirected, weighted graph $G = (V, E)$ is a subgraph that connects all $|V|$ vertices with exactly $|V|-1$ edges without forming any cycles. It is a **Minimum Spanning Tree** if the sum of edge weights is minimized.\n\n### Kruskal's Algorithm Steps:\n1. Sort all edges in non-decreasing order of their weights.\n2. Initialize $|V|$ disjoint sets, one for each vertex.\n3. Greedily iterate through the sorted edges: if the endpoints belong to different sets (no cycle created), add the edge to MST and union their sets.\n4. Repeat until $|V|-1$ edges are added.\n\n### Step-by-Step Edge Selection ($|V|=8 \\implies 7$ edges needed):\n- Sorted edges: $(A,G):1$, $(G,F):2$, $(A,C):3$, $(B,E):3$, $(A,B):4$, $(C,F):5$, $(D,H):5$, $(E,G):6$, $(F,H):7$, $(C,D):8$.\n\n1. Select $(A, G)$, weight 1 $\\to$ Add (No cycle)\n2. Select $(G, F)$, weight 2 $\\to$ Add (No cycle)\n3. Select $(A, C)$, weight 3 $\\to$ Add (No cycle)\n4. Select $(B, E)$, weight 3 $\\to$ Add (No cycle)\n5. Select $(A, B)$, weight 4 $\\to$ Add (No cycle, connects components $\\{B, E\\}$ and $\\{A, C, F, G\\}$)\n6. Consider $(C, F)$, weight 5 $\\to$ Reject (Creates cycle $A-C-F-G-A$)\n7. Select $(D, H)$, weight 5 $\\to$ Add (No cycle)\n8. Consider $(E, G)$, weight 6 $\\to$ Reject (Creates cycle)\n9. Select $(F, H)$, weight 7 $\\to$ Add (Connects component $\\{D, H\\}$ to main tree)\n\nTotal edges selected = 7. All 8 vertices are connected.\n\n### Final MST Weight:\n$$1 + 2 + 3 + 3 + 4 + 5 + 7 = 25$$",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Graph"
+        },
+        {
+            "question_number": "Set C - 14. B",
+            "question_text": "Identify the type of graph and the traversal method utilized in topological sorting. Describe the algorithm for topological sorting, including the data structures used, and demonstrate the process step-by-step for the provided graph to determine its topological order.\n[DAG: Vertices: B, E, C, A, D; Edges: B->E, B->C, E->C, E->A, C->D, A->D]",
+            "marks": 9,
+            "answer": "### 1. Graph Type and Traversal Method:\n- **Graph Type**: Directed Acyclic Graph (DAG). Topological sorting is only possible on graphs containing no directed cycles.\n- **Traversal Method**: Can be performed using **Kahn's Algorithm** (Indegree/BFS approach) or **Depth-First Search (DFS)** with post-order reversal (pushing nodes onto a stack upon finishing).\n\n### 2. Kahn's Algorithm (BFS-based Indegree Method):\n- **Data Structures Used**:\n  - An `in_degree` array to store the incoming edges of each vertex.\n  - A FIFO `Queue` to hold all vertices with `in_degree == 0`.\n  - An output list `topo_order` to record the sorted sequence.\n\n### Step-by-Step Traversal:\n1. **Calculate In-degrees**:\n   - $\\text{in-degree}(B) = 0$\n   - $\\text{in-degree}(E) = 1$ (from $B$)\n   - $\\text{in-degree}(C) = 2$ (from $B, E$)\n   - $\\text{in-degree}(A) = 1$ (from $E$)\n   - $\\text{in-degree}(D) = 2$ (from $C, A$)\n2. **Initialize Queue**: Enqueue vertex with in-degree 0 $\\to$ `Queue = [B]`\n3. **Process B**: Dequeue $B$, add to output. Decrement neighbors' in-degrees:\n   - $\\text{in-degree}(E) = 1 - 1 = 0 \\to$ Enqueue $E$\n   - $\\text{in-degree}(C) = 2 - 1 = 1$\n   - `Queue = [E]`, `Order = [B]`\n4. **Process E**: Dequeue $E$, add to output:\n   - $\\text{in-degree}(C) = 1 - 1 = 0 \\to$ Enqueue $C$\n   - $\\text{in-degree}(A) = 1 - 1 = 0 \\to$ Enqueue $A$\n   - `Queue = [C, A]`, `Order = [B, E]`\n5. **Process C**: Dequeue $C$, add to output:\n   - $\\text{in-degree}(D) = 2 - 1 = 1$\n   - `Queue = [A]`, `Order = [B, E, C]`\n6. **Process A**: Dequeue $A$, add to output:\n   - $\\text{in-degree}(D) = 1 - 1 = 0 \\to$ Enqueue $D$\n   - `Queue = [D]`, `Order = [B, E, C, A]`\n7. **Process D**: Dequeue $D$, add to output:\n   - `Queue = []`, `Order = [B, E, C, A, D]`\n\n### Final Valid Topological Ordering:\n$$B, E, C, A, D \\quad (\\text{or } B, E, A, C, D)$$",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Graph"
+        }
+    ]
+}

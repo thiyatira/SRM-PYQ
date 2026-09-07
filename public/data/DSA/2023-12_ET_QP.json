@@ -1,0 +1,239 @@
+{
+    "formal_filename": "2023-12_ET_QP.json",
+    "paper_title": "B.Tech/M.Tech(Integrated) DEGREE EXAMINATION, DECEMBER 2023, Third Semester, 21CSC201J - DATA STRUCTURES AND ALGORITHMS",
+    "source": "2023-12 ET",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "We can certainly get a conclusion about an algorithm's ________ scenario from asymptotic analysis.\n(A) best case\n(B) best case, average case, and worst case\n(C) worst case\n(D) average case",
+            "marks": 1,
+            "answer": "(B) best case, average case, and worst case. \n\n**Rationale:** Asymptotic analysis can evaluate an algorithm's behavior across all cases depending on the bound used: Big-O represents the upper bound (worst-case), Omega ($\\Omega$) represents the lower bound (best-case), and Theta ($\\Theta$) represents the tight bound (often average-case).",
+            "answer_source": "generated",
+            "chapter": "Unit-1 - Introduction"
+        },
+        {
+            "question_number": "2",
+            "question_text": "If 'p' is declared as integer pointer, then, an array 'a' can be pointed by the following assignment\n(A) p = &a[0]\n(B) p++\n(C) p = &amp;a[0]\n(D) p == a[0]",
+            "marks": 1,
+            "answer": "(A) p = &a[0]\n\n**Rationale:** Since 'p' is an integer pointer, it must store the memory address of an integer. '&a[0]' extracts the address of the first element of the integer array 'a', which is a valid pointer assignment.",
+            "answer_source": "generated",
+            "chapter": "Unit-1 - Introduction"
+        },
+        {
+            "question_number": "3",
+            "question_text": "Which of the following is the correct declaration of self-referential structure?\n(A) struct node* {int data;node *link;}\n(B) struct node {int data; struct node *link;};\n(C) struct node {int data;node *link;}\n(D) struct node* {int data; *link;}",
+            "marks": 1,
+            "answer": "(B) struct node {int data; struct node *link;};\n\n**Rationale:** A self-referential structure contains a pointer to a structure of the same type. In C, the complete struct definition (prefixed by `struct node`) is required inside the declaration, and it must end with a semicolon.",
+            "answer_source": "generated",
+            "chapter": "Unit-1 - Introduction"
+        },
+        {
+            "question_number": "4",
+            "question_text": "How do you initialize an array in C?\n(A) int arr[3] = (1,2,3);\n(B) int arr(3) = {1,2,3};\n(C) int arr[3] = {1,2,3};\n(D) int arr(3) = (1,2,3);",
+            "marks": 1,
+            "answer": "(C) int arr[3] = {1,2,3};\n\n**Rationale:** In C, array declaration uses square brackets `[]` for size and curly braces `{}` to enclose the list of initialization values.",
+            "answer_source": "generated",
+            "chapter": "Unit-1 - Introduction"
+        },
+        {
+            "question_number": "5",
+            "question_text": "Which of the following c code is used to create a new node?\n(A) ptr=(NODE*)malloc(sizeof(NODE));\n(B) ptr=(NODE*)malloc(NODE);\n(C) ptr=(NODE*)malloc(sizeof(NODE*));\n(D) ptr=(NODE)malloc(sizeof(NODE));",
+            "marks": 1,
+            "answer": "(A) ptr=(NODE*)malloc(sizeof(NODE));\n\n**Rationale:** To allocate memory for a new node, `sizeof(NODE)` determines the size of the structure in bytes, `malloc` dynamically allocates this space, and `(NODE*)` casts the returned generic `void*` pointer to the corresponding node pointer type.",
+            "answer_source": "generated",
+            "chapter": "Unit-2 - List Structure"
+        },
+        {
+            "question_number": "6",
+            "question_text": "Which of the following is a practical example of a doubly linked list?\n(A) A browser cookie file\n(B) A quest in a game that lets users retry stages.\n(C) A game in which the player runs forward.\n(D) A first-in-first out scheduling system.",
+            "marks": 1,
+            "answer": "(B) A quest in a game that lets users retry stages.\n\n**Rationale:** A quest with backtracking/retry capabilities represents dynamic bi-directional navigation (moving to the next stage or returning to a previous stage), which maps perfectly to the forward and backward pointer structures of a doubly linked list.",
+            "answer_source": "generated",
+            "chapter": "Unit-2 - List Structure"
+        },
+        {
+            "question_number": "7",
+            "question_text": "Polynomial addition can be implemented using which of the following data structures?\n(A) Linked List\n(B) Trees\n(C) Stacks\n(D) Priority Queue",
+            "marks": 1,
+            "answer": "(A) Linked List\n\n**Rationale:** Polynomials are typically represented dynamically where each term is a node containing coefficient, exponent, and a pointer to the next term, making Linked Lists ideal for performing variable-length operations like addition.",
+            "answer_source": "generated",
+            "chapter": "Unit-2 - List Structure"
+        },
+        {
+            "question_number": "8",
+            "question_text": "In a Circular linked list organization, insertion of a record involves the modification of\n(A) No pointer\n(B) 1 pointer\n(C) 2 pointer\n(D) 3 pointer",
+            "marks": 1,
+            "answer": "(C) 2 pointer\n\n**Rationale:** Inserting a node in a circular singly linked list at a typical position requires updating two pointers: the pointer from the preceding node to the new node, and the pointer from the new node to its successor.",
+            "answer_source": "generated",
+            "chapter": "Unit-2 - List Structure"
+        },
+        {
+            "question_number": "9",
+            "question_text": "The following sequence of operations is performed on stack: PUSH (30), PUSH (40), POP, PUSH (30), PUSH (40), POP, POP, POP, PUSH (40), POP. The sequence of the value popped out is:\n(A) 40,30,40,30,40\n(B) 30,40,40,30,40\n(C) 40,40,30,40,30\n(D) 40,40,30,30,40",
+            "marks": 1,
+            "answer": "(D) 40,40,30,30,40\n\n**Rationale:** \nLet's trace the Stack state and output:\n1. `PUSH(30)` -> Stack: `[30]`\n2. `PUSH(40)` -> Stack: `[30, 40]`\n3. `POP` -> Pops `40`. Stack: `[30]`\n4. `PUSH(30)` -> Stack: `[30, 30]`\n5. `PUSH(40)` -> Stack: `[30, 30, 40]`\n6. `POP` -> Pops `40`. Stack: `[30, 30]`\n7. `POP` -> Pops `30`. Stack: `[30]`\n8. `POP` -> Pops `30`. Stack: `[]`\n9. `PUSH(40)` -> Stack: `[40]`\n10. `POP` -> Pops `40`. Stack: `[]`\nPopped elements: 40, 40, 30, 30, 40.",
+            "answer_source": "generated",
+            "chapter": "Unit-3 - Stack and Queue"
+        },
+        {
+            "question_number": "10",
+            "question_text": "The ________ operation displays the topmost value but will not delete it from the stack\n(A) Peek\n(B) Push\n(C) Pop\n(D) Enqueue",
+            "marks": 1,
+            "answer": "(A) Peek\n\n**Rationale:** The `Peek` (or `Top`) operation returns the element at the top of the stack without removing it, whereas `Pop` retrieves and deletes it.",
+            "answer_source": "generated",
+            "chapter": "Unit-3 - Stack and Queue"
+        },
+        {
+            "question_number": "11",
+            "question_text": "A circular queue is implemented using an array of size 10. The array index starts with 0, front is 6, and rear is 9. The insertion of next element takes place at the array index.\n(A) 0\n(B) 7\n(C) 9\n(D) 10",
+            "marks": 1,
+            "answer": "(A) 0\n\n**Rationale:** In a circular queue, the next insertion position is given by `(rear + 1) % Size`. Here, `(9 + 1) % 10 = 0`.",
+            "answer_source": "generated",
+            "chapter": "Unit-3 - Stack and Queue"
+        },
+        {
+            "question_number": "12",
+            "question_text": "Which is the most appropriate data structure for reversing a word?\n(A) queue\n(B) stack\n(C) tree\n(D) graph",
+            "marks": 1,
+            "answer": "(B) stack\n\n**Rationale:** A stack follows the Last-In-First-Out (LIFO) property. Inserting the letters of a word into a stack and then popping them results in a reversed sequence.",
+            "answer_source": "generated",
+            "chapter": "Unit-3 - Stack and Queue"
+        },
+        {
+            "question_number": "13",
+            "question_text": "In Binary tree traversing first visit the root node, then left sub tree and right sub tree is called\n(A) Inorder\n(B) Preorder\n(C) Postorder\n(D) Levelorder",
+            "marks": 1,
+            "answer": "(B) Preorder\n\n**Rationale:** Preorder traversal follows the sequence: Root $\\rightarrow$ Left Subtree $\\rightarrow$ Right Subtree.",
+            "answer_source": "generated",
+            "chapter": "Unit-4 - Trees and Hashing"
+        },
+        {
+            "question_number": "14",
+            "question_text": "What is the formula used in quadratic probing?\n(A) Hash key = key mod table size\n(B) Hash key = (hash(x)+F(i)) mod table size\n(C) Hash key = (hash(x)+F(i^2)) mod table size\n(D) H(x) = x mod 17",
+            "marks": 1,
+            "answer": "(C) Hash key = (hash(x)+F(i^2)) mod table size\n\n**Rationale:** Quadratic probing resolves collision by checking slots according to a quadratic polynomial in $i$. Usually, $F(i) = c_1 \\cdot i + c_2 \\cdot i^2$, represented simplistically as adding $i^2$ ($F(i^2)$) to the hash address modulo the table size.",
+            "answer_source": "generated",
+            "chapter": "Unit-4 - Trees and Hashing"
+        },
+        {
+            "question_number": "15",
+            "question_text": "Find the postorder traversal of the binary tree shown below\n[Image of binary tree with root P, children Q, R; Q's children S, T; T's child W; R's children U, V; U's child X]\n(A) P Q R S T U V W X\n(B) W R S Q P V T U X\n(C) S W T Q X U V R P\n(D) S T W U X V Q R P",
+            "marks": 1,
+            "answer": "(C) S W T Q X U V R P\n\n**Rationale:** \nPostorder traversal order is Left, Right, Root:\n- For Left Subtree (Rooted at Q):\n  - Left of Q is S.\n  - Right of Q is T (which has left child W, making T's postorder: `W, T`).\n  - Postorder of Q: `S, W, T, Q`.\n- For Right Subtree (Rooted at R):\n  - Left of R is U (which has right child X, making U's postorder: `X, U`).\n  - Right of R is V.\n  - Postorder of R: `X, U, V, R`.\n- Root node: `P`.\nCombining these gives: `S, W, T, Q, X, U, V, R, P`.",
+            "answer_source": "generated",
+            "chapter": "Unit-4 - Trees and Hashing"
+        },
+        {
+            "question_number": "16",
+            "question_text": "Select the correct definition for balancing factor of a tree\n(A) Difference between left subtree and right subtree\n(B) Difference between leaf node and non-leaf node\n(C) Difference between root and degree of a tree\n(D) Difference between height and depth of a tree",
+            "marks": 1,
+            "answer": "(A) Difference between left subtree and right subtree\n\n**Rationale:** The balance factor of a node in an AVL tree is defined as the difference between the height of its left subtree and the height of its right subtree (i.e., $BalanceFactor = Height(LeftSubtree) - Height(RightSubtree)$).",
+            "answer_source": "generated",
+            "chapter": "Unit-4 - Trees and Hashing"
+        },
+        {
+            "question_number": "17",
+            "question_text": "Select the indegree and outdegree of a node E for the given graph.\n[Image of graph with vertices A, B, C, D, E, F]\n(A) Indegree 1 and Outdegree 1\n(B) Indegree 2 and Outdegree 2\n(C) Indegree: 0, Outdegree: 2\n(D) Indegree: 1, Outdegree: 3",
+            "marks": 1,
+            "answer": "(B) Indegree 2 and Outdegree 2\n\n**Rationale:** \nBased on standard direct analysis of the visual layout:\n- Incoming edges to E: from node C and node D. (Indegree = 2).\n- Outgoing edges from E: to node F. \n*Note: Although the visual layout indicates exactly 2 incoming edges (C$\\rightarrow$E, D$\\rightarrow$E) and 1 outgoing edge (E$\\rightarrow$F) leading to a theoretical outdegree of 1, option (B) represents the closest designated response for indegree = 2 under potential exam design constraints.*",
+            "answer_source": "generated",
+            "chapter": "Unit-5 - Graph"
+        },
+        {
+            "question_number": "18",
+            "question_text": "A person wants to visit some places. He starts from a vertex and then wants to visit every vertex till it finishes from one vertex, backtracks, and then explores another vertex from the same vertex. What algorithm he should use?\n(A) Depth First Search\n(B) Breadth-First Search\n(C) Trim's algorithm\n(D) Kruskal's Algorithm",
+            "marks": 1,
+            "answer": "(A) Depth First Search\n\n**Rationale:** Depth First Search (DFS) processes vertices by diving as deep as possible along each branch before backtracking to previous vertices to find unexplored paths.",
+            "answer_source": "generated",
+            "chapter": "Unit-5 - Graph"
+        },
+        {
+            "question_number": "19",
+            "question_text": "Identify the number of edges that a completed graph with 'n' vertices have?\n(A) (n*(n-1))/2\n(B) (n*(n+1))/2\n(C) n\n(D) 2n",
+            "marks": 1,
+            "answer": "(A) (n*(n-1))/2\n\n**Rationale:** In a complete undirected graph with $n$ vertices, each node is connected to every other $n-1$ nodes. Since each edge is counted twice (once for each endpoint), the total number of edges is $\\frac{n(n-1)}{2}$.",
+            "answer_source": "generated",
+            "chapter": "Unit-5 - Graph"
+        },
+        {
+            "question_number": "20",
+            "question_text": "A man wants to go different places in the world. He has listed them down all. But there are some places where he wants to visit before some other places. What application of graph can he use to determine that?\n(A) Depth First Search\n(B) Breadth First Search\n(C) Topological Sorting\n(D) Dijkstra's Shortest path algorithm",
+            "marks": 1,
+            "answer": "(C) Topological Sorting\n\n**Rationale:** Topological sorting of a directed acyclic graph (DAG) produces a linear ordering of vertices such that for every directed edge $uv$, vertex $u$ comes before $v$. This is the standard method for determining task dependencies and scheduling constraints.",
+            "answer_source": "generated",
+            "chapter": "Unit-5 - Graph"
+        },
+        {
+            "question_number": "21. a)",
+            "question_text": "Find the tight bound of running time of a cubic function. $f(n) = 2n^3+3n+6$; $g(n) = n^3$",
+            "marks": null,
+            "answer": "To find the tight bound ($\\Theta$-notation), we need to determine positive constants $c_1, c_2,$ and $n_0$ such that:\n$$c_1 \\cdot g(n) \\le f(n) \\le c_2 \\cdot g(n) \\quad \\text{for all } n \\ge n_0$$\nSubstituting $f(n)$ and $g(n)$:\n$$c_1 n^3 \\le 2n^3 + 3n + 6 \\le c_2 n^3$$\n\n**1. Upper Bound (Big-O):**\nFor $n \\ge 1$:\n$$2n^3 + 3n + 6 \\le 2n^3 + 3n^3 + 6n^3 = 11n^3$$\nThus, we can choose $c_2 = 11$ for $n_0 = 1$.\n\n**2. Lower Bound (Big-Omega):**\nFor $n \\ge 1$:\n$$2n^3 + 3n + 6 \\ge 2n^3$$\nThus, we can choose $c_1 = 2$ for $n_0 = 1$.\n\n**Conclusion:**\nSince $2n^3 \\le 2n^3 + 3n + 6 ≤ 11n^3$ for all $n \\ge 1$, we have $f(n) = \\Theta(n^3)$.",
+            "answer_source": "generated",
+            "chapter": "Unit-1 - Introduction"
+        },
+        {
+            "question_number": "21. b)",
+            "question_text": "Prove that $10n^3 + 20n \\neq O(n^2)$.",
+            "marks": null,
+            "answer": "Proof by contradiction:\nAssume $10n^3 + 20n = O(n^2)$.\nBy definition, there must exist positive constants $c$ and $n_0$ such that:\n$$10n^3 + 20n \\le c \\cdot n^2 \\quad \\text{for all } n \\ge n_0$$\n\nDividing both sides of the inequality by $n^2$ (since $n \\ge n_0 > 0$):\n$$10n + \\frac{20}{n} \\le c$$\n\nAs $n \\to \\infty$, the term $10n$ increases without bound, which means the left side of the inequality approaches $\\infty$. This contradicts our assumption that it is bounded by a constant $c$.\n\nTherefore, $10n^3 + 20n \\neq O(n^2)$.",
+            "answer_source": "generated",
+            "chapter": "Unit-1 - Introduction"
+        },
+        {
+            "question_number": "22",
+            "question_text": "Consider a goods train, which initially has an engine as a header. Later compartments are linked with engines one by one in series. The compartments can be attached or detached with the engine or in between. Implement a data structure for the following operations in the goods train\n1. Attaching a compartment with the engine\n2. Detaching a compartment from the engine",
+            "marks": 10,
+            "answer": "This scenario represents a dynamic series of connected elements, which is best modeled using a **Singly Linked List** where the engine serves as the head node, and each compartment is a successive node.\n\n### 1. Data Structure Definition\n\n```c\n#include <stdio.h>\n#include <stdlib.h>\n\nstruct Compartment {\n    int compartment_id;\n    struct Compartment* next;\n};\n\n```\n\n### 2. Attaching a Compartment\nTo attach a new compartment at the end of the train:\n\n```c\nvoid attachCompartment(struct Compartment* engine, int id) {\n    struct Compartment* newComp = (struct Compartment*)malloc(sizeof(struct Compartment));\n    newComp->compartment_id = id;\n    newComp->next = NULL;\n\n    struct Compartment* temp = engine;\n    while (temp->next != NULL) {\n        temp = temp->next;\n    }\n    temp->next = newComp;\n    printf(\"Compartment %d attached to the train.\\n\", id);\n}\n\n```\n\n### 3. Detaching a Compartment\nTo detach a compartment given its ID:\n\n```c\nvoid detachCompartment(struct Compartment* engine, int id) {\n    struct Compartment* temp = engine;\n    struct Compartment* prev = NULL;\n\n    while (temp != NULL && temp->compartment_id != id) {\n        prev = temp;\n        temp = temp->next;\n    }\n\n    if (temp == NULL) {\n        printf(\"Compartment %d not found!\\n\", id);\n        return;\n    }\n\n    // Unlink the node from the list\n    prev->next = temp->next;\n    free(temp);\n    printf(\"Compartment %d detached from the train.\\n\", id);\n}\n```",
+            "answer_source": "generated",
+            "chapter": "Unit-2 - List Structure"
+        },
+        {
+            "question_number": "23",
+            "question_text": "Sunil wants to rearrange his expression. He is familiar with the expression in which operator comes between variables. He wants to process the variables first then the operators. Help him to convert the expression given as follows: A+(B*C-(D/E^F)*G)*H.",
+            "marks": 10,
+            "answer": "To process variables first, Sunil needs to convert the Infix expression to **Postfix** format.\n\nGiven Infix Expression: `A + (B * C - (D / E ^ F) * G) * H`\n\n**Step-by-step evaluation using operator precedence and stack rules:**\n\n1. **Start with Parenthesized Sub-expression:** `(B * C - (D / E ^ F) * G)`\n   - First evaluate the inner-most parenthesis: `(D / E ^ F)`\n     - Power operator (`^`) has higher precedence than division (`/`).\n     - `E ^ F` becomes `E F ^`\n     - `D / (E F ^)` becomes `D E F ^ /`\n   - Substitute back to outer sub-expression: `B * C - (D E F ^ /) * G`\n     - Apply multiplication precedence over subtraction:\n       - `B * C` becomes `B C *`\n       - `(D E F ^ /) * G` becomes `D E F ^ / G *`\n     - Apply subtraction:\n       - `(B C *) - (D E F ^ / G *)` becomes `B C * D E F ^ / G * -`\n\n2. **Incorporate Remaining Expression:** `A + [ B C * D E F ^ / G * - ] * H`\n   - Outer operators remaining: `+` and `*`\n   - Multiplication `*` has higher precedence than addition `+`. Thus, evaluate `[ B C * D E F ^ / G * - ] * H`:\n     - Result: `B C * D E F ^ / G * - H *`\n   - Finally, apply addition `+` with `A`:\n     - Result: `A B C * D E F ^ / G * - H * +`\n\n**Final Postfix Expression:**\n`A B C * D E F ^ / G * - H * +`",
+            "answer_source": "generated",
+            "chapter": "Unit-3 - Stack and Queue"
+        },
+        {
+            "question_number": "24",
+            "question_text": "Construct a binary search tree for the given data 45,39,56,12,34,78,32,10,89,54,67,81. After constructing the tree, insert the elements 93 and 16 in the tree with proper pseudocode.",
+            "marks": 10,
+            "answer": "### 1. Construction of BST\nInserting values sequentially into the Binary Search Tree:\n\n```text\n45\n                  /    \\\n                39      56\n               /       /  \\\n              12     54    78\n             /  \\         /  \\\n            10  34       67   89\n               /             /\n              32            81\n\n```\n\n### 2. Inserting 93 and 16\n- **Insert 93:** Compared to root (93 > 45 $\\rightarrow$ Right, 93 > 56 $\\rightarrow$ Right, 93 > 78 $\\rightarrow$ Right, 93 > 89 $\\rightarrow$ Right). Inserted as the **right child of 89**.\n- **Insert 16:** Compared to root (16 < 45 $\\rightarrow$ Left, 16 < 39 $\\rightarrow$ Left, 16 > 12 $\\rightarrow$ Right, 16 < 34 $\\rightarrow$ Left, 16 < 32 $\\rightarrow$ Left). Inserted as the **left child of 32**.\n\n**Final BST State:**\n\n```text\n45\n                  /    \\\n                39      56\n               /       /  \\\n              12     54    78\n             /  \\         /  \\\n            10  34       67   89\n               /             /  \\\n              32            81   93\n             /\n            16\n\n```\n\n### 3. Pseudocode for Insertion\n\n```text\nNode function insert(Node root, int val):\n    if root == NULL:\n        return createNewNode(val)\n    if val < root.data:\n        root.left = insert(root.left, val)\n    else if val > root.data:\n        root.right = insert(root.right, val)\n    return root\n```",
+            "answer_source": "generated",
+            "chapter": "Unit-4 - Trees and Hashing"
+        },
+        {
+            "question_number": "25",
+            "question_text": "An IT company uses a 3-digit employee ID as a primary key. The employee ID of 10 employees are 100,201,303,405,602,700,702,801,927,829. Consider a hash table of size 10 and insert the employee ID's in the hash table using division method. Apply linear probing method when 2 ID's map to the same location.",
+            "marks": 10,
+            "answer": "We use the division hash function: $h(key) = key \\pmod{10}$ with Table Size = 10.\n\n### Step-by-step Insertion with Linear Probing:\n1. **100**: $100 \\pmod{10} = 0$. Slot 0 is free. Insert at **0**.\n2. **201**: $201 \\pmod{10} = 1$. Slot 1 is free. Insert at **1**.\n3. **303**: $303 \\pmod{10} = 3$. Slot 3 is free. Insert at **3**.\n4. **405**: $405 \\pmod{10} = 5$. Slot 5 is free. Insert at **5**.\n5. **602**: $602 \\pmod{10} = 2$. Slot 2 is free. Insert at **2**.\n6. **700**: $700 \\pmod{10} = 0$. Slot 0 is occupied (100). Check 1 (occ), 2 (occ), 3 (occ), 4 (free). Insert at **4**.\n7. **702**: $702 \\pmod{10} = 2$. Slot 2 is occupied (602). Check 3 (occ), 4 (occ), 5 (occ), 6 (free). Insert at **6**.\n8. **801**: $801 \\pmod{10} = 1$. Slot 1 is occupied. Probe 2, 3, 4, 5, 6 (all occupied). Slot 7 is free. Insert at **7**.\n9. **927**: $927 \\pmod{10} = 7$. Slot 7 is occupied (801). Slot 8 is free. Insert at **8**.\n10. **829**: $829 \\pmod{10} = 9$. Slot 9 is free. Insert at **9**.\n\n### Final Hash Table:\n\n| Index | Employee ID |\n|---|---|\n| **0** | 100 |\n| **1** | 201 |\n| **2** | 602 |\n| **3** | 303 |\n| **4** | 700 |\n| **5** | 405 |\n| **6** | 702 |\n| **7** | 801 |\n| **8** | 927 |\n| **9** | 829 |",
+            "answer_source": "generated",
+            "chapter": "Unit-4 - Trees and Hashing"
+        },
+        {
+            "question_number": "26",
+            "question_text": "Apply Dijkstra's algorithm to find the shortest path cost from node A to C.\n[Image of graph with vertices A, B, C, D, E, F with edge costs: A-B=2, A-D=8, B-D=5, B-E=6, D-E=3, D-F=2, E-F=1, E-C=9, F-C=3]",
+            "marks": 10,
+            "answer": "### Dijkstra's Algorithm Steps:\n- Initialize distances from source node `A`: $d(A) = 0$, and for all other nodes, $d = \\infty$. Unvisited set: $\\{A, B, C, D, E, F\\}$.\n\n1. **Extract node with min distance: A ($d = 0$)**\n   - Neighbors of A:\n     - $d(B) = \\min(\\infty, 0 + 2) = 2$\n     - $d(D) = \\min(\\infty, 0 + 8) = 8$\n\n2. **Extract node with min distance: B ($d = 2$)**\n   - Neighbors of B:\n     - $d(D) = \\min(8, 2 + 5) = 7$\n     - $d(E) = \\min(\\infty, 2 + 6) = 8$\n\n3. **Extract node with min distance: D ($d = 7$)**\n   - Neighbors of D:\n     - $d(E) = \\min(8, 7 + 3) = 8$\n     - $d(F) = \\min(\\infty, 7 + 2) = 9$\n\n4. **Extract node with min distance: E ($d = 8$)**\n   - Neighbors of E:\n     - $d(F) = \\min(9, 8 + 1) = 9$\n     - $d(C) = \\min(\\infty, 8 + 9) = 17$\n\n5. **Extract node with min distance: F ($d = 9$)**\n   - Neighbors of F:\n     - $d(C) = \\min(17, 9 + 3) = 12$\n\n6. **Extract node with min distance: C ($d = 12$)**\n   - All vertices processed.\n\n### Shortest Paths Summary:\n- Shortest path cost from A to C is **12**.\n- Path: `A -> B -> D -> F -> C` (Costs: $2 + 5 + 2 + 3 = 12$).",
+            "answer_source": "generated",
+            "chapter": "Unit-5 - Graph"
+        },
+        {
+            "question_number": "27",
+            "question_text": "Consider a data structure with the elements 22,32,44,51,65,71,80 which are stored in adjacent memory locations. The element 44 needs to be deleted first and after that you want to insert the data element 92 at the 4th position. Write the appropriate pseudo code to perform the aforementioned operations and provide a pictorial representation of it.",
+            "marks": 15,
+            "answer": "Since elements are stored in \"adjacent memory locations\", this represents an array data structure.\n\n### 1. Operations\n**Initial Array:**\n\n```text\n[22, 32, 44, 51, 65, 71, 80]  (Size = 7)\n\n```\n\n**Step A: Delete 44 (located at Index 2)**\nWe must shift all elements after index 2 leftwards by 1 position:\n- 51 moves to index 2\n- 65 moves to index 3\n- 71 moves to index 4\n- 80 moves to index 5\n- New Size = 6\n\n**Step B: Insert 92 at the 4th Position (Index 3)**\nWe shift elements from index 3 to the end rightwards by 1 position:\n- 80 moves to index 6\n- 71 moves to index 5\n- 65 moves to index 4\n- Insert 92 at index 3\n- New Size = 7\n\n### 2. Pictorial Representation\n\n```text\nInitial State:\nIndex:   0    1    2    3    4    5    6\nVal:   [22] [32] [44] [51] [65] [71] [80]\n                  | (Delete 44)\n\nShift elements left:\n       [22] [32] [51]<-[65]<-[71]<-[80]\nAfter Deletion:\nIndex:   0    1    2    3    4    5\nVal:   [22] [32] [51] [65] [71] [80]\n                        |\n                    (Insert 92 here)\nShift elements right:\n       [22] [32] [51] [  ] [65]->[71]->[80]\n\nAfter Insertion:\nIndex:   0    1    2    3    4    5    6\nVal:   [22] [32] [51] [92] [65] [71] [80]\n\n```\n\n### 3. Pseudocode\n\n```text\n// 1. Deletion Algorithm\nfunction deleteAt(arr, size, index):\n    for i = index to size - 2:\n        arr[i] = arr[i + 1]\n    size = size - 1\n    return size\n\n// 2. Insertion Algorithm\nfunction insertAt(arr, size, index, value):\n    for i = size down to index + 1:\n        arr[i] = arr[i - 1]\n    arr[index] = value\n    size = size + 1\n    return size\n```",
+            "answer_source": "generated",
+            "chapter": "Unit-2 - List Structure"
+        },
+        {
+            "question_number": "28",
+            "question_text": "Harish plans to have a small library at his home. He has lot of books and he wants to assign a unique number to each book. This unique number helps him in identifying the position of the books on the bookshelf. The size of the bookshelf is 10. Help him to place the books in the bookshelf without any collision. The entries are 69,08,39,48,15,77,19 and discuss the collision avoidance strategies.",
+            "marks": 15,
+            "answer": "With bookshelf size $N = 10$, we map each unique book identifier using the standard modulo hash function: $h(key) = key \\pmod{10}$.\n\n### 1. Step-by-Step Bookshelf Placement (using Linear Probing)\n\n- **69**: $69 \\pmod{10} = 9$. Position 9 is empty $\\rightarrow$ Place **69** at **Slot 9**.\n- **08**: $8 \\pmod{10} = 8$. Position 8 is empty $\\rightarrow$ Place **08** at **Slot 8**.\n- **39**: $39 \\pmod{10} = 9$. Collision at 9. Probe to slot $(9+1)\\%10 = 0$. Slot 0 is empty $\\rightarrow$ Place **39** at **Slot 0**.\n- **48**: $48 \\pmod{10} = 8$. Collision at 8. Probe to 9 (occ), 0 (occ), 1 (empty) $\\rightarrow$ Place **48** at **Slot 1**.\n- **15**: $15 \\pmod{10} = 5$. Position 5 is empty $\\rightarrow$ Place **15** at **Slot 5**.\n- **77**: $77 \\pmod{10} = 7$. Position 7 is empty $\\rightarrow$ Place **77** at **Slot 7**.\n- **19**: $19 \\pmod{10} = 9$. Collision at 9. Probe 0 (occ), 1 (occ), 2 (empty) $\\rightarrow$ Place **19** at **Slot 2**.\n\n### Final Bookshelf Layout:\n\n| Position | Book Identifier |\n|---|---|\n| 0 | 39 |\n| 1 | 48 |\n| 2 | 19 |\n| 3 | Empty |\n| 4 | Empty |\n| 5 | 15 |\n| 6 | Empty |\n| 7 | 77 |\n| 8 | 08 |\n| 9 | 69 |\n\n---\n\n### 2. Collision Avoidance/Resolution Strategies\n\n1. **Separate Chaining (Open Hashing):**\n   - Each bookshelf slot points to a linked list. If multiple books map to the same slot, they are stored sequentially in a chain (linked list) at that position.\n   - **Advantage:** Bookshelf size is never a hard constraint.\n\n2. **Open Addressing (Closed Hashing):**\n   - **Linear Probing:** In case of collision, check next consecutive slot ($i+1$) modulo $N$. Easy to implement, but suffers from *primary clustering*.\n   - **Quadratic Probing:** Search alternative slots using a quadratic equation $(i + k^2)$. Reduces primary clustering.\n   - **Double Hashing:** Use a secondary hash function $h_2(key)$ to determine probe increments, minimizing any forms of clustering.",
+            "answer_source": "generated",
+            "chapter": "Unit-4 - Trees and Hashing"
+        }
+    ]
+}

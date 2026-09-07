@@ -1,0 +1,263 @@
+{
+    "formal_filename": "2024-05_ET_QP.json",
+    "paper_title": "B.Tech/ M.Tech (Integrated) DEGREE EXAMINATION, MAY 2024 Third Semester, 21CSC201J – DATA STRUCTURES AND ALGORITHMS",
+    "source": "2024-05 ET",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "Which of the following case does not exist in complexity theory?\n(A) Best case\n(B) Worst case\n(C) Average case\n(D) Base case",
+            "marks": 1,
+            "answer": "(D) Base case. In complexity theory, we analyze algorithmic performance using Best, Worst, and Average cases. 'Base case' is a term used in recursion or mathematical induction, not as a standard complexity analysis classification.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "2",
+            "question_text": "How many times the following code prints the string \"hello\"\n\n```c\nfor (i = 1; i<=50; i++)\n    printf (\"hello\");\n\n```\n\n(A) 1\n(B) 50\n(C) Zero\n(D) 49",
+            "marks": 1,
+            "answer": "(B) 50. The loop variable `i` starts at 1 and increments by 1 in each iteration, continuing as long as `i` is less than or equal to 50. This results in exactly 50 iterations.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "3",
+            "question_text": "Elements in an array are accessed _________\n(A) Randomly\n(B) Sequentially\n(C) Exponentially\n(D) Logarithmically",
+            "marks": 1,
+            "answer": "(A) Randomly. Array elements can be accessed directly (random access) in $O(1)$ constant time using their index.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: List Structure"
+        },
+        {
+            "question_number": "4",
+            "question_text": "Which loop is guaranteed to execute at least one time\n(A) For\n(B) While\n(C) Do while\n(D) Both for and while",
+            "marks": 1,
+            "answer": "(C) Do while. A do-while loop evaluates its condition at the end of the loop body, guaranteeing that the body executes at least once.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "5",
+            "question_text": "Linked list data structure offers considerable saving in\n(A) Computational time\n(B) Space utilization\n(C) Space utilization and computational time\n(D) Speed utilization",
+            "marks": 1,
+            "answer": "(B) Space utilization. Linked lists allow dynamic memory allocation, allocating memory only when needed, which helps prevent wasted memory overhead that can occur with pre-allocated static arrays.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: List Structure"
+        },
+        {
+            "question_number": "6",
+            "question_text": "Which of the following is false about a double linked list?\n(A) Navigate in both the directions\n(B) It requires more space than a singly linked list\n(C) The insertion and deletion of a node take a bit longer\n(D) Implementing a double LL is easier than SLL",
+            "marks": 1,
+            "answer": "(D) Implementing a double LL is easier than SLL. Implementing a doubly linked list is actually more complex than a singly linked list because we have to maintain both `next` and `prev` pointers for every operation.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: List Structure"
+        },
+        {
+            "question_number": "7",
+            "question_text": "Which of the following application makes use of a circular linked list?\n(A) Undo operation in a text editor\n(B) Recursive function calls\n(C) Allocating CPU to resources\n(D) Implement hash tables",
+            "marks": 1,
+            "answer": "(C) Allocating CPU to resources. Round-robin CPU scheduling commonly uses a circular list to loop through processes continuously.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: List Structure"
+        },
+        {
+            "question_number": "8",
+            "question_text": "What is the functionality of the below code:\n\n```c\npublic void function (Node node)\n{\n  if (size == 0)\n    head = node;\n  else\n  {\n    Node temp, cur;\n    for (cur = head; (temp = cur.getNext()) != null; cur = temp)\n        cur.setNext(node);\n  }\n  size ++;\n}\n\n```\n\n(A) Inserting a node at the beginning of the list\n(B) Deleting a node at the beginning of the list\n(C) Inserting a node at the end of the list\n(D) Deleting a node at the end of the list",
+            "marks": 1,
+            "answer": "(C) Inserting a node at the end of the list. The loop traverses the list until it reaches the last node (where `cur.getNext() == null`), and then appends the new node to the end of the list, updating the size.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: List Structure"
+        },
+        {
+            "question_number": "9",
+            "question_text": "What does the following function check for?\n\n```c\n#define max 10\ntypedef struct stack\n{\n  int top;\n  int item [max];\n} stack;\nint function (stack *s)\n{\n  if (s->top == -1)\n    return 1;\n  else\n    return 0;\n}\n\n```\n\n(A) Full stack\n(B) Invalid stack\n(C) Empty stack\n(D) Infinite stack",
+            "marks": 1,
+            "answer": "(C) Empty stack. In an array-based stack implementation, a `top` value of `-1` indicates that there are no elements in the stack, so the function checks if the stack is empty.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "10",
+            "question_text": "The postfix form of the expression $(A + B) * (C * D - E) * F / G$\n(A) $AB + CD * E - FG / **$\n(B) $AB + CD * E - F * * G /$\n(C) $AB + CD * E - * F * G /$\n(D) $AB + CDE * - * F * G /$",
+            "marks": 1,
+            "answer": "(B) $AB + CD * E - F * * G /$. Let's trace the conversion: \n1. $(A + B) \\rightarrow AB+$\n2. $(C * D - E) \\rightarrow CD*E-$\n3. $(A+B) * (C*D - E) \\rightarrow AB+CD*E-*$\n4. $((A+B) * (C*D - E)) * F \\rightarrow AB+CD*E-*F*$\n5. $(((A+B) * (C*D - E)) * F) / G \\rightarrow AB+CD*E-*F*G/$",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "11",
+            "question_text": "A linear list of elements in which deletion can be done from one end and insertion can take place only at the other end is known as\n(A) Queue\n(B) Stack\n(C) Tree\n(D) Linked list",
+            "marks": 1,
+            "answer": "(A) Queue. A queue operates on a FIFO (First-In, First-Out) basis, where insertion (enqueue) occurs at the rear end and deletion (dequeue) occurs at the front end.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "12",
+            "question_text": "A data structure in which elements can be inserted or deleted at / from both ends but not in the middle is?\n(A) Queue\n(B) Circular queue\n(C) Dequeue\n(D) Priority queue",
+            "marks": 1,
+            "answer": "(C) Dequeue (Double Ended Queue). A deque allows insertion and deletion of elements at both the front and rear ends, but not in the middle.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "13",
+            "question_text": "Find the pre-order traversal sequence for the binary tree shown in the image.\n(A) HIDEGFJKGCA\n(B) HDIBEAFCJGK\n(C) ABDHIECFGJK\n(D) ABCDEFGHIJK",
+            "marks": 1,
+            "answer": "(C) ABDHIECFGJK. Pre-order traversal follows the Root -> Left -> Right traversal path. Starting from root A, we visit B, then D, then D's left child H, then its right child I, then B's right child E. Then we traverse the right side starting at C, visiting F, G, and subsequent children J and K.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "14",
+            "question_text": "What is direct addressing?\n(A) Distinct array position for every possible key\n(B) Fewer array positions than keys\n(C) Fewer keys than array positions\n(D) Same array position for all keys",
+            "marks": 1,
+            "answer": "(A) Distinct array position for every possible key. In direct addressing (or a direct address table), each key corresponds directly to a unique slot in the array, avoiding collisions entirely but requiring a universe of keys that fits in memory.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "15",
+            "question_text": "A binary search tree contains values $7, 8, 13, 26, 35, 40, 70, 75$. Which one of the following is a valid post order sequence of the tree provided the pre-order sequence as $35, 13, 7, 8, 26, 70, 40, 75$?\n(A) $7, 8, 26, 13, 75, 40, 70, 35$\n(B) $26, 13, 7, 8, 70, 75, 40, 35$\n(C) $7, 8, 13, 26, 35, 40, 70, 75$\n(D) $8, 7, 26, 13, 40, 75, 70, 35$",
+            "marks": 1,
+            "answer": "(D) $8, 7, 26, 13, 40, 75, 70, 35$. Reconstructing the BST from the pre-order sequence:\n- Root is $35$.\n- Left subtree contains $13, 7, 8, 26$ with $13$ as root, $7$ as left child of $13$, $8$ as right child of $7$, and $26$ as right child of $13$.\n- Right subtree contains $70, 40, 75$ with $70$ as root, $40$ as left child, and $75$ as right child.\nTracing post-order (Left, Right, Root) yields: $8, 7, 26, 13, 40, 75, 70, 35$.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "16",
+            "question_text": "What data organization method is used in hash tables?\n(A) Stack\n(B) Array\n(C) Linked list\n(D) Queue",
+            "marks": 1,
+            "answer": "(B) Array. Hash tables primarily use an array (often called the hash table directory or bucket array) to store key-value pairs or pointers to them, accessing slots directly via hash codes.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "17",
+            "question_text": "What would be the number of zero in the adjacency matrix of the given graph?\n(A) 10\n(B) 6\n(C) 16\n(D) 0",
+            "marks": 1,
+            "answer": "(A) 10. For a graph with 4 vertices, the adjacency matrix size is $4 \\times 4 = 16$ elements. If the graph is interpreted as an undirected graph with 3 edges (e.g., missing one of the connections in the diagram), it has $3 \\times 2 = 6$ non-zero entries, leaving $16 - 6 = 10$ zeros. Alternatively, if it is a directed graph with 6 edges, it has $16 - 6 = 10$ zeros.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Graph"
+        },
+        {
+            "question_number": "18",
+            "question_text": "Which of the following is not a topological sorting of the given graph?\n(A) ABCDEF\n(B) ABFEDC\n(C) ABECFD\n(D) ABCDFE",
+            "marks": 1,
+            "answer": "(A) ABCDEF. In topological sorting, a node must appear before all nodes it has directed edges to. Since $F$ has in-degree 0, it must appear before its neighbors $A$ and $E$. Any sequence that violates the dependency order (like $A$ preceding $F$ or $E$ preceding $F$, and $C$ preceding $B$ or $D$) is invalid. Specifically, (A) is definitely not a topological sort because it completely reverses the required topological order of the graph.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Graph"
+        },
+        {
+            "question_number": "19",
+            "question_text": "The travelling salesman problem can be solved using.\n(A) Spanning tree\n(B) A minimum spanning tree\n(C) Bellman-Ford algorithm\n(D) DFS traversal",
+            "marks": 1,
+            "answer": "(B) A minimum spanning tree. While the Traveling Salesperson Problem (TSP) is NP-hard, approximation algorithms (such as the twice-around-the-MST heuristic or Christofides' algorithm) utilize a Minimum Spanning Tree (MST) as a base to find a near-optimal tour.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Graph"
+        },
+        {
+            "question_number": "20",
+            "question_text": "Consider the graph [shown in the image with nodes a, b, c, d, e, f]. What is the total cost of minimum spanning tree using Kruskals algorithm?\n(A) 24\n(B) 23\n(C) 15\n(D) 19",
+            "marks": 1,
+            "answer": "(D) 19. Applying Kruskal's algorithm on the given graph:\n1. Sort the edges by weight:\n   - $(a, c) = 2$\n   - $(b, f) = 2$\n   - $(c, f) = 4$\n   - $(d, f) = 4$\n   - $(a, b) = 6$\n   - $(c, d) = 7$\n   - $(d, e) = 7$\n   - $(f, e) = 10$\n2. Select edges in ascending order that do not form a cycle:\n   - Choose $(a, c)$ (weight 2)\n   - Choose $(b, f)$ (weight 2)\n   - Choose $(c, f)$ (weight 4)\n   - Choose $(d, f)$ (weight 4)\n   - Choose $(d, e)$ (weight 7)\nTotal MST weight = $2 + 2 + 4 + 4 + 7 = 19$.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Graph"
+        },
+        {
+            "question_number": "21. a.",
+            "question_text": "How arrays can be created dynamically? Prove how it improves the performance of a program.",
+            "marks": 8,
+            "answer": "### Dynamic Array Creation in C\n\nIn C, dynamic arrays are created using memory allocation functions from `<stdlib.h>`, such as `malloc()` or `calloc()`. These functions allocate memory from the heap during runtime rather than the stack during compile time.\n\n#### Syntax/Example Code:\n\n```c\n#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    int n;\n    printf(\"Enter size of array: \");\n    scanf(\"%d\", &n);\n\n    // Allocating memory dynamically\n    int *arr = (int *)malloc(n * sizeof(int));\n    if (arr == NULL) {\n        printf(\"Memory allocation failed!\\n\");\n        return 1;\n    }\n\n    // Initialize and print\n    for (int i = 0; i < n; i++) {\n        arr[i] = i + 1;\n    }\n\n    // Free allocated memory\n    free(arr);\n    return 0;\n}\n\n```\n\n#### Performance Improvements:\n1. **Optimal Memory Utilization**: Prevents wasted memory (under-allocation) or stack overflow (over-allocation) because the exact size is determined at runtime.\n2. **Avoidance of Stack Overflow**: Large datasets can exceed the limited stack memory (which causes crashes). Heap memory is significantly larger, allowing programs to handle much bigger workloads.\n3. **Flexibility and Resizing**: Dynamic arrays can be resized using `realloc()` without restarting the application or copying overhead manually, maintaining continuous data structures efficiently.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "21. b.",
+            "question_text": "Write a 'C' program to store students information using structures. How effectively improved using pointers?",
+            "marks": 8,
+            "answer": "### C Program using Structures and Pointers\n\nUsing pointers with structures improves efficiency dramatically by avoiding the copying of large structure data when passing them to functions.\n\n#### Code implementation:\n\n```c\n#include <stdio.h>\n#include <stdlib.h>\n\nstruct Student {\n    char name[50];\n    int roll_no;\n    float marks;\n};\n\n// Passing struct pointer to function avoids copying overhead\nvoid displayStudent(const struct Student *s) {\n    printf(\"\\nStudent Information:\\n\");\n    printf(\"Name: %s\\n\", s->name);\n    printf(\"Roll No: %d\\n\", s->roll_no);\n    printf(\"Marks: %.2f\\n\", s->marks);\n}\n\nint main() {\n    struct Student s1;\n    struct Student *ptr = &s1;\n\n    printf(\"Enter Name: \");\n    scanf(\"%s\", ptr->name);\n    printf(\"Enter Roll No: \");\n    scanf(\"%d\", &ptr->roll_no);\n    printf(\"Enter Marks: \");\n    scanf(\"%f\", &ptr->marks);\n\n    displayStudent(ptr);\n    return 0;\n}\n\n```\n\n#### Why Pointers Improve Efficiency:\n1. **Pass-by-Reference**: Passing a pointer to a struct takes only 4 or 8 bytes (address size) instead of copying the entire structure (which can be hundreds of bytes), saving both CPU cycles and stack space.\n2. **Dynamic Modification**: Functions can modify the actual student structure directly without returning a copy.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "22. a.",
+            "question_text": "Consider an array $A[1:n]$. Given a position, write an algorithm to insert an element in the array. If the position is empty, the element is inserted easily. If the position is already occupied the element should be inserted with the minimum number of shifts.",
+            "marks": 8,
+            "answer": "### Insertion Algorithm with Minimum Shifts in $A[1:n]$\n\nTo insert element `X` at target index `pos` in an array $A$ of size $n$, if `A[pos]` is empty (represented by a special value, e.g., `NULL` or `0`), we insert it immediately. If it is occupied, we look left and right for the nearest empty spot to minimize the number of element shifts.\n\n#### Algorithm:\n1. **Check boundary conditions**: If `pos < 1` or `pos > n`, return error.\n2. **Immediate insertion**: If `A[pos]` is empty, then set `A[pos] = X` and exit.\n3. **Search for nearest empty slot**:\n   - Initialize `left_dist = infinity`, `right_dist = infinity`.\n   - Scan left from `pos - 1` to `1` to find the first empty slot at index `L`. If found, `left_dist = pos - L`.\n   - Scan right from `pos + 1` to `n` to find the first empty slot at index `R`. If found, `right_dist = R - pos`.\n4. **Shift and Insert**:\n   - If no empty slot exists (both distances are infinity), the array is full. Return overflow error.\n   - If `right_dist <= left_dist`:\n     - For `i` from `R` down to `pos + 1`:\n       - `A[i] = A[i-1]`\n     - `A[pos] = X`\n   - Else (`left_dist < right_dist`):\n     - For `i` from `L` up to `pos - 1`:\n       - `A[i] = A[i+1]`\n     - `A[pos] = X`\n5. Exit.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: List Structure"
+        },
+        {
+            "question_number": "22. b.",
+            "question_text": "Describe the following\n(i) Applications of list\n(ii) Polynomial manipulation",
+            "marks": 8,
+            "answer": "### (i) Applications of List\nLinked Lists and Array Lists have diverse computer science applications:\n1. **Dynamic Memory Allocation**: Used by OS memory managers to keep track of free and allocated memory blocks.\n2. **Implementation of ADTs**: Base data structure for Stacks, Queues, Graphs (adjacency list), and Hash Tables (separate chaining).\n3. **Navigation & Undo/Redo**: Doubly linked lists are used for forward/back tracking in web browsers and undo/redo histories in software applications.\n4. **Round-Robin Scheduling**: Circular linked lists are ideal for scheduling processes in modern operating systems.\n\n### (ii) Polynomial Manipulation\nPolynomials such as $P(x) = a_n x^n + a_{n-1} x^{n-1} + \\dots + a_0$ are modeled dynamically using linked lists where each node represents a term:\n`[ Coefficient | Exponent | Next Pointer ]`.\n\n#### Operations:\n- **Addition**: Two polynomial lists are traversed simultaneously. Terms with matching exponents are summed, and non-matching terms are appended in descending order.\n- **Multiplication**: Each term of the first polynomial is multiplied by every term of the second, and the resulting terms are combined and simplified into a new sorted linked list.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: List Structure"
+        },
+        {
+            "question_number": "23. a.",
+            "question_text": "Develop and show the simulation using stack for evaluation of the following expression: $12 + 3 * 14 - (5 * 16) + 7$.",
+            "marks": 8,
+            "answer": "### Evaluation of Infix Expression Using Stacks\n\nFirst, let's convert the expression to Postfix form, or evaluate it directly using two stacks (Operator and Operand stacks).\n\n#### 1. Infix to Postfix Conversion:\n- Token `12`: Postfix: `12`\n- Token `+`: Op Stack: `[+]`\n- Token `3`: Postfix: `12, 3`\n- Token `*`: Op Stack: `[+, *]`\n- Token `14`: Postfix: `12, 3, 14`\n- Token `-`: Pop `*` then `+` (since `-` has lower precedence). Op Stack: `[-]`. Postfix: `12, 3, 14, *, +`\n- Token `(`: Op Stack: `[-, (]`\n- Token `5`: Postfix: `12, 3, 14, *, +, 5`\n- Token `*`: Op Stack: `[-, (, *]`\n- Token `16`: Postfix: `12, 3, 14, *, +, 5, 16`\n- Token `)`: Pop until `(`. Postfix: `12, 3, 14, *, +, 5, 16, *`. Op Stack: `[-]`\n- Token `+`: Pop `-`, push `+`. Postfix: `12, 3, 14, *, +, 5, 16, *, -`. Op Stack: `[+]`\n- Token `7`: Postfix: `12, 3, 14, *, +, 5, 16, *, -, 7`\n- End of expression: Pop remaining operator `+`. Postfix: `12, 3, 14, *, +, 5, 16, *, -, 7, +`\n\n#### 2. Postfix Evaluation Simulation Table:\n\n| Token | Action | Stack Status (Bottom to Top) |\n|---|---|---|\n| 12 | Push | `[12]` |\n| 3 | Push | `[12, 3]` |\n| 14 | Push | `[12, 3, 14]` |\n| * | Pop 14, 3; Evaluate $3 * 14 = 42$; Push 42 | `[12, 42]` |\n| + | Pop 42, 12; Evaluate $12 + 42 = 54$; Push 54 | `[54]` |\n| 5 | Push | `[54, 5]` |\n| 16 | Push | `[54, 5, 16]` |\n| * | Pop 16, 5; Evaluate $5 * 16 = 80$; Push 80 | `[54, 80]` |\n| - | Pop 80, 54; Evaluate $54 - 80 = -26$; Push -26 | `[-26]` |\n| 7 | Push | `[-26, 7]` |\n| + | Pop 7, -26; Evaluate $-26 + 7 = -19$; Push -19 | `[-19]` |\n\nFinal evaluated value is **-19**.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "23. b.",
+            "question_text": "Illustrate the steps to insert the following elements step by step in sequence into an empty AVL tree $15, 18, 20, 21, 28, 23, 30, 26$.",
+            "marks": 8,
+            "answer": "### Step-by-Step AVL Tree Insertion:\n\n1. **Insert 15**:\n   \n\n```text\n15\n\n```\n\n2. **Insert 18**:\n   \n\n```text\n15\n       \\\n       18\n\n```\n\n3. **Insert 20**:\n   \n\n```text\n15\n       \\\n       18\n         \\\n         20\n\n```\n\n   *Imbalance at 15 (BF = -2)*. Perform **Left Rotation** on 15:\n   \n\n```text\n18\n      /  \\\n    15    20\n\n```\n\n4. **Insert 21**:\n   \n\n```text\n18\n      /  \\\n    15    20\n            \\\n            21\n\n```\n\n5. **Insert 28**:\n   \n\n```text\n18\n      /  \\\n    15    20\n            \\\n            21\n              \\\n              28\n\n```\n\n   *Imbalance at 20 (BF = -2)*. Perform **Left Rotation** on 20:\n   \n\n```text\n18\n      /  \\\n    15    21\n         /  \\\n       20    28\n\n```\n\n6. **Insert 23**:\n   \n\n```text\n18\n      /  \\\n    15    21\n         /  \\\n       20    28\n            /\n          23\n\n```\n\n7. **Insert 30**:\n   \n\n```text\n18\n      /  \\\n    15    21\n         /  \\\n       20    28\n            /  \\\n          23    30\n\n```\n\n8. **Insert 26**:\n   \n\n```text\n18\n      /  \\\n    15    21\n         /  \\\n       20    28\n            /  \\\n          23    30\n            \\\n            26\n\n```\n\n   *Imbalance at 28 (BF = 2)*. The path of imbalance is Left-Right (23 then 26). Perform **LR Double Rotation** (Left on 23, then Right on 28):\n   - Left rotate 23: node 26 becomes parent of 23.\n   - Right rotate 28: node 26 becomes parent of 28.\n   \n\n```text\n18\n      /  \\\n    15    21\n         /  \\\n       20    26\n            /  \\\n          23    28\n                  \\\n                  30\n\n```\n\n   Final tree is fully balanced.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "24. a.",
+            "question_text": "Consider the binary search tree given below:\nShow the result of in-order, pre-order and post-order traversal. Show the deletion of the root node and insert 11, 22, 33, 44, 55, 66 and 77 in the tree.",
+            "marks": 8,
+            "answer": "### 1. Traversals of the Given BST:\n- **Pre-order (Root, L, R)**: `45, 39, 12, 10, 34, 32, 56, 54, 78, 67, 89, 81`\n- **In-order (L, Root, R)**: `10, 12, 32, 34, 39, 45, 54, 56, 67, 78, 81, 89`\n- **Post-order (L, R, Root)**: `10, 32, 34, 12, 39, 54, 67, 81, 89, 78, 56, 45`\n\n### 2. Deletion of the Root Node (45):\nTo delete 45, we replace it with its in-order predecessor (39) or in-order successor (54).\nUsing the in-order successor **54**:\n- 54 is removed from its current spot.\n- 54 becomes the new root.\n\n```text\n54\n        /    \\\n      39      56\n     /          \\\n   12            78\n  /  \\          /  \\\n10    34      67    89\n     /             /\n   32            81\n\n```\n\n### 3. Insertions (11, 22, 33, 44, 55, 66, 77):\nWe insert these step-by-step into the post-deletion tree:\n- **11**: goes left of 54, left of 39, left of 12, right of 10 $\\rightarrow$ `10`'s right child.\n- **22**: goes left of 54, left of 39, left of 12, right of 10, right of 11 $\\rightarrow$ `11`'s right child.\n- **33**: goes left of 54, left of 39, left of 12, right of 12 (to 34), left of 34 (to 32), right of 32 $\\rightarrow$ `32`'s right child.\n- **44**: goes left of 54, right of 39 $\\rightarrow$ `39`'s right child.\n- **55**: goes right of 54, left of 56 $\\rightarrow$ `56`'s left child.\n- **66**: goes right of 54, right of 56, left of 78 (to 67), left of 67 $\\rightarrow$ `67`'s left child.\n- **77**: goes right of 54, right of 56, left of 78 (to 67), right of 67 $\\rightarrow$ `67`'s right child.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "24. b.",
+            "question_text": "Illustrate how different notations performed on a AVL tree with suitable example and routines.",
+            "marks": 8,
+            "answer": "### AVL Tree Rotations and Notations\n\nAVL trees maintain balance by ensuring the heights of two child subtrees of any node differ by at most one ($BF \\in \\{-1, 0, 1\\}$). If an insertion or deletion causes $|BF| > 1$, we apply one of four rotation routines:\n\n#### 1. Single Left Rotation (LL Rotation / RR Imbalance)\nApplied when a node becomes unbalanced due to insertion in the right subtree of its right child.\n- **Example**: `10 -> 20 -> 30`.\n- **Routine**:\n\n```c\nNode* rotateLeft(Node* k2) {\n    Node* k1 = k2->right;\n    k2->right = k1->left;\n    k1->left = k2;\n    updateHeight(k2);\n    updateHeight(k1);\n    return k1;\n}\n\n```\n\n#### 2. Single Right Rotation (RR Rotation / LL Imbalance)\nApplied when insertion happens in the left subtree of the left child.\n- **Example**: `30 -> 20 -> 10`.\n- **Routine**:\n\n```c\nNode* rotateRight(Node* k2) {\n    Node* k1 = k2->left;\n    k2->left = k1->right;\n    k1->right = k2;\n    updateHeight(k2);\n    updateHeight(k1);\n    return k1;\n}\n\n```\n\n#### 3. Double Left-Right Rotation (LR Rotation)\nApplied when insertion is in the right subtree of the left child. It is performed by a left rotation on the left child, followed by a right rotation on the parent.\n- **Routine**:\n\n```c\nNode* rotateLeftRight(Node* k3) {\n    k3->left = rotateLeft(k3->left);\n    return rotateRight(k3);\n}\n\n```\n\n#### 4. Double Right-Left Rotation (RL Rotation)\nApplied when insertion is in the left subtree of the right child.\n- **Routine**:\n\n```c\nNode* rotateRightLeft(Node* k3) {\n    k3->right = rotateRight(k3->right);\n    return rotateLeft(k3);\n}\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "25. a.",
+            "question_text": "Illustrate the algorithm to compute the shortest path using Dijkstra's algorithm. Validate the algorithm with suitable example.",
+            "marks": 8,
+            "answer": "### Dijkstra's Single Source Shortest Path Algorithm\n\n#### Algorithm:\n1. Create a distance array `dist[]` initialized to $\\infty$, and set `dist[source] = 0`.\n2. Create a boolean array `visited[]` initialized to false.\n3. While there are unvisited vertices:\n   - Choose a vertex $u$ that has the minimum `dist[u]` among all unvisited vertices.\n   - Mark $u$ as visited.\n   - For each neighbor $v$ of $u$:\n     - If `dist[u] + weight(u, v) < dist[v]`:\n       - Update `dist[v] = dist[u] + weight(u, v)`.\n\n#### Validation Example:\nLet's trace Dijkstra on the graph with vertices $A, B, C, D$:\n- Edges: $(A, B, 1)$, $(A, C, 4)$, $(B, C, 2)$, $(B, D, 6)$, $(C, D, 1)$ with source $A$.\n\n*Initialization*:\n- `dist[A] = 0`, `dist[B] =` $\\infty$, `dist[C] =` $\\infty$, `dist[D] =` $\\infty$.\n\n*Step 1*: Pick minimum unvisited vertex $A$ (`dist[A] = 0`):\n- Update neighbors of $A$:\n  - `dist[B] = min` $(\\infty, 0 + 1) = 1$\n  - `dist[C] = min` $(\\infty, 0 + 4) = 4$\n- Visited: $\\{A\\}$\n\n*Step 2*: Pick minimum unvisited vertex $B$ (`dist[B] = 1`):\n- Update neighbors of $B$:\n  - `dist[C] = min` $(4, 1 + 2) = 3$\n  - `dist[D] = min` $(\\infty, 1 + 6) = 7$\n- Visited: $\\{A, B\\}$\n\n*Step 3*: Pick minimum unvisited vertex $C$ (`dist[C] = 3`):\n- Update neighbors of $C$:\n  - `dist[D] = min` $(7, 3 + 1) = 4$\n- Visited: $\\{A, B, C\\}$\n\n*Step 4*: Pick $D$ (`dist[D] = 4`):\n- No updates.\n- Visited: $\\{A, B, C, D\\}$\n\n**Final Shortest Distances from A**:\n- $A \\rightarrow A: 0$\n- $A \\rightarrow B: 1$\n- $A \\rightarrow C: 3$\n- $A \\rightarrow D: 4$ (via path $A \\rightarrow B \\rightarrow C \\rightarrow D$)",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Graph"
+        },
+        {
+            "question_number": "25. b.",
+            "question_text": "Illustrate Kruskal's algorithm to find the minimum spanning tree of a graph. Trace the algorithm for the following graph [shown in the image].",
+            "marks": 8,
+            "answer": "### Kruskal's Algorithm for Minimum Spanning Tree\n\n#### Kruskal's Algorithm Steps:\n1. Sort all graph edges in non-decreasing order of their weight.\n2. Create a forest where each vertex is a separate tree (using Disjoint-Set / Union-Find structure).\n3. For each edge $(u, v)$ in sorted order:\n   - Find the set representatives of $u$ and $v$.\n   - If they are in different sets, add $(u, v)$ to the MST and union the sets.\n   - Otherwise, discard the edge as it forms a cycle.\n4. Repeat until there are $V-1$ edges in the MST.\n\n#### Tracing on the Given Graph:\n\n**1. List of Edges sorted by weight**:\n- $(1, 4)$ with weight 1\n- $(2, 5)$ with weight 1\n- $(1, 2)$ with weight 2\n- $(2, 4)$ with weight 2\n- $(3, 4)$ with weight 3\n- $(1, 3)$ with weight 5\n- $(4, 5)$ with weight 5\n\n**2. Step-by-Step Selection**:\n- **Select (1, 4) [wt 1]**: No cycle. MST edges: $\\{(1, 4)\\}$. Components: $\\{1, 4\\}, \\{2\\}, \\{3\\}, \\{5\\}$.\n- **Select (2, 5) [wt 1]**: No cycle. MST edges: $\\{(1, 4), (2, 5)\\}$. Components: $\\{1, 4\\}, \\{2, 5\\}, \\{3\\}$.\n- **Select (1, 2) [wt 2]**: No cycle. MST edges: $\\{(1, 4), (2, 5), (1, 2)\\}$. Components: $\\{1, 2, 4, 5\\}, \\{3\\}$.\n- **Select (2, 4) [wt 2]**: 2 and 4 are already in the same component. Discard (forms cycle 1-4-2).\n- **Select (3, 4) [wt 3]**: No cycle. MST edges: $\\{(1, 4), (2, 5), (1, 2), (3, 4)\\}$. Components: $\\{1, 2, 3, 4, 5\\}$.\n\nAll 5 vertices are now connected using $V-1 = 4$ edges.\n\n**Resulting MST Cost**:\n- Cost = $1 + 1 + 2 + 3 = 7$.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Graph"
+        },
+        {
+            "question_number": "26",
+            "question_text": "Given input {4371, 1323, 6173, 4199, 4344, 9679, 1989} and a hash function $h(x) = x \\bmod 10$, show the resulting\n(i) Open hash table\n(ii) Closed hash table using linear probing\n(iii) Closed hash table using quadratic probing",
+            "marks": 15,
+            "answer": "### Solving Hashing for Input: $\\{4371, 1323, 6173, 4199, 4344, 9679, 1989\\}$\nHash function: $h(x) = x \\bmod 10$. Table size $N = 10$ (indices 0 to 9).\n\n#### (i) Open Hash Table (Separate Chaining)\nIn separate chaining, multiple items hashing to the same slot are stored in a linked list at that index.\n\n- $h(4371) = 4371 \\bmod 10 = 1$\n- $h(1323) = 1323 \\bmod 10 = 3$\n- $h(6173) = 6173 \\bmod 10 = 3$\n- $h(4199) = 4199 \\bmod 10 = 9$\n- $h(4344) = 4344 \\bmod 10 = 4$\n- $h(9679) = 9679 \\bmod 10 = 9$\n- $h(1989) = 1989 \\bmod 10 = 9$\n\n**Hash Table Representation**:\n- **Index 0**: NULL\n- **Index 1**: $4371 \\rightarrow$ NULL\n- **Index 2**: NULL\n- **Index 3**: $1323 \\rightarrow 6173 \\rightarrow$ NULL\n- **Index 4**: $4344 \\rightarrow$ NULL\n- **Index 5**: NULL\n- **Index 6**: NULL\n- **Index 7**: NULL\n- **Index 8**: NULL\n- **Index 9**: $4199 \\rightarrow 9679 \\rightarrow 1989 \\rightarrow$ NULL\n\n---\n\n#### (ii) Closed Hash Table using Linear Probing\nCollision resolution formula: $h_i(x) = (h(x) + i) \\bmod 10$ for $i = 0, 1, 2, \\dots$\n\n1. **Insert 4371**: $h(4371) = 1$. Slot 1 is free. Table: `[1] = 4371`.\n2. **Insert 1323**: $h(1323) = 3$. Slot 3 is free. Table: `[3] = 1323`.\n3. **Insert 6173**: $h(6173) = 3$. Slot 3 is occupied. Try $(3+1)\\bmod 10 = 4$. Slot 4 is free. Table: `[4] = 6173`.\n4. **Insert 4199**: $h(4199) = 9$. Slot 9 is free. Table: `[9] = 4199`.\n5. **Insert 4344**: $h(4344) = 4$. Slot 4 is occupied. Try $(4+1)\\bmod 10 = 5$. Slot 5 is free. Table: `[5] = 4344`.\n6. **Insert 9679**: $h(9679) = 9$. Slot 9 is occupied. Try $(9+1)\\bmod 10 = 0$. Slot 0 is free. Table: `[0] = 9679`.\n7. **Insert 1989**: $h(1989) = 9$. Slot 9 occupied $\\rightarrow$ slot 0 occupied $\\rightarrow$ slot 1 occupied $\\rightarrow$ slot 2 is free. Table: `[2] = 1989`.\n\n**Final Table (Linear Probing)**:\n- **0**: 9679\n- **1**: 4371\n- **2**: 1989\n- **3**: 1323\n- **4**: 6173\n- **5**: 4344\n- **6**: Empty\n- **7**: Empty\n- **8**: Empty\n- **9**: 4199\n\n---\n\n#### (iii) Closed Hash Table using Quadratic Probing\nCollision resolution formula: $h_i(x) = (h(x) + i^2) \\bmod 10$ for $i = 0, 1, 2, \\dots$\n\n1. **Insert 4371**: $h(4371) = 1$. Slot 1 free. Table: `[1] = 4371`.\n2. **Insert 1323**: $h(1323) = 3$. Slot 3 free. Table: `[3] = 1323`.\n3. **Insert 6173**: $h(6173) = 3$. Slot 3 occupied.\n   - $i=1$: $(3+1^2)\\bmod 10 = 4$. Slot 4 free. Table: `[4] = 6173`.\n4. **Insert 4199**: $h(4199) = 9$. Slot 9 free. Table: `[9] = 4199`.\n5. **Insert 4344**: $h(4344) = 4$. Slot 4 occupied.\n   - $i=1$: $(4+1^2)\\bmod 10 = 5$. Slot 5 free. Table: `[5] = 4344`.\n6. **Insert 9679**: $h(9679) = 9$. Slot 9 occupied.\n   - $i=1$: $(9+1^2)\\bmod 10 = 0$. Slot 0 free. Table: `[0] = 9679`.\n7. **Insert 1989**: $h(1989) = 9$. Slot 9 occupied.\n   - $i=1$: $(9+1^2)\\bmod 10 = 0$. Slot 0 occupied.\n   - $i=2$: $(9+2^2)\\bmod 10 = (9+4)\\bmod 10 = 3$. Slot 3 occupied.\n   - $i=3$: $(9+3^2)\\bmod 10 = (9+9)\\bmod 10 = 8$. Slot 8 free. Table: `[8] = 1989`.\n\n**Final Table (Quadratic Probing)**:\n- **0**: 9679\n- **1**: 4371\n- **2**: Empty\n- **3**: 1323\n- **4**: 6173\n- **5**: 4344\n- **6**: Empty\n- **7**: Empty\n- **8**: 1989\n- **9**: 4199",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "27",
+            "question_text": "Apply an appropriate algorithm to find the shortest path from 'A' to every other node of A. For the given graph [shown in the image].",
+            "marks": 15,
+            "answer": "### Shortest Path from Source A using Dijkstra's Algorithm\n\n#### 1. Graph Analysis\nVertices: $V = \\{A, B, C, D, E\\}$\nDirected Edges with weights:\n- $A \\rightarrow B$: 1\n- $A \\rightarrow D$: 1\n- $B \\rightarrow C$: 6\n- $B \\rightarrow E$: 5\n- $D \\rightarrow E$: 7\n- $C \\rightarrow E$: 6\n\n--\n\n#### 2. Step-by-Step Dijkstra Trace\n\n*Initialization*:\n- $\\text{dist}[A] = 0$\n- $\\text{dist}[B] = \\infty$\n- $\\text{dist}[C] = \\infty$\n- $\\text{dist}[D] = \\infty$\n- $\\text{dist}[E] = \\infty$\n- $\\text{Visited} = \\emptyset$\n\n**Step 1**: Choose vertex with minimum distance $\\rightarrow A$ (0)\n- Mark $A$ as visited.\n- Update adjacent nodes of $A$:\n  - $B$: $\\text{dist}[B] = \\min(\\infty, 0 + 1) = 1$\n  - $D$: $\\text{dist}[D] = \\min(\\infty, 0 + 1) = 1$\n- Current distances: $A:0, B:1, C:\\infty, D:1, E:\\infty$\n\n**Step 2**: Choose vertex with minimum distance among unvisited $\\rightarrow B$ (1)\n- Mark $B$ as visited.\n- Update adjacent nodes of $B$:\n  - $C$: $\\text{dist}[C] = \\min(\\infty, 1 + 6) = 7$\n  - $E$: $\\text{dist}[E] = \\min(\\infty, 1 + 5) = 6$\n- Current distances: $A:0, B:1, C:7, D:1, E:6$\n\n**Step 3**: Choose vertex with minimum distance among unvisited $\\rightarrow D$ (1)\n- Mark $D$ as visited.\n- Update adjacent nodes of $D$:\n  - $E$: $\\text{dist}[E] = \\min(6, 1 + 7) = 6$\n- Current distances: $A:0, B:1, C:7, D:1, E:6$\n\n**Step 4**: Choose vertex with minimum distance among unvisited $\\rightarrow E$ (6)\n- Mark $E$ as visited.\n- No outgoing edges from $E$ to update.\n- Current distances: $A:0, B:1, C:7, D:1, E:6$\n\n**Step 5**: Choose vertex with minimum distance among unvisited $\\rightarrow C$ (7)\n- Mark $C$ as visited.\n- Update adjacent nodes of $C$:\n  - $E$: $\\text{dist}[E] = \\min(6, 7 + 6) = 6$\n- Current distances: $A:0, B:1, C:7, D:1, E:6$\n\n--\n\n#### 3. Summary of Shortest Paths\n\n| Destination | Shortest Distance | Path |\n|:---:|:---:|:---|\n| **A** | 0 | $A$ |\n| **B** | 1 | $A \\rightarrow B$ |\n| **C** | 7 | $A \\rightarrow B \\rightarrow C$ |\n| **D** | 1 | $A \\rightarrow D$ |\n| **E** | 6 | $A \\rightarrow B \\rightarrow E$ |",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Graph"
+        }
+    ]
+}

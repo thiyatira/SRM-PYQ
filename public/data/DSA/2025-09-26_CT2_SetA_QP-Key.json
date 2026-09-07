@@ -1,0 +1,103 @@
+{
+    "formal_filename": "2025-09-26_CT2_SetA_QP-Key.json",
+    "paper_title": "SRM Institute of Science and Technology, College of Engineering and Technology, School of Computing. Academic Year: 2025-26 (ODD). Test: FJ - II, Course Code & Title: 21CSC201J Data structures and Algorithm, Year & Sem: II Year / III Sem, Set A, Batch 1.",
+    "source": "2025-09-26 CT2 Set A Batch 1",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "Consider an array arr = [10, 20, 30, 40, 50] with index starting at 0.\nWhat is the output of the following loop?\n\n```text\ni ← 0 \nwhile i < 5 do \n    i ← i + arr[i] % 3 \n    print(arr[i]) \nend while\n\n```\n\nA. 10 20 30 40 50\nB. 20 40 50\nC. 10 20 30 50\nD. 10 20 30",
+            "marks": 2,
+            "answer": "B. 20 40 50\n\n**Step-by-step Execution:**\n1. **i = 0**:\n   - `arr[i] = 10`\n   - `10 % 3 = 1` → `i = i + 1 = 1`\n   - `print(arr[1])` → **20**\n2. **i = 1**:\n   - `arr[i] = 20`\n   - `20 % 3 = 2` → `i = i + 2 = 3`\n   - `print(arr[3])` → **40**\n3. **i = 3**:\n   - `arr[i] = 40`\n   - `40 % 3 = 1` → `i = i + 1 = 4`\n   - `print(arr[4])` → **50**\n4. **i = 4**:\n   - `arr[i] = 50`\n   - `50 % 3 = 2` → `i = i + 2 = 6`\n   - Loop condition `i < 5` is now `6 < 5` (false), which breaks the loop.",
+            "answer_source": "provided",
+            "chapter": "Unit-1 - Introduction"
+        },
+        {
+            "question_number": "2",
+            "question_text": "In a Josephus problem with $n = 14$ people standing in a circle and every second person ($k=2$) is eliminated, what is the position of the last survivor (1-based indexing)?",
+            "marks": 2,
+            "answer": "Last survivor stands at position 13.\n\n**Explanation:**\nFor $n = 14$ and $k = 2$:\nWe find the largest power of 2 less than or equal to $n$. Let this be $2^m$. Here, $2^3 = 8 \\le 14 < 16$. \nSo, $l = n - 2^m = 14 - 8 = 6$.\nUsing the formula for $k=2$:\n$$J(n) = 2l + 1 = 2(6) + 1 = 13$$",
+            "answer_source": "provided",
+            "chapter": "Unit-2 - List Structure"
+        },
+        {
+            "question_number": "3",
+            "question_text": "What is the net effect on the number of elements in a stack after the following sequence of operations? If any elements remain on the stack; what are they? Initial Stack: Empty\n\n**Operations:**\n\n```\nPush(10);\nPush(20);\nPop();\nPush(30);\nPop();\nPush(40);\nPop();\nPop();\nPush(50);\n\n```\n\nA. 0 elements; no elements\nB. 1 element; 50 (top)\nC. 2 elements; 40 50 (top)\nD. 1 elements; 10 (top)",
+            "marks": 2,
+            "answer": "B. 1 element; 50 (top)\n\n**Trace of Operations:**\n- Push(10) -> Stack: [10]\n- Push(20) -> Stack: [10, 20]\n- Pop() -> Stack: [10] (removes 20)\n- Push(30) -> Stack: [10, 30]\n- Pop() -> Stack: [10] (removes 30)\n- Push(40) -> Stack: [10, 40]\n- Pop() -> Stack: [10] (removes 40)\n- Pop() -> Stack: [] (removes 10)\n- Push(50) -> Stack: [50]\n\nOnly 1 element remains: 50 (at the top).",
+            "answer_source": "provided",
+            "chapter": "Unit-3 - Stack and Queue"
+        },
+        {
+            "question_number": "4",
+            "question_text": "What is the postfix expression of the following infix expression:\n$$((A + B) * (C - D)) / ((E \\wedge F) + G)$$",
+            "marks": 2,
+            "answer": "Answer: `A B + C D - * E F ^ G + /`",
+            "answer_source": "provided",
+            "chapter": "Unit-3 - Stack and Queue"
+        },
+        {
+            "question_number": "5",
+            "question_text": "Write a pseudocode to traverse a singly linked list and determine the number of negative elements present in it.",
+            "marks": 5,
+            "answer": "```text\nFUNCTION CountNegativeElements(HEAD)\n    COUNT = 0\n    PTR ← HEAD\n    \n    WHILE PTR ≠ NULL DO\n        IF PTR → DATA < 0 THEN\n            COUNT = COUNT + 1\n        END IF\n        PTR = PTR → NEXT\n    END WHILE\n    \n    RETURN COUNT\nEND FUNCTION\n```",
+            "answer_source": "provided",
+            "chapter": "Unit-2 - List Structure"
+        },
+        {
+            "question_number": "6",
+            "question_text": "Consider a Queue Q. Give the algorithm for Enqueue and Dequeue and perform the following operations and show the state of the queue after each operation:\n- Enqueue(A)\n- Enqueue(B)\n- Dequeue()\n- Enqueue(C)\n- Dequeue()",
+            "marks": 5,
+            "answer": "**Enqueue Algorithm**\n\n```text\nStep 1: Allocate memory for the new node and name it as NEWNODE\nStep 2: SET NEWNODE → DATA = VAL\nStep 3: IF FRONT = NULL\n            SET FRONT = REAR = NEWNODE\n            SET FRONT → NEXT = REAR → NEXT = NULL\n        ELSE\n            SET REAR → NEXT = NEWNODE\n            SET REAR = NEWNODE\n            SET REAR → NEXT = NULL\n        [END OF IF]\nStep 4: END\n\n```\n\n**Dequeue Algorithm**\n\n```text\nStep 1: IF FRONT = NULL\n            Write Underflow\n            Go to Step 5\n        [END OF IF]\nStep 2: SET PTR = FRONT\nStep 3: SET FRONT = FRONT → NEXT\nStep 4: FREE PTR\nStep 5: END\n\n```\n\n**Operations on Queue**\n- Initial State → Queue: `[ ]`\n- Enqueue(A) → Queue: `[A]`\n- Enqueue(B) → Queue: `[A, B]`\n- Dequeue() → Queue: `[B]`\n- Enqueue(C) → Queue: `[B, C]`\n- Dequeue() → Queue: `[C]`",
+            "answer_source": "provided",
+            "chapter": "Unit-3 - Stack and Queue"
+        },
+        {
+            "question_number": "7",
+            "question_text": "A modern music streaming app maintains a playlist where users can play, skip, or go back to previously played songs. The playlist is implemented using a suitable data structure, where each node stores a song's title, artist, and duration.\n\n- User starts with 5 songs: **Song A → Song B → Song C → Song D → Song E**.\n- The user performs the following operations:\n  a) Adds **Song F** after **Song C**.\n  b) Deletes **Song B** from the playlist.\n\n**A.** Identify the best Data Structure and Draw its Structure (2 Marks)\n**B.** Write the pseudocode to perform the following operations:\n  - Inserting a new song after a given song (3 Marks)\n  - Delete a Specific Song (3 Marks)",
+            "marks": 8,
+            "answer": "### A. Best Data Structure\nThe best data structure for this scenario is a **Doubly Linked List**. This structure allows efficient navigation both forwards (skipping songs) and backwards (going back to previously played songs), as well as efficient insertion and deletion of songs at arbitrary positions within the playlist.\n\n**Node Structure:**\n\n```text\nSTRUCTURE SongNode\n    title: STRING\n    artist: STRING\n    duration: INTEGER\n    prev: POINTER TO SongNode\n    next: POINTER TO SongNode\nEND STRUCTURE\n\n```\n\n---\n\n### B. Pseudocode for Operations\n\n#### 1. Inserting a new song after a given song:\n\n```text\nFunction InsertAfter(head, targetTitle, newSong)\n    current ← head\n    \n    while current ≠ null do\n        if current.title = targetTitle then\n            newNode ← CreateNode(newSong.title, newSong.artist, newSong.duration)\n            newNode.next ← current.next\n            newNode.prev ← current\n            \n            if current.next ≠ null then\n                current.next.prev ← newNode\n            end if\n            \n            current.next ← newNode\n            break\n        end if\n        current ← current.next\n    end while\nEnd Function\n\n```\n\n#### 2. Delete a Specific Song:\n\n```text\nFunction DeleteSong(head, targetTitle)\n    current ← head\n    \n    while current ≠ null do\n        if current.title = targetTitle then\n            if current.prev ≠ null then\n                current.prev.next ← current.next\n            else\n                head ← current.next // deleting head\n            end if\n            \n            if current.next ≠ null then\n                current.next.prev ← current.prev\n            end if\n            \n            break\n        end if\n        current ← current.next\n    end while\n    \n    return head\nEnd Function\n```",
+            "answer_source": "provided",
+            "chapter": "Unit-2 - List Structure"
+        },
+        {
+            "question_number": "8",
+            "question_text": "Consider the following two polynomials:\n- $P_1(x) = 6x^3 + 9x^2 + 7x + 1$\n- $P_2(x) = 8x^3 + 5x^2 + 4x + 5$\n\n(a) Illustrate the linked list representation for each of the two polynomials. (4 Marks)\n(b) Write pseudocode that adds two such polynomials and returns the resulting polynomial. (4 Marks)",
+            "marks": 8,
+            "answer": "### (a) Illustration of Polynomials\n- **$P_1(x) = 6x^3 + 9x^2 + 7x + 1$**:\n  `[6, 3] → [9, 2] → [7, 1] → [1, 0] → null`\n- **$P_2(x) = 8x^3 + 5x^2 + 4x + 5$**:\n  `[8, 3] → [5, 2] → [4, 1] → [5, 0] → null`\n\n---\n\n### (b) Pseudocode to Add Two Polynomials\n\n```text\nFunction AddPolynomials(head1, head2)\n    resultHead ← null\n    resultTail ← null\n    \n    p1 ← head1\n    p2 ← head2\n    \n    while p1 ≠ null and p2 ≠ null do\n        if p1.exponent = p2.exponent then\n            sumCoeff ← p1.coefficient + p2.coefficient\n            newNode ← CreateNode(sumCoeff, p1.exponent)\n            p1 ← p1.next\n            p2 ← p2.next\n        else if p1.exponent > p2.exponent then\n            newNode ← CreateNode(p1.coefficient, p1.exponent)\n            p1 ← p1.next\n        else\n            newNode ← CreateNode(p2.coefficient, p2.exponent)\n            p2 ← p2.next\n        end if\n        \n        // Append newNode to result list\n        if resultHead = null then\n            resultHead ← newNode\n            resultTail ← newNode\n        else\n            resultTail.next ← newNode\n            resultTail ← newNode\n        end if\n    end while\n    \n    // Append remaining terms of p1\n    while p1 ≠ null do\n        newNode ← CreateNode(p1.coefficient, p1.exponent)\n        resultTail.next ← newNode\n        resultTail ← newNode\n        p1 ← p1.next\n    end while\n    \n    // Append remaining terms of p2\n    while p2 ≠ null do\n        newNode ← CreateNode(p2.coefficient, p2.exponent)\n        resultTail.next ← newNode\n        resultTail ← newNode\n        p2 ← p2.next\n    end while\n    \n    return resultHead\nEnd Function\n\n```\n\n**Result:**\n$(6+8)x^3 + (9+5)x^2 + (7+4)x + (1+5)$\n→ $14x^3 + 14x^2 + 11x + 6$\n→ `[14, 3] → [14, 2] → [11, 1] → [6, 0] → null`",
+            "answer_source": "provided",
+            "chapter": "Unit-2 - List Structure"
+        },
+        {
+            "question_number": "9",
+            "question_text": "For a Doubly Linked List, design an algorithm that reverses the list in-place so that the first node becomes the last, the second node becomes the second last, and so on. Return the new head of the reversed list. Your pseudocode should clearly show how you handle the prev and next pointers for each node and how you update the head of the list after reversal.\n\nNote: An in-place algorithm modifies the data structure directly without using extra space proportional to the input size. For a doubly linked list, this means:\n- No new list is created.\n- No auxiliary arrays or stacks.",
+            "marks": 8,
+            "answer": "```c\nstruct Node *reverse(struct Node *curr) {\n \n    // Base case: If the list is empty or we\n    // reach the end of the list \n    if (curr == NULL) return NULL;\n    \n    // Swap the next and prev pointers\n    struct Node *temp = curr->prev;\n    curr->prev = curr->next;\n    curr->next = temp;\n    \n    // If the previous node (after swap) is NULL\n    // this is the new head\n    if (curr->prev == NULL) return curr;\n    \n    return reverse(curr->prev);\n}\n```",
+            "answer_source": "provided",
+            "chapter": "Unit-2 - List Structure"
+        },
+        {
+            "question_number": "10",
+            "question_text": "A theme park ride has a single queue for visitors, but it operates with two rides running simultaneously. Each ride can accommodate one visitor at a time, and visitors are served on a first-come, first-served basis. During a busy hour, the following visitors arrive: V1, V2, V3, V4, V5, V6, V7. The Rules of the ride are:\ni. The first two visitors are assigned to the rides immediately.\nii. When a ride becomes free, the next visitor in the queue takes the ride.\niii. Occasionally, a visitor may leave the queue if they get tired of waiting.\n\n1. Draw the queue and ride assignment at each step, showing which visitors are on the rides and who are waiting in line. Assume V3 leaves the queue before taking the ride. (2 Marks)\n2. Write pseudocode to:\n   - Add a new visitor to the queue. (3 Marks)\n   - Remove a visitor who leaves the queue. (3 Marks)\n\n**Initial Visitors:** V1, V2, V3, V4, V5, V6, V7",
+            "marks": 8,
+            "answer": "### 1. Step-by-Step Ride & Queue Status\n\n| Step | Ride 1 | Ride 2 | Queue | Remarks |\n|---|---|---|---|---|\n| 1 | V1 | V2 | V3, V4, V5, V6, V7 | V1 & V2 assigned immediately |\n| 2 | V1 | V2 | V4, V5, V6, V7 | V3 leaves the queue |\n| 3 | V4 | V2 | V5, V6, V7 | V1 finishes, V4 takes Ride 1 |\n| 4 | V4 | V5 | V6, V7 | V2 finishes, V5 takes Ride 2 |\n| 5 | V6 | V5 | V7 | V4 finishes, V6 takes Ride 1 |\n| 6 | V6 | V7 | - | V5 finishes, V7 takes Ride 2 |\n\n---\n\n### 2. Pseudocode\n\n#### Add a Visitor\n\n```text\nStep 1: Allocate memory for the new node and name it as NEW_VISITOR\nStep 2: SET NEW_VISITOR → ID = VISITOR_ID\nStep 3: IF FRONT = NULL\n            SET FRONT = REAR = NEW_VISITOR\n            SET FRONT → NEXT = REAR → NEXT = NULL\n        ELSE \n            SET REAR → NEXT = NEW_VISITOR\n            SET REAR = NEW_VISITOR\n            SET REAR → NEXT = NULL\n        [END OF IF]\nStep 4: END\n\n```\n\n#### Remove a Visitor\n\n```text\nStep 1: IF FRONT = NULL\n            Write Underflow\n            Go to Step 5\n        [END OF IF]\nStep 2: SET VISITOR = FRONT\nStep 3: SET FRONT = FRONT → NEXT\nStep 4: FREE VISITOR\nStep 5: END\n```",
+            "answer_source": "provided",
+            "chapter": "Unit-3 - Stack and Queue"
+        },
+        {
+            "question_number": "11",
+            "question_text": "Evaluate the following postfix expression using a stack.\n**Postfix Expression:** `7 2 3 + - 4 5 * 6 2 / + +`\n\na. Show the contents of the stack after processing each token, clearly indicating the top of the stack. (4 Marks)\nb. Write pseudocode that evaluates any valid postfix arithmetic expression. (4 Marks)",
+            "marks": 8,
+            "answer": "### a. Stack Contents Tracing\n\n| Token | Stack (Top of Stack is Right) | Action |\n|---|---|---|\n| 7 | 7 | Push |\n| 2 | 7 2 | Push |\n| 3 | 7 2 3 | Push |\n| + | 7 5 | Pop 3 & 2 → Push ($2+3=5$) |\n| - | 2 | Pop 5 & 7 → Push ($7-5=2$) |\n| 4 | 2 4 | Push |\n| 5 | 2 4 5 | Push |\n| * | 2 20 | Pop 5 & 4 → Push ($4 \\times 5=20$) |\n| 6 | 2 20 6 | Push |\n| 2 | 2 20 6 2 | Push |\n| / | 2 20 3 | Pop 2 & 6 → Push ($6 \\div 2=3$) |\n| + | 2 23 | Pop 3 & 20 → Push ($20+3=23$) |\n| + | 25 | Pop 23 & 2 → Push ($2+23=25$) |\n\n---\n\n### b. Pseudocode to Evaluate Postfix Expression\n\n```text\nFunction EvaluatePostfix(expression)\n    stack ← EmptyStack()\n    \n    for each token in expression do\n        if token is a number then\n            stack.push(token)\n        else if token is an operator then\n            operand2 ← stack.pop()\n            operand1 ← stack.pop()\n            result ← ApplyOperator(operand1, operand2, token)\n            stack.push(result)\n        end if\n    end for\n    \n    return stack.pop()\nEnd Function\n\nFunction ApplyOperator(op1, op2, operator)\n    switch operator\n        case '+': return op1 + op2\n        case '-': return op1 - op2\n        case '*': return op1 * op2\n        case '/': return op1 / op2\n        case '^': return op1 ^ op2\n    end switch\nEnd Function\n```",
+            "answer_source": "provided",
+            "chapter": "Unit-3 - Stack and Queue"
+        },
+        {
+            "question_number": "12",
+            "question_text": "Write a pseudocode to implement Queue data structure using only two Stack (Hint: One Stack can be used as InputStack and one Stack as OutputStack) data structures. The implementation should support enqueue and dequeue operations.",
+            "marks": 8,
+            "answer": "### Implementation Details:\n- **Two Stacks:** Maintain two stacks, conventionally named `inputStack` and `outputStack`.\n- **Enqueue Operation:** To enqueue an element, simply push it onto the `inputStack`. This operation takes $O(1)$ time complexity.\n- **Dequeue Operation:**\n  - **Check outputStack:** If `outputStack` is not empty, pop the top element from `outputStack`. This is the element at the front of the queue. This takes $O(1)$ time.\n  - **Transfer elements:** If `outputStack` is empty, transfer all elements from `inputStack` to `outputStack` by repeatedly popping from `inputStack` and pushing onto `outputStack`. This reverses the order of elements, effectively bringing the oldest element to the top of `outputStack`. After the transfer, pop the top element from `outputStack`. This transfer operation takes $O(N)$ time in the worst case, where N is the number of elements in `inputStack`.\n\n### Pseudocode:\n\n```text\nStructure QueueUsingStacks\n    inputStack ← EmptyStack()\n    outputStack ← EmptyStack()\nEnd Structure\n\nProcedure Enqueue(queue, element)\n    queue.inputStack.push(element)\nEnd Procedure\n\nFunction Dequeue(queue)\n    if queue.outputStack.isEmpty() then\n        if queue.inputStack.isEmpty() then\n            return \"Queue Underflow / Queue is Empty\"\n        end if\n        // Transfer elements from inputStack to outputStack\n        while not queue.inputStack.isEmpty() do\n            val ← queue.inputStack.pop()\n            queue.outputStack.push(val)\n        end while\n    end if\n    return queue.outputStack.pop()\nEnd Function\n```",
+            "answer_source": "provided",
+            "chapter": "Unit-3 - Stack and Queue"
+        }
+    ]
+}

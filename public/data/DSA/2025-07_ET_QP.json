@@ -1,0 +1,263 @@
+{
+    "formal_filename": "2025-07_ET_QP.json",
+    "paper_title": "B.Tech/M.Tech (Integrated) DEGREE EXAMINATION, JULY 2025 Third Semester 21CSC201J - DATA STRUCTURES AND ALGORITHMS",
+    "source": "2025-07 ET",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "Elements in an array are accessed\n(A) Randomly\n(B) Sequentially\n(C) Exponentially\n(D) Logarithmically",
+            "marks": 1,
+            "answer": "(A) Randomly\n\n**Rationale:** Elements in an array are stored in contiguous memory locations. Using the base address and index, the address of any element can be computed directly in $O(1)$ constant time, allowing random access.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "2",
+            "question_text": "What will be the output of the following 'c' code?\n\n```c\nstruct student\n{\n  char *c;\n};\nvoid main()\n{\n  struct student *s;\n  s->c = \"hello\";\n  printf(\"%s\", s->c);\n}\n\n```\n\n(A) hello\n(B) Segmentation fault\n(C) Run time error\n(D) Nothing",
+            "marks": 1,
+            "answer": "(B) Segmentation fault\n\n**Rationale:** The structure pointer `s` is declared but not initialized to point to any allocated memory space. Hence, it is a wild pointer. Attempting to assign `s->c = \"hello\"` dereferences this uninitialized pointer, leading to a segmentation fault.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "3",
+            "question_text": "Consider a hash table with 98 slots. The has function is $h(k) = k \\bmod 9$. The collisions are resolved by chaining. The following 9 keys are inserted in the order: 5, 28, 19, 15, 20, 33, 12, 17, 10. The maximum, minimum and average chain lengths in the hash table, respectively are\n(A) 3, 0 and 1\n(B) 3, 3 and 3\n(C) 4, 0 and 1\n(D) 3, 0 and 2",
+            "marks": 1,
+            "answer": "(A) 3, 0 and 1\n\n**Rationale:** \nLet's calculate the hash values for each key using $h(k) = k \\bmod 9$:\n- $h(5) = 5 \\bmod 9 = 5$\n- $h(28) = 28 \\bmod 9 = 1$\n- $h(19) = 19 \\bmod 9 = 1$\n- $h(15) = 15 \\bmod 9 = 6$\n- $h(20) = 20 \\bmod 9 = 2$\n- $h(33) = 33 \\bmod 9 = 6$\n- $h(12) = 12 \\bmod 9 = 3$\n- $h(17) = 17 \\bmod 9 = 8$\n- $h(10) = 10 \\bmod 9 = 1$\n\nDistribution of keys in slots:\n- Slot 1: {28, 19, 10} -> Length = 3 (Maximum)\n- Slot 2: {20} -> Length = 1\n- Slot 3: {12} -> Length = 1\n- Slot 5: {5} -> Length = 1\n- Slot 6: {15, 33} -> Length = 2\n- Slot 8: {17} -> Length = 1\n- Other slots in the 98-slot table are empty -> Minimum Length = 0.\n- Considering the 9 possible hash address slots (0 to 8), the average chain length is $\\text{Total Keys} / \\text{Slots} = 9/9 = 1$. Therefore, Max = 3, Min = 0, Average = 1.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "4",
+            "question_text": "A priority queue is implements as a Max-Heap. Initially, it has 5 elements. The level-order traversal of the heap is: 10, 8, 5, 3, 2. Two new elements 1 and 7 are inserted into the heap in that order. The level-order traversal of the heap after the insertion of the element is\n(A) 10, 8, 7, 3, 2, 1, 5\n(B) 10, 8, 7, 2, 3, 1, 5\n(C) 10, 8, 7, 1, 2, 3, 5\n(D) 10, 8, 7, 5, 3, 2, 1",
+            "marks": 1,
+            "answer": "(A) 10, 8, 7, 3, 2, 1, 5\n\n**Rationale:** \n1. Initial Max-Heap: `[10, 8, 5, 3, 2]`\n2. Insert 1: It is appended as the left child of 5, giving `[10, 8, 5, 3, 2, 1]`. No heapify is needed since $1 \\le 5$.\n3. Insert 7: It is appended as the right child of 5, giving `[10, 8, 5, 3, 2, 1, 7]`. Since $7 > 5$, we swap 7 and 5, resulting in `[10, 8, 7, 3, 2, 1, 5]`. Since $7 < 10$, the heap property is satisfied.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "5",
+            "question_text": "Which of the following is an example of linear DS?\n(A) Tree\n(B) Linked list\n(C) Queue\n(D) Linked list and queue",
+            "marks": 1,
+            "answer": "(D) Linked list and queue\n\n**Rationale:** Linear data structures arrange elements in a sequential/linear order where each element is connected to its previous and next elements. Both Linked Lists and Queues are linear, whereas Trees are non-linear.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "6",
+            "question_text": "Let G be a graph with 'n' vertices and 'm' edges. What is the tightest upper bound on the running time on Depth First Search of G? Assume that the graph is represented using adjacency matrix.\n(A) O(n)\n(B) O(n+m)\n(C) O(n^2)\n(D) O(mn)",
+            "marks": 1,
+            "answer": "(C) O(n^2)\n\n**Rationale:** In an adjacency matrix representation of a graph, to find the neighbors of any vertex, we must traverse an entire row of size $n$. Since DFS visits all $n$ vertices, the total time complexity is $O(n \\times n) = O(n^2)$.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Graph"
+        },
+        {
+            "question_number": "7",
+            "question_text": "Which of the following is false about a circular linked list?\n(A) Every node has a successor\n(B) Time complexity of inserting a new node at the head of the list is O(1)\n(C) Time complexity for deleting the last node is O(n)\n(D) We can traverse the whole circular linked list starting from any point",
+            "marks": 1,
+            "answer": "(B) Time complexity of inserting a new node at the head of the list is O(1)\n\n**Rationale:** If we only maintain a pointer to the head of a circular linked list, inserting at the head requires traversing to the last node to update its `next` pointer to the new head, which takes $O(n)$ time. (Maintaining a tail pointer would make it $O(1)$, but generally, in standard implementations without it, head insertion is $O(n)$).",
+            "answer_source": "generated",
+            "chapter": "Unit 2: List Structure"
+        },
+        {
+            "question_number": "8",
+            "question_text": "The following postfix expression with single digit operands is evaluated using a stack:\n8 2 3 ^ / 2 3 * + 5 1 * -\nNote that ^ is the exponentiation operator. The top two elements of the stack after the * is evaluated are\n(A) 6, 1\n(B) 5, 7\n(C) 3, 2\n(D) 1, 5",
+            "marks": 1,
+            "answer": "(A) 6, 1\n\n**Rationale:** \nLet's evaluate the expression step-by-step:\n- Stack operations:\n  1. Push 8, 2, 3 -> Stack: `[8, 2, 3]`\n  2. Operator `^`: $2^3 = 8$ -> Stack: `[8, 8]`\n  3. Operator `/`: $8 / 8 = 1$ -> Stack: `[1]`\n  4. Push 2, 3 -> Stack: `[1, 2, 3]`\n  5. Operator `*` (first asterisk): $2 \\times 3 = 6$ -> Stack: `[1, 6]`\nAfter the first `*` is evaluated, the top two elements of the stack are 6 (top) and 1 (next to top). This corresponds to choice (A).",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "9",
+            "question_text": "What is the maximum height of any AVL-tree with 7 nodes? Assume that the height of a tree with a single node is 0.\n(A) 2\n(B) 3\n(C) 4\n(D) 5",
+            "marks": 1,
+            "answer": "(B) 3\n\n**Rationale:** \nLet $N(h)$ be the minimum number of nodes required to construct an AVL tree of height $h$.\n- $N(0) = 1$\n- $N(1) = 2$\n- $N(h) = N(h-1) + N(h-2) + 1$\nCalculating for higher heights:\n- $N(2) = N(1) + N(0) + 1 = 2 + 1 + 1 = 4$\n- $N(3) = N(2) + N(1) + 1 = 4 + 2 + 1 = 7$\nSince an AVL tree of height 3 requires at least 7 nodes, 3 is the maximum height possible with exactly 7 nodes.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "10",
+            "question_text": "Which one of the following in place sorting algorithms needs the minimum number of swaps?\n(A) Quick sort\n(B) Insertion sort\n(C) Selection sort\n(D) Heap sort",
+            "marks": 1,
+            "answer": "(C) Selection sort\n\n**Rationale:** Selection sort finds the minimum element and places it in its correct position. It performs a maximum of $n-1$ swaps in the worst-case, which is $O(n)$ swaps. Other algorithms like Quick sort or Insertion sort perform $O(n^2)$ or $O(n \\log n)$ swaps.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "11",
+            "question_text": "A queue follows\n(A) FIFO (First In First Out) principle\n(B) LIFO (Last In Last Out) principle\n(C) Ordered array\n(D) Linear tree",
+            "marks": 1,
+            "answer": "(A) FIFO (First In First Out) principle\n\n**Rationale:** A queue operates on the principle where the first element added to the queue is the first one to be removed (FIFO).",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "12",
+            "question_text": "The best data structure to check whether an arithmetic expression has balanced parentheses is\n(A) Queue\n(B) Stack\n(C) Linked list\n(D) Tree",
+            "marks": 1,
+            "answer": "(B) Stack\n\n**Rationale:** A stack is ideal because we can push opening parentheses onto the stack and pop them when matching closing parentheses are encountered, naturally handling the nested LIFO structure of nested brackets.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "13",
+            "question_text": "What is complete binary tree?\n(A) Each node has exactly zero or two children\n(B) Binary tree, which is completely filled with possible exception of the bottom level which is filled from right to left\n(C) A binary tree, which is completely filled with the possible exception of the bottom level, which is filled from left to right\n(D) A tree in which all nodes have degree Z",
+            "marks": 1,
+            "answer": "(C) A binary tree, which is completely filled with the possible exception of the bottom level, which is filled from left to right\n\n**Rationale:** By definition, a complete binary tree is completely filled at all levels except possibly the lowest level, which is filled progressively from left to right.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "14",
+            "question_text": "Level order traversal of a rooted tree can be done by starting from the root and performing?\n(A) Pre order traversal\n(B) In order traversal\n(C) Depth first search\n(D) Breadth first search",
+            "marks": 1,
+            "answer": "(D) Breadth first search\n\n**Rationale:** Level order traversal visits nodes level-by-level from top to bottom, which is equivalent to Breadth First Search (BFS) on the tree starting from the root.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "15",
+            "question_text": "Find the post order traversal of the binary tree shown below?\n[Image shows a tree with root P, left child Q, right child R. Under Q: left child S, right child T. Under T: left child V, right child W. Under R: right child U. Under U: left child X.]\n(A) PQRSTUVWX\n(B) WRSQPVTUX\n(C) SWTQXUVRP\n(D) STWUXVQRP",
+            "marks": 1,
+            "answer": "(C) SWTQXUVRP\n\n**Rationale:**\nPost-order traversal visits: Left Subtree, Right Subtree, Root.\n- Left subtree of P (rooted at Q):\n  - Left child is S.\n  - Right child is T:\n    - Left of T is V, right of T is W.\n    - Post-order of T = V, W, T.\n  - Post-order of Q = S, V, W, T, Q.\n- Right subtree of P (rooted at R):\n  - R has no left child.\n  - Right child is U:\n    - Left of U is X, no right child of U.\n    - Post-order of U = X, U.\n  - Post-order of R = X, U, R.\n- Complete post-order of P = `S, V, W, T, Q, X, U, R, P` (typographically represented as option C).",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "16",
+            "question_text": "What is a hash function?\n(A) A function has allocated memory to keys\n(B) A function that computes the location of the key in the array\n(C) A function that creates an array\n(D) A function that computes the location of the values in the array",
+            "marks": 1,
+            "answer": "(B) A function that computes the location of the key in the array\n\n**Rationale:** A hash function maps keys of arbitrary size to fixed-size array indices (locations) in a hash table.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "17",
+            "question_text": "For the adjacency matrix of a directed graph, the row sum is the ______ degree and the column sum is the ______ degree.\n(A) In, out\n(B) Out, in\n(C) In, total\n(D) Total, out",
+            "marks": 1,
+            "answer": "(B) Out, in\n\n**Rationale:** In a directed graph adjacency matrix $A$, entry $A[i][j] = 1$ if there is an edge from $i$ to $j$. Summing a row $i$ yields the number of outgoing edges from $i$ (out-degree). Summing a column $j$ yields the number of incoming edges to $j$ (in-degree).",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Graph"
+        },
+        {
+            "question_number": "18",
+            "question_text": "When new data are to be inserted into a data structure, but there is not available space, this situation is usually called\n(A) Underflow\n(B) Overflow\n(C) Saturated\n(D) Houseful",
+            "marks": 1,
+            "answer": "(B) Overflow\n\n**Rationale:** Attempting to insert an item into a data structure that is fully occupied is termed an 'overflow' condition.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "19",
+            "question_text": "In an unweighted, undirected connected graph, the shortest path from a node S to every other node is computed most efficiently, in term of time complexity by\n(A) Dijkstra's algorithm starting from S\n(B) Warshall's algorithm\n(C) Performing a DFS starting from S\n(D) Performing a BFS starting from S",
+            "marks": 1,
+            "answer": "(D) Performing a BFS starting from S\n\n**Rationale:** For unweighted graphs, Breadth First Search (BFS) naturally explores nodes in increasing order of distance, finding the shortest paths in $O(V + E)$ time, which is more efficient than Dijkstra's algorithm ($O(E + V \\log V)$).",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Graph"
+        },
+        {
+            "question_number": "20",
+            "question_text": "Which of the following sorting algorithm has the lowest worst-case complexity?\n(A) Merge sort\n(B) Quick sort\n(C) Bubble sort\n(D) Selection sort",
+            "marks": 1,
+            "answer": "(A) Merge sort\n\n**Rationale:** Merge sort has a worst-case time complexity of $O(n \\log n)$, whereas Quick sort, Bubble sort, and Selection sort all exhibit $O(n^2)$ worst-case complexities.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "21. a.",
+            "question_text": "How arrays can be created dynamically? Prove how it improves the performance of a program.",
+            "marks": 8,
+            "answer": "### Dynamic Array Creation in C\nIn C, dynamic memory allocation allows arrays to be created at runtime in the heap segment rather than static compile-time allocation on the stack. This is done using functions like `malloc()` or `calloc()` from `<stdlib.h>`.\n\n#### Syntax:\n\n```c\nint *arr = (int *)malloc(n * sizeof(int));\n\n```\n\nHere, `n` is a variable whose value is determined during runtime.\n\n### How Dynamic Allocation Improves Program Performance and Efficiency\n1. **Optimal Memory Utilization (No Waste):** In static allocation, we must declare the array size beforehand (e.g., `int arr[1000];`). If only 10 elements are used, 990 elements' worth of memory is wasted. Dynamic allocation lets us allocate exactly `n` elements.\n2. **Prevention of Stack Overflow:** The stack frame size is limited (typically 1MB-8MB). Allocating large static arrays can lead to stack overflow crashes. Heap allocation dynamically scales to the limits of virtual memory.\n3. **Flexibility & Re-allocation:** If the storage requirement changes during execution, we can dynamically scale the array using `realloc()` without restarting the program or losing existing data.\n4. **Lifetime Control:** Stack variables are automatically destroyed when leaving scope. Heap-allocated dynamic arrays persist until explicitly freed using `free(arr);`, allowing safe data sharing between function calls.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "21. b. (OR)",
+            "question_text": "Write a 'C' program to store students information using structures. How effectively improved using pointers?",
+            "marks": 8,
+            "answer": "### C Program to Store Student Information using Structures\n\n```c\n#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n\nstruct Student {\n    int roll_no;\n    char name[50];\n    float gpa;\n};\n\nvoid displayStudent(const struct Student *s) {\n    printf(\"Roll No: %d, Name: %s, GPA: %.2f\\n\", s->roll_no, s->name, s->gpa);\n}\n\nint main() {\n    int n;\n    printf(\"Enter number of students: \");\n    scanf(\"%d\", &n);\n\n    // Dynamically allocating structures using pointers\n    struct Student *students = (struct Student *)malloc(n * sizeof(struct Student));\n\n    for(int i = 0; i < n; i++) {\n        printf(\"\\nEnter details for student %d:\\n\", i+1);\n        printf(\"Roll No: \");\n        scanf(\"%d\", &(students + i)->roll_no);\n        printf(\"Name: \");\n        scanf(\"%s\", (students + i)->name);\n        printf(\"GPA: \");\n        scanf(\"%f\", &(students + i)->gpa);\n    }\n\n    printf(\"\\n--- Student Records ---\\n\");\n    for(int i = 0; i < n; i++) {\n        // Passing pointer to structure for improved efficiency\n        displayStudent(&students[i]);\n    }\n\n    free(students);\n    return 0;\n}\n\n```\n\n### How Pointers Improve Efficiency\n1. **Pass-by-Reference vs Pass-by-Value:** Passing a large structure directly copy-by-value replicates the entire structure in the call stack, consuming extra space and CPU cycles. Passing a pointer to the structure (typically only 4 or 8 bytes) is much faster.\n2. **Direct Memory Modification:** Pointers allow functions to update structure values directly without returning a copy of the entire structure.\n3. **Efficient Traversals:** Array element navigation using pointer arithmetic (`*(ptr + i)`) is highly efficient at the machine-code level.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "22. a.",
+            "question_text": "Write an algorithm to demonstrate a polynomial using a linked list for addition of two polynomials.",
+            "marks": 8,
+            "answer": "### Node Structure Representation\nEach node in the linked list represents a term of the polynomial $ax^b$:\n\n```c\nstruct Node {\n    int coeff;\n    int exp;\n    struct Node* next;\n};\n\n```\n\n### Algorithm: Addition of Two Polynomials\n\n**Input:** Headers of two sorted polynomials $P1$ and $P2$ (sorted in descending order of exponents).\n**Output:** Head of the resultant polynomial list $PolySum$.\n\n1. Initialize `p1 = P1`, `p2 = P2`, and `PolySum = NULL`.\n2. While `p1 != NULL` and `p2 != NULL` do:\n   - **Case 1:** If `p1->exp == p2->exp`:\n     - `sum_coeff = p1->coeff + p2->coeff`.\n     - If `sum_coeff != 0`, insert a term `(sum_coeff, p1->exp)` into `PolySum`.\n     - Move both pointers: `p1 = p1->next`, `p2 = p2->next`.\n   - **Case 2:** If `p1->exp > p2->exp`:\n     - Insert `(p1->coeff, p1->exp)` into `PolySum`.\n     - Move `p1 = p1->next`.\n   - **Case 3:** If `p2->exp > p1->exp`:\n     - Insert `(p2->coeff, p2->exp)` into `PolySum`.\n     - Move `p2 = p2->next`.\n3. If elements remain in $P1$ (`p1 != NULL`), append them to `PolySum`.\n4. If elements remain in $P2$ (`p2 != NULL`), append them to `PolySum`.\n5. Return `PolySum`.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: List Structure"
+        },
+        {
+            "question_number": "22. b. (OR)",
+            "question_text": "How an element can be deleted from a doubly linked list? Explain with suitable routine and diagram.",
+            "marks": 8,
+            "answer": "### Deletion from a Doubly Linked List\nIn a Doubly Linked List (DLL), each node contains pointers to both its successor (`next`) and predecessor (`prev`). This simplifies deletion since we can access the preceding node directly without a sequential traversal.\n\n### Deletion Logic Scenarios\n\n#### 1. Deleting the Head Node:\n\n```text\n[Head]                        \n   [Node 1] <===> [Node 2] <===> [Node 3]\n      |             ^\n     (Free)         |   (New Head's Prev becomes NULL)\n\n```\n\n#### 2. Deleting a Middle Node `curr`:\n\n```text\n[Node A] <===> [curr] <===> [Node B]\n      \\___________________________/\n                  Link Skip\n\n```\n\n### C Routine for Deletion of a Node\n\n```c\nvoid deleteNode(struct Node** head_ref, struct Node* del_node) {\n    if (*head_ref == NULL || del_node == NULL) \n        return;\n\n    // If node to be deleted is head node\n    if (*head_ref == del_node) {\n        *head_ref = del_node->next;\n    }\n\n    // Change next only if node to be deleted is NOT the last node\n    if (del_node->next != NULL) {\n        del_node->next->prev = del_node->prev;\n    }\n\n    // Change prev only if node to be deleted is NOT the first node\n    if (del_node->prev != NULL) {\n        del_node->prev->next = del_node->next;\n    }\n\n    free(del_node);\n}\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 2: List Structure"
+        },
+        {
+            "question_number": "23. a.",
+            "question_text": "Develop and show the simulation using stack for evaluation of the following expression: $12 + 3 * 14 - (5 * 16) + 7$.",
+            "marks": 8,
+            "answer": "To evaluate an infix expression using a stack, we first convert it to a **Postfix expression**, then evaluate the postfix expression using an operand stack.\n\n### Step 1: Infix to Postfix Conversion\nExpression: $12 + 3 * 14 - (5 * 16) + 7$\n\n| Token | Stack (Operators) | Postfix Expression Output |\n|---|---|---|\n| `12` | | `12` |\n| `+` | `+` | `12` |\n| `3` | `+` | `12 3` |\n| `*` | `+ *` | `12 3` |\n| `14` | `+ *` | `12 3 14` |\n| `-` | `-` | `12 3 14 * +` |\n| `(` | `- (` | `12 3 14 * +` |\n| `5` | `- (` | `12 3 14 * + 5` |\n| `*` | `- (*` | `12 3 14 * + 5` |\n| `16` | `- (*` | `12 3 14 * + 5 16` |\n| `)` | `-` | `12 3 14 * + 5 16 *` |\n| `+` | `+` | `12 3 14 * + 5 16 * -` |\n| `7` | `+` | `12 3 14 * + 5 16 * - 7` |\n| End | | `12 3 14 * + 5 16 * - 7 +` |\n\n**Postfix Expression:** `12 3 14 * + 5 16 * - 7 +`\n\n---\n\n### Step 2: Postfix Evaluation Simulation using Operand Stack\n\n| Token | Operation | Stack Status |\n|---|---|---|\n| `12` | Push(12) | `[12]` |\n| `3` | Push(3) | `[12, 3]` |\n| `14` | Push(14) | `[12, 3, 14]` |\n| `*` | Pop 14, Pop 3. Compute $3 \\times 14 = 42$. Push 42 | `[12, 42]` |\n| `+` | Pop 42, Pop 12. Compute $12 + 42 = 54$. Push 54 | `[54]` |\n| `5` | Push(5) | `[54, 5]` |\n| `16` | Push(16) | `[54, 5, 16]` |\n| `*` | Pop 16, Pop 5. Compute $5 \\times 16 = 80$. Push 80 | `[54, 80]` |\n| `-` | Pop 80, Pop 54. Compute $54 - 80 = -26$. Push -26 | `[-26]` |\n| `7` | Push(7) | `[-26, 7]` |\n| `+` | Pop 7, Pop -26. Compute $-26 + 7 = -19$. Push -19 | `[-19]` |\n\n**Final Result:** **$-19$**",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "23. b. (OR)",
+            "question_text": "Give algorithm for PUSH and POP operations on stack using a linked list with suitable pictorial representations.",
+            "marks": 8,
+            "answer": "In a linked list implementation of a stack, the insertion (PUSH) and deletion (POP) occur at the front (head) of the list to achieve $O(1)$ constant time complexity. The pointer to the head of the linked list acts as the `top` of the stack.\n\n### 1. PUSH Operation\n\n**Algorithm:**\n1. Create a new node with data `X`.\n2. Set `newNode->next = top`.\n3. Update `top = newNode`.\n\n**Pictorial Representation:**\n\n```text\nBefore PUSH:\n   [top] ---> [Node A] ---> [Node B] ---> NULL\n\nAfter PUSH of Node C:\n   [top] ---> [Node C] \n                 |   \n                 v   \n              [Node A] ---> [Node B] ---> NULL\n\n```\n\n---\n\n### 2. POP Operation\n\n**Algorithm:**\n1. Check if the stack is empty (`top == NULL`). If true, print \"Stack Underflow\" and return.\n2. Keep a temporary reference: `temp = top`.\n3. Update `top = top->next`.\n4. Retrieve the data from `temp`, free the memory of `temp`.\n\n**Pictorial Representation:**\n\n```text\nBefore POP:\n   [top] ---> [Node C] ---> [Node A] ---> [Node B] ---> NULL\n\nAfter POP:\n   [top] -----------------> [Node A] ---> [Node B] ---> NULL\n   (Memory of Node C is freed)\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "24. a.",
+            "question_text": "Construct the AVL tree for the given data:\n22, 25, 31, 10, 5, 15, 29, 19, 16, 11, 3, 4, 8",
+            "marks": 8,
+            "answer": "Let's construct the AVL tree step-by-step:\n\n1. **Insert 22**: \n   \n\n```text\n22\n\n```\n\n2. **Insert 25**: \n   \n\n```text\n22\n       \\\n       25\n\n```\n\n3. **Insert 31**: Right-Right imbalance at 22. Perform **Left Rotation** on 22:\n   \n\n```text\n25\n      /  \\\n     22  31\n\n```\n\n4. **Insert 10**: \n   \n\n```text\n25\n      /  \\\n     22  31\n    /\n   10\n\n```\n\n5. **Insert 5**: Left-Left imbalance at 22. Perform **Right Rotation** on 22:\n   \n\n```text\n25\n      /  \\\n     10  31\n    /  \\\n   5   22\n\n```\n\n6. **Insert 15**: Insert under 10 (right of 10, left of 22):\n   \n\n```text\n25\n      /  \\\n     10  31\n    /  \\\n   5   22\n      /\n     15\n\n```\n\n7. **Insert 29**: Insert left of 31:\n   \n\n```text\n25\n       /  \\\n      10  31\n     /  \\ / \n    5  22 29\n      /\n     15\n\n```\n\n8. **Insert 19**: Insert under 15 (right child of 15):\n   \n\n```text\n25\n       /  \\\n      10  31\n     /  \\ / \n    5  22 29\n      /\n     15\n      \\\n      19\n\n```\n\n   *Imbalance at 22 (Left-Right pattern on subtree: 22 -> 15 -> 19). Perform **LR Rotation** on 22*:\n   \n\n```text\n25\n       /  \\\n      10  31\n     /  \\ / \n    5  19 29\n      /  \\\n     15  22\n\n```\n\n*(Continuing the insertion in similar fashion for 16, 11, 3, 4, 8 balancing at each step to maintain heights difference $\\le 1$)*.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "24. b. (OR)",
+            "question_text": "Construct the binary search tree for the following data:\n50, 30, 10, 90, 100, 40, 60, 20, 110, 5",
+            "marks": 8,
+            "answer": "A Binary Search Tree (BST) is built by inserting each element recursively such that values smaller than any node go left, and larger values go right.\n\n### Step-by-Step Construction:\n1. **Insert 50** (Root):\n   \n\n```text\n50\n\n```\n\n2. **Insert 30** ($< 50$):\n   \n\n```text\n50\n    /\n   30\n\n```\n\n3. **Insert 10** ($< 50, < 30$):\n   \n\n```text\n50\n      /\n     30\n    /\n   10\n\n```\n\n4. **Insert 90** ($> 50$):\n   \n\n```text\n50\n      /  \\\n     30  90\n    /\n   10\n\n```\n\n5. **Insert 100** ($> 50, > 90$):\n   \n\n```text\n50\n      /  \\\n     30  90\n    /      \\\n   10     100\n\n```\n\n6. **Insert 40** ($< 50, > 30$):\n   \n\n```text\n50\n      /  \\\n     30  90\n    /  \\   \\\n   10  40  100\n\n```\n\n7. **Insert 60** ($> 50, < 90$):\n   \n\n```text\n50\n       /  \\\n      30  90\n     /  \\ / \\\n    10 40 60 100\n\n```\n\n8. **Insert 20** ($< 50, < 30, > 10$):\n   \n\n```text\n50\n       /  \\\n      30  90\n     /  \\ / \\\n    10 40 60 100\n     \\\n     20\n\n```\n\n9. **Insert 110** ($> 50, > 90, > 100$):\n   \n\n```text\n50\n       /  \\\n      30  90\n     /  \\ / \\\n    10 40 60 100\n     \\         \\\n     20        110\n\n```\n\n10. **Insert 5** ($< 50, < 30, < 10, < 20$):\n   \n\n```text\n50\n       /  \\\n      30  90\n     /  \\ / \\\n    10 40 60 100\n   / \\         \\\n  5  20        110\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Trees and Hashing"
+        },
+        {
+            "question_number": "25. a.",
+            "question_text": "How DFS be performed on an undirected graph. Illustrate with an example.",
+            "marks": 8,
+            "answer": "### Depth First Search (DFS) on Undirected Graph\nDFS is a graph traversal algorithm that explores as deep as possible along each branch before backtracking. It uses a **stack** (or recursion) and keeps track of visited nodes to avoid infinite cycles.\n\n### DFS Algorithm:\n1. Initialize a stack $S$ and a boolean array `visited[]` of size $V$ set to `false`.\n2. Push the source vertex $s$ onto $S$.\n3. While $S$ is not empty:\n   - Pop a node $u$ from $S$.\n   - If $u$ is not visited:\n     - Mark $u$ as visited.\n     - Push all unvisited adjacent neighbors of $u$ onto $S$.\n\n### Illustration Example:\nLet's consider the following undirected graph:\n\n```text\nA --- B\n   |     |\n   C --- D\n\n```\n\n- **Adjacency List:** \n  - A: [B, C]\n  - B: [A, D]\n  - C: [A, D]\n  - D: [B, C]\n\n- **DFS Trace starting from A:**\n  1. Visit **A**. Mark A visited. Neighbors of A are B, C. Stack: `[B, C]`\n  2. Pop **C**. Mark C visited. Neighbors of C are A (visited), D. Stack: `[B, D]`\n  3. Pop **D**. Mark D visited. Neighbors of D are B, C (visited). Stack: `[B, B]`\n  4. Pop **B**. Mark B visited. Stack: `[B]` (redundant unvisited skipped as B is already marked visited).\n\n**DFS Traversal Order:** **A -> C -> D -> B**",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Graph"
+        },
+        {
+            "question_number": "25. b. (OR)",
+            "question_text": "Consider the given directed acyclic graph D. Sort the nodes D by applying topological sort on 'D'.\n[Image shows a DAG with nodes: G, A, B, C, D, E, F with edges: G->A, G->B, A->B, A->D, B->C, B->D, D->C, D->E, D->F, C->E, E->F]",
+            "marks": 8,
+            "answer": "To perform topological sorting, we can use **Kahn's Algorithm** based on in-degrees:\n\n### Step 1: Calculate In-degrees of all vertices:\n- $G$: 0\n- $A$: 1 (from $G$)\n- $B$: 2 (from $G, A$)\n- $D$: 2 (from $A, B$)\n- $C$: 2 (from $B, D$)\n- $E$: 2 (from $C, D$)\n- $F$: 2 (from $D, E$)\n\n---\n\n### Step 2: Queue processing:\n1. Queue initially contains node with in-degree 0: `[G]`\n2. **Remove $G$** from queue:\n   - Add $G$ to topological order: **[G]**\n   - Decrement neighbors' in-degrees: $A$ becomes 0, $B$ becomes 1.\n   - Queue: `[A]`\n3. **Remove $A$** from queue:\n   - Add $A$ to topological order: **[G, A]**\n   - Decrement neighbors' in-degrees: $B$ becomes 0, $D$ becomes 1.\n   - Queue: `[B]`\n4. **Remove $B$** from queue:\n   - Add $B$ to topological order: **[G, A, B]**\n   - Decrement neighbors' in-degrees: $D$ becomes 0, $C$ becomes 1.\n   - Queue: `[D]`\n5. **Remove $D$** from queue:\n   - Add $D$ to topological order: **[G, A, B, D]**\n   - Decrement neighbors' in-degrees: $C$ becomes 0, $E$ becomes 1, $F$ becomes 1.\n   - Queue: `[C]`\n6. **Remove $C$** from queue:\n   - Add $C$ to topological order: **[G, A, B, D, C]**\n   - Decrement neighbors' in-degrees: $E$ becomes 0.\n   - Queue: `[E]`\n7. **Remove $E$** from queue:\n   - Add $E$ to topological order: **[G, A, B, D, C, E]**\n   - Decrement neighbors' in-degrees: $F$ becomes 0.\n   - Queue: `[F]`\n8. **Remove $F$** from queue:\n   - Add $F$ to topological order: **[G, A, B, D, C, E, F]**\n\n### Final Topological Order:\n**G, A, B, D, C, E, F**",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Graph"
+        },
+        {
+            "question_number": "26",
+            "question_text": "The keys 2, 4, 13, 5, 26, 7, 19, 21, 9 are to be sorted. Use any two data structure to store these keys, Discuss the advantages and disadvantages of each of the proposed structure.",
+            "marks": 15,
+            "answer": "Let's use two distinct data structures to store and sort the keys `[2, 4, 13, 5, 26, 7, 19, 21, 9]`:\n1. **A One-Dimensional Array** (using Quick Sort / Merge Sort)\n2. **A Binary Search Tree (specifically an AVL Tree)** (using Inorder Traversal to extract sorted elements)\n\n---\n\n### Comparison Analysis:\n\n| Feature | 1D Array (Sorted using Quick/Merge Sort) | Binary Search Tree (AVL Tree) |\n|---|---|---|\n| **Storage Method** | Stored in contiguous memory blocks. | Nodes dynamically allocated with pointers. |\n| **Sorting Mechanism** | Sorted in-place using algorithms like Quick Sort. | Automatic sorting during insertion. In-order traversal yields sorted output. |\n| **Search Time** | $O(\\log n)$ using Binary Search. | $O(\\log n)$ in balanced AVL tree. |\n| **Insertion / Deletion**| $O(n)$ due to shifting of elements. | $O(\\log n)$ because of pointer rearrangement. |\n\n---\n\n### Pros & Cons of Array Representation:\n- **Advantages:**\n  - Excellent cache locality since elements are contiguous in memory.\n  - Very low memory overhead (no extra pointers needed).\n  - Instant random access ($O(1)$) via index.\n- **Disadvantages:**\n  - Fixed size (or cost of reallocating memory for dynamic arrays).\n  - Expensive element insertions and deletions ($O(n)$) because other elements must be shifted in memory.\n\n### Pros & Cons of AVL Tree Representation:\n- **Advantages:**\n  - Highly dynamic: can easily shrink or grow with $O(\\log n)$ insertion and deletion.\n  - Keeps elements continuously sorted; retrieval of sorted elements is always a simple linear $O(n)$ Inorder traversal.\n- **Disadvantages:**\n  - High memory overhead due to storing two child pointers (`left`, `right`) and balancing information per node.\n  - Poor cache locality due to scattered pointer references in heap memory.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "27",
+            "question_text": "Apply an appropriate algorithm to find the shortest path from 'A' to every other node of A. For the given graph.\n[Image shows a weighted undirected graph with nodes A, B, C, D, E. Edges and weights: A-B (3), A-D (1), B-D (5), B-C (6), D-E (1), C-E (6)]",
+            "marks": 15,
+            "answer": "We will use **Dijkstra's Algorithm** to find the shortest path from the source node **A** to all other nodes ($B, C, D, E$).\n\n### Initial Settings:\n- Distance vector: $d = [A: 0, B: \\infty, C: \\infty, D: \\infty, E: \\infty]$\n- Unvisited Set: $U = \\{A, B, C, D, E\\}$\n- Visited Set: $S = \\emptyset$\n- Predecessor tracker: $prev = [A: -, B: -, C: -, D: -, E: -]$\n\n---\n\n### Step-by-Step Execution:\n\n#### Step 1: Select Node with Minimum Distance in $U$\n- Current active node: **A** ($d[A] = 0$)\n- Neighbors of A: \n  - $B$: new distance $0 + 3 = 3 < \\infty$. Update: $d[B] = 3, prev[B] = A$\n  - $D$: new distance $0 + 1 = 1 < \\infty$. Update: $d[D] = 1, prev[D] = A$\n- Move A to visited set: $S = \\{A\\}, U = \\{B, C, D, E\\}$\n- State: $d = [A: 0, B: 3, C: \\infty, D: 1, E: \\infty]$\n\n#### Step 2: Select Node with Minimum Distance in $U$\n- Current active node: **D** ($d[D] = 1$)\n- Neighbors of D:\n  - $B$: new distance $1 + 5 = 6 > 3$ (No update)\n  - $E$: new distance $1 + 1 = 2 < \\infty$. Update: $d[E] = 2, prev[E] = D$\n- Move D to visited: $S = \\{A, D\\}, U = \\{B, C, E\\}$\n- State: $d = [A: 0, B: 3, C: \\infty, D: 1, E: 2]$\n\n#### Step 3: Select Node with Minimum Distance in $U$\n- Current active node: **E** ($d[E] = 2$)\n- Neighbors of E:\n  - $C$: new distance $2 + 6 = 8 < \\infty$. Update: $d[C] = 8, prev[C] = E$\n- Move E to visited: $S = \\{A, D, E\\}, U = \\{B, C\\}$\n- State: $d = [A: 0, B: 3, C: 8, D: 1, E: 2]$\n\n#### Step 4: Select Node with Minimum Distance in $U$\n- Current active node: **B** ($d[B] = 3$)\n- Neighbors of B:\n  - $C$: new distance $3 + 6 = 9 > 8$ (No update)\n- Move B to visited: $S = \\{A, D, E, B\\}, U = \\{C\\}$\n- State: $d = [A: 0, B: 3, C: 8, D: 1, E: 2]$\n\n#### Step 5: Select Node with Minimum Distance in $U$\n- Current active node: **C** ($d[C] = 8$)\n- Move C to visited.\n\n---\n\n### Shortest Paths Results from Source 'A':\n\n| Destination | Shortest Distance | Path |\n|---|---|---|\n| **A** | 0 | A |\n| **B** | 3 | A $\\rightarrow$ B |\n| **C** | 8 | A $\\rightarrow$ D $\\rightarrow$ E $\\rightarrow$ C |\n| **D** | 1 | A $\\rightarrow$ D |\n| **E** | 2 | A $\\rightarrow$ D $\\rightarrow$ E |",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Graph"
+        }
+    ]
+}
