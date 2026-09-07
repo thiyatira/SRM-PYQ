@@ -13,6 +13,7 @@ import "prismjs/components/prism-javascript";
 import "prismjs/components/prism-bash";
 
 const SUBJECTS = [
+  { code: "DSA", name: "Data Structures and Algorithms", title: "21CSC201J: Data Structures and Algorithms" },
   { code: "PPS", name: "Programming for Problem Solving", title: "21CSS101J: Programming for Problem Solving" },
   { code: "POE", name: "Philosophy of Engineering", title: "21GNH101J: Philosophy of Engineering" },
   { code: "COMMENG", name: "Communicative English", title: "21LEH101T: Communicative English" },
@@ -214,6 +215,27 @@ const SUBJECT_FILES: Record<string, string[]> = {
     "2025 Assessment 2 Set F.json",
     "CLAT 1 Set D.json",
   ],
+  DSA: [
+    "2019-05_ET_QP.json",
+    "2019-11_ET_QP.json",
+    "2022-12_ET_QP.json",
+    "2023-05_ET_QP.json",
+    "2023-07_ET_QP.json",
+    "2023-12_ET_QP.json",
+    "2023-24_CT1_SetB_QP-Key.json",
+    "2024-05_ET_QP.json",
+    "2024-07_ET_QP.json",
+    "2024-11_ET_QP.json",
+    "2024-25_CT3_SetC-SetD_B2_QP.json",
+    "2025-06_ET_QP.json",
+    "2025-07_ET_QP.json",
+    "2025-08-12_CT1_QP-Key.json",
+    "2025-08-12_CT1_SetA_QP-Key.json",
+    "2025-09-26_CT2_SetA_QP-Key.json",
+    "2025-09-26_CT2_SetB_QP-Key.json",
+    "2025-09-26_CT2_SetC_QP-Key.json",
+    "2025-09-26_CT2_SetD_Batch2_QP-Key.json",
+  ],
 };
 
 const SUBJECT_DIRS: Record<string, string> = {
@@ -228,6 +250,7 @@ const SUBJECT_DIRS: Record<string, string> = {
   ADVANCEDCALC: "AdvancedCalculus",
   SPCM: "SemiconductorPhysicsAndComputationalMethods",
   APP: "APP",
+  DSA: "DSA",
 };
 
 interface Question {
