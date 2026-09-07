@@ -1,0 +1,327 @@
+{
+    "formal_filename": "2025-08-12_CT1_QP-Key.json",
+    "paper_title": "SRM Institute of Science and Technology, College of Engineering and Technology, School of Computing. Course Code & Title: 21CSC201J Data Structures and Algorithms, II Year / III Sem, Test: FJ-I (CT - 1)",
+    "source": "2025-08-12 CT1",
+    "questions": [
+        {
+            "question_number": "Set A - Q1",
+            "question_text": "```c\nstruct date {\n int day, month, year;\n};\nstruct student\n{\n char name[20];\n struct date dob;\n};\n\n```\n\nWhich among the listed will access the member month of student s1?\nA. s1->dob->month\nB. s1.dob.month\nC. s1->dob.month\nD. dob.month(s1)",
+            "marks": null,
+            "answer": "B. s1.dob.month\n\n**Rationale:** Both `s1` and `dob` are declared as direct structures (not pointers), so the dot operator (`.`) must be used to access their members.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "Set A - Q2",
+            "question_text": "```c\nstruct student\n{\n char name[20];\n int marks;\n};\n\n```\n\nWhich among the listed represent is the correct syntax to declare a variable s for 10 student details?\nA. struct student s;\nB. student s[10];\nC. struct student s[10];\nD. struct s[10];",
+            "marks": null,
+            "answer": "C. struct student s[10];\n\n**Rationale:** In standard C, structure variables must be declared using the keyword `struct` followed by the structure tag name and then the variable name with array size.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "Set A - Q3",
+            "question_text": "One algorithm has time complexity $O(n^2)$ and another has $\\Theta(n \\log n)$. Which one is always asymptotically better for large input sizes?\nA. $O(n^2)$\nB. $\\Theta(n \\log n)$\nC. Cannot be determined without constant factors\nD. Both are equivalent",
+            "marks": null,
+            "answer": "B. $\\Theta(n \\log n)$\n\n**Rationale:** Asymptotically, $n \\log n$ grows much slower than $n^2$ as $n$ approaches infinity, making it always better for large input sizes regardless of constant factors.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "Set A - Q4",
+            "question_text": "```c\nstruct node {\n int data;\n struct node *next;\n};\nint main() {\n struct node *head;\n // Missing Line\n head->data = 100;\n head->next = NULL;\n printf(\"%d\", head->data);\n}\n\n```\n\nThe missing code to produce 100 as output\nA. head = (struct node *)malloc(sizeof(struct node));\nB. *head = malloc(sizeof(struct node));\nC. head->data = 0;\nD. head = NULL;",
+            "marks": null,
+            "answer": "A. head = (struct node *)malloc(sizeof(struct node));\n\n**Rationale:** Pointer `head` must be dynamically allocated memory before it can be dereferenced to store values.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "Set A - Q5",
+            "question_text": "```c\nvoid mystery(int n) {\n for (int i = n; i > 0; i /= 2) {\n for (int j = 0; j < i; j++) {\n printf(\"*\");\n }\n }\n}\n\n```\n\nWhat is the overall time complexity?\nA. $O(n \\log n)$\nB. $O(n)$\nC. $O(\\log n)$\nD. $O(n^2)$",
+            "marks": null,
+            "answer": "B. $O(n)$\n\n**Rationale:** The outer loop executes for $i = n, n/2, n/4, \\dots$. The inner loop runs $i$ times. The total operations are $n + n/2 + n/4 + \\dots = 2n = O(n)$ which forms a geometric progression.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "Set A - Q6",
+            "question_text": "What will be the output?\n\n```c\n#include <stdio.h>\nvoid swap(int *a, int *b) {\n int *temp = a;\n a = b;\n b = temp;\n}\nint main() {\n int x = 10, y = 20;\n swap(&x, &y);\n printf(\"%d %d\", x, y);\n return 0;\n}\n\n```\n\nA. 10 20\nB. 20 10\nC. 20 20\nD. 10 10",
+            "marks": null,
+            "answer": "A. 10 20\n\n**Rationale:** The swap function swaps the local pointer variables `a` and `b` rather than swapping the actual values stored at those addresses (`*a` and `*b`). Thus, the values of `x` and `y` in `main` remain unchanged.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "Set A - Q7",
+            "question_text": "If an algorithm has time complexity $O(n^2)$, There exists a constant time $c$ such that, which of the following are true?\nA. It always takes $c \\cdot n^2$ time\nB. It takes at most $c \\cdot n^2$ time\nC. It takes at least $n^2$ time\nD. All the above",
+            "marks": null,
+            "answer": "B. It takes at most $c \\cdot n^2$ time\n\n**Rationale:** Big O notation represents the asymptotic upper bound. Therefore, the runtime is at most $c \\cdot n^2$ for sufficiently large $n$.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "Set A - Q8",
+            "question_text": "Output produced by the code segment:\n\n```c\nint a = 5;\nint *p = &a;\nint **pp = &p;\nprintf(\"%d\", **pp);\n\n```\n\nA. Address of p\nB. Address of a\nC. 5\nD. Error",
+            "marks": null,
+            "answer": "C. 5\n\n**Rationale:** `pp` is a pointer to pointer pointing to `p`, which in turn points to `a`. Double dereferencing `**pp` yields the value stored in `a`, which is `5`.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "Set A - Q9",
+            "question_text": "Which of the following are true about Abstract Data Types?\nA. ADTs hide implementation details from the user\nB. ADTs only include primitive data types\nC. Stack and Queue are examples of ADTs\nD. ADTs are defined by the operations performed on them",
+            "marks": null,
+            "answer": "A, C, D\n\n**Rationale:** ADTs focus on what operations can be performed rather than how they are implemented, thereby hiding the details. Stacks and Queues are classic examples of ADTs defined by their operations (push, pop, enqueue, dequeue).",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "Set A - Q10",
+            "question_text": "```c\nstruct Data {\n int x;\n};\nint main() {\n struct Data *ptr;\n ptr->x = 10;\n printf(\"%d\", ptr->x);\n return 0;\n}\n\n```\n\nWhat happens when this code is executed?\nA. Prints 10\nB. Compilation Error\nC. Segmentation Fault\nD. Garbage Value",
+            "marks": null,
+            "answer": "A. Prints 10 (as highlighted in key) / C. Segmentation Fault (highly probable in practice)\n\n**Rationale:** While the provided answer key highlights option A, dynamically dereferencing an unallocated wild pointer (`ptr`) in standard C causes Undefined Behavior, which typically results in a Segmentation Fault in most runtime environments.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "Set B - Q1",
+            "question_text": "What is the output of this code?\n\n```c\nstruct inner {\n int x;\n};\nstruct outer {\n struct inner i;\n} o = {10};\nprintf(\"%d\", o.i.x);\n\n```\n\nA. 0\nB. 10\nC. Compilation Error\nD. Garbage Value",
+            "marks": null,
+            "answer": "B. 10\n\n**Rationale:** Initialization of nested structure `o = {10}` assigns `10` to the first member of the inner structure `x`. Thus `o.i.x` is `10`.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "Set B - Q2",
+            "question_text": "```c\nstruct item\n{\n int code;\n float price;\n};\n\n```\n\nWhich statement creates a pointer to a structure and allocates memory dynamically?\nA. struct item *p = malloc(sizeof(struct item));\nB. struct item p = malloc(sizeof(item));\nC. item *p = new item;\nD. struct item p; *p = malloc(sizeof(p));",
+            "marks": null,
+            "answer": "A. struct item *p = malloc(sizeof(struct item));\n\n**Rationale:** Standard C dynamic memory allocation for structures is done using `malloc(sizeof(struct Item))` assigned to a structure pointer.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "Set B - Q3",
+            "question_text": "Choose the correct ascending order of growth rate (slowest to fastest):\nA. $O(\\log n)$, $O(n)$, $O(n \\log n)$, $O(n^2)$, $O(2^n)$\nB. $O(n)$, $O(\\log n)$, $O(n \\log n)$, $O(2^n)$, $O(n^2)$\nC. $O(n \\log n)$, $O(n)$, $O(\\log n)$, $O(n^2)$, $O(2^n)$\nD. $O(n^2)$, $O(n)$, $O(\\log n)$, $O(n \\log n)$, $O(2^n)$",
+            "marks": null,
+            "answer": "A. $O(\\log n)$, $O(n)$, $O(n \\log n)$, $O(n^2)$, $O(2^n)$\n\n**Rationale:** Logarithmic growth is slowest, followed by linear, linearithmic, quadratic, and finally exponential growth.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "Set B - Q4",
+            "question_text": "```c\nstruct node {\n int data;\n struct node *next;\n};\nint main() {\n struct node n1 = {5, NULL};\n struct node n2 = {10, NULL};\n // Missing line\n printf(\"%d\", ptr->data);\n}\n\n```\n\nIf the desired output is 10, what should the missing line be?\nA. struct node *ptr = &n1;\nB. struct node *ptr = n2;\nC. struct node *ptr = &n2;\nD. ptr = &n1;",
+            "marks": null,
+            "answer": "C. struct node *ptr = &n2;\n\n**Rationale:** To output `10`, the pointer variable `ptr` must point to the address of `n2` where the data is `10`.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "Set B - Q5",
+            "question_text": "What is the time complexity of the following subroutine as a function of $n$? Assume each instruction takes only $O(1)$ time.\n\n```c\nsum = 0;\nfor (i = 1; i < n; i = i*2)\n for(j = 0; j < i; j = j+1)\n sum = sum + 1;\n\n```\n\nA. $O(n)$\nB. $O(n \\log n)$\nC. $O(n^2)$\nD. $O(n^2 \\log n)$",
+            "marks": null,
+            "answer": "A. $O(n)$\n\n**Rationale:** The outer loop variable $i$ takes values $1, 2, 4, 8, \\dots$ up to a value less than $n$. The inner loop runs $i$ times. The sum of iterations is $1 + 2 + 4 + 8 + \\dots + 2^{\\lfloor\\log_2 n\\rfloor} \\approx 2n = O(n)$.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "Set B - Q6",
+            "question_text": "What does $f(n) = O(g(n))$ mean?\nA. $f(n)$ grows faster than $g(n)$\nB. $f(n)$ grows at the same rate as $g(n)$\nC. $f(n)$ grows slower than $g(n)$\nD. $f(n)$ grows no faster than $g(n)$",
+            "marks": null,
+            "answer": "D. $f(n)$ grows no faster than $g(n)$\n\n**Rationale:** Big O indicates an upper bound; thus, $f(n)$ is asymptotically bounded above by $g(n)$ (grows no faster than $g(n)$).",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "Set B - Q7",
+            "question_text": "How is the second element in an array accessed using pointer notation?\n\n```c\nint arr[5] = {10, 20, 30, 40, 50};\n\n```\n\nA. *arr + 1\nB. *(arr + 1)\nC. *arr[1]\nD. (d) arr* + 1",
+            "marks": null,
+            "answer": "B. *(arr + 1)\n\n**Rationale:** Array elements are stored contiguously. Adding `1` to the array base pointer `arr` shifts to the address of the second element. Dereferencing it using `*(arr + 1)` yields its value.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "Set B - Q8",
+            "question_text": "```c\nstruct Item *arr = malloc(n * sizeof(struct Item));\n\n```\n\nWhich are true?\nA. Allocates memory for n items\nB. arr[i].id and arr[i].price are valid\nC. Access within arr[n] is defined behavior\nD. Memory is dynamically allocated",
+            "marks": null,
+            "answer": "A, D\n\n**Rationale:** The key highlights option A and D. The statement dynamically allocates memory for an array of `n` elements of `struct Item`.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "Set B - Q9",
+            "question_text": "```c\nint **mat = malloc(n * sizeof(int*));\nfor (int i = 0; i < n; i++) {\n mat[i] = malloc(n * sizeof(int));\n}\n\n```\n\nWhich of the following are true?\nA. Creates a 2D dynamic $n \\times n$ matrix\nB. Rows are contiguous in memory\nC. mat[i][j] is valid\nD. Memory leak occurs if free is not used on each mat[i]",
+            "marks": null,
+            "answer": "A (as highlighted) / A, C, D are technically correct.\n\n**Rationale:** This code block allocates a list of $n$ pointers, each pointing to a row of size $n$, effectively creating a dynamic 2D array. The elements are accessed validly with `mat[i][j]`.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "Set B - Q10",
+            "question_text": "Consider the code below. Which of the following options will correctly print the value of variable a.\n\n```c\nint main()\n {\n int a=5;\n int *p;\n p=&a;\n return 0;\n}\n\n```\n\nA. printf(\"%d\",*p);\nB. printf(\"%d\",**(&p));\nC. printf(\"%d\", &p);\nD. printf(\"%d\", p);",
+            "marks": null,
+            "answer": "B. printf(\"%d\",**(&p)); (as highlighted in key) / A. printf(\"%d\",*p); is also valid.\n\n**Rationale:** `*p` directly accesses `a`'s value. `**(&p)` dereferences the pointer to pointer `p`, which also evaluates to `a`'s value of `5`.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "Set C - Q1",
+            "question_text": "```c\nint *arr = malloc(5 * sizeof(int));\n\n```\n\nWhich of the following correctly reallocates arr to double its size?\nA. realloc(arr, 10 * sizeof(int));\nB. arr = realloc(arr, 10 * sizeof(int));\nC. realloc(10 * sizeof(int), arr);\nD. arr = malloc(10 * sizeof(int)); memcpy(arr, arr, 5*sizeof(int));",
+            "marks": null,
+            "answer": "B. arr = realloc(arr, 10 * sizeof(int));\n\n**Rationale:** The standard function `realloc(ptr, size)` returns a pointer to the newly allocated space, which must be assigned back to `arr`.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "Set C - Q2",
+            "question_text": "```c\nint x = 10;\nint *p = &x;\n\n```\n\nWhich of the following correctly prints the address of variable x?\nA. printf(\"%d\", p);\nB. printf(\"%p\", p);\nC. printf(\"%p\", x);\nD. printf(\"%d\", &x);",
+            "marks": null,
+            "answer": "B. printf(\"%p\", p);\n\n**Rationale:** Pointer `p` holds the address of `x`. The `%p` format specifier is specifically designed to print memory addresses.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "Set C - Q3",
+            "question_text": "What is the time complexity for the following code snippet\n\n```c\nfor ( i = 1; i < n; i = i * 2) {\n printf(\"%d \", i);\n}\n\n```\n\nA. $O(n)$\nB. $O(\\log n)$\nC. $O(n \\log n)$\nD. $O(n^2)$",
+            "marks": null,
+            "answer": "B. $O(\\log n)$\n\n**Rationale:** The loop variable doubling step causes the loop to run approximately $\\log_2 n$ times.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "Set C - Q4",
+            "question_text": "```c\nint *p;\np = (int *)calloc(5, sizeof(int));\nprintf(\"%d\", p[3]);\n\n```\n\nWhat will be the output of the given code?\nA. Garbage value\nB. Compilation error\nC. 0\nD. Segmentation fault",
+            "marks": null,
+            "answer": "C. 0\n\n**Rationale:** The `calloc` function initializes the allocated memory blocks to zero automatically.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "Set C - Q5",
+            "question_text": "The total number of scalar multiplications required to multiply A ($n \\times k$) and B ($k \\times m$):\nA. $O(n + m + k)$\nB. $O(nkm)$\nC. $O(nk^2m)$\nD. $O(nm)$",
+            "marks": null,
+            "answer": "B. $O(nkm)$\n\n**Rationale:** Standard matrix multiplication requires $n \\times k \\times m$ individual scalar multiplication operations, resulting in complexity $O(nkm)$.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "Set C - Q6",
+            "question_text": "Consider the following code,\n\n```c\nint main()\n{\nint a = 10, b = 20, c = 30; \nint *arr[3];\narr[0] = &a;\narr[1] = &b;\narr[2] = &c;\n------------------------------\nreturn 0;\n}\n\n```\n\nWhich of the following option correctly print the value 20?\nA. printf(\"%d\", *arr[1]);\nB. printf(\"%d\", *(arr + 1));\nC. printf(\"%d\", arr[1]);\nD. printf(\"%d\", **(&arr[1]));",
+            "marks": null,
+            "answer": "A, D\n\n**Rationale:** `arr[1]` is of type `int*` containing `&b`. To get `20`, we use `*arr[1]`. `**(&arr[1])` also successfully double-dereferences the address.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "Set C - Q7",
+            "question_text": "Let $f(n)=3n^2+7n+4$ Which of the following is a tight upper bound for $f(n)$?\nA. $O(n^3)$\nB. $O(n \\log n)$\nC. $O(n^2)$\nD. $O(1)$",
+            "marks": null,
+            "answer": "C. $O(n^2)$\n\n**Rationale:** The highest degree term dominates the function growth, making $O(n^2)$ the tightest standard upper bound.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "Set C - Q8",
+            "question_text": "If an algorithm runs in time $T(n) = 3n^2 + 2n + 1$, which of the following is true?\nA. $T(n) = O(n^2)$\nB. $T(n) = \\Omega(n^2)$\nC. $T(n) = \\Theta(n^2)$\nD. $T(n) = \\Omega(n)$",
+            "marks": null,
+            "answer": "A, B, C\n\n**Rationale:** All highlighted statements are true because $T(n)$ has order of growth exactly quadratic, satisfying upper, lower, and tight bound descriptions of quadratic nature.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "Set C - Q9",
+            "question_text": "```c\nstruct Inner {\n int a;\n};\nstruct Outer {\n struct Inner in;\n int b;\n};\n\n```\n\nWhich among the listed are true?\nA. Outer contains a complete Inner struct\nB. Memory for Inner is allocated inside Outer\nC. Accessing Outer.a is valid\nD. Accessing Inner in.a is invalid",
+            "marks": null,
+            "answer": "A, B, D\n\n**Rationale:** `Outer` embeds `struct Inner in` in itself (options A, B). `Outer.a` directly is invalid since it has to be accessed through `Outer_variable.in.a`.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "Set C - Q10",
+            "question_text": "```c\nstruct Student {\n int marks;\n};\nvoid update(struct Student *s) {\n s->marks += 10;\n}\nint main() {\n struct Student s = {50};\n update(&s);\n printf(\"%d\", s->marks);\n}\n\n```\n\nOutput of the program?\nA. 50\nB. 60\nC. Garbage value\nD. Compilation error",
+            "marks": null,
+            "answer": "D. Compilation error\n\n**Rationale:** In `main`, `s` is a struct variable, not a pointer. Accessing it via `s->marks` is syntax error; it should have been `s.marks`.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "Set D - Q1",
+            "question_text": "Given a structure in C, how would you dynamically allocate memory for an array of 10 such structures?\nA. struct myStruct arr[10];\nB. struct myStruct* arr = (struct myStruct*)malloc(10 * sizeof(struct myStruct));\nC. struct myStruct* arr = malloc(10);\nD. struct myStruct arr = malloc(10 * sizeof(struct myStruct));",
+            "marks": null,
+            "answer": "B. struct myStruct* arr = (struct myStruct*)malloc(10 * sizeof(struct myStruct));\n\n**Rationale:** Requires casting the dynamic block of size $10 \\times \\text{sizeof(structure)}$ to the correct pointer type.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "Set D - Q2",
+            "question_text": "Which of the following is true about an Abstract Data Type (ADT)?\nA. It is a concrete implementation of data structure.\nB. It specifies the logical behavior of a data structure without specifying the implementation.\nC. It can only be implemented using arrays.\nD. It does not support any operations.",
+            "marks": null,
+            "answer": "B. It specifies the logical behavior of a data structure without specifying the implementation.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "Set D - Q3",
+            "question_text": "What is the output of the following code?\n\n```c\nvoid main()\n{int *p = NULL;\np = realloc(p, sizeof(int) * 2);\nprintf(\"%d %d\", p[0], p[1]);\np[0] = 1;\np[1] = 2;}\n\n```\n\nA. 1 2\nB. 0 0\nC. Segmentation fault\nD. Garbage",
+            "marks": null,
+            "answer": "B. 0 0 (as highlighted) / D. Garbage\n\n**Rationale:** Although uninitialized dynamically allocated variables theoretically contain garbage, some compiler environments/OS zero-out initial memory slots.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "Set D - Q4",
+            "question_text": "```c\nstruct Node {\n int data;\n struct Node next;\n struct Node *next;\n};\n\n```\n\nBased on the code above, which of the following statements are correct?\nA. The line struct Node next; is valid in C and creates a new Node inside Node.\nB. The line struct Node next; will cause a compilation error due to incomplete type.\nC. The line struct Node *next; is valid and defines a pointer to another Node.\nD. A structure can contain a pointer to itself but not a direct instance of itself.",
+            "marks": null,
+            "answer": "B, C, D\n\n**Rationale:** A structure cannot include a field of its own incomplete type, but it can contain a pointer of its own type (self-referential structure pointer).",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "Set D - Q5",
+            "question_text": "```c\nstruct Student {\n int id;\n float marks;\n};\nstruct Student s[3];\nstruct Student *ptr = s;\n\n```\n\nWhich of the following access the marks of the second student?\nA. ptr->marks\nB. (*ptr+1).marks\nC. (ptr + 1)->marks\nD. ptr[2].marks",
+            "marks": null,
+            "answer": "C. (ptr + 1)->marks\n\n**Rationale:** Since `ptr` is a pointer pointing to the first element (index 0), `(ptr + 1)` points to the second element (index 1), dereferenced with `->` operator.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "Set D - Q6",
+            "question_text": "```c\nstruct Point {\n int x, y;\n};\nstruct Point pt = {.y = 10, .x = 5};\n\n```\n\nWhat will pt.x and pt.y be?\nA. 0, 10\nB. 5, 10\nC. Compilation error\nD. 10, 5",
+            "marks": null,
+            "answer": "B. 5, 10\n\n**Rationale:** This utilizes designated initializers in C, which maps values correctly regardless of initialization layout order.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "Set D - Q7",
+            "question_text": "What is the time complexity of the following loop?\n\n```c\nfor (int i = 1; i <= n; i *= 2)\n for (int j = 1; j <= n; j++)\n printf(\"*\");\n\n```\n\nA. $O(n \\log n)$\nB. $O(n^2)$\nC. $O(\\log n)$\nD. $O(n)$",
+            "marks": null,
+            "answer": "A. $O(n \\log n)$\n\n**Rationale:** The outer loop operates $\\log_2 n$ times, and for each cycle, the inner loop executes $n$ times, yielding $O(n \\log n)$ execution steps.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "Set D - Q8",
+            "question_text": "$f(n)=6n^2+4n$\nWhich of the following statements is true?\nA. $f(n)=O(n^3)$ but not $\\Theta(n^2)$\nB. $f(n)=O(n\\log n)$ and also $\\Theta(n\\log n)$\nC. $f(n)=O(n^2)$ but not $\\Theta(n^2)$\nD. $f(n)=O(n^2)$ and also $\\Theta(n^2)$",
+            "marks": null,
+            "answer": "D. $f(n)=O(n^2)$ and also $\\Theta(n^2)$\n\n**Rationale:** For a quadratic polynomial, the asymptotic tight limit is exactly quadratic.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "Set D - Q9",
+            "question_text": "Given the asymptotic complexity of 4 functions f1, f2, f3, f4 as follows:\n$f_1(n) = 2^n$\n$f_2(n) = n^{3/2}$\n$f_3(n) = n \\log n$\n$f_4(n) = n \\log \\log n$\nArrange them in increasing order of complexity\nA. $f_2, f_3, f_4, f_1$\nB. $f_1, f_4, f_3, f_2$\nC. $f_4, f_3, f_2, f_1$\nD. $f_3, f_1, f_4, f_2$",
+            "marks": null,
+            "answer": "C. $f_4, f_3, f_2, f_1$\n\n**Rationale:** Correct order is $n \\log \\log n < n \\log n < n^{1.5} < 2^n$.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "Set D - Q10",
+            "question_text": "What is the value of *(*arr + 1) in this 2D array?\n\n```c\nint arr[2][3] = {{10, 20, 30}, {40, 50, 60}};\n\n```\n\nA. 10\nB. 20\nC. 40\nD. 50",
+            "marks": null,
+            "answer": "B. 20\n\n**Rationale:** `*arr` resolves to the base pointer of the first row (`arr[0]`). Thus `*arr + 1` shifts to the second integer address in that row (`&arr[0][1]`), and dereferencing evaluates to `20`.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        }
+    ]
+}

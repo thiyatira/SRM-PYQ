@@ -1,0 +1,271 @@
+{
+    "formal_filename": "2023-05_ET_QP.json",
+    "paper_title": "B.Tech. DEGREE EXAMINATION, MAY 2023, Third Semester, 21CSC201J - DATA STRUCTURES AND ALGORITHMS",
+    "source": "2023-05 ET",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "How do you instantiate an array in C?\n(A) int Arr[] = new int (3);\n(B) int Arr [ 3];\n(C) int Arr[] = new int[3];\n(D) int Arr( ) = New int [3];",
+            "marks": 1,
+            "answer": "(B) int Arr [ 3];\n\n**Rationale:** In C, arrays are instantiated statically using the syntax `datatype array_name[size];`. The `new` operator is used in C++ and Java, not in C.",
+            "answer_source": "generated",
+            "chapter": "Unit-1 - Introduction"
+        },
+        {
+            "question_number": "2",
+            "question_text": "Elements in an array are accessed\n(A) Randomly\n(B) Sequentially\n(C) Exponentially\n(D) Logarithmically",
+            "marks": 1,
+            "answer": "(A) Randomly\n\n**Rationale:** Array elements are stored in contiguous memory locations, which allows $O(1)$ constant time direct/random access to any element using its index.",
+            "answer_source": "generated",
+            "chapter": "Unit-1 - Introduction"
+        },
+        {
+            "question_number": "3",
+            "question_text": "Which of the following data structure is non linear type?\n(A) Strings\n(B) Lists\n(C) Stacks\n(D) Hierarchical",
+            "marks": 1,
+            "answer": "(D) Hierarchical\n\n**Rationale:** Hierarchical structures (such as trees and graphs) are non-linear data structures because elements are not arranged in a sequential order. Strings, lists, and stacks are linear data structures.",
+            "answer_source": "generated",
+            "chapter": "Unit-1 - Introduction"
+        },
+        {
+            "question_number": "4",
+            "question_text": "What will be the output of the following code?\n\n```c\nstruct student {\n    CHAR *C;\n};\nvoid main()\n{\n    struct student *S;\n    S->C = \"HELLO\";\n    printf(\"%s\", S->C);\n}\n\n```\n\n(A) Hello\n(B) Segmentation fault\n(C) Runtime error\n(D) Nothing",
+            "marks": 1,
+            "answer": "(B) Segmentation fault\n\n**Rationale:** The pointer `S` is declared as a pointer to a structure (`struct student *S`) but is never allocated memory (either statically or dynamically using `malloc`). Attempting to dereference an uninitialized pointer (`S->C = \"HELLO\"`) leads to undefined behavior, which commonly results in a Segmentation fault.",
+            "answer_source": "generated",
+            "chapter": "Unit-1 - Introduction"
+        },
+        {
+            "question_number": "5",
+            "question_text": "Linked list data structure offers considerable saving in\n(A) Computational time\n(B) Space utilization\n(C) Space utilization and computational time\n(D) Speed utilization",
+            "marks": 1,
+            "answer": "(B) Space utilization\n\n**Rationale:** Linked lists utilize memory dynamically, allocating space only when new elements are inserted. This prevents wasting pre-allocated contiguous memory blocks as seen in arrays.",
+            "answer_source": "generated",
+            "chapter": "Unit-2 - List Structure"
+        },
+        {
+            "question_number": "6",
+            "question_text": "Which of the following is false about a doubly linked list?\n(A) We can navigate in both the directions\n(B) It requires more space than a singly linked list\n(C) The insertion and deletion of a node take a bit longer time\n(D) Implementing a doubly linked list is easier than singly linked list",
+            "marks": 1,
+            "answer": "(D) Implementing a doubly linked list is easier than singly linked list\n\n**Rationale:** Implementing a doubly linked list is more complex because every node maintains two pointers (`next` and `prev`), requiring extra pointer updates during insertion and deletion operations compared to a singly linked list.",
+            "answer_source": "generated",
+            "chapter": "Unit-2 - List Structure"
+        },
+        {
+            "question_number": "7",
+            "question_text": "Which of the following is false about a circular linked list?\n(A) Every node has a successor\n(B) Time complexity of inserting a new node at the head of the list is O(1)\n(C) The complexity for deleting the last node is O(n).\n(D) We can traverse the whole circular linked list, starting from any point",
+            "marks": 1,
+            "answer": "(B) Time complexity of inserting a new node at the head of the list is O(1)\n\n**Rationale:** In a basic circular linked list with only a `head` pointer, inserting a node at the head requires traversing the entire list to find the last node so its `next` pointer can be updated to point to the new head. This operation takes $O(n)$ time (unless a `tail` pointer is also maintained).",
+            "answer_source": "generated",
+            "chapter": "Unit-2 - List Structure"
+        },
+        {
+            "question_number": "8",
+            "question_text": "Which of these is not an application of a linked list?\n(A) To implement file system\n(B) For separate chaining in hash-tables\n(C) To implement non-binary trees\n(D) Random access of elements",
+            "marks": 1,
+            "answer": "(D) Random access of elements\n\n**Rationale:** Linked lists do not support physical random access because nodes are not stored in contiguous memory. To access an element at index $i$, one must traverse sequentially from the head node, requiring $O(n)$ time.",
+            "answer_source": "generated",
+            "chapter": "Unit-2 - List Structure"
+        },
+        {
+            "question_number": "9",
+            "question_text": "The data structure required to check whether an expression contains balanced parenthesis is\n(A) Stack\n(B) Queue\n(C) Array\n(D) Tree",
+            "marks": 1,
+            "answer": "(A) Stack\n\n**Rationale:** A stack works on the Last-In-First-Out (LIFO) principle, making it ideal for tracking opening parentheses (pushed onto the stack) and matching them with corresponding closing parentheses (popped from the stack).",
+            "answer_source": "generated",
+            "chapter": "Unit-3 - Stack and Queue"
+        },
+        {
+            "question_number": "10",
+            "question_text": "The prefix form of A-B / (C*D^E) is?\n(A) -/*^AACBDE\n(B) -ABCD * ^ADE\n(C) -A/B*C^DE\n(D) -A/BC*^ADE",
+            "marks": 1,
+            "answer": "(C) -A/B*C^DE\n\n**Rationale:** Let's convert the expression step-by-step:\n1. Find operations with the highest precedence inside parentheses: $D \\text{ ^ } E \\rightarrow \\text{^}DE$\n2. Next is multiplication inside the parentheses: $C * (\\text{^}DE) \\rightarrow *C\\text{^}DE$\n3. Next is division: $B / (*C\\text{^}DE) \\rightarrow /B*C\\text{^}DE$\n4. Finally, subtraction: $A - (/B*C\\text{^}DE) \\rightarrow -A/B*C\\text{^}DE$",
+            "answer_source": "generated",
+            "chapter": "Unit-3 - Stack and Queue"
+        },
+        {
+            "question_number": "11",
+            "question_text": "A queue follows ________\n(A) FIFO (First in First Out) principle\n(B) LIFO (Last in First Out) principle\n(C) Ordered array\n(D) Linear tree",
+            "marks": 1,
+            "answer": "(A) FIFO (First in First Out) principle\n\n**Rationale:** A queue is a linear data structure where elements are inserted at the rear and removed from the front, adhering strictly to the First-In-First-Out behavior.",
+            "answer_source": "generated",
+            "chapter": "Unit-3 - Stack and Queue"
+        },
+        {
+            "question_number": "12",
+            "question_text": "A normal queue, if implemented using an array of size max-size gets full when?\n(A) Rear = Max - size - 1\n(B) Front = (rear + 1) mod max size\n(C) Front = Rear + 1\n(D) Rear = Front",
+            "marks": 1,
+            "answer": "(A) Rear = Max - size - 1\n\n**Rationale:** In a standard (non-circular) queue array of size $N$ (where indices range from $0$ to $N-1$), the queue is considered full at the rear end when the `rear` index reaches $N - 1$, which is written here as `Max - size - 1`.",
+            "answer_source": "generated",
+            "chapter": "Unit-3 - Stack and Queue"
+        },
+        {
+            "question_number": "13",
+            "question_text": "A linear list of elements in which deletion can be done from one end (front) and insertion can take place only at the other end (rear) is known as _______\n(A) Queue\n(B) Stack\n(C) Tree\n(D) Linked list",
+            "marks": 1,
+            "answer": "(A) Queue\n\n**Rationale:** By definition, a queue restricts insertions to the rear end and deletions to the front end.",
+            "answer_source": "generated",
+            "chapter": "Unit-3 - Stack and Queue"
+        },
+        {
+            "question_number": "14",
+            "question_text": "What is a full binary tree?\n(A) Each node has exactly zero or two children\n(B) Each node has exactly two children\n(C) All the leaves are at the same level\n(D) Each node has exactly one or two children",
+            "marks": 1,
+            "answer": "(A) Each node has exactly zero or two children\n\n**Rationale:** A full binary tree (sometimes called a proper binary tree) is a tree in which every node has either 0 or 2 children. No node has only one child.",
+            "answer_source": "generated",
+            "chapter": "Unit-4 - Trees and Hashing"
+        },
+        {
+            "question_number": "15",
+            "question_text": "For the binary tree, find the pre order traversal sequence.\n[Tree Structure:\n      A\n    /   \\\n   B     C\n  / \\   /\n D   E F\n/ \\\nH  I   \n      G\n     / \\\n    J   K]\n(A) H I D E G F J K G C A\n(B) H D I B E A F C J G K\n(C) A B D H I E C F G J K\n(D) A B C D E F G H I J K",
+            "marks": 1,
+            "answer": "(C) A B D H I E C F G J K\n\n**Rationale:** Preorder traversal follows the Root $\\rightarrow$ Left subtree $\\rightarrow$ Right subtree sequence:\n1. Root: **A**\n2. Left Subtree of A (rooted at B):\n   - Root: **B**\n   - Left of B (rooted at D):\n     - Root: **D**\n     - Left of D: **H**\n     - Right of D: **I**\n   - Right of B: **E**\n3. Right Subtree of A (rooted at C):\n   - Root: **C**\n   - Left of C: **F**\n   - Right of C (rooted at G):\n     - Root: **G**\n     - Left of G: **J**\n     - Right of G: **K**\n\nCombining these, we get: `A B D H I E C F G J K`.",
+            "answer_source": "generated",
+            "chapter": "Unit-4 - Trees and Hashing"
+        },
+        {
+            "question_number": "16",
+            "question_text": "What is direct addressing?\n(A) Distinct array position for every possible key\n(B) Fewer array positions than keys\n(C) Fewer keys than array positions\n(D) Same array positions for all keys",
+            "marks": 1,
+            "answer": "(A) Distinct array position for every possible key\n\n**Rationale:** In direct addressing, we utilize a direct-address table where each position (slot) corresponds directly to a unique key in the universe of keys, preventing collisions.",
+            "answer_source": "generated",
+            "chapter": "Unit-4 - Trees and Hashing"
+        },
+        {
+            "question_number": "17",
+            "question_text": "What data organization method is used in Hash tables?\n(A) Stack\n(B) Array\n(C) Linked list\n(D) Queue",
+            "marks": 1,
+            "answer": "(B) Array\n\n**Rationale:** Hash tables utilize an underlying array where elements are directly indexed via computations from a hash function.",
+            "answer_source": "generated",
+            "chapter": "Unit-4 - Trees and Hashing"
+        },
+        {
+            "question_number": "18",
+            "question_text": "What would be the number of zeros in the adjacency matrix of the given graph?\n[Graph with 4 nodes: 1, 2, 3, 4]\n(A) 10\n(B) 6\n(C) 16\n(D) 0",
+            "marks": 1,
+            "answer": "(A) 10\n\n**Rationale:** For an undirected graph with $V = 4$ vertices, the total number of entries in the adjacency matrix is $V \\times V = 4 \\times 4 = 16$. \nWith 3 edges (for instance, $(1,3)$, $(3,4)$, and $(1,2)$), there will be $3 \\times 2 = 6$ non-zero entries (since each edge creates two reciprocal entries in an undirected graph matrix). \nTherefore, the number of zero entries is $16 - 6 = 10$.",
+            "answer_source": "generated",
+            "chapter": "Unit-5 - Graph"
+        },
+        {
+            "question_number": "19",
+            "question_text": "The traveling salesman problem can be solved using ________\n(A) A spanning tree\n(B) A minimum spanning tree\n(C) Bellman-Ford algorithm\n(D) DFS traversal",
+            "marks": 1,
+            "answer": "(B) A minimum spanning tree\n\n**Rationale:** A Minimum Spanning Tree (MST) is a foundational building block for TSP approximation algorithms (such as the 2-approximation metric TSP algorithm and Christofides algorithm).",
+            "answer_source": "generated",
+            "chapter": "Unit-5 - Graph"
+        },
+        {
+            "question_number": "20",
+            "question_text": "DIJKSTRA'S algorithm is used to solve ________ problem\n(A) All pair shortest path\n(B) Single source shortest path\n(C) Network flow\n(D) Sorting",
+            "marks": 1,
+            "answer": "(B) Single source shortest path\n\n**Rationale:** Dijkstra's algorithm determines the shortest paths from a single source node to all other nodes in a weighted graph with non-negative edge weights.",
+            "answer_source": "generated",
+            "chapter": "Unit-5 - Graph"
+        },
+        {
+            "question_number": "21. a.",
+            "question_text": "Define a function to multiply two $m \\times n$ matrices and return the resultant matrix.",
+            "marks": 8,
+            "answer": "### Matrix Multiplication Function in C\n\nTo multiply two matrices, the number of columns in the first matrix must match the number of rows in the second matrix. Let the first matrix be $A$ of dimensions $m \\times n$, and the second matrix $B$ of dimensions $n \\times p$. The resulting matrix $C$ will have dimensions $m \\times p$.\n\nBelow is the dynamic function implementation in C:\n\n```c\n#include <stdio.h>\n#include <stdlib.h>\n\n// Function to allocate and multiply two matrices dynamically\nint** multiplyMatrices(int** A, int** B, int m, int n, int p) {\n    // Allocate memory for the resultant m x p matrix\n    int** C = (int**)malloc(m * sizeof(int*));\n    for (int i = 0; i < m; i++) {\n        C[i] = (int*)malloc(p * sizeof(int));\n    }\n\n    // Perform matrix multiplication\n    for (int i = 0; i < m; i++) {\n        for (int j = 0; j < p; j++) {\n            C[i][j] = 0; // Initialize cell to 0\n            for (int k = 0; k < n; k++) {\n                C[i][j] += A[i][k] * B[k][j];\n            }\n        }\n    }\n    return C;\n}\n```",
+            "answer_source": "generated",
+            "chapter": "Unit-1 - Introduction"
+        },
+        {
+            "question_number": "21. b.",
+            "question_text": "How mathematical notations are used to measure the complexity of the algorithm? Explain different notations used.",
+            "marks": 8,
+            "answer": "### Measuring Algorithm Complexity using Asymptotic Notations\n\nMathematical (asymptotic) notations are used to define the execution time and space limit of an algorithm in terms of the input size $n$. They help analyze the growth of running time relative to input growth, ignoring hardware differences.\n\nThere are three primary notations used:\n\n#### 1. Big-O ($O$) Notation (Upper Bound)\n- **Definition:** Specifies the worst-case scenario. It gives the maximum rate at which the execution time can grow.\n- **Mathematical Definition:** \n  $$f(n) = O(g(n)) \\text{ if there exist positive constants } c \\text{ and } n_0 \\text{ such that } 0 \\le f(n) \\le c \\cdot g(n) \\text{ for all } n \\ge n_0.$$\n\n#### 2. Omega ($\\Omega$) Notation (Lower Bound)\n- **Definition:** Specifies the best-case scenario. It defines the minimum runtime required for an algorithm.\n- **Mathematical Definition:** \n  $$f(n) = \\Omega(g(n)) \\text{ if there exist positive constants } c \\text{ and } n_0 \\text{ such that } 0 \\le c \\cdot g(n) \\le f(n) \\text{ for all } n \\ge n_0.$$\n\n#### 3. Theta ($\\Theta$) Notation (Tight Bound)\n- **Definition:** Defines both the upper and lower bounds. It describes the exact average behavior of the algorithm.\n- **Mathematical Definition:** \n  $$f(n) = \\Theta(g(n)) \\text{ if there exist positive constants } c_1, c_2, \\text{ and } n_0 \\text{ such that } 0 \\le c_1 \\cdot g(n) \\le f(n) \\le c_2 \\cdot g(n) \\text{ for all } n \\ge n_0.$$\n\nThese notations are critical for evaluating time-space trade-offs and choosing optimal algorithms.",
+            "answer_source": "generated",
+            "chapter": "Unit-1 - Introduction"
+        },
+        {
+            "question_number": "22. a.",
+            "question_text": "Write an algorithm to demonstrate a polynomial equation using linked list for subtraction of two polynomials equations.",
+            "marks": 8,
+            "answer": "### Algorithm for Subtracting Two Polynomials Using Linked Lists\n\nEach term in a polynomial is represented as a node in a linked list containing three fields: coefficient, exponent, and a pointer to the next node.\n\n#### Node Representation\n\n```c\nstruct Term {\n    int coeff;\n    int exp;\n    struct Term* next;\n};\n\n```\n\n#### Subtraction Algorithm\n1. Initialize pointers `p1` to the head of Polynomial 1, and `p2` to the head of Polynomial 2.\n2. Create an empty linked list for the `result` polynomial.\n3. Loop while both `p1` and `p2` are not null:\n   - **Case 1: Exponent of `p1` > Exponent of `p2`**\n     - Insert the term of `p1` directly into the result list.\n     - Move `p1` to its next node.\n   - **Case 2: Exponent of `p1` < Exponent of `p2`**\n     - Create a copy of the term of `p2` but with its coefficient **negated** (since we are performing subtraction: $P_1 - P_2$).\n     - Insert this modified term into the result list.\n     - Move `p2` to its next node.\n   - **Case 3: Exponents are equal**\n     - Compute the difference: `diff_coeff = p1->coeff - p2->coeff`.\n     - If `diff_coeff != 0`, insert a node with `coeff = diff_coeff` and `exp = p1->exp` into the result.\n     - Move both `p1` and `p2` to their next nodes.\n4. If terms remain in `p1`, append them directly to the result.\n5. If terms remain in `p2`, negate their coefficients and append them to the result.\n6. Return the `result` polynomial list.",
+            "answer_source": "generated",
+            "chapter": "Unit-2 - List Structure"
+        },
+        {
+            "question_number": "22. b.",
+            "question_text": "Consider an array A[1::n] Given a position, write an algorithm to insert an element in the array. If the position is empty, the element is inserted easily. If the position is already occupied the element should be inserted with the minimum number of shifts (Note: the elements can shift to the left or to the right to make the minimum number of moves).",
+            "marks": 8,
+            "answer": "### Smart Array Insertion Algorithm (Bidirectional Shifting)\n\nTo insert an element at index $pos$ with the minimum number of shifts, we look for the nearest empty slot both to the left and to the right of $pos$. We then shift elements towards the closer empty slot to make room.\n\n#### Algorithm Steps:\n1. If `A[pos]` is empty (e.g., initialized to a sentinel value like `NULL` or `0`), write the element to `A[pos]` and terminate.\n2. Otherwise, find the nearest empty slot:\n   - Set pointers `L = pos - 1` and `R = pos + 1`.\n   - Scan simultaneously leftwards (`L--`) and rightwards (`R++`):\n     - If a left-side empty slot is found first at index $L_{empty}$:\n       - Calculate distance: $D_L = pos - L_{empty}$.\n       - Perform left shifts: Shift elements from $L_{empty}$ up to $pos-1$ to the left by 1 index.\n       - Insert the element at `A[pos]` and terminate.\n     - If a right-side empty slot is found first at index $R_{empty}$:\n       - Calculate distance: $D_R = R_{empty} - pos$.\n       - Perform right shifts: Shift elements from $pos$ up to $R_{empty}-1$ to the right by 1 index.\n       - Insert the element at `A[pos]` and terminate.",
+            "answer_source": "generated",
+            "chapter": "Unit-2 - List Structure"
+        },
+        {
+            "question_number": "23. a.",
+            "question_text": "Write an algorithm to convert an infix expression to a postfix expression. Trace the algorithm to convert the infix expression a+b * c/d+e/f to a postfix expression.",
+            "marks": 8,
+            "answer": "### Algorithm: Infix to Postfix Conversion\n1. Scan the infix expression from left to right.\n2. If the character is an operand, output it directly.\n3. If it is `(`, push it to the stack.\n4. If it is `)`, pop and output elements from the stack until `(` is reached. Pop the `(`.\n5. If it is an operator:\n   - While the stack is not empty and the operator at the top of the stack has **greater than or equal** precedence, pop it to the output.\n   - Push the scanned operator onto the stack.\n6. At the end of the expression, pop and output all operators remaining in the stack.\n\n---\n\n### Tracing: `a + b * c / d + e / f`\n\n| Character | Stack (Top on right) | Output Expression | Rationale |\n| :--- | :--- | :--- | :--- |\n| **a** | `[]` | `a` | Operand goes to output |\n| **+** | `[+]` | `a` | Stack is empty, push operator |\n| **b** | `[+]` | `a b` | Operand goes to output |\n| **\n*** | `[+, *]` | `a b` | `*` has higher precedence than `+`, push |\n| **c** | `[+, *]` | `a b c` | Operand goes to output |\n| **/** | `[+, /]` | `a b c *` | `/` has equal precedence to `*`. Pop `*` to output, push `/` |\n| **d** | `[+, /]` | `a b c * d` | Operand goes to output |\n| **+** | `[+]` | `a b c * d / +` | `+` has lower precedence than `/` and equal to `+`. Pop `/` and `+` to output, push new `+` |\n| **e** | `[+]` | `a b c * d / + e` | Operand |\n| **/** | `[+, /]` | `a b c * d / + e` | `/` has higher precedence than `+`, push |\n| **f** | `[+, /]` | `a b c * d / + e f` | Operand |\n| **EOF**| `[]` | `a b c * d / + e f / +` | Pop all remaining operators |\n\n**Final Postfix Expression:** `a b c * d / + e f / +`",
+            "answer_source": "generated",
+            "chapter": "Unit-3 - Stack and Queue"
+        },
+        {
+            "question_number": "23. b.",
+            "question_text": "Give algorithms for push and pop operations on stack using a linked list with suitable pictorial representations.",
+            "marks": 8,
+            "answer": "### Stack Operations Using Linked List\n\nIn a linked stack, insertion and deletion both happen at the head (referred to as `top`).\n\n#### 1. Push Operation\n- **Algorithm:**\n  1. Create a new node with the given data value.\n  2. Point the `next` pointer of the new node to the current `top` node.\n  3. Update `top` to point to the new node.\n- **Pictorial Representation:**\n  \n\n```text\nBefore Push:\n  top ---> [Data: A | next] ---> [Data: B | next] ---> NULL\n\n  Pushing Node 'X':\n  [Data: X | next] ---\n                     |\n                     v\n  top ---> [Data: A | next] ---> [Data: B | next] ---> NULL\n\n  After Push:\n  top ---> [Data: X | next] ---> [Data: A | next] ---> [Data: B | next] ---> NULL\n\n```\n\n#### 2. Pop Operation\n- **Algorithm:**\n  1. Check if the stack is empty (`top == NULL`). If yes, print \"Stack Underflow\" and return.\n  2. Initialize a temporary pointer: `temp = top`.\n  3. Move `top` pointer forward: `top = top->next`.\n  4. Free the memory pointing to `temp`.\n- **Pictorial Representation:**\n  \n\n```text\nBefore Pop:\n  top (temp) ---> [Data: X | next] ---> [Data: A | next] ---> [Data: B | next] ---> NULL\n\n  Advancing top:\n  temp ---------> [Data: X | next]\n  top ---------> [Data: A | next] ---> [Data: B | next] ---> NULL\n\n  After freeing temp:\n  top ---------> [Data: A | next] ---> [Data: B | next] ---> NULL\n```",
+            "answer_source": "generated",
+            "chapter": "Unit-3 - Stack and Queue"
+        },
+        {
+            "question_number": "24. a.",
+            "question_text": "Write appropriate algorithm for inserting and deleting a node in a binary search tree.",
+            "marks": 8,
+            "answer": "### BST Insertion and Deletion Algorithms\n\n#### 1. Insertion Algorithm\n**Function:** `insert(Node, key)`\n- **Step 1:** If node is `NULL`, create and return a new node containing the key.\n- **Step 2:** If `key < node.key`, recursively call `node.left = insert(node.left, key)`.\n- **Step 3:** If `key > node.key`, recursively call `node.right = insert(node.right, key)`.\n- **Step 4:** Return the unmodified node pointer.\n\n#### 2. Deletion Algorithm\n**Function:** `delete(Node, key)`\n- **Step 1:** If node is `NULL`, return `NULL` (key not found).\n- **Step 2:** If `key < node.key`, traverse left: `node.left = delete(node.left, key)`.\n- **Step 3:** If `key > node.key`, traverse right: `node.right = delete(node.right, key)`.\n- **Step 4:** If `key == node.key` (Node to delete found):\n  - **Case A (Leaf Node or 1 child):**\n    - If `node.left` is `NULL`, return `node.right`.\n    - If `node.right` is `NULL`, return `node.left`.\n  - **Case B (2 children):**\n    - Find the in-order successor (minimum value in the right subtree).\n    - Replace `node.key` with the in-order successor's key.\n    - Delete the in-order successor from the right subtree: `node.right = delete(node.right, successor.key)`.\n- **Step 5:** Return node.",
+            "answer_source": "generated",
+            "chapter": "Unit-4 - Trees and Hashing"
+        },
+        {
+            "question_number": "24. b.i.",
+            "question_text": "Create a B+ tree of order - 5 for the following data arriving in sequence 90, 27, 7, 9, 18, 21, 3, 4, 16, 11, 21, 72.",
+            "marks": 4,
+            "answer": "### B+ Tree Creation (Order $p=5$)\n- Maximum children = 5, Maximum keys = 4.\n- Minimum keys in leaf/internal nodes = $\\lceil 5/2 \\rceil - 1 = 2$.\n\n#### Step-by-Step Construction:\n1. **Insert 90, 27, 7, 9** (Sorted leaf):\n   `[7, 9, 27, 90]`\n2. **Insert 18** (Overfills leaf node, splits at middle element 18):\n   - Left Leaf: `[7, 9]`\n   - Right Leaf: `[18, 27, 90]`\n   - Root Node: `[18]`\n3. **Insert 21, 3, 4**:\n   - Leaves: `[3, 4, 7, 9]` (left), `[18, 21, 27, 90]` (right)\n   - Root: `[18]`\n4. **Insert 16** (Leaf overfills, splits at 7):\n   - Leaves: `[3, 4]`, `[7, 9, 16]`, `[18, 21, 27, 90]`\n   - Root: `[7, 18]`\n5. **Insert 11**:\n   - Leaves: `[3, 4]`, `[7, 9, 11, 16]`, `[18, 21, 27, 90]`\n   - Root: `[7, 18]`\n6. **Insert 21 (duplicate/additional), 72** (Leaf overfills and splits):\n   - Final Leaf Layout:\n     - `[3, 4]`\n     - `[7, 9, 11, 16]`\n     - `[18, 21, 21]`\n     - `[27, 72, 90]`\n   - Final Root Layout: `[7, 18, 27]`",
+            "answer_source": "generated",
+            "chapter": "Unit-4 - Trees and Hashing"
+        },
+        {
+            "question_number": "24. b.ii.",
+            "question_text": "Compare BST with AVL tree.",
+            "marks": 4,
+            "answer": "### Comparison between BST and AVL Tree\n\n| Feature | Binary Search Tree (BST) | AVL Tree |\n| :--- | :--- | :--- |\n| **Balance** | No balancing mechanism; can become highly skewed. | Self-balancing; ensures the height difference (balance factor) is at most 1. |\n| **Worst-case Height** | $O(n)$ in worst case (skewed tree). | $O(\\log n)$ strictly guaranteed. |\n| **Search Time** | Worst-case: $O(n)$ | Worst-case: $O(\\log n)$ |\n| **Insertion/Deletion** | $O(n)$ in worst case, no rotations. | $O(\\log n)$ worst case; requires balancing rotations. |\n| **Complexity** | Simple and easy to implement. | Complex, due to self-balancing rotation conditions. |",
+            "answer_source": "generated",
+            "chapter": "Unit-4 - Trees and Hashing"
+        },
+        {
+            "question_number": "25. a.",
+            "question_text": "Consider the graph given below show its adjacency list and adjacency matrix in the memory.\n[Graph structure:\nVertices: A, B, C, D\nEdges: A -> B, A -> C, B -> D, C -> D]",
+            "marks": 8,
+            "answer": "### Adjacency Matrix and List Representation\n\nGiven the directed graph with vertices $\\{A, B, C, D\\}$ and directed edges $A \\rightarrow B$, $A \\rightarrow C$, $B \\rightarrow D$, and $C \\rightarrow D$:\n\n#### 1. Adjacency Matrix\nLet rows and columns map to $A, B, C, D$ respectively:\n\n$$\n\\begin{pmatrix}\n & A & B & C & D \\\\\nA & 0 & 1 & 1 & 0 \\\\\nB & 0 & 0 & 0 & 1 \\\\\nC & 0 & 0 & 0 & 1 \\\\\nD & 0 & 0 & 0 & 0\n\\end{pmatrix}\n$$\n\n#### 2. Adjacency List\n- **A:** $\\rightarrow B \\rightarrow C \\rightarrow \\text{NULL}$\n- **B:** $\\rightarrow D \\rightarrow \\text{NULL}$\n- **C:** $\\rightarrow D \\rightarrow \\text{NULL}$\n- **D:** $\\rightarrow \\text{NULL}$",
+            "answer_source": "generated",
+            "chapter": "Unit-5 - Graph"
+        },
+        {
+            "question_number": "25. b.",
+            "question_text": "Illustrate Kruskal's algorithm to find the minimum spanning tree of a graph.",
+            "marks": 8,
+            "answer": "### Kruskal's Algorithm for Minimum Spanning Tree (MST)\n\nKruskal’s algorithm is a greedy algorithm that builds an MST by adding edges one by one in order of non-decreasing edge weights, while strictly avoiding cycles.\n\n#### Procedural Steps:\n1. **Sort:** List all edges in the graph in ascending order of their weights.\n2. **Initialize:** Create a forest where each vertex is a separate tree (using Disjoint Set Union - DSU structure).\n3. **Greedy Selection:** Iterate through the sorted edges:\n   - Check if the current edge connects two different trees (belong to different sets).\n   - If yes, **add** the edge to the MST and **union** the two sets.\n   - If no (adding the edge forms a cycle), **discard** the edge.\n4. **Termination:** Stop when the MST contains exactly $V - 1$ edges, where $V$ is the number of vertices.",
+            "answer_source": "generated",
+            "chapter": "Unit-5 - Graph"
+        },
+        {
+            "question_number": "26",
+            "question_text": "Consider a hash table with 9 slots. The hash function is h(k) = k mod 9. The following keys are inserted in order 5, 28, 19, 15, 20, 33, 12, 17, 10. Draw the contents of the hash table when the collisions are solved by\ni. Chaining\nii. Linear probing\niii. Double hashing. The second hash function $h_2(x) = 7 - (x \\% 7)$.",
+            "marks": 15,
+            "answer": "### Collision Resolution Analysis\n- Table size $m = 9$\n- Hash function: $h(k) = k \\pmod 9$\n\n#### i. Chaining\n\n| Slot | Chained Chain Node List |\n| :--- | :--- |\n| **0** | `NULL` |\n| **1** | $28 \\rightarrow 19 \\rightarrow 10 \\rightarrow \\text{NULL}$ |\n| **2** | $20 \\rightarrow \\text{NULL}$ |\n| **3** | $12 \\rightarrow \\text{NULL}$ |\n| **4** | `NULL` |\n| **5** | $5 \\rightarrow \\text{NULL}$ |\n| **6** | $15 \\rightarrow 33 \\rightarrow \\text{NULL}$ |\n| **7** | `NULL` |\n| **8** | $17 \\rightarrow \\text{NULL}$ |\n\n---\n\n#### ii. Linear Probing\nFormula: $h(k, i) = (k \\pmod 9 + i) \\pmod 9$\n\n- **5**: $5 \\pmod 9 = 5$ (placed at 5)\n- **28**: $28 \\pmod 9 = 1$ (placed at 1)\n- **19**: $19 \\pmod 9 = 1$ (collides, placed at next open slot 2)\n- **15**: $15 \\pmod 9 = 6$ (placed at 6)\n- **20**: $20 \\pmod 9 = 2$ (collides, placed at next open slot 3)\n- **33**: $33 \\pmod 9 = 6$ (collides, placed at next open slot 7)\n- **12**: $12 \\pmod 9 = 3$ (collides, placed at next open slot 4)\n- **17**: $17 \\pmod 9 = 8$ (placed at 8)\n- **10**: $10 \\pmod 9 = 1$ (collides, moves forward wrapping to find open slot 0)\n\n**Final Table:**\n`[0: 10, 1: 28, 2: 19, 3: 20, 4: 12, 5: 5, 6: 15, 7: 33, 8: 17]`\n\n---\n\n#### iii. Double Hashing\nFormula: $h(k, i) = (h_1(k) + i \\cdot h_2(k)) \\pmod 9$ where $h_2(k) = 7 - (k \\pmod 7)$\n\n- **5**: $h_1(5)=5$ (placed at 5)\n- **28**: $h_1(28)=1$ (placed at 1)\n- **19**: $h_1(19)=1$ (collides), $h_2(19) = 7 - (19 \\% 7) = 2$. Next slot: $(1 + 1 \\cdot 2) = 3$ (placed at 3)\n- **15**: $h_1(15)=6$ (placed at 6)\n- **20**: $h_1(20)=2$ (placed at 2)\n- **33**: $h_1(33)=6$ (collides), $h_2(33) = 2$. Next slot: $(6 + 2) = 8$ (placed at 8)\n- **12**: $h_1(12)=3$ (collides), $h_2(12) = 2$. Next slot: $(3 + 2) = 5$ (collides), then $(3 + 4) = 7$ (placed at 7)\n- **17**: $h_1(17)=8$ (collides), $h_2(17) = 4$. After stepping, placed at 0\n- **10**: $h_1(10)=1$ (collides), $h_2(10) = 4$. After stepping, placed at 4\n\n**Final Table:**\n`[0: 17, 1: 28, 2: 20, 3: 19, 4: 10, 5: 5, 6: 15, 7: 12, 8: 33]`",
+            "answer_source": "generated",
+            "chapter": "Unit-4 - Trees and Hashing"
+        },
+        {
+            "question_number": "27",
+            "question_text": "Apply an appropriate algorithm to find the shortest path from 'A' to every other node of A. For the given graph.\n[Graph vertices and edge weights:\nEdges: AB=3, AD=1, BD=5, BC=1, DE=1, BE=5, CE=6]",
+            "marks": 15,
+            "answer": "### Dijkstra's Single Source Shortest Path Algorithm (Source = A)\n\nLet $D(v)$ be the distance from source $A$ to node $v$, and $P(v)$ be the predecessor node.\n\n#### Initial Setup:\n- $D(A) = 0$, $D(B) = \\infty$, $D(C) = \\infty$, $D(D) = \\infty$, $D(E) = \\infty$\n- Queue of unvisited nodes: $\\{A, B, C, D, E\\}$\n\n#### Step-by-Step Execution:\n\n1. **Select node with minimum distance:** **A** ($D(A) = 0$)\n   - Relax neighbors of A:\n     - $D(B) = \\min(\\infty, 0 + 3) = 3 \\quad [P(B) = A]$\n     - $D(D) = \\min(\\infty, 0 + 1) = 1 \\quad [P(D) = A]$\n\n2. **Select node with minimum distance:** **D** ($D(D) = 1$)\n   - Relax neighbors of D:\n     - $D(B) = \\min(3, 1 + 5) = 3$\n     - $D(E) = \\min(\\infty, 1 + 1) = 2 \\quad [P(E) = D]$\n\n3. **Select node with minimum distance:** **E** ($D(E) = 2$)\n   - Relax neighbors of E:\n     - $D(B) = \\min(3, 2 + 5) = 3$\n     - $D(C) = \\min(\\infty, 2 + 6) = 8 \\quad [P(C) = E]$\n\n4. **Select node with minimum distance:** **B** ($D(B) = 3$)\n   - Relax neighbors of B:\n     - $D(C) = \\min(8, 3 + 1) = 4 \\quad [P(C) = B]$\n\n5. **Select node with minimum distance:** **C** ($D(C) = 4$)\n   - No unvisited neighbors left to relax.\n\n#### Final Results Summary:\n\n| Destination Node | Shortest Distance from A | Shortest Path | Code-Level Trace |\n| :---: | :---: | :--- | :--- |\n| **A** | 0 | $A$ | Start |\n| **B** | 3 | $A \\rightarrow B$ | Via $A$ directly |\n| **C** | 4 | $A \\rightarrow B \\rightarrow C$ | Relayed via $B$ (replaces $E$'s longer path) |\n| **D** | 1 | $A \\rightarrow D$ | Direct path |\n| **E** | 2 | $A \\rightarrow D \\rightarrow E$ | Via $D$ |",
+            "answer_source": "generated",
+            "chapter": "Unit-5 - Graph"
+        }
+    ]
+}

@@ -1,0 +1,87 @@
+{
+    "formal_filename": "2023-24_CT1_SetB_QP-Key.json",
+    "paper_title": "Data Structures - Set B",
+    "source": "2023-24 CT1 Set B",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "What is the output of this code?\n\n```c\nstruct inner {\n int x;\n};\nstruct outer {\n struct inner i;\n} o = {10};\nprintf(\"%d\", o.i.x);\n\n```\n\nA. 0\nB. 10\nC. Compilation Error\nD. Garbage Value",
+            "marks": null,
+            "answer": "B. 10\n\n**Rationale:**\nThe structure variable `o` is initialized with `{10}`. Since `i` is the first member of `struct outer` and `x` is the first member of `struct inner`, the initializer `10` directly initializes the member `o.i.x` to `10`. Thus, `printf` outputs `10`.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "2",
+            "question_text": "```c\nstruct item\n{\n int code;\n float price;\n};\n\n```\n\nWhich statement creates a pointer to a structure and allocates memory dynamically?\nA. `struct item *p = malloc(sizeof(struct item));`\nB. `struct item p = malloc(sizeof(item));`\nC. `item *p = new item;`\nD. `struct item p; *p = malloc(sizeof(p));`",
+            "marks": null,
+            "answer": "A. `struct item *p = malloc(sizeof(struct item));`\n\n**Rationale:**\nTo declare a pointer to a structure in C, we use `struct item *p`. To allocate memory dynamically on the heap, we use `malloc(sizeof(struct item))`, which returns a pointer to the allocated memory block of appropriate size.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "3",
+            "question_text": "Choose the correct ascending order of growth rate (slowest to fastest):\nA. $O(\\log n), O(n), O(n \\log n), O(n^2), O(2^n)$\nB. $O(n), O(\\log n), O(n \\log n), O(2^n), O(n^2)$\nC. $O(n \\log n), O(n), O(\\log n), O(n^2), O(2^n)$\nD. $O(n^2), O(n), O(\\log n), O(n \\log n), O(2^n)$",
+            "marks": null,
+            "answer": "A. $O(\\log n), O(n), O(n \\log n), O(n^2), O(2^n)$\n\n**Rationale:**\nThe correct ascending order of standard time complexity classes is logarithmic ($O(\\log n)$), linear ($O(n)$), linearithmic ($O(n \\log n)$), quadratic ($O(n^2)$), and exponential ($O(2^n)$).",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "4",
+            "question_text": "```c\nstruct node {\n int data;\n struct node *next;\n};\nint main() {\n struct node n1 = {5, NULL};\n struct node n2 = {10, NULL};\n // Missing line\n printf(\"%d\", ptr->data);\n}\n\n```\n\nIf the desired output is 10, what should the missing line be?\nA. `struct node *ptr = &n1;`\nB. `struct node *ptr = n2;`\nC. `struct node *ptr = &n2;`\nD. `ptr = &n1;`",
+            "marks": null,
+            "answer": "C. `struct node *ptr = &n2;`\n\n**Rationale:**\nTo access member data using the arrow operator `ptr->data` and receive an output of `10`, the pointer `ptr` must store the address of variable `n2` (which contains `10`). The variable `ptr` is declared as a pointer of type `struct node*` and assigned the address of `n2` via `&n2`.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "5",
+            "question_text": "What is the time complexity of the following subroutine as a function of n? Assume each instruction takes only O(1) time.\n\n```c\nsum = 0;\nfor (i = 1; i < n; i = i*2)\n for(j = 0; j < i; j = j+1)\n sum = sum + 1;\n\n```\n\nA. $O(n)$\nB. $O(n \\log n)$\nC. $O(n^2)$\nD. $O(n^2 \\log n)$",
+            "marks": null,
+            "answer": "A. $O(n)$\n\n**Rationale:**\nThe outer loop variable $i$ takes the values of powers of 2 less than $n$ ($i = 1, 2, 4, 8, \\dots, 2^{\\lfloor \\log_2(n-1) \\rfloor}$). For each value of $i$, the inner loop executes $i$ times. Summing up the total executions across all iterations:\n$$1 + 2 + 4 + 8 + \\dots + 2^{\\lfloor \\log_2(n-1) \\rfloor} = 2^{\\lfloor \\log_2(n-1) \\rfloor + 1} - 1 \\approx 2n = O(n)$$",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "6",
+            "question_text": "What does $f(n) = O(g(n))$ mean?\nA. $f(n)$ grows faster than $g(n)$\nB. $f(n)$ grows at the same rate as $g(n)$\nC. $f(n)$ grows slower than $g(n)$\nD. $f(n)$ grows no faster than $g(n)$",
+            "marks": null,
+            "answer": "D. $f(n)$ grows no faster than $g(n)$\n\n**Rationale:**\nBy definition, $f(n) = O(g(n))$ establishes an asymptotic upper bound. It guarantees that $f(n)$ grows at most as fast as $g(n)$ (i.e., no faster than $g(n)$) within a constant factor for large values of $n$.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "7",
+            "question_text": "How is the second element in an array accessed using pointer notation?\n\n```c\nint arr[5] = {10, 20, 30, 40, 50};\n\n```\n\nA. `*arr + 1`\nB. `*(arr + 1)`\nC. `*arr[1]`\nD. `(d) arr* + 1`",
+            "marks": null,
+            "answer": "B. `*(arr + 1)`\n\n**Rationale:**\nAn array identifier decays to a pointer to its first element. To access the element at index 1 (the second element), we add an offset of 1 to the base address and dereference the pointer using dereference operator: `*(arr + 1)`.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "8",
+            "question_text": "```c\nstruct Item *arr = malloc(n * sizeof(struct Item));\n\n```\n\nWhich are true?\nA. Allocates memory for n items\nB. arr[i].id and arr[i].price are valid\nC. Access within arr[n] is defined behavior\nD. Memory is dynamically allocated",
+            "marks": null,
+            "answer": "A, B, D are true.\n\n**Rationale:**\n- **A is true:** The malloc expression allocates sufficient contiguous memory block to hold `n` objects of type `struct Item`.\n- **B is true:** Array subscript notation `arr[i]` can be used, and its members accessed via dot notation `arr[i].id` are syntactically valid.\n- **C is false:** The valid index range for an array of size `n` is `0` to `n - 1`. Accessing `arr[n]` is an out-of-bounds error and leads to undefined behavior.\n- **D is true:** The use of `malloc` allocates memory on the heap at runtime, which represents dynamic allocation.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "9",
+            "question_text": "```c\nint **mat = malloc(n * sizeof(int*));\nfor (int i = 0; i < n; i++) {\n mat[i] = malloc(n * sizeof(int));\n}\n\n```\n\nWhich of the following are true?\nA. Creates a 2D dynamic n×n matrix\nB. Rows are contiguous in memory\nC. mat[i][j] is valid\nD. Memory leak occurs if free is not used on each mat[i]",
+            "marks": null,
+            "answer": "A, C, D are true.\n\n**Rationale:**\n- **A is true:** This sequence allocates an array of pointers to integers and then initializes each pointer with dynamically allocated integer arrays, representing a 2D dynamic array.\n- **B is false:** Since each row is allocated via a separate invocation of `malloc`, contiguous layout of rows in physical memory is not guaranteed.\n- **C is true:** Pointer-to-pointer syntax supports accessing cells with double subscripts `mat[i][j]`.\n- **D is true:** To release the memory cleanly, each row (`mat[i]`) must be freed before freeing the parent pointer block (`mat`).",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "10",
+            "question_text": "Consider the code below. Which of the following options will correctly print the value of variable a.\n\n```c\nint main()\n{\n int a=5;\n int *p;\n p=&a;\n return 0;\n}\n\n```\n\nA. `printf(\"%d\",*p);`\nB. `printf(\"%d\",**(&p));`\nC. `printf(\"%d\", &p);`\nD. `printf(\"%d\", p);`",
+            "marks": null,
+            "answer": "A and B are correct.\n\n**Rationale:**\n- Option **A** dereferences pointer `p` (which holds the address of `a`), directly producing the value stored in `a` (`5`).\n- Option **B** takes the address of the pointer variable `&p` (type `int**`), dereferences it once to get the value of `p` (address of `a`), and dereferences a second time to access the value of `a` (`5`).",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        }
+    ]
+}

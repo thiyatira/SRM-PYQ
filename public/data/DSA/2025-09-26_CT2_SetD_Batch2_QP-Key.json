@@ -1,0 +1,103 @@
+{
+    "formal_filename": "2025-09-26_CT2_SetD_Batch2_QP-Key.json",
+    "paper_title": "SRM Institute of Science and Technology, College of Engineering and Technology, School of Computing. Academic Year: 2025-26 (ODD). Test: FJ - II, Date: 26/09/2025, Course Code & Title: 21CSC201J Data structures and Algorithm, II Year / III Sem, Max. Marks: 50, SET D, BATCH 2",
+    "source": "2025-09-26 FJ - II Set D Batch 2",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "A singly linked list contains the elements: 5 -> 15 -> 25 -> 35 -> 45 -> NULL. What will be the output of the following pseudocode?\n\n```\nptr ← head \nwhile ptr ≠ NULL do \n print(ptr.data) \n ptr ← ptr.next.next \nend while\n\n```\n\nA. 5 15 25 35 45\nB. 5 25 45\nC. 45 25 5\nD. 5 15 35",
+            "marks": null,
+            "answer": "B. 5 25 45\n\nRationale:\n- `ptr` starts at `head` (5), prints 5, then moves two steps ahead via `ptr.next.next` to 25.\n- `ptr` is now 25, prints 25, then moves two steps to 45.\n- `ptr` is now 45, prints 45, then moves two steps to NULL.\n- The loop terminates since `ptr == NULL`.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: List Structure"
+        },
+        {
+            "question_number": "2",
+            "question_text": "In a Josephus problem with n = 10 people standing in a circle and every fourth person (k=4) is eliminated, what is the position of the last survivor (1-based indexing)?",
+            "marks": null,
+            "answer": "The last survivor is in position 5",
+            "answer_source": "provided",
+            "chapter": "Unit 2: List Structure"
+        },
+        {
+            "question_number": "3",
+            "question_text": "Suppose a stack has a maximum size of 4. The following operations are performed:\n\n```\nPUSH(10),\nPUSH(20),\nPOP(),\nPUSH(30),\nPUSH(40),\nPUSH(50)\n\n```\n\nWhich elements are finally in the stack (from bottom to top)?\n\nA. 10, 30, 40, 50\nB. 20, 30, 40, 50\nC. 10, 30, 40\nD. 10, 20, 30, 40",
+            "marks": null,
+            "answer": "A. 10, 30, 40, 50\n\nRationale:\n1. PUSH(10) -> Stack: [10]\n2. PUSH(20) -> Stack: [10, 20]\n3. POP() -> Stack: [10] (removes 20)\n4. PUSH(30) -> Stack: [10, 30]\n5. PUSH(40) -> Stack: [10, 30, 40]\n6. PUSH(50) -> Stack: [10, 30, 40, 50]\nThe final elements from bottom to top are 10, 30, 40, 50.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "4",
+            "question_text": "What is the postfix expression of the following infix expression:\nA + ((B + C) * ((D + E) ^ F))",
+            "marks": null,
+            "answer": "A B C + D E + F ^ * +",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "5",
+            "question_text": "Consider the single linked list is created and head is given. Give an algorithm to find middle node of the linked list with the following conditions.\na) If the number of nodes is odd, return the middle node.\nb) If the number of nodes is even, there are two middle nodes, so return the second middle node",
+            "marks": null,
+            "answer": "```python\nfunction findMiddle(head):\n    if head == NULL:\n        return NULL\n\n    # Step 1: Count nodes\n    count ← 0\n    temp ← head\n    while temp ≠ NULL:\n        count ← count + 1\n        temp ← temp.next\n\n    # Step 2: Find middle index (second middle for even)\n    middleIndex ← (count // 2) + 1\n\n    # Step 3: Traverse to middle node\n    temp ← head\n    for i = 1 to middleIndex - 1:\n        temp ← temp.next\n\n    return temp\n```",
+            "answer_source": "provided",
+            "chapter": "Unit 2: List Structure"
+        },
+        {
+            "question_number": "6",
+            "question_text": "A hospital emergency room manages patients using a data structure based on the severity of their condition (1 = most critical, 5 = least critical). Patients arrive in the following order:\n\n| Patient | Severity |\n|---|---|\n| P1 | 3 |\n| P2 | 1 |\n| P3 | 4 |\n| P4 | 2 |\n| P5 | 1 |\n\nSuggest a suitable Data Structure and represent pictorially of showing the order in which they will be treated. Give the Pseudocode for the insertion process.",
+            "marks": null,
+            "answer": "**Data Structure:** Priority Queue (highest priority is assigned to the smallest severity value).\n\n**Order of Execution:**\n\n| Step | Operation | Queue State (front = highest priority) |\n|---|---|---|\n| Initialization | Create empty queue | [ ] |\n| Arrival: P1 | Insert P1 (3) | [P1(3)] |\n| Arrival: P2 | Insert P2 (1) | [P2(1), P1(3)] |\n| Arrival: P3 | Insert P3 (4) | [P2(1), P1(3), P3(4)] |\n| Arrival: P4 | Insert P4 (2) | [P2(1), P4(2), P1(3), P3(4)] |\n| Arrival: P5 | Insert P5 (1) | [P2(1), P5(1), P4(2), P1(3), P3(4)] |\n\n**Step-by-Step Explanation**\nWhen a patient arrives, they are inserted into the queue according to severity: smaller severity value (higher priority) comes earlier in the queue.\nAfter all insertions, the queue order (front to back) for treatment is: P2(1), P5(1), P4(2), P1(3), P3(4).\n\n**Treating Patients (Remove Operations)**\n- First treated: Remove P2, queue becomes [P5(1), P4(2), P1(3), P3(4)].\n- Next: Remove P5, queue becomes [P4(2), P1(3), P3(4)].\n- Next: Remove P4, queue becomes [P1(3), P3(4)].\n- Next: Remove P1, queue becomes [P3(4)].\n- Last: Remove P3, queue becomes [] (empty).\n\n**Pseudocode**\n\n```python\nfunction insertPatient(queue, patient, severity):\n    newNode = Node(patient, severity)\n    # If queue is empty or new patient has higher priority than front\n    if queue.head == null or severity < queue.head.severity:\n        newNode.next = queue.head\n        queue.head = newNode\n        return\n    # Traverse to find correct position\n    current = queue.head\n    while current.next != null and current.next.severity <= severity:\n        current = current.next\n    newNode.next = current.next\n    current.next = newNode\n```",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "7",
+            "question_text": "A database system stores records that need to be frequently accessed, inserted, and deleted. Suppose a database contains n records, \nWrite a Pseudocode to:\na) Insert after the middle element if the database is stored as an Array, (2 Marks)\nb) Access the middle element if the database is stored as a Singly Linked List (2 Marks)\nc) Delete the middle element if the database is stored as a Doubly Linked List (2 Marks)\nd) State their time complexities. (2 Marks)",
+            "marks": 8,
+            "answer": "**a) Insert After the Middle Element (Array)**\n\n```python\nfunction insertAfterMiddle(arr, n, value):\n    mid = n // 2 # For even n, this is the lower middle\n    # Shift elements right from end to mid+1\n    for i = n to mid+1 step -1:\n        arr[i] = arr[i-1]\n    arr[mid+1] = value\n    n = n + 1\n\n```\n\n**b) Access the Middle Element (Singly Linked List)**\n\n```python\nfunction accessMiddle(head, n):\n    mid = n // 2\n    current = head\n    for i = 0 to mid-1:\n        current = current.next\n    return current.data\n\n```\n\n**c) Delete the Middle Element (Doubly Linked List)**\n\n```python\nfunction deleteMiddle(head, n):\n    mid = n // 2\n    current = head\n    for i = 0 to mid-1:\n        current = current.next\n    # Remove current node\n    if current.prev != null:\n        current.prev.next = current.next\n    if current.next != null:\n        current.next.prev = current.prev\n    # If current is head, update head\n    if current == head:\n        head = current.next\n    n = n - 1\n\n```\n\n**d) Time Complexities**\n\n| Operation | Data Structure | Time Complexity |\n|---|---|---|\n| Insert after middle | Array | $O(n)$ |\n| Access middle | Singly Linked List | $O(n)$ |\n| Delete middle | Doubly Linked List | $O(n)$ |",
+            "answer_source": "provided",
+            "chapter": "Unit 2: List Structure"
+        },
+        {
+            "question_number": "8",
+            "question_text": "Given a singly linked list and a positive integer k, design an algorithm to reverse the list in groups of k nodes. If the remaining nodes are fewer than k, leave them unchanged.\nExplain the algorithm step-by-step, trace pointer movements for each group, and illustrate your approach with the example. Discuss the time and space complexity of your solution.\nHint: Input list: 10 → 20 → 30 → 40 → 50 → 60 → NULL with k=3\nExpected output: 30 → 20 → 10 → 60 → 50 → 40 → NULL",
+            "marks": null,
+            "answer": "```python\nfunction reverseKGroup(head, k):\n    if head is null or k == 1:\n        return head\n\n    dummy = new Node(0)\n    dummy.next = head\n    prev_tail = dummy\n    current = head\n\n    while current is not null:\n        # Check if there are at least k nodes left\n        count = 0\n        node = current\n        while node is not null and count < k:\n            node = node.next\n            count += 1\n        if count < k:\n            break # Fewer than k nodes left; do not reverse\n\n        # Reverse k nodes\n        prev = null\n        tail = current\n        for i from 0 to k-1:\n            next_node = current.next\n            current.next = prev\n            prev = current\n            current = next_node\n\n        # Connect previous group to reversed group\n        prev_tail.next = prev\n        tail.next = current\n        prev_tail = tail\n\n    return dummy.next\n\n```\n\n**Example Tracing:**\nInput: `10 → 20 → 30 → 40 → 50 → 60 → NULL`, `k=3`\n\n**First group (10, 20, 30):**\n- `current` starts at 10.\n- Check 3 nodes present? Yes: 10, 20, 30.\n- Reverse these 3:\n  - `10.next = null` (after reversal, it becomes tail).\n  - `20.next = 10`\n  - `30.next = 20`\n- Reversed group: `30 → 20 → 10`\n- Set `new_head = 30`\n- Set `prev_tail = 10` (tail of reversed group)\n- Move `current` to 40 (node after 10)\n\n**Second group (40, 50, 60):**\n- `current` at 40.\n- Check 3 nodes present? Yes: 40, 50, 60.\n- Reverse these 3:\n  - `40.next = null` (tail after reversal)\n  - `50.next = 40`\n  - `60.next = 50`\n- Reversed group: `60 → 50 → 40`\n- Link previous tail (`10.next`) to 60.\n- Update `prev_tail = 40`\n- Move `current` to null (end of list)\n\nNo more nodes left.\n**Final output linked list:**\n`30 → 20 → 10 → 60 → 50 → 40 → NULL`\n\n**Time and Space Complexity:**\n- **Time complexity:** $O(n)$ where $n$ is the number of nodes in the linked list. Each node is visited and reversed at most once.\n- **Space complexity:** $O(1)$ as the reversal is done in-place using constant extra space.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: List Structure"
+        },
+        {
+            "question_number": "9",
+            "question_text": "Consider the following sparse matrix A of size 5 × 5:\n\n$$\\begin{bmatrix} 0 & 0 & 8 & 0 & 0 \\\\ 0 & 0 & 0 & 0 & 0 \\\\ 5 & 0 & 0 & 0 & 3 \\\\ 0 & 9 & 0 & 0 & 0 \\\\ 0 & 0 & 0 & 7 & 0 \\end{bmatrix}$$\n\n(a) Write the complete triplet representation of matrix S, including the header. (4 Marks)\n(b) Write pseudocode for a function SparseToTriplet(mat, rows, cols) that:\n• Accepts a 2D array mat of size rows × cols,\n• Scans the matrix in row-major order,\nConstructs and returns the triplet representation as a list of tuples. (4 Marks)",
+            "marks": 8,
+            "answer": "**a) Triplet Representation**\n\n| Row | Col | Value |\n|---|---|---|\n| 5 | 5 | 5 |\n| 0 | 2 | 8 |\n| 2 | 0 | 5 |\n| 2 | 4 | 3 |\n| 3 | 1 | 9 |\n| 4 | 3 | 7 |\n\n*(Note: The first row represents the header: [Total Rows, Total Columns, Total Non-zero Elements])* \n\n**b) Pseudocode**\n\n```python\nfunction SparseToTriplet(mat, rows, cols):\n    triplet_list = []\n    count = 0\n    for i from 0 to rows-1:\n        for j from 0 to cols-1:\n            if mat[i][j] != 0:\n                triplet_list.append((i, j, mat[i][j]))\n                count = count + 1\n    # Insert header at the beginning\n    triplet_list.insert(0, (rows, cols, count))\n    return triplet_list\n```",
+            "answer_source": "provided",
+            "chapter": "Unit 2: List Structure"
+        },
+        {
+            "question_number": "10",
+            "question_text": "You are given a string containing different types of brackets (), and [].\nDesign an algorithm that takes as input a sequence of symbols from { (, ), [, ] } using a stack to validate if the sequence forms a balanced parenthesis sequence.\nWhen will you declare the sequence as not balanced?\nWhat would be the time complexity?",
+            "marks": null,
+            "answer": "**Algorithm**\n- Initialize an empty stack.\n- Scan the string from left to right:\n  - If you see an opening bracket (`(` or `[`), push it onto the stack.\n  - If you see a closing bracket (`)` or `]`):\n    - If the stack is empty, the sequence is not balanced (there's nothing to match the closing bracket).\n    - Otherwise, pop the top of the stack and check:\n      - If the popped bracket is not the matching opening bracket (e.g., you see `)` but popped `[`), the sequence is not balanced.\n- After scanning the string:\n  - If the stack is not empty, the sequence is not balanced (there are unmatched opening brackets).\n  - If the stack is empty, the sequence is balanced.\n\n**When is the sequence not balanced?**\n- Encounter a closing bracket but the stack is empty (no opening to match).\n- Pop from the stack and the bracket does not match the closing bracket.\n- After processing, the stack is not empty (leftover openings).\n\n**Time Complexity**\n$O(n)$, where $n$ is the length of the string. Each character is processed once, and stack operations are $O(1)$.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "11",
+            "question_text": "Evaluate the following postfix expression using a stack. \nPostfix Expression: `9 3 2 * 1 + - 6 2 / +`\na. Show the contents of the stack after processing each token, clearly indicating the top of the stack. (4 Marks)\nb. Write pseudocode that evaluates any valid postfix arithmetic expression. (4 Marks)",
+            "marks": 8,
+            "answer": "**a) Stack Trace**\n\n| Token | Stack after processing (bottom → top) | Operation Description |\n|---|---|---|\n| 9 | 9 | Push 9 |\n| 3 | 9, 3 | Push 3 |\n| 2 | 9, 3, 2 | Push 2 |\n| * | 9, 6 | Pop 2 and 3, compute $3 * 2 = 6$, push 6 |\n| 1 | 9, 6, 1 | Push 1 |\n| + | 9, 7 | Pop 1 and 6, compute $6 + 1 = 7$, push 7 |\n| - | 2 | Pop 7 and 9, compute $9 - 7 = 2$, push 2 |\n| 6 | 2, 6 | Push 6 |\n| 2 | 2, 6, 2 | Push 2 |\n| / | 2, 3 | Pop 2 and 6, compute $6 / 2 = 3$, push 3 |\n| + | 5 | Pop 3 and 2, compute $2 + 3 = 5$, push 5 |\n\n**Final result: 5 (top of the stack)**\n\n**b) Pseudocode**\n\n```python\nfunction evaluatePostfix(tokens):\n    stack = empty stack\n    for each token in tokens:\n        if token is a number:\n            stack.push(token)\n        else if token is an operator:\n            operand2 = stack.pop()\n            operand1 = stack.pop()\n            result = apply_operator(operand1, operand2, token)\n            stack.push(result)\n    return stack.pop()\n\nfunction apply_operator(a, b, op):\n    if op == '+': return a + b\n    if op == '-': return a - b\n    if op == '*': return a * b\n    if op == '/': return a / b # or integer division if required\n```",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "12",
+            "question_text": "You are given a sequence of numbers representing daily stock prices. Design an algorithm using a stack to find the \"next greater element\" for each element in the sequence. The next greater element for an element x is the first element to its right that is greater than x. If no such element exists, consider it -1\n\nSample Test Case:\n\n```python\narr = [13, 7, 6, 12]\n# Output : [-1, 12, 12, -1]\n\narr = [1, 2, 3, 4]\n# Output : [2, 3, 4, -1]\n```",
+            "marks": null,
+            "answer": "**Algorithm Steps:**\n1. Initialize an empty stack and a result array of size $n$ (all values set to $-1$).\n2. Traverse the array from right to left:\n   For each element `arr[i]`:\n   - While the stack is not empty and the top of the stack $\\le$ `arr[i]`, pop the stack.\n   - If the stack is not empty after popping, the top of the stack is the next greater element for `arr[i]`.\n   - Otherwise, the next greater element is $-1$.\n   - Push `arr[i]` onto the stack.\n3. Return the result array.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Stack and Queue"
+        }
+    ]
+}

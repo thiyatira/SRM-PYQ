@@ -1,0 +1,103 @@
+{
+    "formal_filename": "2025-09-26_CT2_SetC_QP-Key.json",
+    "paper_title": "SRM Institute of Science and Technology, College of Engineering and Technology, School of Computing. Academic Year: 2025-26 (ODD). Test: FJ - II, Course Code & Title: 21CSC201J Data structures and Algorithm, II Year / III Sem, Set C, Batch 2.",
+    "source": "2025-09-26 CT2 Set C Batch 2",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "Consider an array arr = [10, 20, 30, 40, 50] with index starting at 0. \nWhat is the output of the following loop?\n\n```\ni ← 0 \nwhile i < 5 do \n    print(arr[i]) \n    i ← i + arr[i] % 3 \nend while\n\n```\n\nA. 10 20 30 40 50\nB. Infinite Loop\nC. 10 20 30 50\nD. 10 20 30",
+            "marks": null,
+            "answer": "Correct Output: 10 20 40 50\n\n**Explanation:**\n- **Iteration 1**: `i = 0`. Prints `arr[0]` which is `10`. `i` becomes `0 + (10 % 3) = 0 + 1 = 1`.\n- **Iteration 2**: `i = 1`. Prints `arr[1]` which is `20`. `i` becomes `1 + (20 % 3) = 1 + 2 = 3`.\n- **Iteration 3**: `i = 3`. Prints `arr[3]` which is `40`. `i` becomes `3 + (40 % 3) = 3 + 1 = 4`.\n- **Iteration 4**: `i = 4`. Prints `arr[4]` which is `50`. `i` becomes `4 + (50 % 3) = 4 + 2 = 6`.\n- **End of Loop**: Since `i = 6` is not less than 5, the loop terminates.\n\n*Note: Option A, B, C, D as printed contain a typographical error where the exact sequence is missing, but the official correct answer provided is **10 20 40 50**.*",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "2",
+            "question_text": "In a Josephus problem with $n = 16$ people standing in a circle and every third person ($k=3$) is eliminated, what is the position of the last survivor (1-based indexing)?",
+            "marks": null,
+            "answer": "Position 8 is the last survivor.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: List Structure"
+        },
+        {
+            "question_number": "3",
+            "question_text": "Consider a circular queue of capacity 5. Initially, front = -1 and rear = -1. After the following operations: enqueue(10), enqueue(20), dequeue(), enqueue(30), enqueue(40), enqueue(50), what will be the final values of front and rear (assuming 0-indexed array)?\n\nA. front = 1, rear = 4\nB. front = 1, rear = 0\nC. front = 2, rear = 0\nD. front = 2, rear = 1",
+            "marks": null,
+            "answer": "A. front = 1, rear = 4\n\n**Explanation:**\n1. `enqueue(10)` -> front = 0, rear = 0, array: `[10, _, _, _, _]`\n2. `enqueue(20)` -> front = 0, rear = 1, array: `[10, 20, _, _, _]`\n3. `dequeue()` -> front = 1, rear = 1, array: `[_, 20, _, _, _]`\n4. `enqueue(30)` -> front = 1, rear = 2, array: `[_, 20, 30, _, _]`\n5. `enqueue(40)` -> front = 1, rear = 3, array: `[_, 20, 30, 40, _]`\n6. `enqueue(50)` -> front = 1, rear = 4, array: `[_, 20, 30, 40, 50]`",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "4",
+            "question_text": "What is the postfix expression of the following infix expression:\n$$(A + B * (C \\wedge D - E) \\wedge (F + G * H)) - I$$",
+            "marks": null,
+            "answer": "ABCD^E-FGH*+^*+I-",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "5",
+            "question_text": "You are given a sorted singly linked list with multiple repeated values. Write a Pseudocode to compress the list such that all duplicates are removed\nExample:\nInput: 10 → 10 → 20 → 30 → 30 → 40 → NULL\nOutput: 10 → 20 → 30 → 40 → NULL",
+            "marks": null,
+            "answer": "```c\n// Function to remove duplicates from a sorted linked list\nstruct Node* removeDuplicates(struct Node* head) {\n struct Node* current = head;\n struct Node* temp;\n \n if (head == NULL)\n return head;\n \n while (current->next != NULL) {\n if (current->data == current->next->data) // Duplicate found: skip the next node\n {\n temp = current->next;\n current->next = current->next->next;\n free(temp); // free memory of removed node\n } else {\n current = current->next; // Move forward\n }\n }\n return head;\n}\n```",
+            "answer_source": "provided",
+            "chapter": "Unit 2: List Structure"
+        },
+        {
+            "question_number": "6",
+            "question_text": "Consider the queue given below which has FRONT = 1 and REAR = 5.\n\n| | A | B | C | D | E | | | |\n\ni) Perform the following operations on the queue:\n(a) Add F\n(b) Delete two letters\n(c) Add G\n(d) Add H\n(e) Delete four letters\n(f) Add I\n\nii) Write pseudocode for Add () and Delete ()",
+            "marks": null,
+            "answer": "**i) Step-by-step Execution:**\n- Initial: `A B C D E` (F=1, R=5)\n- a) Add F: `A B C D E F` (F=1, R=6)\n- b) Delete two letters: `C D E F` (F=3, R=6)\n- c) Add G: `C D E F G` (F=3, R=7)\n- d) Add H: `C D E F G H` (F=3, R=8)\n- e) Delete four letters: `G H` (F=7, R=8)\n- f) Add I: `G H I` (F=7, R=9)\n\n**ii) Pseudocode:**\n\n```\nProcedure Add(Q, ITEM)\n if REAR = SIZE then\n print \"Queue Overflow\"\n else\n REAR ← REAR + 1\n Q[REAR] ← ITEM\n if FRONT = 0 then\n FRONT ← 1\n end if\n end if\nEnd Procedure\n\nProcedure Delete(Q)\n if FRONT = 0 or FRONT > REAR then\n print \"Queue Underflow\"\n else\n ITEM ← Q[FRONT]\n FRONT ← FRONT + 1\n if FRONT > REAR then\n FRONT ← 0\n REAR ← 0\n end if\n return ITEM\n end if\nEnd Procedure\n```",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "7",
+            "question_text": "In an operating system, 5 applications (A1, A2, A3, A4, A5) are waiting for CPU time. The scheduler uses Round Robin scheduling with a time quantum of 2 units, and the processes are stored in a circular linked list. The CPU burst times of the applications are: A1 = 5 units, A2 = 3 units, A3 = 6 units, A4 = 4 units and A5 = 2 units respectively. Assume that you have circular linked list of size 5(the nodes contain the CPU burst time of given five applications in the order, node1=A1, node2=A2, node3=A3….).\n\nA) Write the pseudocode to show the execution order of processes cycle by cycle, indicating remaining times after each round. (6 marks)\n\nB) Remove an application from the list when its execution completes. (2 marks)",
+            "marks": 8,
+            "answer": "**A) Pseudocode for execution order:**\n\n```cpp\nvoid RoundRobin(Process* head, int timeQuantum) {\n Process* ptr = head;\n int allCompleted;\n do {\n allCompleted = 1; // assume all processes finished\n Process* start = ptr; // mark start of this cycle\n do {\n if(ptr->remainingTime > 0) {\n allCompleted = 0; // there is at least one process left\n // Execute process for min(timeQuantum, remainingTime)\n if(ptr->remainingTime > timeQuantum) {\n print(ptr->name, \"executes for\", timeQuantum, \"units\");\n ptr->remainingTime -= timeQuantum;\n } \n else {\n print(ptr->name, \"executes for\", ptr->remainingTime, \"units (finishes)\");\n ptr->remainingTime = 0;\n }\n print(\"Remaining time of\", ptr->name, \"=\", ptr->remainingTime);\n }\n ptr = ptr->next; // move to next process\n } while(ptr != start); // full cycle completed\n } while(!allCompleted); // repeat until all processes finished\n}\n\n```\n\n**B) Pseudocode to remove completed application:**\n\n```cpp\nProcess* RemoveProcess(Process* head, Process* toRemove) {\n if(head == NULL) return NULL; // Only one node in the list\n if(head == toRemove && head->next == head) {\n free(toRemove);\n return NULL;\n }\n Process* prev = head; // Find previous node\n while(prev->next != toRemove)\n prev = prev->next; // Remove node\n prev->next = toRemove->next; \n if(toRemove == head) // Update head if needed\n head = toRemove->next;\n free(toRemove);\n return head;\n}\n```",
+            "answer_source": "provided",
+            "chapter": "Unit 2: List Structure"
+        },
+        {
+            "question_number": "8",
+            "question_text": "Consider that we have an unsorted doubly linked list containing n nodes, write an algorithm to remove duplicate nodes while preserving the original order.",
+            "marks": null,
+            "answer": "```\n1. Initialize pointer current = head\n2. While current != NULL do\n    2.1 Initialize pointer runner = current->next\n    2.2 While runner != NULL do\n        2.2.1 If runner->data == current->data then        // Duplicate found, remove runner\n              temp = runner\n              runner = runner->next                     // Adjust links to remove temp node\n              if temp->prev != NULL then\n                 temp->prev->next = temp->next\n              end if\n              if temp->next != NULL then\n                 temp->next->prev = temp->prev\n              end if\n              free(temp)                                // delete node\n        2.2.2 Else\n              runner = runner->next\n        End If\n    End While\n    2.3 Move current = current->next\nEnd While\n```",
+            "answer_source": "provided",
+            "chapter": "Unit 2: List Structure"
+        },
+        {
+            "question_number": "9",
+            "question_text": "Consider the following two polynomials:\n• $P_1(x) = 8x^3 + 9x^2 + 4x + 6$\n• $P_2(x) = 3x^3 + 2x^2 + 2x + 1$\n\n(a) Illustrate the linked list representation for each of the two polynomials. (4 Marks)\n(b) Write pseudocode that subtracts two such polynomials and returns the resulting polynomial. (4 Marks)",
+            "marks": 8,
+            "answer": "**(a) Linked List Representation:**\n\n- **$P_1(x)$:**\n  `[8 | 3] → [9 | 2] → [4 | 1] → [6 | 0 | X]`\n- **$P_2(x)$:**\n  `[3 | 3] → [2 | 2] → [2 | 1] → [1 | 0 | X]`\n\n*(Visualized as nodes containing `[coefficient | exponent] → next`)*\n\n**(b) Pseudocode:**\n\n```cpp\nPolyNode* SubtractPolynomials(PolyNode* P1, PolyNode* P2) {\n PolyNode* resultHead = NULL; // head of result list\n PolyNode* resultTail = NULL;\n while(P1 != NULL || P2 != NULL) {\n PolyNode* newNode = (PolyNode*)malloc(sizeof(PolyNode));\n if(P1 != NULL && P2 != NULL) {\n if(P1->exp == P2->exp) {\n newNode->coeff = P1->coeff - P2->coeff;\n newNode->exp = P1->exp;\n P1 = P1->next;\n P2 = P2->next;\n } \n else if(P1->exp > P2->exp) {\n newNode->coeff = P1->coeff;\n newNode->exp = P1->exp;\n P1 = P1->next;\n } \n else { // P2->exp > P1->exp\n newNode->coeff = -P2->coeff; // subtracting => negate\n newNode->exp = P2->exp;\n P2 = P2->next;\n }\n } \n else if(P1 != NULL) { // remaining P1 terms\n newNode->coeff = P1->coeff;\n newNode->exp = P1->exp;\n P1 = P1->next;\n } \n else { // remaining P2 terms\n newNode->coeff = -P2->coeff;\n newNode->exp = P2->exp;\n P2 = P2->next;\n }\n newNode->next = NULL;\n if(resultHead == NULL) { // Append to result list\n resultHead = resultTail = newNode;\n } else {\n resultTail->next = newNode;\n resultTail = newNode;\n }\n }\n return resultHead;\n}\n```",
+            "answer_source": "provided",
+            "chapter": "Unit 2: List Structure"
+        },
+        {
+            "question_number": "10",
+            "question_text": "A popular web browser keeps track of the pages a user visits using a data structure to implement the “Back” functionality. Each time a user visits a new webpage, the page is inserted into the data structure. Clicking the “Back” button deletes the current page from the data structure and navigates to the previous one.\n\nA user visits the following web pages in this order:\nHome → About → Services → Blog → Contact → Careers\nThen the user clicks the “Back” button three times and then visits a new page FAQ.\n\n1. Identify the Data structure and draw diagrams for every visit of web pages (1 Mark)\n2. Write the pseudocode for the “Visit New Page” and “Back” operations. (3+3 Marks)\nExplain why the data structure is an appropriate one for implementing the “Back” feature in a web browser. (1 Mark)",
+            "marks": 8,
+            "answer": "**Answer:**\nThe appropriate data structure is a **Stack**.\n\n**1. Stack trace diagrams of visits:**\n- Home\n- Home → About\n- Home → About → Services\n- Home → About → Services → Blog\n- Home → About → Services → Blog → Contact\n- Home → About → Services → Blog → Contact → Careers\n- Home → About → Services → Blog → Contact (Back 1)\n- Home → About → Services → Blog (Back 2)\n- Home → About → Services (Back 3)\n- Home → About → Services → FAQ (Visit FAQ)\n\n**2. Pseudocodes:**\n- **Visit New Page (PUSH):**\n\n```\nStep 1: IF TOP = MAX - 1\n           PRINT \"OVERFLOW\"\n           Goto Step 4\n        [END OF IF]\nStep 2: SET TOP = TOP + 1\nStep 3: SET STACK[TOP] = VALUE\nStep 4: END\n\n```\n\n- **Back (POP):**\n\n```\nStep 1: IF TOP = NULL\n           PRINT \"UNDERFLOW\"\n           Goto Step 4\n        [END OF IF]\nStep 2: SET VAL = STACK[TOP]\nStep 3: SET TOP = TOP - 1\nStep 4: END\n\n```\n\n**Explanation:**\nStack is perfect for the \"Back\" feature because the most recently visited page is removed first (Last-In, First-Out: LIFO).",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "11",
+            "question_text": "Convert the following infix expression to its equivalent postfix form using a stack. \nInfix Expression:\n$$A + B * (C \\wedge D - E) / (F + G * H) - I$$",
+            "marks": null,
+            "answer": "**Postfix Expression:** `ABCD^E-*FGH^+/+I-`\n\n**Step-by-step conversion trace:**\n\n| Infix symbol | Operator Stack | Postfix |\n| :--- | :--- | :--- |\n| A | | A |\n| + | + | A |\n| B | + | AB |\n| * | +* | AB |\n| ( | +*( | AB |\n| C | +*( | ABC |\n| ^ | +*(^ | ABC |\n| D | +*(^ | ABCD |\n| - | +*(- | ABCD^ |\n| E | +*(- | ABCD^E |\n| ) | +* | ABCD^E- |\n| / | +/ | ABCD^E-* |\n| ( | +/( | ABCD^E-* |\n| F | +/( | ABCD^E-*F |\n| + | +/(+ | ABCD^E-*F |\n| G | +/(+ | ABCD^E-*FG |\n| ^ | +/(+^ | ABCD^E-*FG |\n| H | +/(+^ | ABCD^E-*FGH |\n| ) | +/ | ABCD^E-*FGH^+ |\n| - | - | ABCD^E-*FGH^+/+ |\n| I | - | ABCD^E-*FGH^+/+I |\n| | | ABCD^E-*FGH^+/+I- |\n\n**Pseudocode (4 Marks):**\n\n```cpp\n// Function to return precedence of operators\nint precedence(char op) {\n if (op == '^') return 3;\n else if (op == '*' || op == '/') return 2;\n else if (op == '+' || op == '-') return 1;\n else return 0;\n}\n\nInfixToPostfix(string infix) { // Function to convert infix to postfix\n Stack s; // stack to hold operators\n string postfix = \"\"; // output expression\n char ch;\n for (i = 0; i < length(infix); i++) {\n ch = infix[i];\n if (ch is operand) {\n // directly add operand to postfix\n postfix = postfix + ch;\n }\n else if (ch == '(') {\n push(s, ch);\n }\n else if (ch == ')') {\n while (!isEmpty(s) && top(s) != '(') {\n postfix = postfix + pop(s);\n }\n pop(s); // discard '('\n }\n else if (ch is operator) {\n while (!isEmpty(s) && precedence(top(s)) >= precedence(ch)) {\n postfix = postfix + pop(s);\n }\n push(s, ch);\n }\n }\n while (!isEmpty(s)) { // pop any remaining operators\n postfix = postfix + pop(s);\n }\n return postfix;\n}\n```",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Stack and Queue"
+        },
+        {
+            "question_number": "12",
+            "question_text": "In a corporate setting, a centralized print server manages simultaneous print job requests from departments like HR, Finance, and Engineering. Each job has different characteristics: size (pages), urgency (deadline), and importance (departmental priority). Illustrate with an example of five print jobs having different priorities and arrival orders.\n• Show how jobs are inserted and processed step-by-step. (4 Marks)\nBased on the assigned values of deadline and priority draw the diagrams and provide explanation accordingly. \n\nPseudocode for Enqueue: (2 Marks)\nPseudocode for Dequeue: (2 Marks)",
+            "marks": 8,
+            "answer": "**Example of 5 Print Jobs:**\nWe define 5 print jobs with designated priorities (1 is highest, 5 is lowest):\n1. Job A: Priority 3\n2. Job B: Priority 1\n3. Job C: Priority 4\n4. Job D: Priority 2\n5. Job E: Priority 5\n\n**Step-by-Step Priority Queue Operations:**\n- **Insert Job A (Priority 3)**: Queue: `[Job A (P3)]`\n- **Insert Job B (Priority 1)**: Since priority 1 is higher than 3, insert before Job A. Queue: `[Job B (P1)] → [Job A (P3)]`\n- **Insert Job C (Priority 4)**: Priority 4 is lower than 3, insert after Job A. Queue: `[Job B (P1)] → [Job A (P3)] → [Job C (P4)]`\n- **Insert Job D (Priority 2)**: Priority 2 is between 1 and 3, insert between Job B and Job A. Queue: `[Job B (P1)] → [Job D (P2)] → [Job A (P3)] → [Job C (P4)]`\n- **Insert Job E (Priority 5)**: Insert at the end. Queue: `[Job B (P1)] → [Job D (P2)] → [Job A (P3)] → [Job C (P4)] → [Job E (P5)]`\n\n**Processing Step-by-Step (Deletion):**\n- Job B (P1) is processed first.\n- Job D (P2) is processed second.\n- Job A (P3) is processed third, and so on.\n\n---\n\n**Pseudocode for Enqueue (Priority Queue Linked List Implementation):**\n\n```\nInsert (HEAD, DATA, PRIORITY):\n• Step 1: Create new node with DATA and PRIORITY\n• Step 2: Check if HEAD has lower priority. If true follow Steps 3-4 and end.\n          Else goto Step 5.\n• Step 3: NEW -> NEXT = HEAD\n• Step 4: HEAD = NEW\n• Step 5: Set TEMP to head of the list\n• Step 6: While TEMP -> NEXT != NULL and TEMP -> NEXT -> PRIORITY > PRIORITY\n• Step 7: TEMP = TEMP -> NEXT\n          [END OF LOOP]\n• Step 8: NEW -> NEXT = TEMP -> NEXT\n• Step 9: TEMP -> NEXT = NEW\n• Step 10: End\n\n```\n\n**Pseudocode for Dequeue:**\n\n```\nDelete(HEAD):\n• Step 1: Set the head of the list to the next node in\n          the list. HEAD = HEAD -> NEXT.\n• Step 2: Free the node at the head of the list\n• Step 3: End\n```",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Stack and Queue"
+        }
+    ]
+}
