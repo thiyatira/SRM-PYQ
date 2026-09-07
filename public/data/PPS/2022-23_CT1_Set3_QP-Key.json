@@ -36,7 +36,7 @@
         },
         {
             "question_number": "5",
-            "question_text": "What will be the output of the following code snippet?\n\n#include <stdio.h>\nint main() {\nint a = 3, b = 5;\nint t = a;\na = b;\nb = t;\nprintf(\"%d %d\", a, b);\nreturn 0;\n}\n(a) 3 5\n(b) 3 3\n(c) 5 5\n(d) 5 3",
+            "question_text": "What will be the output of the following code snippet?\n\n```c\n#include <stdio.h>\nint main() {\nint a = 3, b = 5;\nint t = a;\na = b;\nb = t;\nprintf(\"%d %d\", a, b);\nreturn 0;\n}\n```\n\n(a) 3 5\n(b) 3 3\n(c) 5 5\n(d) 5 3",
             "marks": 1,
             "answer": "(d) 5 3",
             "answer_source": "provided",
@@ -44,7 +44,7 @@
         },
         {
             "question_number": "6",
-            "question_text": "What is the output of the following code snippet?\n\nint main() {\nint sum = 2 + 4 / 2 + 6 * 2;\nprintf(\"%d\", sum);\nreturn 0;\n}\n(a) 2\n(b) 15\n(c) 16\n(d) 18",
+            "question_text": "What is the output of the following code snippet?\n\n```c\nint main() {\nint sum = 2 + 4 / 2 + 6 * 2;\nprintf(\"%d\", sum);\nreturn 0;\n}\n```\n\n(a) 2\n(b) 15\n(c) 16\n(d) 18",
             "marks": 1,
             "answer": "(d) 18",
             "answer_source": "provided",
@@ -52,7 +52,7 @@
         },
         {
             "question_number": "7",
-            "question_text": "What will be the output of the following code snippet?\n\n#include <stdio.h>\nint main() {\nint a = 3;\nint res = a++ + ++a + a++ + ++a;\nprintf(\"%d\", res);\n}\n(a) 12\n(b) 24\n(c) 20\n(d) 18",
+            "question_text": "What will be the output of the following code snippet?\n\n```c\n#include <stdio.h>\nint main() {\nint a = 3;\nint res = a++ + ++a + a++ + ++a;\nprintf(\"%d\", res);\n}\n```\n\n(a) 12\n(b) 24\n(c) 20\n(d) 18",
             "marks": 1,
             "answer": "(b) 24",
             "answer_source": "provided",
@@ -76,7 +76,7 @@
         },
         {
             "question_number": "10",
-            "question_text": "What will be the output of the following code snippet?\n\nvoid solve() {\nprintf(\"%d \", 9 / 2);\nprintf(\"%f\", 9.0 / 2);\n}\n(a) 4 4.5000\n(b) 4 4\n(c) 4.500 4.500\n(d) 4.5 4.50",
+            "question_text": "What will be the output of the following code snippet?\n\n```c\nvoid solve() {\nprintf(\"%d \", 9 / 2);\nprintf(\"%f\", 9.0 / 2);\n}\n```\n\n(a) 4 4.5000\n(b) 4 4\n(c) 4.500 4.500\n(d) 4.5 4.50",
             "marks": 1,
             "answer": "(a) 4 4.5000",
             "answer_source": "provided",
@@ -94,7 +94,7 @@
             "question_number": "B-2",
             "question_text": "Why do we use header files?",
             "marks": 2,
-            "answer": "A header file is a file with extension .h which contains C function declarations and macro definitions to be shared between several source files. There are two types of header files:\n\n\u27a4 The files that the programmer writes (user defined)\n\u27a4 The files that comes with your compiler.(System header files)\n\nEach header file contains information (or declarations) for a particular group of functions. Like stdio.h header file contains declarations of standard input and output functions available in C which is used for get the input and print the output. Similarly, the header file math.h contains declarations of mathematical functions available in C.\n\nWhen we want to use any function in our c program then first we need to import their definition from c library, for importing their declaration and definition we need to include header file in program by using #include. Header file include at the top of any C program.",
+            "answer": "A header file is a file with extension .h which contains C function declarations and macro definitions to be shared between several source files. There are two types of header files:\n\n➤ The files that the programmer writes (user defined)\n➤ The files that comes with your compiler.(System header files)\n\nEach header file contains information (or declarations) for a particular group of functions. Like stdio.h header file contains declarations of standard input and output functions available in C which is used for get the input and print the output. Similarly, the header file math.h contains declarations of mathematical functions available in C.\n\nWhen we want to use any function in our c program then first we need to import their definition from c library, for importing their declaration and definition we need to include header file in program by using #include. Header file include at the top of any C program.",
             "answer_source": "provided",
             "chapter": "Unit 1: Introduction to C: Structure of the C program"
         },
@@ -110,7 +110,7 @@
             "question_number": "B-4",
             "question_text": "Write a C program to check whether the person is eligible to vote.",
             "marks": 2,
-            "answer": "#include<stdio.h>\nint main() {\nint age;\nprintf(\"Enter your age\\n\");\nscanf(\"%d\", &age);\n\n(age >= 18) ? printf(\"Yes, you are eligible for voting!\"): printf(\"You, you are not eligible for voting!\");\n\nreturn 0;\n}",
+            "answer": "```c\n#include<stdio.h>\nint main() {\nint age;\nprintf(\"Enter your age\\n\");\nscanf(\"%d\", &age);\n\n(age >= 18) ? printf(\"Yes, you are eligible for voting!\"): printf(\"You, you are not eligible for voting!\");\n\nreturn 0;\n}\n```",
             "answer_source": "provided",
             "chapter": "Unit 1: Condition Operators"
         },
@@ -118,7 +118,7 @@
             "question_number": "B-5",
             "question_text": "Write a C program to find the largest of three numbers",
             "marks": 2,
-            "answer": "\u2022 #include <stdio.h>\n\u2022 int a, b, c, big;\n\u2022 printf(\"Enter three numbers : \");\n\u2022 scanf(\"%d %d %d\", &a, &b, &c);\n\u2022 big = a > b ? (a > c?a:c): (b > c ? b : c) ;\n\u2022 printf(\"\\nThe biggest number is : %d\", big) ;\n\u2022 }",
+            "answer": "• #include <stdio.h>\n\n```c\n• int a, b, c, big;\n• printf(\"Enter three numbers : \");\n• scanf(\"%d %d %d\", &a, &b, &c);\n• big = a > b ? (a > c?a:c): (b > c ? b : c) ;\n• printf(\"\\nThe biggest number is : %d\", big) ;\n• }\n```",
             "answer_source": "provided",
             "chapter": "Unit 1: Condition Operators"
         },
@@ -126,7 +126,7 @@
             "question_number": "C-1A",
             "question_text": "Write a program that prints the numbers 1 to 4 on the same line. Write the program using the following methods.\na) Using one printf statement with no conversion specifiers.\nb) Using one printf statement with four conversion specifiers.\nc) Using four printf statements.",
             "marks": 5,
-            "answer": "#include <stdio.h>\n\nint main() {\nint x, y, z, a;\n\n// a\nprintf( \"1, 2, 3, 4\\n\");\n\nx = 1;\ny = 2;\nz = 3;\na = 4;\n\n// b\nprintf(\"%d,%d, %d %d\\n\", x, y, z, a);\n\n// c\nprintf(\"1, \");\nprintf(\"2, \");\nprintf(\"3, \");\nprintf(\"4\\n\");\n\nreturn 0;\n}",
+            "answer": "```c\n#include <stdio.h>\n\nint main() {\nint x, y, z, a;\n\n// a\nprintf( \"1, 2, 3, 4\\n\");\n\nx = 1;\ny = 2;\nz = 3;\na = 4;\n\n// b\nprintf(\"%d,%d, %d %d\\n\", x, y, z, a);\n\n// c\nprintf(\"1, \");\nprintf(\"2, \");\nprintf(\"3, \");\nprintf(\"4\\n\");\n\nreturn 0;\n}\n```",
             "answer_source": "provided",
             "chapter": "Unit 1: Input and output statements"
         },
@@ -134,7 +134,7 @@
             "question_number": "C-1B",
             "question_text": "Display the following checkerboard pattern with eight Printf statementsand then display the same pattern with as fewPrintf statements as possible.\n\n********\n********\n********\n********\n********\n********\n********\n********",
             "marks": 5,
-            "answer": "int main()\n{\nprintf(\"********\\n\");\nprintf(\"********\\n\");\nprintf(\"********\\n\");\nprintf(\"********\\n\");\nprintf(\"********\\n\");\nprintf(\"********\\n\");\nprintf(\"********\\n\");\nprintf(\"********\\n\");\n\nprintf(\"\\n\\n\");\n\nprintf(\"********\\n********\\n********\\n********\\n********\\n********\\n********\\n********\\n\");\n\nreturn 0;\n}",
+            "answer": "```c\nint main()\n{\nprintf(\"********\\n\");\nprintf(\"********\\n\");\nprintf(\"********\\n\");\nprintf(\"********\\n\");\nprintf(\"********\\n\");\nprintf(\"********\\n\");\nprintf(\"********\\n\");\nprintf(\"********\\n\");\n\nprintf(\"\\n\\n\");\n\nprintf(\"********\\n********\\n********\\n********\\n********\\n********\\n********\\n********\\n\");\n\nreturn 0;\n}\n```",
             "answer_source": "provided",
             "chapter": "Unit 1: Input and output statements"
         }

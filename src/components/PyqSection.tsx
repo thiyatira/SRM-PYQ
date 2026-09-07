@@ -2,6 +2,15 @@
 
 import React, { useEffect, useState } from "react";
 import katex from "katex";
+import Prism from "prismjs";
+import "prismjs/components/prism-clike";
+import "prismjs/components/prism-c";
+import "prismjs/components/prism-cpp";
+import "prismjs/components/prism-java";
+import "prismjs/components/prism-python";
+import "prismjs/components/prism-sql";
+import "prismjs/components/prism-javascript";
+import "prismjs/components/prism-bash";
 
 const SUBJECTS = [
   { code: "PPS", name: "Programming for Problem Solving", title: "21CSS101J: Programming for Problem Solving" },
@@ -262,18 +271,279 @@ function renderLatex(text: string): string {
     });
 }
 
-function markdownToHtml(md?: string) {
-  if (!md) return "";
-  const html = md
-    .replace(/```([\s\S]*?)```/g, (m, code) => `<pre><code>${code.replace(/</g, "&lt;").replace(/>/g, "&gt;")}</code></pre>`)
-    .replace(/`([^`]+)`/g, "<code>$1</code>")
+function detectCodeLanguage(code: string): string {
+  if (
+    /System\.out\.|public\s+class\b|String\[\]\s+args|extends\s+\w+|implements\s+\w+|JFrame|JButton|Frame\b/.test(
+      code
+    )
+  ) {
+    return "java";
+  }
+  if (/cout\s*<<|cin\s*>>|std::|#include\s*<iostream>/.test(code)) {
+    return "cpp";
+  }
+  if (/#include\b|printf\s*\(|scanf\s*\(|malloc\s*\(|strlen\s*\(|strcpy\s*\(/.test(code)) {
+    return "c";
+  }
+  if (
+    /(?:def\s+\w+\s*\(|import\s+(?:numpy|pandas|math|sys|os)|print\s*\()/.test(code) &&
+    !code.includes(";")
+  ) {
+    return "python";
+  }
+  if (/\b(?:SELECT|CREATE\s+TABLE|INSERT\s+INTO|DROP\s+TABLE)\b/i.test(code)) {
+    return "sql";
+  }
+  if (code.includes(";") && (code.includes("{") || /int\s+|double\s+/.test(code))) {
+    if (code.includes("boolean") || code.includes("String")) {
+      return "java";
+    }
+    return "c";
+  }
+  return "text";
+}
+
+const STRONG_CODE_STARTERS = [
+  /^\s*#(?:include|define)\b/,
+  /^\s*(?:public|private|protected)?\s*(?:static\s+)?(?:final\s+|abstract\s+)?(?:class|interface|enum)\s+\w+/,
+  /^\s*import\s+[\w.*]+;/,
+  /^\s*(?:import\s+(?:numpy|pandas|math|sys|os|re|random)\b|from\s+\w+\s+import\b)/,
+  /^\s*def\s+\w+\s*\(/,
+  /^\s*(?:public\s+)?(?:static\s+)?(?:void|int)\s+main\s*\(/,
+  /^\s*System\.out\./,
+  /^\s*(?:printf|scanf)\s*\(/,
+  /^\s*(?:cout\s*<<|cin\s*>>)/,
+  /^\s*(?:SELECT\s+.*FROM|CREATE\s+TABLE)\b/i,
+];
+
+const CODE_LINE_SIGNALS = [
+  /[{};]\s*$/,
+  /^\s*\/\//,
+  /^\s*\/\*/,
+  /^\s*\*\//,
+  /^\s*System\.out\./,
+  /^\s*(?:printf|scanf)\(/,
+  /^\s*cout\s*<</,
+  /^\s*cin\s*>>/,
+  /^\s*(?:return|break|continue)\b.*[;:]$/,
+  /^\s*(?:public|private|protected)\b/,
+  /^\s*(?:int|float|double|char|boolean|String|long|short|void)\b.*[;=()]$/,
+  /^\s*(?:if|else\s+if|else|for|while|do|switch)\s*\(.*[:{;]?$/,
+  /^\s*case\s+[^:]+:|^\s*default\s*:/,
+  /^\s*def\s+\w+/,
+  /^\s*class\s+\w+/,
+  /^\s*#include\b/,
+  /^\s*throw\s+new\b/,
+  /^\s*[a-zA-Z_]\w*\s*=\s*.+;/,
+  /^\s*[a-zA-Z_]\w*\.[a-zA-Z_]\w*\(.*;$/,
+  /^\s*[{}]$/,
+];
+
+const MCQ_OPTION_RE = /^\s*(?:[-*]\s*)?(?:[A-Da-d]\.|\([A-Da-d]\)|[A-Da-d]\)|[A-Da-d]:)\s+/;
+
+function isMcqOption(line: string): boolean {
+  return MCQ_OPTION_RE.test(line.trim());
+}
+
+function isProseQuestionEnd(line: string): boolean {
+  const s = line.trim();
+  if (!s || s.endsWith(";") || s.endsWith("{") || s.endsWith("}")) return false;
+  const lower = s.toLowerCase();
+  if (lower.endsWith("?")) return true;
+  return (
+    /^(?:why|what|how|which|explain|predict|find|determine|calculate|debug|state)\b/i.test(
+      lower
+    ) &&
+    (s.includes(":") || s.includes("?") || s.includes("."))
+  );
+}
+
+function isCodeLine(line: string): boolean {
+  const s = line.trim();
+  if (!s || isMcqOption(line) || isProseQuestionEnd(line)) return false;
+  return CODE_LINE_SIGNALS.some((pat) => pat.test(line));
+}
+
+function autoFenceCode(text: string): string {
+  if (!text || text.includes("```")) return text;
+
+  const lines = text.split("\n");
+  const n = lines.length;
+  const resultLines: string[] = [];
+  let i = 0;
+
+  while (i < n) {
+    const line = lines[i];
+    const isStart =
+      STRONG_CODE_STARTERS.some((pat) => pat.test(line)) ||
+      (isCodeLine(line) && i + 1 < n && isCodeLine(lines[i + 1]));
+
+    if (isStart) {
+      const block: string[] = [];
+      const startIndex = i;
+      while (i < n) {
+        const curr = lines[i];
+        if (!curr.trim()) {
+          if (i + 1 < n && isCodeLine(lines[i + 1])) {
+            block.push(curr);
+            i++;
+            continue;
+          } else {
+            break;
+          }
+        }
+        if (isMcqOption(curr) || isProseQuestionEnd(curr)) break;
+        if (isCodeLine(curr)) {
+          block.push(curr);
+          i++;
+        } else {
+          break;
+        }
+      }
+
+      if (i === startIndex) {
+        resultLines.push(lines[i]);
+        i++;
+        continue;
+      }
+
+      const codeStr = block.join("\n").trim();
+      const hasStrong = STRONG_CODE_STARTERS.some((pat) => pat.test(codeStr));
+      const hasSyntax = /[;{}():#]/.test(codeStr);
+
+      if ((block.length >= 2 || hasStrong) && hasSyntax) {
+        const lang = detectCodeLanguage(codeStr);
+        const nonBlank = block.filter((l) => l.trim().length > 0);
+        const minIndent =
+          nonBlank.length > 0
+            ? Math.min(...nonBlank.map((l) => l.search(/\S|$/)))
+            : 0;
+        const normalized = block
+          .map((l) =>
+            l.trim().length > 0 && minIndent > 0 ? l.slice(minIndent) : l
+          )
+          .join("\n")
+          .trim();
+
+        if (resultLines.length > 0 && resultLines[resultLines.length - 1].trim()) {
+          resultLines.push("");
+        }
+        resultLines.push(`\`\`\`${lang}`);
+        resultLines.push(normalized);
+        resultLines.push("```");
+        if (i < n && lines[i].trim()) {
+          resultLines.push("");
+        }
+      } else {
+        resultLines.push(...block);
+      }
+    } else {
+      resultLines.push(line);
+      i++;
+    }
+  }
+
+  return resultLines.join("\n");
+}
+
+function escapeHtml(str: string): string {
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
+function markdownToHtml(rawMd?: string): string {
+  if (!rawMd) return "";
+
+  const md = autoFenceCode(rawMd);
+  const codeBlocks: string[] = [];
+
+  // Extract and protect triple-backtick code fences ```lang ... ```
+  let processed = md.replace(
+    /```([a-zA-Z0-9_+#.-]*)\s*\n?([\s\S]*?)```/g,
+    (_, rawLang, codeContent) => {
+      const rawCode = (codeContent || "").replace(/\r\n/g, "\n").trim();
+      const detected = rawLang ? rawLang.trim().toLowerCase() : detectCodeLanguage(rawCode);
+      const lang = detected || "text";
+
+      let highlighted = "";
+      if (Prism.languages[lang]) {
+        try {
+          highlighted = Prism.highlight(rawCode, Prism.languages[lang], lang);
+        } catch {
+          highlighted = escapeHtml(rawCode);
+        }
+      } else {
+        highlighted = escapeHtml(rawCode);
+      }
+
+      const placeholder = `@@@CODEBLOCK_${codeBlocks.length}@@@`;
+      const label = lang.toUpperCase();
+
+      const blockHtml = `
+<div class="code-block-wrapper my-3.5 rounded-xl overflow-hidden border border-gray-200 dark:border-neutral-700/80 bg-gray-50/90 dark:bg-neutral-900 shadow-sm not-prose">
+  <div class="code-block-header flex items-center justify-between px-3.5 py-1.5 bg-gray-100 dark:bg-neutral-800/90 border-b border-gray-200 dark:border-neutral-700/80 text-xs text-gray-600 dark:text-gray-400 select-none">
+    <div class="flex items-center gap-1.5">
+      <span class="inline-flex gap-1">
+        <span class="w-2.5 h-2.5 rounded-full bg-red-400/80 dark:bg-red-500/70"></span>
+        <span class="w-2.5 h-2.5 rounded-full bg-yellow-400/80 dark:bg-yellow-500/70"></span>
+        <span class="w-2.5 h-2.5 rounded-full bg-green-400/80 dark:bg-green-500/70"></span>
+      </span>
+      <span class="font-mono uppercase font-semibold text-[11px] tracking-wider text-gray-500 dark:text-gray-400 ml-1.5">${label}</span>
+    </div>
+    <button type="button" class="copy-code-btn inline-flex items-center gap-1 text-[11px] font-medium text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 px-2 py-0.5 rounded hover:bg-gray-200 dark:hover:bg-neutral-700 transition" title="Copy code">
+      <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+      <span>Copy</span>
+    </button>
+  </div>
+  <pre class="overflow-x-auto p-4 font-mono text-[13px] leading-relaxed text-gray-800 dark:text-gray-200"><code>${highlighted}</code></pre>
+</div>`.trim();
+
+      codeBlocks.push(blockHtml);
+      return placeholder;
+    }
+  );
+
+  // Extract and protect inline backtick code `code`
+  const inlineCodes: string[] = [];
+  processed = processed.replace(/`([^`\n]+)`/g, (_, inline) => {
+    const placeholder = `@@@INLINECODE_${inlineCodes.length}@@@`;
+    const snippet = `<code class="px-1.5 py-0.5 rounded bg-gray-100 dark:bg-neutral-700/80 text-pink-600 dark:text-pink-400 font-mono text-xs sm:text-sm font-medium border border-gray-200/60 dark:border-neutral-600/60">${escapeHtml(
+      inline
+    )}</code>`;
+    inlineCodes.push(snippet);
+    return placeholder;
+  });
+
+  // Render LaTeX math on remaining text
+  processed = renderLatex(processed);
+
+  // Standard inline markdown formatting
+  processed = processed
     .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
     .replace(/\*([^*]+)\*/g, "<em>$1</em>")
     .replace(/^\s*-\s+(.*)$/gm, "<li>$1</li>")
     .replace(/(<li>[\s\S]+?<\/li>)/g, "<ul>$1</ul>")
     .replace(/\n/g, "<br>")
-    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>');
-  return renderLatex(html);
+    .replace(
+      /\[([^\]]+)\]\(([^)]+)\)/g,
+      '<a href="$2" target="_blank" class="text-blue-600 dark:text-blue-400 underline">$1</a>'
+    );
+
+  // Restore inline code
+  processed = processed.replace(/@@@INLINECODE_(\d+)@@@/g, (_, idx) => {
+    return inlineCodes[parseInt(idx, 10)] || "";
+  });
+
+  // Restore block code
+  processed = processed.replace(/@@@CODEBLOCK_(\d+)@@@/g, (_, idx) => {
+    return codeBlocks[parseInt(idx, 10)] || "";
+  });
+
+  return processed;
 }
 
 const PyqSection: React.FC = () => {
@@ -337,7 +607,11 @@ const PyqSection: React.FC = () => {
     .marks { font-weight: normal; font-size: 10pt; }
     .q-text { margin: 4px 0 6px 0; }
     .answer { background: #f0f7f0; border-left: 3px solid #4a8; padding: 6px 10px; margin-top: 6px; font-size: 10pt; }
-    .source { font-size: 9pt; color: #555; margin-top: 4px; }
+    .code-block-wrapper { margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; overflow: hidden; page-break-inside: avoid; }
+    .code-block-header { background: #f0f0f0; padding: 4px 8px; font-size: 8pt; font-weight: bold; border-bottom: 1px solid #ccc; }
+    .copy-code-btn { display: none !important; }
+    .code-block-wrapper pre { margin: 0; padding: 8px 10px; background: #fafafa; font-family: Consolas, monospace; font-size: 9.5pt; line-height: 1.4; white-space: pre-wrap; }
+    code { font-family: Consolas, monospace; }
     @media print { body { margin: 15mm; } }
   </style>
 </head>
@@ -354,6 +628,32 @@ const PyqSection: React.FC = () => {
     win.document.close();
     win.onload = () => win.print();
   }
+
+  useEffect(() => {
+    const handleCopy = (e: MouseEvent) => {
+      const btn = (e.target as HTMLElement).closest(".copy-code-btn") as HTMLButtonElement | null;
+      if (!btn) return;
+      const wrapper = btn.closest(".code-block-wrapper");
+      const pre = wrapper?.querySelector("pre");
+      if (!pre) return;
+      const codeText = pre.innerText || pre.textContent || "";
+      navigator.clipboard.writeText(codeText).then(() => {
+        const span = btn.querySelector("span");
+        if (span) {
+          const originalText = span.textContent;
+          span.textContent = "Copied!";
+          btn.classList.add("text-green-600", "dark:text-green-400");
+          setTimeout(() => {
+            span.textContent = originalText;
+            btn.classList.remove("text-green-600", "dark:text-green-400");
+          }, 2000);
+        }
+      });
+    };
+
+    document.addEventListener("click", handleCopy);
+    return () => document.removeEventListener("click", handleCopy);
+  }, []);
 
   useEffect(() => {
     async function load() {

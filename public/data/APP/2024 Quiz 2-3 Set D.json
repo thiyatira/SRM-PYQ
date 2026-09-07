@@ -4,7 +4,7 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "What will be the output of the following code?\n\nclass MyRunnable implements Runnable {\n    public void run() {\n        for (int i = 0; i < 3; i++) {\n            System.out.println(Thread.currentThread().getName() + \" is executing task \" + i);\n        }\n    }\n    public static void main(String[] args) {\n        Thread t1 = new Thread(new MyRunnable(), \"Thread-1\");\n        Thread t2 = new Thread(new MyRunnable(), \"Thread-2\");\n        t1.start();\n        t2.start();\n    }\n}",
+            "question_text": "What will be the output of the following code?\n\n```java\nclass MyRunnable implements Runnable {\n    public void run() {\n        for (int i = 0; i < 3; i++) {\n            System.out.println(Thread.currentThread().getName() + \" is executing task \" + i);\n        }\n    }\n    public static void main(String[] args) {\n        Thread t1 = new Thread(new MyRunnable(), \"Thread-1\");\n        Thread t2 = new Thread(new MyRunnable(), \"Thread-2\");\n        t1.start();\n        t2.start();\n    }\n}\n```",
             "marks": 1,
             "answer": "Provided Answer: main main Thread-0\n\nExplanation: The provided key states 'main main Thread-0'. Programmatically, starting two threads t1 and t2 with names 'Thread-1' and 'Thread-2' will execute run() in parallel and print each thread's execution messages interleaved.",
             "answer_source": "provided",
@@ -36,7 +36,7 @@
         },
         {
             "question_number": "5",
-            "question_text": "What will be the output after its execution?\npublic class main\n{\npublic static void main(String args[])\n{\nThread thread1=Thread.currentThread();\nthread1.run ();\nThread thread2=Thread.currentThread();\nThread2.run ();\nSystem.out.print(Thread.activeCount());\n}}",
+            "question_text": "What will be the output after its execution?\n\n```java\npublic class main\n{\npublic static void main(String args[])\n{\nThread thread1=Thread.currentThread();\nthread1.run ();\nThread thread2=Thread.currentThread();\nThread2.run ();\nSystem.out.print(Thread.activeCount());\n}}\n```",
             "marks": 1,
             "answer": "Ans : 1\n\nExplanation: Calling `run()` directly on a `Thread` object executes the method synchronously within the current calling thread (main thread) without spawning a new execution thread. Therefore, the active thread count remains 1.",
             "answer_source": "provided",
@@ -60,7 +60,7 @@
         },
         {
             "question_number": "8",
-            "question_text": "def double(x):\n return x * 2\ndef applyFunction(func, value):\n return func(value)\nresult = applyFunction(double, 10)\nprint(result)\n\nWhat will be the output after its execution?",
+            "question_text": "```python\ndef double(x):\n```\n\n return x * 2\n\n```python\ndef applyFunction(func, value):\n```\n\n return func(value)\nresult = applyFunction(double, 10)\nprint(result)\n\nWhat will be the output after its execution?",
             "marks": 1,
             "answer": "Ans: 20\n\nExplanation: `applyFunction` accepts a higher-order function `double` and an argument `10`. Calling `double(10)` evaluates to `10 * 2 = 20`.",
             "answer_source": "provided",
@@ -68,7 +68,7 @@
         },
         {
             "question_number": "9",
-            "question_text": "def make_multiplier(n):\n def multiplier(x):\n return x * n\n return multiplier\ndouble = make_multiplier(2)\ntriple = make_multiplier(3)\nprint(double(5))\nprint(triple(5))\n\nWhat will be the output after its execution?",
+            "question_text": "```python\ndef make_multiplier(n):\n def multiplier(x):\n```\n\n return x * n\n return multiplier\ndouble = make_multiplier(2)\ntriple = make_multiplier(3)\nprint(double(5))\nprint(triple(5))\n\nWhat will be the output after its execution?",
             "marks": 1,
             "answer": "Answer: 10 15\n\nExplanation: `make_multiplier` creates a closure. `double(5)` computes `5 * 2 = 10` and `triple(5)` computes `5 * 3 = 15`.",
             "answer_source": "provided",

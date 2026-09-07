@@ -28,7 +28,7 @@
         },
         {
             "question_number": "4",
-            "question_text": "Give the correct answer for the following C code?\n#include <stdio.h>\nvoid main()\n{\nint x = 4, y, z;\ny = --x;\nz = x--;\nprintf(\"%d%d%d\", x, y, z);\n}",
+            "question_text": "Give the correct answer for the following C code?\n\n```c\n#include <stdio.h>\nvoid main()\n{\nint x = 4, y, z;\ny = --x;\nz = x--;\nprintf(\"%d%d%d\", x, y, z);\n}\n```",
             "marks": 1,
             "answer": "d) 233.\nExplanation:\n1. `int x = 4, y, z;` initializes `x` to 4. `y` and `z` are uninitialized.\n2. `y = --x;` (pre-decrement) decrements `x` to 3, then assigns this new value to `y`. So, `x` is 3, `y` is 3.\n3. `z = x--;` (post-decrement) assigns the current value of `x` (which is 3) to `z`, then decrements `x`. So, `z` is 3, and `x` becomes 2.\n4. `printf(\"%d%d%d\", x, y, z);` prints the final values: `x` (2), `y` (3), `z` (3). The output is 233.",
             "answer_source": "generated",
@@ -100,7 +100,7 @@
         },
         {
             "question_number": "13",
-            "question_text": "Output of this C code is ?\nint main()\n{\nchar chr;\nchr = 128;\nprintf(\"%d\\n\", chr);\nreturn 0;\n}",
+            "question_text": "Output of this C code is ?\n\n```c\nint main()\n{\nchar chr;\nchr = 128;\nprintf(\"%d\\n\", chr);\nreturn 0;\n}\n```",
             "marks": 1,
             "answer": "c) Depends on the compiler. The `char` type can be signed or unsigned depending on the compiler and architecture. If `char` is signed, its typical range is -128 to 127, so assigning 128 would result in an overflow, often wrapping to -128. If `char` is unsigned, its typical range is 0 to 255, so 128 would be stored as 128. When printed with `%d`, the `char` value is promoted to `int`. Thus, the output is implementation-defined.",
             "answer_source": "generated",
@@ -180,7 +180,7 @@
         },
         {
             "question_number": "23",
-            "question_text": "Find the output of the program?\nvoid main()\n{\nint n=5;\nfloat n=5;\nprintf(\"%d\",x);\n}",
+            "question_text": "Find the output of the program?\n\n```c\nvoid main()\n{\nint n=5;\nfloat n=5;\nprintf(\"%d\",x);\n}\n```",
             "marks": 1,
             "answer": "c) Compilation Error.\nExplanation:\n1. Redeclaration of `n`: You cannot declare two variables with the same name (`n`) in the same scope in C, even if they have different types (`int` and `float`). This will result in a compilation error.\n2. Undefined variable `x`: The `printf` statement attempts to print the value of `x`, but `x` is not declared or initialized anywhere in the program. This will also cause a compilation error.",
             "answer_source": "generated",
@@ -188,7 +188,7 @@
         },
         {
             "question_number": "24",
-            "question_text": "What will this program print?\nmain()\n{\nint i = 2;\n{\nint i = 4, j = 5;\nprintf(\"%d %d\", i, j);\n}\nprintf(\"%d %d\", i, j);\n}",
+            "question_text": "What will this program print?\nmain()\n\n```c\n{\nint i = 2;\n{\nint i = 4, j = 5;\nprintf(\"%d %d\", i, j);\n}\nprintf(\"%d %d\", i, j);\n}\n```",
             "marks": 1,
             "answer": "a) 4525.\nExplanation:\n1. `int i = 2;`: An `int` variable `i` is declared and initialized to 2 in the `main` function's scope.\n2. Inside the inner block `{}`:\n   `int i = 4, j = 5;`: A *new* `int` variable `i` (shadowing the outer `i`) is declared and initialized to 4. A new `int` variable `j` is declared and initialized to 5. These are local to the inner block.\n   `printf(\"%d %d\", i, j);`: This prints the `i` from the inner block (4) and `j` (5). Output: `4 5`.\n3. After the inner block, the inner `i` and `j` are destroyed.\n4. `printf(\"%d %d\", i, j);`: In this line, `i` refers to the outer `i` (which is still 2). However, `j` was only declared within the inner block and is now out of scope, making this line a **compile-time error** in strict C. Assuming the question implies that 'j' was declared outside the block (e.g., `int i = 2, j;` then `j = 5;` inside), then `j` would persist and its value would be 5. In this interpreted scenario, the output would be `2 5`.\nCombining both print statements under this interpretation gives `4 5 2 5` (represented as 4525). Given the MCQ options, this interpretation is likely intended despite the strict C error.",
             "answer_source": "generated",
