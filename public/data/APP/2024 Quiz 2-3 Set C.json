@@ -4,7 +4,7 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Consider the following program and predict the output:\n\nclass MyThread implements Runnable {\n public void run() { \nSystem.out.println(Thread.currentThread().getName());\n }\n}\npublic class ThreadTest {\n public static void main(String arg[]) {\n Thread thread = new Thread(new MyThread());\n thread.run();\n thread.run();\n thread.start();\n }\n}",
+            "question_text": "Consider the following program and predict the output:\n\n```java\nclass MyThread implements Runnable {\n public void run() { \nSystem.out.println(Thread.currentThread().getName());\n }\n}\npublic class ThreadTest {\n public static void main(String arg[]) {\n Thread thread = new Thread(new MyThread());\n thread.run();\n thread.run();\n thread.start();\n }\n}\n```",
             "marks": 1,
             "answer": "Output:\nmain\nmain\nThread-0\n\nExplanation: Calling thread.run() executes the run() method synchronously on the current thread ('main'). Calling thread.start() spawns a new thread ('Thread-0') which executes run() asynchronously.",
             "answer_source": "provided",
@@ -28,7 +28,7 @@
         },
         {
             "question_number": "4",
-            "question_text": "What will be the output of the following code?\nimport javax.swing.*;\n\npublic class SwingExceptionApp {\n public static void main(String[] args) {\n JFrame frame = new JFrame(\"Exception Example\");\n JButton button = new JButton(\"Press Me\");\n\n button.addActionListener(e -> {\n throw new RuntimeException(\"An error occurred!\");\n });\n\n frame.add(button);\n frame.setSize(200, 200);\n frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);\n frame.setVisible(true);\n }\n}",
+            "question_text": "What will be the output of the following code?\n\n```java\nimport javax.swing.*;\n\npublic class SwingExceptionApp {\n public static void main(String[] args) {\n JFrame frame = new JFrame(\"Exception Example\");\n JButton button = new JButton(\"Press Me\");\n\n button.addActionListener(e -> {\n throw new RuntimeException(\"An error occurred!\");\n });\n\n frame.add(button);\n frame.setSize(200, 200);\n frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);\n frame.setVisible(true);\n }\n}\n```",
             "marks": 1,
             "answer": "When the button is clicked, the application will throw a RuntimeException, and the program will terminate with the message \"An error occurred!\"",
             "answer_source": "provided",
@@ -68,7 +68,7 @@
         },
         {
             "question_number": "9",
-            "question_text": "def add(a, b):\n return a + b\nresult = add(3, 5)\nprint(result)\n\nIs the function add is a pure function? Explain why?",
+            "question_text": "```python\ndef add(a, b):\n```\n\n return a + b\nresult = add(3, 5)\nprint(result)\n\nIs the function add is a pure function? Explain why?",
             "marks": 1,
             "answer": "Yes, the add function is a pure function because:\n• It always produces the same output for the same inputs (e.g., add(3, 5) always returns 8).\n• It has no side effects (does not modify any external state or variables).",
             "answer_source": "provided",
@@ -76,7 +76,7 @@
         },
         {
             "question_number": "10",
-            "question_text": "from functools import reduce\n\ndef multiply(x, y):\n return x * y\n\nnumbers = [1, 2, 3, 4]\nresult = reduce(multiply, numbers)\nprint(result)\n\nWhat is the output of this code?",
+            "question_text": "from functools import reduce\n\n```python\ndef multiply(x, y):\n```\n\n return x * y\n\nnumbers = [1, 2, 3, 4]\nresult = reduce(multiply, numbers)\nprint(result)\n\nWhat is the output of this code?",
             "marks": 1,
             "answer": "24\n\nExplanation: The reduce function applies the multiply function cumulatively to the numbers list, resulting in 1 * 2 * 3 * 4 = 24.",
             "answer_source": "provided",

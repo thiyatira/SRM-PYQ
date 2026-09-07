@@ -20,7 +20,7 @@
         },
         {
             "question_number": "3",
-            "question_text": "Which of the following is not a valid C variable name?\n\n*   int number;\n*   float rate;\n*   int variable_count;\n*   int $main;",
+            "question_text": "Which of the following is not a valid C variable name?\n\n```c\n*   int number;\n*   float rate;\n*   int variable_count;\n*   int $main;\n```",
             "marks": 1,
             "answer": "int $main; (Variable names in C cannot contain special characters like '$' except for underscore '_').",
             "answer_source": "generated",

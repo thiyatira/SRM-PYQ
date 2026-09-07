@@ -156,7 +156,7 @@
         },
         {
             "question_number": "20",
-            "question_text": "Choose the correct output for the following code:\nint main ( )\n{\ndeque <int>d;\nd.push_back (10);\nd.push_back (300);\nd.push_front (20);\nfor (int i=0; i<d.size ( ); i++)\n{\ncout << d[i] << “ ”;\n}\nreturn 0;\n}\n(A) 10 20 300\n(B) 20 10 300\n(C) 100 10 20\n(D) Syntax error",
+            "question_text": "Choose the correct output for the following code:\n\n```cpp\nint main ( )\n{\ndeque <int>d;\nd.push_back (10);\nd.push_back (300);\nd.push_front (20);\nfor (int i=0; i<d.size ( ); i++)\n{\ncout << d[i] << “ ”;\n}\nreturn 0;\n}\n```\n\n(A) 10 20 300\n(B) 20 10 300\n(C) 100 10 20\n(D) Syntax error",
             "marks": 1,
             "answer": "(B) 20 10 300. Explanation: push_back(10) adds 10. push_back(300) adds 300 to the end -> [10, 300]. push_front(20) adds 20 to the front -> [20, 10, 300].",
             "answer_source": "General C++ Knowledge",

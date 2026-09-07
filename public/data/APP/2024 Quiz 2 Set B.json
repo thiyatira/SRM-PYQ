@@ -12,7 +12,7 @@
         },
         {
             "question_number": "2",
-            "question_text": "What will be the output of the following Java code?\nclass multithreaded_programming\n{\n    public static void main (String [] args[])\n    {\n        Thread t = Thread.currentThread ();\n        System.out.println (t);\n    }\n}\na. thread [5, main]\nb. thread [main, 5]\nc. thread [main, 0]\nd. Thread [main, 5, main]",
+            "question_text": "What will be the output of the following Java code?\n\n```java\nclass multithreaded_programming\n{\n    public static void main (String [] args[])\n    {\n        Thread t = Thread.currentThread ();\n        System.out.println (t);\n    }\n}\n```\n\na. thread [5, main]\nb. thread [main, 5]\nc. thread [main, 0]\nd. Thread [main, 5, main]",
             "marks": 1,
             "answer": "d. Thread [main, 5, main]\n\nExplanation: Printing a Thread object invokes its `toString()` method, which outputs `Thread[threadName, priority, groupName]`. Here, the main thread has priority 5 and belongs to the 'main' thread group.",
             "answer_source": "generated",
@@ -36,7 +36,7 @@
         },
         {
             "question_number": "5",
-            "question_text": "What is the layout manager used in the Java code given below?\nimport java.awt.*;\npublic class LayoutExample extends Frame {\n    public static void main(String[] args){\n        LayoutExample frame = new LayoutExample();\n        Button b1 = new Button (\"Button 1\");\n        Button b2 = new Button (\"Button 2\");\n        Button b3 = new Button (\"Button 3\");\n        frame.add(b1);\n        frame.add(b2);\n        frame.add(b3);\n        frame.setLayout (new FlowLayout());\n        frame.setLayout(new GridLayout(2, 2));\n        frame.setSize(300, 200);\n        frame.setVisible(true);\n    }\n}\na. Grid Layout\nb. Border Layout\nc. Flow Layout\nd. Card Layout",
+            "question_text": "What is the layout manager used in the Java code given below?\n\n```java\nimport java.awt.*;\npublic class LayoutExample extends Frame {\n    public static void main(String[] args){\n        LayoutExample frame = new LayoutExample();\n        Button b1 = new Button (\"Button 1\");\n        Button b2 = new Button (\"Button 2\");\n        Button b3 = new Button (\"Button 3\");\n        frame.add(b1);\n        frame.add(b2);\n        frame.add(b3);\n        frame.setLayout (new FlowLayout());\n        frame.setLayout(new GridLayout(2, 2));\n        frame.setSize(300, 200);\n        frame.setVisible(true);\n    }\n}\n```\n\na. Grid Layout\nb. Border Layout\nc. Flow Layout\nd. Card Layout",
             "marks": 1,
             "answer": "a. Grid Layout\n\nExplanation: `frame.setLayout(new GridLayout(2, 2))` is called after `FlowLayout`, so it overrides the previous setting and applies `GridLayout`.",
             "answer_source": "generated",
@@ -52,7 +52,7 @@
         },
         {
             "question_number": "7",
-            "question_text": "Find the output\ndef multi_func(fun_name, arg1, arg2):\n    return fun_name(fun_name(arg1, arg2), 20)\n\ndef sum(x, y):\n    return x + y\n\nprint(multi_func(sum, 10, 20))",
+            "question_text": "Find the output\n\n```python\ndef multi_func(fun_name, arg1, arg2):\n```\n\n    return fun_name(fun_name(arg1, arg2), 20)\n\n```python\ndef sum(x, y):\n```\n\n    return x + y\n\nprint(multi_func(sum, 10, 20))",
             "marks": 1,
             "answer": "50\n\nExplanation:\n1. Inner function call: `sum(10, 20)` evaluates to `30`.\n2. Outer function call: `fun_name(30, 20)` executes `sum(30, 20)`, evaluating to `50`.",
             "answer_source": "generated",
@@ -124,7 +124,7 @@
         },
         {
             "question_number": "Set2-1",
-            "question_text": "double num = 3.9999;\nint result = (int) num;\nSystem.out.println(result);\nWhy is the result not what you expected, and how can you preserve the value correctly?",
+            "question_text": "```java\ndouble num = 3.9999;\nint result = (int) num;\nSystem.out.println(result);\n```\n\nWhy is the result not what you expected, and how can you preserve the value correctly?",
             "marks": null,
             "answer": "The output is `3` because explicit type casting `(int)` truncates the floating point value rather than rounding it. To preserve the value accurately through rounding, use `Math.round(num)`.",
             "answer_source": "generated",
@@ -132,7 +132,7 @@
         },
         {
             "question_number": "Set2-2",
-            "question_text": "public class Test {\n    int x = 10;\n    void show() {\n        int x = 5;\n        System.out.println(x);\n    }\n}\n// In the main method\nTest test = new Test();\ntest.show();\nWhy is the output different than expected, and how can you access the class variable instead of the local variable?",
+            "question_text": "```java\npublic class Test {\n    int x = 10;\n    void show() {\n        int x = 5;\n        System.out.println(x);\n    }\n}\n// In the main method\nTest test = new Test();\ntest.show();\n```\n\nWhy is the output different than expected, and how can you access the class variable instead of the local variable?",
             "marks": null,
             "answer": "The local variable `x = 5` shadows the instance variable `x = 10`. To explicitly access the instance variable, use `this.x` (e.g., `System.out.println(this.x);`).",
             "answer_source": "generated",
@@ -140,7 +140,7 @@
         },
         {
             "question_number": "Set2-3",
-            "question_text": "public class Example {\n    public void display() {\n        static int count = 0;\n        System.out.println(count);\n    }\n}\nWhy does the compiler reject the code, and how can you fix it?",
+            "question_text": "```java\npublic class Example {\n    public void display() {\n        static int count = 0;\n        System.out.println(count);\n    }\n}\n```\n\nWhy does the compiler reject the code, and how can you fix it?",
             "marks": null,
             "answer": "Java does not permit local variables inside methods to be declared as `static`. To fix it, move `static int count = 0;` outside the method to make it a class-level static member variable.",
             "answer_source": "generated",
@@ -148,7 +148,7 @@
         },
         {
             "question_number": "Set2-4",
-            "question_text": "public class Test {\n    void print() {\n        System.out.println(\"Hello\");\n    }\n}\n// In the main method\nTest obj = null;\nobj.print();\nA. The program will print \"Hello\".\nB. The program will compile but throw a NullPointerException.\nC. The program will compile with a warning but will run successfully.\nD. The program will not compile due to a syntax error.",
+            "question_text": "```java\npublic class Test {\n    void print() {\n        System.out.println(\"Hello\");\n    }\n}\n// In the main method\nTest obj = null;\nobj.print();\n```\n\nA. The program will print \"Hello\".\nB. The program will compile but throw a NullPointerException.\nC. The program will compile with a warning but will run successfully.\nD. The program will not compile due to a syntax error.",
             "marks": null,
             "answer": "B. The program will compile but throw a NullPointerException.",
             "answer_source": "generated",
@@ -156,7 +156,7 @@
         },
         {
             "question_number": "Set2-5",
-            "question_text": "public class MyClass {\n    MyClass(int value) {\n        // Constructor logic\n    }\n}\n// In the main method\nMyClass obj = new MyClass(); // Error here\nA. The code will compile successfully.\nB. The code will compile with a warning.\nC. The code will fail to compile because a default constructor is missing.\nD. The code will run but throw an exception.",
+            "question_text": "```java\npublic class MyClass {\n    MyClass(int value) {\n        // Constructor logic\n    }\n}\n// In the main method\n```\n\nMyClass obj = new MyClass(); // Error here\nA. The code will compile successfully.\nB. The code will compile with a warning.\nC. The code will fail to compile because a default constructor is missing.\nD. The code will run but throw an exception.",
             "marks": null,
             "answer": "C. The code will fail to compile because a default constructor is missing.",
             "answer_source": "generated",
@@ -164,7 +164,7 @@
         },
         {
             "question_number": "Set2-6",
-            "question_text": "What will be the result of the following code?\ndouble value = 8.75;\nint result = (int) value;\nSystem.out.println(result);\nA. The result will be 8.75.\nB. The result will be 8.\nC. The result will be 9.\nD. The code will fail to compile.",
+            "question_text": "What will be the result of the following code?\n\n```java\ndouble value = 8.75;\nint result = (int) value;\nSystem.out.println(result);\n```\n\nA. The result will be 8.75.\nB. The result will be 8.\nC. The result will be 9.\nD. The code will fail to compile.",
             "marks": null,
             "answer": "B. The result will be 8.",
             "answer_source": "generated",
@@ -172,7 +172,7 @@
         },
         {
             "question_number": "Set2-7",
-            "question_text": "What is the output of the following code involving integer division?\nint a = 5;\nint b = 2;\nint result = a / b;\nSystem.out.println(result);\nA. The output will be 2.5.\nB. The output will be 2.\nC. The output will be 3.\nD. The code will fail to compile.",
+            "question_text": "What is the output of the following code involving integer division?\n\n```java\nint a = 5;\nint b = 2;\nint result = a / b;\nSystem.out.println(result);\n```\n\nA. The output will be 2.5.\nB. The output will be 2.\nC. The output will be 3.\nD. The code will fail to compile.",
             "marks": null,
             "answer": "B. The output will be 2.",
             "answer_source": "generated",
@@ -180,7 +180,7 @@
         },
         {
             "question_number": "Set2-8",
-            "question_text": "What will be the result of the following for loop that contains an off-by-one condition?\nfor (int i = 0; i < 5; i++) {\n    System.out.println(i);\n}\nA. The loop will print numbers from 0 to 4.\nB. The loop will print numbers from 0 to 5.\nC. The loop will print numbers from 1 to 5.\nD. The code will fail to compile.",
+            "question_text": "What will be the result of the following for loop that contains an off-by-one condition?\n\n```java\nfor (int i = 0; i < 5; i++) {\n    System.out.println(i);\n}\n```\n\nA. The loop will print numbers from 0 to 4.\nB. The loop will print numbers from 0 to 5.\nC. The loop will print numbers from 1 to 5.\nD. The code will fail to compile.",
             "marks": null,
             "answer": "A. The loop will print numbers from 0 to 4.",
             "answer_source": "generated",
@@ -188,7 +188,7 @@
         },
         {
             "question_number": "Set2-9",
-            "question_text": "What is the output of a switch statement when no break is used between cases?\nint day = 2;\nswitch (day) {\n    case 1:\n        System.out.println(\"Monday\");\n    case 2:\n        System.out.println(\"Tuesday\");\n    case 3:\n        System.out.println(\"Wednesday\");\n        break;\n    default:\n        System.out.println(\"Invalid day\");\n}\nA. The output will be Tuesday only.\nB. The output will be Monday, Tuesday, and Wednesday.\nC. The output will be Tuesday and Wednesday.\nD. The code will fail to compile.",
+            "question_text": "What is the output of a switch statement when no break is used between cases?\n\n```java\nint day = 2;\nswitch (day) {\n    case 1:\n        System.out.println(\"Monday\");\n    case 2:\n        System.out.println(\"Tuesday\");\n    case 3:\n        System.out.println(\"Wednesday\");\n        break;\n    default:\n        System.out.println(\"Invalid day\");\n}\n```\n\nA. The output will be Tuesday only.\nB. The output will be Monday, Tuesday, and Wednesday.\nC. The output will be Tuesday and Wednesday.\nD. The code will fail to compile.",
             "marks": null,
             "answer": "C. The output will be Tuesday and Wednesday.",
             "answer_source": "generated",
@@ -196,7 +196,7 @@
         },
         {
             "question_number": "Set2-10",
-            "question_text": "What will be the result if an array is declared but not initialized?\nint[] arr;\narr[0] = 10;\nA. The code will compile successfully.\nB. The code will throw a NullPointerException at runtime.\nC. The code will throw a compile-time error.\nD. The code will run but produce no output.",
+            "question_text": "What will be the result if an array is declared but not initialized?\n\n```text\nint[] arr;\narr[0] = 10;\n```\n\nA. The code will compile successfully.\nB. The code will throw a NullPointerException at runtime.\nC. The code will throw a compile-time error.\nD. The code will run but produce no output.",
             "marks": null,
             "answer": "C. The code will throw a compile-time error.",
             "answer_source": "generated",

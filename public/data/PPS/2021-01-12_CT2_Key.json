@@ -20,7 +20,7 @@
         },
         {
             "question_number": "3",
-            "question_text": "Find the output of the following:\nvoid main()\n{\nint i=0, j=1, k=2, m;\nm= i++ || j++ || k++ ;\nprintf(\"%d %d %d %d\", m, i, j, k);\n}\nA) 1 1 2 3\nB) 1 1 2 2\nC) 0 1 2 2\nD) 0 1 2 3",
+            "question_text": "Find the output of the following:\n\n```c\nvoid main()\n{\nint i=0, j=1, k=2, m;\nm= i++ || j++ || k++ ;\nprintf(\"%d %d %d %d\", m, i, j, k);\n}\n```\n\nA) 1 1 2 3\nB) 1 1 2 2\nC) 0 1 2 2\nD) 0 1 2 3",
             "marks": 1,
             "answer": "ANSWER:B",
             "answer_source": "provided",
@@ -28,7 +28,7 @@
         },
         {
             "question_number": "4",
-            "question_text": "What will be the output?\nvoid main()\n{\nint a=10, b=20;\nchar x=1, y=0;\nif(a,b,x,y)\nprintf(“EXAM”);\n}\nA) XAM is printed\nB) EXAM is printed\nC) COMPILER ERROR\nD) Nothing is printed",
+            "question_text": "What will be the output?\n\n```c\nvoid main()\n{\nint a=10, b=20;\nchar x=1, y=0;\nif(a,b,x,y)\nprintf(“EXAM”);\n}\n```\n\nA) XAM is printed\nB) EXAM is printed\nC) COMPILER ERROR\nD) Nothing is printed",
             "marks": 1,
             "answer": "ANSWER:D",
             "answer_source": "provided",
@@ -60,7 +60,7 @@
         },
         {
             "question_number": "8",
-            "question_text": "What is the output of C Program.?\nint main() { int a[3] = {10,12,14}; a[1]=20; int i=0; while(i<3) { printf(\"%d \", a[i]); i++; } }\nA) 20 12 14\nB) 10 20 14\nC) 10 12 20\nD) Compiler error",
+            "question_text": "What is the output of C Program.?\n\n```c\nint main() { int a[3] = {10,12,14}; a[1]=20; int i=0; while(i<3) { printf(\"%d \", a[i]); i++; } }\n```\n\nA) 20 12 14\nB) 10 20 14\nC) 10 12 20\nD) Compiler error",
             "marks": 1,
             "answer": "ANSWER:B",
             "answer_source": "provided",
@@ -76,7 +76,7 @@
         },
         {
             "question_number": "10",
-            "question_text": "What is the output of this C code?\nint main()\n{\nvoid foo(), f();\nf();\n}\nvoid foo()\n{\nprintf(\"2 \");\n}\nvoid f()\n{\nprintf(\"1 \");\nfoo();\n}\nA. Compile time error as foo is local to main\nB. 1 2\nC. 2 1\nD. Compile time error due to declaration of functions inside main",
+            "question_text": "What is the output of this C code?\n\n```c\nint main()\n{\nvoid foo(), f();\nf();\n}\nvoid foo()\n{\nprintf(\"2 \");\n}\nvoid f()\n{\nprintf(\"1 \");\nfoo();\n}\n```\n\nA. Compile time error as foo is local to main\nB. 1 2\nC. 2 1\nD. Compile time error due to declaration of functions inside main",
             "marks": 1,
             "answer": "ANSWER:B (Note: While modern compilers would issue a warning or error for declaring functions inside another function, this was permissible in older C standards. Assuming a standard that allows it, the output is '1 2'.)",
             "answer_source": "provided",
