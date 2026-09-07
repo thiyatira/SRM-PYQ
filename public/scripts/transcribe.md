@@ -4,14 +4,67 @@ This document contains instructions, schemas, and prompts to transcribe raw, uns
 
 ---
 
-## 1. Target JSON Schema
+## 1. Automated Python Pipeline (`transcribe_papers.py`)
+
+A unified script is located at [`public/scripts/transcribe_papers.py`](public/scripts/transcribe_papers.py).
+
+### Features:
+- **Batch processes** all PDFs in a given folder.
+- **Asks interactively** for the folder path containing PDFs (or accepts CLI arguments).
+- **Gemini API integration** to transcribe questions, solutions, and math notation.
+- **Auto-deduces formal filename** (`formal_filename`) according to repository rules (e.g., `2023-12_ET_SetA_QP.json`).
+- **Writes output JSONs** directly to a `staging/` folder.
+
+### Running the Script:
+
+**Interactive mode:**
+```bash
+python public/scripts/transcribe_papers.py
+```
+*(Prompts for API key if `GEMINI_API_KEY` is not set, input folder path, and optional syllabus file).*
+
+**Command-line arguments mode:**
+```bash
+python public/scripts/transcribe_papers.py --folder "path/to/pdfs" --output "path/to/staging" --syllabus "path/to/syllabus.txt"
+```
+
+---
+
+## 2. Standardized File Naming Rules
+
+Every paper JSON should follow the standardized filename pattern:
+```
+[Date/Year]_[ExamType]_[SetInfo]_[DocumentType].json
+```
+
+1. **`[Date/Year]`** (Required):
+   - `YYYY-MM` for End Term exams (e.g., `2023-12`, `2024-01`, `2023-05`)
+   - `YYYY-MM-DD` for specific Cycle Test dates (e.g., `2024-04-01`, `2023-11-03`)
+   - `YYYY-YY` for general academic year sessions (e.g., `2023-24`, `2024-25`)
+2. **`[ExamType]`** (Required):
+   - `ET`: End Term Examination
+   - `CT1`, `CT2`, `CT3`: Cycle Tests 1, 2, 3
+   - `Quiz`: Assessment / Quiz
+3. **`[SetInfo]`** (Optional):
+   - `SetA`, `SetB`, `SetC`, `Set1`, `SetA_B1`, etc. (Omitted if no set)
+4. **`[DocumentType]`** (Required):
+   - `QP`: Question Paper
+   - `Key`: Official Answer Key
+   - `QP-Key`: Question Paper + Key
+   - `Sample-QP`: Model / Practice paper
+   - `MCQ-Key`: Multiple-choice answer key only
+
+---
+
+## 3. Target JSON Schema
 
 The frontend ([src/components/PyqSection.tsx](src/components/PyqSection.tsx)) and data stores expect individual paper JSON files formatted as:
 
 ```json
 {
-  "paper_title": "B.Tech./M.Tech(Integrated) DEGREE EXAMINATION, JULY 2023 - 21CSC101T - OBJECT ORIENTED DESIGN AND PROGRAMMING",
-  "source": "JULY 2023",
+  "formal_filename": "2023-12_ET_SetA_QP.json",
+  "paper_title": "B.Tech. DEGREE EXAMINATION, DECEMBER 2023 - 21CSC101T - OBJECT ORIENTED DESIGN AND PROGRAMMING",
+  "source": "2023-12 ET Set A",
   "questions": [
     {
       "question_number": "1",
@@ -34,6 +87,7 @@ The frontend ([src/components/PyqSection.tsx](src/components/PyqSection.tsx)) an
 ```
 
 ### Key Field Requirements:
+- `formal_filename` *(string)*: Standardized filename ending in `.json`.
 - `paper_title` *(string)*: Full examination and subject title from the paper header.
 - `source` *(string)*: Short session identifier matching the file naming scheme (e.g., `2024-01 ET`, `2023_July`, `2024-10-01 CT1`).
 - `questions` *(array)*:
@@ -50,58 +104,59 @@ The frontend ([src/components/PyqSection.tsx](src/components/PyqSection.tsx)) an
 
 ---
 
-## 2. LLM Transcription Prompt (Copy & Paste)
-
-Use this prompt in ChatGPT, Claude, Gemini, or via API scripts to process raw paper text, OCR dumps, or PDF files.
+## 4. Master Prompt (For Manual Use / Direct API)
 
 ```markdown
-You are an expert academic assistant specializing in university education. Your task is to analyze and transcribe raw, unstructured university exam papers (or answer keys) into a strictly valid JSON object matching the exact schema below.
+You are an expert academic assistant and document transcription engine.
+Your task is to analyze a university examination question paper (or answer key) PDF and produce a structured JSON object.
 
-### Output Constraints:
-- Output MUST be a single, valid JSON object and nothing else.
-- Do NOT include conversational text or markdown wrappers like ```json unless requested.
-- Ensure every question and sub-division (e.g., "21. a.", "21. b.") is separated into its own object in the `questions` array.
+### Instructions:
+1. Read the provided PDF / text thoroughly.
+2. Deduce the formal standardized filename for this paper based on the file naming specification below.
+3. Transcribe ALL questions and sub-questions in exact sequential order.
+4. If the paper contains an answer key or solutions, transcribe them and set `answer_source` to "provided".
+   If no answer key is present, generate high-quality, accurate, university-level solutions and set `answer_source` to "generated".
+5. Map each question to its corresponding unit in the syllabus (must include "Unit 1", "Unit 2", "Unit 3", "Unit 4", or "Unit 5").
+6. Output MUST be a single, valid JSON object and nothing else.
+7. CRITICAL - Code Formatting: Whenever questions or answers contain code snippets, program fragments, or pseudocode (C, C++, Java, Python, SQL, etc.), you MUST wrap them in standard markdown code fences with the language identifier (e.g. ```java\n...\n```, ```c\n...\n```, ```python\n...\n```) and preserve exact indentation. Keep MCQ options (A, B, C, D) and question text outside the code block.
+
+### File Naming Specification for `formal_filename`:
+Pattern: `[Date/Year]_[ExamType]_[SetInfo]_[DocumentType].json`
+- `[Date/Year]`:
+    - Year-Month for End Term (e.g., `2023-12`, `2024-01`, `2023-05`)
+    - Full Date if present for Cycle Tests (e.g., `2024-04-01`, `2023-11-03`)
+    - Academic Year if specific date not available (e.g., `2023-24`, `2024-25`)
+- `[ExamType]`: `ET` (End Term) or `CT1`, `CT2`, `CT3` (Cycle Test 1, 2, 3) or `Quiz`
+- `[SetInfo]` (Optional): `SetA`, `SetB`, `SetC`, `Set1`, `SetA_B1`, etc. (Omit if not specified)
+- `[DocumentType]`:
+    - `QP`: Question Paper only
+    - `Key`: Answer Key only
+    - `QP-Key`: Question Paper with Answer Key
+    - `Sample-QP`: Sample / Model Paper
+    - `MCQ-Key`: MCQ Answer Key only
 
 ### JSON Structure:
 {
-  "paper_title": "<Full examination title, course code, and subject from the header>",
-  "source": "<Short exam session or filename, e.g., 'JULY 2023' or '2024-01 ET'>",
+  "formal_filename": "<Standardized filename following the rules above, ending in .json>",
+  "paper_title": "<Full examination title, degree, subject code, and course name from the header>",
+  "source": "<Short exam session label, e.g., '2023-12 ET' or '2024-04-01 CT2 Set B'>",
   "questions": [
     {
       "question_number": "<e.g., '1', '2', '21. a.', '3(b)'>",
-      "question_text": "<Full question text. For MCQs, retain options (A), (B), (C), (D) on separate lines. Use $...$ for inline math, $$...$$ for block math, and markdown code blocks for code>",
-      "marks": <Integer mark value or null if not indicated>,
-      "answer": "<If answer key is provided in source, transcribe it exactly. If not provided, generate a concise, accurate, university-level answer and explanation. For MCQs, state correct letter and brief rationale.>",
-      "answer_source": "<'provided' if from an answer key, otherwise 'generated'>",
-      "chapter": "<Must start with 'Unit X:' where X is 1 to 5 based on the syllabus. Example: 'Unit 1: Evolution of Programming'>"
+      "question_text": "<Full exact text. Preserve MCQ options (A), (B), (C), (D) on newlines. Use $...$ for inline math and $$...$$ for block math. Use markdown code fences for code snippets.>",
+      "marks": <Integer mark value, or null if not indicated>,
+      "answer": "<Accurate solution/explanation. For MCQs, provide correct choice letter followed by concise rationale.>",
+      "answer_source": "<'provided' or 'generated'>",
+      "chapter": "<Must include 'Unit 1', 'Unit 2', 'Unit 3', 'Unit 4', or 'Unit 5' (e.g. 'Unit 1: Introduction')>"
     }
   ]
 }
 
-### Formatting Guidelines:
-1. Formulas & Symbols: Wrap math in KaTeX syntax: `$E = mc^2$` for inline, `$$\int_0^\pi \sin(x)dx$$` for display.
-2. Code Blocks: Format code blocks using markdown syntax with language tags (e.g., ```c, ```cpp, ```python).
-3. Unit Tagging: The 'chapter' value MUST contain 'Unit 1', 'Unit 2', 'Unit 3', 'Unit 4', or 'Unit 5' to enable UI filtering.
+---
+### Course Syllabus:
+[INSERT SYLLABUS HERE (OPTIONAL)]
 
 ---
-### Course Syllabus (For Unit Mapping):
-[INSERT SYLLABUS UNITS 1-5 HERE]
-
----
-### Source / Metadata:
-- Source Name: [INSERT SOURCE NAME, e.g., 2023-12 ET]
-- Paper Title: [INSERT PAPER TITLE, e.g., B.Tech DEGREE EXAMINATION - 21CSS101J]
-
----
-### Raw Unstructured Exam Paper Text / OCR:
-[PASTE RAW QUESTION PAPER HERE]
+### Paper / Document Content:
+[PASTE DOCUMENT TEXT OR UPLOAD PDF]
 ```
-
----
-
-## 3. Reference Existing Scripts
-
-The repository also includes automated python scripts that upload PDFs to Gemini and run this prompt:
-- [public/scripts/3_ai_transcription.py](public/scripts/3_ai_transcription.py) — General transcription script.
-- [public/pdf/CHEM/3_ai_transcription.py](public/pdf/CHEM/3_ai_transcription.py) — Subject-specific transcription script.
-- [public/scripts/_. naming.txt](public/scripts/_.%20naming.txt) — File naming rules (`[Date/Year]_[ExamType]_[SetInfo]_[DocumentType].pdf`).
