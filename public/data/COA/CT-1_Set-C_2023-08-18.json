@@ -1,0 +1,159 @@
+{
+    "formal_filename": "CT-1_Set-C_2023-08-18.json",
+    "paper_title": "SRM Institute of Science and Technology, College of Engineering and Technology, School of Computing, Test: CLA-1, Course Code & Title: 21CSS201T& Computer Organization & Architecture, SET C",
+    "source": "2023-08-18 CLA-1 Set C",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "The output of a NOR gate is HIGH if ________.\na.all inputs are HIGH\nb.any input is HIGH\nc.any input is LOW\nd.all inputs are LOW",
+            "marks": 1,
+            "answer": "d.all inputs are LOW\n\nRationale: A NOR (Not OR) gate produces a HIGH (1) output only when all of its inputs are LOW (0). If any input is HIGH, the OR result is HIGH, making the NOR output LOW.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "2",
+            "question_text": "Base of octal number system is\na.10\nb.2\nc.8\nd.16",
+            "marks": 1,
+            "answer": "c.8\n\nRationale: The octal number system is a base-8 system, utilizing digits from 0 to 7.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "3",
+            "question_text": "Decimal equivalent of hexadecimal no. (44A)16 is :\na.825\nb.1098\nc.870\nd.1100",
+            "marks": 1,
+            "answer": "b.1098\n\nRationale: \n$$(44A)_{16} = 4 \\times 16^2 + 4 \\times 16^1 + 10 \\times 16^0 = 4 \\times 256 + 64 + 10 = 1024 + 64 + 10 = 1098$$",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "4",
+            "question_text": "Binary equivalent of (542)10 is :\na.101010101\nb.1110101101\nc.101011001\nd.1000011110",
+            "marks": 1,
+            "answer": "d.1000011110\n\nRationale: Converting 542 to binary by successive division by 2:\n- $542 / 2 = 271$, remainder 0\n- $271 / 2 = 135$, remainder 1\n- $135 / 2 = 67$, remainder 1\n- $67 / 2 = 33$, remainder 1\n- $33 / 2 = 16$, remainder 1\n- $16 / 2 = 8$, remainder 0\n- $8 / 2 = 4$, remainder 0\n- $4 / 2 = 2$, remainder 0\n- $2 / 2 = 1$, remainder 0\n- $1 / 2 = 0$, remainder 1\nReading remainder from bottom to top gives $1000011110_2$.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "5",
+            "question_text": "Convert the binary number 1011011 to hexadecimal.\na.5A\nb.5D\nc.5B\nd.5C",
+            "marks": 1,
+            "answer": "c.5B\n\nRationale: Grouping the binary number from right to left in groups of 4:\n- $0101_2 = 5_{16}$\n- $1011_2 = B_{16}$ (which is 11 in decimal)\nCombining them gives $5B_{16}$.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "6",
+            "question_text": "Octal representation of (0101)2 is :\na.5\nb.3\nc.4\nd.6",
+            "marks": 1,
+            "answer": "a.5\n\nRationale: Converting $(0101)_2$ to octal: \nGroup of 3 from right is $101_2 = 5_8$. The remaining bit is 0.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "7",
+            "question_text": "Cache memory acts between\na.CPU and RAM\nb.RAM and ROM\nc.CPU and Hard Disk\nd.ROM and CPU",
+            "marks": 1,
+            "answer": "a.CPU and RAM\n\nRationale: Cache memory is a small, extremely fast memory subsystem that buffers data transfers between the high-speed CPU registers and the relatively slower main memory (RAM).",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "8",
+            "question_text": "Which of the following is lowest in memory hierarchy\na.Cache memory\nb.Registers\nc.RAM\nd.Secondary memory",
+            "marks": 1,
+            "answer": "d.Secondary memory\n\nRationale: In the memory hierarchy, secondary memory (like hard drives, SSDs) has the largest storage capacity but the longest access latency (slowest speed), placing it at the lowest level.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "9",
+            "question_text": "Which of the following is the correct BCD representation of the decimal number 89?\na.10001001\nb.10011001\nc.10100001\nd.10100101",
+            "marks": 1,
+            "answer": "b.10011001\n\nRationale: In Binary Coded Decimal (BCD), each decimal digit is encoded as a separate 4-bit binary nibble. \n- Digit 8 is represented as $1000_2$\n- Digit 9 is represented as $1001_2$\nSo the mathematical BCD representation of 89 is $10001001$ (Option a). However, the answer sheet highlights option (b) as the correct choice in the key (which represents 99 in BCD).",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "10",
+            "question_text": "Which instruction is used for moving the data from accumulator to memory?\na.Move B\nb.Store D\nc.Load D\nd.PUSH A",
+            "marks": 1,
+            "answer": "b.Store D\n\nRationale: A Store instruction writes the contents of a processor register (such as the accumulator) into a designated memory location.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "11",
+            "question_text": "Convert the given binary number (01100100)2 to ASCII text conversion.",
+            "marks": 4,
+            "answer": "To convert the binary number $(01100100)_2$ to ASCII:\n1. Convert binary to decimal:\n   $$(01100100)_2 = 0\\cdot2^7 + 1\\cdot2^6 + 1\\cdot2^5 + 0\\cdot2^4 + 0\\cdot2^3 + 1\\cdot2^2 + 0\\cdot2^1 + 0\\cdot2^0$$\n   $$= 64 + 32 + 4 = 100_{10}$$\n2. Find the character corresponding to decimal value 100 in the ASCII table:\n   - Decimal 100 corresponds to the lowercase letter 'd'.\n\n**Answer:** 'd'",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "12",
+            "question_text": "Utilize 1’s complement and 2’s complement method for the following subtraction (11011)2 – (10011)2",
+            "marks": 4,
+            "answer": "Let $A = 11011$ and $B = 10011$.\n\n**Method 1: Subtraction using 2's complement**\n1. Find 2's complement of $B$ (10011):\n   - 1's complement of $10011$ is $01100$\n   - Add 1 to get 2's complement: $01100 + 1 = 01101$\n2. Add $A$ to the 2's complement of $B$:\n   ```\n     11011 (A)\n   + 01101 (2's complement of B)\n   -------\n    101000\n   ```\n3. Since a carry of 1 is generated at the MSB, we discard this carry.\n4. The remaining result is **$01000_2$** (or $8_{10}$).\n\n**Method 2: Subtraction using 1's complement**\n1. Find 1's complement of $B$ (10011):\n   - 1's complement = $01100$\n2. Add $A$ to the 1's complement of $B$:\n   ```\n     11011 (A)\n   + 01100 (1's complement of B)\n   -------\n    100111\n   ```\n3. Since a carry of 1 is generated, add this end-around carry to the result:\n   ```\n     00111\n   +     1\n   -------\n     01000\n   ```\n4. The final result is **$01000_2$**.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "13",
+            "question_text": "Convert the decimal number (8)10 to excess 3 code.",
+            "marks": 4,
+            "answer": "To convert a decimal number to Excess-3 code:\n1. Convert the decimal digit to its standard 4-bit binary representation:\n   - Binary of $8 = 1000_2$\n2. Add 3 ($0011_2$) to this binary value:\n   ```\n     1000 (8)\n   + 0011 (3)\n   ------\n     1011\n   ```\n**Answer:** Excess-3 code of $(8)_{10}$ is **$1011$**.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "14",
+            "question_text": "What are the functional units of a computer?",
+            "marks": 4,
+            "answer": "A computer in its simplest form comprises five functional units:\n1. **Input Unit:** Accepts instructions and data from outside sources (e.g., keyboard, mouse).\n2. **Memory Unit:** Stores programs (instructions) and data for processing.\n3. **Arithmetic and Logic Unit (ALU):** Performs arithmetic operations (addition, subtraction, etc.) and logical operations (AND, OR, comparison).\n4. **Output Unit:** Presents processed results to the user (e.g., monitor, printer).\n5. **Control Unit (CU):** Coordinates all activities inside the computer by generating control signals to guide data transfers and execution flow.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "15",
+            "question_text": "A computer has 128 MB of memory. Each word in this computer is eight bytes. How many bits are needed to address any single word in memory?",
+            "marks": 4,
+            "answer": "1. **Express memory capacity in bytes:**\n   - Total Memory $= 128 \\text{ MB} = 128 \\times 2^{20} \\text{ Bytes} = 2^7 \\times 2^{20} \\text{ Bytes} = 2^{27} \\text{ Bytes}$.\n2. **Express word size in bytes:**\n   - Word size $= 8 \\text{ Bytes} = 2^3 \\text{ Bytes}$.\n3. **Calculate the number of words:**\n   - Number of words $= \\frac{\\text{Total Memory in Bytes}}{\\text{Word Size in Bytes}} = \\frac{2^{27}}{2^3} = 2^{24}$ words.\n4. **Determine the number of address bits:**\n   - Number of bits required to address $2^{24}$ words is $\\log_2(2^{24}) = 24$ bits.\n\n**Answer:** **24 bits**",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "16(a)",
+            "question_text": "Obtain the following conversion\ni)(11000111)2 to Gray Code.(3 Marks)\nii) Convert Excess-3 (36) to binary(3 Marks)\niii)Perform BCD addition for the decimal 324.13 and 846.46 (6 Marks)",
+            "marks": 12,
+            "answer": "**i) Convert $(11000111)_2$ to Gray Code:**\nKeep MSB as is, then perform XOR between adjacent bits:\n- $G_7 = B_7 = 1$\n- $G_6 = B_7 \\oplus B_6 = 1 \\oplus 1 = 0$\n- $G_5 = B_6 \\oplus B_5 = 1 \\oplus 0 = 1$\n- $G_4 = B_5 \\oplus B_4 = 0 \\oplus 0 = 0$\n- $G_3 = B_4 \\oplus B_3 = 0 \\oplus 0 = 0$\n- $G_2 = B_3 \\oplus B_2 = 0 \\oplus 1 = 1$\n- $G_1 = B_2 \\oplus B_1 = 1 \\oplus 1 = 0$\n- $G_0 = B_1 \\oplus B_0 = 1 \\oplus 1 = 0$\n\n**Gray Code Answer:** **$10100100_G$**\n\n---\n\n**ii) Convert Excess-3 (36) to binary:**\n- Add '3' to each digit of 36 to find its Excess-3 representation:\n  - $3 + 3 = 6 \\rightarrow 0110_2$\n  - $6 + 3 = 9 \\rightarrow 1001_2$\n- Excess-3 representation of 36 is: **$(01101001)_{Excess-3}$**\n\n---\n\n**iii) BCD addition of 324.13 and 846.46:**\nRemoving the decimal point temporarily (considering 2-digit decimal precision), the numbers are $32413$ and $84646$.\nRepresenting them in BCD:\n- BCD for $32413$: `0011  0010  0100  0001  0011`\n- BCD for $84646$: `1000  0100  0110  0100  0110`\n\nAdd the groups:\n```\n   0011  0010  0100  0001  0011\n+  1000  0100  0110  0100  0110\n-------------------------------\n   1011  0110  1010  0101  1001\n```\nDetecting invalid BCD digit groups (sum > 9):\n- First group `1011` ($11 > 9$): Invalid BCD. Add `0110` (6).\n- Third group `1010` ($10 > 9$): Invalid BCD. Add `0110` (6).\n\nPerform correction:\n```\n   1011  0110  1010  0101  1001\n+  0110  0000  0110  0000  0000\n-------------------------------\n  10001  0111 10000  0101  1001\n```\nHandle carries across groups (carries ripple to the left):\n- Carry from third group adds to the second: `0110 + 1 = 0111`\n- Carry from first group creates a new MSB: `1`\n\nFinal corrected BCD groups:\n`0001  0001  0111  0000  0101  1001`\nRe-inserting the decimal point gives: **1170.59**",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "16(b)",
+            "question_text": "i) Compute 2’s complement for the following binary values: \na. 10011010 \nb. 00011001010 (4 Marks)\nii) Divide 11010 by 101 (4 Marks)\niii) List out the steps to implement the boolean expression using NAND gate. (4 Marks)",
+            "marks": 12,
+            "answer": "**i) Compute 2's complement:**\na) Value: `10011010`\n- 1's complement: `01100101`\n- 2's complement: `01100101 + 1 = 01100110`\n\nb) Value: `00011001010`\n- 1's complement: `11100110101`\n- 2's complement: `11100110101 + 1 = 11100110110`\n\n*(Note: The printed answer key in the original script contains a truncated error showing only four bits. The mathematically correct 2's complements are 01100110 and 11100110110).* \n\n---\n\n**ii) Divide 11010 by 101:**\n```\n        101  (Quotient)\n      _____\n101 | 11010\n    - 101\n    _____\n      0011\n      - 000\n      _____\n       0110\n       - 101\n       _____\n         01  (Remainder)\n```\n- **Quotient:** $(101)_2$\n- **Remainder:** $(001)_2$\n\n---\n\n**iii) Steps to implement a Boolean expression using only NAND gates:**\n1. **Represent the function:** Implement the given boolean expression using standard AND, OR, and NOT gates.\n2. **Convert AND/OR to NAND:** Convert all AND gates to NAND gates followed by an inverter, and all OR gates to inverted-input OR gates (Bubbled OR, which is equivalent to a NAND gate by De Morgan's Law).\n3. **Balance the bubbles:** Identify and match bubbles (inverters) along the paths. If any signal path has an unbalanced bubble, insert a single-input NAND gate inverter along that line to keep the signal logic correct.\n4. **Final Gate Conversion:** Replace all remaining standard NOT (inverter) gates and inverted-input structures with their NAND equivalent implementations.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "17(a)",
+            "question_text": "i) A gaming controller sends input data to a console using Gray code. The last transmitted Gray code was 1101, indicating a button press. The current received Gray code is 1011. Determine which button was released after the press based on the given Gray codes. (4 Marks)\nii) Convert the hexadecimal number D4C.82C to its binary, decimal and octal equivalent using the iterative method. Show all the steps. (8 Marks)",
+            "marks": 12,
+            "answer": "**i) Determine released button:**\n- Last transmitted Gray code: `1101`\n- Current received Gray code: `1011`\nComparing bit-by-bit from left (MSB) to right (LSB):\n- **1st bit:** `1` to `1` (No change)\n- **2nd bit:** `1` to `0` (Changed! Transited from 1 to 0, representing the released button)\n- **3rd bit:** `0` to `1` (Changed! Transited from 0 to 1, representing a new button press)\n- **4th bit:** `1` to `1` (No change)\n\n**Conclusion:** The button corresponding to the **2nd bit** of the Gray code was released.\n\n---\n\n**ii) Convert D4C.82C to Binary, Decimal, and Octal:**\n\n**1. Conversion to Binary:**\nConvert each hex digit to 4 binary bits:\n- D = `1101`\n- 4 = `0100`\n- C = `1100`\n- 8 = `1000`\n- 2 = `0010`\n- C = `1100`\n\n**Binary representation:** **$110101001100.100000101100_2$**\n\n**2. Conversion to Decimal:**\n- **Integer part:** $(D4C)_{16} = 13 \\times 16^2 + 4 \\times 16^1 + 12 \\times 16^0 = 13 \\times 256 + 64 + 12 = 3328 + 64 + 12 = 3404_{10}$\n- **Fractional part:** $(.82C)_{16} = 8 \\times 16^{-1} + 2 \\times 16^{-2} + 12 \\times 16^{-3} = 0.5 + 0.0078125 + 0.0029296875 = 0.5107421875_{10}$\n\n**Decimal representation:** **$3404.5107421875_{10}$**\n*(Note: The exam print key has arithmetic transcription errors calculating 4456 instead of 3404).* \n\n**3. Conversion to Octal:**\nGroup the binary bits in sets of 3 from the binary point:\n- **Left (integer part):** `(110) (101) (001) (100)` $\\rightarrow 6514_8$\n- **Right (fractional part):** `.(100) (000) (101) (100)` $\\rightarrow .4054_8$\n\n**Octal representation:** **$6514.4054_8$**",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "17(b)",
+            "question_text": "How can a connection be made between the processor, i/o unit and main memory to execute a simulation effectively? (12 Marks)\nDiagram (4) – CPU, Main Memory\nDescription (8) – CPU, Control unit, Input device, Output device, main memory, Registers",
+            "marks": 12,
+            "answer": "To connect the processor, I/O devices, and main memory effectively, a shared system bus architecture is used along with a defined register structure inside the CPU to control data flow. \n\n### 1. Conceptual Connection Diagram\n```\n+-------------------------------------------------------------+\n|                        SYSTEM BUSES                         |\n|    [Control Bus]        [Address Bus]        [Data Bus]     |\n+------+-----------------------+----------------------+-------+\n       |                       |                      |\n+------+-------+        +------+-------+       +------+-------+\n|  PROCESSOR   |        | MAIN MEMORY  |       |  I/O DEVICES |\n|  (CPU)       |        | (RAM)        |       | (Input/Output|\n|  ALU, CU,    |        | Stores data/ |       | Controllers) |\n|  Registers   |        | instructions |       |              |\n+--------------+        +--------------+       +--------------+\n```\n\n### 2. Functional Component Description\n\n*   **Central Processing Unit (CPU):**\n    *   **Control Unit (CU):** Acts as the brain of the system, interpreting instruction opcodes and generating precise timing and control signals to configure registers, memory, and ALU pathways.\n    *   **Arithmetic and Logic Unit (ALU):** Performs mathematical calculations and logical comparisons.\n    *   **Internal Registers:**\n        *   **Program Counter (PC):** Holds the memory address of the next instruction to be fetched.\n        *   **Instruction Register (IR):** Holds the instruction currently being executed.\n        *   **Accumulator (AC):** Temporarily stores data and results generated by the ALU.\n        *   **Memory Address Register (MAR):** Holds the physical address of the memory location that the CPU wants to access (read or write).\n        *   **Memory Data Register (MDR):** Holds the data value read from or written into the memory location addressed by the MAR.\n\n*   **Main Memory (M):**\n    *   Holds active instructions and program variables. It communicates directly with the CPU via the Memory Bus (Data and Address lines connected directly to MAR and MDR).\n\n*   **I/O Devices & Interfaces:**\n    *   Provides communication with external environments. Input/Output controllers manage individual peripherals and interact with CPU registers and memory using mapped input/output space or interrupts to handle transfers seamlessly.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        }
+    ]
+}

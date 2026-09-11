@@ -1,0 +1,159 @@
+{
+    "formal_filename": "CT-2_Set-C_2023-10-09.json",
+    "paper_title": "SRM Institute of Science and Technology, College of Engineering and Technology, School of Computing, DEPARTMENT OF COMPUTING TECHNOLOGIES, Academic Year: 2023-24 (ODD), Test: CLA1T2, Course Code & Title: 21CSS201T COA",
+    "source": "2023-10-09 CLA1T2 Set C",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "The Instruction fetch phase ends with _________\na) Placing the data from the address in MAR into MDR\nb) Placing the address of the data into MAR\nc) Completing the execution of the data and placing its storage address into MAR\nd) Decoding the data in MDR and placing it in IR",
+            "marks": 1,
+            "answer": "d) Decoding the data in MDR and placing it in IR\n\n*Rationale:* The instruction fetch phase finishes when the instruction is fetched from memory (into MDR) and loaded into the Instruction Register (IR) for decoding.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "2",
+            "question_text": "In the case of, Zero-address instruction method the operands are stored in _____\na) Registers\nb) Accumulators\nc) Push down stack\nd) Cache",
+            "marks": 1,
+            "answer": "c) Push down stack\n\n*Rationale:* Zero-address instructions use stack-based operations (like PUSH and POP), where operands are implicitly on top of the stack.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "3",
+            "question_text": "In the following indexed addressing mode instruction, MOV 25(R1), LOC the effective address is ______\na) EA = 25+R1\nb) EA = R1\nc) EA = [R1]\nd) EA = 25+[R1]",
+            "marks": 1,
+            "answer": "d) EA = 25+[R1]\n\n*Rationale:* In indexed addressing, the effective address is calculated by adding the constant offset (index) to the contents of the index register ($[R1]$).",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "4",
+            "question_text": "_____ addressing mode is most suitable to change the normal sequence of execution of instructions.\na) Relative\nb) Indirect\nc) Index with Offset\nd) Immediate",
+            "marks": 1,
+            "answer": "a) Relative\n\n*Rationale:* Relative addressing (PC-relative) is commonly used in branch instructions to dynamically change the execution flow relative to the current Program Counter.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "5",
+            "question_text": "Which of the following is/are true of the auto-increment addressing mode?\nI. It is useful in creating self-relocating code.\nII. If it is included in an Instruction Set Architecture, then an additional ALU is required for effective address calculation.\nIII. The amount of increment depends on the size of the data item accessed.\na) I only\nb) II only\nc) III Only\nd) I and III only",
+            "marks": 1,
+            "answer": "c) III Only\n\n*Rationale:* Auto-increment automatically increments the register after accessing its operand, and the increment step matches the size of the operand (e.g., 1 byte for char, 4 bytes for word). It does not require an additional ALU, and is not primarily used for self-relocating code.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "6",
+            "question_text": "Using Booth’s Algorithm for multiplication, the multiplier -57 will be recoded as\na) 0 -1 0 0 1 0 0 -1\nb) 1 1 0 0 0 1 1 1\nc) 0 -1 0 0 1 0 0 0\nd) 0 1 0 0 -1 0 0 1",
+            "marks": 1,
+            "answer": "a) 0 -1 0 0 1 0 0 -1\n\n*Rationale:* Decimal -57 in 8-bit 2's complement is $11000111_2$. Appending $y_{-1} = 0$ to the right yields $1\\ 1\\ 0\\ 0\\ 0\\ 1\\ 1\\ 1\\ (0)$. Using Booth's recoding table ($y_i - y_{i-1}$):\n- $y_0 - y_{-1} = 1 - 0 = -1$\n- $y_1 - y_0 = 1 - 1 = 0$\n- $y_2 - y_1 = 1 - 1 = 0$\n- $y_3 - y_2 = 0 - 1 = -1$\n- $y_4 - y_3 = 0 - 0 = 0$\n- $y_5 - y_4 = 0 - 0 = 0$\n- $y_6 - y_5 = 1 - 0 = 1$\n- $y_7 - y_6 = 1 - 1 = 0$\n- $y_8 - y_7 = 1 - 1 = 0$\nThus, the Booth's recoded representation is `0 -1 0 0 1 0 0 -1`.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "7",
+            "question_text": "A processor that has carry, overflow and sign flag bits as part of its program status word (PSW) performs addition of the following two 2’s complement numbers 01001101 and 11101001. After the execution of this addition operation, the status of the carry, overflow and sign flags, respectively will be:\na) 1, 1, 0\nb) 1, 0, 0\nc) 0, 1, 0\nd) 1, 0, 1",
+            "marks": 1,
+            "answer": "b) 1, 0, 0\n\n*Rationale:* \n$$\\begin{array}{r@{\\quad}l}\n\\ \\ 01001101 & \\\\\n+\\ 11101001 & \\\\\n\\hline\n1\\ 00110110 & \\\\\n\\hline\n\\end{array}$$\n- Carry ($C$): A carry-out of 1 occurs from the MSB, so $C = 1$.\n- Overflow ($V$): Since we are adding numbers of opposite signs, overflow cannot occur, so $V = 0$.\n- Sign ($S$): The MSB of the result is 0, so $S = 0$.\nThus, the flags $(C, V, S)$ are $(1, 0, 0)$.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "8",
+            "question_text": "Which of the following addressing modes permits relocation without any change whatsoever in the code?\na) Indirect addressing\nb) Indexed addressing\nc) Base register addressing\nd) PC relative addressing",
+            "marks": 1,
+            "answer": "d) PC relative addressing\n\n*Rationale:* PC-relative addressing specifies the address relative to the current value of the program counter, allowing the entire block of code to be relocated to a different part of the memory without updating any internal instruction addresses.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "9",
+            "question_text": "IEEE double precision representation for (1259.125)10?\nA.0100000010010011101011001....\nB.1100000010010011101011001....\nC.1111000010010011101011001....\nD.0100001110010011101011001....",
+            "marks": 1,
+            "answer": "A.0100000010010011101011001....\n\n*Rationale:* Convert $(1259.125)_{10}$ to binary:\n- $1259_{10} = 10011101011_2$\n- $0.125_{10} = 0.001_2$\n- Combined binary: $10011101011.001_2$\n- Normalized: $1.0011101011001_2 \\times 2^{10}$.\nFor IEEE-754 double-precision format:\n- Sign bit ($S$) = 0 (positive)\n- Biased Exponent ($E$) = $10 + 1023 = 1033 = 10000001001_2$\n- Mantissa ($M$) = $0011101011001...$\nThis matches Option A.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "10",
+            "question_text": "When 1101 is used to divide 100010010 the remainder is ______\na) 101\nb) 11\nc) 0\nd) 1",
+            "marks": 1,
+            "answer": "d) 1\n\n*Rationale:* Convert the binary numbers to decimal:\n- Dividend: $100010010_2 = 274_{10}$\n- Divisor: $1101_2 = 13_{10}$\n- division: $274 / 13 = 21$ with a remainder of $1$ ($0001_2$).",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "11",
+            "question_text": "In X = (M + N x O)/(P x Q), how many one-address instructions are required to evaluate it?",
+            "marks": 4,
+            "answer": "In One-address instructions, an accumulator register is required to perform all instructions. Load and store operations are performed to fetch values of operands from registers or memory to accumulators and to store the value of the accumulator to a memory location. \n\nInstructions required to execute $X = \\frac{M + N \\times O}{P \\times Q}$ (assuming sequence matches the provided answer key):\n1) `Load A` : `ACC <-- M[M]`\n2) `Add N` : `ACC <-- ACC + M[N]`\n3) `Mul O` : `ACC <-- ACC * M[O]`\n4) `Store T` : `M[T] <-- ACC`\n5) `Load P` : `ACC <-- M[P]`\n6) `Mul Q` : `ACC <-- ACC * M[Q]`\n7) `Div T` : `ACC <-- M[T] / ACC`\n8) `Store X` : `M[X] <-- ACC`\n\nThus, 8 one-address instructions are required to evaluate it.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "12",
+            "question_text": "Registers R1 and R2 of a computer contain the decimal values 1200 and 4600. What is the effective address of the memory operand in each of the following instructions?\na) Load 20(R1), R5\nb) Store R5, 30(R1,R2)\nc) Add −(R2), R5",
+            "marks": 4,
+            "answer": "a) **Effective Address = 1220**\nExplanation: $R1 = 1200$, $20(R1) \\implies EA = [R1] + 20 = 1200 + 20 = 1220$\n\nb) **Effective Address = 5830**\nExplanation: $R1 = 1200$, $R2 = 4600$, $30(R1, R2) \\implies EA = [R1] + [R2] + 30 = 1200 + 4600 + 30 = 5830$\n\nc) **Effective Address = 4599**\nExplanation: $R2 = 4600$, $-(R2)$ represents auto-decrement addressing mode. First, decrement the register: $R2 = [R2] - 1 = 4600 - 1 = 4599$. Then, $EA = [R2] = 4599$.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "13",
+            "question_text": "State the principle of operation of a carry look-ahead adder and write the equation for carry propagate and generate function with diagram.",
+            "marks": 4,
+            "answer": "**Principle of Operation:**\nThe carry-lookahead adder speeds up carry propagation by calculating carry signals for each stage ahead of time, directly from the inputs of all preceding stages (i-1, i-2, ..., 0), rather than waiting for carries to ripple sequentially from stage to stage.\n\n**Equations:**\n- Carry Generate ($G_i$): $G_i = A_i \\cdot B_i$\n- Carry Propagate ($P_i$): $P_i = A_i \\oplus B_i$\n- Carry-out ($C_{i+1}$): $C_{i+1} = G_i + P_i C_i$\n\n**Circuit Diagram:**\n```\n   Ai -----\\______\n            \\     | XOR ---- Pi = Ai ^ Bi\n   Bi ----+--/____|           | \n          |                   +------- S_i = Pi ^ C_i\n          +---\\______                 /\n               \\     | AND -- Gi     / (from C_i)\n                /____|       |\n                             +-------- C_i+1 = Gi + Pi.Ci\n```",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "14",
+            "question_text": "Give the booth’s recoding and bit-pair recoding of the computer. 1000111101000101",
+            "marks": 4,
+            "answer": "**1. Booth's Recoding:**\nFor the binary pattern `1 0 0 0 1 1 1 1 0 1 0 0 0 1 0 1` (with an implicit trailing 0):\n- Recoded bits from MSB to LSB:\n`-1 0 0 +1 0 0 0 -1 +1 -1 +1 -1 +1 -1 +1 -1`\n\n**2. Bit-Pair Recoding:**\nGrouping pairs from right to left based on the Booth's recoded values:\n- Binary: `1 0 0 0 1 1 1 1 0 1 0 0 0 1 0 1`\n- Recoded pairs: `-2  +1  0  -1  +1  0  +1  1`",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "15",
+            "question_text": "In conforming to the IEEE standard mention any four situations under which a processor sets exception flag.",
+            "marks": 4,
+            "answer": "Under the IEEE standard, exception flags are set in the following situations:\n1. **Underflow:** Occurs if a number requires an exponent less than -126 (single precision) or -1022 (double precision) to represent its normalized form.\n2. **Overflow:** Occurs if a number requires an exponent greater than +127 (single precision) or +1023 (double precision) to represent its normalized form.\n3. **Divide by Zero:** Occurs when any non-zero number is divided by zero.\n4. **Invalid:** Occurs if mathematically undefined operations (such as 0/0 or square root of a negative number) are attempted.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "16",
+            "question_text": "Consider the following memory values and a one-address machine with an accumulator, what values do the following instructions load into accumulator?\n* Word 20 contains 40\n* Word 30 contains 50\n* Word 40 contains 60\n* Word 50 contains 70\n\nInstructions are:\n1. Load immediate 20\n2. Load direct 20\n3. Load indirect 20\n4. Load immediate 30\n5. Load direct 30\n6. Load indirect 30",
+            "marks": 12,
+            "answer": "**Instruction-01: Load immediate 20**\n- This instruction uses immediate addressing mode.\n- Accumulator $\\leftarrow 20$.\n- Value **20** is loaded.\n\n**Instruction-02: Load direct 20**\n- This instruction uses direct addressing mode.\n- Accumulator $\\leftarrow [20]$.\n- Since Word 20 contains 40, value **40** is loaded.\n\n**Instruction-03: Load indirect 20**\n- This instruction uses indirect addressing mode.\n- Accumulator $\\leftarrow [[20]]$.\n- Word 20 contains 40, and Word 40 contains 60. Value **60** is loaded.\n\n**Instruction-04: Load immediate 30**\n- This instruction uses immediate addressing mode.\n- Accumulator $\\leftarrow 30$.\n- Value **30** is loaded.\n\n**Instruction-05: Load direct 30**\n- This instruction uses direct addressing mode.\n- Accumulator $\\leftarrow [30]$.\n- Since Word 30 contains 50, value **50** is loaded.\n\n**Instruction-06: Load indirect 30**\n- This instruction uses indirect addressing mode.\n- Accumulator $\\leftarrow [[30]]$.\n- Word 30 contains 50, and Word 50 contains 70. Value **70** is loaded.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "17",
+            "question_text": "Design a digital arithmetic circuit having three inputs A, B, and C, and two outputs f1 and f2, where f1 and f2 are\n$$f_1 = \\bar{A}\\bar{B}C + \\bar{A}B\\bar{C} + A\\bar{B}\\bar{C} + ABC$$\n$$f_2 = \\bar{A}\\bar{B}C + \\bar{A}B\\bar{C} + \\bar{A}BC + ABC$$\nDraw the truth table that satisfies the above SoP expression and perform the minimization of the same using Boolean algebra. Draw an equivalent circuit diagram using a combination of Basic, Universal, and compound gates.",
+            "marks": 12,
+            "answer": "**1. Truth Table:**\n\n| Input A | Input B | Input C | Output F1 | Output F2 |\n| :---: | :---: | :---: | :---: | :---: |\n| 0 | 0 | 0 | 0 | 0 |\n| 0 | 0 | 1 | 1 | 1 |\n| 0 | 1 | 0 | 1 | 1 |\n| 0 | 1 | 1 | 0 | 1 |\n| 1 | 0 | 0 | 1 | 0 |\n| 1 | 0 | 1 | 0 | 0 |\n| 1 | 1 | 0 | 0 | 0 |\n| 1 | 1 | 1 | 1 | 1 |\n\n**2. Minimization:**\n- **For F1:**\n  $$f_1 = \\bar{A}\\bar{B}C + \\bar{A}B\\bar{C} + A\\bar{B}\\bar{C} + ABC$$\n  $$f_1 = C(\\bar{A}\\bar{B} + AB) + \\bar{C}(\\bar{A}B + A\\bar{B})$$\n  $$f_1 = C(\\overline{A \\oplus B}) + \\bar{C}(A \\oplus B) = A \\oplus B \\oplus C$$\n\n- **For F2:**\n  $$f_2 = \\bar{A}\\bar{B}C + \\bar{A}B\\bar{C} + \\bar{A}BC + ABC$$\n  Using variable replacement ($C = B_{in}$):\n  $$f_2 = A'B'B_{in} + A'BB_{in}' + A'BB_{in} + ABB_{in}$$\n  $$f_2 = B_{in}(A \\oplus B)' + A'B$$\n\n**3. Circuit Diagram:**\n- Implement $f_1$ using cascading XOR gates (or a 3-input XOR).\n- Implement $f_2$ using NOT, AND, and OR gates.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "18",
+            "question_text": "Interpret the multiplication of (-10) and (-4) using Booth's algorithm with flowchart",
+            "marks": 12,
+            "answer": "**Booth's Algorithm Multiplication for (-10) and (-4):**\n- Multiplicand ($M$) = $-10 = 10110_2$ (5-bit 2's complement), $-M = +10 = 01010_2$\n- Multiplier ($Q$) = $-4 = 11100_2$\n- Number of cycles $n = 5$\n\n**Step-by-step Iterations:**\n- **Initial State:** $A = 00000$, $Q = 11100$, $Q_{-1} = 0$, Count $= 5$\n- **Iteration 1:**\n  - LSBs $Q_0 Q_{-1} = 00 \\implies$ Arithmetic Shift Right (ASR).\n  - $A = 00000$, $Q = 01110$, $Q_{-1} = 0$, Count $= 4$\n- **Iteration 2:**\n  - LSBs $Q_0 Q_{-1} = 00 \\implies$ ASR.\n  - $A = 00000$, $Q = 00111$, $Q_{-1} = 0$, Count $= 3$\n- **Iteration 3:**\n  - LSBs $Q_0 Q_{-1} = 10 \\implies A \\leftarrow A - M$.\n  - $A = 00000 + 01010 = 01010$. ASR:\n  - $A = 00101$, $Q = 00011$, $Q_{-1} = 1$, Count $= 2$\n- **Iteration 4:**\n  - LSBs $Q_0 Q_{-1} = 11 \\implies$ ASR.\n  - $A = 00010$, $Q = 10001$, $Q_{-1} = 1$, Count $= 1$\n- **Iteration 5:**\n  - LSBs $Q_0 Q_{-1} = 11 \\implies$ ASR.\n  - $A = 00001$, $Q = 01000$, $Q_{-1} = 1$, Count $= 0$\n\n**Final Result:** $AQ = 00001\\ 01000_2 = +40_{10}$, which is correct.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "19",
+            "question_text": "Construct a fast addition process for the below-mentioned binary numbers 1001,1101,1110,1111,1010,1100 by converting a three-operand addition to a two-operand addition.\n\nii) What is the advantage of using the fast addition process in comparison to the other addition processes and state where it is used?",
+            "marks": 12,
+            "answer": "**i) Carry-Save Addition (CSA) Process:**\nLet the six binary numbers be:\n- $A = 1001$\n- $B = 1101$\n- $C = 1110$\n- $D = 1111$\n- $E = 1010$\n- $F = 1100$\n\nApplying CSA trees to reduce the multi-operand addition results in the following outputs:\n- **Sum:** `010001`\n- **Carry:** `111000`\n\n**ii) Advantages & Application:**\n- **Advantage:** Carry-save adders do not propagate carry bits between columns during intermediate addition stages, making the addition process extremely fast and independent of the word length.\n- **Application:** Highly utilized in parallel multipliers (e.g., Wallace Tree multipliers) to sum partial products quickly.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Design of ALU"
+        }
+    ]
+}

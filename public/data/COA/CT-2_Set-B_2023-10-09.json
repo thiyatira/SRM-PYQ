@@ -1,0 +1,159 @@
+{
+    "formal_filename": "CT-2_Set-B_2023-10-09.json",
+    "paper_title": "SRM Institute of Science and Technology, College of Engineering and Technology, School of Computing, Academic Year: 2023-24 (ODD), Test: CLAT-2, Course Code & Title: 21CSS201T COA, Year & Sem: II & III, SET B",
+    "source": "2023-10-09 CT2 Set B",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "When using Branching, the usual sequencing of the PC is altered. A new instruction is loaded which is called as ______\na) Branch target\nb) Loop target\nc) Forward target\nd) Jump instruction",
+            "marks": 1,
+            "answer": "a) Branch target\n\n**Rationale:** In branching, the address of the next instruction to be executed is altered. This new memory address is known as the branch target.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "2",
+            "question_text": "In the following indexed addressing mode instruction, MOV 5(R1), LOC the effective address is ______\na) EA = 5+R1\nb) EA = R1\nc) EA = [R1]\nd) EA = 5+[R1]",
+            "marks": 1,
+            "answer": "d) EA = 5+[R1]\n\n**Rationale:** In indexed addressing mode, the effective address (EA) is calculated by adding a displacement constant to the contents of the specified index register: $\\text{EA} = \\text{offset} + [\\text{Register}]$.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "3",
+            "question_text": "The microprocessor of a computer can operate on any information if it is present in ______________ only.\na) Program Counter\nb) Flag\nc) Main Memory\nd) Secondary Memory",
+            "marks": 1,
+            "answer": "c) Main Memory\n\n**Rationale:** The CPU can directly access and execute instructions or process data only when they are loaded into the main memory (RAM).",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "4",
+            "question_text": "The assembler directives which are the hints using some predefined alphabetical strings are given to\na) processor\nb) memory\nc) assembler\nd) processor & assembler",
+            "marks": 1,
+            "answer": "c) assembler\n\n**Rationale:** Assembler directives (pseudo-instructions) are commands directed to the assembler program during translation, not instructions executed by the target physical processor.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "5",
+            "question_text": "The method used to reduce the maximum number of summands by half is _______\na) Fast multiplication\nb) Bit-pair recording\nc) Quick multiplication\nd) Booth Multiplication",
+            "marks": 1,
+            "answer": "b) Bit-pair recording\n\n**Rationale:** Bit-pair recoding (or Modified Booth's Algorithm) reduces the number of partial products (summands) by exactly half by grouping multiplier bits into pairs.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "6",
+            "question_text": "In IEEE 32-bit representations, the mantissa of the fraction is said to occupy ______ bits.\na) 24\nb) 23\nc) 20\nd) 16",
+            "marks": 1,
+            "answer": "b) 23\n\n**Rationale:** In IEEE 754 single-precision (32-bit) format, the representation is allocated as: 1 sign bit, 8 exponent bits, and 23 mantissa/fraction bits.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "7",
+            "question_text": "Half-adders have a major limitation, they cannot __________\na) Accept a carry bit from a present stage\nb) Accept a carry bit from a next stage\nc) Accept a carry bit from a previous stage\nd) Accept a carry bit from the following stages",
+            "marks": 1,
+            "answer": "c) Accept a carry bit from a previous stage\n\n**Rationale:** A half-adder can only sum two inputs. It lacks a third input for a carry-in ($C_{\\text{in}}$) propagated from a lower-order stage, which is why a full-adder is required.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "8",
+            "question_text": "Which of the following is used for binary multiplication?\na) Restoring Multiplication\nb) Booth’s Algorithm\nc) Pascal's Rule\nd) Digit-by-digit multiplication",
+            "marks": 1,
+            "answer": "b) Booth’s Algorithm\n\n**Rationale:** Booth’s algorithm is a standard, efficient algorithm used for multiplying signed binary numbers represented in 2's complement.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "9",
+            "question_text": "DeMorgan’s theorem states that _________\na) (AB)’ = A’ + B’\nb) (A + B)’ = A’ * B\nc) A’ + B’ = A’B’\nd) (AB)’ = A’ + B",
+            "marks": 1,
+            "answer": "a) (AB)’ = A’ + B’\n\n**Rationale:** DeMorgan's Theorem states that the complement of a product is equal to the sum of the individual complements: $\\overline{AB} = \\bar{A} + \\bar{B}$ (written as $(AB)' = A' + B'$).",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "10",
+            "question_text": "The product of 1101 & 1011 is ______\na) 10001111\nb) 10101010\nc) 11110000\nd) 11001100",
+            "marks": 1,
+            "answer": "a) 10001111\n\n**Rationale:**\n$$\\begin{array}{r@{\\quad}l}\n1101 & (13_{10}) \\\\\n\\times \\ 1011 & (11_{10}) \\\\\n\\hline\n1101 & \\\\\n11010 & \\\\\n000000 & \\\\\n1101000 & \\\\\n\\hline\n10001111 & (143_{10})\n\\end{array}$$\nThus, $1101_2 \\times 1011_2 = 10001111_2$.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "11",
+            "question_text": "Write a program to evaluate arithmetic expression using stack organized computer with 0-address instructions.\nX= (A-B) * (((C-D * E) /F) /G)",
+            "marks": 4,
+            "answer": "To evaluate the arithmetic expression on a stack-organized machine, we convert the expression to its equivalent **Postfix Form**:\n$$\\text{Postfix Form: } X = AB-CDE*-F/G/*$$\n\n**0-Address Assembly Program:**\n```assembly\nPUSH A      ; TOS <- A\nPUSH B      ; TOS <- B\nSUB         ; TOS <- (A - B)\nPUSH C      ; TOS <- C\nPUSH D      ; TOS <- D\nPUSH E      ; TOS <- E\nMUL         ; TOS <- (D * E)\nSUB         ; TOS <- (C - (D * E))\nPUSH F      ; TOS <- F\nDIV         ; TOS <- (C - D*E) / F\nPUSH G      ; TOS <- G\nDIV         ; TOS <- ((C - D*E) / F) / G\nMUL         ; TOS <- (A - B) * (((C - D*E) / F) / G)\nPOP X       ; M[X] <- TOS\n```",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "12",
+            "question_text": "Give the IEEE standard for floating point numbers for single and Double precision number.",
+            "marks": 4,
+            "answer": "**IEEE 754 Single Precision:**\nSingle precision occupies 32 bits of computer memory.\n- **Sign bit:** 1 bit (bit 31)\n- **Biased Exponent:** 8 bits (bits 30 to 23), bias is $+127$\n- **Mantissa (Fraction):** 23 bits (bits 22 to 0)\n$$\\text{Value} = (-1)^S \\times 1.F \\times 2^{E - 127}$$\n\n**IEEE 754 Double Precision:**\nDouble precision occupies 64 bits of computer memory.\n- **Sign bit:** 1 bit (bit 63)\n- **Biased Exponent:** 11 bits (bits 62 to 52), bias is $+1023$\n- **Mantissa (Fraction):** 52 bits (bits 51 to 0)\n$$\\text{Value} = (-1)^S \\times 1.F \\times 2^{E - 1023}$$\n\n```\nSingle Precision (32-bit):\n+-+--------+-----------------------\n|S|Exponent|       Mantissa        |\n+-+--------+-----------------------\n1b    8b             23b\n\nDouble Precision (64-bit):\n+-+-----------+---------------------------------------------\n|S| Exponent  |                  Mantissa                   |\n+-+-----------+---------------------------------------------\n1b     11b                             52b\n```",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "13",
+            "question_text": "How carry signal is generated based on the two functions? Write down the expression of carry, based on the propagation and generation for 4-bit operation.",
+            "marks": 4,
+            "answer": "A Carry Lookahead Adder speeds up addition by calculating carry signals in parallel using two functions:\n1. **Carry Generate ($G_i$):** $G_i = A_i \\cdot B_i$ (A carry is generated if both inputs are 1)\n2. **Carry Propagate ($P_i$):** $P_i = A_i \\oplus B_i$ (An incoming carry is propagated if at least one input is 1)\n\nThe Sum ($S_i$) and next Carry ($C_{i+1}$) are defined as:\n- $S_i = P_i \\oplus C_i$\n- $C_{i+1} = G_i + P_i C_i$\n\nFor a **4-bit operation**, the carries $C_1, C_2, C_3, C_4$ are computed as:\n- $C_1 = G_0 + P_0 C_0$\n- $C_2 = G_1 + P_1 C_1 = G_1 + P_1 G_0 + P_1 P_0 C_0$\n- $C_3 = G_2 + P_2 C_2 = G_2 + P_2 G_1 + P_2 P_1 G_0 + P_2 P_1 P_0 C_0$\n- $C_4 = G_3 + P_3 C_3 = G_3 + P_3 G_2 + P_3 P_2 G_1 + P_3 P_2 P_1 G_0 + P_3 P_2 P_1 P_0 C_0$",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "14",
+            "question_text": "Identify and draw a 4-bit ALU operation of both adder / subtractor circuit using full adder.",
+            "marks": 4,
+            "answer": "The Binary Adder-Subtractor is designed by cascading 4 Full Adders and using XOR gates to conditionally invert the second input $Y$ based on a mode control line ($K$):\n- **Addition ($K = 0$):** $C_{\\text{in}} = 0$, the XOR gates pass $Y_i$ unchanged ($Y_i \\oplus 0 = Y_i$). The circuit performs $X + Y$.\n- **Subtraction ($K = 1$):** $C_{\\text{in}} = 1$, the XOR gates invert the input ($Y_i \\oplus 1 = \\overline{Y}_i$). The circuit performs $X + \\overline{Y} + 1$, which is $X - Y$ in 2's complement.\n\n**Schematic Logic Diagram:**\n```\n       X3      Y3     X2      Y2     X1      Y1     X0      Y0\n        |       |      |       |      |       |      |       |\n        |     +---+    |     +---+    |     +---+    |     +---+\n        |     |XOR|<---+     |XOR|<---+     |XOR|<---+     |XOR|<--+-- K\n        |     +---+    |     +---+    |     +---+    |     +---+   |\n        |       |      |       |      |       |      |       |     |\n      +-----------+  +-----------+  +-----------+  +-----------+   |\n      |   FA 3    |  |   FA 2    |  |   FA 1    |  |   FA 0    |   |\nCout<-|Cin     Sum|<-|Cin     Sum|<-|Cin     Sum|<-|Cin     Sum|<--+\n      +-----------+  +-----------+  +-----------+  +-----------+\n            |              |              |              |\n            S3             S2             S1             S0\n```",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "15",
+            "question_text": "Give the booth’s recoding and bit-pair recoding multiplier for the given number. 11101100101101001101",
+            "marks": 4,
+            "answer": "For the multiplier: $11101100101101001101_2$\n\n**Step 1: Append a 0 to the right of the LSB:**\n$$1\\ 1\\ 1\\ 0\\ 1\\ 1\\ 0\\ 0\\ 1\\ 0\\ 1\\ 1\\ 0\\ 1\\ 0\\ 0\\ 1\\ 1\\ 0\\ 1\\ \\mathbf{0}$$\n\n**Step 2: Booth's Recoding**\nBy evaluating each adjacent pair $Q_i Q_{i-1}$ from right to left:\n- $00 \\to 0$\n- $01 \\to +1$\n- $10 \\to -1$\n- $11 \\to 0$\n\n```\nBinary:   1  1  1  0  1  1  0  0  1  0  1  1  0  1  0  0  1  1  0  1 (0)\nRecoded:  0  0 -1 +1  0 -1  0 +1 -1 +1  0 -1 +1 -1  0 +1  0 -1 +1 -1\n```\n\n**Step 3: Bit-Pair Recoding**\nGroup Booth's recoded bits into pairs from right to left:\n- $(+1, -1) \\to +1 \\times 2 - 1 = +1$\n- $(0, -1) \\to 0 \\times 2 - 1 = -1$\n- $(0, +1) \\to 0 \\times 2 + 1 = +1$\n- $(+1, -1) \\to +1 \\times 2 - 1 = +1$\n- $(0, -1) \\to 0 \\times 2 - 1 = -1$\n- $(0, -1) \\to 0 \\times 2 - 1 = -1$\n- $(0, +1) \\to 0 \\times 2 + 1 = +1$\n- $(0, -1) \\to 0 \\times 2 - 1 = -1$\n- $(0, -1) \\to 0 \\times 2 - 1 = -1$\n- $(0, 0) \\to 0$\n\n```\nBit-Pair Recoded Sequence:\n  0   -1   -1   +1   -1   -1   +1   +1   -1   +1\n```",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "16 a.",
+            "question_text": "Consider AX = 1212h; BX= 1B1Bh; CX=2323h; DX=2C2Ch; SI= 0050h; DI = 0110h; SP= 23h; BP= 0100h;\nCalculate the effective address and find the addressing modes of the following instructions:\n(i) MOV AX, [2000h] (3Marks)\n(ii) MOV AX, 20h [BP] (3Marks)\n(iii) MOV AX, 40h [BX][DI] (3Marks)\n(iv) MOV AX, 500h (3Marks)",
+            "marks": 12,
+            "answer": "Here are the calculations and addressing modes:\n\n**(i) MOV AX, [2000h]**\n- **Effective Address (EA):** $2000h$\n- **Addressing Mode:** Direct Addressing Mode\n\n**(ii) MOV AX, 20h [BP]**\n- **Effective Address (EA):** $[BP] + \\text{Disp} = 0100h + 20h = 0120h$\n- **Addressing Mode:** Register Relative / Based Addressing Mode\n\n**(iii) MOV AX, 40h [BX][DI]**\n- **Effective Address (EA):** $[BX] + [DI] + \\text{Disp} = 1B1Bh + 0110h + 40h = 1C6Bh$\n- **Addressing Mode:** Based Indexed Relative Addressing Mode\n\n**(iv) MOV AX, 500h**\n- **Effective Address (EA):** None (The operand $500h$ is immediate data)\n- **Addressing Mode:** Immediate Addressing Mode",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "16 b.",
+            "question_text": "Construct a fast addition process for the below-mentioned binary numbers 11010, 10110, 11011, 10110, 11101, 11111 by converting a three-operand addition to a two-operand.",
+            "marks": 12,
+            "answer": "This can be computed using a Carry-Save Adder (CSA) tree to reduce multi-operand additions down to a final two-operand addition.\n\nLet the six operands be:\n- $A = 11010_2 \\ (26)$\n- $B = 10110_2 \\ (22)$\n- $C = 11011_2 \\ (27)$\n- $D = 10110_2 \\ (22)$\n- $E = 11101_2 \\ (29)$\n- $F = 11111_2 \\ (31)$\n\n**Step 1: Apply CSA to group 1 ($A, B, C$) and group 2 ($D, E, F$):**\n- **Group 1 ($A+B+C$):**\n  $$\\begin{array}{rccccc}\n  A: & & 1 & 1 & 0 & 1 & 0 \\\\\n  B: & & 1 & 0 & 1 & 1 & 0 \\\\\n  C: & & 1 & 1 & 0 & 1 & 1 \\\\\n  \\hline\n  S_1: & & 1 & 0 & 1 & 1 & 1 \\\\\n  C_1: & 1 & 1 & 0 & 1 & 0 & 0 \\\\\n  \\end{array}$$\n\n- **Group 2 ($D+E+F$):**\n  $$\\begin{array}{rccccc}\n  D: & & 1 & 0 & 1 & 1 & 0 \\\\\n  E: & & 1 & 1 & 1 & 0 & 1 \\\\\n  F: & & 1 & 1 & 1 & 1 & 1 \\\\\n  \\hline\n  S_2: & & 1 & 0 & 1 & 0 & 0 \\\\\n  C_2: & 1 & 1 & 1 & 1 & 1 & 0 \\\\\n  \\end{array}$$\n\n**Step 2: Reduce $S_1, C_1, S_2$ to $S_3, C_3$:**\n$$\\begin{array}{rcccccc}\nS_1: & & 0 & 1 & 0 & 1 & 1 & 1 \\\\\nC_1: & & 1 & 1 & 0 & 1 & 0 & 0 \\\\\nS_2: & & 0 & 1 & 0 & 1 & 0 & 0 \\\\\n\\hline\nS_3: & & 1 & 1 & 0 & 1 & 1 & 1 \\\\\nC_3: & 0 & 1 & 0 & 1 & 0 & 0 & 0 \\\\\n\\end{array}$$\n\n**Step 3: Continue CSA reduction with remaining vectors ($S_3, C_3, C_2$) and perform final 2-operand addition.**\n\nCalculating total decimal sum:\n$$\\text{Total} = 26 + 22 + 27 + 22 + 29 + 31 = 157_{10} = 10011101_2$$",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "17 a.",
+            "question_text": "Show the multiplication process using Booth’s algorithm when the following numbers are multiplied: (-13) by (+8)",
+            "marks": 12,
+            "answer": "**Booth's Multiplication of $-13$ by $+8$:**\n- **Multiplicand ($M$):** $-13 = 10011_2$\n- **$-M$:** $+13 = 01101_2$\n- **Multiplier ($Q$):** $+8 = 01000_2$\n- **$n = 5$ bits**, Initial Accumulator $A = 00000$, $Q_{-1} = 0$, $\\text{Count} = 5$\n\n| Cycle | Step | A | Q | $Q_{-1}$ | Operation |\n| :---: | :--- | :---: | :---: | :---: | :--- |\n| **Initial** | - | `00000` | `01000` | `0` | Initialize registers |\n| **Cycle 1** | $Q_0 Q_{-1} = 00$ | `00000` | `01000` | `0` | Arithmetic Shift Right (AShr) |\n| | Shift | `00000` | `00100` | `0` | Count = 4 |\n| **Cycle 2** | $Q_0 Q_{-1} = 00$ | `00000` | `00100` | `0` | Arithmetic Shift Right (AShr) |\n| | Shift | `00000` | `00010` | `0` | Count = 3 |\n| **Cycle 3** | $Q_0 Q_{-1} = 00$ | `00000` | `00010` | `0` | Arithmetic Shift Right (AShr) |\n| | Shift | `00000` | `00001` | `0` | Count = 2 |\n| **Cycle 4** | $Q_0 Q_{-1} = 10$ | `01101` | `00001` | `0` | $A \\leftarrow A - M$ (Add $+13 = 01101$) |\n| | Shift | `00110` | `10000` | `1` | Arithmetic Shift Right (AShr), Count = 1 |\n| **Cycle 5** | $Q_0 Q_{-1} = 01$ | `11001` | `10000` | `1` | $A \\leftarrow A + M$ (Add $-13 = 10011$) |\n| | Shift | `11100` | `11000` | `0` | Arithmetic Shift Right (AShr), Count = 0 |\n\n**Final Result:**\n$AQ = 1110011000_2$\nConverting from 2's complement:\n- Magnitude: $\\text{2's complement}(1110011000) = 0001101000_2 = 104_{10}$\n- Therefore, the product is $-104$.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "17 b.",
+            "question_text": "Divide (12)10 by (3)10 using the Restoring division algorithm with step by step intermediate results.",
+            "marks": 12,
+            "answer": "**Restoring Division:** $12_{10} / 3_{10}$\n- **Dividend ($Q$):** $12_{10} = 1100_2$\n- **Divisor ($M$):** $3_{10} = 00011_2$, **$-M$:** $11101_2$\n- **$n = 4$ cycles**, Initial Accumulator $A = 00000$\n\n| Cycle | Step / Operation | A | Q | Remarks |\n| :---: | :--- | :---: | :---: | :--- |\n| **Initial** | - | `00000` | `1100` | Initialize |\n| **Cycle 1** | Shift Left AQ | `00001` | `100_` | Shift |\n| | $A \\leftarrow A - M$ | `11110` | `100_` | $A + 11101$ (Negative result) |\n| | Restore A, Set $Q_0=0$ | `00001` | `1000` | Restore $A$, Count = 3 |\n| **Cycle 2** | Shift Left AQ | `00011` | `000_` | Shift |\n| | $A \\leftarrow A - M$ | `00000` | `000_` | $A + 11101$ (Positive/Zero result) |\n| | Set $Q_0 = 1$ | `00000` | `0001` | Count = 2 |\n| **Cycle 3** | Shift Left AQ | `00000` | `001_` | Shift |\n| | $A \\leftarrow A - M$ | `11101` | `001_` | $A + 11101$ (Negative result) |\n| | Restore A, Set $Q_0=0$ | `00000` | `0010` | Restore $A$, Count = 1 |\n| **Cycle 4** | Shift Left AQ | `00000` | `010_` | Shift |\n| | $A \\leftarrow A - M$ | `11101` | `010_` | $A + 11101$ (Negative result) |\n| | Restore A, Set $Q_0=0$ | `00000` | `0100` | Restore $A$, Count = 0 |\n\n**Final Result:**\n- **Quotient ($Q$):** $0100_2 = 4_{10}$\n- **Remainder ($A$):** $00000_2 = 0_{10}$",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Design of ALU"
+        }
+    ]
+}

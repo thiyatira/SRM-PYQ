@@ -1,0 +1,79 @@
+{
+    "formal_filename": "CT-1_Set-C_2025-08-11.json",
+    "paper_title": "SRM Institute of Science and Technology, College of Engineering and Technology, School of Computing, Academic Year: 2025-26 (ODD), Test: CLA-T1, Course Code & Title: 21CSS201T/Computer Organization and Architecture",
+    "source": "2025-08-11 CLA-T1 Set C",
+    "questions": [
+        {
+            "question_number": "6 i)",
+            "question_text": "Subtract $-57$ from $12$ using two's complement notation. (3 marks)",
+            "marks": 3,
+            "answer": "To perform $12 - (-57)$ using 8-bit two's complement arithmetic:\n\n1. **Convert values to binary (8-bit representation):**\n   - $+12 = 00001100_2$\n   - $+57 = 00111001_2$\n\n2. **Represent $-57$ in 2's complement:**\n   - $1$'s complement of $+57 = 11000110_2$\n   - $2$'s complement of $+57$ (which represents $-57$) $= 11000110 + 1 = 11000111_2$\n\n3. **Perform Subtraction:**\n   Subtracting a number is equivalent to adding its two's complement:\n   $$12 - (-57) = 12 + (+57)$$\n   \n   Since $-(-57) = +57 = 00111001_2$, we add:\n   ```\n     0000 1100  ( 12)\n   + 0011 1001  (+57)\n   -----------\n     0100 0101  ( 69)\n   ```\n   The resulting binary word is **`01000101`** which is equivalent to **$+69$** in decimal.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "6 ii)",
+            "question_text": "Find the two's complement of the negative number $(-57)$. (4 marks)",
+            "marks": 4,
+            "answer": "Depending on the interpretation of the question, there are two standard approaches:\n\n**Interpretation A: Find the 8-bit representation of the negative number $-57$ in 2's complement form**\n1. Represent positive value ($+57$) in 8-bit binary:\n   $$57_{10} = 00111001_2$$\n2. Invert all bits (1's complement):\n   $$11000110_2$$\n3. Add 1 to the least significant bit (2's complement):\n   $$11000110 + 1 = 11000111_2$$\n   Therefore, the 2's complement representation of $-57$ is **`11000111`**.\n\n**Interpretation B: Apply the 2's complement operator to the value $(-57)$ to negate it (find $-(-57) = +57$)**\n1. Start with representation of $-57$:\n   $$-57 = 11000111_2$$\n2. Invert all bits:\n   $$00111000_2$$\n3. Add 1:\n   $$00111000 + 1 = 00111001_2$$\n   Therefore, the 2's complement of the value $-57$ is **`00111001`** (which represents $+57$).",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "6 iii)",
+            "question_text": "Two unsigned 8-bit binary values are stored as $00001100$ and $00111001$. If these values are added, what will be the resulting binary word and its decimal equivalent? (3 marks)",
+            "marks": 3,
+            "answer": "Given unsigned 8-bit binary values:\n- $A = 00001100_2$\n- $B = 00111001_2$\n\n1. **Binary Addition:**\n   ```\n     0000 1100\n   + 0011 1001\n   -----------\n     0100 0101\n   ```\n\n2. **Conversion to Decimal:**\n   $$01000101_2 = (1 \\times 2^6) + (1 \\times 2^2) + (1 \\times 2^0)$$\n   $$= 64 + 4 + 1 = 69_{10}$$\n\n**Resulting binary word:** `01000101`  \n**Decimal equivalent:** $69$",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "7",
+            "question_text": "A calculator internally represents decimal digits in BCD. If it is given the inputs $162.27$ and $349.32$, demonstrate the sequence of operations it performs to display the correct sum. (10 marks)",
+            "marks": 10,
+            "answer": "In Binary Coded Decimal (BCD) addition, digits are added column by column. If the sum of any digit position is greater than $9$ ($1001_2$) or if a carry is generated, a correction factor of $6$ ($0110_2$) is added to that digit column, and a carry of $1$ is propagated to the next higher digit column.\n\n### Step 1: Align and Convert Digits to BCD\n- **$162.27$** $\\rightarrow$ `0001` `0110` `0010` . `0010` `0111`\n- **$349.32$** $\\rightarrow$ `0011` `0100` `1001` . `0011` `0010`\n\n### Step 2: Column-by-Column Addition (from Right to Left)\n\n#### 1. Hundredths Column (LSD of Fraction): $7 + 2$\n```\n  0111  (7)\n+ 0010  (2)\n------\n  1001  (9)\n```\n- Since $9 \\le 9$, no correction is needed. \n- **Result digit:** `1001` ($9$), **Carry-out:** $0$\n\n#### 2. Tenths Column: $2 + 3 + 0$ (carry)\n```\n  0010  (2)\n+ 0011  (3)\n------\n  0101  (5)\n```\n- Since $5 \\le 9$, no correction is needed. \n- **Result digit:** `0101` ($5$), **Carry-out:** $0$\n\n#### 3. Units Column: $2 + 9 + 0$ (carry)\n```\n  0010  (2)\n+ 1001  (9)\n------\n  1011  (11 in decimal - invalid BCD digit)\n```\n- Since $11 > 9$, add correction factor $+6$ (`0110`):\n```\n  1011\n+ 0110\n------\n1 0001\n```\n- **Result digit:** `0001` ($1$), **Carry-out to tens place:** $1$\n\n#### 4. Tens Column: $6 + 4 + 1$ (carry)\n```\n  0110  (6)\n+ 0100  (4)\n+ 0001  (carry)\n------\n  1011  (11 in decimal - invalid BCD digit)\n```\n- Since $11 > 9$, add correction factor $+6$ (`0110`):\n```\n  1011\n+ 0110\n------\n1 0001\n```\n- **Result digit:** `0001` ($1$), **Carry-out to hundreds place:** $1$\n\n#### 5. Hundreds Column: $1 + 3 + 1$ (carry)\n```\n  0001  (1)\n+ 0011  (3)\n+ 0001  (carry)\n------\n  0101  (5)\n```\n- Since $5 \\le 9$, no correction is needed.\n- **Result digit:** `0101` ($5$), **Carry-out:** $0$\n\n### Step 3: Combine Results\n- The combined BCD result is: `0101` `0001` `0001` . `0101` `1001`\n- Decoded Decimal Sum: **$511.59$**",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "8 i)",
+            "question_text": "A certain binary-coded value is stored as $11110110$. If the system decides to re-encode it using Excess-3 representation, what would be the resulting code word? (4 marks)",
+            "marks": 4,
+            "answer": "There are two standard interpretations based on whether the input binary sequence is decoded as an 8-bit integer, or processed as binary chunks:\n\n### Interpretation A: Re-encoding the base-10 decimal equivalent into Excess-3 BCD\n1. Convert the 8-bit binary $11110110_2$ to decimal:\n   $$11110110_2 = 128 + 64 + 32 + 16 + 4 + 2 = 246_{10}$$\n2. Convert each decimal digit to its Excess-3 representation by adding $3$ to each digit, then converting to a 4-bit binary code:\n   - Digit **$2$**: $2 + 3 = 5 \\rightarrow 0101_2$\n   - Digit **$4$**: $4 + 3 = 7 \\rightarrow 0111_2$\n   - Digit **$6$**: $6 + 3 = 9 \\rightarrow 1001_2$\n3. **Resulting code word:** `0101 0111 1001`\n\n### Interpretation B: Applying flat Excess-3 binary shift (Unsigned Integer + 3)\n1. Convert binary to decimal value: $246_{10}$.\n2. Add $3$ to the binary/decimal value directly:\n   $$246 + 3 = 249_{10}$$\n3. Convert $249_{10}$ to 8-bit binary:\n   $$249_{10} = 11111001_2$$\n4. **Resulting code word:** `11111001`",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "8 ii)",
+            "question_text": "A processor receives two operands, $11001$ and $11011$, both in binary. If the arithmetic unit multiplies them directly in binary form, what product will be generated? (3 marks)",
+            "marks": 3,
+            "answer": "Given operands:\n- $A = 11001_2$ (Decimal $25$)\n- $B = 11011_2$ (Decimal $27$)\n\n### Binary Multiplication:\n```\n          11001   (Multiplicand)\n        x 11011   (Multiplier)\n        -------\n          11001   (11001 x 1)\n         110010   (11001 x 1, shifted left)\n        0000000   (11001 x 0, shifted left twice)\n       11001000   (11001 x 1, shifted left thrice)\n    + 110010000   (11001 x 1, shifted left four times)\n    -----------\n     1010100011\n```\n\n### Verification via Decimal:\n$$25 \\times 27 = 675_{10}$$\n$$1010100011_2 = 512 + 128 + 32 + 2 + 1 = 675_{10}$$\n\n**Generated Product (Binary):** `1010100011`",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "8 iii)",
+            "question_text": "A floating value is expressed in hexadecimal as $(DF2.53E)_{16}$. Determine its equivalent numerical value in the decimal system. (3 marks)",
+            "marks": 3,
+            "answer": "To convert $(DF2.53E)_{16}$ to decimal, expand the expression using powers of $16$:\n\n### 1. Integer Part: $(DF2)_{16}$\n- $D = 13$\n- $F = 15$\n- $2 = 2$\n\n$$\\text{Value} = (13 \\times 16^2) + (15 \\times 16^1) + (2 \\times 16^0)$$\n$$= (13 \\times 256) + (15 \\times 16) + 2$$\n$$= 3328 + 240 + 2 = 3570_{10}$$\n\n### 2. Fractional Part: $(.53E)_{16}$\n- $5 = 5$\n- $3 = 3$\n- $E = 14$\n\n$$\\text{Value} = (5 \\times 16^{-1}) + (3 \\times 16^{-2}) + (14 \\times 16^{-3})$$\n$$= \\frac{5}{16} + \\frac{3}{256} + \\frac{14}{4096}$$\n$$= 0.3125 + 0.01171875 + 0.00341796875 = 0.32763671875_{10}$$\n\n### 3. Total Decimal Value\n$$3570 + 0.32763671875 = 3570.32763671875_{10}$$",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "9",
+            "question_text": "Discuss how an instruction fetch and execute takes place for an instruction ADD R1, LOCA.",
+            "marks": 10,
+            "answer": "The execution of the instruction `ADD R1, LOCA` (which adds the contents of memory location `LOCA` to register `R1` and stores the result back in `R1`) involves two main phases: the **Fetch Phase** and the **Execute Phase**.\n\n### Key Internal Registers Involved:\n- **PC (Program Counter)**: Holds the address of the next instruction to fetch.\n- **MAR (Memory Address Register)**: Holds the memory address currently being accessed.\n- **MDR (Memory Data Register)**: Holds the data read from or written to memory.\n- **IR (Instruction Register)**: Holds the instruction currently being executed.\n- **ALU (Arithmetic Logic Unit)**: Performs the addition operation.\n\n---\n\n### Step-by-Step Sequence:\n\n#### I. Instruction Fetch Phase\n1. **Step 1**: The PC transfers the address of the instruction to the MAR:  \n   $$MAR \\leftarrow [PC]$$\n2. **Step 2**: The Control Unit issues a **Read** signal to memory. At the same time, the PC is incremented to point to the next instruction:  \n   $$PC \\leftarrow [PC] + 4$$ (assuming 4-byte/32-bit instruction word layout)\n3. **Step 3**: The instruction is retrieved from memory and placed into the MDR. It is then transferred to the Instruction Register (IR):  \n   $$IR \\leftarrow [MDR]$$\n4. **Step 4**: The instruction is decoded by the Instruction Decoder to determine the operation (`ADD`) and the addressing modes used for the operands.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "10",
+            "question_text": "Describe the different types of addressing modes used in computer architecture. Give suitable examples for each.",
+            "marks": 10,
+            "answer": "Addressing modes define how the central processing unit (CPU) identifies the operand(s) required by an instruction. The primary addressing modes are:\n\n### 1. Immediate Addressing Mode\n- **Description**: The operand value is explicitly provided in the instruction field.\n- **Example**: `MOV R1, #45` (Loads the decimal value 45 directly into register R1).\n\n### 2. Register Addressing Mode\n- **Description**: The operand is stored inside a specified register.\n- **Example**: `ADD R1, R2` (Adds the contents of R2 to R1; $R1 \\leftarrow [R1] + [R2]$).\n\n### 3. Direct (Absolute) Addressing Mode\n- **Description**: The instruction directly contains the memory address of the operand.\n- **Example**: `LDA 2000` (Loads the accumulator with the contents of memory address `2000`).\n\n### 4. Register Indirect Addressing Mode\n- **Description**: A register holds the pointer/address where the operand resides in memory.\n- **Example**: `LDR R1, [R2]` (Loads R1 with the value stored at the memory address pointed to by R2).\n\n### 5. Indirect Addressing Mode\n- **Description**: The instruction points to a memory location containing the actual address of the operand.\n- **Example**: `ADD R1, @2000` or `ADD R1, [2000]` (Looks up address 2000, retrieves the pointer address, and fetches the operand from that secondary address).\n\n### 6. Displacement / Indexed Addressing Mode\n- **Description**: The effective address is calculated by adding a constant offset (displacement) to the contents of a register (index/base register).\n- **Example**: `LDR R1, [R2, #100]` (Effective Address = $[R2] + 100$).\n\n### 7. Relative Addressing Mode\n- **Description**: The operand's address is computed relative to the current Program Counter (PC) value.\n- **Example**: `JZ +12` (Branch to $PC + 12$ if the zero flag is set).",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        }
+    ]
+}

@@ -1,0 +1,159 @@
+{
+    "formal_filename": "CT-3_Set-A_2023-11-08.json",
+    "paper_title": "SRM Institute of Science and Technology, Department of Computing Technologies, Academic Year: 2023-24 (ODD), Test: CLAT3, Course Code & Title: 21CSS201T / COA, SET A",
+    "source": "2023-11-08 CT3 Set A",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "Pipelining increases ____________ of the processor\na. Throughput\nb. Latency\nc. Storage\nd. Predictivity",
+            "marks": 1,
+            "answer": "a. Throughput\n\nRationale: Pipelining increases the overall throughput (the number of instructions completed per unit time) by overlapping the execution of multiple instructions, although individual instruction latency is not decreased (and may slightly increase due to pipeline overhead).",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "2",
+            "question_text": "Operand forwarding method does the following to overcome data dependencies\na. Introduce NULL instructions\nb. Result of the instruction is written to the temporary register\nc. Result of one instruction is directly sent to the next instruction for execution\nd. Blocking the execution of instructions",
+            "marks": 1,
+            "answer": "c. Result of one instruction is directly sent to the next instruction for execution\n\nRationale: Operand forwarding (or bypassing) routes the execution result of one instruction directly to the ALU inputs of the subsequent dependent instruction, bypassing the register write-back stage to avoid pipeline stalls.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "3",
+            "question_text": "For a four-stage pipelining, the initial instruction requires _____ cycle for execution completion?\na. 2\nb. 4\nc. 3\nd. 1",
+            "marks": 1,
+            "answer": "b. 4\n\nRationale: In a 4-stage pipeline, the very first instruction must go through all 4 stages (Fetch, Decode, Execute, Write-back) to complete, thus requiring 4 clock cycles. Subsequent instructions (without hazards) complete every 1 clock cycle.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "4",
+            "question_text": "When the data operands are not available then it is called ___\na. Data hazard\nb. Structural hazard\nc. Control hazard\nd. Instruction hazard",
+            "marks": 1,
+            "answer": "a. Data hazard\n\nRationale: A data hazard occurs when an instruction depends on the result of a previous instruction that has not yet been computed or written back to the register file (i.e., operands are not available yet).",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "5",
+            "question_text": "When the branch is actually not taken the state moves from ST to ____.\na. SNT\nb. LT\nc. LNT\nd. ST",
+            "marks": 1,
+            "answer": "b. LT\n\nRationale: In dynamic branch prediction (using a 2-bit predictor with states: Strongly Taken (ST), Weakly Taken / Likely Taken (LT), Weakly Not Taken / Likely Not Taken (LNT), Strongly Not Taken (SNT)), if the state is ST (Strongly Taken) and the branch is actually not taken, the state transitions to LT (Likely/Weakly Taken).",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "6",
+            "question_text": "Which type of parallelism involves breaking down a program into smaller tasks that can be executed concurrently?\nA. Instruction-level parallelism\nB. Data-level parallelism\nC. Task-level parallelism\nD. Pipeline parallelism",
+            "marks": 1,
+            "answer": "C. Task-level parallelism\n\nRationale: Task-level parallelism (also known as function-level parallelism) is a form of parallelization of computer code across multiple processors in parallel computing environments, which focuses on distributing execution processes (tasks) across multiple computing nodes.",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "7",
+            "question_text": "What is the primary advantage of MIMD architecture compared to SISD architecture?\nA. Lower cost\nB. Simplicity of programming\nC. Higher processing power for parallel tasks\nD. Energy efficiency",
+            "marks": 1,
+            "answer": "C. Higher processing power for parallel tasks\n\nRationale: Multiple Instruction, Multiple Data (MIMD) architectures have multiple processors that function asynchronously and independently. This offers much higher processing power for executing different parallel tasks compared to Single Instruction, Single Data (SISD) architectures.",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "8",
+            "question_text": "Which part of an ARM instruction specifies the operation to be performed?\nA. Opcode\nB. Data register\nC. Memory address\nD. Condition code",
+            "marks": 1,
+            "answer": "A. Opcode\n\nRationale: The opcode (operation code) is the portion of a machine language instruction that specifies the operation to be performed.",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "9",
+            "question_text": "Which part of an ARM-based system typically handles I/O operations and device communication?\na) Memory unit\nb) Arithmetic logic unit (ALU)\nc) Input unit\nd) Peripheral interface or controller",
+            "marks": 1,
+            "answer": "d) Peripheral interface or controller\n\nRationale: Peripheral interfaces or controllers manage communication between the ARM processor and external I/O devices.",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "10",
+            "question_text": "What is the primary advantage of the Thumb instruction set in ARM7 architecture?\na. Greater computational power\nb. Smaller code size\nc. Enhanced multimedia capabilities\nd. Improved memory management",
+            "marks": 1,
+            "answer": "b. Smaller code size\n\nRationale: The Thumb instruction set consists of 16-bit instructions (as opposed to standard 32-bit ARM instructions), which significantly reduces code size, making it highly memory-efficient for embedded systems.",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "11",
+            "question_text": "Design a 4-stage instruction pipeline for 3 instructions I1, I2, I3 to be executed. Consider that there are no dependency between the instructions.",
+            "marks": 4,
+            "answer": "A 4-stage instruction pipeline usually consists of the following stages:\n1. **F (Fetch)**: Fetch the instruction from memory.\n2. **D (Decode)**: Decode the instruction and read operands.\n3. **E (Execute)**: Perform the operation in the ALU.\n4. **W (Write-back)**: Write the result back to the register file.\n\nSince there are no dependencies, the execution timeline across clock cycles is as follows:\n\n| Instruction | Cycle 1 | Cycle 2 | Cycle 3 | Cycle 4 | Cycle 5 | Cycle 6 | Cycle 7 |\n|-------------|---------|---------|---------|---------|---------|---------|---------|\n| $I_1$       | $F_1$   | $D_1$   | $E_1$   | $W_1$   |         |         |         |\n| $I_2$       |         | $F_2$   | $D_2$   | $E_2$   | $W_2$   |         |         |\n| $I_3$       |         |         | $F_3$   | $D_3$   | $E_3$   | $W_3$   |         |\n\nThis shows that without any pipeline stalls or hazards, the three instructions complete in 6 clock cycles.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "12",
+            "question_text": "Draw and explain the two state diagram for dynamic branch prediction.\n• State 1: LT : Branch is likely to be taken \n• State 2: LNT : Branch is likely not to be taken \n• 1. If the branch is taken, the machine moves to LT, otherwise it remains in state LNT.\n• 2. The branch is predicted as taken if the corresponding state machine is in state LT, otherwise it is predicted as not taken.",
+            "marks": 4,
+            "answer": "The two-state dynamic branch predictor consists of two states: **LT (Likely Taken)** and **LNT (Likely Not Taken)**.\n\n### State Transitions and Explanation:\n1. **LT (Likely Taken)**:\n   - Predicts the branch will be taken.\n   - If the branch is actually **Taken (BT)**, the state remains in **LT**.\n   - If the branch is **Not Taken (BNT)**, the state transitions to **LNT**.\n2. **LNT (Likely Not Taken)**:\n   - Predicts the branch will not be taken.\n   - If the branch is actually **Not Taken (BNT)**, the state remains in **LNT**.\n   - If the branch is **Taken (BT)**, the state transitions to **LT**.\n\n### State Diagram Representation:\n```\n          +---> [ LNT ] <---+ \n          |      |   ^      |\n     BNT  |      |   |      | BNT\n          |   BT |   | BT   |\n          +------|---|------+ \n                 v   |\n          +---> [  LT ] <---+\n          |                 |\n          +-----------------+\n                  BT\n```\n*Note:* Refer to the state transitions in the diagram provided in the paper displaying the two bubbles `LNT` and `LT` connected by arrows labeled `BT (Branch Taken)` and `BNT (Branch Not Taken)`.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "13",
+            "question_text": "Interpret about out of order execution?\n• If an optimizing compiler attempts to reorder instruction to avoid stalling the pipeline when branches or data dependencies between successive instructions occur, it must ensure that reordering does not cause a change in the outcome of a computation.\n• The dependency introduced by the condition-code flags reduces the flexibility available for the compiler to reorder instructions.\n\n```\nAdd         R1, R2\nCompare     R3, R4\nBranch=0    ...\n```\na) A program fragment\n\n```\nCompare     R3, R4\nAdd         R1, R2\nBranch=0    ...\n```\nb) Instructions reordered",
+            "marks": 4,
+            "answer": "Out-of-order (OoO) execution is a paradigm used in high-performance microprocessors to make use of instruction cycles that would otherwise be wasted by stalls. In this paradigm, a processor executes instructions in an order governed by the availability of input data or execution resources, rather than their original sequential order in the program.\n\n### Key Principles from the Provided Solution:\n1. **Preserving Semantics**: An optimizing compiler or dynamic hardware scheduler can reorder instructions to prevent pipeline stalls caused by data or branch hazards, but it must guarantee that the final execution outcome remains identical to the sequential program order.\n2. **Condition-Code Dependency Obstacle**: Reordering becomes challenging when instructions modify status/condition-code flags.\n   - In fragment (a):\n     ```\n     Add      R1, R2\n     Compare  R3, R4\n     Branch=0 ...\n     ```\n     Here, `Branch=0` depends on the output of `Compare R3, R4` (setting the zero flag). Since `Add` also modifies flags in some architectures, reordering them requires ensuring that `Add` does not overwrite the flags required by `Branch=0`.\n   - In fragment (b), the instructions are reordered:\n     ```\n     Compare  R3, R4\n     Add      R1, R2\n     Branch=0 ...\n     ```\n     If `Add` affects the zero flag, this reordering is invalid because `Branch=0` would test the result of `Add` instead of `Compare`. Thus, the compiler must carefully analyze these dependencies before reordering.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "14",
+            "question_text": "Discuss the five step Sequential execution with example",
+            "marks": 4,
+            "answer": "Sequential execution executes instructions one after another without overlap. Let's consider five tasks/statements where each step completes one operation:\n\n### Example Equations:\n- $P_1: C = D \\times E$\n- $P_2: M = G + C$\n- $P_3: A = B + C$\n- $P_4: C = L + M$\n- $P_5: F = G \\div E$\n\n### Sequential Step-by-Step Execution:\n1. **Step 1 ($P_1$)**: Multiply $D$ and $E$ to get $C$.\n2. **Step 2 ($P_2$)**: Add $G$ and $C$ to get $M$. (Depends on $C$ from $P_1$)\n3. **Step 3 ($P_3$)**: Add $B$ and $C$ to get $A$. (Depends on $C$ from $P_1$)\n4. **Step 4 ($P_4$)**: Add $L$ and $M$ to get $C$. (Depends on $M$ from $P_2$)\n5. **Step 5 ($P_5$)**: Divide $G$ by $E$ to get $F$.\n\nIn pure sequential execution (no pipelining/parallelism), assuming each statement takes 1 unit of time, executing these 5 operations sequentially requires exactly **5 units of time**.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "15",
+            "question_text": "Discuss the concepts involved in ILP and how many unit of time to complete the operations\n• Instruction level Parallelism (ILP) is a measure of how many operations can be performed in parallel at the same time in a computer.\n• Parallel instructions are set of instructions that do not depend on each other to be executed.\n• ILP allows the compiler and processor to overlap the execution of multiple instructions or even to change the order in which instructions are executed.\n3 operations can be completed in 2 units of time .",
+            "marks": 4,
+            "answer": "### Concepts in Instruction-Level Parallelism (ILP):\n- **Definition**: ILP is a measure of how many of the operations in a computer program can be performed simultaneously. It relies on finding instructions that can execute in parallel.\n- **Data Dependency**: Instructions that do not depend on each other's results are called independent or parallel instructions. These can be scheduled to run concurrently.\n- **Overlapping/Reordering**: ILP allows compilers or hardware processors to overlap the execution of multiple instructions, or even run them out of order, provided the original dependencies are respected.\n\n### Time Analysis Example:\nIn the dependency graph from the previous question (Q14):\n- $P_1$ ($C = D \\times E$) and $P_5$ ($F = G \\div E$) have no mutual dependency and can be executed in parallel.\n- Once $P_1$ is computed, $P_2$ ($M = G + C$) and $P_3$ ($A = B + C$) can run in parallel because they depend only on $C$.\n- Using ILP hardware (e.g., superscalar executing multiple operations per cycle):\n  - **Time Unit 1**: Execute $P_1$ and $P_5$ concurrently.\n  - **Time Unit 2**: Execute $P_2$ and $P_3$ concurrently.\n  - **Time Unit 3**: Execute $P_4$ (which depends on $M$ from $P_2$).\n  \nIf we analyze the 3 operations $\\{P_1, P_2, P_3\\}$:\n- Unit 1: $P_1$ executes.\n- Unit 2: $P_2$ and $P_3$ execute in parallel.\nHence, these 3 operations can be completed in **2 units of time** instead of 3.",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "16. A",
+            "question_text": "Arun and Bob are having equal number of apples and it’s count are stored in the register R1 and R2 respectively. Arun collected bob’s apple and store the entire set of apples with him and update its count in R1. Write the complete set of control sequences for the above operation.",
+            "marks": 12,
+            "answer": "The task is to perform the addition: $R_1 \\leftarrow R_1 + R_2$ (i.e., adding Bob's apples in $R_2$ to Arun's apples in $R_1$ and saving the result back to $R_1$).\n\n### Complete Control Sequences:\n\n1. **Fetch the instruction** (standard 3-step fetch):\n   ```\n   PC_out, MAR_in, Read, Select 4, Add, Z_in\n   Z_out, PC_in, Y_in, WMFC\n   MDR_out, IR_in\n   ```\n   \n2. **Execute the instruction** ($R_1 \\leftarrow R_1 + R_2$):\n   ```\n   R1_out, Y_in\n   R2_out, Select Y, Add, Z_in\n   Z_out, R1_in, End\n   ```\n\n### Explanation of Steps:\n- `PC_out, MAR_in, Read`: Place program counter on the bus, load into Memory Address Register, and initiate a memory read.\n- `Select 4, Add, Z_in`: Increment the PC by 4 using the ALU and store the result in temporary register $Z$.\n- `Z_out, PC_in, Y_in, WMFC`: Copy the updated PC back to the program counter, load it into $Y$, and wait for Memory Function Complete (WMFC).\n- `MDR_out, IR_in`: Load the fetched instruction from the Memory Data Register (MDR) into the Instruction Register (IR).\n- `R1_out, Y_in`: Place the content of $R_1$ onto the bus and store it in temporary register $Y$.\n- `R2_out, Select Y, Add, Z_in`: Place the content of $R_2$ onto the bus, select register $Y$, perform addition in the ALU, and store the sum in temporary register $Z$.\n- `Z_out, R1_in, End`: Place the sum stored in register $Z$ onto the bus, load it into destination register $R_1$, and terminate the execution cycle.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "16. B",
+            "question_text": "Illustrate the scenario where instructional hazard occurs and provide the solution for handling the stall created by conditional branch instruction.",
+            "marks": 12,
+            "answer": "### Scenario: Instructional Hazard with Conditional Branch\nConsider a typical two-stage pipeline where instruction fetch and instruction execution are overlapped. Let instructions $I_1$ to $I_3$ be stored at consecutive memory addresses, where $I_2$ is a conditional branch instruction:\n1. While $I_2$ (the branch instruction) is being executed in cycle 2, $I_3$ is fetched in cycle 2.\n2. If the branch is determined to be **taken** at the end of the execution of $I_2$, the target address of the branch is computed, and the Program Counter (PC) is updated.\n3. Because $I_3$ was already fetched, but the execution flow must now jump to the branch target address, the fetched instruction $I_3$ is incorrect/redundant.\n4. **Branch Penalty**: The pipeline must discard (flush) $I_3$. No useful work is accomplished during this cycle, creating a pipeline stall/idle cycle (or bubble).\n\n### Solutions for Handling Branch Stalls:\n\n1. **Instruction Prefetching (with Instruction Queue)**:\n   - Use an instruction queue between the Fetch unit and the Decode/Execute units.\n   - The Fetch unit continuously fetches instructions sequentially and loads them into the queue. \n   - The Decode unit pulls instructions from the queue. This decouples the fetch rate from the execution rate, smoothing out short pipeline stalls.\n\n2. **Reducing the Branch Penalty (Hardware/Compiler Solutions)**:\n   - **Early Target Address Calculation**: Introduce dedicated hardware in the Instruction Fetch / Decode stage to compute the branch target address as early as possible (e.g., in the decode stage instead of the execution stage).\n   - **Compiler Scheduling (Delayed Branching)**: The compiler identifies useful instructions that do not depend on the branch outcome and places them in the \"branch delay slot\" immediately after the branch. These instructions are executed regardless of whether the branch is taken or not.\n   - **Dynamic Branch Prediction**: Use history tables (like 1-bit or 2-bit predictors) to predict the outcome of the branch and pre-fetch from the predicted direction.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "17 A.",
+            "question_text": "Explain the various types of Parallelism.",
+            "marks": 12,
+            "answer": "Parallelism in computer architecture can be broadly classified into hardware and software parallelism:\n\n### 1. Hardware Parallelism\nHardware parallelism is achieved by duplicating or scaling up the physical resources in the processor or memory:\n- **Processor Parallelism**: Involves having multiple processing elements or CPU cores (e.g., superscalar processors, multi-core systems, symmetric multiprocessors, vector processors).\n- **Memory Parallelism**: Involves memory interleaving, multiple memory banks, or multi-port caches that allow concurrent access to different memory regions, reducing memory access latency bottlenecks.\n\n### 2. Software Parallelism\nSoftware parallelism represents the capability of software execution flows to run concurrently:\n- **Sequential Execution**: Traditional serial flow where one task is finished before the next starts.\n- **Parallel Execution**: Multiple execution streams run concurrently. This is further classified into:\n  - **Instruction-Level Parallelism (ILP)**: Compilers and hardware overlap the execution of independent machine instructions within a single instruction stream (e.g., pipelining, superscalar execution).\n  - **Task-Level (Function-Level) Parallelism**: Breaking a program into distinct, independent sub-tasks or threads that can execute concurrently across multiple processing elements.\n  - **Data Parallelism**: The same operations/instructions are performed simultaneously on different elements of a large data set (e.g., vector processing, SIMD operations).\n  - **Transaction-Level Parallelism**: Independent database transactions or requests are processed simultaneously (commonly used in web servers and distributed databases).",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "17 B",
+            "question_text": "With the evolution of computing, multi-core processors have become a standard in modern computer architectures.\na. Define and differentiate between a processor and CPU cores. (4 marks)\nb. Discuss the advantages and potential challenges of multi-core processors compared to single-core processors. (6 marks)\nc. Explain how software developers might need to adapt their programming techniques to fully utilize the capabilities of multi-core processors. (2 marks)",
+            "marks": 12,
+            "answer": "### a. Definition and Differentiation (Processor vs. CPU Cores) [4 Marks]\n- **Processor (CPU)**: The overall physical chip or integrated circuit that plugs into a computer's socket. It is the primary computational unit responsible for interpreting and executing instructions.\n- **CPU Core**: An independent, individual execution unit inside the physical processor chip. Each core has its own ALU, registers, and L1 cache, allowing it to fetch, decode, and execute instructions independently of other cores.\n- **Differentiation**: A single processor chip can house multiple CPU cores (e.g., dual-core, quad-core, octa-core). While a classical single-core processor executes one instruction thread at a time, a multi-core processor can execute multiple instruction streams concurrently on separate physical cores.\n\n### b. Advantages and Challenges of Multi-Core Processors [6 Marks]\n#### Advantages:\n1. **Parallel Processing**: Enables true hardware multitasking where multiple distinct tasks run simultaneously without time-sharing overhead.\n2. **Energy Efficiency**: Running multiple cores at a lower clock frequency is significantly more energy-efficient and generates less heat than running a single core at an extremely high clock frequency for the same throughput.\n3. **Performance Boost**: Speeds up highly parallelizable applications (e.g., video editing, 3D rendering, scientific simulations).\n\n#### Challenges:\n1. **Software Limitations (Amdahl's Law)**: If a program is sequential, adding more cores will not improve its performance. Many legacy applications cannot natively utilize multiple cores.\n2. **Diminishing Returns**: As core count increases, communication overhead between cores, synchronization locks, and memory bandwidth bottlenecks can negate potential performance gains.\n3. **Hardware Complexity**: Designing coherent caches (cache coherence protocols) and managing shared resources (L3 cache, main memory) becomes exponentially complex.\n\n### c. Adaptation of Software Programming Techniques [2 Marks]\nSoftware developers must shift from sequential programming to parallel programming models to utilize multi-core benefits:\n1. **Multithreading & Parallel Paradigms**: Developers must explicitly partition tasks into independent parallel threads using standard APIs and libraries (e.g., OpenMP, Threading Building Blocks (TBB), Pthreads, or language-specific concurrent structures).\n2. **Synchronization and Pitfall Mitigation**: Developers must carefully design lock-free structures or handle synchronization locks properly to prevent catastrophic concurrency bugs such as **race conditions**, **deadlocks**, and **cache thrashing**.",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Parallelism"
+        }
+    ]
+}

@@ -1,0 +1,167 @@
+{
+    "formal_filename": "CT-2_Set-D_2023-10-09.json",
+    "paper_title": "SRM Institute of Science and Technology, College of Engineering and Technology, School of Computing, Department of Computing Technologies, CLAT-2, Course Code & Title: 21CSS201T COA (Computer Organization and Architecture), Set D",
+    "source": "2023-10-09 CT2 Set D",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "Which of the following is responsible for translating logical addresses to physical addresses?\na) Memory Address Register (MAR)\nb) Memory Data Register (MDR)\nc) Arithmetic Logic Unit (ALU)\nd) Memory Management Unit (MMU)",
+            "marks": 1,
+            "answer": "d) Memory Management Unit (MMU). The MMU is a hardware component responsible for handling memory accesses requested by the CPU, which includes translating logical virtual addresses to physical addresses.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "2",
+            "question_text": "Find the arithmetic left shift of 1 0 1 0 1\na) 0 1 0 1 0\nb) 1 0 1 0 1\nc) 0 1 0 1 1\nd) 1 0 1 0 0",
+            "marks": 1,
+            "answer": "a) 0 1 0 1 0. An arithmetic left shift of 10101 shifts all bits one position to the left, introducing a 0 at the least significant bit (LSB), which yields 01010.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "3",
+            "question_text": "In 8086 microprocessor, the address bus is ___ bit wide\na) 12 Bit\nb) 10 Bit\nc) 16 Bit\nd) 20 Bit",
+            "marks": 1,
+            "answer": "d) 20 Bit. The 8086 microprocessor has a 20-bit address bus, which allows it to access up to $2^{20}$ bytes (1 MB) of memory.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "4",
+            "question_text": "Use DeMorgan’s theorem to find the complement of $A + BC$\na) $\\bar{A}(\\bar{B} + \\bar{C})$\nb) $ABC$\nc) $A(\\bar{B} + \\bar{C})$\nd) $A(BC)$",
+            "marks": 1,
+            "answer": "a) $\\bar{A}(\\bar{B} + \\bar{C})$. According to De Morgan's theorem, the complement of a sum is equal to the product of the complements of individual terms: $\\overline{A + BC} = \\bar{A} \\cdot \\overline{BC} = \\bar{A}(\\bar{B} + \\bar{C})$.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "5",
+            "question_text": "Carry lookahead adder logic uses the concept of __________\na) Inverting the inputs\nb) Complementing the outputs\nc) Carry Propagate and Carry Generate\nd) Ripple factor",
+            "marks": 1,
+            "answer": "c) Carry Propagate and Carry Generate. A carry-lookahead adder speeds up carry computation by generating and propagating carries in parallel using propagate ($P_i = A_i \\oplus B_i$) and generate ($G_i = A_i B_i$) signals.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "6",
+            "question_text": "Which of the following multiplication algorithms is commonly used for signed multiplication?\na) Booth's algorithm\nb) Wallace tree algorithm\nc) Folding algorithm\nd) Radix-4 algorithm",
+            "marks": 1,
+            "answer": "a) Booth's algorithm. Booth's multiplication algorithm is designed to multiply signed binary numbers in 2's complement representation without requiring a sign-extension step.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "7",
+            "question_text": "Which of the following statements is true for carry-save addition of summands?\na) It can be performed in a single cycle\nb) It requires fewer logic gates than carry-propagate addition\nc) It always produces the final sum result directly\nd) It is only used for fixed-point arithmetic",
+            "marks": 1,
+            "answer": "b) It requires fewer logic gates than carry-propagate addition. Carry-save adders do not propagate the carry immediately to subsequent bits, thereby reducing the critical path delay and the relative hardware complexity required for multiple summands.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "8",
+            "question_text": "Which division algorithm is most commonly used for binary division operations?\na) Restoring division\nb) Non-restoring division\nc) Radix-4 division\nd) Booth's division",
+            "marks": 1,
+            "answer": "a) Restoring division. Restoring division is a standard, fundamental algorithm used in hardware division operations.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "9",
+            "question_text": "What are the three components of an IEEE 754 floating-point number representation?\na) Sign exponent and mantissa\nb) Sign, integer part and fractional part\nc) Mantissa, exponent and bias\nd) Sign, exponent and base",
+            "marks": 1,
+            "answer": "a) Sign exponent and mantissa. The IEEE 754 standard represents floating-point numbers using three basic components: the Sign bit, the biased Exponent, and the Mantissa (or significand).",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "10",
+            "question_text": "Which format is used for double precision floating-point numbers in IEEE 754\na) 64 Bits\nb) 32 Bits\nk) 16 Bits\nd) 128 Bits",
+            "marks": 1,
+            "answer": "a) 64 Bits. Under IEEE 754, single-precision format uses 32 bits and double-precision format uses 64 bits (1 sign bit, 11 exponent bits, and 52 mantissa bits).",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "11",
+            "question_text": "Explain the steps for multiplying 9 and 12 using a shift-and-add multiplier method?",
+            "marks": 4,
+            "answer": "Here, we multiply Multiplicand $B = 9 \\ (1001_2)$ and Multiplier $Q = 12 \\ (1100_2)$. We initialize $A = 0000$.\n\n| Step | A | Q | B | Operation |\n| :--- | :---: | :---: | :---: | :--- |\n| **0** | 0000 | 1100 | 1001 | Initialization |\n| **1** | 0000 | 0110 | 1001 | Shift right A_Q (since $Q_0=0$) |\n| **2** | 0000 | 0011 | 1001 | Shift right A_Q (since $Q_0=0$) |\n| **3** | 1001 | 0011 | 1001 | Add B to A (since $Q_0=1$) |\n| | 0100 | 1001 | 1001 | Shift right A_Q |\n| **4** | 1101 | 1001 | 1001 | Add B to A (since $Q_0=1$) |\n| | 0110 | 1100 | 1001 | Shift right A_Q |\n\n**Final Product:** The combined register $AQ = 01101100_2$, which in decimal is $64 + 32 + 8 + 4 = 108$ ($9 \\times 12 = 108$).",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "12",
+            "question_text": "What are the key distinctions between microprocessors and microcontrollers in terms of their functions and applications",
+            "marks": 4,
+            "answer": "The following table highlights the key distinctions:\n\n| S.No | Microprocessor | Microcontroller |\n| :--- | :--- | :--- |\n| 1 | CPU is stand-alone; RAM, ROM, I/O, timer are separate chips. | CPU, RAM, ROM, I/O, and timers are integrated on a single chip. |\n| 2 | Designer can customize the amount of ROM, RAM, and I/O ports. | Features a fixed amount of on-chip ROM, RAM, and I/O ports. |\n| 3 | Expensive. | Cost-effective. |\n| 4 | General-purpose computing. | Single-purpose/application-specific embedded tasks. |\n| 5 | Complex and expansive system design. | Simple and compact system design. |\n| 6 | Complex instruction set with a large number of instructions. | Simple instruction set with fewer instructions. |",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "13",
+            "question_text": "What are the components and connections needed to construct a full adder using two half adders?",
+            "marks": 4,
+            "answer": "A full adder adds three bits ($A$, $B$, and input carry $C_{in}$) and outputs $Sum$ ($S$) and $Carry \\ Out$ ($C_{out}$).\n\n### Required Components:\n1. **Two Half Adders (HA1 and HA2)**:\n   - Each Half Adder has two inputs and produces two outputs ($Sum = X \\oplus Y$ and $Carry = XY$).\n2. **One OR Gate**.\n\n### Interconnections:\n1. **First Half Adder (HA1)**:\n   - Inputs: $A$ and $B$\n   - Outputs: $S_1 = A \\oplus B$, $C_1 = AB$\n2. **Second Half Adder (HA2)**:\n   - Inputs: $S_1$ (from HA1) and $C_{in}$\n   - Outputs: Final Sum $S = S_1 \\oplus C_{in} = A \\oplus B \\oplus C_{in}$, and $C_2 = S_1 \\cdot C_{in} = (A \\oplus B)C_{in}$\n3. **OR Gate**:\n   - Inputs: $C_1$ and $C_2$ (carries from both half adders)\n   - Output: Final Carry Out $C_{out} = C_1 + C_2 = AB + (A \\oplus B)C_{in}$",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "14",
+            "question_text": "Describes how to negate the union and intersection of sets or logical conditions",
+            "marks": 4,
+            "answer": "De Morgan's laws describe how to negate logical conditions representing unions (OR) and intersections (AND):\n\n1. **Theorem 1 (Negating Intersection - NAND to Bubbled OR):**\n   The complement of the logical product of two variables is equal to the sum of their individual complements:\n   $$\\overline{A \\cdot B} = \\overline{A} + \\overline{B}$$\n   - *NAND = Bubbled OR*: This indicates that a NAND gate is equivalent to an OR gate with active-low inputs.\n\n2. **Theorem 2 (Negating Union - NOR to Bubbled AND):**\n   The complement of the logical sum of two variables is equal to the product of their individual complements:\n   $$\\overline{A + B} = \\overline{A} \\cdot \\overline{B}$$\n   - *NOR = Bubbled AND*: This indicates that a NOR gate is equivalent to an AND gate with active-low inputs.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "15",
+            "question_text": "Evaluate X = (A + B) * (C + D) using One Address Instruction",
+            "marks": 4,
+            "answer": "In a one-address instruction format, an implicit accumulator (AC) register is used for all operations. The instruction sequence to evaluate $X = (A + B) \\times (C + D)$ is as follows:\n\n```\n1. LOAD A      ; AC <- M[A]\n2. ADD B       ; AC <- AC + M[B]\n3. STORE T     ; M[T] <- AC (temporary storage of A + B)\n4. LOAD C      ; AC <- M[C]\n5. ADD D       ; AC <- AC + M[D]\n6. MUL T       ; AC <- AC * M[T]\n7. STORE X     ; M[X] <- AC (store final result in X)\n```",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "16 a.",
+            "question_text": "Demonstrate the steps involved during Instruction execution and straight line sequencing with examples",
+            "marks": 12,
+            "answer": "### Steps Involved in Instruction Execution:\n1. **Fetch**: The Program Counter (PC) holds the address of the next instruction. This instruction is read from memory and loaded into the Instruction Register (IR).\n2. **Decode**: The Control Unit decodes the opcode stored in the IR to determine the operation to execute, identify the addressing modes, and calculate operand locations.\n3. **Fetch Operands**: If the instruction requires operands from memory or register files, they are calculated and fetched.\n4. **Execute**: The ALU performs the requested arithmetic, logical, or shift operation on the fetched operands.\n5. **Write Back**: The resulting value is stored in the designated destination register or memory address.\n6. **Update PC**: The PC is updated to the address of the next instruction.\n\n### Straight Line Sequencing:\nStraight-line sequencing refers to the CPU executing instructions in sequential order. Under this mode, the processor executes instructions one after another from contiguous memory locations, incrementing the PC by a fixed instruction word length offset (e.g., $+4$ bytes in a 32-bit machine) in every cycle, without branching.\n\n#### Example:\nConsider three simple instructions stored in memory starting at address $i$:\n- At address $i$: `Move A, R0` (Load contents of memory location A to register R0; PC is updated to $i+4$)\n- At address $i+4$: `Add B, R0` (Add contents of memory location B to register R0; PC is updated to $i+8$)\n- At address $i+8$: `Move R0, C` (Save sum from R0 to memory location C; PC is updated to $i+12$)\n\nThe program executes sequentially without branching, demonstrating straight line sequencing.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "16 b.",
+            "question_text": "Raghav is designing a 4-bit circuit for his digital electronics project. He has already connected four full-adder units in series, and now he needs to implement the mode control functionality. The mode control input, labeled \"M\" will be controlled by a switch. Raghav wants to ensure that his circuit can handle both addition and subtraction operations. He sets up a scenario to test the functionality.",
+            "marks": 12,
+            "answer": "To implement both addition and subtraction in a single 4-bit parallel adder, Raghav needs a **4-Bit Parallel Adder-Subtractor Circuit**.\n\n### Circuit Design & Components:\n- **Full Adders (FA)**: Four cascaded 1-bit full adders are connected such that the carry-out ($C_{out}$) of one stage becomes the carry-in ($C_{in}$) of the subsequent stage ($C_1, C_2, C_3$).\n- **XOR Gates**: Four XOR gates are used to control the input bits of operand $B$ ($B_0, B_1, B_2, B_3$) using the mode control signal $M$.\n\n### Connections:\n- Each XOR gate receives two inputs: the mode signal $M$, and the respective bit of operand $B_i$.\n- The output of each XOR gate is connected to the $Y$-input of the corresponding full adder stage.\n- Operand $A$'s bits ($A_0, A_1, A_2, A_3$) go directly to the $X$-inputs of the full adders.\n- The mode control line $M$ is also tied directly to the initial carry-in ($C_0$) of the first full adder stage.\n\n### Functional Modes:\n1. **Addition ($M = 0$):**\n   - The XOR gate output is $B_i \\oplus 0 = B_i$.\n   - The initial carry-in $C_0 = 0$.\n   - The circuit performs standard binary addition:\n     $$Sum = A + B$$\n\n2. **Subtraction ($M = 1$):**\n   - The XOR gate output is $B_i \\oplus 1 = \\overline{B_i}$ (completing a bitwise 1's complement of $B$).\n   - The initial carry-in $C_0 = 1$.\n   - The circuit performs the operation:\n     $$A + \\overline{B} + 1$$\n     Since $\\overline{B} + 1$ is the 2's complement representation of $-B$, the circuit executes $A - B$ (Subtraction).",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "17 a.",
+            "question_text": "John is studying computer architecture and learning about the Booth Multiplication algorithm. He aims to use this algorithm to multiply -15 and -13. He follows the steps meticulously to compute the result and also creates a neat flowchart to facilitate the multiplication process.",
+            "marks": 12,
+            "answer": "John executes the Booth multiplication of $(-15) \\times (-13)$ using a 5-bit register system (since $+15 = 01111_2$ and $+13 = 01101_2$ both fit in 5 bits):\n\n- **Multiplicand ($M$):** $-15 = 10001_2$\n- **$-M$ ($+15$):** $01111_2$\n- **Multiplier ($Q$):** $-13 = 10011_2$\n- **Initial Registers:** $A = 00000$, $Q_{-1} = 0$, $Count = 5$.\n\n### Step-by-Step Execution Table:\n\n| Cycle | A | Q | $Q_{-1}$ | Step Details |\n| :---: | :---: | :---: | :---: | :--- |\n| **Init** | 00000 | 10011 | 0 | Initialize registers |\n| **1** | 01111 | 10011 | 0 | $Q_0Q_{-1} = 10 \\rightarrow A \\leftarrow A - M \\ (A + 01111)$ |\n| | 00111 | 11001 | 1 | Arithmetic Shift Right (ASR) of $AQ Q_{-1}$; Count = 4 |\n| **2** | 00111 | 11001 | 1 | $Q_0Q_{-1} = 11 \\rightarrow$ ASR only |\n| | 00011 | 11100 | 1 | After ASR; Count = 3 |\n| **3** | 10100 | 11100 | 1 | $Q_0Q_{-1} = 01 \\rightarrow A \\leftarrow A + M \\ (A + 10001)$ |\n| | 11010 | 01110 | 0 | After ASR; Count = 2 |\n| **4** | 11010 | 01110 | 0 | $Q_0Q_{-1} = 00 \\rightarrow$ ASR only |\n| | 11101 | 00111 | 0 | After ASR; Count = 1 |\n| **5** | 01100 | 00111 | 0 | $Q_0Q_{-1} = 10 \\rightarrow A \\leftarrow A - M \\ (11101 + 01111)$ |\n| | **00110** | **00011** | 1 | After ASR; Count = 0 (Stop) |\n\n### Final Result:\n- Combined Product $AQ = 0011000011_2$.\n- $0011000011_2 = 128 + 64 + 2 + 1 = 195_{10}$.\n- Verification: $(-15) \\times (-13) = 195$.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "17 b) i)",
+            "question_text": "Find $8 \\div 3$ using Restoring Division",
+            "marks": 6,
+            "answer": "Let's perform restoring division for $8 \\div 3$.\n\n- **Dividend ($Q$):** $8 = 1000_2$ (4 bits)\n- **Divisor ($M$):** $3 = 0011_2$, $-M = 1101_2$ (2's complement representation)\n- **Accumulator ($A$):** $0000_2$\n- **Count:** 4\n\n### Step-by-Step Execution:\n1. **Initialization:** $A = 0000$, $Q = 1000$, $Count = 4$.\n\n2. **Cycle 1:**\n   - Shift Left $A, Q$: $A = 0001$, $Q = 000\\_$\n   - Subtract $M$: $A \\leftarrow A - M \\rightarrow 0001 + 1101 = 1110$ (Negative, MSB is 1)\n   - Restore $A$: $A \\leftarrow A + M \\rightarrow 1110 + 0011 = 0001$\n   - Set $Q_0 = 0 \\rightarrow Q = 0000$, $Count = 3$.\n\n3. **Cycle 2:**\n   - Shift Left $A, Q$: $A = 0010$, $Q = 000\\_$\n   - Subtract $M$: $A \\leftarrow A - M \\rightarrow 0010 + 1101 = 1111$ (Negative, MSB is 1)\n   - Restore $A$: $A \\leftarrow A + M \\rightarrow 1111 + 0011 = 0010$\n   - Set $Q_0 = 0 \\rightarrow Q = 0000$, $Count = 2$.\n\n4. **Cycle 3:**\n   - Shift Left $A, Q$: $A = 0100$, $Q = 000\\_$\n   - Subtract $M$: $A \\leftarrow A - M \\rightarrow 0100 + 1101 = 0001$ (Positive, MSB is 0)\n   - No restoration needed.\n   - Set $Q_0 = 1 \\rightarrow Q = 0001$, $Count = 1$.\n\n5. **Cycle 4:**\n   - Shift Left $A, Q$: $A = 0010$, $Q = 001\\_$\n   - Subtract $M$: $A \\leftarrow A - M \\rightarrow 0010 + 1101 = 1111$ (Negative, MSB is 1)\n   - Restore $A$: $A \\leftarrow A + M \\rightarrow 1111 + 0011 = 0010$\n   - Set $Q_0 = 0 \\rightarrow Q = 0010$, $Count = 0$.\n\n### Results:\n- **Quotient ($Q$):** $0010_2 = 2_{10}$\n- **Remainder ($A$):** $0010_2 = 2_{10}$",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "17 b) ii)",
+            "question_text": "Find +13 and -6 using Bit Pair Recoding of Multipliers",
+            "marks": 6,
+            "answer": "To perform bit-pair recoding (Booth's Radix-4) for the multiplier $-6$:\n\n- **Multiplicand ($M$):** $+13 = 01101_2$ (5-bit)\n- **Multiplier ($Q$):** $-6 = 11010_2$\n\n### Bit Pair Recoding of the Multiplier:\nPad $Q$ with a zero on the right ($Q_{-1} = 0$) and extend the sign bit to make it even-bit numbered: $111010[0]_2$.\nGroup into overlapping triplets:\n\n- Triplet 1: $1, 0, 0 \\rightarrow -2$\n- Triplet 2: $1, 0, 1 \\rightarrow -1$\n- Triplet 3: $1, 1, 1 \\rightarrow 0$\n\nRecoded multiplier digits: $(0, -1, -2)$.\n\n### Multiplication Steps:\n1. **Multiply by -2:**\n   $-2 \\times M = -2 \\times 13 = -26$. In 2's complement: $11100110_2$.\n\n2. **Multiply by -1 (Shifted by 2 positions):**\n   $-1 \\times M = -13$. In 2's complement shifted left by 2 bits:\n   $$1110011_2 \\text{ shifted left by 2} = 111001100_2$$\n\n3. **Summing the partial products:**\n   ```\n     1 1 1 1 1 0 0 1 1 0   (-2 * M sign-extended)\n   + 1 1 1 1 0 0 1 1 0 0   (-1 * M shifted left by 2)\n   ---------------------\n     1 1 1 0 1 1 0 0 1 0   (Sum is -78 in 10-bit binary)\n   ```\n\n**Verification:** $13 \\times (-6) = -78$, which corresponds to the computed 10-bit binary value $1110110010_2$.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Design of ALU"
+        }
+    ]
+}

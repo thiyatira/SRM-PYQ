@@ -1,0 +1,199 @@
+{
+    "formal_filename": "CT-3_Set-B_2023-11-08.json",
+    "paper_title": "SRM Institute of Science and Technology, College of Engineering and Technology, School of Computing, Department of Computing Technologies, CLAT3, November 2023, 21CSS201T / COA, Set B",
+    "source": "2023-11-08 CLAT3 Set B",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "The stages of 3 stage pipelining are ____.\na. Decode, Fetch, Execute\nb. Execute, Fetch, Decode\nc. Fetch, Decode, Execute\nd. Address generation, Fetch, Execute.",
+            "marks": 1,
+            "answer": "c. Fetch, Decode, Execute\n\n**Rationale:** The standard stages of a basic 3-stage instruction pipeline in order are Fetching the instruction from memory, Decoding the instruction to identify the required operation, and Executing the instruction.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "2",
+            "question_text": "```\nR2out, Yin\nR3out, Select Y, Add, Zin\nZout, R1in\n```\n\nThe above sequence of operations represents\na. R3=R1+R2\nb. R1=R2+R3\nc. R2=R1+R3\nd. R3=R2-R1",
+            "marks": 1,
+            "answer": "b. R1=R2+R3\n\n**Rationale:** \n1. `R2out, Yin` copies the contents of register R2 into the temporary register Y.\n2. `R3out, Select Y, Add, Zin` selects register Y (containing R2), adds it to R3, and stores the result in temporary register Z.\n3. `Zout, R1in` copies the result from register Z to R1. Hence, $R1 = R2 + R3$.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "3",
+            "question_text": "The contention for the usage of hardware device is called\na. Data hazard\nb. Instruction hazard\nc. Structural hazard\nd. Stall",
+            "marks": 1,
+            "answer": "c. Structural hazard\n\n**Rationale:** A structural hazard occurs when two or more instructions in a pipeline require the same hardware resource (e.g., memory, ALU, or bus) at the same clock cycle.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "4",
+            "question_text": "The conditional branch instruction outcome can be predicted before the execution by using a logic called\na. Branch prediction\nb. Delayed branch\nc. Structural hazard\nd. Static prediction",
+            "marks": 1,
+            "answer": "a. Branch prediction\n\n**Rationale:** Branch prediction is a hardware or software mechanism used to guess the outcome of conditional branch instructions before their execution is complete, minimizing stalls in the pipeline.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "5",
+            "question_text": "Which addressing mode is capable of working without fetch operation?\na. Register indirect\nb. Direct\nc. Indexed\nd. Immediate",
+            "marks": 1,
+            "answer": "d. Immediate\n\n**Rationale:** In immediate addressing mode, the operand value is embedded directly inside the instruction word, so no separate memory read/fetch cycle is required to obtain the data operand.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "6",
+            "question_text": "What is the primary challenge of parallel computing related to shared resources?\na) Scalability\nb) Data synchronization\nc) Energy efficiency\nd) Algorithm complexity",
+            "marks": 1,
+            "answer": "b) Data synchronization\n\n**Rationale:** When multiple processors or threads simultaneously access shared resources, maintaining consistency and preventing race conditions requires careful data synchronization.",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "7",
+            "question_text": "Which type of parallel system is typically used for tasks that involve repetitive operations on large data sets, like graphics rendering or scientific simulations?\na) SISD\nb) SIMD\nc) MIMD\nd) MISD",
+            "marks": 1,
+            "answer": "b) SIMD\n\n**Rationale:** Single Instruction, Multiple Data (SIMD) architectures are designed to apply the same operation to a large array of data points simultaneously, making it highly effective for vector/matrix applications like graphics processing.",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "8",
+            "question_text": "In ARM assembly language, what instruction is commonly used for transferring data between memory and registers?\na) ADD\nb) MOV\nc) SUB\nd) CMP",
+            "marks": 1,
+            "answer": "b) MOV\n\n**Rationale:** While load/store instructions (`LDR`/`STR`) are used for memory access, among the choices provided, the `MOV` instruction is key to transferring data into and between registers.",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "9",
+            "question_text": "What is the purpose of the I/O operations in ARM architecture?\na) To perform arithmetic calculations\nb) To manage memory allocation\nc) To interact with input and output devices\nd) To control processor temperature",
+            "marks": 1,
+            "answer": "c) To interact with input and output devices\n\n**Rationale:** I/O operations are specifically designed to coordinate and facilitate communication and data exchange between the processor and external peripheral devices.",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "10",
+            "question_text": "What type of instruction encoding does ARM7 architecture use?\na. Fixed-length instruction encoding\nb. Variable-length instruction encoding\nc. CISC (Complex Instruction Set Computer) encoding\nd. VLIW (Very Long Instruction Word) encoding",
+            "marks": 1,
+            "answer": "b. Variable-length instruction encoding\n\n**Rationale:** ARM7 features dual instruction sets: 32-bit standard ARM instructions and 16-bit Thumb instructions. This capability to switch between 16-bit and 32-bit structures provides a form of variable-length instruction encoding to improve code density.",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "11",
+            "question_text": "Draw the generation of End control signal for single bus structure with proper expression.\n* $\\text{END} = T_7 \\cdot \\text{ADD} + T_5 \\cdot \\text{BR} + (T_5 \\cdot N + T_4 \\cdot \\bar{N}) \\cdot \\text{BRN} + \\dots$",
+            "marks": 4,
+            "answer": "The **End** control signal is generated using combinational logic gates to reset the control step counter back to step 1 upon the completion of instruction execution.\n\n### Logic Formulation\nThe control expression for ending an instruction is represented as:\n$$\\text{END} = T_7 \\cdot \\text{ADD} + T_5 \\cdot \\text{BR} + (T_5 \\cdot N + T_4 \\cdot \\bar{N}) \\cdot \\text{BRN} + \\dots$$\n\n### Logic Gate Circuit Description\nTo implement this logic circuit:\n1. An AND gate combines step $T_7$ and control signal $\\text{ADD}$.\n2. Another AND gate combines step $T_5$ and control signal $\\text{BR}$ (Unconditional Branch).\n3. For conditional branching ($\\text{BRN}$ - Branch on Negative):\n   - An AND gate combines $T_5$ and the Sign status flag $N$.\n   - An inverter is applied to $N$ to get $\\bar{N}$, which is then ANDed with $T_4$ via another AND gate.\n   - The outputs of these two gates are combined via an OR gate, yielding $(T_5 \\cdot N + T_4 \\cdot \\bar{N})$.\n   - This output is subsequently ANDed with the $\\text{BRN}$ control signal.\n4. Finally, all the resulting branches are fed into a multi-input OR gate to produce the active-high **End** signal.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "12",
+            "question_text": "Illustrate the impact of complex addressing mode on instruction flow in the pipeline\n* Addressing modes include simple ones and complex ones. \n* In choosing the addressing modes to be implemented in a pipelined processor, we must consider the effect of each addressing mode on instruction flow in the pipeline: \n - Side effects \n - The extent to which complex addressing modes cause the pipeline to stall \n - Whether a given mode is likely to be used by compilers",
+            "marks": 4,
+            "answer": "Complex addressing modes (e.g., indirect addressing or autoincrement modes) complicate instruction flow and pipeline efficiency in the following ways:\n\n1. **Side Effects:** Auto-increment and auto-decrement modes modify register values as a side-effect during address generation. This creates hidden registers-to-registers dependencies, requiring forwarding logic or stalls if a subsequent instruction attempts to use that modified index register.\n2. **Pipeline Stalls:** A complex mode (such as memory-indirect) requires multiple memory accesses within a single instruction cycle. Because a standard pipeline stage is optimized for a single memory access, this causes structural and data stalls as subsequent instructions wait for address calculations to resolve.\n3. **Compiler Utilization:** Compilers often struggle to effectively schedule and pair complex addressing modes into general-purpose optimization slots, which is why modern pipelined architectures generally favor simpler load/store RISC styles.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "13",
+            "question_text": "What is the sequence of operations for the instruction? `Move R2,(R1)`?",
+            "marks": 4,
+            "answer": "To execute the instruction `Move R2, (R1)` (which stores the content of register R2 in the memory location specified by R1) in a single-bus CPU organization, the sequence of operations is:\n\n1. `R1out, MARin` — The contents of address register R1 are placed on the processor bus and loaded into the Memory Address Register (MAR).\n2. `R2out, MDRin, Write` — The data contents of register R2 are placed on the processor bus, loaded into the Memory Data Register (MDR), and a memory write cycle is initiated.\n3. `MDRoutE, WMFC` — The contents of the MDR are enabled onto the external memory bus (`MDRoutE`) while waiting for the Memory Function Complete (`WMFC`) signal to guarantee the write operation concludes.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "14",
+            "question_text": "Differentiate the Memory mapped I/O and I/O mapped I/O",
+            "marks": 4,
+            "answer": "| Memory Mapped Input/Output | Input/Output Mapped Input/Output |\n|---|---|\n| 1. Each port is treated as a standard memory location. | Each port is treated as an independent logical unit. |\n| 2. The CPU's memory address space is shared between system memory and input/output ports. | Memory and input/output ports have separate, dedicated address spaces. |\n| 3. A single instruction (e.g., standard moves) can transfer data between memory and port. | Two dedicated instruction types are necessary to transfer data between memory and port. |\n| 4. Data transfer is conducted using general-purpose instructions like `MOVE`. | Port access is restricted to specialized hardware instructions like `IN` and `OUT`. |",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "15",
+            "question_text": "A CPU has 12 registers and uses 6 addressing modes. RAM is 64K x 32. What is the maximum size of the op-code field if the instruction has a register operand and a memory address operand?",
+            "marks": 4,
+            "answer": "### Given Data:\n* Number of registers = $12$\n* Addressing modes = $6$\n* RAM dimensions = $64\\text{K} \\times 32$\n\n### Formulations:\n* **Instruction Size:** Equal to the word size (Data Lines) of the RAM = $32\\text{ bits}$.\n* **Addressing Mode Field:** Bits required to choose one of $6$ modes = $\\lceil \\log_2(6) \\rceil = 3\\text{ bits}$.\n* **Register Selection Field:** Bits required to choose one of $12$ registers = $\\lceil \\log_2(12) \\rceil = 4\\text{ bits}$.\n* **Memory Address Field:** Bits required to address $64\\text{K}$ words ($2^{16}$) = $16\\text{ bits}$.\n\n### Calculating Op-code Field size ($x$):\n$$\\text{Addressing Mode} + \\text{Op-code} + \\text{Register Field} + \\text{Memory Address} = \\text{Total Instruction Size}$$\n$$3 + x + 4 + 16 = 32$$\n$$x + 23 = 32$$\n$$x = 9\\text{ bits}$$\n\n**Answer:** The maximum size of the op-code field is **9 bits**.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "16. A a)",
+            "question_text": "Write the sequence of control steps required for single bus structure for following instructions.\na) Add the immediate number NUM to register R1.",
+            "marks": 12,
+            "answer": "The sequence of control steps to execute `Add #NUM, R1` (where the immediate value `NUM` is located in the memory word following the instruction opcode) is:\n\n```\n1: PCout, MARin, Read, Clear Y, Set carry-in to ALU, Add, Zin\n2: Zout, PCin, WMFC\n3: MDRout, IRin\n4: PCout, MARin, Read, Clear Y, Set carry-in to ALU, Add, Zin\n5: Zout, PCin\n6: R1out, Yin, WMFC\n7: MDRout, Add, Zin\n8: Zout, R1in, End\n```\n\n* **Steps 1–3:** Instruction Fetch (IF) phase.\n* **Steps 4–5:** Read the immediate operand `NUM` from the next memory address and advance the PC to the next sequential instruction.\n* **Step 6:** Load the contents of register R1 into accumulator register Y.\n* **Step 7:** Place the fetched operand (`MDRout`) onto the bus, execute addition inside the ALU, and transfer the output to register Z.\n* **Step 8:** Move the result from register Z to destination register R1 and conclude execution.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "16. A b)",
+            "question_text": "b) Add the contents of memory location NUM to register R1",
+            "marks": null,
+            "answer": "The control steps to execute `Add NUM, R1` (where the operand's address `NUM` is located in the memory word following the instruction opcode) are:\n\n```\n1: PCout, MARin, Read, Clear Y, Set carry-in to ALU, Add, Zin\n2: Zout, PCin, WMFC\n3: MDRout, IRin\n4: PCout, MARin, Read, Clear Y, Set carry-in to ALU, Add, Zin\n5: Zout, PCin\n6: R1out, Yin, WMFC\n7: MDRout, MARin, Read, WMFC\n8: MDRout, Add, Zin\n9: Zout, R1in, End\n```\n\n* **Steps 1–3:** Instruction Fetch phase.\n* **Steps 4–5:** Fetch the operand address `NUM` and increment the Program Counter.\n* **Step 6:** Save register R1 value into register Y.\n* **Step 7:** Place the fetched address `NUM` (`MDRout`) into the MAR and initiate a Read command to obtain the actual data from that address.\n* **Step 8:** Place the retrieved data (`MDRout`) onto the bus, perform addition with register Y, and save the result in Z.\n* **Step 9:** Transfer the final sum to register R1 and end the operation.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "16. B",
+            "question_text": "I1: MUL R2,R3,R4 \nI2: ADD R5,R2,R1 \n\nWhen the above instructions are executed parallel identify the type of hazard occurs? Specify the hardware and software solution for handling the hazard.",
+            "marks": 12,
+            "answer": "### 1. Hazard Identification\nThere is a **Data Hazard** (specifically a **Read After Write - RAW** dependency). Instruction $I_2$ requires the contents of register $R_2$ as one of its input operands, but $R_2$ is the destination register updated by instruction $I_1$. In an unhandled pipeline, $I_2$ would read an outdated value of $R_2$ before $I_1$ writes the product back to the register file.\n\n### 2. Hardware Solution: Operand Forwarding (Bypassing)\nOperand forwarding resolves the hazard without pipeline stalls. The execution stage (ALU) output of instruction $I_1$ is saved temporarily in a pipeline buffer (RSLT). Instead of waiting for the Write-back (W) stage to save to the register file, hardware detects the dependency and routes the result directly from the pipeline register of $I_1$ to the ALU input port of $I_2$ using dedicated bypass multiplexers.\n\n### 3. Software Solution: Compiler Scheduling and NOP Insertion\nThe compiler can optimize instruction sequencing or insert No-Operation (`NOP`) dummy instructions between the dependent commands to delay the operand read of $I_2$ until $I_1$ writes its output back to the register:\n```assembly\nI1: MUL R2, R3, R4\nNOP\nNOP\nI2: ADD R5, R2, R1\n```",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "17 A. a",
+            "question_text": "Imagine you are the lead architect at a tech company that specializes in developing real-time weather simulation software. The software needs to process vast amounts of data from various sources, simulate weather patterns, and provide real-time visualizations. To enhance the performance and reduce the time taken for simulations, you are considering implementing parallel processing techniques.\n\na. Identify the need for parallelism in this scenario. (2marks)",
+            "marks": 2,
+            "answer": "The primary need for parallelism in weather simulation is the **computational intensity and real-time processing constraints**. Weather forecasting demands processing vast grids of atmospheric data from diverse sources (satellites, radars, stations) using complex fluid dynamics equations. Executing these calculations sequentially is too slow to provide real-time visualizations and predictions; parallel architectures allow workloads to be computed concurrently across multiple processing nodes, producing results within critical operational windows.",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "17 A. b",
+            "question_text": "b. Which type(s) of parallelism would be most suitable for this application and why? (2marks)",
+            "marks": 2,
+            "answer": "1. **Data Parallelism:** This is highly suitable because weather models represent the atmosphere as a large geographic grid. The same physical/mathematical equations can be applied to different grid sectors independently and concurrently across multiple processors.\n2. **Task Parallelism:** This is useful for separating functionally distinct processes—such as concurrent ingestion of satellite data, computing the mathematical modeling equations, and executing real-time visualization render pipelines.",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "17 A. c",
+            "question_text": "c. List two potential applications of parallelism in the weather simulation software. (2marks)",
+            "marks": 2,
+            "answer": "1. **Real-time Multichannel Sensor Ingestion:** Processing and aligning streaming observational inputs (pressure, wind, heat sensors) from satellites, planes, and land stations concurrently.\n2. **High-Definition Graphics Rendering:** Running spatial rendering tasks across discrete GPU threads to construct high-fidelity 3D atmospheric maps.",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "17 A. d",
+            "question_text": "d. Highlight two challenges you might face when implementing parallelism in this context. (2marks)",
+            "marks": 2,
+            "answer": "1. **Synchronization Overheads:** Grid domains must communicate with adjacent regions at boundary points to simulate physical flows. Coordinating this transfer without introducing substantial wait times is a key bottleneck.\n2. **Data Dependencies:** Certain computations depend strictly on the temporal outputs of previous steps (e.g., calculating pressure at step $t+1$ requires the completed velocity vectors from step $t$), restricting pure asynchronous parallel execution.",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "17 A. e",
+            "question_text": "e. Based on Flynn’s classification, which architecture would be most appropriate for this software? Explain your choice. (4 marks)",
+            "marks": 4,
+            "answer": "The most appropriate architecture based on Flynn’s classification is **MIMD (Multiple Instruction, Multiple Data)**.\n\n### Rationale:\n* **Independent Operations:** MIMD systems feature multiple, autonomous processors that can independently execute different programs (instructions) on different subsets of data.\n* **Application Alignment:** Weather systems require diverse concurrent functions. While part of the processor array is executing structural equations on spatial databases (numerical simulation), other processing units can simultaneously run I/O networking routines or construct real-time visualization outputs. This level of heterogeneous operational flexibility is only possible with MIMD architectures.",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "17 B",
+            "question_text": "Draw and explain the structure of ARM registers and processor modes",
+            "marks": 12,
+            "answer": "### ARM Register Structure\nARM processors utilize 37 registers, but their visibility to the programmer depends on the current operational mode of the CPU. In User mode, there are 16 visible active registers (`r0` to `r15`) and one Status register:\n\n* **`r0` to `r12` (General-Purpose Registers):** Used for standard arithmetic, logical, and data transfer calculations.\n* **`r13` (Stack Pointer - SP):** Points to the top of the active stack in memory.\n* **`r14` (Link Register - LR):** Automatically stores the return address when subroutine call instructions (like branch-with-link `BL`) are executed.\n* **`r15` (Program Counter - PC):** Stores the memory address of the next instruction to be fetched.\n* **`CPSR` (Current Program Status Register):** Contains condition flags (Negative, Zero, Carry, Overflow), interrupt disable bits, and the current processor mode selection bits.\n\n### Processor Modes\nARM supports seven operational modes to execute applications and respond safely to hardware events and errors:\n\n1. **User Mode (usr):** The only non-privileged state. Used for executing standard system applications and protecting system-critical resources.\n2. **System Mode (sys):** A privileged state that runs with the same registers as User mode, typically used to handle privileged OS tasks.\n3. **Supervisor Mode (svc):** The default state entered after a processor reset or via Software Interrupt (SWI) execution to run system-level services.\n4. **Abort Mode (abt):** Entered to manage virtual memory access errors (prefetch/data aborts).\n5. **Undefined Mode (und):** Triggered when the processor attempts to decode an instruction not supported by the core architecture.\n6. **Interrupt Request Mode (irq):** Activated automatically in response to standard, low-priority external interrupt requests.\n7. **Fast Interrupt Request Mode (fiq):** Designed with banked registers (`r8_fiq` to `r14_fiq`) to minimize state-saving latency, optimizing fast, high-priority interrupt handling.",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Parallelism"
+        }
+    ]
+}

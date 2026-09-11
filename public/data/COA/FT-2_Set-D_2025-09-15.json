@@ -1,0 +1,71 @@
+{
+    "formal_filename": "FT-2_Set-D_2025-09-15.json",
+    "paper_title": "SRM Institute of Science and Technology, College of Engineering and Technology, School of Computing, Formative Test II (FT II), September 2025, 21CSS201T/Computer Organization and Architecture, Year & Sem: II Year / III Sem, Set D",
+    "source": "2025-09-15 CT2 Set D",
+    "questions": [
+        {
+            "question_number": "11 a)",
+            "question_text": "A signed decimal value of -99 needs to be encoded for storage in a digital system that uses two's complement representation. Show how this number would appear in binary, octal, and hexadecimal formats. (4 Marks)",
+            "marks": 4,
+            "answer": "1. **Find 8-bit representation of +99 in Binary**:\n   $$99_{10} = 64 + 32 + 2 + 1 = 01100011_2$$\n\n2. **Find One's Complement**:\n   Invert all bits: $$10011100_2$$\n\n3. **Find Two's Complement (-99)**:\n   Add 1 to the One's Complement:\n   $$10011100_2 + 1 = 10011101_2$$\n\n4. **Conversion to Other Formats**:\n   * **Binary**: $$(10011101)_2$$\n   * **Octal**: Group binary bits from right to left in sets of 3:\n     $$(010)\\ (011)\\ (101)_2 = (235)_8$$\n   * **Hexadecimal**: Group binary bits from right to left in sets of 4:\n     $$(1001)\\ (1101)_2 = (9D)_{16}$$\n\n*(Note: If sign-extended to a typical 16-bit machine word, the representations would be: Binary: $$(1111111110011101)_2$$, Octal: $$(177635)_8$$, Hex: $$(FF9D)_{16}$$)*.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "11 b)",
+            "question_text": "A fractional binary quantity is given as $(1101101.101)_2$. If this value is to be interpreted by different numbering systems, what would be its equivalent in decimal, octal, and hexadecimal? (3 Marks)",
+            "marks": 3,
+            "answer": "Let the binary number be $$(1101101.101)_2$$:\n\n1. **Decimal Equivalent**:\n   * Integer part: $$1101101_2 = (1 \\times 2^6) + (1 \\times 2^5) + (0 \\times 2^4) + (1 \\times 2^3) + (1 \\times 2^2) + (0 \\times 2^1) + (1 \\times 2^0) = 64 + 32 + 8 + 4 + 1 = 109_{10}$$\n   * Fractional part: $$.101_2 = (1 \\times 2^{-1}) + (0 \\times 2^{-2}) + (1 \\times 2^{-3}) = 0.5 + 0 + 0.125 = 0.625_{10}$$\n   * Combined: $$(109.625)_{10}$$\n\n2. **Octal Equivalent**:\n   * Group integer part in 3s from right: $$(001)\\ (101)\\ (101) = 155_8$$\n   * Group fractional part in 3s from left: $$(101) = 5_8$$\n   * Combined: $$(155.5)_8$$\n\n3. **Hexadecimal Equivalent**:\n   * Group integer part in 4s from right: $$(0110)\\ (1101) = 6D_{16}$$\n   * Group fractional part in 4s from left (pad with zero): $$(1010) = A_{16}$$\n   * Combined: $$(6D.A)_{16}$$",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "11 c)",
+            "question_text": "A hexadecimal code $(4F.A)_{16}$ is recorded in a memory register. Determine its corresponding representation in binary and its equivalent decimal value. (3 Marks)",
+            "marks": 3,
+            "answer": "1. **Binary Representation**:\n   Convert each hexadecimal digit directly to its 4-bit binary equivalent:\n   * $$4 = 0100$$\n   * $$F = 1111$$\n   * $$A = 1010$$\n   * Binary equivalent: $$(01001111.1010)_2$$ or simply $$(1001111.101)_2$$.\n\n2. **Decimal Representation**:\n   * Integer part: $$4 \\times 16^1 + 15 \\times 16^0 = 64 + 15 = 79$$\n   * Fractional part: $$10 \\times 16^{-1} = 10 / 16 = 0.625$$\n   * Decimal equivalent: $$(79.625)_{10}$$",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "12",
+            "question_text": "Perform the following operations in binary:\ni) Find the sum for the given numbers: A = 10110110; B = 01101011; C = 11001100; D = 00110101\nii) Calculate the difference of $(100101)_2 - (10111)_2$ using 2's complement.\niii) Find the product of $(1101)_2 \\times (111)_2$\niv) Perform division for given binary values: Dividend=$(101100)_2$ ; Divisor=$(100)_2$.\nv) Perform BCD addition for the given decimal: 576 + 389.\n(Each carries 2 marks)",
+            "marks": 10,
+            "answer": "### i) Sum of A, B, C, and D:\n```\n    A = 10110110\n  + B = 01101011\n  -------------\n  Sum = 100100001\n\n    C = 11001100\n  + D = 00110101\n  -------------\n  Sum = 100000001\n\n  Total Sum = 100100001 + 100000001 = 1000100010_2\n```\nVerification in decimal: $$182 + 107 + 204 + 53 = 546_{10}$$. $$(1000100010)_2 = 512 + 32 + 2 = 546_{10}$$.\n\n---\n\n### ii) Difference of $(100101)_2 - (10111)_2$ using 2's complement:\n1. Align bit lengths (6 bits):\n   * Minuend ($$X$$) = $$100101$$\n   * Subtrahend ($$Y$$) = $$010111$$\n2. Find 2's complement of $$Y$$:\n   * 1's complement: $$101000$$\n   * Add 1: $$101001$$\n3. Add $$X$$ and 2's complement of $$Y$$:\n```\n    100101  (37)\n  + 101001  (-23)\n  --------\n  1 001110  (Discard the end carry-out of 1)\n```\n* Result: $$(001110)_2 = (14)_{10}$$.\n\n---\n\n### iii) Product of $(1101)_2 \\times (111)_2$:\n```\n       1101\n     x  111\n     ------\n       1101\n      11010\n     110100\n     ------\n    1011011_2\n```\nVerification: $$13 \\times 7 = 91_{10}$$. $$(1011011)_2 = 64 + 16 + 8 + 2 + 1 = 91_{10}$$.\n\n---\n\n### iv) Binary Division: $$(101100)_2 \\div (100)_2$$:\n```\n          1011  (Quotient)\n       -------\n  100 | 101100\n       -100\n       ----\n         0110\n         -100\n         ----\n          0100\n          -100\n          ----\n             0  (Remainder)\n```\n* Quotient = $$(1011)_2$$ (which is 11 in decimal)\n* Remainder = $$0$$\n\n---\n\n### v) BCD Addition of $576 + 389$:\nConvert numbers to BCD:\n* $$576 = 0101\\ 0111\\ 0110$$\n* $$389 = 0011\\ 1000\\ 1001$$\n\nAdd step-by-step from least significant digit:\n1. **LSD Column**: $$0110 + 1001 = 1111$$ ($$15 > 9$$). Since it exceeds 9, add $$0110$$ (6):\n   $$1111 + 0110 = 10101 \\rightarrow$$ Digit is $$0101$$ with carry $$1$$.\n2. **Middle Column**: $$0111 + 1000 + 1\\text{ (carry)} = 10000$$ ($$16 > 9$$). Add $$0110$$:\n   $$10000 + 0110 = 10110 \\rightarrow$$ Digit is $$0110$$ with carry $$1$$.\n3. **MSD Column**: $$0101 + 0011 + 1\\text{ (carry)} = 1001$$ ($$9 \\le 9$$). No correction needed.\n\n* BCD Result: $$1001\\ 0110\\ 0101$$ ($$965\\ \\text{BCD}$$, equivalent to $$965_{10}$$).",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "13",
+            "question_text": "Solve the following Boolean expression using all NAND gates:\nF = A'B + AB' + ABC",
+            "marks": 10,
+            "answer": "### 1. Simplification of the Expression:\n$$F = A'B + AB' + ABC$$\n\nApply distributive law on the second and third terms:\n$$F = A'B + A(B' + BC)$$\n\nUsing the Boolean identity $$X + X'Y = X + Y$$ (where $$X = B'$$ and $$X' = B$$):\n$$B' + BC = B' + C$$\n\nSubstitute back into the expression:\n$$F = A'B + A(B' + C) = A'B + AB' + AC$$\n\n### 2. Implementation using only NAND gates:\nUsing De Morgan's double-negation theorem:\n$$F = \\overline{\\overline{A'B + AB' + AC}}$$\n$$F = \\overline{\\overline{A'B} \\cdot \\overline{AB'} \\cdot \\overline{AC}}$$\n\nThis expression can be constructed directly using NAND gates:\n* **Inverters** (using 2-input NAND gates with tied inputs):\n  * $$A' = \\overline{A \\cdot A}$$\n  * $$B' = \\overline{B \\cdot B}$$\n* **First Level NAND Operations**:\n  * $$G_1 = \\overline{A' \\cdot B}$$\n  * $$G_2 = \\overline{A \\cdot B'}$$\n  * $$G_3 = \\overline{A \\cdot C}$$\n* **Output Level NAND Operation**:\n  * $$F = \\overline{G_1 \\cdot G_2 \\cdot G_3}$$\n\nThis design requires a total of 6 NAND gates.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "14",
+            "question_text": "Write an Assembly Language Program for the equation:\nZ=(X+Y)*(W-V)+U; using Zero-Address, One-Address, and Two-Address instruction styles. (3+4+4 marks)",
+            "marks": 10,
+            "answer": "Here are the assembly programs using the different instruction styles:\n\n### 1. Zero-Address Instruction Format (Stack-Based)\n```assembly\nPUSH X      ; TOS <- X\nPUSH Y      ; TOS <- Y\nADD         ; TOS <- (X + Y)\nPUSH W      ; TOS <- W\nPUSH V      ; TOS <- V\nSUB         ; TOS <- (W - V)\nMUL         ; TOS <- (X + Y) * (W - V)\nPUSH U      ; TOS <- U\nADD         ; TOS <- (X + Y) * (W - V) + U\nPOP Z       ; Z <- TOS\n```\n\n### 2. One-Address Instruction Format (Accumulator-Based)\n```assembly\nLOAD W      ; AC <- W\nSUB V       ; AC <- W - V\nSTORE TEMP  ; TEMP <- AC\nLOAD X      ; AC <- X\nADD Y       ; AC <- X + Y\nMUL TEMP    ; AC <- AC * TEMP\nADD U       ; AC <- AC + U\nSTORE Z     ; Z <- AC\n```\n\n### 3. Two-Address Instruction Format\n```assembly\nMOV R1, X   ; R1 <- X\nADD R1, Y   ; R1 <- X + Y\nMOV R2, W   ; R2 <- W\nSUB R2, V   ; R2 <- W - V\nMUL R1, R2  ; R1 <- R1 * R2\nADD R1, U   ; R1 <- R1 + U\nMOV Z, R1   ; Z <- R1\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "15 a)",
+            "question_text": "Describe the Straight Line Sequencing (SLS) in microprocessor operations. Illustrate its instruction execution cycle and discuss its advantages and limitations. (6)",
+            "marks": 6,
+            "answer": "### Straight Line Sequencing (SLS)\n\n**Definition**:\nStraight Line Sequencing (SLS) is the implicit, default execution sequence where the control unit fetches and executes instructions one after another from consecutive memory addresses. The Program Counter (PC) automatically updates to point to the address of the next contiguous instruction after each instruction is fetched.\n\n### Instruction Execution Cycle\nIn SLS, the execution cycle consists of three primary phases performed in sequence:\n1. **Fetch**: The address of the instruction is fetched from memory using the address held in the Program Counter (PC) and loaded into the Instruction Register (IR).\n2. **PC Increment**: The PC is incremented to point to the next instruction in sequence ($$PC \\leftarrow PC + k$$, where $$k$$ is the instruction word size in bytes).\n3. **Decode & Execute**: The control circuitry decodes the opcode in the IR and executes the task (e.g., ALU operations, data transfers, etc.).\n\n```\n     +-----------------------------------------+\n     |      Fetch Instruction (IR <- [PC])     |\n     +--------------------+--------------------+\n                          |\n                          v\n     +-----------------------------------------+\n     |      Increment PC (PC <- PC + k)        |\n     +--------------------+--------------------+\n                          |\n                          v\n     +-----------------------------------------+\n     |         Decode & Execute Instruction     |\n     +--------------------+--------------------+\n                          |\n                          +--- (Repeat for Next Instruction)\n```\n\n### Advantages:\n* **Simplicity**: No complex decision-making hardware is required to determine the next instruction's address.\n* **Predictable Execution**: Extremely easy to pipeline, schedule, and prefetch because instructions follow a strictly contiguous order.\n\n### Limitations:\n* **Inflexible Execution Flow**: Pure SLS cannot handle decision branches (conditional statements like IF/ELSE) or iterations (loops).\n* **Inefficient**: Code blocks cannot be reused. Functions and subroutines require branching instructions to disrupt the sequential flow.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "15 b)",
+            "question_text": "Write about the general-purpose registers of 8086 processor. (4)",
+            "marks": 4,
+            "answer": "The 8086 microprocessor contains four **16-bit general-purpose registers** that can also be accessed as individual 8-bit registers (High and Low byte):\n\n1. **AX (Accumulator Register)**:\n   * Split into **AH** (High) and **AL** (Low).\n   * Heavily used in arithmetic, logical, and I/O operations. It holds the implicit operand/result for operations like multiplication and division.\n\n2. **BX (Base Register)**:\n   * Split into **BH** and **BL**.\n   * Primarily used to store base addresses/pointers for memory referencing (indirect addressing).\n\n3. **CX (Count Register)**:\n   * Split into **CH** and **CL**.\n   * Serves as an automatic loop counter in loop instructions (`LOOP`) and shift/rotate instructions (using the `CL` register for shift count).\n\n4. **DX (Data Register)**:\n   * Split into **DH** and **DL**.\n   * Used alongside AX in double-word multiplication/division operations to hold high-order 16 bits of a 32-bit value, and for specifying I/O port addresses during I/O operations.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        }
+    ]
+}

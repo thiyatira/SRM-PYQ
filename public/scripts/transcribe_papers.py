@@ -16,11 +16,9 @@ if hasattr(sys.stdout, "reconfigure"):
     except Exception:
         pass
 
-# --- Thread-safe Logger & Rate Limiter ---
+# --- Thread-safe Logger & API Key Pool ---
 print_lock = threading.Lock()
-rate_limit_lock = threading.Lock()
-last_request_time = 0.0
-MIN_REQUEST_INTERVAL = 4.2  # Ensures < 14.5 RPM across all threads
+manifest_lock = threading.Lock()
 
 def log(msg: str):
     """Thread-safe logging with immediate flush."""
@@ -28,16 +26,62 @@ def log(msg: str):
         timestamp = time.strftime("%H:%M:%S")
         print(f"[{timestamp}] {msg}", flush=True)
 
-def throttle_request():
-    """Enforces minimum interval between API calls to prevent 429 rate limit."""
-    global last_request_time
-    with rate_limit_lock:
-        now = time.time()
-        elapsed = now - last_request_time
-        if elapsed < MIN_REQUEST_INTERVAL:
-            sleep_time = MIN_REQUEST_INTERVAL - elapsed
-            time.sleep(sleep_time)
-        last_request_time = time.time()
+class ApiKeyPool:
+    """Manages multiple Gemini API keys with independent per-key rate limits and 429 backoff."""
+    def __init__(self, keys: list[str], min_interval: float = 4.2):
+        self.keys = list(keys)
+        self.min_interval = min_interval
+        self.lock = threading.Lock()
+        self.key_last_used = {k: 0.0 for k in self.keys}
+        self.key_backoff_until = {k: 0.0 for k in self.keys}
+        self.clients = {}
+
+        from google.generativeai import client
+        for k in self.keys:
+            cm = client._ClientManager()
+            cm.configure(api_key=k)
+            self.clients[k] = cm.get_default_client("generative")
+
+    def acquire_key_and_client(self):
+        """Acquires the next available key whose interval has passed and is not in backoff."""
+        while True:
+            with self.lock:
+                now = time.time()
+                best_key = None
+                best_wait = float('inf')
+                for k in self.keys:
+                    if self.key_backoff_until[k] > now:
+                        wait = self.key_backoff_until[k] - now
+                    else:
+                        elapsed = now - self.key_last_used[k]
+                        wait = max(0.0, self.min_interval - elapsed)
+                    if wait < best_wait:
+                        best_wait = wait
+                        best_key = k
+
+                if best_wait <= 0.05 and best_key:
+                    self.key_last_used[best_key] = time.time()
+                    masked_key = f"...{best_key[-6:]}"
+                    return best_key, self.clients[best_key], masked_key
+
+            time.sleep(min(best_wait, 0.4))
+
+    def mark_rate_limit(self, key: str, backoff_seconds: float):
+        with self.lock:
+            self.key_backoff_until[key] = time.time() + backoff_seconds
+
+def update_manifest(output_folder: Path, pdf_name: str, json_name: str):
+    """Safely records a completed PDF in .completed_manifest.json."""
+    with manifest_lock:
+        manifest_path = output_folder / ".completed_manifest.json"
+        data = {}
+        if manifest_path.exists():
+            try:
+                data = json.loads(manifest_path.read_text(encoding="utf-8"))
+            except Exception:
+                data = {}
+        data[pdf_name] = json_name
+        manifest_path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
 
 # --- Master Prompt Template ---
 PROMPT_TEMPLATE = """
@@ -131,8 +175,8 @@ def sanitize_filename(name: str, fallback_name: str) -> str:
         name = f"{name}.json"
     return name
 
-def process_single_pdf(pdf_path: Path, output_folder: Path, model_name: str, syllabus: str, item_idx: int, total_items: int, max_retries: int = 6):
-    """Processes a single PDF with inline data, rate-throttling, error handling, and logging."""
+def process_single_pdf(pdf_path: Path, output_folder: Path, model_name: str, syllabus: str, key_pool: ApiKeyPool, item_idx: int, total_items: int, use_original_names: bool = True, max_retries: int = 6):
+    """Processes a single PDF with inline data, rate-throttling via ApiKeyPool, error handling, and logging."""
     start_time = time.time()
     tag = f"[{item_idx:02d}/{total_items:02d}]"
     
@@ -147,28 +191,36 @@ def process_single_pdf(pdf_path: Path, output_folder: Path, model_name: str, syl
         return False, pdf_path.name, f"Read error: {e}"
 
     pdf_part = {"mime_type": "application/pdf", "data": pdf_bytes}
-    model = genai.GenerativeModel(
-        model_name,
-        generation_config={"response_mime_type": "application/json"}
-    )
 
     for attempt in range(1, max_retries + 1):
+        api_key, gen_client, masked_key = key_pool.acquire_key_and_client()
+        
+        model = genai.GenerativeModel(
+            model_name,
+            generation_config={"response_mime_type": "application/json"}
+        )
+        model._client = gen_client
+
         try:
-            # Enforce minimum time interval across all threads to avoid 429
-            throttle_request()
-            
-            log(f"{tag} [SENDING] ({model_name}) [Attempt {attempt}/{max_retries}]...")
+            log(f"{tag} [SENDING] ({model_name} | Key {masked_key}) [Attempt {attempt}/{max_retries}]...")
             response = model.generate_content([prompt, pdf_part])
             
             data = robust_json_load(response.text)
             
-            formal_name = data.get("formal_filename")
-            fallback_name = f"{pdf_path.stem}.json"
-            final_filename = sanitize_filename(formal_name, fallback_name)
+            if use_original_names:
+                final_filename = f"{pdf_path.stem}.json"
+                data["formal_filename"] = final_filename
+            else:
+                formal_name = data.get("formal_filename")
+                fallback_name = f"{pdf_path.stem}.json"
+                final_filename = sanitize_filename(formal_name, fallback_name)
+                
             output_file = output_folder / final_filename
 
             with open(output_file, "w", encoding="utf-8") as f:
                 json.dump(data, f, indent=4, ensure_ascii=False)
+            
+            update_manifest(output_folder, pdf_path.name, final_filename)
             
             elapsed = time.time() - start_time
             q_count = len(data.get("questions", []))
@@ -190,13 +242,14 @@ def process_single_pdf(pdf_path: Path, output_folder: Path, model_name: str, syl
             is_rate_limit = "429" in err_msg or "ResourceExhausted" in err_msg or "quota" in err_msg.lower()
             
             if is_rate_limit:
-                backoff = 15 * attempt
-                log(f"{tag} [WAIT] Rate limit (429) hit. Pausing for {backoff}s before retry...")
-                time.sleep(backoff)
+                backoff = 12 * attempt
+                log(f"{tag} [WAIT] Key {masked_key} hit rate limit (429). Backing off for {backoff}s and rotating key...")
+                key_pool.mark_rate_limit(api_key, backoff)
+                time.sleep(1)
             else:
-                log(f"{tag} [WARN] API error on attempt {attempt}: {e}")
+                log(f"{tag} [WARN] API error with key {masked_key} on attempt {attempt}: {e}")
                 if attempt < max_retries:
-                    time.sleep(4 * attempt)
+                    time.sleep(2 * attempt)
                 else:
                     log(f"{tag} [ERROR] Giving up after {max_retries} attempts on {pdf_path.name}")
                     return False, pdf_path.name, str(e)
@@ -208,21 +261,38 @@ def main():
     parser.add_argument("-f", "--folder", default="public/pdf/DSA", help="Path to folder containing PDF question papers")
     parser.add_argument("-o", "--output", default="public/data/DSA", help="Path to output JSON folder")
     parser.add_argument("-s", "--syllabus", default="public/scripts/dsa_syllabus.txt", help="Path to syllabus text file")
-    parser.add_argument("-k", "--api-key", help="Gemini API Key (or set GEMINI_API_KEY env var)")
+    parser.add_argument("-k", "--api-keys", nargs="+", help="One or more Gemini API keys (space-separated or comma-separated)")
+    parser.add_argument("--api-key", help="Single Gemini API Key for backwards compatibility")
     parser.add_argument("-m", "--model", default="models/gemini-3.5-flash", help="Gemini model (default: models/gemini-3.5-flash)")
-    parser.add_argument("-w", "--workers", type=int, default=3, help="Concurrent workers (default: 3)")
+    parser.add_argument("-w", "--workers", type=int, default=None, help="Concurrent workers (default: number of API keys)")
     parser.add_argument("--skip-existing", action="store_true", default=True, help="Skip files that already exist in output folder")
+    parser.add_argument("--use-original-names", action="store_true", default=True, help="Use original PDF filename for output JSON (default: True)")
+    parser.add_argument("--use-deduced-names", action="store_false", dest="use_original_names", help="Use AI deduced formal filename")
     args = parser.parse_args()
 
     # 1. API Key Setup
-    api_key = args.api_key or os.environ.get("GEMINI_API_KEY")
-    if not api_key:
-        api_key = input("Enter your Gemini API Key: ").strip()
-    if not api_key:
-        print("Error: Gemini API key is required.", flush=True)
-        sys.exit(1)
+    keys = []
+    if args.api_keys:
+        for item in args.api_keys:
+            keys.extend([k.strip() for k in item.split(",") if k.strip()])
+    if args.api_key:
+        keys.extend([k.strip() for k in args.api_key.split(",") if k.strip()])
+    if not keys and os.environ.get("GEMINI_API_KEYS"):
+        keys.extend([k.strip() for k in os.environ.get("GEMINI_API_KEYS").split(",") if k.strip()])
+    if not keys and os.environ.get("GEMINI_API_KEY"):
+        keys.extend([k.strip() for k in os.environ.get("GEMINI_API_KEY").split(",") if k.strip()])
 
-    genai.configure(api_key=api_key)
+    unique_keys = list(dict.fromkeys(keys))
+    if not unique_keys:
+        single = input("Enter your Gemini API Key: ").strip()
+        if single:
+            unique_keys = [single]
+        else:
+            print("Error: At least one Gemini API key is required.", flush=True)
+            sys.exit(1)
+
+    key_pool = ApiKeyPool(unique_keys)
+    workers = args.workers if args.workers is not None else max(len(unique_keys), 1)
 
     # 2. Input & Output Setup
     input_folder = Path(args.folder).resolve()
@@ -248,11 +318,12 @@ def main():
 
     total_count = len(pdf_files)
     print("=" * 75, flush=True)
-    print(f" SRM-PYQ PARALLEL TRANSCRIPTION ENGINE", flush=True)
+    print(f" SRM-PYQ PARALLEL MULTI-KEY TRANSCRIPTION ENGINE", flush=True)
     print(f" • Input Folder:       {input_folder}", flush=True)
     print(f" • Output Folder:      {output_folder}", flush=True)
     print(f" • Model:              {args.model}", flush=True)
-    print(f" • Concurrency:        {args.workers} workers (Throttled for Free Tier 15 RPM)", flush=True)
+    print(f" • API Keys in Pool:   {len(unique_keys)} keys ({len(unique_keys) * 15} theoretical RPM)", flush=True)
+    print(f" • Concurrency:        {workers} worker threads", flush=True)
     print(f" • Total PDFs:         {total_count} files", flush=True)
     print("=" * 75, flush=True)
 
@@ -261,20 +332,42 @@ def main():
     fail_count = 0
     skipped_count = 0
 
-    # Build index of existing JSON files in output folder to avoid re-running completed papers
+    # Build index of existing JSON files and manifest
+    manifest_path = output_folder / ".completed_manifest.json"
+    manifest_data = {}
+    if manifest_path.exists():
+        try:
+            manifest_data = json.loads(manifest_path.read_text(encoding="utf-8"))
+        except Exception:
+            manifest_data = {}
+
     existing_json_files = list(output_folder.glob("*.json"))
-    existing_stems = [f.stem.lower().replace("-", "_") for f in existing_json_files]
-    
+    existing_stems = [f.stem.lower().replace("-", "_") for f in existing_json_files if not f.name.startswith(".")]
+
     def is_already_done(pdf_name: str) -> bool:
+        if pdf_name in manifest_data:
+            dest = output_folder / manifest_data[pdf_name]
+            if dest.exists() and dest.stat().st_size > 50:
+                return True
         norm_pdf = pdf_name.lower().replace("-", "_")
-        # Match year and month if present (e.g. 2019_05, 2019_11, 2023_05, 2023_07)
+        stem_pdf = Path(pdf_name).stem.lower().replace("-", "_")
+        for ex in existing_stems:
+            if ex == stem_pdf:
+                return True
         ym_match = re.search(r'(\d{4}_\d{2})', norm_pdf)
         if ym_match:
             ym = ym_match.group(1)
+            set_match = re.search(r'set_?([a-z0-9]+)', norm_pdf)
             for ex in existing_stems:
                 if ym in ex:
-                    return True
-        # Exact stem check
+                    if set_match:
+                        s = set_match.group(1)
+                        if f"set{s}" in ex or f"set_{s}" in ex:
+                            return True
+                    else:
+                        ex_set = re.search(r'set_?([a-z0-9]+)', ex)
+                        if not ex_set:
+                            return True
         for ex in existing_stems:
             if ex in norm_pdf or norm_pdf.replace(".pdf", "") in ex:
                 return True
@@ -289,9 +382,9 @@ def main():
         else:
             tasks_to_run.append((pdf_file, idx))
 
-    log(f"[*] Starting {len(tasks_to_run)} remaining task(s) across {args.workers} worker threads...\n")
+    log(f"[*] Starting {len(tasks_to_run)} remaining task(s) across {workers} worker threads...\n")
 
-    with ThreadPoolExecutor(max_workers=args.workers) as executor:
+    with ThreadPoolExecutor(max_workers=workers) as executor:
         futures = {
             executor.submit(
                 process_single_pdf,
@@ -299,8 +392,10 @@ def main():
                 output_folder,
                 args.model,
                 syllabus_text,
+                key_pool,
                 idx,
-                total_count
+                total_count,
+                args.use_original_names
             ): pdf_path
             for pdf_path, idx in tasks_to_run
         }

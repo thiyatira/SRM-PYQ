@@ -1,0 +1,191 @@
+{
+    "formal_filename": "CT-1_Set-A_2023-08-18.json",
+    "paper_title": "SRM Institute of Science and Technology, College of Engineering and Technology, School of Computing. CLAT-1, Course Code & Title: 21CSS201T COA, Academic Year: 2023-24 (ODD), Year & Sem: II & III, SET A",
+    "source": "2023-08-18 CT1 Set A",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "Convert the given decimal number 245 to hexadecimal\n\na) (OxF5)16\nb) (OxE5)16\nc) (OxFF)16\nd) (Ox2F)16",
+            "marks": 1,
+            "answer": "a) (OxF5)16\n\nRationale:\nTo convert decimal 245 to hexadecimal:\n$$245 / 16 = 15 \\text{ remainder } 5$$\nSince 15 is represented as 'F' in hexadecimal, the value is $F5_{16}$ (often written with prefix as 0xF5).",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "2",
+            "question_text": "Which type of computer is typically used by large organizations for data processing, business applications, and centralized computing? \n\na) Minicomputer \nb) Personal Computer \nc) Mainframe Computer\nd) Tablet Computer",
+            "marks": 1,
+            "answer": "c) Mainframe Computer\n\nRationale:\nMainframe computers are designed to handle large-scale database operations, high-throughput transactions, and centralized enterprise computing tasks common in large organizations.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "3",
+            "question_text": "Convert the excess-3 code 0110 to Gray code. \n\na) 0011 \nb) 0101 \nc) 1101 \nd) 1011",
+            "marks": 1,
+            "answer": "b) 0101\n\nRationale:\nIf we perform a direct binary-to-Gray conversion on the bit representation `0110`:\n- $G_3 = B_3 = 0$\n- $G_2 = B_3 \\oplus B_2 = 0 \\oplus 1 = 1$\n- $G_1 = B_2 \\oplus B_1 = 1 \\oplus 1 = 0$\n- $G_0 = B_1 \\oplus B_0 = 1 \\oplus 0 = 1$\nThis yields `0101`.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "4",
+            "question_text": "Which of the following is true about the 2's complement representation? \n\na) The leftmost bit is the sign bit. \nb) Positive numbers are represented by a leading 0. \nc) Negative numbers are represented by a leading 1. \nd) Positive numbers have a negative counterpart. 0101.",
+            "marks": 1,
+            "answer": "c) Negative numbers are represented by a leading 1.\n\nRationale:\nIn signed 2's complement representation, a leading MSB (most significant bit / leftmost bit) of 1 indicates a negative number, and 0 indicates a positive number.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "5",
+            "question_text": "Which logic gate produces an output of 0 only when all of its inputs are 1? \n\na) AND gate\nb) OR gate\nc) NAND gate\nd) NOR gate",
+            "marks": 1,
+            "answer": "c) NAND gate\n\nRationale:\nA NAND gate produces a high output (1) for all combinations except when all inputs are high (1), in which case it produces a low output (0).",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "6",
+            "question_text": "Which integer representation is commonly used in digital computers for arithmetic operations? \n\na) Roman numeral \nb) Binary-coded decimal (BCD) \nc) Excess-3 \nd) Two's complement",
+            "marks": 1,
+            "answer": "d) Two's complement\n\nRationale:\nTwo's complement simplifies digital hardware designs for ALU addition and subtraction processes, eliminating the need to handle sign bits separately during calculation.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "7",
+            "question_text": "How are negative numbers represented in sign-magnitude? \n\na) By setting all bits to 1 \nb) By setting the sign bit to 1 and the magnitude bits to the binary representation of the absolute value \nc) By setting the sign bit to 0 and the magnitude bits to the binary representation of the absolute value \nd) By setting the sign bit to 1 and the magnitude bits to the one's complement of the absolute value",
+            "marks": 1,
+            "answer": "b) By setting the sign bit to 1 and the magnitude bits to the binary representation of the absolute value\n\nRationale:\nIn sign-magnitude, the most significant bit (MSB) acts as the sign flag (1 for negative, 0 for positive), while the remaining bits carry the absolute value in plain binary.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "8",
+            "question_text": "In BCD addition, if the sum of two BCD digits is greater than 9, what additional step is necessary? \n\na) Subtract 10 \nb) Carry over to the next digit \nc) Convert to binary \nd) Round up",
+            "marks": 1,
+            "answer": "b) Carry over to the next digit\n\nRationale:\nWhen a BCD addition result exceeds 9, a binary correction factor of 6 ($0110_2$) is added. This forces an overflow carry-over to the next higher BCD digit position.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "9",
+            "question_text": "What is the minimum number of bits required to address 1024 distinct memory locations? \n\na) 6 bits \nb) 10 bits \nc) 16 bits \nd) 32 bits",
+            "marks": 1,
+            "answer": "b) 10 bits\n\nRationale:\nSince $2^{10} = 1024$, 10 bits are required to uniquely reference 1024 individual memory locations.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "10",
+            "question_text": "In a little-endian memory system, where is the least significant byte (LSB) of a multi-byte data stored? \n\na) At the highest memory address \nb) At the lowest memory address \nc) In the middle of the memory \nd) In a separate memory location",
+            "marks": 1,
+            "answer": "b) At the lowest memory address\n\nRationale:\nLittle-endian architectures store the least significant byte (LSB) first, which corresponds to the lowest numerical memory address assigned to that data structure.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "11",
+            "question_text": "signed number subtraction using two's complement representation. \n\nExample 1: \nSubtract: 6 - 3 \n\nStep 1: Convert both numbers to binary (using 4-bit representation): \n6 = 0110 \n3 = 0011 \n\nStep 2: Find the two's complement of the second number (subtrahend): \n1's complement of 0011 = 1100 \nAdd 1 to get the two's complement: 1100 + 1 = 1101 \n\nStep 3: Add the first number (minuend) and the negative of the second number (two's complement of subtrahend): \n0110 + \n1101\n\nSubtract: -8 - (-3)\n\nStep 1: Convert both numbers to binary (using 4-bit representation): \n-8 = 1000 (2's complement form) \n-3 = 1101 (2's complement form) \n\nStep 2: Add the two numbers (remember, subtracting a negative is equivalent to adding a positive): \n1000 + \n1101\n\n1 0101 \n\nDiscard the carry, and the result is 0101. \n\nStep 3: Convert the binary result back to decimal: \n0101 = 5 \n\nSo, -8 - (-3) = 5. \n\nExample 2: \nSubtract: 9 - (-6)\n\nStep 1: Convert both numbers to binary (using 4-bit representation): \n9 = 1001 \n-6 = 1010 (2's complement form) \n\nStep 2: Add the two numbers (subtracting a negative is like adding a positive): \n1001 + \n1010\n\n1 0011 \n\nDiscard the carry, and the result is 0011. \n\nStep 3: Convert the binary result back to decimal: \n0011 = 3 \n\nSo, 9 - (-6) = 3. \n\nExample 3: \nSubtract: -15 - 3 \n\nStep 1: Convert both numbers to binary (using 5-bit representation): \n-15 = 10001 (2's complement form) \n3 = 00011\n\nStep 2: Add the two numbers (subtracting a positive is like adding a negative): \n10001 + \n00011\n\n1 01000 \n\nDiscard the carry, and the result is 01000. \n\nStep 3: Convert the binary result back to decimal: \n01000 = 8 \n\nSo, -15 - 3 = -8.",
+            "marks": 4,
+            "answer": "This is a set of examples provided in the question paper demonstrating 2's complement subtraction. Note that some equations in the question paper text contain mathematical overflow and sign evaluation mistakes (e.g. $-8 - (-3)$ evaluated as 5, and $9 - (-6)$ evaluated as 3), but the textual binary step-by-step calculations have been preserved exactly as written in the original exam booklet.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "12",
+            "question_text": "Draw the circuit diagram for the following logic expression AB + BC(B + C)",
+            "marks": 4,
+            "answer": "The logic circuit is drawn using input variables $A$, $B$, and $C$:\n1. Construct a 2-input AND gate to get $AB$.\n2. Construct a 2-input OR gate to get $(B + C)$.\n3. Multiply the OR gate output with $B$ and $C$ using an AND configuration to obtain $BC(B+C)$.\n4. Add both terms using an OR gate to find the final output: $Q = AB + BC(B+C)$.\n\n*Note on simplification*: \n$$BC(B+C) = BCB + BCC = BC + BC = BC$$\nThus, the expression simplifies directly to $AB + BC = B(A + C)$.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "13",
+            "question_text": "Convert the BCD number 725 to Gray code. \n\nStep 1: Convert BCD to binary: \n7 -> 0111 \n2 -> 0010 \n5 -> 0101 \n\nStep 2: Generate Gray code for each binary digit: \nFor 7 (0111), Gray code = 0111 (same as binary). \nFor 2 (0010), Gray code = XOR(0, 0) XOR(0, 1) XOR(1, 0) XOR(0, 0) = 0011. \nFor 5 (0101), Gray code = XOR(0, 1) XOR(1, 0) XOR(0, 1) XOR(1, 0) = 1110. \n\nSo, the Gray code representation for the BCD number 725 is 0111 0011 1110.",
+            "marks": 4,
+            "answer": "The question booklet provides the full solution:\n1. Split 725 into individual BCD digits: $7 \\rightarrow 0111$, $2 \\rightarrow 0010$, $5 \\rightarrow 0101$.\n2. Convert each 4-bit group to Gray code individually:\n   - 7 (0111) is mapped to 0111.\n   - 2 (0010) is mapped to 0011.\n   - 5 (0101) is mapped to 1110.\n3. The combined representation is: **0111 0011 1110**.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "14",
+            "question_text": "Convert decimal (42)10 to Excess-3. \n\nExcess-3 representation is a binary-coded decimal (BCD) variant in which each decimal digit is represented by its corresponding 4-bit binary value plus 0011 (decimal 3). To convert a decimal number to Excess-3, follow these steps: \nConvert the decimal number to its BCD representation. \nAdd 3 (0011 in binary) to each BCD digit. \nLet's convert the decimal number 42 to Excess-3:\nStep 1: Convert decimal 42 to BCD: \n4 -> 0100 \n2 -> 0010 \nStep 2: Add 3 (0011) to each BCD digit: \nFor 4 (0100), Excess-3 = 0100 + 0011 = 0111 \nFor 2 (0010), Excess-3 = 0010 + 0011 = 0101 \n\nSo, the Excess-3 representation of decimal 42 is 0111 0101.",
+            "marks": 4,
+            "answer": "The step-by-step conversion is directly provided in the text:\n1. Convert digits of 42 to 4-bit BCD: $4 \\rightarrow 0100$ and $2 \\rightarrow 0010$.\n2. Add $3$ ($0011$) to each group:\n   - $0100 + 0011 = 0111$\n   - $0010 + 0011 = 0101$\n3. Concatenate the results: **0111 0101**.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "15",
+            "question_text": "Write in detail about the Bus structure in COA \n\nBuses play a crucial role in enabling data, control signals, and addresses to flow between the central processing unit (CPU), memory, input/output devices, and other system components. The concept of bus structure is a fundamental aspect of computer organization and architecture (COA). Let's delve deeper into the types and functions of buses within a computer system:\n\nData Bus:\nThe data bus is responsible for carrying data between the CPU, memory, and I/O devices. It is bidirectional, allowing data to be read from memory or devices and written to them. The width of the data bus determines the number of bits that can be transferred simultaneously. Wider data buses result in higher data transfer rates.\n\nAddress Bus:\nThe address bus carries the memory address of the data being transferred. The CPU uses the address bus to specify the location in memory or an I/O device to read from or write to. The width of the address bus determines the maximum memory address that can be accessed, which directly affects the addressable memory space.\n\nControl Bus:\nThe control bus carries control signals that coordinate the activities of various components within the computer system. Control signals include read and write signals, interrupt requests, clock signals, and other signals that help manage data transfer and synchronization.",
+            "marks": 4,
+            "answer": "The provided text explains the primary components of computer system buses:\n- **Data Bus**: A bidirectional pathway for transmitting actual instruction/data payloads between processors, memory, and peripherals.\n- **Address Bus**: A unidirectional line set utilized by the CPU to point to the memory/I/O coordinates being targeted.\n- **Control Bus**: A set of signal lines managing orchestration, synchronization, read/write commands, clock cycles, and interrupt demands.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "20. a.",
+            "question_text": "Perform the following conversion\n(i) You are a computer systems engineer working on a project that involves converting numbers between different bases. One of your tasks is to convert the octal number (176.35)8 to its binary equivalent.\noctal number (176.35)_8 is equal to (001111110.011101)_2 in binary\n(ii) Perform the binary to decimal conversion for the given number, (1011100011001.01)₂. Describe the steps you take to convert the binary fractional part to its decimal equivalent, and explain how you combine the integer and fractional parts to obtain the final decimal result.\nbinary number (1011100011001.01)_2 is equal to 7018.25 in decimal.\n(iii) You are a systems hardware engineer working on a project that involves converting numbers between different bases. One of your tasks is to convert the decimal number (7892) 10 to hexadecimal equivalent.\ndecimal number 7892 is equal to 1E4 in hexadecimal.\niv) Perform BCD addition on the following numbers 652.21 and 345.12\nAns : 0110 0101 0010.0010 0001 \n0011 0100 0101.0001 0010",
+            "marks": 12,
+            "answer": "The provided answers for the conversions are:\n\n**(i) Octal to Binary:**\nConvert each octal digit to 3-bit binary:\n- $1 \\rightarrow 001$\n- $7 \\rightarrow 111$\n- $6 \\rightarrow 110$\n- $3 \\rightarrow 011$\n- $5 \\rightarrow 101$\nResult: $(176.35)_8 = (001111110.011101)_2$\n\n**(ii) Binary to Decimal:**\n- Integer part: $1011100011001_2 = 5913_{10}$ (Note: The paper lists \"7018.25\" as the final answer key value).\n- Fractional part: $.01_2 = 0 \\times 2^{-1} + 1 \\times 2^{-2} = 0.25_{10}$.\n\n**(iii) Decimal to Hexadecimal:**\n$7892_{10}$ converted to hex:\n- $7892 / 16 = 493 \\text{ remainder } 12 \\ (C)$\n- $493 / 16 = 30 \\text{ remainder } 13 \\ (D)$\n- $30 / 16 = 1 \\text{ remainder } 14 \\ (E)$\n- $1 / 16 = 0 \\text{ remainder } 1$\nResult: $1EDC_{16}$ (Note: The paper lists \"1E4\" as the final answer key value).\n\n**(iv) BCD Representation for Addition of 652.21 and 345.12:**\n- 652.21 BCD $\\rightarrow$ `0110 0101 0010 . 0010 0001`\n- 345.12 BCD $\\rightarrow$ `0011 0100 0101 . 0001 0010`",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "20. b. i.",
+            "question_text": "A student approaches you with a question about subtracting (-19) from (23) using two's complement notation. Explain the step-by-step process of performing this subtraction using the two's complement method. Show the necessary binary conversions, including finding the two's complement of the negative number, and then walk through the binary subtraction and any necessary carry operations. Finally, interpret the binary result back to decimal.\n\nConvert to Binary: Convert both numbers (-19 and 23) to their 2's complement binary representations. \n-19 in binary (8-bit representation): 11101101 \n23 in binary (8-bit representation): 00010111 \nFind 2's Complement of Subtrahend (23): \nInvert all the bits in the binary representation of 23: \n00010111 becomes 11101000 \nAdd 1 to the inverted value: \n11101000 + 1 = 11101001 \nPerform Addition: Now, add the 2's complement of 23 to -19. \n 11101101 (-19)\n+ 11101001 (2's complement of 23) \n--------\n 110101110 \nOverflow Check: Since we're using an 8-bit representation, the result should be interpreted as 101110. The most significant bit (MSB) is 1, indicating a negative value. \nConvert Back to Decimal: Convert the binary result 101110 back to decimal. \nInvert the bits and add 1: 010001 + 1 = 17 \nSince the MSB is 1, the result is -17.",
+            "marks": 4,
+            "answer": "This section shows the step-by-step subtraction of 23 from -19 (i.e. $-19 - 23$) using 2's complement arithmetic as given in the paper. \n\n*Note on original paper errors*: $-19 - 23 = -42$. The manual addition result in binary is `11101101` + `11101001` = `1 11010110` (discarding overflow carry = `11010110`). Converting `11010110` back to decimal yields $-42$. The booklet contains numerical errors in step results, such as reading it as `101110` and evaluating to `-17`.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "20. b. ii.",
+            "question_text": "Imagine you're designing a digital circuit that needs to multiply two binary numbers: 01101 and 11010. Perform the binary multiplication step by step, showing all intermediate products and the final result.",
+            "marks": 4,
+            "answer": "The text shows binary multiplication of $13_{10}$ by $21_{10}$ (using binary multiplier $10101_2$):\n```\n    01101  (13 in decimal) \n  × 10101  (21 in decimal) \n  ---------\n    01101  (Partial product, shifted 0 positions) \n    01101  (Partial product, shifted 2 positions) \n +  01101  (Partial product, shifted 4 positions) \n +  00000  (Partial product, shifted 6 positions) \n  ---------\n 11100101  (273 in decimal, which is correct as 13 * 21 = 273)\n```",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "20. b. iii.",
+            "question_text": "Using binary division, compute the quotient and remainder when dividing 01111100₂ by 0010₂. Begin by converting the numbers to binary representation and then demonstrate the step-by-step process of binary division. Highlight the key steps involved in each iteration of the division process, including how you determine the next quotient bit and how you adjust the remainder. Conclude by providing the final quotient and remainder in binary and decimal formats.",
+            "marks": 4,
+            "answer": "Dividing $01111100_2$ ($124_{10}$) by $0010_2$ ($2_{10}$):\n- Quotient: $00111110_2$ ($62_{10}$)\n- Remainder: $0000_2$ ($0_{10}$)\n\nThe process follows long division steps by comparing the divisor ($10_2$) to the sliding bits of the dividend, subtracting where possible, appending quotient bit 1, and shifting otherwise.",
+            "answer_source": "provided",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "21. a. i.",
+            "question_text": "Convert excess-3 1001 to binary. \n\nConvert each digit in the excess-3 code to its corresponding decimal value by subtracting 3: \n1 (excess-3) = 1 - 3 = -2 \n0 (excess-3) = 0 - 3 = -3 \n0 (excess-3) = 0 - 3 = -3 \n1 (excess-3) = 1 - 3 = -2\nConvert the resulting decimal values to their 4-bit binary representations: \n-2 in decimal = 1110 in binary (2's complement of 2) \n-3 in decimal = 1101 in binary (2's complement of 3) \nConcatenate the binary representations together to get the binary representation of the excess-3 code 1001: \n(1001)_excess-3 = (1110 1101)_binary \nSo, the excess-3 code 1001 is equal to (1110 1101)_binary in binary.",
+            "marks": 4,
+            "answer": "The text directly provides this worked-out step where subtraction of 3 is done digit-by-digit on the individual binary elements to find the 2's complement representations, resulting in **1110 1101**.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "21. a. ii.",
+            "question_text": "Convert decimal 0 to excess-3 code. \n\nAdd 3 to the decimal number: \n0 + 3 = 3 \nConvert the result (3) to its binary representation. Since it's a single-digit decimal, the Excess-3 code will be a 4-bit code: \n3 in binary: 0011 \nSo, the decimal number 0 is represented as 0011 in Excess-3 code.",
+            "marks": 4,
+            "answer": "The steps are:\n1. Add 3 to 0 $\\rightarrow 3$.\n2. Convert 3 to 4-bit binary $\\rightarrow$ **0011**.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "21. a. iii.",
+            "question_text": "Convert binary 1111 to excess-3 code\n\nAdd 3 to each decimal digit of the binary number: \n1 + 3 = 4 \n1 + 3 = 4 \n1 + 3 = 4 \n1 + 3 = 4 \nConvert the resulting decimal digits to their 4-bit binary representations: \n4 in decimal = 0100 in binary \n4 in decimal = 0100 in binary \n4 in decimal = 0100 in binary \n4 in decimal = 0100 in binary \nConcatenate the binary representations together to get the excess-3 code: \n(1111)_binary = (0100 0100 0100 0100)_excess-3 \nSo, the binary number 1111 is equal to (0100 0100 0100 0100)_excess-3 in excess-3 code.",
+            "marks": 4,
+            "answer": "The steps are:\n1. Add 3 to each bit treated as a decimal digit ($1+3 = 4$).\n2. Represent each 4 in 4-bit binary: $0100$.\n3. Concatenate to get: **0100 0100 0100 0100**.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "21. b.",
+            "question_text": "Describe how the different functional units of the CPUs collaborate to execute this simulation effectively. Explain the roles of the integer unit, floating-point unit, memory unit, and control unit in processing the simulation's computational and memory-intensive tasks.",
+            "marks": 12,
+            "answer": "The CPU's primary functional units collaborate as follows:\n- **Input Unit**: Responsible for fetching, decoding, and parsing initial program input and parameter configurations into internal CPU-compatible binary data.\n- **Output Unit**: Once simulation loops are finalized, formats calculations into structured output records for memory storage or visualization screens.\n- **Memory Unit**: Manages the cache hierarchy and main memory systems to ensure quick delivery of stored simulation parameters and intermediate states to internal registers.\n- **Control Unit**: Serves as the primary driver. It orchestrates the entire process by decoding program code and directing data path steps for execution blocks.\n- **Integer and Floating-Point Units (ALU/FPU)**: Handle mathematical calculations. The integer unit performs arithmetic loop counting, while the FPU executes high-precision fractional computations required by physics simulations.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        }
+    ]
+}
