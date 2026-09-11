@@ -1,0 +1,159 @@
+{
+    "formal_filename": "CT-1_Set-D_2023-08-18.json",
+    "paper_title": "SRM Institute of Science and Technology, College of Engineering and Technology, School of Computing. Academic Year: 2023-24 (ODD). Test: CLAT-1, Course Code & Title: 21CSS201T COA, Year & Sem: II & III, SET D",
+    "source": "2023-08-18 CLAT-1 Set D",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "Which of the following is true about Computer Architecture?\na) It acts as the interface between hardware and software.\nb) Computer Architecture tells us how exactly all the units in the system are arranged and interconnected.\nc) Computer Architecture is concerned with the structure and behaviour of a computer system as seen by the user.\nd) It involves Physical Components",
+            "marks": 1,
+            "answer": "a) It acts as the interface between hardware and software.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "2",
+            "question_text": "Which among the following is a type of architecture used in the computers nowadays?\na) Microarchitecture\nb) Harvard Architecture\nc) Von-Neumann Architecture\nd) System Design",
+            "marks": 1,
+            "answer": "c) Von-Neumann Architecture",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "3",
+            "question_text": "In which of the following form the computer stores its data in memory?\na) Hexadecimal form\nb) Octal form\nc) Binary form\nd) Decimal form",
+            "marks": 1,
+            "answer": "c) Binary form",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "4",
+            "question_text": "The two’s complement in binary system is useful for expressing\n(A) Decimal numbers\n(B) Positive numbers\n(C) Negative numbers\n(D) Binary numbers",
+            "marks": 1,
+            "answer": "(C) Negative numbers",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "5",
+            "question_text": "The parity bit is added for the purpose of ___________?\n(A) Control key\n(B) Error detection\n(C) Indexing\n(D) Coding",
+            "marks": 1,
+            "answer": "(B) Error detection",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "6",
+            "question_text": "Gray codes are used for?\na) To count the no of bits changes\nb) To rotate a shaft\nc) Error correction\nd) Error Detection",
+            "marks": 1,
+            "answer": "c) Error correction",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "7",
+            "question_text": "ASCII codes are required for representing more than ___\ncharacters.\na) 16\nb) 8\nc) 32\nd) 64",
+            "marks": 1,
+            "answer": "d) 64",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "8",
+            "question_text": "Which of the following building block can be used to implement any combinational logic circuit?\na) AND\nb) OR\nc) NAND\nd) XOR",
+            "marks": 1,
+            "answer": "c) NAND",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "9",
+            "question_text": "_______ points to the next instructions that are to be fetched from memory.\na) Instruction register\nb) Program counter\nc) Memory Address Register\nd) Memory Data Register",
+            "marks": 1,
+            "answer": "b) Program counter",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "10",
+            "question_text": "Consider a CPU that has 64- bit, the address of the contents are 1000, 1008, 1016, 1024. Now MAR is holding an address is 1008 to fetch the content from the memory. Analyze the operation and select the following address of the content which is held by the Program Counter (PC).\na) 1000\nb) 1008\nc) 1016\nd) 1024",
+            "marks": 1,
+            "answer": "c) 1016",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "16",
+            "question_text": "Imagine you're participating in a coding competition, and one of the challenges involves working with binary and gray codes. In a particular round, you're given the binary code 100110 and asked to calculate its corresponding gray code. Can you perform the necessary steps to convert this binary code into a gray code?",
+            "marks": 4,
+            "answer": "Binary Code: $100110$\n\nSteps for Binary to Gray conversion:\n1. Keep the MSB (Most Significant Bit) as is: $G_5 = B_5 = 1$.\n2. Perform XOR on adjacent bits:\n- $G_4 = B_5 \\oplus B_4 = 1 \\oplus 0 = 1$\n- $G_3 = B_4 \\oplus B_3 = 0 \\oplus 0 = 0$\n- $G_2 = B_3 \\oplus B_2 = 0 \\oplus 1 = 1$\n- $G_1 = B_2 \\oplus B_1 = 1 \\oplus 1 = 0$\n- $G_0 = B_1 \\oplus B_0 = 1 \\oplus 0 = 1$\n\nCorresponding Gray Code is: $110101$",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "17",
+            "question_text": "Convert $(6AF)_{16}$ to binary and decimal.",
+            "marks": 4,
+            "answer": "1. Conversion to Binary:\n$6 \\rightarrow 0110$\n$A \\rightarrow 1010$\n$F \\rightarrow 1111$\nSo, $(6AF)_{16} = (011010101111)_2$\n\n2. Conversion to Decimal:\n$(6AF)_{16} = 6 \\times 16^2 + 10 \\times 16^1 + 15 \\times 16^0$\n$= 6 \\times 256 + 160 + 15$\n$= 1536 + 160 + 15$\n$= (1711)_{10}$",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "18",
+            "question_text": "Add the numbers 984.6 and 588.3 using BCD Addition method.",
+            "marks": 4,
+            "answer": "Step 1: Write down BCD codes of the numbers:\n- BCD code for 984.6: $1001\\quad 1000\\quad 0100\\quad .\\quad 0110$\n- BCD code for 588.3: $0101\\quad 1000\\quad 1000\\quad .\\quad 0011$\n\nStep 2: Basic Binary Addition of the digits:\n```\n  Carry:        1     1\n  984.6:      1001  1000  0100  .  0110\n+ 588.3:      0101  1000  1000  .  0011\n---------------------------------------\n  Addition:   1111  0000  1100  .  1001\n```\n\nStep 3: Correcting invalid BCD digit groups (greater than 9 or with carry output):\n- $1001$ ($9$) is valid.\n- $1100$ ($12$) is invalid. Add $0110$.\n- $0000$ (with carry 1, effectively $10000$ or $16$) is invalid. Add $0110$.\n- $1111$ ($15$) is invalid. Add $0110$.\n\nPerforming addition of $0110$ to the invalid terms:\n```\n  Addition:   1111  0000  1100  .  1001\n+ Cor. (6):   0110  0110  0110\n---------------------------------------\n              0101  0111  0010  .  1001\n  with final carry of 1 to the left:  0001\n```\nSo, the result is: $0001\\quad 0101\\quad 0111\\quad 0010\\quad .\\quad 1001$\nFinal answer in BCD = $(1572.9)_{BCD}$",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "19",
+            "question_text": "Imagine you're a computer science professor teaching memory addressing techniques. Covering byte address assignment, you use visuals to explain different approaches. Illustrate and explain these approaches with diagrams, aiding students' understanding of memory organization.",
+            "marks": 4,
+            "answer": "There are two main byte-ordering methods for storing multi-byte data in memory:\n\n1. **Little-Endian**:\nIn little-endian byte order, the least significant byte (LSB) is stored at the lowest memory address, while the most significant byte (MSB) is stored at the highest memory address.\n*Example:* For data (4 bytes) `0x12345678`:\n- Memory Address 0: `0x78` (LSB)\n- Memory Address 1: `0x56`\n- Memory Address 2: `0x34`\n- Memory Address 3: `0x12` (MSB)\n\n2. **Big-Endian**:\nIn big-endian byte order, the most significant byte (MSB) is stored at the lowest memory address, while the least significant byte (LSB) is stored at the highest memory address.\n*Example:* For data (4 bytes) `0x12345678`:\n- Memory Address 0: `0x12` (MSB)\n- Memory Address 1: `0x34`\n- Memory Address 2: `0x56`\n- Memory Address 3: `0x78` (LSB)",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "20",
+            "question_text": "Which part of the functional unit of the computer is known as “Brain”? Justify your answer",
+            "marks": 4,
+            "answer": "The Central Processing Unit (CPU) is often referred to as the \"Brain\" of the computer. \n\n**Justification:**\n- **Executing Instructions:** It fetches, decodes, and executes program instructions.\n- **Performing Calculations:** Its internal Arithmetic Logic Unit (ALU) performs all arithmetic operations (addition, subtraction, etc.) and logic operations.\n- **Decision-Making and Flow Control:** The Control Unit (CU) coordinates data flow, manages timings, controls memory access, and communicates with peripheral inputs/outputs.\n- **Central Coordination:** Like the human brain, it functions as the central hub of decision-making, control, and coordination of all system hardware components.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "21 a)",
+            "question_text": "Convert the following.\ni) Convert Hexadecimal (A4B.59E) to the decimal form. (3)\nii) Convert Excess-3 (011110100110) to binary. (3)\niii) Convert decimal (325.56)10 to Excess-3. (3)\niv) Convert octal number 292.863 into binary number. (3)",
+            "marks": 12,
+            "answer": "i) **Hexadecimal (A4B.59E) to Decimal**:\n- Integer part: $(A4B)_{16} = 10 \\times 16^2 + 4 \\times 16^1 + 11 \\times 16^0 = 2560 + 64 + 11 = 2635_{10}$.\n- Fractional part: $(.59E)_{16} = 5 \\times 16^{-1} + 9 \\times 16^{-2} + 14 \\times 16^{-3} = 5/16 + 9/256 + 14/4096 \\approx 0.3125 + 0.03515625 + 0.00341796875 \\approx 0.35107421875_{10}$.\n- Combined: approximately $2635.3515625$ (or $2635.351074$ depending on precision).\n\nii) **Excess-3 (011110100110) to Binary**:\n- Group as 4-bit Excess-3 digits: $0111 \\quad 1010 \\quad 0110$\n- Subtract 3 ($0011$) from each group:\n  - $0111 - 0011 = 0100$ ($4$)\n  - $1010 - 0011 = 0111$ ($7$)\n  - $0110 - 0011 = 0011$ ($3$)\n- Decimal represented: $473_{10}$\n- Convert $473_{10}$ to Binary:\n  - $473 = 256 + 128 + 64 + 16 + 8 + 1 \\rightarrow (111011001)_2$.\n  - Or directly converting the raw BCD digits ($0100\\ 0111\\ 0011$) to pure binary: $(111011001)_2$.\n  - *Note:* The provided key gives $(110011011011)_2$ which represents the binary encoding of Excess-3 value directly modified.\n\niii) **Decimal (325.56)10 to Excess-3**:\n- Convert each decimal digit by adding 3 and converting to 4-bit binary:\n  - For $3$: $3+3 = 6 \\rightarrow 0110$\n  - For $2$: $2+3 = 5 \\rightarrow 0101$\n  - For $5$: $5+3 = 8 \\rightarrow 1000$\n  - For $.5$: $5+3 = 8 \\rightarrow 1000$\n  - For $6$: $6+3 = 9 \\rightarrow 1001$\n- Excess-3 representation: $(011001011000.10001001)_{XS-3}$.\n- *Note on Key version:* The key provided $(01000011001000110011)_{XS-3}$ is used as standard for the whole sequence.\n\niv) **Octal number 292.863 into binary**:\n- Octal numbers cannot contain the digit '9'. Thus, '292.863' is an invalid octal input. \n- Provided Key specifies: \"Kindly award marks for this question alone if student attempted (3 marks).\" Key representation value: $(0101001010.1000110011)_2$.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "21 b)",
+            "question_text": "i) Mention the two ways of representing signed numbers. Explain the 1’s and 2’s complement method of binary subtraction with appropriate examples. (6)\nii) Explain about BCD subtraction depicting both BORROW and NO BORROW condition. (6)",
+            "marks": 12,
+            "answer": "i) **Signed Number Representations**:\nTwo common representations are Sign-Magnitude, 1's Complement, and 2's Complement.\n\n**Binary Subtraction using 1's Complement**:\n- Steps:\n  1. Obtain the 1's complement of the subtrahend.\n  2. Add it to the minuend.\n  3. If there is a carry out of the MSB, add this carry to the LSD (end-around carry). The result is positive.\n  4. If there is no carry, the result is negative; take the 1's complement of the sum and attach a negative sign.\n\n**Binary Subtraction using 2's Complement**:\n- Steps:\n  1. Obtain the 2's complement of the subtrahend.\n  2. Add it to the minuend.\n  3. If there is a carry, ignore it (the result is positive).\n  4. If there is no carry, the result is negative; take the 2's complement of the sum and attach a negative sign.\n\nii) **BCD Subtraction (Borrow and No Borrow)**:\nIn BCD subtraction, if a group requires a borrow from the next higher digit, we must subtract $0110$ ($6$) from the group that received/propagated the borrow to correct the BCD code representation.\n- **No Borrow Condition**: Straightforward column subtraction where each digit difference is $\\ge 0$ and fits within 4-bit standard BCD range.\n- **Borrow Condition**: When a digit requires a borrow from its neighbor, a $0110$ correction must be subtracted to bring the binary result back to BCD standard.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "22 a)",
+            "question_text": "i) Imagine you are a computer systems architect working on designing a new computer system. Your team is discussing the architecture's components and their functions. Your colleague asks you to explain the practical applications of a bus structure in computer systems. Could you also outline the various types of bus structures and provide a visual representation of each type using diagrams? (8)\nii) Write the boolean expression for the output variable Q. (4)",
+            "marks": 12,
+            "answer": "i) **Bus Structure**:\nA Bus is a collection of wires connecting multiple components/devices to allow transmission of data, addresses, and control signals.\n- **Address Bus**: Unidirectional. Carries location addresses from the processor to peripheral devices/memory.\n- **Data Bus**: Bidirectional. Carries actual data information to/from processor and memory/peripherals.\n- **Control Bus**: Bidirectional. Carries control/timing signals between processor and other systems.\n- **Types of Bus Structures**:\n  1. *Single Bus* (All units connect to a shared single bus structure).\n  2. *Two-Bus Structure* (Separates memory/IO traffic into high speed and system bus).\n  3. *Multi-Bus Structure* (Features dedicated buses for CPU-memory, PCI/peripherals, etc.).\n\nii) **Boolean Expression for Q**:\nLooking at the logic gate diagram on Page 7:\n- Top AND gate inputs: $A, B, C \\rightarrow A \\cdot B \\cdot C$\n- Bottom NOT gates and logic path:\n  - $B \\rightarrow B'$\n  - $C \\rightarrow C'$\n  - OR gate: $B' + C'$\n  - AND gate with input $A$: $A \\cdot (B' + C')$\n- Output OR gate combines the two paths:\n$$Q = A \\cdot B \\cdot C + A \\cdot (B' + C')$$",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "22 b)",
+            "question_text": "i) Imagine you are a computer architecture instructor and you're teaching a group of students about the fundamental concept of the instruction fetch technique in a processor. To help them grasp the process better, you decide to provide a clear visual representation. Could you illustrate the step-by-step process of the instruction fetch technique using a well-labeled diagram? (6)\nii) Imagine you are a computer hardware instructor, and you're leading a workshop on computer architecture for a group of enthusiastic students. To help them grasp the concept of how the processor communicates with memory in a computer system, you decide to provide a hands-on explanation. Could you sketch a diagram that illustrates the connections between the processor and memory components? Additionally, explain how data and instructions flow between these two vital components, highlighting the significance of this interaction in the overall functioning of a computer. (6)",
+            "marks": 12,
+            "answer": "i) **Instruction Fetch - Steps Involved**:\n1. Program instructions reside in the memory.\n2. Program execution begins by setting the Program Counter (PC) to point to the first instruction.\n3. The contents of the PC are transferred to the Memory Address Register (MAR), and a 'Read' control signal is sent to the memory.\n4. The instruction word located at that memory address is read out and loaded into the Memory Data Register (MDR).\n5. The contents of the MDR are transferred to the Instruction Register (IR) for decoding.\n6. The PC is incremented to point to the next instruction in memory.\n\nii) **Processor-Memory Interaction & Data Flow**:\n- **MAR (Memory Address Register)**: Holds the address of the memory location currently being read/written.\n- **MDR (Memory Data Register)**: Holds the data being transferred to or from the addressed memory location.\n- **IR (Instruction Register)**: Holds the instruction currently being decoded and executed.\n- **PC (Program Counter)**: Contains the memory address of the next instruction to fetch.\n- **Flow of Data & Instructions**:\n  - Instructions are fetched from memory based on PC address via MAR and MDR into the IR inside the Control Unit.\n  - Data operands required for executing instructions are loaded from memory addresses via MAR and MDR into general-purpose registers / ALU, and computed results are written back to memory in a similar sequence.\n- **Significance**:\n  - This communication loop (Fetch-Decode-Execute) is fundamental to CPU operation; without it, programs cannot be parsed or executed, and computational results cannot be saved.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        }
+    ]
+}

@@ -1,0 +1,159 @@
+{
+    "formal_filename": "CT-3_Set-D_2023-11-08.json",
+    "paper_title": "SRM Institute of Science and Technology, Department of Computing Technologies, Academic Year: 2023-24 (ODD), CLAT3, 21CSS201T / COA, Set D",
+    "source": "2023-11-08 CT3 Set D",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "A word whose individual bits represent a control signal is ______\na) Command word\nb) Control word\nc) Control status\nd) Generation word",
+            "marks": 1,
+            "answer": "b) Control word\n\n**Rationale:** Individual control signals are represented as bits within a control word in microprogrammed control units.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "2",
+            "question_text": "Which of the following statement is true with respect to the function of WMFC signal?\na. Used to make processor wait for the reply from memory\nb. Execution of memory instructions\nc. Idle state of memory\nd. No operation",
+            "marks": 1,
+            "answer": "a. Used to make processor wait for the reply from memory\n\n**Rationale:** WMFC stands for Wait for Memory Function Completed. It is used to stall the processor until the memory operation completes and the memory sends back the MFC (Memory Function Completed) signal.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "3",
+            "question_text": "Individual control words of micro routine are called as ______.\na. Micro task\nb. Micro operations\nc. Micro instruction\nd. Micro commands",
+            "marks": 1,
+            "answer": "c. Micro instruction\n\n**Rationale:** Each line or control word in a microprogram (microroutine) is called a microinstruction.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "4",
+            "question_text": "Let there be two instructions I1 and I2 such that:\nI1 : ADD R1, R2, R3 \nI2 : MUL R4, R1, R2 \nIdentify the type of hazard which occurs in the above instruction\nA. Structural hazard\nB. Data hazard\nC. Control hazard\nD. Instructional hazard",
+            "marks": 1,
+            "answer": "B. Data hazard\n\n**Rationale:** The instruction I2 reads R1, which is the destination register written by I1. This creates a Read-After-Write (RAW) data dependency, resulting in a data hazard.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "5",
+            "question_text": "A technique which is used to minimize the penalty caused by conditional branch is __________\nA. Delayed branching\nB. Branch penalty\nC. Delay\nD. Prediction",
+            "marks": 1,
+            "answer": "A. Delayed branching\n\n**Rationale:** Delayed branching is a common software/hardware optimization technique to minimize the branch penalty by executing instructions in the branch delay slots.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "6",
+            "question_text": "Which of the following is NOT a common challenge in parallel computing?\nA. Load balancing\nB. Scalability\nC. Sequential execution\nD. Data consistency",
+            "marks": 1,
+            "answer": "C. Sequential execution\n\n**Rationale:** Sequential execution is a characteristic of traditional single-threaded computing, whereas load balancing, scalability, and data consistency are major challenges when designing and optimizing parallel computing systems.",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "7",
+            "question_text": "Which type of architecture is often used in vector processors, where operations are performed in parallel on elements of arrays or vectors?\nA. SISD\nB. SIMD\nC. MIMD\nD. MISD",
+            "marks": 1,
+            "answer": "B. SIMD\n\n**Rationale:** SIMD (Single Instruction, Multiple Data) executes a single instruction across multiple data elements concurrently, which is the exact mode of operation for vector processors.",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "8",
+            "question_text": "In ARM assembly language, what instruction is used for storing data from a register into memory?\nA. LDR\nB. STR\nC. MOV\nD. ADD",
+            "marks": 1,
+            "answer": "B. STR\n\n**Rationale:** In ARM, `STR` (Store Register) is used to write data from a register into memory, whereas `LDR` (Load Register) is used to read data from memory into a register.",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "9",
+            "question_text": "Which ARM architecture is commonly used in embedded systems, such as microcontrollers and IoT devices?\na. ARM5\nb. ARM6\nc. ARM7\nd. ARM Cortex-M",
+            "marks": 1,
+            "answer": "d. ARM Cortex-M\n\n**Rationale:** The ARM Cortex-M family is highly optimized for resource-constrained microcontrollers and IoT devices.",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "10",
+            "question_text": "In the MIPS32 pipeline, which of the following scenarios of data dependency will always result in a pipeline stall due to data hazard without any instruction scheduling?\n(a) An ADD instruction followed by a SUB instruction.\n(b) A STORE instruction followed by a LOAD instruction\n(c) A LOAD instruction followed by an ADD instruction.\n(d) None of the above.",
+            "marks": 1,
+            "answer": "(c) A LOAD instruction followed by an ADD instruction.\n\n**Rationale:** In standard MIPS32 pipeline with forwarding, data hazards are resolved without stalls for ALU-to-ALU dependencies. However, a load-use hazard (LOAD followed by an instruction that uses the loaded data immediately, such as ADD) cannot be completely resolved by forwarding alone and always requires a one-cycle pipeline stall if no instruction scheduling is done.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "11",
+            "question_text": "Draw the generation of Zin control signals for a single bus structure.\n* $Z_{IN} = T1 + T6 \\cdot \\text{ADD} + T4 \\cdot \\text{Br} + \\dots$",
+            "marks": 4,
+            "answer": "To generate the control signal $Z_{IN}$ based on the given logic expression:\n$$Z_{IN} = T1 + T6 \\cdot \\text{ADD} + T4 \\cdot \\text{Br} + \\dots$$\n\nWe use basic logic gates (AND gates and an OR gate):\n1. An AND gate combining $T6$ and the control signal $\\text{ADD}$ to generate $T6 \\cdot \\text{ADD}$.\n2. An AND gate combining $T4$ and the branch instruction signal $\\text{Br}$ to generate $T4 \\cdot \\text{Br}$.\n3. An OR gate with inputs: $T1$, the output of the first AND gate ($T6 \\cdot \\text{ADD}$), the output of the second AND gate ($T4 \\cdot \\text{Br}$), and any other signals that trigger $Z_{IN}$.\n\nHere is a conceptual representation of the circuit:\n```\nT1 ---------------------------\\ \n                               |----\nT6 ---------\\                  |    |  \n             [AND]---- T6.ADD -|[OR]|----> Z_IN\nADD --------/                  |    |  \n                               |----\nT4 ---------\\                  | \n             [AND]---- T4.Br --/\nBr ---------/\n```",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "12",
+            "question_text": "Outline the limitations of Instruction Level Parallelism?",
+            "marks": 4,
+            "answer": "The limitations of Instruction Level Parallelism (ILP) include:\n1. **Dependency Chains (Data Dependencies):** Hard limits are imposed by true data dependencies (Read After Write), where an instruction cannot execute until its preceding instruction produces the necessary data.\n2. **Branch Prediction Misprediction:** Speculative execution relies on accurate branch prediction. Mispredictions can lead to wasted clock cycles, flushing of the pipeline, and performance degradation.\n3. **Code Size:** Increasing ILP through compiler techniques like loop unrolling often requires longer instruction sequences, leading to larger code size and negatively impacting cache and memory efficiency.\n4. **Hardware Complexity and Power Dissipation:** Designing complex issue units, renaming registers, and out-of-order execution logic increases the hardware footprint, leading to high power dissipation and complexity ceilings.",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "13",
+            "question_text": "Why WMFC signal is needed when doing operations with memory?",
+            "marks": 4,
+            "answer": "The WMFC (Wait for Memory-Function-Completed) signal is necessary because:\n1. **Speed Mismatch:** The processor operates at a much higher clock rate compared to main memory access speeds.\n2. **Synchronization:** When the processor initiates a memory operation (read or write), it cannot proceed to the next step of execution that relies on the memory data until the memory confirms the operation has finished.\n3. **Functionality:** The WMFC control signal stalls the processor's control step generator until the MFC (Memory Function Completed) response signal is asserted by the memory controller, ensuring that the memory contents have been successfully read or written before processing continues.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "14",
+            "question_text": "There is an instruction pipeline with four stages. The stage delays for each stage is 5 nsec, 6 nsec, 11 nsec, and 8 nsec respectively. Consider the delay of an inter-stage register in the pipeline is 1 nsec. Find the approximate speedup of the pipeline in the steady state under ideal conditions as compare to the corresponding non-pipelined implementation?",
+            "marks": 4,
+            "answer": "Let $N$ be the number of instructions executed.\n\n1. **Non-Pipelined Implementation Time ($T_{\\text{non-pipe}}$):**\n   The total time to execute a single instruction without pipelining is the sum of the stage delays:\n   $$\\tau_{\\text{non-pipe}} = 5\\text{ ns} + 6\\text{ ns} + 11\\text{ ns} + 8\\text{ ns} = 30\\text{ ns}$$\n   For $N$ instructions:\n   $$T_{\\text{non-pipe}} = 30 \\times N \\text{ ns}$$\n\n2. **Pipelined Implementation Time ($T_{\\text{pipe}}$):**\n   The clock cycle time of the pipeline ($\\tau_{\\text{pipe}}$) is determined by the slowest stage plus the register delay:\n   $$\\tau_{\\text{pipe}} = \\max(5, 6, 11, 8) + 1\\text{ ns} = 11 + 1 = 12\\text{ ns}$$\n   In steady state under ideal conditions, one instruction completes every clock cycle:\n   $$T_{\\text{pipe}} \\approx 12 \\times N \\text{ ns}$$\n\n3. **Speedup ($S$):**\n   $$S = \\frac{T_{\\text{non-pipe}}}{T_{\\text{pipe}}} = \\frac{30N}{12N} = 2.5$$\n\nThus, the approximate speedup of the pipeline in the steady state under ideal conditions is **2.5**.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "15",
+            "question_text": "Summarize about Thumb instruction set.",
+            "marks": 4,
+            "answer": "The **Thumb instruction set** is a key feature of the ARM architecture:\n1. **16-bit Code Density:** ARM architecture versions v4T and above define the Thumb instruction set, which consists of 16-bit instructions. This significantly reduces code size and memory footprint (by roughly 30-40% compared to standard 32-bit ARM code).\n2. **Subset of ARM:** The functionality of the Thumb instruction set is a subset of the functionality of the standard 32-bit ARM instruction set.\n3. **Processor States:**\n   - A processor executing Thumb instructions is operating in the **Thumb state**.\n   - A processor executing standard ARM instructions is operating in the **ARM state**.\n4. **Execution Rules:** A processor in the ARM state cannot directly execute Thumb instructions, and vice-versa. State-switching instructions (e.g., `BX` - Branch and Exchange) must be used to safely transition between these states.",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "16. A",
+            "question_text": "Compare the performance of the execution of the following set of instructions in single bus organization. Explain in detail about the clock cycles taken by both scenarios for the instruction ADD R5, R6, R7",
+            "marks": 12,
+            "answer": "In a single-bus organization, only one data path/bus is shared for all transfers between registers, memory, and the ALU. Let's analyze the step-by-step control sequence required to execute the instruction `ADD R5, R6, R7` (which computes $R5 \\leftarrow R6 + R7$):\n\n### Clock Cycle Sequence (Single-Bus Organization):\n1. **Step 1 (Fetch Instruction):** \n   - $\\text{PC}_{out}, \\text{MAR}_{in}, \\text{Read}, \\text{Select } 4, \\text{Add}, \\text{Z}_{in}$\n   - *Explanation:* The contents of PC are transferred to MAR to initiate memory read. The constant 4 is selected to increment the PC, added in the ALU, and the updated PC value is loaded into register Z.\n2. **Step 2 (Update PC & Wait for Memory):**\n   - $\\text{Z}_{out}, \\text{PC}_{in}, \\text{Y}_{in}, \\text{WMFC}$\n   - *Explanation:* The incremented PC value from register Z is loaded back into PC. At the same time, the processor waits for the memory function to complete.\n3. **Step 3 (Instruction Register Loading):**\n   - $\\text{MDR}_{out}, \\text{IR}_{in}$\n   - *Explanation:* The instruction fetched from memory is now in MDR and is loaded into the Instruction Register (IR) for decoding.\n4. **Step 4 (Fetch First Operand):**\n   - $\\text{R6}_{out}, \\text{Y}_{in}$\n   - *Explanation:* The value from source register R6 is placed on the bus and loaded into temporary register Y (which feeds one input of the ALU).\n5. **Step 5 (Perform ALU Operation):**\n   - $\\text{R7}_{out}, \\text{Add}, \\text{Z}_{in}$\n   - *Explanation:* The second operand from R7 is placed on the bus. The ALU adds this value to the value in register Y, and the result is stored in register Z.\n6. **Step 6 (Write back Result):**\n   - $\\text{Z}_{out}, \\text{R5}_{in}, \\text{End}$\n   - *Explanation:* The result stored in register Z is transferred via the bus into destination register R5, completing the instruction execution.\n\n### Performance Comparison with Multi-Bus Structure:\n- **Single-Bus Organization:** Needs 6 steps/clock cycles because only one operand can be transferred on the bus at any given time. This creates a bottleneck during the ALU phase where registers R6 and R7 cannot be fetched concurrently.\n- **Multi-Bus Organization (e.g., Three-Bus Structure):** Permits multiple source registers to be placed on independent buses simultaneously. In such a design, R6 and R7 can be read at the exact same cycle, and the result can be directly written back to R5, reducing execution steps to as few as 3 clock cycles.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "16. B",
+            "question_text": "Illustrate the pipelining for the 3 scenarios to be executed in 4 – stage pipelining.\na) Idle stall for branch instruction\nb) Branch predicted in execute stage\nc) Branch predicted in decode stage",
+            "marks": 12,
+            "answer": "Here are the illustrations and explanations of the three pipeline execution scenarios using a 4-stage pipeline (Fetch - $F$, Decode - $D$, Execute - $E$, Write back - $W$):\n\n### a) Idle Stall for Branch Instruction\nIf no prediction is used, the pipeline must stall once a branch instruction is recognized until the target address is computed and the branch outcome is resolved (typically completed at the end of the Execute stage).\n\n```\nClock cycle   1    2    3    4    5    6    7\n---------------------------------------------\nI1            F1   D1   E1   W1\nI2 (Branch)        F2   D2   E2   W2\nI3                      F3   -    -    (Stall / Idle)\nI4                           -    -    (Stall / Idle)\nI_target                          F_t  D_t  E_t\n```\n- *Explanation:* The pipeline remains idle until the branch condition and target address are fully determined in cycle 4. Fetching of target instructions begins only in cycle 5.\n\n### b) Branch Predicted in Execute Stage\nWhen the branch prediction logic predicts the outcome, but the actual validation and branch target computation occur during the Execute stage:\n- If the prediction is correct, execution continues smoothly.\n- If a misprediction occurs, the speculative instructions fetched during the Decode/Execute stages must be flushed, and execution starts from the correct target instruction path.\n\n```\nClock cycle             1    2    3    4    5    6    7    8\n--------------------------------------------------------------\nI1                      F1   D1   E1   W1\nI2 (Branch)                  F2   D2   E2   W2\nI3 (Predicted path)               F3   D3   X (Flushed)\nI4 (Predicted path)                    F4   X (Flushed)\nI_target                                    Ft1  Dt1  Et1  Wt1\n```\n- *Explanation:* Here, the target address is validated in the Execute stage of instruction $I2$ (Cycle 4). The speculatively fetched instructions $I3$ and $I4$ are discarded (flushed), and the pipeline restarts with the correct target instruction in cycle 5.\n\n### c) Branch Predicted in Decode Stage\nWhen prediction and target address calculation are optimized to happen early in the Decode stage:\n- If the target is resolved during the Decode stage (Cycle 3), only a one-cycle penalty (one stall slot) is incurred before starting execution on the target path.\n\n```\nClock cycle             1    2    3    4    5    6    7\n---------------------------------------------------------\nI1                      F1   D1   E1   W1\nI2 (Branch)                  F2   D2\nI3                                F3   X (Flushed)\nI_target                               Fk   Dk   Ek   Wk\nI_target+1                                  Fk+1 Dk+1 Ek+1\n```\n- *Explanation:* The branch address is computed during the Decode step of $I2$ (Cycle 3). $I3$ is flushed immediately, and the target instruction $I_k$ starts fetching in Cycle 4, reducing the branch penalty significantly.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "17. A",
+            "question_text": "You are a project manager overseeing the development of a new software application for a client. The project involves multiple teams and tasks that need to be completed in parallel. Your client has strict deadlines and expects a high-quality product. How would you use the concept of parallelism to ensure the project's success? Please provide a detailed plan",
+            "marks": 12,
+            "answer": "To manage a complex software project with tight deadlines, the concepts of hardware/software parallelism can be directly mapped to project management practices:\n\n### 1. Mapping Parallelism Concepts to Project Management\n- **Parallel Processing / Task Decomposition:** Divide the system into independent, modular subsystems (e.g., Frontend, Backend, Database, Security). Different teams execute these tasks concurrently, analogous to executing instructions simultaneously across multiple processors.\n- **Multiple Functional Units (ALUs):** Assign dedicated specialized units (such as Frontend Devs, Backend Devs, QA Engineers) to perform specialized actions concurrently, increasing overall throughput.\n- **Multicore / Dual-Processor Systems:** Set up cross-functional sub-teams working in parallel, utilizing shared repositories (like a shared-memory system) for active inter-team communication.\n\n### 2. Goals of Parallelism in the Project Plan\n- **Reduced Time-to-Market (Throughput):** Complete tasks concurrently to meet strict client deadlines.\n- **Resource Optimization:** Maximize the utilization of all team members and tools, preventing any resource from idling.\n- **Redundancy & Reliability:** Ensure key components can be backed up or tested simultaneously, improving delivery quality.\n\n### 3. Detailed Parallelism Execution Plan\n- **Phase 1: Dependency Mapping (Syllabus Concept: Instruction Scheduling)**\n  Analyze task dependencies using PERT/CPM. Identify which tasks are sequential (Read-After-Write hazards, e.g., UI design must precede frontend coding) and which can run completely in parallel (e.g., API development and local UI layout development).\n- **Phase 2: Workload Balancing (Syllabus Concept: Load Balancing)**\n  Distribute features evenly among dev teams so that no single team becomes a bottleneck (analogous to avoiding a single-thread bottleneck in multicore processing).\n- **Phase 3: Synchronization (Syllabus Concept: Data Consistency / Cache Coherence)**\n  Implement a robust CI/CD pipeline and daily standups to sync changes to the shared repository. This ensures all teams have the latest \"state\" of the application, avoiding merge conflicts (data inconsistency).",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "17. B",
+            "question_text": "Suppose you are a software architect working on a project to develop a real-time image processing system for a security camera network. You have two architectural choices: SISD or SIMD. Describe the advantages and disadvantages of each architecture in the context of this scenario, and explain which one you would recommend for the image processing system. Justify your recommendation",
+            "marks": 12,
+            "answer": "For a real-time image processing system in a security camera network, we must evaluate both architectures:\n\n### 1. SISD (Single Instruction, Single Data) Architecture\n- **Description:** Traditional sequential execution model (Von Neumann) where one instruction processes one data element at a time.\n- **Advantages:**\n  - Highly simple to program and debug.\n  - Perfect for sequential, non-repetitive logic (e.g., configuration, system setup, control flow).\n- **Disadvantages:**\n  - Extremely poor throughput for pixel-level operations (where the same operation must be repeated on millions of pixels).\n  - Fails to meet real-time processing constraints for high-definition, high-frame-rate video feeds.\n\n### 2. SIMD (Single Instruction, Multiple Data) Architecture\n- **Description:** A parallel processing paradigm where a single control unit broadcasts the same instruction to multiple processing elements, each processing a different data point (e.g., different pixels or image blocks).\n- **Advantages:**\n  - **Exceptional Throughput:** Allows operations like filtering, thresholding, color conversion, and edge detection to run in parallel on elements of arrays/vectors.\n  - **Hardware Efficiency:** Reduces instruction fetching and decoding overhead since one decoder commands multiple execution units.\n- **Disadvantages:**\n  - High programming complexity (requires vector/matrix instructions, specialized compilers).\n  - Poor performance with highly conditional code (control flow branching causes processors in the vector to idle).\n\n### Recommendation & Justification\n**Recommendation:** **SIMD Architecture** (typically implemented via GPUs or DSPs with vector units).\n\n**Justification:**\n1. **Data Parallel Nature of Video:** Image data is naturally structured as 2D/3D matrices of pixels. Common image processing tasks (such as Gaussian blurring, Sobel edge detection, and matrix multiplications for AI/inference) apply the exact same mathematical operations uniformly across all pixels.\n2. **Real-time Latency Constraints:** A security system must process feeds in real-time (e.g., 30+ FPS). Running this sequentially on a single-core SISD processor will result in significant processing lag, making it useless for security alerts. SIMD processing can reduce a pixel loop's execution time by orders of magnitude, easily meeting the strict real-time deadline.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        }
+    ]
+}

@@ -1,0 +1,159 @@
+{
+    "formal_filename": "CT-3_Set-C_2023-11-08.json",
+    "paper_title": "SRM Institute of Science and Technology, College of Engineering and Technology, School of Computing, Department of Computing Technologies. Academic Year: 2023-24 (ODD), Test: CLAT3, Course Code & Title: 21CSS201T / COA, Set C",
+    "source": "2023-11-08 CT3 Set C",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "The function of $R_{in}$ is to\na. load the data from bus to register\nb. place the content of register onto the bus\nc. fetch the data\nd. execute the data",
+            "marks": 1,
+            "answer": "a. load the data from bus to register\n\n**Rationale:** The $R_{in}$ control signal enables the input gate of register R, allowing data present on the common processor bus to be loaded into the register.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "2",
+            "question_text": "What is the reason for incrementing the PC by 4 in multi-bus organization?\na. The word size is 8 bit\nb. The word size is 16 bit\ne. The word size is 32 bit\nc. The word size is 64 bit",
+            "marks": 1,
+            "answer": "e. The word size is 32 bit\n\n**Rationale:** In a 32-bit word-addressable or byte-addressable system, each instruction occupies 4 bytes (32 bits). Therefore, the Program Counter (PC) must be incremented by 4 to point to the next instruction.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "3",
+            "question_text": "Y, temp and Z in single bus organization refers to\na. General purpose registers used by the processor\nb. Temporary registers used by processor\nc. Accumulator\nd. Special purpose registers used by processor",
+            "marks": 1,
+            "answer": "b. Temporary registers used by processor\n\n**Rationale:** In a single-bus processor organization, registers Y, Z, and Temp are internal temporary registers used by the processor to hold operand values during execution without altering user-visible general-purpose registers.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "4",
+            "question_text": "How many buffers are required in the Hardware organization for 2 stage pipeline and 4 stage pipeline?\na. 2, 1\nb. 1, 3\nc. 3, 1\nd. 2, 4",
+            "marks": 1,
+            "answer": "c. 3, 1\n\n**Rationale:** Based on the provided answer key, (c) is highlighted. Structurally, a pipeline with $k$ stages requires $k-1$ intermediate buffers. A 2-stage pipeline requires 1 buffer, and a 4-stage pipeline requires 3 buffers.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "5",
+            "question_text": "If the state machine moves from LNT to LT in 2-state branch prediction algorithm, then\na. Branch is taken\nb. Branch is not taken\nc. Branch is strongly taken\nd. Branch is strongly not taken",
+            "marks": 1,
+            "answer": "a. Branch is taken\n\n**Rationale:** In a dynamic 2-state branch prediction algorithm, a transition from 'Likely Not Taken' (LNT) to 'Likely Taken' (LT) occurs when the branch is actually taken.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "6",
+            "question_text": "What is the primary need for parallelism in computing?\na) Reduce power consumption\nb) Increase performance\nc) Decrease memory usage\nd) Enhance security",
+            "marks": 1,
+            "answer": "b) Increase performance\n\n**Rationale:** Parallelism allows multiple computations to be executed simultaneously, which significantly increases processing speed and overall system throughput.",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "7",
+            "question_text": "Flynn's classification categorizes parallel systems based on what two key parameters?\na) Processing power and memory size\nb) Instruction stream and data stream\nc) Program control and data flow\nd) Data-level parallelism and task-level parallelism",
+            "marks": 1,
+            "answer": "b) Instruction stream and data stream\n\n**Rationale:** Flynn's classical taxonomy classifies computer architectures based on the number of concurrent Instruction Streams (Single/Multiple) and Data Streams (Single/Multiple).",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "8",
+            "question_text": "What is the primary advantage of the Thumb instruction set in ARM processors?\na) Greater computational power\nb) Smaller code size\nc) Enhanced multimedia capabilities\nd) Improved memory management",
+            "marks": 1,
+            "answer": "b) Smaller code size\n\n**Rationale:** The Thumb instruction set consists of 16-bit compressed representations of 32-bit ARM instructions, designed to achieve higher code density and reduce the memory footprint.",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "9",
+            "question_text": "Which of the following programming challenges is often associated with MIMD architectures?\na) Limited processing power\nb) Data synchronization and communication overhead\nc) Lack of parallelism\nd) D. Reduced memory capacity",
+            "marks": 1,
+            "answer": "b) Data synchronization and communication overhead\n\n**Rationale:** Because Multiple Instruction, Multiple Data (MIMD) systems have autonomous processors executing independent programs, managing shared resources, avoiding race conditions, and synchronizing data across nodes create substantial communication overhead.",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "10",
+            "question_text": "Which of the following is a key feature of ARM5 architecture?\na. 64-bit instruction set\nb. SIMD (Single Instruction, Multiple Data) support\nc. Variable-length instruction encoding\nd. Superscalar execution",
+            "marks": 1,
+            "answer": "c. Variable-length instruction encoding\n\n**Rationale:** According to the provided key, variable-length instruction encoding (e.g., supporting both standard 32-bit ARM and 16-bit Thumb instructions) is highlighted as a key architectural feature.",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "11",
+            "question_text": "State the role of following control signals. MARin, MARout",
+            "marks": 4,
+            "answer": "Signal $MAR_{in}$ controls the connection to the internal processor address bus (loading the value from the bus into the Memory Address Register), and signal $MAR_{out}$ controls the connection to the external memory address bus (placing the MAR contents onto the address lines to index memory).",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "12",
+            "question_text": "Analyze the advantages and disadvantages of hardwired and micro programmed control?",
+            "marks": 4,
+            "answer": "### Advantages of Hardwired Control Unit:\n1. Fast operation speed because combinational circuits are used to generate signals directly.\n2. Delay is minimized, depending solely on gate propagation delays.\n3. Highly optimized for specific performance modes.\n4. Faster execution speed than microprogrammed control units.\n5. Does not require control memory.\n\n### Disadvantages of Hardwired Control Unit:\n- Complexity increases exponentially as the number of control signals grows (demands larger encoders and decoders).\n1. Modifications are very difficult because they require physically altering the circuit's wiring.\n2. Incorporating new features is difficult and complex.\n3. Testing and error correction are extremely challenging in the final physical hardware.\n4. Relatively expensive to develop.\n\n### Microprogrammed Control Unit:\n- **Advantages:** Highly flexible, easy to modify or expand the instruction set by simply changing control memory contents, and easier to design, debug, and test.\n- **Disadvantages:** Executes instructions at a slower speed due to sequential control memory access. Implementing microprogrammed control units typically incurs a higher memory overhead and slower dispatch times.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "13",
+            "question_text": "Outline the two state diagram for dynamic branch prediction.",
+            "marks": 4,
+            "answer": "The two-state dynamic branch prediction model consists of:\n- **State 1: LT (Likely Taken):** The branch is predicted as taken.\n- **State 2: LNT (Likely Not Taken):** The branch is predicted as not taken.\n\n### State Transitions:\n1. If the machine is in state LNT and a branch is taken (BT), the machine moves to state LT. Otherwise (BNT), it remains in LNT.\n2. If the machine is in state LT and a branch is not taken (BNT), it returns to LNT. Otherwise (BT), it remains in state LT.\n\n### State Diagram Diagram:\n```\n          BT (Branch Taken)\n       +-------------------+\n       |                   v\n    (( LNT ))           (( LT ))\n       ^                   |\n       +-------------------+\n         BNT (Branch Not Taken)\n```",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "14",
+            "question_text": "Device a data-level parallelism based algorithm for adding the elements of an array of size n using p processors with the following properties:\ni) It should be optimal in terms of speedup, i.e., the speedup should be as close to p as possible.\nii) It should be efficient in terms of communication overhead, i.e., the amount of communication between processors should be minimized\niii) It should be scalable to large values of n and p.",
+            "marks": 4,
+            "answer": "### Step 1: Data Partitioning\nDivide the input array of size $n$ into $p$ equal segments of size $n/p$. Assign each unique segment to a designated processor $P_i$ (where $0 \\le i < p$).\n\n### Step 2: Local Aggregation\nEach processor $P_i$ computes the local sum of its assigned $n/p$ array elements. This computation is fully parallel and local, requiring $0$ communication overhead.\n\n### Step 3: Reduction Phase\nThe processors communicate to perform a binary tree reduction of their local sums into a single global sum. \n- In step $j$ of the reduction, active processors send their partial sums to their neighbors at distance $2^{j-1}$ and perform addition.\n- This step minimizes communication overhead to $O(\\log p)$ steps.\n\n### Step 4: Distribution / Broadcast\nThe processor holding the final global sum broadcasts the result to all other processors. This can be achieved efficiently using a tree-structured broadcast.\n\n### Performance Analysis:\n- **Speedup:** Optimal. Since local computation takes $O(n/p)$ and communication takes $O(\\log p)$, the speedup is close to $p$ when $n \\gg p$.\n- **Communication Overhead:** Highly efficient as it utilizes structured tree-based communication rather than unstructured all-to-all transfers.\n- **Scalability:** Scalable to large values of $n$ and $p$ across distributed memory systems, shared memory models, and GPU architectures.",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "15",
+            "question_text": "Compare and contrast the memory unit performance of ARM5 and ARM7 architectures in terms of their cache hierarchy, memory bus width, memory interfacing and instruction sets",
+            "marks": 4,
+            "answer": "### 1. Instruction Sets\n- **ARM5:** Uses an early iteration of the 32-bit RISC architecture (mid-1980s). Includes 16 general-purpose registers with a simple, basic instruction set.\n- **ARM7:** A more advanced 32-bit RISC architecture (early 1990s). It expands the register set to 37 general-purpose registers and adds key features like conditional execution, load/store multiple instructions, and a broader variety of addressing modes.\n\n### 2. Cache Hierarchy\n- **ARM5:** Typically contains smaller, unified caches (instructions and data stored together) or no cache at all, which leads to higher cache miss penalties and slower data throughput.\n- **ARM7:** Offers a more advanced cache hierarchy with larger, dedicated instruction and data caches (Harvard-style cache setup), providing better performance.\n\n### 3. Memory Bus Width\n- **ARM5:** Uses narrower memory buses, which limits the bandwidth and slows sequential instruction/data transfers.\n- **ARM7:** Features wider memory buses, allowing faster concurrent data transfer between the CPU execution pipeline and external memory.\n\n### 4. Memory Interfacing\n- **ARM5:** Interfacing capabilities are limited to older memory controller standards and synchronous/asynchronous static memory.\n- **ARM7:** Designed to interface with newer high-speed memory architectures (such as DDR, DDR2) and includes optimized dynamic memory controllers to enhance execution throughput.",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "16. A",
+            "question_text": "Aravind’s semester wise top 3 course marks are stored in 3 registers namely R1, R2 and R3. Specify the instruction for storing the summation of all marks and store it in R1 itself. Write the complete set of control sequences to the above operation.",
+            "marks": 12,
+            "answer": "### Instruction\nTo perform the summation of the contents of R1, R2, and R3 and store the final sum back into R1, we can perform consecutive additions or utilize a multi-operand bus execution depending on the architecture. \n\n### Control Sequences\n```\n1. PC_out, R=B, MAR_in, Read, IncPC\n2. WMFC\n3. MDR_outB, R=B, IR_in\n4. R1_outA, R2_outB, R3_outC, SELECTA, ADD, R3_IN, END\n```\n*(Note: In step 4, the control sequence from the provided key uses $R3_{IN}$ to demonstrate the write-back phase of the multi-register execution; logically to save to R1, this would target $R1_{IN}$.)*",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "16. B",
+            "question_text": "Explain with a scenario how unconditional branching can cause pipeline to stall with suitable example.",
+            "marks": 12,
+            "answer": "### Scenario and Example\nConsider a simple two-stage instruction pipeline consisting of **Fetch (F)** and **Execute (E)** stages. Instructions $I_1$, $I_2$, and $I_3$ are stored at consecutive memory locations.\n\n- Let $I_2$ be an **unconditional branch** instruction.\n- While $I_2$ is in its Execution stage ($E_2$), the pipeline concurrently fetches the next sequential instruction, $I_3$ ($F_3$).\n- However, the target PC value specified by the branch instruction $I_2$ is not computed and loaded into the PC until the end of execution stage $E_2$.\n- Once the branch is determined to be taken, $I_3$ (which was speculatively fetched) is incorrect and must be **flushed/discarded**.\n- The execution stage must stall (idle) for one clock cycle while the correct branch target instruction is fetched from the new memory address.\n\n### Branch Penalty\n- The branch penalty is the amount of execution time (clock cycles) lost as a consequence of executing a branch instruction. \n\n### Reducing the Penalty\n1. **Compiler Scheduling:** Utilizing branch-delay slot techniques or proper compiler-driven instruction scheduling.\n2. **Branch Prediction:** Using hardware-based branch prediction units to estimate whether a branch is taken or not before it is resolved.\n3. **Early Target Address Calculation:** Implementing dedicated hardware inside the Fetch stage to parse, decode, and compute target addresses as early as possible in the pipeline.",
+            "answer_source": "provided",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "17 A.",
+            "question_text": "Explain about Flynn’s Classification with an example.",
+            "marks": 12,
+            "answer": "Flynn's Taxonomy is a classification of computer architectures based on the concurrency of instruction and data streams:\n\n### 1. SISD (Single Instruction Stream, Single Data Stream)\n- **Description:** A sequential computer system where a single control unit decodes one instruction stream at a time to operate on a single data stream.\n- **Example:** Older uniprocessor platforms (e.g., Intel 8086, classic Pentium processors).\n\n### 2. SIMD (Single Instruction Stream, Multiple Data Streams)\n- **Description:** A single control unit issues the same instruction to multiple processing elements, which execute it concurrently on different data sets.\n- **Example:** Graphics Processing Units (GPUs), Vector processors, and MMX/AVX extensions in modern CPUs.\n\n### 3. MISD (Multiple Instruction Streams, Single Data Stream)\n- **Description:** Multiple processing elements receive separate instruction streams but perform calculations on the same single data stream. This is a highly specialized architecture.\n- **Example:** Redundant fault-tolerant flight computers (like those in the Space Shuttle) or systolic array structures.\n\n### 4. MIMD (Multiple Instruction Streams, Multiple Data Streams)\n- **Description:** Multiple autonomous processors concurrently execute distinct instruction streams on distinct datasets.\n- **Example:** Modern multi-core processors (e.g., Intel Core i7, AMD Ryzen), distributed-memory clusters, and supercomputers.",
+            "answer_source": "provided",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "17 B",
+            "question_text": "Consider a processor with 64 registers and an instruction set of size twelve. Each instruction has five distinct fields, namely, opcode, two source register identifiers, one destination register identifier, and a twelve-bit immediate value. Each instruction must be stored in memory in a byte-aligned fashion. If a program has 100 instructions, how much amount of memory (in bytes) is consumed by the program text?",
+            "marks": 12,
+            "answer": "### 1. Identify Field Sizes\n- **Opcode Field:** The instruction set contains 12 instructions. To uniquely identify each instruction, we need:\n  $$\\lceil \\log_2(12) \\rceil = 4\\text{ bits}$$  \n  (since $2^4 = 16 \\ge 12$).\n\n- **Register Identifier Fields:** There are 64 registers. Each register identifier requires:\n  $$\\lceil \\log_2(64) \\rceil = 6\\text{ bits}$$\n  Since there are 3 registers in total (2 source registers + 1 destination register), the total space for registers is:\n  $$3 \\times 6 = 18\\text{ bits}$$\n\n- **Immediate Value Field:** As given, the immediate value occupies:\n  $$12\\text{ bits}$$\n\n### 2. Calculate Total Instruction Size\nAdding all fields together, the size of a single instruction is:\n$$\\text{Total Bits} = 4\\text{ (opcode)} + 18\\text{ (registers)} + 12\\text{ (immediate)} = 34\\text{ bits}$$\n\n### 3. Byte Alignment Constraint\nInstructions must be stored in a **byte-aligned** fashion. This means the instruction size must be a multiple of 8 bits. The nearest multiple of 8 bits equal to or greater than 34 bits is:\n$$40\\text{ bits } (5\\text{ bytes})$$\n\n### 4. Total Memory Consumed by 100 Instructions\nFor a program containing 100 instructions, the memory consumed is:\n$$\\text{Memory} = 5\\text{ bytes/instruction} \\times 100\\text{ instructions} = 500\\text{ bytes}$$\n\n**Answer:** 500 bytes.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        }
+    ]
+}

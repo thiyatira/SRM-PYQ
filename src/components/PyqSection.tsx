@@ -25,6 +25,7 @@ const SUBJECTS = [
   { code: "OOPS", name: "Object Oriented Programming", title: "21CSC101T: Object Oriented Design and Programming" },
   { code: "ADVANCEDCALC", name: "Advanced Calculus and Complex Analysis", title: "21MAB102T: Advanced Calculus and Complex Analysis" },
   { code: "APP", name: "Advanced Programming Practice", title: "21CSC203P: Advanced Programming Practice" },
+  { code: "COA", name: "Computer Organization and Architecture", title: "21CSS201T: Computer Organization and Architecture" },
 ];
 
 const SUBJECT_FILES: Record<string, string[]> = {
@@ -241,6 +242,28 @@ const SUBJECT_FILES: Record<string, string[]> = {
     "2025-09-26_CT2_SetC_QP-Key.json",
     "2025-09-26_CT2_SetD_Batch2_QP-Key.json",
   ],
+  COA: [
+    "CT-1_Set-A_2023-08-18.json",
+    "CT-1_Set-B_2023-08-18.json",
+    "CT-1_Set-B_2024-25.json",
+    "CT-1_Set-C_2023-08-18.json",
+    "CT-1_Set-C_2024-25.json",
+    "CT-1_Set-C_2025-08-11.json",
+    "CT-1_Set-D_2023-08-18.json",
+    "CT-2_Set-A_2023-10-09.json",
+    "CT-2_Set-B_2023-10-09.json",
+    "CT-2_Set-C_2023-10-09.json",
+    "CT-2_Set-D_2023-10-09.json",
+    "CT-3_Set-A_2023-11-08.json",
+    "CT-3_Set-B_2023-11-08.json",
+    "CT-3_Set-C_2023-11-08.json",
+    "CT-3_Set-D_2023-11-08.json",
+    "CT-3_Set-NA_2024-25.json",
+    "FT-2_Set-A_2025-09-15.json",
+    "FT-2_Set-B_2025-09-15.json",
+    "FT-2_Set-D_2025-09-15.json",
+    "OBA_Set-A_2024-10-04.json",
+  ],
 };
 
 const SUBJECT_DIRS: Record<string, string> = {
@@ -256,6 +279,7 @@ const SUBJECT_DIRS: Record<string, string> = {
   SPCM: "SemiconductorPhysicsAndComputationalMethods",
   APP: "APP",
   DSA: "DSA",
+  COA: "COA",
 };
 
 interface Question {
@@ -575,7 +599,7 @@ function markdownToHtml(rawMd?: string): string {
 }
 
 const PyqSection: React.FC = () => {
-  const [subject, setSubject] = useState("APP");
+  const [subject, setSubject] = useState("COA");
   const [questions, setQuestions] = useState<Question[]>([]);
   const [papers, setPapers] = useState<string[]>([]);
   const [units, setUnits] = useState<string[]>([]);

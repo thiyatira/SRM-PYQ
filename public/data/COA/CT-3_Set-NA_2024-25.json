@@ -1,0 +1,79 @@
+{
+    "formal_filename": "CT-3_Set-NA_2024-25.json",
+    "paper_title": "SRM Institute of Science and Technology, College of Engineering and Technology, SCHOOL OF COMPUTING, Department of Computing Technologies, Academic Year: 2024-25 (ODD)",
+    "source": "2024-25 ODD Semester Exam",
+    "questions": [
+        {
+            "question_number": "11",
+            "question_text": "Compare the different mapping schemes utilized in cache design.",
+            "marks": 4,
+            "answer": "Cache mapping schemes define how block transfer from main memory to cache memory is managed. There are three primary types:\n\n1. **Direct Mapping**:\n   - **Concept**: Each block of main memory maps to exactly one specific line in the cache.\n   - **Formula**: $i = j \\pmod c$, where $i$ is the cache line index, $j$ is the main memory block, and $c$ is the number of lines in the cache.\n   - **Pros**: Very simple and inexpensive to implement.\n   - **Cons**: High conflict miss rates when two active blocks map to the same line.\n\n2. **Fully Associative Mapping**:\n   - **Concept**: Any block of main memory can be placed in any cache line.\n   - **Pros**: Highly flexible; lowest conflict miss rate.\n   - **Cons**: Requires complex and expensive hardware (comparators) to search all cache lines in parallel.\n\n3. **Set-Associative Mapping**:\n   - **Concept**: A compromise between direct and associative mapping. Cache is divided into $v$ sets, each containing $k$ lines (k-way set-associative). A block $j$ maps to set $i$ where $i = j \\pmod v$. Within that set, it can be placed anywhere.\n   - **Pros**: Reduces conflict misses compared to direct mapping and simplifies search logic compared to fully associative mapping.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "12",
+            "question_text": "Outline the architecture of Single Bus Organization processors.",
+            "marks": 4,
+            "answer": "In a **Single Bus Organization**, all internal components of the processor—such as the Program Counter (PC), Memory Address Register (MAR), Memory Data Register (MDR), Instruction Register (IR), General Purpose Registers, and the Arithmetic Logic Unit (ALU)—are interconnected through a single common internal processor bus.\n\n### Key Components & Architecture:\n1. **Registers**: General purpose registers ($R_0$ to $R_{n-1}$), PC, IR, and temporary registers ($Y$, $Z$).\n2. **ALU**: Performs arithmetic and logical operations. It has two inputs: one connected to the bus through register $Y$, and the other directly connected to the internal bus.\n3. **Multiplexer (MUX)**: Used to select between the bus input and a constant (such as 4 to increment PC).\n4. **MAR & MDR**: Provide interface to the external system bus. MAR holds memory address, MDR holds memory data.\n\n### Limitation:\nOnly one data transfer can take place over the single bus during any given clock cycle. Hence, multi-operand operations (like addition) require multiple sequential clock cycles to load operands into temporary registers before the final execution.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "13",
+            "question_text": "What are the key features and components of the Multibus Architecture processor",
+            "marks": 4,
+            "answer": "To overcome the single-bus bottleneck, a **Multibus Architecture** (often a 2-bus or 3-bus design) is utilized.\n\n### Key Features:\n- **Simultaneous Transfers**: Multiple data paths allow concurrent register-to-register transfers within a single clock cycle.\n- **Reduced Instruction Execution Time**: Fewer clock cycles are required to execute instructions because operands can be fetched in parallel.\n- **Optimized ALU Throughput**: Operands are fed directly into the inputs of the ALU from separate buses simultaneously.\n\n### Key Components:\n- **Buses (Bus A, Bus B, Bus C)**: Typically, Bus A and Bus B are used to transfer two source operands from the registers to the inputs of the ALU, and Bus C is used to carry the result back to the destination register.\n- **Dual-Port / Multi-Port Registers**: Allow simultaneous reads/writes on different ports.\n- **Incrementer Unit**: Often separated from the main ALU to allow parallel PC updates.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "14",
+            "question_text": "List the applications and advantages of parallel processing.",
+            "marks": 4,
+            "answer": "### Advantages of Parallel Processing:\n1. **High Throughput**: Multiple instructions are executed concurrently, significantly reducing execution time.\n2. **Fault Tolerance**: If one processor fails, others can continue execution, ensuring high availability.\n3. **Scalability**: Extra processing power can be added incrementally by integrating more processing elements.\n4. **Efficiency**: Complex, massive computation tasks are partitioned, saving energy and computing resource overhead.\n\n### Applications:\n1. **High-Performance Computing (HPC)**: Weather forecasting, climate modeling, and molecular simulation.\n2. **Artificial Intelligence and Machine Learning**: Deep neural network training using parallel architectures like GPUs.\n3. **Computer Graphics & Visualization**: Rendering 3D frames and real-time physics simulations in gaming.\n4. **Database Processing**: Distributed database systems query executions in parallel across cluster nodes.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "15",
+            "question_text": "State the purpose and functionality of the Thumb instruction set in ARM processors.",
+            "marks": 4,
+            "answer": "### Purpose:\nThe purpose of the **Thumb instruction set** in ARM processors is to improve code density in resource-constrained embedded systems. Standard ARM instructions are 32-bit, which consumes significant memory. Thumb offers a subset of ARM functionality compressed into 16-bit instructions.\n\n### Functionality:\n1. **Code Compression**: Thumb instructions are exactly 16 bits wide, leading to roughly a $30\\%$ to $40\\%$ reduction in memory foot-print compared to standard 32-bit ARM instructions.\n2. **Execution State Transition**: The processor switches dynamically between ARM state (32-bit) and Thumb state (16-bit) using branch instructions (like `BX` / `BLX`) and setting the T-bit in the Current Program Status Register (CPSR).\n3. **Decompression on-the-fly**: During execution, Thumb instructions are decompressed into equivalent 32-bit ARM instructions transparently within the instruction decoder stage without performance penalty on narrow memory buses.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "16",
+            "question_text": "Describe the Microprogrammed control unit with diagram and list out the control signals.",
+            "marks": 12,
+            "answer": "A **Microprogrammed Control Unit** is an alternative to hardwired control, where control signals are generated by executing a sequence of microinstructions stored in a special memory called the Control Store.\n\n### Components:\n1. **Control Store (ROM)**: Holds the microprogram containing all control words.\n2. **Microinstruction Register (μIR)**: Holds the current microinstruction being executed.\n3. **Next-Address Generator (Microprogram Sequencer)**: Determines the address of the next microinstruction based on branch inputs and status flags.\n4. **Control Address Register (CAR)**: Holds the address of the microinstruction to be fetched next.\n\n### Diagrammatic Representation:\n```\n                 +--------------------------+\n                 |  Next Address Generator  |<----+ External Inputs\n                 +--------------------------+     | (Opcode, Flags)\n                              |                   |\n                              v                   |\n                 +--------------------------+     |\n                 |  Control Address (CAR)   |     |\n                 +--------------------------+     |\n                              |                   |\n                              v                   |\n                 +--------------------------+     |\n                 |    Control Store (ROM)   |     |\n                 +--------------------------+     |\n                              |                   |\n                              v                   |\n                 +--------------------------+     |\n                 | Microinstruction (uIR)   |-----+ Feedback / Next Address\n                 +--------------------------+\n                    |                    |\n                    v                    v\n             Control Signals      Branch Address\n```\n\n### Typical Control Signals:\n- **Register gating**: $R_{in}$, $R_{out}$ for general purpose registers.\n- **ALU operations**: $Add$, $Sub$, $And$, $Or$.\n- **Memory control**: $Read$, $Write$, $WMFC$ (Wait for Memory Function Complete).\n- **Internal routing**: $PC_{in}$, $PC_{out}$, $MAR_{in}$, $MDR_{in}$, $MDR_{out}$, $Y_{in}$, $Z_{out}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "17",
+            "question_text": "Demonstrate the control sequences involved in the complete execution of \"ADD R4,R5,R6\" in multi bus environment with diagram.",
+            "marks": 12,
+            "answer": "In a three-bus processor organization, three internal buses (Bus A, Bus B, and Bus C) link registers and the ALU. This allows the processor to fetch two source operands simultaneously and write the result back in fewer steps.\n\n### 3-Bus Processor Diagram Conceptualization:\n- **Bus A & Bus B**: Input buses to the ALU. Registers can output their contents to either of these buses.\n- **Bus C**: Output bus of the ALU. The result is placed on Bus C and gated back directly into the destination register.\n\n```\n          [Register File (R0-R15)]\n             |               |\n             v (Port A)      v (Port B)\n          ====== Bus A ====== Bus B ======\n             |               |\n             +------[ALU]----+\n                      |\n                      v\n                  == Bus C ==\n                      |\n                      v\n              [Register File]\n```\n\n### Control Sequence for \"ADD R4, R5, R6\" (adds $R5$ and $R6$, stores in $R4$):\nAssuming the instruction is already fetched and resides in the Instruction Register (IR):\n\n```\nStep 1: R5_out_BusA, R6_out_BusB, Select_ALU_Add, R4_in_BusC, End\n```\n\n### Detailed Analysis of the Step:\n1. **$R5_{out\\_BusA}$**: Gating output of register $R5$ onto internal Bus A.\n2. **$R6_{out\\_BusB}$**: Gating output of register $R6$ onto internal Bus B.\n3. **$Select\\_ALU\\_Add$**: Instructs the ALU to perform addition ($Bus A + Bus B$).\n4. **$R4_{in\\_BusC}$**: The addition output from ALU is automatically placed on Bus C and written directly into register $R4$ at the clock edge.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "18",
+            "question_text": "Analyze the classification of parallel architecture that is determined by the multiplicity of instruction streams and data streams in a computer system.",
+            "marks": 12,
+            "answer": "This classification is known as **Flynn's Taxonomy** (1966). It classifies computer architectures based on the number of concurrent instruction streams and data streams:\n\n### 1. Single Instruction Single Data (SISD):\n- **Description**: A single processor executes a single instruction stream sequentially to manipulate a single data stream.\n- **Structure**: \n  ```\n  Instruction Pool -> Control Unit -> Processor -> Memory (Data)\n  ```\n- **Example**: Traditional von Neumann uniprocessor systems (e.g., early Intel x86 architectures).\n\n### 2. Single Instruction Multiple Data (SIMD):\n- **Description**: A single control unit issues the same instruction to multiple processing units (ALUs), which operate on different data elements simultaneously.\n- **Structure**: Very efficient for vector processing and loop-level parallelization.\n- **Example**: Vector processors, GPU architectures, SSE/AVX instruction extensions in modern CPUs.\n\n### 3. Multiple Instruction Single Data (MISD):\n- **Description**: Multiple processing units execute different instruction streams on the same data stream. This is a highly rare and theoretical class.\n- **Example**: Fault-tolerant flight-control systems, systolic arrays.\n\n### 4. Multiple Instruction Multiple Data (MIMD):\n- **Description**: Multiple independent processors execute different instruction streams on different data streams asynchronously.\n- **Structure**: Highly versatile; standard parallel/distributed architecture.\n- **Example**: Multi-core CPUs, supercomputing clusters, symmetric multiprocessors (SMP).",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "19",
+            "question_text": "Explain the operations of the Memory Load and Store instructions in ARM processors and their impact on data handling.",
+            "marks": 12,
+            "answer": "ARM uses a strict **Load/Store Architecture**. This means memory-access operations can only occur via explicit load and store instructions, while all data manipulations must happen strictly within general-purpose registers.\n\n### Key Instructions:\n1. **LDR (Load Register)**: Moves data from a memory location into a register.\n   - *Example*: `LDR R0, [R1]` (Loads the word from the memory address pointed by $R1$ into $R0$).\n2. **STR (Store Register)**: Moves data from a register into a memory location.\n   - *Example*: `STR R0, [R1]` (Stores the contents of $R0$ into the memory address pointed by $R1$).\n\n### Addressing Modes & Data Handling Impact:\nARM instructions support sophisticated indexing features that optimize data handling in arrays and structures:\n- **Offset Addressing**: Address is calculated as base register value $\\pm$ offset, but the base register remains unchanged.\n  ```assembly\n  LDR R0, [R1, #4]\n  ```\n- **Pre-Indexed Addressing**: Address is calculated with the offset added to the base register, and the base register is updated with this new address if write-back (`!`) is specified.\n  ```assembly\n  LDR R0, [R1, #4]!\n  ```\n- **Post-Indexed Addressing**: The memory address accessed is the original value of the base register, and then the offset is added/subtracted to update the base register.\n  ```assembly\n  LDR R0, [R1], #4\n  ```\n\n### Architectural Impact:\n- **Predictable Timing**: Register-to-register instructions run in a single cycle; memory latency is confined strictly to LDR/STR.\n- **Compiler Friendly**: It simplifies compiler design by providing clean register allocation paths.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        }
+    ]
+}

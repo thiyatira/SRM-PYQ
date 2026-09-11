@@ -1,0 +1,119 @@
+{
+    "formal_filename": "FT-2_Set-A_2025-09-15.json",
+    "paper_title": "SRM Institute of Science and Technology, College of Engineering and Technology, School of Computing, Test: FT II, Course Code & Title: 21CSS201T/Computer Organization and Architecture, Year & Sem: II Year / III Sem",
+    "source": "2025-09-15 FT II",
+    "questions": [
+        {
+            "question_number": "11 a)",
+            "question_text": "A system uses 8-bit 2's complement arithmetic.\n- If one register holds the value 75 and another holds 48, find the difference.\n- What happens if the order of subtraction is reversed?",
+            "marks": 2,
+            "answer": "1. **Find $75 - 48$**:\n   - Convert both numbers to 8-bit binary:\n     - $+75 = 01001011_2$\n     - $+48 = 00110000_2$\n   - Find the 2's complement of $48$ (to represent $-48$):\n     - 1's complement of $48$: $11001111_2$\n     - 2's complement: $11001111 + 1 = 11010000_2$\n   - Add $+75$ and $-48$:\n     $$01001011_2 + 11010000_2 = 1\\,00011011_2$$\n   - In 8-bit registers, the carry-out is discarded. The result is $00011011_2 = 27_{10}$ (which is correct as $75 - 48 = 27$).\n\n2. **If the order of subtraction is reversed ($48 - 75$ onwards)**:\n   - Find the 2's complement of $75$ (to represent $-75$):\n     - 1's complement of $75$: $10110100_2$\n     - 2's complement: $10110100 + 1 = 10110101_2$\n   - Add $+48$ and $-75$:\n     $$00110000_2 + 10110101_2 = 11100101_2$$\n   - There is no carry. Since the MSB is 1, the result is negative. To find its magnitude, take the 2's complement of $11100101_2$:\n     - 1's complement: $00011010_2$\n     - 2's complement: $00011010 + 1 = 00011011_2 = 27_{10}$\n   - Thus, the final value is $-27_{10}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "11 b)",
+            "question_text": "Consider dividing a binary quantity representing the decimal value 61 by the binary equivalent of 5. Which binary quotient and remainder would result?",
+            "marks": 2,
+            "answer": "- **Step 1: Convert to binary equivalents**:\n  - Dividend: $61_{10} = 111101_2$\n  - Divisor: $5_{10} = 101_2$\n- **Step 2: Perform binary division**:\n  ```\n         1100  <-- Quotient\n       -------\n  101 | 111101\n       -101\n       ----\n         101\n        -101\n        ----\n          000\n            01 <-- Remainder\n  ```\n- **Results**:\n  - **Quotient**: $1100_2$ ($12_{10}$)\n  - **Remainder**: $0001_2$ ($1_{10}$)\n  - Verification: $(12 \\times 5) + 1 = 61$. The calculation is correct.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "11 c)",
+            "question_text": "When two decimal numbers, 59 and 27, are added using BCD representation, the direct binary result does not correspond to a valid BCD digit. Show how this situation is corrected and state the final valid BCD sum.",
+            "marks": 2,
+            "answer": "- **Step 1: Convert to BCD representations**:\n  - $59 \\rightarrow 0101\\ 1001$\n  - $27 \\rightarrow 0010\\ 0111$\n- **Step 2: Add the BCD codes directly**:\n  ```\n    0101  1001  (59)\n  + 0010  0111  (27)\n  ------------\n    0111  10000\n  ```\n- **Step 3: Correct invalid BCD digit states**:\n  - The lower nibble addition ($1001 + 0111 = 10000_2$) is invalid because it is greater than 9 ($16 > 9$).\n  - To correct, add $0110_2$ (6) to the lower nibble:\n    $$10000_2 + 0110_2 = 10110_2$$\n  - This leaves $0110_2$ in the lower nibble and generates a carry-out of $1$ to the next higher nibble.\n- **Step 4: Propagate carry to upper nibble**:\n  - Upper nibble sum: $0111_2 + \\text{carry } 1 = 1000_2$.\n- **Final valid BCD sum**:\n  - $1000\\ 0110$ (which corresponds to $86_{10}$).",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "11 d)",
+            "question_text": "Find the product of the given multiplicand = 1011 and multiplier = 110.",
+            "marks": 2,
+            "answer": "- **Binary Multiplication**:\n  ```\n         1011   (Multiplicand = 11 in decimal)\n       x  110   (Multiplier = 6 in decimal)\n       -------\n         0000   (Multiplicand x 0)\n        1011x   (Multiplicand x 1, shifted)\n       1011xx   (Multiplicand x 1, double shifted)\n       -------\n       1000010  (Final sum)\n  ```\n- Verification: $1000010_2 = 2^6 + 2^1 = 64 + 2 = 66_{10}$.\n- Since $11 \\times 6 = 66$, the product binary is correct.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "11 e)",
+            "question_text": "Convert the decimal number 45 in Gray Code and Excess-3 code. (Each carries 2 marks)",
+            "marks": 2,
+            "answer": "1. **Conversion to Gray Code**:\n   - Convert $45_{10}$ to normal Binary first:\n     - $45 = 32 + 8 + 4 + 1 = 101101_2$\n   - Convert Binary ($B = 101101_2$) to Gray Code ($G$):\n     - $G_5 = B_5 = 1$\n     - $G_4 = B_5 \\oplus B_4 = 1 \\oplus 0 = 1$\n     - $G_3 = B_4 \\oplus B_3 = 0 \\oplus 1 = 1$\n     - $G_2 = B_3 \\oplus B_2 = 1 \\oplus 1 = 0$\n     - $G_1 = B_2 \\oplus B_1 = 1 \\oplus 0 = 1$\n     - $G_0 = B_1 \\oplus B_0 = 0 \\oplus 1 = 1$\n     - **Gray Code** = $111011_2$\n\n2. **Conversion to Excess-3 Code**:\n   - Convert each decimal digit of $45$ individually into BCD and add 3 to each:\n     - Digit 4: $4 + 3 = 7 \\rightarrow 0111_2$\n     - Digit 5: $5 + 3 = 8 \\rightarrow 1000_2$\n     - **Excess-3 Code** = $0111\\ 1000_2$",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "12 a)",
+            "question_text": "A digital sensor outputs the decimal reading 987.625. If this value had to be stored in systems that only recognize binary, octal, or hexadecimal formats, how could you represent it in each of those bases? Outline the reasoning for every step you take. (3 marks)",
+            "marks": 3,
+            "answer": "1. **Representing $987.625_{10}$ in Binary**:\n   - **Integer Part ($987$):**\n     - Divide by 2 repeatedly:\n       - $987 \\div 2 = 493$ remainder $1$\n       - $493 \\div 2 = 246$ remainder $1$\n       - $246 \\div 2 = 123$ remainder $0$\n       - $123 \\div 2 = 61$ remainder $1$\n       - $61 \\div 2 = 30$ remainder $1$\n       - $30 \\div 2 = 15$ remainder $0$\n       - $15 \\div 2 = 7$ remainder $1$\n       - $7 \\div 2 = 3$ remainder $1$\n       - $3 \\div 2 = 1$ remainder $1$\n       - $1 \\div 2 = 0$ remainder $1$\n       - Reading remainders bottom-up gives $1111011011_2$.\n   - **Fractional Part ($0.625$):**\n     - Multiply by 2 repeatedly:\n       - $0.625 \\times 2 = 1.25$ (Integer part $1$)\n       - $0.25 \\times 2 = 0.5$ (Integer part $0$)\n       - $0.5 \\times 2 = 1.0$ (Integer part $1$)\n       - Reading the integer components top-down gives $.101_2$.\n   - **Combined Binary:** $1111011011.101_2$\n\n2. **Representing in Octal**:\n   - Group the binary digits in sets of three from the binary point:\n     - Integer part: $001\\ 111\\ 011\\ 011_2 \\rightarrow 1\\ 7\\ 3\\ 3_8 = 1733_8$\n     - Fractional part: $.101_2 \\rightarrow .5_8$\n   - **Combined Octal:** $1733.5_8$\n\n3. **Representing in Hexadecimal**:\n   - Group the binary digits in sets of four from the binary point:\n     - Integer part: $0011\\ 1101\\ 1011_2 \\rightarrow 3\\ \\text{D}\\ \\text{B}_{16} = 3\\text{DB}_{16}$\n     - Fractional part: $.1010_2 \\rightarrow .\\text{A}_{16}$\n   - **Combined Hexadecimal:** $3\\text{DB.A}_{16}$",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "12 b)",
+            "question_text": "An engineer encounters the binary fraction 1011011.101. Convert binary fraction to decimal and Hexadecimal values. (3 marks)",
+            "marks": 3,
+            "answer": "1. **Conversion to Decimal**:\n   - **Integer Part ($1011011_2$):**\n     $$1 \\cdot 2^6 + 0 \\cdot 2^5 + 1 \\cdot 2^4 + 1 \\cdot 2^3 + 0 \\cdot 2^2 + 1 \\cdot 2^1 + 1 \\cdot 2^0$$\n     $$= 64 + 0 + 16 + 8 + 0 + 2 + 1 = 91_{10}$$\n   - **Fractional Part ($.101_2$):**\n     $$1 \\cdot 2^{-1} + 0 \\cdot 2^{-2} + 1 \\cdot 2^{-3} = 0.5 + 0 + 0.125 = 0.625_{10}$$\n   - **Final Decimal Value:** $91.625_{10}$\n\n2. **Conversion to Hexadecimal**:\n   - Group binary digits into blocks of 4 starting from the decimal point:\n     - Integer: $0101\\ 1011_2 \\rightarrow 5\\text{B}_{16}$\n     - Fractional: $.1010_2 \\rightarrow .\\text{A}_{16}$\n   - **Final Hexadecimal Value:** $5\\text{B.A}_{16}$",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "12 c)",
+            "question_text": "A dataset includes the octal code 7365. Before using it in a binary-compatible circuit, and later in a hexadecimal-coded system, the number must first be expanded into binary and then regrouped for hexadecimal. (2 marks)",
+            "marks": 2,
+            "answer": "1. **Expansion to Binary**:\n   - Expand each octal digit into its 3-digit binary equivalent:\n     - $7 \\rightarrow 111$\n     - $3 \\rightarrow 011$\n     - $6 \\rightarrow 110$\n     - $5 \\rightarrow 101$\n   - **Binary representation**: $111011110101_2$\n\n2. **Regrouping for Hexadecimal**:\n   - Group the binary digits into chunks of 4 bits starting from the right-hand side:\n     - $1110\\ 1111\\ 0101_2$\n     - $1110_2 \\rightarrow \\text{E}_{16}$\n     - $1111_2 \\rightarrow \\text{F}_{16}$\n     - $0101_2 \\rightarrow 5_{16}$\n   - **Hexadecimal representation**: $\\text{EF5}_{16}$",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "12 d)",
+            "question_text": "Convert the hexadecimal number (2F7A)16 into binary and then into decimal. (2 marks)",
+            "marks": 2,
+            "answer": "1. **Conversion to Binary**:\n   - Map each hex digit to its corresponding 4-bit binary value:\n     - $2 \\rightarrow 0010$\n     - $\\text{F} \\rightarrow 1111$\n     - $7 \\rightarrow 0111$\n     - $\\text{A} \\rightarrow 1010$\n   - **Binary Value**: $0010111101111010_2 = 10111101111010_2$\n\n2. **Conversion to Decimal**:\n   - Convert $(2\\text{F}7\\text{A})_{16}$ using powers of 16:\n     $$\\text{Value} = 2 \\cdot 16^3 + 15 \\cdot 16^2 + 7 \\cdot 16^1 + 10 \\cdot 16^0$$\n     $$= 2 \\cdot 4096 + 15 \\cdot 256 + 7 \\cdot 16 + 10 \\cdot 1$$\n     $$= 8192 + 3840 + 112 + 10 = 12154_{10}$$",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "13 a)",
+            "question_text": "In the architecture of the 8086 microprocessor, discuss the role of the following components: (5 marks)\n- Instruction Queue\n- Segment Registers\n- Flag Register",
+            "marks": 5,
+            "answer": "- **Instruction Queue**:\n  The 8086 features a 6-byte instruction queue located within the Bus Interface Unit (BIU). While the Execution Unit (EU) is busy executing an instruction, the BIU pre-fetches up to 6 subsequent instruction bytes from memory. This introduces an early form of instruction pipelining, greatly improving processing efficiency by overlapping the fetch and execution phases.\n\n- **Segment Registers**:\n  The 8086 microprocessors operate on a segmented memory architecture with a 20-bit physical address space ($1\\text{ MB}$). It uses four 16-bit segment registers:\n  1. **CS (Code Segment)**: Points to the current code/program execution area.\n  2. **DS (Data Segment)**: Points to the data area.\n  3. **SS (Stack Segment)**: Used for temporary data and return addresses.\n  4. **ES (Extra Segment)**: Points to an auxiliary segment usually used for string operations.\n  Physical Address calculation: $\\text{Physical Address} = (\\text{Segment Register} \\times 10\\text{H}) + \\text{Offset}$.\n\n- **Flag Register**:\n  A 16-bit register that contains 9 active flags, divided into two categories:\n  1. **Status Flags** (6 flags: Carry, Parity, Auxiliary Carry, Zero, Sign, Overflow): Reflect the outcome of arithmetic and logic operations.\n  2. **Control Flags** (3 flags: Trap, Interrupt, Direction): Control operational aspects of the CPU (such as single-stepping, interrupt enabling, and direction of string scanning).",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "13 b)",
+            "question_text": "With the help of a neat labelled diagram, draw the architecture of the 8086, clearly showing the Bus Interface Unit (BIU) and Execution Unit (EU). (5 marks)",
+            "marks": 5,
+            "answer": "The architecture of the 8086 is split into two primary processing units working concurrently:\n\n1. **Bus Interface Unit (BIU)**:\n   - **Role**: Handles all external data, address, and control transfers. It fetches instructions and controls data read/write from/to memory and I/O.\n   - **Components**:\n     - Segment Registers: CS, DS, SS, ES\n     - Instruction Pointer (IP)\n     - Address Generation Circuit (generates 20-bit physical addresses)\n     - 6-Byte Instruction Queue\n\n2. **Execution Unit (EU)**:\n   - **Role**: Decodes and executes instruction codes fetched by the BIU.\n   - **Components**:\n     - Arithmetic Logic Unit (ALU)\n     - Flag Register\n     - General-Purpose Registers: AX (Accumulator), BX (Base), CX (Count), DX (Data)\n     - Index & Pointer Registers: SP (Stack Pointer), BP (Base Pointer), SI (Source Index), DI (Destination Index)\n     - EU Control Circuitry\n\n*(Diagram description: Schematic blocks representing the BIU and EU linked via an internal bus, highlighting the instruction queue linking the BIU memory interface to the EU decoder).* ",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "14",
+            "question_text": "List and explain addressing modes of the 8086 microprocessor with suitable examples. For instance, consider the following instructions and identify the addressing modes used:\ni) MOV AX, [BX + SI] (3 marks)\nii) MOV AL, [BX + 0050H] (4 marks)\niii) MOV AX, [SI] (3 marks)",
+            "marks": 10,
+            "answer": "### Addressing Modes of the 8086 Microprocessor:\nAddressing modes indicate how operand operands are located. Key modes include:\n- **Immediate**: Operand is specified directly inside the instruction (e.g., `MOV AX, 1234H`).\n- **Register**: Operands are in CPU registers (e.g., `MOV AX, BX`).\n- **Direct**: Memory offset is explicitly written inside brackets (e.g., `MOV AX, [5000H]`).\n- **Register Indirect**: The operand's offset is held in index/base registers (e.g., `MOV AX, [SI]`).\n- **Based Relative**: Operand address is computed by adding displacement to base register `BX` or `BP`.\n- **Indexed Relative**: Offset is computed by adding displacement to index register `SI` or `DI`.\n- **Based Indexed**: Offset is calculated as $[\\text{Base Register}] + [\\text{Index Register}]$.\n- **Based Indexed with Displacement**: Offset is calculated as $[\\text{Base Register}] + [\\text{Index Register}] + \\text{displacement}$.\n\n### Identification of Specific Instructions:\n\n**i) `MOV AX, [BX + SI]`**\n- **Addressing Mode**: Based Indexed Addressing Mode.\n- **Explanation**: The Effective Address (EA) of the data operand is calculated by summing the contents of the base register `BX` and the index register `SI`. (Formula: $\\text{EA} = [\\text{BX}] + [\\text{SI}]$). The actual memory location accessed is relative to the Data Segment (DS).\n\n**ii) `MOV AL, [BX + 0050H]`**\n- **Addressing Mode**: Based Relative (or Register Relative / Based with Displacement) Addressing Mode.\n- **Explanation**: The Effective Address (EA) is obtained by adding a 16-bit direct numerical displacement ($0050\\text{H}$) to the contents of the base register `BX`. (Formula: $\\text{EA} = [\\text{BX}] + 0050\\text{H}$). The Data Segment (DS) is used to find the physical address.\n\n**iii) `MOV AX, [SI]`**\n- **Addressing Mode**: Register Indirect Addressing Mode.\n- **Explanation**: The offset / Effective Address of the source memory operand is stored within the index register `SI` itself. (Formula: $\\text{EA} = [\\text{SI}]$).",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "15 a)",
+            "question_text": "Compare single-bus and multi-bus organizations in computer architecture. Highlight their advantages and disadvantages with neat diagrams. (5 Marks)",
+            "marks": 5,
+            "answer": "### Comparison between Single-Bus and Multi-Bus Organizations:\n\n| Attribute | Single-Bus Organization | Multi-Bus Organization |\n| :--- | :--- | :--- |\n| **Definition** | A system configuration where all functional modules (ALU, registers, memory, I/O) share one single common bus. | A configuration using multiple specialized buses to interconnect functional units. |\n| **Concurrency** | Low. Only one transfer can occupy the bus at any given instant. | High. Simultaneous data transfers can occur on different buses. |\n| **Performance** | Slow. Suffers from high bus contention / bottlenecking. | Fast. Higher aggregate bandwidth and throughput. |\n| **Cost** | Cheaper and simpler structure. | Higher cost due to extra buses and multiplexing logic. |\n| **Flexibility** | Highly modular, easy to interface new modules. | Complex design, expansion requires careful bus-interface routing. |\n\n#### Diagrams Overview:\n- **Single-Bus Diagram**: Features CPU register files, ALU, Memory, and I/O linked to a single horizontal shared bus line.\n- **Multi-Bus Diagram**: Features multiple parallel buses (e.g., Bus A, Bus B, Bus C) connecting the input registers and outputs of the ALU, preventing idle cycles.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "15 b)",
+            "question_text": "Discuss the memory hierarchy and Memory Locations and Addresses. (5 Marks)",
+            "marks": 5,
+            "answer": "### 1. Memory Hierarchy\nThe memory hierarchy is a pyramid system designed to optimize memory cost, performance, and capacity. \n- **Concept**: Faster memory technologies are more expensive per bit and have lower capacities. Therefore, they are placed closer to the processor. Slower, cheaper storage systems sit further away.\n- **Hierarchy levels (top to bottom)**:\n  1. **Processor Registers**: Ultra-fast (single cycle), minimal capacity (bytes).\n  2. **Cache Memory (L1, L2, L3)**: Fast SRAM technology used to store active lines of instructions/data.\n  3. **Main Memory (DRAM/RAM)**: Medium speed, gigabytes of capacity, holds executing system code and applications.\n  4. **Secondary Storage (SSD, HDD)**: Slow non-volatile storage, terabytes of capacity.\n\n### 2. Memory Locations and Addresses\n- **Memory Cells and Addresses**: Computer memory consists of a sequence of basic storage units (typically bytes). To read or write a specific unit, each cell is assigned a unique numerical label called its **Address**.\n- **Byte Addressability**: Most architectures are byte-addressable, meaning each individual byte (8 bits) has a distinct address.\n- **Word Addressability**: Multi-byte units (e.g., 16-bit words, 32-bit words, 64-bit words) are accessed starting at their base address. Alignment issues can arise (e.g., accessing words at even vs. odd addresses).\n- **Endianness**:\n  - *Little-Endian*: Least Significant Byte (LSB) is stored at the lowest memory address.\n  - *Big-Endian*: Most Significant Byte (MSB) is stored at the lowest memory address.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        }
+    ]
+}
