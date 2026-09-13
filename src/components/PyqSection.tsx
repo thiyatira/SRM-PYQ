@@ -743,6 +743,120 @@ const SEM_COLORS: Record<number, { gradient: string; ring: string; badge: string
 };
 
 /* ═══════════════════════════════════════════════════════════════════════════
+   SELECTOR CARD ICONS & HELPERS (Champagne/Obsidian Card Style)
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+function ForwardArrowIcon({ className = "w-6 h-6" }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M12.293 4.293a1 1 0 011.414 0l6.5 6.5a1 1 0 010 1.414l-6.5 6.5a1 1 0 01-1.414-1.414L17.086 13H4a1 1 0 110-2h13.086l-4.793-4.793a1 1 0 010-1.414z" />
+    </svg>
+  );
+}
+
+function getSemesterBadgeIcon(semId: number) {
+  switch (semId) {
+    case 1:
+      return (
+        <svg className="w-7 h-7 sm:w-8 sm:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.8}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+        </svg>
+      );
+    case 2:
+      return (
+        <svg className="w-7 h-7 sm:w-8 sm:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.8}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+        </svg>
+      );
+    case 3:
+      return (
+        <svg className="w-7 h-7 sm:w-8 sm:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.8}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        </svg>
+      );
+    case 4:
+      return (
+        <svg className="w-7 h-7 sm:w-8 sm:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.8}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+        </svg>
+      );
+    default:
+      return (
+        <svg className="w-7 h-7 sm:w-8 sm:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.8}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+        </svg>
+      );
+  }
+}
+
+function getSubjectBadgeIcon(code: string, name: string) {
+  const n = name.toLowerCase();
+  const c = code.toUpperCase();
+  // Programming & Software Engineering
+  if (
+    c.includes("CSC") ||
+    c.includes("CSS") ||
+    n.includes("programming") ||
+    n.includes("python") ||
+    n.includes("java") ||
+    n.includes("c++") ||
+    n.includes("software")
+  ) {
+    return (
+      <svg className="w-7 h-7 sm:w-8 sm:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.8}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+      </svg>
+    );
+  }
+  // Data Structures & Algorithms / Databases
+  if (n.includes("data") || n.includes("algorithm") || n.includes("structure") || n.includes("database") || n.includes("sql")) {
+    return (
+      <svg className="w-7 h-7 sm:w-8 sm:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.8}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+      </svg>
+    );
+  }
+  // Mathematics & Statistics
+  if (c.includes("MAT") || n.includes("math") || n.includes("calculus") || n.includes("discrete") || n.includes("probability")) {
+    return (
+      <svg className="w-7 h-7 sm:w-8 sm:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.8}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+      </svg>
+    );
+  }
+  // Hardware / Digital Systems / Electronics
+  if (c.includes("ECE") || c.includes("EET") || n.includes("digital") || n.includes("hardware") || n.includes("architecture") || n.includes("microprocessor")) {
+    return (
+      <svg className="w-7 h-7 sm:w-8 sm:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.8}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+      </svg>
+    );
+  }
+  // Physics / Chemistry / Sciences
+  if (c.includes("CYB") || c.includes("PYB") || n.includes("physics") || n.includes("chemistry")) {
+    return (
+      <svg className="w-7 h-7 sm:w-8 sm:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.8}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+      </svg>
+    );
+  }
+  // AI / Machine Learning / Intelligence
+  if (n.includes("ai") || n.includes("intelligence") || n.includes("machine") || n.includes("learning")) {
+    return (
+      <svg className="w-7 h-7 sm:w-8 sm:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.8}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+      </svg>
+    );
+  }
+  // Default: Academic Book
+  return (
+    <svg className="w-7 h-7 sm:w-8 sm:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.8}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+    </svg>
+  );
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
    COMPONENT
    ═══════════════════════════════════════════════════════════════════════════ */
 
@@ -1049,21 +1163,24 @@ const PyqSection: React.FC = () => {
                     key={sub.code}
                     type="button"
                     onClick={() => navigateToSubject(sub.code)}
-                    className="w-full text-left px-4 py-3 hover:bg-gray-50 dark:hover:bg-neutral-700/70 transition-colors flex items-center gap-3 border-b border-gray-100 dark:border-neutral-700/50 last:border-b-0"
+                    className="w-full text-left px-4 py-3 hover:bg-[#F3EBD5] dark:hover:bg-neutral-700/70 transition-colors flex items-center gap-3 border-b border-gray-100 dark:border-neutral-700/50 last:border-b-0"
                   >
-                    <span className={`text-lg flex-shrink-0`}>{SEM_COLORS[sub.semester.id]?.icon || "📘"}</span>
-                    <div className="min-w-0">
+                    <div className="w-9 h-9 rounded-full bg-white dark:bg-neutral-900 border border-[#DFCFA5] dark:border-neutral-700 flex items-center justify-center text-[#A58338] dark:text-amber-400 flex-shrink-0">
+                      {getSubjectBadgeIcon(sub.code, sub.name)}
+                    </div>
+                    <div className="min-w-0 flex-1">
                       <div className="font-semibold text-sm text-gray-900 dark:text-gray-100 truncate">
                         {sub.name}
                       </div>
                       <div className="text-xs text-gray-500 dark:text-gray-400 flex items-center gap-2">
-                        <span className="font-mono">{sub.code}</span>
+                        <span className="font-mono text-amber-800 dark:text-amber-300">{sub.code}</span>
                         <span className="text-gray-300 dark:text-neutral-600">·</span>
                         <span>{sub.semester.name}</span>
                         <span className="text-gray-300 dark:text-neutral-600">·</span>
                         <span>{sub.files.length} paper{sub.files.length !== 1 ? "s" : ""}</span>
                       </div>
                     </div>
+                    <ForwardArrowIcon className="w-5 h-5 text-[#B28B38] dark:text-amber-400 flex-shrink-0 opacity-70" />
                   </button>
                 ))
               )}
@@ -1073,14 +1190,14 @@ const PyqSection: React.FC = () => {
       </div>
 
       {/* ── Breadcrumb ─────────────────────────────────────────────────── */}
-      <div className="flex items-center gap-2 text-sm mb-6 flex-wrap">
+      <div className="max-w-2xl mx-auto flex items-center gap-2 text-sm mb-6 flex-wrap px-1">
         <button
           type="button"
           onClick={() => setNav({ view: "semesters" })}
           className={`font-medium transition-colors ${
             nav.view === "semesters"
-              ? "text-gray-900 dark:text-gray-100"
-              : "text-blue-600 dark:text-blue-400 hover:underline"
+              ? "text-gray-900 dark:text-gray-100 font-semibold"
+              : "text-[#8C6B25] dark:text-amber-400 hover:underline"
           }`}
         >
           All Semesters
@@ -1093,8 +1210,8 @@ const PyqSection: React.FC = () => {
               onClick={() => setNav({ view: "subjects", semesterId: activeSemester.id })}
               className={`font-medium transition-colors ${
                 nav.view === "subjects"
-                  ? "text-gray-900 dark:text-gray-100"
-                  : "text-blue-600 dark:text-blue-400 hover:underline"
+                  ? "text-gray-900 dark:text-gray-100 font-semibold"
+                  : "text-[#8C6B25] dark:text-amber-400 hover:underline"
               }`}
             >
               {activeSemester.name}
@@ -1104,7 +1221,7 @@ const PyqSection: React.FC = () => {
         {activeSubject && (
           <>
             <span className="text-gray-400 dark:text-neutral-600">›</span>
-            <span className="font-medium text-gray-900 dark:text-gray-100 truncate max-w-[250px]">
+            <span className="font-semibold text-gray-900 dark:text-gray-100 truncate max-w-[280px]">
               {activeSubject.code}: {activeSubject.name}
             </span>
           </>
@@ -1112,90 +1229,187 @@ const PyqSection: React.FC = () => {
       </div>
 
       {/* ═══════════════════════════════════════════════════════════════ */}
-      {/* VIEW: Semester Cards                                          */}
+      {/* VIEW: Semester Cards (Styled matching reference design)        */}
       {/* ═══════════════════════════════════════════════════════════════ */}
       {nav.view === "semesters" && (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {SEMESTERS.map((sem) => {
-            const colors = SEM_COLORS[sem.id] ?? SEM_COLORS[1];
-            const paperCount = sem.subjects.reduce((sum, s) => sum + s.files.length, 0);
-            return (
-              <button
-                key={sem.id}
-                type="button"
-                onClick={() => setNav({ view: "subjects", semesterId: sem.id })}
-                className={`group relative overflow-hidden rounded-2xl border border-gray-200 dark:border-neutral-700 bg-gradient-to-br ${colors.gradient} p-6 text-left shadow-sm hover:shadow-lg hover:ring-2 ${colors.ring} transition-all duration-300 hover:-translate-y-0.5`}
-              >
-                <div className="text-3xl mb-3">{colors.icon}</div>
-                <h3 className="text-lg font-bold text-gray-900 dark:text-gray-100 mb-1">
-                  {sem.name}
-                </h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400">
-                  {sem.subjects.length} subject{sem.subjects.length !== 1 ? "s" : ""}
-                  <span className="text-gray-300 dark:text-neutral-600 mx-1.5">·</span>
-                  {paperCount} paper{paperCount !== 1 ? "s" : ""}
-                </p>
-                {/* Decorative arrow */}
-                <div className="absolute top-4 right-4 text-gray-300 dark:text-neutral-600 group-hover:text-gray-500 dark:group-hover:text-neutral-400 transition-colors">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
-              </button>
-            );
-          })}
-        </div>
-      )}
+        <div className="max-w-2xl mx-auto">
+          <div className="text-center mb-6">
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-neutral-100">
+              Select Semester
+            </h2>
+            <p className="text-xs sm:text-sm text-gray-500 dark:text-neutral-400 mt-1">
+              Choose your semester to access subjects and question papers
+            </p>
+          </div>
 
-      {/* ═══════════════════════════════════════════════════════════════ */}
-      {/* VIEW: Subject Cards (within a semester)                       */}
-      {/* ═══════════════════════════════════════════════════════════════ */}
-      {nav.view === "subjects" && activeSemester && (
-        <>
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-5">
-            {activeSemester.name}
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {activeSemester.subjects.map((sub) => {
-              const colors = SEM_COLORS[activeSemester.id] ?? SEM_COLORS[1];
-              const hasPapers = sub.files.length > 0;
+          <div className="space-y-3.5 sm:space-y-4">
+            {SEMESTERS.map((sem) => {
+              const paperCount = sem.subjects.reduce((sum, s) => sum + s.files.length, 0);
               return (
                 <button
-                  key={sub.code}
+                  key={sem.id}
                   type="button"
-                  onClick={() => navigateToSubject(sub.code)}
-                  disabled={!hasPapers}
-                  className={`group relative rounded-xl border p-5 text-left transition-all duration-200 ${
-                    hasPapers
-                      ? "border-gray-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 shadow-sm hover:shadow-md hover:ring-2 " +
-                        colors.ring +
-                        " hover:-translate-y-0.5 cursor-pointer"
-                      : "border-gray-200/60 dark:border-neutral-700/50 bg-gray-50 dark:bg-neutral-800/50 opacity-60 cursor-not-allowed"
-                  }`}
+                  onClick={() => setNav({ view: "subjects", semesterId: sem.id })}
+                  className="group relative w-full overflow-hidden rounded-[24px] border p-4 sm:p-5 text-left transition-all duration-300 flex items-center gap-4 sm:gap-5 bg-gradient-to-r from-[#F7F2E7] via-[#F1E7D3] to-[#E9D9B7] border-[#DFCFA7] shadow-[0_4px_18px_-2px_rgba(168,136,70,0.14)] hover:shadow-[0_8px_26px_-4px_rgba(168,136,70,0.25)] hover:-translate-y-0.5 hover:border-[#CFBC8B] dark:from-[#191921] dark:via-[#1F1E27] dark:to-[#262320] dark:border-neutral-700/70 dark:shadow-[0_4px_22px_rgba(0,0,0,0.45)] dark:hover:border-amber-500/50 dark:hover:shadow-[0_8px_30px_rgba(245,158,11,0.18)] dark:hover:-translate-y-0.5 active:scale-[0.99] cursor-pointer"
                 >
-                  <div className="flex items-start justify-between gap-2 mb-2">
-                    <span className={`inline-block text-xs font-mono font-bold px-2.5 py-1 rounded-lg ${colors.badge}`}>
-                      {sub.code}
-                    </span>
-                    {hasPapers && (
-                      <span className="text-xs text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-neutral-700 px-2 py-0.5 rounded-full whitespace-nowrap">
-                        {sub.files.length} paper{sub.files.length !== 1 ? "s" : ""}
-                      </span>
-                    )}
+                  {/* Right curved accent crescent overlay */}
+                  <div
+                    aria-hidden="true"
+                    className="absolute -right-8 sm:-right-6 top-1/2 -translate-y-1/2 w-36 sm:w-44 h-36 sm:h-44 rounded-full pointer-events-none transition-transform duration-300 group-hover:scale-105 bg-[#E4D1A7]/75 dark:bg-amber-400/[0.08]"
+                  />
+
+                  {/* Left circular badge */}
+                  <div className="relative z-10 w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center flex-shrink-0 bg-white/95 dark:bg-[#121217] border border-[#DECFA5] dark:border-neutral-700/90 shadow-sm dark:shadow-inner text-[#A58338] dark:text-amber-400 group-hover:scale-105 transition-transform duration-300">
+                    {getSemesterBadgeIcon(sem.id)}
                   </div>
-                  <h3 className="font-semibold text-gray-900 dark:text-gray-100 text-sm leading-snug">
-                    {sub.name}
-                  </h3>
-                  {!hasPapers && (
-                    <p className="text-xs text-gray-400 dark:text-gray-500 mt-2 italic">
-                      No papers available yet
+
+                  {/* Center Content */}
+                  <div className="flex-1 min-w-0 relative z-10 py-0.5">
+                    <h3 className="text-base sm:text-lg font-bold text-[#2A2317] dark:text-neutral-100 tracking-tight leading-snug group-hover:text-amber-950 dark:group-hover:text-white transition-colors">
+                      {sem.name}
+                    </h3>
+                    <p className="text-xs sm:text-sm text-[#70624D] dark:text-neutral-400 mt-0.5 font-medium flex items-center gap-1.5 flex-wrap">
+                      <span>{sem.subjects.length} Subjects</span>
+                      <span className="opacity-40">·</span>
+                      <span>{paperCount} Question Papers</span>
                     </p>
-                  )}
+                  </div>
+
+                  {/* Right forward arrow */}
+                  <div className="relative z-10 flex-shrink-0 w-10 sm:w-12 h-10 sm:h-12 flex items-center justify-center text-[#B28B38] dark:text-amber-400 group-hover:text-[#8D6B24] dark:group-hover:text-amber-300 group-hover:translate-x-1 transition-all duration-300">
+                    <ForwardArrowIcon className="w-6 h-6 sm:w-7 sm:h-7" />
+                  </div>
                 </button>
               );
             })}
           </div>
-        </>
+        </div>
+      )}
+
+      {/* ═══════════════════════════════════════════════════════════════ */}
+      {/* VIEW: Subject Cards (Styled matching reference design)         */}
+      {/* ═══════════════════════════════════════════════════════════════ */}
+      {nav.view === "subjects" && activeSemester && (
+        <div className="max-w-2xl mx-auto">
+          {/* Top navigation controls */}
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
+            <button
+              type="button"
+              onClick={() => setNav({ view: "semesters" })}
+              className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#8C6B25] dark:text-amber-400 hover:text-[#674D16] dark:hover:text-amber-300 transition-colors self-start"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+              </svg>
+              <span>Back to Semesters</span>
+            </button>
+
+            {/* Quick semester switcher pills */}
+            <div className="flex items-center gap-1 p-1 rounded-xl bg-gray-200/70 dark:bg-neutral-800 border border-gray-300/60 dark:border-neutral-700/60 text-xs self-start sm:self-auto overflow-x-auto max-w-full">
+              {SEMESTERS.map((s) => (
+                <button
+                  key={s.id}
+                  type="button"
+                  onClick={() => setNav({ view: "subjects", semesterId: s.id })}
+                  className={`px-3 py-1 font-semibold rounded-lg transition-all whitespace-nowrap ${
+                    s.id === activeSemester.id
+                      ? "bg-white dark:bg-neutral-700 text-gray-900 dark:text-amber-300 shadow-sm"
+                      : "text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
+                  }`}
+                >
+                  {s.name}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className="text-center mb-6">
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-neutral-100">
+              {activeSemester.name} Subjects
+            </h2>
+            <p className="text-xs sm:text-sm text-gray-500 dark:text-neutral-400 mt-1">
+              Select a subject to view all previous year questions and answer keys
+            </p>
+          </div>
+
+          <div className="space-y-3.5 sm:space-y-4">
+            {activeSemester.subjects.map((sub) => {
+              const hasPapers = sub.files.length > 0;
+              if (hasPapers) {
+                return (
+                  <button
+                    key={sub.code}
+                    type="button"
+                    onClick={() => navigateToSubject(sub.code)}
+                    className="group relative w-full overflow-hidden rounded-[24px] border p-4 sm:p-5 text-left transition-all duration-300 flex items-center gap-4 sm:gap-5 bg-gradient-to-r from-[#F7F2E7] via-[#F1E7D3] to-[#E9D9B7] border-[#DFCFA7] shadow-[0_4px_18px_-2px_rgba(168,136,70,0.14)] hover:shadow-[0_8px_26px_-4px_rgba(168,136,70,0.25)] hover:-translate-y-0.5 hover:border-[#CFBC8B] dark:from-[#191921] dark:via-[#1F1E27] dark:to-[#262320] dark:border-neutral-700/70 dark:shadow-[0_4px_22px_rgba(0,0,0,0.45)] dark:hover:border-amber-500/50 dark:hover:shadow-[0_8px_30px_rgba(245,158,11,0.18)] dark:hover:-translate-y-0.5 active:scale-[0.99] cursor-pointer"
+                  >
+                    {/* Right curved accent crescent overlay */}
+                    <div
+                      aria-hidden="true"
+                      className="absolute -right-8 sm:-right-6 top-1/2 -translate-y-1/2 w-36 sm:w-44 h-36 sm:h-44 rounded-full pointer-events-none transition-transform duration-300 group-hover:scale-105 bg-[#E4D1A7]/75 dark:bg-amber-400/[0.08]"
+                    />
+
+                    {/* Left circular badge */}
+                    <div className="relative z-10 w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center flex-shrink-0 bg-white/95 dark:bg-[#121217] border border-[#DECFA5] dark:border-neutral-700/90 shadow-sm dark:shadow-inner text-[#A58338] dark:text-amber-400 group-hover:scale-105 transition-transform duration-300">
+                      {getSubjectBadgeIcon(sub.code, sub.name)}
+                    </div>
+
+                    {/* Center Content */}
+                    <div className="flex-1 min-w-0 relative z-10 py-0.5">
+                      <h3 className="text-base sm:text-lg font-bold text-[#2A2317] dark:text-neutral-100 tracking-tight leading-snug group-hover:text-amber-950 dark:group-hover:text-white transition-colors truncate sm:whitespace-normal">
+                        {sub.name}
+                      </h3>
+                      <p className="text-xs sm:text-sm text-[#70624D] dark:text-neutral-400 mt-0.5 font-medium flex items-center gap-1.5 flex-wrap">
+                        <span className="font-mono px-1.5 py-0.5 rounded bg-black/5 dark:bg-white/10 text-amber-900 dark:text-amber-300">
+                          {sub.code}
+                        </span>
+                        <span className="opacity-40">·</span>
+                        <span>{sub.files.length} Question Paper{sub.files.length !== 1 ? "s" : ""}</span>
+                      </p>
+                    </div>
+
+                    {/* Right forward arrow */}
+                    <div className="relative z-10 flex-shrink-0 w-10 sm:w-12 h-10 sm:h-12 flex items-center justify-center text-[#B28B38] dark:text-amber-400 group-hover:text-[#8D6B24] dark:group-hover:text-amber-300 group-hover:translate-x-1 transition-all duration-300">
+                      <ForwardArrowIcon className="w-6 h-6 sm:w-7 sm:h-7" />
+                    </div>
+                  </button>
+                );
+              }
+
+              // Disabled card for subjects without papers
+              return (
+                <div
+                  key={sub.code}
+                  className="group relative w-full overflow-hidden rounded-[24px] border p-4 sm:p-5 text-left flex items-center gap-4 sm:gap-5 bg-gradient-to-r from-[#F7F2E7]/60 via-[#F1E7D3]/60 to-[#E9D9B7]/60 border-[#DFCFA7]/60 dark:from-[#191921]/60 dark:via-[#1F1E27]/60 dark:to-[#262320]/60 dark:border-neutral-800/60 opacity-60 cursor-not-allowed"
+                >
+                  <div
+                    aria-hidden="true"
+                    className="absolute -right-8 sm:-right-6 top-1/2 -translate-y-1/2 w-36 sm:w-44 h-36 sm:h-44 rounded-full pointer-events-none bg-[#E4D1A7]/35 dark:bg-white/[0.02]"
+                  />
+
+                  <div className="relative z-10 w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center flex-shrink-0 bg-white/70 dark:bg-neutral-800/80 border border-[#DECFA5]/60 dark:border-neutral-700/50 text-gray-400 dark:text-neutral-500">
+                    {getSubjectBadgeIcon(sub.code, sub.name)}
+                  </div>
+
+                  <div className="flex-1 min-w-0 relative z-10 py-0.5">
+                    <h3 className="text-base sm:text-lg font-semibold text-gray-600 dark:text-neutral-300 tracking-tight leading-snug truncate sm:whitespace-normal">
+                      {sub.name}
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-500 dark:text-neutral-500 mt-0.5 font-medium flex items-center gap-1.5 flex-wrap">
+                      <span className="font-mono">{sub.code}</span>
+                      <span className="opacity-40">·</span>
+                      <span className="italic">Papers coming soon</span>
+                    </p>
+                  </div>
+
+                  <div className="relative z-10 flex-shrink-0 w-10 sm:w-12 h-10 sm:h-12 flex items-center justify-center text-gray-400 dark:text-neutral-600">
+                    <ForwardArrowIcon className="w-6 h-6 sm:w-7 sm:h-7 opacity-30" />
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
       )}
 
       {/* ═══════════════════════════════════════════════════════════════ */}
