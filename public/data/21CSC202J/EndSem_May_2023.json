@@ -1,0 +1,263 @@
+{
+    "formal_filename": "EndSem_May_2023.json",
+    "paper_title": "B.Tech/ M.Tech (Integrated) DEGREE EXAMINATION, MAY 2023 - Third & Fourth Semester - 21CSC202J OPERATING SYSTEMS",
+    "source": "EndSem May 2023",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "What is an operating system?\n(A) Interface between the hardware and application programs\n(B) Collection of programs that manages hardware resources\n(C) System service provider to the application programs\n(D) All of the mentioned",
+            "marks": 1,
+            "answer": "(D) All of the mentioned\n\nRationale: An operating system serves as an interface between user applications and hardware, manages system resources efficiently, and provides a platform for applications to execute services.",
+            "answer_source": "generated",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "2",
+            "question_text": "CPU scheduling is the basis of _________\n(A) Multiprogramming operating systems\n(B) Larger memory sized systems\n(C) Multiprocessor systems\n(D) Multicore systems",
+            "marks": 1,
+            "answer": "(A) Multiprogramming operating systems\n\nRationale: Multiprogramming OS relies on CPU scheduling to switch the CPU among processes to maximize CPU utilization.",
+            "answer_source": "generated",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "3",
+            "question_text": "Which of the following does not interrupt a running process?\n(A) A device\n(B) Timer\n(C) Scheduled job\n(D) Power failure",
+            "marks": 1,
+            "answer": "(C) Scheduled job\n\nRationale: Devices, timers, and power failure events generate hardware interrupts. A scheduled job is a software entity managed by the scheduler, not an asynchronous interrupt event.",
+            "answer_source": "generated",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "4",
+            "question_text": "What is the main function of the command interpreter?\n(A) To provide the interface between the API and application program\n(B) To handle the files in the operating system\n(C) To get and execute the next user-specified command\n(D) To use the allotted memory space",
+            "marks": 1,
+            "answer": "(C) To get and execute the next user-specified command\n\nRationale: The command interpreter (shell) reads commands specified by the user and executes them by invoking the corresponding system programs or system calls.",
+            "answer_source": "generated",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "5",
+            "question_text": "What is a process control block?\n(A) Process type variable\n(B) Data structure\n(C) A secondary storage section\n(D) A block in memory",
+            "marks": 1,
+            "answer": "(B) Data structure\n\nRationale: A Process Control Block (PCB) is a data structure used by the operating system to store all the information related to a specific process.",
+            "answer_source": "generated",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "6",
+            "question_text": "A single thread of control allows the process to perform _________\n(A) Only one task at a time\n(B) Multiple task at a time\n(C) Only two task at a time\n(D) Multiple program execution",
+            "marks": 1,
+            "answer": "(A) Only one task at a time\n\nRationale: A single thread represents a single sequential flow of control, executing only one instruction/task at any given instant.",
+            "answer_source": "generated",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "7",
+            "question_text": "What will happen when a process terminates?\n(A) It is removed from all queues\n(B) It is removed from all except the job queue\n(C) It's process control block is de-allocated\n(D) It's memory is released",
+            "marks": 1,
+            "answer": "(A) It is removed from all queues\n\nRationale: Upon process termination, the operating system unlinks the process from all scheduling and ready/wait queues and reclaims its resources.",
+            "answer_source": "generated",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "8",
+            "question_text": "Which module gives control of the CPU to the process selected by the short term schedule?\n(A) Dispatcher\n(B) Interrupt\n(C) Scheduler\n(D) Counter",
+            "marks": 1,
+            "answer": "(A) Dispatcher\n\nRationale: The dispatcher module assigns control of the CPU to the process selected by the short-term scheduler, handling context switching and switching to user mode.",
+            "answer_source": "generated",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "9",
+            "question_text": "The interval from the time of submission of a process to the time of completion is turned as _________\n(A) Waiting time\n(B) Response time\n(C) Sleeping time\n(D) Turnaround time",
+            "marks": 1,
+            "answer": "(D) Turnaround time\n\nRationale: Turnaround time is defined as the elapsed time between process submission and its final completion.",
+            "answer_source": "generated",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "10",
+            "question_text": "Which algorithm is defined in time quantum?\n(A) Shortest job scheduling\n(B) Round Robin scheduling\n(C) Priority scheduling\n(D) Multilevel queue scheduling",
+            "marks": 1,
+            "answer": "(B) Round Robin scheduling\n\nRationale: Round Robin (RR) scheduling uses a fixed unit of CPU time, called a time quantum or time slice, to schedule processes cyclically.",
+            "answer_source": "generated",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "11",
+            "question_text": "A deadlock avoidance algorithm dynamically examines the _________ to ensure that a circular condition can never exist.\n(A) Resource allocation state\n(B) System storage state\n(C) Operating system\n(D) Resources",
+            "marks": 1,
+            "answer": "(A) Resource allocation state\n\nRationale: Deadlock avoidance algorithms (such as Banker's algorithm) monitor the resource-allocation state dynamically to ensure the system always remains in a safe state.",
+            "answer_source": "generated",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "12",
+            "question_text": "All unsafe states are _________\n(A) Deadlocks\n(B) Not deadlocks\n(C) Fatals\n(D) Blocks",
+            "marks": 1,
+            "answer": "(B) Not deadlocks\n\nRationale: An unsafe state is not necessarily a deadlock state; rather, it is a state from which the system cannot guarantee avoiding a future deadlock under worst-case resource requests.",
+            "answer_source": "generated",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "13",
+            "question_text": "In internal fragmentation memory is internal to a partition and _________\n(A) Is being used\n(B) Is not being used\n(C) Is always used\n(D) Is used when demanded",
+            "marks": 1,
+            "answer": "(B) Is not being used\n\nRationale: Internal fragmentation occurs when allocated memory is slightly larger than the requested size, leaving unused wasted memory internal to the partition.",
+            "answer_source": "generated",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "14",
+            "question_text": "Logical memory is broken into blocks of the same size called _________\n(A) Frames\n(B) Pages\n(C) Backing store\n(D) Cubes",
+            "marks": 1,
+            "answer": "(B) Pages\n\nRationale: In paging memory management, logical address space is divided into fixed-size blocks called pages, while physical memory is divided into frames.",
+            "answer_source": "generated",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "15",
+            "question_text": "The _________ is used as an index into the page table.\n(A) Frame bit\n(B) Page number\n(C) Page offset\n(D) Frame offset",
+            "marks": 1,
+            "answer": "(B) Page number\n\nRationale: The logical address generated by the CPU consists of a page number ($p$) and page offset ($d$). $p$ is used as an index into the page table to retrieve the physical frame number.",
+            "answer_source": "generated",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "16",
+            "question_text": "Paging increases the _________ time.\n(A) Sleeping\n(B) Waiting\n(C) Execution\n(D) Context-switching",
+            "marks": 1,
+            "answer": "(D) Context-switching\n\nRationale: Paging increases context-switching overhead because the operating system must update hardware registers pointing to page tables or flush the TLB cache when switching processes.",
+            "answer_source": "generated",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "17",
+            "question_text": "Which principle states that programs, users and even the system be given just enough privileges to perform their task?\n(A) Principle of operating system\n(B) Principle of least privilege\n(C) Principle of process scheduling\n(D) Principle of revocation",
+            "marks": 1,
+            "answer": "(B) Principle of least privilege\n\nRationale: The Principle of Least Privilege requires that users and processes are granted only the minimum necessary permissions required to execute their assigned duties.",
+            "answer_source": "generated",
+            "chapter": "Unit 5"
+        },
+        {
+            "question_number": "18",
+            "question_text": "For system protection, a process should access _________\n(A) All the resources\n(B) Only those resources for which it has authorization\n(C) Few resources but authorization is not required\n(D) External devices",
+            "marks": 1,
+            "answer": "(B) Only those resources for which it has authorization\n\nRationale: To enforce protection, processes must strictly be limited to accessing only authorized resources defined within their protection domain.",
+            "answer_source": "generated",
+            "chapter": "Unit 5"
+        },
+        {
+            "question_number": "19",
+            "question_text": "When an attempt is to make a machine or network resources unavailable to its intend users, the attack is called _________\n(A) Denial-of-service attack\n(B) Slow read attack\n(C) Spoofed attack\n(D) Starvation attack",
+            "marks": 1,
+            "answer": "(A) Denial-of-service attack\n\nRationale: A Denial-of-Service (DoS) attack aims to disrupt targeted services, making hardware or network resources inaccessible to authorized users.",
+            "answer_source": "generated",
+            "chapter": "Unit 5"
+        },
+        {
+            "question_number": "20",
+            "question_text": "Why is it difficult to revoke capabilities?\n(A) They are too many\n(B) They are not defined precisely\n(C) They are distributed throughout the system\n(D) They are access incorrectly",
+            "marks": 1,
+            "answer": "(C) They are distributed throughout the system\n\nRationale: Capability lists are distributed among various domains/processes throughout the system, making global searches and dynamic revocation complex.",
+            "answer_source": "generated",
+            "chapter": "Unit 5"
+        },
+        {
+            "question_number": "21. a.",
+            "question_text": "Write short notes about the following processing environments\n(i) Single-processor systems\n(ii) Multiprocessor systems\n(iii) Distributed systems",
+            "marks": 8,
+            "answer": "(i) **Single-processor systems**:\n- Feature a single main CPU capable of executing one general-purpose instruction sequence at a time.\n- Simple design and lower cost, but limited throughput and processing power.\n\n(ii) **Multiprocessor systems (Parallel systems)**:\n- Contain two or more processors in close communication, sharing computer bus, clock, memory, and peripheral devices.\n- Advantages include increased throughput, economy of scale, and enhanced reliability (fault tolerance).\n- Types include Symmetric Multiprocessing (SMP) and Asymmetric Multiprocessing.\n\n(iii) **Distributed systems**:\n- Collection of physically separate, independent computer systems networked together to share resources and compute power.\n- Users perceive the system as a single integrated unit.\n- Offers resource sharing, computation speedup, reliability, and communication capabilities across network nodes.",
+            "answer_source": "generated",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "21. b.",
+            "question_text": "With neat sketch explain the handling of a user application invoking the open () system call.",
+            "marks": 8,
+            "answer": "**Handling of open() System Call:**\n\n1. **User Mode Execution**: The user application executes and calls the standard library function `open(\"file.txt\", flags)`.\n2. **Trap / System Call Interface**: The library routine places the system call number for `open()` into a specific CPU register and executes a software interrupt or trap instruction (e.g., `syscall` / `int 0x80`).\n3. **Mode Switch**: The processor switches mode from **User Mode** (mode bit = 1) to **Kernel Mode** (mode bit = 0).\n4. **System Call Table Lookup**: The kernel receives the trap, indexes the system call table using the system call number, and transfers control to the `sys_open()` kernel routine.\n5. **Kernel Execution**: The kernel checks file permissions, reads file control blocks from disk, allocates a file descriptor entry in the process's open-file table, and returns the descriptor index.\n6. **Return to User Mode**: The kernel switches mode back to **User Mode** and returns control to the user application with the file descriptor.",
+            "answer_source": "generated",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "22. a.",
+            "question_text": "Explain the impact of various scheduling queues in process scheduling with a neat diagram.",
+            "marks": 8,
+            "answer": "**Scheduling Queues in Process Scheduling:**\n\nAs processes enter the system, they are placed into various queues managed by the OS:\n\n1. **Job Queue**: Contains all processes entering the system.\n2. **Ready Queue**: Contains processes resides in main memory, ready and waiting for CPU execution.\n3. **Device / I/O Queues**: Each device maintains a queue of processes waiting for access to that specific I/O device.\n\n**Process Lifecycle across Queues:**\n- A new process enters the ready queue.\n- When allocated CPU time, it executes until an event occurs:\n  - Issues an I/O request $\\rightarrow$ moved to an I/O queue.\n  - Creates a child process $\\rightarrow$ placed in wait state.\n  - Time quantum expires $\\rightarrow$ moved back to ready queue.\n  - Terminates $\\rightarrow$ removed from all queues and freed.",
+            "answer_source": "generated",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "22. b.",
+            "question_text": "With a neat sketch, explain in detail about various multithreading models.",
+            "marks": 8,
+            "answer": "**Multithreading Models:**\n\n1. **Many-to-One Model**:\n   - Maps multiple user-level threads to a single kernel thread.\n   - Thread management done by thread library in user space (efficient).\n   - *Drawback*: Entire process blocks if a thread makes a blocking system call; cannot run in parallel on multiprocessor cores.\n\n2. **One-to-One Model**:\n   - Maps each user thread to a corresponding kernel thread.\n   - Provides higher concurrency; multiple threads can run in parallel on multicore CPUs.\n   - *Drawback*: Overhead of creating a kernel thread for every user thread limit performance.\n\n3. **Many-to-Many Model**:\n   - Multiplexes many user-level threads to a smaller or equal number of kernel threads.\n   - Combines advantages of both models: high concurrency without excessive kernel thread creation overhead.",
+            "answer_source": "generated",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "23. a.",
+            "question_text": "Compare asymmetric and symmetric multiprocessing in a multi-processor scheduling.",
+            "marks": 8,
+            "answer": "**Comparison between Asymmetric and Symmetric Multiprocessing (SMP):**\n\n| Feature | Asymmetric Multiprocessing (AMP) | Symmetric Multiprocessing (SMP) |\n| :--- | :--- | :--- |\n| **Master/Slave** | One master CPU handles OS tasks/scheduling; slave CPUs run user code. | All CPUs are peers; each processor executes its own scheduling and OS tasks. |\n| **Data Sharing** | Only master CPU accesses kernel data structures, preventing data contention. | Processors share common memory; requires synchronization to access shared kernel structures. |\n| **Complexity** | Simple to design and implement. | Complex OS implementation due to locking and cache coherence. |\n| **Bottleneck** | Master CPU can become a performance bottleneck. | Distributed load, scalable, no single CPU bottleneck. |\n| **Reliability** | If master fails, entire system halts. | If one processor fails, remaining processors continue work (fault tolerant). |",
+            "answer_source": "generated",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "23. b.",
+            "question_text": "Present the schematic view of a monitor and describe it.",
+            "marks": 8,
+            "answer": "**Monitors in Process Synchronization:**\n\nA **monitor** is a high-level synchronization construct that provides an equivalent capability to semaphores but is easier to control and less error-prone.\n\n**Components of a Monitor:**\n1. **Shared Data Variables**: Local variables accessible only by monitor procedures.\n2. **Procedures / Functions**: Define access rules for shared data. Only one process can be active inside the monitor at any time (automatic mutual exclusion).\n3. **Condition Variables**: Used for synchronization mechanisms inside monitors.\n   - Operation `x.wait()`: The calling process is suspended until another process calls `x.signal()`.\n   - Operation `x.signal()`: Resumes exactly one process waiting on condition `x`.",
+            "answer_source": "generated",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "24. a.",
+            "question_text": "Explain the usage of translation look aside buffer (TLB) in paging.",
+            "marks": 8,
+            "answer": "**Translation Lookaside Buffer (TLB) in Paging:**\n\n- The TLB is a high-speed hardware associative cache used to speed up page table lookups.\n- **Address Translation Flow**:\n  1. The CPU generates a logical address containing Page Number ($p$) and Offset ($d$).\n  2. **TLB Hit**: If $p$ is present in TLB, frame number ($f$) is retrieved instantly (usually within 1 clock cycle).\n  3. **TLB Miss**: If $p$ is not in TLB, access main memory page table to retrieve frame number $f$, then update TLB.\n  4. The physical address is constructed as $(f \\times \\text{page size}) + d$.\n\n- **Effective Access Time (EAT)**:\n  $$\\text{EAT} = \\alpha \\times (\\text{TLB search time} + \\text{memory access time}) + (1 - \\alpha) \\times (\\text{TLB search time} + 2 \\times \\text{memory access time})$$\n  where $\\alpha$ is the TLB hit ratio.",
+            "answer_source": "generated",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "24. b.",
+            "question_text": "Elaborate the causes of thrashing with an example.",
+            "marks": 8,
+            "answer": "**Thrashing in Virtual Memory:**\n\nThrashing occurs when a process spends more time paging (swapping pages in and out of memory) than executing instructions.\n\n**Causes of Thrashing:**\n1. **High Degree of Multiprogramming**: As more processes enter memory, allocated physical frames per process decrease.\n2. **Insufficient Frames**: When a process does not have enough frames to hold its active working set, page faults occur continuously.\n3. **Cascade Effect**: High page fault rate leads to processes waiting in the disk queue $\\rightarrow$ CPU utilization drops $\\rightarrow$ OS increases degree of multiprogramming $\\rightarrow$ further exacerbates thrashing.\n\n**Example**:\nSuppose a program loops through a large 100-page matrix, but the OS allocates only 3 physical frames to it. Every iteration accesses pages not in memory, triggering constant page replacements and causing severe performance degradation.",
+            "answer_source": "generated",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "25. a.",
+            "question_text": "List out the various queries to be addressed while revoking the access rights.",
+            "marks": 8,
+            "answer": "**Issues/Queries in Revocation of Access Rights:**\n\n1. **Immediate vs. Delayed**: Does revocation take effect immediately, or is it deferred until the next access/session renewal?\n2. **Selective vs. General**: Does revoking access affect a specific user/domain, or does it apply globally to all users accessing the object?\n3. **Partial vs. Total**: Can a subset of rights (e.g., write permission) be revoked while keeping other rights (e.g., read permission) intact?\n4. **Temporary vs. Permanent**: Is access revoked temporarily with potential future restoration, or is it deleted permanently?",
+            "answer_source": "generated",
+            "chapter": "Unit 5"
+        },
+        {
+            "question_number": "25. b.",
+            "question_text": "Illustrate with an example on access matrix.",
+            "marks": 8,
+            "answer": "**Access Matrix:**\n\nAn Access Matrix is a security model used to represent authorization state in a system.\n- **Rows**: Represent Domains ($D_1, D_2, \\dots, D_n$)\n- **Columns**: Represent Objects ($O_1, O_2, \\dots, O_m$)\n- **Entry $Access(D_i, O_j)$**: Defines access operations allowed by domain $D_i$ on object $O_j$.\n\n**Example Matrix**:\n\n| Domain / Object | File 1 | File 2 | Printer 1 | Domain $D_2$ |\n| :--- | :--- | :--- | :--- | :--- |\n| **Domain $D_1$** | Read | Read | - | Switch |\n| **Domain $D_2$** | - | - | Print | - |\n| **Domain $D_3$** | Read | Read, Write | Print | - |\n\n- Processes in $D_1$ can read File 1, read File 2, and switch execution to $D_2$.\n- Processes in $D_3$ have read/write access to File 2 and print privileges on Printer 1.",
+            "answer_source": "generated",
+            "chapter": "Unit 5"
+        },
+        {
+            "question_number": "26",
+            "question_text": "Consider the following table of arrival time and burst time of three process. Apply pre-emptive shortest job first scheduling algorithm to schedule the process.\n\nProcess | Arrival time | Burst time\nP0 | 0 | 9\nP1 | 1 | 4\nP2 | 2 | 9",
+            "marks": 15,
+            "answer": "**Pre-emptive Shortest Job First (SRTF) Scheduling Solution:**\n\n**Process Details:**\n- $P_0$: Arrival = 0, Burst = 9\n- $P_1$: Arrival = 1, Burst = 4\n- $P_2$: Arrival = 2, Burst = 9\n\n**Execution Trace:**\n- **Time $t = 0$**: $P_0$ arrives (Remaining = 9). $P_0$ starts execution.\n- **Time $t = 1$**: $P_1$ arrives (Burst = 4). $P_0$ remaining time = 8. Since $P_1$ (4) < $P_0$ (8), $P_0$ is pre-empted and $P_1$ runs.\n- **Time $t = 2$**: $P_2$ arrives (Burst = 9). $P_1$ remaining time = 3. $P_1$ (3) < $P_0$ (8) and $P_2$ (9), so $P_1$ continues.\n- **Time $t = 5$**: $P_1$ completes its execution.\n- **Time $t = 5$**: Available processes are $P_0$ (8) and $P_2$ (9). $P_0$ executes.\n- **Time $t = 13$**: $P_0$ completes.\n- **Time $t = 13$**: $P_2$ executes.\n- **Time $t = 22$**: $P_2$ completes.\n\n**Gantt Chart:**\n`| P0 (0-1) | P1 (1-5) | P0 (5-13) | P2 (13-22) |`\n\n**Performance Metrics Calculation:**\n- **Completion Time (CT)**: $P_0 = 13$, $P_1 = 5$, $P_2 = 22$\n- **Turnaround Time (TAT = CT - AT)**:\n  - $P_0 = 13 - 0 = 13$\n  - $P_1 = 5 - 1 = 4$\n  - $P_2 = 22 - 2 = 20$\n  - **Average TAT** $= \\frac{13 + 4 + 20}{3} = \\frac{37}{3} \\approx 12.33$ units\n- **Waiting Time (WT = TAT - BT)**:\n  - $P_0 = 13 - 9 = 4$\n  - $P_1 = 4 - 4 = 0$\n  - $P_2 = 20 - 9 = 11$\n  - **Average WT** $= \\frac{4 + 0 + 11}{3} = \\frac{15}{3} = 5.0$ units",
+            "answer_source": "generated",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "27",
+            "question_text": "Explain the working of monitor solution with respect to dining-philosophers problem.",
+            "marks": 15,
+            "answer": "**Monitor Solution to the Dining-Philosophers Problem:**\n\n**Problem Definition**:\nFive philosophers sit around a round table with 5 chopsticks. Each philosopher alternates between thinking and eating. A philosopher needs both adjacent left and right chopsticks to eat.\n\n**Monitor Solution Structure**:\n\n```cpp\nmonitor DiningPhilosophers {\n    enum { THINKING, HUNGRY, EATING } state[5];\n    condition self[5];\n\n    void pickup(int i) {\n        state[i] = HUNGRY;\n        test(i);\n        if (state[i] != EATING)\n            self[i].wait();\n    }\n\n    void putdown(int i) {\n        state[i] = THINKING;\n        test((i + 4) % 5); // Test left neighbor\n        test((i + 1) % 5); // Test right neighbor\n    }\n\n    void test(int i) {\n        if ((state[(i + 4) % 5] != EATING) &&\n            (state[i] == HUNGRY) &&\n            (state[(i + 1) % 5] != EATING)) {\n            state[i] = EATING;\n            self[i].signal();\n        }\n    }\n\n    initialization_code() {\n        for (int i = 0; i < 5; i++)\n            state[i] = THINKING;\n    }\n}\n```\n\n**Working Explanation:**\n1. **Mutual Exclusion**: Monitor guarantees that only one process executes monitor routines at any given time.\n2. **Deadlock Avoidance**: A philosopher transitions to `EATING` state only if both neighbors are not currently eating (`state[(i+4)%5] != EATING` and `state[(i+1)%5] != EATING`).\n3. **Synchronization**: If chopsticks are unavailable, the philosopher waits on `self[i]`. Upon calling `putdown()`, adjacent neighbors are tested and signaled if ready to eat.",
+            "answer_source": "generated",
+            "chapter": "Unit 2"
+        }
+    ]
+}

@@ -1,0 +1,151 @@
+{
+    "formal_filename": "15CS302J_EndSem_June_2019.json",
+    "paper_title": "SRM Institute of Science and Technology, School of Computing - 21CSC202J Operating Systems (FJ1 / FJ2)",
+    "source": "FJ1 / FJ2 Aug 2024",
+    "questions": [
+        {
+            "question_number": "Part A - 1",
+            "question_text": "Program is --------- entity stored on disk and process is ---------\na) passive, active\nb) active, passive\nc) passive, passive\nd) active, active",
+            "marks": 1,
+            "answer": "a) passive, active\n\nA program is a passive entity, such as a file containing a list of instructions stored on disk (an executable file), whereas a process is an active entity, with a program counter specifying the next instruction to execute and a set of associated resources.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: PROCESS MANAGEMENT"
+        },
+        {
+            "question_number": "Part A - 2",
+            "question_text": "A process can be ---------\na) both single-threaded and multithreaded\nb) multithreaded\nc) single-threaded\nd) stack",
+            "marks": 1,
+            "answer": "a) both single-threaded and multithreaded\n\nA process can execute a single thread of control (single-threaded process) or multiple threads of control concurrently (multithreaded process).",
+            "answer_source": "generated",
+            "chapter": "Unit 2: PROCESS MANAGEMENT"
+        },
+        {
+            "question_number": "Part A - 3",
+            "question_text": "---------- Scheduler reduces the degree of multiprogramming\na) Mid-Term Scheduler\nb) CPU Scheduler\nc) Short Term Scheduler\nd) Long Term Scheduler",
+            "marks": 1,
+            "answer": "a) Mid-Term Scheduler\n\nThe medium-term (mid-term) scheduler reduces the degree of multiprogramming by swapping processes out of main memory to disk (swap space) when memory is overcommitted or a process is waiting for I/O.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: PROCESS MANAGEMENT"
+        },
+        {
+            "question_number": "Part A - 4",
+            "question_text": "Which of the following two operations are provided by the IPC facility?\na) write & delete message\nb) delete & receive message\nc) send & delete message\nd) send & receive message",
+            "marks": 1,
+            "answer": "d) send & receive message\n\nA message-passing interprocess communication (IPC) facility provides at minimum two primary operations: send(message) and receive(message).",
+            "answer_source": "generated",
+            "chapter": "Unit 2: PROCESS MANAGEMENT"
+        },
+        {
+            "question_number": "Part A - 5",
+            "question_text": "The _________ keeps track of pending and blocked bit vectors within each process's context.\na) CPU\nb) Memory\nc) Process\nd) Kernel",
+            "marks": 1,
+            "answer": "d) Kernel\n\nThe operating system kernel maintains signal status information—specifically pending and blocked signal bit masks/vectors—within each process's context / Process Control Block (PCB).",
+            "answer_source": "generated",
+            "chapter": "Unit 2: PROCESS MANAGEMENT"
+        },
+        {
+            "question_number": "Part A - 6",
+            "question_text": "What does the term \"throughput\" mean in scheduling terms?\na) The amount of time the CPU is idle\nb) The number of processes completed per unit time\nc) The total time a process spends in the system\nd) The total time taken from process submission to completion",
+            "marks": 1,
+            "answer": "b) The number of processes completed per unit time\n\nIn CPU scheduling, throughput is defined as the measure of work performed by the CPU, specifically the number of processes that complete their execution per unit of time.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: CPU Scheduling"
+        },
+        {
+            "question_number": "Part A - 7",
+            "question_text": "Identify the deadlock handling technique in the Banker's Algorithm.\na) Deadlock Prevention\nb) Deadlock Avoidance\nc) Deadlock Detection and Recovery\nd) Deadlock Ignorance",
+            "marks": 1,
+            "answer": "b) Deadlock Avoidance\n\nBanker's Algorithm is a classic deadlock avoidance algorithm that dynamically examines the resource-allocation state to ensure that a circular wait condition can never exist.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Deadlocks"
+        },
+        {
+            "question_number": "Part A - 8",
+            "question_text": "What does interrupt latency refer to in real-time operating systems?\na) The time taken for a process to complete its execution.\nb) The time from the arrival of an interrupt to the start of the interrupt service routine (ISR).\nc) The time from the completion of an interrupt service routine (ISR) to the start of the next interrupt.\nd) The time from the arrival of an interrupt to the completion of the interrupt service routine (ISR).",
+            "marks": 1,
+            "answer": "b) The time from the arrival of an interrupt to the start of the interrupt service routine (ISR).\n\nInterrupt latency refers to the elapsed time from when an interrupt is generated/received by the CPU until the CPU begins executing the corresponding interrupt service routine (ISR).",
+            "answer_source": "generated",
+            "chapter": "Unit 3: CPU Scheduling"
+        },
+        {
+            "question_number": "Part A - 9",
+            "question_text": "Deadlock detection algorithms differ from deadlock prevention algorithms in that they ______\na) Prevent deadlocks from occurring in the first place.\nb) Avoid deadlocks by pre-allocating resources.\nc) Detect and recover from deadlocks after they occur.\nd) Use priority scheduling to avoid resource conflicts.",
+            "marks": 1,
+            "answer": "c) Detect and recover from deadlocks after they occur.\n\nDeadlock detection allows the system to enter a deadlock state, periodically runs an algorithm to examine the system state to identify deadlock, and then applies recovery techniques, whereas prevention actively constrains resource requests to ensure deadlocks never occur.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Deadlocks"
+        },
+        {
+            "question_number": "Part A - 10",
+            "question_text": "Which statement is true about the non-preemptive scheduling algorithm?\na) Resources are allocated to a process for a limited time\nb) Process can be interrupted in between\nc) High Priority process frequently arrives in the ready Queue\nd) Process holds the resources till it completes its burst time or switches to wait state",
+            "marks": 1,
+            "answer": "d) Process holds the resources till it completes its burst time or switches to wait state\n\nUnder non-preemptive scheduling, once a process is allocated the CPU, it keeps the CPU until it either voluntarily releases it (such as by requesting I/O and switching to the waiting state) or terminates upon completing its CPU burst.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: CPU Scheduling"
+        },
+        {
+            "question_number": "Set B - Part B - 6",
+            "question_text": "Write a note on Monolithic, Layered and microkernel OS structure and discuss pros and cons for the same.",
+            "marks": 10,
+            "answer": "1. **Monolithic OS Structure:**\n   - In a monolithic architecture, the entire operating system executes as a single large program in kernel mode. All kernel services (process scheduling, memory management, file systems, device drivers) reside in a single address space.\n   - **Pros:** Highly efficient and fast because communication between kernel components occurs via direct function calls without context switching overhead.\n   - **Cons:** Difficult to maintain and debug; lack of modularity; if one component crashes (e.g., a buggy device driver), the entire system crashes.\n\n2. **Layered OS Structure:**\n   - The operating system is divided into a number of modular layers ($N$ levels). Layer 0 is the hardware, and the highest layer (Layer $N$) is the user interface. Each layer is implemented only on top of lower-level layers and uses only operations provided by lower layers.\n   - **Pros:** Modularity, simplified debugging, and system verification since errors can be isolated to specific layers.\n   - **Cons:** Difficult to clearly define separate layers; performance overhead due to the execution path passing through multiple abstraction layers.\n\n3. **Microkernel OS Structure:**\n   - The microkernel removes all non-essential components from the kernel and implements them as user-level system and server processes. The kernel retains only minimal mechanisms: primitive memory management, basic process scheduling, and Interprocess Communication (IPC).\n   - **Pros:** Highly modular, secure, and reliable (a crash in a user-level server does not bring down the kernel); highly extensible and portable to new hardware architectures.\n   - **Cons:** Performance degradation caused by excessive context switches and IPC overhead between user-space servers and the microkernel.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Operating-System Structure"
+        },
+        {
+            "question_number": "Set B - Part B - 7 (OR)",
+            "question_text": "As a systems architect, how would you approach designing the operating system environment for various applications and use cases? What factors would you consider when selecting and configuring the appropriate computing environment to meet the specific needs of each scenario?",
+            "marks": 10,
+            "answer": "To design an operating system environment across diverse use cases, a systems architect approaches the design systematically:\n\n1. **Categorization of Computing Environments:**\n   - **Traditional/Desktop Computing:** Focuses on single-user interactive responsiveness, multitasking, and rich graphical user interfaces.\n   - **Client-Server Systems:** Optimized for network throughput, concurrent client request handling, scalability, and robust connection pooling.\n   - **Peer-to-Peer (P2P) Systems:** Emphasizes decentralized resource discovery, distributed indexing, and balanced workload distribution without central bottlenecks.\n   - **Cloud and Virtualized Environments:** Prioritizes isolation through hypervisors/containers, rapid resource provisioning, and dynamic load elasticity.\n   - **Real-Time and Embedded Systems:** Mandates deterministic execution, minimal interrupt latency, bounded response times, and limited energy consumption.\n\n2. **Key Architectural Factors to Consider:**\n   - **Performance and Latency Requirements:** Selecting appropriate scheduling algorithms (e.g., EDF for real-time vs. CFS for general desktop/server).\n   - **Resource Footprint and Constraints:** Memory footprint, CPU capacity, and storage access modes (flash/SSD vs. HDD).\n   - **Security and Isolation:** Enforcing access control mechanisms, capability-based security, and sandbox virtualization.\n   - **Scalability and Reliability:** Fault-tolerance features, graceful degradation, and support for multicore/multiprocessor scaling.\n   - **Interoperability and Communication Standards:** IPC mechanisms, network stack implementations, and standard API conformance (e.g., POSIX).",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Computing Environments"
+        },
+        {
+            "question_number": "Set B - Part B - 8",
+            "question_text": "As a systems analyst working on a project to enhance the functionality of a computer system, how would you approach designing and implementing various software components? What types of system programs would you select for different needs within this project, and how would you explain their suitability?",
+            "marks": 10,
+            "answer": "1. **Approach to Designing and Implementing System Components:**\n   - Define user and system goals (convenience, speed, reliability, and security).\n   - Separate policy (what will be done) from mechanism (how it will be done).\n   - Adopt a modular, component-based design enabling independent testing, maintenance, and extensibility.\n\n2. **Selection and Suitability of System Programs:**\n   - **File Management Programs:**\n     - *Suitability:* Tools for creating, deleting, copying, renaming, and manipulating files and directories (e.g., `cp`, `rm`, `mkdir`). Essential for user data persistence and workspace administration.\n   - **Status Information Programs:**\n     - *Suitability:* Utilities that query system state, date/time, disk space, memory utilization, and active processes (e.g., `top`, `ps`, `df`, `vmstat`). Crucial for real-time performance monitoring and debugging.\n   - **File Modification (Editors):**\n     - *Suitability:* Text and configuration editors (e.g., `vi`, `nano`) required for updating configuration files and script drafting.\n   - **Programming-Language Support:**\n     - *Suitability:* Compilers, assemblers, linkers, loaders, and debuggers (e.g., `gcc`, `gdb`). Required to translate and execute higher-level software services.\n   - **Program Loading and Execution:**\n     - *Suitability:* Loaders and dynamic linkers that place executable programs and libraries into memory for execution.\n   - **Communications and Network Utilities:**\n     - *Suitability:* Programs establishing connections between processes, users, and remote systems (e.g., `ssh`, `curl`, `netstat`). Required for distributed system interactions.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: System Programs"
+        },
+        {
+            "question_number": "Set B - Part B - 9 (OR)",
+            "question_text": "Discuss, with examples, how the problem of maintaining coherence of cached data manifests itself in the following processing environments:\na. Single-processor systems\nb. Multiprocessor systems",
+            "marks": 10,
+            "answer": "Cache coherence ensures that multiple copies of the same data item across different memory hierarchy levels or processing units remain consistent.\n\n**a. Single-processor Systems:**\n- *Manifestation:* In a single-processor system, cache coherence typically arises between the central processing unit (CPU) and direct memory access (DMA) I/O controllers.\n- *Example:* Suppose variable $A$ located at main memory address $0x1000$ currently contains the value 10. The CPU reads $A$ into its L1 cache and updates it to 20 using a write-back caching policy. Before this cache block is written back to main memory, a DMA controller performs a disk transfer by reading from main memory address $0x1000$. The DMA reads stale data (10 instead of 20). Conversely, if the DMA writes new data directly into main memory, the CPU's cache contains an obsolete cached copy.\n- *Solutions:* Cache flushing/invalidation before DMA transfers, or routing DMA accesses through the CPU cache.\n\n**b. Multiprocessor Systems:**\n- *Manifestation:* Each CPU core has its own private hardware cache (L1/L2 caches) connected to a shared main memory. If two cores cache the same memory location and one core writes a new value, the other core's cache contains stale data.\n- *Example:* Consider processor $P_1$ and processor $P_2$, both accessing shared variable $X = 5$. Both load $X$ into their local L1 caches. If $P_1$ executes $X = X + 10$ and writes $15$ into its local cache, $P_2$'s cache still holds the old value $5$. If $P_2$ reads $X$, it encounters an inconsistent state.\n- *Solutions:* Hardware cache coherence protocols such as snooping (e.g., MESI/MOESI protocols over a shared bus) and directory-based coherence schemes in large-scale distributed shared-memory multiprocessors.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Computer-System Organization"
+        },
+        {
+            "question_number": "Set A - Part B - 1",
+            "question_text": "Describe in detail the various services provided by an operating system, explaining how each service contributes to the overall functionality and performance of the system.",
+            "marks": 10,
+            "answer": "An operating system provides an environment for the execution of programs and services to users and programs:\n\n1. **User Interface (UI):**\n   - Provides Command-Line Interfaces (CLI), Graphical User Interfaces (GUI), or batch interfaces, enabling intuitive communication between users and the system.\n\n2. **Program Execution:**\n   - The OS loads programs into memory, allocates resources, initializes program counters, and executes instructions to completion or termination.\n\n3. **I/O Operations:**\n   - Shields applications from raw device complexities by offering uniform interfaces, buffering, caching, and spooling to optimize I/O device operations.\n\n4. **File-System Manipulation:**\n   - Manages creation, deletion, reading, writing, and navigation of files and directories, controlling access permissions and directory trees.\n\n5. **Communications:**\n   - Supports interprocess communication (IPC) via shared memory or message passing across processes on the same computer or over a network.\n\n6. **Error Detection and Handling:**\n   - Continuously monitors system hardware (CPU, memory, disk, network) and software to detect faults (e.g., arithmetic overflows, memory access violations) and maintain system stability.\n\n7. **Resource Allocation:**\n   - Dynamically allocates CPU cycles, main memory, and peripheral devices among concurrent processes to ensure efficiency, fairness, and responsiveness.\n\n8. **Accounting and Logging:**\n   - Tracks compute time and resource usage of various users and tasks for billing, capacity planning, and auditing.\n\n9. **Protection and Security:**\n   - Ensures that all access to system resources is controlled, prevents unauthorized access, and protects concurrently executing processes from interfering with one another.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Operating-System Services"
+        },
+        {
+            "question_number": "Set A - Part B - 2 (OR)",
+            "question_text": "Imagine that you are a software developer working on the project to design a new Operating system. You need to satisfy the following requirements of loosely coupled system, changes in one component do not affect another component and successfully run in computer networks and web applications. Identify the suitable operating structure for these requirements and justify it.",
+            "marks": 10,
+            "answer": "1. **Identified Operating System Structure:**\n   - The most suitable architecture is the **Microkernel Structure** (or a **Modular / Microservices-based OS Architecture**).\n\n2. **Justification:**\n   - **Loose Coupling:** In a microkernel architecture, non-essential kernel components (such as file systems, network protocol stacks, device drivers, and web services) are implemented as isolated user-level servers. The kernel contains only the bare minimum primitives (low-level memory management, thread scheduling, and IPC).\n   - **Isolation and Fault Containment:** Because components run in separate user-space address spaces, changes, crashes, or updates to one component (e.g., the network driver or HTTP server daemon) do not affect or crash other components or the core kernel.\n   - **Network and Web Application Suitability:** The message-passing IPC paradigm inherent to microkernels mirrors the client-server and RPC models utilized in modern network and distributed web applications. Services can easily be distributed across physical networks without altering application-level APIs.\n   - **Extensibility and Modularity:** New networking protocols or security layers can be dynamically added or modified without recompiling or rebooting the kernel.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Operating-System Structure"
+        },
+        {
+            "question_number": "Set A - Part B - 8",
+            "question_text": "Describe the client-server and peer-to-peer models of distributed systems.",
+            "marks": 10,
+            "answer": "1. **Client-Server Model:**\n   - **Concept:** A centralized distributed computing architecture where workloads are partitioned between service providers (servers) and service requesters (clients).\n   - **Characteristics:**\n     - *Server:* A dedicated, high-performance host that listens for incoming client requests, processes them, and returns responses. It manages centralized data, security, and access control.\n     - *Client:* Initiates communication sessions and requests specific services (e.g., web browsers requesting web pages from a web server, or database front-ends).\n   - **Advantages:** Centralized management, robust security enforcement, and simplified data consistency.\n   - **Disadvantages:** Single point of failure at the server, potential bottlenecks under high concurrency, and higher infrastructure costs.\n\n2. **Peer-to-Peer (P2P) Model:**\n   - **Concept:** A decentralized computing architecture where all participating nodes (peers) possess equivalent capabilities and responsibilities, acting as both clients and servers (often called \"servents\").\n   - **Characteristics:**\n     - Decentralized coordination: Nodes communicate directly with each other without relying on a central coordination server.\n     - Distributed resources: Files and computational tasks are distributed across participating peer nodes.\n     - Discovery: Nodes join the network and locate other peers using distributed hash tables (DHTs) or discovery servers (e.g., BitTorrent, Gnutella, blockchain networks).\n   - **Advantages:** High fault tolerance (no single point of failure), high scalability (overall system capacity grows as more peers join), and cost effectiveness.\n   - **Disadvantages:** Complex data consistency management, security challenges, and reliance on peer availability.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Computing Environments"
+        },
+        {
+            "question_number": "Set A - Part B - 9 (OR)",
+            "question_text": "Identify and explain the type of system call and give an equivalent system call for Unix operating system.\na) SetFileSecurity()\nb) GetCurrentProcessID()\nc) ReadFile()\nd) SetConsoleMode()",
+            "marks": 10,
+            "answer": "The provided Windows API system calls, their respective categories, and their Unix equivalents are:\n\n1. **a) `SetFileSecurity()`**\n   - **Type of System Call:** **Protection and Security / File Management System Call**.\n   - **Explanation:** It sets the security descriptor (access control list, owner, permissions) of an existing file or directory object.\n   - **Equivalent Unix System Call:** `chmod()` (to change file mode/permissions) or `chown()` (to change file ownership).\n\n2. **b) `GetCurrentProcessID()`**\n   - **Type of System Call:** **Process Control System Call**.\n   - **Explanation:** Retrieves the unique numeric process identifier (PID) assigned by the operating system to the calling process.\n   - **Equivalent Unix System Call:** `getpid()`.\n\n3. **c) `ReadFile()`**\n   - **Type of System Call:** **File Management System Call**.\n   - **Explanation:** Reads data from a specified file, device, or pipe starting at the position indicated by the file pointer.\n   - **Equivalent Unix System Call:** `read()`.\n\n4. **d) `SetConsoleMode()`**\n   - **Type of System Call:** **Device Management System Call**.\n   - **Explanation:** Sets the input or output mode of a console's input buffer or screen buffer (controlling line input, echo mode, processed input, etc.).\n   - **Equivalent Unix System Call:** `ioctl()` or `tcsetattr()` (terminal control functions).",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Types of System Calls"
+        }
+    ]
+}

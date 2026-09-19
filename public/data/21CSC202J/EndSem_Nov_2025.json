@@ -1,0 +1,263 @@
+{
+    "formal_filename": "EndSem_Nov_2025.json",
+    "paper_title": "B.Tech. / M.Tech. (Integrated) DEGREE EXAMINATION, NOVEMBER 2025\nThird & Fourth Semester\n21CSC202J - OPERATING SYSTEMS",
+    "source": "EndSem Nov 2025",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "A program in execution is called as ______.\n(A) Multi-process\n(B) Thread\n(C) Multithread\n(D) Process",
+            "marks": 1,
+            "answer": "(D) Process\n\n**Rationale:** A process is defined as a program in execution. A program is a passive entity (like a file stored on disk), whereas a process is an active entity with a program counter and associated resources.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Process Management"
+        },
+        {
+            "question_number": "2",
+            "question_text": "______ is a software-generated interrupt caused either by an error or a user request.\n(A) Interpreter\n(B) Except\n(C) Process Abort\n(D) Trap",
+            "marks": 1,
+            "answer": "(D) Trap\n\n**Rationale:** A trap (or exception) is a software-generated interrupt caused by an error (e.g., division by zero, invalid memory access) or a specific request from a user program (e.g., a system call).",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction"
+        },
+        {
+            "question_number": "3",
+            "question_text": "______ program loads operating system kernel and starts execution.\n(A) Virtualization\n(B) Bootstrap\n(C) Docker\n(D) Application",
+            "marks": 1,
+            "answer": "(B) Bootstrap\n\n**Rationale:** The bootstrap program (stored in ROM or EEPROM) initializes all aspects of the system, locates the operating system kernel, and loads it into memory to start execution.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: System Boot"
+        },
+        {
+            "question_number": "4",
+            "question_text": "Device controller informs CPU that it has finished its operation by causing ______.\n(A) Interrupt\n(B) Input Output system trigger\n(C) Service Request\n(D) Segment",
+            "marks": 1,
+            "answer": "(A) Interrupt\n\n**Rationale:** Hardware devices notify the CPU that an I/O operation has completed by asserting a signal on the bus, causing a hardware interrupt.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Computer-System Organization"
+        },
+        {
+            "question_number": "5",
+            "question_text": "When several processes access the same data concurrently and the outcome of the execution depends on the particular order in which the access takes place, is called?\n(A) race condition\n(B) dynamic condition\n(C) essential condition\n(D) critical condition",
+            "marks": 1,
+            "answer": "(A) race condition\n\n**Rationale:** A race condition occurs when multiple processes access and manipulate shared data concurrently, and the outcome depends on the specific order in which the statements execute.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Process Synchronization"
+        },
+        {
+            "question_number": "6",
+            "question_text": "Peterson's solution for process synchronization is restricted to ______.\n(A) 2 Processes\n(B) Multiple processes\n(C) 1 Process\n(D) Multiple processes and multi core",
+            "marks": 1,
+            "answer": "(A) 2 Processes\n\n**Rationale:** Classic Peterson's solution is a software-based solution designed specifically for two processes ($P_0$ and $P_1$) sharing two data items: `turn` and `flag[2]`.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Peterson's Solution"
+        },
+        {
+            "question_number": "7",
+            "question_text": "______ is a type of semaphore that does not specify the order in which processes are removed from its waiting queue.\n(A) Weak semaphore\n(B) Strong semaphore\n(C) n-ary semaphore\n(D) Count based semaphore",
+            "marks": 1,
+            "answer": "(A) Weak semaphore\n\n**Rationale:** A weak semaphore does not specify the order in which processes are removed from the queue (e.g., random order), whereas a strong semaphore removes processes in First-In, First-Out (FIFO) order.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Semaphores"
+        },
+        {
+            "question_number": "8",
+            "question_text": "______ is a mechanism used to synchronize access to a resource.\n(A) Mutex\n(B) Syncex\n(C) Flagging\n(D) Paging",
+            "marks": 1,
+            "answer": "(A) Mutex\n\n**Rationale:** A Mutex (Mutual Exclusion) lock is a synchronization tool used to protect critical regions and prevent race conditions by allowing only one process at a time to access a shared resource.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Mutex Locks"
+        },
+        {
+            "question_number": "9",
+            "question_text": "10 different processes are running on a workstation. Idle processes are waiting for an input event in the input queue. Busy processes are scheduled with the Round-Robin time sharing method. Which of the following quantum times is the best value for short response times, if the processes have a short runtime?\n(A) tQ = 15 ms\n(B) tQ = 40 ms\n(C) tQ = 50 ms\n(D) tQ = 45 ms",
+            "marks": 1,
+            "answer": "(A) tQ = 15 ms\n\n**Rationale:** In Round-Robin scheduling, a smaller time quantum ($t_Q$) provides a shorter response time, as processes get the CPU more frequently.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: CPU Scheduling"
+        },
+        {
+            "question_number": "10",
+            "question_text": "Short-term scheduler is also called as ______.\n(A) CPU scheduler\n(B) dispatcher\n(C) job scheduler\n(D) Load balancer",
+            "marks": 1,
+            "answer": "(A) CPU scheduler\n\n**Rationale:** The short-term scheduler, or CPU scheduler, selects from among the processes that are ready to execute in memory and allocates the CPU to one of them.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Basic Concepts"
+        },
+        {
+            "question_number": "11",
+            "question_text": "Which of the following is NOT a necessary condition for a deadlock to occur in an operating system?\n(A) Progress and Fairness\n(B) Mutual Exclusion\n(C) Hold and Wait\n(D) Circular Wait",
+            "marks": 1,
+            "answer": "(A) Progress and Fairness\n\n**Rationale:** The four necessary conditions for deadlock (Coffman conditions) are: Mutual Exclusion, Hold and Wait, No Preemption, and Circular Wait. Progress and Fairness is a synchronization criteria, not a deadlock condition.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Deadlock Characterization"
+        },
+        {
+            "question_number": "12",
+            "question_text": "In the Bounded Buffer problem, what is the role of the counting semaphores empty and full?\n(A) empty tracks available slots, full tracks occupied slots items\n(B) empty tracks available items, full tracks available slots.\n(C) empty tracks occupied slots, full tracks occupied items.\n(D) empty tracks occupied items, full tracks available slots.",
+            "marks": 1,
+            "answer": "(A) empty tracks available slots, full tracks occupied slots items\n\n**Rationale:** In the classic bounded-buffer solution, semaphore `empty` is initialized to $N$ (the number of empty buffer slots available) and `full` is initialized to $0$ (the number of occupied buffer slots/items).",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Classic Problems of Synchronization"
+        },
+        {
+            "question_number": "13",
+            "question_text": "A page fault occurs ______.\n(A) when the page is not in memory\n(B) when the page is in the memory\n(C) when the page enters the blocked state\n(D) when the page enters a ready state",
+            "marks": 1,
+            "answer": "(A) when the page is not in memory\n\n**Rationale:** A page fault exception occurs when a process attempts to access a virtual page whose valid-invalid bit in the page table is set to invalid (i.e., not present in main memory).",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Demand Paging"
+        },
+        {
+            "question_number": "14",
+            "question_text": "______ is a storage structure consisting of information about a file.\n(A) File Control Block\n(B) Process Control Block\n(C) Page block\n(D) Directory Block",
+            "marks": 1,
+            "answer": "(A) File Control Block\n\n**Rationale:** A File Control Block (FCB) is a system structure containing details about a file, such as ownership, permissions, size, and location of data blocks.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: File Concept"
+        },
+        {
+            "question_number": "15",
+            "question_text": "______ is a data structure used in memory management that stores information about virtual memory pages, including a valid-invalid bit.\n(A) Page table\n(B) Device status table\n(C) Heap\n(D) Stack",
+            "marks": 1,
+            "answer": "(A) Page table\n\n**Rationale:** A page table is used by the operating system to map virtual addresses to physical frame addresses and holds control bits like the valid-invalid bit.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Structure of the Page Table"
+        },
+        {
+            "question_number": "16",
+            "question_text": "______ strategy chooses the largest available hole that is big enough for the requested process.\n(A) Worst fit\n(B) Best fit\n(C) Average fit\n(D) First fit",
+            "marks": 1,
+            "answer": "(A) Worst fit\n\n**Rationale:** Worst-fit allocates the process to the largest available memory partition (hole), leaving the largest remaining sub-hole.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Contiguous Memory Allocation"
+        },
+        {
+            "question_number": "17",
+            "question_text": "______ contains the set of operations that a process executing in Domain k can invoke on Object l.\n(A) Access(k,l)\n(B) Row(k,l)\n(C) Column(k,l)\n(D) Dom(k,l)",
+            "marks": 1,
+            "answer": "(A) Access(k,l)\n\n**Rationale:** In the Access Matrix model, $Access(k, l)$ defines the specific set of access rights/operations that a domain $D_k$ possesses for object $F_l$.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Access Matrix"
+        },
+        {
+            "question_number": "18",
+            "question_text": "A ______ is a hidden access point in a program that allows an attacker to bypass security measures.\n(A) trap door\n(B) ransom ware\n(C) spyware\n(D) trojan horse",
+            "marks": 1,
+            "answer": "(A) trap door\n\n**Rationale:** A trapdoor (or backdoor) is a secret or hidden entry point into a system/program left intentionally or accidentally by a developer, allowing security mechanisms to be bypassed.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Program Threats"
+        },
+        {
+            "question_number": "19",
+            "question_text": "______ are standalone programs that self-replicate and spread across networks, often using a mechanism to spawn new processes.\n(A) worms\n(B) spawns\n(C) virus\n(D) spyware",
+            "marks": 1,
+            "answer": "(A) worms\n\n**Rationale:** A worm is a standalone malware program that replicates itself automatically over network connections to infect other systems without requiring a host program.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Program Threats"
+        },
+        {
+            "question_number": "20",
+            "question_text": "______ is a form of firewall that controls input/output or system calls of an application or service.\n(A) Application proxy firewall\n(B) Personal firewall\n(C) Two way firewall\n(D) Private firewall",
+            "marks": 1,
+            "answer": "(A) Application proxy firewall\n\n**Rationale:** An application proxy firewall (or application-level gateway) acts as an intermediary for application traffic, inspecting and controlling specific commands and input/output requests at the application level.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Firewalling to Protect Systems and Networks"
+        },
+        {
+            "question_number": "21. a)",
+            "question_text": "i. Explain the major operating system services. How are they implemented using system calls? (4 Marks)\nii. Explain the steps involved in system booting. Describe the role of the bootstrap program and bootloader. (4 Marks)",
+            "marks": 8,
+            "answer": "### i. Major Operating System Services & Implementation via System Calls\n\n**Major OS Services:**\n1. **User Interface (UI):** Provides CLI, GUI, or Batch interfaces to interact with users.\n2. **Program Execution:** Loads programs into memory, runs them, and handles execution errors.\n3. **I/O Operations:** Manages input/output requests efficiently, abstraction over physical hardware devices.\n4. **File-System Manipulation:** Reading, writing, creating, deleting, and searching files and directories.\n5. **Communications:** Handles interprocess communication (IPC) via shared memory or message passing.\n6. **Error Detection:** Continuously monitors CPU, memory, hardware, and user programs for errors.\n7. **Resource Allocation & Accounting:** Manages CPU cycles, memory, and storage allocation among concurrent users, while tracking resource utilization.\n8. **Protection and Security:** Controls access to system resources and protects processes from one another.\n\n**Implementation using System Calls:**\n- System calls provide an interface between a running program and the OS.\n- When a user application requires an OS service (e.g., reading a file), it executes a system call (via a software interrupt/trap).\n- Control transfers from **User Mode** to **Kernel Mode** via a trap vector table.\n- The kernel evaluates the requested system call number, invokes the appropriate system call handler, performs the operation, and returns the result back to the application while restoring mode back to User Mode.\n\n---\n\n### ii. Steps Involved in System Booting & Role of Bootstrap Program and Bootloader\n\n**Booting Steps:**\n1. **Power-On Self-Test (POST):** System power turns on; CPU begins executing code at a fixed memory location (ROM BIOS/UEFI) to check basic hardware integrity (RAM, keyboard, disks).\n2. **Bootstrap Execution:** CPU loads and executes the bootstrap code stored in non-volatile ROM/NVRAM.\n3. **Bootloader Invocation:** The bootstrap program locates the primary boot device, reads the Master Boot Record (MBR) or EFI System Partition (ESP), and loads the full bootloader (e.g., GRUB, LILO, Windows Boot Manager) into RAM.\n4. **Kernel Loading:** The bootloader loads the Operating System Kernel image from disk into main memory and decompresses it.\n5. **OS Initialization:** Kernel initializes hardware drivers, memory management structures, and essential data structures.\n6. **User Space Initialization:** Kernel spawns the initial user process (`init` or `systemd`), which starts background daemons and presents the login interface.\n\n**Roles:**\n- **Bootstrap Program:** A small piece of code stored in ROM/EEPROM that performs basic initialization and locates the bootloader.\n- **Bootloader:** A sophisticated program capable of presenting boot options/OS choices, loading the selected OS kernel into RAM, initializing kernel parameters, and transferring control to the kernel.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Operating-System Services"
+        },
+        {
+            "question_number": "21. b)",
+            "question_text": "(OR)\ni. Compare and contrast contiguous and non-contiguous memory allocation techniques. (4 Marks)\nii. Explain different storage device hierarchy and the role of OS in managing secondary and tertiary storage. (4 Marks)",
+            "marks": 8,
+            "answer": "### i. Comparison: Contiguous vs Non-Contiguous Memory Allocation\n\n| Parameter | Contiguous Allocation | Non-Contiguous Allocation |\n| :--- | :--- | :--- |\n| **Allocation Strategy** | Entire process memory is allocated in a single contiguous block of physical RAM. | Process memory is divided into parts (pages/segments) and allocated across non-adjacent physical frames/blocks. |\n| **Hardware Support** | Simple Base and Limit registers. | Complex hardware support like Page Table, MMU (Memory Management Unit), and TLB. |\n| **External Fragmentation** | Severe external fragmentation occurs as memory gets fragmented over time. | Avoided or minimal (paging eliminates external fragmentation completely). |\n| **Internal Fragmentation** | Low/None in dynamic partitioning; present in fixed partitioning. | Can exist in the last page of a process (in paging). |\n| **Flexibility & Swapping** | Difficult to expand process size dynamically; costly swapping. | Highly flexible; easy dynamic expansion and partial page swapping. |\n\n---\n\n### ii. Storage Device Hierarchy & Role of OS in Managing Secondary and Tertiary Storage\n\n**Storage Device Hierarchy:**\n1. **Registers & Cache (L1, L2, L3):** Very fast, volatile, high cost, small capacity.\n2. **Main Memory (RAM):** Fast, volatile, medium cost and capacity.\n3. **Solid-State Drives (SSD) & Hard Disk Drives (HDD):** Non-volatile, secondary storage, moderate speed, high capacity, low cost/GB.\n4. **Optical Disks & Magnetic Tapes:** Non-volatile, tertiary storage, slow access times, extremely high capacity, lowest cost/GB.\n\n**Role of OS in Management:**\n- **Secondary Storage Management:**\n  - *Disk Scheduling:* Algorithms (FCFS, SSTF, SCAN, C-SCAN) optimize disk head movement to minimize seek time.\n  - *Storage Allocation:* Allocates disk blocks to files using contiguous, linked, or indexed allocation methods.\n  - *Free-Space Management:* Maintains bit vectors or linked lists to keep track of unallocated disk blocks.\n- **Tertiary Storage Management:**\n  - *Mounting/Unmounting:* Automatically mounts removable media (tapes, optical discs) upon insertion.\n  - *Hierarchical Storage Management (HSM):* Moves rarely accessed data automatically from secondary storage (disks) to tertiary storage (tapes/archive drives).",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Storage Management"
+        },
+        {
+            "question_number": "22. a)",
+            "question_text": "i. Explain process states with a neat process state transition diagram. (4 Marks)\nii. Analyze the differences between a process and a program. How does the PCB (Process Control Block) help in efficient process management? (4 Marks)",
+            "marks": 8,
+            "answer": "### i. Process States and State Transition Diagram\n\n**Process States:**\n1. **New:** The process is being created.\n2. **Ready:** The process is waiting to be allocated to a processor.\n3. **Running:** Instructions are being executed by the CPU.\n4. **Waiting (Blocked):** The process is waiting for some event to occur (e.g., I/O completion or signal reception).\n5. **Terminated:** The process has finished execution.\n\n**State Transition Diagram:**\n```\n  [New]\n    |\n    v (Admitted)\n [Ready]  <-------- (Interrupt) --------  [Running]\n    |                                      |\n    +--- (Scheduler Dispatch) ------------->|\n                                           |\n [Waiting] <--- (I/O or Event Wait) -------+\n    |\n    +--- (I/O or Event Completion) --> [Ready]\n                                           |\n                                           v (Exit)\n                                     [Terminated]\n```\n\n---\n\n### ii. Process vs Program & Role of Process Control Block (PCB)\n\n**Difference between Process and Program:**\n- **Program:** A passive entity containing executable instructions stored on disk (executable file). It consumes no CPU or memory resources directly while dormant.\n- **Process:** An active entity created when a program is loaded into memory and executed. It includes a program counter, registers, stack, data, and heap.\n\n**How PCB Helps in Process Management:**\nA Process Control Block (PCB) is a vital data structure in the OS containing all execution context information of a process:\n- **Process State & ID:** Identifies process identity and current lifecycle state.\n- **Program Counter (PC):** Holds the address of the next instruction to execute.\n- **CPU Registers & Stack Pointer:** Saved during context switching so the CPU state can be saved when suspended and restored seamlessly later.\n- **Memory Management Information:** Page tables or segment tables associated with the process.\n- **Accounting & I/O Status:** Tracks CPU utilization, open file descriptors, and assigned I/O devices.\n\n*Efficiency:* The PCB enables smooth context switching, process scheduling, dynamic resource tracking, and protection across concurrent processes.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Process Concept"
+        },
+        {
+            "question_number": "22. b)",
+            "question_text": "(OR)\nExplain threads in operating systems. Discuss their advantages over processes with suitable examples. Differentiate between many-to-one, one-to-one, and many-to-many threading models. Apply them to a banking application example and justify which model would be most efficient.",
+            "marks": 8,
+            "answer": "### Threads in Operating Systems\nA thread is a fundamental execution unit within a process. It has its own thread ID, program counter, register set, and stack, but shares its code section, data section, and OS resources (like open files) with other threads belonging to the same process.\n\n### Advantages of Threads over Processes:\n1. **Responsiveness:** Allowing execution to continue even if part of a program is blocked (e.g., a GUI stays responsive while downloading a file in a background thread).\n2. **Resource Sharing:** Threads share process memory automatically without needing complex IPC mechanisms.\n3. **Economy:** Creating and context switching threads is far less expensive than creating full processes.\n4. **Scalability:** Takes advantage of multicore architectures where distinct threads execute concurrently on separate CPU cores.\n\n---\n\n### Multithreading Models Comparison:\n\n1. **Many-to-One Model:**\n   - Maps multiple user-level threads to a single kernel thread.\n   - *Drawback:* If one user thread makes a blocking system call, the entire process blocks. Cannot utilize multicore processing.\n2. **One-to-One Model:**\n   - Maps each user thread to a corresponding kernel thread.\n   - *Advantage:* High concurrency; blocking calls don't block other threads.\n   - *Drawback:* Overhead of creating a kernel thread for every user thread limits total thread count.\n3. **Many-to-Many Model:**\n   - Multiplexes many user-level threads onto a smaller or equal number of kernel threads.\n   - *Advantage:* High flexibility and concurrency without overloading the kernel with excess threads.\n\n---\n\n### Banking Application Example & Justification:\nConsider a Banking Application serving thousands of simultaneous user actions (checking balance, processing transfers, printing statements, sending notifications).\n\n- **Model Evaluation:**\n  - *Many-to-One:* Unsuitable because a long database operation by one user thread blocks all other user transactions.\n  - *One-to-One:* Excellent concurrency, but under heavy traffic (e.g., 50,000 active concurrent users), creating 50,000 kernel threads exhausts kernel stack space and degrades system performance.\n  - *Many-to-Many (or Two-Level Hybrid):* **Most Efficient Choice**. Allows thousands of lightweight user threads (transactions) to be multiplexed over an optimal, fixed-size pool of kernel threads corresponding to the available physical CPU cores. If one transaction blocks on disk or database I/O, the underlying kernel thread can immediately switch to execute another ready user thread.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Multithreading Models"
+        },
+        {
+            "question_number": "23. a)",
+            "question_text": "Analyze how different CPU scheduling algorithms (FCFS, SJF, Priority) affect average waiting time and turnaround time. Given a sample set of processes, evaluate which is the best choice. Consider the following set of 4 processes that arrive at time 0. Lower number indicates higher priority.\n\n| Process | Burst Time (ms) | Priority |\n| :--- | :--- | :--- |\n| P1 | 24 | 3 |\n| P2 | 3 | 1 |\n| P3 | 3 | 4 |\n| P4 | 4 | 2 |",
+            "marks": 8,
+            "answer": "### Scheduling Computations (All arrival times = 0)\n\n#### 1. First-Come, First-Served (FCFS)\n- Execution Order: $P_1 \\to P_2 \\to P_3 \\to P_4$\n- Gantt Chart: $[P_1: 0-24] \\to [P_2: 24-27] \\to [P_3: 27-30] \\to [P_4: 30-34]$\n- Waiting Times ($WT = \\text{Start Time}$):\n  - $WT(P_1) = 0$\n  - $WT(P_2) = 24$\n  - $WT(P_3) = 27$\n  - $WT(P_4) = 30$\n  - **Average Waiting Time ($AWT$)** = $\\frac{0 + 24 + 27 + 30}{4} = \\frac{81}{4} = 20.25 \\text{ ms}$\n- Turnaround Times ($TAT = WT + \\text{Burst Time}$):\n  - $TAT(P_1) = 24$\n  - $TAT(P_2) = 27$\n  - $TAT(P_3) = 30$\n  - $TAT(P_4) = 34$\n  - **Average Turnaround Time ($ATAT$)** = $\\frac{24 + 27 + 30 + 34}{4} = \\frac{115}{4} = 28.75 \\text{ ms}$\n\n#### 2. Non-Preemptive Shortest Job First (SJF)\n- Burst Times: $P_2(3), P_3(3), P_4(4), P_1(24)$\n- Execution Order: $P_2 \\to P_3 \\to P_4 \\to P_1$ (break tie between $P_2, P_3$ arbitrarily by process ID)\n- Gantt Chart: $[P_2: 0-3] \\to [P_3: 3-6] \\to [P_4: 6-10] \\to [P_1: 10-34]$\n- Waiting Times:\n  - $WT(P_2) = 0$\n  - $WT(P_3) = 3$\n  - $WT(P_4) = 6$\n  - $WT(P_1) = 10$\n  - **Average Waiting Time ($AWT$)** = $\\frac{0 + 3 + 6 + 10}{4} = \\frac{19}{4} = 4.75 \\text{ ms}$\n- Turnaround Times:\n  - $TAT(P_2) = 3$\n  - $TAT(P_3) = 6$\n  - $TAT(P_4) = 10$\n  - $TAT(P_1) = 34$\n  - **Average Turnaround Time ($ATAT$)** = $\\frac{3 + 6 + 10 + 34}{4} = \\frac{53}{4} = 13.25 \\text{ ms}$\n\n#### 3. Non-Preemptive Priority Scheduling\n- Lower number indicates higher priority: Priority 1 ($P_2$), 2 ($P_4$), 3 ($P_1$), 4 ($P_3$)\n- Execution Order: $P_2 \\to P_4 \\to P_1 \\to P_3$\n- Gantt Chart: $[P_2: 0-3] \\to [P_4: 3-7] \\to [P_1: 7-31] \\to [P_3: 31-34]$\n- Waiting Times:\n  - $WT(P_2) = 0$\n  - $WT(P_4) = 3$\n  - $WT(P_1) = 7$\n  - $WT(P_3) = 31$\n  - **Average Waiting Time ($AWT$)** = $\\frac{0 + 3 + 7 + 31}{4} = \\frac{41}{4} = 10.25 \\text{ ms}$\n- Turnaround Times:\n  - $TAT(P_2) = 3$\n  - $TAT(P_4) = 7$\n  - $TAT(P_1) = 31$\n  - $TAT(P_3) = 34$\n  - **Average Turnaround Time ($ATAT$)** = $\\frac{3 + 7 + 31 + 34}{4} = \\frac{75}{4} = 18.75 \\text{ ms}$\n\n---\n\n### Evaluation Summary\n\n| Algorithm | Average Waiting Time | Average Turnaround Time |\n| :--- | :--- | :--- |\n| **FCFS** | $20.25 \\text{ ms}$ | $28.75 \\text{ ms}$ |\n| **SJF** | **$4.75 \\text{ ms}$** | **$13.25 \\text{ ms}$** |\n| **Priority** | $10.25 \\text{ ms}$ | $18.75 \\text{ ms}$ |\n\n**Evaluation:** **SJF (Shortest Job First)** is the best choice because it produces the lowest average waiting time ($4.75 \\text{ ms}$) and turnaround time ($13.25 \\text{ ms}$) by preventing small jobs from being blocked behind long jobs (avoiding the convoy effect observed in FCFS).",
+            "answer_source": "generated",
+            "chapter": "Unit 3: CPU Scheduling"
+        },
+        {
+            "question_number": "23. b)",
+            "question_text": "(OR)\nAnalyze the four necessary conditions for deadlock with examples. Evaluate whether breaking just one condition is sufficient to prevent deadlocks in practice.",
+            "marks": 8,
+            "answer": "### Four Necessary Conditions for Deadlock (Coffman Conditions)\n\n1. **Mutual Exclusion:**\n   - *Definition:* At least one resource must be held in a non-shareable mode (only one process can use the resource at a time).\n   - *Example:* A printer or write lock on a database file.\n\n2. **Hold and Wait:**\n   - *Definition:* A process must currently hold at least one resource and be waiting to acquire additional resources that are held by other processes.\n   - *Example:* Process $P_1$ holds Resource $R_1$ and requests Resource $R_2$, which is held by $P_2$.\n\n3. **No Preemption:**\n   - *Definition:* Resources cannot be forcibly taken away from a process; they can only be released voluntarily after execution completes.\n   - *Example:* A process holding tape drive cannot have the drive involuntarily preempted by OS without corrupting state.\n\n4. **Circular Wait:**\n   - *Definition:* A closed chain of processes exists ($P_0, P_1, \\dots, P_n$) such that $P_0$ waits for a resource held by $P_1$, $P_1$ waits for $P_2$, ..., and $P_n$ waits for $P_0$.\n   - *Example:* $P_1$ holds $R_1$ and wants $R_2$; $P_2$ holds $R_2$ and wants $R_1$.\n\n---\n\n### Evaluation: Is Breaking Just One Condition Sufficient?\n\n**Theoretical View:**\n- Yes, theoretically, deadlock **cannot** occur if at least one of these four necessary conditions is prevented. Deadlock Prevention algorithms specifically aim to invalidate one of the conditions.\n\n**Practical Analysis:**\n- **In Practice:** While breaking one condition is mathematically sufficient, enforcing these preventions imposes severe performance and usability trade-offs:\n  1. *Eliminating Mutual Exclusion:* Unusable for intrinsically non-shareable resources like printers or mutex locks.\n  2. *Eliminating Hold and Wait:* Requires processes to request all resources at once (leads to poor resource utilization and starvation).\n  3. *Eliminating No Preemption:* Hard to implement for stateful resources like disk drives or memory without substantial state-saving overhead.\n  4. *Eliminating Circular Wait:* Enforcing a total resource ordering ($R_1 < R_2 < \\dots$) is the **most practical** strategy used in systems.\n\n**Conclusion:** In practice, breaking **Circular Wait** (via total resource ordering) is usually sufficient and widely adopted, but theoretically breaking **any single condition** fully prevents deadlocks.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Deadlock Characterization"
+        },
+        {
+            "question_number": "24. a)",
+            "question_text": "A disk has 200 tracks numbered 0–199. The disk head is currently positioned at track 53, moving towards higher tracks.\nThe queue of track requests (in order) is: 98, 183, 37, 122, 14, 124, 65, 67\n\n(i) Calculate the total head movement (in tracks) using the following disk scheduling algorithms: (6 Marks)\n• SCAN\n• C-SCAN\n• LOOK\n\n(ii) Based on your results, evaluate which algorithm provides the best balance between fairness and efficiency. (2 Marks)",
+            "marks": 8,
+            "answer": "### Initial Given Parameters:\n- Tracks: $0 \\text{ to } 199$\n- Initial Head Position: $53$ (moving towards higher tracks / right)\n- Queue: $98, 183, 37, 122, 14, 124, 65, 67$\n- Sorted Requests: $14, 37, 65, 67, 98, 122, 124, 183$\n\n---\n\n### (i) Head Movement Calculations:\n\n#### 1. SCAN\n- Direction: Moving up to track 199 (end of disk), then reversing down.\n- Order of Servicing: $53 \\to 65 \\to 67 \\to 98 \\to 122 \\to 124 \\to 183 \\to 199 \\to 37 \\to 14$\n- Head movements:\n  - Upward leg: $(199 - 53) = 146$\n  - Downward leg: $(199 - 14) = 185$\n- **Total Head Movement** = $146 + 185 = 331 \\text{ tracks}$\n\n#### 2. C-SCAN\n- Direction: Moving up to track 199, jumping back to track 0, then moving up to 37.\n- Order of Servicing: $53 \\to 65 \\to 67 \\to 98 \\to 122 \\to 124 \\to 183 \\to 199 \\to 0 \\to 14 \\to 37$\n- Head movements:\n  - First leg (53 to 199): $199 - 53 = 146$\n  - Jump to track 0: $199 - 0 = 199$\n  - Second leg (0 to 37): $37 - 0 = 37$\n- **Total Head Movement** = $146 + 199 + 37 = 382 \\text{ tracks}$\n*(Note: If jump from 199 to 0 is considered zero seek time cost, head movement = $146 + 37 = 183 \\text{ tracks}$)*.\n\n#### 3. LOOK\n- Direction: Moving up to highest requested track (183), then reversing to lowest requested track (14) without going to end of disk.\n- Order of Servicing: $53 \\to 65 \\to 67 \\to 98 \\to 122 \\to 124 \\to 183 \\to 37 \\to 14$\n- Head movements:\n  - Upward leg: $(183 - 53) = 130$\n  - Downward leg: $(183 - 14) = 169$\n- **Total Head Movement** = $130 + 169 = 299 \\text{ tracks}$\n\n---\n\n### (ii) Evaluation of Fairness and Efficiency:\n\n- **Efficiency:** **LOOK** yields the minimum total head movement ($299 \\text{ tracks}$) because it avoids redundant traversal to the physical ends of the disk (track 199).\n- **Fairness:** **C-SCAN** provides a more uniform wait time (fairness) across all tracks by treating the disk as a circular list, avoiding starvation for requests near the ends.\n- **Best Balance:** **LOOK** (or C-LOOK) provides the best balance between efficiency and performance, as it reduces total seek time while avoiding unnecessary movement beyond the last request.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Disk Scheduling"
+        },
+        {
+            "question_number": "24. b)",
+            "question_text": "(OR)\nCompare and evaluate contiguous memory allocation vs segmentation vs paging. Which method balances flexibility and efficiency best in large systems?",
+            "marks": 8,
+            "answer": "### Comparison Matrix\n\n| Parameter | Contiguous Allocation | Segmentation | Paging |\n| :--- | :--- | :--- | :--- |\n| **View of Memory** | Physical continuous block | User's logical view (variable-sized segments: code, data, stack) | Fixed-sized physical blocks (pages and frames) |\n| **Block Size** | Variable | Variable | Fixed (e.g., 4 KB) |\n| **Fragmentation** | High External Fragmentation | External Fragmentation | Internal Fragmentation (last page only) |\n| **Virtual Memory Support** | No | Difficult | Ideal / Excellent |\n| **Sharing & Protection** | Difficult | Easy (segment level context) | Easy (page permissions) |\n\n---\n\n### Evaluation & Best Choice for Large Systems:\n\n1. **Contiguous Allocation:** Highly inefficient for modern large systems due to severe external fragmentation and inability to support virtual memory.\n2. **Segmentation:** Provides logical program structures, but handling dynamic variable-sized allocation leads to external fragmentation and costly compaction.\n3. **Paging:** Eliminates external fragmentation completely, allows non-contiguous allocation, and forms the core foundation of virtual memory systems.\n\n**Conclusion:**\nIn modern large systems, **Paged Segmentation** or **Pure Multilevel Paging** balances flexibility and efficiency best because:\n- It provides complete isolation and protection.\n- It supports vast virtual address spaces (demand paging).\n- Hardware page tables with TLBs (Translation Lookaside Buffers) minimize overhead, achieving optimal performance.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Main Memory"
+        },
+        {
+            "question_number": "25. a)",
+            "question_text": "Given a system with subjects (users) and objects (files), apply the Access Matrix model to represent different access rights. Discuss its advantages and limitations.",
+            "marks": 8,
+            "answer": "### Access Matrix Model Application\n\nIn the Access Matrix model, rows represent **Domains / Subjects** (Users, Processes) and columns represent **Objects** (Files, Devices, Memory regions). The matrix entry $M[i, j]$ contains access rights that Domain $i$ possesses over Object $j$.\n\n#### Sample Access Matrix:\n\n| Domain / Object | File 1 | File 2 | Printer 1 | Domain 2 |\n| :--- | :--- | :--- | :--- | :--- |\n| **Domain 1 ($D_1$)** | Read, Execute | — | Print | Switch |\n| **Domain 2 ($D_2$)** | Read | Read, Write | — | — |\n| **Domain 3 ($D_3$)** | — | Read | Print | — |\n\n- Operations can include standard privileges (`Read`, `Write`, `Execute`, `Owner`) as well as domain management rights (`Switch`, `Control`).\n\n---\n\n### Advantages of Access Matrix:\n1. **Generality & Flexibility:** Simple, clear abstraction mechanism to specify granular access control policies across dynamic domains and heterogeneous objects.\n2. **Static & Dynamic Rights Control:** Supports dynamically updating, delegating, or revoking privileges via matrix modification rules.\n\n### Limitations of Access Matrix:\n1. **Sparsity:** In real systems with thousands of users and millions of files, the matrix is extremely sparse, causing massive memory wastage if stored as a dense 2D array.\n2. **Implementation Overhead:** Real-world systems implement the matrix via **Access Control Lists (ACLs)** (column-wise) or **Capability Lists** (row-wise) to optimize storage and lookup time.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Access Matrix"
+        },
+        {
+            "question_number": "25. b)",
+            "question_text": "(OR)\nAnalyze the various program threats such as Trojan horse, trapdoor, logic bomb, and virus. How do they exploit system vulnerabilities?",
+            "marks": 8,
+            "answer": "### Analysis of Program Threats\n\n1. **Trojan Horse:**\n   - *Mechanism:* A malicious program disguised as legitimate, useful software (e.g., a game or utility application).\n   - *Exploitation:* Exploits user trust. Once executed by the user, it performs malicious hidden activities in the background, such as stealing login credentials or creating unauthorized backdoors.\n\n2. **Trapdoor (Backdoor):**\n   - *Mechanism:* A secret entry point inserted into code during software development that bypasses authentication controls.\n   - *Exploitation:* Exploits poor code review and lack of auditing. Attackers or rogue developers can access system administrative privileges directly without going through standard security login checks.\n\n3. **Logic Bomb:**\n   - *Mechanism:* Code embedded in software that remains dormant until a specific condition/event triggers it (e.g., a specific date, deletion of a user account).\n   - *Exploitation:* Exploits insider privileges. When triggered, it executes destructive payloads such as wiping databases or corrupting systems.\n\n4. **Virus:**\n   - *Mechanism:* A code segment embedded inside executable programs that replicates by attaching itself to other host files when executed.\n   - *Exploitation:* Exploits executable file execution and file permission weaknesses to spread across systems, corrupt files, and consume resources.\n\n---\n\n### How They Exploit System Vulnerabilities:\n- **Least Privilege Violations:** Running programs with full administrative/root privileges.\n- **Input and Software Validation Flaws:** Lack of code integrity verification and digital signatures.\n- **Social Engineering:** Manipulating users into running untrusted attachments/executables.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Program Threats"
+        },
+        {
+            "question_number": "26",
+            "question_text": "A system has 5 processes (P0–P4) and 3 resource types A, B, C. The following data is given:\n\nAllocation Matrix:\n| PROCESS | A | B | C |\n| :--- | :--- | :--- | :--- |\n| P0 | 0 | 1 | 0 |\n| P1 | 2 | 0 | 0 |\n| P2 | 3 | 0 | 2 |\n| P3 | 2 | 1 | 1 |\n| P4 | 0 | 0 | 2 |\n\nMaximum Matrix:\n| PROCESS | A | B | C |\n| :--- | :--- | :--- | :--- |\n| P0 | 7 | 5 | 3 |\n| P1 | 3 | 2 | 2 |\n| P2 | 9 | 0 | 2 |\n| P3 | 2 | 2 | 2 |\n| P4 | 4 | 3 | 3 |\n\nAvailable Resources = (3, 3, 2)\n\n(a) Find the Need matrix for all processes. (5 Marks)\n(b) Check if the system is in a safe state. If yes, give the safe sequence. (5 Marks)\n(c) Suppose P1 requests (1, 0, 2). Check whether the request can be granted immediately. (5 Marks)",
+            "marks": 15,
+            "answer": "### Solution:\n\n#### (a) Need Matrix Calculation ($Need = Max - Allocation$):\n\n- $Need(P_0) = (7, 5, 3) - (0, 1, 0) = (7, 4, 3)$\n- $Need(P_1) = (3, 2, 2) - (2, 0, 0) = (1, 2, 2)$\n- $Need(P_2) = (9, 0, 2) - (3, 0, 2) = (6, 0, 0)$\n- $Need(P_3) = (2, 2, 2) - (2, 1, 1) = (0, 1, 1)$\n- $Need(P_4) = (4, 3, 3) - (0, 0, 2) = (4, 3, 1)$\n\n**Need Matrix:**\n| Process | A | B | C |\n| :--- | :--- | :--- | :--- |\n| **P0** | 7 | 4 | 3 |\n| **P1** | 1 | 2 | 2 |\n| **P2** | 6 | 0 | 0 |\n| **P3** | 0 | 1 | 1 |\n| **P4** | 4 | 3 | 1 |\n\n---\n\n#### (b) Safety Algorithm Check:\n- Initial $Available = (3, 3, 2)$, $Work = (3, 3, 2)$, $Finish = [False, False, False, False, False]$\n\n1. **Check $P_1$:** $Need(P_1) = (1, 2, 2) \\le Work(3, 3, 2)$ $\\rightarrow$ **Satisfied**\n   - $Work = Work + Allocation(P_1) = (3, 3, 2) + (2, 0, 0) = (5, 3, 2)$\n   - $Finish[P_1] = True$\n2. **Check $P_3$:** $Need(P_3) = (0, 1, 1) \\le Work(5, 3, 2)$ $\\rightarrow$ **Satisfied**\n   - $Work = Work + Allocation(P_3) = (5, 3, 2) + (2, 1, 1) = (7, 4, 3)$\n   - $Finish[P_3] = True$\n3. **Check $P_4$:** $Need(P_4) = (4, 3, 1) \\le Work(7, 4, 3)$ $\\rightarrow$ **Satisfied**\n   - $Work = Work + Allocation(P_4) = (7, 4, 3) + (0, 0, 2) = (7, 4, 5)$\n   - $Finish[P_4] = True$\n4. **Check $P_0$:** $Need(P_0) = (7, 4, 3) \\le Work(7, 4, 5)$ $\\rightarrow$ **Satisfied**\n   - $Work = Work + Allocation(P_0) = (7, 4, 5) + (0, 1, 0) = (7, 5, 5)$\n   - $Finish[P_0] = True$\n5. **Check $P_2$:** $Need(P_2) = (6, 0, 0) \\le Work(7, 5, 5)$ $\\rightarrow$ **Satisfied**\n   - $Work = Work + Allocation(P_2) = (7, 5, 5) + (3, 0, 2) = (10, 5, 7)$\n   - $Finish[P_2] = True$\n\n**System is in a SAFE State.**\n**Safe Sequence:** $\\langle P_1, P_3, P_4, P_0, P_2 \\rangle$ (or $\\langle P_1, P_3, P_0, P_2, P_4 \\rangle$ / $\\langle P_3, P_1, P_4, P_0, P_2 \\rangle$).\n\n---\n\n#### (c) Request Resource Algorithm for $P_1$ Request = $(1, 0, 2)$:\n1. Check $Request_1 (1, 0, 2) \\le Need_1 (1, 2, 2)$ $\\rightarrow$ **True**\n2. Check $Request_1 (1, 0, 2) \\le Available (3, 3, 2)$ $\\rightarrow$ **True**\n3. Pretend to allocate resources to $P_1$:\n   - $Available = (3, 3, 2) - (1, 0, 2) = (2, 3, 0)$\n   - $Allocation(P_1) = (2, 0, 0) + (1, 0, 2) = (3, 0, 2)$\n   - $Need(P_1) = (1, 2, 2) - (1, 0, 2) = (0, 2, 0)$\n\n**Run Safety Test on New State:**\n- $Work = (2, 3, 0)$\n- **Check $P_1$:** $Need(P_1) = (0, 2, 0) \\le (2, 3, 0) \\rightarrow$ **Yes**\n  - $Work = (2, 3, 0) + (3, 0, 2) = (5, 3, 2)$\n- **Check $P_3$:** $Need(P_3) = (0, 1, 1) \\le (5, 3, 2) \\rightarrow$ **Yes**\n  - $Work = (5, 3, 2) + (2, 1, 1) = (7, 4, 3)$\n- **Check $P_4$:** $Need(P_4) = (4, 3, 1) \\le (7, 4, 3) \\rightarrow$ **Yes**\n  - $Work = (7, 4, 3) + (0, 0, 2) = (7, 4, 5)$\n- **Check $P_0$:** $Need(P_0) = (7, 4, 3) \\le (7, 4, 5) \\rightarrow$ **Yes**\n  - $Work = (7, 4, 5) + (0, 1, 0) = (7, 5, 5)$\n- **Check $P_2$:** $Need(P_2) = (6, 0, 0) \\le (7, 5, 5) \\rightarrow$ **Yes**\n\nSince the system remains in a safe state (Safe Sequence: $\\langle P_1, P_3, P_4, P_0, P_2 \\rangle$), **the request from $P_1$ can be granted immediately.**",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Deadlock Avoidance"
+        },
+        {
+            "question_number": "27",
+            "question_text": "Explain first in first out page replacement algorithm and optimal page replacement algorithm and find out the page faults for the following string 7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 7, 0, 1 and number of frames as 3 by using FIFO page replacement algorithm and optimal page replacement algorithm. (10 Marks)\nExplain the concept of thrashing in the OS. (5 Marks)",
+            "marks": 15,
+            "answer": "### Part 1: Page Replacement Algorithms Analysis\n\nGiven Reference String: `7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 7, 0, 1`  \nNumber of Frames: `3`\n\n---\n\n#### A. First-In, First-Out (FIFO) Page Replacement:\n*Principle:* Replaces the oldest page loaded into memory.\n\n| Ref | Frame 1 | Frame 2 | Frame 3 | Fault? |\n| :--- | :--- | :--- | :--- | :--- |\n| 7 | **7** | | | Yes (1) |\n| 0 | 7 | **0** | | Yes (2) |\n| 1 | 7 | 0 | **1** | Yes (3) |\n| 2 | **2** | 0 | 1 | Yes (4) |\n| 0 | 2 | 0 | 1 | No |\n| 3 | 2 | **3** | 1 | Yes (5) |\n| 0 | 2 | 3 | **0** | Yes (6) |\n| 4 | **4** | 3 | 0 | Yes (7) |\n| 2 | 4 | **2** | 0 | Yes (8) |\n| 3 | 4 | 2 | **3** | Yes (9) |\n| 0 | **0** | 2 | 3 | Yes (10) |\n| 3 | 0 | 2 | 3 | No |\n| 2 | 0 | 2 | 3 | No |\n| 1 | 0 | **1** | 3 | Yes (11) |\n| 2 | 0 | 1 | **2** | Yes (12) |\n| 0 | 0 | 1 | 2 | No |\n| 1 | 0 | 1 | 2 | No |\n| 7 | **7** | 1 | 2 | Yes (13) |\n| 0 | 7 | **0** | 2 | Yes (14) |\n| 1 | 7 | 0 | **1** | Yes (15) |\n\n**Total Page Faults (FIFO) = 15**\n\n---\n\n#### B. Optimal (OPT) Page Replacement:\n*Principle:* Replaces the page that will not be used for the longest period of time in the future.\n\n| Ref | Frame 1 | Frame 2 | Frame 3 | Fault? |\n| :--- | :--- | :--- | :--- | :--- |\n| 7 | **7** | | | Yes (1) |\n| 0 | 7 | **0** | | Yes (2) |\n| 1 | 7 | 0 | **1** | Yes (3) |\n| 2 | **2** | 0 | 1 | Yes (4) (7 replaced as not used) |\n| 0 | 2 | 0 | 1 | No |\n| 3 | 2 | 0 | **3** | Yes (5) (1 replaced as 0,2 needed soon) |\n| 0 | 2 | 0 | 3 | No |\n| 4 | 2 | 0 | **4** | Yes (6) (3 replaced as 2,0 needed) |\n| 2 | 2 | 0 | 4 | No |\n| 3 | 2 | 0 | **3** | Yes (7) (4 replaced) |\n| 0 | 2 | 0 | 3 | No |\n| 3 | 2 | 0 | 3 | No |\n| 2 | 2 | 0 | 3 | No |\n| 1 | 2 | 0 | **1** | Yes (8) (3 replaced) |\n| 2 | 2 | 0 | 1 | No |\n| 0 | 2 | 0 | 1 | No |\n| 1 | 2 | 0 | 1 | No |\n| 7 | **7** | 0 | 1 | Yes (9) (2 replaced) |\n| 0 | 7 | 0 | 1 | No |\n| 1 | 7 | 0 | 1 | No |\n\n**Total Page Faults (Optimal) = 9**\n\n---\n\n### Part 2: Concept of Thrashing in OS\n\n**Definition:**\nThrashing occurs when a computer's virtual memory subsystem is continuously paging (swapping pages in and out of main memory) to such an extent that the system spends more time performing page faults than executing user instructions.\n\n**Causes:**\n1. **Under-allocation of Frames:** If a process is not allocated enough frames to hold its active **Working Set** (locality of reference), page faults occur repeatedly.\n2. **High Degree of Multiprogramming:** When CPU utilization drops, the global scheduler introduces more processes to CPU ready queue, taking frames away from existing processes and driving the system into continuous page swapping.\n\n**Remedies / Prevention:**\n- **Working-Set Model:** Allocate processes sufficient frames based on their active working set size $\\Delta$.\n- **Page-Fault Frequency (PFF):** Monitor the page-fault rate; if it exceeds an upper threshold, allocate more frames; if it falls below a lower threshold, reduce frame allocation.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Page Replacement"
+        }
+    ]
+}
