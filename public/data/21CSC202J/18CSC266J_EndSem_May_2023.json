@@ -1,0 +1,303 @@
+{
+    "formal_filename": "18CSC266J_EndSem_May_2023.json",
+    "paper_title": "B.Tech. DEGREE EXAMINATION, MAY 2023 - Fourth Semester - 18CSC266J - OPERATING SYSTEMS",
+    "source": "EndSem May 2023",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "The main advantages of batch operating system is ______.\n(A) Low cost\n(B) Multiple users can share the batch system\n(C) Easy debug\n(D) Suitable for managing small work",
+            "marks": 1,
+            "answer": "(B) Multiple users can share the batch system\nRationale: In a batch operating system, multiple users can share the system resources without direct interaction with the CPU, and batches of jobs from multiple users are processed sequentially to keep CPU utilization high.",
+            "answer_source": "generated",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "2",
+            "question_text": "Operating system is not a ______.\n(A) System software\n(B) First loaded program by boot program\n(C) Hardware software interface\n(D) Application software",
+            "marks": 1,
+            "answer": "(D) Application software\nRationale: An operating system is system software that acts as an intermediary/interface between the user/applications and the computer hardware, not an application software.",
+            "answer_source": "generated",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "3",
+            "question_text": "Hardware interrupt is made by ______.\n(A) IRQ line\n(B) Interrupt handles\n(C) Special instructions\n(D) Interrupt condition",
+            "marks": 1,
+            "answer": "(A) IRQ line\nRationale: Hardware devices signal an interrupt to the CPU by sending an electrical signal along an Interrupt Request (IRQ) line on the system bus.",
+            "answer_source": "generated",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "4",
+            "question_text": "Virtual machine is used for ______.\n(A) Utilization of memory\n(B) Running different operating systems simultaneously\n(C) Frequently used program\n(D) Multithreading",
+            "marks": 1,
+            "answer": "(B) Running different operating systems simultaneously\nRationale: Virtual machines abstract hardware, allowing multiple guest operating systems to execute concurrently on the same physical host machine.",
+            "answer_source": "generated",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "5",
+            "question_text": "Purpose of process scheduling is to ______.\n(A) Maximize waiting time\n(B) Maximize throughput\n(C) Maximize response time\n(D) Maximize turnaround time",
+            "marks": 1,
+            "answer": "(B) Maximize throughput\nRationale: Process scheduling aims to maximize CPU utilization and throughput (number of processes completed per unit time) while minimizing waiting, response, and turnaround times.",
+            "answer_source": "generated",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "6",
+            "question_text": "Round Robin scheduling falls under the category of ______.\n(A) Non-preemptive scheduling\n(B) Preemptive scheduling\n(C) Multiple level queue scheduling\n(D) Priority scheduling",
+            "marks": 1,
+            "answer": "(B) Preemptive scheduling\nRationale: Round Robin scheduling uses a fixed time quantum; if a process does not complete within this quantum, it is preempted and placed at the tail of the ready queue.",
+            "answer_source": "generated",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "7",
+            "question_text": "In real time operating system, ______.\n(A) Kernel is not required\n(B) Process scheduling can be done only once\n(C) All process must be serviced by its deadline period\n(D) All process have the same priority",
+            "marks": 1,
+            "answer": "(C) All process must be serviced by its deadline period\nRationale: The correctness of a real-time operating system depends not only on the logical result of the computation but also on completing the task before its strict deadline.",
+            "answer_source": "generated",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "8",
+            "question_text": "A shell script is a file that contains ______.\n(A) Set of statements\n(B) Scheduling algorithm\n(C) Interrupt routine\n(D) Sequence of operating system commands and shell commands",
+            "marks": 1,
+            "answer": "(D) Sequence of operating system commands and shell commands\nRationale: A shell script is an executable text file containing a series of shell and OS commands executed by the command-line interpreter.",
+            "answer_source": "generated",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "9",
+            "question_text": "The hardware implementation which provides mutual exclusion is ______.\n(A) Counting semaphore\n(B) Binary semaphore\n(C) Test and set lock\n(D) Scheduling algorithm",
+            "marks": 1,
+            "answer": "(C) Test and set lock\nRationale: `Test-and-Set` (or `Compare-and-Swap`) is an atomic hardware instruction used to implement low-level synchronization and mutual exclusion locks.",
+            "answer_source": "generated",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "10",
+            "question_text": "The reader-writer problem and its solutions, have been generalized to provide reader writer locks on some systems. The process wishing to modify the shared data must request the lock in ______.\n(A) Read mode\n(B) Write mode\n(C) Read and write mode\n(D) Exclusive mode",
+            "marks": 1,
+            "answer": "(B) Write mode\nRationale: In reader-writer locks, writers require exclusive/write mode access so no other readers or writers can access the shared data concurrently.",
+            "answer_source": "generated",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "11",
+            "question_text": "The circular wait condition can be prevented by ______.\n(A) Defining a linear ordering of resources type\n(B) Using thread\n(C) Using pipes\n(D) Thread and pipes",
+            "marks": 1,
+            "answer": "(A) Defining a linear ordering of resources type\nRationale: To prevent circular wait, a total/linear ordering of all resource types can be established, requiring that each process requests resources only in strictly increasing order of enumeration.",
+            "answer_source": "generated",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "12",
+            "question_text": "For non sharable resources like a printer, mutual exclusion ______.\n(A) Must exist\n(B) Must not exist\n(C) May exist\n(D) Partially exist",
+            "marks": 1,
+            "answer": "(A) Must exist\nRationale: Non-shareable resources such as printers can only be used by one process at a time, so mutual exclusion must hold.",
+            "answer_source": "generated",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "13",
+            "question_text": "The last on the hierarchy scale of memory device is ______.\n(A) Main memory\n(B) Secondary memory\n(C) TLB\n(D) Flash drives",
+            "marks": 1,
+            "answer": "(B) Secondary memory\nRationale: In the given hierarchy (TLB $\\rightarrow$ Main Memory $\\rightarrow$ Flash drives $\\rightarrow$ Secondary Memory / Magnetic Disk / Optical / Tapes), secondary/tertiary storage sits at the base with the highest capacity and slowest access speed.",
+            "answer_source": "generated",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "14",
+            "question_text": "In contiguous memory allocation ______.\n(A) Each process is contained in a single contiguous section of memory\n(B) All process are contained in a single contiguous section of memory\n(C) The memory space is contiguous\n(D) The memory space is not contiguous",
+            "marks": 1,
+            "answer": "(A) Each process is contained in a single contiguous section of memory\nRationale: Contiguous memory allocation allocates a single contiguous block of physical memory addresses to each individual process.",
+            "answer_source": "generated",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "15",
+            "question_text": "Internal fragmentation occurs when a ______.\n(A) Memory area remain unused because it is too large to be allocated\n(B) Memory area remain unused because it is too small to be allocated\n(C) More memory is allocated than requested by processor\n(D) Less memory is allocated than requested by processor",
+            "marks": 1,
+            "answer": "(C) More memory is allocated than requested by processor\nRationale: Internal fragmentation occurs when fixed-sized memory blocks are allocated to a process that requests less space than the block size, leaving the unused portion inside the partition wasted.",
+            "answer_source": "generated",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "16",
+            "question_text": "In virtual memory, swap space exist in ______.\n(A) Cache\n(B) Registers\n(C) RAM\n(D) Secondary storage",
+            "marks": 1,
+            "answer": "(D) Secondary storage\nRationale: Swap space is allocated on secondary storage (hard disk or SSD) to hold memory pages or processes that are temporarily swapped out of physical RAM.",
+            "answer_source": "generated",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "17",
+            "question_text": "Which one of the following connects high-speed high-bandwidth device to memory subsystem and CPU?\n(A) Expansion bus\n(B) PCI bus\n(C) SCSI bus\n(D) External bus",
+            "marks": 1,
+            "answer": "(B) PCI bus\nRationale: The PCI (Peripheral Component Interconnect) / PCIe bus connects high-speed devices (graphics cards, fast network adapters) to the CPU and memory subsystem.",
+            "answer_source": "generated",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "18",
+            "question_text": "After the completion of DMA transfer, the processor is notified by ______.\n(A) Acknowledgement signal\n(B) Interrupt signal\n(C) WMFC signal\n(D) Control signal",
+            "marks": 1,
+            "answer": "(B) Interrupt signal\nRationale: Once the DMA controller finishes transferring the entire block of data between memory and I/O device, it raises an interrupt to notify the CPU.",
+            "answer_source": "generated",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "19",
+            "question_text": "A file is a/an ______ data type.\n(A) Abstract\n(B) Primitive\n(C) Public\n(D) Private",
+            "marks": 1,
+            "answer": "(A) Abstract\nRationale: A file is an abstract data type defined by the operating system that encapsulates a collection of related information along with predefined operations (create, open, read, write, close).",
+            "answer_source": "generated",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "20",
+            "question_text": "The process of dividing a disk into sectors that the disk controller can read and write, before a disk can store data is known as ______.\n(A) Partitioning\n(B) Swap space creation\n(C) Low level formatting\n(D) Fragmentation",
+            "marks": 1,
+            "answer": "(C) Low level formatting\nRationale: Low-level formatting (or physical formatting) fills the disk with a special data structure consisting of sectors, headers, and trailers that the disk controller can read and write.",
+            "answer_source": "generated",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "21",
+            "question_text": "Define process and explain the process states with neat diagram.",
+            "marks": 4,
+            "answer": "### 1. Definition of Process\nA **process** is a program in execution. It includes the program code (text section), current activity represented by the program counter and registers, process stack (temporary data such as function parameters, return addresses, local variables), data section (global variables), and heap (dynamically allocated memory).\n\n### 2. Process States\nDuring execution, a process moves through several states:\n1. **New:** The process is being created.\n2. **Ready:** The process is waiting to be assigned to a processor.\n3. **Running:** Instructions are being executed by the CPU.\n4. **Waiting (Blocked):** The process is waiting for some event to occur (e.g., I/O completion or reception of a signal).\n5. **Terminated:** The process has finished execution.\n\n### 3. State Transition Diagram\n```text\n         [ admitted ]          [ scheduler dispatch ]\n (New) --------------> (Ready) -----------------------> (Running) -------> (Terminated)\n                         ^                                 |     [ exit ]\n                         |       [ interrupt / timeout ]   |\n                         +---------------------------------+\n                         |                                 |\n                         |    [ I/O or event completion ]  | [ I/O or event wait ]\n                         +-------------------------------- (Waiting)\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "22",
+            "question_text": "Explain the priority scheduling algorithm with suitable example and write the pros and cons.",
+            "marks": 4,
+            "answer": "### Priority Scheduling Algorithm\nIn Priority Scheduling, an integer priority value is associated with each process. The CPU is allocated to the process with the highest priority (commonly, the smallest integer value denotes the highest priority).\n\n- It can be either **preemptive** or **non-preemptive**.\n\n### Example:\n| Process | Burst Time | Priority |\n| :--- | :--- | :--- |\n| P1 | 10 | 3 |\n| P2 | 1 | 1 (Highest) |\n| P3 | 2 | 4 |\n| P4 | 1 | 5 |\n| P5 | 5 | 2 |\n\n**Gantt Chart (Non-preemptive):**\n```text\n| P2 (1) | P5 (5) | P1 (10) | P3 (2) | P4 (1) |\n0        1        6         16       18       19\n```\n\n### Pros and Cons:\n- **Pros:**\n  1. Simple to understand and implement.\n  2. Provides higher responsiveness to critical and high-priority processes.\n- **Cons:**\n  1. **Indefinite Blocking / Starvation:** Low-priority processes may wait indefinitely if high-priority processes keep arriving.\n  2. *Solution:* **Aging** (gradually increasing the priority of processes waiting in the system).",
+            "answer_source": "generated",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "23",
+            "question_text": "Explain Peterson's solution for achieving mutual exclusion.",
+            "marks": 4,
+            "answer": "### Peterson's Solution\nPeterson's Solution is a classic software-based solution to the critical-section problem for two processes ($P_0$ and $P_1$).\n\n### Shared Variables:\n```c\nint turn;              // Indicates whose turn it is to enter critical section\nboolean flag[2];       // Indicates if a process is ready to enter critical section\n```\nInitially, `flag[0] = flag[1] = false`.\n\n### Structure of Process $P_i$ (where $j = 1 - i$):\n```c\ndo {\n    flag[i] = true;\n    turn = j;\n    while (flag[j] && turn == j);\n    \n    // CRITICAL SECTION\n    \n    flag[i] = false;\n    \n    // REMAINDER SECTION\n} while (true);\n```\n\n### Correctness Requirements Satisfied:\n1. **Mutual Exclusion:** Both cannot be in their critical sections simultaneously because `turn` can hold only one value (either 0 or 1).\n2. **Progress:** If a process leaves the critical section, it resets `flag[i] = false`, allowing the other waiting process to enter.\n3. **Bounded Waiting:** A process waits at most one turn before getting access, preventing starvation.",
+            "answer_source": "generated",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "24",
+            "question_text": "What is paging? Discuss basic paging technique in detail.",
+            "marks": 4,
+            "answer": "### Paging\n**Paging** is a memory-management scheme that permits the physical address space of a process to be non-contiguous. It eliminates external fragmentation and avoids the need for compaction.\n\n### Basic Paging Technique:\n1. **Division of Memory:**\n   - Physical memory is broken into fixed-sized blocks called **frames**.\n   - Logical memory is broken into blocks of the same size called **pages**.\n2. **Address Translation:**\n   - A logical address generated by CPU is divided into two parts:\n     - **Page Number ($p$):** Used as an index into a page table.\n     - **Page Offset ($d$):** Combined with base address to define the physical memory address.\n   $$\\text{Physical Address} = (\\text{Frame Number } f \\times \\text{Frame Size}) + d$$\n3. **Page Table:**\n   - Maintained by the OS for each process, mapping logical page numbers ($p$) to physical frame numbers ($f$).\n4. **Hardware Support:**\n   - Translation Lookaside Buffer (TLB) is used as an associative cache to speed up address translation.",
+            "answer_source": "generated",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "25",
+            "question_text": "Discuss the difference between internal and external fragmentation.",
+            "marks": 5,
+            "answer": "### Difference Between Internal and External Fragmentation\n\n| Parameter | Internal Fragmentation | External Fragmentation |\n| :--- | :--- | :--- |\n| **Definition** | Unused memory within an allocated memory block/partition. | Total free memory space is sufficient to satisfy a request, but it is non-contiguous. |\n| **Occurrence** | Occurs when memory is allocated in fixed-size blocks (e.g., paging, fixed partitioning). | Occurs when memory is allocated dynamically in variable-sized partitions (e.g., segmentation). |\n| **Location** | Inside the allocated partition. | Outside allocated partitions (between allocated blocks). |\n| **Detection/Prevention** | Reduced by using smaller block/page sizes. | Eliminated using **compaction** or **paging/virtual memory**. |\n| **Wasted Space** | Process gets more space than requested. | Free holes scattered throughout memory cannot fit any single request. |",
+            "answer_source": "generated",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "26",
+            "question_text": "Describe, using a good example, the effects of changing the Round Robin scheduling algorithms time quantum from fixed small number to fixed large number.",
+            "marks": 4,
+            "answer": "### Effects of Changing Time Quantum ($q$) in Round Robin Scheduling\n\n1. **Extremely Large Time Quantum ($q \\to \\infty$):**\n   - If the time quantum is very large (larger than the longest burst time), Round Robin degenerates into **First-Come, First-Served (FCFS)** scheduling.\n   - *Effect:* Context switch overhead is minimized, but average waiting and response times increase significantly for shorter jobs.\n\n2. **Extremely Small Time Quantum ($q \\to 0$):**\n   - If the time quantum is very small, the algorithm is called **processor sharing** (creates the illusion that each of $n$ processes has its own processor running at $1/n$ the speed).\n   - *Effect:* Context switch overhead becomes extremely high, dominating execution time and degrading overall system throughput.\n\n### Example:\nConsider a single process of burst time = $10\\text{ ms}$.\n- If $q = 12\\text{ ms}$: 0 context switches, turnaround time $= 10\\text{ ms}$.\n- If $q = 6\\text{ ms}$: 1 context switch, small overhead.\n- If $q = 1\\text{ ms}$: 9 context switches; if context switch takes $0.1\\text{ ms}$, total overhead $= 0.9\\text{ ms}$, wasting $9\\%$ of CPU time.",
+            "answer_source": "generated",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "27",
+            "question_text": "What is virtual memory? How it is implemented? Explain.",
+            "marks": 4,
+            "answer": "### Virtual Memory\n**Virtual memory** is a technique that allows the execution of processes that are not completely in physical memory. It separates user logical memory from physical memory, allowing the logical address space to be much larger than the physical address space.\n\n### Implementation of Virtual Memory:\n1. **Demand Paging:**\n   - Pages are loaded into physical memory only when they are needed during execution (on demand).\n   - A **valid-invalid bit** in the page table entry indicates whether the page is in memory (`valid`) or in backing store (`invalid`).\n   - Accessing an invalid page triggers a **page fault** trap to the OS.\n   - The OS brings the missing page from backing store into a free frame, updates the page table, and restarts the instruction.\n2. **Demand Segmentation:**\n   - Segmented memory is loaded on demand using segment tables and valid/invalid indicators.\n3. **Page Replacement Algorithms:**\n   - When physical memory is full, an algorithm (FIFO, LRU, Optimal) selects a victim page to swap out.",
+            "answer_source": "generated",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "28. a.",
+            "question_text": "Describe the features of the following types of operating systems structures.\n(i) Layered approach\n(ii) Micro kernel system structure",
+            "marks": 12,
+            "answer": "### (i) Layered Approach\nIn the layered approach, the operating system is broken into a number of layers (levels). The bottom layer (layer 0) is the hardware; the highest layer (layer $N$) is the user interface.\n\n**Key Features:**\n1. **Modularity and Encapsulation:** Each layer is implemented only using the operations provided by lower-level layers. A layer hides internal data structures and operations from higher layers.\n2. **Simplified Debugging and Verification:** The first layer can be debugged without concern for the rest of the system. Once layer 0 is verified, layer 1 can be tested, and so on.\n3. **Disadvantages:**\n   - Difficulty in properly defining the requirements of each layer.\n   - Less efficient because each layer adds overhead to system calls (traversing multiple layers).\n\n---\n\n### (ii) Microkernel System Structure\nThe microkernel architecture strips all non-essential components from the kernel and implements them as user-level and system programs.\n\n**Key Features:**\n1. **Minimal Kernel:** Only core mechanisms remain in kernel mode: minimal process and memory management, and interprocess communication (IPC).\n2. **User-Space Services:** Device drivers, file systems, and networking protocols run as user-level server processes.\n3. **Message Passing:** Communication between client programs and user services is carried out via message passing through the microkernel.\n4. **Advantages:**\n   - **Extensibility:** New services can be added to user space without modifying the kernel.\n   - **Reliability and Security:** If a service crashes (e.g., device driver), the rest of the OS continues running.\n5. **Disadvantage:**\n   - Performance overhead due to increased context switching and IPC message copying.",
+            "answer_source": "generated",
+            "chapter": "Unit 1"
+        },
+        {
+            "question_number": "28. b.",
+            "question_text": "Describe the fields in Process Control Block (PCB). What is context switch overhead? Explain with neat sketch.",
+            "marks": 12,
+            "answer": "### 1. Process Control Block (PCB)\nA PCB (or Task Control Block) is a data structure maintained by the OS for each process containing all information needed to manage it:\n\n1. **Process State:** New, ready, running, waiting, or terminated.\n2. **Program Counter (PC):** Indicates the address of the next instruction to be executed.\n3. **CPU Registers:** Accumulators, index registers, stack pointers, general-purpose registers, and condition codes.\n4. **CPU-Scheduling Information:** Process priority, scheduling queue pointers, and scheduling parameters.\n5. **Memory-Management Information:** Value of base and limit registers, page tables, or segment tables.\n6. **Accounting Information:** Amount of CPU time used, time limits, account numbers, process IDs.\n7. **I/O Status Information:** List of I/O devices allocated to the process, open file descriptors.\n\n### 2. Context Switch Overhead\nA **context switch** is the process of saving the state of the currently running process and restoring the state of another ready process so execution can be resumed from the same point.\n- **Overhead:** Context-switch time is purely computational overhead because the system performs no useful user work during switching. The speed depends on hardware support (e.g., multiple register sets).\n\n### 3. Context Switch Diagram\n```text\n      Process P0                     Operating System                    Process P1\n          |                                 |                                 |\n  [ Executing ]                             |                                 |\n          |         Interrupt / System Call |                                 |\n          +-------------------------------->|                                 |\n          |                                 | Save state into PCB0            |\n          |  (Idle)                         |                                 |\n          |                                 | Restore state from PCB1         |\n          |                                 |-------------------------------->+\n          |                                 |                                 |  [ Executing ]\n          |                                 |         Interrupt / System Call |\n          |                                 |<--------------------------------+\n          |                                 | Save state into PCB1            |\n          |                                 |                                 |\n          |                                 | Restore state from PCB0         |\n          |<--------------------------------|                                 |\n  [ Executing ]                             |                                 |  (Idle)\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "29. a.",
+            "question_text": "Suppose the following processes arrive for execution at the times indicated. Each process will run the listed amount of time, in answering the questions use non-preemptive scheduling.\n\n| Process | Arrival time | Burst time |\n| :--- | :--- | :--- |\n| P1 | 0.0 | 12 |\n| P2 | 0.4 | 6 |\n| P3 | 0.7 | 3 |\n| P4 | 1.0 | 1 |\n\n(i) Find the average waiting time and turnaround time for these process with the FCFS scheduling algorithm\n(ii) Find the average waiting time and turnaround time for these process with SJF scheduling algorithm",
+            "marks": 12,
+            "answer": "### (i) FCFS Scheduling (Non-preemptive)\n**Arrival order:** P1 (0.0), P2 (0.4), P3 (0.7), P4 (1.0)\n\n**Gantt Chart:**\n```text\n|    P1     |    P2    |   P3   |  P4  |\n0          12         18       21     22\n```\n\n- **Completion Times ($CT$):**\n  - $CT(P1) = 12$\n  - $CT(P2) = 18$\n  - $CT(P3) = 21$\n  - $CT(P4) = 22$\n\n- **Turnaround Time ($TAT = CT - AT$):**\n  - $TAT(P1) = 12 - 0.0 = 12.0$\n  - $TAT(P2) = 18 - 0.4 = 17.6$\n  - $TAT(P3) = 21 - 0.7 = 20.3$\n  - $TAT(P4) = 22 - 1.0 = 21.0$\n  - $\\text{Average } TAT = \\frac{12.0 + 17.6 + 20.3 + 21.0}{4} = \\frac{70.9}{4} = 17.725$\n\n- **Waiting Time ($WT = TAT - BT$):**\n  - $WT(P1) = 12.0 - 12 = 0.0$\n  - $WT(P2) = 17.6 - 6 = 11.6$\n  - $WT(P3) = 20.3 - 3 = 17.3$\n  - $WT(P4) = 21.0 - 1 = 20.0$\n  - $\\text{Average } WT = \\frac{0.0 + 11.6 + 17.3 + 20.0}{4} = \\frac{48.9}{4} = 12.225$\n\n---\n\n### (ii) Non-preemptive SJF Scheduling\n- At $t = 0$, only **P1** has arrived, so P1 runs from $t = 0$ to $t = 12$.\n- At $t = 12$, P2 ($BT=6$), P3 ($BT=3$), and P4 ($BT=1$) are all in the ready queue.\n- Shortest burst is **P4** ($BT=1$), so P4 runs from $12$ to $13$.\n- Next shortest is **P3** ($BT=3$), runs from $13$ to $16$.\n- Finally, **P2** ($BT=6$), runs from $16$ to $22$.\n\n**Gantt Chart:**\n```text\n|    P1     |  P4  |   P3   |    P2    |\n0          12     13       16         22\n```\n\n- **Completion Times ($CT$):**\n  - $CT(P1) = 12$\n  - $CT(P4) = 13$\n  - $CT(P3) = 16$\n  - $CT(P2) = 22$\n\n- **Turnaround Time ($TAT = CT - AT$):**\n  - $TAT(P1) = 12 - 0.0 = 12.0$\n  - $TAT(P4) = 13 - 1.0 = 12.0$\n  - $TAT(P3) = 16 - 0.7 = 15.3$\n  - $TAT(P2) = 22 - 0.4 = 21.6$\n  - $\\text{Average } TAT = \\frac{12.0 + 12.0 + 15.3 + 21.6}{4} = \\frac{60.9}{4} = 15.225$\n\n- **Waiting Time ($WT = TAT - BT$):**\n  - $WT(P1) = 12.0 - 12 = 0.0$\n  - $WT(P4) = 12.0 - 1 = 11.0$\n  - $WT(P3) = 15.3 - 3 = 12.3$\n  - $WT(P2) = 21.6 - 6 = 15.6$\n  - $\\text{Average } WT = \\frac{0.0 + 11.0 + 12.3 + 15.6}{4} = \\frac{38.9}{4} = 9.725$",
+            "answer_source": "generated",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "29. b.",
+            "question_text": "Explain in detail about rate monotonic scheduling and earliest deadline first scheduling with suitable example.",
+            "marks": 12,
+            "answer": "### 1. Rate-Monotonic Scheduling (RMS)\n- **Concept:** A static-priority preemptive scheduling algorithm used for periodic real-time tasks.\n- **Priority Assignment:** Priority is inversely proportional to the period ($p$). The shorter the period, the higher the priority.\n- **CPU Utilization Bound:** For $n$ processes, schedulability is guaranteed if:\n  $$U = \\sum_{i=1}^{n} \\frac{C_i}{p_i} \\le n(2^{1/n} - 1)$$\n  For $n=2$, $U \\le 2(\\sqrt{2}-1) \\approx 0.828$.\n\n**Example:**\n- Process $P_1$: Period $p_1 = 50$, Execution time $C_1 = 20$, Priority = High (shorter period).\n- Process $P_2$: Period $p_2 = 100$, Execution time $C_2 = 35$, Priority = Low.\n- Utilization: $U = \\frac{20}{50} + \\frac{35}{100} = 0.40 + 0.35 = 0.75 \\le 0.828$ (Schedulable under RMS).\n- At $t=0$: $P_1$ runs from $0$ to $20$. $P_2$ runs from $20$ to $50$.\n- At $t=50$: $P_1$ arrives and preempts $P_2$ (which has $5$ units left). $P_1$ runs from $50$ to $70$.\n- At $t=70$: $P_2$ finishes its remaining $5$ units from $70$ to $75$.\n\n---\n\n### 2. Earliest-Deadline-First (EDF) Scheduling\n- **Concept:** A dynamic-priority scheduling algorithm where priorities are assigned according to task deadlines.\n- **Priority Assignment:** The earlier the absolute deadline of a task, the higher its priority.\n- **CPU Utilization Bound:** Guarantees schedulability as long as total CPU utilization is $\\le 100\\%$ ($U = \\sum \\frac{C_i}{p_i} \\le 1$).\n\n**Example:**\n- Process $P_1$: $p_1 = 50$, $C_1 = 25$.\n- Process $P_2$: $p_2 = 80$, $C_2 = 35$.\n- Total $U = \\frac{25}{50} + \\frac{35}{80} = 0.5 + 0.4375 = 0.9375 \\le 1.0$.\n- At $t=0$: $P_1$ deadline $= 50$, $P_2$ deadline $= 80$. $P_1$ has earlier deadline and runs from $0$ to $25$.\n- At $t=25$: $P_2$ runs until $t=50$.\n- At $t=50$: Next $P_1$ arrives with deadline $= 100$. $P_2$'s deadline ($80$) is earlier than $P_1$'s ($100$). Thus, $P_2$ completes its remaining $10$ units ($50$ to $60$).\n- At $t=60$: $P_1$ executes until $85$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "30. a.",
+            "question_text": "Describe a solution to the dining philosopher problem so that no race condition arises.",
+            "marks": 12,
+            "answer": "### The Dining-Philosophers Problem\nFive philosophers sit around a circular table, spending their lives thinking and eating. Between each pair of adjacent philosophers is a single chopstick (total 5 chopsticks). A philosopher needs two chopsticks (left and right) to eat.\n\n### Monitor-Based Solution (Deadlock and Race-Free)\nUsing a monitor with state tracking prevents deadlocks, starvation, and race conditions by allowing a philosopher to pick up chopsticks only if both are available.\n\n```c\nmonitor DiningPhilosophers {\n    enum { THINKING, HUNGRY, EATING } state[5];\n    condition self[5];\n\n    void pickup(int i) {\n        state[i] = HUNGRY;\n        test(i);\n        if (state[i] != EATING)\n            self[i].wait();\n    }\n\n    void putdown(int i) {\n        state[i] = THINKING;\n        // Test left and right neighbors\n        test((i + 4) % 5);\n        test((i + 1) % 5);\n    }\n\n    void test(int i) {\n        if ((state[(i + 4) % 5] != EATING) &&\n            (state[i] == HUNGRY) &&\n            (state[(i + 1) % 5] != EATING)) {\n            state[i] = EATING;\n            self[i].signal();\n        }\n    }\n\n    initialization_code() {\n        for (int i = 0; i < 5; i++)\n            state[i] = THINKING;\n    }\n}\n```\n\n### Philosopher Structure:\n```c\nDiningPhilosophers.pickup(i);\n// EAT\nDiningPhilosophers.putdown(i);\n// THINK\n```\n\n### Why this prevents race conditions and deadlock:\n1. **Mutual Exclusion:** Entry into the monitor methods is strictly mutually exclusive.\n2. **No Deadlock:** A philosopher picks up forks only when both adjacent neighbors are not eating.\n3. **No Race Conditions:** State transitions (`THINKING`, `HUNGRY`, `EATING`) and conditional checks are performed atomically inside the monitor.",
+            "answer_source": "generated",
+            "chapter": "Unit 2"
+        },
+        {
+            "question_number": "30. b.",
+            "question_text": "Consider the following snapshot\n\n| Process | Allocate (A B C D) | Max (A B C D) | Available (A B C D) |\n| :--- | :--- | :--- | :--- |\n| P0 | 0 0 1 2 | 0 0 1 2 | 1 5 2 0 |\n| P1 | 1 0 0 0 | 1 7 5 0 | |\n| P2 | 1 3 5 4 | 2 3 5 6 | |\n| P3 | 0 6 3 2 | 0 6 5 2 | |\n| P4 | 0 0 1 4 | 0 6 5 6 | |\n\nAnswer the following using bankers algorithm\n(i) What are the contents of matrix need?\n(ii) Is the system in safe state?\n(iii) If request for P1 arrives for (0, 4, 2, 0).",
+            "marks": 12,
+            "answer": "### (i) Contents of Need Matrix\n$$\\text{Need}[i] = \\text{Max}[i] - \\text{Allocation}[i]$$\n\n| Process | Need (A B C D) |\n| :--- | :--- |\n| **P0** | $(0-0, 0-0, 1-1, 2-2) = (0, 0, 0, 0)$ |\n| **P1** | $(1-1, 7-0, 5-0, 0-0) = (0, 7, 5, 0)$ |\n| **P2** | $(2-1, 3-3, 5-5, 6-4) = (1, 0, 0, 2)$ |\n| **P3** | $(0-0, 6-6, 5-3, 2-2) = (0, 0, 2, 0)$ |\n| **P4** | $(0-0, 6-0, 5-1, 6-4) = (0, 6, 4, 2)$ |\n\n---\n\n### (ii) Safety State Check\n- $\\text{Available} = (1, 5, 2, 0)$\n\n1. **Check P0:** $\\text{Need}_0 = (0, 0, 0, 0) \\le (1, 5, 2, 0)$ $\\to$ True.\n   - $\\text{Available} = (1, 5, 2, 0) + (0, 0, 1, 2) = (1, 5, 3, 2)$.\n2. **Check P2:** $\\text{Need}_2 = (1, 0, 0, 2) \\le (1, 5, 3, 2)$ $\\to$ True.\n   - $\\text{Available} = (1, 5, 3, 2) + (1, 3, 5, 4) = (2, 8, 8, 6)$.\n3. **Check P1:** $\\text{Need}_1 = (0, 7, 5, 0) \\le (2, 8, 8, 6)$ $\\to$ True.\n   - $\\text{Available} = (2, 8, 8, 6) + (1, 0, 0, 0) = (3, 8, 8, 6)$.\n4. **Check P3:** $\\text{Need}_3 = (0, 0, 2, 0) \\le (3, 8, 8, 6)$ $\\to$ True.\n   - $\\text{Available} = (3, 8, 8, 6) + (0, 6, 3, 2) = (3, 14, 11, 8)$.\n5. **Check P4:** $\\text{Need}_4 = (0, 6, 4, 2) \\le (3, 14, 11, 8)$ $\\to$ True.\n   - $\\text{Available} = (3, 14, 11, 8) + (0, 0, 1, 4) = (3, 14, 12, 12)$.\n\n**Conclusion:** The system is in a **SAFE STATE** with safe sequence: $\\langle P0, P2, P1, P3, P4 \\rangle$ (or $\\langle P0, P3, P2, P1, P4 \\rangle$).\n\n---\n\n### (iii) Request for P1 arrives for $(0, 4, 2, 0)$:\n1. $\\text{Request}_1 = (0, 4, 2, 0) \\le \\text{Need}_1 (0, 7, 5, 0)$ $\\to$ True.\n2. $\\text{Request}_1 = (0, 4, 2, 0) \\le \\text{Available} (1, 5, 2, 0)$ $\\to$ True.\n3. **Pretend Allocation:**\n   - $\\text{Available} = (1, 5, 2, 0) - (0, 4, 2, 0) = (1, 1, 0, 0)$\n   - $\\text{Allocation}_1 = (1, 0, 0, 0) + (0, 4, 2, 0) = (1, 4, 2, 0)$\n   - $\\text{Need}_1 = (0, 7, 5, 0) - (0, 4, 2, 0) = (0, 3, 3, 0)$\n4. **Safety Check:**\n   - **P0:** $\\text{Need}_0 = (0, 0, 0, 0) \\le (1, 1, 0, 0)$ $\\to$ True.\n     - $\\text{Available} = (1, 1, 0, 0) + (0, 0, 1, 2) = (1, 1, 1, 2)$.\n   - Check remaining needs:\n     - $\\text{Need}_1 = (0, 3, 3, 0) \\not\\le (1, 1, 1, 2)$\n     - $\\text{Need}_2 = (1, 0, 0, 2) \\le (1, 1, 1, 2)$ $\\to$ True.\n       - $\\text{Available} = (1, 1, 1, 2) + (1, 3, 5, 4) = (2, 4, 6, 6)$.\n     - $\\text{Need}_1 = (0, 3, 3, 0) \\le (2, 4, 6, 6)$ $\\to$ True.\n       - $\\text{Available} = (2, 4, 6, 6) + (1, 4, 2, 0) = (3, 8, 8, 6)$.\n     - $\\text{Need}_3 = (0, 0, 2, 0) \\le (3, 8, 8, 6)$ $\\to$ True.\n     - $\\text{Need}_4 = (0, 6, 4, 2) \\le (3, 14, 11, 8)$ $\\to$ True.\n\n**Conclusion:** System remains in a safe state with sequence $\\langle P0, P2, P1, P3, P4 \\rangle$. Hence, **the request can be granted immediately**.",
+            "answer_source": "generated",
+            "chapter": "Unit 3"
+        },
+        {
+            "question_number": "31. a.",
+            "question_text": "Explain the following allocation algorithm with example\n(i) First fit\n(ii) Best fit\n(iii) Worst fit",
+            "marks": 12,
+            "answer": "### Dynamic Memory Allocation Strategies\n\nGiven available free memory holes: $100\\text{ KB}$, $500\\text{ KB}$, $200\\text{ KB}$, $300\\text{ KB}$, $600\\text{ KB}$ (in order) and a process requesting $212\\text{ KB}$:\n\n### (i) First Fit\n- **Algorithm:** Allocates the *first* available hole that is large enough, searching from the beginning of the memory list.\n- **Example:**\n  - Compares with $100\\text{ KB}$ $\\to$ too small.\n  - Compares with $500\\text{ KB}$ $\\to$ fits! Allocates $212\\text{ KB}$ from the $500\\text{ KB}$ partition (leaving $288\\text{ KB}$ remaining).\n- **Pros/Cons:** Fastest algorithm; low computational overhead.\n\n### (ii) Best Fit\n- **Algorithm:** Allocates the *smallest* hole that is big enough to hold the process. Requires searching the entire list (unless sorted by size).\n- **Example:**\n  - Compares all holes: $100$ (small), $500$, $200$ (small), $300$ (fits, diff $88$), $600$ (diff $388$).\n  - Smallest suitable hole is $300\\text{ KB}$. Allocates $212\\text{ KB}$ in $300\\text{ KB}$ hole (leaving $88\\text{ KB}$ free).\n- **Pros/Cons:** Minimizes wasted leftover space in the selected block, but produces many tiny, unusable holes.\n\n### (iii) Worst Fit\n- **Algorithm:** Allocates the *largest* available hole. Requires searching the entire list (unless ordered by size).\n- **Example:**\n  - Largest hole available is $600\\text{ KB}$. Allocates $212\\text{ KB}$ from $600\\text{ KB}$ (leaving $388\\text{ KB}$ free).\n- **Pros/Cons:** Produces the largest remaining leftover hole, which may be useful for subsequent processes, but performs poorly in utilization.",
+            "answer_source": "generated",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "31. b.",
+            "question_text": "Consider the following reference strings\n1, 2, 3, 4, 5, 3, 4, 1, 6, 7, 8, 7, 8, 9, 7, 8, 9, 5, 4, 5, 4, 2\nHow many page faults would occur for the following replacement algorithm, assuming four and six frames respectively?\n(i) LRU page replacement\n(ii) FIFO page replacement",
+            "marks": 12,
+            "answer": "Reference String ($N = 22$):\n`1, 2, 3, 4, 5, 3, 4, 1, 6, 7, 8, 7, 8, 9, 7, 8, 9, 5, 4, 5, 4, 2`\n\n---\n\n### 1. Assuming 4 Frames:\n\n#### (i) LRU Page Replacement (4 frames):\n- **1** $\\to$ [1] (Fault 1)\n- **2** $\\to$ [1, 2] (Fault 2)\n- **3** $\\to$ [1, 2, 3] (Fault 3)\n- **4** $\\to$ [1, 2, 3, 4] (Fault 4)\n- **5** $\\to$ Replace 1: [5, 2, 3, 4] (Fault 5)\n- **3** $\\to$ Hit (order of use: 2, 4, 5, 3)\n- **4** $\\to$ Hit (order of use: 2, 5, 3, 4)\n- **1** $\\to$ Replace 2: [5, 1, 3, 4] (Fault 6)\n- **6** $\\to$ Replace 5: [6, 1, 3, 4] (Fault 7)\n- **7** $\\to$ Replace 3: [6, 1, 7, 4] (Fault 8)\n- **8** $\\to$ Replace 4: [6, 1, 7, 8] (Fault 9)\n- **7** $\\to$ Hit (order: 6, 1, 8, 7)\n- **8** $\\to$ Hit (order: 6, 1, 7, 8)\n- **9** $\\to$ Replace 6: [9, 1, 7, 8] (Fault 10)\n- **7** $\\to$ Hit\n- **8** $\\to$ Hit\n- **9** $\\to$ Hit (order: 1, 7, 8, 9)\n- **5** $\\to$ Replace 1: [5, 7, 8, 9] (Fault 11)\n- **4** $\\to$ Replace 7: [5, 4, 8, 9] (Fault 12)\n- **5** $\\to$ Hit\n- **4** $\\to$ Hit\n- **2** $\\to$ Replace 8: [5, 4, 2, 9] (Fault 13)\n**Total Page Faults for LRU (4 frames) = 13**\n\n#### (ii) FIFO Page Replacement (4 frames):\n- **1** $\\to$ [1] (Fault 1)\n- **2** $\\to$ [1, 2] (Fault 2)\n- **3** $\\to$ [1, 2, 3] (Fault 3)\n- **4** $\\to$ [1, 2, 3, 4] (Fault 4)\n- **5** $\\to$ Replace 1: [5, 2, 3, 4] (Fault 5)\n- **3** $\\to$ Hit\n- **4** $\\to$ Hit\n- **1** $\\to$ Replace 2: [5, 1, 3, 4] (Fault 6)\n- **6** $\\to$ Replace 3: [5, 1, 6, 4] (Fault 7)\n- **7** $\\to$ Replace 4: [5, 1, 6, 7] (Fault 8)\n- **8** $\\to$ Replace 5: [8, 1, 6, 7] (Fault 9)\n- **7** $\\to$ Hit\n- **8** $\\to$ Hit\n- **9** $\\to$ Replace 1: [8, 9, 6, 7] (Fault 10)\n- **7** $\\to$ Hit\n- **8** $\\to$ Hit\n- **9** $\\to$ Hit\n- **5** $\\to$ Replace 6: [8, 9, 5, 7] (Fault 11)\n- **4** $\\to$ Replace 7: [8, 9, 5, 4] (Fault 12)\n- **5** $\\to$ Hit\n- **4** $\\to$ Hit\n- **2** $\\to$ Replace 8: [2, 9, 5, 4] (Fault 13)\n**Total Page Faults for FIFO (4 frames) = 13**\n\n---\n\n### 2. Assuming 6 Frames:\n\n#### (i) LRU Page Replacement (6 frames):\n- **1, 2, 3, 4, 5** $\\to$ [1, 2, 3, 4, 5] (5 Faults)\n- **3, 4, 1** $\\to$ Hits\n- **6** $\\to$ [1, 2, 3, 4, 5, 6] (Fault 6)\n- **7** $\\to$ Replace least recently used (2): [1, 7, 3, 4, 5, 6] (Fault 7)\n- **8** $\\to$ Replace least recently used (5): [1, 7, 3, 4, 8, 6] (Fault 8)\n- **7, 8** $\\to$ Hits\n- **9** $\\to$ Replace least recently used (3): [1, 7, 9, 4, 8, 6] (Fault 9)\n- **7, 8, 9** $\\to$ Hits\n- **5** $\\to$ Replace least recently used (6): [1, 7, 9, 4, 8, 5] (Fault 10)\n- **4** $\\to$ Hit\n- **5, 4** $\\to$ Hits\n- **2** $\\to$ Replace least recently used (1): [2, 7, 9, 4, 8, 5] (Fault 11)\n**Total Page Faults for LRU (6 frames) = 11**\n\n#### (ii) FIFO Page Replacement (6 frames):\n- **1, 2, 3, 4, 5** $\\to$ [1, 2, 3, 4, 5] (5 Faults)\n- **3, 4, 1** $\\to$ Hits\n- **6** $\\to$ [1, 2, 3, 4, 5, 6] (Fault 6)\n- **7** $\\to$ Replace 1: [7, 2, 3, 4, 5, 6] (Fault 7)\n- **8** $\\to$ Replace 2: [7, 8, 3, 4, 5, 6] (Fault 8)\n- **7, 8** $\\to$ Hits\n- **9** $\\to$ Replace 3: [7, 8, 9, 4, 5, 6] (Fault 9)\n- **7, 8, 9** $\\to$ Hits\n- **5** $\\to$ Hit [5 is present]\n- **4** $\\to$ Hit [4 is present]\n- **5, 4** $\\to$ Hits\n- **2** $\\to$ Replace 4: [7, 8, 9, 2, 5, 6] (Fault 10)\n**Total Page Faults for FIFO (6 frames) = 10**",
+            "answer_source": "generated",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "32. a.",
+            "question_text": "State and explain FCFS, SSTF and SCAN disk scheduling with example.",
+            "marks": 12,
+            "answer": "### Disk Scheduling Algorithms\nConsider a disk with 200 tracks (0 to 199).\n**Request Queue:** 98, 183, 37, 122, 14, 124, 65, 67\n**Initial Head Position:** 53\n\n---\n\n### 1. First-Come, First-Served (FCFS)\n- **Concept:** Requests are serviced sequentially in the order they arrive.\n- **Order:** $53 \\to 98 \\to 183 \\to 37 \\to 122 \\to 14 \\to 124 \\to 65 \\to 67$\n- **Head Movements:**\n  $$|98-53| + |183-98| + |37-183| + |122-37| + |14-122| + |124-14| + |65-124| + |67-65|$$\n  $$= 45 + 85 + 146 + 85 + 108 + 110 + 59 + 2 = 640\\text{ cylinders}$$\n- **Pros & Cons:** Simple, fair (no starvation), but produces high seek time.\n\n---\n\n### 2. Shortest Seek Time First (SSTF)\n- **Concept:** Selects the request with the minimum seek time from the current head position.\n- **Order:** $53 \\to 65 \\to 67 \\to 37 \\to 14 \\to 98 \\to 122 \\to 124 \\to 183$\n- **Head Movements:**\n  $$|65-53| + |67-65| + |37-67| + |14-37| + |98-14| + |122-98| + |124-122| + |183-124|$$\n  $$= 12 + 2 + 30 + 23 + 84 + 24 + 2 + 59 = 236\\text{ cylinders}$$\n- **Pros & Cons:** Substantial improvement over FCFS; may cause starvation for far-off requests.\n\n---\n\n### 3. SCAN (Elevator Algorithm)\n- **Concept:** The disk arm starts at one end of the disk and moves toward the other end, servicing requests along the way until it reaches the end, where the direction is reversed.\n- **Assuming initial movement towards larger cylinders (towards 199):**\n- **Order:** $53 \\to 65 \\to 67 \\to 98 \\to 122 \\to 124 \\to 183 \\to 199 \\to 37 \\to 14$\n- **Head Movements:**\n  $$(199 - 53) + (199 - 14) = 146 + 185 = 331\\text{ cylinders}$$\n- **Pros & Cons:** Provides more uniform wait times and prevents starvation compared to SSTF.",
+            "answer_source": "generated",
+            "chapter": "Unit 4"
+        },
+        {
+            "question_number": "32. b.",
+            "question_text": "What are the various disk space allocation methods? Explain any two in detail.",
+            "marks": 12,
+            "answer": "### Disk Space Allocation Methods\nDirect-access files require disk blocks to be allocated efficiently. The three main space allocation methods are:\n1. **Contiguous Allocation**\n2. **Linked Allocation**\n3. **Indexed Allocation**\n\n---\n\n### 1. Contiguous Allocation\n- **Concept:** Each file occupies a set of contiguous blocks on the disk.\n- **Directory Entry:** Contains the starting block address and the length (number of blocks) of the file.\n- **Advantages:**\n  1. **Excellent Performance:** Sequential access requires minimal disk head movement; direct/random access is simple ($i$-th block is at $\\text{start} + i$).\n  2. Easy to implement.\n- **Disadvantages:**\n  1. **External Fragmentation:** Free disk space becomes fragmented into unusable holes.\n  2. **File Growth:** Difficult to determine how much space to allocate in advance; if a file grows larger than its initial space, it must be relocated.\n\n---\n\n### 2. Indexed Allocation\n- **Concept:** Solves external fragmentation and pointer overhead of linked allocation by bringing all pointers together into a single block known as the **index block**.\n- **Directory Entry:** Contains only the address of the index block for the file.\n- **Operation:**\n  - The $i$-th entry in the index block points to the $i$-th disk block of the file.\n  - To read the $i$-th block, the OS uses the index block's $i$-th entry.\n- **Advantages:**\n  1. Supports direct/random access without external fragmentation.\n  2. No wasted space due to scattered pointers.\n- **Disadvantages:**\n  1. Pointer overhead of the index block for very small files.\n  2. File size is limited by index block size (solved using multi-level index, combined scheme as in UNIX inodes, or linked index blocks).",
+            "answer_source": "generated",
+            "chapter": "Unit 4"
+        }
+    ]
+}

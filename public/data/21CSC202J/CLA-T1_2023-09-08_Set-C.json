@@ -1,0 +1,111 @@
+{
+    "formal_filename": "CLA-T1_2023-09-08_Set-C.json",
+    "paper_title": "SRM Institute of Science and Technology - School of Computing - 21CSC202J Operating Systems - Continuous Learning Assessment - Test 1 (CLA-T1) - SET C",
+    "source": "CLA-T1 Set C Sept 2023",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "Multiprogramming of a computer system increases -------\n(A) memory\n(B) Storage\n(C) CPU utilization\n(D) Cost",
+            "marks": 1,
+            "answer": "(C) CPU utilization\n\n**Explanation:** Multiprogramming increases CPU utilization by keeping several jobs in memory simultaneously. When one process needs to wait (e.g., for I/O operations), the operating system switches the CPU to another active process, thereby preventing the CPU from sitting idle.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction, Computer-System Organization, Operating-System Operations"
+        },
+        {
+            "question_number": "2",
+            "question_text": "Privilege instructions are executed in ------------ mode of the operating system\n(A) user mode\n(B) kernel mode\n(C) Both A and B\n(D) un-restricted mode",
+            "marks": 1,
+            "answer": "(B) kernel mode\n\n**Explanation:** Privileged instructions perform critical tasks such as direct hardware access, timer management, or memory manipulation. To protect system stability and security, the hardware allows privileged instructions to execute only when the CPU is running in kernel (supervisor) mode.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Operating-System Structure, Operating-System Operations, User and Operating-System Interface"
+        },
+        {
+            "question_number": "3",
+            "question_text": "------------ is referred to as the collection of data section, text section, stack and memory limits of a process\n(A) process control block\n(B) process state block\n(C) process status block\n(D) process instruction block",
+            "marks": 1,
+            "answer": "(A) process control block\n\n**Explanation:** The Process Control Block (PCB) is the primary data structure maintained by the operating system for each process. It stores process state, program counter, register values, memory allocation details (text section, data section, stack pointer, memory limits), and open file descriptors.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: PROCESS MANAGEMENT: Process Concept"
+        },
+        {
+            "question_number": "4",
+            "question_text": "------------ is defined as the ability of an operating system to support multiple concurrent paths of execution within a single process.\n(A) multi-programming\n(B) multi-threading\n(C) multi-way processing\n(D) concurrent processing",
+            "marks": 1,
+            "answer": "(B) multi-threading\n\n**Explanation:** Multithreading is the capability of an operating system to allow multiple threads (lightweight units of execution) to run concurrently within the context of a single process, sharing the same address space and process resources.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Threads: Multicore Programming, Multithreading Models"
+        },
+        {
+            "question_number": "5",
+            "question_text": "The process stack does not contain\n(A) parameters\n(B) return address\n(C) local variables\n(D) process id of child process",
+            "marks": 1,
+            "answer": "(D) process id of child process\n\n**Explanation:** The program stack contains activation records for active procedure calls, storing parameters, local variables, and return addresses. Identification data like child process IDs (PIDs) are maintained by the operating system inside the Process Control Block (PCB), not on the stack.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: PROCESS MANAGEMENT: Process Concept"
+        },
+        {
+            "question_number": "6. a.",
+            "question_text": "Explain the working of kernel when a user presses a key in a keyboard when another application is being processed by the operating system.",
+            "marks": 5,
+            "answer": "When a key is pressed on the keyboard while a user application is executing, the operating system kernel handles the event via an interrupt mechanism as follows:\n\n1. **Hardware Interrupt Generation:** The keyboard controller detects the key press and sends a hardware interrupt signal (IRQ) via the interrupt controller to the CPU.\n2. **Context Save:** Upon receiving the interrupt, the CPU finishes the current instruction, pauses execution of the active user process, and automatically saves its essential register states and Program Counter (PC) onto the process stack or kernel stack.\n3. **Mode Switch:** The CPU switches execution mode from **User Mode** to **Kernel Mode**.\n4. **Interrupt Vector Table (IVT) Lookup:** The CPU uses the interrupt vector to look up the entry address of the corresponding Interrupt Service Routine (ISR) for the keyboard in the Interrupt Vector Table.\n5. **Execution of Keyboard ISR:** The kernel's keyboard ISR reads the hardware scan code from the keyboard controller port/buffer, translates it into an ASCII/character code, and places it into the OS input buffer or keystroke queue.\n6. **Context Restoration & Resume:** The kernel restores the saved state and registers of the suspended user process, switches back to **User Mode**, and resumes execution from the exact point of interruption.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Computer-System Organization, Operating-System Operations, System Calls"
+        },
+        {
+            "question_number": "6. b.",
+            "question_text": "Illustrate the same using flowchart.",
+            "marks": 5,
+            "answer": "```\n+---------------------------------------+\n|      User Process Running (User Mode) |\n+---------------------------------------+\n                    |\n                    v [Key Press Event]\n+---------------------------------------+\n| Hardware Interrupt Generated by       |\n| Keyboard Controller                   |\n+---------------------------------------+\n                    |\n                    v\n+---------------------------------------+\n| CPU Interrupt Detection &             |\n| Save State / PC of User Process       |\n+---------------------------------------+\n                    |\n                    v\n+---------------------------------------+\n| Switch to Kernel Mode                 |\n| Lookup Interrupt Vector Table (IVT)  |\n+---------------------------------------+\n                    |\n                    v\n+---------------------------------------+\n| Execute Keyboard ISR:                 |\n| - Read Key Scancode                   |\n| - Store Key Event in Input Queue      |\n+---------------------------------------+\n                    |\n                    v\n+---------------------------------------+\n| Restore Saved Process Context         |\n| Switch back to User Mode              |\n+---------------------------------------+\n                    |\n                    v\n+---------------------------------------+\n| Resume Interrupted User Process       |\n+---------------------------------------+\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Computer-System Organization, Operating-System Operations"
+        },
+        {
+            "question_number": "7. a.",
+            "question_text": "Draw the interaction and association of I/O devices and memory with the CPU.",
+            "marks": 5,
+            "answer": "### Structural Interaction:\n```\n                    +---------------------+ \n                    |         CPU         | \n                    |  (ALU, Registers)   | \n                    +----------+----------+ \n                               | \n   +---------------------------+---------------------------+ \n   | Control Bus                                           | \n   | Address Bus                                           | \n   | Data Bus                                              | \n   +--------+------------------+------------------+--------+ \n            |                  |                  | \n            v                  v                  v \n     +--------------+   +--------------+   +--------------+ \n     | Main Memory  |   | I/O Device   |   | I/O Device   | \n     |    (RAM)     |   | Controller 1 |   | Controller 2 | \n     +--------------+   +-------+------+   +-------+------+ \n                                |                  | \n                                v                  v \n                           [ Keyboard ]       [ Disk / Mouse ]\n```\n\n### Key Mechanisms:\n1. **Bus Architecture:** CPU, RAM, and I/O Controllers communicate over shared System Buses (Data Bus, Address Bus, and Control Bus).\n2. **Memory-Mapped I/O:** Registers in I/O controllers are mapped directly into the CPU's memory address space, allowing instructions like `LOAD` and `STORE` to perform hardware reads/writes.\n3. **Direct Memory Access (DMA):** For high-speed transfers (e.g., hard drives), DMA controllers transfer data blocks directly between memory and I/O devices without continuous CPU intervention, issuing a single interrupt upon block completion.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Computer-System Organization, Computer-System Architecture"
+        },
+        {
+            "question_number": "7. b.",
+            "question_text": "Describe the tasks performed by an operating system at the background when a user uses the computer.",
+            "marks": 5,
+            "answer": "When a user interacts with a computer, the operating system continuously performs critical background tasks:\n\n1. **Process Management & Scheduling:**\n   - Context-switching between user applications and background daemons.\n   - Allocating CPU time slices using scheduling algorithms to ensure system responsiveness.\n\n2. **Memory Management:**\n   - Allocating and deallocating dynamic RAM for active processes.\n   - Handling paging, virtual memory management, and swapping idle memory pages to disk (page replacement).\n\n3. **Storage & File-System Management:**\n   - Disk scheduling, write-buffering, and directory structure maintenance.\n   - Flushing dirty cache buffers back to persistent storage.\n\n4. **I/O Device Handling & Buffering:**\n   - Servicing device interrupts from input peripherals, network adapters, and sound cards via background drivers.\n\n5. **Security, Accounting & System Health Monitoring:**\n   - Monitoring CPU/memory consumption and resource limits.\n   - Running background malware/firewall checks, managing user access rights, and maintaining system log entries.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Operating-System Services, Operating-System Operations, System Boot"
+        },
+        {
+            "question_number": "8. a. i.",
+            "question_text": "Let us consider a scenario in which a process P1 tries changing data in a particular memory location. At the same time another process P2 tries reading data from the same memory location.\n\ni) Mention the rules to be following for preserving data consistency?",
+            "marks": 5,
+            "answer": "To preserve data consistency when multiple processes concurrently access shared memory where at least one modifies data (a Race Condition scenario), the system must enforce the **Critical Section Criteria**:\n\n1. **Mutual Exclusion:** If process $P_1$ is executing in its critical section (writing to the shared memory location), no other process (such as $P_2$) can access or execute in that critical section concurrently.\n2. **Progress:** If no process is currently executing in its critical section and some processes wish to enter, only those processes not executing in their remainder sections can participate in deciding which process enters next, and this decision cannot be postponed indefinitely.\n3. **Bounded Waiting:** There must be a bound or limit on the number of times other processes are allowed to enter their critical sections after a process has made a request to enter its critical section and before that request is granted.\n4. **Atomic Operations:** Memory read and write operations on shared data structures must be executed atomically so that intermediate uncommitted states are never visible to concurrent processes.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Process Synchronization: The Critical-Section Problem"
+        },
+        {
+            "question_number": "8. a. ii.",
+            "question_text": "Explain the solutions for preserving data consistency?",
+            "marks": 5,
+            "answer": "Several hardware and software solutions preserve data consistency:\n\n1. **Mutex Locks (Mutual Exclusion Locks):**\n   - A process must acquire a boolean lock (`acquire()`) before entering the critical section and release it (`release()`) upon exit.\n   - Prevents simultaneous reader-writer or writer-writer access.\n\n2. **Semaphores:**\n   - **Binary Semaphores / Mutex:** Takes values 0 and 1 to provide mutual exclusion.\n   - **Counting Semaphores:** Controls access to a resource with multiple instances.\n   - Utilizes atomic operations `wait()` ($P$) and `signal()` ($V$).\n\n3. **Readers-Writers Locks:**\n   - Allows multiple concurrent readers ($P_2$) when no writer ($P_1$) is active.\n   - Gives exclusive access to a writer ($P_1$) while blocking all other readers and writers, maximizing throughput.\n\n4. **Peterson's Solution / Synchronization Hardware:**\n   - Software-based synchronization using `flag` arrays and a `turn` variable for two processes, or hardware instructions like `TestAndSet()` / `CompareAndSwap()`.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Process Synchronization: Peterson's Solution, Synchronization Hardware, Mutex Locks, Semaphores"
+        },
+        {
+            "question_number": "9. a.",
+            "question_text": "What are the states undergone by a process when a user opens more than one application in a laptop at the same time?",
+            "marks": 5,
+            "answer": "When multiple applications are launched simultaneously, each process moves through the following 5 fundamental process states:\n\n1. **New:** The process is in the creation state while the OS allocates memory, creates the Process Control Block (PCB), and loads the application executable.\n2. **Ready:** The process is completely loaded into main memory and is placed in the CPU Ready Queue waiting to be allocated CPU processing time.\n3. **Running:** The CPU scheduler assigns a time slice (or core) to the process, executing its instructions.\n4. **Waiting (or Blocked):** The process pauses its CPU execution to wait for an event, such as user keystrokes, disk file access, or network responses.\n5. **Terminated:** The process completes execution or is closed by the user, leading to OS cleanup of memory and PCB resources.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: PROCESS MANAGEMENT: Process Concept"
+        },
+        {
+            "question_number": "9. b.",
+            "question_text": "Illustrate the same using suitable diagrams.",
+            "marks": 5,
+            "answer": "### Process State Transition Diagram:\n\n```\n                  +-------------------+ \n                  |        NEW        | \n                  +---------+---------+ \n                            | \n                            v (Admitted) \n                  +-------------------+ \n    +------------>|       READY       |<------------+ \n    |             +---------+---------+             | \n    |                       |                       | \n    | (I/O or Event         | (Scheduler            | (Interrupt / \n    |  Completion)          |  Dispatch)            |  Time Slice Expired) \n    |                       v                       | \n+---+---------------+     +-------------------+     | \n|  WAITING / BLOCKED|<----+      RUNNING      +-----+ \n+-------------------+     +---------+---------+ \n                            | \n                            v (Exit / Execution Complete) \n                  +-------------------+ \n                  |    TERMINATED     | \n                  +-------------------+ \n```\n\n### State Transitions Explanation:\n- **Admitted:** Process transitions from *New* to *Ready* as memory is allocated.\n- **Scheduler Dispatch:** Process moves from *Ready* to *Running* when CPU time is assigned.\n- **Interrupt:** CPU preempts *Running* process back to *Ready* when its quantum time expires.\n- **I/O or Event Wait:** *Running* process enters *Waiting* state when waiting for peripheral response or key press.\n- **I/O Completion:** *Waiting* process moves back to *Ready* once I/O finishes.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: PROCESS MANAGEMENT: Process Concept"
+        }
+    ]
+}

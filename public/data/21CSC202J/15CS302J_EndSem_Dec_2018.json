@@ -1,0 +1,167 @@
+{
+    "formal_filename": "15CS302J_EndSem_Dec_2018.json",
+    "paper_title": "15CS302J Operating Systems End Semester Examination December 2018",
+    "source": "EndSem Dec 2018",
+    "questions": [
+        {
+            "question_number": "11 (Set 1)",
+            "question_text": "What are the steps required to handle a page fault in demand paging?",
+            "marks": 5,
+            "answer": "When a process attempts to access a page that is not currently loaded in main memory (valid-invalid bit is 'invalid'), a page fault occurs. The steps to handle a page fault are:\n\n1. **Trap to Operating System:** The CPU hardware detects the invalid page access and generates an internal interrupt (page fault trap) to the operating system.\n2. **Save Process State:** The OS saves the current process context (registers, program counter) to allow execution to resume after the fault is handled.\n3. **Validate Request:** The OS checks an internal table (usually the process control block) to determine if the memory access was valid or an unauthorized access. If invalid, the process is terminated.\n4. **Locate Page on Disk:** If the access was valid, the OS finds the location of the required page on backing store (disk/swap space).\n5. **Find a Free Frame:** The OS searches for a free physical memory frame. If no free frame is available, a page replacement algorithm (e.g., LRU, FIFO) is executed to select a victim frame and write it back to disk if modified (dirty).\n6. **Read Page into Frame:** A disk read operation is scheduled to bring the requested page from disk into the allocated free frame.\n7. **Update Page Table:** Once disk transfer completes, the OS updates the page table entry: the frame number is set, and the valid-invalid bit is marked 'valid'.\n8. **Resume Process:** The saved CPU state is restored, and the instruction that caused the page fault is restarted from the beginning.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Virtual Memory"
+        },
+        {
+            "question_number": "12 (Set 1)",
+            "question_text": "Why page sizes are always power of 2?",
+            "marks": 5,
+            "answer": "Page sizes are always chosen as powers of 2 (e.g., $4\\text{ KB} = 2^{12}\\text{ bytes}$) primarily due to hardware design and efficient address translation:\n\n1. **Bit Splitting Efficiency:** When the page size is $2^n$ bytes, a logical address of $m$ bits can be easily split into a page number ($p$) comprising the high-order $(m - n)$ bits and a page offset ($d$) comprising the low-order $n$ bits.\n2. **Hardware Simplicity:** Because page size is a power of 2, standard binary concatenation ($\text{Physical Address} = \text{Frame Number} \\parallel d$) can be performed directly by the hardware without requiring complex arithmetic operations like division or modulus.\n3. **No Dynamic Offset Calculation:** The low-order $n$ bits of the virtual address map directly to the low-order $n$ bits of the physical address, minimizing hardware lookup latency.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Main Memory"
+        },
+        {
+            "question_number": "13 (Set 1)",
+            "question_text": "Explain the types of program threats in detail, including how each one operates and its potential impact on a computer system.",
+            "marks": 5,
+            "answer": "Program threats are malicious programs or code fragments designed to execute unauthorized actions on a system. Key types include:\n\n1. **Trojan Horse:**\n   - *Operation:* Disguises itself as legitimate or useful software (e.g., a game or utility) while performing hidden malicious operations in the background.\n   - *Impact:* Exfiltrates sensitive credentials, destroys data, or installs backdoors for remote attackers.\n2. **Trap Door (Backdoor):**\n   - *Operation:* A hidden entry point left by a developer into a program that bypasses security controls and authentication mechanisms.\n   - *Impact:* Allows unauthorized access to sensitive administrative functionality without audit logs.\n3. **Logic Bomb:**\n   - *Operation:* Malicious code embedded in software that remains dormant until triggered by a specific condition or date/time.\n   - *Impact:* Causes unexpected systemic failures, mass file deletion, or data corruption once triggered.\n4. **Buffer Overflow:**\n   - *Operation:* Exploit where an application writes more data to a buffer than allocated, overwriting adjacent memory including execution return addresses.\n   - *Impact:* Enables arbitrary code execution with the privilege level of the compromised application.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: PROTECTION AND SECURITY"
+        },
+        {
+            "question_number": "14 (Set 1)",
+            "question_text": "What are the Goals of Protection and Principles of Protection",
+            "marks": 5,
+            "answer": "**Goals of Protection:**\n1. Ensure that each system component or resource is accessed only in accordance with defined security policies.\n2. Prevent user processes from interfering with each other or corrupting the operating system kernel.\n3. Provide a mechanism to enforce dynamic, granular access control over both physical (CPU, memory, disk) and logical resources (files, processes, sockets).\n\n**Principles of Protection:**\n1. **Principle of Least Privilege:** Users, processes, and systems should be granted only the minimum privileges necessary to perform their legitimate tasks.\n2. **Separation of Mechanism and Policy:** Mechanisms determine *how* something will be done, while policies dictate *what* will be done. Decoupling them allows policies to change dynamically without redesigning hardware/OS mechanisms.\n3. **Domain Separation:** Isolate executable code and data into distinct security domains so that a breach in one domain does not compromise others.\n4. **Complete Mediation:** Every access to every resource must be validated against the security policy.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: PROTECTION AND SECURITY"
+        },
+        {
+            "question_number": "15a (Set 1)",
+            "question_text": "A computer has 3 frames (physical memory pages) and uses the following sequence of page requests:\n1, 2, 3, 4, 2, 1, 5, 3, 4, 2\nUsing the following algorithms, determine the page faults for each algorithm:\n1. First-In-First-Out (FIFO)\n2. Least Recently Used (LRU)\n3. Optimal Algorithm",
+            "marks": 10,
+            "answer": "**Given:** 3 frames, Page Reference String: `1, 2, 3, 4, 2, 1, 5, 3, 4, 2`\n\n### 1. First-In-First-Out (FIFO)\n- **Request 1:** [1, _, _] $\\rightarrow$ **Fault 1**\n- **Request 2:** [1, 2, _] $\\rightarrow$ **Fault 2**\n- **Request 3:** [1, 2, 3] $\\rightarrow$ **Fault 3**\n- **Request 4:** Replace 1 $\\rightarrow$ [4, 2, 3] $\\rightarrow$ **Fault 4**\n- **Request 2:** Hit [4, 2, 3]\n- **Request 1:** Replace 2 $\\rightarrow$ [4, 1, 3] $\\rightarrow$ **Fault 5**\n- **Request 5:** Replace 3 $\\rightarrow$ [4, 1, 5] $\\rightarrow$ **Fault 6**\n- **Request 3:** Replace 4 $\\rightarrow$ [3, 1, 5] $\\rightarrow$ **Fault 7**\n- **Request 4:** Replace 1 $\\rightarrow$ [3, 4, 5] $\\rightarrow$ **Fault 8**\n- **Request 2:** Replace 5 $\\rightarrow$ [3, 4, 2] $\\rightarrow$ **Fault 9**\n\n**Total Page Faults (FIFO) = 9**\n\n---\n\n### 2. Least Recently Used (LRU)\n- **Request 1:** [1, _, _] $\\rightarrow$ **Fault 1**\n- **Request 2:** [1, 2, _] $\\rightarrow$ **Fault 2**\n- **Request 3:** [1, 2, 3] $\\rightarrow$ **Fault 3**\n- **Request 4:** Replace 1 (least recently used) $\\rightarrow$ [4, 2, 3] $\\rightarrow$ **Fault 4**\n- **Request 2:** Hit [4, 2, 3]\n- **Request 1:** Replace 3 $\\rightarrow$ [4, 2, 1] $\\rightarrow$ **Fault 5**\n- **Request 5:** Replace 4 $\\rightarrow$ [5, 2, 1] $\\rightarrow$ **Fault 6**\n- **Request 3:** Replace 2 $\\rightarrow$ [5, 3, 1] $\\rightarrow$ **Fault 7**\n- **Request 4:** Replace 1 $\\rightarrow$ [5, 3, 4] $\\rightarrow$ **Fault 8**\n- **Request 2:** Replace 5 $\\rightarrow$ [2, 3, 4] $\\rightarrow$ **Fault 9**\n\n**Total Page Faults (LRU) = 9**\n\n---\n\n### 3. Optimal Algorithm\n- **Request 1:** [1, _, _] $\\rightarrow$ **Fault 1**\n- **Request 2:** [1, 2, _] $\\rightarrow$ **Fault 2**\n- **Request 3:** [1, 2, 3] $\\rightarrow$ **Fault 3**\n- **Request 4:** Look ahead (2, 1, 5, 3, 4, 2): page 3 is used furthest in future $\\rightarrow$ Replace 3 $\\rightarrow$ [1, 2, 4] $\\rightarrow$ **Fault 4**\n- **Request 2:** Hit [1, 2, 4]\n- **Request 1:** Hit [1, 2, 4]\n- **Request 5:** Look ahead (3, 4, 2): page 1 is never used again $\\rightarrow$ Replace 1 $\\rightarrow$ [5, 2, 4] $\\rightarrow$ **Fault 5**\n- **Request 3:** Look ahead (4, 2): page 5 is never used again $\\rightarrow$ Replace 5 $\\rightarrow$ [3, 2, 4] $\\rightarrow$ **Fault 6**\n- **Request 4:** Hit [3, 2, 4]\n- **Request 2:** Hit [3, 2, 4]\n\n**Total Page Faults (Optimal) = 6**",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Virtual Memory"
+        },
+        {
+            "question_number": "15b (Set 1)",
+            "question_text": "Explain the physical and logical structure of a disk, including the layout of tracks, sectors, and blocks. Describe the concept of disk formatting, including low-level formatting and high-level formatting. Discuss the role of the file allocation table (FAT) or inode table in managing disk storage. Finally, illustrate the steps involved in reading and writing data to a disk, including seek time, rotational delay, and data transfer time.",
+            "marks": 10,
+            "answer": "### 1. Physical and Logical Structure of a Disk\n- **Physical Layout:** A magnetic disk consists of flat circular platters coated with magnetic material. Platters spin at constant speeds (e.g., 5400/7200 RPM).\n  - **Tracks:** Concentric circles on each platter surface.\n  - **Sectors:** Subdivisions of tracks, typically storing 512 bytes or 4KB of data.\n  - **Cylinder:** The set of tracks across all platter surfaces at a given radial position.\n- **Logical Layout:** The OS views disk storage as a continuous 1D array of logical blocks (LBA - Logical Block Addressing), mapped internally to physical (cylinder, surface, sector) coordinates.\n\n### 2. Disk Formatting\n- **Low-Level (Physical) Formatting:** Fills the physical disk sectors with header and trailer control structure data (e.g., sector numbers, ECC bytes) so that the disk controller can read and write blocks.\n- **High-Level Formatting:** Executed by the OS to write file system metadata structures (such as master boot record, superblock, root directory, free space maps, and FAT/inode structures) onto logical disk partitions.\n\n### 3. FAT vs. Inode Tables\n- **File Allocation Table (FAT):** A table placed at the start of a volume containing an entry for each block cluster. File allocation is maintained via linked list pointers stored in the FAT.\n- **Inode Table:** In UNIX-like systems, each file has an inode structure containing metadata (permissions, owner, size) and pointers (direct, single indirect, double indirect, triple indirect) to data blocks.\n\n### 4. Disk Read/Write Operation & Delay Timing\nWhen a read/write operation is requested, total access time is computed as:\n$$\\text{Total Access Time} = \\text{Seek Time} + \\text{Rotational Delay} + \\text{Data Transfer Time}$$\n- **Seek Time:** Time required for the read/write head arm to move physically to the designated target cylinder/track.\n- **Rotational Delay (Latency):** Time taken for the target sector on the spinning platter to rotate under the read/write head.\n- **Data Transfer Time:** Time taken to physically transmit magnetic signals/bytes between disk sectors and host memory buffer.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: STORAGE MANAGEMENT"
+        },
+        {
+            "question_number": "16a (Set 1)",
+            "question_text": "Explain with example Threats to Protection and Security",
+            "marks": 10,
+            "answer": "Threats to protection and security jeopardize system assets across four core domains:\n\n1. **Confidentiality Threats (Unauthorized Information Release):**\n   - *Explanation:* An unauthorized party gains access to protected data.\n   - *Example:* Sniffing unencrypted network packets over public Wi-Fi to capture user login passwords.\n\n2. **Integrity Threats (Unauthorized Modification):**\n   - *Explanation:* An unauthorized party alters or corrupts data/system configurations.\n   - *Example:* Man-In-The-Middle (MITM) attacks modifying software update payloads in transit to insert malicious binaries.\n\n3. **Availability Threats (Denial of Service):**\n   - *Explanation:* Legitimate users are prevented from accessing system resources.\n   - *Example:* Distributed Denial of Service (DDoS) flooding a web server with fake HTTP requests to consume bandwidth and CPU cycles.\n\n4. **Authenticity Threats (Impersonation):**\n   - *Explanation:* An attacker pretends to be a trusted entity.\n   - *Example:* IP Spoofing, where an attacker alters IP packet header source addresses to impersonate a trusted host on a local network.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: PROTECTION AND SECURITY"
+        },
+        {
+            "question_number": "16b (Set 1)",
+            "question_text": "briefly explain with example about computer security classification",
+            "marks": 10,
+            "answer": "Computer security classifications categorize computer systems based on the level of security features and assurances they provide. The standard military/government benchmark (Department of Defense Trusted Computer System Evaluation Criteria - TCSEC / Orange Book) defines four major security divisions:\n\n1. **Division D (Minimal Protection):**\n   - *Description:* Systems that have been evaluated but fail to meet requirements for higher categories.\n   - *Example:* MS-DOS, early non-networked operating systems with no user authentication or access controls.\n\n2. **Division C (Discretionary Protection):**\n   - **C1 (Discretionary Security Structure):** Distinguishes between users and controls resource access per individual users.\n   - **C2 (Controlled Access Protection):** Provides finer-grained access control, mandatory logon procedures, and security auditing mechanism.\n   - *Example:* Traditional UNIX systems, Windows NT.\n\n3. **Division B (Mandatory Protection):**\n   - **B1 (Labeled Security Protection):** Implements Mandatory Access Control (MAC) using security sensitivity labels (Unclassified, Secret, Top Secret).\n   - **B2 (Structured Protection):** Enforces formal security models and cover channel analysis.\n   - **B3 (Security Domains):** Minimizes security kernel size to enable complete auditability.\n   - *Example:* SELinux (Security-Enhanced Linux), Trusted Xenix.\n\n4. **Division A (Verified Protection):**\n   - **A1 (Verified Design):** Functionally identical to B3, but requires formal mathematical verification of system design and implementation tools.\n   - *Example:* Specialized military defense systems (e.g., Honeywell SCOMP).",
+            "answer_source": "generated",
+            "chapter": "Unit 5: PROTECTION AND SECURITY"
+        },
+        {
+            "question_number": "11 (Set 2)",
+            "question_text": "What is the difference between user-level instructions and privileged instructions?",
+            "marks": 5,
+            "answer": "| Feature | User-Level Instructions | Privileged Instructions |\n|---|---|---|\n| **Execution Mode** | Executed in User Mode (Unprivileged Mode). | Executed exclusively in Kernel/Monitor Mode. |\n| **Resource Access** | Cannot directly access hardware, I/O devices, or system memory tables. | Direct control over CPU execution state, memory maps, and hardware registers. |\n| **Effect of Execution in User Mode** | Executes normally without system traps. | Causes a hardware CPU trap/exception (illegal instruction). |\n| **Examples** | Arithmetic operations (`ADD`, `SUB`), register manipulation, logical shifts. | Disabling interrupts, modifying CR3 page table base register, direct I/O execution (`IN`/`OUT`). |",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Computer-System Architecture"
+        },
+        {
+            "question_number": "12 (Set 2)",
+            "question_text": "Differentiate logical and physical addresses.",
+            "marks": 5,
+            "answer": "| Feature | Logical Address (Virtual Address) | Physical Address |\n|---|---|---|\n| **Definition** | Address generated by the CPU during instruction execution. | Address recognized and accessed by the physical memory controller (RAM hardware). |\n| **View** | Represents the virtual memory address space perceived by a user program. | Represents actual physical memory cell locations in RAM chips. |\n| **Generation** | Generated directly by software/CPU instructions. | Calculated by the Memory Management Unit (MMU) using translation tables. |\n| **Constancy** | Same program can have constant logical addresses across executions. | Varies depending on current frame allocation in physical RAM. |",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Main Memory"
+        },
+        {
+            "question_number": "13 (Set 2)",
+            "question_text": "Define and explain the different classifications of computer security.",
+            "marks": 5,
+            "answer": "Computer security classifications divide system security controls into distinct operational domains:\n\n1. **Physical Security:** Controls that protect physical computer hardware, data centers, and cables from environmental hazards, physical theft, or destruction (e.g., biometric door locks, surveillance cameras).\n2. **Operational Security (Procedural):** Rules and administrative policies governing user access privileges, password policies, software update management, and administrative workflows.\n3. **Personnel Security:** Screening, background checks, and security awareness training for employees/users granted elevated privileges on system resources.\n4. **Network and Software Security:** Defensive controls (firewalls, intrusion prevention systems, cryptography, sandboxing) protecting running programs and data transmissions against remote software exploits.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: PROTECTION AND SECURITY"
+        },
+        {
+            "question_number": "14 (Set 2)",
+            "question_text": "Briefly explain the need for RAID, its characteristics, and levels",
+            "marks": 5,
+            "answer": "### 1. Need for RAID (Redundant Array of Independent Disks)\nIndividual hard disks have physical speed and mean time between failure (MTBF) limits. RAID combines multiple physical drives into a single logical storage unit to achieve fault tolerance (reliability) and improved I/O throughput (performance).\n\n### 2. Characteristics\n- Data striping across multiple disk drives to enhance read/write throughput.\n- Redundancy via mirroring or parity calculations to prevent data loss upon drive failure.\n- Transparent abstraction to the host operating system.\n\n### 3. Common RAID Levels\n- **RAID 0 (Striping):** Blocks striped across drives; high performance, no redundancy.\n- **RAID 1 (Mirroring):** Identical data written to two drives; 100% redundancy, high read speed.\n- **RAID 5 (Block-level Striping with Distributed Parity):** Requires at least 3 drives; tolerates 1 drive failure with efficient capacity usage.\n- **RAID 6 (Dual Distributed Parity):** Tolerates up to 2 simultaneous drive failures.\n- **RAID 10 (1+0 - Striped Mirroring):** Combines RAID 1 mirroring with RAID 0 striping for high fault tolerance and speed.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: STORAGE MANAGEMENT"
+        },
+        {
+            "question_number": "15a (Set 2)",
+            "question_text": "A disk has 200 cylinders, numbered from 0 to 199. The disk head is currently at cylinder 100. The following requests are in the queue:\n- Request 1: Cylinder 50\n- Request 2: Cylinder 120\n- Request 3: Cylinder 30\n- Request 4: Cylinder 180\n- Request 5: Cylinder 70\nUsing each of the following disk scheduling algorithms, determine the order in which the requests are serviced and the total distance traveled by the disk head:\n1. First-Come-First-Served (FCFS)\n2. Shortest-Seek-Time-First (SSTF)\n3. SCAN (Elevator Algorithm)\n4. C-SCAN (Circular SCAN)\n5. LOOK (Circular LOOK)\n6. C-LOOK (Circular LOOK).",
+            "marks": 10,
+            "answer": "**Given:** Initial Head Position = 100, Total Cylinders = 200 (0 to 199).\nQueue: `50, 120, 30, 180, 70`\n\n### 1. FCFS\n- **Servicing Order:** 100 $\\rightarrow$ 50 $\\rightarrow$ 120 $\\rightarrow$ 30 $\\rightarrow$ 180 $\\rightarrow$ 70\n- **Head Movement Calculation:**\n  $$|100 - 50| + |50 - 120| + |120 - 30| + |30 - 180| + |180 - 70| = 50 + 70 + 90 + 150 + 110 = 640\\text{ cylinders}$$\n\n### 2. SSTF\n- **Servicing Order:** 100 $\\rightarrow$ 120 $\\rightarrow$ 70 $\\rightarrow$ 50 $\\rightarrow$ 30 $\\rightarrow$ 180\n- **Head Movement Calculation:**\n  $$|100 - 120| + |120 - 70| + |70 - 50| + |50 - 30| + |30 - 180| = 20 + 50 + 20 + 20 + 150 = 236\\text{ cylinders}$$\n\n### 3. SCAN (Assuming initial direction towards higher cylinder 199)\n- **Servicing Order:** 100 $\\rightarrow$ 120 $\\rightarrow$ 180 $\\rightarrow$ 199 $\\rightarrow$ 70 $\\rightarrow$ 50 $\\rightarrow$ 30\n- **Head Movement Calculation:**\n  $$(199 - 100) + (199 - 30) = 99 + 169 = 268\\text{ cylinders}$$\n\n### 4. C-SCAN (Assuming direction towards higher cylinder 199)\n- **Servicing Order:** 100 $\\rightarrow$ 120 $\\rightarrow$ 180 $\\rightarrow$ 199 $\\rightarrow$ 0 $\\rightarrow$ 30 $\\rightarrow$ 50 $\\rightarrow$ 70\n- **Head Movement Calculation:**\n  $$(199 - 100) + (199 - 0) + (70 - 0) = 99 + 199 + 70 = 368\\text{ cylinders}$$\n\n### 5. LOOK (Assuming direction towards higher cylinders)\n- **Servicing Order:** 100 $\\rightarrow$ 120 $\\rightarrow$ 180 $\\rightarrow$ 70 $\\rightarrow$ 50 $\\rightarrow$ 30\n- **Head Movement Calculation:**\n  $$(180 - 100) + (180 - 30) = 80 + 150 = 230\\text{ cylinders}$$\n\n### 6. C-LOOK (Assuming direction towards higher cylinders)\n- **Servicing Order:** 100 $\\rightarrow$ 120 $\\rightarrow$ 180 $\\rightarrow$ 30 $\\rightarrow$ 50 $\\rightarrow$ 70\n- **Head Movement Calculation:**\n  $$(180 - 100) + (180 - 30) + (70 - 30) = 80 + 150 + 40 = 270\\text{ cylinders}$$",
+            "answer_source": "generated",
+            "chapter": "Unit 4: STORAGE MANAGEMENT"
+        },
+        {
+            "question_number": "15b (Set 2)",
+            "question_text": "Explain how the concept of segmentation and paging can be applied to manage the printing facility efficiently. Describe how the printers can be segmented and paginated to allocate printing resources to each department, ensuring that both departments get their required printing done without any conflict. Consider the scenario where one department requires more printing resources than the other.",
+            "marks": 10,
+            "answer": "### Applying Memory Management Concepts (Segmentation and Paging) to Print Facility Management:\n\n1. **Segmentation (Logical Division by Department/Purpose):**\n   - In operating systems, segmentation divides memory into variable-sized logical units reflecting user perception (e.g., modules, stack, data).\n   - For a centralized printing facility, **Segmentation** maps each department (e.g., Department A, Department B) to a logical print segment.\n   - Each department segment carries distinct policy attributes, access rights, print job priorities, and maximum quota limits.\n\n2. **Paging (Fixed-Size Allocation Units / Spooling Sheets):**\n   - Paging divides memory into fixed-size physical frames to eliminate external fragmentation.\n   - In printing management, total physical output (paper buffers, print buffer queues) is paginated into fixed units (e.g., standard batch sizes or page counts).\n   - Print jobs submitted by any department are broken into uniform page chunks and loaded into shared physical printer output queues without requiring contiguous memory/spool space allocations.\n\n3. **Managing Asymmetric Resource Demands without Conflict:**\n   - **Segment Table Mapping:** The print management subsystem maintains a Print Segment Table for each department storing limit (max quota) and base pointers (active spool queue handle).\n   - **Dynamic Page Allocation:** When Department A requires substantially more printing resources than Department B, pages are dynamically allocated from a common printer spool pool using a demand-based page replacement scheme.\n   - **Conflict Avoidance:** Synchronization primitives (mutexes/semaphores) guard shared printer physical interfaces. Jobs are spooled page-by-page so that an urgent single page from Department B can interrupt/interleave between multi-page job batches of Department A without deadlocks or starvations.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Main Memory"
+        },
+        {
+            "question_number": "16a (Set 2)",
+            "question_text": "Define the security problem in computer systems and discuss the various program threats that can compromise system integrity and confidentiality. Provide examples of common program threats and their potential impacts.",
+            "marks": 10,
+            "answer": "### 1. The Security Problem in Computer Systems\nThe security problem encompasses protecting system assets (hardware, software, user data) against unauthorized access, malicious modification, destruction, and denial of service. It involves ensuring three core security attributes (The CIA Triad):\n- **Confidentiality:** Preventing disclosure of information to unauthorized entities.\n- **Integrity:** Ensuring data/code cannot be tampered with or modified without authorization.\n- **Availability:** Guaranteeing timely access to resources for authorized users.\n\n### 2. Program Threats Compromising Integrity and Confidentiality\nProgram threats consist of executable code designed by attackers or unintentionally embedded by programmers that breach security bounds:\n\n- **Trojan Horses:**\n  - *Impact:* Circumvents confidentiality by capturing keystrokes or sensitive files under the authorization level of the user executing the application.\n- **Buffer Overflows:**\n  - *Impact:* Overwrites stack addresses to execute arbitrary shellcode, completely compromising both system integrity and process isolation.\n- **Trapdoors / Backdoors:**\n  - *Impact:* Allows unauthorized users to bypass authentication mechanisms, granting persistent hidden administrative access.\n- **Viruses and Worms:**\n  - *Impact:* Self-replicating code attached to host files (viruses) or autonomous network software (worms) that corrupt system files, corrupt disk structures, or steal user credentials.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: PROTECTION AND SECURITY"
+        },
+        {
+            "question_number": "16b (Set 2)",
+            "question_text": "Explain with example for Program Threats, System and Network Threats",
+            "marks": 10,
+            "answer": "### 1. Program Threats\nProgram threats exploit vulnerabilities within individual executable files or application processes.\n- **Example - Buffer Overflow:** An application accepts user input into a fixed string buffer without boundary checks. An attacker inputs a string longer than the buffer, corrupting the call stack return address to execute injected shell code.\n- **Example - Virus:** Malicious code that attaches itself to legitimate binary files and runs whenever the infected program is executed.\n\n### 2. System and Network Threats\nSystem and network threats exploit host environment misconfigurations, network protocol flaws, or inter-process communications across network channels.\n- **Example - Worms:** Autonomous programs that use network sockets to scan for unpatched remote systems, automatically propagating across local subnets without user intervention (e.g., WannaCry ransomware).\n- **Example - Denial of Service (DoS / DDoS):** Attackers flood a server's network interface or application port with millions of junk packets, overwhelming CPU and memory resources so legitimate users cannot establish connection.\n- **Example - Man-in-the-Middle (MITM) & Packet Sniffing:** Attackers use ARP spoofing to place themselves between two communicating nodes on a network to silently inspect or modify plaintext traffic.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: PROTECTION AND SECURITY"
+        },
+        {
+            "question_number": "MCQ 1",
+            "question_text": "Which one of the following is capability based protection system?\na) hydra\nb) cambridge CAP system\nc) both hydra and cambridge CAP system\nd) none of the mentioned",
+            "marks": null,
+            "answer": "c) both hydra and cambridge CAP system\n\n**Rationale:** Both the Hydra operating system and the Cambridge CAP computer system are classic capability-based protection systems where access rights are associated directly with capabilities held by processes.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: PROTECTION AND SECURITY"
+        },
+        {
+            "question_number": "MCQ 2",
+            "question_text": "In UNIX, domain switch is accomplished via _____\na) file system\nb) user\nc) superuser\nd) none of the mentioned",
+            "marks": null,
+            "answer": "a) file system\n\n**Rationale:** In UNIX, domain switching is accomplished through the file system mechanism using the setuid (Set User ID) bit associated with executable files.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: PROTECTION AND SECURITY"
+        },
+        {
+            "question_number": "MCQ 3",
+            "question_text": "Which principle states that programs, users and even the systems be given just enough privileges to perform their task?\n(a) Principle of operating system\n(b) Principle of least privilege\n(c) Principle of process scheduling\n(d) None of the mentioned",
+            "marks": null,
+            "answer": "(b) Principle of least privilege\n\n**Rationale:** The principle of least privilege dictates that any module, user, or process must be granted only the minimal set of privileges required to complete its designated task.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: PROTECTION AND SECURITY"
+        },
+        {
+            "question_number": "MCQ 4",
+            "question_text": "_____ is an approach to restricting system access authorized users.\n(a) Role-based access control\n(b) Process-based access control\n(c) Job-based access control\n(d) None of the mentioned",
+            "marks": null,
+            "answer": "(a) Role-based access control\n\n**Rationale:** Role-Based Access Control (RBAC) restricts system access to authorized users by assigning privileges to defined organizational roles rather than individual accounts.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: PROTECTION AND SECURITY"
+        }
+    ]
+}

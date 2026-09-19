@@ -1,0 +1,311 @@
+{
+    "formal_filename": "18CSC205J_EndSem_May_2022.json",
+    "paper_title": "B.Tech. DEGREE EXAMINATION, MAY 2022 - Fourth Semester - 18CSC205J - OPERATING SYSTEMS",
+    "source": "EndSem May 2022",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "Termination of the process terminates __________.\n(A) First thread of the process\n(B) First two threads of the process\n(C) All threads within the process\n(D) No thread within the process",
+            "marks": 1,
+            "answer": "(C) All threads within the process\n\nRationale: Threads exist within the execution context of a process. Terminating a process reclaims all its memory and resources, thereby terminating all threads belonging to that process.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: PROCESS MANAGEMENT"
+        },
+        {
+            "question_number": "2",
+            "question_text": "A __________ is an active entity whereas __________ is said to be as passive entity.\n(A) Process, program\n(B) Program, process\n(C) Processor, process\n(D) Program, processor",
+            "marks": 1,
+            "answer": "(A) Process, program\n\nRationale: A program is a passive entity stored on disk (executable file), whereas a process is an active entity with a program counter and associated resources currently executing in memory.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Process Management"
+        },
+        {
+            "question_number": "3",
+            "question_text": "__________ system call is used after a fork () to replace the process memory space with a new program.\n(A) wait ()\n(B) exec ()\n(C) Sleep ()\n(D) kill ()",
+            "marks": 1,
+            "answer": "(B) exec ()\n\nRationale: The `exec()` system call loads a binary file into memory and replaces the existing process memory image with the new program.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: System Calls"
+        },
+        {
+            "question_number": "4",
+            "question_text": "Consider process P is in run state, during the execution it needs, to read a file sample.text from memory. Identify the current state of P.\n(A) idle\n(B) sleep\n(C) run\n(D) Blocked",
+            "marks": 1,
+            "answer": "(D) Blocked\n\nRationale: When a running process requests I/O (like reading a file), it cannot continue execution until the I/O completes, so it transitions to the Blocked (or Waiting) state.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Process Concept"
+        },
+        {
+            "question_number": "5",
+            "question_text": "Identify the two functions which are used in message passing system.\n(A) send(msg), delete(msg)\n(B) send(msg), write(msg)\n(C) send(msg), receive(msg)\n(D) write(msg), delete(msg)",
+            "marks": 1,
+            "answer": "(C) send(msg), receive(msg)\n\nRationale: Message passing IPC mechanisms rely on two fundamental primitive operations: `send(message)` and `receive(message)`.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Interprocess Communication"
+        },
+        {
+            "question_number": "6",
+            "question_text": "Peterson's solution for process synchronization is restricted to __________ process.\n(A) 1\n(B) 2\n(C) 3\n(D) Multiple processes",
+            "marks": 1,
+            "answer": "(B) 2\n\nRationale: Peterson's solution is a classic software-based solution to the critical-section problem designed specifically for two processes that alternate execution.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Peterson's Solution"
+        },
+        {
+            "question_number": "7",
+            "question_text": "Which statement is false about semaphore operations?\n(A) When a process is in critical section the other process loops indefinite\n(B) Counting semaphore values are restricted\n(C) Binary semaphore values range between 0 and 1\n(D) Avoids critical section problems in a concurrent system such as multitasking operating system",
+            "marks": 1,
+            "answer": "(B) Counting semaphore values are restricted\n\nRationale: Counting semaphores can take values over an unrestricted domain (any non-negative integer), whereas binary semaphores are restricted to 0 and 1.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Semaphores"
+        },
+        {
+            "question_number": "8",
+            "question_text": "A __________ is a segment and observe which of the following can summarize trials that function on shared data structure.\n(A) Monitor\n(B) Semaphore\n(C) Critical section\n(D) Mutex locks",
+            "marks": 1,
+            "answer": "(C) Critical section\n\nRationale: The critical section is a code segment in which a process accesses and manipulates shared data structures.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: The Critical-Section Problem"
+        },
+        {
+            "question_number": "9",
+            "question_text": "The time from arrival of interrupt to start of routine that services interrupt is called\n(A) Interrupt latency\n(B) Scheduler\n(C) Dispatch latency\n(D) Hardware latency",
+            "marks": 1,
+            "answer": "(A) Interrupt latency\n\nRationale: Interrupt latency is the duration from the arrival of an interrupt signal at the CPU to the start of execution of the Interrupt Service Routine (ISR).",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Real-Time CPU Scheduling"
+        },
+        {
+            "question_number": "10",
+            "question_text": "A system is in safe state only if there exists a __________\n(A) Safe allocation\n(B) Safe resource\n(C) Safe sequence\n(D) Safe deallocation",
+            "marks": 1,
+            "answer": "(C) Safe sequence\n\nRationale: By definition, a system is in a safe state if there exists at least one safe sequence of processes such that all processes can run to completion without deadlock.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Deadlock Avoidance"
+        },
+        {
+            "question_number": "11",
+            "question_text": "Operating system maintains the page table for __________\n(A) each process\n(B) each thread\n(C) each instruction\n(D) each address",
+            "marks": 1,
+            "answer": "(A) each process\n\nRationale: In a paged memory system, the operating system maintains a separate page table for each individual process to manage its virtual-to-physical memory mapping.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Paging"
+        },
+        {
+            "question_number": "12",
+            "question_text": "Memory binding instruction generates __________ for known memory location and generate __________ for unknown memory location during the compile time.\n(A) Physical address, virtual address\n(B) Absolute code, relocatable code\n(C) Base address, limit address\n(D) Absolute code, binary code",
+            "marks": 1,
+            "answer": "(B) Absolute code, relocatable code\n\nRationale: If memory locations are known at compile time, absolute code is generated. If unknown at compile time, relocatable code must be generated.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Main Memory"
+        },
+        {
+            "question_number": "13",
+            "question_text": "Which statement is true about static partitioning scheme?\n(A) Partition are made before execution\n(B) Partitions are allocated to the process as they arrive\n(C) Each partition is allowed to store only one process\n(D) Memory contains a set of holes of various sizes",
+            "marks": 1,
+            "answer": "(A) Partition are made before execution\n\nRationale: In static (fixed) partitioning, main memory is divided into fixed-size partitions prior to system operation/execution.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Contiguous Memory Allocation"
+        },
+        {
+            "question_number": "14",
+            "question_text": "__________ aids in having lesser effective access time.\n(A) Memory compaction\n(B) Translation look aside buffer\n(C) Static partitioning\n(D) Dynamic partitioning",
+            "marks": 1,
+            "answer": "(B) Translation look aside buffer\n\nRationale: A Translation Lookaside Buffer (TLB) acts as a high-speed associative hardware cache for page table entries, significantly reducing Effective Access Time (EAT).",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Paging"
+        },
+        {
+            "question_number": "15",
+            "question_text": "A process may have few longer CPU bursts if it is in __________\n(A) I/O bound\n(B) CPU bound\n(C) Critical section\n(D) Mutex lock",
+            "marks": 1,
+            "answer": "(B) CPU bound\n\nRationale: A CPU-bound process spends most of its time performing computation and thus exhibits a few long CPU bursts.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: CPU Scheduling"
+        },
+        {
+            "question_number": "16",
+            "question_text": "System libraries are used by various processes where each processes are mapped to shared object into a\n(A) Physical address space\n(B) Virtual address space\n(C) Memory address space\n(D) Contiguous address space",
+            "marks": 1,
+            "answer": "(B) Virtual address space\n\nRationale: Shared libraries/objects are mapped into the virtual address space of each individual process.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Virtual Memory"
+        },
+        {
+            "question_number": "17",
+            "question_text": "In copy on write technique, the pages which are altered by either process are copied while the __________ pages are shared between parent and child processes.\n(A) Altered\n(B) Modified\n(C) Unaltered\n(D) Unmodified",
+            "marks": 1,
+            "answer": "(D) Unmodified\n\nRationale: Under Copy-on-Write (COW), parent and child processes initially share physical pages. Unmodified pages remain shared; only when a process modifies a page is a copy created.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Copy-on-Write"
+        },
+        {
+            "question_number": "18",
+            "question_text": "A user's entire program is loaded in the physical memory even though it is not needed during program execution time is known as\n(A) Pure demand paging\n(B) Demand paging\n(C) Not demand paging\n(D) Virtual paging",
+            "marks": 1,
+            "answer": "(C) Not demand paging\n\nRationale: Loading the complete program into physical memory prior to execution rather than loading pages on demand is non-demand paging.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Virtual Memory"
+        },
+        {
+            "question_number": "19",
+            "question_text": "During page fault, the tables which are referred are kept in\n(A) Page table\n(B) Dynamic table\n(C) Process control block\n(D) Demand table",
+            "marks": 1,
+            "answer": "(A) Page table\n\nRationale: When a page fault occurs, the OS references the process's page table to check the valid/invalid bit and frame location.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Demand Paging"
+        },
+        {
+            "question_number": "20",
+            "question_text": "A ratio on which the effective memory access time depends on\n(A) Miss ratio\n(B) Hit ratio\n(C) Both hit and miss ratio\n(D) Bit ratio",
+            "marks": 1,
+            "answer": "(B) Hit ratio\n\nRationale: Effective Access Time (EAT) = $\\text{Hit Ratio} \\times \\text{TLB Access Time} + (1 - \\text{Hit Ratio}) \\times \\text{Memory Access Time}$. Hence it depends directly on the TLB hit ratio.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Paging"
+        },
+        {
+            "question_number": "21",
+            "question_text": "The free space list in disk can be utilized by\n(A) Frames\n(B) Pages\n(C) Bitmap\n(D) Arrays",
+            "marks": 1,
+            "answer": "(C) Bitmap\n\nRationale: A bitmap (or bit vector) is a widely used data structure for tracking free disk blocks, where 0 represents an allocated block and 1 represents a free block.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: STORAGE MANAGEMENT"
+        },
+        {
+            "question_number": "22",
+            "question_text": "`-rwxr-xr--` meaning of this command for owner is\n(A) Owner has execute permission\n(B) Owner has read, write and execute permission\n(C) Owner has read permission only\n(D) Owner has read and execute permission",
+            "marks": 1,
+            "answer": "(B) Owner has read, write and execute permission\n\nRationale: In Unix file permissions `-rwxr-xr--`, the first permission triad `rwx` corresponds to the file owner, giving read (r), write (w), and execute (x) rights.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Access Control"
+        },
+        {
+            "question_number": "23",
+            "question_text": "The methods how LRU page replacement policy can be implemented in hardware are\n(A) Counters\n(B) RAM and Register\n(C) Stack and counter\n(D) Registers",
+            "marks": 1,
+            "answer": "(C) Stack and counter\n\nRationale: LRU page replacement requires hardware support, typically implemented via a logical clock/counter or a stack of page numbers.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Page Replacement"
+        },
+        {
+            "question_number": "24",
+            "question_text": "Sequential access methods are used in\n(A) Remote file systems\n(B) Distributed file system\n(C) Networked file systems\n(D) Tape drives",
+            "marks": 1,
+            "answer": "(D) Tape drives\n\nRationale: Magnetic tape drives physically enforce sequential access because records must be accessed in order.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: File-System Interface"
+        },
+        {
+            "question_number": "25",
+            "question_text": "Which algorithm is similar to SCAN scheduling techniques where that algorithm prevents the extra delay to traverse the end of the disk?\n(A) SSTF\n(B) C-SCAN\n(C) Look\n(D) C-Look",
+            "marks": 1,
+            "answer": "(C) Look\n\nRationale: LOOK scheduling is a variation of SCAN that only moves as far as the final request in each direction before reversing, avoiding unnecessary travel to the disk ends.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Disk Scheduling"
+        },
+        {
+            "question_number": "26. a. i.",
+            "question_text": "A user reads one record from file in $25\\mu s$, executes 100 instructions in $1\\mu s$ and write one record to file in $25\\mu s$. Calculate CPU utilization for the scenario.",
+            "marks": 2,
+            "answer": "### Calculation:\n- **Total scenario time** = Read time + Execution time + Write time\n  $$\\text{Total Time} = 25\\mu s + 1\\mu s + 25\\mu s = 51\\mu s$$\n- **CPU execution time** = $1\\mu s$\n- **CPU Utilization**:\n  $$\\text{CPU Utilization} = \\left( \\frac{\\text{CPU Execution Time}}{\\text{Total Time}} \\right) \\times 100 = \\frac{1}{51} \\times 100 \\approx 1.96\\%$$",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Process Management"
+        },
+        {
+            "question_number": "26. a. ii.",
+            "question_text": "Determine the reasons for terminating the process.",
+            "marks": 5,
+            "answer": "### Reasons for Process Termination:\n1. **Normal Completion:** The process executes its final statement and requests the operating system to delete it using `exit()`.\n2. **Time Limit Exceeded:** The process has run longer than the specified total time limit.\n3. **Memory Unavailable:** The process requires more memory than the system can allocate.\n4. **Bounds Violation:** The process tries to access a memory location outside its allowed range.\n5. **Protection Error:** The process attempts to use a resource or file improperly (e.g., writing to a read-only file).\n6. **Arithmetic Error:** An invalid arithmetic operation occurs (e.g., division by zero).\n7. **I/O Failure:** An error occurs during input or output operation.\n8. **Parent Process Termination / Cascading Termination:** If the parent process terminates, the OS may terminate all its child processes.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Operations on Processes"
+        },
+        {
+            "question_number": "26. a. iii.",
+            "question_text": "What is pipe? What are the four issues must be considered while implementing pipe?",
+            "marks": 3,
+            "answer": "### Pipe Definition:\nA **pipe** is a unidirectional or bidirectional interprocess communication channel acting as a conduit between two or more processes.\n\n### Four Key Implementation Issues:\n1. **Directionality:** Is communication unidirectional or bidirectional?\n2. **Duplex Mode:** If bidirectional communication is supported, is it half-duplex (data flows one way at a time) or full-duplex (data flows simultaneously both ways)?\n3. **Relationship Requirement:** Must a parent-child or process relationship exist between the communicating processes (e.g., anonymous pipes require a parent-child relationship, whereas named pipes do not)?\n4. **Network Capability:** Can the pipe operate across a network or is it strictly local to the host machine?",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Interprocess Communication"
+        },
+        {
+            "question_number": "26. b.",
+            "question_text": "With the neat sketch, classify the states of process in operating system.",
+            "marks": 10,
+            "answer": "### Process States Classification:\nAs a process executes, it changes state. The general states are:\n1. **New:** The process is being created.\n2. **Ready:** The process is waiting to be assigned to a processor.\n3. **Running:** Instructions are being executed by the CPU.\n4. **Waiting / Blocked:** The process is waiting for some event to occur (e.g., I/O completion or receipt of a signal).\n5. **Terminated:** The process has finished execution.\n\n```\n  +-----+        admitted         +-------+\n  | New | ----------------------> | Ready |\n  +-----+                         +-------+\n                                   ^     |\n                     scheduler     |     | interrupt\n                   dispatch        |     v\n                                  +---------+\n                                  | Running |\n                                  +---------+\n                                    |     |\n                 I/O or event wait  |     | exit\n                                    v     v\n                                +---------+    +------------+\n                                | Waiting |    | Terminated |\n                                +---------+    +------------+\n                                    |\n                                    | I/O or event completion\n                                    v\n                                 (Ready)\n```\n\n### Explanation of Transitions:\n- **Admitted:** Process creation completed, moved to ready queue.\n- **Scheduler Dispatch:** Process selected from ready queue to run on CPU.\n- **Interrupt:** Preemption due to time quantum expiration or higher-priority process.\n- **I/O or Event Wait:** Process issues an I/O request and blocks.\n- **I/O or Event Completion:** I/O completes and process returns to ready queue.\n- **Exit:** Process finishes and resources are released.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Process Concept"
+        },
+        {
+            "question_number": "27. a.",
+            "question_text": "In a bus station, five passengers P1, P2, P3, P4, P5 want to book a ticket. The passengers arrived at different time and all were waiting to get a book from 5th counter that were opened. The time taken by the customers to complete a transaction in the counter is given below:\nNote: to avoid the passengers to stand in the queue for longer time, a time quantum of 5 ms was given to all the passengers.\n\n| Passenger ID | Arrival time | Burst time |\n|---|---|---|\n| P1 | 0 | 5 |\n| P2 | 1 | 2 |\n| P3 | 2 | 4 |\n| P4 | 3 | 7 |\n| P5 | 4 | 3 |\n\n(i) Identify CPU scheduling algorithms that would be most suitable for this scenario and calculate the average waiting time and average turnaround time.\n(ii) Calculate average waiting time and average turnaround time for shortest job first scheduling algorithm.",
+            "marks": 10,
+            "answer": "### (i) Round Robin (RR) Scheduling (Time Quantum = 5 ms)\nSuitable algorithm for time-sharing / fair allocation among waiting passengers: **Round Robin (RR)**.\n\n#### Execution Sequence (Gantt Chart):\n- $t=0$ to $5$: **P1** runs (burst 5 -> 0, completes at $t=5$). Ready queue gets P2 ($t=1$), P3 ($t=2$), P4 ($t=3$), P5 ($t=4$).\n- $t=5$ to $7$: **P2** runs (burst 2 -> 0, completes at $t=7$).\n- $t=7$ to $11$: **P3** runs (burst 4 -> 0, completes at $t=11$).\n- $t=11$ to $16$: **P4** runs (burst 7 -> remaining 2). Queue becomes [P5, P4].\n- $t=16$ to $19$: **P5** runs (burst 3 -> 0, completes at $t=19$).\n- $t=19$ to $21$: **P4** runs (remaining 2 -> 0, completes at $t=21$).\n\n#### Calculations:\n- **P1:** Completion = 5, Turnaround Time (TAT) = 5 - 0 = 5, Waiting Time (WT) = 5 - 5 = 0\n- **P2:** Completion = 7, TAT = 7 - 1 = 6, WT = 6 - 2 = 4\n- **P3:** Completion = 11, TAT = 11 - 2 = 9, WT = 9 - 4 = 5\n- **P4:** Completion = 21, TAT = 21 - 3 = 18, WT = 18 - 7 = 11\n- **P5:** Completion = 19, TAT = 19 - 4 = 15, WT = 15 - 3 = 12\n\n$$\\text{Average Turnaround Time} = \\frac{5 + 6 + 9 + 18 + 15}{5} = \\frac{53}{5} = 10.6\\text{ ms}$$\n$$\\text{Average Waiting Time} = \\frac{0 + 4 + 5 + 11 + 12}{5} = \\frac{32}{5} = 6.4\\text{ ms}$$\n\n---\n\n### (ii) Shortest Job First (SJF Non-Preemptive)\n#### Execution Sequence:\n- $t=0$ to $5$: **P1** runs (only process available at $t=0$).\n- At $t=5$: Ready queue contains P2 (burst 2), P3 (4), P4 (7), P5 (3). Smallest is **P2**.\n- $t=5$ to $7$: **P2** runs (completes at $t=7$).\n- $t=7$ to $10$: Smallest burst is **P5** (burst 3), runs $t=7$ to $10$.\n- $t=10$ to $14$: Next smallest is **P3** (burst 4), runs $t=10$ to $14$.\n- $t=14$ to $21$: Remaining process is **P4** (burst 7), runs $t=14$ to $21$.\n\n#### Calculations:\n- **P1:** Completion = 5, TAT = 5 - 0 = 5, WT = 0\n- **P2:** Completion = 7, TAT = 7 - 1 = 6, WT = 6 - 2 = 4\n- **P3:** Completion = 14, TAT = 14 - 2 = 12, WT = 12 - 4 = 8\n- **P4:** Completion = 21, TAT = 21 - 3 = 18, WT = 18 - 7 = 11\n- **P5:** Completion = 10, TAT = 10 - 4 = 6, WT = 6 - 3 = 3\n\n$$\\text{Average Turnaround Time} = \\frac{5 + 6 + 12 + 18 + 6}{5} = \\frac{47}{5} = 9.4\\text{ ms}$$\n$$\\text{Average Waiting Time} = \\frac{0 + 4 + 8 + 11 + 3}{5} = \\frac{26}{5} = 5.2\\text{ ms}$$",
+            "answer_source": "generated",
+            "chapter": "Unit 3: CPU Scheduling"
+        },
+        {
+            "question_number": "27. b.",
+            "question_text": "Consider the following snapshot of a system:\nTotal maximum instances of A=3, B=4, C=12 and D=12.\n\n| Process | Allocation (A B C D) | Max (A B C D) |\n|---|---|---|\n| P0 | 0 0 1 2 | 0 0 1 2 |\n| P1 | 1 0 0 0 | 1 7 5 0 |\n| P2 | 1 3 5 4 | 2 3 5 6 |\n| P3 | 0 6 3 2 | 0 6 5 2 |\n| P4 | 0 0 1 4 | 0 6 5 6 |\n\nAvailable (A B C D): 1 5 2 0\n\nAnswer the following questions using Banker's algorithm.\n(i) Determine the need matrix for the above system.\n(ii) Is the system in a safe state? If yes, mention the sequence.",
+            "marks": 10,
+            "answer": "### (i) Need Matrix Calculation:\n$\\text{Need}[i] = \\text{Max}[i] - \\text{Allocation}[i]$\n\n| Process | Max (A B C D) | Allocation (A B C D) | Need (A B C D) |\n|---|---|---|---|\n| **P0** | 0 0 1 2 | 0 0 1 2 | **0 0 0 0** |\n| **P1** | 1 7 5 0 | 1 0 0 0 | **0 7 5 0** |\n| **P2** | 2 3 5 6 | 1 3 5 4 | **1 0 0 2** |\n| **P3** | 0 6 5 2 | 0 6 3 2 | **0 0 2 0** |\n| **P4** | 0 6 5 6 | 0 0 1 4 | **0 6 4 2** |\n\n---\n\n### (ii) Safety Algorithm Execution:\nInitial **Available** = `[1, 5, 2, 0]`\n\n1. **Process P0:**\n   - $\\text{Need}_0 = [0, 0, 0, 0] \\le [1, 5, 2, 0]$ (True)\n   - $\\text{New Available} = [1, 5, 2, 0] + [0, 0, 1, 2] = [1, 5, 3, 2]$\n\n2. **Process P2:**\n   - $\\text{Need}_2 = [1, 0, 0, 2] \\le [1, 5, 3, 2]$ (True)\n   - $\\text{New Available} = [1, 5, 3, 2] + [1, 3, 5, 4] = [2, 8, 8, 6]$\n\n3. **Process P3:**\n   - $\\text{Need}_3 = [0, 0, 2, 0] \\le [2, 8, 8, 6]$ (True)\n   - $\\text{New Available} = [2, 8, 8, 6] + [0, 6, 3, 2] = [2, 14, 11, 8]$\n\n4. **Process P4:**\n   - $\\text{Need}_4 = [0, 6, 4, 2] \\le [2, 14, 11, 8]$ (True)\n   - $\\text{New Available} = [2, 14, 11, 8] + [0, 0, 1, 4] = [2, 14, 12, 12]$\n\n5. **Process P1:**\n   - $\\text{Need}_1 = [0, 7, 5, 0] \\le [2, 14, 12, 12]$ (True)\n   - $\\text{New Available} = [2, 14, 12, 12] + [1, 0, 0, 0] = [3, 14, 12, 12]$\n\n**Conclusion:** The system is in a **SAFE STATE**.\n**Safe Sequence:** `< P0, P2, P3, P4, P1 >`",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Deadlocks"
+        },
+        {
+            "question_number": "28. a. i.",
+            "question_text": "Consider processes P1 (401 kB), P2 (321 kB), P3 (117 kB), P4 (211 kB), P5 (121 kB) arrives in order. Illustrate first-fit, best-fit and worst-fit process placement algorithms with given memory partitions 200 kB, 100 kB, 300 kB, 600 kB, 400 kB.",
+            "marks": 6,
+            "answer": "### Memory Partitioning Placement:\n**Given Partitions:** 200 kB, 100 kB, 300 kB, 600 kB, 400 kB\n\n1. **First-Fit:**\n   - **P1 (401 kB):** Allocated to **600 kB** partition (199 kB remaining).\n   - **P2 (321 kB):** Allocated to **400 kB** partition (79 kB remaining).\n   - **P3 (117 kB):** Allocated to **200 kB** partition (83 kB remaining).\n   - **P4 (211 kB):** Cannot fit in any available partition (200kB[rem 83], 100kB, 300kB, 600kB[rem 199], 400kB[rem 79]). **Must Wait**.\n   - **P5 (121 kB):** Allocated to **300 kB** partition (179 kB remaining).\n\n2. **Best-Fit:**\n   - **P1 (401 kB):** Fits best in **600 kB** partition (rem 199 kB).\n   - **P2 (321 kB):** Fits best in **400 kB** partition (rem 79 kB).\n   - **P3 (117 kB):** Fits best in **200 kB** partition (rem 83 kB).\n   - **P4 (211 kB):** Fits best in **300 kB** partition (rem 89 kB).\n   - **P5 (121 kB):** Remaining partitions are 100 kB and small fragments. **Must Wait**.\n\n3. **Worst-Fit:**\n   - **P1 (401 kB):** Allocated to largest partition **600 kB** (rem 199 kB).\n   - **P2 (321 kB):** Allocated to largest remaining partition **400 kB** (rem 79 kB).\n   - **P3 (117 kB):** Allocated to largest remaining partition **300 kB** (rem 183 kB).\n   - **P4 (211 kB):** No remaining partition is large enough. **Must Wait**.\n   - **P5 (121 kB):** Allocated to **200 kB** partition (rem 79 kB).",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Contiguous Memory Allocation"
+        },
+        {
+            "question_number": "28. a. ii.",
+            "question_text": "Write a short note on programmer convenient memory management technique.",
+            "marks": 4,
+            "answer": "### Segmentation (Programmer-Convenient Memory Management):\n- **Concept:** Segmentation is a memory management scheme that supports the user/programmer's view of memory as a collection of variable-length logical units called **segments** (e.g., main program, procedures, functions, local variables, global variables, stack).\n- **Address Structure:** Logical addresses consist of a two-tuple: `<segment-number, offset>`.\n- **Segment Table:** Maps logical segment numbers to physical base address and limit (length) of the segment in physical memory.\n- **Advantages:** Provides protection and sharing at logical boundaries, aligns naturally with program structure.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Segmentation"
+        },
+        {
+            "question_number": "28. b.",
+            "question_text": "Explain about paging in operating systems.",
+            "marks": 10,
+            "answer": "### Paging in Operating Systems:\n**Paging** is a memory-management scheme that permits the physical address space of a process to be noncontiguous.\n\n#### Key Concepts:\n1. **Frames:** Physical memory is broken into fixed-sized blocks called *frames*.\n2. **Pages:** Logical memory is divided into blocks of the same size called *pages*.\n3. **Page Table:** A data structure maintained by the OS for every process to map page numbers to frame numbers.\n\n#### Address Translation Scheme:\nA logical address generated by the CPU consists of:\n- **Page Number ($p$):** Used as an index into the page table.\n- **Page Offset ($d$):** Combined with the base frame address to define the physical address.\n\n$$\\text{Physical Address} = (f \\times \\text{Page Size}) + d$$\nwhere $f$ is the frame number obtained from $\\text{PageTable}[p]$.\n\n```\n   Logical Address:  [ Page (p) | Offset (d) ]\n                          |\n                          v\n                    +------------+\n                  p | Frame (f)  | (Page Table)\n                    +------------+\n                          |\n                          v\n  Physical Address: [ Frame (f) | Offset (d) ]\n```\n\n#### Advantages & Disadvantages:\n- **Advantages:** Eliminates external fragmentation; allows shared memory pages between processes.\n- **Disadvantages:** Introduces internal fragmentation within the last page; requires extra memory access to retrieve page table entries (mitigated by TLB).",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Paging"
+        },
+        {
+            "question_number": "29. a.",
+            "question_text": "Consider the following page references 7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 4, 2, 3, 0, 3, 2. Determine the page faults in FIFO, LRU and optimal page replacement algorithm with frame size as 3.",
+            "marks": 10,
+            "answer": "### Page Faults Evaluation (Frame Size = 3):\nReference String: `7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 4, 2, 3, 0, 3, 2` (17 references)\n\n--- \n\n### 1. FIFO (First-In, First-Out):\n| Reference | Frame 1 | Frame 2 | Frame 3 | Status |\n|---|---|---|---|---|\n| 7 | **7** | - | - | Fault (1) |\n| 0 | 7 | **0** | - | Fault (2) |\n| 1 | 7 | 0 | **1** | Fault (3) |\n| 2 | **2** | 0 | 1 | Fault (4) |\n| 0 | 2 | 0 | 1 | Hit |\n| 3 | 2 | **3** | 1 | Fault (5) |\n| 0 | 2 | 3 | **0** | Fault (6) |\n| 4 | **4** | 3 | 0 | Fault (7) |\n| 2 | 4 | **2** | 0 | Fault (8) |\n| 3 | 4 | 2 | **3** | Fault (9) |\n| 0 | **0** | 2 | 3 | Fault (10) |\n| 4 | 0 | **4** | 3 | Fault (11) |\n| 2 | 0 | 4 | **2** | Fault (12) |\n| 3 | **3** | 4 | 2 | Fault (13) |\n| 0 | 3 | **0** | 2 | Fault (14) |\n| 3 | 3 | 0 | 2 | Hit |\n| 2 | 3 | 0 | 2 | Hit |\n\n**Total FIFO Page Faults = 14**\n\n---\n\n### 2. LRU (Least Recently Used):\n| Reference | Frame 1 | Frame 2 | Frame 3 | Status |\n|---|---|---|---|---|\n| 7 | **7** | - | - | Fault (1) |\n| 0 | 7 | **0** | - | Fault (2) |\n| 1 | 7 | 0 | **1** | Fault (3) |\n| 2 | **2** | 0 | 1 | Fault (4) |\n| 0 | 2 | 0 | 1 | Hit |\n| 3 | 2 | 0 | **3** | Fault (5) |\n| 0 | 2 | 0 | 3 | Hit |\n| 4 | **4** | 0 | 3 | Fault (6) |\n| 2 | 4 | 0 | **2** | Fault (7) |\n| 3 | 4 | **3** | 2 | Fault (8) |\n| 0 | **0** | 3 | 2 | Fault (9) |\n| 4 | 0 | 3 | **4** | Fault (10) |\n| 2 | 0 | **2** | 4 | Fault (11) |\n| 3 | **3** | 2 | 4 | Fault (12) |\n| 0 | 3 | 2 | **0** | Fault (13) |\n| 3 | 3 | 2 | 0 | Hit |\n| 2 | 3 | 2 | 0 | Hit |\n\n**Total LRU Page Faults = 13**\n\n---\n\n### 3. Optimal Page Replacement:\n| Reference | Frame 1 | Frame 2 | Frame 3 | Status |\n|---|---|---|---|---|\n| 7 | **7** | - | - | Fault (1) |\n| 0 | 7 | **0** | - | Fault (2) |\n| 1 | 7 | 0 | **1** | Fault (3) |\n| 2 | **2** | 0 | 1 | Fault (4) |\n| 0 | 2 | 0 | 1 | Hit |\n| 3 | 2 | 0 | **3** | Fault (5) |\n| 0 | 2 | 0 | 3 | Hit |\n| 4 | 2 | 0 | **4** | Fault (6) |\n| 2 | 2 | 0 | 4 | Hit |\n| 3 | **3** | 0 | 4 | Fault (7) |\n| 0 | 3 | 0 | 4 | Hit |\n| 4 | 3 | 0 | 4 | Hit |\n| 2 | **2** | 0 | 4 | Fault (8) |\n| 3 | **3** | 0 | 4 | Fault (9) |\n| 0 | 3 | 0 | 4 | Hit |\n| 3 | 3 | 0 | 4 | Hit |\n| 2 | **2** | 0 | 4 | Fault (10) |\n\n**Total Optimal Page Faults = 10**",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Page Replacement"
+        },
+        {
+            "question_number": "29. b.",
+            "question_text": "With the neat diagram, elaborate the page table and inverted page table.",
+            "marks": 10,
+            "answer": "### 1. Standard Page Table\nIn standard paging, each process has its own page table indexed by logical page numbers.\n\n```\n CPU Virtual Address: [ p | d ]\n                       |\n                       v\n               +---------------+ \n             p |   Frame (f)   |  <-- Page Table (Per Process)\n               +---------------+ \n                       |\n                       v\n Physical Memory:    [ f | d ]\n```\n\n- **Mechanism:** Translates page number $p$ to frame number $f$.\n- **Drawback:** Memory required for page tables grows proportionally with virtual memory size and the number of processes.\n\n---\n\n### 2. Inverted Page Table\nAn **Inverted Page Table** has one entry for each real page (frame) of physical memory, regardless of the number of processes or virtual pages.\n\n```\n CPU Virtual Address: [ pid | p | d ]\n                         |    |\n                         v    v\n                    +---------------+ \n                    | Search Engine | \n                    +---------------+ \n                         |\n                         v\n               +-------------------+ \n             i | pid | p | Offset  | <-- Inverted Page Table \n               +-------------------+     (Indexed by Frame i)\n                         |\n                         v\n Physical Memory:      [ i | d ]\n```\n\n- **Entry Structure:** Each entry consists of `<pid, p>`, where `pid` is the process ID and `p` is the page number.\n- **Lookup Process:** When process `pid` references page `p`, the system searches the inverted page table for a matching `<pid, p>` entry at index $i$. The physical address is constructed as frame $i$ with offset $d$.\n- **Advantage:** Dramatically decreases memory needed to store page tables.\n- **Disadvantage:** Increases lookup time (requires hash tables or hardware TLB to speed up search).",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Structure of the Page Table"
+        },
+        {
+            "question_number": "30. a.",
+            "question_text": "Explain various file organization methods with an example.",
+            "marks": 10,
+            "answer": "### File Organization Methods:\nFile organization refers to the logical structuring of records in a file.\n\n1. **Sequential Access:**\n   - **Description:** Information in the file is processed in order, one record after another.\n   - **Operations:** `read_next()`, `write_next()`, `reset()`.\n   - **Example:** Magnetic tape storage, log files, payroll systems where records are processed sequentially by employee ID.\n\n2. **Direct / Random Access:**\n   - **Description:** Records can be read or written directly in any order without traversing preceding records.\n   - **Operations:** `read(n)`, `write(n)`, `position_to(n)`.\n   - **Example:** Database management systems, disk storage for immediate user query responses.\n\n3. **Indexed Sequential Access Method (ISAM):**\n   - **Description:** An index is built on top of a sequential file. The index contains pointers to blocks containing targeted records.\n   - **Mechanism:** To locate a record, the index is searched first, yielding a pointer to the specific block.\n   - **Example:** Library catalog systems, student record management systems by Roll Number.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Access Methods"
+        },
+        {
+            "question_number": "30. b.",
+            "question_text": "Consider the following sequence of disk track requests 27, 129, 110, 186, 147, 41, 10, 64, 120. Assume that the disk head is initially positioned at 100 and moving in the direction of decreasing track number. Calculate the total disk arm movements for LIFO, SSTF, SCAN, C-SCAN disk scheduling.",
+            "marks": 10,
+            "answer": "### Disk Scheduling Calculations:\nRequests: `27, 129, 110, 186, 147, 41, 10, 64, 120`  \nInitial Head Position = **100**, Direction = **Decreasing (towards track 0)**\n\n---\n\n### 1. LIFO (Last-In, First-Out):\nService Order (reverse order of arrival): `120, 64, 10, 41, 147, 186, 110, 129, 27`\n- $100 \\rightarrow 120$: $|100-120| = 20$\n- $120 \\rightarrow 64$: $|120-64| = 56$\n- $64 \\rightarrow 10$: $|64-10| = 54$\n- $10 \\rightarrow 41$: $|10-41| = 31$\n- $41 \\rightarrow 147$: $|41-147| = 106$\n- $147 \\rightarrow 186$: $|147-186| = 39$\n- $186 \\rightarrow 110$: $|186-110| = 76$\n- $110 \\rightarrow 129$: $|110-129| = 19$\n- $129 \\rightarrow 27$: $|129-27| = 102$\n\n$$\\text{Total Head Movement} = 20 + 56 + 54 + 31 + 106 + 39 + 76 + 19 + 102 = \\mathbf{503\\text{ tracks}}$$\n\n---\n\n### 2. SSTF (Shortest Seek Time First):\nFrom current position, service the request closest in distance:\n- From 100 $\\rightarrow 110$ (dist 10)\n- From 110 $\\rightarrow 120$ (dist 10)\n- From 120 $\\rightarrow 129$ (dist 9)\n- From 129 $\\rightarrow 147$ (dist 18)\n- From 147 $\\rightarrow 186$ (dist 39)\n- From 186 $\\rightarrow 64$ (dist 122)\n- From 64 $\\rightarrow 41$ (dist 23)\n- From 41 $\\rightarrow 27$ (dist 14)\n- From 27 $\\rightarrow 10$ (dist 17)\n\nOrder: `100 -> 110 -> 120 -> 129 -> 147 -> 186 -> 64 -> 41 -> 27 -> 10`  \n$$\\text{Total Head Movement} = (186 - 100) + (186 - 10) = 86 + 176 = \\mathbf{262\\text{ tracks}}$$\n\n---\n\n### 3. SCAN (Elevator Algorithm):\nInitial Direction: Decreasing towards 0.\n- Moves down servicing: `64, 41, 27, 10`, reaches `0`.\n- Reverses direction and moves up servicing: `110, 120, 129, 147, 186`.\n\nOrder: `100 -> 64 -> 41 -> 27 -> 10 -> 0 -> 110 -> 120 -> 129 -> 147 -> 186`  \n$$\\text{Total Head Movement} = (100 - 0) + (186 - 0) = 100 + 186 = \\mathbf{286\\text{ tracks}}$$\n\n---\n\n### 4. C-SCAN (Circular SCAN):\nInitial Direction: Decreasing towards 0.\n- Moves down servicing: `64, 41, 27, 10`, reaches `0`.\n- Jumps to highest track (assuming disk boundary 199).\n- Moves down servicing remaining requests: `186, 147, 129, 120, 110`.\n\n$$\\text{Total Head Movement} = (100 - 0) + (199 - 0) + (199 - 110) = 100 + 199 + 89 = \\mathbf{388\\text{ tracks}}$$\n*(Note: If jump goes directly to max request 186 without reaching 199 boundary: $(100 - 0) + (186 - 0) + (186 - 110) = 100 + 186 + 76 = 362\\text{ tracks})$*",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Disk Scheduling"
+        }
+    ]
+}

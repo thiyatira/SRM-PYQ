@@ -1,0 +1,119 @@
+{
+    "formal_filename": "FJ1_2024-08-07_Set-B.json",
+    "paper_title": "15CS302J / 14FJ1-7 - Operating Systems Examination",
+    "source": "FJ1 Aug 2024",
+    "questions": [
+        {
+            "question_number": "21",
+            "question_text": "Classify the processor registers of a computer system.",
+            "marks": 4,
+            "answer": "Processor registers are broadly classified into two categories based on their function and accessibility:\n\n1. **User-Visible Registers**:\n   - **General-Purpose Registers (GPRs)**: Used by programmers or compilers to perform arithmetic/logical operations and store temporary data (e.g., AX, BX, CX, DX in x86).\n   - **Data Registers**: Hold data for processing.\n   - **Address Registers**: Hold memory addresses (e.g., Segment registers, Index registers, Stack Pointer).\n   - **Condition Code / Flag Registers**: Hold CPU status bits (e.g., Zero flag, Carry flag, Sign flag).\n\n2. **Control and Status Registers**:\n   - **Program Counter (PC)**: Holds the memory address of the next instruction to be fetched.\n   - **Instruction Register (IR)**: Stores the current instruction being executed.\n   - **Memory Address Register (MAR)**: Holds the memory address for read/write operations.\n   - **Memory Buffer Register (MBR) / Data Register (MDR)**: Holds data read from or written to memory.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Computer-System Organization"
+        },
+        {
+            "question_number": "22",
+            "question_text": "Draw a diagram for instruction cycle with interrupts.",
+            "marks": 4,
+            "answer": "An instruction cycle with interrupts consists of the following phases:\n\n1. **Fetch Cycle**: Fetch instruction from memory into Instruction Register.\n2. **Execute Cycle**: Decode and execute the instruction.\n3. **Interrupt Cycle**: Check if interrupts are enabled and pending.\n   - If **No Interrupt**: Loop back to Fetch Next Instruction.\n   - If **Interrupt Pending**: Save current process status (PC and registers onto stack), set PC to the start address of the Interrupt Service Routine (ISR), process the interrupt, and then return back to normal execution flow.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Computer-System Organization"
+        },
+        {
+            "question_number": "23",
+            "question_text": "Mention the reasons for process creation.",
+            "marks": 4,
+            "answer": "Primary reasons for process creation in an operating system include:\n\n1. **System Initialization**: System boot process spawns background processes/daemons.\n2. **User Request**: User executes an application or requests a new task (e.g., running a program from terminal or GUI).\n3. **Batch Job Submission**: Batch processing systems submit jobs for execution.\n4. **Process Forking / Spawn**: An existing process calls a system call (e.g., `fork()` in Unix) to create a child process to perform subtasks concurrently.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: PROCESS MANAGEMENT"
+        },
+        {
+            "question_number": "24",
+            "question_text": "Illustrate the structure of a monitor, which supports synchronization.",
+            "marks": 4,
+            "answer": "A **Monitor** is a high-level synchronization construct that encapsulates shared data variables, procedures, and condition variables.\n\n### Key Components:\n- **Shared Data / Private Variables**: Accessible only through monitor procedures.\n- **Monitor Procedures**: Only one thread/process can execute inside a monitor procedure at any given time (mutual exclusion guaranteed automatically).\n- **Condition Variables**: Used for synchronization (e.g., `x.wait()` and `x.signal()`).\n- **Entry Queue**: Queues processes waiting to enter the monitor.\n- **Condition Queues**: Queues processes waiting on specific condition variables.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: PROCESS MANAGEMENT"
+        },
+        {
+            "question_number": "25",
+            "question_text": "List any four strategies for recovery from deadlock.",
+            "marks": 4,
+            "answer": "Four main strategies for deadlock recovery are:\n\n1. **Process Termination (Abort all deadlocked processes)**: Immediately terminates all processes involved in the deadlock.\n2. **Aborting Processes One-by-One**: Aborts deadlocked processes sequentially until the deadlock cycle is broken.\n3. **Resource Preemption**: Temporarily preempts (takes away) resources allocated to deadlocked processes and allocates them to others.\n4. **Rollback to Safe State**: Checkpoints process execution states periodically and rolls back deadlocked processes to a previous safe state.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Deadlocks"
+        },
+        {
+            "question_number": "26",
+            "question_text": "Differentiate paging with segmentation.",
+            "marks": 4,
+            "answer": "| Feature | Paging | Segmentation |\n|---|---|---|\n| **Memory Division** | Fixed-size blocks (pages and frames). | Variable-size logical segments (code, data, stack). |\n| **View** | Physical view of memory managed by OS. | User's logical view of memory. |\n| **Fragmentation** | Suffers from internal fragmentation; no external fragmentation. | Suffers from external fragmentation; no internal fragmentation. |\n| **Address Structure** | Logical address = Page Number + Offset. | Logical address = Segment Number + Offset. |",
+            "answer_source": "generated",
+            "chapter": "Unit 4: MEMORY MANAGEMENT"
+        },
+        {
+            "question_number": "27",
+            "question_text": "Explain briefly about kernel I/O subsystem.",
+            "marks": 4,
+            "answer": "The **Kernel I/O Subsystem** provides services to streamline I/O performance and shield application software from the complexities of device hardware. Key functions include:\n\n1. **I/O Scheduling**: Reordering I/O requests to optimize efficiency (e.g., disk scheduling algorithms).\n2. **Buffering**: Storing data temporarily in memory while transferring between devices to handle speed mismatches.\n3. **Caching**: Storing frequently accessed data in fast memory to speed up performance.\n4. **Spooling**: Queuing output for a shared device (e.g., printer spooling).\n5. **Error Handling & Protection**: Managing I/O hardware faults and securing device access.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: STORAGE MANAGEMENT"
+        },
+        {
+            "question_number": "28. a.",
+            "question_text": "With neat flowchart, explain interrupt processing system.",
+            "marks": 12,
+            "answer": "### Interrupt Processing System:\n\nWhen a device generates an interrupt signal, the CPU temporarily suspends execution of the current program and processes the interrupt via an Interrupt Service Routine (ISR).\n\n#### Steps in Interrupt Handling:\n1. **Interrupt Generation**: A hardware device or software instruction issues an interrupt request to the CPU via interrupt control lines.\n2. **Complete Current Instruction**: CPU completes execution of the currently running instruction.\n3. **Acknowledge Interrupt**: CPU sends an interrupt acknowledgment signal.\n4. **Save Context**: Current execution context (Program Counter $PC$, status register, and CPU registers) is saved onto the system stack.\n5. **Locate ISR**: Program Counter ($PC$) is loaded with the starting address of the corresponding ISR from the interrupt vector table.\n6. **Execute ISR**: The CPU executes the ISR to handle the specific interrupt event.\n7. **Restore Context**: Upon execution of return instruction (e.g., `IRET`), CPU pops saved context back into registers.\n8. **Resume Execution**: Execution resumes from where the original program was interrupted.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Computer-System Organization"
+        },
+        {
+            "question_number": "28. b.",
+            "question_text": "Describe the following techniques for I/O operations\n(i) Programmed I/O\n(ii) Interrupt driven I/O\n(iii) DMA",
+            "marks": 12,
+            "answer": "### Techniques for I/O Operations:\n\n#### (i) Programmed I/O:\n- The CPU directly controls the I/O operation and continuously polls device status registers to check if data transfers are complete (busy-waiting).\n- **Drawback**: Wastes significant CPU processor time while polling slow external devices.\n\n#### (ii) Interrupt Driven I/O:\n- Eliminates CPU polling. CPU issues I/O command to device controller and continues executing other instructions.\n- When the device is ready to transfer data, it generates a hardware **interrupt signal** to notify the CPU.\n- The CPU executes the interrupt service routine to transfer data and then returns to main task.\n- **Advantage**: More efficient than programmed I/O, though CPU is still involved in moving data word-by-word.\n\n#### (iii) Direct Memory Access (DMA):\n- Used for high-speed data transfer between memory and I/O devices without continuous CPU intervention.\n- A dedicated **DMA Controller** takes over system buses to transfer entire blocks of data directly between storage device and main memory.\n- The CPU generates block parameters (source, destination, block count) to DMA, which raises a single interrupt only after the entire block transfer completes.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Computer-System Organization"
+        },
+        {
+            "question_number": "29. a.",
+            "question_text": "Explain process state with suspended states. Write the reasons for all possible state transitions.",
+            "marks": 12,
+            "answer": "### Extended Process State Transition Model (7-State Model):\n\nProcesses transition through distinct states during life cycle:\n1. **New**: Process being created.\n2. **Ready**: Process in main memory, ready to execute.\n3. **Running**: Process instructions being executed on CPU.\n4. **Waiting / Blocked**: Process waiting for an event (e.g., I/O completion).\n5. **Terminated**: Process finished execution.\n6. **Ready / Suspend**: Process in secondary memory (swapped out), ready to execute once loaded into main memory.\n7. **Blocked / Suspend**: Process in secondary memory, waiting for an event.\n\n### Reasons for State Transitions:\n- **Null $\\rightarrow$ New**: Process created to perform job.\n- **New $\\rightarrow$ Ready**: OS admits process to main memory ready queue.\n- **Ready $\\rightarrow$ Running**: OS Scheduler dispatches process to CPU.\n- **Running $\\rightarrow$ Ready**: Time quantum expires (in Round Robin) or higher priority process preempts current process.\n- **Running $\\rightarrow$ Blocked**: Process requests I/O or waits for resource/event.\n- **Blocked $\\rightarrow$ Ready**: Requested I/O operation completes or event occurs.\n- **Running $\\rightarrow$ Terminated**: Process completes or exits due to unhandled error.\n- **Blocked $\\rightarrow$ Blocked/Suspend**: Memory full; OS swaps blocked process to disk.\n- **Blocked/Suspend $\\rightarrow$ Ready/Suspend**: Event/IO occurs while process is still on disk.\n- **Ready/Suspend $\\rightarrow$ Ready**: Swapped back to main memory when space becomes available.\n- **Ready $\\rightarrow$ Ready/Suspend**: OS swaps out ready process to free main memory.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: PROCESS MANAGEMENT"
+        },
+        {
+            "question_number": "29. b.",
+            "question_text": "Discuss different categories of threads with diagrams.",
+            "marks": 12,
+            "answer": "### Categories of Threads:\n\nThreads are lightweight processes divided into two primary categories based on management layer:\n\n#### 1. User-Level Threads (ULT):\n- Managed entirely by a user-space thread library without kernel awareness.\n- **Advantages**: Fast creation, context switching without kernel mode switch; highly portable.\n- **Disadvantages**: A blocking system call by one thread blocks the entire process; cannot exploit multi-core systems natively.\n\n#### 2. Kernel-Level Threads (KLT):\n- Managed directly by the operating system kernel.\n- **Advantages**: If one thread blocks, OS can schedule another thread from same process; fully supports multi-core parallelism.\n- **Disadvantages**: Context switching requires kernel mode transitions, incurring performance overhead.\n\n### Multithreading Models:\n- **Many-to-One Model**: Maps many ULTs to a single KLT.\n- **One-to-One Model**: Maps each ULT to a distinct KLT.\n- **Many-to-Many Model**: Multiplexes many ULTs to an equal or lesser number of KLTs.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: PROCESS MANAGEMENT"
+        },
+        {
+            "question_number": "30. a.",
+            "question_text": "Consider from the following table the arrival time and burst time for three process $P_0$, $P_1$ and $P_2$\n\n| Process | Arrival time | Burst time |\n|---|---|---|\n| $P_0$ | 0 ms | 9 ms |\n| $P_1$ | 1 ms | 4 ms |\n| $P_2$ | 2 ms | 9 ms |\n\nFind the average waiting time for the above processes if\n(i) FCFS scheduling is used\n(ii) SJF scheduling is used\n(iii) Round robin scheduling is used (Time quantum is 3)",
+            "marks": 12,
+            "answer": "### Calculation of Waiting Times:\n\n#### (i) First-Come, First-Served (FCFS):\nExecution schedule (Gantt Chart):\n- $P_0$ runs from $0$ to $9$ ms\n- $P_1$ runs from $9$ to $13$ ms\n- $P_2$ runs from $13$ to $22$ ms\n\nWaiting times:\n- $WT(P_0) = 0 - 0 = 0\\text{ ms}$\n- $WT(P_1) = 9 - 1 = 8\\text{ ms}$\n- $WT(P_2) = 13 - 2 = 11\\text{ ms}$\n\n**Average Waiting Time (FCFS)** $= \\frac{0 + 8 + 11}{3} = \\frac{19}{3} = 6.33\\text{ ms}$\n\n---\n\n#### (ii) Shortest Job First (SJF - Non-Preemptive):\n- At $t=0$, only $P_0$ is present. $P_0$ runs from $0$ to $9$ ms.\n- At $t=9$, both $P_1$ (Burst=4) and $P_2$ (Burst=9) have arrived. $P_1$ is selected next.\n- $P_1$ runs from $9$ to $13$ ms.\n- $P_2$ runs from $13$ to $22$ ms.\n\nWaiting times:\n- $WT(P_0) = 0\\text{ ms}$\n- $WT(P_1) = 9 - 1 = 8\\text{ ms}$\n- $WT(P_2) = 13 - 2 = 11\\text{ ms}$\n\n**Average Waiting Time (SJF Non-preemptive)** $= \\frac{0 + 8 + 11}{3} = 6.33\\text{ ms}$\n\n*(Note: If Preemptive SJF / SRTF is used, $P_0$ runs from $0-1$, $P_1$ preempts and runs $1-5$, $P_0$ resumes $5-13$, $P_2$ runs $13-22$. Average WT = $\\frac{4 + 0 + 11}{3} = 5.0\\text{ ms}$)*\n\n---\n\n#### (iii) Round Robin (RR, Time Quantum = 3):\nExecution execution path:\n- $0-3\\text{ ms}$: $P_0$ executes (Rem: 6). Queue: $P_1, P_2, P_0$\n- $3-6\\text{ ms}$: $P_1$ executes (Rem: 1). Queue: $P_2, P_0, P_1$\n- $6-9\\text{ ms}$: $P_2$ executes (Rem: 6). Queue: $P_0, P_1, P_2$\n- $9-12\\text{ ms}$: $P_0$ executes (Rem: 3). Queue: $P_1, P_2, P_0$\n- $12-13\\text{ ms}$: $P_1$ executes and completes at $t=13$. Queue: $P_2, P_0$\n- $13-16\\text{ ms}$: $P_2$ executes (Rem: 3). Queue: $P_0, P_2$\n- $16-19\\text{ ms}$: $P_0$ executes and completes at $t=19$. Queue: $P_2$\n- $19-22\\text{ ms}$: $P_2$ executes and completes at $t=22$.\n\nTurnaround Times ($TAT = \\text{Finish} - \\text{Arrival}$):\n- $TAT(P_0) = 19 - 0 = 19\\text{ ms}$\n- $TAT(P_1) = 13 - 1 = 12\\text{ ms}$\n- $TAT(P_2) = 22 - 2 = 20\\text{ ms}$\n\nWaiting Times ($WT = TAT - \\text{Burst Time}$):\n- $WT(P_0) = 19 - 9 = 10\\text{ ms}$\n- $WT(P_1) = 12 - 4 = 8\\text{ ms}$\n- $WT(P_2) = 20 - 9 = 11\\text{ ms}$\n\n**Average Waiting Time (RR)** $= \\frac{10 + 8 + 11}{3} = \\frac{29}{3} = 9.67\\text{ ms}$",
+            "answer_source": "generated",
+            "chapter": "Unit 3: CPU Scheduling"
+        },
+        {
+            "question_number": "30. b.",
+            "question_text": "Write and explain bankers algorithm for deadlock avoidance.",
+            "marks": 12,
+            "answer": "### Banker's Algorithm for Deadlock Avoidance:\n\nBanker's algorithm tests for safety by simulating allocation for predetermined maximum possible amounts of all resources before deciding whether allocation should be granted.\n\n#### Data Structures:\nLet $n$ be the number of processes and $m$ be the number of resource types:\n- **`Available[m]`**: Vector indicating available count of each resource type.\n- **`Max[n][m]`**: Maximum demand of each process.\n- **`Allocation[n][m]`**: Currently allocated resources for each process.\n- **`Need[n][m]`**: Remaining resource need of each process ($Need[i][j] = Max[i][j] - Allocation[i][j]$).\n\n#### 1. Safety Algorithm:\n1. Initialize $Work = Available$ and $Finish[i] = \\text{False}$ for $i = 0, 1, \\dots, n-1$.\n2. Find an index $i$ such that both:\n   - $Finish[i] == \\text{False}$\n   - $Need[i] \\le Work$\n   If no such $i$ exists, go to Step 4.\n3. $Work = Work + Allocation[i]$\n   $Finish[i] = \\text{True}$\n   Go back to Step 2.\n4. If $Finish[i] == \\text{True}$ for all $i$, then the system is in a **safe state**.\n\n#### 2. Resource-Request Algorithm:\nWhen process $P_i$ requests vector $Request_i$:\n1. If $Request_i \\le Need_i$, go to Step 2; else error (exceeded claim).\n2. If $Request_i \\le Available$, go to Step 3; else $P_i$ must wait.\n3. Pretend to allocate requested resources:\n   - $Available = Available - Request_i$\n   - $Allocation_i = Allocation_i + Request_i$\n   - $Need_i = Need_i - Request_i$\n4. Run Safety Algorithm on modified state. If safe, grant resources; else $P_i$ waits and restore old state.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Deadlocks"
+        },
+        {
+            "question_number": "31. a.",
+            "question_text": "Explain the virtual address translation in paging system.",
+            "marks": 12,
+            "answer": "### Virtual Address Translation in Paging System:\n\nPaging allows physical address space of a process to be non-contiguous. The hardware converts virtual (logical) addresses generated by the CPU into physical addresses in main memory.\n\n#### Address Structure:\n- **Logical Address**: Consists of two components:\n  - **Page Number ($p$)**: Used as an index into a Page Table.\n  - **Page Offset ($d$)**: Offset within the page/frame.\n\n#### Translation Steps:\n1. CPU generates a logical address $(p, d)$.\n2. The MMU (Memory Management Unit) extracts page number $p$ and looks up entry $p$ in the process's **Page Table**.\n3. The Page Table entry yields physical **Frame Number ($f$)** corresponding to page $p$.\n4. **Physical Address Calculation**: The physical frame number $f$ is combined with offset $d$ to produce physical address $(f, d)$.\n5. Main memory access is performed at address $f \\times \\text{Frame Size} + d$.\n\n#### Hardware Accelerators:\n- **Translation Lookaside Buffer (TLB)**: A high-speed associative hardware cache that stores recent virtual-to-physical address mappings to avoid extra memory references per lookup.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: MEMORY MANAGEMENT"
+        }
+    ]
+}

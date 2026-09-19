@@ -1,0 +1,183 @@
+{
+    "formal_filename": "CLA-1_2026-03-05_Set-A.json",
+    "paper_title": "SRM Institute of Science and Technology, Ramapuram - Continuous Learning Assessment - 1 - 21CSC202J OPERATING SYSTEMS (Regulations 2021)",
+    "source": "CLA-1 Set A",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "Define the primary role of an Operating System.\nA) Designing hardware\nB) Managing computer resources\nC) Writing application programs\nD) Performing compilation",
+            "marks": 1,
+            "answer": "B) Managing computer resources\n\n**Rationale:** The primary role of an operating system (OS) is to act as an intermediary between user application software and physical hardware, allocating and managing system resources such as CPU time, memory, file storage, and I/O devices efficiently and safely.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction, Computer-System Organization"
+        },
+        {
+            "question_number": "2",
+            "question_text": "Recall which component acts as the core of the Operating System.\nA) Shell\nB) Kernel\nC) Compiler\nD) Loader",
+            "marks": 1,
+            "answer": "B) Kernel\n\n**Rationale:** The kernel is the essential central core of an operating system that resides permanently in memory. It directly controls hardware resources, process management, memory management, and low-level system operations.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Operating-System Structure"
+        },
+        {
+            "question_number": "3",
+            "question_text": "List the type of Operating System that allows multiple programs to run simultaneously.\nA) Batch OS\nB) Multiprogramming OS\nC) Single-user OS\nD) Distributed OS",
+            "marks": 1,
+            "answer": "B) Multiprogramming OS\n\n**Rationale:** A multiprogramming operating system keeps several jobs/programs in main memory simultaneously so that the CPU always has one program to execute, maximizing CPU utilization.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction, Computer-System Organization"
+        },
+        {
+            "question_number": "4",
+            "question_text": "Select the correct example of a system call.\nA) printf()\nB) fork()\nC) main()\nD) scanf()",
+            "marks": 1,
+            "answer": "B) fork()\n\n**Rationale:** `fork()` is a POSIX system call used to create a new process by duplicating the calling process. `printf()` and `scanf()` are C standard library functions, and `main()` is the user entry point.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: System Calls"
+        },
+        {
+            "question_number": "5",
+            "question_text": "Choose the structure where different OS services are implemented as separate processes.\nA) Monolithic structure\nB) Layered structure\nC) Microkernel structure\nD) Batch structure",
+            "marks": 1,
+            "answer": "C) Microkernel structure\n\n**Rationale:** In a microkernel architecture, the core operating system is kept minimal, while non-essential OS services (like file systems and device drivers) run as separate user-space processes (servers) communicating via interprocess communication (IPC).",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Operating-System Structure"
+        },
+        {
+            "question_number": "6",
+            "question_text": "Explain which synchronization mechanism can ensure mutual exclusion while avoiding busy waiting and justify your choice.\nA) Spinlock\nB) Blocking semaphore\nC) Shared memory\nD) Pipe",
+            "marks": 1,
+            "answer": "B) Blocking semaphore\n\n**Rationale:** A blocking semaphore puts a process to sleep (moves it to a waiting queue) when a resource is unavailable, rather than continuously polling in a loop (busy waiting) like a spinlock, thereby conserving CPU resources.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Process Synchronization"
+        },
+        {
+            "question_number": "7",
+            "question_text": "Interpret which synchronization solution satisfies mutual exclusion, progress, and bounded waiting for two processes.\nA) Peterson's solution\nB) Pipe\nC) Message queue\nD) Context switching",
+            "marks": 1,
+            "answer": "A) Peterson's solution\n\n**Rationale:** Peterson's algorithm is a classic software-based solution for two processes that correctly guarantees all three critical section requirements: Mutual Exclusion, Progress, and Bounded Waiting.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Peterson's Solution"
+        },
+        {
+            "question_number": "8",
+            "question_text": "Relate the appropriate IPC mechanism to a situation where processes must exchange data without a common memory region.\nA) Shared memory\nB) Message passing\nC) Mutex\nD) Monitor",
+            "marks": 1,
+            "answer": "B) Message passing\n\n**Rationale:** Message passing allows processes to communicate and synchronize actions through OS kernel primitives (`send` and `receive`) without requiring a shared address space, making it ideal for distributed or isolated systems.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Interprocess Communication"
+        },
+        {
+            "question_number": "9",
+            "question_text": "Infer why the many-to-one threading model limits system performance.\nA) High overhead\nB) No parallelism\nC) More CPU use\nD) Large memory",
+            "marks": 1,
+            "answer": "B) No parallelism\n\n**Rationale:** In the many-to-one model, multiple user-level threads map to a single kernel thread. Since the kernel is aware of only one thread, if one thread makes a blocking system call, the entire process blocks, and threads cannot run in parallel on multicore systems.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Multithreading Models"
+        },
+        {
+            "question_number": "10",
+            "question_text": "Summarize the main synchronization issue illustrated by the Dining Philosophers problem.\nA) Starvation only\nB) Deadlock risk\nC) Scheduling error\nD) Memory leak",
+            "marks": 1,
+            "answer": "B) Deadlock risk\n\n**Rationale:** The classic Dining Philosophers problem primary illustrates the potential for deadlock (e.g., when all philosophers pick up their left chopstick concurrently and wait indefinitely for the right chopstick) along with starvation.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Classic Problems of Synchronization"
+        },
+        {
+            "question_number": "11(i)",
+            "question_text": "Develop a scenario to explain how Operating-System services assist in executing an application program with example.",
+            "marks": 4,
+            "answer": "### Operating-System Services in Application Execution\n\nAn Operating System provides an environment for execution of programs by delivering specific services:\n\n1. **Program Execution:** Loads binary instructions into memory, sets up the execution context (stack, heap, CPU registers), allocates resources, and starts execution.\n2. **I/O Operations:** Provides unified abstractions and drivers for accessing peripheral devices (disks, screens, keyboards).\n3. **File System Manipulation:** Grants access mechanisms to create, read, write, and delete files.\n4. **Resource Allocation & Error Detection:** Dynamically assigns CPU, RAM, and I/O bandwidth while handling runtime exceptions (e.g., divide-by-zero, page faults).\n\n#### Real-world Scenario / Example:\nConsider running a text editor application (e.g., `gedit` or `notepad`):\n* **Loading:** The user double-clicks the application icon. The OS program-loader reads the executable file from disk into RAM and creates a user process.\n* **I/O Interaction:** When the user types text, keyboard interrupts are processed by the OS and passed to the text editor.\n* **Saving File:** When clicking 'Save', the application issues a write system call (e.g., `write()`). The OS verifies user write privileges, manages disk block allocation, writes data safely, and returns control back to the application.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Operating-System Services"
+        },
+        {
+            "question_number": "11(ii)",
+            "question_text": "Explain the process concept and describe the various states in the process life cycle.",
+            "marks": 4,
+            "answer": "### Process Concept\nA **process** is a program in execution. While a program is a passive entity stored on disk (an executable file), a process is an active entity with program counter, stack, data section, heap, and associated system resources.\n\n### Process Life Cycle States\nDuring execution, a process moves through several distinct states:\n\n1. **New:** The process is being created.\n2. **Ready:** The process is waiting to be assigned to a processor by the CPU scheduler.\n3. **Running:** Instructions are currently being executed by the CPU core.\n4. **Waiting (Blocked):** The process is waiting for an event to occur (such as completion of an I/O operation or reception of a signal).\n5. **Terminated:** The process has finished execution and its context is being reaped by the OS.\n\n```\n [New] ---> (Admitted) ---> [Ready] <--- (Timeout/Preempt) ---> [Running] ---> (Exit) ---> [Terminated]\n                              ^                                     |\n                              |---- (I/O Completion) --- [Waiting] <-|\n                                                         (I/O Request)\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Process Concept"
+        },
+        {
+            "question_number": "12(i)",
+            "question_text": "Examine the relationship between CPU, memory, and I/O devices in Computer-System Organization.",
+            "marks": 3,
+            "answer": "### Relationship Between CPU, Memory, and I/O Devices\n\n1. **Shared Bus Architecture:** CPU, memory modules, and I/O controllers connect via a system bus (data, address, and control lines) allowing concurrent access to memory.\n2. **Direct Memory Access (DMA):** High-speed I/O devices use DMA controllers to transfer data directly to and from main memory without continuous CPU intervention, raising CPU efficiency.\n3. **Interrupt Mechanism:** Devices send interrupt signals to the CPU via the control bus upon completing I/O operations, signaling CPU to execute an Interrupt Service Routine (ISR) and process device data from memory.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Computer-System Organization"
+        },
+        {
+            "question_number": "12(ii)",
+            "question_text": "Use the concept of Client-Server Communication to explain how a client requests services from a server process.",
+            "marks": 5,
+            "answer": "### Client-Server Communication Concept\nIn a Client-Server architecture, separate processes interact over a network or local IPC channels:\n* **Client:** A process that initiates requests for resources or services.\n* **Server:** A process that passively waits for incoming client requests, processes them, and returns results.\n\n### Communication Flow & Mechanisms:\n1. **Sockets:** A socket is defined as an endpoint for communication, identified by an IP address and port number (e.g., `192.168.1.10:80`).\n   - **Step 1:** Server creates a socket, binds it to a specific port, and issues a `listen()` call.\n   - **Step 2:** Client creates a socket and issues a `connect()` request to the server's endpoint.\n   - **Step 3:** Server accepts connection (`accept()`) and handles the client request.\n2. **Remote Procedure Calls (RPC):** Enables a client to invoke a execution procedure on a remote server as if it were a local function call using stubs to handle data marshaling.\n\n```\n Client Process                     Server Process\n [Socket / Stub]                     [Socket / Stub]\n       |                                   |\n       |---- Connect / Send Request ------>|  (Processes Request)\n       |<--- Response / Execution Result --|\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Communication in Client– Server Systems"
+        },
+        {
+            "question_number": "13(i)",
+            "question_text": "Apply the concept of System Boot to explain how the operating system is loaded into memory during startup.",
+            "marks": 5,
+            "answer": "### System Boot Process\n\n**System Booting** is the procedure of loading and initializing the operating system kernel into main memory when computer hardware is powered on or reset.\n\n### Step-by-Step Execution Sequence:\n\n1. **Power-On & Firmware Execution (BIOS/UEFI):**\n   - Non-volatile ROM contains initial bootstrap code (BIOS or UEFI).\n   - Performs **POST** (Power-On Self-Test) to verify hardware components like RAM, CPU, keyboard, and disk controllers.\n\n2. **Bootstrap Loader Stage:**\n   - BIOS/UEFI scans configured boot order (SSD, HDD, USB) to locate the **Master Boot Record (MBR)** or **EFI System Partition (ESP)**.\n   - Reads the primary boot loader (e.g., GRUB) into RAM.\n\n3. **Kernel Loading:**\n   - The boot loader locates the OS kernel image file (e.g., `vmlinuz`), loads it into RAM, along with essential system drivers (e.g., `initrd`/`initramfs`).\n\n4. **Kernel Initialization & Service Start:**\n   - Executable execution control transfers to the OS kernel.\n   - Kernel sets up page tables, hardware devices, initial execution threads, and launches the first system user-space process (e.g., `init` or `systemd`, PID 1).\n   - System transitions to normal operation mode (User Interface / Login shell).",
+            "answer_source": "generated",
+            "chapter": "Unit 1: System Boot"
+        },
+        {
+            "question_number": "13(ii)",
+            "question_text": "Distinguish between user mode and kernel mode operations while executing System Calls.",
+            "marks": 3,
+            "answer": "### Dual-Mode Operation and System Calls\n\n| Feature | User Mode (Mode bit = 1) | Kernel Mode (Mode bit = 0) |\n| :--- | :--- | :--- |\n| **Privilege Level** | Unprivileged; direct access to hardware or system memory is restricted. | Fully privileged; unrestricted access to system memory and hardware instructions. |\n| **Execution Scope** | User application code runs here safely isolated from hardware. | OS Kernel code, device drivers, and system routines execute here. |\n| **Transition Mechanism** | Invokes a **system call** (via trap/software interrupt), changing mode bit from 1 to 0. | System call executes; upon return, mode bit changes back from 0 to 1. |",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Operating-System Operations"
+        },
+        {
+            "question_number": "14(i)",
+            "question_text": "Analyze how Interprocess Communication (IPC) mechanisms help in data exchange between processes and compare shared memory with message passing.",
+            "marks": 3,
+            "answer": "### Role of IPC Mechanisms\nInterprocess Communication (IPC) provides operating system primitives that allow independent processes to communicate, exchange data, and coordinate their actions without causing data inconsistency.\n\n### Comparison: Shared Memory vs. Message Passing\n\n| Attribute | Shared Memory | Message Passing |\n| :--- | :--- | :--- |\n| **Mechanism** | Region of memory mapped into address space of participating processes. | System calls (`send`, `receive`) mediated directly by kernel memory buffers. |\n| **Speed** | Extremely fast (memory speed; kernel intervention only during setup). | Slower (requires kernel system call intervention for every message). |\n| **Synchronization** | Must be explicitly managed by user processes (e.g., semaphores, mutexes). | Implicitly handled by kernel during transmission. |\n| **Suitability** | Ideal for sharing large volumes of data locally. | Ideal for smaller message payloads and distributed network models. |",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Interprocess Communication"
+        },
+        {
+            "question_number": "14(ii)",
+            "question_text": "Explain the critical-section problem and discuss the requirements for its solution.",
+            "marks": 5,
+            "answer": "### Critical-Section Problem\nA **critical section** is a segment of code in a process that accesses shared memory or shared resources (such as global variables or files) that must not be concurrently accessed by other processes to prevent race conditions.\n\n### Requirements for Solution\nAny software or hardware solution to the critical-section problem must satisfy the following three fundamental requirements:\n\n1. **Mutual Exclusion:**\n   If process $P_i$ is executing in its critical section, then no other processes can be executing in their critical sections for that shared resource.\n\n2. **Progress:**\n   If no process is executing in its critical section and some processes wish to enter theirs, only those processes that are not executing in their remainder sections can participate in deciding which process will enter its critical section next. This selection cannot be postponed indefinitely.\n\n3. **Bounded Waiting:**\n   There must be a bound or limit on the number of times that other processes are allowed to enter their critical sections after a process has made a request to enter its critical section and before that request is granted, avoiding starvation.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: The Critical-Section Problem"
+        },
+        {
+            "question_number": "15(i)",
+            "question_text": "Define Operating-System Structure and list the different types of operating-system structures. Also, identify the main characteristics of each structure.",
+            "marks": 10,
+            "answer": "### Definition of Operating-System Structure\nAn **Operating System Structure** defines the internal architectural organization and layout of OS software modules, specifying how user programs, system services, kernel components, and hardware interfaces interact with one another.\n\n### Types of Operating-System Structures & Characteristics\n\n1. **Simple / Monolithic Structure:**\n   * **Characteristics:** No well-defined boundaries. Entire OS runs as a single large program in kernel mode (e.g., MS-DOS, early UNIX).\n   * **Advantages:** Fast execution because communication within modules occurs via direct function calls.\n   * **Disadvantages:** Difficult to maintain; a bug in any module can crash the entire system.\n\n2. **Layered Structure:**\n   * **Characteristics:** OS is divided into a number of layers (0 to $N$), where Layer 0 is hardware and Layer $N$ is user interface. Layer $M$ uses services of lower Layer $M-1$.\n   * **Advantages:** Modularity simplifies debugging and system verification.\n   * **Disadvantages:** Less efficient due to performance overhead of passing calls through multiple layers.\n\n3. **Microkernel Structure:**\n   * **Characteristics:** Removes non-essential components from kernel, running them as user-level services (e.g., Mach, QNX). Only essential IPC, minimal memory, and CPU scheduling remain in kernel.\n   * **Advantages:** Highly reliable, secure, and extensible.\n   * **Disadvantages:** Overhead due to increased inter-process communication context switching.\n\n4. **Modules / Loadable Kernel Modules (LKMs):**\n   * **Characteristics:** Core kernel provides fundamental functionality; additional features are loaded dynamically at runtime as object code modules (e.g., Linux, macOS drivers).\n   * **Advantages:** Flexible and memory-efficient.\n\n5. **Hybrid Systems:**\n   * **Characteristics:** Combines multiple structures (e.g., Monolithic core combined with Microkernel service structure like macOS, Windows NT).\n\n```\n+-------------------------------------------------------------+\n|                     User Applications                       |\n+-------------------------------------------------------------+\n| OS Interface / System Calls (POSIX, Win32 API)             |\n+-------------------------------------------------------------+\n| Monolithic / Layered / Microkernel Kernel Architecture       |\n+-------------------------------------------------------------+\n|                        Hardware                             |\n+-------------------------------------------------------------+\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Operating-System Structure"
+        },
+        {
+            "question_number": "15(ii)",
+            "question_text": "Analyze the concept of system calls and describe the different types of system calls with examples.",
+            "marks": 6,
+            "answer": "### Concept of System Calls\nA **system call** provides a programmatic interface to request execution of privileged services from the OS kernel. When an application calls a system call, CPU executes a trap software interrupt, switching execution from **User Mode** to **Kernel Mode**.\n\n### Major Types of System Calls with Examples\n\n1. **Process Control:**\n   - *Functions:* Process creation, termination, waiting, allocation of process attributes.\n   - *Examples:* `fork()`, `exec()`, `exit()`, `wait()` (UNIX); `CreateProcess()`, `ExitProcess()` (Windows).\n\n2. **File Management:**\n   - *Functions:* File creation, deletion, read, write, position pointer repositioning.\n   - *Examples:* `open()`, `read()`, `write()`, `close()` (UNIX); `CreateFile()`, `ReadFile()` (Windows).\n\n3. **Device Management:**\n   - *Functions:* Requesting device attach/detach, reading/writing device buffers.\n   - *Examples:* `ioctl()`, `read()`, `write()` (UNIX); `SetConsoleMode()` (Windows).\n\n4. **Information Maintenance:**\n   - *Functions:* Getting or setting time, date, process/system statistics.\n   - *Examples:* `getpid()`, `alarm()`, `time()` (UNIX); `GetSystemTime()` (Windows).\n\n5. **Communications:**\n   - *Functions:* Establishing socket connections, sending/receiving network messages.\n   - *Examples:* `socket()`, `bind()`, `send()`, `recv()` (UNIX).",
+            "answer_source": "generated",
+            "chapter": "Unit 1: System Calls"
+        },
+        {
+            "question_number": "16(i)",
+            "question_text": "Explain multithreading and describe the different multithreading models with its advantages and disadvantages.",
+            "marks": 8,
+            "answer": "### Multithreading Concept\nA **thread** is a basic unit of CPU utilization, comprising a thread ID, program counter, register set, and stack. **Multithreading** allows a single process to spawn multiple execution threads that share memory sections (code, data, OS resources).\n\n--- \n\n### Multithreading Models\n\n#### 1. Many-to-One Model\n* **Mapping:** Maps many user-level threads to a single kernel thread.\n* **Advantages:** High thread management efficiency since user-space library handles creation and scheduling without kernel traps.\n* **Disadvantages:** Entire process blocks if one thread issues a blocking system call; cannot run threads in parallel on multicore processors.\n\n#### 2. One-to-One Model\n* **Mapping:** Maps each user thread to its own dedicated kernel thread.\n* **Advantages:** Better concurrency; if a thread blocks, others continue executing. Provides real parallel processing on multicore CPUs.\n* **Disadvantages:** Overhead of creating a kernel thread for every user thread limits total allowed threads.\n\n#### 3. Many-to-Many Model\n* **Mapping:** Multiplexes many user-level threads onto a smaller or equal number of kernel threads.\n* **Advantages:** Flexible and scalable; kernel allocates appropriate parallel threads while user threads block independently without process stall.\n* **Disadvantages:** High implementation complexity in thread schedulers.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Multithreading Models"
+        },
+        {
+            "question_number": "16(ii)",
+            "question_text": "Describe the Dining Philosophers problem and summarize the issues involved in resource sharing.",
+            "marks": 8,
+            "answer": "### Dining Philosophers Problem\nThe **Dining Philosophers problem** is a classic synchronization bench problem illustrating challenges in allocating limited resources among multiple concurrent processes without deadlock or starvation.\n\n#### Problem Formulation:\n* 5 philosophers sit around a circular table with 5 chopsticks.\n* Each philosopher alternates between two states: **Thinking** and **Eating**.\n* To eat, a philosopher requires both the adjacent left and right chopsticks.\n* After eating, both chopsticks are released back to the table.\n\n```\n          P0\n       /      \\\n    C0          C1\n   /              \\\n P4                P1\n  |                |\n C4                C2\n   \\              /\n    P3 --- C3 --- P2\n```\n\n--- \n\n### Key Issues Involved in Resource Sharing\n\n1. **Deadlock Risk:**\n   * If all 5 philosophers simultaneously become hungry and grab their left chopsticks (`C0` for `P0`, `C1` for `P1`, etc.), all chopsticks are acquired.\n   * Every philosopher waits indefinitely for their right chopstick, resulting in a **circular wait** condition where system progress freezes permanently.\n\n2. **Starvation:**\n   * Poor resource scheduling policy can cause one or more philosophers to wait indefinitely for chopsticks while adjacent neighbors continually grab them.\n\n3. **Solutions / Countermeasures:**\n   * Allow maximum of 4 philosophers at the table simultaneously.\n   * Allow a philosopher to pick up chopsticks only if both are available (enclosed in a critical section).\n   * Asymmetric solution: Odd philosophers pick up left then right chopstick; even philosophers pick up right then left chopstick.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Classic Problems of Synchronization"
+        }
+    ]
+}

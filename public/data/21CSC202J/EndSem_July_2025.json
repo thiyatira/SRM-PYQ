@@ -1,0 +1,263 @@
+{
+    "formal_filename": "EndSem_July_2025.json",
+    "paper_title": "B.Tech/M.Tech (Integrated) DEGREE EXAMINATION, JULY 2025 - 21CSC202J - OPERATING SYSTEMS",
+    "source": "EndSem July 2025",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "Which among the following is the fastest among all the categories in a memory hierarchy\n(A) Main memory\n(B) L1 Cache memory\n(C) CPU registers\n(D) Secondary Memory",
+            "marks": 1,
+            "answer": "(C) CPU registers\n\nRationale: CPU registers reside directly inside the processor core and operate at the same speed as the CPU clock, making them the fastest storage location in the memory hierarchy.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Computer-System Organization"
+        },
+        {
+            "question_number": "2",
+            "question_text": "Device controller informs CPU that it has finished its operation by causing ______\n(A) Interrupt\n(B) Message\n(C) Information\n(D) Command",
+            "marks": 1,
+            "answer": "(A) Interrupt\n\nRationale: A device controller alerts the CPU that its I/O operation has completed by raising a hardware interrupt signal.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Computer-System Organization"
+        },
+        {
+            "question_number": "3",
+            "question_text": "Which among the following service is provided by Operating System to serve the user?\n(A) Resource Allocation\n(B) Protection and Security\n(C) Logging\n(D) File System Manipulation",
+            "marks": 1,
+            "answer": "(D) File System Manipulation\n\nRationale: File system manipulation (creating, reading, writing, deleting files) is an OS service designed directly to assist users and applications, whereas resource allocation, logging, and protection serve system maintenance and administrative functions.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Operating-System Services"
+        },
+        {
+            "question_number": "4",
+            "question_text": "In a multiprogramming system, what is the primary goal?\n(A) To ensure a single program runs faster\n(B) To maximize CPU utilization\n(C) To minimize user input\n(D) To provide an integrated development environment",
+            "marks": 1,
+            "answer": "(B) To maximize CPU utilization\n\nRationale: Multiprogramming organizes jobs so that the CPU always has one to execute, thereby keeping the CPU busy and maximizing utilization.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Operating-System Operations"
+        },
+        {
+            "question_number": "5",
+            "question_text": "The processes that are residing in main memory and are ready and waiting to execute are kept on a list called ______\n(A) job queue\n(B) ready queue\n(C) device queue\n(D) process queue",
+            "marks": 1,
+            "answer": "(B) ready queue\n\nRationale: Processes residing in main memory that are ready and waiting to be assigned to a CPU are stored in the ready queue.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Process Scheduling"
+        },
+        {
+            "question_number": "6",
+            "question_text": "Which of the following two operations are provided by the IPC facility?\n(A) write & delete message\n(B) delete & receive message\n(C) send & receive message\n(D) send & delete message",
+            "marks": 1,
+            "answer": "(C) send & receive message\n\nRationale: An interprocess communication (IPC) message-passing mechanism provides at minimum two primitives: send(message) and receive(message).",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Interprocess Communication"
+        },
+        {
+            "question_number": "7",
+            "question_text": "Which of the following schedulers is the fastest?\n(A) Medium Term Scheduler\n(B) Job Scheduler\n(C) Short Term Scheduler\n(D) Long term Scheduler",
+            "marks": 1,
+            "answer": "(C) Short Term Scheduler\n\nRationale: The short-term scheduler (CPU scheduler) runs extremely frequently (often every few milliseconds) to select from ready memory processes, so it must execute very quickly.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Process Scheduling"
+        },
+        {
+            "question_number": "8",
+            "question_text": "Each process identified and managed via a\n(A) Process Control Block\n(B) Process Identifier\n(C) Device Queue\n(D) Scheduling ID",
+            "marks": 1,
+            "answer": "(A) Process Control Block\n\nRationale: The operating system represents and manages each process using a data structure called the Process Control Block (PCB).",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Process Concept"
+        },
+        {
+            "question_number": "9",
+            "question_text": "What is the main difference between soft real-time systems and hard real-time systems?\n(A) Soft real-time systems can miss deadlines occasionally without severe consequences, whereas hard real-time systems must meet all deadlines.\n(B) Soft real-time systems guarantee that processes will be given preference over noncritical processes, whereas hard real-time systems guarantee deadline adherence.\n(C) Hard real-time systems provide no guarantee as to when a critical real-time process will be scheduled, while soft real-time systems guarantee deadline adherence.\n(D) Soft real-time systems and hard real-time systems have no significant differences in scheduling.",
+            "marks": 1,
+            "answer": "(A) Soft real-time systems can miss deadlines occasionally without severe consequences, whereas hard real-time systems must meet all deadlines.\n\nRationale: In hard real-time systems, failure to meet a deadline causes catastrophic failure, whereas soft real-time systems prioritize critical tasks but allow occasional missed deadlines without catastrophic system failure.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Real-Time CPU Scheduling"
+        },
+        {
+            "question_number": "10",
+            "question_text": "What does the term \"throughput\" mean in scheduling terms?\n(A) The number of processes completed per unit time\n(B) The amount of time the CPU is idle\n(C) The total time a process spends in the system\n(D) The total time taken from process submission to completion",
+            "marks": 1,
+            "answer": "(A) The number of processes completed per unit time\n\nRationale: Throughput is a scheduling metric defined as the number of processes that complete their execution per unit of time.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Scheduling Criteria"
+        },
+        {
+            "question_number": "11",
+            "question_text": "Regarding the Multilevel Queue Scheduling algorithm, which of the following is true?\n(A) Processes are permanently assigned to a queue\n(B) Each queue has its own scheduling algorithm\n(C) Processes can move between queues\n(D) Both a and b",
+            "marks": 1,
+            "answer": "(D) Both a and b\n\nRationale: In standard Multilevel Queue Scheduling, processes are permanently assigned to one queue upon entering the system, and each separate queue has its own scheduling algorithm. (Moving between queues occurs in Multilevel Feedback Queue Scheduling).",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Scheduling Algorithms"
+        },
+        {
+            "question_number": "12",
+            "question_text": "In the deadlock system model, what is meant by \"mutual exclusion\"?\n(A) Processes hold resources while waiting for additional resources.\n(B) Resources cannot be forcibly taken from processes holding them.\n(C) Only one process can use a resource at a time.\n(D) A circular chain of processes exists, each holding a resource the next process needs.",
+            "marks": 1,
+            "answer": "(C) Only one process can use a resource at a time.\n\nRationale: Mutual exclusion requires that at least one resource is held in a non-sharable mode, meaning only one process can access the resource at any given moment.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Deadlock Characterization"
+        },
+        {
+            "question_number": "13",
+            "question_text": "Which of the following page replacement algorithms suffers from Belady's anomaly?\n(A) FIFO\n(B) LRU\n(C) Optimal Page Replacement\n(D) Both LRU and FIFO",
+            "marks": 1,
+            "answer": "(A) FIFO\n\nRationale: First-In, First-Out (FIFO) page replacement exhibits Belady's anomaly, where increasing the number of allocated frame slots can lead to an increase in the number of page faults.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Page Replacement"
+        },
+        {
+            "question_number": "14",
+            "question_text": "Which of the following statements is false?\n(A) Virtual memory implements the translation of a program's address space into physical memory address space\n(B) Virtual memory reduces the degree of multiprogramming\n(C) Virtual memory allows each program to exceed the size of the primary memory\n(D) Virtual memory leads to/increases the context switching overhead",
+            "marks": 1,
+            "answer": "(B) Virtual memory reduces the degree of multiprogramming\n\nRationale: Statement (B) is false because virtual memory increases the degree of multiprogramming by requiring only portions of processes to be present in main memory at any one time.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Virtual Memory"
+        },
+        {
+            "question_number": "15",
+            "question_text": "Which of the following is/are the strengths of virtual memory segmentation techniques used in memory management.\ni) No internal fragmentation\nii) A higher degree of multiprogramming\niii) More efficient to use of main memory\niv) Large virtual address space\nv) Protection and sharing support\n(A) i, ii, iii and iv only\n(B) i, ii, iii and v only\n(C) i, ii, iv and v only\n(D) ii, iii, iv and v only",
+            "marks": 1,
+            "answer": "(B) i, ii, iii and v only\n\nRationale: Segmentation eliminates internal fragmentation (since segments are dynamically sized to fit logical modules), increases the degree of multiprogramming, promotes efficient memory utilization, and directly supports logical protection and sharing across processes.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Segmentation"
+        },
+        {
+            "question_number": "16",
+            "question_text": "Consider a machine with 64 MB physical memory and a 32-bit virtual address space. If the page size is 4KB, what is the approximate size of the page table?\n(A) 2 MB\n(B) 8 MB\n(C) 16 MB\n(D) 24 MB",
+            "marks": 1,
+            "answer": "(A) 2 MB\n\nRationale:\n1. Virtual Address Space = $2^{32}$ bytes = 4 GB.\n2. Page Size = $4\\text{ KB} = 2^{12}$ bytes.\n3. Number of Pages = $2^{32} / 2^{12} = 2^{20} = 1,048,576$ entries.\n4. Physical Memory = $64\\text{ MB} = 2^{26}$ bytes, giving $2^{26} / 2^{12} = 2^{14} = 16,384$ frames.\n5. To address $2^{14}$ frames, frame number requires 14 bits. With valid/dirty flags, 16 bits (2 bytes) per entry is sufficient.\n6. Page Table Size = $2^{20} \\text{ entries} \\times 2 \\text{ bytes} = 2 \\text{ MB}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Structure of the Page Table"
+        },
+        {
+            "question_number": "17",
+            "question_text": "For system protection, a process should access ______\n(A) all the resources\n(B) only those resources for which it has authorization\n(C) few resources but authorization is not required\n(D) all of the mentioned",
+            "marks": 1,
+            "answer": "(B) only those resources for which it has authorization\n\nRationale: According to the principle of least privilege and protection policies, a process must only access resources for which it holds explicit authorization.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Principles of Protection"
+        },
+        {
+            "question_number": "18",
+            "question_text": "Which one of the following is capability based protection system?\n(A) hydra\n(B) cambridge CAP system\n(C) both hydra and cambridge CAP system\n(D) none of the mentioned",
+            "marks": 1,
+            "answer": "(C) both hydra and cambridge CAP system\n\nRationale: Both Hydra and the Cambridge CAP system are classical operating systems designed around capability-based protection mechanisms.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Capability-Based Systems"
+        },
+        {
+            "question_number": "19",
+            "question_text": "Access matrix model for user authentication contains ______\n(A) a list of objects\n(B) a list of domains\n(C) a function which returns an object's type\n(D) All of the mentioned",
+            "marks": 1,
+            "answer": "(D) All of the mentioned\n\nRationale: The access matrix model incorporates domains (rows), objects (columns), and access rights/functions defining allowable operations on object types.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Access Matrix"
+        },
+        {
+            "question_number": "20",
+            "question_text": "The pattern that can be used to identify a virus is known as ______\n(A) stealth\n(B) virus signature\n(C) armoured\n(D) multipartite",
+            "marks": 1,
+            "answer": "(B) virus signature\n\nRationale: A virus signature is a specific sequence of bytes or pattern of code used by antivirus software to recognize and detect known malware.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Program Threats"
+        },
+        {
+            "question_number": "21. (a)",
+            "question_text": "Consider that you are a software developer working on an operating system project. You need to interact with the kernel to perform various tasks like reading from files, writing to files, creating processes, and managing memory. These interactions are done using system calls. You need to explain to a new team member what system calls are and describe the different types available in detail.",
+            "marks": 8,
+            "answer": "**System Calls:**\nA system call is a programmatic interface provided by the operating system kernel that allows user-level applications to request privileged services from the hardware/kernel.\n\n**Categories of System Calls:**\n1. **Process Control:** End, abort, load, execute, create process (`fork`), terminate process (`exit`), wait, allocate/free memory.\n2. **File Management:** Create, delete, open, close, read, write, reposition, get/set file attributes.\n3. **Device Management:** Request device, release device, read, write, reposition, logically attach or detach devices.\n4. **Information Maintenance:** Get/set system time or date, get/set system data, process/file/device attributes.\n5. **Communications:** Create/delete communication connections, send/receive messages, transfer status information.\n6. **Protection:** Control resource access, get/set permissions (`chmod`, `chown`).",
+            "answer_source": "generated",
+            "chapter": "Unit 1: System Calls"
+        },
+        {
+            "question_number": "21. (b)",
+            "question_text": "How could a system be designed to allow a choice of operating systems from which to boot? What would the bootstrap program need to do?",
+            "marks": 8,
+            "answer": "**Designing a Multi-Boot System:**\nTo support booting multiple operating systems, the system uses a boot loader installed in the Master Boot Record (MBR) or EFI System Partition (ESP).\n1. **Disk Partitioning:** The hard disk is partitioned into multiple sections, each holding a different OS and file system.\n2. **Boot Loader Selection Interface:** A primary boot loader (e.g., GRUB, rEFInd) presents a menu at startup allowing the user to select the desired OS.\n\n**Role of the Bootstrap Program:**\n1. **Initialization:** Runs firmware self-tests (POST) and initializes essential hardware (CPU, RAM, basic display).\n2. **Locating Bootloader:** Loads the bootloader code from the boot sector into RAM.\n3. **User Prompt & Configuration:** Displays an interactive menu to choose an operating system partition.\n4. **Loading the Kernel:** Loads the selected OS kernel image and initial RAM disk into memory.\n5. **Passing Control:** Passes execution control to the operating system kernel entry point.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: System Boot"
+        },
+        {
+            "question_number": "22. (a)",
+            "question_text": "Elaborate the actions taken by the kernel to context-switch between processes. Sketch the steps in CPU Switching From Process to Process.",
+            "marks": 8,
+            "answer": "**Context Switching Steps:**\nWhen switching CPU execution from process $P_0$ to process $P_1$:\n1. Interrupt or system call occurs, interrupting execution of $P_0$.\n2. Kernel saves the context (program counter, CPU registers, stack pointers, memory tables) of process $P_0$ into its Process Control Block ($PCB_0$).\n3. Kernel updates state in $PCB_0$ (e.g., from Running to Ready or Waiting).\n4. Kernel selects process $P_1$ from the ready queue using the scheduler.\n5. Kernel updates state in $PCB_1$ to Running.\n6. Kernel restores the saved context of process $P_1$ from $PCB_1$.\n7. CPU loads $P_1$'s instruction pointer and resumes execution of $P_1$.\n\n**Diagram of Context Switch:**\n```\nProcess P0                   Kernel                  Process P1\n   |                           |                         |\n   |--- Interrupt/Syscall ---->|                         |\n   |    (Save state to PCB0)   |                         |\n   |   [Executing Kernel]      |                         |\n   |                           |--(Restore state PCB1)-->|\n   |    Idle                   |                         |---> Executing\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Process Concept"
+        },
+        {
+            "question_number": "22. (b)",
+            "question_text": "Paraphrase the role of the kernel in an operating system and how it interacts with hardware and software.",
+            "marks": 8,
+            "answer": "**Role of the Kernel:**\nThe kernel is the core component of an operating system that runs at all times in privileged hardware mode (kernel mode). It acts as a bridge between application software and underlying hardware.\n\n**Interaction with Hardware:**\n1. Uses device drivers and interrupt handlers to issue commands to hardware controllers.\n2. Manages raw physical memory, CPU cycles, and disk blocks.\n3. Enforces hardware protection through dual-mode operation (kernel mode vs user mode).\n\n**Interaction with Software:**\n1. Exposes system calls to user programs for hardware access.\n2. Provides process creation, context switching, interprocess communication, and memory allocation.\n3. Isolates application programs to prevent one crashed software module from crashing the entire machine.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Process Management"
+        },
+        {
+            "question_number": "23. (a)",
+            "question_text": "Explain the concept of CPU scheduling and describe the criteria used to evaluate different CPU scheduling algorithms.",
+            "marks": 8,
+            "answer": "**Concept of CPU Scheduling:**\nCPU scheduling is the process by which the operating system decides which thread/process in the ready queue is allocated the CPU for execution, aiming to optimize throughput and response time.\n\n**Evaluation Criteria:**\n1. **CPU Utilization:** Keep the CPU as busy as possible (ideally 40% to 90%).\n2. **Throughput:** Number of processes completed per unit of time (maximize).\n3. **Turnaround Time:** Total interval from time of submission to time of completion (minimize).\n4. **Waiting Time:** Sum of periods spent waiting in the ready queue (minimize).\n5. **Response Time:** Time from submission until the first response is produced (minimize).",
+            "answer_source": "generated",
+            "chapter": "Unit 3: CPU Scheduling"
+        },
+        {
+            "question_number": "23. (b)",
+            "question_text": "Explain the necessary conditions for deadlock to occur and discuss the methods for deadlock prevention.",
+            "marks": 8,
+            "answer": "**Four Necessary Conditions for Deadlock:**\n1. **Mutual Exclusion:** At least one resource must be held in non-sharable mode.\n2. **Hold and Wait:** A process holding at least one resource is waiting to acquire additional resources held by other processes.\n3. **No Preemption:** Resources cannot be preempted; a resource can be released only voluntarily by the process holding it.\n4. **Circular Wait:** A closed loop chain of processes $P_0, P_1, \\dots, P_n$ exists such that $P_0$ waits for $P_1$, $P_1$ waits for $P_2$, ..., and $P_n$ waits for $P_0$.\n\n**Deadlock Prevention Methods:**\nPrevent deadlock by eliminating at least one condition:\n- **Prevent Mutual Exclusion:** Make resources sharable where possible (e.g., read-only files).\n- **Prevent Hold and Wait:** Require processes to request all needed resources at once before starting execution.\n- **Prevent No Preemption:** If a process requesting a resource must wait, preempt all currently held resources.\n- **Prevent Circular Wait:** Impose a total linear ordering on all resource types, requiring processes to request resources strictly in increasing order.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Deadlock Prevention"
+        },
+        {
+            "question_number": "24. (a)",
+            "question_text": "What are the different accessing methods of a file?",
+            "marks": 8,
+            "answer": "**File Access Methods:**\n1. **Sequential Access:**\n   - Information is processed in order, one record after another.\n   - Read operations advance internal pointer; write operations append at current end of file.\n   - Standard for tape drives and basic text files.\n2. **Direct (Random) Access:**\n   - File is viewed as a numbered sequence of blocks or records.\n   - Allows immediate access to any block/record in arbitrary order (`read n`, `write n`).\n   - Essential for database applications and disk drives.\n3. **Indexed Access:**\n   - Built on top of direct access using an index containing pointers to blocks.\n   - Searching index provides rapid access to target records without scanning the entire file.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Access Methods"
+        },
+        {
+            "question_number": "24. (b)",
+            "question_text": "Explain the role and significance of the LDT and GDT in memory segmentation and how they help in managing memory efficiently.",
+            "marks": 8,
+            "answer": "**Role and Significance of GDT and LDT:**\nIn x86 memory segmentation architecture:\n\n1. **Global Descriptor Table (GDT):**\n   - Contains system-wide segment descriptors accessible by all processes.\n   - Defines operating system code/data segments, stack, kernel data structures, and shared memory regions.\n\n2. **Local Descriptor Table (LDT):**\n   - Contains process-specific segment descriptors.\n   - Each process can have its own LDT defining private code, data, and stack segments.\n\n**Significance & Efficiency:**\n- **Isolation & Protection:** Private LDT entries prevent processes from illegally accessing memory ranges of other applications or the kernel.\n- **Flexible Memory Sharing:** Common entries placed in the GDT allow efficient zero-copy sharing of code libraries (e.g., libc) among processes.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Segmentation"
+        },
+        {
+            "question_number": "25. (a)",
+            "question_text": "Define and explain the different classifications of computer security.",
+            "marks": 8,
+            "answer": "**Classifications of Computer Security (TCSEC / Orange Book standard):**\n\n1. **Division D: Minimal Protection:** Systems that fail evaluation or provide no security mechanisms.\n2. **Division C: Discretionary Protection:**\n   - **C1 (Discretionary Security Protection):** Separates users and data; provides basic access control.\n   - **C2 (Controlled Access Protection):** Adds individual accountability through audit trails and object reuse protection.\n3. **Division B: Mandatory Protection:**\n   - **B1 (Labeled Security Protection):** Sensitivity labels enforced by mandatory access control (MAC).\n   - **B2 (Structured Protection):** System modularized; covert channel analysis conducted.\n   - **B3 (Security Domains):** Reference monitor enforced.\n4. **Division A: Verified Protection:**\n   - **A1 (Verified Design):** Highest level; formal mathematical verification of security design.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Computer-Security Classifications"
+        },
+        {
+            "question_number": "25. (b)",
+            "question_text": "Explain the concept of protection mechanism in operating systems and illustrate the use of protection domain and access control list with suitable examples.",
+            "marks": 8,
+            "answer": "**Protection Mechanism:**\nA mechanism specifies *how* protection is enforced (e.g., using hardware controls or tables), separating mechanism from policy (*what* is to be done).\n\n**Protection Domain:**\nA domain specifies a set of access rights (e.g., `<object-name, rights-set>`). A process executes within a domain at any given time.\n*Example:* User mode domain vs. Kernel mode domain.\n\n**Access Control List (ACL):**\nAn Access Control List attaches permissions directly to each object, specifying which domains/users possess what operations.\n*Example:* File `report.txt` has ACL:\n- `User_A`: Read, Write\n- `User_B`: Read\n- `Group_Admin`: Read, Write, Delete",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Access Control"
+        },
+        {
+            "question_number": "26",
+            "question_text": "Consider the following resource allocation graph.\n\n(a) Convert it to the matrix representation (i.e., Allocation, Request and Available). [5 Marks]\n(b) Do a step-by-step execution of the deadlock detection algorithm. For each step, add and remove the directed edges, and redraw the resource allocation graph. [7 Marks]\n(c) Is there a deadlock? If there is a deadlock, which processes are involved? [3 Marks]",
+            "marks": 15,
+            "answer": "**Solution:**\n\n**(a) Matrix Representation:**\n- Resources total: $R_1=2, R_2=2, R_3=1, R_4=1$.\n\n**Allocation Matrix:**\n$$\n\\begin{pmatrix}\n & R_1 & R_2 & R_3 & R_4 \\\\\nP_1 & 1 & 0 & 0 & 0 \\\\\nP_2 & 1 & 1 & 0 & 0 \\\\\nP_3 & 0 & 0 & 1 & 0 \\\\\nP_4 & 0 & 1 & 0 & 0 \\\\\nP_5 & 0 & 0 & 0 & 0\n\\end{pmatrix}\n$$\n\n**Request Matrix:**\n$$\n\\begin{pmatrix}\n & R_1 & R_2 & R_3 & R_4 \\\\\nP_1 & 0 & 1 & 0 & 0 \\\\\nP_2 & 0 & 0 & 1 & 0 \\\\\nP_3 & 0 & 0 & 1 & 0 \\\\\nP_4 & 0 & 0 & 1 & 0 \\\\\nP_5 & 0 & 0 & 0 & 1\n\\end{pmatrix}\n$$\n\n**Available Vector:**\n$$\n\\text{Available} = [0, 0, 0, 0]\n$$\n\n**(b) Execution of Deadlock Detection Algorithm:**\n1. Work = $[0, 0, 0, 0]$.\n2. Check processes with Request $\\le$ Work: No process $P_i$ satisfies Request $\\le$ Work because Available has 0 for all resource types.\n3. Since no process can finish execution, the state remains blocked.\n\n**(c) Deadlock Status:**\n- Yes, there is a deadlock.\n- Processes involved in deadlock: $P_1, P_2, P_3, P_4, P_5$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Deadlock Detection"
+        },
+        {
+            "question_number": "27",
+            "question_text": "Consider a disk queue with requests for I/O to blocks on cylinders\n93, 183, 37, 122, 14, 124, 65, 67\nIf the disk head is start at 53, then find out the total head movement with respect to\n(i) FCFS [3 Marks],\n(ii) SSTF [3 Marks],\n(iii) SCAN [3 Marks],\n(iv) C-SCAN [3 Marks] and\n(v) LOOK scheduling [3 Marks]",
+            "marks": 15,
+            "answer": "**Given:**\nQueue: 93, 183, 37, 122, 14, 124, 65, 67\nInitial head position = 53\nAssumed cylinder range: 0 to 199 (total 200 cylinders)\n\n**(i) FCFS:**\n- Order: 53 $\\rightarrow$ 93 $\\rightarrow$ 183 $\\rightarrow$ 37 $\\rightarrow$ 122 $\\rightarrow$ 14 $\\rightarrow$ 124 $\\rightarrow$ 65 $\\rightarrow$ 67\n- Head movements:\n  $|93 - 53| + |183 - 93| + |37 - 183| + |122 - 37| + |14 - 122| + |124 - 14| + |65 - 124| + |67 - 65|$\n  $= 40 + 90 + 146 + 85 + 108 + 110 + 59 + 2 = \\mathbf{640\\text{ cylinders}}$\n\n**(ii) SSTF:**\n- Order: 53 $\\rightarrow$ 65 $\\rightarrow$ 67 $\\rightarrow$ 37 $\\rightarrow$ 14 $\\rightarrow$ 93 $\\rightarrow$ 122 $\\rightarrow$ 124 $\\rightarrow$ 183\n- Head movements:\n  $(65-53) + (67-65) + (67-37) + (37-14) + (93-14) + (122-93) + (124-122) + (183-124)$\n  $= 12 + 2 + 30 + 23 + 79 + 29 + 2 + 59 = \\mathbf{236\\text{ cylinders}}$\n\n**(iii) SCAN (assuming movement towards cylinder 0 first):**\n- Order: 53 $\\rightarrow$ 37 $\\rightarrow$ 14 $\\rightarrow$ 0 $\\rightarrow$ 65 $\\rightarrow$ 67 $\\rightarrow$ 93 $\\rightarrow$ 122 $\\rightarrow$ 124 $\\rightarrow$ 183\n- Head movement: $(53 - 0) + (183 - 0) = 53 + 183 = \\mathbf{236\\text{ cylinders}}$\n\n**(iv) C-SCAN (assuming movement towards cylinder 199 first):**\n- Order: 53 $\\rightarrow$ 65 $\\rightarrow$ 67 $\\rightarrow$ 93 $\\rightarrow$ 122 $\\rightarrow$ 124 $\\rightarrow$ 183 $\\rightarrow$ 199 $\\rightarrow$ 0 $\\rightarrow$ 14 $\\rightarrow$ 37\n- Head movement: $(199 - 53) + (199 - 0) + (37 - 0) = 146 + 199 + 37 = \\mathbf{382\\text{ cylinders}}$\n\n**(v) LOOK (assuming movement towards cylinder 0 first):**\n- Order: 53 $\\rightarrow$ 37 $\\rightarrow$ 14 $\\rightarrow$ 65 $\\rightarrow$ 67 $\\rightarrow$ 93 $\\rightarrow$ 122 $\\rightarrow$ 124 $\\rightarrow$ 183\n- Head movement: $(53 - 14) + (183 - 14) = 39 + 169 = \\mathbf{208\\text{ cylinders}}$",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Disk Scheduling"
+        }
+    ]
+}
