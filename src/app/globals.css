@@ -126,3 +126,9 @@ pre code {
 .dark .token.variable {
   color: #f43f5e;
 }
+/* Long display equations scroll instead of overflowing their card on small screens. */
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+}
