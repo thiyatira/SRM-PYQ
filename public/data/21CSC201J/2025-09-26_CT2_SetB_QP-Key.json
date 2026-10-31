@@ -9,7 +9,7 @@
             "marks": 2,
             "answer": "D. 10 30\n\nExplanation:\nThe pointer starts at the head (10). Inside the loop, it prints the current node value (10), then jumps two steps ahead (`ptr <- ptr.next.next`), which moves it to 30. In the next iteration, it prints 30, and then jumps two steps ahead again (to NULL), terminating the loop.",
             "answer_source": "provided",
-            "chapter": "Unit-2 - List Structure"
+            "chapter": "Unit 2 - List Structure"
         },
         {
             "question_number": "2",
@@ -17,7 +17,7 @@
             "marks": 2,
             "answer": "Position 1\n\nExplanation:\nLet us trace the elimination step-by-step for n = 9, k = 3:\n- Initial circle: 1, 2, 3, 4, 5, 6, 7, 8, 9\n- 1st elimination (3rd person): 3 is eliminated. Remaining: 1, 2, 4, 5, 6, 7, 8, 9\n- 2nd elimination (6th person): 6 is eliminated. Remaining: 1, 2, 4, 5, 7, 8, 9\n- 3rd elimination (9th person): 9 is eliminated. Remaining: 1, 2, 4, 5, 7, 8\n- 4th elimination (3rd starting from 1 -> 4): 4 is eliminated. Remaining: 1, 2, 5, 7, 8\n- 5th elimination (3rd starting from 5 -> 8): 8 is eliminated. Remaining: 1, 2, 5, 7\n- 6th elimination (3rd starting from 1 -> 5): 5 is eliminated. Remaining: 1, 2, 7\n- 7th elimination (3rd starting from 7 -> 2): 2 is eliminated. Remaining: 1, 7\n- 8th elimination (3rd starting from 7 -> 7): 7 is eliminated. Only 1 remains as the survivor.",
             "answer_source": "provided",
-            "chapter": "Unit-2 - List Structure"
+            "chapter": "Unit 2 - List Structure"
         },
         {
             "question_number": "3",
@@ -25,7 +25,7 @@
             "marks": 2,
             "answer": "C. [10, 40, 25, 20]\n\nExplanation:\n- Initial state: `[10, 40, 30, 20, -]` (size = 4, capacity = 5)\n- Insert 25 at position 2 (0-based): Shift elements from position 2 to the right. The array becomes `[10, 40, 25, 30, 20]`.\n- Delete the element at the third position (0-based index 3, which is 30): Shift the elements after index 3 to the left. The array becomes `[10, 40, 25, 20]`.",
             "answer_source": "provided",
-            "chapter": "Unit-2 - List Structure"
+            "chapter": "Unit 2 - List Structure"
         },
         {
             "question_number": "4",
@@ -33,7 +33,7 @@
             "marks": 2,
             "answer": "A B C * D E F ^ / G * - H * +\n\nExplanation:\nFollowing the precedence and associativity of operators, we can convert the expression step-by-step:\n1. Solve highest precedence inner term: $D / E \\wedge F \\rightarrow D\\ E\\ F\\ \\wedge\\ /$\n2. Next: $(D / E \\wedge F) * G \\rightarrow D\\ E\\ F\\ \\wedge\\ /\\ G\\ *$\n3. Next: $B * C \\rightarrow B\\ C\\ *$\n4. Subtract the terms: $B * C - ((D / E \\wedge F) * G) \\rightarrow B\\ C\\ *\\ D\\ E\\ F\\ \\wedge\\ /\\ G\\ *\\ -$\n5. Multiply by H: $(\\dots) * H \\rightarrow B\\ C\\ *\\ D\\ E\\ F\\ \\wedge\\ /\\ G\\ *\\ -\\ H\\ *$\n6. Add to A: $A + (\\dots) \\rightarrow A\\ B\\ C\\ *\\ D\\ E\\ F\\ \\wedge\\ /\\ G\\ *\\ -\\ H\\ *\\ +$",
             "answer_source": "provided",
-            "chapter": "Unit-3 - Stack and Queue"
+            "chapter": "Unit 3 - Stack and Queue"
         },
         {
             "question_number": "5",
@@ -41,7 +41,7 @@
             "marks": 5,
             "answer": "```\nCountEvenElements(head)\nInput: head (pointer to the first node of the singly linked list)\nOutput: count of even integer elements\n\ncount = 0\nptr = head\n\nwhile ptr != NULL do\n    if (ptr.data % 2 == 0) then\n        count = count + 1\n    end if\n    ptr = ptr.next\nend while\n\nreturn count\n```",
             "answer_source": "provided",
-            "chapter": "Unit-2 - List Structure"
+            "chapter": "Unit 2 - List Structure"
         },
         {
             "question_number": "6",
@@ -49,7 +49,7 @@
             "marks": 5,
             "answer": "A. Step-by-step Execution:\n- Initial state: Front $\\rightarrow$ [P1, P2, P3, P4] $\\leftarrow$ Rear\n- **DeleteFront()**: Front $\\rightarrow$ [P2, P3, P4] $\\leftarrow$ Rear\n- **InsertRear(P5)**: Front $\\rightarrow$ [P2, P3, P4, P5] $\\leftarrow$ Rear\n- **InsertFront(P6)**: Front $\\rightarrow$ [P6, P2, P3, P4, P5] $\\leftarrow$ Rear\n- **DeleteRear()**: Front $\\rightarrow$ [P6, P2, P3, P4] $\\leftarrow$ Rear\n- **InsertRear(P7)**: Front $\\rightarrow$ [P6, P2, P3, P4, P7] $\\leftarrow$ Rear\n- **Final Deque**: Front $\\rightarrow$ [P6, P2, P3, P4, P7] $\\leftarrow$ Rear\n\nB. Pseudocode for circular-array based Deque operations:\n\n```\nInsertRear(x)\nif deque is full then\n    print \"Overflow\"\n    return\nend if\nrear <- (rear + 1) mod capacity\ndeque[rear] <- x\n\n```\n\n```\nDeleteFront()\nif deque is empty then\n    print \"Underflow\"\n    return NULL\nend if\nitem <- deque[front]\nif front = rear then\n    front <- -1\n    rear <- -1\nelse\n    front <- (front + 1) mod capacity\nend if\nreturn item\n```",
             "answer_source": "provided",
-            "chapter": "Unit-3 - Stack and Queue"
+            "chapter": "Unit 3 - Stack and Queue"
         },
         {
             "question_number": "7",
@@ -57,7 +57,7 @@
             "marks": 8,
             "answer": "1. Elimination Order (by rounds) for n = 20, k = 3:\n- **Round 1 (counting from 1)**: 3, 6, 9, 12, 15, 18. Remaining: 1, 2, 4, 5, 7, 8, 10, 11, 13, 14, 16, 17, 19, 20.\n- **Round 2 (continue from 19)**: 1, 5, 10, 14, 19. Remaining: 2, 4, 7, 8, 11, 13, 16, 17, 20.\n- **Round 3 (continue from 20)**: 4, 11, 17. Remaining: 2, 7, 8, 13, 16, 20.\n- **Round 4 (continue from 20)**: 7, 16. Remaining: 2, 8, 13, 20.\n- **Round 5 (continue from 20)**: 8. Remaining: 2, 13, 20.\n- **Round 6 (continue from 20)**: 2. Remaining: 13, 20.\n- **Round 7 (continue from 13)**: 13. Remaining: 20.\n- **Last remaining (winner)**: 20.\n- **Full elimination sequence**: 3, 6, 9, 12, 15, 18, 1, 5, 10, 14, 19, 4, 11, 17, 7, 16, 8, 2, 13, 20.\n- **Answer**: Friend number 20 is the survivor and gets the special gift.\n\n2. Elimination for n = 20, k = 4:\n- **Round 1 (counting from 1)**: 4, 8, 12, 16, 20. Remaining: 1, 2, 3, 5, 6, 7, 9, 10, 11, 13, 14, 15, 17, 18, 19.\n- **Round 2 (continue from 1)**: 5, 10, 15, 1, 7, 14, 2, 11, 19. Remaining: 3, 6, 9, 13, 17, 18.\n- **Round 3 (continue from 3)**: 13, 6, 3, 9. Remaining: 17, 18.\n- **Round 4**: 18 is eliminated. Remaining: 17.\n- **Full elimination sequence**: 4, 8, 12, 16, 20, 5, 10, 15, 1, 7, 14, 2, 11, 19, 13, 6, 3, 9, 18, 17.\n- **Answer**: Friend number 17 will receive the special gift when every 4th person is eliminated.\n\n3. Suggestion for modification:\nIf we want a specific friend, such as friend number 17, to win, we can design or change the elimination step $k$ accordingly. For example, if we change the elimination count to $k = 15$, the 17th place will get the gift. Alternatively, we can change the starting position of the elimination to ensure friend 7 ends up in the winning slot.",
             "answer_source": "provided",
-            "chapter": "Unit-2 - List Structure"
+            "chapter": "Unit 2 - List Structure"
         },
         {
             "question_number": "8",
@@ -65,7 +65,7 @@
             "marks": 8,
             "answer": "```c\nstruct Node {\n    int data;\n    struct Node* next;\n};\n\nstruct Node* CreateNode(int value) {\n    struct Node* node = (struct Node*)malloc(sizeof(struct Node));\n    node->data = value;\n    node->next = NULL;\n    return node;\n}\n\nstruct Node* MergeTwoLists(struct Node* l1, struct Node* l2) {\n    // Create a dummy node to simplify pointer operations\n    struct Node* dummy = CreateNode(0);\n    struct Node* tail = dummy;\n\n    while (l1 != NULL && l2 != NULL) {\n        if (l1->data <= l2->data) {\n            tail->next = l1;\n            l1 = l1->next;\n        } else {\n            tail->next = l2;\n            l2 = l2->next;\n        }\n        tail = tail->next;\n    }\n\n    // Attach the remaining nodes\n    if (l1 != NULL) {\n        tail->next = l1;\n    } else {\n        tail->next = l2;\n    }\n\n    struct Node* mergedHead = dummy->next;\n    free(dummy);\n    return mergedHead;\n}\n\nstruct Node* MergeKLists(struct Node* lists[], int k) {\n    if (k == 0) {\n        return NULL;\n    }\n    struct Node* result = lists[0];\n    for (int i = 1; i < k; i++) {\n        result = MergeTwoLists(result, lists[i]);\n    }\n    return result;\n}\n\n```\n\n### Example Illustration:\nLet $k = 3$ sorted lists of different sizes:\n- List 1: $1 \\rightarrow 5 \\rightarrow 7$\n- List 2: $2 \\rightarrow 4$\n- List 3: $3 \\rightarrow 8 \\rightarrow 9$\n\n**Step 1**: Merge List 1 and List 2 using `MergeTwoLists(List 1, List 2)`:\n- Result = $1 \\rightarrow 2 \\rightarrow 4 \\rightarrow 5 \\rightarrow 7$\n\n**Step 2**: Merge Result and List 3 using `MergeTwoLists(Result, List 3)`:\n- Final Sorted Merged List = $1 \\rightarrow 2 \\rightarrow 3 \\rightarrow 4 \\rightarrow 5 \\rightarrow 7 \\rightarrow 8 \\rightarrow 9$",
             "answer_source": "provided",
-            "chapter": "Unit-2 - List Structure"
+            "chapter": "Unit 2 - List Structure"
         },
         {
             "question_number": "9",
@@ -73,7 +73,7 @@
             "marks": 8,
             "answer": "(a) Triplet Representation:\nHeader: (4, 5, 5)\nValues:\n- (0, 2, 3)\n- (0, 4, 4)\n- (2, 0, 2)\n- (2, 4, 1)\n- (3, 1, 5)\n\n(b) Pseudocode:\n\n```python\ndef SparseToTriplet(mat, rows, cols):\n    # Initialize list of triplets\n    triplet_list = []\n    \n    # Count non-zero elements\n    count = 0\n    \n    # Scan matrix in row-major order\n    for i in range(rows):\n        for j in range(cols):\n            if mat[i][j] != 0:\n                triplet_list.append((i, j, mat[i][j]))\n                count += 1\n                \n    # Prepend header (rows, cols, count)\n    triplet_list.insert(0, (rows, cols, count))\n    \n    return triplet_list\n```",
             "answer_source": "provided",
-            "chapter": "Unit-2 - List Structure"
+            "chapter": "Unit 2 - List Structure"
         },
         {
             "question_number": "10",
@@ -81,7 +81,7 @@
             "marks": 8,
             "answer": "a) Pseudocode and Output for `TopAndPop()`:\n\n```\nTopAndPop(stack, top)\n{\n    if top < 0 then\n        print \"Stack Underflow\"\n        return NULL\n    end if\n    value <- stack[top]   // get top element\n    top <- top - 1        // remove it\n    return value\n}\n\n```\n\n- **Output**: 40\n- **Stack state after operation**: [10, 20, 30] (top points to index of 30, which is 2)\n\nb) Pseudocode and Output for `PopAndTop()`:\n\n```\nPopAndTop(stack, top)\n{\n    if top < 0 then\n        print \"Stack Underflow\"\n        return NULL\n    end if\n    top <- top - 1        // remove top element\n    if top < 0 then\n        print \"Stack is empty\"\n        return NULL\n    end if\n    return stack[top]     // return new top element\n}\n\n```\n\n- **Output**: 30 (new top after removing 40)\n- **Stack state after operation**: [10, 20, 30] (top points to index of 30, which is 2)\n\nc) Difference:\n- `TopAndPop()` returns the current top element of the stack (40) first, and then decrements the top pointer.\n- `PopAndTop()` decrements the top pointer first (essentially removing 40), and then returns whatever element has become the new top (30).",
             "answer_source": "provided",
-            "chapter": "Unit-3 - Stack and Queue"
+            "chapter": "Unit 3 - Stack and Queue"
         },
         {
             "question_number": "11",
@@ -89,7 +89,7 @@
             "marks": 8,
             "answer": "a. Step-by-step trace:\n\n| Symbol | Action | Stack (top on right) | Output |\n| :--- | :--- | :--- | :--- |\n| A | Operand $\\rightarrow$ add to output | [] | A |\n| + | Operator $\\rightarrow$ push | [+] | A |\n| B | Operand $\\rightarrow$ add to output | [+] | AB |\n| * | Higher precedence than top $\\rightarrow$ push | [+, *] | AB |\n| C | Operand $\\rightarrow$ add to output | [+, *] | ABC |\n| - | Pop * and + (same/higher precedence) $\\rightarrow$ push - | [-] | ABC*+ |\n| ( | Push '(' | [-, (] | ABC*+ |\n| D | Operand $\\rightarrow$ add to output | [-, (] | ABC*+D |\n| / | Operator $\\rightarrow$ push | [-, (, /] | ABC*+D |\n| E | Operand $\\rightarrow$ add to output | [-, (, /] | ABC*+DE |\n| ) | Pop until '(' $\\rightarrow$ pop / | [-] | ABC*+DE/ |\n| End | Pop remaining operators | [] | ABC*+DE/- |\n\nFinal Postfix Expression: ABC*+DE/-\n\nb. Pseudocode:\n\n```\nInfixToPostfix(infix)\n{\n    stack <- empty\n    output <- empty string\n    for each symbol in infix\n    {\n        if symbol is operand\n            output <- output + symbol\n        else if symbol is '('\n            push stack, '('\n        else if symbol is ')'\n            while top of stack != '('\n                output <- output + pop(stack)\n            end while\n            pop(stack) // remove '('\n        else // operator\n            while stack is not empty and precedence(top(stack)) >= precedence(symbol)\n                output <- output + pop(stack)\n            end while\n            push(stack, symbol)\n    }\n    while stack is not empty\n        output <- output + pop(stack)\n    end while\n    return output\n}\n```",
             "answer_source": "provided",
-            "chapter": "Unit-3 - Stack and Queue"
+            "chapter": "Unit 3 - Stack and Queue"
         },
         {
             "question_number": "12",
@@ -97,7 +97,7 @@
             "marks": 8,
             "answer": "### Call Stack and Activation Records:\nWhen a program calls a function, the compiler allocates a block of memory called an **activation record** (or **stack frame**) on top of the call stack. This record holds information necessary for the execution of the function, including:\n1. **Function Parameters**: Argument values passed to the function.\n2. **Return Address**: The memory address to return execution to once the current function completes.\n3. **Local Variables**: Variables defined within the scope of the function.\n4. **Saved Register State**: CPU registers saved to maintain state across calls.\n\nBecause function calls behave in a Last-In, First-Out (LIFO) manner (the last function called is the first to complete and return), a **Stack ADT** is uniquely suited for managing these activation records.\n\n### Working Illustration for Fib(7):\nConsider the standard recursive implementation of the Fibonacci function:\n\n```c\nint Fib(int n) {\n    if (n <= 1) return n;\n    return Fib(n-1) + Fib(n-2);\n}\n\n```\n\nWhen we execute `Fib(7)`, the compiler processes it recursively. The call stack builds up as follows:\n1. `Fib(7)` starts and calls `Fib(6)`. An activation record for `Fib(7)` is pushed to the bottom of the stack.\n2. `Fib(6)` starts and calls `Fib(5)`. Stack: `[Fib(7), Fib(6)]`\n3. `Fib(5)` starts and calls `Fib(4)`. Stack: `[Fib(7), Fib(6), Fib(5)]`\n4. This depth continues until a base case `Fib(1)` or `Fib(0)` is reached.\n5. Once the base case completes, its activation record is popped, returning its result (e.g., 1 or 0) to its caller. The caller then proceeds to evaluate its second recursive branch.\n6. For instance, after `Fib(2)` evaluates `Fib(1)` and `Fib(0)` and sums them to return 1, its stack frame is popped. \n7. Eventually, all sub-calls of `Fib(7)` are resolved, summed up LIFO-style, and the final value 13 is returned as the overall output, leaving the stack empty.",
             "answer_source": "provided",
-            "chapter": "Unit-3 - Stack and Queue"
+            "chapter": "Unit 3 - Stack and Queue"
         }
     ]
 }

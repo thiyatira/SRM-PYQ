@@ -157,7 +157,7 @@
         },
         {
             "question_number": "20",
-            "question_text": "In a binary max heap containing 'N' numbers, the smallest element can be found in time\n(A) \\theta (n)\n(B) \\theta (n log n)\n(C) \\theta (n log log n)\n(D) \\theta (1)",
+            "question_text": "In a binary max heap containing 'N' numbers, the smallest element can be found in time\n(A) $\\theta (n)$\n(B) $\\theta (n log n)$\n(C) $\\theta (n log log n)$\n(D) $\\theta (1)$",
             "marks": 1,
             "answer": "(A) \\theta (n). In a max-heap, the minimum element always resides in one of the leaf nodes. Since there are $\\lceil N/2 \\rceil$ leaves and they are unsorted, we must perform a linear search across all of them, which takes $\\theta(n)$ time.",
             "answer_source": "generated",

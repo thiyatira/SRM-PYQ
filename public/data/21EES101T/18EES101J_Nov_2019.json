@@ -4,7 +4,7 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Voltage across the capacitor is given by\n(A) V = c \\int idt\n(B) V = ic\n(C) V = c \\frac{di}{dt}\n(D) V = \\frac{1}{c}\\int idt",
+            "question_text": "Voltage across the capacitor is given by\n(A) $V = c \\int idt$\n(B) $V = ic$\n(C) $V = c \\frac{di}{dt}$\n(D) $V = \\frac{1}{c}\\int idt$",
             "marks": 1,
             "answer": "(D)\nExplanation: The voltage across a capacitor as a function of time is derived from the relation i = C(dV/dt), giving V = (1/C) ∫ i dt.",
             "answer_source": "generated",
@@ -92,7 +92,7 @@
         },
         {
             "question_number": "15",
-            "question_text": "Gauge factor G, of a strain gauge is given by the ratio\n(A) G = \\frac{R}{l}\n(B) G = \\frac{\\Delta R}{\\Delta l}\n(C) G = \\frac{\\Delta l}{\\Delta R}\n(D) G = \\frac{\\Delta R / R}{\\Delta l / l}",
+            "question_text": "Gauge factor G, of a strain gauge is given by the ratio\n(A) $G = \\frac{R}{l}$\n(B) $G = \\frac{\\Delta R}{\\Delta l}$\n(C) $G = \\frac{\\Delta l}{\\Delta R}$\n(D) $G = \\frac{\\Delta R / R}{\\Delta l / l}$",
             "marks": 1,
             "answer": "(D)\nExplanation: The Gauge factor is defined as the ratio of fractional change in electrical resistance to the fractional change in length (strain).",
             "answer_source": "generated",
