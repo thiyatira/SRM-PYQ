@@ -247,6 +247,8 @@ app.use((_req, res) => {
 });
 
 // Error handler: malformed/oversized JSON bodies and anything unexpected. Never echo error details.
+// Express identifies error handlers by their 4-argument arity, so `_next` must stay.
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 app.use((err: unknown, _req: express.Request, res: express.Response, _next: express.NextFunction) => {
   const type = (err as { type?: string } | null)?.type;
   if (type === "entity.parse.failed") {
