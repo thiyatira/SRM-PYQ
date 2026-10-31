@@ -1,0 +1,207 @@
+{
+  "formal_filename": "2018-12_ET_IT0205_QP.json",
+  "paper_title": "B.Tech. DEGREE EXAMINATION, DECEMBER 2018 - Third Semester - IT0205 - COMPUTER ARCHITECTURE (For the candidates admitted from the academic year 2007-2008 to 2012-2013)",
+  "source": "2018-12 ET IT0205",
+  "questions": [
+    {
+      "question_number": "1",
+      "question_text": "What is meant by instruction code?",
+      "marks": 2,
+      "answer": "An **instruction code** is a group of bits that tells the computer to perform a specific operation. It usually has an **operation code (opcode)** part, which specifies the operation (add, load, branch and so on), and an **address/operand** part, which specifies the register or memory location of the operand.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basic structure of computers"
+    },
+    {
+      "question_number": "2",
+      "question_text": "What are resisters? Name any two registers in a computer?",
+      "marks": 2,
+      "answer": "Registers are small, very fast storage locations inside the CPU (built from flip-flops). They hold instructions, addresses and data temporarily during processing. Examples: the Program Counter (PC), which holds the address of the next instruction, and the Accumulator (AC). Others include IR, MAR and MDR.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basic structure of computers"
+    },
+    {
+      "question_number": "3",
+      "question_text": "List any four addressing modes.",
+      "marks": 2,
+      "answer": "1. Immediate addressing (`MOV R1, #5`)\n2. Direct/absolute addressing (`MOV R1, LOC`)\n3. Register indirect addressing (`MOV R1, (R2)`)\n4. Indexed addressing (`MOV R1, X(R2)`)\n\nOthers: register, relative, autoincrement and autodecrement.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basic structure of computers"
+    },
+    {
+      "question_number": "4",
+      "question_text": "What are the functionalities of a CPU?",
+      "marks": 2,
+      "answer": "The CPU fetches instructions from memory, decodes them, and executes them by performing arithmetic and logic operations in the ALU. It reads and writes data in memory and I/O, stores temporary results in registers, and generates control and timing signals that coordinate all units of the computer. It also handles interrupts.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basic structure of computers"
+    },
+    {
+      "question_number": "5",
+      "question_text": "Write the floating point representation of the number $-12.5$ (in 32 bit representation)?",
+      "marks": 2,
+      "answer": "$12.5 = 1100.1_2 = 1.1001\\times2^3$.\n- Sign S = 1.\n- Biased exponent $= 3+127 = 130 = 10000010$.\n- Mantissa = 1001 followed by 19 zeros.\n\n$$1\\ |\\ 10000010\\ |\\ 10010000000000000000000 = C1480000_{16}$$",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Design of ALU"
+    },
+    {
+      "question_number": "6",
+      "question_text": "Find the 1's and 2's complement of the number $(10110)_2$.",
+      "marks": 2,
+      "answer": "1's complement: invert each bit, giving **01001**.\n2's complement: 1's complement + 1, giving **01010**.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+    },
+    {
+      "question_number": "7",
+      "question_text": "Why do we need a cache memory?",
+      "marks": 2,
+      "answer": "Main memory is much slower than the processor. A cache is a small, fast memory between the CPU and main memory that holds recently and frequently used instructions and data, exploiting locality of reference. It reduces the average memory access time, so the CPU does not have to wait for slow main-memory accesses, and overall performance improves.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basic structure of computers"
+    },
+    {
+      "question_number": "8",
+      "question_text": "What is the use of ROM?",
+      "marks": 2,
+      "answer": "ROM (Read Only Memory) is non-volatile memory whose contents are retained without power. It is used to store permanent programs and data such as the bootstrap loader/BIOS and firmware, microprograms (control store), look-up tables and character generators.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basic structure of computers"
+    },
+    {
+      "question_number": "9",
+      "question_text": "What is an interrupt?",
+      "marks": 2,
+      "answer": "An interrupt is a signal (from hardware, an I/O device, or software) that causes the processor to suspend the current program, save its state (PC, flags), and execute an interrupt service routine (ISR). After the ISR finishes, the processor resumes the interrupted program. Interrupts let devices get attention without the processor having to poll them.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Parallelism"
+    },
+    {
+      "question_number": "10",
+      "question_text": "Write short notes on serial communication.",
+      "marks": 2,
+      "answer": "In serial communication data bits are sent one bit at a time over a single line, which is cheap for long distances. It can be **asynchronous** (each character is framed with a start bit, data bits, optional parity and stop bits; for example UART/RS-232) or **synchronous** (blocks of data are sent with a shared clock or sync characters). A UART/USART converts parallel data to serial and back, and the speed is given as a baud rate. Examples: RS-232, USB, SPI, I2C.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Parallelism"
+    },
+    {
+      "question_number": "11. a.",
+      "question_text": "Discuss the organization of a basic computer with a neat diagram.",
+      "marks": 16,
+      "answer": "A basic computer (Mano's model) consists of memory, a set of registers, a common bus, an ALU and a control unit.\n\n**Memory:** 4096 × 16 words, so the address is 12 bits.\n\n**Registers:**\n\n| Register | Bits | Function |\n|---|---|---|\n| DR (data register) | 16 | Holds the memory operand |\n| AR (address register) | 12 | Holds the memory address |\n| AC (accumulator) | 16 | Processor register |\n| IR (instruction register) | 16 | Holds the instruction code |\n| PC (program counter) | 12 | Address of the next instruction |\n| TR (temporary register) | 16 | Temporary data |\n| INPR / OUTR | 8 | Input / output character |\n\nFlip-flops: E (carry), I (indirect bit), S (start/stop) and R, IEN, FGI, FGO (interrupt and I/O).\n\n**Common bus system:** a 16-bit bus connects the registers and memory. Selection inputs $S_2S_1S_0$ choose which register is placed on the bus (1 = AR, 2 = PC, 3 = DR, 4 = AC, 5 = IR, 6 = TR, 7 = memory). Each register has LD (load), INR (increment) and CLR (clear) controls. The AC is loaded from the adder and logic circuit, whose inputs are AC, DR and INPR.\n\n**Instruction format (16 bits):** I (1 bit) | opcode (3 bits) | address (12 bits).\n- Memory-reference instructions: AND, ADD, LDA, STA, BUN, BSA, ISZ (direct or indirect).\n- Register-reference instructions (opcode 111, I = 0).\n- I/O instructions (opcode 111, I = 1).\n\n**Control unit:** a 3×8 opcode decoder, a 4-bit sequence counter (SC) with a 4×16 timing decoder ($T_0$ to $T_{15}$), and control logic gates that generate the micro-operations.\n\n**Instruction cycle:**\n- Fetch: $T_0$: AR ← PC; $T_1$: IR ← M[AR], PC ← PC + 1.\n- Decode: $T_2$: decode IR(12 to 14), AR ← IR(0 to 11), I ← IR(15).\n- Indirect address (if needed).\n- Execute.\n\n**Diagram:** memory unit and registers AR, PC, DR, AC (with adder and logic, and E), INPR, IR, TR and OUTR, all on the 16-bit common bus selected by $S_2S_1S_0$, with the control unit driving all LD/INR/CLR signals.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basic structure of computers"
+    },
+    {
+      "question_number": "11. b.",
+      "question_text": "Discuss various components and functions of a digital computer.",
+      "marks": 16,
+      "answer": "A digital computer is a digital system that performs computations using binary (0/1) information, under the control of a stored program.\n\n**Components:**\n1. **Central Processing Unit (CPU):**\n   - **ALU:** performs arithmetic (add, subtract, multiply) and logic (AND, OR, NOT, compare) operations.\n   - **Control unit:** fetches and decodes instructions and generates the control and timing signals.\n   - **Registers:** PC, IR, AC, MAR, MDR, general-purpose registers and status flags.\n2. **Memory:**\n   - *Primary (main) memory*: RAM (read/write, volatile) and ROM (permanent, bootstrap), plus a fast cache.\n   - *Secondary/auxiliary memory*: magnetic disks, SSDs, optical disks and tapes, which store bulk data and programs permanently.\n3. **Input devices:** keyboard, mouse, scanner and sensors, which convert external information into binary form.\n4. **Output devices:** monitor, printer and speakers, which present results.\n5. **I/O processor / interface:** buffers, controllers, DMA and interrupt logic that connect peripherals.\n6. **System bus:** address, data and control buses that interconnect all units.\n\n**Functions:**\n- **Input:** accepting data and instructions.\n- **Storage:** holding data and programs (stored-program concept).\n- **Processing:** performing arithmetic and logic operations.\n- **Control:** directing the sequence of operations.\n- **Output:** delivering results.\n\nHardware is complemented by **software**: system software (OS, compilers, assemblers, loaders) and application programs.\n\n**Block diagram:** Input devices and Output devices connect through the I/O processor to the CPU (ALU + Control + Registers), which connects to RAM and ROM, with secondary memory attached through the I/O system.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basic structure of computers"
+    },
+    {
+      "question_number": "12. a.",
+      "question_text": "Explain instruction formats with suitable examples.",
+      "marks": 16,
+      "answer": "An instruction format defines the layout of the bits of an instruction: an **opcode** field, an **address/operand** field, and a **mode** field (addressing mode). Formats are classified by the number of address fields. Example: $X = (A+B)*(C+D)$.\n\n**1. Three-address instructions:** each instruction specifies two sources and a destination. Programs are short, but instructions are long.\n```\nADD R1, A, B    ; R1 <- M[A]+M[B]\nADD R2, C, D    ; R2 <- M[C]+M[D]\nMUL X, R1, R2   ; M[X] <- R1*R2\n```\n**2. Two-address instructions:** the most common format; the first operand is both a source and the destination.\n```\nMOV R1, A\nADD R1, B\nMOV R2, C\nADD R2, D\nMUL R1, R2\nMOV X, R1\n```\n**3. One-address instructions:** these use an implied accumulator (AC).\n```\nLOAD A\nADD B\nSTORE T\nLOAD C\nADD D\nMUL T\nSTORE X\n```\n**4. Zero-address instructions:** a stack organisation, where operands are implied at the top of the stack.\n```\nPUSH A\nPUSH B\nADD\nPUSH C\nPUSH D\nADD\nMUL\nPOP X\n```\n**RISC style:** load/store with register-to-register operations.\n```\nLOAD R1, A\nLOAD R2, B\nLOAD R3, C\nLOAD R4, D\nADD R1, R1, R2\nADD R3, R3, R4\nMUL R1, R1, R3\nSTORE X, R1\n```\n\n**Trade-off:** more address fields give shorter programs but longer instructions; fewer address fields give compact instructions but more of them. Instruction formats can also be fixed length (RISC) or variable length (CISC, x86).",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basic structure of computers"
+    },
+    {
+      "question_number": "12. b.",
+      "question_text": "Write notes on\n(i) Register organization\n(ii) Stack organization",
+      "marks": 16,
+      "answer": "**(i) Register organization (general register organisation):** the CPU contains a set of general-purpose registers (for example R1 to R7) connected to the ALU through two multiplexers and a decoder.\n- MUX A (selected by SELA) and MUX B (selected by SELB) choose the two source registers, which feed the ALU inputs.\n- The ALU operation is chosen by OPR.\n- The output goes onto the destination bus, and a 3×8 decoder (SELD) loads it into the selected register.\n- A **control word** of 14 bits (SELA 3 | SELB 3 | SELD 3 | OPR 5) specifies one micro-operation. For example, R1 ← R2 + R3 has the control word 010 011 001 00010.\n- Register-based CPUs give fast operations, fewer memory accesses and shorter instructions.\n\n**(ii) Stack organization:** a stack is a LIFO storage area (a register stack or a memory stack) addressed by a **stack pointer (SP)**.\n- *Register stack* (for example 64 words): flags FULL and EMPTY, data register DR.\n  - PUSH: SP ← SP + 1; M[SP] ← DR; if SP = 0 then FULL ← 1; EMPTY ← 0.\n  - POP: DR ← M[SP]; SP ← SP − 1; if SP = 0 then EMPTY ← 1; FULL ← 0.\n- *Memory stack:* part of memory, usually growing downward.\n  - PUSH: SP ← SP − 1; M[SP] ← DR.\n  - POP: DR ← M[SP]; SP ← SP + 1.\n  - Stack limits are checked for overflow and underflow.\n- **Uses:** zero-address instructions and the evaluation of arithmetic expressions in reverse Polish notation. For example $(A+B)*(C+D)$ becomes AB+CD+*, executed as PUSH A, PUSH B, ADD, PUSH C, PUSH D, ADD, MUL. The stack also serves subroutine calls/returns (saving the return address), interrupts (saving the CPU state) and nested procedures.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basic structure of computers"
+    },
+    {
+      "question_number": "13. a.",
+      "question_text": "Write the algorithm to multiply two numbers. Illustrate it to multiple 12 by 5.",
+      "marks": 16,
+      "answer": "**Shift-and-add (sequential) multiplication algorithm for unsigned numbers (n bits):**\n1. Load multiplicand M, multiplier Q; clear A and carry C; set count = n.\n2. If $Q_0 = 1$, set C,A ← A + M.\n3. Shift C, A, Q right by one bit (C goes into $A_{n-1}$, $A_0$ goes into $Q_{n-1}$).\n4. Decrement count; if count ≠ 0, go to step 2.\n5. The product is in A,Q (2n bits).\n\n(For signed numbers, Booth's algorithm is used.)\n\n**Example: 12 × 5** with M = 1100 and Q = 0101.\n\n| Cycle | Operation | C | A | Q |\n|---|---|---|---|---|\n| 0 | Initial | 0 | 0000 | 0101 |\n| 1 | $Q_0=1$: A = A + M | 0 | 1100 | 0101 |\n| | Shift right | 0 | 0110 | 0010 |\n| 2 | $Q_0=0$: shift right | 0 | 0011 | 0001 |\n| 3 | $Q_0=1$: A = A + M | 0 | 1111 | 0001 |\n| | Shift right | 0 | 0111 | 1000 |\n| 4 | $Q_0=0$: shift right | 0 | 0011 | 1100 |\n\nProduct $AQ = 0011\\,1100_2 = 60$. Check: $12\\times5 = 60$.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Design of ALU"
+    },
+    {
+      "question_number": "13. b.i.",
+      "question_text": "Add the following numbers 232.25+136.75 using binary addition.",
+      "marks": 6,
+      "answer": "- $232 = 11101000$ and $0.25 = 0.01$, so $232.25 = 11101000.01_2$.\n- $136 = 10001000$ and $0.75 = 0.11$, so $136.75 = 10001000.11_2$.\n\n```\n   11101000.01\n + 10001000.11\n --------------\n  101110001.00\n```\nFraction: $.01 + .11 = 1.00$, so the fraction is .00 with a carry of 1 into the integer part. Integer: $11101000 + 10001000 + 1 = 101110001$.\n\nResult $101110001.00_2 = 256+64+32+16+1 = 369$. Check: $232.25 + 136.75 = 369$.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+    },
+    {
+      "question_number": "13. b.ii.",
+      "question_text": "Subtract 16 from 5 using 2's complement.",
+      "marks": 5,
+      "answer": "$5 - 16$ in 8 bits: $5 = 00000101$; $16 = 00010000$, whose 2's complement is $11110000$.\n```\n  00000101\n+ 11110000\n----------\n  11110101   (no end carry)\n```\nThere is no carry, so the result is negative and is in 2's complement form. Taking the 2's complement of 11110101 gives 00001011 = 11.\n\n**Answer:** $-11$.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+    },
+    {
+      "question_number": "13. b.iii.",
+      "question_text": "Perform the following using 1's complement $-12+7$.",
+      "marks": 5,
+      "answer": "8-bit: $+12 = 00001100$, so $-12 = 11110011$ (1's complement); $+7 = 00000111$.\n```\n  11110011\n+ 00000111\n----------\n  11111010   (no end-around carry)\n```\nThere is no end carry, so the result is negative. Taking the 1's complement of 11111010 gives 00000101 = 5.\n\n**Answer:** $-5$. Check: $-12 + 7 = -5$.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+    },
+    {
+      "question_number": "14. a.i.",
+      "question_text": "Write notes on the following\n(i) Memory hierarchy",
+      "marks": 5,
+      "answer": "The memory hierarchy arranges storage by speed, cost and capacity: **registers → cache (L1/L2/L3, SRAM) → main memory (DRAM) → secondary storage (magnetic disk/SSD) → tertiary storage (tape, optical)**. Moving down the hierarchy, capacity increases and cost per bit decreases, while access time increases and access frequency decreases. Because of locality of reference, most accesses are satisfied by the upper levels. The system therefore performs at close to the speed of the fastest memory, at a cost per bit close to the cheapest. Data moves between adjacent levels in blocks (cache lines, pages).",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basic structure of computers"
+    },
+    {
+      "question_number": "14. a.ii.",
+      "question_text": "(ii) Associative memory",
+      "marks": 5,
+      "answer": "Associative memory (Content Addressable Memory, CAM) is accessed by **content** rather than by address. A search argument in the argument register (A) is compared in parallel with every word, under a **key register (K)** that masks which bits take part. Matching words set their bits in a **match register (M)**. Each cell has comparison logic, so the memory is expensive but very fast for searching. It is used in TLBs and in fully associative cache tag lookup. Match logic: $M_i = \\prod_j (A_jF_{ij} + \\bar A_j\\bar F_{ij} + \\bar K_j)$.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basic structure of computers"
+    },
+    {
+      "question_number": "14. a.iii.",
+      "question_text": "(iii) Virtual memory",
+      "marks": 6,
+      "answer": "Virtual memory gives programmers the illusion of a large address space (the **virtual/logical address space**) even though physical main memory is smaller. Only active portions of a program are kept in main memory; the rest stays on disk. The address space is divided into fixed-size **pages**, and memory into **frames**. The MMU translates virtual to physical addresses using a **page table** (frame number, valid, dirty and protection bits), cached in a **TLB**. A reference to a page not in memory causes a **page fault**: the OS loads the page from disk, replacing a page by LRU, FIFO and so on if necessary. Benefits: programs larger than memory can run, multiprogramming, relocation, and protection/sharing.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basic structure of computers"
+    },
+    {
+      "question_number": "14. b.i.",
+      "question_text": "Write explanatory notes on\n(i) Memory management hardware",
+      "marks": 10,
+      "answer": "Memory management hardware (the **Memory Management Unit, MMU**) supports the OS in sharing main memory among programs.\n\n**Functions:**\n1. Dynamic mapping of logical to physical addresses (relocation).\n2. Sharing common programs/data among users.\n3. Protection of information from unauthorised access.\n\n**Segmented-page mapping:** the logical address is split into segment, page and word fields.\n- The **segment table** (indexed by the segment number) gives the base of the page table for that segment.\n- The **page table** gives the block (frame) number.\n- Physical address = block number concatenated with the word offset.\n- For speed, a **TLB** (associative memory) holds recent (segment, page) → block mappings.\n\n**Paging hardware:** the virtual page number indexes the page table (located by the page-table base register); a valid bit detects page faults; dirty/reference bits support replacement.\n\n**Protection:** each segment/page descriptor carries access rights (read-only, read-write, execute-only, system-only), and base/limit (bounds) registers trap accesses outside the allotted area. The hardware raises an exception on any violation.\n\n**Diagram:** logical address (segment | page | word) → segment table → page table → physical address (block | word), with the TLB checked first.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basic structure of computers"
+    },
+    {
+      "question_number": "14. b.ii.",
+      "question_text": "(ii) Cache memory",
+      "marks": 6,
+      "answer": "Cache is a small, fast (SRAM) memory between the CPU and main memory that holds copies of frequently used blocks, exploiting temporal and spatial locality.\n\n**Performance:** hit ratio h, and average access time $t_{avg} = h\\,t_c + (1-h)(t_c + t_m)$ (or $h t_c + (1-h) t_m$).\n\n**Mapping functions:**\n- *Direct:* block j goes to line j mod (number of lines); the address is split into tag, line and word.\n- *Associative:* any block can go into any line; tag and word.\n- *Set-associative:* block j goes into any line of set j mod (number of sets); tag, set and word.\n\n**Replacement:** LRU, FIFO or random.\n\n**Write policies:** *write-through* (memory is updated on every write) or *write-back* (with a dirty bit, memory is updated on eviction). On a write miss, use write-allocate or no-write-allocate.\n\nMulti-level caches (L1, L2, L3) and split instruction/data caches further improve performance.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basic structure of computers"
+    },
+    {
+      "question_number": "15. a.",
+      "question_text": "Describe various peripheral devices in a computer system.",
+      "marks": 16,
+      "answer": "Peripheral devices are I/O and storage devices attached to the computer through interfaces/controllers.\n\n**1. Input devices:**\n- *Keyboard:* a key matrix whose controller generates scan codes (converted to ASCII).\n- *Mouse, trackball, touchpad, joystick:* pointing devices giving relative movement.\n- *Scanner, digital camera:* convert images into bit-maps.\n- *Microphone* (audio, through an ADC).\n- *Touch screen, light pen.*\n- *OCR, MICR, OMR and bar-code readers:* special-purpose readers.\n\n**2. Output devices:**\n- *Monitors:* CRT, LCD, LED. They are raster displays refreshed from video RAM, characterised by resolution and refresh rate.\n- *Printers:* impact (dot-matrix, line) and non-impact (inkjet, laser), whose speed is measured in cps, lpm or ppm.\n- *Plotters, speakers, projectors.*\n\n**3. Storage peripherals:**\n- *Magnetic disks (HDD):* tracks, sectors and cylinders; access time = seek + rotational latency + transfer.\n- *SSD/flash drives.*\n- *Optical disks:* CD, DVD, Blu-ray, WORM.\n- *Magnetic tape:* sequential backup.\n\n**4. Communication peripherals:** modems, network interface cards, serial (UART/RS-232, USB) and parallel ports.\n\n**Interfacing:** peripherals differ from the CPU in speed, data format and signalling, so each needs an **I/O interface** (data, status and control registers; address decoder). Data transfer modes are programmed I/O, interrupt-driven I/O, and DMA / I/O processors. Character codes (ASCII) are used for text devices.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Parallelism"
+    },
+    {
+      "question_number": "15. b.",
+      "question_text": "Explain the functionality of DMA.",
+      "marks": 16,
+      "answer": "**Direct Memory Access (DMA)** transfers data between an I/O device and memory directly, without the CPU moving each word, which makes it suitable for high-speed block transfers such as disk and network.\n\n**DMA controller:**\n- *Address register*, which holds the memory address and is incremented after each word.\n- *Word count register*, which is decremented after each word.\n- *Control register* (read/write mode, start, interrupt enable).\n- *Data buffer.*\n- Interface lines: DMA request (DRQ) from the device, DMA acknowledge (DACK), **Bus Request (BR)** to the CPU and **Bus Grant (BG)** from the CPU, plus RD/WR and address-select lines.\n\n**Operation:**\n1. The CPU initialises the controller by programming the starting address, word count and direction, then enables it. The CPU then continues with other work.\n2. The device asserts DMA request; the controller asserts BR.\n3. The CPU finishes its current bus cycle, tri-states its buses and asserts BG.\n4. The controller places the address on the address bus and asserts RD/WR; the device reads or writes the data directly to memory (DACK).\n5. The address is incremented and the count decremented; the process repeats.\n6. When the count reaches 0, the controller drops BR, returns the bus and interrupts the CPU to signal completion.\n\n**Transfer modes:**\n- *Burst/block transfer:* the whole block is moved while holding the bus.\n- *Cycle stealing:* one word per bus cycle, interleaved with CPU cycles.\n- *Transparent/hidden:* only when the CPU does not need the bus.\n\n**Advantages:** high transfer rate, and the CPU is relieved of data movement. **Disadvantages:** extra hardware, bus contention with the CPU, and cache-coherence issues.\n\n**Diagram:** CPU (with BR and BG lines), memory and the DMA controller (address register, word count, control) on a shared address/data/control bus, with the I/O device connected to the DMA controller by DRQ/DACK.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Parallelism"
+    }
+  ]
+}

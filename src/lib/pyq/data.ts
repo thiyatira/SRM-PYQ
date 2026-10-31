@@ -293,6 +293,11 @@ export const SEMESTERS: SemesterInfo[] = [
           "2025-07_ET_QP.json",
           "CT-3_Set-NA_2024-25_Paper-2.json",
           "CT-3_Set-NA_2024-25_Part-A.json",
+          "2018-06_ET_CS0207_QP.json",
+          "2018-12_ET_CS0207_QP.json",
+          "2018-12_ET_IT0205_QP.json",
+          "2019-11_ET_18CSC203J_QP.json",
+          "2022-12_ET_18CSC262J_QP.json",
         ],
       },
       {

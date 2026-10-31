@@ -1,0 +1,167 @@
+{
+  "formal_filename": "2018-12_ET_CS0207_QP.json",
+  "paper_title": "B.Tech. DEGREE EXAMINATION, DECEMBER 2018 - Third Semester - CS0207 - COMPUTER ORGANIZATION AND ARCHITECTURE (For the candidates admitted from the academic year 2007-2008 to 2012-2013)",
+  "source": "2018-12 ET CS0207",
+  "questions": [
+    {
+      "question_number": "1",
+      "question_text": "What are the two ways in which the byte addresses can be assigned across words?",
+      "marks": 2,
+      "answer": "1. **Big-endian:** lower byte addresses are used for the more significant (leftmost) bytes of the word.\n2. **Little-endian:** lower byte addresses are used for the less significant (rightmost) bytes of the word.\n\nFor example, the word 0x12345678 at address 0 is stored as 12 34 56 78 in big-endian and as 78 56 34 12 in little-endian.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basic structure of computers"
+    },
+    {
+      "question_number": "2",
+      "question_text": "Draw the flowchart of basic instruction cycle with interrupt.",
+      "marks": 2,
+      "answer": "Flowchart: **Start → Fetch next instruction (PC→MAR, read, IR ← instruction, PC ← PC + 1) → Decode → Fetch operands → Execute instruction → Interrupts enabled and interrupt pending?** If yes: save PC/status, load the ISR address into PC (interrupt cycle), and return to fetch. If no: return to fetch the next instruction. The loop ends at **Halt**.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Control Unit"
+    },
+    {
+      "question_number": "3",
+      "question_text": "Represent $-307.1875_{10}$ in double precision format.",
+      "marks": 2,
+      "answer": "$307 = 100110011_2$ and $0.1875 = 0.0011_2$, so $307.1875 = 100110011.0011_2 = 1.001100110011\\times2^8$.\n- S = 1.\n- E = 8 + 1023 = 1031 = 10000000111 (11 bits).\n- Fraction (52 bits) = 001100110011 followed by 40 zeros.\n\n$$1\\ |\\ 10000000111\\ |\\ 0011001100110000\\ldots0 = C073\\,3300\\,0000\\,0000_{16}$$",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Design of ALU"
+    },
+    {
+      "question_number": "4",
+      "question_text": "What is pipelining?",
+      "marks": 2,
+      "answer": "Pipelining is a technique in which the execution of an instruction is divided into stages (for example fetch, decode, execute, memory, write-back) and several instructions are overlapped, each in a different stage at the same time, like an assembly line. It increases instruction throughput (ideally one instruction per clock) without reducing the latency of individual instructions.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Control Unit"
+    },
+    {
+      "question_number": "5",
+      "question_text": "Name the two general operations of control transfer.",
+      "marks": 2,
+      "answer": "1. **Branch/jump instructions:** conditional or unconditional transfer of control to a new address (PC ← target).\n2. **Subroutine call and return:** CALL saves the return address (on the stack or in a link register) and jumps; RET restores the PC.\n\nInterrupts are a hardware-initiated form of control transfer.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basic structure of computers"
+    },
+    {
+      "question_number": "6",
+      "question_text": "What are controller functions?",
+      "marks": 2,
+      "answer": "The controller (control unit) fetches instructions, decodes them, and generates the timing and control signals in the proper sequence. These signals direct the ALU, registers, memory and I/O, control data transfers on the buses, handle condition codes for branching, and respond to interrupts and external signals (for example WMFC).",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Control Unit"
+    },
+    {
+      "question_number": "7",
+      "question_text": "What is meant by locality of reference?",
+      "marks": 2,
+      "answer": "Locality of reference is the tendency of programs to access a relatively small part of their address space during any short period. **Temporal locality:** recently accessed items are likely to be accessed again soon (loops). **Spatial locality:** items near recently accessed addresses are likely to be accessed soon (sequential code, arrays). This property is what makes caches and virtual memory effective.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basic structure of computers"
+    },
+    {
+      "question_number": "8",
+      "question_text": "State the differences between memory mapped I/O and I/O mapped I/O.",
+      "marks": 2,
+      "answer": "| Memory-mapped I/O | I/O-mapped (isolated) I/O |\n|---|---|\n| I/O devices share the memory address space | A separate I/O address space is used |\n| Accessed with ordinary memory instructions (MOV, LOAD/STORE) | Needs special IN/OUT instructions |\n| Fewer usable memory addresses | The full memory space remains available |\n| Uses the same control signals (MEMR/MEMW) | Separate IOR/IOW control signals |",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Parallelism"
+    },
+    {
+      "question_number": "9",
+      "question_text": "Why I/O devices cannot be directly connected to system bus?",
+      "marks": 2,
+      "answer": "I/O devices differ from the processor and memory in operating speed (they are much slower), in data format and word length (serial or parallel, codes), in signal levels and electrical characteristics, and in operating modes. Many different devices also have different control requirements. An **I/O interface/controller** is therefore needed to handle synchronisation, buffering, format conversion, address decoding and control/status signalling between the device and the system bus.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Parallelism"
+    },
+    {
+      "question_number": "10",
+      "question_text": "What is port? What are the different types of port available?",
+      "marks": 2,
+      "answer": "A port is an interface circuit (an addressable register or connector) through which data is transferred between the processor and an I/O device. Types:\n- **Parallel port:** several bits are transferred simultaneously (for example a printer port).\n- **Serial port:** bits are transferred one at a time (RS-232/UART, USB).\n\nPorts can also be classified as input ports, output ports, or bidirectional ports.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Parallelism"
+    },
+    {
+      "question_number": "11. a.",
+      "question_text": "Explain various addressing modes with example.",
+      "marks": 16,
+      "answer": "An addressing mode specifies how the effective address (EA) of an operand is computed.\n1. **Immediate:** the operand is in the instruction. `MOVE #200, R0` gives R0 ← 200. Used for constants.\n2. **Register:** the operand is in a CPU register. `ADD R1, R2`. Fast, with no memory access.\n3. **Absolute/Direct:** EA = address field. `MOVE LOC, R1` gives R1 ← [LOC]. Used for global variables.\n4. **Indirect:** EA = contents of a register or memory location. `ADD (R1), R0` gives R0 ← R0 + [[R1]]; memory indirect is `ADD (A), R0`. Used for pointers.\n5. **Index:** EA = X + [Ri]. `MOVE 20(R1), R2`. Used for arrays and records.\n6. **Base with index:** EA = [Ri] + [Rj]; with offset, EA = X + [Ri] + [Rj]. Used for 2-D arrays.\n7. **Relative:** EA = X + [PC]. `BRANCH>0 LOOP`. Gives position-independent code.\n8. **Autoincrement:** EA = [Ri], then Ri is incremented by the operand size. `MOVE (R2)+, R0`. Used for traversing lists and stack pop.\n9. **Autodecrement:** Ri is decremented first, then EA = [Ri]. `MOVE R0, −(SP)`. Used for stack push.\n\n**Example program (sum of N numbers):**\n```\n      MOVE N, R1\n      MOVE #NUM1, R2\n      CLEAR R0\nLOOP: ADD (R2)+, R0\n      DECREMENT R1\n      BRANCH>0 LOOP\n      MOVE R0, SUM\n```\n\nAddressing modes give flexibility (pointers, arrays, loops), reduce the number of instruction bits, and support relocation.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basic structure of computers"
+    },
+    {
+      "question_number": "11. b.",
+      "question_text": "List the steps needed to execute the machine instruction ADD LOCA, R0 in terms of transfers between the components of registers and memory. Assume that the instruction itself is stored in the memory location INSTR and the address is initially in register PC.",
+      "marks": 16,
+      "answer": "Instruction: $R0 \\leftarrow [LOCA] + [R0]$.\n\n**Fetch phase:**\n1. PC (= INSTR) → MAR; issue a **Read** to memory.\n2. Memory returns the instruction word, which is loaded into MDR.\n3. MDR → IR. PC is incremented to point to the next instruction (PC ← PC + word length).\n\n**Decode/execute phase:**\n4. The control unit decodes IR and finds an Add with source operand LOCA (memory) and destination R0.\n5. Address LOCA (from the IR address field) → MAR; issue a **Read**.\n6. Memory returns [LOCA], which is loaded into MDR.\n7. MDR and R0 go to the ALU, which performs the addition.\n8. The ALU result → R0.\n\nThe instruction is complete, and the processor fetches the next instruction using the updated PC.\n\nIn single-bus control signals:\n1. PC$_{out}$, MAR$_{in}$, Read, Select4, Add, Z$_{in}$\n2. Z$_{out}$, PC$_{in}$, Y$_{in}$, WMFC\n3. MDR$_{out}$, IR$_{in}$\n4. Address-field-of-IR$_{out}$, MAR$_{in}$, Read\n5. R0$_{out}$, Y$_{in}$, WMFC\n6. MDR$_{out}$, SelectY, Add, Z$_{in}$\n7. Z$_{out}$, R0$_{in}$, End",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basic structure of computers"
+    },
+    {
+      "question_number": "12. a.",
+      "question_text": "Multiply each of the following signed two's complement numbers using Booth algorithm\n(i) A = 010111 and B = 110110\n(ii) A = 110011 and B = 101100\nWhere A is multiplicand and B is multiplier. Show each step clearly indicating Booth recoding.",
+      "marks": 16,
+      "answer": "**(i)** $A = 010111 = +23$ and $B = 110110 = -10$. Expected product $-230$.\n\nBooth recoding of B (append 0 on the right and examine pairs $b_ib_{i-1}$): 110110|0 gives $0\\ {-1}\\ {+1}\\ 0\\ {-1}\\ 0$ (MSB to LSB). Check: $-16 + 8 - 2 = -10$.\n\nM = 010111, −M = 101001.\n\n| Step | $Q_0Q_{-1}$ | Operation | A | Q | $Q_{-1}$ |\n|---|---|---|---|---|---|\n| Init | | | 000000 | 110110 | 0 |\n| 1 | 00 | ASHR | 000000 | 011011 | 0 |\n| 2 | 10 | A = A − M | 101001 | 011011 | 0 |\n|  |  | ASHR | 110100 | 101101 | 1 |\n| 3 | 11 | ASHR | 111010 | 010110 | 1 |\n| 4 | 01 | A = A + M | 010001 | 010110 | 1 |\n|  |  | ASHR | 001000 | 101011 | 0 |\n| 5 | 10 | A = A − M | 110001 | 101011 | 0 |\n|  |  | ASHR | 111000 | 110101 | 1 |\n| 6 | 11 | ASHR | 111100 | 011010 | 1 |\n\nProduct $= 111100\\,011010_2 = -230$. Check: $23\\times(-10) = -230$.\n\n**(ii)** $A = 110011 = -13$ and $B = 101100 = -20$. Expected product $+260$.\n\nBooth recoding of 101100|0 gives ${-1}\\ {+1}\\ 0\\ {-1}\\ 0\\ 0$. Check: $-32 + 16 - 4 = -20$.\n\nM = 110011, −M = 001101.\n\n| Step | $Q_0Q_{-1}$ | Operation | A | Q | $Q_{-1}$ |\n|---|---|---|---|---|---|\n| Init | | | 000000 | 101100 | 0 |\n| 1 | 00 | ASHR | 000000 | 010110 | 0 |\n| 2 | 00 | ASHR | 000000 | 001011 | 0 |\n| 3 | 10 | A = A − M | 001101 | 001011 | 0 |\n|  |  | ASHR | 000110 | 100101 | 1 |\n| 4 | 11 | ASHR | 000011 | 010010 | 1 |\n| 5 | 01 | A = A + M | 110110 | 010010 | 1 |\n|  |  | ASHR | 111011 | 001001 | 0 |\n| 6 | 10 | A = A − M | 001000 | 001001 | 0 |\n|  |  | ASHR | 000100 | 000100 | 1 |\n\nProduct $= 000100\\,000100_2 = 260$. Check: $(-13)\\times(-20) = 260$.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Design of ALU"
+    },
+    {
+      "question_number": "12. b.",
+      "question_text": "With example, explain non restoring division technique.",
+      "marks": 16,
+      "answer": "**Non-restoring division** (n-bit dividend Q, divisor M, (n+1)-bit A = 0) avoids the restore step of restoring division.\n\n**Algorithm:**\n1. Repeat n times:\n   - If A ≥ 0: shift A,Q left by 1, then A ← A − M.\n   - Else: shift A,Q left by 1, then A ← A + M.\n   - If A ≥ 0, set $q_0 = 1$; else set $q_0 = 0$.\n2. After n cycles, if A < 0, set A ← A + M (remainder correction).\n3. The quotient is in Q and the remainder in A.\n\n**Example: 8 ÷ 3.** Q = 1000, M = 00011, −M = 11101.\n\n| Cycle | Operation | A | Q |\n|---|---|---|---|\n| 0 | Initial | 00000 | 1000 |\n| 1 | Shift | 00001 | 000_ |\n| | A ≥ 0, so A − M | 11110 | 0000 |\n| 2 | Shift | 11100 | 000_ |\n| | A < 0, so A + M | 11111 | 0000 |\n| 3 | Shift | 11110 | 000_ |\n| | A < 0, so A + M | 00001 | 0001 |\n| 4 | Shift | 00010 | 001_ |\n| | A ≥ 0, so A − M | 11111 | 0010 |\n| Final | A < 0, so A + M | 00010 | 0010 |\n\nQuotient = 0010 = 2 and remainder = 00010 = 2. Check: $3\\times2 + 2 = 8$.\n\n**Advantage over restoring division:** each cycle needs only one add or subtract (no restore), so it is faster.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Design of ALU"
+    },
+    {
+      "question_number": "13. a.",
+      "question_text": "Draw and explain typical hardwired control unit with state table method.",
+      "marks": 16,
+      "answer": "In **hardwired control**, the control signals are generated by fixed combinational and sequential logic circuits.\n\n**Organisation (diagram):**\n- **Clock → control step counter**, which is reset by End and advanced when RUN = 1.\n- The counter output goes to a **step decoder**, producing timing signals $T_1$ to $T_n$.\n- The **IR** goes to an **instruction decoder**, producing $INS_1$ to $INS_m$ (one line per instruction).\n- An **encoder** (the control logic, a network of AND/OR gates) takes $T_i$, $INS_j$, condition codes (N, Z, V, C) and external inputs (MFC, interrupts), and generates the control signals (PC$_{out}$, MAR$_{in}$, Read, Add, Z$_{in}$, End and so on).\n\n**Signal equations**, for example:\n$$Z_{in} = T_1 + T_6\\cdot ADD + T_4\\cdot BR + \\ldots$$\n$$End = T_7\\cdot ADD + T_5\\cdot BR + (T_5\\cdot N + T_4\\cdot\\bar N)\\cdot BRN + \\ldots$$\n\n**State table method:** the control unit is modelled as a finite-state machine (sequential circuit). Each control step is a state. A state table lists, for each present state and input (opcode, flags, MFC), the next state and the outputs (control signals asserted). The table is minimised (state assignment, Karnaugh maps) to derive the flip-flop input equations and output logic, and implemented with flip-flops plus gates.\n\n- Advantage: produces the fastest possible circuit.\n- Disadvantage: as the instruction set grows, the table and logic become large, irregular and hard to modify.\n\n**Other design methods:** delay-element (one-hot), sequence-counter, and PLA-based.\n\n**Characteristics of hardwired control:** high speed (suitable for RISC), but inflexible, and design changes require rewiring.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Control Unit"
+    },
+    {
+      "question_number": "13. b.",
+      "question_text": "Explain the various encoding techniques of micro programmed control unit.",
+      "marks": 16,
+      "answer": "A microinstruction must specify many control signals. Encoding techniques trade off word length against speed and parallelism.\n\n1. **Unencoded (horizontal) microinstructions:** one bit per control signal. Many micro-operations can run in parallel, there is no decoding delay and the format is very flexible, but words are very wide (100+ bits) and memory use is high.\n2. **Fully encoded (vertical) microinstructions:** the signals are encoded into compact codes (for example a 7-bit field selects one of 128 micro-operations). Words are short, but decoders are needed, there is little parallelism, more microinstructions are needed per instruction, and execution is slower.\n3. **Field (partial) encoding:** mutually exclusive signals are grouped into fields, each encoded separately. For example, F1 (4 bits) selects one of 16 source registers to gate onto the bus, F2 (3 bits) selects the destination, F3 the ALU function, F4 memory Read/Write, and F5 miscellaneous signals. A field of k bits controls $2^k - 1$ signals plus a no-op. This is a compromise between the two extremes and is the most widely used.\n4. **Functional encoding:** fields correspond to functional units (ALU, memory, bus). **Resource encoding:** fields correspond to resources such as registers.\n5. **Direct versus indirect encoding:** in indirect encoding, the meaning of one field depends on another field. **Nanoprogramming:** a short microinstruction indexes a nano-memory that holds the wide horizontal control words.\n\n**Sequencing fields:** each microinstruction also contains next-address information (a condition field, a branch type and a branch address), or relies on a μPC with a mapping ROM.\n\n**Comparison:** horizontal is fast, wide and parallel; vertical is slow, narrow and sequential; field encoding is a balanced compromise.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Control Unit"
+    },
+    {
+      "question_number": "14. a.",
+      "question_text": "What is TLB? What is the use of TLB in virtual memory? Explain.",
+      "marks": 16,
+      "answer": "**TLB (Translation Lookaside Buffer):** a small, fast, associative (or set-associative) cache in the MMU that holds the most recently used page-table entries: virtual page number → physical frame number, plus valid, dirty and protection bits.\n\n**Why it is needed:** the page tables are in main memory, so without a TLB every memory reference needs an extra memory access to read the page-table entry, which doubles the access time.\n\n**Operation:**\n1. The CPU generates a virtual address (VPN, offset).\n2. The VPN is compared with all TLB tags in parallel.\n3. On a **TLB hit**, the frame number is obtained immediately and physical address = frame concatenated with the offset; protection is checked. This takes about 1 cycle.\n4. On a **TLB miss**, the page table in memory (via the page-table base register) is accessed. If the page is present, the entry is loaded into the TLB (replacing an old entry by LRU or random) and the access proceeds. If the page is not present (valid = 0), a **page fault** occurs, the OS brings the page from disk, updates the page table and TLB, and restarts the instruction.\n5. On a context switch, the TLB is flushed or uses address-space IDs.\n\n**Effective access time:** $EAT = h(t_{TLB} + t_m) + (1-h)(t_{TLB} + 2t_m)$. For example, with $h = 0.98$, $t_{TLB} = 1$ ns and $t_m = 100$ ns: $EAT = 0.98\\times101 + 0.02\\times201 = 103$ ns.\n\n**Uses:** fast address translation, protection checking, and keeping the virtual-memory overhead low. The TLB is also consulted in parallel with a virtually indexed cache.\n\n**Diagram:** virtual address → TLB (VPN tag | frame | control bits) → hit: physical address; miss → page table → update TLB.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basic structure of computers"
+    },
+    {
+      "question_number": "14. b.",
+      "question_text": "Discuss in detail optical disks and magnetic tape systems.",
+      "marks": 16,
+      "answer": "**Optical disks:** data is recorded as microscopic **pits and lands** along a single spiral track and read by a laser. Pit/land transitions reflect light differently, and a photodetector senses them; a transition represents 1. The disk rotates at constant linear velocity (CLV), with uniform bit density.\n- **CD-ROM:** 120 mm, 650 to 700 MB, read-only, mass-produced by pressing. Data is in 2352-byte sectors with error correction (Reed-Solomon, CIRC), and 1× speed is 150 KB/s.\n- **CD-R (WORM, write once read many):** a dye layer is burned by a laser. **CD-RW:** a phase-change alloy that can be rewritten.\n- **DVD:** 4.7 GB single layer and 8.5 GB dual layer (double-sided up to 17 GB), using a shorter-wavelength laser (650 nm) and smaller pits. **Blu-ray:** 405 nm laser, 25 to 50 GB.\n- Advantages: cheap, portable, durable, high capacity, removable. Disadvantages: slower access than magnetic disk; seek times of about 100 ms.\n\n**Magnetic tape systems:** data is recorded on a thin plastic tape coated with magnetic material, using a read/write head.\n- Data is organised in parallel tracks (for example 9 tracks: 8 data bits + 1 parity) or by serpentine/helical-scan recording.\n- Records are separated by **inter-record gaps** and grouped into files separated by file marks.\n- Access is **sequential**, so it is slow for random access. Capacity is very high (LTO cartridges reach several TB) and the cost per bit is very low.\n- Controller functions: rewind, forward/backward skip, read/write records, error checking.\n- Uses: backup, archival storage, data interchange.\n\n**Comparison:** optical disks offer random access and portability; tape offers sequential access and the lowest cost per byte.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basic structure of computers"
+    },
+    {
+      "question_number": "15. a.",
+      "question_text": "With neat diagram, explain bus arbitration.",
+      "marks": 16,
+      "answer": "**Bus arbitration** is the process of deciding which of several bus masters (the processor or DMA controllers) gets control of the shared bus when more than one requests it at the same time.\n\n**1. Centralized arbitration:** a single bus arbiter (often part of the processor) decides.\n- **Daisy chaining:** all masters share a Bus Request (BR) line. The arbiter asserts Bus Grant (BG1), which passes serially from device to device. The first requesting device absorbs the grant (BG is not passed on), asserts **BBSY** (bus busy) and uses the bus. Priority is fixed by position. It is simple, but not fair, and slow for long chains.\n- **Polling:** the arbiter cycles through device addresses on poll lines.\n- **Independent request:** each master has its own BR/BG pair; the arbiter applies priority logic. This is fast, but needs more lines.\n\nTiming sequence: BR is asserted → BG1 → BG2 → the device asserts BBSY and transfers → it releases BBSY → the arbiter re-arbitrates.\n\n**2. Distributed arbitration:** all devices take part and there is no central arbiter.\n- Each device has a unique ID (for example 4 bits) and drives open-collector **arbitration lines ARB3 to ARB0** (wired-OR) with its ID when it wants the bus, also asserting Start-Arbitration.\n- Each device compares the lines with its ID from the MSB. If a line shows 1 where its own bit is 0, it disables its drivers for that bit and all lower bits.\n- After settling, the lines show the highest ID, and that device wins. Example: IDs 5 (0101) and 6 (0110) compete; the lines become 0111 at first, device 5 sees a 1 on ARB1 where it has 0 and withdraws, and the lines settle to 0110, so device 6 wins.\n- Advantages: no single point of failure and more reliable.\n\n**Diagram:** the processor/arbiter is connected to devices 1 to n by the BR (wired-OR) and BBSY lines, with BG1 → BG2 → … daisy-chained; and, for the distributed scheme, open-collector drivers to the ARB lines.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Parallelism"
+    },
+    {
+      "question_number": "15. b.",
+      "question_text": "Write short notes on\n(i) Bus interface\n(ii) Vectored interrupt",
+      "marks": 16,
+      "answer": "**(i) Bus interface (I/O interface):** the circuitry that connects an I/O device to the system bus.\n- **Address decoder:** recognises the device's address(es).\n- **Data register (buffer):** holds data being transferred (for example DATAIN and DATAOUT).\n- **Status register:** flags such as SIN/SOUT (ready), error and interrupt-request bits.\n- **Control register/logic:** handles bus control signals (Read/Write, clock), handshaking, and interrupt request/acknowledge.\n- Functions: synchronisation (strobe or handshake protocols for synchronous/asynchronous buses), buffering for speed matching, format conversion (serial↔parallel, as in a UART), error detection and signal-level conversion.\n- Types: *parallel interface* (8/16 bits at once, for example a printer port), *serial interface* (UART/USART, USB).\n- Standard buses/interfaces: PCI, SCSI, USB.\n\n**(ii) Vectored interrupt:** the interrupting device identifies itself to the processor, so the processor can branch **directly** to that device's ISR without polling.\n- On accepting an interrupt (INTA, interrupt acknowledge), the device places an **interrupt vector** (a code or the ISR starting address, or an index into an **interrupt vector table**) on the data bus.\n- The processor uses it to load the PC with the ISR address. For example, in the 8086 vector type n gives the ISR address at memory location 4n (IP:CS).\n- Priority among devices is handled by daisy-chained INTA or a priority interrupt controller (such as the 8259).\n- Advantages over polled (non-vectored) interrupts: much faster response and simpler software.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Parallelism"
+    }
+  ]
+}
