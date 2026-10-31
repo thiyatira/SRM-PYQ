@@ -1,8 +1,8 @@
-# SRM StudyHub — PYQs & Academia Portal 🎓
+# SRM StudyHub — Previous Year Question Papers 🎓
 
 🔗 **Live Website**: [https://srm-pyq.vercel.app/](https://srm-pyq.vercel.app/)
 
-A modern, fast, and comprehensive web application designed for SRM Institute of Science and Technology (SRMIST) students. Browse curated Previous Year Questions (PYQs) with math formulas and code snippets, and access student Academia portal data (attendance, timetable, marks, and profile) through a single unified interface.
+A modern, fast, and comprehensive web application designed for SRM Institute of Science and Technology (SRMIST) students. Browse curated Previous Year Questions (PYQs) with math formulas and code snippets.
 
 ---
 
@@ -27,18 +27,11 @@ A modern, fast, and comprehensive web application designed for SRM Institute of 
   - `21GNH101J` — Philosophy / Constitution
   - `21LEH101T` / `21LEH103T` — Communicative English & German
 
-### 🏛️ 2. SRM Academia Student Portal Integration
-- **Direct Login / Session Management**: Authenticate securely using your SRM Academia portal credentials.
-- **Attendance Tracker**: View overall and subject-wise attendance percentages with margin calculations.
-- **Timetable & Day Order**: Check daily class schedule, batch details, and active day order.
-- **Internal Marks & Results**: View test marks, internal assessments, and GPA.
-- **Student Profile**: Quick overview of registration number, program, semester, and personal details.
-
-### 🎨 3. Modern User Experience
+### 🎨 2. Modern User Experience
 - **Dark Mode**: Seamless toggle between light and dark themes with persistent user preference.
 - **Responsive Layout**: Optimized for mobile, tablet, and desktop screens.
-- **Accessible**: Skip-to-content link, keyboard focus rings, and `aria-current`/`aria-pressed` state on navigation and theme controls.
-- **Shareable Tabs**: The active tab is kept in the URL hash (`#pyq` / `#student`), so refresh and back/forward work.
+- **Accessible**: Skip-to-content link, keyboard focus rings, and `aria-pressed` state on the theme control.
+- **Shareable Links**: Copy a link to any question (`#pyq/<course>/<id>`); bookmarks are stored locally.
 - **Optional Analytics**: Google Analytics (`gtag.js`) loads only when `NEXT_PUBLIC_GA_ID` is set.
 
 ---
@@ -49,7 +42,6 @@ A modern, fast, and comprehensive web application designed for SRM Institute of 
 | :--- | :--- |
 | **Frontend** | [Next.js 15](https://nextjs.org/) (App Router, Turbopack), [React 19](https://react.dev/), [TypeScript](https://www.typescriptlang.org/), [Tailwind CSS](https://tailwindcss.com/) |
 | **Math & Code Rendering** | [KaTeX](https://katex.org/), [PrismJS](https://prismjs.com/) |
-| **Backend API** | [Node.js](https://nodejs.org/), [Express](https://expressjs.com/), [reddy-api-srm](https://www.npmjs.com/package/reddy-api-srm), [tsx](https://github.com/privatenumber/tsx) |
 | **Analytics** | Google Analytics (`gtag.js`) |
 
 ---
@@ -58,7 +50,7 @@ A modern, fast, and comprehensive web application designed for SRM Institute of 
 
 ```text
 SRM-PYQ/
-├── backend/                  # Express API server (Academia portal proxy)
+├── backend/                  # Standalone Academia API proxy (not used by this app; see note below)
 │   ├── src/
 │   │   └── index.ts          # API endpoints & authentication routes
 │   ├── .env.example          # Backend environment variables template
@@ -76,16 +68,15 @@ SRM-PYQ/
 ├── src/
 │   ├── app/
 │   │   ├── layout.tsx        # Root layout: fonts, metadata, theme init script, optional GA
-│   │   ├── page.tsx          # Main page: header, hash-based tabs (PYQ & Student Data), footer
+│   │   ├── page.tsx          # Main page: header, PYQ browser, footer
 │   │   ├── error.tsx         # Error boundary
 │   │   ├── not-found.tsx     # 404 page
 │   │   └── globals.css       # Tailwind & styling rules
 │   ├── components/
 │   │   ├── PyqSection.tsx    # PYQ question browser and viewer
-│   │   └── StudentDataSection.tsx # Academia portal dashboard
+│   │   └── pyq/              # Browse, search, question cards, helpers
 │   ├── hooks/
-│   │   ├── useDarkMode.ts    # Dark/light theme hook (hydration-safe)
-│   │   └── useHashTab.ts     # Active tab persisted in the URL hash
+│   │   └── useDarkMode.ts    # Dark/light theme hook (hydration-safe)
 │   └── lib/                  # Utilities and helpers
 ├── .env.example              # Next.js frontend environment template
 ├── LICENSE                   # MIT License
@@ -109,68 +100,25 @@ Install root (frontend) dependencies:
 npm install
 ```
 
-Install backend dependencies:
-```bash
-cd backend
-npm install
-cd ..
-```
-
 ### 2. Configure Environment Variables
 
-**Frontend (`.env.local`)**:
-Create a `.env.local` file in the root directory based on `.env.example`:
+Optionally create a `.env.local` file from `.env.example`:
 ```bash
 cp .env.example .env.local
 ```
 ```env
-# Backend API Base URL
-NEXT_PUBLIC_SRM_API_BASE=http://localhost:5000
-
 # Google Analytics (Optional) - analytics is disabled when unset
 # NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
-```
-
-**Backend (`backend/.env`)**:
-Create a `.env` file in the `backend/` directory based on `backend/.env.example`:
-```bash
-cp backend/.env.example backend/.env
-```
-```env
-# Port the API listens on
-PORT=5000
-# Interface to bind. Defaults to 127.0.0.1 (local only); set to 0.0.0.0 only
-# if you deliberately want the API reachable from other machines.
-HOST=127.0.0.1
-# Allowed browser origin(s) for CORS (allowlist). Default: http://localhost:3000
-# Must include the origin the frontend is served from.
-CORS_ORIGIN=http://localhost:3000
 ```
 
 ---
 
 ## 💻 Running the Application
 
-You can run both the frontend and backend simultaneously or start them individually.
-
-### Option A: Run Both Together (Recommended)
-```bash
-npm run dev:all
-```
-- **Web App**: [http://localhost:3000](http://localhost:3000)
-- **Backend API**: [http://localhost:5000](http://localhost:5000)
-
-### Option B: Run Individually
-
-**Terminal 1 — Next.js Frontend:**
 ```bash
 npm run dev
 ```
-
-**Terminal 2 — Express Backend:**
-```bash
-npm run dev:backend
-```
+Then open [http://localhost:3000](http://localhost:3000).
 
 ---
 
@@ -179,8 +127,6 @@ npm run dev:backend
 In the root directory, you can run:
 
 - `npm run dev`: Starts the Next.js frontend with Turbopack.
-- `npm run dev:backend`: Starts the backend API using `tsx watch`.
-- `npm run dev:all`: Starts both frontend and backend concurrently.
 - `npm run build`: Builds the production bundle for Next.js.
 - `npm run start`: Runs the built Next.js production server.
 - `npm run lint`: Runs ESLint checks.
@@ -189,11 +135,12 @@ In the root directory, you can run:
 
 ---
 
-## 🔒 Privacy & Security
+## 🔒 Privacy
 
-- SRM Academia credentials entered in the **Student data** tab are sent directly to the local backend proxy to communicate with the official Academia portal.
-- The backend binds to `127.0.0.1` by default (`HOST`), only accepts browser requests from origins in the `CORS_ORIGIN` allowlist, and rate-limits the login routes.
-- Credentials and session cookies are never stored on external databases or shared with third parties.
+- The app is fully static on the client: no accounts, no logins, no server-side storage. Bookmarks and theme preference are kept in your browser's `localStorage`.
+- Question text is HTML-escaped before rendering; only KaTeX and Prism output is injected.
+
+> **Note:** `backend/` contains a separate Academia (attendance/timetable) API proxy. It is not wired into this app's UI and can be developed and deployed independently.
 
 ---
 
