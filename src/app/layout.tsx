@@ -17,12 +17,12 @@ const geistMono = Geist_Mono({
 const SITE_NAME = "SRM StudyHub";
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://srm-pyq.vercel.app";
 const DESCRIPTION =
-  "SRM StudyHub: browse SRMIST previous year question papers with math and code rendering, and view your Academia attendance, timetable and marks in one place.";
+  "SRM StudyHub: browse SRMIST previous year question papers with math and code rendering.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME} — PYQs & Academia`,
+    default: `${SITE_NAME} — Previous Year Question Papers`,
     template: `%s | ${SITE_NAME}`,
   },
   description: DESCRIPTION,
@@ -30,13 +30,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: SITE_NAME,
-    title: `${SITE_NAME} — PYQs & Academia`,
+    title: `${SITE_NAME} — Previous Year Question Papers`,
     description: DESCRIPTION,
     url: "/",
   },
   twitter: {
     card: "summary",
-    title: `${SITE_NAME} — PYQs & Academia`,
+    title: `${SITE_NAME} — Previous Year Question Papers`,
     description: DESCRIPTION,
   },
 };
