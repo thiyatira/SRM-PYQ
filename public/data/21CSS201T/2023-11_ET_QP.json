@@ -1,0 +1,263 @@
+{
+  "formal_filename": "2023-11_ET_QP.json",
+  "paper_title": "B.Tech/M.Tech(Integrated) DEGREE EXAMINATION, NOVEMBER 2023 - Third Semester - 21CSS201T - COMPUTER ORGANISATION AND ARCHITECTURE",
+  "source": "2023-11 ET",
+  "questions": [
+    {
+      "question_number": "1",
+      "question_text": "Decimal 43 in Hexadecimal and BCD number system is respectively\n(A) B2, 0100 0011\n(B) 2B, 0100 0011\n(C) B2, 0011 0100\n(D) 2B, 0100 0011",
+      "marks": 1,
+      "answer": "(B) 2B, 0100 0011. $43 = 2\\times16+11$, so it is $2B_{16}$; BCD encodes each digit: 4 = 0100, 3 = 0011. (Option (D) is printed identical to (B).)",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+    },
+    {
+      "question_number": "2",
+      "question_text": "The 2's complement representation of -17 is\n(A) 01110\n(B) 11110\n(C) 01111\n(D) 10001",
+      "marks": 1,
+      "answer": "(C) 01111 (intended answer). $17 = 10001$; inverting gives 01110 and adding 1 gives 01111. Note: a correct signed representation of $-17$ needs at least 6 bits ($101111$), since 5-bit 2's complement only covers $-16$ to $+15$.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+    },
+    {
+      "question_number": "3",
+      "question_text": "The Excess-3 code of 23 is\n(A) 0101 0011\n(B) 0010 0000\n(C) 0010 0110\n(D) 0101 0110",
+      "marks": 1,
+      "answer": "(D) 0101 0110. Add 3 to each digit: $2+3=5 \\to 0101$ and $3+3=6 \\to 0110$.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+    },
+    {
+      "question_number": "4",
+      "question_text": "The equivalent gate is\n[Figure: inputs A, B feed a NOR gate; its output feeds a second gate used as a single-input inverter (inputs tied together, output bubble); that output passes through a NOT gate to give Y]\n(A) NOR\n(B) AND\n(C) NAND\n(D) OR",
+      "marks": 1,
+      "answer": "(A) NOR. The second gate (inputs tied) and the final NOT are two inverters in series, and they cancel. So $Y = \\overline{A+B}$, the output of the first (NOR) gate.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+    },
+    {
+      "question_number": "5",
+      "question_text": "RTN stands for ______\n(A) Register Transmission Notation\n(B) Register Transfer Notation\n(C) Regular Transmission Notation\n(D) Regular Transfer Notation",
+      "marks": 1,
+      "answer": "(B) Register Transfer Notation, for example $R3 \\leftarrow [R1] + [R2]$.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basic structure of computers"
+    },
+    {
+      "question_number": "6",
+      "question_text": "The ALU makes use of ______ to store the intermediate results.\n(A) Registers\n(B) Heap\n(C) Accumulators\n(D) Stack",
+      "marks": 1,
+      "answer": "(C) Accumulators. The accumulator holds an ALU operand and the intermediate/final results of ALU operations.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basic structure of computers"
+    },
+    {
+      "question_number": "7",
+      "question_text": "The addressing mode, where you directly specify the operand value is\n(A) Direct\n(B) Definite\n(C) Relative\n(D) Immediate",
+      "marks": 1,
+      "answer": "(D) Immediate. The operand value itself is in the instruction, for example `MOV R1, #25`.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basic structure of computers"
+    },
+    {
+      "question_number": "8",
+      "question_text": "An 24 bit address generates an address space of ______ locations.\n(A) 1024\n(B) 4096\n(C) 16,777,216\n(D) 1,048,576",
+      "marks": 1,
+      "answer": "(C) 16,777,216. $2^{24} = 16{,}777{,}216$ (16 M) locations.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basic structure of computers"
+    },
+    {
+      "question_number": "9",
+      "question_text": "What are the three components of an IEEE 754 floating-point number representation?\n(A) Sign, Mantissa and exponent\n(B) Sign, integer part and fractional part.\n(C) Mantissa, exponent and bias.\n(D) Sign, exponent and base.",
+      "marks": 1,
+      "answer": "(A) Sign, Mantissa and exponent. The fields are sign (1 bit), biased exponent and mantissa (fraction).",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Design of ALU"
+    },
+    {
+      "question_number": "10",
+      "question_text": "How many AND gates, Half Adders and Full Adders are required for 4X4 Array Multiplier?\n(A) 16,4,8\n(B) 16,8,4\n(C) 8,4,8\n(D) 8,4,4",
+      "marks": 1,
+      "answer": "(A) 16,4,8. There are $4\\times4=16$ partial-product AND gates. The three adder rows of 4 adders (12 in all) consist of 4 half adders and 8 full adders.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Design of ALU"
+    },
+    {
+      "question_number": "11",
+      "question_text": "The bits 1 & 1 are recorded as ______ in bit-pair recording.\n(A) -1\n(B) 0\n(C) +1\n(D) both -1 and 0",
+      "marks": 1,
+      "answer": "(D) both -1 and 0. In the bit-pair table, the pair 11 is recoded as $-1$ when the bit to its right is 0 (110) and as $0$ when that bit is 1 (111).",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Design of ALU"
+    },
+    {
+      "question_number": "12",
+      "question_text": "What is the value when the bit stream \"11010001\" is rotated right by two?\n(A) 00110100\n(B) 01110100\n(C) 01000100\n(D) 01000111",
+      "marks": 1,
+      "answer": "(B) 01110100. Rotating right by 2 moves the last two bits '01' to the front: 01 + 110100 = 01110100.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Design of ALU"
+    },
+    {
+      "question_number": "13",
+      "question_text": "Which register in the processor is single-directional?\n(A) MDR\n(B) PC\n(C) MAR\n(D) Temp",
+      "marks": 1,
+      "answer": "(C) MAR. The MAR only sends addresses from the processor to memory (unidirectional). The MDR is bidirectional.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Control Unit"
+    },
+    {
+      "question_number": "14",
+      "question_text": "The Program Counter gets incremented\n(A) After the instruction decoding\n(B) After the fetch cycle\n(C) After the IR instruction gets executed\n(D) After the read cycle",
+      "marks": 1,
+      "answer": "(B) After the fetch cycle. The PC is incremented (PC ← PC+4) during/at the end of the fetch phase, so it points to the next instruction.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Control Unit"
+    },
+    {
+      "question_number": "15",
+      "question_text": "In multiple Bus organisation, the registers are collectively placed and referred to as\n(A) Register file\n(B) Set registers\n(C) Register Block\n(D) Map registers",
+      "marks": 1,
+      "answer": "(A) Register file, a multi-ported block of general-purpose registers.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Control Unit"
+    },
+    {
+      "question_number": "16",
+      "question_text": "If the instruction, Add R1, R2, R3 is executed in a system that is pipe-lined, then the number of steps required to execute is\n(A) 3\n(B) ~2\n(C) ~1\n(D) 6",
+      "marks": 1,
+      "answer": "(C) ~1. In an ideal pipeline one instruction completes per clock cycle, so the effective number of steps per instruction is about 1.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Control Unit"
+    },
+    {
+      "question_number": "17",
+      "question_text": "ARM processors are basically designed for\n(A) Main frame systems\n(B) Distributed systems\n(C) Mobile systems\n(D) Super computers",
+      "marks": 1,
+      "answer": "(C) Mobile systems. ARM's low-power RISC design targets mobile and embedded devices.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Parallelism"
+    },
+    {
+      "question_number": "18",
+      "question_text": "SIMD stands for\n(A) Simple Instruction Multiple Decoding\n(B) Single Instruction Multiple Data\n(C) Sequential Instruction Multiple Decoding\n(D) System Information Mutable Data",
+      "marks": 1,
+      "answer": "(B) Single Instruction Multiple Data.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Parallelism"
+    },
+    {
+      "question_number": "19",
+      "question_text": "Processor which is complex and expensive to produce is\n(A) RISC\n(B) EPIC\n(C) Multi-core\n(D) CISC",
+      "marks": 1,
+      "answer": "(D) CISC. Its large, variable-length, complex instruction set (often microcoded) makes the hardware complex and costly.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Parallelism"
+    },
+    {
+      "question_number": "20",
+      "question_text": "The cost of a parallel processing is primarily determined by :\n(A) time complexity\n(B) switching complexity\n(C) circuit complexity\n(D) power complexity",
+      "marks": 1,
+      "answer": "(A) time complexity. The cost of a parallel algorithm is defined as (parallel run time) × (number of processors), so it is governed by time complexity.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Parallelism"
+    },
+    {
+      "question_number": "21. a.",
+      "question_text": "i) Perform BCD Addition for 984+599. (4 marks)\nii) Perform (111100) - (1011) using 1's and 2's complement method. (4 marks)",
+      "marks": 8,
+      "answer": "**i) 984 + 599 in BCD**\n```\n   1001 1000 0100   (984)\n + 0101 1001 1001   (599)\n```\n- Units: $0100+1001 = 1101$ (13 > 9), add 0110 to get $1\\,0011$. Digit 3, carry 1.\n- Tens: $1000+1001+1 = 1\\,0010$ (18, carry generated), add 0110 to get $1\\,1000$. Digit 8, carry 1.\n- Hundreds: $1001+0101+1 = 1111$ (15 > 9), add 0110 to get $1\\,0101$. Digit 5, carry 1.\n- Thousands: carry 1 gives 0001.\n\nResult: $0001\\ 0101\\ 1000\\ 0011 = 1583$. Check: $984+599 = 1583$.\n\n**ii) 111100 − 1011** (that is, $60 - 11 = 49$). Make the subtrahend the same length: 001011.\n\n*1's complement method:* 1's complement of 001011 is 110100.\n```\n  111100\n+ 110100\n--------\n1 110000\n+      1  (end-around carry)\n--------\n  110001\n```\n\n*2's complement method:* 2's complement of 001011 is 110101.\n```\n  111100\n+ 110101\n--------\n1 110001  (discard carry)\n```\nBoth methods give $110001_2 = 49$. A carry was produced, so the result is positive.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+    },
+    {
+      "question_number": "21. b.",
+      "question_text": "i) Implement F=(A'+B)(C+D')E' using only NOR Gates. (4 marks)\nii) Convert Binary \"1010\" into Gray code and also draw the logic diagram to implement the conversion. (4 marks)",
+      "marks": 8,
+      "answer": "**i)** F is in product-of-sums form, which maps directly onto NOR-NOR logic:\n$$F = (A'+B)(C+D')E' = \\overline{\\overline{(A'+B)} + \\overline{(C+D')} + E}$$\nImplementation:\n1. $A' = \\text{NOR}(A,A)$ and $D' = \\text{NOR}(D,D)$ (NOR gates used as inverters).\n2. $X_1 = \\text{NOR}(A', B) = \\overline{A'+B}$\n3. $X_2 = \\text{NOR}(C, D') = \\overline{C+D'}$\n4. $F = \\text{NOR}(X_1, X_2, E) = \\overline{X_1+X_2+E}$\n\nThe term $E'$ needs no inverter, because $\\overline{E'} = E$ is fed straight into the final NOR. In total: 2 inverter-NORs, 2 two-input NORs and 1 three-input NOR.\n\n**ii)** Binary to Gray: $G_3 = B_3$ and $G_i = B_{i+1}\\oplus B_i$.\nFor $B = 1010$:\n- $G_3 = 1$\n- $G_2 = 1\\oplus0 = 1$\n- $G_1 = 0\\oplus1 = 1$\n- $G_0 = 1\\oplus0 = 1$\n\nGray code = **1111**.\n\nLogic diagram: $B_3$ is wired directly to $G_3$, and three XOR gates produce $G_2 = B_3\\oplus B_2$, $G_1 = B_2\\oplus B_1$ and $G_0 = B_1\\oplus B_0$.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+    },
+    {
+      "question_number": "22. a.",
+      "question_text": "What is an addressing mode? What is the need for addressing in a computer system? Explain the various addressing modes with suitable examples",
+      "marks": 8,
+      "answer": "An **addressing mode** is the way an instruction specifies the location (effective address, EA) of its operand.\n\n**Need:** addressing modes give programming flexibility (pointers, arrays, loops, records), reduce the number of bits in the address field, support relocatable code, and make efficient use of memory and registers.\n\n**Modes:**\n- **Immediate:** the operand is in the instruction. `MOV R1, #200` gives $R1\\leftarrow200$.\n- **Register:** the operand is in a register. `ADD R1, R2`\n- **Absolute/Direct:** EA = address given in the instruction. `MOV R1, LOC` gives $R1\\leftarrow[LOC]$.\n- **Indirect (register/memory):** EA = contents of a register or memory location. `ADD R1, (R2)` gives $R1\\leftarrow R1+[[R2]]$.\n- **Index (displacement):** EA = X + [Ri]. `MOV R1, 20(R2)`. Used for arrays and records.\n- **Base with index:** EA = [Ri] + [Rj]. `MOV R1, (R2,R3)`\n- **Relative:** EA = X + [PC]. `BR LOOP` (branch offset). Gives position-independent code.\n- **Autoincrement:** EA = [Ri], then Ri is incremented. `MOV R1, (R2)+`. Used to step through lists and for stack pop.\n- **Autodecrement:** Ri is decremented first, then EA = [Ri]. `MOV -(R2), R1`. Used for stack push.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basic structure of computers"
+    },
+    {
+      "question_number": "22. b.",
+      "question_text": "Draw the Functional units of the computer and illustrate the connections between the processor and the memory.",
+      "marks": 8,
+      "answer": "**Functional units:** Input, Memory, ALU, Control and Output. The ALU and control together form the processor (CPU), and all units are interconnected (usually by a bus).\n- **Input unit** (keyboard, mouse) accepts coded information.\n- **Memory** (primary RAM/cache and secondary storage) stores programs and data.\n- **ALU** performs arithmetic and logic operations.\n- **Control unit** generates timing and control signals that coordinate all units.\n- **Output unit** (monitor, printer) presents the results.\n\n**Processor–memory connection (diagram):** the processor contains PC, IR, MAR, MDR, the general-purpose registers $R_0$ to $R_{n-1}$, the ALU and control. MAR connects to memory over the **address bus** (unidirectional), MDR connects over the **data bus** (bidirectional), and the control lines (Read, Write, MFC) connect control to memory.\n\n**Operation:**\n1. PC → MAR and a Read signal is issued.\n2. Memory places the word on the data bus, and it goes into MDR.\n3. MDR → IR; the instruction is decoded and PC is incremented.\n4. For operands, the address goes to MAR, then Read/Write; data moves through MDR to/from the registers or ALU.\n5. Results are stored back into memory through MDR with a Write signal.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basic structure of computers"
+    },
+    {
+      "question_number": "23. a.",
+      "question_text": "Multiply -10 X - 4 using Booth Algorithm and Bit Pair Recoding.",
+      "marks": 8,
+      "answer": "Use 5-bit operands. Multiplicand $M = -10 = 10110$, so $-M = +10 = 01010$. Multiplier $Q = -4 = 11100$. Expected product $= +40$.\n\n**Booth's algorithm** (A = 00000, $Q_{-1} = 0$):\n\n| Step | $Q_0Q_{-1}$ | Action | A | Q | $Q_{-1}$ |\n|---|---|---|---|---|---|\n| Init | | | 00000 | 11100 | 0 |\n| 1 | 00 | ASHR | 00000 | 01110 | 0 |\n| 2 | 00 | ASHR | 00000 | 00111 | 0 |\n| 3 | 10 | A=A−M=01010; ASHR | 00101 | 00011 | 1 |\n| 4 | 11 | ASHR | 00010 | 10001 | 1 |\n| 5 | 11 | ASHR | 00001 | 01000 | 1 |\n\nProduct $AQ = 00001\\,01000 = 0000101000_2 = +40$.\n\n**Bit-pair recoding:** sign-extend Q to 6 bits and append a 0 on the right: $111100\\,|\\,0$.\n- $(b_1,b_0,b_{-1}) = (0,0,0) \\to 0$\n- $(b_3,b_2,b_1) = (1,1,0) \\to -1$\n- $(b_5,b_4,b_3) = (1,1,1) \\to 0$\n\nRecoded multiplier: $(0, -1, 0)$, which checks as $-1\\times4 = -4$.\n\nPartial products (10-bit):\n- Weight 1: $0$, giving 0000000000\n- Weight 4: $-1\\times M = +10$, shifted left 2 places gives 0000101000\n- Weight 16: 0000000000\n\nSum $= 0000101000 = +40$. So $(-10)\\times(-4) = 40$.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Design of ALU"
+    },
+    {
+      "question_number": "23. b.",
+      "question_text": "Divide 10 / 3 using Non-Restoring Method. Show the operations performed in each step.",
+      "marks": 8,
+      "answer": "Dividend $Q = 10 = 1010$, divisor $M = 3 = 00011$, so $-M = 11101$. A = 00000 (5 bits). n = 4 cycles.\n\nRule for each cycle: if A ≥ 0, shift AQ left and do A = A − M; if A < 0, shift AQ left and do A = A + M. Then set $q_0 = 1$ if the new A ≥ 0, else $q_0 = 0$.\n\n| Cycle | Operation | A | Q |\n|---|---|---|---|\n| 0 | Initial | 00000 | 1010 |\n| 1 | Shift left | 00001 | 010_ |\n| | A ≥ 0, so A = A − M | 11110 | 0100 ($q_0=0$) |\n| 2 | Shift left | 11100 | 100_ |\n| | A < 0, so A = A + M | 11111 | 1000 ($q_0=0$) |\n| 3 | Shift left | 11111 | 000_ |\n| | A < 0, so A = A + M | 00010 | 0001 ($q_0=1$) |\n| 4 | Shift left | 00100 | 001_ |\n| | A ≥ 0, so A = A − M | 00001 | 0011 ($q_0=1$) |\n\nFinal A = 00001 is positive, so no remainder correction is needed.\n\n**Quotient** $Q = 0011 = 3$, **Remainder** $A = 00001 = 1$. Check: $3\\times3+1 = 10$.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Design of ALU"
+    },
+    {
+      "question_number": "24. a.",
+      "question_text": "Draw the Single Bus Organization and explain the execution of an instruction.",
+      "marks": 8,
+      "answer": "**Single-bus organisation (diagram):** one internal processor bus connects PC, MAR, MDR, IR, Y, Z, TEMP, the registers $R_0$ to $R_{n-1}$, the ALU and the instruction decoder/control logic. MAR drives the external address lines and MDR connects to the external data lines. Y holds one ALU operand (input A). A MUX selects either Y or the constant 4 for the ALU, the other ALU input comes from the bus, and the ALU output goes to Z. Each register has $R_{in}$/$R_{out}$ gating signals.\n\n**Instruction execution:** an instruction is executed as a sequence of steps: fetch (PC→MAR, read memory into MDR→IR, PC+4), decode, operand fetch, execute and write back. The basic operations are register transfers, ALU operations, memory reads and memory writes.\n\n**Example: Add (R3), R1** ($R1 \\leftarrow R1 + [R3]$):\n1. PC$_{out}$, MAR$_{in}$, Read, Select4, Add, Z$_{in}$\n2. Z$_{out}$, PC$_{in}$, Y$_{in}$, WMFC\n3. MDR$_{out}$, IR$_{in}$\n4. R3$_{out}$, MAR$_{in}$, Read\n5. R1$_{out}$, Y$_{in}$, WMFC\n6. MDR$_{out}$, SelectY, Add, Z$_{in}$\n7. Z$_{out}$, R1$_{in}$, End\n\nOnly one transfer can use the bus per clock, which is why temporaries Y and Z are needed and execution is sequential (slow, but the hardware is simple).",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Control Unit"
+    },
+    {
+      "question_number": "24. b.",
+      "question_text": "Explain the classes of Hazards that degrades the performance of Pipe lining.",
+      "marks": 8,
+      "answer": "A **hazard** is any condition that stalls the pipeline (creates bubbles) and so lowers throughput below one instruction per cycle.\n\n**1. Structural (resource) hazards:** two instructions need the same hardware resource in the same cycle, for example a single memory used for both instruction fetch and data access, or one ALU. *Solutions:* separate instruction and data caches, duplicated functional units, multi-ported register files.\n\n**2. Data hazards:** an instruction depends on the result of a previous instruction that is still in the pipeline. Example:\n```\nAdd R2, R3, R4   ; R4 <- R2+R3\nSub R4, R5, R6   ; needs R4\n```\nTypes are RAW (true dependence), WAR and WAW. *Solutions:* operand forwarding/bypassing, hardware interlocks (stalls), and compiler NOP insertion or instruction reordering.\n\n**3. Control (instruction/branch) hazards:** the target of a branch is not known until it is resolved, so instructions fetched after the branch may be wrong (branch penalty). Cache misses on instruction fetch also stall the pipeline. *Solutions:* resolving branches early, delayed branching (branch delay slots), static/dynamic branch prediction (2-bit counters, BTB), instruction prefetch queues.\n\nThe effect on performance: with stall cycles, $\\text{CPI} = 1 + \\text{stall cycles per instruction}$, so speed-up $= \\dfrac{\\text{pipeline depth}}{1+\\text{stalls}}$.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Control Unit"
+    },
+    {
+      "question_number": "25. a.",
+      "question_text": "What are the architecture of Flynn's Classification? Explain.",
+      "marks": 8,
+      "answer": "Flynn classifies computers by the number of concurrent **instruction streams** and **data streams**.\n\n1. **SISD (Single Instruction, Single Data):** one control unit, one processing element and one memory; instructions run sequentially (pipelining is possible). Example: a classical uniprocessor or von Neumann machine.\n2. **SIMD (Single Instruction, Multiple Data):** one control unit broadcasts each instruction to many processing elements, each working on its own data (lock-step). Examples: array/vector processors, GPUs, SSE/AVX/NEON. Suited to image processing and matrix operations.\n3. **MISD (Multiple Instruction, Single Data):** several processing units apply different instructions to the same data stream. This is rare: systolic arrays and fault-tolerant redundant systems (for example flight control).\n4. **MIMD (Multiple Instruction, Multiple Data):** multiple autonomous processors, each running its own program on its own data. They are either shared-memory (tightly coupled multiprocessors, multi-core) or distributed-memory (loosely coupled clusters, multicomputers).\n\nThe diagram for each shows control unit(s) → instruction stream(s) → processing unit(s) ↔ data stream(s) ↔ memory module(s).",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Parallelism"
+    },
+    {
+      "question_number": "25. b.",
+      "question_text": "Discuss the features, advantages and disadvantages of ARM Processor.",
+      "marks": 8,
+      "answer": "**ARM (Advanced RISC Machine) features:**\n- 32-bit (ARMv7) or 64-bit (ARMv8 AArch64) RISC load/store architecture with fixed-length 32-bit instructions.\n- 16 visible 32-bit registers (R0 to R15, where R13 = SP, R14 = LR, R15 = PC) plus CPSR, with banked registers for exception modes.\n- Conditional execution of almost every instruction, and a barrel shifter combined with ALU operations.\n- Thumb/Thumb-2 16-bit compressed instruction sets for code density.\n- Pipelined (3-stage in ARM7, deeper in Cortex cores), hardwired control.\n- Multiple processor modes (User, FIQ, IRQ, Supervisor, Abort, Undefined, System).\n- Extensions: NEON SIMD, VFP floating point, TrustZone security, Jazelle.\n- Load/store multiple instructions; little/big-endian support.\n\n**Advantages:** low power consumption and high performance per watt; small die area and low cost; simple instruction set with good code density (Thumb); wide licensing ecosystem and toolchain support; high scalability from microcontrollers (Cortex-M) to servers (Neoverse).\n\n**Disadvantages:** lower peak single-thread performance than high-end x86 in some workloads; not binary-compatible with x86 software; RISC programs can need more instructions (larger code than CISC without Thumb); performance depends heavily on compiler optimisation; fragmentation across licensees and implementations.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Parallelism"
+    },
+    {
+      "question_number": "26.",
+      "question_text": "What is the main disadvantage of Ripple Carry Adder? Explain how it is avoided in Carry Look Ahead Adder using a 4-bit Adder design.",
+      "marks": 15,
+      "answer": "**Disadvantage of ripple-carry adder (RCA):** each full adder must wait for the carry from the previous stage. The carry ripples through all n stages, so the delay grows linearly: about $2n$ gate delays for the final carry and $2n-1$ for the MSB sum (8 delays for 4 bits). This makes RCAs slow for wide words.\n\n**Carry look-ahead adder (CLA):** for each bit, define\n$$G_i = A_iB_i \\ (\\text{generate}), \\qquad P_i = A_i\\oplus B_i \\ (\\text{propagate})$$\n$$C_{i+1} = G_i + P_iC_i, \\qquad S_i = P_i\\oplus C_i$$\nExpanding the recursion removes the ripple:\n$$C_1 = G_0 + P_0C_0$$\n$$C_2 = G_1 + P_1G_0 + P_1P_0C_0$$\n$$C_3 = G_2 + P_2G_1 + P_2P_1G_0 + P_2P_1P_0C_0$$\n$$C_4 = G_3 + P_3G_2 + P_3P_2G_1 + P_3P_2P_1G_0 + P_3P_2P_1P_0C_0$$\n\n**4-bit CLA design (diagram):**\n1. A P/G generator: 4 XOR gates ($P_i$) and 4 AND gates ($G_i$).\n2. Carry look-ahead logic: AND-OR networks implementing $C_1$ to $C_4$ directly from $P_i$, $G_i$ and $C_0$ (AND gates with up to 5 inputs, OR gates with up to 5 inputs).\n3. A sum generator: 4 XOR gates $S_i = P_i\\oplus C_i$.\n\nThe circuit can also produce block outputs $G^* = G_3 + P_3G_2 + P_3P_2G_1 + P_3P_2P_1G_0$ and $P^* = P_3P_2P_1P_0$, which are used for cascading.\n\n**Timing:** P and G take 1 gate delay; all carries take 2 more (3 in total); all sums take 1 more (4 in total). This is independent of carry propagation, compared with 8 for a 4-bit RCA. For 16 bits, four 4-bit CLAs with a second-level look-ahead unit give $C_{16}$ in 5 delays and the sums in 8 (an RCA needs about 32).\n\n**Worked example:** A = 1011, B = 0110, $C_0 = 0$. Then $G = 0010$ and $P = 1101$. $C_1 = 0$, $C_2 = G_1 = 1$, $C_3 = G_2 + P_2C_2 = 0+1 = 1$, $C_4 = G_3 + P_3C_3 = 0+1 = 1$. Sum $S = P\\oplus C = 1101\\oplus1100 = 0001$, with carry 1, giving $10001 = 17$ (11 + 6). Correct.\n\n**Trade-off:** higher speed, at the cost of more gates and higher fan-in; a practical block size is 4 bits.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Design of ALU"
+    },
+    {
+      "question_number": "27.",
+      "question_text": "i) Evaluate (A+B) * (C+D) using all 4 types of addressing instructions. (8 Marks)\nii) Write an Assemble Language Program to add and subtract 16-bit numbers using 8086. (7 marks)",
+      "marks": 15,
+      "answer": "**i) X = (A+B)*(C+D)**\n\n*Three-address:*\n```\nADD R1, A, B    ; R1 <- M[A]+M[B]\nADD R2, C, D    ; R2 <- M[C]+M[D]\nMUL X, R1, R2   ; M[X] <- R1*R2\n```\n*Two-address:*\n```\nMOV R1, A   ; R1 <- M[A]\nADD R1, B   ; R1 <- R1+M[B]\nMOV R2, C   ; R2 <- M[C]\nADD R2, D   ; R2 <- R2+M[D]\nMUL R1, R2  ; R1 <- R1*R2\nMOV X, R1   ; M[X] <- R1\n```\n*One-address (accumulator):*\n```\nLOAD A    ; AC <- M[A]\nADD B     ; AC <- AC+M[B]\nSTORE T   ; M[T] <- AC\nLOAD C    ; AC <- M[C]\nADD D     ; AC <- AC+M[D]\nMUL T     ; AC <- AC*M[T]\nSTORE X   ; M[X] <- AC\n```\n*Zero-address (stack):*\n```\nPUSH A   ; TOS <- A\nPUSH B   ; TOS <- B\nADD      ; TOS <- A+B\nPUSH C\nPUSH D\nADD      ; TOS <- C+D\nMUL      ; TOS <- (A+B)*(C+D)\nPOP X    ; M[X] <- TOS\n```\n\n**ii) 8086 program: 16-bit addition and subtraction**\n```asm\nDATA SEGMENT\n  N1   DW 1234H\n  N2   DW 0ABCDH\n  SUM  DW ?\n  CRY  DB 0\n  DIFF DW ?\n  BRW  DB 0\nDATA ENDS\nCODE SEGMENT\n  ASSUME CS:CODE, DS:DATA\nSTART: MOV AX, DATA\n       MOV DS, AX\n       ; ---- addition ----\n       MOV AX, N1\n       ADD AX, N2        ; AX = N1 + N2\n       MOV SUM, AX\n       JNC SKIP1\n       MOV CRY, 01H      ; store carry\nSKIP1: ; ---- subtraction ----\n       MOV AX, N1\n       SUB AX, N2        ; AX = N1 - N2\n       MOV DIFF, AX\n       JNC SKIP2\n       MOV BRW, 01H      ; store borrow\nSKIP2: MOV AH, 4CH\n       INT 21H\nCODE ENDS\n     END START\n```\nFor N1 = 1234H and N2 = ABCDH: SUM = BE01H with CRY = 0, and DIFF = 6667H with BRW = 1 (because N1 < N2).",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basic structure of computers"
+    }
+  ]
+}

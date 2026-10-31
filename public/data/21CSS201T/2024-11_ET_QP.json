@@ -1,0 +1,263 @@
+{
+    "formal_filename": "2024-11_ET_QP.json",
+    "paper_title": "B.Tech / M.Tech (Integrated) DEGREE EXAMINATION, NOVEMBER 2024 - Third Semester - 21CSS201T - COMPUTER ORGANIZATION AND ARCHITECTURE",
+    "source": "2024-11 ET",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "Reflected binary code is also known as\n(A) BCD Code\n(B) Binary Code\n(C) ASCII Code\n(D) Grey Code",
+            "marks": 1,
+            "answer": "(D) Grey Code\n\nRationale: Gray code is called reflected binary code because each half of the code list mirrors the other with the MSB changed.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "2",
+            "question_text": "Which of the following is the correct hexadecimal representation for the decimal number 255\n(A) FF\n(B) F0\n(C) FE\n(D) F1",
+            "marks": 1,
+            "answer": "(A) FF\n\nRationale: $255 = 15\\times16+15$ → FF.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "3",
+            "question_text": "What is the 2's complement of the binary number 00001101\n(A) 11110010\n(B) 11110011\n(C) 11110001\n(D) 11101101",
+            "marks": 1,
+            "answer": "(B) 11110011\n\nRationale: 1's complement 11110010 + 1 = 11110011.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "4",
+            "question_text": "What is the gray code equivalent of the binary number 11011\n(A) 10110\n(B) 10001\n(C) 11101\n(D) 10010",
+            "marks": 1,
+            "answer": "(A) 10110\n\nRationale: $G_4=1$, $1\\oplus1=0$, $1\\oplus0=1$, $0\\oplus1=1$, $1\\oplus1=0$ → 10110.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "5",
+            "question_text": "Which of the register/s of the processor is/are connected to Memory Bus?\n(A) Personal Computer\n(B) Memory Address Register\n(C) Instruction Register\n(D) Program Counter",
+            "marks": 1,
+            "answer": "(B) Memory Address Register\n\nRationale: MAR (with MDR) connects the processor to the memory bus; MAR drives the address lines.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "6",
+            "question_text": "Data is transferred to and from memory in groups of bits called\n(A) Words\n(B) Address\n(C) Logic gates\n(D) Bit Number",
+            "marks": 1,
+            "answer": "(A) Words\n\nRationale: Memory transfers occur in units of words (fixed-size groups of bits).",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "7",
+            "question_text": "1 GB is equivalent to how to many bytes\n(A) $2^{10}$ bytes\n(B) $2^{20}$ bytes\n(C) $2^{50}$ bytes\n(D) $2^{30}$ bytes",
+            "marks": 1,
+            "answer": "(D) $2^{30}$ bytes\n\nRationale: 1 GB = $2^{30}$ bytes.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "8",
+            "question_text": "A computer has 32 MB (megabytes) of memory. How many bits are needed to address any single byte in memory\n(A) 30 bits\n(B) 25 bits\n(C) 26 bits\n(D) 20 bits",
+            "marks": 1,
+            "answer": "(B) 25 bits\n\nRationale: $32\\text{ MB} = 2^5\\times2^{20} = 2^{25}$ bytes → 25 address bits.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "9",
+            "question_text": "Mention the adder circuit which can add two binary numbers and also take into account an input carry?\n(A) Half Adder\n(B) Full Adder\n(C) Ripple Adder\n(D) Look-Ahead Adder",
+            "marks": 1,
+            "answer": "(B) Full Adder\n\nRationale: A full adder adds A, B and carry-in.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "10",
+            "question_text": "Which algorithm is commonly used for binary multiplication in digital circuits?\n(A) Booth's algorithm\n(B) De Morgan's theorem\n(C) Ripple-carry multiplication\n(D) Carry-lookahead multiplication",
+            "marks": 1,
+            "answer": "(A) Booth's algorithm\n\nRationale: Booth's algorithm is the standard signed binary multiplication algorithm.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "11",
+            "question_text": "What is the primary disadvantage of using a straight forward shift-and-add multiplier\n(A) High complexity\n(B) High speed\n(C) Large area usage\n(D) Long computation time",
+            "marks": 1,
+            "answer": "(D) Long computation time\n\nRationale: It needs n sequential add/shift cycles, so it is slow.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "12",
+            "question_text": "How many bits are used for the exponent in IEEE 754 standard for single-precision floating-point number representation\n(A) 8\n(B) 11\n(C) 23\n(D) 32",
+            "marks": 1,
+            "answer": "(A) 8\n\nRationale: Single precision: 1 sign, 8 exponent, 23 mantissa bits.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "13",
+            "question_text": "The stages of 3 stage pipelining are\n(A) Decode, Fetch, Execute\n(B) Execute, Fetch, Decode\n(C) Fetch, Decode, Execute\n(D) Address generation, Fetch, Execute",
+            "marks": 1,
+            "answer": "(C) Fetch, Decode, Execute\n\nRationale: A 3-stage pipeline: Fetch → Decode → Execute (e.g. ARM7).",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "14",
+            "question_text": "Control Hazard is otherwise called as\n(A) Data Hazard\n(B) Instruction Hazard\n(C) Structural Hazard\n(D) Information Hazard",
+            "marks": 1,
+            "answer": "(B) Instruction Hazard\n\nRationale: Control hazards (due to branches) are also called instruction hazards.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "15",
+            "question_text": "A set of microinstructions for a single machine instruction is called\n(A) Program\n(B) Command\n(C) Micro program\n(D) Micro command",
+            "marks": 1,
+            "answer": "(C) Micro program\n\nRationale: The sequence of microinstructions for an instruction is its microprogram (microroutine).",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "16",
+            "question_text": "The disadvantage/s of the hardwired approach is\n(A) It is less flexible\n(B) It cannot be used for complex instructions\n(C) It is costly\n(D) Less flexible & cannot be used for complex instructions",
+            "marks": 1,
+            "answer": "(D) Less flexible & cannot be used for complex instructions\n\nRationale: Hardwired control is inflexible and impractical for complex instruction sets.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "17",
+            "question_text": "Which of the following is a primary reason for using parallelism in computing\n(A) To improve software compatibility\n(B) To decrease the power consumption\n(C) To increase number of processor cores for better performance\n(D) To increase the complexity",
+            "marks": 1,
+            "answer": "(C) To increase number of processor cores for better performance\n\nRationale: Parallelism is used to improve performance by using multiple processing units/cores.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "18",
+            "question_text": "In Flynn's classification, MIMD refers to\n(A) Single Instruction stream, Single Data stream\n(B) Multiple Instruction streams, Single fragment stream\n(C) Single Instruction stream, Multiple Data streams\n(D) Multiple Instruction streams, Multiple Data streams",
+            "marks": 1,
+            "answer": "(D) Multiple Instruction streams, Multiple Data streams\n\nRationale: MIMD = Multiple Instruction, Multiple Data streams.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "19",
+            "question_text": "Instruction level Parallelism achieves more than one instruction at a time through\n(A) Dynamic scheduling\n(B) Priority scheduling\n(C) Time-slot scheduling\n(D) Double scheduling",
+            "marks": 1,
+            "answer": "(A) Dynamic scheduling\n\nRationale: ILP is exploited by dynamic scheduling (out-of-order issue) along with pipelining/superscalar execution.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "20",
+            "question_text": "Which instruction set architecture is typically used in ARM processors\n(A) Complex Instruction Set Computer\n(B) Reduced Instruction Set Computer\n(C) Very Long Instruction Word\n(D) Explicitly Parallel Instruction Computing",
+            "marks": 1,
+            "answer": "(B) Reduced Instruction Set Computer\n\nRationale: ARM = Advanced RISC Machine.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "21. a.",
+            "question_text": "Describe briefly about Universal Gates? Show how to implement the basic gates using Universal Gates.",
+            "marks": 8,
+            "answer": "**Universal gates** are gates from which any Boolean function (and hence every other gate) can be implemented. NAND and NOR are universal.\n- NAND: $Y=\\overline{AB}$ (0 only when all inputs are 1).\n- NOR: $Y=\\overline{A+B}$ (1 only when all inputs are 0).\n\n**Using NAND gates**\n- NOT: tie inputs together – $\\overline{A\\cdot A} = \\bar A$ (1 gate).\n- AND: NAND followed by a NAND-inverter – $\\overline{\\overline{AB}} = AB$ (2 gates).\n- OR: invert each input with NAND, then NAND – $\\overline{\\bar A\\cdot\\bar B} = A+B$ (3 gates, by De Morgan).\n- NOR: OR circuit followed by NAND inverter (4 gates).\n- XOR: $Y = \\overline{\\overline{A\\cdot\\overline{AB}}\\cdot\\overline{B\\cdot\\overline{AB}}}$ (4 gates).\n\n**Using NOR gates**\n- NOT: $\\overline{A+A} = \\bar A$ (1 gate).\n- OR: NOR followed by NOR-inverter – $\\overline{\\overline{A+B}} = A+B$ (2 gates).\n- AND: invert each input with NOR, then NOR – $\\overline{\\bar A+\\bar B} = AB$ (3 gates).\n- NAND: AND circuit followed by NOR inverter (4 gates).\n\n(Diagrams: draw each configuration with the inputs shorted for inverters.) Advantage: an entire design can be built from a single gate type, reducing IC inventory and cost.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "21. b.",
+            "question_text": "Given the binary numbers 101101 and 110110, perform the following tasks\n1. Add the binary numbers and provide the result.\n2. Convert the binary result to its decimal equivalent.\n3. Convert the decimal result to Octal and Hexadecimal",
+            "marks": 8,
+            "answer": "**1. Addition**\n```\n   101101   (45)\n + 110110   (54)\n --------\n  1100011\n```\nBit-wise (LSB first): 1+0=1; 0+1=1; 1+1=0 c1; 1+0+1=0 c1; 0+1+1=0 c1; 1+1+1=1 c1 → result **1100011₂**.\n\n**2. Decimal**: $1\\cdot64+1\\cdot32+0+0+0+1\\cdot2+1\\cdot1 = 99_{10}$ (check: 45 + 54 = 99).\n\n**3. Octal**: 99/8 = 12 r3, 12/8 = 1 r4, 1/8 = 0 r1 → **143₈** (grouping 001 100 011).\n**Hexadecimal**: 99/16 = 6 r3 → **63₁₆** (grouping 0110 0011).",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "22. a.",
+            "question_text": "List and discuss about different addressing modes with suitable examples",
+            "marks": 8,
+            "answer": "**Addressing modes** specify how the effective address (EA) of an operand is obtained.\n\n1. **Immediate** – operand is in the instruction. `MOV R0, #200` → $R0 \\leftarrow 200$.\n2. **Register** – operand is in a register. `ADD R1, R2` → $R1 \\leftarrow R1 + R2$.\n3. **Direct / Absolute** – instruction contains the memory address. `MOV R1, LOC` → EA = LOC.\n4. **Indirect** – instruction gives a register/memory location holding the address. `MOV R1, (R2)` → EA = [R2].\n5. **Index** – EA = X + [Ri], X a constant offset. `MOV R1, 20(R2)` → EA = 20 + [R2]; used for arrays/records.\n6. **Base with index** – EA = [Ri] + [Rj]: `(R1,R2)`; base-with-index-and-offset EA = [Ri]+[Rj]+X.\n7. **Relative** – EA = [PC] + X; used in branches: `BR LOOP` (offset from PC).\n8. **Autoincrement** – `(Ri)+`: EA = [Ri], then Ri is incremented by operand size; used to step through arrays/stack pop.\n9. **Autodecrement** – `-(Ri)`: Ri is decremented first, then EA = [Ri]; used for stack push.\n\nAdvantages: flexibility in program writing, fewer bits for addresses, support for pointers, arrays, loops, relocatable code.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "22. b.",
+            "question_text": "Describe the basic functional blocks of computer system and discuss about the functions of the Arithmetic and Logic Unit (ALU) and the Memory Unit (MU) in the basic structure of a computer.",
+            "marks": 8,
+            "answer": "A computer consists of five functional units interconnected by buses: **Input unit, Memory unit, Arithmetic and Logic Unit, Output unit and Control unit** (ALU + control = processor/CPU).\n\n- **Input unit** – accepts coded information from keyboard, mouse, sensors etc., and transfers it to memory/processor.\n- **Output unit** – sends processed results to the outside world (monitor, printer).\n- **Control unit** – coordinates all units; fetches, decodes instructions and generates timing and control signals.\n\n**Arithmetic and Logic Unit (ALU)**\n- Performs arithmetic (add, subtract, multiply, divide, increment) and logical operations (AND, OR, NOT, XOR, compare, shift).\n- Operands are brought from memory into processor registers (high-speed storage); the result is stored in a register or sent back to memory.\n- Sets condition code flags (Zero, Negative, Carry, Overflow) used for decision making/branches.\n- Example: `Add LOCA, R0` – operand fetched from memory, added in ALU, result stored in R0.\n\n**Memory Unit (MU)**\n- Stores programs and data.\n- *Primary memory* (RAM): semiconductor cells organized as words, each with a unique address; random access with fixed access time; used by running programs. Cache memory is a small, fast memory between processor and main memory.\n- *Secondary memory*: magnetic disks, SSDs, optical disks – large, non-volatile, cheaper, slower.\n- Processor–memory interface uses MAR (address) and MDR (data); read/write operations transfer one word at a time. Memory access time and word length are key parameters.\n\n(Diagram: Input → Memory ↔ ALU ↔ Control → Output, with control lines from the control unit to all units.)",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "23. a.",
+            "question_text": "Draw the circuit diagram of 4 bit Full adder circuit and explain its Operations.",
+            "marks": 8,
+            "answer": "**Full adder (1-bit)**: inputs $A_i, B_i, C_i$; outputs\n$$S_i = A_i\\oplus B_i\\oplus C_i, \\qquad C_{i+1} = A_iB_i + A_iC_i + B_iC_i$$\n\n| A | B | Cin | S | Cout |\n|---|---|---|---|---|\n| 0|0|0|0|0 |\n| 0|0|1|1|0 |\n| 0|1|0|1|0 |\n| 0|1|1|0|1 |\n| 1|0|0|1|0 |\n| 1|0|1|0|1 |\n| 1|1|0|0|1 |\n| 1|1|1|1|1 |\n\n**4-bit (ripple-carry) parallel adder**: four full adders FA0–FA3 are cascaded; the carry-out of each stage feeds the carry-in of the next.\n```\n A3 B3      A2 B2      A1 B1      A0 B0\n  |  |       |  |       |  |       |  |\n [FA3] <-C3- [FA2] <-C2- [FA1] <-C1- [FA0] <- C0\n   |           |           |           |\n C4 S3        S2          S1          S0\n```\n**Operation**: $C_0$ (usually 0) is applied to FA0, which produces $S_0$ and $C_1$; FA1 adds $A_1, B_1, C_1$ producing $S_1, C_2$, and so on. The final carry $C_4$ is the overflow/carry-out. Example: 1011 + 0110 = 1 0001 (11 + 6 = 17).\n\n**Delay**: the carry ripples through all stages; each stage adds 2 gate delays, so a n-bit adder needs $2n$ gate delays for the final carry (8 for 4 bits) – motivating carry-lookahead adders. Using XOR gates on B with a control line M, the same circuit becomes an adder/subtractor ($C_0 = M$).",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "23. b.",
+            "question_text": "Describe the significance of Booth algorithm for performing signed multiplication with in.",
+            "marks": 8,
+            "answer": "**Booth's algorithm** multiplies two signed 2's complement numbers directly, with no separate sign handling.\n\n**Principle**: a run of 1s in the multiplier from bit k to bit m equals $2^{m+1} - 2^k$, so instead of many additions only one subtraction (at the start of the run) and one addition (after its end) are needed. Each multiplier bit is recoded by looking at pairs $(Q_i, Q_{i-1})$:\n\n| $Q_i$ | $Q_{i-1}$ | Recoded | Action |\n|---|---|---|---|\n| 0 | 0 | 0 | shift only |\n| 0 | 1 | +1 | A ← A + M, shift |\n| 1 | 0 | −1 | A ← A − M, shift |\n| 1 | 1 | 0 | shift only |\n\n**Algorithm**: A = 0, $Q_{-1}=0$, count = n. Examine $Q_0Q_{-1}$, add/subtract M accordingly, arithmetic shift right (A, Q, $Q_{-1}$), decrement count; repeat until count = 0. Product is in A:Q.\n\n**Example**: $(+5)\\times(-3)$ with 4 bits: M = 0101, −M = 1011, Q = 1101.\n- 10: A = 1011 → shift: 1101 1110 1\n- 01: A = 1101+0101 = 0010 → shift: 0001 0111 0\n- 10: A = 0001+1011 = 1100 → shift: 1110 0011 1\n- 11: shift: 1111 0001 1\nProduct = 11110001 = −15. ✓\n\n**Significance**\n- Handles positive and negative multiplicands and multipliers uniformly (2's complement).\n- Reduces the number of additions/subtractions for multipliers with long runs of 1s → faster.\n- Basis of bit-pair (radix-4, modified Booth) recoding which halves the number of partial products; used in hardware multipliers.\n- Worst case (alternating 0101...) needs n operations, same as shift-and-add.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "24. a.",
+            "question_text": "Illustrate the micro-programmed control unit(MCU) with a neat diagram and how instructions will be processed in MCU.",
+            "marks": 8,
+            "answer": "In a **microprogrammed control unit**, control signals are generated by reading **control words (microinstructions)** from a **control store (CS)**, typically a ROM. The sequence of microinstructions implementing one machine instruction is a **microroutine**.\n\n**Organization (diagram)**\n```\n IR --> [Starting address generator] --+\n External inputs / condition codes ----+--> [ µPC ] --> [ Control store ] --> Control word (CW)\n Clock ---------------------------------+        ^              |              (control signals to datapath)\n                                                 +-- next addr --+\n```\nComponents:\n- **Instruction register (IR)** – holds the opcode.\n- **Starting address generator / mapping logic** – converts the opcode into the starting address of its microroutine.\n- **Microprogram counter (µPC)** – holds address of next microinstruction; normally incremented.\n- **Control store** – stores the microroutines; each word's bits correspond to control signals (horizontal) or encoded fields (vertical).\n- **Microinstruction/control word register** and sequencing logic for branches (using condition codes, status flags).\n\n**Processing of an instruction**\n1. The µPC points to the common **fetch microroutine**: `PCout, MARin, Read, Select4, Add, Zin` → `Zout, PCin, Yin, WMFC` → `MDRout, IRin`.\n2. When the instruction is in IR, the starting address generator loads the µPC with the address of that instruction's microroutine.\n3. Microinstructions are read one per clock; their bits activate the control signals (e.g. for `ADD (R3), R1`: `R3out, MARin, Read` → `R1out, Yin, WMFC` → `MDRout, SelectY, Add, Zin` → `Zout, R1in, End`).\n4. The µPC is incremented, or loaded with a branch address when a microinstruction specifies a conditional branch (based on flags or addressing mode bits).\n5. On **End**, µPC returns to the fetch routine for the next instruction.\n\nAdvantages: flexible, easy to modify; disadvantage: slower than hardwired control.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "24. b.",
+            "question_text": "Describe the process of pipelining in computer architecture. Explain different stages of pipeline and its role in execution of instructions.",
+            "marks": 8,
+            "answer": "**Pipelining** is a technique in which the execution of an instruction is divided into stages, and successive instructions are overlapped so that different stages work on different instructions simultaneously – like an assembly line. Buffers (pipeline registers) between stages hold intermediate results.\n\n**Stages (classic 5-stage RISC pipeline)**\n1. **IF – Instruction Fetch**: fetch instruction from memory/cache using PC; PC ← PC + 4.\n2. **ID – Instruction Decode/Register fetch**: decode opcode, read source registers, compute branch target.\n3. **EX – Execute**: ALU performs the operation or computes effective address.\n4. **MEM – Memory access**: load/store data from/to data cache.\n5. **WB – Write Back**: write the result into the destination register.\n(A 4-stage version: Fetch, Decode, Execute, Write.)\n\n**Space-time diagram** (I1–I4):\n| Cycle | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |\n|---|---|---|---|---|---|---|---|---|\n| I1 | IF | ID | EX | MEM | WB | | | |\n| I2 | | IF | ID | EX | MEM | WB | | |\n| I3 | | | IF | ID | EX | MEM | WB | |\n| I4 | | | | IF | ID | EX | MEM | WB |\n\n**Role / performance**: once filled, one instruction completes every cycle. For k stages and n instructions: time = $(k + n - 1)$ cycles versus $nk$ without pipelining; speedup $= \\dfrac{nk}{k+n-1} \\to k$ for large n. Throughput increases though each instruction's latency is not reduced.\n\n**Hazards** limiting performance: structural (resource conflicts), data (dependencies – solved by forwarding/stalls), control (branches – solved by prediction, delayed branch).",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "25. a.",
+            "question_text": "Briefly write about architecture of parallel systems and its types.",
+            "marks": 8,
+            "answer": "A **parallel system** uses multiple processing elements working concurrently to solve problems faster.\n\n**Flynn's classification**\n- **SISD** – single processor executing one instruction stream on one data stream (uniprocessor).\n- **SIMD** – one control unit, many PEs executing the same instruction on different data (vector/array processors, GPUs).\n- **MISD** – multiple instructions on a single data stream (rare; fault-tolerant/systolic systems).\n- **MIMD** – multiple processors executing different instructions on different data (multiprocessors, clusters).\n\n**Classification by memory organization (MIMD)**\n1. **Shared-memory multiprocessors (tightly coupled)** – common global address space accessed over a bus/crossbar/multistage network.\n   - *UMA/SMP*: equal access time for all processors.\n   - *NUMA*: distributed physical memory, local access faster than remote.\n   - *COMA*: cache-only memory architecture.\n   Communication via shared variables; requires cache coherence and synchronization.\n2. **Distributed-memory multicomputers (loosely coupled)** – each node has private memory; nodes communicate by message passing over an interconnection network (mesh, hypercube, torus). Example: clusters, MPPs.\n3. **Hybrid** – clusters of shared-memory multicore nodes.\n\n**Other parallel architectures**: pipelined and superscalar processors, VLIW, vector processors, multicore and multithreaded (SMT) processors, GPUs.\n\n**Interconnection networks**: bus, crossbar switch, multistage (Omega), mesh, ring, hypercube.\n\nParallel systems give higher throughput, scalability and fault tolerance, limited by Amdahl's law, communication and synchronization overhead.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "25. b.",
+            "question_text": "Describe various memory load and store instructions available in ARM architecture.",
+            "marks": 8,
+            "answer": "ARM is a **load/store architecture**: data-processing instructions operate only on registers; memory is accessed only through load and store instructions.\n\n**1. Single register transfer**\n| Instruction | Operation |\n|---|---|\n| `LDR Rd, addr` | load 32-bit word |\n| `STR Rd, addr` | store 32-bit word |\n| `LDRB / STRB` | load/store unsigned byte |\n| `LDRH / STRH` | load/store unsigned halfword |\n| `LDRSB / LDRSH` | load signed byte / halfword (sign-extended) |\n\n**Addressing modes** (base register Rn + offset, offset = immediate, register, or scaled register):\n- *Pre-indexed*: `LDR R0, [R1, #4]` → R0 ← mem[R1+4].\n- *Pre-indexed with write-back*: `LDR R0, [R1, #4]!` → R0 ← mem[R1+4], R1 ← R1+4.\n- *Post-indexed*: `LDR R0, [R1], #4` → R0 ← mem[R1], then R1 ← R1+4.\n- Register/scaled offset: `LDR R0, [R1, R2, LSL #2]`.\n- PC-relative: `LDR R0, =label` / `LDR R0, [PC, #off]`.\n\n**2. Multiple register transfer**\n- `LDM` / `STM` with modes IA (increment after), IB (increment before), DA, DB, e.g. `STMIA R0!, {R1-R4}`, `LDMDB R0, {R1, R2}`.\n- Stack aliases: `STMFD SP!, {R4-R7, LR}` (PUSH) and `LDMFD SP!, {R4-R7, PC}` (POP) – Full/Empty, Ascending/Descending stacks.\n\n**3. Swap instruction**\n- `SWP Rd, Rm, [Rn]` / `SWPB` – atomically load from memory into Rd and store Rm to the same location (semaphores). Newer ARM uses `LDREX/STREX`.\n\nConditional execution can be applied to all, e.g. `LDREQ R0, [R1]` executes only if Z = 1.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "26.",
+            "question_text": "Explain the architecture of 8086 microprocessor and briefly describe its operations.",
+            "marks": 15,
+            "answer": "The **Intel 8086** is a 16-bit microprocessor with a 16-bit data bus and 20-bit address bus (addresses 1 MB). Its architecture is divided into two independent units that work in parallel (pipelining):\n\n**1. Bus Interface Unit (BIU)** – handles all external bus operations.\n- **Segment registers**: CS (code), DS (data), SS (stack), ES (extra) – 16 bits each.\n- **Instruction Pointer (IP)** – offset of next instruction in CS.\n- **Address generation adder** – physical address = Segment × 16 + Offset (e.g. CS:IP → $CS\\times10H + IP$).\n- **6-byte instruction queue** – prefetches instructions while EU executes (fetch–execute overlap).\n- Bus control logic – generates bus signals; multiplexed address/data bus AD0–AD15.\n\n**2. Execution Unit (EU)** – decodes and executes instructions.\n- **General-purpose registers**: AX (accumulator), BX (base), CX (count), DX (data) – each usable as 8-bit halves (AH/AL etc.).\n- **Pointer & index registers**: SP (stack pointer), BP (base pointer), SI (source index), DI (destination index).\n- **16-bit ALU** – arithmetic and logic operations.\n- **Flag register** – 9 flags: status flags CF, PF, AF, ZF, SF, OF and control flags TF (trap), IF (interrupt), DF (direction).\n- **Control unit/decoder** – decodes instructions from the queue and generates control signals.\n\n**Operation**\n1. BIU computes the physical address from CS:IP, fetches instruction bytes and fills the queue.\n2. EU takes bytes from the queue, decodes and executes them; if an operand is in memory, EU sends the offset to BIU, which computes the physical address and performs the read/write.\n3. While EU executes, BIU fetches the next instructions (pipelined); on a jump/call the queue is flushed and refilled.\n4. Memory is segmented (each segment up to 64 KB), allowing relocatable code and separation of code, data and stack.\n5. Supports minimum mode (single processor) and maximum mode (multiprocessor with 8087 coprocessor, 8288 bus controller), 256 interrupt types, and addressing modes such as immediate, register, direct, register indirect, based, indexed, based-indexed and string modes.\n\n(Diagram: BIU block with segment registers, IP, adder, queue, bus control on top; EU with AX–DX, SP, BP, SI, DI, ALU, flags and control below, connected by internal bus.)",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "27.",
+            "question_text": "Describe the architecture of ARM processors, focusing on how pipeline stages contribute to instruction execution.",
+            "marks": 15,
+            "answer": "**ARM (Advanced RISC Machine) architecture** – a 32-bit RISC, load/store architecture.\n\n**Key features**\n- Fixed-length 32-bit instructions (plus 16-bit Thumb set), simple decoding.\n- Load/store architecture: only LDR/STR access memory.\n- 37 registers in total; 16 visible in each mode (R0–R12 general, R13 = SP, R14 = LR, R15 = PC) plus CPSR/SPSR.\n- Processor modes: User, FIQ, IRQ, Supervisor, Abort, Undefined, System (banked registers for fast interrupt handling).\n- Conditional execution of almost every instruction (EQ, NE, GT ...), reducing branches.\n- Barrel shifter in the datapath – an operand can be shifted/rotated in the same instruction (`ADD R0, R1, R2, LSL #2`).\n- Multiply-accumulate unit, low power, small die size.\n\n**Datapath (ARM7)**: register bank (2 read ports, 1 write port + PC port), barrel shifter, 32-bit ALU, multiplier, address register and incrementer, data in/out registers, instruction decoder and control logic.\n\n**Pipeline**\n*ARM7 – 3 stages*:\n1. **Fetch** – instruction loaded from memory at PC.\n2. **Decode** – instruction decoded, control signals prepared, registers selected.\n3. **Execute** – registers read, shift and ALU operation performed, result written back (or address generated for load/store).\nBecause of the pipeline, PC = address of current instruction + 8 when executing.\n\n*ARM9 – 5 stages*: Fetch → Decode (register read) → Execute (shift + ALU) → Memory (data access) → Write-back. Separate instruction/data caches (Harvard) remove structural hazards.\n\n*ARM10 – 6 stages, ARM11 – 8 stages, Cortex-A – deeper superscalar pipelines.*\n\n**Contribution to instruction execution**\n| Cycle | 1 | 2 | 3 | 4 | 5 |\n|---|---|---|---|---|---|\n| I1 | F | D | E | | |\n| I2 | | F | D | E | |\n| I3 | | | F | D | E |\n- Overlapping stages lets one instruction complete per cycle (CPI ≈ 1), increasing throughput.\n- Deeper pipelines allow higher clock frequency.\n- Branches flush the pipeline (penalty of 2 cycles in ARM7); ARM reduces this via conditional execution and, in later cores, branch prediction.\n- Load/use data hazards are handled with forwarding and interlocks in ARM9 onward.\n- Multi-cycle instructions (LDM/STM, multiply) stall subsequent stages.\n\nThus ARM's simple RISC instruction format, register-rich design and pipelining deliver high performance at low power, making it dominant in embedded and mobile systems.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        }
+    ]
+}

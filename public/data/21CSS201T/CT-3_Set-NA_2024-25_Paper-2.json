@@ -1,0 +1,87 @@
+{
+  "formal_filename": "CT-3_Set-NA_2024-25_Paper-2.json",
+  "paper_title": "SRM Institute of Science and Technology, College of Engineering and Technology, SCHOOL OF COMPUTING, Department of Computing Technologies, Academic Year: 2024-25 (ODD), Course: 21CSS201T Computer Organization and Architecture",
+  "source": "2024-25 ODD CT3 (Paper 2)",
+  "questions": [
+    {
+      "question_number": "11",
+      "question_text": "Illustrate the execution process of Branching instructions with suitable examples.",
+      "marks": 4,
+      "answer": "A branch instruction loads a new address (the branch target) into the PC, so instruction sequencing changes.\n\n**Unconditional branch** (e.g. `Branch LOOP` with offset X), single-bus control sequence:\n1. $PC_{out}, MAR_{in}$, Read, Select4, Add, $Z_{in}$\n2. $Z_{out}, PC_{in}, Y_{in}$, WMFC\n3. $MDR_{out}, IR_{in}$\n4. $\\text{Offset-field-of-IR}_{out}$, Add, $Z_{in}$\n5. $Z_{out}, PC_{in}$, End\n\nThe target address = updated PC + offset.\n\n**Conditional branch** (e.g. `Branch<0 LOOP`): step 4 is replaced by `Offset-field-of-IR_out, Add, Z_in, If N = 0 then End`; if the condition flag is not satisfied the PC keeps PC+4 and execution continues sequentially, otherwise step 5 loads the target into PC.\n\nExample loop:\n```\n      Move  N, R1\n      Clear R0\nLOOP: Add   (R2)+, R0\n      Decrement R1\n      Branch>0 LOOP\n```\nThe loop body repeats while R1 > 0, after which execution falls through to the next instruction.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Control Unit"
+    },
+    {
+      "question_number": "12",
+      "question_text": "Sketch the architecture of multi bus organization.",
+      "marks": 4,
+      "answer": "In a three-bus organization the registers and ALU are connected by three buses:\n- **Bus A** and **Bus B** carry the two source operands from the register file (which has two output ports) to the ALU inputs A and B.\n- **Bus C** carries the ALU result back to the register file (input port).\n\nComponents: PC, register file, ALU, Incrementer (to update PC without using the ALU), IR, instruction decoder, MAR (to memory address lines) and MDR (to memory data lines). A constant-4 / MUX feeds the ALU.\n\nAdvantages over single-bus: two operands can be read and the result written in the same clock cycle, so an instruction like `ADD R4, R5, R6` executes in fewer steps and no temporary registers Y and Z are needed.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Control Unit"
+    },
+    {
+      "question_number": "13",
+      "question_text": "Summarize the reason for using cache memory in Pipelining process.",
+      "marks": 4,
+      "answer": "- Every pipeline stage must finish in one clock cycle; the Fetch stage (instruction) and Memory/Operand stage (data) need memory access each cycle.\n- Main memory access takes many clock cycles, which would stall the pipeline and destroy the speed-up.\n- A cache (fast SRAM close to the processor) provides an instruction/operand in about one clock cycle on a hit, so stages stay balanced.\n- Separate instruction and data caches allow the Fetch and Memory stages to access memory simultaneously, avoiding structural hazards.\n- Thus cache reduces stalls, keeps the pipeline full and raises throughput; only cache misses cause stalls.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Control Unit"
+    },
+    {
+      "question_number": "14",
+      "question_text": "Compare and contrast memory mapped IO and input/output Mapped techniques.",
+      "marks": 4,
+      "answer": "| Memory-mapped I/O | I/O-mapped (isolated) I/O |\n|---|---|\n| I/O devices share the memory address space | Separate address space for I/O ports |\n| Same instructions (e.g. Load/Store, MOV) access memory and I/O | Special instructions (IN, OUT) needed |\n| No separate control signals; uses MEMR/MEMW | Separate IOR/IOW control signals (or IO/M line) |\n| Reduces memory address space available | Full memory address space available |\n| More flexible addressing modes for I/O | Fewer addressing modes for I/O |\n| Address decoding more complex (full address) | Smaller port addresses (e.g. 8/16 bit), simpler decoding |\n\nExample: ARM uses memory-mapped I/O; 8086 supports isolated I/O with IN/OUT.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Parallelism"
+    },
+    {
+      "question_number": "15",
+      "question_text": "Outline the need for parallelism in computer architectures.",
+      "marks": 4,
+      "answer": "- Single-processor speed is limited by clock rate, power and heat, so performance must come from doing work concurrently.\n- Increases throughput and reduces execution time of large problems.\n- Needed for computationally intensive applications: scientific simulation, weather forecasting, image/video processing, AI, databases.\n- Better utilization of hardware resources (multiple ALUs, cores).\n- Enables real-time processing and handling of large data sets.\n- Provides scalability and fault tolerance (redundant processors).\n- Cost-effective: many cheaper processors instead of one very fast one.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Parallelism"
+    },
+    {
+      "question_number": "16",
+      "question_text": "Describe the Hardwired control unit with diagram and list out the control signals.",
+      "marks": 12,
+      "answer": "In a **hardwired control unit** the control signals are generated by fixed combinational logic.\n\n**Organization (diagram description):**\n- **Clock -> Control step counter**: counts steps $T_1, T_2, \\dots, T_n$ of an instruction.\n- **Step decoder**: produces one signal per step $T_1 \\dots T_n$.\n- **IR -> Instruction decoder**: produces one signal per instruction $INS_1 \\dots INS_m$.\n- **Encoder** (combinational logic): inputs are $T_i$, $INS_j$, condition codes and external inputs (e.g. MFC, interrupts); outputs are the control signals.\n- The **End** signal resets the step counter; **Run** enables counting (held during WMFC).\n\n**Example logic:**\n$$Z_{in} = T_1 + T_6\\cdot ADD + T_4\\cdot BR + \\dots$$\n$$End = T_7\\cdot ADD + T_5\\cdot BR + (T_5\\cdot N + T_4\\cdot \\overline{N})\\cdot BRN + \\dots$$\n\n**Control signals:** $PC_{in}, PC_{out}, MAR_{in}, MDR_{in}, MDR_{out}, IR_{in}, IR_{out}$(offset), $R_{i,in}, R_{i,out}, Y_{in}, Z_{in}, Z_{out}$, ALU function (Add, Sub, ...), Select4/SelectY (MUX), Read, Write, WMFC, Carry-in, Clear Y, End.\n\n**Features:** very fast; but complex, inflexible, difficult to modify or extend; suited to RISC processors.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Control Unit"
+    },
+    {
+      "question_number": "17",
+      "question_text": "Demonstrate the control sequences involved in the complete execution of the ADD (R3), R1 instruction in single bus environment with diagram.",
+      "marks": 12,
+      "answer": "Instruction `Add (R3), R1` performs $R1 \\leftarrow R1 + [[R3]]$.\n\n**Single-bus datapath (diagram description):** PC, MAR, MDR, IR, registers $R0..R_{n-1}$, temporary register Y, MUX (Y or constant 4) feeding ALU input A, ALU input B from bus, output register Z — all connected to one internal processor bus; MAR/MDR connect to the memory bus.\n\n**Control sequence:**\n| Step | Action |\n|---|---|\n| 1 | $PC_{out}, MAR_{in}$, Read, Select4, Add, $Z_{in}$ |\n| 2 | $Z_{out}, PC_{in}, Y_{in}$, WMFC |\n| 3 | $MDR_{out}, IR_{in}$ |\n| 4 | $R3_{out}, MAR_{in}$, Read |\n| 5 | $R1_{out}, Y_{in}$, WMFC |\n| 6 | $MDR_{out}$, SelectY, Add, $Z_{in}$ |\n| 7 | $Z_{out}, R1_{in}$, End |\n\nSteps 1-3: instruction fetch and PC increment. Step 4: address in R3 sent to memory. Step 5: R1 moved to Y while waiting for memory. Step 6: operand added to Y. Step 7: result stored in R1 and the instruction ends.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Control Unit"
+    },
+    {
+      "question_number": "18 a)",
+      "question_text": "Compare and contrast SIMD (Single Instruction, Multiple Data) and MIMD (Multiple Instruction, Multiple Data) architectures in terms of their parallel processing capabilities, typical use cases, and hardware requirements. Provide examples of systems or applications that best fit each classification.",
+      "marks": 6,
+      "answer": "| Aspect | SIMD | MIMD |\n|---|---|---|\n| Parallelism | Data-level: one instruction applied to many data elements in lock-step | Task/thread-level: each processor runs its own instruction stream on its own data, asynchronously |\n| Control | Single control unit, many processing elements | Each processor has its own control unit |\n| Synchronization | Implicit (lock-step) | Explicit (locks, barriers, messages) |\n| Hardware | Vector units/PE arrays, wide registers, simple PEs | Multiple full CPUs/cores, shared or distributed memory, interconnect, cache coherence |\n| Use cases | Image/video/signal processing, graphics, matrix ops, ML | Servers, databases, OS multitasking, distributed and scientific computing |\n| Examples | GPU cores, Intel SSE/AVX, ARM NEON, array/vector processors | Multicore Intel/AMD CPUs, SMP servers, clusters |",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Parallelism"
+    },
+    {
+      "question_number": "18 b)",
+      "question_text": "Explain the registers of ARM processor.",
+      "marks": 6,
+      "answer": "ARM (e.g. ARM7) has 37 32-bit registers, of which 16 general registers plus CPSR are visible in a mode:\n- **R0-R12**: general-purpose registers (R8-R12 banked in FIQ mode).\n- **R13 (SP)**: stack pointer, banked per mode.\n- **R14 (LR)**: link register, holds return address on BL/exceptions; banked per mode.\n- **R15 (PC)**: program counter.\n- **CPSR** (Current Program Status Register): condition flags N, Z, C, V; interrupt disable bits I, F; T bit (Thumb state); mode bits M[4:0].\n- **SPSR** (Saved PSR): one per exception mode, saves CPSR on exception entry.\n\nModes: User, FIQ, IRQ, Supervisor, Abort, Undefined, System — banked registers allow fast exception handling.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Parallelism"
+    },
+    {
+      "question_number": "19",
+      "question_text": "Describe the importance of hardware and software level parallelism with examples.",
+      "marks": 12,
+      "answer": "**Hardware-level parallelism** — provided by the machine:\n- *Instruction-level parallelism (ILP)*: pipelining, superscalar issue, out-of-order execution (e.g. a 5-stage pipeline overlaps 5 instructions).\n- *Data-level (vector/SIMD)*: GPU, AVX/NEON process many data elements per instruction.\n- *Processor-level*: multicore and multiprocessor systems (MIMD), clusters.\n- *Memory parallelism*: interleaved memory banks, multiple caches.\nImportance: raises throughput without raising clock rate, improves resource utilization, power efficiency and scalability.\n\n**Software-level parallelism** — exposed by programs:\n- *Data parallelism*: same operation on partitions of data (parallel loops, MapReduce, matrix multiplication).\n- *Task (functional) parallelism*: different tasks run concurrently (UI thread + network thread).\n- *Transaction-level parallelism*: independent transactions in databases/web servers.\n- *Pipeline parallelism*: stages of a process (decode, filter, encode in video processing).\n- Tools: threads, OpenMP, MPI, CUDA.\nImportance: software must expose parallelism for hardware to exploit it; reduces response time and enables real-time and large-scale applications.\n\nBoth are complementary: e.g. image processing uses software data parallelism (split image into tiles) mapped onto hardware SIMD/GPU and multiple cores.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Parallelism"
+    }
+  ]
+}

@@ -1,0 +1,263 @@
+{
+    "formal_filename": "2025-07_ET_QP.json",
+    "paper_title": "B.Tech/ M.Tech (Integrated) DEGREE EXAMINATION, JULY 2025 - Third Semester - 21CSS201T - COMPUTER ORGANIZATION AND ARCHITECTURE",
+    "source": "2025-07 ET",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "Identify The Binary Representation of Decimal Number 42\n(A) 101010\n(B) 101111\n(C) 111100\n(D) 1110000",
+            "marks": 1,
+            "answer": "(A) 101010\n\nRationale: $42 = 32+8+2 = 101010_2$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "2",
+            "question_text": "Find the grey code for binary value 1011110\n(A) 1100111\n(B) 1100110\n(C) 1110001\n(D) 1110000",
+            "marks": 1,
+            "answer": "(C) 1110001\n\nRationale: $G = B \\oplus (B \\gg 1)$: 1, 1⊕0=1, 0⊕1=1, 1⊕1=0, 1⊕1=0, 1⊕1=0, 1⊕0=1 → 1110001.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "3",
+            "question_text": "The 2's complement of the binary number 101101 is\n(A) 011010\n(B) 100010\n(C) 100010\n(D) 010011",
+            "marks": 1,
+            "answer": "(D) 010011\n\nRationale: 1's complement 010010 + 1 = 010011.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "4",
+            "question_text": "Parity code is used for the purpose of\n(A) Code Conversion\n(B) Correcting Errors\n(C) Detecting Errors\n(D) Decoding",
+            "marks": 1,
+            "answer": "(C) Detecting Errors\n\nRationale: A parity bit detects single-bit (odd number of) errors; it cannot correct them.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "5",
+            "question_text": "RTN stands for\n(A) Register Transmission Notation\n(B) Register Transfer Notation\n(C) Regular Transmission Notation\n(D) Regular Transfer Notation",
+            "marks": 1,
+            "answer": "(B) Register Transfer Notation\n\nRationale: RTN = Register Transfer Notation, e.g. $R3 \\leftarrow [R1]+[R2]$.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "6",
+            "question_text": "______ holds the instructions that is currently being executed.\n(A) Program counter\n(B) Instruction register\n(C) Registers\n(D) Memory address register",
+            "marks": 1,
+            "answer": "(B) Instruction register\n\nRationale: IR holds the current instruction.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "7",
+            "question_text": "In which addressing mode the operand value is directly specified?\n(A) Direct\n(B) Definite\n(C) Relative\n(D) Immediate",
+            "marks": 1,
+            "answer": "(D) Immediate\n\nRationale: In immediate mode the operand value itself is in the instruction (e.g. `MOV R0, #5`).",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "8",
+            "question_text": "______ operations are required in memory access.\n(A) Add\n(B) Move\n(C) Load and store\n(D) Halt",
+            "marks": 1,
+            "answer": "(C) Load and store\n\nRationale: Memory is accessed through Load (read) and Store (write) operations.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "9",
+            "question_text": "______ is a combinational logic circuit with two input and two output.\n(A) Full adder\n(B) Half adder\n(C) Multiplexer\n(D) Decoder",
+            "marks": 1,
+            "answer": "(B) Half adder\n\nRationale: Half adder: inputs A, B; outputs Sum and Carry.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "10",
+            "question_text": "An 24 bit address generates an address space of ______ locations.\n(A) 16,777,216\n(B) 1,048,576\n(C) 4096\n(D) 1024",
+            "marks": 1,
+            "answer": "(A) 16,777,216\n\nRationale: $2^{24} = 16{,}777{,}216$.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "11",
+            "question_text": "Where does the multiplier operand is stored?\n(A) Instruction register\n(B) Shift register\n(C) Cache\n(D) Program counter",
+            "marks": 1,
+            "answer": "(B) Shift register\n\nRationale: In the sequential multiplier the multiplier is held in the Q shift register, shifted right each cycle.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "12",
+            "question_text": "How many bits are needed to represent floating point number in a single precision form?\n(A) 16\n(B) 50\n(C) 32\n(D) 64",
+            "marks": 1,
+            "answer": "(C) 32\n\nRationale: IEEE 754 single precision uses 32 bits.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "13",
+            "question_text": "Which register in the processor is single-directional?\n(A) MDR\n(B) PC\n(C) MAR\n(D) Temp",
+            "marks": 1,
+            "answer": "(C) MAR\n\nRationale: MAR only sends addresses from processor to memory (unidirectional); MDR is bidirectional.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "14",
+            "question_text": "The Program Counter gets incremented\n(A) After the instruction decoding\n(B) After the fetch cycle\n(C) After the IR instruction gets executed\n(D) After the read cycle executed",
+            "marks": 1,
+            "answer": "(B) After the fetch cycle\n\nRationale: PC is incremented during/after the fetch cycle to point to the next instruction.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "15",
+            "question_text": "In multiple Bus organization, the registers are collectively placed and referred to as\n(A) Register file\n(B) Set registers\n(C) Register Block\n(D) Map registers",
+            "marks": 1,
+            "answer": "(A) Register file\n\nRationale: The general-purpose registers form a register file with multiple ports.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "16",
+            "question_text": "______ memory is used in pipelining to increase the memory access speed.\n(A) Special memory locations\n(B) Special purpose register\n(C) Cache\n(D) Buffers",
+            "marks": 1,
+            "answer": "(C) Cache\n\nRationale: Caches allow a pipeline stage to access memory in one clock cycle.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "17",
+            "question_text": "______ gives the measure of how many operations can be performed in parallel at the same time.\n(A) Data parallelism\n(B) Task level parallelism\n(C) Instruction level parallelism\n(D) Transaction level parallelism",
+            "marks": 1,
+            "answer": "(C) Instruction level parallelism\n\nRationale: ILP measures how many instructions/operations of a program can be executed simultaneously.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "18",
+            "question_text": "SIMD stands for\n(A) Simple Instruction Multiple Decoding\n(B) Single Instruction Multiple Data\n(C) Sequential Instruction Multiple Decoding\n(D) System Information Mutable Data",
+            "marks": 1,
+            "answer": "(B) Single Instruction Multiple Data\n\nRationale: Single Instruction, Multiple Data.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "19",
+            "question_text": "Processor which is complex and expensive to produce is\n(A) RISC\n(B) EPIC\n(C) Multi-core\n(D) CISC",
+            "marks": 1,
+            "answer": "(D) CISC\n\nRationale: CISC processors have complex instructions and control (often microprogrammed), making them complex and expensive.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "20",
+            "question_text": "The cost of a parallel processing is primarily determined by\n(A) time complexity\n(B) switching complexity\n(C) circuit complexity\n(D) power complexity",
+            "marks": 1,
+            "answer": "(C) circuit complexity\n\nRationale: The cost of a parallel processing system is mainly determined by its circuit (hardware) complexity.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "21. a.",
+            "question_text": "Draw the graphic symbol, algebraic function and truth table for the following logic gates.\ni. AND\nii. OR\niii. NAND\niv. EX-OR",
+            "marks": 8,
+            "answer": "| Gate | Graphic symbol | Algebraic function |\n|---|---|---|\n| AND | D-shaped body, flat input side | $F = A\\cdot B$ |\n| OR | curved (shield) body, pointed output | $F = A + B$ |\n| NAND | AND symbol with bubble at output | $F = \\overline{A\\cdot B}$ |\n| EX-OR | OR symbol with extra curved line at inputs | $F = A\\oplus B = A\\bar B + \\bar A B$ |\n\n**Truth tables**\n| A | B | AND | OR | NAND | EX-OR |\n|---|---|---|---|---|---|\n| 0 | 0 | 0 | 0 | 1 | 0 |\n| 0 | 1 | 0 | 1 | 1 | 1 |\n| 1 | 0 | 0 | 1 | 1 | 1 |\n| 1 | 1 | 1 | 1 | 0 | 0 |\n\n- AND: output 1 only when all inputs are 1.\n- OR: output 1 when at least one input is 1.\n- NAND: complement of AND; universal gate.\n- EX-OR: output 1 when inputs are different; used in adders and parity circuits.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "21. b.",
+            "question_text": "i) Perform BCD Addition for 175 and 326. (4 marks)\nii) Perform (111100) - (001011) using 1's and 2's complement method. (4 marks)",
+            "marks": 8,
+            "answer": "**(i) BCD addition 175 + 326**\n```\n   175 = 0001 0111 0101\n   326 = 0011 0010 0110\n```\n- Units: 0101 + 0110 = 1011 (>9, invalid) → +0110 = 1 0001 → digit 1, carry 1.\n- Tens: 0111 + 0010 + 1 = 1010 (>9) → +0110 = 1 0000 → digit 0, carry 1.\n- Hundreds: 0001 + 0011 + 1 = 0101 → digit 5.\n\nResult = $0101\\ 0000\\ 0001_{BCD} = 501$. ✓\n\n**(ii) 111100 − 001011** (60 − 11 = 49)\n\n*1's complement method*: 1's complement of 001011 = 110100.\n$$111100 + 110100 = 1\\,110000$$\nEnd-around carry: $110000 + 1 = 110001$. Result = $+110001_2 = 49$.\n\n*2's complement method*: 2's complement of 001011 = 110101.\n$$111100 + 110101 = 1\\,110001$$\nDiscard the carry → $110001_2 = 49$ (positive since a carry occurred). ✓",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "22. a.",
+            "question_text": "Explain in detail about the different types of bus structures connected between CPU and Memory.",
+            "marks": 8,
+            "answer": "A **bus** is a shared group of lines (wires) that connects the processor, memory and I/O devices. It consists of **address lines** (unidirectional, from processor), **data lines** (bidirectional) and **control lines** (Read/Write, clock, MFC, interrupt, bus request/grant).\n\n**1. Single-bus structure**\n- All units (processor, memory, input, output) are connected to one common bus.\n- Only one transfer at a time; the bus is time-shared.\n- Advantages: low cost, simple, flexible to attach devices. Disadvantage: low speed/bandwidth (bottleneck).\n- Buffer registers are used to smooth out speed differences between fast processor and slow devices.\n\n**2. Two-bus structure**\n- (a) A dedicated **memory bus** between processor and memory, and a separate **I/O bus** for peripherals; or (b) I/O devices connected to memory via an I/O processor/channel.\n- Allows processor–memory transfers concurrently with I/O transfers → higher performance.\n\n**3. Multiple-bus (multi-level/hierarchical) structure**\n- Several buses: processor–cache local bus, system (memory) bus, high-speed bus (PCI/PCIe) and expansion buses (USB, SATA) connected through bridges.\n- Inside the processor: one-bus, two-bus or three-bus datapath organizations (three-bus allows an ALU operation with two source registers and destination in one cycle).\n- Higher concurrency and bandwidth, at higher cost and complexity.\n\n**Bus timing**\n- *Synchronous bus*: all transfers occur on clock edges; simple but clock period set by slowest device.\n- *Asynchronous bus*: uses handshake signals (Master-ready / Slave-ready) – adapts to device speed.\n\n**Bus arbitration**: centralized (daisy chain, polling) or distributed, to decide which master uses the bus.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "22. b.",
+            "question_text": "Discuss the Addressing modes with suitable examples.",
+            "marks": 8,
+            "answer": "**Addressing modes** specify how the effective address (EA) of an operand is obtained.\n\n1. **Immediate** – operand is in the instruction. `MOV R0, #200` → $R0 \\leftarrow 200$.\n2. **Register** – operand is in a register. `ADD R1, R2` → $R1 \\leftarrow R1 + R2$.\n3. **Direct / Absolute** – instruction contains the memory address. `MOV R1, LOC` → EA = LOC.\n4. **Indirect** – instruction gives a register/memory location holding the address. `MOV R1, (R2)` → EA = [R2].\n5. **Index** – EA = X + [Ri], X a constant offset. `MOV R1, 20(R2)` → EA = 20 + [R2]; used for arrays/records.\n6. **Base with index** – EA = [Ri] + [Rj]: `(R1,R2)`; base-with-index-and-offset EA = [Ri]+[Rj]+X.\n7. **Relative** – EA = [PC] + X; used in branches: `BR LOOP` (offset from PC).\n8. **Autoincrement** – `(Ri)+`: EA = [Ri], then Ri is incremented by operand size; used to step through arrays/stack pop.\n9. **Autodecrement** – `-(Ri)`: Ri is decremented first, then EA = [Ri]; used for stack push.\n\nAdvantages: flexibility in program writing, fewer bits for addresses, support for pointers, arrays, loops, relocatable code.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "23. a.",
+            "question_text": "Divide 10 / 3 using Non-Restoring Method. Show the operations performed in each step.",
+            "marks": 8,
+            "answer": "Dividend $Q = 10 = 1010$, divisor $M = 3 = 00011$, $-M = 11101$, $A = 00000$, n = 4.\nRule: if A ≥ 0 → shift left AQ, $A \\leftarrow A - M$; if A < 0 → shift left AQ, $A \\leftarrow A + M$. Set $q_0 = 1$ if new A ≥ 0, else 0. Finally, if A < 0, $A \\leftarrow A + M$.\n\n| Cycle | Operation | A | Q |\n|---|---|---|---|\n| Init | | 00000 | 1010 |\n| 1 | Shift left | 00001 | 010_ |\n| | A ≥ 0 → A − M | 11110 | 0100 ($q_0$=0) |\n| 2 | Shift left | 11100 | 100_ |\n| | A < 0 → A + M | 11111 | 1000 ($q_0$=0) |\n| 3 | Shift left | 11111 | 000_ |\n| | A < 0 → A + M | 00010 | 0001 ($q_0$=1) |\n| 4 | Shift left | 00100 | 001_ |\n| | A ≥ 0 → A − M | 00001 | 0011 ($q_0$=1) |\n\nA is positive, so no final correction.\nQuotient = $0011_2 = 3$, Remainder = $00001_2 = 1$. Check: $3\\times3 + 1 = 10$. ✓",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "23. b.",
+            "question_text": "i). What are the advantages of bit pair recoding of multipliers?\nii). Multiply (+13)x(-6) using bit pair recoding method.",
+            "marks": 8,
+            "answer": "**(i) Advantages of bit-pair (radix-4 / modified Booth) recoding**\n- Multiplier bits are taken in pairs, so an n-bit multiplication needs at most **n/2 partial products** (summands) – twice as fast as normal Booth or shift-and-add.\n- Each recoded digit is one of 0, ±1, ±2 times the multiplicand; ±2M is just a shift, so no difficult multiples are needed.\n- Works directly on signed 2's complement numbers.\n- Fewer additions → reduced delay and hardware in array/CSA multipliers; the worst case of Booth (alternating 1s and 0s) is eliminated.\n\nRecoding table (bits $q_{i+1}, q_i, q_{i-1}$): 000→0, 001→+1, 010→+1, 011→+2, 100→−2, 101→−1, 110→−1, 111→0.\n\n**(ii) (+13) × (−6)** using 6-bit operands.\nMultiplicand $M = +13 = 001101$; multiplier $Q = -6 = 111010$, append $q_{-1}=0$: 1 1 1 0 1 0 | 0.\n- Pair ($q_1q_0$, $q_{-1}$) = (1 0, 0) → **−2**\n- Pair ($q_3q_2$, $q_1$) = (1 0, 1) → **−1**\n- Pair ($q_5q_4$, $q_3$) = (1 1, 1) → **0**\nRecoded multiplier: (0, −1, −2) → $0\\cdot16 - 1\\cdot4 - 2 = -6$ ✓.\n\nPartial products (12-bit 2's complement; $-M = 110011$, $-2M = 100110$):\n```\n  PP0 = -2M        = 111111 100110   (-26)\n  PP1 = -1M x 4    = 111111 0011 00  -> 111111001100 (-52)\n  PP2 =  0M x 16   = 000000 000000\n  ---------------------------------------\n  Sum              = 111110 110010\n```\n$111110110010_2$ → 2's complement $000001001110_2 = 78$, so product = **−78**. ✓ ($13\\times-6 = -78$)",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "24. a.",
+            "question_text": "Draw the Single Bus Organization and explain the execution of an instruction.",
+            "marks": 8,
+            "answer": "**Single-bus organization of the datapath**\nAll processor registers (PC, MAR, MDR, IR, R0…R(n−1), Y, Z, TEMP) and the ALU are connected to one internal processor bus. MAR connects to the memory address lines; MDR connects to the memory data lines and the internal bus. Register Y holds one ALU operand, the other comes from the bus; the ALU result goes into Z. A MUX selects Y or the constant 4 (for PC increment). Each register has `Rin`/`Rout` control signals; the instruction decoder generates control signals.\n```\n Memory bus  <->  [MDR]  <-> internal bus <-> [PC] [IR] [R0..Rn-1] [TEMP]\n Address     <-   [MAR]  <-       |\n                                  +-> [Y] -> MUX(4/Y) -> ALU <- bus\n                                                     |\n                                                    [Z] -> bus\n```\n\n**Execution of an instruction** – e.g. `ADD (R3), R1` ($R1 \\leftarrow R1 + [[R3]]$):\n\n| Step | Control signals |\n|---|---|\n| 1 | PCout, MARin, Read, Select4, Add, Zin |\n| 2 | Zout, PCin, Yin, WMFC |\n| 3 | MDRout, IRin |\n| 4 | R3out, MARin, Read |\n| 5 | R1out, Yin, WMFC |\n| 6 | MDRout, SelectY, Add, Zin |\n| 7 | Zout, R1in, End |\n\n- Steps 1–3 (**fetch**): PC → MAR, memory read; PC + 4 computed in ALU and stored back in PC; instruction from MDR → IR.\n- Step 4: address of operand (R3) → MAR, memory read started.\n- Step 5: R1 → Y while waiting for memory (MFC).\n- Step 6: operand from MDR is added to Y; result in Z.\n- Step 7: Z → R1; End signal starts the next fetch.\n\nBasic operations: register transfers, ALU operations, memory fetch/store; only one data item can be on the bus at a time, hence several steps are needed.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "24. b.",
+            "question_text": "List and briefly explain the classes of Hazards that degrades the performance of Pipe lining.",
+            "marks": 8,
+            "answer": "A **hazard** is any condition that causes the pipeline to stall (insert bubbles), lowering performance below one instruction per cycle.\n\n1. **Structural (resource) hazard** – two instructions need the same hardware resource in the same cycle, e.g. one memory for instruction fetch and data access, or a single ALU. *Remedy*: duplicate resources (separate instruction and data caches, Harvard), pipelined functional units, or stall.\n2. **Data hazard** – an instruction depends on the result of a previous instruction still in the pipeline.\n   - RAW (read after write, true dependence) e.g. `ADD R1,R2,R3` then `SUB R4,R1,R5`.\n   - WAR (write after read, anti-dependence) and WAW (write after write, output dependence) – occur with out-of-order execution.\n   *Remedies*: operand forwarding/bypassing, stalling (interlocks), compiler reordering of instructions / inserting NOPs, register renaming.\n3. **Control (instruction) hazard** – caused by branches/jumps: the target address is not known until the branch is resolved, so instructions fetched after it may be wrong (branch penalty). *Remedies*: stall, branch prediction (static/dynamic), delayed branch (filling delay slots), early branch resolution, branch target buffer, prefetching both paths.\n\nEffect: each stall cycle increases CPI; speedup = pipeline depth / (1 + stall cycles per instruction).",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "25. a.",
+            "question_text": "Write about the cache coherence problem and give solutions for this problem.",
+            "marks": 8,
+            "answer": "**Cache coherence problem:** In a shared-memory multiprocessor each processor has a private cache. If two caches hold a copy of the same memory block and one processor writes to its copy, the other caches (and possibly main memory) hold a stale value – the copies are inconsistent. Example: P1 and P2 both read X = 5; P1 writes X = 10 in its cache; P2 still reads 5. The problem arises from sharing writable data, process migration and I/O (DMA) bypassing the cache.\n\n**Solutions**\n1. **Software approaches** – compiler marks shared writable data as non-cacheable; OS flushes caches on context switch.\n2. **Snooping protocols** (bus-based) – every cache controller monitors (snoops) the shared bus.\n   - *Write-invalidate*: a write broadcasts an invalidate; all other copies are marked invalid (most common).\n   - *Write-update (broadcast)*: the new value is broadcast and all copies are updated.\n3. **Directory-based protocols** (scalable, for networks) – a directory records which caches hold each block and its state; point-to-point messages invalidate/update only the sharers.\n\n**MESI protocol** (write-invalidate snooping): each line is in one of four states –\n- **M (Modified)**: only valid copy, dirty (differs from memory).\n- **E (Exclusive)**: only copy, clean.\n- **S (Shared)**: may be in other caches, clean.\n- **I (Invalid)**: not valid.\nRead miss → line loaded as E (no other copy) or S; write to S → invalidate others, go to M; another processor reading an M line forces write-back and both go to S; a snooped write invalidates the line (→ I). MESI keeps all caches coherent with minimum bus traffic.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "25. b.",
+            "question_text": "Discuss on the features, advantages and disadvantages of ARM Processor.",
+            "marks": 8,
+            "answer": "**Features**\n- 32-bit RISC, load/store architecture; fixed 32-bit instruction length plus 16-bit Thumb (and Thumb-2) for code density.\n- 37 registers; 16 visible general registers (R13 SP, R14 LR, R15 PC), CPSR/SPSR status registers; banked registers in 7 modes (User, FIQ, IRQ, SVC, Abort, Undefined, System).\n- Conditional execution of nearly all instructions.\n- Inline barrel shifter – shift combined with ALU operation.\n- Pipelined (3-stage ARM7, 5-stage ARM9, deeper in Cortex).\n- Multiple load/store (LDM/STM), multiply-accumulate, extensions: Jazelle, DSP, NEON SIMD, VFP, TrustZone.\n- Bi-endian; AMBA bus; licensed IP core.\n\n**Advantages**\n- Very low power consumption and heat – ideal for battery-powered mobile/embedded devices.\n- High performance per watt; simple instructions execute in one cycle.\n- Small die area, low cost.\n- Good code density via Thumb.\n- Large ecosystem; scalable from microcontrollers (Cortex-M) to servers (Neoverse).\n\n**Disadvantages**\n- Load/store design and simple instructions may need more instructions for complex tasks than CISC.\n- Not binary-compatible with x86 software; legacy desktop software needs emulation/recompilation.\n- Performance depends heavily on compiler optimization.\n- Fixed-length 32-bit instructions increase code size (without Thumb).\n- Peak performance traditionally lower than high-end x86 processors for heavy workloads.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "26",
+            "question_text": "Decsribe the procedure of constructing a fast adder and carry look-ahead adder with its diagram.",
+            "marks": 15,
+            "answer": "**Need**: in a ripple-carry adder the carry propagates through every stage; an n-bit adder needs $2n$ gate delays for the final carry and $2n-1$ for the MSB sum – too slow for large n. A **fast adder** generates all carries in parallel using **carry look-ahead (CLA)** logic.\n\n**Generate and propagate functions** for each bit i:\n$$G_i = x_i y_i, \\qquad P_i = x_i \\oplus y_i \\ (\\text{or } x_i + y_i)$$\n$$c_{i+1} = G_i + P_i c_i, \\qquad s_i = x_i \\oplus y_i \\oplus c_i$$\n$G_i$ = 1 means stage i generates a carry; $P_i$ = 1 means it propagates an incoming carry.\n\n**Expanding the recurrence (4-bit CLA)**\n$$c_1 = G_0 + P_0c_0$$\n$$c_2 = G_1 + P_1G_0 + P_1P_0c_0$$\n$$c_3 = G_2 + P_2G_1 + P_2P_1G_0 + P_2P_1P_0c_0$$\n$$c_4 = G_3 + P_3G_2 + P_3P_2G_1 + P_3P_2P_1G_0 + P_3P_2P_1P_0c_0$$\nEach carry is a two-level AND-OR (sum of products) expression of $G_i$, $P_i$ and $c_0$.\n\n**Construction / diagram**\n```\n x3y3   x2y2   x1y1   x0y0\n  |      |      |      |\n [B cell][B cell][B cell][B cell]   each B cell: G_i = x_i y_i, P_i = x_i XOR y_i, s_i = P_i XOR c_i\n  |G3P3  |G2P2  |G1P1  |G0P0\n  +------+------+------+------>  [ Carry look-ahead logic ]  <- c0\n                                   |   |   |   |\n                                  c4  c3  c2  c1  (fed back to B cells)\n```\n**Delay**: $G_i, P_i$ in 1 gate delay; all carries in 2 more (total 3); sums after 1 more XOR → **4 gate delays** independent of n for a 4-bit block (vs. 8 for c4 in ripple carry).\n\n**Larger adders (higher-level CLA)**: fan-in limits a single CLA level, so 4-bit CLA blocks are combined.\n- *Ripple of CLA blocks*: 16-bit adder from four 4-bit CLAs, carries ripple between blocks: $c_{16}$ after 3 + 2·3 + 2 = 9 delays, $s_{15}$ at 10.\n- *Second-level look-ahead*: each block produces block generate and propagate:\n$$G_0^I = G_3 + P_3G_2 + P_3P_2G_1 + P_3P_2P_1G_0, \\qquad P_0^I = P_3P_2P_1P_0$$\nA second-level CLA unit computes $c_4, c_8, c_{12}, c_{16}$ from $G^I_k, P^I_k$ exactly like the 4-bit equations. Delay: $c_{16}$ in 5 gate delays, $s_{15}$ in 8 gate delays (vs. 32 and 31 for ripple carry).\n- A 64-bit adder can be built with a third level of look-ahead.\n\nThus CLA trades extra hardware (wide AND/OR gates) for addition time growing only logarithmically with word length.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "27",
+            "question_text": "(i) Evaluate (A+B) * (C+D) using all 4 types of addressing instructions. (8 Marks)\n(ii) Discuss in detail the operational concepts of the computer system. (7 Marks)",
+            "marks": 15,
+            "answer": "**(i) X = (A+B) * (C+D)**\n\n*Three-address*\n```\nADD R1, A, B     ; R1 <- A + B\nADD R2, C, D     ; R2 <- C + D\nMUL X, R1, R2    ; X  <- R1 * R2\n```\n*Two-address*\n```\nMOV R1, A        ; R1 <- A\nADD R1, B        ; R1 <- R1 + B\nMOV R2, C        ; R2 <- C\nADD R2, D        ; R2 <- R2 + D\nMUL R1, R2       ; R1 <- R1 * R2\nMOV X, R1        ; X  <- R1\n```\n*One-address (accumulator)*\n```\nLOAD  A          ; AC <- A\nADD   B          ; AC <- A + B\nSTORE T          ; T  <- AC\nLOAD  C          ; AC <- C\nADD   D          ; AC <- C + D\nMUL   T          ; AC <- AC * T\nSTORE X          ; X  <- AC\n```\n*Zero-address (stack, postfix AB+CD+*)*\n```\nPUSH A\nPUSH B\nADD              ; TOS <- A + B\nPUSH C\nPUSH D\nADD              ; TOS <- C + D\nMUL              ; TOS <- (A+B)*(C+D)\nPOP X\n```\n\n**(ii) Basic operational concepts**\n- A program (instructions + data) is stored in memory; the processor fetches and executes instructions one after another (stored-program concept).\n- **Processor registers**: **PC** (address of next instruction), **IR** (current instruction), **MAR** (address of memory location to access), **MDR** (data to/from memory), general-purpose registers R0…R(n−1).\n- **Execution of** `Add LOCA, R0`:\n  1. PC → MAR; Read control signal sent to memory.\n  2. Instruction word arrives in MDR → IR; PC incremented to next instruction.\n  3. Instruction decoded by the control unit.\n  4. Address LOCA → MAR, Read; operand arrives in MDR.\n  5. ALU adds MDR and R0; result stored in R0.\n  6. If a result must be stored in memory: address → MAR, data → MDR, Write signal issued.\n- **Interrupts**: an I/O device may request service; the processor saves PC and status, executes an interrupt-service routine and then resumes.\n- Units communicate over the bus; the control unit issues timing and control signals coordinating all transfers.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        }
+    ]
+}

@@ -1,0 +1,287 @@
+{
+    "formal_filename": "2024-07_ET_QP.json",
+    "paper_title": "B.Tech/ M.Tech (Integrated) DEGREE EXAMINATION, JULY 2024 - Third Semester - 21CSS201T - COMPUTER ORGANIZATION AND ARCHITECTURE",
+    "source": "2024-07 ET",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "The representation of octal number $(532.2)_8$ in decimal is ______.\n(A) $(346.25)_{10}$\n(B) $(532.864)_{10}$\n(C) $(340.67)_{10}$\n(D) $(531.668)_{10}$",
+            "marks": 1,
+            "answer": "(A) $(346.25)_{10}$\n\nRationale: $5\\times64+3\\times8+2\\times1=346$ and $2\\times8^{-1}=0.25$, so $346.25_{10}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "2",
+            "question_text": "2's compliment of 11001011 is ______.\n(A) 01010111\n(B) 11010100\n(C) 00110101\n(D) 11100010",
+            "marks": 1,
+            "answer": "(C) 00110101\n\nRationale: 1's complement = 00110100; adding 1 gives 00110101.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "3",
+            "question_text": "The gate which is used to reverse the output obtained is ______.\n(A) NOR\n(B) NAND\n(C) EXOR\n(D) NOT",
+            "marks": 1,
+            "answer": "(D) NOT\n\nRationale: The NOT gate (inverter) produces the complement of its input.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "4",
+            "question_text": "______ are arithmetic gates.\n(A) NOT\n(B) NAND & NOR\n(C) X-OR & X-NOR\n(D) NOT, AND & OR",
+            "marks": 1,
+            "answer": "(C) X-OR & X-NOR\n\nRationale: XOR/XNOR implement binary sum/comparison and are used in adders, parity and comparators, hence called arithmetic gates (NAND/NOR are universal gates).",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "5",
+            "question_text": "In register transfer the processor register as\n(A) MAR\n(B) PC\n(C) IR\n(D) R1",
+            "marks": 1,
+            "answer": "(D) R1\n\nRationale: In register transfer notation general-purpose processor registers are denoted R0, R1, ...; e.g. $R1 \\leftarrow [LOC]$.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "6",
+            "question_text": "A CPU has 12 registers and uses 6 addressing modes. RAM is 64 K$\\times$32. What is the maximum size of the op-code field if the instruction has a register operand and a memory address operand?\n(A) 8 bits\n(B) 9 bits\n(C) 10 bits\n(D) 11 bits",
+            "marks": 1,
+            "answer": "(B) 9 bits\n\nRationale: Word = 32 bits. Address: $64K=2^{16}$ → 16 bits; register: 12 → 4 bits; mode: 6 → 3 bits. Opcode = $32-16-4-3=9$ bits.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "7",
+            "question_text": "Which of the following acts as a temporary storage location to hold an intermediate result in mathematical and logical calculations?\n(A) RAM\n(B) Accumulator\n(C) Program counter\n(D) Memory address register",
+            "marks": 1,
+            "answer": "(B) Accumulator\n\nRationale: The accumulator holds intermediate ALU results.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "8",
+            "question_text": "The bus used to connect the monitor to the CPU is ______.\n(A) PCI bus\n(B) SCSI bus\n(C) Memory bus\n(D) RAM bus",
+            "marks": 1,
+            "answer": "(A) PCI bus\n\nRationale: Graphics/display adapters are connected via the PCI (or PCI Express) bus.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "9",
+            "question_text": "Booth's algorithm is applied on ______.\n(A) Decimal numbers\n(B) Binary numbers\n(C) Hexadecimal numbers\n(D) Octal numbers",
+            "marks": 1,
+            "answer": "(B) Binary numbers\n\nRationale: Booth's algorithm multiplies signed binary numbers in 2's complement.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "10",
+            "question_text": "In IEEE 32-bit representation, the mantissa of the fraction is said to occupy ______ bits.\n(A) 24\n(B) 23\n(C) 20\n(D) 16",
+            "marks": 1,
+            "answer": "(B) 23\n\nRationale: Single precision: 1 sign + 8 exponent + 23 mantissa bits.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "11",
+            "question_text": "The normalized representation of $0.0010110 \\times 2^9$ is ______.\n(A) 0 10001000 0010110\n(B) 0 10000101 0110\n(C) 0 10101010 1110\n(D) 0 11110100 11100",
+            "marks": 1,
+            "answer": "(B) 0 10000101 0110\n\nRationale: $0.0010110\\times2^9 = 1.0110\\times2^6$. Biased exponent $=127+6=133=10000101_2$, mantissa 0110..., sign 0.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "12",
+            "question_text": "The difference between half adder and full adder is ______.\n(A) Half adder has two inputs while full adder has focus inputs\n(B) Half adder has one input while full adder has two outputs\n(C) Half adder has two inputs while full adder has three inputs\n(D) Half adder has three inputs while full adder has two inputs",
+            "marks": 1,
+            "answer": "(C) Half adder has two inputs while full adder has three inputs\n\nRationale: Half adder adds A, B; full adder adds A, B and carry-in.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "13",
+            "question_text": "______ are the different type/s of generating control signals.\n(A) Micro-programed\n(B) Hardwired\n(C) Micro-instruction\n(D) Both micro-programmed and hardwired",
+            "marks": 1,
+            "answer": "(D) Both micro-programmed and hardwired\n\nRationale: Control signals are generated either by hardwired logic or by microprogrammed control.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "14",
+            "question_text": "What does the end instruction do?\n(A) It ends the generation of a signal\n(B) It ends the complete generation process\n(C) It starts a new instruction fetch cycle and resets the counter\n(D) It is used to shift the control to the processor",
+            "marks": 1,
+            "answer": "(C) It starts a new instruction fetch cycle and resets the counter\n\nRationale: The END signal in hardwired control resets the step counter and starts a new fetch cycle.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "15",
+            "question_text": "By using pipelining, the latency of the instructions.\n(A) Increase\n(B) Remains the same\n(C) Decrease\n(D) It is unity",
+            "marks": 1,
+            "answer": "(A) Increase\n\nRationale: Pipelining improves throughput, but each individual instruction's latency increases slightly due to pipeline register overhead and stage balancing.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "16",
+            "question_text": "Which specific task is not included in super scalar processing?\n(A) Parallel decoding\n(B) Super scale instructions\n(C) Parallel instructions\n(D) Pipelines",
+            "marks": 1,
+            "answer": "(B) Super scale instructions\n\nRationale: Superscalar processing involves parallel decoding, parallel issue/execution of instructions and pipelines; 'super scale instructions' is not a task.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "17",
+            "question_text": "SIMD stands for\n(A) System instruction multiple data\n(B) Single instruction multiple data\n(C) Symmetric instruction multiple data\n(D) Scale instruction multiple data",
+            "marks": 1,
+            "answer": "(B) Single instruction multiple data\n\nRationale: Flynn's taxonomy: Single Instruction, Multiple Data.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "18",
+            "question_text": "How many instruction sets does ARM have?\n(A) One\n(B) Two\n(C) Three\n(D) Four",
+            "marks": 1,
+            "answer": "(C) Three\n\nRationale: Classic ARM cores support three instruction sets: 32-bit ARM, 16-bit Thumb and Jazelle (Java bytecode).",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "19",
+            "question_text": "Virtual memory consists of\n(A) Static RAM\n(B) Dynamic RAM\n(C) Magnetic memory\n(D) Virtual RAM",
+            "marks": 1,
+            "answer": "(C) Magnetic memory\n\nRationale: Virtual memory uses secondary storage (magnetic disk) as an extension of main memory.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "20",
+            "question_text": "The number successful accesses to memory stated as a fraction is called as ______.\n(A) Access rate\n(B) Success rate\n(C) Hit rate\n(D) Miss rate",
+            "marks": 1,
+            "answer": "(C) Hit rate\n\nRationale: Hit rate = hits / total accesses.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "21. a.",
+            "question_text": "Convert decimal $234_{10}$ to\n(i) Binary\n(ii) BCD\n(iii) Octal\n(iv) Hexadecimal",
+            "marks": 8,
+            "answer": "**(i) Binary** (repeated division by 2):\n234/2=117 r0, 117/2=58 r1, 58/2=29 r0, 29/2=14 r1, 14/2=7 r0, 7/2=3 r1, 3/2=1 r1, 1/2=0 r1.\nReading remainders upward: $234_{10} = 11101010_2$.\n\n**(ii) BCD** (each digit in 4 bits): 2 → 0010, 3 → 0011, 4 → 0100, so $234_{10} = 0010\\ 0011\\ 0100_{BCD}$.\n\n**(iii) Octal**: 234/8 = 29 r2, 29/8 = 3 r5, 3/8 = 0 r3 → $352_8$. (Check: $3\\times64+5\\times8+2=234$; also grouping 011 101 010.)\n\n**(iv) Hexadecimal**: 234/16 = 14 r10 → E, A → $EA_{16}$. (Check: $14\\times16+10=234$; grouping 1110 1010.)",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "21. b.",
+            "question_text": "i. Find 2's complement of $(1001)_2$ and $(1010\\ 0011)_2$.\nii. Subtract $101011_2$ from $111001_2$ using the 1's complement method.",
+            "marks": 8,
+            "answer": "**(i)** 2's complement = 1's complement + 1.\n- $1001$: 1's complement 0110, +1 → **0111**.\n- $1010\\ 0011$: 1's complement 0101 1100, +1 → **0101 1101**.\n\n**(ii)** $111001_2 - 101011_2$ ($57-43=14$).\n1's complement of subtrahend 101011 = 010100.\n$$111001 + 010100 = 1\\,001101$$\nAn end-around carry is produced, so add it back: $001101 + 1 = 001110$.\nResult (positive) = $001110_2 = 14_{10}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "22. a.",
+            "question_text": "Describe the basic instruction types in assembly language programming.",
+            "marks": 8,
+            "answer": "Instructions in assembly language are classified by function and by number of addresses.\n\n**By function**\n1. **Data transfer** – move data between memory, registers and I/O: `MOV`, `LOAD`, `STORE`, `PUSH`, `POP`, `IN`, `OUT`.\n2. **Arithmetic** – `ADD`, `SUB`, `MUL`, `DIV`, `INC`, `DEC`, `NEG`.\n3. **Logical and shift** – `AND`, `OR`, `XOR`, `NOT`, `SHL`, `SHR`, `ROL`, `ROR`, `CMP`, `TEST`.\n4. **Program control (branch)** – `JMP`, conditional branches `BZ`, `BNZ`, `BGT`, `CALL`, `RET`, loops.\n5. **Machine/processor control** – `HLT`, `NOP`, `WAIT`, interrupt enable/disable.\n\n**By number of address fields** (evaluate $X=(A+B)$):\n- *Three-address*: `ADD X, A, B` – $X \\leftarrow A+B$.\n- *Two-address*: `MOV X, A` ; `ADD X, B` – destination is also a source.\n- *One-address* (accumulator): `LOAD A` ; `ADD B` ; `STORE X`.\n- *Zero-address* (stack): `PUSH A` ; `PUSH B` ; `ADD` ; `POP X`.\n\nInstruction execution follows the sequence: fetch (PC → MAR, memory → IR, PC incremented), decode, operand fetch, execute and store result; straight-line sequencing continues unless a branch alters the PC. Condition code flags (N, Z, V, C) set by arithmetic/logic instructions are used by conditional branches.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "22. b.",
+            "question_text": "Describe addressing mode with example.",
+            "marks": 8,
+            "answer": "**Addressing modes** specify how the effective address (EA) of an operand is obtained.\n\n1. **Immediate** – operand is in the instruction. `MOV R0, #200` → $R0 \\leftarrow 200$.\n2. **Register** – operand is in a register. `ADD R1, R2` → $R1 \\leftarrow R1 + R2$.\n3. **Direct / Absolute** – instruction contains the memory address. `MOV R1, LOC` → EA = LOC.\n4. **Indirect** – instruction gives a register/memory location holding the address. `MOV R1, (R2)` → EA = [R2].\n5. **Index** – EA = X + [Ri], X a constant offset. `MOV R1, 20(R2)` → EA = 20 + [R2]; used for arrays/records.\n6. **Base with index** – EA = [Ri] + [Rj]: `(R1,R2)`; base-with-index-and-offset EA = [Ri]+[Rj]+X.\n7. **Relative** – EA = [PC] + X; used in branches: `BR LOOP` (offset from PC).\n8. **Autoincrement** – `(Ri)+`: EA = [Ri], then Ri is incremented by operand size; used to step through arrays/stack pop.\n9. **Autodecrement** – `-(Ri)`: Ri is decremented first, then EA = [Ri]; used for stack push.\n\nAdvantages: flexibility in program writing, fewer bits for addresses, support for pointers, arrays, loops, relocatable code.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "23. a.",
+            "question_text": "Apply Booth's algorithm to multiple the signed numbers +13 and -6.",
+            "marks": 8,
+            "answer": "Use 5-bit 2's complement: Multiplicand $M = +13 = 01101$, $-M = 10011$; Multiplier $Q = -6 = 11010$. Initially $A = 00000$, $Q_{-1}=0$, count = 5.\nRule: $Q_0Q_{-1}$ = 10 → $A \\leftarrow A-M$; 01 → $A \\leftarrow A+M$; 00/11 → no operation; then arithmetic shift right $A, Q, Q_{-1}$.\n\n| Step | $Q_0Q_{-1}$ | Operation | A | Q | $Q_{-1}$ |\n|---|---|---|---|---|---|\n| Init | | | 00000 | 11010 | 0 |\n| 1 | 00 | Shift | 00000 | 01101 | 0 |\n| 2 | 10 | A=A−M = 10011 ; Shift | 11001 | 10110 | 1 |\n| 3 | 01 | A=A+M = 00110 ; Shift | 00011 | 01011 | 0 |\n| 4 | 10 | A=A−M = 10110 ; Shift | 11011 | 00101 | 1 |\n| 5 | 11 | Shift | 11101 | 10010 | 1 |\n\nProduct (A,Q) = $11101\\,10010_2$. Since MSB = 1 it is negative; 2's complement = $00010\\,01110_2 = 78$.\nHence $(+13)\\times(-6) = -78$. ✓",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "23. b.",
+            "question_text": "Divide 14$\\div$5 using non restoring division algorithm.",
+            "marks": 8,
+            "answer": "Dividend $Q = 14 = 1110$, divisor $M = 5 = 00101$, $-M = 11011$, $A = 00000$, n = 4.\nRule: if $A \\ge 0$: shift left AQ, $A \\leftarrow A-M$; if $A<0$: shift left AQ, $A \\leftarrow A+M$. Then $q_0 = 1$ if new $A\\ge0$, else 0. At the end, if $A<0$, add M to get remainder.\n\n| Cycle | Operation | A | Q |\n|---|---|---|---|\n| Init | | 00000 | 1110 |\n| 1 | Shift left | 00001 | 110_ |\n| | A ≥ 0 → A−M | 11100 | 1100 ($q_0=0$) |\n| 2 | Shift left | 11001 | 100_ |\n| | A < 0 → A+M | 11110 | 1000 ($q_0=0$) |\n| 3 | Shift left | 11101 | 000_ |\n| | A < 0 → A+M | 00010 | 0001 ($q_0=1$) |\n| 4 | Shift left | 00100 | 001_ |\n| | A ≥ 0 → A−M | 11111 | 0010 ($q_0=0$) |\n| Final | A < 0 → A+M (restore remainder) | 00100 | 0010 |\n\nQuotient $Q = 0010_2 = 2$, Remainder $A = 00100_2 = 4$. Check: $5\\times2+4=14$. ✓",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "24. a.",
+            "question_text": "Explain the types of hazards.",
+            "marks": 8,
+            "answer": "A **hazard** is any condition that causes the pipeline to stall (insert bubbles), lowering performance below one instruction per cycle.\n\n1. **Structural (resource) hazard** – two instructions need the same hardware resource in the same cycle, e.g. one memory for instruction fetch and data access, or a single ALU. *Remedy*: duplicate resources (separate instruction and data caches, Harvard), pipelined functional units, or stall.\n2. **Data hazard** – an instruction depends on the result of a previous instruction still in the pipeline.\n   - RAW (read after write, true dependence) e.g. `ADD R1,R2,R3` then `SUB R4,R1,R5`.\n   - WAR (write after read, anti-dependence) and WAW (write after write, output dependence) – occur with out-of-order execution.\n   *Remedies*: operand forwarding/bypassing, stalling (interlocks), compiler reordering of instructions / inserting NOPs, register renaming.\n3. **Control (instruction) hazard** – caused by branches/jumps: the target address is not known until the branch is resolved, so instructions fetched after it may be wrong (branch penalty). *Remedies*: stall, branch prediction (static/dynamic), delayed branch (filling delay slots), early branch resolution, branch target buffer, prefetching both paths.\n\nEffect: each stall cycle increases CPI; speedup = pipeline depth / (1 + stall cycles per instruction).",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "24. b.",
+            "question_text": "List the characteristics of hardwired control and the advantages and disadvantages of microprogrammed control unit.",
+            "marks": 8,
+            "answer": "**Characteristics of hardwired control**\n- Control signals are generated by fixed combinational logic (decoders, gates, flip-flops) driven by a step counter, instruction decoder, condition codes and external inputs.\n- Very fast – minimal delay in signal generation; suitable for RISC.\n- Design is complex for large instruction sets; difficult to modify or add instructions (requires rewiring).\n- No control memory required.\n\n**Microprogrammed control unit** – control signals are stored as control words (microinstructions) in a control store (ROM); a microprogram counter (µPC) sequences through the microroutine of each instruction.\n\n*Advantages*\n- Flexible: instruction set can be changed/extended by modifying the microprogram.\n- Systematic, simpler design and debugging; easy to implement complex (CISC) instructions.\n- Lower design cost for large instruction sets; supports emulation.\n\n*Disadvantages*\n- Slower than hardwired because each microinstruction must be fetched from control memory.\n- Requires additional control-store hardware (cost, space).\n- Less efficient for simple instruction sets.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "25. a.",
+            "question_text": "Write short notes on memory in multiprocessor system and hardware multithreading.",
+            "marks": 8,
+            "answer": "**Memory in multiprocessor systems**\n- *Shared-memory (tightly coupled)* – all processors share a common address space through an interconnection network/bus.\n  - **UMA** (Uniform Memory Access): every processor has equal access time to all memory (SMP).\n  - **NUMA** (Non-Uniform Memory Access): memory is physically distributed; local memory is faster than remote memory, but address space is global.\n  - **COMA**: all local memories act as caches.\n- *Distributed-memory (loosely coupled, multicomputers)* – each processor has private memory; communication by message passing.\n- Each processor has private caches, so a **cache-coherence** mechanism (snooping or directory) and synchronization primitives (locks, test-and-set) are needed; memory is often interleaved to allow concurrent access.\n\n**Hardware multithreading**\nThe processor keeps multiple thread contexts (PC, registers) and switches between them in hardware to hide latency (e.g. cache misses) and keep functional units busy.\n1. **Fine-grained (interleaved)** – switches threads every clock cycle in round-robin; hides short and long stalls but slows individual threads.\n2. **Coarse-grained (blocked)** – switches only on costly stalls such as L2 cache misses; little impact on single-thread speed, but pipeline refill cost.\n3. **Simultaneous multithreading (SMT, e.g. Intel Hyper-Threading)** – a superscalar processor issues instructions from multiple threads in the same cycle, exploiting both thread-level and instruction-level parallelism.\nBenefits: better utilization, higher throughput; costs: replicated register files, more complex scheduling and shared-cache contention.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "25. b.",
+            "question_text": "Discuss in detail about cache coherence problem and the protocol that is used to overcome cache coherence.",
+            "marks": 8,
+            "answer": "**Cache coherence problem:** In a shared-memory multiprocessor each processor has a private cache. If two caches hold a copy of the same memory block and one processor writes to its copy, the other caches (and possibly main memory) hold a stale value – the copies are inconsistent. Example: P1 and P2 both read X = 5; P1 writes X = 10 in its cache; P2 still reads 5. The problem arises from sharing writable data, process migration and I/O (DMA) bypassing the cache.\n\n**Solutions**\n1. **Software approaches** – compiler marks shared writable data as non-cacheable; OS flushes caches on context switch.\n2. **Snooping protocols** (bus-based) – every cache controller monitors (snoops) the shared bus.\n   - *Write-invalidate*: a write broadcasts an invalidate; all other copies are marked invalid (most common).\n   - *Write-update (broadcast)*: the new value is broadcast and all copies are updated.\n3. **Directory-based protocols** (scalable, for networks) – a directory records which caches hold each block and its state; point-to-point messages invalidate/update only the sharers.\n\n**MESI protocol** (write-invalidate snooping): each line is in one of four states –\n- **M (Modified)**: only valid copy, dirty (differs from memory).\n- **E (Exclusive)**: only copy, clean.\n- **S (Shared)**: may be in other caches, clean.\n- **I (Invalid)**: not valid.\nRead miss → line loaded as E (no other copy) or S; write to S → invalidate others, go to M; another processor reading an M line forces write-back and both go to S; a snooped write invalidates the line (→ I). MESI keeps all caches coherent with minimum bus traffic.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "26. i.",
+            "question_text": "Define Boolean algebra.",
+            "marks": 2,
+            "answer": "Boolean algebra is an algebraic system for binary variables (values 0 and 1) and logic operations AND ($\\cdot$), OR ($+$) and NOT ($'$), governed by postulates such as closure, identity ($A+0=A$, $A\\cdot1=A$), complement ($A+A'=1$, $A\\cdot A'=0$), commutative, associative and distributive laws, plus theorems like De Morgan's: $(A+B)'=A'B'$, $(AB)'=A'+B'$. It is used to describe and simplify digital logic circuits.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "26. ii.",
+            "question_text": "Explain the working of a logic gate.",
+            "marks": 2,
+            "answer": "A logic gate is an electronic circuit (built from transistors) that takes one or more binary inputs and produces a single binary output according to a Boolean function. Voltage levels represent logic 1 (high) and 0 (low); the transistors act as switches so the output is high or low depending on the input combination, as defined by the gate's truth table (e.g. AND output is 1 only when all inputs are 1).",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "26. iii.",
+            "question_text": "List the types of logic gate with diagram.",
+            "marks": 2,
+            "answer": "- **Basic gates**: NOT ($Y=A'$, triangle with bubble), AND ($Y=AB$, D-shape), OR ($Y=A+B$, curved shield).\n- **Universal gates**: NAND ($Y=(AB)'$, AND with output bubble), NOR ($Y=(A+B)'$, OR with output bubble).\n- **Special/arithmetic gates**: XOR ($Y=A\\oplus B$, OR with extra curved input line), XNOR ($Y=(A\\oplus B)'$, XOR with bubble).",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "26. iv.",
+            "question_text": "Explain any two types of logic gate in detail.",
+            "marks": 9,
+            "answer": "**1. NAND gate (universal gate)**\nBoolean expression: $Y = \\overline{A\\cdot B}$. Symbol: AND gate followed by an inversion bubble. Output is 0 only when all inputs are 1.\n\n| A | B | Y |\n|---|---|---|\n| 0 | 0 | 1 |\n| 0 | 1 | 1 |\n| 1 | 0 | 1 |\n| 1 | 1 | 0 |\n\nUniversality: NOT: $\\overline{A\\cdot A}=A'$; AND: NAND followed by NAND-inverter; OR: $\\overline{A'\\cdot B'} = A+B$. Therefore any circuit can be built with NAND alone; widely used in TTL/CMOS ICs (7400).\n\n**2. XOR (Exclusive-OR) gate**\nBoolean expression: $Y = A\\oplus B = A\\bar B + \\bar A B$. Output is 1 when the inputs differ (odd number of 1s).\n\n| A | B | Y |\n|---|---|---|\n| 0 | 0 | 0 |\n| 0 | 1 | 1 |\n| 1 | 0 | 1 |\n| 1 | 1 | 0 |\n\nApplications: sum bit of half/full adders ($S=A\\oplus B\\oplus C_{in}$), parity generators/checkers, comparators, controlled inverters (2's complement adder/subtractor), Gray-code conversion. IC 7486.\n\n(Other examples: AND $Y=AB$ outputs 1 only if all inputs are 1; OR $Y=A+B$ outputs 1 if any input is 1.)",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "27.",
+            "question_text": "Explain in detail about parallelism and its types.",
+            "marks": 15,
+            "answer": "**Parallelism** is the simultaneous execution of multiple operations/instructions/tasks to increase throughput and reduce execution time. It can be exploited at several levels:\n\n**1. Bit-level parallelism** – increasing the word size (8 → 16 → 32 → 64-bit) so that one instruction operates on more bits, reducing the number of instructions.\n\n**2. Instruction-level parallelism (ILP)** – multiple instructions from a single program execute at the same time.\n- *Pipelining*: overlapping fetch, decode, execute, memory and write-back stages of successive instructions.\n- *Superscalar*: multiple execution units; more than one instruction issued per cycle with dynamic scheduling.\n- *VLIW/EPIC*: the compiler packs independent operations into one long instruction.\n- Limited by data, control and structural hazards; techniques: out-of-order execution, register renaming, branch prediction, speculation.\n\n**3. Data-level parallelism (DLP)** – the same operation is applied to many data elements simultaneously: SIMD instructions, vector processors, GPUs (e.g. adding two arrays element-wise).\n\n**4. Thread-level / task-level parallelism (TLP)** – different threads or tasks run concurrently on multiple cores or via hardware multithreading (fine-grained, coarse-grained, SMT).\n\n**5. Process/Job-level parallelism** – independent programs run on multiprocessors or clusters (request-level parallelism in servers).\n\n**Flynn's classification of parallel architectures**\n- SISD – uniprocessor; SIMD – vector/array processors; MISD – rare (fault-tolerant); MIMD – multiprocessors and multicomputers.\n\n**Parallel architectures by memory**: shared memory (UMA/SMP, NUMA) vs. distributed memory (message passing clusters); multicore processors.\n\n**Hardware vs. software parallelism**: hardware parallelism is determined by machine resources (issue width, cores); software parallelism by program dependencies, algorithm and compiler.\n\n**Performance**: Speedup $S = T_1/T_p$; Amdahl's law $S = \\dfrac{1}{(1-f) + f/p}$, where f is the parallelizable fraction and p the number of processors – the serial part limits speedup.\n\n**Challenges**: synchronization, cache coherence, communication overhead, load balancing and dependency handling.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        }
+    ]
+}
