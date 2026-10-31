@@ -76,7 +76,7 @@
         },
         {
             "question_number": "10",
-            "question_text": "Simplify the following Boolean expression Y(A,B,C) = Σm(0,1,2,3,6)\n(A) Y = \\overline{A} + B\\overline{C}\n(B) Y = A + B\\overline{C}\n(C) Y = \\overline{A} + BC\n(D) Y = BC",
+            "question_text": "Simplify the following Boolean expression Y(A,B,C) = Σm(0,1,2,3,6)\n(A) $Y = \\overline{A} + B\\overline{C}$\n(B) $Y = A + B\\overline{C}$\n(C) $Y = \\overline{A} + BC$\n(D) $Y = BC$",
             "marks": 1,
             "answer": "(A)\nExplanation: Grouping minterms {0,1,2,3} yields A' and grouping {2,6} yields BC'. The simplified equation is Y = A' + BC'.",
             "answer_source": "generated",

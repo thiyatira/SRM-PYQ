@@ -9,7 +9,7 @@
             "marks": 2,
             "answer": "An Abstract Data Type (ADT) is a mathematical model for a data type defined by its behavior (operations) from the user's point of view, specifying what operations can be performed on the data without specifying how they are implemented. Examples include List, Stack, and Queue ADTs.",
             "answer_source": "generated",
-            "chapter": "Unit-1 - Introduction"
+            "chapter": "Unit 1 - Introduction"
         },
         {
             "question_number": "2",
@@ -17,7 +17,7 @@
             "marks": 2,
             "answer": "Algorithm efficiency is measured using two parameters:\n1. **Time Complexity:** The total execution time required by an algorithm as a function of the input size $n$ (often expressed using Big O, Omega, or Theta notation).\n2. **Space Complexity:** The total memory space required by the algorithm during its execution as a function of the input size $n$.",
             "answer_source": "generated",
-            "chapter": "Unit-1 - Introduction"
+            "chapter": "Unit 1 - Introduction"
         },
         {
             "question_number": "3",
@@ -25,7 +25,7 @@
             "marks": 2,
             "answer": "A Circular Linked List is a sequence of elements (nodes) where the last node points back to the first node (head) instead of pointing to `NULL`. This creates a closed circular loop, allowing continuous traversal without encountering a boundary.",
             "answer_source": "generated",
-            "chapter": "Unit-2 - List Structure"
+            "chapter": "Unit 2 - List Structure"
         },
         {
             "question_number": "4",
@@ -33,7 +33,7 @@
             "marks": 2,
             "answer": "```cpp\nstruct Node {\n    int data;\n    struct Node* next;\n    struct Node* prev;\n};\n\nvoid traverseDLL(struct Node* head) {\n    struct Node* temp = head;\n    if (temp == NULL) {\n        print \"List is empty\";\n        return;\n    }\n    while (temp != NULL) {\n        print temp->data;\n        temp = temp->next;\n    }\n}\n```",
             "answer_source": "generated",
-            "chapter": "Unit-2 - List Structure"
+            "chapter": "Unit 2 - List Structure"
         },
         {
             "question_number": "5",
@@ -41,7 +41,7 @@
             "marks": 2,
             "answer": "- **Stack Overflow:** Occurs when attempting to push an element onto a stack that is already full. Condition: `top == MAX_SIZE - 1` (where indices are from $0$ to $\\text{MAX\\_SIZE}-1$).\n- **Stack Underflow:** Occurs when attempting to pop or peek an element from an empty stack. Condition: `top == -1`.",
             "answer_source": "generated",
-            "chapter": "Unit-3 - Stack and Queue"
+            "chapter": "Unit 3 - Stack and Queue"
         },
         {
             "question_number": "6",
@@ -49,7 +49,7 @@
             "marks": 2,
             "answer": "Applications of stacks include:\n1. Expression Evaluation and Conversion (e.g., Infix to Postfix/Prefix conversion).\n2. Parentheses/Symbol Balancing in compilers.\n3. Function Calls and recursion tracking (activation records).\n4. Backtracking problems (e.g., Knight's Tour, Maze solving, DFS traversal).\n5. Undo/Redo mechanisms in software applications.",
             "answer_source": "generated",
-            "chapter": "Unit-3 - Stack and Queue"
+            "chapter": "Unit 3 - Stack and Queue"
         },
         {
             "question_number": "7",
@@ -57,7 +57,7 @@
             "marks": 2,
             "answer": "- **Binary Tree:** A tree where every node has at most two children (left and right).\n- **Complete Binary Tree:** A binary tree in which all levels are completely filled except possibly the last level, and the nodes in the last level are filled from left to right without leaving any gaps.",
             "answer_source": "generated",
-            "chapter": "Unit-4 - Trees and Hashing"
+            "chapter": "Unit 4 - Trees and Hashing"
         },
         {
             "question_number": "8",
@@ -65,7 +65,7 @@
             "marks": 2,
             "answer": "A graph $G$ is a non-linear data structure represented as $G = (V, E)$, where $V$ is a finite set of vertices (nodes) and $E$ is a set of edges connecting pairs of vertices.\n\n**Example:**\nVertices $V = \\{1, 2, 3\\}$\nEdges $E = \\{(1, 2), (2, 3), (3, 1)\\}$\nThis represents a simple undirected triangle graph with three connected nodes.",
             "answer_source": "generated",
-            "chapter": "Unit-5 - Graph"
+            "chapter": "Unit 5 - Graph"
         },
         {
             "question_number": "9",
@@ -73,7 +73,7 @@
             "marks": 2,
             "answer": "External sorting consists of two primary phases:\n1. **Run Generation Phase:** The large dataset is divided into smaller chunks that fit inside primary memory (RAM), sorted using an internal sorting algorithm (like Quicksort), and saved back to external storage as sorted \"runs\".\n2. **Merge Phase:** These sorted runs are merged systematically (typically using a multi-way merge) to produce a single, completely sorted output file.",
             "answer_source": "generated",
-            "chapter": "Unit-1 - Introduction"
+            "chapter": "Unit 1 - Introduction"
         },
         {
             "question_number": "10",
@@ -81,7 +81,7 @@
             "marks": 2,
             "answer": "- **Worst-case Time Complexity:** $O(n^2)$ (occurs when the pivot partition is extremely unbalanced, e.g., when the array is already sorted and the first/last element is picked as the pivot).\n- **Average-case Time Complexity:** $O(n \\log n)$ (occurs when the pivot partitions the array into reasonably balanced sub-problems).",
             "answer_source": "generated",
-            "chapter": "Unit-1 - Introduction"
+            "chapter": "Unit 1 - Introduction"
         },
         {
             "question_number": "11. a.",
@@ -89,7 +89,7 @@
             "marks": 16,
             "answer": "### 1. Linear Search\nLinear search scans each element sequentially from left to right until the element is found or the end of the list is reached.\n\n**Pseudocode:**\n\n```cpp\nint linearSearch(int arr[], int n, int target) {\n    for (int i = 0; i < n; i++) {\n        if (arr[i] == target) return i; // returns index\n    }\n    return -1; // Not found\n}\n\n```\n\n**Example Trace for finding 12:**\n- Given array: `[20, 10, 1, 6, 12, 8, 4, 15]`\n- Index 0: `20` != `12`\n- Index 1: `10` != `12`\n- Index 2: `1` != `12`\n- Index 3: `6` != `12`\n- Index 4: `12` == `12` (Target found at index 4 in 5 comparisons).\n\n---\n\n### 2. Binary Search\nBinary search requires a sorted array. It divides the search interval in half recursively.\n\n**Step 1: Sort the array:**\n`[1, 4, 6, 8, 10, 12, 15, 20]`\n\n**Pseudocode:**\n\n```cpp\nint binarySearch(int arr[], int low, int high, int target) {\n    while (low <= high) {\n        int mid = low + (high - low) / 2;\n        if (arr[mid] == target) return mid;\n        else if (arr[mid] < target) low = mid + 1;\n        else high = mid - 1;\n    }\n    return -1; // Not found\n}\n\n```\n\n**Example Trace for finding 12:**\n- Array: `[1, 4, 6, 8, 10, 12, 15, 20]` (Indices $0$ to $7$)\n- **Pass 1:** `low = 0`, `high = 7`. `mid = (0+7)/2 = 3`. `arr[3] = 8`. Since $8 < 12$, set `low = mid + 1 = 4`.\n- **Pass 2:** `low = 4`, `high = 7`. `mid = (4+7)/2 = 5`. `arr[5] = 12`. Target found at index 5.",
             "answer_source": "generated",
-            "chapter": "Unit-1 - Introduction"
+            "chapter": "Unit 1 - Introduction"
         },
         {
             "question_number": "11. b.",
@@ -97,7 +97,7 @@
             "marks": 16,
             "answer": "### Hashing and operations\nHashing is a technique used to uniquely identify a specific object from a group of similar objects. It maps keys to indices in an array (Hash Table) using a mathematical formula called a **Hash Function**:\n$$h(\\text{key}) = \\text{index}$$\n\n### Key Components:\n1. **Hash Table:** An array of fixed size where key-value pairs are stored.\n2. **Hash Function:** Maps any given key to an array index (e.g., modulo division $h(k) = k \\pmod m$, where $m$ is the table size).\n3. **Collision Resolution:** When two different keys map to the same index, collision occurs. This is handled via:\n   - **Separate Chaining (Open hashing):** Linked list at each index.\n   - **Open Addressing (Closed hashing):** Linear probing ($h(k, i) = (h'(k) + i) \\pmod m$), Quadratic probing, or Double hashing.\n\n### Example:\nLet table size $m = 10$. Hash Function: $h(key) = key \\pmod{10}$.\nKeys to insert: $15, 25, 34, 48$.\n- $h(15) = 15 \\pmod{10} = 5$ (Insert 15 at index 5)\n- $h(25) = 25 \\pmod{10} = 5$ (Collision! if using linear probing, search next empty index $5+1=6$. Insert 25 at index 6)\n- $h(34) = 34 \\pmod{10} = 4$ (Insert 34 at index 4)\n- $h(48) = 48 \\pmod{10} = 8$ (Insert 48 at index 8)",
             "answer_source": "generated",
-            "chapter": "Unit-4 - Trees and Hashing"
+            "chapter": "Unit 4 - Trees and Hashing"
         },
         {
             "question_number": "12. a.",
@@ -105,7 +105,7 @@
             "marks": 16,
             "answer": "### Singly Linked List Operations\n\n#### 1. Insertion Algorithm\nTo insert a new node with data `val` at position `pos`:\n1. Create a new node `new_node` and set `new_node->data = val`.\n2. If `pos == 0` (Insert at Beginning):\n   - Set `new_node->next = head`.\n   - Set `head = new_node`.\n3. Else (Insert at Position/End):\n   - Initialize `temp = head` and counter `i = 0`.\n   - Traverse until `temp != NULL` and `i < pos - 1`.\n   - If `temp == NULL`, position is invalid.\n   - Else, set `new_node->next = temp->next`.\n   - Set `temp->next = new_node`.\n\n#### 2. Deletion Algorithm\nTo delete a node from position `pos`:\n1. If `head == NULL`, exit (underflow).\n2. If `pos == 0` (Delete from Beginning):\n   - Set `temp = head`.\n   - Set `head = head->next`.\n   - Free `temp`.\n3. Else (Delete from Middle/End):\n   - Initialize `temp = head` and `i = 0`.\n   - Traverse until `temp != NULL` and `i < pos - 1`.\n   - If `temp == NULL` or `temp->next == NULL`, position is invalid.\n   - Else, set `to_delete = temp->next`.\n   - Set `temp->next = to_delete->next`.\n   - Free `to_delete`.",
             "answer_source": "generated",
-            "chapter": "Unit-2 - List Structure"
+            "chapter": "Unit 2 - List Structure"
         },
         {
             "question_number": "12. b.",
@@ -113,7 +113,7 @@
             "marks": 16,
             "answer": "A **Doubly Linked List (DLL)** is a linear data structure in which each node contains three fields:\n1. `prev`: Pointer to the previous node.\n2. `data`: The value stored in the node.\n3. `next`: Pointer to the next node.\n\nNode structure template:\n\n```cpp\nstruct Node {\n    int data;\n    Node* next;\n    Node* prev;\n};\n\n```\n\n### Key Operations and Examples:\n\n1. **Insertion at the Beginning:**\n   - To insert `10` into an empty DLL:\n     `[prev=NULL | data=10 | next=NULL]`\n   - To insert `5` at the beginning:\n     - Set `new_node->next = head`\n     - Set `head->prev = new_node`\n     - Update head: `head = new_node`\n     - Result: `[NULL|5|next] <-> [prev|10|NULL]`\n\n2. **Deletion from the End:**\n   - Traverse to the last node `tail`.\n   - Set `tail->prev->next = NULL`.\n   - Free `tail`.",
             "answer_source": "generated",
-            "chapter": "Unit-2 - List Structure"
+            "chapter": "Unit 2 - List Structure"
         },
         {
             "question_number": "13. a.",
@@ -121,7 +121,7 @@
             "marks": 16,
             "answer": "### Infix to Postfix Conversion Algorithm\nUsing a stack to manage operator precedence:\n\n1. Initialize an empty stack `S` and empty output string `postfix`.\n2. Scan the infix expression from left to right element by element:\n   - **If the character is an operand:** Append it to the `postfix` output.\n   - **If it is '(':** Push it onto `S`.\n   - **If it is ')':** Pop from `S` and append to `postfix` until a '(' is encountered. Pop '(' from the stack but do not append it to output.\n   - **If it is an operator ($+$, $-$, $*$, $/$, $^$):**\n     - While stack is not empty and precedence of the operator on top of `S` is $\\ge$ precedence of the scanned operator, pop from `S` and append to `postfix`.\n     - Push the scanned operator onto `S`.\n3. After the entire string is scanned, pop and append all remaining operators from `S` to `postfix`.\n\n**Operator Precedence:**\n- $^$ (Exponentiation): High Precedence\n- $*$, $/$: Medium Precedence\n- $+$, $-$: Low Precedence",
             "answer_source": "generated",
-            "chapter": "Unit-3 - Stack and Queue"
+            "chapter": "Unit 3 - Stack and Queue"
         },
         {
             "question_number": "13. b.",
@@ -129,7 +129,7 @@
             "marks": 16,
             "answer": "A **Queue** is a linear data structure that follows the **FIFO** (First In First Out) principle, meaning insertion is performed at one end (Rear) and deletion is performed at the other end (Front).\n\n### Primary Operations:\n1. **Enqueue(val):** Inserts an element at the rear of the queue.\n2. **Dequeue():** Removes and returns the element at the front of the queue.\n3. **Front/Peek():** Returns the element at the front without removing it.\n4. **isEmpty():** Checks if the queue is empty.\n\n### Example (Array-based Queue of MaxSize 4):\n- **Initialize:** `front = -1`, `rear = -1`\n- **Enqueue(10):** `front = 0`, `rear = 0`, Queue: `[10]`\n- **Enqueue(20):** `rear = 1`, Queue: `[10, 20]`\n- **Enqueue(30):** `rear = 2`, Queue: `[10, 20, 30]`\n- **Dequeue():** Removes `10`, increment `front` to `1`. Queue: `[_, 20, 30]`",
             "answer_source": "generated",
-            "chapter": "Unit-3 - Stack and Queue"
+            "chapter": "Unit 3 - Stack and Queue"
         },
         {
             "question_number": "14. a.",
@@ -137,7 +137,7 @@
             "marks": 16,
             "answer": "### Step-by-Step Binary Tree Construction:\n1. **Find Root:** The last element in `postorder` is always the root of the tree. Therefore, **`A`** is the root.\n2. **Divide Left and Right:** Locate `A` in the `inorder` sequence:\n   - **Left Subtree Inorder:** `D B F E`\n   - **Right Subtree Inorder:** `G C L J H K`\n3. **Reconstruct Left Subtree (`D B F E`):**\n   - Corresponding postorder is `D F E B`. The last element is **`B`**, which is the root of this subtree.\n   - Look at `B` in left inorder: `D` is on the left (left child), and `F E` is on the right.\n   - For right child `F E` (postorder `F E`), the root is **`E`**.\n   - In inorder `F E`, `F` is on the left of `E`. So `F` is the left child of `E`.\n4. **Reconstruct Right Subtree (`G C L J H K`):**\n   - Corresponding postorder is `G L J K H C`. The last element is **`C`**, which is the root of the right subtree.\n   - In inorder, `G` is to the left of `C` (left child), and `L J H K` is to the right.\n   - For `L J H K` (postorder `L J K H`), the root is **`H`**.\n   - Looking at inorder `L J H K`: `L J` is on the left of `H`, and `K` is on the right (right child).\n   - For `L J` (postorder `L J`), the root is **`J`**.\n   - In inorder `L J`, `L` is on the left of `J`. So `L` is the left child of `J`.\n\n### Resulting Binary Tree Structure:\n\n```text\nA\n         / \\\n        B   C\n       / \\ / \\\n      D  E G  H\n        /    / \\\n       F    J   K\n           /\n          L\n```",
             "answer_source": "generated",
-            "chapter": "Unit-4 - Trees and Hashing"
+            "chapter": "Unit 4 - Trees and Hashing"
         },
         {
             "question_number": "14. b.",
@@ -145,7 +145,7 @@
             "marks": 16,
             "answer": "AVL rotations are used to balance an AVL tree when the insertion or deletion of a node makes the balance factor ($bf = \\text{height(left)} - \\text{height(right)}$) of any node greater than $1$ or less than $-1$.\n\nThere are four types of rotations categorized into Single and Double rotations:\n\n### 1. Single Rotations:\n- **LL (Left-Left) Rotation (Right Rotation):** Applied when a node is inserted into the left subtree of the left child of the unbalanced node. \n  *Action:* Perform a single right rotation about the unbalanced node.\n- **RR (Right-Right) Rotation (Left Rotation):** Applied when a node is inserted into the right subtree of the right child of the unbalanced node.\n  *Action:* Perform a single left rotation about the unbalanced node.\n\n### 2. Double Rotations:\n- **LR (Left-Right) Rotation:** Applied when a node is inserted into the right subtree of the left child of the unbalanced node. \n  *Action:* Perform a left rotation on the left child, followed by a right rotation on the unbalanced grandparent node.\n- **RL (Right-Left) Rotation:** Applied when a node is inserted into the left subtree of the right child of the unbalanced node.\n  *Action:* Perform a right rotation on the right child, followed by a left rotation on the unbalanced grandparent node.",
             "answer_source": "generated",
-            "chapter": "Unit-4 - Trees and Hashing"
+            "chapter": "Unit 4 - Trees and Hashing"
         },
         {
             "question_number": "15. a.",
@@ -153,7 +153,7 @@
             "marks": 16,
             "answer": "Heap Sort is a comparison-based sorting technique based on the Binary Heap data structure.\n\n### Step-by-Step Algorithm:\n1. **Build a Max Heap** from the unsorted input array.\n2. **Repeatedly Delete Root:** Swap the root element (maximum value) with the last element of the heap, decrement heap size by 1, and call `heapify` on the root to restore max-heap property.\n\n### Demonstration with Array: `[12, 11, 13, 5, 6, 7]`\n\n1. **Build Max Heap:**\n   - Input array representation as binary tree:\n     \n\n```text\n12\n         /  \\\n       11    13\n      /  \\   /\n     5    6 7\n\n```\n\n   - Heapify from non-leaf nodes downwards: \n     - Heapify at node 13: Left child is 7. (No change: 13 > 7)\n     - Heapify at node 11: Children are 5, 6. (No change: 11 > 5,6)\n     - Heapify at root 12: Left child 11, Right child 13. Swap 12 and 13.\n     - Max Heap structure: `[13, 11, 12, 5, 6, 7]`\n\n2. **Sorting Phase (Repeated swap and heapify):**\n   - Swap root `13` with last element `7`. Heap size = 5.\n     - Tree: `[7, 11, 12, 5, 6]`. Heapify root -> `[12, 11, 7, 5, 6]`\n   - Swap root `12` with last element `6`. Heap size = 4.\n     - Tree: `[6, 11, 7, 5]`. Heapify root -> `[11, 6, 7, 5]`\n   - Swap root `11` with last element `5`. Heap size = 3.\n     - Tree: `[5, 6, 7]`. Heapify root -> `[7, 6, 5]`\n   - Swap root `7` with last element `5`. Heap size = 2.\n     - Tree: `[5, 6]`. Heapify root -> `[6, 5]`\n   - Swap root `6` with last element `5`. Heap size = 1.\n     - Sorted Array: `[5, 6, 7, 11, 12, 13]`",
             "answer_source": "generated",
-            "chapter": "Unit-4 - Trees and Hashing"
+            "chapter": "Unit 4 - Trees and Hashing"
         },
         {
             "question_number": "15. b.",
@@ -161,7 +161,7 @@
             "marks": 16,
             "answer": "Quick Sort is a Divide-and-Conquer sorting algorithm. It picks an element as pivot and partitions the given array around the picked pivot.\n\n### Partition Algorithm (Lomuto Partition):\n- Choose the last element as pivot.\n- Keep a pointer `i` indicating the boundary of elements smaller than pivot.\n- Traverse the array with pointer `j`; if `arr[j] < pivot`, increment `i` and swap `arr[i]` and `arr[j]`.\n- Finally, swap `arr[i+1]` with pivot.\n\n### Step-by-Step Trace of Array: `[10, 80, 30, 90, 40, 50, 70]`\n1. **First Partition (Pivot = 70):**\n   - Initialize `i = -1`.\n   - `j = 0`: `arr[0]` (10) < 70 -> `i = 0`, Swap `arr[0]` and `arr[0]` -> `[10, 80, 30, 90, 40, 50, 70]`\n   - `j = 1`: `arr[1]` (80) > 70 -> No swap\n   - `j = 2`: `arr[2]` (30) < 70 -> `i = 1`, Swap `arr[1]` and `arr[2]` -> `[10, 30, 80, 90, 40, 50, 70]`\n   - `j = 3`: `arr[3]` (90) > 70 -> No swap\n   - `j = 4`: `arr[4]` (40) < 70 -> `i = 2`, Swap `arr[2]` and `arr[4]` -> `[10, 30, 40, 90, 80, 50, 70]`\n   - `j = 5`: `arr[5]` (50) < 70 -> `i = 3`, Swap `arr[3]` and `arr[5]` -> `[10, 30, 40, 50, 80, 90, 70]`\n   - Swap pivot with `arr[i+1]` (`arr[4]`): `[10, 30, 40, 50, 70, 90, 80]`\n   - **70 is now in its correct position** at index 4.\n\n2. **Recursively apply to left subarray `[10, 30, 40, 50]` and right subarray `[90, 80]`:**\n   - Left subarray is already sorted after successive inner partitions.\n   - Right subarray `[90, 80]` (Pivot = 80): Swap 90 and 80 -> `[80, 90]` (Sorted).\n\n3. **Final Sorted Output:** `[10, 30, 40, 50, 70, 80, 90]`",
             "answer_source": "generated",
-            "chapter": "Unit-1 - Introduction"
+            "chapter": "Unit 1 - Introduction"
         }
     ]
 }

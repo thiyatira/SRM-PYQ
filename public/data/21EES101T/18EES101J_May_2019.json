@@ -100,7 +100,7 @@
         },
         {
             "question_number": "18",
-            "question_text": "Which of the following statements is true, according to Demorgan's theorem\n(A) \\overline{A+B} = \\overline{A}.\\overline{B}\n(B) \\overline{A}+\\overline{B} = \\overline{A}.\\overline{B}\n(C) \\overline{A+B} = \\overline{A.B}\n(D) A.B = \\overline{A} + \\overline{B}",
+            "question_text": "Which of the following statements is true, according to Demorgan's theorem\n(A) $\\overline{A+B} = \\overline{A}.\\overline{B}$\n(B) $\\overline{A}+\\overline{B} = \\overline{A}.\\overline{B}$\n(C) $\\overline{A+B} = \\overline{A.B}$\n(D) $A.B = \\overline{A} + \\overline{B}$",
             "marks": 1,
             "answer": "(A)\nExplanation: De Morgan's Law states that the complement of a logical OR is the logical AND of the complements: (A+B)' = A'.B'.",
             "answer_source": "generated",

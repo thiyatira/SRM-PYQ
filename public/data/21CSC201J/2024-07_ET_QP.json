@@ -9,7 +9,7 @@
             "marks": 1,
             "answer": "(A) Randomly\n\n**Rationale:** Arrays support constant time $O(1)$ random access to any element via its index because the memory is contiguous.",
             "answer_source": "generated",
-            "chapter": "Unit-1 - Introduction"
+            "chapter": "Unit 1 - Introduction"
         },
         {
             "question_number": "2",
@@ -17,7 +17,7 @@
             "marks": 1,
             "answer": "(B) Segmentation fault\n\n**Rationale:** The pointer `s` of type `struct student *` is a wild pointer that is not initialized to point to any valid memory address. Dereferencing it using `s->c` causes a segmentation fault at runtime.",
             "answer_source": "generated",
-            "chapter": "Unit-1 - Introduction"
+            "chapter": "Unit 1 - Introduction"
         },
         {
             "question_number": "3",
@@ -25,7 +25,7 @@
             "marks": 1,
             "answer": "(D) switch\n\n**Rationale:** The `continue` statement is used to skip the current iteration of a loop (`for`, `while`, or `do-while`). It has no meaning and cannot be used directly within a `switch` block unless the `switch` is nested inside a loop.",
             "answer_source": "generated",
-            "chapter": "Unit-1 - Introduction"
+            "chapter": "Unit 1 - Introduction"
         },
         {
             "question_number": "4",
@@ -33,7 +33,7 @@
             "marks": 1,
             "answer": "(B) Container of objects of similar types\n\n**Rationale:** An array is defined as a collection of homogeneous (similar) data elements stored in contiguous memory locations.",
             "answer_source": "generated",
-            "chapter": "Unit-1 - Introduction"
+            "chapter": "Unit 1 - Introduction"
         },
         {
             "question_number": "5",
@@ -41,7 +41,7 @@
             "marks": 1,
             "answer": "(D) Linked list and queue\n\n**Rationale:** In linear data structures, elements are arranged sequentially or linearly. Both linked lists and queues are linear, whereas trees are non-linear (hierarchical) data structures.",
             "answer_source": "generated",
-            "chapter": "Unit-1 - Introduction"
+            "chapter": "Unit 1 - Introduction"
         },
         {
             "question_number": "6",
@@ -49,7 +49,7 @@
             "marks": 1,
             "answer": "(C) Data and link\n\n**Rationale:** Each node in a linked list consists of at least two fields: one for storing the actual data (payload) and another for storing a pointer/link to the next node.",
             "answer_source": "generated",
-            "chapter": "Unit-2 - List Structure"
+            "chapter": "Unit 2 - List Structure"
         },
         {
             "question_number": "7",
@@ -57,7 +57,7 @@
             "marks": 1,
             "answer": "(B) Time complexity of inserting a new node at the head of the list is O(1)\n\n**Rationale:** In a standard circular linked list with only a `head` pointer, inserting a new node at the head requires traversing to the last node to update its `next` pointer to point to the new head. This operation takes $O(n)$ time. (If a `tail` pointer is maintained, it can be optimized to $O(1)$, but in general, without extra references, it is $O(n)$).",
             "answer_source": "generated",
-            "chapter": "Unit-2 - List Structure"
+            "chapter": "Unit 2 - List Structure"
         },
         {
             "question_number": "8",
@@ -65,7 +65,7 @@
             "marks": 1,
             "answer": "(C) Allocating CPU to resources\n\n**Rationale:** Round-robin CPU scheduling allocates fixed time slots to processes in a circular cycle, which is naturally implemented using a circular queue or circular linked list.",
             "answer_source": "generated",
-            "chapter": "Unit-2 - List Structure"
+            "chapter": "Unit 2 - List Structure"
         },
         {
             "question_number": "9",
@@ -73,7 +73,7 @@
             "marks": 1,
             "answer": "(A) Stack\n\n**Rationale:** Stacks utilize the Last-In-First-Out (LIFO) property. When scanning an expression, opening parentheses are pushed onto the stack, and closing parentheses trigger a pop, verifying the correct nesting sequence.",
             "answer_source": "generated",
-            "chapter": "Unit-3 - Stack and Queue"
+            "chapter": "Unit 3 - Stack and Queue"
         },
         {
             "question_number": "10",
@@ -81,7 +81,7 @@
             "marks": 1,
             "answer": "(C) $-A/B\\ast C\\wedge DE$\n\n**Rationale:** Let's convert step-by-step using order of operations:\n1. Parenthesis $(C * D \\wedge E)$: Since exponentiation $\\wedge$ has higher precedence than multiplication $*$, we evaluate $D \\wedge E \\rightarrow \\wedge D E$.\n2. Then multiplication: $C * (\\wedge D E) \\rightarrow \\ast C \\wedge D E$.\n3. Now the expression is $A - B / (\\ast C \\wedge D E)$.\n4. Division has higher precedence than subtraction: $B / (\\ast C \\wedge D E) \\rightarrow / B \\ast C \\wedge D E$.\n5. Finally, subtraction: $A - (/ B \\ast C \\wedge D E) \\rightarrow - A / B ∗ C \\wedge D E$.",
             "answer_source": "generated",
-            "chapter": "Unit-3 - Stack and Queue"
+            "chapter": "Unit 3 - Stack and Queue"
         },
         {
             "question_number": "11",
@@ -89,7 +89,7 @@
             "marks": 1,
             "answer": "(A) FIFO (First In First Out) principle\n\n**Rationale:** A queue is a linear structure where elements are inserted at the rear (enqueue) and removed from the front (dequeue), maintaining chronological FIFO ordering.",
             "answer_source": "generated",
-            "chapter": "Unit-3 - Stack and Queue"
+            "chapter": "Unit 3 - Stack and Queue"
         },
         {
             "question_number": "12",
@@ -97,7 +97,7 @@
             "marks": 1,
             "answer": "(A) Rear = max_size - 1\n\n**Rationale:** In a standard linear (non-circular) queue array implementation, the array is full when the `rear` index reaches the last index of the array, which is `max_size - 1`.",
             "answer_source": "generated",
-            "chapter": "Unit-3 - Stack and Queue"
+            "chapter": "Unit 3 - Stack and Queue"
         },
         {
             "question_number": "13",
@@ -105,7 +105,7 @@
             "marks": 1,
             "answer": "(C) A binary tree, which is completely filled with the possible exception of the bottom level, which is filled from left to right\n\n**Rationale:** A complete binary tree is a binary tree in which every level, except possibly the last, is completely filled, and all nodes in the last level are as far left as possible.",
             "answer_source": "generated",
-            "chapter": "Unit-4 - Trees and Hashing"
+            "chapter": "Unit 4 - Trees and Hashing"
         },
         {
             "question_number": "14",
@@ -113,7 +113,7 @@
             "marks": 1,
             "answer": "(C) Binary search tree\n\n**Rationale:** By definition, a Binary Search Tree (BST) is a node-based binary tree data structure where the left subtree of a node contains only nodes with keys lesser than the parent node's key, and the right subtree contains only nodes with keys greater.",
             "answer_source": "generated",
-            "chapter": "Unit-4 - Trees and Hashing"
+            "chapter": "Unit 4 - Trees and Hashing"
         },
         {
             "question_number": "15",
@@ -121,7 +121,7 @@
             "marks": 1,
             "answer": "(C) SWTQUVRP\n\n**Rationale:** Post-order traversal follows the rule: Left Subtree, Right Subtree, Root.\n- Let's traverse the left subtree rooted at Q:\n  - Left child: S\n  - Right child: T (its left is W, so post-order of subtree T is W -> T)\n  - Root: Q\n  - Combined left subtree traversal: S, W, T, Q\n- Let's traverse the right subtree rooted at R:\n  - Left child: U\n  - Right child: V\n  - Root: R\n  - Combined right subtree traversal: U, V, R\n- Finally, visit Root: P\n- Combining everything: S, W, T, Q, U, V, R, P.",
             "answer_source": "generated",
-            "chapter": "Unit-4 - Trees and Hashing"
+            "chapter": "Unit 4 - Trees and Hashing"
         },
         {
             "question_number": "16",
@@ -129,7 +129,7 @@
             "marks": 1,
             "answer": "(B) A function that computes the location of the key in the array\n\n**Rationale:** A hash function takes a key as an input and maps it to a specific index (location) in the hash table array where the key-value pair can be stored.",
             "answer_source": "generated",
-            "chapter": "Unit-4 - Trees and Hashing"
+            "chapter": "Unit 4 - Trees and Hashing"
         },
         {
             "question_number": "17",
@@ -137,7 +137,7 @@
             "marks": 1,
             "answer": "(B) Out, in\n\n**Rationale:** In a directed graph's adjacency matrix $M$, an entry $M[i][j] = 1$ indicates a directed edge from vertex $i$ to vertex $j$. Thus, the sum of elements in row $i$ gives the number of outgoing edges (out-degree) from vertex $i$, and the sum of elements in column $j$ gives the number of incoming edges (in-degree) to vertex $j$.",
             "answer_source": "generated",
-            "chapter": "Unit-5 - Graph"
+            "chapter": "Unit 5 - Graph"
         },
         {
             "question_number": "18",
@@ -145,7 +145,7 @@
             "marks": 1,
             "answer": "(C) ABDCEF\n\n**Rationale:** BFS explores neighbors level-by-level starting from the source node A:\n- Level 0: A\n- Level 1 (Neighbors of A): B, D\n- Level 2 (Neighbors of B and D): C (from B), E (from D)\n- Level 3 (Neighbor of E): F\nThis results in the sequence: A, B, D, C, E, F.",
             "answer_source": "generated",
-            "chapter": "Unit-5 - Graph"
+            "chapter": "Unit 5 - Graph"
         },
         {
             "question_number": "19",
@@ -153,7 +153,7 @@
             "marks": 1,
             "answer": "(C) (a-d) (d-c) (d-b) (d-e)\n\n**Rationale:** Applying Kruskal's or Prim's algorithm on the graph:\n- Sorted edge weights (approximated from visual representations):\n  - (d, c) = 4\n  - (a, d) = 6\n  - (a, c) = 9\n  - (d, b) = 15\n  - (d, e) = 20\n  - (a, b) = 26\n- Selecting minimum weight edges without creating cycles:\n  1. Select (d, c) [weight 4]\n  2. Select (a, d) [weight 6]\n  3. Select (d, b) [weight 15]\n  4. Select (d, e) [weight 20]\nThis connects all nodes {a, b, c, d, e} with 4 edges, yielding option (C).",
             "answer_source": "generated",
-            "chapter": "Unit-5 - Graph"
+            "chapter": "Unit 5 - Graph"
         },
         {
             "question_number": "20",
@@ -161,7 +161,7 @@
             "marks": 1,
             "answer": "(D) Bellman-Ford algorithm\n\n**Rationale:** Bellman-Ford is a single-source shortest path algorithm (capable of handling negative edge weights). Boruvka's, Prim's, and Kruskal's are algorithms designed to find a Minimum Spanning Tree (MST).",
             "answer_source": "generated",
-            "chapter": "Unit-5 - Graph"
+            "chapter": "Unit 5 - Graph"
         },
         {
             "question_number": "21. a.",
@@ -169,7 +169,7 @@
             "marks": 8,
             "answer": "### Algorithm: Optimized Position-Based Insertion with Minimum Shifts\n\n**Objective:** Insert an element $X$ at a targeted position `pos` in an array $A[1:n]$ containing $m$ elements ($m < n$). If $A[pos]$ is already occupied, find the closest empty index either to the left or to the right to minimize the total shift operations.\n\n#### Step-by-Step Algorithm:\n1. **Check for Overflow:**\n   If the array is completely full ($m == n$), return an error \"Array Overflow\".\n2. **Direct Insertion:**\n   If $A[pos]$ is empty (denoted by a special value, e.g., $0$ or `NULL`):\n   - Set $A[pos] = X$\n   - Increment element count: $m = m + 1$\n   - Terminate program successfully.\n3. **Search for Closest Free Spaces:**\n   If $A[pos]$ is occupied, find the nearest free index on both sides:\n   - **Find Left Empty Index ($L$):** Search backwards from `pos - 1` to $1$. Let $L$ be the highest index $L < pos$ where $A[L]$ is empty.\n   - **Find Right Empty Index ($R$):** Search forwards from `pos + 1` to $n$. Let $R$ be the lowest index $R > pos$ where $A[R]$ is empty.\n4. **Calculate Shift Distances:**\n   - If an empty slot was found on the left, shift distance $D_L = pos - L$.\n   - If no empty slot was found on the left, set $D_L = \\infty$.\n   - If an empty slot was found on the right, shift distance $D_R = R - pos$.\n   - If no empty slot was found on the right, set $D_R = \\infty$.\n5. **Perform Shifting with Minimum Distance:**\n   - **Case A: Shifting Right is cheaper ($D_R \\le D_L$):**\n     - For $i = R$ down to $pos + 1$:\n       - $A[i] = A[i - 1]$\n     - Set $A[pos] = X$\n   - **Case B: Shifting Left is cheaper ($D_L < D_R$):**\n     - For $i = L$ up to $pos - 1$:\n       - $A[i] = A[i + 1]$\n     - Set $A[pos] = X$\n6. **Update State:**\n   - Increment $m = m + 1$.\n   - Terminate.",
             "answer_source": "generated",
-            "chapter": "Unit-1 - Introduction"
+            "chapter": "Unit 1 - Introduction"
         },
         {
             "question_number": "21. b.",
@@ -177,7 +177,7 @@
             "marks": 8,
             "answer": "Here is a complete C program that utilizes a user-defined structure `Employee`, dynamic memory allocation via pointers, and functions to store and display employee details:\n\n```c\n#include <stdio.h>\n#include <stdlib.h>\n\n// Defining the user-defined structure\nstruct Employee {\n    int emp_id;\n    char name[50];\n    float salary;\n    char department[30];\n};\n\nint main() {\n    int n, i;\n    struct Employee *empPtr; // Pointer to structure\n\n    printf(\"Enter the number of employees: \");\n    if (scanf(\"%d\", &n) != 1 || n <= 0) {\n        printf(\"Invalid number of employees.\\n\");\n        return 1;\n    }\n\n    // Dynamically allocating memory for n employees\n    empPtr = (struct Employee *)malloc(n * sizeof(struct Employee));\n    if (empPtr == NULL) {\n        printf(\"Memory allocation failed!\\n\");\n        return 1;\n    }\n\n    // Reading employee information using pointer notation\n    for (i = 0; i < n; i++) {\n        printf(\"\\nEnter details for Employee %d:\\n\", i + 1);\n        printf(\"Employee ID: \");\n        scanf(\"%d\", &(empPtr + i)->emp_id);\n        printf(\"Name: \");\n        scanf(\" %[^\\n]s\", (empPtr + i)->name); // Reads space-separated names\n        printf(\"Salary: \");\n        scanf(\"%f\", &(empPtr + i)->salary);\n        printf(\"Department: \");\n        scanf(\" %[^\\n]s\", (empPtr + i)->department);\n    }\n\n    // Displaying employee information using pointer notation\n    printf(\"\\n--- Employee Database ---\\n\");\n    printf(\"%-10s %-20s %-12s %-15s\\n\", \"ID\", \"Name\", \"Salary\", \"Department\");\n    printf(\"------------------------------------------------------------\\n\");\n    for (i = 0; i < n; i++) {\n        printf(\"%-10d %-20s $%-11.2f %-15s\\n\",\n               (empPtr + i)->emp_id,\n               (empPtr + i)->name,\n               (empPtr + i)->salary,\n               (empPtr + i)->department);\n    }\n\n    // Deallocating dynamically allocated memory\n    free(empPtr);\n    return 0;\n}\n```",
             "answer_source": "generated",
-            "chapter": "Unit-1 - Introduction"
+            "chapter": "Unit 1 - Introduction"
         },
         {
             "question_number": "22. a.",
@@ -185,7 +185,7 @@
             "marks": 8,
             "answer": "### Node Representation\nEach term in the polynomial is represented as a linked list node:\n\n```text\n+-------------+-------------+------------+\n| Coefficient | Exponent    | Next Link  |\n+-------------+-------------+------------+\n\n```\n\nC Definition:\n\n```c\nstruct PolyNode {\n    int coeff;\n    int exp;\n    struct PolyNode* next;\n};\n\n```\n\n### Algorithm: Polynomial Addition\n\n**Input:** Heads of two polynomials, `poly1` and `poly2`.\n**Output:** Head of the result polynomial, `poly3`.\n\n1. **Initialize pointers:**\n   - Let `p1` point to the head of `poly1`.\n   - Let `p2` point to the head of `poly2`.\n   - Create an empty linked list for the result: `poly3 = NULL`.\n   - Let `rear` track the last node in `poly3`.\n\n2. **Traverse both lists simultaneously:**\n   - **While** (`p1` is not `NULL` and `p2` is not `NULL`) **do**:\n     - **Case A: Exponents are equal (`p1->exp == p2->exp`):**\n       - Calculate sum of coefficients: `sum = p1->coeff + p2->coeff`.\n       - If `sum != 0`, create a new node with coefficient `sum` and exponent `p1->exp`. Append it to `poly3`.\n       - Advance both pointers: `p1 = p1->next` and `p2 = p2->next`.\n     - **Case B: Exponent of p1 is greater (`p1->exp > p2->exp`):**\n       - Create a new node with coefficient `p1->coeff` and exponent `p1->exp`. Append it to `poly3`.\n       - Advance `p1`: `p1 = p1->next`.\n     - **Case C: Exponent of p2 is greater (`p1->exp < p2->exp`):**\n       - Create a new node with coefficient `p2->coeff` and exponent `p2->exp`. Append it to `poly3`.\n       - Advance `p2`: `p2 = p2->next`.\n\n3. **Append Remaining Terms:**\n   - If `p1` is not `NULL`, append all remaining nodes of `p1` to the end of `poly3`.\n   - If `p2` is not `NULL`, append all remaining nodes of `p2` to the end of `poly3`.\n\n4. **Return `poly3`.**",
             "answer_source": "generated",
-            "chapter": "Unit-2 - List Structure"
+            "chapter": "Unit 2 - List Structure"
         },
         {
             "question_number": "22. b.",
@@ -193,7 +193,7 @@
             "marks": 8,
             "answer": "### Deletion from a Doubly Linked List (DLL)\n\nIn a Doubly Linked List, every node has reference pointers to both its predecessor (`prev`) and successor (`next`). Deleting a node involves updating these surrounding pointers to bypass the deleted node, followed by freeing its allocated memory.\n\n### Pointer Adjustment Diagrams\n\n#### 1. Before Deletion of Node `del`\n\n```text\n+------+        +------+        +------+\n... <->| prev |<------>|  del |<------>| next |<-> ...\n       +------+        +------+        +------+\n\n```\n\n#### 2. After Deletion (Pointers adjusted around `del`)\n\n```text\n+------+                        +------+\n... <->| prev |<---------------------->| next |<-> ...\n       +------+\n\n```\n\n---\n\n### C Routine for Deletion\n\n```c\n#include <stdio.h>\n#include <stdlib.h>\n\nstruct Node {\n    int data;\n    struct Node* prev;\n    struct Node* next;\n};\n\nvoid deleteNode(struct Node** head_ref, struct Node* del) {\n    // Base Case\n    if (*head_ref == NULL || del == NULL) {\n        return;\n    }\n\n    // Case 1: If the node to be deleted is the head node\n    if (*head_ref == del) {\n        *head_ref = del->next;\n    }\n\n    // Case 2: Update the prev pointer of the successor (next) node\n    if (del->next != NULL) {\n        del->next->prev = del->prev;\n    }\n\n    // Case 3: Update the next pointer of the predecessor (prev) node\n    if (del->prev != NULL) {\n        del->prev->next = del->next;\n    }\n\n    // Free memory of the deleted node\n    free(del);\n}\n```",
             "answer_source": "generated",
-            "chapter": "Unit-2 - List Structure"
+            "chapter": "Unit 2 - List Structure"
         },
         {
             "question_number": "23. a.",
@@ -201,7 +201,7 @@
             "marks": 8,
             "answer": "### Shunting-Yard Algorithm (Infix to Postfix)\n\n1. Initialize an empty stack for operators and an empty string/list for the postfix output.\n2. Scan the infix expression from left to right, character by character:\n   - If the character is an **operand**, append it to the postfix output.\n   - If the character is `'('`, push it onto the operator stack.\n   - If the character is `')'`, pop operators off the stack and append them to the output until matching `'('` is encountered. Pop and discard the `'('`.\n   - If the character is an **operator** ($op$):\n     - While the operator stack is not empty and has an operator at the top with higher or equal precedence to $op$:\n       - Pop the top operator and append it to the postfix output.\n     - Push $op$ onto the stack.\n3. After scanning is complete, pop any remaining operators from the stack and append them to the output.\n\n---\n\n### Trace of $(a+b)*c/d+e/f$\n\n| Token | Action | Operator Stack | Postfix Output |\n| :--- | :--- | :--- | :--- |\n| **(** | Push to Stack | `(` | |\n| **a** | Append to Output | `(` | `a` |\n| **+** | Push to Stack | `( +` | `a` |\n| **b** | Append to Output | `( +` | `a b` |\n| **)** | Pop until `(` | | `a b +` |\n| **∗** | Push to Stack | `*` | `a b +` |\n| **c** | Append to Output | `*` | `a b + c` |\n| **/** | Pop `*` (equal prec.), Push `/` | `/` | `a b + c *` |\n| **d** | Append to Output | `/` | `a b + c * d` |\n| **+** | Pop `/` (higher prec.), Push `+` | `+` | `a b + c * d /` |\n| **e** | Append to Output | `+` | `a b + c * d / e` |\n| **/** | Push `/` (higher prec. than `+`)| `+ /` | `a b + c * d / e` |\n| **f** | Append to Output | `+ /` | `a b + c * d / e f` |\n| **EOF**| Pop remaining operators | | **`a b + c * d / e f / +`** |",
             "answer_source": "generated",
-            "chapter": "Unit-3 - Stack and Queue"
+            "chapter": "Unit 3 - Stack and Queue"
         },
         {
             "question_number": "23. b.",
@@ -209,7 +209,7 @@
             "marks": 8,
             "answer": "### Stack Implementation via Linked List\nA linked-list-based stack always performs push and pop operations at the head (`top`) of the list to achieve $O(1)$ constant time execution.\n\n### Pictorial Representation\n\n#### 1. PUSH Operation (Adding `Node X`)\n\n```text\nStep A: Create Node X with data\n+-------+      \n|   X   | [next] -> NULL\n+-------+      \n\nStep B: Set X->next to Top and update Top to X\n+-------+       +-------+       +-------+\n|   X   | ----> |  Top  | ----> | NodeB | ----> NULL\n+-------+       +-------+       +-------+\n   ^\n   | New Top position\n\n```\n\n#### 2. POP Operation (Removing Head Node)\n\n```text\nStep A: Save old Top to temp\n       +-------+       +-------+\nTemp ->|  Top  | ----> | NodeB | ----> NULL\n       +-------+       +-------+\n\nStep B: Move Top to Top->next and Free Temp\n                       +-------+\n                Top -> | NodeB | ----> NULL\n                       +-------+\n\n```\n\n---\n\n### Algorithms\n\n#### Algorithm: `PUSH(val)`\n1. Allocate memory for a new node `newNode`.\n2. Set `newNode->data = val`.\n3. Set `newNode->next = top`.\n4. Update `top = newNode`.\n5. Terminate.\n\n#### Algorithm: `POP()`\n1. If `top == NULL`:\n   - Print \"Stack Underflow\" and return.\n2. Create a temporary pointer `temp = top`.\n3. Store popped value `poppedVal = top->data`.\n4. Update stack pointer: `top = top->next`.\n5. Free memory allocated to `temp`.\n6. Return `poppedVal`.",
             "answer_source": "generated",
-            "chapter": "Unit-3 - Stack and Queue"
+            "chapter": "Unit 3 - Stack and Queue"
         },
         {
             "question_number": "24. a.",
@@ -217,7 +217,7 @@
             "marks": 8,
             "answer": "### AVL Tree Rotations\nAn AVL tree maintains balanced heights by executing rotations when the balance factor of any node ($BF = Height(LeftSub) - Height(RightSub)$) falls out of the interval $[-1, 1]$.\n\nThere are four basic types of rotation combinations:\n\n#### 1. Single Right Rotation (LL Rotation)\nUsed when a node is added to the left subtree of the left child.\n\n```text\nz (BF=2)               y\n      /                      / \\\n     y           ==>        x   z\n    /\n   x\n\n```\n\n#### 2. Single Left Rotation (RR Rotation)\nUsed when a node is added to the right subtree of the right child.\n\n```text\nz (BF=-2)                y\n      \\                      / \\\n       y         ==>        z   x\n        \\\n         x\n\n```\n\n#### 3. Left-Right Rotation (LR Rotation)\nUsed when a node is added to the right subtree of the left child (Double rotation: Left-Rotate $y$, then Right-Rotate $z$).\n\n```text\nz (BF=2)             z (BF=2)             x\n      /                    /                    / \\\n     y         ==>        x          ==>       y   z\n      \\                  /\n       x                y\n\n```\n\n#### 4. Right-Left Rotation (RL Rotation)\nUsed when a node is added to the left subtree of the right child (Double rotation: Right-Rotate $y$, then Left-Rotate $z$).\n\n```text\nz (BF=-2)            z (BF=-2)             x\n      \\                    \\\n       y       ==>          x        ==>       z   y\n      /                      \\\n     x                        y\n\n```\n\n---\n\n### C Routines for Rotations\n\n```c\nstruct Node {\n    int key;\n    struct Node *left, *right;\n    int height;\n};\n\nint getHeight(struct Node *n) {\n    return (n == NULL) ? 0 : n->height;\n}\n\nint max(int a, int b) {\n    return (a > b) ? a : b;\n}\n\n// Left Rotate (RR rotation helper)\nstruct Node* leftRotate(struct Node *x) {\n    struct Node *y = x->right;\n    struct Node *T2 = y->left;\n\n    y->left = x;\n    x->right = T2;\n\n    x->height = max(getHeight(x->left), getHeight(x->right)) + 1;\n    y->height = max(getHeight(y->left), getHeight(y->right)) + 1;\n\n    return y;\n}\n\n// Right Rotate (LL rotation helper)\nstruct Node* rightRotate(struct Node *y) {\n    struct Node *x = y->left;\n    struct Node *T2 = x->right;\n\n    x->right = y;\n    y->left = T2;\n\n    y->height = max(getHeight(y->left), getHeight(y->right)) + 1;\n    x->height = max(getHeight(x->left), getHeight(x->right)) + 1;\n\n    return x;\n}\n```",
             "answer_source": "generated",
-            "chapter": "Unit-4 - Trees and Hashing"
+            "chapter": "Unit 4 - Trees and Hashing"
         },
         {
             "question_number": "24. b.",
@@ -225,7 +225,7 @@
             "marks": 8,
             "answer": "An Order-5 B+ tree allows:\n- Maximum keys in any node = $M - 1 = 4$ keys.\n- Minimum keys in non-root internal node = $\\lceil M/2 \\rceil - 1 = 2$ keys.\n- Leaf nodes link sequentially from left to right.\n\n### Step-by-Step Insertion Process:\n\n1. **Insert 90, 27, 7, 9:**\n   Leaves sort keys automatically:\n   `[7, 9, 27, 90]`\n\n2. **Insert 18:**\n   The node overflows: `[7, 9, 18, 27, 90]`. We split the node at the middle index (18):\n   - Left Leaf: `[7, 9]`\n   - Right Leaf: `[18, 27, 90]`\n   - Push the key `18` up to establish root:\n   \n\n```text\n[18]\n        /    \\\n   [7, 9] -> [18, 27, 90]\n\n```\n\n3. **Insert 21, 3, 4:**\n   - `21` joins the right leaf: `[18, 21, 27, 90]`\n   - `3` and `4` join the left leaf: `[3, 4, 7, 9]`\n\n4. **Insert 16:**\n   The left leaf overflows: `[3, 4, 7, 9, 16]`. Split at the middle index (7):\n   - Left Leaf: `[3, 4]`\n   - Right Leaf: `[7, 9, 16]`\n   - Push `7` up to the root node:\n   \n\n```text\n[7, 18]\n        /    |    \\\n   [3, 4]->[7, 9, 16]->[18, 21, 27, 90]\n\n```\n\n5. **Insert 11:**\n   - `11` joins middle leaf: `[7, 9, 11, 16]`\n\n6. **Insert 21:**\n   - `21` joins right leaf: `[18, 21, 21, 27, 90]`. Overflows! Split at key `21`:\n   - Left Leaf: `[18, 21]`\n   - Right Leaf: `[21, 27, 90]`\n   - Push index `21` up to the root node:\n   \n\n```text\n[7, 18, 21]\n           /    |    |   \\\n   [3, 4]->[7, 9, 11, 16]->[18, 21]->[21, 27, 90]\n\n```\n\n7. **Insert 72:**\n   - `72` joins the last leaf: `[21, 27, 72, 90]`\n\n### Final Tree Structure:\n- **Root Node:** `[7, 18, 21]`\n- **Child Leaf 1:** `[3, 4]`\n- **Child Leaf 2:** `[7, 9, 11, 16]`\n- **Child Leaf 3:** `[18, 21]`\n- **Child Leaf 4:** `[21, 27, 72, 90]`\n*(All leaves are linked sequentially left to right: Leaf 1 -> Leaf 2 -> Leaf 3 -> Leaf 4)*",
             "answer_source": "generated",
-            "chapter": "Unit-4 - Trees and Hashing"
+            "chapter": "Unit 4 - Trees and Hashing"
         },
         {
             "question_number": "25. a.",
@@ -233,7 +233,7 @@
             "marks": 8,
             "answer": "### Depth First Search (DFS) on an Undirected Graph\n\nDFS is a traversal technique that goes as deep as possible down a path before backtracking. It uses an explicit or implicit **Stack** (recursion) to keep track of nodes to visit and a **Visited Array** to prevent cycles.\n\n### DFS Algorithm\n1. Create a dynamic boolean array `visited[]` of size $V$ (number of vertices) and initialize all as `false`.\n2. Choose any source node `S` to start the traversal.\n3. Call a recursive helper function `DFS_Util(S)`:\n   - Mark current node `u` as visited (`visited[u] = true`).\n   - Print/Process node `u`.\n   - For each adjacent unvisited neighbor `v` of `u`:\n     - Recursively call `DFS_Util(v)`.\n4. Repeat for unvisited nodes if the graph is disconnected.\n\n---\n\n### Illustration Example\nLet's trace DFS on the following undirected cyclic graph:\n\n```text\n\n```\n\n(A) ---- (B)\n      |        |\n      |        |\n     (C) ---- (D) ---- (E)\nAdjacency list representations:\n- **A:** [B, C]\n- **B:** [A, D]\n- **C:** [A, D]\n- **D:** [B, C, E]\n- **E:** [D]\n\n#### Traversal Trace starting at node A:\n1. **Visit A**: `visited = {A}`, output = **A**. Neighbors of A are [B, C]. Pick **B**.\n2. **Visit B**: `visited = {A, B}`, output = **A, B**. Neighbors of B are [A, D]. A is visited, go to **D**.\n3. **Visit D**: `visited = {A, B, D}`, output = **A, B, D**. Neighbors of D are [B, C, E]. B is visited, go to **C**.\n4. **Visit C**: `visited = {A, B, D, C}`, output = **A, B, D, C**. Neighbors of C are [A, D]. Both are already visited. Backtrack to D.\n5. **At D**: Remaining unvisited neighbor is **E**.\n6. **Visit E**: `visited = {A, B, D, C, E}`, output = **A, B, D, C, E**.\n7. Backtrack from E to D, then to B, then to A. Execution ends.\n\n**Final DFS Order:** `A, B, D, C, E`",
             "answer_source": "generated",
-            "chapter": "Unit-5 - Graph"
+            "chapter": "Unit 5 - Graph"
         },
         {
             "question_number": "25. b.",
@@ -241,7 +241,7 @@
             "marks": 8,
             "answer": "### Topological Sort using Kahn's Algorithm (In-degree based)\n\n#### Step 1: Calculate In-degree of each vertex\n- **A:** 0\n- **G:** 0\n- **B:** 2 (incoming edges: $A \\rightarrow B$, $G \\rightarrow B$)\n- **E:** 1 (incoming edge: $B \\rightarrow E$)\n- **D:** 3 (incoming edges: $G \\rightarrow D$, $B \\rightarrow D$, $E \\rightarrow D$)\n- **F:** 2 (incoming edges: $E \\rightarrow F$, $D \\rightarrow F$)\n\n#### Step 2: Initialize Queue with nodes of In-degree = 0\nQueue = `[A, G]`\n\n#### Step 3: Process nodes sequentially\n\n1. **Dequeue A:**\n   - Add `A` to sorted list: `[A]`\n   - Decrement in-degree of its neighbor (B): B's in-degree = 1.\n   - Queue is now: `[G]`\n\n2. **Dequeue G:**\n   - Add `G` to sorted list: `[A, G]`\n   - Decrement in-degree of neighbors:\n     - B's in-degree becomes 0.\n     - D's in-degree becomes 2.\n   - Since B's in-degree is 0, add B to Queue.\n   - Queue is now: `[B]`\n\n3. **Dequeue B:**\n   - Add `B` to sorted list: `[A, G, B]`\n   - Decrement in-degree of neighbors:\n     - E's in-degree becomes 0.\n     - D's in-degree becomes 1.\n   - Since E's in-degree is 0, add E to Queue.\n   - Queue is now: `[E]`\n\n4. **Dequeue E:**\n   - Add `E` to sorted list: `[A, G, B, E]`\n   - Decrement in-degree of neighbors:\n     - D's in-degree becomes 0.\n     - F's in-degree becomes 1.\n   - Since D's in-degree is 0, add D to Queue.\n   - Queue is now: `[D]`\n\n5. **Dequeue D:**\n   - Add `D` to sorted list: `[A, G, B, E, D]`\n   - Decrement in-degree of neighbor:\n     - F's in-degree becomes 0.\n   - Since F's in-degree is 0, add F to Queue.\n   - Queue is now: `[F]`\n\n6. **Dequeue F:**\n   - Add `F` to sorted list: `[A, G, B, E, D, F]`\n   - Queue is empty.\n\n### Final Topological Order:\n`A, G, B, E, D, F` *(or `G, A, B, E, D, F` depending on initial node processing choice)*",
             "answer_source": "generated",
-            "chapter": "Unit-5 - Graph"
+            "chapter": "Unit 5 - Graph"
         },
         {
             "question_number": "26",
@@ -249,7 +249,7 @@
             "marks": 15,
             "answer": "### Dijkstra's Algorithm Step-by-Step Execution from Source A\n\n**Initialization:**\n- Distances: $d[A] = 0$, $d[B] = \\infty$, $d[C] = \\infty$, $d[D] = \\infty$, $d[E] = \\infty$, $d[H] = \\infty$\n- Set of visited nodes $S = \\emptyset$\n\n---\n\n#### Step 1: Extract minimum distance node among unvisited.\n- Node **A** has minimum value ($d[A] = 0$).\n- $S = \\{A\\}$\n- Relax neighbors of A:\n  - $d[B] = \\min(\\infty, 0 + 2) = 2$\n  - $d[H] = \\min(\\infty, 0 + 4) = 4$\n  - $d[E] = \\min(\\infty, 0 + 5) = 5$\n\n#### Step 2: Extract minimum distance node among unvisited {B:2, H:4, E:5, C:$\\infty$, D:$\\infty$}.\n- Node **B** has minimum value ($d[B] = 2$).\n- $S = \\{A, B\\}$\n- Relax neighbors of B:\n  - $d[C] = \\min(\\infty, 2 + 5) = 7$\n  - $d[H] = \\min(4, 2 + 1) = 3$\n\n#### Step 3: Extract minimum distance node among unvisited {H:3, E:5, C:7, D:$\\infty$}.\n- Node **H** has minimum value ($d[H] = 3$).\n- $S = \\{A, B, H\\}$\n- Relax neighbors of H:\n  - $d[C] = \\min(7, 3 + 6) = 7$\n  - $d[D] = \\min(\\infty, 3 + 6) = 9$\n\n#### Step 4: Extract minimum distance node among unvisited {E:5, C:7, D:9}.\n- Node **E** has minimum value ($d[E] = 5$).\n- $S = \\{A, B, H, E\\}$\n- Relax neighbors of E:\n  - $d[H] = \\min(3, 5 + 1) = 3$ (no change)\n  - $d[D] = \\min(9, 5 + 3) = 8$\n\n#### Step 5: Extract minimum distance node among unvisited {C:7, D:8}.\n- Node **C** has minimum value ($d[C] = 7$).\n- $S = \\{A, B, H, E, C\\}$\n- Relax neighbors of C:\n  - $d[D] = \\min(8, 7 + 2) = 8$ (no change)\n\n#### Step 6: Extract remaining node **D**.\n- $S = \\{A, B, H, E, C, D\\}$\n- Computation complete.\n\n---\n\n### Summary Table of Shortest Distances and Paths:\n\n| Destination Node | Shortest Distance | Shortest Path |\n| :---: | :---: | :--- |\n| **A** | **0** | $A$ |\n| **B** | **2** | $A \\rightarrow B$ |\n| **H** | **3** | $A \\rightarrow B \\rightarrow H$ |\n| **E** | **5** | $A \\rightarrow E$ |\n| **C** | **7** | $A \\rightarrow B \\rightarrow C$ |\n| **D** | **8** | $A \\rightarrow E \\rightarrow D$ |",
             "answer_source": "generated",
-            "chapter": "Unit-5 - Graph"
+            "chapter": "Unit 5 - Graph"
         },
         {
             "question_number": "27.i.",
@@ -257,7 +257,7 @@
             "marks": 8,
             "answer": "### Rehashing in Hash Tables\n\n**When to perform rehashing:**\nRehashing is triggered when the **Load Factor** ($\\lambda = N/M$, where $N$ is the number of keys currently stored and $M$ is the size of the table) exceeds a set threshold (typically $\\lambda \\ge 0.5$ for open addressing / linear probing or $\\lambda \\ge 0.75$ for chaining). It is also performed when insertions fail repeatedly due to high collisions.\n\n### Rehashing Steps:\n1. Allocate a new hash table array with a size equal to approximately double the current size (ideally, choose the next prime number to maintain uniform key distribution).\n2. Define a new hash function adjusted for the new table size.\n3. Recalculate hash values for all active keys from the old table and insert them sequentially into the new table.\n4. Deallocate (free) the memory of the old hash table.\n\n---\n\n### Illustrative Example:\nAssume a table size of $M_1 = 5$ using open addressing (linear probing). Hash function: $h(k) = k \\pmod 5$.\nThreshold factor: $\\lambda = 0.5$.\n\n1. **Insert 13:** $h(13) = 13 \\pmod 5 = 3$. Table: `[ , , , 13, ]` (Load = 0.2)\n2. **Insert 18:** $h(18) = 18 \\pmod 5 = 3$ (Collision!). Probe to index 4. Table: `[ , , , 13, 18]` (Load = 0.4)\n3. **Insert 24:** $h(24) = 24 \\pmod 5 = 4$ (Collision!). Probe to index 0. Table: `[24, , , 13, 18]` (Load = 0.6)\n\nSince Load factor $\\lambda = 0.6 > 0.5$, we trigger **Rehashing**.\n- Next prime double of 5 is **$M_2 = 11$**.\n- New hash function: $h'(k) = k \\pmod{11}$.\n\nRe-inserting elements:\n- Key `13`: $13 \\pmod{11} = 2$. New Table: `[ , , 13, , , , , , , , ]`\n- Key `18`: $18 \\pmod{11} = 7$. New Table: `[ , , 13, , , , , 18, , , ]`\n- Key `24`: $24 \\pmod{11} = 2$ (Collision). Probes to index 3. New Table: `[ , , 13, 24, , , , 18, , , ]`\n\n**Result:** The collision rate decreases significantly, restoring retrieval efficiency to $O(1)$.",
             "answer_source": "generated",
-            "chapter": "Unit-4 - Trees and Hashing"
+            "chapter": "Unit 4 - Trees and Hashing"
         },
         {
             "question_number": "27.ii.",
@@ -265,7 +265,7 @@
             "marks": 7,
             "answer": "### Algorithms and Traversal Sequences on the Undirected Graph\n\n#### Adjacency List Representation:\n- **A:** [B, D, E]\n- **B:** [A, D]\n- **C:** [E]\n- **D:** [A, B, E]\n- **E:** [A, D, C]\n\n---\n\n### 1. Breadth First Search (BFS) from Node A\n\n**Algorithm:**\n1. Initialize `visited` array to false, and an empty queue `Q`.\n2. Enqueue start node `A` and mark it visited.\n3. While `Q` is not empty:\n   - Dequeue vertex `u` and process it.\n   - For each neighbor `v` of `u`:\n     - If `v` is unvisited, enqueue and mark it visited.\n\n**BFS Step-by-Step Trace:**\n- Enqueue `A`. Q = `[A]`. Visited = `{A}`\n- Dequeue `A`. Visit **A**. Neighbors: `B`, `D`, `E` (all unvisited).\n  - Enqueue `B`, `D`, `E`. Q = `[B, D, E]`. Visited = `{A, B, D, E}`\n- Dequeue `B`. Visit **B**. Neighbors of B are already visited.\n- Dequeue `D`. Visit **D**. Neighbors of D are already visited.\n- Dequeue `E`. Visit **E**. Neighbors: `C` is unvisited.\n  - Enqueue `C`. Q = `[C]`. Visited = `{A, B, D, E, C}`\n- Dequeue `C`. Visit **C**.\n\n**BFS Order:** `A, B, D, E, C`\n\n---\n\n### 2. Depth First Search (DFS) from Node A\n\n**Algorithm:**\n1. Initialize `visited` array to false.\n2. Call `DFS_Recursive(A)`:\n   - Mark node `u` visited.\n   - Process node `u`.\n   - For each adjacent node `v` of `u`:\n     - If `v` is unvisited, recursively call `DFS_Recursive(v)`.\n\n**DFS Step-by-Step Trace:**\n- Call `DFS_Recursive(A)`. Visit **A**. Visited = `{A}`.\n- Select first unvisited neighbor **B**:\n  - Call `DFS_Recursive(B)`. Visit **B**. Visited = `{A, B}`.\n  - Neighbors of B: `A` (visited), `D` (unvisited). Select **D**:\n    - Call `DFS_Recursive(D)`. Visit **D**. Visited = `{A, B, D}`.\n    - Neighbors of D: `A` (visited), `B` (visited), `E` (unvisited). Select **E**:\n      - Call `DFS_Recursive(E)`. Visit **E**. Visited = `{A, B, D, E}`.\n      - Neighbors of E: `A` (visited), `D` (visited), `C` (unvisited). Select **C**:\n        - Call `DFS_Recursive(C)`. Visit **C**. Visited = `{A, B, D, E, C}`.\n        - No unvisited neighbors. Backtrack to E -> D -> B -> A.\n\n**DFS Order:** `A, B, D, E, C`",
             "answer_source": "generated",
-            "chapter": "Unit-5 - Graph"
+            "chapter": "Unit 5 - Graph"
         }
     ]
 }

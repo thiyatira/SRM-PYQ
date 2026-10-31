@@ -9,7 +9,7 @@
             "marks": 1,
             "answer": "A) Abstract Data Types. ADTs define only the interface and behavior of data structures without specifying their implementation details, thus hiding the execution logic.",
             "answer_source": "generated",
-            "chapter": "Unit-1 - Introduction"
+            "chapter": "Unit 1 - Introduction"
         },
         {
             "question_number": "2",
@@ -17,7 +17,7 @@
             "marks": 1,
             "answer": "B) 4. On a 32-bit processor, a pointer variable (such as `int *p`) occupies exactly 4 bytes of memory, regardless of the size of dynamic memory allocated to it.",
             "answer_source": "generated",
-            "chapter": "Unit-1 - Introduction"
+            "chapter": "Unit 1 - Introduction"
         },
         {
             "question_number": "3",
@@ -25,7 +25,7 @@
             "marks": 1,
             "answer": "C) calloc(). The standard library function `calloc` takes two parameters (number of blocks and size of each block) and allocates memory dynamically, initializing all bytes to zero.",
             "answer_source": "generated",
-            "chapter": "Unit-1 - Introduction"
+            "chapter": "Unit 1 - Introduction"
         },
         {
             "question_number": "4",
@@ -33,7 +33,7 @@
             "marks": 1,
             "answer": "B) Best, worst and average cases. Asymptotic analysis uses mathematical notations (Big O, Omega, Theta) to characterize the scaling behavior of an algorithm under all execution scenarios.",
             "answer_source": "generated",
-            "chapter": "Unit-1 - Introduction"
+            "chapter": "Unit 1 - Introduction"
         },
         {
             "question_number": "5",
@@ -41,7 +41,7 @@
             "marks": 1,
             "answer": "C) ptr = (struct node *)malloc(sizeof(struct node));. To allocate memory for a list node, you must allocate the size of the structure itself (`sizeof(struct node)`) and cast the returned pointer to a node pointer (`struct node *`).",
             "answer_source": "generated",
-            "chapter": "Unit-2 - List Structure"
+            "chapter": "Unit 2 - List Structure"
         },
         {
             "question_number": "6",
@@ -49,7 +49,7 @@
             "marks": 1,
             "answer": "A) Total number of Zero elements > (m*n)/2. A sparse matrix is defined as a matrix in which the majority of its elements are zero (typically, more than half of the total $m \\times n$ positions).",
             "answer_source": "generated",
-            "chapter": "Unit-2 - List Structure"
+            "chapter": "Unit 2 - List Structure"
         },
         {
             "question_number": "7",
@@ -57,7 +57,7 @@
             "marks": 1,
             "answer": "B) Last node now points to the new node, New node points to NULL. To append a node to the end of a singly linked list, the previous terminal node's next-pointer is updated to link to the new node, and the new node's next-pointer is set to NULL.",
             "answer_source": "generated",
-            "chapter": "Unit-2 - List Structure"
+            "chapter": "Unit 2 - List Structure"
         },
         {
             "question_number": "8",
@@ -65,7 +65,7 @@
             "marks": 1,
             "answer": "B) A quest in a game that lets users retry stages. In game flow design, a doubly linked list allows players to navigate both forward (to the next stage) and backward (to retry/replay previous stages).",
             "answer_source": "generated",
-            "chapter": "Unit-2 - List Structure"
+            "chapter": "Unit 2 - List Structure"
         },
         {
             "question_number": "9",
@@ -73,7 +73,7 @@
             "marks": 1,
             "answer": "B) Allocation Resources and Scheduling. Resource allocation and process scheduling tasks require First-In-First-Out (FIFO) behavior, which is implemented using Queues rather than Stacks.",
             "answer_source": "generated",
-            "chapter": "Unit-3 - Stack and Queue"
+            "chapter": "Unit 3 - Stack and Queue"
         },
         {
             "question_number": "10",
@@ -81,7 +81,7 @@
             "marks": 1,
             "answer": "D) Divya. \nTrace:\n1. Stack: [Allen, Brindha, Chitra, Divya, Elon] (Elon is Top)\n2. Pop 4 times: Elon, Divya, Chitra, Brindha are popped and inserted into Queue.\n   Queue (front to rear): [Elon, Divya, Chitra, Brindha]. Stack remaining: [Allen]\n3. Delete 2 names from Queue: Elon, then Divya. These are pushed back to Stack.\n   Stack (bottom to top): [Allen, Elon, Divya]\n4. Pop once from Stack: Divya is popped.",
             "answer_source": "generated",
-            "chapter": "Unit-3 - Stack and Queue"
+            "chapter": "Unit 3 - Stack and Queue"
         },
         {
             "question_number": "11",
@@ -89,7 +89,7 @@
             "marks": 1,
             "answer": "A) ABCD. Queues process elements strictly under First-In, First-Out (FIFO) rules, which means elements are removed in the identical sequence of their insertion.",
             "answer_source": "generated",
-            "chapter": "Unit-3 - Stack and Queue"
+            "chapter": "Unit 3 - Stack and Queue"
         },
         {
             "question_number": "12",
@@ -97,7 +97,7 @@
             "marks": 1,
             "answer": "B) DEFG^* +. \nDerivation:\n$D + (E * (F \\wedge G))$\n$= D + (E * (FG\\wedge))$\n$= D + (EFG\\wedge*)$\n$= DEFG\\wedge*+$",
             "answer_source": "generated",
-            "chapter": "Unit-3 - Stack and Queue"
+            "chapter": "Unit 3 - Stack and Queue"
         },
         {
             "question_number": "13",
@@ -105,7 +105,7 @@
             "marks": 1,
             "answer": "B) 4->2->5->1->3->6. In-order traversal follows the pattern: Left subtree, Root, Right subtree. For this tree, we traverse node 2's left child (4), node 2, node 2's right child (5), root node 1, and node 3's subtree (3 then 6).",
             "answer_source": "generated",
-            "chapter": "Unit-4 - Trees and Hashing"
+            "chapter": "Unit 4 - Trees and Hashing"
         },
         {
             "question_number": "14",
@@ -113,7 +113,7 @@
             "marks": 1,
             "answer": "A) 255. In a B-Tree of order $m$ and height $h$ (where the root is at level 0), the maximum number of keys is given by $N = m^{h+1} - 1$. Here, for $m = 4$ and height $h = 3$, the maximum keys are $4^4 - 1 = 255$. (Alternatively, if root is at height 1, max keys = $4^3 - 1 = 63$ (Option B)). Typically, height is counted by edges (height 3 = 4 levels), which yields 255.",
             "answer_source": "generated",
-            "chapter": "Unit-4 - Trees and Hashing"
+            "chapter": "Unit 4 - Trees and Hashing"
         },
         {
             "question_number": "15",
@@ -121,7 +121,7 @@
             "marks": 1,
             "answer": "C) A structure that maps keys to values. A hash table uses a mathematical hash function to compute index mappings, matching arbitrary keys directly to their stored values in constant average time.",
             "answer_source": "generated",
-            "chapter": "Unit-4 - Trees and Hashing"
+            "chapter": "Unit 4 - Trees and Hashing"
         },
         {
             "question_number": "16",
@@ -129,7 +129,7 @@
             "marks": 1,
             "answer": "C) Collision. A collision occurs in hashing when two distinct keys hash to the exact same array index.",
             "answer_source": "generated",
-            "chapter": "Unit-4 - Trees and Hashing"
+            "chapter": "Unit 4 - Trees and Hashing"
         },
         {
             "question_number": "17",
@@ -137,7 +137,7 @@
             "marks": 1,
             "answer": "C) Both P and Q. According to the handshaking lemma, $\\sum deg(v) = 2|E|$, which is always even (making statement Q true). This parity requirement directly implies that the number of vertices with odd degrees must also be even (making statement P true).",
             "answer_source": "generated",
-            "chapter": "Unit-5 - Graph"
+            "chapter": "Unit 5 - Graph"
         },
         {
             "question_number": "18",
@@ -145,7 +145,7 @@
             "marks": 1,
             "answer": "C) d(r, u) <= d(r, v). BFS visits vertices in non-decreasing order of distance from the source. If $u$ is visited before $v$, the distance of $u$ from the root $r$ must be less than or equal to that of $v$.",
             "answer_source": "generated",
-            "chapter": "Unit-5 - Graph"
+            "chapter": "Unit 5 - Graph"
         },
         {
             "question_number": "19",
@@ -153,7 +153,7 @@
             "marks": 1,
             "answer": "A) Depends on the size of the table and number of elements in the table. The average search and insertion performance in open addressing depend directly on the load factor $\\alpha = N/M$ (number of elements divided by table capacity).",
             "answer_source": "generated",
-            "chapter": "Unit-4 - Trees and Hashing"
+            "chapter": "Unit 4 - Trees and Hashing"
         },
         {
             "question_number": "20",
@@ -161,7 +161,7 @@
             "marks": 1,
             "answer": "B) Kruskal's algorithm. Kruskal's is a greedy algorithm designed to find a Minimum Spanning Tree (MST) of a weighted undirected graph by sorting and sequentially evaluating edges.",
             "answer_source": "generated",
-            "chapter": "Unit-5 - Graph"
+            "chapter": "Unit 5 - Graph"
         },
         {
             "question_number": "21 a.",
@@ -169,7 +169,7 @@
             "marks": 8,
             "answer": "To calculate time complexity using the Tabular Method, we analyze the cost and frequency of execution for each line:\n\n| Statement | Cost | Frequency | Total Cost |\n| :--- | :---: | :---: | :---: |\n| `int sum = 0;` | $c_1$ | 1 | $O(1)$ |\n| `for (int i = 0; i < n; i++)` | $c_2$ | $n+1$ | $O(n)$ |\n| `for (int j = i; j < n; j++)` | $c_3$ | $\\sum_{i=0}^{n-1} (n-i+1) = \\frac{n^2 + 3n}{2}$ | $O(n^2)$ |\n| `for (int k = 0; k < 10; k++)` | $c_4$ | $11 \\times \\sum_{i=0}^{n-1} (n-i) = 11 \\times \\frac{n(n+1)}{2}$ | $O(n^2)$ |\n| `sum += arr[j];` | $c_5$ | $10 \\times \\sum_{i=0}^{n-1} (n-i) = 10 \\times \\frac{n(n+1)}{2}$ | $O(n^2)$ |\n| `printf(\"%d\\n\", sum);` | $c_6$ | 1 | $O(1)$ |\n\n**Calculation Details:**\n1. The outer loop executes $n$ times. \n2. The middle loop runs $n-i$ times for each $i$. Summing over $i$ gives $\\sum_{i=0}^{n-1} (n-i) = \\frac{n(n+1)}{2}$.\n3. The innermost loop executes a constant $10$ times for each iteration of the middle loop. Therefore, the step cost contribution of the innermost block is dominated by a constant multiplier (10).\n\n**Total Time Complexity:**\n$T(n) = O(1) + O(n) + O(n^2) + O(n^2) + O(n^2) + O(1) = O(n^2)$\n\n**Asymptotic Complexity (Worst Case):** $\\mathbf{O(n^2)}$",
             "answer_source": "generated",
-            "chapter": "Unit-1 - Introduction"
+            "chapter": "Unit 1 - Introduction"
         },
         {
             "question_number": "21 b.",
@@ -177,7 +177,7 @@
             "marks": 8,
             "answer": "**Concept of Self-Referential Structures:**\nA self-referential structure in C is a user-defined struct that contains one or more member fields which are pointers to a structure of the identical type. They are declared as:\n\n```c\nstruct Node {\n    int data;\n    struct Node *next; // Pointer to same structure type\n};\n\n```\n\n**Usage in Dynamic Data Structures:**\nBecause dynamic structures such as linked lists or trees grow dynamically at runtime, they cannot rely on contiguous stack memory. By employing a self-referential pointer (`next`), individual structures (nodes) allocated dynamically in heap space can store pointers to their logical successors, effectively establishing chained relationships.\n\n**Illustrative Example & Code Snippet:**\n\n```c\n#include <stdio.h>\n#include <stdlib.h>\n\n// Definition of self-referential structure\nstruct Node {\n    int data;\n    struct Node *next;\n};\n\nint main() {\n    // Allocate nodes dynamically in memory heap\n    struct Node* first = (struct Node*)malloc(sizeof(struct Node));\n    struct Node* second = (struct Node*)malloc(sizeof(struct Node));\n    \n    // Populate values and link elements\n    first->data = 10;\n    first->next = second; // Self-referential address assignment\n    \n    second->data = 20;\n    second->next = NULL;  // Termination pointer\n    \n    // Traversal demonstration\n    struct Node* temp = first;\n    while(temp != NULL) {\n        printf(\"%d -> \", temp->data);\n        temp = temp->next;\n    }\n    printf(\"NULL\\n\");\n    \n    // Free memory blocks\n    free(first);\n    free(second);\n    return 0;\n}\n```",
             "answer_source": "generated",
-            "chapter": "Unit-1 - Introduction"
+            "chapter": "Unit 1 - Introduction"
         },
         {
             "question_number": "22 a.",
@@ -185,7 +185,7 @@
             "marks": 8,
             "answer": "**Algorithm: MaxRowSum**\n\n```text\nInput: A 2D array A of dimensions (rows x cols)\nOutput: Maximum row sum\n\n1. Initialize max_sum = -INF\n2. For i = 0 to rows - 1 do:\n\n```\n\na. Set row_sum = 0\n     b. For j = 0 to cols - 1 do:\n          i. row_sum = row_sum + A[i][j]\n     c. If row_sum > max_sum then:\n          i. max_sum = row_sum\n3. Return max_sum\n\n**Limitations of Array Data Structure:**\n1. **Static Size:** The storage footprint of an array must be predefined at compilation and cannot expand or contract at execution time.\n2. **Requirement of Contiguous Memory:** Allocating a massive array requires a continuous block of free memory. This is highly vulnerable to allocation failure due to system fragmentation.\n3. **Costly Insertions & Deletions:** Inserting or removing an element at an arbitrary index requires shifting subsequent elements, resulting in a worst-case $O(N)$ overhead.\n4. **Wastage of Space:** If the initial size constraint is overestimated to accommodate future growth, unused memory blocks are wasted.",
             "answer_source": "generated",
-            "chapter": "Unit-2 - List Structure"
+            "chapter": "Unit 2 - List Structure"
         },
         {
             "question_number": "22 b.",
@@ -193,7 +193,7 @@
             "marks": 8,
             "answer": "This scenario can be modeled as a **Singly Linked List** where each node represents a train compartment, and the list `head` points to the engine node.\n\n**Data Structure Definition:**\n\n```c\nstruct Compartment {\n    int compartment_id;\n    struct Compartment* next;\n};\n\n```\n\n**1. Attaching a compartment in between compartments:**\nTo link a new compartment with ID `new_id` immediately behind the compartment referenced by `prev_compartment`:\n\n```c\nvoid attach_compartment(struct Compartment* prev_compartment, int new_id) {\n    if (prev_compartment == NULL) {\n        printf(\"Error: Previous compartment node is invalid.\\n\");\n        return;\n    }\n    // 1. Instantiate the new compartment node\n    struct Compartment* new_comp = (struct Compartment*)malloc(sizeof(struct Compartment));\n    new_comp->compartment_id = new_id;\n    \n    // 2. Adjust link pointers\n    new_comp->next = prev_compartment->next;\n    prev_compartment->next = new_comp;\n}\n\n```\n\n**2. Detaching a compartment in between compartments:**\nTo disconnect and release the compartment node that follows `prev_compartment`:\n\n```c\nvoid detach_compartment(struct Compartment* prev_compartment) {\n    if (prev_compartment == NULL || prev_compartment->next == NULL) {\n        printf(\"Error: No successor compartment available to detach.\\n\");\n        return;\n    }\n    // 1. Reference the targeted node\n    struct Compartment* temp = prev_compartment->next;\n    \n    // 2. Bypass the targeted node\n    prev_compartment->next = temp->next;\n    \n    // 3. Deallocate memory of detached node\n    free(temp);\n}\n```",
             "answer_source": "generated",
-            "chapter": "Unit-2 - List Structure"
+            "chapter": "Unit 2 - List Structure"
         },
         {
             "question_number": "23 a.",
@@ -201,7 +201,7 @@
             "marks": 8,
             "answer": "**1. Infix to Postfix Conversion Pseudocode:**\n\n```text\nInitialize an empty stack S and empty output string/list P.\nFor each character/token T in Infix:\n  If T is an operand:\n     Append T to P\n  Else if T is '(':\n     Push T onto S\n  Else if T is ')':\n     Pop from S and append to P until '(' is at Top. Pop and discard '('.\n  Else if T is operator (+, -, *, /):\n     While S is not empty and precedence(S.top()) >= precedence(T):\n         Append S.pop() to P\n     Push T to S.\nPop remaining elements in S and append to P.\n\n```\n\n**Conversion Trace for `10 + ((7 - 5) + 10)/2`:**\n- `10` $\\rightarrow$ Output: `10`\n- `+` $\\rightarrow$ Stack: `[+]`\n- `(` $\\rightarrow$ Stack: `[+, (]`\n- `(` $\\rightarrow$ Stack: `[+, (, (]`\n- `7` $\\rightarrow$ Output: `10 7`\n- `-` $\\rightarrow$ Stack: `[+, (, (, -]`\n- `5` $\\rightarrow$ Output: `10 7 5`\n- `)` $\\rightarrow$ Pop until `(`. Pop `-`. Output: `10 7 5 -`. Stack: `[+, (]`\n- `+` $\\rightarrow$ Stack: `[+, (, +]`\n- `10` $\\rightarrow$ Output: `10 7 5 - 10`\n- `)` $\\rightarrow$ Pop until `(`. Pop `+`. Output: `10 7 5 - 10 +`. Stack: `[+]`\n- `/` $\\rightarrow$ (precedence of `/` > `+`) Stack: `[+, /]`\n- `2` $\\rightarrow$ Output: `10 7 5 - 10 + 2`\n- End of expression: Pop remaining. Stack yields `/` then `+`.\n- **Postfix Output:** `10 7 5 - 10 + 2 / +`\n\n**2. Postfix Evaluation Pseudocode:**\n\n```text\nInitialize Stack S.\nFor each token T in Postfix:\n  If T is operand:\n     Push T to S\n  Else if T is operator:\n     op2 = S.pop()\n     op1 = S.pop()\n     res = Evaluate(op1, op2, T)\n     Push res to S\nReturn S.pop()\n\n```\n\n**Evaluation Trace:**\n1. Push `10`, `7`, `5`. Stack: `[10, 7, 5]`\n2. `-` $\\rightarrow$ Pop 5, 7. Calculate $7 - 5 = 2$. Push 2. Stack: `[10, 2]`\n3. Push `10`. Stack: `[10, 2, 10]`\n4. `+` $\\rightarrow$ Pop 10, 2. Calculate $2 + 10 = 12$. Push 12. Stack: `[10, 12]`\n5. Push `2`. Stack: `[10, 12, 2]`\n6. `/` $\\rightarrow$ Pop 2, 12. Calculate $12 / 2 = 6$. Push 6. Stack: `[10, 6]`\n7. `+` $\\rightarrow$ Pop 6, 10. Calculate $10 + 6 = 16$. Push 16.\n- **Final Evaluated Result:** **16**",
             "answer_source": "generated",
-            "chapter": "Unit-3 - Stack and Queue"
+            "chapter": "Unit 3 - Stack and Queue"
         },
         {
             "question_number": "23 b.",
@@ -209,7 +209,7 @@
             "marks": 8,
             "answer": "**Linked Queue Data Structure Representation:**\n\n```c\nstruct Node {\n    int data;\n    struct Node* next;\n};\nstruct Queue {\n    struct Node *front, *rear;\n};\n\n```\n\n**1. Insert (Enqueue) Element Pseudocode:**\n\n```text\nAlgorithm: Enqueue(Q, value)\n1. Allocate dynamic Node variable `new_node`\n2. new_node->data = value\n3. new_node->next = NULL\n4. If Q->rear is NULL (Queue is empty):\n     Q->front = Q->rear = new_node\n5. Else:\n     Q->rear->next = new_node\n     Q->rear = new_node\n\n```\n\n**2. Delete (Dequeue) Element Pseudocode:**\n\n```text\nAlgorithm: Dequeue(Q)\n1. If Q->front is NULL:\n     Raise Underflow Error and return NULL\n2. temp = Q->front\n3. data_val = temp->data\n4. Q->front = Q->front->next\n5. If Q->front is NULL:\n     Q->rear = NULL\n6. Free temp\n7. Return data_val\n\n```\n\n**Example Trace:**\n- **Initialize empty Queue:** `front = NULL`, `rear = NULL`\n- **Enqueue(10):** Node(10) is created. Since queue is empty, `front` and `rear` both point to Node(10).\n- **Enqueue(20):** Node(20) is created. `rear->next` (Node(10)'s link) is set to Node(20). Then `rear` is updated to point to Node(20). \n  - *State:* `[10 (front)] -> [20 (rear)] -> NULL`\n- **Dequeue():** `Q->front` is Node(10). `data_val` is cached as 10. `front` is updated to point to `front->next` (Node(20)). Node(10) is freed.\n  - *State:* `[20 (front/rear)] -> NULL` \n  - *Output:* 10",
             "answer_source": "generated",
-            "chapter": "Unit-3 - Stack and Queue"
+            "chapter": "Unit 3 - Stack and Queue"
         },
         {
             "question_number": "24 a.",
@@ -217,7 +217,7 @@
             "marks": 8,
             "answer": "A binary tree where the right subtree contains elements greater than the root and the left subtree contains elements smaller is a **Binary Search Tree (BST)**.\n\n**Method 1: Constructing BST with all keys, then deleting 8, 28, and 64:**\n\n1. **Full Tree Insertion Steps:**\n- **15** (Root)\n- **10**: Left of 15\n- **8**: Left of 10\n- **12**: Right of 10\n- **28**: Right of 15\n- **20**: Left of 28\n- **47**: Right of 28\n- **37**: Left of 47\n- **64**: Right of 47\n- **2**: Left of 8\n\n*Resulting complete tree:* \n\n```text\n15\n       /    \\\n     10      28\n    /  \\    /  \\\n   8   12  20  47\n  /           /  \\\n 2           37  64\n\n```\n\n2. **Deletions:**\n- **Delete 8** (Node with one child): Replace node 8 with its child 2.\n- **Delete 28** (Node with two children): Replace 28 with its in-order successor 37 (smallest value in its right subtree) and remove the original node 37.\n- **Delete 64** (Leaf node): Simply sever the leaf node 64.\n\n*Final Tree Structure:* \n\n```text\n15\n       /    \\\n     10      37\n    /  \\    /  \\\n   2   12  20  47\n\n```\n\n**Method 2: Direct insertion of remaining elements {15, 10, 12, 20, 47, 37, 2}:**\nInserting the elements sequentially directly yields the exact same structure:\n- **15** $\\rightarrow$ Root\n- **10** $\\rightarrow$ Left of 15\n- **12** $\\rightarrow$ Right of 10\n- **20** $\\rightarrow$ Right of 15\n- **47** $\\rightarrow$ Right of 20\n- **37** $\\rightarrow$ Left of 47\n- **2** $\\rightarrow$ Left of 10\n\nBoth paths yield the same, correctly structured balanced-looking BST.",
             "answer_source": "generated",
-            "chapter": "Unit-4 - Trees and Hashing"
+            "chapter": "Unit 4 - Trees and Hashing"
         },
         {
             "question_number": "24 b.",
@@ -225,7 +225,7 @@
             "marks": 8,
             "answer": "We construct the Minimum Spanning Tree (MST) using **Kruskal's Algorithm**.\n\n**Kruskal's Step-by-Step execution:**\n1. List and sort all graph edges in non-decreasing order of weights:\n   - (a, b) = 1\n   - (d, h) = 2\n   - (c, d) = 3\n   - (g, i) = 3\n   - (a, d) = 5\n   - (b, c) = 6\n   - (a, c) = 6\n   - (c, e) = 7\n   - (g, h) = 8\n   - (h, i) = 8\n   - (d, g) = 10\n   - (e, h) = 12\n\n2. Initialize forest (each vertex is in its own disjoint set).\n3. Pick edges sequentially and add if they do not create a cycle:\n   - **Pick (a, b), weight 1:** No cycle. Add. Spanning tree edges: `{(a, b)}`\n   - **Pick (d, h), weight 2:** No cycle. Add. Spanning tree edges: `{(a, b), (d, h)}`\n   - **Pick (c, d), weight 3:** No cycle. Add. Spanning tree edges: `{(a, b), (d, h), (c, d)}`\n   - **Pick (g, i), weight 3:** No cycle. Add. Spanning tree edges: `{(a, b), (d, h), (c, d), (g, i)}`\n   - **Pick (a, d), weight 5:** No cycle. Add. Spanning tree edges: `{(a, b), (d, h), (c, d), (g, i), (a, d)}` \n   - **Pick (b, c), weight 6:** Forms cycle (a-b-c-d-a). Discard.\n   - **Pick (a, c), weight 6:** Forms cycle (a-c-d-a). Discard.\n   - **Pick (c, e), weight 7:** No cycle. Add. Spanning tree edges: `{(a, b), (d, h), (c, d), (g, i), (a, d), (c, e)}`\n   - **Pick (g, h), weight 8:** No cycle. Add. Spanning tree edges: `{(a, b), (d, h), (c, d), (g, i), (a, d), (c, e), (g, h)}`\n\nAt this stage, all 8 vertices `{a, b, c, d, e, g, h, i}` are connected with exactly 7 edges.\n\n**Total MST Weight:** $1 + 2 + 3 + 3 + 5 + 7 + 8 = 29$\n\n**Efficiency Justification:**\nUsing a Disjoint Set Union (DSU) data structure with path compression and union by rank, Kruskal's algorithm runs in **$O(E \\log E)$** (or equivalent **$O(E \\log V)$**) time. Sorting of the edges takes $O(E \\log E)$ time, and the subsequent loop with union-find operations takes $O(E \\cdot \\alpha(V))$ time where $\\alpha$ is the extremely slow-growing inverse Ackermann function. This makes it highly efficient for sparse graphs.",
             "answer_source": "generated",
-            "chapter": "Unit-5 - Graph"
+            "chapter": "Unit 5 - Graph"
         },
         {
             "question_number": "25 a.",
@@ -233,7 +233,7 @@
             "marks": 8,
             "answer": "**1. Minimum Spanning Tree (MST) Derivation:**\nApplying Kruskal's algorithm on the given graph:\n- Sorted edges: (2, 5) [w=1], (1, 3) [w=2], (5, 4) [w=3], (2, 3) [w=4], (1, 2) [w=5], (3, 4) [w=6].\n- Choose (2, 5) [w=1]\n- Choose (1, 3) [w=2]\n- Choose (5, 4) [w=3]\n- Choose (2, 3) [w=4] (Connects {1, 3} and {2, 5, 4})\n- Total Edges = 4, Vertices connected = 5. MST contains edges: **{(2,5), (1,3), (5,4), (2,3)}** with minimum weight = **10**.\n\n**2. Possible Spanning Trees (Examples):**\nAny combination of 4 edges connecting all 5 vertices without containing cycles is a spanning tree. Examples:\n- **T1 (MST):** (2,5), (1,3), (5,4), (2,3) | Weight = 10\n- **T2:** (1,2), (2,5), (5,4), (1,3) | Weight = 5+1+3+2 = 11\n- **T3:** (1,3), (3,4), (4,5), (5,2) | Weight = 2+6+3+1 = 12\n\n**3. Pseudocode for Generating Spanning Trees:**\nWe use backtracking recursively to seek all acyclic combinations of $V-1$ edges:\n\n```text\nFunction FindSpanningTrees(edge_index, current_mst_edges):\n    If size of current_mst_edges == V - 1:\n        Print current_mst_edges as a valid Spanning Tree\n        Return\n    If edge_index == total_edges:\n        Return\n    \n    // Step A: Include current edge (if no cycle is formed)\n    If adding edge[edge_index] does not form cycle:\n        FindSpanningTrees(edge_index + 1, current_mst_edges + {edge[edge_index]})\n        \n    // Step B: Exclude current edge\n    FindSpanningTrees(edge_index + 1, current_mst_edges)\n```",
             "answer_source": "generated",
-            "chapter": "Unit-5 - Graph"
+            "chapter": "Unit 5 - Graph"
         },
         {
             "question_number": "25 b.",
@@ -241,7 +241,7 @@
             "marks": 8,
             "answer": "Let table size $M = 10$ with hash function $h(key) = key \\pmod{10}$.\nWe insert keys: `69, 08, 39, 48, 15, 77, 19`.\n\n**Strategy 1: Linear Probing ($h(key, i) = (h(key) + i) \\pmod{10}$)**\n- **69**: $69 \\% 10 = 9$. Slot 9 is free. **[9] = 69**\n- **08**: $8 \\% 10 = 8$. Slot 8 is free. **[8] = 08**\n- **39**: $39 \\% 10 = 9$. Collision! Probe to index $(9+1)\\%10 = 0$. Slot 0 is free. **[0] = 39**\n- **48**: $48 \\% 10 = 8$. Collision! Probe $(8+1)\\%10 = 9$ (occupied), $(8+2)\\%10 = 0$ (occupied), $(8+3)\\%10 = 1$. Slot 1 is free. **[1] = 48**\n- **15**: $15 \\% 10 = 5$. Slot 5 is free. **[5] = 15**\n- **77**: $77 \\% 10 = 7$. Slot 7 is free. **[7] = 77**\n- **19**: $19 \\% 10 = 9$. Collision! Probe $(9+1)\\%10 = 0$ (occupied), $(9+2)\\%10 = 1$ (occupied), $(9+3)\\%10 = 2$. Slot 2 is free. **[2] = 19**\n\n*Linear Probing State Table:* \n`[0: 39, 1: 48, 2: 19, 3: Empty, 4: Empty, 5: 15, 6: Empty, 7: 77, 8: 08, 9: 69]`\n\n---\n\n**Strategy 2: Separate Chaining**\nCollisions are resolved by appending elements to linked lists linked to corresponding hash locations.\n- **Index 0 to 4:** Empty\n- **Index 5:** `[15] -> NULL`\n- **Index 6:** Empty\n- **Index 7:** `[77] -> NULL`\n- **Index 8:** `[08] -> NULL`\n- **Index 9:** `[69] -> [39] -> [19] -> NULL`\n\n**Comparison:**\n- **Separate Chaining** keeps the primary table compact but uses auxiliary link pointers, requiring extra dynamic allocation overhead. It prevents table clustering.\n- **Linear Probing** operates purely inside contiguous array memory (no overhead pointers), but is highly prone to primary clustering which degrades search complexity to $O(N)$ when filling.",
             "answer_source": "generated",
-            "chapter": "Unit-4 - Trees and Hashing"
+            "chapter": "Unit 4 - Trees and Hashing"
         },
         {
             "question_number": "26",
@@ -249,7 +249,7 @@
             "marks": 15,
             "answer": "**Suggested ADT:** **Double-Ended Queue (Deque) ADT** implemented using a **Doubly Linked List (DLL)**.\n\n**Justification:**\n- The requirement states we need to perform insertions and deletions at both extreme boundaries (inserting/deleting at the beginning and the end) in $O(1)$ constant time.\n- Under an array implementation, insertion/deletion at the beginning requires shifting elements, which is highly inefficient ($O(N)$).\n- A singly linked list can do beginning operations in $O(1)$ but deleting the last element takes $O(N)$ because of the requirement to traverse and fetch the second-to-last node.\n- A **Doubly Linked List** keeps references to both `head` and `tail`, plus bidirectional links (`prev` and `next`), allowing seamless $O(1)$ updates at both ends.\n\n**Data Structure Node Design:**\n\n```c\nstruct Ticket {\n    int ticket_id;\n    struct Ticket* prev;\n    struct Ticket* next;\n};\nstruct Deque {\n    struct Ticket* head;\n    struct Ticket* tail;\n};\n\n```\n\n**Pseudocode Implementation of Operations:**\n\n**1. Insert ticket at the end:**\n\n```text\nAlgorithm: InsertEnd(D, id)\n1. Create a new Ticket node `new_node`\n2. new_node->ticket_id = id\n3. new_node->next = NULL\n4. If D->tail is NULL (empty Deque):\n     new_node->prev = NULL\n     D->head = D->tail = new_node\n5. Else:\n     new_node->prev = D->tail\n     D->tail->next = new_node\n     D->tail = new_node\n\n```\n\n**2. Remove ticket from the beginning:**\n\n```text\nAlgorithm: RemoveBeginning(D)\n1. If D->head is NULL: Return \"Underflow Error\"\n2. temp = D->head\n3. If D->head == D->tail (only one node):\n     D->head = D->tail = NULL\n4. Else:\n     D->head = D->head->next\n     D->head->prev = NULL\n5. Free temp\n\n```\n\n**3. Insert ticket at the beginning:**\n\n```text\nAlgorithm: InsertBeginning(D, id)\n1. Create a new Ticket node `new_node`\n2. new_node->ticket_id = id\n3. new_node->prev = NULL\n4. If D->head is NULL:\n     new_node->next = NULL\n     D->head = D->tail = new_node\n5. Else:\n     new_node->next = D->head\n     D->head->prev = new_node\n     D->head = new_node\n\n```\n\n**4. Delete the last ticket:**\n\n```text\nAlgorithm: DeleteLast(D)\n1. If D->tail is NULL: Return \"Underflow Error\"\n2. temp = D->tail\n3. If D->head == D->tail:\n     D->head = D->tail = NULL\n4. Else:\n     D->tail = D->tail->prev\n     D->tail->next = NULL\n5. Free temp\n```",
             "answer_source": "generated",
-            "chapter": "Unit-2 - List Structure"
+            "chapter": "Unit 2 - List Structure"
         },
         {
             "question_number": "27",
@@ -257,7 +257,7 @@
             "marks": 15,
             "answer": "- **Property 1** defines a standard Binary Search Tree (BST).\n- **Property 2** defines the balance condition of an AVL Tree (height-balanced BST).\n\n**Tree 1: Satisfies Property 1 Only (Standard Unbalanced BST)**\nInserting sorted elements `11, 22, 33, 44, 55, 66, 77, 88` sequentially into a normal BST results in a highly unbalanced, right-skewed binary tree:\n\n```text\n11\n  \\\n  22\n    \\\n    33\n      \\\n      44\n        \\\n        55\n          \\\n          66\n            \\\n            77\n              \\\n              88\n\n```\n\nThis satisfies Property 1, but completely violates Property 2 (the height difference is up to 7).\n\n---\n\n**Tree 2: Satisfies both Property 1 and Property 2 (Balanced BST / AVL Tree)**\nTo satisfy both properties, we must construct a height-balanced BST. We can choose a middle value (like 44 or 55) as the root to ensure optimal distribution:\n\n```text\n44\n       /    \\\n     22      66\n    /  \\    /  \\\n   11  33  55  77\n                 \\\n                 88\n\n```\n\n**Validation of Properties on Tree 2:**\n- **Property 1 Check:** Left elements are always smaller and right elements are larger for every node (verified).\n- **Property 2 Check:**\n  - Root `44`: Left subtree height = 2, Right subtree height = 3. $|2 - 3| = 1 \\le 1$.\n  - Node `66`: Left height = 1, Right height = 2. $|1 - 2| = 1 \\le 1$.\n  - Node `22`: Left height = 1, Right height = 1. $|1 - 1| = 0 \\le 1$.\n  - All other nodes have height difference of 0 or 1. Hence, the balance condition holds.",
             "answer_source": "generated",
-            "chapter": "Unit-4 - Trees and Hashing"
+            "chapter": "Unit 4 - Trees and Hashing"
         }
     ]
 }
