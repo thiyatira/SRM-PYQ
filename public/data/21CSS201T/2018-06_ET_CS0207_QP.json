@@ -1,0 +1,167 @@
+{
+  "formal_filename": "2018-06_ET_CS0207_QP.json",
+  "paper_title": "B.Tech. DEGREE EXAMINATION, JUNE 2018 - Third Semester - CS0207 - COMPUTER ORGANIZATION AND ARCHITECTURE (For the candidates admitted from the academic year 2007-2008 to 2012-2013)",
+  "source": "2018-06 ET CS0207",
+  "questions": [
+    {
+      "question_number": "1",
+      "question_text": "Write the basic functional units of computer.",
+      "marks": 2,
+      "answer": "The five basic functional units are the Input unit, the Memory unit, the Arithmetic and Logic Unit (ALU), the Control unit and the Output unit. The ALU and control unit together form the processor (CPU).",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basic structure of computers"
+    },
+    {
+      "question_number": "2",
+      "question_text": "Compare RISC and CISC architecture.",
+      "marks": 2,
+      "answer": "| RISC | CISC |\n|---|---|\n| Few, simple, fixed-length instructions | Many complex, variable-length instructions |\n| Load/store architecture; register-to-register operations | Memory operands are allowed in many instructions |\n| Few addressing modes | Many addressing modes |\n| Hardwired control, CPI about 1, heavily pipelined | Microprogrammed control, multi-cycle instructions |\n| Large register file; more work for the compiler | Fewer registers; more work for the hardware |\n| Examples: ARM, MIPS | Examples: x86, VAX |",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Parallelism"
+    },
+    {
+      "question_number": "3",
+      "question_text": "State the problems in floating point arithmetic.",
+      "marks": 2,
+      "answer": "- **Exponent overflow:** the exponent is too large for its field, giving ±∞.\n- **Exponent underflow:** the exponent is too small, giving 0 or a denormal.\n- **Mantissa overflow:** adding mantissas produces a carry, so the result needs renormalising (shift right, exponent + 1).\n- **Mantissa underflow / loss of precision:** bits are lost when aligning or normalising, so rounding is needed.\n- Alignment of exponents is needed before addition or subtraction.\n- Special cases must be handled: zero, NaN and infinity.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Design of ALU"
+    },
+    {
+      "question_number": "4",
+      "question_text": "What is meant by privileged instruction?",
+      "marks": 2,
+      "answer": "A privileged instruction is one that can be executed only when the processor is in supervisor (kernel) mode. Examples are I/O instructions, halt, changing interrupt masks or the status register, and loading MMU/page-table registers. If a user-mode program tries to execute one, a trap/exception is raised. This protects the OS and system resources.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Control Unit"
+    },
+    {
+      "question_number": "5",
+      "question_text": "With a diagram, explain the steps involved in instruction-execution cycle.",
+      "marks": 2,
+      "answer": "Diagram: Fetch → Decode → Fetch operand → Execute → Store result → (check interrupt) → back to Fetch.\n\n1. **Fetch:** PC → MAR, Read; MDR → IR; PC ← PC + 1 word.\n2. **Decode** the opcode in IR.\n3. **Operand fetch:** compute the effective address and read the operand.\n4. **Execute** the operation in the ALU.\n5. **Store** the result in a register or memory.\n6. **Check for interrupts**, then repeat.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Control Unit"
+    },
+    {
+      "question_number": "6",
+      "question_text": "Name the methods of hardwired control logic design.",
+      "marks": 2,
+      "answer": "1. State-table (sequential circuit / FSM) method.\n2. Delay-element method.\n3. Sequence-counter method.\n4. PLA-based method.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Control Unit"
+    },
+    {
+      "question_number": "7",
+      "question_text": "List the functions of TLB.",
+      "marks": 2,
+      "answer": "- It caches recently used virtual-page to physical-frame translations, giving fast address translation without a page-table access.\n- It holds the protection/access bits used for checking.\n- It holds the valid and dirty bits used for page management.\n- It reduces the effective memory access time in virtual memory systems.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basic structure of computers"
+    },
+    {
+      "question_number": "8",
+      "question_text": "Give the various types of semiconductor memory.",
+      "marks": 2,
+      "answer": "- **RAM:** SRAM (static, flip-flop cells, used for cache) and DRAM (dynamic, capacitor cells, needs refresh; includes SDRAM and DDR).\n- **ROM family:** mask ROM, PROM, EPROM (UV erasable), EEPROM (electrically erasable) and Flash memory.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basic structure of computers"
+    },
+    {
+      "question_number": "9",
+      "question_text": "Draw the basic structure of serial data format.",
+      "marks": 2,
+      "answer": "Asynchronous serial character format, sent LSB first:\n\n```\nidle(1) | Start(0) | D0 D1 D2 D3 D4 D5 D6 D7 | Parity (optional) | Stop(1) [1 or 2 bits] | idle(1)\n```\n\nThe line idles at 1. A 0 start bit marks the beginning of a character, the 7 or 8 data bits follow, then an optional parity bit, and one or more stop bits (1) end the frame.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Parallelism"
+    },
+    {
+      "question_number": "10",
+      "question_text": "What is bus arbitration?",
+      "marks": 2,
+      "answer": "Bus arbitration is the process of deciding which of several devices that can become bus master (CPU, DMA controllers) gains control of the shared bus when more than one requests it at the same time. It can be **centralized** (a single arbiter, for example daisy-chained Bus Grant) or **distributed** (devices compete using their IDs on arbitration lines).",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Parallelism"
+    },
+    {
+      "question_number": "11. a.",
+      "question_text": "Define addressing mode and explain various addressing modes with examples.",
+      "marks": 16,
+      "answer": "An **addressing mode** is the method used by an instruction to specify the location (effective address, EA) of its operand.\n\n| Mode | Syntax | EA / operand | Example | Use |\n|---|---|---|---|---|\n| Immediate | #Value | Operand = Value | `MOVE #200, R0` | Constants |\n| Register | Ri | Operand in Ri | `ADD R1, R2` | Fast temporaries |\n| Absolute/Direct | LOC | EA = LOC | `MOVE NUM, R1` | Global variables |\n| Indirect | (Ri)/(LOC) | EA = [Ri] / [LOC] | `ADD (R1), R0` | Pointers |\n| Index | X(Ri) | EA = X + [Ri] | `MOVE 8(R1), R2` | Arrays, records |\n| Base with index | (Ri,Rj) | EA = [Ri] + [Rj] | `MOVE (R1,R2), R3` | 2-D arrays |\n| Base, index, offset | X(Ri,Rj) | EA = X + [Ri] + [Rj] | `MOVE 4(R1,R2), R3` | Structures within arrays |\n| Relative | X(PC) | EA = X + [PC] | `BRANCH>0 LOOP` | Branches, relocatable code |\n| Autoincrement | (Ri)+ | EA = [Ri]; Ri ← Ri + d | `ADD (R2)+, R0` | Lists, stack pop |\n| Autodecrement | −(Ri) | Ri ← Ri − d; EA = [Ri] | `MOVE R0, −(SP)` | Stack push |\n\n**Example (sum of a list):**\n```\n      MOVE N, R1\n      MOVE #NUM1, R2\n      CLEAR R0\nLOOP: ADD (R2)+, R0\n      DECREMENT R1\n      BRANCH>0 LOOP\n      MOVE R0, SUM\n```\n\n**Need for addressing modes:** they give flexibility for high-level data structures, reduce the size of the address field, and support relocation and efficient loops.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basic structure of computers"
+    },
+    {
+      "question_number": "11. b.",
+      "question_text": "With a neat diagram, explain about the functional units of a computer.",
+      "marks": 16,
+      "answer": "**Diagram:** Input → Memory ↔ Processor [ALU + Control (+ registers)] → Output. The units are connected by the system bus, and control lines run from the control unit to all units.\n\n1. **Input unit:** reads data and programs from devices (keyboard, mouse, scanner, network), converts them to binary code, and sends them to memory or the processor.\n2. **Memory unit:**\n   - *Primary memory:* semiconductor RAM, organised as words with unique addresses and accessed with a fixed access time (random access). Cache memory is a small, fast memory near the processor.\n   - *Secondary memory:* magnetic disks, optical disks and tapes, which are large, cheap and non-volatile.\n3. **Arithmetic and Logic Unit (ALU):** performs arithmetic and logic operations. Operands are brought into high-speed registers, and results are stored in registers or memory.\n4. **Control unit:** the nerve centre. It generates the timing signals and control signals that govern all transfers and operations (I/O transfers, memory Read/Write, ALU function selection), based on decoded instructions.\n5. **Output unit:** sends processed results to the outside world (monitor, printer, speakers).\n\n**Processor registers:** IR (instruction being executed), PC (address of next instruction), MAR (address for memory), MDR (data to/from memory), and general-purpose registers $R_0$ to $R_{n-1}$.\n\n**Basic operation:** a program is stored in memory. Instructions are fetched one at a time (PC→MAR → Read → MDR → IR), decoded and executed, with operands fetched from memory or registers, results stored back, and I/O performed through the input and output units. Interrupts allow devices to request service.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basic structure of computers"
+    },
+    {
+      "question_number": "12. a.",
+      "question_text": "Explain the steps involved in booth recoding with a neat example.",
+      "marks": 16,
+      "answer": "**Booth recoding** converts a signed 2's complement multiplier into digits from $\\{-1, 0, +1\\}$, so that runs of 1s need only one subtraction and one addition.\n\n**Steps:**\n1. Append an implied 0 to the right of the LSB of the multiplier ($q_{-1} = 0$).\n2. Scan each bit pair $(q_i, q_{i-1})$ from right to left:\n   - 0,0 → 0 (no operation)\n   - 0,1 → +1 (add the multiplicand, at the end of a run of 1s)\n   - 1,0 → −1 (subtract the multiplicand, at the start of a run of 1s)\n   - 1,1 → 0 (inside a run)\n3. The partial product for digit i is (digit × M) shifted left by i positions, sign-extended to 2n bits.\n4. Add all the partial products to get the 2n-bit product.\n\nIn hardware (the A, Q, $Q_{-1}$ registers), each cycle does: 10 → A ← A − M; 01 → A ← A + M; then an arithmetic shift right of A, Q, $Q_{-1}$, repeated n times.\n\n**Example: $(+13)\\times(-6)$**, with M = 01101 and Q = 11010 (5 bits).\n\nRecoding: 11010|0 gives the pairs $(q_0q_{-1}) = 00 \\to 0$, $(q_1q_0) = 10 \\to -1$, $(q_2q_1) = 01 \\to +1$, $(q_3q_2) = 10 \\to -1$, $(q_4q_3) = 11 \\to 0$. The Booth multiplier is $0\\ {-1}\\ {+1}\\ {-1}\\ 0$ (MSB to LSB); check: $-8 + 4 - 2 = -6$.\n\n| Step | $Q_0Q_{-1}$ | Operation | A | Q | $Q_{-1}$ |\n|---|---|---|---|---|---|\n| Init | | | 00000 | 11010 | 0 |\n| 1 | 00 | ASHR | 00000 | 01101 | 0 |\n| 2 | 10 | A = A − M = 10011 | 10011 | 01101 | 0 |\n| | | ASHR | 11001 | 10110 | 1 |\n| 3 | 01 | A = A + M = 00110 | 00110 | 10110 | 1 |\n| | | ASHR | 00011 | 01011 | 0 |\n| 4 | 10 | A = A − M = 10110 | 10110 | 01011 | 0 |\n| | | ASHR | 11011 | 00101 | 1 |\n| 5 | 11 | ASHR | 11101 | 10010 | 1 |\n\nProduct $= 11101\\,10010_2 = -78$. Check: $13\\times(-6) = -78$.\n\n**Advantages:** handles signed numbers uniformly and needs fewer additions for multipliers with long runs of 1s. **Worst case:** alternating 0s and 1s, for which bit-pair recoding is the improvement.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Design of ALU"
+    },
+    {
+      "question_number": "12. b.",
+      "question_text": "With necessary diagram, explain in detail about two-stage instruction pipeline.",
+      "marks": 16,
+      "answer": "**Two-stage pipeline:** instruction processing is split into two stages, each with its own hardware unit, separated by an **interstage buffer B1**:\n- **Stage F (Fetch unit):** fetches the instruction from memory/cache and places it in B1.\n- **Stage E (Execute unit):** decodes and executes the instruction held in B1 (operand fetch, ALU, write-back).\n\n**Diagram:** Instruction fetch unit F → Interstage buffer B1 → Execution unit E.\n\n**Timing:**\n```\nClock:   1    2    3    4    5\nI1:      F1   E1\nI2:           F2   E2\nI3:                F3   E3\nI4:                     F4   E4\n```\nWhile I1 executes in cycle 2, I2 is fetched, so after the first cycle one instruction completes every cycle. For n instructions: sequential execution needs 2n cycles, the pipeline needs n + 1, and speed-up $= \\dfrac{2n}{n+1} \\to 2$.\n\n**Requirements:** both stages must take equal time (one clock), which needs a cache for single-cycle fetch; the buffer holds the instruction (and its information) between stages.\n\n**Problems / hazards:**\n- If E takes longer (for example a divide), F must stall, which creates bubbles.\n- **Branches:** the fetched next instruction may be wrong and must be discarded (branch penalty of 1 cycle). This is reduced by delayed branch or prediction.\n- **Data dependencies** and cache misses stall the pipeline.\n- **Structural conflicts:** for example, a single memory port shared between F and E.\n\nThis basic idea extends to 4-stage (F, D, E, W) and 5-stage pipelines, giving higher throughput.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Control Unit"
+    },
+    {
+      "question_number": "13. a.",
+      "question_text": "Explain in detail about hardwired control unit.",
+      "marks": 16,
+      "answer": "**Hardwired control** generates the control signals with fixed logic circuits (gates, flip-flops, decoders). The signals depend on:\n1. the contents of the control step counter (timing),\n2. the contents of the instruction register (opcode),\n3. the condition codes (N, Z, V, C), and\n4. external signals (MFC, interrupt requests).\n\n**Block diagram:**\n- **Clock → control step counter** (incremented each clock when RUN = 1; reset by End).\n- **Step decoder**, producing $T_1$ to $T_n$ (one active per step).\n- **IR → instruction decoder**, producing $INS_1$ to $INS_m$ (one per instruction).\n- An **encoder** (AND-OR logic) takes T, INS, flags and external inputs, and produces the control signals (PC$_{out}$, MAR$_{in}$, Read, Z$_{in}$, Add, End and so on).\n\n**Generating signals:** each signal is the logical sum of products of the time slot and instruction, for example\n$$Z_{in} = T_1 + T_6\\cdot ADD + T_4\\cdot BR + \\ldots$$\n$$End = T_7\\cdot ADD + T_5\\cdot BR + (T_5\\cdot N + T_4\\cdot\\bar N)\\cdot BRN + \\ldots$$\nThe Run signal (gated by WMFC) stalls the counter while waiting for memory.\n\n**Design methods:** state table, delay element, sequence counter, PLA.\n\n**Advantages:** very fast, minimal delay, well suited to RISC. **Disadvantages:** complex and irregular for large instruction sets, hard to modify or debug, and any change needs a redesign.\n\n**Comparison with microprogrammed control:** that approach is flexible but slower.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Control Unit"
+    },
+    {
+      "question_number": "13. b.",
+      "question_text": "With an example, list out the concept of microprogrammed control.",
+      "marks": 16,
+      "answer": "**Concept:** the control signals for each step are stored as words (**control words / microinstructions**) in a **control memory (control store, ROM)**. A sequence of microinstructions forming the routine for a machine instruction is a **microprogram**.\n\n**Organisation:**\n- IR → **starting address generator** (opcode mapping) → **μPC** (microprogram counter) → **control store** → **microinstruction** → control signals.\n- The μPC is normally incremented. It is loaded with a new address when a new instruction is loaded into IR, when a branch microinstruction is encountered (conditionally, using the status flags), or when End is reached (go to the fetch routine).\n\n**Example: Add (R3), R1.** Each row is a control word, and each column a signal bit (PC$_{out}$, MAR$_{in}$, Read, Select4, Add, Z$_{in}$, Z$_{out}$, PC$_{in}$, Y$_{in}$, WMFC, MDR$_{out}$, IR$_{in}$, R3$_{out}$, R1$_{out}$, R1$_{in}$, SelectY, End).\n\n| μAddr | Active signals |\n|---|---|\n| 0 | PC$_{out}$, MAR$_{in}$, Read, Select4, Add, Z$_{in}$ |\n| 1 | Z$_{out}$, PC$_{in}$, Y$_{in}$, WMFC |\n| 2 | MDR$_{out}$, IR$_{in}$ (then branch to the starting address of the opcode) |\n| 3 | R3$_{out}$, MAR$_{in}$, Read |\n| 4 | R1$_{out}$, Y$_{in}$, WMFC |\n| 5 | MDR$_{out}$, SelectY, Add, Z$_{in}$ |\n| 6 | Z$_{out}$, R1$_{in}$, End |\n\n**Microinstruction formats:**\n- *Horizontal:* one bit per signal; parallel and fast, but wide.\n- *Vertical:* encoded fields; compact, but needs decoders.\n- *Field-encoded:* a compromise.\n\nNext-address sequencing uses branch fields, condition codes and opcode mapping, with bit-ORing for addressing-mode branches (for example a conditional branch microinstruction tests the N flag).\n\n**Advantages:** flexible, easy to modify or extend (just change the ROM), systematic design, suits complex CISC instruction sets and emulation. **Disadvantage:** slower than hardwired control.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Control Unit"
+    },
+    {
+      "question_number": "14. a.",
+      "question_text": "Explain in detail about virtual memory organization with a neat diagram.",
+      "marks": 16,
+      "answer": "**Virtual memory** is a memory-management technique in which the program's (virtual/logical) address space can be larger than physical main memory. Only the active parts reside in main memory; the rest stays on secondary storage (disk). The hardware and OS move pages automatically.\n\n**Organisation (diagram):** Processor → virtual address → **MMU** → physical address → cache / main memory. On a page fault, a DMA transfer from **disk storage** brings the page in.\n\n**Address translation with paging:**\n- Virtual address = virtual page number (VPN) + offset. Pages are fixed size (2 KB to 16 KB); main memory is divided into page frames.\n- The **page-table base register** + VPN gives the address of the page-table entry, which holds the frame number and control bits: valid (present), dirty (modified), and access rights (R/W/X).\n- Physical address = frame number concatenated with the offset.\n- A **TLB** (associative cache of recent translations) avoids accessing the page table for most references.\n\n**Page fault:** if the valid bit is 0, the MMU raises an exception. The OS suspends the process, picks a victim frame (LRU, FIFO, clock), writes it back if dirty, loads the required page from disk, updates the page table and TLB, and restarts the instruction. The CPU may run other processes meanwhile.\n\n**Benefits:** programs larger than memory, multiprogramming, relocation (programs are independent of the physical location), protection and sharing between processes. **Issues:** page-fault overhead and thrashing (too many faults); page tables can be large, which leads to multi-level or inverted tables.\n\n**Example:** 32-bit VA with 4 KB pages, so VPN = 20 bits and offset = 12 bits. The page table has $2^{20}$ entries.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basic structure of computers"
+    },
+    {
+      "question_number": "14. b.",
+      "question_text": "Brief about various mapping functions of cache memory in detail.",
+      "marks": 16,
+      "answer": "A **mapping function** decides where a main-memory block is placed in the cache. Example: a cache of 128 blocks of 16 words (2 K words) and main memory of 64 K words (4096 blocks), with a 16-bit address.\n\n**1. Direct mapping:** block j of main memory goes to cache block (j mod 128).\n- Address = **Tag (5) | Block (7) | Word (4)**.\n- The 7-bit block field selects the cache line; the stored 5-bit tag is compared with the address tag. A match is a hit; otherwise the block is loaded and replaces the line.\n- Simple and cheap, but conflict misses occur when two active blocks map to the same line. No replacement algorithm is needed.\n\n**2. Associative (fully associative) mapping:** any memory block can go into any cache block.\n- Address = **Tag (12) | Word (4)**.\n- The tag is compared with the tags of all 128 blocks in parallel (associative search).\n- Fully flexible, with the best hit ratio, but the comparison hardware is costly. It needs a replacement algorithm (LRU and so on).\n\n**3. Set-associative mapping:** the cache is divided into sets of k blocks (k-way). Block j can go into any block of set (j mod number of sets).\n- With 2-way sets, there are 64 sets, so address = **Tag (6) | Set (6) | Word (4)**.\n- The set field selects a set; the tags of the k blocks in that set are compared associatively.\n- A compromise between direct (k = 1) and fully associative (k = number of blocks). Fewer conflicts at moderate cost. Commonly 2-, 4- or 8-way.\n\n**Control bits:** a valid bit per block (for start-up and DMA), and a dirty bit for write-back.\n\n**Replacement policies:** LRU, FIFO, random.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basic structure of computers"
+    },
+    {
+      "question_number": "15. a.",
+      "question_text": "Elaborate on data transfer techniques.",
+      "marks": 16,
+      "answer": "Data transfer between I/O devices and memory/CPU can be done by three techniques.\n\n**1. Programmed I/O (polling):** the CPU executes a program that repeatedly checks the device status flag (for example SIN or SOUT in the status register). When the device is ready, the CPU transfers the data with Move/IN/OUT instructions.\n```\nREAD: TestBit #0, STATUS\n      Branch=0 READ\n      MoveByte DATAIN, R1\n```\nIt is simple, but the CPU wastes time in busy-waiting; it suits slow, simple devices.\n\n**2. Interrupt-driven I/O:** the CPU issues the command and continues other work. When the device is ready, it raises an **interrupt request (INTR)**. The CPU completes the current instruction, saves the PC and status, acknowledges (INTA), and runs the **interrupt service routine (ISR)**, which transfers the data, and then returns.\n- Features: enabling/disabling interrupts, vectored interrupts, priority (daisy chain, priority controllers), nesting.\n- More efficient than polling, but each word still passes through the CPU.\n\n**3. Direct Memory Access (DMA):** for block transfers, the **DMA controller** moves data directly between device and memory. The CPU programs the starting address, word count and direction. The controller requests the bus (BR/BG), transfers the words (cycle stealing or burst mode), and interrupts the CPU on completion. This gives the highest throughput with minimal CPU overhead.\n\n**4. I/O processors / channels:** dedicated processors execute I/O programs, which offloads even the DMA setup (used in mainframes).\n\n**Synchronisation methods for the transfer itself:** synchronous bus (common clock); asynchronous bus with strobe or **handshaking** (Ready/Accept, Master-ready/Slave-ready); serial versus parallel transfer.\n\n| Technique | CPU involvement | Speed | Hardware |\n|---|---|---|---|\n| Programmed I/O | High (polling) | Low | Minimal |\n| Interrupt-driven | Per word | Medium | Interrupt logic |\n| DMA | Only setup and completion | High | DMA controller |",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Parallelism"
+    },
+    {
+      "question_number": "15. b.",
+      "question_text": "Explain DMA with a neat diagram.",
+      "marks": 16,
+      "answer": "**DMA (Direct Memory Access)** is a technique in which a **DMA controller** transfers blocks of data directly between an I/O device and main memory without the processor's involvement for each word.\n\n**Diagram:** Processor and main memory on the system bus; a disk/DMA controller and a network/DMA controller also on the bus. Each DMA controller connects to its device(s), and the BR, BG and BBSY lines link the controllers to the processor (arbiter).\n\n**DMA controller registers:**\n- **Starting address**, incremented after each word.\n- **Word count**, decremented after each word.\n- **Status and control:** R/W (direction), Done flag, IE (interrupt enable), IRQ (interrupt request).\n\n**Operation:**\n1. The OS/CPU writes the starting address, word count and R/W mode, and sets Start.\n2. The controller requests the bus (BR). The processor completes its current bus cycle and grants it (BG).\n3. The controller places addresses on the bus and transfers data between device and memory, one word per bus cycle (**cycle stealing**) or the whole block (**burst mode**).\n4. When the word count reaches 0, the controller sets Done and, if IE = 1, raises an interrupt (IRQ) to the CPU.\n5. The CPU (OS) handles completion.\n\n**Bus arbitration** (centralized daisy chain or distributed) resolves conflicts among the CPU and multiple DMA controllers.\n\n**Advantages:** high transfer rates (disks, network, graphics), and the CPU can execute other programs in parallel. **Disadvantages:** extra hardware, memory-cycle contention with the CPU, and cache-coherence issues.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Parallelism"
+    }
+  ]
+}
