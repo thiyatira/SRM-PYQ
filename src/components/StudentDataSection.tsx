@@ -1,16 +1,29 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
-import { srmApi } from "@/lib/srmApi";
+import { useCallback, useEffect, useRef, useState, type KeyboardEvent } from "react";
+import { SrmApiError, isAbortError, srmPost } from "@/lib/srmApi";
+import LoginForm, { type AuthStep } from "./student/LoginForm";
+import { AttendanceAlert, AttendancePanel, useAttendance } from "./student/AttendancePanel";
+import { CalendarPanel, CoursesPanel, MarksPanel, OverviewPanel, TimetablePanel } from "./student/Panels";
+import { DASH_TABS, isSessionExpired, type DashTab, type DashboardJson } from "./student/types";
+import { CARD, MUTED } from "./student/ui";
 
+/**
+ * Session cookies are kept in sessionStorage only: scoped to this tab and wiped
+ * when the tab closes or the user signs out. The password is never stored; it
+ * lives in component state only until the login request returns.
+ */
 const SESSION_KEY = "srm_academia_cookies";
+const LOGIN_TIMEOUT_MS = 30_000;
+const FULL_LOGIN_TIMEOUT_MS = 75_000; // backend may retry after terminating other sessions
+const DASHBOARD_TIMEOUT_MS = 60_000;
+const LOGOUT_TIMEOUT_MS = 8_000;
 
-type AuthStep = "username" | "password" | "done";
+const EXPIRED_MSG = "Your Academia session has expired. Please sign in again.";
 
 type VerifyUserJson = {
   data?: { identifier?: string; digest?: string; status_code: number; message: string };
   error?: string;
-  errorReason?: unknown;
 };
 
 type VerifyPasswordJson = {
@@ -23,64 +36,50 @@ type VerifyPasswordJson = {
   };
   isAuthenticated?: boolean;
   error?: string;
-  errorReason?: unknown;
 };
 
-type DashboardJson = {
-  attendance: { attendance?: unknown[]; error?: string; status: number };
-  marks: { markList?: unknown[]; error?: string; status: number };
-  timetable: { timetable?: { dayOrder: string; class: unknown[] }[]; error?: string; status: number };
-  calendar: { calendar?: { month: string; days: unknown[] }[]; error?: string; status: number };
-  userInfo: {
-    userInfo?: {
-      regNumber: string;
-      name: string;
-      mobile: string;
-      section: string;
-      program: string;
-      department: string;
-      semester: string;
-      batch: string;
-    };
-    error?: string;
-    status: number;
-  };
-  dayOrder: { dayOrder?: string; error?: string; status: number };
-  course: { courseList?: unknown[]; batch?: string; error?: string; status: number };
-};
+type FullLoginJson = { cookies?: string; isAuthenticated?: boolean; error?: string };
 
-type DashTab = "overview" | "timetable" | "attendance" | "marks" | "courses" | "calendar";
+type Notice = { kind: "error" | "info"; text: string };
 
-const DASH_TABS: { id: DashTab; label: string }[] = [
-  { id: "overview", label: "Overview" },
-  { id: "timetable", label: "Timetable" },
-  { id: "attendance", label: "Attendance" },
-  { id: "marks", label: "Marks" },
-  { id: "courses", label: "Courses" },
-  { id: "calendar", label: "Calendar" },
-];
+const SECTION_KEYS = ["attendance", "marks", "timetable", "calendar", "userInfo", "dayOrder", "course"] as const;
 
-function Field({ label, value }: { label: string; value: string }) {
-  return (
-    <div className="flex flex-col sm:flex-row sm:gap-2 border-b border-gray-200 dark:border-neutral-700 py-2 last:border-0">
-      <span className="text-sm font-semibold text-gray-600 dark:text-gray-400 shrink-0 sm:w-40">{label}</span>
-      <span className="text-gray-900 dark:text-gray-100 break-words">{value || "—"}</span>
-    </div>
-  );
+/** Guarantees every section exists so panels never crash on a partial payload. */
+function normalizeDashboard(raw: unknown): DashboardJson | null {
+  if (!raw || typeof raw !== "object") return null;
+  const obj = raw as Record<string, unknown>;
+  if (!SECTION_KEYS.some((k) => obj[k] && typeof obj[k] === "object")) return null;
+  const out: Record<string, unknown> = {};
+  for (const k of SECTION_KEYS) {
+    const v = obj[k];
+    out[k] = v && typeof v === "object" ? v : { status: 500, error: "No data returned" };
+  }
+  return out as DashboardJson;
 }
 
-function StatusBadge({ status, error }: { status: number; error?: string }) {
-  const ok = status === 200 && !error;
-  return (
-    <span
-      className={`text-xs font-medium px-2 py-0.5 rounded ${
-        ok ? "bg-green-100 text-green-900 dark:bg-green-900/40 dark:text-green-100" : "bg-amber-100 text-amber-900 dark:bg-amber-900/40 dark:text-amber-100"
-      }`}
-    >
-      {ok ? "OK" : `HTTP ${status}${error ? `: ${error}` : ""}`}
-    </span>
-  );
+function errorText(e: unknown, fallback: string): string {
+  return e instanceof SrmApiError ? e.message : fallback;
 }
+
+function readStoredSession(): string {
+  try {
+    return sessionStorage.getItem(SESSION_KEY) ?? "";
+  } catch {
+    return "";
+  }
+}
+
+function writeStoredSession(c: string) {
+  try {
+    if (c) sessionStorage.setItem(SESSION_KEY, c);
+    else sessionStorage.removeItem(SESSION_KEY);
+  } catch {
+    /* storage unavailable (private mode / blocked); session just won't survive reload */
+  }
+}
+
+type Op = { ctrl: AbortController };
+type LoadResult = "ok" | "expired" | "error" | "stale";
 
 export default function StudentDataSection() {
   const [step, setStep] = useState<AuthStep>("username");
@@ -90,345 +89,377 @@ export default function StudentDataSection() {
   const [digest, setDigest] = useState("");
   const [cookies, setCookies] = useState("");
   const [busy, setBusy] = useState(false);
-  const [message, setMessage] = useState<string | null>(null);
+  const [restoring, setRestoring] = useState(true);
+  const [notice, setNotice] = useState<Notice | null>(null);
   const [dashboard, setDashboard] = useState<DashboardJson | null>(null);
   const [dashTab, setDashTab] = useState<DashTab>("overview");
 
-  useEffect(() => {
-    try {
-      const saved = sessionStorage.getItem(SESSION_KEY);
-      if (saved) setCookies(saved);
-    } catch {
-      /* ignore */
+  // The single in-flight operation. Starting a new one (or unmounting / signing out) aborts the old one,
+  // and results from superseded operations are discarded.
+  const opRef = useRef<Op | null>(null);
+
+  const beginOp = useCallback((): Op => {
+    opRef.current?.ctrl.abort();
+    const op: Op = { ctrl: new AbortController() };
+    opRef.current = op;
+    setBusy(true);
+    setNotice(null);
+    return op;
+  }, []);
+
+  const isCurrent = useCallback((op: Op) => opRef.current === op, []);
+
+  const endOp = useCallback((op: Op) => {
+    if (opRef.current === op) {
+      opRef.current = null;
+      setBusy(false);
     }
   }, []);
 
-  const persistCookies = useCallback((c: string) => {
+  const cancelOp = useCallback(() => {
+    opRef.current?.ctrl.abort();
+    opRef.current = null;
+    setBusy(false);
+  }, []);
+
+  const storeCookies = useCallback((c: string) => {
     setCookies(c);
-    try {
-      if (c) sessionStorage.setItem(SESSION_KEY, c);
-      else sessionStorage.removeItem(SESSION_KEY);
-    } catch {
-      /* ignore */
-    }
+    writeStoredSession(c);
   }, []);
 
-  const clearSession = useCallback(() => {
-    persistCookies("");
-    setPassword("");
-    setIdentifier("");
-    setDigest("");
-    setDashboard(null);
-    setStep("username");
-    setMessage(null);
-  }, [persistCookies]);
+  /** Wipe every piece of auth state (cookies, password, digest, data). */
+  const resetAuth = useCallback(
+    (next: Notice | null = null, keepUsername = false) => {
+      storeCookies("");
+      setPassword("");
+      setIdentifier("");
+      setDigest("");
+      setDashboard(null);
+      setDashTab("overview");
+      setStep("username");
+      if (!keepUsername) setUsername("");
+      setNotice(next);
+    },
+    [storeCookies]
+  );
+
+  const fetchDashboard = useCallback(
+    async (cookieStr: string, op: Op): Promise<LoadResult> => {
+      try {
+        const json = await srmPost<unknown>(
+          "/srm/dashboard",
+          { cookies: cookieStr },
+          { timeoutMs: DASHBOARD_TIMEOUT_MS, signal: op.ctrl.signal }
+        );
+        if (!isCurrent(op)) return "stale";
+        const data = normalizeDashboard(json);
+        if (!data) {
+          setNotice({ kind: "error", text: "The server sent an unexpected dashboard response." });
+          return "error";
+        }
+        if (isSessionExpired(data)) {
+          resetAuth({ kind: "error", text: EXPIRED_MSG }, true);
+          return "expired";
+        }
+        setDashboard(data);
+        return "ok";
+      } catch (e) {
+        if (isAbortError(e) || !isCurrent(op)) return "stale";
+        setNotice({ kind: "error", text: errorText(e, "Failed to load your dashboard.") });
+        return "error";
+      }
+    },
+    [resetAuth, isCurrent]
+  );
+
+  // Restore a tab-scoped session on first load. Cleanup aborts anything in flight (unmount safety).
+  useEffect(() => {
+    const saved = readStoredSession();
+    if (!saved) {
+      setRestoring(false);
+      return;
+    }
+    setCookies(saved);
+    const op = beginOp();
+    void fetchDashboard(saved, op).finally(() => {
+      if (isCurrent(op)) setRestoring(false);
+      endOp(op);
+    });
+    return () => {
+      op.ctrl.abort();
+      if (opRef.current === op) opRef.current = null;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => () => cancelOp(), [cancelOp]);
 
   const onVerifyUser = async () => {
-    setMessage(null);
-    setBusy(true);
+    const user = username.trim();
+    if (!user) return;
+    const op = beginOp();
     try {
-      const res = await srmApi("/srm/verify-user", {
-        method: "POST",
-        body: JSON.stringify({ username: username.trim() }),
+      const json = await srmPost<VerifyUserJson>("/srm/verify-user", { username: user }, {
+        timeoutMs: LOGIN_TIMEOUT_MS,
+        signal: op.ctrl.signal,
       });
-      const json: VerifyUserJson = await res.json();
-      if (!res.ok) {
-        setMessage(json.error || "Could not verify user.");
-        return;
-      }
+      if (!isCurrent(op)) return;
       if (json.error) {
-        setMessage(json.error);
+        setNotice({ kind: "error", text: json.error });
         return;
       }
       const sc = json.data?.status_code;
       const id = json.data?.identifier;
       const dg = json.data?.digest;
       if ((sc !== 200 && sc !== 201) || !id || !dg) {
-        setMessage(json.data?.message || "User not found or incomplete response.");
+        setNotice({
+          kind: "error",
+          text: json.data?.message || "We could not find that SRM account. Check the email and try again.",
+        });
         return;
       }
       setIdentifier(id);
       setDigest(dg);
       setStep("password");
     } catch (e) {
-      setMessage(e instanceof Error ? e.message : "Network error while verifying user.");
+      if (!isAbortError(e) && isCurrent(op)) {
+        setNotice({ kind: "error", text: errorText(e, "Could not verify the username.") });
+      }
     } finally {
-      setBusy(false);
+      endOp(op);
     }
   };
 
-  const loadDashboard = async (cookieStr: string) => {
-    setBusy(true);
-    setMessage(null);
-    try {
-      const res = await srmApi("/srm/dashboard", {
-        method: "POST",
-        body: JSON.stringify({ cookies: cookieStr }),
-      });
-      const json = await res.json();
-      if (!res.ok) {
-        setMessage(json.error || "Failed to load dashboard.");
-        return;
-      }
-      setDashboard(json as DashboardJson);
-      setDashTab("overview");
-      setStep("done");
-    } catch (e) {
-      setMessage(e instanceof Error ? e.message : "Network error while loading dashboard.");
-    } finally {
-      setBusy(false);
-    }
+  /** Common tail for both login paths: stash cookies, drop the password, load data. */
+  const completeLogin = async (sessionCookies: string, op: Op) => {
+    storeCookies(sessionCookies);
+    setPassword("");
+    setIdentifier("");
+    setDigest("");
+    setDashTab("overview");
+    setStep("username");
+    await fetchDashboard(sessionCookies, op);
   };
 
   const onVerifyPassword = async () => {
-    setMessage(null);
-    setBusy(true);
+    if (!password) return;
+    const op = beginOp();
     try {
-      const res = await srmApi("/srm/verify-password", {
-        method: "POST",
-        body: JSON.stringify({ identifier, digest, password }),
-      });
-      const json: VerifyPasswordJson = await res.json();
-      if (json.error) {
-        setMessage(json.error);
-        return;
-      }
+      const json = await srmPost<VerifyPasswordJson>(
+        "/srm/verify-password",
+        { identifier, digest, password },
+        { timeoutMs: LOGIN_TIMEOUT_MS, signal: op.ctrl.signal }
+      );
+      if (!isCurrent(op)) return;
       if (json.isAuthenticated && json.data?.cookies) {
-        persistCookies(json.data.cookies);
-        await loadDashboard(json.data.cookies);
+        await completeLogin(json.data.cookies, op);
         return;
       }
-      const captcha = json.data?.captcha;
-      if (captcha?.required) {
-        setMessage("Captcha is required by Academia for this account. This app cannot complete captcha flows yet.");
+      if (json.error) {
+        setNotice({ kind: "error", text: json.error });
+        return;
+      }
+      if (json.data?.captcha?.required) {
+        setNotice({
+          kind: "error",
+          text: "Academia is asking for a captcha for this account, which this app cannot complete yet. Sign in on the Academia website first, then try again.",
+        });
         return;
       }
       if (json.data?.isConcurrentLimit || json.data?.statusCode === 435) {
-        setMessage(
-          json.data?.message ||
-            "Concurrent session limit reached. Try “Sign in (terminate other sessions)” below, or sign out from other devices."
-        );
+        setNotice({
+          kind: "error",
+          text: "Too many active sessions on this account. Use “Sign in (terminate other sessions)” below, or sign out on your other devices.",
+        });
         return;
       }
-      setMessage(json.data?.message || "Authentication failed.");
+      setNotice({
+        kind: "error",
+        text: json.data?.message || "Sign-in failed. Check your password and try again.",
+      });
     } catch (e) {
-      setMessage(e instanceof Error ? e.message : "Network error during sign-in.");
+      if (!isAbortError(e) && isCurrent(op)) {
+        setNotice({ kind: "error", text: errorText(e, "Sign-in failed.") });
+      }
     } finally {
-      setBusy(false);
+      endOp(op);
     }
   };
 
   const onFullLogin = async () => {
-    setMessage(null);
-    setBusy(true);
+    if (!password) return;
+    const op = beginOp();
     try {
-      const res = await srmApi("/srm/full-login", {
-        method: "POST",
-        body: JSON.stringify({ email: username.trim(), password }),
-      });
-      const json = await res.json();
-      if (!res.ok || json.error) {
-        setMessage(json.error || "Full login failed.");
-        return;
-      }
+      const json = await srmPost<FullLoginJson>(
+        "/srm/full-login",
+        { email: username.trim(), password },
+        { timeoutMs: FULL_LOGIN_TIMEOUT_MS, signal: op.ctrl.signal }
+      );
+      if (!isCurrent(op)) return;
       if (json.isAuthenticated && json.cookies) {
-        persistCookies(json.cookies);
-        await loadDashboard(json.cookies);
+        await completeLogin(json.cookies, op);
         return;
       }
-      setMessage(json.error || "Full login did not return a session.");
+      setNotice({ kind: "error", text: json.error || "Sign-in failed. Check your password and try again." });
     } catch (e) {
-      setMessage(e instanceof Error ? e.message : "Network error during full login.");
+      if (!isAbortError(e) && isCurrent(op)) {
+        setNotice({ kind: "error", text: errorText(e, "Sign-in failed.") });
+      }
     } finally {
-      setBusy(false);
+      endOp(op);
     }
   };
+
+  const onRefresh = async () => {
+    if (!cookies) return;
+    const op = beginOp();
+    try {
+      await fetchDashboard(cookies, op);
+    } finally {
+      endOp(op);
+    }
+  };
+
+  const onResume = onRefresh;
 
   const onLogout = async () => {
-    if (!cookies) {
-      clearSession();
-      return;
-    }
+    const current = cookies;
+    cancelOp(); // abort any in-flight refresh so it cannot repopulate state afterwards
     setBusy(true);
-    try {
-      await srmApi("/srm/logout", {
-        method: "POST",
-        body: JSON.stringify({ cookies }),
-      });
-    } catch {
-      /* still clear locally */
-    } finally {
-      clearSession();
-      setBusy(false);
+    let serverNote: Notice | null = null;
+    if (current) {
+      try {
+        await srmPost("/srm/logout", { cookies: current }, { timeoutMs: LOGOUT_TIMEOUT_MS });
+      } catch {
+        serverNote = {
+          kind: "info",
+          text: "You were signed out on this device, but the server could not be reached to end the Academia session. It will expire on its own.",
+        };
+      }
     }
+    resetAuth(serverNote ?? { kind: "info", text: "You have been signed out." });
+    setBusy(false);
   };
 
-  const resumeIfStored = () => {
-    if (cookies) void loadDashboard(cookies);
+  const attendanceItems = useAttendance(dashboard?.attendance?.attendance);
+
+  const onTabKeyDown = (e: KeyboardEvent<HTMLButtonElement>) => {
+    const i = DASH_TABS.findIndex((t) => t.id === dashTab);
+    let next = -1;
+    if (e.key === "ArrowRight") next = (i + 1) % DASH_TABS.length;
+    else if (e.key === "ArrowLeft") next = (i - 1 + DASH_TABS.length) % DASH_TABS.length;
+    else if (e.key === "Home") next = 0;
+    else if (e.key === "End") next = DASH_TABS.length - 1;
+    if (next < 0) return;
+    e.preventDefault();
+    setDashTab(DASH_TABS[next].id);
+    document.getElementById(`student-tab-${DASH_TABS[next].id}`)?.focus();
   };
 
-  const timetable = dashboard?.timetable?.timetable;
-  const attendanceRows = dashboard?.attendance?.attendance as
-    | {
-        courseCode: string;
-        courseTitle: string;
-        courseCategory: string;
-        courseFaculty: string;
-        courseSlot: string;
-        courseConducted: number;
-        courseAbsent: number;
-        courseAttendance: string;
-      }[]
-    | undefined;
-  const markList = dashboard?.marks?.markList as
-    | {
-        course: string;
-        category: string;
-        marks: { exam: string; obtained: number; maxMark: number }[];
-        total: { obtained: number; maxMark: number };
-      }[]
-    | undefined;
-  const courseList = dashboard?.course?.courseList as
-    | {
-        courseCode: string;
-        courseTitle: string;
-        courseCredit: string;
-        courseCategory: string;
-        courseType: string;
-        courseFaculty: string;
-        courseSlot: string[];
-        courseRoomNo: string;
-      }[]
-    | undefined;
-  const calendar = dashboard?.calendar?.calendar;
-  const userInfo = dashboard?.userInfo?.userInfo;
+  const noticeEl = (
+    <div aria-live="polite" aria-atomic="true">
+      {notice && (
+        <p
+          role={notice.kind === "error" ? "alert" : "status"}
+          className={`mt-4 text-sm whitespace-pre-wrap rounded p-3 border ${
+            notice.kind === "error"
+              ? "text-red-900 bg-red-50 border-red-300 dark:text-red-100 dark:bg-red-900/30 dark:border-red-800"
+              : "text-blue-900 bg-blue-50 border-blue-300 dark:text-blue-100 dark:bg-blue-900/30 dark:border-blue-800"
+          }`}
+        >
+          {notice.text}
+        </p>
+      )}
+    </div>
+  );
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold text-center mb-2 text-gray-900 dark:text-gray-100">Academia (Student data)</h1>
-      <p className="text-center text-sm text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
-        Sign-in uses the{" "}
-        <a
-          className="text-blue-600 dark:text-blue-400 underline"
-          href="https://www.npmjs.com/package/reddy-api-srm"
-          target="_blank"
-          rel="noreferrer"
-        >
-          reddy-api-srm
-        </a>{" "}
-        flow via the local API server (verify user, then password). Your password is not stored. Session cookies are
-        kept in this browser tab only (sessionStorage) unless you clear them. Run <code className="font-mono text-xs">npm run dev:backend</code>{" "}
-        (or <code className="font-mono text-xs">npm run dev:all</code>) and set{" "}
-        <code className="font-mono text-xs">NEXT_PUBLIC_SRM_API_BASE</code> if the API is not on{" "}
-        <code className="font-mono text-xs">http://localhost:5000</code>.
+      <h1 className="text-2xl sm:text-3xl font-bold text-center mb-2 text-gray-900 dark:text-gray-100">
+        Academia (Student data)
+      </h1>
+      <p className={`text-center text-sm ${MUTED} mb-8 max-w-2xl mx-auto`}>
+        View your attendance, marks and timetable from SRM Academia. Your password is sent only to sign in and is never
+        stored. Your session lives in this browser tab and is erased when you sign out or close the tab.
       </p>
 
-      {!dashboard && (
-        <div className="max-w-md mx-auto bg-white dark:bg-neutral-800 rounded-lg shadow-md p-6 border border-gray-200 dark:border-neutral-700">
-          {cookies && step !== "done" && (
-            <div className="mb-4 p-3 rounded bg-blue-50 dark:bg-blue-900/20 text-sm text-gray-800 dark:text-gray-200">
+      {restoring && (
+        <div className={`max-w-md mx-auto ${CARD} p-6`} role="status" aria-live="polite">
+          <p className={`text-sm ${MUTED}`}>Restoring your session…</p>
+        </div>
+      )}
+
+      {!restoring && !dashboard && (
+        <div className={`max-w-md mx-auto ${CARD} p-6`}>
+          {cookies && (
+            <div className="mb-4 p-3 rounded bg-blue-50 dark:bg-blue-900/30 text-sm text-gray-900 dark:text-gray-100">
               Saved session found in this tab.{" "}
-              <button type="button" className="text-blue-700 dark:text-blue-300 underline font-medium" onClick={resumeIfStored} disabled={busy}>
+              <button
+                type="button"
+                className="text-blue-800 dark:text-blue-200 underline font-medium disabled:opacity-50"
+                onClick={() => void onResume()}
+                disabled={busy}
+              >
                 Load dashboard
               </button>{" "}
               or{" "}
-              <button type="button" className="text-blue-700 dark:text-blue-300 underline font-medium" onClick={clearSession} disabled={busy}>
-                Clear
+              <button
+                type="button"
+                className="text-blue-800 dark:text-blue-200 underline font-medium disabled:opacity-50"
+                onClick={() => {
+                  cancelOp();
+                  resetAuth();
+                }}
+                disabled={busy}
+              >
+                clear it
               </button>
               .
             </div>
           )}
 
-          {step === "username" && (
-            <div className="space-y-4">
-              <div>
-                <label className="block text-sm font-semibold text-gray-800 dark:text-gray-200 mb-1">SRM email / username</label>
-                <input
-                  className="w-full rounded border border-gray-300 dark:border-neutral-600 bg-white dark:bg-neutral-900 text-gray-900 dark:text-gray-100 px-3 py-2"
-                  value={username}
-                  onChange={(e) => setUsername(e.target.value)}
-                  placeholder="e.g. ab1234@srmist.edu.in"
-                  autoComplete="username"
-                />
-              </div>
-              <button
-                type="button"
-                disabled={busy || !username.trim()}
-                onClick={() => void onVerifyUser()}
-                className="w-full rounded bg-blue-600 hover:bg-blue-700 disabled:opacity-50 text-white font-medium py-2"
-              >
-                {busy ? "Please wait…" : "Continue"}
-              </button>
-            </div>
-          )}
-
-          {step === "password" && (
-            <div className="space-y-4">
-              <p className="text-sm text-gray-600 dark:text-gray-400">
-                Signed in as <span className="font-mono text-gray-900 dark:text-gray-100">{username.trim()}</span>
-              </p>
-              <div>
-                <label className="block text-sm font-semibold text-gray-800 dark:text-gray-200 mb-1">Password</label>
-                <input
-                  type="password"
-                  className="w-full rounded border border-gray-300 dark:border-neutral-600 bg-white dark:bg-neutral-900 text-gray-900 dark:text-gray-100 px-3 py-2"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  autoComplete="current-password"
-                />
-              </div>
-              <button
-                type="button"
-                disabled={busy || !password}
-                onClick={() => void onVerifyPassword()}
-                className="w-full rounded bg-blue-600 hover:bg-blue-700 disabled:opacity-50 text-white font-medium py-2"
-              >
-                {busy ? "Please wait…" : "Sign in"}
-              </button>
-              <button
-                type="button"
-                disabled={busy || !password}
-                onClick={() => void onFullLogin()}
-                className="w-full rounded border border-gray-300 dark:border-neutral-600 text-gray-900 dark:text-gray-100 py-2 text-sm"
-              >
-                Sign in (terminate other sessions)
-              </button>
-              <button
-                type="button"
-                disabled={busy}
-                onClick={() => {
-                  setStep("username");
-                  setMessage(null);
-                  setPassword("");
-                }}
-                className="w-full text-sm text-gray-600 dark:text-gray-400 underline"
-              >
-                Use a different username
-              </button>
-            </div>
-          )}
-
-          {message && (
-            <p className="mt-4 text-sm text-red-700 dark:text-red-300 whitespace-pre-wrap" role="alert">
-              {message}
-            </p>
-          )}
+          <LoginForm
+            step={step}
+            username={username}
+            password={password}
+            busy={busy}
+            onUsername={setUsername}
+            onPassword={setPassword}
+            onContinue={() => void onVerifyUser()}
+            onSignIn={() => void onVerifyPassword()}
+            onFullLogin={() => void onFullLogin()}
+            onBack={() => {
+              cancelOp();
+              setStep("username");
+              setPassword("");
+              setIdentifier("");
+              setDigest("");
+              setNotice(null);
+            }}
+          />
+          {noticeEl}
         </div>
       )}
 
-      {dashboard && (
+      {!restoring && dashboard && (
         <div className="space-y-6">
           <div className="flex flex-wrap items-center justify-between gap-3">
-            <div className="flex flex-wrap gap-2">
+            <div role="tablist" aria-label="Student data sections" className="flex flex-wrap gap-2">
               {DASH_TABS.map((t) => (
                 <button
                   key={t.id}
+                  id={`student-tab-${t.id}`}
                   type="button"
+                  role="tab"
+                  aria-selected={dashTab === t.id}
+                  aria-controls={`student-panel-${t.id}`}
+                  tabIndex={dashTab === t.id ? 0 : -1}
                   onClick={() => setDashTab(t.id)}
-                  className={`rounded px-3 py-1.5 text-sm font-medium border ${
+                  onKeyDown={onTabKeyDown}
+                  className={`rounded px-3 py-1.5 text-sm font-medium border focus:outline-none focus:ring-2 focus:ring-blue-500 ${
                     dashTab === t.id
-                      ? "bg-blue-600 text-white border-blue-600"
-                      : "bg-white dark:bg-neutral-800 text-gray-800 dark:text-gray-200 border-gray-300 dark:border-neutral-600"
+                      ? "bg-blue-700 text-white border-blue-700"
+                      : "bg-white dark:bg-neutral-800 text-gray-900 dark:text-gray-100 border-gray-300 dark:border-neutral-600 hover:bg-gray-50 dark:hover:bg-neutral-700"
                   }`}
                 >
                   {t.label}
@@ -439,264 +470,34 @@ export default function StudentDataSection() {
               <button
                 type="button"
                 disabled={busy}
-                onClick={() => void loadDashboard(cookies)}
-                className="rounded border border-gray-300 dark:border-neutral-600 px-3 py-1.5 text-sm text-gray-900 dark:text-gray-100"
+                onClick={() => void onRefresh()}
+                className="rounded border border-gray-400 dark:border-neutral-500 px-3 py-1.5 text-sm text-gray-900 dark:text-gray-100 disabled:opacity-50 hover:bg-gray-50 dark:hover:bg-neutral-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
-                Refresh
+                {busy ? "Working…" : "Refresh"}
               </button>
               <button
                 type="button"
                 disabled={busy}
                 onClick={() => void onLogout()}
-                className="rounded bg-gray-900 text-white dark:bg-gray-100 dark:text-black px-3 py-1.5 text-sm"
+                className="rounded bg-gray-900 text-white dark:bg-gray-100 dark:text-black px-3 py-1.5 text-sm disabled:opacity-50 focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
                 Sign out
               </button>
             </div>
           </div>
 
-          {dashTab === "overview" && (
-            <div className="grid gap-6 md:grid-cols-2">
-              <div className="bg-white dark:bg-neutral-800 rounded-lg shadow p-5 border border-gray-200 dark:border-neutral-700">
-                <div className="flex items-center justify-between mb-3">
-                  <h2 className="text-lg font-bold text-gray-900 dark:text-gray-100">User info</h2>
-                  <StatusBadge status={dashboard.userInfo.status} error={dashboard.userInfo.error} />
-                </div>
-                {userInfo ? (
-                  <div>
-                    <Field label="Name" value={userInfo.name} />
-                    <Field label="Reg. no." value={userInfo.regNumber} />
-                    <Field label="Program" value={userInfo.program} />
-                    <Field label="Department" value={userInfo.department} />
-                    <Field label="Section" value={userInfo.section} />
-                    <Field label="Semester" value={userInfo.semester} />
-                    <Field label="Batch" value={userInfo.batch} />
-                    <Field label="Mobile" value={userInfo.mobile} />
-                  </div>
-                ) : (
-                  <p className="text-sm text-gray-600 dark:text-gray-400">{dashboard.userInfo.error || "No user info."}</p>
-                )}
-              </div>
-              <div className="bg-white dark:bg-neutral-800 rounded-lg shadow p-5 border border-gray-200 dark:border-neutral-700">
-                <div className="flex items-center justify-between mb-3">
-                  <h2 className="text-lg font-bold text-gray-900 dark:text-gray-100">Day order</h2>
-                  <StatusBadge status={dashboard.dayOrder.status} error={dashboard.dayOrder.error} />
-                </div>
-                <p className="text-3xl font-semibold text-blue-800 dark:text-blue-300">{dashboard.dayOrder.dayOrder ?? "—"}</p>
-                {dashboard.course?.batch && <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">Batch (courses): {dashboard.course.batch}</p>}
-              </div>
-            </div>
-          )}
+          {noticeEl}
 
-          {dashTab === "timetable" && (
-            <div className="bg-white dark:bg-neutral-800 rounded-lg shadow p-5 border border-gray-200 dark:border-neutral-700">
-              <div className="flex items-center justify-between mb-4">
-                <h2 className="text-lg font-bold text-gray-900 dark:text-gray-100">Timetable</h2>
-                <StatusBadge status={dashboard.timetable.status} error={dashboard.timetable.error} />
-              </div>
-              {!timetable?.length ? (
-                <p className="text-sm text-gray-600 dark:text-gray-400">No timetable data.</p>
-              ) : (
-                <div className="space-y-6">
-                  {timetable.map((day, i) => (
-                    <div key={i}>
-                      <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">
-                        Day order {day.dayOrder}
-                      </h3>
-                      <div className="space-y-3">
-                        {(day.class as { slot: string; time: string; isClass: boolean; courseTitle?: string; courseCode?: string; courseRoomNo?: string }[]).map(
-                          (slot, j) => (
-                            <div
-                              key={j}
-                              className="rounded border border-gray-200 dark:border-neutral-700 p-3 text-sm text-gray-800 dark:text-gray-200"
-                            >
-                              <div className="font-medium">
-                                {slot.slot} · {slot.time}
-                              </div>
-                              {slot.isClass ? (
-                                <div className="mt-1">
-                                  <div>{slot.courseTitle || slot.courseCode || "Class"}</div>
-                                  {slot.courseRoomNo && <div className="text-gray-600 dark:text-gray-400">Room {slot.courseRoomNo}</div>}
-                                </div>
-                              ) : (
-                                <div className="text-gray-500 dark:text-gray-400">No class</div>
-                              )}
-                            </div>
-                          )
-                        )}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
-          )}
+          <AttendanceAlert items={attendanceItems} onView={() => setDashTab("attendance")} />
 
-          {dashTab === "attendance" && (
-            <div className="bg-white dark:bg-neutral-800 rounded-lg shadow border border-gray-200 dark:border-neutral-700 overflow-x-auto">
-              <div className="p-5 flex items-center justify-between">
-                <h2 className="text-lg font-bold text-gray-900 dark:text-gray-100">Attendance</h2>
-                <StatusBadge status={dashboard.attendance.status} error={dashboard.attendance.error} />
-              </div>
-              <table className="min-w-full text-sm">
-                <thead className="bg-gray-50 dark:bg-neutral-900/80 text-left">
-                  <tr>
-                    <th className="px-3 py-2">Code</th>
-                    <th className="px-3 py-2">Title</th>
-                    <th className="px-3 py-2">Slot</th>
-                    <th className="px-3 py-2">Conducted</th>
-                    <th className="px-3 py-2">Absent</th>
-                    <th className="px-3 py-2">%</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {attendanceRows?.length ? (
-                    attendanceRows.map((r, idx) => (
-                      <tr key={idx} className="border-t border-gray-200 dark:border-neutral-700">
-                        <td className="px-3 py-2 font-mono">{r.courseCode}</td>
-                        <td className="px-3 py-2">{r.courseTitle}</td>
-                        <td className="px-3 py-2">{r.courseSlot}</td>
-                        <td className="px-3 py-2">{r.courseConducted}</td>
-                        <td className="px-3 py-2">{r.courseAbsent}</td>
-                        <td className="px-3 py-2">{r.courseAttendance}</td>
-                      </tr>
-                    ))
-                  ) : (
-                    <tr>
-                      <td className="px-3 py-4 text-gray-600 dark:text-gray-400" colSpan={6}>
-                        No attendance rows.
-                      </td>
-                    </tr>
-                  )}
-                </tbody>
-              </table>
-            </div>
-          )}
-
-          {dashTab === "marks" && (
-            <div className="space-y-4">
-              <div className="flex items-center justify-between">
-                <h2 className="text-lg font-bold text-gray-900 dark:text-gray-100">Marks</h2>
-                <StatusBadge status={dashboard.marks.status} error={dashboard.marks.error} />
-              </div>
-              {!markList?.length ? (
-                <p className="text-sm text-gray-600 dark:text-gray-400">No marks data.</p>
-              ) : (
-                markList.map((c, i) => (
-                  <div key={i} className="bg-white dark:bg-neutral-800 rounded-lg shadow border border-gray-200 dark:border-neutral-700 p-4">
-                    <div className="font-semibold text-gray-900 dark:text-gray-100">{c.course}</div>
-                    <div className="text-xs text-gray-500 dark:text-gray-400 mb-2">{c.category}</div>
-                    <table className="min-w-full text-sm">
-                      <thead>
-                        <tr className="text-left text-gray-600 dark:text-gray-400">
-                          <th className="py-1">Exam</th>
-                          <th className="py-1">Obtained</th>
-                          <th className="py-1">Max</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {c.marks.map((m, j) => (
-                          <tr key={j} className="border-t border-gray-200 dark:border-neutral-700">
-                            <td className="py-1">{m.exam}</td>
-                            <td className="py-1">{m.obtained}</td>
-                            <td className="py-1">{m.maxMark}</td>
-                          </tr>
-                        ))}
-                        <tr className="border-t border-gray-200 dark:border-neutral-700 font-medium">
-                          <td className="py-1">Total</td>
-                          <td className="py-1">{c.total.obtained}</td>
-                          <td className="py-1">{c.total.maxMark}</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                ))
-              )}
-            </div>
-          )}
-
-          {dashTab === "courses" && (
-            <div className="bg-white dark:bg-neutral-800 rounded-lg shadow border border-gray-200 dark:border-neutral-700 overflow-x-auto">
-              <div className="p-5 flex items-center justify-between">
-                <h2 className="text-lg font-bold text-gray-900 dark:text-gray-100">Courses</h2>
-                <StatusBadge status={dashboard.course.status} error={dashboard.course.error} />
-              </div>
-              <table className="min-w-full text-sm">
-                <thead className="bg-gray-50 dark:bg-neutral-900/80 text-left">
-                  <tr>
-                    <th className="px-3 py-2">Code</th>
-                    <th className="px-3 py-2">Title</th>
-                    <th className="px-3 py-2">Type</th>
-                    <th className="px-3 py-2">Faculty</th>
-                    <th className="px-3 py-2">Slots</th>
-                    <th className="px-3 py-2">Room</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {courseList?.length ? (
-                    courseList.map((c, idx) => (
-                      <tr key={idx} className="border-t border-gray-200 dark:border-neutral-700">
-                        <td className="px-3 py-2 font-mono">{c.courseCode}</td>
-                        <td className="px-3 py-2">{c.courseTitle}</td>
-                        <td className="px-3 py-2">{c.courseType}</td>
-                        <td className="px-3 py-2">{c.courseFaculty}</td>
-                        <td className="px-3 py-2">{(c.courseSlot || []).join(", ")}</td>
-                        <td className="px-3 py-2">{c.courseRoomNo}</td>
-                      </tr>
-                    ))
-                  ) : (
-                    <tr>
-                      <td className="px-3 py-4 text-gray-600 dark:text-gray-400" colSpan={6}>
-                        No course list.
-                      </td>
-                    </tr>
-                  )}
-                </tbody>
-              </table>
-            </div>
-          )}
-
-          {dashTab === "calendar" && (
-            <div className="bg-white dark:bg-neutral-800 rounded-lg shadow p-5 border border-gray-200 dark:border-neutral-700">
-              <div className="flex items-center justify-between mb-4">
-                <h2 className="text-lg font-bold text-gray-900 dark:text-gray-100">Academic calendar</h2>
-                <StatusBadge status={dashboard.calendar.status} error={dashboard.calendar.error} />
-              </div>
-              {!calendar?.length ? (
-                <p className="text-sm text-gray-600 dark:text-gray-400">No calendar data.</p>
-              ) : (
-                <div className="space-y-6">
-                  {calendar.map((m, i) => (
-                    <div key={i}>
-                      <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">{m.month}</h3>
-                      <div className="overflow-x-auto">
-                        <table className="min-w-full text-sm">
-                          <thead>
-                            <tr className="text-left text-gray-600 dark:text-gray-400">
-                              <th className="py-1 pr-3">Date</th>
-                              <th className="py-1 pr-3">Day</th>
-                              <th className="py-1 pr-3">DO</th>
-                              <th className="py-1">Event</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            {(m.days as { date: string; day: string; event: string; dayOrder: string }[]).map((d, j) => (
-                              <tr key={j} className="border-t border-gray-200 dark:border-neutral-700 align-top">
-                                <td className="py-1 pr-3 whitespace-nowrap">{d.date}</td>
-                                <td className="py-1 pr-3">{d.day}</td>
-                                <td className="py-1 pr-3">{d.dayOrder}</td>
-                                <td className="py-1">{d.event}</td>
-                              </tr>
-                            ))}
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
-          )}
+          <div role="tabpanel" id={`student-panel-${dashTab}`} aria-labelledby={`student-tab-${dashTab}`} tabIndex={0}>
+            {dashTab === "overview" && <OverviewPanel d={dashboard} />}
+            {dashTab === "timetable" && <TimetablePanel d={dashboard} />}
+            {dashTab === "attendance" && <AttendancePanel items={attendanceItems} section={dashboard.attendance} />}
+            {dashTab === "marks" && <MarksPanel d={dashboard} />}
+            {dashTab === "courses" && <CoursesPanel d={dashboard} />}
+            {dashTab === "calendar" && <CalendarPanel d={dashboard} />}
+          </div>
         </div>
       )}
     </div>
