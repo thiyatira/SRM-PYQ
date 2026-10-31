@@ -1,0 +1,71 @@
+{
+  "formal_filename": "CT-3_Set-NA_2024-25_Part-A.json",
+  "paper_title": "Computer Organization and Architecture (21CSS201T) - Cycle Test 3, Academic Year 2024-25 (ODD) - Part A (10 x 1 = 10 Marks), partial photo",
+  "source": "2024-25 ODD CT3 Part A (partial)",
+  "questions": [
+    {
+      "question_number": "1",
+      "question_text": "Which one of the following keep tracks of the execution of the program?\na) Program counter\nb) Memory address register\nc) Memory data register\nd) Register",
+      "marks": 1,
+      "answer": "a) Program counter — it holds the address of the next instruction to be executed, thereby tracking program execution.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Basic structure of computers"
+    },
+    {
+      "question_number": "2",
+      "question_text": "When an instruction depends on the result of previous instruction that hazard is termed as\na) Structural hazard\nb) Data hazard\nc) Control hazard\nd) Instructional hazard",
+      "marks": 1,
+      "answer": "b) Data hazard — an instruction needs an operand that a preceding instruction has not yet produced.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Control Unit"
+    },
+    {
+      "question_number": "3",
+      "question_text": "In pipelining concept, to increase the speed of the memory access, we use\na) Buffers\nb) Cache\nc) Registers\nd) Flipflops",
+      "marks": 1,
+      "answer": "b) Cache — a fast memory that supplies instructions/data in about one clock cycle so pipeline stages are not stalled.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Control Unit"
+    },
+    {
+      "question_number": "4",
+      "question_text": "The first machine cycle of an instruction is always a\na) memory write\nb) fetch\nc) IO read\nd) Memory read",
+      "marks": 1,
+      "answer": "b) fetch — every instruction begins with the opcode fetch cycle.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Control Unit"
+    },
+    {
+      "question_number": "5",
+      "question_text": "Time lost as a result of branch instruction is called\na) Branch prediction\nb) Branch penalty\nc) Static prediction\nd) Dynamic penalty",
+      "marks": 1,
+      "answer": "b) Branch penalty — the cycles wasted (stalls/flushed instructions) due to a branch.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Control Unit"
+    },
+    {
+      "question_number": "6",
+      "question_text": "Which of the following is NOT considered as software Parallelism\na) Memory parallelism\nb) Task-level parallelism\nc) Data parallelism\nd) Transaction level parallelism",
+      "marks": 1,
+      "answer": "a) Memory parallelism — it is a hardware-level form of parallelism (e.g. interleaved memory); task, data and transaction-level are software parallelism.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Parallelism"
+    },
+    {
+      "question_number": "7",
+      "question_text": "Pipelining architectures depicts the\na) SISD (Single instruction single data)\nb) SIMD (single instruction multiple data)\nc) MISD (multiple instruction single data)\nd) MIMD (multiple instruction multiple data)",
+      "marks": 1,
+      "answer": "c) MISD — in Flynn's classification pipelined processors are usually cited as MISD, since several stages each perform a different operation on the same data stream.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Parallelism"
+    },
+    {
+      "question_number": "8",
+      "question_text": "When the processor is executing in Jazelle state, ... [rest of the question and options cut off in the source image; only option a) 32 is visible]",
+      "marks": 1,
+      "answer": "In Jazelle state the ARM processor executes 8-bit Java bytecode instructions (ARM state = 32-bit, Thumb state = 16-bit instructions).",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Parallelism"
+    }
+  ]
+}
