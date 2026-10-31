@@ -1,4 +1,4 @@
-# SRM Toolkit — PYQs & Academia Portal 🎓
+# SRM StudyHub — PYQs & Academia Portal 🎓
 
 🔗 **Live Website**: [https://srm-pyq.vercel.app/](https://srm-pyq.vercel.app/)
 
@@ -37,7 +37,9 @@ A modern, fast, and comprehensive web application designed for SRM Institute of 
 ### 🎨 3. Modern User Experience
 - **Dark Mode**: Seamless toggle between light and dark themes with persistent user preference.
 - **Responsive Layout**: Optimized for mobile, tablet, and desktop screens.
-- **Analytics Ready**: Google Analytics (`gtag.js`) integrated with configurable measurement IDs.
+- **Accessible**: Skip-to-content link, keyboard focus rings, and `aria-current`/`aria-pressed` state on navigation and theme controls.
+- **Shareable Tabs**: The active tab is kept in the URL hash (`#pyq` / `#student`), so refresh and back/forward work.
+- **Optional Analytics**: Google Analytics (`gtag.js`) loads only when `NEXT_PUBLIC_GA_ID` is set.
 
 ---
 
@@ -69,18 +71,24 @@ SRM-PYQ/
 │   │   ├── 21CSS201T/
 │   │   └── ...
 │   └── scripts/              # Data extraction & scraper scripts
+├── scripts/
+│   └── validate-data.mjs     # Validates the JSON question banks (npm run validate:data)
 ├── src/
 │   ├── app/
-│   │   ├── layout.tsx        # Root layout with font setup & Google Analytics
-│   │   ├── page.tsx          # Main page tabs (PYQ & Student Data)
+│   │   ├── layout.tsx        # Root layout: fonts, metadata, theme init script, optional GA
+│   │   ├── page.tsx          # Main page: header, hash-based tabs (PYQ & Student Data), footer
+│   │   ├── error.tsx         # Error boundary
+│   │   ├── not-found.tsx     # 404 page
 │   │   └── globals.css       # Tailwind & styling rules
 │   ├── components/
 │   │   ├── PyqSection.tsx    # PYQ question browser and viewer
 │   │   └── StudentDataSection.tsx # Academia portal dashboard
 │   ├── hooks/
-│   │   └── useDarkMode.ts    # Dark/light theme state hook
+│   │   ├── useDarkMode.ts    # Dark/light theme hook (hydration-safe)
+│   │   └── useHashTab.ts     # Active tab persisted in the URL hash
 │   └── lib/                  # Utilities and helpers
 ├── .env.example              # Next.js frontend environment template
+├── LICENSE                   # MIT License
 ├── next.config.ts            # Next.js configuration
 ├── tailwind.config.js        # Tailwind styling configuration
 └── package.json              # Root dependencies and workspace scripts
@@ -119,8 +127,8 @@ cp .env.example .env.local
 # Backend API Base URL
 NEXT_PUBLIC_SRM_API_BASE=http://localhost:5000
 
-# Google Analytics (Optional)
-NEXT_PUBLIC_GA_ID=G-MDJ7KNDKMV
+# Google Analytics (Optional) - analytics is disabled when unset
+# NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
 ```
 
 **Backend (`backend/.env`)**:
@@ -129,7 +137,14 @@ Create a `.env` file in the `backend/` directory based on `backend/.env.example`
 cp backend/.env.example backend/.env
 ```
 ```env
+# Port the API listens on
 PORT=5000
+# Interface to bind. Defaults to 127.0.0.1 (local only); set to 0.0.0.0 only
+# if you deliberately want the API reachable from other machines.
+HOST=127.0.0.1
+# Allowed browser origin(s) for CORS (allowlist). Default: http://localhost:3000
+# Must include the origin the frontend is served from.
+CORS_ORIGIN=http://localhost:3000
 ```
 
 ---
@@ -169,12 +184,15 @@ In the root directory, you can run:
 - `npm run build`: Builds the production bundle for Next.js.
 - `npm run start`: Runs the built Next.js production server.
 - `npm run lint`: Runs ESLint checks.
+- `npm run typecheck`: Runs the TypeScript compiler without emitting files (`tsc --noEmit`).
+- `npm run validate:data`: Validates the JSON question banks under `public/data`.
 
 ---
 
 ## 🔒 Privacy & Security
 
 - SRM Academia credentials entered in the **Student data** tab are sent directly to the local backend proxy to communicate with the official Academia portal.
+- The backend binds to `127.0.0.1` by default (`HOST`), only accepts browser requests from origins in the `CORS_ORIGIN` allowlist, and rate-limits the login routes.
 - Credentials and session cookies are never stored on external databases or shared with third parties.
 
 ---

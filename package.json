@@ -1,5 +1,5 @@
 {
-  "name": "srm-pyq-next",
+  "name": "srm-studyhub",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,7 +8,9 @@
     "dev:all": "concurrently -n web,api -c cyan,magenta \"npm run dev\" \"npm run dev --prefix backend\"",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "validate:data": "node scripts/validate-data.mjs"
   },
   "dependencies": {
     "katex": "^0.16.45",
