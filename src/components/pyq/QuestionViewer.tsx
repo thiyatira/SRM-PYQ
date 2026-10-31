@@ -206,7 +206,7 @@ function Viewer({
   }
 
   const btn =
-    "rounded px-4 py-2 font-medium border transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100 dark:focus-visible:ring-offset-neutral-900";
+    "rounded px-3 py-1.5 text-sm font-medium border transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100 dark:focus-visible:ring-offset-neutral-900";
 
   return (
     <div onClick={onContentClick}>
@@ -239,54 +239,9 @@ function Viewer({
       )}
 
       {/* ── Filter controls ─────────────────────────────────────────── */}
-      <div className="flex flex-wrap gap-x-4 gap-y-3 items-center justify-center mb-6">
-        <MultiSelect label="Q Paper" options={data.papers} selected={filterPapers} onChange={setFilterPapers} minWidth={220} />
-        <MultiSelect label="Unit" options={data.units} selected={filterUnits} onChange={setFilterUnits} minWidth={160} />
-        <button
-          type="button"
-          aria-pressed={showAllAnswers}
-          className={`${btn} ${
-            showAllAnswers
-              ? "bg-gray-900 text-white border-gray-900 dark:bg-gray-100 dark:text-black dark:border-gray-100"
-              : "bg-gray-200 text-gray-900 border-gray-300 dark:bg-gray-800 dark:text-white dark:border-gray-600"
-          }`}
-          onClick={() => setShowAllAnswers((v) => !v)}
-        >
-          {showAllAnswers ? "Hide All Answers" : "Show All Answers"}
-        </button>
-        <button
-          type="button"
-          aria-pressed={starredOnly}
-          className={`${btn} inline-flex items-center gap-1.5 ${
-            starredOnly
-              ? "bg-amber-500 text-black border-amber-600"
-              : "bg-white text-gray-900 border-gray-300 dark:bg-neutral-800 dark:text-white dark:border-neutral-600"
-          }`}
-          onClick={() => setStarredOnly((v) => !v)}
-        >
-          <svg aria-hidden="true" className="w-4 h-4" fill={starredOnly ? "currentColor" : "none"} stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-          </svg>
-          Starred ({starredCount})
-        </button>
-        <button
-          type="button"
-          className={`${btn} border-blue-500 bg-blue-50 text-blue-900 dark:bg-blue-900/40 dark:text-blue-100 dark:border-blue-500 hover:bg-blue-100 dark:hover:bg-blue-800/50`}
-          onClick={handlePrint}
-          disabled={ordered.length === 0}
-        >
-          <span aria-hidden="true">🖨️ </span>Print / Save PDF
-        </button>
-      </div>
-      {notice && (
-        <p role="alert" className="text-center text-sm text-red-700 dark:text-red-300 mb-4">
-          {notice}
-        </p>
-      )}
-
-      <div className="grid gap-5 sm:grid-cols-2 max-w-3xl mx-auto mb-6">
-        <div>
-          <label htmlFor={searchId} className="block font-semibold text-gray-800 dark:text-gray-200 mb-1">
+      <div className="max-w-4xl mx-auto mb-5 rounded-lg border border-gray-200 dark:border-neutral-700 bg-white/70 dark:bg-neutral-800/50 p-3 text-sm">
+        <div className="flex flex-wrap items-center gap-2">
+          <label htmlFor={searchId} className="sr-only">
             Search questions
           </label>
           <input
@@ -294,17 +249,16 @@ function Viewer({
             type="search"
             value={queryInput}
             onChange={(e) => setQueryInput(e.target.value)}
-            placeholder="Keyword in question or answer…"
-            className="w-full rounded border border-gray-300 dark:border-neutral-600 bg-white dark:bg-neutral-800 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Search questions or answers…"
+            className="flex-1 min-w-[12rem] rounded border border-gray-300 dark:border-neutral-600 bg-white dark:bg-neutral-800 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 px-3 py-1.5 focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
-        </div>
-        {sliderMax > 0 && (
-          <div>
-            <label htmlFor={marksId} className="block font-semibold text-gray-800 dark:text-gray-200 mb-1">
-              Minimum Marks: {minMarks}
-            </label>
-            <div className="flex items-center gap-3 h-[38px]">
-              <span className="text-sm text-gray-600 dark:text-gray-400" aria-hidden="true">0</span>
+          <MultiSelect label="Paper" options={data.papers} selected={filterPapers} onChange={setFilterPapers} minWidth={220} />
+          <MultiSelect label="Unit" options={data.units} selected={filterUnits} onChange={setFilterUnits} minWidth={160} />
+          {sliderMax > 0 && (
+            <div className="flex items-center gap-2">
+              <label htmlFor={marksId} className="font-semibold text-gray-800 dark:text-gray-200 whitespace-nowrap">
+                Marks ≥ {minMarks}
+              </label>
               <input
                 id={marksId}
                 type="range"
@@ -313,33 +267,73 @@ function Viewer({
                 step={1}
                 value={Math.min(minMarks, sliderMax)}
                 onChange={(e) => setMinMarks(parseInt(e.target.value, 10))}
-                className="flex-1 h-2 accent-blue-600 cursor-pointer"
+                className="w-24 h-2 accent-blue-600 cursor-pointer"
               />
-              <span className="text-sm text-gray-600 dark:text-gray-400" aria-hidden="true">{sliderMax}</span>
             </div>
-            {minMarks > 0 && unknownMarks > 0 && (
-              <p className="text-xs text-gray-600 dark:text-gray-400 mt-1">
-                {unknownMarks} question{unknownMarks === 1 ? "" : "s"} with no marks listed {unknownMarks === 1 ? "is" : "are"} hidden.
-              </p>
-            )}
-          </div>
-        )}
-      </div>
-
-      <div className="flex flex-wrap items-center justify-center gap-3 mb-6 text-sm text-gray-700 dark:text-gray-300">
-        <span role="status" aria-live="polite">
-          {ordered.length === data.questions.length
-            ? `${ordered.length} questions`
-            : `${ordered.length} of ${data.questions.length} questions`}
-        </span>
-        {filtersActive && (
+          )}
+        </div>
+        <div className="mt-2 flex flex-wrap items-center gap-2">
           <button
             type="button"
-            onClick={resetFilters}
-            className="underline text-blue-700 dark:text-blue-300 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+            aria-pressed={showAllAnswers}
+            className={`${btn} ${
+              showAllAnswers
+                ? "bg-gray-900 text-white border-gray-900 dark:bg-gray-100 dark:text-black dark:border-gray-100"
+                : "bg-gray-200 text-gray-900 border-gray-300 dark:bg-gray-800 dark:text-white dark:border-gray-600"
+            }`}
+            onClick={() => setShowAllAnswers((v) => !v)}
           >
-            Reset filters
+            {showAllAnswers ? "Hide answers" : "Show answers"}
           </button>
+          <button
+            type="button"
+            aria-pressed={starredOnly}
+            className={`${btn} inline-flex items-center gap-1.5 ${
+              starredOnly
+                ? "bg-amber-500 text-black border-amber-600"
+                : "bg-white text-gray-900 border-gray-300 dark:bg-neutral-800 dark:text-white dark:border-neutral-600"
+            }`}
+            onClick={() => setStarredOnly((v) => !v)}
+          >
+            <svg aria-hidden="true" className="w-4 h-4" fill={starredOnly ? "currentColor" : "none"} stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+            </svg>
+            Starred ({starredCount})
+          </button>
+          <button
+            type="button"
+            className={`${btn} border-blue-500 bg-blue-50 text-blue-900 dark:bg-blue-900/40 dark:text-blue-100 dark:border-blue-500 hover:bg-blue-100 dark:hover:bg-blue-800/50`}
+            onClick={handlePrint}
+            disabled={ordered.length === 0}
+          >
+            <span aria-hidden="true">🖨️ </span>Print / PDF
+          </button>
+          <span className="ml-auto flex items-center gap-3 text-gray-700 dark:text-gray-300">
+            <span role="status" aria-live="polite">
+              {ordered.length === data.questions.length
+                ? `${ordered.length} questions`
+                : `${ordered.length} of ${data.questions.length} questions`}
+            </span>
+            {filtersActive && (
+              <button
+                type="button"
+                onClick={resetFilters}
+                className="underline text-blue-700 dark:text-blue-300 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+              >
+                Reset
+              </button>
+            )}
+          </span>
+        </div>
+        {minMarks > 0 && unknownMarks > 0 && (
+          <p className="text-xs text-gray-600 dark:text-gray-400 mt-2">
+            {unknownMarks} question{unknownMarks === 1 ? "" : "s"} with no marks listed {unknownMarks === 1 ? "is" : "are"} hidden.
+          </p>
+        )}
+        {notice && (
+          <p role="alert" className="text-sm text-red-700 dark:text-red-300 mt-2">
+            {notice}
+          </p>
         )}
       </div>
 

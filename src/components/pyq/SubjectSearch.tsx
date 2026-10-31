@@ -82,7 +82,7 @@ export function SubjectSearch({ onSelect }: { onSelect: (code: string) => void }
   }
 
   return (
-    <div className="max-w-xl mx-auto mb-8" ref={rootRef} role="search">
+    <div className="max-w-xl mx-auto mb-4" ref={rootRef} role="search">
       <div className="relative">
         <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
           <svg aria-hidden="true" className="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">

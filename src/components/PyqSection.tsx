@@ -121,16 +121,22 @@ const PyqSection: React.FC = () => {
         : null;
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-8" ref={rootRef}>
-      <h1 className="text-3xl sm:text-4xl font-bold text-center mb-2 text-gray-900 dark:text-gray-100">SRM PYQs</h1>
-      <p className="text-center text-sm text-gray-600 dark:text-gray-400 mb-6">
-        B.Tech CSE — Previous Year Questions
-      </p>
+    <div className={`max-w-6xl mx-auto px-4 ${nav.view === "questions" ? "py-4" : "py-8"}`} ref={rootRef}>
+      {nav.view === "questions" ? (
+        <h1 className="sr-only">SRM PYQs — B.Tech CSE Previous Year Questions</h1>
+      ) : (
+        <>
+          <h1 className="text-3xl sm:text-4xl font-bold text-center mb-2 text-gray-900 dark:text-gray-100">SRM PYQs</h1>
+          <p className="text-center text-sm text-gray-600 dark:text-gray-400 mb-6">
+            B.Tech CSE — Previous Year Questions
+          </p>
+        </>
+      )}
 
       <SubjectSearch onSelect={(code) => go({ view: "questions", subjectCode: code })} />
 
       {/* ── Breadcrumb ─────────────────────────────────────────────── */}
-      <nav aria-label="Breadcrumb" className="max-w-2xl mx-auto mb-6 px-1">
+      <nav aria-label="Breadcrumb" className={`max-w-2xl mx-auto px-1 ${nav.view === "questions" ? "mb-3" : "mb-6"}`}>
         <ol className="flex items-center gap-2 text-sm flex-wrap">
           <li>
             <button
@@ -184,7 +190,7 @@ const PyqSection: React.FC = () => {
 
         {nav.view === "questions" && activeSubject && (
           <>
-            <h2 className="text-center text-lg font-normal mb-8 text-gray-700 dark:text-gray-300">
+            <h2 className="sr-only">
               {activeSubject.title}
             </h2>
             <QuestionViewer key={activeSubject.code} subject={activeSubject} focusId={focusId} />
