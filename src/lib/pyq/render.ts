@@ -278,6 +278,19 @@ const PH_RE = /[\uE000\uE002](\d+)\uE001/g;
 const PH_ONLY_RE = /^\uE002\d+\uE001$/;
 
 const LIST_ITEM_RE = /^\s*[-•]\s+(.*)$/;
+const TABLE_ROW_RE = /^\s*\|.*\|\s*$/;
+const TABLE_SEP_RE = /^\s*\|?\s*:?-{3,}:?\s*(?:\|\s*:?-{3,}:?\s*)*\|?\s*$/;
+
+/** Splits a markdown table row into trimmed cells (outer pipes dropped). */
+function tableCells(row: string): string[] {
+  return row
+    .trim()
+    .replace(/^\|/, "")
+    .replace(/\|$/, "")
+    .split("|")
+    .map((c) => c.trim());
+}
+
 const INLINE_CODE_CLASS =
   "px-1.5 py-0.5 rounded bg-gray-100 dark:bg-neutral-700/80 text-pink-700 dark:text-pink-300 font-mono text-xs sm:text-sm font-medium border border-gray-200/60 dark:border-neutral-600/60";
 
@@ -321,7 +334,27 @@ function convert(rawMd: string): string {
   const lines = escapeHtml(text).split("\n");
   const pieces: { html: string; block: boolean }[] = [];
   for (let i = 0; i < lines.length; ) {
-    if (LIST_ITEM_RE.test(lines[i])) {
+    if (TABLE_ROW_RE.test(lines[i]) && i + 1 < lines.length && TABLE_SEP_RE.test(lines[i + 1]) && lines[i + 1].includes("-")) {
+      const head = tableCells(lines[i]);
+      const align = tableCells(lines[i + 1]).map((c) =>
+        c.startsWith(":") && c.endsWith(":") ? "center" : c.endsWith(":") ? "right" : "left"
+      );
+      i += 2;
+      const body: string[][] = [];
+      while (i < lines.length && TABLE_ROW_RE.test(lines[i])) body.push(tableCells(lines[i++]));
+      const cell = (tag: "th" | "td", txt: string, c: number) =>
+        `<${tag} class="border border-gray-300 dark:border-neutral-600 px-3 py-1.5 align-top ${
+          tag === "th" ? "bg-gray-100 dark:bg-neutral-700/60 font-semibold" : ""
+        }" style="text-align:${align[c] ?? "left"}">${inlineFormat(txt)}</${tag}>`;
+      const thead = `<thead><tr>${head.map((h, c) => cell("th", h, c)).join("")}</tr></thead>`;
+      const tbody = `<tbody>${body
+        .map((r) => `<tr>${head.map((_, c) => cell("td", r[c] ?? "", c)).join("")}</tr>`)
+        .join("")}</tbody>`;
+      pieces.push({
+        html: `<div class="my-2 overflow-x-auto"><table class="border-collapse text-sm">${thead}${tbody}</table></div>`,
+        block: true,
+      });
+    } else if (LIST_ITEM_RE.test(lines[i])) {
       const items: string[] = [];
       while (i < lines.length && LIST_ITEM_RE.test(lines[i])) {
         items.push(`<li>${inlineFormat(lines[i].replace(LIST_ITEM_RE, "$1"))}</li>`);
