@@ -1,4 +1,3 @@
-
 {
   "paper_title": "18CSS101J-1 to 2 Sem - PYQ",
   "source": "2022-05 ET",
@@ -85,201 +84,376 @@
     },
     {
       "question_number": "1",
-      "question_text": "Which of the following is an invalid expression in C language?\n(A) result = a+++b;\n(B) result =+++a*5;\n(C) result = %a;\n(D) result =-2.4;",
+      "question_text": "Which of the following is an invalid expression in C language?",
+      "options": [
+        "result = a+++b;",
+        "result =+++a*5;",
+        "result = %a;",
+        "result =-2.4;"
+      ],
+      "correct_option": "C",
       "marks": 1,
-      "answer": "The correct option is (C).\n\n**Explanation:**\n*   **(A) `result = a+++b;`**: This is valid. It's interpreted as `result = (a++) + b;`. The post-increment operator `a++` increments `a` after its value is used in the expression.\n*   **(B) `result =+++a*5;`**: This is valid. It's interpreted as `result = (++a) * 5;`. The pre-increment operator `++a` increments `a` before its value is used in the expression.\n*   **(C) `result = %a;`**: This is invalid. The `%` (modulo) operator is a binary operator and requires two operands (e.g., `b % a`). It cannot be used as a unary operator to find the remainder of a single number, nor does it serve any other unary purpose like a percentage operator in C.\n*   **(D) `result =-2.4;`**: This is valid. It's interpreted as `result = -2.4;`. The unary minus operator `-` is applied to the literal `2.4`.",
+      "answer": "`result = %a;` is invalid: `%` (modulo) is a binary operator and needs two operands (for example `b % a`); it cannot be used as a unary operator.\n- `result = a+++b;` is valid and is parsed as `result = (a++) + b;`.\n- `result =+++a*5;` is intended as an increment of `a` multiplied by 5. (Strictly, `+++a` is tokenized as `++ +a`, which is not a valid C lvalue operation, but option C is the clearly invalid expression the question is after.)\n- `result =-2.4;` is valid: unary minus applied to the literal 2.4.",
       "answer_source": "generated",
       "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
     },
     {
       "question_number": "2",
-      "question_text": "What symbol does the C preprocessor start with?\n(A) #\n(B) $\n(C) \" \"\n(D) &",
+      "question_text": "What symbol does the C preprocessor start with?",
+      "options": [
+        "#",
+        "$",
+        "\" \"",
+        "&"
+      ],
+      "correct_option": "A",
       "marks": 1,
-      "answer": "The correct option is (A).\n\n**Explanation:**\nIn C, preprocessor directives (like `#include`, `#define`, `#ifdef`) always begin with the hash symbol (`#`).",
+      "answer": "In C, preprocessor directives (like `#include`, `#define`, `#ifdef`) always begin with the hash symbol (`#`).",
       "answer_source": "generated",
       "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
     },
     {
       "question_number": "3",
-      "question_text": "The format specifier that is used to read or write an integer is\n(A) %i\n(B) %d\n(C) %i or %d\n(D) %s",
+      "question_text": "The format specifier that is used to read or write an integer is",
+      "options": [
+        "%i",
+        "%d",
+        "%i or %d",
+        "%s"
+      ],
+      "correct_option": "C",
       "marks": 1,
-      "answer": "The correct option is (C).\n\n**Explanation:**\nBoth `%i` and `%d` are valid format specifiers for reading and writing integer values in C's `printf()` and `scanf()` functions. While `%d` is more commonly used, `%i` also works for decimal integers. `%s` is used for strings.",
+      "answer": "Both `%i` and `%d` are valid format specifiers for reading and writing integer values in C's `printf()` and `scanf()` functions. While `%d` is more commonly used, `%i` also works for decimal integers. `%s` is used for strings.",
       "answer_source": "generated",
       "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
     },
     {
       "question_number": "4",
-      "question_text": "is not a storage class.\n(A) static\n(B) auto\n(C) struct\n(D) extern",
+      "question_text": "is not a storage class.",
+      "options": [
+        "static",
+        "auto",
+        "struct",
+        "extern"
+      ],
+      "correct_option": "C",
       "marks": 1,
-      "answer": "The correct option is (C).\n\n**Explanation:**\n*   **(A) `static`**: Is a storage class specifier.\n*   **(B) `auto`**: Is a storage class specifier (default for local variables).\n*   **(C) `struct`**: Is a keyword used to define a user-defined data type (structure), not a storage class.\n*   **(D) `extern`**: Is a storage class specifier.",
+      "answer": "*   **(A) `static`**: Is a storage class specifier.\n*   **(B) `auto`**: Is a storage class specifier (default for local variables).\n*   **(C) `struct`**: Is a keyword used to define a user-defined data type (structure), not a storage class.\n*   **(D) `extern`**: Is a storage class specifier.",
       "answer_source": "generated",
       "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
     },
     {
       "question_number": "5",
-      "question_text": "What is the output of this statement printf(\"%d\", (a++));\n(A) Error messages\n(B) Garbage value\n(C) The current value of a\n(D) The value of (a+1)",
+      "question_text": "What is the output of this statement printf(\"%d\", (a++));",
+      "options": [
+        "Error messages",
+        "Garbage value",
+        "The current value of a",
+        "The value of (a+1)"
+      ],
+      "correct_option": "C",
       "marks": 1,
-      "answer": "The correct option is (C).\n\n**Explanation:**\nThe post-increment operator `a++` means that the *current value* of `a` is used in the expression, and *then* `a` is incremented. So, `printf` will print the value `a` had *before* the increment.",
+      "answer": "The post-increment operator `a++` means that the *current value* of `a` is used in the expression, and *then* `a` is incremented. So, `printf` will print the value `a` had *before* the increment.",
       "answer_source": "generated",
       "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
     },
     {
       "question_number": "6",
-      "question_text": "What is the result of logical or relational expression in C?\n(A) True or False\n(B) 0 or 1\n(C) False if 0\n(D) 0 if an expression is false and\nany positive number if an\nexpression is true",
+      "question_text": "What is the result of logical or relational expression in C?",
+      "options": [
+        "True or False",
+        "0 or 1",
+        "False if 0",
+        "0 if an expression is false and\nany positive number if an\nexpression is true"
+      ],
+      "correct_option": "B",
       "marks": 1,
-      "answer": "The correct option is (D).\n\n**Explanation:**\nIn C, there is no distinct boolean type `True` or `False` (before C99 `_Bool` and `stdbool.h`). Instead, `0` is treated as false, and any non-zero value is treated as true. Relational and logical expressions evaluate to `0` for false and `1` for true.",
+      "answer": "In C, relational and logical expressions evaluate to exactly `0` (false) or `1` (true); C has no distinct boolean result type for them (before `_Bool` in C99, int is used). Any non-zero value is treated as true when tested, but the result produced by the operators themselves is always 0 or 1.",
       "answer_source": "generated",
       "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
     },
     {
       "question_number": "7",
-      "question_text": "What is the output of the following C program?\nint main ()\n{\nint a [ ]={1,2,3,4};\nprintf (\"%d\", a[0]); return 0;\n}\n(A) 1\n(B) 2\n(C) 4\n(D) Compilation error",
+      "question_text": "What is the output of the following C program?\nint main ()\n{\nint a [ ]={1,2,3,4};\nprintf (\"%d\", a[0]); return 0;\n}",
+      "options": [
+        "1",
+        "2",
+        "4",
+        "Compilation error"
+      ],
+      "correct_option": "A",
       "marks": 1,
-      "answer": "The correct option is (A).\n\n**Explanation:**\nThe array `a` is initialized with elements `{1, 2, 3, 4}`. Array indices in C start from `0`. Therefore, `a[0]` refers to the first element of the array, which is `1`.",
+      "answer": "The array `a` is initialized with elements `{1, 2, 3, 4}`. Array indices in C start from `0`. Therefore, `a[0]` refers to the first element of the array, which is `1`.",
       "answer_source": "generated",
       "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
     },
     {
       "question_number": "8",
-      "question_text": "Which is these best describes an array?\n(A) A data structure that shows a hierarchical behavior\n(B) Container of objects of similar objects\n(C) Arrays are immutable once initialized\n(D) Array is not a data structure",
+      "question_text": "Which is these best describes an array?",
+      "options": [
+        "A data structure that shows a hierarchical behavior",
+        "Container of objects of similar objects",
+        "Arrays are immutable once initialized",
+        "Array is not a data structure"
+      ],
+      "correct_option": "B",
       "marks": 1,
-      "answer": "The correct option is (B).\n\n**Explanation:**\n*   **(A) A data structure that shows a hierarchical behavior**: This describes data structures like trees or graphs, not arrays.\n*   **(B) Container of objects of similar objects**: An array is a collection of elements of the *same* data type, stored in contiguous memory locations. So it's a container for similar objects.\n*   **(C) Arrays are immutable once initialized**: This is false. Array elements can be modified after initialization.\n*   **(D) Array is not a data structure**: This is false. An array is a fundamental data structure.",
+      "answer": "*   **(A) A data structure that shows a hierarchical behavior**: This describes data structures like trees or graphs, not arrays.\n*   **(B) Container of objects of similar objects**: An array is a collection of elements of the *same* data type, stored in contiguous memory locations. So it's a container for similar objects.\n*   **(C) Arrays are immutable once initialized**: This is false. Array elements can be modified after initialization.\n*   **(D) Array is not a data structure**: This is false. An array is a fundamental data structure.",
       "answer_source": "generated",
       "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
     },
     {
       "question_number": "9",
-      "question_text": "Which of the following operators takes only integer operands?\n(A) +\n(B) *\n(C) /\n(D) %",
+      "question_text": "Which of the following operators takes only integer operands?",
+      "options": [
+        "+",
+        "*",
+        "/",
+        "%"
+      ],
+      "correct_option": "D",
       "marks": 1,
-      "answer": "The correct option is (D).\n\n**Explanation:**\n*   `(A) +`, `(B) *`, `(C) /`: These arithmetic operators can operate on both integer and floating-point operands.\n*   `(D) %`: The modulo operator (`%`) computes the remainder of a division and requires both its operands to be of integer type.",
+      "answer": "*   `(A) +`, `(B) *`, `(C) /`: These arithmetic operators can operate on both integer and floating-point operands.\n*   `(D) %`: The modulo operator (`%`) computes the remainder of a division and requires both its operands to be of integer type.",
       "answer_source": "generated",
       "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
     },
     {
       "question_number": "10",
-      "question_text": "How many times will the following loop in C program execute?\nfor (j = 1; j <= 10; j = j −1)\n(A) Forever\n(B) Never\n(C) 10 times\n(D) 1",
+      "question_text": "How many times will the following loop in C program execute?\nfor (j = 1; j <= 10; j = j −1)",
+      "options": [
+        "Forever",
+        "Never",
+        "10 times",
+        "1"
+      ],
+      "correct_option": "A",
       "marks": 1,
-      "answer": "The correct option is (A).\n\n**Explanation:**\n*   **Initialization**: `j = 1`\n*   **Condition**: `j <= 10`\n*   **Update**: `j = j - 1` (decrements `j`)\n\nThe loop starts with `j = 1`. In each iteration, `j` is decremented. Since `j` starts at `1` and keeps decreasing (`0`, `-1`, `-2`, ...), the condition `j <= 10` will always remain true. For example, if `j` is `1`, `1 <= 10` is true. If `j` becomes `0`, `0 <= 10` is true. If `j` becomes `-5`, `-5 <= 10` is true. Thus, the loop will never terminate and will execute forever.",
+      "answer": "*   **Initialization**: `j = 1`\n*   **Condition**: `j <= 10`\n*   **Update**: `j = j - 1` (decrements `j`)\n\nThe loop starts with `j = 1`. In each iteration, `j` is decremented. Since `j` starts at `1` and keeps decreasing (`0`, `-1`, `-2`, ...), the condition `j <= 10` will always remain true. For example, if `j` is `1`, `1 <= 10` is true. If `j` becomes `0`, `0 <= 10` is true. If `j` becomes `-5`, `-5 <= 10` is true. Thus, the loop will never terminate and will execute forever.",
       "answer_source": "generated",
       "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
     },
     {
       "question_number": "11",
-      "question_text": "Which loop in C program is faster, for while or do...while?\n(A) for\n(B) while\n(C) do...while\n(D) All work at same speed",
+      "question_text": "Which loop in C program is faster, for while or do...while?",
+      "options": [
+        "for",
+        "while",
+        "do...while",
+        "All work at same speed"
+      ],
+      "correct_option": "D",
       "marks": 1,
-      "answer": "The correct option is (D).\n\n**Explanation:**\nFrom a performance perspective, `for`, `while`, and `do...while` loops generally execute at the same speed. The choice between them is typically based on the logical structure of the problem, readability, and convenience, not on inherent speed differences. A good compiler will optimize them to very similar machine code. Any minor differences would be negligible and highly dependent on the specific compiler, optimization settings, and target architecture.",
+      "answer": "From a performance perspective, `for`, `while`, and `do...while` loops generally execute at the same speed. The choice between them is typically based on the logical structure of the problem, readability, and convenience, not on inherent speed differences. A good compiler will optimize them to very similar machine code. Any minor differences would be negligible and highly dependent on the specific compiler, optimization settings, and target architecture.",
       "answer_source": "generated",
       "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
     },
     {
       "question_number": "12",
-      "question_text": "Choose a correct statement about C string.\nchar ary [ ] = \"Hello...!\";\n(A) Character array, ary is a string\n(B) Ary has no null character at the end\n(C) String size is not mentioned\n(D) String cannot contain special characters",
+      "question_text": "Choose a correct statement about C string.\nchar ary [ ] = \"Hello...!\";",
+      "options": [
+        "Character array, ary is a string",
+        "Ary has no null character at the end",
+        "String size is not mentioned",
+        "String cannot contain special characters"
+      ],
+      "correct_option": "A",
       "marks": 1,
-      "answer": "The correct option is (A).\n\n**Explanation:**\n*   **(A) Character array, ary is a string**: In C, strings are fundamentally character arrays terminated by a null character (`\\0`). `char ary[] = \"Hello...!\";` correctly declares `ary` as a character array and initializes it with a string literal, including the implicit null terminator.\n*   **(B) Ary has no null character at the end**: This is false. When a string literal is used for initialization, the compiler automatically appends a null character (`\\0`) at the end.\n*   **(C) String size is not mentioned**: This is false. When initializing a character array with a string literal without specifying a size, the compiler automatically determines the size based on the length of the string literal plus one for the null terminator.\n*   **(D) String cannot contain special characters**: This is false. C strings can contain various special characters, including punctuation, spaces, and escape sequences.",
+      "answer": "*   **(A) Character array, ary is a string**: In C, strings are fundamentally character arrays terminated by a null character (`\\0`). `char ary[] = \"Hello...!\";` correctly declares `ary` as a character array and initializes it with a string literal, including the implicit null terminator.\n*   **(B) Ary has no null character at the end**: This is false. When a string literal is used for initialization, the compiler automatically appends a null character (`\\0`) at the end.\n*   **(C) String size is not mentioned**: This is false. When initializing a character array with a string literal without specifying a size, the compiler automatically determines the size based on the length of the string literal plus one for the null terminator.\n*   **(D) String cannot contain special characters**: This is false. C strings can contain various special characters, including punctuation, spaces, and escape sequences.",
       "answer_source": "generated",
       "chapter": "Unit 3: String Basics - String Declaration and Initialization"
     },
     {
       "question_number": "13",
-      "question_text": "What is the output of C program with arrays?\nint main ()\n{\nchar str = {\"P\", \"E\", \"T\", \"\\0\"};\nprintf (\"%s\", str); return 0;\n}\n(A) P\n(B) PET\n(C) PET\\0\n(D) Complier error",
+      "question_text": "What is the output of C program with arrays?\nint main ()\n{\nchar str = {\"P\", \"E\", \"T\", \"\\0\"};\nprintf (\"%s\", str); return 0;\n}",
+      "options": [
+        "P",
+        "PET",
+        "PET\\0",
+        "Complier error"
+      ],
+      "correct_option": "B",
       "marks": 1,
-      "answer": "The correct option is (B).\n\n**Explanation:**\nThe declaration `char str[] = {'P', 'E', 'T', '\\0'};` creates a character array initialized with the characters 'P', 'E', 'T', and a null terminator `\\0`. In C, a string is a sequence of characters terminated by a null character. When `printf(\"%s\", str);` is called, it prints characters from the `str` array until it encounters the null terminator `\\0`. Thus, it will print \"PET\".",
+      "answer": "The declaration `char str[] = {'P', 'E', 'T', '\\0'};` creates a character array initialized with the characters 'P', 'E', 'T', and a null terminator `\\0`. In C, a string is a sequence of characters terminated by a null character. When `printf(\"%s\", str);` is called, it prints characters from the `str` array until it encounters the null terminator `\\0`. Thus, it will print \"PET\".",
       "answer_source": "generated",
       "chapter": "Unit 3: String Basics - String Declaration and Initialization"
     },
     {
       "question_number": "14",
-      "question_text": "Which function will you choose to join two words in C program?\n(A) strcpy ()\n(B) strcat ()\n(C) strjoin ()\n(D) strncat ()",
+      "question_text": "Which function will you choose to join two words in C program?",
+      "options": [
+        "strcpy ()",
+        "strcat ()",
+        "strjoin ()",
+        "strncat ()"
+      ],
+      "correct_option": "B",
       "marks": 1,
-      "answer": "The correct option is (B).\n\n**Explanation:**\n*   **(A) `strcpy()`**: Copies one string to another.\n*   **(B) `strcat()`**: Concatenates (joins) two strings. It appends the source string to the destination string.\n*   **(C) `strjoin()`**: This is not a standard C library function.\n*   **(D) `strncat()`**: Concatenates a specified number of characters from one string to another.",
+      "answer": "*   **(A) `strcpy()`**: Copies one string to another.\n*   **(B) `strcat()`**: Concatenates (joins) two strings. It appends the source string to the destination string.\n*   **(C) `strjoin()`**: This is not a standard C library function.\n*   **(D) `strncat()`**: Concatenates a specified number of characters from one string to another.",
       "answer_source": "generated",
       "chapter": "Unit 3: String Basics - String Declaration and Initialization"
     },
     {
       "question_number": "15",
-      "question_text": "What will strcmp() function do?\n(A) Compares the first 'n' characters of the object\n(B) Undefined function\n(C) Copies the string\n(D) Compares the string",
+      "question_text": "What will strcmp() function do?",
+      "options": [
+        "Compares the first 'n' characters of the object",
+        "Undefined function",
+        "Copies the string",
+        "Compares the string"
+      ],
+      "correct_option": "D",
       "marks": 1,
-      "answer": "The correct option is (D).\n\n**Explanation:**\n*   **(D) Compares the string**: The `strcmp()` function (string compare) compares two strings lexicographically. It returns `0` if the strings are equal, a negative value if the first string is less than the second, and a positive value if the first string is greater than the second.\n*   **(A) Compares the first 'n' characters of the object**: This describes `strncmp()`, not `strcmp()`.\n*   **(C) Copies the string**: This describes `strcpy()` or `strncpy()`.",
+      "answer": "*   **(D) Compares the string**: The `strcmp()` function (string compare) compares two strings lexicographically. It returns `0` if the strings are equal, a negative value if the first string is less than the second, and a positive value if the first string is greater than the second.\n*   **(A) Compares the first 'n' characters of the object**: This describes `strncmp()`, not `strcmp()`.\n*   **(C) Copies the string**: This describes `strcpy()` or `strncpy()`.",
       "answer_source": "generated",
       "chapter": "Unit 3: String Basics - String Declaration and Initialization"
     },
     {
       "question_number": "16",
-      "question_text": "What is the keyword used to define a C macro?\n(A) def\n(B) define\n(C) defy\n(D) definition",
+      "question_text": "What is the keyword used to define a C macro?",
+      "options": [
+        "def",
+        "define",
+        "defy",
+        "definition"
+      ],
+      "correct_option": "B",
       "marks": 1,
-      "answer": "The correct option is (B).\n\n**Explanation:**\nIn C, macros are defined using the preprocessor directive `#define`. For example, `#define PI 3.14159` defines a macro named `PI`.",
+      "answer": "In C, macros are defined using the preprocessor directive `#define`. For example, `#define PI 3.14159` defines a macro named `PI`.",
       "answer_source": "generated",
       "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
     },
     {
       "question_number": "17",
-      "question_text": "What is the C keyword used to create global constants?\n(A) constant\n(B) def\n(C) define\n(D) CONSTANT",
+      "question_text": "What is the C keyword used to create global constants?",
+      "options": [
+        "constant",
+        "def",
+        "define",
+        "CONSTANT"
+      ],
+      "correct_option": "A",
       "marks": 1,
-      "answer": "The correct option is (A).\n\n**Explanation:**\n*   **(A) `const` (keyword `constant` is not a C keyword, but `const` is)**: The `const` keyword is used to declare variables whose values cannot be changed after initialization. When declared globally, it creates a global constant.\n*   **(C) `define`**: `#define` is a preprocessor directive used to create symbolic constants (macros), not a keyword to declare variables.\n\nWhile `#define` can also create global symbolic constants, `const` is the keyword used to declare a variable as constant.",
+      "answer": "*   **(A) `const` (keyword `constant` is not a C keyword, but `const` is)**: The `const` keyword is used to declare variables whose values cannot be changed after initialization. When declared globally, it creates a global constant.\n*   **(C) `define`**: `#define` is a preprocessor directive used to create symbolic constants (macros), not a keyword to declare variables.\n\nWhile `#define` can also create global symbolic constants, `const` is the keyword used to declare a variable as constant.",
       "answer_source": "generated",
       "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
     },
     {
       "question_number": "18",
-      "question_text": "Comment on the following pointer declaration in C?\nint *ptr, P;\n(A) ptr is a pointer to integer, P is not a pointer\n(B) ptr and P, both are pointers to integer\n(C) ptr is pointer to integer, P may or may not be\n(D) ptr and P both are not pointers to integer",
+      "question_text": "Comment on the following pointer declaration in C?\nint *ptr, P;",
+      "options": [
+        "ptr is a pointer to integer, P is not a pointer",
+        "ptr and P, both are pointers to integer",
+        "ptr is pointer to integer, P may or may not be",
+        "ptr and P both are not pointers to integer"
+      ],
+      "correct_option": "A",
       "marks": 1,
-      "answer": "The correct option is (A).\n\n**Explanation:**\nIn C, the `*` operator binds to the variable name, not the type. So, in the declaration `int *ptr, P;`:\n*   `*ptr` means `ptr` is a pointer to an `int`.\n*   `P` (without `*`) means `P` is a regular `int` variable.",
+      "answer": "In C, the `*` operator binds to the variable name, not the type. So, in the declaration `int *ptr, P;`:\n*   `*ptr` means `ptr` is a pointer to an `int`.\n*   `P` (without `*`) means `P` is a regular `int` variable.",
       "answer_source": "generated",
       "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
     },
     {
       "question_number": "19",
-      "question_text": "Address stored in the pointer variable is of type\nin C programs.\n(A) integer\n(B) float\n(C) character\n(D) boolean",
+      "question_text": "Address stored in the pointer variable is of type\nin C programs.",
+      "options": [
+        "integer",
+        "float",
+        "character",
+        "boolean"
+      ],
+      "correct_option": "A",
       "marks": 1,
-      "answer": "The correct option is (A).\n\n**Explanation:**\nWhile a pointer variable stores a memory address (which is a numerical value), the type of *address itself* is typically conceptualized as an unsigned integer, representing a location in memory. When referring to the *value* stored in a pointer variable, it's an address, which is essentially an integer. Though `void*` can point to any type, the underlying address is a numerical representation.",
+      "answer": "While a pointer variable stores a memory address (which is a numerical value), the type of *address itself* is typically conceptualized as an unsigned integer, representing a location in memory. When referring to the *value* stored in a pointer variable, it's an address, which is essentially an integer. Though `void*` can point to any type, the underlying address is a numerical representation.",
       "answer_source": "generated",
       "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
     },
     {
       "question_number": "20",
-      "question_text": "A function which calls itself is called as\n(A) self function\n(B) static function\n(C) auto function\n(D) recursive function",
+      "question_text": "A function which calls itself is called as",
+      "options": [
+        "self function",
+        "static function",
+        "auto function",
+        "recursive function"
+      ],
+      "correct_option": "D",
       "marks": 1,
-      "answer": "The correct option is (D).\n\n**Explanation:**\nA function that calls itself is known as a recursive function. Recursion is a programming technique where a function solves a problem by calling itself with smaller instances of the same problem until a base case is reached.",
+      "answer": "A function that calls itself is known as a recursive function. Recursion is a programming technique where a function solves a problem by calling itself with smaller instances of the same problem until a base case is reached.",
       "answer_source": "generated",
       "chapter": "Unit 3: String Basics - String Declaration and Initialization"
     },
     {
       "question_number": "21",
-      "question_text": "What will be the output of the following C code on a 64 bit machine?\n#include <stdio.h>\nint main ()\n{\nunion var\n{\nint num;\nchar c;\n}\nv1;\nprintf (\"%d\", size of (v1));\nreturn 0;\n}\n(A) 8\n(B) 5\n(C) 4\n(D) 9",
+      "question_text": "What will be the output of the following C code on a 64 bit machine?\n#include <stdio.h>\nint main ()\n{\nunion var\n{\nint num;\nchar c;\n}\nv1;\nprintf (\"%d\", size of (v1));\nreturn 0;\n}",
+      "options": [
+        "8",
+        "5",
+        "4",
+        "9"
+      ],
+      "correct_option": "C",
       "marks": 1,
-      "answer": "The correct option is (C).\n\n**Explanation:**\nA `union` is a special data type in C that allows storing different data types in the same memory location. The `sizeof` a union is determined by the size of its largest member. On most 64-bit systems:\n*   `int` typically takes 4 bytes.\n*   `char` typically takes 1 byte.\n\nTherefore, the largest member is `int` (4 bytes). The `sizeof(v1)` will be 4 bytes. Padding might occur for alignment, but for `int` and `char` in a union, the size will be `sizeof(int)`. (It's common for an `int` to be 4 bytes on both 32-bit and 64-bit systems; a `long int` might be 8 bytes on 64-bit). Assuming `int` is 4 bytes, the output is 4.",
+      "answer": "A `union` is a special data type in C that allows storing different data types in the same memory location. The `sizeof` a union is determined by the size of its largest member. On most 64-bit systems:\n*   `int` typically takes 4 bytes.\n*   `char` typically takes 1 byte.\n\nTherefore, the largest member is `int` (4 bytes). The `sizeof(v1)` will be 4 bytes. Padding might occur for alignment, but for `int` and `char` in a union, the size will be `sizeof(int)`. (It's common for an `int` to be 4 bytes on both 32-bit and 64-bit systems; a `long int` might be 8 bytes on 64-bit). Assuming `int` is 4 bytes, the output is 4.",
       "answer_source": "generated",
       "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
     },
     {
       "question_number": "22",
-      "question_text": "What is the output of this C code?\n#include <stdio.h>\nmain ()\n{\nchar *p = \"SRM Test Paper\";\np [0] = 'a';\np [1] = 'b';\nprintf (\"%s\", p);\n}\n(A) abM Test paper\n(B) SRM Test paper\n(C) Compile Time Error\n(D) Run Time Error",
+      "question_text": "What is the output of this C code?\n#include <stdio.h>\nmain ()\n{\nchar *p = \"SRM Test Paper\";\np [0] = 'a';\np [1] = 'b';\nprintf (\"%s\", p);\n}",
+      "options": [
+        "abM Test paper",
+        "SRM Test paper",
+        "Compile Time Error",
+        "Run Time Error"
+      ],
+      "correct_option": "D",
       "marks": 1,
-      "answer": "The correct option is (D).\n\n**Explanation:**\n1.  `char *p = \"SRM Test Paper\";` declares `p` as a pointer to a `char` and makes it point to a string literal. String literals like \"SRM Test Paper\" are typically stored in read-only memory segments.\n2.  `p[0] = 'a';` and `p[1] = 'b';` attempt to modify the characters in this read-only string literal. This action leads to *undefined behavior*. While some compilers might allow it and produce output like \"abM Test Paper\", standard C guarantees that modifying a string literal is undefined behavior, which often results in a runtime error such as a segmentation fault.",
+      "answer": "1.  `char *p = \"SRM Test Paper\";` declares `p` as a pointer to a `char` and makes it point to a string literal. String literals like \"SRM Test Paper\" are typically stored in read-only memory segments.\n2.  `p[0] = 'a';` and `p[1] = 'b';` attempt to modify the characters in this read-only string literal. This action leads to *undefined behavior*. While some compilers might allow it and produce output like \"abM Test Paper\", standard C guarantees that modifying a string literal is undefined behavior, which often results in a runtime error such as a segmentation fault.",
       "answer_source": "generated",
       "chapter": "Unit 3: String Basics - String Declaration and Initialization"
     },
     {
       "question_number": "23",
-      "question_text": "EOF is an integer type defined in stdio.h and has a value\n(A) 1\n(B) 0\n(C) -1\n(D) Null",
+      "question_text": "EOF is an integer type defined in stdio.h and has a value",
+      "options": [
+        "1",
+        "0",
+        "-1",
+        "Null"
+      ],
+      "correct_option": "C",
       "marks": 1,
-      "answer": "The correct option is (C).\n\n**Explanation:**\n`EOF` (End Of File) is a macro defined in `stdio.h` that represents a special integer value (typically -1). It's used to indicate that the end of a file has been reached or that an input function encountered an error.",
+      "answer": "`EOF` (End Of File) is a macro defined in `stdio.h` that represents a special integer value (typically -1). It's used to indicate that the end of a file has been reached or that an input function encountered an error.",
       "answer_source": "generated",
       "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
     },
     {
       "question_number": "24",
-      "question_text": "Which one of the following is correct syntax for opening a file in C language?\n(A) FILE *fopen (const *filename, const char *mode);\n(B) FILE *fopen (const *filename);\n(C) FILE *open (const *filename, const char *mode);\n(D) FILE *open (const *filename);",
+      "question_text": "Which one of the following is correct syntax for opening a file in C language?",
+      "options": [
+        "FILE *fopen (const *filename, const char *mode);",
+        "FILE *fopen (const *filename);",
+        "FILE *open (const *filename, const char *mode);",
+        "FILE *open (const *filename);"
+      ],
+      "correct_option": "A",
       "marks": 1,
-      "answer": "The correct option is (A).\n\n**Explanation:**\n*   The standard C library function for opening files is `fopen()`, not `open()` (which is a POSIX system call).\n*   `fopen()` takes two arguments: the filename (a string, typically `const char*`) and the mode (another string, `const char*`).\n*   It returns a `FILE*` pointer, which is used to refer to the opened file.\n*   Thus, `FILE *fopen (const char *filename, const char *mode);` is the correct prototype. Option (A) has `const *filename` instead of `const char *filename`, but it's the closest representation of the correct arguments and return type among the choices.",
+      "answer": "*   The standard C library function for opening files is `fopen()`, not `open()` (which is a POSIX system call).\n*   `fopen()` takes two arguments: the filename (a string, typically `const char*`) and the mode (another string, `const char*`).\n*   It returns a `FILE*` pointer, which is used to refer to the opened file.\n*   Thus, `FILE *fopen (const char *filename, const char *mode);` is the correct prototype. Option (A) has `const *filename` instead of `const char *filename`, but it's the closest representation of the correct arguments and return type among the choices.",
       "answer_source": "generated",
       "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
     },
     {
       "question_number": "25",
-      "question_text": "The correct syntax to access the member of the ith structure in the array of structure is?\nstruct temp\n{\nint b;\n} s[50];\n(A) s.b.[i];\n(B) s.[i].b;\n(C) s.b[i];\n(D) s [i].b;",
+      "question_text": "The correct syntax to access the member of the ith structure in the array of structure is?\nstruct temp\n{\nint b;\n} s[50];",
+      "options": [
+        "s.b.[i];",
+        "s.[i].b;",
+        "s.b[i];",
+        "s [i].b;"
+      ],
+      "correct_option": "D",
       "marks": 1,
-      "answer": "The correct option is (D).\n\n**Explanation:**\nGiven an array of structures `s[50]` where each element is of type `struct temp` with a member `b`:\n*   To access the `i`-th structure in the array, you use `s[i]`. `s[i]` itself is a `struct temp` variable.\n*   To access a member (`b`) of that specific structure `s[i]`, you then use the dot operator (`.`).\n*   Therefore, the correct syntax is `s[i].b`.",
+      "answer": "Given an array of structures `s[50]` where each element is of type `struct temp` with a member `b`:\n*   To access the `i`-th structure in the array, you use `s[i]`. `s[i]` itself is a `struct temp` variable.\n*   To access a member (`b`) of that specific structure `s[i]`, you then use the dot operator (`.`).\n*   Therefore, the correct syntax is `s[i].b`.",
       "answer_source": "generated",
       "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
     }

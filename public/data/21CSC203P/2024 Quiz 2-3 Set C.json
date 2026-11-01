@@ -12,17 +12,31 @@
         },
         {
             "question_number": "2",
-            "question_text": "What is the significance of the Thread.yield() method in Java?\nA) It pauses the current thread permanently.\nB) It gives the processor a hint that the current thread is willing to yield its execution.\nC) It puts the current thread to sleep for a specified time.\nD) It kills the current thread immediately.",
+            "question_text": "What is the significance of the Thread.yield() method in Java?",
+            "options": [
+                "It pauses the current thread permanently.",
+                "It gives the processor a hint that the current thread is willing to yield its execution.",
+                "It puts the current thread to sleep for a specified time.",
+                "It kills the current thread immediately."
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "Option B) It gives the processor a hint that the current thread is willing to yield its execution.",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 3: Advanced Java Programming Paradigms"
         },
         {
             "question_number": "3",
-            "question_text": "Which of the following is the correct syntax for establishing a connection to a MySQL database in JDBC?\nA) Connection conn = DriverManager.getConnection(\"jdbc:mysql://localhost:3306/db_name\");\nB) Connection conn = DriverManager.connect(\"mysql://localhost/db_name\");\nC) Connection conn = new Connection(\"mysql:localhost/db_name\");\nD) Connection conn = DriverManager.connect(\"localhost\", \"db_name\");",
+            "question_text": "Which of the following is the correct syntax for establishing a connection to a MySQL database in JDBC?",
+            "options": [
+                "Connection conn = DriverManager.getConnection(\"jdbc:mysql://localhost:3306/db_name\");",
+                "Connection conn = DriverManager.connect(\"mysql://localhost/db_name\");",
+                "Connection conn = new Connection(\"mysql:localhost/db_name\");",
+                "Connection conn = DriverManager.connect(\"localhost\", \"db_name\");"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "Option A) Connection conn = DriverManager.getConnection(\"jdbc:mysql://localhost:3306/db_name\");",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 3: Advanced Java Programming Paradigms"
         },
@@ -36,9 +50,16 @@
         },
         {
             "question_number": "5",
-            "question_text": "In the MVC architecture, what does the 'View' represent?\nA) The data structure of the application\nB) The user interface and presentation logic\nC) The interaction with the database\nD) The application logic",
+            "question_text": "In the MVC architecture, what does the 'View' represent?",
+            "options": [
+                "The data structure of the application",
+                "The user interface and presentation logic",
+                "The interaction with the database",
+                "The application logic"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "Option B) The user interface and presentation logic",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 3: Advanced Java Programming Paradigms"
         },
@@ -60,9 +81,16 @@
         },
         {
             "question_number": "8",
-            "question_text": "In Prolog, what is the result of the following query?\n\n?- likes(john, pizza).\n\nA) The query is invalid\nB) It checks whether the fact \"john likes pizza\" is true\nC) It declares a fact that John likes pizza\nD) It returns the list of food items John likes",
+            "question_text": "In Prolog, what is the result of the following query?\n\n?- likes(john, pizza).",
+            "options": [
+                "The query is invalid",
+                "It checks whether the fact \"john likes pizza\" is true",
+                "It declares a fact that John likes pizza",
+                "It returns the list of food items John likes"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "Option B) It checks whether the fact \"john likes pizza\" is true",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 4: Pythonic Programming Paradigm"
         },

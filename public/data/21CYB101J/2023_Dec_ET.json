@@ -4,161 +4,301 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "The coordination number for tetrahedral complexes is ---- .\n(A) 3\n(B) 6\n(C) 4\n(D) 8.59",
+            "question_text": "The coordination number for tetrahedral complexes is ---- .",
+            "options": [
+                "3",
+                "6",
+                "4",
+                "8.59"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) 4\nExplanation: The coordination number for a tetrahedral complex is 4 because there are four ligand atoms directly bonded to the central metal ion.",
+            "answer": "The coordination number for a tetrahedral complex is 4 because there are four ligand atoms directly bonded to the central metal ion.",
             "answer_source": "generated",
             "chapter": "Unit 1: Coordination numbers and geometries"
         },
         {
             "question_number": "2",
-            "question_text": "The crystal field theory considers the metal-ligand bond to be a ______ bond.\n(A) Covalent\n(B) Ionic\n(C) Polar\n(D) Hydrogen",
+            "question_text": "The crystal field theory considers the metal-ligand bond to be a ______ bond.",
+            "options": [
+                "Covalent",
+                "Ionic",
+                "Polar",
+                "Hydrogen"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Ionic\nExplanation: Crystal field theory models the interaction between metal and ligands as purely electrostatic (ionic) in nature.",
+            "answer": "Crystal field theory models the interaction between metal and ligands as purely electrostatic (ionic) in nature.",
             "answer_source": "generated",
             "chapter": "Unit 1: Crystal field theory"
         },
         {
             "question_number": "3",
-            "question_text": "Transition metals are generally coloured because ----- .\n(A) they absorb electromagnetic radiation\n(B) their penultimate d-subshells are fully filled\n(C) they undergo d-d transition\n(D) they are diamagnetic in nature",
+            "question_text": "Transition metals are generally coloured because ----- .",
+            "options": [
+                "they absorb electromagnetic radiation",
+                "their penultimate d-subshells are fully filled",
+                "they undergo d-d transition",
+                "they are diamagnetic in nature"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) they undergo d-d transition\nExplanation: Colour in transition metals arises due to d-d electron transitions, where electrons jump between d orbitals of different energy.",
+            "answer": "Colour in transition metals arises due to d-d electron transitions, where electrons jump between d orbitals of different energy.",
             "answer_source": "generated",
             "chapter": "Unit 1: Optical & magnetic properties of transition metal complexes"
         },
         {
             "question_number": "4",
-            "question_text": "Which of the following complexes has a magnetic moment of 1.73 BM?\n(A) [Ni(CN)4]2-\n(B) TiCl4\n(C) [Cu(NH3)4]2+\n(D) [CoCl6]4-",
+            "question_text": "Which of the following complexes has a magnetic moment of 1.73 BM?",
+            "options": [
+                "[Ni(CN)4]2-",
+                "TiCl4",
+                "[Cu(NH3)4]2+",
+                "[CoCl6]4-"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) [Cu(NH3)4]2+\nExplanation: [Cu(NH3)4]2+ has one unpaired electron, resulting in a magnetic moment of approximately 1.73 Bohr Magneton (BM).",
+            "answer": "[Cu(NH3)4]2+ has one unpaired electron, resulting in a magnetic moment of approximately 1.73 Bohr Magneton (BM).",
             "answer_source": "generated",
             "chapter": "Unit 1: Optical & magnetic properties of transition metal complexes"
         },
         {
             "question_number": "5",
-            "question_text": "Which of the following is not a thermodynamic function?\n(A) Internal energy\n(B) Enthalpy\n(C) Entropy\n(D) Frictional energy",
+            "question_text": "Which of the following is not a thermodynamic function?",
+            "options": [
+                "Internal energy",
+                "Enthalpy",
+                "Entropy",
+                "Frictional energy"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Frictional energy\nExplanation: Frictional energy is not a state function in thermodynamics, unlike internal energy, enthalpy and entropy.",
+            "answer": "Frictional energy is not a state function in thermodynamics, unlike internal energy, enthalpy and entropy.",
             "answer_source": "generated",
             "chapter": "Unit 2: Thermodynamic functions"
         },
         {
             "question_number": "6",
-            "question_text": "In an electrochemical corrosion ------ .\n(A) anode undergoes oxidation\n(B) cathode undergoes oxidation\n(C) both undergo oxidation\n(D) none undergoes oxidation",
+            "question_text": "In an electrochemical corrosion ------ .",
+            "options": [
+                "anode undergoes oxidation",
+                "cathode undergoes oxidation",
+                "both undergo oxidation",
+                "none undergoes oxidation"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) anode undergoes oxidation\nExplanation: In electrochemical corrosion, oxidation occurs at the anode leading to metal dissolution.",
+            "answer": "In electrochemical corrosion, oxidation occurs at the anode leading to metal dissolution.",
             "answer_source": "generated",
             "chapter": "Unit 2: Corrosion"
         },
         {
             "question_number": "7",
-            "question_text": "The solubility product increases with an increase in ------------ .\n(A) energy\n(B) temperature\n(C) pressure\n(D) volume",
+            "question_text": "The solubility product increases with an increase in ------------ .",
+            "options": [
+                "energy",
+                "temperature",
+                "pressure",
+                "volume"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) temperature\nExplanation: Most salts have higher solubility at higher temperatures, so their solubility product (Ksp) increases with temperature.",
+            "answer": "Most salts have higher solubility at higher temperatures, so their solubility product (Ksp) increases with temperature.",
             "answer_source": "generated",
             "chapter": "Unit 2: Solubility equilibria"
         },
         {
             "question_number": "8",
-            "question_text": "When an equilibrium is reached inside the two half-cells of an electrochemical cell, what is the net voltage across the electrodes?\n(A) > 1\n(B) < 1\n(C) = 0\n(D) Not defined",
+            "question_text": "When an equilibrium is reached inside the two half-cells of an electrochemical cell, what is the net voltage across the electrodes?",
+            "options": [
+                "> 1",
+                "< 1",
+                "= 0",
+                "Not defined"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) = 0\nExplanation: At equilibrium, the cell potential becomes zero because the rates of the forward and reverse reactions are equal.",
+            "answer": "At equilibrium, the cell potential becomes zero because the rates of the forward and reverse reactions are equal.",
             "answer_source": "generated",
             "chapter": "Unit 2: Use of free energy in chemical equilibria"
         },
         {
             "question_number": "9",
-            "question_text": "Enantiomers are ---- .\n(A) Molecules that have a mirror image\n(B) Molecules that have at least one stereogenic center\n(C) Non-superimposable molecules\n(D) Non-superimposable molecules that are mirror images of each other",
+            "question_text": "Enantiomers are ---- .",
+            "options": [
+                "Molecules that have a mirror image",
+                "Molecules that have at least one stereogenic center",
+                "Non-superimposable molecules",
+                "Non-superimposable molecules that are mirror images of each other"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Non-superimposable molecules that are mirror images of each other\nExplanation: Enantiomers are stereoisomers that are non-superimposable mirror images of each other.",
+            "answer": "Enantiomers are stereoisomers that are non-superimposable mirror images of each other.",
             "answer_source": "generated",
             "chapter": "Unit 3: Stereochemistry - Enantiomers"
         },
         {
             "question_number": "10",
-            "question_text": "The plane that divides the molecule into two equal parts so that each half is the mirror image of the other half is called as ---- .\n(A) Centre of symmetry\n(B) Plane of symmetry\n(C) Axis of symmetry\n(D) Angle of symmetry",
+            "question_text": "The plane that divides the molecule into two equal parts so that each half is the mirror image of the other half is called as ---- .",
+            "options": [
+                "Centre of symmetry",
+                "Plane of symmetry",
+                "Axis of symmetry",
+                "Angle of symmetry"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Plane of symmetry\nExplanation: Plane of symmetry is an imaginary plane dividing the molecule into two mirror-image halves.",
+            "answer": "Plane of symmetry is an imaginary plane dividing the molecule into two mirror-image halves.",
             "answer_source": "generated",
             "chapter": "Unit 3: Stereochemistry - Symmetry"
         },
         {
             "question_number": "11",
-            "question_text": "How many optical isomers are possible in a compound with one chiral carbon?\n(A) 5\n(B) 4\n(C) 2\n(D) 3",
+            "question_text": "How many optical isomers are possible in a compound with one chiral carbon?",
+            "options": [
+                "5",
+                "4",
+                "2",
+                "3"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) 2\nExplanation: A single chiral carbon can give rise to two non-superimposable mirror images, i.e., two optical isomers.",
+            "answer": "A single chiral carbon can give rise to two non-superimposable mirror images, i.e., two optical isomers.",
             "answer_source": "generated",
             "chapter": "Unit 3: Stereochemistry - Optical activity"
         },
         {
             "question_number": "12",
-            "question_text": "The potential energy of n-butane is minimum for ----- conformation.\n(A) Skew\n(B) Staggered\n(C) Eclipsed\n(D) Gauche",
+            "question_text": "The potential energy of n-butane is minimum for ----- conformation.",
+            "options": [
+                "Skew",
+                "Staggered",
+                "Eclipsed",
+                "Gauche"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Staggered\nExplanation: The staggered conformation is the most stable as steric repulsion is minimized, leading to lowest potential energy.",
+            "answer": "The staggered conformation is the most stable as steric repulsion is minimized, leading to lowest potential energy.",
             "answer_source": "generated",
             "chapter": "Unit 3: Conformational analysis"
         },
         {
             "question_number": "13",
-            "question_text": "In addition polymers, monomers used are ----- .\n(A) Unsaturated compounds\n(B) Saturated compounds\n(C) Bifunctional saturated compounds\n(D) Trifunctional saturated compounds",
+            "question_text": "In addition polymers, monomers used are ----- .",
+            "options": [
+                "Unsaturated compounds",
+                "Saturated compounds",
+                "Bifunctional saturated compounds",
+                "Trifunctional saturated compounds"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Unsaturated compounds\nExplanation: Addition polymerization requires monomers with double or triple bonds, i.e., unsaturated compounds.",
+            "answer": "Addition polymerization requires monomers with double or triple bonds, i.e., unsaturated compounds.",
             "answer_source": "generated",
             "chapter": "Unit 4: Polymers - Types of Polymerization"
         },
         {
             "question_number": "14",
-            "question_text": "The polymer in which the substituents are sterically arranged in a way to give alternate d and l configuration is known as --- .\n(A) Isotactic polymer\n(B) Atactic polymer\n(C) Syndiotactic polymer\n(D) Fibres",
+            "question_text": "The polymer in which the substituents are sterically arranged in a way to give alternate d and l configuration is known as --- .",
+            "options": [
+                "Isotactic polymer",
+                "Atactic polymer",
+                "Syndiotactic polymer",
+                "Fibres"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Syndiotactic polymer\nExplanation: Syndiotactic polymers have substituents arranged in an alternating fashion along the polymer backbone.",
+            "answer": "Syndiotactic polymers have substituents arranged in an alternating fashion along the polymer backbone.",
             "answer_source": "generated",
             "chapter": "Unit 4: Polymers - Tacticity"
         },
         {
             "question_number": "15",
-            "question_text": "Which of the following is true for the resultant polymer product formed, when molecules of pthalic acid react with molecules of glycerol?\n(A) Branch polymer\n(B) Crosslink polymer\n(C) Linear polymer\n(D) Resins",
+            "question_text": "Which of the following is true for the resultant polymer product formed, when molecules of pthalic acid react with molecules of glycerol?",
+            "options": [
+                "Branch polymer",
+                "Crosslink polymer",
+                "Linear polymer",
+                "Resins"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Crosslink polymer\nExplanation: The reaction between polyfunctional monomers like phthalic acid and glycerol results in a crosslinked structure.",
+            "answer": "The reaction between polyfunctional monomers like phthalic acid and glycerol results in a crosslinked structure.",
             "answer_source": "generated",
             "chapter": "Unit 4: Polymers - Synthesis and properties"
         },
         {
             "question_number": "16",
-            "question_text": "Which among following is a naturally occurring polymer?\n(A) PVC\n(B) Acetic acid\n(C) Protein\n(D) Polythene",
+            "question_text": "Which among following is a naturally occurring polymer?",
+            "options": [
+                "PVC",
+                "Acetic acid",
+                "Protein",
+                "Polythene"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Protein\nExplanation: Proteins are natural polymers composed of amino acids; the others are synthetic or not polymers.",
+            "answer": "Proteins are natural polymers composed of amino acids; the others are synthetic or not polymers.",
             "answer_source": "generated",
             "chapter": "Unit 4: Polymers - Classification"
         },
         {
             "question_number": "17",
-            "question_text": "Hooke's law essentially defines ----.\n(A) Elastic limit\n(B) Stress\n(C) Strain\n(D) Yield point",
+            "question_text": "Hooke's law essentially defines ----.",
+            "options": [
+                "Elastic limit",
+                "Stress",
+                "Strain",
+                "Yield point"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Elastic limit\nExplanation: Hooke's law describes the linear relationship between stress and strain, up to the elastic limit.",
+            "answer": "Hooke's law describes the linear relationship between stress and strain, up to the elastic limit.",
             "answer_source": "generated",
             "chapter": "Unit 5: Mechanical properties of solid"
         },
         {
             "question_number": "18",
-            "question_text": "Composites can be classified based on ------ .\n(A) Matrix type\n(B) Reinforcement constituent\n(C) Neither on matrix type nor on reinforcement constituent type\n(D) Matrix type and reinforcement constituent",
+            "question_text": "Composites can be classified based on ------ .",
+            "options": [
+                "Matrix type",
+                "Reinforcement constituent",
+                "Neither on matrix type nor on reinforcement constituent type",
+                "Matrix type and reinforcement constituent"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Matrix type and reinforcement constituent\nExplanation: Composites are commonly classified based on both their matrix material and the type of reinforcement.",
+            "answer": "Composites are commonly classified based on both their matrix material and the type of reinforcement.",
             "answer_source": "generated",
             "chapter": "Unit 5: Composite materials - Types"
         },
         {
             "question_number": "19",
-            "question_text": "ESCA can identify elements in the periodic table above which of the following?\n(A) Carbon\n(B) Boron\n(C) Helium\n(D) Potassium",
+            "question_text": "ESCA can identify elements in the periodic table above which of the following?",
+            "options": [
+                "Carbon",
+                "Boron",
+                "Helium",
+                "Potassium"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Helium\nExplanation: ESCA (XPS) can identify all elements above helium, but not hydrogen or helium themselves.",
+            "answer": "ESCA (XPS) can identify all elements above helium, but not hydrogen or helium themselves.",
             "answer_source": "generated",
             "chapter": "Unit 5: Surface Characterisation techniques - XPS"
         },
         {
             "question_number": "20",
-            "question_text": "With the help of which of the following equations the interplanar distance can be calculated from a known wavelength of the source and measured angle?\n(A) Coolidge equation\n(B) Scherrer equation\n(C) Debye equation\n(D) Braggs equation",
+            "question_text": "With the help of which of the following equations the interplanar distance can be calculated from a known wavelength of the source and measured angle?",
+            "options": [
+                "Coolidge equation",
+                "Scherrer equation",
+                "Debye equation",
+                "Braggs equation"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Braggs equation\nExplanation: Bragg's law is used in XRD to calculate the distance between crystal planes from the wavelength and diffraction angle.",
+            "answer": "Bragg's law is used in XRD to calculate the distance between crystal planes from the wavelength and diffraction angle.",
             "answer_source": "generated",
             "chapter": "Unit 5: Surface Characterisation techniques - XRD"
         }

@@ -1,295 +1,435 @@
 {
-  "formal_filename": "2023-05_ET_QP.json",
-  "paper_title": "B.Tech. DEGREE EXAMINATION, MAY 2023 - Third Semester - 21CSS201T - COMPUTER ORGANIZATION ARCHITECTURE",
-  "source": "2023-05 ET",
-  "questions": [
-    {
-      "question_number": "1",
-      "question_text": "The binary equivalent of the decimal number 26.2 is ______\n(A) 10010.1101\n(B) 11010.0011\n(C) 11110.1110\n(D) 01110.0011",
-      "marks": 1,
-      "answer": "(B) 11010.0011. $26=11010_2$; $0.2\\times2=0.4\\to0,\\ 0.8\\to0,\\ 1.6\\to1,\\ 1.2\\to1$ so $0.2\\approx0.0011_2$.",
-      "answer_source": "generated",
-      "chapter": "Unit 1: Introduction to Number System and Logic Gates"
-    },
-    {
-      "question_number": "2",
-      "question_text": "Find the hexadecimal value for the decimal number 264\n(A) 128\n(B) 108\n(C) 2A1\n(D) 761",
-      "marks": 1,
-      "answer": "(B) 108. $264=1\\times256+0\\times16+8$, so $264_{10}=108_{16}$.",
-      "answer_source": "generated",
-      "chapter": "Unit 1: Introduction to Number System and Logic Gates"
-    },
-    {
-      "question_number": "3",
-      "question_text": "The 2's complement of the binary number 101101 is ______\n(A) 011010\n(B) 100010\n(C) 001010\n(D) 010011",
-      "marks": 1,
-      "answer": "(D) 010011. 1's complement = 010010; adding 1 gives 010011.",
-      "answer_source": "generated",
-      "chapter": "Unit 1: Introduction to Number System and Logic Gates"
-    },
-    {
-      "question_number": "4",
-      "question_text": "Signed 2's complement of -16 in 8-bit representation is ______\n(A) 10111011\n(B) 10001100\n(C) 01110000\n(D) 00110101",
-      "marks": 1,
-      "answer": "None of the options is correct. $+16=00010000$; inverting gives 11101111, adding 1 gives $11110000$. (Option (C) 01110000 differs only in the sign bit and appears to be a misprint of 11110000.)",
-      "answer_source": "generated",
-      "chapter": "Unit 1: Introduction to Number System and Logic Gates"
-    },
-    {
-      "question_number": "5",
-      "question_text": "______ performs the desired operations on the input information.\n(A) Arithmetic and logic unit\n(B) Input unit\n(C) Output unit\n(D) Control unit",
-      "marks": 1,
-      "answer": "(A) Arithmetic and logic unit. The ALU carries out the arithmetic and logic operations on data.",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "6",
-      "question_text": "______ convert the information in binary form to a form understood by user.\n(A) Input unit\n(B) ALU\n(C) Output unit\n(D) Memory unit",
-      "marks": 1,
-      "answer": "(C) Output unit. Output devices present processed binary results in human-understandable form.",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "7",
-      "question_text": "______ holds the instructions that is currently being executed.\n(A) Program counter\n(B) Instruction register\n(C) Registers\n(D) Memory address register",
-      "marks": 1,
-      "answer": "(B) Instruction register. The IR holds the instruction being executed; the PC holds the address of the next instruction.",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "8",
-      "question_text": "______ operations are required in memory access.\n(A) Add\n(B) Move\n(C) Load and store\n(D) Halt",
-      "marks": 1,
-      "answer": "(C) Load and store. Memory is accessed by Load (read) and Store (write) operations.",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "9",
-      "question_text": "______ is a combinational logic circuit with two input and two output.\n(A) Full adder\n(B) Half adder\n(C) Multiplexer\n(D) Decoder",
-      "marks": 1,
-      "answer": "(B) Half adder. It has inputs A, B and outputs Sum and Carry (a full adder has three inputs).",
-      "answer_source": "generated",
-      "chapter": "Unit 1: Introduction to Number System and Logic Gates"
-    },
-    {
-      "question_number": "10",
-      "question_text": "______ reduces the number of summands by a factor of 2.\n(A) Bit pair recoding\n(B) Binary pair recoding\n(C) Single bit recoding\n(D) Multiple bit recoding",
-      "marks": 1,
-      "answer": "(A) Bit pair recoding. Recoding multiplier bit-pairs into digits from $\\{-2,-1,0,+1,+2\\}$ halves the number of partial products.",
-      "answer_source": "generated",
-      "chapter": "Unit 3: Design of ALU"
-    },
-    {
-      "question_number": "11",
-      "question_text": "Where does the multiplier operand is stored?\n(A) Cache\n(B) Instruction register\n(C) Program counter\n(D) Shift register",
-      "marks": 1,
-      "answer": "(D) Shift register. In the sequential multiplier the multiplier sits in register Q, which shifts right each cycle.",
-      "answer_source": "generated",
-      "chapter": "Unit 3: Design of ALU"
-    },
-    {
-      "question_number": "12",
-      "question_text": "How many bits are needed to represent floating point number in a single precision form?\n(A) 16\n(B) 32\n(C) 64\n(D) 50",
-      "marks": 1,
-      "answer": "(B) 32. IEEE 754 single precision uses 1 sign bit, 8 exponent bits and 23 mantissa bits.",
-      "answer_source": "generated",
-      "chapter": "Unit 3: Design of ALU"
-    },
-    {
-      "question_number": "13",
-      "question_text": "A set of microinstructions for a single machine instruction is called ______\n(A) Application program\n(B) Command\n(C) Micro program\n(D) System files",
-      "marks": 1,
-      "answer": "(C) Micro program. A sequence of microinstructions that implements one machine instruction is a microprogram (micro-routine).",
-      "answer_source": "generated",
-      "chapter": "Unit 4: Control Unit"
-    },
-    {
-      "question_number": "14",
-      "question_text": "What approach is used to identify the data dependencies when dealing with software?\n(A) Operand forwarding\n(B) Bubbling\n(C) NOP\n(D) Wait signal",
-      "marks": 1,
-      "answer": "(C) NOP. When dependencies are handled in software, the compiler detects them and inserts NOP instructions (or reorders code). Operand forwarding is the hardware approach.",
-      "answer_source": "generated",
-      "chapter": "Unit 4: Control Unit"
-    },
-    {
-      "question_number": "15",
-      "question_text": "Branch instruction 'JUMP IF ZERO' is an example of ______\n(A) Transferring the control\n(B) Conditional branch\n(C) Unconditional branch\n(D) Arithmetic branch",
-      "marks": 1,
-      "answer": "(B) Conditional branch. The jump happens only if the Zero flag is set.",
-      "answer_source": "generated",
-      "chapter": "Unit 4: Control Unit"
-    },
-    {
-      "question_number": "16",
-      "question_text": "______ memory is used in pipelining to increase the memory access speed.\n(A) Special memory locations\n(B) Special purpose register\n(C) Cache\n(D) Buffers",
-      "marks": 1,
-      "answer": "(C) Cache. Pipelined fetch/operand stages need one-cycle memory access, which on-chip cache provides.",
-      "answer_source": "generated",
-      "chapter": "Unit 4: Control Unit"
-    },
-    {
-      "question_number": "17",
-      "question_text": "In ______ parallelism the computer architecture has multiple nodes, multiple CPUs and multiple threads.\n(A) Processor\n(B) Memory\n(C) Control\n(D) Data",
-      "marks": 1,
-      "answer": "(A) Processor. Processor-level parallelism uses multiple processing nodes/CPUs (multiprocessors, multicomputers), each running threads concurrently.",
-      "answer_source": "generated",
-      "chapter": "Unit 5: Parallelism"
-    },
-    {
-      "question_number": "18",
-      "question_text": "______ is a measure of how many operations can be performed in parallel at the same time.\n(A) Data parallelism\n(B) Task level parallelism\n(C) Instruction level parallelism\n(D) Transaction level parallelism",
-      "marks": 1,
-      "answer": "(C) Instruction level parallelism. ILP measures how many instructions/operations of a program can execute simultaneously.",
-      "answer_source": "generated",
-      "chapter": "Unit 5: Parallelism"
-    },
-    {
-      "question_number": "19",
-      "question_text": "Type of computer where a single instruction would operate or execute on multiple data values is called ______\n(A) Single instruction and multiple data stream\n(B) Single instruction and single data stream\n(C) Multiple instruction and single data stream\n(D) Multiple instruction and multiple data stream",
-      "marks": 1,
-      "answer": "(A) Single instruction and multiple data stream (SIMD), per Flynn's classification.",
-      "answer_source": "generated",
-      "chapter": "Unit 5: Parallelism"
-    },
-    {
-      "question_number": "20",
-      "question_text": "______ method is used to design the control unit of ARM processor.\n(A) Hardwired\n(B) Microprogrammed\n(C) State machine\n(D) Combinational circuit",
-      "marks": 1,
-      "answer": "(A) Hardwired. ARM is a RISC processor; RISC designs use hardwired control for speed.",
-      "answer_source": "generated",
-      "chapter": "Unit 4: Control Unit"
-    },
-    {
-      "question_number": "21. a.",
-      "question_text": "The binary numbers listed have a sign in the leftmost position and if negative are in 2's complement form. Perform the arithmetic operations indicated and verify the answers.\n(i) 101011 + 111000\n(ii) 001110 + 110010\n(iii) 111001 - 001010\n(iv) 101011 - 100110",
-      "marks": 8,
-      "answer": "All numbers are 6-bit signed 2's complement (range $-32$ to $+31$). Subtraction is done by adding the 2's complement of the subtrahend; the end carry is discarded.\n\n**(i)** $101011\\ (-21) + 111000\\ (-8)$\n```\n  101011\n+ 111000\n--------\n1 100011\n```\nDiscard carry: $100011 = -29$. Check: $-21 + (-8) = -29$. No overflow.\n\n**(ii)** $001110\\ (+14) + 110010\\ (-14)$\n```\n  001110\n+ 110010\n--------\n1 000000\n```\nResult $000000 = 0$. Check: $14 - 14 = 0$.\n\n**(iii)** $111001\\ (-7) - 001010\\ (+10)$: 2's complement of 001010 is 110110.\n```\n  111001\n+ 110110\n--------\n1 101111\n```\nResult $101111 = -17$. Check: $-7 - 10 = -17$.\n\n**(iv)** $101011\\ (-21) - 100110\\ (-26)$: 2's complement of 100110 is 011010.\n```\n  101011\n+ 011010\n--------\n1 000101\n```\nResult $000101 = +5$. Check: $-21 - (-26) = 5$.\n\nIn all four cases the carry into the sign bit equals the carry out, so there is no overflow.",
-      "answer_source": "generated",
-      "chapter": "Unit 1: Introduction to Number System and Logic Gates"
-    },
-    {
-      "question_number": "21. b.",
-      "question_text": "Draw the graphic symbol, algebraic function and truth table for the following logic gates.\n(i) AND\n(ii) OR\n(iii) NAND\n(iv) EX-OR",
-      "marks": 8,
-      "answer": "**(i) AND**: symbol is a D-shaped gate with inputs A, B. Function $F = A\\cdot B$. Output is 1 only when all inputs are 1.\n\n**(ii) OR**: symbol is a curved (shield-shaped) gate. Function $F = A + B$. Output is 1 when any input is 1.\n\n**(iii) NAND**: AND symbol with a bubble at the output. Function $F = \\overline{A\\cdot B}$. Output is 0 only when all inputs are 1. It is a universal gate.\n\n**(iv) EX-OR**: OR symbol with an extra curved line at the input side. Function $F = A\\oplus B = A\\bar B + \\bar A B$. Output is 1 when the inputs differ.\n\n| A | B | AND | OR | NAND | XOR |\n|---|---|---|---|---|---|\n| 0 | 0 | 0 | 0 | 1 | 0 |\n| 0 | 1 | 0 | 1 | 1 | 1 |\n| 1 | 0 | 0 | 1 | 1 | 1 |\n| 1 | 1 | 1 | 1 | 0 | 0 |",
-      "answer_source": "generated",
-      "chapter": "Unit 1: Introduction to Number System and Logic Gates"
-    },
-    {
-      "question_number": "22. a.i.",
-      "question_text": "Define instructions and data.",
-      "marks": 2,
-      "answer": "**Instructions** are commands, encoded in binary, that tell the processor which operation to perform (for example Add, Load, Branch). A sequence of instructions stored in memory is a program.\n\n**Data** are the numbers and encoded characters that instructions use as operands. Data are also stored in memory, and the processor reads, processes and writes them.",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "22. a.ii.",
-      "question_text": "Write about the operational concepts of the following instructions.\n(i) Add $R_0$, LOCA\n(ii) Load $R_2$, LOC\n(iii) Store $R_4$, LOC",
-      "marks": 6,
-      "answer": "**(i) Add $R_0$, LOCA**: adds the operand in memory location LOCA to the contents of register $R_0$ and places the sum in $R_0$: $R_0 \\leftarrow R_0 + [LOCA]$. Steps: PC→MAR, fetch instruction into IR, PC is incremented; the instruction is decoded; LOCA→MAR and a Read is issued; MDR gets [LOCA]; the ALU adds MDR and $R_0$; the result is written to $R_0$.\n\n**(ii) Load $R_2$, LOC**: copies the memory word at LOC into $R_2$: $R_2 \\leftarrow [LOC]$. Steps: LOC→MAR, Read, wait for MFC, MDR→$R_2$. Memory contents are unchanged.\n\n**(iii) Store $R_4$, LOC**: copies $R_4$ into memory location LOC: $[LOC] \\leftarrow R_4$. Steps: LOC→MAR, $R_4$→MDR, Write signal; the old contents of LOC are overwritten and $R_4$ is unchanged.\n\nIn every case the instruction is first fetched with PC→MAR, Read, MDR→IR, PC←PC+4, and then decoded by the control unit.",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "22. b.i.",
-      "question_text": "A computer has 32 MB of memory. How many bits are needed to address any single byte in memory?",
-      "marks": 2,
-      "answer": "$32\\text{ MB} = 2^5 \\times 2^{20} = 2^{25}$ bytes, so **25 address bits** are needed.",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "22. b.ii.",
-      "question_text": "Write about the following instruction types with an example.\n(i) Data transfer instructions\n(ii) Data manipulation instructions\n(iii) Arithmetic instructions",
-      "marks": 6,
-      "answer": "**(i) Data transfer instructions** move data between memory, registers and I/O without changing it. Examples: `LOAD R1, LOC` ($R1\\leftarrow[LOC]$), `STORE R1, LOC`, `MOVE R1, R2`, `PUSH`/`POP`, `IN`/`OUT`.\n\n**(ii) Data manipulation instructions** perform operations on data and are of three kinds: arithmetic, logical/bit-manipulation (`AND`, `OR`, `XOR`, `NOT`, `CLR`, `COM`) and shift/rotate (`SHL`, `SHR`, `ROL`, `ROR`, `ASHR`). Example: `AND R1, R2` performs a bitwise AND of R1 and R2.\n\n**(iii) Arithmetic instructions** are the arithmetic subset of data manipulation: `ADD R1, R2, R3` ($R1\\leftarrow R2+R3$), `SUB`, `MUL`, `DIV`, `INC`, `DEC`, `NEG`. They update the condition flags (Z, N, C, V).",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "23. a.",
-      "question_text": "Write about the 4-bit binary parallel adder/subtractor with its diagram.",
-      "marks": 8,
-      "answer": "A 4-bit parallel adder/subtractor uses four full adders (FA0 to FA3) connected in ripple-carry fashion, plus four XOR gates on the B inputs, all controlled by a mode line M.\n\n**Diagram description:** for each bit $i$, input $B_i$ goes through an XOR gate with M, giving $B_i\\oplus M$, and this feeds FA$_i$ together with $A_i$. M is also connected to $C_0$ (carry-in of FA0). The carry-out $C_{i+1}$ of each FA goes to the next stage. The outputs are $S_3S_2S_1S_0$ and $C_4$, and overflow is $V = C_4 \\oplus C_3$.\n\n**Operation:**\n- M = 0 (add): $B_i\\oplus0 = B_i$ and $C_0=0$, so $S = A + B$.\n- M = 1 (subtract): $B_i\\oplus1 = \\bar B_i$ and $C_0 = 1$, so $S = A + \\bar B + 1 = A - B$ (2's complement subtraction).\n\nEach full adder computes $S_i = A_i\\oplus B_i'\\oplus C_i$ and $C_{i+1} = A_iB_i' + C_i(A_i\\oplus B_i')$.\n\n**Example:** $A=0111$ (7), $B=0010$ (2), M=1: $0111 + 1101 + 1 = 1\\,0101$, so the result is $0101 = 5$ (the carry is discarded).\n\nThe drawback is ripple delay: the carry passes through all n stages, so the delay is about $2n$ gate delays. Carry look-ahead adders remove this.",
-      "answer_source": "generated",
-      "chapter": "Unit 3: Design of ALU"
-    },
-    {
-      "question_number": "23. b.i.",
-      "question_text": "What are the advantages of bit pair recoding of multipliers?",
-      "marks": 3,
-      "answer": "- It halves the maximum number of summands (partial products), from n to n/2, which speeds up multiplication.\n- Each recoded digit is in $\\{-2,-1,0,+1,+2\\}$, so the partial product is just 0, ±M or ±2M (a shift of M), all easy to produce.\n- It handles positive and negative (2's complement) multipliers uniformly, as Booth's algorithm does.\n- It avoids Booth's worst case (alternating 1s and 0s), giving a guaranteed n/2 additions and less hardware time.",
-      "answer_source": "generated",
-      "chapter": "Unit 3: Design of ALU"
-    },
-    {
-      "question_number": "23. b.ii.",
-      "question_text": "Multiply $(+13)\\times(-6)$ by using bit pair recoding method.",
-      "marks": 5,
-      "answer": "Multiplicand $M = +13 = 01101$, multiplier $Q = -6 = 11010$ (5-bit 2's complement).\n\n**Recoding:** append an implied 0 to the right of the multiplier and sign-extend it to an even length: $1\\,11010\\,0$.\nTake bit groups $(b_{i+1}, b_i, b_{i-1})$ from the right:\n- $(b_1,b_0,b_{-1}) = (1,0,0) \\to -2$\n- $(b_3,b_2,b_1) = (1,0,1) \\to -1$\n- $(b_5,b_4,b_3) = (1,1,1) \\to 0$\n\nRecoded multiplier: $(0,\\ -1,\\ -2)$, which checks as $0\\cdot16 - 1\\cdot4 - 2\\cdot1 = -6$.\n\n**Partial products (10-bit, sign-extended):**\n- Digit $-2$ at weight 1: $-2M = -26 = 1111100110$\n- Digit $-1$ at weight 4: $-M = -13$, shifted left 2 places gives $-52 = 1111001100$\n- Digit $0$ at weight 16: $0000000000$\n\n```\n  1111100110   (-26)\n+ 1111001100   (-52)\n+ 0000000000\n------------\n  1110110010   (-78)\n```\nCheck: $78 = 0001001110$, and its 2's complement is $1110110010$. So $(+13)\\times(-6) = -78$.",
-      "answer_source": "generated",
-      "chapter": "Unit 3: Design of ALU"
-    },
-    {
-      "question_number": "24. a.",
-      "question_text": "What are the control signals generated by control unit to execute\n(i) Add $(R_3)$, $R_1$\n(ii) Unconditional branching",
-      "marks": 8,
-      "answer": "This uses the single-bus organisation with registers PC, MAR, MDR, IR, Y, Z.\n\n**(i) Add (R3), R1**, meaning $R1 \\leftarrow R1 + [R3]$:\n1. PC$_{out}$, MAR$_{in}$, Read, Select4, Add, Z$_{in}$\n2. Z$_{out}$, PC$_{in}$, Y$_{in}$, WMFC\n3. MDR$_{out}$, IR$_{in}$\n4. R3$_{out}$, MAR$_{in}$, Read\n5. R1$_{out}$, Y$_{in}$, WMFC\n6. MDR$_{out}$, SelectY, Add, Z$_{in}$\n7. Z$_{out}$, R1$_{in}$, End\n\nSteps 1 to 3 fetch the instruction, step 4 reads the operand addressed by R3, steps 5 and 6 add it, and step 7 writes the result.\n\n**(ii) Unconditional branch** ($PC \\leftarrow PC + \\text{offset}$):\n1. PC$_{out}$, MAR$_{in}$, Read, Select4, Add, Z$_{in}$\n2. Z$_{out}$, PC$_{in}$, Y$_{in}$, WMFC\n3. MDR$_{out}$, IR$_{in}$\n4. Offset-field-of-IR$_{out}$, Add, Z$_{in}$\n5. Z$_{out}$, PC$_{in}$, End\n\nThe updated PC (already PC+4, held in Y) is added to the branch offset taken from the IR, and the sum is loaded into PC. A conditional branch differs only in step 4: if the condition is false, End is issued and the PC is not changed.",
-      "answer_source": "generated",
-      "chapter": "Unit 4: Control Unit"
-    },
-    {
-      "question_number": "24. b.i.",
-      "question_text": "Define control word, control variables, microinstructions and microprogram.",
-      "marks": 4,
-      "answer": "- **Control word (CW):** a word whose individual bits each represent one control signal; one CW gives the signals asserted in one step of execution.\n- **Control variables:** the binary variables (control signals such as PC$_{out}$, MAR$_{in}$, Read, Add) that, when asserted, cause micro-operations to happen.\n- **Microinstruction:** a control word stored in control memory, usually extended with sequencing (next-address/branch) fields; it specifies one or more micro-operations.\n- **Microprogram:** an ordered sequence of microinstructions in control memory (control store) that implements a machine instruction or the whole instruction set.",
-      "answer_source": "generated",
-      "chapter": "Unit 4: Control Unit"
-    },
-    {
-      "question_number": "24. b.ii.",
-      "question_text": "What is the format of a microinstruction and explain its fields briefly with diagram.",
-      "marks": 4,
-      "answer": "A typical (horizontal/field-encoded) microinstruction format is:\n\n```\n| F1 | F2 | F3 | CD (condition) | BR (branch) | AD (address) |\n|  micro-operation fields  |     sequencing fields         |\n```\n\n- **Micro-operation fields (F1, F2, F3 ...):** encoded groups of mutually exclusive control signals. For example F1 selects the source register gated onto the bus, F2 the destination, F3 the ALU function. Each field is decoded to produce the actual signals.\n- **CD (condition select):** selects the status bit to test (unconditional/always, Z, N, C, V, I).\n- **BR (branch type):** gives how the next address is formed: JMP, CALL, RET, or MAP (from the opcode).\n- **AD (address field):** the branch target address in control memory.\n\nThe next address is either μPC+1 or the AD/mapped address, depending on CD and BR. Horizontal formats use one bit per signal (long words, high parallelism); vertical formats use encoded fields (short words, need decoders).",
-      "answer_source": "generated",
-      "chapter": "Unit 4: Control Unit"
-    },
-    {
-      "question_number": "25. a.",
-      "question_text": "Write in detail about any two types of software parallelism.",
-      "marks": 8,
-      "answer": "Software parallelism is defined by the control and data dependences of a program, as shown in its program flow graph.\n\n**1. Control parallelism (task/functional parallelism):** two or more different operations or tasks are performed at the same time. It appears as pipelining (different stages of different instructions overlap) or as multiple functional units working on independent tasks. For example, in `a=b+c; d=e*f;` the add and the multiply can run on separate units at once. It is limited by pipeline length and by the number of functional units, and is usually exploited by hardware or compiler scheduling.\n\n**2. Data parallelism:** the same operation is applied to many data elements simultaneously, for example `for i: C[i]=A[i]+B[i]` on SIMD/vector processors or GPUs. It offers the highest potential speed-up for regular, large data sets and is simpler to program because control is single-threaded (SPMD). It is limited by data dependences and by the cost of data distribution.\n\n**Other levels (any can be used):** instruction-level parallelism (fine grain, under 20 instructions, exploited by superscalar/VLIW processors and compilers); loop-level parallelism (independent iterations); procedure/subprogram-level (medium grain); job/program-level (coarse grain, multiprogramming).\n\nThe degree of parallelism (DOP) and the grain size together determine the speed-up and the communication overhead.",
-      "answer_source": "generated",
-      "chapter": "Unit 5: Parallelism"
-    },
-    {
-      "question_number": "25. b.",
-      "question_text": "Explain about the cache coherence problem and give solutions for this problem.",
-      "marks": 8,
-      "answer": "**Problem:** in a shared-memory multiprocessor each processor has a private cache. When several caches hold copies of the same memory block and one processor writes its copy, the other copies (and possibly main memory) become stale, so processors may read inconsistent values. The causes are: (1) sharing of writable data, (2) process migration between processors, (3) I/O (DMA) that bypasses the caches. Example: P1 and P2 both cache X=5; P1 writes X=7 in its cache; P2 still reads 5.\n\n**Solutions:**\n1. **Snoopy protocols (bus-based):** every cache controller monitors (snoops) the shared bus.\n   - *Write-invalidate:* a writing processor broadcasts an invalidate, so other copies are marked invalid and must re-fetch. MSI/MESI protocols use states Modified, Exclusive, Shared and Invalid.\n   - *Write-update (broadcast):* the new value is broadcast and all copies are updated.\n2. **Directory-based protocols (scalable, for non-bus networks):** a directory records which caches hold each block and its state; on a write, invalidations or updates are sent only to the caches that hold copies. The directory can be full-map, limited, or chained.\n3. **Software solutions:** the compiler or OS marks shared writable data as non-cacheable, or inserts cache flush/invalidate instructions at synchronisation points.\n4. **Write-through with invalidation:** keeps memory always up to date, combined with snooping.\n\nA coherent system must guarantee write propagation (writes eventually become visible to all processors) and write serialisation (all processors see writes to the same location in the same order).",
-      "answer_source": "generated",
-      "chapter": "Unit 5: Parallelism"
-    },
-    {
-      "question_number": "26.",
-      "question_text": "Explain the procedure of constructing a fast adder, carry look-ahead adder with its diagram.",
-      "marks": 15,
-      "answer": "**Need:** in a ripple-carry adder the carry must ripple through all n stages, giving a delay of about $2n$ gate delays. A carry look-ahead adder (CLA) generates all the carries in parallel.\n\n**Generate and propagate functions:** for each bit $i$,\n$$G_i = x_i y_i, \\qquad P_i = x_i \\oplus y_i \\ (\\text{or } x_i + y_i)$$\n$$c_{i+1} = G_i + P_i c_i, \\qquad s_i = P_i \\oplus c_i$$\n\n**Expanding the carries for 4 bits:**\n$$c_1 = G_0 + P_0c_0$$\n$$c_2 = G_1 + P_1G_0 + P_1P_0c_0$$\n$$c_3 = G_2 + P_2G_1 + P_2P_1G_0 + P_2P_1P_0c_0$$\n$$c_4 = G_3 + P_3G_2 + P_3P_2G_1 + P_3P_2P_1G_0 + P_3P_2P_1P_0c_0$$\nEvery carry is a two-level AND-OR function of the G, P and $c_0$ signals.\n\n**Construction (diagram):**\n1. Four *B cells*, one per bit, each producing $G_i$, $P_i$ and later $s_i$ (one AND, one XOR, and an XOR for the sum).\n2. A *carry look-ahead logic* block that implements the equations above and feeds $c_1$ to $c_4$ back to the B cells.\n3. Outputs $s_3..s_0$ and $c_4$.\n\n**Timing:** $G_i, P_i$ take 1 gate delay, all carries take 2 more (3 in total), and the sums 1 more, so the 4-bit result is ready in **4 gate delays**, independent of carry ripple ($c_4$ after 3).\n\n**Larger adders (block/hierarchical CLA):** fan-in limits a single-level CLA to about 4 to 8 bits. For 16 bits, four 4-bit CLA blocks are used, each producing block functions\n$$G_0^I = G_3 + P_3G_2 + P_3P_2G_1 + P_3P_2P_1G_0, \\qquad P_0^I = P_3P_2P_1P_0$$\nA second-level look-ahead unit computes the block carries $c_4 = G_0^I + P_0^Ic_0$, $c_8 = G_1^I + P_1^IG_0^I + P_1^IP_0^Ic_0$, and so on. Delay for 16 bits: $c_{16}$ after 5 gate delays and the sums after 8, compared with 32 for ripple carry. If blocks are instead rippled together, $c_{16}$ takes 9 and $s_{15}$ 10 gate delays.\n\n**Advantages:** much faster addition and scalability through hierarchy. **Disadvantages:** more gates and higher fan-in.",
-      "answer_source": "generated",
-      "chapter": "Unit 3: Design of ALU"
-    },
-    {
-      "question_number": "27.",
-      "question_text": "Explain floating point arithmetic addition / subtraction with its flow chart.",
-      "marks": 15,
-      "answer": "Floating-point numbers have the form $\\pm M\\times 2^{E}$ (IEEE 754 single precision: 1 sign bit, an 8-bit exponent with bias 127, and a 23-bit fraction with a hidden 1).\n\n**Algorithm (flow chart steps):**\n1. **Check for zero:** if either operand is 0, the result is the other operand (negated for B in A−B). For subtraction, change the sign of B and perform addition.\n2. **Compare exponents:** compute $d = E_A - E_B$.\n3. **Align mantissas:** shift the mantissa of the number with the smaller exponent right by $|d|$ places and set its exponent to the larger one. Guard, round and sticky bits are kept.\n4. **Add/subtract mantissas:** if the signs are equal, add the magnitudes; otherwise subtract the smaller from the larger. The result takes the sign of the larger magnitude.\n5. **Check the result:** if the mantissa is 0, the result is 0.\n6. **Normalise:** if the mantissa overflowed (for example 10.xxx), shift right 1 and increment the exponent, then check for exponent overflow. If there are leading zeros, shift left and decrement the exponent until the form is 1.xxx, then check for underflow.\n7. **Round** to 23 bits (re-normalise if rounding overflows).\n8. **Pack** the sign, biased exponent and fraction.\n\n**Flow chart outline:** Start → Zero check → Compare exponents → Shift smaller mantissa right / increment its exponent until the exponents are equal → Add/Sub signed mantissas → Result zero? → Overflow? (shift right, E+1, exponent overflow?) → Normalised? (shift left, E−1, underflow?) → Round → End.\n\n**Hardware:** an exponent subtractor feeds a SWAP unit and a right shifter (by d), then the mantissa adder/subtractor, a leading-zero detector, a normalising shifter, and an exponent adjust unit.\n\n**Example:** $1.100\\times2^3 + 1.000\\times2^1$. Here $d=2$, so the second operand becomes $0.010\\times2^3$. The sum is $1.110\\times2^3$, which is already normalised ($12 + 2 = 14$).",
-      "answer_source": "generated",
-      "chapter": "Unit 3: Design of ALU"
-    }
-  ]
+    "formal_filename": "2023-05_ET_QP.json",
+    "paper_title": "B.Tech. DEGREE EXAMINATION, MAY 2023 - Third Semester - 21CSS201T - COMPUTER ORGANIZATION ARCHITECTURE",
+    "source": "2023-05 ET",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "The binary equivalent of the decimal number 26.2 is ______",
+            "options": [
+                "10010.1101",
+                "11010.0011",
+                "11110.1110",
+                "01110.0011"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "$26=11010_2$; $0.2\\times2=0.4\\to0,\\ 0.8\\to0,\\ 1.6\\to1,\\ 1.2\\to1$ so $0.2\\approx0.0011_2$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "2",
+            "question_text": "Find the hexadecimal value for the decimal number 264",
+            "options": [
+                "128",
+                "108",
+                "2A1",
+                "761"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "$264=1\\times256+0\\times16+8$, so $264_{10}=108_{16}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "3",
+            "question_text": "The 2's complement of the binary number 101101 is ______",
+            "options": [
+                "011010",
+                "100010",
+                "001010",
+                "010011"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "1's complement = 010010; adding 1 gives 010011.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "4",
+            "question_text": "Signed 2's complement of -16 in 8-bit representation is ______",
+            "options": [
+                "10111011",
+                "10001100",
+                "01110000",
+                "00110101"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "None of the options is correct. $+16=00010000$; inverting gives 11101111, adding 1 gives $11110000$. (Option (C) 01110000 differs only in the sign bit and appears to be a misprint of 11110000.)",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "5",
+            "question_text": "______ performs the desired operations on the input information.",
+            "options": [
+                "Arithmetic and logic unit",
+                "Input unit",
+                "Output unit",
+                "Control unit"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "The ALU carries out the arithmetic and logic operations on data.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "6",
+            "question_text": "______ convert the information in binary form to a form understood by user.",
+            "options": [
+                "Input unit",
+                "ALU",
+                "Output unit",
+                "Memory unit"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Output devices present processed binary results in human-understandable form.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "7",
+            "question_text": "______ holds the instructions that is currently being executed.",
+            "options": [
+                "Program counter",
+                "Instruction register",
+                "Registers",
+                "Memory address register"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "The IR holds the instruction being executed; the PC holds the address of the next instruction.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "8",
+            "question_text": "______ operations are required in memory access.",
+            "options": [
+                "Add",
+                "Move",
+                "Load and store",
+                "Halt"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Memory is accessed by Load (read) and Store (write) operations.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "9",
+            "question_text": "______ is a combinational logic circuit with two input and two output.",
+            "options": [
+                "Full adder",
+                "Half adder",
+                "Multiplexer",
+                "Decoder"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "It has inputs A, B and outputs Sum and Carry (a full adder has three inputs).",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "10",
+            "question_text": "______ reduces the number of summands by a factor of 2.",
+            "options": [
+                "Bit pair recoding",
+                "Binary pair recoding",
+                "Single bit recoding",
+                "Multiple bit recoding"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Recoding multiplier bit-pairs into digits from $\\{-2,-1,0,+1,+2\\}$ halves the number of partial products.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "11",
+            "question_text": "Where does the multiplier operand is stored?",
+            "options": [
+                "Cache",
+                "Instruction register",
+                "Program counter",
+                "Shift register"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "In the sequential multiplier the multiplier sits in register Q, which shifts right each cycle.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "12",
+            "question_text": "How many bits are needed to represent floating point number in a single precision form?",
+            "options": [
+                "16",
+                "32",
+                "64",
+                "50"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "IEEE 754 single precision uses 1 sign bit, 8 exponent bits and 23 mantissa bits.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "13",
+            "question_text": "A set of microinstructions for a single machine instruction is called ______",
+            "options": [
+                "Application program",
+                "Command",
+                "Micro program",
+                "System files"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "A sequence of microinstructions that implements one machine instruction is a microprogram (micro-routine).",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "14",
+            "question_text": "What approach is used to identify the data dependencies when dealing with software?",
+            "options": [
+                "Operand forwarding",
+                "Bubbling",
+                "NOP",
+                "Wait signal"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "When dependencies are handled in software, the compiler detects them and inserts NOP instructions (or reorders code). Operand forwarding is the hardware approach.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "15",
+            "question_text": "Branch instruction 'JUMP IF ZERO' is an example of ______",
+            "options": [
+                "Transferring the control",
+                "Conditional branch",
+                "Unconditional branch",
+                "Arithmetic branch"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "The jump happens only if the Zero flag is set.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "16",
+            "question_text": "______ memory is used in pipelining to increase the memory access speed.",
+            "options": [
+                "Special memory locations",
+                "Special purpose register",
+                "Cache",
+                "Buffers"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Pipelined fetch/operand stages need one-cycle memory access, which on-chip cache provides.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "17",
+            "question_text": "In ______ parallelism the computer architecture has multiple nodes, multiple CPUs and multiple threads.",
+            "options": [
+                "Processor",
+                "Memory",
+                "Control",
+                "Data"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Processor-level parallelism uses multiple processing nodes/CPUs (multiprocessors, multicomputers), each running threads concurrently.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "18",
+            "question_text": "______ is a measure of how many operations can be performed in parallel at the same time.",
+            "options": [
+                "Data parallelism",
+                "Task level parallelism",
+                "Instruction level parallelism",
+                "Transaction level parallelism"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "ILP measures how many instructions/operations of a program can execute simultaneously.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "19",
+            "question_text": "Type of computer where a single instruction would operate or execute on multiple data values is called ______",
+            "options": [
+                "Single instruction and multiple data stream",
+                "Single instruction and single data stream",
+                "Multiple instruction and single data stream",
+                "Multiple instruction and multiple data stream"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "This is SIMD (Single Instruction, Multiple Data) in Flynn's classification.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "20",
+            "question_text": "______ method is used to design the control unit of ARM processor.",
+            "options": [
+                "Hardwired",
+                "Microprogrammed",
+                "State machine",
+                "Combinational circuit"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "ARM is a RISC processor; RISC designs use hardwired control for speed.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "21. a.",
+            "question_text": "The binary numbers listed have a sign in the leftmost position and if negative are in 2's complement form. Perform the arithmetic operations indicated and verify the answers.\n(i) 101011 + 111000\n(ii) 001110 + 110010\n(iii) 111001 - 001010\n(iv) 101011 - 100110",
+            "marks": 8,
+            "answer": "All numbers are 6-bit signed 2's complement (range $-32$ to $+31$). Subtraction is done by adding the 2's complement of the subtrahend; the end carry is discarded.\n\n**(i)** $101011\\ (-21) + 111000\\ (-8)$\n```\n  101011\n+ 111000\n--------\n1 100011\n```\nDiscard carry: $100011 = -29$. Check: $-21 + (-8) = -29$. No overflow.\n\n**(ii)** $001110\\ (+14) + 110010\\ (-14)$\n```\n  001110\n+ 110010\n--------\n1 000000\n```\nResult $000000 = 0$. Check: $14 - 14 = 0$.\n\n**(iii)** $111001\\ (-7) - 001010\\ (+10)$: 2's complement of 001010 is 110110.\n```\n  111001\n+ 110110\n--------\n1 101111\n```\nResult $101111 = -17$. Check: $-7 - 10 = -17$.\n\n**(iv)** $101011\\ (-21) - 100110\\ (-26)$: 2's complement of 100110 is 011010.\n```\n  101011\n+ 011010\n--------\n1 000101\n```\nResult $000101 = +5$. Check: $-21 - (-26) = 5$.\n\nIn all four cases the carry into the sign bit equals the carry out, so there is no overflow.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "21. b.",
+            "question_text": "Draw the graphic symbol, algebraic function and truth table for the following logic gates.\n(i) AND\n(ii) OR\n(iii) NAND\n(iv) EX-OR",
+            "marks": 8,
+            "answer": "**(i) AND**: symbol is a D-shaped gate with inputs A, B. Function $F = A\\cdot B$. Output is 1 only when all inputs are 1.\n\n**(ii) OR**: symbol is a curved (shield-shaped) gate. Function $F = A + B$. Output is 1 when any input is 1.\n\n**(iii) NAND**: AND symbol with a bubble at the output. Function $F = \\overline{A\\cdot B}$. Output is 0 only when all inputs are 1. It is a universal gate.\n\n**(iv) EX-OR**: OR symbol with an extra curved line at the input side. Function $F = A\\oplus B = A\\bar B + \\bar A B$. Output is 1 when the inputs differ.\n\n| A | B | AND | OR | NAND | XOR |\n|---|---|---|---|---|---|\n| 0 | 0 | 0 | 0 | 1 | 0 |\n| 0 | 1 | 0 | 1 | 1 | 1 |\n| 1 | 0 | 0 | 1 | 1 | 1 |\n| 1 | 1 | 1 | 1 | 0 | 0 |",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "22. a.i.",
+            "question_text": "Define instructions and data.",
+            "marks": 2,
+            "answer": "**Instructions** are commands, encoded in binary, that tell the processor which operation to perform (for example Add, Load, Branch). A sequence of instructions stored in memory is a program.\n\n**Data** are the numbers and encoded characters that instructions use as operands. Data are also stored in memory, and the processor reads, processes and writes them.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "22. a.ii.",
+            "question_text": "Write about the operational concepts of the following instructions.\n(i) Add $R_0$, LOCA\n(ii) Load $R_2$, LOC\n(iii) Store $R_4$, LOC",
+            "marks": 6,
+            "answer": "**(i) Add $R_0$, LOCA**: adds the operand in memory location LOCA to the contents of register $R_0$ and places the sum in $R_0$: $R_0 \\leftarrow R_0 + [LOCA]$. Steps: PC→MAR, fetch instruction into IR, PC is incremented; the instruction is decoded; LOCA→MAR and a Read is issued; MDR gets [LOCA]; the ALU adds MDR and $R_0$; the result is written to $R_0$.\n\n**(ii) Load $R_2$, LOC**: copies the memory word at LOC into $R_2$: $R_2 \\leftarrow [LOC]$. Steps: LOC→MAR, Read, wait for MFC, MDR→$R_2$. Memory contents are unchanged.\n\n**(iii) Store $R_4$, LOC**: copies $R_4$ into memory location LOC: $[LOC] \\leftarrow R_4$. Steps: LOC→MAR, $R_4$→MDR, Write signal; the old contents of LOC are overwritten and $R_4$ is unchanged.\n\nIn every case the instruction is first fetched with PC→MAR, Read, MDR→IR, PC←PC+4, and then decoded by the control unit.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "22. b.i.",
+            "question_text": "A computer has 32 MB of memory. How many bits are needed to address any single byte in memory?",
+            "marks": 2,
+            "answer": "$32\\text{ MB} = 2^5 \\times 2^{20} = 2^{25}$ bytes, so **25 address bits** are needed.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "22. b.ii.",
+            "question_text": "Write about the following instruction types with an example.\n(i) Data transfer instructions\n(ii) Data manipulation instructions\n(iii) Arithmetic instructions",
+            "marks": 6,
+            "answer": "**(i) Data transfer instructions** move data between memory, registers and I/O without changing it. Examples: `LOAD R1, LOC` ($R1\\leftarrow[LOC]$), `STORE R1, LOC`, `MOVE R1, R2`, `PUSH`/`POP`, `IN`/`OUT`.\n\n**(ii) Data manipulation instructions** perform operations on data and are of three kinds: arithmetic, logical/bit-manipulation (`AND`, `OR`, `XOR`, `NOT`, `CLR`, `COM`) and shift/rotate (`SHL`, `SHR`, `ROL`, `ROR`, `ASHR`). Example: `AND R1, R2` performs a bitwise AND of R1 and R2.\n\n**(iii) Arithmetic instructions** are the arithmetic subset of data manipulation: `ADD R1, R2, R3` ($R1\\leftarrow R2+R3$), `SUB`, `MUL`, `DIV`, `INC`, `DEC`, `NEG`. They update the condition flags (Z, N, C, V).",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "23. a.",
+            "question_text": "Write about the 4-bit binary parallel adder/subtractor with its diagram.",
+            "marks": 8,
+            "answer": "A 4-bit parallel adder/subtractor uses four full adders (FA0 to FA3) connected in ripple-carry fashion, plus four XOR gates on the B inputs, all controlled by a mode line M.\n\n**Diagram description:** for each bit $i$, input $B_i$ goes through an XOR gate with M, giving $B_i\\oplus M$, and this feeds FA$_i$ together with $A_i$. M is also connected to $C_0$ (carry-in of FA0). The carry-out $C_{i+1}$ of each FA goes to the next stage. The outputs are $S_3S_2S_1S_0$ and $C_4$, and overflow is $V = C_4 \\oplus C_3$.\n\n**Operation:**\n- M = 0 (add): $B_i\\oplus0 = B_i$ and $C_0=0$, so $S = A + B$.\n- M = 1 (subtract): $B_i\\oplus1 = \\bar B_i$ and $C_0 = 1$, so $S = A + \\bar B + 1 = A - B$ (2's complement subtraction).\n\nEach full adder computes $S_i = A_i\\oplus B_i'\\oplus C_i$ and $C_{i+1} = A_iB_i' + C_i(A_i\\oplus B_i')$.\n\n**Example:** $A=0111$ (7), $B=0010$ (2), M=1: $0111 + 1101 + 1 = 1\\,0101$, so the result is $0101 = 5$ (the carry is discarded).\n\nThe drawback is ripple delay: the carry passes through all n stages, so the delay is about $2n$ gate delays. Carry look-ahead adders remove this.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "23. b.i.",
+            "question_text": "What are the advantages of bit pair recoding of multipliers?",
+            "marks": 3,
+            "answer": "- It halves the maximum number of summands (partial products), from n to n/2, which speeds up multiplication.\n- Each recoded digit is in $\\{-2,-1,0,+1,+2\\}$, so the partial product is just 0, ±M or ±2M (a shift of M), all easy to produce.\n- It handles positive and negative (2's complement) multipliers uniformly, as Booth's algorithm does.\n- It avoids Booth's worst case (alternating 1s and 0s), giving a guaranteed n/2 additions and less hardware time.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "23. b.ii.",
+            "question_text": "Multiply $(+13)\\times(-6)$ by using bit pair recoding method.",
+            "marks": 5,
+            "answer": "Multiplicand $M = +13 = 01101$, multiplier $Q = -6 = 11010$ (5-bit 2's complement).\n\n**Recoding:** append an implied 0 to the right of the multiplier and sign-extend it to an even length: $1\\,11010\\,0$.\nTake bit groups $(b_{i+1}, b_i, b_{i-1})$ from the right:\n- $(b_1,b_0,b_{-1}) = (1,0,0) \\to -2$\n- $(b_3,b_2,b_1) = (1,0,1) \\to -1$\n- $(b_5,b_4,b_3) = (1,1,1) \\to 0$\n\nRecoded multiplier: $(0,\\ -1,\\ -2)$, which checks as $0\\cdot16 - 1\\cdot4 - 2\\cdot1 = -6$.\n\n**Partial products (10-bit, sign-extended):**\n- Digit $-2$ at weight 1: $-2M = -26 = 1111100110$\n- Digit $-1$ at weight 4: $-M = -13$, shifted left 2 places gives $-52 = 1111001100$\n- Digit $0$ at weight 16: $0000000000$\n\n```\n  1111100110   (-26)\n+ 1111001100   (-52)\n+ 0000000000\n------------\n  1110110010   (-78)\n```\nCheck: $78 = 0001001110$, and its 2's complement is $1110110010$. So $(+13)\\times(-6) = -78$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "24. a.",
+            "question_text": "What are the control signals generated by control unit to execute\n(i) Add $(R_3)$, $R_1$\n(ii) Unconditional branching",
+            "marks": 8,
+            "answer": "This uses the single-bus organisation with registers PC, MAR, MDR, IR, Y, Z.\n\n**(i) Add (R3), R1**, meaning $R1 \\leftarrow R1 + [R3]$:\n1. PC$_{out}$, MAR$_{in}$, Read, Select4, Add, Z$_{in}$\n2. Z$_{out}$, PC$_{in}$, Y$_{in}$, WMFC\n3. MDR$_{out}$, IR$_{in}$\n4. R3$_{out}$, MAR$_{in}$, Read\n5. R1$_{out}$, Y$_{in}$, WMFC\n6. MDR$_{out}$, SelectY, Add, Z$_{in}$\n7. Z$_{out}$, R1$_{in}$, End\n\nSteps 1 to 3 fetch the instruction, step 4 reads the operand addressed by R3, steps 5 and 6 add it, and step 7 writes the result.\n\n**(ii) Unconditional branch** ($PC \\leftarrow PC + \\text{offset}$):\n1. PC$_{out}$, MAR$_{in}$, Read, Select4, Add, Z$_{in}$\n2. Z$_{out}$, PC$_{in}$, Y$_{in}$, WMFC\n3. MDR$_{out}$, IR$_{in}$\n4. Offset-field-of-IR$_{out}$, Add, Z$_{in}$\n5. Z$_{out}$, PC$_{in}$, End\n\nThe updated PC (already PC+4, held in Y) is added to the branch offset taken from the IR, and the sum is loaded into PC. A conditional branch differs only in step 4: if the condition is false, End is issued and the PC is not changed.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "24. b.i.",
+            "question_text": "Define control word, control variables, microinstructions and microprogram.",
+            "marks": 4,
+            "answer": "- **Control word (CW):** a word whose individual bits each represent one control signal; one CW gives the signals asserted in one step of execution.\n- **Control variables:** the binary variables (control signals such as PC$_{out}$, MAR$_{in}$, Read, Add) that, when asserted, cause micro-operations to happen.\n- **Microinstruction:** a control word stored in control memory, usually extended with sequencing (next-address/branch) fields; it specifies one or more micro-operations.\n- **Microprogram:** an ordered sequence of microinstructions in control memory (control store) that implements a machine instruction or the whole instruction set.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "24. b.ii.",
+            "question_text": "What is the format of a microinstruction and explain its fields briefly with diagram.",
+            "marks": 4,
+            "answer": "A typical (horizontal/field-encoded) microinstruction format is:\n\n```\n| F1 | F2 | F3 | CD (condition) | BR (branch) | AD (address) |\n|  micro-operation fields  |     sequencing fields         |\n```\n\n- **Micro-operation fields (F1, F2, F3 ...):** encoded groups of mutually exclusive control signals. For example F1 selects the source register gated onto the bus, F2 the destination, F3 the ALU function. Each field is decoded to produce the actual signals.\n- **CD (condition select):** selects the status bit to test (unconditional/always, Z, N, C, V, I).\n- **BR (branch type):** gives how the next address is formed: JMP, CALL, RET, or MAP (from the opcode).\n- **AD (address field):** the branch target address in control memory.\n\nThe next address is either μPC+1 or the AD/mapped address, depending on CD and BR. Horizontal formats use one bit per signal (long words, high parallelism); vertical formats use encoded fields (short words, need decoders).",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "25. a.",
+            "question_text": "Write in detail about any two types of software parallelism.",
+            "marks": 8,
+            "answer": "Software parallelism is defined by the control and data dependences of a program, as shown in its program flow graph.\n\n**1. Control parallelism (task/functional parallelism):** two or more different operations or tasks are performed at the same time. It appears as pipelining (different stages of different instructions overlap) or as multiple functional units working on independent tasks. For example, in `a=b+c; d=e*f;` the add and the multiply can run on separate units at once. It is limited by pipeline length and by the number of functional units, and is usually exploited by hardware or compiler scheduling.\n\n**2. Data parallelism:** the same operation is applied to many data elements simultaneously, for example `for i: C[i]=A[i]+B[i]` on SIMD/vector processors or GPUs. It offers the highest potential speed-up for regular, large data sets and is simpler to program because control is single-threaded (SPMD). It is limited by data dependences and by the cost of data distribution.\n\n**Other levels (any can be used):** instruction-level parallelism (fine grain, under 20 instructions, exploited by superscalar/VLIW processors and compilers); loop-level parallelism (independent iterations); procedure/subprogram-level (medium grain); job/program-level (coarse grain, multiprogramming).\n\nThe degree of parallelism (DOP) and the grain size together determine the speed-up and the communication overhead.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "25. b.",
+            "question_text": "Explain about the cache coherence problem and give solutions for this problem.",
+            "marks": 8,
+            "answer": "**Problem:** in a shared-memory multiprocessor each processor has a private cache. When several caches hold copies of the same memory block and one processor writes its copy, the other copies (and possibly main memory) become stale, so processors may read inconsistent values. The causes are: (1) sharing of writable data, (2) process migration between processors, (3) I/O (DMA) that bypasses the caches. Example: P1 and P2 both cache X=5; P1 writes X=7 in its cache; P2 still reads 5.\n\n**Solutions:**\n1. **Snoopy protocols (bus-based):** every cache controller monitors (snoops) the shared bus.\n   - *Write-invalidate:* a writing processor broadcasts an invalidate, so other copies are marked invalid and must re-fetch. MSI/MESI protocols use states Modified, Exclusive, Shared and Invalid.\n   - *Write-update (broadcast):* the new value is broadcast and all copies are updated.\n2. **Directory-based protocols (scalable, for non-bus networks):** a directory records which caches hold each block and its state; on a write, invalidations or updates are sent only to the caches that hold copies. The directory can be full-map, limited, or chained.\n3. **Software solutions:** the compiler or OS marks shared writable data as non-cacheable, or inserts cache flush/invalidate instructions at synchronisation points.\n4. **Write-through with invalidation:** keeps memory always up to date, combined with snooping.\n\nA coherent system must guarantee write propagation (writes eventually become visible to all processors) and write serialisation (all processors see writes to the same location in the same order).",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "26.",
+            "question_text": "Explain the procedure of constructing a fast adder, carry look-ahead adder with its diagram.",
+            "marks": 15,
+            "answer": "**Need:** in a ripple-carry adder the carry must ripple through all n stages, giving a delay of about $2n$ gate delays. A carry look-ahead adder (CLA) generates all the carries in parallel.\n\n**Generate and propagate functions:** for each bit $i$,\n$$G_i = x_i y_i, \\qquad P_i = x_i \\oplus y_i \\ (\\text{or } x_i + y_i)$$\n$$c_{i+1} = G_i + P_i c_i, \\qquad s_i = P_i \\oplus c_i$$\n\n**Expanding the carries for 4 bits:**\n$$c_1 = G_0 + P_0c_0$$\n$$c_2 = G_1 + P_1G_0 + P_1P_0c_0$$\n$$c_3 = G_2 + P_2G_1 + P_2P_1G_0 + P_2P_1P_0c_0$$\n$$c_4 = G_3 + P_3G_2 + P_3P_2G_1 + P_3P_2P_1G_0 + P_3P_2P_1P_0c_0$$\nEvery carry is a two-level AND-OR function of the G, P and $c_0$ signals.\n\n**Construction (diagram):**\n1. Four *B cells*, one per bit, each producing $G_i$, $P_i$ and later $s_i$ (one AND, one XOR, and an XOR for the sum).\n2. A *carry look-ahead logic* block that implements the equations above and feeds $c_1$ to $c_4$ back to the B cells.\n3. Outputs $s_3..s_0$ and $c_4$.\n\n**Timing:** $G_i, P_i$ take 1 gate delay, all carries take 2 more (3 in total), and the sums 1 more, so the 4-bit result is ready in **4 gate delays**, independent of carry ripple ($c_4$ after 3).\n\n**Larger adders (block/hierarchical CLA):** fan-in limits a single-level CLA to about 4 to 8 bits. For 16 bits, four 4-bit CLA blocks are used, each producing block functions\n$$G_0^I = G_3 + P_3G_2 + P_3P_2G_1 + P_3P_2P_1G_0, \\qquad P_0^I = P_3P_2P_1P_0$$\nA second-level look-ahead unit computes the block carries $c_4 = G_0^I + P_0^Ic_0$, $c_8 = G_1^I + P_1^IG_0^I + P_1^IP_0^Ic_0$, and so on. Delay for 16 bits: $c_{16}$ after 5 gate delays and the sums after 8, compared with 32 for ripple carry. If blocks are instead rippled together, $c_{16}$ takes 9 and $s_{15}$ 10 gate delays.\n\n**Advantages:** much faster addition and scalability through hierarchy. **Disadvantages:** more gates and higher fan-in.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "27.",
+            "question_text": "Explain floating point arithmetic addition / subtraction with its flow chart.",
+            "marks": 15,
+            "answer": "Floating-point numbers have the form $\\pm M\\times 2^{E}$ (IEEE 754 single precision: 1 sign bit, an 8-bit exponent with bias 127, and a 23-bit fraction with a hidden 1).\n\n**Algorithm (flow chart steps):**\n1. **Check for zero:** if either operand is 0, the result is the other operand (negated for B in A−B). For subtraction, change the sign of B and perform addition.\n2. **Compare exponents:** compute $d = E_A - E_B$.\n3. **Align mantissas:** shift the mantissa of the number with the smaller exponent right by $|d|$ places and set its exponent to the larger one. Guard, round and sticky bits are kept.\n4. **Add/subtract mantissas:** if the signs are equal, add the magnitudes; otherwise subtract the smaller from the larger. The result takes the sign of the larger magnitude.\n5. **Check the result:** if the mantissa is 0, the result is 0.\n6. **Normalise:** if the mantissa overflowed (for example 10.xxx), shift right 1 and increment the exponent, then check for exponent overflow. If there are leading zeros, shift left and decrement the exponent until the form is 1.xxx, then check for underflow.\n7. **Round** to 23 bits (re-normalise if rounding overflows).\n8. **Pack** the sign, biased exponent and fraction.\n\n**Flow chart outline:** Start → Zero check → Compare exponents → Shift smaller mantissa right / increment its exponent until the exponents are equal → Add/Sub signed mantissas → Result zero? → Overflow? (shift right, E+1, exponent overflow?) → Normalised? (shift left, E−1, underflow?) → Round → End.\n\n**Hardware:** an exponent subtractor feeds a SWAP unit and a right shifter (by d), then the mantissa adder/subtractor, a leading-zero detector, a normalising shifter, and an exponent adjust unit.\n\n**Example:** $1.100\\times2^3 + 1.000\\times2^1$. Here $d=2$, so the second operand becomes $0.010\\times2^3$. The sum is $1.110\\times2^3$, which is already normalised ($12 + 2 = 14$).",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        }
+    ]
 }

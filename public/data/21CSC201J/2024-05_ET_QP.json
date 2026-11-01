@@ -5,161 +5,301 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Which of the following case does not exist in complexity theory?\n(A) Best case\n(B) Worst case\n(C) Average case\n(D) Base case",
+            "question_text": "Which of the following case does not exist in complexity theory?",
+            "options": [
+                "Best case",
+                "Worst case",
+                "Average case",
+                "Base case"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Base case. In complexity theory, we analyze algorithmic performance using Best, Worst, and Average cases. 'Base case' is a term used in recursion or mathematical induction, not as a standard complexity analysis classification.",
+            "answer": "In complexity theory, we analyze algorithmic performance using Best, Worst, and Average cases. 'Base case' is a term used in recursion or mathematical induction, not as a standard complexity analysis classification.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
         {
             "question_number": "2",
-            "question_text": "How many times the following code prints the string \"hello\"\n\n```c\nfor (i = 1; i<=50; i++)\n    printf (\"hello\");\n\n```\n\n(A) 1\n(B) 50\n(C) Zero\n(D) 49",
+            "question_text": "How many times the following code prints the string \"hello\"\n\n```c\nfor (i = 1; i<=50; i++)\n    printf (\"hello\");\n\n```",
+            "options": [
+                "1",
+                "50",
+                "Zero",
+                "49"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) 50. The loop variable `i` starts at 1 and increments by 1 in each iteration, continuing as long as `i` is less than or equal to 50. This results in exactly 50 iterations.",
+            "answer": "The loop variable `i` starts at 1 and increments by 1 in each iteration, continuing as long as `i` is less than or equal to 50. This results in exactly 50 iterations.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
         {
             "question_number": "3",
-            "question_text": "Elements in an array are accessed _________\n(A) Randomly\n(B) Sequentially\n(C) Exponentially\n(D) Logarithmically",
+            "question_text": "Elements in an array are accessed _________",
+            "options": [
+                "Randomly",
+                "Sequentially",
+                "Exponentially",
+                "Logarithmically"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Randomly. Array elements can be accessed directly (random access) in $O(1)$ constant time using their index.",
+            "answer": "Array elements can be accessed directly (random access) in $O(1)$ constant time using their index.",
             "answer_source": "generated",
             "chapter": "Unit 2: List Structure"
         },
         {
             "question_number": "4",
-            "question_text": "Which loop is guaranteed to execute at least one time\n(A) For\n(B) While\n(C) Do while\n(D) Both for and while",
+            "question_text": "Which loop is guaranteed to execute at least one time",
+            "options": [
+                "For",
+                "While",
+                "Do while",
+                "Both for and while"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Do while. A do-while loop evaluates its condition at the end of the loop body, guaranteeing that the body executes at least once.",
+            "answer": "A do-while loop evaluates its condition at the end of the loop body, guaranteeing that the body executes at least once.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
         {
             "question_number": "5",
-            "question_text": "Linked list data structure offers considerable saving in\n(A) Computational time\n(B) Space utilization\n(C) Space utilization and computational time\n(D) Speed utilization",
+            "question_text": "Linked list data structure offers considerable saving in",
+            "options": [
+                "Computational time",
+                "Space utilization",
+                "Space utilization and computational time",
+                "Speed utilization"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Space utilization. Linked lists allow dynamic memory allocation, allocating memory only when needed, which helps prevent wasted memory overhead that can occur with pre-allocated static arrays.",
+            "answer": "Linked lists allow dynamic memory allocation, allocating memory only when needed, which helps prevent wasted memory overhead that can occur with pre-allocated static arrays.",
             "answer_source": "generated",
             "chapter": "Unit 2: List Structure"
         },
         {
             "question_number": "6",
-            "question_text": "Which of the following is false about a double linked list?\n(A) Navigate in both the directions\n(B) It requires more space than a singly linked list\n(C) The insertion and deletion of a node take a bit longer\n(D) Implementing a double LL is easier than SLL",
+            "question_text": "Which of the following is false about a double linked list?",
+            "options": [
+                "Navigate in both the directions",
+                "It requires more space than a singly linked list",
+                "The insertion and deletion of a node take a bit longer",
+                "Implementing a double LL is easier than SLL"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Implementing a double LL is easier than SLL. Implementing a doubly linked list is actually more complex than a singly linked list because we have to maintain both `next` and `prev` pointers for every operation.",
+            "answer": "Implementing a doubly linked list is actually more complex than a singly linked list because we have to maintain both `next` and `prev` pointers for every operation.",
             "answer_source": "generated",
             "chapter": "Unit 2: List Structure"
         },
         {
             "question_number": "7",
-            "question_text": "Which of the following application makes use of a circular linked list?\n(A) Undo operation in a text editor\n(B) Recursive function calls\n(C) Allocating CPU to resources\n(D) Implement hash tables",
+            "question_text": "Which of the following application makes use of a circular linked list?",
+            "options": [
+                "Undo operation in a text editor",
+                "Recursive function calls",
+                "Allocating CPU to resources",
+                "Implement hash tables"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Allocating CPU to resources. Round-robin CPU scheduling commonly uses a circular list to loop through processes continuously.",
+            "answer": "Round-robin CPU scheduling commonly uses a circular list to loop through processes continuously.",
             "answer_source": "generated",
             "chapter": "Unit 2: List Structure"
         },
         {
             "question_number": "8",
-            "question_text": "What is the functionality of the below code:\n\n```c\npublic void function (Node node)\n{\n  if (size == 0)\n    head = node;\n  else\n  {\n    Node temp, cur;\n    for (cur = head; (temp = cur.getNext()) != null; cur = temp)\n        cur.setNext(node);\n  }\n  size ++;\n}\n\n```\n\n(A) Inserting a node at the beginning of the list\n(B) Deleting a node at the beginning of the list\n(C) Inserting a node at the end of the list\n(D) Deleting a node at the end of the list",
+            "question_text": "What is the functionality of the below code:\n\n```c\npublic void function (Node node)\n{\n  if (size == 0)\n    head = node;\n  else\n  {\n    Node temp, cur;\n    for (cur = head; (temp = cur.getNext()) != null; cur = temp)\n        cur.setNext(node);\n  }\n  size ++;\n}\n\n```",
+            "options": [
+                "Inserting a node at the beginning of the list",
+                "Deleting a node at the beginning of the list",
+                "Inserting a node at the end of the list",
+                "Deleting a node at the end of the list"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Inserting a node at the end of the list. The loop traverses the list until it reaches the last node (where `cur.getNext() == null`), and then appends the new node to the end of the list, updating the size.",
+            "answer": "The loop traverses the list until it reaches the last node (where `cur.getNext() == null`), and then appends the new node to the end of the list, updating the size.",
             "answer_source": "generated",
             "chapter": "Unit 2: List Structure"
         },
         {
             "question_number": "9",
-            "question_text": "What does the following function check for?\n\n```c\n#define max 10\ntypedef struct stack\n{\n  int top;\n  int item [max];\n} stack;\nint function (stack *s)\n{\n  if (s->top == -1)\n    return 1;\n  else\n    return 0;\n}\n\n```\n\n(A) Full stack\n(B) Invalid stack\n(C) Empty stack\n(D) Infinite stack",
+            "question_text": "What does the following function check for?\n\n```c\n#define max 10\ntypedef struct stack\n{\n  int top;\n  int item [max];\n} stack;\nint function (stack *s)\n{\n  if (s->top == -1)\n    return 1;\n  else\n    return 0;\n}\n\n```",
+            "options": [
+                "Full stack",
+                "Invalid stack",
+                "Empty stack",
+                "Infinite stack"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Empty stack. In an array-based stack implementation, a `top` value of `-1` indicates that there are no elements in the stack, so the function checks if the stack is empty.",
+            "answer": "In an array-based stack implementation, a `top` value of `-1` indicates that there are no elements in the stack, so the function checks if the stack is empty.",
             "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },
         {
             "question_number": "10",
-            "question_text": "The postfix form of the expression $(A + B) * (C * D - E) * F / G$\n(A) $AB + CD * E - FG / **$\n(B) $AB + CD * E - F * * G /$\n(C) $AB + CD * E - * F * G /$\n(D) $AB + CDE * - * F * G /$",
+            "question_text": "The postfix form of the expression $(A + B) * (C * D - E) * F / G$",
+            "options": [
+                "$AB + CD * E - FG / **$",
+                "$AB + CD * E - F * * G /$",
+                "$AB + CD * E - * F * G /$",
+                "$AB + CDE * - * F * G /$"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(B) $AB + CD * E - F * * G /$. Let's trace the conversion: \n1. $(A + B) \\rightarrow AB+$\n2. $(C * D - E) \\rightarrow CD*E-$\n3. $(A+B) * (C*D - E) \\rightarrow AB+CD*E-*$\n4. $((A+B) * (C*D - E)) * F \\rightarrow AB+CD*E-*F*$\n5. $(((A+B) * (C*D - E)) * F) / G \\rightarrow AB+CD*E-*F*G/$",
+            "answer": "Convert step by step:\n1. $(A + B) \\rightarrow AB+$\n2. $(C * D - E) \\rightarrow CD*E-$\n3. $(A+B) * (C*D - E) \\rightarrow AB+CD*E-*$\n4. multiplying by $F$ gives $AB+CD*E-*F*$\n5. dividing by $G$ gives $AB+CD*E-*F*G/$\n\nThis matches option (C). Option (B) places both $*$ operators after $F$ and so does not correspond to $((A+B)*(C*D-E))*F$.",
             "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },
         {
             "question_number": "11",
-            "question_text": "A linear list of elements in which deletion can be done from one end and insertion can take place only at the other end is known as\n(A) Queue\n(B) Stack\n(C) Tree\n(D) Linked list",
+            "question_text": "A linear list of elements in which deletion can be done from one end and insertion can take place only at the other end is known as",
+            "options": [
+                "Queue",
+                "Stack",
+                "Tree",
+                "Linked list"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Queue. A queue operates on a FIFO (First-In, First-Out) basis, where insertion (enqueue) occurs at the rear end and deletion (dequeue) occurs at the front end.",
+            "answer": "A queue operates on a FIFO (First-In, First-Out) basis, where insertion (enqueue) occurs at the rear end and deletion (dequeue) occurs at the front end.",
             "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },
         {
             "question_number": "12",
-            "question_text": "A data structure in which elements can be inserted or deleted at / from both ends but not in the middle is?\n(A) Queue\n(B) Circular queue\n(C) Dequeue\n(D) Priority queue",
+            "question_text": "A data structure in which elements can be inserted or deleted at / from both ends but not in the middle is?",
+            "options": [
+                "Queue",
+                "Circular queue",
+                "Dequeue",
+                "Priority queue"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Dequeue (Double Ended Queue). A deque allows insertion and deletion of elements at both the front and rear ends, but not in the middle.",
+            "answer": "(Double Ended Queue). A deque allows insertion and deletion of elements at both the front and rear ends, but not in the middle.",
             "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },
         {
             "question_number": "13",
-            "question_text": "Find the pre-order traversal sequence for the binary tree shown in the image.\n(A) HIDEGFJKGCA\n(B) HDIBEAFCJGK\n(C) ABDHIECFGJK\n(D) ABCDEFGHIJK",
+            "question_text": "Find the pre-order traversal sequence for the binary tree shown in the image.",
+            "options": [
+                "HIDEGFJKGCA",
+                "HDIBEAFCJGK",
+                "ABDHIECFGJK",
+                "ABCDEFGHIJK"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) ABDHIECFGJK. Pre-order traversal follows the Root -> Left -> Right traversal path. Starting from root A, we visit B, then D, then D's left child H, then its right child I, then B's right child E. Then we traverse the right side starting at C, visiting F, G, and subsequent children J and K.",
+            "answer": "Pre-order traversal follows the Root -> Left -> Right traversal path. Starting from root A, we visit B, then D, then D's left child H, then its right child I, then B's right child E. Then we traverse the right side starting at C, visiting F, G, and subsequent children J and K.",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
         {
             "question_number": "14",
-            "question_text": "What is direct addressing?\n(A) Distinct array position for every possible key\n(B) Fewer array positions than keys\n(C) Fewer keys than array positions\n(D) Same array position for all keys",
+            "question_text": "What is direct addressing?",
+            "options": [
+                "Distinct array position for every possible key",
+                "Fewer array positions than keys",
+                "Fewer keys than array positions",
+                "Same array position for all keys"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Distinct array position for every possible key. In direct addressing (or a direct address table), each key corresponds directly to a unique slot in the array, avoiding collisions entirely but requiring a universe of keys that fits in memory.",
+            "answer": "In direct addressing (or a direct address table), each key corresponds directly to a unique slot in the array, avoiding collisions entirely but requiring a universe of keys that fits in memory.",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
         {
             "question_number": "15",
-            "question_text": "A binary search tree contains values $7, 8, 13, 26, 35, 40, 70, 75$. Which one of the following is a valid post order sequence of the tree provided the pre-order sequence as $35, 13, 7, 8, 26, 70, 40, 75$?\n(A) $7, 8, 26, 13, 75, 40, 70, 35$\n(B) $26, 13, 7, 8, 70, 75, 40, 35$\n(C) $7, 8, 13, 26, 35, 40, 70, 75$\n(D) $8, 7, 26, 13, 40, 75, 70, 35$",
+            "question_text": "A binary search tree contains values $7, 8, 13, 26, 35, 40, 70, 75$. Which one of the following is a valid post order sequence of the tree provided the pre-order sequence as $35, 13, 7, 8, 26, 70, 40, 75$?",
+            "options": [
+                "$7, 8, 26, 13, 75, 40, 70, 35$",
+                "$26, 13, 7, 8, 70, 75, 40, 35$",
+                "$7, 8, 13, 26, 35, 40, 70, 75$",
+                "$8, 7, 26, 13, 40, 75, 70, 35$"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) $8, 7, 26, 13, 40, 75, 70, 35$. Reconstructing the BST from the pre-order sequence:\n- Root is $35$.\n- Left subtree contains $13, 7, 8, 26$ with $13$ as root, $7$ as left child of $13$, $8$ as right child of $7$, and $26$ as right child of $13$.\n- Right subtree contains $70, 40, 75$ with $70$ as root, $40$ as left child, and $75$ as right child.\nTracing post-order (Left, Right, Root) yields: $8, 7, 26, 13, 40, 75, 70, 35$.",
+            "answer": "Reconstructing the BST from the pre-order sequence:\n- Root is $35$.\n- Left subtree contains $13, 7, 8, 26$ with $13$ as root, $7$ as left child of $13$, $8$ as right child of $7$, and $26$ as right child of $13$.\n- Right subtree contains $70, 40, 75$ with $70$ as root, $40$ as left child, and $75$ as right child.\nTracing post-order (Left, Right, Root) yields: $8, 7, 26, 13, 40, 75, 70, 35$.",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
         {
             "question_number": "16",
-            "question_text": "What data organization method is used in hash tables?\n(A) Stack\n(B) Array\n(C) Linked list\n(D) Queue",
+            "question_text": "What data organization method is used in hash tables?",
+            "options": [
+                "Stack",
+                "Array",
+                "Linked list",
+                "Queue"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Array. Hash tables primarily use an array (often called the hash table directory or bucket array) to store key-value pairs or pointers to them, accessing slots directly via hash codes.",
+            "answer": "Hash tables primarily use an array (often called the hash table directory or bucket array) to store key-value pairs or pointers to them, accessing slots directly via hash codes.",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
         {
             "question_number": "17",
-            "question_text": "What would be the number of zero in the adjacency matrix of the given graph?\n(A) 10\n(B) 6\n(C) 16\n(D) 0",
+            "question_text": "What would be the number of zero in the adjacency matrix of the given graph?",
+            "options": [
+                "10",
+                "6",
+                "16",
+                "0"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) 10. For a graph with 4 vertices, the adjacency matrix size is $4 \\times 4 = 16$ elements. If the graph is interpreted as an undirected graph with 3 edges (e.g., missing one of the connections in the diagram), it has $3 \\times 2 = 6$ non-zero entries, leaving $16 - 6 = 10$ zeros. Alternatively, if it is a directed graph with 6 edges, it has $16 - 6 = 10$ zeros.",
+            "answer": "For a graph with 4 vertices, the adjacency matrix size is $4 \\times 4 = 16$ elements. If the graph is interpreted as an undirected graph with 3 edges (e.g., missing one of the connections in the diagram), it has $3 \\times 2 = 6$ non-zero entries, leaving $16 - 6 = 10$ zeros. Alternatively, if it is a directed graph with 6 edges, it has $16 - 6 = 10$ zeros.",
             "answer_source": "generated",
             "chapter": "Unit 5: Graph"
         },
         {
             "question_number": "18",
-            "question_text": "Which of the following is not a topological sorting of the given graph?\n(A) ABCDEF\n(B) ABFEDC\n(C) ABECFD\n(D) ABCDFE",
+            "question_text": "Which of the following is not a topological sorting of the given graph?",
+            "options": [
+                "ABCDEF",
+                "ABFEDC",
+                "ABECFD",
+                "ABCDFE"
+            ],
+            "correct_option": null,
             "marks": 1,
-            "answer": "(A) ABCDEF. In topological sorting, a node must appear before all nodes it has directed edges to. Since $F$ has in-degree 0, it must appear before its neighbors $A$ and $E$. Any sequence that violates the dependency order (like $A$ preceding $F$ or $E$ preceding $F$, and $C$ preceding $B$ or $D$) is invalid. Specifically, (A) is definitely not a topological sort because it completely reverses the required topological order of the graph.",
+            "answer": "The graph figure for this question is not available, so the answer cannot be verified. (A previously stored explanation was self-contradictory and has been removed.)",
             "answer_source": "generated",
             "chapter": "Unit 5: Graph"
         },
         {
             "question_number": "19",
-            "question_text": "The travelling salesman problem can be solved using.\n(A) Spanning tree\n(B) A minimum spanning tree\n(C) Bellman-Ford algorithm\n(D) DFS traversal",
+            "question_text": "The travelling salesman problem can be solved using.",
+            "options": [
+                "Spanning tree",
+                "A minimum spanning tree",
+                "Bellman-Ford algorithm",
+                "DFS traversal"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) A minimum spanning tree. While the Traveling Salesperson Problem (TSP) is NP-hard, approximation algorithms (such as the twice-around-the-MST heuristic or Christofides' algorithm) utilize a Minimum Spanning Tree (MST) as a base to find a near-optimal tour.",
+            "answer": "While the Traveling Salesperson Problem (TSP) is NP-hard, approximation algorithms (such as the twice-around-the-MST heuristic or Christofides' algorithm) utilize a Minimum Spanning Tree (MST) as a base to find a near-optimal tour.",
             "answer_source": "generated",
             "chapter": "Unit 5: Graph"
         },
         {
             "question_number": "20",
-            "question_text": "Consider the graph [shown in the image with nodes a, b, c, d, e, f]. What is the total cost of minimum spanning tree using Kruskals algorithm?\n(A) 24\n(B) 23\n(C) 15\n(D) 19",
+            "question_text": "Consider the graph [shown in the image with nodes a, b, c, d, e, f]. What is the total cost of minimum spanning tree using Kruskals algorithm?",
+            "options": [
+                "24",
+                "23",
+                "15",
+                "19"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) 19. Applying Kruskal's algorithm on the given graph:\n1. Sort the edges by weight:\n   - $(a, c) = 2$\n   - $(b, f) = 2$\n   - $(c, f) = 4$\n   - $(d, f) = 4$\n   - $(a, b) = 6$\n   - $(c, d) = 7$\n   - $(d, e) = 7$\n   - $(f, e) = 10$\n2. Select edges in ascending order that do not form a cycle:\n   - Choose $(a, c)$ (weight 2)\n   - Choose $(b, f)$ (weight 2)\n   - Choose $(c, f)$ (weight 4)\n   - Choose $(d, f)$ (weight 4)\n   - Choose $(d, e)$ (weight 7)\nTotal MST weight = $2 + 2 + 4 + 4 + 7 = 19$.",
+            "answer": "Applying Kruskal's algorithm on the given graph:\n1. Sort the edges by weight:\n   - $(a, c) = 2$\n   - $(b, f) = 2$\n   - $(c, f) = 4$\n   - $(d, f) = 4$\n   - $(a, b) = 6$\n   - $(c, d) = 7$\n   - $(d, e) = 7$\n   - $(f, e) = 10$\n2. Select edges in ascending order that do not form a cycle:\n   - Choose $(a, c)$ (weight 2)\n   - Choose $(b, f)$ (weight 2)\n   - Choose $(c, f)$ (weight 4)\n   - Choose $(d, f)$ (weight 4)\n   - Choose $(d, e)$ (weight 7)\nTotal MST weight = $2 + 2 + 4 + 4 + 7 = 19$.",
             "answer_source": "generated",
             "chapter": "Unit 5: Graph"
         },

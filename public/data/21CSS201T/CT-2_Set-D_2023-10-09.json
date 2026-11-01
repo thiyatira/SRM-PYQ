@@ -5,81 +5,151 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Which of the following is responsible for translating logical addresses to physical addresses?\na) Memory Address Register (MAR)\nb) Memory Data Register (MDR)\nc) Arithmetic Logic Unit (ALU)\nd) Memory Management Unit (MMU)",
+            "question_text": "Which of the following is responsible for translating logical addresses to physical addresses?",
+            "options": [
+                "Memory Address Register (MAR)",
+                "Memory Data Register (MDR)",
+                "Arithmetic Logic Unit (ALU)",
+                "Memory Management Unit (MMU)"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "d) Memory Management Unit (MMU). The MMU is a hardware component responsible for handling memory accesses requested by the CPU, which includes translating logical virtual addresses to physical addresses.",
+            "answer": "The MMU is a hardware component responsible for handling memory accesses requested by the CPU, which includes translating logical virtual addresses to physical addresses.",
             "answer_source": "provided",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "2",
-            "question_text": "Find the arithmetic left shift of 1 0 1 0 1\na) 0 1 0 1 0\nb) 1 0 1 0 1\nc) 0 1 0 1 1\nd) 1 0 1 0 0",
+            "question_text": "Find the arithmetic left shift of 1 0 1 0 1",
+            "options": [
+                "0 1 0 1 0",
+                "1 0 1 0 1",
+                "0 1 0 1 1",
+                "1 0 1 0 0"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "a) 0 1 0 1 0. An arithmetic left shift of 10101 shifts all bits one position to the left, introducing a 0 at the least significant bit (LSB), which yields 01010.",
+            "answer": "An arithmetic left shift of 10101 shifts all bits one position to the left, introducing a 0 at the least significant bit (LSB), which yields 01010.",
             "answer_source": "provided",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "3",
-            "question_text": "In 8086 microprocessor, the address bus is ___ bit wide\na) 12 Bit\nb) 10 Bit\nc) 16 Bit\nd) 20 Bit",
+            "question_text": "In 8086 microprocessor, the address bus is ___ bit wide",
+            "options": [
+                "12 Bit",
+                "10 Bit",
+                "16 Bit",
+                "20 Bit"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "d) 20 Bit. The 8086 microprocessor has a 20-bit address bus, which allows it to access up to $2^{20}$ bytes (1 MB) of memory.",
+            "answer": "The 8086 microprocessor has a 20-bit address bus, which allows it to access up to $2^{20}$ bytes (1 MB) of memory.",
             "answer_source": "provided",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "4",
-            "question_text": "Use DeMorgan’s theorem to find the complement of $A + BC$\na) $\\bar{A}(\\bar{B} + \\bar{C})$\nb) $ABC$\nc) $A(\\bar{B} + \\bar{C})$\nd) $A(BC)$",
+            "question_text": "Use DeMorgan’s theorem to find the complement of $A + BC$",
+            "options": [
+                "$\\bar{A}(\\bar{B} + \\bar{C})$",
+                "$ABC$",
+                "$A(\\bar{B} + \\bar{C})$",
+                "$A(BC)$"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "a) $\\bar{A}(\\bar{B} + \\bar{C})$. According to De Morgan's theorem, the complement of a sum is equal to the product of the complements of individual terms: $\\overline{A + BC} = \\bar{A} \\cdot \\overline{BC} = \\bar{A}(\\bar{B} + \\bar{C})$.",
+            "answer": "According to De Morgan's theorem, the complement of a sum is equal to the product of the complements of individual terms: $\\overline{A + BC} = \\bar{A} \\cdot \\overline{BC} = \\bar{A}(\\bar{B} + \\bar{C})$.",
             "answer_source": "provided",
             "chapter": "Unit 3: Design of ALU"
         },
         {
             "question_number": "5",
-            "question_text": "Carry lookahead adder logic uses the concept of __________\na) Inverting the inputs\nb) Complementing the outputs\nc) Carry Propagate and Carry Generate\nd) Ripple factor",
+            "question_text": "Carry lookahead adder logic uses the concept of __________",
+            "options": [
+                "Inverting the inputs",
+                "Complementing the outputs",
+                "Carry Propagate and Carry Generate",
+                "Ripple factor"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "c) Carry Propagate and Carry Generate. A carry-lookahead adder speeds up carry computation by generating and propagating carries in parallel using propagate ($P_i = A_i \\oplus B_i$) and generate ($G_i = A_i B_i$) signals.",
+            "answer": "A carry-lookahead adder speeds up carry computation by generating and propagating carries in parallel using propagate ($P_i = A_i \\oplus B_i$) and generate ($G_i = A_i B_i$) signals.",
             "answer_source": "provided",
             "chapter": "Unit 3: Design of ALU"
         },
         {
             "question_number": "6",
-            "question_text": "Which of the following multiplication algorithms is commonly used for signed multiplication?\na) Booth's algorithm\nb) Wallace tree algorithm\nc) Folding algorithm\nd) Radix-4 algorithm",
+            "question_text": "Which of the following multiplication algorithms is commonly used for signed multiplication?",
+            "options": [
+                "Booth's algorithm",
+                "Wallace tree algorithm",
+                "Folding algorithm",
+                "Radix-4 algorithm"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "a) Booth's algorithm. Booth's multiplication algorithm is designed to multiply signed binary numbers in 2's complement representation without requiring a sign-extension step.",
+            "answer": "Booth's multiplication algorithm is designed to multiply signed binary numbers in 2's complement representation without requiring a sign-extension step.",
             "answer_source": "provided",
             "chapter": "Unit 3: Design of ALU"
         },
         {
             "question_number": "7",
-            "question_text": "Which of the following statements is true for carry-save addition of summands?\na) It can be performed in a single cycle\nb) It requires fewer logic gates than carry-propagate addition\nc) It always produces the final sum result directly\nd) It is only used for fixed-point arithmetic",
+            "question_text": "Which of the following statements is true for carry-save addition of summands?",
+            "options": [
+                "It can be performed in a single cycle",
+                "It requires fewer logic gates than carry-propagate addition",
+                "It always produces the final sum result directly",
+                "It is only used for fixed-point arithmetic"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b) It requires fewer logic gates than carry-propagate addition. Carry-save adders do not propagate the carry immediately to subsequent bits, thereby reducing the critical path delay and the relative hardware complexity required for multiple summands.",
+            "answer": "Carry-save adders do not propagate the carry immediately to subsequent bits, thereby reducing the critical path delay and the relative hardware complexity required for multiple summands.",
             "answer_source": "provided",
             "chapter": "Unit 3: Design of ALU"
         },
         {
             "question_number": "8",
-            "question_text": "Which division algorithm is most commonly used for binary division operations?\na) Restoring division\nb) Non-restoring division\nc) Radix-4 division\nd) Booth's division",
+            "question_text": "Which division algorithm is most commonly used for binary division operations?",
+            "options": [
+                "Restoring division",
+                "Non-restoring division",
+                "Radix-4 division",
+                "Booth's division"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "a) Restoring division. Restoring division is a standard, fundamental algorithm used in hardware division operations.",
+            "answer": "Restoring division is a standard, fundamental algorithm used in hardware division operations.",
             "answer_source": "provided",
             "chapter": "Unit 3: Design of ALU"
         },
         {
             "question_number": "9",
-            "question_text": "What are the three components of an IEEE 754 floating-point number representation?\na) Sign exponent and mantissa\nb) Sign, integer part and fractional part\nc) Mantissa, exponent and bias\nd) Sign, exponent and base",
+            "question_text": "What are the three components of an IEEE 754 floating-point number representation?",
+            "options": [
+                "Sign exponent and mantissa",
+                "Sign, integer part and fractional part",
+                "Mantissa, exponent and bias",
+                "Sign, exponent and base"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "a) Sign exponent and mantissa. The IEEE 754 standard represents floating-point numbers using three basic components: the Sign bit, the biased Exponent, and the Mantissa (or significand).",
+            "answer": "The IEEE 754 standard represents floating-point numbers using three basic components: the Sign bit, the biased Exponent, and the Mantissa (or significand).",
             "answer_source": "provided",
             "chapter": "Unit 3: Design of ALU"
         },
         {
             "question_number": "10",
-            "question_text": "Which format is used for double precision floating-point numbers in IEEE 754\na) 64 Bits\nb) 32 Bits\nk) 16 Bits\nd) 128 Bits",
+            "question_text": "Which format is used for double precision floating-point numbers in IEEE 754",
+            "options": [
+                "64 Bits",
+                "32 Bits",
+                "16 Bits",
+                "128 Bits"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "a) 64 Bits. Under IEEE 754, single-precision format uses 32 bits and double-precision format uses 64 bits (1 sign bit, 11 exponent bits, and 52 mantissa bits).",
+            "answer": "Under IEEE 754, single-precision format uses 32 bits and double-precision format uses 64 bits (1 sign bit, 11 exponent bits, and 52 mantissa bits).",
             "answer_source": "provided",
             "chapter": "Unit 3: Design of ALU"
         },

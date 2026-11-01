@@ -5,161 +5,301 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Identify The Binary Representation of Decimal Number 42\n(A) 101010\n(B) 101111\n(C) 111100\n(D) 1110000",
+            "question_text": "Identify The Binary Representation of Decimal Number 42",
+            "options": [
+                "101010",
+                "101111",
+                "111100",
+                "1110000"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) 101010\n\nRationale: $42 = 32+8+2 = 101010_2$.",
+            "answer": "$42 = 32+8+2 = 101010_2$.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "2",
-            "question_text": "Find the grey code for binary value 1011110\n(A) 1100111\n(B) 1100110\n(C) 1110001\n(D) 1110000",
+            "question_text": "Find the grey code for binary value 1011110",
+            "options": [
+                "1100111",
+                "1100110",
+                "1110001",
+                "1110000"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) 1110001\n\nRationale: $G = B \\oplus (B \\gg 1)$: 1, 1⊕0=1, 0⊕1=1, 1⊕1=0, 1⊕1=0, 1⊕1=0, 1⊕0=1 → 1110001.",
+            "answer": "$G = B \\oplus (B \\gg 1)$: 1, 1⊕0=1, 0⊕1=1, 1⊕1=0, 1⊕1=0, 1⊕1=0, 1⊕0=1 → 1110001.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "3",
-            "question_text": "The 2's complement of the binary number 101101 is\n(A) 011010\n(B) 100010\n(C) 100010\n(D) 010011",
+            "question_text": "The 2's complement of the binary number 101101 is",
+            "options": [
+                "011010",
+                "100010",
+                "100010",
+                "010011"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) 010011\n\nRationale: 1's complement 010010 + 1 = 010011.",
+            "answer": "1's complement 010010 + 1 = 010011.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "4",
-            "question_text": "Parity code is used for the purpose of\n(A) Code Conversion\n(B) Correcting Errors\n(C) Detecting Errors\n(D) Decoding",
+            "question_text": "Parity code is used for the purpose of",
+            "options": [
+                "Code Conversion",
+                "Correcting Errors",
+                "Detecting Errors",
+                "Decoding"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Detecting Errors\n\nRationale: A parity bit detects single-bit (odd number of) errors; it cannot correct them.",
+            "answer": "A parity bit detects single-bit (odd number of) errors; it cannot correct them.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "5",
-            "question_text": "RTN stands for\n(A) Register Transmission Notation\n(B) Register Transfer Notation\n(C) Regular Transmission Notation\n(D) Regular Transfer Notation",
+            "question_text": "RTN stands for",
+            "options": [
+                "Register Transmission Notation",
+                "Register Transfer Notation",
+                "Regular Transmission Notation",
+                "Regular Transfer Notation"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Register Transfer Notation\n\nRationale: RTN = Register Transfer Notation, e.g. $R3 \\leftarrow [R1]+[R2]$.",
+            "answer": "RTN = Register Transfer Notation, e.g. $R3 \\leftarrow [R1]+[R2]$.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "6",
-            "question_text": "______ holds the instructions that is currently being executed.\n(A) Program counter\n(B) Instruction register\n(C) Registers\n(D) Memory address register",
+            "question_text": "______ holds the instructions that is currently being executed.",
+            "options": [
+                "Program counter",
+                "Instruction register",
+                "Registers",
+                "Memory address register"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Instruction register\n\nRationale: IR holds the current instruction.",
+            "answer": "IR holds the current instruction.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "7",
-            "question_text": "In which addressing mode the operand value is directly specified?\n(A) Direct\n(B) Definite\n(C) Relative\n(D) Immediate",
+            "question_text": "In which addressing mode the operand value is directly specified?",
+            "options": [
+                "Direct",
+                "Definite",
+                "Relative",
+                "Immediate"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Immediate\n\nRationale: In immediate mode the operand value itself is in the instruction (e.g. `MOV R0, #5`).",
+            "answer": "In immediate mode the operand value itself is in the instruction (e.g. `MOV R0, #5`).",
             "answer_source": "generated",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "8",
-            "question_text": "______ operations are required in memory access.\n(A) Add\n(B) Move\n(C) Load and store\n(D) Halt",
+            "question_text": "______ operations are required in memory access.",
+            "options": [
+                "Add",
+                "Move",
+                "Load and store",
+                "Halt"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Load and store\n\nRationale: Memory is accessed through Load (read) and Store (write) operations.",
+            "answer": "Memory is accessed through Load (read) and Store (write) operations.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "9",
-            "question_text": "______ is a combinational logic circuit with two input and two output.\n(A) Full adder\n(B) Half adder\n(C) Multiplexer\n(D) Decoder",
+            "question_text": "______ is a combinational logic circuit with two input and two output.",
+            "options": [
+                "Full adder",
+                "Half adder",
+                "Multiplexer",
+                "Decoder"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Half adder\n\nRationale: Half adder: inputs A, B; outputs Sum and Carry.",
+            "answer": "Half adder: inputs A, B; outputs Sum and Carry.",
             "answer_source": "generated",
             "chapter": "Unit 3: Design of ALU"
         },
         {
             "question_number": "10",
-            "question_text": "An 24 bit address generates an address space of ______ locations.\n(A) 16,777,216\n(B) 1,048,576\n(C) 4096\n(D) 1024",
+            "question_text": "An 24 bit address generates an address space of ______ locations.",
+            "options": [
+                "16,777,216",
+                "1,048,576",
+                "4096",
+                "1024"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) 16,777,216\n\nRationale: $2^{24} = 16{,}777{,}216$.",
+            "answer": "$2^{24} = 16{,}777{,}216$.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "11",
-            "question_text": "Where does the multiplier operand is stored?\n(A) Instruction register\n(B) Shift register\n(C) Cache\n(D) Program counter",
+            "question_text": "Where does the multiplier operand is stored?",
+            "options": [
+                "Instruction register",
+                "Shift register",
+                "Cache",
+                "Program counter"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Shift register\n\nRationale: In the sequential multiplier the multiplier is held in the Q shift register, shifted right each cycle.",
+            "answer": "In the sequential multiplier the multiplier is held in the Q shift register, shifted right each cycle.",
             "answer_source": "generated",
             "chapter": "Unit 3: Design of ALU"
         },
         {
             "question_number": "12",
-            "question_text": "How many bits are needed to represent floating point number in a single precision form?\n(A) 16\n(B) 50\n(C) 32\n(D) 64",
+            "question_text": "How many bits are needed to represent floating point number in a single precision form?",
+            "options": [
+                "16",
+                "50",
+                "32",
+                "64"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) 32\n\nRationale: IEEE 754 single precision uses 32 bits.",
+            "answer": "IEEE 754 single precision uses 32 bits.",
             "answer_source": "generated",
             "chapter": "Unit 3: Design of ALU"
         },
         {
             "question_number": "13",
-            "question_text": "Which register in the processor is single-directional?\n(A) MDR\n(B) PC\n(C) MAR\n(D) Temp",
+            "question_text": "Which register in the processor is single-directional?",
+            "options": [
+                "MDR",
+                "PC",
+                "MAR",
+                "Temp"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) MAR\n\nRationale: MAR only sends addresses from processor to memory (unidirectional); MDR is bidirectional.",
+            "answer": "MAR only sends addresses from processor to memory (unidirectional); MDR is bidirectional.",
             "answer_source": "generated",
             "chapter": "Unit 4: Control Unit"
         },
         {
             "question_number": "14",
-            "question_text": "The Program Counter gets incremented\n(A) After the instruction decoding\n(B) After the fetch cycle\n(C) After the IR instruction gets executed\n(D) After the read cycle executed",
+            "question_text": "The Program Counter gets incremented",
+            "options": [
+                "After the instruction decoding",
+                "After the fetch cycle",
+                "After the IR instruction gets executed",
+                "After the read cycle executed"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) After the fetch cycle\n\nRationale: PC is incremented during/after the fetch cycle to point to the next instruction.",
+            "answer": "PC is incremented during/after the fetch cycle to point to the next instruction.",
             "answer_source": "generated",
             "chapter": "Unit 4: Control Unit"
         },
         {
             "question_number": "15",
-            "question_text": "In multiple Bus organization, the registers are collectively placed and referred to as\n(A) Register file\n(B) Set registers\n(C) Register Block\n(D) Map registers",
+            "question_text": "In multiple Bus organization, the registers are collectively placed and referred to as",
+            "options": [
+                "Register file",
+                "Set registers",
+                "Register Block",
+                "Map registers"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Register file\n\nRationale: The general-purpose registers form a register file with multiple ports.",
+            "answer": "The general-purpose registers form a register file with multiple ports.",
             "answer_source": "generated",
             "chapter": "Unit 4: Control Unit"
         },
         {
             "question_number": "16",
-            "question_text": "______ memory is used in pipelining to increase the memory access speed.\n(A) Special memory locations\n(B) Special purpose register\n(C) Cache\n(D) Buffers",
+            "question_text": "______ memory is used in pipelining to increase the memory access speed.",
+            "options": [
+                "Special memory locations",
+                "Special purpose register",
+                "Cache",
+                "Buffers"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Cache\n\nRationale: Caches allow a pipeline stage to access memory in one clock cycle.",
+            "answer": "Caches allow a pipeline stage to access memory in one clock cycle.",
             "answer_source": "generated",
             "chapter": "Unit 4: Control Unit"
         },
         {
             "question_number": "17",
-            "question_text": "______ gives the measure of how many operations can be performed in parallel at the same time.\n(A) Data parallelism\n(B) Task level parallelism\n(C) Instruction level parallelism\n(D) Transaction level parallelism",
+            "question_text": "______ gives the measure of how many operations can be performed in parallel at the same time.",
+            "options": [
+                "Data parallelism",
+                "Task level parallelism",
+                "Instruction level parallelism",
+                "Transaction level parallelism"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Instruction level parallelism\n\nRationale: ILP measures how many instructions/operations of a program can be executed simultaneously.",
+            "answer": "ILP measures how many instructions/operations of a program can be executed simultaneously.",
             "answer_source": "generated",
             "chapter": "Unit 5: Parallelism"
         },
         {
             "question_number": "18",
-            "question_text": "SIMD stands for\n(A) Simple Instruction Multiple Decoding\n(B) Single Instruction Multiple Data\n(C) Sequential Instruction Multiple Decoding\n(D) System Information Mutable Data",
+            "question_text": "SIMD stands for",
+            "options": [
+                "Simple Instruction Multiple Decoding",
+                "Single Instruction Multiple Data",
+                "Sequential Instruction Multiple Decoding",
+                "System Information Mutable Data"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Single Instruction Multiple Data\n\nRationale: Single Instruction, Multiple Data.",
+            "answer": "Single Instruction, Multiple Data.",
             "answer_source": "generated",
             "chapter": "Unit 5: Parallelism"
         },
         {
             "question_number": "19",
-            "question_text": "Processor which is complex and expensive to produce is\n(A) RISC\n(B) EPIC\n(C) Multi-core\n(D) CISC",
+            "question_text": "Processor which is complex and expensive to produce is",
+            "options": [
+                "RISC",
+                "EPIC",
+                "Multi-core",
+                "CISC"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) CISC\n\nRationale: CISC processors have complex instructions and control (often microprogrammed), making them complex and expensive.",
+            "answer": "CISC processors have complex instructions and control (often microprogrammed), making them complex and expensive.",
             "answer_source": "generated",
             "chapter": "Unit 5: Parallelism"
         },
         {
             "question_number": "20",
-            "question_text": "The cost of a parallel processing is primarily determined by\n(A) time complexity\n(B) switching complexity\n(C) circuit complexity\n(D) power complexity",
+            "question_text": "The cost of a parallel processing is primarily determined by",
+            "options": [
+                "time complexity",
+                "switching complexity",
+                "circuit complexity",
+                "power complexity"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) circuit complexity\n\nRationale: The cost of a parallel processing system is mainly determined by its circuit (hardware) complexity.",
+            "answer": "The cost of a parallel processing system is mainly determined by its circuit (hardware) complexity.",
             "answer_source": "generated",
             "chapter": "Unit 5: Parallelism"
         },

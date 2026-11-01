@@ -5,81 +5,151 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Assume the main memory size is 64 kb, compute the number of address lines needed to address the main memory.\n\na. 8 bit\nb. 16 bit\nc. 24 bit\nd. 32 bit",
+            "question_text": "Assume the main memory size is 64 kb, compute the number of address lines needed to address the main memory.",
+            "options": [
+                "8 bit",
+                "16 bit",
+                "24 bit",
+                "32 bit"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b. 16 bit\n\n**Rationale:**\n$64 \\text{ KB} = 64 \\times 1024 \\text{ bytes} = 2^6 \\times 2^{10} \\text{ bytes} = 2^{16} \\text{ bytes}$. Therefore, 16 address lines are required to address $2^{16}$ memory locations.",
+            "answer": "$64 \\text{ KB} = 64 \\times 1024 \\text{ bytes} = 2^6 \\times 2^{10} \\text{ bytes} = 2^{16} \\text{ bytes}$. Therefore, 16 address lines are required to address $2^{16}$ memory locations.",
             "answer_source": "provided",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "2",
-            "question_text": "Identify the addressing mode of the instruction \nJC Label\n\na. Direct addressing\nb. Index addressing\nc. Relative addressing\nd. Immediate addressing",
+            "question_text": "Identify the addressing mode of the instruction \nJC Label",
+            "options": [
+                "Direct addressing",
+                "Index addressing",
+                "Relative addressing",
+                "Immediate addressing"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "c. Relative addressing\n\n**Rationale:**\nJump on Carry (JC) uses relative addressing where the target address is calculated relative to the current Instruction Pointer (IP).",
+            "answer": "Jump on Carry (JC) uses relative addressing where the target address is calculated relative to the current Instruction Pointer (IP).",
             "answer_source": "provided",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "3",
-            "question_text": "In which type of addressing there is no memory related operation?\n\na. Register indirect addressing\nb. Register addressing\nc. Direct addressing\nd. Indirect addressing",
+            "question_text": "In which type of addressing there is no memory related operation?",
+            "options": [
+                "Register indirect addressing",
+                "Register addressing",
+                "Direct addressing",
+                "Indirect addressing"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b. Register addressing\n\n**Rationale:**\nIn register addressing, the operands are located entirely within the CPU registers, so there is no memory access needed.",
+            "answer": "In register addressing, the operands are located entirely within the CPU registers, so there is no memory access needed.",
             "answer_source": "provided",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "4",
-            "question_text": "How many full adders are required to design an N-bit binary adder?\n\na. n/2\nb. n\nc. 2 x n\nd. n^2",
+            "question_text": "How many full adders are required to design an N-bit binary adder?",
+            "options": [
+                "n/2",
+                "n",
+                "2 x n",
+                "n^2"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b. n\n\n**Rationale:**\nAn N-bit binary ripple-carry adder requires $n$ full adders (one for each stage/bit).",
+            "answer": "An N-bit binary ripple-carry adder requires $n$ full adders (one for each stage/bit).",
             "answer_source": "provided",
             "chapter": "Unit 3: Design of ALU"
         },
         {
             "question_number": "5",
-            "question_text": "_____________ reduces the number of summands by a factor of 2.\n\na. Carry save addition\nb. Bit pair recoding\nc. Multiple pair recoding\nd. Carry look ahead circuit",
+            "question_text": "_____________ reduces the number of summands by a factor of 2.",
+            "options": [
+                "Carry save addition",
+                "Bit pair recoding",
+                "Multiple pair recoding",
+                "Carry look ahead circuit"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b. Bit pair recoding\n\n**Rationale:**\nBit-pair recoding of multipliers halves the number of partial products (summands) that need to be added.",
+            "answer": "Bit-pair recoding of multipliers halves the number of partial products (summands) that need to be added.",
             "answer_source": "provided",
             "chapter": "Unit 3: Design of ALU"
         },
         {
             "question_number": "6",
-            "question_text": "What is the relation between sign exponent E and bias exponent E’ in single precision floating point number?\n\na. E=E’-1023\nb. E=E’+127\nc. E=127-E’\nd. E=E’-127",
+            "question_text": "What is the relation between sign exponent E and bias exponent E’ in single precision floating point number?",
+            "options": [
+                "E=E’-1023",
+                "E=E’+127",
+                "E=127-E’",
+                "E=E’-127"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "d. E=E’-127\n\n**Rationale:**\nIn IEEE 754 single-precision representation, the biased exponent $E'$ is calculated as $E' = E + 127$. Thus, the actual exponent is $E = E' - 127$.",
+            "answer": "In IEEE 754 single-precision representation, the biased exponent $E'$ is calculated as $E' = E + 127$. Thus, the actual exponent is $E = E' - 127$.",
             "answer_source": "provided",
             "chapter": "Unit 3: Design of ALU"
         },
         {
             "question_number": "7",
-            "question_text": "The multiplier 11010 is recoded as ________________\n\na. 0 -1 -1 0 0\nb. 0 -1 +1 +1 0\nc. 0 -1 +1 -1 0\nd. 0 +1 -1 -1 0",
+            "question_text": "The multiplier 11010 is recoded as ________________",
+            "options": [
+                "0 -1 -1 0 0",
+                "0 -1 +1 +1 0",
+                "0 -1 +1 -1 0",
+                "0 +1 -1 -1 0"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "c. 0 -1 +1 -1 0\n\n**Rationale:**\nUsing Booth's recoding:\n- Binary: `1  1  0  1  0  (0)`\n- Operations (right-to-left, $Q_i - Q_{i-1}$):\n  - $Q_0 - Q_{-1} = 0 - 0 = 0$\n  - $Q_1 - Q_0 = 1 - 0 = -1$\n  - $Q_2 - Q_1 = 0 - 1 = +1$\n  - $Q_3 - Q_2 = 1 - 0 = -1$\n  - $Q_4 - Q_3 = 1 - 1 = 0$\nRecoded value is `0 -1 +1 -1 0`.",
+            "answer": "Booth's recoding: digit $i$ = (bit $i-1$) - (bit $i$), with an extra 0 appended on the right of 11010.\n- Digit 0: $0 - 0 = 0$\n- Digit 1: $0 - 1 = -1$\n- Digit 2: $1 - 0 = +1$\n- Digit 3: $0 - 1 = -1$\n- Digit 4: $1 - 1 = 0$\nRecoded multiplier (MSB first) is `0 -1 +1 -1 0`.",
             "answer_source": "provided",
             "chapter": "Unit 3: Design of ALU"
         },
         {
             "question_number": "8",
-            "question_text": "The carry equation for full adder is ________________________\n\na. XY’+X’Z+Y’Z\nb. X’Y+XZ’+YZ\nc. XY’+XZ+YZ’\nd. XY+XZ+YZ",
+            "question_text": "The carry equation for full adder is ________________________",
+            "options": [
+                "XY’+X’Z+Y’Z",
+                "X’Y+XZ’+YZ",
+                "XY’+XZ+YZ’",
+                "XY+XZ+YZ"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "d. XY+XZ+YZ\n\n**Rationale:**\nThe boolean equation for the Carry-out ($C_{out}$) of a full adder with inputs $X, Y$ and carry-in $Z$ is $C_{out} = XY + XZ + YZ$.",
+            "answer": "The boolean equation for the Carry-out ($C_{out}$) of a full adder with inputs $X, Y$ and carry-in $Z$ is $C_{out} = XY + XZ + YZ$.",
             "answer_source": "provided",
             "chapter": "Unit 3: Design of ALU"
         },
         {
             "question_number": "9",
-            "question_text": "How many select lines are required for 64 : 1 Multiplexer\n\na. 8 lines\nb. 6 lines\nc. 4 lines\nd. 16 lines",
+            "question_text": "How many select lines are required for 64 : 1 Multiplexer",
+            "options": [
+                "8 lines",
+                "6 lines",
+                "4 lines",
+                "16 lines"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b. 6 lines\n\n**Rationale:**\nA $2^n : 1$ multiplexer requires $n$ select lines. Since $64 = 2^6$, it requires 6 select lines.",
+            "answer": "A $2^n : 1$ multiplexer requires $n$ select lines. Since $64 = 2^6$, it requires 6 select lines.",
             "answer_source": "provided",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "10",
-            "question_text": "In Booth's recoding, M is multiplicand and -1 is booth recoded multiplier, then what will be the result of multiplication?\n\na. 1’s complement of M\nb. 2’s complement of M\nc. M\nd. Right shift of M",
+            "question_text": "In Booth's recoding, M is multiplicand and -1 is booth recoded multiplier, then what will be the result of multiplication?",
+            "options": [
+                "1’s complement of M",
+                "2’s complement of M",
+                "M",
+                "Right shift of M"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b. 2’s complement of M\n\n**Rationale:**\nMultiplying a number $M$ by $-1$ yields its negative representation, which in 2's complement arithmetic is the 2's complement of $M$.",
+            "answer": "Multiplying a number $M$ by $-1$ yields its negative representation, which in 2's complement arithmetic is the 2's complement of $M$.",
             "answer_source": "provided",
             "chapter": "Unit 3: Design of ALU"
         },

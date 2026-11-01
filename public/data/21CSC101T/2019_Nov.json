@@ -4,161 +4,301 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Only the ______ can have access to the private members and private functions.\n(A) Data functions\n(B) Inline functions\n(C) Member functions\n(D) Member variables",
+            "question_text": "Only the ______ can have access to the private members and private functions.",
+            "options": [
+                "Data functions",
+                "Inline functions",
+                "Member functions",
+                "Member variables"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Member functions. \nExplanation: In Object-Oriented Programming, private members and functions of a class are strictly hidden from outside access to ensure encapsulation. Only the member functions of that specific class have the privilege to access them.",
+            "answer": "In Object-Oriented Programming, private members and functions of a class are strictly hidden from outside access to ensure encapsulation. Only the member functions of that specific class have the privilege to access them.",
             "answer_source": "General Knowledge",
             "chapter": "Unit 1"
         },
         {
             "question_number": "2",
-            "question_text": "Constructors are normally used to ______ and to allocate memory.\n(A) Define variables\n(B) Allocate variables\n(C) Initialize variables\n(D) Initialize object",
+            "question_text": "Constructors are normally used to ______ and to allocate memory.",
+            "options": [
+                "Define variables",
+                "Allocate variables",
+                "Initialize variables",
+                "Initialize object"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Initialize object. \nExplanation: A constructor is a special member function that is automatically called when an object of a class is created. Its primary purpose is to initialize the object's data members and allocate necessary memory.",
+            "answer": "A constructor is a special member function that is automatically called when an object of a class is created. Its primary purpose is to initialize the object's data members and allocate necessary memory.",
             "answer_source": "General Knowledge",
             "chapter": "Unit 2"
         },
         {
             "question_number": "3",
-            "question_text": "Destructor is a member function whose name is same as the class name but is preceded by a\n(A) Tilde\n(B) Hash\n(C) Dot\n(D) Scope resolution",
+            "question_text": "Destructor is a member function whose name is same as the class name but is preceded by a",
+            "options": [
+                "Tilde",
+                "Hash",
+                "Dot",
+                "Scope resolution"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Tilde. \nExplanation: In C++, a destructor is denoted by the tilde symbol (~) followed by the class name (e.g., `~MyClass()`). It is invoked automatically when an object goes out of scope to free resources.",
+            "answer": "In C++, a destructor is denoted by the tilde symbol (~) followed by the class name (e.g., `~MyClass()`). It is invoked automatically when an object goes out of scope to free resources.",
             "answer_source": "General Knowledge",
             "chapter": "Unit 2"
         },
         {
             "question_number": "4",
-            "question_text": "A UML diagram that facilitates requirements gathering and interacts between system and external users, is called as\n(A) Flow chart diagram\n(B) Sequence diagram\n(C) Data flow diagram\n(D) Use case diagram",
+            "question_text": "A UML diagram that facilitates requirements gathering and interacts between system and external users, is called as",
+            "options": [
+                "Flow chart diagram",
+                "Sequence diagram",
+                "Data flow diagram",
+                "Use case diagram"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Use case diagram. \nExplanation: A Use Case Diagram represents the dynamic behavior of a system. It shows the interaction between the system's use cases and the external entities (actors), making it a key tool for requirements gathering.",
+            "answer": "A Use Case Diagram represents the dynamic behavior of a system. It shows the interaction between the system's use cases and the external entities (actors), making it a key tool for requirements gathering.",
             "answer_source": "General Knowledge",
             "chapter": "Unit 1"
         },
         {
             "question_number": "5",
-            "question_text": "State whether the following statements are true (or) false for overloading operators.\n(i) Only existing operators can be overloaded\n(ii) We can change the basic meaning of a operator\n(A) True, true\n(B) True, false\n(C) False, true\n(D) False, false",
+            "question_text": "State whether the following statements are true (or) false for overloading operators.\n(i) Only existing operators can be overloaded\n(ii) We can change the basic meaning of a operator",
+            "options": [
+                "True, true",
+                "True, false",
+                "False, true",
+                "False, false"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) True, false. \nExplanation: (i) is True because C++ does not allow the creation of new operators; only existing ones like +, -, *, etc., can be overloaded. (ii) is False because you cannot change the fundamental grammatical syntax or basic meaning (e.g., you cannot change operator precedence or arity).",
+            "answer": "(i) is True because C++ does not allow the creation of new operators; only existing ones like +, -, *, etc., can be overloaded. (ii) is False because you cannot change the fundamental grammatical syntax or basic meaning (e.g., you cannot change operator precedence or arity).",
             "answer_source": "General Knowledge",
             "chapter": "Unit 2"
         },
         {
             "question_number": "6",
-            "question_text": "______ overloaded by means of a member function, take no explicit arguments and return no explicit values.\n(A) Unary operators\n(B) Binary operators\n(C) Arithmetic operators\n(D) Function operators",
+            "question_text": "______ overloaded by means of a member function, take no explicit arguments and return no explicit values.",
+            "options": [
+                "Unary operators",
+                "Binary operators",
+                "Arithmetic operators",
+                "Function operators"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Unary operators. \nExplanation: When a unary operator (like ++ or --) is overloaded as a member function of a class, it does not take any explicit arguments because the object invoking it acts as the implicit operand.",
+            "answer": "When a unary operator (like ++ or --) is overloaded as a member function of a class, it does not take any explicit arguments because the object invoking it acts as the implicit operand.",
             "answer_source": "General Knowledge",
             "chapter": "Unit 2"
         },
         {
             "question_number": "7",
-            "question_text": "Which of the following cannot be overloaded in C++?\n(A) Increment operator\n(B) Constructor\n(C) Destructor\n(D) New and delete operator",
+            "question_text": "Which of the following cannot be overloaded in C++?",
+            "options": [
+                "Increment operator",
+                "Constructor",
+                "Destructor",
+                "New and delete operator"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Destructor. \nExplanation: Destructors cannot be overloaded because a class can only have exactly one destructor. They do not take any arguments, making overloading impossible.",
+            "answer": "Destructors cannot be overloaded because a class can only have exactly one destructor. They do not take any arguments, making overloading impossible.",
             "answer_source": "General Knowledge",
             "chapter": "Unit 2"
         },
         {
             "question_number": "8",
-            "question_text": "Activity diagram, use case diagram, collaboration diagram and sequence diagram are considered as types of\n(A) Non-behavioural diagrams\n(B) Non structural diagrams\n(C) Structural diagrams\n(D) Behavioural diagrams",
+            "question_text": "Activity diagram, use case diagram, collaboration diagram and sequence diagram are considered as types of",
+            "options": [
+                "Non-behavioural diagrams",
+                "Non structural diagrams",
+                "Structural diagrams",
+                "Behavioural diagrams"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Behavioural diagrams. \nExplanation: In UML, behavioral diagrams illustrate the dynamic behavior of the system, such as how data moves, how objects interact over time, and the flow of control. Activity, Use Case, Collaboration, and Sequence diagrams all fall under this category.",
+            "answer": "In UML, behavioral diagrams illustrate the dynamic behavior of the system, such as how data moves, how objects interact over time, and the flow of control. Activity, Use Case, Collaboration, and Sequence diagrams all fall under this category.",
             "answer_source": "General Knowledge",
             "chapter": "Unit 1"
         },
         {
             "question_number": "9",
-            "question_text": "How many basic types of inheritance are provided as OOP feature?\n(A) 4\n(B) 3\n(C) 2\n(D) 1",
+            "question_text": "How many basic types of inheritance are provided as OOP feature?",
+            "options": [
+                "4",
+                "3",
+                "2",
+                "1"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) 3. \nExplanation: If referring strictly to access modes in C++ inheritance, there are 3 visibility modes: public, private, and protected. (Note: If referring to forms of inheritance conceptually, there are 5: Single, Multiple, Multilevel, Hierarchical, and Hybrid, but 5 is not an option. Thus, 3 is the most logically intended answer for C++ base visibility).",
+            "answer": "In C++ inheritance there are 3 access (visibility) modes: public, private and protected. If forms of inheritance were meant (single, multiple, multilevel, hierarchical, hybrid) there would be 5, which is not an option, so 3 is the intended answer.",
             "answer_source": "General Knowledge",
             "chapter": "Unit 3"
         },
         {
             "question_number": "10",
-            "question_text": "Which type of inheritance leads to diamond problem?\n(A) Single level\n(B) Multi-level\n(C) Multiple\n(D) Hierarchical",
+            "question_text": "Which type of inheritance leads to diamond problem?",
+            "options": [
+                "Single level",
+                "Multi-level",
+                "Multiple",
+                "Hierarchical"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Multiple. \nExplanation: The diamond problem is an ambiguity that arises in multiple inheritance when two classes inherit from the same base class, and then a fourth class inherits from both of those derived classes.",
+            "answer": "The diamond problem is an ambiguity that arises in multiple inheritance when two classes inherit from the same base class, and then a fourth class inherits from both of those derived classes.",
             "answer_source": "General Knowledge",
             "chapter": "Unit 3"
         },
         {
             "question_number": "11",
-            "question_text": "If a ______ is defined in the base class, it need not be necessarily redefined in the derived class.\n(A) Member function\n(B) Virtual function\n(C) Static function\n(D) Real function",
+            "question_text": "If a ______ is defined in the base class, it need not be necessarily redefined in the derived class.",
+            "options": [
+                "Member function",
+                "Virtual function",
+                "Static function",
+                "Real function"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Virtual function. \nExplanation: A virtual function provides a default implementation in the base class. It is optional to redefine (override) it in the derived class, unlike a pure virtual function which must be redefined.",
+            "answer": "A virtual function provides a default implementation in the base class. It is optional to redefine (override) it in the derived class, unlike a pure virtual function which must be redefined.",
             "answer_source": "General Knowledge",
             "chapter": "Unit 3"
         },
         {
             "question_number": "12",
-            "question_text": "Inheritance relationships are represented in the UML notation by\n(A) Lines with solid diamond at one end\n(B) Lines with hollow diamond at one end\n(C) Lines with hollow triangular arrow at one end\n(D) Lines with solid triangular arrow at both ends",
+            "question_text": "Inheritance relationships are represented in the UML notation by",
+            "options": [
+                "Lines with solid diamond at one end",
+                "Lines with hollow diamond at one end",
+                "Lines with hollow triangular arrow at one end",
+                "Lines with solid triangular arrow at both ends"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Lines with hollow triangular arrow at one end. \nExplanation: In UML class diagrams, inheritance (generalization) is shown using a solid line with a hollow, unfilled triangular arrowhead pointing to the base (parent) class.",
+            "answer": "In UML class diagrams, inheritance (generalization) is shown using a solid line with a hollow, unfilled triangular arrowhead pointing to the base (parent) class.",
             "answer_source": "General Knowledge",
             "chapter": "Unit 3"
         },
         {
             "question_number": "13",
-            "question_text": "______ are used for generic programming.\n(A) Inheritance\n(B) Virtual functions\n(C) Templates\n(D) Operator overloading",
+            "question_text": "______ are used for generic programming.",
+            "options": [
+                "Inheritance",
+                "Virtual functions",
+                "Templates",
+                "Operator overloading"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Templates. \nExplanation: Templates in C++ allow you to write generic programs. A single function or class can operate on different data types without rewriting the entire code for each type.",
+            "answer": "Templates in C++ allow you to write generic programs. A single function or class can operate on different data types without rewriting the entire code for each type.",
             "answer_source": "General Knowledge",
             "chapter": "Unit 4"
         },
         {
             "question_number": "14",
-            "question_text": "An exception thrown from outside try block will\n(A) Call function return\n(B) Be ignored\n(C) Hang the machine\n(D) Call function terminate",
+            "question_text": "An exception thrown from outside try block will",
+            "options": [
+                "Call function return",
+                "Be ignored",
+                "Hang the machine",
+                "Call function terminate"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Call function terminate. \nExplanation: If an exception is thrown in a C++ program and is not caught by any matching `catch` block (e.g., thrown outside a `try` block), the program invokes the `std::terminate()` function, which aborts the program.",
+            "answer": "If an exception is thrown in a C++ program and is not caught by any matching `catch` block (e.g., thrown outside a `try` block), the program invokes the `std::terminate()` function, which aborts the program.",
             "answer_source": "General Knowledge",
             "chapter": "Unit 4"
         },
         {
             "question_number": "15",
-            "question_text": "The user-defined exception defines\n(A) Inheriting and overriding exception class functionality\n(B) Overriding class functionality\n(C) Inheriting class functionality\n(D) Function overloading",
+            "question_text": "The user-defined exception defines",
+            "options": [
+                "Inheriting and overriding exception class functionality",
+                "Overriding class functionality",
+                "Inheriting class functionality",
+                "Function overloading"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Inheriting and overriding exception class functionality. \nExplanation: To create a user-defined exception in C++, a class typically inherits from the standard `std::exception` class and overrides its `what()` method to provide a custom error message.",
+            "answer": "To create a user-defined exception in C++, a class typically inherits from the standard `std::exception` class and overrides its `what()` method to provide a custom error message.",
             "answer_source": "General Knowledge",
             "chapter": "Unit 4"
         },
         {
             "question_number": "16",
-            "question_text": "Class diagram, component diagram, object diagram and deployment diagram are considered as types of\n(A) Structural diagrams\n(B) Behavioural diagrams\n(C) Non-behavioural diagrams\n(D) Non structural diagrams",
+            "question_text": "Class diagram, component diagram, object diagram and deployment diagram are considered as types of",
+            "options": [
+                "Structural diagrams",
+                "Behavioural diagrams",
+                "Non-behavioural diagrams",
+                "Non structural diagrams"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Structural diagrams. \nExplanation: Structural UML diagrams show the static structure of the system and its parts on different abstraction and implementation levels and how they are related to each other.",
+            "answer": "Structural UML diagrams show the static structure of the system and its parts on different abstraction and implementation levels and how they are related to each other.",
             "answer_source": "General Knowledge",
             "chapter": "Unit 4"
         },
         {
             "question_number": "17",
-            "question_text": "A common activity performed on a container is called\n(A) Functioning\n(B) Iterator\n(C) Traversal\n(D) Deletion of objects",
+            "question_text": "A common activity performed on a container is called",
+            "options": [
+                "Functioning",
+                "Iterator",
+                "Traversal",
+                "Deletion of objects"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Traversal. \nExplanation: Traversal is the process of accessing each element within a container sequentially. In C++ STL, this is commonly done using Iterators.",
+            "answer": "Traversal is the process of accessing each element within a container sequentially. In C++ STL, this is commonly done using Iterators.",
             "answer_source": "General Knowledge",
             "chapter": "Unit 5"
         },
         {
             "question_number": "18",
-            "question_text": "What does STL stand for?\n(A) Simple template library\n(B) Standard template library\n(C) Static type library\n(D) Single type-based library",
+            "question_text": "What does STL stand for?",
+            "options": [
+                "Simple template library",
+                "Standard template library",
+                "Static type library",
+                "Single type-based library"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Standard template library. \nExplanation: STL stands for Standard Template Library. It is a set of C++ template classes to provide common programming data structures and functions such as lists, stacks, arrays, etc.",
+            "answer": "STL stands for Standard Template Library. It is a set of C++ template classes to provide common programming data structures and functions such as lists, stacks, arrays, etc.",
             "answer_source": "General Knowledge",
             "chapter": "Unit 5"
         },
         {
             "question_number": "19",
-            "question_text": "Which stream class is used to both read and write on files?\n(A) ofstream\n(B) ifstream\n(C) fstream\n(D) iostream",
+            "question_text": "Which stream class is used to both read and write on files?",
+            "options": [
+                "ofstream",
+                "ifstream",
+                "fstream",
+                "iostream"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) fstream. \nExplanation: The `fstream` class in C++ provides the capability to both read from and write to a file, whereas `ifstream` is only for reading and `ofstream` is only for writing.",
+            "answer": "The `fstream` class in C++ provides the capability to both read from and write to a file, whereas `ifstream` is only for reading and `ofstream` is only for writing.",
             "answer_source": "General Knowledge",
             "chapter": "Unit 1"
         },
         {
             "question_number": "20",
-            "question_text": "Which among following is correct syntax of closing a file in C++?\n(A) myfile$close ( );\n(B) myfile@close ( );\n(C) Myfile:close ( );\n(D) Myfile.close ( );",
+            "question_text": "Which among following is correct syntax of closing a file in C++?",
+            "options": [
+                "myfile$close ( );",
+                "myfile@close ( );",
+                "Myfile:close ( );",
+                "Myfile.close ( );"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Myfile.close ( ); \nExplanation: In C++, file streams are objects. To call a member function like `close()` on an object like `Myfile`, the dot (.) operator is used.",
+            "answer": "In C++, file streams are objects. To call a member function like `close()` on an object like `Myfile`, the dot (.) operator is used.",
             "answer_source": "General Knowledge",
             "chapter": "Unit 1"
         },

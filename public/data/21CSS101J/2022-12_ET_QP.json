@@ -4,7 +4,14 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "1. The special character ___ can be used to declare a variable in C programming.\n(A) anything\n(B) nothing\n(C) underscore\n(D) hyphen",
+            "question_text": "The special character ___ can be used to declare a variable in C programming.",
+            "options": [
+                "anything",
+                "nothing",
+                "underscore",
+                "hyphen"
+            ],
+            "correct_option": "C",
             "marks": 1,
             "answer": "In C, variable names must start with a letter or an underscore. The underscore (`_`) is the only special character from the given options that can be used to start a variable name or be part of a variable name. Therefore, option (C) is correct.",
             "answer_source": "generated",
@@ -12,7 +19,14 @@
         },
         {
             "question_number": "2",
-            "question_text": "2. which of the following is the default storage class for local variables in C programming language?\n(A) auto\n(C) static\n(B) register\n(D) extern",
+            "question_text": "which of the following is the default storage class for local variables in C programming language?",
+            "options": [
+                "auto",
+                "register",
+                "static",
+                "extern"
+            ],
+            "correct_option": "A",
             "marks": 1,
             "answer": "The default storage class for local variables (variables declared inside a function without any explicit storage class specifier) in C is `auto`. Therefore, option (A) is correct.",
             "answer_source": "generated",
@@ -28,7 +42,14 @@
         },
         {
             "question_number": "4",
-            "question_text": "4. write the output of the following C code snippet:\nint s1=-10:\n\n```c\nint Q = (s1++, ++s1);\nprintf(\"%d\\n\", Q);\n```\n\n(A) -8\n(C) 12\n(B) 11\n(D)-2",
+            "question_text": "write the output of the following C code snippet:\n\n```c\nint s1=-10;\nint Q = (s1++, ++s1);\nprintf(\"%d\\n\", Q);\n```",
+            "options": [
+                "-8",
+                "11",
+                "12",
+                "-2"
+            ],
+            "correct_option": "A",
             "marks": 1,
             "answer": "In the expression `(s1++, ++s1)`, the comma operator evaluates its left operand, discards the result, and then evaluates its right operand. The value of the entire expression is the value of the rightmost operand.\n1. `s1++`: `s1` is used as -10, then incremented to -9.\n2. `++s1`: `s1` is incremented to -8, then used.\nThe result of the comma expression is the value of `++s1` after both operations, which is -8. So, `Q` will be -8. Therefore, the output is -8. Option (A) is correct.",
             "answer_source": "generated",
@@ -36,7 +57,14 @@
         },
         {
             "question_number": "5",
-            "question_text": "5. Rewrite the following code to use the conditional operator rather than using an if-else.\nif (age>=18) then print eligible to vote. Otherwise print not eligible to vote.\n(A) (age>=18)?: printf(\"eligible for voting\"), printf(\"not eligible for voting\");\n(C) (age>=18)? (printf('eligible for voting')); (printf('not eligible for voting'));\n(B) (age>-18) (printf(\"eligible for voting\")) ? (printf(\"not eligible for voting\"));\n(D) (age>=18)? (printf(\"eligible for voting\")): (printf(\"not eligible for voting\"));",
+            "question_text": "Rewrite the following code to use the conditional operator rather than using an if-else.\nif (age>=18) then print eligible to vote. Otherwise print not eligible to vote.",
+            "options": [
+                "(age>=18)?: printf(\"eligible for voting\"), printf(\"not eligible for voting\");",
+                "(age>-18) (printf(\"eligible for voting\")) ? (printf(\"not eligible for voting\"));",
+                "(age>=18)? (printf('eligible for voting')); (printf('not eligible for voting'));",
+                "(age>=18)? (printf(\"eligible for voting\")): (printf(\"not eligible for voting\"));"
+            ],
+            "correct_option": "D",
             "marks": 1,
             "answer": "The conditional operator (ternary operator) syntax is `condition ? expression_if_true : expression_if_false;`.\nThe given `if-else` statement: `if (age>=18) then print eligible to vote. Otherwise print not eligible to vote.`\nCorrectly translates to: `(age >= 18) ? printf(\"eligible for voting\") : printf(\"not eligible for voting\");`\nOption (D) correctly implements this syntax.",
             "answer_source": "generated",
@@ -44,7 +72,14 @@
         },
         {
             "question_number": "6",
-            "question_text": "6. Choose the correct answer for the following C code:\n\n```c\n#include<stdio.h>\nvoid main()\n{\nfor(int i=3; i<=6; i=i+2)\n{ printf(\"i-%d\",i);\nbreak;\n}\n}\n```\n\n(A) i=3; i=5\n(C) error\n(B) i=3; i=4; i=5; i=6\n(D) i=3",
+            "question_text": "Choose the correct answer for the following C code:\n\n```c\n#include<stdio.h>\nvoid main()\n{\nfor(int i=3; i<=6; i=i+2)\n{ printf(\"i-%d\",i);\nbreak;\n}\n}\n```",
+            "options": [
+                "i=3; i=5",
+                "i=3; i=4; i=5; i=6",
+                "error",
+                "i=3"
+            ],
+            "correct_option": "D",
             "marks": 1,
             "answer": "The `for` loop initializes `i` to 3. The loop continues as long as `i <= 6`. The increment step is `i = i + 2`.\n1. **Iteration 1**: `i` is 3. The condition `3 <= 6` is true. `printf(\"i=%d\", i)` prints \"i=3\". The `break` statement is then encountered, which immediately terminates the loop.\nTherefore, the loop executes only once, and the output is \"i=3\". Option (D) is correct.",
             "answer_source": "generated",
@@ -52,7 +87,14 @@
         },
         {
             "question_number": "7",
-            "question_text": "7. Select the output for the following C program:\n\n```c\n#include<stdio.h>\nvoid main()\n{\nfor(int i=1; i<5; i=i+4)\n{ printf(\"i=%d\", i);\ncontinue;\n}\n}\n```\n\n(A) i=1; i-5\n(C) i=1; i-4;\n(B) i=1;\n(D) enor",
+            "question_text": "Select the output for the following C program:\n\n```c\n#include<stdio.h>\nvoid main()\n{\nfor(int i=1; i<5; i=i+4)\n{ printf(\"i=%d\", i);\ncontinue;\n}\n}\n```",
+            "options": [
+                "i=1; i-5",
+                "i=1;",
+                "i=1; i-4;",
+                "enor"
+            ],
+            "correct_option": "B",
             "marks": 1,
             "answer": "The `for` loop initializes `i` to 1. The loop condition is `i < 5`. The increment step is `i = i + 4`.\n1. **Iteration 1**: `i` is 1. Condition `1 < 5` is true. `printf(\"i=%d\", i)` prints \"i=1\". The `continue` statement is executed, which skips the rest of the current iteration and proceeds to the next iteration's update expression (`i=i+4`).\n2. `i` is updated to `1 + 4 = 5`.\n3. **Iteration 2**: `i` is 5. Condition `5 < 5` is false. The loop terminates.\nTherefore, the output is \"i=1\". Option (B) is correct.",
             "answer_source": "generated",
@@ -60,15 +102,29 @@
         },
         {
             "question_number": "8",
-            "question_text": "8. When you run the following code, how many times will the message \"Welcome\" appear on the screen?\n\n```c\n#include<stdio.h>\nvoid main()\n{ int k=5;\n```\n\ndo\n\n```c\n{\nprintf(\"Welcome\\n\");\n11: k=k-1;\ngoto 11;\n}while (k<=2);\n}\n```\n\n(A) one time\n(C) three times\n(B) two times\n(D) many times",
+            "question_text": "When you run the following code, how many times will the message \"Welcome\" appear on the screen?\n\n```c\n#include<stdio.h>\nvoid main()\n{ int k=5;\ndo\n{\nprintf(\"Welcome\\n\");\n11: k=k-1;\ngoto 11;\n}while (k<=2);\n}\n```",
+            "options": [
+                "one time",
+                "two times",
+                "three times",
+                "many times"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "The code initializes `k` to 5. Inside the `do` block, it prints \"Welcome\", then executes `k=k-1;` (which reduces `k` to 4), and then immediately `goto 11;` which jumps back to `k=k-1;`. This creates an infinite loop between `printf` and `goto 11;` before the `while` condition is ever checked. Thus, \"Welcome\" will be printed indefinitely (many times). Option (D) is correct.",
+            "answer": "\"Welcome\" is printed once by the first pass through the `do` block. After that, `k=k-1;` followed by `goto 11;` jumps back to the label on the `k=k-1;` line again and again, so control never returns to the `printf` (and never reaches the `while` test). Hence the message appears one time. (Read literally, `11` is not a valid C label name, but the intended answer is one time.)",
             "answer_source": "generated",
             "chapter": "Unit 2: Conditional Control -Statements"
         },
         {
             "question_number": "9",
-            "question_text": "9. Which keyword is used to declare character array in C?\n(A) arr\n(C) arr char\n(B) string\n(D) char",
+            "question_text": "Which keyword is used to declare character array in C?",
+            "options": [
+                "arr",
+                "string",
+                "arr char",
+                "char"
+            ],
+            "correct_option": "D",
             "marks": 1,
             "answer": "In C, a character array (which is used to store strings) is declared using the `char` keyword. For example, `char myString[10];`. Therefore, option (D) is correct.",
             "answer_source": "generated",
@@ -76,7 +132,14 @@
         },
         {
             "question_number": "10",
-            "question_text": "10. What will be the output of the following when collects the input as HAVE A GOOD DAY?\n\n```c\n#include <stdio.h>\nvoid main()\n{\nchar a[5];\nscanf(\"%s\",a);\nprintf(\"%s\",a);\n}\n```\n\n(A) HAVE A GOOD DAY\n(C) Nothing will be printed\n(B) HAVE\n(D) error",
+            "question_text": "What will be the output of the following when collects the input as HAVE A GOOD DAY?\n\n```c\n#include <stdio.h>\nvoid main()\n{\nchar a[5];\nscanf(\"%s\",a);\nprintf(\"%s\",a);\n}\n```",
+            "options": [
+                "HAVE A GOOD DAY",
+                "HAVE",
+                "Nothing will be printed",
+                "error"
+            ],
+            "correct_option": "B",
             "marks": 1,
             "answer": "1. `char a[5];` declares a character array `a` that can hold 5 characters (4 actual characters + 1 null terminator `\\0`).\n2. `scanf(\"%s\",a);` reads a string from input. When the input is \"HAVE A GOOD DAY\", `scanf(\"%s\", ...)` reads characters until a whitespace is encountered or the buffer is full. It will read \"HAVE\".\n3. The string \"HAVE\" requires 4 characters + 1 null terminator, which perfectly fits into `a[5]`. So, `a` will contain \"HAVE\\0\".\n4. `printf(\"%s\",a);` will then print the content of `a` until it finds the null terminator.\nTherefore, the output will be \"HAVE\". Option (B) is correct.",
             "answer_source": "generated",
@@ -84,7 +147,14 @@
         },
         {
             "question_number": "11",
-            "question_text": "11. If the two strings are identical, then strcmp() function returns\n(A) -1\n(C) 0\n(B) 1\n(D) yes",
+            "question_text": "If the two strings are identical, then strcmp() function returns",
+            "options": [
+                "-1",
+                "1",
+                "0",
+                "yes"
+            ],
+            "correct_option": "C",
             "marks": 1,
             "answer": "The `strcmp()` function in C compares two strings lexicographically. It returns `0` if the strings are identical, a negative value if the first string is lexicographically less than the second, and a positive value if the first string is lexicographically greater than the second. Therefore, if the two strings are identical, `strcmp()` returns `0`. Option (C) is correct.",
             "answer_source": "generated",
@@ -92,7 +162,14 @@
         },
         {
             "question_number": "12",
-            "question_text": "12. Which is the correct option when collecting string variable s1 values as \"ABCD\" in the C programming language.\n(A) string s1 = \"ABCD\";\n(C) char s1=\"ABCD\";\n(B) char s1[10]=\"ABCD\";\n(D) string s1[10]=\"ABCD\";",
+            "question_text": "Which is the correct option when collecting string variable s1 values as \"ABCD\" in the C programming language.",
+            "options": [
+                "string s1 = \"ABCD\";",
+                "char s1[10]=\"ABCD\";",
+                "char s1=\"ABCD\";",
+                "string s1[10]=\"ABCD\";"
+            ],
+            "correct_option": "B",
             "marks": 1,
             "answer": "In C, strings are represented as arrays of characters. The `string` keyword does not exist as a built-in data type.\nOptions (A) and (D) are incorrect because `string` is not a valid data type in C.\nOption (C) `char s1=\"ABCD\";` is syntactically incorrect for initializing a character array directly in C, as it doesn't specify size.\nOption (B) `char s1[10]=\"ABCD\";` correctly declares a character array `s1` of size 10 and initializes it with the string literal \"ABCD\", which also includes the null terminator `\\0` at the end. Therefore, option (B) is correct.",
             "answer_source": "generated",
@@ -100,15 +177,29 @@
         },
         {
             "question_number": "13",
-            "question_text": "13. Which one of the following is the correct extension of the Python file?\n(A) python\n(C).numpy\n(B) .py\n(D) .p",
+            "question_text": "Which one of the following is the correct extension of the Python file?",
+            "options": [
+                "python",
+                ".py",
+                ".numpy",
+                ".p"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "Python source code files are typically saved with the `.py` file extension. Therefore, option (B) is correct.",
+            "answer": "Python source code files are saved with the `.py` file extension.",
             "answer_source": "generated",
             "chapter": "Unit 4: Python: Introduction to Python"
         },
         {
             "question_number": "14",
-            "question_text": "14. What will be the output of the following function in Python?\nround(4.576)\n(A) 4\n(C) 4.5\n(B) 5\n(D) 4.6",
+            "question_text": "What will be the output of the following function in Python?\nround(4.576)",
+            "options": [
+                "4",
+                "5",
+                "4.5",
+                "4.6"
+            ],
+            "correct_option": "B",
             "marks": 1,
             "answer": "The Python `round()` function with a single argument rounds to the nearest integer. If the fractional part is exactly 0.5, it rounds to the nearest even integer. For `4.576`, since the fractional part `0.576` is greater than `0.5`, it rounds up to the next integer. Therefore, `round(4.576)` will return `5`. Option (B) is correct.",
             "answer_source": "generated",
@@ -116,7 +207,14 @@
         },
         {
             "question_number": "15",
-            "question_text": "15. Which of the following solution is correct when converting the given string, name=\"ABDUL KALAM\" to lower case in Python?\n(A) print(name.lower())\n(C) print(toLower(name))\n(B) print(name.toLower())\n(D) print(lower(name))",
+            "question_text": "Which of the following solution is correct when converting the given string, name=\"ABDUL KALAM\" to lower case in Python?",
+            "options": [
+                "print(name.lower())",
+                "print(name.toLower())",
+                "print(toLower(name))",
+                "print(lower(name))"
+            ],
+            "correct_option": "A",
             "marks": 1,
             "answer": "In Python, string objects have a built-in method called `lower()` that returns a new string with all characters converted to lowercase. The correct way to convert the string `name` to lowercase and print it is `print(name.lower())`. Therefore, option (A) is correct.",
             "answer_source": "generated",
@@ -124,7 +222,14 @@
         },
         {
             "question_number": "16",
-            "question_text": "16. Which one of the following is used to get the current time in Python?\n(A) import time;\n(C) import Time;\n(B) import\nprint(time.asctime(time.localtime(time.time()ime; Print(localTime(time))\n(D) import time;\nPrint(Time.asctime(localTime.time(time))) print(localtime(time))",
+            "question_text": "Which one of the following is used to get the current time in Python?",
+            "options": [
+                "import time;",
+                "import\nprint(time.asctime(time.localtime(time.time()ime; Print(localTime(time))",
+                "import Time;",
+                "import time;\nPrint(Time.asctime(localTime.time(time))) print(localtime(time))"
+            ],
+            "correct_option": "A",
             "marks": 1,
             "answer": "To get the current time in Python, the `time` module is typically used. The standard sequence is:\n1. `import time`\n2. `time.time()` gets the current time in seconds since the epoch.\n3. `time.localtime()` converts this to a time tuple.\n4. `time.asctime()` converts the time tuple to a readable string.\nOption (A), when corrected for potential OCR artifacts, `import time; print(time.asctime(time.localtime(time.time())))`, represents the correct usage. Therefore, option (A) is correct.",
             "answer_source": "generated",
@@ -132,7 +237,14 @@
         },
         {
             "question_number": "17",
-            "question_text": "17. What is the output of the given Python code?\nx='10'\ny = '20'\nresult = eval('x + y')\nprint(result)\n(A) xy\n(C) 1020\n(B) 30\n(D) x+y",
+            "question_text": "What is the output of the given Python code?\nx='10'\ny = '20'\nresult = eval('x + y')\nprint(result)",
+            "options": [
+                "xy",
+                "30",
+                "1020",
+                "x+y"
+            ],
+            "correct_option": "C",
             "marks": 1,
             "answer": "1. `x='10'` and `y='20'` assign string values to variables `x` and `y`.\n2. `eval('x + y')` evaluates the string `'x + y'` as a Python expression. Within this evaluation, `x` and `y` refer to the string variables. The `+` operator for strings performs concatenation.\n3. So, `'x' + 'y'` becomes `'10' + '20'`, which results in the string `'1020'`.\n4. `print(result)` will print this concatenated string.\nTherefore, the output is `1020`. Option (C) is correct.",
             "answer_source": "generated",
@@ -140,7 +252,14 @@
         },
         {
             "question_number": "18",
-            "question_text": "18. Select the appropriate output of the provided Python code.\nimport numpy as np\narr = np.zeros((1,2), dtype = int)\nprint(arr)\n(A) [[12]]\n(C) [01]\n(B) [[11],[22]]\n(D) [[00]]",
+            "question_text": "Select the appropriate output of the provided Python code.\nimport numpy as np\narr = np.zeros((1,2), dtype = int)\nprint(arr)",
+            "options": [
+                "[[12]]",
+                "[[11],[22]]",
+                "[01]",
+                "[[00]]"
+            ],
+            "correct_option": "D",
             "marks": 1,
             "answer": "1. `import numpy as np` imports the NumPy library.\n2. `arr = np.zeros((1,2), dtype = int)` creates a NumPy array.\n   - `(1,2)` specifies the shape: 1 row and 2 columns.\n   - `dtype = int` specifies that the elements should be integers.\n   - `np.zeros()` initializes all elements to zero.\n3. The resulting array will be `[[0, 0]]`.\n4. `print(arr)` will display this array.\nTherefore, the output is `[[0 0]]` (or `[[00]]` as represented in the option). Option (D) is correct.",
             "answer_source": "generated",
@@ -148,7 +267,14 @@
         },
         {
             "question_number": "19",
-            "question_text": "19. What will be the output of the following Python code?\nimport pandas as pd\ns=pd.Series([1,2,3,4,5],index= ['a','b','c','d','e'])\nprint(s['c'])\n(A) 5\n(C) 3\n(B) 'c'\n(D) D",
+            "question_text": "What will be the output of the following Python code?\nimport pandas as pd\ns=pd.Series([1,2,3,4,5],index= ['a','b','c','d','e'])\nprint(s['c'])",
+            "options": [
+                "5",
+                "'c'",
+                "3",
+                "D"
+            ],
+            "correct_option": "C",
             "marks": 1,
             "answer": "1. `import pandas as pd` imports the Pandas library.\n2. `s = pd.Series([1,2,3,4,5], index= ['a','b','c','d','e'])` creates a Pandas Series named `s`. The data values are `[1,2,3,4,5]` and their corresponding index labels are `['a','b','c','d','e']`.\n3. `print(s['c'])` accesses the element in the Series `s` that has the index label `'c'`.\n4. According to the Series definition, the index `'c'` corresponds to the data value `3`.\nTherefore, the output will be `3`. Option (C) is correct.",
             "answer_source": "generated",
@@ -156,7 +282,14 @@
         },
         {
             "question_number": "20",
-            "question_text": "20. To count the total number of elements in a dataframe in Python, we can use:\n(A) len\n(C) size\n(B) count\n(D) Values",
+            "question_text": "To count the total number of elements in a dataframe in Python, we can use:",
+            "options": [
+                "len",
+                "count",
+                "size",
+                "Values"
+            ],
+            "correct_option": "C",
             "marks": 1,
             "answer": "In Pandas:\n- `len(dataframe)` returns the number of rows.\n- `dataframe.size` returns the total number of elements (rows * columns) in the DataFrame.\n- `dataframe.count()` returns the number of non-null values for each column (or row).\n- `dataframe.values` returns a NumPy array representation of the DataFrame's data.\nThe question asks for the \"total number of elements\" which is provided by the `size` attribute. Therefore, option (C) is correct.",
             "answer_source": "generated",

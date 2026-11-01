@@ -4,161 +4,301 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Quantum free electron theory was proposed by..................\n(A) Bloch\n(B) Drude & Lorentz\n(C) Sommerfeld\n(D) Newton",
+            "question_text": "Quantum free electron theory was proposed by..................",
+            "options": [
+                "Bloch",
+                "Drude & Lorentz",
+                "Sommerfeld",
+                "Newton"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: Arnold Sommerfeld proposed the quantum free electron theory by introducing Fermi-Dirac statistics to Drude's classical model.",
+            "answer": "Arnold Sommerfeld proposed the quantum free electron theory by introducing Fermi-Dirac statistics to Drude's classical model.",
             "answer_source": "source",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
         {
             "question_number": "2",
-            "question_text": "The probability that an electron in a metal occupies the Fermi-level, at any temperature above 0 K is..................\n(A) 0\n(B) 0.5\n(C) 1\n(D) 100",
+            "question_text": "The probability that an electron in a metal occupies the Fermi-level, at any temperature above 0 K is..................",
+            "options": [
+                "0",
+                "0.5",
+                "1",
+                "100"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: By definition of the Fermi-Dirac distribution, the occupation probability at the exact Fermi energy is 0.5 for any temperature above absolute zero.",
+            "answer": "By definition of the Fermi-Dirac distribution, the occupation probability at the exact Fermi energy is 0.5 for any temperature above absolute zero.",
             "answer_source": "source",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
         {
             "question_number": "3",
-            "question_text": "A semiconductor behave like a _________ at absolute zero temperature.\n(A) Conductor\n(B) Insulator\n(C) Protection device\n(D) Quasi conductor",
+            "question_text": "A semiconductor behave like a _________ at absolute zero temperature.",
+            "options": [
+                "Conductor",
+                "Insulator",
+                "Protection device",
+                "Quasi conductor"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: At 0 K, the valence band is completely full and the conduction band is completely empty, preventing any charge transport and making it a perfect insulator.",
+            "answer": "At 0 K, the valence band is completely full and the conduction band is completely empty, preventing any charge transport and making it a perfect insulator.",
             "answer_source": "source",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
         {
             "question_number": "4",
-            "question_text": "_________ the eigen function of d/dx.\n(A) X^2\n(B) 2 Sin(x)\n(C) e^{2x}\n(D) Sin (2x)",
+            "question_text": "_________ the eigen function of d/dx.",
+            "options": [
+                "X^2",
+                "2 Sin(x)",
+                "e^{2x}",
+                "Sin (2x)"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: An eigenfunction returns a multiple of itself when operated on. The derivative of e^{2x} is 2e^{2x}, meaning e^{2x} is the eigenfunction with an eigenvalue of 2.",
+            "answer": "An eigenfunction returns a multiple of itself when operated on. The derivative of e^{2x} is 2e^{2x}, meaning e^{2x} is the eigenfunction with an eigenvalue of 2.",
             "answer_source": "source",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
         {
             "question_number": "5",
-            "question_text": "Germanium is the example of ............... semiconductor\n(A) Intrinsic\n(B) Extrinsic\n(C) Metal Doped\n(D) Oxide Doped",
+            "question_text": "Germanium is the example of ............... semiconductor",
+            "options": [
+                "Intrinsic",
+                "Extrinsic",
+                "Metal Doped",
+                "Oxide Doped"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: Pure Germanium is an elemental semiconductor and an example of an intrinsic semiconductor.",
+            "answer": "Pure Germanium is an elemental semiconductor and an example of an intrinsic semiconductor.",
             "answer_source": "source",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
         {
             "question_number": "6",
-            "question_text": "The photo diode accepts..............energy as input to generate..............\n(A) Sound, Electric current\n(B) Heat, Electric current\n(C) Electric current, Light\n(D) Light, Electric current",
+            "question_text": "The photo diode accepts..............energy as input to generate..............",
+            "options": [
+                "Sound, Electric current",
+                "Heat, Electric current",
+                "Electric current, Light",
+                "Light, Electric current"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: A photodiode absorbs incident light (photons) as input and converts it into an electrical current.",
+            "answer": "A photodiode absorbs incident light (photons) as input and converts it into an electrical current.",
             "answer_source": "source",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
         {
             "question_number": "7",
-            "question_text": "In a semiconductor the drift current is due to ...............\n(A) Random motion of electrons in the absence of electric field\n(B) Random motion of holes in the absence of electric field\n(C) Movement of charge carriers in the presence of applied electric field.\n(D) Movement of the positive ions in the presence of applied electric field.",
+            "question_text": "In a semiconductor the drift current is due to ...............",
+            "options": [
+                "Random motion of electrons in the absence of electric field",
+                "Random motion of holes in the absence of electric field",
+                "Movement of charge carriers in the presence of applied electric field.",
+                "Movement of the positive ions in the presence of applied electric field."
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: Drift current is defined as the organized directional movement of charge carriers under the influence of an externally applied electric field.",
+            "answer": "Drift current is defined as the organized directional movement of charge carriers under the influence of an externally applied electric field.",
             "answer_source": "source",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
         {
             "question_number": "8",
-            "question_text": "............... converts electrical energy into light energy.\n(A) Solar Cell\n(B) Light Emitting Diode\n(C) Dynamo\n(D) Liquid crystal display",
+            "question_text": "............... converts electrical energy into light energy.",
+            "options": [
+                "Solar Cell",
+                "Light Emitting Diode",
+                "Dynamo",
+                "Liquid crystal display"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: A Light Emitting Diode (LED) relies on electroluminescence to convert electrical current directly into light.",
+            "answer": "A Light Emitting Diode (LED) relies on electroluminescence to convert electrical current directly into light.",
             "answer_source": "source",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
         {
             "question_number": "9",
-            "question_text": "Band to Band transition in GaAs can results absorption and emission of photons with wavelength of...............\n(A) 0.087 nm\n(B) 0.087 mm\n(C) 0.87 μm\n(D) 0.087 Å",
+            "question_text": "Band to Band transition in GaAs can results absorption and emission of photons with wavelength of...............",
+            "options": [
+                "0.087 nm",
+                "0.087 mm",
+                "0.87 μm",
+                "0.087 Å"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: GaAs has a direct bandgap of roughly 1.42 eV. The corresponding photon wavelength is λ = hc/E ≈ 1240 / 1.42 ≈ 873 nm or 0.87 μm.",
+            "answer": "GaAs has a direct bandgap of roughly 1.42 eV. The corresponding photon wavelength is λ = hc/E ≈ 1240 / 1.42 ≈ 873 nm or 0.87 μm.",
             "answer_source": "source",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
         {
             "question_number": "10",
-            "question_text": "Spontaneous emission processes is directly proportional to...............\n(A) Number of atoms in excited state\n(B) Number of atoms in ground state\n(C) Energy density of radiation\n(D) Number of holes in ground state",
+            "question_text": "Spontaneous emission processes is directly proportional to...............",
+            "options": [
+                "Number of atoms in excited state",
+                "Number of atoms in ground state",
+                "Energy density of radiation",
+                "Number of holes in ground state"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: The rate of spontaneous emission depends solely on the population of atoms currently residing in the excited state.",
+            "answer": "The rate of spontaneous emission depends solely on the population of atoms currently residing in the excited state.",
             "answer_source": "source",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
         {
             "question_number": "11",
-            "question_text": "...............rule is a simple expression for the transition probabilities between states of a quantum system, which are subjected to a perturbation\n(A) Ampere\n(B) Maxwell\n(C) Einstein\n(D) Fermi Golden",
+            "question_text": "...............rule is a simple expression for the transition probabilities between states of a quantum system, which are subjected to a perturbation",
+            "options": [
+                "Ampere",
+                "Maxwell",
+                "Einstein",
+                "Fermi Golden"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: Fermi's Golden Rule is a key principle in quantum mechanics used for calculating the transition rate of a system due to a weak perturbation.",
+            "answer": "Fermi's Golden Rule is a key principle in quantum mechanics used for calculating the transition rate of a system due to a weak perturbation.",
             "answer_source": "source",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
         {
             "question_number": "12",
-            "question_text": "...............is a popular simulation technique for evaluating the evolution of optical fields in waveguides and photonic devices, and Optoelectronic Integrated Circuits\n(A) Beam Propagation Method\n(B) Transfer Matrix Method\n(C) Pseudo Potential Method\n(D) Density Function Method",
+            "question_text": "...............is a popular simulation technique for evaluating the evolution of optical fields in waveguides and photonic devices, and Optoelectronic Integrated Circuits",
+            "options": [
+                "Beam Propagation Method",
+                "Transfer Matrix Method",
+                "Pseudo Potential Method",
+                "Density Function Method"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: The Beam Propagation Method (BPM) is the standard computational tool for analyzing light propagation in integrated photonic waveguides.",
+            "answer": "The Beam Propagation Method (BPM) is the standard computational tool for analyzing light propagation in integrated photonic waveguides.",
             "answer_source": "source",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
         {
             "question_number": "13",
-            "question_text": "The ............... method is used to measure the resistance\n(A) Hydrogenation\n(B) Electrolysis\n(C) Rectification\n(D) Vander Pauw",
+            "question_text": "The ............... method is used to measure the resistance",
+            "options": [
+                "Hydrogenation",
+                "Electrolysis",
+                "Rectification",
+                "Vander Pauw"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: The Van der Pauw method is widely used in semiconductor physics to precisely measure the specific resistivity and sheet resistance of uniform samples.",
+            "answer": "The Van der Pauw method is widely used in semiconductor physics to precisely measure the specific resistivity and sheet resistance of uniform samples.",
             "answer_source": "source",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
         {
             "question_number": "14",
-            "question_text": "C-V measurements are capable of yielding information about the ............... and concentration of charge carriers\n(A) Drift potential\n(B) Diffusion potential\n(C) Bonding\n(D) Structure",
+            "question_text": "C-V measurements are capable of yielding information about the ............... and concentration of charge carriers",
+            "options": [
+                "Drift potential",
+                "Diffusion potential",
+                "Bonding",
+                "Structure"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: C-V profiling of a semiconductor junction effectively reveals the built-in diffusion potential and maps the dopant concentration.",
+            "answer": "C-V profiling of a semiconductor junction effectively reveals the built-in diffusion potential and maps the dopant concentration.",
             "answer_source": "source",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
         {
             "question_number": "15",
-            "question_text": "In four probe method, the resistance due to the superposition of current at outer tips R =...............\n(A) V/2I\n(B) V/I\n(C) 2V/I\n(D) 2VI",
+            "question_text": "In four probe method, the resistance due to the superposition of current at outer tips R =...............",
+            "options": [
+                "V/2I",
+                "V/I",
+                "2V/I",
+                "2VI"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: According to Ohm's Law and fundamental probe measurement theory, basic resistance is simply V/I, though specific geometric factors apply to sheet resistance.",
+            "answer": "Current is passed through the outer tips and the voltage is measured across the inner tips, so the measured resistance is R = V/I.",
             "answer_source": "source",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
         {
             "question_number": "16",
-            "question_text": "The resistivity of the given material is _______, whose resistance is 2Ω; area of cross-section and length are 25 cm^2 and 15 cm respectively.\n(A) 333 Ohm m\n(B) 3.33 Ohm m\n(C) 0.0333 Ohm m\n(D) 0.333 Ohm m",
+            "question_text": "The resistivity of the given material is _______, whose resistance is 2Ω; area of cross-section and length are 25 cm^2 and 15 cm respectively.",
+            "options": [
+                "333 Ohm m",
+                "3.33 Ohm m",
+                "0.0333 Ohm m",
+                "0.333 Ohm m"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(D)\nExplanation: Given by the answer key as (D) 0.333 ohm m, calculated based on the specific dimension formulation used by the examiner.",
-            "answer_source": "source",
+            "answer": "ρ = R·A/L = 2 × (25×10⁻⁴ m²) / (0.15 m) = 0.0333 Ω m.",
+            "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
         {
             "question_number": "17",
-            "question_text": "Nano scale materials has their size in between...............nm\n(A) 10-100\n(B) 100-1000\n(C) 1000-2000\n(D) 1-100",
+            "question_text": "Nano scale materials has their size in between...............nm",
+            "options": [
+                "10-100",
+                "100-1000",
+                "1000-2000",
+                "1-100"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: By standard definition, nanomaterials have at least one external dimension in the size range from approximately 1 to 100 nanometers.",
+            "answer": "By standard definition, nanomaterials have at least one external dimension in the size range from approximately 1 to 100 nanometers.",
             "answer_source": "source",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
         {
             "question_number": "18",
-            "question_text": "In a quantum dot the electron confinement is along _________\n(A) One dimension\n(B) all the three dimensions\n(C) Two dimensions\n(D) zero dimension",
+            "question_text": "In a quantum dot the electron confinement is along _________",
+            "options": [
+                "One dimension",
+                "all the three dimensions",
+                "Two dimensions",
+                "zero dimension"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: A quantum dot is a 0D structure, which means charge carriers are quantum confined across all three spatial dimensions.",
+            "answer": "A quantum dot is a 0D structure, which means charge carriers are quantum confined across all three spatial dimensions.",
             "answer_source": "source",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
         {
             "question_number": "19",
-            "question_text": "In CVD process , the precursor in the form of...............\n(A) Liquid\n(B) Solid\n(C) Gas\n(D) Semi solid",
+            "question_text": "In CVD process , the precursor in the form of...............",
+            "options": [
+                "Liquid",
+                "Solid",
+                "Gas",
+                "Semi solid"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: Chemical Vapor Deposition inherently utilizes precursors in the gaseous phase that react chemically upon a heated substrate.",
+            "answer": "Chemical Vapor Deposition inherently utilizes precursors in the gaseous phase that react chemically upon a heated substrate.",
             "answer_source": "source",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
         {
             "question_number": "20",
-            "question_text": "............... technique allows surfaces of objects to be seen in their natural state without staining\n(A) XEM\n(B) AFM\n(C) TEM\n(D) XRD",
+            "question_text": "............... technique allows surfaces of objects to be seen in their natural state without staining",
+            "options": [
+                "XEM",
+                "AFM",
+                "TEM",
+                "XRD"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: Atomic Force Microscopy measures surface forces directly and does not require a vacuum or conductive staining, making it suitable for natural state imaging.",
+            "answer": "Atomic Force Microscopy measures surface forces directly and does not require a vacuum or conductive staining, making it suitable for natural state imaging.",
             "answer_source": "source",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         }

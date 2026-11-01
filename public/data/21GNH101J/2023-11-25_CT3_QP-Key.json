@@ -4,7 +4,14 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "What initial step should Engineers take in the Engineering Design process?\na) Conduct research.\nb) Identify the problem or need.\nc) Select and finalize\nd) Brainstorm and conceptualize.",
+            "question_text": "What initial step should Engineers take in the Engineering Design process?",
+            "options": [
+                "Conduct research.",
+                "Identify the problem or need.",
+                "Select and finalize",
+                "Brainstorm and conceptualize."
+            ],
+            "correct_option": "B",
             "marks": 1,
             "answer": "The engineering design process typically starts with identifying the problem or need that requires a solution. This forms the basis for all subsequent steps.",
             "answer_source": "generated",
@@ -12,15 +19,29 @@
         },
         {
             "question_number": "2",
-            "question_text": "In designing a software architecture, _______ is not a crucial element.\na) Data recovery and planning\nb) Security\nc) History of the programming software\nd) Application Performance Monitoring",
+            "question_text": "In designing a software architecture, _______ is not a crucial element.",
+            "options": [
+                "Data recovery and planning",
+                "Security",
+                "History of the programming software",
+                "Application Performance Monitoring"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "While data recovery, security, and application performance monitoring are all crucial aspects of software system design or operation, the *history* of the programming software itself is generally not considered a crucial element *in designing a software architecture*. Architects focus on current and future requirements, technologies, and constraints.",
+            "answer": "While data recovery, security, and application performance monitoring are all crucial aspects of software system design or operation, the history of the programming software itself is generally not considered a crucial element in designing a software architecture. Architects focus on current and future requirements, technologies, and constraints.",
             "answer_source": "generated",
             "chapter": "Unit 4: Methodology of Engineering"
         },
         {
             "question_number": "3",
-            "question_text": "The Conceive phase within the CDIO framework signifies.\na) Testing and validation\nb) Creating the design\nc) Coding the program\nd) Defining the customer's needs",
+            "question_text": "The Conceive phase within the CDIO framework signifies.",
+            "options": [
+                "Testing and validation",
+                "Creating the design",
+                "Coding the program",
+                "Defining the customer's needs"
+            ],
+            "correct_option": "D",
             "marks": 1,
             "answer": "In the CDIO (Conceive, Design, Implement, Operate) framework, the \"Conceive\" phase involves identifying customer needs, exploring technology and business opportunities, and developing a preliminary concept. Thus, defining the customer's needs is a key part of this phase.",
             "answer_source": "generated",
@@ -28,7 +49,14 @@
         },
         {
             "question_number": "4",
-            "question_text": "In the ADDIE model, what does the 'I' represent?\na) Implementation\nb) Instruction\nc) Identification\nd) Investment",
+            "question_text": "In the ADDIE model, what does the 'I' represent?",
+            "options": [
+                "Implementation",
+                "Instruction",
+                "Identification",
+                "Investment"
+            ],
+            "correct_option": "A",
             "marks": 1,
             "answer": "The ADDIE model stands for Analyze, Design, Develop, Implement, and Evaluate. Therefore, the 'I' represents Implementation.",
             "answer_source": "generated",
@@ -36,7 +64,14 @@
         },
         {
             "question_number": "5",
-            "question_text": "_______ is followed by Engineers to create or construct new things?\na) Scientific method\nb) Engineering design process\nc) Trial and error\nd) Brainstorming",
+            "question_text": "_______ is followed by Engineers to create or construct new things?",
+            "options": [
+                "Scientific method",
+                "Engineering design process",
+                "Trial and error",
+                "Brainstorming"
+            ],
+            "correct_option": "B",
             "marks": 1,
             "answer": "The Engineering design process is a systematic approach followed by engineers to create or construct new things, involving problem identification, conceptualization, design, implementation, and evaluation. While elements of scientific method, trial and error, and brainstorming may be used, the overarching process is the engineering design process.",
             "answer_source": "generated",
@@ -44,7 +79,14 @@
         },
         {
             "question_number": "6",
-            "question_text": "Which of the options provides an accurate description of sustainable development?\na) A development that is participatory and involves all stakeholders.\nb) A development that is economically viable and profitable.\nc) A development that meets the needs of the present without compromising the ability of future generations to meet their own needs.\nd) A development that is adaptive and can respond to changing circumstances.",
+            "question_text": "Which of the options provides an accurate description of sustainable development?",
+            "options": [
+                "A development that is participatory and involves all stakeholders.",
+                "A development that is economically viable and profitable.",
+                "A development that meets the needs of the present without compromising the ability of future generations to meet their own needs.",
+                "A development that is adaptive and can respond to changing circumstances."
+            ],
+            "correct_option": "C",
             "marks": 1,
             "answer": "The most widely accepted definition of sustainable development, often attributed to the Brundtland Commission, is \"development that meets the needs of the present without compromising the ability of future generations to meet their own needs.\"",
             "answer_source": "generated",
@@ -52,7 +94,14 @@
         },
         {
             "question_number": "7",
-            "question_text": "Engineers assume a pivotal role in the healthcare sector by:\na) Designing and developing innovative medical devices and technologies.\nb) Implementing and maintaining healthcare information systems.\nc) Ensuring the safety and effectiveness of healthcare facilities and equipment.\nd) All of the above",
+            "question_text": "Engineers assume a pivotal role in the healthcare sector by:",
+            "options": [
+                "Designing and developing innovative medical devices and technologies.",
+                "Implementing and maintaining healthcare information systems.",
+                "Ensuring the safety and effectiveness of healthcare facilities and equipment.",
+                "All of the above"
+            ],
+            "correct_option": "D",
             "marks": 1,
             "answer": "Engineers contribute in all the listed ways within the healthcare sector: designing medical devices, managing information systems, and ensuring safety and effectiveness of facilities and equipment. Therefore, \"All of the above\" is the correct answer.",
             "answer_source": "generated",
@@ -60,7 +109,14 @@
         },
         {
             "question_number": "8",
-            "question_text": "A diverse, equitable, and _______ workplace improves the environmental, ethical, and economic impact of a company.\na) inclusive\nb) contrasting\nc) heterogeneous\nd) vibrant",
+            "question_text": "A diverse, equitable, and _______ workplace improves the environmental, ethical, and economic impact of a company.",
+            "options": [
+                "inclusive",
+                "contrasting",
+                "heterogeneous",
+                "vibrant"
+            ],
+            "correct_option": "A",
             "marks": 1,
             "answer": "An \"inclusive\" workplace, alongside diversity and equity, is widely recognized for improving various aspects of a company's performance and impact, including environmental, ethical, and economic outcomes.",
             "answer_source": "generated",
@@ -68,23 +124,44 @@
         },
         {
             "question_number": "9",
-            "question_text": "Which one of the following is excluded from the Engineer's code of ethics?\na) Should hold value for safety, health, and welfare of the public.\nb) Should perform services in multidisciplinary fields.\nc) Should issue public statements only in an objective and truthful manner.\nd) Should conduct themselves honorably, responsibly, ethically, and lawfully.",
+            "question_text": "Which one of the following is excluded from the Engineer's code of ethics?",
+            "options": [
+                "Should hold value for safety, health, and welfare of the public.",
+                "Should perform services in multidisciplinary fields.",
+                "Should issue public statements only in an objective and truthful manner.",
+                "Should conduct themselves honorably, responsibly, ethically, and lawfully."
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "Engineer's codes of ethics typically emphasize protecting public safety and welfare, honesty in public statements, and honorable conduct. While engineers often perform services in multidisciplinary fields, it's not a *requirement* or a core ethical principle in the same way the other options are; rather, it describes a common working environment. The question asks what is *excluded*. The fact that engineers *do* work in multidisciplinary fields doesn't mean the *performance of such services* is an ethical tenet that *must* be included in every code, unlike the others which are fundamental duties.",
+            "answer": "Engineers' codes of ethics require services only in areas of competence, not in multidisciplinary fields in general; the other three statements are core canons.",
             "answer_source": "generated",
             "chapter": "Unit 5: Axiology of Engineering"
         },
         {
             "question_number": "10",
-            "question_text": "In seeking sustainable solutions, engineers should ______.\na) avoid engaging with stakeholders and communities to understand their needs and concerns.\nb) increase the cost of the developed product.\nc) understand that there are environmental limits and finite resources. d) use components and materials that cannot be recycled.",
+            "question_text": "In seeking sustainable solutions, engineers should ______.",
+            "options": [
+                "avoid engaging with stakeholders and communities to understand their needs and concerns.",
+                "increase the cost of the developed product.",
+                "understand that there are environmental limits and finite resources.",
+                "use components and materials that cannot be recycled."
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "For sustainable solutions, engineers must recognize the fundamental constraints of environmental limits and finite resources. Options a, b, and d are contrary to the principles of sustainable engineering.",
+            "answer": "For sustainable solutions, engineers must recognize that there are environmental limits and finite resources. The other options (avoiding stakeholders, raising cost, using non-recyclable materials) run against sustainable engineering.",
             "answer_source": "generated",
             "chapter": "Unit 5: Axiology of Engineering"
         },
         {
             "question_number": "11",
-            "question_text": "The only professional organization for engineers that has a stated goal of addressing the non-technical concerns of professional and licensed engineers is\na) IEEE\nb) American Association of Engineering Societies\nc) Society of Women Engineers\nd) National Society of Professional Engineers",
+            "question_text": "The only professional organization for engineers that has a stated goal of addressing the non-technical concerns of professional and licensed engineers is",
+            "options": [
+                "IEEE",
+                "American Association of Engineering Societies",
+                "Society of Women Engineers",
+                "National Society of Professional Engineers"
+            ],
+            "correct_option": "D",
             "marks": 1,
             "answer": "The National Society of Professional Engineers (NSPE) primarily focuses on the non-technical aspects of engineering, including ethics, professional licensure, and public policy, distinguishing it from organizations like IEEE which are more technical in focus, or SWE which focuses on specific demographics.",
             "answer_source": "generated",

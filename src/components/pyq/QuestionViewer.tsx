@@ -11,6 +11,8 @@ import { printQuestions } from "./print";
 const PAGE_SIZE = 25;
 const EMPTY_SET: ReadonlySet<string> = new Set();
 
+type Kind = "all" | "mcq" | "written";
+
 interface Props {
   subject: SubjectEntry;
   /** Question id to scroll to + highlight once loaded (from a shared link). */
@@ -71,6 +73,7 @@ function Viewer({
   const [filterPapers, setFilterPapers] = useState<ReadonlySet<string>>(EMPTY_SET);
   const [filterUnits, setFilterUnits] = useState<ReadonlySet<string>>(EMPTY_SET);
   const [minMarks, setMinMarks] = useState(0);
+  const [kind, setKind] = useState<Kind>("all");
   const [starredOnly, setStarredOnly] = useState(false);
   const [showAllAnswers, setShowAllAnswers] = useState(false);
   const [queryInput, setQueryInput] = useState("");
@@ -93,8 +96,17 @@ function Viewer({
       if (filterPapers.size > 0 && !filterPapers.has(q.source)) continue;
       if (filterUnits.size > 0 && !filterUnits.has(q.unit)) continue;
       if ((q.marks ?? 0) < minMarks) continue;
+      if (kind === "mcq" && !q.options) continue;
+      if (kind === "written" && q.options) continue;
       if (starredOnly && !bookmarks.has(`${subject.code}|${q.id}`)) continue;
-      if (query && !(q.question_text.toLowerCase().includes(query) || q.answer.toLowerCase().includes(query))) {
+      if (
+        query &&
+        !(
+          q.question_text.toLowerCase().includes(query) ||
+          q.answer.toLowerCase().includes(query) ||
+          q.options?.some((o) => o.toLowerCase().includes(query))
+        )
+      ) {
         continue;
       }
       out.push(q);
@@ -103,9 +115,9 @@ function Viewer({
       .map((q, i) => ({ q, i }))
       .sort((a, b) => unitOrder(a.q.unit) - unitOrder(b.q.unit) || (a.q.marks ?? 0) - (b.q.marks ?? 0) || a.i - b.i)
       .map(({ q }) => q);
-  }, [data.questions, filterPapers, filterUnits, minMarks, starredOnly, bookmarks, query, subject.code]);
+  }, [data.questions, filterPapers, filterUnits, minMarks, kind, starredOnly, bookmarks, query, subject.code]);
 
-  const sig = `${[...filterPapers].join(",")}|${[...filterUnits].join(",")}|${minMarks}|${starredOnly}|${query}`;
+  const sig = `${[...filterPapers].join(",")}|${[...filterUnits].join(",")}|${minMarks}|${kind}|${starredOnly}|${query}`;
   const pages = pageState.sig === sig ? pageState.pages : 1;
   const focusIndex = focusId ? ordered.findIndex((q) => q.id === focusId) : -1;
   const visibleCount = Math.min(
@@ -164,15 +176,18 @@ function Viewer({
     [data.questions, bookmarks, subject.code]
   );
 
+  const mcqCount = useMemo(() => data.questions.filter((q) => q.options).length, [data.questions]);
+
   const unknownMarks = useMemo(() => data.questions.filter((q) => q.marks === undefined).length, [data.questions]);
 
   const filtersActive =
-    filterPapers.size > 0 || filterUnits.size > 0 || minMarks > 0 || starredOnly || queryInput.trim() !== "";
+    filterPapers.size > 0 || filterUnits.size > 0 || minMarks > 0 || kind !== "all" || starredOnly || queryInput.trim() !== "";
 
   function resetFilters() {
     setFilterPapers(EMPTY_SET);
     setFilterUnits(EMPTY_SET);
     setMinMarks(0);
+    setKind("all");
     setStarredOnly(false);
     setQueryInput("");
   }
@@ -273,6 +288,31 @@ function Viewer({
           )}
         </div>
         <div className="mt-2 flex flex-wrap items-center gap-2">
+          {mcqCount > 0 && (
+            <div role="group" aria-label="Question type" className="inline-flex overflow-hidden rounded border border-gray-300 dark:border-neutral-600">
+              {(
+                [
+                  ["all", "All", data.questions.length],
+                  ["mcq", "MCQ", mcqCount],
+                  ["written", "Written", data.questions.length - mcqCount],
+                ] as const
+              ).map(([k, label, n]) => (
+                <button
+                  key={k}
+                  type="button"
+                  aria-pressed={kind === k}
+                  onClick={() => setKind(k)}
+                  className={`px-3 py-1.5 text-sm font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-blue-500 ${
+                    kind === k
+                      ? "bg-blue-600 text-white"
+                      : "bg-white text-gray-900 hover:bg-gray-100 dark:bg-neutral-800 dark:text-white dark:hover:bg-neutral-700"
+                  }`}
+                >
+                  {label} ({n})
+                </button>
+              ))}
+            </div>
+          )}
           <button
             type="button"
             aria-pressed={showAllAnswers}

@@ -4,81 +4,151 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Which of the following is the correct syntax to send an array as a parameter to function?\na) func(array);\nb) func(&array);\nc) func(*array);\nd) func(array[]);",
+            "question_text": "Which of the following is the correct syntax to send an array as a parameter to function?",
+            "options": [
+                "func(array);",
+                "func(&array);",
+                "func(*array);",
+                "func(array[]);"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "Answer: a) func(array);",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 3: String Basics"
         },
         {
             "question_number": "2",
-            "question_text": "The keyword used to define a C macro is --------\na) macro\nb) #define\nc) define\nd) macrodef",
+            "question_text": "The keyword used to define a C macro is --------",
+            "options": [
+                "macro",
+                "#define",
+                "define",
+                "macrodef"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "Answer: c) define",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
         {
             "question_number": "3",
-            "question_text": "The symbol * and &amp represents -------- respectively in pointers.\na) Address at operator and Value of operator\nb) Pointer and Reference\nc) Value of operator and Address at operator\nd) Dereference and Reference",
+            "question_text": "The symbol * and & represents -------- respectively in pointers.",
+            "options": [
+                "Address at operator and Value of operator",
+                "Pointer and Reference",
+                "Value of operator and Address at operator",
+                "Dereference and Reference"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "Answer: c) Value of operator and Address at operator",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 2: Conditional Control -Statements"
         },
         {
             "question_number": "4",
-            "question_text": "Identify the output of the following program\n\n```c\n#include <stdio.h>\nint *money()\n{\nint *pocket = 5;\nreturn pocket;\n}\nvoid main()\n{\nint *kit = money();\nprintf(\"%d\", kit);\n}\n```\n\na) 5\nb) 0\nc) Compile time error\nd) Garbage value",
+            "question_text": "Identify the output of the following program\n\n```c\n#include <stdio.h>\nint *money()\n{\nint *pocket = 5;\nreturn pocket;\n}\nvoid main()\n{\nint *kit = money();\nprintf(\"%d\", kit);\n}\n```",
+            "options": [
+                "5",
+                "0",
+                "Compile time error",
+                "Garbage value"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "Answer: a) 5",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 2: Conditional Control -Statements"
         },
         {
             "question_number": "5",
-            "question_text": "What is the output of this C code?\n\n```c\n#include <stdio.h>\nvoid foo(int*);\nint main()\n{\nint i = 10;\nfoo((&i)++);\n}\nvoid foo(int *p)\n{\nprintf(\"%d\\n\", *p);\n}\n```\n\na) 10\nb) 9\nc) 11\nd) 12",
+            "question_text": "What is the output of this C code?\n\n```c\n#include <stdio.h>\nvoid foo(int*);\nint main()\n{\nint i = 10;\nfoo((&i)++);\n}\nvoid foo(int *p)\n{\nprintf(\"%d\\n\", *p);\n}\n```",
+            "options": [
+                "10",
+                "9",
+                "11",
+                "12"
+            ],
+            "correct_option": null,
             "marks": 1,
-            "answer": "Answer: Compile time error is the correct answer\na) 10\tb) 9\nc) 11\td) 12",
+            "answer": "`(&i)++` is not valid C because `&i` is not an lvalue and cannot be incremented, so the program gives a compile-time error. This outcome is not among the printed options.",
             "answer_source": "provided",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
         {
             "question_number": "6",
-            "question_text": "How structure, union, and enumeration are connected?\na. By defining new data types\nb. By defining new variable\nc. By defining new structures\nd. By defining new pointers",
+            "question_text": "How structure, union, and enumeration are connected?",
+            "options": [
+                "By defining new data types",
+                "By defining new variable",
+                "By defining new structures",
+                "By defining new pointers"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "Answer:- a",
+            "answer": "Structures, unions and enumerations are all ways of defining new (user-defined) data types.",
             "answer_source": "provided",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
         {
             "question_number": "7",
-            "question_text": "Predict the value of 'm' in the following code\n\n```c\n#include <stdio.h>\nint main()\n{\nunsigned int s = 5;\nunsigned int r = 7;\nint m = 0;\nm = s ^ r;\nprintf(\"%d\\n\", m);\nreturn 0;\n}\n```\n\na) 1\tb) 2\nc) 3\td) 4",
+            "question_text": "Predict the value of 'm' in the following code\n\n```c\n#include <stdio.h>\nint main()\n{\nunsigned int s = 5;\nunsigned int r = 7;\nint m = 0;\nm = s ^ r;\nprintf(\"%d\\n\", m);\nreturn 0;\n}\n```",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "Answer:- b",
+            "answer": "$5 = 101_2$ and $7 = 111_2$. Bitwise XOR gives $010_2 = 2$.",
             "answer_source": "provided",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
         {
             "question_number": "8",
-            "question_text": "Size of the union defined in the following code is ----\n\n```c\n#include<stdio.h>\n```\n\nunion srm\n\n```c\n{\nint x; float y; double z;\n};\nint main()\n{\nprintf(\"%lu\", sizeof(union srm));\nreturn 0;\n}\n```\n\na) 2\tb) 4\nc) 8\td) 16",
+            "question_text": "Size of the union defined in the following code is ----\n\n```c\n#include<stdio.h>\n```\n\nunion srm\n\n```c\n{\nint x; float y; double z;\n};\nint main()\n{\nprintf(\"%lu\", sizeof(union srm));\nreturn 0;\n}\n```",
+            "options": [
+                "2",
+                "4",
+                "8",
+                "16"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "Answer:- c",
+            "answer": "A union's size is the size of its largest member. Here `double z` takes 8 bytes, so `sizeof(union srm)` is 8.",
             "answer_source": "provided",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
         {
             "question_number": "9",
-            "question_text": "Dynamic Memory Allocation means\n a) memory can be allocated at compile time.\n b) faster than that using static memory allocation.\n c) memory can't be increased while executing program.\n d) memory can be allocated at run time.",
+            "question_text": "Dynamic Memory Allocation means",
+            "options": [
+                "memory can be allocated at compile time.",
+                "faster than that using static memory allocation.",
+                "memory can't be increased while executing program.",
+                "memory can be allocated at run time."
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "Answer:- d",
+            "answer": "Dynamic memory allocation means memory is allocated at run time (for example with `malloc`/`calloc`), not at compile time.",
             "answer_source": "provided",
             "chapter": "Unit 3: String Basics"
         },
         {
             "question_number": "10",
-            "question_text": "The equivalent memory function(s) which has the same effect as calloc --------\na) malloc and memset\nb) realloc\nc) malloc\nd) recalloc and memset",
+            "question_text": "The equivalent memory function(s) which has the same effect as calloc --------",
+            "options": [
+                "malloc and memset",
+                "realloc",
+                "malloc",
+                "recalloc and memset"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "Answer:- a",
+            "answer": "`calloc(n, size)` allocates memory and zero-initializes it, which has the same effect as `malloc(n * size)` followed by `memset(ptr, 0, n * size)`.",
             "answer_source": "provided",
             "chapter": "Unit 3: String Basics"
         },

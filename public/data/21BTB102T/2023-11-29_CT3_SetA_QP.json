@@ -4,81 +4,150 @@
   "questions": [
     {
       "question_number": "1",
-      "question_text": "The secondary structure prediction methods can be either Abinitio or _________ networks, (b)sequence based (c)machine learning (d) homology based",
+      "question_text": "The secondary structure prediction methods can be either Abinitio or _________",
+      "options": [
+        "neural networks",
+        "sequence based",
+        "machine learning",
+        "homology based"
+      ],
+      "correct_option": "D",
       "marks": 1,
-      "answer": "The missing word is (a) neural. Secondary structure prediction methods can be either Abinitio or neural networks, sequence-based, machine learning, or homology-based.",
+      "answer": "Secondary structure prediction methods are either ab initio (predicting from the sequence alone, e.g. Chou-Fasman, GOR) or homology based (using known structures/sequences of related proteins). Neural networks and machine learning are algorithmic approaches used within these categories. (Option (a) was missing a marker in the printed question; 'neural networks' is reconstructed.)",
       "answer_source": "generated",
       "chapter": "Unit 3: Structure Biology"
     },
     {
       "question_number": "2",
-      "question_text": "Which among these is odd (a) space fill (b) ribbon (c) side chain model (d)bat and ball",
+      "question_text": "Which among these is odd",
+      "options": [
+        "space fill",
+        "ribbon",
+        "side chain model",
+        "bat and ball"
+      ],
+      "correct_option": "D",
       "marks": 1,
-      "answer": "(d) bat and ball. Space fill, ribbon, and side chain models are common representations used in protein visualization tools. 'Bat and ball' is not a standard visualization model in this context, it's likely a typo for 'ball and stick' which is another common model.",
+      "answer": "Space fill, ribbon, and side chain models are common representations used in protein visualization tools. 'Bat and ball' is not a standard visualization model in this context, it's likely a typo for 'ball and stick' which is another common model.",
       "answer_source": "generated",
       "chapter": "Unit 3: Structure Biology"
     },
     {
       "question_number": "3",
-      "question_text": "The anticodon for AAU is (a)TGA (b) GAT (c) UGA (d) UUA",
+      "question_text": "The anticodon for AAU is",
+      "options": [
+        "TGA",
+        "GAT",
+        "UGA",
+        "UUA"
+      ],
+      "correct_option": "D",
       "marks": 1,
-      "answer": "(d) UUA. The mRNA codon is AAU. During translation, the tRNA anticodon base pairs with the mRNA codon. Adenine (A) pairs with Uracil (U), and Uracil (U) pairs with Adenine (A). Therefore, for AAU, the anticodon is UUA.",
+      "answer": "The mRNA codon is AAU. During translation, the tRNA anticodon base pairs with the mRNA codon. Adenine (A) pairs with Uracil (U), and Uracil (U) pairs with Adenine (A). Therefore, for AAU, the anticodon is UUA.",
       "answer_source": "generated",
       "chapter": "Unit 3: Structure Biology"
     },
     {
       "question_number": "4",
-      "question_text": "Clustering is a type of _________ machine learning algorithm (a)supervised (b) unsupervised (c) reciprocal (d) hierarchical",
+      "question_text": "Clustering is a type of _________ machine learning algorithm",
+      "options": [
+        "supervised",
+        "unsupervised",
+        "reciprocal",
+        "hierarchical"
+      ],
+      "correct_option": "B",
       "marks": 1,
-      "answer": "(b) unsupervised. Clustering is a type of unsupervised machine learning algorithm, meaning it works with unlabeled data to find inherent groupings or patterns.",
+      "answer": "Clustering is a type of unsupervised machine learning algorithm, meaning it works with unlabeled data to find inherent groupings or patterns.",
       "answer_source": "generated",
       "chapter": "Unit 4: Neurobiology"
     },
     {
       "question_number": "5",
-      "question_text": "Deposits of _________ interfere with neuronal functions in Alzheimer's (a) plaques (B)dopamine (c)amino acids (d)",
+      "question_text": "Deposits of _________ interfere with neuronal functions in Alzheimer's",
+      "options": [
+        "plaques",
+        "dopamine",
+        "amino acids"
+      ],
+      "correct_option": "A",
       "marks": 1,
-      "answer": "(a) plaques. Deposits of amyloid-beta plaques (and neurofibrillary tangles) are characteristic pathological hallmarks that interfere with neuronal functions in Alzheimer's disease.",
+      "answer": "Deposits of amyloid-beta plaques (and neurofibrillary tangles) are characteristic pathological hallmarks that interfere with neuronal functions in Alzheimer's disease.",
       "answer_source": "generated",
       "chapter": "Unit 4: Neurobiology"
     },
     {
       "question_number": "6",
-      "question_text": "The spiking period is followed by a _________ period (a)refractory (b) resolution (c) unspike (d)silent",
+      "question_text": "The spiking period is followed by a _________ period",
+      "options": [
+        "refractory",
+        "resolution",
+        "unspike",
+        "silent"
+      ],
+      "correct_option": "A",
       "marks": 1,
-      "answer": "(a) refractory. In neuroscience, after a neuron generates an action potential (spiking period), there is a brief refractory period during which it is less likely or unable to fire another action potential.",
+      "answer": "In neuroscience, after a neuron generates an action potential (spiking period), there is a brief refractory period during which it is less likely or unable to fire another action potential.",
       "answer_source": "generated",
       "chapter": "Unit 4: Neurobiology"
     },
     {
       "question_number": "7",
-      "question_text": "Albert Einstein had inordinate number of _________ cells (a) nerve (b) glial (c) liver (d)heart",
+      "question_text": "Albert Einstein had inordinate number of _________ cells",
+      "options": [
+        "nerve",
+        "glial",
+        "liver",
+        "heart"
+      ],
+      "correct_option": "B",
       "marks": 1,
-      "answer": "(b) glial. Studies on Albert Einstein's brain have suggested an unusually high number of glial cells (specifically astrocytes) in certain regions compared to control brains, which has been hypothesized to contribute to his cognitive abilities.",
+      "answer": "Studies on Albert Einstein's brain have suggested an unusually high number of glial cells (specifically astrocytes) in certain regions compared to control brains, which has been hypothesized to contribute to his cognitive abilities.",
       "answer_source": "generated",
       "chapter": "Unit 4: Neurobiology"
     },
     {
       "question_number": "8",
-      "question_text": "MHC is present on _________ (a) human cells (b)bacteria (c) virus (d)protozoa",
+      "question_text": "MHC is present on _________",
+      "options": [
+        "human cells",
+        "bacteria",
+        "virus",
+        "protozoa"
+      ],
+      "correct_option": "A",
       "marks": 1,
-      "answer": "(a) human cells. Major Histocompatibility Complex (MHC) molecules are cell surface proteins found on most nucleated cells in vertebrates, including human cells. They play a crucial role in immune system recognition of self versus non-self.",
+      "answer": "Major Histocompatibility Complex (MHC) molecules are cell surface proteins found on most nucleated cells in vertebrates, including human cells. They play a crucial role in immune system recognition of self versus non-self.",
       "answer_source": "generated",
       "chapter": "Unit 5: Immunobiology"
     },
     {
       "question_number": "9",
-      "question_text": "_________ is a agranular leukocytes (a) basophil (b) eosinophil (c) monocyte (d)neutrophil",
+      "question_text": "_________ is a agranular leukocytes",
+      "options": [
+        "basophil",
+        "eosinophil",
+        "monocyte",
+        "neutrophil"
+      ],
+      "correct_option": "C",
       "marks": 1,
-      "answer": "(c) monocyte. Monocytes are agranular leukocytes, along with lymphocytes. Basophils, eosinophils, and neutrophils are granular leukocytes.",
+      "answer": "Monocytes are agranular leukocytes, along with lymphocytes. Basophils, eosinophils, and neutrophils are granular leukocytes.",
       "answer_source": "generated",
       "chapter": "Unit 5: Immunobiology"
     },
     {
       "question_number": "10",
-      "question_text": "Diphtheria and tetanus are developed as _________ vaccine (a) peptide (b)live (c)toxoid (d)attenuated",
+      "question_text": "Diphtheria and tetanus are developed as _________ vaccine",
+      "options": [
+        "peptide",
+        "live",
+        "toxoid",
+        "attenuated"
+      ],
+      "correct_option": "C",
       "marks": 1,
-      "answer": "(c) toxoid. Diphtheria and tetanus vaccines are toxoid vaccines, which are made from inactivated bacterial toxins (toxoids) that induce an immune response against the toxin rather than the bacterium itself.",
+      "answer": "Diphtheria and tetanus vaccines are toxoid vaccines, which are made from inactivated bacterial toxins (toxoids) that induce an immune response against the toxin rather than the bacterium itself.",
       "answer_source": "generated",
       "chapter": "Unit 5: Immunobiology"
     },

@@ -4,153 +4,286 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Thevenin's resistance is found by _______\n(A) Shorting all voltage sources\n(B) Opening all current sources\n(C) Shorting all voltage sources and opening all current sources\n(D) Opening all voltage sources and shorting all current sources",
+            "question_text": "Thevenin's resistance is found by _______",
+            "options": [
+                "Shorting all voltage sources",
+                "Opening all current sources",
+                "Shorting all voltage sources and opening all current sources",
+                "Opening all voltage sources and shorting all current sources"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: To find the equivalent Thevenin resistance (Rth) of a linear circuit, ideal voltage sources are short-circuited and ideal current sources are open-circuited.",
+            "answer": "To find the equivalent Thevenin resistance (Rth) of a linear circuit, ideal voltage sources are short-circuited and ideal current sources are open-circuited.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
         {
             "question_number": "2",
-            "question_text": "The internal resistance for the maximum transfer of power should be _______\n(A) equal to load resistance\n(B) greater than load resistance\n(C) zero\n(D) lesser than load resistance",
+            "question_text": "The internal resistance for the maximum transfer of power should be _______",
+            "options": [
+                "equal to load resistance",
+                "greater than load resistance",
+                "zero",
+                "lesser than load resistance"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: The Maximum Power Transfer Theorem dictates that maximum power is delivered to the load when the source's internal resistance is exactly equal to the load resistance.",
+            "answer": "The Maximum Power Transfer Theorem dictates that maximum power is delivered to the load when the source's internal resistance is exactly equal to the load resistance.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
         {
             "question_number": "3",
-            "question_text": "The 2ohm and 3 ohm resistor are in series the equivalent resistance is\n(A) 1.2 ohm\n(B) 5 ohm\n(C) 4.2 ohm\n(D) 9 ohm",
+            "question_text": "The 2ohm and 3 ohm resistor are in series the equivalent resistance is",
+            "options": [
+                "1.2 ohm",
+                "5 ohm",
+                "4.2 ohm",
+                "9 ohm"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: For resistors in a simple series combination, equivalent resistance is the sum: R_total = 2 Ω + 3 Ω = 5 Ω.",
+            "answer": "For resistors in a simple series combination, equivalent resistance is the sum: R_total = 2 Ω + 3 Ω = 5 Ω.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
         {
             "question_number": "4",
-            "question_text": "In a star connected system, the current flowing through the line is _______\n(A) Greater than the phase current\n(B) Equal to the phase current\n(C) Lesser than the phase current\n(D) zero",
+            "question_text": "In a star connected system, the current flowing through the line is _______",
+            "options": [
+                "Greater than the phase current",
+                "Equal to the phase current",
+                "Lesser than the phase current",
+                "zero"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: Because the line and the respective phase coil are in series in a star (Y) connection, the line current is exactly equal to the phase current (IL = Iph).",
+            "answer": "Because the line and the respective phase coil are in series in a star (Y) connection, the line current is exactly equal to the phase current (IL = Iph).",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
         {
             "question_number": "5",
-            "question_text": "How many AND gates are required to realize A.B+C.D+E\n(A) 2\n(B) 4\n(C) 3\n(D) 1",
+            "question_text": "How many AND gates are required to realize A.B+C.D+E",
+            "options": [
+                "2",
+                "4",
+                "3",
+                "1"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: The expression has two product terms (A.B and C.D), each requiring one AND gate, totaling 2 AND gates. The results (along with E) are then passed through an OR gate.",
+            "answer": "The expression has two product terms (A.B and C.D), each requiring one AND gate, totaling 2 AND gates. The results (along with E) are then passed through an OR gate.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
         {
             "question_number": "7",
-            "question_text": "The structure of the IGBT is a\n(A) P-N-P structure connected by a MOS gate\n(B) N-N-P-P structure connected by a MOS gate\n(C) P-N-P-N structure connected by a MOS gate\n(D) N-P-N-P structure connected by a MOS gate",
+            "question_text": "The structure of the IGBT is a",
+            "options": [
+                "P-N-P structure connected by a MOS gate",
+                "N-N-P-P structure connected by a MOS gate",
+                "P-N-P-N structure connected by a MOS gate",
+                "N-P-N-P structure connected by a MOS gate"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: The internal physical structure of an IGBT is a four-layer semiconductor (P-N-P-N) configuration governed by a MOSFET-style insulated gate.",
+            "answer": "The internal physical structure of an IGBT is a four-layer semiconductor (P-N-P-N) configuration governed by a MOSFET-style insulated gate.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
         {
             "question_number": "8",
-            "question_text": "An SCR is a _______\n(A) four layer, four junction device\n(B) four layer, three junction device\n(C) four layer, two junction device\n(D) three layer, single junction device",
+            "question_text": "An SCR is a _______",
+            "options": [
+                "four layer, four junction device",
+                "four layer, three junction device",
+                "four layer, two junction device",
+                "three layer, single junction device"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: A Silicon Controlled Rectifier (SCR) is fundamentally a four-layer device (P-N-P-N structure) possessing exactly three internal PN junctions (J1, J2, and J3).",
+            "answer": "A Silicon Controlled Rectifier (SCR) is fundamentally a four-layer device (P-N-P-N structure) possessing exactly three internal PN junctions (J1, J2, and J3).",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
         {
             "question_number": "9",
-            "question_text": "Thin laminations are used in a machine in order to reduce _______\n(A) Eddy current losses\n(B) Hysteresis losses\n(C) Copper losses\n(D) Interference",
+            "question_text": "Thin laminations are used in a machine in order to reduce _______",
+            "options": [
+                "Eddy current losses",
+                "Hysteresis losses",
+                "Copper losses",
+                "Interference"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: By constructing magnetic cores using thin laminated steel sheets separated by insulation, the pathway for circulating eddy currents is restricted, thus dramatically reducing eddy current losses.",
+            "answer": "By constructing magnetic cores using thin laminated steel sheets separated by insulation, the pathway for circulating eddy currents is restricted, thus dramatically reducing eddy current losses.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
         {
             "question_number": "10",
-            "question_text": "Commutator in DC generator is used for _______\n(A) collecting of current\n(B) reduce losses\n(C) increase efficiency\n(D) convert AC armature current in to DC",
+            "question_text": "Commutator in DC generator is used for _______",
+            "options": [
+                "collecting of current",
+                "reduce losses",
+                "increase efficiency",
+                "convert AC armature current in to DC"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: Even in a DC generator, the internal current generated within the rotating armature coils is alternating (AC). The commutator serves as a mechanical rectifier to convert it into unidirectional DC at the terminals.",
+            "answer": "Even in a DC generator, the internal current generated within the rotating armature coils is alternating (AC). The commutator serves as a mechanical rectifier to convert it into unidirectional DC at the terminals.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
         {
             "question_number": "11",
-            "question_text": "The frame of an induction motor is usually made of\n(A) Silicon steel\n(B) Cast iron\n(C) Aluminum\n(D) Bronze",
+            "question_text": "The frame of an induction motor is usually made of",
+            "options": [
+                "Silicon steel",
+                "Cast iron",
+                "Aluminum",
+                "Bronze"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: Cast iron provides high mechanical strength, good damping characteristics, and is cost-effective, making it standard for manufacturing induction motor exterior frames.",
+            "answer": "Cast iron provides high mechanical strength, good damping characteristics, and is cost-effective, making it standard for manufacturing induction motor exterior frames.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
         {
             "question_number": "12",
-            "question_text": "An elevator drive is required to operate in\n(A) one quadrant only\n(B) two quadrants.\n(C) three quadrants.\n(D) four quadrants.",
+            "question_text": "An elevator drive is required to operate in",
+            "options": [
+                "one quadrant only",
+                "two quadrants.",
+                "three quadrants.",
+                "four quadrants."
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: Elevators require motoring and braking actions in both upward and downward moving directions, which necessitates comprehensive four-quadrant drive operation.",
+            "answer": "Elevators require motoring and braking actions in both upward and downward moving directions, which necessitates comprehensive four-quadrant drive operation.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
         {
             "question_number": "13",
-            "question_text": "LEDs fabricated from the gallium arsenide emit radiation in the\n(A) Visible Range\n(B) Infrared Region\n(C) Ultra violet Region\n(D) Ultrasonic Region",
+            "question_text": "LEDs fabricated from the gallium arsenide emit radiation in the",
+            "options": [
+                "Visible Range",
+                "Infrared Region",
+                "Ultra violet Region",
+                "Ultrasonic Region"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: Gallium Arsenide (GaAs) semiconductors inherently possess a bandgap that corresponds to photon emissions located in the non-visible infrared spectrum.",
+            "answer": "Gallium Arsenide (GaAs) semiconductors inherently possess a bandgap that corresponds to photon emissions located in the non-visible infrared spectrum.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
         {
             "question_number": "14",
-            "question_text": "A device consists of a photo transistor and a led is _______\n(A) Photo diode\n(B) Opto coupler\n(C) Opto isolator\n(D) Photo multiplier",
+            "question_text": "A device consists of a photo transistor and a led is _______",
+            "options": [
+                "Photo diode",
+                "Opto coupler",
+                "Opto isolator",
+                "Photo multiplier"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: An optocoupler (or optoisolator) packages a light-emitting diode and a photodetector (like a photo transistor) to transfer signals optically while maintaining electrical isolation.",
+            "answer": "An optocoupler (or optoisolator) packages a light-emitting diode and a photodetector (like a photo transistor) to transfer signals optically while maintaining electrical isolation.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
         {
             "question_number": "15",
-            "question_text": "In Ultrasonic proximity sensors the distance between the sensor and the target is determined by\n(A) time taken by reflected light to reach back to sensor.\n(B) time taken by the sound to reflect back to the sensor.\n(C) measuring voltage at the output.\n(D) measuring changes in output current.",
+            "question_text": "In Ultrasonic proximity sensors the distance between the sensor and the target is determined by",
+            "options": [
+                "time taken by reflected light to reach back to sensor.",
+                "time taken by the sound to reflect back to the sensor.",
+                "measuring voltage at the output.",
+                "measuring changes in output current."
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: Ultrasonic sensors use the 'Time of Flight' principle, analyzing the exact time it takes for an emitted high-frequency sound wave to strike a target and echo back.",
+            "answer": "Ultrasonic sensors use the 'Time of Flight' principle, analyzing the exact time it takes for an emitted high-frequency sound wave to strike a target and echo back.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
         {
             "question_number": "16",
-            "question_text": "_______ is the principle of operation of LVDT\n(A) Mutual inductance\n(B) Self-inductance\n(C) Permanence\n(D) Reluctance",
+            "question_text": "_______ is the principle of operation of LVDT",
+            "options": [
+                "Mutual inductance",
+                "Self-inductance",
+                "Permanence",
+                "Reluctance"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: The Linear Variable Differential Transformer calculates displacement by taking advantage of varying mutual magnetic inductance between a primary and secondary coils.",
+            "answer": "The Linear Variable Differential Transformer calculates displacement by taking advantage of varying mutual magnetic inductance between a primary and secondary coils.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
         {
             "question_number": "17",
-            "question_text": "For proper earthing, what should be the maximum value of earth resistance while carrying out the testing of the earth's continuity path?\n(A) 1 ohm\n(B) 2 ohm\n(C) 5 ohm\n(D) 10 ohm",
+            "question_text": "For proper earthing, what should be the maximum value of earth resistance while carrying out the testing of the earth's continuity path?",
+            "options": [
+                "1 ohm",
+                "2 ohm",
+                "5 ohm",
+                "10 ohm"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: For a highly reliable and safe grounding system, the continuity path and overall earth resistance are ideally maintained well below 1 ohm.",
+            "answer": "For a highly reliable and safe grounding system, the continuity path and overall earth resistance are ideally maintained well below 1 ohm.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
         {
             "question_number": "18",
-            "question_text": "Identify the device which is used to give the signal to the circuit breaker at the time of fault\n(A) Fuse\n(B) Isolator\n(C) Relay\n(D) CT",
+            "question_text": "Identify the device which is used to give the signal to the circuit breaker at the time of fault",
+            "options": [
+                "Fuse",
+                "Isolator",
+                "Relay",
+                "CT"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: A protective relay constantly monitors the circuit conditions and, upon detecting a fault, actively sends a trip signal to the circuit breaker to disconnect the line.",
+            "answer": "A protective relay constantly monitors the circuit conditions and, upon detecting a fault, actively sends a trip signal to the circuit breaker to disconnect the line.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
         {
             "question_number": "19",
-            "question_text": "Electric vehicles and inductionhybrid vehicles have the following components in common except _______\n(A) Battery\n(B) ECU\n(C) Generator\n(D) Internal combustion engine",
+            "question_text": "Electric vehicles and inductionhybrid vehicles have the following components in common except _______",
+            "options": [
+                "Battery",
+                "ECU",
+                "Generator",
+                "Internal combustion engine"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: Fully electric vehicles (EVs) utilize purely electric powertrains, entirely omitting the internal combustion engine found in hybrid models.",
+            "answer": "Fully electric vehicles (EVs) utilize purely electric powertrains, entirely omitting the internal combustion engine found in hybrid models.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
         {
             "question_number": "20",
-            "question_text": "The highest transmission voltage used in India is\n(A) 230 kV\n(B) 1100 kV\n(C) 765 kV\n(D) 400 kV",
+            "question_text": "The highest transmission voltage used in India is",
+            "options": [
+                "230 kV",
+                "1100 kV",
+                "765 kV",
+                "400 kV"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: At a fully commercial operational scale, the highest operational AC power transmission voltage utilized across the Indian power grid is 765 kV.",
+            "answer": "At a fully commercial operational scale, the highest operational AC power transmission voltage utilized across the Indian power grid is 765 kV.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         }

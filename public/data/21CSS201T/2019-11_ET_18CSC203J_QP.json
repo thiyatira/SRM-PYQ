@@ -1,311 +1,451 @@
 {
-  "formal_filename": "2019-11_ET_18CSC203J_QP.json",
-  "paper_title": "B.Tech. DEGREE EXAMINATION, NOVEMBER 2019 - Third Semester - 18CSC203J - COMPUTER ORGANIZATION AND ARCHITECTURE (For the candidates admitted during the academic year 2018-2019 onwards)",
-  "source": "2019-11 ET 18CSC203J",
-  "questions": [
-    {
-      "question_number": "1",
-      "question_text": "The instruction → Add LOCA, Ro ______.\n(A) Adds the value of LOCA to Ro and stores in the temp register\n(B) Adds the value of Ro to the address of LOCA\n(C) Adds the value of both LOCA and Ro and stores it in Ro\n(D) Adds the value of LOCA with a value in accumulator and stores it in Ro",
-      "marks": 1,
-      "answer": "(C) Adds the value of both LOCA and Ro and stores it in Ro, that is $R0 \\leftarrow [LOCA] + [R0]$.",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "2",
-      "question_text": "______ is used to choose between incrementing the PC (or) performing ALU operations.\n(A) Conditional codes\n(B) Multiplexer\n(C) Control unit\n(D) Demultiplexer",
-      "marks": 1,
-      "answer": "(B) Multiplexer. In the single-bus datapath, the MUX selects either the constant 4 (to increment the PC) or register Y as the ALU input.",
-      "answer_source": "generated",
-      "chapter": "Unit 4: Control Unit"
-    },
-    {
-      "question_number": "3",
-      "question_text": "Which memory device is generally made of semiconductors?\n(A) RAM\n(B) Hard disk\n(C) Floppy disk\n(D) CD",
-      "marks": 1,
-      "answer": "(A) RAM. Hard and floppy disks are magnetic, and CDs are optical.",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "4",
-      "question_text": "The instruction MOV AX, # 0005H belongs to the addressing mode\n(A) Register\n(B) Direct\n(C) Immediate\n(D) Register relative",
-      "marks": 1,
-      "answer": "(C) Immediate. The operand 0005H is part of the instruction.",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "5",
-      "question_text": "Perform binary addition of 110H 0010 is ______.\n(A) 1110\n(B) 1111\n(C) 0111\n(D) 11101",
-      "marks": 1,
-      "answer": "(B) 1111. The question is garbled; it is read as $1101 + 0010 = 1111$ (13 + 2 = 15), which is the only option consistent with a 4-bit sum without carry.",
-      "answer_source": "generated",
-      "chapter": "Unit 1: Introduction to Number System and Logic Gates"
-    },
-    {
-      "question_number": "6",
-      "question_text": "Booth's algorithm is applied on ______.\n(A) Decimal numbers\n(B) Binary numbers\n(C) Hexadecimal numbers\n(D) Octal numbers",
-      "marks": 1,
-      "answer": "(B) Binary numbers, specifically signed 2's complement binary numbers.",
-      "answer_source": "generated",
-      "chapter": "Unit 3: Design of ALU"
-    },
-    {
-      "question_number": "7",
-      "question_text": "______ is a straight forward method of representing positive and negative number.\n(A) Radix\n(B) Complement\n(C) Sign magnitude\n(D) Encode",
-      "marks": 1,
-      "answer": "(C) Sign magnitude. The MSB is the sign, and the remaining bits are the magnitude.",
-      "answer_source": "generated",
-      "chapter": "Unit 1: Introduction to Number System and Logic Gates"
-    },
-    {
-      "question_number": "8",
-      "question_text": "The sign magnitude representation of -9 is ______.\n(A) 00001001\n(B) 11111001\n(C) 10001001\n(D) 11001",
-      "marks": 1,
-      "answer": "(C) 10001001. The sign bit is 1 and the magnitude is $9 = 0001001$ (8-bit).",
-      "answer_source": "generated",
-      "chapter": "Unit 1: Introduction to Number System and Logic Gates"
-    },
-    {
-      "question_number": "9",
-      "question_text": "The pipelining process is also called as\n(A) Superscalar operation\n(B) Assembly line operation\n(C) Von Neumann cycle\n(D) Harvard cycle",
-      "marks": 1,
-      "answer": "(B) Assembly line operation.",
-      "answer_source": "generated",
-      "chapter": "Unit 4: Control Unit"
-    },
-    {
-      "question_number": "10",
-      "question_text": "The situation where in the data of operands are not available is called ______.\n(A) Data hazard\n(B) Stock\n(C) Dead lock\n(D) Structural hazard",
-      "marks": 1,
-      "answer": "(A) Data hazard.",
-      "answer_source": "generated",
-      "chapter": "Unit 4: Control Unit"
-    },
-    {
-      "question_number": "11",
-      "question_text": "A word whose individual bits represent a control signal is ______.\n(A) Command word\n(B) Control word\n(C) Co-ordination word\n(D) Generation word",
-      "marks": 1,
-      "answer": "(B) Control word.",
-      "answer_source": "generated",
-      "chapter": "Unit 4: Control Unit"
-    },
-    {
-      "question_number": "12",
-      "question_text": "Each stage in pipelining should be completed within ______ cycle.\n(A) 1\n(B) 2\n(C) 3\n(D) 4",
-      "marks": 1,
-      "answer": "(A) 1. Each pipeline stage must complete in one clock cycle.",
-      "answer_source": "generated",
-      "chapter": "Unit 4: Control Unit"
-    },
-    {
-      "question_number": "13",
-      "question_text": "When instruction 'i' and instruction 'j' tends to write in same register (or) memory location, it is called\n(A) Input dependence\n(B) Output dependence\n(C) Ideal pipeline\n(D) Digital call",
-      "marks": 1,
-      "answer": "(B) Output dependence, a WAW (write-after-write) hazard.",
-      "answer_source": "generated",
-      "chapter": "Unit 4: Control Unit"
-    },
-    {
-      "question_number": "14",
-      "question_text": "SIMD represents an organization that ______.\n(A) Refers to a computer system capable of processing several programs at same time\n(B) Represents organization of single computer containing a control unit, processor unit\n(C) Includes many processing units under the supervision of a common control unit\n(D) Refers to a system capable of processing single program at a same time",
-      "marks": 1,
-      "answer": "(C) Includes many processing units under the supervision of a common control unit.",
-      "answer_source": "generated",
-      "chapter": "Unit 5: Parallelism"
-    },
-    {
-      "question_number": "15",
-      "question_text": "Von Neumann architecture is ______.\n(A) SISD\n(B) SIMD\n(C) MIMD\n(D) MISD",
-      "marks": 1,
-      "answer": "(A) SISD.",
-      "answer_source": "generated",
-      "chapter": "Unit 5: Parallelism"
-    },
-    {
-      "question_number": "16",
-      "question_text": "Multithreading allows multiple-threads for sharing functional units of a\n(A) Multiple processor\n(B) Single processor\n(C) Dual core\n(D) Core i5",
-      "marks": 1,
-      "answer": "(B) Single processor. Hardware multithreading lets multiple threads share the functional units of one processor.",
-      "answer_source": "generated",
-      "chapter": "Unit 5: Parallelism"
-    },
-    {
-      "question_number": "17",
-      "question_text": "The correspondence between the main memory blocks and those in that cache is given by\n(A) Hash function\n(B) Mapping function\n(C) Locale function\n(D) Assign function",
-      "marks": 1,
-      "answer": "(B) Mapping function.",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "18",
-      "question_text": "The temporal aspect of the locality of reference means ______.\n(A) That the recently executed instruction won't be executed soon\n(B) That the recently executed instruction is temporarily not referred\n(C) That the recently executed instruction will be executed soon again\n(D) That recently executed instruction will never be executed again",
-      "marks": 1,
-      "answer": "(C) That the recently executed instruction will be executed soon again.",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "19",
-      "question_text": "______ is used to implement virtual memory organization.\n(A) Page table\n(B) Frame table\n(C) MMU\n(D) Page table register",
-      "marks": 1,
-      "answer": "(C) MMU. The Memory Management Unit implements virtual memory by translating virtual addresses, using page tables.",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "20",
-      "question_text": "______ translates the logical address into a physical address.\n(A) MMU\n(B) Translator\n(C) Computer\n(D) Linker",
-      "marks": 1,
-      "answer": "(A) MMU.",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "21.",
-      "question_text": "Draw and explain the connections between the processor and memory.",
-      "marks": 4,
-      "answer": "**Diagram:** inside the processor are PC, IR, MAR, MDR, the control unit, the ALU and $R_0$ to $R_{n-1}$. MAR connects to memory through the address bus; MDR connects to memory through the bidirectional data bus; control lines (Read, Write, MFC) run between them.\n\n- **MAR** holds the address of the location to be accessed and drives the address lines.\n- **MDR** holds the data to be written to, or read from, memory.\n- **PC** holds the next instruction address, which is copied to MAR for the fetch.\n- **IR** receives the fetched instruction from MDR.\n\n**Fetch:** PC → MAR, Read → memory → MDR → IR; then PC is incremented.\n**Operand read:** address → MAR, Read → MDR → register/ALU.\n**Write:** address → MAR, data → MDR, Write.",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "22.",
-      "question_text": "Define byte addressability and what are the two ways the byte address can be assigned across words?",
-      "marks": 4,
-      "answer": "**Byte addressability:** each byte in memory has its own distinct address, so successive bytes have addresses 0, 1, 2, …; with 32-bit words, successive words are at addresses 0, 4, 8, ….\n\nThe two ways of assigning byte addresses across words are:\n1. **Big-endian:** the lower byte addresses are used for the more significant (leftmost) bytes of the word.\n2. **Little-endian:** the lower byte addresses are used for the less significant (rightmost) bytes.\n\nFor example, word 0 holding 0x12345678 is stored as bytes 0 to 3 = 12 34 56 78 in big-endian and as 78 56 34 12 in little-endian.",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "23.",
-      "question_text": "Write down the steps for non-restoring division.",
-      "marks": 4,
-      "answer": "Registers: A ((n+1) bits) = 0, Q = dividend (n bits), M = divisor.\n\n**Step 1:** repeat n times:\n- If the sign of A is 0 (A ≥ 0): shift A,Q left by one bit and subtract M from A.\n- Otherwise (A < 0): shift A,Q left by one bit and add M to A.\n- Then, if the sign of A is 0, set $q_0 = 1$; otherwise set $q_0 = 0$.\n\n**Step 2:** if the sign of A is 1 (negative), add M to A (remainder correction).\n\nThe quotient is in Q and the remainder in A. No restore step is needed in each cycle.",
-      "answer_source": "generated",
-      "chapter": "Unit 3: Design of ALU"
-    },
-    {
-      "question_number": "24.",
-      "question_text": "What is a pipeline hazard? Mention its types and define each type of hazards.",
-      "marks": 4,
-      "answer": "A **pipeline hazard** is any condition that causes the pipeline to stall, that is, prevents the next instruction from executing in its designated clock cycle.\n\n1. **Structural (resource) hazard:** two instructions need the same hardware resource (for example a single memory port or ALU) at the same time.\n2. **Data hazard:** an instruction depends on the result of a previous instruction that is not yet available (RAW, WAR or WAW dependences).\n3. **Control/instruction hazard:** caused by branches (the target is not known in time) or instruction cache misses, so the pipeline fetches wrong or no instructions.",
-      "answer_source": "generated",
-      "chapter": "Unit 4: Control Unit"
-    },
-    {
-      "question_number": "25.",
-      "question_text": "Write down the control sequence for MOVE $(R_1)$, $R_2$.",
-      "marks": 4,
-      "answer": "MOVE (R1), R2 means $R2 \\leftarrow [[R1]]$.\n1. PC$_{out}$, MAR$_{in}$, Read, Select4, Add, Z$_{in}$\n2. Z$_{out}$, PC$_{in}$, Y$_{in}$, WMFC\n3. MDR$_{out}$, IR$_{in}$\n4. R1$_{out}$, MAR$_{in}$, Read\n5. WMFC\n6. MDR$_{out}$, R2$_{in}$, End\n\nSteps 1 to 3 are the fetch; step 4 sends the operand address from R1; steps 5 and 6 wait for memory and load the operand into R2.",
-      "answer_source": "generated",
-      "chapter": "Unit 4: Control Unit"
-    },
-    {
-      "question_number": "26.",
-      "question_text": "Specify the types of parallelism in software and hardware.",
-      "marks": 4,
-      "answer": "**Software parallelism** (defined by program dependences):\n- Instruction-level parallelism.\n- Loop-level parallelism.\n- Procedure/subprogram-level (task) parallelism.\n- Program/job-level parallelism.\n- Control parallelism versus data parallelism.\n\n**Hardware parallelism** (defined by the machine architecture and how many instructions can issue per cycle):\n- Pipelining.\n- Superscalar/VLIW (multiple issue).\n- Vector/SIMD units.\n- Hardware multithreading.\n- Multi-core processors and multiprocessors (MIMD), clusters.",
-      "answer_source": "generated",
-      "chapter": "Unit 5: Parallelism"
-    },
-    {
-      "question_number": "27.",
-      "question_text": "List and explain any four types of ROM.",
-      "marks": 4,
-      "answer": "1. **Mask ROM:** data is written during manufacture using a photomask; it cannot be changed and is cheap in volume.\n2. **PROM (Programmable ROM):** the user programs it once by blowing fuses with a PROM programmer; it is one-time programmable.\n3. **EPROM (Erasable PROM):** uses floating-gate transistors; it is erased by exposing the chip to UV light through a quartz window and then reprogrammed.\n4. **EEPROM (Electrically Erasable PROM):** erased and reprogrammed electrically, byte by byte, while in the circuit.\n5. **Flash memory:** a type of EEPROM that is erased in blocks; it has high density and is used in USB drives and SSDs.",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "28. a.",
-      "question_text": "List and explain various addressing modes, with its formats and example.",
-      "marks": 12,
-      "answer": "An addressing mode specifies how the effective address (EA) of the operand is found. The general instruction format is **Opcode | Mode | Address/Register field**.\n\n| Mode | Format / syntax | EA | Example |\n|---|---|---|---|\n| Immediate | Opcode \\| #operand | Operand in the instruction | `MOVE #200, R0` |\n| Register | Opcode \\| Ri | Operand = [Ri] | `ADD R1, R2` |\n| Absolute (Direct) | Opcode \\| LOC | EA = LOC | `MOVE LOC, R2` |\n| Register indirect | Opcode \\| (Ri) | EA = [Ri] | `ADD (R1), R0` |\n| Memory indirect | Opcode \\| (LOC) | EA = [LOC] | `ADD (A), R0` |\n| Index | Opcode \\| Ri \\| X | EA = X + [Ri] | `MOVE 20(R1), R2` |\n| Base with index | Opcode \\| Ri \\| Rj | EA = [Ri] + [Rj] | `MOVE (R1,R2), R3` |\n| Base, index, offset | Opcode \\| Ri \\| Rj \\| X | EA = X + [Ri] + [Rj] | `MOVE 8(R1,R2), R3` |\n| Relative | Opcode \\| X | EA = X + [PC] | `BRANCH>0 LOOP` |\n| Autoincrement | Opcode \\| (Ri)+ | EA = [Ri]; Ri ← Ri + d | `ADD (R2)+, R0` |\n| Autodecrement | Opcode \\| −(Ri) | Ri ← Ri − d; EA = [Ri] | `MOVE R0, −(SP)` |\n\n**Uses:**\n- Immediate: constants.\n- Register: fast access.\n- Direct: static variables.\n- Indirect: pointers.\n- Index/base: arrays and structures.\n- Relative: branches and relocatable code.\n- Autoincrement/decrement: stacks and sequential lists.\n\n**8086 examples:** `MOV AX, 0005H` (immediate), `MOV AX, BX` (register), `MOV AX, [1234H]` (direct), `MOV AX, [BX]` (register indirect), `MOV AX, [BX+SI+08H]` (based-indexed with displacement).",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "28. b.",
-      "question_text": "Represent the arithmetic statement $F=(A-B)/(C+D*E)$ in various instruction formats.",
-      "marks": 12,
-      "answer": "**Three-address:**\n```\nSUB R1, A, B     ; R1 <- A - B\nMUL R2, D, E     ; R2 <- D * E\nADD R2, C, R2    ; R2 <- C + R2\nDIV F, R1, R2    ; F  <- R1 / R2\n```\n**Two-address:**\n```\nMOV R1, A        ; R1 <- A\nSUB R1, B        ; R1 <- R1 - B\nMOV R2, D        ; R2 <- D\nMUL R2, E        ; R2 <- R2 * E\nADD R2, C        ; R2 <- R2 + C\nDIV R1, R2       ; R1 <- R1 / R2\nMOV F, R1        ; F  <- R1\n```\n**One-address (accumulator):**\n```\nLOAD D           ; AC <- D\nMUL E            ; AC <- D*E\nADD C            ; AC <- C + D*E\nSTORE T          ; T  <- AC\nLOAD A           ; AC <- A\nSUB B            ; AC <- A - B\nDIV T            ; AC <- AC / T\nSTORE F          ; F  <- AC\n```\n**Zero-address (stack, RPN: A B − C D E * + /):**\n```\nPUSH A\nPUSH B\nSUB              ; A-B\nPUSH C\nPUSH D\nPUSH E\nMUL              ; D*E\nADD              ; C+D*E\nDIV              ; (A-B)/(C+D*E)\nPOP F\n```\n**RISC (load/store):**\n```\nLOAD R1, A\nLOAD R2, B\nLOAD R3, C\nLOAD R4, D\nLOAD R5, E\nSUB R1, R1, R2\nMUL R4, R4, R5\nADD R3, R3, R4\nDIV R1, R1, R3\nSTORE F, R1\n```",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "29. a.",
-      "question_text": "Write booth's algorithm, perform Booth multiplication of $-23\\times-19$.",
-      "marks": 12,
-      "answer": "**Booth's algorithm** (multiplicand M, multiplier Q, n bits):\n1. A ← 0, $Q_{-1}$ ← 0, count ← n.\n2. Examine $Q_0Q_{-1}$: if 10, A ← A − M; if 01, A ← A + M; if 00 or 11, no operation.\n3. Arithmetic shift right A, Q, $Q_{-1}$ (the sign of A is preserved).\n4. count ← count − 1; repeat from step 2 until count = 0.\n5. The product is in A,Q.\n\n**−23 × −19** using 6 bits (range −32 to 31):\n- M = −23 = 101001, so −M = +23 = 010111.\n- Q = −19 = 101101.\n- Booth recoding of Q: 101101|0 gives ${-1}\\ {+1}\\ 0\\ {-1}\\ {+1}\\ {-1}$; check: $-32 + 16 - 4 + 2 - 1 = -19$.\n\n| Step | $Q_0Q_{-1}$ | Operation | A | Q | $Q_{-1}$ |\n|---|---|---|---|---|---|\n| Init | | | 000000 | 101101 | 0 |\n| 1 | 10 | A = A − M | 010111 | 101101 | 0 |\n|  |  | ASHR | 001011 | 110110 | 1 |\n| 2 | 01 | A = A + M | 110100 | 110110 | 1 |\n|  |  | ASHR | 111010 | 011011 | 0 |\n| 3 | 10 | A = A − M | 010001 | 011011 | 0 |\n|  |  | ASHR | 001000 | 101101 | 1 |\n| 4 | 11 | ASHR | 000100 | 010110 | 1 |\n| 5 | 01 | A = A + M | 101101 | 010110 | 1 |\n|  |  | ASHR | 110110 | 101011 | 0 |\n| 6 | 10 | A = A − M | 001101 | 101011 | 0 |\n|  |  | ASHR | 000110 | 110101 | 1 |\n\nProduct $AQ = 000110\\,110101_2 = 256+128+32+16+4+1 = 437$. Check: $(-23)\\times(-19) = +437$.",
-      "answer_source": "generated",
-      "chapter": "Unit 3: Design of ALU"
-    },
-    {
-      "question_number": "29. b.",
-      "question_text": "Write restoring division algorithm. Perform restoring division of 10/3.",
-      "marks": 12,
-      "answer": "**Restoring division algorithm** (n-bit dividend Q, divisor M, A of (n+1) bits = 0):\n1. Repeat n times:\n   - a. Shift A and Q left by one bit.\n   - b. A ← A − M.\n   - c. If the sign of A is 1 (A < 0): set $q_0 = 0$ and **restore** A ← A + M. Otherwise set $q_0 = 1$.\n2. The quotient is in Q and the remainder in A.\n\n**10 ÷ 3:** Q = 1010, M = 00011, −M = 11101.\n\n| Cycle | Operation | A | Q |\n|---|---|---|---|\n| 0 | Initial | 00000 | 1010 |\n| 1 | Shift left AQ | 00001 | 010_ |\n| | A = A − M | 11110 | 010_ |\n| | A < 0: $q_0$ = 0, restore A = A + M | 00001 | 0100 |\n| 2 | Shift left AQ | 00010 | 100_ |\n| | A = A − M | 11111 | 100_ |\n| | A < 0: $q_0$ = 0, restore A = A + M | 00010 | 1000 |\n| 3 | Shift left AQ | 00101 | 000_ |\n| | A = A − M | 00010 | 000_ |\n| | A ≥ 0: $q_0$ = 1 | 00010 | 0001 |\n| 4 | Shift left AQ | 00100 | 001_ |\n| | A = A − M | 00001 | 001_ |\n| | A ≥ 0: $q_0$ = 1 | 00001 | 0011 |\n\n**Quotient** Q = 0011 = 3 and **remainder** A = 00001 = 1. Check: $3\\times3 + 1 = 10$.",
-      "answer_source": "generated",
-      "chapter": "Unit 3: Design of ALU"
-    },
-    {
-      "question_number": "30. a.",
-      "question_text": "List and explain the steps involved in the execution of complete instruction.",
-      "marks": 12,
-      "answer": "Executing an instruction involves:\n1. **Fetch** the contents of the memory location pointed to by PC into IR: IR ← [[PC]].\n2. **Increment PC** to point to the next instruction: PC ← PC + 4.\n3. **Decode** and carry out the actions specified by IR (operand fetch, ALU operation, store result).\n\nThese use four basic operations: register transfers, ALU operations, memory reads (MAR, Read, WMFC, MDR) and memory writes.\n\n**Example: Add (R3), R1** on a single-bus processor:\n\n| Step | Control signals | Explanation |\n|---|---|---|\n| 1 | PC$_{out}$, MAR$_{in}$, Read, Select4, Add, Z$_{in}$ | Start the fetch; compute PC+4 |\n| 2 | Z$_{out}$, PC$_{in}$, Y$_{in}$, WMFC | Update PC; wait for memory |\n| 3 | MDR$_{out}$, IR$_{in}$ | Instruction into IR, then decode |\n| 4 | R3$_{out}$, MAR$_{in}$, Read | Operand address |\n| 5 | R1$_{out}$, Y$_{in}$, WMFC | R1 into Y; wait |\n| 6 | MDR$_{out}$, SelectY, Add, Z$_{in}$ | Add |\n| 7 | Z$_{out}$, R1$_{in}$, End | Store result; next instruction |\n\n**Branch instruction:** steps 1 to 3 are the same as above; step 4: Offset-field-of-IR$_{out}$, Add, Z$_{in}$; step 5: Z$_{out}$, PC$_{in}$, End. For a conditional branch, End is issued at step 4 if the condition is false.\n\nIn a three-bus organisation, an instruction such as Add R4, R5, R6 needs only 1 step after the fetch: R4$_{out}$A, R5$_{out}$B, SelectA, Add, R6$_{in}$, End.",
-      "answer_source": "generated",
-      "chapter": "Unit 4: Control Unit"
-    },
-    {
-      "question_number": "30. b.",
-      "question_text": "Describe the generation of control signals using hardwires control unit, with necessary diagrams.",
-      "marks": 12,
-      "answer": "In **hardwired control**, the control signals are produced by combinational logic whose inputs are:\n- the **control step counter** (via a step decoder producing $T_1$ to $T_n$),\n- the **instruction decoder** output (from IR: $INS_1$ to $INS_m$),\n- the **condition codes** (N, Z, V, C), and\n- **external inputs** (MFC, interrupt requests).\n\n**Block diagram:** Clock → control step counter → step decoder → $T_i$. IR → instruction decoder → $INS_j$. Both, together with the flags and external inputs, feed the **encoder** (AND-OR network), which outputs the control signals (PC$_{in}$, PC$_{out}$, MAR$_{in}$, Read, Add, Z$_{in}$, End and so on). End resets the counter; the **Run** signal (cleared by WMFC until MFC arrives) controls whether the counter advances.\n\n**Signal generation examples** (for the Add, Branch and Branch<0 sequences):\n$$Z_{in} = T_1 + T_6\\cdot ADD + T_4\\cdot BR + \\ldots$$\n$$End = T_7\\cdot ADD + T_5\\cdot BR + (T_5\\cdot N + T_4\\cdot\\bar N)\\cdot BRN + \\ldots$$\nEach equation is implemented as an OR of AND terms (shown as logic diagrams: AND gates combining $T_i$ and $INS_j$, feeding an OR gate).\n\n**Characteristics:** fastest operation, but complex, inflexible and hard to modify. It is suited to RISC processors.\n\n**Design methods:** state table, delay element, sequence counter, PLA.",
-      "answer_source": "generated",
-      "chapter": "Unit 4: Control Unit"
-    },
-    {
-      "question_number": "31. a.",
-      "question_text": "Explain Flynn's classification and the four architectures in detail.",
-      "marks": 12,
-      "answer": "Flynn classifies computers by the multiplicity of **instruction streams (IS)** and **data streams (DS)**.\n\n1. **SISD:** one control unit (CU), one processing unit (PU), one memory module. A single instruction stream operates on a single data stream. This is the conventional von Neumann uniprocessor; it may be pipelined. Diagram: CU →IS→ PU ↔DS↔ MM.\n2. **SIMD:** one CU broadcasts each instruction to many processing elements PE1 to PEn, each with its own data stream from memory modules. They execute in lock-step. Examples: array processors (ILLIAC IV), vector processors, GPUs, SSE/NEON. Ideal for data parallelism (matrix and image operations).\n3. **MISD:** n CUs/PUs each execute a different instruction stream on the same data stream, passed from unit to unit. This is rare in practice; examples are systolic arrays and redundant fault-tolerant computers (space shuttle flight control).\n4. **MIMD:** n independent processors, each with its own CU, instruction stream and data stream.\n   - *Shared-memory (tightly coupled) multiprocessors:* UMA/NUMA, multi-core CPUs.\n   - *Distributed-memory (loosely coupled) multicomputers:* clusters with message passing.\n   - The most general and widely used parallel architecture; supports task/thread parallelism.\n\n**Summary table:**\n\n| Class | IS | DS | Example |\n|---|---|---|---|\n| SISD | 1 | 1 | Classic PC |\n| SIMD | 1 | Many | GPU, vector unit |\n| MISD | Many | 1 | Systolic array |\n| MIMD | Many | Many | Multi-core, clusters |",
-      "answer_source": "generated",
-      "chapter": "Unit 5: Parallelism"
-    },
-    {
-      "question_number": "31. b.i.",
-      "question_text": "Elaborate on software parallelism and its types.",
-      "marks": 6,
-      "answer": "**Software parallelism** is the parallelism exposed by a program's algorithm, defined by its control and data dependences (shown in the program flow graph). Its degree is measured by the number of operations that can execute simultaneously.\n\n**Types:**\n1. **Control (functional/task) parallelism:** different operations or tasks run at the same time, for example independent functions on different processors, or overlapped pipeline stages.\n2. **Data parallelism:** the same operation is applied to many data elements at once (SIMD, vectorised loops); this offers the highest degree of parallelism.\n\n**Levels (grain size):**\n- Instruction level (fine grain).\n- Loop level.\n- Procedure/subprogram level (medium grain).\n- Subprogram/job step level.\n- Job/program level (coarse grain).\n\nFiner grain gives more parallelism but more communication and scheduling overhead. Software parallelism is exploited by compilers (scheduling, vectorisation), parallel languages and libraries (OpenMP, MPI) and the OS. It is limited by dependences (Amdahl's law).",
-      "answer_source": "generated",
-      "chapter": "Unit 5: Parallelism"
-    },
-    {
-      "question_number": "31. b.ii.",
-      "question_text": "Brief about the hardware multithreading.",
-      "marks": 6,
-      "answer": "**Hardware multithreading** lets multiple threads share the functional units of a single processor, switching between them quickly to hide stalls (cache misses, dependences). The processor duplicates the per-thread state: register file, PC and page-table pointer.\n\n1. **Fine-grained multithreading:** switches thread every clock cycle (round-robin), skipping stalled threads. It hides short and long stalls, but slows down individual threads.\n2. **Coarse-grained multithreading:** switches only on costly stalls (for example an L2 miss). There is little single-thread slowdown, but pipeline start-up cost and short stalls are not hidden.\n3. **Simultaneous multithreading (SMT):** in a multiple-issue/dynamically scheduled superscalar processor, instructions from multiple threads are issued in the **same cycle** to different functional units, exploiting both ILP and TLP. An example is Intel Hyper-Threading.\n\n**Benefits:** better utilisation of functional units, higher throughput and latency hiding.",
-      "answer_source": "generated",
-      "chapter": "Unit 5: Parallelism"
-    },
-    {
-      "question_number": "32. a.",
-      "question_text": "Discuss on various mapping schemes used in cache design.",
-      "marks": 12,
-      "answer": "Example: a cache of 128 blocks × 16 words (2 K words) and main memory of 64 K words (4096 blocks), giving a 16-bit address.\n\n**1. Direct mapping:** block j goes to cache block j mod 128.\n- Address: **Tag (5) | Block (7) | Word (4)**.\n- The block field indexes the cache line; the stored tag is compared with the address tag (a hit if equal and valid).\n- Simple, fast and cheap, but conflict misses occur if two frequently used blocks map to the same line. No replacement choice is needed.\n\n**2. Associative mapping:** any block can be placed in any cache line.\n- Address: **Tag (12) | Word (4)**.\n- All 128 tags are searched in parallel (associative memory).\n- Most flexible, with the highest hit ratio, but costly comparison hardware. Needs a replacement algorithm (LRU, FIFO, random).\n\n**3. Set-associative mapping:** the cache is grouped into sets of k blocks. Block j maps to set j mod S and may occupy any block in that set.\n- 2-way: S = 64, so address: **Tag (6) | Set (6) | Word (4)**.\n- The set field selects the set, and the k tags in it are compared associatively.\n- Combines the simplicity of direct mapping with the flexibility of associative mapping. Commonly 2-, 4-, 8- or 16-way. k = 1 is direct, and k = 128 is fully associative.\n\n**Additional bits:** valid bit (for power-up and DMA updates) and dirty bit (for write-back).\n\n**Comparison:**\n\n| Scheme | Hardware cost | Hit ratio | Search |\n|---|---|---|---|\n| Direct | Low | Lowest | 1 comparison |\n| Set-associative | Medium | Good | k comparisons |\n| Associative | High | Best | All lines |",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "32. b.",
-      "question_text": "Explain how virtual memory address translation method works based on the concept of fixed length pages? Discuss with a diagram.",
-      "marks": 12,
-      "answer": "**Paging:** the virtual address space is divided into fixed-length **pages** (for example 4 KB) and main memory into **page frames** of the same size. Each virtual address = **virtual page number (VPN) | offset**.\n\n**Translation (diagram):**\n1. The processor issues a virtual address.\n2. The **page table base register (PTBR)** holds the start address of the process's page table in memory.\n3. Page-table entry address = PTBR + VPN.\n4. The entry contains the **page frame number** plus control bits: valid (page in memory), modified/dirty, and access rights (R/W/X).\n5. If valid: physical address = frame number concatenated with the offset (the offset is copied unchanged), and memory is accessed.\n6. If not valid: a **page fault** occurs. The MMU raises an exception; the OS loads the page from disk into a free or victim frame (LRU and so on, with a dirty page written back first), updates the table, and restarts the instruction.\n\n**TLB:** to avoid two memory accesses per reference, the MMU keeps a small associative cache, the **Translation Lookaside Buffer**, of recent VPN→frame translations. The TLB is searched first; on a miss the page table is read and the TLB is updated.\n\n**Diagram:** Virtual address [VPN | Offset] → (TLB?) → PTBR + VPN → Page table entry [control bits | frame #] → Physical address [frame # | offset] → main memory.\n\n**Example:** 32-bit VA with 4 KB pages, so a 20-bit VPN and 12-bit offset. If VPN 0x00012 maps to frame 0x0A3, VA 0x00012ABC gives PA 0x0A3ABC.\n\n**Advantages:** no external fragmentation, easy relocation, protection, sharing, and programs larger than physical memory (demand paging).",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    }
-  ]
+    "formal_filename": "2019-11_ET_18CSC203J_QP.json",
+    "paper_title": "B.Tech. DEGREE EXAMINATION, NOVEMBER 2019 - Third Semester - 18CSC203J - COMPUTER ORGANIZATION AND ARCHITECTURE (For the candidates admitted during the academic year 2018-2019 onwards)",
+    "source": "2019-11 ET 18CSC203J",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "The instruction → Add LOCA, Ro ______.",
+            "options": [
+                "Adds the value of LOCA to Ro and stores in the temp register",
+                "Adds the value of Ro to the address of LOCA",
+                "Adds the value of both LOCA and Ro and stores it in Ro",
+                "Adds the value of LOCA with a value in accumulator and stores it in Ro"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "It adds the contents of memory location LOCA to R0 and stores the result in R0, that is $R0 \\leftarrow [LOCA] + [R0]$.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "2",
+            "question_text": "______ is used to choose between incrementing the PC (or) performing ALU operations.",
+            "options": [
+                "Conditional codes",
+                "Multiplexer",
+                "Control unit",
+                "Demultiplexer"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "In the single-bus datapath, the MUX selects either the constant 4 (to increment the PC) or register Y as the ALU input.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "3",
+            "question_text": "Which memory device is generally made of semiconductors?",
+            "options": [
+                "RAM",
+                "Hard disk",
+                "Floppy disk",
+                "CD"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Hard and floppy disks are magnetic, and CDs are optical.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "4",
+            "question_text": "The instruction MOV AX, # 0005H belongs to the addressing mode",
+            "options": [
+                "Register",
+                "Direct",
+                "Immediate",
+                "Register relative"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "The operand 0005H is part of the instruction.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "5",
+            "question_text": "Perform binary addition of 110H 0010 is ______.",
+            "options": [
+                "1110",
+                "1111",
+                "0111",
+                "11101"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "The question is garbled; it is read as $1101 + 0010 = 1111$ (13 + 2 = 15), which is the only option consistent with a 4-bit sum without carry.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "6",
+            "question_text": "Booth's algorithm is applied on ______.",
+            "options": [
+                "Decimal numbers",
+                "Binary numbers",
+                "Hexadecimal numbers",
+                "Octal numbers"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Booth's algorithm is applied to binary numbers, specifically signed 2's complement binary numbers.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "7",
+            "question_text": "______ is a straight forward method of representing positive and negative number.",
+            "options": [
+                "Radix",
+                "Complement",
+                "Sign magnitude",
+                "Encode"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "The MSB is the sign, and the remaining bits are the magnitude.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "8",
+            "question_text": "The sign magnitude representation of -9 is ______.",
+            "options": [
+                "00001001",
+                "11111001",
+                "10001001",
+                "11001"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "The sign bit is 1 and the magnitude is $9 = 0001001$ (8-bit).",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "9",
+            "question_text": "The pipelining process is also called as",
+            "options": [
+                "Superscalar operation",
+                "Assembly line operation",
+                "Von Neumann cycle",
+                "Harvard cycle"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "10",
+            "question_text": "The situation where in the data of operands are not available is called ______.",
+            "options": [
+                "Data hazard",
+                "Stock",
+                "Dead lock",
+                "Structural hazard"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "11",
+            "question_text": "A word whose individual bits represent a control signal is ______.",
+            "options": [
+                "Command word",
+                "Control word",
+                "Co-ordination word",
+                "Generation word"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "12",
+            "question_text": "Each stage in pipelining should be completed within ______ cycle.",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Each pipeline stage must complete in one clock cycle.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "13",
+            "question_text": "When instruction 'i' and instruction 'j' tends to write in same register (or) memory location, it is called",
+            "options": [
+                "Input dependence",
+                "Output dependence",
+                "Ideal pipeline",
+                "Digital call"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "This is output dependence (a WAW, write-after-write hazard): both instructions write to the same register or memory location.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "14",
+            "question_text": "SIMD represents an organization that ______.",
+            "options": [
+                "Refers to a computer system capable of processing several programs at same time",
+                "Represents organization of single computer containing a control unit, processor unit",
+                "Includes many processing units under the supervision of a common control unit",
+                "Refers to a system capable of processing single program at a same time"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "15",
+            "question_text": "Von Neumann architecture is ______.",
+            "options": [
+                "SISD",
+                "SIMD",
+                "MIMD",
+                "MISD"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "16",
+            "question_text": "Multithreading allows multiple-threads for sharing functional units of a",
+            "options": [
+                "Multiple processor",
+                "Single processor",
+                "Dual core",
+                "Core i5"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Hardware multithreading lets multiple threads share the functional units of one processor.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "17",
+            "question_text": "The correspondence between the main memory blocks and those in that cache is given by",
+            "options": [
+                "Hash function",
+                "Mapping function",
+                "Locale function",
+                "Assign function"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "18",
+            "question_text": "The temporal aspect of the locality of reference means ______.",
+            "options": [
+                "That the recently executed instruction won't be executed soon",
+                "That the recently executed instruction is temporarily not referred",
+                "That the recently executed instruction will be executed soon again",
+                "That recently executed instruction will never be executed again"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "19",
+            "question_text": "______ is used to implement virtual memory organization.",
+            "options": [
+                "Page table",
+                "Frame table",
+                "MMU",
+                "Page table register"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "The Memory Management Unit implements virtual memory by translating virtual addresses, using page tables.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "20",
+            "question_text": "______ translates the logical address into a physical address.",
+            "options": [
+                "MMU",
+                "Translator",
+                "Computer",
+                "Linker"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "21.",
+            "question_text": "Draw and explain the connections between the processor and memory.",
+            "marks": 4,
+            "answer": "**Diagram:** inside the processor are PC, IR, MAR, MDR, the control unit, the ALU and $R_0$ to $R_{n-1}$. MAR connects to memory through the address bus; MDR connects to memory through the bidirectional data bus; control lines (Read, Write, MFC) run between them.\n\n- **MAR** holds the address of the location to be accessed and drives the address lines.\n- **MDR** holds the data to be written to, or read from, memory.\n- **PC** holds the next instruction address, which is copied to MAR for the fetch.\n- **IR** receives the fetched instruction from MDR.\n\n**Fetch:** PC → MAR, Read → memory → MDR → IR; then PC is incremented.\n**Operand read:** address → MAR, Read → MDR → register/ALU.\n**Write:** address → MAR, data → MDR, Write.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "22.",
+            "question_text": "Define byte addressability and what are the two ways the byte address can be assigned across words?",
+            "marks": 4,
+            "answer": "**Byte addressability:** each byte in memory has its own distinct address, so successive bytes have addresses 0, 1, 2, …; with 32-bit words, successive words are at addresses 0, 4, 8, ….\n\nThe two ways of assigning byte addresses across words are:\n1. **Big-endian:** the lower byte addresses are used for the more significant (leftmost) bytes of the word.\n2. **Little-endian:** the lower byte addresses are used for the less significant (rightmost) bytes.\n\nFor example, word 0 holding 0x12345678 is stored as bytes 0 to 3 = 12 34 56 78 in big-endian and as 78 56 34 12 in little-endian.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "23.",
+            "question_text": "Write down the steps for non-restoring division.",
+            "marks": 4,
+            "answer": "Registers: A ((n+1) bits) = 0, Q = dividend (n bits), M = divisor.\n\n**Step 1:** repeat n times:\n- If the sign of A is 0 (A ≥ 0): shift A,Q left by one bit and subtract M from A.\n- Otherwise (A < 0): shift A,Q left by one bit and add M to A.\n- Then, if the sign of A is 0, set $q_0 = 1$; otherwise set $q_0 = 0$.\n\n**Step 2:** if the sign of A is 1 (negative), add M to A (remainder correction).\n\nThe quotient is in Q and the remainder in A. No restore step is needed in each cycle.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "24.",
+            "question_text": "What is a pipeline hazard? Mention its types and define each type of hazards.",
+            "marks": 4,
+            "answer": "A **pipeline hazard** is any condition that causes the pipeline to stall, that is, prevents the next instruction from executing in its designated clock cycle.\n\n1. **Structural (resource) hazard:** two instructions need the same hardware resource (for example a single memory port or ALU) at the same time.\n2. **Data hazard:** an instruction depends on the result of a previous instruction that is not yet available (RAW, WAR or WAW dependences).\n3. **Control/instruction hazard:** caused by branches (the target is not known in time) or instruction cache misses, so the pipeline fetches wrong or no instructions.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "25.",
+            "question_text": "Write down the control sequence for MOVE $(R_1)$, $R_2$.",
+            "marks": 4,
+            "answer": "MOVE (R1), R2 means $R2 \\leftarrow [[R1]]$.\n1. PC$_{out}$, MAR$_{in}$, Read, Select4, Add, Z$_{in}$\n2. Z$_{out}$, PC$_{in}$, Y$_{in}$, WMFC\n3. MDR$_{out}$, IR$_{in}$\n4. R1$_{out}$, MAR$_{in}$, Read\n5. WMFC\n6. MDR$_{out}$, R2$_{in}$, End\n\nSteps 1 to 3 are the fetch; step 4 sends the operand address from R1; steps 5 and 6 wait for memory and load the operand into R2.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "26.",
+            "question_text": "Specify the types of parallelism in software and hardware.",
+            "marks": 4,
+            "answer": "**Software parallelism** (defined by program dependences):\n- Instruction-level parallelism.\n- Loop-level parallelism.\n- Procedure/subprogram-level (task) parallelism.\n- Program/job-level parallelism.\n- Control parallelism versus data parallelism.\n\n**Hardware parallelism** (defined by the machine architecture and how many instructions can issue per cycle):\n- Pipelining.\n- Superscalar/VLIW (multiple issue).\n- Vector/SIMD units.\n- Hardware multithreading.\n- Multi-core processors and multiprocessors (MIMD), clusters.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "27.",
+            "question_text": "List and explain any four types of ROM.",
+            "marks": 4,
+            "answer": "1. **Mask ROM:** data is written during manufacture using a photomask; it cannot be changed and is cheap in volume.\n2. **PROM (Programmable ROM):** the user programs it once by blowing fuses with a PROM programmer; it is one-time programmable.\n3. **EPROM (Erasable PROM):** uses floating-gate transistors; it is erased by exposing the chip to UV light through a quartz window and then reprogrammed.\n4. **EEPROM (Electrically Erasable PROM):** erased and reprogrammed electrically, byte by byte, while in the circuit.\n5. **Flash memory:** a type of EEPROM that is erased in blocks; it has high density and is used in USB drives and SSDs.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "28. a.",
+            "question_text": "List and explain various addressing modes, with its formats and example.",
+            "marks": 12,
+            "answer": "An addressing mode specifies how the effective address (EA) of the operand is found. The general instruction format is **Opcode | Mode | Address/Register field**.\n\n| Mode | Format / syntax | EA | Example |\n|---|---|---|---|\n| Immediate | Opcode \\| #operand | Operand in the instruction | `MOVE #200, R0` |\n| Register | Opcode \\| Ri | Operand = [Ri] | `ADD R1, R2` |\n| Absolute (Direct) | Opcode \\| LOC | EA = LOC | `MOVE LOC, R2` |\n| Register indirect | Opcode \\| (Ri) | EA = [Ri] | `ADD (R1), R0` |\n| Memory indirect | Opcode \\| (LOC) | EA = [LOC] | `ADD (A), R0` |\n| Index | Opcode \\| Ri \\| X | EA = X + [Ri] | `MOVE 20(R1), R2` |\n| Base with index | Opcode \\| Ri \\| Rj | EA = [Ri] + [Rj] | `MOVE (R1,R2), R3` |\n| Base, index, offset | Opcode \\| Ri \\| Rj \\| X | EA = X + [Ri] + [Rj] | `MOVE 8(R1,R2), R3` |\n| Relative | Opcode \\| X | EA = X + [PC] | `BRANCH>0 LOOP` |\n| Autoincrement | Opcode \\| (Ri)+ | EA = [Ri]; Ri ← Ri + d | `ADD (R2)+, R0` |\n| Autodecrement | Opcode \\| −(Ri) | Ri ← Ri − d; EA = [Ri] | `MOVE R0, −(SP)` |\n\n**Uses:**\n- Immediate: constants.\n- Register: fast access.\n- Direct: static variables.\n- Indirect: pointers.\n- Index/base: arrays and structures.\n- Relative: branches and relocatable code.\n- Autoincrement/decrement: stacks and sequential lists.\n\n**8086 examples:** `MOV AX, 0005H` (immediate), `MOV AX, BX` (register), `MOV AX, [1234H]` (direct), `MOV AX, [BX]` (register indirect), `MOV AX, [BX+SI+08H]` (based-indexed with displacement).",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "28. b.",
+            "question_text": "Represent the arithmetic statement $F=(A-B)/(C+D*E)$ in various instruction formats.",
+            "marks": 12,
+            "answer": "**Three-address:**\n```\nSUB R1, A, B     ; R1 <- A - B\nMUL R2, D, E     ; R2 <- D * E\nADD R2, C, R2    ; R2 <- C + R2\nDIV F, R1, R2    ; F  <- R1 / R2\n```\n**Two-address:**\n```\nMOV R1, A        ; R1 <- A\nSUB R1, B        ; R1 <- R1 - B\nMOV R2, D        ; R2 <- D\nMUL R2, E        ; R2 <- R2 * E\nADD R2, C        ; R2 <- R2 + C\nDIV R1, R2       ; R1 <- R1 / R2\nMOV F, R1        ; F  <- R1\n```\n**One-address (accumulator):**\n```\nLOAD D           ; AC <- D\nMUL E            ; AC <- D*E\nADD C            ; AC <- C + D*E\nSTORE T          ; T  <- AC\nLOAD A           ; AC <- A\nSUB B            ; AC <- A - B\nDIV T            ; AC <- AC / T\nSTORE F          ; F  <- AC\n```\n**Zero-address (stack, RPN: A B − C D E * + /):**\n```\nPUSH A\nPUSH B\nSUB              ; A-B\nPUSH C\nPUSH D\nPUSH E\nMUL              ; D*E\nADD              ; C+D*E\nDIV              ; (A-B)/(C+D*E)\nPOP F\n```\n**RISC (load/store):**\n```\nLOAD R1, A\nLOAD R2, B\nLOAD R3, C\nLOAD R4, D\nLOAD R5, E\nSUB R1, R1, R2\nMUL R4, R4, R5\nADD R3, R3, R4\nDIV R1, R1, R3\nSTORE F, R1\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "29. a.",
+            "question_text": "Write booth's algorithm, perform Booth multiplication of $-23\\times-19$.",
+            "marks": 12,
+            "answer": "**Booth's algorithm** (multiplicand M, multiplier Q, n bits):\n1. A ← 0, $Q_{-1}$ ← 0, count ← n.\n2. Examine $Q_0Q_{-1}$: if 10, A ← A − M; if 01, A ← A + M; if 00 or 11, no operation.\n3. Arithmetic shift right A, Q, $Q_{-1}$ (the sign of A is preserved).\n4. count ← count − 1; repeat from step 2 until count = 0.\n5. The product is in A,Q.\n\n**−23 × −19** using 6 bits (range −32 to 31):\n- M = −23 = 101001, so −M = +23 = 010111.\n- Q = −19 = 101101.\n- Booth recoding of Q: 101101|0 gives ${-1}\\ {+1}\\ 0\\ {-1}\\ {+1}\\ {-1}$; check: $-32 + 16 - 4 + 2 - 1 = -19$.\n\n| Step | $Q_0Q_{-1}$ | Operation | A | Q | $Q_{-1}$ |\n|---|---|---|---|---|---|\n| Init | | | 000000 | 101101 | 0 |\n| 1 | 10 | A = A − M | 010111 | 101101 | 0 |\n|  |  | ASHR | 001011 | 110110 | 1 |\n| 2 | 01 | A = A + M | 110100 | 110110 | 1 |\n|  |  | ASHR | 111010 | 011011 | 0 |\n| 3 | 10 | A = A − M | 010001 | 011011 | 0 |\n|  |  | ASHR | 001000 | 101101 | 1 |\n| 4 | 11 | ASHR | 000100 | 010110 | 1 |\n| 5 | 01 | A = A + M | 101101 | 010110 | 1 |\n|  |  | ASHR | 110110 | 101011 | 0 |\n| 6 | 10 | A = A − M | 001101 | 101011 | 0 |\n|  |  | ASHR | 000110 | 110101 | 1 |\n\nProduct $AQ = 000110\\,110101_2 = 256+128+32+16+4+1 = 437$. Check: $(-23)\\times(-19) = +437$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "29. b.",
+            "question_text": "Write restoring division algorithm. Perform restoring division of 10/3.",
+            "marks": 12,
+            "answer": "**Restoring division algorithm** (n-bit dividend Q, divisor M, A of (n+1) bits = 0):\n1. Repeat n times:\n   - a. Shift A and Q left by one bit.\n   - b. A ← A − M.\n   - c. If the sign of A is 1 (A < 0): set $q_0 = 0$ and **restore** A ← A + M. Otherwise set $q_0 = 1$.\n2. The quotient is in Q and the remainder in A.\n\n**10 ÷ 3:** Q = 1010, M = 00011, −M = 11101.\n\n| Cycle | Operation | A | Q |\n|---|---|---|---|\n| 0 | Initial | 00000 | 1010 |\n| 1 | Shift left AQ | 00001 | 010_ |\n| | A = A − M | 11110 | 010_ |\n| | A < 0: $q_0$ = 0, restore A = A + M | 00001 | 0100 |\n| 2 | Shift left AQ | 00010 | 100_ |\n| | A = A − M | 11111 | 100_ |\n| | A < 0: $q_0$ = 0, restore A = A + M | 00010 | 1000 |\n| 3 | Shift left AQ | 00101 | 000_ |\n| | A = A − M | 00010 | 000_ |\n| | A ≥ 0: $q_0$ = 1 | 00010 | 0001 |\n| 4 | Shift left AQ | 00100 | 001_ |\n| | A = A − M | 00001 | 001_ |\n| | A ≥ 0: $q_0$ = 1 | 00001 | 0011 |\n\n**Quotient** Q = 0011 = 3 and **remainder** A = 00001 = 1. Check: $3\\times3 + 1 = 10$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "30. a.",
+            "question_text": "List and explain the steps involved in the execution of complete instruction.",
+            "marks": 12,
+            "answer": "Executing an instruction involves:\n1. **Fetch** the contents of the memory location pointed to by PC into IR: IR ← [[PC]].\n2. **Increment PC** to point to the next instruction: PC ← PC + 4.\n3. **Decode** and carry out the actions specified by IR (operand fetch, ALU operation, store result).\n\nThese use four basic operations: register transfers, ALU operations, memory reads (MAR, Read, WMFC, MDR) and memory writes.\n\n**Example: Add (R3), R1** on a single-bus processor:\n\n| Step | Control signals | Explanation |\n|---|---|---|\n| 1 | PC$_{out}$, MAR$_{in}$, Read, Select4, Add, Z$_{in}$ | Start the fetch; compute PC+4 |\n| 2 | Z$_{out}$, PC$_{in}$, Y$_{in}$, WMFC | Update PC; wait for memory |\n| 3 | MDR$_{out}$, IR$_{in}$ | Instruction into IR, then decode |\n| 4 | R3$_{out}$, MAR$_{in}$, Read | Operand address |\n| 5 | R1$_{out}$, Y$_{in}$, WMFC | R1 into Y; wait |\n| 6 | MDR$_{out}$, SelectY, Add, Z$_{in}$ | Add |\n| 7 | Z$_{out}$, R1$_{in}$, End | Store result; next instruction |\n\n**Branch instruction:** steps 1 to 3 are the same as above; step 4: Offset-field-of-IR$_{out}$, Add, Z$_{in}$; step 5: Z$_{out}$, PC$_{in}$, End. For a conditional branch, End is issued at step 4 if the condition is false.\n\nIn a three-bus organisation, an instruction such as Add R4, R5, R6 needs only 1 step after the fetch: R4$_{out}$A, R5$_{out}$B, SelectA, Add, R6$_{in}$, End.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "30. b.",
+            "question_text": "Describe the generation of control signals using hardwires control unit, with necessary diagrams.",
+            "marks": 12,
+            "answer": "In **hardwired control**, the control signals are produced by combinational logic whose inputs are:\n- the **control step counter** (via a step decoder producing $T_1$ to $T_n$),\n- the **instruction decoder** output (from IR: $INS_1$ to $INS_m$),\n- the **condition codes** (N, Z, V, C), and\n- **external inputs** (MFC, interrupt requests).\n\n**Block diagram:** Clock → control step counter → step decoder → $T_i$. IR → instruction decoder → $INS_j$. Both, together with the flags and external inputs, feed the **encoder** (AND-OR network), which outputs the control signals (PC$_{in}$, PC$_{out}$, MAR$_{in}$, Read, Add, Z$_{in}$, End and so on). End resets the counter; the **Run** signal (cleared by WMFC until MFC arrives) controls whether the counter advances.\n\n**Signal generation examples** (for the Add, Branch and Branch<0 sequences):\n$$Z_{in} = T_1 + T_6\\cdot ADD + T_4\\cdot BR + \\ldots$$\n$$End = T_7\\cdot ADD + T_5\\cdot BR + (T_5\\cdot N + T_4\\cdot\\bar N)\\cdot BRN + \\ldots$$\nEach equation is implemented as an OR of AND terms (shown as logic diagrams: AND gates combining $T_i$ and $INS_j$, feeding an OR gate).\n\n**Characteristics:** fastest operation, but complex, inflexible and hard to modify. It is suited to RISC processors.\n\n**Design methods:** state table, delay element, sequence counter, PLA.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "31. a.",
+            "question_text": "Explain Flynn's classification and the four architectures in detail.",
+            "marks": 12,
+            "answer": "Flynn classifies computers by the multiplicity of **instruction streams (IS)** and **data streams (DS)**.\n\n1. **SISD:** one control unit (CU), one processing unit (PU), one memory module. A single instruction stream operates on a single data stream. This is the conventional von Neumann uniprocessor; it may be pipelined. Diagram: CU →IS→ PU ↔DS↔ MM.\n2. **SIMD:** one CU broadcasts each instruction to many processing elements PE1 to PEn, each with its own data stream from memory modules. They execute in lock-step. Examples: array processors (ILLIAC IV), vector processors, GPUs, SSE/NEON. Ideal for data parallelism (matrix and image operations).\n3. **MISD:** n CUs/PUs each execute a different instruction stream on the same data stream, passed from unit to unit. This is rare in practice; examples are systolic arrays and redundant fault-tolerant computers (space shuttle flight control).\n4. **MIMD:** n independent processors, each with its own CU, instruction stream and data stream.\n   - *Shared-memory (tightly coupled) multiprocessors:* UMA/NUMA, multi-core CPUs.\n   - *Distributed-memory (loosely coupled) multicomputers:* clusters with message passing.\n   - The most general and widely used parallel architecture; supports task/thread parallelism.\n\n**Summary table:**\n\n| Class | IS | DS | Example |\n|---|---|---|---|\n| SISD | 1 | 1 | Classic PC |\n| SIMD | 1 | Many | GPU, vector unit |\n| MISD | Many | 1 | Systolic array |\n| MIMD | Many | Many | Multi-core, clusters |",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "31. b.i.",
+            "question_text": "Elaborate on software parallelism and its types.",
+            "marks": 6,
+            "answer": "**Software parallelism** is the parallelism exposed by a program's algorithm, defined by its control and data dependences (shown in the program flow graph). Its degree is measured by the number of operations that can execute simultaneously.\n\n**Types:**\n1. **Control (functional/task) parallelism:** different operations or tasks run at the same time, for example independent functions on different processors, or overlapped pipeline stages.\n2. **Data parallelism:** the same operation is applied to many data elements at once (SIMD, vectorised loops); this offers the highest degree of parallelism.\n\n**Levels (grain size):**\n- Instruction level (fine grain).\n- Loop level.\n- Procedure/subprogram level (medium grain).\n- Subprogram/job step level.\n- Job/program level (coarse grain).\n\nFiner grain gives more parallelism but more communication and scheduling overhead. Software parallelism is exploited by compilers (scheduling, vectorisation), parallel languages and libraries (OpenMP, MPI) and the OS. It is limited by dependences (Amdahl's law).",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "31. b.ii.",
+            "question_text": "Brief about the hardware multithreading.",
+            "marks": 6,
+            "answer": "**Hardware multithreading** lets multiple threads share the functional units of a single processor, switching between them quickly to hide stalls (cache misses, dependences). The processor duplicates the per-thread state: register file, PC and page-table pointer.\n\n1. **Fine-grained multithreading:** switches thread every clock cycle (round-robin), skipping stalled threads. It hides short and long stalls, but slows down individual threads.\n2. **Coarse-grained multithreading:** switches only on costly stalls (for example an L2 miss). There is little single-thread slowdown, but pipeline start-up cost and short stalls are not hidden.\n3. **Simultaneous multithreading (SMT):** in a multiple-issue/dynamically scheduled superscalar processor, instructions from multiple threads are issued in the **same cycle** to different functional units, exploiting both ILP and TLP. An example is Intel Hyper-Threading.\n\n**Benefits:** better utilisation of functional units, higher throughput and latency hiding.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "32. a.",
+            "question_text": "Discuss on various mapping schemes used in cache design.",
+            "marks": 12,
+            "answer": "Example: a cache of 128 blocks × 16 words (2 K words) and main memory of 64 K words (4096 blocks), giving a 16-bit address.\n\n**1. Direct mapping:** block j goes to cache block j mod 128.\n- Address: **Tag (5) | Block (7) | Word (4)**.\n- The block field indexes the cache line; the stored tag is compared with the address tag (a hit if equal and valid).\n- Simple, fast and cheap, but conflict misses occur if two frequently used blocks map to the same line. No replacement choice is needed.\n\n**2. Associative mapping:** any block can be placed in any cache line.\n- Address: **Tag (12) | Word (4)**.\n- All 128 tags are searched in parallel (associative memory).\n- Most flexible, with the highest hit ratio, but costly comparison hardware. Needs a replacement algorithm (LRU, FIFO, random).\n\n**3. Set-associative mapping:** the cache is grouped into sets of k blocks. Block j maps to set j mod S and may occupy any block in that set.\n- 2-way: S = 64, so address: **Tag (6) | Set (6) | Word (4)**.\n- The set field selects the set, and the k tags in it are compared associatively.\n- Combines the simplicity of direct mapping with the flexibility of associative mapping. Commonly 2-, 4-, 8- or 16-way. k = 1 is direct, and k = 128 is fully associative.\n\n**Additional bits:** valid bit (for power-up and DMA updates) and dirty bit (for write-back).\n\n**Comparison:**\n\n| Scheme | Hardware cost | Hit ratio | Search |\n|---|---|---|---|\n| Direct | Low | Lowest | 1 comparison |\n| Set-associative | Medium | Good | k comparisons |\n| Associative | High | Best | All lines |",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "32. b.",
+            "question_text": "Explain how virtual memory address translation method works based on the concept of fixed length pages? Discuss with a diagram.",
+            "marks": 12,
+            "answer": "**Paging:** the virtual address space is divided into fixed-length **pages** (for example 4 KB) and main memory into **page frames** of the same size. Each virtual address = **virtual page number (VPN) | offset**.\n\n**Translation (diagram):**\n1. The processor issues a virtual address.\n2. The **page table base register (PTBR)** holds the start address of the process's page table in memory.\n3. Page-table entry address = PTBR + VPN.\n4. The entry contains the **page frame number** plus control bits: valid (page in memory), modified/dirty, and access rights (R/W/X).\n5. If valid: physical address = frame number concatenated with the offset (the offset is copied unchanged), and memory is accessed.\n6. If not valid: a **page fault** occurs. The MMU raises an exception; the OS loads the page from disk into a free or victim frame (LRU and so on, with a dirty page written back first), updates the table, and restarts the instruction.\n\n**TLB:** to avoid two memory accesses per reference, the MMU keeps a small associative cache, the **Translation Lookaside Buffer**, of recent VPN→frame translations. The TLB is searched first; on a miss the page table is read and the TLB is updated.\n\n**Diagram:** Virtual address [VPN | Offset] → (TLB?) → PTBR + VPN → Page table entry [control bits | frame #] → Physical address [frame # | offset] → main memory.\n\n**Example:** 32-bit VA with 4 KB pages, so a 20-bit VPN and 12-bit offset. If VPN 0x00012 maps to frame 0x0A3, VA 0x00012ABC gives PA 0x0A3ABC.\n\n**Advantages:** no external fragmentation, easy relocation, protection, sharing, and programs larger than physical memory (demand paging).",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        }
+    ]
 }

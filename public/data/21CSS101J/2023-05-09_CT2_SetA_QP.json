@@ -4,65 +4,121 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "What will be the value of var for the following C statement?\nvar =strcmp(\"Hello\",\"World\");\na) -1 b) 0 c) 1d) strcmp has void return-type",
+            "question_text": "What will be the value of var for the following C statement?\nvar =strcmp(\"Hello\",\"World\");",
+            "options": [
+                "-1",
+                "0",
+                "1",
+                "strcmp has void return-type"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "The `strcmp` function compares two strings lexicographically. It returns a negative value if the first string is lexicographically smaller than the second, 0 if they are equal, and a positive value if the first string is lexicographically larger. In this case, 'H' (from \"Hello\") comes before 'W' (from \"World\"), so \"Hello\" is lexicographically smaller than \"World\". Therefore, `strcmp(\"Hello\",\"World\")` will return a negative value. Among the given options, -1 is the only negative value.\nCorrect option: a) -1",
+            "answer": "The `strcmp` function compares two strings lexicographically. It returns a negative value if the first string is lexicographically smaller than the second, 0 if they are equal, and a positive value if the first string is lexicographically larger. In this case, 'H' (from \"Hello\") comes before 'W' (from \"World\"), so \"Hello\" is lexicographically smaller than \"World\". Therefore, `strcmp(\"Hello\",\"World\")` will return a negative value. Among the given options, -1 is the only negative value.",
             "answer_source": "generated",
             "chapter": "Unit 3: String Basics - String Declaration"
         },
         {
             "question_number": "2",
-            "question_text": "Which pre-defined function returns a pointer to the last occurrence of a character in a string?\na) strchr(s, c); b) strrchr(s, c); c) strlchr(s, c); d) strfchr(s, c);",
+            "question_text": "Which pre-defined function returns a pointer to the last occurrence of a character in a string?",
+            "options": [
+                "strchr(s, c);",
+                "strrchr(s, c);",
+                "strlchr(s, c);",
+                "strfchr(s, c);"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "The `strrchr()` function (string reverse character) searches for the last occurrence of a specific character in a given string and returns a pointer to that location. `strchr()` finds the first occurrence.\nCorrect option: b) strrchr(s, c);",
+            "answer": "The `strrchr()` function (string reverse character) searches for the last occurrence of a specific character in a given string and returns a pointer to that location. `strchr()` finds the first occurrence.",
             "answer_source": "generated",
             "chapter": "Unit 3: String Basics - String Declaration"
         },
         {
             "question_number": "3",
-            "question_text": "The ______ function appends not more than n characters.\na) strcat() b) strcon() c) strncat() d) memcat()",
+            "question_text": "The ______ function appends not more than n characters.",
+            "options": [
+                "strcat()",
+                "strcon()",
+                "strncat()",
+                "memcat()"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "The `strncat()` function is used to concatenate (append) a specified number of characters from a source string to a destination string. It appends at most `n` characters.\nCorrect option: c) strncat()",
+            "answer": "The `strncat()` function is used to concatenate (append) a specified number of characters from a source string to a destination string. It appends at most `n` characters.",
             "answer_source": "generated",
             "chapter": "Unit 3: String Basics - String Declaration"
         },
         {
             "question_number": "4",
-            "question_text": "Which of the following symbols is used to make single line comments in python?\na) # b) * c) \" d) \"\"\"",
+            "question_text": "Which of the following symbols is used to make single line comments in python?",
+            "options": [
+                "#",
+                "*",
+                "\"",
+                "\"\"\""
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "In Python, the hash symbol (`#`) is used to denote a single-line comment. Any text following `#` on the same line is ignored by the interpreter.\nCorrect option: a) #",
+            "answer": "In Python, the hash symbol (`#`) is used to denote a single-line comment. Any text following `#` on the same line is ignored by the interpreter.",
             "answer_source": "generated",
             "chapter": "Unit 4: Python: Introduction to Python"
         },
         {
             "question_number": "5",
-            "question_text": "What will be the output of the following statement if the user has entered 20 as the value of x?\nx=input(\"enter a number:\")\nprint(10+x)\na) 1010 b) 30 c) 20 d) 2010",
+            "question_text": "What will be the output of the following statement if the user has entered 20 as the value of x?\nx=input(\"enter a number:\")\nprint(10+x)",
+            "options": [
+                "1010",
+                "30",
+                "20",
+                "2010"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "In Python 3, the `input()` function always returns a string. So, if the user enters `20`, `x` will be the string `\"20\"`. The expression `10 + x` attempts to add an integer (`10`) and a string (`\"20\"`). This operation results in a `TypeError` because Python does not implicitly convert types for arithmetic operations in this manner. However, since `TypeError` is not an option and this type of question often implies an intended integer operation for beginners, if we were to assume `x` was explicitly converted to an integer (e.g., `x = int(input(\"...\"))`), then `x` would be `20` (integer), and `10 + 20` would be `30`.\nCorrect option: b) 30 (Assuming implicit or intended integer conversion for arithmetic operation, which is common in beginner-level multiple-choice questions when `TypeError` is not an option.)",
+            "answer": "This paper uses Python 2 style code (for example `print \"Hello ...\"` elsewhere in it), where `input()` evaluates what is typed, so `x` is the integer 20 and `10 + x` prints 30. (In Python 3, `input()` returns a string and `10 + x` would raise a `TypeError`.)",
             "answer_source": "generated",
             "chapter": "Unit 4: Python: Introduction to Python"
         },
         {
             "question_number": "6",
-            "question_text": "A variable defined outside a function is referred to as\na) local variable b) only variable c) global variable d) not defined",
+            "question_text": "A variable defined outside a function is referred to as",
+            "options": [
+                "local variable",
+                "only variable",
+                "global variable",
+                "not defined"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "A variable defined outside any function, typically at the top level of a script or program, is known as a global variable. It can be accessed and modified from anywhere within the program, including inside functions (though modification usually requires specific keywords in some languages, like `global` in Python).\nCorrect option: c) global variable",
+            "answer": "A variable defined outside any function, typically at the top level of a script or program, is known as a global variable. It can be accessed and modified from anywhere within the program, including inside functions (though modification usually requires specific keywords in some languages, like `global` in Python).",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
         {
             "question_number": "7",
-            "question_text": "When dealing with identifiers, Python is case sensitive or not?\na) yes b) no c) machine dependent d) program dependent",
+            "question_text": "When dealing with identifiers, Python is case sensitive or not?",
+            "options": [
+                "yes",
+                "no",
+                "machine dependent",
+                "program dependent"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "Python is a case-sensitive language. This means that `myVariable`, `myvariable`, and `MyVariable` are all treated as distinct identifiers. For example, `print` is a built-in function, but `Print` would be an undefined name.\nCorrect option: a) yes",
+            "answer": "Python is a case-sensitive language. This means that `myVariable`, `myvariable`, and `MyVariable` are all treated as distinct identifiers. For example, `print` is a built-in function, but `Print` would be an undefined name.",
             "answer_source": "generated",
             "chapter": "Unit 4: Python: Introduction to Python"
         },
         {
             "question_number": "8",
-            "question_text": "How many times will Python execute the code inside the following while loop? You should answer the question without using the interpreter! Justify your answers.\ni = 0\nwhile i < 0 and i >2:\nprint \"Hello ...”\ni=i+1\na) 1 b) 2 c) 0 d) 4",
+            "question_text": "How many times will Python execute the code inside the following while loop? You should answer the question without using the interpreter! Justify your answers.\ni = 0\nwhile i < 0 and i >2:\nprint \"Hello ...”\ni=i+1",
+            "options": [
+                "1",
+                "2",
+                "0",
+                "4"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "The `while` loop condition is `i < 0 and i > 2`. When `i` is initialized to `0`, the first part of the condition `i < 0` (i.e., `0 < 0`) is `False`. Since the condition uses `and`, if any part is `False`, the entire condition is `False`. Therefore, `False and i > 2` evaluates to `False`. The loop condition is `False` from the very beginning, so the code inside the loop will never be executed.\nCorrect option: c) 0",
+            "answer": "The `while` loop condition is `i < 0 and i > 2`. When `i` is initialized to `0`, the first part of the condition `i < 0` (i.e., `0 < 0`) is `False`. Since the condition uses `and`, if any part is `False`, the entire condition is `False`. Therefore, `False and i > 2` evaluates to `False`. The loop condition is `False` from the very beginning, so the code inside the loop will never be executed.",
             "answer_source": "generated",
             "chapter": "Unit 4: Python: Introduction to Python"
         },

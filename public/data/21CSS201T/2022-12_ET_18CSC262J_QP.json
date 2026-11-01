@@ -1,287 +1,462 @@
 {
-  "formal_filename": "2022-12_ET_18CSC262J_QP.json",
-  "paper_title": "B.Tech. DEGREE EXAMINATION, DECEMBER 2022 - Third Semester - 18CSC262J - COMPUTER ORGANIZATION AND ARCHITECTURE (For the candidates admitted from the academic year 2018-2019 to 2019-2020)",
-  "source": "2022-12 ET 18CSC262J",
-  "questions": [
-    {
-      "question_number": "1",
-      "question_text": "What is MAR and MDR?\n(A) Memory and register and memory data register\n(B) Memory address register and memory data register\n(C) Memory accumulated register and memory drain register\n(D) Memory accumulator register and memory data register",
-      "marks": 1,
-      "answer": "(B) Memory address register and memory data register. MAR holds the address of the memory location being accessed; MDR holds the data read from or written to it.",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "2",
-      "question_text": "In the instruction ADD LOCA, R0, LOCA refers\n(A) Memory location of the source operand\n(B) Memory location of destination operand\n(C) Source data\n(D) Destination data",
-      "marks": 1,
-      "answer": "(A) Memory location of the source operand. Add LOCA, R0 performs $R0 \\leftarrow [LOCA] + [R0]$; LOCA is the address of a source operand and R0 is the destination.",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "3",
-      "question_text": "The small extremely fast, access memory is called as\n(A) Cache\n(B) Heaps\n(C) Accumulators\n(D) Stacks",
-      "marks": 1,
-      "answer": "(A) Cache. It is a small, fast SRAM memory between the processor and main memory.",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "4",
-      "question_text": "The amount of ROM needed to implement a 4 bit multiplier is\n(A) 64 bits\n(B) 128 bits\n(C) 1 K bits\n(D) 2 K bits",
-      "marks": 1,
-      "answer": "(D) 2 K bits. The two 4-bit operands form an 8-bit address, giving $2^8 = 256$ words; each word stores the 8-bit product. $256\\times8 = 2048$ bits = 2 K bits.",
-      "answer_source": "generated",
-      "chapter": "Unit 3: Design of ALU"
-    },
-    {
-      "question_number": "5",
-      "question_text": "32 MB of memory in a computer would require how many bits to address any single byte in a memory?\n(A) 25 bits\n(B) 32 bits\n(C) 24 bits\n(D) 25 bits",
-      "marks": 1,
-      "answer": "(A) 25 bits. $32\\text{ MB} = 2^5\\times2^{20} = 2^{25}$ bytes. (Option (D) is printed identical to (A).)",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "6",
-      "question_text": "In one's complement system the negative values are obtained by complementing each bit of the corresponding ______ number.\n(A) Positive\n(B) Neutral\n(C) Negative\n(D) Negative and positive",
-      "marks": 1,
-      "answer": "(A) Positive. For example $-5 = \\overline{0101} = 1010$.",
-      "answer_source": "generated",
-      "chapter": "Unit 1: Introduction to Number System and Logic Gates"
-    },
-    {
-      "question_number": "7",
-      "question_text": "In addition of singed numbers, add n-bits and ignore the ______ signal from MSB position\n(A) Carry out\n(B) Carry in\n(C) Positive\n(D) Negative",
-      "marks": 1,
-      "answer": "(A) Carry out. In 2's complement addition, the carry-out from the sign (MSB) position is discarded.",
-      "answer_source": "generated",
-      "chapter": "Unit 3: Design of ALU"
-    },
-    {
-      "question_number": "8",
-      "question_text": "The ______ representation of numbers occupies a large amount of memory\n(A) 1's complement\n(B) 2's complement\n(C) Signed numbers\n(D) Signed magnitude",
-      "marks": 1,
-      "answer": "(D) Signed magnitude. It needs a separate sign bit, has two zeros and wastes a code; it is regarded as the least memory-efficient representation.",
-      "answer_source": "generated",
-      "chapter": "Unit 1: Introduction to Number System and Logic Gates"
-    },
-    {
-      "question_number": "9",
-      "question_text": "The method which has two representations for '0' is called ______.\n(A) Hashing\n(B) Binary pair coding\n(C) Bit pair coding\n(D) Signed magnitude",
-      "marks": 1,
-      "answer": "(D) Signed magnitude. It has +0 (0000) and −0 (1000). (1's complement also has two zeros.)",
-      "answer_source": "generated",
-      "chapter": "Unit 1: Introduction to Number System and Logic Gates"
-    },
-    {
-      "question_number": "10",
-      "question_text": "Which algorithm generates a 2-N bit product?\n(A) Shortest path algorithm\n(B) Dijkstra's algorithm\n(C) Longest path algorithm\n(D) Booth algorithm",
-      "marks": 1,
-      "answer": "(D) Booth algorithm. Multiplying two n-bit signed numbers gives a 2n-bit product.",
-      "answer_source": "generated",
-      "chapter": "Unit 3: Design of ALU"
-    },
-    {
-      "question_number": "11",
-      "question_text": "The INTEL 8086 micro processors is a ______ processor.\n(A) 8 bit\n(B) 16 bit\n(C) 32 bit\n(D) 4 bit",
-      "marks": 1,
-      "answer": "(B) 16 bit. It has a 16-bit ALU, registers and data bus, and a 20-bit address bus.",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "12",
-      "question_text": "The 16 bit flag of 8086 microprocessor is responsible to indicate\n(A) The condition of result of ALU operation\n(B) The condition of memory\n(C) The result of addition\n(D) The result of subtraction",
-      "marks": 1,
-      "answer": "(A) The condition of result of ALU operation. Status flags (CF, PF, AF, ZF, SF, OF) reflect the ALU result; control flags are TF, IF and DF.",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "13",
-      "question_text": "The difference between the EPROM and ROM circuitry is ______.\n(A) The usage of MOSFET'S over transistors\n(B) The usage of JFET'S over transistors\n(C) The usage of an extra transistors\n(D) The usage of registers",
-      "marks": 1,
-      "answer": "(C) The usage of an extra transistor. An EPROM cell uses a special floating-gate transistor at each cell in place of the fixed connection/transistor of a ROM, which allows the cell to be erased and reprogrammed.",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "14",
-      "question_text": "The SDRAM performs operation on the ______.\n(A) Rising edge of the clock\n(B) Falling edge of the clock\n(C) Middle state of the clock\n(D) Transition state of the clock",
-      "marks": 1,
-      "answer": "(A) Rising edge of the clock. SDRAM is synchronised to the clock and operates on its rising edge (DDR uses both edges).",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "15",
-      "question_text": "What is the purpose of micro instruction executions?\n(A) Generate a transfer signal\n(B) Generate a control signal\n(C) Generate a control signal to execute\n(D) Generate a control signal to compile",
-      "marks": 1,
-      "answer": "(B) Generate a control signal. Each microinstruction, when executed, produces the control signals for one step.",
-      "answer_source": "generated",
-      "chapter": "Unit 4: Control Unit"
-    },
-    {
-      "question_number": "16",
-      "question_text": "The ______ is the end of instruction execution phase, after which the user gets the final output.\n(A) Write result\n(B) Read result\n(C) Execute\n(D) Commit",
-      "marks": 1,
-      "answer": "(D) Commit. In out-of-order/speculative execution, the commit (retire) step permanently updates the architectural state, so results become visible.",
-      "answer_source": "generated",
-      "chapter": "Unit 4: Control Unit"
-    },
-    {
-      "question_number": "17",
-      "question_text": "Identify the way in which the performance is increased with pipe lining.\n(A) By decreasing instruction latency\n(B) By eliminating data hazards\n(C) By exploiting instruction level parallelism\n(D) By decreasing the cache miss rate",
-      "marks": 1,
-      "answer": "(C) By exploiting instruction level parallelism. Pipelining overlaps instructions to raise throughput; it does not reduce the latency of an individual instruction.",
-      "answer_source": "generated",
-      "chapter": "Unit 4: Control Unit"
-    },
-    {
-      "question_number": "18",
-      "question_text": "The DMA controller has ______ registers.\n(A) 4\n(B) 2\n(C) 3\n(D) 1",
-      "marks": 1,
-      "answer": "(C) 3: the starting address register, the word count register and the status/control register.",
-      "answer_source": "generated",
-      "chapter": "Unit 5: Parallelism"
-    },
-    {
-      "question_number": "19",
-      "question_text": "What is the basic difference between vector and array processor?\n(A) Register\n(B) Pipe lining\n(C) Tunneling\n(D) Parallelism",
-      "marks": 1,
-      "answer": "(B) Pipe lining. A vector processor uses deeply pipelined functional units on vector data, whereas an array processor uses many parallel processing elements under one control unit.",
-      "answer_source": "generated",
-      "chapter": "Unit 5: Parallelism"
-    },
-    {
-      "question_number": "20",
-      "question_text": "Which of the architecture is power efficient?\n(A) CISC\n(B) RISC\n(C) ISA\n(D) IANA",
-      "marks": 1,
-      "answer": "(B) RISC. It has simple hardwired control and fewer transistors, so it uses less power (for example ARM).",
-      "answer_source": "generated",
-      "chapter": "Unit 5: Parallelism"
-    },
-    {
-      "question_number": "21",
-      "question_text": "A process is thrashing if ______.\n(A) It is spending more time paging management than executing\n(B) It is spending less time paging than executing\n(C) Page fault occurs very infrequently\n(D) Swapping could not take place",
-      "marks": 1,
-      "answer": "(A) It is spending more time paging management than executing.",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "22",
-      "question_text": "In which mapping, the data can be mapped anywhere in the cache memory?\n(A) Associative\n(B) Direct\n(C) Set associative\n(D) Indirect",
-      "marks": 1,
-      "answer": "(A) Associative. In fully associative mapping any memory block can be placed in any cache line.",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "23",
-      "question_text": "The number of successful accesses to memory stated as a fraction is called as ______.\n(A) Miss rate\n(B) Hit rate\n(C) Success rate\n(D) Access rate",
-      "marks": 1,
-      "answer": "(B) Hit rate, the number of hits divided by the total number of accesses.",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "24",
-      "question_text": "Which of the following is not a type of optical disk ______.\n(A) DVD\n(B) CD\n(C) Worm\n(D) Winchester",
-      "marks": 1,
-      "answer": "(D) Winchester. A Winchester disk is a sealed magnetic hard disk; CD, DVD and WORM are optical.",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "25",
-      "question_text": "Disk access time does not depends on which of the following factors?\n(A) Seek time\n(B) Latency\n(C) Arrival rate\n(D) Transfer rate",
-      "marks": 1,
-      "answer": "(C) Arrival rate. Access time = seek time + rotational latency + transfer time.",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "26. a.",
-      "question_text": "Explain in detail about functional units of a computer with neat diagram.",
-      "marks": 10,
-      "answer": "**Functional units:**\n1. **Input unit:** accepts coded information from keyboard, mouse, scanner and so on, and transfers it to memory or the processor.\n2. **Memory unit:** stores programs and data. *Primary memory* (RAM, organised as addressable words, with cache) is fast and volatile. *Secondary memory* (disks, SSDs) is large, slow and non-volatile.\n3. **Arithmetic and Logic Unit (ALU):** performs arithmetic and logic operations on operands brought into processor registers.\n4. **Control unit:** generates the timing and control signals that coordinate all other units and the transfers between them (fetch, decode, execute).\n5. **Output unit:** sends results to the outside world (monitor, printer).\n\nThe ALU, control unit and registers together form the processor (CPU), and all units are connected by a bus (address, data and control lines).\n\n**Diagram:** Input → Memory ↔ Processor (ALU + Control) → Output, with control lines from the control unit to every unit.\n\n**Processor registers:** PC (address of next instruction), IR (current instruction), MAR (memory address), MDR (data to/from memory), and the general-purpose registers $R_0$ to $R_{n-1}$.\n\n**Operation:** program and data are loaded via input into memory. The processor fetches each instruction (PC→MAR, Read, MDR→IR, PC is incremented), decodes it, fetches operands, executes it in the ALU, stores results, and sends output.",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "26. b.",
-      "question_text": "Illustrate the different types of addressing modes with examples.",
-      "marks": 10,
-      "answer": "An addressing mode specifies how the effective address (EA) of an operand is determined.\n\n| Mode | Assembler syntax | EA / operand | Example |\n|---|---|---|---|\n| Immediate | #Value | Operand = Value | `MOV R1, #25` |\n| Register | Ri | EA = Ri | `ADD R1, R2` |\n| Absolute (Direct) | LOC | EA = LOC | `MOV R1, NUM` |\n| Indirect | (Ri) or (LOC) | EA = [Ri] or [LOC] | `MOV R1, (R2)` |\n| Index | X(Ri) | EA = X + [Ri] | `MOV R1, 20(R2)` |\n| Base with index | (Ri,Rj) | EA = [Ri] + [Rj] | `MOV R1, (R2,R3)` |\n| Base with index and offset | X(Ri,Rj) | EA = X + [Ri] + [Rj] | `MOV R1, 8(R2,R3)` |\n| Relative | X(PC) | EA = X + [PC] | `BGTZ LOOP` |\n| Autoincrement | (Ri)+ | EA = [Ri]; then Ri is incremented | `MOV R1, (R2)+` |\n| Autodecrement | −(Ri) | Ri is decremented; then EA = [Ri] | `MOV −(SP), R1` |\n\n**Uses:**\n- Immediate: constants.\n- Register: fast temporaries.\n- Direct: global variables.\n- Indirect: pointers.\n- Index/base: arrays, records and 2-D arrays.\n- Relative: branches and position-independent code.\n- Autoincrement/decrement: stacks, queues and sequential list access.\n\n**Example (adding a list of N numbers):**\n```\n      MOVE N, R1        ; count\n      MOVE #NUM1, R2    ; pointer (immediate)\n      CLEAR R0\nLOOP: ADD (R2)+, R0     ; autoincrement\n      DECREMENT R1\n      BGTZ LOOP         ; relative\n      MOVE R0, SUM      ; absolute\n```",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "27. a.",
-      "question_text": "Describe in detail about carry look ahead adder with example.",
-      "marks": 10,
-      "answer": "**Problem with ripple carry:** in an n-bit ripple-carry adder each stage waits for the previous carry, so the delay is about $2n$ gate delays.\n\n**CLA principle:** for each bit define\n$$G_i = x_iy_i, \\qquad P_i = x_i\\oplus y_i$$\n$$c_{i+1} = G_i + P_ic_i, \\qquad s_i = P_i\\oplus c_i$$\nExpanding the recursion gives all carries directly from G, P and $c_0$:\n$$c_1 = G_0 + P_0c_0$$\n$$c_2 = G_1 + P_1G_0 + P_1P_0c_0$$\n$$c_3 = G_2 + P_2G_1 + P_2P_1G_0 + P_2P_1P_0c_0$$\n$$c_4 = G_3 + P_3G_2 + P_3P_2G_1 + P_3P_2P_1G_0 + P_3P_2P_1P_0c_0$$\n\n**Structure (diagram):**\n- Four B-cells, each generating $G_i$ and $P_i$, and later the sum $s_i$.\n- A carry look-ahead logic block that implements the two-level AND-OR equations.\n\n**Delay:** G and P take 1 gate delay, all carries 3, and all sums 4, independent of n within the block.\n\n**Higher levels:** for 16/32/64 bits, 4-bit blocks produce\n$$G^I = G_3 + P_3G_2 + P_3P_2G_1 + P_3P_2P_1G_0, \\qquad P^I = P_3P_2P_1P_0$$\nA second-level CLA then gives $c_{16}$ in 5 gate delays and the sums in 8, compared with about 32 for ripple carry.\n\n**Example:** $X = 1011\\ (11)$, $Y = 0110\\ (6)$, $c_0 = 0$.\n- $G = X\\cdot Y = 0010$ ($G_1 = 1$); $P = X\\oplus Y = 1101$\n- $c_1 = G_0 + P_0c_0 = 0$\n- $c_2 = G_1 + P_1G_0 + \\ldots = 1$\n- $c_3 = G_2 + P_2G_1 = 0 + 1\\cdot1 = 1$\n- $c_4 = G_3 + P_3G_2 + P_3P_2G_1 = 0 + 0 + 1\\cdot1\\cdot1 = 1$\n- $s_i = P_i\\oplus c_i$: $s_0 = 1\\oplus0 = 1$, $s_1 = 0\\oplus0 = 0$, $s_2 = 1\\oplus1 = 0$, $s_3 = 1\\oplus1 = 0$\n\nResult $c_4s_3s_2s_1s_0 = 10001 = 17$. Correct.",
-      "answer_source": "generated",
-      "chapter": "Unit 3: Design of ALU"
-    },
-    {
-      "question_number": "27. b.",
-      "question_text": "Illustrate floating point addition with flow chart.",
-      "marks": 10,
-      "answer": "IEEE 754 form: $(-1)^S\\times1.M\\times2^{E-127}$.\n\n**Steps (flow chart):**\n1. **Start / check zero:** if one operand is 0, the result is the other operand.\n2. **Compare exponents** $E_A$ and $E_B$; find $d = |E_A - E_B|$.\n3. **Align:** shift the mantissa of the operand with the smaller exponent right by d bits and increase its exponent, keeping guard, round and sticky bits.\n4. **Add mantissas** (if the signs differ, subtract the smaller magnitude from the larger and take the sign of the larger).\n5. **Result zero?** If so, the result is 0.\n6. **Normalise:** if the mantissa overflowed (1x.xxx), shift right and increment the exponent, then check exponent overflow. If there are leading 0s, shift left and decrement the exponent, then check underflow.\n7. **Round** the mantissa to 23 bits; if this denormalises it, go back to step 6.\n8. **Pack** S, E and M. **End.**\n\n**Flow chart:** Start → Zero? → Compare exponents → Shift smaller mantissa right → Add significands → Significand = 0? → Overflow? (shift right, E+1, exponent overflow → exception) → Normalised? (shift left, E−1, underflow → exception) → Round → Still normalised? → Done.\n\n**Example:** $9.75 + 0.5625$.\n- $9.75 = 1.00111\\times2^3$ and $0.5625 = 1.001\\times2^{-1}$, so $d = 4$.\n- Align: $0.0001001\\times2^3$.\n- Sum: $1.00111 + 0.0001001 = 1.0100101\\times2^3 = 10.3125$, already normalised.\n- Packed: S = 0, E = 130 = 10000010, M = 0100101 followed by zeros, giving $41250000_{16}$.\n\n**Hardware:** exponent subtractor → swap → alignment shifter → significand adder → leading-zero detector / normaliser → rounding unit.",
-      "answer_source": "generated",
-      "chapter": "Unit 3: Design of ALU"
-    },
-    {
-      "question_number": "28. a.",
-      "question_text": "Explain the architecture of 8086 microprocessor in detail.",
-      "marks": 10,
-      "answer": "The 8086 is a 16-bit processor (16-bit ALU, registers and data bus) with a 20-bit address bus, giving 1 MB of memory. It is housed in a 40-pin DIP and runs at 5 to 10 MHz. Its architecture is divided into two independent units that work in parallel (a simple 2-stage pipeline).\n\n**1. Bus Interface Unit (BIU):** handles all external bus operations.\n- Segment registers CS, DS, SS and ES (16-bit each).\n- Instruction Pointer (IP).\n- An address-generation adder: physical address = segment × 16 + offset (for example CS:IP).\n- A 6-byte instruction queue, used to prefetch instructions while the EU executes (pipelining).\n- Bus control logic.\n\n**2. Execution Unit (EU):** decodes and executes instructions.\n- General-purpose registers AX, BX, CX and DX, each usable as 8-bit halves (AH/AL and so on). AX is the accumulator, BX the base, CX the count and DX the data register.\n- Pointer and index registers SP, BP, SI and DI.\n- 16-bit ALU.\n- Flag register: 9 flags. Status flags are CF, PF, AF, ZF, SF and OF; control flags are TF, IF and DF.\n- Control unit / instruction decoder.\n\n**Features:**\n- Memory segmentation (64 KB segments).\n- Multiplexed address/data bus AD0 to AD15 (and A16 to A19/S3 to S6).\n- Minimum and maximum modes (MN/MX̅).\n- 256 interrupt vectors.\n- About 117 instruction types (data transfer, arithmetic, logical, string, branch, processor control).\n- Addressing modes: immediate, register, direct, register indirect, based, indexed, based-indexed and relative.\n\n**Diagram description:** the BIU (segment registers, IP, Σ adder, 6-byte queue, bus control connected to the external system bus) is linked through the internal bus/queue to the EU (control system, GPRs, pointer/index registers, ALU, flags).",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "28. b.",
-      "question_text": "Compare asynchronous DRAM and synchronous DRAM.",
-      "marks": 10,
-      "answer": "| Feature | Asynchronous DRAM | Synchronous DRAM (SDRAM) |\n|---|---|---|\n| Timing | Not tied to the system clock; controlled by RAS/CAS strobes and fixed delays | All operations synchronised to the processor/bus clock (rising edge) |\n| Control | The memory controller must handle all the timing | Has a built-in mode register and on-chip control logic |\n| Data transfer | One word per RAS/CAS cycle (fast page mode allows a few column accesses) | Burst mode: after the row is opened, consecutive columns are delivered each clock (burst length 1, 2, 4, 8 or full page) |\n| Address latching | Row and column latched by RAS/CAS | Latched on clock edges along with commands |\n| Pipelining/interleaving | Not supported | Multiple internal banks are interleaved; commands are pipelined |\n| Refresh | External, by the controller (RAS-only, CAS-before-RAS) | Built-in auto-refresh/self-refresh counter |\n| Speed / bandwidth | Lower; access time about 50 to 70 ns | Much higher; DDR variants transfer on both clock edges |\n| Latency | Fixed by access time | Programmable CAS latency (in clocks) |\n| Usage | Older PCs (FPM, EDO DRAM) | Modern main memory (SDR, DDR to DDR5) |\n\n**Common features:** both store bits as charge on a capacitor (1 transistor + 1 capacitor per cell), need periodic refresh (about 64 ms), and use multiplexed row/column addresses, giving high density at low cost.\n\n**Summary:** SDRAM's synchronous interface, banks and burst mode allow the memory to keep pace with fast processors, while asynchronous DRAM is simpler but slower.",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "29. a.",
-      "question_text": "Define and describe DMA in detail with arbitration.",
-      "marks": 10,
-      "answer": "**DMA (Direct Memory Access):** a technique in which a special controller transfers blocks of data directly between an I/O device and main memory without continuous processor intervention. The processor only initiates the transfer and is interrupted when it completes.\n\n**DMA controller registers:**\n- Starting memory address register.\n- Word count register.\n- Status/control register: R/W direction, Done flag, IE (interrupt enable) and IRQ bits.\n\n**Operation:**\n1. The CPU loads the start address, the word count and the direction, then sets the start bit.\n2. The DMA controller requests the bus (BR).\n3. The CPU grants the bus (BG) after the current bus cycle.\n4. The controller drives the address and data lines and transfers words, incrementing the address and decrementing the count.\n5. When the count reaches 0, it sets Done and raises an interrupt.\n\n**Modes:**\n- **Burst (block) mode:** the whole block is transferred in one go.\n- **Cycle stealing:** one word at a time, stealing memory cycles from the CPU.\n- **Transparent:** transfers only when the CPU is not using the bus.\n\n**Bus arbitration:** decides which bus master (CPU or a DMA controller) gets the bus.\n1. **Centralized arbitration:** a single arbiter (often in the processor) receives the Bus-Request (BR) line. It asserts Bus-Grant (BG1), which is **daisy-chained** through the devices; the first requesting device takes it and blocks propagation, then asserts Bus-Busy (BBSY). Priority is fixed by position. Variants are polling and independent request/grant lines.\n2. **Distributed arbitration:** all devices take part equally. Each device places its 4-bit ID on open-collector arbitration lines ARB0 to ARB3 (wired-OR). A device compares the lines with its ID bit by bit from the MSB and drops out of lower bits if it sees a 1 where it has a 0. The highest ID wins. This is more reliable, with no single point of failure.\n\n**Advantages of DMA:** fast block transfers, and the CPU is free for other work. It is used for disk, network and graphics transfers.",
-      "answer_source": "generated",
-      "chapter": "Unit 5: Parallelism"
-    },
-    {
-      "question_number": "29. b.",
-      "question_text": "Summarize about RISC processor architecture and its working principle.",
-      "marks": 10,
-      "answer": "**RISC (Reduced Instruction Set Computer)** uses a small set of simple, fixed-format instructions, each executing in about one clock cycle, so that the hardware can be simple and deeply pipelined.\n\n**Characteristics:**\n- Few, simple instructions and few addressing modes (register, immediate, displacement).\n- Fixed-length instruction format (for example 32 bits), which makes decoding easy.\n- **Load/store architecture:** only Load and Store access memory; all ALU operations are register to register.\n- A large general-purpose register file (32 or more registers, sometimes register windows), which reduces memory traffic.\n- Hardwired control (no microcode), so the CPI is about 1.\n- Heavy use of pipelining (IF, ID, EX, MEM, WB), with delayed branches and compiler scheduling.\n- The compiler does optimisation (register allocation, instruction scheduling, NOP insertion).\n\n**Working principle:** instructions flow through a 5-stage pipeline:\n1. **IF:** fetch the instruction from the I-cache using the PC.\n2. **ID:** decode and read registers.\n3. **EX:** ALU operation or address calculation.\n4. **MEM:** load/store access to the D-cache.\n5. **WB:** write the result to a register.\n\nOne instruction completes per cycle in the ideal case. Hazards are handled by forwarding, stalls, branch prediction and delay slots.\n\n**Example:** `C = A + B` becomes\n```\nLOAD R1, A\nLOAD R2, B\nADD  R3, R1, R2\nSTORE R3, C\n```\n\n**Advantages:** simpler, smaller, faster and lower-power hardware, with high clock rates and easy pipelining. **Disadvantages:** more instructions per program (larger code) and reliance on good compilers.\n\n**Examples:** ARM, MIPS, SPARC, PowerPC, RISC-V. RISC contrasts with CISC (x86), which has many complex variable-length instructions, many addressing modes and microprogrammed control.",
-      "answer_source": "generated",
-      "chapter": "Unit 5: Parallelism"
-    },
-    {
-      "question_number": "30. a.",
-      "question_text": "Discuss about the types of replacement algorithms in cache mapping.",
-      "marks": 10,
-      "answer": "When a new block must be brought into a full cache set (in associative or set-associative mapping), a replacement algorithm chooses the block to evict. Direct mapping needs no algorithm, because each block has a fixed line.\n\n1. **LRU (Least Recently Used):** replaces the block that has not been referenced for the longest time, exploiting temporal locality. It is implemented with counters per block. For example, in a 4-way set each block has a 2-bit counter: on a hit, the counter of the referenced block is set to 0 and counters lower than its old value are incremented; on a miss with the set full, the block with counter 3 is replaced and the others are incremented. Alternatives are a stack or pseudo-LRU tree bits. It performs well but has a hardware cost.\n2. **FIFO (First In First Out):** replaces the block that has been in the cache longest, using a circular pointer per set. It is simple but ignores usage, and suffers from Belady's anomaly.\n3. **LFU (Least Frequently Used):** replaces the block with the fewest references, using a reference counter per block. Old heavily used blocks may linger.\n4. **Random:** picks a victim at random (pseudo-random generator). It is very cheap and performs surprisingly close to LRU for large caches.\n5. **Optimal (Belady's MIN):** replaces the block that will not be used for the longest time in the future. It is not implementable, but serves as a benchmark.\n\n**Example:** 3-line fully associative cache, reference string 1 2 3 4 1 2 5 1 2 3 4 5.\n- FIFO: 9 misses.\n- LRU: 10 misses.\n- Optimal: 7 misses.\n\n**Write considerations:** write-back caches need a dirty bit, so that a modified victim is written to memory before replacement.",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "30. b.",
-      "question_text": "Examine the concept of address translation in order to provide an effective memory management scheme.",
-      "marks": 10,
-      "answer": "**Virtual memory** lets programs use a large logical (virtual) address space, while the physical main memory holds only the active parts; the rest stays on disk. The **MMU** translates every virtual address into a physical address.\n\n**Paging-based translation:**\n- The virtual address is split into a virtual page number (VPN) and an offset; physical memory is divided into page frames of the same size (for example 4 KB).\n- The **page table** (one per process, located through the page-table base register, PTBR) has one entry per virtual page, containing the frame number, valid bit, dirty (modified) bit, reference bit and protection (R/W/X) bits.\n- Translation: page-table entry address = PTBR + VPN; if valid, physical address = frame number concatenated with the offset.\n- If valid = 0, a **page fault** occurs: the OS brings the page from disk (replacing a page by LRU, FIFO or clock if needed), updates the table and restarts the instruction.\n\n**TLB (Translation Lookaside Buffer):** a small associative cache of recent VPN-to-frame translations inside the MMU. On a TLB hit, translation takes about 1 cycle; on a miss, the page table is walked and the TLB is updated. The hit ratio is typically above 98%.\n\n**Effectiveness / memory-management benefits:**\n- **Relocation:** a program can be loaded into any free frames (non-contiguous), with no external fragmentation.\n- **Protection:** per-page access rights and separate address spaces per process.\n- **Sharing:** common pages (code, libraries) can be mapped into many processes.\n- **Large address space** and demand paging: only the needed pages are loaded.\n- Multi-level or inverted page tables reduce the table size.\n- **Segmentation**, or segmentation with paging, adds logical division (code, data, stack) with base/limit checks.\n\n**Diagram:** CPU → virtual address (VPN, offset) → TLB. On a hit, the frame number is used; on a miss, the page table in memory (via PTBR) supplies the frame number, or a page fault fetches the page from disk. The frame number plus offset forms the physical address, which goes to cache/main memory.\n\n**Example:** with a 32-bit VA and 4 KB pages, the VPN is 20 bits and the offset 12 bits. For VA = 0x00403A10, VPN = 0x00403; if it maps to frame 0x1F2, PA = 0x1F2A10.",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    }
-  ]
+    "formal_filename": "2022-12_ET_18CSC262J_QP.json",
+    "paper_title": "B.Tech. DEGREE EXAMINATION, DECEMBER 2022 - Third Semester - 18CSC262J - COMPUTER ORGANIZATION AND ARCHITECTURE (For the candidates admitted from the academic year 2018-2019 to 2019-2020)",
+    "source": "2022-12 ET 18CSC262J",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "What is MAR and MDR?",
+            "options": [
+                "Memory and register and memory data register",
+                "Memory address register and memory data register",
+                "Memory accumulated register and memory drain register",
+                "Memory accumulator register and memory data register"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "MAR holds the address of the memory location being accessed; MDR holds the data read from or written to it.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "2",
+            "question_text": "In the instruction ADD LOCA, R0, LOCA refers",
+            "options": [
+                "Memory location of the source operand",
+                "Memory location of destination operand",
+                "Source data",
+                "Destination data"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Add LOCA, R0 performs $R0 \\leftarrow [LOCA] + [R0]$; LOCA is the address of a source operand and R0 is the destination.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "3",
+            "question_text": "The small extremely fast, access memory is called as",
+            "options": [
+                "Cache",
+                "Heaps",
+                "Accumulators",
+                "Stacks"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "It is a small, fast SRAM memory between the processor and main memory.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "4",
+            "question_text": "The amount of ROM needed to implement a 4 bit multiplier is",
+            "options": [
+                "64 bits",
+                "128 bits",
+                "1 K bits",
+                "2 K bits"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "The two 4-bit operands form an 8-bit address, giving $2^8 = 256$ words; each word stores the 8-bit product. $256\\times8 = 2048$ bits = 2 K bits.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "5",
+            "question_text": "32 MB of memory in a computer would require how many bits to address any single byte in a memory?",
+            "options": [
+                "25 bits",
+                "32 bits",
+                "24 bits",
+                "25 bits"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "$32\\text{ MB} = 2^5\\times2^{20} = 2^{25}$ bytes. (Option (D) is printed identical to (A).)",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "6",
+            "question_text": "In one's complement system the negative values are obtained by complementing each bit of the corresponding ______ number.",
+            "options": [
+                "Positive",
+                "Neutral",
+                "Negative",
+                "Negative and positive"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "For example $-5 = \\overline{0101} = 1010$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "7",
+            "question_text": "In addition of singed numbers, add n-bits and ignore the ______ signal from MSB position",
+            "options": [
+                "Carry out",
+                "Carry in",
+                "Positive",
+                "Negative"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "In 2's complement addition, the carry-out from the sign (MSB) position is discarded.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "8",
+            "question_text": "The ______ representation of numbers occupies a large amount of memory",
+            "options": [
+                "1's complement",
+                "2's complement",
+                "Signed numbers",
+                "Signed magnitude"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "It needs a separate sign bit, has two zeros and wastes a code; it is regarded as the least memory-efficient representation.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "9",
+            "question_text": "The method which has two representations for '0' is called ______.",
+            "options": [
+                "Hashing",
+                "Binary pair coding",
+                "Bit pair coding",
+                "Signed magnitude"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "It has +0 (0000) and −0 (1000). (1's complement also has two zeros.)",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "10",
+            "question_text": "Which algorithm generates a 2-N bit product?",
+            "options": [
+                "Shortest path algorithm",
+                "Dijkstra's algorithm",
+                "Longest path algorithm",
+                "Booth algorithm"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "Multiplying two n-bit signed numbers gives a 2n-bit product.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "11",
+            "question_text": "The INTEL 8086 micro processors is a ______ processor.",
+            "options": [
+                "8 bit",
+                "16 bit",
+                "32 bit",
+                "4 bit"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "It has a 16-bit ALU, registers and data bus, and a 20-bit address bus.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "12",
+            "question_text": "The 16 bit flag of 8086 microprocessor is responsible to indicate",
+            "options": [
+                "The condition of result of ALU operation",
+                "The condition of memory",
+                "The result of addition",
+                "The result of subtraction"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Status flags (CF, PF, AF, ZF, SF, OF) reflect the ALU result; control flags are TF, IF and DF.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "13",
+            "question_text": "The difference between the EPROM and ROM circuitry is ______.",
+            "options": [
+                "The usage of MOSFET'S over transistors",
+                "The usage of JFET'S over transistors",
+                "The usage of an extra transistors",
+                "The usage of registers"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "An EPROM cell uses a special floating-gate transistor in place of the fixed connection of a ROM cell, which allows the cell to be erased and reprogrammed.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "14",
+            "question_text": "The SDRAM performs operation on the ______.",
+            "options": [
+                "Rising edge of the clock",
+                "Falling edge of the clock",
+                "Middle state of the clock",
+                "Transition state of the clock"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "SDRAM is synchronised to the clock and operates on its rising edge (DDR uses both edges).",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "15",
+            "question_text": "What is the purpose of micro instruction executions?",
+            "options": [
+                "Generate a transfer signal",
+                "Generate a control signal",
+                "Generate a control signal to execute",
+                "Generate a control signal to compile"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Each microinstruction, when executed, produces the control signals for one step.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "16",
+            "question_text": "The ______ is the end of instruction execution phase, after which the user gets the final output.",
+            "options": [
+                "Write result",
+                "Read result",
+                "Execute",
+                "Commit"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "In out-of-order/speculative execution, the commit (retire) step permanently updates the architectural state, so results become visible.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "17",
+            "question_text": "Identify the way in which the performance is increased with pipe lining.",
+            "options": [
+                "By decreasing instruction latency",
+                "By eliminating data hazards",
+                "By exploiting instruction level parallelism",
+                "By decreasing the cache miss rate"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Pipelining overlaps instructions to raise throughput; it does not reduce the latency of an individual instruction.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "18",
+            "question_text": "The DMA controller has ______ registers.",
+            "options": [
+                "4",
+                "2",
+                "3",
+                "1"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "The DMA controller has three registers: the starting address register, the word count register and the status/control register.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "19",
+            "question_text": "What is the basic difference between vector and array processor?",
+            "options": [
+                "Register",
+                "Pipe lining",
+                "Tunneling",
+                "Parallelism"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "A vector processor uses deeply pipelined functional units on vector data, whereas an array processor uses many parallel processing elements under one control unit.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "20",
+            "question_text": "Which of the architecture is power efficient?",
+            "options": [
+                "CISC",
+                "RISC",
+                "ISA",
+                "IANA"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "It has simple hardwired control and fewer transistors, so it uses less power (for example ARM).",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "21",
+            "question_text": "A process is thrashing if ______.",
+            "options": [
+                "It is spending more time paging management than executing",
+                "It is spending less time paging than executing",
+                "Page fault occurs very infrequently",
+                "Swapping could not take place"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "22",
+            "question_text": "In which mapping, the data can be mapped anywhere in the cache memory?",
+            "options": [
+                "Associative",
+                "Direct",
+                "Set associative",
+                "Indirect"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "In fully associative mapping any memory block can be placed in any cache line.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "23",
+            "question_text": "The number of successful accesses to memory stated as a fraction is called as ______.",
+            "options": [
+                "Miss rate",
+                "Hit rate",
+                "Success rate",
+                "Access rate"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Hit rate is the number of hits divided by the total number of accesses.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "24",
+            "question_text": "Which of the following is not a type of optical disk ______.",
+            "options": [
+                "DVD",
+                "CD",
+                "Worm",
+                "Winchester"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "A Winchester disk is a sealed magnetic hard disk; CD, DVD and WORM are optical.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "25",
+            "question_text": "Disk access time does not depends on which of the following factors?",
+            "options": [
+                "Seek time",
+                "Latency",
+                "Arrival rate",
+                "Transfer rate"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Access time = seek time + rotational latency + transfer time.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "26. a.",
+            "question_text": "Explain in detail about functional units of a computer with neat diagram.",
+            "marks": 10,
+            "answer": "**Functional units:**\n1. **Input unit:** accepts coded information from keyboard, mouse, scanner and so on, and transfers it to memory or the processor.\n2. **Memory unit:** stores programs and data. *Primary memory* (RAM, organised as addressable words, with cache) is fast and volatile. *Secondary memory* (disks, SSDs) is large, slow and non-volatile.\n3. **Arithmetic and Logic Unit (ALU):** performs arithmetic and logic operations on operands brought into processor registers.\n4. **Control unit:** generates the timing and control signals that coordinate all other units and the transfers between them (fetch, decode, execute).\n5. **Output unit:** sends results to the outside world (monitor, printer).\n\nThe ALU, control unit and registers together form the processor (CPU), and all units are connected by a bus (address, data and control lines).\n\n**Diagram:** Input → Memory ↔ Processor (ALU + Control) → Output, with control lines from the control unit to every unit.\n\n**Processor registers:** PC (address of next instruction), IR (current instruction), MAR (memory address), MDR (data to/from memory), and the general-purpose registers $R_0$ to $R_{n-1}$.\n\n**Operation:** program and data are loaded via input into memory. The processor fetches each instruction (PC→MAR, Read, MDR→IR, PC is incremented), decodes it, fetches operands, executes it in the ALU, stores results, and sends output.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "26. b.",
+            "question_text": "Illustrate the different types of addressing modes with examples.",
+            "marks": 10,
+            "answer": "An addressing mode specifies how the effective address (EA) of an operand is determined.\n\n| Mode | Assembler syntax | EA / operand | Example |\n|---|---|---|---|\n| Immediate | #Value | Operand = Value | `MOV R1, #25` |\n| Register | Ri | EA = Ri | `ADD R1, R2` |\n| Absolute (Direct) | LOC | EA = LOC | `MOV R1, NUM` |\n| Indirect | (Ri) or (LOC) | EA = [Ri] or [LOC] | `MOV R1, (R2)` |\n| Index | X(Ri) | EA = X + [Ri] | `MOV R1, 20(R2)` |\n| Base with index | (Ri,Rj) | EA = [Ri] + [Rj] | `MOV R1, (R2,R3)` |\n| Base with index and offset | X(Ri,Rj) | EA = X + [Ri] + [Rj] | `MOV R1, 8(R2,R3)` |\n| Relative | X(PC) | EA = X + [PC] | `BGTZ LOOP` |\n| Autoincrement | (Ri)+ | EA = [Ri]; then Ri is incremented | `MOV R1, (R2)+` |\n| Autodecrement | −(Ri) | Ri is decremented; then EA = [Ri] | `MOV −(SP), R1` |\n\n**Uses:**\n- Immediate: constants.\n- Register: fast temporaries.\n- Direct: global variables.\n- Indirect: pointers.\n- Index/base: arrays, records and 2-D arrays.\n- Relative: branches and position-independent code.\n- Autoincrement/decrement: stacks, queues and sequential list access.\n\n**Example (adding a list of N numbers):**\n```\n      MOVE N, R1        ; count\n      MOVE #NUM1, R2    ; pointer (immediate)\n      CLEAR R0\nLOOP: ADD (R2)+, R0     ; autoincrement\n      DECREMENT R1\n      BGTZ LOOP         ; relative\n      MOVE R0, SUM      ; absolute\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "27. a.",
+            "question_text": "Describe in detail about carry look ahead adder with example.",
+            "marks": 10,
+            "answer": "**Problem with ripple carry:** in an n-bit ripple-carry adder each stage waits for the previous carry, so the delay is about $2n$ gate delays.\n\n**CLA principle:** for each bit define\n$$G_i = x_iy_i, \\qquad P_i = x_i\\oplus y_i$$\n$$c_{i+1} = G_i + P_ic_i, \\qquad s_i = P_i\\oplus c_i$$\nExpanding the recursion gives all carries directly from G, P and $c_0$:\n$$c_1 = G_0 + P_0c_0$$\n$$c_2 = G_1 + P_1G_0 + P_1P_0c_0$$\n$$c_3 = G_2 + P_2G_1 + P_2P_1G_0 + P_2P_1P_0c_0$$\n$$c_4 = G_3 + P_3G_2 + P_3P_2G_1 + P_3P_2P_1G_0 + P_3P_2P_1P_0c_0$$\n\n**Structure (diagram):**\n- Four B-cells, each generating $G_i$ and $P_i$, and later the sum $s_i$.\n- A carry look-ahead logic block that implements the two-level AND-OR equations.\n\n**Delay:** G and P take 1 gate delay, all carries 3, and all sums 4, independent of n within the block.\n\n**Higher levels:** for 16/32/64 bits, 4-bit blocks produce\n$$G^I = G_3 + P_3G_2 + P_3P_2G_1 + P_3P_2P_1G_0, \\qquad P^I = P_3P_2P_1P_0$$\nA second-level CLA then gives $c_{16}$ in 5 gate delays and the sums in 8, compared with about 32 for ripple carry.\n\n**Example:** $X = 1011\\ (11)$, $Y = 0110\\ (6)$, $c_0 = 0$.\n- $G = X\\cdot Y = 0010$ ($G_1 = 1$); $P = X\\oplus Y = 1101$\n- $c_1 = G_0 + P_0c_0 = 0$\n- $c_2 = G_1 + P_1G_0 + \\ldots = 1$\n- $c_3 = G_2 + P_2G_1 = 0 + 1\\cdot1 = 1$\n- $c_4 = G_3 + P_3G_2 + P_3P_2G_1 = 0 + 0 + 1\\cdot1\\cdot1 = 1$\n- $s_i = P_i\\oplus c_i$: $s_0 = 1\\oplus0 = 1$, $s_1 = 0\\oplus0 = 0$, $s_2 = 1\\oplus1 = 0$, $s_3 = 1\\oplus1 = 0$\n\nResult $c_4s_3s_2s_1s_0 = 10001 = 17$. Correct.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "27. b.",
+            "question_text": "Illustrate floating point addition with flow chart.",
+            "marks": 10,
+            "answer": "IEEE 754 form: $(-1)^S\\times1.M\\times2^{E-127}$.\n\n**Steps (flow chart):**\n1. **Start / check zero:** if one operand is 0, the result is the other operand.\n2. **Compare exponents** $E_A$ and $E_B$; find $d = |E_A - E_B|$.\n3. **Align:** shift the mantissa of the operand with the smaller exponent right by d bits and increase its exponent, keeping guard, round and sticky bits.\n4. **Add mantissas** (if the signs differ, subtract the smaller magnitude from the larger and take the sign of the larger).\n5. **Result zero?** If so, the result is 0.\n6. **Normalise:** if the mantissa overflowed (1x.xxx), shift right and increment the exponent, then check exponent overflow. If there are leading 0s, shift left and decrement the exponent, then check underflow.\n7. **Round** the mantissa to 23 bits; if this denormalises it, go back to step 6.\n8. **Pack** S, E and M. **End.**\n\n**Flow chart:** Start → Zero? → Compare exponents → Shift smaller mantissa right → Add significands → Significand = 0? → Overflow? (shift right, E+1, exponent overflow → exception) → Normalised? (shift left, E−1, underflow → exception) → Round → Still normalised? → Done.\n\n**Example:** $9.75 + 0.5625$.\n- $9.75 = 1.00111\\times2^3$ and $0.5625 = 1.001\\times2^{-1}$, so $d = 4$.\n- Align: $0.0001001\\times2^3$.\n- Sum: $1.00111 + 0.0001001 = 1.0100101\\times2^3 = 10.3125$, already normalised.\n- Packed: S = 0, E = 130 = 10000010, M = 0100101 followed by zeros, giving $41250000_{16}$.\n\n**Hardware:** exponent subtractor → swap → alignment shifter → significand adder → leading-zero detector / normaliser → rounding unit.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "28. a.",
+            "question_text": "Explain the architecture of 8086 microprocessor in detail.",
+            "marks": 10,
+            "answer": "The 8086 is a 16-bit processor (16-bit ALU, registers and data bus) with a 20-bit address bus, giving 1 MB of memory. It is housed in a 40-pin DIP and runs at 5 to 10 MHz. Its architecture is divided into two independent units that work in parallel (a simple 2-stage pipeline).\n\n**1. Bus Interface Unit (BIU):** handles all external bus operations.\n- Segment registers CS, DS, SS and ES (16-bit each).\n- Instruction Pointer (IP).\n- An address-generation adder: physical address = segment × 16 + offset (for example CS:IP).\n- A 6-byte instruction queue, used to prefetch instructions while the EU executes (pipelining).\n- Bus control logic.\n\n**2. Execution Unit (EU):** decodes and executes instructions.\n- General-purpose registers AX, BX, CX and DX, each usable as 8-bit halves (AH/AL and so on). AX is the accumulator, BX the base, CX the count and DX the data register.\n- Pointer and index registers SP, BP, SI and DI.\n- 16-bit ALU.\n- Flag register: 9 flags. Status flags are CF, PF, AF, ZF, SF and OF; control flags are TF, IF and DF.\n- Control unit / instruction decoder.\n\n**Features:**\n- Memory segmentation (64 KB segments).\n- Multiplexed address/data bus AD0 to AD15 (and A16 to A19/S3 to S6).\n- Minimum and maximum modes (MN/MX̅).\n- 256 interrupt vectors.\n- About 117 instruction types (data transfer, arithmetic, logical, string, branch, processor control).\n- Addressing modes: immediate, register, direct, register indirect, based, indexed, based-indexed and relative.\n\n**Diagram description:** the BIU (segment registers, IP, Σ adder, 6-byte queue, bus control connected to the external system bus) is linked through the internal bus/queue to the EU (control system, GPRs, pointer/index registers, ALU, flags).",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "28. b.",
+            "question_text": "Compare asynchronous DRAM and synchronous DRAM.",
+            "marks": 10,
+            "answer": "| Feature | Asynchronous DRAM | Synchronous DRAM (SDRAM) |\n|---|---|---|\n| Timing | Not tied to the system clock; controlled by RAS/CAS strobes and fixed delays | All operations synchronised to the processor/bus clock (rising edge) |\n| Control | The memory controller must handle all the timing | Has a built-in mode register and on-chip control logic |\n| Data transfer | One word per RAS/CAS cycle (fast page mode allows a few column accesses) | Burst mode: after the row is opened, consecutive columns are delivered each clock (burst length 1, 2, 4, 8 or full page) |\n| Address latching | Row and column latched by RAS/CAS | Latched on clock edges along with commands |\n| Pipelining/interleaving | Not supported | Multiple internal banks are interleaved; commands are pipelined |\n| Refresh | External, by the controller (RAS-only, CAS-before-RAS) | Built-in auto-refresh/self-refresh counter |\n| Speed / bandwidth | Lower; access time about 50 to 70 ns | Much higher; DDR variants transfer on both clock edges |\n| Latency | Fixed by access time | Programmable CAS latency (in clocks) |\n| Usage | Older PCs (FPM, EDO DRAM) | Modern main memory (SDR, DDR to DDR5) |\n\n**Common features:** both store bits as charge on a capacitor (1 transistor + 1 capacitor per cell), need periodic refresh (about 64 ms), and use multiplexed row/column addresses, giving high density at low cost.\n\n**Summary:** SDRAM's synchronous interface, banks and burst mode allow the memory to keep pace with fast processors, while asynchronous DRAM is simpler but slower.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "29. a.",
+            "question_text": "Define and describe DMA in detail with arbitration.",
+            "marks": 10,
+            "answer": "**DMA (Direct Memory Access):** a technique in which a special controller transfers blocks of data directly between an I/O device and main memory without continuous processor intervention. The processor only initiates the transfer and is interrupted when it completes.\n\n**DMA controller registers:**\n- Starting memory address register.\n- Word count register.\n- Status/control register: R/W direction, Done flag, IE (interrupt enable) and IRQ bits.\n\n**Operation:**\n1. The CPU loads the start address, the word count and the direction, then sets the start bit.\n2. The DMA controller requests the bus (BR).\n3. The CPU grants the bus (BG) after the current bus cycle.\n4. The controller drives the address and data lines and transfers words, incrementing the address and decrementing the count.\n5. When the count reaches 0, it sets Done and raises an interrupt.\n\n**Modes:**\n- **Burst (block) mode:** the whole block is transferred in one go.\n- **Cycle stealing:** one word at a time, stealing memory cycles from the CPU.\n- **Transparent:** transfers only when the CPU is not using the bus.\n\n**Bus arbitration:** decides which bus master (CPU or a DMA controller) gets the bus.\n1. **Centralized arbitration:** a single arbiter (often in the processor) receives the Bus-Request (BR) line. It asserts Bus-Grant (BG1), which is **daisy-chained** through the devices; the first requesting device takes it and blocks propagation, then asserts Bus-Busy (BBSY). Priority is fixed by position. Variants are polling and independent request/grant lines.\n2. **Distributed arbitration:** all devices take part equally. Each device places its 4-bit ID on open-collector arbitration lines ARB0 to ARB3 (wired-OR). A device compares the lines with its ID bit by bit from the MSB and drops out of lower bits if it sees a 1 where it has a 0. The highest ID wins. This is more reliable, with no single point of failure.\n\n**Advantages of DMA:** fast block transfers, and the CPU is free for other work. It is used for disk, network and graphics transfers.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "29. b.",
+            "question_text": "Summarize about RISC processor architecture and its working principle.",
+            "marks": 10,
+            "answer": "**RISC (Reduced Instruction Set Computer)** uses a small set of simple, fixed-format instructions, each executing in about one clock cycle, so that the hardware can be simple and deeply pipelined.\n\n**Characteristics:**\n- Few, simple instructions and few addressing modes (register, immediate, displacement).\n- Fixed-length instruction format (for example 32 bits), which makes decoding easy.\n- **Load/store architecture:** only Load and Store access memory; all ALU operations are register to register.\n- A large general-purpose register file (32 or more registers, sometimes register windows), which reduces memory traffic.\n- Hardwired control (no microcode), so the CPI is about 1.\n- Heavy use of pipelining (IF, ID, EX, MEM, WB), with delayed branches and compiler scheduling.\n- The compiler does optimisation (register allocation, instruction scheduling, NOP insertion).\n\n**Working principle:** instructions flow through a 5-stage pipeline:\n1. **IF:** fetch the instruction from the I-cache using the PC.\n2. **ID:** decode and read registers.\n3. **EX:** ALU operation or address calculation.\n4. **MEM:** load/store access to the D-cache.\n5. **WB:** write the result to a register.\n\nOne instruction completes per cycle in the ideal case. Hazards are handled by forwarding, stalls, branch prediction and delay slots.\n\n**Example:** `C = A + B` becomes\n```\nLOAD R1, A\nLOAD R2, B\nADD  R3, R1, R2\nSTORE R3, C\n```\n\n**Advantages:** simpler, smaller, faster and lower-power hardware, with high clock rates and easy pipelining. **Disadvantages:** more instructions per program (larger code) and reliance on good compilers.\n\n**Examples:** ARM, MIPS, SPARC, PowerPC, RISC-V. RISC contrasts with CISC (x86), which has many complex variable-length instructions, many addressing modes and microprogrammed control.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "30. a.",
+            "question_text": "Discuss about the types of replacement algorithms in cache mapping.",
+            "marks": 10,
+            "answer": "When a new block must be brought into a full cache set (in associative or set-associative mapping), a replacement algorithm chooses the block to evict. Direct mapping needs no algorithm, because each block has a fixed line.\n\n1. **LRU (Least Recently Used):** replaces the block that has not been referenced for the longest time, exploiting temporal locality. It is implemented with counters per block. For example, in a 4-way set each block has a 2-bit counter: on a hit, the counter of the referenced block is set to 0 and counters lower than its old value are incremented; on a miss with the set full, the block with counter 3 is replaced and the others are incremented. Alternatives are a stack or pseudo-LRU tree bits. It performs well but has a hardware cost.\n2. **FIFO (First In First Out):** replaces the block that has been in the cache longest, using a circular pointer per set. It is simple but ignores usage, and suffers from Belady's anomaly.\n3. **LFU (Least Frequently Used):** replaces the block with the fewest references, using a reference counter per block. Old heavily used blocks may linger.\n4. **Random:** picks a victim at random (pseudo-random generator). It is very cheap and performs surprisingly close to LRU for large caches.\n5. **Optimal (Belady's MIN):** replaces the block that will not be used for the longest time in the future. It is not implementable, but serves as a benchmark.\n\n**Example:** 3-line fully associative cache, reference string 1 2 3 4 1 2 5 1 2 3 4 5.\n- FIFO: 9 misses.\n- LRU: 10 misses.\n- Optimal: 7 misses.\n\n**Write considerations:** write-back caches need a dirty bit, so that a modified victim is written to memory before replacement.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "30. b.",
+            "question_text": "Examine the concept of address translation in order to provide an effective memory management scheme.",
+            "marks": 10,
+            "answer": "**Virtual memory** lets programs use a large logical (virtual) address space, while the physical main memory holds only the active parts; the rest stays on disk. The **MMU** translates every virtual address into a physical address.\n\n**Paging-based translation:**\n- The virtual address is split into a virtual page number (VPN) and an offset; physical memory is divided into page frames of the same size (for example 4 KB).\n- The **page table** (one per process, located through the page-table base register, PTBR) has one entry per virtual page, containing the frame number, valid bit, dirty (modified) bit, reference bit and protection (R/W/X) bits.\n- Translation: page-table entry address = PTBR + VPN; if valid, physical address = frame number concatenated with the offset.\n- If valid = 0, a **page fault** occurs: the OS brings the page from disk (replacing a page by LRU, FIFO or clock if needed), updates the table and restarts the instruction.\n\n**TLB (Translation Lookaside Buffer):** a small associative cache of recent VPN-to-frame translations inside the MMU. On a TLB hit, translation takes about 1 cycle; on a miss, the page table is walked and the TLB is updated. The hit ratio is typically above 98%.\n\n**Effectiveness / memory-management benefits:**\n- **Relocation:** a program can be loaded into any free frames (non-contiguous), with no external fragmentation.\n- **Protection:** per-page access rights and separate address spaces per process.\n- **Sharing:** common pages (code, libraries) can be mapped into many processes.\n- **Large address space** and demand paging: only the needed pages are loaded.\n- Multi-level or inverted page tables reduce the table size.\n- **Segmentation**, or segmentation with paging, adds logical division (code, data, stack) with base/limit checks.\n\n**Diagram:** CPU → virtual address (VPN, offset) → TLB. On a hit, the frame number is used; on a miss, the page table in memory (via PTBR) supplies the frame number, or a page fault fetches the page from disk. The frame number plus offset forms the physical address, which goes to cache/main memory.\n\n**Example:** with a 32-bit VA and 4 KB pages, the VPN is 20 bits and the offset 12 bits. For VA = 0x00403A10, VPN = 0x00403; if it maps to frame 0x1F2, PA = 0x1F2A10.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        }
+    ]
 }

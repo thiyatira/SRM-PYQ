@@ -5,9 +5,16 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Consider an array arr = [10, 20, 30, 40, 50] with index starting at 0.\nWhat is the output of the following loop?\n\n```text\ni ← 0 \nwhile i < 5 do \n    i ← i + arr[i] % 3 \n    print(arr[i]) \nend while\n\n```\n\nA. 10 20 30 40 50\nB. 20 40 50\nC. 10 20 30 50\nD. 10 20 30",
+            "question_text": "Consider an array arr = [10, 20, 30, 40, 50] with index starting at 0.\nWhat is the output of the following loop?\n\n```text\ni ← 0 \nwhile i < 5 do \n    i ← i + arr[i] % 3 \n    print(arr[i]) \nend while\n\n```",
+            "options": [
+                "10 20 30 40 50",
+                "20 40 50",
+                "10 20 30 50",
+                "10 20 30"
+            ],
+            "correct_option": "B",
             "marks": 2,
-            "answer": "B. 20 40 50\n\n**Step-by-step Execution:**\n1. **i = 0**:\n   - `arr[i] = 10`\n   - `10 % 3 = 1` → `i = i + 1 = 1`\n   - `print(arr[1])` → **20**\n2. **i = 1**:\n   - `arr[i] = 20`\n   - `20 % 3 = 2` → `i = i + 2 = 3`\n   - `print(arr[3])` → **40**\n3. **i = 3**:\n   - `arr[i] = 40`\n   - `40 % 3 = 1` → `i = i + 1 = 4`\n   - `print(arr[4])` → **50**\n4. **i = 4**:\n   - `arr[i] = 50`\n   - `50 % 3 = 2` → `i = i + 2 = 6`\n   - Loop condition `i < 5` is now `6 < 5` (false), which breaks the loop.",
+            "answer": "**Step-by-step Execution:**\n1. **i = 0**:\n   - `arr[i] = 10`\n   - `10 % 3 = 1` → `i = i + 1 = 1`\n   - `print(arr[1])` → **20**\n2. **i = 1**:\n   - `arr[i] = 20`\n   - `20 % 3 = 2` → `i = i + 2 = 3`\n   - `print(arr[3])` → **40**\n3. **i = 3**:\n   - `arr[i] = 40`\n   - `40 % 3 = 1` → `i = i + 1 = 4`\n   - `print(arr[4])` → **50**\n4. **i = 4**:\n   - `arr[i] = 50`\n   - `50 % 3 = 2` → `i = i + 2 = 6`\n   - Loop condition `i < 5` is now `6 < 5` (false), which breaks the loop.",
             "answer_source": "provided",
             "chapter": "Unit 1 - Introduction"
         },
@@ -21,9 +28,16 @@
         },
         {
             "question_number": "3",
-            "question_text": "What is the net effect on the number of elements in a stack after the following sequence of operations? If any elements remain on the stack; what are they? Initial Stack: Empty\n\n**Operations:**\n\n```\nPush(10);\nPush(20);\nPop();\nPush(30);\nPop();\nPush(40);\nPop();\nPop();\nPush(50);\n\n```\n\nA. 0 elements; no elements\nB. 1 element; 50 (top)\nC. 2 elements; 40 50 (top)\nD. 1 elements; 10 (top)",
+            "question_text": "What is the net effect on the number of elements in a stack after the following sequence of operations? If any elements remain on the stack; what are they? Initial Stack: Empty\n\n**Operations:**\n\n```\nPush(10);\nPush(20);\nPop();\nPush(30);\nPop();\nPush(40);\nPop();\nPop();\nPush(50);\n\n```",
+            "options": [
+                "0 elements; no elements",
+                "1 element; 50 (top)",
+                "2 elements; 40 50 (top)",
+                "1 elements; 10 (top)"
+            ],
+            "correct_option": "B",
             "marks": 2,
-            "answer": "B. 1 element; 50 (top)\n\n**Trace of Operations:**\n- Push(10) -> Stack: [10]\n- Push(20) -> Stack: [10, 20]\n- Pop() -> Stack: [10] (removes 20)\n- Push(30) -> Stack: [10, 30]\n- Pop() -> Stack: [10] (removes 30)\n- Push(40) -> Stack: [10, 40]\n- Pop() -> Stack: [10] (removes 40)\n- Pop() -> Stack: [] (removes 10)\n- Push(50) -> Stack: [50]\n\nOnly 1 element remains: 50 (at the top).",
+            "answer": "**Trace of Operations:**\n- Push(10) -> Stack: [10]\n- Push(20) -> Stack: [10, 20]\n- Pop() -> Stack: [10] (removes 20)\n- Push(30) -> Stack: [10, 30]\n- Pop() -> Stack: [10] (removes 30)\n- Push(40) -> Stack: [10, 40]\n- Pop() -> Stack: [10] (removes 40)\n- Pop() -> Stack: [] (removes 10)\n- Push(50) -> Stack: [50]\n\nOnly 1 element remains: 50 (at the top).",
             "answer_source": "provided",
             "chapter": "Unit 3 - Stack and Queue"
         },

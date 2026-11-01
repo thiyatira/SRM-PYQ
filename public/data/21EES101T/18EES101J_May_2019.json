@@ -4,113 +4,211 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Krichoff's voltage law is based on\n(A) Law of conservation of energy\n(B) Law of conservation of charge\n(C) Faraday's law of electromagnetic induction\n(D) Fleming's right hand rule",
+            "question_text": "Krichoff's voltage law is based on",
+            "options": [
+                "Law of conservation of energy",
+                "Law of conservation of charge",
+                "Faraday's law of electromagnetic induction",
+                "Fleming's right hand rule"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: KVL relates to the work done per unit charge, which means it is fundamentally based on the law of conservation of energy.",
+            "answer": "KVL relates to the work done per unit charge, which means it is fundamentally based on the law of conservation of energy.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
         {
             "question_number": "2",
-            "question_text": "Superposition theorem is applied to\n(A) Only linear circuit\n(B) Only non linear circuit\n(C) Either on linear or non linear circuit\n(D) Only on DC circuit",
+            "question_text": "Superposition theorem is applied to",
+            "options": [
+                "Only linear circuit",
+                "Only non linear circuit",
+                "Either on linear or non linear circuit",
+                "Only on DC circuit"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: The Superposition theorem requires the circuit network components to be linear and bilateral to be applicable.",
+            "answer": "The Superposition theorem requires the circuit network components to be linear and bilateral to be applicable.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
         {
             "question_number": "3",
-            "question_text": "Three equal resistances of 3 Ω are connected in star. What is the resistance in one of the arms in an equivalent delta circuit?\n(A) 10 Ω\n(B) 27 Ω\n(C) 9 Ω\n(D) 3 Ω",
+            "question_text": "Three equal resistances of 3 Ω are connected in star. What is the resistance in one of the arms in an equivalent delta circuit?",
+            "options": [
+                "10 Ω",
+                "27 Ω",
+                "9 Ω",
+                "3 Ω"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: For an equivalent star-to-delta transformation with equal resistors, R_delta = 3 * R_star = 3 * 3 Ω = 9 Ω.",
+            "answer": "For an equivalent star-to-delta transformation with equal resistors, R_delta = 3 * R_star = 3 * 3 Ω = 9 Ω.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
         {
             "question_number": "4",
-            "question_text": "In a certain series RC circuit, the true power is 2W, and the reactive power is 3.5 VAR. What is the apparent power?\n(A) 3.5 VA\n(B) 2.03 VA\n(C) 4.03 VA\n(D) 3 VA",
+            "question_text": "In a certain series RC circuit, the true power is 2W, and the reactive power is 3.5 VAR. What is the apparent power?",
+            "options": [
+                "3.5 VA",
+                "2.03 VA",
+                "4.03 VA",
+                "3 VA"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: Apparent power S = √(P^2 + Q^2) = √(2^2 + 3.5^2) = √(4 + 12.25) = √16.25 ≈ 4.03 VA.",
+            "answer": "Apparent power S = √(P^2 + Q^2) = √(2^2 + 3.5^2) = √(4 + 12.25) = √16.25 ≈ 4.03 VA.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
         {
             "question_number": "5",
-            "question_text": "A power factor of '0' indicates\n(A) Purely resistive element\n(B) Purely inductive element\n(C) Combination of both (A) and (B)\n(D) Purely capacitive element and resistive element",
+            "question_text": "A power factor of '0' indicates",
+            "options": [
+                "Purely resistive element",
+                "Purely inductive element",
+                "Combination of both (A) and (B)",
+                "Purely capacitive element and resistive element"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: A power factor of 0 implies a phase angle of 90 degrees, which is characteristic of a purely inductive or purely capacitive element. From the given choices, (B) fits correctly.",
+            "answer": "A power factor of 0 implies a phase angle of 90 degrees, which is characteristic of a purely inductive or purely capacitive element. Of the given choices, only the purely inductive element (B) fits.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
         {
             "question_number": "8",
-            "question_text": "Material used for the construction of transformer core is usually\n(A) Wood\n(B) Copper\n(C) Aluminium\n(D) Silicon steel",
+            "question_text": "Material used for the construction of transformer core is usually",
+            "options": [
+                "Wood",
+                "Copper",
+                "Aluminium",
+                "Silicon steel"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: Silicon steel is widely used for transformer cores to reduce hysteresis losses due to its high permeability.",
+            "answer": "Silicon steel is widely used for transformer cores to reduce hysteresis losses due to its high permeability.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
         {
             "question_number": "9",
-            "question_text": "The function of choke and starter in a fluorescent lamp circuit is to\n(A) Reduce the power consumed by the fluorescent lamp\n(B) Create a high voltage across the tube during starting\n(C) Help to draw very high current during starting\n(D) Improve the power factor of the fluorescent lamp circuit",
+            "question_text": "The function of choke and starter in a fluorescent lamp circuit is to",
+            "options": [
+                "Reduce the power consumed by the fluorescent lamp",
+                "Create a high voltage across the tube during starting",
+                "Help to draw very high current during starting",
+                "Improve the power factor of the fluorescent lamp circuit"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: The choke provides a high inductive voltage surge to initiate the gas discharge when the starter breaks the circuit.",
+            "answer": "The choke provides a high inductive voltage surge to initiate the gas discharge when the starter breaks the circuit.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
         {
             "question_number": "11",
-            "question_text": "Transistor can be used as an amplifier when it is operated\n(A) In the saturation region\n(B) In the active region\n(C) In the cut-off region\n(D) In both saturation and cut-off regions",
+            "question_text": "Transistor can be used as an amplifier when it is operated",
+            "options": [
+                "In the saturation region",
+                "In the active region",
+                "In the cut-off region",
+                "In both saturation and cut-off regions"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: For linear amplification without distortion, a transistor must be biased to operate in the active region.",
+            "answer": "For linear amplification without distortion, a transistor must be biased to operate in the active region.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
         {
             "question_number": "12",
-            "question_text": "MOSFET stands for\n(A) Metal oxide semiconductor field effect transistor\n(B) Metal oxide silicon field effect transistor\n(C) Metal oxide semiconductor field excited transistor\n(D) Metal oxide silicon field excited transistor",
+            "question_text": "MOSFET stands for",
+            "options": [
+                "Metal oxide semiconductor field effect transistor",
+                "Metal oxide silicon field effect transistor",
+                "Metal oxide semiconductor field excited transistor",
+                "Metal oxide silicon field excited transistor"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: MOSFET stands for Metal-Oxide-Semiconductor Field-Effect Transistor.",
+            "answer": "MOSFET stands for Metal-Oxide-Semiconductor Field-Effect Transistor.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
         {
             "question_number": "13",
-            "question_text": "Moving coil instruments can be used on\n(A) DC only\n(B) Sinusoidal AC only\n(C) All AC waveforms\n(D) AC and DC both",
+            "question_text": "Moving coil instruments can be used on",
+            "options": [
+                "DC only",
+                "Sinusoidal AC only",
+                "All AC waveforms",
+                "AC and DC both"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: Permanent Magnet Moving Coil (PMMC) instruments strictly measure direct current (DC).",
+            "answer": "Permanent Magnet Moving Coil (PMMC) instruments strictly measure direct current (DC).",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
         {
             "question_number": "14",
-            "question_text": "A strain gauge should have\n(A) High gauge factor and low sensitivity\n(B) High gauge factor and high sensitivity\n(C) Low gauge factor and low sensitivity\n(D) Low gauge factor and high sensitivity",
+            "question_text": "A strain gauge should have",
+            "options": [
+                "High gauge factor and low sensitivity",
+                "High gauge factor and high sensitivity",
+                "Low gauge factor and low sensitivity",
+                "Low gauge factor and high sensitivity"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: An ideal strain gauge should have a high gauge factor and high sensitivity to measure very small mechanical strains effectively.",
+            "answer": "An ideal strain gauge should have a high gauge factor and high sensitivity to measure very small mechanical strains effectively.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
         {
             "question_number": "16",
-            "question_text": "Which of the following is not a pressure measurement transducers?\n(A) Piezo electric tansducer\n(B) Strain gauge\n(C) LVDT\n(D) Thermocouple",
+            "question_text": "Which of the following is not a pressure measurement transducers?",
+            "options": [
+                "Piezo electric tansducer",
+                "Strain gauge",
+                "LVDT",
+                "Thermocouple"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: A thermocouple is fundamentally a temperature-sensing transducer, unlike the others which can be used in pressure sensing configurations.",
+            "answer": "A thermocouple is fundamentally a temperature-sensing transducer, unlike the others which can be used in pressure sensing configurations.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
         {
             "question_number": "18",
-            "question_text": "Which of the following statements is true, according to Demorgan's theorem\n(A) $\\overline{A+B} = \\overline{A}.\\overline{B}$\n(B) $\\overline{A}+\\overline{B} = \\overline{A}.\\overline{B}$\n(C) $\\overline{A+B} = \\overline{A.B}$\n(D) $A.B = \\overline{A} + \\overline{B}$",
+            "question_text": "Which of the following statements is true, according to Demorgan's theorem",
+            "options": [
+                "$\\overline{A+B} = \\overline{A}.\\overline{B}$",
+                "$\\overline{A}+\\overline{B} = \\overline{A}.\\overline{B}$",
+                "$\\overline{A+B} = \\overline{A.B}$",
+                "$A.B = \\overline{A} + \\overline{B}$"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: De Morgan's Law states that the complement of a logical OR is the logical AND of the complements: (A+B)' = A'.B'.",
+            "answer": "De Morgan's Law states that the complement of a logical OR is the logical AND of the complements: (A+B)' = A'.B'.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
         {
             "question_number": "19",
-            "question_text": "Connecting of inverters at all the inputs of an AND gate produces a\n(A) NAND gate\n(B) OR gate\n(C) NOR gate\n(D) XOR gate",
+            "question_text": "Connecting of inverters at all the inputs of an AND gate produces a",
+            "options": [
+                "NAND gate",
+                "OR gate",
+                "NOR gate",
+                "XOR gate"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: By De Morgan's theorem, an AND gate with inverted inputs functions identically to a NOR gate: A'.B' = (A+B)'.",
+            "answer": "By De Morgan's theorem, an AND gate with inverted inputs functions identically to a NOR gate: A'.B' = (A+B)'.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         }

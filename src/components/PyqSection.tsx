@@ -65,16 +65,21 @@ const PyqSection: React.FC = () => {
   const viewRef = useRef<HTMLDivElement>(null);
   const moveFocus = useRef(false);
 
-  // Restore navigation after mount (URL hash wins over stored state).
+  // Restore navigation after mount (URL hash wins over stored state). Only once: a changed
+  // `catalogue` object (dev hot reload) must not reset where the user is.
+  const initialised = useRef(false);
   useEffect(() => {
-    const fromHash = parseHash(window.location.hash, catalogue);
-    if (fromHash) {
-      setNav({ view: "questions", subjectCode: fromHash.code });
-      setFocusId(fromHash.focusId);
-    } else {
-      setNav(sanitizeNav(readJson<unknown>(NAV_KEY, null), catalogue));
+    if (!initialised.current) {
+      initialised.current = true;
+      const fromHash = parseHash(window.location.hash, catalogue);
+      if (fromHash) {
+        setNav({ view: "questions", subjectCode: fromHash.code });
+        setFocusId(fromHash.focusId);
+      } else {
+        setNav(sanitizeNav(readJson<unknown>(NAV_KEY, null), catalogue));
+      }
+      setRestored(true);
     }
-    setRestored(true);
 
     const onHashChange = () => {
       const h = parseHash(window.location.hash, catalogue);

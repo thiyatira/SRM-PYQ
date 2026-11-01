@@ -4,7 +4,14 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Which of the following is not present in DNA?\n(A) Adenine\n(B) Guanine\n(C) Cytosine\n(D) Uracil",
+            "question_text": "Which of the following is not present in DNA?",
+            "options": [
+                "Adenine",
+                "Guanine",
+                "Cytosine",
+                "Uracil"
+            ],
+            "correct_option": "D",
             "marks": 1,
             "answer": "Uracil is a nitrogenous base found in RNA, replacing thymine which is found in DNA. DNA contains Adenine, Guanine, Cytosine, and Thymine.",
             "answer_source": "generated",
@@ -12,7 +19,14 @@
         },
         {
             "question_number": "2",
-            "question_text": "Which of the following is not a part of central dogma of molecular biology?\n(A) RNA\n(B) Protein\n(C) Virus\n(D) DNA",
+            "question_text": "Which of the following is not a part of central dogma of molecular biology?",
+            "options": [
+                "RNA",
+                "Protein",
+                "Virus",
+                "DNA"
+            ],
+            "correct_option": "C",
             "marks": 1,
             "answer": "The central dogma of molecular biology describes the flow of genetic information from DNA to RNA to Protein. Viruses are biological entities but are not a fundamental component of the central dogma itself, although they interact with host cellular machinery that follows the dogma.",
             "answer_source": "generated",
@@ -20,7 +34,14 @@
         },
         {
             "question_number": "3",
-            "question_text": "Study of total gene expression of a cell is called as\n(A) Lipidomics\n(B) Proteomics\n(C) Transcriptomics\n(D) Genomics",
+            "question_text": "Study of total gene expression of a cell is called as",
+            "options": [
+                "Lipidomics",
+                "Proteomics",
+                "Transcriptomics",
+                "Genomics"
+            ],
+            "correct_option": "C",
             "marks": 1,
             "answer": "Transcriptomics is the study of the complete set of RNA transcripts produced by an organism or in a specific cell type under specific conditions, reflecting total gene expression. Genomics is the study of the entire genome, Proteomics is the study of the entire set of proteins, and Lipidomics is the study of lipids.",
             "answer_source": "generated",
@@ -28,7 +49,14 @@
         },
         {
             "question_number": "4",
-            "question_text": "Which of the following is a stop codon?\n(A) AUG\n(B) UAG\n(C) CGG\n(D) GGC",
+            "question_text": "Which of the following is a stop codon?",
+            "options": [
+                "AUG",
+                "UAG",
+                "CGG",
+                "GGC"
+            ],
+            "correct_option": "B",
             "marks": 1,
             "answer": "UAG is one of the three standard stop codons (UAA, UAG, UGA) that signal the termination of protein synthesis. AUG is the start codon.",
             "answer_source": "generated",
@@ -36,7 +64,14 @@
         },
         {
             "question_number": "5",
-            "question_text": "Which of the following is not a nucleotide sequence database?\n(A) Genbank\n(B) EMBL\n(C) DDBJ\n(D) Uniprot",
+            "question_text": "Which of the following is not a nucleotide sequence database?",
+            "options": [
+                "Genbank",
+                "EMBL",
+                "DDBJ",
+                "Uniprot"
+            ],
+            "correct_option": "D",
             "marks": 1,
             "answer": "Uniprot is a comprehensive, high-quality, and freely accessible database of protein sequences and functional information. GenBank, EMBL (European Molecular Biology Laboratory), and DDBJ (DNA Data Bank of Japan) are major nucleotide sequence databases.",
             "answer_source": "generated",
@@ -44,7 +79,14 @@
         },
         {
             "question_number": "6",
-            "question_text": "Which of the following is not a sequence file format related to genomic data?\n(A) PDB\n(B) BAM\n(C) Fastq\n(D) Genbank",
+            "question_text": "Which of the following is not a sequence file format related to genomic data?",
+            "options": [
+                "PDB",
+                "BAM",
+                "Fastq",
+                "Genbank"
+            ],
+            "correct_option": "A",
             "marks": 1,
             "answer": "PDB (Protein Data Bank) format is used for representing the 3D atomic coordinates of proteins and nucleic acids, not for genomic sequence data itself. FASTQ, BAM, and GenBank are common formats for storing nucleotide sequence data and related genomic information.",
             "answer_source": "generated",
@@ -52,7 +94,14 @@
         },
         {
             "question_number": "7",
-            "question_text": "Which of the following is not a part of level Gene Ontology studies?\n(A) Biological Process\n(B) Cellular Component\n(C) Molecular Function\n(D) Enzyme Action",
+            "question_text": "Which of the following is not a part of level Gene Ontology studies?",
+            "options": [
+                "Biological Process",
+                "Cellular Component",
+                "Molecular Function",
+                "Enzyme Action"
+            ],
+            "correct_option": "D",
             "marks": 1,
             "answer": "Gene Ontology (GO) is a hierarchical classification system for describing gene and protein functions. It has three main categories: Biological Process, Molecular Function, and Cellular Component. 'Enzyme Action' is a specific type of Molecular Function, not a separate top-level category.",
             "answer_source": "generated",
@@ -60,7 +109,14 @@
         },
         {
             "question_number": "8",
-            "question_text": "Which of the following is not related to homology?\n(A) Orthology\n(B) Paralogy\n(C) Xenology\n(D) Parasitology",
+            "question_text": "Which of the following is not related to homology?",
+            "options": [
+                "Orthology",
+                "Paralogy",
+                "Xenology",
+                "Parasitology"
+            ],
+            "correct_option": "D",
             "marks": 1,
             "answer": "Parasitology is the study of parasites and their relationships with their hosts. Orthology, Paralogy, and Xenology are different types of homologous relationships between genes or proteins, describing their evolutionary origins (e.g., speciation, duplication, horizontal transfer).",
             "answer_source": "generated",
@@ -68,7 +124,14 @@
         },
         {
             "question_number": "9",
-            "question_text": "The data stored in the R data frame cannot be a ___ type.\n(A) numeric\n(B) factor\n(C) character\n(D) special function",
+            "question_text": "The data stored in the R data frame cannot be a ___ type.",
+            "options": [
+                "numeric",
+                "factor",
+                "character",
+                "special function"
+            ],
+            "correct_option": "D",
             "marks": 1,
             "answer": "R data frames can store various data types in their columns, including numeric, character, and factor. 'Special function' is not a fundamental data type in R in the same way as numeric, character, or factor.",
             "answer_source": "generated",
@@ -76,7 +139,14 @@
         },
         {
             "question_number": "10",
-            "question_text": "Which of the following is not a built-in datatype in python under the numeric category?\n(A) int\n(C) complex\n(B) float\n(D) bytes",
+            "question_text": "Which of the following is not a built-in datatype in python under the numeric category?",
+            "options": [
+                "int",
+                "float",
+                "complex",
+                "bytes"
+            ],
+            "correct_option": "D",
             "marks": 1,
             "answer": "In Python, `int` (integers), `float` (floating-point numbers), and `complex` (complex numbers) are numeric data types. `bytes` is a sequence type representing immutable sequences of single bytes.",
             "answer_source": "generated",
@@ -84,7 +154,14 @@
         },
         {
             "question_number": "11",
-            "question_text": "Which of the following is used in python to concatenate two elements?\n(A) concat ()\n(C) hash\n(B) paste ()\n(D) addition",
+            "question_text": "Which of the following is used in python to concatenate two elements?",
+            "options": [
+                "concat ()",
+                "paste ()",
+                "hash",
+                "addition"
+            ],
+            "correct_option": "D",
             "marks": 1,
             "answer": "In Python, the `+` operator (addition) is used for concatenating sequences like strings and lists. `concat()` and `paste()` are functions often found in other languages or libraries (e.g., R, pandas for `concat`).",
             "answer_source": "generated",
@@ -92,15 +169,29 @@
         },
         {
             "question_number": "12",
-            "question_text": "Dataframes can be converted into a matrix by calling the following function data\n(A) matr()\n(C) matrixf()\n(B) matrix()\n(D) matrixfunc()",
+            "question_text": "Dataframes can be converted into a matrix by calling the following function data",
+            "options": [
+                "matr()",
+                "matrix()",
+                "matrixf()",
+                "matrixfunc()"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "In R, a data frame can be converted to a matrix using the `as.matrix()` function. Among the given options, `matrix()` is the closest, though `as.matrix()` is the direct conversion function. `matrix()` itself constructs a matrix from elements.",
+            "answer": "In R, a data frame is converted to a matrix with as.matrix() (or data.matrix()). Of the listed options, matrix() is the intended function; matr(), matrixf() and matrixfunc() do not exist.",
             "answer_source": "generated",
             "chapter": "Unit 4: Neurobiology"
         },
         {
             "question_number": "13",
-            "question_text": "The content of a package is only available when a package is loaded using\n(A) install()\n(C) update()\n(B) library()\n(D) search()",
+            "question_text": "The content of a package is only available when a package is loaded using",
+            "options": [
+                "install()",
+                "library()",
+                "update()",
+                "search()"
+            ],
+            "correct_option": "B",
             "marks": 1,
             "answer": "In R, `library()` is used to load an installed package into the current R session, making its functions and data available for use. `install.packages()` is for installing, and `update.packages()` is for updating.",
             "answer_source": "generated",
@@ -108,7 +199,14 @@
         },
         {
             "question_number": "14",
-            "question_text": "Differential gene expression analysis can NOT be done using\n(A) RSEM\n(C) DESeq\n(B) edgeR\n(D) limma",
+            "question_text": "Differential gene expression analysis can NOT be done using",
+            "options": [
+                "RSEM",
+                "edgeR",
+                "DESeq",
+                "limma"
+            ],
+            "correct_option": "A",
             "marks": 1,
             "answer": "DESeq, edgeR, and limma are popular R/Bioconductor packages specifically designed and widely used for performing differential gene expression analysis on RNA-seq data. RSEM (RNA-Seq Expectation-Maximization) is a software package for quantifying gene and isoform expression levels from RNA-seq data, which is a precursor step to differential expression analysis, but RSEM itself does not perform the differential analysis.",
             "answer_source": "generated",
@@ -116,7 +214,14 @@
         },
         {
             "question_number": "15",
-            "question_text": "______ are built in R so that you get HTML.\n(A) Vignettes\n(C) Bignats\n(B) Vighnaants\n(D) Viddnets",
+            "question_text": "______ are built in R so that you get HTML.",
+            "options": [
+                "Vignettes",
+                "Vighnaants",
+                "Bignats",
+                "Viddnets"
+            ],
+            "correct_option": "A",
             "marks": 1,
             "answer": "Vignettes are introductory documents, tutorials, or guides for R packages. They are typically written in R Markdown or Sweave and can be rendered into various formats, including HTML, to provide rich documentation.",
             "answer_source": "generated",
@@ -124,7 +229,14 @@
         },
         {
             "question_number": "16",
-            "question_text": "______ consists of commands to create complex plots from data in a data frame.\n(A) ggplot2\n(C) clusterProfiler\n(B) ABSSeq\n(D) splots",
+            "question_text": "______ consists of commands to create complex plots from data in a data frame.",
+            "options": [
+                "ggplot2",
+                "ABSSeq",
+                "clusterProfiler",
+                "splots"
+            ],
+            "correct_option": "A",
             "marks": 1,
             "answer": "ggplot2 is a powerful and widely used R package for creating elegant and complex data visualizations based on the Grammar of Graphics. It allows users to build plots layer by layer, offering extensive control over aesthetics and data mapping.",
             "answer_source": "generated",
@@ -140,15 +252,29 @@
         },
         {
             "question_number": "18",
-            "question_text": "Bio.Alphabet.IUPAC provides definitions for DNA, RNA and proteins, but ______ module.\n(A) IUPACProtein\n(B) IUPACUnambiguousDNA\n(C) IUPACUnambiguousRNA\n(D) IUPACDNA",
+            "question_text": "Bio.Alphabet.IUPAC provides definitions for DNA, RNA and proteins, but ______ module.",
+            "options": [
+                "IUPACProtein",
+                "IUPACUnambiguousDNA",
+                "IUPACUnambiguousRNA",
+                "IUPACDNA"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "The `Bio.Alphabet.IUPAC` module in Biopython provides definitions for various IUPAC alphabets, including specific ones like `IUPACProtein`, `IUPACUnambiguousDNA`, `IUPACUnambiguousRNA`, and `IUPACDNA` (which typically refers to unambiguous DNA). All options are indeed provided by this module. The question is slightly ambiguous, but if it's asking for a correct example, `IUPACUnambiguousDNA` is a common and distinct type.",
+            "answer": "Bio.Alphabet.IUPAC defines IUPACProtein, IUPACUnambiguousDNA, IUPACUnambiguousRNA (and ambiguous/extended variants), but there is no plain IUPACDNA class, so IUPACDNA is the odd option. The stem as printed is incomplete (it appears to ask which name is not defined in the module), so this reading is a best interpretation.",
             "answer_source": "generated",
             "chapter": "Unit 4: Neurobiology"
         },
         {
             "question_number": "19",
-            "question_text": "The Seq object is\n(A) writable\n(B) readable\n(C) executable\n(D) revokable",
+            "question_text": "The Seq object is",
+            "options": [
+                "writable",
+                "readable",
+                "executable",
+                "revokable"
+            ],
+            "correct_option": "B",
             "marks": 1,
             "answer": "In Biopython, a `Seq` object represents an immutable biological sequence. This means its content cannot be changed after creation; it is essentially 'readable' or read-only.",
             "answer_source": "generated",
@@ -156,7 +282,14 @@
         },
         {
             "question_number": "20",
-            "question_text": "The SeqRecord (Sequence Record) class is defined in the ______ module.\n(A) Bio.SeqRecord\n(C) BioSeqRecord\n(B) Bio_SeqRecord\n(D) SeqRecord",
+            "question_text": "The SeqRecord (Sequence Record) class is defined in the ______ module.",
+            "options": [
+                "Bio.SeqRecord",
+                "Bio_SeqRecord",
+                "BioSeqRecord",
+                "SeqRecord"
+            ],
+            "correct_option": "A",
             "marks": 1,
             "answer": "The `SeqRecord` class, which combines a `Seq` object with additional annotation like an ID, name, description, and features, is defined in the `Bio.SeqRecord` module of Biopython.",
             "answer_source": "generated",

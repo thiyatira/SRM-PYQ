@@ -4,17 +4,29 @@
     "questions": [
         {
             "question_number": "A-1",
-            "question_text": "Diploid cell has ______ chromosomes (a)23 (b)24 (c)46 (d)92",
+            "question_text": "Diploid cell has ______ chromosomes",
+            "options": [
+                "23",
+                "24",
+                "46",
+                "92"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "A diploid cell in humans has 46 chromosomes (2n). Therefore, the correct option is (c) 46.",
+            "answer": "A diploid cell in humans has 46 chromosomes (2n), i.e. 23 pairs.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
         {
             "question_number": "A-2",
-            "question_text": "Always the new generation will have better fitness score than the older one (a)true (b)false",
+            "question_text": "Always the new generation will have better fitness score than the older one",
+            "options": [
+                "True",
+                "False"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "False. While genetic algorithms and natural selection generally drive towards higher fitness, it is not guaranteed that *every* new generation will have a better fitness score than the older one, as random mutations or environmental changes can lead to fluctuations.",
+            "answer": "While genetic algorithms and natural selection generally drive towards higher fitness, it is not guaranteed that *every* new generation will have a better fitness score than the older one, as random mutations or environmental changes can lead to fluctuations.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
@@ -28,57 +40,106 @@
         },
         {
             "question_number": "A-4",
-            "question_text": "Inner cell mass is obtained from ______ (a) blastocyst (b)morula (c)gastrula (d) zygote",
+            "question_text": "Inner cell mass is obtained from ______",
+            "options": [
+                "blastocyst",
+                "morula",
+                "gastrula",
+                "zygote"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "The inner cell mass is obtained from (a) blastocyst. The inner cell mass is a cluster of cells within the blastocyst that will eventually form the embryo.",
+            "answer": "The inner cell mass is obtained from blastocyst. The inner cell mass is a cluster of cells within the blastocyst that will eventually form the embryo.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
         {
             "question_number": "A-5",
-            "question_text": "Homologous pair of chromosome for X is (a)Y (b)23 (c) XY (d) 1",
+            "question_text": "Homologous pair of chromosome for X is",
+            "options": [
+                "Y",
+                "23",
+                "XY",
+                "1"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "For males, the homologous pair for the X chromosome is (a) Y. In females, two X chromosomes form a homologous pair. For males, the sex chromosomes are XY, making the Y chromosome the homolog of the X.",
+            "answer": "For males, the homologous pair for the X chromosome is Y. In females, two X chromosomes form a homologous pair. For males, the sex chromosomes are XY, making the Y chromosome the homolog of the X.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
         {
             "question_number": "A-6",
-            "question_text": "GenBank is a (a)primary (b) secondary (c)tertiary (d)composite database",
+            "question_text": "GenBank is a",
+            "options": [
+                "primary",
+                "secondary",
+                "tertiary",
+                "composite database"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "GenBank is a (a) primary database. Primary databases store original experimental data, such as nucleotide and protein sequences, directly submitted by researchers.",
+            "answer": "GenBank is a primary database. Primary databases store original experimental data, such as nucleotide and protein sequences, directly submitted by researchers.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
         {
             "question_number": "A-7",
-            "question_text": "The Rough draft of human genome was published through (a)HGP (b)HHF (c)HMM (d)HRP",
+            "question_text": "The Rough draft of human genome was published through",
+            "options": [
+                "HGP",
+                "HHF",
+                "HMM",
+                "HRP"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "The rough draft of the human genome was published through (a) HGP (Human Genome Project). The HGP was an international scientific research project with the goal of determining the base pair sequence of the human genome.",
+            "answer": "The rough draft of the human genome was published through HGP (Human Genome Project). The HGP was an international scientific research project with the goal of determining the base pair sequence of the human genome.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
         {
             "question_number": "A-8",
-            "question_text": "The blueprint for the construction of a protein is (a) tRNA(b) gRNA (c)mRNA (d) cDNA",
+            "question_text": "The blueprint for the construction of a protein is",
+            "options": [
+                "tRNA",
+                "gRNA",
+                "mRNA",
+                "cDNA"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "The blueprint for the construction of a protein is (c) mRNA (messenger RNA). mRNA carries the genetic information from DNA in the nucleus to the ribosomes in the cytoplasm, where proteins are synthesized.",
+            "answer": "The blueprint for the construction of a protein is mRNA (messenger RNA). mRNA carries the genetic information from DNA in the nucleus to the ribosomes in the cytoplasm, where proteins are synthesized.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
         {
             "question_number": "A-9",
-            "question_text": "A molecule containing sugar, phosphate and a base is called (a) nucleoside (b) Nucleotide (c)aminoacid (d) carbohydrate",
+            "question_text": "A molecule containing sugar, phosphate and a base is called",
+            "options": [
+                "nucleoside",
+                "Nucleotide",
+                "aminoacid",
+                "carbohydrate"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "A molecule containing sugar, phosphate, and a base is called (b) Nucleotide. Nucleotides are the basic building blocks of nucleic acids (DNA and RNA). A nucleoside is just a sugar and a base without the phosphate group.",
+            "answer": "A molecule containing sugar, phosphate, and a base is called Nucleotide. Nucleotides are the basic building blocks of nucleic acids (DNA and RNA). A nucleoside is just a sugar and a base without the phosphate group.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
         {
             "question_number": "A-10",
-            "question_text": "Production of glucagon is because of (a)hyperglycemia (b) Hyperkalemia (c) Hypokalemia (d) hypoglycemia",
+            "question_text": "Production of glucagon is because of",
+            "options": [
+                "hyperglycemia",
+                "Hyperkalemia",
+                "Hypokalemia",
+                "hypoglycemia"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "Production of glucagon is because of (d) hypoglycemia (low blood glucose). Glucagon is a hormone secreted by the pancreas that raises blood glucose levels, counteracting hypoglycemia.",
+            "answer": "Production of glucagon is because of hypoglycemia (low blood glucose). Glucagon is a hormone secreted by the pancreas that raises blood glucose levels, counteracting hypoglycemia.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
@@ -118,7 +179,7 @@
             "question_number": "A-15a",
             "question_text": "How did the eukaryotic cell develop organelles -which was missing in prokaryotes- which were the first organisms on earth? (the endosymbiotic theory)",
             "marks": 10,
-            "answer": "The most widely accepted explanation for the evolution of eukaryotic organelles, particularly mitochondria and chloroplasts, is the **endosymbiotic theory**. This theory, prominently championed by Lynn Margulis, posits that these organelles originated from free-living prokaryotic cells that were engulfed by a larger host cell, establishing a symbiotic relationship.\n\nSpecifically:\n1.  **Origin of Mitochondria**: It is thought that an anaerobic ancestral eukaryotic-like cell engulfed an aerobic \u03b1-proteobacterium. Instead of being digested, the bacterium survived within the host, providing it with a more efficient way to produce ATP through aerobic respiration. Over evolutionary time, this bacterium became the mitochondrion, losing most of its genes to the host nucleus and becoming an indispensable organelle.\n2.  **Origin of Chloroplasts**: Later, some eukaryotic cells that already contained mitochondria further engulfed photosynthetic cyanobacteria. These cyanobacteria provided the host cell with the ability to perform photosynthesis, eventually evolving into chloroplasts.\n\nEvidence supporting the endosymbiotic theory includes:\n*   Mitochondria and chloroplasts have their own circular DNA, similar to bacterial DNA, and independent of the host cell's nuclear DNA.\n*   They possess their own ribosomes (70S), which are structurally similar to bacterial ribosomes.\n*   They reproduce by binary fission, similar to bacteria, and independently of the host cell's division.\n*   They are enclosed by double membranes, where the inner membrane resembles a prokaryotic membrane, and the outer membrane resembles the eukaryotic host cell's phagosomal membrane.\n\nOther organelles, like the endoplasmic reticulum and Golgi apparatus, are thought to have arisen from the infolding of the prokaryotic plasma membrane, creating internal compartments.",
+            "answer": "The most widely accepted explanation for the evolution of eukaryotic organelles, particularly mitochondria and chloroplasts, is the **endosymbiotic theory**. This theory, prominently championed by Lynn Margulis, posits that these organelles originated from free-living prokaryotic cells that were engulfed by a larger host cell, establishing a symbiotic relationship.\n\nSpecifically:\n1.  **Origin of Mitochondria**: It is thought that an anaerobic ancestral eukaryotic-like cell engulfed an aerobic α-proteobacterium. Instead of being digested, the bacterium survived within the host, providing it with a more efficient way to produce ATP through aerobic respiration. Over evolutionary time, this bacterium became the mitochondrion, losing most of its genes to the host nucleus and becoming an indispensable organelle.\n2.  **Origin of Chloroplasts**: Later, some eukaryotic cells that already contained mitochondria further engulfed photosynthetic cyanobacteria. These cyanobacteria provided the host cell with the ability to perform photosynthesis, eventually evolving into chloroplasts.\n\nEvidence supporting the endosymbiotic theory includes:\n*   Mitochondria and chloroplasts have their own circular DNA, similar to bacterial DNA, and independent of the host cell's nuclear DNA.\n*   They possess their own ribosomes (70S), which are structurally similar to bacterial ribosomes.\n*   They reproduce by binary fission, similar to bacteria, and independently of the host cell's division.\n*   They are enclosed by double membranes, where the inner membrane resembles a prokaryotic membrane, and the outer membrane resembles the eukaryotic host cell's phagosomal membrane.\n\nOther organelles, like the endoplasmic reticulum and Golgi apparatus, are thought to have arisen from the infolding of the prokaryotic plasma membrane, creating internal compartments.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
@@ -132,17 +193,31 @@
         },
         {
             "question_number": "B-1",
-            "question_text": "Haploid cell has ______ chromosomes (a)23 (b)24 (c)46 (d)92",
+            "question_text": "Haploid cell has ______ chromosomes",
+            "options": [
+                "23",
+                "24",
+                "46",
+                "92"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "A haploid cell in humans has (a) 23 chromosomes. Haploid cells, such as gametes (sperm and egg), contain a single set of chromosomes (n).",
+            "answer": "A haploid cell in humans has 23 chromosomes. Haploid cells, such as gametes (sperm and egg), contain a single set of chromosomes (n).",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
         {
             "question_number": "B-2",
-            "question_text": "The transfer of genetic material through viruses is called (a) translation (b) transduction (c) conjugation (d) transformation",
+            "question_text": "The transfer of genetic material through viruses is called",
+            "options": [
+                "translation",
+                "transduction",
+                "conjugation",
+                "transformation"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "The transfer of genetic material through viruses is called (b) transduction. This process involves a virus infecting a bacterium or other cell and transferring genetic material from one cell to another.",
+            "answer": "The transfer of genetic material through viruses is called transduction. This process involves a virus infecting a bacterium or other cell and transferring genetic material from one cell to another.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
@@ -156,57 +231,106 @@
         },
         {
             "question_number": "B-4",
-            "question_text": "Afferent pathway is (a) brain to motor neurons (b) heart to brain (c)sensory neuron to brain(d) lungs to brain",
+            "question_text": "Afferent pathway is",
+            "options": [
+                "brain to motor neurons",
+                "heart to brain",
+                "sensory neuron to brain",
+                "lungs to brain"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "An afferent pathway is (c) sensory neuron to brain. Afferent neurons carry sensory information from the peripheral nervous system towards the central nervous system (brain and spinal cord).",
+            "answer": "An afferent pathway is sensory neuron to brain. Afferent neurons carry sensory information from the peripheral nervous system towards the central nervous system (brain and spinal cord).",
             "answer_source": "generated",
             "chapter": "Unit 4: Neurobiology"
         },
         {
             "question_number": "B-5",
-            "question_text": "Sister chromatids are joined by (a) centromere (b) centrosome (c)centriole (d)telomere",
+            "question_text": "Sister chromatids are joined by",
+            "options": [
+                "centromere",
+                "centrosome",
+                "centriole",
+                "telomere"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "Sister chromatids are joined by (a) centromere. The centromere is the constricted region of a chromosome where sister chromatids are attached to each other and where spindle fibers attach during cell division.",
+            "answer": "Sister chromatids are joined by centromere. The centromere is the constricted region of a chromosome where sister chromatids are attached to each other and where spindle fibers attach during cell division.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
         {
             "question_number": "B-6",
-            "question_text": "Cholesterol is a (a) steroid (b)hormone (c) enzyme (d)synthetic compound",
+            "question_text": "Cholesterol is a",
+            "options": [
+                "steroid",
+                "hormone",
+                "enzyme",
+                "synthetic compound"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "Cholesterol is a (a) steroid. It is a type of lipid and a crucial component of animal cell membranes, also serving as a precursor for steroid hormones.",
+            "answer": "Cholesterol is a steroid. It is a type of lipid and a crucial component of animal cell membranes, also serving as a precursor for steroid hormones.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
         {
             "question_number": "B-7",
-            "question_text": "What is the bond between carbohydrates (a)alkyl (b)glycosidic (c)peptide (d)phosphate",
+            "question_text": "What is the bond between carbohydrates",
+            "options": [
+                "alkyl",
+                "glycosidic",
+                "peptide",
+                "phosphate"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "The bond between carbohydrates is (b) glycosidic. A glycosidic bond links monosaccharide units together to form disaccharides and polysaccharides.",
+            "answer": "The bond between carbohydrates is glycosidic. A glycosidic bond links monosaccharide units together to form disaccharides and polysaccharides.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
         {
             "question_number": "B-8",
-            "question_text": "The mechanism of delivering aminoacids for translation is done by (a) tRNA(b) gRNA (c)mRNA (d) rDNA",
+            "question_text": "The mechanism of delivering aminoacids for translation is done by",
+            "options": [
+                "tRNA",
+                "gRNA",
+                "mRNA",
+                "rDNA"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "The mechanism of delivering amino acids for translation is done by (a) tRNA (transfer RNA). tRNA molecules carry specific amino acids to the ribosome, where they are matched to mRNA codons during protein synthesis.",
+            "answer": "The mechanism of delivering amino acids for translation is done by tRNA (transfer RNA). tRNA molecules carry specific amino acids to the ribosome, where they are matched to mRNA codons during protein synthesis.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
         {
             "question_number": "B-9",
-            "question_text": "DNA is different from RNA because of the base (a) cytosine (b) guanine (c)uracil (d) adenine",
+            "question_text": "DNA is different from RNA because of the base",
+            "options": [
+                "cytosine",
+                "guanine",
+                "uracil",
+                "adenine"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "DNA is different from RNA because of the base (c) uracil. RNA contains uracil (U) in place of thymine (T), which is found in DNA. Both contain adenine, guanine, and cytosine.",
+            "answer": "DNA is different from RNA because of the base uracil. RNA contains uracil (U) in place of thymine (T), which is found in DNA. Both contain adenine, guanine, and cytosine.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
         {
             "question_number": "B-10",
-            "question_text": "The algorithm compares a protein query sequence against a nucleotide sequence database dynamically translated in all reading frames. (a) BLASTn (b) BLASTP (c) tBLASTn (d) BLASTX",
+            "question_text": "The algorithm compares a protein query sequence against a nucleotide sequence database dynamically translated in all reading frames.",
+            "options": [
+                "BLASTn",
+                "BLASTP",
+                "tBLASTn",
+                "BLASTX"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "The algorithm that compares a protein query sequence against a nucleotide sequence database dynamically translated in all reading frames is (c) tBLASTn. This tool is useful for finding distant relationships between proteins and nucleotide sequences.",
+            "answer": "The algorithm that compares a protein query sequence against a nucleotide sequence database dynamically translated in all reading frames is tBLASTn. This tool is useful for finding distant relationships between proteins and nucleotide sequences.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
@@ -260,17 +384,31 @@
         },
         {
             "question_number": "C-1",
-            "question_text": "Meiosis produces (a) Haploid (b) Diploid (c) multiploidy (d) uniploid cells",
+            "question_text": "Meiosis produces",
+            "options": [
+                "Haploid",
+                "Diploid",
+                "multiploidy",
+                "uniploid cells"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "Meiosis produces (a) Haploid cells. It is a reductional division that halves the chromosome number, producing gametes with a single set of chromosomes.",
+            "answer": "Meiosis produces Haploid cells. It is a reductional division that halves the chromosome number, producing gametes with a single set of chromosomes.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
         {
             "question_number": "C-2",
-            "question_text": "The genetic algorithm is inspired by (a) nature (b) nervous system (c) evolution (d) immunsystem",
+            "question_text": "The genetic algorithm is inspired by",
+            "options": [
+                "nature",
+                "nervous system",
+                "evolution",
+                "immunsystem"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "The genetic algorithm is inspired by (c) evolution, specifically the principles of natural selection and genetics.",
+            "answer": "The genetic algorithm is inspired by evolution, specifically the principles of natural selection and genetics.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
@@ -284,57 +422,106 @@
         },
         {
             "question_number": "C-4",
-            "question_text": "Efferent pathway is (a) brain to motor neurons (b) heart to brain (c)sensory neuron to brain(d) lungs to brain",
+            "question_text": "Efferent pathway is",
+            "options": [
+                "brain to motor neurons",
+                "heart to brain",
+                "sensory neuron to brain",
+                "lungs to brain"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "An efferent pathway is (a) brain to motor neurons. Efferent neurons carry signals from the central nervous system (brain and spinal cord) to muscles and glands, initiating a response.",
+            "answer": "An efferent pathway is brain to motor neurons. Efferent neurons carry signals from the central nervous system (brain and spinal cord) to muscles and glands, initiating a response.",
             "answer_source": "generated",
             "chapter": "Unit 4: Neurobiology"
         },
         {
             "question_number": "C-5",
-            "question_text": "Sister chromatids are separated in mitosis at (a) prophase (b) anaphase (c)metaphase (d)interphase",
+            "question_text": "Sister chromatids are separated in mitosis at",
+            "options": [
+                "prophase",
+                "anaphase",
+                "metaphase",
+                "interphase"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "Sister chromatids are separated in mitosis at (b) anaphase. During anaphase, the cohesin proteins holding sister chromatids together are cleaved, allowing them to move to opposite poles.",
+            "answer": "Sister chromatids are separated in mitosis at anaphase. During anaphase, the cohesin proteins holding sister chromatids together are cleaved, allowing them to move to opposite poles.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
         {
             "question_number": "C-6",
-            "question_text": "Starch is a (a) polysaccharide (b)monosaccharide (c) lipid (d)wax",
+            "question_text": "Starch is a",
+            "options": [
+                "polysaccharide",
+                "monosaccharide",
+                "lipid",
+                "wax"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "Starch is a (a) polysaccharide. It is a complex carbohydrate made up of many glucose units, serving as the primary energy storage in plants.",
+            "answer": "Starch is a polysaccharide. It is a complex carbohydrate made up of many glucose units, serving as the primary energy storage in plants.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
         {
             "question_number": "C-7",
-            "question_text": "What is the bond between nucleotides (a)alkyl (b)glycosidic (c)peptide (d)phosphodiester",
+            "question_text": "What is the bond between nucleotides",
+            "options": [
+                "alkyl",
+                "glycosidic",
+                "peptide",
+                "phosphodiester"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "The bond between nucleotides is (d) phosphodiester. Phosphodiester bonds form the sugar-phosphate backbone of DNA and RNA by linking the 5' phosphate of one nucleotide to the 3' hydroxyl of the next.",
+            "answer": "The bond between nucleotides is phosphodiester. Phosphodiester bonds form the sugar-phosphate backbone of DNA and RNA by linking the 5' phosphate of one nucleotide to the 3' hydroxyl of the next.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
         {
             "question_number": "C-8",
-            "question_text": "The RNA attached to ribosomes are (a) tRNA(b) gRNA (c)mRNA (d) rRNA",
+            "question_text": "The RNA attached to ribosomes are",
+            "options": [
+                "tRNA",
+                "gRNA",
+                "mRNA",
+                "rRNA"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "The RNA attached to ribosomes are (d) rRNA (ribosomal RNA). rRNA is a structural and catalytic component of ribosomes, which are the cellular machinery for protein synthesis.",
+            "answer": "The RNA attached to ribosomes are rRNA (ribosomal RNA). rRNA is a structural and catalytic component of ribosomes, which are the cellular machinery for protein synthesis.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
         {
             "question_number": "C-9",
-            "question_text": "\"DNA is different from RNA because of\" -Find the odd one(a) single stranded (b)5' oxygen (c)uracil (d) more stable",
+            "question_text": "\"DNA is different from RNA because of\" -Find the odd one",
+            "options": [
+                "single stranded",
+                "5' oxygen",
+                "uracil",
+                "more stable"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "The odd one out is (b) 5' oxygen. Both DNA and RNA contain a 5' oxygen as part of their sugar-phosphate backbone. DNA is typically double-stranded (not single-stranded like RNA), RNA contains uracil (not thymine), and DNA is generally more stable than RNA.",
+            "answer": "RNA is typically single-stranded, contains uracil in place of thymine and is less stable than DNA, so these are genuine differences. Both DNA and RNA have a 5' phosphate/oxygen linkage in the backbone (the real sugar difference is at the 2' position), so \"5' oxygen\" is the odd one out.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
         {
             "question_number": "C-10",
-            "question_text": "compares a protein query sequence against a protein sequence database dynamically translated in all reading frames. (a)BLASTn (b) BLASTp (c) tBLASTn (d) BLASTX",
+            "question_text": "Which algorithm compares a protein query sequence against a nucleotide sequence database dynamically translated in all reading frames?",
+            "options": [
+                "BLASTn",
+                "BLASTp",
+                "tBLASTn",
+                "BLASTX"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "The algorithm that compares a protein query sequence against a nucleotide sequence database dynamically translated in all reading frames is (c) tBLASTn. (Note: The question text has a slight ambiguity: 'protein sequence database dynamically translated'. Assuming it meant a *nucleotide* database dynamically translated, tBLASTn is the correct choice).",
+            "answer": "The algorithm that compares a protein query sequence against a nucleotide sequence database dynamically translated in all reading frames is tBLASTn. (Note: The question text has a slight ambiguity: 'protein sequence database dynamically translated'. Assuming it meant a *nucleotide* database dynamically translated, tBLASTn is the correct choice).",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
@@ -342,7 +529,7 @@
             "question_number": "C-11",
             "question_text": "Illustrate and explain homeostasis (unit 1- 33-37)",
             "marks": 10,
-            "answer": "Homeostasis is the biological process by which organisms maintain a stable internal environment (e.g., temperature, pH, fluid balance) despite changes in external conditions. It is a dynamic state of equilibrium crucial for optimal cell and organ function. Most homeostatic mechanisms involve negative feedback loops.\n\n**Components of a Homeostatic Control System:**\n1.  **Stimulus**: A change in the internal or external environment that deviates from the normal set point (e.g., rise in body temperature).\n2.  **Receptor/Sensor**: Detects the change and sends signals to the control center (e.g., thermoreceptors in the skin and hypothalamus).\n3.  **Control Center**: Receives and processes information from the receptor, then sends commands to the effector (e.g., the hypothalamus in temperature regulation).\n4.  **Effector**: Carries out the response to restore homeostasis (e.g., sweat glands, blood vessels).\n5.  **Response**: The action that counteracts the initial stimulus, bringing the system back to its set point (e.g., sweating and vasodilation to lower body temperature).\n\n**Illustration (Temperature Regulation Example):**\n*   **Stimulus**: Body temperature rises above 37\u00b0C.\n*   **Receptors**: Thermoreceptors in skin and hypothalamus detect the rise.\n*   **Control Center**: Hypothalamus processes information.\n*   **Effectors**: \n    *   Blood vessels in the skin dilate, increasing blood flow to the surface to release heat.\n    *   Sweat glands increase sweat production, which cools the body as it evaporates.\n*   **Response**: Body temperature decreases, returning to the set point. \n\nConversely, if body temperature drops, shivering and vasoconstriction occur to generate and conserve heat. This continuous feedback ensures the body's internal conditions remain within a narrow, life-sustaining range.",
+            "answer": "Homeostasis is the biological process by which organisms maintain a stable internal environment (e.g., temperature, pH, fluid balance) despite changes in external conditions. It is a dynamic state of equilibrium crucial for optimal cell and organ function. Most homeostatic mechanisms involve negative feedback loops.\n\n**Components of a Homeostatic Control System:**\n1.  **Stimulus**: A change in the internal or external environment that deviates from the normal set point (e.g., rise in body temperature).\n2.  **Receptor/Sensor**: Detects the change and sends signals to the control center (e.g., thermoreceptors in the skin and hypothalamus).\n3.  **Control Center**: Receives and processes information from the receptor, then sends commands to the effector (e.g., the hypothalamus in temperature regulation).\n4.  **Effector**: Carries out the response to restore homeostasis (e.g., sweat glands, blood vessels).\n5.  **Response**: The action that counteracts the initial stimulus, bringing the system back to its set point (e.g., sweating and vasodilation to lower body temperature).\n\n**Illustration (Temperature Regulation Example):**\n*   **Stimulus**: Body temperature rises above 37°C.\n*   **Receptors**: Thermoreceptors in skin and hypothalamus detect the rise.\n*   **Control Center**: Hypothalamus processes information.\n*   **Effectors**: \n    *   Blood vessels in the skin dilate, increasing blood flow to the surface to release heat.\n    *   Sweat glands increase sweat production, which cools the body as it evaporates.\n*   **Response**: Body temperature decreases, returning to the set point. \n\nConversely, if body temperature drops, shivering and vasoconstriction occur to generate and conserve heat. This continuous feedback ensures the body's internal conditions remain within a narrow, life-sustaining range.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
@@ -388,17 +575,29 @@
         },
         {
             "question_number": "D-1",
-            "question_text": "Mitosis produces gametes (a) True (b) False",
+            "question_text": "Mitosis produces gametes",
+            "options": [
+                "True",
+                "False"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(b) False. Mitosis produces two genetically identical diploid somatic cells. Gametes (sex cells) are produced by meiosis, which results in haploid cells.",
+            "answer": "Mitosis produces two genetically identical diploid somatic cells. Gametes (sex cells) are produced by meiosis, which results in haploid cells.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
         {
             "question_number": "D-2",
-            "question_text": "The organism that is unicellular but eukaryotic is (a) plant (b) animalia (c)protist (d) Monera",
+            "question_text": "The organism that is unicellular but eukaryotic is",
+            "options": [
+                "plant",
+                "animalia",
+                "protist",
+                "Monera"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "The organism that is unicellular but eukaryotic is (c) protist. Protists are a diverse kingdom of largely unicellular eukaryotic organisms (e.g., amoebas, paramecia). Monera refers to prokaryotes (bacteria and archaea), which are unicellular but not eukaryotic.",
+            "answer": "The organism that is unicellular but eukaryotic is protist. Protists are a diverse kingdom of largely unicellular eukaryotic organisms (e.g., amoebas, paramecia). Monera refers to prokaryotes (bacteria and archaea), which are unicellular but not eukaryotic.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
@@ -412,57 +611,106 @@
         },
         {
             "question_number": "D-4",
-            "question_text": "Which is the control system involved in homeostasis (a) CNS (b) kidney (c)heart (d)stomach",
+            "question_text": "Which is the control system involved in homeostasis",
+            "options": [
+                "CNS",
+                "kidney",
+                "heart",
+                "stomach"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "The control system primarily involved in coordinating overall homeostasis is the (a) CNS (Central Nervous System), especially the hypothalamus. While kidneys, heart, and stomach play roles in specific homeostatic processes, the CNS acts as the central regulatory hub.",
+            "answer": "The control system primarily involved in coordinating overall homeostasis is the CNS (Central Nervous System), especially the hypothalamus. While kidneys, heart, and stomach play roles in specific homeostatic processes, the CNS acts as the central regulatory hub.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
         {
             "question_number": "D-5",
-            "question_text": "Meiosis I leads to separation of (a) two nucleus (b) sister chromatids (c)two cells (d) homologous chromosomes",
+            "question_text": "Meiosis I leads to separation of",
+            "options": [
+                "two nucleus",
+                "sister chromatids",
+                "two cells",
+                "homologous chromosomes"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "Meiosis I leads to the separation of (d) homologous chromosomes. This is the reductional division where homologous pairs move to opposite poles, reducing the chromosome number by half.",
+            "answer": "Meiosis I leads to the separation of homologous chromosomes. This is the reductional division where homologous pairs move to opposite poles, reducing the chromosome number by half.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
         {
             "question_number": "D-6",
-            "question_text": "Estrogen is a (a) steroid (b) biomolecule (c) enzyme (d) protein",
+            "question_text": "Estrogen is a",
+            "options": [
+                "steroid",
+                "biomolecule",
+                "enzyme",
+                "protein"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "Estrogen is a (a) steroid. It is a type of lipid-based hormone characterized by a four-ring carbon structure.",
+            "answer": "Estrogen is a steroid. It is a type of lipid-based hormone characterized by a four-ring carbon structure.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
         {
             "question_number": "D-7",
-            "question_text": "Choose the disaccharide (a) Sucrose (b)ribose(c)fructose (d)glucose",
+            "question_text": "Choose the disaccharide",
+            "options": [
+                "Sucrose",
+                "ribose",
+                "fructose",
+                "glucose"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(a) Sucrose is the disaccharide. Ribose, fructose, and glucose are monosaccharides. Sucrose is formed from glucose and fructose.",
+            "answer": "Ribose, fructose and glucose are monosaccharides. Sucrose, formed from glucose and fructose, is the disaccharide.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
         {
             "question_number": "D-8",
-            "question_text": "Choose the odd one out (a) tRNA(b) gRNA (c)mRNA (d) rRNA",
+            "question_text": "Choose the odd one out",
+            "options": [
+                "tRNA",
+                "gRNA",
+                "mRNA",
+                "rRNA"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(b) gRNA (guide RNA) is the odd one out. tRNA, mRNA, and rRNA are the three main types of RNA directly involved in protein synthesis. gRNA has a role in RNA editing or gene editing (e.g., CRISPR-Cas9), which is distinct from the primary roles of the other three.",
+            "answer": "gRNA (guide RNA) is the odd one out. tRNA, mRNA, and rRNA are the three main types of RNA directly involved in protein synthesis. gRNA has a role in RNA editing or gene editing (e.g., CRISPR-Cas9), which is distinct from the primary roles of the other three.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
         {
             "question_number": "D-9",
-            "question_text": "UNIPROTKB is a Sequence database for (a) nucleic acids (b) proteins (c) DNA (d) lipids",
+            "question_text": "UNIPROTKB is a Sequence database for",
+            "options": [
+                "nucleic acids",
+                "proteins",
+                "DNA",
+                "lipids"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "UniProtKB (Universal Protein Resource Knowledgebase) is a sequence database for (b) proteins. It provides comprehensive, high-quality, and freely accessible protein sequence and functional information.",
+            "answer": "UniProtKB (Universal Protein Resource Knowledgebase) is a sequence database for proteins. It provides comprehensive, high-quality, and freely accessible protein sequence and functional information.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
         {
             "question_number": "D-10",
-            "question_text": "Two similar protein sequences indicate (a) Similar function (b) Different function (c) both (d) no meaning",
+            "question_text": "Two similar protein sequences indicate",
+            "options": [
+                "Similar function",
+                "Different function",
+                "both",
+                "no meaning"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "Two similar protein sequences generally indicate (a) Similar function. High sequence similarity often implies conserved structure and, consequently, conserved function due to evolutionary pressure.",
+            "answer": "Two similar protein sequences generally indicate Similar function. High sequence similarity often implies conserved structure and, consequently, conserved function due to evolutionary pressure.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },

@@ -4,161 +4,301 @@
     "questions": [
         {
             "question_number": "U1Q30",
-            "question_text": "Evaluation of $\\int_0^\\pi \\int_0^\\pi d\\theta d\\phi$ is\n(A) 1\n(B) 0\n(C) $\\pi/2$\n(D) $\\pi^2$",
+            "question_text": "Evaluation of $\\int_0^\\pi \\int_0^\\pi d\\theta d\\phi$ is",
+            "options": [
+                "1",
+                "0",
+                "$\\pi/2$",
+                "$\\pi^2$"
+            ],
+            "correct_option": "D",
             "marks": 2,
-            "answer": "(D)\nExplanation: The variables separate: $(\\int_0^\\pi d\\theta) \\cdot (\\int_0^\\pi d\\phi) = [\\theta]_0^\\pi \\cdot [\\phi]_0^\\pi = \\pi \\times \\pi = \\pi^2$.",
+            "answer": "The variables separate: $(\\int_0^\\pi d\\theta) \\cdot (\\int_0^\\pi d\\phi) = [\\theta]_0^\\pi \\cdot [\\phi]_0^\\pi = \\pi \\times \\pi = \\pi^2$.",
             "answer_source": "generated",
             "chapter": "Unit 1: Integral Calculus"
         },
         {
             "question_number": "U1Q31",
-            "question_text": "The area of an ellipse is\n(A) $\\pi r^2$\n(B) $\\pi a^2 b$\n(C) $\\pi ab$\n(D) $\\pi a b^2$",
+            "question_text": "The area of an ellipse is",
+            "options": [
+                "$\\pi r^2$",
+                "$\\pi a^2 b$",
+                "$\\pi ab$",
+                "$\\pi a b^2$"
+            ],
+            "correct_option": "C",
             "marks": 2,
-            "answer": "(C)\nExplanation: Using double integration, the area of an ellipse $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1$ evaluates to $\\pi a b$.",
+            "answer": "Using double integration, the area of an ellipse $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1$ evaluates to $\\pi a b$.",
             "answer_source": "generated",
             "chapter": "Unit 1: Integral Calculus"
         },
         {
             "question_number": "U1Q32",
-            "question_text": "If $R$ is the region bounded by $x=0, y=0, x+y=1$ then $\\iint_R dx dy$ is equal to\n(A) 1\n(B) $1/2$\n(C) $1/3$\n(D) $2/3$",
+            "question_text": "If $R$ is the region bounded by $x=0, y=0, x+y=1$ then $\\iint_R dx dy$ is equal to",
+            "options": [
+                "1",
+                "$1/2$",
+                "$1/3$",
+                "$2/3$"
+            ],
+            "correct_option": "B",
             "marks": 2,
-            "answer": "(B)\nExplanation: The integral $\\iint_R dx dy$ represents the area of the region. The region is a right triangle with base length 1 and height 1. Area = $\\frac{1}{2} \\times 1 \\times 1 = \\frac{1}{2}$.",
+            "answer": "The integral $\\iint_R dx dy$ represents the area of the region. The region is a right triangle with base length 1 and height 1. Area = $\\frac{1}{2} \\times 1 \\times 1 = \\frac{1}{2}$.",
             "answer_source": "generated",
             "chapter": "Unit 1: Integral Calculus"
         },
         {
             "question_number": "U1Q33",
-            "question_text": "Area of the double integral in polar coordinates is equal to\n(A) $\\iint_R dr d\\theta$\n(B) $\\iint_R r^2 dr d\\theta$\n(C) $\\iint_R (r+1) dr d\\theta$\n(D) $\\iint_R r dr d\\theta$",
+            "question_text": "Area of the double integral in polar coordinates is equal to",
+            "options": [
+                "$\\iint_R dr d\\theta$",
+                "$\\iint_R r^2 dr d\\theta$",
+                "$\\iint_R (r+1) dr d\\theta$",
+                "$\\iint_R r dr d\\theta$"
+            ],
+            "correct_option": "D",
             "marks": 2,
-            "answer": "(D)\nExplanation: The infinitesimal area element $dA$ in polar coordinates maps from $dx dy$ as $r dr d\\theta$.",
+            "answer": "The infinitesimal area element $dA$ in polar coordinates maps from $dx dy$ as $r dr d\\theta$.",
             "answer_source": "generated",
             "chapter": "Unit 1: Integral Calculus"
         },
         {
             "question_number": "U2Q30",
-            "question_text": "If $r$ is the position vector of the point $(x,y,z)$ with respect to the origin then $\\nabla \\cdot \\vec{r}$\n(A) 2\n(B) 3\n(C) 0\n(D) 1",
+            "question_text": "If $r$ is the position vector of the point $(x,y,z)$ with respect to the origin then $\\nabla \\cdot \\vec{r}$",
+            "options": [
+                "2",
+                "3",
+                "0",
+                "1"
+            ],
+            "correct_option": "B",
             "marks": 2,
-            "answer": "(B)\nExplanation: The divergence of the position vector $\\vec{r} = x\\mathbf{i} + y\\mathbf{j} + z\\mathbf{k}$ is $\\frac{\\partial x}{\\partial x} + \\frac{\\partial y}{\\partial y} + \\frac{\\partial z}{\\partial z} = 3$.",
+            "answer": "The divergence of the position vector $\\vec{r} = x\\mathbf{i} + y\\mathbf{j} + z\\mathbf{k}$ is $\\frac{\\partial x}{\\partial x} + \\frac{\\partial y}{\\partial y} + \\frac{\\partial z}{\\partial z} = 3$.",
             "answer_source": "generated",
             "chapter": "Unit 2: Vector Calculus"
         },
         {
             "question_number": "U2Q31",
-            "question_text": "The unit vector normal to the surface $x^2+y^2-z^2=1$ at $(1,1,1)$ is\n(A) $\\frac{\\mathbf{i}+\\mathbf{j}-\\mathbf{k}}{\\sqrt{3}}$\n(B) $\\frac{2\\mathbf{i}+2\\mathbf{j}-2\\mathbf{k}}{\\sqrt{2}}$\n(C) $\\frac{3\\mathbf{i}+3\\mathbf{j}-3\\mathbf{k}}{2\\sqrt{3}}$\n(D) $\\frac{\\mathbf{i}+\\mathbf{j}-\\mathbf{k}}{3\\sqrt{2}}$",
+            "question_text": "The unit vector normal to the surface $x^2+y^2-z^2=1$ at $(1,1,1)$ is",
+            "options": [
+                "$\\frac{\\mathbf{i}+\\mathbf{j}-\\mathbf{k}}{\\sqrt{3}}$",
+                "$\\frac{2\\mathbf{i}+2\\mathbf{j}-2\\mathbf{k}}{\\sqrt{2}}$",
+                "$\\frac{3\\mathbf{i}+3\\mathbf{j}-3\\mathbf{k}}{2\\sqrt{3}}$",
+                "$\\frac{\\mathbf{i}+\\mathbf{j}-\\mathbf{k}}{3\\sqrt{2}}$"
+            ],
+            "correct_option": "A",
             "marks": 2,
-            "answer": "(A)\nExplanation: Let $\\phi = x^2+y^2-z^2$. $\\nabla \\phi = 2x\\mathbf{i} + 2y\\mathbf{j} - 2z\\mathbf{k}$.\nAt $(1,1,1)$, $\\nabla \\phi = 2\\mathbf{i} + 2\\mathbf{j} - 2\\mathbf{k}$.\nMagnitude $= \\sqrt{2^2 + 2^2 + (-2)^2} = \\sqrt{12} = 2\\sqrt{3}$.\nUnit vector $= \\frac{2\\mathbf{i} + 2\\mathbf{j} - 2\\mathbf{k}}{2\\sqrt{3}} = \\frac{\\mathbf{i}+\\mathbf{j}-\\mathbf{k}}{\\sqrt{3}}$.",
+            "answer": "Let $\\phi = x^2+y^2-z^2$. $\\nabla \\phi = 2x\\mathbf{i} + 2y\\mathbf{j} - 2z\\mathbf{k}$.\nAt $(1,1,1)$, $\\nabla \\phi = 2\\mathbf{i} + 2\\mathbf{j} - 2\\mathbf{k}$.\nMagnitude $= \\sqrt{2^2 + 2^2 + (-2)^2} = \\sqrt{12} = 2\\sqrt{3}$.\nUnit vector $= \\frac{2\\mathbf{i} + 2\\mathbf{j} - 2\\mathbf{k}}{2\\sqrt{3}} = \\frac{\\mathbf{i}+\\mathbf{j}-\\mathbf{k}}{\\sqrt{3}}$.",
             "answer_source": "generated",
             "chapter": "Unit 2: Vector Calculus"
         },
         {
             "question_number": "U2Q32",
-            "question_text": "If $\\phi$ is a scalar point function then $\\text{curl}(\\text{grad } \\phi)$ is\n(A) Solenoidal\n(B) Irrotational\n(C) Constant\n(D) 0",
+            "question_text": "If $\\phi$ is a scalar point function then $\\text{curl}(\\text{grad } \\phi)$ is",
+            "options": [
+                "Solenoidal",
+                "Irrotational",
+                "Constant",
+                "0"
+            ],
+            "correct_option": "D",
             "marks": 2,
-            "answer": "(D)\nExplanation: The curl of the gradient of any scalar field is the zero vector ($\\nabla \\times \\nabla \\phi = \\vec{0}$).",
+            "answer": "The curl of the gradient of any scalar field is the zero vector ($\\nabla \\times \\nabla \\phi = \\vec{0}$).",
             "answer_source": "generated",
             "chapter": "Unit 2: Vector Calculus"
         },
         {
             "question_number": "U2Q33",
-            "question_text": "If the value of $\\int_A^B \\vec{F} \\cdot d\\vec{r}$ does not depend on the curve $C$ but only on terminal points $A$ and $B$ then $\\vec{F}$ is called\n(A) Solenoidal vector\n(B) Irrotational vector\n(C) Conservative vector\n(D) Neither conservative nor irrotational",
+            "question_text": "If the value of $\\int_A^B \\vec{F} \\cdot d\\vec{r}$ does not depend on the curve $C$ but only on terminal points $A$ and $B$ then $\\vec{F}$ is called",
+            "options": [
+                "Solenoidal vector",
+                "Irrotational vector",
+                "Conservative vector",
+                "Neither conservative nor irrotational"
+            ],
+            "correct_option": "C",
             "marks": 2,
-            "answer": "(C)\nExplanation: Path independence of the line integral is the defining property of a conservative vector field.",
+            "answer": "Path independence of the line integral is the defining property of a conservative vector field.",
             "answer_source": "generated",
             "chapter": "Unit 2: Vector Calculus"
         },
         {
             "question_number": "U3Q30",
-            "question_text": "$L[e^{3t}] =$\n(A) $\\frac{1}{s+3}$\n(B) $\\frac{1}{s-3}$\n(C) $\\frac{3}{s+3}$\n(D) $\\frac{s}{s-3}$",
+            "question_text": "$L[e^{3t}] =$",
+            "options": [
+                "$\\frac{1}{s+3}$",
+                "$\\frac{1}{s-3}$",
+                "$\\frac{3}{s+3}$",
+                "$\\frac{s}{s-3}$"
+            ],
+            "correct_option": "B",
             "marks": 2,
-            "answer": "(B)\nExplanation: The formula for the Laplace transform of an exponential function $e^{at}$ is $\\frac{1}{s-a}$. Substituting $a=3$ gives $\\frac{1}{s-3}$.",
+            "answer": "The formula for the Laplace transform of an exponential function $e^{at}$ is $\\frac{1}{s-a}$. Substituting $a=3$ gives $\\frac{1}{s-3}$.",
             "answer_source": "generated",
             "chapter": "Unit 3: Laplace Transform"
         },
         {
             "question_number": "U3Q31",
-            "question_text": "An example of a function for which the laplace transforms does not exits is\n(A) $f(t)=t^2$\n(B) $f(t)=\\tan t$\n(C) $f(t)=\\sin t$\n(D) $f(t)=e^{-at}$",
+            "question_text": "An example of a function for which the laplace transforms does not exits is",
+            "options": [
+                "$f(t)=t^2$",
+                "$f(t)=\\tan t$",
+                "$f(t)=\\sin t$",
+                "$f(t)=e^{-at}$"
+            ],
+            "correct_option": "B",
             "marks": 2,
-            "answer": "(B)\nExplanation: $\\tan t$ fails the piecewise continuity condition required for the existence of a Laplace transform due to its infinite discontinuities.",
+            "answer": "$\\tan t$ fails the piecewise continuity condition required for the existence of a Laplace transform due to its infinite discontinuities.",
             "answer_source": "generated",
             "chapter": "Unit 3: Laplace Transform"
         },
         {
             "question_number": "U3Q32",
-            "question_text": "Inverse laplace transform of $\\frac{1}{s^2-a^2}$ is\n(A) $\\frac{\\sin at}{a}$\n(B) $\\frac{\\sinh at}{a}$\n(C) $\\sin at$\n(D) $\\sinh at$",
+            "question_text": "Inverse laplace transform of $\\frac{1}{s^2-a^2}$ is",
+            "options": [
+                "$\\frac{\\sin at}{a}$",
+                "$\\frac{\\sinh at}{a}$",
+                "$\\sin at$",
+                "$\\sinh at$"
+            ],
+            "correct_option": "B",
             "marks": 2,
-            "answer": "(B)\nExplanation: We know $L(\\sinh at) = \\frac{a}{s^2-a^2}$. Dividing both sides by $a$, we get $L(\\frac{\\sinh at}{a}) = \\frac{1}{s^2-a^2}$. Thus, the inverse transform is $\\frac{\\sinh at}{a}$.",
+            "answer": "We know $L(\\sinh at) = \\frac{a}{s^2-a^2}$. Dividing both sides by $a$, we get $L(\\frac{\\sinh at}{a}) = \\frac{1}{s^2-a^2}$. Thus, the inverse transform is $\\frac{\\sinh at}{a}$.",
             "answer_source": "generated",
             "chapter": "Unit 3: Laplace Transform"
         },
         {
             "question_number": "U3Q33",
-            "question_text": "Inverse laplace transform of $\\frac{1}{s^2}$ is\n(A) $t/2$\n(B) $t^2/2$\n(C) $t$\n(D) $t^2$",
+            "question_text": "Inverse laplace transform of $\\frac{1}{s^2}$ is",
+            "options": [
+                "$t/2$",
+                "$t^2/2$",
+                "$t$",
+                "$t^2$"
+            ],
+            "correct_option": "C",
             "marks": 2,
-            "answer": "(C)\nExplanation: The inverse Laplace formula is $L^{-1}(\\frac{n!}{s^{n+1}}) = t^n$. For the denominator $s^2$, $n=1$. Since $1! = 1$, $L^{-1}(\\frac{1}{s^2}) = t^1 = t$.",
+            "answer": "The inverse Laplace formula is $L^{-1}(\\frac{n!}{s^{n+1}}) = t^n$. For the denominator $s^2$, $n=1$. Since $1! = 1$, $L^{-1}(\\frac{1}{s^2}) = t^1 = t$.",
             "answer_source": "generated",
             "chapter": "Unit 3: Laplace Transform"
         },
         {
             "question_number": "U4Q30",
-            "question_text": "The function $f(z) = u+iv$ is analytic if\n(A) $u_x = v_y; u_y = -v_x$\n(B) $u_x = -v_y; u_y = v_x$\n(C) $u_x + v_y = 0; u_y - v_x = 0$\n(D) $u_x = v_y; u_y = v_x$",
+            "question_text": "The function $f(z) = u+iv$ is analytic if",
+            "options": [
+                "$u_x = v_y; u_y = -v_x$",
+                "$u_x = -v_y; u_y = v_x$",
+                "$u_x + v_y = 0; u_y - v_x = 0$",
+                "$u_x = v_y; u_y = v_x$"
+            ],
+            "correct_option": "A",
             "marks": 2,
-            "answer": "(A)\nExplanation: The necessary Cauchy-Riemann conditions for an analytic function are $u_x = v_y$ and $u_y = -v_x$.",
+            "answer": "The necessary Cauchy-Riemann conditions for an analytic function are $u_x = v_y$ and $u_y = -v_x$.",
             "answer_source": "generated",
             "chapter": "Unit 4: Analytic Functions"
         },
         {
             "question_number": "U4Q31",
-            "question_text": "If $u+iv$ is analytic, then the curves $u=c_1$ and $v=c_2$\n(A) Are parallel\n(B) Coincides\n(C) Intersect each other\n(D) Cut orthogonally",
+            "question_text": "If $u+iv$ is analytic, then the curves $u=c_1$ and $v=c_2$",
+            "options": [
+                "Are parallel",
+                "Coincides",
+                "Intersect each other",
+                "Cut orthogonally"
+            ],
+            "correct_option": "D",
             "marks": 2,
-            "answer": "(D)\nExplanation: The families of curves $u(x,y) = c_1$ and $v(x,y) = c_2$ form orthogonal trajectories as a direct consequence of the C-R equations.",
+            "answer": "The families of curves $u(x,y) = c_1$ and $v(x,y) = c_2$ form orthogonal trajectories as a direct consequence of the C-R equations.",
             "answer_source": "generated",
             "chapter": "Unit 4: Analytic Functions"
         },
         {
             "question_number": "U4Q32",
-            "question_text": "The transformation $W=CZ$ where $C$ is a real constant is known as\n(A) Rotation\n(B) Reflection\n(C) Magnification\n(D) Magnification and rotation",
+            "question_text": "The transformation $W=CZ$ where $C$ is a real constant is known as",
+            "options": [
+                "Rotation",
+                "Reflection",
+                "Magnification",
+                "Magnification and rotation"
+            ],
+            "correct_option": "C",
             "marks": 2,
-            "answer": "(C)\nExplanation: When $C$ is a purely real constant ($C \\neq 0$), multiplying $z$ by $C$ simply scales the magnitude of $z$ ($|w| = C|z|$) without altering its argument (angle). This transformation is a magnification (or scaling).",
+            "answer": "When $C$ is a purely real constant ($C \\neq 0$), multiplying $z$ by $C$ simply scales the magnitude of $z$ ($|w| = C|z|$) without altering its argument (angle). This transformation is a magnification (or scaling).",
             "answer_source": "generated",
             "chapter": "Unit 4: Analytic Functions"
         },
         {
             "question_number": "U4Q33",
-            "question_text": "An analytic function with constant modulus is\n(A) Zero\n(B) Analytic\n(C) Constant\n(D) Harmonic",
+            "question_text": "An analytic function with constant modulus is",
+            "options": [
+                "Zero",
+                "Analytic",
+                "Constant",
+                "Harmonic"
+            ],
+            "correct_option": "C",
             "marks": 2,
-            "answer": "(C)\nExplanation: If $|f(z)| = c$, evaluating the Cauchy-Riemann equations forces $f'(z) = 0$ everywhere in the domain, making the function a constant.",
+            "answer": "If $|f(z)| = c$, evaluating the Cauchy-Riemann equations forces $f'(z) = 0$ everywhere in the domain, making the function a constant.",
             "answer_source": "generated",
             "chapter": "Unit 4: Analytic Functions"
         },
         {
             "question_number": "U5Q30",
-            "question_text": "If $f(z)$ is analytic inside and on $C$, the value of $\\int_C \\frac{f(z)}{z-a} dz$ where $C$ is the simple closed curve and a is any point within $C$ is\n(A) $f(a)$\n(B) $2\\pi i f(a)$\n(C) $2\\pi i f'(a)$\n(D) 0",
+            "question_text": "If $f(z)$ is analytic inside and on $C$, the value of $\\int_C \\frac{f(z)}{z-a} dz$ where $C$ is the simple closed curve and a is any point within $C$ is",
+            "options": [
+                "$f(a)$",
+                "$2\\pi i f(a)$",
+                "$2\\pi i f'(a)$",
+                "0"
+            ],
+            "correct_option": "B",
             "marks": 2,
-            "answer": "(B)\nExplanation: According to Cauchy's Integral Formula, $f(a) = \\frac{1}{2\\pi i} \\oint_C \\frac{f(z)}{z-a} dz$. Multiplying by $2\\pi i$ gives the value of the integral as $2\\pi i f(a)$.",
+            "answer": "According to Cauchy's Integral Formula, $f(a) = \\frac{1}{2\\pi i} \\oint_C \\frac{f(z)}{z-a} dz$. Multiplying by $2\\pi i$ gives the value of the integral as $2\\pi i f(a)$.",
             "answer_source": "generated",
             "chapter": "Unit 5: Complex Integration"
         },
         {
             "question_number": "U5Q31",
-            "question_text": "If $f(z)$ is not analytic at $z=z_0$ and there exists a neighborhood of $z=z_0$ containing no other singularity, then\n(A) $z=z_0$ is isolated singularity of $f(z)$\n(B) $z=z_0$ is zero of $f(z)$\n(C) $z=z_0$ is non zero of $f(z)$\n(D) $z=z_0$ is non isolated singularity of $f(z)$",
+            "question_text": "If $f(z)$ is not analytic at $z=z_0$ and there exists a neighborhood of $z=z_0$ containing no other singularity, then",
+            "options": [
+                "$z=z_0$ is isolated singularity of $f(z)$",
+                "$z=z_0$ is zero of $f(z)$",
+                "$z=z_0$ is non zero of $f(z)$",
+                "$z=z_0$ is non isolated singularity of $f(z)$"
+            ],
+            "correct_option": "A",
             "marks": 2,
-            "answer": "(A)\nExplanation: By definition, if a singularity $z_0$ has a punctured neighborhood in which $f(z)$ is analytic (meaning there are no other singularities nearby), it is termed an \"isolated singularity\".",
+            "answer": "By definition, if a singularity $z_0$ has a punctured neighborhood in which $f(z)$ is analytic (meaning there are no other singularities nearby), it is termed an \"isolated singularity\".",
             "answer_source": "generated",
             "chapter": "Unit 5: Complex Integration"
         },
         {
             "question_number": "U5Q32",
-            "question_text": "If $f(z) = \\frac{\\sin z}{z}$, then\n(A) $z=0$ is a simple pole\n(B) $z=0$ is a pole of order 2\n(C) $z=0$ is a removable singularity\n(D) $z=0$ is a zero of $f(z)$",
+            "question_text": "If $f(z) = \\frac{\\sin z}{z}$, then",
+            "options": [
+                "$z=0$ is a simple pole",
+                "$z=0$ is a pole of order 2",
+                "$z=0$ is a removable singularity",
+                "$z=0$ is a zero of $f(z)$"
+            ],
+            "correct_option": "C",
             "marks": 2,
-            "answer": "(C)\nExplanation: Since the limit of $\\frac{\\sin z}{z}$ as $z \\to 0$ evaluates to 1 (a non-infinite, non-zero constant), the singularity is removable.",
+            "answer": "Since the limit of $\\frac{\\sin z}{z}$ as $z \\to 0$ evaluates to 1 (a non-infinite, non-zero constant), the singularity is removable.",
             "answer_source": "generated",
             "chapter": "Unit 5: Complex Integration"
         },
         {
             "question_number": "U5Q33",
-            "question_text": "$f(z) = \\frac{z+2}{(z-1)^2(z-2)}$ has\n(A) Only poles\n(B) A simple pole at $z=1/2$\n(C) Essential singularity\n(D) No poles",
+            "question_text": "$f(z) = \\frac{z+2}{(z-1)^2(z-2)}$ has",
+            "options": [
+                "Only poles",
+                "A simple pole at $z=1/2$",
+                "Essential singularity",
+                "No poles"
+            ],
+            "correct_option": "A",
             "marks": 2,
-            "answer": "(A)\nExplanation: The function is a rational function. The roots of its denominator are $z=1$ and $z=2$, neither of which cancel with the numerator. Thus, it has a pole of order 2 at $z=1$ and a simple pole at $z=2$. It has \"only poles\" as its singularities in the finite complex plane.",
+            "answer": "The function is a rational function. The roots of its denominator are $z=1$ and $z=2$, neither of which cancel with the numerator. Thus, it has a pole of order 2 at $z=1$ and a simple pole at $z=2$. It has \"only poles\" as its singularities in the finite complex plane.",
             "answer_source": "generated",
             "chapter": "Unit 5: Complex Integration"
         }

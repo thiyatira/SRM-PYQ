@@ -4,81 +4,151 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Which of the following is not a valid C variable name?\na) int age;\nb) float salary;\nc) char ch;\nd) int $main;",
+            "question_text": "Which of the following is not a valid C variable name?",
+            "options": [
+                "int age;",
+                "float salary;",
+                "char ch;",
+                "int $main;"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "D",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
         {
             "question_number": "2",
-            "question_text": "What is the output of the following code snippet?\n\n```c\n#include <stdio.h>\nint main()\n{\nfloat s; double a; char b;\nprintf(\"%d\", sizeof(s)+sizeof(a)*sizeof(b));\nreturn 0;\n}\n```\n\na) 14\nb) 13\nc) 12\nd) Compilation Error",
+            "question_text": "What is the output of the following code snippet?\n\n```c\n#include <stdio.h>\nint main()\n{\nfloat s; double a; char b;\nprintf(\"%d\", sizeof(s)+sizeof(a)*sizeof(b));\nreturn 0;\n}\n```",
+            "options": [
+                "14",
+                "13",
+                "12",
+                "Compilation Error"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "C",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
         {
             "question_number": "3",
-            "question_text": "Choose the correct answer.\n\n```c\n#include <stdio.h>\nint main()\n{\nint value = 350;\nint value = 892;\nprintf(\"SRMIST!%d\",value);\nreturn 0;\n}\n```\n\na) SRMIST!350\nb) Redefinition of value\nc) SRMIST!892\nd) SRMIST! Followed by a junk value.",
+            "question_text": "Choose the correct answer.\n\n```c\n#include <stdio.h>\nint main()\n{\nint value = 350;\nint value = 892;\nprintf(\"SRMIST!%d\",value);\nreturn 0;\n}\n```",
+            "options": [
+                "SRMIST!350",
+                "Redefinition of value",
+                "SRMIST!892",
+                "SRMIST! Followed by a junk value."
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "B [Since the value is already defined. Redefining it results in an error]",
+            "answer": "Since `value` is already defined in the same scope, declaring it again is a redefinition error.",
             "answer_source": "provided",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
         {
             "question_number": "4",
-            "question_text": "```c\n#include <stdio.h>\nint main()\n{\nint x, y = 5, z = 5;\nx = y == z;\nprintf(\"%d\", x);\ngetchar();\nreturn 0;\n}\n```\n\na) 0\nb) 1\nc) 5\nd) Compile error",
+            "question_text": "```c\n#include <stdio.h>\nint main()\n{\nint x, y = 5, z = 5;\nx = y == z;\nprintf(\"%d\", x);\ngetchar();\nreturn 0;\n}\n```",
+            "options": [
+                "0",
+                "1",
+                "5",
+                "Compile error"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "B",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
         {
             "question_number": "5",
-            "question_text": "After working of the prefix and postfix operators, select all the correct statements for the code given below:\n\n```c\nvoid main() {\nint x, y, z, k;\nx = 10; y = -x; z = x++; k = ++x;\n}\n```\n\na) Value of y will be -10 and k will be 12.\nb) Value of z will be 11\nc) Value of k will be 10 and k will be 11\nd) Value of k will be 11",
+            "question_text": "After working of the prefix and postfix operators, select all the correct statements for the code given below:\n\n```c\nvoid main() {\nint x, y, z, k;\nx = 10; y = -x; z = x++; k = ++x;\n}\n```",
+            "options": [
+                "Value of y will be -10 and k will be 12.",
+                "Value of z will be 11",
+                "Value of k will be 10 and k will be 11",
+                "Value of k will be 11"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "A",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
         {
             "question_number": "6",
-            "question_text": "```c\n#include <stdio.h>\n// Assume base address of \"GeeksQuiz\" to be 2000\nint main()\n{\nprintf(5 + \"GeeksQuiz\");\nreturn 0;\n}\n```\n\na) GeeksQuiz\nb) Quiz\nc) 2005\nd) Compile time error",
+            "question_text": "```c\n#include <stdio.h>\n// Assume base address of \"GeeksQuiz\" to be 2000\nint main()\n{\nprintf(5 + \"GeeksQuiz\");\nreturn 0;\n}\n```",
+            "options": [
+                "GeeksQuiz",
+                "Quiz",
+                "2005",
+                "Compile time error"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "B",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 3: String Basics"
         },
         {
             "question_number": "7.",
-            "question_text": "C is a ____ language\na) High Level\nb) Low Level\nc) Middle Level\nd) Machine Level",
+            "question_text": "C is a ____ language",
+            "options": [
+                "High Level",
+                "Low Level",
+                "Middle Level",
+                "Machine Level"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "C",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
         {
             "question_number": "8.",
-            "question_text": "The equality operator is represented by\na) :=\nb).EQ.\nc) =\nd) ==",
+            "question_text": "The equality operator is represented by",
+            "options": [
+                ":=",
+                ".EQ.",
+                "=",
+                "=="
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "D",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
         {
             "question_number": "9.",
-            "question_text": "What will be the output of the express 11 ^ 5?\na) 5\nb) 6\nc) 11\nd) 14",
+            "question_text": "What will be the output of the express 11 ^ 5?",
+            "options": [
+                "5",
+                "6",
+                "11",
+                "14"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "D [XOR: 1^1=0,0^0=0, 1^0=1 so, 11--->1011 5---> 0101 ------ 1110 Which is equivalent of 14 in decimal]",
+            "answer": "XOR: 11 is 1011 and 5 is 0101, so 1011 ^ 0101 = 1110, which is 14 in decimal.",
             "answer_source": "provided",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
         {
             "question_number": "10.",
-            "question_text": "The operator + in a+=4 means\na) a=a+4\nb) a+4=a\nc) a=4\nd) a=4+4",
+            "question_text": "The operator + in a+=4 means",
+            "options": [
+                "a=a+4",
+                "a+4=a",
+                "a=4",
+                "a=4+4"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "A",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
@@ -100,17 +170,31 @@
         },
         {
             "question_number": "13",
-            "question_text": "Pick the correct one from the following declaration is not supported by C language?\na) String str;\nb) char *str;\nc) float str = 3e2;\nd) Both String str; & float str = 3e2;",
+            "question_text": "Pick the correct one from the following declaration is not supported by C language?",
+            "options": [
+                "String str;",
+                "char *str;",
+                "float str = 3e2;",
+                "Both String str; & float str = 3e2;"
+            ],
+            "correct_option": "A",
             "marks": 2,
-            "answer": "A",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 3: String Basics"
         },
         {
             "question_number": "14",
-            "question_text": "Conclude the output of the following c program?\n\n```c\n#include <stdio.h>\nint main()\n{\nint a=5;\nint b=10;\nint c;\nc=a+b;\nprintf(\"%i\", c);\nreturn 0;\n}\n```\n\n(A) 5\n(B) 10\n(C) 15\n(D) Compilation error",
+            "question_text": "Conclude the output of the following c program?\n\n```c\n#include <stdio.h>\nint main()\n{\nint a=5;\nint b=10;\nint c;\nc=a+b;\nprintf(\"%i\", c);\nreturn 0;\n}\n```",
+            "options": [
+                "5",
+                "10",
+                "15",
+                "Compilation error"
+            ],
+            "correct_option": "C",
             "marks": 2,
-            "answer": "(C)",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },

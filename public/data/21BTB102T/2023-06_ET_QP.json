@@ -4,7 +4,14 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "1. In cell division, ______ is for cytoplasm division.\n(A) Meiosis\n(B) Cytokinesis\n(C) Interphase\n(D) Prophase",
+            "question_text": "In cell division, ______ is for cytoplasm division.",
+            "options": [
+                "Meiosis",
+                "Cytokinesis",
+                "Interphase",
+                "Prophase"
+            ],
+            "correct_option": "B",
             "marks": 1,
             "answer": "Cytokinesis is the process of cell division in which the cytoplasm of a single eukaryotic cell divides into two daughter cells. It usually occurs concurrently with the nuclear division (mitosis or meiosis).",
             "answer_source": "generated",
@@ -12,7 +19,14 @@
         },
         {
             "question_number": "2",
-            "question_text": "2. The genetic material in a nucleoid region is seen in\n(A) Bacteria\n(B) Plant\n(C) Animals\n(D) Yeast",
+            "question_text": "The genetic material in a nucleoid region is seen in",
+            "options": [
+                "Bacteria",
+                "Plant",
+                "Animals",
+                "Yeast"
+            ],
+            "correct_option": "A",
             "marks": 1,
             "answer": "Bacteria, being prokaryotes, do not have a membrane-bound nucleus. Their genetic material (a single circular chromosome) is located in a region of the cytoplasm called the nucleoid.",
             "answer_source": "generated",
@@ -20,7 +34,14 @@
         },
         {
             "question_number": "3",
-            "question_text": "3. Robert Hooke presented a term called\n(A) Life\n(B) Cell\n(C) Biology\n(D) Biotechnology",
+            "question_text": "Robert Hooke presented a term called",
+            "options": [
+                "Life",
+                "Cell",
+                "Biology",
+                "Biotechnology"
+            ],
+            "correct_option": "B",
             "marks": 1,
             "answer": "Robert Hooke observed cork cells under a microscope in 1665 and coined the term 'cell' to describe the small, box-like structures he saw.",
             "answer_source": "generated",
@@ -28,7 +49,14 @@
         },
         {
             "question_number": "4",
-            "question_text": "4. The work horses of a cell are\n(A) Ribosome\n(B) Ribonucleotide\n(C) Deoxynucleotide\n(D) Mitochondria",
+            "question_text": "The work horses of a cell are",
+            "options": [
+                "Ribosome",
+                "Ribonucleotide",
+                "Deoxynucleotide",
+                "Mitochondria"
+            ],
+            "correct_option": "A",
             "marks": 1,
             "answer": "Ribosomes are often called the 'workhorses' of the cell because they are responsible for protein synthesis, translating messenger RNA into proteins.",
             "answer_source": "generated",
@@ -36,7 +64,14 @@
         },
         {
             "question_number": "5",
-            "question_text": "5. Transport of amino acids at the site of protein synthesis is carried out by\n(A) SRNA\n(B) mRNA\n(C) rRNA\n(D) tRNA",
+            "question_text": "Transport of amino acids at the site of protein synthesis is carried out by",
+            "options": [
+                "SRNA",
+                "mRNA",
+                "rRNA",
+                "tRNA"
+            ],
+            "correct_option": "D",
             "marks": 1,
             "answer": "tRNA (transfer RNA) molecules are responsible for carrying specific amino acids to the ribosome during protein synthesis (translation) and ensuring they are added to the polypeptide chain in the correct order.",
             "answer_source": "generated",
@@ -44,7 +79,14 @@
         },
         {
             "question_number": "6",
-            "question_text": "6. Blastocysts is a\n(A) Multicellular stage of embryo\n(B) Zygote\n(C) 8 cell stage of embryo\n(D) Fertilized cell",
+            "question_text": "Blastocysts is a",
+            "options": [
+                "Multicellular stage of embryo",
+                "Zygote",
+                "8 cell stage of embryo",
+                "Fertilized cell"
+            ],
+            "correct_option": "A",
             "marks": 1,
             "answer": "A blastocyst is a multicellular stage of a developing embryo, formed about 5-6 days after fertilization, consisting of an inner cell mass and an outer layer of cells (trophectoderm).",
             "answer_source": "generated",
@@ -52,7 +94,14 @@
         },
         {
             "question_number": "7",
-            "question_text": "7. DNA is made of A, T, G, C. how many bonds between an 'A' and a 'T'\n(A) 1\n(C) 3\n(B) 2\n(D) 4",
+            "question_text": "DNA is made of A, T, G, C. how many bonds between an 'A' and a 'T'",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "correct_option": "B",
             "marks": 1,
             "answer": "In DNA, adenine (A) always pairs with thymine (T) via two hydrogen bonds, while guanine (G) pairs with cytosine (C) via three hydrogen bonds.",
             "answer_source": "generated",
@@ -60,7 +109,14 @@
         },
         {
             "question_number": "8",
-            "question_text": "8. A program compares nucleic acid sequence against a protein database\n(A) Blast N\n(C) Blast X\n(B) Blast P\n(D) T Blast X",
+            "question_text": "A program compares nucleic acid sequence against a protein database",
+            "options": [
+                "Blast N",
+                "Blast P",
+                "Blast X",
+                "T Blast X"
+            ],
+            "correct_option": "C",
             "marks": 1,
             "answer": "BLASTX compares a nucleotide sequence translated in all six reading frames against a protein sequence database. BLASTN compares nucleotide to nucleotide, BLASTP protein to protein, and TBLASTX compares translated nucleotide query against translated nucleotide database.",
             "answer_source": "generated",
@@ -68,7 +124,14 @@
         },
         {
             "question_number": "9",
-            "question_text": "9. When codon UGA is encountered?\n(A) Transcription stops\n(C) Translation steps\n(B) Translation begin\n(D) Transcription starts",
+            "question_text": "When codon UGA is encountered?",
+            "options": [
+                "Transcription stops",
+                "Translation begin",
+                "Translation steps",
+                "Transcription starts"
+            ],
+            "correct_option": "C",
             "marks": 1,
             "answer": "UGA is one of the three stop codons (UAA, UAG, UGA) in the genetic code. When a ribosome encounters a UGA codon during translation, it signals the termination of protein synthesis, and the polypeptide chain is released.",
             "answer_source": "generated",
@@ -76,7 +139,14 @@
         },
         {
             "question_number": "10",
-            "question_text": "10. Amino acids are joined together in a polypeptide called\n(A) Protein\n(C) RNA\n(B) DNA\n(D) Carbohydrates",
+            "question_text": "Amino acids are joined together in a polypeptide called",
+            "options": [
+                "Protein",
+                "DNA",
+                "RNA",
+                "Carbohydrates"
+            ],
+            "correct_option": "A",
             "marks": 1,
             "answer": "Amino acids are the building blocks that are joined together by peptide bonds to form polypeptide chains, which then fold into functional proteins.",
             "answer_source": "generated",
@@ -84,7 +154,14 @@
         },
         {
             "question_number": "11",
-            "question_text": "11. Cofactor is\n(A) Vitamins\n(C) Iodine\n(B) Metal ion\n(D) Oxygen",
+            "question_text": "Cofactor is",
+            "options": [
+                "Vitamins",
+                "Metal ion",
+                "Iodine",
+                "Oxygen"
+            ],
+            "correct_option": "B",
             "marks": 1,
             "answer": "A cofactor is a non-protein chemical compound or metallic ion that is required for an enzyme's activity. Many vitamins, particularly B vitamins, function as cofactors (or their precursors, coenzymes) in various metabolic reactions.",
             "answer_source": "generated",
@@ -92,7 +169,14 @@
         },
         {
             "question_number": "12",
-            "question_text": "12. Molecular visualization tool is\n(A) Pymol\n(C) Blast\n(B) Pyzol\n(D) NCBI",
+            "question_text": "Molecular visualization tool is",
+            "options": [
+                "Pymol",
+                "Pyzol",
+                "Blast",
+                "NCBI"
+            ],
+            "correct_option": "A",
             "marks": 1,
             "answer": "PyMOL is a widely used open-source molecular visualization system for rendering 3D chemical structures, particularly biological macromolecules like proteins.",
             "answer_source": "generated",
@@ -100,7 +184,14 @@
         },
         {
             "question_number": "13",
-            "question_text": "13. Star shaped brain cells are\n(A) Astrocytes\n(C) Dendrocytes\n(B) Microglia\n(D) Axons",
+            "question_text": "Star shaped brain cells are",
+            "options": [
+                "Astrocytes",
+                "Microglia",
+                "Dendrocytes",
+                "Axons"
+            ],
+            "correct_option": "A",
             "marks": 1,
             "answer": "Astrocytes are a type of glial cell in the brain and spinal cord that are star-shaped and have numerous functions, including supporting neurons and maintaining the blood-brain barrier.",
             "answer_source": "generated",
@@ -108,7 +199,14 @@
         },
         {
             "question_number": "14",
-            "question_text": "14. _______ are released at the synapse\n(A) Neutrotransmitter\n(C) Neurotransmitter\n(B) Glucose\n(D) ATP",
+            "question_text": "_______ are released at the synapse",
+            "options": [
+                "Neutrotransmitter",
+                "Glucose",
+                "Neurotransmitter",
+                "ATP"
+            ],
+            "correct_option": "C",
             "marks": 1,
             "answer": "Neurotransmitters are chemical messengers released from the presynaptic neuron into the synaptic cleft, where they bind to receptors on the postsynaptic neuron to transmit signals.",
             "answer_source": "generated",
@@ -116,15 +214,29 @@
         },
         {
             "question_number": "15",
-            "question_text": "15. ANN does NOT contain this part\n(A) Axon\n(C) Synapse\n(B) Dendrite\n(D) 'N' population",
+            "question_text": "ANN does NOT contain this part",
+            "options": [
+                "Axon",
+                "Dendrite",
+                "Synapse",
+                "'N' population"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "Artificial Neural Networks (ANNs) are mathematical models inspired by biological neural networks. While ANNs conceptually model the functions of axons (outputs), dendrites (inputs), and synapses (weights/connections), they do not physically *contain* these biological structures. 'N' population is not a standard component of either biological or artificial neurons, making it the most appropriate answer as something an ANN would 'not contain' in any sense.",
+            "answer": "An artificial neural network is built from artificial neurons with inputs (analogous to dendrites), outputs (analogous to axons) and weighted connections (analogous to synapses). There is no component called an 'N' population, so that is the option an ANN does not contain.",
             "answer_source": "generated",
             "chapter": "Unit 4: Neurobiology"
         },
         {
             "question_number": "16",
-            "question_text": "16. Alzheimer's is caused by\n(A) Plaques\n(C) Spongiform\n(B) Dopamine related neurons\n(D) Encephalitis",
+            "question_text": "Alzheimer's is caused by",
+            "options": [
+                "Plaques",
+                "Dopamine related neurons",
+                "Spongiform",
+                "Encephalitis"
+            ],
+            "correct_option": "A",
             "marks": 1,
             "answer": "Alzheimer's disease is pathologically characterized by the accumulation of amyloid plaques (extracellular deposits of amyloid-beta protein) and neurofibrillary tangles (intracellular aggregates of tau protein) in the brain. While 'plaques' are a hallmark, the term 'caused by' implies direct etiology. However, amongst the choices, plaques are the most directly linked characteristic related to the disease's mechanism, distinguishing it from Parkinson's (dopamine-related neurons) or general brain inflammation (encephalitis).",
             "answer_source": "generated",
@@ -132,15 +244,29 @@
         },
         {
             "question_number": "17",
-            "question_text": "17. Which of the following is rich in immune cells?\n(A) Blood\n(B) Lymph\n(C) Saliva\n(D) Pancreas",
+            "question_text": "Which of the following is rich in immune cells?",
+            "options": [
+                "Blood",
+                "Lymph",
+                "Saliva",
+                "Pancreas"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "Both blood and lymph are rich in immune cells. Lymph, specifically, is a fluid that circulates through the lymphatic system, which is a major part of the immune system, containing a high concentration of lymphocytes (a type of white blood cell).",
+            "answer": "Lymph circulates through the lymphatic system and is especially rich in lymphocytes, the cells of the immune system. Blood also carries white cells, but lymph (with the lymph nodes) is the fluid most characteristically rich in immune cells, whereas saliva and the pancreas are not.",
             "answer_source": "generated",
             "chapter": "Unit 5: Immunobiology"
         },
         {
             "question_number": "18",
-            "question_text": "18. Polio drops are\n(A) Killed vaccine\n(B) Live attenuated vaccine\n(C) Recombinant vaccine\n(D) DNA vaccine",
+            "question_text": "Polio drops are",
+            "options": [
+                "Killed vaccine",
+                "Live attenuated vaccine",
+                "Recombinant vaccine",
+                "DNA vaccine"
+            ],
+            "correct_option": "B",
             "marks": 1,
             "answer": "The oral polio vaccine (OPV), administered as drops, is a live attenuated vaccine, meaning it contains a weakened (attenuated) form of the poliovirus that can replicate in the gut but not cause disease, eliciting a strong immune response.",
             "answer_source": "generated",
@@ -148,7 +274,14 @@
         },
         {
             "question_number": "19",
-            "question_text": "19. Epitope is present\n(A) Antigen\n(B) Antibody\n(C) Nerve cell\n(D) Plasma",
+            "question_text": "Epitope is present",
+            "options": [
+                "Antigen",
+                "Antibody",
+                "Nerve cell",
+                "Plasma"
+            ],
+            "correct_option": "A",
             "marks": 1,
             "answer": "An epitope is the specific part of an antigen that is recognized by the immune system, specifically by antibodies or T-cell receptors. Therefore, epitopes are present *on* antigens.",
             "answer_source": "generated",
@@ -156,7 +289,14 @@
         },
         {
             "question_number": "20",
-            "question_text": "20. Find the \"odd one out\" of the T cell epitope production tool\n(A) Net chop\n(C) Bcepred\n(B) Propred\n(D) NetMHCpern",
+            "question_text": "Find the \"odd one out\" of the T cell epitope production tool",
+            "options": [
+                "Net chop",
+                "Propred",
+                "Bcepred",
+                "NetMHCpern"
+            ],
+            "correct_option": "C",
             "marks": 1,
             "answer": "Bcepred is a tool specifically designed for predicting B-cell epitopes. In contrast, NetChop, Propred, and NetMHC are tools related to the prediction of T-cell epitopes (e.g., proteasomal cleavage sites for MHC class I presentation, and MHC binding prediction).",
             "answer_source": "generated",
@@ -214,7 +354,7 @@
             "question_number": "27",
             "question_text": "27. What happens as a response by the body when vaccine is administered to the body?",
             "marks": 15,
-            "answer": "When a vaccine is administered, it introduces a weakened or inactivated form of a pathogen (or parts of it, like proteins or genetic material) into the body without causing disease. The body's immune system recognizes these vaccine components as foreign antigens and mounts an immune response, leading to immunity and immunological memory. This process involves both innate and adaptive immune responses:\n\n1.  **Innate Immune Response (Initial Detection):**\n    *   **Antigen Presentation:** Antigen-presenting cells (APCs), such as dendritic cells and macrophages, located at the vaccination site, engulf the vaccine antigens. They process these antigens and present peptide fragments on their surface via Major Histocompatibility Complex (MHC) molecules (primarily MHC-II).\n    *   **Inflammation:** The vaccine components can activate innate immune receptors, leading to local inflammation, which helps recruit more immune cells to the site and enhances the overall response.\n\n2.  **Adaptive Immune Response (Specificity and Memory):**\n    *   **T Cell Activation:** Activated APCs migrate to lymph nodes, where they present the processed antigens to na\u00efve T lymphocytes. Specific CD4+ helper T cells (Th cells) that recognize the antigen become activated, proliferate, and differentiate into effector and memory Th cells.\n    *   **B Cell Activation and Antibody Production (Humoral Immunity):**\n        *   Na\u00efve B cells, with their specific B cell receptors, also encounter and bind to vaccine antigens.\n        *   With help from activated Th cells, these B cells become fully activated, proliferate, and differentiate into plasma cells and memory B cells.\n        *   Plasma cells are factories for producing large quantities of antibodies specific to the vaccine antigens. These antibodies circulate in the blood and lymph.\n    *   **Cytotoxic T Cell Activation (Cellular Immunity):** For some vaccines (especially those against intracellular pathogens or those that simulate a viral infection, like mRNA or viral vector vaccines), antigens might also be presented on MHC-I molecules, activating CD8+ cytotoxic T lymphocytes (CTLs). Activated CTLs can recognize and kill infected cells.\n\n3.  **Establishment of Immunological Memory:**\n    *   A critical outcome of vaccination is the generation of long-lived **memory B cells** and **memory T cells**. These cells persist in the body for months, years, or even a lifetime.\n    *   Memory cells are 'primed' to recognize the pathogen quickly and respond more robustly upon subsequent exposure to the actual pathogen (wild-type infection).\n\n4.  **Protective Immunity:**\n    *   Upon natural exposure to the actual pathogen after vaccination, the memory cells are rapidly activated. Memory B cells quickly differentiate into plasma cells to produce large amounts of high-affinity antibodies, while memory T cells proliferate and mount a rapid cellular response.\n    *   This rapid and strong **secondary immune response** typically neutralizes or eliminates the pathogen before it can cause significant disease symptoms, thus providing protection.\n\nIn essence, vaccination safely \"educates\" the immune system by exposing it to harmless antigens, allowing it to develop specific antibodies and memory cells without the risk of illness. This prepares the body to effectively fight off future infections by the real pathogen.",
+            "answer": "When a vaccine is administered, it introduces a weakened or inactivated form of a pathogen (or parts of it, like proteins or genetic material) into the body without causing disease. The body's immune system recognizes these vaccine components as foreign antigens and mounts an immune response, leading to immunity and immunological memory. This process involves both innate and adaptive immune responses:\n\n1.  **Innate Immune Response (Initial Detection):**\n    *   **Antigen Presentation:** Antigen-presenting cells (APCs), such as dendritic cells and macrophages, located at the vaccination site, engulf the vaccine antigens. They process these antigens and present peptide fragments on their surface via Major Histocompatibility Complex (MHC) molecules (primarily MHC-II).\n    *   **Inflammation:** The vaccine components can activate innate immune receptors, leading to local inflammation, which helps recruit more immune cells to the site and enhances the overall response.\n\n2.  **Adaptive Immune Response (Specificity and Memory):**\n    *   **T Cell Activation:** Activated APCs migrate to lymph nodes, where they present the processed antigens to naïve T lymphocytes. Specific CD4+ helper T cells (Th cells) that recognize the antigen become activated, proliferate, and differentiate into effector and memory Th cells.\n    *   **B Cell Activation and Antibody Production (Humoral Immunity):**\n        *   Naïve B cells, with their specific B cell receptors, also encounter and bind to vaccine antigens.\n        *   With help from activated Th cells, these B cells become fully activated, proliferate, and differentiate into plasma cells and memory B cells.\n        *   Plasma cells are factories for producing large quantities of antibodies specific to the vaccine antigens. These antibodies circulate in the blood and lymph.\n    *   **Cytotoxic T Cell Activation (Cellular Immunity):** For some vaccines (especially those against intracellular pathogens or those that simulate a viral infection, like mRNA or viral vector vaccines), antigens might also be presented on MHC-I molecules, activating CD8+ cytotoxic T lymphocytes (CTLs). Activated CTLs can recognize and kill infected cells.\n\n3.  **Establishment of Immunological Memory:**\n    *   A critical outcome of vaccination is the generation of long-lived **memory B cells** and **memory T cells**. These cells persist in the body for months, years, or even a lifetime.\n    *   Memory cells are 'primed' to recognize the pathogen quickly and respond more robustly upon subsequent exposure to the actual pathogen (wild-type infection).\n\n4.  **Protective Immunity:**\n    *   Upon natural exposure to the actual pathogen after vaccination, the memory cells are rapidly activated. Memory B cells quickly differentiate into plasma cells to produce large amounts of high-affinity antibodies, while memory T cells proliferate and mount a rapid cellular response.\n    *   This rapid and strong **secondary immune response** typically neutralizes or eliminates the pathogen before it can cause significant disease symptoms, thus providing protection.\n\nIn essence, vaccination safely \"educates\" the immune system by exposing it to harmless antigens, allowing it to develop specific antibodies and memory cells without the risk of illness. This prepares the body to effectively fight off future infections by the real pathogen.",
             "answer_source": "generated",
             "chapter": "Unit 5: Immunobiology"
         },

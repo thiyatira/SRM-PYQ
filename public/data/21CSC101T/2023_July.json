@@ -4,161 +4,301 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "A member function can always access the data\n(A) in the object of which it is a member\n(B) in the class of which it is a member\n(C) in any object of the class of which it is a member\n(D) in the public part of its class",
+            "question_text": "A member function can always access the data",
+            "options": [
+                "in the object of which it is a member",
+                "in the class of which it is a member",
+                "in any object of the class of which it is a member",
+                "in the public part of its class"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) in the object of which it is a member. Explanation: A member function operates on the specific object that calls it and has access to its data members.",
+            "answer": "A member function operates on the specific object that calls it and has access to its data members.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 1"
         },
         {
             "question_number": "2",
-            "question_text": "The Unified Modeling Language is ________\n(A) a program that builds physical models\n(B) a way to look at the organization of a program\n(C) the combination of C++ and FORTRAN\n(D) helpful in developing software systems",
+            "question_text": "The Unified Modeling Language is ________",
+            "options": [
+                "a program that builds physical models",
+                "a way to look at the organization of a program",
+                "the combination of C++ and FORTRAN",
+                "helpful in developing software systems"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) helpful in developing software systems. Explanation: UML is a visual modeling language used to specify, visualize, construct, and document the artifacts of software systems.",
+            "answer": "UML is a visual modeling language used to specify, visualize, construct, and document the artifacts of software systems.",
             "answer_source": "General UML Knowledge",
             "chapter": "Unit 1"
         },
         {
             "question_number": "3",
-            "question_text": "A variable defined within a block is visible\n(A) from the point of definition onward in the program\n(B) from the point of definition onward in the function\n(C) from the point of definition onward in the block\n(D) throughout the function",
+            "question_text": "A variable defined within a block is visible",
+            "options": [
+                "from the point of definition onward in the program",
+                "from the point of definition onward in the function",
+                "from the point of definition onward in the block",
+                "throughout the function"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) from the point of definition onward in the block. Explanation: Variables defined inside a block (enclosed in braces `{}`) have local scope limited to that specific block.",
+            "answer": "Variables defined inside a block (enclosed in braces `{}`) have local scope limited to that specific block.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 1"
         },
         {
             "question_number": "4",
-            "question_text": "Which of the following is the perfect set of operators that can't be overloaded in C++?\n(A) +=, ?, :: , >>\n(B) >>, <<, ?, *, sizeof()\n(C) :: , . , .* , ?:\n(D) :: , ->, * , new, delete",
+            "question_text": "Which of the following is the perfect set of operators that can't be overloaded in C++?",
+            "options": [
+                "+=, ?, :: , >>",
+                ">>, <<, ?, *, sizeof()",
+                ":: , . , .* , ?:",
+                ":: , ->, * , new, delete"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) :: , . , .* , ?:. Explanation: In C++, the scope resolution operator (`::`), member access operator (`.`), pointer-to-member operator (`.*`), and conditional/ternary operator (`?:`) cannot be overloaded.",
+            "answer": "In C++, the scope resolution operator (`::`), member access operator (`.`), pointer-to-member operator (`.*`), and conditional/ternary operator (`?:`) cannot be overloaded.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 2"
         },
         {
             "question_number": "5",
-            "question_text": "Which of the following is true about constructors?\n(A) A class can have more than one constructor\n(B) They cannot be inherited\n(C) Their address can be referred\n(D) Constructors can have return values",
+            "question_text": "Which of the following is true about constructors?",
+            "options": [
+                "A class can have more than one constructor",
+                "They cannot be inherited",
+                "Their address can be referred",
+                "Constructors can have return values"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) A class can have more than one constructor. Explanation: A class can have multiple constructors (constructor overloading) provided they have different parameter lists.",
+            "answer": "A class can have multiple constructors (constructor overloading) provided they have different parameter lists.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 2"
         },
         {
             "question_number": "6",
-            "question_text": "Which of the following keyword is used to overload an operator?\n(A) overload\n(B) operator\n(C) friend\n(D) overrider",
+            "question_text": "Which of the following keyword is used to overload an operator?",
+            "options": [
+                "overload",
+                "operator",
+                "friend",
+                "overrider"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) operator. Explanation: The keyword `operator` is used to define a function that overloads an operator in C++.",
+            "answer": "The keyword `operator` is used to define a function that overloads an operator in C++.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 2"
         },
         {
             "question_number": "7",
-            "question_text": "Overload an operator by naming it a\n(A) variable\n(B) built-in type\n(C) function\n(D) class",
+            "question_text": "Overload an operator by naming it a",
+            "options": [
+                "variable",
+                "built-in type",
+                "function",
+                "class"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) function. Explanation: Operator overloading is achieved by creating a special function named `operator` followed by the symbol of the operator being overloaded.",
+            "answer": "Operator overloading is achieved by creating a special function named `operator` followed by the symbol of the operator being overloaded.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 2"
         },
         {
             "question_number": "8",
-            "question_text": "Dynamic aspects related to a system are shown with help of\n(A) sequence diagrams\n(B) interaction diagrams\n(C) deployment diagrams\n(D) use case diagrams",
+            "question_text": "Dynamic aspects related to a system are shown with help of",
+            "options": [
+                "sequence diagrams",
+                "interaction diagrams",
+                "deployment diagrams",
+                "use case diagrams"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) interaction diagrams. Explanation: Interaction diagrams (sequence and collaboration diagrams) model the dynamic behavior and interactions between objects over time.",
+            "answer": "Interaction diagrams (sequence and collaboration diagrams) model the dynamic behavior and interactions between objects over time.",
             "answer_source": "General UML Knowledge",
             "chapter": "Unit 2"
         },
         {
             "question_number": "9",
-            "question_text": "Use of pointers or reference to an abstract class gives rise to which among the following feature?\n(A) Static Polymorphism\n(B) Runtime polymorphism\n(C) Compile time Polymorphism\n(D) Polymorphism within methods",
+            "question_text": "Use of pointers or reference to an abstract class gives rise to which among the following feature?",
+            "options": [
+                "Static Polymorphism",
+                "Runtime polymorphism",
+                "Compile time Polymorphism",
+                "Polymorphism within methods"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Runtime polymorphism. Explanation: Using base class pointers or references to call virtual functions in derived classes enables late binding or runtime polymorphism.",
+            "answer": "Using base class pointers or references to call virtual functions in derived classes enables late binding or runtime polymorphism.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 3"
         },
         {
             "question_number": "10",
-            "question_text": "How can you make the private members inheritable?\n(A) By making their visibility mode as public only\n(B) By making their visibility mode as protected only\n(C) By making their visibility mode as private in derived class\n(D) It can be done both by making the visibility mode public or protected",
+            "question_text": "How can you make the private members inheritable?",
+            "options": [
+                "By making their visibility mode as public only",
+                "By making their visibility mode as protected only",
+                "By making their visibility mode as private in derived class",
+                "It can be done both by making the visibility mode public or protected"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) By making their visibility mode as protected only. Explanation: To allow derived classes to access members while keeping them hidden from the outside world, they must be declared as `protected` in the base class.",
+            "answer": "To allow derived classes to access members while keeping them hidden from the outside world, they must be declared as `protected` in the base class.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 3"
         },
         {
             "question_number": "11",
-            "question_text": "Which of the following Combines two concurrent activities and re-introduces them to a flow where only one activity can be performed at a time?\n(A) Joint symbol\n(B) Fork symbol\n(C) Decision symbol\n(D) Note symbol",
+            "question_text": "Which of the following Combines two concurrent activities and re-introduces them to a flow where only one activity can be performed at a time?",
+            "options": [
+                "Joint symbol",
+                "Fork symbol",
+                "Decision symbol",
+                "Note symbol"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Joint symbol. Explanation: In an activity diagram, a join node merges multiple concurrent execution flows into a single flow.",
+            "answer": "In an activity diagram, a join node merges multiple concurrent execution flows into a single flow.",
             "answer_source": "General UML Knowledge",
             "chapter": "Unit 3"
         },
         {
             "question_number": "12",
-            "question_text": "Name the function whose definition can be substituted at a place where its function call is made?\n(A) friends function\n(B) inline function\n(C) volatile function\n(D) external function",
+            "question_text": "Name the function whose definition can be substituted at a place where its function call is made?",
+            "options": [
+                "friends function",
+                "inline function",
+                "volatile function",
+                "external function"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) inline function. Explanation: An inline function is a request to the compiler to replace the function call with the actual code of the function to reduce function call overhead.",
+            "answer": "An inline function is a request to the compiler to replace the function call with the actual code of the function to reduce function call overhead.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 3"
         },
         {
             "question_number": "13",
-            "question_text": "What type of core-relationship is represented by the symbol in the figure below? \n(Figure shows Company diamond attached to class 1 Department)\n(A) Aggregation\n(B) Dependency\n(C) Composition\n(D) Association",
+            "question_text": "What type of core-relationship is represented by the symbol in the figure below? \n(Figure shows Company diamond attached to class 1 Department)",
+            "options": [
+                "Aggregation",
+                "Dependency",
+                "Composition",
+                "Association"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Composition. Explanation: A filled diamond represents composition (a strong \"has-a\" relationship where the child's lifecycle depends on the parent). An empty diamond would mean aggregation.",
+            "answer": "A filled diamond represents composition (a strong \"has-a\" relationship where the child's lifecycle depends on the parent). An empty diamond would mean aggregation.",
             "answer_source": "General UML Knowledge",
             "chapter": "Unit 1"
         },
         {
             "question_number": "14",
-            "question_text": "________ statement is used to catch all types of exceptions.\n(A) catch()\n(B) catch(Test t)\n(C) catch(...)\n(D) Exception()",
+            "question_text": "________ statement is used to catch all types of exceptions.",
+            "options": [
+                "catch()",
+                "catch(Test t)",
+                "catch(...)",
+                "Exception()"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) catch(...). Explanation: The ellipsis `...` in a catch block acts as a default handler that catches any exception regardless of its type.",
+            "answer": "The ellipsis `...` in a catch block acts as a default handler that catches any exception regardless of its type.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 4"
         },
         {
             "question_number": "15",
-            "question_text": "________ diagram in UML shows a complete of a modeled system at a specific time.\n(A) Sequence\n(B) Class diagram\n(C) Collaboration\n(D) Object",
+            "question_text": "________ diagram in UML shows a complete of a modeled system at a specific time.",
+            "options": [
+                "Sequence",
+                "Class diagram",
+                "Collaboration",
+                "Object"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Object. Explanation: An Object Diagram is a snapshot of the system's structure at a specific point in time, showing instances (objects) and their relationships.",
+            "answer": "An Object Diagram is a snapshot of the system's structure at a specific point in time, showing instances (objects) and their relationships.",
             "answer_source": "General UML Knowledge",
             "chapter": "Unit 1"
         },
         {
             "question_number": "16",
-            "question_text": "In component diagrams, building block which is represented with two rectangles laid on left side is classified as\n(A) type of components\n(B) interfaces\n(C) dependency relationships\n(D) State dependency",
+            "question_text": "In component diagrams, building block which is represented with two rectangles laid on left side is classified as",
+            "options": [
+                "type of components",
+                "interfaces",
+                "dependency relationships",
+                "State dependency"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) type of components. Explanation: A component is visually represented as a rectangle with two smaller rectangles protruding from its left side.",
+            "answer": "A component is visually represented as a rectangle with two smaller rectangles protruding from its left side.",
             "answer_source": "General UML Knowledge",
             "chapter": "Unit 4"
         },
         {
             "question_number": "17",
-            "question_text": "What kind of library is Standard Template Library?\n(A) Polymorphic\n(B) Generic\n(C) Both Polymorphic & Generic\n(D) Void",
+            "question_text": "What kind of library is Standard Template Library?",
+            "options": [
+                "Polymorphic",
+                "Generic",
+                "Both Polymorphic & Generic",
+                "Void"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Generic. Explanation: The STL is built extensively using C++ templates, making it a generic programming library where algorithms and containers work with any data type.",
+            "answer": "The STL is built extensively using C++ templates, making it a generic programming library where algorithms and containers work with any data type.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 5"
         },
         {
             "question_number": "18",
-            "question_text": "What type of access does deque and vector provide?\n(A) Linear access\n(B) Random access\n(C) Parallel access\n(D) Sequence access",
+            "question_text": "What type of access does deque and vector provide?",
+            "options": [
+                "Linear access",
+                "Random access",
+                "Parallel access",
+                "Sequence access"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Random access. Explanation: Both `std::vector` and `std::deque` provide fast, constant-time `O(1)` random access to elements using an index (e.g., `vec[i]`).",
+            "answer": "Both `std::vector` and `std::deque` provide fast, constant-time `O(1)` random access to elements using an index (e.g., `vec[i]`).",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 5"
         },
         {
             "question_number": "19",
-            "question_text": "Which operator is used to insert the data into file?\n(A) >>\n(B) >\n(C) <\n(D) <<",
+            "question_text": "Which operator is used to insert the data into file?",
+            "options": [
+                ">>",
+                ">",
+                "<",
+                "<<"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) <<. Explanation: The insertion operator `<<` is used with output streams (like `ofstream`) to write or insert data into a file.",
+            "answer": "The insertion operator `<<` is used with output streams (like `ofstream`) to write or insert data into a file.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 1"
         },
         {
             "question_number": "20",
-            "question_text": "Which function is used to position back from the end of file object?\n(A) seekg\n(B) seekp\n(C) grepv\n(D) execvp",
+            "question_text": "Which function is used to position back from the end of file object?",
+            "options": [
+                "seekg",
+                "seekp",
+                "grepv",
+                "execvp"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) seekg (or seekp). Explanation: `seekg` (seek get) is used for input streams to move the read pointer, while `seekp` (seek put) is used for output streams to move the write pointer.",
+            "answer": "seekg (seek get) repositions the read pointer of an input stream, e.g. seekg(-n, ios::end) positions n bytes back from the end of the file; seekp is its counterpart for the write pointer.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 1"
         },

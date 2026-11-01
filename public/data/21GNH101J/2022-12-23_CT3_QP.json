@@ -4,81 +4,151 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "A hypothesis is constructed and tested in\na. Scientific method\nb. Engineering design method\nc. Architecture design method\nd. Software design method",
+            "question_text": "A hypothesis is constructed and tested in",
+            "options": [
+                "Scientific method",
+                "Engineering design method",
+                "Architecture design method",
+                "Software design method"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "The correct option is a. Scientific method.\n\nExplanation:\nIn the scientific method, the process typically involves forming a hypothesis (an educated guess or proposed explanation), designing an experiment to test it, conducting the experiment, collecting data, analyzing the results, and then drawing conclusions to either support or refute the hypothesis. This cyclical process is fundamental to scientific inquiry. Engineering design, while also systematic, focuses more on creating solutions to problems, often starting with defining requirements and moving through conceptual design, detailed design, implementation, and testing, rather than primarily testing a hypothesis about natural phenomena.",
+            "answer": "In the scientific method, the process typically involves forming a hypothesis (an educated guess or proposed explanation), designing an experiment to test it, conducting the experiment, collecting data, analyzing the results, and then drawing conclusions to either support or refute the hypothesis. This cyclical process is fundamental to scientific inquiry. Engineering design, while also systematic, focuses more on creating solutions to problems, often starting with defining requirements and moving through conceptual design, detailed design, implementation, and testing, rather than primarily testing a hypothesis about natural phenomena.",
             "answer_source": "generated",
             "chapter": "Unit 3:"
         },
         {
             "question_number": "2",
-            "question_text": "ADDIE stands for\na. Analytics, Design, Development, Implementation, and Evaluation\nb. Analysis, Design, Development, Implementation, and Evaluation\nc. Analysis, Development, Design, Implementation, and Evaluation\nd. Analytics, Development, Design, Implementation, and Evaluation",
+            "question_text": "ADDIE stands for",
+            "options": [
+                "Analytics, Design, Development, Implementation, and Evaluation",
+                "Analysis, Design, Development, Implementation, and Evaluation",
+                "Analysis, Development, Design, Implementation, and Evaluation",
+                "Analytics, Development, Design, Implementation, and Evaluation"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "The correct option is b. Analysis, Design, Development, Implementation, and Evaluation.\n\nExplanation:\nADDIE is a widely used instructional design model that provides a framework for building effective training and performance support tools. The acronym stands for:\n*   **A**nalysis: Defining the problem, target audience, and learning objectives.\n*   **D**esign: Outlining learning objectives, content, activities, and assessment methods.\n*   **D**evelopment: Creating the actual learning materials and activities.\n*   **I**mplementation: Delivering the instruction to the target audience.\n*   **E**valuation: Assessing the effectiveness of the instruction and making improvements.",
+            "answer": "ADDIE is a widely used instructional design model that provides a framework for building effective training and performance support tools. The acronym stands for:\n*   **A**nalysis: Defining the problem, target audience, and learning objectives.\n*   **D**esign: Outlining learning objectives, content, activities, and assessment methods.\n*   **D**evelopment: Creating the actual learning materials and activities.\n*   **I**mplementation: Delivering the instruction to the target audience.\n*   **E**valuation: Assessing the effectiveness of the instruction and making improvements.",
             "answer_source": "generated",
             "chapter": "Unit 4:"
         },
         {
             "question_number": "3",
-            "question_text": "CDIO stands for\na. Concept, Design, Implement and Operate\nb. Conceive, Draw, Implement and Operate\nc. Conceive, Design, Implant and Opt\nd. Conceive, Design, Implement and Operate",
+            "question_text": "CDIO stands for",
+            "options": [
+                "Concept, Design, Implement and Operate",
+                "Conceive, Draw, Implement and Operate",
+                "Conceive, Design, Implant and Opt",
+                "Conceive, Design, Implement and Operate"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "The correct option is d. Conceive, Design, Implement and Operate.\n\nExplanation:\nCDIO is an innovative educational framework for producing the next generation of engineers. It stands for:\n*   **C**onceive: Defining the problem, understanding customer needs, and developing initial concepts.\n*   **D**esign: Translating the concepts into detailed designs, including system architecture, components, and processes.\n*   **I**mplement: Building or fabricating the product, process, or system.\n*   **O**perate: Using the implemented system in its intended environment, including maintenance and eventual retirement.",
+            "answer": "CDIO is an innovative educational framework for producing the next generation of engineers. It stands for:\n*   **C**onceive: Defining the problem, understanding customer needs, and developing initial concepts.\n*   **D**esign: Translating the concepts into detailed designs, including system architecture, components, and processes.\n*   **I**mplement: Building or fabricating the product, process, or system.\n*   **O**perate: Using the implemented system in its intended environment, including maintenance and eventual retirement.",
             "answer_source": "generated",
             "chapter": "Unit 4:"
         },
         {
             "question_number": "4",
-            "question_text": "Which one is not relevant to Conceive phase.\na. Defining Customer needs\nb. Enterprise Strategy and regulations\nc. Business Plan\nd. Design and Drawings",
+            "question_text": "Which one is not relevant to Conceive phase.",
+            "options": [
+                "Defining Customer needs",
+                "Enterprise Strategy and regulations",
+                "Business Plan",
+                "Design and Drawings"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "The correct option is d. Design and Drawings.\n\nExplanation:\nThe Conceive phase in the CDIO framework (and similar design processes) focuses on identifying the problem, understanding context, and generating initial ideas. Activities like defining customer needs, considering enterprise strategy and regulations, and developing a business plan are all part of forming the initial concept and understanding the project's feasibility and scope. Design and drawings, however, are typically the output of the subsequent 'Design' phase, where detailed specifications and blueprints are created based on the concepts developed during the Conceive phase.",
+            "answer": "The Conceive phase in the CDIO framework (and similar design processes) focuses on identifying the problem, understanding context, and generating initial ideas. Activities like defining customer needs, considering enterprise strategy and regulations, and developing a business plan are all part of forming the initial concept and understanding the project's feasibility and scope. Design and drawings, however, are typically the output of the subsequent 'Design' phase, where detailed specifications and blueprints are created based on the concepts developed during the Conceive phase.",
             "answer_source": "generated",
             "chapter": "Unit 4:"
         },
         {
             "question_number": "5",
-            "question_text": "A prototype is created in which phase of ADDIE model.\na. Analysis\nb. Design\nc. Development\nd. Implementation",
+            "question_text": "A prototype is created in which phase of ADDIE model.",
+            "options": [
+                "Analysis",
+                "Design",
+                "Development",
+                "Implementation"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "The correct option is c. Development.\n\nExplanation:\nIn the ADDIE model:\n*   **Analysis:** Problem identification and goal setting.\n*   **Design:** Planning the solution's structure and specifications.\n*   **Development:** Creating the actual materials, tools, or systems. This is where prototypes are built, content is written, and systems are coded.\n*   **Implementation:** Deploying or launching the solution.\n*   **Evaluation:** Assessing the solution's effectiveness.\n\nTherefore, a prototype, being a preliminary version of the final product, is created during the Development phase.",
+            "answer": "In the ADDIE model:\n*   **Analysis:** Problem identification and goal setting.\n*   **Design:** Planning the solution's structure and specifications.\n*   **Development:** Creating the actual materials, tools, or systems. This is where prototypes are built, content is written, and systems are coded.\n*   **Implementation:** Deploying or launching the solution.\n*   **Evaluation:** Assessing the solution's effectiveness.\n\nTherefore, a prototype, being a preliminary version of the final product, is created during the Development phase.",
             "answer_source": "generated",
             "chapter": "Unit 4:"
         },
         {
             "question_number": "6",
-            "question_text": "What is the final stage of the Engineering Design Process?\na. Prototype\nb. Test And Evaluate\nc. Communication of Results\nd. Solution",
+            "question_text": "What is the final stage of the Engineering Design Process?",
+            "options": [
+                "Prototype",
+                "Test And Evaluate",
+                "Communication of Results",
+                "Solution"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "The correct option is c. Communication of Results.\n\nExplanation:\nWhile 'Test and Evaluate' is a critical late stage where the design is refined and validated, the ultimate final step in many formal engineering design processes is the communication of the design, its performance, and findings to stakeholders. 'Prototype' is part of development, and 'Solution' is the outcome, not a stage. After a solution has been tested and evaluated, the results, recommendations, and finalized design must be effectively communicated to others (clients, manufacturing, etc.) to complete the design cycle for that iteration.",
+            "answer": "While 'Test and Evaluate' is a critical late stage where the design is refined and validated, the ultimate final step in many formal engineering design processes is the communication of the design, its performance, and findings to stakeholders. 'Prototype' is part of development, and 'Solution' is the outcome, not a stage. After a solution has been tested and evaluated, the results, recommendations, and finalized design must be effectively communicated to others (clients, manufacturing, etc.) to complete the design cycle for that iteration.",
             "answer_source": "generated",
             "chapter": "Unit 4:"
         },
         {
             "question_number": "7",
-            "question_text": "Axiology is related to\na. Design\nb. Ethics\nc. Method\nd. Testing",
+            "question_text": "Axiology is related to",
+            "options": [
+                "Design",
+                "Ethics",
+                "Method",
+                "Testing"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "The correct option is b. Ethics.\n\nExplanation:\nAxiology is the philosophical study of value. It investigates concepts such as goodness, rightness, beauty, and virtue. In the context of engineering, axiology often deals with the ethical dimensions, values, and societal impacts of engineering work. This includes topics like professional ethics, social responsibility, and the moral implications of technology, which are directly related to the field of ethics.",
+            "answer": "Axiology is the philosophical study of value. It investigates concepts such as goodness, rightness, beauty, and virtue. In the context of engineering, axiology often deals with the ethical dimensions, values, and societal impacts of engineering work. This includes topics like professional ethics, social responsibility, and the moral implications of technology, which are directly related to the field of ethics.",
             "answer_source": "generated",
             "chapter": "Unit 5:"
         },
         {
             "question_number": "8",
-            "question_text": "The 3Es stand for\na. Energy, economic and ethical\nb. Equality, economic and ethical\nc. Environmental, economic and ethical\nd. Environmental, equity and ethical",
+            "question_text": "The 3Es stand for",
+            "options": [
+                "Energy, economic and ethical",
+                "Equality, economic and ethical",
+                "Environmental, economic and ethical",
+                "Environmental, equity and ethical"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "The correct option is c. Environmental, economic and ethical.\n\nExplanation:\nWhile the '3Es of sustainability' are most commonly cited as Environment, Economy, and Equity (or Social), in some contexts, 'Ethical' is used to encompass the broader societal and moral responsibilities, especially within engineering. 'Environmental, economic and ethical' captures the core dimensions of sustainable development and responsible engineering practice: minimizing environmental impact, ensuring economic viability, and upholding ethical standards for societal well-being.",
+            "answer": "The 3Es of sustainability used in this course are Environmental, Economic and Ethical: minimizing environmental impact, ensuring economic viability and upholding ethical standards for societal well-being.",
             "answer_source": "generated",
             "chapter": "Unit 5:"
         },
         {
             "question_number": "9",
-            "question_text": "What is the first stage of the Engineering Design Process?\na. Prototype\nb. Define the Problem\nc. Communication of Results\nd. Solution",
+            "question_text": "What is the first stage of the Engineering Design Process?",
+            "options": [
+                "Prototype",
+                "Define the Problem",
+                "Communication of Results",
+                "Solution"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "The correct option is b. Define the Problem.\n\nExplanation:\nRegardless of the specific engineering design model (e.g., iterative, waterfall), the foundational first step is always to clearly understand and define the problem that needs to be solved. Without a well-defined problem, engineers cannot effectively set objectives, gather requirements, or embark on designing a suitable solution. The other options are later stages or outcomes of the process.",
+            "answer": "Regardless of the specific engineering design model (e.g., iterative, waterfall), the foundational first step is always to clearly understand and define the problem that needs to be solved. Without a well-defined problem, engineers cannot effectively set objectives, gather requirements, or embark on designing a suitable solution. The other options are later stages or outcomes of the process.",
             "answer_source": "generated",
             "chapter": "Unit 4:"
         },
         {
             "question_number": "10",
-            "question_text": "_______ is not an operational factor in system design.\na. Integrity and Consistency\nb. Performance and Scalability\nc. Product prototype\nd. Security",
+            "question_text": "_______ is not an operational factor in system design.",
+            "options": [
+                "Integrity and Consistency",
+                "Performance and Scalability",
+                "Product prototype",
+                "Security"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "The correct option is c. Product prototype.\n\nExplanation:\nOperational factors in system design refer to characteristics that influence how a system functions and behaves once it is deployed and in use. These include:\n*   **Integrity and Consistency:** Ensuring data and processes remain correct and reliable.\n*   **Performance and Scalability:** How well the system performs under load and how easily it can be expanded.\n*   **Security:** Protecting the system from unauthorized access or malicious attacks.\n\nA **product prototype**, however, is a preliminary version of a product created during the *development* or *design* phase to test concepts or functionalities. It is a tool or output of the design process, not an inherent characteristic of the system's operation in its final environment.",
+            "answer": "Operational factors in system design refer to characteristics that influence how a system functions and behaves once it is deployed and in use. These include:\n*   **Integrity and Consistency:** Ensuring data and processes remain correct and reliable.\n*   **Performance and Scalability:** How well the system performs under load and how easily it can be expanded.\n*   **Security:** Protecting the system from unauthorized access or malicious attacks.\n\nA **product prototype**, however, is a preliminary version of a product created during the development or design phase to test concepts or functionalities. It is a tool or output of the design process, not an inherent characteristic of the system's operation in its final environment.",
             "answer_source": "generated",
             "chapter": "Unit 4:"
         },

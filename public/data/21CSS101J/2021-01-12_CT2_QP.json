@@ -4,7 +4,14 @@
     "questions": [
         {
             "question_number": "1.",
-            "question_text": "Which of the following operator takes only integer operands?\nA) +\nB) /\nC) %\nD) None of these",
+            "question_text": "Which of the following operator takes only integer operands?",
+            "options": [
+                "+",
+                "/",
+                "%",
+                "None of these"
+            ],
+            "correct_option": "C",
             "marks": 1,
             "answer": "The modulo operator (`%`) in C primarily takes only integer operands. While `+` (addition) and `/` (division) can operate on both integer and floating-point types, the `%` operator is specifically for finding the remainder of an integer division. Therefore, option C is correct.",
             "answer_source": "generated",
@@ -12,7 +19,14 @@
         },
         {
             "question_number": "2.",
-            "question_text": "In an expression involving || operator, evaluation\nI) Will be stopped if one of its components evaluates to false\nII) Will be stopped if one of its components evaluates to true\nIII) Takes place from right to left\nIV) Takes place from left to right\nA) I and II\nB) I and III\nC) II and III\nD) II and IV",
+            "question_text": "In an expression involving || operator, evaluation\nI) Will be stopped if one of its components evaluates to false\nII) Will be stopped if one of its components evaluates to true\nIII) Takes place from right to left\nIV) Takes place from left to right",
+            "options": [
+                "I and II",
+                "I and III",
+                "II and III",
+                "II and IV"
+            ],
+            "correct_option": "D",
             "marks": 1,
             "answer": "The logical OR operator (`||`) in C uses short-circuit evaluation. This means:\nII) Evaluation will be stopped if one of its components evaluates to true, because if any operand is true, the entire OR expression is true, and there's no need to evaluate further operands.\nIV) Evaluation takes place from left to right.\nTherefore, options II and IV are correct, making D the correct choice.",
             "answer_source": "generated",
@@ -21,6 +35,13 @@
         {
             "question_number": "3.",
             "question_text": "Find the output of the following:\n\n```c\nvoid main()\n{\nint i=0, j=1, k=2, m;\nm= i++ || j++ || k++ ;\nprintf(\"%d %d %d %d\", m, i, j, k);\n}\n```",
+            "options": [
+                "1 1 2 3",
+                "1 1 2 2",
+                "0 1 2 2",
+                "0 1 2 3"
+            ],
+            "correct_option": "B",
             "marks": 1,
             "answer": "Let's trace the execution:\n1.  `int i=0, j=1, k=2, m;`\n2.  `m = i++ || j++ || k++;`\n    *   `i++` evaluates to `0` (false). `i` becomes `1`. \n    *   Since the left operand of `||` was false, `j++` is evaluated. `j++` evaluates to `1` (true). `j` becomes `2`. \n    *   Due to short-circuiting, `k++` is NOT evaluated because the result of `j++` being true already determines the outcome of the `||` expression. `k` remains `2`. \n    *   The entire expression `i++ || j++ || k++` evaluates to true, which, when assigned to an integer `m`, typically results in `1` (or a non-zero value, often `1` by convention).\n    *   So, `m` becomes `1`.\n3.  `printf(\"%d %d %d %d\", m, i, j, k);` prints the current values of `m`, `i`, `j`, and `k`.\n    *   `m` is `1`\n    *   `i` is `1`\n    *   `j` is `2`\n    *   `k` is `2`\n\nThe output is `1 1 2 2`. Therefore, option B is correct.",
             "answer_source": "generated",
@@ -28,7 +49,14 @@
         },
         {
             "question_number": "4.",
-            "question_text": "What will be the output?\n\n```c\nvoid main()\n{\nint a=10, b=20;\nchar x=1, y=0;\nif(a,b,x,y)\nprintf(“EXAM”);\n}\n```",
+            "question_text": "What will be the output?\n\n```c\nvoid main()\n{\nint a=10, b=20;\nchar x=1, y=0;\nif(a,b,x,y)\nprintf(\"EXAM\");\n}\n```",
+            "options": [
+                "XAM is printed",
+                "EXAM is printed",
+                "COMPILER ERROR",
+                "Nothing is printed"
+            ],
+            "correct_option": "D",
             "marks": 1,
             "answer": "The `if` statement evaluates the expression `(a,b,x,y)`. This uses the comma operator. The comma operator evaluates its operands from left to right and the result of the entire expression is the value of its rightmost operand. In this case, the expression `(a,b,x,y)` evaluates to the value of `y`. Since `y` is initialized to `0`, the condition `if(0)` is false. Therefore, the `printf(“EXAM”);` statement inside the `if` block will not be executed, and the program will print nothing. Option D is correct.",
             "answer_source": "generated",
@@ -36,7 +64,14 @@
         },
         {
             "question_number": "5.",
-            "question_text": "Which operator from the following has the lowest priority?\nA) Assignment\nB) Division\nC) Comma\nD) Dot",
+            "question_text": "Which operator from the following has the lowest priority?",
+            "options": [
+                "Assignment",
+                "Division",
+                "Comma",
+                "Dot"
+            ],
+            "correct_option": "C",
             "marks": 1,
             "answer": "In C operator precedence:\n*   The Dot operator (`.`) has very high precedence (highest in the options).\n*   Division (`/`) has high precedence (arithmetic operators).\n*   Assignment (`=`) has lower precedence than arithmetic but higher than comma.\n*   The Comma operator (`,`) has the lowest precedence among all C operators. \nTherefore, option C is correct.",
             "answer_source": "generated",
@@ -44,7 +79,14 @@
         },
         {
             "question_number": "6.",
-            "question_text": "Array elements are always stored in --------- memory locations.\nA) Sequential\nB) Random\nC) Sequential and Random\nD) None of these",
+            "question_text": "Array elements are always stored in --------- memory locations.",
+            "options": [
+                "Sequential",
+                "Random",
+                "Sequential and Random",
+                "None of these"
+            ],
+            "correct_option": "A",
             "marks": 1,
             "answer": "Array elements in C are always stored in contiguous (sequential) memory locations. This property is fundamental to how arrays work and allows for efficient direct access to elements using an index. Therefore, option A is correct.",
             "answer_source": "generated",
@@ -52,15 +94,29 @@
         },
         {
             "question_number": "7.",
-            "question_text": "Let x be an array. Which of the following operations are illegal\n(throws error)?\nI) ++x\nII) x+1\nIII) x++\nIV) x*2\nA) I and II\nB) III and IV\nC) I, II and III\nD) I, III and IV",
+            "question_text": "Let x be an array. Which of the following operations are illegal\n(throws error)?\nI) ++x\nII) x+1\nIII) x++\nIV) x*2",
+            "options": [
+                "I and II",
+                "III and IV",
+                "I, II and III",
+                "I, III and IV"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "In C, an array name `x` acts as a constant pointer to its first element. This means its address value cannot be changed after declaration.\n*   `I) ++x`: Illegal. You cannot increment a constant pointer.\n*   `II) x+1`: Legal. This is valid pointer arithmetic, which results in a pointer to the next element. It does not modify `x` itself, but rather computes a new address.\n*   `III) x++`: Illegal. You cannot increment a constant pointer.\n*   `IV) x*2`: Illegal. You cannot multiply a pointer by an integer directly.\n\nTherefore, I, III, and IV are illegal operations. Option D is correct.",
+            "answer": "In C, an array name `x` acts as a constant pointer to its first element. This means its address value cannot be changed after declaration.\n*   `I) ++x`: Illegal. You cannot increment a constant pointer.\n*   `II) x+1`: Legal. This is valid pointer arithmetic, which results in a pointer to the next element. It does not modify `x` itself, but rather computes a new address.\n*   `III) x++`: Illegal. You cannot increment a constant pointer.\n*   `IV) x*2`: Illegal. You cannot multiply a pointer by an integer directly.\n\nTherefore, I, III and IV are illegal operations.",
             "answer_source": "generated",
             "chapter": "Unit 2: Pointer based Array manipulation"
         },
         {
             "question_number": "8.",
             "question_text": "What is the output of C Program.?\n\n```c\nint main() { int a[3] = {10,12,14}; a[1]=20; int i=0; while(i<3) {\nprintf(\"%d \", a[i]); i++; } }\n```",
+            "options": [
+                "20 12 14",
+                "10 20 14",
+                "10 12 20",
+                "Compiler error"
+            ],
+            "correct_option": "B",
             "marks": 1,
             "answer": "Let's trace the program execution:\n1.  `int a[3] = {10,12,14};` initializes the array `a` as `a[0]=10, a[1]=12, a[2]=14`.\n2.  `a[1]=20;` modifies the array. Now `a` is `{10, 20, 14}`.\n3.  `int i=0;` initializes `i` to 0.\n4.  The `while (i<3)` loop starts:\n    *   **i=0:** `i < 3` is true. `printf(\"%d \", a[0]);` prints `10 `. `i` becomes `1`.\n    *   **i=1:** `i < 3` is true. `printf(\"%d \", a[1]);` prints `20 `. `i` becomes `2`.\n    *   **i=2:** `i < 3` is true. `printf(\"%d \", a[2]);` prints `14 `. `i` becomes `3`.\n    *   **i=3:** `i < 3` is false. The loop terminates.\n\nThe final output is `10 20 14 `. Therefore, option B is correct.",
             "answer_source": "generated",
@@ -68,7 +124,14 @@
         },
         {
             "question_number": "9.",
-            "question_text": "What is the Format specifier used to print a String or Character\narray in C Printf or Scanf function?\nA) %c\nB) %C\nC) %s\nD) %w",
+            "question_text": "What is the Format specifier used to print a String or Character\narray in C Printf or Scanf function?",
+            "options": [
+                "%c",
+                "%C",
+                "%s",
+                "%w"
+            ],
+            "correct_option": "C",
             "marks": 1,
             "answer": "The format specifier `%s` is used to print or read a null-terminated string (character array) in C's `printf` and `scanf` functions. `%c` is used for a single character. Therefore, option C is correct.",
             "answer_source": "generated",
@@ -76,9 +139,16 @@
         },
         {
             "question_number": "10.",
-            "question_text": "What is the output of this C code?\n\n```c\nint main()\n{\nint foo();\n{\nvoid foo();\n}\nvoid foo()\n{\nprintf(\"2 \");\n}\nvoid f()\n{\nprintf(\"1 \");\nfoo();\n}\n```\n\nA. Compile time error as foo is local to main\nB. 1 2\nC. 2 1\nD. Compile time error due to declaration of functions inside main",
+            "question_text": "What is the output of this C code?\n\n```c\nint main()\n{\nvoid foo(), f();\nf();\n}\nvoid foo()\n{\nprintf(\"2 \");\n}\nvoid f()\n{\nprintf(\"1 \");\nfoo();\n}\n```",
+            "options": [
+                "Compile time error as foo is local to main",
+                "1 2",
+                "2 1",
+                "Compile time error due to declaration of functions inside main"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "This code will result in a compile-time error. In C, a function's return type is part of its signature. Here, `foo` is declared with two conflicting return types:\n1.  `int foo();` inside `main()`.\n2.  `void foo();` inside a block within `main()` and also as its global definition `void foo() {...}`.\n\nWhile the declarations inside `main` are local to `main`'s scope, the global definition of `foo` is `void`. If `main` were to call `foo()`, the compiler would use the `int foo();` prototype it saw, and then during linking, it would find a definition for `void foo()`, leading to a type mismatch error. Even without a call, many compilers will flag conflicting declarations for the same function within the same compilation unit. The most accurate description of the problem is conflicting declarations. Therefore, option D is correct.",
+            "answer": "Declaring `foo` and `f` inside `main` is a valid (local) declaration, and both are defined later in the file. `f()` prints `1 `, then calls `foo()`, which prints `2 `, so the output is `1 2`.",
             "answer_source": "generated",
             "chapter": "Unit 3: Function prototype declaration, function definition"
         },

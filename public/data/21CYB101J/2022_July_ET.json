@@ -4,161 +4,301 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Which of the following is known as the Schrodinger equation?\n(A) E = mc^2\n(B) λ = h/p\n(C) Ĥψ = Eψ\n(D) -h^2/2m ∇^2",
+            "question_text": "Which of the following is known as the Schrodinger equation?",
+            "options": [
+                "E = mc^2",
+                "λ = h/p",
+                "Ĥψ = Eψ",
+                "-h^2/2m ∇^2"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Ĥψ = Eψ\nExplanation: Ĥψ = Eψ is the formal expression for the Schrodinger equation in quantum mechanics.",
+            "answer": "Ĥψ = Eψ is the formal expression for the Schrodinger equation in quantum mechanics.",
             "answer_source": "generated",
             "chapter": "Unit 1: Variations of orbital energies"
         },
         {
             "question_number": "2",
-            "question_text": "Two electrons occupying the same orbital are distinguished by ________ quantum number.\n(A) Azimuthal\n(B) Spin\n(C) Magnetic\n(D) Orbital",
+            "question_text": "Two electrons occupying the same orbital are distinguished by ________ quantum number.",
+            "options": [
+                "Azimuthal",
+                "Spin",
+                "Magnetic",
+                "Orbital"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Spin\nExplanation: Spin quantum number differentiates two electrons in the same orbital.",
+            "answer": "Spin quantum number differentiates two electrons in the same orbital.",
             "answer_source": "generated",
             "chapter": "Unit 1: Electronic configurations"
         },
         {
             "question_number": "3",
-            "question_text": "Heisenberg uncertainty principle mathematically describe that the product of the position and momentum of the particle is _______\n(A) equal to h/p\n(B) equal to E-V\n(C) ≥ h/4π\n(D) ≥ E-V",
+            "question_text": "Heisenberg uncertainty principle mathematically describe that the product of the position and momentum of the particle is _______",
+            "options": [
+                "equal to h/p",
+                "equal to E-V",
+                "≥ h/4π",
+                "≥ E-V"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) ≥ h/4π\nExplanation: Heisenberg's principle states the uncertainty in position and momentum is at least h/4π.",
+            "answer": "Heisenberg's principle states the uncertainty in position and momentum is at least h/4π.",
             "answer_source": "generated",
             "chapter": "Unit 1: Electronic configurations"
         },
         {
             "question_number": "4",
-            "question_text": "Which of the following molecule is NOT homonuclear?\n(A) H2\n(B) N2\n(C) O2\n(D) NO",
+            "question_text": "Which of the following molecule is NOT homonuclear?",
+            "options": [
+                "H2",
+                "N2",
+                "O2",
+                "NO"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) NO\nExplanation: NO is heteronuclear, containing both nitrogen and oxygen.",
+            "answer": "NO is heteronuclear, containing both nitrogen and oxygen.",
             "answer_source": "generated",
             "chapter": "Unit 1: Periodic properties"
         },
         {
             "question_number": "5",
-            "question_text": "The filling up of Molecular orbital takes place according to ________\n(A) Huckel's rule\n(B) Hund's rule\n(C) Fajan's rule\n(D) CIP rule",
+            "question_text": "The filling up of Molecular orbital takes place according to ________",
+            "options": [
+                "Huckel's rule",
+                "Hund's rule",
+                "Fajan's rule",
+                "CIP rule"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Hund's rule\nExplanation: Electron filling in molecular orbitals follows Hund's rule of maximum multiplicity.",
+            "answer": "Electron filling in molecular orbitals follows Hund's rule of maximum multiplicity.",
             "answer_source": "generated",
             "chapter": "Unit 1: Electronic configurations"
         },
         {
             "question_number": "9",
-            "question_text": "One of the following complex is having “zero” oxidation state for the central metal ion.\n(A) K4[Fe(CN)6]\n(B) K3[Fe(CN)6]\n(C) [Ni(CO)4]\n(D) [Pt(NH3)4]Cl2",
+            "question_text": "One of the following complex is having “zero” oxidation state for the central metal ion.",
+            "options": [
+                "K4[Fe(CN)6]",
+                "K3[Fe(CN)6]",
+                "[Ni(CO)4]",
+                "[Pt(NH3)4]Cl2"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) [Ni(CO)4]\nExplanation: In [Ni(CO)4], nickel has an oxidation state of zero.",
+            "answer": "In [Ni(CO)4], nickel has an oxidation state of zero.",
             "answer_source": "generated",
             "chapter": "Unit 1: Coordination numbers and geometries"
         },
         {
             "question_number": "10",
-            "question_text": "The energy required to pair up the electrons is called _________\n(A) Dissociation\n(B) Pairing\n(C) Crystal field stabilization\n(D) Potential energy",
+            "question_text": "The energy required to pair up the electrons is called _________",
+            "options": [
+                "Dissociation",
+                "Pairing",
+                "Crystal field stabilization",
+                "Potential energy"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Pairing\nExplanation: Pairing energy refers to the energy needed to pair two electrons.",
+            "answer": "Pairing energy refers to the energy needed to pair two electrons.",
             "answer_source": "generated",
             "chapter": "Unit 1: Crystal field theory"
         },
         {
             "question_number": "11",
-            "question_text": "Minimum inter-planar spacing required for Bragg's diffraction is ______.\n(A) λ/4\n(B) 4π\n(C) λ/2\n(D) 2λ",
+            "question_text": "Minimum inter-planar spacing required for Bragg's diffraction is ______.",
+            "options": [
+                "λ/4",
+                "4π",
+                "λ/2",
+                "2λ"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) λ/2\nExplanation: Bragg's law gives d_min = λ/2 for the first order diffraction.",
+            "answer": "Bragg's law gives d_min = λ/2 for the first order diffraction.",
             "answer_source": "generated",
             "chapter": "Unit 5: Surface Characterisation techniques - XRD"
         },
         {
             "question_number": "13",
-            "question_text": "The Zeff for 4s electron in potassium atom (Z=19) is _______\n(A) 16.8\n(B) 10\n(C) 6.8\n(D) 2.20",
+            "question_text": "The Zeff for 4s electron in potassium atom (Z=19) is _______",
+            "options": [
+                "16.8",
+                "10",
+                "6.8",
+                "2.20"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) 2.20\nExplanation: The effective nuclear charge (Zeff) for 4s electron in K is 2.20.",
+            "answer": "The effective nuclear charge (Zeff) for 4s electron in K is 2.20.",
             "answer_source": "generated",
             "chapter": "Unit 1: Effective nuclear charge"
         },
         {
             "question_number": "14",
-            "question_text": "The co-ordination number and oxidation state for the cobalt atom in the complex [Co(NH3)5Cl]Cl2 is ______ and ______\n(A) 4; +2\n(B) 4; +3\n(C) 6; +3\n(D) 6; +1",
+            "question_text": "The co-ordination number and oxidation state for the cobalt atom in the complex [Co(NH3)5Cl]Cl2 is ______ and ______",
+            "options": [
+                "4; +2",
+                "4; +3",
+                "6; +3",
+                "6; +1"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) 6; +3\nExplanation: Co is surrounded by 6 ligands (coordination number 6) and has oxidation state +3.",
+            "answer": "Co is surrounded by 6 ligands (coordination number 6) and has oxidation state +3.",
             "answer_source": "generated",
             "chapter": "Unit 1: Coordination numbers and geometries"
         },
         {
             "question_number": "16",
-            "question_text": "Chiral molecules which are non-superimposable mirror images of each other are called ______\n(A) Diastereomers\n(B) Meso compounds\n(C) Racemic mixture\n(D) Enantiomers",
+            "question_text": "Chiral molecules which are non-superimposable mirror images of each other are called ______",
+            "options": [
+                "Diastereomers",
+                "Meso compounds",
+                "Racemic mixture",
+                "Enantiomers"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Enantiomers\nExplanation: Enantiomers are non-superimposable mirror images of each other.",
+            "answer": "Enantiomers are non-superimposable mirror images of each other.",
             "answer_source": "generated",
             "chapter": "Unit 3: Stereochemistry - Enantiomers"
         },
         {
             "question_number": "17",
-            "question_text": "The plane which divides the molecule into 2 equal parts so that each half is the mirror image of the other half is called ________\n(A) Centre of symmetry\n(B) Plane of symmetry\n(C) Axis of symmetry\n(D) Improper axis of symmetry",
+            "question_text": "The plane which divides the molecule into 2 equal parts so that each half is the mirror image of the other half is called ________",
+            "options": [
+                "Centre of symmetry",
+                "Plane of symmetry",
+                "Axis of symmetry",
+                "Improper axis of symmetry"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Plane of symmetry\nExplanation: A plane of symmetry divides a molecule into two mirror image halves.",
+            "answer": "A plane of symmetry divides a molecule into two mirror image halves.",
             "answer_source": "generated",
             "chapter": "Unit 3: Symmetry"
         },
         {
             "question_number": "18",
-            "question_text": "If our eyes travel in counter clockwise, direction from the functional group of highest priority to lowest priority, then the configuration is ______ .\n(A) R\n(B) S\n(C) E\n(D) Z",
+            "question_text": "If our eyes travel in counter clockwise, direction from the functional group of highest priority to lowest priority, then the configuration is ______ .",
+            "options": [
+                "R",
+                "S",
+                "E",
+                "Z"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) S\nExplanation: Counter clockwise direction from high to low priority is S configuration.",
+            "answer": "Counter clockwise direction from high to low priority is S configuration.",
             "answer_source": "generated",
             "chapter": "Unit 3: Stereochemistry - Configurations"
         },
         {
             "question_number": "19",
-            "question_text": "Which of the following compound would exhibit geometrical isomerism?\n(A) 2 – Butene\n(B) n-propyl iodide\n(C) Cyclopropane\n(D) Butanal",
+            "question_text": "Which of the following compound would exhibit geometrical isomerism?",
+            "options": [
+                "2 – Butene",
+                "n-propyl iodide",
+                "Cyclopropane",
+                "Butanal"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) 2 – Butene\nExplanation: 2–Butene exhibits geometrical (cis-trans) isomerism.",
+            "answer": "2–Butene exhibits geometrical (cis-trans) isomerism.",
             "answer_source": "generated",
             "chapter": "Unit 3: Structural isomers and stereoisomers"
         },
         {
             "question_number": "20",
-            "question_text": "Identify the hard acid from the following:\n(A) AlCl3\n(B) N2H4\n(C) H2O\n(D) OH-",
+            "question_text": "Identify the hard acid from the following:",
+            "options": [
+                "AlCl3",
+                "N2H4",
+                "H2O",
+                "OH-"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) AlCl3\nExplanation: AlCl3 is a hard acid according to HSAB theory.",
+            "answer": "AlCl3 is a hard acid according to HSAB theory.",
             "answer_source": "generated",
             "chapter": "Unit 1: Hard soft acids and bases"
         },
         {
             "question_number": "21",
-            "question_text": "In gauche conformations, the methyl groups are\n(A) 60° apart\n(B) 90° apart\n(C) 180° apart\n(D) 360° apart",
+            "question_text": "In gauche conformations, the methyl groups are",
+            "options": [
+                "60° apart",
+                "90° apart",
+                "180° apart",
+                "360° apart"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) 60° apart\nExplanation: In gauche, methyl groups are 60° apart in the Newman projection.",
+            "answer": "In gauche, methyl groups are 60° apart in the Newman projection.",
             "answer_source": "generated",
             "chapter": "Unit 3: Conformational analysis"
         },
         {
             "question_number": "22",
-            "question_text": "[Co(NH3)5 NO2]Cl2 and [Co(NH3)5 ONO]Cl2\n(A) Geometrical isomers\n(B) Optical isomers\n(C) Linkage isomers\n(D) Co-ordination isomers",
+            "question_text": "[Co(NH3)5 NO2]Cl2 and [Co(NH3)5 ONO]Cl2",
+            "options": [
+                "Geometrical isomers",
+                "Optical isomers",
+                "Linkage isomers",
+                "Co-ordination isomers"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Linkage isomers\nExplanation: Different connectivity of the NO2/ONO ligand forms linkage isomers.",
+            "answer": "Different connectivity of the NO2/ONO ligand forms linkage isomers.",
             "answer_source": "generated",
             "chapter": "Unit 1: Isomerism in transitional metal compounds"
         },
         {
             "question_number": "23",
-            "question_text": "Find the number of stereo isomers for CH3-CH(OH)-CH=CH-CH3\n(A) 1\n(B) 2\n(C) 3\n(D) 4",
+            "question_text": "Find the number of stereo isomers for CH3-CH(OH)-CH=CH-CH3",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) 4\nExplanation: Both the double bond (geometrical) and OH group (chiral center) give 2×2=4 stereoisomers.",
+            "answer": "Both the double bond (geometrical) and OH group (chiral center) give 2×2=4 stereoisomers.",
             "answer_source": "generated",
             "chapter": "Unit 3: Stereochemistry - Structural isomers and stereoisomers"
         },
         {
             "question_number": "24",
-            "question_text": "Which of the following act as an initiator in free radical mechanism?\n(A) H2SO4\n(B) Benzoyl peroxide\n(C) KMnO4\n(D) CrO3",
+            "question_text": "Which of the following act as an initiator in free radical mechanism?",
+            "options": [
+                "H2SO4",
+                "Benzoyl peroxide",
+                "KMnO4",
+                "CrO3"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Benzoyl peroxide\nExplanation: Benzoyl peroxide generates free radicals and acts as an initiator in polymerization.",
+            "answer": "Benzoyl peroxide generates free radicals and acts as an initiator in polymerization.",
             "answer_source": "generated",
             "chapter": "Unit 4: Types of Polymerization"
         },
         {
             "question_number": "25",
-            "question_text": "An acceptor of pair of electrons is called ________\n(A) Nucleophile\n(B) Carbocation\n(C) Anion\n(D) Electrophile",
+            "question_text": "An acceptor of pair of electrons is called ________",
+            "options": [
+                "Nucleophile",
+                "Carbocation",
+                "Anion",
+                "Electrophile"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Electrophile\nExplanation: Electrophiles accept pairs of electrons during chemical reactions.",
+            "answer": "Electrophiles accept pairs of electrons during chemical reactions.",
             "answer_source": "generated",
             "chapter": "Unit 3: Introduction to reactions"
         }

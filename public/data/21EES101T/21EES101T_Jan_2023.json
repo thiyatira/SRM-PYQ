@@ -4,153 +4,285 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "In the circuit shown below, find the current flowing through 12 Ω resistor.\n(A) 8 A\n(B) 5 A\n(C) 2 A\n(D) 4 A",
+            "question_text": "In the circuit shown below, find the current flowing through 12 Ω resistor.",
+            "options": [
+                "8 A",
+                "5 A",
+                "2 A",
+                "4 A"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: Using current division rule, the current through the 12 Ω resistor is I = 10A * (3Ω / (12Ω + 3Ω)) = 10 * (3 / 15) = 2 A.",
+            "answer": "Using current division rule, the current through the 12 Ω resistor is I = 10A * (3Ω / (12Ω + 3Ω)) = 10 * (3 / 15) = 2 A.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
         {
             "question_number": "2",
-            "question_text": "What is the value of R in the circuit shown\n(A) 2.5 Ω\n(B) 5 Ω\n(C) 7.5 Ω\n(D) 10 Ω",
+            "question_text": "What is the value of R in the circuit shown",
+            "options": [
+                "2.5 Ω",
+                "5 Ω",
+                "7.5 Ω",
+                "10 Ω"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: The total current entering the parallel circuit is 6A. The current through the 5Ω resistor is 4A. Hence, the current through R is 6A - 4A = 2A. The voltage across the parallel branches is equal: 4A * 5Ω = 20V. Therefore, R = V/I = 20V / 2A = 10 Ω.",
+            "answer": "The total current entering the parallel circuit is 6A. The current through the 5Ω resistor is 4A. Hence, the current through R is 6A - 4A = 2A. The voltage across the parallel branches is equal: 4A * 5Ω = 20V. Therefore, R = V/I = 20V / 2A = 10 Ω.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
         {
             "question_number": "4",
-            "question_text": "For a three phase delta connected system, the line voltage is 1100 V and line current is 500 A, Calculate the value of phase voltage and phase current.\n(A) 1100 V, 500 A\n(B) 1100 V, 288.67 A\n(C) 635.08 V, 500 A\n(D) 635.08 V, 288.67 A",
+            "question_text": "For a three phase delta connected system, the line voltage is 1100 V and line current is 500 A, Calculate the value of phase voltage and phase current.",
+            "options": [
+                "1100 V, 500 A",
+                "1100 V, 288.67 A",
+                "635.08 V, 500 A",
+                "635.08 V, 288.67 A"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: In a delta connected system, Phase Voltage = Line Voltage = 1100 V. Phase Current = Line Current / √3 = 500 / 1.732 = 288.67 A.",
+            "answer": "In a delta connected system, Phase Voltage = Line Voltage = 1100 V. Phase Current = Line Current / √3 = 500 / 1.732 = 288.67 A.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
         {
             "question_number": "5",
-            "question_text": "Which of the following is not a terminal of BJT?\n(A) Emitter\n(B) Base\n(C) Collector\n(D) Gate",
+            "question_text": "Which of the following is not a terminal of BJT?",
+            "options": [
+                "Emitter",
+                "Base",
+                "Collector",
+                "Gate"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: The terminals of a BJT are Emitter, Base, and Collector. Gate is a terminal used in FET devices.",
+            "answer": "The terminals of a BJT are Emitter, Base, and Collector. Gate is a terminal used in FET devices.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
         {
             "question_number": "6",
-            "question_text": "The Algebraic function for Ex-NOR Gate is\n(A) A'B+AB'\n(B) AB+A'B'\n(C) AB+A'B\n(D) AB+AB'",
+            "question_text": "The Algebraic function for Ex-NOR Gate is",
+            "options": [
+                "A'B+AB'",
+                "AB+A'B'",
+                "AB+A'B",
+                "AB+AB'"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: The logical expression for an Ex-NOR gate is AB + A'B'.",
+            "answer": "The logical expression for an Ex-NOR gate is AB + A'B'.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
         {
             "question_number": "7",
-            "question_text": "The minimal SOP for the function Y(A,B,C) = Σm(0,1,2,3,4,5,6,7) is\n(A) 0\n(B) 1\n(C) A\n(D) A'",
+            "question_text": "The minimal SOP for the function Y(A,B,C) = Σm(0,1,2,3,4,5,6,7) is",
+            "options": [
+                "0",
+                "1",
+                "A",
+                "A'"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: Since all the possible minterms for 3 variables are present, the logical output is always high (1).",
+            "answer": "Since all the possible minterms for 3 variables are present, the logical output is always high (1).",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
         {
             "question_number": "8",
-            "question_text": "FPGA stands for\n(A) Flexible Programmable Gate Array\n(B) Field Programmable Gate Acceleration\n(C) Flexible Programmable Gate Acceleration\n(D) Field Programmable Gate Array",
+            "question_text": "FPGA stands for",
+            "options": [
+                "Flexible Programmable Gate Array",
+                "Field Programmable Gate Acceleration",
+                "Flexible Programmable Gate Acceleration",
+                "Field Programmable Gate Array"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: FPGA is the acronym for Field Programmable Gate Array.",
+            "answer": "FPGA is the acronym for Field Programmable Gate Array.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
         {
             "question_number": "9",
-            "question_text": "The transformer core is made up of laminations to reduce\n(A) iron losses\n(B) hysteresis losses\n(C) eddy current losses\n(D) Stray losses",
+            "question_text": "The transformer core is made up of laminations to reduce",
+            "options": [
+                "iron losses",
+                "hysteresis losses",
+                "eddy current losses",
+                "Stray losses"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: Laminating the transformer core increases electrical resistance parallel to the core's surface, which directly reduces eddy current losses.",
+            "answer": "Laminating the transformer core increases electrical resistance parallel to the core's surface, which directly reduces eddy current losses.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
         {
             "question_number": "10",
-            "question_text": "In a three phase induction motor, the three phase winding R,Y,B are connected in\n(A) series\n(B) parallel\n(C) series and parallel\n(D) star",
+            "question_text": "In a three phase induction motor, the three phase winding R,Y,B are connected in",
+            "options": [
+                "series",
+                "parallel",
+                "series and parallel",
+                "star"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: Three-phase windings in induction motors are practically connected in either star (wye) or delta configuration.",
+            "answer": "Three-phase windings in induction motors are practically connected in either star (wye) or delta configuration.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
         {
             "question_number": "11",
-            "question_text": "A chopper is a device that converts\n(A) fixed AC to variable AC\n(B) fixed DC to variable AC\n(C) fixed AC to variable DC\n(D) fixed DC to variable DC",
+            "question_text": "A chopper is a device that converts",
+            "options": [
+                "fixed AC to variable AC",
+                "fixed DC to variable AC",
+                "fixed AC to variable DC",
+                "fixed DC to variable DC"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: A chopper is a static power electronic device that converts a fixed DC input voltage to a variable DC output voltage.",
+            "answer": "A chopper is a static power electronic device that converts a fixed DC input voltage to a variable DC output voltage.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
         {
             "question_number": "12",
-            "question_text": "A step down transformer has a primary voltage and current of 1000 V, 20 A. Its secondary voltage and current are\n(A) 100 V, 200 A\n(B) 10000 V, 2 A\n(C) 10000 V, 20 A\n(D) 100 V, 20 A",
+            "question_text": "A step down transformer has a primary voltage and current of 1000 V, 20 A. Its secondary voltage and current are",
+            "options": [
+                "100 V, 200 A",
+                "10000 V, 2 A",
+                "10000 V, 20 A",
+                "100 V, 20 A"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: For an ideal transformer, input power = output power (1000V * 20A = 20,000 VA). A step-down transformer lowers the voltage, so 100V is valid, making the current 200A to conserve power.",
+            "answer": "For an ideal transformer, input power = output power (1000V * 20A = 20,000 VA). A step-down transformer lowers the voltage, so 100V is valid, making the current 200A to conserve power.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
         {
             "question_number": "13",
-            "question_text": "Moving coil instruments are used to measure\n(A) DC quantity only\n(B) AC quantity only\n(C) both AC and DC quantity\n(D) power and energy",
+            "question_text": "Moving coil instruments are used to measure",
+            "options": [
+                "DC quantity only",
+                "AC quantity only",
+                "both AC and DC quantity",
+                "power and energy"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: Permanent Magnet Moving Coil (PMMC) instruments respond only to average values and are exclusively used for DC measurements.",
+            "answer": "Permanent Magnet Moving Coil (PMMC) instruments respond only to average values and are exclusively used for DC measurements.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
         {
             "question_number": "14",
-            "question_text": "Digital multimeter cannot measure\n(A) voltage\n(B) current\n(C) power\n(D) Resistance",
+            "question_text": "Digital multimeter cannot measure",
+            "options": [
+                "voltage",
+                "current",
+                "power",
+                "Resistance"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: A standard digital multimeter is capable of measuring voltage, current, and resistance, but it cannot measure electrical power directly.",
+            "answer": "A standard digital multimeter is capable of measuring voltage, current, and resistance, but it cannot measure electrical power directly.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
         {
             "question_number": "15",
-            "question_text": "A LVDT is used to measure\n(A) frequency\n(B) displacement\n(C) temperature\n(D) speed",
+            "question_text": "A LVDT is used to measure",
+            "options": [
+                "frequency",
+                "displacement",
+                "temperature",
+                "speed"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: The Linear Variable Differential Transformer (LVDT) is an inductive transducer primarily used for measuring linear displacement.",
+            "answer": "The Linear Variable Differential Transformer (LVDT) is an inductive transducer primarily used for measuring linear displacement.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
         {
             "question_number": "16",
-            "question_text": "The symbol represents _______ device\n(A) LDR\n(B) LED\n(C) LCD\n(D) Photo resist transducer",
+            "question_text": "The symbol represents _______ device",
+            "options": [
+                "LDR",
+                "LED",
+                "LCD",
+                "Photo resist transducer"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: The symbol of a resistor enclosed in a circle with incoming light arrows denotes a Light Dependent Resistor (LDR).",
+            "answer": "The symbol of a resistor enclosed in a circle with incoming light arrows denotes a Light Dependent Resistor (LDR).",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
         {
             "question_number": "17",
-            "question_text": "What is the highest AC transmission line voltage in India?\n(A) 400 kV\n(B) 765 kV\n(C) 1100 kV\n(D) 1265 kV",
+            "question_text": "What is the highest AC transmission line voltage in India?",
+            "options": [
+                "400 kV",
+                "765 kV",
+                "1100 kV",
+                "1265 kV"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: Standard operational high-capacity extra-high voltage (EHV) AC transmission lines in India commonly operate up to 765 kV.",
+            "answer": "Standard operational high-capacity extra-high voltage (EHV) AC transmission lines in India commonly operate up to 765 kV.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
         {
             "question_number": "18",
-            "question_text": "Which of the following is not a renewable energy resource?\n(A) Solar power\n(B) Wind power\n(C) Thermal power\n(D) Tidal power",
+            "question_text": "Which of the following is not a renewable energy resource?",
+            "options": [
+                "Solar power",
+                "Wind power",
+                "Thermal power",
+                "Tidal power"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: Thermal power generally relies on fossil fuels (like coal), which are non-renewable resources.",
+            "answer": "Thermal power generally relies on fossil fuels (like coal), which are non-renewable resources.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
         {
             "question_number": "19",
-            "question_text": "What is the most common fuel used in fuel cells?\n(A) Water\n(B) Hydrogen\n(C) Nitrogen\n(D) Sulphur",
+            "question_text": "What is the most common fuel used in fuel cells?",
+            "options": [
+                "Water",
+                "Hydrogen",
+                "Nitrogen",
+                "Sulphur"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: The most widely used fuel in modern fuel cells to generate electricity is hydrogen.",
+            "answer": "The most widely used fuel in modern fuel cells to generate electricity is hydrogen.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
         {
             "question_number": "20",
-            "question_text": "Which types of battery is highly preffered for EVs?\n(A) Lead acid battery\n(B) Nickel cadmium battery\n(C) Nickel cadmium battery\n(D) Lithium ion battery",
+            "question_text": "Which types of battery is highly preffered for EVs?",
+            "options": [
+                "Lead acid battery",
+                "Nickel cadmium battery",
+                "Lithium ion battery"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(D)\nExplanation: Lithium-ion batteries are heavily preferred for Electric Vehicles (EVs) due to their high energy density and lightweight characteristics.",
+            "answer": "Lithium-ion batteries are heavily preferred for Electric Vehicles (EVs) due to their high energy density and lightweight characteristics.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         }

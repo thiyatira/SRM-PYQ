@@ -5,81 +5,151 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "The function of $R_{in}$ is to\na. load the data from bus to register\nb. place the content of register onto the bus\nc. fetch the data\nd. execute the data",
+            "question_text": "The function of $R_{in}$ is to",
+            "options": [
+                "load the data from bus to register",
+                "place the content of register onto the bus",
+                "fetch the data",
+                "execute the data"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "a. load the data from bus to register\n\n**Rationale:** The $R_{in}$ control signal enables the input gate of register R, allowing data present on the common processor bus to be loaded into the register.",
+            "answer": "The $R_{in}$ control signal enables the input gate of register R, allowing data present on the common processor bus to be loaded into the register.",
             "answer_source": "provided",
             "chapter": "Unit 4: Control Unit"
         },
         {
             "question_number": "2",
-            "question_text": "What is the reason for incrementing the PC by 4 in multi-bus organization?\na. The word size is 8 bit\nb. The word size is 16 bit\ne. The word size is 32 bit\nc. The word size is 64 bit",
+            "question_text": "What is the reason for incrementing the PC by 4 in multi-bus organization?",
+            "options": [
+                "The word size is 8 bit",
+                "The word size is 16 bit",
+                "The word size is 32 bit",
+                "The word size is 64 bit"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "e. The word size is 32 bit\n\n**Rationale:** In a 32-bit word-addressable or byte-addressable system, each instruction occupies 4 bytes (32 bits). Therefore, the Program Counter (PC) must be incremented by 4 to point to the next instruction.",
+            "answer": "In a 32-bit word-addressable or byte-addressable system, each instruction occupies 4 bytes (32 bits). Therefore, the Program Counter (PC) must be incremented by 4 to point to the next instruction.",
             "answer_source": "provided",
             "chapter": "Unit 4: Control Unit"
         },
         {
             "question_number": "3",
-            "question_text": "Y, temp and Z in single bus organization refers to\na. General purpose registers used by the processor\nb. Temporary registers used by processor\nc. Accumulator\nd. Special purpose registers used by processor",
+            "question_text": "Y, temp and Z in single bus organization refers to",
+            "options": [
+                "General purpose registers used by the processor",
+                "Temporary registers used by processor",
+                "Accumulator",
+                "Special purpose registers used by processor"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b. Temporary registers used by processor\n\n**Rationale:** In a single-bus processor organization, registers Y, Z, and Temp are internal temporary registers used by the processor to hold operand values during execution without altering user-visible general-purpose registers.",
+            "answer": "In a single-bus processor organization, registers Y, Z, and Temp are internal temporary registers used by the processor to hold operand values during execution without altering user-visible general-purpose registers.",
             "answer_source": "provided",
             "chapter": "Unit 4: Control Unit"
         },
         {
             "question_number": "4",
-            "question_text": "How many buffers are required in the Hardware organization for 2 stage pipeline and 4 stage pipeline?\na. 2, 1\nb. 1, 3\nc. 3, 1\nd. 2, 4",
+            "question_text": "How many buffers are required in the Hardware organization for 2 stage pipeline and 4 stage pipeline?",
+            "options": [
+                "2, 1",
+                "1, 3",
+                "3, 1",
+                "2, 4"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "c. 3, 1\n\n**Rationale:** Based on the provided answer key, (c) is highlighted. Structurally, a pipeline with $k$ stages requires $k-1$ intermediate buffers. A 2-stage pipeline requires 1 buffer, and a 4-stage pipeline requires 3 buffers.",
-            "answer_source": "provided",
+            "answer": "A pipeline with $k$ stages needs $k-1$ inter-stage buffers: a 2-stage pipeline needs 1 buffer and a 4-stage pipeline needs 3 buffers, so the answer is (1, 3). (The printed answer key marked option C, which does not match this.)",
+            "answer_source": "generated",
             "chapter": "Unit 4: Control Unit"
         },
         {
             "question_number": "5",
-            "question_text": "If the state machine moves from LNT to LT in 2-state branch prediction algorithm, then\na. Branch is taken\nb. Branch is not taken\nc. Branch is strongly taken\nd. Branch is strongly not taken",
+            "question_text": "If the state machine moves from LNT to LT in 2-state branch prediction algorithm, then",
+            "options": [
+                "Branch is taken",
+                "Branch is not taken",
+                "Branch is strongly taken",
+                "Branch is strongly not taken"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "a. Branch is taken\n\n**Rationale:** In a dynamic 2-state branch prediction algorithm, a transition from 'Likely Not Taken' (LNT) to 'Likely Taken' (LT) occurs when the branch is actually taken.",
+            "answer": "In a dynamic 2-state branch prediction algorithm, a transition from 'Likely Not Taken' (LNT) to 'Likely Taken' (LT) occurs when the branch is actually taken.",
             "answer_source": "provided",
             "chapter": "Unit 4: Control Unit"
         },
         {
             "question_number": "6",
-            "question_text": "What is the primary need for parallelism in computing?\na) Reduce power consumption\nb) Increase performance\nc) Decrease memory usage\nd) Enhance security",
+            "question_text": "What is the primary need for parallelism in computing?",
+            "options": [
+                "Reduce power consumption",
+                "Increase performance",
+                "Decrease memory usage",
+                "Enhance security"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b) Increase performance\n\n**Rationale:** Parallelism allows multiple computations to be executed simultaneously, which significantly increases processing speed and overall system throughput.",
+            "answer": "Parallelism allows multiple computations to be executed simultaneously, which significantly increases processing speed and overall system throughput.",
             "answer_source": "provided",
             "chapter": "Unit 5: Parallelism"
         },
         {
             "question_number": "7",
-            "question_text": "Flynn's classification categorizes parallel systems based on what two key parameters?\na) Processing power and memory size\nb) Instruction stream and data stream\nc) Program control and data flow\nd) Data-level parallelism and task-level parallelism",
+            "question_text": "Flynn's classification categorizes parallel systems based on what two key parameters?",
+            "options": [
+                "Processing power and memory size",
+                "Instruction stream and data stream",
+                "Program control and data flow",
+                "Data-level parallelism and task-level parallelism"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b) Instruction stream and data stream\n\n**Rationale:** Flynn's classical taxonomy classifies computer architectures based on the number of concurrent Instruction Streams (Single/Multiple) and Data Streams (Single/Multiple).",
+            "answer": "Flynn's classical taxonomy classifies computer architectures based on the number of concurrent Instruction Streams (Single/Multiple) and Data Streams (Single/Multiple).",
             "answer_source": "provided",
             "chapter": "Unit 5: Parallelism"
         },
         {
             "question_number": "8",
-            "question_text": "What is the primary advantage of the Thumb instruction set in ARM processors?\na) Greater computational power\nb) Smaller code size\nc) Enhanced multimedia capabilities\nd) Improved memory management",
+            "question_text": "What is the primary advantage of the Thumb instruction set in ARM processors?",
+            "options": [
+                "Greater computational power",
+                "Smaller code size",
+                "Enhanced multimedia capabilities",
+                "Improved memory management"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b) Smaller code size\n\n**Rationale:** The Thumb instruction set consists of 16-bit compressed representations of 32-bit ARM instructions, designed to achieve higher code density and reduce the memory footprint.",
+            "answer": "The Thumb instruction set consists of 16-bit compressed representations of 32-bit ARM instructions, designed to achieve higher code density and reduce the memory footprint.",
             "answer_source": "provided",
             "chapter": "Unit 5: Parallelism"
         },
         {
             "question_number": "9",
-            "question_text": "Which of the following programming challenges is often associated with MIMD architectures?\na) Limited processing power\nb) Data synchronization and communication overhead\nc) Lack of parallelism\nd) D. Reduced memory capacity",
+            "question_text": "Which of the following programming challenges is often associated with MIMD architectures?",
+            "options": [
+                "Limited processing power",
+                "Data synchronization and communication overhead",
+                "Lack of parallelism",
+                "Reduced memory capacity"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b) Data synchronization and communication overhead\n\n**Rationale:** Because Multiple Instruction, Multiple Data (MIMD) systems have autonomous processors executing independent programs, managing shared resources, avoiding race conditions, and synchronizing data across nodes create substantial communication overhead.",
+            "answer": "Because Multiple Instruction, Multiple Data (MIMD) systems have autonomous processors executing independent programs, managing shared resources, avoiding race conditions, and synchronizing data across nodes create substantial communication overhead.",
             "answer_source": "provided",
             "chapter": "Unit 5: Parallelism"
         },
         {
             "question_number": "10",
-            "question_text": "Which of the following is a key feature of ARM5 architecture?\na. 64-bit instruction set\nb. SIMD (Single Instruction, Multiple Data) support\nc. Variable-length instruction encoding\nd. Superscalar execution",
+            "question_text": "Which of the following is a key feature of ARM5 architecture?",
+            "options": [
+                "64-bit instruction set",
+                "SIMD (Single Instruction, Multiple Data) support",
+                "Variable-length instruction encoding",
+                "Superscalar execution"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "c. Variable-length instruction encoding\n\n**Rationale:** According to the provided key, variable-length instruction encoding (e.g., supporting both standard 32-bit ARM and 16-bit Thumb instructions) is highlighted as a key architectural feature.",
+            "answer": "According to the provided key, variable-length instruction encoding (e.g., supporting both standard 32-bit ARM and 16-bit Thumb instructions) is highlighted as a key architectural feature.",
             "answer_source": "provided",
             "chapter": "Unit 5: Parallelism"
         },

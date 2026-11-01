@@ -5,81 +5,151 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "```c\nstruct date { \n int day, month, year; \n};\nstruct student \n{ \n char name[20]; \n struct date dob; \n};\n\n```\n\nWhich among the listed will access the member month of student s1?\nA. s1->dob->month \nB. s1.dob.month \nC. s1->dob.month \nD. dob.month(s1)",
+            "question_text": "```c\nstruct date { \n int day, month, year; \n};\nstruct student \n{ \n char name[20]; \n struct date dob; \n};\n\n```\n\nWhich among the listed will access the member month of student s1?",
+            "options": [
+                "s1->dob->month",
+                "s1.dob.month",
+                "s1->dob.month",
+                "dob.month(s1)"
+            ],
+            "correct_option": "B",
             "marks": null,
-            "answer": "B. s1.dob.month\n\nRationale: Since `s1` is a direct structure variable of type `struct student` and its nested member `dob` is a direct structure variable of type `struct date`, the member access operator `.` (dot) must be used at both levels.",
+            "answer": "Since `s1` is a direct structure variable of type `struct student` and its nested member `dob` is a direct structure variable of type `struct date`, the member access operator `.` (dot) must be used at both levels.",
             "answer_source": "provided",
             "chapter": "Unit 1: Introduction"
         },
         {
             "question_number": "2",
-            "question_text": "```c\nstruct student \n{ \n char name[20]; \n int marks; \n};\n\n```\n\nWhich among the listed represent is the correct syntax to declare a variable s for 10 student details?\nA. struct student s; \nB. student s[10]; \nC. struct student s[10]; \nD. struct s[10];",
+            "question_text": "```c\nstruct student \n{ \n char name[20]; \n int marks; \n};\n\n```\n\nWhich among the listed represent is the correct syntax to declare a variable s for 10 student details?",
+            "options": [
+                "struct student s;",
+                "student s[10];",
+                "struct student s[10];",
+                "struct s[10];"
+            ],
+            "correct_option": "C",
             "marks": null,
-            "answer": "C. struct student s[10];\n\nRationale: In C, to declare an array of structures, the syntax is `struct <struct_tag> <variable_name>[<size>];`.",
+            "answer": "In C, to declare an array of structures, the syntax is `struct <struct_tag> <variable_name>[<size>];`.",
             "answer_source": "provided",
             "chapter": "Unit 1: Introduction"
         },
         {
             "question_number": "3",
-            "question_text": "One algorithm has time complexity $O(n^2)$ and another has $\\Theta(n \\log n)$. Which one is always asymptotically better for large input sizes?\nA. $O(n^2)$ \nB. $\\Theta(n \\log n)$ \nC. Cannot be determined without constant factors \nD. Both are equivalent",
+            "question_text": "One algorithm has time complexity $O(n^2)$ and another has $\\Theta(n \\log n)$. Which one is always asymptotically better for large input sizes?",
+            "options": [
+                "$O(n^2)$",
+                "$\\Theta(n \\log n)$",
+                "Cannot be determined without constant factors",
+                "Both are equivalent"
+            ],
+            "correct_option": "B",
             "marks": null,
-            "answer": "B. $\\Theta(n \\log n)$\n\nRationale: Asymptotically, as $n$ grows very large, $n \\log n$ grows much slower than $n^2$. Thus, $\\Theta(n \\log n)$ represents a better complexity class than $O(n^2)$.",
+            "answer": "Asymptotically, as $n$ grows very large, $n \\log n$ grows much slower than $n^2$. Thus, $\\Theta(n \\log n)$ represents a better complexity class than $O(n^2)$.",
             "answer_source": "provided",
             "chapter": "Unit 1: Introduction"
         },
         {
             "question_number": "4",
-            "question_text": "```c\nstruct node { \n int data; \n struct node *next; \n};\nint main() { \n struct node *head; \n // Missing Line \n head->data = 100; \n head->next = NULL; \n printf(\"%d\", head->data); \n}\n\n```\n\nThe missing code to produce 100 as output \nA. head = (struct node *)malloc(sizeof(struct node)); \nB. *head = malloc(sizeof(struct node)); \nC. head->data = 0; \nD. head = NULL;",
+            "question_text": "```c\nstruct node { \n int data; \n struct node *next; \n};\nint main() { \n struct node *head; \n // Missing Line \n head->data = 100; \n head->next = NULL; \n printf(\"%d\", head->data); \n}\n\n```\n\nThe missing code to produce 100 as output",
+            "options": [
+                "head = (struct node *)malloc(sizeof(struct node));",
+                "*head = malloc(sizeof(struct node));",
+                "head->data = 0;",
+                "head = NULL;"
+            ],
+            "correct_option": "A",
             "marks": null,
-            "answer": "A. head = (struct node *)malloc(sizeof(struct node));\n\nRationale: In the given main function, `head` is defined as a pointer to `struct node`. To access its members, memory must first be allocated using dynamic memory allocation (`malloc`).",
+            "answer": "In the given main function, `head` is defined as a pointer to `struct node`. To access its members, memory must first be allocated using dynamic memory allocation (`malloc`).",
             "answer_source": "provided",
             "chapter": "Unit 1: Introduction"
         },
         {
             "question_number": "5",
-            "question_text": "```c\nvoid mystery(int n) { \n for (int i = n; i > 0; i /= 2) { \n   for (int j = 0; j < i; j++) { \n     printf(\"*\"); \n   } \n } \n}\n\n```\n\nWhat is the overall time complexity?\nA. $O(n \\log n)$ \nB. $O(n)$ \nC. $O(\\log n)$ \nD. $O(n^2)$",
+            "question_text": "```c\nvoid mystery(int n) { \n for (int i = n; i > 0; i /= 2) { \n   for (int j = 0; j < i; j++) { \n     printf(\"*\"); \n   } \n } \n}\n\n```\n\nWhat is the overall time complexity?",
+            "options": [
+                "$O(n \\log n)$",
+                "$O(n)$",
+                "$O(\\log n)$",
+                "$O(n^2)$"
+            ],
+            "correct_option": "B",
             "marks": null,
-            "answer": "B. $O(n)$\n\nRationale: The outer loop variables $i$ takes the values: $n, n/2, n/4, \\dots, 1$. For each $i$, the inner loop executes $i$ times. Thus, the total iterations are given by the sum: $n + n/2 + n/4 + \\dots + 1 \\approx 2n$, which simplifies to $O(n)$.",
+            "answer": "The outer loop variables $i$ takes the values: $n, n/2, n/4, \\dots, 1$. For each $i$, the inner loop executes $i$ times. Thus, the total iterations are given by the sum: $n + n/2 + n/4 + \\dots + 1 \\approx 2n$, which simplifies to $O(n)$.",
             "answer_source": "provided",
             "chapter": "Unit 1: Introduction"
         },
         {
             "question_number": "6",
-            "question_text": "What will be the output?\n\n```c\n#include <stdio.h> \nvoid swap(int *a, int *b) { \n int *temp = a; \n a = b; \n b = temp; \n} \nint main() { \n int x = 10, y = 20; \n swap(&x, &y); \n printf(\"%d %d\", x, y); \n return 0; \n}\n\n```\n\nA. 10 20 \nB. 20 10 \nC. 20 20 \nD. 10 10",
+            "question_text": "What will be the output?\n\n```c\n#include <stdio.h> \nvoid swap(int *a, int *b) { \n int *temp = a; \n a = b; \n b = temp; \n} \nint main() { \n int x = 10, y = 20; \n swap(&x, &y); \n printf(\"%d %d\", x, y); \n return 0; \n}\n\n```",
+            "options": [
+                "10 20",
+                "20 10",
+                "20 20",
+                "10 10"
+            ],
+            "correct_option": "A",
             "marks": null,
-            "answer": "A. 10 20\n\nRationale: The swap function receives pointers to `x` and `y` but only swaps the local copies of the pointers `a` and `b`. The values stored in the actual memory locations of `x` and `y` are never swapped, so they remain 10 and 20.",
+            "answer": "The swap function receives pointers to `x` and `y` but only swaps the local copies of the pointers `a` and `b`. The values stored in the actual memory locations of `x` and `y` are never swapped, so they remain 10 and 20.",
             "answer_source": "provided",
             "chapter": "Unit 1: Introduction"
         },
         {
             "question_number": "7",
-            "question_text": "If an algorithm has time complexity $O(n^2)$, There exists a constant time c such that, which of the following are true?\nA. It always takes $c \\cdot n^2$ time \nB. It takes at most $c \\cdot n^2$ time \nC. It takes at least $n^2$ time \nD. All the above",
+            "question_text": "If an algorithm has time complexity $O(n^2)$, There exists a constant time c such that, which of the following are true?",
+            "options": [
+                "It always takes $c \\cdot n^2$ time",
+                "It takes at most $c \\cdot n^2$ time",
+                "It takes at least $n^2$ time",
+                "All the above"
+            ],
+            "correct_option": "B",
             "marks": null,
-            "answer": "B. It takes at most $c \\cdot n^2$ time\n\nRationale: Big-O notation represents an asymptotic upper bound. By definition, $f(n) = O(g(n))$ implies $f(n) \\le c \\cdot g(n)$ for some positive constant $c$ and sufficiently large $n$. Thus, it takes at most $c \\cdot n^2$ time.",
+            "answer": "Big-O notation represents an asymptotic upper bound. By definition, $f(n) = O(g(n))$ implies $f(n) \\le c \\cdot g(n)$ for some positive constant $c$ and sufficiently large $n$. Thus, it takes at most $c \\cdot n^2$ time.",
             "answer_source": "provided",
             "chapter": "Unit 1: Introduction"
         },
         {
             "question_number": "8",
-            "question_text": "Output produced by the code segment\n\n```c\nint a = 5; \nint *p = &a; \nint **pp = &p; \nprintf(\"%d\", **pp);\n\n```\n\nA. Address of p \nB. Address of a \nC. 5 \nD. Error",
+            "question_text": "Output produced by the code segment\n\n```c\nint a = 5; \nint *p = &a; \nint **pp = &p; \nprintf(\"%d\", **pp);\n\n```",
+            "options": [
+                "Address of p",
+                "Address of a",
+                "5",
+                "Error"
+            ],
+            "correct_option": "C",
             "marks": null,
-            "answer": "C. 5\n\nRationale: `p` is a pointer containing the address of `a`. `pp` is a pointer to a pointer containing the address of pointer `p`. Therefore, double dereferencing `**pp` yields the value of `a`, which is 5.",
+            "answer": "`p` is a pointer containing the address of `a`. `pp` is a pointer to a pointer containing the address of pointer `p`. Therefore, double dereferencing `**pp` yields the value of `a`, which is 5.",
             "answer_source": "provided",
             "chapter": "Unit 1: Introduction"
         },
         {
             "question_number": "9",
-            "question_text": "Which of the following are true about Abstract Data Types?\nA. ADTs hide implementation details from the user \nB. ADTs only include primitive data types \nC. Stack and Queue are examples of ADTs \nD. ADTs are defined by the operations performed on them",
+            "question_text": "Which of the following are true about Abstract Data Types?",
+            "options": [
+                "ADTs hide implementation details from the user",
+                "ADTs only include primitive data types",
+                "Stack and Queue are examples of ADTs",
+                "ADTs are defined by the operations performed on them"
+            ],
+            "correct_option": "A,C,D",
             "marks": null,
-            "answer": "A, C, and D are True.\n\nRationale:\n- Option A is correct because abstraction hides the implementation details from the client.\n- Option B is incorrect because ADTs can include both primitive and non-primitive custom data models.\n- Option C is correct as Stack and Queue are standard examples of ADTs.\n- Option D is correct as ADTs are specified strictly in terms of their operations and behaviors.",
+            "answer": "A, C and D are true.\n- A is correct because abstraction hides the implementation details from the client.\n- B is incorrect because ADTs can include both primitive and non-primitive custom data models.\n- C is correct as Stack and Queue are standard examples of ADTs.\n- D is correct as ADTs are specified strictly in terms of their operations and behaviors.",
             "answer_source": "provided",
             "chapter": "Unit 1: Introduction"
         },
         {
             "question_number": "10",
-            "question_text": "```c\nstruct Data { \n int x; \n};\nint main() { \n struct Data *ptr; \n ptr->x = 10; \n printf(\"%d\", ptr->x); \n return 0; \n}\n\n```\n\nWhat happens when this code is executed?\nA. Prints 10 \nB. Compilation Error \nC. Segmentation Fault \nD. Garbage Value",
+            "question_text": "```c\nstruct Data { \n int x; \n};\nint main() { \n struct Data *ptr; \n ptr->x = 10; \n printf(\"%d\", ptr->x); \n return 0; \n}\n\n```\n\nWhat happens when this code is executed?",
+            "options": [
+                "Prints 10",
+                "Compilation Error",
+                "Segmentation Fault",
+                "Garbage Value"
+            ],
+            "correct_option": "C",
             "marks": null,
-            "answer": "C. Segmentation Fault\n\nRationale: The pointer `ptr` is an uninitialized pointer (wild pointer). It points to an arbitrary or restricted memory address. Attempting to dereference it using `ptr->x = 10` causes a runtime segmentation fault.",
+            "answer": "The pointer `ptr` is an uninitialized pointer (wild pointer). It points to an arbitrary or restricted memory address. Attempting to dereference it using `ptr->x = 10` causes a runtime segmentation fault.",
             "answer_source": "provided",
             "chapter": "Unit 1: Introduction"
         }

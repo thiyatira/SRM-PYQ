@@ -4,81 +4,151 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Which one of the following has the least precedence?\nA. ++\nB. &&\nC. ()\nD. ,",
+            "question_text": "Which one of the following has the least precedence?",
+            "options": [
+                "++",
+                "&&",
+                "()",
+                ","
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "D. The comma operator (`,`) has the lowest precedence among the given options in C. Parentheses `()` are used for grouping and have the highest precedence. The `++` (increment) is a unary operator with high precedence. `&&` (logical AND) has lower precedence than unary operators but higher than the comma operator.",
+            "answer": "The comma operator (`,`) has the lowest precedence among the given options in C. Parentheses `()` are used for grouping and have the highest precedence. The `++` (increment) is a unary operator with high precedence. `&&` (logical AND) has lower precedence than unary operators but higher than the comma operator.",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
         {
             "question_number": "2",
-            "question_text": "Identify\nthecorrectorderofevaluationfortheexpressionD=5\n0+12* 4/32% 4-10\na. */%+- =\nb. =*/%+- \nc. /*%-+= \nd. %/- +=*",
+            "question_text": "Identify the correct order of evaluation for the expression D = 50+12*4/32%4-10",
+            "options": [
+                "*/%+- =",
+                "=*/%+-",
+                "/*%-+=",
+                "%/- +=*"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "A. The correct order of evaluation for the expression `D = 50 + 12 * 4 / 32 % 4 - 10` (following standard C operator precedence and associativity) is as follows:\n1. Multiplication (`*`), Division (`/`), Modulo (`%`) are evaluated first, from left to right, due to their higher precedence.\n2. Addition (`+`), Subtraction (`-`) are evaluated next, from left to right.\n3. Assignment (`=`) is evaluated last, as it has the lowest precedence among these operators.\nTherefore, the order of operator evaluation is `*/%+- =`.",
+            "answer": "The correct order of evaluation for the expression `D = 50 + 12 * 4 / 32 % 4 - 10` (following standard C operator precedence and associativity) is as follows:\n1. Multiplication (`*`), Division (`/`), Modulo (`%`) are evaluated first, from left to right, due to their higher precedence.\n2. Addition (`+`), Subtraction (`-`) are evaluated next, from left to right.\n3. Assignment (`=`) is evaluated last, as it has the lowest precedence among these operators.\nTherefore, the order of operator evaluation is `*/%+- =`.",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
         {
             "question_number": "3",
-            "question_text": "Identify which is not a valid C variable name?\nA. int number;\nB. float rate;\nC. int variable_count;\nD. int$main;",
+            "question_text": "Identify which is not a valid C variable name?",
+            "options": [
+                "int number;",
+                "float rate;",
+                "int variable_count;",
+                "int$main;"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "D. `int$main;` is not a valid C variable name. C variable names (identifiers) must start with an alphabet or an underscore (`_`), and can contain letters, digits, or underscores. Special characters like `$` are not allowed in C identifiers.",
+            "answer": "`int$main;` is not a valid C variable name. C variable names (identifiers) must start with an alphabet or an underscore (`_`), and can contain letters, digits, or underscores. Special characters like `$` are not allowed in C identifiers.",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
         {
             "question_number": "4",
-            "question_text": "The format specifier that is used to read or write a character IS\nA. %f\nB. %d\nC. %c\nD. %s",
+            "question_text": "The format specifier that is used to read or write a character IS",
+            "options": [
+                "%f",
+                "%d",
+                "%c",
+                "%s"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "C. The format specifier `%c` is used in C's `printf()` and `scanf()` functions to read or write a single character.",
+            "answer": "The format specifier `%c` is used in C's `printf()` and `scanf()` functions to read or write a single character.",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
         {
             "question_number": "5",
-            "question_text": "What is the result of logical or relational expression in C?\na) True or False\nb) 0 or 1\nc) 0 if an expression is false and any positive number if an expression is true\nd) false if 0",
+            "question_text": "What is the result of logical or relational expression in C?",
+            "options": [
+                "True or False",
+                "0 or 1",
+                "0 if an expression is false and any positive number if an expression is true",
+                "false if 0"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "B. In C, logical and relational expressions evaluate to `0` for false and `1` for true. C does not have explicit `True` or `False` boolean types; instead, it uses integer values where `0` is false and any non-zero value (typically `1` for true results) is considered true.",
+            "answer": "In C, logical and relational expressions evaluate to `0` for false and `1` for true. C does not have explicit `True` or `False` boolean types; instead, it uses integer values where `0` is false and any non-zero value (typically `1` for true results) is considered true.",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
         {
             "question_number": "6",
-            "question_text": "The following operator type is used to compare two values\nA. Unary\nB. Relational\nC. Assignment\nD. Equal",
+            "question_text": "The following operator type is used to compare two values",
+            "options": [
+                "Unary",
+                "Relational",
+                "Assignment",
+                "Equal"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "B. Relational operators are used to compare two values. Examples include `==` (equal to), `!=` (not equal to), `<` (less than), `>` (greater than), `<=` (less than or equal to), and `>=` (greater than or equal to). While `Equal` (referring to `==`) is a specific operator, `Relational` is the *type* of operator used for comparison.",
+            "answer": "Relational operators are used to compare two values. Examples include `==` (equal to), `!=` (not equal to), `<`, `>`, `<=` and `>=`. `Equal` refers to a single operator (`==`), whereas `Relational` is the type of operator used for comparison.",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
         {
             "question_number": "7",
-            "question_text": "The size of() operator is a ____ type of operator used to calculate the size of the data types\nA. Unary\nB. Binary\nC. Relational\nD. Logical",
+            "question_text": "The size of() operator is a ____ type of operator used to calculate the size of the data types",
+            "options": [
+                "Unary",
+                "Binary",
+                "Relational",
+                "Logical"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "A. The `sizeof()` operator is a unary operator because it takes only one operand (either a type name or an expression) to determine its size in bytes.",
+            "answer": "The `sizeof()` operator is a unary operator because it takes only one operand (either a type name or an expression) to determine its size in bytes.",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
         {
             "question_number": "8",
-            "question_text": "Identify the invalid expression\nA. Result = a++ -b * 2;\nB. Result = ++a * 5;\nC. Result =/ 4;\nD. Result = 2, 4",
+            "question_text": "Identify the invalid expression",
+            "options": [
+                "Result = a++ -b * 2;",
+                "Result = ++a * 5;",
+                "Result =/ 4;",
+                "Result = 2, 4"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "D. The expression `Result = 2, 4` is syntactically valid C code due to the comma operator. The assignment `Result = 2` occurs first (due to higher precedence of `=`), and then `4` is evaluated. `Result` will store the value `2`. While syntactically correct, it is often considered 'invalid' in a pedagogical sense if the intent was to assign multiple values or achieve a different outcome, as it can be misleading compared to standard assignment. However, `Result =/ 4;` (Option C) is a more definitive syntax error as `=/` is not a valid operator in C (unless `Result /= 4;` was intended). Given the provided answer implies D, the context might be about expressions that don't perform typical assignments as one might expect.",
+            "answer": "`Result =/ 4;` is invalid: after `=` the `/` operator has no left operand, so it is a syntax error. The other three are valid: `a++ -b * 2` and `++a * 5` are ordinary expressions, and `Result = 2, 4;` is valid via the comma operator (`Result` gets 2, then 4 is evaluated and discarded).",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
         {
             "question_number": "9",
-            "question_text": "____ is used to write the pseudo code with hierarchy.\na. Colon\nb. Braces\nc. Parenthesis\nd. Indentation",
+            "question_text": "____ is used to write the pseudo code with hierarchy.",
+            "options": [
+                "Colon",
+                "Braces",
+                "Parenthesis",
+                "Indentation"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "D. Indentation is commonly used in pseudocode to visually represent the hierarchical structure and control flow of an algorithm, making it more readable and understandable by clearly showing nested blocks of code.",
+            "answer": "Indentation is commonly used in pseudocode to show the hierarchical structure and control flow of an algorithm, making nested blocks clear and readable.",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
         {
             "question_number": "10",
-            "question_text": "A binding is ____ if it first occurs ____ execution or can change during execution of the program.\na. static, before\nb. static, during\nc. dynamic, before\nd. dynamic, during",
+            "question_text": "A binding is ____ if it first occurs ____ execution or can change during execution of the program.",
+            "options": [
+                "static, before",
+                "static, during",
+                "dynamic, before",
+                "dynamic, during"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "D. A binding is considered **dynamic** if it first occurs **during** execution or can change during the execution of the program. This means the association between a name and an attribute (like a memory address or type) is resolved at runtime.",
+            "answer": "A binding is considered **dynamic** if it first occurs **during** execution or can change during the execution of the program. This means the association between a name and an attribute (like a memory address or type) is resolved at runtime.",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },

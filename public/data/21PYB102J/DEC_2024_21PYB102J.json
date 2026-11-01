@@ -4,305 +4,571 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Which fundamental equation governs the quantum mechanical treatment of electrons?\n(A) Maxwell’s equations\n(B) Schrödinger equation\n(C) Newton's second law\n(D) Boltzmann equation",
+            "question_text": "Which fundamental equation governs the quantum mechanical treatment of electrons?",
+            "options": [
+                "Maxwell’s equations",
+                "Schrödinger equation",
+                "Newton's second law",
+                "Boltzmann equation"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: The Schrödinger equation is the fundamental equation in quantum mechanics that describes how the quantum state of a physical system changes with time.",
+            "answer": "The Schrödinger equation is the fundamental equation in quantum mechanics that describes how the quantum state of a physical system changes with time.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
         {
             "question_number": "3",
-            "question_text": "The quantization of lattice/atomic vibrations is called as --\n(A) Photon\n(B) Exciton\n(C) Phonon\n(D) Magnon",
+            "question_text": "The quantization of lattice/atomic vibrations is called as --",
+            "options": [
+                "Photon",
+                "Exciton",
+                "Phonon",
+                "Magnon"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: A phonon is a collective excitation in a periodic, elastic arrangement of atoms or molecules in condensed matter, representing a quantized mode of vibration.",
+            "answer": "A phonon is a collective excitation in a periodic, elastic arrangement of atoms or molecules in condensed matter, representing a quantized mode of vibration.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
         {
             "question_number": "4",
-            "question_text": "Which of the following represents a indirect bandgap semiconductor?\n(A) GaAs\n(B) GaAs and Si\n(C) Ge\n(D) Si",
+            "question_text": "Which of the following represents a indirect bandgap semiconductor?",
+            "options": [
+                "GaAs",
+                "GaAs and Si",
+                "Ge",
+                "Si"
+            ],
+            "correct_option": "C,D",
             "marks": 1,
-            "answer": "(D)\nExplanation: Silicon (Si) and Germanium (Ge) are classic examples of indirect bandgap semiconductors, where the valence band maximum and conduction band minimum occur at different wave vectors (k).",
+            "answer": "Both Ge and Si are indirect bandgap semiconductors (conduction band minimum and valence band maximum occur at different wave vectors), whereas GaAs is direct.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
         {
             "question_number": "5",
-            "question_text": "The Fermi level of n-type semiconductor ________ with an increase in temperature.\n(A) Becomes zero\n(B) Increases\n(C) Remains unchanged\n(D) Decreases",
+            "question_text": "The Fermi level of n-type semiconductor ________ with an increase in temperature.",
+            "options": [
+                "Becomes zero",
+                "Increases",
+                "Remains unchanged",
+                "Decreases"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: As temperature increases, an n-type semiconductor becomes more intrinsic, and the Fermi level moves downwards from the donor level toward the center of the bandgap.",
+            "answer": "As temperature increases, an n-type semiconductor becomes more intrinsic, and the Fermi level moves downwards from the donor level toward the center of the bandgap.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
         {
             "question_number": "6",
-            "question_text": "The rectifying metal - semiconductor junction is also called as ________\n(A) Ohmic junction\n(B) Schottky junction\n(C) Conducting junction\n(D) PN junction",
+            "question_text": "The rectifying metal - semiconductor junction is also called as ________",
+            "options": [
+                "Ohmic junction",
+                "Schottky junction",
+                "Conducting junction",
+                "PN junction"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: A Schottky barrier is a potential energy barrier for electrons formed at a metal–semiconductor junction that has rectifying characteristics.",
+            "answer": "A Schottky barrier is a potential energy barrier for electrons formed at a metal–semiconductor junction that has rectifying characteristics.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
         {
             "question_number": "7",
-            "question_text": "In an intrinsic semiconductor at 0 K, the Fermi level (or chemical potential) is located at ________\n(A) Close to the valence band\n(B) Close to the middle of the band gap\n(C) Close to the conduction band\n(D) In the conduction band",
+            "question_text": "In an intrinsic semiconductor at 0 K, the Fermi level (or chemical potential) is located at ________",
+            "options": [
+                "Close to the valence band",
+                "Close to the middle of the band gap",
+                "Close to the conduction band",
+                "In the conduction band"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: For an intrinsic semiconductor, the Fermi level lies exactly in the middle of the forbidden energy gap at 0 K.",
+            "answer": "For an intrinsic semiconductor, the Fermi level lies exactly in the middle of the forbidden energy gap at 0 K.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
         {
             "question_number": "9",
-            "question_text": "The condition for photon absorption is ________\n(A) hv = C/Eg\n(B) hv = Eg/C\n(C) hv < Eg\n(D) hv ≥ Eg",
+            "question_text": "The condition for photon absorption is ________",
+            "options": [
+                "hv = C/Eg",
+                "hv = Eg/C",
+                "hv < Eg",
+                "hv ≥ Eg"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: Photon absorption occurs only if the energy of the incident photon (hv) is greater than or equal to the bandgap energy (Eg) of the semiconductor.",
+            "answer": "Photon absorption occurs only if the energy of the incident photon (hv) is greater than or equal to the bandgap energy (Eg) of the semiconductor.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
         {
             "question_number": "10",
-            "question_text": "Which is the correct formula for fill factor?\n(A) Pm/IscVsc\n(B) Psc/IscVsc\n(C) Pm/IscVoc\n(D) Pm*IscVoc",
+            "question_text": "Which is the correct formula for fill factor?",
+            "options": [
+                "Pm/IscVsc",
+                "Psc/IscVsc",
+                "Pm/IscVoc",
+                "Pm*IscVoc"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: The Fill Factor (FF) is defined as the ratio of the maximum power (Pm) to the product of the open-circuit voltage (Voc) and short-circuit current (Isc).",
+            "answer": "The Fill Factor (FF) is defined as the ratio of the maximum power (Pm) to the product of the open-circuit voltage (Voc) and short-circuit current (Isc).",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
         {
             "question_number": "11",
-            "question_text": "The Fermi's golden rule helps to identify the ________\n(A) Velocity of light\n(B) Momentum of electrons\n(C) Absorption energy of electron\n(D) Transition rate per unit volume",
+            "question_text": "The Fermi's golden rule helps to identify the ________",
+            "options": [
+                "Velocity of light",
+                "Momentum of electrons",
+                "Absorption energy of electron",
+                "Transition rate per unit volume"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: Fermi's Golden Rule is a way to calculate the transition rate (probability of transition per unit time) from one energy eigenstate of a quantum system into a continuum of energy eigenstates.",
+            "answer": "Fermi's Golden Rule is a way to calculate the transition rate (probability of transition per unit time) from one energy eigenstate of a quantum system into a continuum of energy eigenstates.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
         {
             "question_number": "12",
-            "question_text": "Which process of an electron-hole pair is responsible for emitting light?\n(A) Generation\n(B) Recombination\n(C) Ionisation\n(D) Diffusion",
+            "question_text": "Which process of an electron-hole pair is responsible for emitting light?",
+            "options": [
+                "Generation",
+                "Recombination",
+                "Ionisation",
+                "Diffusion"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: Light is emitted in a semiconductor when an electron from the conduction band recombines with a hole in the valence band, releasing energy as a photon.",
+            "answer": "Light is emitted in a semiconductor when an electron from the conduction band recombines with a hole in the valence band, releasing energy as a photon.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
         {
             "question_number": "13",
-            "question_text": "________ method is the easiest method to investigate whether the given sample is n-type or p-type semiconductor.\n(A) Two probe\n(B) Hot point probe\n(C) Four probe\n(D) linear",
+            "question_text": "________ method is the easiest method to investigate whether the given sample is n-type or p-type semiconductor.",
+            "options": [
+                "Two probe",
+                "Hot point probe",
+                "Four probe",
+                "linear"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: The hot point probe method uses the thermoelectric effect to determine the majority carrier type (n or p) of a semiconductor material quickly.",
+            "answer": "The hot point probe method uses the thermoelectric effect to determine the majority carrier type (n or p) of a semiconductor material quickly.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
         {
             "question_number": "14",
-            "question_text": "TCAD stands for ________\n(A) Topography Computational Aided Design\n(B) Tribology Computer-Aided Design\n(C) Technology Computer-Aided Design\n(D) Transmission Computer-Aided Design",
+            "question_text": "TCAD stands for ________",
+            "options": [
+                "Topography Computational Aided Design",
+                "Tribology Computer-Aided Design",
+                "Technology Computer-Aided Design",
+                "Transmission Computer-Aided Design"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: TCAD stands for Technology Computer-Aided Design, which is used for the modeling and simulation of semiconductor fabrication and device operation.",
+            "answer": "TCAD stands for Technology Computer-Aided Design, which is used for the modeling and simulation of semiconductor fabrication and device operation.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
         {
             "question_number": "15",
-            "question_text": "________ method is most suitable for measurement of very high resistivity.\n(A) Two probe\n(B) Four probe linear\n(C) Van der Pauw\n(D) Three probe linear",
+            "question_text": "________ method is most suitable for measurement of very high resistivity.",
+            "options": [
+                "Two probe",
+                "Four probe linear",
+                "Van der Pauw",
+                "Three probe linear"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: The two-probe method is typically used for high-resistivity materials where the contact resistance is negligible compared to the large sample resistance.",
+            "answer": "The two-probe method is typically used for high-resistivity materials where the contact resistance is negligible compared to the large sample resistance.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
         {
             "question_number": "16",
-            "question_text": "The potential barrier for Si in p-n junction is approximately ________ volts.\n(A) 0.3\n(B) 0.5\n(C) 0.7\n(D) 0.9",
+            "question_text": "The potential barrier for Si in p-n junction is approximately ________ volts.",
+            "options": [
+                "0.3",
+                "0.5",
+                "0.7",
+                "0.9"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: The built-in potential barrier for a Silicon p-n junction diode is typically about 0.7 V at room temperature.",
+            "answer": "The built-in potential barrier for a Silicon p-n junction diode is typically about 0.7 V at room temperature.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
         {
             "question_number": "17",
-            "question_text": "“There is plenty of room at the bottom” is the phrase by ________ to mention about nanoscale physics.\n(A) Prof. C V Raman\n(B) Prof. Richard Feynman\n(C) Prof. Schrödinger\n(D) Prof. Einstein",
+            "question_text": "“There is plenty of room at the bottom” is the phrase by ________ to mention about nanoscale physics.",
+            "options": [
+                "Prof. C V Raman",
+                "Prof. Richard Feynman",
+                "Prof. Schrödinger",
+                "Prof. Einstein"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: Richard Feynman's 1959 talk, \"There's Plenty of Room at the Bottom,\" is often cited as the conceptual beginning of nanotechnology.",
+            "answer": "Richard Feynman's 1959 talk, \"There's Plenty of Room at the Bottom,\" is often cited as the conceptual beginning of nanotechnology.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
         {
             "question_number": "18",
-            "question_text": "Density of states for ________ dimensional structure is a delta function.\n(A) Zero\n(B) One\n(C) Two\n(D) Three",
+            "question_text": "Density of states for ________ dimensional structure is a delta function.",
+            "options": [
+                "Zero",
+                "One",
+                "Two",
+                "Three"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: In a 0D system (quantum dot), carriers are confined in all directions, leading to a discrete energy spectrum and a density of states represented by delta functions.",
+            "answer": "In a 0D system (quantum dot), carriers are confined in all directions, leading to a discrete energy spectrum and a density of states represented by delta functions.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
         {
             "question_number": "19",
-            "question_text": "An example for two dimensional material is ________\n(A) Nanowire\n(B) Nanosheet\n(C) Nanoparticle\n(D) Quantum dot",
+            "question_text": "An example for two dimensional material is ________",
+            "options": [
+                "Nanowire",
+                "Nanosheet",
+                "Nanoparticle",
+                "Quantum dot"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: Nanosheets (like graphene) are 2D materials where carriers are confined in one dimension and free in two dimensions.",
+            "answer": "Nanosheets (like graphene) are 2D materials where carriers are confined in one dimension and free in two dimensions.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
         {
             "question_number": "20",
-            "question_text": "In chemical vapour deposition, the precursors are introduced to the reaction chamber in the ________ state.\n(A) Liquid\n(B) Solid\n(C) Gaseous\n(D) Semisolid",
+            "question_text": "In chemical vapour deposition, the precursors are introduced to the reaction chamber in the ________ state.",
+            "options": [
+                "Liquid",
+                "Solid",
+                "Gaseous",
+                "Semisolid"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: In CVD, gaseous precursors react and/or decompose on a substrate surface to produce the desired thin film.",
+            "answer": "In CVD, gaseous precursors react and/or decompose on a substrate surface to produce the desired thin film.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
         {
             "question_number": "1",
-            "question_text": "Which fundamental equation governs the quantum mechanical treatment of electrons?\nA) Maxwell’s equations\nB) Schrödinger equation\nC) Newton's second law\nD) Boltzmann equation",
+            "question_text": "Which fundamental equation governs the quantum mechanical treatment of electrons?",
+            "options": [
+                "Maxwell’s equations",
+                "Schrödinger equation",
+                "Newton's second law",
+                "Boltzmann equation"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: The Schrödinger equation is the foundational equation of quantum mechanics used to describe the wave function and quantum state of electrons.",
+            "answer": "The Schrödinger equation is the foundational equation of quantum mechanics used to describe the wave function and quantum state of electrons.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
         {
             "question_number": "2",
-            "question_text": "Consider a one-dimensional lattice of length a. The length of the unit cell in the reciprocal lattice is _________.\nA) 1/a\nB) π/a\nC) 4π/a\nD) a",
+            "question_text": "Consider a one-dimensional lattice of length a. The length of the unit cell in the reciprocal lattice is _________.",
+            "options": [
+                "1/a",
+                "π/a",
+                "4π/a",
+                "a"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: In crystallographic definition, the reciprocal lattice vector magnitude for a 1D lattice of spacing 'a' is 1/a (though in solid-state physics it is often defined as 2π/a, 1/a is the intended standard here).",
+            "answer": "For a 1D lattice of spacing a, the reciprocal lattice unit length is 1/a in the crystallographic convention (2π/a if the 2π factor is included).",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
         {
             "question_number": "3",
-            "question_text": "The quantization of lattice/atomic vibrations is called as ----\nA) Photon\nB) Exciton\nC) Phonon\nD) Magnon",
+            "question_text": "The quantization of lattice/atomic vibrations is called as ----",
+            "options": [
+                "Photon",
+                "Exciton",
+                "Phonon",
+                "Magnon"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: A phonon represents a quantized mode of vibrations occurring in a rigid crystal lattice.",
+            "answer": "A phonon represents a quantized mode of vibrations occurring in a rigid crystal lattice.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
         {
             "question_number": "4",
-            "question_text": "Which of the following represents a indirect bandgap semiconductor?\nA) GaAs\nB) GaAs and Si\nC) Ge\nD) Si",
+            "question_text": "Which of the following represents a indirect bandgap semiconductor?",
+            "options": [
+                "GaAs",
+                "GaAs and Si",
+                "Ge",
+                "Si"
+            ],
+            "correct_option": "C,D",
             "marks": 1,
-            "answer": "(D)\nExplanation: Silicon (Si) and Germanium (Ge) are indirect bandgap semiconductors, but Si is the most prominent classic example among the pure choices given.",
+            "answer": "Both Ge and Si are indirect bandgap semiconductors (conduction band minimum and valence band maximum occur at different wave vectors), whereas GaAs is direct.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
         {
             "question_number": "5",
-            "question_text": "The Fermi level of n-type semiconductor _________ with an increase in temperature.\nA) Becomes zero\nB) Increases\nC) Remains unchanged\nD) Decreases",
+            "question_text": "The Fermi level of n-type semiconductor _________ with an increase in temperature.",
+            "options": [
+                "Becomes zero",
+                "Increases",
+                "Remains unchanged",
+                "Decreases"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: As temperature increases, an n-type semiconductor becomes more intrinsic, causing the Fermi level to move downward toward the middle of the bandgap.",
+            "answer": "As temperature increases, an n-type semiconductor becomes more intrinsic, causing the Fermi level to move downward toward the middle of the bandgap.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
         {
             "question_number": "6",
-            "question_text": "The rectifying metal - semiconductor junction is also called as _________\nA) Ohmic junction\nB) Schottky junction\nC) Conducting junction\nD) PN junction",
+            "question_text": "The rectifying metal - semiconductor junction is also called as _________",
+            "options": [
+                "Ohmic junction",
+                "Schottky junction",
+                "Conducting junction",
+                "PN junction"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: A Schottky junction is a rectifying contact formed between a metal and a semiconductor.",
+            "answer": "A Schottky junction is a rectifying contact formed between a metal and a semiconductor.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
         {
             "question_number": "7",
-            "question_text": "In an intrinsic semiconductor at 0 K, the Fermi level (or chemical potential) is located at _________\nA) Close to the valence band\nB) Close to the middle of the band gap\nC) Close to the conduction band\nD) In the conduction band",
+            "question_text": "In an intrinsic semiconductor at 0 K, the Fermi level (or chemical potential) is located at _________",
+            "options": [
+                "Close to the valence band",
+                "Close to the middle of the band gap",
+                "Close to the conduction band",
+                "In the conduction band"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: In an intrinsic semiconductor at absolute zero, the Fermi level lies precisely in the middle of the forbidden energy gap.",
+            "answer": "In an intrinsic semiconductor at absolute zero, the Fermi level lies precisely in the middle of the forbidden energy gap.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
         {
             "question_number": "8",
-            "question_text": "The random motion of holes and free electrons due to thermal agitation is called _________\nA) Diffusion\nB) Drift\nC) Pressure\nD) Ionisation",
+            "question_text": "The random motion of holes and free electrons due to thermal agitation is called _________",
+            "options": [
+                "Diffusion",
+                "Drift",
+                "Pressure",
+                "Ionisation"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: Diffusion is the process where charge carriers move from regions of higher concentration to lower concentration due to random thermal motion.",
+            "answer": "Diffusion is the process where charge carriers move from regions of higher concentration to lower concentration due to random thermal motion.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
         {
             "question_number": "9",
-            "question_text": "The condition for photon absorption is _________\nA) hv = C/Eg\nB) hv = Eg/C\nC) hv < Eg\nD) hv ≥ Eg",
+            "question_text": "The condition for photon absorption is _________",
+            "options": [
+                "hv = C/Eg",
+                "hv = Eg/C",
+                "hv < Eg",
+                "hv ≥ Eg"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: For a photon to be absorbed and excite an electron across the bandgap, its energy (hv) must be greater than or equal to the bandgap energy (Eg).",
+            "answer": "For a photon to be absorbed and excite an electron across the bandgap, its energy (hv) must be greater than or equal to the bandgap energy (Eg).",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
         {
             "question_number": "10",
-            "question_text": "Which is the correct formula for fill factor?\nA) Pm / Isc Voc\nB) Psc / Isc Vsc\nC) Pm / Isc Voc\nD) Pm * Isc Vsc",
+            "question_text": "Which is the correct formula for fill factor?",
+            "options": [
+                "Pm / Isc Voc",
+                "Psc / Isc Vsc",
+                "Pm / Isc Voc",
+                "Pm * Isc Vsc"
+            ],
+            "correct_option": "A,C",
             "marks": 1,
-            "answer": "(A)\nExplanation: Fill factor (FF) in a solar cell is defined as the ratio of maximum power (Pm) to the product of short-circuit current (Isc) and open-circuit voltage (Voc).",
+            "answer": "Fill factor (FF) in a solar cell is defined as the ratio of maximum power (Pm) to the product of short-circuit current (Isc) and open-circuit voltage (Voc).",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
         {
             "question_number": "11",
-            "question_text": "The Fermi's golden rule helps to identify the _________\nA) Velocity of light\nB) Momentum of electrons\nC) Absorption energy of electron\nD) Transition rate per unit volume",
+            "question_text": "The Fermi's golden rule helps to identify the _________",
+            "options": [
+                "Velocity of light",
+                "Momentum of electrons",
+                "Absorption energy of electron",
+                "Transition rate per unit volume"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: Fermi's golden rule is used to calculate the transition probability rate for a particle transitioning from one energy eigenstate to another.",
+            "answer": "Fermi's golden rule is used to calculate the transition probability rate for a particle transitioning from one energy eigenstate to another.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
         {
             "question_number": "12",
-            "question_text": "Which process of an electron-hole pair is responsible for emitting light?\nA) Generation\nB) Recombination\nC) Ionisation\nD) Diffusion",
+            "question_text": "Which process of an electron-hole pair is responsible for emitting light?",
+            "options": [
+                "Generation",
+                "Recombination",
+                "Ionisation",
+                "Diffusion"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: Radiative recombination of an electron and a hole releases energy in the form of a photon (light emission).",
+            "answer": "Radiative recombination of an electron and a hole releases energy in the form of a photon (light emission).",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
         {
             "question_number": "13",
-            "question_text": "_________ method is the easiet method to investigate whether the given sample is n-type or p-type semiconductor.\nA) Two probe\nB) Hot point probe\nC) Four probe\nD) linear",
+            "question_text": "_________ method is the easiet method to investigate whether the given sample is n-type or p-type semiconductor.",
+            "options": [
+                "Two probe",
+                "Hot point probe",
+                "Four probe",
+                "linear"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: The hot point probe method relies on the Seebeck effect and is a very quick, simple way to determine the majority carrier type in a semiconductor.",
+            "answer": "The hot point probe method relies on the Seebeck effect and is a very quick, simple way to determine the majority carrier type in a semiconductor.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
         {
             "question_number": "14",
-            "question_text": "TCAD stands for _________\nA) Topography Computational Aided Design\nB) Tribilogy Computer-Aided Design\nC) Technology Computer-Aided Design\nD) Transmission Computer-Aided Design",
+            "question_text": "TCAD stands for _________",
+            "options": [
+                "Topography Computational Aided Design",
+                "Tribilogy Computer-Aided Design",
+                "Technology Computer-Aided Design",
+                "Transmission Computer-Aided Design"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: TCAD stands for Technology Computer-Aided Design, which is used to model semiconductor fabrication and device operation.",
+            "answer": "TCAD stands for Technology Computer-Aided Design, which is used to model semiconductor fabrication and device operation.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
         {
             "question_number": "15",
-            "question_text": "_________ method is most suitable for measurement of very high resistivity.\nA) Two probe\nB) Four probe linear\nC) Van der Pauw\nD) Three probe linear",
+            "question_text": "_________ method is most suitable for measurement of very high resistivity.",
+            "options": [
+                "Two probe",
+                "Four probe linear",
+                "Van der Pauw",
+                "Three probe linear"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: For very high resistivity samples, the two-probe method is often suitable because the contact resistance is negligible compared to the massive sample resistance.",
+            "answer": "For very high resistivity samples, the two-probe method is often suitable because the contact resistance is negligible compared to the massive sample resistance.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
         {
             "question_number": "16",
-            "question_text": "The potential barrier for Si in p-n junction is approximately _________ volts.\nA) 0.3\nB) 0.5\nC) 0.7\nD) 0.9",
+            "question_text": "The potential barrier for Si in p-n junction is approximately _________ volts.",
+            "options": [
+                "0.3",
+                "0.5",
+                "0.7",
+                "0.9"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: The built-in potential (barrier voltage) for a typical silicon p-n junction at room temperature is approximately 0.7 V.",
+            "answer": "The built-in potential (barrier voltage) for a typical silicon p-n junction at room temperature is approximately 0.7 V.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
         {
             "question_number": "17",
-            "question_text": "“There is plenty of room at the bottom” is the phrase by _________ to mention about nanoscale physics.\nA) Prof. C V Raman\nB) Prof. Richard Feynman\nC) Prof. Schrodinger\nD) Prof. Einstein",
+            "question_text": "“There is plenty of room at the bottom” is the phrase by _________ to mention about nanoscale physics.",
+            "options": [
+                "Prof. C V Raman",
+                "Prof. Richard Feynman",
+                "Prof. Schrodinger",
+                "Prof. Einstein"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: Physicist Richard Feynman gave a famous 1959 lecture titled \"There's Plenty of Room at the Bottom,\" which conceptually founded nanotechnology.",
+            "answer": "Physicist Richard Feynman gave a famous 1959 lecture titled \"There's Plenty of Room at the Bottom,\" which conceptually founded nanotechnology.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
         {
             "question_number": "18",
-            "question_text": "Density of states for _________ dimensional structure is a delta function.\nA) Zero\nB) One\nC) Two\nD) Three",
+            "question_text": "Density of states for _________ dimensional structure is a delta function.",
+            "options": [
+                "Zero",
+                "One",
+                "Two",
+                "Three"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: In a 0D structure (quantum dot), electrons are confined in all three dimensions, resulting in discrete energy levels characterized by delta function density of states.",
+            "answer": "In a 0D structure (quantum dot), electrons are confined in all three dimensions, resulting in discrete energy levels characterized by delta function density of states.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
         {
             "question_number": "19",
-            "question_text": "An example for two dimensional material is _________\nA) Nanowire\nB) Nanosheet\nC) Nanoparticle\nD) Quantum dot",
+            "question_text": "An example for two dimensional material is _________",
+            "options": [
+                "Nanowire",
+                "Nanosheet",
+                "Nanoparticle",
+                "Quantum dot"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: Nanosheets (like graphene) confine electrons in one dimension while allowing them to move freely in the other two, making them 2D materials.",
+            "answer": "Nanosheets (like graphene) confine electrons in one dimension while allowing them to move freely in the other two, making them 2D materials.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
         {
             "question_number": "20",
-            "question_text": "In chemical vapour deposition, the precursors are introduced to the reaction chamber in the _________ state.\nA) Liquid\nB) Solid\nC) Gaseous\nD) Semisolid",
+            "question_text": "In chemical vapour deposition, the precursors are introduced to the reaction chamber in the _________ state.",
+            "options": [
+                "Liquid",
+                "Solid",
+                "Gaseous",
+                "Semisolid"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: Chemical Vapor Deposition (CVD) utilizes volatile precursors in the gaseous state to react and deposit thin films on a substrate.",
+            "answer": "Chemical Vapor Deposition (CVD) utilizes volatile precursors in the gaseous state to react and deposit thin films on a substrate.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         }

@@ -4,161 +4,301 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "How many loops are there in the given circuit?\nA) 3\nC) 4\nB) 5\nD) 2",
+            "question_text": "How many loops are there in the given circuit?",
+            "options": [
+                "3",
+                "5",
+                "4",
+                "2"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: The given circuit is a Wheatstone bridge configuration connected to a power supply. It contains 3 fundamental independent loops (meshes).",
+            "answer": "The given circuit is a Wheatstone bridge configuration connected to a power supply. It contains 3 fundamental independent loops (meshes).",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
         {
             "question_number": "2",
-            "question_text": "Consider the following pairs\nSeries circuit: Voltage division rule\nParallel circuit: Current division rule\nOpen circuit: Resistance is zero\nShort circuit: Resistance is maximum\nHow many of the above pairs are correctly matched?\nA) 3\nB) 4\nC) 1\nD) 2",
+            "question_text": "Consider the following pairs\nSeries circuit: Voltage division rule\nParallel circuit: Current division rule\nOpen circuit: Resistance is zero\nShort circuit: Resistance is maximum\nHow many of the above pairs are correctly matched?",
+            "options": [
+                "3",
+                "4",
+                "1",
+                "2"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: Only the first two pairs are correct. An open circuit has infinite resistance (not zero), and a short circuit has zero resistance (not maximum). Therefore, 2 pairs are correctly matched.",
+            "answer": "Only the first two pairs are correct. An open circuit has infinite resistance (not zero), and a short circuit has zero resistance (not maximum). Therefore, 2 pairs are correctly matched.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
         {
             "question_number": "3",
-            "question_text": "Consider the following Statements\n1. In a parallel circuit, the current is the same through all the elements\n2. Current will not flow in an open circuit\n3. Ohm's law does not apply to parallel circuits\n4. In a series circuit, voltage is the same across all the resistors\nHow many statements given above are correct?\nA) 2\nB) 3\nC) 1\nD) 4",
+            "question_text": "Consider the following Statements\n1. In a parallel circuit, the current is the same through all the elements\n2. Current will not flow in an open circuit\n3. Ohm's law does not apply to parallel circuits\n4. In a series circuit, voltage is the same across all the resistors\nHow many statements given above are correct?",
+            "options": [
+                "2",
+                "3",
+                "1",
+                "4"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: Statement 1 is false (voltage is same, not current). Statement 2 is true. Statement 3 is false (Ohm's law applies to all linear circuits). Statement 4 is false (current is same, not voltage). Thus, only 1 statement is correct.",
+            "answer": "Statement 1 is false (voltage is same, not current). Statement 2 is true. Statement 3 is false (Ohm's law applies to all linear circuits). Statement 4 is false (current is same, not voltage). Thus, only 1 statement is correct.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
         {
             "question_number": "4",
-            "question_text": "The expression for RMS voltage in half wave rectifier is\nA) 2Vm/π\nB) Vm/2\nC) Vm/π\nD) Vm/2π",
+            "question_text": "The expression for RMS voltage in half wave rectifier is",
+            "options": [
+                "2Vm/π",
+                "Vm/2",
+                "Vm/π",
+                "Vm/2π"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: For a sinusoidal half-wave rectifier, the Root Mean Square (RMS) output voltage is calculated mathematically as Vm/2.",
+            "answer": "For a sinusoidal half-wave rectifier, the Root Mean Square (RMS) output voltage is calculated mathematically as Vm/2.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
         {
             "question_number": "5",
-            "question_text": "What does the equivalent circuit of the diode shown represent?\nA) Forward biased condition\nB) Reverse biased condition\nC) Open circuit\nD) Cutoff",
+            "question_text": "What does the equivalent circuit of the diode shown represent?",
+            "options": [
+                "Forward biased condition",
+                "Reverse biased condition",
+                "Open circuit",
+                "Cutoff"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: An ideal diode under reverse bias acts completely as an open circuit, which is represented physically by an open switch symbol.",
+            "answer": "An ideal diode under reverse bias acts completely as an open circuit, which is represented physically by an open switch symbol.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
         {
             "question_number": "6",
-            "question_text": "MOSFET is a type of transistor that uses an _______ to control\nA) amplifier\nB) fuse\nC) electric field\nD) instrument",
+            "question_text": "MOSFET is a type of transistor that uses an _______ to control",
+            "options": [
+                "amplifier",
+                "fuse",
+                "electric field",
+                "instrument"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: MOSFET stands for Metal Oxide Semiconductor Field Effect Transistor. It functions by utilizing a transverse electric field applied at the gate to modulate the channel's conductivity.",
+            "answer": "MOSFET stands for Metal Oxide Semiconductor Field Effect Transistor. It functions by utilizing a transverse electric field applied at the gate to modulate the channel's conductivity.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
         {
             "question_number": "7",
-            "question_text": "SCR terminals are\nA) Anode, Gate, Collector\nB) Base , Emitter, Collector\nC) Gate , Emitter, Collector\nD) Anode, Gate, Cathode",
+            "question_text": "SCR terminals are",
+            "options": [
+                "Anode, Gate, Collector",
+                "Base , Emitter, Collector",
+                "Gate , Emitter, Collector",
+                "Anode, Gate, Cathode"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: A Silicon Controlled Rectifier (SCR) is a thyristor equipped with three terminals identified as Anode, Cathode, and Gate.",
+            "answer": "A Silicon Controlled Rectifier (SCR) is a thyristor equipped with three terminals identified as Anode, Cathode, and Gate.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
         {
             "question_number": "8",
-            "question_text": "_______ impuritie is tri-valent.\nA) Antimony\nB) Arsenic\nC) Boron\nD) Phosphorous",
+            "question_text": "_______ impuritie is tri-valent.",
+            "options": [
+                "Antimony",
+                "Arsenic",
+                "Boron",
+                "Phosphorous"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: Boron is a Group III element, possessing three valence electrons (tri-valent), rendering it an acceptor impurity for creating P-type semiconductors.",
+            "answer": "Boron is a Group III element, possessing three valence electrons (tri-valent), rendering it an acceptor impurity for creating P-type semiconductors.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
         {
             "question_number": "9",
-            "question_text": "_______ of the DC generator is in the form of a laminated slotted drum.\nA) Brushes\nB) Armature\nC) Split rings\nD) Pole shoe",
+            "question_text": "_______ of the DC generator is in the form of a laminated slotted drum.",
+            "options": [
+                "Brushes",
+                "Armature",
+                "Split rings",
+                "Pole shoe"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: The armature of a standard DC generator is constructed as a cylindrical, laminated steel drum equipped with slots to house the active conducting windings.",
+            "answer": "The armature of a standard DC generator is constructed as a cylindrical, laminated steel drum equipped with slots to house the active conducting windings.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
         {
             "question_number": "10",
-            "question_text": "_______ is a polyphase synchronous motor with a permanent magnet rotor.\nA) Brushless DC motor\nB) Induction motor\nC) Transformer\nD) DC motor",
+            "question_text": "_______ is a polyphase synchronous motor with a permanent magnet rotor.",
+            "options": [
+                "Brushless DC motor",
+                "Induction motor",
+                "Transformer",
+                "DC motor"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: A Brushless DC (BLDC) motor functions practically as a permanent magnet synchronous motor (PMSM), relying on an electronically commutated polyphase stator and a permanent magnet rotor.",
+            "answer": "A Brushless DC (BLDC) motor functions practically as a permanent magnet synchronous motor (PMSM), relying on an electronically commutated polyphase stator and a permanent magnet rotor.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
         {
             "question_number": "11",
-            "question_text": "_______ is a combination of an electric motor, a transmission, and a control system\nA) Sensor\nB) Transducer\nC) UPS\nD) Electric drive",
+            "question_text": "_______ is a combination of an electric motor, a transmission, and a control system",
+            "options": [
+                "Sensor",
+                "Transducer",
+                "UPS",
+                "Electric drive"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: An electric drive is a comprehensive electromechanical system comprising the motor, power transmission components, and advanced electronic control units.",
+            "answer": "An electric drive is a comprehensive electromechanical system comprising the motor, power transmission components, and advanced electronic control units.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
         {
             "question_number": "12",
-            "question_text": "_______ is a motor that can rotate with great precision\nA) Chopper\nB) Crane\nC) Servomotor\nD) DC motor",
+            "question_text": "_______ is a motor that can rotate with great precision",
+            "options": [
+                "Chopper",
+                "Crane",
+                "Servomotor",
+                "DC motor"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: Servomotors are highly specialized closed-loop mechanisms engineered specifically to deliver extreme precision in terms of angular rotation, speed, and position.",
+            "answer": "Servomotors are highly specialized closed-loop mechanisms engineered specifically to deliver extreme precision in terms of angular rotation, speed, and position.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
         {
             "question_number": "13",
-            "question_text": "_______ ensures that the moving system takes just the required time to reach its final deflected position\nA) Deflecting torque\nB) Damping torque\nC) Inertia torque\nD) Spring torque",
+            "question_text": "_______ ensures that the moving system takes just the required time to reach its final deflected position",
+            "options": [
+                "Deflecting torque",
+                "Damping torque",
+                "Inertia torque",
+                "Spring torque"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: Damping torque opposes motion only when the pointer is moving, effectively suppressing oscillations and enabling the system to settle swiftly and smoothly at its final position.",
+            "answer": "Damping torque opposes motion only when the pointer is moving, effectively suppressing oscillations and enabling the system to settle swiftly and smoothly at its final position.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
         {
             "question_number": "14",
-            "question_text": "_______ is a device which converts the energy from one form to another form\nA) DSO\nB) Multimeter\nC) Transducer\nD) Thermocouple",
+            "question_text": "_______ is a device which converts the energy from one form to another form",
+            "options": [
+                "DSO",
+                "Multimeter",
+                "Transducer",
+                "Thermocouple"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: A transducer is fundamentally defined as a device capable of converting physical energy from one specific form (like mechanical or thermal) into another form (typically electrical).",
+            "answer": "A transducer is fundamentally defined as a device capable of converting physical energy from one specific form (like mechanical or thermal) into another form (typically electrical).",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
         {
             "question_number": "15",
-            "question_text": "Which device works on the simple principle of change in resistance due to a change in temperature?\nA) Photoconductive cell\nB) Photoemissive cell\nC) LVDT\nD) Thermistor",
+            "question_text": "Which device works on the simple principle of change in resistance due to a change in temperature?",
+            "options": [
+                "Photoconductive cell",
+                "Photoemissive cell",
+                "LVDT",
+                "Thermistor"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: A thermistor is a thermally sensitive resistor designed specifically to exhibit a significant, predictable change in electrical resistance when exposed to a change in temperature.",
+            "answer": "A thermistor is a thermally sensitive resistor designed specifically to exhibit a significant, predictable change in electrical resistance when exposed to a change in temperature.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
         {
             "question_number": "16",
-            "question_text": "_______ is an electronically modulated optical device\nA) Proximity Sensor\nB) LCD\nC) Optocoupler\nD) IR sensor",
+            "question_text": "_______ is an electronically modulated optical device",
+            "options": [
+                "Proximity Sensor",
+                "LCD",
+                "Optocoupler",
+                "IR sensor"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: A Liquid Crystal Display (LCD) is an electronically modulated optical device that uses the light-modulating properties of liquid crystals to display images.",
+            "answer": "A Liquid Crystal Display (LCD) is an electronically modulated optical device that uses the light-modulating properties of liquid crystals to display images.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
         {
             "question_number": "17",
-            "question_text": "_______ are attached to the poles or towers and are used to support the conductors\nA) Cross arms\nB) Conductors\nC) Insulators\nD) Fuse",
+            "question_text": "_______ are attached to the poles or towers and are used to support the conductors",
+            "options": [
+                "Cross arms",
+                "Conductors",
+                "Insulators",
+                "Fuse"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: Cross arms are horizontal structures firmly attached directly to utility poles or towers, providing the foundational support for insulators and, subsequently, the power conductors.",
+            "answer": "Cross arms are horizontal structures firmly attached directly to utility poles or towers, providing the foundational support for insulators and, subsequently, the power conductors.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
         {
             "question_number": "18",
-            "question_text": "_______ transmission system is more economical when the distance of transmission is more than 600 km.\nA) AC\nB) Bulk\nC) HVDC\nD) Offshore",
+            "question_text": "_______ transmission system is more economical when the distance of transmission is more than 600 km.",
+            "options": [
+                "AC",
+                "Bulk",
+                "HVDC",
+                "Offshore"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: High Voltage Direct Current (HVDC) transmission presents lower line losses and requires fewer conductors, making it highly economical for bulk power transfer over extremely long distances (typically >600 km).",
+            "answer": "High Voltage Direct Current (HVDC) transmission presents lower line losses and requires fewer conductors, making it highly economical for bulk power transfer over extremely long distances (typically >600 km).",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
         {
             "question_number": "19",
-            "question_text": "_______ is an equipment which can open or close a circuit under normal as well as fault conditions.\nA) Isolator\nB) Circuit breaker\nC) Busbar\nD) Power transformer",
+            "question_text": "_______ is an equipment which can open or close a circuit under normal as well as fault conditions.",
+            "options": [
+                "Isolator",
+                "Circuit breaker",
+                "Busbar",
+                "Power transformer"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: Unlike isolators which operate off-load, a circuit breaker is an advanced electromechanical switch designed to safely interrupt and make electrical circuits during both normal and severe fault conditions.",
+            "answer": "Unlike isolators which operate off-load, a circuit breaker is an advanced electromechanical switch designed to safely interrupt and make electrical circuits during both normal and severe fault conditions.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
         {
             "question_number": "20",
-            "question_text": "A large number of solar cells are interconnected to form _______\nA) battery\nB) photovoltaic cell\nC) solar inverter\nD) solar module",
+            "question_text": "A large number of solar cells are interconnected to form _______",
+            "options": [
+                "battery",
+                "photovoltaic cell",
+                "solar inverter",
+                "solar module"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: Individual solar cells produce very little power. They are electrically interconnected in series and parallel within a frame to form a practical solar module (or panel).",
+            "answer": "Individual solar cells produce very little power. They are electrically interconnected in series and parallel within a frame to form a practical solar module (or panel).",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         }

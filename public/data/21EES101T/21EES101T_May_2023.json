@@ -4,161 +4,301 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "A 100 W lamp is connected across 220 V DC supply. Determine the value of current drawn by the lamp?\n(A) 2.5A\n(B) 10A\n(C) 0.45A\n(D) 5A",
+            "question_text": "A 100 W lamp is connected across 220 V DC supply. Determine the value of current drawn by the lamp?",
+            "options": [
+                "2.5A",
+                "10A",
+                "0.45A",
+                "5A"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: Current I = Power (P) / Voltage (V) = 100 / 220 = 0.4545 A.",
+            "answer": "Current I = Power (P) / Voltage (V) = 100 / 220 = 0.4545 A.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
         {
             "question_number": "2",
-            "question_text": "To neglect the voltage source in Thevenin's theorem, the terminal across the sources are _______\n(A) Replaced by load resistance\n(B) Replaced by capacitance\n(C) Short circuited\n(D) Open circuited",
+            "question_text": "To neglect the voltage source in Thevenin's theorem, the terminal across the sources are _______",
+            "options": [
+                "Replaced by load resistance",
+                "Replaced by capacitance",
+                "Short circuited",
+                "Open circuited"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: In Thevenin's theorem, to find the equivalent resistance, ideal voltage sources are turned off by replacing them with a short circuit.",
+            "answer": "In Thevenin's theorem, to find the equivalent resistance, ideal voltage sources are turned off by replacing them with a short circuit.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
         {
             "question_number": "3",
-            "question_text": "In a circuit with pure inductance, the current _______ the voltage by 90°.\n(A) Leads\n(B) Lags\n(C) In phase\n(D) Greater than and equal",
+            "question_text": "In a circuit with pure inductance, the current _______ the voltage by 90°.",
+            "options": [
+                "Leads",
+                "Lags",
+                "In phase",
+                "Greater than and equal"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: In a purely inductive circuit, the current lags the applied voltage by an angle of exactly 90 degrees.",
+            "answer": "In a purely inductive circuit, the current lags the applied voltage by an angle of exactly 90 degrees.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
         {
             "question_number": "4",
-            "question_text": "The nodal method of circuit analysis is based on _______\n(A) Thevenin's theorem\n(B) Norton's theorem\n(C) Kirchoff voltage law\n(D) Kirchoff current law",
+            "question_text": "The nodal method of circuit analysis is based on _______",
+            "options": [
+                "Thevenin's theorem",
+                "Norton's theorem",
+                "Kirchoff voltage law",
+                "Kirchoff current law"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: Nodal voltage analysis is fundamentally based on the application of Kirchhoff's Current Law (KCL) at each circuit node.",
+            "answer": "Nodal voltage analysis is fundamentally based on the application of Kirchhoff's Current Law (KCL) at each circuit node.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
         {
             "question_number": "5",
-            "question_text": "The knee voltage of silicon diode is _______\n(A) 0.2 V\n(B) 0.7 V\n(C) 0.8 V\n(D) 1.0 V",
+            "question_text": "The knee voltage of silicon diode is _______",
+            "options": [
+                "0.2 V",
+                "0.7 V",
+                "0.8 V",
+                "1.0 V"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: The typical forward knee voltage (cut-in voltage) for a standard silicon PN junction diode is approximately 0.7 V.",
+            "answer": "The typical forward knee voltage (cut-in voltage) for a standard silicon PN junction diode is approximately 0.7 V.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
         {
             "question_number": "6",
-            "question_text": "Which among the following is a current controlled device?\n(A) BJT\n(B) MOSFET\n(C) JFET\n(D) Diode",
+            "question_text": "Which among the following is a current controlled device?",
+            "options": [
+                "BJT",
+                "MOSFET",
+                "JFET",
+                "Diode"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: A Bipolar Junction Transistor (BJT) is a current-controlled device because its collector current is controlled by the input base current.",
+            "answer": "A Bipolar Junction Transistor (BJT) is a current-controlled device because its collector current is controlled by the input base current.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
         {
             "question_number": "7",
-            "question_text": "The algebraic function of XOR gate is _______\n(A) xy'+x'y\n(B) xy+x'y'\n(C) xy+x'y\n(D) xy+xy'",
+            "question_text": "The algebraic function of XOR gate is _______",
+            "options": [
+                "xy'+x'y",
+                "xy+x'y'",
+                "xy+x'y",
+                "xy+xy'"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: The Boolean algebraic expression for an Exclusive-OR (XOR) gate is xy' + x'y.",
+            "answer": "The Boolean algebraic expression for an Exclusive-OR (XOR) gate is xy' + x'y.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
         {
             "question_number": "8",
-            "question_text": "FPGA stands for _______\n(A) Flexible Programmable Gate Array\n(B) Flexible Programmable Gate Acceleration\n(C) Field Programmable Gate Accelerator\n(D) Field Programmable Gate Array",
+            "question_text": "FPGA stands for _______",
+            "options": [
+                "Flexible Programmable Gate Array",
+                "Flexible Programmable Gate Acceleration",
+                "Field Programmable Gate Accelerator",
+                "Field Programmable Gate Array"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: FPGA is the acronym for Field Programmable Gate Array.",
+            "answer": "FPGA is the acronym for Field Programmable Gate Array.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
         {
             "question_number": "9",
-            "question_text": "The transformer core is made up of laminations to reduce\n(A) Eddy current losses\n(B) Iron losses\n(C) Stray losses\n(D) Hysteresis loss",
+            "question_text": "The transformer core is made up of laminations to reduce",
+            "options": [
+                "Eddy current losses",
+                "Iron losses",
+                "Stray losses",
+                "Hysteresis loss"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: The primary purpose of laminating a magnetic core in a transformer is to restrict the path of circulating eddy currents, thereby reducing eddy current losses.",
+            "answer": "The primary purpose of laminating a magnetic core in a transformer is to restrict the path of circulating eddy currents, thereby reducing eddy current losses.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
         {
             "question_number": "10",
-            "question_text": "The function of a commutator in DC generator is to\n(A) Convert DC to DC\n(B) Convert AC to DC\n(C) Convert AC to AC\n(D) Convert DC to AC",
+            "question_text": "The function of a commutator in DC generator is to",
+            "options": [
+                "Convert DC to DC",
+                "Convert AC to DC",
+                "Convert AC to AC",
+                "Convert DC to AC"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: The armature of a DC generator produces alternating current (AC). The commutator acts as a mechanical rectifier to convert this AC into DC for the external circuit.",
+            "answer": "The armature of a DC generator produces alternating current (AC). The commutator acts as a mechanical rectifier to convert this AC into DC for the external circuit.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
         {
             "question_number": "11",
-            "question_text": "In a three phase induction motor, the three phase winding R, Y, B are connected in _______\n(A) Series\n(B) Parallel\n(C) Series and parallel\n(D) Star",
+            "question_text": "In a three phase induction motor, the three phase winding R, Y, B are connected in _______",
+            "options": [
+                "Series",
+                "Parallel",
+                "Series and parallel",
+                "Star"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: In 3-phase machines, the windings are conventionally connected in either Star or Delta configurations.",
+            "answer": "In 3-phase machines, the windings are conventionally connected in either Star or Delta configurations.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
         {
             "question_number": "12",
-            "question_text": "Stepper motor is a _______ device.\n(A) Mechanical\n(B) Analog\n(C) Incremental\n(D) Storage",
+            "question_text": "Stepper motor is a _______ device.",
+            "options": [
+                "Mechanical",
+                "Analog",
+                "Incremental",
+                "Storage"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: A stepper motor is an electromechanical device that converts electrical pulses into discrete incremental mechanical steps.",
+            "answer": "A stepper motor is an electromechanical device that converts electrical pulses into discrete incremental mechanical steps.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
         {
             "question_number": "13",
-            "question_text": "Moving coil instruments are used to measure _______\n(A) DC quantity only\n(B) AC quantity only\n(C) Both AC and DC quantity\n(D) Either AC or DC",
+            "question_text": "Moving coil instruments are used to measure _______",
+            "options": [
+                "DC quantity only",
+                "AC quantity only",
+                "Both AC and DC quantity",
+                "Either AC or DC"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: Permanent Magnet Moving Coil (PMMC) instruments respond only to the average value of the current and are used exclusively for measuring DC quantities.",
+            "answer": "Permanent Magnet Moving Coil (PMMC) instruments respond only to the average value of the current and are used exclusively for measuring DC quantities.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
         {
             "question_number": "14",
-            "question_text": "The below symbol represents _______ device.\n(A) LED\n(B) LCD\n(C) Photodiode\n(D) Laser diode",
+            "question_text": "The below symbol represents _______ device.",
+            "options": [
+                "LED",
+                "LCD",
+                "Photodiode",
+                "Laser diode"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: A diode symbol with outward pointing arrows indicates that the device emits light, representing a Light Emitting Diode (LED).",
+            "answer": "A diode symbol with outward pointing arrows indicates that the device emits light, representing a Light Emitting Diode (LED).",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
         {
             "question_number": "15",
-            "question_text": "Which of the following represents active transducer?\n(A) Strain gauge\n(B) LVDT\n(C) Thermistor\n(D) Thermocouple",
+            "question_text": "Which of the following represents active transducer?",
+            "options": [
+                "Strain gauge",
+                "LVDT",
+                "Thermistor",
+                "Thermocouple"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: A thermocouple self-generates an electromotive force (EMF) based on temperature differences without the need for external power, making it an active transducer.",
+            "answer": "A thermocouple self-generates an electromotive force (EMF) based on temperature differences without the need for external power, making it an active transducer.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
         {
             "question_number": "16",
-            "question_text": "What is the principle employed in operation of LVDT?\n(A) Mutual inductance\n(B) Self inductance\n(C) Permeance\n(D) Reluctance",
+            "question_text": "What is the principle employed in operation of LVDT?",
+            "options": [
+                "Mutual inductance",
+                "Self inductance",
+                "Permeance",
+                "Reluctance"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: A Linear Variable Differential Transformer (LVDT) operates based on varying mutual inductance between a primary coil and two secondary coils as the core moves.",
+            "answer": "A Linear Variable Differential Transformer (LVDT) operates based on varying mutual inductance between a primary coil and two secondary coils as the core moves.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
         {
             "question_number": "17",
-            "question_text": "What is the frequency of AC supply followed in India?\n(A) 50 Hz\n(B) 60 Hz\n(C) 40 Hz\n(D) 75 Hz",
+            "question_text": "What is the frequency of AC supply followed in India?",
+            "options": [
+                "50 Hz",
+                "60 Hz",
+                "40 Hz",
+                "75 Hz"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: The standard frequency for AC power generation and distribution in India is 50 Hz.",
+            "answer": "The standard frequency for AC power generation and distribution in India is 50 Hz.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
         {
             "question_number": "18",
-            "question_text": "Which of the following is a non-renewable energy resource?\n(A) Solar power\n(B) Wind power\n(C) Thermal power\n(D) Tidal power",
+            "question_text": "Which of the following is a non-renewable energy resource?",
+            "options": [
+                "Solar power",
+                "Wind power",
+                "Thermal power",
+                "Tidal power"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: Thermal power generally relies on burning fossil fuels such as coal, which are finite and non-renewable.",
+            "answer": "Thermal power generally relies on burning fossil fuels such as coal, which are finite and non-renewable.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
         {
             "question_number": "19",
-            "question_text": "Earthing is an essential protection to provide against _______\n(A) Overloading\n(B) Voltage fluctuation\n(C) Heating issues\n(D) Danger of electric shock",
+            "question_text": "Earthing is an essential protection to provide against _______",
+            "options": [
+                "Overloading",
+                "Voltage fluctuation",
+                "Heating issues",
+                "Danger of electric shock"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: The primary purpose of earthing equipment is to provide a safe discharge path for leakage currents, thus protecting users from fatal electric shocks.",
+            "answer": "The primary purpose of earthing equipment is to provide a safe discharge path for leakage currents, thus protecting users from fatal electric shocks.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
         {
             "question_number": "20",
-            "question_text": "Electric vehicles and hybrid vehicles have the following components common EXCEPT:\n(A) Battery\n(B) Electronic control unit\n(C) Motor\n(D) Internal combustion engine",
+            "question_text": "Electric vehicles and hybrid vehicles have the following components common EXCEPT:",
+            "options": [
+                "Battery",
+                "Electronic control unit",
+                "Motor",
+                "Internal combustion engine"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: Pure Electric Vehicles (EVs) operate entirely on electric power and do not contain an Internal Combustion Engine (ICE), unlike Hybrid vehicles.",
+            "answer": "Pure Electric Vehicles (EVs) operate entirely on electric power and do not contain an Internal Combustion Engine (ICE), unlike Hybrid vehicles.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         }

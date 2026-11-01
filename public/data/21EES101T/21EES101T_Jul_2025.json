@@ -4,153 +4,286 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "In a pure resistive circuit, the current _______ the voltage.\n(A) InPhase\n(B) Lags\n(C) Leads\n(D) Greater than or equal to",
+            "question_text": "In a pure resistive circuit, the current _______ the voltage.",
+            "options": [
+                "InPhase",
+                "Lags",
+                "Leads",
+                "Greater than or equal to"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: In an ideal purely resistive circuit, there is no phase shift between voltage and current, making them perfectly in phase.",
+            "answer": "In an ideal purely resistive circuit, there is no phase shift between voltage and current, making them perfectly in phase.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
         {
             "question_number": "2",
-            "question_text": "R1 = 1Ω, R2 = 3Ω, R3 = 5Ω and R4 = 7Ω connected in series. If the total applied voltage is 20V, the current flowing through the circuit is\n(A) 2.25 A\n(B) 1.25 A\n(C) 12.5 A\n(D) 125A",
+            "question_text": "R1 = 1Ω, R2 = 3Ω, R3 = 5Ω and R4 = 7Ω connected in series. If the total applied voltage is 20V, the current flowing through the circuit is",
+            "options": [
+                "2.25 A",
+                "1.25 A",
+                "12.5 A",
+                "125A"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: Total Resistance R = 1 + 3 + 5 + 7 = 16 Ω. Current I = V / R = 20 / 16 = 1.25 A.",
+            "answer": "Total Resistance R = 1 + 3 + 5 + 7 = 16 Ω. Current I = V / R = 20 / 16 = 1.25 A.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
         {
             "question_number": "3",
-            "question_text": "For a three-phase star connected system with a line voltage of 440 V, calculate the value of phase voltage.\n(A) 440V\n(B) 331.3V\n(C) 254.03V\n(D) 230V",
+            "question_text": "For a three-phase star connected system with a line voltage of 440 V, calculate the value of phase voltage.",
+            "options": [
+                "440V",
+                "331.3V",
+                "254.03V",
+                "230V"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: In a star connection, V_phase = V_line / √3 = 440 / 1.732 ≈ 254.03 V.",
+            "answer": "In a star connection, V_phase = V_line / √3 = 440 / 1.732 ≈ 254.03 V.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
         {
             "question_number": "4",
-            "question_text": "The internal resistance for the maximum transfer of power should be\n(A) Equal to load resistance\n(B) Greater than load resistance\n(C) Zero\n(D) Lesser than load resistance",
+            "question_text": "The internal resistance for the maximum transfer of power should be",
+            "options": [
+                "Equal to load resistance",
+                "Greater than load resistance",
+                "Zero",
+                "Lesser than load resistance"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: According to the Maximum Power Transfer Theorem, power is maximized when the source's internal resistance is equivalent to the load resistance.",
+            "answer": "According to the Maximum Power Transfer Theorem, power is maximized when the source's internal resistance is equivalent to the load resistance.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
         {
             "question_number": "5",
-            "question_text": "Which of the following terminal does not belong to BJT?\n(A) Base\n(B) Emitter\n(C) Collector\n(D) Drain",
+            "question_text": "Which of the following terminal does not belong to BJT?",
+            "options": [
+                "Base",
+                "Emitter",
+                "Collector",
+                "Drain"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: A Bipolar Junction Transistor (BJT) consists of Emitter, Base, and Collector terminals. The Drain terminal is characteristic of Field Effect Transistors (FETs).",
+            "answer": "A Bipolar Junction Transistor (BJT) consists of Emitter, Base, and Collector terminals. The Drain terminal is characteristic of Field Effect Transistors (FETs).",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
         {
             "question_number": "6",
-            "question_text": "SMPS stands for\n(A) Switched Mode Power Supply\n(B) Switch Maximum Power Supply\n(C) Silicon Mode Power Supply\n(D) Switched Mode Power Section",
+            "question_text": "SMPS stands for",
+            "options": [
+                "Switched Mode Power Supply",
+                "Switch Maximum Power Supply",
+                "Silicon Mode Power Supply",
+                "Switched Mode Power Section"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: SMPS is a common acronym in electronics standing for Switched Mode Power Supply.",
+            "answer": "SMPS is a common acronym in electronics standing for Switched Mode Power Supply.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
         {
             "question_number": "7",
-            "question_text": "The AND gate output C=1, if the two inputs are\n(A) A=0, B=0\n(B) A=0, B=1\n(C) A=1, B=0\n(D) A=1, B=1",
+            "question_text": "The AND gate output C=1, if the two inputs are",
+            "options": [
+                "A=0, B=0",
+                "A=0, B=1",
+                "A=1, B=0",
+                "A=1, B=1"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: The logical AND gate outputs a '1' strictly when all of its input terminals are at logic high ('1').",
+            "answer": "The logical AND gate outputs a '1' strictly when all of its input terminals are at logic high ('1').",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
         {
             "question_number": "8",
-            "question_text": "An SCR is a\n(A) Four junction device\n(B) Two junction device\n(C) Three junction device\n(D) One Junction device",
+            "question_text": "An SCR is a",
+            "options": [
+                "Four junction device",
+                "Two junction device",
+                "Three junction device",
+                "One Junction device"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: A Silicon Controlled Rectifier (SCR) incorporates a PNPN semiconductor structure, containing precisely three internal PN junctions.",
+            "answer": "A Silicon Controlled Rectifier (SCR) incorporates a PNPN semiconductor structure, containing precisely three internal PN junctions.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
         {
             "question_number": "9",
-            "question_text": "The brushes in DC machine are made of\n(A) Rubber\n(B) Carbon\n(C) Aluminum\n(D) Copper",
+            "question_text": "The brushes in DC machine are made of",
+            "options": [
+                "Rubber",
+                "Carbon",
+                "Aluminum",
+                "Copper"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: Carbon is the favored material for brushes in DC machines due to its negative temperature coefficient of resistance and self-lubricating characteristics on commutators.",
+            "answer": "Carbon is the favored material for brushes in DC machines due to its negative temperature coefficient of resistance and self-lubricating characteristics on commutators.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
         {
             "question_number": "10",
-            "question_text": "Which of the following is not a part of transformer?\n(A) Breather\n(B) Conservator\n(C) Buchholz relay\n(D) Commutator",
+            "question_text": "Which of the following is not a part of transformer?",
+            "options": [
+                "Breather",
+                "Conservator",
+                "Buchholz relay",
+                "Commutator"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: A commutator is a mechanical rotary switch utilized in DC machines. A static transformer contains no rotating parts like a commutator.",
+            "answer": "A commutator is a mechanical rotary switch utilized in DC machines. A static transformer contains no rotating parts like a commutator.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
         {
             "question_number": "11",
-            "question_text": "Which of the following motor rotates in incremental step angle?\n(A) Servo motor\n(B) DC motor\n(C) Stepper motor\n(D) Linear Induction Motor",
+            "question_text": "Which of the following motor rotates in incremental step angle?",
+            "options": [
+                "Servo motor",
+                "DC motor",
+                "Stepper motor",
+                "Linear Induction Motor"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: Stepper motors actuate in fixed, precise, discrete step angles responding directly to digital input pulses.",
+            "answer": "Stepper motors actuate in fixed, precise, discrete step angles responding directly to digital input pulses.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
         {
             "question_number": "12",
-            "question_text": "The stator core of a 3- phase induction motor is laminated in order to reduce the\n(A) Eddy current loss\n(B) Hysteresis loss\n(C) Both eddy current and hysteresis loss\n(D) Weight of the stator",
+            "question_text": "The stator core of a 3- phase induction motor is laminated in order to reduce the",
+            "options": [
+                "Eddy current loss",
+                "Hysteresis loss",
+                "Both eddy current and hysteresis loss",
+                "Weight of the stator"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: Building the stator core with thin insulated laminations significantly increases the resistance to circulating currents, minimizing eddy current losses.",
+            "answer": "Building the stator core with thin insulated laminations significantly increases the resistance to circulating currents, minimizing eddy current losses.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
         {
             "question_number": "13",
-            "question_text": "Moving coil instruments are used to measure\n(A) DC quantity only\n(B) AC quantity only\n(C) Both AC and DC quantity\n(D) Either AC or DC",
+            "question_text": "Moving coil instruments are used to measure",
+            "options": [
+                "DC quantity only",
+                "AC quantity only",
+                "Both AC and DC quantity",
+                "Either AC or DC"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: Instruments based on the Permanent Magnet Moving Coil (PMMC) principle are strictly capable of measuring steady direct current (DC) quantities.",
+            "answer": "Instruments based on the Permanent Magnet Moving Coil (PMMC) principle are strictly capable of measuring steady direct current (DC) quantities.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
         {
             "question_number": "14",
-            "question_text": "_______ is the example of an active transducer.\n(A) Strain gauge\n(B) Thermistor\n(C) LVDT\n(D) Thermocouple",
+            "question_text": "_______ is the example of an active transducer.",
+            "options": [
+                "Strain gauge",
+                "Thermistor",
+                "LVDT",
+                "Thermocouple"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: A thermocouple spontaneously generates a voltage difference directly from a temperature gradient (Seebeck effect), making it an active (self-generating) transducer.",
+            "answer": "A thermocouple spontaneously generates a voltage difference directly from a temperature gradient (Seebeck effect), making it an active (self-generating) transducer.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
         {
             "question_number": "15",
-            "question_text": "LEDs fabricated from the gallium arsenide emit radiation in the\n(A) Infrared Region\n(B) Visible Range\n(C) Ultraviolet Region\n(D) Ultrasonic Region",
+            "question_text": "LEDs fabricated from the gallium arsenide emit radiation in the",
+            "options": [
+                "Infrared Region",
+                "Visible Range",
+                "Ultraviolet Region",
+                "Ultrasonic Region"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: Gallium Arsenide (GaAs) is a semiconductor whose specific energy bandgap corresponds to the emission of invisible infrared light photons.",
+            "answer": "Gallium Arsenide (GaAs) is a semiconductor whose specific energy bandgap corresponds to the emission of invisible infrared light photons.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
         {
             "question_number": "16",
-            "question_text": "In PMMC instruments, the damping torque is provided by\n(A) Air friction\n(B) Magnetic damping\n(C) Gravity\n(D) Eddy current damping",
+            "question_text": "In PMMC instruments, the damping torque is provided by",
+            "options": [
+                "Air friction",
+                "Magnetic damping",
+                "Gravity",
+                "Eddy current damping"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: Permanent Magnet Moving Coil devices benefit from highly effective eddy current damping generated within the aluminum bobbin of the moving coil.",
+            "answer": "Permanent Magnet Moving Coil devices benefit from highly effective eddy current damping generated within the aluminum bobbin of the moving coil.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
         {
             "question_number": "18",
-            "question_text": "A device that converts optical radiation into electrical energy is\n(A) Diode\n(B) BJT\n(C) MOSFET\n(D) Solar cell",
+            "question_text": "A device that converts optical radiation into electrical energy is",
+            "options": [
+                "Diode",
+                "BJT",
+                "MOSFET",
+                "Solar cell"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: A solar cell utilizes the photovoltaic effect to directly convert incoming optical radiation (light) into useful electrical energy.",
+            "answer": "A solar cell utilizes the photovoltaic effect to directly convert incoming optical radiation (light) into useful electrical energy.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
         {
             "question_number": "19",
-            "question_text": "Which of the following is not a renewable energy recourse?\n(A) Solar power\n(B) Wind power\n(C) Thermal power\n(D) Tidal power",
+            "question_text": "Which of the following is not a renewable energy recourse?",
+            "options": [
+                "Solar power",
+                "Wind power",
+                "Thermal power",
+                "Tidal power"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: Thermal power plants predominantly depend on fossil fuels (like coal or natural gas), which are fundamentally exhaustible and non-renewable resources.",
+            "answer": "Thermal power plants predominantly depend on fossil fuels (like coal or natural gas), which are fundamentally exhaustible and non-renewable resources.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
         {
             "question_number": "20",
-            "question_text": "The most common fuel used in fuel cell is\n(A) Water\n(B) Hydrogen\n(C) Thermal Power\n(D) Sulphur",
+            "question_text": "The most common fuel used in fuel cell is",
+            "options": [
+                "Water",
+                "Hydrogen",
+                "Thermal Power",
+                "Sulphur"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: Hydrogen serves as the most widespread and efficient chemical fuel in standard modern fuel cell technologies.",
+            "answer": "Hydrogen serves as the most widespread and efficient chemical fuel in standard modern fuel cell technologies.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         }

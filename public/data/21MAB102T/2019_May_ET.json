@@ -4,161 +4,301 @@
     "questions": [
         {
             "question_number": "U1Q1",
-            "question_text": "The value of the integral $\\int_0^2 \\int_0^1 xy dx dy$ is\n(A) 1\n(B) 2\n(C) 3\n(D) 4",
+            "question_text": "The value of the integral $\\int_0^2 \\int_0^1 xy dx dy$ is",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "correct_option": "A",
             "marks": 2,
-            "answer": "(A)\nExplanation: Integrating with respect to $x$ first: $\\int_0^2 y [\\frac{x^2}{2}]_0^1 dy = \\int_0^2 \\frac{y}{2} dy = [\\frac{y^2}{4}]_0^2 = \\frac{4}{4} = 1$.",
+            "answer": "Integrating with respect to $x$ first: $\\int_0^2 y [\\frac{x^2}{2}]_0^1 dy = \\int_0^2 \\frac{y}{2} dy = [\\frac{y^2}{4}]_0^2 = \\frac{4}{4} = 1$.",
             "answer_source": "generated",
             "chapter": "Unit 1: Integral Calculus"
         },
         {
             "question_number": "U1Q2",
-            "question_text": "The name of the curve $r = a(1+\\cos \\theta)$ is\n(A) Lemniscate\n(B) Cycloid\n(C) Cardioid\n(D) Hemicircle",
+            "question_text": "The name of the curve $r = a(1+\\cos \\theta)$ is",
+            "options": [
+                "Lemniscate",
+                "Cycloid",
+                "Cardioid",
+                "Hemicircle"
+            ],
+            "correct_option": "C",
             "marks": 2,
-            "answer": "(C)\nExplanation: The equation $r = a(1+\\cos \\theta)$ represents the standard polar form of a heart-shaped curve called a cardioid.",
+            "answer": "The equation $r = a(1+\\cos \\theta)$ represents the standard polar form of a heart-shaped curve called a cardioid.",
             "answer_source": "generated",
             "chapter": "Unit 1: Integral Calculus"
         },
         {
             "question_number": "U1Q3",
-            "question_text": "Area of the double integral in Cartesian co-ordinates is\n(A) $\\iint dy dx$\n(B) $\\iint r dr d\\theta$\n(C) $\\iint x dx dy$\n(D) $\\iint x^2 dx dy$",
+            "question_text": "Area of the double integral in Cartesian co-ordinates is",
+            "options": [
+                "$\\iint dy dx$",
+                "$\\iint r dr d\\theta$",
+                "$\\iint x dx dy$",
+                "$\\iint x^2 dx dy$"
+            ],
+            "correct_option": "A",
             "marks": 2,
-            "answer": "(A)\nExplanation: In Cartesian coordinates, the differential area element $dA$ is $dx dy$ (or $dy dx$). Therefore, Area = $\\iint dx dy$.",
+            "answer": "In Cartesian coordinates, the differential area element $dA$ is $dx dy$ (or $dy dx$). Therefore, Area = $\\iint dx dy$.",
             "answer_source": "generated",
             "chapter": "Unit 1: Integral Calculus"
         },
         {
             "question_number": "U1Q4",
-            "question_text": "$\\int_0^1 \\int_0^2 \\int_0^3 dx dy dz$ is equal to\n(A) 3\n(B) 2\n(C) 4\n(D) 6",
+            "question_text": "$\\int_0^1 \\int_0^2 \\int_0^3 dx dy dz$ is equal to",
+            "options": [
+                "3",
+                "2",
+                "4",
+                "6"
+            ],
+            "correct_option": "D",
             "marks": 2,
-            "answer": "(D)\nExplanation: The integral evaluates the volume of a rectangular box. $\\int_0^1 dx \\cdot \\int_0^2 dy \\cdot \\int_0^3 dz = [x]_0^1 \\cdot [y]_0^2 \\cdot [z]_0^3 = 1 \\times 2 \\times 3 = 6$.",
+            "answer": "The integral evaluates the volume of a rectangular box. $\\int_0^1 dx \\cdot \\int_0^2 dy \\cdot \\int_0^3 dz = [x]_0^1 \\cdot [y]_0^2 \\cdot [z]_0^3 = 1 \\times 2 \\times 3 = 6$.",
             "answer_source": "generated",
             "chapter": "Unit 1: Integral Calculus"
         },
         {
             "question_number": "U2Q1",
-            "question_text": "The relation between line integral and a surface integral is known as\n(A) Green's theorem\n(B) Residue theorem\n(C) Stokes' theorem\n(D) Divergence theorem",
+            "question_text": "The relation between line integral and a surface integral is known as",
+            "options": [
+                "Green's theorem",
+                "Residue theorem",
+                "Stokes' theorem",
+                "Divergence theorem"
+            ],
+            "correct_option": "C",
             "marks": 2,
-            "answer": "(C)\nExplanation: Stokes' theorem relates the line integral of a vector field around a simple closed curve to the surface integral of the curl of the vector field over any surface bounded by that curve.",
+            "answer": "Stokes' theorem relates the line integral of a vector field around a simple closed curve to the surface integral of the curl of the vector field over any surface bounded by that curve.",
             "answer_source": "generated",
             "chapter": "Unit 2: Vector Calculus"
         },
         {
             "question_number": "U2Q2",
-            "question_text": "The condition for $\\vec{F}$ to be conservative is, $\\vec{F}$ should be\n(A) Solenoidal vector\n(B) Rotational vector\n(C) Irrotational vector\n(D) Both solenoidal and irrotational",
+            "question_text": "The condition for $\\vec{F}$ to be conservative is, $\\vec{F}$ should be",
+            "options": [
+                "Solenoidal vector",
+                "Rotational vector",
+                "Irrotational vector",
+                "Both solenoidal and irrotational"
+            ],
+            "correct_option": "C",
             "marks": 2,
-            "answer": "(C)\nExplanation: A vector field $\\vec{F}$ is conservative if it can be expressed as the gradient of a scalar potential. A necessary and sufficient condition for this is that its curl is zero ($\\nabla \\times \\vec{F} = \\vec{0}$), which defines an irrotational vector field.",
+            "answer": "A vector field $\\vec{F}$ is conservative if it can be expressed as the gradient of a scalar potential. A necessary and sufficient condition for this is that its curl is zero ($\\nabla \\times \\vec{F} = \\vec{0}$), which defines an irrotational vector field.",
             "answer_source": "generated",
             "chapter": "Unit 2: Vector Calculus"
         },
         {
             "question_number": "U2Q3",
-            "question_text": "The unit normal vector of $\\phi = xy + yz + zx$ at the point $(-1, 1, 1)$ is\n(A) $2\\mathbf{i}$\n(B) $\\mathbf{i}$\n(C) $3\\mathbf{i}$\n(D) $4\\mathbf{i}$",
+            "question_text": "The unit normal vector of $\\phi = xy + yz + zx$ at the point $(-1, 1, 1)$ is",
+            "options": [
+                "$2\\mathbf{i}$",
+                "$\\mathbf{i}$",
+                "$3\\mathbf{i}$",
+                "$4\\mathbf{i}$"
+            ],
+            "correct_option": "B",
             "marks": 2,
-            "answer": "(A)\nExplanation: The normal vector is given by the gradient $\\nabla \\phi = \\frac{\\partial \\phi}{\\partial x}\\mathbf{i} + \\frac{\\partial \\phi}{\\partial y}\\mathbf{j} + \\frac{\\partial \\phi}{\\partial z}\\mathbf{k}$.\n$\\nabla \\phi = (y+z)\\mathbf{i} + (x+z)\\mathbf{j} + (y+x)\\mathbf{k}$.\nAt the point $(-1, 1, 1)$, $\\nabla \\phi = (1+1)\\mathbf{i} + (-1+1)\\mathbf{j} + (1-1)\\mathbf{k} = 2\\mathbf{i}$. \nThe magnitude is 2, so the unit vector is technically $\\mathbf{i}$, but standard question patterns often list the gradient vector itself under \"normal vector\" options. Here, $2\\mathbf{i}$ matches the raw gradient.",
+            "answer": "The normal to the surface is along $\\nabla \\phi = (y+z)\\mathbf{i} + (x+z)\\mathbf{j} + (x+y)\\mathbf{k}$. At $(-1, 1, 1)$ this is $2\\mathbf{i}$, whose magnitude is 2. The unit normal is therefore $\\frac{2\\mathbf{i}}{2} = \\mathbf{i}$.",
             "answer_source": "generated",
             "chapter": "Unit 2: Vector Calculus"
         },
         {
             "question_number": "U2Q4",
-            "question_text": "Value of $\\nabla(r^n)$ is\n(A) $n\\vec{r}$\n(B) $nr^{n-2}\\vec{r}$\n(C) $n(n-1)\\vec{r}$\n(D) $r^{n-2}\\vec{r}$",
+            "question_text": "Value of $\\nabla(r^n)$ is",
+            "options": [
+                "$n\\vec{r}$",
+                "$nr^{n-2}\\vec{r}$",
+                "$n(n-1)\\vec{r}$",
+                "$r^{n-2}\\vec{r}$"
+            ],
+            "correct_option": "B",
             "marks": 2,
-            "answer": "(B)\nExplanation: Let $r = \\sqrt{x^2+y^2+z^2}$. Using the chain rule, $\\nabla f(r) = f'(r) \\nabla r$. Since $\\nabla r = \\frac{\\vec{r}}{r}$, we have $\\nabla(r^n) = n r^{n-1} (\\frac{\\vec{r}}{r}) = n r^{n-2} \\vec{r}$.",
+            "answer": "Let $r = \\sqrt{x^2+y^2+z^2}$. Using the chain rule, $\\nabla f(r) = f'(r) \\nabla r$. Since $\\nabla r = \\frac{\\vec{r}}{r}$, we have $\\nabla(r^n) = n r^{n-1} (\\frac{\\vec{r}}{r}) = n r^{n-2} \\vec{r}$.",
             "answer_source": "generated",
             "chapter": "Unit 2: Vector Calculus"
         },
         {
             "question_number": "U3Q1",
-            "question_text": "An example of a function for which the Laplace transform does not exist is\n(A) $g(t) = t^2$\n(B) $g(t) = \\sin t$\n(C) $g(t) = \\tan t$\n(D) $g(t) = e^{-at}$",
+            "question_text": "An example of a function for which the Laplace transform does not exist is",
+            "options": [
+                "$g(t) = t^2$",
+                "$g(t) = \\sin t$",
+                "$g(t) = \\tan t$",
+                "$g(t) = e^{-at}$"
+            ],
+            "correct_option": "C",
             "marks": 2,
-            "answer": "(C)\nExplanation: For a Laplace transform to exist, the function must be piecewise continuous and of exponential order. The function $\\tan t$ has infinite discontinuities (vertical asymptotes) at $t = \\pi/2, 3\\pi/2, \\dots$ within the interval $[0, \\infty)$. Therefore, it is not piecewise continuous and its Laplace transform does not exist.",
+            "answer": "For a Laplace transform to exist, the function must be piecewise continuous and of exponential order. The function $\\tan t$ has infinite discontinuities (vertical asymptotes) at $t = \\pi/2, 3\\pi/2, \\dots$ within the interval $[0, \\infty)$. Therefore, it is not piecewise continuous and its Laplace transform does not exist.",
             "answer_source": "generated",
             "chapter": "Unit 3: Laplace Transform"
         },
         {
             "question_number": "U3Q2",
-            "question_text": "If $L[f(t)] = F(s)$, then $L\\{e^{-at}f(t)\\}$ is\n(A) $F(s-a)$\n(B) $F(s+a)$\n(C) $F(s)$\n(D) $\\frac{1}{a}F\\left(\\frac{s}{a}\\right)$",
+            "question_text": "If $L[f(t)] = F(s)$, then $L\\{e^{-at}f(t)\\}$ is",
+            "options": [
+                "$F(s-a)$",
+                "$F(s+a)$",
+                "$F(s)$",
+                "$\\frac{1}{a}F\\left(\\frac{s}{a}\\right)$"
+            ],
+            "correct_option": "B",
             "marks": 2,
-            "answer": "(B)\nExplanation: This is the statement of the First Shifting Theorem. Multiplying a function by $e^{-at}$ in the time domain corresponds to shifting the variable in the $s$-domain by $+a$. Thus, $L\\{e^{-at}f(t)\\} = F(s+a)$.",
+            "answer": "This is the statement of the First Shifting Theorem. Multiplying a function by $e^{-at}$ in the time domain corresponds to shifting the variable in the $s$-domain by $+a$. Thus, $L\\{e^{-at}f(t)\\} = F(s+a)$.",
             "answer_source": "generated",
             "chapter": "Unit 3: Laplace Transform"
         },
         {
             "question_number": "U3Q3",
-            "question_text": "$L(t^4)$\n(A) $\\frac{4!}{s^5}$\n(B) $\\frac{3!}{s^4}$\n(C) $\\frac{4!}{s^4}$\n(D) $\\frac{5!}{s^4}$",
+            "question_text": "$L(t^4)$",
+            "options": [
+                "$\\frac{4!}{s^5}$",
+                "$\\frac{3!}{s^4}$",
+                "$\\frac{4!}{s^4}$",
+                "$\\frac{5!}{s^4}$"
+            ],
+            "correct_option": "A",
             "marks": 2,
-            "answer": "(A)\nExplanation: The standard formula for the Laplace transform of a power of $t$ is $L(t^n) = \\frac{n!}{s^{n+1}}$. For $n=4$, $L(t^4) = \\frac{4!}{s^{4+1}} = \\frac{4!}{s^5}$.",
+            "answer": "The standard formula for the Laplace transform of a power of $t$ is $L(t^n) = \\frac{n!}{s^{n+1}}$. For $n=4$, $L(t^4) = \\frac{4!}{s^{4+1}} = \\frac{4!}{s^5}$.",
             "answer_source": "generated",
             "chapter": "Unit 3: Laplace Transform"
         },
         {
             "question_number": "U3Q4",
-            "question_text": "$L(\\cos 2t)$ is\n(A) $\\frac{s}{s+2}$\n(B) $\\frac{s}{s^2+4}$\n(C) $\\frac{s}{s^2-4}$\n(D) $\\frac{2}{s^2+4}$",
+            "question_text": "$L(\\cos 2t)$ is",
+            "options": [
+                "$\\frac{s}{s+2}$",
+                "$\\frac{s}{s^2+4}$",
+                "$\\frac{s}{s^2-4}$",
+                "$\\frac{2}{s^2+4}$"
+            ],
+            "correct_option": "B",
             "marks": 2,
-            "answer": "(B)\nExplanation: The Laplace transform of $\\cos at$ is given by the formula $\\frac{s}{s^2+a^2}$. Substituting $a=2$, we get $\\frac{s}{s^2+2^2} = \\frac{s}{s^2+4}$.",
+            "answer": "The Laplace transform of $\\cos at$ is given by the formula $\\frac{s}{s^2+a^2}$. Substituting $a=2$, we get $\\frac{s}{s^2+2^2} = \\frac{s}{s^2+4}$.",
             "answer_source": "generated",
             "chapter": "Unit 3: Laplace Transform"
         },
         {
             "question_number": "U4Q1",
-            "question_text": "The Cauchy-Riemann equation in polar co-ordinates are\n(A) $ru_r - v_\\theta, u_\\theta = -rv_r$\n(B) $-ru_r = v_\\theta, u_\\theta = +rv_r$\n(C) $u_r = rv_\\theta, v_r = ru_\\theta$\n(D) $u_r = \\frac{1}{r}v_\\theta, v_r = -\\frac{1}{r}u_\\theta$",
+            "question_text": "The Cauchy-Riemann equation in polar co-ordinates are",
+            "options": [
+                "$ru_r - v_\\theta, u_\\theta = -rv_r$",
+                "$-ru_r = v_\\theta, u_\\theta = +rv_r$",
+                "$u_r = rv_\\theta, v_r = ru_\\theta$",
+                "$u_r = \\frac{1}{r}v_\\theta, v_r = -\\frac{1}{r}u_\\theta$"
+            ],
+            "correct_option": "D",
             "marks": 2,
-            "answer": "(D)\nExplanation: The Cauchy-Riemann equations in polar coordinates $(r, \\theta)$ are given by $\\frac{\\partial u}{\\partial r} = \\frac{1}{r} \\frac{\\partial v}{\\partial \\theta}$ and $\\frac{\\partial v}{\\partial r} = -\\frac{1}{r} \\frac{\\partial u}{\\partial \\theta}$. This matches option D.",
+            "answer": "The Cauchy-Riemann equations in polar coordinates $(r, \\theta)$ are given by $\\frac{\\partial u}{\\partial r} = \\frac{1}{r} \\frac{\\partial v}{\\partial \\theta}$ and $\\frac{\\partial v}{\\partial r} = -\\frac{1}{r} \\frac{\\partial u}{\\partial \\theta}$.",
             "answer_source": "generated",
             "chapter": "Unit 4: Analytic Functions"
         },
         {
             "question_number": "U4Q2",
-            "question_text": "The critical point of transformation $w = z^2$ is\n(A) $z=2$\n(B) $z=0$\n(C) $z=1$\n(D) $z=-2$",
+            "question_text": "The critical point of transformation $w = z^2$ is",
+            "options": [
+                "$z=2$",
+                "$z=0$",
+                "$z=1$",
+                "$z=-2$"
+            ],
+            "correct_option": "B",
             "marks": 2,
-            "answer": "(B)\nExplanation: Critical points of a transformation $w = f(z)$ occur where the derivative $f'(z) = 0$. For $w = z^2$, $dw/dz = 2z$. Setting $2z = 0$ yields $z = 0$.",
+            "answer": "Critical points of a transformation $w = f(z)$ occur where the derivative $f'(z) = 0$. For $w = z^2$, $dw/dz = 2z$. Setting $2z = 0$ yields $z = 0$.",
             "answer_source": "generated",
             "chapter": "Unit 4: Analytic Functions"
         },
         {
             "question_number": "U4Q3",
-            "question_text": "The fixed points of the transformation $w = \\frac{2iz-4}{z-i}$ are\n(A) $-4i, i$\n(B) $4i, -i$\n(C) $i, 2i$\n(D) $-i, 2i$",
+            "question_text": "The fixed points of the transformation $w = \\frac{2iz-4}{z-i}$ are",
+            "options": [
+                "$-4i, i$",
+                "$4i, -i$",
+                "$i, 2i$",
+                "$-i, 2i$"
+            ],
+            "correct_option": "B",
             "marks": 2,
-            "answer": "(B)\nExplanation: Fixed points (or invariant points) occur where $w = z$. \n$z = \\frac{2iz-4}{z-i} \\implies z(z-i) = 2iz-4 \\implies z^2 - iz = 2iz - 4 \\implies z^2 - 3iz + 4 = 0$.\nUsing the quadratic formula: $z = \\frac{3i \\pm \\sqrt{(-3i)^2 - 4(1)(4)}}{2} = \\frac{3i \\pm \\sqrt{-9 - 16}}{2} = \\frac{3i \\pm \\sqrt{-25}}{2} = \\frac{3i \\pm 5i}{2}$.\nThe roots are $\\frac{8i}{2} = 4i$ and $\\frac{-2i}{2} = -i$.",
+            "answer": "Fixed points (or invariant points) occur where $w = z$. \n$z = \\frac{2iz-4}{z-i} \\implies z(z-i) = 2iz-4 \\implies z^2 - iz = 2iz - 4 \\implies z^2 - 3iz + 4 = 0$.\nUsing the quadratic formula: $z = \\frac{3i \\pm \\sqrt{(-3i)^2 - 4(1)(4)}}{2} = \\frac{3i \\pm \\sqrt{-9 - 16}}{2} = \\frac{3i \\pm \\sqrt{-25}}{2} = \\frac{3i \\pm 5i}{2}$.\nThe roots are $\\frac{8i}{2} = 4i$ and $\\frac{-2i}{2} = -i$.",
             "answer_source": "generated",
             "chapter": "Unit 4: Analytic Functions"
         },
         {
             "question_number": "U4Q4",
-            "question_text": "If $u+iv$ is analytic, then the curves $u=c_1$ and $v=c_2$\n(A) Cut orthogonally\n(B) Are parallel\n(C) Coincide\n(D) Intersect each other",
+            "question_text": "If $u+iv$ is analytic, then the curves $u=c_1$ and $v=c_2$",
+            "options": [
+                "Cut orthogonally",
+                "Are parallel",
+                "Coincide",
+                "Intersect each other"
+            ],
+            "correct_option": "A",
             "marks": 2,
-            "answer": "(A)\nExplanation: For an analytic function $f(z) = u(x,y) + iv(x,y)$, the Cauchy-Riemann equations imply that the gradient vectors of $u$ and $v$ are orthogonal ($\\nabla u \\cdot \\nabla v = 0$). Hence, the level curves $u=c_1$ and $v=c_2$ form orthogonal trajectories.",
+            "answer": "For an analytic function $f(z) = u(x,y) + iv(x,y)$, the Cauchy-Riemann equations imply that the gradient vectors of $u$ and $v$ are orthogonal ($\\nabla u \\cdot \\nabla v = 0$). Hence, the level curves $u=c_1$ and $v=c_2$ form orthogonal trajectories.",
             "answer_source": "generated",
             "chapter": "Unit 4: Analytic Functions"
         },
         {
             "question_number": "U5Q1",
-            "question_text": "The annular region for the function $f(z) = \\frac{1}{z(z-1)}$ is\n(A) $0 < |z| < 1$\n(B) $1 < |z| < 2$\n(C) $1 < |z| < 0$\n(D) $2 < |z| < 1$",
+            "question_text": "The annular region for the function $f(z) = \\frac{1}{z(z-1)}$ is",
+            "options": [
+                "$0 < |z| < 1$",
+                "$1 < |z| < 2$",
+                "$1 < |z| < 0$",
+                "$2 < |z| < 1$"
+            ],
+            "correct_option": "A",
             "marks": 2,
-            "answer": "(A) or (B) depending on intended expansion, but formally an annulus is defined between two concentric radii. *Note: Usually, standard annular expansions around $z=0$ for this function are $0 < |z| < 1$ or $1 < |z| < \\infty$. Given the structure of the options in the original paper, $1 < |z| < 2$ is structurally an annulus, but $0 < |z| < 1$ is the standard punctured disk (which is a degenerate annulus). We will note (A).*\nExplanation: Singularities are at $z=0$ and $z=1$. The possible concentric regions of expansion around the origin are $0 < |z| < 1$ (punctured disk/annulus) and $|z| > 1$. Option (A) correctly identifies one of these valid regions of expansion.",
+            "answer": "The singularities of $f(z)$ are at $z=0$ and $z=1$. The Laurent series about $z=0$ is valid in the punctured disc $0 < |z| < 1$ (and in $|z| > 1$). Of the given options, $0 < |z| < 1$ is the annular region of expansion.",
             "answer_source": "generated",
             "chapter": "Unit 5: Complex Integration"
         },
         {
             "question_number": "U5Q2",
-            "question_text": "If $f(z) = \\frac{1}{(z-1)(z-3)^3}$ then\n(A) 3 is a pole of order 3, 1 is a pole of order 2\n(B) 1 is a simple pole, 3 is a pole of order 3\n(C) 3 is a simple pole, 1 is a pole of order 2\n(D) 1 is a pole of order 3 and 3 is a pole of order 1",
+            "question_text": "If $f(z) = \\frac{1}{(z-1)(z-3)^3}$ then",
+            "options": [
+                "3 is a pole of order 3, 1 is a pole of order 2",
+                "1 is a simple pole, 3 is a pole of order 3",
+                "3 is a simple pole, 1 is a pole of order 2",
+                "1 is a pole of order 3 and 3 is a pole of order 1"
+            ],
+            "correct_option": "B",
             "marks": 2,
-            "answer": "(B)\nExplanation: The roots of the denominator give the poles. The factor $(z-1)^1$ indicates a simple pole at $z=1$. The factor $(z-3)^3$ indicates a pole of order 3 at $z=3$.",
+            "answer": "The roots of the denominator give the poles. The factor $(z-1)^1$ indicates a simple pole at $z=1$. The factor $(z-3)^3$ indicates a pole of order 3 at $z=3$.",
             "answer_source": "generated",
             "chapter": "Unit 5: Complex Integration"
         },
         {
             "question_number": "U5Q3",
-            "question_text": "The value of $\\oint_C \\frac{z}{z-2} dz$ when $C$ is a circle $|z|=1$ is\n(A) 0\n(B) 2\n(C) $\\pi/2$\n(D) $\\pi$",
+            "question_text": "The value of $\\oint_C \\frac{z}{z-2} dz$ when $C$ is a circle $|z|=1$ is",
+            "options": [
+                "0",
+                "2",
+                "$\\pi/2$",
+                "$\\pi$"
+            ],
+            "correct_option": "A",
             "marks": 2,
-            "answer": "(A)\nExplanation: The singularity is at $z=2$. The contour $C$ is a circle of radius 1 centered at the origin. Since $z=2$ lies strictly outside $|z|=1$, the function is analytic everywhere inside and on $C$. By Cauchy's Integral Theorem, the integral evaluates to 0.",
+            "answer": "The singularity is at $z=2$. The contour $C$ is a circle of radius 1 centered at the origin. Since $z=2$ lies strictly outside $|z|=1$, the function is analytic everywhere inside and on $C$. By Cauchy's Integral Theorem, the integral evaluates to 0.",
             "answer_source": "generated",
             "chapter": "Unit 5: Complex Integration"
         },
         {
             "question_number": "U5Q4",
-            "question_text": "If $f(z)$ is analytic inside and on $C$, the value of $\\oint_C \\frac{f(z)}{z-a} dz$, where 'C' is a simple closed curve and 'a' is any point within 'C' is\n(A) $f'(a)$\n(B) $2\\pi i f(a)$\n(C) $\\pi i f(a)$\n(D) 0",
+            "question_text": "If $f(z)$ is analytic inside and on $C$, the value of $\\oint_C \\frac{f(z)}{z-a} dz$, where 'C' is a simple closed curve and 'a' is any point within 'C' is",
+            "options": [
+                "$f'(a)$",
+                "$2\\pi i f(a)$",
+                "$\\pi i f(a)$",
+                "0"
+            ],
+            "correct_option": "B",
             "marks": 2,
-            "answer": "(B)\nExplanation: This is the direct statement of Cauchy's Integral Formula, which states that $f(a) = \\frac{1}{2\\pi i} \\oint_C \\frac{f(z)}{z-a} dz$. Rearranging gives the integral as $2\\pi i f(a)$.",
+            "answer": "This is the direct statement of Cauchy's Integral Formula, which states that $f(a) = \\frac{1}{2\\pi i} \\oint_C \\frac{f(z)}{z-a} dz$. Rearranging gives the integral as $2\\pi i f(a)$.",
             "answer_source": "generated",
             "chapter": "Unit 5: Complex Integration"
         }

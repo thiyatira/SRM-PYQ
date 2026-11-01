@@ -4,161 +4,300 @@
     "questions": [
         {
             "question_number": "U1Q26",
-            "question_text": "Evaluate $\\int_0^2 \\int_0^3 dx dy$\n(A) 0\n(B) 2\n(C) 4\n(D) 6",
+            "question_text": "Evaluate $\\int_0^2 \\int_0^3 dx dy$",
+            "options": [
+                "0",
+                "2",
+                "4",
+                "6"
+            ],
+            "correct_option": "D",
             "marks": 2,
-            "answer": "(D)\nExplanation: Integrating: $\\int_0^2 [x]_0^3 dy = \\int_0^2 3 dy = [3y]_0^2 = 6$.",
+            "answer": "Integrating: $\\int_0^2 [x]_0^3 dy = \\int_0^2 3 dy = [3y]_0^2 = 6$.",
             "answer_source": "generated",
             "chapter": "Unit 1: Integral Calculus"
         },
         {
             "question_number": "U1Q27",
-            "question_text": "Area of the Double integral in Polar co-ordinates is\n(A) $\\iint dx dy$\n(B) $\\iint x dx dy$\n(C) $\\iint r dr d\\theta$\n(D) $\\iint dr d\\theta$",
+            "question_text": "Area of the Double integral in Polar co-ordinates is",
+            "options": [
+                "$\\iint dx dy$",
+                "$\\iint x dx dy$",
+                "$\\iint r dr d\\theta$",
+                "$\\iint dr d\\theta$"
+            ],
+            "correct_option": "C",
             "marks": 2,
-            "answer": "(C)\nExplanation: The differential area element in polar coordinates is given by the Jacobian mapping $dA = r dr d\\theta$.",
+            "answer": "The differential area element in polar coordinates is given by the Jacobian mapping $dA = r dr d\\theta$.",
             "answer_source": "generated",
             "chapter": "Unit 1: Integral Calculus"
         },
         {
             "question_number": "U1Q28",
-            "question_text": "Change the order of integration in $\\int_0^2 \\int_1^{\\sqrt{4-y^2}} (x + y) dx dy$\n(A) $\\int_1^2 \\int_0^{\\sqrt{4-x^2}} (x + y) dy dx$\n(B) $\\int_1^2 \\int_0^{\\sqrt{4-x^2}} (x + y) dy dx$ *(Options appear identical in source)*\n(C) $\\int_2^3 \\int_1^{\\sqrt{4-x^2}} (x + y) dx dy$\n(D) $\\int_0^3 \\int_2^{\\sqrt{4-x^2}} (x + y) dx dy$",
+            "question_text": "Change the order of integration in $\\int_0^2 \\int_1^{\\sqrt{4-y^2}} (x + y) dx dy$",
+            "options": [
+                "$\\int_1^2 \\int_0^{\\sqrt{4-x^2}} (x + y) dy dx$",
+                "$\\int_2^3 \\int_1^{\\sqrt{4-x^2}} (x + y) dx dy$",
+                "$\\int_0^3 \\int_2^{\\sqrt{4-x^2}} (x + y) dx dy$"
+            ],
+            "correct_option": "A",
             "marks": 2,
-            "answer": "(A)\nExplanation: Original limits: $1 \\le x \\le \\sqrt{4-y^2}$ and $0 \\le y \\le 2$. The upper limit $x = \\sqrt{4-y^2}$ is the circle $x^2 + y^2 = 4$. Changing the order maps vertical strips where $0 \\le y \\le \\sqrt{4-x^2}$ and $x$ goes from 1 to 2.",
+            "answer": "Original limits: $1 \\le x \\le \\sqrt{4-y^2}$ and $0 \\le y \\le 2$. The upper limit $x = \\sqrt{4-y^2}$ is the circle $x^2 + y^2 = 4$. Changing the order maps vertical strips where $0 \\le y \\le \\sqrt{4-x^2}$ and $x$ goes from 1 to 2.",
             "answer_source": "generated",
             "chapter": "Unit 1: Integral Calculus"
         },
         {
             "question_number": "U1Q29",
-            "question_text": "Evaluation of $\\int_0^3 \\int_0^5 \\int_0^7 dx dy dz$ is\n(A) 95\n(B) 105\n(C) 125\n(D) 225",
+            "question_text": "Evaluation of $\\int_0^3 \\int_0^5 \\int_0^7 dx dy dz$ is",
+            "options": [
+                "95",
+                "105",
+                "125",
+                "225"
+            ],
+            "correct_option": "B",
             "marks": 2,
-            "answer": "(B)\nExplanation: It is a product of interval lengths: $7 \\times 5 \\times 3 = 105$.",
+            "answer": "It is a product of interval lengths: $7 \\times 5 \\times 3 = 105$.",
             "answer_source": "generated",
             "chapter": "Unit 1: Integral Calculus"
         },
         {
             "question_number": "U2Q26",
-            "question_text": "If $\\phi(x,y,z) = x^2 y + y^2 x + z^2$ then $\\nabla \\phi$ at the point $(1,1,1)$ is\n(A) $3\\mathbf{i} + 3\\mathbf{j} + 2\\mathbf{k}$\n(B) $3\\mathbf{i} + 4\\mathbf{j} + 2\\mathbf{k}$\n(C) $4\\mathbf{i} + 3\\mathbf{j} + 2\\mathbf{k}$\n(D) $3\\mathbf{i} + 3\\mathbf{j} + 4\\mathbf{k}$",
+            "question_text": "If $\\phi(x,y,z) = x^2 y + y^2 x + z^2$ then $\\nabla \\phi$ at the point $(1,1,1)$ is",
+            "options": [
+                "$3\\mathbf{i} + 3\\mathbf{j} + 2\\mathbf{k}$",
+                "$3\\mathbf{i} + 4\\mathbf{j} + 2\\mathbf{k}$",
+                "$4\\mathbf{i} + 3\\mathbf{j} + 2\\mathbf{k}$",
+                "$3\\mathbf{i} + 3\\mathbf{j} + 4\\mathbf{k}$"
+            ],
+            "correct_option": "A",
             "marks": 2,
-            "answer": "(A)\nExplanation: $\\nabla \\phi = \\frac{\\partial \\phi}{\\partial x}\\mathbf{i} + \\frac{\\partial \\phi}{\\partial y}\\mathbf{j} + \\frac{\\partial \\phi}{\\partial z}\\mathbf{k}$.\n$\\frac{\\partial \\phi}{\\partial x} = 2xy + y^2$. At (1,1,1) $\\rightarrow 2+1 = 3$.\n$\\frac{\\partial \\phi}{\\partial y} = x^2 + 2xy$. At (1,1,1) $\\rightarrow 1+2 = 3$.\n$\\frac{\\partial \\phi}{\\partial z} = 2z$. At (1,1,1) $\\rightarrow 2(1) = 2$.\nTherefore, $\\nabla \\phi = 3\\mathbf{i} + 3\\mathbf{j} + 2\\mathbf{k}$.",
+            "answer": "$\\nabla \\phi = \\frac{\\partial \\phi}{\\partial x}\\mathbf{i} + \\frac{\\partial \\phi}{\\partial y}\\mathbf{j} + \\frac{\\partial \\phi}{\\partial z}\\mathbf{k}$.\n$\\frac{\\partial \\phi}{\\partial x} = 2xy + y^2$. At (1,1,1) $\\rightarrow 2+1 = 3$.\n$\\frac{\\partial \\phi}{\\partial y} = x^2 + 2xy$. At (1,1,1) $\\rightarrow 1+2 = 3$.\n$\\frac{\\partial \\phi}{\\partial z} = 2z$. At (1,1,1) $\\rightarrow 2(1) = 2$.\nTherefore, $\\nabla \\phi = 3\\mathbf{i} + 3\\mathbf{j} + 2\\mathbf{k}$.",
             "answer_source": "generated",
             "chapter": "Unit 2: Vector Calculus"
         },
         {
             "question_number": "U2Q27",
-            "question_text": "If $\\vec{r} = x\\mathbf{i} + y\\mathbf{j} + z\\mathbf{k}$ then $\\text{div } \\vec{r}$ is\n(A) 1\n(B) 2\n(C) 3\n(D) 4",
+            "question_text": "If $\\vec{r} = x\\mathbf{i} + y\\mathbf{j} + z\\mathbf{k}$ then $\\text{div } \\vec{r}$ is",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "correct_option": "C",
             "marks": 2,
-            "answer": "(C)\nExplanation: $\\text{div } \\vec{r} = \\nabla \\cdot \\vec{r} = \\frac{\\partial x}{\\partial x} + \\frac{\\partial y}{\\partial y} + \\frac{\\partial z}{\\partial z} = 1 + 1 + 1 = 3$.",
+            "answer": "$\\text{div } \\vec{r} = \\nabla \\cdot \\vec{r} = \\frac{\\partial x}{\\partial x} + \\frac{\\partial y}{\\partial y} + \\frac{\\partial z}{\\partial z} = 1 + 1 + 1 = 3$.",
             "answer_source": "generated",
             "chapter": "Unit 2: Vector Calculus"
         },
         {
             "question_number": "U2Q28",
-            "question_text": "The vector $\\vec{F}$ is said to be irrotational if $\\text{curl } \\vec{F}$ is\n(A) 0\n(B) 1\n(C) $\\infty$\n(D) -1",
+            "question_text": "The vector $\\vec{F}$ is said to be irrotational if $\\text{curl } \\vec{F}$ is",
+            "options": [
+                "0",
+                "1",
+                "$\\infty$",
+                "-1"
+            ],
+            "correct_option": "A",
             "marks": 2,
-            "answer": "(A)\nExplanation: An irrotational vector field is one whose curl is identically zero ($\\nabla \\times \\vec{F} = \\vec{0}$).",
+            "answer": "An irrotational vector field is one whose curl is identically zero ($\\nabla \\times \\vec{F} = \\vec{0}$).",
             "answer_source": "generated",
             "chapter": "Unit 2: Vector Calculus"
         },
         {
             "question_number": "U2Q29",
-            "question_text": "Unit normal to a surface $\\phi$ is given by\n(A) $\\nabla \\phi$\n(B) $\\nabla \\cdot \\phi$\n(C) $\\nabla \\times \\phi$\n(D) $\\frac{\\nabla \\phi}{|\\nabla \\phi|}$",
+            "question_text": "Unit normal to a surface $\\phi$ is given by",
+            "options": [
+                "$\\nabla \\phi$",
+                "$\\nabla \\cdot \\phi$",
+                "$\\nabla \\times \\phi$",
+                "$\\frac{\\nabla \\phi}{|\\nabla \\phi|}$"
+            ],
+            "correct_option": "D",
             "marks": 2,
-            "answer": "(D)\nExplanation: The normal vector to a surface $\\phi = \\text{constant}$ is its gradient, $\\nabla \\phi$. The *unit* normal is this vector divided by its magnitude, $\\frac{\\nabla \\phi}{|\\nabla \\phi|}$.",
+            "answer": "The normal vector to a surface $\\phi = \\text{constant}$ is its gradient, $\\nabla \\phi$. The *unit* normal is this vector divided by its magnitude, $\\frac{\\nabla \\phi}{|\\nabla \\phi|}$.",
             "answer_source": "generated",
             "chapter": "Unit 2: Vector Calculus"
         },
         {
             "question_number": "U3Q26",
-            "question_text": "$L[t] =$\n(A) $\\frac{1}{s}$\n(B) $\\frac{2}{s}$\n(C) $\\frac{1}{t}$\n(D) $\\frac{1}{s^2}$",
+            "question_text": "$L[t] =$",
+            "options": [
+                "$\\frac{1}{s}$",
+                "$\\frac{2}{s}$",
+                "$\\frac{1}{t}$",
+                "$\\frac{1}{s^2}$"
+            ],
+            "correct_option": "D",
             "marks": 2,
-            "answer": "(D)\nExplanation: Using the formula $L(t^n) = \\frac{n!}{s^{n+1}}$, for $n=1$, $L(t^1) = \\frac{1!}{s^{1+1}} = \\frac{1}{s^2}$.",
+            "answer": "Using the formula $L(t^n) = \\frac{n!}{s^{n+1}}$, for $n=1$, $L(t^1) = \\frac{1!}{s^{1+1}} = \\frac{1}{s^2}$.",
             "answer_source": "generated",
             "chapter": "Unit 3: Laplace Transform"
         },
         {
             "question_number": "U3Q27",
-            "question_text": "$L[f(at)] =$\n(A) $\\frac{1}{s} F(\\frac{s}{a})$\n(B) $\\frac{1}{a} F(\\frac{s}{a})$\n(C) $F(\\frac{s}{a})$\n(D) $\\frac{1}{a} F(s)$",
+            "question_text": "$L[f(at)] =$",
+            "options": [
+                "$\\frac{1}{s} F(\\frac{s}{a})$",
+                "$\\frac{1}{a} F(\\frac{s}{a})$",
+                "$F(\\frac{s}{a})$",
+                "$\\frac{1}{a} F(s)$"
+            ],
+            "correct_option": "B",
             "marks": 2,
-            "answer": "(B)\nExplanation: This is the Change of Scale property. Evaluating the integral $\\int_0^\\infty e^{-st} f(at) dt$ with substitution $u=at$ leads directly to $\\frac{1}{a} F(\\frac{s}{a})$.",
+            "answer": "This is the Change of Scale property. Evaluating the integral $\\int_0^\\infty e^{-st} f(at) dt$ with substitution $u=at$ leads directly to $\\frac{1}{a} F(\\frac{s}{a})$.",
             "answer_source": "generated",
             "chapter": "Unit 3: Laplace Transform"
         },
         {
             "question_number": "U3Q28",
-            "question_text": "$L[\\cos 2t] =$\n(A) $\\frac{s}{s^2+a^2}$\n(B) $\\frac{a}{s^2+a^2}$\n(C) $\\frac{s}{s^2+4}$\n(D) $\\frac{2}{s^2+4}$",
+            "question_text": "$L[\\cos 2t] =$",
+            "options": [
+                "$\\frac{s}{s^2+a^2}$",
+                "$\\frac{a}{s^2+a^2}$",
+                "$\\frac{s}{s^2+4}$",
+                "$\\frac{2}{s^2+4}$"
+            ],
+            "correct_option": "C",
             "marks": 2,
-            "answer": "(C)\nExplanation: Formula is $L(\\cos at) = \\frac{s}{s^2+a^2}$. With $a=2$, this yields $\\frac{s}{s^2+4}$.",
+            "answer": "Formula is $L(\\cos at) = \\frac{s}{s^2+a^2}$. With $a=2$, this yields $\\frac{s}{s^2+4}$.",
             "answer_source": "generated",
             "chapter": "Unit 3: Laplace Transform"
         },
         {
             "question_number": "U3Q29",
-            "question_text": "$L^{-1}[\\frac{1}{s-2}] =$\n(A) $e^{-2t}$\n(B) $e^{2t}$\n(C) $e^{-t}$\n(D) $e^t$",
+            "question_text": "$L^{-1}[\\frac{1}{s-2}] =$",
+            "options": [
+                "$e^{-2t}$",
+                "$e^{2t}$",
+                "$e^{-t}$",
+                "$e^t$"
+            ],
+            "correct_option": "B",
             "marks": 2,
-            "answer": "(B)\nExplanation: The standard inverse transform of $\\frac{1}{s-a}$ is $e^{at}$. Here $a=2$, so the answer is $e^{2t}$.",
+            "answer": "The standard inverse transform of $\\frac{1}{s-a}$ is $e^{at}$. Here $a=2$, so the answer is $e^{2t}$.",
             "answer_source": "generated",
             "chapter": "Unit 3: Laplace Transform"
         },
         {
             "question_number": "U4Q26",
-            "question_text": "Real and imaginary parts of analytic functions are\n(A) holomorphic\n(B) harmonic\n(C) convex\n(D) concave",
+            "question_text": "Real and imaginary parts of analytic functions are",
+            "options": [
+                "holomorphic",
+                "harmonic",
+                "convex",
+                "concave"
+            ],
+            "correct_option": "B",
             "marks": 2,
-            "answer": "(B)\nExplanation: If $f(z) = u+iv$ is analytic, then $u$ and $v$ satisfy the Cauchy-Riemann equations. Taking second derivatives shows that both $u$ and $v$ satisfy Laplace's equation ($u_{xx}+u_{yy}=0$), meaning they are harmonic functions.",
+            "answer": "If $f(z) = u+iv$ is analytic, then $u$ and $v$ satisfy the Cauchy-Riemann equations. Taking second derivatives shows that both $u$ and $v$ satisfy Laplace's equation ($u_{xx}+u_{yy}=0$), meaning they are harmonic functions.",
             "answer_source": "generated",
             "chapter": "Unit 4: Analytic Functions"
         },
         {
             "question_number": "U4Q27",
-            "question_text": "Cauchy-Riemann equations are\n(A) $u_x = -v_y$\n(B) $u_x = v_y, u_y = -v_x$\n(C) $u_x = v_y, u_y = v_x$\n(D) $u_x = -v_y, u_y = v_x$",
+            "question_text": "Cauchy-Riemann equations are",
+            "options": [
+                "$u_x = -v_y$",
+                "$u_x = v_y, u_y = -v_x$",
+                "$u_x = v_y, u_y = v_x$",
+                "$u_x = -v_y, u_y = v_x$"
+            ],
+            "correct_option": "B",
             "marks": 2,
-            "answer": "(B)\nExplanation: The standard statement of the Cauchy-Riemann equations is $u_x = v_y$ and $u_y = -v_x$.",
+            "answer": "The standard statement of the Cauchy-Riemann equations is $u_x = v_y$ and $u_y = -v_x$.",
             "answer_source": "generated",
             "chapter": "Unit 4: Analytic Functions"
         },
         {
             "question_number": "U4Q28",
-            "question_text": "Under the transformation $w = \\frac{1}{z}$, a circle in the $z$ plane transforms ______ in the $w$ plane.\n(A) straight line\n(B) square\n(C) circle\n(D) sphere",
+            "question_text": "Under the transformation $w = \\frac{1}{z}$, a circle in the $z$ plane transforms ______ in the $w$ plane.",
+            "options": [
+                "straight line",
+                "square",
+                "circle",
+                "sphere"
+            ],
+            "correct_option": "C",
             "marks": 2,
-            "answer": "(C)\nExplanation: The transformation $w = 1/z$ is an inversion. It maps circles not passing through the origin to circles. (Circles passing through the origin map to straight lines, but the general/default mapping class is circles to circles/lines). In standard MCQ contexts for this specific question text, \"circle\" is the expected answer representing the general conformal mapping property.",
+            "answer": "Under the inversion $w = 1/z$, circles in the $z$-plane map to circles in the $w$-plane (a circle through the origin maps to a straight line). Of the given options, the answer is a circle.",
             "answer_source": "generated",
             "chapter": "Unit 4: Analytic Functions"
         },
         {
             "question_number": "U4Q29",
-            "question_text": "The invariant points of the transformation $w = \\frac{2z+6}{z+7}$ are\n(A) $1, -6$\n(B) $-1, 6$\n(C) $-1, -6$\n(D) $1, 6$",
+            "question_text": "The invariant points of the transformation $w = \\frac{2z+6}{z+7}$ are",
+            "options": [
+                "$1, -6$",
+                "$-1, 6$",
+                "$-1, -6$",
+                "$1, 6$"
+            ],
+            "correct_option": "A",
             "marks": 2,
-            "answer": "(A)\nExplanation: Put $w=z$. $z = \\frac{2z+6}{z+7} \\implies z^2+7z = 2z+6 \\implies z^2+5z-6=0 \\implies (z+6)(z-1)=0$. The invariant points are $-6$ and $1$.",
+            "answer": "Put $w=z$. $z = \\frac{2z+6}{z+7} \\implies z^2+7z = 2z+6 \\implies z^2+5z-6=0 \\implies (z+6)(z-1)=0$. The invariant points are $-6$ and $1$.",
             "answer_source": "generated",
             "chapter": "Unit 4: Analytic Functions"
         },
         {
             "question_number": "U5Q26",
-            "question_text": "If a curve intersects itself at a point then the point is said to be a\n(A) critical point\n(B) saddle point\n(C) multiple point\n(D) singular point",
+            "question_text": "If a curve intersects itself at a point then the point is said to be a",
+            "options": [
+                "critical point",
+                "saddle point",
+                "multiple point",
+                "singular point"
+            ],
+            "correct_option": "C",
             "marks": 2,
-            "answer": "(C)\nExplanation: A point on a curve where it crosses or intersects itself is mathematically defined as a multiple point (e.g., a double point if it crosses once).",
+            "answer": "A point on a curve where it crosses or intersects itself is mathematically defined as a multiple point (e.g., a double point if it crosses once).",
             "answer_source": "generated",
             "chapter": "Unit 5: Complex Integration"
         },
         {
             "question_number": "U5Q27",
-            "question_text": "A region without holes is called\n(A) complete region\n(B) simply connected region\n(C) connected region\n(D) multiply connected region",
+            "question_text": "A region without holes is called",
+            "options": [
+                "complete region",
+                "simply connected region",
+                "connected region",
+                "multiply connected region"
+            ],
+            "correct_option": "B",
             "marks": 2,
-            "answer": "(B)\nExplanation: A simply connected region is a domain in which any simple closed curve can be shrunk to a point continuously without leaving the domain. Intuitively, this means a region that has no \"holes\".",
+            "answer": "A simply connected region is a domain in which any simple closed curve can be shrunk to a point continuously without leaving the domain. Intuitively, this means a region that has no \"holes\".",
             "answer_source": "generated",
             "chapter": "Unit 5: Complex Integration"
         },
         {
             "question_number": "U5Q28",
-            "question_text": "If $f(z)$ is analytic and $f'(z)$ is continuous at all points inside and on a simple closed curve $C$, then by Cauchy's integral theorem $\\oint_C f(z) dz =$\n(A) 0\n(B) 1\n(C) $\\infty$\n(D) $\\pi$",
+            "question_text": "If $f(z)$ is analytic and $f'(z)$ is continuous at all points inside and on a simple closed curve $C$, then by Cauchy's integral theorem $\\oint_C f(z) dz =$",
+            "options": [
+                "0",
+                "1",
+                "$\\infty$",
+                "$\\pi$"
+            ],
+            "correct_option": "A",
             "marks": 2,
-            "answer": "(A)\nExplanation: This is the direct statement of Cauchy's Integral Theorem: the contour integral of an analytic function over a simple closed curve is exactly zero.",
+            "answer": "This is the direct statement of Cauchy's Integral Theorem: the contour integral of an analytic function over a simple closed curve is exactly zero.",
             "answer_source": "generated",
             "chapter": "Unit 5: Complex Integration"
         },
         {
             "question_number": "U5Q29",
-            "question_text": "A point at which the function $f(z)$ is not analytic is called\n(A) isolated singular point\n(B) singular point\n(C) removable singular point\n(D) essential singular point",
+            "question_text": "A point at which the function $f(z)$ is not analytic is called",
+            "options": [
+                "isolated singular point",
+                "singular point",
+                "removable singular point",
+                "essential singular point"
+            ],
+            "correct_option": "B",
             "marks": 2,
-            "answer": "(B)\nExplanation: The general term for a point where a function fails to be analytic is a \"singular point\" or \"singularity\". (Isolated, removable, and essential are specific types of singular points).",
+            "answer": "The general term for a point where a function fails to be analytic is a \"singular point\" or \"singularity\". (Isolated, removable, and essential are specific types of singular points).",
             "answer_source": "generated",
             "chapter": "Unit 5: Complex Integration"
         }

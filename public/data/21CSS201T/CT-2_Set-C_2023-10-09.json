@@ -5,81 +5,151 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "The Instruction fetch phase ends with _________\na) Placing the data from the address in MAR into MDR\nb) Placing the address of the data into MAR\nc) Completing the execution of the data and placing its storage address into MAR\nd) Decoding the data in MDR and placing it in IR",
+            "question_text": "The Instruction fetch phase ends with _________",
+            "options": [
+                "Placing the data from the address in MAR into MDR",
+                "Placing the address of the data into MAR",
+                "Completing the execution of the data and placing its storage address into MAR",
+                "Decoding the data in MDR and placing it in IR"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "d) Decoding the data in MDR and placing it in IR\n\n*Rationale:* The instruction fetch phase finishes when the instruction is fetched from memory (into MDR) and loaded into the Instruction Register (IR) for decoding.",
+            "answer": "The instruction fetch phase finishes when the instruction is fetched from memory (into MDR) and loaded into the Instruction Register (IR) for decoding.",
             "answer_source": "provided",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "2",
-            "question_text": "In the case of, Zero-address instruction method the operands are stored in _____\na) Registers\nb) Accumulators\nc) Push down stack\nd) Cache",
+            "question_text": "In the case of, Zero-address instruction method the operands are stored in _____",
+            "options": [
+                "Registers",
+                "Accumulators",
+                "Push down stack",
+                "Cache"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "c) Push down stack\n\n*Rationale:* Zero-address instructions use stack-based operations (like PUSH and POP), where operands are implicitly on top of the stack.",
+            "answer": "Zero-address instructions use stack-based operations (like PUSH and POP), where operands are implicitly on top of the stack.",
             "answer_source": "provided",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "3",
-            "question_text": "In the following indexed addressing mode instruction, MOV 25(R1), LOC the effective address is ______\na) EA = 25+R1\nb) EA = R1\nc) EA = [R1]\nd) EA = 25+[R1]",
+            "question_text": "In the following indexed addressing mode instruction, MOV 25(R1), LOC the effective address is ______",
+            "options": [
+                "EA = 25+R1",
+                "EA = R1",
+                "EA = [R1]",
+                "EA = 25+[R1]"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "d) EA = 25+[R1]\n\n*Rationale:* In indexed addressing, the effective address is calculated by adding the constant offset (index) to the contents of the index register ($[R1]$).",
+            "answer": "In indexed addressing, the effective address is calculated by adding the constant offset (index) to the contents of the index register ($[R1]$).",
             "answer_source": "provided",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "4",
-            "question_text": "_____ addressing mode is most suitable to change the normal sequence of execution of instructions.\na) Relative\nb) Indirect\nc) Index with Offset\nd) Immediate",
+            "question_text": "_____ addressing mode is most suitable to change the normal sequence of execution of instructions.",
+            "options": [
+                "Relative",
+                "Indirect",
+                "Index with Offset",
+                "Immediate"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "a) Relative\n\n*Rationale:* Relative addressing (PC-relative) is commonly used in branch instructions to dynamically change the execution flow relative to the current Program Counter.",
+            "answer": "Relative addressing (PC-relative) is commonly used in branch instructions to dynamically change the execution flow relative to the current Program Counter.",
             "answer_source": "provided",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "5",
-            "question_text": "Which of the following is/are true of the auto-increment addressing mode?\nI. It is useful in creating self-relocating code.\nII. If it is included in an Instruction Set Architecture, then an additional ALU is required for effective address calculation.\nIII. The amount of increment depends on the size of the data item accessed.\na) I only\nb) II only\nc) III Only\nd) I and III only",
+            "question_text": "Which of the following is/are true of the auto-increment addressing mode?\nI. It is useful in creating self-relocating code.\nII. If it is included in an Instruction Set Architecture, then an additional ALU is required for effective address calculation.\nIII. The amount of increment depends on the size of the data item accessed.",
+            "options": [
+                "I only",
+                "II only",
+                "III Only",
+                "I and III only"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "c) III Only\n\n*Rationale:* Auto-increment automatically increments the register after accessing its operand, and the increment step matches the size of the operand (e.g., 1 byte for char, 4 bytes for word). It does not require an additional ALU, and is not primarily used for self-relocating code.",
+            "answer": "Auto-increment automatically increments the register after accessing its operand, and the increment step matches the size of the operand (e.g., 1 byte for char, 4 bytes for word). It does not require an additional ALU, and is not primarily used for self-relocating code.",
             "answer_source": "provided",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "6",
-            "question_text": "Using Booth’s Algorithm for multiplication, the multiplier -57 will be recoded as\na) 0 -1 0 0 1 0 0 -1\nb) 1 1 0 0 0 1 1 1\nc) 0 -1 0 0 1 0 0 0\nd) 0 1 0 0 -1 0 0 1",
+            "question_text": "Using Booth’s Algorithm for multiplication, the multiplier -57 will be recoded as",
+            "options": [
+                "0 -1 0 0 1 0 0 -1",
+                "1 1 0 0 0 1 1 1",
+                "0 -1 0 0 1 0 0 0",
+                "0 1 0 0 -1 0 0 1"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "a) 0 -1 0 0 1 0 0 -1\n\n*Rationale:* Decimal -57 in 8-bit 2's complement is $11000111_2$. Appending $y_{-1} = 0$ to the right yields $1\\ 1\\ 0\\ 0\\ 0\\ 1\\ 1\\ 1\\ (0)$. Using Booth's recoding table ($y_i - y_{i-1}$):\n- $y_0 - y_{-1} = 1 - 0 = -1$\n- $y_1 - y_0 = 1 - 1 = 0$\n- $y_2 - y_1 = 1 - 1 = 0$\n- $y_3 - y_2 = 0 - 1 = -1$\n- $y_4 - y_3 = 0 - 0 = 0$\n- $y_5 - y_4 = 0 - 0 = 0$\n- $y_6 - y_5 = 1 - 0 = 1$\n- $y_7 - y_6 = 1 - 1 = 0$\n- $y_8 - y_7 = 1 - 1 = 0$\nThus, the Booth's recoded representation is `0 -1 0 0 1 0 0 -1`.",
+            "answer": "Decimal -57 in 8-bit 2's complement is $11000111_2$. Appending $y_{-1} = 0$ to the right yields $1\\ 1\\ 0\\ 0\\ 0\\ 1\\ 1\\ 1\\ (0)$. Using Booth's recoding table ($y_i - y_{i-1}$):\n- $y_0 - y_{-1} = 1 - 0 = -1$\n- $y_1 - y_0 = 1 - 1 = 0$\n- $y_2 - y_1 = 1 - 1 = 0$\n- $y_3 - y_2 = 0 - 1 = -1$\n- $y_4 - y_3 = 0 - 0 = 0$\n- $y_5 - y_4 = 0 - 0 = 0$\n- $y_6 - y_5 = 1 - 0 = 1$\n- $y_7 - y_6 = 1 - 1 = 0$\n- $y_8 - y_7 = 1 - 1 = 0$\nThus, the Booth's recoded representation is `0 -1 0 0 1 0 0 -1`.",
             "answer_source": "provided",
             "chapter": "Unit 3: Design of ALU"
         },
         {
             "question_number": "7",
-            "question_text": "A processor that has carry, overflow and sign flag bits as part of its program status word (PSW) performs addition of the following two 2’s complement numbers 01001101 and 11101001. After the execution of this addition operation, the status of the carry, overflow and sign flags, respectively will be:\na) 1, 1, 0\nb) 1, 0, 0\nc) 0, 1, 0\nd) 1, 0, 1",
+            "question_text": "A processor that has carry, overflow and sign flag bits as part of its program status word (PSW) performs addition of the following two 2’s complement numbers 01001101 and 11101001. After the execution of this addition operation, the status of the carry, overflow and sign flags, respectively will be:",
+            "options": [
+                "1, 1, 0",
+                "1, 0, 0",
+                "0, 1, 0",
+                "1, 0, 1"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b) 1, 0, 0\n\n*Rationale:* \n$$\\begin{array}{r@{\\quad}l}\n\\ \\ 01001101 & \\\\\n+\\ 11101001 & \\\\\n\\hline\n1\\ 00110110 & \\\\\n\\hline\n\\end{array}$$\n- Carry ($C$): A carry-out of 1 occurs from the MSB, so $C = 1$.\n- Overflow ($V$): Since we are adding numbers of opposite signs, overflow cannot occur, so $V = 0$.\n- Sign ($S$): The MSB of the result is 0, so $S = 0$.\nThus, the flags $(C, V, S)$ are $(1, 0, 0)$.",
+            "answer": "$$\\begin{array}{r@{\\quad}l}\n\\ \\ 01001101 & \\\\\n+\\ 11101001 & \\\\\n\\hline\n1\\ 00110110 & \\\\\n\\hline\n\\end{array}$$\n- Carry ($C$): A carry-out of 1 occurs from the MSB, so $C = 1$.\n- Overflow ($V$): Since we are adding numbers of opposite signs, overflow cannot occur, so $V = 0$.\n- Sign ($S$): The MSB of the result is 0, so $S = 0$.\nThus, the flags $(C, V, S)$ are $(1, 0, 0)$.",
             "answer_source": "provided",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "8",
-            "question_text": "Which of the following addressing modes permits relocation without any change whatsoever in the code?\na) Indirect addressing\nb) Indexed addressing\nc) Base register addressing\nd) PC relative addressing",
+            "question_text": "Which of the following addressing modes permits relocation without any change whatsoever in the code?",
+            "options": [
+                "Indirect addressing",
+                "Indexed addressing",
+                "Base register addressing",
+                "PC relative addressing"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "d) PC relative addressing\n\n*Rationale:* PC-relative addressing specifies the address relative to the current value of the program counter, allowing the entire block of code to be relocated to a different part of the memory without updating any internal instruction addresses.",
+            "answer": "PC-relative addressing specifies the address relative to the current value of the program counter, allowing the entire block of code to be relocated to a different part of the memory without updating any internal instruction addresses.",
             "answer_source": "provided",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "9",
-            "question_text": "IEEE double precision representation for (1259.125)10?\nA.0100000010010011101011001....\nB.1100000010010011101011001....\nC.1111000010010011101011001....\nD.0100001110010011101011001....",
+            "question_text": "IEEE double precision representation for (1259.125)10?",
+            "options": [
+                "0100000010010011101011001....",
+                "1100000010010011101011001....",
+                "1111000010010011101011001....",
+                "0100001110010011101011001...."
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "A.0100000010010011101011001....\n\n*Rationale:* Convert $(1259.125)_{10}$ to binary:\n- $1259_{10} = 10011101011_2$\n- $0.125_{10} = 0.001_2$\n- Combined binary: $10011101011.001_2$\n- Normalized: $1.0011101011001_2 \\times 2^{10}$.\nFor IEEE-754 double-precision format:\n- Sign bit ($S$) = 0 (positive)\n- Biased Exponent ($E$) = $10 + 1023 = 1033 = 10000001001_2$\n- Mantissa ($M$) = $0011101011001...$\nThis matches Option A.",
+            "answer": "Convert $(1259.125)_{10}$ to binary:\n- $1259_{10} = 10011101011_2$\n- $0.125_{10} = 0.001_2$\n- Combined binary: $10011101011.001_2$\n- Normalized: $1.0011101011001_2 \\times 2^{10}$.\nFor IEEE-754 double-precision format:\n- Sign bit ($S$) = 0 (positive)\n- Biased Exponent ($E$) = $10 + 1023 = 1033 = 10000001001_2$\n- Mantissa ($M$) = $0011101011001...$\nThis matches Option A.",
             "answer_source": "provided",
             "chapter": "Unit 3: Design of ALU"
         },
         {
             "question_number": "10",
-            "question_text": "When 1101 is used to divide 100010010 the remainder is ______\na) 101\nb) 11\nc) 0\nd) 1",
+            "question_text": "When 1101 is used to divide 100010010 the remainder is ______",
+            "options": [
+                "101",
+                "11",
+                "0",
+                "1"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "d) 1\n\n*Rationale:* Convert the binary numbers to decimal:\n- Dividend: $100010010_2 = 274_{10}$\n- Divisor: $1101_2 = 13_{10}$\n- division: $274 / 13 = 21$ with a remainder of $1$ ($0001_2$).",
+            "answer": "Convert the binary numbers to decimal:\n- Dividend: $100010010_2 = 274_{10}$\n- Divisor: $1101_2 = 13_{10}$\n- division: $274 / 13 = 21$ with a remainder of $1$ ($0001_2$).",
             "answer_source": "provided",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },

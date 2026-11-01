@@ -4,81 +4,151 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Predict which one of the following is not an OOPS Concept?\n(A) Exception\n(B) Encapsulation\n(C) Abstraction\n(D) Polymorphism",
+            "question_text": "Predict which one of the following is not an OOPS Concept?",
+            "options": [
+                "Exception",
+                "Encapsulation",
+                "Abstraction",
+                "Polymorphism"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Exception. Explanation: Exception handling is a mechanism for error management, not one of the fundamental pillars of OOPS (which are Abstraction, Encapsulation, Inheritance, and Polymorphism).",
+            "answer": "Exception handling is a mechanism for error management, not one of the fundamental pillars of OOPS (which are Abstraction, Encapsulation, Inheritance, and Polymorphism).",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 1"
         },
         {
             "question_number": "2",
-            "question_text": "A function contained within a class in C++ is ________.\n(A) A Method\n(B) A Member Function\n(C) An Inline Function\n(D) A Class Function",
+            "question_text": "A function contained within a class in C++ is ________.",
+            "options": [
+                "A Method",
+                "A Member Function",
+                "An Inline Function",
+                "A Class Function"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) A Member Function. Explanation: In C++ terminology, a function defined inside a class is called a member function.",
+            "answer": "In C++ terminology, a function defined inside a class is called a member function.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 1"
         },
         {
             "question_number": "3",
-            "question_text": "Which of the following is the purpose of ‘Unified Modeling Language’?\n(A) A program that builds physical models\n(B) The Combination of programming Languages to build Physical Models\n(C) A Frame Work used to Develop Software Systems\n(D) A way to look at the Organization of a program",
+            "question_text": "Which of the following is the purpose of ‘Unified Modeling Language’?",
+            "options": [
+                "A program that builds physical models",
+                "The Combination of programming Languages to build Physical Models",
+                "A Frame Work used to Develop Software Systems",
+                "A way to look at the Organization of a program"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) A Frame Work used to Develop Software Systems. Explanation: UML provides a standardized way to visualize the design of a system.",
+            "answer": "UML provides a standardized way to visualize the design of a system.",
             "answer_source": "General UML Knowledge",
             "chapter": "Unit 1"
         },
         {
             "question_number": "4",
-            "question_text": "Select the Role of a Constructor from the following\n(A) It is used to construct a new class\n(B) It is used to construct a new object\n(C) It is used to construct a new function\n(D) It is used to initialize objects",
+            "question_text": "Select the Role of a Constructor from the following",
+            "options": [
+                "It is used to construct a new class",
+                "It is used to construct a new object",
+                "It is used to construct a new function",
+                "It is used to initialize objects"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) It is used to initialize objects. Explanation: Constructors are special member functions called automatically upon object creation to initialize the object's data members.",
+            "answer": "Constructors are special member functions called automatically upon object creation to initialize the object's data members.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 2"
         },
         {
             "question_number": "5",
-            "question_text": "In C++ the ‘COUT’ is available in which of the following class?\n(A) iostream\n(B) istream\n(C) ostream\n(D) ifstream",
+            "question_text": "In C++ the ‘COUT’ is available in which of the following class?",
+            "options": [
+                "iostream",
+                "istream",
+                "ostream",
+                "ifstream"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) ostream. Explanation: `cout` is an object of the `ostream` class defined in the `<iostream>` header.",
+            "answer": "`cout` is an object of the `ostream` class defined in the `<iostream>` header.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 1"
         },
         {
             "question_number": "6",
-            "question_text": "Which of the following operator can be overloaded in C++?\n(A) *\n(B) ()\n(C) ->\n(D) =",
+            "question_text": "Which of the following operator can be overloaded in C++?",
+            "options": [
+                "*",
+                "()",
+                "->",
+                "="
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) (). Explanation: While others are also overloadable, note that almost all C++ operators can be overloaded except for `::`, `.`, `.*`, and `?:`. Wait, actually all listed options are overloadable. In multiple choice questions like this, one might be the intended 'most unique' or there is a specific typo in the source; however, `()` (function call operator) is definitely overloadable.",
+            "answer": "All four operators (*, (), ->, =) can be overloaded in C++; only ::, ., .*, ?: and sizeof cannot. The answer key marks () (the function call operator) as the choice.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 2"
         },
         {
             "question_number": "7",
-            "question_text": "What is the default access specifier for the class member?\n(A) Protected\n(B) Private\n(C) Public\n(D) Friend",
+            "question_text": "What is the default access specifier for the class member?",
+            "options": [
+                "Protected",
+                "Private",
+                "Public",
+                "Friend"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Private. Explanation: In C++, class members are private by default if no access specifier is provided.",
+            "answer": "In C++, class members are private by default if no access specifier is provided.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 1"
         },
         {
             "question_number": "8",
-            "question_text": "________ is a restricted class that cannot be used to create objects in C++\n(A) Parent Class\n(B) Anonymous Class\n(C) Nested Class\n(D) Abstract Class",
+            "question_text": "________ is a restricted class that cannot be used to create objects in C++",
+            "options": [
+                "Parent Class",
+                "Anonymous Class",
+                "Nested Class",
+                "Abstract Class"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Abstract Class. Explanation: Abstract classes contain at least one pure virtual function, making them ineligible for direct instantiation.",
+            "answer": "Abstract classes contain at least one pure virtual function, making them ineligible for direct instantiation.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 3"
         },
         {
             "question_number": "9",
-            "question_text": "Which UML diagram is used to show dynamic aspects related to a system?\n(A) Sequence Diagram\n(B) Use Case Diagram\n(C) Interaction Diagram\n(D) Deployment Diagram",
+            "question_text": "Which UML diagram is used to show dynamic aspects related to a system?",
+            "options": [
+                "Sequence Diagram",
+                "Use Case Diagram",
+                "Interaction Diagram",
+                "Deployment Diagram"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Interaction Diagram. Explanation: Interaction diagrams (Sequence/Collaboration) specifically model the dynamic behavior/interactions between objects.",
+            "answer": "Interaction diagrams (Sequence/Collaboration) specifically model the dynamic behavior/interactions between objects.",
             "answer_source": "General UML Knowledge",
             "chapter": "Unit 2"
         },
         {
             "question_number": "10",
-            "question_text": "In C++, a constructor with no arguments is called\n(A) Copy constructor\n(B) Parameterized Constructor\n(C) Over Loaded constructor\n(D) Default Constructor",
+            "question_text": "In C++, a constructor with no arguments is called",
+            "options": [
+                "Copy constructor",
+                "Parameterized Constructor",
+                "Over Loaded constructor",
+                "Default Constructor"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Default Constructor. Explanation: A constructor that can be called with zero arguments is the default constructor.",
+            "answer": "A constructor that can be called with zero arguments is the default constructor.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 2"
         },
@@ -92,113 +162,211 @@
         },
         {
             "question_number": "12",
-            "question_text": "In C++, Inline functions are expanded during\n(A) Debug Time\n(B) Test Time\n(C) Compile Time\n(D) Run Time",
+            "question_text": "In C++, Inline functions are expanded during",
+            "options": [
+                "Debug Time",
+                "Test Time",
+                "Compile Time",
+                "Run Time"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Compile Time. Explanation: The compiler replaces the function call with the actual code body at compile time.",
+            "answer": "The compiler replaces the function call with the actual code body at compile time.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 3"
         },
         {
             "question_number": "13",
-            "question_text": "Predict the type of inheritance ‘Class D is derived from base classes A, B and C\n(A) Multi - Level Inheritance\n(B) Multiple Inheritance\n(C) Hybrid Inheritance\n(D) Hierarchical Inheritance",
+            "question_text": "Predict the type of inheritance ‘Class D is derived from base classes A, B and C",
+            "options": [
+                "Multi - Level Inheritance",
+                "Multiple Inheritance",
+                "Hybrid Inheritance",
+                "Hierarchical Inheritance"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Multiple Inheritance. Explanation: Multiple inheritance occurs when a class derives from more than one base class.",
+            "answer": "Multiple inheritance occurs when a class derives from more than one base class.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 3"
         },
         {
             "question_number": "14",
-            "question_text": "Which UML diagram provides the static view of the system?\n(A) State Chart\n(B) Collaboration\n(C) Use Case\n(D) Activity",
+            "question_text": "Which UML diagram provides the static view of the system?",
+            "options": [
+                "State Chart",
+                "Collaboration",
+                "Use Case",
+                "Activity"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(B) Collaboration. *(Note: Typically Class/Component diagrams are the primary static diagrams, but in this provided set, Collaboration is grouped with the static structural aspect of interactions.)*",
-            "answer_source": "General UML Knowledge",
+            "answer": "The Use Case diagram gives the static (use case) view of a system, whereas State Chart, Collaboration and Activity diagrams show dynamic behaviour.",
+            "answer_source": "generated",
             "chapter": "Unit 2"
         },
         {
             "question_number": "15",
-            "question_text": "Which of the following UML diagram is Time oriented\n(A) Collaboration\n(B) Sequence\n(C) Activity\n(D) Use Case",
+            "question_text": "Which of the following UML diagram is Time oriented",
+            "options": [
+                "Collaboration",
+                "Sequence",
+                "Activity",
+                "Use Case"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Sequence. Explanation: Sequence diagrams rely on a vertical timeline to show message ordering.",
+            "answer": "Sequence diagrams rely on a vertical timeline to show message ordering.",
             "answer_source": "General UML Knowledge",
             "chapter": "Unit 2"
         },
         {
             "question_number": "16",
-            "question_text": "Infer the meaning of the following C++ statement int (*fp) (char *)\n(A) Pointer to a Pointer\n(B) Pointer to an Array or Characters\n(C) Function taking a char * argument and returning a pointer to an integer\n(D) Pointer to function taking a char * argument and returns a pointer to int",
+            "question_text": "Infer the meaning of the following C++ statement int (*fp) (char *)",
+            "options": [
+                "Pointer to a Pointer",
+                "Pointer to an Array or Characters",
+                "Function taking a char * argument and returning a pointer to an integer",
+                "Pointer to function taking a char * argument and returns a pointer to int"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(C) Function taking a char * argument and returning a pointer to an integer. *(Correction: Actually, it is a pointer to a function returning an int.)*",
-            "answer_source": "General C++ Knowledge",
+            "answer": "int (*fp)(char *) declares fp as a pointer to a function that takes a char * argument and returns an int. Option D is the closest choice (it is a pointer to a function; its wording about returning a pointer to int is loose).",
+            "answer_source": "generated",
             "chapter": "Unit 1"
         },
         {
             "question_number": "17",
-            "question_text": "In C++, Generic programming can be achieved through\n(A) Templates\n(B) Inline Functions\n(C) Friend Functions\n(D) Abstraction",
+            "question_text": "In C++, Generic programming can be achieved through",
+            "options": [
+                "Templates",
+                "Inline Functions",
+                "Friend Functions",
+                "Abstraction"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Templates. Explanation: Templates are the mechanism for writing generic code.",
+            "answer": "Templates are the mechanism for writing generic code.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 4"
         },
         {
             "question_number": "18",
-            "question_text": "In C++, exception handling is achieve by using ________, ________ and ________\n(A) Try, Except, Throw\n(B) Try, Catch, Throw\n(C) Try, Catch, Thrown\n(D) Try, Except, Throws",
+            "question_text": "In C++, exception handling is achieve by using ________, ________ and ________",
+            "options": [
+                "Try, Except, Throw",
+                "Try, Catch, Throw",
+                "Try, Catch, Thrown",
+                "Try, Except, Throws"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Try, Catch, Throw. Explanation: Standard C++ exception handling uses these three keywords.",
+            "answer": "Standard C++ exception handling uses these three keywords.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 4"
         },
         {
             "question_number": "19",
-            "question_text": "A collection of model elements in UML are referred to as\n(A) Box\n(B) Dependency\n(C) UML Notes\n(D) Package Members",
+            "question_text": "A collection of model elements in UML are referred to as",
+            "options": [
+                "Box",
+                "Dependency",
+                "UML Notes",
+                "Package Members"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Package Members. Explanation: Packages in UML are used to group elements, and those contained elements are package members.",
+            "answer": "Packages in UML are used to group elements, and those contained elements are package members.",
             "answer_source": "General UML Knowledge",
             "chapter": "Unit 4"
         },
         {
             "question_number": "20",
-            "question_text": "Identify the elements of UML package diagram form the following:\n(A) Package Symbols\n(B) Group of use cases, classes and components\n(C) Interfaces\n(D) Package symbols, grouping of use cases, classes and components",
+            "question_text": "Identify the elements of UML package diagram form the following:",
+            "options": [
+                "Package Symbols",
+                "Group of use cases, classes and components",
+                "Interfaces",
+                "Package symbols, grouping of use cases, classes and components"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Package symbols, grouping of use cases, classes and components.",
+            "answer": "",
             "answer_source": "General UML Knowledge",
             "chapter": "Unit 4"
         },
         {
             "question_number": "21",
-            "question_text": "What is the ‘Standard Template Library’ in C++?\n(A) Set of C++ classes\n(B) Set of Data Structures\n(C) Set of Template classes to Provide common programming data structures and functions\n(D) Set of Template functions used for easy data structure implementations",
+            "question_text": "What is the ‘Standard Template Library’ in C++?",
+            "options": [
+                "Set of C++ classes",
+                "Set of Data Structures",
+                "Set of Template classes to Provide common programming data structures and functions",
+                "Set of Template functions used for easy data structure implementations"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Set of Template classes to Provide common programming data structures and functions.",
+            "answer": "",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 5"
         },
         {
             "question_number": "22",
-            "question_text": "What are the container in the C++ standard template Library?\n(A) Containers store objects and the data\n(B) Containers store all the Algorithms\n(C) Containers store all the Programs\n(D) Containers store over loaded function",
+            "question_text": "What are the container in the C++ standard template Library?",
+            "options": [
+                "Containers store objects and the data",
+                "Containers store all the Algorithms",
+                "Containers store all the Programs",
+                "Containers store over loaded function"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Containers store objects and the data.",
+            "answer": "",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 5"
         },
         {
             "question_number": "23",
-            "question_text": "In C++ STL, iterators are used to ________\n(A) Iterate over C- like arrays\n(B) Iterate over Pointers\n(C) Point memory addresses of STL containers\n(D) Iterate over Functions",
+            "question_text": "In C++ STL, iterators are used to ________",
+            "options": [
+                "Iterate over C- like arrays",
+                "Iterate over Pointers",
+                "Point memory addresses of STL containers",
+                "Iterate over Functions"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Point memory addresses of STL containers. Explanation: Iterators are generalized pointers providing access to elements within STL containers.",
+            "answer": "Iterators are generalized pointers providing access to elements within STL containers.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 5"
         },
         {
             "question_number": "24",
-            "question_text": "In C++ STL, the unordered associative containers are used to ________\n(A) Implement sorted data structure\n(B) Implement unordered data structures that can be quickly searched\n(C) Implement data structures that can be accessed in a sequential manner\n(D) Implement data structure that can be searched in random order",
+            "question_text": "In C++ STL, the unordered associative containers are used to ________",
+            "options": [
+                "Implement sorted data structure",
+                "Implement unordered data structures that can be quickly searched",
+                "Implement data structures that can be accessed in a sequential manner",
+                "Implement data structure that can be searched in random order"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Implement unordered data structures that can be quickly searched. Explanation: Unordered containers use hash tables for O(1) average search time.",
+            "answer": "Unordered containers use hash tables for O(1) average search time.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 5"
         },
         {
             "question_number": "25",
-            "question_text": "The UML diagram used to show interaction between messages are called as\n(A) Activity Diagram\n(B) State Chart Diagram\n(C) Object Life Line\n(D) Collaboration Diagram",
+            "question_text": "The UML diagram used to show interaction between messages are called as",
+            "options": [
+                "Activity Diagram",
+                "State Chart Diagram",
+                "Object Life Line",
+                "Collaboration Diagram"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Collaboration Diagram. Explanation: Interaction diagrams (Collaboration/Sequence) show how objects interact through message passing.",
+            "answer": "Interaction diagrams (Collaboration/Sequence) show how objects interact through message passing.",
             "answer_source": "General UML Knowledge",
             "chapter": "Unit 2"
         },

@@ -1,6 +1,25 @@
 import katex from "katex";
 import { escapeHtml, markdownToHtml } from "@/lib/pyq/render";
-import { unitOrder, type Question } from "@/lib/pyq/loader";
+import { OPTION_LETTERS, unitOrder, type Question } from "@/lib/pyq/loader";
+
+function optionsBlock(q: Question): string {
+  if (!q.options) return "";
+  const items = q.options
+    .map((o, i) => `<li><span class="opt-letter">${OPTION_LETTERS[i]}.</span><span class="opt-text">${markdownToHtml(o)}</span></li>`)
+    .join("");
+  return `<ol class="options">${items}</ol>`;
+}
+
+function answerBlock(q: Question): string {
+  const correct = q.options && q.correct && q.correct.length > 0 ? q.correct : null;
+  const head = correct
+    ? `<strong>${correct.map((i) => OPTION_LETTERS[i]).join(", ")}${correct.length === 1 && q.options ? `. ` : ""}</strong>${
+        correct.length === 1 && q.options ? markdownToHtml(q.options[correct[0]]) : ""
+      }`
+    : "";
+  const body = markdownToHtml(q.answer);
+  return head ? `${head}${body ? `<div class="explain">${body}</div>` : ""}` : body;
+}
 
 /** Opens a print-friendly document in a new window. Returns false if the popup was blocked. */
 export function printQuestions(title: string, name: string, questions: Question[]): boolean {
@@ -26,8 +45,8 @@ export function printQuestions(title: string, name: string, questions: Question[
       body += `
         <div class="question">
           <div class="q-header">Q${n++}<span class="marks">${escapeHtml(marks)}</span></div>
-          <div class="q-text">${markdownToHtml(q.question_text)}</div>
-          <div class="answer"><strong>Answer:</strong> ${markdownToHtml(q.answer)}</div>
+          <div class="q-text">${markdownToHtml(q.question_text)}</div>${optionsBlock(q)}
+          <div class="answer"><strong>Answer:</strong> ${answerBlock(q)}</div>
           <div class="source">Source: ${escapeHtml(q.source)}</div>
         </div>`;
     }
@@ -48,6 +67,11 @@ export function printQuestions(title: string, name: string, questions: Question[
     .q-header { font-weight: bold; font-size: 12pt; }
     .marks { font-weight: normal; font-size: 10pt; margin-left: 4px; }
     .q-text { margin: 4px 0 6px 0; }
+    ol.options { list-style: none; margin: 4px 0 8px 0; padding: 0; }
+    ol.options li { display: flex; gap: 8px; margin: 2px 0; }
+    ol.options .opt-letter { font-weight: bold; min-width: 1.4em; }
+    ol.options .opt-text p { margin: 0; }
+    .explain { margin-top: 4px; }
     .answer { background: #f0f7f0; border-left: 3px solid #4a8; padding: 6px 10px; margin-top: 6px; font-size: 10pt; }
     .source { font-size: 9pt; color: #555; margin-top: 4px; }
     .code-block-wrapper { margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; overflow: hidden; page-break-inside: avoid; }

@@ -4,7 +4,14 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "What is the first step in the problem-solving process?\n(A) Generate potential solutions\n(B) Define the problem\n(C) Implement the solution\n(D) Evaluate alternatives",
+            "question_text": "What is the first step in the problem-solving process?",
+            "options": [
+                "Generate potential solutions",
+                "Define the problem",
+                "Implement the solution",
+                "Evaluate alternatives"
+            ],
+            "correct_option": "B",
             "marks": 1,
             "answer": "The first step in the problem-solving process is to (B) Define the problem. Before attempting to solve any problem, it's crucial to clearly understand and define what the problem is.",
             "answer_source": "generated",
@@ -12,7 +19,14 @@
         },
         {
             "question_number": "2",
-            "question_text": "What is an algorithm?\n(A) A step-by-step procedure to solve a problem\n(B) A graphical representation of a process\n(C) A programming language\n(D) A flowchart symbol",
+            "question_text": "What is an algorithm?",
+            "options": [
+                "A step-by-step procedure to solve a problem",
+                "A graphical representation of a process",
+                "A programming language",
+                "A flowchart symbol"
+            ],
+            "correct_option": "A",
             "marks": 1,
             "answer": "An algorithm is (A) A step-by-step procedure to solve a problem. It is a finite set of well-defined instructions to accomplish a specific task.",
             "answer_source": "generated",
@@ -20,7 +34,14 @@
         },
         {
             "question_number": "3",
-            "question_text": "Which of the following is NOT a characteristic of a good algorithm?\n(A) Finiteness\n(B) Determinism\n(C) Ambiguity\n(D) Feasibility",
+            "question_text": "Which of the following is NOT a characteristic of a good algorithm?",
+            "options": [
+                "Finiteness",
+                "Determinism",
+                "Ambiguity",
+                "Feasibility"
+            ],
+            "correct_option": "C",
             "marks": 1,
             "answer": "The characteristic that is NOT of a good algorithm is (C) Ambiguity. Good algorithms must be unambiguous, meaning each step must be clear and precisely defined.",
             "answer_source": "generated",
@@ -28,7 +49,14 @@
         },
         {
             "question_number": "4",
-            "question_text": "What is a flowchart?\n(A) A programming language\n(B) A step-by-step procedure to solve a problem\n(C) A graphical representation of a process or algorithm\n(D) A function in a programming language",
+            "question_text": "What is a flowchart?",
+            "options": [
+                "A programming language",
+                "A step-by-step procedure to solve a problem",
+                "A graphical representation of a process or algorithm",
+                "A function in a programming language"
+            ],
+            "correct_option": "C",
             "marks": 1,
             "answer": "A flowchart is (C) A graphical representation of a process or algorithm. It uses standard symbols to depict the steps and decision points in a process.",
             "answer_source": "generated",
@@ -36,7 +64,14 @@
         },
         {
             "question_number": "5",
-            "question_text": "Which flowchart symbol is used to represent a decision point in a process?\n(A) Rectangle\n(B) Circle\n(C) Arrow\n(D) Diamond",
+            "question_text": "Which flowchart symbol is used to represent a decision point in a process?",
+            "options": [
+                "Rectangle",
+                "Circle",
+                "Arrow",
+                "Diamond"
+            ],
+            "correct_option": "D",
             "marks": 1,
             "answer": "The flowchart symbol used to represent a decision point is (D) Diamond. This symbol indicates a point where a choice must be made, typically resulting in different paths.",
             "answer_source": "generated",
@@ -44,7 +79,14 @@
         },
         {
             "question_number": "6",
-            "question_text": "What does the scanf() function do in C?\n(A) Prints output to the console\n(B) Reads input from the user\n(C) Copies one string to another\n(D) Concatenates two strings",
+            "question_text": "What does the scanf() function do in C?",
+            "options": [
+                "Prints output to the console",
+                "Reads input from the user",
+                "Copies one string to another",
+                "Concatenates two strings"
+            ],
+            "correct_option": "B",
             "marks": 1,
             "answer": "The `scanf()` function in C (B) Reads input from the user. It is used to get formatted input from the standard input device, typically the keyboard.",
             "answer_source": "generated",
@@ -52,7 +94,14 @@
         },
         {
             "question_number": "7",
-            "question_text": "How do you compare two strings in C?\n(A) str1 == str2\n(B) strcmp(str1, str2)\n(C) strcomp(str1, str2)\n(D) strcompare(str1, str2)",
+            "question_text": "How do you compare two strings in C?",
+            "options": [
+                "str1 == str2",
+                "strcmp(str1, str2)",
+                "strcomp(str1, str2)",
+                "strcompare(str1, str2)"
+            ],
+            "correct_option": "B",
             "marks": 1,
             "answer": "To compare two strings in C, you use (B) `strcmp(str1, str2)`. The `==` operator compares memory addresses for pointers, not the content of the strings.",
             "answer_source": "generated",
@@ -60,7 +109,14 @@
         },
         {
             "question_number": "8",
-            "question_text": "What will be the output of the expression 11^5?\n(A) 12\n(B) 13\n(C) 10\n(D) 11",
+            "question_text": "What will be the output of the expression 11^5?",
+            "options": [
+                "12",
+                "13",
+                "10",
+                "11"
+            ],
+            "correct_option": null,
             "marks": 1,
             "answer": "In C, `^` is the bitwise XOR operator.\nDecimal 11 in binary is `1011`.\nDecimal 5 in binary is `0101`.\nPerforming bitwise XOR:\n  `1011` (11)\n`^ 0101` (5)\n------\n  `1110` (14)\nSo, the output of the expression 11^5 is 14. None of the provided options (A) 12, (B) 13, (C) 10, (D) 11 are correct.",
             "answer_source": "generated",
@@ -68,7 +124,14 @@
         },
         {
             "question_number": "9",
-            "question_text": "What is the purpose of the strlen() function in C?\n(A) To compare two strings\n(B) To concatenate two strings\n(C) To calculate the length of a string\n(D) To convert a string to uppercase",
+            "question_text": "What is the purpose of the strlen() function in C?",
+            "options": [
+                "To compare two strings",
+                "To concatenate two strings",
+                "To calculate the length of a string",
+                "To convert a string to uppercase"
+            ],
+            "correct_option": "C",
             "marks": 1,
             "answer": "The purpose of the `strlen()` function in C is (C) To calculate the length of a string. It returns the number of characters in a string, excluding the null terminator.",
             "answer_source": "generated",
@@ -76,7 +139,14 @@
         },
         {
             "question_number": "10",
-            "question_text": "Which library should be included to use the strcpy() function in C?\n(A) stdlib.h\n(C) string.h\n(B) stdio.h\n(D) math.h",
+            "question_text": "Which library should be included to use the strcpy() function in C?",
+            "options": [
+                "stdlib.h",
+                "stdio.h",
+                "string.h",
+                "math.h"
+            ],
+            "correct_option": "C",
             "marks": 1,
             "answer": "To use the `strcpy()` function in C, the library that should be included is (C) `string.h`. This header file contains declarations for string manipulation functions.",
             "answer_source": "generated",
@@ -84,7 +154,14 @@
         },
         {
             "question_number": "11",
-            "question_text": "What is the correct way to declare a string variable in C?\n(A) string s;\n(B) char s[];\n(C) char* s;\n(D) str s;",
+            "question_text": "What is the correct way to declare a string variable in C?",
+            "options": [
+                "string s;",
+                "char s[];",
+                "char* s;",
+                "str s;"
+            ],
+            "correct_option": "B,C",
             "marks": 1,
             "answer": "Both (B) `char s[];` and (C) `char* s;` are valid ways to declare a string variable in C, depending on the specific use case. However, `char s[];` is typically used for declaring a character array that can hold a string, requiring either an explicit size (e.g., `char s[100];`) or initialization with a string literal (e.g., `char s[] = \"hello\";`). `char* s;` declares a pointer to a character, which can point to a string, often a string literal or dynamically allocated memory.",
             "answer_source": "generated",
@@ -92,7 +169,14 @@
         },
         {
             "question_number": "12",
-            "question_text": "s = 'foobar',\nThen what is the output of s[-2]\n(A) o\n(C) b\n(B) r\n(D) a",
+            "question_text": "s = 'foobar',\nThen what is the output of s[-2]",
+            "options": [
+                "o",
+                "r",
+                "b",
+                "a"
+            ],
+            "correct_option": "D",
             "marks": 1,
             "answer": "This is a Python string indexing question. In Python, negative indexing accesses characters from the end of the string. `s[-2]` refers to the second-to-last character.\nFor `s = 'foobar'`, the characters are:\nf o o b a r\n-6 -5 -4 -3 -2 -1\nSo, `s[-2]` is 'a'. The output is (D) a.",
             "answer_source": "generated",
@@ -100,7 +184,14 @@
         },
         {
             "question_number": "13",
-            "question_text": "We can combine strings and numbers by using the _____ method.\n(A) combine()\n(C) index()\n(B) concat()\n(D) format()",
+            "question_text": "We can combine strings and numbers by using the _____ method.",
+            "options": [
+                "combine()",
+                "concat()",
+                "index()",
+                "format()"
+            ],
+            "correct_option": "D",
             "marks": 1,
             "answer": "In Python, we can combine strings and numbers using the (D) `format()` method (or f-strings). For example, `\"My number is {}\".format(10)`.",
             "answer_source": "generated",
@@ -108,7 +199,14 @@
         },
         {
             "question_number": "14",
-            "question_text": "Which formatted output value is used to print hexadecimal values?\n(A) %s\n(C) %h\n(B) %o\n(D) %x",
+            "question_text": "Which formatted output value is used to print hexadecimal values?",
+            "options": [
+                "%s",
+                "%o",
+                "%h",
+                "%x"
+            ],
+            "correct_option": "D",
             "marks": 1,
             "answer": "To print hexadecimal values in C using formatted output functions like `printf()`, the format specifier (D) `%x` (or `%X` for uppercase) is used.",
             "answer_source": "generated",
@@ -116,7 +214,14 @@
         },
         {
             "question_number": "15",
-            "question_text": "Which string function converts a character into an integer?\n(A) len()\n(C) ord()\n(B) str()\n(D) char()",
+            "question_text": "Which string function converts a character into an integer?",
+            "options": [
+                "len()",
+                "str()",
+                "ord()",
+                "char()"
+            ],
+            "correct_option": "C",
             "marks": 1,
             "answer": "In Python, the string function that converts a character into its corresponding integer (Unicode code point) is (C) `ord()`. For example, `ord('A')` returns 65.",
             "answer_source": "generated",
@@ -124,7 +229,14 @@
         },
         {
             "question_number": "16",
-            "question_text": "With respect to String operation, the + operator _____ the given strings.\n(A) Adds\n(C) Multiplies\n(B) Concatenates\n(D) Compares",
+            "question_text": "With respect to String operation, the + operator _____ the given strings.",
+            "options": [
+                "Adds",
+                "Concatenates",
+                "Multiplies",
+                "Compares"
+            ],
+            "correct_option": "B",
             "marks": 1,
             "answer": "In Python, with respect to string operations, the `+` operator (B) Concatenates the given strings. For example, `'Hello' + 'World'` results in `'HelloWorld'`.",
             "answer_source": "generated",
@@ -132,15 +244,29 @@
         },
         {
             "question_number": "17",
-            "question_text": "_____ is used when data is in Tabular format.\n(A) NumPy\n(C) MatPlotlib\n(B) Pandas\n(D) Random",
+            "question_text": "_____ is used when data is in Tabular format.",
+            "options": [
+                "NumPy",
+                "Pandas",
+                "MatPlotlib",
+                "Random"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Pandas is used when data is in Tabular format. It provides data structures like DataFrames and Series, which are ideal for handling structured and tabular data.",
+            "answer": "Pandas is used when data is in tabular format. It provides data structures like DataFrames and Series, which are ideal for handling structured and tabular data.",
             "answer_source": "generated",
             "chapter": "Unit 5: Introduction to Pandas - Creating Series Objects, Data Frame Objects"
         },
         {
             "question_number": "18",
-            "question_text": "The Interface of Matplotlib used for data visualization is _____ \n(A) Seaborn\n(C) Pyplot\n(B) Matlab\n(D) Pandas",
+            "question_text": "The Interface of Matplotlib used for data visualization is _____",
+            "options": [
+                "Seaborn",
+                "Matlab",
+                "Pyplot",
+                "Pandas"
+            ],
+            "correct_option": "C",
             "marks": 1,
             "answer": "The primary interface of Matplotlib used for data visualization is (C) Pyplot. It provides a MATLAB-like interface for making plots and visualizations.",
             "answer_source": "generated",
@@ -148,15 +274,29 @@
         },
         {
             "question_number": "19",
-            "question_text": "_____ is a high level API built on TensorFlow.\n(A) PyBrain\n(C) Pandas\n(B) Keras\n(D) Scrapy",
+            "question_text": "_____ is a high level API built on TensorFlow.",
+            "options": [
+                "PyBrain",
+                "Keras",
+                "Pandas",
+                "Scrapy"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Keras is a high-level API built on TensorFlow (and other backend engines like Theano or CNTK). It is designed for fast experimentation with deep neural networks.",
+            "answer": "Keras is a high-level API built on TensorFlow (and other backends such as Theano or CNTK). It is designed for fast experimentation with deep neural networks.",
             "answer_source": "generated",
             "chapter": "Unit 4: Introduction to Python Libraries"
         },
         {
             "question_number": "20",
-            "question_text": "Which of the following module is to be imported to create Series?\n(A) NumPy\n(C) Pandas\n(B) MatPlotlib\n(D) Random",
+            "question_text": "Which of the following module is to be imported to create Series?",
+            "options": [
+                "NumPy",
+                "MatPlotlib",
+                "Pandas",
+                "Random"
+            ],
+            "correct_option": "C",
             "marks": 1,
             "answer": "To create Series objects, the (C) Pandas module needs to be imported. Series is a one-dimensional labeled array in Pandas.",
             "answer_source": "generated",

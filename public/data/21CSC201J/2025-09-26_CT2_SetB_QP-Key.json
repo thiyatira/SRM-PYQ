@@ -5,9 +5,16 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "A singly linked list contains the elements: 10 $\\rightarrow$ 20 $\\rightarrow$ 30 $\\rightarrow$ 40 $\\rightarrow$ NULL\nWhat will be the output of the following pseudocode?\n\n```\nptr <- head\nwhile ptr != NULL do\n    print(ptr.data)\n    ptr <- ptr.next.next\nend while\n\n```\n\nA. 10 20 30 40\nB. 40 30 20 10\nC. 10 20 30\nD. 10 30",
+            "question_text": "A singly linked list contains the elements: 10 $\\rightarrow$ 20 $\\rightarrow$ 30 $\\rightarrow$ 40 $\\rightarrow$ NULL\nWhat will be the output of the following pseudocode?\n\n```\nptr <- head\nwhile ptr != NULL do\n    print(ptr.data)\n    ptr <- ptr.next.next\nend while\n\n```",
+            "options": [
+                "10 20 30 40",
+                "40 30 20 10",
+                "10 20 30",
+                "10 30"
+            ],
+            "correct_option": "D",
             "marks": 2,
-            "answer": "D. 10 30\n\nExplanation:\nThe pointer starts at the head (10). Inside the loop, it prints the current node value (10), then jumps two steps ahead (`ptr <- ptr.next.next`), which moves it to 30. In the next iteration, it prints 30, and then jumps two steps ahead again (to NULL), terminating the loop.",
+            "answer": "The pointer starts at the head (10). Inside the loop, it prints the current node value (10), then jumps two steps ahead (`ptr <- ptr.next.next`), which moves it to 30. In the next iteration, it prints 30, and then jumps two steps ahead again (to NULL), terminating the loop.",
             "answer_source": "provided",
             "chapter": "Unit 2 - List Structure"
         },
@@ -21,9 +28,16 @@
         },
         {
             "question_number": "3",
-            "question_text": "An array-based list has size = 5. Initially, it contains: [10, 40, 30, 20, -]\nIf we insert 25 at position 2 (0-based index), and delete element at third position what will the array look like?\n\nA. [10, 40, 30, 25]\nB. [10, 40, 25, 30]\nC. [10, 40, 25, 20]\nD. [10, 40, 30, 20]",
+            "question_text": "An array-based list has size = 5. Initially, it contains: [10, 40, 30, 20, -]\nIf we insert 25 at position 2 (0-based index), and delete element at third position what will the array look like?",
+            "options": [
+                "[10, 40, 30, 25]",
+                "[10, 40, 25, 30]",
+                "[10, 40, 25, 20]",
+                "[10, 40, 30, 20]"
+            ],
+            "correct_option": "C",
             "marks": 2,
-            "answer": "C. [10, 40, 25, 20]\n\nExplanation:\n- Initial state: `[10, 40, 30, 20, -]` (size = 4, capacity = 5)\n- Insert 25 at position 2 (0-based): Shift elements from position 2 to the right. The array becomes `[10, 40, 25, 30, 20]`.\n- Delete the element at the third position (0-based index 3, which is 30): Shift the elements after index 3 to the left. The array becomes `[10, 40, 25, 20]`.",
+            "answer": "Initial state: `[10, 40, 30, 20, -]` (size = 4, capacity = 5)\n- Insert 25 at position 2 (0-based): Shift elements from position 2 to the right. The array becomes `[10, 40, 25, 30, 20]`.\n- Delete the element at the third position (0-based index 3, which is 30): Shift the elements after index 3 to the left. The array becomes `[10, 40, 25, 20]`.",
             "answer_source": "provided",
             "chapter": "Unit 2 - List Structure"
         },
