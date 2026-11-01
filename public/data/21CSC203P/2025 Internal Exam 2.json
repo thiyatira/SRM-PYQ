@@ -1,0 +1,307 @@
+{
+    "formal_filename": "2025 Internal Exam 2.json",
+    "paper_title": "SRM Institute of Science and Technology, Delhi-NCR Campus (Ghaziabad) - College of Engineering and Technology - Department of Computer Science and Engineering - Academic Year 2025-26 (ODD) - Internal Examination II - 21CSC203P Advanced Programming Practice - Date & Session: 04-11-25 AN - Duration: 2 Hours - Max. Marks: 60",
+    "source": "2025-11-04 Internal Exam 2",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "The default priority of a thread in Java is:",
+            "options": [
+                "0",
+                "5",
+                "10",
+                "1"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "A new thread inherits the priority of its creating thread; the main thread has `Thread.NORM_PRIORITY`, which is 5 (`MIN_PRIORITY` = 1, `MAX_PRIORITY` = 10).",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "2",
+            "question_text": "Which of these is the correct order of thread life cycle?",
+            "options": [
+                "New → Runnable → Running → Waiting → Terminated",
+                "New → Runnable → Waiting → Running → Terminated",
+                "New → Running → Runnable → Waiting → Terminated",
+                "New → Waiting → Running → Terminated"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "A thread is created (New), `start()` makes it Runnable, the scheduler picks it (Running), it may go to Waiting/Blocked and finally ends (Terminated). A waiting thread must become Runnable again before it can run, but of the given options (A) is the intended standard sequence.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "3",
+            "question_text": "Which method of ExecutorService shuts down all threads gracefully?",
+            "options": [
+                "stop()",
+                "shutdown()",
+                "terminate()",
+                "exit()"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "`ExecutorService.shutdown()` stops accepting new tasks and lets already submitted tasks finish, then the pool threads terminate. (`shutdownNow()` attempts an immediate stop; `stop()`, `terminate()`, `exit()` are not ExecutorService methods.)",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "4",
+            "question_text": "Which layout manager arranges components in a single row or column?",
+            "options": [
+                "BorderLayout",
+                "FlowLayout",
+                "GridLayout",
+                "CardLayout"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "`FlowLayout` places components one after another in a row (left to right), wrapping to a new row when the container is full. BorderLayout uses 5 regions, GridLayout a fixed grid and CardLayout stacks components like cards. (Among the given options FlowLayout is the intended answer; strictly, BoxLayout is the manager for a single row/column.)",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "5",
+            "question_text": "After executing the Python code\n```python\nnums = [1, 2, 3, 4]\nresult = list(filter(lambda x: x % 2 == 0, nums))\nprint(result)\n```\nthe output displayed is:",
+            "options": [
+                "[1, 2, 3, 4]",
+                "[2, 4]",
+                "[1, 3]",
+                "[0, 2, 4]"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "`filter` keeps the elements for which the lambda returns True, i.e. the even numbers 2 and 4, so the output is `[2, 4]`.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "6",
+            "question_text": "Which module supports multi-processing in Python?",
+            "options": [
+                "threading",
+                "asyncio",
+                "multiprocessing",
+                "socket"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "The `multiprocessing` module creates separate processes (each with its own interpreter and memory), bypassing the GIL. `threading` provides threads, `asyncio` provides asynchronous I/O and `socket` is for networking.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "7",
+            "question_text": "Shared memory and distributed memory are part of",
+            "options": [
+                "Network programming",
+                "Parallel programming",
+                "Functional programming",
+                "Declarative programming"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Shared-memory and distributed-memory models are the two architectures/models of parallel programming (processors share one address space vs. each has private memory and communicates by message passing).",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "8",
+            "question_text": "State which of the following python statement are valid?",
+            "options": [
+                "map(x, lambda x: x*2, [1,2,3])",
+                "map(lambda x: x*2, [1,2,3])",
+                "map([1,2,3], lambda x: x*2)",
+                "map(lambda: x*2, [1,2,3])"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "The syntax is `map(function, iterable)`. Only (B) has a function taking one argument followed by an iterable (it yields 2, 4, 6). (A) passes an extra argument, (C) has the arguments reversed and (D) uses a lambda with no parameter and an undefined `x`.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "9",
+            "question_text": "The function to substitute a value into a symbolic expression is:",
+            "options": [
+                "eval()",
+                "replace()",
+                "subs()",
+                "assign()"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "SymPy's `expr.subs(x, value)` substitutes a value (or expression) for a symbol, e.g. `(x**2 + 3*x).subs(x, 2)` gives 10.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+        },
+        {
+            "question_number": "10",
+            "question_text": "How to execute a callback function when a button is clicked?",
+            "options": [
+                "bind()",
+                "command=",
+                "onClick",
+                "trigger"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "In Tkinter a Button takes the callback through its `command=` option, e.g. `Button(root, text='OK', command=func)`. `bind()` is for general event binding (such as `<Button-1>`); `onClick` and `trigger` do not exist in Tkinter.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+        },
+        {
+            "question_number": "11",
+            "question_text": "Simplifying an expression x**2 - 2*x + 1 using Sympy returns:",
+            "options": [
+                "x**2 - 2*x + 1",
+                "(x-1)**2",
+                "x**2 + 2*x + 1",
+                "1"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "`sympy.simplify(x**2 - 2*x + 1)` returns `x**2 - 2*x + 1` (verified with SymPy): simplify does not factor because the factored form is not shorter; `factor()` would give `(x - 1)**2`.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+        },
+        {
+            "question_number": "12",
+            "question_text": "A finite automaton is a collection of how many tuples?",
+            "options": [
+                "5",
+                "4",
+                "3",
+                "2"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "A finite automaton is defined as a 5-tuple $(Q, \\Sigma, \\delta, q_0, F)$: set of states, input alphabet, transition function, start state and set of final (accepting) states.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+        },
+        {
+            "question_number": "13",
+            "question_text": "Write a program to create two threads, one thread will print odd numbers and second thread will print even numbers between 1 to 20 numbers.\n(Part B - Section B1: answer any two)",
+            "marks": 4,
+            "answer": "Two classes extend `Thread`; each overrides `run()` to print its numbers. `start()` runs both concurrently, so their output interleaves (the exact order may vary).\n\n```java\nclass OddThread extends Thread {\n    public void run() {\n        for (int i = 1; i <= 20; i += 2) {\n            System.out.println(\"Odd thread : \" + i);\n            try { Thread.sleep(100); } catch (InterruptedException e) { e.printStackTrace(); }\n        }\n    }\n}\nclass EvenThread extends Thread {\n    public void run() {\n        for (int i = 2; i <= 20; i += 2) {\n            System.out.println(\"Even thread: \" + i);\n            try { Thread.sleep(100); } catch (InterruptedException e) { e.printStackTrace(); }\n        }\n    }\n}\npublic class OddEvenThreads {\n    public static void main(String[] args) {\n        new OddThread().start();\n        new EvenThread().start();\n    }\n}\n```\n\nSample output: `Odd thread : 1`, `Even thread: 2`, `Odd thread : 3`, `Even thread: 4`, ... up to `Odd thread : 19`, `Even thread: 20`.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "14",
+            "question_text": "Discuss about swing component. Explain any three components of swing with syntax.\n(Part B - Section B1: answer any two)",
+            "marks": 4,
+            "answer": "**Swing** is Java's lightweight, platform-independent GUI toolkit (package `javax.swing`) built on top of AWT. Its components (prefixed with `J`, e.g. `JButton`) are drawn by Java itself, support pluggable look-and-feel, follow the MVC design and are placed in top-level containers such as `JFrame`, `JDialog` and `JApplet`.\n\nThree commonly used components:\n1. **JLabel** - displays a non-editable text/image. Syntax: `JLabel lbl = new JLabel(\"Enter name:\");`\n2. **JTextField** - single-line text input. Syntax: `JTextField tf = new JTextField(15);` (`tf.getText()`, `tf.setText(\"...\")`)\n3. **JButton** - push button that fires an `ActionEvent`. Syntax: `JButton btn = new JButton(\"Submit\"); btn.addActionListener(listener);`\n\n(Other components: JCheckBox, JRadioButton, JComboBox, JList, JTable, JPanel.)\n\n**Example**\n\n```java\nimport javax.swing.*;\nimport java.awt.event.*;\n\npublic class SwingDemo {\n    public static void main(String[] args) {\n        JFrame frame = new JFrame(\"Swing Demo\");          // top-level container\n\n        JLabel label = new JLabel(\"Enter name:\");         // 1. JLabel\n        label.setBounds(30, 30, 100, 25);\n\n        JTextField field = new JTextField();              // 2. JTextField\n        field.setBounds(140, 30, 120, 25);\n\n        JButton button = new JButton(\"Greet\");            // 3. JButton\n        button.setBounds(100, 80, 80, 30);\n        button.addActionListener(e ->\n            JOptionPane.showMessageDialog(frame, \"Hello \" + field.getText()));\n\n        frame.add(label);\n        frame.add(field);\n        frame.add(button);\n        frame.setSize(300, 180);\n        frame.setLayout(null);\n        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);\n        frame.setVisible(true);\n    }\n}\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "15",
+            "question_text": "Explain the methods related to thread wait() and sleep().\n(Part B - Section B1: answer any two)",
+            "marks": 4,
+            "answer": "**`sleep()`**\n- Defined in `Thread` (static): `Thread.sleep(long millis)`; throws `InterruptedException`.\n- Pauses the *current thread* for the given time (state TIMED_WAITING) and then it becomes runnable again automatically.\n- It does **not** release any lock/monitor the thread holds. Can be called anywhere.\n\n**`wait()`**\n- Defined in `Object`: `wait()`, `wait(long timeout)`; throws `InterruptedException`.\n- Must be called from a `synchronized` block/method on the same object, otherwise `IllegalMonitorStateException` is thrown.\n- The thread **releases the object's lock** and waits until another thread calls `notify()` / `notifyAll()` on the same object (or the timeout expires). Used for inter-thread communication (producer-consumer).\n\n| | sleep() | wait() |\n|---|---|---|\n| Class | `Thread` (static) | `Object` (instance) |\n| Lock | Keeps the lock | Releases the lock |\n| Wake-up | After the time elapses | `notify()` / `notifyAll()` or timeout |\n| Synchronized context | Not required | Required |\n| Purpose | Pause execution | Inter-thread communication |\n\n```java\npublic class WaitNotifyDemo {\n    public static void main(String[] args) throws InterruptedException {\n        final Object lock = new Object();\n\n        Thread waiter = new Thread(() -> {\n            synchronized (lock) {\n                try {\n                    System.out.println(\"Waiter: waiting...\");\n                    lock.wait();                       // releases the lock and waits\n                    System.out.println(\"Waiter: notified, resuming\");\n                } catch (InterruptedException e) { }\n            }\n        });\n        waiter.start();\n\n        Thread.sleep(500);                             // sleep(): pauses main, keeps any lock it holds\n        synchronized (lock) {\n            System.out.println(\"Main: notifying\");\n            lock.notify();                             // wakes the waiting thread\n        }\n    }\n}\n```\n\nOutput:\n```\nWaiter: waiting...\nMain: notifying\nWaiter: notified, resuming\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "16",
+            "question_text": "Create a list of (n) **2 for range (10) for even integers using the built-in functions map(), filter() and reduce().\n(Part B - Section B2: answer any two)",
+            "marks": 4,
+            "answer": "The even integers in `range(10)` are selected with `filter()`, squared with `map()`, and `reduce()` combines the squares (here into their sum).\n\n```python\nfrom functools import reduce\n\nn = range(10)\n\nevens = filter(lambda x: x % 2 == 0, n)        # 0, 2, 4, 6, 8\nsquares = list(map(lambda x: x ** 2, evens))   # squares of the even numbers\ntotal = reduce(lambda a, b: a + b, squares)    # optional: sum of the squares\n\nprint(\"Squares of even numbers:\", squares)\nprint(\"Sum of squares:\", total)\n```\n\nOutput:\n```\nSquares of even numbers: [0, 4, 16, 36, 64]\nSum of squares: 120\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "17",
+            "question_text": "Differentiate between pure and impure functions in Python. Explain with suitable examples and discuss their importance in functional programming.\n(Part B - Section B2: answer any two)",
+            "marks": 4,
+            "answer": "**Pure function**: for the same arguments it always returns the same result and has **no side effects** (does not modify global variables, its arguments, files or the screen).\n\n```python\ndef add(a, b):\n    return a + b          # pure: depends only on a and b\n```\n\n**Impure function**: depends on or changes something outside its inputs (global state, mutable arguments, I/O, randomness, time).\n\n```python\ntotal = 0\ndef add_to_total(x):\n    global total\n    total += x            # impure: modifies global state\n    return total\n\ndef append_item(lst, x):\n    lst.append(x)         # impure: mutates its argument\n    return lst\n```\n\n| Pure | Impure |\n|---|---|\n| Same input gives same output | Output may differ for the same input |\n| No side effects | Has side effects (global change, I/O, mutation) |\n| Easy to test, cache and parallelise | Harder to test and debug |\n\n**Importance in functional programming**: pure functions give referential transparency, so they can be tested in isolation, memoised, composed (`map`/`filter`/`reduce`), reordered or executed in parallel safely, and make programs predictable and easier to debug. Impure code is confined to a small part of the program (I/O, state).",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "18",
+            "question_text": "Write a Python using lambda to sort a list of tuples based on the second element of each tuple.\n(Part B - Section B2: answer any two)",
+            "marks": 4,
+            "answer": "`sorted()` (or `list.sort()`) accepts a `key` function; the lambda returns the second element `t[1]` of each tuple, which is used for comparison.\n\n```python\npairs = [(1, 5), (3, 2), (4, 9), (2, 1)]\n\nsorted_pairs = sorted(pairs, key=lambda t: t[1])   # sort by the 2nd element\nprint(sorted_pairs)\n```\n\nOutput: `[(2, 1), (3, 2), (1, 5), (4, 9)]`",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "19",
+            "question_text": "Demonstrate a Python program using Tkinter to display a drop-down list with the following choices: \"B.Tech\", \"B.B.A\", \"B.C.A\".\n(Part B - Section B3: answer any two)",
+            "marks": 4,
+            "answer": "A drop-down list in Tkinter is a `ttk.Combobox`. The `values` option supplies the choices and `state=\"readonly\"` prevents typing arbitrary text.\n\n```python\nimport tkinter as tk\nfrom tkinter import ttk\n\nroot = tk.Tk()\nroot.title(\"Course Selection\")\nroot.geometry(\"300x150\")\n\ntk.Label(root, text=\"Select your course:\").pack(pady=10)\n\ncourse = tk.StringVar()\ncombo = ttk.Combobox(root, textvariable=course, state=\"readonly\",\n                     values=[\"B.Tech\", \"B.B.A\", \"B.C.A\"])\ncombo.current(0)\ncombo.pack()\n\ndef show():\n    print(\"Selected:\", course.get())\n\ntk.Button(root, text=\"Show\", command=show).pack(pady=10)\nroot.mainloop()\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+        },
+        {
+            "question_number": "20",
+            "question_text": "Using Python code to using the Tkinter GUI toolkit to display the elements of a list inside a Text widget.\n(Part B - Section B3: answer any two)",
+            "marks": 4,
+            "answer": "Create a `Text` widget and insert each list element with `insert(tk.END, ...)`.\n\n```python\nimport tkinter as tk\n\nitems = [\"Apple\", \"Banana\", \"Cherry\", \"Mango\"]\n\nroot = tk.Tk()\nroot.title(\"List in Text Widget\")\n\ntext = tk.Text(root, width=30, height=8)\ntext.pack(padx=10, pady=10)\n\nfor item in items:\n    text.insert(tk.END, item + \"\\n\")\n\nroot.mainloop()\n```\n\nThe window shows Apple, Banana, Cherry and Mango on separate lines.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+        },
+        {
+            "question_number": "21",
+            "question_text": "Develop a SymPy program to compute the Jacobian matrix for $f(x,y)=x^2+y^2$ and $g(x,y)=xy+e^x$.\n(Part B - Section B3: answer any two)",
+            "marks": 4,
+            "answer": "The Jacobian is the matrix of first-order partial derivatives:\n\n$$J=\\begin{bmatrix}\\frac{\\partial f}{\\partial x} & \\frac{\\partial f}{\\partial y}\\\\ \\frac{\\partial g}{\\partial x} & \\frac{\\partial g}{\\partial y}\\end{bmatrix}=\\begin{bmatrix}2x & 2y\\\\ y+e^x & x\\end{bmatrix}$$\n\n```python\nimport sympy as sp\n\nx, y = sp.symbols('x y')\nf = x**2 + y**2\ng = x*y + sp.exp(x)\n\nF = sp.Matrix([f, g])\nJ = F.jacobian([x, y])\n\nsp.pprint(J)\nprint(J)\n```\n\nOutput: `Matrix([[2*x, 2*y], [y + exp(x), x]])`",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+        },
+        {
+            "question_number": "22a",
+            "question_text": "(i) Discuss the four types of JDBC driver with suitable diagrams.\n(ii) Write a Java program using JDBC (Java Database Connectivity) to simulate a simple bank withdrawal system.\n(Part C)",
+            "marks": 8,
+            "answer": "**(i) Types of JDBC drivers**\n\n**Type 1 - JDBC-ODBC bridge driver** (removed in Java 8): JDBC calls are translated to ODBC calls; needs an ODBC driver on the client.\n```\nJava app -> JDBC API -> JDBC-ODBC bridge -> ODBC driver -> Database\n```\nPros: easy to use with any ODBC database. Cons: slow, platform dependent, needs ODBC installed.\n\n**Type 2 - Native-API (partly Java) driver**: JDBC calls are converted to the database's native client library calls (C/C++).\n```\nJava app -> JDBC API -> Type 2 driver -> Native DB client library -> Database\n```\nPros: faster than Type 1. Cons: native library must be installed on each client, not portable.\n\n**Type 3 - Network-protocol (middleware) driver**: JDBC calls go to a middleware server using a database-independent network protocol; the server translates them for the database.\n```\nJava app -> JDBC API -> Type 3 driver -> Middleware server -> Database\n```\nPros: no client-side installation, one driver for many databases. Cons: extra network hop and a middleware server to maintain.\n\n**Type 4 - Thin (pure Java) driver**: converts JDBC calls directly into the database's network protocol; written entirely in Java.\n```\nJava app -> JDBC API -> Type 4 driver (pure Java) -> Database\n```\nPros: fastest, platform independent, no extra software (e.g. MySQL Connector/J). Cons: driver is database specific. This is the most widely used type.\n\n**(ii) Bank withdrawal using JDBC** (table `account(acc_no INT PRIMARY KEY, balance DOUBLE)`)\n\n```java\nimport java.sql.*;\n\npublic class BankWithdrawal {\n    public static void main(String[] args) {\n        String url = \"jdbc:mysql://localhost:3306/bankdb\";\n        String user = \"root\", pass = \"root\";\n        int accNo = 1001;\n        double amount = 2000;\n\n        try (Connection con = DriverManager.getConnection(url, user, pass)) {\n            con.setAutoCommit(false);                         // treat withdrawal as one transaction\n            PreparedStatement check = con.prepareStatement(\n                \"SELECT balance FROM account WHERE acc_no = ?\");\n            check.setInt(1, accNo);\n            ResultSet rs = check.executeQuery();\n\n            if (rs.next()) {\n                double balance = rs.getDouble(\"balance\");\n                if (balance >= amount) {\n                    PreparedStatement upd = con.prepareStatement(\n                        \"UPDATE account SET balance = balance - ? WHERE acc_no = ?\");\n                    upd.setDouble(1, amount);\n                    upd.setInt(2, accNo);\n                    upd.executeUpdate();\n                    con.commit();\n                    System.out.println(\"Withdrawal successful. New balance: \" + (balance - amount));\n                } else {\n                    System.out.println(\"Insufficient balance.\");\n                }\n            } else {\n                System.out.println(\"Account not found.\");\n            }\n        } catch (SQLException e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n\nThe balance is checked first; the update is committed only if sufficient funds exist, otherwise \"Insufficient balance.\" is printed.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "22b",
+            "question_text": "(OR) Describe the complete life cycle of a Thread with a neat diagram.\n(Part C)",
+            "marks": 8,
+            "answer": "A Java thread passes through the states of `Thread.State`:\n\n```\n                      start()\n   +-----+        +-----------+   scheduler picks    +---------+\n   | NEW | -----> | RUNNABLE  | ------------------>  | RUNNING |\n   +-----+        +-----------+ <------------------  +----+----+\n                      ^  ^  ^       yield()/time slice     |\n                      |  |  |                              |\n   lock acquired -----+  |  +---- notify()/notifyAll(),    |\n   (was BLOCKED)         |        sleep ends, join ends     |\n                         |                                  |\n        +----------------+----------------------------------+\n        |   BLOCKED (waiting for monitor lock)\n        |   WAITING (wait(), join())\n        |   TIMED_WAITING (sleep(ms), wait(ms), join(ms))\n        +---------------------------------------------------+\n                                                            |  run() completes / exception\n                                                            v\n                                                     +------------+\n                                                     | TERMINATED |\n                                                     +------------+\n```\n\n1. **New**: the thread object has been created (`new Thread(...)`) but `start()` has not been called.\n2. **Runnable**: after `start()`, the thread is ready and waits for CPU time from the scheduler (in Java, Runnable also covers the running state).\n3. **Running**: the scheduler has allotted the CPU and `run()` is executing.\n4. **Blocked / Waiting / Timed Waiting (non-runnable)**: the thread is alive but not eligible to run - blocked on a monitor lock (`synchronized`), waiting indefinitely (`wait()`, `join()`), or waiting for a specified time (`sleep(ms)`, `wait(ms)`, `join(ms)`). It returns to Runnable when the lock is obtained, it is notified, or the time expires.\n5. **Terminated (Dead)**: `run()` has finished normally or ended because of an uncaught exception; the thread cannot be restarted.\n\nVerification program:\n\n```java\npublic class ThreadLifeCycle {\n    public static void main(String[] args) throws InterruptedException {\n        Thread t = new Thread(() -> {\n            try { Thread.sleep(200); } catch (InterruptedException e) { }\n        });\n        System.out.println(t.getState());   // NEW\n        t.start();\n        System.out.println(t.getState());   // RUNNABLE\n        Thread.sleep(50);\n        System.out.println(t.getState());   // TIMED_WAITING\n        t.join();\n        System.out.println(t.getState());   // TERMINATED\n    }\n}\n```\n\nOutput: `NEW`, `RUNNABLE`, `TIMED_WAITING`, `TERMINATED`.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Advanced Java Programming Paradigms"
+        },
+        {
+            "question_number": "23a",
+            "question_text": "Sketch a labelled diagram to illustrate how a TCP socket-based client-server model operates with python implementation steps.\n(Part C)",
+            "marks": 8,
+            "answer": "```\n        SERVER                                         CLIENT\n  socket()                                        socket()\n     |                                               |\n  bind((host, port))                                 |\n     |                                               |\n  listen()                                           |\n     |                                               |\n  accept()  <-- blocks, waits --  connect((host, port))\n     |         (3-way handshake: connection established)\n     |                                               |\n  recv()  <----------- request data -------------  send()/sendall()\n     |                                               |\n  send()/sendall() ------ response data --------->  recv()\n     |                                               |\n  close()                                          close()\n```\n\n**Steps (server)**: 1) create a TCP socket `socket.socket(AF_INET, SOCK_STREAM)`; 2) `bind()` it to an IP address and port; 3) `listen()` for incoming connections; 4) `accept()` a client connection (returns a new socket and the client's address); 5) `recv()` data from the client; 6) `send()` a reply; 7) `close()` the sockets.\n\n**Steps (client)**: 1) create a TCP socket; 2) `connect()` to the server's address and port; 3) `send()` data; 4) `recv()` the reply; 5) `close()`.\n\n**Server (server.py)**\n\n```python\nimport socket\n\nserver = socket.socket(socket.AF_INET, socket.SOCK_STREAM)   # 1. create socket\nserver.bind((\"localhost\", 5000))                              # 2. bind to address\nserver.listen(1)                                              # 3. listen\nprint(\"Server waiting for a client...\")\n\nconn, addr = server.accept()                                  # 4. accept connection\nprint(\"Connected by\", addr)\n\ndata = conn.recv(1024).decode()                               # 5. receive\nprint(\"Client says:\", data)\nconn.sendall((\"Server received: \" + data).encode())           # 6. send reply\n\nconn.close()                                                  # 7. close\nserver.close()\n```\n\n**Client (client.py)**\n\n```python\nimport socket\n\nclient = socket.socket(socket.AF_INET, socket.SOCK_STREAM)    # 1. create socket\nclient.connect((\"localhost\", 5000))                           # 2. connect to server\n\nclient.sendall(\"Hello Server\".encode())                       # 3. send\nreply = client.recv(1024).decode()                            # 4. receive\nprint(\"Reply:\", reply)\n\nclient.close()                                                # 5. close\n```\n\nRun the server first, then the client. Output on the client: `Reply: Server received: Hello Server`.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "23b",
+            "question_text": "(OR) Analyze the structure and reasoning process of the Logical Programming Paradigm, and write a Python-based logic program to represent and infer knowledge from the following facts and rules:\nLucy is a professor\nDanny is a professor\nJames is a lecturer\nAll professors are deans.\n(Part C)",
+            "marks": 8,
+            "answer": "**Structure of logic programming**: a program is a *knowledge base* of\n- **facts** - unconditional truths (`professor(lucy)`),\n- **rules** - conditional statements (`dean(X) :- professor(X)`),\nand the user asks **queries/goals** (`?- dean(X)`).\n\n**Reasoning process**: the inference engine uses *resolution* with *unification* (matching a goal with a fact or rule head and binding variables) and *depth-first search with backtracking*: to prove `dean(X)` it uses the rule, which reduces the goal to `professor(X)`; it then matches facts `professor(lucy)` and `professor(danny)` (X = Lucy, then on backtracking X = Danny). `james` is only a lecturer and no rule makes a lecturer a dean, so `dean(james)` fails (closed-world assumption). The programmer specifies *what* is true, not *how* to compute it (declarative).\n\n**Prolog form**\n```prolog\nprofessor(lucy).\nprofessor(danny).\nlecturer(james).\ndean(X) :- professor(X).\n?- dean(X).        % X = lucy ; X = danny\n```\n\n**Python (PyDatalog)**\n\n```python\nfrom pyDatalog import pyDatalog\n\npyDatalog.create_terms('professor, lecturer, dean, X')\n\n# Facts\n+professor('Lucy')\n+professor('Danny')\n+lecturer('James')\n\n# Rule: all professors are deans\ndean(X) <= professor(X)\n\nprint(dean(X))                   # inference: who are the deans?\nprint(pyDatalog.ask(\"dean('James')\"))   # None -> James is not a dean\n```\n\nOutput:\n```\nX\n-----\nDanny\nLucy\nNone\n```\n(`dean(X)` lists Danny and Lucy; the query `dean('James')` has no answer.)\n\n**Plain-Python equivalent (no library)**\n\n```python\nprofessors = {\"Lucy\", \"Danny\"}     # facts\nlecturers = {\"James\"}\n\ndef dean(x):                       # rule: professor(X) => dean(X)\n    return x in professors\n\nprint([p for p in sorted(professors | lecturers) if dean(p)])   # ['Danny', 'Lucy']\nprint(dean(\"James\"))                                              # False\n```",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Pythonic Programming Paradigm"
+        },
+        {
+            "question_number": "24a",
+            "question_text": "In terms of their common applications, advantages, and methods of implementation, contrast and compare the Automata-Based, Symbolic, and Event-Driven programming paradigms. Give an example of how each paradigm can be used successfully in the actual world.\n(Part C)",
+            "marks": 8,
+            "answer": "| Aspect | Automata-Based | Symbolic | Event-Driven |\n|---|---|---|---|\n| Idea | Program modelled as a finite state machine: states, inputs and transitions | Programs manipulate mathematical symbols/expressions exactly (not numeric approximations) | Flow is determined by events (clicks, key presses, messages, sensor signals) handled by registered handlers |\n| Common applications | Lexical analysers/compilers, protocol and network state machines, regular-expression matching, game AI, controllers (vending machine, lift, traffic light) | Computer algebra systems, equation solving, calculus (derivatives/integrals), scientific and engineering computation, theorem proving | GUIs, web front-ends, games, interactive and real-time/embedded systems, servers |\n| Advantages | Clear, verifiable behaviour; easy to test and visualise; deterministic for DFA; compact for control logic | Exact results, automatic algebra/calculus, avoids manual derivation errors, readable mathematical code | Responsive, decoupled components, efficient (no polling), easy to add new events/handlers |\n| Implementation | Define states, alphabet, transition function, start/final states (transition table / `automata` library / `if-elif` or dictionary) | Libraries such as SymPy: `symbols()`, `expand()`, `solve()`, `diff()`, `integrate()`, `subs()` | Event loop + event handlers/callbacks: Tkinter `command=` / `bind()`, `mainloop()`; Java `ActionListener` |\n| Real-world example | Traffic-light controller or automatic door (CLOSED/OPEN states driven by sensor input) | Computing the Jacobian/derivatives for a physics or control-system model | Tkinter registration form or a mobile app reacting to button taps |\n\nIn short: automata-based programming focuses on *states and transitions*, symbolic programming on *exact manipulation of expressions*, and event-driven programming on *reacting to external events through handlers*.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+        },
+        {
+            "question_number": "24b",
+            "question_text": "(OR) Demonstrate how to use SymPy to do symbolic computations and analyze the advantages and limitations of using SymPy in real-world scientific computation.\n(Part C)",
+            "marks": 8,
+            "answer": "**SymPy** is a pure-Python library for symbolic mathematics (algebra, calculus, equation solving, matrices, limits, series). Symbols are created with `symbols()`/`Symbol()` and expressions are manipulated exactly.\n\n```python\nimport sympy as sp\n\nx = sp.Symbol('x')\n\n# Algebraic manipulation\nexpr = (x + 1)**2\nprint(sp.expand(expr))                 # x**2 + 2*x + 1\nprint(sp.factor(x**2 - 5*x + 6))       # (x - 3)*(x - 2)\nprint(sp.simplify(sp.sin(x)**2 + sp.cos(x)**2))   # 1\n\n# Equation solving\nprint(sp.solve(x**2 - 5*x + 6, x))     # [2, 3]\n\n# Calculus\nf = sp.sin(x) * sp.exp(x)\nprint(sp.diff(f, x))                   # exp(x)*sin(x) + exp(x)*cos(x)\nprint(sp.integrate(x**2, x))           # x**3/3\nprint(sp.limit(sp.sin(x)/x, x, 0))     # 1\n```\n\n**Advantages**\n- Exact (symbolic) results such as `sqrt(2)`, `pi`, rational numbers - no round-off error.\n- Free, open source, pure Python, easy to install and integrate with NumPy/SciPy/Matplotlib; can generate code (LaTeX, C, Python) and `lambdify` expressions for fast numeric use.\n- Covers algebra, calculus, linear algebra, differential equations, discrete math; good for teaching and verifying derivations.\n\n**Limitations**\n- Slower than numerical libraries and than commercial CAS (Mathematica, Maple) because it is written in pure Python.\n- Expression swell and high memory use on large problems; `simplify()` is heuristic and may not give the simplest form.\n- Some integrals/equations have no closed-form solution or cannot be solved symbolically; for large-scale real-world simulation numerical methods (NumPy/SciPy) are preferred.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+        }
+    ]
+}

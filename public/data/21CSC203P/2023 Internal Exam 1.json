@@ -1,0 +1,205 @@
+{
+  "formal_filename": "2023-08-19_CT1_QP.json",
+  "paper_title": "SRM Institute of Science and Technology, Delhi-NCR Campus - Department of Computer Science and Engineering - Internal Examination I - Academic Year 2023-24 (ODD) - 21CSC203P Advanced Programming Practice (Max. Marks: 30, Duration: 1 Hour)",
+  "source": "2023-08-19 CT1 (Internal Examination I)",
+  "questions": [
+    {
+      "question_number": "1",
+      "question_text": "C++ belongs to which paradigm",
+      "options": [
+        "Parallel",
+        "OOP's",
+        "Declarative",
+        "Symbolic"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "C++ supports classes, objects, inheritance and polymorphism, so it is an object-oriented (imperative) language.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Introduction to Programming Paradigm"
+    },
+    {
+      "question_number": "2",
+      "question_text": "Map() function available in",
+      "options": [
+        "JAVA",
+        "C",
+        "C++",
+        "Python"
+      ],
+      "correct_option": "D",
+      "marks": 1,
+      "answer": "`map()` is a built-in higher-order function of Python (`map(function, iterable)`). C and C++ have no built-in `map()` function (C++ `std::map` is a container, not this function).",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Pythonic Programming Paradigm"
+    },
+    {
+      "question_number": "3",
+      "question_text": "What is the output?\n\n```python\nList=[22,23,25]\nS=(reduce(lambda x,y : x+y, List))\n```",
+      "options": [
+        "22",
+        "23",
+        "70",
+        "None"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "`reduce` cumulatively applies the lambda: (22+23)=45, then 45+25=70.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Pythonic Programming Paradigm"
+    },
+    {
+      "question_number": "4",
+      "question_text": "JAVA is platform independent language",
+      "options": [
+        "True",
+        "False",
+        "None",
+        "Can't say"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "Java source is compiled to byte code which runs on any machine having a JVM (Write Once, Run Anywhere).",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Java Programming Paradigms"
+    },
+    {
+      "question_number": "5",
+      "question_text": "Intermediate code of JAVA is",
+      "options": [
+        "machine",
+        "HLL",
+        "Object",
+        "Byte"
+      ],
+      "correct_option": "D",
+      "marks": 1,
+      "answer": "The Java compiler (javac) produces platform-neutral byte code (.class file), which the JVM interprets/JIT-compiles.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Java Programming Paradigms"
+    },
+    {
+      "question_number": "6",
+      "question_text": "Programming Language and Programming Paradigm are same",
+      "options": [
+        "True",
+        "False",
+        "None",
+        "Can't say"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "A programming language is a notation for writing programs; a paradigm is a style/approach of programming (imperative, functional, logic...). One language can support several paradigms.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Introduction to Programming Paradigm"
+    },
+    {
+      "question_number": "7",
+      "question_text": "Object Serialization refers to the process of converting an object's state into a format that can be",
+      "options": [
+        "stored",
+        "transmitted",
+        "reconstructed later",
+        "All of the above"
+      ],
+      "correct_option": "D",
+      "marks": 1,
+      "answer": "Serialization converts an object's state to a byte stream that can be stored (file/database), transmitted (network) and later reconstructed (deserialization).",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Introduction to Programming Paradigm"
+    },
+    {
+      "question_number": "8",
+      "question_text": "Dynamic memory allocation is often used to allocate memory for object during run time",
+      "options": [
+        "True",
+        "False",
+        "None",
+        "Can't say"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "Objects are created at run time (e.g. `new` in Java/C++, heap allocation), so memory for them is allocated dynamically.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Introduction to Programming Paradigm"
+    },
+    {
+      "question_number": "9",
+      "question_text": "C language is",
+      "options": [
+        "low level",
+        "High Level",
+        "Mid Level",
+        "None of the above"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "C is conventionally described as a middle-level language: it has high-level constructs but also provides low-level access to memory through pointers.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Introduction to Programming Paradigm"
+    },
+    {
+      "question_number": "10",
+      "question_text": "Python was developed by",
+      "options": [
+        "Guido van Rossum",
+        "Dennis Ritchie",
+        "Bjarne Stroustrup",
+        "James Gosling"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "Python was created by Guido van Rossum (first released 1991). Ritchie created C, Stroustrup C++, Gosling Java.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Pythonic Programming Paradigm"
+    },
+    {
+      "question_number": "11",
+      "question_text": "Differentiate between Imperative and Declarative Programming Paradigm.",
+      "marks": 4,
+      "answer": "| Basis | Imperative paradigm | Declarative paradigm |\n|---|---|---|\n| Focus | **How** to solve the problem (step-by-step commands) | **What** result is wanted, not how to compute it |\n| State | Programs change state through assignments / mutable variables | Mostly stateless / no side effects |\n| Control flow | Explicit: loops, conditionals, sequence | Implicit: handled by the language engine (inference, query optimiser, evaluation) |\n| Sub-types | Procedural, Object-Oriented, Parallel | Logic, Functional, Database (query) |\n| Examples | C, C++, Java | Prolog, Haskell, SQL |\n\nExample: to get even numbers, an imperative program loops over the list and appends to a result list, whereas a declarative one says `SELECT * FROM t WHERE n % 2 = 0` or `filter(lambda x: x%2==0, data)`.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Introduction to Programming Paradigm"
+    },
+    {
+      "question_number": "12",
+      "question_text": "What is inline function and lambda function define it with the help of example.",
+      "marks": 4,
+      "answer": "**Inline function:** a function whose body is substituted (expanded) at the point of call by the compiler instead of performing a normal function call. This removes call/return overhead and is suitable for small, frequently called functions (C/C++ `inline` keyword).\n\n```cpp\n#include <iostream>\nusing namespace std;\ninline int square(int x) { return x * x; }\nint main() {\n    cout << square(5);   // expanded as 5 * 5 -> 25\n    return 0;\n}\n```\n\n**Lambda function:** an anonymous (unnamed) one-line function created where it is needed. In Python the syntax is `lambda arguments: expression`; in Java it is `(args) -> expression`.\n\n```python\nsquare = lambda x: x * x\nprint(square(5))                       # 25\nprint(list(map(lambda x: x*2, [1, 2, 3])))   # [2, 4, 6]\n```",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Introduction to Programming Paradigm"
+    },
+    {
+      "question_number": "13",
+      "question_text": "Write a program to print Fibonacci Series.",
+      "marks": 4,
+      "answer": "```python\nn = int(input(\"Enter number of terms: \"))\na, b = 0, 1\nfor _ in range(n):\n    print(a, end=\" \")\n    a, b = b, a + b\n```\n\nFor `n = 7` the output is `0 1 1 2 3 5 8`. Each term is the sum of the previous two terms (F0 = 0, F1 = 1).\n\nThe same logic in Java:\n\n```java\npublic class Fibonacci {\n    public static void main(String[] args) {\n        int n = 7, a = 0, b = 1;\n        for (int i = 0; i < n; i++) {\n            System.out.print(a + \" \");\n            int next = a + b;\n            a = b;\n            b = next;\n        }\n    }\n}\n```",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Java Programming Paradigms"
+    },
+    {
+      "question_number": "14",
+      "question_text": "Write a program to find out the factorial of a number.",
+      "marks": 4,
+      "answer": "```java\nimport java.util.Scanner;\n\npublic class Factorial {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        System.out.print(\"Enter a number: \");\n        int n = sc.nextInt();\n        long fact = 1;\n        for (int i = 2; i <= n; i++) {\n            fact *= i;\n        }\n        System.out.println(\"Factorial of \" + n + \" = \" + fact);\n    }\n}\n```\n\nFor input 5 the output is `Factorial of 5 = 120` (5 x 4 x 3 x 2 x 1).\n\nPython equivalent:\n\n```python\nn = int(input())\nfact = 1\nfor i in range(2, n + 1):\n    fact *= i\nprint(fact)\n```",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Java Programming Paradigms"
+    },
+    {
+      "question_number": "15. A",
+      "question_text": "Explain Bohm's Jacopini algorithm with the help of suitable example.",
+      "marks": 8,
+      "answer": "The **Bohm-Jacopini structured program theorem** states that any computable function can be implemented using only three control structures:\n\n1. **Sequence** - execute statements one after another.\n2. **Selection** (decision) - `if / if-else` chooses one of two paths based on a condition.\n3. **Iteration** (loop) - `while / for` repeats a block while a condition holds.\n\nNo unconditional `goto` jumps are needed; every flowchart (even an unstructured one) can be rewritten as a combination of these three, which gives programs that are easier to read, test and maintain. This is the theoretical basis of structured programming.\n\nExample - largest of the numbers 1..n and sum of even numbers, using only the three structures:\n\n```python\nn = 10\ntotal = 0                 # sequence\ni = 1\nwhile i <= n:             # iteration\n    if i % 2 == 0:        # selection\n        total += i\n    i += 1                # sequence\nprint(total)              # 30\n```\n\nHere statements execute in sequence, `if` selects, and `while` iterates, with no `goto`.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Introduction to Programming Paradigm"
+    },
+    {
+      "question_number": "15. B",
+      "question_text": "What is constructor? Write the code to implement it and explain the application of constructor in the program.",
+      "marks": 8,
+      "answer": "A **constructor** is a special member of a class that has the same name as the class and no return type. It is invoked automatically when an object is created with `new` and is used to initialise the object's data members.\n\nTypes: default (no-argument) constructor, parameterized constructor and copy constructor; constructors can be overloaded.\n\n```java\nclass Student {\n    int id;\n    String name;\n\n    Student() {                       // default constructor\n        id = 0;\n        name = \"Unknown\";\n    }\n\n    Student(int id, String name) {    // parameterized constructor\n        this.id = id;\n        this.name = name;\n    }\n\n    void display() {\n        System.out.println(id + \" \" + name);\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Student s1 = new Student();             // calls default constructor\n        Student s2 = new Student(101, \"Asha\");  // calls parameterized constructor\n        s1.display();   // 0 Unknown\n        s2.display();   // 101 Asha\n    }\n}\n```\n\nApplication: constructors guarantee that every object starts in a valid state (no uninitialised fields), allow different ways of creating objects through overloading, and avoid separate setter calls after creation.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Java Programming Paradigms"
+    }
+  ]
+}

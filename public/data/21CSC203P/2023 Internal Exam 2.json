@@ -1,0 +1,245 @@
+{
+  "formal_filename": "2023-09-27_CT2_QP.json",
+  "paper_title": "SRM Institute of Science and Technology, Delhi-NCR Campus - Department of Computer Science and Engineering - Internal Examination II - Academic Year 2023-24 (ODD) - 21CSC203P Advanced Programming Practice (Max. Marks: 60, Duration: 2 Hours)",
+  "source": "2023-09-27 CT2 (Internal Examination II)",
+  "questions": [
+    {
+      "question_number": "1",
+      "question_text": "Concept of multiple inheritance can be implemented by",
+      "options": [
+        "Interface",
+        "Final",
+        "Abstract method",
+        "Implements"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "Java does not allow a class to extend more than one class, but a class can implement several interfaces, which achieves multiple inheritance of type/behaviour.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Java Programming Paradigms"
+    },
+    {
+      "question_number": "2",
+      "question_text": "Package is referred to as",
+      "options": [
+        "Java keyword",
+        "Variable name",
+        "Identifier",
+        "Class name"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "`package` is a reserved word (keyword) in Java used to declare the package of a class.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Java Programming Paradigms"
+    },
+    {
+      "question_number": "3",
+      "question_text": "getDocumentBase() is used to load images from the ________.",
+      "options": [
+        "directory holding the HTML file",
+        "address of the image",
+        "directory holding the class file",
+        "directory holding the object file"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "In an applet, `getDocumentBase()` returns the URL of the directory holding the HTML document; `getCodeBase()` returns the directory holding the applet's class file.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Advanced Java Programming Paradigms"
+    },
+    {
+      "question_number": "4",
+      "question_text": "Method overloading is type of ________.",
+      "options": [
+        "compile time polymorphism",
+        "java inheritance",
+        "run time polymorphism",
+        "abstraction"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "Overloaded methods are resolved by the compiler from the argument list, so overloading is compile-time (static) polymorphism. Overriding is run-time polymorphism.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Java Programming Paradigms"
+    },
+    {
+      "question_number": "5",
+      "question_text": "Implements keyword is used to implement an ________",
+      "options": [
+        "class",
+        "abstraction",
+        "interface",
+        "inheritance"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "A class uses `implements` to provide bodies for the methods of an interface.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Java Programming Paradigms"
+    },
+    {
+      "question_number": "6",
+      "question_text": "________ are the keywords that specify the accessibility or the scope of methods, classes, fields, and other members.",
+      "options": [
+        "extends",
+        "final",
+        "static",
+        "access specifiers"
+      ],
+      "correct_option": "D",
+      "marks": 1,
+      "answer": "Access specifiers (public, protected, default, private) control visibility of classes and members.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Java Programming Paradigms"
+    },
+    {
+      "question_number": "7",
+      "question_text": "Which of the following constructor is not used for creating the Thread.",
+      "options": [
+        "Thread(Runnable r)",
+        "Thread(Runnable r, String r)",
+        "Thread(*Runnable r, String r)",
+        "Thread (String name)"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "`Thread(Runnable)`, `Thread(Runnable, String)` and `Thread(String)` are valid constructors. Java has no pointer-style `*Runnable` parameter, so option C is invalid.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Advanced Java Programming Paradigms"
+    },
+    {
+      "question_number": "8",
+      "question_text": "________ is the foundation upon which Swing is made.",
+      "options": [
+        "Applet",
+        "AWT",
+        "lang",
+        "util"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "Swing components (JFrame, JButton...) are built on top of AWT (JComponent extends java.awt.Container).",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Advanced Java Programming Paradigms"
+    },
+    {
+      "question_number": "9",
+      "question_text": "Java Application uses ________ to interact with and access the database.",
+      "options": [
+        "JDBC Driver API layer",
+        "JDBC API Layer",
+        "JDBC ODBC API Layer",
+        "JDBC ODBC driver API layer"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "In the JDBC architecture the application talks to the JDBC API layer (java.sql / javax.sql), which in turn uses the JDBC Driver API layer to reach the database.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Advanced Java Programming Paradigms"
+    },
+    {
+      "question_number": "10",
+      "question_text": "Which of the following is not a container class",
+      "options": [
+        "Panel",
+        "Menubar",
+        "Frame",
+        "Dialog"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "Panel, Frame and Dialog can hold other components (they are containers). A MenuBar is a component that is attached to a frame, not a general container.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Advanced Java Programming Paradigms"
+    },
+    {
+      "question_number": "11",
+      "question_text": "Write a program in java to print the prime numbers.",
+      "marks": 6,
+      "answer": "```java\nimport java.util.Scanner;\n\npublic class PrimeNumbers {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        System.out.print(\"Print primes up to: \");\n        int n = sc.nextInt();\n        for (int num = 2; num <= n; num++) {\n            boolean isPrime = true;\n            for (int i = 2; i * i <= num; i++) {\n                if (num % i == 0) {\n                    isPrime = false;\n                    break;\n                }\n            }\n            if (isPrime) {\n                System.out.print(num + \" \");\n            }\n        }\n    }\n}\n```\n\nFor `n = 20` the output is `2 3 5 7 11 13 17 19`. A number is prime if it has no divisor between 2 and its square root.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Java Programming Paradigms"
+    },
+    {
+      "question_number": "12",
+      "question_text": "Write a program for the multiplication of array in java",
+      "marks": 6,
+      "answer": "The multiplication of two arrays (matrices) is done with three nested loops: `C[i][j] = sum over k of A[i][k] * B[k][j]`.\n\n```java\npublic class MatrixMultiplication {\n    public static void main(String[] args) {\n        int[][] a = {{1, 2}, {3, 4}};\n        int[][] b = {{5, 6}, {7, 8}};\n        int[][] c = new int[2][2];\n\n        for (int i = 0; i < 2; i++) {\n            for (int j = 0; j < 2; j++) {\n                for (int k = 0; k < 2; k++) {\n                    c[i][j] += a[i][k] * b[k][j];\n                }\n            }\n        }\n\n        for (int i = 0; i < 2; i++) {\n            for (int j = 0; j < 2; j++) {\n                System.out.print(c[i][j] + \" \");\n            }\n            System.out.println();\n        }\n    }\n}\n```\n\nOutput:\n\n```text\n19 22 \n43 50 \n```",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Java Programming Paradigms"
+    },
+    {
+      "question_number": "13",
+      "question_text": "Differentiate between AWT and swing",
+      "marks": 6,
+      "answer": "| Basis | AWT | Swing |\n|---|---|---|\n| Package | `java.awt` | `javax.swing` |\n| Components | Heavyweight (use native OS peers) | Lightweight (drawn entirely by Java) |\n| Look and feel | Platform dependent | Pluggable look and feel, platform independent |\n| Component set | Limited (Button, Label, TextField...) | Rich (JTable, JTree, JTabbedPane, JComboBox...) |\n| Naming | `Button`, `Frame` | `JButton`, `JFrame` (prefixed with J) |\n| Architecture | No MVC support | Based on Model-View-Controller |\n| Speed / memory | Faster to start but uses more OS resources | Slightly slower, uses less OS resources |\n| Relation | Base GUI toolkit | Built on top of AWT (extension) |",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Advanced Java Programming Paradigms"
+    },
+    {
+      "question_number": "14",
+      "question_text": "How can one implement the concept of threads in java",
+      "marks": 6,
+      "answer": "A thread is a lightweight unit of execution. In Java a thread can be created in two ways.\n\n**1. Extending the `Thread` class**\n\n```java\nclass MyThread extends Thread {\n    public void run() {\n        for (int i = 1; i <= 3; i++) {\n            System.out.println(getName() + \" : \" + i);\n        }\n    }\n}\n\npublic class Demo1 {\n    public static void main(String[] args) {\n        MyThread t1 = new MyThread();\n        t1.start();\n    }\n}\n```\n\n**2. Implementing the `Runnable` interface**\n\n```java\nclass MyTask implements Runnable {\n    public void run() {\n        System.out.println(\"Running: \" + Thread.currentThread().getName());\n    }\n}\n\npublic class Demo2 {\n    public static void main(String[] args) {\n        Thread t = new Thread(new MyTask());\n        t.start();\n    }\n}\n```\n\n`start()` creates a new call stack and invokes `run()` concurrently (calling `run()` directly would execute it in the current thread). The Runnable approach is preferred because the class can still extend another class. Other useful methods: `sleep()`, `join()`, `setPriority()`, `isAlive()`.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Advanced Java Programming Paradigms"
+    },
+    {
+      "question_number": "15",
+      "question_text": "Explain the life cycle of applets with the help of a program",
+      "marks": 6,
+      "answer": "An applet passes through the following methods (defined in `java.applet.Applet`):\n\n1. `init()` - called once when the applet is first loaded; used to initialise variables, load images/fonts.\n2. `start()` - called after `init()` and every time the page is revisited; starts the applet's execution/threads.\n3. `paint(Graphics g)` - called whenever the applet's output must be drawn or redrawn (also via `repaint()`).\n4. `stop()` - called when the user leaves the page; suspends execution.\n5. `destroy()` - called once when the applet is removed from memory; releases resources.\n\nOrder: `init() -> start() -> paint() -> stop() -> (start() again) -> destroy()`.\n\n```java\nimport java.applet.Applet;\nimport java.awt.Graphics;\n\n/* <applet code=\"LifeCycle.class\" width=\"300\" height=\"100\"></applet> */\npublic class LifeCycle extends Applet {\n    String msg = \"\";\n\n    public void init()    { msg += \"init -> \"; }\n    public void start()   { msg += \"start -> \"; }\n    public void stop()    { msg += \"stop -> \"; }\n    public void destroy() { System.out.println(\"destroy called\"); }\n\n    public void paint(Graphics g) {\n        g.drawString(msg + \"paint\", 20, 50);\n    }\n}\n```\n\nRun with `appletviewer LifeCycle.java`. (Applets are deprecated in recent Java versions but remain part of the syllabus.)",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Advanced Java Programming Paradigms"
+    },
+    {
+      "question_number": "16",
+      "question_text": "Illustrate the concept of interface and How is interface related to abstraction concepts",
+      "marks": 6,
+      "answer": "An **interface** is a reference type that contains only abstract method declarations (plus constants, and default/static methods since Java 8). A class that `implements` an interface must define all its methods. An interface is declared with `interface` and defines *what* a class must do, not *how*.\n\n**Relation to abstraction:** abstraction means exposing only essential behaviour and hiding implementation details. An interface is the purest form of abstraction (100% abstract contract in the older sense): the caller depends on the interface type, while the actual implementation is hidden in the implementing classes. (Abstract classes give partial abstraction; interfaces additionally allow multiple inheritance.)\n\n```java\ninterface Shape {\n    double area();                 // abstract by default\n}\n\nclass Circle implements Shape {\n    double r;\n    Circle(double r) { this.r = r; }\n    public double area() { return Math.PI * r * r; }\n}\n\nclass Rectangle implements Shape {\n    double l, b;\n    Rectangle(double l, double b) { this.l = l; this.b = b; }\n    public double area() { return l * b; }\n}\n\npublic class Test {\n    public static void main(String[] args) {\n        Shape s1 = new Circle(2);\n        Shape s2 = new Rectangle(3, 4);\n        System.out.println(s1.area());   // 12.566370614359172\n        System.out.println(s2.area());   // 12.0\n    }\n}\n```\n\nThe user code works with `Shape` only; how the area is computed is hidden - that is abstraction.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Java Programming Paradigms"
+    },
+    {
+      "question_number": "17",
+      "question_text": "Define the steps for JDBC-ODBC connectivity",
+      "marks": 6,
+      "answer": "JDBC-ODBC connectivity uses the JDBC-ODBC bridge (Type 1 driver `sun.jdbc.odbc.JdbcOdbcDriver`; removed from Java 8 onwards) to reach any ODBC data source.\n\n1. **Create a DSN:** in Control Panel -> ODBC Data Sources, create a System/User DSN (say `mydsn`) for the database (e.g. MS Access, SQL Server).\n2. **Load the driver:** `Class.forName(\"sun.jdbc.odbc.JdbcOdbcDriver\");`\n3. **Establish the connection:** `Connection con = DriverManager.getConnection(\"jdbc:odbc:mydsn\", \"user\", \"password\");`\n4. **Create a statement:** `Statement st = con.createStatement();`\n5. **Execute the query:** `ResultSet rs = st.executeQuery(\"select * from student\");` (use `executeUpdate()` for insert/update/delete).\n6. **Process the result:** `while (rs.next()) { System.out.println(rs.getInt(1) + \" \" + rs.getString(2)); }`\n7. **Close the connection:** `con.close();`\n\n```java\nimport java.sql.*;\n\npublic class OdbcDemo {\n    public static void main(String[] args) throws Exception {\n        Class.forName(\"sun.jdbc.odbc.JdbcOdbcDriver\");\n        Connection con = DriverManager.getConnection(\"jdbc:odbc:mydsn\");\n        Statement st = con.createStatement();\n        ResultSet rs = st.executeQuery(\"select * from student\");\n        while (rs.next()) {\n            System.out.println(rs.getInt(1) + \" \" + rs.getString(2));\n        }\n        con.close();\n    }\n}\n```",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Advanced Java Programming Paradigms"
+    },
+    {
+      "question_number": "18. A",
+      "question_text": "Briefly describe the code for establishing the connection with MySQL database and java program",
+      "marks": 10,
+      "answer": "Steps: (1) import `java.sql.*`; (2) load the MySQL driver; (3) get a `Connection` from `DriverManager`; (4) create a `Statement`; (5) execute the query; (6) process the `ResultSet`; (7) close the connection. The MySQL Connector/J jar must be on the classpath.\n\n```java\nimport java.sql.*;\n\npublic class MySQLConnect {\n    public static void main(String[] args) {\n        String url  = \"jdbc:mysql://localhost:3306/college\";\n        String user = \"root\";\n        String pass = \"password\";\n        try {\n            // 1. Load the driver (optional for JDBC 4+, needed for older drivers)\n            Class.forName(\"com.mysql.cj.jdbc.Driver\");\n\n            // 2. Establish the connection\n            Connection con = DriverManager.getConnection(url, user, pass);\n\n            // 3. Create a statement\n            Statement st = con.createStatement();\n\n            // 4. Execute a query\n            ResultSet rs = st.executeQuery(\"SELECT id, name FROM student\");\n\n            // 5. Process the results\n            while (rs.next()) {\n                System.out.println(rs.getInt(\"id\") + \" \" + rs.getString(\"name\"));\n            }\n\n            // 6. Close the resources\n            rs.close();\n            st.close();\n            con.close();\n        } catch (Exception e) {\n            System.out.println(e);\n        }\n    }\n}\n```\n\n`jdbc:mysql://host:port/database` is the connection URL; `executeUpdate()` is used instead of `executeQuery()` for INSERT/UPDATE/DELETE.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Advanced Java Programming Paradigms"
+    },
+    {
+      "question_number": "18. B",
+      "question_text": "Write a program to implement simple user registration form using java swing",
+      "marks": 10,
+      "answer": "```java\nimport javax.swing.*;\nimport java.awt.event.*;\n\npublic class RegistrationForm extends JFrame implements ActionListener {\n    JLabel lName, lEmail, lPass, lMsg;\n    JTextField tName, tEmail;\n    JPasswordField tPass;\n    JButton bRegister, bReset;\n\n    RegistrationForm() {\n        setTitle(\"User Registration\");\n        setSize(350, 300);\n        setLayout(null);\n        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);\n\n        lName = new JLabel(\"Name:\");      lName.setBounds(30, 30, 80, 25);\n        tName = new JTextField();         tName.setBounds(120, 30, 170, 25);\n        lEmail = new JLabel(\"Email:\");    lEmail.setBounds(30, 70, 80, 25);\n        tEmail = new JTextField();        tEmail.setBounds(120, 70, 170, 25);\n        lPass = new JLabel(\"Password:\");  lPass.setBounds(30, 110, 80, 25);\n        tPass = new JPasswordField();     tPass.setBounds(120, 110, 170, 25);\n\n        bRegister = new JButton(\"Register\"); bRegister.setBounds(40, 160, 110, 30);\n        bReset = new JButton(\"Reset\");       bReset.setBounds(170, 160, 110, 30);\n        lMsg = new JLabel(\"\");               lMsg.setBounds(30, 210, 280, 25);\n\n        bRegister.addActionListener(this);\n        bReset.addActionListener(this);\n\n        add(lName); add(tName); add(lEmail); add(tEmail);\n        add(lPass); add(tPass); add(bRegister); add(bReset); add(lMsg);\n        setVisible(true);\n    }\n\n    public void actionPerformed(ActionEvent e) {\n        if (e.getSource() == bRegister) {\n            if (tName.getText().isEmpty() || tEmail.getText().isEmpty()\n                    || tPass.getPassword().length == 0) {\n                lMsg.setText(\"Please fill all the fields\");\n            } else {\n                lMsg.setText(\"Registered: \" + tName.getText());\n            }\n        } else {\n            tName.setText(\"\");\n            tEmail.setText(\"\");\n            tPass.setText(\"\");\n            lMsg.setText(\"\");\n        }\n    }\n\n    public static void main(String[] args) {\n        new RegistrationForm();\n    }\n}\n```\n\nThe form uses `JFrame` as the container, `JLabel`/`JTextField`/`JPasswordField` as widgets, and an `ActionListener` (event handling) for the Register and Reset buttons.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Advanced Java Programming Paradigms"
+    },
+    {
+      "question_number": "19. A",
+      "question_text": "Illustrate the concept of method overriding in java inheritance. Write a program depicting the method overloading in java",
+      "marks": 10,
+      "answer": "**Method overriding:** when a subclass provides its own implementation of a method already defined in its superclass with the same name, parameters and return type. The method to execute is chosen at run time by the actual object type (run-time polymorphism / dynamic dispatch). Rules: needs inheritance, cannot reduce access, `static`/`final`/`private` methods cannot be overridden; `@Override` is recommended.\n\n```java\nclass Animal {\n    void sound() { System.out.println(\"Animal makes a sound\"); }\n}\nclass Dog extends Animal {\n    @Override\n    void sound() { System.out.println(\"Dog barks\"); }\n}\npublic class OverrideDemo {\n    public static void main(String[] args) {\n        Animal a = new Dog();   // superclass reference, subclass object\n        a.sound();              // Dog barks\n    }\n}\n```\n\n**Method overloading:** several methods with the same name but different parameter lists (number, type or order) in the same class; resolved at compile time (compile-time polymorphism).\n\n```java\nclass Calculator {\n    int add(int a, int b)            { return a + b; }\n    int add(int a, int b, int c)     { return a + b + c; }\n    double add(double a, double b)   { return a + b; }\n}\npublic class OverloadDemo {\n    public static void main(String[] args) {\n        Calculator c = new Calculator();\n        System.out.println(c.add(2, 3));        // 5\n        System.out.println(c.add(2, 3, 4));     // 9\n        System.out.println(c.add(2.5, 3.5));    // 6.0\n    }\n}\n```",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Java Programming Paradigms"
+    },
+    {
+      "question_number": "19. B",
+      "question_text": "How does packages in java improve accessibility and maintainability. Write a program in java using any built-in package.",
+      "marks": 10,
+      "answer": "A **package** is a namespace that groups related classes and interfaces (e.g. `java.util`, `java.io`, `java.sql`).\n\nHow packages improve accessibility and maintainability:\n- **Access control:** classes/members with default (package-private) or `protected` access are visible only inside the package (or to subclasses), so the package forms an encapsulation boundary; only `public` classes are exposed.\n- **Name-clash avoidance:** two classes with the same name can live in different packages (`java.util.Date` vs `java.sql.Date`).\n- **Organisation / maintainability:** related code is kept together in a directory structure, making it easier to locate, reuse, test and modify without affecting other parts.\n- **Reusability:** packages can be imported (`import`) in any program and distributed as JAR files.\n- **Built-in packages** give ready-made, tested functionality (collections, I/O, networking, GUI, JDBC).\n\nProgram using the built-in packages `java.util` and `java.time`:\n\n```java\nimport java.util.ArrayList;\nimport java.util.Collections;\nimport java.util.Scanner;\nimport java.time.LocalDate;\n\npublic class PackageDemo {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);          // java.util\n        ArrayList<Integer> list = new ArrayList<>();  // java.util\n        System.out.print(\"How many numbers? \");\n        int n = sc.nextInt();\n        for (int i = 0; i < n; i++) {\n            list.add(sc.nextInt());\n        }\n        Collections.sort(list);                       // java.util\n        System.out.println(\"Sorted: \" + list);\n        System.out.println(\"Date: \" + LocalDate.now()); // java.time\n    }\n}\n```\n\nA user-defined package is created with `package mypack;` as the first statement and compiled using `javac -d . File.java`.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Java Programming Paradigms"
+    }
+  ]
+}

@@ -1,12 +1,12 @@
 {
     "paper_title": "SRM Institute of Science and Technology - SCHOOL OF COMPUTING - ASSESSMENT II - 21CSC203P Advanced Programming Practice (SET E)",
-    "source": "<FILENAME>",
+    "source": "Assessment II, Set E, 03.11.2025",
     "questions": [
         {
             "question_number": "1",
             "question_text": "Define a pure function. Write a Python program using a pure function and a lambda expression to double all even numbers in the list [1, 2, 3, 4, 5, 6] and display the resulting list.",
             "marks": 2,
-            "answer": "Definition: A pure function is a function where the return value is determined solely by its input arguments, without causing side effects or modifying global variables.\n\nPython Program:\n\n```python\ndef is_even(x):\n```\n\n    return x % 2 == 0\n\nnumbers = [1, 2, 3, 4, 5, 6]\neven_doubled = list(map(lambda x: x * 2, filter(is_even, numbers)))\nprint(even_doubled)  # Output: [4, 8, 12]",
+            "answer": "Definition: A pure function is a function whose return value is determined solely by its input arguments, without causing side effects or modifying global variables.\n\nPython Program:\n\n```python\ndef is_even(x):\n    return x % 2 == 0\n\nnumbers = [1, 2, 3, 4, 5, 6]\neven_doubled = list(map(lambda x: x * 2, filter(is_even, numbers)))\nprint(even_doubled)  # Output: [4, 8, 12]\n```",
             "answer_source": "generated",
             "chapter": "Unit 4: Pythonic Programming Paradigm"
         },
@@ -14,7 +14,7 @@
             "question_number": "2",
             "question_text": "Demonstrate how a Lock() prevents data corruption in a shared list using Python's threading module.",
             "marks": 2,
-            "answer": "Using a threading.Lock() ensures mutual exclusion so that only one thread can modify the shared resource (list) at a time, preventing race conditions and data corruption.\n\nPython Snippet:\nimport threading\n\nshared_list = []\nlock = threading.Lock()\n\n```python\ndef append_item(item):\n```\n\n    with lock:\n        shared_list.append(item)  # Thread-safe write operation",
+            "answer": "Using a threading.Lock() ensures mutual exclusion so that only one thread can modify the shared resource (list) at a time, preventing race conditions and data corruption.\n\nPython Snippet:\n\n```python\nimport threading\n\nshared_list = []\nlock = threading.Lock()\n\ndef append_item(item):\n    with lock:\n        shared_list.append(item)  # Thread-safe write operation\n\nthreads = [threading.Thread(target=append_item, args=(i,)) for i in range(5)]\nfor t in threads:\n    t.start()\nfor t in threads:\n    t.join()\n\nprint(sorted(shared_list))  # Output: [0, 1, 2, 3, 4]\n```",
             "answer_source": "generated",
             "chapter": "Unit 4: Pythonic Programming Paradigm"
         },
@@ -22,7 +22,7 @@
             "question_number": "3",
             "question_text": "Write a Python statement to create a TCP socket and to bind a server socket to localhost on port 5000.",
             "marks": 2,
-            "answer": "import socket\nserver_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\nserver_socket.bind(('localhost', 5000))",
+            "answer": "```python\nimport socket\n\nserver_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\nserver_socket.bind(('localhost', 5000))\n```",
             "answer_source": "generated",
             "chapter": "Unit 4: Pythonic Programming Paradigm"
         },
@@ -30,7 +30,7 @@
             "question_number": "4",
             "question_text": "Write a Python program to substitute x=2 in the expression x^2 + 3x using SymPy.",
             "marks": 2,
-            "answer": "import sympy as sp\n\nx = sp.Symbol('x')\nexpr = x**2 + 3*x\nresult = expr.subs(x, 2)\nprint(\"Result:\", result)  # Output: 10",
+            "answer": "```python\nimport sympy as sp\n\nx = sp.Symbol('x')\nexpr = x**2 + 3*x\nresult = expr.subs(x, 2)\nprint(\"Result:\", result)  # Output: 10\n```",
             "answer_source": "generated",
             "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
         },
@@ -38,7 +38,7 @@
             "question_number": "5",
             "question_text": "Consider an automatic door with the following specifications:\n- States: CLOSED, OPEN\n- Inputs: person detected, no person.\nDraw the state transition table for the automatic door.",
             "marks": 2,
-            "answer": "State Transition Table:\n| Current State | Input           | Next State |\n|---------------|-----------------|------------|\n| CLOSED        | Person detected | OPEN       |\n| CLOSED        | No person       | CLOSED     |\n| OPEN          | Person detected | OPEN       |\n| OPEN          | No person       | CLOSED     |",
+            "answer": "State Transition Table:\n\n| Current State | Input           | Next State |\n|---------------|-----------------|------------|\n| CLOSED        | Person detected | OPEN       |\n| CLOSED        | No person       | CLOSED     |\n| OPEN          | Person detected | OPEN       |\n| OPEN          | No person       | CLOSED     |",
             "answer_source": "generated",
             "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
         },
@@ -46,7 +46,7 @@
             "question_number": "6a",
             "question_text": "A company has a list of employee salaries: [2000, 3500, 4000, 1500, 5000]. Write a Python program to:\n1. Apply a 5% bonus to each salary using map().\n2. Keep only salaries above 3000 using filter().\n3. Calculate the total sum of the filtered salaries using reduce().\nDisplay the original salaries, updated salaries, filtered salaries, and total.",
             "marks": 5,
-            "answer": "from functools import reduce\n\nsalaries = [2000, 3500, 4000, 1500, 5000]\n\n# 1. Apply 5% bonus\nupdated = list(map(lambda s: s * 1.05, salaries))\n\n# 2. Keep salaries > 3000\nfiltered = list(filter(lambda s: s > 3000, updated))\n\n# 3. Calculate total sum\ntotal = reduce(lambda x, y: x + y, filtered, 0)\n\nprint(\"Original Salaries:\", salaries)\nprint(\"Updated Salaries (5% bonus):\", updated)\nprint(\"Filtered Salaries (>3000):\", filtered)\nprint(\"Total Sum:\", total)",
+            "answer": "```python\nfrom functools import reduce\n\nsalaries = [2000, 3500, 4000, 1500, 5000]\n\n# 1. Apply 5% bonus\nupdated = list(map(lambda s: s * 1.05, salaries))\n\n# 2. Keep salaries > 3000\nfiltered = list(filter(lambda s: s > 3000, updated))\n\n# 3. Calculate total sum\ntotal = reduce(lambda x, y: x + y, filtered, 0)\n\nprint(\"Original Salaries:\", salaries)\nprint(\"Updated Salaries (5% bonus):\", updated)\nprint(\"Filtered Salaries (>3000):\", filtered)\nprint(\"Total Sum:\", total)\n```",
             "answer_source": "generated",
             "chapter": "Unit 4: Pythonic Programming Paradigm"
         },
@@ -54,7 +54,7 @@
             "question_number": "6b",
             "question_text": "Develop a Python TCP client-server application using the socket module where the server listens on localhost:5000, receives a client message, and sends a confirmation reply. The client should take user input, send it to the server, display the server's response, and ensure proper socket closure on both ends.",
             "marks": 5,
-            "answer": "# --- Server Program (server.py) ---\nimport socket\n\nserver_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\nserver_socket.bind(('localhost', 5000))\nserver_socket.listen(1)\nprint(\"Server listening on localhost:5000...\")\n\nconn, addr = server_socket.accept()\nprint(f\"Connected by {addr}\")\ndata = conn.recv(1024).decode()\nif data:\n    print(f\"Received: {data}\")\n    conn.sendall(b\"Message received successfully!\")\nconn.close()\nserver_socket.close()\n\n# --- Client Program (client.py) ---\nimport socket\n\nclient_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\nclient_socket.connect(('localhost', 5000))\nmsg = input(\"Enter message to send: \")\nclient_socket.sendall(msg.encode())\nresponse = client_socket.recv(1024).decode()\nprint(f\"Server Response: {response}\")\nclient_socket.close()",
+            "answer": "Server Program (`server.py`):\n\n```python\nimport socket\n\nserver_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\nserver_socket.bind(('localhost', 5000))\nserver_socket.listen(1)\nprint(\"Server listening on localhost:5000...\")\n\nconn, addr = server_socket.accept()\nprint(f\"Connected by {addr}\")\ndata = conn.recv(1024).decode()\nif data:\n    print(f\"Received: {data}\")\n    conn.sendall(b\"Message received successfully!\")\nconn.close()\nserver_socket.close()\n```\n\nClient Program (`client.py`):\n\n```python\nimport socket\n\nclient_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\nclient_socket.connect(('localhost', 5000))\nmsg = input(\"Enter message to send: \")\nclient_socket.sendall(msg.encode())\nresponse = client_socket.recv(1024).decode()\nprint(f\"Server Response: {response}\")\nclient_socket.close()\n```",
             "answer_source": "generated",
             "chapter": "Unit 4: Pythonic Programming Paradigm"
         },
@@ -62,7 +62,7 @@
             "question_number": "7a",
             "question_text": "Differentiate between shared and distributed memory models. Illustrate your answer with diagrams and short Python programs demonstrating each concept.",
             "marks": 5,
-            "answer": "1. Key Differences:\n- Shared Memory: Multiple processors share a single central address space/RAM. Communication occurs via memory reads/writes.\n- Distributed Memory: Each processor has its own private memory space. Communication occurs via explicit network message passing.\n\n2. Conceptual Diagram:\nShared Memory: [CPU 1] [CPU 2] <---> [ Global Memory / RAM ]\nDistributed Memory: [CPU 1 | Mem 1] <--- Network / Sockets ---> [CPU 2 | Mem 2]\n\n3. Python Examples:\n\nShared Memory (threading / multiprocessing.Value):\nfrom multiprocessing import Process, Value\n\n```python\ndef increment(shared_val):\n```\n\n    with shared_val.get_lock():\n        shared_val.value += 1\n\nval = Value('i', 0)\np = Process(target=increment, args=(val,))\np.start()\np.join()\nprint(\"Shared Value:\", val.value)\n\nDistributed Memory (Process Pipe / Sockets):\nfrom multiprocessing import Process, Pipe\n\n```python\ndef sender(conn):\n```\n\n    conn.send(\"Data across isolated memories\")\n    conn.close()\n\nparent_conn, child_conn = Pipe()\np = Process(target=sender, args=(child_conn,))\np.start()\nprint(\"Received:\", parent_conn.recv())\np.join()",
+            "answer": "1. Key Differences:\n- Shared Memory: Multiple processors share a single central address space/RAM. Communication occurs via memory reads/writes.\n- Distributed Memory: Each processor has its own private memory space. Communication occurs via explicit network message passing.\n\n2. Conceptual Diagram:\n\n```text\nShared Memory:\n  [CPU 1]   [CPU 2]\n      \\         /\n   [ Global Memory / RAM ]\n\nDistributed Memory:\n  [CPU 1 | Mem 1] <--- Network / Message Passing ---> [CPU 2 | Mem 2]\n```\n\n3. Python Examples:\n\nShared Memory (multiprocessing.Value):\n\n```python\nfrom multiprocessing import Process, Value\n\ndef increment(shared_val):\n    with shared_val.get_lock():\n        shared_val.value += 1\n\nif __name__ == \"__main__\":\n    val = Value('i', 0)\n    p = Process(target=increment, args=(val,))\n    p.start()\n    p.join()\n    print(\"Shared Value:\", val.value)  # Output: Shared Value: 1\n```\n\nDistributed Memory (message passing through a Pipe):\n\n```python\nfrom multiprocessing import Process, Pipe\n\ndef sender(conn):\n    conn.send(\"Data across isolated memories\")\n    conn.close()\n\nif __name__ == \"__main__\":\n    parent_conn, child_conn = Pipe()\n    p = Process(target=sender, args=(child_conn,))\n    p.start()\n    print(\"Received:\", parent_conn.recv())\n    p.join()\n```",
             "answer_source": "generated",
             "chapter": "Unit 4: Pythonic Programming Paradigm"
         },
@@ -70,7 +70,7 @@
             "question_number": "7b",
             "question_text": "Consider the following facts about students and the clubs they have joined:\nstudent('David'). student('Emma'). student('Frank').\nclub('Chess'). club('Robotics'). club('Music').\njoined('David', 'Chess'). joined('Emma', 'Music').\njoined('Frank', 'Robotics'). joined('David', 'Music').\n1. Write a Prolog or PyDatalog query to list the names of students who have joined the 'Music' club.\n2. Write a Prolog or PyDatalog query to list all student-club membership pairs stored in the database.\n3. Write a Prolog or PyDatalog query to find all clubs that 'David' has joined.\n4. Write a Prolog or PyDatalog query to list students who are not enrolled in the 'Robotics' club.",
             "marks": 5,
-            "answer": "Prolog Queries / Rules:\n\n1. Query to list students who joined 'Music':\n?- joined(Student, 'Music').\n\n2. Query to list all student-club membership pairs:\n?- joined(Student, Club).\n\n3. Query to find all clubs 'David' joined:\n?- joined('David', Club).\n\n4. Query to list students not enrolled in 'Robotics':\n?- student(Student), \\+ joined(Student, 'Robotics').",
+            "answer": "Prolog Queries / Rules (using the given facts):\n\n1. Query to list students who joined 'Music':\n\n```prolog\n?- joined(Student, 'Music').\n```\n\n2. Query to list all student-club membership pairs:\n\n```prolog\n?- joined(Student, Club).\n```\n\n3. Query to find all clubs 'David' joined:\n\n```prolog\n?- joined('David', Club).\n```\n\n4. Query to list students not enrolled in 'Robotics':\n\n```prolog\n?- student(Student), \\+ joined(Student, 'Robotics').\n```",
             "answer_source": "generated",
             "chapter": "Unit 4: Pythonic Programming Paradigm"
         },
@@ -78,7 +78,7 @@
             "question_number": "8a",
             "question_text": "Develop a Python program using the SymPy library to compute both the derivative and integral of the given mathematical expression: f(x) = 3x^3 - 5x^2 + 2x - 7",
             "marks": 5,
-            "answer": "import sympy as sp\n\nx = sp.Symbol('x')\nf = 3*x**3 - 5*x**2 + 2*x - 7\n\n# Calculate derivative\nderivative = sp.diff(f, x)\n\n# Calculate indefinite integral\nintegral = sp.integrate(f, x)\n\nprint(\"Original Function f(x):\", f)\nprint(\"Derivative f'(x):\", derivative)  # Output: 9*x**2 - 10*x + 2\nprint(\"Integral F(x):\", integral)      # Output: 3*x**4/4 - 5*x**3/3 + x**2 - 7*x",
+            "answer": "```python\nimport sympy as sp\n\nx = sp.Symbol('x')\nf = 3*x**3 - 5*x**2 + 2*x - 7\n\n# Calculate derivative\nderivative = sp.diff(f, x)\n\n# Calculate indefinite integral\nintegral = sp.integrate(f, x)\n\nprint(\"Original Function f(x):\", f)\nprint(\"Derivative f'(x):\", derivative)  # Output: 9*x**2 - 10*x + 2\nprint(\"Integral F(x):\", integral)       # Output: 3*x**4/4 - 5*x**3/3 + x**2 - 7*x\n```",
             "answer_source": "generated",
             "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
         },
@@ -86,7 +86,7 @@
             "question_number": "8b",
             "question_text": "Develop a Python GUI program using Tkinter to create an Employee Registration Form with fields for Name, ID, Department, and Designation. Include Submit and Reset buttons - Submit displays the entered details, and Reset clears all fields.",
             "marks": 5,
-            "answer": "import tkinter as tk\nfrom tkinter import messagebox\n\n```python\ndef submit():\n```\n\n    info = f\"Name: {e1.get()}\\nID: {e2.get()}\\nDept: {e3.get()}\\nDesignation: {e4.get()}\"\n    messagebox.showinfo(\"Submitted Details\", info)\n\n```python\ndef reset():\n```\n\n    e1.delete(0, tk.END)\n    e2.delete(0, tk.END)\n    e3.delete(0, tk.END)\n    e4.delete(0, tk.END)\n\nroot = tk.Tk()\nroot.title(\"Employee Registration Form\")\n\nlabels = [\"Name:\", \"ID:\", \"Department:\", \"Designation:\"]\nentries = []\n\nfor i, text in enumerate(labels):\n    tk.Label(root, text=text).grid(row=i, column=0, padx=5, pady=5)\n    e = tk.Entry(root)\n    e.grid(row=i, column=1, padx=5, pady=5)\n    entries.append(e)\n\ne1, e2, e3, e4 = entries\n\ntk.Button(root, text=\"Submit\", command=submit).grid(row=4, column=0, pady=10)\ntk.Button(root, text=\"Reset\", command=reset).grid(row=4, column=1, pady=10)\n\nroot.mainloop()",
+            "answer": "```python\nimport tkinter as tk\nfrom tkinter import messagebox\n\ndef submit():\n    info = (f\"Name: {e1.get()}\\nID: {e2.get()}\\n\"\n            f\"Dept: {e3.get()}\\nDesignation: {e4.get()}\")\n    messagebox.showinfo(\"Submitted Details\", info)\n\ndef reset():\n    for entry in (e1, e2, e3, e4):\n        entry.delete(0, tk.END)\n\nroot = tk.Tk()\nroot.title(\"Employee Registration Form\")\n\nlabels = [\"Name:\", \"ID:\", \"Department:\", \"Designation:\"]\nentries = []\n\nfor i, text in enumerate(labels):\n    tk.Label(root, text=text).grid(row=i, column=0, padx=5, pady=5, sticky=\"e\")\n    e = tk.Entry(root)\n    e.grid(row=i, column=1, padx=5, pady=5)\n    entries.append(e)\n\ne1, e2, e3, e4 = entries\n\ntk.Button(root, text=\"Submit\", command=submit).grid(row=4, column=0, pady=10)\ntk.Button(root, text=\"Reset\", command=reset).grid(row=4, column=1, pady=10)\n\nroot.mainloop()\n```",
             "answer_source": "generated",
             "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
         }

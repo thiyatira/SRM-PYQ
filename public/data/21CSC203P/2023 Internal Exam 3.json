@@ -1,0 +1,245 @@
+{
+  "formal_filename": "2023-11-06_CT3_QP.json",
+  "paper_title": "SRM Institute of Science and Technology, Delhi-NCR Campus - Department of Computer Science and Engineering - Internal Examination III - Academic Year 2023-24 (ODD) - 21CSC203P Advanced Programming Practice (Max. Marks: 60, Duration: 2 Hours)",
+  "source": "2023-11-06 CT3 (Internal Examination III)",
+  "questions": [
+    {
+      "question_number": "1",
+      "question_text": "SymPy is written entirely in ________",
+      "options": [
+        "Python",
+        "C++",
+        "C",
+        "Java"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "SymPy is a pure-Python symbolic mathematics library with no external dependencies other than mpmath.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+    },
+    {
+      "question_number": "2",
+      "question_text": "If a function can be assigned to a variable or passed as object/variable to another function then that function is called",
+      "options": [
+        "First class function",
+        "Impure function",
+        "pure function",
+        "Higher order function"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "Functions that are treated like any other value (assignable to variables, passable as arguments, returnable) are first-class functions; a higher-order function is one that takes or returns functions.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Pythonic Programming Paradigm"
+    },
+    {
+      "question_number": "3",
+      "question_text": "Which of the following is not a server socket method",
+      "options": [
+        "s.connect()",
+        "s.accept()",
+        "s.bind()",
+        "s.listen()"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "A server uses bind(), listen() and accept(). `connect()` is a client socket method used to initiate a connection to the server.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Pythonic Programming Paradigm"
+    },
+    {
+      "question_number": "4",
+      "question_text": "In multiprocessing, when we want to communicate between processes, in that situation ________ are used.",
+      "options": [
+        "Locks",
+        "Pipes",
+        "Queue",
+        "Pool"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "`multiprocessing.Pipe()` returns a pair of connection objects for two-way communication between processes (Queue also supports communication, but Pipe is the primitive intended here). Locks are for synchronisation and Pool for distributing work.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Pythonic Programming Paradigm"
+    },
+    {
+      "question_number": "5",
+      "question_text": "Pool class is associated with ________",
+      "options": [
+        "Data based parallelism",
+        "Function based parallelism",
+        "Task based parallelism",
+        "Process based parallelism"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "`multiprocessing.Pool` splits input data across a pool of worker processes (`Pool.map()`), i.e. data parallelism, whereas `Process` is used for function/task-based parallelism.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Pythonic Programming Paradigm"
+    },
+    {
+      "question_number": "6",
+      "question_text": "________ is a integer parameter to create multiple logic variables at once",
+      "options": [
+        "var",
+        "create_terms",
+        "vars",
+        "conde"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "In the kanren library `vars(n)` creates n logic variables at once, e.g. `x, y, z = vars(3)`.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Pythonic Programming Paradigm"
+    },
+    {
+      "question_number": "7",
+      "question_text": "The ________ is a rectangular area intended for drawing pictures or other complex layouts.",
+      "options": [
+        "Label",
+        "Canvas",
+        "Entry",
+        "Scale"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "The Tkinter `Canvas` widget is a rectangular drawing area for shapes, text, images and other widgets.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+    },
+    {
+      "question_number": "8",
+      "question_text": "________ is a programming paradigm in which the program or its part is thought of as a model of a finite state machine or any other formal automation.",
+      "options": [
+        "Symbolic programming",
+        "Automata programming",
+        "Event driven programming",
+        "Logic programming"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "Automata-based programming models a program as a finite state machine/automaton with states and transitions.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+    },
+    {
+      "question_number": "9",
+      "question_text": "An ________ typically is a software routine that processes actions such as keystrokes and mouse movements",
+      "options": [
+        "Scheduler",
+        "Event handler",
+        "Dispatcher",
+        "Event callback"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "An event handler is the routine that responds to an event such as a key press or mouse click.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+    },
+    {
+      "question_number": "10",
+      "question_text": "tim.onkey(left, \"Left\") is a event binder used in ________ event",
+      "options": [
+        "Mouse event",
+        "Automatic Timer",
+        "Keypress event",
+        "Timers"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "`onkey(fun, key)` in the turtle module binds a function to a key press, here the Left arrow key.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+    },
+    {
+      "question_number": "11",
+      "question_text": "Differentiate between map, filter and reduce.",
+      "marks": 6,
+      "answer": "| Function | Purpose | Returns | Function argument |\n|---|---|---|---|\n| `map(func, iterable)` | Applies `func` to **every** element (transformation) | Iterator with the same number of elements | Takes one element, returns new value |\n| `filter(func, iterable)` | Keeps only elements for which `func` returns True (selection) | Iterator with equal or fewer elements | Takes one element, returns a boolean |\n| `reduce(func, iterable)` (from `functools`) | Combines all elements cumulatively into a **single** value | One value | Takes two arguments (accumulator, element) |\n\n```python\nfrom functools import reduce\nnums = [1, 2, 3, 4, 5]\nprint(list(map(lambda x: x * 2, nums)))          # [2, 4, 6, 8, 10]\nprint(list(filter(lambda x: x % 2 == 0, nums)))  # [2, 4]\nprint(reduce(lambda a, b: a + b, nums))          # 15\n```\n\nAll three are built-in higher-order functions used in the functional programming paradigm.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Pythonic Programming Paradigm"
+    },
+    {
+      "question_number": "12",
+      "question_text": "Lucy is a Professor\nDanny is a Professor\nJames is a Lecturer\nAll professors are Dean\nWrite a Query to retrieve all deans?",
+      "marks": 6,
+      "answer": "Facts and rule in Prolog:\n\n```prolog\nprofessor(lucy).\nprofessor(danny).\nlecturer(james).\ndean(X) :- professor(X).      % all professors are deans\n```\n\nQuery:\n\n```prolog\n?- dean(X).\nX = lucy ;\nX = danny.\n```\n\nJames is only a lecturer, so he is not retrieved.\n\nSame in Python using PyDatalog:\n\n```python\nfrom pyDatalog import pyDatalog\npyDatalog.create_terms('professor, lecturer, dean, X')\n\n+professor('lucy')\n+professor('danny')\n+lecturer('james')\ndean(X) <= professor(X)\n\nprint(dean(X))     # lists danny and lucy\n```",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Pythonic Programming Paradigm"
+    },
+    {
+      "question_number": "13",
+      "question_text": "Briefly describe various socket methods in detail",
+      "marks": 6,
+      "answer": "Python `socket` module methods:\n\n**Server socket methods**\n- `s.bind((host, port))` - binds the socket to an address (host name/IP and port).\n- `s.listen(backlog)` - puts the server in listening mode; `backlog` is the maximum number of queued connections.\n- `s.accept()` - blocks until a client connects; returns `(conn, addr)`, a new socket for that client and the client's address.\n\n**Client socket method**\n- `s.connect((host, port))` - actively connects the client to the server.\n\n**General (client and server) methods**\n- `socket.socket(family, type)` - creates a socket, e.g. `socket.socket(socket.AF_INET, socket.SOCK_STREAM)` for TCP.\n- `s.send(data)` / `s.sendall(data)` - send TCP data.\n- `s.recv(bufsize)` - receives TCP data up to `bufsize` bytes.\n- `s.sendto(data, addr)` / `s.recvfrom(bufsize)` - send/receive UDP datagrams.\n- `s.close()` - closes the socket.\n- `socket.gethostname()` - returns the host name of the machine.\n\n```python\n# server\nimport socket\ns = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\ns.bind((\"localhost\", 5000))\ns.listen(1)\nconn, addr = s.accept()\nprint(conn.recv(1024).decode())\nconn.close()\n```",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Pythonic Programming Paradigm"
+    },
+    {
+      "question_number": "14",
+      "question_text": "Illustrate the concept of Symbolic programming in the field of research",
+      "marks": 6,
+      "answer": "**Symbolic programming** manipulates mathematical expressions and symbols directly (algebraically) rather than numeric values, giving exact results (e.g. `sqrt(8) = 2*sqrt(2)`, `1/3` stays a fraction). In Python it is provided by the **SymPy** library; Lisp and Mathematica are other symbolic languages.\n\nUses in research:\n- **Mathematics / physics:** deriving formulae, differentiating and integrating, solving equations, limits and series expansion, solving differential equations exactly.\n- **Engineering:** simplifying circuit/control-system transfer functions, matrix algebra.\n- **Computer science / AI:** theorem proving, program analysis, computer algebra systems, automatic differentiation for machine learning, code generation.\n- **Verification of numeric results**, since symbolic results are exact and free of floating-point error.\n\n```python\nimport sympy as sp\nx = sp.symbols('x')\nf = x**2 * sp.sin(x)\nprint(sp.diff(f, x))                  # x**2*cos(x) + 2*x*sin(x)\nprint(sp.integrate(sp.exp(x), x))     # exp(x)\nprint(sp.solve(x**2 - 5*x + 6, x))    # [2, 3]\n```",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+    },
+    {
+      "question_number": "15",
+      "question_text": "Elaborate the ways to handle parallel processing",
+      "marks": 6,
+      "answer": "Parallel processing executes several tasks at the same time on multiple CPU cores/processors. Ways to handle it in Python:\n\n1. **Multiprocessing (`multiprocessing.Process`)** - each task runs in a separate process with its own memory and Python interpreter, so the GIL does not limit it (true parallelism, good for CPU-bound work).\n2. **Process pools (`multiprocessing.Pool`)** - a fixed number of worker processes; `pool.map()` distributes data across them (data parallelism).\n3. **Inter-process communication** - since memory is not shared, processes exchange data via `Pipe`, `Queue`, shared memory (`Value`, `Array`) or a manager; `Lock` is used for synchronisation.\n4. **Multithreading (`threading`)** - threads share memory and suit I/O-bound work (limited by the GIL for CPU-bound code); `Lock`/`Semaphore` avoid race conditions.\n5. **Memory models** - *shared memory* (threads/processes access common memory) versus *distributed memory* (each process has private memory and uses message passing, e.g. MPI, sockets).\n6. **High-level tools** - `concurrent.futures` (`ProcessPoolExecutor`), `joblib`, `ipyparallel` (IPython parallel).\n\n```python\nfrom multiprocessing import Pool\n\ndef square(n):\n    return n * n\n\nif __name__ == \"__main__\":\n    with Pool(4) as p:\n        print(p.map(square, [1, 2, 3, 4, 5]))   # [1, 4, 9, 16, 25]\n```",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Pythonic Programming Paradigm"
+    },
+    {
+      "question_number": "16",
+      "question_text": "List out the various geometry managers used in tkinter module",
+      "marks": 6,
+      "answer": "Tkinter has three geometry managers that control the size and position of widgets in a window (they must not be mixed within the same container):\n\n1. **`pack()`** - places widgets in blocks, one after another, either top-to-bottom or side-by-side. Options: `side` (TOP, BOTTOM, LEFT, RIGHT), `fill`, `expand`, `padx`, `pady`, `anchor`.\n2. **`grid()`** - arranges widgets in a table of rows and columns. Options: `row`, `column`, `rowspan`, `columnspan`, `sticky`, `padx`, `pady`.\n3. **`place()`** - positions a widget at an absolute (x, y) coordinate or by relative position (`relx`, `rely`). Options: `x`, `y`, `width`, `height`, `anchor`.\n\n```python\nimport tkinter as tk\nroot = tk.Tk()\nf1 = tk.Frame(root); f1.pack()          # pack manager\nf2 = tk.Frame(root); f2.pack()\nf3 = tk.Frame(root, width=150, height=60); f3.pack()\n\ntk.Label(f1, text=\"Pack\").pack(side=tk.LEFT)\ntk.Label(f2, text=\"Grid\").grid(row=0, column=0)\ntk.Label(f3, text=\"Place\").place(x=50, y=20)\nroot.mainloop()\n```\n\n(Use only one manager inside a given container; here each manager has its own Frame.)",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+    },
+    {
+      "question_number": "17",
+      "question_text": "Compare and contrast between DFA and NFA",
+      "marks": 6,
+      "answer": "| Basis | DFA | NFA |\n|---|---|---|\n| Full form | Deterministic Finite Automaton | Non-deterministic Finite Automaton |\n| Transition | Exactly one next state for each (state, input symbol) | Zero, one or many next states for a (state, input) pair |\n| Transition function | $\\delta: Q \\times \\Sigma \\to Q$ | $\\delta: Q \\times (\\Sigma \\cup \\{\\epsilon\\}) \\to 2^{Q}$ |\n| Epsilon moves | Not allowed | Allowed |\n| Dead state | Usually required | Not required |\n| Design / size | Harder to design, may need more states | Easier to design, fewer states |\n| Execution | Simple, one path | Must explore several paths (backtracking) |\n| Acceptance | Single path ends in a final state | Some path ends in a final state |\n| Power | Recognises exactly the regular languages | Same power as DFA; every NFA can be converted to an equivalent DFA by subset construction |",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+    },
+    {
+      "question_number": "18. A",
+      "question_text": "Write a program to represent knowledge using Kanren module",
+      "marks": 10,
+      "answer": "The `kanren` module provides logic programming in Python. Knowledge is stored as facts in a `Relation`, and queries are solved with `run()` using logic variables created with `var()`/`vars()`.\n\n```python\nfrom kanren import Relation, facts, run, var, conde\n\n# Knowledge base: parent(parent, child)\nparent = Relation()\nfacts(parent,\n      (\"Asha\", \"Ravi\"),\n      (\"Asha\", \"Meena\"),\n      (\"Ravi\", \"Kiran\"),\n      (\"Meena\", \"Divya\"))\n\n# Rule: x is grandparent of z if x is parent of y and y is parent of z\ndef grandparent(x, z):\n    y = var()\n    return conde((parent(x, y), parent(y, z)))\n\nx = var()\nprint(run(0, x, parent(\"Asha\", x)))        # children of Asha\nprint(run(0, x, grandparent(\"Asha\", x)))   # grandchildren of Asha\nprint(run(0, x, parent(x, \"Kiran\")))       # parent of Kiran\n```\n\nOutput (verified with the kanren library; the order of results in a tuple may vary):\n\n```text\n('Meena', 'Ravi')\n('Divya', 'Kiran')\n('Ravi',)\n```\n\n`run(0, x, goal)` returns all values of `x` satisfying the goal (`run(n, ...)` returns at most n). `conde` expresses logical OR of conjunctions and `vars(n)` creates n variables at once.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Pythonic Programming Paradigm"
+    },
+    {
+      "question_number": "18. B",
+      "question_text": "Write a program to check whether string 011 is accepted by a DFA",
+      "marks": 10,
+      "answer": "The question does not give the DFA, so take the DFA over $\\Sigma = \\{0,1\\}$ that accepts all strings **ending in 011**.\n\nStates: q0 (start), q1 (seen \"0\"), q2 (seen \"01\"), q3 (seen \"011\", final).\n\n| State | on 0 | on 1 |\n|---|---|---|\n| q0 (start) | q1 | q0 |\n| q1 | q1 | q2 |\n| q2 | q1 | q3 |\n| q3 (final) | q1 | q0 |\n\nTrace for 011: q0 --0--> q1 --1--> q2 --1--> q3 (final state), so **011 is accepted**.\n\n```python\ntransitions = {\n    \"q0\": {\"0\": \"q1\", \"1\": \"q0\"},\n    \"q1\": {\"0\": \"q1\", \"1\": \"q2\"},\n    \"q2\": {\"0\": \"q1\", \"1\": \"q3\"},\n    \"q3\": {\"0\": \"q1\", \"1\": \"q0\"},\n}\nstart, finals = \"q0\", {\"q3\"}\n\ndef accepts(string):\n    state = start\n    for ch in string:\n        state = transitions[state][ch]\n    return state in finals\n\ns = \"011\"\nprint(s, \"accepted\" if accepts(s) else \"rejected\")   # 011 accepted\n```\n\nUsing the `automata-lib` library:\n\n```python\nfrom automata.fa.dfa import DFA\n\ndfa = DFA(\n    states={\"q0\", \"q1\", \"q2\", \"q3\"},\n    input_symbols={\"0\", \"1\"},\n    transitions=transitions,\n    initial_state=\"q0\",\n    final_states={\"q3\"},\n)\nprint(dfa.accepts_input(\"011\"))   # True\n```",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+    },
+    {
+      "question_number": "19. A",
+      "question_text": "Write a program to send and receive message over any network using TCP.",
+      "marks": 10,
+      "answer": "TCP is connection oriented: the server creates a socket, binds, listens and accepts; the client connects; then both use `send()`/`recv()`.\n\n**Server (server.py)**\n\n```python\nimport socket\n\nserver = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\nserver.bind((\"localhost\", 5000))\nserver.listen(1)\nprint(\"Server waiting for connection...\")\n\nconn, addr = server.accept()\nprint(\"Connected by\", addr)\n\ndata = conn.recv(1024).decode()\nprint(\"Client says:\", data)\nconn.send((\"Server received: \" + data).encode())\n\nconn.close()\nserver.close()\n```\n\n**Client (client.py)**\n\n```python\nimport socket\n\nclient = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\nclient.connect((\"localhost\", 5000))\n\nclient.send(\"Hello Server\".encode())\nreply = client.recv(1024).decode()\nprint(\"Reply from server:\", reply)\n\nclient.close()\n```\n\nRun the server first, then the client. To use it across a real network, bind the server to its IP address (or `\"0.0.0.0\"`) and let the client connect to that IP. Output: server prints `Client says: Hello Server`; client prints `Reply from server: Server received: Hello Server`.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Pythonic Programming Paradigm"
+    },
+    {
+      "question_number": "19. B",
+      "question_text": "Briefly describe the implementation of keypress and mouse event using turtle module",
+      "marks": 10,
+      "answer": "The `turtle` module supports event-driven programming: a handler function is **bound** to an event with `onkey()`/`onkeypress()`, `onclick()` etc., and `listen()` makes the screen receive keyboard focus; `mainloop()`/`done()` keeps the event loop running.\n\nBinders:\n- `screen.onkey(fun, key)` / `onkeypress(fun, key)` - call `fun` when the key is pressed (`onkeyrelease` on release).\n- `screen.onclick(fun)` or `turtle.onclick(fun)` - mouse click; `fun` receives the (x, y) coordinates.\n- `turtle.ondrag(fun)`, `onrelease(fun)` - mouse drag / button release.\n- `screen.ontimer(fun, ms)` - timer event.\n\n```python\nimport turtle\n\nscreen = turtle.Screen()\nscreen.title(\"Keypress and Mouse events\")\nt = turtle.Turtle()\nt.shape(\"turtle\")\n\n# ----- keypress handlers -----\ndef go_up():    t.setheading(90);  t.forward(20)\ndef go_down():  t.setheading(270); t.forward(20)\ndef go_left():  t.setheading(180); t.forward(20)\ndef go_right(): t.setheading(0);   t.forward(20)\n\nscreen.onkey(go_up, \"Up\")\nscreen.onkey(go_down, \"Down\")\nscreen.onkey(go_left, \"Left\")\nscreen.onkey(go_right, \"Right\")\n\n# ----- mouse handler -----\ndef draw_dot(x, y):\n    t.penup()\n    t.goto(x, y)\n    t.pendown()\n    t.dot(15, \"red\")\n\nscreen.onclick(draw_dot)\n\nscreen.listen()      # start listening for key events\nturtle.mainloop()    # event loop\n```\n\nPressing the arrow keys moves the turtle in that direction (keypress event); clicking anywhere on the window moves the turtle there and draws a red dot (mouse event).",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+    }
+  ]
+}

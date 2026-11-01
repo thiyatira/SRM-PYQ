@@ -1,0 +1,237 @@
+{
+  "formal_filename": "2025-11-05_CT2_SetA_QP.json",
+  "paper_title": "SRM Institute of Science and Technology, Ramapuram Campus - Faculty of Engineering and Technology - Department of Computer Science Engineering - 21CSC203P Advanced Programming Practice (II Year / III Sem, B.Tech CSE, IT & Specializations, Set A, 05.11.2025, 90 mins, Max Marks 50)",
+  "source": "2025-11-05 CT2 Set A",
+  "questions": [
+    {
+      "question_number": "1",
+      "question_text": "Which of the following allows multiple parts of a program to run concurrently?",
+      "options": [
+        "Polymorphism",
+        "Multithreading",
+        "Encapsulation",
+        "Serialization"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "Multithreading lets several threads of control execute concurrently within one program.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Advanced Java Programming Paradigms"
+    },
+    {
+      "question_number": "2",
+      "question_text": "In Java, which method is used to start a new thread?",
+      "options": [
+        "run()",
+        "start()",
+        "execute()",
+        "init()"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "start() creates a new call stack and then invokes run() on it; calling run() directly would execute in the caller's thread.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Advanced Java Programming Paradigms"
+    },
+    {
+      "question_number": "3",
+      "question_text": "Which class is used to establish a connection to the database?",
+      "options": [
+        "Connection",
+        "DriverManager",
+        "Statement",
+        "PreparedStatement"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "DriverManager.getConnection(url, user, password) returns a Connection to the database.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Advanced Java Programming Paradigms"
+    },
+    {
+      "question_number": "4",
+      "question_text": "Functional programming mainly focuses on:",
+      "options": [
+        "Data encapsulation",
+        "Function calls and state changes",
+        "Function composition and immutability",
+        "Inheritance and polymorphism"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "Functional programming builds programs by composing (pure) functions and avoiding mutable state.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Pythonic Programming Paradigm"
+    },
+    {
+      "question_number": "5",
+      "question_text": "The logic programming paradigm is primarily based on:",
+      "options": [
+        "Functions and recursion",
+        "Objects and classes",
+        "Facts, rules, and queries",
+        "Flowcharts and loops"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "Logic programs (e.g. Prolog) consist of facts and rules, and computation proceeds by answering queries.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Pythonic Programming Paradigm"
+    },
+    {
+      "question_number": "6",
+      "question_text": "Which of the following languages uses the logic programming paradigm?",
+      "options": [
+        "Java",
+        "C++",
+        "Prolog",
+        "Python"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "Prolog is the classic logic programming language.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Pythonic Programming Paradigm"
+    },
+    {
+      "question_number": "7",
+      "question_text": "Which type of socket is connection-oriented?",
+      "options": [
+        "Datagram socket",
+        "Stream socket",
+        "Raw socket",
+        "File socket"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "Stream sockets (SOCK_STREAM, TCP) establish a connection and give reliable, ordered delivery; datagram sockets (UDP) are connectionless.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Pythonic Programming Paradigm"
+    },
+    {
+      "question_number": "8",
+      "question_text": "In a client-server model, the server:",
+      "options": [
+        "Requests service from client",
+        "Responds to client requests",
+        "Acts as intermediary",
+        "Closes all sockets"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "The client initiates requests and the server listens for and responds to them.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Pythonic Programming Paradigm"
+    },
+    {
+      "question_number": "9",
+      "question_text": "Which of the following languages is most commonly associated with symbolic programming?",
+      "options": [
+        "Java",
+        "Lisp",
+        "C++",
+        "Fortran"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "Lisp manipulates symbolic expressions (S-expressions) and is the classic symbolic programming language.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+    },
+    {
+      "question_number": "10",
+      "question_text": "Which of the following best represents an event?",
+      "options": [
+        "A function call",
+        "A user clicking a button or moving a mouse",
+        "A syntax error",
+        "A loop iteration"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "An event is an occurrence such as a mouse click or key press that triggers a handler in event-driven programming.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+    },
+    {
+      "question_number": "11(i)",
+      "question_text": "Explain the logical programming paradigm with example.",
+      "marks": 4,
+      "answer": "Logic programming is a declarative paradigm in which a program is a set of facts and rules (logical statements) and computation is performed by answering queries using logical inference (unification and backtracking, resolution). The programmer states what is true/what is wanted, not how to compute it. Prolog is the typical language.\n\nExample (Prolog):\n```prolog\nparent(tom, bob).\nparent(bob, ann).\ngrandparent(X, Z) :- parent(X, Y), parent(Y, Z).\n\n?- grandparent(tom, W).\nW = ann.\n```\nHere `parent/2` facts and the `grandparent/2` rule form the knowledge base; the query asks the engine to find W, which it does by matching and backtracking.\n\nCharacteristics: declarative style, facts + rules + queries, pattern matching/unification, backtracking search, no explicit control flow or assignment.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Pythonic Programming Paradigm"
+    },
+    {
+      "question_number": "11(ii)",
+      "question_text": "Compare multitasking and multi threading concepts.",
+      "marks": 4,
+      "answer": "- Definition: multitasking is running several tasks/programs (processes) at the same time; multithreading is running several threads inside a single process at the same time.\n- Unit of execution: multitasking is process-based (heavyweight); multithreading is thread-based (lightweight).\n- Memory: each process has its own separate address space, so inter-process communication (IPC) is needed; threads of a process share the same memory and resources, so communication is easy.\n- Overhead: context switching between processes is costly; switching between threads is cheap.\n- Creation cost: creating a process is expensive; creating a thread is cheap.\n- Isolation: a crash in one process does not affect others; an unhandled problem in one thread can bring down the whole process.\n- Example: running a browser, music player and editor together (multitasking) versus a browser downloading, rendering and handling the UI with different threads (multithreading).",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Advanced Java Programming Paradigms"
+    },
+    {
+      "question_number": "12",
+      "question_text": "Illustrate the functional paradigms in Python with suitable examples. How do pure functions and higher-order functions contribute to code modularity and reusability?",
+      "marks": 8,
+      "answer": "Functional programming treats computation as the evaluation of functions, avoids shared mutable state and side effects, and builds programs by composing small functions. Python supports it through first-class functions, lambda, map/filter/reduce, comprehensions, closures and recursion.\n\n1. Pure function: output depends only on its arguments and it has no side effects.\n```python\ndef square(x):\n    return x * x\nprint(square(5))   # 25 every time\n```\n2. Lambda (anonymous function):\n```python\nadd = lambda a, b: a + b\nprint(add(2, 3))   # 5\n```\n3. Higher-order functions (take or return functions): map, filter, reduce.\n```python\nfrom functools import reduce\nnums = [1, 2, 3, 4, 5]\nprint(list(map(lambda x: x * x, nums)))          # [1, 4, 9, 16, 25]\nprint(list(filter(lambda x: x % 2 == 0, nums)))  # [2, 4]\nprint(reduce(lambda a, b: a + b, nums))          # 15\n```\n4. Closure / function returning a function:\n```python\ndef multiplier(n):\n    return lambda x: x * n\ndouble = multiplier(2)\nprint(double(7))   # 14\n```\n5. Immutability / recursion:\n```python\ndef fact(n):\n    return 1 if n <= 1 else n * fact(n - 1)\nprint(fact(5))     # 120\n```\n\nContribution to modularity and reusability:\n- Pure functions have no hidden dependencies, so each can be written, tested, reasoned about and reused independently; the same input always gives the same output, which also makes them safe for parallel execution and cacheable (memoization).\n- Higher-order functions separate the 'what to do' (the passed function) from the 'how to iterate/combine' (map, filter, reduce), so one generic routine can be reused with different behaviours instead of rewriting loops.\n- Small pure functions can be composed into pipelines (e.g. `list(map(f, filter(g, data)))`), giving modular, readable and easily maintainable code.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Pythonic Programming Paradigm"
+    },
+    {
+      "question_number": "13(i)",
+      "question_text": "Compare logical and functional programming paradigm.",
+      "marks": 4,
+      "answer": "- Basis: logic programming is based on formal logic (facts, rules, predicates); functional programming is based on lambda calculus and mathematical functions.\n- Program structure: logic programs are a set of facts and rules plus queries; functional programs are a set of function definitions and their composition.\n- Computation: logic uses inference, unification and backtracking to search for answers; functional uses function application and evaluation of expressions (recursion, map/filter/reduce).\n- Direction: logic relations are bidirectional (the same predicate can be used with different arguments unbound); functions map inputs to an output in one direction.\n- State: both avoid explicit assignment, but functional emphasises immutability and pure functions; logic emphasises relations and declarative knowledge.\n- Control: logic has implicit search control (backtracking); functional has control through recursion and higher-order functions.\n- Languages and use: Prolog (AI, expert systems, NLP) versus Haskell, Lisp, Python functional features (data transformation, concurrency).",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Pythonic Programming Paradigm"
+    },
+    {
+      "question_number": "13(ii)",
+      "question_text": "Write a Python function program using a built-in higher order function to double all the numbers in a list using map().",
+      "marks": 4,
+      "answer": "```python\ndef double_all(numbers):\n    return list(map(lambda x: x * 2, numbers))\n\nnums = [1, 2, 3, 4, 5]\nprint(double_all(nums))   # [2, 4, 6, 8, 10]\n```\n`map()` is a built-in higher-order function: it takes a function (here a lambda that doubles a value) and an iterable, applies the function to every element and returns a map object, which `list()` converts to a list. The original list is not modified.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Pythonic Programming Paradigm"
+    },
+    {
+      "question_number": "14",
+      "question_text": "Explain the concept of Finite Automata (DFA and NFA) and illustrate the process of implementing automata using an automation library in Python.",
+      "marks": 8,
+      "answer": "A finite automaton is an abstract machine with a finite set of states that reads an input string symbol by symbol and decides whether to accept or reject it. It is formally a 5-tuple $(Q, \\Sigma, \\delta, q_0, F)$: finite set of states $Q$, input alphabet $\\Sigma$, transition function $\\delta$, start state $q_0 \\in Q$ and set of final (accepting) states $F \\subseteq Q$.\n\n- DFA (Deterministic Finite Automaton): $\\delta : Q \\times \\Sigma \\to Q$; for every state and input symbol there is exactly one next state; no $\\varepsilon$-moves.\n- NFA (Nondeterministic Finite Automaton): $\\delta : Q \\times (\\Sigma \\cup \\{\\varepsilon\\}) \\to 2^{Q}$; a state may have several (or no) transitions on the same symbol and may use $\\varepsilon$-transitions; a string is accepted if at least one path ends in a final state.\n- DFA and NFA recognise exactly the same class of languages (regular languages); every NFA can be converted to an equivalent DFA by subset construction, though the DFA may need more states.\n\nImplementation using the `automata-lib` library (`pip install automata-lib`). Example: strings over {0,1} ending with '01'.\n\n```python\nfrom automata.fa.dfa import DFA\nfrom automata.fa.nfa import NFA\n\n# DFA\ndfa = DFA(\n    states={'q0', 'q1', 'q2'},\n    input_symbols={'0', '1'},\n    transitions={\n        'q0': {'0': 'q1', '1': 'q0'},\n        'q1': {'0': 'q1', '1': 'q2'},\n        'q2': {'0': 'q1', '1': 'q0'},\n    },\n    initial_state='q0',\n    final_states={'q2'},\n)\nprint(dfa.accepts_input('1001'))   # True\nprint(dfa.accepts_input('1010'))   # False\n\n# NFA (same language)\nnfa = NFA(\n    states={'q0', 'q1', 'q2'},\n    input_symbols={'0', '1'},\n    transitions={\n        'q0': {'0': {'q0', 'q1'}, '1': {'q0'}},\n        'q1': {'1': {'q2'}},\n        'q2': {},\n    },\n    initial_state='q0',\n    final_states={'q2'},\n)\nprint(nfa.accepts_input('0101'))   # True\nprint(nfa.accepts_input('110'))    # False\n```\n\nSteps: (1) identify the states, alphabet, transitions, start and final states; (2) construct the DFA/NFA object with them; (3) test strings with `accepts_input()`; (4) optionally convert with `DFA.from_nfa(nfa)` or inspect/minimise the automaton.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+    },
+    {
+      "question_number": "15(i)",
+      "question_text": "Create the life cycle of thread with a neat diagram.",
+      "marks": 10,
+      "answer": "A Java thread passes through the following states (java.lang.Thread.State):\n\n1. New: the thread object has been created (`new Thread(...)`) but `start()` has not been called.\n2. Runnable: after `start()`, the thread is ready and waiting for CPU time from the scheduler (or is running).\n3. Running: the scheduler has selected the thread and its `run()` method is executing.\n4. Blocked: the thread is waiting to acquire a monitor lock (e.g. entering a synchronized block held by another thread).\n5. Waiting: the thread waits indefinitely for another thread's action (`wait()`, `join()`).\n6. Timed Waiting: the thread waits for a specified time (`sleep(ms)`, `wait(ms)`, `join(ms)`).\n7. Terminated (Dead): `run()` has completed normally or an uncaught exception ended it; the thread cannot be restarted.\n\nDiagram:\n```\n                     start()                 scheduler picks\n   +-------+  ------------------>  +----------+  ------------>  +---------+\n   |  NEW  |                       | RUNNABLE |                  | RUNNING |\n   +-------+                       +----------+  <------------   +---------+\n                                     ^  ^  ^      yield() /         |  |  |\n                                     |  |  |      time slice over   |  |  |\n         lock acquired               |  |  +------------------------+  |  |\n   +-------------------------+ ------+  |   waiting for lock           |  |\n   |        BLOCKED          | <---------+------------------------------+  |\n   +-------------------------+                                             |\n         notify()/notifyAll()/join() ends        wait()/join()             |\n   +-------------------------+ <-------------------------------------------+\n   |  WAITING / TIMED_WAITING|   sleep(ms)/wait(ms)/join(ms)\n   +-------------------------+ --(time over / notify)--> RUNNABLE\n\n   RUNNING --(run() completes or uncaught exception)--> +------------+\n                                                         | TERMINATED |\n                                                         +------------+\n```\n\nSimplified flow: New -> (start) -> Runnable <-> Running -> Terminated, with Running able to move to Blocked, Waiting or Timed Waiting and return to Runnable when the lock becomes available, the notification arrives or the time elapses.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Advanced Java Programming Paradigms"
+    },
+    {
+      "question_number": "15(ii)",
+      "question_text": "Construct a python program to simulate a simple DFA that accepts all binary strings ending with \"01\".",
+      "marks": 6,
+      "answer": "DFA design: $Q=\\{q_0,q_1,q_2\\}$, $\\Sigma=\\{0,1\\}$, start $q_0$, final $F=\\{q_2\\}$. State $q_0$ = no useful suffix yet, $q_1$ = last symbol read was 0, $q_2$ = last two symbols were 01.\n\n| State | on 0 | on 1 |\n|---|---|---|\n| q0 | q1 | q0 |\n| q1 | q1 | q2 |\n| q2 | q1 | q0 |\n\n```python\ntransitions = {\n    'q0': {'0': 'q1', '1': 'q0'},\n    'q1': {'0': 'q1', '1': 'q2'},\n    'q2': {'0': 'q1', '1': 'q0'},\n}\nstart_state = 'q0'\nfinal_states = {'q2'}\n\ndef accepts(string):\n    state = start_state\n    for ch in string:\n        if ch not in ('0', '1'):\n            return False            # invalid symbol\n        state = transitions[state][ch]\n    return state in final_states\n\nfor s in ['01', '1001', '1010', '101', '11', '']:\n    print(repr(s), '->', 'Accepted' if accepts(s) else 'Rejected')\n```\n\nOutput:\n```\n'01' -> Accepted\n'1001' -> Accepted\n'1010' -> Rejected\n'101' -> Accepted\n'11' -> Rejected\n'' -> Rejected\n```",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+    },
+    {
+      "question_number": "16(i)",
+      "question_text": "Write a UDP-based Python program to demonstrate client-server communication.",
+      "marks": 10,
+      "answer": "UDP is connectionless: the server binds a datagram socket (`SOCK_DGRAM`) and uses `recvfrom()`/`sendto()`; the client needs no `connect()`/`accept()`/`listen()` and simply sends datagrams to the server's address.\n\nServer (udp_server.py):\n```python\nimport socket\n\nserver = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)   # UDP socket\nserver.bind((\"127.0.0.1\", 12345))\nprint(\"UDP server waiting for messages...\")\n\nwhile True:\n    data, addr = server.recvfrom(1024)       # receive datagram + client address\n    message = data.decode()\n    print(\"Received from\", addr, \":\", message)\n    if message.lower() == \"exit\":\n        break\n    server.sendto((\"Server echo: \" + message).encode(), addr)\n\nserver.close()\n```\n\nClient (udp_client.py):\n```python\nimport socket\n\nclient = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)\nserver_addr = (\"127.0.0.1\", 12345)\n\nfor msg in [\"Hello UDP server\", \"exit\"]:\n    client.sendto(msg.encode(), server_addr)\n    if msg.lower() == \"exit\":\n        break\n    data, _ = client.recvfrom(1024)\n    print(\"Client received:\", data.decode())\n\nclient.close()\n```\n\nSample output:\n```\nServer: UDP server waiting for messages...\nServer: Received from ('127.0.0.1', 54321) : Hello UDP server\nClient: Client received: Server echo: Hello UDP server\nServer: Received from ('127.0.0.1', 54321) : exit\n```\nRun the server first, then the client. Because UDP gives no delivery or ordering guarantee, packets may be lost, but it has lower overhead than TCP.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Pythonic Programming Paradigm"
+    },
+    {
+      "question_number": "16(ii)",
+      "question_text": "Write a Python Tkinter program to create a simple calculator that adds two numbers entered by the user and displays the result when a button is clicked.",
+      "marks": 6,
+      "answer": "```python\nimport tkinter as tk\nfrom tkinter import messagebox\n\ndef add_numbers():\n    try:\n        a = float(entry1.get())\n        b = float(entry2.get())\n        result_label.config(text=f\"Result: {a + b}\")\n    except ValueError:\n        messagebox.showerror(\"Error\", \"Please enter valid numbers\")\n\nroot = tk.Tk()\nroot.title(\"Simple Calculator\")\nroot.geometry(\"300x220\")\n\ntk.Label(root, text=\"Enter first number:\").pack(pady=3)\nentry1 = tk.Entry(root)\nentry1.pack()\n\ntk.Label(root, text=\"Enter second number:\").pack(pady=3)\nentry2 = tk.Entry(root)\nentry2.pack()\n\ntk.Button(root, text=\"Add\", command=add_numbers).pack(pady=10)\nresult_label = tk.Label(root, text=\"Result: \")\nresult_label.pack()\n\nroot.mainloop()\n```\nThe button's `command` callback is an event handler: when the user clicks 'Add', it reads both Entry widgets, converts them to numbers, adds them and shows the sum in the label (invalid input is reported with an error dialog).",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
+    }
+  ]
+}

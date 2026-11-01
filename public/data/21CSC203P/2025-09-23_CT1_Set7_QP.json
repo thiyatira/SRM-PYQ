@@ -1,0 +1,95 @@
+{
+  "formal_filename": "2025-09-23_CT1_Set7_QP.json",
+  "paper_title": "SRM Institute of Science and Technology - School of Computing - ASSESSMENT I (Academic Year 2025-2026 ODD, Date 23.9.25, Set 7) - 21CSC203P Advanced Programming Practice",
+  "source": "2025-09-23 CT1 Set 7",
+  "questions": [
+    {
+      "question_number": "1",
+      "question_text": "What happens if two threads call synchronized methods on the same object?",
+      "marks": 2,
+      "answer": "Only one of the two threads can execute at a time. Every object has one intrinsic lock (monitor). A thread must acquire that lock before entering any `synchronized` instance method of the object, so the second thread is blocked (moves to the BLOCKED state) until the first thread leaves its synchronized method and releases the lock. This holds even if the two threads call different synchronized methods of the same object, because they compete for the same monitor. If the threads use different objects, they do not block each other (static synchronized methods use the class-level lock instead).",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Advanced Java Programming Paradigms"
+    },
+    {
+      "question_number": "2",
+      "question_text": "Will finally execute if System.exit(0) is called inside try?\n\n```java\npublic class Test2 {\n    public static void main(String[] args) {\n        try {\n            System.out.println(\"Inside try\");\n            System.exit(0);\n        } catch (Exception e) {\n            System.out.println(\"Inside catch\");\n        } finally {\n            System.out.println(\"Inside finally\");\n        }\n    }\n}\n```",
+      "marks": 2,
+      "answer": "No, the finally block will not execute.\n\nOutput:\n```\nInside try\n```\n\nExplanation: `System.exit(0)` terminates the running JVM immediately, so control never reaches the catch or finally blocks. Normally finally always runs after try/catch, but not when the JVM is shut down (System.exit, Runtime.halt, a fatal crash or power failure).",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Java Programming Paradigms"
+    },
+    {
+      "question_number": "3",
+      "question_text": "Why is multiple inheritance (through classes) not supported in Java?",
+      "marks": 2,
+      "answer": "Java does not allow a class to extend more than one class because of the diamond problem and the resulting ambiguity. If class C extended both A and B, and both defined (or inherited from a common ancestor) the same method or field, the compiler/JVM could not decide which version C should inherit, and constructor chaining would also become complicated. To keep the language simple and unambiguous, Java allows single inheritance of classes and obtains multiple inheritance of type through interfaces (a class can implement many interfaces, and any default-method conflict must be resolved explicitly by the implementing class).",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Java Programming Paradigms"
+    },
+    {
+      "question_number": "4",
+      "question_text": "Explain the difference between commit() and rollback() in JDBC transactions.",
+      "marks": 2,
+      "answer": "- `commit()` makes all the changes performed since the last commit/rollback in the current transaction permanent in the database (and releases the locks held). It is used once all statements of the transaction have executed successfully.\n- `rollback()` undoes all the changes made in the current transaction (since the last commit or the given savepoint) and restores the database to its previous consistent state. It is typically called in the catch block when an error occurs.\n\nBoth are called on the `Connection` object and are meaningful only when auto-commit is disabled with `con.setAutoCommit(false)`.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Advanced Java Programming Paradigms"
+    },
+    {
+      "question_number": "5",
+      "question_text": "Consider the code below: What will be the output and why?\n\n```java\nclass A {\n    void show() { System.out.println(\"A\"); }\n}\nclass B extends A {\n    void show() { System.out.println(\"B\"); }\n}\npublic class Test {\n    public static void main(String[] args) {\n        A obj = new B();\n        obj.show();\n    }\n}\n```",
+      "marks": 2,
+      "answer": "Output:\n```\nB\n```\n\nReason: `show()` is overridden in class B and instance methods are dispatched dynamically (runtime polymorphism). Although the reference type is `A`, the actual object created is of type `B`, so the JVM invokes `B.show()` at run time.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Java Programming Paradigms"
+    },
+    {
+      "question_number": "6a",
+      "question_text": "Predict the output and give the reason.\n\n```java\nclass Parent {\n    static void display() {\n        System.out.println(\"Parent static display\");\n    }\n}\nclass Child extends Parent {\n    static void display() { // not overriding, just hiding\n        System.out.println(\"Child static display\");\n    }\n}\npublic class Test {\n    public static void main(String[] args) {\n        Parent p = new Child();\n        p.display();\n        Child c = new Child();\n        c.display();\n    }\n}\n```\n\nWhat is the output? Give Reason.",
+      "marks": 5,
+      "answer": "Output:\n```\nParent static display\nChild static display\n```\n\nReason: static methods are not overridden, they are only hidden. Calls to static methods are resolved at compile time using the declared (reference) type, not the runtime object type, so there is no runtime polymorphism for them.\n- `p.display()`: the reference type of `p` is `Parent`, so `Parent.display()` is called.\n- `c.display()`: the reference type of `c` is `Child`, so `Child.display()` (which hides the parent's method) is called.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Java Programming Paradigms"
+    },
+    {
+      "question_number": "6b",
+      "question_text": "What is the output? What happens if return is used inside try and finally?\n\n```java\npublic class Test1 {\n    public static int demo() {\n        try {\n            return 10;\n        } catch (Exception e) {\n            return 20;\n        } finally {\n            return 30;\n        }\n    }\n    public static void main(String[] args) {\n        System.out.println(demo());\n    }\n}\n```",
+      "marks": 5,
+      "answer": "Output:\n```\n30\n```\n\nExplanation: the `finally` block always executes before the method actually returns. When `return 10` is executed in the try block, the value 10 is held pending, but then the finally block runs and its own `return 30` overrides the earlier return, so the method returns 30. No exception occurs, so the catch block (return 20) is never executed.\n\nA `return` inside `finally` discards any value returned from try/catch (and even swallows any exception thrown there), which is considered bad practice; compilers warn that 'finally block does not complete normally'.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Java Programming Paradigms"
+    },
+    {
+      "question_number": "7a",
+      "question_text": "In the student race program, how can you use Thread.sleep() to simulate the running speed of students? Explain it with a two-student example.",
+      "marks": 5,
+      "answer": "`Thread.sleep(ms)` pauses the current thread for the given number of milliseconds without releasing any locks. In a race simulation each student is a thread; after every step/lap the thread sleeps for a time proportional to the student's speed. A faster runner sleeps for a shorter time per lap and therefore finishes earlier, a slower runner sleeps longer. Since both threads run concurrently, their interleaved output shows who is ahead. `sleep()` throws the checked `InterruptedException`, which must be handled.\n\n```java\nclass Student extends Thread {\n    private final String name;\n    private final int delay;   // ms per lap: smaller delay = faster student\n\n    Student(String name, int delay) {\n        this.name = name;\n        this.delay = delay;\n    }\n\n    public void run() {\n        for (int lap = 1; lap <= 5; lap++) {\n            try {\n                Thread.sleep(delay);        // simulate time taken to run one lap\n            } catch (InterruptedException e) {\n                System.out.println(name + \" interrupted\");\n                return;\n            }\n            System.out.println(name + \" completed lap \" + lap);\n        }\n        System.out.println(\">>> \" + name + \" finished the race\");\n    }\n}\n\npublic class RaceDemo {\n    public static void main(String[] args) {\n        Student s1 = new Student(\"Student-1 (fast)\", 100);\n        Student s2 = new Student(\"Student-2 (slow)\", 250);\n        s1.start();\n        s2.start();\n    }\n}\n```\n\nSample output: Student-1 completes laps roughly every 100 ms and finishes first (about 500 ms), while Student-2 completes laps every 250 ms and finishes later (about 1250 ms). The exact interleaving may vary between runs.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Advanced Java Programming Paradigms"
+    },
+    {
+      "question_number": "7b",
+      "question_text": "Differentiate between Interface and abstract class. List any five significant dissimilarities.",
+      "marks": 5,
+      "answer": "1. Methods: an interface declares abstract methods (plus `default`, `static` and `private` methods since Java 8/9); an abstract class can have both abstract methods and fully implemented (concrete) methods.\n2. Variables: interface variables are implicitly `public static final` constants; an abstract class can have instance variables with any access modifier and non-final fields.\n3. Inheritance: a class can implement multiple interfaces, but can extend only one abstract class (single inheritance).\n4. Constructors: an interface cannot have constructors; an abstract class can have constructors (called through `super()` by subclasses).\n5. Keywords/access: an interface is declared with `interface` and implemented with `implements`, and its methods are implicitly `public`; an abstract class is declared with `abstract class` and extended with `extends`, and its members may be `private`, `protected`, `public` or default.\n6. Purpose: an interface defines a contract / capability (what a class can do) for unrelated classes; an abstract class represents a partially implemented base type (is-a relationship) sharing common state and code among closely related classes.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Java Programming Paradigms"
+    },
+    {
+      "question_number": "8a",
+      "question_text": "Why is PreparedStatement preferred over Statement in JDBC-ODBC bridge, especially for repeated queries?",
+      "marks": 5,
+      "answer": "A `PreparedStatement` is a precompiled SQL statement with `?` placeholders for parameters.\n\n1. Performance: the SQL is parsed, compiled and the execution plan is prepared once and reused for every execution, whereas `Statement` sends a fresh SQL string that must be parsed and compiled every time. This matters for repeated queries (e.g. inserting many rows in a loop).\n2. Parameterisation: values are supplied with setters such as `setInt(1, 5)` and `setString(2, \"Ram\")`, so the same statement can be executed repeatedly with different data without rebuilding the SQL string.\n3. Security: parameters are sent as data and not concatenated into the SQL text, which prevents SQL injection.\n4. Readability/type handling: no manual quoting or string concatenation, and automatic handling of data types, dates and special characters.\n\n```java\nPreparedStatement ps = con.prepareStatement(\"INSERT INTO student VALUES (?, ?)\");\nfor (int i = 1; i <= 3; i++) {\n    ps.setInt(1, i);\n    ps.setString(2, \"Student\" + i);\n    ps.executeUpdate();   // reuses the precompiled statement\n}\n```",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Advanced Java Programming Paradigms"
+    },
+    {
+      "question_number": "8b",
+      "question_text": "What is the output? Justify your answer.\n\n```java\nclass Parent {\n    int value = 10;\n    void show() {\n        System.out.println(\"Parent show\");\n    }\n}\nclass Child extends Parent {\n    int value = 20;\n    @Override\n    void show() {\n        System.out.println(\"Child show\");\n    }\n}\npublic class Test {\n    public static void main(String[] args) {\n        Parent p = new Child();\n        System.out.println(p.value);\n        p.show();\n    }\n}\n```",
+      "marks": 5,
+      "answer": "Output:\n```\n10\nChild show\n```\n\nJustification:\n- Fields are not polymorphic. `Child.value` only hides `Parent.value`, and field access is resolved at compile time using the reference type. Since `p` is declared as `Parent`, `p.value` prints 10 (not 20).\n- Methods are polymorphic. `show()` is overridden in `Child`, and the call is resolved at run time using the actual object type (`Child`), so `Child show` is printed.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Java Programming Paradigms"
+    }
+  ]
+}
