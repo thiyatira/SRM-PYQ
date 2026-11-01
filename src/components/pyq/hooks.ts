@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useCatalogue } from "@/lib/pyq/CatalogueContext";
 import { loadSubject, type SubjectData } from "@/lib/pyq/loader";
+import { migrateBookmarkKey } from "@/lib/pyq/legacyNames";
 import { BOOKMARKS_KEY, readJson, writeJson } from "@/lib/pyq/storage";
 
 /** Returns `value` after it has stopped changing for `delay` ms. */
@@ -102,7 +103,11 @@ export function useBookmarks() {
 
   useEffect(() => {
     const load = () => {
-      const next = new Set(readJson<string[]>(BOOKMARKS_KEY, []));
+      const stored = readJson<string[]>(BOOKMARKS_KEY, []);
+      const migrated = stored.map(migrateBookmarkKey);
+      const next = new Set(migrated);
+      // Bookmarks made under an old paper name: save them under the new one.
+      if (migrated.some((k, i) => k !== stored[i])) writeJson(BOOKMARKS_KEY, Array.from(next));
       latest.current = next;
       setBookmarks(next);
     };

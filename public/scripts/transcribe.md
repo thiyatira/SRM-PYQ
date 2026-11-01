@@ -32,27 +32,34 @@ python public/scripts/transcribe_papers.py --folder "path/to/pdfs" --output "pat
 
 ## 2. Standardized File Naming Rules
 
-Every paper JSON should follow the standardized filename pattern:
+Every paper lives in `public/data/<courseCode>/` and is named
+
 ```
-[Date/Year]_[ExamType]_[SetInfo]_[DocumentType].json
+<Date>_<ExamType>[_<SetInfo>][_<Extra>...]_<DocType>.json
 ```
 
-1. **`[Date/Year]`** (Required):
-   - `YYYY-MM` for End Term exams (e.g., `2023-12`, `2024-01`, `2023-05`)
-   - `YYYY-MM-DD` for specific Cycle Test dates (e.g., `2024-04-01`, `2023-11-03`)
-   - `YYYY-YY` for general academic year sessions (e.g., `2023-24`, `2024-25`)
-2. **`[ExamType]`** (Required):
-   - `ET`: End Term Examination
-   - `CT1`, `CT2`, `CT3`: Cycle Tests 1, 2, 3
-   - `Quiz`: Assessment / Quiz
-3. **`[SetInfo]`** (Optional):
-   - `SetA`, `SetB`, `SetC`, `Set1`, `SetA_B1`, etc. (Omitted if no set)
-4. **`[DocumentType]`** (Required):
-   - `QP`: Question Paper
-   - `Key`: Official Answer Key
-   - `QP-Key`: Question Paper + Key
-   - `Sample-QP`: Model / Practice paper
-   - `MCQ-Key`: Multiple-choice answer key only
+Tokens are separated by `_`; inside a token use `-` only (never spaces, never `_`). The name (minus `.json`) is
+also what the site shows as the paper's name and what bookmarks / share links are keyed on, so do not rename
+a paper once it is published (if you must, add the old name to `src/lib/pyq/legacyNames.ts`).
+
+1. **`<Date>`** (required, sorts chronologically):
+   - `YYYY-MM-DD` when the exact date is known (cycle tests, quizzes)
+   - `YYYY-MM` for end-term exams (e.g. `2023-12`)
+   - `YYYY-YY` when only the academic year is known (e.g. `2024-25`); `YYYY` when only the year is; `XXXX` if nothing is
+   - unknown parts may be `XX` (e.g. `2023-XX-XX`)
+2. **`<ExamType>`** (required): `ET` end term · `CT1` `CT2` `CT3` cycle tests / CLA tests / internal exams / assessments I-III ·
+   `FT2` formative test · `FJ1` `FJ2` · `OBA` open-book assessment · `Quiz2`, `Quiz2-3` quizzes
+3. **`<SetInfo>`** (optional): `SetA`, `SetB`, `Set1`, `Set5-6`, `SetC-D` (a paper shared by two sets), `SetNA`.
+4. **`<Extra>`** (optional, any number, in this order): batch `B1`/`B2` · `PartA` / `Paper2` · version `V1`/`V2` (two different
+   papers for the same exam) · campus (`DelhiNCR`) · the *old* course code when the paper belongs to an earlier
+   regulation (e.g. `18PYB103J`) · `Sample`.
+5. **`<DocType>`** (required, last): `QP` question paper (also used when answers were added by us) · `QP-Key` question
+   paper + the official key · `Key` key only · `MCQ-Key` MCQ answer key only.
+
+Examples: `2023-12_ET_QP.json` · `2019-05_ET_18PYB103J_QP.json` · `2025-09-26_CT2_SetD_B2_QP-Key.json` ·
+`2024-25_CT3_SetNA_PartA_QP.json` · `2023-08-19_CT1_DelhiNCR_QP.json` · `2023-12_ET_V2_QP.json`
+
+The same string goes in the file's `formal_filename` field.
 
 ---
 
