@@ -96,7 +96,9 @@ function QuestionCardImpl({
             </span>
           )}
           {marksLabel && (
-            <span className="font-normal text-base text-gray-700 dark:text-gray-300"> ({marksLabel})</span>
+            <span className="ml-2 align-middle rounded-full border border-amber-300 dark:border-amber-500/60 bg-amber-50 dark:bg-amber-900/30 px-2 py-0.5 text-xs font-semibold text-amber-800 dark:text-amber-200">
+              {marksLabel}
+            </span>
           )}
         </div>
         <div className="flex items-center gap-0.5 -mt-1 flex-shrink-0">
