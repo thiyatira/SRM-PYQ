@@ -5,41 +5,76 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Which one of the following is not a real time operating system?\na) VxWorks\nb) Windows CE\nc) RT Linux\nd) Palm OS",
+            "question_text": "Which one of the following is not a real time operating system?",
+            "options": [
+                "VxWorks",
+                "Windows CE",
+                "RT Linux",
+                "Palm OS"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "d) Palm OS",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Open-Source Operating Systems / Introduction"
         },
         {
             "question_number": "2",
-            "question_text": "Assume we have an application that is performed 80% in parallel. If we run this application in a system with 4 processing cores, then what will be the speedup?\na) 1.6 times.\nb) 1.8 times\nc) 2.25 times\nd) 2.5 times",
+            "question_text": "Assume we have an application that is performed 80% in parallel. If we run this application in a system with 4 processing cores, then what will be the speedup?",
+            "options": [
+                "1.6 times.",
+                "1.8 times",
+                "2.25 times",
+                "2.5 times"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "d) 2.5 times\n\nspeedup <= 1/[ S + (1-S)/N ]\nspeedup <= 1/[20/100 + (1-20/100)/4] = 2.5",
+            "answer": "speedup <= 1/[ S + (1-S)/N ]\nspeedup <= 1/[20/100 + (1-20/100)/4] = 2.5",
             "answer_source": "provided",
             "chapter": "Unit 1: Computer-System Architecture"
         },
         {
             "question_number": "3",
-            "question_text": "The time taken to switch between user and kernel modes of execution be t2 while the time taken to switch between two processes be t1. Which of the following is TRUE?\na) t2> t1\nb) t2=t1\nc) t2< t1\nd) nothing can be said about the relation between t1 and t2",
+            "question_text": "The time taken to switch between user and kernel modes of execution be t2 while the time taken to switch between two processes be t1. Which of the following is TRUE?",
+            "options": [
+                "t2> t1",
+                "t2=t1",
+                "t2< t1",
+                "nothing can be said about the relation between t1 and t2"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "c) t2< t1",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Operating-System Operations"
         },
         {
             "question_number": "4",
-            "question_text": "A process executes the following code:\n```c\nfor (i = 0; i < n; i++) fork();\n```\nThe total number of processes (including the first Parent Process) is\na) n\nb) $2^n$\nc) $2^n - 1$\nd) $2^{n+1}$",
+            "question_text": "A process executes the following code:\n```c\nfor (i = 0; i < n; i++) fork();\n```\nThe total number of processes (including the first Parent Process) is",
+            "options": [
+                "n",
+                "$2^n$",
+                "$2^n - 1$",
+                "$2^{n+1}$"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b) $2^n$",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 2: Operations on Processes"
         },
         {
             "question_number": "5",
-            "question_text": "Which of the following is called Job Scheduling?\na) Long-term Scheduling.\nb) Short Term Scheduling\nc) CPU Scheduling\nd) Medium Term Scheduling",
+            "question_text": "Which of the following is called Job Scheduling?",
+            "options": [
+                "Long-term Scheduling.",
+                "Short Term Scheduling",
+                "CPU Scheduling",
+                "Medium Term Scheduling"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "a) Long-term Scheduling.",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 2: Process Scheduling"
         },

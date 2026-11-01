@@ -1,119 +1,189 @@
 {
-    "formal_filename": "FJ2_2024-10-01.json",
-    "paper_title": "21CSC202J - Operating Systems",
-    "source": "FJ2_2024-10-01",
-    "questions": [
-        {
-            "question_number": "1",
-            "question_text": "Program is --------- entity stored on disk and process is ---------\na) passive, active\nb) active, passive\nc) passive, passive\nd) active, active",
-            "marks": 1,
-            "answer": "a) passive, active. A program is a passive entity (stored on disk), while a process is an active entity (executing program).",
-            "answer_source": "generated",
-            "chapter": "Unit 2: Process Management"
-        },
-        {
-            "question_number": "2",
-            "question_text": "A process can be\na) both single-threaded and multithreaded\nb) multithreaded\nc) single-threaded\nd) stack",
-            "marks": 1,
-            "answer": "a) both single-threaded and multithreaded. Processes can have one or more threads of execution.",
-            "answer_source": "generated",
-            "chapter": "Unit 2: Process Management"
-        },
-        {
-            "question_number": "3",
-            "question_text": "--------- scheduler reduces the degree of multiprogramming\na) Mid-Term Scheduler\nb) CPU Scheduler\nc) Short Term Scheduler\nd) Long Term Scheduler",
-            "marks": 1,
-            "answer": "a) Mid-Term Scheduler. It performs swapping, removing processes from memory, thus reducing the degree of multiprogramming.",
-            "answer_source": "generated",
-            "chapter": "Unit 3: CPU Scheduling"
-        },
-        {
-            "question_number": "4",
-            "question_text": "Which of the following two operations are provided by the IPC facility?\na) write & delete message\nb) delete & receive message\nc) send & delete message\nd) send & receive message",
-            "marks": 1,
-            "answer": "d) send & receive message. The standard IPC primitives are send(message) and receive(message).",
-            "answer_source": "generated",
-            "chapter": "Unit 2: Process Management"
-        },
-        {
-            "question_number": "5",
-            "question_text": "The --------- keeps track of pending and blocked bit vectors within each process's context.\na) CPU\nb) Memory\nc) Process\nd) Kernel",
-            "marks": 1,
-            "answer": "d) Kernel. The kernel maintains process control blocks (PCB) containing state information, including pending signals/bit vectors.",
-            "answer_source": "generated",
-            "chapter": "Unit 1: Introduction"
-        },
-        {
-            "question_number": "6",
-            "question_text": "What does the term \"throughput\" mean in scheduling terms?\na) The amount of time the CPU is idle\nb) The number of processes completed per unit time\nc) The total time a process spends in the system\nd) The total time taken from process submission to completion",
-            "marks": 1,
-            "answer": "b) The number of processes completed per unit time.",
-            "answer_source": "generated",
-            "chapter": "Unit 3: CPU Scheduling"
-        },
-        {
-            "question_number": "7",
-            "question_text": "Identify the deadlock handling technique in the Banker's Algorithm.\na) Deadlock Prevention\nb) Deadlock Avoidance\nc) Deadlock Detection and Recovery\nd) Deadlock Ignorance",
-            "marks": 1,
-            "answer": "b) Deadlock Avoidance. Banker's algorithm dynamically evaluates resource allocation to ensure the system never enters an unsafe state.",
-            "answer_source": "generated",
-            "chapter": "Unit 3: Deadlocks"
-        },
-        {
-            "question_number": "8",
-            "question_text": "What does interrupt latency refer to in real-time operating systems?\na) The time taken for a process to complete its execution.\nb) The time from the arrival of an interrupt to the start of the interrupt service routine (ISR).\nc) The time from the completion of an interrupt service routine (ISR) to the start of the next interrupt.\nd) The time from the arrival of an interrupt to the completion of the interrupt service routine (ISR).",
-            "marks": 1,
-            "answer": "b) The time from the arrival of an interrupt to the start of the interrupt service routine (ISR).",
-            "answer_source": "generated",
-            "chapter": "Unit 3: CPU Scheduling"
-        },
-        {
-            "question_number": "9",
-            "question_text": "Deadlock detection algorithms differ from deadlock prevention algorithms in that they ---------\na) Prevent deadlocks from occurring in the first place.\nb) Avoid deadlocks by pre-allocating resources.\nc) Detect and recover from deadlocks after they occur.\nd) Use priority scheduling to avoid resource conflicts.",
-            "marks": 1,
-            "answer": "c) Detect and recover from deadlocks after they occur. Prevention/Avoidance works to ensure deadlock is impossible, whereas detection allows it and fixes it later.",
-            "answer_source": "generated",
-            "chapter": "Unit 3: Deadlocks"
-        },
-        {
-            "question_number": "10",
-            "question_text": "Which statement is true about the non-preemptive scheduling algorithm?\na) Resources are allocated to a process for a limited time\nb) Process can be interrupted in between\nc) High Priority process frequently arrives in the ready Queue\nd) Process holds the resources till it completes its burst time or switches to wait state",
-            "marks": 1,
-            "answer": "d) Process holds the resources till it completes its burst time or switches to wait state.",
-            "answer_source": "generated",
-            "chapter": "Unit 3: CPU Scheduling"
-        },
-        {
-            "question_number": "11",
-            "question_text": "Elaborate the actions taken by the kernel to context-switch between processes. Sketch the steps in CPU Switching from Process to Process.",
-            "marks": 5,
-            "answer": "The kernel performs context switching by: 1) Saving the state of the current process (program counter, registers) into its PCB. 2) Loading the state of the next process from its saved PCB. 3) Updating memory management structures. The steps involve: Interrupt -> Save context in PCB_A -> Scheduler selection -> Load context from PCB_B -> Resume execution.",
-            "answer_source": "generated",
-            "chapter": "Unit 2: Process Management"
-        },
-        {
-            "question_number": "12",
-            "question_text": "Write the pseudocode for the Bounded Buffer- producer-consumer problem.",
-            "marks": 5,
-            "answer": "```c\n// Producer\ndo {\n  wait(empty);\n  wait(mutex);\n  // add item to buffer\n  signal(mutex);\n  signal(full);\n} while (true);\n\n// Consumer\ndo {\n  wait(full);\n  wait(mutex);\n  // remove item from buffer\n  signal(mutex);\n  signal(empty);\n} while (true);\n```",
-            "answer_source": "generated",
-            "chapter": "Unit 2: Process Synchronization"
-        },
-        {
-            "question_number": "13",
-            "question_text": "Consider the processing and its arrival time given in the table; predict the scheduling scheme among SJF and FCFS which gives lowest average turnaround time.\n| Process | Arrival Time | Processing Time |\n| A | 0 | 3 |\n| B | 1 | 6 |\n| C | 4 | 4 |\n| D | 6 | 2 |",
-            "marks": 5,
-            "answer": "For FCFS: A finishes at 3, B at 9, C at 13, D at 15. TAT: A=3, B=8, C=9, D=9. Avg TAT = 7.25. For SJF (Non-preemptive): A finishes at 3, D at 5, C at 9, B at 15. TAT: A=3, D=5-6(invalid, wait for arrival), wait... SJF provides lower TAT generally. Calculation shows SJF yields (3+5+5+14)/4 = 6.75, which is lower.",
-            "answer_source": "generated",
-            "chapter": "Unit 3: CPU Scheduling"
-        },
-        {
-            "question_number": "14",
-            "question_text": "In a system with two processes P1 and P2 and two resources R1 and R2, the following situation arises:\n* P1 holds R1 and requests R2.\n* P2 holds R2 and requests R1.\nConstruct the Resource Allocation Graph for the above situation and check whether deadlock has occurred. If a deadlock is detected, suggest a method to resolve the deadlock and justify your answer.",
-            "marks": 5,
-            "answer": "The RAG consists of edges: P1->R2, P2->R1, R1->P1, R2->P2. This creates a cycle (P1->R2->P2->R1->P1). Deadlock has occurred because of circular wait. Resolution: Preemption or killing a process. Killing P1 or P2 will break the cycle and allow the other to complete, releasing the resource.",
-            "answer_source": "generated",
-            "chapter": "Unit 3: Deadlocks"
-        }
-    ]
+  "formal_filename": "FJ2_2024-10-01.json",
+  "paper_title": "21CSC202J - Operating Systems",
+  "source": "FJ2_2024-10-01",
+  "questions": [
+    {
+      "question_number": "1",
+      "question_text": "Program is --------- entity stored on disk and process is ---------",
+      "options": [
+        "passive, active",
+        "active, passive",
+        "passive, passive",
+        "active, active"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "A program is a passive entity (stored on disk), while a process is an active entity (executing program).",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Process Management"
+    },
+    {
+      "question_number": "2",
+      "question_text": "A process can be",
+      "options": [
+        "both single-threaded and multithreaded",
+        "multithreaded",
+        "single-threaded",
+        "stack"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "Processes can have one or more threads of execution.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Process Management"
+    },
+    {
+      "question_number": "3",
+      "question_text": "--------- scheduler reduces the degree of multiprogramming",
+      "options": [
+        "Mid-Term Scheduler",
+        "CPU Scheduler",
+        "Short Term Scheduler",
+        "Long Term Scheduler"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "It performs swapping, removing processes from memory, thus reducing the degree of multiprogramming.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: CPU Scheduling"
+    },
+    {
+      "question_number": "4",
+      "question_text": "Which of the following two operations are provided by the IPC facility?",
+      "options": [
+        "write & delete message",
+        "delete & receive message",
+        "send & delete message",
+        "send & receive message"
+      ],
+      "correct_option": "D",
+      "marks": 1,
+      "answer": "The standard IPC primitives are send(message) and receive(message).",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Process Management"
+    },
+    {
+      "question_number": "5",
+      "question_text": "The --------- keeps track of pending and blocked bit vectors within each process's context.",
+      "options": [
+        "CPU",
+        "Memory",
+        "Process",
+        "Kernel"
+      ],
+      "correct_option": "D",
+      "marks": 1,
+      "answer": "The kernel maintains process control blocks (PCB) containing state information, including pending signals/bit vectors.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Introduction"
+    },
+    {
+      "question_number": "6",
+      "question_text": "What does the term \"throughput\" mean in scheduling terms?",
+      "options": [
+        "The amount of time the CPU is idle",
+        "The number of processes completed per unit time",
+        "The total time a process spends in the system",
+        "The total time taken from process submission to completion"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "Throughput is a scheduling criterion defined as the number of processes that complete execution per unit time.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: CPU Scheduling"
+    },
+    {
+      "question_number": "7",
+      "question_text": "Identify the deadlock handling technique in the Banker's Algorithm.",
+      "options": [
+        "Deadlock Prevention",
+        "Deadlock Avoidance",
+        "Deadlock Detection and Recovery",
+        "Deadlock Ignorance"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "Banker's algorithm dynamically evaluates resource allocation to ensure the system never enters an unsafe state.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Deadlocks"
+    },
+    {
+      "question_number": "8",
+      "question_text": "What does interrupt latency refer to in real-time operating systems?",
+      "options": [
+        "The time taken for a process to complete its execution.",
+        "The time from the arrival of an interrupt to the start of the interrupt service routine (ISR).",
+        "The time from the completion of an interrupt service routine (ISR) to the start of the next interrupt.",
+        "The time from the arrival of an interrupt to the completion of the interrupt service routine (ISR)."
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "Interrupt latency is the time from the arrival of an interrupt at the CPU to the start of the interrupt service routine that handles it.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: CPU Scheduling"
+    },
+    {
+      "question_number": "9",
+      "question_text": "Deadlock detection algorithms differ from deadlock prevention algorithms in that they ---------",
+      "options": [
+        "Prevent deadlocks from occurring in the first place.",
+        "Avoid deadlocks by pre-allocating resources.",
+        "Detect and recover from deadlocks after they occur.",
+        "Use priority scheduling to avoid resource conflicts."
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "Prevention/Avoidance works to ensure deadlock is impossible, whereas detection allows it and fixes it later.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Deadlocks"
+    },
+    {
+      "question_number": "10",
+      "question_text": "Which statement is true about the non-preemptive scheduling algorithm?",
+      "options": [
+        "Resources are allocated to a process for a limited time",
+        "Process can be interrupted in between",
+        "High Priority process frequently arrives in the ready Queue",
+        "Process holds the resources till it completes its burst time or switches to wait state"
+      ],
+      "correct_option": "D",
+      "marks": 1,
+      "answer": "A non-preemptive scheduler cannot take the CPU away from a running process; the process keeps the CPU until it finishes its burst or moves to the waiting state.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: CPU Scheduling"
+    },
+    {
+      "question_number": "11",
+      "question_text": "Elaborate the actions taken by the kernel to context-switch between processes. Sketch the steps in CPU Switching from Process to Process.",
+      "marks": 5,
+      "answer": "The kernel performs context switching by: 1) Saving the state of the current process (program counter, registers) into its PCB. 2) Loading the state of the next process from its saved PCB. 3) Updating memory management structures. The steps involve: Interrupt -> Save context in PCB_A -> Scheduler selection -> Load context from PCB_B -> Resume execution.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Process Management"
+    },
+    {
+      "question_number": "12",
+      "question_text": "Write the pseudocode for the Bounded Buffer- producer-consumer problem.",
+      "marks": 5,
+      "answer": "```c\n// Producer\ndo {\n  wait(empty);\n  wait(mutex);\n  // add item to buffer\n  signal(mutex);\n  signal(full);\n} while (true);\n\n// Consumer\ndo {\n  wait(full);\n  wait(mutex);\n  // remove item from buffer\n  signal(mutex);\n  signal(empty);\n} while (true);\n```",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Process Synchronization"
+    },
+    {
+      "question_number": "13",
+      "question_text": "Consider the processing and its arrival time given in the table; predict the scheduling scheme among SJF and FCFS which gives lowest average turnaround time.\n| Process | Arrival Time | Processing Time |\n| A | 0 | 3 |\n| B | 1 | 6 |\n| C | 4 | 4 |\n| D | 6 | 2 |",
+      "marks": 5,
+      "answer": "For FCFS: A finishes at 3, B at 9, C at 13, D at 15. TAT: A=3, B=8, C=9, D=9. Avg TAT = 7.25. For SJF (Non-preemptive): A finishes at 3, D at 5, C at 9, B at 15. TAT: A=3, D=5-6(invalid, wait for arrival), wait... SJF provides lower TAT generally. Calculation shows SJF yields (3+5+5+14)/4 = 6.75, which is lower.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: CPU Scheduling"
+    },
+    {
+      "question_number": "14",
+      "question_text": "In a system with two processes P1 and P2 and two resources R1 and R2, the following situation arises:\n* P1 holds R1 and requests R2.\n* P2 holds R2 and requests R1.\nConstruct the Resource Allocation Graph for the above situation and check whether deadlock has occurred. If a deadlock is detected, suggest a method to resolve the deadlock and justify your answer.",
+      "marks": 5,
+      "answer": "The RAG consists of edges: P1->R2, P2->R1, R1->P1, R2->P2. This creates a cycle (P1->R2->P2->R1->P1). Deadlock has occurred because of circular wait. Resolution: Preemption or killing a process. Killing P1 or P2 will break the cycle and allow the other to complete, releasing the resource.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Deadlocks"
+    }
+  ]
 }

@@ -1,151 +1,221 @@
 {
-    "formal_filename": "FJ2_2024-10-01_Set-A_AnswerKey.json",
-    "paper_title": "SRM Institute of Science and Technology - College of Engineering and Technology - School of Computing - Test: FJ2, Course Code & Title: 21CSC202J - Operating Systems",
-    "source": "FJ2 Oct 2024 Set A",
-    "questions": [
-        {
-            "question_number": "1",
-            "question_text": "Systems that permit only a single process to execute at any given time are referred to as __________\na) uniprogramming systems\nb) uniprocessing systems\nc) unitasking systems\nd) multiprocessing systems",
-            "marks": 1,
-            "answer": "b uniprocessing systems",
-            "answer_source": "provided",
-            "chapter": "Unit 1: Introduction, Computer-System Organization, Computer-System Architecture"
-        },
-        {
-            "question_number": "2",
-            "question_text": "The processes that are residing in main memory and are ready and waiting to execute are kept on a list called _____________\na) job queue\nb) ready queue\nc) device queue\nd) process queue",
-            "marks": 1,
-            "answer": "b ready queue",
-            "answer_source": "provided",
-            "chapter": "Unit 2: PROCESS MANAGEMENT: Process Concept, Process Scheduling"
-        },
-        {
-            "question_number": "3",
-            "question_text": "---------- Scheduler selects which process should be executed next and allocates CPU\na. DMA controller\nb. CPU Scheduler\nc. Short Term Scheduler\nd. Long Term Scheduler",
-            "marks": 1,
-            "answer": "c Short Term Scheduler",
-            "answer_source": "provided",
-            "chapter": "Unit 3: CPU Scheduling: Basic Concepts, Scheduling Criteria"
-        },
-        {
-            "question_number": "4",
-            "question_text": ".---------------refers to the mechanisms that allow processes to communicate and coordinate their actions when running concurrently in an operating system\na. Inter-process communication\nb. Inter-system communication\nc. Message communication\nd. Synchronization",
-            "marks": 1,
-            "answer": "a Inter-process communication",
-            "answer_source": "provided",
-            "chapter": "Unit 2: PROCESS MANAGEMENT: Interprocess Communication"
-        },
-        {
-            "question_number": "5",
-            "question_text": "When one thread immediately terminates the target thread, it is called ____________\na) Asynchronous cancellation\nb) Systematic cancellation\nc) Sudden Termination\nd) Deferred cancellation",
-            "marks": 1,
-            "answer": "a Asynchronous cancellation",
-            "answer_source": "provided",
-            "chapter": "Unit 2: Threads, Threading Issues"
-        },
-        {
-            "question_number": "6",
-            "question_text": "A process is advanced to the ready state in a preemptive scheduling algorithm when:\na) A new process arrives\nb) A process terminates\nc) A process switches from running to waiting\nd) A process switches from waiting to ready",
-            "marks": 1,
-            "answer": "a) A new process arrives",
-            "answer_source": "provided",
-            "chapter": "Unit 3: CPU Scheduling: Scheduling Algorithms"
-        },
-        {
-            "question_number": "7",
-            "question_text": "What is the main difference between soft real-time systems and hard real-time systems?\nA) Soft real-time systems can miss deadlines occasionally without severe consequences, whereas hard real-time systems must meet all deadlines.\nB) Hard real-time systems provide no guarantee as to when a critical real-time process will be scheduled, while soft real-time systems guarantee deadline adherence.\nC) Soft real-time systems guarantee that processes will be given preference over noncritical processes, whereas hard real-time systems guarantee deadline adherence.\nD) Soft real-time systems and hard real-time systems have no significant differences in scheduling.",
-            "marks": 1,
-            "answer": "C) Soft real-time systems guarantee that processes will be given preference over noncritical processes, whereas hard real-time systems guarantee deadline adherence.",
-            "answer_source": "provided",
-            "chapter": "Unit 3: Real-Time CPU Scheduling"
-        },
-        {
-            "question_number": "8",
-            "question_text": "In a system with multiple processes and resources, a deadlock detection algorithm primarily checks for ___________\nA. The maximum number of resources each process can request.\nB. Cycles in the resource allocation graph.\nC. The order of resource requests.\nD. The time taken by each process.",
-            "marks": 1,
-            "answer": "B) Cycles in the resource allocation graph.",
-            "answer_source": "provided",
-            "chapter": "Unit 3: Deadlocks: Deadlock Detection"
-        },
-        {
-            "question_number": "9",
-            "question_text": "Select the type of CPU Scheduling algorithm that has a large average waiting time?\na) First come First Serve (FCFS)\nb) Priority based Scheduling Algorithm\nc) Round Robin Scheduling Algorithm (RR)\nd) Multilevel Feedback Queue Algorithm",
-            "marks": 1,
-            "answer": "c) Round Robin Scheduling Algorithm (RR)",
-            "answer_source": "provided",
-            "chapter": "Unit 3: CPU Scheduling: Scheduling Algorithms"
-        },
-        {
-            "question_number": "10",
-            "question_text": "Only the process executing the critical section is allowed to access the shared variable and all other processes should be prevented from doing so until the completion of the critical section. This is known as\na) Inter-process Communication\nb) Semaphore\nc) Deadlock\nd) Mutual Exclusion",
-            "marks": 1,
-            "answer": "d) Mutual Exclusion",
-            "answer_source": "provided",
-            "chapter": "Unit 2: Process Synchronization: The Critical-Section Problem"
-        },
-        {
-            "question_number": "11",
-            "question_text": "What are the states undergone by a process when a user opens more than one application in a laptop at the same time? Illustrate the same using suitable diagrams.",
-            "marks": 5,
-            "answer": "As a process executes, it changes state\n\nnew: The process is being created\nrunning: Instructions are being executed\nwaiting: The process is waiting for some event to occur\nready: The process is waiting to be assigned to a processor\nterminated: The process has finished execution",
-            "answer_source": "provided",
-            "chapter": "Unit 2: PROCESS MANAGEMENT: Process Concept"
-        },
-        {
-            "question_number": "12",
-            "question_text": "Explain the role of semaphore in achieving mutual exclusion.",
-            "marks": 5,
-            "answer": "A semaphore is a more general synchronization primitive than a mutex, capable of controlling access to a resource pool. A binary semaphore (also called a mutex semaphore) functions similarly to a mutex, while a counting semaphore can allow multiple threads to access a finite number of instances of a resource.\n\nBasic Steps:\n1. Initialize the Semaphore: Set the initial count of the semaphore.\n2. Wait (P) Operation: Decrement the semaphore count. If the count is zero, the thread is blocked.\n3. Signal (V) Operation: Increment the semaphore count. If the count is positive, a waiting thread is unblocked.\n\nAdvantages:\n- Can handle more complex synchronization scenarios, such as allowing a limited number of threads to access a resource concurrently.\n- Flexible and powerful for various synchronization problems.\n\nDisadvantages:\n- More complex to use correctly compared to mutexes.\n- Prone to issues like deadlocks, priority inversion, and semaphore leaks if not managed properly.",
-            "answer_source": "provided",
-            "chapter": "Unit 2: Process Synchronization: Semaphores"
-        },
-        {
-            "question_number": "13",
-            "question_text": "Enumerate the necessary conditions for a deadlock to occur.",
-            "marks": 5,
-            "answer": "1. Mutual Exclusion: At least one resource must be held in a non-shareable mode. That is, only one process can use the resource at any given time. If another process requests that resource, the requesting process must be delayed until the resource has been released.\n2. Hold and Wait: A process must be holding at least one resource and waiting to acquire additional resources that are currently being held by other processes. This means processes must be able to hold resources while waiting for others.\n3. No Preemption: Resources cannot be forcibly taken from a process holding them. A resource can only be released voluntarily by the process holding it after that process has completed its task.\n4. Circular Wait: There must be a circular chain of processes such that each process holds at least one resource needed by the next process in the chain. This implies that there is a cycle in the resource allocation graph",
-            "answer_source": "provided",
-            "chapter": "Unit 3: Deadlocks: Deadlock Characterization"
-        },
-        {
-            "question_number": "14",
-            "question_text": "Consider four processes with the length of CPU burst time and arrival time. Create Gantt charts illustrating the execution of these processes using SRT.\n\nProcess | Arrival Time | Burst Time\nP1 | 0.0 | 7\nP2 | 2.0 | 4\nP3 | 4.0 | 1\nP4 | 5.0 | 4",
-            "marks": 5,
-            "answer": "Gantt Chart Sequence:\n[P1 (0-2)] [P2 (2-4)] [P3 (4-5)] [P2 (5-7)] [P4 (7-11)] [P1 (11-16)]\n\nAverage waiting time\n= ( [(0 – 0) + (11 - 2)] + [(2 – 2) + (5 – 4)] + (4 - 4) + (7 – 5) ) / 4\n= (9 + 1 + 0 + 2) / 4\n= 3\n\nAverage turn-around time\n= ((16-0) + (7-2) + (5-4) + (11-5)) / 4\n= 7",
-            "answer_source": "provided",
-            "chapter": "Unit 3: CPU Scheduling: Scheduling Algorithms"
-        },
-        {
-            "question_number": "15a",
-            "question_text": "Design and describe the activity of the process manager that handles the removal of the running process from the CPU and the selects another process based on any strategy with respect to processes scheduling. Represent the process scheduling using Queueing diagram.",
-            "marks": 10,
-            "answer": "1. The OS maintains all Process Control Blocks (PCBs) in Process Scheduling Queues. The OS maintains a separate queue for each of the process states and PCBs of all processes in the same execution state are placed in the same queue. When the state of a process is changed, its PCB is unlinked from its current queue and moved to its new state queue.\n2. Job queue − This queue keeps all the processes in the system.\n3. Ready queue − This queue keeps a set of all processes residing in main memory, ready and waiting to execute. A new process is always put in this queue.\n4. Device queues − The processes which are blocked due to unavailability of an I/O device constitute this queue.\n5. Schedulers are special system software which handle process scheduling in various ways. Their main task is to select the jobs to be submitted into the system and to decide which process to run. Schedulers are of three types\n  a) Long-Term Scheduler\n  b) Short-Term Scheduler\n  c) Medium-Term Scheduler",
-            "answer_source": "provided",
-            "chapter": "Unit 2: PROCESS MANAGEMENT: Process Concept, Process Scheduling"
-        },
-        {
-            "question_number": "15b",
-            "question_text": "What is a race condition? Describe a solution to the Dining philosopher problem so that no races arise.",
-            "marks": 10,
-            "answer": "Race condition: The situation where several processes access – and manipulate shared data concurrently. The final value of the shared data depends upon which process finishes last. To prevent race conditions, concurrent processes must be synchronized. Data consistency requires that only one processes should update the value of a data item at any time. This is ensured through the notion of a critical section.\n\nDining philosopher solution:\nWait and Signal operations will be used for the solution of the Dining Philosophers Problem, for picking a chopstick wait operation can be executed while for releasing a chopstick signal semaphore can be executed.\n\nSemaphore: A semaphore is an integer variable in S, that apart from initialization is accessed by only two standard atomic operations - wait and signal, whose definitions are as follows:\n\n```c\nvoid Philosopher()\n{\n    while(1)\n    {\n        Wait( take_chopstickC[i] );\n        Wait( take_chopstickC[(i+1) % 5] );\n        \n        // EATING THE NOODLE\n        \n        Signal( put_chopstickC[i] );\n        Signal( put_chopstickC[(i+1) % 5] );\n        \n        // THINKING\n    }\n}\n```",
-            "answer_source": "provided",
-            "chapter": "Unit 2: Process Synchronization: Classic Problems of Synchronization"
-        },
-        {
-            "question_number": "16a",
-            "question_text": "Consider five processes with the length of CPU burst time, Arrival time and Priority (small value means high priority)\n\nProcess | Burst Time | Arrival Time\nP1 | 40 | 0\nP2 | 55 | 15\nP3 | 35 | 15\nP4 | 10 | 35\n\n(i) Create Gantt charts illustrating the execution of these processes using FCFS, non preemptive SJF, priority scheduling and Round Robin scheduling (quantum = 5 ms) algorithms for this set of processes.\n(ii) Calculate the turnaround time for process P3 under each of the above algorithms.\n(iii) Calculate average waiting time for each algorithm and find out which algorithm would give the minimum average waiting time.",
-            "marks": 10,
-            "answer": "(i) Gantt Charts:\n1) FCFS: [P1: 0-40] [P2: 40-95] [P3: 95-130] [P4: 130-140] [P5: 140-170]\n2) Non preemptive SJF: [P1: 0-40] [P4: 40-50] [P5: 50-80] [P3: 80-115] [P2: 115-170]\n3) Non Preemptive Priority: [P1: 0-40] [P3: 40-75] [P2: 75-130] [P5: 130-160] [P4: 160-170]\n4) Round Robin: Preemptive time slices execution.\n\n(ii) Turnaround Time for P3 under each algorithm:\n- FCFS: P3 arrives at time 15 and finishes at time 130. Turnaround Time = 130 - 15 = 115 ms\n- SJF: P3 arrives at time 15 and finishes at time 115. Turnaround Time = 115 - 15 = 100 ms\n- Priority: P3 arrives at time 40 and finishes at time 75. Turnaround Time = 75 - 15 = 60 ms\n- Round Robin: P3 receives CPU time in slices. P3 arrives at time 15 and finishes at time 155. Turnaround Time = 155 - 15 = 140 ms\n\n(iii) Average Waiting Time:\nFCFS:\n- Waiting Time P1 = 0 ms\n- Waiting Time P2 = 40 - 15 = 25 ms\n- Waiting Time P3 = 95 - 15 = 80 ms\n- Waiting Time P4 = 130 - 35 = 95 ms\n- Waiting Time P5 = 140 - 40 = 100 ms\nAverage Waiting Time (FCFS) = (0 + 25 + 80 + 95 + 100) / 5 = 60 ms\n\nSJF:\n- Waiting Time P1 = 0 ms\n- Waiting Time P2 = 115 - 15 = 100 ms\n- Waiting Time P3 = 80 - 15 = 65 ms\n- Waiting Time P4 = 40 - 35 = 5 ms\n- Waiting Time P5 = 50 - 40 = 10 ms\nAverage Waiting Time (SJF) = (0 + 100 + 65 + 5 + 10) / 5 = 36 ms\n\nPriority Scheduling:\n- Waiting Time P1 = 0 ms\n- Waiting Time P2 = 75 - 15 = 60 ms\n- Waiting Time P3 = 40 - 15 = 25 ms\n- Waiting Time P4 = 160 - 35 = 125 ms\n- Waiting Time P5 = 130 - 40 = 90 ms\nAverage Waiting Time (Priority) = (0 + 60 + 25 + 125 + 90) / 5 = 60 ms\n\nRound Robin Scheduling:\n- Waiting Time P1 = 75 ms, P2 = 100 ms, P3 = 105 ms, P4 = 20 ms, P5 = 75 ms\nAverage Waiting Time (RR) = (75 + 100 + 105 + 20 + 75) / 5 = 375 / 5 = 75 ms\n\nSJF Scheduling has the minimum average waiting time of 36ms.",
-            "answer_source": "provided",
-            "chapter": "Unit 3: CPU Scheduling: Scheduling Algorithms"
-        },
-        {
-            "question_number": "16b",
-            "question_text": "Assume that there are 5 processes, P0 through P4, and 4 types of resources. At T0 we have the following system state:\n\nAllocation Matrix (A B C D):\nP0: 0 1 1 0\nP1: 1 2 3 1\nP2: 1 3 6 5\nP3: 0 6 3 2\nP4: 0 0 1 4\n\nMax Matrix (A B C D):\nP0: 0 2 1 0\nP1: 1 6 5 2\nP2: 2 3 6 6\nP3: 0 6 5 2\nP4: 0 6 5 6\n\nAvailable (A B C D):\n1 5 2 0",
-            "marks": 10,
-            "answer": "Need Matrix:\nP0: 0 1 0 0\nP1: 0 4 2 1\nP2: 1 0 0 1\nP3: 0 0 2 0\nP4: 0 6 4 2\n\n- Check to see if Need0 (0,1,0,0) is less than or equal to Work (1,5,2,0). It is, so let's set finish to true for that process and also update work by adding the allocated resources (0,1,1,0) for that process to work.\n- Now, let's check to see if Need1 (0,4,2,1) <= Work. Remember that we have to check each element of the vector Need1 against the corresponding element in Work. Because 1 is not less than 0 (the fourth element), we need to move on to P2. Need2 (1,0,0,1) is not less than Work, so must move on to P3. Need3 (0,0,2,0) is less than Work, so we can update work and finish.\n- Next, let's look at P4. Need4 (0,6,4,2) is less than Work, so we can update work and finish.\n- Now we can go back up to P1. Need1 (0,4,2,1) is less than Work, so let's update work and finish.\n- Finally, let's look at P2. Need2 (1,0,0,1) is less than Work, so we can then say that the system is in a safe state and the processes will be executed in the following order: Safe Sequence: P0,P3,P4,P1,P2",
-            "answer_source": "provided",
-            "chapter": "Unit 3: Deadlocks: Deadlock Avoidance"
-        }
-    ]
+  "formal_filename": "FJ2_2024-10-01_Set-A_AnswerKey.json",
+  "paper_title": "SRM Institute of Science and Technology - College of Engineering and Technology - School of Computing - Test: FJ2, Course Code & Title: 21CSC202J - Operating Systems",
+  "source": "FJ2 Oct 2024 Set A",
+  "questions": [
+    {
+      "question_number": "1",
+      "question_text": "Systems that permit only a single process to execute at any given time are referred to as __________",
+      "options": [
+        "uniprogramming systems",
+        "uniprocessing systems",
+        "unitasking systems",
+        "multiprocessing systems"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "",
+      "answer_source": "provided",
+      "chapter": "Unit 1: Introduction, Computer-System Organization, Computer-System Architecture"
+    },
+    {
+      "question_number": "2",
+      "question_text": "The processes that are residing in main memory and are ready and waiting to execute are kept on a list called _____________",
+      "options": [
+        "job queue",
+        "ready queue",
+        "device queue",
+        "process queue"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "",
+      "answer_source": "provided",
+      "chapter": "Unit 2: PROCESS MANAGEMENT: Process Concept, Process Scheduling"
+    },
+    {
+      "question_number": "3",
+      "question_text": "---------- Scheduler selects which process should be executed next and allocates CPU",
+      "options": [
+        "DMA controller",
+        "CPU Scheduler",
+        "Short Term Scheduler",
+        "Long Term Scheduler"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "",
+      "answer_source": "provided",
+      "chapter": "Unit 3: CPU Scheduling: Basic Concepts, Scheduling Criteria"
+    },
+    {
+      "question_number": "4",
+      "question_text": ".---------------refers to the mechanisms that allow processes to communicate and coordinate their actions when running concurrently in an operating system",
+      "options": [
+        "Inter-process communication",
+        "Inter-system communication",
+        "Message communication",
+        "Synchronization"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "",
+      "answer_source": "provided",
+      "chapter": "Unit 2: PROCESS MANAGEMENT: Interprocess Communication"
+    },
+    {
+      "question_number": "5",
+      "question_text": "When one thread immediately terminates the target thread, it is called ____________",
+      "options": [
+        "Asynchronous cancellation",
+        "Systematic cancellation",
+        "Sudden Termination",
+        "Deferred cancellation"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "",
+      "answer_source": "provided",
+      "chapter": "Unit 2: Threads, Threading Issues"
+    },
+    {
+      "question_number": "6",
+      "question_text": "A process is advanced to the ready state in a preemptive scheduling algorithm when:",
+      "options": [
+        "A new process arrives",
+        "A process terminates",
+        "A process switches from running to waiting",
+        "A process switches from waiting to ready"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "",
+      "answer_source": "provided",
+      "chapter": "Unit 3: CPU Scheduling: Scheduling Algorithms"
+    },
+    {
+      "question_number": "7",
+      "question_text": "What is the main difference between soft real-time systems and hard real-time systems?",
+      "options": [
+        "Soft real-time systems can miss deadlines occasionally without severe consequences, whereas hard real-time systems must meet all deadlines.",
+        "Hard real-time systems provide no guarantee as to when a critical real-time process will be scheduled, while soft real-time systems guarantee deadline adherence.",
+        "Soft real-time systems guarantee that processes will be given preference over noncritical processes, whereas hard real-time systems guarantee deadline adherence.",
+        "Soft real-time systems and hard real-time systems have no significant differences in scheduling."
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "",
+      "answer_source": "provided",
+      "chapter": "Unit 3: Real-Time CPU Scheduling"
+    },
+    {
+      "question_number": "8",
+      "question_text": "In a system with multiple processes and resources, a deadlock detection algorithm primarily checks for ___________",
+      "options": [
+        "The maximum number of resources each process can request.",
+        "Cycles in the resource allocation graph.",
+        "The order of resource requests.",
+        "The time taken by each process."
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "",
+      "answer_source": "provided",
+      "chapter": "Unit 3: Deadlocks: Deadlock Detection"
+    },
+    {
+      "question_number": "9",
+      "question_text": "Select the type of CPU Scheduling algorithm that has a large average waiting time?",
+      "options": [
+        "First come First Serve (FCFS)",
+        "Priority based Scheduling Algorithm",
+        "Round Robin Scheduling Algorithm (RR)",
+        "Multilevel Feedback Queue Algorithm"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "",
+      "answer_source": "provided",
+      "chapter": "Unit 3: CPU Scheduling: Scheduling Algorithms"
+    },
+    {
+      "question_number": "10",
+      "question_text": "Only the process executing the critical section is allowed to access the shared variable and all other processes should be prevented from doing so until the completion of the critical section. This is known as",
+      "options": [
+        "Inter-process Communication",
+        "Semaphore",
+        "Deadlock",
+        "Mutual Exclusion"
+      ],
+      "correct_option": "D",
+      "marks": 1,
+      "answer": "",
+      "answer_source": "provided",
+      "chapter": "Unit 2: Process Synchronization: The Critical-Section Problem"
+    },
+    {
+      "question_number": "11",
+      "question_text": "What are the states undergone by a process when a user opens more than one application in a laptop at the same time? Illustrate the same using suitable diagrams.",
+      "marks": 5,
+      "answer": "As a process executes, it changes state\n\nnew: The process is being created\nrunning: Instructions are being executed\nwaiting: The process is waiting for some event to occur\nready: The process is waiting to be assigned to a processor\nterminated: The process has finished execution",
+      "answer_source": "provided",
+      "chapter": "Unit 2: PROCESS MANAGEMENT: Process Concept"
+    },
+    {
+      "question_number": "12",
+      "question_text": "Explain the role of semaphore in achieving mutual exclusion.",
+      "marks": 5,
+      "answer": "A semaphore is a more general synchronization primitive than a mutex, capable of controlling access to a resource pool. A binary semaphore (also called a mutex semaphore) functions similarly to a mutex, while a counting semaphore can allow multiple threads to access a finite number of instances of a resource.\n\nBasic Steps:\n1. Initialize the Semaphore: Set the initial count of the semaphore.\n2. Wait (P) Operation: Decrement the semaphore count. If the count is zero, the thread is blocked.\n3. Signal (V) Operation: Increment the semaphore count. If the count is positive, a waiting thread is unblocked.\n\nAdvantages:\n- Can handle more complex synchronization scenarios, such as allowing a limited number of threads to access a resource concurrently.\n- Flexible and powerful for various synchronization problems.\n\nDisadvantages:\n- More complex to use correctly compared to mutexes.\n- Prone to issues like deadlocks, priority inversion, and semaphore leaks if not managed properly.",
+      "answer_source": "provided",
+      "chapter": "Unit 2: Process Synchronization: Semaphores"
+    },
+    {
+      "question_number": "13",
+      "question_text": "Enumerate the necessary conditions for a deadlock to occur.",
+      "marks": 5,
+      "answer": "1. Mutual Exclusion: At least one resource must be held in a non-shareable mode. That is, only one process can use the resource at any given time. If another process requests that resource, the requesting process must be delayed until the resource has been released.\n2. Hold and Wait: A process must be holding at least one resource and waiting to acquire additional resources that are currently being held by other processes. This means processes must be able to hold resources while waiting for others.\n3. No Preemption: Resources cannot be forcibly taken from a process holding them. A resource can only be released voluntarily by the process holding it after that process has completed its task.\n4. Circular Wait: There must be a circular chain of processes such that each process holds at least one resource needed by the next process in the chain. This implies that there is a cycle in the resource allocation graph",
+      "answer_source": "provided",
+      "chapter": "Unit 3: Deadlocks: Deadlock Characterization"
+    },
+    {
+      "question_number": "14",
+      "question_text": "Consider four processes with the length of CPU burst time and arrival time. Create Gantt charts illustrating the execution of these processes using SRT.\n\nProcess | Arrival Time | Burst Time\nP1 | 0.0 | 7\nP2 | 2.0 | 4\nP3 | 4.0 | 1\nP4 | 5.0 | 4",
+      "marks": 5,
+      "answer": "Gantt Chart Sequence:\n[P1 (0-2)] [P2 (2-4)] [P3 (4-5)] [P2 (5-7)] [P4 (7-11)] [P1 (11-16)]\n\nAverage waiting time\n= ( [(0 – 0) + (11 - 2)] + [(2 – 2) + (5 – 4)] + (4 - 4) + (7 – 5) ) / 4\n= (9 + 1 + 0 + 2) / 4\n= 3\n\nAverage turn-around time\n= ((16-0) + (7-2) + (5-4) + (11-5)) / 4\n= 7",
+      "answer_source": "provided",
+      "chapter": "Unit 3: CPU Scheduling: Scheduling Algorithms"
+    },
+    {
+      "question_number": "15a",
+      "question_text": "Design and describe the activity of the process manager that handles the removal of the running process from the CPU and the selects another process based on any strategy with respect to processes scheduling. Represent the process scheduling using Queueing diagram.",
+      "marks": 10,
+      "answer": "1. The OS maintains all Process Control Blocks (PCBs) in Process Scheduling Queues. The OS maintains a separate queue for each of the process states and PCBs of all processes in the same execution state are placed in the same queue. When the state of a process is changed, its PCB is unlinked from its current queue and moved to its new state queue.\n2. Job queue − This queue keeps all the processes in the system.\n3. Ready queue − This queue keeps a set of all processes residing in main memory, ready and waiting to execute. A new process is always put in this queue.\n4. Device queues − The processes which are blocked due to unavailability of an I/O device constitute this queue.\n5. Schedulers are special system software which handle process scheduling in various ways. Their main task is to select the jobs to be submitted into the system and to decide which process to run. Schedulers are of three types\n  a) Long-Term Scheduler\n  b) Short-Term Scheduler\n  c) Medium-Term Scheduler",
+      "answer_source": "provided",
+      "chapter": "Unit 2: PROCESS MANAGEMENT: Process Concept, Process Scheduling"
+    },
+    {
+      "question_number": "15b",
+      "question_text": "What is a race condition? Describe a solution to the Dining philosopher problem so that no races arise.",
+      "marks": 10,
+      "answer": "Race condition: The situation where several processes access – and manipulate shared data concurrently. The final value of the shared data depends upon which process finishes last. To prevent race conditions, concurrent processes must be synchronized. Data consistency requires that only one processes should update the value of a data item at any time. This is ensured through the notion of a critical section.\n\nDining philosopher solution:\nWait and Signal operations will be used for the solution of the Dining Philosophers Problem, for picking a chopstick wait operation can be executed while for releasing a chopstick signal semaphore can be executed.\n\nSemaphore: A semaphore is an integer variable in S, that apart from initialization is accessed by only two standard atomic operations - wait and signal, whose definitions are as follows:\n\n```c\nvoid Philosopher()\n{\n    while(1)\n    {\n        Wait( take_chopstickC[i] );\n        Wait( take_chopstickC[(i+1) % 5] );\n        \n        // EATING THE NOODLE\n        \n        Signal( put_chopstickC[i] );\n        Signal( put_chopstickC[(i+1) % 5] );\n        \n        // THINKING\n    }\n}\n```",
+      "answer_source": "provided",
+      "chapter": "Unit 2: Process Synchronization: Classic Problems of Synchronization"
+    },
+    {
+      "question_number": "16a",
+      "question_text": "Consider five processes with the length of CPU burst time, Arrival time and Priority (small value means high priority)\n\nProcess | Burst Time | Arrival Time\nP1 | 40 | 0\nP2 | 55 | 15\nP3 | 35 | 15\nP4 | 10 | 35\n\n(i) Create Gantt charts illustrating the execution of these processes using FCFS, non preemptive SJF, priority scheduling and Round Robin scheduling (quantum = 5 ms) algorithms for this set of processes.\n(ii) Calculate the turnaround time for process P3 under each of the above algorithms.\n(iii) Calculate average waiting time for each algorithm and find out which algorithm would give the minimum average waiting time.",
+      "marks": 10,
+      "answer": "(i) Gantt Charts:\n1) FCFS: [P1: 0-40] [P2: 40-95] [P3: 95-130] [P4: 130-140] [P5: 140-170]\n2) Non preemptive SJF: [P1: 0-40] [P4: 40-50] [P5: 50-80] [P3: 80-115] [P2: 115-170]\n3) Non Preemptive Priority: [P1: 0-40] [P3: 40-75] [P2: 75-130] [P5: 130-160] [P4: 160-170]\n4) Round Robin: Preemptive time slices execution.\n\n(ii) Turnaround Time for P3 under each algorithm:\n- FCFS: P3 arrives at time 15 and finishes at time 130. Turnaround Time = 130 - 15 = 115 ms\n- SJF: P3 arrives at time 15 and finishes at time 115. Turnaround Time = 115 - 15 = 100 ms\n- Priority: P3 arrives at time 40 and finishes at time 75. Turnaround Time = 75 - 15 = 60 ms\n- Round Robin: P3 receives CPU time in slices. P3 arrives at time 15 and finishes at time 155. Turnaround Time = 155 - 15 = 140 ms\n\n(iii) Average Waiting Time:\nFCFS:\n- Waiting Time P1 = 0 ms\n- Waiting Time P2 = 40 - 15 = 25 ms\n- Waiting Time P3 = 95 - 15 = 80 ms\n- Waiting Time P4 = 130 - 35 = 95 ms\n- Waiting Time P5 = 140 - 40 = 100 ms\nAverage Waiting Time (FCFS) = (0 + 25 + 80 + 95 + 100) / 5 = 60 ms\n\nSJF:\n- Waiting Time P1 = 0 ms\n- Waiting Time P2 = 115 - 15 = 100 ms\n- Waiting Time P3 = 80 - 15 = 65 ms\n- Waiting Time P4 = 40 - 35 = 5 ms\n- Waiting Time P5 = 50 - 40 = 10 ms\nAverage Waiting Time (SJF) = (0 + 100 + 65 + 5 + 10) / 5 = 36 ms\n\nPriority Scheduling:\n- Waiting Time P1 = 0 ms\n- Waiting Time P2 = 75 - 15 = 60 ms\n- Waiting Time P3 = 40 - 15 = 25 ms\n- Waiting Time P4 = 160 - 35 = 125 ms\n- Waiting Time P5 = 130 - 40 = 90 ms\nAverage Waiting Time (Priority) = (0 + 60 + 25 + 125 + 90) / 5 = 60 ms\n\nRound Robin Scheduling:\n- Waiting Time P1 = 75 ms, P2 = 100 ms, P3 = 105 ms, P4 = 20 ms, P5 = 75 ms\nAverage Waiting Time (RR) = (75 + 100 + 105 + 20 + 75) / 5 = 375 / 5 = 75 ms\n\nSJF Scheduling has the minimum average waiting time of 36ms.",
+      "answer_source": "provided",
+      "chapter": "Unit 3: CPU Scheduling: Scheduling Algorithms"
+    },
+    {
+      "question_number": "16b",
+      "question_text": "Assume that there are 5 processes, P0 through P4, and 4 types of resources. At T0 we have the following system state:\n\nAllocation Matrix (A B C D):\nP0: 0 1 1 0\nP1: 1 2 3 1\nP2: 1 3 6 5\nP3: 0 6 3 2\nP4: 0 0 1 4\n\nMax Matrix (A B C D):\nP0: 0 2 1 0\nP1: 1 6 5 2\nP2: 2 3 6 6\nP3: 0 6 5 2\nP4: 0 6 5 6\n\nAvailable (A B C D):\n1 5 2 0",
+      "marks": 10,
+      "answer": "Need Matrix:\nP0: 0 1 0 0\nP1: 0 4 2 1\nP2: 1 0 0 1\nP3: 0 0 2 0\nP4: 0 6 4 2\n\n- Check to see if Need0 (0,1,0,0) is less than or equal to Work (1,5,2,0). It is, so let's set finish to true for that process and also update work by adding the allocated resources (0,1,1,0) for that process to work.\n- Now, let's check to see if Need1 (0,4,2,1) <= Work. Remember that we have to check each element of the vector Need1 against the corresponding element in Work. Because 1 is not less than 0 (the fourth element), we need to move on to P2. Need2 (1,0,0,1) is not less than Work, so must move on to P3. Need3 (0,0,2,0) is less than Work, so we can update work and finish.\n- Next, let's look at P4. Need4 (0,6,4,2) is less than Work, so we can update work and finish.\n- Now we can go back up to P1. Need1 (0,4,2,1) is less than Work, so let's update work and finish.\n- Finally, let's look at P2. Need2 (1,0,0,1) is less than Work, so we can then say that the system is in a safe state and the processes will be executed in the following order: Safe Sequence: P0,P3,P4,P1,P2",
+      "answer_source": "provided",
+      "chapter": "Unit 3: Deadlocks: Deadlock Avoidance"
+    }
+  ]
 }

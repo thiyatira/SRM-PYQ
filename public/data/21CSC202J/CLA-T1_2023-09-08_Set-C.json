@@ -5,41 +5,76 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Multiprogramming of a computer system increases -------\n(A) memory\n(B) Storage\n(C) CPU utilization\n(D) Cost",
+            "question_text": "Multiprogramming of a computer system increases -------",
+            "options": [
+                "memory",
+                "Storage",
+                "CPU utilization",
+                "Cost"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) CPU utilization\n\n**Explanation:** Multiprogramming increases CPU utilization by keeping several jobs in memory simultaneously. When one process needs to wait (e.g., for I/O operations), the operating system switches the CPU to another active process, thereby preventing the CPU from sitting idle.",
+            "answer": "**Explanation:** Multiprogramming increases CPU utilization by keeping several jobs in memory simultaneously. When one process needs to wait (e.g., for I/O operations), the operating system switches the CPU to another active process, thereby preventing the CPU from sitting idle.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction, Computer-System Organization, Operating-System Operations"
         },
         {
             "question_number": "2",
-            "question_text": "Privilege instructions are executed in ------------ mode of the operating system\n(A) user mode\n(B) kernel mode\n(C) Both A and B\n(D) un-restricted mode",
+            "question_text": "Privilege instructions are executed in ------------ mode of the operating system",
+            "options": [
+                "user mode",
+                "kernel mode",
+                "Both A and B",
+                "un-restricted mode"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) kernel mode\n\n**Explanation:** Privileged instructions perform critical tasks such as direct hardware access, timer management, or memory manipulation. To protect system stability and security, the hardware allows privileged instructions to execute only when the CPU is running in kernel (supervisor) mode.",
+            "answer": "**Explanation:** Privileged instructions perform critical tasks such as direct hardware access, timer management, or memory manipulation. To protect system stability and security, the hardware allows privileged instructions to execute only when the CPU is running in kernel (supervisor) mode.",
             "answer_source": "generated",
             "chapter": "Unit 1: Operating-System Structure, Operating-System Operations, User and Operating-System Interface"
         },
         {
             "question_number": "3",
-            "question_text": "------------ is referred to as the collection of data section, text section, stack and memory limits of a process\n(A) process control block\n(B) process state block\n(C) process status block\n(D) process instruction block",
+            "question_text": "------------ is referred to as the collection of data section, text section, stack and memory limits of a process",
+            "options": [
+                "process control block",
+                "process state block",
+                "process status block",
+                "process instruction block"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) process control block\n\n**Explanation:** The Process Control Block (PCB) is the primary data structure maintained by the operating system for each process. It stores process state, program counter, register values, memory allocation details (text section, data section, stack pointer, memory limits), and open file descriptors.",
+            "answer": "**Explanation:** The Process Control Block (PCB) is the primary data structure maintained by the operating system for each process. It stores process state, program counter, register values, memory allocation details (text section, data section, stack pointer, memory limits), and open file descriptors.",
             "answer_source": "generated",
             "chapter": "Unit 2: PROCESS MANAGEMENT: Process Concept"
         },
         {
             "question_number": "4",
-            "question_text": "------------ is defined as the ability of an operating system to support multiple concurrent paths of execution within a single process.\n(A) multi-programming\n(B) multi-threading\n(C) multi-way processing\n(D) concurrent processing",
+            "question_text": "------------ is defined as the ability of an operating system to support multiple concurrent paths of execution within a single process.",
+            "options": [
+                "multi-programming",
+                "multi-threading",
+                "multi-way processing",
+                "concurrent processing"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) multi-threading\n\n**Explanation:** Multithreading is the capability of an operating system to allow multiple threads (lightweight units of execution) to run concurrently within the context of a single process, sharing the same address space and process resources.",
+            "answer": "**Explanation:** Multithreading is the capability of an operating system to allow multiple threads (lightweight units of execution) to run concurrently within the context of a single process, sharing the same address space and process resources.",
             "answer_source": "generated",
             "chapter": "Unit 2: Threads: Multicore Programming, Multithreading Models"
         },
         {
             "question_number": "5",
-            "question_text": "The process stack does not contain\n(A) parameters\n(B) return address\n(C) local variables\n(D) process id of child process",
+            "question_text": "The process stack does not contain",
+            "options": [
+                "parameters",
+                "return address",
+                "local variables",
+                "process id of child process"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) process id of child process\n\n**Explanation:** The program stack contains activation records for active procedure calls, storing parameters, local variables, and return addresses. Identification data like child process IDs (PIDs) are maintained by the operating system inside the Process Control Block (PCB), not on the stack.",
+            "answer": "**Explanation:** The program stack contains activation records for active procedure calls, storing parameters, local variables, and return addresses. Identification data like child process IDs (PIDs) are maintained by the operating system inside the Process Control Block (PCB), not on the stack.",
             "answer_source": "generated",
             "chapter": "Unit 2: PROCESS MANAGEMENT: Process Concept"
         },

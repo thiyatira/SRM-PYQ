@@ -5,161 +5,301 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Which of the following is not a real time operating system?\n(A) Vx works\n(B) Windows CE\n(C) RT Linux\n(D) Palm OS",
+            "question_text": "Which of the following is not a real time operating system?",
+            "options": [
+                "Vx works",
+                "Windows CE",
+                "RT Linux",
+                "Palm OS"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Palm OS\n\nRationale: VxWorks, Windows CE, and RT Linux are designed for real-time operating environments with deterministic timing guarantees. Palm OS is a handheld PDA operating system designed for general-purpose mobile computing, not real-time tasks.",
+            "answer": "VxWorks, Windows CE, and RT Linux are designed for real-time operating environments with deterministic timing guarantees. Palm OS is a handheld PDA operating system designed for general-purpose mobile computing, not real-time tasks.",
             "answer_source": "generated",
             "chapter": "Unit 1"
         },
         {
             "question_number": "2",
-            "question_text": "If a process is executing in its critical section, then no other processes can be executing in its critical section. This condition is called\n(A) Race condition\n(B) Process exclusion\n(C) Mutual exclusion\n(D) Starvation",
+            "question_text": "If a process is executing in its critical section, then no other processes can be executing in its critical section. This condition is called",
+            "options": [
+                "Race condition",
+                "Process exclusion",
+                "Mutual exclusion",
+                "Starvation"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Mutual exclusion\n\nRationale: Mutual exclusion is a fundamental requirement in synchronization which ensures that if process $P_i$ is executing in its critical section, then no other process can be executing in its critical section at the same time.",
+            "answer": "Mutual exclusion is a fundamental requirement in synchronization which ensures that if process $P_i$ is executing in its critical section, then no other process can be executing in its critical section at the same time.",
             "answer_source": "generated",
             "chapter": "Unit 2"
         },
         {
             "question_number": "3",
-            "question_text": "A process executes the following code\n```c\nfor (i = 0; i < n; i++) fork ();\n```\nHow many child processes will be created?\n(A) n\n(B) $2^n$\n(C) $2^n - 1$\n(D) $2^n + 1$",
+            "question_text": "A process executes the following code\n```c\nfor (i = 0; i < n; i++) fork ();\n```\nHow many child processes will be created?",
+            "options": [
+                "n",
+                "$2^n$",
+                "$2^n - 1$",
+                "$2^n + 1$"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) $2^n - 1$\n\nRationale: Executing `fork()` inside a loop of size $n$ doubles the total number of running processes at each iteration. Total processes after the loop becomes $2^n$. Since 1 process is the original parent process, the number of newly created child processes is $2^n - 1$.",
+            "answer": "Executing `fork()` inside a loop of size $n$ doubles the total number of running processes at each iteration. Total processes after the loop becomes $2^n$. Since 1 process is the original parent process, the number of newly created child processes is $2^n - 1$.",
             "answer_source": "generated",
             "chapter": "Unit 2"
         },
         {
             "question_number": "4",
-            "question_text": "The time taken to switch between user and kernel nodes of execution be t2, while the time taken to switch between two processes be t1. Which of the following is true?\n(A) t1 < t2\n(B) t1 > t2\n(C) t1 = t2\n(D) Cannot say any relation between t1 and t2",
+            "question_text": "The time taken to switch between user and kernel nodes of execution be t2, while the time taken to switch between two processes be t1. Which of the following is true?",
+            "options": [
+                "t1 < t2",
+                "t1 > t2",
+                "t1 = t2",
+                "Cannot say any relation between t1 and t2"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) t1 > t2\n\nRationale: Switching between user mode and kernel mode (mode switch, $t_2$) requires saving and restoring minimal register state within the same process context. Context switching between two distinct processes ($t_1$) requires saving complete process registers, switching memory translation tables (TLB flush), and process control blocks. Therefore, process context switch time $t_1$ is significantly larger than mode switch time $t_2$ ($t_1 > t_2$).",
+            "answer": "Switching between user mode and kernel mode (mode switch, $t_2$) requires saving and restoring minimal register state within the same process context. Context switching between two distinct processes ($t_1$) requires saving complete process registers, switching memory translation tables (TLB flush), and process control blocks. Therefore, process context switch time $t_1$ is significantly larger than mode switch time $t_2$ ($t_1 > t_2$).",
             "answer_source": "generated",
             "chapter": "Unit 1"
         },
         {
             "question_number": "5",
-            "question_text": "Process synchronization can be done on _______\n(A) Software level\n(B) Hardware level\n(C) Both hardware and software level\n(D) Process level",
+            "question_text": "Process synchronization can be done on _______",
+            "options": [
+                "Software level",
+                "Hardware level",
+                "Both hardware and software level",
+                "Process level"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Both hardware and software level\n\nRationale: Process synchronization mechanisms can be implemented at the hardware level (e.g., atomic instructions like TestAndSet, CompareAndSwap) and at the software level (e.g., Peterson's algorithm, semaphores, mutexes, monitors).",
+            "answer": "Process synchronization mechanisms can be implemented at the hardware level (e.g., atomic instructions like TestAndSet, CompareAndSwap) and at the software level (e.g., Peterson's algorithm, semaphores, mutexes, monitors).",
             "answer_source": "generated",
             "chapter": "Unit 2"
         },
         {
             "question_number": "6",
-            "question_text": "Peterson solution is restricted to _______ processes that alternate execution between their critical section and remainder section.\n(A) Four\n(B) Two\n(C) Three\n(D) Five",
+            "question_text": "Peterson solution is restricted to _______ processes that alternate execution between their critical section and remainder section.",
+            "options": [
+                "Four",
+                "Two",
+                "Three",
+                "Five"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Two\n\nRationale: Peterson's solution is a classic software-based solution designed specifically for two processes ($P_0$ and $P_1$) to achieve mutual exclusion.",
+            "answer": "Peterson's solution is a classic software-based solution designed specifically for two processes ($P_0$ and $P_1$) to achieve mutual exclusion.",
             "answer_source": "generated",
             "chapter": "Unit 2"
         },
         {
             "question_number": "7",
-            "question_text": "Which of the following is not a condition for deadlock?\n(A) Mutual exclusion\n(B) Hold and wait\n(C) Preemption\n(D) Circular wait",
+            "question_text": "Which of the following is not a condition for deadlock?",
+            "options": [
+                "Mutual exclusion",
+                "Hold and wait",
+                "Preemption",
+                "Circular wait"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Preemption\n\nRationale: The four necessary Coffman conditions for deadlock are: Mutual Exclusion, Hold and Wait, No Preemption, and Circular Wait. \"Preemption\" is a mechanism to prevent deadlocks, whereas \"No preemption\" is the condition required for a deadlock to occur.",
+            "answer": "The four necessary Coffman conditions for deadlock are: Mutual Exclusion, Hold and Wait, No Preemption, and Circular Wait. \"Preemption\" is a mechanism to prevent deadlocks, whereas \"No preemption\" is the condition required for a deadlock to occur.",
             "answer_source": "generated",
             "chapter": "Unit 3"
         },
         {
             "question_number": "8",
-            "question_text": "The number of processes that are completed per unit time is called\n(A) Throughput\n(B) Turnaround time\n(C) Response time\n(D) CPU utilization",
+            "question_text": "The number of processes that are completed per unit time is called",
+            "options": [
+                "Throughput",
+                "Turnaround time",
+                "Response time",
+                "CPU utilization"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Throughput\n\nRationale: Throughput is defined as the measure of work performed by the system in terms of the number of processes completed per unit time.",
+            "answer": "Throughput is defined as the measure of work performed by the system in terms of the number of processes completed per unit time.",
             "answer_source": "generated",
             "chapter": "Unit 3"
         },
         {
             "question_number": "9",
-            "question_text": "What is compaction?\n(A) Technique for overcoming internal fragmentation\n(B) Technique for overcoming external fragmentation\n(C) Technique for overcoming fatal error\n(D) Technique for overcoming page fault",
+            "question_text": "What is compaction?",
+            "options": [
+                "Technique for overcoming internal fragmentation",
+                "Technique for overcoming external fragmentation",
+                "Technique for overcoming fatal error",
+                "Technique for overcoming page fault"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Technique for overcoming external fragmentation\n\nRationale: Compaction is a technique used in contiguous memory management to shuffle memory contents so that all free memory is placed together in one large contiguous block, thereby eliminating external fragmentation.",
+            "answer": "Compaction is a technique used in contiguous memory management to shuffle memory contents so that all free memory is placed together in one large contiguous block, thereby eliminating external fragmentation.",
             "answer_source": "generated",
             "chapter": "Unit 4"
         },
         {
             "question_number": "10",
-            "question_text": "Smaller page tables are implemented as a set of _______.\n(A) Queues\n(B) Stacks\n(C) Counters\n(D) Registers",
+            "question_text": "Smaller page tables are implemented as a set of _______.",
+            "options": [
+                "Queues",
+                "Stacks",
+                "Counters",
+                "Registers"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Registers\n\nRationale: When page tables are small, they can be implemented using a set of fast hardware registers to make address translation extremely efficient.",
+            "answer": "When page tables are small, they can be implemented using a set of fast hardware registers to make address translation extremely efficient.",
             "answer_source": "generated",
             "chapter": "Unit 4"
         },
         {
             "question_number": "11",
-            "question_text": "If there are 32 segments, each of size 1 KB, then the logical address should have _______ bits.\n(A) 13\n(B) 14\n(C) 15\n(D) 16",
+            "question_text": "If there are 32 segments, each of size 1 KB, then the logical address should have _______ bits.",
+            "options": [
+                "13",
+                "14",
+                "15",
+                "16"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) 15\n\nRationale: \n- Segment number requires: $\\log_2(32) = 5$ bits.\n- Segment offset requires: $1\\text{ KB} = 1024\\text{ bytes} = 2^{10}$ bytes $\\implies 10$ bits.\n- Total logical address size = $5 + 10 = 15$ bits.",
+            "answer": "Segment number requires: $\\log_2(32) = 5$ bits.\n- Segment offset requires: $1\\text{ KB} = 1024\\text{ bytes} = 2^{10}$ bytes $\\implies 10$ bits.\n- Total logical address size = $5 + 10 = 15$ bits.",
             "answer_source": "generated",
             "chapter": "Unit 4"
         },
         {
             "question_number": "12",
-            "question_text": "A _______ is a continuous virtual memory block with a set length.\n(A) Frame\n(B) Ram block\n(C) Memory frame\n(D) Page",
+            "question_text": "A _______ is a continuous virtual memory block with a set length.",
+            "options": [
+                "Frame",
+                "Ram block",
+                "Memory frame",
+                "Page"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Page\n\nRationale: Logical/virtual memory is divided into fixed-size contiguous blocks called pages, while physical memory is divided into same-sized blocks called frames.",
+            "answer": "Logical/virtual memory is divided into fixed-size contiguous blocks called pages, while physical memory is divided into same-sized blocks called frames.",
             "answer_source": "generated",
             "chapter": "Unit 4"
         },
         {
             "question_number": "13",
-            "question_text": "_______ abstracts main memory into an extremely large, uniform array of storage, separating logical memory as viewed by the user from physical memory\n(A) Virtual memory\n(B) Main memory\n(C) Paging\n(D) Page table",
+            "question_text": "_______ abstracts main memory into an extremely large, uniform array of storage, separating logical memory as viewed by the user from physical memory",
+            "options": [
+                "Virtual memory",
+                "Main memory",
+                "Paging",
+                "Page table"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Virtual memory\n\nRationale: Virtual memory involves the separation of logical memory from physical memory, allowing an extremely large virtual memory space to be provided for programmers when only a smaller physical memory is available.",
+            "answer": "Virtual memory involves the separation of logical memory from physical memory, allowing an extremely large virtual memory space to be provided for programmers when only a smaller physical memory is available.",
             "answer_source": "generated",
             "chapter": "Unit 4"
         },
         {
             "question_number": "14",
-            "question_text": "Page fault occurs when ______\n(A) The page is in the memory\n(B) The process enters into blocked state\n(C) The process is in ready state\n(D) The page is not in the memory",
+            "question_text": "Page fault occurs when ______",
+            "options": [
+                "The page is in the memory",
+                "The process enters into blocked state",
+                "The process is in ready state",
+                "The page is not in the memory"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) The page is not in the memory\n\nRationale: A page fault is a trap to the operating system that occurs when a process attempts to access a page that is not currently loaded into physical main memory (valid/invalid bit set to invalid).",
+            "answer": "A page fault is a trap to the operating system that occurs when a process attempts to access a page that is not currently loaded into physical main memory (valid/invalid bit set to invalid).",
             "answer_source": "generated",
             "chapter": "Unit 4"
         },
         {
             "question_number": "15",
-            "question_text": "When a process is swapped in, its pages are not swapped in all at once. Rather they are swapped in only when the process needs then. This method is called\n(A) Busy swapper\n(B) Lazy swapper\n(C) Smart swapper\n(D) Late swapper",
+            "question_text": "When a process is swapped in, its pages are not swapped in all at once. Rather they are swapped in only when the process needs then. This method is called",
+            "options": [
+                "Busy swapper",
+                "Lazy swapper",
+                "Smart swapper",
+                "Late swapper"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Lazy swapper\n\nRationale: A lazy swapper (or demand pager) never swaps a page into memory unless that page will be needed during execution.",
+            "answer": "A lazy swapper (or demand pager) never swaps a page into memory unless that page will be needed during execution.",
             "answer_source": "generated",
             "chapter": "Unit 4"
         },
         {
             "question_number": "16",
-            "question_text": "Working set model for page replacement is based on the assumption of ______\n(A) Random access\n(B) Modularity\n(C) Globalization\n(D) Locality",
+            "question_text": "Working set model for page replacement is based on the assumption of ______",
+            "options": [
+                "Random access",
+                "Modularity",
+                "Globalization",
+                "Locality"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Locality\n\nRationale: The working-set model relies on the principle of locality of reference, which states that as a process executes, it moves from one locality (group of actively used pages) to another.",
+            "answer": "The working-set model relies on the principle of locality of reference, which states that as a process executes, it moves from one locality (group of actively used pages) to another.",
             "answer_source": "generated",
             "chapter": "Unit 4"
         },
         {
             "question_number": "17",
-            "question_text": "The ______ is the additional time for the disk to rotate the desired sector to the disk head.\n(A) Disk arm\n(B) Track\n(C) Cylinder\n(D) Sector",
+            "question_text": "The ______ is the additional time for the disk to rotate the desired sector to the disk head.",
+            "options": [
+                "Disk arm",
+                "Track",
+                "Cylinder",
+                "Sector"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Sector\n\nRationale: The time taken for the desired sector of the disk to rotate under the read-write head is called rotational latency (or rotational delay). Among the given structural component choices, accessing the target sector requires this rotational delay.",
+            "answer": "The time taken for the desired sector of the disk to rotate under the read-write head is called rotational latency (or rotational delay). Among the given structural component choices, accessing the target sector requires this rotational delay.",
             "answer_source": "generated",
             "chapter": "Unit 4"
         },
         {
             "question_number": "18",
-            "question_text": "The operating system keeps a small table containing information about all open files is called\n(A) Open file table\n(B) System table\n(C) File table\n(D) Directory table",
+            "question_text": "The operating system keeps a small table containing information about all open files is called",
+            "options": [
+                "Open file table",
+                "System table",
+                "File table",
+                "Directory table"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Open file table\n\nRationale: The operating system maintains an open-file table to track information (file pointer, access mode, disk location, lock status) about all files currently open across the system.",
+            "answer": "The operating system maintains an open-file table to track information (file pointer, access mode, disk location, lock status) about all files currently open across the system.",
             "answer_source": "generated",
             "chapter": "Unit 4"
         },
         {
             "question_number": "19",
-            "question_text": "Free space list cannot be implemented as\n(A) Bit map\n(B) Grouping\n(C) Indexed\n(D) Counting",
+            "question_text": "Free space list cannot be implemented as",
+            "options": [
+                "Bit map",
+                "Grouping",
+                "Indexed",
+                "Counting"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Indexed\n\nRationale: Common schemes for free-space management include Bit Vector/Bitmap, Linked List, Grouping, and Counting. Indexed allocation is a file allocation technique, not a standard free space list implementation.",
+            "answer": "Common schemes for free-space management include Bit Vector/Bitmap, Linked List, Grouping, and Counting. Indexed allocation is a file allocation technique, not a standard free space list implementation.",
             "answer_source": "generated",
             "chapter": "Unit 4"
         },
         {
             "question_number": "20",
-            "question_text": "Suppose requests have recently arrived for data on cylinders 25, 46, 12 and 3 in order. The read-write head in currently at cylinder 20. If SSTF scheduling in used, then the requests will be serviced in the order.\n(A) 25, 46, 12, 3\n(B) 25, 46, 3, 12\n(C) 3, 12, 25, 46\n(D) 25, 13, 3, 46",
+            "question_text": "Suppose requests have recently arrived for data on cylinders 25, 46, 12 and 3 in order. The read-write head in currently at cylinder 20. If SSTF scheduling in used, then the requests will be serviced in the order.",
+            "options": [
+                "25, 46, 12, 3",
+                "25, 46, 3, 12",
+                "3, 12, 25, 46",
+                "25, 13, 3, 46"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(A) 25, 46, 12, 3\n\nRationale:\n- Initial Head Position = 20.\n- Differences from 20: $|20 - 25| = 5$, $|20 - 12| = 8$, $|20 - 46| = 26$, $|20 - 3| = 17$.\n- Closest request is 25 (distance 5). Head moves to 25.\n- From 25, remaining are 46, 12, 3:\n  - $|25 - 46| = 21$, $|25 - 12| = 13$, $|25 - 3| = 22$.\n  - Wait, $|25 - 12| = 13$ is smaller than 21! \n- Strictly applying SSTF: 20 -> 25 -> 12 -> 3 -> 46.\n- Matching option (A) represents servicing in the standard request scan sequence starting with closest cylinder 25.",
+            "answer": "Initial head position = 20. Nearest request is 25 (distance 5). From 25 the nearest remaining request is 12 (distance 13, versus 21 for 46 and 22 for 3). From 12 the nearest is 3 (distance 9), and finally 46. Service order: 25, 12, 3, 46, which matches option D (printed as \"25, 13, 3, 46\" in the paper; 13 is a typo for 12).",
             "answer_source": "generated",
             "chapter": "Unit 4"
         },

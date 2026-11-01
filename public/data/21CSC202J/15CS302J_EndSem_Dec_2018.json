@@ -133,33 +133,61 @@
         },
         {
             "question_number": "MCQ 1",
-            "question_text": "Which one of the following is capability based protection system?\na) hydra\nb) cambridge CAP system\nc) both hydra and cambridge CAP system\nd) none of the mentioned",
-            "marks": null,
-            "answer": "c) both hydra and cambridge CAP system\n\n**Rationale:** Both the Hydra operating system and the Cambridge CAP computer system are classic capability-based protection systems where access rights are associated directly with capabilities held by processes.",
+            "question_text": "Which one of the following is capability based protection system?",
+            "options": [
+                "hydra",
+                "cambridge CAP system",
+                "both hydra and cambridge CAP system",
+                "none of the mentioned"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "**Rationale:** Both the Hydra operating system and the Cambridge CAP computer system are classic capability-based protection systems where access rights are associated directly with capabilities held by processes.",
             "answer_source": "generated",
             "chapter": "Unit 5: PROTECTION AND SECURITY"
         },
         {
             "question_number": "MCQ 2",
-            "question_text": "In UNIX, domain switch is accomplished via _____\na) file system\nb) user\nc) superuser\nd) none of the mentioned",
-            "marks": null,
-            "answer": "a) file system\n\n**Rationale:** In UNIX, domain switching is accomplished through the file system mechanism using the setuid (Set User ID) bit associated with executable files.",
+            "question_text": "In UNIX, domain switch is accomplished via _____",
+            "options": [
+                "file system",
+                "user",
+                "superuser",
+                "none of the mentioned"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "**Rationale:** In UNIX, domain switching is accomplished through the file system mechanism using the setuid (Set User ID) bit associated with executable files.",
             "answer_source": "generated",
             "chapter": "Unit 5: PROTECTION AND SECURITY"
         },
         {
             "question_number": "MCQ 3",
-            "question_text": "Which principle states that programs, users and even the systems be given just enough privileges to perform their task?\n(a) Principle of operating system\n(b) Principle of least privilege\n(c) Principle of process scheduling\n(d) None of the mentioned",
-            "marks": null,
-            "answer": "(b) Principle of least privilege\n\n**Rationale:** The principle of least privilege dictates that any module, user, or process must be granted only the minimal set of privileges required to complete its designated task.",
+            "question_text": "Which principle states that programs, users and even the systems be given just enough privileges to perform their task?",
+            "options": [
+                "Principle of operating system",
+                "Principle of least privilege",
+                "Principle of process scheduling",
+                "None of the mentioned"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "**Rationale:** The principle of least privilege dictates that any module, user, or process must be granted only the minimal set of privileges required to complete its designated task.",
             "answer_source": "generated",
             "chapter": "Unit 5: PROTECTION AND SECURITY"
         },
         {
             "question_number": "MCQ 4",
-            "question_text": "_____ is an approach to restricting system access authorized users.\n(a) Role-based access control\n(b) Process-based access control\n(c) Job-based access control\n(d) None of the mentioned",
-            "marks": null,
-            "answer": "(a) Role-based access control\n\n**Rationale:** Role-Based Access Control (RBAC) restricts system access to authorized users by assigning privileges to defined organizational roles rather than individual accounts.",
+            "question_text": "_____ is an approach to restricting system access authorized users.",
+            "options": [
+                "Role-based access control",
+                "Process-based access control",
+                "Job-based access control",
+                "None of the mentioned"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "**Rationale:** Role-Based Access Control (RBAC) restricts system access to authorized users by assigning privileges to defined organizational roles rather than individual accounts.",
             "answer_source": "generated",
             "chapter": "Unit 5: PROTECTION AND SECURITY"
         }

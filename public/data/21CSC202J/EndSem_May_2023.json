@@ -5,161 +5,301 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "What is an operating system?\n(A) Interface between the hardware and application programs\n(B) Collection of programs that manages hardware resources\n(C) System service provider to the application programs\n(D) All of the mentioned",
+            "question_text": "What is an operating system?",
+            "options": [
+                "Interface between the hardware and application programs",
+                "Collection of programs that manages hardware resources",
+                "System service provider to the application programs",
+                "All of the mentioned"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) All of the mentioned\n\nRationale: An operating system serves as an interface between user applications and hardware, manages system resources efficiently, and provides a platform for applications to execute services.",
+            "answer": "An operating system serves as an interface between user applications and hardware, manages system resources efficiently, and provides a platform for applications to execute services.",
             "answer_source": "generated",
             "chapter": "Unit 1"
         },
         {
             "question_number": "2",
-            "question_text": "CPU scheduling is the basis of _________\n(A) Multiprogramming operating systems\n(B) Larger memory sized systems\n(C) Multiprocessor systems\n(D) Multicore systems",
+            "question_text": "CPU scheduling is the basis of _________",
+            "options": [
+                "Multiprogramming operating systems",
+                "Larger memory sized systems",
+                "Multiprocessor systems",
+                "Multicore systems"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Multiprogramming operating systems\n\nRationale: Multiprogramming OS relies on CPU scheduling to switch the CPU among processes to maximize CPU utilization.",
+            "answer": "Multiprogramming OS relies on CPU scheduling to switch the CPU among processes to maximize CPU utilization.",
             "answer_source": "generated",
             "chapter": "Unit 1"
         },
         {
             "question_number": "3",
-            "question_text": "Which of the following does not interrupt a running process?\n(A) A device\n(B) Timer\n(C) Scheduled job\n(D) Power failure",
+            "question_text": "Which of the following does not interrupt a running process?",
+            "options": [
+                "A device",
+                "Timer",
+                "Scheduled job",
+                "Power failure"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Scheduled job\n\nRationale: Devices, timers, and power failure events generate hardware interrupts. A scheduled job is a software entity managed by the scheduler, not an asynchronous interrupt event.",
+            "answer": "Devices, timers, and power failure events generate hardware interrupts. A scheduled job is a software entity managed by the scheduler, not an asynchronous interrupt event.",
             "answer_source": "generated",
             "chapter": "Unit 1"
         },
         {
             "question_number": "4",
-            "question_text": "What is the main function of the command interpreter?\n(A) To provide the interface between the API and application program\n(B) To handle the files in the operating system\n(C) To get and execute the next user-specified command\n(D) To use the allotted memory space",
+            "question_text": "What is the main function of the command interpreter?",
+            "options": [
+                "To provide the interface between the API and application program",
+                "To handle the files in the operating system",
+                "To get and execute the next user-specified command",
+                "To use the allotted memory space"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) To get and execute the next user-specified command\n\nRationale: The command interpreter (shell) reads commands specified by the user and executes them by invoking the corresponding system programs or system calls.",
+            "answer": "The command interpreter (shell) reads commands specified by the user and executes them by invoking the corresponding system programs or system calls.",
             "answer_source": "generated",
             "chapter": "Unit 1"
         },
         {
             "question_number": "5",
-            "question_text": "What is a process control block?\n(A) Process type variable\n(B) Data structure\n(C) A secondary storage section\n(D) A block in memory",
+            "question_text": "What is a process control block?",
+            "options": [
+                "Process type variable",
+                "Data structure",
+                "A secondary storage section",
+                "A block in memory"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Data structure\n\nRationale: A Process Control Block (PCB) is a data structure used by the operating system to store all the information related to a specific process.",
+            "answer": "A Process Control Block (PCB) is a data structure used by the operating system to store all the information related to a specific process.",
             "answer_source": "generated",
             "chapter": "Unit 2"
         },
         {
             "question_number": "6",
-            "question_text": "A single thread of control allows the process to perform _________\n(A) Only one task at a time\n(B) Multiple task at a time\n(C) Only two task at a time\n(D) Multiple program execution",
+            "question_text": "A single thread of control allows the process to perform _________",
+            "options": [
+                "Only one task at a time",
+                "Multiple task at a time",
+                "Only two task at a time",
+                "Multiple program execution"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Only one task at a time\n\nRationale: A single thread represents a single sequential flow of control, executing only one instruction/task at any given instant.",
+            "answer": "A single thread represents a single sequential flow of control, executing only one instruction/task at any given instant.",
             "answer_source": "generated",
             "chapter": "Unit 2"
         },
         {
             "question_number": "7",
-            "question_text": "What will happen when a process terminates?\n(A) It is removed from all queues\n(B) It is removed from all except the job queue\n(C) It's process control block is de-allocated\n(D) It's memory is released",
+            "question_text": "What will happen when a process terminates?",
+            "options": [
+                "It is removed from all queues",
+                "It is removed from all except the job queue",
+                "It's process control block is de-allocated",
+                "It's memory is released"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) It is removed from all queues\n\nRationale: Upon process termination, the operating system unlinks the process from all scheduling and ready/wait queues and reclaims its resources.",
+            "answer": "Upon process termination, the operating system unlinks the process from all scheduling and ready/wait queues and reclaims its resources.",
             "answer_source": "generated",
             "chapter": "Unit 2"
         },
         {
             "question_number": "8",
-            "question_text": "Which module gives control of the CPU to the process selected by the short term schedule?\n(A) Dispatcher\n(B) Interrupt\n(C) Scheduler\n(D) Counter",
+            "question_text": "Which module gives control of the CPU to the process selected by the short term schedule?",
+            "options": [
+                "Dispatcher",
+                "Interrupt",
+                "Scheduler",
+                "Counter"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Dispatcher\n\nRationale: The dispatcher module assigns control of the CPU to the process selected by the short-term scheduler, handling context switching and switching to user mode.",
+            "answer": "The dispatcher module assigns control of the CPU to the process selected by the short-term scheduler, handling context switching and switching to user mode.",
             "answer_source": "generated",
             "chapter": "Unit 2"
         },
         {
             "question_number": "9",
-            "question_text": "The interval from the time of submission of a process to the time of completion is turned as _________\n(A) Waiting time\n(B) Response time\n(C) Sleeping time\n(D) Turnaround time",
+            "question_text": "The interval from the time of submission of a process to the time of completion is turned as _________",
+            "options": [
+                "Waiting time",
+                "Response time",
+                "Sleeping time",
+                "Turnaround time"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Turnaround time\n\nRationale: Turnaround time is defined as the elapsed time between process submission and its final completion.",
+            "answer": "Turnaround time is defined as the elapsed time between process submission and its final completion.",
             "answer_source": "generated",
             "chapter": "Unit 3"
         },
         {
             "question_number": "10",
-            "question_text": "Which algorithm is defined in time quantum?\n(A) Shortest job scheduling\n(B) Round Robin scheduling\n(C) Priority scheduling\n(D) Multilevel queue scheduling",
+            "question_text": "Which algorithm is defined in time quantum?",
+            "options": [
+                "Shortest job scheduling",
+                "Round Robin scheduling",
+                "Priority scheduling",
+                "Multilevel queue scheduling"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Round Robin scheduling\n\nRationale: Round Robin (RR) scheduling uses a fixed unit of CPU time, called a time quantum or time slice, to schedule processes cyclically.",
+            "answer": "Round Robin (RR) scheduling uses a fixed unit of CPU time, called a time quantum or time slice, to schedule processes cyclically.",
             "answer_source": "generated",
             "chapter": "Unit 3"
         },
         {
             "question_number": "11",
-            "question_text": "A deadlock avoidance algorithm dynamically examines the _________ to ensure that a circular condition can never exist.\n(A) Resource allocation state\n(B) System storage state\n(C) Operating system\n(D) Resources",
+            "question_text": "A deadlock avoidance algorithm dynamically examines the _________ to ensure that a circular condition can never exist.",
+            "options": [
+                "Resource allocation state",
+                "System storage state",
+                "Operating system",
+                "Resources"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Resource allocation state\n\nRationale: Deadlock avoidance algorithms (such as Banker's algorithm) monitor the resource-allocation state dynamically to ensure the system always remains in a safe state.",
+            "answer": "Deadlock avoidance algorithms (such as Banker's algorithm) monitor the resource-allocation state dynamically to ensure the system always remains in a safe state.",
             "answer_source": "generated",
             "chapter": "Unit 3"
         },
         {
             "question_number": "12",
-            "question_text": "All unsafe states are _________\n(A) Deadlocks\n(B) Not deadlocks\n(C) Fatals\n(D) Blocks",
+            "question_text": "All unsafe states are _________",
+            "options": [
+                "Deadlocks",
+                "Not deadlocks",
+                "Fatals",
+                "Blocks"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Not deadlocks\n\nRationale: An unsafe state is not necessarily a deadlock state; rather, it is a state from which the system cannot guarantee avoiding a future deadlock under worst-case resource requests.",
+            "answer": "An unsafe state is not necessarily a deadlock state; rather, it is a state from which the system cannot guarantee avoiding a future deadlock under worst-case resource requests.",
             "answer_source": "generated",
             "chapter": "Unit 3"
         },
         {
             "question_number": "13",
-            "question_text": "In internal fragmentation memory is internal to a partition and _________\n(A) Is being used\n(B) Is not being used\n(C) Is always used\n(D) Is used when demanded",
+            "question_text": "In internal fragmentation memory is internal to a partition and _________",
+            "options": [
+                "Is being used",
+                "Is not being used",
+                "Is always used",
+                "Is used when demanded"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Is not being used\n\nRationale: Internal fragmentation occurs when allocated memory is slightly larger than the requested size, leaving unused wasted memory internal to the partition.",
+            "answer": "Internal fragmentation occurs when allocated memory is slightly larger than the requested size, leaving unused wasted memory internal to the partition.",
             "answer_source": "generated",
             "chapter": "Unit 4"
         },
         {
             "question_number": "14",
-            "question_text": "Logical memory is broken into blocks of the same size called _________\n(A) Frames\n(B) Pages\n(C) Backing store\n(D) Cubes",
+            "question_text": "Logical memory is broken into blocks of the same size called _________",
+            "options": [
+                "Frames",
+                "Pages",
+                "Backing store",
+                "Cubes"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Pages\n\nRationale: In paging memory management, logical address space is divided into fixed-size blocks called pages, while physical memory is divided into frames.",
+            "answer": "In paging memory management, logical address space is divided into fixed-size blocks called pages, while physical memory is divided into frames.",
             "answer_source": "generated",
             "chapter": "Unit 4"
         },
         {
             "question_number": "15",
-            "question_text": "The _________ is used as an index into the page table.\n(A) Frame bit\n(B) Page number\n(C) Page offset\n(D) Frame offset",
+            "question_text": "The _________ is used as an index into the page table.",
+            "options": [
+                "Frame bit",
+                "Page number",
+                "Page offset",
+                "Frame offset"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Page number\n\nRationale: The logical address generated by the CPU consists of a page number ($p$) and page offset ($d$). $p$ is used as an index into the page table to retrieve the physical frame number.",
+            "answer": "The logical address generated by the CPU consists of a page number ($p$) and page offset ($d$). $p$ is used as an index into the page table to retrieve the physical frame number.",
             "answer_source": "generated",
             "chapter": "Unit 4"
         },
         {
             "question_number": "16",
-            "question_text": "Paging increases the _________ time.\n(A) Sleeping\n(B) Waiting\n(C) Execution\n(D) Context-switching",
+            "question_text": "Paging increases the _________ time.",
+            "options": [
+                "Sleeping",
+                "Waiting",
+                "Execution",
+                "Context-switching"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Context-switching\n\nRationale: Paging increases context-switching overhead because the operating system must update hardware registers pointing to page tables or flush the TLB cache when switching processes.",
+            "answer": "Paging increases context-switching overhead because the operating system must update hardware registers pointing to page tables or flush the TLB cache when switching processes.",
             "answer_source": "generated",
             "chapter": "Unit 4"
         },
         {
             "question_number": "17",
-            "question_text": "Which principle states that programs, users and even the system be given just enough privileges to perform their task?\n(A) Principle of operating system\n(B) Principle of least privilege\n(C) Principle of process scheduling\n(D) Principle of revocation",
+            "question_text": "Which principle states that programs, users and even the system be given just enough privileges to perform their task?",
+            "options": [
+                "Principle of operating system",
+                "Principle of least privilege",
+                "Principle of process scheduling",
+                "Principle of revocation"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Principle of least privilege\n\nRationale: The Principle of Least Privilege requires that users and processes are granted only the minimum necessary permissions required to execute their assigned duties.",
+            "answer": "The Principle of Least Privilege requires that users and processes are granted only the minimum necessary permissions required to execute their assigned duties.",
             "answer_source": "generated",
             "chapter": "Unit 5"
         },
         {
             "question_number": "18",
-            "question_text": "For system protection, a process should access _________\n(A) All the resources\n(B) Only those resources for which it has authorization\n(C) Few resources but authorization is not required\n(D) External devices",
+            "question_text": "For system protection, a process should access _________",
+            "options": [
+                "All the resources",
+                "Only those resources for which it has authorization",
+                "Few resources but authorization is not required",
+                "External devices"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Only those resources for which it has authorization\n\nRationale: To enforce protection, processes must strictly be limited to accessing only authorized resources defined within their protection domain.",
+            "answer": "To enforce protection, processes must strictly be limited to accessing only authorized resources defined within their protection domain.",
             "answer_source": "generated",
             "chapter": "Unit 5"
         },
         {
             "question_number": "19",
-            "question_text": "When an attempt is to make a machine or network resources unavailable to its intend users, the attack is called _________\n(A) Denial-of-service attack\n(B) Slow read attack\n(C) Spoofed attack\n(D) Starvation attack",
+            "question_text": "When an attempt is to make a machine or network resources unavailable to its intend users, the attack is called _________",
+            "options": [
+                "Denial-of-service attack",
+                "Slow read attack",
+                "Spoofed attack",
+                "Starvation attack"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Denial-of-service attack\n\nRationale: A Denial-of-Service (DoS) attack aims to disrupt targeted services, making hardware or network resources inaccessible to authorized users.",
+            "answer": "A Denial-of-Service (DoS) attack aims to disrupt targeted services, making hardware or network resources inaccessible to authorized users.",
             "answer_source": "generated",
             "chapter": "Unit 5"
         },
         {
             "question_number": "20",
-            "question_text": "Why is it difficult to revoke capabilities?\n(A) They are too many\n(B) They are not defined precisely\n(C) They are distributed throughout the system\n(D) They are access incorrectly",
+            "question_text": "Why is it difficult to revoke capabilities?",
+            "options": [
+                "They are too many",
+                "They are not defined precisely",
+                "They are distributed throughout the system",
+                "They are access incorrectly"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) They are distributed throughout the system\n\nRationale: Capability lists are distributed among various domains/processes throughout the system, making global searches and dynamic revocation complex.",
+            "answer": "Capability lists are distributed among various domains/processes throughout the system, making global searches and dynamic revocation complex.",
             "answer_source": "generated",
             "chapter": "Unit 5"
         },
