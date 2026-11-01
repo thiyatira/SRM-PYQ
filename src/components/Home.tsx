@@ -1,6 +1,7 @@
 "use client";
 
 import PyqSection from "@/components/PyqSection";
+import ThemeToggle from "@/components/ThemeToggle";
 import { useDarkMode } from "@/hooks/useDarkMode";
 
 const FOCUS_RING =
@@ -22,19 +23,7 @@ export default function Home() {
           <div className="flex items-center gap-2">
             <span className="font-bold text-gray-900 dark:text-gray-100">SRM StudyHub</span>
           </div>
-          <button
-            type="button"
-            aria-pressed={dark}
-            aria-label="Dark mode"
-            className={`rounded px-3 py-1.5 text-sm font-medium border transition-colors duration-200 ${FOCUS_RING} ${
-              dark
-                ? "bg-blue-400 text-black border-blue-400 hover:bg-blue-300"
-                : "bg-blue-100 text-blue-900 border-blue-200 hover:bg-blue-200"
-            }`}
-            onClick={() => setDark((d) => !d)}
-          >
-            <span aria-hidden="true">{dark ? "☀️ Light" : "🌙 Dark"}</span>
-          </button>
+          <ThemeToggle dark={dark} onToggle={() => setDark((d) => !d)} />
         </div>
       </header>
 

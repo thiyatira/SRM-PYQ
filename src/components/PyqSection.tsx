@@ -51,6 +51,32 @@ function parseHash(hash: string, { getSubject }: Catalogue): { code: string; foc
   }
 }
 
+/** Parses `/semester/<id>`, `/semester/<id>/<code>` and `/subject/<code>` (case-insensitive code). */
+function parsePath(pathname: string, { allSubjects, getSemester }: Catalogue): NavState | null {
+  const seg = pathname.split("/").filter(Boolean).map((x) => {
+    try {
+      return decodeURIComponent(x);
+    } catch {
+      return x;
+    }
+  });
+  const find = (code: string) => allSubjects.find((s) => s.code.toLowerCase() === code.toLowerCase());
+  if (seg[0] === "semester" && seg[1]) {
+    const id = Number(seg[1]);
+    if (!getSemester(id)) return null;
+    if (seg[2]) {
+      const sub = find(seg[2]);
+      if (sub) return { view: "questions", subjectCode: sub.code };
+    }
+    return { view: "subjects", semesterId: id };
+  }
+  if (seg[0] === "subject" && seg[1]) {
+    const sub = find(seg[1]);
+    if (sub) return { view: "questions", subjectCode: sub.code };
+  }
+  return null;
+}
+
 const crumbLink =
   "font-medium transition-colors rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 text-[#7A5C1E] dark:text-amber-400 hover:underline";
 const crumbCurrent = "text-gray-900 dark:text-gray-100 font-semibold";
@@ -76,7 +102,10 @@ const PyqSection: React.FC = () => {
         setNav({ view: "questions", subjectCode: fromHash.code });
         setFocusId(fromHash.focusId);
       } else {
-        setNav(sanitizeNav(readJson<unknown>(NAV_KEY, null), catalogue));
+        setNav(
+          parsePath(window.location.pathname, catalogue) ??
+            sanitizeNav(readJson<unknown>(NAV_KEY, null), catalogue)
+        );
       }
       setRestored(true);
     }
@@ -92,18 +121,31 @@ const PyqSection: React.FC = () => {
     return () => window.removeEventListener("hashchange", onHashChange);
   }, [catalogue]);
 
-  // Persist navigation + keep the URL hash in sync (never before restore, or we'd clobber it).
+  // Persist navigation + keep the URL (path + hash) in sync, and report a page view to Google
+  // Analytics when it is loaded. Never before restore, or we'd clobber the incoming URL.
   useEffect(() => {
     if (!restored) return;
     writeJson(NAV_KEY, nav);
     const { pathname, search, hash } = window.location;
+    let path = "/";
+    if (nav.view === "subjects") path = `/semester/${nav.semesterId}`;
+    else if (nav.view === "questions") {
+      const sub = getSubject(nav.subjectCode);
+      path = sub ? `/semester/${sub.semester.id}/${encodeURIComponent(sub.code)}` : "/";
+    }
+    let nextHash = "";
     if (nav.view === "questions") {
       const wanted = `#pyq/${encodeURIComponent(nav.subjectCode)}`;
-      if (!hash.startsWith(wanted)) window.history.replaceState(null, "", `${pathname}${search}${wanted}`);
-    } else if (hash.startsWith("#pyq")) {
-      window.history.replaceState(null, "", `${pathname}${search}`);
+      nextHash = hash.startsWith(wanted) ? hash : wanted;
     }
-  }, [nav, restored]);
+    if (pathname !== path || hash !== nextHash) {
+      window.history.replaceState(null, "", `${path}${search}${nextHash}`);
+      const gtag = (window as unknown as { gtag?: (...a: unknown[]) => void }).gtag;
+      if (typeof gtag === "function") {
+        gtag("event", "page_view", { page_path: path, page_location: window.location.href });
+      }
+    }
+  }, [nav, restored, getSubject]);
 
   // After a user-initiated view change, bring the new view to the top and move focus into it.
   useEffect(() => {
