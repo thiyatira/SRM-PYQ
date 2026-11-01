@@ -159,7 +159,7 @@ function validateQuestion(rel, q, idx, seen, stats) {
   // answer
   if (typeof q.answer !== "string") {
     err(rel, `${where}: answer missing or not a string`);
-  } else if (q.answer.trim() === "") {
+  } else if (q.answer.trim() === "" && !(Array.isArray(q.options) && typeof q.correct_option === "string")) {
     warn(rel, `${where}: empty answer`);
   }
 
@@ -200,8 +200,30 @@ function validateQuestion(rel, q, idx, seen, stats) {
     }
   }
 
-  // MCQ consistency
-  if (typeof q.question_text === "string" && typeof q.answer === "string") {
+  // Structured MCQ: { question_text: stem, options: [...], correct_option: "C" | "A,C" | null, answer: explanation }
+  if (q.options !== undefined || q.correct_option !== undefined) {
+    if (!Array.isArray(q.options) || q.options.length < 2 || q.options.length > 8 || q.options.some((o) => typeof o !== "string" || o.trim() === "")) {
+      err(rel, `${where}: options must be an array of 2-8 non-empty strings`);
+    } else {
+      stats.mcq++;
+      const n = q.options.length;
+      if (q.correct_option === undefined || q.correct_option === null) {
+        warn(rel, `${where}: MCQ has no correct_option`);
+      } else if (typeof q.correct_option !== "string" || !/^[A-H](,[A-H])*$/.test(q.correct_option)) {
+        err(rel, `${where}: correct_option must be a letter like "C" (or "A,C" for several), got ${JSON.stringify(q.correct_option)}`);
+      } else if (q.correct_option.split(",").some((l) => "ABCDEFGH".indexOf(l) >= n)) {
+        err(rel, `${where}: correct_option ${q.correct_option} is outside the ${n} options`);
+      }
+      q.options.forEach((o, i) => {
+        if (/^\s*\(?[A-Ha-h][).]\s/.test(o)) warn(rel, `${where}: option ${i + 1} still starts with a letter marker: ${JSON.stringify(o.slice(0, 40))}`);
+        if (MOJIBAKE_RE.test(o)) err(rel, `${where}: option ${i + 1} has mojibake / replacement char`);
+        if (countFences(o) % 2 === 1) err(rel, `${where}: option ${i + 1} has an unclosed \`\`\` code fence`);
+        for (const p of checkMath(o).errors) err(rel, `${where}: option ${i + 1}: ${p}`);
+      });
+      if (new Set(q.options.map((o) => o.trim().toLowerCase())).size < n) warn(rel, `${where}: two options have identical text`);
+      if (mcqOptions(q.question_text ?? "").run.length >= 3) warn(rel, `${where}: options are still typed into question_text`);
+    }
+  } else if (typeof q.question_text === "string" && typeof q.answer === "string") {
     const { all, run } = mcqOptions(q.question_text);
     if (all.length > 0) {
       // Sub-parts of essay questions ("a) ... b) ...") are not MCQs, so only treat the question as an

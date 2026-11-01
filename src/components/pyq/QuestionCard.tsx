@@ -2,7 +2,7 @@
 
 import React, { memo, useId, useMemo, useState } from "react";
 import { markdownToHtml } from "@/lib/pyq/render";
-import type { Question } from "@/lib/pyq/loader";
+import { OPTION_LETTERS, type Question } from "@/lib/pyq/loader";
 import { useFlag } from "./hooks";
 
 const RICH =
@@ -37,17 +37,32 @@ function QuestionCardImpl({
   onToggleStar,
 }: Props) {
   const [open, setOpen] = useState(false);
+  const [selected, setSelected] = useState<number | null>(null);
   const [copied, flashCopied] = useFlag();
   const [copyFailed, flashFailed] = useFlag();
   const answerId = useId();
 
   const answerVisible = showAllAnswers || open;
+  const options = q.options;
+  const correct = q.correct ?? [];
   const questionHtml = useMemo(() => markdownToHtml(q.question_text), [q.question_text]);
+  // Option texts are only rendered (KaTeX/Prism) once, whatever the selection state.
+  const optionsHtml = useMemo(() => (options ? options.map((o) => markdownToHtml(o)) : []), [options]);
   // Only render (KaTeX/Prism) answers that are actually on screen.
   const answerHtml = useMemo(
     () => (answerVisible ? markdownToHtml(q.answer) : ""),
     [answerVisible, q.answer]
   );
+
+  function pickOption(i: number) {
+    setSelected(i);
+    setOpen(true);
+  }
+
+  function toggleAnswer() {
+    if (open) setSelected(null);
+    setOpen((v) => !v);
+  }
 
   const marks = q.marks;
   const marksLabel = marks === undefined ? null : `${marks} mark${marks === 1 ? "" : "s"}`;
@@ -75,6 +90,11 @@ function QuestionCardImpl({
       <div className="flex items-start justify-between gap-2">
         <div className="font-bold text-lg text-gray-900 dark:text-gray-100">
           Q{number}
+          {options && (
+            <span className="ml-2 align-middle rounded-full border border-blue-300 dark:border-blue-500/60 bg-blue-50 dark:bg-blue-900/30 px-2 py-0.5 text-xs font-semibold text-blue-800 dark:text-blue-200">
+              MCQ
+            </span>
+          )}
           {marksLabel && (
             <span className="font-normal text-base text-gray-700 dark:text-gray-300"> ({marksLabel})</span>
           )}
@@ -116,13 +136,60 @@ function QuestionCardImpl({
 
       <div className={`mt-1 text-gray-800 dark:text-gray-200 ${RICH}`} dangerouslySetInnerHTML={{ __html: questionHtml }} />
 
+      {options && (
+        <ol aria-label="Answer options" className="mt-3 space-y-2 list-none p-0">
+          {options.map((_, i) => {
+            const isCorrect = correct.includes(i);
+            const isPicked = selected === i;
+            const reveal = answerVisible && correct.length > 0;
+            const tone =
+              reveal && isCorrect
+                ? "border-green-500 bg-green-50 dark:bg-green-900/30 text-green-950 dark:text-green-100"
+                : reveal && isPicked
+                  ? "border-red-500 bg-red-50 dark:bg-red-900/30 text-red-950 dark:text-red-100"
+                  : isPicked
+                    ? "border-blue-500 bg-blue-50 dark:bg-blue-900/30 text-gray-900 dark:text-gray-100"
+                    : "border-gray-300 dark:border-neutral-600 bg-white dark:bg-neutral-800 text-gray-800 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-neutral-700";
+            const badge =
+              reveal && isCorrect
+                ? "bg-green-600 text-white border-green-600"
+                : reveal && isPicked
+                  ? "bg-red-600 text-white border-red-600"
+                  : isPicked
+                    ? "bg-blue-600 text-white border-blue-600"
+                    : "bg-gray-100 dark:bg-neutral-700 text-gray-700 dark:text-gray-200 border-gray-300 dark:border-neutral-500";
+            return (
+              <li key={i}>
+                <button
+                  type="button"
+                  aria-pressed={isPicked}
+                  onClick={() => pickOption(i)}
+                  className={`w-full flex items-start gap-3 text-left rounded-lg border px-3 py-2 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 ${tone}`}
+                >
+                  <span aria-hidden="true" className={`mt-0.5 flex-shrink-0 w-7 h-7 rounded-full border text-sm font-bold flex items-center justify-center ${badge}`}>
+                    {reveal && isCorrect ? "✓" : reveal && isPicked ? "✗" : OPTION_LETTERS[i]}
+                  </span>
+                  <span className="sr-only">Option {OPTION_LETTERS[i]}: </span>
+                  <span
+                    className={`min-w-0 flex-1 [&_p]:m-0 [&_p]:inline ${RICH}`}
+                    dangerouslySetInnerHTML={{ __html: optionsHtml[i] }}
+                  />
+                  {reveal && isCorrect && <span className="sr-only"> (correct answer)</span>}
+                  {reveal && isPicked && !isCorrect && <span className="sr-only"> (your choice, incorrect)</span>}
+                </button>
+              </li>
+            );
+          })}
+        </ol>
+      )}
+
       {!showAllAnswers && (
         <button
           type="button"
           aria-expanded={open}
           aria-controls={answerId}
           className="mt-3 mb-1 px-3 py-1 rounded border border-gray-400 dark:border-gray-500 bg-gray-100 dark:bg-neutral-700 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-neutral-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 transition-colors"
-          onClick={() => setOpen((v) => !v)}
+          onClick={toggleAnswer}
         >
           {open ? "Hide Answer" : "Show Answer"}
         </button>
@@ -131,11 +198,22 @@ function QuestionCardImpl({
         {answerVisible && (
           <div className="answer mt-2 bg-green-50 dark:bg-green-900/30 p-4 rounded text-gray-900 dark:text-green-100">
             <strong>Answer:</strong>{" "}
-            {answerHtml ? (
-              <span className={RICH} dangerouslySetInnerHTML={{ __html: answerHtml }} />
-            ) : (
-              <em className="text-gray-600 dark:text-gray-300">No answer available.</em>
+            {options && correct.length > 0 && (
+              <span className="font-semibold">
+                {correct.map((i) => `${OPTION_LETTERS[i]}`).join(", ")}
+                {correct.length === 1 ? (
+                  <>
+                    {". "}
+                    <span className={`font-semibold [&_p]:m-0 [&_p]:inline ${RICH}`} dangerouslySetInnerHTML={{ __html: optionsHtml[correct[0]] }} />
+                  </>
+                ) : null}
+              </span>
             )}
+            {answerHtml ? (
+              <div className={`${options && correct.length > 0 ? "mt-2" : "inline"} ${RICH}`} dangerouslySetInnerHTML={{ __html: answerHtml }} />
+            ) : !(options && correct.length > 0) ? (
+              <em className="text-gray-600 dark:text-gray-300">No answer available.</em>
+            ) : null}
           </div>
         )}
       </div>

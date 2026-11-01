@@ -5,9 +5,16 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "A singly linked list contains the elements: 5 -> 15 -> 25 -> 35 -> 45 -> NULL. What will be the output of the following pseudocode?\n\n```\nptr ← head \nwhile ptr ≠ NULL do \n print(ptr.data) \n ptr ← ptr.next.next \nend while\n\n```\n\nA. 5 15 25 35 45\nB. 5 25 45\nC. 45 25 5\nD. 5 15 35",
+            "question_text": "A singly linked list contains the elements: 5 -> 15 -> 25 -> 35 -> 45 -> NULL. What will be the output of the following pseudocode?\n\n```\nptr ← head \nwhile ptr ≠ NULL do \n print(ptr.data) \n ptr ← ptr.next.next \nend while\n\n```",
+            "options": [
+                "5 15 25 35 45",
+                "5 25 45",
+                "45 25 5",
+                "5 15 35"
+            ],
+            "correct_option": "B",
             "marks": null,
-            "answer": "B. 5 25 45\n\nRationale:\n- `ptr` starts at `head` (5), prints 5, then moves two steps ahead via `ptr.next.next` to 25.\n- `ptr` is now 25, prints 25, then moves two steps to 45.\n- `ptr` is now 45, prints 45, then moves two steps to NULL.\n- The loop terminates since `ptr == NULL`.",
+            "answer": "`ptr` starts at `head` (5), prints 5, then moves two steps ahead via `ptr.next.next` to 25.\n- `ptr` is now 25, prints 25, then moves two steps to 45.\n- `ptr` is now 45, prints 45, then moves two steps to NULL.\n- The loop terminates since `ptr == NULL`.",
             "answer_source": "provided",
             "chapter": "Unit 2: List Structure"
         },
@@ -21,9 +28,16 @@
         },
         {
             "question_number": "3",
-            "question_text": "Suppose a stack has a maximum size of 4. The following operations are performed:\n\n```\nPUSH(10),\nPUSH(20),\nPOP(),\nPUSH(30),\nPUSH(40),\nPUSH(50)\n\n```\n\nWhich elements are finally in the stack (from bottom to top)?\n\nA. 10, 30, 40, 50\nB. 20, 30, 40, 50\nC. 10, 30, 40\nD. 10, 20, 30, 40",
+            "question_text": "Suppose a stack has a maximum size of 4. The following operations are performed:\n\n```\nPUSH(10),\nPUSH(20),\nPOP(),\nPUSH(30),\nPUSH(40),\nPUSH(50)\n\n```\n\nWhich elements are finally in the stack (from bottom to top)?",
+            "options": [
+                "10, 30, 40, 50",
+                "20, 30, 40, 50",
+                "10, 30, 40",
+                "10, 20, 30, 40"
+            ],
+            "correct_option": "A",
             "marks": null,
-            "answer": "A. 10, 30, 40, 50\n\nRationale:\n1. PUSH(10) -> Stack: [10]\n2. PUSH(20) -> Stack: [10, 20]\n3. POP() -> Stack: [10] (removes 20)\n4. PUSH(30) -> Stack: [10, 30]\n5. PUSH(40) -> Stack: [10, 30, 40]\n6. PUSH(50) -> Stack: [10, 30, 40, 50]\nThe final elements from bottom to top are 10, 30, 40, 50.",
+            "answer": "1. PUSH(10) -> Stack: [10]\n2. PUSH(20) -> Stack: [10, 20]\n3. POP() -> Stack: [10] (removes 20)\n4. PUSH(30) -> Stack: [10, 30]\n5. PUSH(40) -> Stack: [10, 30, 40]\n6. PUSH(50) -> Stack: [10, 30, 40, 50]\nThe final elements from bottom to top are 10, 30, 40, 50.",
             "answer_source": "provided",
             "chapter": "Unit 3: Stack and Queue"
         },

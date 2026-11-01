@@ -96,7 +96,7 @@ Your task is to analyze a university examination question paper (or answer key) 
    If no answer key is present, generate high-quality, accurate, university-level solutions and set `answer_source` to "generated".
 5. Map each question to its corresponding unit in the syllabus (must include "Unit 1", "Unit 2", "Unit 3", "Unit 4", or "Unit 5").
 6. Output MUST be a single, valid JSON object and nothing else. Ensure all LaTeX math backslashes are properly escaped (e.g. \\\\int, \\\\alpha, \\\\theta).
-7. CRITICAL - Code Formatting: Whenever questions or answers contain code snippets, program fragments, or pseudocode (C, C++, Java, Python, SQL, etc.), you MUST wrap them in standard markdown code fences with the language identifier (e.g. ```java\n...\n```, ```c\n...\n```, ```python\n...\n```) and preserve exact indentation. Keep MCQ options (A, B, C, D) and question text outside the code block.
+7. CRITICAL - Code Formatting: Whenever questions or answers contain code snippets, program fragments, or pseudocode (C, C++, Java, Python, SQL, etc.), you MUST wrap them in standard markdown code fences with the language identifier (e.g. ```java\n...\n```, ```c\n...\n```, ```python\n...\n```) and preserve exact indentation. Put MCQ options in the `options` array (keep code inside an option fenced) and keep the question stem outside the code block.
 
 ### File Naming Specification for `formal_filename`:
 Pattern: `[Date/Year]_[ExamType]_[SetInfo]_[DocumentType].json`
@@ -127,9 +127,11 @@ Examples of `formal_filename`:
   "questions": [
     {
       "question_number": "<e.g., '1', '2', '21. a.', '3(b)'>",
-      "question_text": "<Full exact text. Preserve MCQ options (A), (B), (C), (D) on newlines. Use $...$ for inline math and $$...$$ for block math. Use markdown code fences for code snippets.>",
+      "question_text": "<Full exact text. For an MCQ this is the stem ONLY (no options). Use $...$ for inline math and $$...$$ for block math. Use markdown code fences for code snippets.>",
+      "options": ["<MCQ only: option A text, no letter marker>", "<option B text>", "<option C text>", "<option D text>"],
+      "correct_option": "<MCQ only: the correct option's letter, e.g. 'C' ('A,C' if several are correct), or null if unknown>",
       "marks": <Integer mark value, or null if not indicated>,
-      "answer": "<Accurate solution/explanation. For MCQs, provide correct choice letter followed by concise rationale.>",
+      "answer": "<Accurate solution/explanation. For MCQs, only the explanation (the letter goes in correct_option). Omit options/correct_option for non-MCQ questions.>",
       "answer_source": "<'provided' or 'generated'>",
       "chapter": "<Must include 'Unit 1', 'Unit 2', 'Unit 3', 'Unit 4', or 'Unit 5' (e.g. 'Unit 1: Introduction')>"
     }

@@ -1,271 +1,411 @@
 {
-  "formal_filename": "2024-05_ET_QP.json",
-  "paper_title": "B.Tech/ M.Tech (Integrated) DEGREE EXAMINATION, MAY 2024 - Third Semester - 21CSS201T - COMPUTER ORGANIZATION AND ARCHITECTURE",
-  "source": "2024-05 ET",
-  "questions": [
-    {
-      "question_number": "1",
-      "question_text": "The representation of hexadecimal number $(6DE)_H$ in decimal is ______.\n(A) $6\\times16^2+13\\times16^1+14\\times16^0$\n(B) $6\\times16^2+12\\times16^1+13\\times16^0$\n(C) $6\\times16^2+11\\times16^1+14\\times16^0$\n(D) $6\\times16^2+14\\times16^1+15\\times16^0$",
-      "marks": 1,
-      "answer": "(A) $6\\times16^2+13\\times16^1+14\\times16^0$, because D = 13 and E = 14 (the value is 1758).",
-      "answer_source": "generated",
-      "chapter": "Unit 1: Introduction to Number System and Logic Gates"
-    },
-    {
-      "question_number": "2",
-      "question_text": "1's complement of 1011101 is ______.\n(A) 0101110\n(B) 1001101\n(C) 0100010\n(D) 1100101",
-      "marks": 1,
-      "answer": "(C) 0100010. Every bit is inverted.",
-      "answer_source": "generated",
-      "chapter": "Unit 1: Introduction to Number System and Logic Gates"
-    },
-    {
-      "question_number": "3",
-      "question_text": "Which of the following gate will give a 0 when both of its inputs are 1?\n(A) AND\n(B) OR\n(C) NAND\n(D) EXOR",
-      "marks": 1,
-      "answer": "(C) NAND, since $\\overline{1\\cdot1} = 0$. Note: EX-OR also gives 0 for inputs 1,1 ($1\\oplus1 = 0$), so (D) is equally valid; the standard expected answer is NAND.",
-      "answer_source": "generated",
-      "chapter": "Unit 1: Introduction to Number System and Logic Gates"
-    },
-    {
-      "question_number": "4",
-      "question_text": "______ are universal gates.\n(A) NOT\n(B) NAND & NOR\n(C) AND\n(D) NOT, AND & OR",
-      "marks": 1,
-      "answer": "(B) NAND & NOR. Each of them alone can implement any Boolean function.",
-      "answer_source": "generated",
-      "chapter": "Unit 1: Introduction to Number System and Logic Gates"
-    },
-    {
-      "question_number": "5",
-      "question_text": "______ is the sequence of operation performed by CPU in processing an instruction.\n(A) Execute cycle\n(B) Fetch cycle\n(C) Decode\n(D) Instruction cycle",
-      "marks": 1,
-      "answer": "(D) Instruction cycle, which consists of fetch, decode and execute.",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "6",
-      "question_text": "A register capable of shifting its binary information either to the right or the left is called a ______.\n(A) Parallel register\n(B) Serial register\n(C) Shift register\n(D) Storage register",
-      "marks": 1,
-      "answer": "(C) Shift register (a bidirectional shift register).",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "7",
-      "question_text": "Which interrupt services save all the register and flags\n(A) Save interrupt\n(B) Input/ output interrupt\n(C) Service interrupt\n(D) Save and service interrupt",
-      "marks": 1,
-      "answer": "(A) Save interrupt. The save-interrupt routine saves all the registers and flags before the device is serviced.",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "8",
-      "question_text": "In multiple bus organization, the registers are collectively placed and referred to as ______.\n(A) Set registers\n(B) Register file\n(C) Register block\n(D) Map registers",
-      "marks": 1,
-      "answer": "(B) Register file.",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "9",
-      "question_text": "Which of the following is used for binary multiplication?\n(A) Restoring multiplication\n(B) Booth's algorithm\n(C) Pascal's rule\n(D) Digit-by-digit multiplication",
-      "marks": 1,
-      "answer": "(B) Booth's algorithm, which multiplies signed 2's complement binary numbers. (Restoring is a division method.)",
-      "answer_source": "generated",
-      "chapter": "Unit 3: Design of ALU"
-    },
-    {
-      "question_number": "10",
-      "question_text": "According to De-Morgan's theorem: NAND = ______.\n(A) Bubbled AND\n(B) Bubbled NOR\n(C) Bubbled XOR\n(D) Bubbled OR",
-      "marks": 1,
-      "answer": "(D) Bubbled OR. $\\overline{AB} = \\bar A + \\bar B$, which is an OR gate with inverted (bubbled) inputs.",
-      "answer_source": "generated",
-      "chapter": "Unit 1: Introduction to Number System and Logic Gates"
-    },
-    {
-      "question_number": "11",
-      "question_text": "The sign followed by the string of digits is called as ______.\n(A) Significant\n(B) Determinant\n(C) Mantissa\n(D) Exponent",
-      "marks": 1,
-      "answer": "(C) Mantissa. In floating-point notation, the sign and the string of significant digits form the mantissa.",
-      "answer_source": "generated",
-      "chapter": "Unit 3: Design of ALU"
-    },
-    {
-      "question_number": "12",
-      "question_text": "In 32 bit representation the scale factor as a range of ______.\n(A) -128 to 127\n(B) -256 to 255\n(C) 0 to 255\n(D) -128 to 255",
-      "marks": 1,
-      "answer": "(A) -128 to 127. The 8-bit signed scale factor (exponent) has range $-2^7$ to $2^7-1$. (In IEEE 754 excess-127 form, $E'$ is 0 to 255 and the normal exponents are -126 to +127.)",
-      "answer_source": "generated",
-      "chapter": "Unit 3: Design of ALU"
-    },
-    {
-      "question_number": "13",
-      "question_text": "What does the RUN signal do?\n(A) It causes the termination of a signal\n(B) It causes a particular signal to performs its operation\n(C) It causes a particular signal to end\n(D) It increments the step counter by one",
-      "marks": 1,
-      "answer": "(D) It increments the step counter by one. In hardwired control, when RUN = 1 the step counter advances at the end of every clock cycle.",
-      "answer_source": "generated",
-      "chapter": "Unit 4: Control Unit"
-    },
-    {
-      "question_number": "14",
-      "question_text": "The disadvantage/s of the hardwired approach is ______.\n(A) It is less flexible\n(B) It cannot be used for complex instructions\n(C) It is costly\n(D) Less flexile and cannot be used for complex instructions",
-      "marks": 1,
-      "answer": "(D) Less flexible and cannot be used for complex instructions. Changes need redesign of the circuitry, and complex instruction sets make the logic unmanageable.",
-      "answer_source": "generated",
-      "chapter": "Unit 4: Control Unit"
-    },
-    {
-      "question_number": "15",
-      "question_text": "In pipelining each stage is given ______ time for the operation.\n(A) Equal\n(B) Different\n(C) Infinite\n(D) No / zero",
-      "marks": 1,
-      "answer": "(A) Equal. All stages are given one clock cycle, which is set by the slowest stage.",
-      "answer_source": "generated",
-      "chapter": "Unit 4: Control Unit"
-    },
-    {
-      "question_number": "16",
-      "question_text": "The instruction processing unit fetches and decodes ______ and ______ instructions.\n(A) Vector, sub vector\n(B) Pipelines, parallel task\n(C) Scalar, vector\n(D) Pipelines, scalar",
-      "marks": 1,
-      "answer": "(C) Scalar, vector. In a vector processor, the instruction processing unit fetches/decodes both scalar and vector instructions and sends them to the scalar or vector pipelines.",
-      "answer_source": "generated",
-      "chapter": "Unit 4: Control Unit"
-    },
-    {
-      "question_number": "17",
-      "question_text": "MIMD stands for\n(A) Multiple input multiple data\n(B) Memory input multiple data\n(C) Multiple instruction multiple data\n(D) Memory instruction multiple data",
-      "marks": 1,
-      "answer": "(C) Multiple instruction multiple data.",
-      "answer_source": "generated",
-      "chapter": "Unit 5: Parallelism"
-    },
-    {
-      "question_number": "18",
-      "question_text": "When the processor is executing in ARM stage, then all instructions are ______ wide.\n(A) 8 bits\n(B) 16 bits\n(C) 32 bits\n(D) 64 bits",
-      "marks": 1,
-      "answer": "(C) 32 bits. In ARM state instructions are 32 bits wide; in Thumb state they are 16 bits.",
-      "answer_source": "generated",
-      "chapter": "Unit 5: Parallelism"
-    },
-    {
-      "question_number": "19",
-      "question_text": "The frequency of load / store instruction is around ______.\n(A) 20%\n(B) 10%\n(C) 40%\n(D) 67%",
-      "marks": 1,
-      "answer": "(C) 40%. Instruction-mix studies of RISC/ARM programs (Furber) show data-movement (load/store) instructions at about 40% of executed instructions, the largest single class.",
-      "answer_source": "generated",
-      "chapter": "Unit 5: Parallelism"
-    },
-    {
-      "question_number": "20",
-      "question_text": "During a write operation if the required block is not present in the cache then ______ occurs\n(A) Write miss\n(B) Write latency\n(C) Write hit\n(D) Write delay",
-      "marks": 1,
-      "answer": "(A) Write miss.",
-      "answer_source": "generated",
-      "chapter": "Unit 5: Parallelism"
-    },
-    {
-      "question_number": "21. a.",
-      "question_text": "Differentiate between decimal, binary, octal and hexadecimal.",
-      "marks": 8,
-      "answer": "| Feature | Decimal | Binary | Octal | Hexadecimal |\n|---|---|---|---|---|\n| Base (radix) | 10 | 2 | 8 | 16 |\n| Digits | 0 to 9 | 0, 1 | 0 to 7 | 0 to 9, A to F (10 to 15) |\n| Place weights | $10^i$ | $2^i$ | $8^i$ | $16^i$ |\n| Bits per digit | about 3.32 | 1 | 3 | 4 |\n| Usage | Human/everyday arithmetic | Internal representation in computers/logic circuits | Compact binary shorthand (Unix permissions, older systems) | Compact binary shorthand (memory addresses, machine code, colours) |\n| Example (value 26) | $26_{10}$ | $11010_2$ | $32_8$ | $1A_{16}$ |\n\n**Conversions:**\n- Decimal to base r: repeated division by r (integer part) and repeated multiplication by r (fraction part).\n- Base r to decimal: sum of digit × $r^i$.\n- Binary to octal: group bits in 3s; binary to hex: group in 4s (from the radix point).\n\nFor example, $11010110_2 = 326_8 = D6_{16} = 214_{10}$.\n\nBinary is the native machine form; octal and hexadecimal are shorthand for long binary strings and are easy to convert, while decimal is the natural form for humans.",
-      "answer_source": "generated",
-      "chapter": "Unit 1: Introduction to Number System and Logic Gates"
-    },
-    {
-      "question_number": "21. b.i.",
-      "question_text": "Subtract $111001_2$ from $101011_2$ using the 1's complement method.",
-      "marks": 4,
-      "answer": "Compute $101011 - 111001$ (that is, $43 - 57 = -14$).\n\n1's complement of 111001 is 000110.\n```\n  101011\n+ 000110\n--------\n  110001   (no end carry)\n```\nThere is no end-around carry, so the result is negative and is in 1's complement form. Taking the 1's complement of 110001 gives 001110.\n\n**Answer:** $-001110_2 = -14$.",
-      "answer_source": "generated",
-      "chapter": "Unit 1: Introduction to Number System and Logic Gates"
-    },
-    {
-      "question_number": "21. b.ii.",
-      "question_text": "Subtract $101011_2$ from $111001_2$ using the 2's complement method.",
-      "marks": 4,
-      "answer": "Compute $111001 - 101011$ (that is, $57 - 43 = 14$).\n\n2's complement of 101011 is $010100 + 1 = 010101$.\n```\n  111001\n+ 010101\n--------\n1 001110\n```\nAn end carry is produced, so the result is positive; the carry is discarded.\n\n**Answer:** $001110_2 = 14$.",
-      "answer_source": "generated",
-      "chapter": "Unit 1: Introduction to Number System and Logic Gates"
-    },
-    {
-      "question_number": "22. a.",
-      "question_text": "Give the control sequence for execution of instruction.",
-      "marks": 8,
-      "answer": "Execution of an instruction in a single-bus processor follows the fetch, decode and execute phases. Take **Add (R3), R1**, meaning $R1 \\leftarrow R1 + [[R3]]$:\n\n| Step | Control signals | Action |\n|---|---|---|\n| 1 | PC$_{out}$, MAR$_{in}$, Read, Select4, Add, Z$_{in}$ | Send PC to memory, compute PC+4 |\n| 2 | Z$_{out}$, PC$_{in}$, Y$_{in}$, WMFC | Update PC, wait for memory |\n| 3 | MDR$_{out}$, IR$_{in}$ | Load instruction into IR (decode) |\n| 4 | R3$_{out}$, MAR$_{in}$, Read | Operand address to memory |\n| 5 | R1$_{out}$, Y$_{in}$, WMFC | R1 into Y, wait for operand |\n| 6 | MDR$_{out}$, SelectY, Add, Z$_{in}$ | ALU adds |\n| 7 | Z$_{out}$, R1$_{in}$, End | Result to R1, next fetch |\n\nSteps 1 to 3 are the common fetch phase; steps 4 to 7 are the execute phase. For a branch, the execute phase is: step 4: Offset-field-of-IR$_{out}$, Add, Z$_{in}$; step 5: Z$_{out}$, PC$_{in}$, End.\n\nThe basic operations are register transfers ($R_{i,out}$, $R_{j,in}$), ALU operations, memory fetch (MAR, Read, WMFC, MDR) and memory store (MAR, MDR, Write, WMFC).",
-      "answer_source": "generated",
-      "chapter": "Unit 4: Control Unit"
-    },
-    {
-      "question_number": "22. b.",
-      "question_text": "Describe the importance of different addressing modes in computer architecture.",
-      "marks": 8,
-      "answer": "Addressing modes specify how the effective address (EA) of an operand is obtained.\n\n**Importance:**\n1. They give flexibility for high-level language constructs: constants, variables, pointers, arrays, records, stacks and loops.\n2. They reduce instruction length: register and indirect modes need fewer bits than full memory addresses.\n3. They give code relocatability and position independence (relative modes).\n4. They support efficient data-structure access (index, autoincrement/decrement).\n5. They reduce the number of instructions and memory accesses, which improves performance.\n\n**Modes with examples:**\n- **Immediate:** `MOV R0, #5`. The operand is in the instruction; good for constants.\n- **Register:** `ADD R1, R2`. Fast, with no memory access.\n- **Direct/absolute:** `MOV R1, NUM`. EA = NUM; for global variables.\n- **Indirect:** `MOV R1, (R2)`. EA = [R2]; for pointers.\n- **Index:** `MOV R1, 8(R2)`. EA = 8 + [R2]; for arrays and records.\n- **Base with index:** `(R1,R2)`, giving EA = [R1]+[R2]; for 2-D arrays.\n- **Relative:** `BR LOOP`. EA = [PC] + offset; for branches and relocatable code.\n- **Autoincrement:** `(R2)+`. For sequential list access and stack pop.\n- **Autodecrement:** `-(R2)`. For stack push.",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "23. a.",
-      "question_text": "Assume A = (+8) and B = (+5). Multiple these two numbers using booth algorithm show the step-by-step multiplication process.",
-      "marks": 8,
-      "answer": "Multiplicand $M = +8 = 01000$, so $-M = 11000$. Multiplier $Q = +5 = 00101$. A = 00000, $Q_{-1} = 0$, n = 5.\n\nBooth recoding of the multiplier 00101 (with an appended 0) gives $(0, +1, -1, +1, -1)$, which checks as $8 - 4 + 2 - 1 = 5$.\n\n| Step | $Q_0Q_{-1}$ | Operation | A | Q | $Q_{-1}$ |\n|---|---|---|---|---|---|\n| Init | | | 00000 | 00101 | 0 |\n| 1 | 10 | A = A − M = 11000 | 11000 | 00101 | 0 |\n| | | ASHR | 11100 | 00010 | 1 |\n| 2 | 01 | A = A + M = 00100 | 00100 | 00010 | 1 |\n| | | ASHR | 00010 | 00001 | 0 |\n| 3 | 10 | A = A − M = 11010 | 11010 | 00001 | 0 |\n| | | ASHR | 11101 | 00000 | 1 |\n| 4 | 01 | A = A + M = 00101 | 00101 | 00000 | 1 |\n| | | ASHR | 00010 | 10000 | 0 |\n| 5 | 00 | ASHR | 00001 | 01000 | 0 |\n\nProduct $AQ = 00001\\,01000 = 0000101000_2 = 40$. Check: $8\\times5 = 40$.",
-      "answer_source": "generated",
-      "chapter": "Unit 3: Design of ALU"
-    },
-    {
-      "question_number": "23. b.",
-      "question_text": "Write the IEEE 754 format for representing floating point number in single precision and double precision format represent the decimal number 10.25 using IEEE 754 single precision floating point format.",
-      "marks": 8,
-      "answer": "**Formats:** value $= (-1)^S \\times 1.M \\times 2^{E-\\text{bias}}$\n\n| Format | Sign | Exponent | Mantissa | Bias | Total |\n|---|---|---|---|---|---|\n| Single | 1 bit (31) | 8 bits (30 to 23) | 23 bits (22 to 0) | 127 | 32 |\n| Double | 1 bit (63) | 11 bits (62 to 52) | 52 bits (51 to 0) | 1023 | 64 |\n\nExponent values of all 0s and all 1s are reserved for zero/denormals and for infinity/NaN.\n\n**10.25 in single precision:**\n1. $10 = 1010_2$ and $0.25 = 0.01_2$, so $10.25 = 1010.01_2$.\n2. Normalise: $1.01001 \\times 2^3$.\n3. Sign S = 0 (positive).\n4. Biased exponent $= 3 + 127 = 130 = 10000010_2$.\n5. Mantissa (after the hidden 1) $= 01001000000000000000000$.\n\n$$0\\ |\\ 10000010\\ |\\ 01001000000000000000000$$\n\nIn hexadecimal: $0100\\,0001\\,0010\\,0100\\,0000\\ldots = \\mathbf{41240000_{16}}$.",
-      "answer_source": "generated",
-      "chapter": "Unit 3: Design of ALU"
-    },
-    {
-      "question_number": "24. a.",
-      "question_text": "Find the complete control sequence for execution of the instruction Add(R3), R1 for the single bus CPU.",
-      "marks": 8,
-      "answer": "Instruction: $R1 \\leftarrow [R1] + [[R3]]$, single internal bus with Y and Z registers.\n\n| Step | Control signals |\n|---|---|\n| 1 | PC$_{out}$, MAR$_{in}$, Read, Select4, Add, Z$_{in}$ |\n| 2 | Z$_{out}$, PC$_{in}$, Y$_{in}$, WMFC |\n| 3 | MDR$_{out}$, IR$_{in}$ |\n| 4 | R3$_{out}$, MAR$_{in}$, Read |\n| 5 | R1$_{out}$, Y$_{in}$, WMFC |\n| 6 | MDR$_{out}$, SelectY, Add, Z$_{in}$ |\n| 7 | Z$_{out}$, R1$_{in}$, End |\n\n**Explanation:**\n1. The PC contents are loaded into MAR and a memory read starts; at the same time the ALU computes PC+4 (Select4) into Z.\n2. The incremented PC is written back (it is also latched into Y), and the CPU waits for MFC.\n3. The fetched word in MDR is moved to IR and decoded.\n4. The contents of R3 (the operand address) go to MAR and a read is started.\n5. R1 is moved to Y while the CPU waits for memory.\n6. The operand from MDR is added to Y and the sum is held in Z.\n7. Z is moved to R1, and End starts a new fetch cycle.",
-      "answer_source": "generated",
-      "chapter": "Unit 4: Control Unit"
-    },
-    {
-      "question_number": "24. b.",
-      "question_text": "Discuss about branch prediction with example.",
-      "marks": 8,
-      "answer": "**Branch prediction** guesses the outcome of a conditional branch (taken or not taken) before it is resolved, so the pipeline can keep fetching speculatively and avoid the branch penalty. If the guess is wrong, the speculatively fetched instructions are flushed (misprediction penalty).\n\n**Static prediction** (fixed at compile time or by hardware rule):\n- Always not-taken: keep fetching sequentially.\n- Always taken.\n- BTFN (backward taken, forward not taken): good for loops.\n- A compiler hint bit in the instruction.\n\n**Dynamic prediction** (uses run-time history):\n- **1-bit predictor:** remember the last outcome (T or NT). For a loop it mispredicts twice per loop execution (first and last iterations).\n- **2-bit saturating counter:** four states: Strongly Taken (ST), Likely Taken (LT), Likely Not-taken (LNT), Strongly Not-taken (SNT). The prediction changes only after two consecutive mispredictions.\n- A **Branch Target Buffer (BTB)** stores the branch address, the target address and the prediction bits, so the target can be fetched in the IF stage.\n- Correlating/two-level (gshare) and tournament predictors use global history.\n\n**Example:**\n```\nLOOP: ...\n      DEC R1\n      BNZ LOOP   ; executed 10 times\n```\nWith a 2-bit predictor in the ST state, the branch is predicted taken on every iteration and mispredicted only at loop exit (once per 10 executions, 90% accuracy). When the loop is entered again it is still predicted correctly, because one miss only moves the state to LT. A 1-bit predictor would miss twice each time the loop runs.\n\n**Benefit:** effective CPI $= 1 + (\\text{branch freq} \\times \\text{mispredict rate} \\times \\text{penalty})$, so higher accuracy gives fewer stalls.",
-      "answer_source": "generated",
-      "chapter": "Unit 4: Control Unit"
-    },
-    {
-      "question_number": "25. a.",
-      "question_text": "Explain in detail about MESI protocol with a neat diagram.",
-      "marks": 8,
-      "answer": "MESI is a write-invalidate snoopy cache-coherence protocol (used by Intel Pentium and others) for write-back caches. Each cache line has 2 state bits:\n\n- **M (Modified):** valid only in this cache and dirty (differs from memory); it must be written back before others can read it.\n- **E (Exclusive):** valid only in this cache and clean (same as memory); it can be written without a bus transaction (E→M).\n- **S (Shared):** possibly in several caches, clean.\n- **I (Invalid):** the line is not valid.\n\n**State transitions (diagram description):**\n\n*Processor-side events:*\n- I, read miss: if other caches have a copy, go to **S**; otherwise go to **E** (memory supplies the data).\n- I, write miss: issue read-with-intent-to-modify (RWITM), invalidating others; go to **M**.\n- S, read hit: stay S. S, write hit: broadcast invalidate; go to **M**.\n- E, read hit: stay E. E, write hit: go to **M** (silently).\n- M, read or write hit: stay M.\n\n*Snooped bus events (another processor):*\n- M, snooped read: write the line back (or supply it); go to **S**. M, snooped RWITM/invalidate: write back; go to **I**.\n- E, snooped read: go to **S**. E, snooped write/RWITM: go to **I**.\n- S, snooped invalidate/write: go to **I**.\n\n**Diagram:** four circles M, E, S and I with arrows labelled with the events above (RH = read hit, RMS = read miss shared, RME = read miss exclusive, WH = write hit, WM = write miss, SHR = snoop hit on read, SHW = snoop hit on write).\n\n**Advantages:** the E state avoids bus traffic for private data, write-backs reduce memory traffic, and coherence is guaranteed (single writer, multiple readers).",
-      "answer_source": "generated",
-      "chapter": "Unit 5: Parallelism"
-    },
-    {
-      "question_number": "25. b.",
-      "question_text": "The parallel computer architecture adds a new dimension in the development of computer system by using more and more number of processor. In principle, performance of a single processor at a given point of time. Justify and describe the need of parallelism. Compare which types of parallelism is need for the real time scenario.",
-      "marks": 8,
-      "answer": "**Justification / need for parallelism:**\n- Single-processor performance is limited by clock frequency, the power wall (power grows with $V^2f$), the memory wall and the ILP wall. Performance is achieved more cheaply by using many processors together.\n- Applications such as weather modelling, AI/ML training, video processing, scientific simulation, databases and web servers need throughput far beyond one core.\n- Parallelism gives higher throughput, lower response time, scalability (speed-up), fault tolerance/reliability and better cost/performance.\n- Speed-up is bounded by Amdahl's law: $S = \\dfrac{1}{(1-f) + f/p}$, so programs must expose a large parallel fraction f.\n\n**Types of parallelism (comparison):**\n\n| Type | Granularity | Exploited by | Example |\n|---|---|---|---|\n| Bit-level | Word size | ALU width | 64-bit ALU |\n| Instruction-level (ILP) | Fine | Pipelining, superscalar, VLIW, OOO execution | CPU cores |\n| Data-level (DLP) | Fine/medium | SIMD, vector units, GPUs | Image filters, matrix multiplication |\n| Thread/Task-level (TLP) | Medium/coarse | Multi-core, multithreading, MIMD | Web server threads |\n| Job/Process-level | Coarse | Clusters, distributed systems | Batch jobs, cloud |\n\n**Real-time scenario:** real-time systems (autonomous vehicles, video streaming, robotics, online transaction processing) need predictable, low-latency responses, and are best served by a combination of:\n- **Task/thread-level parallelism (MIMD multi-core)**, so that independent tasks (sensing, control, communication) run concurrently on dedicated cores with deterministic scheduling.\n- **Data-level parallelism (SIMD/GPU)** for the heavy, regular computation inside each task, for example image or sensor processing.\n\nILP is exploited automatically within each core. In short, TLP combined with DLP is preferred for real-time systems, because it gives both concurrency of tasks and the throughput needed to meet deadlines.",
-      "answer_source": "generated",
-      "chapter": "Unit 5: Parallelism"
-    },
-    {
-      "question_number": "26.",
-      "question_text": "An instruction is stores at location 300 with its address field at location 301. The address field has the value 400. A processor register R1 contains the number 200. Evaluate the effective address if the addressing mode of the instruction is.\n(i) direct\n(ii) immediate\n(iii) relative\n(iv) register indirect\n(v) index with R1 as the index register",
-      "marks": 15,
-      "answer": "The instruction occupies two words: the opcode/mode at 300 and the address field (= 400) at 301. After the instruction is fetched, PC = 302. R1 = 200.\n\n| Mode | Calculation | Effective address |\n|---|---|---|\n| (i) Direct | EA = address field | **400** |\n| (ii) Immediate | The operand is the address field itself, stored at 301 | **301** (operand = 400) |\n| (iii) Relative | EA = PC + address field = 302 + 400 | **702** |\n| (iv) Register indirect | EA = [R1] | **200** |\n| (v) Index (R1 as index) | EA = address field + [R1] = 400 + 200 | **600** |\n\n**Explanation:**\n- *Direct:* the address part of the instruction is the effective address of the operand.\n- *Immediate:* the operand is part of the instruction, so it is located at the word following the opcode (301).\n- *Relative:* the address field is a displacement added to the updated program counter. The PC has already advanced past both words, to 302.\n- *Register indirect:* the register holds the address of the operand.\n- *Index:* the address field gives the base, and it is added to the contents of the index register.",
-      "answer_source": "generated",
-      "chapter": "Unit 2: Basic structure of computers"
-    },
-    {
-      "question_number": "27.",
-      "question_text": "Demonstrate the general configuration of micro programmed control unit with a neat block diagram.",
-      "marks": 15,
-      "answer": "In a **microprogrammed control unit** the control signals are stored as microinstructions (control words) in a control memory (ROM), instead of being generated by fixed logic.\n\n**Block diagram (components and flow):**\n```\n IR (opcode) --> [Starting & branch address generator] <-- condition codes / status flags\n                         |                         <-- external inputs\n                         v\n               [ uPC (control address register) ] <-- clock\n                         |\n                         v\n               [ Control memory (ROM) ]\n                         |\n                         v\n               [ Control data register / microinstruction ]\n                  |                         |\n          control signals            next-address fields --> back to generator\n```\n\n**Components:**\n1. **Instruction Register (IR):** the opcode is mapped to the starting address of its micro-routine.\n2. **Starting and branch address generator (sequencer/mapping logic):** loads μPC with (a) the mapped start address for a new instruction, (b) the branch address from the microinstruction when a condition (Z, N, C, V, interrupt) is true, or (c) the fetch micro-routine start address at End.\n3. **Microprogram counter (μPC / control address register):** holds the address of the next microinstruction and is normally incremented each clock.\n4. **Control memory (control store):** a ROM holding all micro-routines (fetch, address modes, execute for each opcode).\n5. **Control data register (microinstruction register):** holds the current microinstruction. Its micro-operation fields are decoded to generate the control signals, and its condition and next-address fields drive sequencing.\n\n**Operation:**\n1. At the start, μPC points to the fetch micro-routine, which fetches the instruction into IR.\n2. The mapping logic converts the opcode into the start address of the execute routine and loads it into μPC.\n3. Each clock, the microinstruction at [μPC] is read and its control signals are asserted; μPC is incremented, or loaded with a branch address depending on the status flags.\n4. When the End microinstruction is reached, μPC returns to the fetch routine.\n\n**Microinstruction formats:** *horizontal* (one bit per signal: wide words, highly parallel, fast) or *vertical* (encoded fields: compact, needs decoders, slower).\n\n**Comparison with hardwired control:** microprogrammed control is flexible and easy to modify or extend (by changing the ROM), systematic, and suits complex CISC instruction sets. It is slower, because a control-memory access is needed per step, and it needs extra memory.",
-      "answer_source": "generated",
-      "chapter": "Unit 4: Control Unit"
-    }
-  ]
+    "formal_filename": "2024-05_ET_QP.json",
+    "paper_title": "B.Tech/ M.Tech (Integrated) DEGREE EXAMINATION, MAY 2024 - Third Semester - 21CSS201T - COMPUTER ORGANIZATION AND ARCHITECTURE",
+    "source": "2024-05 ET",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "The representation of hexadecimal number $(6DE)_H$ in decimal is ______.",
+            "options": [
+                "$6\\times16^2+13\\times16^1+14\\times16^0$",
+                "$6\\times16^2+12\\times16^1+13\\times16^0$",
+                "$6\\times16^2+11\\times16^1+14\\times16^0$",
+                "$6\\times16^2+14\\times16^1+15\\times16^0$"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Because D = 13 and E = 14, $(6DE)_{16} = 6\\times16^2+13\\times16^1+14\\times16^0 = 1758$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "2",
+            "question_text": "1's complement of 1011101 is ______.",
+            "options": [
+                "0101110",
+                "1001101",
+                "0100010",
+                "1100101"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Every bit is inverted.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "3",
+            "question_text": "Which of the following gate will give a 0 when both of its inputs are 1?",
+            "options": [
+                "AND",
+                "OR",
+                "NAND",
+                "EXOR"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "A NAND gate outputs 0 only when both inputs are 1, since $\\overline{1\\cdot1} = 0$. Note: EX-OR also gives 0 for inputs 1,1 ($1\\oplus1 = 0$), so (D) is equally valid; the standard expected answer is NAND.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "4",
+            "question_text": "______ are universal gates.",
+            "options": [
+                "NOT",
+                "NAND & NOR",
+                "AND",
+                "NOT, AND & OR"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Each of them alone can implement any Boolean function.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "5",
+            "question_text": "______ is the sequence of operation performed by CPU in processing an instruction.",
+            "options": [
+                "Execute cycle",
+                "Fetch cycle",
+                "Decode",
+                "Instruction cycle"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "The instruction cycle is the sequence of operations the CPU performs to process an instruction; it consists of fetch, decode and execute.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "6",
+            "question_text": "A register capable of shifting its binary information either to the right or the left is called a ______.",
+            "options": [
+                "Parallel register",
+                "Serial register",
+                "Shift register",
+                "Storage register"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "A shift register (a bidirectional shift register) can shift its binary information either to the right or to the left.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "7",
+            "question_text": "Which interrupt services save all the register and flags",
+            "options": [
+                "Save interrupt",
+                "Input/ output interrupt",
+                "Service interrupt",
+                "Save and service interrupt"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "The save-interrupt routine saves all the registers and flags before the device is serviced.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "8",
+            "question_text": "In multiple bus organization, the registers are collectively placed and referred to as ______.",
+            "options": [
+                "Set registers",
+                "Register file",
+                "Register block",
+                "Map registers"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "9",
+            "question_text": "Which of the following is used for binary multiplication?",
+            "options": [
+                "Restoring multiplication",
+                "Booth's algorithm",
+                "Pascal's rule",
+                "Digit-by-digit multiplication"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Booth's algorithm multiplies signed 2's complement binary numbers. (Restoring is a division method.)",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "10",
+            "question_text": "According to De-Morgan's theorem: NAND = ______.",
+            "options": [
+                "Bubbled AND",
+                "Bubbled NOR",
+                "Bubbled XOR",
+                "Bubbled OR"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "$\\overline{AB} = \\bar A + \\bar B$, which is an OR gate with inverted (bubbled) inputs.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "11",
+            "question_text": "The sign followed by the string of digits is called as ______.",
+            "options": [
+                "Significant",
+                "Determinant",
+                "Mantissa",
+                "Exponent"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "In floating-point notation, the sign and the string of significant digits form the mantissa.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "12",
+            "question_text": "In 32 bit representation the scale factor as a range of ______.",
+            "options": [
+                "-128 to 127",
+                "-256 to 255",
+                "0 to 255",
+                "-128 to 255"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "The 8-bit signed scale factor (exponent) has range $-2^7$ to $2^7-1$. (In IEEE 754 excess-127 form, $E'$ is 0 to 255 and the normal exponents are -126 to +127.)",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "13",
+            "question_text": "What does the RUN signal do?",
+            "options": [
+                "It causes the termination of a signal",
+                "It causes a particular signal to performs its operation",
+                "It causes a particular signal to end",
+                "It increments the step counter by one"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "In hardwired control, when RUN = 1 the step counter advances at the end of every clock cycle.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "14",
+            "question_text": "The disadvantage/s of the hardwired approach is ______.",
+            "options": [
+                "It is less flexible",
+                "It cannot be used for complex instructions",
+                "It is costly",
+                "Less flexile and cannot be used for complex instructions"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "Less flexible and cannot be used for complex instructions. Changes need redesign of the circuitry, and complex instruction sets make the logic unmanageable.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "15",
+            "question_text": "In pipelining each stage is given ______ time for the operation.",
+            "options": [
+                "Equal",
+                "Different",
+                "Infinite",
+                "No / zero"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "All stages are given one clock cycle, which is set by the slowest stage.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "16",
+            "question_text": "The instruction processing unit fetches and decodes ______ and ______ instructions.",
+            "options": [
+                "Vector, sub vector",
+                "Pipelines, parallel task",
+                "Scalar, vector",
+                "Pipelines, scalar"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "In a vector processor, the instruction processing unit fetches/decodes both scalar and vector instructions and sends them to the scalar or vector pipelines.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "17",
+            "question_text": "MIMD stands for",
+            "options": [
+                "Multiple input multiple data",
+                "Memory input multiple data",
+                "Multiple instruction multiple data",
+                "Memory instruction multiple data"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "18",
+            "question_text": "When the processor is executing in ARM stage, then all instructions are ______ wide.",
+            "options": [
+                "8 bits",
+                "16 bits",
+                "32 bits",
+                "64 bits"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "In ARM state instructions are 32 bits wide; in Thumb state they are 16 bits.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "19",
+            "question_text": "The frequency of load / store instruction is around ______.",
+            "options": [
+                "20%",
+                "10%",
+                "40%",
+                "67%"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Instruction-mix studies of RISC/ARM programs (Furber) show data-movement (load/store) instructions at about 40% of executed instructions, the largest single class.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "20",
+            "question_text": "During a write operation if the required block is not present in the cache then ______ occurs",
+            "options": [
+                "Write miss",
+                "Write latency",
+                "Write hit",
+                "Write delay"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "21. a.",
+            "question_text": "Differentiate between decimal, binary, octal and hexadecimal.",
+            "marks": 8,
+            "answer": "| Feature | Decimal | Binary | Octal | Hexadecimal |\n|---|---|---|---|---|\n| Base (radix) | 10 | 2 | 8 | 16 |\n| Digits | 0 to 9 | 0, 1 | 0 to 7 | 0 to 9, A to F (10 to 15) |\n| Place weights | $10^i$ | $2^i$ | $8^i$ | $16^i$ |\n| Bits per digit | about 3.32 | 1 | 3 | 4 |\n| Usage | Human/everyday arithmetic | Internal representation in computers/logic circuits | Compact binary shorthand (Unix permissions, older systems) | Compact binary shorthand (memory addresses, machine code, colours) |\n| Example (value 26) | $26_{10}$ | $11010_2$ | $32_8$ | $1A_{16}$ |\n\n**Conversions:**\n- Decimal to base r: repeated division by r (integer part) and repeated multiplication by r (fraction part).\n- Base r to decimal: sum of digit × $r^i$.\n- Binary to octal: group bits in 3s; binary to hex: group in 4s (from the radix point).\n\nFor example, $11010110_2 = 326_8 = D6_{16} = 214_{10}$.\n\nBinary is the native machine form; octal and hexadecimal are shorthand for long binary strings and are easy to convert, while decimal is the natural form for humans.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "21. b.i.",
+            "question_text": "Subtract $111001_2$ from $101011_2$ using the 1's complement method.",
+            "marks": 4,
+            "answer": "Compute $101011 - 111001$ (that is, $43 - 57 = -14$).\n\n1's complement of 111001 is 000110.\n```\n  101011\n+ 000110\n--------\n  110001   (no end carry)\n```\nThere is no end-around carry, so the result is negative and is in 1's complement form. Taking the 1's complement of 110001 gives 001110.\n\n**Answer:** $-001110_2 = -14$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "21. b.ii.",
+            "question_text": "Subtract $101011_2$ from $111001_2$ using the 2's complement method.",
+            "marks": 4,
+            "answer": "Compute $111001 - 101011$ (that is, $57 - 43 = 14$).\n\n2's complement of 101011 is $010100 + 1 = 010101$.\n```\n  111001\n+ 010101\n--------\n1 001110\n```\nAn end carry is produced, so the result is positive; the carry is discarded.\n\n**Answer:** $001110_2 = 14$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "22. a.",
+            "question_text": "Give the control sequence for execution of instruction.",
+            "marks": 8,
+            "answer": "Execution of an instruction in a single-bus processor follows the fetch, decode and execute phases. Take **Add (R3), R1**, meaning $R1 \\leftarrow R1 + [[R3]]$:\n\n| Step | Control signals | Action |\n|---|---|---|\n| 1 | PC$_{out}$, MAR$_{in}$, Read, Select4, Add, Z$_{in}$ | Send PC to memory, compute PC+4 |\n| 2 | Z$_{out}$, PC$_{in}$, Y$_{in}$, WMFC | Update PC, wait for memory |\n| 3 | MDR$_{out}$, IR$_{in}$ | Load instruction into IR (decode) |\n| 4 | R3$_{out}$, MAR$_{in}$, Read | Operand address to memory |\n| 5 | R1$_{out}$, Y$_{in}$, WMFC | R1 into Y, wait for operand |\n| 6 | MDR$_{out}$, SelectY, Add, Z$_{in}$ | ALU adds |\n| 7 | Z$_{out}$, R1$_{in}$, End | Result to R1, next fetch |\n\nSteps 1 to 3 are the common fetch phase; steps 4 to 7 are the execute phase. For a branch, the execute phase is: step 4: Offset-field-of-IR$_{out}$, Add, Z$_{in}$; step 5: Z$_{out}$, PC$_{in}$, End.\n\nThe basic operations are register transfers ($R_{i,out}$, $R_{j,in}$), ALU operations, memory fetch (MAR, Read, WMFC, MDR) and memory store (MAR, MDR, Write, WMFC).",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "22. b.",
+            "question_text": "Describe the importance of different addressing modes in computer architecture.",
+            "marks": 8,
+            "answer": "Addressing modes specify how the effective address (EA) of an operand is obtained.\n\n**Importance:**\n1. They give flexibility for high-level language constructs: constants, variables, pointers, arrays, records, stacks and loops.\n2. They reduce instruction length: register and indirect modes need fewer bits than full memory addresses.\n3. They give code relocatability and position independence (relative modes).\n4. They support efficient data-structure access (index, autoincrement/decrement).\n5. They reduce the number of instructions and memory accesses, which improves performance.\n\n**Modes with examples:**\n- **Immediate:** `MOV R0, #5`. The operand is in the instruction; good for constants.\n- **Register:** `ADD R1, R2`. Fast, with no memory access.\n- **Direct/absolute:** `MOV R1, NUM`. EA = NUM; for global variables.\n- **Indirect:** `MOV R1, (R2)`. EA = [R2]; for pointers.\n- **Index:** `MOV R1, 8(R2)`. EA = 8 + [R2]; for arrays and records.\n- **Base with index:** `(R1,R2)`, giving EA = [R1]+[R2]; for 2-D arrays.\n- **Relative:** `BR LOOP`. EA = [PC] + offset; for branches and relocatable code.\n- **Autoincrement:** `(R2)+`. For sequential list access and stack pop.\n- **Autodecrement:** `-(R2)`. For stack push.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "23. a.",
+            "question_text": "Assume A = (+8) and B = (+5). Multiple these two numbers using booth algorithm show the step-by-step multiplication process.",
+            "marks": 8,
+            "answer": "Multiplicand $M = +8 = 01000$, so $-M = 11000$. Multiplier $Q = +5 = 00101$. A = 00000, $Q_{-1} = 0$, n = 5.\n\nBooth recoding of the multiplier 00101 (with an appended 0) gives $(0, +1, -1, +1, -1)$, which checks as $8 - 4 + 2 - 1 = 5$.\n\n| Step | $Q_0Q_{-1}$ | Operation | A | Q | $Q_{-1}$ |\n|---|---|---|---|---|---|\n| Init | | | 00000 | 00101 | 0 |\n| 1 | 10 | A = A − M = 11000 | 11000 | 00101 | 0 |\n| | | ASHR | 11100 | 00010 | 1 |\n| 2 | 01 | A = A + M = 00100 | 00100 | 00010 | 1 |\n| | | ASHR | 00010 | 00001 | 0 |\n| 3 | 10 | A = A − M = 11010 | 11010 | 00001 | 0 |\n| | | ASHR | 11101 | 00000 | 1 |\n| 4 | 01 | A = A + M = 00101 | 00101 | 00000 | 1 |\n| | | ASHR | 00010 | 10000 | 0 |\n| 5 | 00 | ASHR | 00001 | 01000 | 0 |\n\nProduct $AQ = 00001\\,01000 = 0000101000_2 = 40$. Check: $8\\times5 = 40$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "23. b.",
+            "question_text": "Write the IEEE 754 format for representing floating point number in single precision and double precision format represent the decimal number 10.25 using IEEE 754 single precision floating point format.",
+            "marks": 8,
+            "answer": "**Formats:** value $= (-1)^S \\times 1.M \\times 2^{E-\\text{bias}}$\n\n| Format | Sign | Exponent | Mantissa | Bias | Total |\n|---|---|---|---|---|---|\n| Single | 1 bit (31) | 8 bits (30 to 23) | 23 bits (22 to 0) | 127 | 32 |\n| Double | 1 bit (63) | 11 bits (62 to 52) | 52 bits (51 to 0) | 1023 | 64 |\n\nExponent values of all 0s and all 1s are reserved for zero/denormals and for infinity/NaN.\n\n**10.25 in single precision:**\n1. $10 = 1010_2$ and $0.25 = 0.01_2$, so $10.25 = 1010.01_2$.\n2. Normalise: $1.01001 \\times 2^3$.\n3. Sign S = 0 (positive).\n4. Biased exponent $= 3 + 127 = 130 = 10000010_2$.\n5. Mantissa (after the hidden 1) $= 01001000000000000000000$.\n\n$$0\\ |\\ 10000010\\ |\\ 01001000000000000000000$$\n\nIn hexadecimal: $0100\\,0001\\,0010\\,0100\\,0000\\ldots = \\mathbf{41240000_{16}}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Design of ALU"
+        },
+        {
+            "question_number": "24. a.",
+            "question_text": "Find the complete control sequence for execution of the instruction Add(R3), R1 for the single bus CPU.",
+            "marks": 8,
+            "answer": "Instruction: $R1 \\leftarrow [R1] + [[R3]]$, single internal bus with Y and Z registers.\n\n| Step | Control signals |\n|---|---|\n| 1 | PC$_{out}$, MAR$_{in}$, Read, Select4, Add, Z$_{in}$ |\n| 2 | Z$_{out}$, PC$_{in}$, Y$_{in}$, WMFC |\n| 3 | MDR$_{out}$, IR$_{in}$ |\n| 4 | R3$_{out}$, MAR$_{in}$, Read |\n| 5 | R1$_{out}$, Y$_{in}$, WMFC |\n| 6 | MDR$_{out}$, SelectY, Add, Z$_{in}$ |\n| 7 | Z$_{out}$, R1$_{in}$, End |\n\n**Explanation:**\n1. The PC contents are loaded into MAR and a memory read starts; at the same time the ALU computes PC+4 (Select4) into Z.\n2. The incremented PC is written back (it is also latched into Y), and the CPU waits for MFC.\n3. The fetched word in MDR is moved to IR and decoded.\n4. The contents of R3 (the operand address) go to MAR and a read is started.\n5. R1 is moved to Y while the CPU waits for memory.\n6. The operand from MDR is added to Y and the sum is held in Z.\n7. Z is moved to R1, and End starts a new fetch cycle.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "24. b.",
+            "question_text": "Discuss about branch prediction with example.",
+            "marks": 8,
+            "answer": "**Branch prediction** guesses the outcome of a conditional branch (taken or not taken) before it is resolved, so the pipeline can keep fetching speculatively and avoid the branch penalty. If the guess is wrong, the speculatively fetched instructions are flushed (misprediction penalty).\n\n**Static prediction** (fixed at compile time or by hardware rule):\n- Always not-taken: keep fetching sequentially.\n- Always taken.\n- BTFN (backward taken, forward not taken): good for loops.\n- A compiler hint bit in the instruction.\n\n**Dynamic prediction** (uses run-time history):\n- **1-bit predictor:** remember the last outcome (T or NT). For a loop it mispredicts twice per loop execution (first and last iterations).\n- **2-bit saturating counter:** four states: Strongly Taken (ST), Likely Taken (LT), Likely Not-taken (LNT), Strongly Not-taken (SNT). The prediction changes only after two consecutive mispredictions.\n- A **Branch Target Buffer (BTB)** stores the branch address, the target address and the prediction bits, so the target can be fetched in the IF stage.\n- Correlating/two-level (gshare) and tournament predictors use global history.\n\n**Example:**\n```\nLOOP: ...\n      DEC R1\n      BNZ LOOP   ; executed 10 times\n```\nWith a 2-bit predictor in the ST state, the branch is predicted taken on every iteration and mispredicted only at loop exit (once per 10 executions, 90% accuracy). When the loop is entered again it is still predicted correctly, because one miss only moves the state to LT. A 1-bit predictor would miss twice each time the loop runs.\n\n**Benefit:** effective CPI $= 1 + (\\text{branch freq} \\times \\text{mispredict rate} \\times \\text{penalty})$, so higher accuracy gives fewer stalls.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        },
+        {
+            "question_number": "25. a.",
+            "question_text": "Explain in detail about MESI protocol with a neat diagram.",
+            "marks": 8,
+            "answer": "MESI is a write-invalidate snoopy cache-coherence protocol (used by Intel Pentium and others) for write-back caches. Each cache line has 2 state bits:\n\n- **M (Modified):** valid only in this cache and dirty (differs from memory); it must be written back before others can read it.\n- **E (Exclusive):** valid only in this cache and clean (same as memory); it can be written without a bus transaction (E→M).\n- **S (Shared):** possibly in several caches, clean.\n- **I (Invalid):** the line is not valid.\n\n**State transitions (diagram description):**\n\n*Processor-side events:*\n- I, read miss: if other caches have a copy, go to **S**; otherwise go to **E** (memory supplies the data).\n- I, write miss: issue read-with-intent-to-modify (RWITM), invalidating others; go to **M**.\n- S, read hit: stay S. S, write hit: broadcast invalidate; go to **M**.\n- E, read hit: stay E. E, write hit: go to **M** (silently).\n- M, read or write hit: stay M.\n\n*Snooped bus events (another processor):*\n- M, snooped read: write the line back (or supply it); go to **S**. M, snooped RWITM/invalidate: write back; go to **I**.\n- E, snooped read: go to **S**. E, snooped write/RWITM: go to **I**.\n- S, snooped invalidate/write: go to **I**.\n\n**Diagram:** four circles M, E, S and I with arrows labelled with the events above (RH = read hit, RMS = read miss shared, RME = read miss exclusive, WH = write hit, WM = write miss, SHR = snoop hit on read, SHW = snoop hit on write).\n\n**Advantages:** the E state avoids bus traffic for private data, write-backs reduce memory traffic, and coherence is guaranteed (single writer, multiple readers).",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "25. b.",
+            "question_text": "The parallel computer architecture adds a new dimension in the development of computer system by using more and more number of processor. In principle, performance of a single processor at a given point of time. Justify and describe the need of parallelism. Compare which types of parallelism is need for the real time scenario.",
+            "marks": 8,
+            "answer": "**Justification / need for parallelism:**\n- Single-processor performance is limited by clock frequency, the power wall (power grows with $V^2f$), the memory wall and the ILP wall. Performance is achieved more cheaply by using many processors together.\n- Applications such as weather modelling, AI/ML training, video processing, scientific simulation, databases and web servers need throughput far beyond one core.\n- Parallelism gives higher throughput, lower response time, scalability (speed-up), fault tolerance/reliability and better cost/performance.\n- Speed-up is bounded by Amdahl's law: $S = \\dfrac{1}{(1-f) + f/p}$, so programs must expose a large parallel fraction f.\n\n**Types of parallelism (comparison):**\n\n| Type | Granularity | Exploited by | Example |\n|---|---|---|---|\n| Bit-level | Word size | ALU width | 64-bit ALU |\n| Instruction-level (ILP) | Fine | Pipelining, superscalar, VLIW, OOO execution | CPU cores |\n| Data-level (DLP) | Fine/medium | SIMD, vector units, GPUs | Image filters, matrix multiplication |\n| Thread/Task-level (TLP) | Medium/coarse | Multi-core, multithreading, MIMD | Web server threads |\n| Job/Process-level | Coarse | Clusters, distributed systems | Batch jobs, cloud |\n\n**Real-time scenario:** real-time systems (autonomous vehicles, video streaming, robotics, online transaction processing) need predictable, low-latency responses, and are best served by a combination of:\n- **Task/thread-level parallelism (MIMD multi-core)**, so that independent tasks (sensing, control, communication) run concurrently on dedicated cores with deterministic scheduling.\n- **Data-level parallelism (SIMD/GPU)** for the heavy, regular computation inside each task, for example image or sensor processing.\n\nILP is exploited automatically within each core. In short, TLP combined with DLP is preferred for real-time systems, because it gives both concurrency of tasks and the throughput needed to meet deadlines.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Parallelism"
+        },
+        {
+            "question_number": "26.",
+            "question_text": "An instruction is stores at location 300 with its address field at location 301. The address field has the value 400. A processor register R1 contains the number 200. Evaluate the effective address if the addressing mode of the instruction is.\n(i) direct\n(ii) immediate\n(iii) relative\n(iv) register indirect\n(v) index with R1 as the index register",
+            "marks": 15,
+            "answer": "The instruction occupies two words: the opcode/mode at 300 and the address field (= 400) at 301. After the instruction is fetched, PC = 302. R1 = 200.\n\n| Mode | Calculation | Effective address |\n|---|---|---|\n| (i) Direct | EA = address field | **400** |\n| (ii) Immediate | The operand is the address field itself, stored at 301 | **301** (operand = 400) |\n| (iii) Relative | EA = PC + address field = 302 + 400 | **702** |\n| (iv) Register indirect | EA = [R1] | **200** |\n| (v) Index (R1 as index) | EA = address field + [R1] = 400 + 200 | **600** |\n\n**Explanation:**\n- *Direct:* the address part of the instruction is the effective address of the operand.\n- *Immediate:* the operand is part of the instruction, so it is located at the word following the opcode (301).\n- *Relative:* the address field is a displacement added to the updated program counter. The PC has already advanced past both words, to 302.\n- *Register indirect:* the register holds the address of the operand.\n- *Index:* the address field gives the base, and it is added to the contents of the index register.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "27.",
+            "question_text": "Demonstrate the general configuration of micro programmed control unit with a neat block diagram.",
+            "marks": 15,
+            "answer": "In a **microprogrammed control unit** the control signals are stored as microinstructions (control words) in a control memory (ROM), instead of being generated by fixed logic.\n\n**Block diagram (components and flow):**\n```\n IR (opcode) --> [Starting & branch address generator] <-- condition codes / status flags\n                         |                         <-- external inputs\n                         v\n               [ uPC (control address register) ] <-- clock\n                         |\n                         v\n               [ Control memory (ROM) ]\n                         |\n                         v\n               [ Control data register / microinstruction ]\n                  |                         |\n          control signals            next-address fields --> back to generator\n```\n\n**Components:**\n1. **Instruction Register (IR):** the opcode is mapped to the starting address of its micro-routine.\n2. **Starting and branch address generator (sequencer/mapping logic):** loads μPC with (a) the mapped start address for a new instruction, (b) the branch address from the microinstruction when a condition (Z, N, C, V, interrupt) is true, or (c) the fetch micro-routine start address at End.\n3. **Microprogram counter (μPC / control address register):** holds the address of the next microinstruction and is normally incremented each clock.\n4. **Control memory (control store):** a ROM holding all micro-routines (fetch, address modes, execute for each opcode).\n5. **Control data register (microinstruction register):** holds the current microinstruction. Its micro-operation fields are decoded to generate the control signals, and its condition and next-address fields drive sequencing.\n\n**Operation:**\n1. At the start, μPC points to the fetch micro-routine, which fetches the instruction into IR.\n2. The mapping logic converts the opcode into the start address of the execute routine and loads it into μPC.\n3. Each clock, the microinstruction at [μPC] is read and its control signals are asserted; μPC is incremented, or loaded with a branch address depending on the status flags.\n4. When the End microinstruction is reached, μPC returns to the fetch routine.\n\n**Microinstruction formats:** *horizontal* (one bit per signal: wide words, highly parallel, fast) or *vertical* (encoded fields: compact, needs decoders, slower).\n\n**Comparison with hardwired control:** microprogrammed control is flexible and easy to modify or extend (by changing the ROM), systematic, and suits complex CISC instruction sets. It is slower, because a control-memory access is needed per step, and it needs extra memory.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Control Unit"
+        }
+    ]
 }

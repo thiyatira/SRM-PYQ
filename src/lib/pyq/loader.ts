@@ -14,7 +14,13 @@ export interface Question {
   /** Paper name (file name without .json). */
   source: string;
   answer_source?: string;
+  /** Multiple-choice questions: the option texts in A, B, C… order (question_text is then just the stem). */
+  options?: string[];
+  /** Indexes into `options` of the correct option(s); empty when the key is unknown. Only set with `options`. */
+  correct?: number[];
 }
+
+export const OPTION_LETTERS = "ABCDEFGH";
 
 export interface SubjectData {
   questions: Question[];
@@ -47,6 +53,23 @@ function asMarks(v: unknown): number | undefined {
   return Number.isFinite(n) && n >= 0 ? n : undefined;
 }
 
+/** `options` must be 2-8 non-empty strings; anything else means "not a structured MCQ". */
+function parseOptions(v: unknown): string[] | undefined {
+  if (!Array.isArray(v)) return undefined;
+  const opts = v.map((o) => asString(o).trim());
+  return opts.length >= 2 && opts.length <= 8 && opts.every(Boolean) ? opts : undefined;
+}
+
+/** "C" -> [2]; "A,C" -> [0, 2]; unknown / out of range -> []. */
+function parseCorrect(v: unknown, count: number): number[] {
+  if (typeof v !== "string") return [];
+  const idx = v
+    .split(",")
+    .map((s) => OPTION_LETTERS.indexOf(s.trim().toUpperCase()))
+    .filter((i) => i >= 0 && i < count);
+  return Array.from(new Set(idx));
+}
+
 /** Accepts `Question[]`, `{ questions: Question[] }` (or anything else -> empty). */
 function extractRawQuestions(data: unknown): unknown[] {
   if (Array.isArray(data)) return data;
@@ -66,6 +89,7 @@ function normalise(raw: unknown[], source: string): Question[] {
     const answer = asString(r.answer);
     if (!question_text.trim() && !answer.trim()) return;
     const chapter = asString(r.chapter) || undefined;
+    const options = parseOptions(r.options);
     out.push({
       id: `${source}~${index}`,
       question_text,
@@ -75,6 +99,7 @@ function normalise(raw: unknown[], source: string): Question[] {
       marks: asMarks(r.marks),
       source,
       answer_source: asString(r.answer_source) || undefined,
+      ...(options ? { options, correct: parseCorrect(r.correct_option, options.length) } : {}),
     });
   });
   return out;

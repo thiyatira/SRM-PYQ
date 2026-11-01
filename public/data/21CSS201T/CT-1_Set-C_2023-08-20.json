@@ -5,81 +5,151 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Which component in a computer system is responsible for converting high-level language code into machine code?\nA) Compiler\nB) Assembler\nC) Interpreter\nD) Linker",
+            "question_text": "Which component in a computer system is responsible for converting high-level language code into machine code?",
+            "options": [
+                "Compiler",
+                "Assembler",
+                "Interpreter",
+                "Linker"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "A) Compiler. A compiler translates a high-level language program into machine code.",
+            "answer": "A compiler translates a high-level language program into machine code.",
             "answer_source": "provided",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "2",
-            "question_text": "Which of the following levels of the computer hierarchy is closest to the physical hardware?\nA) Operating System Level\nB) Assembly Language Level\nC) Digital Logic Level\nD) High-Level Language Level",
+            "question_text": "Which of the following levels of the computer hierarchy is closest to the physical hardware?",
+            "options": [
+                "Operating System Level",
+                "Assembly Language Level",
+                "Digital Logic Level",
+                "High-Level Language Level"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "C) Digital Logic Level. It is the lowest level in the hierarchy, made of gates and circuits.",
+            "answer": "It is the lowest level in the hierarchy, made of gates and circuits.",
             "answer_source": "provided",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "3",
-            "question_text": "What is the octal equivalent of the binary number 110110?\nA) 66\nB) 32\nC) 53\nD) 62",
+            "question_text": "What is the octal equivalent of the binary number 110110?",
+            "options": [
+                "66",
+                "32",
+                "53",
+                "62"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "A) 66. Group the bits in threes from the right: 110 110 = 6 6, so $(110110)_2 = (66)_8$ (check: $54_{10} = 6 \\times 8 + 6$). The official key marks C) 53, which is incorrect.",
+            "answer": "Group the bits in threes from the right: 110 110 = 6 6, so $(110110)_2 = (66)_8$ (check: $54_{10} = 6 \\times 8 + 6$). The official key marks C) 53, which is incorrect.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "4",
-            "question_text": "What is the 2's complement of the binary number 00001101?\nA) 11110010\nB) 11110011\nC) 11110001\nD) 11101101",
+            "question_text": "What is the 2's complement of the binary number 00001101?",
+            "options": [
+                "11110010",
+                "11110011",
+                "11110001",
+                "11101101"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "B) 11110011. 1's complement of 00001101 is 11110010; adding 1 gives 11110011.",
+            "answer": "1's complement of 00001101 is 11110010; adding 1 gives 11110011.",
             "answer_source": "provided",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "5",
-            "question_text": "Convert the Excess-3 code 1001 to its decimal equivalent.\nA) 6\nB) 7\nC) 8\nD) 9",
+            "question_text": "Convert the Excess-3 code 1001 to its decimal equivalent.",
+            "options": [
+                "6",
+                "7",
+                "8",
+                "9"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "A) 6. 1001 = 9; subtracting 3 gives 6.",
+            "answer": "1001 = 9; subtracting 3 gives 6.",
             "answer_source": "provided",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "6",
-            "question_text": "What does the Memory Unit of a computer do?\nA) Processes instructions and performs calculations\nB) Stores data and instructions temporarily or permanently\nC) Manages the input and output operations\nD) Controls the entire operation of the computer",
+            "question_text": "What does the Memory Unit of a computer do?",
+            "options": [
+                "Processes instructions and performs calculations",
+                "Stores data and instructions temporarily or permanently",
+                "Manages the input and output operations",
+                "Controls the entire operation of the computer"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "B) Stores data and instructions temporarily or permanently.",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "7",
-            "question_text": "In the context of a computer's CPU, the Program Counter (PC) is also known as:\nA) Instruction Pointer (IP)\nB) Memory Address Register (MAR)\nC) Stack Pointer (SP)\nD) Accumulator (ACC)",
+            "question_text": "In the context of a computer's CPU, the Program Counter (PC) is also known as:",
+            "options": [
+                "Instruction Pointer (IP)",
+                "Memory Address Register (MAR)",
+                "Stack Pointer (SP)",
+                "Accumulator (ACC)"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "A) Instruction Pointer (IP).",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "8",
-            "question_text": "Which of the following is NOT a type of bus in a computer system?\nA) Data Bus\nB) Address Bus\nC) Control Bus\nD) Storage Bus",
+            "question_text": "Which of the following is NOT a type of bus in a computer system?",
+            "options": [
+                "Data Bus",
+                "Address Bus",
+                "Control Bus",
+                "Storage Bus"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "D) Storage Bus. The system bus consists of the data, address and control buses.",
+            "answer": "The system bus consists of the data, address and control buses.",
             "answer_source": "provided",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "9",
-            "question_text": "Consider the 32-bit integer value 0x12345678 stored in memory on a little-endian system. How would the bytes be arranged in memory starting from address 0x00?\nA) 0x12, 0x34, 0x56, 0x78\nB) 0x78, 0x56, 0x34, 0x12\nC) 0x56, 0x78, 0x12, 0x34\nD) 0x34, 0x12, 0x78, 0x56",
+            "question_text": "Consider the 32-bit integer value 0x12345678 stored in memory on a little-endian system. How would the bytes be arranged in memory starting from address 0x00?",
+            "options": [
+                "0x12, 0x34, 0x56, 0x78",
+                "0x78, 0x56, 0x34, 0x12",
+                "0x56, 0x78, 0x12, 0x34",
+                "0x34, 0x12, 0x78, 0x56"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "B) 0x78, 0x56, 0x34, 0x12. In little-endian order the least significant byte (0x78) is stored at the lowest address. The official key marks D), which is incorrect.",
+            "answer": "In little-endian order the least significant byte (0x78) is stored at the lowest address. The official key marks D), which is incorrect.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "10",
-            "question_text": "Which of the following is true about an instruction set architecture (ISA) in relation to application-level programming?\nA) The ISA defines how applications should be written in high-level programming languages.\nB) The ISA specifies the machine language instructions that a CPU can execute.\nC) The ISA is responsible for managing memory allocation and garbage collection in applications.\nD) The ISA determines the user interface and experience of an application.",
+            "question_text": "Which of the following is true about an instruction set architecture (ISA) in relation to application-level programming?",
+            "options": [
+                "The ISA defines how applications should be written in high-level programming languages.",
+                "The ISA specifies the machine language instructions that a CPU can execute.",
+                "The ISA is responsible for managing memory allocation and garbage collection in applications.",
+                "The ISA determines the user interface and experience of an application."
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "B) The ISA specifies the machine language instructions that a CPU can execute.",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 2: Basic structure of computers"
         },

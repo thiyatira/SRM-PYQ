@@ -4,82 +4,152 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Which of the following operator takes only integer operands?\nA) +\nB) /\nC) %\nD) None of these",
+            "question_text": "Which of the following operator takes only integer operands?",
+            "options": [
+                "+",
+                "/",
+                "%",
+                "None of these"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "ANSWER:C",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming - Writing algorithms & Pseudo code - Single line and multiline comments - Introduction to C: Structure of the C program - Input and output statements. Variables and identifiers, Constants, Keywords - Values, Names, Scope, Binding, Storage Classes - Numeric Data types: integer, floating point Non-Numeric Data types: char and string - L value and R value in expression, Increment and decrement operator - Comma, Arrow and Assignment operator, Bitwise and Size-of operator - Arithmetic, Relational and logical Operators - Condition Operators, Operator Precedence - Expressions with pre / post increment operator."
         },
         {
             "question_number": "2",
-            "question_text": "In an expression involving || operator, evaluation\nI) Will be stopped if one of its components evaluates to false\nII) Will be stopped if one of its components evaluates to true\nIII) Takes place from right to left\nIV) Takes place from left to right\n\nA) I and II\nB) I and III\nC) II and III\nD) II and IV",
+            "question_text": "In an expression involving || operator, evaluation\nI) Will be stopped if one of its components evaluates to false\nII) Will be stopped if one of its components evaluates to true\nIII) Takes place from right to left\nIV) Takes place from left to right",
+            "options": [
+                "I and II",
+                "I and III",
+                "II and III",
+                "II and IV"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "ANSWER:D",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming - Writing algorithms & Pseudo code - Single line and multiline comments - Introduction to C: Structure of the C program - Input and output statements. Variables and identifiers, Constants, Keywords - Values, Names, Scope, Binding, Storage Classes - Numeric Data types: integer, floating point Non-Numeric Data types: char and string - L value and R value in expression, Increment and decrement operator - Comma, Arrow and Assignment operator, Bitwise and Size-of operator - Arithmetic, Relational and logical Operators - Condition Operators, Operator Precedence - Expressions with pre / post increment operator."
         },
         {
             "question_number": "3",
-            "question_text": "Find the output of the following:\n\n```c\nvoid main()\n{\nint i=0, j=1, k=2, m;\nm= i++ || j++ || k++ ;\nprintf(\"%d %d %d %d\", m, i, j, k);\n}\n```\n\nA) 1 1 2 3\nB) 1 1 2 2\nC) 0 1 2 2\nD) 0 1 2 3",
+            "question_text": "Find the output of the following:\n\n```c\nvoid main()\n{\nint i=0, j=1, k=2, m;\nm= i++ || j++ || k++ ;\nprintf(\"%d %d %d %d\", m, i, j, k);\n}\n```",
+            "options": [
+                "1 1 2 3",
+                "1 1 2 2",
+                "0 1 2 2",
+                "0 1 2 3"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "ANSWER:B",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming - Writing algorithms & Pseudo code - Single line and multiline comments - Introduction to C: Structure of the C program - Input and output statements. Variables and identifiers, Constants, Keywords - Values, Names, Scope, Binding, Storage Classes - Numeric Data types: integer, floating point Non-Numeric Data types: char and string - L value and R value in expression, Increment and decrement operator - Comma, Arrow and Assignment operator, Bitwise and Size-of operator - Arithmetic, Relational and logical Operators - Condition Operators, Operator Precedence - Expressions with pre / post increment operator."
         },
         {
             "question_number": "4",
-            "question_text": "What will be the output?\n\n```c\nvoid main()\n{\nint a=10, b=20;\nchar x=1, y=0;\nif(a,b,x,y)\nprintf(“EXAM”);\n}\n```\n\nA) XAM is printed\nB) EXAM is printed\nC) COMPILER ERROR\nD) Nothing is printed",
+            "question_text": "What will be the output?\n\n```c\nvoid main()\n{\nint a=10, b=20;\nchar x=1, y=0;\nif(a,b,x,y)\nprintf(“EXAM”);\n}\n```",
+            "options": [
+                "XAM is printed",
+                "EXAM is printed",
+                "COMPILER ERROR",
+                "Nothing is printed"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "ANSWER:D",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming - Writing algorithms & Pseudo code - Single line and multiline comments - Introduction to C: Structure of the C program - Input and output statements. Variables and identifiers, Constants, Keywords - Values, Names, Scope, Binding, Storage Classes - Numeric Data types: integer, floating point Non-Numeric Data types: char and string - L value and R value in expression, Increment and decrement operator - Comma, Arrow and Assignment operator, Bitwise and Size-of operator - Arithmetic, Relational and logical Operators - Condition Operators, Operator Precedence - Expressions with pre / post increment operator."
         },
         {
             "question_number": "5",
-            "question_text": "Which operator from the following has the lowest priority?\nA) Assignment\nB) Division\nC) Comma\nD) Dot",
+            "question_text": "Which operator from the following has the lowest priority?",
+            "options": [
+                "Assignment",
+                "Division",
+                "Comma",
+                "Dot"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "ANSWER:C",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming - Writing algorithms & Pseudo code - Single line and multiline comments - Introduction to C: Structure of the C program - Input and output statements. Variables and identifiers, Constants, Keywords - Values, Names, Scope, Binding, Storage Classes - Numeric Data types: integer, floating point Non-Numeric Data types: char and string - L value and R value in expression, Increment and decrement operator - Comma, Arrow and Assignment operator, Bitwise and Size-of operator - Arithmetic, Relational and logical Operators - Condition Operators, Operator Precedence - Expressions with pre / post increment operator."
         },
         {
             "question_number": "6",
-            "question_text": "Array elements are always stored in --------- memory locations.\nA) Sequential\nB) Random\nC) Sequential and Random\nD) None of these",
+            "question_text": "Array elements are always stored in --------- memory locations.",
+            "options": [
+                "Sequential",
+                "Random",
+                "Sequential and Random",
+                "None of these"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "ANSWER:A",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else - Conditional Statements : else if and nested if - Conditional Statements : Switch case - Un-conditional Control Statements : break, continue, goto - Looping Control Statements: for, while, do.while - Looping Control Statements: nested for, nested while - Introduction to Arrays -One Dimensional (1D) Array Declaration and initialization - Accessing, Indexing and operations with 1D Arrays - Array Programs – 1D - Initializing and Accessing 2D Array, Array Programs – 2D - Pointer and address-of operators -Pointer Declaration and dereferencing, Void Pointers, Null pointers Pointer based Array manipulation."
         },
         {
             "question_number": "7",
-            "question_text": "Let x be an array. Which of the following operations are illegal (throws error)?\nI) ++x\nII) x+1\nIII) x++\nIV) x*2\n\nA) I and II\nB) I, III and IV\nC) I, II and III\nD) I, III and IV",
+            "question_text": "Let x be an array. Which of the following operations are illegal (throws error)?\nI) ++x\nII) x+1\nIII) x++\nIV) x*2",
+            "options": [
+                "I and II",
+                "III and IV",
+                "I, II and III",
+                "I, III and IV"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "ANSWER:B (Note: The provided answer B in the key is more accurate as operations I, III, and IV attempt to modify the address of the array, which is illegal. Operation II, x+1, is a legal pointer arithmetic operation that evaluates to an address but doesn't modify x itself.)",
-            "answer_source": "provided",
+            "answer": "An array name `x` is a constant address, so it cannot be modified. `++x` (I) and `x++` (III) try to modify it and are illegal; `x*2` (IV) multiplies an address by an integer, which is also illegal. `x+1` (II) is legal pointer arithmetic that only computes a new address. So I, III and IV are illegal.",
+            "answer_source": "generated",
             "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else - Conditional Statements : else if and nested if - Conditional Statements : Switch case - Un-conditional Control Statements : break, continue, goto - Looping Control Statements: for, while, do.while - Looping Control Statements: nested for, nested while - Introduction to Arrays -One Dimensional (1D) Array Declaration and initialization - Accessing, Indexing and operations with 1D Arrays - Array Programs – 1D - Initializing and Accessing 2D Array, Array Programs – 2D - Pointer and address-of operators -Pointer Declaration and dereferencing, Void Pointers, Null pointers Pointer based Array manipulation."
         },
         {
             "question_number": "8",
-            "question_text": "What is the output of C Program.?\n\n```c\nint main() { int a[3] = {10,12,14}; a[1]=20; int i=0; while(i<3) { printf(\"%d \", a[i]); i++; } }\n```\n\nA) 20 12 14\nB) 10 20 14\nC) 10 12 20\nD) Compiler error",
+            "question_text": "What is the output of C Program.?\n\n```c\nint main() { int a[3] = {10,12,14}; a[1]=20; int i=0; while(i<3) { printf(\"%d \", a[i]); i++; } }\n```",
+            "options": [
+                "20 12 14",
+                "10 20 14",
+                "10 12 20",
+                "Compiler error"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "ANSWER:B",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else - Conditional Statements : else if and nested if - Conditional Statements : Switch case - Un-conditional Control Statements : break, continue, goto - Looping Control Statements: for, while, do.while - Looping Control Statements: nested for, nested while - Introduction to Arrays -One Dimensional (1D) Array Declaration and initialization - Accessing, Indexing and operations with 1D Arrays - Array Programs – 1D - Initializing and Accessing 2D Array, Array Programs – 2D - Pointer and address-of operators -Pointer Declaration and dereferencing, Void Pointers, Null pointers Pointer based Array manipulation."
         },
         {
             "question_number": "9",
-            "question_text": "What is the Format specifier used to print a String or Character array in C Printf or Scanf function?\nA) %c\nB) %C\nC) %s\nD) %w",
+            "question_text": "What is the Format specifier used to print a String or Character array in C Printf or Scanf function?",
+            "options": [
+                "%c",
+                "%C",
+                "%s",
+                "%w"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "ANSWER:C",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 3: String Basics - String Declaration and Initialization - String Functions: gets(), puts(), getchar(),putchar(), printf() - Built-inString Functions: atoi, strlen, strcat, strcmp -String Functions: sprint, sscanf, strrev, strcpy, strstr, strtok - Operations on Strings - Function prototype declaration, function definition - Actual and formal parameters - Function with and without Arguments - Function with and without return values - Call by Value, Call by Reference - Passing Array to Function - Passing Array elements to Function - Function Pointers."
         },
         {
             "question_number": "10",
-            "question_text": "What is the output of this C code?\n\n```c\nint main()\n{\nvoid foo(), f();\nf();\n}\nvoid foo()\n{\nprintf(\"2 \");\n}\nvoid f()\n{\nprintf(\"1 \");\nfoo();\n}\n```\n\nA. Compile time error as foo is local to main\nB. 1 2\nC. 2 1\nD. Compile time error due to declaration of functions inside main",
+            "question_text": "What is the output of this C code?\n\n```c\nint main()\n{\nvoid foo(), f();\nf();\n}\nvoid foo()\n{\nprintf(\"2 \");\n}\nvoid f()\n{\nprintf(\"1 \");\nfoo();\n}\n```",
+            "options": [
+                "Compile time error as foo is local to main",
+                "1 2",
+                "2 1",
+                "Compile time error due to declaration of functions inside main"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "ANSWER:B (Note: While modern compilers would issue a warning or error for declaring functions inside another function, this was permissible in older C standards. Assuming a standard that allows it, the output is '1 2'.)",
-            "answer_source": "provided",
+            "answer": "Declaring `foo` and `f` inside `main` is a valid (local) declaration, and both are defined later in the file. `f()` prints `1 `, then calls `foo()`, which prints `2 `, so the output is `1 2`.",
+            "answer_source": "generated",
             "chapter": "Unit 3: String Basics - String Declaration and Initialization - String Functions: gets(), puts(), getchar(),putchar(), printf() - Built-inString Functions: atoi, strlen, strcat, strcmp -String Functions: sprint, sscanf, strrev, strcpy, strstr, strtok - Operations on Strings - Function prototype declaration, function definition - Actual and formal parameters - Function with and without Arguments - Function with and without return values - Call by Value, Call by Reference - Passing Array to Function - Passing Array elements to Function - Function Pointers."
         },
         {

@@ -4,49 +4,91 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Which of the following statements about Java Threads is correct?\na. Java threads don't allow parts of a program to be executed in parallel\nb. Java is a single-threaded language\nc. Java's garbage collector runs as a high priority thread\nd. Ready, running and sleeping are three states that a thread can be in during its life cycle",
+            "question_text": "Which of the following statements about Java Threads is correct?",
+            "options": [
+                "Java threads don't allow parts of a program to be executed in parallel",
+                "Java is a single-threaded language",
+                "Java's garbage collector runs as a high priority thread",
+                "Ready, running and sleeping are three states that a thread can be in during its life cycle"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "d. Ready, running and sleeping are three states that a thread can be in during its life cycle",
+            "answer": "",
             "answer_source": "generated",
             "chapter": "Unit 3: Advanced Java Programming Paradigms"
         },
         {
             "question_number": "2",
-            "question_text": "What will be the output of the following Java code?\n\n```java\nclass multithreaded_programming\n{\n    public static void main (String [] args[])\n    {\n        Thread t = Thread.currentThread ();\n        System.out.println (t);\n    }\n}\n```\n\na. thread [5, main]\nb. thread [main, 5]\nc. thread [main, 0]\nd. Thread [main, 5, main]",
+            "question_text": "What will be the output of the following Java code?\n\n```java\nclass multithreaded_programming\n{\n    public static void main (String [] args[])\n    {\n        Thread t = Thread.currentThread ();\n        System.out.println (t);\n    }\n}\n```",
+            "options": [
+                "thread [5, main]",
+                "thread [main, 5]",
+                "thread [main, 0]",
+                "Thread [main, 5, main]"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "d. Thread [main, 5, main]\n\nExplanation: Printing a Thread object invokes its `toString()` method, which outputs `Thread[threadName, priority, groupName]`. Here, the main thread has priority 5 and belongs to the 'main' thread group.",
+            "answer": "Printing a Thread object invokes its `toString()` method, which outputs `Thread[threadName, priority, groupName]`. Here, the main thread has priority 5 and belongs to the 'main' thread group.",
             "answer_source": "generated",
             "chapter": "Unit 3: Advanced Java Programming Paradigms"
         },
         {
             "question_number": "3",
-            "question_text": "What is the primary role of the DriverManager class in JDBC?\na. To manage database transactions\nb. To load the driver class\nc. To manage database drivers and establish database connections\nd. To retrieve metadata from the database",
+            "question_text": "What is the primary role of the DriverManager class in JDBC?",
+            "options": [
+                "To manage database transactions",
+                "To load the driver class",
+                "To manage database drivers and establish database connections",
+                "To retrieve metadata from the database"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "c. To manage database drivers and establish database connections",
+            "answer": "",
             "answer_source": "generated",
             "chapter": "Unit 3: Advanced Java Programming Paradigms"
         },
         {
             "question_number": "4",
-            "question_text": "Which of the following is a top-level container in Swing?\na. JPanel\nb. JLabel\nc. JFrame\nd. JButton",
+            "question_text": "Which of the following is a top-level container in Swing?",
+            "options": [
+                "JPanel",
+                "JLabel",
+                "JFrame",
+                "JButton"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "c. JFrame",
+            "answer": "",
             "answer_source": "generated",
             "chapter": "Unit 3: Advanced Java Programming Paradigms"
         },
         {
             "question_number": "5",
-            "question_text": "What is the layout manager used in the Java code given below?\n\n```java\nimport java.awt.*;\npublic class LayoutExample extends Frame {\n    public static void main(String[] args){\n        LayoutExample frame = new LayoutExample();\n        Button b1 = new Button (\"Button 1\");\n        Button b2 = new Button (\"Button 2\");\n        Button b3 = new Button (\"Button 3\");\n        frame.add(b1);\n        frame.add(b2);\n        frame.add(b3);\n        frame.setLayout (new FlowLayout());\n        frame.setLayout(new GridLayout(2, 2));\n        frame.setSize(300, 200);\n        frame.setVisible(true);\n    }\n}\n```\n\na. Grid Layout\nb. Border Layout\nc. Flow Layout\nd. Card Layout",
+            "question_text": "What is the layout manager used in the Java code given below?\n\n```java\nimport java.awt.*;\npublic class LayoutExample extends Frame {\n    public static void main(String[] args){\n        LayoutExample frame = new LayoutExample();\n        Button b1 = new Button (\"Button 1\");\n        Button b2 = new Button (\"Button 2\");\n        Button b3 = new Button (\"Button 3\");\n        frame.add(b1);\n        frame.add(b2);\n        frame.add(b3);\n        frame.setLayout (new FlowLayout());\n        frame.setLayout(new GridLayout(2, 2));\n        frame.setSize(300, 200);\n        frame.setVisible(true);\n    }\n}\n```",
+            "options": [
+                "Grid Layout",
+                "Border Layout",
+                "Flow Layout",
+                "Card Layout"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "a. Grid Layout\n\nExplanation: `frame.setLayout(new GridLayout(2, 2))` is called after `FlowLayout`, so it overrides the previous setting and applies `GridLayout`.",
+            "answer": "`frame.setLayout(new GridLayout(2, 2))` is called after `FlowLayout`, so it overrides the previous setting and applies `GridLayout`.",
             "answer_source": "generated",
             "chapter": "Unit 3: Advanced Java Programming Paradigms"
         },
         {
             "question_number": "6",
-            "question_text": "In functional programming, which of the following is an example of a higher-order function?\na. A function that returns the square of a number\nb. A function that adds two numbers\nc. A function that takes another function as an argument or returns a function\nd. A function that uses global variables to modify input data",
+            "question_text": "In functional programming, which of the following is an example of a higher-order function?",
+            "options": [
+                "A function that returns the square of a number",
+                "A function that adds two numbers",
+                "A function that takes another function as an argument or returns a function",
+                "A function that uses global variables to modify input data"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "c. A function that takes another function as an argument or returns a function",
+            "answer": "",
             "answer_source": "generated",
             "chapter": "Unit 4: Pythonic Programming Paradigm"
         },
@@ -60,25 +102,46 @@
         },
         {
             "question_number": "8",
-            "question_text": "To create parallel programming in Python which of the following header file to be imported\na. multithread\nb. multiprocessing\nc. threadprocessing\nd. parallelprocessing",
+            "question_text": "To create parallel programming in Python which of the following header file to be imported",
+            "options": [
+                "multithread",
+                "multiprocessing",
+                "threadprocessing",
+                "parallelprocessing"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b. multiprocessing",
+            "answer": "",
             "answer_source": "generated",
             "chapter": "Unit 4: Pythonic Programming Paradigm"
         },
         {
             "question_number": "9",
-            "question_text": "To create a socket, we must use socket.socket() function available in the Python socket module\na. socket.socket()\nb. socket().thread\nc. socket.port()\nd. TCP.UDP.scoket()",
+            "question_text": "To create a socket, we must use socket.socket() function available in the Python socket module",
+            "options": [
+                "socket.socket()",
+                "socket().thread",
+                "socket.port()",
+                "TCP.UDP.scoket()"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "a. socket.socket()",
+            "answer": "",
             "answer_source": "generated",
             "chapter": "Unit 4: Pythonic Programming Paradigm"
         },
         {
             "question_number": "10",
-            "question_text": "Which of the following methods is used to send data over a TCP socket in Python?\na. socket.sendto()\nb. socket.send()\nc. socket.write()\nd. socket.transmit()",
+            "question_text": "Which of the following methods is used to send data over a TCP socket in Python?",
+            "options": [
+                "socket.sendto()",
+                "socket.send()",
+                "socket.write()",
+                "socket.transmit()"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b. socket.send()",
+            "answer": "",
             "answer_source": "generated",
             "chapter": "Unit 4: Pythonic Programming Paradigm"
         },
@@ -148,57 +211,106 @@
         },
         {
             "question_number": "Set2-4",
-            "question_text": "```java\npublic class Test {\n    void print() {\n        System.out.println(\"Hello\");\n    }\n}\n// In the main method\nTest obj = null;\nobj.print();\n```\n\nA. The program will print \"Hello\".\nB. The program will compile but throw a NullPointerException.\nC. The program will compile with a warning but will run successfully.\nD. The program will not compile due to a syntax error.",
+            "question_text": "```java\npublic class Test {\n    void print() {\n        System.out.println(\"Hello\");\n    }\n}\n// In the main method\nTest obj = null;\nobj.print();\n```",
+            "options": [
+                "The program will print \"Hello\".",
+                "The program will compile but throw a NullPointerException.",
+                "The program will compile with a warning but will run successfully.",
+                "The program will not compile due to a syntax error."
+            ],
+            "correct_option": "B",
             "marks": null,
-            "answer": "B. The program will compile but throw a NullPointerException.",
+            "answer": "",
             "answer_source": "generated",
             "chapter": "Unit 2: Java Programming Paradigms"
         },
         {
             "question_number": "Set2-5",
-            "question_text": "```java\npublic class MyClass {\n    MyClass(int value) {\n        // Constructor logic\n    }\n}\n// In the main method\n```\n\nMyClass obj = new MyClass(); // Error here\nA. The code will compile successfully.\nB. The code will compile with a warning.\nC. The code will fail to compile because a default constructor is missing.\nD. The code will run but throw an exception.",
+            "question_text": "```java\npublic class MyClass {\n    MyClass(int value) {\n        // Constructor logic\n    }\n}\n// In the main method\nMyClass obj = new MyClass(); // Error here\n```",
+            "options": [
+                "The code will compile successfully.",
+                "The code will compile with a warning.",
+                "The code will fail to compile because a default constructor is missing.",
+                "The code will run but throw an exception."
+            ],
+            "correct_option": "C",
             "marks": null,
-            "answer": "C. The code will fail to compile because a default constructor is missing.",
+            "answer": "",
             "answer_source": "generated",
             "chapter": "Unit 2: Java Programming Paradigms"
         },
         {
             "question_number": "Set2-6",
-            "question_text": "What will be the result of the following code?\n\n```java\ndouble value = 8.75;\nint result = (int) value;\nSystem.out.println(result);\n```\n\nA. The result will be 8.75.\nB. The result will be 8.\nC. The result will be 9.\nD. The code will fail to compile.",
+            "question_text": "What will be the result of the following code?\n\n```java\ndouble value = 8.75;\nint result = (int) value;\nSystem.out.println(result);\n```",
+            "options": [
+                "The result will be 8.75.",
+                "The result will be 8.",
+                "The result will be 9.",
+                "The code will fail to compile."
+            ],
+            "correct_option": "B",
             "marks": null,
-            "answer": "B. The result will be 8.",
+            "answer": "",
             "answer_source": "generated",
             "chapter": "Unit 2: Java Programming Paradigms"
         },
         {
             "question_number": "Set2-7",
-            "question_text": "What is the output of the following code involving integer division?\n\n```java\nint a = 5;\nint b = 2;\nint result = a / b;\nSystem.out.println(result);\n```\n\nA. The output will be 2.5.\nB. The output will be 2.\nC. The output will be 3.\nD. The code will fail to compile.",
+            "question_text": "What is the output of the following code involving integer division?\n\n```java\nint a = 5;\nint b = 2;\nint result = a / b;\nSystem.out.println(result);\n```",
+            "options": [
+                "The output will be 2.5.",
+                "The output will be 2.",
+                "The output will be 3.",
+                "The code will fail to compile."
+            ],
+            "correct_option": "B",
             "marks": null,
-            "answer": "B. The output will be 2.",
+            "answer": "",
             "answer_source": "generated",
             "chapter": "Unit 2: Java Programming Paradigms"
         },
         {
             "question_number": "Set2-8",
-            "question_text": "What will be the result of the following for loop that contains an off-by-one condition?\n\n```java\nfor (int i = 0; i < 5; i++) {\n    System.out.println(i);\n}\n```\n\nA. The loop will print numbers from 0 to 4.\nB. The loop will print numbers from 0 to 5.\nC. The loop will print numbers from 1 to 5.\nD. The code will fail to compile.",
+            "question_text": "What will be the result of the following for loop that contains an off-by-one condition?\n\n```java\nfor (int i = 0; i < 5; i++) {\n    System.out.println(i);\n}\n```",
+            "options": [
+                "The loop will print numbers from 0 to 4.",
+                "The loop will print numbers from 0 to 5.",
+                "The loop will print numbers from 1 to 5.",
+                "The code will fail to compile."
+            ],
+            "correct_option": "A",
             "marks": null,
-            "answer": "A. The loop will print numbers from 0 to 4.",
+            "answer": "",
             "answer_source": "generated",
             "chapter": "Unit 2: Java Programming Paradigms"
         },
         {
             "question_number": "Set2-9",
-            "question_text": "What is the output of a switch statement when no break is used between cases?\n\n```java\nint day = 2;\nswitch (day) {\n    case 1:\n        System.out.println(\"Monday\");\n    case 2:\n        System.out.println(\"Tuesday\");\n    case 3:\n        System.out.println(\"Wednesday\");\n        break;\n    default:\n        System.out.println(\"Invalid day\");\n}\n```\n\nA. The output will be Tuesday only.\nB. The output will be Monday, Tuesday, and Wednesday.\nC. The output will be Tuesday and Wednesday.\nD. The code will fail to compile.",
+            "question_text": "What is the output of a switch statement when no break is used between cases?\n\n```java\nint day = 2;\nswitch (day) {\n    case 1:\n        System.out.println(\"Monday\");\n    case 2:\n        System.out.println(\"Tuesday\");\n    case 3:\n        System.out.println(\"Wednesday\");\n        break;\n    default:\n        System.out.println(\"Invalid day\");\n}\n```",
+            "options": [
+                "The output will be Tuesday only.",
+                "The output will be Monday, Tuesday, and Wednesday.",
+                "The output will be Tuesday and Wednesday.",
+                "The code will fail to compile."
+            ],
+            "correct_option": "C",
             "marks": null,
-            "answer": "C. The output will be Tuesday and Wednesday.",
+            "answer": "",
             "answer_source": "generated",
             "chapter": "Unit 2: Java Programming Paradigms"
         },
         {
             "question_number": "Set2-10",
-            "question_text": "What will be the result if an array is declared but not initialized?\n\n```text\nint[] arr;\narr[0] = 10;\n```\n\nA. The code will compile successfully.\nB. The code will throw a NullPointerException at runtime.\nC. The code will throw a compile-time error.\nD. The code will run but produce no output.",
+            "question_text": "What will be the result if an array is declared but not initialized?\n\n```text\nint[] arr;\narr[0] = 10;\n```",
+            "options": [
+                "The code will compile successfully.",
+                "The code will throw a NullPointerException at runtime.",
+                "The code will throw a compile-time error.",
+                "The code will run but produce no output."
+            ],
+            "correct_option": "C",
             "marks": null,
-            "answer": "C. The code will throw a compile-time error.",
+            "answer": "",
             "answer_source": "generated",
             "chapter": "Unit 2: Java Programming Paradigms"
         }

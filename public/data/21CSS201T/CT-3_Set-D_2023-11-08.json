@@ -5,81 +5,151 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "A word whose individual bits represent a control signal is ______\na) Command word\nb) Control word\nc) Control status\nd) Generation word",
+            "question_text": "A word whose individual bits represent a control signal is ______",
+            "options": [
+                "Command word",
+                "Control word",
+                "Control status",
+                "Generation word"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b) Control word\n\n**Rationale:** Individual control signals are represented as bits within a control word in microprogrammed control units.",
+            "answer": "Individual control signals are represented as bits within a control word in microprogrammed control units.",
             "answer_source": "provided",
             "chapter": "Unit 4: Control Unit"
         },
         {
             "question_number": "2",
-            "question_text": "Which of the following statement is true with respect to the function of WMFC signal?\na. Used to make processor wait for the reply from memory\nb. Execution of memory instructions\nc. Idle state of memory\nd. No operation",
+            "question_text": "Which of the following statement is true with respect to the function of WMFC signal?",
+            "options": [
+                "Used to make processor wait for the reply from memory",
+                "Execution of memory instructions",
+                "Idle state of memory",
+                "No operation"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "a. Used to make processor wait for the reply from memory\n\n**Rationale:** WMFC stands for Wait for Memory Function Completed. It is used to stall the processor until the memory operation completes and the memory sends back the MFC (Memory Function Completed) signal.",
+            "answer": "WMFC stands for Wait for Memory Function Completed. It is used to stall the processor until the memory operation completes and the memory sends back the MFC (Memory Function Completed) signal.",
             "answer_source": "provided",
             "chapter": "Unit 4: Control Unit"
         },
         {
             "question_number": "3",
-            "question_text": "Individual control words of micro routine are called as ______.\na. Micro task\nb. Micro operations\nc. Micro instruction\nd. Micro commands",
+            "question_text": "Individual control words of micro routine are called as ______.",
+            "options": [
+                "Micro task",
+                "Micro operations",
+                "Micro instruction",
+                "Micro commands"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "c. Micro instruction\n\n**Rationale:** Each line or control word in a microprogram (microroutine) is called a microinstruction.",
+            "answer": "Each line or control word in a microprogram (microroutine) is called a microinstruction.",
             "answer_source": "provided",
             "chapter": "Unit 4: Control Unit"
         },
         {
             "question_number": "4",
-            "question_text": "Let there be two instructions I1 and I2 such that:\nI1 : ADD R1, R2, R3 \nI2 : MUL R4, R1, R2 \nIdentify the type of hazard which occurs in the above instruction\nA. Structural hazard\nB. Data hazard\nC. Control hazard\nD. Instructional hazard",
+            "question_text": "Let there be two instructions I1 and I2 such that:\nI1 : ADD R1, R2, R3 \nI2 : MUL R4, R1, R2 \nIdentify the type of hazard which occurs in the above instruction",
+            "options": [
+                "Structural hazard",
+                "Data hazard",
+                "Control hazard",
+                "Instructional hazard"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "B. Data hazard\n\n**Rationale:** The instruction I2 reads R1, which is the destination register written by I1. This creates a Read-After-Write (RAW) data dependency, resulting in a data hazard.",
+            "answer": "The instruction I2 reads R1, which is the destination register written by I1. This creates a Read-After-Write (RAW) data dependency, resulting in a data hazard.",
             "answer_source": "provided",
             "chapter": "Unit 4: Control Unit"
         },
         {
             "question_number": "5",
-            "question_text": "A technique which is used to minimize the penalty caused by conditional branch is __________\nA. Delayed branching\nB. Branch penalty\nC. Delay\nD. Prediction",
+            "question_text": "A technique which is used to minimize the penalty caused by conditional branch is __________",
+            "options": [
+                "Delayed branching",
+                "Branch penalty",
+                "Delay",
+                "Prediction"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "A. Delayed branching\n\n**Rationale:** Delayed branching is a common software/hardware optimization technique to minimize the branch penalty by executing instructions in the branch delay slots.",
+            "answer": "Delayed branching is a common software/hardware optimization technique to minimize the branch penalty by executing instructions in the branch delay slots.",
             "answer_source": "provided",
             "chapter": "Unit 4: Control Unit"
         },
         {
             "question_number": "6",
-            "question_text": "Which of the following is NOT a common challenge in parallel computing?\nA. Load balancing\nB. Scalability\nC. Sequential execution\nD. Data consistency",
+            "question_text": "Which of the following is NOT a common challenge in parallel computing?",
+            "options": [
+                "Load balancing",
+                "Scalability",
+                "Sequential execution",
+                "Data consistency"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "C. Sequential execution\n\n**Rationale:** Sequential execution is a characteristic of traditional single-threaded computing, whereas load balancing, scalability, and data consistency are major challenges when designing and optimizing parallel computing systems.",
+            "answer": "Sequential execution is a characteristic of traditional single-threaded computing, whereas load balancing, scalability, and data consistency are major challenges when designing and optimizing parallel computing systems.",
             "answer_source": "provided",
             "chapter": "Unit 5: Parallelism"
         },
         {
             "question_number": "7",
-            "question_text": "Which type of architecture is often used in vector processors, where operations are performed in parallel on elements of arrays or vectors?\nA. SISD\nB. SIMD\nC. MIMD\nD. MISD",
+            "question_text": "Which type of architecture is often used in vector processors, where operations are performed in parallel on elements of arrays or vectors?",
+            "options": [
+                "SISD",
+                "SIMD",
+                "MIMD",
+                "MISD"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "B. SIMD\n\n**Rationale:** SIMD (Single Instruction, Multiple Data) executes a single instruction across multiple data elements concurrently, which is the exact mode of operation for vector processors.",
+            "answer": "SIMD (Single Instruction, Multiple Data) executes a single instruction across multiple data elements concurrently, which is the exact mode of operation for vector processors.",
             "answer_source": "provided",
             "chapter": "Unit 5: Parallelism"
         },
         {
             "question_number": "8",
-            "question_text": "In ARM assembly language, what instruction is used for storing data from a register into memory?\nA. LDR\nB. STR\nC. MOV\nD. ADD",
+            "question_text": "In ARM assembly language, what instruction is used for storing data from a register into memory?",
+            "options": [
+                "LDR",
+                "STR",
+                "MOV",
+                "ADD"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "B. STR\n\n**Rationale:** In ARM, `STR` (Store Register) is used to write data from a register into memory, whereas `LDR` (Load Register) is used to read data from memory into a register.",
+            "answer": "In ARM, `STR` (Store Register) is used to write data from a register into memory, whereas `LDR` (Load Register) is used to read data from memory into a register.",
             "answer_source": "provided",
             "chapter": "Unit 5: Parallelism"
         },
         {
             "question_number": "9",
-            "question_text": "Which ARM architecture is commonly used in embedded systems, such as microcontrollers and IoT devices?\na. ARM5\nb. ARM6\nc. ARM7\nd. ARM Cortex-M",
+            "question_text": "Which ARM architecture is commonly used in embedded systems, such as microcontrollers and IoT devices?",
+            "options": [
+                "ARM5",
+                "ARM6",
+                "ARM7",
+                "ARM Cortex-M"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "d. ARM Cortex-M\n\n**Rationale:** The ARM Cortex-M family is highly optimized for resource-constrained microcontrollers and IoT devices.",
+            "answer": "The ARM Cortex-M family is highly optimized for resource-constrained microcontrollers and IoT devices.",
             "answer_source": "provided",
             "chapter": "Unit 5: Parallelism"
         },
         {
             "question_number": "10",
-            "question_text": "In the MIPS32 pipeline, which of the following scenarios of data dependency will always result in a pipeline stall due to data hazard without any instruction scheduling?\n(a) An ADD instruction followed by a SUB instruction.\n(b) A STORE instruction followed by a LOAD instruction\n(c) A LOAD instruction followed by an ADD instruction.\n(d) None of the above.",
+            "question_text": "In the MIPS32 pipeline, which of the following scenarios of data dependency will always result in a pipeline stall due to data hazard without any instruction scheduling?",
+            "options": [
+                "An ADD instruction followed by a SUB instruction.",
+                "A STORE instruction followed by a LOAD instruction",
+                "A LOAD instruction followed by an ADD instruction.",
+                "None of the above."
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(c) A LOAD instruction followed by an ADD instruction.\n\n**Rationale:** In standard MIPS32 pipeline with forwarding, data hazards are resolved without stalls for ALU-to-ALU dependencies. However, a load-use hazard (LOAD followed by an instruction that uses the loaded data immediately, such as ADD) cannot be completely resolved by forwarding alone and always requires a one-cycle pipeline stall if no instruction scheduling is done.",
+            "answer": "In standard MIPS32 pipeline with forwarding, data hazards are resolved without stalls for ALU-to-ALU dependencies. However, a load-use hazard (LOAD followed by an instruction that uses the loaded data immediately, such as ADD) cannot be completely resolved by forwarding alone and always requires a one-cycle pipeline stall if no instruction scheduling is done.",
             "answer_source": "provided",
             "chapter": "Unit 4: Control Unit"
         },

@@ -4,161 +4,301 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Which of the following is not an OOPS concept?\n(A) Encapsulation\n(B) Polymorphism\n(C) Exception\n(D) Abstraction",
+            "question_text": "Which of the following is not an OOPS concept?",
+            "options": [
+                "Encapsulation",
+                "Polymorphism",
+                "Exception",
+                "Abstraction"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Exception. Explanation: While exception handling is supported in many OOP languages, the core OOPS concepts are Encapsulation, Abstraction, Inheritance, and Polymorphism.",
+            "answer": "While exception handling is supported in many OOP languages, the core OOPS concepts are Encapsulation, Abstraction, Inheritance, and Polymorphism.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 1"
         },
         {
             "question_number": "2",
-            "question_text": "Who developed object-oriented programming?\n(A) Adele Goldberg\n(B) Dennis Ritchie\n(C) Alan Kay\n(D) Andrea Ferro",
+            "question_text": "Who developed object-oriented programming?",
+            "options": [
+                "Adele Goldberg",
+                "Dennis Ritchie",
+                "Alan Kay",
+                "Andrea Ferro"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Alan Kay. Explanation: Alan Kay is credited with coining the term \"object-oriented programming\" and developing Smalltalk, one of the first true OOP languages.",
+            "answer": "Alan Kay is credited with coining the term \"object-oriented programming\" and developing Smalltalk, one of the first true OOP languages.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 1"
         },
         {
             "question_number": "3",
-            "question_text": "________ diagram in UML shows a complete model of a system at a specific time.\n(A) Object\n(B) Class\n(C) Sequence\n(D) Collaboration",
+            "question_text": "________ diagram in UML shows a complete model of a system at a specific time.",
+            "options": [
+                "Object",
+                "Class",
+                "Sequence",
+                "Collaboration"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Object. Explanation: An object diagram provides a snapshot of the instances in a system and their relationships at a given moment in time.",
+            "answer": "An object diagram provides a snapshot of the instances in a system and their relationships at a given moment in time.",
             "answer_source": "General UML Knowledge",
             "chapter": "Unit 1"
         },
         {
             "question_number": "4",
-            "question_text": "Which features of OOPS derives the class from another class?\n(A) Inheritance\n(B) Data hiding\n(C) Encapsulation\n(D) Polymorphism",
+            "question_text": "Which features of OOPS derives the class from another class?",
+            "options": [
+                "Inheritance",
+                "Data hiding",
+                "Encapsulation",
+                "Polymorphism"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Inheritance. Explanation: Inheritance is the mechanism by which one class acquires the properties and behaviors of another class.",
+            "answer": "Inheritance is the mechanism by which one class acquires the properties and behaviors of another class.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 3"
         },
         {
             "question_number": "5",
-            "question_text": "How many time a constructor is called in the life-time of an object?\n(A) Twice\n(B) Thrice\n(C) Only once\n(D) Depends on the way of creation of object",
+            "question_text": "How many time a constructor is called in the life-time of an object?",
+            "options": [
+                "Twice",
+                "Thrice",
+                "Only once",
+                "Depends on the way of creation of object"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Only once. Explanation: A constructor is invoked exactly once for a given object, specifically at the moment of its creation to initialize it.",
+            "answer": "A constructor is invoked exactly once for a given object, specifically at the moment of its creation to initialize it.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 2"
         },
         {
             "question_number": "6",
-            "question_text": "Sequence diagram is ________ oriented.\n(A) Class\n(B) Time\n(C) Activity\n(D) Relationship",
+            "question_text": "Sequence diagram is ________ oriented.",
+            "options": [
+                "Class",
+                "Time",
+                "Activity",
+                "Relationship"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Time. Explanation: Sequence diagrams emphasize the time-ordering of messages sent between objects.",
+            "answer": "Sequence diagrams emphasize the time-ordering of messages sent between objects.",
             "answer_source": "General UML Knowledge",
             "chapter": "Unit 2"
         },
         {
             "question_number": "7",
-            "question_text": "When a destructor is called?\n(A) After the end of object life\n(B) Anytime in between objects lifespan\n(C) At end of whole program\n(D) Just before the end of the object life",
+            "question_text": "When a destructor is called?",
+            "options": [
+                "After the end of object life",
+                "Anytime in between objects lifespan",
+                "At end of whole program",
+                "Just before the end of the object life"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Just before the end of the object life. Explanation: A destructor is called automatically right before the memory allocated to the object is reclaimed.",
+            "answer": "A destructor is called automatically right before the memory allocated to the object is reclaimed.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 2"
         },
         {
             "question_number": "8",
-            "question_text": "How many parameters does a default constructor require?\n(A) 1\n(B) 2\n(C) 0\n(D) 3",
+            "question_text": "How many parameters does a default constructor require?",
+            "options": [
+                "1",
+                "2",
+                "0",
+                "3"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) 0. Explanation: A default constructor is one that can be called with no arguments.",
+            "answer": "A default constructor is one that can be called with no arguments.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 2"
         },
         {
             "question_number": "9",
-            "question_text": "Behaviour diagram does not include ________.\n(A) Use case diagrams\n(B) State diagrams\n(C) Activity diagrams\n(D) Component diagrams",
+            "question_text": "Behaviour diagram does not include ________.",
+            "options": [
+                "Use case diagrams",
+                "State diagrams",
+                "Activity diagrams",
+                "Component diagrams"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Component diagrams. Explanation: Component diagrams are structural diagrams, not behavioral diagrams.",
+            "answer": "Component diagrams are structural diagrams, not behavioral diagrams.",
             "answer_source": "General UML Knowledge",
             "chapter": "Unit 4"
         },
         {
             "question_number": "10",
-            "question_text": "Which members cannot be accessed in derived class in multiple inheritance?\n(A) Private members of base\n(B) Public members of base\n(C) Protected members of base\n(D) Constructor of base",
+            "question_text": "Which members cannot be accessed in derived class in multiple inheritance?",
+            "options": [
+                "Private members of base",
+                "Public members of base",
+                "Protected members of base",
+                "Constructor of base"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Private members of base. Explanation: Private members of a base class are never directly accessible from a derived class, regardless of the inheritance type.",
+            "answer": "Private members of a base class are never directly accessible from a derived class, regardless of the inheritance type.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 3"
         },
         {
             "question_number": "11",
-            "question_text": "________ keyword is used before a function in a base class which is to be overridden in derived class?\n(A) Void\n(B) Static\n(C) Virtual\n(D) Friend",
+            "question_text": "________ keyword is used before a function in a base class which is to be overridden in derived class?",
+            "options": [
+                "Void",
+                "Static",
+                "Virtual",
+                "Friend"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Virtual. Explanation: The `virtual` keyword tells the compiler to support dynamic binding, allowing the derived class to override the method.",
+            "answer": "The `virtual` keyword tells the compiler to support dynamic binding, allowing the derived class to override the method.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 3"
         },
         {
             "question_number": "12",
-            "question_text": "In an activity diagram, transitions belong to ________.\n(A) Trigger oriented transitions\n(B) Self-transitions\n(C) Internal transitions\n(D) Completion transitions",
+            "question_text": "In an activity diagram, transitions belong to ________.",
+            "options": [
+                "Trigger oriented transitions",
+                "Self-transitions",
+                "Internal transitions",
+                "Completion transitions"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Completion transitions. Explanation: In activity diagrams, standard flows from one action to the next occur upon completion of the preceding action.",
+            "answer": "In activity diagrams, standard flows from one action to the next occur upon completion of the preceding action.",
             "answer_source": "General UML Knowledge",
             "chapter": "Unit 3"
         },
         {
             "question_number": "13",
-            "question_text": "Function template can accept\n(A) Any type of parameters\n(B) Only one parameter\n(C) Only parameters of the basic type\n(D) Only parameters of the derived type",
+            "question_text": "Function template can accept",
+            "options": [
+                "Any type of parameters",
+                "Only one parameter",
+                "Only parameters of the basic type",
+                "Only parameters of the derived type"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Any type of parameters. Explanation: Templates allow functions to operate with generic types, meaning they can accept parameters of built-in or user-defined types.",
+            "answer": "Templates allow functions to operate with generic types, meaning they can accept parameters of built-in or user-defined types.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 4"
         },
         {
             "question_number": "14",
-            "question_text": "Which among the following are not the valid notations for package and component diagrams?\n(A) Notes\n(B) Box\n(C) Nodes\n(D) Extension mechanism",
+            "question_text": "Which among the following are not the valid notations for package and component diagrams?",
+            "options": [
+                "Notes",
+                "Box",
+                "Nodes",
+                "Extension mechanism"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Nodes. Explanation: Nodes are specific to Deployment Diagrams, representing hardware resources. They are not standard notations for package or component diagrams.",
+            "answer": "Nodes are specific to Deployment Diagrams, representing hardware resources. They are not standard notations for package or component diagrams.",
             "answer_source": "General UML Knowledge",
             "chapter": "Unit 4"
         },
         {
             "question_number": "15",
-            "question_text": "Which of the following is used for generic programming?\n(A) Virtual functions\n(B) Modules\n(C) Templates\n(D) Abstract class",
+            "question_text": "Which of the following is used for generic programming?",
+            "options": [
+                "Virtual functions",
+                "Modules",
+                "Templates",
+                "Abstract class"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Templates. Explanation: Templates are the foundation of generic programming in C++, allowing code to work with any data type.",
+            "answer": "Templates are the foundation of generic programming in C++, allowing code to work with any data type.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 4"
         },
         {
             "question_number": "16",
-            "question_text": "________ an ability to automatically resize when appending elements.\n(A) Array\n(B) Vector\n(C) Dynamic array\n(D) Container",
+            "question_text": "________ an ability to automatically resize when appending elements.",
+            "options": [
+                "Array",
+                "Vector",
+                "Dynamic array",
+                "Container"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Vector. Explanation: `std::vector` in C++ STL manages a dynamic array internally and automatically resizes itself when new elements are appended.",
+            "answer": "`std::vector` in C++ STL manages a dynamic array internally and automatically resizes itself when new elements are appended.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 5"
         },
         {
             "question_number": "17",
-            "question_text": "State the return type of find method.\n(A) Iterator\n(B) Integer\n(C) Boolean\n(D) Float",
+            "question_text": "State the return type of find method.",
+            "options": [
+                "Iterator",
+                "Integer",
+                "Boolean",
+                "Float"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Iterator. Explanation: The `std::find` algorithm returns an iterator pointing to the first occurrence of the element, or the end iterator if not found.",
+            "answer": "The `std::find` algorithm returns an iterator pointing to the first occurrence of the element, or the end iterator if not found.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 5"
         },
         {
             "question_number": "18",
-            "question_text": "How many instance are allowed by map container, while inserting an element?\n(A) 2\n(B) 1\n(C) 3\n(D) Multiple",
+            "question_text": "How many instance are allowed by map container, while inserting an element?",
+            "options": [
+                "2",
+                "1",
+                "3",
+                "Multiple"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) 1. Explanation: A `std::map` only allows unique keys. If you try to insert an element with a key that already exists, the insertion fails.",
+            "answer": "A `std::map` only allows unique keys. If you try to insert an element with a key that already exists, the insertion fails.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 5"
         },
         {
             "question_number": "19",
-            "question_text": "Which container can have the same keys?\n(A) Map\n(B) Multimap\n(C) Unordered map\n(D) Set",
+            "question_text": "Which container can have the same keys?",
+            "options": [
+                "Map",
+                "Multimap",
+                "Unordered map",
+                "Set"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Multimap. Explanation: `std::multimap` is an associative container that allows multiple elements to have equivalent keys.",
+            "answer": "`std::multimap` is an associative container that allows multiple elements to have equivalent keys.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 5"
         },
         {
             "question_number": "20",
-            "question_text": "What are the containers?\n(A) Containers store objects and data\n(B) Containers stores all the algorithms\n(C) Containers contain overloaded functions\n(D) Containers contain set of iterators",
+            "question_text": "What are the containers?",
+            "options": [
+                "Containers store objects and data",
+                "Containers stores all the algorithms",
+                "Containers contain overloaded functions",
+                "Containers contain set of iterators"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Containers store objects and data. Explanation: In STL, containers are data structures that manage collections of objects.",
+            "answer": "In STL, containers are data structures that manage collections of objects.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 5"
         },

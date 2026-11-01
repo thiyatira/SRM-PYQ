@@ -4,161 +4,301 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "A sequence of amino acids bonded together by ______ bonds.\n(A) Hydrogen\n(C) Peptide\n(B) Glycosidic bond\n(D) Ionic",
+            "question_text": "A sequence of amino acids bonded together by ______ bonds.",
+            "options": [
+                "Hydrogen",
+                "Glycosidic bond",
+                "Peptide",
+                "Ionic"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Peptide. Amino acids are linked by peptide bonds to form polypeptide chains.",
+            "answer": "Amino acids are linked by peptide bonds to form polypeptide chains.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
         {
             "question_number": "2",
-            "question_text": "Homologous partner of chromosome for X is\n(A) XY\n(C) Y\n(B) 23\n(D) 1",
+            "question_text": "Homologous partner of chromosome for X is",
+            "options": [
+                "XY",
+                "23",
+                "Y",
+                "1"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Y. In human males, the X chromosome pairs with the Y chromosome during meiosis, making Y its homologous partner in this context.",
+            "answer": "In human males, the X chromosome pairs with the Y chromosome during meiosis, making Y its homologous partner in this context.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
         {
             "question_number": "3",
-            "question_text": "Inner cell mass is obtained from\n(A) Blastocyst\n(C) Gastrula\n(B) Morula\n(D) Zygote",
+            "question_text": "Inner cell mass is obtained from",
+            "options": [
+                "Blastocyst",
+                "Morula",
+                "Gastrula",
+                "Zygote"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Blastocyst. The inner cell mass is a cluster of cells within the blastocyst, which eventually forms the embryo.",
+            "answer": "The inner cell mass is a cluster of cells within the blastocyst, which eventually forms the embryo.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
         {
             "question_number": "4",
-            "question_text": "The transfer of genetic material through viruses is called\n(A) Translation\n(C) Conjugation\n(B) Transduction\n(D) Transformation",
+            "question_text": "The transfer of genetic material through viruses is called",
+            "options": [
+                "Translation",
+                "Transduction",
+                "Conjugation",
+                "Transformation"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Transduction. Transduction is the process by which genetic material is transferred from one bacterium to another by a virus.",
+            "answer": "Transduction is the process by which genetic material is transferred from one bacterium to another by a virus.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
         {
             "question_number": "5",
-            "question_text": "Cholesterol is a\n(A) Steroid\n(C) Enzyme\n(B) Transporter\n(D) Synthetic compound",
+            "question_text": "Cholesterol is a",
+            "options": [
+                "Steroid",
+                "Transporter",
+                "Enzyme",
+                "Synthetic compound"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Steroid. Cholesterol is a type of lipid classified as a steroid, essential for cell membranes and hormone synthesis.",
+            "answer": "Cholesterol is a type of lipid classified as a steroid, essential for cell membranes and hormone synthesis.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
         {
             "question_number": "6",
-            "question_text": "DNA is different from RNA because of the base\n(A) Cytosine\n(C) Uracil\n(B) Guanine\n(D) Adenine",
+            "question_text": "DNA is different from RNA because of the base",
+            "options": [
+                "Cytosine",
+                "Guanine",
+                "Uracil",
+                "Adenine"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Uracil. DNA contains Adenine, Guanine, Cytosine, and Thymine, while RNA contains Adenine, Guanine, Cytosine, and Uracil (instead of Thymine).",
+            "answer": "DNA contains Adenine, Guanine, Cytosine, and Thymine, while RNA contains Adenine, Guanine, Cytosine, and Uracil (instead of Thymine).",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
         {
             "question_number": "7",
-            "question_text": "The algorithm compares a protein query sequence against a nucleotide\nsequence database dynamically translated in all reading frames.\n(A) BLASTn\n(C) tBLASTn\n(B) BLASTP\n(D) BLASTX",
+            "question_text": "The algorithm compares a protein query sequence against a nucleotide sequence database dynamically translated in all reading frames.",
+            "options": [
+                "BLASTn",
+                "BLASTP",
+                "tBLASTn",
+                "BLASTX"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(D) BLASTX. BLASTX compares a protein query sequence against a nucleotide sequence database that has been dynamically translated in all six reading frames.",
+            "answer": "BLASTX. BLASTX compares a protein query sequence against a nucleotide sequence database that has been dynamically translated in all six reading frames.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
         {
             "question_number": "8",
-            "question_text": "The mechanism of delivering amino acids for translation is done by\n(A) tRNA\n(C) mRNA\n(B) gRNA\n(D) rDNA",
+            "question_text": "The mechanism of delivering amino acids for translation is done by",
+            "options": [
+                "tRNA",
+                "gRNA",
+                "mRNA",
+                "rDNA"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) tRNA. Transfer RNA (tRNA) molecules carry specific amino acids to the ribosome during protein synthesis (translation) according to the mRNA codons.",
+            "answer": "Transfer RNA (tRNA) molecules carry specific amino acids to the ribosome during protein synthesis (translation) according to the mRNA codons.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
         {
             "question_number": "9",
-            "question_text": "PDB was established in 1972 at\n(A) BNL\n(C) RCSB\n(B) CNL\n(D) GGE",
+            "question_text": "PDB was established in 1972 at",
+            "options": [
+                "BNL",
+                "CNL",
+                "RCSB",
+                "GGE"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) BNL. The Protein Data Bank (PDB) was initially established in 1972 at the Brookhaven National Laboratory (BNL).",
+            "answer": "The Protein Data Bank (PDB) was initially established in 1972 at the Brookhaven National Laboratory (BNL).",
             "answer_source": "generated",
             "chapter": "Unit 3: Structure Biology"
         },
         {
             "question_number": "10",
-            "question_text": "______ determines the propensity or intrinsic tendency of each residue\nto be in the helix, strand, and \u1e9e-turn conformation\n(A) PHD\n(C) GOR\n(B) Chou Fasman\n(D) PROTFUN",
+            "question_text": "______ determines the propensity or intrinsic tendency of each residue to be in the helix, strand, and ẞ-turn conformation",
+            "options": [
+                "PHD",
+                "Chou Fasman",
+                "GOR",
+                "PROTFUN"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Chou Fasman. The Chou-Fasman method is an early and widely used algorithm that predicts protein secondary structures (alpha-helices, beta-sheets, and beta-turns) based on the amino acid sequence and their propensities for certain conformations.",
+            "answer": "The Chou-Fasman method is an early and widely used algorithm that predicts protein secondary structures (alpha-helices, beta-sheets, and beta-turns) based on the amino acid sequence and their propensities for certain conformations.",
             "answer_source": "generated",
             "chapter": "Unit 3: Structure Biology"
         },
         {
             "question_number": "11",
-            "question_text": "Which among these is odd?\n(A) Space fill\n(C) Side chain model\n(B) Ribbon\n(D) Ball and stick",
+            "question_text": "Which among these is odd?",
+            "options": [
+                "Space fill",
+                "Ribbon",
+                "Side chain model",
+                "Ball and stick"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Side chain model. Space-fill, Ribbon, and Ball-and-stick are common general visualization styles for protein structures. \"Side chain model\" describes a specific component of a protein (the side chains) rather than a holistic representation style.",
+            "answer": "Space-fill, Ribbon, and Ball-and-stick are common general visualization styles for protein structures. \"Side chain model\" describes a specific component of a protein (the side chains) rather than a holistic representation style.",
             "answer_source": "generated",
             "chapter": "Unit 3: Structure Biology"
         },
         {
             "question_number": "12",
-            "question_text": "The anticodon for ACU is\n(A) TGA\n(C) UGA\n(B) GAT\n(D) UCA",
+            "question_text": "The anticodon for ACU is",
+            "options": [
+                "TGA",
+                "GAT",
+                "UGA",
+                "UCA"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) UGA. The anticodon on tRNA is complementary and antiparallel to the mRNA codon. For mRNA codon ACU, the complementary base pairs are U-A, G-C, U-A, so the anticodon is UGA.",
+            "answer": "The anticodon on tRNA is complementary and antiparallel to the mRNA codon. For mRNA codon ACU, the complementary base pairs are U-A, G-C, U-A, so the anticodon is UGA.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
         {
             "question_number": "13",
-            "question_text": "Clustering is a type of ______ machine learning algorithm.\n(A) Supervised\n(C) Reciprocal\n(B) Unsupervised\n(D) Cosupervised",
+            "question_text": "Clustering is a type of ______ machine learning algorithm.",
+            "options": [
+                "Supervised",
+                "Unsupervised",
+                "Reciprocal",
+                "Cosupervised"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Unsupervised. Clustering is a machine learning technique used to group data points into clusters based on their similarity without prior labeled data, hence it is unsupervised.",
+            "answer": "Clustering is a machine learning technique used to group data points into clusters based on their similarity without prior labeled data, hence it is unsupervised.",
             "answer_source": "generated",
             "chapter": "Unit 4: Neurobiology"
         },
         {
             "question_number": "14",
-            "question_text": "Albert Einstein had inordinate number of ______ cells.\n(A) Nerve\n(C) Liver\n(B) Glial\n(D) Brain cells",
+            "question_text": "Albert Einstein had inordinate number of ______ cells.",
+            "options": [
+                "Nerve",
+                "Glial",
+                "Liver",
+                "Brain cells"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Glial. Studies of Albert Einstein's brain suggested he had an unusually high number of glial cells relative to neurons in certain cortical areas, particularly the inferior parietal lobe.",
+            "answer": "Studies of Albert Einstein's brain suggested he had an unusually high number of glial cells relative to neurons in certain cortical areas, particularly the inferior parietal lobe.",
             "answer_source": "generated",
             "chapter": "Unit 4: Neurobiology"
         },
         {
             "question_number": "15",
-            "question_text": "The spiking period is followed by a ______ period.\n(A) Refractory\n(C) Unspike\n(B) Resolution\n(D) Unrest",
+            "question_text": "The spiking period is followed by a ______ period.",
+            "options": [
+                "Refractory",
+                "Resolution",
+                "Unspike",
+                "Unrest"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Refractory. Following an action potential (spiking), a neuron enters a refractory period during which it is less responsive or completely unresponsive to further stimulation, preventing immediate re-firing and ensuring unidirectional signal propagation.",
+            "answer": "Following an action potential (spiking), a neuron enters a refractory period during which it is less responsive or completely unresponsive to further stimulation, preventing immediate re-firing and ensuring unidirectional signal propagation.",
             "answer_source": "generated",
             "chapter": "Unit 4: Neurobiology"
         },
         {
             "question_number": "16",
-            "question_text": "Alzheimer's disease causes deficit in\n(A) Proteins\n(C) Cognition\n(B) Hormones\n(D) Sugars",
+            "question_text": "Alzheimer's disease causes deficit in",
+            "options": [
+                "Proteins",
+                "Hormones",
+                "Cognition",
+                "Sugars"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Cognition. Alzheimer's disease is a neurodegenerative disorder characterized by progressive loss of memory, thinking skills, and other cognitive abilities.",
+            "answer": "Alzheimer's disease is a neurodegenerative disorder characterized by progressive loss of memory, thinking skills, and other cognitive abilities.",
             "answer_source": "generated",
             "chapter": "Unit 4: Neurobiology"
         },
         {
             "question_number": "17",
-            "question_text": "Diphtheria and tetanus are developed as ______ vaccine.\n(A) Peptide\n(C) Recombinant\n(B) Live\n(D) Toxoid",
+            "question_text": "Diphtheria and tetanus are developed as ______ vaccine.",
+            "options": [
+                "Peptide",
+                "Live",
+                "Recombinant",
+                "Toxoid"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Toxoid. Diphtheria and tetanus vaccines are toxoid vaccines, which means they are made from inactivated bacterial toxins (toxoids) that stimulate an immune response without causing the disease.",
+            "answer": "Diphtheria and tetanus vaccines are toxoid vaccines, which means they are made from inactivated bacterial toxins (toxoids) that stimulate an immune response without causing the disease.",
             "answer_source": "generated",
             "chapter": "Unit 5: Immunobiology"
         },
         {
             "question_number": "18",
-            "question_text": "______ is a agranular leukocyte.\n(A) Basophil\n(C) Monocyte\n(B) Eosinophil\n(D) Lymphocyte",
+            "question_text": "______ is a agranular leukocyte.",
+            "options": [
+                "Basophil",
+                "Eosinophil",
+                "Monocyte",
+                "Lymphocyte"
+            ],
+            "correct_option": "C,D",
             "marks": 1,
-            "answer": "(D) Lymphocyte. Leukocytes are broadly classified into granulocytes (neutrophils, eosinophils, basophils) and agranulocytes (lymphocytes, monocytes). Lymphocytes are agranular.",
+            "answer": "Leukocytes are classified into granulocytes (neutrophils, eosinophils, basophils) and agranulocytes (lymphocytes and monocytes). Both monocytes and lymphocytes are agranular, so options C and D are correct; basophils and eosinophils are granular.",
             "answer_source": "generated",
             "chapter": "Unit 5: Immunobiology"
         },
         {
             "question_number": "19",
-            "question_text": "MHC is present on ______\n(A) Human cells\n(C) Virus\n(B) Bacteria\n(D) Parasite",
+            "question_text": "MHC is present on ______",
+            "options": [
+                "Human cells",
+                "Bacteria",
+                "Virus",
+                "Parasite"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Human cells. Major Histocompatibility Complex (MHC) molecules are proteins found on the surface of most nucleated cells in vertebrates, including human cells, playing a critical role in presenting antigens to T cells and initiating immune responses.",
+            "answer": "Major Histocompatibility Complex (MHC) molecules are proteins found on the surface of most nucleated cells in vertebrates, including human cells, playing a critical role in presenting antigens to T cells and initiating immune responses.",
             "answer_source": "generated",
             "chapter": "Unit 5: Immunobiology"
         },
         {
             "question_number": "20",
-            "question_text": "Antibodies are made from ______ cells.\n(A) B\n(C) NK\n(B) T\n(D) M",
+            "question_text": "Antibodies are made from ______ cells.",
+            "options": [
+                "B",
+                "T",
+                "NK",
+                "M"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) B. B lymphocytes (B cells) are the primary cells responsible for producing antibodies. Upon activation, B cells differentiate into plasma cells, which are antibody-secreting factories.",
+            "answer": "B lymphocytes (B cells) are the primary cells responsible for producing antibodies. Upon activation, B cells differentiate into plasma cells, which are antibody-secreting factories.",
             "answer_source": "generated",
             "chapter": "Unit 5: Immunobiology"
         },
@@ -174,7 +314,7 @@
             "question_number": "22",
             "question_text": "Describe biochemistry of carbohydrates in detail.",
             "marks": 10,
-            "answer": "Carbohydrates are organic molecules composed of carbon, hydrogen, and oxygen, with the general formula (CH\u2082O)n. They are a primary source of energy for living organisms and play crucial structural and recognition roles.\n*   **Classification:**\n    *   **Monosaccharides:** Simple sugars like glucose, fructose, and galactose. They are the basic units and cannot be hydrolyzed further. Glucose is a key energy source, fructose is found in fruits, and galactose is part of lactose.\n    *   **Disaccharides:** Formed by the glycosidic linkage of two monosaccharides. Examples include sucrose (glucose + fructose), lactose (glucose + galactose), and maltose (glucose + glucose).\n    *   **Oligosaccharides:** Contain 3 to 10 monosaccharide units. Often found attached to proteins (glycoproteins) and lipids (glycolipids) on cell surfaces, involved in cell recognition.\n    *   **Polysaccharides:** Long chains of many monosaccharide units, either linear or branched. Examples include:\n        *   **Starch:** Energy storage in plants (amylose and amylopectin).\n        *   **Glycogen:** Energy storage in animals, primarily in liver and muscles.\n        *   **Cellulose:** Structural component of plant cell walls, providing rigidity.\n        *   **Chitin:** Structural component of fungal cell walls and arthropod exoskeletons.\n*   **Functions:**\n    *   **Energy Source:** Glucose is the main fuel for cellular respiration. Starch and glycogen serve as energy reserves.\n    *   **Structural Support:** Cellulose in plants and chitin in fungi/arthropods provide rigidity and protection.\n    *   **Cell Recognition:** Oligosaccharides on cell surfaces act as markers for cell-cell communication and immune recognition.\n    *   **Lubrication and Protection:** Glycosaminoglycans (a type of polysaccharide) are components of connective tissues, providing lubrication and cushioning.",
+            "answer": "Carbohydrates are organic molecules composed of carbon, hydrogen, and oxygen, with the general formula (CH₂O)n. They are a primary source of energy for living organisms and play crucial structural and recognition roles.\n*   **Classification:**\n    *   **Monosaccharides:** Simple sugars like glucose, fructose, and galactose. They are the basic units and cannot be hydrolyzed further. Glucose is a key energy source, fructose is found in fruits, and galactose is part of lactose.\n    *   **Disaccharides:** Formed by the glycosidic linkage of two monosaccharides. Examples include sucrose (glucose + fructose), lactose (glucose + galactose), and maltose (glucose + glucose).\n    *   **Oligosaccharides:** Contain 3 to 10 monosaccharide units. Often found attached to proteins (glycoproteins) and lipids (glycolipids) on cell surfaces, involved in cell recognition.\n    *   **Polysaccharides:** Long chains of many monosaccharide units, either linear or branched. Examples include:\n        *   **Starch:** Energy storage in plants (amylose and amylopectin).\n        *   **Glycogen:** Energy storage in animals, primarily in liver and muscles.\n        *   **Cellulose:** Structural component of plant cell walls, providing rigidity.\n        *   **Chitin:** Structural component of fungal cell walls and arthropod exoskeletons.\n*   **Functions:**\n    *   **Energy Source:** Glucose is the main fuel for cellular respiration. Starch and glycogen serve as energy reserves.\n    *   **Structural Support:** Cellulose in plants and chitin in fungi/arthropods provide rigidity and protection.\n    *   **Cell Recognition:** Oligosaccharides on cell surfaces act as markers for cell-cell communication and immune recognition.\n    *   **Lubrication and Protection:** Glycosaminoglycans (a type of polysaccharide) are components of connective tissues, providing lubrication and cushioning.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
@@ -214,7 +354,7 @@
             "question_number": "27",
             "question_text": "Cell theory - Device experiments to prove them.",
             "marks": 15,
-            "answer": "The Cell Theory is one of the fundamental tenets of biology, stating that all living organisms are composed of cells, and cells are the basic unit of life. It comprises three main points:\n1.  All living organisms are composed of one or more cells.\n2.  The cell is the basic unit of structure and organization in organisms.\n3.  All cells arise from pre-existing cells.\n\n**Historical Context and Experimental Proofs:**\n\n*   **Early Microscopy and Observation (Points 1 & 2):**\n    *   **Robert Hooke (1665):** Observed cork under a crude microscope and coined the term \"cell\" for the small, box-like structures. This was the first observation suggesting a fundamental unit.\n    *   **Antonie van Leeuwenhoek (late 1600s):** With improved microscopes, observed \"animalcules\" (protozoa, bacteria, sperm cells) in various samples, demonstrating that microscopic life forms were also composed of these basic units.\n    *   **Matthias Schleiden (1838) and Theodor Schwann (1839):** Independently proposed that all plants are composed of cells (Schleiden) and all animals are composed of cells (Schwann). Their combined work formally established the first two tenets: all living things are made of cells, and the cell is the basic unit of life.\n    *   **Experiments to Prove 1 & 2:**\n        *   **Observation with Microscopes:** The most direct \"experiment\" was the widespread adoption of microscopy. Scientists observed an enormous diversity of living organisms \u2013 from simple bacteria to complex tissues in plants and animals \u2013 and consistently found them to be composed of individual cell units. Dissecting tissues and observing them under magnification invariably revealed cellular structures.\n        *   **Early Tissue Culture (Implicit):** While not explicitly for cell theory proof, early attempts at culturing tissues (e.g., in the late 19th/early 20th century) showed that cells could be isolated and maintained, acting as independent living units.\n\n*   **Cells Arise from Pre-existing Cells (Point 3 - \"Omnis cellula e cellula\"):**\n    *   **Challenge to Spontaneous Generation:** Before this tenet, it was widely believed that life could arise spontaneously from non-living matter (e.g., maggots from rotting meat).\n    *   **Francesco Redi (1668):** Designed an experiment to disprove spontaneous generation of maggots from meat. He placed meat in three jars: open, sealed, and covered with gauze. Maggots only appeared in the open jar, where flies could lay eggs, suggesting life comes from life.\n    *   **Louis Pasteur (1859):** Conducted definitive experiments using \"swan-neck\" flasks to demonstrate that microbes do not spontaneously generate in nutrient broths.\n        *   **Experiment:** He boiled broth in swan-neck flasks, sterilizing it. The curved neck allowed air in but trapped airborne dust and microbes. The broth remained sterile. If the neck was broken, allowing microbes direct access, the broth became cloudy with microbial growth. This elegantly proved that life (microbes) only arose from pre-existing life (airborne microbes).\n        *   **Implication for Cell Theory:** Pasteur's work was crucial as it applied to cells as well. If even the simplest life forms (microbes) don't spontaneously generate, then larger cells also must arise from pre-existing cells through processes like cell division.\n    *   **Rudolf Virchow (1855):** Formalized the third tenet, \"Omnis cellula e cellula\" (all cells arise from pre-existing cells), which built upon the observations of cell division and disproved spontaneous generation for cellular life.\n\n**Modern Experimental Confirmations:**\n*   **Detailed Cell Division Studies:** Advances in microscopy (light and electron microscopy) and molecular biology have allowed scientists to observe and meticulously document the processes of mitosis and meiosis, providing overwhelming evidence for cell division as the mechanism by which new cells are formed from existing ones.\n*   **Genetic Lineage Tracing:** Techniques like fluorescent reporters and genetic engineering allow scientists to track the lineage of cells from a single parent cell through multiple divisions, directly demonstrating their origin from pre-existing cells.\n*   **In Vitro Cell Culture:** The routine ability to culture cells in laboratories, where they proliferate and divide, forming new cells from existing ones, serves as a continuous experimental confirmation of Virchow's postulate.\n\nIn summary, the cell theory was established through a combination of meticulous observation enabled by microscopy and critical experiments that debunked spontaneous generation, ultimately demonstrating the fundamental role of cells as the building blocks of life and their origin solely from other living cells.",
+            "answer": "The Cell Theory is one of the fundamental tenets of biology, stating that all living organisms are composed of cells, and cells are the basic unit of life. It comprises three main points:\n1.  All living organisms are composed of one or more cells.\n2.  The cell is the basic unit of structure and organization in organisms.\n3.  All cells arise from pre-existing cells.\n\n**Historical Context and Experimental Proofs:**\n\n*   **Early Microscopy and Observation (Points 1 & 2):**\n    *   **Robert Hooke (1665):** Observed cork under a crude microscope and coined the term \"cell\" for the small, box-like structures. This was the first observation suggesting a fundamental unit.\n    *   **Antonie van Leeuwenhoek (late 1600s):** With improved microscopes, observed \"animalcules\" (protozoa, bacteria, sperm cells) in various samples, demonstrating that microscopic life forms were also composed of these basic units.\n    *   **Matthias Schleiden (1838) and Theodor Schwann (1839):** Independently proposed that all plants are composed of cells (Schleiden) and all animals are composed of cells (Schwann). Their combined work formally established the first two tenets: all living things are made of cells, and the cell is the basic unit of life.\n    *   **Experiments to Prove 1 & 2:**\n        *   **Observation with Microscopes:** The most direct \"experiment\" was the widespread adoption of microscopy. Scientists observed an enormous diversity of living organisms – from simple bacteria to complex tissues in plants and animals – and consistently found them to be composed of individual cell units. Dissecting tissues and observing them under magnification invariably revealed cellular structures.\n        *   **Early Tissue Culture (Implicit):** While not explicitly for cell theory proof, early attempts at culturing tissues (e.g., in the late 19th/early 20th century) showed that cells could be isolated and maintained, acting as independent living units.\n\n*   **Cells Arise from Pre-existing Cells (Point 3 - \"Omnis cellula e cellula\"):**\n    *   **Challenge to Spontaneous Generation:** Before this tenet, it was widely believed that life could arise spontaneously from non-living matter (e.g., maggots from rotting meat).\n    *   **Francesco Redi (1668):** Designed an experiment to disprove spontaneous generation of maggots from meat. He placed meat in three jars: open, sealed, and covered with gauze. Maggots only appeared in the open jar, where flies could lay eggs, suggesting life comes from life.\n    *   **Louis Pasteur (1859):** Conducted definitive experiments using \"swan-neck\" flasks to demonstrate that microbes do not spontaneously generate in nutrient broths.\n        *   **Experiment:** He boiled broth in swan-neck flasks, sterilizing it. The curved neck allowed air in but trapped airborne dust and microbes. The broth remained sterile. If the neck was broken, allowing microbes direct access, the broth became cloudy with microbial growth. This elegantly proved that life (microbes) only arose from pre-existing life (airborne microbes).\n        *   **Implication for Cell Theory:** Pasteur's work was crucial as it applied to cells as well. If even the simplest life forms (microbes) don't spontaneously generate, then larger cells also must arise from pre-existing cells through processes like cell division.\n    *   **Rudolf Virchow (1855):** Formalized the third tenet, \"Omnis cellula e cellula\" (all cells arise from pre-existing cells), which built upon the observations of cell division and disproved spontaneous generation for cellular life.\n\n**Modern Experimental Confirmations:**\n*   **Detailed Cell Division Studies:** Advances in microscopy (light and electron microscopy) and molecular biology have allowed scientists to observe and meticulously document the processes of mitosis and meiosis, providing overwhelming evidence for cell division as the mechanism by which new cells are formed from existing ones.\n*   **Genetic Lineage Tracing:** Techniques like fluorescent reporters and genetic engineering allow scientists to track the lineage of cells from a single parent cell through multiple divisions, directly demonstrating their origin from pre-existing cells.\n*   **In Vitro Cell Culture:** The routine ability to culture cells in laboratories, where they proliferate and divide, forming new cells from existing ones, serves as a continuous experimental confirmation of Virchow's postulate.\n\nIn summary, the cell theory was established through a combination of meticulous observation enabled by microscopy and critical experiments that debunked spontaneous generation, ultimately demonstrating the fundamental role of cells as the building blocks of life and their origin solely from other living cells.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },

@@ -5,161 +5,301 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "The representation of octal number $(532.2)_8$ in decimal is ______.\n(A) $(346.25)_{10}$\n(B) $(532.864)_{10}$\n(C) $(340.67)_{10}$\n(D) $(531.668)_{10}$",
+            "question_text": "The representation of octal number $(532.2)_8$ in decimal is ______.",
+            "options": [
+                "$(346.25)_{10}$",
+                "$(532.864)_{10}$",
+                "$(340.67)_{10}$",
+                "$(531.668)_{10}$"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) $(346.25)_{10}$\n\nRationale: $5\\times64+3\\times8+2\\times1=346$ and $2\\times8^{-1}=0.25$, so $346.25_{10}$.",
+            "answer": "$5\\times64+3\\times8+2\\times1=346$ and $2\\times8^{-1}=0.25$, so $346.25_{10}$.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "2",
-            "question_text": "2's compliment of 11001011 is ______.\n(A) 01010111\n(B) 11010100\n(C) 00110101\n(D) 11100010",
+            "question_text": "2's compliment of 11001011 is ______.",
+            "options": [
+                "01010111",
+                "11010100",
+                "00110101",
+                "11100010"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) 00110101\n\nRationale: 1's complement = 00110100; adding 1 gives 00110101.",
+            "answer": "1's complement = 00110100; adding 1 gives 00110101.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "3",
-            "question_text": "The gate which is used to reverse the output obtained is ______.\n(A) NOR\n(B) NAND\n(C) EXOR\n(D) NOT",
+            "question_text": "The gate which is used to reverse the output obtained is ______.",
+            "options": [
+                "NOR",
+                "NAND",
+                "EXOR",
+                "NOT"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) NOT\n\nRationale: The NOT gate (inverter) produces the complement of its input.",
+            "answer": "The NOT gate (inverter) produces the complement of its input.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "4",
-            "question_text": "______ are arithmetic gates.\n(A) NOT\n(B) NAND & NOR\n(C) X-OR & X-NOR\n(D) NOT, AND & OR",
+            "question_text": "______ are arithmetic gates.",
+            "options": [
+                "NOT",
+                "NAND & NOR",
+                "X-OR & X-NOR",
+                "NOT, AND & OR"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) X-OR & X-NOR\n\nRationale: XOR/XNOR implement binary sum/comparison and are used in adders, parity and comparators, hence called arithmetic gates (NAND/NOR are universal gates).",
+            "answer": "XOR/XNOR implement binary sum/comparison and are used in adders, parity and comparators, hence called arithmetic gates (NAND/NOR are universal gates).",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "5",
-            "question_text": "In register transfer the processor register as\n(A) MAR\n(B) PC\n(C) IR\n(D) R1",
+            "question_text": "In register transfer the processor register as",
+            "options": [
+                "MAR",
+                "PC",
+                "IR",
+                "R1"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) R1\n\nRationale: In register transfer notation general-purpose processor registers are denoted R0, R1, ...; e.g. $R1 \\leftarrow [LOC]$.",
+            "answer": "In register transfer notation general-purpose processor registers are denoted R0, R1, ...; e.g. $R1 \\leftarrow [LOC]$.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "6",
-            "question_text": "A CPU has 12 registers and uses 6 addressing modes. RAM is 64 K$\\times$32. What is the maximum size of the op-code field if the instruction has a register operand and a memory address operand?\n(A) 8 bits\n(B) 9 bits\n(C) 10 bits\n(D) 11 bits",
+            "question_text": "A CPU has 12 registers and uses 6 addressing modes. RAM is 64 K$\\times$32. What is the maximum size of the op-code field if the instruction has a register operand and a memory address operand?",
+            "options": [
+                "8 bits",
+                "9 bits",
+                "10 bits",
+                "11 bits"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) 9 bits\n\nRationale: Word = 32 bits. Address: $64K=2^{16}$ → 16 bits; register: 12 → 4 bits; mode: 6 → 3 bits. Opcode = $32-16-4-3=9$ bits.",
+            "answer": "Word = 32 bits. Address: $64K=2^{16}$ → 16 bits; register: 12 → 4 bits; mode: 6 → 3 bits. Opcode = $32-16-4-3=9$ bits.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "7",
-            "question_text": "Which of the following acts as a temporary storage location to hold an intermediate result in mathematical and logical calculations?\n(A) RAM\n(B) Accumulator\n(C) Program counter\n(D) Memory address register",
+            "question_text": "Which of the following acts as a temporary storage location to hold an intermediate result in mathematical and logical calculations?",
+            "options": [
+                "RAM",
+                "Accumulator",
+                "Program counter",
+                "Memory address register"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Accumulator\n\nRationale: The accumulator holds intermediate ALU results.",
+            "answer": "The accumulator holds intermediate ALU results.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "8",
-            "question_text": "The bus used to connect the monitor to the CPU is ______.\n(A) PCI bus\n(B) SCSI bus\n(C) Memory bus\n(D) RAM bus",
+            "question_text": "The bus used to connect the monitor to the CPU is ______.",
+            "options": [
+                "PCI bus",
+                "SCSI bus",
+                "Memory bus",
+                "RAM bus"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) PCI bus\n\nRationale: Graphics/display adapters are connected via the PCI (or PCI Express) bus.",
+            "answer": "Graphics/display adapters are connected via the PCI (or PCI Express) bus.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "9",
-            "question_text": "Booth's algorithm is applied on ______.\n(A) Decimal numbers\n(B) Binary numbers\n(C) Hexadecimal numbers\n(D) Octal numbers",
+            "question_text": "Booth's algorithm is applied on ______.",
+            "options": [
+                "Decimal numbers",
+                "Binary numbers",
+                "Hexadecimal numbers",
+                "Octal numbers"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Binary numbers\n\nRationale: Booth's algorithm multiplies signed binary numbers in 2's complement.",
+            "answer": "Booth's algorithm multiplies signed binary numbers in 2's complement.",
             "answer_source": "generated",
             "chapter": "Unit 3: Design of ALU"
         },
         {
             "question_number": "10",
-            "question_text": "In IEEE 32-bit representation, the mantissa of the fraction is said to occupy ______ bits.\n(A) 24\n(B) 23\n(C) 20\n(D) 16",
+            "question_text": "In IEEE 32-bit representation, the mantissa of the fraction is said to occupy ______ bits.",
+            "options": [
+                "24",
+                "23",
+                "20",
+                "16"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) 23\n\nRationale: Single precision: 1 sign + 8 exponent + 23 mantissa bits.",
+            "answer": "Single precision: 1 sign + 8 exponent + 23 mantissa bits.",
             "answer_source": "generated",
             "chapter": "Unit 3: Design of ALU"
         },
         {
             "question_number": "11",
-            "question_text": "The normalized representation of $0.0010110 \\times 2^9$ is ______.\n(A) 0 10001000 0010110\n(B) 0 10000101 0110\n(C) 0 10101010 1110\n(D) 0 11110100 11100",
+            "question_text": "The normalized representation of $0.0010110 \\times 2^9$ is ______.",
+            "options": [
+                "0 10001000 0010110",
+                "0 10000101 0110",
+                "0 10101010 1110",
+                "0 11110100 11100"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) 0 10000101 0110\n\nRationale: $0.0010110\\times2^9 = 1.0110\\times2^6$. Biased exponent $=127+6=133=10000101_2$, mantissa 0110..., sign 0.",
+            "answer": "$0.0010110\\times2^9 = 1.0110\\times2^6$. Biased exponent $=127+6=133=10000101_2$, mantissa 0110..., sign 0.",
             "answer_source": "generated",
             "chapter": "Unit 3: Design of ALU"
         },
         {
             "question_number": "12",
-            "question_text": "The difference between half adder and full adder is ______.\n(A) Half adder has two inputs while full adder has focus inputs\n(B) Half adder has one input while full adder has two outputs\n(C) Half adder has two inputs while full adder has three inputs\n(D) Half adder has three inputs while full adder has two inputs",
+            "question_text": "The difference between half adder and full adder is ______.",
+            "options": [
+                "Half adder has two inputs while full adder has focus inputs",
+                "Half adder has one input while full adder has two outputs",
+                "Half adder has two inputs while full adder has three inputs",
+                "Half adder has three inputs while full adder has two inputs"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Half adder has two inputs while full adder has three inputs\n\nRationale: Half adder adds A, B; full adder adds A, B and carry-in.",
+            "answer": "Half adder adds A, B; full adder adds A, B and carry-in.",
             "answer_source": "generated",
             "chapter": "Unit 3: Design of ALU"
         },
         {
             "question_number": "13",
-            "question_text": "______ are the different type/s of generating control signals.\n(A) Micro-programed\n(B) Hardwired\n(C) Micro-instruction\n(D) Both micro-programmed and hardwired",
+            "question_text": "______ are the different type/s of generating control signals.",
+            "options": [
+                "Micro-programed",
+                "Hardwired",
+                "Micro-instruction",
+                "Both micro-programmed and hardwired"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Both micro-programmed and hardwired\n\nRationale: Control signals are generated either by hardwired logic or by microprogrammed control.",
+            "answer": "Control signals are generated either by hardwired logic or by microprogrammed control.",
             "answer_source": "generated",
             "chapter": "Unit 4: Control Unit"
         },
         {
             "question_number": "14",
-            "question_text": "What does the end instruction do?\n(A) It ends the generation of a signal\n(B) It ends the complete generation process\n(C) It starts a new instruction fetch cycle and resets the counter\n(D) It is used to shift the control to the processor",
+            "question_text": "What does the end instruction do?",
+            "options": [
+                "It ends the generation of a signal",
+                "It ends the complete generation process",
+                "It starts a new instruction fetch cycle and resets the counter",
+                "It is used to shift the control to the processor"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) It starts a new instruction fetch cycle and resets the counter\n\nRationale: The END signal in hardwired control resets the step counter and starts a new fetch cycle.",
+            "answer": "The END signal in hardwired control resets the step counter and starts a new fetch cycle.",
             "answer_source": "generated",
             "chapter": "Unit 4: Control Unit"
         },
         {
             "question_number": "15",
-            "question_text": "By using pipelining, the latency of the instructions.\n(A) Increase\n(B) Remains the same\n(C) Decrease\n(D) It is unity",
+            "question_text": "By using pipelining, the latency of the instructions.",
+            "options": [
+                "Increase",
+                "Remains the same",
+                "Decrease",
+                "It is unity"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Increase\n\nRationale: Pipelining improves throughput, but each individual instruction's latency increases slightly due to pipeline register overhead and stage balancing.",
+            "answer": "Pipelining improves throughput, but each individual instruction's latency increases slightly due to pipeline register overhead and stage balancing.",
             "answer_source": "generated",
             "chapter": "Unit 4: Control Unit"
         },
         {
             "question_number": "16",
-            "question_text": "Which specific task is not included in super scalar processing?\n(A) Parallel decoding\n(B) Super scale instructions\n(C) Parallel instructions\n(D) Pipelines",
+            "question_text": "Which specific task is not included in super scalar processing?",
+            "options": [
+                "Parallel decoding",
+                "Super scale instructions",
+                "Parallel instructions",
+                "Pipelines"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Super scale instructions\n\nRationale: Superscalar processing involves parallel decoding, parallel issue/execution of instructions and pipelines; 'super scale instructions' is not a task.",
+            "answer": "Superscalar processing involves parallel decoding, parallel issue/execution of instructions and pipelines; 'super scale instructions' is not a task.",
             "answer_source": "generated",
             "chapter": "Unit 4: Control Unit"
         },
         {
             "question_number": "17",
-            "question_text": "SIMD stands for\n(A) System instruction multiple data\n(B) Single instruction multiple data\n(C) Symmetric instruction multiple data\n(D) Scale instruction multiple data",
+            "question_text": "SIMD stands for",
+            "options": [
+                "System instruction multiple data",
+                "Single instruction multiple data",
+                "Symmetric instruction multiple data",
+                "Scale instruction multiple data"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Single instruction multiple data\n\nRationale: Flynn's taxonomy: Single Instruction, Multiple Data.",
+            "answer": "Flynn's taxonomy: Single Instruction, Multiple Data.",
             "answer_source": "generated",
             "chapter": "Unit 5: Parallelism"
         },
         {
             "question_number": "18",
-            "question_text": "How many instruction sets does ARM have?\n(A) One\n(B) Two\n(C) Three\n(D) Four",
+            "question_text": "How many instruction sets does ARM have?",
+            "options": [
+                "One",
+                "Two",
+                "Three",
+                "Four"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Three\n\nRationale: Classic ARM cores support three instruction sets: 32-bit ARM, 16-bit Thumb and Jazelle (Java bytecode).",
+            "answer": "Classic ARM cores support three instruction sets: 32-bit ARM, 16-bit Thumb and Jazelle (Java bytecode).",
             "answer_source": "generated",
             "chapter": "Unit 5: Parallelism"
         },
         {
             "question_number": "19",
-            "question_text": "Virtual memory consists of\n(A) Static RAM\n(B) Dynamic RAM\n(C) Magnetic memory\n(D) Virtual RAM",
+            "question_text": "Virtual memory consists of",
+            "options": [
+                "Static RAM",
+                "Dynamic RAM",
+                "Magnetic memory",
+                "Virtual RAM"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Magnetic memory\n\nRationale: Virtual memory uses secondary storage (magnetic disk) as an extension of main memory.",
+            "answer": "Virtual memory uses secondary storage (magnetic disk) as an extension of main memory.",
             "answer_source": "generated",
             "chapter": "Unit 5: Parallelism"
         },
         {
             "question_number": "20",
-            "question_text": "The number successful accesses to memory stated as a fraction is called as ______.\n(A) Access rate\n(B) Success rate\n(C) Hit rate\n(D) Miss rate",
+            "question_text": "The number successful accesses to memory stated as a fraction is called as ______.",
+            "options": [
+                "Access rate",
+                "Success rate",
+                "Hit rate",
+                "Miss rate"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Hit rate\n\nRationale: Hit rate = hits / total accesses.",
+            "answer": "Hit rate = hits / total accesses.",
             "answer_source": "generated",
             "chapter": "Unit 5: Parallelism"
         },

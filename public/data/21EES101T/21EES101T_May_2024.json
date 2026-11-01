@@ -4,161 +4,301 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "When two resistors of 6 Ω are connected in parallel, the effective resistance value in the circuit is\n(A) 9 Ω\n(B) 3 Ω\n(C) 12 Ω\n(D) 0.33 Ω",
+            "question_text": "When two resistors of 6 Ω are connected in parallel, the effective resistance value in the circuit is",
+            "options": [
+                "9 Ω",
+                "3 Ω",
+                "12 Ω",
+                "0.33 Ω"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: For two equal resistors in parallel, the effective resistance is R/2 = 6/2 = 3 Ω.",
+            "answer": "For two equal resistors in parallel, the effective resistance is R/2 = 6/2 = 3 Ω.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
         {
             "question_number": "2",
-            "question_text": "The conduction for maximum power transfer in the circuit is the effective resistance of the circuit is equal to the\n(A) Square of load resistance\n(B) 2 * load resistance\n(C) 1/2 load resistance\n(D) Load resistance",
+            "question_text": "The conduction for maximum power transfer in the circuit is the effective resistance of the circuit is equal to the",
+            "options": [
+                "Square of load resistance",
+                "2 * load resistance",
+                "1/2 load resistance",
+                "Load resistance"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: The condition for maximum power transfer requires that the internal resistance of the source must equal the load resistance.",
+            "answer": "The condition for maximum power transfer requires that the internal resistance of the source must equal the load resistance.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
         {
             "question_number": "3",
-            "question_text": "The power factor can be determined by the formula\n(A) R^2 / Z\n(B) Z^2 / R\n(C) Z / R\n(D) R / Z",
+            "question_text": "The power factor can be determined by the formula",
+            "options": [
+                "R^2 / Z",
+                "Z^2 / R",
+                "Z / R",
+                "R / Z"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: Power factor is the cosine of the phase angle, which in an impedance triangle is given by the ratio of True Resistance (R) to Total Impedance (Z), hence R/Z.",
+            "answer": "Power factor is the cosine of the phase angle, which in an impedance triangle is given by the ratio of True Resistance (R) to Total Impedance (Z), hence R/Z.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
         {
             "question_number": "4",
-            "question_text": "The line voltage is expressed in star connected network as\n(A) $V_L = \\sqrt{2} V_{ph}$\n(B) $V_L = V_{ph} / 2$\n(C) $V_L = V_{ph}$\n(D) $V_L = \\sqrt{3} V_{ph}$",
+            "question_text": "The line voltage is expressed in star connected network as",
+            "options": [
+                "$V_L = \\sqrt{2} V_{ph}$",
+                "$V_L = V_{ph} / 2$",
+                "$V_L = V_{ph}$",
+                "$V_L = \\sqrt{3} V_{ph}$"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: In a balanced three-phase star (Y) connection, the line voltage is equal to √3 times the phase voltage.",
+            "answer": "In a balanced three-phase star (Y) connection, the line voltage is equal to √3 times the phase voltage.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
         {
             "question_number": "5",
-            "question_text": "When +ve terminal of the battery is connected P-type and -ve terminal to the N-type of PN junction diode, the bias applied\n(A) Forward bias\n(B) Reverse bias\n(C) Barrier bias\n(D) Saturation bias",
+            "question_text": "When +ve terminal of the battery is connected P-type and -ve terminal to the N-type of PN junction diode, the bias applied",
+            "options": [
+                "Forward bias",
+                "Reverse bias",
+                "Barrier bias",
+                "Saturation bias"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: Connecting the positive terminal to the P-type (anode) and negative to the N-type (cathode) reduces the depletion region, which defines a forward-biased condition.",
+            "answer": "Connecting the positive terminal to the P-type (anode) and negative to the N-type (cathode) reduces the depletion region, which defines a forward-biased condition.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
         {
             "question_number": "6",
-            "question_text": "To determine the input characteristics of CE configuration NPN transistor _______ is kept constant.\n(A) Collector - Emitter voltage (V_{CE})\n(B) Base-Emitter voltage (V_{BE})\n(C) Base current (I_B)\n(D) Collector current (I_C)",
+            "question_text": "To determine the input characteristics of CE configuration NPN transistor _______ is kept constant.",
+            "options": [
+                "Collector - Emitter voltage (V_{CE})",
+                "Base-Emitter voltage (V_{BE})",
+                "Base current (I_B)",
+                "Collector current (I_C)"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: Input characteristics of a Common Emitter (CE) transistor are obtained by plotting base current (I_B) versus base-emitter voltage (V_{BE}) while maintaining a constant Collector-Emitter voltage (V_{CE}).",
+            "answer": "Input characteristics of a Common Emitter (CE) transistor are obtained by plotting base current (I_B) versus base-emitter voltage (V_{BE}) while maintaining a constant Collector-Emitter voltage (V_{CE}).",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
         {
             "question_number": "7",
-            "question_text": "The terminals of JFET are\n(A) Anode and cathode\n(B) Emitter, base, collector\n(C) Source, drain and gate\n(D) Emitter, gate, collector",
+            "question_text": "The terminals of JFET are",
+            "options": [
+                "Anode and cathode",
+                "Emitter, base, collector",
+                "Source, drain and gate",
+                "Emitter, gate, collector"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: A Junction Field Effect Transistor (JFET) possesses three terminals: Source, Drain, and Gate.",
+            "answer": "A Junction Field Effect Transistor (JFET) possesses three terminals: Source, Drain, and Gate.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
         {
             "question_number": "8",
-            "question_text": "The device that are designed to convert DC signal into AC signal are known as\n(A) Choppers\n(B) Inverters\n(C) Battery\n(D) Rectifier",
+            "question_text": "The device that are designed to convert DC signal into AC signal are known as",
+            "options": [
+                "Choppers",
+                "Inverters",
+                "Battery",
+                "Rectifier"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: An inverter is a power electronic device utilized to convert a Direct Current (DC) input into an Alternating Current (AC) output.",
+            "answer": "An inverter is a power electronic device utilized to convert a Direct Current (DC) input into an Alternating Current (AC) output.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
         {
             "question_number": "9",
-            "question_text": "The brushes in DC machine are made of\n(A) Lamination sheets\n(B) Carbon\n(C) Copper\n(D) Aluminium",
+            "question_text": "The brushes in DC machine are made of",
+            "options": [
+                "Lamination sheets",
+                "Carbon",
+                "Copper",
+                "Aluminium"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: Brushes in DC machines are typically constructed using Carbon (or graphite) because of its self-lubricating properties and low wear coefficient.",
+            "answer": "Brushes in DC machines are typically constructed using Carbon (or graphite) because of its self-lubricating properties and low wear coefficient.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
         {
             "question_number": "10",
-            "question_text": "The transformer works on the principle of\n(A) Electromagnetic induction\n(B) Fleming's right hand rule\n(C) Len'z law\n(D) Fleming's left hand rule",
+            "question_text": "The transformer works on the principle of",
+            "options": [
+                "Electromagnetic induction",
+                "Fleming's right hand rule",
+                "Len'z law",
+                "Fleming's left hand rule"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: Transformers function based on Faraday's law of mutual electromagnetic induction, allowing power transfer between magnetically coupled coils.",
+            "answer": "Transformers function based on Faraday's law of mutual electromagnetic induction, allowing power transfer between magnetically coupled coils.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
         {
             "question_number": "11",
-            "question_text": "The encoder in the servometer is used to determine the\n(A) Stator current of the motor\n(B) Rotor current of the motor\n(C) Stator voltage of the motor\n(D) Speed of the motor",
+            "question_text": "The encoder in the servometer is used to determine the",
+            "options": [
+                "Stator current of the motor",
+                "Rotor current of the motor",
+                "Stator voltage of the motor",
+                "Speed of the motor"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: An encoder is a critical feedback sensor in a servomotor system used directly to track the rotor's exact position and rotational speed.",
+            "answer": "An encoder is a critical feedback sensor in a servomotor system used directly to track the rotor's exact position and rotational speed.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
         {
             "question_number": "12",
-            "question_text": "Slip-ring rotor is a type of rotor of\n(A) Stepper motor\n(B) BLDC motor\n(C) DC motor\n(D) Three phase induction motor",
+            "question_text": "Slip-ring rotor is a type of rotor of",
+            "options": [
+                "Stepper motor",
+                "BLDC motor",
+                "DC motor",
+                "Three phase induction motor"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: Three-phase induction motors come primarily in two rotor types: Squirrel-cage rotors and wound Slip-ring rotors.",
+            "answer": "Three-phase induction motors come primarily in two rotor types: Squirrel-cage rotors and wound Slip-ring rotors.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
         {
             "question_number": "13",
-            "question_text": "The torque which is always present in the instrument whether it is connected to the supply or not is\n(A) Moving torque\n(B) Damping torque\n(C) Controlling torque\n(D) Deflecting torque",
+            "question_text": "The torque which is always present in the instrument whether it is connected to the supply or not is",
+            "options": [
+                "Moving torque",
+                "Damping torque",
+                "Controlling torque",
+                "Deflecting torque"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: Controlling torque (provided by hairsprings or gravity weights) constantly acts on the pointer system to return it to zero, regardless of whether the instrument is energized.",
+            "answer": "Controlling torque (provided by hairsprings or gravity weights) constantly acts on the pointer system to return it to zero, regardless of whether the instrument is energized.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
         {
             "question_number": "14",
-            "question_text": "The eddy current produce the required damping torque opposing the motion of the moving coil in PMMC as per\n(A) Len's law\n(B) Faraday's law\n(C) Fleming's law\n(D) Self induction",
+            "question_text": "The eddy current produce the required damping torque opposing the motion of the moving coil in PMMC as per",
+            "options": [
+                "Len's law",
+                "Faraday's law",
+                "Fleming's law",
+                "Self induction"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: According to Lenz's law, the direction of induced eddy currents is such that it opposes the physical motion (change in magnetic flux) that caused it, thus providing damping.",
+            "answer": "According to Lenz's law, the direction of induced eddy currents is such that it opposes the physical motion (change in magnetic flux) that caused it, thus providing damping.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
         {
             "question_number": "15",
-            "question_text": "The instrument which gives the storage of a digital waveform is\n(A) Digital storage motor\n(B) Digital graph meter\n(C) Digital storage oscilloscope\n(D) Digital multimeter",
+            "question_text": "The instrument which gives the storage of a digital waveform is",
+            "options": [
+                "Digital storage motor",
+                "Digital graph meter",
+                "Digital storage oscilloscope",
+                "Digital multimeter"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: A Digital Storage Oscilloscope (DSO) converts analog signals to a digital format and stores them into memory, allowing continuous waveform observation.",
+            "answer": "A Digital Storage Oscilloscope (DSO) converts analog signals to a digital format and stores them into memory, allowing continuous waveform observation.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
         {
             "question_number": "16",
-            "question_text": "One example for active transducer is\n(A) Capacitance\n(B) Thermocouple\n(C) Inductive\n(D) Hall effect",
+            "question_text": "One example for active transducer is",
+            "options": [
+                "Capacitance",
+                "Thermocouple",
+                "Inductive",
+                "Hall effect"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: A thermocouple acts as an active transducer because it self-generates an output voltage directly proportional to a temperature difference without requiring an external supply.",
+            "answer": "A thermocouple acts as an active transducer because it self-generates an output voltage directly proportional to a temperature difference without requiring an external supply.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
         {
             "question_number": "17",
-            "question_text": "The power factor in dc transmission system is\n(A) 0.866 lagging\n(B) 0.5 lagging\n(C) Unity\n(D) 0.5 leading",
+            "question_text": "The power factor in dc transmission system is",
+            "options": [
+                "0.866 lagging",
+                "0.5 lagging",
+                "Unity",
+                "0.5 leading"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: Because direct current (DC) has a frequency of 0 Hz, there is zero reactance in the steady state, meaning no reactive power is generated, keeping the power factor always at unity (1).",
+            "answer": "Because direct current (DC) has a frequency of 0 Hz, there is zero reactance in the steady state, meaning no reactive power is generated, keeping the power factor always at unity (1).",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
         {
             "question_number": "18",
-            "question_text": "The most commonly used material for the manufacture of insulator in power system is\n(A) Copper\n(B) Carbon\n(C) Aluminium\n(D) Porcelain",
+            "question_text": "The most commonly used material for the manufacture of insulator in power system is",
+            "options": [
+                "Copper",
+                "Carbon",
+                "Aluminium",
+                "Porcelain"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: Porcelain has excellent dielectric strength, mechanical robustness, and resistance to environmental elements, making it the most traditional and common material for high voltage insulators.",
+            "answer": "Porcelain has excellent dielectric strength, mechanical robustness, and resistance to environmental elements, making it the most traditional and common material for high voltage insulators.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
         {
             "question_number": "19",
-            "question_text": "An electrical safety device that has the capability to protect the circuit from excessive current is\n(A) Fuse\n(B) Insulator\n(C) Switch\n(D) Regulator",
+            "question_text": "An electrical safety device that has the capability to protect the circuit from excessive current is",
+            "options": [
+                "Fuse",
+                "Insulator",
+                "Switch",
+                "Regulator"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: A fuse is an essential safety device designed to automatically melt and break the circuit when excessive overcurrent flows through it.",
+            "answer": "A fuse is an essential safety device designed to automatically melt and break the circuit when excessive overcurrent flows through it.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
         {
             "question_number": "20",
-            "question_text": "One example for renewable energy source is\n(A) Nuclear energy\n(B) Solar energy\n(C) Thermal energy\n(D) Coal energy",
+            "question_text": "One example for renewable energy source is",
+            "options": [
+                "Nuclear energy",
+                "Solar energy",
+                "Thermal energy",
+                "Coal energy"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: Solar energy harnesses the power of the sun, which is naturally replenishing, qualifying it as a renewable energy resource.",
+            "answer": "Solar energy harnesses the power of the sun, which is naturally replenishing, qualifying it as a renewable energy resource.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         }

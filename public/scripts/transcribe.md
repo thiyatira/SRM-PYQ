@@ -86,15 +86,38 @@ The frontend ([src/components/PyqSection.tsx](src/components/PyqSection.tsx)) an
 }
 ```
 
+### Multiple-choice questions
+
+MCQs use two extra fields, and `question_text` holds only the stem:
+
+```json
+{
+  "question_number": "1",
+  "question_text": "Reflected binary code is also known as",
+  "options": ["BCD Code", "Binary Code", "ASCII Code", "Grey Code"],
+  "correct_option": "D",
+  "marks": 1,
+  "answer": "Gray code is called reflected binary code because each half of the code list is a mirror image of the other half.",
+  "answer_source": "provided",
+  "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+}
+```
+
+- `options` *(string[])*: 2–8 option texts in A, B, C… order, **without** the `(A)`/`a)` marker. Keep `$…$` math and code fences inside an option as needed.
+- `correct_option` *(string | null)*: the right option's letter, e.g. `"C"`; `"A,C"` when several are correct; `null` only if the question cannot be answered (e.g. missing figure).
+- `answer` is just the explanation (it may be `""`). Do **not** repeat the letter or the option text in it.
+- Non-MCQ questions have neither `options` nor `correct_option`.
+- `node scripts/validate-data.mjs` checks these fields. Papers already written in the old style (options typed into `question_text`) can be converted with `node scripts/mcqify.mjs --only=<courseCode> --write`, then reviewed.
+
 ### Key Field Requirements:
 - `formal_filename` *(string)*: Standardized filename ending in `.json`.
 - `paper_title` *(string)*: Full examination and subject title from the paper header.
 - `source` *(string)*: Short session identifier matching the file naming scheme (e.g., `2024-01 ET`, `2023_July`, `2024-10-01 CT1`).
 - `questions` *(array)*:
   - `question_number` *(string)*: Question label exactly as seen on paper (`"1"`, `"2"`, `"21. a."`, `"Part B - 14"`).
-  - `question_text` *(string)*: Full question text. For MCQs, keep all options `(A)`, `(B)`, `(C)`, `(D)` separated by newlines `\n`.
+  - `question_text` *(string)*: Full question text. For MCQs this is the stem only; the options go in `options` (see above).
   - `marks` *(integer | null)*: Allocated marks (e.g., `1`, `2`, `8`, `15`) or `null` if unstated.
-  - `answer` *(string)*: Answer or explanation. Transcribe accurately if an answer key exists, otherwise generate a clear, accurate explanation.
+  - `answer` *(string)*: Answer or explanation. Transcribe accurately if an answer key exists, otherwise generate a clear, accurate explanation. For MCQs, the explanation only.
   - `answer_source` *(string)*: `"provided"` (if taken from an official key) or `"generated"` (if AI answered).
   - `chapter` *(string)*: **Important:** Must include `"Unit 1"`, `"Unit 2"`, `"Unit 3"`, `"Unit 4"`, or `"Unit 5"` (e.g. `"Unit 1: Introduction"`), as the UI filter categorizes questions using the regex `/Unit\s*([1-5])/i`.
 
@@ -118,7 +141,7 @@ Your task is to analyze a university examination question paper (or answer key) 
    If no answer key is present, generate high-quality, accurate, university-level solutions and set `answer_source` to "generated".
 5. Map each question to its corresponding unit in the syllabus (must include "Unit 1", "Unit 2", "Unit 3", "Unit 4", or "Unit 5").
 6. Output MUST be a single, valid JSON object and nothing else.
-7. CRITICAL - Code Formatting: Whenever questions or answers contain code snippets, program fragments, or pseudocode (C, C++, Java, Python, SQL, etc.), you MUST wrap them in standard markdown code fences with the language identifier (e.g. ```java\n...\n```, ```c\n...\n```, ```python\n...\n```) and preserve exact indentation. Keep MCQ options (A, B, C, D) and question text outside the code block.
+7. CRITICAL - Code Formatting: Whenever questions or answers contain code snippets, program fragments, or pseudocode (C, C++, Java, Python, SQL, etc.), you MUST wrap them in standard markdown code fences with the language identifier (e.g. ```java\n...\n```, ```c\n...\n```, ```python\n...\n```) and preserve exact indentation. Put MCQ options in the `options` array (keep code inside an option fenced) and keep the question stem outside the code block.
 
 ### File Naming Specification for `formal_filename`:
 Pattern: `[Date/Year]_[ExamType]_[SetInfo]_[DocumentType].json`
@@ -143,9 +166,11 @@ Pattern: `[Date/Year]_[ExamType]_[SetInfo]_[DocumentType].json`
   "questions": [
     {
       "question_number": "<e.g., '1', '2', '21. a.', '3(b)'>",
-      "question_text": "<Full exact text. Preserve MCQ options (A), (B), (C), (D) on newlines. Use $...$ for inline math and $$...$$ for block math. Use markdown code fences for code snippets.>",
+      "question_text": "<Full exact text. For an MCQ this is the stem ONLY (no options). Use $...$ for inline math and $$...$$ for block math. Use markdown code fences for code snippets.>",
+      "options": ["<MCQ only: option A text, no letter marker>", "<option B text>", "<option C text>", "<option D text>"],
+      "correct_option": "<MCQ only: the correct option's letter, e.g. 'C' ('A,C' if several are correct), or null if unknown>",
       "marks": <Integer mark value, or null if not indicated>,
-      "answer": "<Accurate solution/explanation. For MCQs, provide correct choice letter followed by concise rationale.>",
+      "answer": "<Accurate solution/explanation. For MCQs, only the explanation (the letter goes in correct_option). Omit options/correct_option for non-MCQ questions.>",
       "answer_source": "<'provided' or 'generated'>",
       "chapter": "<Must include 'Unit 1', 'Unit 2', 'Unit 3', 'Unit 4', or 'Unit 5' (e.g. 'Unit 1: Introduction')>"
     }

@@ -4,161 +4,301 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Which feature of OODP indicates code reusability?\n(A) Inheritance\n(B) Encapsulation\n(C) Abstraction\n(D) Polymorphism",
+            "question_text": "Which feature of OODP indicates code reusability?",
+            "options": [
+                "Inheritance",
+                "Encapsulation",
+                "Abstraction",
+                "Polymorphism"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Inheritance. Explanation: Inheritance allows a new class to acquire properties and behaviors of an existing class, promoting code reusability.",
+            "answer": "Inheritance allows a new class to acquire properties and behaviors of an existing class, promoting code reusability.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 3"
         },
         {
             "question_number": "2",
-            "question_text": "Which of the following access specifier allows the user to inherit the private members of a class?\n(A) Private\n(B) Protected\n(C) Default\n(D) Public",
+            "question_text": "Which of the following access specifier allows the user to inherit the private members of a class?",
+            "options": [
+                "Private",
+                "Protected",
+                "Default",
+                "Public"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Protected. Explanation: Private members are never inherited directly. However, the question asks what allows \"inheriting\" (making them accessible to derived classes) which implies the need for 'protected' access specifier instead of private if they are meant to be inherited.",
+            "answer": "Private members are never directly accessible in a derived class. To let derived classes use members while still hiding them from outside code, declare them protected.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 1"
         },
         {
             "question_number": "3",
-            "question_text": "What happens if a user forgets to define a constructor inside a class?\n(A) Objects are not created properly\n(B) Segmentation fault\n(C) Error occurs\n(D) Compiler provides a default constructor to avoid faults/errors",
+            "question_text": "What happens if a user forgets to define a constructor inside a class?",
+            "options": [
+                "Objects are not created properly",
+                "Segmentation fault",
+                "Error occurs",
+                "Compiler provides a default constructor to avoid faults/errors"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Compiler provides a default constructor to avoid faults/errors. Explanation: If no constructor is explicitly defined, the C++ compiler automatically generates a default constructor.",
+            "answer": "If no constructor is explicitly defined, the C++ compiler automatically generates a default constructor.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 2"
         },
         {
             "question_number": "4",
-            "question_text": "Which of the following C++ operators can be overloaded?\n(A) Size operator (size of)\n(B) Conditional operator (?:)\n(C) Arithmetic operator (+,-,*,/)\n(D) Class member access operator",
+            "question_text": "Which of the following C++ operators can be overloaded?",
+            "options": [
+                "Size operator (size of)",
+                "Conditional operator (?:)",
+                "Arithmetic operator (+,-,*,/)",
+                "Class member access operator"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Arithmetic operator (+,-,*,/). Explanation: Arithmetic operators can be overloaded. Operators like sizeof, ?:, . (member access), and :: cannot be overloaded in C++.",
+            "answer": "Arithmetic operators can be overloaded. Operators like sizeof, ?:, . (member access), and :: cannot be overloaded in C++.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 2"
         },
         {
             "question_number": "5",
-            "question_text": "Which of the following is true about constructors?\n(A) A class can have more than one constructors\n(B) They cannot be inherited\n(C) Their address can be referred\n(D) Constructors can have return values",
+            "question_text": "Which of the following is true about constructors?",
+            "options": [
+                "A class can have more than one constructors",
+                "They cannot be inherited",
+                "Their address can be referred",
+                "Constructors can have return values"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) A class can have more than one constructors. Explanation: This is known as constructor overloading. Constructors do not have return types, cannot be inherited, and their addresses cannot be taken.",
+            "answer": "This is known as constructor overloading. Constructors do not have return types, cannot be inherited, and their addresses cannot be taken.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 2"
         },
         {
             "question_number": "6",
-            "question_text": "Which of the following keyword is used to overload an operator?\n(A) overload\n(B) friend\n(C) operator\n(D) over rider",
+            "question_text": "Which of the following keyword is used to overload an operator?",
+            "options": [
+                "overload",
+                "friend",
+                "operator",
+                "over rider"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) operator. Explanation: The 'operator' keyword is used to declare an operator overloading function.",
+            "answer": "The 'operator' keyword is used to declare an operator overloading function.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 2"
         },
         {
             "question_number": "7",
-            "question_text": "Which of the following permits function overloading in C++?\n(A) Type of arguments\n(B) Number of arguments\n(C) Number of objects\n(D) Type and number of arguments",
+            "question_text": "Which of the following permits function overloading in C++?",
+            "options": [
+                "Type of arguments",
+                "Number of arguments",
+                "Number of objects",
+                "Type and number of arguments"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Type and number of arguments. Explanation: Function overloading allows multiple functions with the same name as long as they differ in the number and/or type of their parameters.",
+            "answer": "Function overloading allows multiple functions with the same name as long as they differ in the number and/or type of their parameters.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 2"
         },
         {
             "question_number": "8",
-            "question_text": "Dynamic aspects related to a system are shown with help of\n(A) Sequence diagrams\n(B) Interaction diagrams\n(C) Deployment diagrams\n(D) Use case diagrams",
+            "question_text": "Dynamic aspects related to a system are shown with help of",
+            "options": [
+                "Sequence diagrams",
+                "Interaction diagrams",
+                "Deployment diagrams",
+                "Use case diagrams"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Interaction diagrams. Explanation: Interaction diagrams (which include sequence and collaboration diagrams) model the dynamic aspects of a system by showing object interactions over time.",
+            "answer": "Interaction diagrams (which include sequence and collaboration diagrams) model the dynamic aspects of a system by showing object interactions over time.",
             "answer_source": "General UML Knowledge",
             "chapter": "Unit 2"
         },
         {
             "question_number": "9",
-            "question_text": "In multilevel inheritance one class inherits\n(A) Only from one class\n(B) More than one class\n(C) Atleast one class\n(D) As many classes as required",
+            "question_text": "In multilevel inheritance one class inherits",
+            "options": [
+                "Only from one class",
+                "More than one class",
+                "Atleast one class",
+                "As many classes as required"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Only from one class. Explanation: In multilevel inheritance, a class acts as a base class for a derived class, which in turn acts as a base class for another derived class. At each level, a derived class inherits directly from only one base class.",
+            "answer": "In multilevel inheritance, a class acts as a base class for a derived class, which in turn acts as a base class for another derived class. At each level, a derived class inherits directly from only one base class.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 3"
         },
         {
             "question_number": "10",
-            "question_text": "How can you make the private members inheritable?\n(A) By making their visibility mode as public only\n(B) By making their visibility mode as private in derived class\n(C) By making their visibility mode as protected only\n(D) It can be done both by making the visibility mode public or protected",
+            "question_text": "How can you make the private members inheritable?",
+            "options": [
+                "By making their visibility mode as public only",
+                "By making their visibility mode as private in derived class",
+                "By making their visibility mode as protected only",
+                "It can be done both by making the visibility mode public or protected"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) By making their visibility mode as protected only. Explanation: Private members are never inherited. To make members accessible to derived classes while keeping them hidden from the outside, they must be made protected in the base class.",
+            "answer": "Private members are never inherited. To make members accessible to derived classes while keeping them hidden from the outside, they must be made protected in the base class.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 3"
         },
         {
             "question_number": "11",
-            "question_text": "Which of the following combines two concurrent activities and re-introduces them to a flow where only one activity can be performed at a time?\n(A) Joint symbol\n(B) Fork symbol\n(C) Decision symbol\n(D) Note symbol",
+            "question_text": "Which of the following combines two concurrent activities and re-introduces them to a flow where only one activity can be performed at a time?",
+            "options": [
+                "Joint symbol",
+                "Fork symbol",
+                "Decision symbol",
+                "Note symbol"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Joint symbol. Explanation: In activity diagrams, a join node combines multiple concurrent flows back into a single flow.",
+            "answer": "In activity diagrams, a join node combines multiple concurrent flows back into a single flow.",
             "answer_source": "General UML Knowledge",
             "chapter": "Unit 3"
         },
         {
             "question_number": "12",
-            "question_text": "Identify what happens when an attempt is made to instantiate an object of an abstract class\n(A) Success message\n(B) Warning message\n(C) Compilation error\n(D) Objects gets created",
+            "question_text": "Identify what happens when an attempt is made to instantiate an object of an abstract class",
+            "options": [
+                "Success message",
+                "Warning message",
+                "Compilation error",
+                "Objects gets created"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Compilation error. Explanation: Abstract classes contain at least one pure virtual function and cannot be instantiated.",
+            "answer": "Abstract classes contain at least one pure virtual function and cannot be instantiated.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 3"
         },
         {
             "question_number": "13",
-            "question_text": "What is an abstract class?\n(A) Class specifically used as a base class with at least one virtual function\n(B) Class specifically used as a base class with at least one pure virtual function\n(C) Class from which any class is derived\n(D) Any class is C++ is an abstract class",
+            "question_text": "What is an abstract class?",
+            "options": [
+                "Class specifically used as a base class with at least one virtual function",
+                "Class specifically used as a base class with at least one pure virtual function",
+                "Class from which any class is derived",
+                "Any class is C++ is an abstract class"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Class specifically used as a base class with at least one pure virtual function. Explanation: An abstract class serves as a blueprint for derived classes and is defined by having at least one pure virtual function.",
+            "answer": "An abstract class serves as a blueprint for derived classes and is defined by having at least one pure virtual function.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 3"
         },
         {
             "question_number": "14",
-            "question_text": "Which is the correct syntax of defining a pure virtual function?\n(A) Pure virtual return_type_func( );\n(B) Virtual return_type_func ( ) pure;\n(C) Virtual return_type func ( ) = 0;\n(D) Virtual return_type func( );",
+            "question_text": "Which is the correct syntax of defining a pure virtual function?",
+            "options": [
+                "Pure virtual return_type_func( );",
+                "Virtual return_type_func ( ) pure;",
+                "Virtual return_type func ( ) = 0;",
+                "Virtual return_type func( );"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Virtual return_type func ( ) = 0;. Explanation: A pure virtual function is declared using the 'virtual' keyword and appending '= 0' to the declaration.",
+            "answer": "A pure virtual function is declared using the 'virtual' keyword and appending '= 0' to the declaration.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 3"
         },
         {
             "question_number": "15",
-            "question_text": "Which among the following best describes member function overriding?\n(A) Member functions having same name in base and derived classes\n(B) Member functions having same name in base class only\n(C) Member functions having same name in derived class only\n(D) Member functions having same name and different signature inside main function",
+            "question_text": "Which among the following best describes member function overriding?",
+            "options": [
+                "Member functions having same name in base and derived classes",
+                "Member functions having same name in base class only",
+                "Member functions having same name in derived class only",
+                "Member functions having same name and different signature inside main function"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Member functions having same name in base and derived classes. Explanation: Overriding occurs when a derived class provides a specific implementation for a function that is already provided by its base class (same name and signature).",
+            "answer": "Overriding occurs when a derived class provides a specific implementation for a function that is already provided by its base class (same name and signature).",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 3"
         },
         {
             "question_number": "16",
-            "question_text": "________ keyword is used before a function in a base class which is to be overridden in derived class.\n(A) void\n(B) static\n(C) virtual\n(D) friend",
+            "question_text": "________ keyword is used before a function in a base class which is to be overridden in derived class.",
+            "options": [
+                "void",
+                "static",
+                "virtual",
+                "friend"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) virtual. Explanation: The 'virtual' keyword in the base class allows a member function to be overridden in a derived class, enabling runtime polymorphism.",
+            "answer": "The 'virtual' keyword in the base class allows a member function to be overridden in a derived class, enabling runtime polymorphism.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 3"
         },
         {
             "question_number": "17",
-            "question_text": "Once a class template is defined, we can create an object of that class using a specific basic or user-defined data types to replace the generic data types used during\n(A) Function definition\n(B) Object definition\n(C) Class definition\n(D) Function declaration",
+            "question_text": "Once a class template is defined, we can create an object of that class using a specific basic or user-defined data types to replace the generic data types used during",
+            "options": [
+                "Function definition",
+                "Object definition",
+                "Class definition",
+                "Function declaration"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Object definition. Explanation: When an object of a class template is created (instantiated), the specific data types are provided to replace the generic types.",
+            "answer": "When an object of a class template is created (instantiated), the specific data types are provided to replace the generic types.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 4"
         },
         {
             "question_number": "18",
-            "question_text": "Which container can have the same key?\n(A) Map\n(B) Multimap\n(C) Unordered map\n(D) Set",
+            "question_text": "Which container can have the same key?",
+            "options": [
+                "Map",
+                "Multimap",
+                "Unordered map",
+                "Set"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Multimap. Explanation: Multimaps are associative containers that allow multiple elements to have equivalent keys.",
+            "answer": "Multimaps are associative containers that allow multiple elements to have equivalent keys.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 5"
         },
         {
             "question_number": "19",
-            "question_text": "What type of access does dequeue and vector provide?\n(A) Linear access\n(B) Random access\n(C) Parallel access\n(D) Sequence access",
+            "question_text": "What type of access does dequeue and vector provide?",
+            "options": [
+                "Linear access",
+                "Random access",
+                "Parallel access",
+                "Sequence access"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Random access. Explanation: Both vectors and deques provide random access iterators, allowing direct access to any element in constant time using indexing.",
+            "answer": "Both vectors and deques provide random access iterators, allowing direct access to any element in constant time using indexing.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 5"
         },
         {
             "question_number": "20",
-            "question_text": "Choose the correct output for the following code:\n\n```cpp\nint main ( )\n{\ndeque <int>d;\nd.push_back (10);\nd.push_back (300);\nd.push_front (20);\nfor (int i=0; i<d.size ( ); i++)\n{\ncout << d[i] << “ ”;\n}\nreturn 0;\n}\n```\n\n(A) 10 20 300\n(B) 20 10 300\n(C) 100 10 20\n(D) Syntax error",
+            "question_text": "Choose the correct output for the following code:\n\n```cpp\nint main ( )\n{\ndeque <int>d;\nd.push_back (10);\nd.push_back (300);\nd.push_front (20);\nfor (int i=0; i<d.size ( ); i++)\n{\ncout << d[i] << “ ”;\n}\nreturn 0;\n}\n```",
+            "options": [
+                "10 20 300",
+                "20 10 300",
+                "100 10 20",
+                "Syntax error"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) 20 10 300. Explanation: push_back(10) adds 10. push_back(300) adds 300 to the end -> [10, 300]. push_front(20) adds 20 to the front -> [20, 10, 300].",
+            "answer": "push_back(10) adds 10. push_back(300) adds 300 to the end -> [10, 300]. push_front(20) adds 20 to the front -> [20, 10, 300].",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 5"
         },

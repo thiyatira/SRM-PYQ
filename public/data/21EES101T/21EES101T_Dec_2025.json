@@ -4,153 +4,286 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "What is the value of R in the circuit shown in Fig below\n(A) 2.5 Ω\n(B) 5 Ω\n(C) 7.5 Ω\n(D) 10 Ω",
+            "question_text": "What is the value of R in the circuit shown in Fig below",
+            "options": [
+                "2.5 Ω",
+                "5 Ω",
+                "7.5 Ω",
+                "10 Ω"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: Out of the 6A total supply current, 4A flows through the 5Ω resistor. By KCL, 2A must flow through R. Since the parallel branches share the same voltage (4A * 5Ω = 20V), R = 20V / 2A = 10 Ω.",
+            "answer": "Out of the 6A total supply current, 4A flows through the 5Ω resistor. By KCL, 2A must flow through R. Since the parallel branches share the same voltage (4A * 5Ω = 20V), R = 20V / 2A = 10 Ω.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
         {
             "question_number": "2",
-            "question_text": "In the circuit shown in Fig the ratio of V_2 / V_1 is\n(A) - 0.5\n(B) 0.5\n(C) - 2\n(D) 2",
+            "question_text": "In the circuit shown in Fig the ratio of V_2 / V_1 is",
+            "options": [
+                "- 0.5",
+                "0.5",
+                "- 2",
+                "2"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: V1 is defined across the 10Ω resistor against the current direction (making it -10*I). V2 is defined across the 5Ω resistor in the current direction (5*I). Their ratio V2/V1 is (5I)/(-10I) = -0.5.",
+            "answer": "V1 is defined across the 10Ω resistor against the current direction (making it -10*I). V2 is defined across the 5Ω resistor in the current direction (5*I). Their ratio V2/V1 is (5I)/(-10I) = -0.5.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
         {
             "question_number": "3",
-            "question_text": "While finding Thevenin's impedance of a circuit containing a few independent voltage and current sources, we have to\n(A) Open circuit all the sources\n(B) Short circuit all the sources\n(C) Open circuit voltage sources and short circuit current sources.\n(D) Open circuit current sources and short circuit voltage sources",
+            "question_text": "While finding Thevenin's impedance of a circuit containing a few independent voltage and current sources, we have to",
+            "options": [
+                "Open circuit all the sources",
+                "Short circuit all the sources",
+                "Open circuit voltage sources and short circuit current sources.",
+                "Open circuit current sources and short circuit voltage sources"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: To properly calculate the equivalent Thevenin impedance, independent ideal voltage sources are shorted (0V) and independent ideal current sources are opened (0A).",
+            "answer": "To properly calculate the equivalent Thevenin impedance, independent ideal voltage sources are shorted (0V) and independent ideal current sources are opened (0A).",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
         {
             "question_number": "5",
-            "question_text": "Which power device combines the advantages of MOSFET (voltage control) and BJT (low conduction loss)?\n(A) SCR\n(B) UJT\n(C) Power diode\n(D) IGBT",
+            "question_text": "Which power device combines the advantages of MOSFET (voltage control) and BJT (low conduction loss)?",
+            "options": [
+                "SCR",
+                "UJT",
+                "Power diode",
+                "IGBT"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: The Insulated Gate Bipolar Transistor (IGBT) provides the high input impedance (voltage control) of a MOSFET while retaining the low ON-state conduction losses typical of a BJT.",
+            "answer": "The Insulated Gate Bipolar Transistor (IGBT) provides the high input impedance (voltage control) of a MOSFET while retaining the low ON-state conduction losses typical of a BJT.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
         {
             "question_number": "6",
-            "question_text": "A Zener diode is primarily used for\n(A) Rectification\n(B) Voltage regulation\n(C) Amplification\n(D) Oscillation",
+            "question_text": "A Zener diode is primarily used for",
+            "options": [
+                "Rectification",
+                "Voltage regulation",
+                "Amplification",
+                "Oscillation"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: Zener diodes maintain a highly stable constant voltage when operating in their reverse-breakdown region, making them primarily useful for voltage regulation circuits.",
+            "answer": "Zener diodes maintain a highly stable constant voltage when operating in their reverse-breakdown region, making them primarily useful for voltage regulation circuits.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
         {
             "question_number": "7",
-            "question_text": "A device that converts DC power directly to AC is known as\n(A) Inverter\n(B) Rectifier\n(C) Chopper\n(D) Cycloconverter",
+            "question_text": "A device that converts DC power directly to AC is known as",
+            "options": [
+                "Inverter",
+                "Rectifier",
+                "Chopper",
+                "Cycloconverter"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: Inverters are power electronic devices engineered explicitly to transform direct current (DC) power into alternating current (AC) power.",
+            "answer": "Inverters are power electronic devices engineered explicitly to transform direct current (DC) power into alternating current (AC) power.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
         {
             "question_number": "8",
-            "question_text": "In which type of commutation does the current naturally fall to zero due to the alternating supply?\n(A) Forced commutation\n(B) Resonant commutation\n(C) Natural commutation\n(D) Load commutation",
+            "question_text": "In which type of commutation does the current naturally fall to zero due to the alternating supply?",
+            "options": [
+                "Forced commutation",
+                "Resonant commutation",
+                "Natural commutation",
+                "Load commutation"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: In AC circuits, the supply voltage automatically crosses zero during its cycle, causing thyristor current to naturally fall to zero. This is termed line or natural commutation.",
+            "answer": "In AC circuits, the supply voltage automatically crosses zero during its cycle, causing thyristor current to naturally fall to zero. This is termed line or natural commutation.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
         {
             "question_number": "9",
-            "question_text": "Which type of drive is best suited for cranes due to high starting torque?\n(A) Induction motor drive\n(B) BLDC drive\n(C) DC motor drive\n(D) Stepper motor drive",
+            "question_text": "Which type of drive is best suited for cranes due to high starting torque?",
+            "options": [
+                "Induction motor drive",
+                "BLDC drive",
+                "DC motor drive",
+                "Stepper motor drive"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: DC series motor drives historically provide exceptionally high starting torque, making them ideal for heavy lifting applications like electric cranes and hoists.",
+            "answer": "DC series motor drives historically provide exceptionally high starting torque, making them ideal for heavy lifting applications like electric cranes and hoists.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
         {
             "question_number": "10",
-            "question_text": "The rotor of a PMSM contains ........................\n(A) Field winding with DC supply\n(B) Permanent magnets\n(C) Induced windings only\n(D) Copper shading coils",
+            "question_text": "The rotor of a PMSM contains ........................",
+            "options": [
+                "Field winding with DC supply",
+                "Permanent magnets",
+                "Induced windings only",
+                "Copper shading coils"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: PMSM stands for Permanent Magnet Synchronous Motor. Its rotor generates a constant magnetic field through the use of mounted permanent magnets rather than wound field coils.",
+            "answer": "PMSM stands for Permanent Magnet Synchronous Motor. Its rotor generates a constant magnetic field through the use of mounted permanent magnets rather than wound field coils.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
         {
             "question_number": "11",
-            "question_text": "In a DC motor, the force experienced by a conductor is given by\n(A) E = BLV\n(B) F = BIL\n(C) T = kφI\n(D) P = VI",
+            "question_text": "In a DC motor, the force experienced by a conductor is given by",
+            "options": [
+                "E = BLV",
+                "F = BIL",
+                "T = kφI",
+                "P = VI"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: The Lorentz force on a straight current-carrying conductor located in a magnetic field is calculated by the formula F = B * I * L.",
+            "answer": "The Lorentz force on a straight current-carrying conductor located in a magnetic field is calculated by the formula F = B * I * L.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
         {
             "question_number": "12",
-            "question_text": "The most suitable motor drive for Electric Vehicles is ........................\n(A) Squirrel-cage Induction Motor\n(B) BLDC Motor\n(C) Repulsion Motor\n(D) Shunt DC Motor",
+            "question_text": "The most suitable motor drive for Electric Vehicles is ........................",
+            "options": [
+                "Squirrel-cage Induction Motor",
+                "BLDC Motor",
+                "Repulsion Motor",
+                "Shunt DC Motor"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: Due to their excellent efficiency, high power density, and compact size, Brushless DC (BLDC) motors and Permanent Magnet Synchronous Motors are universally preferred for Electric Vehicle powertrains.",
+            "answer": "Due to their excellent efficiency, high power density, and compact size, Brushless DC (BLDC) motors and Permanent Magnet Synchronous Motors are universally preferred for Electric Vehicle powertrains.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
         {
             "question_number": "13",
-            "question_text": "The principle of an IR sensor is ........................\n(A) Piezoelectric effect\n(B) Detection of infrared radiation\n(C) Change in magnetic flux\n(D) Seebeck effect",
+            "question_text": "The principle of an IR sensor is ........................",
+            "options": [
+                "Piezoelectric effect",
+                "Detection of infrared radiation",
+                "Change in magnetic flux",
+                "Seebeck effect"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: An IR (Infrared) sensor functions by emitting or detecting infrared radiation to sense its surroundings or measure heat signatures.",
+            "answer": "An IR (Infrared) sensor functions by emitting or detecting infrared radiation to sense its surroundings or measure heat signatures.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
         {
             "question_number": "14",
-            "question_text": "A photodiode operates mostly in ........................\n(A) Forward bias\n(B) Reverse bias\n(C) Zero bias\n(D) Saturation",
+            "question_text": "A photodiode operates mostly in ........................",
+            "options": [
+                "Forward bias",
+                "Reverse bias",
+                "Zero bias",
+                "Saturation"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: Photodiodes are operated in reverse bias because it widens the depletion region, making the device highly sensitive to incident light generating measurable leakage current.",
+            "answer": "Photodiodes are operated in reverse bias because it widens the depletion region, making the device highly sensitive to incident light generating measurable leakage current.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
         {
             "question_number": "15",
-            "question_text": "An LVDT is used for measuring ........................\n(A) Temperature\n(B) Displacement\n(C) Pressure\n(D) Speed",
+            "question_text": "An LVDT is used for measuring ........................",
+            "options": [
+                "Temperature",
+                "Displacement",
+                "Pressure",
+                "Speed"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: The Linear Variable Differential Transformer (LVDT) is an electromechanical transducer designed explicitly to measure linear displacement.",
+            "answer": "The Linear Variable Differential Transformer (LVDT) is an electromechanical transducer designed explicitly to measure linear displacement.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
         {
             "question_number": "16",
-            "question_text": "Moving coil instruments are generally used for ........................\n(A) AC only\n(B) DC only\n(C) Both AC and DC\n(D) Power measurement",
+            "question_text": "Moving coil instruments are generally used for ........................",
+            "options": [
+                "AC only",
+                "DC only",
+                "Both AC and DC",
+                "Power measurement"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: Permanent Magnet Moving Coil (PMMC) instruments respond strictly to the average value of current, restricting their application exclusively to DC measurements.",
+            "answer": "Permanent Magnet Moving Coil (PMMC) instruments respond strictly to the average value of current, restricting their application exclusively to DC measurements.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
         {
             "question_number": "17",
-            "question_text": "An electric motor draws 700 W for 5 hours. The energy consumed is\n(A) 3.5 kWh\n(B) 3.5 Wh\n(C) 3500 kWh\n(D) 140 kWh",
+            "question_text": "An electric motor draws 700 W for 5 hours. The energy consumed is",
+            "options": [
+                "3.5 kWh",
+                "3.5 Wh",
+                "3500 kWh",
+                "140 kWh"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: Energy = Power × time = 700 Watts × 5 hours = 3500 Watt-hours, which converts to 3.5 kWh.",
+            "answer": "Energy = Power × time = 700 Watts × 5 hours = 3500 Watt-hours, which converts to 3.5 kWh.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
         {
             "question_number": "18",
-            "question_text": "PHEV (Plug-in Hybrid Electric Vehicle) differs from HEV because:\n(A) It cannot use IC engine\n(B) It has larger batteries and can be charged from grid\n(C) It runs only on hydrogen\n(D) It eliminates electric motor",
+            "question_text": "PHEV (Plug-in Hybrid Electric Vehicle) differs from HEV because:",
+            "options": [
+                "It cannot use IC engine",
+                "It has larger batteries and can be charged from grid",
+                "It runs only on hydrogen",
+                "It eliminates electric motor"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: While standard HEVs only charge batteries through regenerative braking and the engine, Plug-in Hybrids (PHEVs) feature larger battery packs that can be recharged externally directly from the power grid.",
+            "answer": "While standard HEVs only charge batteries through regenerative braking and the engine, Plug-in Hybrids (PHEVs) feature larger battery packs that can be recharged externally directly from the power grid.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
         {
             "question_number": "19",
-            "question_text": "The most common form of energy storage for renewable energy is ........................\n(A) Pumped hydro storage\n(B) Coal reserves\n(C) Gas turbines\n(D) Diesel generators",
+            "question_text": "The most common form of energy storage for renewable energy is ........................",
+            "options": [
+                "Pumped hydro storage",
+                "Coal reserves",
+                "Gas turbines",
+                "Diesel generators"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: Globally, pumped-storage hydroelectricity accounts for the vast majority of grid-scale energy storage capacity for balancing variable renewable energy.",
+            "answer": "Globally, pumped-storage hydroelectricity accounts for the vast majority of grid-scale energy storage capacity for balancing variable renewable energy.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
         {
             "question_number": "20",
-            "question_text": "The main purpose of earthing is to ................\n(A) Reduce copper losses\n(B) Protect equipment from overload\n(C) Provide a safe path for fault current\n(D) Improve insulation resistance",
+            "question_text": "The main purpose of earthing is to ................",
+            "options": [
+                "Reduce copper losses",
+                "Protect equipment from overload",
+                "Provide a safe path for fault current",
+                "Improve insulation resistance"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: System earthing connects equipment chassis to the earth, creating a low-resistance path for fault currents to safely discharge, preventing electric shocks.",
+            "answer": "System earthing connects equipment chassis to the earth, creating a low-resistance path for fault currents to safely discharge, preventing electric shocks.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         }

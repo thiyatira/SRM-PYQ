@@ -5,161 +5,301 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "How do you access a member of a structure using a pointer in C?\nA) ptr.member\nB) ptr->member\nC) *ptr.member\nD) ptr&.member",
+            "question_text": "How do you access a member of a structure using a pointer in C?",
+            "options": [
+                "ptr.member",
+                "ptr->member",
+                "*ptr.member",
+                "ptr&.member"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "B) ptr->member\n\n**Rationale:** In C, when accessing members of a structure through a pointer, the arrow operator (`->`) is used. It is equivalent to dereferencing the pointer first and then using the dot operator: `(*ptr).member`.",
+            "answer": "In C, when accessing members of a structure through a pointer, the arrow operator (`->`) is used. It is equivalent to dereferencing the pointer first and then using the dot operator: `(*ptr).member`.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
         {
             "question_number": "2",
-            "question_text": "What is the output of the following code?\n\n```c\nint x = 10;\nint *p = &x;\nprintf(\"%d\", *p);\n\n```\n\nA) Address of x\nB) 10\nC) Garbage value\nD) Compilation error",
+            "question_text": "What is the output of the following code?\n\n```c\nint x = 10;\nint *p = &x;\nprintf(\"%d\", *p);\n\n```",
+            "options": [
+                "Address of x",
+                "10",
+                "Garbage value",
+                "Compilation error"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "B) 10\n\n**Rationale:** The pointer `p` is assigned the memory address of `x`. The expression `*p` dereferences the pointer, returning the integer value stored at that address, which is `10`.",
+            "answer": "The pointer `p` is assigned the memory address of `x`. The expression `*p` dereferences the pointer, returning the integer value stored at that address, which is `10`.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
         {
             "question_number": "3",
-            "question_text": "Which of the following statements about matrix multiplication is true?\nA) Matrix multiplication is commutative\nB) Matrix multiplication is associative\nC) Matrix multiplication is distributive over addition\nD) Both b and c",
+            "question_text": "Which of the following statements about matrix multiplication is true?",
+            "options": [
+                "Matrix multiplication is commutative",
+                "Matrix multiplication is associative",
+                "Matrix multiplication is distributive over addition",
+                "Both b and c"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "D) Both b and c\n\n**Rationale:** Matrix multiplication is generally not commutative ($AB \\neq BA$). However, it is associative ($A(BC) = (AB)C$) and distributive over addition ($A(B+C) = AB + AC$).",
+            "answer": "Matrix multiplication is generally not commutative ($AB \\neq BA$). However, it is associative ($A(BC) = (AB)C$) and distributive over addition ($A(B+C) = AB + AC$).",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
         {
             "question_number": "4",
-            "question_text": "What is the best time complexity of a linear search?\nA) O(1)\nB) O(n)\nC) O(log n)\nD) O(n^2)",
+            "question_text": "What is the best time complexity of a linear search?",
+            "options": [
+                "O(1)",
+                "O(n)",
+                "O(log n)",
+                "O(n^2)"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "A) O(1)\n\n**Rationale:** The best-case scenario occurs when the target element is located at the first position (index 0) of the list/array, resulting in a constant time complexity of $O(1)$.",
+            "answer": "The best-case scenario occurs when the target element is located at the first position (index 0) of the list/array, resulting in a constant time complexity of $O(1)$.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
         {
             "question_number": "5",
-            "question_text": "In a singly linked list, how is an element inserted at the beginning of the list?\nA) By creating a new node and updating the head pointer\nB) By shifting all elements one position to the right\nC) By swapping the first two nodes\nD) By appending the element at the end",
+            "question_text": "In a singly linked list, how is an element inserted at the beginning of the list?",
+            "options": [
+                "By creating a new node and updating the head pointer",
+                "By shifting all elements one position to the right",
+                "By swapping the first two nodes",
+                "By appending the element at the end"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "A) By creating a new node and updating the head pointer\n\n**Rationale:** Inserting a node at the beginning of a singly linked list involves setting the `next` pointer of the newly created node to point to the current `head` node, and then updating the `head` pointer to point to this new node.",
+            "answer": "Inserting a node at the beginning of a singly linked list involves setting the `next` pointer of the newly created node to point to the current `head` node, and then updating the `head` pointer to point to this new node.",
             "answer_source": "generated",
             "chapter": "Unit 2: List Structure"
         },
         {
             "question_number": "6",
-            "question_text": "What is the disadvantage of inserting an element at the beginning in an array-based implementation of List ADT?\nA) Requires extra space\nB) Takes constant time\nC) Requires shifting all elements\nD) Cannot be done",
+            "question_text": "What is the disadvantage of inserting an element at the beginning in an array-based implementation of List ADT?",
+            "options": [
+                "Requires extra space",
+                "Takes constant time",
+                "Requires shifting all elements",
+                "Cannot be done"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "C) Requires shifting all elements\n\n**Rationale:** In a contiguous memory array-based implementation, inserting an element at index 0 requires shifting all existing $n$ elements one index to the right to make space, which takes $O(n)$ time.",
+            "answer": "In a contiguous memory array-based implementation, inserting an element at index 0 requires shifting all existing $n$ elements one index to the right to make space, which takes $O(n)$ time.",
             "answer_source": "generated",
             "chapter": "Unit 2: List Structure"
         },
         {
             "question_number": "7",
-            "question_text": "How is the end of the list detected in a circular singly linked list?\nA) When the next pointer is NULL\nB) When the next pointer points to the head\nC) When the previous pointer is NULL\nD) When the previous pointer points to the tail",
+            "question_text": "How is the end of the list detected in a circular singly linked list?",
+            "options": [
+                "When the next pointer is NULL",
+                "When the next pointer points to the head",
+                "When the previous pointer is NULL",
+                "When the previous pointer points to the tail"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "B) When the next pointer points to the head\n\n**Rationale:** In a circular singly linked list, there are no `NULL` pointers; the `next` pointer of the last node points back to the `head` of the list.",
+            "answer": "In a circular singly linked list, there are no `NULL` pointers; the `next` pointer of the last node points back to the `head` of the list.",
             "answer_source": "generated",
             "chapter": "Unit 2: List Structure"
         },
         {
             "question_number": "8",
-            "question_text": "In the Josephus problem, how is the next person to be eliminated chosen in a circular linked list?\nA) Randomly\nB) By a fixed number of steps\nC) By a linear search\nD) By sorting the list",
+            "question_text": "In the Josephus problem, how is the next person to be eliminated chosen in a circular linked list?",
+            "options": [
+                "Randomly",
+                "By a fixed number of steps",
+                "By a linear search",
+                "By sorting the list"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "B) By a fixed number of steps\n\n**Rationale:** The classic Josephus problem involves eliminating every $k$-th person (where $k$ is a fixed number of steps) in a circle until only one survivor remains.",
+            "answer": "The classic Josephus problem involves eliminating every $k$-th person (where $k$ is a fixed number of steps) in a circle until only one survivor remains.",
             "answer_source": "generated",
             "chapter": "Unit 2: List Structure"
         },
         {
             "question_number": "9",
-            "question_text": "What is the time complexity of the push operation in a stack implemented using an array?\nA) O(1)\nB) O(n)\nC) O(log n)\nD) O(n log n)",
+            "question_text": "What is the time complexity of the push operation in a stack implemented using an array?",
+            "options": [
+                "O(1)",
+                "O(n)",
+                "O(log n)",
+                "O(n log n)"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "A) O(1)\n\n**Rationale:** Inserting a new element on top of an array-based stack involves checking for overflow, incrementing the `top` index variable, and assigning the value, which are all constant-time operations.",
+            "answer": "Inserting a new element on top of an array-based stack involves checking for overflow, incrementing the `top` index variable, and assigning the value, which are all constant-time operations.",
             "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },
         {
             "question_number": "10",
-            "question_text": "What is the postfix expression for the infix expression (A + B) * (C + D)?\nA) AB + CD + *\nB) AB + C + D *\nC) AB + CD * +\nD) ABCD + * +",
+            "question_text": "What is the postfix expression for the infix expression (A + B) * (C + D)?",
+            "options": [
+                "AB + CD + *",
+                "AB + C + D *",
+                "AB + CD * +",
+                "ABCD + * +"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "A) AB + CD + *\n\n**Rationale:**\n1. Evaluate parenthesized expressions first:\n   - `(A + B)` becomes `AB+`\n   - `(C + D)` becomes `CD+`\n2. Multiply the two terms:\n   - `(AB+) * (CD+)` becomes `AB+ CD+ *`",
+            "answer": "1. Evaluate parenthesized expressions first:\n   - `(A + B)` becomes `AB+`\n   - `(C + D)` becomes `CD+`\n2. Multiply the two terms:\n   - `(AB+) * (CD+)` becomes `AB+ CD+ *`",
             "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },
         {
             "question_number": "11",
-            "question_text": "How many moves are required to solve the Tower of Hanoi problem with 4 disks?\nA) 16\nB) 15\nC) 14\nD) 24",
+            "question_text": "How many moves are required to solve the Tower of Hanoi problem with 4 disks?",
+            "options": [
+                "16",
+                "15",
+                "14",
+                "24"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "B) 15\n\n**Rationale:** The minimum number of moves required to solve the Tower of Hanoi problem with $n$ disks is $2^n - 1$. For $n = 4$, the required moves are $2^4 - 1 = 16 - 1 = 15$.",
+            "answer": "The minimum number of moves required to solve the Tower of Hanoi problem with $n$ disks is $2^n - 1$. For $n = 4$, the required moves are $2^4 - 1 = 16 - 1 = 15$.",
             "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },
         {
             "question_number": "12",
-            "question_text": "In a circular queue implemented using an array, how do you check if the queue is full?\nA) front == rear\nB) (rear + 1) % size == front\nC) front == size\nD) rear == size",
+            "question_text": "In a circular queue implemented using an array, how do you check if the queue is full?",
+            "options": [
+                "front == rear",
+                "(rear + 1) % size == front",
+                "front == size",
+                "rear == size"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "B) (rear + 1) % size == front\n\n**Rationale:** A circular queue of capacity `size` is full when the circular successor of the `rear` index matches the `front` index, meaning no more elements can be written without overwriting `front`.",
+            "answer": "A circular queue of capacity `size` is full when the circular successor of the `rear` index matches the `front` index, meaning no more elements can be written without overwriting `front`.",
             "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },
         {
             "question_number": "13",
-            "question_text": "In a binary tree, the maximum number of nodes at level L is:\nA) 2^L\nB) 2^(L-1)\nC) 2^(L+1)\nD) L^2",
+            "question_text": "In a binary tree, the maximum number of nodes at level L is:",
+            "options": [
+                "2^L",
+                "2^(L-1)",
+                "2^(L+1)",
+                "L^2"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "A) 2^L\n\n**Rationale:** By convention, if the root node is at level $0$, the maximum number of nodes at level $L$ is $2^L$. (e.g., Level 0: $2^0=1$ node, Level 1: $2^1=2$ nodes, Level 2: $2^2=4$ nodes).",
+            "answer": "By convention, if the root node is at level $0$, the maximum number of nodes at level $L$ is $2^L$. (e.g., Level 0: $2^0=1$ node, Level 1: $2^1=2$ nodes, Level 2: $2^2=4$ nodes).",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
         {
             "question_number": "14",
-            "question_text": "A complete binary tree is defined as:\nA) A binary tree in which all levels are completely filled.\nB) A binary tree in which all levels except possibly the last are completely filled.\nC) A binary tree with nodes having at most two children.\nD) A binary tree in which each node has exactly two children.",
+            "question_text": "A complete binary tree is defined as:",
+            "options": [
+                "A binary tree in which all levels are completely filled.",
+                "A binary tree in which all levels except possibly the last are completely filled.",
+                "A binary tree with nodes having at most two children.",
+                "A binary tree in which each node has exactly two children."
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "B) A binary tree in which all levels except possibly the last are completely filled.\n\n**Rationale:** In a complete binary tree, every level except possibly the last is completely filled, and all nodes in the last level are as far left as possible.",
+            "answer": "In a complete binary tree, every level except possibly the last is completely filled, and all nodes in the last level are as far left as possible.",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
         {
             "question_number": "15",
-            "question_text": "In an AVL tree, which rotation is applied when the tree becomes left-heavy due to the insertion of a new node in the left subtree of the left child?\nA) Right rotation\nB) Left rotation\nC) Left-right rotation\nD) Right-left rotation",
+            "question_text": "In an AVL tree, which rotation is applied when the tree becomes left-heavy due to the insertion of a new node in the left subtree of the left child?",
+            "options": [
+                "Right rotation",
+                "Left rotation",
+                "Left-right rotation",
+                "Right-left rotation"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "A) Right rotation\n\n**Rationale:** This represents the Left-to-Left (LL) imbalance scenario. A single right rotation around the unbalanced node balances the tree.",
+            "answer": "This represents the Left-to-Left (LL) imbalance scenario. A single right rotation around the unbalanced node balances the tree.",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
         {
             "question_number": "16",
-            "question_text": "What is the maximum height of a Red-Black tree with n nodes?\nA) 2*log(n+1)\nB) 2*log(n)\nC) log(n+1)\nD) log(n)",
+            "question_text": "What is the maximum height of a Red-Black tree with n nodes?",
+            "options": [
+                "2*log(n+1)",
+                "2*log(n)",
+                "log(n+1)",
+                "log(n)"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "A) 2*log(n+1)\n\n**Rationale:** Due to Red-Black Tree properties (no consecutive red nodes, equal black height), the maximum height of a Red-Black tree containing $n$ internal nodes is bounded by $2 \\log_2(n+1)$.",
+            "answer": "Due to Red-Black Tree properties (no consecutive red nodes, equal black height), the maximum height of a Red-Black tree containing $n$ internal nodes is bounded by $2 \\log_2(n+1)$.",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
         {
             "question_number": "17",
-            "question_text": "Quadratic probing is primarily used to:\nA) Avoid clustering.\nB) Handle large datasets.\nC) It is only applicable to undirected graphs.\nD) All edges must point in the same direction.",
+            "question_text": "Quadratic probing is primarily used to:",
+            "options": [
+                "Avoid clustering.",
+                "Handle large datasets.",
+                "It is only applicable to undirected graphs.",
+                "All edges must point in the same direction."
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "A) Avoid clustering.\n\n**Rationale:** Quadratic probing resolves collisions in a hash table and avoids the issue of \"primary clustering\" (which is prevalent in linear probing) by looking for vacant spots at quadratic intervals.",
+            "answer": "Quadratic probing resolves collisions in a hash table and avoids the issue of \"primary clustering\" (which is prevalent in linear probing) by looking for vacant spots at quadratic intervals.",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
         {
             "question_number": "18",
-            "question_text": "In a topological sorting of a graph, which of the following is true?\nA) The graph must be cyclic.\nB) It is possible to have multiple valid orderings.\nC) It is only applicable to undirected graphs.\nD) All edges must point in the same direction.",
+            "question_text": "In a topological sorting of a graph, which of the following is true?",
+            "options": [
+                "The graph must be cyclic.",
+                "It is possible to have multiple valid orderings.",
+                "It is only applicable to undirected graphs.",
+                "All edges must point in the same direction."
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "B) It is possible to have multiple valid orderings.\n\n**Rationale:** A Directed Acyclic Graph (DAG) may have more than one valid topological sort depending on the graph's structure and the specific paths of dependency.",
+            "answer": "A Directed Acyclic Graph (DAG) may have more than one valid topological sort depending on the graph's structure and the specific paths of dependency.",
             "answer_source": "generated",
             "chapter": "Unit 5: Graph"
         },
         {
             "question_number": "19",
-            "question_text": "Which of the following data structures is commonly used to implement Kruskal's algorithm?\nA) Stack\nB) Queue\nC) Disjoint Set (Union-Find)\nD) Priority Queue",
+            "question_text": "Which of the following data structures is commonly used to implement Kruskal's algorithm?",
+            "options": [
+                "Stack",
+                "Queue",
+                "Disjoint Set (Union-Find)",
+                "Priority Queue"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "C) Disjoint Set (Union-Find)\n\n**Rationale:** Kruskal's algorithm uses the Disjoint Set (Union-Find) data structure to keep track of connected components and detect cycles in $O(\\log V)$ or $O(\\alpha(V))$ time.",
+            "answer": "Kruskal's algorithm uses the Disjoint Set (Union-Find) data structure to keep track of connected components and detect cycles in $O(\\log V)$ or $O(\\alpha(V))$ time.",
             "answer_source": "generated",
             "chapter": "Unit 5: Graph"
         },
         {
             "question_number": "20",
-            "question_text": "In Dijkstra's algorithm, which data structure is commonly used to select the next vertex with the minimum distance?\nA) Stack\nB) Queue\nC) Priority Queue (Min-Heap)\nD) Hash Table",
+            "question_text": "In Dijkstra's algorithm, which data structure is commonly used to select the next vertex with the minimum distance?",
+            "options": [
+                "Stack",
+                "Queue",
+                "Priority Queue (Min-Heap)",
+                "Hash Table"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "C) Priority Queue (Min-Heap)\n\n**Rationale:** A min-priority queue (typically implemented as a binary min-heap) is used to efficiently select and extract the vertex with the minimum tentative distance.",
+            "answer": "A min-priority queue (typically implemented as a binary min-heap) is used to efficiently select and extract the vertex with the minimum tentative distance.",
             "answer_source": "generated",
             "chapter": "Unit 5: Graph"
         },

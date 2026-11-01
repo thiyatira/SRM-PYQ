@@ -4,57 +4,106 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "The classical free electron theory ________\n(A) Explains the photoelectric behaviour assuming that electron moves in a constant potential\n(B) Predicts the electron velocities based on Maxwell-Boltzmann law\n(C) Was proposed by Arnold sommerfield\n(D) Could not explain the concept of ferromagnetism",
+            "question_text": "The classical free electron theory ________",
+            "options": [
+                "Explains the photoelectric behaviour assuming that electron moves in a constant potential",
+                "Predicts the electron velocities based on Maxwell-Boltzmann law",
+                "Was proposed by Arnold sommerfield",
+                "Could not explain the concept of ferromagnetism"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: The classical Drude model (free electron theory) assumes electrons in a metal behave like a gas and follow Maxwell-Boltzmann statistics.",
+            "answer": "The classical Drude model (free electron theory) assumes electrons in a metal behave like a gas and follow Maxwell-Boltzmann statistics.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
         {
             "question_number": "3",
-            "question_text": "The ________ is a geometrical construction to the WS primitive cell in the k-space.\n(A) Direct lattice\n(B) Brillouin zone\n(C) Real lattice\n(D) Phonon zone",
+            "question_text": "The ________ is a geometrical construction to the WS primitive cell in the k-space.",
+            "options": [
+                "Direct lattice",
+                "Brillouin zone",
+                "Real lattice",
+                "Phonon zone"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: The first Brillouin zone is uniquely defined as the Wigner-Seitz primitive cell in the reciprocal lattice.",
+            "answer": "The first Brillouin zone is uniquely defined as the Wigner-Seitz primitive cell in the reciprocal lattice.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
         {
             "question_number": "5",
-            "question_text": "The Fermi level is ________\n(A) An average value of all available energy levels\n(B) An energy level at the top of the valence band\n(C) The highest occupied energy level at 0 K\n(D) The highest occupied energy level at 0 °C",
+            "question_text": "The Fermi level is ________",
+            "options": [
+                "An average value of all available energy levels",
+                "An energy level at the top of the valence band",
+                "The highest occupied energy level at 0 K",
+                "The highest occupied energy level at 0 °C"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: By definition, the Fermi level (at T=0K) is the highest occupied energy level in a system of fermions.",
+            "answer": "By definition, the Fermi level (at T=0K) is the highest occupied energy level in a system of fermions.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
         {
             "question_number": "7",
-            "question_text": "In p-type semiconductor, numbers of holes are ________ the number of electrons.\n(A) Greater than\n(B) Equal to\n(C) Less than\n(D) Twice",
+            "question_text": "In p-type semiconductor, numbers of holes are ________ the number of electrons.",
+            "options": [
+                "Greater than",
+                "Equal to",
+                "Less than",
+                "Twice"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: In p-type semiconductors, holes are the majority carriers and electrons are the minority carriers.",
+            "answer": "In p-type semiconductors, holes are the majority carriers and electrons are the minority carriers.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
         {
             "question_number": "11",
-            "question_text": "Solar cell converts ________ energy into electrical energy.\n(A) Sound\n(B) Mechanical\n(C) Light\n(D) Magnetic",
+            "question_text": "Solar cell converts ________ energy into electrical energy.",
+            "options": [
+                "Sound",
+                "Mechanical",
+                "Light",
+                "Magnetic"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: Solar cells use the photovoltaic effect to convert solar (light) energy directly into electrical energy.",
+            "answer": "Solar cells use the photovoltaic effect to convert solar (light) energy directly into electrical energy.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
         {
             "question_number": "14",
-            "question_text": "A ________ is a quick determination method to identify whether a semiconductor sample is n (negative) type or p (positive) type.\n(A) Electrolysis\n(B) Hot point probe\n(C) Hydrogenation\n(D) Rectification",
+            "question_text": "A ________ is a quick determination method to identify whether a semiconductor sample is n (negative) type or p (positive) type.",
+            "options": [
+                "Electrolysis",
+                "Hot point probe",
+                "Hydrogenation",
+                "Rectification"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: The Hot point probe is a simple, rapid technique used to determine the carrier type of a semiconductor.",
+            "answer": "The Hot point probe is a simple, rapid technique used to determine the carrier type of a semiconductor.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
         {
             "question_number": "19",
-            "question_text": "The physical parameter that is probed in AFM resulting from different interactions is ________\n(A) Charge\n(B) Force\n(C) Potential\n(D) Current",
+            "question_text": "The physical parameter that is probed in AFM resulting from different interactions is ________",
+            "options": [
+                "Charge",
+                "Force",
+                "Potential",
+                "Current"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: AFM works by scanning a tip over a surface and measuring the mechanical forces (like Van der Waals) between the tip and the sample.",
+            "answer": "AFM works by scanning a tip over a surface and measuring the mechanical forces (like Van der Waals) between the tip and the sample.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         }

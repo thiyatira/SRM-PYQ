@@ -4,113 +4,211 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Voltage across the capacitor is given by\n(A) $V = c \\int idt$\n(B) $V = ic$\n(C) $V = c \\frac{di}{dt}$\n(D) $V = \\frac{1}{c}\\int idt$",
+            "question_text": "Voltage across the capacitor is given by",
+            "options": [
+                "$V = c \\int idt$",
+                "$V = ic$",
+                "$V = c \\frac{di}{dt}$",
+                "$V = \\frac{1}{c}\\int idt$"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: The voltage across a capacitor as a function of time is derived from the relation i = C(dV/dt), giving V = (1/C) ∫ i dt.",
+            "answer": "The voltage across a capacitor as a function of time is derived from the relation i = C(dV/dt), giving V = (1/C) ∫ i dt.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
         {
             "question_number": "2",
-            "question_text": "There are four resistors in a given series circuit and each resistor has 5 V drop across it. The source voltage\n(A) Is 5 V\n(B) Depends on the resistor values\n(C) Depends on the current flow\n(D) Is 20 V",
+            "question_text": "There are four resistors in a given series circuit and each resistor has 5 V drop across it. The source voltage",
+            "options": [
+                "Is 5 V",
+                "Depends on the resistor values",
+                "Depends on the current flow",
+                "Is 20 V"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: In a series circuit, Kirchhoff's Voltage Law dictates that the source voltage is the sum of the individual voltage drops: 5 + 5 + 5 + 5 = 20 V.",
+            "answer": "In a series circuit, Kirchhoff's Voltage Law dictates that the source voltage is the sum of the individual voltage drops: 5 + 5 + 5 + 5 = 20 V.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
         {
             "question_number": "3",
-            "question_text": "In a star connected network, resistance of each branch is 'R' ohms. Resistance of each branch of delta connected resistance is\n(A) 'R' ohms\n(B) '3R' ohms\n(C) 'R'/3 ohms\n(D) '1/R' ohms",
+            "question_text": "In a star connected network, resistance of each branch is 'R' ohms. Resistance of each branch of delta connected resistance is",
+            "options": [
+                "'R' ohms",
+                "'3R' ohms",
+                "'R'/3 ohms",
+                "'1/R' ohms"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: The resistance transformation equation from a balanced Star to Delta connection is R_delta = 3 * R_star.",
+            "answer": "The resistance transformation equation from a balanced Star to Delta connection is R_delta = 3 * R_star.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
         {
             "question_number": "7",
-            "question_text": "A DC generator is rotated at 50 revolutions/sec. How many times does the dc output voltage reach maximum in each second?\n(A) 50\n(B) 100\n(C) 150\n(D) 3000",
+            "question_text": "A DC generator is rotated at 50 revolutions/sec. How many times does the dc output voltage reach maximum in each second?",
+            "options": [
+                "50",
+                "100",
+                "150",
+                "3000"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: In a simple single-loop DC generator (using a commutator), the rectified output voltage pulses to a maximum twice during every full revolution. Therefore, 50 rev/sec * 2 = 100 times.",
+            "answer": "In a simple single-loop DC generator (using a commutator), the rectified output voltage pulses to a maximum twice during every full revolution. Therefore, 50 rev/sec * 2 = 100 times.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
         {
             "question_number": "8",
-            "question_text": "In a series RC circuit, 12 V is measured across the resistor and 15 V is measured across the capacitor. The source voltage is\n(A) 3 V\n(B) 27 V\n(C) 19.2 V\n(D) 12 V",
+            "question_text": "In a series RC circuit, 12 V is measured across the resistor and 15 V is measured across the capacitor. The source voltage is",
+            "options": [
+                "3 V",
+                "27 V",
+                "19.2 V",
+                "12 V"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: The voltages in an AC RC series circuit add as phasors: V_source = √(V_R^2 + V_C^2) = √(12^2 + 15^2) = √(144 + 225) = √369 ≈ 19.2 V.",
+            "answer": "The voltages in an AC RC series circuit add as phasors: V_source = √(V_R^2 + V_C^2) = √(12^2 + 15^2) = √(144 + 225) = √369 ≈ 19.2 V.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
         {
             "question_number": "9",
-            "question_text": "In a moving coil ammeter, the deflecting torque is directly proportional to the\n(A) Square of the current to be measured\n(B) Current to be measured\n(C) Twice the current to be measured\n(D) Square root of the current to be measured",
+            "question_text": "In a moving coil ammeter, the deflecting torque is directly proportional to the",
+            "options": [
+                "Square of the current to be measured",
+                "Current to be measured",
+                "Twice the current to be measured",
+                "Square root of the current to be measured"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: For a Permanent Magnet Moving Coil (PMMC) instrument, the deflecting torque Td = BINA, making it directly proportional to the measured current (I).",
+            "answer": "For a Permanent Magnet Moving Coil (PMMC) instrument, the deflecting torque Td = BINA, making it directly proportional to the measured current (I).",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
         {
             "question_number": "10",
-            "question_text": "Which can not reduce the earth resistance?\n(A) Pouring water in the earth pit\n(B) Decreasing plate area\n(C) Increasing the depth of the earth pit\n(D) Connecting electrodes in parallel",
+            "question_text": "Which can not reduce the earth resistance?",
+            "options": [
+                "Pouring water in the earth pit",
+                "Decreasing plate area",
+                "Increasing the depth of the earth pit",
+                "Connecting electrodes in parallel"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: Decreasing the area of contact (plate area) will increase earth resistance, therefore it cannot be used to reduce it.",
+            "answer": "Decreasing the area of contact (plate area) will increase earth resistance, therefore it cannot be used to reduce it.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
         {
             "question_number": "11",
-            "question_text": "In the reverse bias breakdown voltage, zener diode acts as a\n(A) Open switch\n(B) Voltage regulator\n(C) Clipper\n(D) Filter",
+            "question_text": "In the reverse bias breakdown voltage, zener diode acts as a",
+            "options": [
+                "Open switch",
+                "Voltage regulator",
+                "Clipper",
+                "Filter"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: When operated in the reverse breakdown (Zener) region, the Zener diode maintains a constant voltage, hence it acts as a voltage regulator.",
+            "answer": "When operated in the reverse breakdown (Zener) region, the Zener diode maintains a constant voltage, hence it acts as a voltage regulator.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
         {
             "question_number": "12",
-            "question_text": "The maximum efficiency of a half wave rectifier is\n(A) 40.6%\n(B) 50%\n(C) 36%\n(D) 81.2%",
+            "question_text": "The maximum efficiency of a half wave rectifier is",
+            "options": [
+                "40.6%",
+                "50%",
+                "36%",
+                "81.2%"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: The theoretical maximum power conversion efficiency for a single-phase half-wave rectifier is 40.6%.",
+            "answer": "The theoretical maximum power conversion efficiency for a single-phase half-wave rectifier is 40.6%.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
         {
             "question_number": "13",
-            "question_text": "Example for passive transducer is\n(A) Photovoltaic cell\n(B) Thermocouple\n(C) Linear Variable Differential Transformer (LVDT)\n(D) Piezoelectric transducer",
+            "question_text": "Example for passive transducer is",
+            "options": [
+                "Photovoltaic cell",
+                "Thermocouple",
+                "Linear Variable Differential Transformer (LVDT)",
+                "Piezoelectric transducer"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: Passive transducers require an external power supply to operate. LVDT requires external AC excitation, unlike the other self-generating active transducers listed.",
+            "answer": "Passive transducers require an external power supply to operate. LVDT requires external AC excitation, unlike the other self-generating active transducers listed.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
         {
             "question_number": "14",
-            "question_text": "A thermocouple generates a small voltage of\n(A) 5000μV / °C\n(B) 500μV / °C\n(C) 50μV / °C\n(D) 5μV / °C",
+            "question_text": "A thermocouple generates a small voltage of",
+            "options": [
+                "5000μV / °C",
+                "500μV / °C",
+                "50μV / °C",
+                "5μV / °C"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: Typical commonly used thermocouples (like K-type or J-type) generate voltages generally in the order of 40-50 μV / °C.",
+            "answer": "Typical commonly used thermocouples (like K-type or J-type) generate voltages generally in the order of 40-50 μV / °C.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
         {
             "question_number": "15",
-            "question_text": "Gauge factor G, of a strain gauge is given by the ratio\n(A) $G = \\frac{R}{l}$\n(B) $G = \\frac{\\Delta R}{\\Delta l}$\n(C) $G = \\frac{\\Delta l}{\\Delta R}$\n(D) $G = \\frac{\\Delta R / R}{\\Delta l / l}$",
+            "question_text": "Gauge factor G, of a strain gauge is given by the ratio",
+            "options": [
+                "$G = \\frac{R}{l}$",
+                "$G = \\frac{\\Delta R}{\\Delta l}$",
+                "$G = \\frac{\\Delta l}{\\Delta R}$",
+                "$G = \\frac{\\Delta R / R}{\\Delta l / l}$"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: The Gauge factor is defined as the ratio of fractional change in electrical resistance to the fractional change in length (strain).",
+            "answer": "The Gauge factor is defined as the ratio of fractional change in electrical resistance to the fractional change in length (strain).",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
         {
             "question_number": "16",
-            "question_text": "Which is not a crystalline material?\n(A) Quartz\n(B) Rochelle salt\n(C) Constantan\n(D) Barium titanate",
+            "question_text": "Which is not a crystalline material?",
+            "options": [
+                "Quartz",
+                "Rochelle salt",
+                "Constantan",
+                "Barium titanate"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: Quartz, Rochelle salt, and Barium titanate are common crystalline piezoelectric materials. Constantan is an alloy typically used for resistance elements and strain gauges, not a piezoelectric crystal.",
+            "answer": "Quartz, Rochelle salt, and Barium titanate are common crystalline piezoelectric materials. Constantan is an alloy typically used for resistance elements and strain gauges, not a piezoelectric crystal.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
         {
             "question_number": "19",
-            "question_text": "Identify the result of Boolean expression A+AB=\n(A) 1\n(B) A\n(C) B\n(D) 0",
+            "question_text": "Identify the result of Boolean expression A+AB=",
+            "options": [
+                "1",
+                "A",
+                "B",
+                "0"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: By Boolean algebra absorption law, A + AB = A(1 + B) = A(1) = A.",
+            "answer": "By Boolean algebra absorption law, A + AB = A(1 + B) = A(1) = A.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         }

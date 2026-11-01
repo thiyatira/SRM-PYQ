@@ -4,161 +4,301 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Which of the following is a valid declaration of a static variable in C++?\n(A) static int x;\n(B) int static x;\n(C) int x;\n(D) stat int x;",
+            "question_text": "Which of the following is a valid declaration of a static variable in C++?",
+            "options": [
+                "static int x;",
+                "int static x;",
+                "int x;",
+                "stat int x;"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) static int x;. Explanation: The keyword `static` comes before the data type in a valid declaration.",
+            "answer": "The keyword `static` comes before the data type in a valid declaration.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 1"
         },
         {
             "question_number": "2",
-            "question_text": "Which access specifier allows members to be accessed within the same class and derived classes?\n(A) public\n(B) private\n(C) protected\n(D) internal",
+            "question_text": "Which access specifier allows members to be accessed within the same class and derived classes?",
+            "options": [
+                "public",
+                "private",
+                "protected",
+                "internal"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) protected. Explanation: 'protected' access specifier restricts access to the class itself and its derived classes.",
+            "answer": "'protected' access specifier restricts access to the class itself and its derived classes.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 1"
         },
         {
             "question_number": "3",
-            "question_text": "In C++, which keyword is used to declare a constant variable?\n(A) constant\n(B) const\n(C) final\n(D) readonly",
+            "question_text": "In C++, which keyword is used to declare a constant variable?",
+            "options": [
+                "constant",
+                "const",
+                "final",
+                "readonly"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) const. Explanation: The 'const' keyword is used to declare variables whose values cannot be changed after initialization.",
+            "answer": "The 'const' keyword is used to declare variables whose values cannot be changed after initialization.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 1"
         },
         {
             "question_number": "4",
-            "question_text": "What does UML stand for?\n(A) Unified Modeling Language\n(B) Universal Modeling Language\n(C) Unified Method Language\n(D) Unified Management Language",
+            "question_text": "What does UML stand for?",
+            "options": [
+                "Unified Modeling Language",
+                "Universal Modeling Language",
+                "Unified Method Language",
+                "Unified Management Language"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Unified Modeling Language. Explanation: UML is a standard visual modeling language used in object-oriented software engineering.",
+            "answer": "UML is a standard visual modeling language used in object-oriented software engineering.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 1"
         },
         {
             "question_number": "5",
-            "question_text": "In operator overloading, which keyword is used to define the operator function?\n(A) op\n(B) operator\n(C) overload\n(D) oper",
+            "question_text": "In operator overloading, which keyword is used to define the operator function?",
+            "options": [
+                "op",
+                "operator",
+                "overload",
+                "oper"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) operator. Explanation: The 'operator' keyword is specifically designated in C++ to overload operators.",
+            "answer": "The 'operator' keyword is specifically designated in C++ to overload operators.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 2"
         },
         {
             "question_number": "6",
-            "question_text": "C++ supports ___________ inheritance, which allows a derived class to inherit from many base classes, even if the base classes are unrelated.\n(A) Multilevel\n(B) Single level\n(C) Multiple\n(D) Hierarchical",
+            "question_text": "C++ supports ___________ inheritance, which allows a derived class to inherit from many base classes, even if the base classes are unrelated.",
+            "options": [
+                "Multilevel",
+                "Single level",
+                "Multiple",
+                "Hierarchical"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Multiple. Explanation: Multiple inheritance is when a class derives from more than one base class.",
+            "answer": "Multiple inheritance is when a class derives from more than one base class.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 3"
         },
         {
             "question_number": "7",
-            "question_text": "___________ emphasizes on time sequence of messages from one object to another.\n(A) Sequence diagram\n(B) Collaboration diagram\n(C) Class diagram\n(D) State diagram",
+            "question_text": "___________ emphasizes on time sequence of messages from one object to another.",
+            "options": [
+                "Sequence diagram",
+                "Collaboration diagram",
+                "Class diagram",
+                "State diagram"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Sequence diagram. Explanation: Sequence diagrams detail how operations are carried out over time by showing object interactions.",
+            "answer": "Sequence diagrams detail how operations are carried out over time by showing object interactions.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 2"
         },
         {
             "question_number": "8",
-            "question_text": "Which among the following best describes constructor overloading?\n(A) Defining one constructor in each class of program\n(B) Defining more than one constructor in single class\n(C) Defining more than one constructor in single class with different signature\n(D) Defining destructor with each constructor",
+            "question_text": "Which among the following best describes constructor overloading?",
+            "options": [
+                "Defining one constructor in each class of program",
+                "Defining more than one constructor in single class",
+                "Defining more than one constructor in single class with different signature",
+                "Defining destructor with each constructor"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Defining more than one constructor in single class with different signature. Explanation: Constructor overloading involves having multiple constructors with different parameter lists in the same class.",
+            "answer": "Constructor overloading involves having multiple constructors with different parameter lists in the same class.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 2"
         },
         {
             "question_number": "9",
-            "question_text": "A function which has no implementation is called\n(A) Pure virtual function\n(B) virtual function\n(C) friend function\n(D) any user defined function",
+            "question_text": "A function which has no implementation is called",
+            "options": [
+                "Pure virtual function",
+                "virtual function",
+                "friend function",
+                "any user defined function"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Pure virtual function. Explanation: A pure virtual function is declared with '= 0' and has no body in the base class.",
+            "answer": "A pure virtual function is declared with '= 0' and has no body in the base class.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 3"
         },
         {
             "question_number": "10",
-            "question_text": "Elements of round corner boxes to represent the situation of objects\n(A) Lifeline\n(B) Iteration\n(C) transition\n(D) state",
+            "question_text": "Elements of round corner boxes to represent the situation of objects",
+            "options": [
+                "Lifeline",
+                "Iteration",
+                "transition",
+                "state"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) state. Explanation: In statechart diagrams, a state is depicted as a rectangle with rounded corners.",
+            "answer": "In statechart diagrams, a state is depicted as a rectangle with rounded corners.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 3"
         },
         {
             "question_number": "11",
-            "question_text": "Collaboration and sequence diagram are considered as\n(A) interaction diagram\n(B) non-structural\n(C) structural diagram\n(D) non-behavioural",
+            "question_text": "Collaboration and sequence diagram are considered as",
+            "options": [
+                "interaction diagram",
+                "non-structural",
+                "structural diagram",
+                "non-behavioural"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) interaction diagram. Explanation: Both diagrams model the interaction between objects in a system.",
+            "answer": "Both diagrams model the interaction between objects in a system.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 2"
         },
         {
             "question_number": "12",
-            "question_text": "When a virtual function is redefined by the derived class, it is called\n(A) Overloading\n(B) Overriding\n(C) Rewriting\n(D) Overwriting",
+            "question_text": "When a virtual function is redefined by the derived class, it is called",
+            "options": [
+                "Overloading",
+                "Overriding",
+                "Rewriting",
+                "Overwriting"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Overriding. Explanation: Providing a new implementation for a base class virtual function in a derived class is called overriding.",
+            "answer": "Providing a new implementation for a base class virtual function in a derived class is called overriding.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 3"
         },
         {
             "question_number": "13",
-            "question_text": "Which feature of C++ allows for writing generic functions and classes?\n(A) Inheritance\n(B) Function Overloading\n(C) Templates\n(D) Pointers",
+            "question_text": "Which feature of C++ allows for writing generic functions and classes?",
+            "options": [
+                "Inheritance",
+                "Function Overloading",
+                "Templates",
+                "Pointers"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Templates. Explanation: Templates allow creating functions and classes that operate with generic types.",
+            "answer": "Templates allow creating functions and classes that operate with generic types.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 4"
         },
         {
             "question_number": "14",
-            "question_text": "________ is used to handle exceptional situations during program execution.\n(A) break and continue\n(B) try and catch\n(C) if-else statements\n(D) switch-case",
+            "question_text": "________ is used to handle exceptional situations during program execution.",
+            "options": [
+                "break and continue",
+                "try and catch",
+                "if-else statements",
+                "switch-case"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) try and catch. Explanation: Exceptions are handled using try blocks to test code and catch blocks to handle errors.",
+            "answer": "Exceptions are handled using try blocks to test code and catch blocks to handle errors.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 4"
         },
         {
             "question_number": "15",
-            "question_text": "What is the purpose of the 'finally' block in exception handling?\n(A) To catch exceptions\n(B) To throw exceptions\n(C) To clean up resources\n(D) To define custom exceptions",
+            "question_text": "What is the purpose of the 'finally' block in exception handling?",
+            "options": [
+                "To catch exceptions",
+                "To throw exceptions",
+                "To clean up resources",
+                "To define custom exceptions"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) To clean up resources. Explanation: The finally block executes after try and catch blocks to ensure resource cleanup, regardless of whether an exception occurred.",
+            "answer": "The finally block executes after try and catch blocks to ensure resource cleanup, regardless of whether an exception occurred.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 4"
         },
         {
             "question_number": "16",
-            "question_text": "________ UML diagram illustrates the system's internal structure, showing how software components are connected or related.\n(A) Use Case Diagram\n(B) Component Diagram\n(C) Deployment Diagram\n(D) State Diagram",
+            "question_text": "________ UML diagram illustrates the system's internal structure, showing how software components are connected or related.",
+            "options": [
+                "Use Case Diagram",
+                "Component Diagram",
+                "Deployment Diagram",
+                "State Diagram"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Component Diagram. Explanation: Component diagrams model the physical aspects of object-oriented systems, illustrating dependencies between structural components.",
+            "answer": "Component diagrams model the physical aspects of object-oriented systems, illustrating dependencies between structural components.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 4"
         },
         {
             "question_number": "17",
-            "question_text": "Which container provides constant time insertion and deletion at both the beginning and end?\n(A) Vector\n(B) List\n(C) Dequeue\n(D) Array",
+            "question_text": "Which container provides constant time insertion and deletion at both the beginning and end?",
+            "options": [
+                "Vector",
+                "List",
+                "Dequeue",
+                "Array"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Dequeue. Explanation: Double-ended queues (deque) allow fast insertions and deletions at both the front and rear.",
+            "answer": "Double-ended queues (deque) allow fast insertions and deletions at both the front and rear.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 5"
         },
         {
             "question_number": "18",
-            "question_text": "________ header file must be included to use the transform() algorithm in C++.\n(A) <algorithm>\n(B) <iostream>\n(C) <vector>\n(D) <iterator>",
+            "question_text": "________ header file must be included to use the transform() algorithm in C++.",
+            "options": [
+                "<algorithm>",
+                "<iostream>",
+                "<vector>",
+                "<iterator>"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) <algorithm>. Explanation: The 'transform()' function is part of the STL algorithms, defined in the <algorithm> header.",
+            "answer": "The 'transform()' function is part of the STL algorithms, defined in the <algorithm> header.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 5"
         },
         {
             "question_number": "19",
-            "question_text": "________ container stores elements in a sorted order based on keys.\n(A) Vector\n(B) List\n(C) Stack\n(D) Map",
+            "question_text": "________ container stores elements in a sorted order based on keys.",
+            "options": [
+                "Vector",
+                "List",
+                "Stack",
+                "Map"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Map. Explanation: Maps are associative containers that store elements formed by a combination of a key value and a mapped value, sorted by key.",
+            "answer": "Maps are associative containers that store elements formed by a combination of a key value and a mapped value, sorted by key.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 5"
         },
         {
             "question_number": "20",
-            "question_text": "________ is the purpose of an iterator in C++ STL.\n(A) To store elements in a container\n(B) To iterate over the elements of a container\n(C) To sort elements in a container\n(D) To search for elements in a container",
+            "question_text": "________ is the purpose of an iterator in C++ STL.",
+            "options": [
+                "To store elements in a container",
+                "To iterate over the elements of a container",
+                "To sort elements in a container",
+                "To search for elements in a container"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) To iterate over the elements of a container. Explanation: Iterators act like pointers that allow traversing through elements of a container.",
+            "answer": "Iterators act like pointers that allow traversing through elements of a container.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 5"
         },

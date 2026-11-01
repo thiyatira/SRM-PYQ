@@ -4,23 +4,44 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "What is the output of the following code?\n\n```c\nchar str[10] = \"C Programming\";\nprintf(\"%c\", str[3]);\n```\n\nA) C\nB) P\nC) r\nD) o",
+            "question_text": "What is the output of the following code?\n\n```c\nchar str[10] = \"C Programming\";\nprintf(\"%c\", str[3]);\n```",
+            "options": [
+                "C",
+                "P",
+                "r",
+                "o"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "The string \"C Programming\" is stored as a character array. In C, arrays are 0-indexed. Therefore, `str[3]` refers to the character at the fourth position in the string. Counting from 0:\n- `str[0]` is 'C'\n- `str[1]` is ' '\n- `str[2]` is 'P'\n- `str[3]` is 'r'\nSo, the `printf(\"%c\", str[3]);` statement will print the character 'r'.\nThe correct option is C.",
+            "answer": "The string \"C Programming\" is stored as a character array. In C, arrays are 0-indexed. Therefore, `str[3]` refers to the character at the fourth position in the string. Counting from 0:\n- `str[0]` is 'C'\n- `str[1]` is ' '\n- `str[2]` is 'P'\n- `str[3]` is 'r'\nSo, the `printf(\"%c\", str[3]);` statement will print the character 'r'.",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages - Non-Numeric Data types: char and string"
         },
         {
             "question_number": "2",
-            "question_text": "What will atoi(\"1234\") return?\nA) \"1234\"\nB) 1234\nC) 12\nD) An error",
+            "question_text": "What will atoi(\"1234\") return?",
+            "options": [
+                "\"1234\"",
+                "1234",
+                "12",
+                "An error"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "The `atoi()` function (ASCII to Integer) is a standard library function in C that converts a string (null-terminated character array) representation of an integer to its integer equivalent. When passed the string \"1234\", it will convert it into the integer value 1234.\nThe correct option is B.",
+            "answer": "The `atoi()` function (ASCII to Integer) is a standard library function in C that converts a string (null-terminated character array) representation of an integer to its integer equivalent. When passed the string \"1234\", it will convert it into the integer value 1234.",
             "answer_source": "generated",
             "chapter": "Unit 3: String Basics - Built-inString Functions: atoi"
         },
         {
             "question_number": "3",
-            "question_text": "When an array is passed to a function, what information must be passed along with it to process the array within the function? (Select all that apply)\nA) Just the array name\nB) The array's size\nC) The data type of array elements\nD) A pointer to the last element",
+            "question_text": "When an array is passed to a function, what information must be passed along with it to process the array within the function? (Select all that apply)",
+            "options": [
+                "Just the array name",
+                "The array's size",
+                "The data type of array elements",
+                "A pointer to the last element"
+            ],
+            "correct_option": "A,B",
             "marks": 1,
             "answer": "In C, when an array is passed to a function, the array name itself 'decays' into a pointer to its first element. This pointer does not carry information about the array's size. Therefore:\n-   **A) Just the array name**: This is essential as it provides the starting address of the array (a pointer to the first element).\n-   **B) The array's size**: This is crucial because the function needs to know how many elements to process to avoid accessing out-of-bounds memory. Without the size, the function cannot reliably iterate through the entire array.\n-   C) The data type of array elements: While important for pointer arithmetic, the type is typically defined in the function signature (e.g., `int *arr`), so it's implicitly known if the pointer type is correctly specified. It's not usually passed as a separate piece of information alongside the array name and size.\n-   D) A pointer to the last element: This is not a standard or necessary piece of information to pass. Knowing the start address and size is sufficient.\n\nTherefore, to properly process an array within a function, both the array name (which provides the base address) and the array's size must be passed. Options A and B are correct.",
             "answer_source": "generated",
@@ -28,7 +49,14 @@
         },
         {
             "question_number": "4",
-            "question_text": "Which of the following is a valid multi-line comment in Python?\nA) # This is a comment\nB)/* This is a comment */\nC) // This is a comment\nD) \"\"\" This is a comment \"\"\"",
+            "question_text": "Which of the following is a valid multi-line comment in Python?",
+            "options": [
+                "# This is a comment",
+                "/* This is a comment */",
+                "// This is a comment",
+                "\"\"\" This is a comment \"\"\""
+            ],
+            "correct_option": "D",
             "marks": 1,
             "answer": "In Python:\n-   `#` is used for single-line comments.\n-   `/* */` is used for multi-line comments in languages like C, C++, and Java.\n-   `//` is used for single-line comments in languages like C++, Java, and JavaScript.\n-   `\"\"\"` (triple double quotes) or `'''` (triple single quotes) are used for multi-line strings, which can also serve as multi-line comments if not assigned to a variable.\n\nTherefore, the correct option is D.",
             "answer_source": "generated",
@@ -36,7 +64,14 @@
         },
         {
             "question_number": "5",
-            "question_text": "Which of the following statements about Python data types are correct? (Select all that apply)\nA) Python lists are mutable, meaning their elements can be modified after creation.\nB) Python tuples are mutable and can store elements of any data type.\nC) Strings in Python are immutable.\nD) Python dictionaries cannot have duplicate keys.",
+            "question_text": "Which of the following statements about Python data types are correct? (Select all that apply)",
+            "options": [
+                "Python lists are mutable, meaning their elements can be modified after creation.",
+                "Python tuples are mutable and can store elements of any data type.",
+                "Strings in Python are immutable.",
+                "Python dictionaries cannot have duplicate keys."
+            ],
+            "correct_option": "A,C,D",
             "marks": 1,
             "answer": "Let's evaluate each statement:\n-   **A) Python lists are mutable, meaning their elements can be modified after creation.** This statement is **correct**. Lists are dynamic and their contents can be changed, added, or removed.\n-   **B) Python tuples are mutable and can store elements of any data type.** This statement is **incorrect**. Tuples are immutable; once created, their elements cannot be changed, added, or removed. They can, however, store elements of any data type.\n-   **C) Strings in Python are immutable.** This statement is **correct**. Once a string is created, its characters cannot be changed in place. Any operation that appears to modify a string actually creates a new string.\n-   **D) Python dictionaries cannot have duplicate keys.** This statement is **correct**. Dictionary keys must be unique. If you try to assign a value to an existing key, it will overwrite the old value. Duplicate values are allowed, but not duplicate keys.\n\nTherefore, options A, C, and D are correct.",
             "answer_source": "generated",
@@ -44,23 +79,44 @@
         },
         {
             "question_number": "6",
-            "question_text": "What will be the output of the following code? (MSQ)\nmy_dict={\"apple\": 3, \"banana\": 5}\nprint(my_dict.get(\"orange\", 0))\nA) 3\nB) 5\nC) 0\nD) None",
+            "question_text": "What will be the output of the following code? (MSQ)\nmy_dict={\"apple\": 3, \"banana\": 5}\nprint(my_dict.get(\"orange\", 0))",
+            "options": [
+                "3",
+                "5",
+                "0",
+                "None"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "The `get()` method of a Python dictionary is used to retrieve the value associated with a specified key. It takes two arguments: the key to search for and an optional default value. If the key is found, `get()` returns its corresponding value. If the key is not found, `get()` returns the default value provided.\n\nIn this code:\n-   `my_dict` is `{\"apple\": 3, \"banana\": 5}`.\n-   We are calling `my_dict.get(\"orange\", 0)`.\n-   The key \"orange\" is not present in `my_dict`.\n-   The default value provided is `0`.\n\nTherefore, the `get()` method will return `0`.\nThe correct option is C.",
+            "answer": "The `get()` method of a Python dictionary is used to retrieve the value associated with a specified key. It takes two arguments: the key to search for and an optional default value. If the key is found, `get()` returns its corresponding value. If the key is not found, `get()` returns the default value provided.\n\nIn this code:\n-   `my_dict` is `{\"apple\": 3, \"banana\": 5}`.\n-   We are calling `my_dict.get(\"orange\", 0)`.\n-   The key \"orange\" is not present in `my_dict`.\n-   The default value provided is `0`.\n\nTherefore, the `get()` method will return `0`.",
             "answer_source": "generated",
             "chapter": "Unit 4: Python: Working with Dictionaries"
         },
         {
             "question_number": "7",
-            "question_text": "What will be the shape of the following NumPy array?\nimport numpy as np\na = np.array([[1, 2, 3], [4, 5, 6]])\nprint(a.shape)\na)(6,)\nb)(3,2)\nc)(2,3)\nd) (3,)",
+            "question_text": "What will be the shape of the following NumPy array?\nimport numpy as np\na = np.array([[1, 2, 3], [4, 5, 6]])\nprint(a.shape)",
+            "options": [
+                "(6,)",
+                "(3,2)",
+                "(2,3)",
+                "(3,)"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "The `np.array([[1, 2, 3], [4, 5, 6]])` creates a 2-dimensional NumPy array. It has two rows and three columns.\n-   The first dimension (rows) has a size of 2.\n-   The second dimension (columns) has a size of 3.\n\nThe `a.shape` attribute returns a tuple indicating the dimensions of the array. For this array, the shape will be (2, 3).\nThe correct option is C.",
+            "answer": "The `np.array([[1, 2, 3], [4, 5, 6]])` creates a 2-dimensional NumPy array. It has two rows and three columns.\n-   The first dimension (rows) has a size of 2.\n-   The second dimension (columns) has a size of 3.\n\nThe `a.shape` attribute returns a tuple indicating the dimensions of the array. For this array, the shape will be (2, 3).",
             "answer_source": "generated",
             "chapter": "Unit 5: Creating NumPy Array - Numpy Array attributes"
         },
         {
             "question_number": "8",
-            "question_text": "Which of the following are valid ways to create a NumPy array? (Select all that apply)\n(MSQ)\nA) np.array([1, 2, 3])\nB) np.zeros((3, 3))\nC) np.ones[3]\nD) np.arange(5)",
+            "question_text": "Which of the following are valid ways to create a NumPy array? (Select all that apply)\n(MSQ)",
+            "options": [
+                "np.array([1, 2, 3])",
+                "np.zeros((3, 3))",
+                "np.ones[3]",
+                "np.arange(5)"
+            ],
+            "correct_option": "A,B,D",
             "marks": 1,
             "answer": "Let's evaluate each option for creating NumPy arrays:\n-   **A) `np.array([1, 2, 3])`**: This is a **valid** way to create a NumPy array from a Python list.\n-   **B) `np.zeros((3, 3))`**: This is a **valid** way to create a 3x3 NumPy array filled with zeros. The `(3, 3)` tuple specifies the shape.\n-   **C) `np.ones[3]`**: This is **invalid**. `np.ones()` is a function that takes a shape as an argument (e.g., `np.ones(3)` for a 1D array of 3 ones, or `np.ones((3, 3))` for a 2D array). Using square brackets `[]` as if for indexing immediately after the function name is incorrect syntax for creation.\n-   **D) `np.arange(5)`**: This is a **valid** way to create a NumPy array with elements starting from 0 up to (but not including) 5, similar to Python's `range()` function.\n\nTherefore, options A, B, and D are correct.",
             "answer_source": "generated",

@@ -4,7 +4,14 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "The five kingdom classification was proposed by\n(A) R.H.Whittaker\n(C) Charles Darwin\n(B) Robert Hooke\n(D) Jean Baptiste Lamarck",
+            "question_text": "The five kingdom classification was proposed by",
+            "options": [
+                "R.H.Whittaker",
+                "Robert Hooke",
+                "Charles Darwin",
+                "Jean Baptiste Lamarck"
+            ],
+            "correct_option": "A",
             "marks": 1,
             "answer": "The five kingdom classification was proposed by R.H. Whittaker.",
             "answer_source": "generated",
@@ -12,7 +19,14 @@
         },
         {
             "question_number": "2",
-            "question_text": "Prokaryotes contains ribosomes in the cytoplasm to make\n(A) Fats\n(C) Carbohydrates\n(B) Proteins\n(D) Nucleic acids",
+            "question_text": "Prokaryotes contains ribosomes in the cytoplasm to make",
+            "options": [
+                "Fats",
+                "Proteins",
+                "Carbohydrates",
+                "Nucleic acids"
+            ],
+            "correct_option": "B",
             "marks": 1,
             "answer": "Prokaryotes contain ribosomes in the cytoplasm to synthesize proteins.",
             "answer_source": "generated",
@@ -20,7 +34,14 @@
         },
         {
             "question_number": "3",
-            "question_text": "In which cell organelle does the oxidation of glucose takes place to\nproduce energy?\n(A) Nucleus\n(C) Mitochondria\n(B) Vacuole\n(D) Endoplasmic reticulum",
+            "question_text": "In which cell organelle does the oxidation of glucose takes place to produce energy?",
+            "options": [
+                "Nucleus",
+                "Vacuole",
+                "Mitochondria",
+                "Endoplasmic reticulum"
+            ],
+            "correct_option": "C",
             "marks": 1,
             "answer": "The oxidation of glucose to produce energy (cellular respiration) primarily takes place in the mitochondria.",
             "answer_source": "generated",
@@ -28,7 +49,14 @@
         },
         {
             "question_number": "4",
-            "question_text": "In which phase of the cell division does sister chromatids separate?\n(A) Prophase\n(C) Anaphase\n(B) Metaphase\n(D) Telophase",
+            "question_text": "In which phase of the cell division does sister chromatids separate?",
+            "options": [
+                "Prophase",
+                "Metaphase",
+                "Anaphase",
+                "Telophase"
+            ],
+            "correct_option": "C",
             "marks": 1,
             "answer": "Sister chromatids separate during Anaphase of cell division.",
             "answer_source": "generated",
@@ -36,7 +64,14 @@
         },
         {
             "question_number": "5",
-            "question_text": "Genetic information is stored in cells in form of\n(A) DNA\n(C) tRNA\n(B) RNA\n(D) rRNA",
+            "question_text": "Genetic information is stored in cells in form of",
+            "options": [
+                "DNA",
+                "RNA",
+                "tRNA",
+                "rRNA"
+            ],
+            "correct_option": "A",
             "marks": 1,
             "answer": "Genetic information is primarily stored in cells in the form of DNA.",
             "answer_source": "generated",
@@ -44,7 +79,14 @@
         },
         {
             "question_number": "6",
-            "question_text": "Which of these is not a polysaccharide?\n(A) Starch\n(C) Glycogen\n(B) Cellulose\n(D) Lactose",
+            "question_text": "Which of these is not a polysaccharide?",
+            "options": [
+                "Starch",
+                "Cellulose",
+                "Glycogen",
+                "Lactose"
+            ],
+            "correct_option": "D",
             "marks": 1,
             "answer": "Lactose is not a polysaccharide; it is a disaccharide. Starch, cellulose, and glycogen are polysaccharides.",
             "answer_source": "generated",
@@ -52,7 +94,14 @@
         },
         {
             "question_number": "7",
-            "question_text": "Identify the nitrogenous base that is not present in DNA\n(A) Adenine\n(C) Uracil\n(B) Guanine\n(D) Cytosine",
+            "question_text": "Identify the nitrogenous base that is not present in DNA",
+            "options": [
+                "Adenine",
+                "Guanine",
+                "Uracil",
+                "Cytosine"
+            ],
+            "correct_option": "C",
             "marks": 1,
             "answer": "Uracil is not present in DNA; it replaces thymine in RNA.",
             "answer_source": "generated",
@@ -60,7 +109,14 @@
         },
         {
             "question_number": "8",
-            "question_text": "Which of these is a nucleic acid database?\n(A) PDB\n(C) Prosite\n(B) UniprotKB\n(D) GenBank",
+            "question_text": "Which of these is a nucleic acid database?",
+            "options": [
+                "PDB",
+                "UniprotKB",
+                "Prosite",
+                "GenBank"
+            ],
+            "correct_option": "D",
             "marks": 1,
             "answer": "GenBank is a nucleic acid sequence database. PDB is for protein structures, UniProtKB for protein sequences and functions, and Prosite for protein families and domains.",
             "answer_source": "generated",
@@ -68,7 +124,14 @@
         },
         {
             "question_number": "9",
-            "question_text": "Which of these codons is called start codon?\n(A) AUG\n(C) UAG\n(B) UAA\n(D) UGA",
+            "question_text": "Which of these codons is called start codon?",
+            "options": [
+                "AUG",
+                "UAA",
+                "UAG",
+                "UGA"
+            ],
+            "correct_option": "A",
             "marks": 1,
             "answer": "AUG is the start codon, coding for methionine. UAA, UAG, and UGA are stop codons.",
             "answer_source": "generated",
@@ -76,7 +139,14 @@
         },
         {
             "question_number": "10",
-            "question_text": "Which type of bond is present in proteins?\n(A) Ionic bond\n(C) Peptide bond\n(B) Covalent bond\n(D) Glycosidic bond",
+            "question_text": "Which type of bond is present in proteins?",
+            "options": [
+                "Ionic bond",
+                "Covalent bond",
+                "Peptide bond",
+                "Glycosidic bond"
+            ],
+            "correct_option": "C",
             "marks": 1,
             "answer": "Peptide bonds are the primary covalent bonds linking amino acids in proteins.",
             "answer_source": "generated",
@@ -84,7 +154,14 @@
         },
         {
             "question_number": "11",
-            "question_text": "The transport protein that carries oxygen in blood to tissues is\n(A) Insulin\n(C) Testosterone\n(B) Trypsin\n(D) Hemoglobin",
+            "question_text": "The transport protein that carries oxygen in blood to tissues is",
+            "options": [
+                "Insulin",
+                "Trypsin",
+                "Testosterone",
+                "Hemoglobin"
+            ],
+            "correct_option": "D",
             "marks": 1,
             "answer": "Hemoglobin is the transport protein that carries oxygen in blood to tissues.",
             "answer_source": "generated",
@@ -92,7 +169,14 @@
         },
         {
             "question_number": "12",
-            "question_text": "The protein that is present in hair, nails and feathers is\n(A) Keratin\n(C) Hemoglobin\n(B) Actin\n(D) Albumin",
+            "question_text": "The protein that is present in hair, nails and feathers is",
+            "options": [
+                "Keratin",
+                "Actin",
+                "Hemoglobin",
+                "Albumin"
+            ],
+            "correct_option": "A",
             "marks": 1,
             "answer": "Keratin is the protein present in hair, nails, and feathers.",
             "answer_source": "generated",
@@ -100,7 +184,14 @@
         },
         {
             "question_number": "13",
-            "question_text": "Which of these cells of the nervous system is abundant and has irregular star\nshape?\n(A) Microglia\n(C) Oligodendrocytes\n(B) Astrocytes\n(D) Schwann cell",
+            "question_text": "Which of these cells of the nervous system is abundant and has irregular star shape?",
+            "options": [
+                "Microglia",
+                "Astrocytes",
+                "Oligodendrocytes",
+                "Schwann cell"
+            ],
+            "correct_option": "B",
             "marks": 1,
             "answer": "Astrocytes are abundant glial cells in the nervous system with an irregular star shape.",
             "answer_source": "generated",
@@ -108,15 +199,29 @@
         },
         {
             "question_number": "14",
-            "question_text": "Transmission of electrical signal from one neuron to next is carried by\n(A) Neurotransmitters\n(C) Microglia\n(B) Astrocytes\n(D) Axons",
+            "question_text": "Transmission of electrical signal from one neuron to next is carried by",
+            "options": [
+                "Neurotransmitters",
+                "Astrocytes",
+                "Microglia",
+                "Axons"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "Neurotransmitters carry electrical signals from one neuron to the next across synapses.",
+            "answer": "Neurotransmitters carry the signal from one neuron to the next across the synapse: the electrical impulse arriving at the axon terminal triggers their release, and they bind receptors on the next neuron.",
             "answer_source": "generated",
             "chapter": "Unit 4: Neurobiology"
         },
         {
             "question_number": "15",
-            "question_text": "Disease of nervous system caused by deposits of amyloid plaques is\n(A) Parkinson's disease\n(B) Multiple sclerosis\n(C) Spongioform encephalopathy\n(D) Alzheimer's disease",
+            "question_text": "Disease of nervous system caused by deposits of amyloid plaques is",
+            "options": [
+                "Parkinson's disease",
+                "Multiple sclerosis",
+                "Spongioform encephalopathy",
+                "Alzheimer's disease"
+            ],
+            "correct_option": "D",
             "marks": 1,
             "answer": "Alzheimer's disease is characterized by the presence of amyloid plaques in the brain.",
             "answer_source": "generated",
@@ -124,7 +229,14 @@
         },
         {
             "question_number": "16",
-            "question_text": "The input units in an artificial neuron is equivalent to __________ of a\nphysical neuron\n(A) Dendrites\n(C) Axon\n(B) Soma\n(D) Synapse",
+            "question_text": "The input units in an artificial neuron is equivalent to __________ of a physical neuron",
+            "options": [
+                "Dendrites",
+                "Soma",
+                "Axon",
+                "Synapse"
+            ],
+            "correct_option": "A",
             "marks": 1,
             "answer": "The input units in an artificial neuron are equivalent to dendrites of a physical neuron.",
             "answer_source": "generated",
@@ -132,7 +244,14 @@
         },
         {
             "question_number": "17",
-            "question_text": "B lymphocytes are produced from\n(A) Thymus\n(C) Spleen\n(B) Bone marrow\n(D) Appendix",
+            "question_text": "B lymphocytes are produced from",
+            "options": [
+                "Thymus",
+                "Bone marrow",
+                "Spleen",
+                "Appendix"
+            ],
+            "correct_option": "B",
             "marks": 1,
             "answer": "B lymphocytes are produced and mature in the bone marrow.",
             "answer_source": "generated",
@@ -140,7 +259,14 @@
         },
         {
             "question_number": "18",
-            "question_text": "Type of vaccine that uses only the antigenic compounds instead of entire\nmicroorganism is\n(A) Live attenuated vaccine\n(C) Subunit vaccine\n(B) Inactivated vaccine\n(D) Toxoid vaccine",
+            "question_text": "Type of vaccine that uses only the antigenic compounds instead of entire microorganism is",
+            "options": [
+                "Live attenuated vaccine",
+                "Inactivated vaccine",
+                "Subunit vaccine",
+                "Toxoid vaccine"
+            ],
+            "correct_option": "C",
             "marks": 1,
             "answer": "A subunit vaccine uses only specific antigenic compounds (e.g., proteins or polysaccharides) instead of the entire microorganism.",
             "answer_source": "generated",
@@ -148,7 +274,14 @@
         },
         {
             "question_number": "19",
-            "question_text": "The type of white blood cell that releases chemicals causing allergic\nreaction is\n(A) Neutrophils\n(C) Eosinophils\n(B) Basophils\n(D) Monocytes",
+            "question_text": "The type of white blood cell that releases chemicals causing allergic reaction is",
+            "options": [
+                "Neutrophils",
+                "Basophils",
+                "Eosinophils",
+                "Monocytes"
+            ],
+            "correct_option": "B",
             "marks": 1,
             "answer": "Basophils are the type of white blood cell that releases chemicals like histamine, causing allergic reactions.",
             "answer_source": "generated",
@@ -156,7 +289,14 @@
         },
         {
             "question_number": "20",
-            "question_text": "Epitope prediction method for T cells is based on\n(A) MHC\n(C) Peptide binding\n(B) B cell receptor\n(D) Antibody conformation",
+            "question_text": "Epitope prediction method for T cells is based on",
+            "options": [
+                "MHC",
+                "B cell receptor",
+                "Peptide binding",
+                "Antibody conformation"
+            ],
+            "correct_option": "C",
             "marks": 1,
             "answer": "Epitope prediction for T cells is based on the binding of peptide antigens to Major Histocompatibility Complex (MHC) molecules.",
             "answer_source": "generated",

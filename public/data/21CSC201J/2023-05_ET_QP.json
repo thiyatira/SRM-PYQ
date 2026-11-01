@@ -5,161 +5,301 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "How do you instantiate an array in C?\n(A) int Arr[] = new int (3);\n(B) int Arr [ 3];\n(C) int Arr[] = new int[3];\n(D) int Arr( ) = New int [3];",
+            "question_text": "How do you instantiate an array in C?",
+            "options": [
+                "int Arr[] = new int (3);",
+                "int Arr [ 3];",
+                "int Arr[] = new int[3];",
+                "int Arr( ) = New int [3];"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) int Arr [ 3];\n\n**Rationale:** In C, arrays are instantiated statically using the syntax `datatype array_name[size];`. The `new` operator is used in C++ and Java, not in C.",
+            "answer": "In C, arrays are instantiated statically using the syntax `datatype array_name[size];`. The `new` operator is used in C++ and Java, not in C.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Introduction"
         },
         {
             "question_number": "2",
-            "question_text": "Elements in an array are accessed\n(A) Randomly\n(B) Sequentially\n(C) Exponentially\n(D) Logarithmically",
+            "question_text": "Elements in an array are accessed",
+            "options": [
+                "Randomly",
+                "Sequentially",
+                "Exponentially",
+                "Logarithmically"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Randomly\n\n**Rationale:** Array elements are stored in contiguous memory locations, which allows $O(1)$ constant time direct/random access to any element using its index.",
+            "answer": "Array elements are stored in contiguous memory locations, which allows $O(1)$ constant time direct/random access to any element using its index.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Introduction"
         },
         {
             "question_number": "3",
-            "question_text": "Which of the following data structure is non linear type?\n(A) Strings\n(B) Lists\n(C) Stacks\n(D) Hierarchical",
+            "question_text": "Which of the following data structure is non linear type?",
+            "options": [
+                "Strings",
+                "Lists",
+                "Stacks",
+                "Hierarchical"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Hierarchical\n\n**Rationale:** Hierarchical structures (such as trees and graphs) are non-linear data structures because elements are not arranged in a sequential order. Strings, lists, and stacks are linear data structures.",
+            "answer": "Hierarchical structures (such as trees and graphs) are non-linear data structures because elements are not arranged in a sequential order. Strings, lists, and stacks are linear data structures.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Introduction"
         },
         {
             "question_number": "4",
-            "question_text": "What will be the output of the following code?\n\n```c\nstruct student {\n    CHAR *C;\n};\nvoid main()\n{\n    struct student *S;\n    S->C = \"HELLO\";\n    printf(\"%s\", S->C);\n}\n\n```\n\n(A) Hello\n(B) Segmentation fault\n(C) Runtime error\n(D) Nothing",
+            "question_text": "What will be the output of the following code?\n\n```c\nstruct student {\n    CHAR *C;\n};\nvoid main()\n{\n    struct student *S;\n    S->C = \"HELLO\";\n    printf(\"%s\", S->C);\n}\n\n```",
+            "options": [
+                "Hello",
+                "Segmentation fault",
+                "Runtime error",
+                "Nothing"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Segmentation fault\n\n**Rationale:** The pointer `S` is declared as a pointer to a structure (`struct student *S`) but is never allocated memory (either statically or dynamically using `malloc`). Attempting to dereference an uninitialized pointer (`S->C = \"HELLO\"`) leads to undefined behavior, which commonly results in a Segmentation fault.",
+            "answer": "The pointer `S` is declared as a pointer to a structure (`struct student *S`) but is never allocated memory (either statically or dynamically using `malloc`). Attempting to dereference an uninitialized pointer (`S->C = \"HELLO\"`) leads to undefined behavior, which commonly results in a Segmentation fault.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Introduction"
         },
         {
             "question_number": "5",
-            "question_text": "Linked list data structure offers considerable saving in\n(A) Computational time\n(B) Space utilization\n(C) Space utilization and computational time\n(D) Speed utilization",
+            "question_text": "Linked list data structure offers considerable saving in",
+            "options": [
+                "Computational time",
+                "Space utilization",
+                "Space utilization and computational time",
+                "Speed utilization"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Space utilization\n\n**Rationale:** Linked lists utilize memory dynamically, allocating space only when new elements are inserted. This prevents wasting pre-allocated contiguous memory blocks as seen in arrays.",
+            "answer": "Linked lists utilize memory dynamically, allocating space only when new elements are inserted. This prevents wasting pre-allocated contiguous memory blocks as seen in arrays.",
             "answer_source": "generated",
             "chapter": "Unit 2 - List Structure"
         },
         {
             "question_number": "6",
-            "question_text": "Which of the following is false about a doubly linked list?\n(A) We can navigate in both the directions\n(B) It requires more space than a singly linked list\n(C) The insertion and deletion of a node take a bit longer time\n(D) Implementing a doubly linked list is easier than singly linked list",
+            "question_text": "Which of the following is false about a doubly linked list?",
+            "options": [
+                "We can navigate in both the directions",
+                "It requires more space than a singly linked list",
+                "The insertion and deletion of a node take a bit longer time",
+                "Implementing a doubly linked list is easier than singly linked list"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Implementing a doubly linked list is easier than singly linked list\n\n**Rationale:** Implementing a doubly linked list is more complex because every node maintains two pointers (`next` and `prev`), requiring extra pointer updates during insertion and deletion operations compared to a singly linked list.",
+            "answer": "Implementing a doubly linked list is more complex because every node maintains two pointers (`next` and `prev`), requiring extra pointer updates during insertion and deletion operations compared to a singly linked list.",
             "answer_source": "generated",
             "chapter": "Unit 2 - List Structure"
         },
         {
             "question_number": "7",
-            "question_text": "Which of the following is false about a circular linked list?\n(A) Every node has a successor\n(B) Time complexity of inserting a new node at the head of the list is O(1)\n(C) The complexity for deleting the last node is O(n).\n(D) We can traverse the whole circular linked list, starting from any point",
+            "question_text": "Which of the following is false about a circular linked list?",
+            "options": [
+                "Every node has a successor",
+                "Time complexity of inserting a new node at the head of the list is O(1)",
+                "The complexity for deleting the last node is O(n).",
+                "We can traverse the whole circular linked list, starting from any point"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Time complexity of inserting a new node at the head of the list is O(1)\n\n**Rationale:** In a basic circular linked list with only a `head` pointer, inserting a node at the head requires traversing the entire list to find the last node so its `next` pointer can be updated to point to the new head. This operation takes $O(n)$ time (unless a `tail` pointer is also maintained).",
+            "answer": "In a basic circular linked list with only a `head` pointer, inserting a node at the head requires traversing the entire list to find the last node so its `next` pointer can be updated to point to the new head. This operation takes $O(n)$ time (unless a `tail` pointer is also maintained).",
             "answer_source": "generated",
             "chapter": "Unit 2 - List Structure"
         },
         {
             "question_number": "8",
-            "question_text": "Which of these is not an application of a linked list?\n(A) To implement file system\n(B) For separate chaining in hash-tables\n(C) To implement non-binary trees\n(D) Random access of elements",
+            "question_text": "Which of these is not an application of a linked list?",
+            "options": [
+                "To implement file system",
+                "For separate chaining in hash-tables",
+                "To implement non-binary trees",
+                "Random access of elements"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Random access of elements\n\n**Rationale:** Linked lists do not support physical random access because nodes are not stored in contiguous memory. To access an element at index $i$, one must traverse sequentially from the head node, requiring $O(n)$ time.",
+            "answer": "Linked lists do not support physical random access because nodes are not stored in contiguous memory. To access an element at index $i$, one must traverse sequentially from the head node, requiring $O(n)$ time.",
             "answer_source": "generated",
             "chapter": "Unit 2 - List Structure"
         },
         {
             "question_number": "9",
-            "question_text": "The data structure required to check whether an expression contains balanced parenthesis is\n(A) Stack\n(B) Queue\n(C) Array\n(D) Tree",
+            "question_text": "The data structure required to check whether an expression contains balanced parenthesis is",
+            "options": [
+                "Stack",
+                "Queue",
+                "Array",
+                "Tree"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Stack\n\n**Rationale:** A stack works on the Last-In-First-Out (LIFO) principle, making it ideal for tracking opening parentheses (pushed onto the stack) and matching them with corresponding closing parentheses (popped from the stack).",
+            "answer": "A stack works on the Last-In-First-Out (LIFO) principle, making it ideal for tracking opening parentheses (pushed onto the stack) and matching them with corresponding closing parentheses (popped from the stack).",
             "answer_source": "generated",
             "chapter": "Unit 3 - Stack and Queue"
         },
         {
             "question_number": "10",
-            "question_text": "The prefix form of A-B / (C*D^E) is?\n(A) -/*^AACBDE\n(B) -ABCD * ^ADE\n(C) -A/B*C^DE\n(D) -A/BC*^ADE",
+            "question_text": "The prefix form of A-B / (C*D^E) is?",
+            "options": [
+                "-/*^AACBDE",
+                "-ABCD * ^ADE",
+                "-A/B*C^DE",
+                "-A/BC*^ADE"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) -A/B*C^DE\n\n**Rationale:** Let's convert the expression step-by-step:\n1. Find operations with the highest precedence inside parentheses: $D \\text{ ^ } E \\rightarrow \\text{^}DE$\n2. Next is multiplication inside the parentheses: $C * (\\text{^}DE) \\rightarrow *C\\text{^}DE$\n3. Next is division: $B / (*C\\text{^}DE) \\rightarrow /B*C\\text{^}DE$\n4. Finally, subtraction: $A - (/B*C\\text{^}DE) \\rightarrow -A/B*C\\text{^}DE$",
+            "answer": "Let's convert the expression step-by-step:\n1. Find operations with the highest precedence inside parentheses: $D \\text{ ^ } E \\rightarrow \\text{^}DE$\n2. Next is multiplication inside the parentheses: $C * (\\text{^}DE) \\rightarrow *C\\text{^}DE$\n3. Next is division: $B / (*C\\text{^}DE) \\rightarrow /B*C\\text{^}DE$\n4. Finally, subtraction: $A - (/B*C\\text{^}DE) \\rightarrow -A/B*C\\text{^}DE$",
             "answer_source": "generated",
             "chapter": "Unit 3 - Stack and Queue"
         },
         {
             "question_number": "11",
-            "question_text": "A queue follows ________\n(A) FIFO (First in First Out) principle\n(B) LIFO (Last in First Out) principle\n(C) Ordered array\n(D) Linear tree",
+            "question_text": "A queue follows ________",
+            "options": [
+                "FIFO (First in First Out) principle",
+                "LIFO (Last in First Out) principle",
+                "Ordered array",
+                "Linear tree"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) FIFO (First in First Out) principle\n\n**Rationale:** A queue is a linear data structure where elements are inserted at the rear and removed from the front, adhering strictly to the First-In-First-Out behavior.",
+            "answer": "A queue is a linear data structure where elements are inserted at the rear and removed from the front, adhering strictly to the First-In-First-Out behavior.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Stack and Queue"
         },
         {
             "question_number": "12",
-            "question_text": "A normal queue, if implemented using an array of size max-size gets full when?\n(A) Rear = Max - size - 1\n(B) Front = (rear + 1) mod max size\n(C) Front = Rear + 1\n(D) Rear = Front",
+            "question_text": "A normal queue, if implemented using an array of size max-size gets full when?",
+            "options": [
+                "Rear = Max - size - 1",
+                "Front = (rear + 1) mod max size",
+                "Front = Rear + 1",
+                "Rear = Front"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Rear = Max - size - 1\n\n**Rationale:** In a standard (non-circular) queue array of size $N$ (where indices range from $0$ to $N-1$), the queue is considered full at the rear end when the `rear` index reaches $N - 1$, which is written here as `Max - size - 1`.",
+            "answer": "In a standard (non-circular) queue array of size $N$ (where indices range from $0$ to $N-1$), the queue is considered full at the rear end when the `rear` index reaches $N - 1$, which is written here as `Max - size - 1`.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Stack and Queue"
         },
         {
             "question_number": "13",
-            "question_text": "A linear list of elements in which deletion can be done from one end (front) and insertion can take place only at the other end (rear) is known as _______\n(A) Queue\n(B) Stack\n(C) Tree\n(D) Linked list",
+            "question_text": "A linear list of elements in which deletion can be done from one end (front) and insertion can take place only at the other end (rear) is known as _______",
+            "options": [
+                "Queue",
+                "Stack",
+                "Tree",
+                "Linked list"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Queue\n\n**Rationale:** By definition, a queue restricts insertions to the rear end and deletions to the front end.",
+            "answer": "By definition, a queue restricts insertions to the rear end and deletions to the front end.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Stack and Queue"
         },
         {
             "question_number": "14",
-            "question_text": "What is a full binary tree?\n(A) Each node has exactly zero or two children\n(B) Each node has exactly two children\n(C) All the leaves are at the same level\n(D) Each node has exactly one or two children",
+            "question_text": "What is a full binary tree?",
+            "options": [
+                "Each node has exactly zero or two children",
+                "Each node has exactly two children",
+                "All the leaves are at the same level",
+                "Each node has exactly one or two children"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Each node has exactly zero or two children\n\n**Rationale:** A full binary tree (sometimes called a proper binary tree) is a tree in which every node has either 0 or 2 children. No node has only one child.",
+            "answer": "A full binary tree (sometimes called a proper binary tree) is a tree in which every node has either 0 or 2 children. No node has only one child.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Trees and Hashing"
         },
         {
             "question_number": "15",
-            "question_text": "For the binary tree, find the pre order traversal sequence.\n[Tree Structure:\n      A\n    /   \\\n   B     C\n  / \\   /\n D   E F\n/ \\\nH  I   \n      G\n     / \\\n    J   K]\n(A) H I D E G F J K G C A\n(B) H D I B E A F C J G K\n(C) A B D H I E C F G J K\n(D) A B C D E F G H I J K",
+            "question_text": "For the binary tree, find the pre order traversal sequence.\n[Tree Structure:\n      A\n    /   \\\n   B     C\n  / \\   /\n D   E F\n/ \\\nH  I   \n      G\n     / \\\n    J   K]",
+            "options": [
+                "H I D E G F J K G C A",
+                "H D I B E A F C J G K",
+                "A B D H I E C F G J K",
+                "A B C D E F G H I J K"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) A B D H I E C F G J K\n\n**Rationale:** Preorder traversal follows the Root $\\rightarrow$ Left subtree $\\rightarrow$ Right subtree sequence:\n1. Root: **A**\n2. Left Subtree of A (rooted at B):\n   - Root: **B**\n   - Left of B (rooted at D):\n     - Root: **D**\n     - Left of D: **H**\n     - Right of D: **I**\n   - Right of B: **E**\n3. Right Subtree of A (rooted at C):\n   - Root: **C**\n   - Left of C: **F**\n   - Right of C (rooted at G):\n     - Root: **G**\n     - Left of G: **J**\n     - Right of G: **K**\n\nCombining these, we get: `A B D H I E C F G J K`.",
+            "answer": "Preorder traversal follows the Root $\\rightarrow$ Left subtree $\\rightarrow$ Right subtree sequence:\n1. Root: **A**\n2. Left Subtree of A (rooted at B):\n   - Root: **B**\n   - Left of B (rooted at D):\n     - Root: **D**\n     - Left of D: **H**\n     - Right of D: **I**\n   - Right of B: **E**\n3. Right Subtree of A (rooted at C):\n   - Root: **C**\n   - Left of C: **F**\n   - Right of C (rooted at G):\n     - Root: **G**\n     - Left of G: **J**\n     - Right of G: **K**\n\nCombining these, we get: `A B D H I E C F G J K`.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Trees and Hashing"
         },
         {
             "question_number": "16",
-            "question_text": "What is direct addressing?\n(A) Distinct array position for every possible key\n(B) Fewer array positions than keys\n(C) Fewer keys than array positions\n(D) Same array positions for all keys",
+            "question_text": "What is direct addressing?",
+            "options": [
+                "Distinct array position for every possible key",
+                "Fewer array positions than keys",
+                "Fewer keys than array positions",
+                "Same array positions for all keys"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Distinct array position for every possible key\n\n**Rationale:** In direct addressing, we utilize a direct-address table where each position (slot) corresponds directly to a unique key in the universe of keys, preventing collisions.",
+            "answer": "In direct addressing, we utilize a direct-address table where each position (slot) corresponds directly to a unique key in the universe of keys, preventing collisions.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Trees and Hashing"
         },
         {
             "question_number": "17",
-            "question_text": "What data organization method is used in Hash tables?\n(A) Stack\n(B) Array\n(C) Linked list\n(D) Queue",
+            "question_text": "What data organization method is used in Hash tables?",
+            "options": [
+                "Stack",
+                "Array",
+                "Linked list",
+                "Queue"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Array\n\n**Rationale:** Hash tables utilize an underlying array where elements are directly indexed via computations from a hash function.",
+            "answer": "Hash tables utilize an underlying array where elements are directly indexed via computations from a hash function.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Trees and Hashing"
         },
         {
             "question_number": "18",
-            "question_text": "What would be the number of zeros in the adjacency matrix of the given graph?\n[Graph with 4 nodes: 1, 2, 3, 4]\n(A) 10\n(B) 6\n(C) 16\n(D) 0",
+            "question_text": "What would be the number of zeros in the adjacency matrix of the given graph?\n[Graph with 4 nodes: 1, 2, 3, 4]",
+            "options": [
+                "10",
+                "6",
+                "16",
+                "0"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) 10\n\n**Rationale:** For an undirected graph with $V = 4$ vertices, the total number of entries in the adjacency matrix is $V \\times V = 4 \\times 4 = 16$. \nWith 3 edges (for instance, $(1,3)$, $(3,4)$, and $(1,2)$), there will be $3 \\times 2 = 6$ non-zero entries (since each edge creates two reciprocal entries in an undirected graph matrix). \nTherefore, the number of zero entries is $16 - 6 = 10$.",
+            "answer": "For an undirected graph with $V = 4$ vertices, the total number of entries in the adjacency matrix is $V \\times V = 4 \\times 4 = 16$. \nWith 3 edges (for instance, $(1,3)$, $(3,4)$, and $(1,2)$), there will be $3 \\times 2 = 6$ non-zero entries (since each edge creates two reciprocal entries in an undirected graph matrix). \nTherefore, the number of zero entries is $16 - 6 = 10$.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Graph"
         },
         {
             "question_number": "19",
-            "question_text": "The traveling salesman problem can be solved using ________\n(A) A spanning tree\n(B) A minimum spanning tree\n(C) Bellman-Ford algorithm\n(D) DFS traversal",
+            "question_text": "The traveling salesman problem can be solved using ________",
+            "options": [
+                "A spanning tree",
+                "A minimum spanning tree",
+                "Bellman-Ford algorithm",
+                "DFS traversal"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) A minimum spanning tree\n\n**Rationale:** A Minimum Spanning Tree (MST) is a foundational building block for TSP approximation algorithms (such as the 2-approximation metric TSP algorithm and Christofides algorithm).",
+            "answer": "A Minimum Spanning Tree (MST) is a foundational building block for TSP approximation algorithms (such as the 2-approximation metric TSP algorithm and Christofides algorithm).",
             "answer_source": "generated",
             "chapter": "Unit 5 - Graph"
         },
         {
             "question_number": "20",
-            "question_text": "DIJKSTRA'S algorithm is used to solve ________ problem\n(A) All pair shortest path\n(B) Single source shortest path\n(C) Network flow\n(D) Sorting",
+            "question_text": "DIJKSTRA'S algorithm is used to solve ________ problem",
+            "options": [
+                "All pair shortest path",
+                "Single source shortest path",
+                "Network flow",
+                "Sorting"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Single source shortest path\n\n**Rationale:** Dijkstra's algorithm determines the shortest paths from a single source node to all other nodes in a weighted graph with non-negative edge weights.",
+            "answer": "Dijkstra's algorithm determines the shortest paths from a single source node to all other nodes in a weighted graph with non-negative edge weights.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Graph"
         },

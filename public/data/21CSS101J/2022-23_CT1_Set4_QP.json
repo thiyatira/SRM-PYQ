@@ -4,7 +4,14 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Which of the following is not a valid C variable name?\na) int age;\nb) float salary;\nc) char ch;\nd) int $main;",
+            "question_text": "Which of the following is not a valid C variable name?",
+            "options": [
+                "int age;",
+                "float salary;",
+                "char ch;",
+                "int $main;"
+            ],
+            "correct_option": "D",
             "marks": 1,
             "answer": "A C variable name must start with an alphabet (A-Z, a-z) or an underscore (_), followed by zero or more alphabets, digits (0-9), or underscores. Special characters like '$' are not allowed in standard C variable names. Therefore, `int $main;` is not a valid C variable name because it contains the '$' character.",
             "answer_source": "generated",
@@ -12,7 +19,14 @@
         },
         {
             "question_number": "2",
-            "question_text": "What is the output of the following code snippet?\n\n```c\n#include <stdio.h>\nint main()\n{\n    float s, double a; char b;\n    printf(\"%d\", sizeof(s)+sizeof(a)*sizeof(b));\n    return 0;\n}\n```\n\na) 14\nb) 13\nc) 12\nd) Compilation Error",
+            "question_text": "What is the output of the following code snippet?\n\n```c\n#include <stdio.h>\nint main()\n{\n    float s; double a; char b;\n    printf(\"%d\", sizeof(s)+sizeof(a)*sizeof(b));\n    return 0;\n}\n```",
+            "options": [
+                "14",
+                "13",
+                "12",
+                "Compilation Error"
+            ],
+            "correct_option": "C",
             "marks": 1,
             "answer": "Let's determine the typical size (in bytes) of each data type and then evaluate the expression:\n-   `float s`: Typically 4 bytes.\n-   `double a`: Typically 8 bytes.\n-   `char b`: Typically 1 byte.\n\nThe expression is `sizeof(s) + sizeof(a) * sizeof(b)`. According to operator precedence, multiplication (`*`) is performed before addition (`+`).\nSo, the expression evaluates as:\n`4 + 8 * 1`\n`4 + 8`\n`12`\n\nThe `printf(\"%d\", ...)` statement will correctly print the integer result of 12.",
             "answer_source": "generated",
@@ -20,7 +34,14 @@
         },
         {
             "question_number": "3",
-            "question_text": "Choose the correct answer.\n\n```c\n#include <stdio.h>\nint main()\n{\n    int value = 350;\n    int value = 892;\n    printf(\"SRMIST!%d\",value);\n    return 0;\n}\n```\n\na) SRMIST!350\nb) Redefinition of value\nc) SRMIST!892\nd) SRMIST! Followed by a junk value.",
+            "question_text": "Choose the correct answer.\n\n```c\n#include <stdio.h>\nint main()\n{\n    int value = 350;\n    int value = 892;\n    printf(\"SRMIST!%d\",value);\n    return 0;\n}\n```",
+            "options": [
+                "SRMIST!350",
+                "Redefinition of value",
+                "SRMIST!892",
+                "SRMIST! Followed by a junk value."
+            ],
+            "correct_option": "B",
             "marks": 1,
             "answer": "In C, a variable cannot be declared more than once within the same scope. The code attempts to declare `int value` twice in the `main` function:\n1.  `int value = 350;`\n2.  `int value = 892;`\nThis constitutes a redefinition of the variable `value`, which will lead to a compilation error. The compiler will report an error like \"redefinition of 'value'\".",
             "answer_source": "generated",
@@ -28,7 +49,14 @@
         },
         {
             "question_number": "4",
-            "question_text": "```c\n#include <stdio.h>\nint main()\n{\n    int x, y = 5, z = 5;\n    x = y == z;\n    printf(\"%d\", x);\n    getchar();\n    return 0;\n}\n```\n\na) 0\nb) 1\nc) 5\nd) Compile error",
+            "question_text": "```c\n#include <stdio.h>\nint main()\n{\n    int x, y = 5, z = 5;\n    x = y == z;\n    printf(\"%d\", x);\n    getchar();\n    return 0;\n}\n```",
+            "options": [
+                "0",
+                "1",
+                "5",
+                "Compile error"
+            ],
+            "correct_option": "B",
             "marks": 1,
             "answer": "The expression `y == z` is a relational expression. It checks if the value of `y` is equal to the value of `z`. Since `y` is 5 and `z` is 5, the condition `y == z` is true.\nIn C, a true relational expression evaluates to the integer value 1, and a false expression evaluates to 0. Therefore, `y == z` results in 1, which is then assigned to the integer variable `x`. The `printf(\"%d\", x);` statement will print the value of `x`, which is 1.",
             "answer_source": "generated",
@@ -36,7 +64,14 @@
         },
         {
             "question_number": "5",
-            "question_text": "After working of the prefix and postfix operators, select\nall the correct statements for the code given below:\n\n```c\nVoid main() {\n    int x, y, z, k;\n    x = 10; y = -x; z= x++; k = ++x;\n}\n```\n\na) Value of y will be -10 and k will be 12.\nb) Value of z will be 11\nc) Value of k will be 10 and k will be 11\nd) Value of k will be 11",
+            "question_text": "After working of the prefix and postfix operators, select\nall the correct statements for the code given below:\n\n```c\nVoid main() {\n    int x, y, z, k;\n    x = 10; y = -x; z= x++; k = ++x;\n}\n```",
+            "options": [
+                "Value of y will be -10 and k will be 12.",
+                "Value of z will be 11",
+                "Value of k will be 10 and k will be 11",
+                "Value of k will be 11"
+            ],
+            "correct_option": "A",
             "marks": 1,
             "answer": "Let's trace the execution of the code line by line:\n1.  `x = 10;`\n    *   `x` is 10.\n2.  `y = -x;`\n    *   `y` becomes -10. `x` remains 10.\n3.  `z = x++;`\n    *   This is a postfix increment. The current value of `x` (10) is assigned to `z`, and *then* `x` is incremented.\n    *   `z` becomes 10.\n    *   `x` becomes 11.\n4.  `k = ++x;`\n    *   This is a prefix increment. `x` is incremented *first*, and *then* its new value is assigned to `k`.\n    *   `x` (which was 11) becomes 12.\n    *   `k` becomes 12.\n\nAt the end of the `main` function, the values are: `x = 12`, `y = -10`, `z = 10`, `k = 12`.\n\nNow, let's evaluate the given options:\na) Value of y will be -10 and k will be 12. (Correct, as `y` is -10 and `k` is 12)\nb) Value of z will be 11 (Incorrect, `z` is 10)\nc) Value of k will be 10 and k will be 11 (Incorrect, `k` is 12)\nd) Value of k will be 11 (Incorrect, `k` is 12)\n\nTherefore, option 'a' is the correct statement.",
             "answer_source": "generated",
@@ -44,7 +79,14 @@
         },
         {
             "question_number": "6",
-            "question_text": "```c\n#include <stdio.h>\n// Assume base address of \"GeeksQuiz\" to be 2000\nint main()\n{\n    printf(5 + \"GeeksQuiz\");\n    return 0;\n}\n```\n\na) GeeksQuiz\nb) Quiz\nc) 2005\nd) Compile time error",
+            "question_text": "```c\n#include <stdio.h>\n// Assume base address of \"GeeksQuiz\" to be 2000\nint main()\n{\n    printf(5 + \"GeeksQuiz\");\n    return 0;\n}\n```",
+            "options": [
+                "GeeksQuiz",
+                "Quiz",
+                "2005",
+                "Compile time error"
+            ],
+            "correct_option": "B",
             "marks": 1,
             "answer": "In C, a string literal like `\"GeeksQuiz\"` is stored in memory, and its name (e.g., `\"GeeksQuiz\"`) acts as a pointer to its first character. When an integer is added to a character pointer (pointer arithmetic), the pointer is advanced by that many character positions.\n\nThe string \"GeeksQuiz\" consists of the characters: 'G', 'e', 'e', 'k', 's', 'Q', 'u', 'i', 'z', '\\0'.\nIf `\"GeeksQuiz\"` points to 'G' (at index 0), then `5 + \"GeeksQuiz\"` will point to the character at index 5. Counting from 0:\n-   G (index 0)\n-   e (index 1)\n-   e (index 2)\n-   k (index 3)\n-   s (index 4)\n-   Q (index 5)\n\nSo, `5 + \"GeeksQuiz\"` points to the character 'Q'. The `printf()` function, when used with a string format specifier (which is implicit here as it's passed a `char*`), will print the string starting from the memory location pointed to until it encounters a null terminator (`\\0`). Thus, it will print \"Quiz\".",
             "answer_source": "generated",
@@ -52,7 +94,14 @@
         },
         {
             "question_number": "7.",
-            "question_text": "C is a _____ language\na) High Level\nb) Low Level\nc) Middle Level\nd) Machine Level",
+            "question_text": "C is a _____ language",
+            "options": [
+                "High Level",
+                "Low Level",
+                "Middle Level",
+                "Machine Level"
+            ],
+            "correct_option": "C",
             "marks": 1,
             "answer": "C is widely recognized as a **Middle-Level Language**. It possesses characteristics of both high-level languages (like structured programming features, portability across different hardware platforms, and abstraction from machine details) and low-level languages (such as direct memory manipulation using pointers, bitwise operations, and close interaction with hardware). This versatility makes C suitable for a wide range of applications, from operating systems to embedded systems and general-purpose software.",
             "answer_source": "generated",
@@ -60,7 +109,14 @@
         },
         {
             "question_number": "8.",
-            "question_text": "The equality operator is represented by\na) :=\nb) .EQ.\nc) =\nd) ==",
+            "question_text": "The equality operator is represented by",
+            "options": [
+                ":=",
+                ".EQ.",
+                "=",
+                "=="
+            ],
+            "correct_option": "D",
             "marks": 1,
             "answer": "In the C programming language, the operator used to test if two values are equal is `==` (double equals sign). The single equals sign (`=`) is the assignment operator, used to assign a value to a variable.",
             "answer_source": "generated",
@@ -68,15 +124,29 @@
         },
         {
             "question_number": "9.",
-            "question_text": "What will be the output of the expression 11 ^ 5?\na) 5\nb) 6\nc) 11\nd) 13",
+            "question_text": "What will be the output of the expression 11 ^ 5?",
+            "options": [
+                "5",
+                "6",
+                "11",
+                "13"
+            ],
+            "correct_option": null,
             "marks": 1,
-            "answer": "The `^` operator in C performs a bitwise XOR (Exclusive OR) operation. To calculate `11 ^ 5`, we first convert both numbers to their binary representations (assuming a standard integer size for demonstration, but the pattern holds):\n\n11 in decimal is `1011` in binary.\n5 in decimal is `0101` in binary.\n\nNow, perform the bitwise XOR operation. The result bit is 1 if the corresponding bits are different, and 0 if they are the same:\n\n```text\n1011 (Decimal 11)\nXOR 0101 (Decimal 5)\n-----\n  1110 (Result in binary)\n```\n\nConverting `1110` from binary back to decimal:\n`(1 * 2^3) + (1 * 2^2) + (1 * 2^1) + (0 * 2^0)`\n`= (1 * 8) + (1 * 4) + (1 * 2) + (0 * 1)`\n`= 8 + 4 + 2 + 0`\n`= 14`\n\nTherefore, the output of the expression `11 ^ 5` is 14.\n\n**(Note: If option 'd) 13' was considered correct in the original context, it might indicate an error in the question or the provided answer key, as per standard C bitwise operations, the result is 14.)**",
+            "answer": "`11 ^ 5` is a bitwise XOR: 1011 XOR 0101 = 1110, which is 14. The printed options (5, 6, 11, 13) do not include 14, so none of them is correct.",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages - Bitwise and Size-of operator"
         },
         {
             "question_number": "10.",
-            "question_text": "The operator + in a+=4 means\na) a=a+4\nb) a+4=a\nc) a=4\nd) a=4+4",
+            "question_text": "The operator + in a+=4 means",
+            "options": [
+                "a=a+4",
+                "a+4=a",
+                "a=4",
+                "a=4+4"
+            ],
+            "correct_option": "A",
             "marks": 1,
             "answer": "The `+=` operator in C is a compound assignment operator. It is a shorthand for expressing an operation where the result of an arithmetic operation is assigned back to the same variable. Specifically, `a += 4` is equivalent to `a = a + 4`. This means the current value of `a` is incremented by 4, and the new value is stored back into `a`.",
             "answer_source": "generated",
@@ -100,7 +170,14 @@
         },
         {
             "question_number": "13",
-            "question_text": "Pick the correct one from the following declaration is not\nsupported by C language?\na) String str;\nb) char *str;\nc) float str = 3e2;\nd) Both String str; & float str = 3e2;",
+            "question_text": "Pick the correct one from the following declaration is not\nsupported by C language?",
+            "options": [
+                "String str;",
+                "char *str;",
+                "float str = 3e2;",
+                "Both String str; & float str = 3e2;"
+            ],
+            "correct_option": "A",
             "marks": 2,
             "answer": "In standard C, there is no built-in `String` data type as a primitive type. Strings are typically represented as arrays of characters (e.g., `char greeting[] = \"Hello\";`) or as pointers to characters (e.g., `char *name = \"Alice\";`).\n\nLet's analyze the given options:\na) `String str;`: This declaration uses `String` as a data type. Since `String` is not a fundamental or standard library type in C (like `int`, `float`, `char`, or a custom `typedef`), this declaration is not supported by the C language.\nb) `char *str;`: This is a valid declaration for a pointer to a character, which is commonly used to handle strings in C.\nc) `float str = 3e2;`: This is a valid declaration. `3e2` is a floating-point literal in scientific notation, meaning `3 * 10^2 = 300.0`. This is correctly assigned to a `float` variable.\n\nTherefore, `a) String str;` is the declaration not supported by the C language.",
             "answer_source": "generated",
@@ -108,7 +185,14 @@
         },
         {
             "question_number": "14",
-            "question_text": "Conclude the output of the following c program?\n\n```c\n#include <stdio.h>\nint main()\n{\n    int a=5;\n    int b=10;\n    int c;\n    c=a+b;\n    printf(\"%i\", c);\n    return 0;\n}\n```\n\n(A) 5\n(B) 10\n(C) 15\n(D) Compilation error",
+            "question_text": "Conclude the output of the following c program?\n\n```c\n#include <stdio.h>\nint main()\n{\n    int a=5;\n    int b=10;\n    int c;\n    c=a+b;\n    printf(\"%i\", c);\n    return 0;\n}\n```",
+            "options": [
+                "5",
+                "10",
+                "15",
+                "Compilation error"
+            ],
+            "correct_option": "C",
             "marks": 2,
             "answer": "Let's trace the execution of the C program:\n1.  `int a = 5;` initializes integer `a` with the value 5.\n2.  `int b = 10;` initializes integer `b` with the value 10.\n3.  `int c;` declares an integer variable `c`.\n4.  `c = a + b;` calculates the sum of `a` and `b` (`5 + 10 = 15`) and assigns this result to `c`. So, `c` now holds 15.\n5.  `printf(\"%i\", c);` prints the integer value of `c` to the console. The `%i` format specifier is a valid way to print an integer (it's equivalent to `%d`).\n\nThus, the program will print `15` to the console.",
             "answer_source": "generated",

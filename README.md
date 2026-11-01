@@ -13,6 +13,7 @@ A modern, fast, and comprehensive web application designed for SRM Institute of 
 - **Rich LaTeX Math & Formula Rendering**: Formulas, matrices, and expressions rendered cleanly via **KaTeX**.
 - **Code Syntax Highlighting**: Multi-language code snippets with **PrismJS**.
 - **Instant Search & Filter**: Search questions by keyword, topic, unit, semester, or course code.
+- **Interactive MCQs**: Multiple-choice questions show lettered options you can tap; the right answer turns green (and a wrong pick red) with the explanation. Filter by **All / MCQ / Written**.
 - **Curated Subjects**:
   - `21CSS101J` — Programming for Problem Solving (PPS)
   - `21CSS201T` — Computer Organization & Architecture (COA)
@@ -57,14 +58,15 @@ SRM-PYQ/
 │   ├── package.json
 │   └── tsconfig.json
 ├── public/
-│   ├── data/                 # JSON question banks organized by course code
+│   ├── data/                 # JSON question banks, one folder per course code (papers are discovered automatically)
 │   │   ├── 21CSC101T/
 │   │   ├── 21CSC201J/
 │   │   ├── 21CSS201T/
 │   │   └── ...
 │   └── scripts/              # Data extraction & scraper scripts
 ├── scripts/
-│   └── validate-data.mjs     # Validates the JSON question banks (npm run validate:data)
+│   ├── validate-data.mjs     # Validates the JSON question banks (npm run validate:data)
+│   └── mcqify.mjs            # Converts old-style MCQs (options typed in the question) to options/correct_option
 ├── src/
 │   ├── app/
 │   │   ├── layout.tsx        # Root layout: fonts, metadata, theme init script, optional GA

@@ -4,161 +4,301 @@
     "questions": [
         {
             "question_number": "Q1",
-            "question_text": "According to sommerfeld, the free electrons move with __________ potential.\n(A) Zero\n(B) Constant\n(C) Infinite\n(D) Different",
+            "question_text": "According to sommerfeld, the free electrons move with __________ potential.",
+            "options": [
+                "Zero",
+                "Constant",
+                "Infinite",
+                "Different"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: The Sommerfeld model assumes electrons move in a constant potential within the metal bulk.",
+            "answer": "The Sommerfeld model assumes electrons move in a constant potential within the metal bulk.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
         {
             "question_number": "Q2",
-            "question_text": "The __________ is a geometrical construction to the Wigner-Seitz primitive cell in the K-space\n(A) Direct Lattice\n(B) Brillouin Zone\n(C) Real lattice\n(D) Phonon zone",
+            "question_text": "The __________ is a geometrical construction to the Wigner-Seitz primitive cell in the K-space",
+            "options": [
+                "Direct Lattice",
+                "Brillouin Zone",
+                "Real lattice",
+                "Phonon zone"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: The first Brillouin zone is the Wigner-Seitz primitive cell of the reciprocal (k-space) lattice.",
+            "answer": "The first Brillouin zone is the Wigner-Seitz primitive cell of the reciprocal (k-space) lattice.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
         {
             "question_number": "Q3",
-            "question_text": "At zero Kelvin, F(E) takes the value __________ for any energy level above Fermi level\n(A) 1\n(B) 0\n(C) 0.5\n(D) 0.25",
+            "question_text": "At zero Kelvin, F(E) takes the value __________ for any energy level above Fermi level",
+            "options": [
+                "1",
+                "0",
+                "0.5",
+                "0.25"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: At T = 0K, the Fermi distribution is a step function; all states above Ef are empty (probability = 0).",
+            "answer": "At T = 0K, the Fermi distribution is a step function; all states above Ef are empty (probability = 0).",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
         {
             "question_number": "Q4",
-            "question_text": "Identify the shape of the first Brillouin zone in Z-Dimensional lattice\n(A) Square\n(B) Triangle\n(C) Circle\n(D) Hexagonal",
+            "question_text": "Identify the shape of the first Brillouin zone in Z-Dimensional lattice",
+            "options": [
+                "Square",
+                "Triangle",
+                "Circle",
+                "Hexagonal"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: For common 2D lattices (like the hexagonal/honeycomb lattice of graphene), the first Brillouin zone is hexagonal.",
+            "answer": "For common 2D lattices (like the hexagonal/honeycomb lattice of graphene), the first Brillouin zone is hexagonal.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
         {
             "question_number": "Q5",
-            "question_text": "In intrinsic semiconductor, the number of electrons equal to __________.\n(A) number of protons\n(B) number of holes\n(C) number of neutrons\n(D) number of photons",
+            "question_text": "In intrinsic semiconductor, the number of electrons equal to __________.",
+            "options": [
+                "number of protons",
+                "number of holes",
+                "number of neutrons",
+                "number of photons"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: In an undoped semiconductor, electron-hole pairs are created thermally, ensuring n = p.",
+            "answer": "In an undoped semiconductor, electron-hole pairs are created thermally, ensuring n = p.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
         {
             "question_number": "Q6",
-            "question_text": "When T = 0k, the Fermi energy (Ef) of n-type semiconductor is equal to\n(A) Ec/2\n(B) (Ec + Ed)/2\n(C) Ed/2\n(D) Ev/2",
+            "question_text": "When T = 0k, the Fermi energy (Ef) of n-type semiconductor is equal to",
+            "options": [
+                "Ec/2",
+                "(Ec + Ed)/2",
+                "Ed/2",
+                "Ev/2"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: At 0K, the Fermi level in an n-type semiconductor lies exactly halfway between the donor level (Ed) and the bottom of the conduction band (Ec).",
+            "answer": "At 0K, the Fermi level in an n-type semiconductor lies exactly halfway between the donor level (Ed) and the bottom of the conduction band (Ec).",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
         {
             "question_number": "Q7",
-            "question_text": "For a PN junction diode, the current in reverse bias may be __________.\n(A) Few milliamperes\n(B) Several amperes\n(C) Few micro amperes to nanoamperes\n(D) Few milliamperes to several amperes",
+            "question_text": "For a PN junction diode, the current in reverse bias may be __________.",
+            "options": [
+                "Few milliamperes",
+                "Several amperes",
+                "Few micro amperes to nanoamperes",
+                "Few milliamperes to several amperes"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: In reverse bias, only the saturation current due to minority carriers flows, which is typically in the micro-to-nano ampere range.",
+            "answer": "In reverse bias, only the saturation current due to minority carriers flows, which is typically in the micro-to-nano ampere range.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
         {
             "question_number": "Q8",
-            "question_text": "The expression for drift current density due to electrons is given by\n(A) J = pμeE\n(B) J = PμeV\n(C) J = nμeE\n(D) J = nμeV",
+            "question_text": "The expression for drift current density due to electrons is given by",
+            "options": [
+                "J = pμeE",
+                "J = PμeV",
+                "J = nμeE",
+                "J = nμeV"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: Drift current density is J = nqeμeE (where qe is elementary charge).",
+            "answer": "Drift current density is J = nqeμeE (where qe is elementary charge).",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
         {
             "question_number": "Q9",
-            "question_text": "Which process of the Electron hole pair is responsible for emitting of light?\n(A) Generation\n(B) Ionisation\n(C) Recombination\n(D) Diffusion",
+            "question_text": "Which process of the Electron hole pair is responsible for emitting of light?",
+            "options": [
+                "Generation",
+                "Ionisation",
+                "Recombination",
+                "Diffusion"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: Radiative recombination of an electron and a hole results in the emission of a photon.",
+            "answer": "Radiative recombination of an electron and a hole results in the emission of a photon.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
         {
             "question_number": "Q10",
-            "question_text": "Photon flow per unit area per second __________\n(A) Electron density\n(B) Energy density\n(C) Photon flux\n(D) Photons density",
+            "question_text": "Photon flow per unit area per second __________",
+            "options": [
+                "Electron density",
+                "Energy density",
+                "Photon flux",
+                "Photons density"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: Photon flux is defined as the number of photons passing through a unit area per unit time.",
+            "answer": "Photon flux is defined as the number of photons passing through a unit area per unit time.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
         {
             "question_number": "Q11",
-            "question_text": "__________ is the process where electron hole pairs created and recombined radiatively.\n(A) Photoluminescence\n(B) Cathodoluminescence\n(C) Bioluminescence\n(D) Electroluminescence",
+            "question_text": "__________ is the process where electron hole pairs created and recombined radiatively.",
+            "options": [
+                "Photoluminescence",
+                "Cathodoluminescence",
+                "Bioluminescence",
+                "Electroluminescence"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: Photoluminescence involves photon absorption (creating EHP) followed by photon emission (radiative recombination).",
+            "answer": "Photoluminescence involves photon absorption (creating EHP) followed by photon emission (radiative recombination).",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
         {
             "question_number": "Q12",
-            "question_text": "The Fermi's golden rule helps to identify the __________.\n(A) Velocity of light\n(B) Momentum of electrons\n(C) Absorption energy of electrons\n(D) Transition rate per unit volume",
+            "question_text": "The Fermi's golden rule helps to identify the __________.",
+            "options": [
+                "Velocity of light",
+                "Momentum of electrons",
+                "Absorption energy of electrons",
+                "Transition rate per unit volume"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: It is the fundamental equation for calculating transition probabilities per unit time.",
+            "answer": "It is the fundamental equation for calculating transition probabilities per unit time.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
         {
             "question_number": "Q13",
-            "question_text": "Two probe technique is suitable for measuring electrical resistivity of __________ samples.\n(A) Low resistivity\n(B) High resistivity\n(C) Magnetic\n(D) Biological",
+            "question_text": "Two probe technique is suitable for measuring electrical resistivity of __________ samples.",
+            "options": [
+                "Low resistivity",
+                "High resistivity",
+                "Magnetic",
+                "Biological"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: Two-probe is used for high resistance samples where contact resistance is negligible compared to the sample resistance.",
+            "answer": "Two-probe is used for high resistance samples where contact resistance is negligible compared to the sample resistance.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
         {
             "question_number": "Q14",
-            "question_text": "__________ method used to measure the potential barrier of a P-N junction diode.\n(A) Capacitance – Voltage\n(B) Four point probe\n(C) Two point probe\n(D) Hot point probe",
+            "question_text": "__________ method used to measure the potential barrier of a P-N junction diode.",
+            "options": [
+                "Capacitance – Voltage",
+                "Four point probe",
+                "Two point probe",
+                "Hot point probe"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: C-V measurements allow for the extraction of the built-in potential and doping profile.",
+            "answer": "C-V measurements allow for the extraction of the built-in potential and doping profile.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
         {
             "question_number": "Q15",
-            "question_text": "__________ is a method of determining quickly whether a semiconductor sample is n type (or) p type.\n(A) Two point probe\n(B) Four point probe\n(C) Hot point probe\n(D) Capacitance - voltage",
+            "question_text": "__________ is a method of determining quickly whether a semiconductor sample is n type (or) p type.",
+            "options": [
+                "Two point probe",
+                "Four point probe",
+                "Hot point probe",
+                "Capacitance - voltage"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: The Hot Probe method is a qualitative, quick check for carrier type.",
+            "answer": "The Hot Probe method is a qualitative, quick check for carrier type.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
         {
             "question_number": "Q16",
-            "question_text": "TCAD is a computer simulation technique that is widely used in the semiconductor industry. TCAD is an acronym for\n(A) Technology Computer Aided Design\n(B) Technology Computer Aided Development\n(C) Technology Computer Advances Design\n(D) Technology Computer Applications Design",
+            "question_text": "TCAD is a computer simulation technique that is widely used in the semiconductor industry. TCAD is an acronym for",
+            "options": [
+                "Technology Computer Aided Design",
+                "Technology Computer Aided Development",
+                "Technology Computer Advances Design",
+                "Technology Computer Applications Design"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: TCAD stands for Technology Computer-Aided Design.",
+            "answer": "TCAD stands for Technology Computer-Aided Design.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
         {
             "question_number": "Q17",
-            "question_text": "The __________ density of states does not depend on energy.\n(A) One – dimensional\n(B) Two – dimensional\n(C) Three – dimensional\n(D) Zero – dimensional",
+            "question_text": "The __________ density of states does not depend on energy.",
+            "options": [
+                "One – dimensional",
+                "Two – dimensional",
+                "Three – dimensional",
+                "Zero – dimensional"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: In a 2D system (quantum well), the density of states is constant and independent of energy.",
+            "answer": "In a 2D system (quantum well), the density of states is constant and independent of energy.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
         {
             "question_number": "Q18",
-            "question_text": "An example for One – dimensional material is __________\n(A) Nanoparticle\n(B) Quantum dot\n(C) Nanowire\n(D) Nanosheet",
+            "question_text": "An example for One – dimensional material is __________",
+            "options": [
+                "Nanoparticle",
+                "Quantum dot",
+                "Nanowire",
+                "Nanosheet"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: Nanowires are 1D materials (confinement in two dimensions).",
+            "answer": "Nanowires are 1D materials (confinement in two dimensions).",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
         {
             "question_number": "Q19",
-            "question_text": "In chemical vapour deposition, the precursors are introduced to the reaction chamber in the __________ state.\n(A) Liquid\n(B) Solid\n(C) Gaseous\n(D) Semisolid",
+            "question_text": "In chemical vapour deposition, the precursors are introduced to the reaction chamber in the __________ state.",
+            "options": [
+                "Liquid",
+                "Solid",
+                "Gaseous",
+                "Semisolid"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: CVD precursors are always in a gaseous phase to undergo surface reactions.",
+            "answer": "CVD precursors are always in a gaseous phase to undergo surface reactions.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
         {
             "question_number": "Q20",
-            "question_text": "Transmission electron microscope (TEM) provides a __________ dimensional picture.\n(A) Zero\n(B) One\n(C) Two\n(D) Three",
+            "question_text": "Transmission electron microscope (TEM) provides a __________ dimensional picture.",
+            "options": [
+                "Zero",
+                "One",
+                "Two",
+                "Three"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: Standard TEM produces a two-dimensional projection of a three-dimensional specimen.",
+            "answer": "Standard TEM produces a two-dimensional projection of a three-dimensional specimen.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         }

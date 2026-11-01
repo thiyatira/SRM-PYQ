@@ -4,49 +4,84 @@
     "questions": [
         {
             "question_number": "1.A",
-            "question_text": "L'hymne national de la France est\n(a) La Marseillaise\n(b) Euro\n(c) La tour Eiffel\n(d) Marseille",
+            "question_text": "L'hymne national de la France est",
+            "options": [
+                "La Marseillaise",
+                "Euro",
+                "La tour Eiffel",
+                "Marseille"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "The national anthem of France is (a) La Marseillaise.",
+            "answer": "La Marseillaise is the national anthem of France.",
             "answer_source": "generated",
             "chapter": "Unit 1:"
         },
         {
             "question_number": "1.B",
-            "question_text": "Le drapeau de la France est\n(a) Bleu, Blanc, Rouge\n(c) Rouge, Bleu, Blanc\n(b) Blanc Rouge, Bleu\n(d) Bleu, Rouge Blanc",
+            "question_text": "Le drapeau de la France est",
+            "options": [
+                "Bleu, Blanc, Rouge",
+                "Blanc Rouge, Bleu",
+                "Rouge, Bleu, Blanc",
+                "Bleu, Rouge Blanc"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "The flag of France is (a) Bleu, Blanc, Rouge.",
+            "answer": "The French flag is the tricolour: bleu, blanc, rouge (blue, white, red).",
             "answer_source": "generated",
             "chapter": "Unit 1:"
         },
         {
             "question_number": "1.C",
-            "question_text": "La capitale de la France est\n(a) Lyon\n(c) La tour Eiffel\n(b) Euro\n(d) Marseille",
+            "question_text": "La capitale de la France est",
+            "options": [
+                "Lyon",
+                "Euro",
+                "La tour Eiffel",
+                "Marseille"
+            ],
+            "correct_option": null,
             "marks": 1,
-            "answer": "The capital of France is Paris. None of the provided options are correct.",
+            "answer": "The capital of France is Paris, which is not among the options, so none of the options is correct.",
             "answer_source": "generated",
             "chapter": "Unit 1:"
         },
         {
             "question_number": "1.D",
-            "question_text": "La tour Eiffel est un\n(a) fleuve\n(b) fromage\n(c) montagne\n(d) monument",
+            "question_text": "La tour Eiffel est un",
+            "options": [
+                "fleuve",
+                "fromage",
+                "montagne",
+                "monument"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "The Eiffel Tower is a (d) monument.",
+            "answer": "La tour Eiffel is a monument (un monument).",
             "answer_source": "generated",
             "chapter": "Unit 2:"
         },
         {
             "question_number": "1.E",
-            "question_text": "Qu'est ce que \u00e7a va dire<< Wednesday>> en fran\u00e7ais.\n(a) mardi\n(c) mercredi\n(b) vendredi\n(d) jeudi",
+            "question_text": "Qu'est ce que ça va dire<< Wednesday>> en français.",
+            "options": [
+                "mardi",
+                "vendredi",
+                "mercredi",
+                "jeudi"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "Wednesday in French is (c) mercredi.",
+            "answer": "Wednesday is mercredi in French.",
             "answer_source": "generated",
             "chapter": "Unit 1:"
         },
         {
             "question_number": "2.A",
-            "question_text": "\u00c9crivez les nombres de 0 \u00e0 69.",
+            "question_text": "Écrivez les nombres de 0 à 69.",
             "marks": 5,
-            "answer": "The numbers from 0 to 69 in French are: z\u00e9ro, un, deux, trois, quatre, cinq, six, sept, huit, neuf, dix, onze, douze, treize, quatorze, quinze, seize, dix-sept, dix-huit, dix-neuf, vingt, vingt et un, vingt-deux, vingt-trois, vingt-quatre, vingt-cinq, vingt-six, vingt-sept, vingt-huit, vingt-neuf, trente, trente et un, ..., quarante, quarante et un, ..., cinquante, cinquante et un, ..., soixante, soixante et un, ..., soixante-neuf.",
+            "answer": "The numbers from 0 to 69 in French are: zéro, un, deux, trois, quatre, cinq, six, sept, huit, neuf, dix, onze, douze, treize, quatorze, quinze, seize, dix-sept, dix-huit, dix-neuf, vingt, vingt et un, vingt-deux, vingt-trois, vingt-quatre, vingt-cinq, vingt-six, vingt-sept, vingt-huit, vingt-neuf, trente, trente et un, ..., quarante, quarante et un, ..., cinquante, cinquante et un, ..., soixante, soixante et un, ..., soixante-neuf.",
             "answer_source": "generated",
             "chapter": "Unit 1:"
         },
@@ -60,9 +95,9 @@
         },
         {
             "question_number": "2.B.ii",
-            "question_text": "Julien habite \u00e0 Delhi, Elle est _____",
+            "question_text": "Julien habite à Delhi, Elle est _____",
             "marks": 1,
-            "answer": "Julien habite \u00e0 Delhi, Elle est **indienne**. (Julien lives in Delhi, She is Indian.)",
+            "answer": "Julien habite à Delhi, Elle est **indienne**. (Julien lives in Delhi, She is Indian.)",
             "answer_source": "generated",
             "chapter": "Unit 2:"
         },
@@ -70,7 +105,7 @@
             "question_number": "2.B.iii",
             "question_text": "Nicolas habite en France, Il est _____",
             "marks": 1,
-            "answer": "Nicolas habite en France, Il est **fran\u00e7ais**. (Nicolas lives in France, He is French.)",
+            "answer": "Nicolas habite en France, Il est **français**. (Nicolas lives in France, He is French.)",
             "answer_source": "generated",
             "chapter": "Unit 2:"
         },
@@ -92,9 +127,9 @@
         },
         {
             "question_number": "2.C.i",
-            "question_text": "Quelle est votre nationalit\u00e9?",
+            "question_text": "Quelle est votre nationalité?",
             "marks": 1,
-            "answer": "Ma nationalit\u00e9 est **indienne**. (My nationality is Indian.)",
+            "answer": "Ma nationalité est **indienne**. (My nationality is Indian.)",
             "answer_source": "generated",
             "chapter": "Unit 2:"
         },
@@ -108,15 +143,15 @@
         },
         {
             "question_number": "2.C.iii",
-            "question_text": "Combien de voyelles en fran\u00e7ais?",
+            "question_text": "Combien de voyelles en français?",
             "marks": 1,
-            "answer": "Il y a **six** voyelles en fran\u00e7ais : a, e, i, o, u, y. (There are six vowels in French: a, e, i, o, u, y.)",
+            "answer": "Il y a **six** voyelles en français : a, e, i, o, u, y. (There are six vowels in French: a, e, i, o, u, y.)",
             "answer_source": "generated",
             "chapter": "Unit 1:"
         },
         {
             "question_number": "2.C.iv",
-            "question_text": "Quel \u00e2ge avez-vous?",
+            "question_text": "Quel âge avez-vous?",
             "marks": 1,
             "answer": "J'ai **[age]** ans. (I am [age] years old.)",
             "answer_source": "generated",
@@ -124,9 +159,9 @@
         },
         {
             "question_number": "2.C.v",
-            "question_text": "Comment \u00e7a va?",
+            "question_text": "Comment ça va?",
             "marks": 1,
-            "answer": "\u00c7a va **bien**, merci. Et vous? (I'm doing well, thank you. And you?)",
+            "answer": "Ça va **bien**, merci. Et vous? (I'm doing well, thank you. And you?)",
             "answer_source": "generated",
             "chapter": "Unit 1:"
         },
@@ -150,7 +185,7 @@
             "question_number": "3.A.iii",
             "question_text": "See you tomorrow",
             "marks": 1,
-            "answer": "**\u00c0 demain.**",
+            "answer": "**À demain.**",
             "answer_source": "generated",
             "chapter": "Unit 1:"
         },
@@ -158,7 +193,7 @@
             "question_number": "3.A.iv",
             "question_text": "Nice to meet you.",
             "marks": 1,
-            "answer": "**Enchant\u00e9(e).**",
+            "answer": "**Enchanté(e).**",
             "answer_source": "generated",
             "chapter": "Unit 1:"
         },
@@ -172,9 +207,9 @@
         },
         {
             "question_number": "3.B.i",
-            "question_text": "Elle _____ fran\u00e7aise. (\u00catre)",
+            "question_text": "Elle _____ française. (Être)",
             "marks": 1,
-            "answer": "Elle **est** fran\u00e7aise. (She is French.)",
+            "answer": "Elle **est** française. (She is French.)",
             "answer_source": "generated",
             "chapter": "Unit 1:"
         },
@@ -196,17 +231,17 @@
         },
         {
             "question_number": "3.B.iv",
-            "question_text": "Mon p\u00e8re _____ la pizza (Aimer)",
+            "question_text": "Mon père _____ la pizza (Aimer)",
             "marks": 1,
-            "answer": "Mon p\u00e8re **aime** la pizza. (My father likes pizza.)",
+            "answer": "Mon père **aime** la pizza. (My father likes pizza.)",
             "answer_source": "generated",
             "chapter": "Unit 3:"
         },
         {
             "question_number": "3.B.v",
-            "question_text": "Mes s\u0153urs _____ le mus\u00e9e. (Visiter)",
+            "question_text": "Mes sœurs _____ le musée. (Visiter)",
             "marks": 1,
-            "answer": "Mes s\u0153urs **visitent** le mus\u00e9e. (My sisters visit the museum.)",
+            "answer": "Mes sœurs **visitent** le musée. (My sisters visit the museum.)",
             "answer_source": "generated",
             "chapter": "Unit 2:"
         },
@@ -222,7 +257,7 @@
             "question_number": "3.C.ii",
             "question_text": "Enchante",
             "marks": 1,
-            "answer": "**Enchant\u00e9(e)**",
+            "answer": "**Enchanté(e)**",
             "answer_source": "generated",
             "chapter": "Unit 1:"
         },
@@ -230,7 +265,7 @@
             "question_number": "3.C.iii",
             "question_text": "Abinto",
             "marks": 1,
-            "answer": "**\u00c0 bient\u00f4t**",
+            "answer": "**À bientôt**",
             "answer_source": "generated",
             "chapter": "Unit 1:"
         },

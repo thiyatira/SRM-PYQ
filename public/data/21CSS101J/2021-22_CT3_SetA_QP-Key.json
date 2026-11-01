@@ -4,81 +4,151 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Identify the correct syntax to send a 3-dimensional array as a parameter (Assuming declaration int a[5][4][3];)\na) func(a);\nb) func(a[0][0]);\nc) func(&a);\nd) func(*a);",
+            "question_text": "Identify the correct syntax to send a 3-dimensional array as a parameter (Assuming declaration int a[5][4][3];)",
+            "options": [
+                "func(a);",
+                "func(a[0][0]);",
+                "func(&a);",
+                "func(*a);"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "Answer: a) func(a);",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 3: String Basics"
         },
         {
             "question_number": "2",
-            "question_text": "At what stage of building a C program does Pragma work?\na) Before Compilation\nb) During Compilation\nc) After Compilation\nd) During Linking",
+            "question_text": "At what stage of building a C program does Pragma work?",
+            "options": [
+                "Before Compilation",
+                "During Compilation",
+                "After Compilation",
+                "During Linking"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "Answer: a) Before Compilation",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
         {
             "question_number": "3",
-            "question_text": "Pick out the incorrect statement with respect to NULL pointer.\na) int *ptr = NULL;\nb) NULL is a macro defined in stdio.h\nc) datatype *NULL=ptr;\nd) NULL pointer points to 0 address",
+            "question_text": "Pick out the incorrect statement with respect to NULL pointer.",
+            "options": [
+                "int *ptr = NULL;",
+                "NULL is a macro defined in stdio.h",
+                "datatype *NULL=ptr;",
+                "NULL pointer points to 0 address"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "Answer: C) datatype *NULL=ptr;",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
         },
         {
             "question_number": "4",
-            "question_text": "Find the output of this C code\n\n```c\n#include <stdio.h>\nint main()\n{\n    int i= 97, *p = &i;\n    foo(&i);\n    printf(\"%d \", *p);\n}\nvoid foo(int *p)\n{\n    int j = 2;\n    p = &j;\n    printf(\"%d\", *p);\n}\n```\n\na) 2 97\nb) 97 2\nc) 2 2\nd) 97 97",
+            "question_text": "Find the output of this C code\n\n```c\n#include <stdio.h>\nint main()\n{\n    int i= 97, *p = &i;\n    foo(&i);\n    printf(\"%d \", *p);\n}\nvoid foo(int *p)\n{\n    int j = 2;\n    p = &j;\n    printf(\"%d\", *p);\n}\n```",
+            "options": [
+                "2 97",
+                "97 2",
+                "2 2",
+                "97 97"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "Answer:a) 2 97",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 3: String Basics"
         },
         {
             "question_number": "5",
-            "question_text": "What is the output of this C code?\n\n```c\n#include <stdio.h>\nvoid main()\n{\n    int k = 5;\n    int *p = &k;\n    int **m = &p;\n    printf(\"%d%d%d\\n\", k, *p, **p);\n}\n```\n\na) 5 5 5\nb) Compile time warning\nc) 5 5 0\nd) Compile time error",
+            "question_text": "What is the output of this C code?\n\n```c\n#include <stdio.h>\nvoid main()\n{\n    int k = 5;\n    int *p = &k;\n    int **m = &p;\n    printf(\"%d%d%d\\n\", k, *p, **p);\n}\n```",
+            "options": [
+                "5 5 5",
+                "Compile time warning",
+                "5 5 0",
+                "Compile time error"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "Answer:d) Compile time error",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
         },
         {
             "question_number": "6",
-            "question_text": "The preprocessor directive used to give additional information to the compiler, beyond which is conveyed in the language is\na) #define\nb) #include\nc) #pragma\nd) #ifdef",
+            "question_text": "The preprocessor directive used to give additional information to the compiler, beyond which is conveyed in the language is",
+            "options": [
+                "#define",
+                "#include",
+                "#pragma",
+                "#ifdef"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "Answer: c) #pragma",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
         {
             "question_number": "7",
-            "question_text": "Predict the output of the following C code\n\n```c\n#include <stdio.h>\nint main()\n{\n    int ary[4] = {1, 2, 3, 4};\n    printf(\"%d\\n\", *ary);\n}\n```\n\na)1\nb)2\nc)3\nd)4",
+            "question_text": "Predict the output of the following C code\n\n```c\n#include <stdio.h>\nint main()\n{\n    int ary[4] = {1, 2, 3, 4};\n    printf(\"%d\\n\", *ary);\n}\n```",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "Answer: a)1",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
         },
         {
             "question_number": "8",
-            "question_text": "Among the given pointers which of the following cannot be incremented?\na) int\nb) char\nc) float\nd) void",
+            "question_text": "Among the given pointers which of the following cannot be incremented?",
+            "options": [
+                "int",
+                "char",
+                "float",
+                "void"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "Answer : d)Void",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
         },
         {
             "question_number": "9",
-            "question_text": "The declaration instruction for the variable 'ptr' as the pointer to array of 6 floats is\na) float *ptr[6]\nb) float [6]*ptr\nc) float(*ptr)[6]\nd) float(*ptr)(6)",
+            "question_text": "The declaration instruction for the variable 'ptr' as the pointer to array of 6 floats is",
+            "options": [
+                "float *ptr[6]",
+                "float [6]*ptr",
+                "float(*ptr)[6]",
+                "float(*ptr)(6)"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "Answer: d) float(*ptr)(6)",
-            "answer_source": "provided",
+            "answer": "A pointer to an array of 6 floats is declared as `float (*ptr)[6]`. The parentheses make `ptr` a pointer first; `float *ptr[6]` is an array of 6 float pointers, and `float (*ptr)(6)` is not a valid declaration. (The printed key listed option d, which is incorrect.)",
+            "answer_source": "generated",
             "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
         },
         {
             "question_number": "10",
-            "question_text": "The size of a union is determined by the size of the\na) First member in the union\nb) Last member in the union\nc) Biggest member in the union\nd) Sum of the sizes of all members",
+            "question_text": "The size of a union is determined by the size of the",
+            "options": [
+                "First member in the union",
+                "Last member in the union",
+                "Biggest member in the union",
+                "Sum of the sizes of all members"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "Answer: c) Biggest member in the union",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
         },

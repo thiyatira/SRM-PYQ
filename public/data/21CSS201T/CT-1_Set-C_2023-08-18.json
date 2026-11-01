@@ -5,81 +5,151 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "The output of a NOR gate is HIGH if ________.\na.all inputs are HIGH\nb.any input is HIGH\nc.any input is LOW\nd.all inputs are LOW",
+            "question_text": "The output of a NOR gate is HIGH if ________.",
+            "options": [
+                "all inputs are HIGH",
+                "any input is HIGH",
+                "any input is LOW",
+                "all inputs are LOW"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "d.all inputs are LOW\n\nRationale: A NOR (Not OR) gate produces a HIGH (1) output only when all of its inputs are LOW (0). If any input is HIGH, the OR result is HIGH, making the NOR output LOW.",
+            "answer": "A NOR (Not OR) gate produces a HIGH (1) output only when all of its inputs are LOW (0). If any input is HIGH, the OR result is HIGH, making the NOR output LOW.",
             "answer_source": "provided",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "2",
-            "question_text": "Base of octal number system is\na.10\nb.2\nc.8\nd.16",
+            "question_text": "Base of octal number system is",
+            "options": [
+                "10",
+                "2",
+                "8",
+                "16"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "c.8\n\nRationale: The octal number system is a base-8 system, utilizing digits from 0 to 7.",
+            "answer": "The octal number system is a base-8 system, utilizing digits from 0 to 7.",
             "answer_source": "provided",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "3",
-            "question_text": "Decimal equivalent of hexadecimal no. (44A)16 is :\na.825\nb.1098\nc.870\nd.1100",
+            "question_text": "Decimal equivalent of hexadecimal no. (44A)16 is :",
+            "options": [
+                "825",
+                "1098",
+                "870",
+                "1100"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b.1098\n\nRationale: \n$$(44A)_{16} = 4 \\times 16^2 + 4 \\times 16^1 + 10 \\times 16^0 = 4 \\times 256 + 64 + 10 = 1024 + 64 + 10 = 1098$$",
+            "answer": "$$(44A)_{16} = 4 \\times 16^2 + 4 \\times 16^1 + 10 \\times 16^0 = 4 \\times 256 + 64 + 10 = 1024 + 64 + 10 = 1098$$",
             "answer_source": "provided",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "4",
-            "question_text": "Binary equivalent of (542)10 is :\na.101010101\nb.1110101101\nc.101011001\nd.1000011110",
+            "question_text": "Binary equivalent of (542)10 is :",
+            "options": [
+                "101010101",
+                "1110101101",
+                "101011001",
+                "1000011110"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "d.1000011110\n\nRationale: Converting 542 to binary by successive division by 2:\n- $542 / 2 = 271$, remainder 0\n- $271 / 2 = 135$, remainder 1\n- $135 / 2 = 67$, remainder 1\n- $67 / 2 = 33$, remainder 1\n- $33 / 2 = 16$, remainder 1\n- $16 / 2 = 8$, remainder 0\n- $8 / 2 = 4$, remainder 0\n- $4 / 2 = 2$, remainder 0\n- $2 / 2 = 1$, remainder 0\n- $1 / 2 = 0$, remainder 1\nReading remainder from bottom to top gives $1000011110_2$.",
+            "answer": "Converting 542 to binary by successive division by 2:\n- $542 / 2 = 271$, remainder 0\n- $271 / 2 = 135$, remainder 1\n- $135 / 2 = 67$, remainder 1\n- $67 / 2 = 33$, remainder 1\n- $33 / 2 = 16$, remainder 1\n- $16 / 2 = 8$, remainder 0\n- $8 / 2 = 4$, remainder 0\n- $4 / 2 = 2$, remainder 0\n- $2 / 2 = 1$, remainder 0\n- $1 / 2 = 0$, remainder 1\nReading remainder from bottom to top gives $1000011110_2$.",
             "answer_source": "provided",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "5",
-            "question_text": "Convert the binary number 1011011 to hexadecimal.\na.5A\nb.5D\nc.5B\nd.5C",
+            "question_text": "Convert the binary number 1011011 to hexadecimal.",
+            "options": [
+                "5A",
+                "5D",
+                "5B",
+                "5C"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "c.5B\n\nRationale: Grouping the binary number from right to left in groups of 4:\n- $0101_2 = 5_{16}$\n- $1011_2 = B_{16}$ (which is 11 in decimal)\nCombining them gives $5B_{16}$.",
+            "answer": "Grouping the binary number from right to left in groups of 4:\n- $0101_2 = 5_{16}$\n- $1011_2 = B_{16}$ (which is 11 in decimal)\nCombining them gives $5B_{16}$.",
             "answer_source": "provided",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "6",
-            "question_text": "Octal representation of (0101)2 is :\na.5\nb.3\nc.4\nd.6",
+            "question_text": "Octal representation of (0101)2 is :",
+            "options": [
+                "5",
+                "3",
+                "4",
+                "6"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "a.5\n\nRationale: Converting $(0101)_2$ to octal: \nGroup of 3 from right is $101_2 = 5_8$. The remaining bit is 0.",
+            "answer": "Converting $(0101)_2$ to octal: \nGroup of 3 from right is $101_2 = 5_8$. The remaining bit is 0.",
             "answer_source": "provided",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "7",
-            "question_text": "Cache memory acts between\na.CPU and RAM\nb.RAM and ROM\nc.CPU and Hard Disk\nd.ROM and CPU",
+            "question_text": "Cache memory acts between",
+            "options": [
+                "CPU and RAM",
+                "RAM and ROM",
+                "CPU and Hard Disk",
+                "ROM and CPU"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "a.CPU and RAM\n\nRationale: Cache memory is a small, extremely fast memory subsystem that buffers data transfers between the high-speed CPU registers and the relatively slower main memory (RAM).",
+            "answer": "Cache memory is a small, extremely fast memory subsystem that buffers data transfers between the high-speed CPU registers and the relatively slower main memory (RAM).",
             "answer_source": "provided",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "8",
-            "question_text": "Which of the following is lowest in memory hierarchy\na.Cache memory\nb.Registers\nc.RAM\nd.Secondary memory",
+            "question_text": "Which of the following is lowest in memory hierarchy",
+            "options": [
+                "Cache memory",
+                "Registers",
+                "RAM",
+                "Secondary memory"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "d.Secondary memory\n\nRationale: In the memory hierarchy, secondary memory (like hard drives, SSDs) has the largest storage capacity but the longest access latency (slowest speed), placing it at the lowest level.",
+            "answer": "In the memory hierarchy, secondary memory (like hard drives, SSDs) has the largest storage capacity but the longest access latency (slowest speed), placing it at the lowest level.",
             "answer_source": "provided",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "9",
-            "question_text": "Which of the following is the correct BCD representation of the decimal number 89?\na.10001001\nb.10011001\nc.10100001\nd.10100101",
+            "question_text": "Which of the following is the correct BCD representation of the decimal number 89?",
+            "options": [
+                "10001001",
+                "10011001",
+                "10100001",
+                "10100101"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "b.10011001\n\nRationale: In Binary Coded Decimal (BCD), each decimal digit is encoded as a separate 4-bit binary nibble. \n- Digit 8 is represented as $1000_2$\n- Digit 9 is represented as $1001_2$\nSo the mathematical BCD representation of 89 is $10001001$ (Option a). However, the answer sheet highlights option (b) as the correct choice in the key (which represents 99 in BCD).",
-            "answer_source": "provided",
+            "answer": "In BCD each decimal digit is encoded as a separate 4-bit nibble: 8 = 1000 and 9 = 1001, so 89 is 1000 1001 (option A). The printed answer key marked option B, which is the BCD of 99, so the key appears to be wrong.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "10",
-            "question_text": "Which instruction is used for moving the data from accumulator to memory?\na.Move B\nb.Store D\nc.Load D\nd.PUSH A",
+            "question_text": "Which instruction is used for moving the data from accumulator to memory?",
+            "options": [
+                "Move B",
+                "Store D",
+                "Load D",
+                "PUSH A"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b.Store D\n\nRationale: A Store instruction writes the contents of a processor register (such as the accumulator) into a designated memory location.",
+            "answer": "A Store instruction writes the contents of a processor register (such as the accumulator) into a designated memory location.",
             "answer_source": "provided",
             "chapter": "Unit 2: Basic structure of computers"
         },

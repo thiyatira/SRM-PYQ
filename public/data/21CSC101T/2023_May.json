@@ -4,161 +4,301 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Which feature of OOP indicates code reusability?\n(A) Abstraction\n(B) Encapsulation\n(C) Inheritance\n(D) Polymorphism",
+            "question_text": "Which feature of OOP indicates code reusability?",
+            "options": [
+                "Abstraction",
+                "Encapsulation",
+                "Inheritance",
+                "Polymorphism"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Inheritance. Explanation: Inheritance allows a new class to acquire properties and behaviors of an existing class, promoting code reusability.",
+            "answer": "Inheritance allows a new class to acquire properties and behaviors of an existing class, promoting code reusability.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 3"
         },
         {
             "question_number": "2",
-            "question_text": "Which of the following statement is true for the command:\nint f (float)\n(A) f is a function taking an argument of type int and returning a floating-point number\n(B) f is a function taking an argument of type float and returning an integer\n(C) f is a function of type float\n(D) f is a function of type int",
+            "question_text": "Which of the following statement is true for the command:\nint f (float)",
+            "options": [
+                "f is a function taking an argument of type int and returning a floating-point number",
+                "f is a function taking an argument of type float and returning an integer",
+                "f is a function of type float",
+                "f is a function of type int"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) f is a function taking an argument of type float and returning an integer. Explanation: The declaration 'int f(float)' means a function named 'f' that takes a 'float' parameter and returns an 'int'.",
+            "answer": "The declaration 'int f(float)' means a function named 'f' that takes a 'float' parameter and returns an 'int'.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 1"
         },
         {
             "question_number": "3",
-            "question_text": "Identify the correct way to declare a constant data type using preprocessor directive in C++?\n(A) #define int a = 100\n(B) #define a = 100\n(C) #define int a 100\n(D) #define a 100",
+            "question_text": "Identify the correct way to declare a constant data type using preprocessor directive in C++?",
+            "options": [
+                "#define int a = 100",
+                "#define a = 100",
+                "#define int a 100",
+                "#define a 100"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) #define a 100. Explanation: The `#define` directive substitutes a token with a replacement value. The syntax is `#define identifier replacement`.",
+            "answer": "The `#define` directive substitutes a token with a replacement value. The syntax is `#define identifier replacement`.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 1"
         },
         {
             "question_number": "4",
-            "question_text": "Which of the following access specifier allows the user to inherit the private members of a class?\n(A) Public\n(B) Protected\n(C) Default\n(D) Private",
+            "question_text": "Which of the following access specifier allows the user to inherit the private members of a class?",
+            "options": [
+                "Public",
+                "Protected",
+                "Default",
+                "Private"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Protected. Explanation: While strictly private members are never inherited, if the intent is for derived classes to have access to members that are otherwise hidden from the outside, the 'protected' access specifier is used.",
+            "answer": "While strictly private members are never inherited, if the intent is for derived classes to have access to members that are otherwise hidden from the outside, the 'protected' access specifier is used.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 1"
         },
         {
             "question_number": "5",
-            "question_text": "What happens if a user forgets to define a constructor inside a class?\n(A) Error occurs\n(B) Segmentation fault\n(C) Objects are not created properly\n(D) Compiler provides a default constructor to avoid faults / errors",
+            "question_text": "What happens if a user forgets to define a constructor inside a class?",
+            "options": [
+                "Error occurs",
+                "Segmentation fault",
+                "Objects are not created properly",
+                "Compiler provides a default constructor to avoid faults / errors"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Compiler provides a default constructor to avoid faults / errors. Explanation: If no constructor is provided, the compiler automatically generates a default constructor.",
+            "answer": "If no constructor is provided, the compiler automatically generates a default constructor.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 2"
         },
         {
             "question_number": "6",
-            "question_text": "Which of the following permits function overloading on C++?\n(A) Type of arguments\n(B) Number of arguments\n(C) Type and number of arguments\n(D) Number of objects",
+            "question_text": "Which of the following permits function overloading on C++?",
+            "options": [
+                "Type of arguments",
+                "Number of arguments",
+                "Type and number of arguments",
+                "Number of objects"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Type and number of arguments. Explanation: Function overloading is resolved based on the number and data types of the parameters.",
+            "answer": "Function overloading is resolved based on the number and data types of the parameters.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 2"
         },
         {
             "question_number": "7",
-            "question_text": "Which of the following C++ operator(s) can be overloaded?\n(A) Size operator (size of)\n(B) Conditional operator (?:)\n(C) Arithmetic operator (+,-,*,/)\n(D) Class Member Access Operator (.)",
+            "question_text": "Which of the following C++ operator(s) can be overloaded?",
+            "options": [
+                "Size operator (size of)",
+                "Conditional operator (?:)",
+                "Arithmetic operator (+,-,*,/)",
+                "Class Member Access Operator (.)"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Arithmetic operator (+,-,*,/). Explanation: Most arithmetic operators can be overloaded, whereas `sizeof`, `?:`, and `.` cannot.",
+            "answer": "Most arithmetic operators can be overloaded, whereas `sizeof`, `?:`, and `.` cannot.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 2"
         },
         {
             "question_number": "8",
-            "question_text": "Sequence and collaboration diagrams are ________.\n(A) UML interaction diagrams\n(B) UML static diagrams\n(C) UML structural diagrams\n(D) UML implementation diagrams",
+            "question_text": "Sequence and collaboration diagrams are ________.",
+            "options": [
+                "UML interaction diagrams",
+                "UML static diagrams",
+                "UML structural diagrams",
+                "UML implementation diagrams"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) UML interaction diagrams. Explanation: Both sequence and collaboration (communication) diagrams model the dynamic interactions between objects.",
+            "answer": "Both sequence and collaboration (communication) diagrams model the dynamic interactions between objects.",
             "answer_source": "General UML Knowledge",
             "chapter": "Unit 2"
         },
         {
             "question_number": "9",
-            "question_text": "Identify what happens when an attempt is made to instantiate an object of an abstract class.\n(A) Success message\n(B) Warning message\n(C) Compilation error\n(D) Objects gets created",
+            "question_text": "Identify what happens when an attempt is made to instantiate an object of an abstract class.",
+            "options": [
+                "Success message",
+                "Warning message",
+                "Compilation error",
+                "Objects gets created"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Compilation error. Explanation: Abstract classes (having at least one pure virtual function) cannot be instantiated.",
+            "answer": "Abstract classes (having at least one pure virtual function) cannot be instantiated.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 3"
         },
         {
             "question_number": "10",
-            "question_text": "In multilevel inheritance one class inherits\n(A) Only from one class\n(B) More than one class\n(C) Atleast one class\n(D) As many classes as required",
+            "question_text": "In multilevel inheritance one class inherits",
+            "options": [
+                "Only from one class",
+                "More than one class",
+                "Atleast one class",
+                "As many classes as required"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Only from one class. Explanation: In multilevel inheritance, each class derives directly from only one immediate base class.",
+            "answer": "In multilevel inheritance, each class derives directly from only one immediate base class.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 3"
         },
         {
             "question_number": "11",
-            "question_text": "The double line filled circle with pointing arrow is ______\n(A) Start state\n(B) Final state\n(C) Transition state\n(D) Composite state",
+            "question_text": "The double line filled circle with pointing arrow is ______",
+            "options": [
+                "Start state",
+                "Final state",
+                "Transition state",
+                "Composite state"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Final state. Explanation: In UML state chart diagrams, a final state is depicted as a solid circle surrounded by a hollow circle (double line filled circle).",
+            "answer": "In UML state chart diagrams, a final state is depicted as a solid circle surrounded by a hollow circle (double line filled circle).",
             "answer_source": "General UML Knowledge",
             "chapter": "Unit 3"
         },
         {
             "question_number": "12",
-            "question_text": "An inline function is expanded during ________\n(A) Compile time\n(B) Run time\n(C) Never expanded\n(D) End of program",
+            "question_text": "An inline function is expanded during ________",
+            "options": [
+                "Compile time",
+                "Run time",
+                "Never expanded",
+                "End of program"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Compile time. Explanation: The compiler replaces the inline function call with the actual code of the function during compilation.",
+            "answer": "The compiler replaces the inline function call with the actual code of the function during compilation.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 3"
         },
         {
             "question_number": "13",
-            "question_text": "What are templates in C++?\n(A) A feature that allows programmer to write generic programs\n(B) A feature that allows programmer to write specific codes for a problem\n(C) A feature that allows programmer to make program modular\n(D) A feature that does not add any power to the language",
+            "question_text": "What are templates in C++?",
+            "options": [
+                "A feature that allows programmer to write generic programs",
+                "A feature that allows programmer to write specific codes for a problem",
+                "A feature that allows programmer to make program modular",
+                "A feature that does not add any power to the language"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) A feature that allows programmer to write generic programs. Explanation: Templates are the foundation of generic programming, allowing functions and classes to operate with generic types.",
+            "answer": "Templates are the foundation of generic programming, allowing functions and classes to operate with generic types.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 4"
         },
         {
             "question_number": "14",
-            "question_text": "What is an exception in C++ program?\n(A) A problem that arises during the execution of a program\n(B) A problem that arises during compilation\n(C) Syntax error\n(D) Semantic error",
+            "question_text": "What is an exception in C++ program?",
+            "options": [
+                "A problem that arises during the execution of a program",
+                "A problem that arises during compilation",
+                "Syntax error",
+                "Semantic error"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) A problem that arises during the execution of a program. Explanation: Exceptions are runtime anomalies or abnormal conditions that a program encounters during its execution.",
+            "answer": "Exceptions are runtime anomalies or abnormal conditions that a program encounters during its execution.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 4"
         },
         {
             "question_number": "15",
-            "question_text": "________ is used to visualize the topology of the physical components of a system.\n(A) Class diagram\n(B) Sequence diagram\n(C) Deployment diagram\n(D) Package diagram",
+            "question_text": "________ is used to visualize the topology of the physical components of a system.",
+            "options": [
+                "Class diagram",
+                "Sequence diagram",
+                "Deployment diagram",
+                "Package diagram"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Deployment diagram. Explanation: Deployment diagrams model the physical deployment of software components onto hardware nodes.",
+            "answer": "Deployment diagrams model the physical deployment of software components onto hardware nodes.",
             "answer_source": "General UML Knowledge",
             "chapter": "Unit 4"
         },
         {
             "question_number": "16",
-            "question_text": "The ________ block identifies a block of code for which a particular exception will be activated.\n(A) try\n(B) throw\n(C) catch\n(D) finally",
+            "question_text": "The ________ block identifies a block of code for which a particular exception will be activated.",
+            "options": [
+                "try",
+                "throw",
+                "catch",
+                "finally"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) try. Explanation: A try block encloses the code that might throw an exception.",
+            "answer": "A try block encloses the code that might throw an exception.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 4"
         },
         {
             "question_number": "17",
-            "question_text": "How many components Standard Template Library (STL) has?\n(A) 1\n(B) 2\n(C) 3\n(D) 4",
+            "question_text": "How many components Standard Template Library (STL) has?",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) 3. Explanation: The STL essentially consists of three main components: Containers, Algorithms, and Iterators.",
+            "answer": "The STL essentially consists of three main components: Containers, Algorithms, and Iterators.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 5"
         },
         {
             "question_number": "18",
-            "question_text": "What are iterators?\n(A) Iterators are used to iterate over functions\n(B) Iterators are containers\n(C) Iterators are used to iterate over pointer\n(D) Iterators are like pointers that points to an element inside the container",
+            "question_text": "What are iterators?",
+            "options": [
+                "Iterators are used to iterate over functions",
+                "Iterators are containers",
+                "Iterators are used to iterate over pointer",
+                "Iterators are like pointers that points to an element inside the container"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Iterators are like pointers that points to an element inside the container. Explanation: Iterators provide a way to traverse the elements of STL containers sequentially.",
+            "answer": "Iterators provide a way to traverse the elements of STL containers sequentially.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 5"
         },
         {
             "question_number": "19",
-            "question_text": "Which function is used to access the first element of an array class?\n(A) front ( )\n(B) start ( )\n(C) first ( )\n(D) back ( )",
+            "question_text": "Which function is used to access the first element of an array class?",
+            "options": [
+                "front ( )",
+                "start ( )",
+                "first ( )",
+                "back ( )"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) front ( ). Explanation: The `front()` member function returns a reference to the first element in a container like `std::array`.",
+            "answer": "The `front()` member function returns a reference to the first element in a container like `std::array`.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 5"
         },
         {
             "question_number": "20",
-            "question_text": "________ is a procedure that is used to process the data contained in containers.\n(A) Algorithm\n(B) Iterator\n(C) Pointer\n(D) Object",
+            "question_text": "________ is a procedure that is used to process the data contained in containers.",
+            "options": [
+                "Algorithm",
+                "Iterator",
+                "Pointer",
+                "Object"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Algorithm. Explanation: STL algorithms are functions that perform various operations (like searching, sorting) on the data within containers.",
+            "answer": "STL algorithms are functions that perform various operations (like searching, sorting) on the data within containers.",
             "answer_source": "General C++ Knowledge",
             "chapter": "Unit 5"
         },

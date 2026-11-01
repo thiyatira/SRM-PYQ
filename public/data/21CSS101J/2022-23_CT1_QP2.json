@@ -4,81 +4,151 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Every C program consists of ______ function(s).\n\n*   Only one\n*   Only two\n*   One or two\n*   One or many",
+            "question_text": "Every C program consists of ______ function(s).",
+            "options": [
+                "Only one",
+                "Only two",
+                "One or two",
+                "One or many"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "Only one (the main() function is mandatory for program execution).",
+            "answer": "A C program consists of one or more functions; `main()` is mandatory and a program may define many other functions.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction to C: Structure of the C program"
         },
         {
             "question_number": "2",
-            "question_text": "Which of the following is not a correct variable type?\n\n*   Float\n*   Real\n*   Int\n*   Double",
+            "question_text": "Which of the following is not a correct variable type?",
+            "options": [
+                "Float",
+                "Real",
+                "Int",
+                "Double"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "Real (Float, Int, and Double are standard C data types, 'Real' is not a keyword or standard type name in C, though it's a general term for floating-point numbers).",
+            "answer": "`Float`, `Int` and `Double` are standard C data types. `Real` is not a data type in C (it is only a general mathematical term).",
             "answer_source": "generated",
             "chapter": "Unit 1: Numeric Data types: integer, floating point Non-Numeric Data types: char and string"
         },
         {
             "question_number": "3",
-            "question_text": "Which of the following is not a valid C variable name?\n\n```c\n*   int number;\n*   float rate;\n*   int variable_count;\n*   int $main;\n```",
+            "question_text": "Which of the following is not a valid C variable name?",
+            "options": [
+                "int number;",
+                "float rate;",
+                "int variable_count;",
+                "int $main;"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "int $main; (Variable names in C cannot contain special characters like '$' except for underscore '_').",
+            "answer": "Variable names in C cannot contain special characters such as `$` (only letters, digits and underscore are allowed).",
             "answer_source": "generated",
             "chapter": "Unit 1: Variables and identifiers, Keywords"
         },
         {
             "question_number": "4",
-            "question_text": "Which of these is NOT a relational or logical operator?\n\n*   =\n*   ==\n*   !=\n*   ||",
+            "question_text": "Which of these is NOT a relational or logical operator?",
+            "options": [
+                "=",
+                "==",
+                "!=",
+                "||"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "= (The '=' operator is the assignment operator. '==', '!=', '||' are relational or logical operators).",
+            "answer": "`=` is the assignment operator. `==`, `!=` and `||` are relational or logical operators.",
             "answer_source": "generated",
             "chapter": "Unit 1: Arithmetic, Relational and logical Operators"
         },
         {
             "question_number": "5",
-            "question_text": "What will be the output of the following code snippet?\n```c\n#include <stdio.h>\nint main() {\n    int a = 3, b = 5;\n    int t = a;\n    a = b;\n    b = t;\n    printf(\"%d %d\", a, b);\n    return 0;\n}\n```\n\n*   3 5\n*   3 3\n*   5 5\n*   5 3",
+            "question_text": "What will be the output of the following code snippet?\n\n```c\n#include <stdio.h>\nint main() {\n    int a = 3, b = 5;\n    int t = a;\n    a = b;\n    b = t;\n    printf(\"%d %d\", a, b);\n    return 0;\n}\n```",
+            "options": [
+                "3 5",
+                "3 3",
+                "5 5",
+                "5 3"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "5 3 (The code performs a swap of variables 'a' and 'b' using a temporary variable 't'. Initially, a=3, b=5. After swap, a becomes 5 and b becomes 3).",
+            "answer": "The code swaps `a` and `b` through the temporary variable `t`. Initially a=3, b=5; after the swap a=5 and b=3, so it prints `5 3`.",
             "answer_source": "generated",
             "chapter": "Unit 1: Input and output statements. Variables and identifiers, Assignment operator"
         },
         {
             "question_number": "6",
-            "question_text": "What is the output of the following code snippet?\n```c\nint main() {\n    int sum = 2 + 4 / 2 + 6 * 2;\n    printf(\"%d\", sum);\n    return 0;\n}\n```\n\n*   2\n*   15\n*   16\n*   18",
+            "question_text": "What is the output of the following code snippet?\n\n```c\nint main() {\n    int sum = 2 + 4 / 2 + 6 * 2;\n    printf(\"%d\", sum);\n    return 0;\n}\n```",
+            "options": [
+                "2",
+                "15",
+                "16",
+                "18"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "16 (According to operator precedence, division and multiplication are performed before addition. So, sum = 2 + (4/2) + (6*2) = 2 + 2 + 12 = 16).",
+            "answer": "By operator precedence, `/` and `*` are done before `+`: sum = 2 + (4/2) + (6*2) = 2 + 2 + 12 = 16.",
             "answer_source": "generated",
             "chapter": "Unit 1: Arithmetic, Relational and logical Operators, Operator Precedence"
         },
         {
             "question_number": "7",
-            "question_text": "What will be the output of the following code snippet?\n```c\n#include <stdio.h>\nint main() {\n    int a = 3;\n    int res = a++ + ++a + a++ + ++a;\n    printf(\"%d\", res);\n    return 0;\n}\n```\n\n*   12\n*   24\n*   20\n*   18",
+            "question_text": "What will be the output of the following code snippet?\n\n```c\n#include <stdio.h>\nint main() {\n    int a = 3;\n    int res = a++ + ++a + a++ + ++a;\n    printf(\"%d\", res);\n    return 0;\n}\n```",
+            "options": [
+                "12",
+                "24",
+                "20",
+                "18"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "20 (The expression evaluates as follows: \n1. `a=3`\n2. `a++` evaluates to 3, then `a` becomes 4.\n3. `++a` makes `a` 5, then evaluates to 5.\n4. `a++` evaluates to 5, then `a` becomes 6.\n5. `++a` makes `a` 7, then evaluates to 7.\nSo, `res = 3 + 5 + 5 + 7 = 20`. Note: Such expressions with multiple increments on the same variable in a single statement lead to undefined behavior in C, but given the options, this interpretation is expected.)",
+            "answer": "With the usual left-to-right evaluation, `a++` gives 3 (a=4), `++a` gives 5, `a++` gives 5 (a=6), `++a` gives 7, so res = 3 + 5 + 5 + 7 = 20. (The expression modifies `a` several times without sequence points, so the result is compiler-dependent; GCC prints 20.)",
             "answer_source": "generated",
             "chapter": "Unit 1: Increment and decrement operator, Expressions with pre / post increment operator"
         },
         {
             "question_number": "8",
-            "question_text": "Which of the following is true for variable names in C?\n\n*   They can contain alphanumeric characters as well as special characters\n*   It is not an error to declare a variable to be one of the keywords(like goto, static)\n*   Variable names cannot start with a digit\n*   Variable can be of any length",
+            "question_text": "Which of the following is true for variable names in C?",
+            "options": [
+                "They can contain alphanumeric characters as well as special characters",
+                "It is not an error to declare a variable to be one of the keywords(like goto, static)",
+                "Variable names cannot start with a digit",
+                "Variable can be of any length"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "Variable names cannot start with a digit (C variable names can contain alphanumeric characters and underscores, but not other special characters. They cannot be keywords. They cannot start with a digit. While there's no strict limit on length, only a certain number of initial characters are guaranteed to be significant).",
+            "answer": "Variable names may contain letters, digits and underscores only and cannot start with a digit, so C is true. A is false (special characters are not allowed), B is false (keywords are reserved and cannot be used as variable names) and D is false (only a limited number of initial characters are significant, so length is not unlimited).",
             "answer_source": "generated",
             "chapter": "Unit 1: Variables and identifiers, Keywords"
         },
         {
             "question_number": "9",
-            "question_text": "Operator % in C Language is called.?\n\n*   Percentage Operator\n*   Quotient Operator\n*   Modulus\n*   Division",
+            "question_text": "Operator % in C Language is called.?",
+            "options": [
+                "Percentage Operator",
+                "Quotient Operator",
+                "Modulus",
+                "Division"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "Modulus (The '%' operator in C gives the remainder of an integer division).",
+            "answer": "The `%` operator in C gives the remainder of an integer division and is called the modulus operator.",
             "answer_source": "generated",
             "chapter": "Unit 1: Arithmetic, Relational and logical Operators"
         },
         {
             "question_number": "10",
-            "question_text": "What will be the output of the following code snippet?\n```c\nvoid solve() {\n    printf(\"%d \", 9/2);\n    printf(\"%f\", 9.0 / 2);\n}\n```\n\n*   4 4.5000\n*   4 4\n*   4.500 4.500\n*   4.5 4.50",
+            "question_text": "What will be the output of the following code snippet?\n\n```c\nvoid solve() {\n    printf(\"%d \", 9/2);\n    printf(\"%f\", 9.0 / 2);\n}\n```",
+            "options": [
+                "4 4.5000",
+                "4 4",
+                "4.500 4.500",
+                "4.5 4.50"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "4 4.5000 (9/2 performs integer division, resulting in 4. 9.0/2 performs floating-point division, resulting in 4.5. The `%f` format specifier typically prints 6 digits after the decimal point by default, so 4.5 is displayed as 4.500000. Option '4 4.5000' is the closest representation).",
+            "answer": "`9/2` performs integer division and gives 4; `9.0/2` performs floating-point division and gives 4.5, which `%f` prints as 4.500000. Of the given options, `4 4.5000` is the closest.",
             "answer_source": "generated",
             "chapter": "Unit 1: Numeric Data types: integer, floating point, Input and output statements"
         },

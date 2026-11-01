@@ -4,121 +4,226 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Who is the father of C language?\na) Steve Jobs\nb) James Gosling\nc) Dennis Ritchie\nd) Rasmus Lerdorf",
+            "question_text": "Who is the father of C language?",
+            "options": [
+                "Steve Jobs",
+                "James Gosling",
+                "Dennis Ritchie",
+                "Rasmus Lerdorf"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "Answer: C",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming - Writing algorithms & Pseudo code - Single line and multiline comments - Introduction to C: Structure of the C program - Input and output statements. Variables and identifiers, Constants, Keywords - Values, Names, Scope, Binding, Storage Classes - Numeric Data types: integer, floating point Non-Numeric Data types: char and string - L value and R value in expression, Increment and decrement operator - Comma, Arrow and Assignment operator, Bitwise and Size-of operator - Arithmetic, Relational and logical Operators - Condition Operators, Operator Precedence - Expressions with pre / post increment operator."
         },
         {
             "question_number": "2",
-            "question_text": "Where can we include comments in a C program?\nA) Before header file\nB) Before main function\nC) Anywhere in the C code\nD) During variable declaration",
+            "question_text": "Where can we include comments in a C program?",
+            "options": [
+                "Before header file",
+                "Before main function",
+                "Anywhere in the C code",
+                "During variable declaration"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "Answer: C",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming - Writing algorithms & Pseudo code - Single line and multiline comments - Introduction to C: Structure of the C program - Input and output statements. Variables and identifiers, Constants, Keywords - Values, Names, Scope, Binding, Storage Classes - Numeric Data types: integer, floating point Non-Numeric Data types: char and string - L value and R value in expression, Increment and decrement operator - Comma, Arrow and Assignment operator, Bitwise and Size-of operator - Arithmetic, Relational and logical Operators - Condition Operators, Operator Precedence - Expressions with pre / post increment operator."
         },
         {
             "question_number": "3",
-            "question_text": "C programming is a ______ level language.\nA) Low\nB) High\nC) Assembly\nD) Machine",
+            "question_text": "C programming is a ______ level language.",
+            "options": [
+                "Low",
+                "High",
+                "Assembly",
+                "Machine"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "Answer: B",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming - Writing algorithms & Pseudo code - Single line and multiline comments - Introduction to C: Structure of the C program - Input and output statements. Variables and identifiers, Constants, Keywords - Values, Names, Scope, Binding, Storage Classes - Numeric Data types: integer, floating point Non-Numeric Data types: char and string - L value and R value in expression, Increment and decrement operator - Comma, Arrow and Assignment operator, Bitwise and Size-of operator - Arithmetic, Relational and logical Operators - Condition Operators, Operator Precedence - Expressions with pre / post increment operator."
         },
         {
             "question_number": "4",
-            "question_text": "Preprocessor directives begin with _______\nA) *\nB) %\nC) #\nD) /",
+            "question_text": "Preprocessor directives begin with _______",
+            "options": [
+                "*",
+                "%",
+                "#",
+                "/"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "Answer: C",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming - Writing algorithms & Pseudo code - Single line and multiline comments - Introduction to C: Structure of the C program - Input and output statements. Variables and identifiers, Constants, Keywords - Values, Names, Scope, Binding, Storage Classes - Numeric Data types: integer, floating point Non-Numeric Data types: char and string - L value and R value in expression, Increment and decrement operator - Comma, Arrow and Assignment operator, Bitwise and Size-of operator - Arithmetic, Relational and logical Operators - Condition Operators, Operator Precedence - Expressions with pre / post increment operator."
         },
         {
             "question_number": "5",
-            "question_text": "Execution ends with a _______\nA) }\nB) getch()\nC) putch()\nD) ;",
+            "question_text": "Execution ends with a _______",
+            "options": [
+                "}",
+                "getch()",
+                "putch()",
+                ";"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "Answer: A",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming - Writing algorithms & Pseudo code - Single line and multiline comments - Introduction to C: Structure of the C program - Input and output statements. Variables and identifiers, Constants, Keywords - Values, Names, Scope, Binding, Storage Classes - Numeric Data types: integer, floating point Non-Numeric Data types: char and string - L value and R value in expression, Increment and decrement operator - Comma, Arrow and Assignment operator, Bitwise and Size-of operator - Arithmetic, Relational and logical Operators - Condition Operators, Operator Precedence - Expressions with pre / post increment operator."
         },
         {
             "question_number": "6",
-            "question_text": "Which of the following is not a valid C variable name?\na) int number;\nb) float rate;\nc) int variable_count;\nd) int $main;",
+            "question_text": "Which of the following is not a valid C variable name?",
+            "options": [
+                "int number;",
+                "float rate;",
+                "int variable_count;",
+                "int $main;"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "Answer: D",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming - Writing algorithms & Pseudo code - Single line and multiline comments - Introduction to C: Structure of the C program - Input and output statements. Variables and identifiers, Constants, Keywords - Values, Names, Scope, Binding, Storage Classes - Numeric Data types: integer, floating point Non-Numeric Data types: char and string - L value and R value in expression, Increment and decrement operator - Comma, Arrow and Assignment operator, Bitwise and Size-of operator - Arithmetic, Relational and logical Operators - Condition Operators, Operator Precedence - Expressions with pre / post increment operator."
         },
         {
             "question_number": "7",
-            "question_text": "What is the sizeof(char) in a 32-bit C compiler?\na) 1 bit\nb) 2 bits\nc) 1 Byte\nd) 2 Bytes",
+            "question_text": "What is the sizeof(char) in a 32-bit C compiler?",
+            "options": [
+                "1 bit",
+                "2 bits",
+                "1 Byte",
+                "2 Bytes"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "Answer: C",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming - Writing algorithms & Pseudo code - Single line and multiline comments - Introduction to C: Structure of the C program - Input and output statements. Variables and identifiers, Constants, Keywords - Values, Names, Scope, Binding, Storage Classes - Numeric Data types: integer, floating point Non-Numeric Data types: char and string - L value and R value in expression, Increment and decrement operator - Comma, Arrow and Assignment operator, Bitwise and Size-of operator - Arithmetic, Relational and logical Operators - Condition Operators, Operator Precedence - Expressions with pre / post increment operator."
         },
         {
             "question_number": "8",
-            "question_text": "Which one is true/false\nStatement 1: C Supports for Graphics\nStatement 2: C Supports large number of Operators\nA) Both are false\nB) Both are true\nC) Statement 1 is true, statement 2 is false\nD) Statement 2 is true, statement 1 is false",
+            "question_text": "Which one is true/false\nStatement 1: C Supports for Graphics\nStatement 2: C Supports large number of Operators",
+            "options": [
+                "Both are false",
+                "Both are true",
+                "Statement 1 is true, statement 2 is false",
+                "Statement 2 is true, statement 1 is false"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "Answer: B",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming - Writing algorithms & Pseudo code - Single line and multiline comments - Introduction to C: Structure of the C program - Input and output statements. Variables and identifiers, Constants, Keywords - Values, Names, Scope, Binding, Storage Classes - Numeric Data types: integer, floating point Non-Numeric Data types: char and string - L value and R value in expression, Increment and decrement operator - Comma, Arrow and Assignment operator, Bitwise and Size-of operator - Arithmetic, Relational and logical Operators - Condition Operators, Operator Precedence - Expressions with pre / post increment operator."
         },
         {
             "question_number": "9",
-            "question_text": "Which one of the following is not a keyword in C programming?\nA. auto\nB. extern\nC. global\nD. register",
+            "question_text": "Which one of the following is not a keyword in C programming?",
+            "options": [
+                "auto",
+                "extern",
+                "global",
+                "register"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "Answer: C",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming - Writing algorithms & Pseudo code - Single line and multiline comments - Introduction to C: Structure of the C program - Input and output statements. Variables and identifiers, Constants, Keywords - Values, Names, Scope, Binding, Storage Classes - Numeric Data types: integer, floating point Non-Numeric Data types: char and string - L value and R value in expression, Increment and decrement operator - Comma, Arrow and Assignment operator, Bitwise and Size-of operator - Arithmetic, Relational and logical Operators - Condition Operators, Operator Precedence - Expressions with pre / post increment operator."
         },
         {
             "question_number": "10",
-            "question_text": "Which of the following will not valid expressions in C?\na) a=2+(b=5);\nb) a=11%3;\nc) a=b=c=5;\nd) b+5=2;",
+            "question_text": "Which of the following will not valid expressions in C?",
+            "options": [
+                "a=2+(b=5);",
+                "a=11%3;",
+                "a=b=c=5;",
+                "b+5=2;"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "Answer: D",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming - Writing algorithms & Pseudo code - Single line and multiline comments - Introduction to C: Structure of the C program - Input and output statements. Variables and identifiers, Constants, Keywords - Values, Names, Scope, Binding, Storage Classes - Numeric Data types: integer, floating point Non-Numeric Data types: char and string - L value and R value in expression, Increment and decrement operator - Comma, Arrow and Assignment operator, Bitwise and Size-of operator - Arithmetic, Relational and logical Operators - Condition Operators, Operator Precedence - Expressions with pre / post increment operator."
         },
         {
             "question_number": "11",
-            "question_text": "Identify the operator that returns amount of memory assigned for a variable\nA) sizeof()\nB) conditional operator\nC) relational operator\nD) logical operator",
+            "question_text": "Identify the operator that returns amount of memory assigned for a variable",
+            "options": [
+                "sizeof()",
+                "conditional operator",
+                "relational operator",
+                "logical operator"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "Answer: sizeof()",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming - Writing algorithms & Pseudo code - Single line and multiline comments - Introduction to C: Structure of the C program - Input and output statements. Variables and identifiers, Constants, Keywords - Values, Names, Scope, Binding, Storage Classes - Numeric Data types: integer, floating point Non-Numeric Data types: char and string - L value and R value in expression, Increment and decrement operator - Comma, Arrow and Assignment operator, Bitwise and Size-of operator - Arithmetic, Relational and logical Operators - Condition Operators, Operator Precedence - Expressions with pre / post increment operator."
         },
         {
             "question_number": "12",
-            "question_text": "Which symbol is been used for processing in flowchart?\na) Parallelogram (Input/Output)\nb) Rectangle (Process)\nc) Diamond (Decision)\nd) Oval (Start/End)",
+            "question_text": "Which symbol is been used for processing in flowchart?",
+            "options": [
+                "Parallelogram (Input/Output)",
+                "Rectangle (Process)",
+                "Diamond (Decision)",
+                "Oval (Start/End)"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "Answer: B",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming - Writing algorithms & Pseudo code - Single line and multiline comments - Introduction to C: Structure of the C program - Input and output statements. Variables and identifiers, Constants, Keywords - Values, Names, Scope, Binding, Storage Classes - Numeric Data types: integer, floating point Non-Numeric Data types: char and string - L value and R value in expression, Increment and decrement operator - Comma, Arrow and Assignment operator, Bitwise and Size-of operator - Arithmetic, Relational and logical Operators - Condition Operators, Operator Precedence - Expressions with pre / post increment operator."
         },
         {
             "question_number": "13",
-            "question_text": "Value of A, B and C in the following code snippet is\n\n```c\nint A=10, B, C;\nB = --A;\nC = A--;\n```\n\na. 9, 10, 10\nb. 10, 9, 8\nc. 9, 9, 8\nd. 8, 9, 9",
+            "question_text": "Value of A, B and C in the following code snippet is\n\n```c\nint A=10, B, C;\nB = --A;\nC = A--;\n```",
+            "options": [
+                "9, 10, 10",
+                "10, 9, 8",
+                "9, 9, 8",
+                "8, 9, 9"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "Answer: D",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming - Writing algorithms & Pseudo code - Single line and multiline comments - Introduction to C: Structure of the C program - Input and output statements. Variables and identifiers, Constants, Keywords - Values, Names, Scope, Binding, Storage Classes - Numeric Data types: integer, floating point Non-Numeric Data types: char and string - L value and R value in expression, Increment and decrement operator - Comma, Arrow and Assignment operator, Bitwise and Size-of operator - Arithmetic, Relational and logical Operators - Condition Operators, Operator Precedence - Expressions with pre / post increment operator."
         },
         {
             "question_number": "14",
-            "question_text": "Predict the output of the following code:\n\n```c\n#include <stdio.h>\nint main(void) {\nint if=10;\nprintf(\"%d\",if*if);\nreturn 0;\n}\n```\n\nA) 10\nB) Compiler error\nC) 100\nD) 0",
+            "question_text": "Predict the output of the following code:\n\n```c\n#include <stdio.h>\nint main(void) {\nint if=10;\nprintf(\"%d\",if*if);\nreturn 0;\n}\n```",
+            "options": [
+                "10",
+                "Compiler error",
+                "100",
+                "0"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "Answer: B",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming - Writing algorithms & Pseudo code - Single line and multiline comments - Introduction to C: Structure of the C program - Input and output statements. Variables and identifiers, Constants, Keywords - Values, Names, Scope, Binding, Storage Classes - Numeric Data types: integer, floating point Non-Numeric Data types: char and string - L value and R value in expression, Increment and decrement operator - Comma, Arrow and Assignment operator, Bitwise and Size-of operator - Arithmetic, Relational and logical Operators - Condition Operators, Operator Precedence - Expressions with pre / post increment operator."
         },
         {
             "question_number": "15",
-            "question_text": "Predict the value of the variable “count” at the end of program execution.\n\n```c\n#include <stdio.h>\nvoid main()\n{\nint count=100;\n{\nint count=10;\nprintf(\"%d\\t\",count);\n}\nprintf(\"%d\",count);\n}\n```\n\nA) 10\t100\nB) 100\t10\nC) 10\t10\nD) 100\t100",
+            "question_text": "Predict the value of the variable “count” at the end of program execution.\n\n```c\n#include <stdio.h>\nvoid main()\n{\nint count=100;\n{\nint count=10;\nprintf(\"%d\\t\",count);\n}\nprintf(\"%d\",count);\n}\n```",
+            "options": [
+                "10\t100",
+                "100\t10",
+                "10\t10",
+                "100\t100"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "Answer: A",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming - Writing algorithms & Pseudo code - Single line and multiline comments - Introduction to C: Structure of the C program - Input and output statements. Variables and identifiers, Constants, Keywords - Values, Names, Scope, Binding, Storage Classes - Numeric Data types: integer, floating point Non-Numeric Data types: char and string - L value and R value in expression, Increment and decrement operator - Comma, Arrow and Assignment operator, Bitwise and Size-of operator - Arithmetic, Relational and logical Operators - Condition Operators, Operator Precedence - Expressions with pre / post increment operator."
         },

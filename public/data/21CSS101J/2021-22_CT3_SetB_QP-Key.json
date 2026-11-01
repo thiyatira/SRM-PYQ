@@ -4,81 +4,151 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "In C, if you pass an array as an argument to a function, what actually gets passed?\na) The entire array\nb) The number of elements in the array\nc) Base address of the array\nd) The last element of the array",
+            "question_text": "In C, if you pass an array as an argument to a function, what actually gets passed?",
+            "options": [
+                "The entire array",
+                "The number of elements in the array",
+                "Base address of the array",
+                "The last element of the array"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "c) Base address of the array",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 3: Function prototype declaration, function definition"
         },
         {
             "question_number": "2",
-            "question_text": "At which stage the following code #include<stdio.h> gets replaced by the contents of the file stdio.h?\na) During Preprocessing\nb) During Compilation\nc) During Linking\nd) During Execution",
+            "question_text": "At which stage the following code #include<stdio.h> gets replaced by the contents of the file stdio.h?",
+            "options": [
+                "During Preprocessing",
+                "During Compilation",
+                "During Linking",
+                "During Execution"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "a) During Preprocessing",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Introduction to C: Structure of the C program"
         },
         {
             "question_number": "3",
-            "question_text": "How many numbers of pointer (*) does C have against a pointer variable declaration?\na) Only one\nb) Two\nc) Three\nd) No limits.",
+            "question_text": "How many numbers of pointer (*) does C have against a pointer variable declaration?",
+            "options": [
+                "Only one",
+                "Two",
+                "Three",
+                "No limits."
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "d) No limits.",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 2: Pointer Declaration and dereferencing"
         },
         {
             "question_number": "4",
-            "question_text": "Predict the output of the given code snippet\n\n```c\n#include <stdio.h>\nvoid foo(int*);\nint main()\n{\nint i= 10, *p = &i;\nfoo(p++);\n}\nvoid foo(int *p)\n{\nprintf(\"%d\\n\", *p);\n}\n```\n\na) 10\nb) 11\nc) Garbage value\nd) Compilation error",
+            "question_text": "Predict the output of the given code snippet\n\n```c\n#include <stdio.h>\nvoid foo(int*);\nint main()\n{\nint i= 10, *p = &i;\nfoo(p++);\n}\nvoid foo(int *p)\n{\nprintf(\"%d\\n\", *p);\n}\n```",
+            "options": [
+                "10",
+                "11",
+                "Garbage value",
+                "Compilation error"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "a) 10",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 2: Pointer Declaration and dereferencing"
         },
         {
             "question_number": "5",
-            "question_text": "What is the output of this C code?\n\n```c\n#include <stdio.h>\nvoid main()\n{\nint k = 5;\nint *p = &k;\nint **m = &p;\n**m = 6;\nprintf(\"%d\\n\", k);\n}\n```\n\na) 5\nb) 0\nc) 6\nd) Compilation error",
+            "question_text": "What is the output of this C code?\n\n```c\n#include <stdio.h>\nvoid main()\n{\nint k = 5;\nint *p = &k;\nint **m = &p;\n**m = 6;\nprintf(\"%d\\n\", k);\n}\n```",
+            "options": [
+                "5",
+                "0",
+                "6",
+                "Compilation error"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "c) 6",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 2: Pointer Declaration and dereferencing"
         },
         {
             "question_number": "6",
-            "question_text": "Identify the output of the following program\n\n```c\nint main() {\nstruct {\nint color[10];\nboat1, boat2;\n}boat_ship;\nboat_ship.boat1 = 10; boat2 = boat1;\nprintf(\"boat2=%d\", boat2.size); return 0;\n}\n```\n\na) boat2=0\nb) boat2=~1\nc) boat2=10\nd) Compiler error",
+            "question_text": "Identify the output of the following program\n\n```c\nint main() {\nstruct {\nint color[10];\nboat1, boat2;\n}boat_ship;\nboat_ship.boat1 = 10; boat2 = boat1;\nprintf(\"boat2=%d\", boat2.size); return 0;\n}\n```",
+            "options": [
+                "boat2=0",
+                "boat2=~1",
+                "boat2=10",
+                "Compiler error"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "C",
-            "answer_source": "provided",
+            "answer": "The code does not compile: the member declaration `boat1, boat2;` inside the struct is invalid, `boat2` and `boat1` are not declared as variables in `main`, and `boat2.size` is not a member. So the result is a compiler error. (The printed key listed option c.)",
+            "answer_source": "generated",
             "chapter": "Unit 1: Numeric Data types: integer, floating point Non-Numeric Data types: char and string"
         },
         {
             "question_number": "7",
-            "question_text": "The size of the following union declaration is----- (Assuming size of double = 8, size of int = 4, size of char = 1)\n\n```c\n#include <stdio.h>\n```\n\nunion uTemp\n\n```c\n{\ndouble a; int b[10]; char c;\n}u;\n```\n\na) 4\nb) 8\nc) 40\nd) 80",
+            "question_text": "The size of the following union declaration is----- (Assuming size of double = 8, size of int = 4, size of char = 1)\n\n```c\n#include <stdio.h>\n```\n\nunion uTemp\n\n```c\n{\ndouble a; int b[10]; char c;\n}u;\n```",
+            "options": [
+                "4",
+                "8",
+                "40",
+                "80"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "C",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 2: One Dimensional (1D) Array Declaration and initialization"
         },
         {
             "question_number": "8",
-            "question_text": "What will be the output of the following C code?\n\n```c\n#include <stdio.h>\ntypedef int integer;\nint main()\n{\ninteger i = 10, *ptr;\nfloat f = 20, integer j=1;\nptr = &j; printf(\"%d\\n\", *ptr); return 0;\n}\n```\n\na) 200\nb) 100\nc) 20\nd) 10",
+            "question_text": "What will be the output of the following C code?\n\n```c\n#include <stdio.h>\ntypedef int integer;\nint main()\n{\ninteger i = 10, *ptr;\nfloat f = 20, integer j=1;\nptr = &j; printf(\"%d\\n\", *ptr); return 0;\n}\n```",
+            "options": [
+                "200",
+                "100",
+                "20",
+                "10"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "D",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 2: Pointer Declaration and dereferencing"
         },
         {
             "question_number": "9",
-            "question_text": "Choose a correct syntax for FSCANF and FPRINTF in C language.\na) fprintf(\"format specifier\",variables), fp); fscanf(\"format specifier\",variables, fp);\nb) fprintf(fp,count,\"format specifier\",variables); fscanf(fp,count, \"format specifier\",variables);\nc) fprintf(fp,\"format specifier\",variables); fscanf(fp,\"format specifier\",variables);\nd) fprintf(fp,\"format specifier\",variables); fscanf(\"format specifier\",variables);",
+            "question_text": "Choose a correct syntax for FSCANF and FPRINTF in C language.",
+            "options": [
+                "fprintf(\"format specifier\",variables), fp); fscanf(\"format specifier\",variables, fp);",
+                "fprintf(fp,count,\"format specifier\",variables); fscanf(fp,count, \"format specifier\",variables);",
+                "fprintf(fp,\"format specifier\",variables); fscanf(fp,\"format specifier\",variables);",
+                "fprintf(fp,\"format specifier\",variables); fscanf(\"format specifier\",variables);"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "C",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Input and output statements"
         },
         {
             "question_number": "10",
-            "question_text": "What is the output of this C code?\n\n```c\n#include <stdio.h>\n#include <stdlib.h>\nint main()\n{\nint *ptr1, *ptr2;\nptr1 = malloc(4); *ptr1 = 10;\n*ptr2 = free(ptr1); printf(\"%d\\n\",*ptr2);\nreturn 0;\n}\n```\n\na) 10\nb) It will print the address stored in ptr1\nc) It will print the address stored in ptr2\nd) It will give an error",
+            "question_text": "What is the output of this C code?\n\n```c\n#include <stdio.h>\n#include <stdlib.h>\nint main()\n{\nint *ptr1, *ptr2;\nptr1 = malloc(4); *ptr1 = 10;\n*ptr2 = free(ptr1); printf(\"%d\\n\",*ptr2);\nreturn 0;\n}\n```",
+            "options": [
+                "10",
+                "It will print the address stored in ptr1",
+                "It will print the address stored in ptr2",
+                "It will give an error"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "D",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 2: Pointer Declaration and dereferencing"
         },

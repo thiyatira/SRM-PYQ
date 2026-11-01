@@ -5,161 +5,301 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Elements in an array are accessed\n(A) Randomly\n(B) Sequentially\n(C) Exponentially\n(D) Logarithmically",
+            "question_text": "Elements in an array are accessed",
+            "options": [
+                "Randomly",
+                "Sequentially",
+                "Exponentially",
+                "Logarithmically"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Randomly\n\n**Rationale:** Arrays support constant time $O(1)$ random access to any element via its index because the memory is contiguous.",
+            "answer": "Arrays support constant time $O(1)$ random access to any element via its index because the memory is contiguous.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Introduction"
         },
         {
             "question_number": "2",
-            "question_text": "What will be the output of the following 'c' code?\n\n```c\nstruct student\n{\n  char *c;\n};\nvoid main ()\n{\n  struct student *s;\n  s -> c = \"hello\";\n  printf (\"%s\", s->c);\n}\n\n```\n\n(A) hello\n(B) Segmentation fault\n(C) Run time error\n(D) Nothing",
+            "question_text": "What will be the output of the following 'c' code?\n\n```c\nstruct student\n{\n  char *c;\n};\nvoid main ()\n{\n  struct student *s;\n  s -> c = \"hello\";\n  printf (\"%s\", s->c);\n}\n\n```",
+            "options": [
+                "hello",
+                "Segmentation fault",
+                "Run time error",
+                "Nothing"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Segmentation fault\n\n**Rationale:** The pointer `s` of type `struct student *` is a wild pointer that is not initialized to point to any valid memory address. Dereferencing it using `s->c` causes a segmentation fault at runtime.",
+            "answer": "The pointer `s` of type `struct student *` is a wild pointer that is not initialized to point to any valid memory address. Dereferencing it using `s->c` causes a segmentation fault at runtime.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Introduction"
         },
         {
             "question_number": "3",
-            "question_text": "The continue statement cannot be used with\n(A) for\n(B) while\n(C) do while\n(D) switch",
+            "question_text": "The continue statement cannot be used with",
+            "options": [
+                "for",
+                "while",
+                "do while",
+                "switch"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) switch\n\n**Rationale:** The `continue` statement is used to skip the current iteration of a loop (`for`, `while`, or `do-while`). It has no meaning and cannot be used directly within a `switch` block unless the `switch` is nested inside a loop.",
+            "answer": "The `continue` statement is used to skip the current iteration of a loop (`for`, `while`, or `do-while`). It has no meaning and cannot be used directly within a `switch` block unless the `switch` is nested inside a loop.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Introduction"
         },
         {
             "question_number": "4",
-            "question_text": "Which of these best describes an array?\n(A) A data structure that shows a hierarchical behaviour\n(B) Container of objects of similar types\n(C) Arrays are immutable once initialized\n(D) Array is not a data structure",
+            "question_text": "Which of these best describes an array?",
+            "options": [
+                "A data structure that shows a hierarchical behaviour",
+                "Container of objects of similar types",
+                "Arrays are immutable once initialized",
+                "Array is not a data structure"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Container of objects of similar types\n\n**Rationale:** An array is defined as a collection of homogeneous (similar) data elements stored in contiguous memory locations.",
+            "answer": "An array is defined as a collection of homogeneous (similar) data elements stored in contiguous memory locations.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Introduction"
         },
         {
             "question_number": "5",
-            "question_text": "Which of the following is an example of linear DS?\n(A) Tree\n(B) Linked list\n(C) Queue\n(D) Linked list and queue",
+            "question_text": "Which of the following is an example of linear DS?",
+            "options": [
+                "Tree",
+                "Linked list",
+                "Queue",
+                "Linked list and queue"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Linked list and queue\n\n**Rationale:** In linear data structures, elements are arranged sequentially or linearly. Both linked lists and queues are linear, whereas trees are non-linear (hierarchical) data structures.",
+            "answer": "In linear data structures, elements are arranged sequentially or linearly. Both linked lists and queues are linear, whereas trees are non-linear (hierarchical) data structures.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Introduction"
         },
         {
             "question_number": "6",
-            "question_text": "In linked list implementation a node carries information regarding.\n(A) Data\n(B) Link\n(C) Data and link\n(D) Node",
+            "question_text": "In linked list implementation a node carries information regarding.",
+            "options": [
+                "Data",
+                "Link",
+                "Data and link",
+                "Node"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Data and link\n\n**Rationale:** Each node in a linked list consists of at least two fields: one for storing the actual data (payload) and another for storing a pointer/link to the next node.",
+            "answer": "Each node in a linked list consists of at least two fields: one for storing the actual data (payload) and another for storing a pointer/link to the next node.",
             "answer_source": "generated",
             "chapter": "Unit 2 - List Structure"
         },
         {
             "question_number": "7",
-            "question_text": "Which of the following is false about a circular linked list?\n(A) Every node has a successor\n(B) Time complexity of inserting a new node at the head of the list is O(1)\n(C) Time complexity for deleting the last node is O(n)\n(D) We can traverse the whole circular linked list starting from any point",
+            "question_text": "Which of the following is false about a circular linked list?",
+            "options": [
+                "Every node has a successor",
+                "Time complexity of inserting a new node at the head of the list is O(1)",
+                "Time complexity for deleting the last node is O(n)",
+                "We can traverse the whole circular linked list starting from any point"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Time complexity of inserting a new node at the head of the list is O(1)\n\n**Rationale:** In a standard circular linked list with only a `head` pointer, inserting a new node at the head requires traversing to the last node to update its `next` pointer to point to the new head. This operation takes $O(n)$ time. (If a `tail` pointer is maintained, it can be optimized to $O(1)$, but in general, without extra references, it is $O(n)$).",
+            "answer": "In a standard circular linked list with only a `head` pointer, inserting a new node at the head requires traversing to the last node to update its `next` pointer to point to the new head. This operation takes $O(n)$ time. (If a `tail` pointer is maintained, it can be optimized to $O(1)$, but in general, without extra references, it is $O(n)$).",
             "answer_source": "generated",
             "chapter": "Unit 2 - List Structure"
         },
         {
             "question_number": "8",
-            "question_text": "Which of the following application makes use of a circular linked list?\n(A) Undo operation in a text editor\n(B) Recursive function calls\n(C) Allocating CPU to resources\n(D) Implement hash tables",
+            "question_text": "Which of the following application makes use of a circular linked list?",
+            "options": [
+                "Undo operation in a text editor",
+                "Recursive function calls",
+                "Allocating CPU to resources",
+                "Implement hash tables"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Allocating CPU to resources\n\n**Rationale:** Round-robin CPU scheduling allocates fixed time slots to processes in a circular cycle, which is naturally implemented using a circular queue or circular linked list.",
+            "answer": "Round-robin CPU scheduling allocates fixed time slots to processes in a circular cycle, which is naturally implemented using a circular queue or circular linked list.",
             "answer_source": "generated",
             "chapter": "Unit 2 - List Structure"
         },
         {
             "question_number": "9",
-            "question_text": "The data structure required to check whether an expression contains balanced parenthesis is?\n(A) Stack\n(B) Queue\n(C) Array\n(D) Tree",
+            "question_text": "The data structure required to check whether an expression contains balanced parenthesis is?",
+            "options": [
+                "Stack",
+                "Queue",
+                "Array",
+                "Tree"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Stack\n\n**Rationale:** Stacks utilize the Last-In-First-Out (LIFO) property. When scanning an expression, opening parentheses are pushed onto the stack, and closing parentheses trigger a pop, verifying the correct nesting sequence.",
+            "answer": "Stacks utilize the Last-In-First-Out (LIFO) property. When scanning an expression, opening parentheses are pushed onto the stack, and closing parentheses trigger a pop, verifying the correct nesting sequence.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Stack and Queue"
         },
         {
             "question_number": "10",
-            "question_text": "The prefix form of $A-B/(C*D\\wedge E)$ is?\n(A) $-/\\ast\\wedge ACBDE$\n(B) $-ABCD\\ast\\wedge DE$\n(C) $-A/B\\ast C\\wedge DE$\n(D) $-A/BC\\ast\\wedge DE$",
+            "question_text": "The prefix form of $A-B/(C*D\\wedge E)$ is?",
+            "options": [
+                "$-/\\ast\\wedge ACBDE$",
+                "$-ABCD\\ast\\wedge DE$",
+                "$-A/B\\ast C\\wedge DE$",
+                "$-A/BC\\ast\\wedge DE$"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) $-A/B\\ast C\\wedge DE$\n\n**Rationale:** Let's convert step-by-step using order of operations:\n1. Parenthesis $(C * D \\wedge E)$: Since exponentiation $\\wedge$ has higher precedence than multiplication $*$, we evaluate $D \\wedge E \\rightarrow \\wedge D E$.\n2. Then multiplication: $C * (\\wedge D E) \\rightarrow \\ast C \\wedge D E$.\n3. Now the expression is $A - B / (\\ast C \\wedge D E)$.\n4. Division has higher precedence than subtraction: $B / (\\ast C \\wedge D E) \\rightarrow / B \\ast C \\wedge D E$.\n5. Finally, subtraction: $A - (/ B \\ast C \\wedge D E) \\rightarrow - A / B ∗ C \\wedge D E$.",
+            "answer": "Convert step by step using operator precedence:\n1. Inside the parentheses, $\\wedge$ binds tighter than $*$: $D \\wedge E \\rightarrow \\wedge D E$.\n2. Then $C * (\\wedge D E) \\rightarrow \\ast C \\wedge D E$.\n3. Now the expression is $A - B / (\\ast C \\wedge D E)$.\n4. Division binds tighter than subtraction: $B / (\\ast C \\wedge D E) \\rightarrow / B \\ast C \\wedge D E$.\n5. Finally $A - (/ B \\ast C \\wedge D E) \\rightarrow - A / B \\ast C \\wedge D E$.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Stack and Queue"
         },
         {
             "question_number": "11",
-            "question_text": "A queue follows\n(A) FIFO (First In First Out) principle\n(B) LIFO (Last In Last Out) principle\n(C) Ordered array\n(D) Linear tree",
+            "question_text": "A queue follows",
+            "options": [
+                "FIFO (First In First Out) principle",
+                "LIFO (Last In Last Out) principle",
+                "Ordered array",
+                "Linear tree"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) FIFO (First In First Out) principle\n\n**Rationale:** A queue is a linear structure where elements are inserted at the rear (enqueue) and removed from the front (dequeue), maintaining chronological FIFO ordering.",
+            "answer": "A queue is a linear structure where elements are inserted at the rear (enqueue) and removed from the front (dequeue), maintaining chronological FIFO ordering.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Stack and Queue"
         },
         {
             "question_number": "12",
-            "question_text": "A normal queue, if implemented using an array of size max_size, gets full when?\n(A) Rear = max_size -1\n(B) Front = (rear -1) mod max_size\n(C) Front = rear + 1\n(D) Rear = front",
+            "question_text": "A normal queue, if implemented using an array of size max_size, gets full when?",
+            "options": [
+                "Rear = max_size -1",
+                "Front = (rear -1) mod max_size",
+                "Front = rear + 1",
+                "Rear = front"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Rear = max_size - 1\n\n**Rationale:** In a standard linear (non-circular) queue array implementation, the array is full when the `rear` index reaches the last index of the array, which is `max_size - 1`.",
+            "answer": "In a standard linear (non-circular) queue array implementation, the array is full when the `rear` index reaches the last index of the array, which is `max_size - 1`.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Stack and Queue"
         },
         {
             "question_number": "13",
-            "question_text": "What is complete binary tree?\n(A) Each node has exactly zero or two children\n(B) Binary tree, which is completely filled with possible exception of the bottom level which is filled from right to left\n(C) A binary tree, which is completely filled with the possible exception of the bottom level, which is filled from left to right\n(D) A tree in which all nodes have degree Z",
+            "question_text": "What is complete binary tree?",
+            "options": [
+                "Each node has exactly zero or two children",
+                "Binary tree, which is completely filled with possible exception of the bottom level which is filled from right to left",
+                "A binary tree, which is completely filled with the possible exception of the bottom level, which is filled from left to right",
+                "A tree in which all nodes have degree Z"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) A binary tree, which is completely filled with the possible exception of the bottom level, which is filled from left to right\n\n**Rationale:** A complete binary tree is a binary tree in which every level, except possibly the last, is completely filled, and all nodes in the last level are as far left as possible.",
+            "answer": "A complete binary tree is a binary tree in which every level, except possibly the last, is completely filled, and all nodes in the last level are as far left as possible.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Trees and Hashing"
         },
         {
             "question_number": "14",
-            "question_text": "In a _____, the value of the left node must be smaller than the parent node and value of the right node must be greater then the parent node.\n(A) Full binary tree\n(B) Complete binary tree\n(C) Binary search tree\n(D) Balanced binary tree",
+            "question_text": "In a _____, the value of the left node must be smaller than the parent node and value of the right node must be greater then the parent node.",
+            "options": [
+                "Full binary tree",
+                "Complete binary tree",
+                "Binary search tree",
+                "Balanced binary tree"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Binary search tree\n\n**Rationale:** By definition, a Binary Search Tree (BST) is a node-based binary tree data structure where the left subtree of a node contains only nodes with keys lesser than the parent node's key, and the right subtree contains only nodes with keys greater.",
+            "answer": "By definition, a Binary Search Tree (BST) is a node-based binary tree data structure where the left subtree of a node contains only nodes with keys lesser than the parent node's key, and the right subtree contains only nodes with keys greater.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Trees and Hashing"
         },
         {
             "question_number": "15",
-            "question_text": "Find the post order traversal of the binary tree shown below?\n[Note: Tree structure: Root P; Left Q (with left S, right T (with left W)); Right R (with left U, right V)]\n(A) PQRSTUVWX\n(B) WRSQPVTUX\n(C) SWTQUVRP\n(D) STWUXVQRP",
+            "question_text": "Find the post order traversal of the binary tree shown below?\n[Note: Tree structure: Root P; Left Q (with left S, right T (with left W)); Right R (with left U, right V)]",
+            "options": [
+                "PQRSTUVWX",
+                "WRSQPVTUX",
+                "SWTQUVRP",
+                "STWUXVQRP"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) SWTQUVRP\n\n**Rationale:** Post-order traversal follows the rule: Left Subtree, Right Subtree, Root.\n- Let's traverse the left subtree rooted at Q:\n  - Left child: S\n  - Right child: T (its left is W, so post-order of subtree T is W -> T)\n  - Root: Q\n  - Combined left subtree traversal: S, W, T, Q\n- Let's traverse the right subtree rooted at R:\n  - Left child: U\n  - Right child: V\n  - Root: R\n  - Combined right subtree traversal: U, V, R\n- Finally, visit Root: P\n- Combining everything: S, W, T, Q, U, V, R, P.",
+            "answer": "Post-order traversal follows the rule: Left Subtree, Right Subtree, Root.\n- Let's traverse the left subtree rooted at Q:\n  - Left child: S\n  - Right child: T (its left is W, so post-order of subtree T is W -> T)\n  - Root: Q\n  - Combined left subtree traversal: S, W, T, Q\n- Let's traverse the right subtree rooted at R:\n  - Left child: U\n  - Right child: V\n  - Root: R\n  - Combined right subtree traversal: U, V, R\n- Finally, visit Root: P\n- Combining everything: S, W, T, Q, U, V, R, P.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Trees and Hashing"
         },
         {
             "question_number": "16",
-            "question_text": "What is a hash function?\n(A) A function has allocated memory to keys\n(B) A function that computes the location of the key in the array\n(C) A function that creates an array\n(D) A function that computes the location of the values in the array",
+            "question_text": "What is a hash function?",
+            "options": [
+                "A function has allocated memory to keys",
+                "A function that computes the location of the key in the array",
+                "A function that creates an array",
+                "A function that computes the location of the values in the array"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) A function that computes the location of the key in the array\n\n**Rationale:** A hash function takes a key as an input and maps it to a specific index (location) in the hash table array where the key-value pair can be stored.",
+            "answer": "A hash function takes a key as an input and maps it to a specific index (location) in the hash table array where the key-value pair can be stored.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Trees and Hashing"
         },
         {
             "question_number": "17",
-            "question_text": "For the adjacency matrix of a directed graph, the row sum is the _______ degree and the column sum is the _______ degree.\n(A) In, out\n(B) Out, in\n(C) In, total\n(D) Total, out",
+            "question_text": "For the adjacency matrix of a directed graph, the row sum is the _______ degree and the column sum is the _______ degree.",
+            "options": [
+                "In, out",
+                "Out, in",
+                "In, total",
+                "Total, out"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Out, in\n\n**Rationale:** In a directed graph's adjacency matrix $M$, an entry $M[i][j] = 1$ indicates a directed edge from vertex $i$ to vertex $j$. Thus, the sum of elements in row $i$ gives the number of outgoing edges (out-degree) from vertex $i$, and the sum of elements in column $j$ gives the number of incoming edges (in-degree) to vertex $j$.",
+            "answer": "In a directed graph's adjacency matrix $M$, an entry $M[i][j] = 1$ indicates a directed edge from vertex $i$ to vertex $j$. Thus, the sum of elements in row $i$ gives the number of outgoing edges (out-degree) from vertex $i$, and the sum of elements in column $j$ gives the number of incoming edges (in-degree) to vertex $j$.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Graph"
         },
         {
             "question_number": "18",
-            "question_text": "What sequence would the BFS traversal of the given graph yield?\n[Note: Graph vertices: A, B, C, D, E, F with edges A->B, A->D, B->C, D->E, E->F]\n(A) AFDBCE\n(B) CABAFED\n(C) ABDCEF\n(D) EFDCBA",
+            "question_text": "What sequence would the BFS traversal of the given graph yield?\n[Note: Graph vertices: A, B, C, D, E, F with edges A->B, A->D, B->C, D->E, E->F]",
+            "options": [
+                "AFDBCE",
+                "CABAFED",
+                "ABDCEF",
+                "EFDCBA"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) ABDCEF\n\n**Rationale:** BFS explores neighbors level-by-level starting from the source node A:\n- Level 0: A\n- Level 1 (Neighbors of A): B, D\n- Level 2 (Neighbors of B and D): C (from B), E (from D)\n- Level 3 (Neighbor of E): F\nThis results in the sequence: A, B, D, C, E, F.",
+            "answer": "BFS explores neighbors level-by-level starting from the source node A:\n- Level 0: A\n- Level 1 (Neighbors of A): B, D\n- Level 2 (Neighbors of B and D): C (from B), E (from D)\n- Level 3 (Neighbor of E): F\nThis results in the sequence: A, B, D, C, E, F.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Graph"
         },
         {
             "question_number": "19",
-            "question_text": "Consider the graph below, which of the following are the edges in the MST of the given graph?\n(A) (a-c) (c-d) (d-b) (d-b)\n(B) (c-a) (a-d) (d-b) (d-e)\n(C) (a-d) (d-c) (d-b) (d-e)\n(D) (c-a) (a-d) (d-c) (d-b) (d-e)",
+            "question_text": "Consider the graph below, which of the following are the edges in the MST of the given graph?",
+            "options": [
+                "(a-c) (c-d) (d-b) (d-b)",
+                "(c-a) (a-d) (d-b) (d-e)",
+                "(a-d) (d-c) (d-b) (d-e)",
+                "(c-a) (a-d) (d-c) (d-b) (d-e)"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) (a-d) (d-c) (d-b) (d-e)\n\n**Rationale:** Applying Kruskal's or Prim's algorithm on the graph:\n- Sorted edge weights (approximated from visual representations):\n  - (d, c) = 4\n  - (a, d) = 6\n  - (a, c) = 9\n  - (d, b) = 15\n  - (d, e) = 20\n  - (a, b) = 26\n- Selecting minimum weight edges without creating cycles:\n  1. Select (d, c) [weight 4]\n  2. Select (a, d) [weight 6]\n  3. Select (d, b) [weight 15]\n  4. Select (d, e) [weight 20]\nThis connects all nodes {a, b, c, d, e} with 4 edges, yielding option (C).",
+            "answer": "Applying Kruskal's or Prim's algorithm on the graph:\n- Sorted edge weights (approximated from visual representations):\n  - (d, c) = 4\n  - (a, d) = 6\n  - (a, c) = 9\n  - (d, b) = 15\n  - (d, e) = 20\n  - (a, b) = 26\n- Selecting minimum weight edges without creating cycles:\n  1. Select (d, c) [weight 4]\n  2. Select (a, d) [weight 6]\n  3. Select (d, b) [weight 15]\n  4. Select (d, e) [weight 20]\nThis connects all nodes {a, b, c, d, e} with 4 edges, yielding option (C).",
             "answer_source": "generated",
             "chapter": "Unit 5 - Graph"
         },
         {
             "question_number": "20",
-            "question_text": "Which of the following is not the algorithm to find the minimum spanning tree of the given graph?\n(A) Boruvka's algorithm\n(B) Prims algorithm\n(C) Kruskal's algorithm\n(D) Bellman-Ford algorithm",
+            "question_text": "Which of the following is not the algorithm to find the minimum spanning tree of the given graph?",
+            "options": [
+                "Boruvka's algorithm",
+                "Prims algorithm",
+                "Kruskal's algorithm",
+                "Bellman-Ford algorithm"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Bellman-Ford algorithm\n\n**Rationale:** Bellman-Ford is a single-source shortest path algorithm (capable of handling negative edge weights). Boruvka's, Prim's, and Kruskal's are algorithms designed to find a Minimum Spanning Tree (MST).",
+            "answer": "Bellman-Ford is a single-source shortest path algorithm (capable of handling negative edge weights). Boruvka's, Prim's, and Kruskal's are algorithms designed to find a Minimum Spanning Tree (MST).",
             "answer_source": "generated",
             "chapter": "Unit 5 - Graph"
         },

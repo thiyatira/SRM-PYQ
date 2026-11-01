@@ -5,9 +5,16 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Consider an array arr = [10, 20, 30, 40, 50] with index starting at 0. \nWhat is the output of the following loop?\n\n```\ni ← 0 \nwhile i < 5 do \n    print(arr[i]) \n    i ← i + arr[i] % 3 \nend while\n\n```\n\nA. 10 20 30 40 50\nB. Infinite Loop\nC. 10 20 30 50\nD. 10 20 30",
+            "question_text": "Consider an array arr = [10, 20, 30, 40, 50] with index starting at 0. \nWhat is the output of the following loop?\n\n```\ni ← 0 \nwhile i < 5 do \n    print(arr[i]) \n    i ← i + arr[i] % 3 \nend while\n\n```",
+            "options": [
+                "10 20 30 40 50",
+                "Infinite Loop",
+                "10 20 30 50",
+                "10 20 30"
+            ],
+            "correct_option": null,
             "marks": null,
-            "answer": "Correct Output: 10 20 40 50\n\n**Explanation:**\n- **Iteration 1**: `i = 0`. Prints `arr[0]` which is `10`. `i` becomes `0 + (10 % 3) = 0 + 1 = 1`.\n- **Iteration 2**: `i = 1`. Prints `arr[1]` which is `20`. `i` becomes `1 + (20 % 3) = 1 + 2 = 3`.\n- **Iteration 3**: `i = 3`. Prints `arr[3]` which is `40`. `i` becomes `3 + (40 % 3) = 3 + 1 = 4`.\n- **Iteration 4**: `i = 4`. Prints `arr[4]` which is `50`. `i` becomes `4 + (50 % 3) = 4 + 2 = 6`.\n- **End of Loop**: Since `i = 6` is not less than 5, the loop terminates.\n\n*Note: Option A, B, C, D as printed contain a typographical error where the exact sequence is missing, but the official correct answer provided is **10 20 40 50**.*",
+            "answer": "The correct output is 10 20 40 50, which does not match any of the printed options (the options contain a typographical error).\n- Iteration 1: `i = 0`. Prints `arr[0]` which is `10`. `i` becomes `0 + (10 % 3) = 1`.\n- Iteration 2: `i = 1`. Prints `arr[1]` which is `20`. `i` becomes `1 + (20 % 3) = 3`.\n- Iteration 3: `i = 3`. Prints `arr[3]` which is `40`. `i` becomes `3 + (40 % 3) = 4`.\n- Iteration 4: `i = 4`. Prints `arr[4]` which is `50`. `i` becomes `4 + (50 % 3) = 6`.\n- Since `i = 6` is not less than 5, the loop terminates.",
             "answer_source": "provided",
             "chapter": "Unit 1: Introduction"
         },
@@ -21,9 +28,16 @@
         },
         {
             "question_number": "3",
-            "question_text": "Consider a circular queue of capacity 5. Initially, front = -1 and rear = -1. After the following operations: enqueue(10), enqueue(20), dequeue(), enqueue(30), enqueue(40), enqueue(50), what will be the final values of front and rear (assuming 0-indexed array)?\n\nA. front = 1, rear = 4\nB. front = 1, rear = 0\nC. front = 2, rear = 0\nD. front = 2, rear = 1",
+            "question_text": "Consider a circular queue of capacity 5. Initially, front = -1 and rear = -1. After the following operations: enqueue(10), enqueue(20), dequeue(), enqueue(30), enqueue(40), enqueue(50), what will be the final values of front and rear (assuming 0-indexed array)?",
+            "options": [
+                "front = 1, rear = 4",
+                "front = 1, rear = 0",
+                "front = 2, rear = 0",
+                "front = 2, rear = 1"
+            ],
+            "correct_option": "A",
             "marks": null,
-            "answer": "A. front = 1, rear = 4\n\n**Explanation:**\n1. `enqueue(10)` -> front = 0, rear = 0, array: `[10, _, _, _, _]`\n2. `enqueue(20)` -> front = 0, rear = 1, array: `[10, 20, _, _, _]`\n3. `dequeue()` -> front = 1, rear = 1, array: `[_, 20, _, _, _]`\n4. `enqueue(30)` -> front = 1, rear = 2, array: `[_, 20, 30, _, _]`\n5. `enqueue(40)` -> front = 1, rear = 3, array: `[_, 20, 30, 40, _]`\n6. `enqueue(50)` -> front = 1, rear = 4, array: `[_, 20, 30, 40, 50]`",
+            "answer": "1. `enqueue(10)` -> front = 0, rear = 0, array: `[10, _, _, _, _]`\n2. `enqueue(20)` -> front = 0, rear = 1, array: `[10, 20, _, _, _]`\n3. `dequeue()` -> front = 1, rear = 1, array: `[_, 20, _, _, _]`\n4. `enqueue(30)` -> front = 1, rear = 2, array: `[_, 20, 30, _, _]`\n5. `enqueue(40)` -> front = 1, rear = 3, array: `[_, 20, 30, 40, _]`\n6. `enqueue(50)` -> front = 1, rear = 4, array: `[_, 20, 30, 40, 50]`",
             "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },

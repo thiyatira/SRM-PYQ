@@ -5,161 +5,301 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "How many bits are used to represent each decimal digit in BCD?\n(A) 2 bits\n(B) 3 bits\n(C) 4 bits\n(D) 8 bits",
+            "question_text": "How many bits are used to represent each decimal digit in BCD?",
+            "options": [
+                "2 bits",
+                "3 bits",
+                "4 bits",
+                "8 bits"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) 4 bits\n\nRationale: Each decimal digit 0–9 is coded in 4 bits (8421).",
+            "answer": "Each decimal digit 0–9 is coded in 4 bits (8421).",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "2",
-            "question_text": "Convert the binary number 0110011 into its 2's complement.\n(A) 1001000\n(B) 1001101\n(C) 1001100\n(D) 0110011",
+            "question_text": "Convert the binary number 0110011 into its 2's complement.",
+            "options": [
+                "1001000",
+                "1001101",
+                "1001100",
+                "0110011"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) 1001101\n\nRationale: 1's complement 1001100 + 1 = 1001101.",
+            "answer": "1's complement 1001100 + 1 = 1001101.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "3",
-            "question_text": "High level design is exhibited in\n(A) Computer Architecture\n(B) Computer Organization\n(C) Computer BIOS\n(D) Computer Architecture and Organization",
+            "question_text": "High level design is exhibited in",
+            "options": [
+                "Computer Architecture",
+                "Computer Organization",
+                "Computer BIOS",
+                "Computer Architecture and Organization"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Computer Architecture\n\nRationale: Architecture is the high-level (programmer-visible) design; organization is its implementation.",
+            "answer": "Architecture is the high-level (programmer-visible) design; organization is its implementation.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "4",
-            "question_text": "Generate the gray code for the binary number 1010.\n(A) 1111\n(B) 1001\n(C) 1100\n(D) 1000",
+            "question_text": "Generate the gray code for the binary number 1010.",
+            "options": [
+                "1111",
+                "1001",
+                "1100",
+                "1000"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) 1111\n\nRationale: $G_3=1$, $1\\oplus0=1$, $0\\oplus1=1$, $1\\oplus0=1$ → 1111.",
+            "answer": "$G_3=1$, $1\\oplus0=1$, $0\\oplus1=1$, $1\\oplus0=1$ → 1111.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "5",
-            "question_text": "The program should be in ______ memory at the time of execution.\n(A) Primary\n(B) Secondary\n(C) Floppy Disk\n(D) Pen drive",
+            "question_text": "The program should be in ______ memory at the time of execution.",
+            "options": [
+                "Primary",
+                "Secondary",
+                "Floppy Disk",
+                "Pen drive"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Primary\n\nRationale: A program must be loaded into primary (main) memory to be executed.",
+            "answer": "A program must be loaded into primary (main) memory to be executed.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "6",
-            "question_text": "The instruction Store R4, LOC will do which of the following?\n(A) copies the operand in memory location LOC to processor register R4\n(B) copies the operand in processor register R4 to memory location LOC\n(C) copies the operand in memory location LOC\n(D) copies the operand in processor register R4",
+            "question_text": "The instruction Store R4, LOC will do which of the following?",
+            "options": [
+                "copies the operand in memory location LOC to processor register R4",
+                "copies the operand in processor register R4 to memory location LOC",
+                "copies the operand in memory location LOC",
+                "copies the operand in processor register R4"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) copies the operand in processor register R4 to memory location LOC\n\nRationale: Store transfers register contents to memory: $LOC \\leftarrow [R4]$.",
+            "answer": "Store transfers register contents to memory: $LOC \\leftarrow [R4]$.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "7",
-            "question_text": "The control line of the Bus is\n(A) uni-directional\n(B) bi-directional\n(C) multi-directional\n(D) un-directional",
+            "question_text": "The control line of the Bus is",
+            "options": [
+                "uni-directional",
+                "bi-directional",
+                "multi-directional",
+                "un-directional"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) bi-directional\n\nRationale: The control bus as a whole is bi-directional: some control signals go from processor to devices (Read/Write) and others come back (e.g. MFC, interrupt requests).",
+            "answer": "The control bus as a whole is bi-directional: some control signals go from processor to devices (Read/Write) and others come back (e.g. MFC, interrupt requests).",
             "answer_source": "generated",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "8",
-            "question_text": "The instruction to be currently executed is stored in\n(A) MDR\n(B) IR\n(C) PC\n(D) MAR",
+            "question_text": "The instruction to be currently executed is stored in",
+            "options": [
+                "MDR",
+                "IR",
+                "PC",
+                "MAR"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) IR\n\nRationale: The Instruction Register holds the instruction being executed; PC holds the address of the next one.",
+            "answer": "The Instruction Register holds the instruction being executed; PC holds the address of the next one.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "9",
-            "question_text": "In booth recoding, the bits pair (1, 0) are recoded by\n(A) 0\n(B) +1\n(C) -1\n(D) -2",
+            "question_text": "In booth recoding, the bits pair (1, 0) are recoded by",
+            "options": [
+                "0",
+                "+1",
+                "-1",
+                "-2"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) -1\n\nRationale: Bit pair $(Q_i, Q_{i-1}) = (1,0)$ marks the start of a run of 1s → recoded as −1 (subtract multiplicand).",
+            "answer": "Bit pair $(Q_i, Q_{i-1}) = (1,0)$ marks the start of a run of 1s → recoded as −1 (subtract multiplicand).",
             "answer_source": "generated",
             "chapter": "Unit 3: Design of ALU"
         },
         {
             "question_number": "10",
-            "question_text": "The mantissa is also called as\n(A) Mnemonics\n(B) Significand\n(C) Symbols\n(D) Numbers",
+            "question_text": "The mantissa is also called as",
+            "options": [
+                "Mnemonics",
+                "Significand",
+                "Symbols",
+                "Numbers"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Significand\n\nRationale: The mantissa is also known as the significand.",
+            "answer": "The mantissa is also known as the significand.",
             "answer_source": "generated",
             "chapter": "Unit 3: Design of ALU"
         },
         {
             "question_number": "11",
-            "question_text": "The full adder can add a maximum of ______ bits.\n(A) 1\n(B) 2\n(C) 3\n(D) 0",
+            "question_text": "The full adder can add a maximum of ______ bits.",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "0"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) 3\n\nRationale: A full adder adds three 1-bit inputs: A, B and Cin.",
+            "answer": "A full adder adds three 1-bit inputs: A, B and Cin.",
             "answer_source": "generated",
             "chapter": "Unit 3: Design of ALU"
         },
         {
             "question_number": "12",
-            "question_text": "The double precision of the IEEE floating point number can be represented by\n(A) 16 bits\n(B) 24 bits\n(C) 32 bits\n(D) 64 bits",
+            "question_text": "The double precision of the IEEE floating point number can be represented by",
+            "options": [
+                "16 bits",
+                "24 bits",
+                "32 bits",
+                "64 bits"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) 64 bits\n\nRationale: IEEE 754 double precision: 64 bits (1 + 11 + 52).",
+            "answer": "IEEE 754 double precision: 64 bits (1 + 11 + 52).",
             "answer_source": "generated",
             "chapter": "Unit 3: Design of ALU"
         },
         {
             "question_number": "13",
-            "question_text": "The micro routine for all instructions are stored in special memory called\n(A) Micro instructions\n(B) Control store\n(C) Instruction store\n(D) Control word",
+            "question_text": "The micro routine for all instructions are stored in special memory called",
+            "options": [
+                "Micro instructions",
+                "Control store",
+                "Instruction store",
+                "Control word"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Control store\n\nRationale: Microroutines are kept in the control store (control memory).",
+            "answer": "Microroutines are kept in the control store (control memory).",
             "answer_source": "generated",
             "chapter": "Unit 4: Control Unit"
         },
         {
             "question_number": "14",
-            "question_text": "The ______ signal permits the processor to hold off until the memory operation is completed.\n(A) MFC\n(B) WFMC\n(C) WMFC\n(D) ALB",
+            "question_text": "The ______ signal permits the processor to hold off until the memory operation is completed.",
+            "options": [
+                "MFC",
+                "WFMC",
+                "WMFC",
+                "ALB"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) WMFC\n\nRationale: WMFC (Wait for Memory Function Completed) makes the processor wait until MFC is received.",
+            "answer": "WMFC (Wait for Memory Function Completed) makes the processor wait until MFC is received.",
             "answer_source": "generated",
             "chapter": "Unit 4: Control Unit"
         },
         {
             "question_number": "15",
-            "question_text": "The situation wherein the data of operands are not available is called ______\n(A) Structural hazard\n(B) Deadlock\n(C) Stall\n(D) Data hazard",
+            "question_text": "The situation wherein the data of operands are not available is called ______",
+            "options": [
+                "Structural hazard",
+                "Deadlock",
+                "Stall",
+                "Data hazard"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Data hazard\n\nRationale: When an operand is not yet available because a previous instruction has not produced it, it is a data hazard.",
+            "answer": "When an operand is not yet available because a previous instruction has not produced it, it is a data hazard.",
             "answer_source": "generated",
             "chapter": "Unit 4: Control Unit"
         },
         {
             "question_number": "16",
-            "question_text": "The pipelining process is also called as\n(A) Superscalar operation\n(B) Assembly line operation\n(C) Von Neumann Cycle\n(D) Instruction Sequencing",
+            "question_text": "The pipelining process is also called as",
+            "options": [
+                "Superscalar operation",
+                "Assembly line operation",
+                "Von Neumann Cycle",
+                "Instruction Sequencing"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Assembly line operation\n\nRationale: Pipelining resembles an assembly line.",
+            "answer": "Pipelining resembles an assembly line.",
             "answer_source": "generated",
             "chapter": "Unit 4: Control Unit"
         },
         {
             "question_number": "17",
-            "question_text": "MIMD stands for\n(A) Multiple Instruction Multiple Decoding\n(B) Multiple Instruction Multiple Data\n(C) Multiple Information Multiple Decoding\n(D) Multiple Information Multiple Data",
+            "question_text": "MIMD stands for",
+            "options": [
+                "Multiple Instruction Multiple Decoding",
+                "Multiple Instruction Multiple Data",
+                "Multiple Information Multiple Decoding",
+                "Multiple Information Multiple Data"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Multiple Instruction Multiple Data\n\nRationale: Flynn's taxonomy: Multiple Instruction, Multiple Data.",
+            "answer": "Flynn's taxonomy: Multiple Instruction, Multiple Data.",
             "answer_source": "generated",
             "chapter": "Unit 5: Parallelism"
         },
         {
             "question_number": "18",
-            "question_text": "The Von Neumann architecture is based on\n(A) SIMD\n(B) SISD\n(C) MIMD\n(D) MISD",
+            "question_text": "The Von Neumann architecture is based on",
+            "options": [
+                "SIMD",
+                "SISD",
+                "MIMD",
+                "MISD"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) SISD\n\nRationale: A Von Neumann uniprocessor executes a single instruction stream on a single data stream.",
+            "answer": "A Von Neumann uniprocessor executes a single instruction stream on a single data stream.",
             "answer_source": "generated",
             "chapter": "Unit 5: Parallelism"
         },
         {
             "question_number": "19",
-            "question_text": "The ARM core uses ______ architecture.\n(A) EPIC\n(B) CPIC\n(C) RISC\n(D) CISC",
+            "question_text": "The ARM core uses ______ architecture.",
+            "options": [
+                "EPIC",
+                "CPIC",
+                "RISC",
+                "CISC"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) RISC\n\nRationale: ARM is a RISC architecture.",
+            "answer": "ARM is a RISC architecture.",
             "answer_source": "generated",
             "chapter": "Unit 5: Parallelism"
         },
         {
             "question_number": "20",
-            "question_text": "ARM processor core is of ______ bits.\n(A) 24\n(B) 32\n(C) 48\n(D) 128",
+            "question_text": "ARM processor core is of ______ bits.",
+            "options": [
+                "24",
+                "32",
+                "48",
+                "128"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) 32\n\nRationale: Classic ARM cores are 32-bit (32-bit registers, data path and instructions).",
+            "answer": "Classic ARM cores are 32-bit (32-bit registers, data path and instructions).",
             "answer_source": "generated",
             "chapter": "Unit 5: Parallelism"
         },

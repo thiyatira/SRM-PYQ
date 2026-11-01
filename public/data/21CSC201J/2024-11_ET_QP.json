@@ -5,161 +5,301 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "____ are the set of definitions that allow us to use the functions while hiding the implementation\nA) Abstract Data Types\nB) Algorithms\nC) Referential Structures\nD) Datatypes",
+            "question_text": "____ are the set of definitions that allow us to use the functions while hiding the implementation",
+            "options": [
+                "Abstract Data Types",
+                "Algorithms",
+                "Referential Structures",
+                "Datatypes"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "A) Abstract Data Types. ADTs define only the interface and behavior of data structures without specifying their implementation details, thus hiding the execution logic.",
+            "answer": "ADTs define only the interface and behavior of data structures without specifying their implementation details, thus hiding the execution logic.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Introduction"
         },
         {
             "question_number": "2",
-            "question_text": "What is the output if it is executed on a 32 bit processor?\n\n```c\nvoid main()\n{\nint *p;\np = (int *)malloc(20);\nprintf(\"%d\", sizeof(p));\n}\n\n```\n\nA) 2\nB) 4\nC) 8\nD) Compiler dependent",
+            "question_text": "What is the output if it is executed on a 32 bit processor?\n\n```c\nvoid main()\n{\nint *p;\np = (int *)malloc(20);\nprintf(\"%d\", sizeof(p));\n}\n\n```",
+            "options": [
+                "2",
+                "4",
+                "8",
+                "Compiler dependent"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "B) 4. On a 32-bit processor, a pointer variable (such as `int *p`) occupies exactly 4 bytes of memory, regardless of the size of dynamic memory allocated to it.",
+            "answer": "On a 32-bit processor, a pointer variable (such as `int *p`) occupies exactly 4 bytes of memory, regardless of the size of dynamic memory allocated to it.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Introduction"
         },
         {
             "question_number": "3",
-            "question_text": "Which of the following functions allocates multiple blocks of memory, each block of the same size?\nA) malloc()\nB) realloc()\nC) calloc()\nD) free()",
+            "question_text": "Which of the following functions allocates multiple blocks of memory, each block of the same size?",
+            "options": [
+                "malloc()",
+                "realloc()",
+                "calloc()",
+                "free()"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "C) calloc(). The standard library function `calloc` takes two parameters (number of blocks and size of each block) and allocates memory dynamically, initializing all bytes to zero.",
+            "answer": "The standard library function `calloc` takes two parameters (number of blocks and size of each block) and allocates memory dynamically, initializing all bytes to zero.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Introduction"
         },
         {
             "question_number": "4",
-            "question_text": "We can certainly deduce the _______ scenario of an algorithm from its asymptotic analysis.\nA) Best case\nB) Best, worst and average cases\nC) Worst case\nD) Average case",
+            "question_text": "We can certainly deduce the _______ scenario of an algorithm from its asymptotic analysis.",
+            "options": [
+                "Best case",
+                "Best, worst and average cases",
+                "Worst case",
+                "Average case"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "B) Best, worst and average cases. Asymptotic analysis uses mathematical notations (Big O, Omega, Theta) to characterize the scaling behavior of an algorithm under all execution scenarios.",
+            "answer": "Asymptotic analysis uses mathematical notations (Big O, Omega, Theta) to characterize the scaling behavior of an algorithm under all execution scenarios.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Introduction"
         },
         {
             "question_number": "5",
-            "question_text": "Identify the correct option for creating a node in linked list at first time\nA) ptr = (struct node) malloc(sizeof(struct node *));\nB) ptr = (struct node *)calloc(sizeof(struct node *));\nC) ptr = (struct node *)malloc(sizeof(struct node));\nD) ptr = (struct node *) calloc (size(struct node));",
+            "question_text": "Identify the correct option for creating a node in linked list at first time",
+            "options": [
+                "ptr = (struct node) malloc(sizeof(struct node *));",
+                "ptr = (struct node *)calloc(sizeof(struct node *));",
+                "ptr = (struct node *)malloc(sizeof(struct node));",
+                "ptr = (struct node *) calloc (size(struct node));"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "C) ptr = (struct node *)malloc(sizeof(struct node));. To allocate memory for a list node, you must allocate the size of the structure itself (`sizeof(struct node)`) and cast the returned pointer to a node pointer (`struct node *`).",
+            "answer": "To allocate memory for a list node, you must allocate the size of the structure itself (`sizeof(struct node)`) and cast the returned pointer to a node pointer (`struct node *`).",
             "answer_source": "generated",
             "chapter": "Unit 2 - List Structure"
         },
         {
             "question_number": "6",
-            "question_text": "The matrix contains m rows and n columns. The matrix is called Sparse Matrix if\nA) Total number of Zero elements > (m*n)/2\nB) Total number of Zero elements = m + n\nC) Total number of Zero elements = m/n\nD) Total number of Zero elements = m-n",
+            "question_text": "The matrix contains m rows and n columns. The matrix is called Sparse Matrix if",
+            "options": [
+                "Total number of Zero elements > (m*n)/2",
+                "Total number of Zero elements = m + n",
+                "Total number of Zero elements = m/n",
+                "Total number of Zero elements = m-n"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "A) Total number of Zero elements > (m*n)/2. A sparse matrix is defined as a matrix in which the majority of its elements are zero (typically, more than half of the total $m \\times n$ positions).",
+            "answer": "A sparse matrix is defined as a matrix in which the majority of its elements are zero (typically, more than half of the total $m \\times n$ positions).",
             "answer_source": "generated",
             "chapter": "Unit 2 - List Structure"
         },
         {
             "question_number": "7",
-            "question_text": "Find out the correct option when adding a new node into the end of list\nA) Head is made to point to the new node, New node points to the previously first element\nB) Last node now points to the new node, New node points to NULL\nC) Previous node now points to the new node, New node points to the next node\nD) Last node now points to the new node, New node points to the previously first element",
+            "question_text": "Find out the correct option when adding a new node into the end of list",
+            "options": [
+                "Head is made to point to the new node, New node points to the previously first element",
+                "Last node now points to the new node, New node points to NULL",
+                "Previous node now points to the new node, New node points to the next node",
+                "Last node now points to the new node, New node points to the previously first element"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "B) Last node now points to the new node, New node points to NULL. To append a node to the end of a singly linked list, the previous terminal node's next-pointer is updated to link to the new node, and the new node's next-pointer is set to NULL.",
+            "answer": "To append a node to the end of a singly linked list, the previous terminal node's next-pointer is updated to link to the new node, and the new node's next-pointer is set to NULL.",
             "answer_source": "generated",
             "chapter": "Unit 2 - List Structure"
         },
         {
             "question_number": "8",
-            "question_text": "Which of the following is a practical example of a doubly linked list\nA) A browser cookie file\nB) A quest in a game that lets users retry stages\nC) A game in which the player runs forward\nD) A first-in-first-out scheduling system",
+            "question_text": "Which of the following is a practical example of a doubly linked list",
+            "options": [
+                "A browser cookie file",
+                "A quest in a game that lets users retry stages",
+                "A game in which the player runs forward",
+                "A first-in-first-out scheduling system"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "B) A quest in a game that lets users retry stages. In game flow design, a doubly linked list allows players to navigate both forward (to the next stage) and backward (to retry/replay previous stages).",
+            "answer": "In game flow design, a doubly linked list allows players to navigate both forward (to the next stage) and backward (to retry/replay previous stages).",
             "answer_source": "generated",
             "chapter": "Unit 2 - List Structure"
         },
         {
             "question_number": "9",
-            "question_text": "A stack data structure cannot be used for\nA) Implementation of Recursive Function\nB) Allocation Resources and Scheduling\nC) Reversing string\nD) Evaluation of string in postfix form",
+            "question_text": "A stack data structure cannot be used for",
+            "options": [
+                "Implementation of Recursive Function",
+                "Allocation Resources and Scheduling",
+                "Reversing string",
+                "Evaluation of string in postfix form"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "B) Allocation Resources and Scheduling. Resource allocation and process scheduling tasks require First-In-First-Out (FIFO) behavior, which is implemented using Queues rather than Stacks.",
+            "answer": "Resource allocation and process scheduling tasks require First-In-First-Out (FIFO) behavior, which is implemented using Queues rather than Stacks.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Stack and Queue"
         },
         {
             "question_number": "10",
-            "question_text": "The five following names Allen, Brindha, Chitra, Divya and Elon are pushed in a stack, one after another starting from Allen. The stack is popped four times and each name is inserted in a Queue. Then two names are deleted from the Queue and pushed back on the stack. Now one name is popped from stack. The popped name is\nA) Allen\nB) Brindha\nC) Chitra\nD) Divya",
+            "question_text": "The five following names Allen, Brindha, Chitra, Divya and Elon are pushed in a stack, one after another starting from Allen. The stack is popped four times and each name is inserted in a Queue. Then two names are deleted from the Queue and pushed back on the stack. Now one name is popped from stack. The popped name is",
+            "options": [
+                "Allen",
+                "Brindha",
+                "Chitra",
+                "Divya"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "D) Divya. \nTrace:\n1. Stack: [Allen, Brindha, Chitra, Divya, Elon] (Elon is Top)\n2. Pop 4 times: Elon, Divya, Chitra, Brindha are popped and inserted into Queue.\n   Queue (front to rear): [Elon, Divya, Chitra, Brindha]. Stack remaining: [Allen]\n3. Delete 2 names from Queue: Elon, then Divya. These are pushed back to Stack.\n   Stack (bottom to top): [Allen, Elon, Divya]\n4. Pop once from Stack: Divya is popped.",
+            "answer": "Trace:\n1. Stack: [Allen, Brindha, Chitra, Divya, Elon] (Elon is Top)\n2. Pop 4 times: Elon, Divya, Chitra, Brindha are popped and inserted into Queue.\n   Queue (front to rear): [Elon, Divya, Chitra, Brindha]. Stack remaining: [Allen]\n3. Delete 2 names from Queue: Elon, then Divya. These are pushed back to Stack.\n   Stack (bottom to top): [Allen, Elon, Divya]\n4. Pop once from Stack: Divya is popped.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Stack and Queue"
         },
         {
             "question_number": "11",
-            "question_text": "If the elements \"A\", \"B\", \"C\" and \"D\" are placed in a queue and are deleted one at a time, in what order will they be removed?\nA) ABCD\nB) DCBA\nC) DCAB\nD) ABDC",
+            "question_text": "If the elements \"A\", \"B\", \"C\" and \"D\" are placed in a queue and are deleted one at a time, in what order will they be removed?",
+            "options": [
+                "ABCD",
+                "DCBA",
+                "DCAB",
+                "ABDC"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "A) ABCD. Queues process elements strictly under First-In, First-Out (FIFO) rules, which means elements are removed in the identical sequence of their insertion.",
+            "answer": "Queues process elements strictly under First-In, First-Out (FIFO) rules, which means elements are removed in the identical sequence of their insertion.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Stack and Queue"
         },
         {
             "question_number": "12",
-            "question_text": "Identify the Postfix form of following expression. D + (E * F ^ G)\nA) DFG^E * +\nB) DEFG^* +\nC) GFED^ *+\nD) GF^E* D+",
+            "question_text": "Identify the Postfix form of following expression. D + (E * F ^ G)",
+            "options": [
+                "DFG^E * +",
+                "DEFG^* +",
+                "GFED^ *+",
+                "GF^E* D+"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "B) DEFG^* +. \nDerivation:\n$D + (E * (F \\wedge G))$\n$= D + (E * (FG\\wedge))$\n$= D + (EFG\\wedge*)$\n$= DEFG\\wedge*+$",
+            "answer": "Derivation:\n$D + (E * (F \\wedge G))$\n$= D + (E * (FG\\wedge))$\n$= D + (EFG\\wedge*)$\n$= DEFG\\wedge*+$",
             "answer_source": "generated",
             "chapter": "Unit 3 - Stack and Queue"
         },
         {
             "question_number": "13",
-            "question_text": "Which one is the correct In-order traversal for the given tree\n\n```text\n1\n   /   \\\n  2     3\n / \\     \\\n4   5     6\n\n```\n\nA) 1->2->3->4->5->6\nB) 4->2->5->1->3->6\nC) 4->5->2->6->3->1\nD) 4->2->5->3->6->1",
+            "question_text": "Which one is the correct In-order traversal for the given tree\n\n```text\n1\n   /   \\\n  2     3\n / \\     \\\n4   5     6\n\n```",
+            "options": [
+                "1->2->3->4->5->6",
+                "4->2->5->1->3->6",
+                "4->5->2->6->3->1",
+                "4->2->5->3->6->1"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "B) 4->2->5->1->3->6. In-order traversal follows the pattern: Left subtree, Root, Right subtree. For this tree, we traverse node 2's left child (4), node 2, node 2's right child (5), root node 1, and node 3's subtree (3 then 6).",
+            "answer": "In-order traversal follows the pattern: Left subtree, Root, Right subtree. For this tree, we traverse node 2's left child (4), node 2, node 2's right child (5), root node 1, and node 3's subtree (3 then 6).",
             "answer_source": "generated",
             "chapter": "Unit 4 - Trees and Hashing"
         },
         {
             "question_number": "14",
-            "question_text": "A B-tree of order 4 and of height 3 will have a maximum of ________ keys.\nA) 255\nB) 63\nC) 127\nD) 188",
+            "question_text": "A B-tree of order 4 and of height 3 will have a maximum of ________ keys.",
+            "options": [
+                "255",
+                "63",
+                "127",
+                "188"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "A) 255. In a B-Tree of order $m$ and height $h$ (where the root is at level 0), the maximum number of keys is given by $N = m^{h+1} - 1$. Here, for $m = 4$ and height $h = 3$, the maximum keys are $4^4 - 1 = 255$. (Alternatively, if root is at height 1, max keys = $4^3 - 1 = 63$ (Option B)). Typically, height is counted by edges (height 3 = 4 levels), which yields 255.",
+            "answer": "In a B-Tree of order $m$ and height $h$ (where the root is at level 0), the maximum number of keys is given by $N = m^{h+1} - 1$. Here, for $m = 4$ and height $h = 3$, the maximum keys are $4^4 - 1 = 255$. (Alternatively, if root is at height 1, max keys = $4^3 - 1 = 63$ (Option B)). Typically, height is counted by edges (height 3 = 4 levels), which yields 255.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Trees and Hashing"
         },
         {
             "question_number": "15",
-            "question_text": "What is a hash table?\nA) A structure that maps values to keys\nB) A structure used for storage\nC) A structure that maps keys to values\nD) A structure used to implement stack and queue",
+            "question_text": "What is a hash table?",
+            "options": [
+                "A structure that maps values to keys",
+                "A structure used for storage",
+                "A structure that maps keys to values",
+                "A structure used to implement stack and queue"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "C) A structure that maps keys to values. A hash table uses a mathematical hash function to compute index mappings, matching arbitrary keys directly to their stored values in constant average time.",
+            "answer": "A hash table uses a mathematical hash function to compute index mappings, matching arbitrary keys directly to their stored values in constant average time.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Trees and Hashing"
         },
         {
             "question_number": "16",
-            "question_text": "If several elements are competing for the same bucket in the hash table, what is it called?\nA) Diffusion\nB) Replication\nC) Collision\nD) Duplication",
+            "question_text": "If several elements are competing for the same bucket in the hash table, what is it called?",
+            "options": [
+                "Diffusion",
+                "Replication",
+                "Collision",
+                "Duplication"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "C) Collision. A collision occurs in hashing when two distinct keys hash to the exact same array index.",
+            "answer": "A collision occurs in hashing when two distinct keys hash to the exact same array index.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Trees and Hashing"
         },
         {
             "question_number": "17",
-            "question_text": "Which of the following statements is/are TRUE for an undirected graph?\nP: The number of odd-degree vertices is even\nQ: Sum of degrees of all vertices is even\nA) P Only\nB) Q only\nC) Both P and Q\nD) Neither P nor Q",
+            "question_text": "Which of the following statements is/are TRUE for an undirected graph?\nP: The number of odd-degree vertices is even\nQ: Sum of degrees of all vertices is even",
+            "options": [
+                "P Only",
+                "Q only",
+                "Both P and Q",
+                "Neither P nor Q"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "C) Both P and Q. According to the handshaking lemma, $\\sum deg(v) = 2|E|$, which is always even (making statement Q true). This parity requirement directly implies that the number of vertices with odd degrees must also be even (making statement P true).",
+            "answer": "According to the handshaking lemma, $\\sum deg(v) = 2|E|$, which is always even (making statement Q true). This parity requirement directly implies that the number of vertices with odd degrees must also be even (making statement P true).",
             "answer_source": "generated",
             "chapter": "Unit 5 - Graph"
         },
         {
             "question_number": "18",
-            "question_text": "Consider an undirected unweighted graph G. Let a breadth-first traversal of G be done starting from a node r. Let d(r, u) and d(r, v) be the lengths of the shortest paths from r to u and v respectively, in G. If u is visited before v during the breadth-first traversal, which of the following statements is correct?\nA) d(r, u) < d(r, v)\nB) d(r, u) > d(r, v)\nC) d(r, u) <= d(r, v)\nD) d(r, u) = d(r, v)",
+            "question_text": "Consider an undirected unweighted graph G. Let a breadth-first traversal of G be done starting from a node r. Let d(r, u) and d(r, v) be the lengths of the shortest paths from r to u and v respectively, in G. If u is visited before v during the breadth-first traversal, which of the following statements is correct?",
+            "options": [
+                "d(r, u) < d(r, v)",
+                "d(r, u) > d(r, v)",
+                "d(r, u) <= d(r, v)",
+                "d(r, u) = d(r, v)"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "C) d(r, u) <= d(r, v). BFS visits vertices in non-decreasing order of distance from the source. If $u$ is visited before $v$, the distance of $u$ from the root $r$ must be less than or equal to that of $v$.",
+            "answer": "BFS visits vertices in non-decreasing order of distance from the source. If $u$ is visited before $v$, the distance of $u$ from the root $r$ must be less than or equal to that of $v$.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Graph"
         },
         {
             "question_number": "19",
-            "question_text": "The efficiency of open addressing techniques\nA) Depends on the size of the table and number of elements in the table\nB) Depends on the size of the table\nC) Depends on total number of elements in the table\nD) Depends on the hashing technique",
+            "question_text": "The efficiency of open addressing techniques",
+            "options": [
+                "Depends on the size of the table and number of elements in the table",
+                "Depends on the size of the table",
+                "Depends on total number of elements in the table",
+                "Depends on the hashing technique"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "A) Depends on the size of the table and number of elements in the table. The average search and insertion performance in open addressing depend directly on the load factor $\\alpha = N/M$ (number of elements divided by table capacity).",
+            "answer": "The average search and insertion performance in open addressing depend directly on the load factor $\\alpha = N/M$ (number of elements divided by table capacity).",
             "answer_source": "generated",
             "chapter": "Unit 4 - Trees and Hashing"
         },
         {
             "question_number": "20",
-            "question_text": "Which of the following algorithms is commonly used to find a minimum spanning tree in a connected undirected graph?\nA) Dijkstra's algorithm\nB) Kruskal's algorithm\nC) Bellman-Ford algorithm\nD) Floyal-Warshall algorithm",
+            "question_text": "Which of the following algorithms is commonly used to find a minimum spanning tree in a connected undirected graph?",
+            "options": [
+                "Dijkstra's algorithm",
+                "Kruskal's algorithm",
+                "Bellman-Ford algorithm",
+                "Floyal-Warshall algorithm"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "B) Kruskal's algorithm. Kruskal's is a greedy algorithm designed to find a Minimum Spanning Tree (MST) of a weighted undirected graph by sorting and sequentially evaluating edges.",
+            "answer": "Kruskal's is a greedy algorithm designed to find a Minimum Spanning Tree (MST) of a weighted undirected graph by sorting and sequentially evaluating edges.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Graph"
         },

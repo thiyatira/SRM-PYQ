@@ -4,81 +4,151 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "The five kingdom classification was proposed by\nA) Carl Linnaeus; B) Robert Hooke; C) R. H. Whittaker; D) Charles Darwin",
+            "question_text": "The five kingdom classification was proposed by",
+            "options": [
+                "Carl Linnaeus",
+                "Robert Hooke",
+                "R. H. Whittaker",
+                "Charles Darwin"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "C) R. H. Whittaker. Robert Whittaker proposed the five-kingdom classification (Monera, Protista, Fungi, Plantae, Animalia) in 1969 based on characteristics like cell structure, mode of nutrition, and body organization.",
+            "answer": "Robert Whittaker proposed the five-kingdom classification (Monera, Protista, Fungi, Plantae, Animalia) in 1969 based on characteristics like cell structure, mode of nutrition, and body organization.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
         {
             "question_number": "2",
-            "question_text": "Recall the role of lysosomes in a cell.\nA) Transport of molecules;\nB) Energy storage;\nC) Protein synthesis D) Breaking down cellular waste",
+            "question_text": "Recall the role of lysosomes in a cell.",
+            "options": [
+                "Transport of molecules",
+                "Energy storage",
+                "Protein synthesis",
+                "Breaking down cellular waste"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "D) Breaking down cellular waste. Lysosomes are membrane-bound organelles containing digestive enzymes that break down waste materials, cellular debris, and foreign invaders, acting as the cell's 'recycling center' or 'waste disposal system'.",
+            "answer": "Lysosomes are membrane-bound organelles containing digestive enzymes that break down waste materials, cellular debris, and foreign invaders, acting as the cell's 'recycling center' or 'waste disposal system'.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
         {
             "question_number": "3",
-            "question_text": "State in which phase Cytokinesis begins?\nA) Anaphase; B) Metaphase; C) Prophase; D) Telophase",
+            "question_text": "State in which phase Cytokinesis begins?",
+            "options": [
+                "Anaphase",
+                "Metaphase",
+                "Prophase",
+                "Telophase"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "D) Telophase. Cytokinesis, the division of the cytoplasm, typically begins during anaphase or telophase in animal cells, often becoming clearly visible during telophase as the new nuclei form at opposite poles.",
+            "answer": "Cytokinesis, the division of the cytoplasm, typically begins during anaphase or telophase in animal cells, often becoming clearly visible during telophase as the new nuclei form at opposite poles.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
         {
             "question_number": "4",
-            "question_text": "DNA replication occurs during _____ phase of the cell cycle.\nA) Interphase; B) G1 phase; C) S phase; D) G2 phase",
+            "question_text": "DNA replication occurs during _____ phase of the cell cycle.",
+            "options": [
+                "Interphase",
+                "G1 phase",
+                "S phase",
+                "G2 phase"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "C) S phase. The S (Synthesis) phase of the cell cycle is when DNA replication occurs, resulting in the duplication of the cell's genetic material.",
+            "answer": "The S (Synthesis) phase of the cell cycle is when DNA replication occurs, resulting in the duplication of the cell's genetic material.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
         {
             "question_number": "5",
-            "question_text": "Identify the main function of ribosomes.\nA) DNA replication;\nB) Protein synthesis;\nC) Lipid metabolism D) Transport of molecules",
+            "question_text": "Identify the main function of ribosomes.",
+            "options": [
+                "DNA replication",
+                "Protein synthesis",
+                "Lipid metabolism",
+                "Transport of molecules"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "B) Protein synthesis. Ribosomes are cellular organelles responsible for synthesizing proteins through a process called translation, where they read mRNA sequences and assemble amino acids into polypeptide chains.",
+            "answer": "Ribosomes are cellular organelles responsible for synthesizing proteins through a process called translation, where they read mRNA sequences and assemble amino acids into polypeptide chains.",
             "answer_source": "generated",
             "chapter": "Unit 3: Structure Biology"
         },
         {
             "question_number": "6",
-            "question_text": "Specify the number of amino acids that make up a protein.\nA) 10; B) 20; C) 13; D) 15",
+            "question_text": "Specify the number of amino acids that make up a protein.",
+            "options": [
+                "10",
+                "20",
+                "13",
+                "15"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "B) 20. There are 20 common standard amino acids that serve as the building blocks for nearly all proteins in living organisms.",
+            "answer": "There are 20 common standard amino acids that serve as the building blocks for nearly all proteins in living organisms.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
         {
             "question_number": "7",
-            "question_text": "Recite which of the following is not a variant of BLAST?\nA) BLASTN; B) BLASTP; C) BLASTX; D)TBLASTNX",
+            "question_text": "Recite which of the following is not a variant of BLAST?",
+            "options": [
+                "BLASTN",
+                "BLASTP",
+                "BLASTX",
+                "TBLASTNX"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "D) TBLASTNX. The main variants of BLAST include BLASTN (nucleotide to nucleotide), BLASTP (protein to protein), BLASTX (translated nucleotide to protein), TBLASTN (protein to translated nucleotide), and TBLASTX (translated nucleotide to translated nucleotide). TBLASTNX is not a standard variant.",
+            "answer": "The main variants of BLAST include BLASTN (nucleotide to nucleotide), BLASTP (protein to protein), BLASTX (translated nucleotide to protein), TBLASTN (protein to translated nucleotide), and TBLASTX (translated nucleotide to translated nucleotide). TBLASTNX is not a standard variant.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
         {
             "question_number": "8",
-            "question_text": "Identify the role of Homeostasis.\nA) Cell differentiation; B) Replication of DNA;\nC) Maintenance of stable internal conditions; D) Tissue repair",
+            "question_text": "Identify the role of Homeostasis.",
+            "options": [
+                "Cell differentiation",
+                "Replication of DNA",
+                "Maintenance of stable internal conditions",
+                "Tissue repair"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "C) Maintenance of stable internal conditions. Homeostasis refers to the ability of an organism or cell to maintain stable internal conditions (e.g., temperature, pH, fluid balance) despite changes in the external environment.",
+            "answer": "Homeostasis refers to the ability of an organism or cell to maintain stable internal conditions (e.g., temperature, pH, fluid balance) despite changes in the external environment.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
         {
             "question_number": "9",
-            "question_text": "Recognize the bond used to join the two strands in DNA double helix.\nA) Covalent; B) Hydrogen; C) Ionic; D) Phosphodiester",
+            "question_text": "Recognize the bond used to join the two strands in DNA double helix.",
+            "options": [
+                "Covalent",
+                "Hydrogen",
+                "Ionic",
+                "Phosphodiester"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "B) Hydrogen. The two complementary strands of the DNA double helix are held together by hydrogen bonds between the nitrogenous bases (A with T, and C with G). Phosphodiester bonds link nucleotides within a single strand.",
+            "answer": "The two complementary strands of the DNA double helix are held together by hydrogen bonds between the nitrogenous bases (A with T, and C with G). Phosphodiester bonds link nucleotides within a single strand.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
         {
             "question_number": "10",
-            "question_text": "Restate the nature of an enzyme.\nA) Lipid; B) Vitamin; C) Protein; D) Carbohydrate",
+            "question_text": "Restate the nature of an enzyme.",
+            "options": [
+                "Lipid",
+                "Vitamin",
+                "Protein",
+                "Carbohydrate"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "C) Protein. Enzymes are primarily biological catalysts, and nearly all enzymes are proteins. They accelerate biochemical reactions without being consumed in the process.",
+            "answer": "Enzymes are primarily biological catalysts, and nearly all enzymes are proteins. They accelerate biochemical reactions without being consumed in the process.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },

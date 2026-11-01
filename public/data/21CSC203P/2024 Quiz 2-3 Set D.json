@@ -12,17 +12,31 @@
         },
         {
             "question_number": "2",
-            "question_text": "Which of the following is not a type of JDBC driver?\na) Type 1: JDBC-ODBC Bridge Driver\nb) Type 2: Native-API Driver\nc) Type 3: Network Protocol Driver\nd) Type 5: Database Protocol Driver",
+            "question_text": "Which of the following is not a type of JDBC driver?",
+            "options": [
+                "Type 1: JDBC-ODBC Bridge Driver",
+                "Type 2: Native-API Driver",
+                "Type 3: Network Protocol Driver",
+                "Type 5: Database Protocol Driver"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "Option 4: Type 5: Database Protocol Driver.\n\nExplanation: Standard JDBC driver classifications only range from Type 1 to Type 4 (Type 1: JDBC-ODBC Bridge, Type 2: Native-API, Type 3: Network Protocol, Type 4: Native-Protocol/Thin). Type 5 is not a standard JDBC driver type.",
+            "answer": "Standard JDBC driver classifications only range from Type 1 to Type 4 (Type 1: JDBC-ODBC Bridge, Type 2: Native-API, Type 3: Network Protocol, Type 4: Native-Protocol/Thin). Type 5 is not a standard JDBC driver type.",
             "answer_source": "provided",
             "chapter": "Unit 3: Advanced Java Programming Paradigms"
         },
         {
             "question_number": "3",
-            "question_text": "Which of the following methods is used to move the ResultSet cursor to the next row?\na) next()\nb) move()\nc) getRow()\nd) fetch()",
+            "question_text": "Which of the following methods is used to move the ResultSet cursor to the next row?",
+            "options": [
+                "next()",
+                "move()",
+                "getRow()",
+                "fetch()"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "Option 1: a) next()\n\nExplanation: In JDBC, the `next()` method of the `ResultSet` interface moves the cursor forward one row from its current position and returns true if the new current row is valid.",
+            "answer": "In JDBC, the `next()` method of the `ResultSet` interface moves the cursor forward one row from its current position and returns true if the new current row is valid.",
             "answer_source": "provided",
             "chapter": "Unit 3: Advanced Java Programming Paradigms"
         },
@@ -44,9 +58,16 @@
         },
         {
             "question_number": "6",
-            "question_text": "A ____ control is a dialogue window that allows the user to pick a file?\nA. JChoosFile\nB. JFilefield\nC. JFile\nD. JFileChooser",
+            "question_text": "A ____ control is a dialogue window that allows the user to pick a file?",
+            "options": [
+                "JChoosFile",
+                "JFilefield",
+                "JFile",
+                "JFileChooser"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "Option 4: D. JFileChooser\n\nExplanation: `JFileChooser` is a Java Swing component that presents a GUI dialogue window allowing users to navigate and select files or directories.",
+            "answer": "`JFileChooser` is a Java Swing component that presents a GUI dialogue window allowing users to navigate and select files or directories.",
             "answer_source": "provided",
             "chapter": "Unit 3: Advanced Java Programming Paradigms"
         },

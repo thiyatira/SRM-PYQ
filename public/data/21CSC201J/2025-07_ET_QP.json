@@ -5,161 +5,301 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Elements in an array are accessed\n(A) Randomly\n(B) Sequentially\n(C) Exponentially\n(D) Logarithmically",
+            "question_text": "Elements in an array are accessed",
+            "options": [
+                "Randomly",
+                "Sequentially",
+                "Exponentially",
+                "Logarithmically"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Randomly\n\n**Rationale:** Elements in an array are stored in contiguous memory locations. Using the base address and index, the address of any element can be computed directly in $O(1)$ constant time, allowing random access.",
+            "answer": "Elements in an array are stored in contiguous memory locations. Using the base address and index, the address of any element can be computed directly in $O(1)$ constant time, allowing random access.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
         {
             "question_number": "2",
-            "question_text": "What will be the output of the following 'c' code?\n\n```c\nstruct student\n{\n  char *c;\n};\nvoid main()\n{\n  struct student *s;\n  s->c = \"hello\";\n  printf(\"%s\", s->c);\n}\n\n```\n\n(A) hello\n(B) Segmentation fault\n(C) Run time error\n(D) Nothing",
+            "question_text": "What will be the output of the following 'c' code?\n\n```c\nstruct student\n{\n  char *c;\n};\nvoid main()\n{\n  struct student *s;\n  s->c = \"hello\";\n  printf(\"%s\", s->c);\n}\n\n```",
+            "options": [
+                "hello",
+                "Segmentation fault",
+                "Run time error",
+                "Nothing"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Segmentation fault\n\n**Rationale:** The structure pointer `s` is declared but not initialized to point to any allocated memory space. Hence, it is a wild pointer. Attempting to assign `s->c = \"hello\"` dereferences this uninitialized pointer, leading to a segmentation fault.",
+            "answer": "The structure pointer `s` is declared but not initialized to point to any allocated memory space. Hence, it is a wild pointer. Attempting to assign `s->c = \"hello\"` dereferences this uninitialized pointer, leading to a segmentation fault.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
         {
             "question_number": "3",
-            "question_text": "Consider a hash table with 98 slots. The has function is $h(k) = k \\bmod 9$. The collisions are resolved by chaining. The following 9 keys are inserted in the order: 5, 28, 19, 15, 20, 33, 12, 17, 10. The maximum, minimum and average chain lengths in the hash table, respectively are\n(A) 3, 0 and 1\n(B) 3, 3 and 3\n(C) 4, 0 and 1\n(D) 3, 0 and 2",
+            "question_text": "Consider a hash table with 98 slots. The has function is $h(k) = k \\bmod 9$. The collisions are resolved by chaining. The following 9 keys are inserted in the order: 5, 28, 19, 15, 20, 33, 12, 17, 10. The maximum, minimum and average chain lengths in the hash table, respectively are",
+            "options": [
+                "3, 0 and 1",
+                "3, 3 and 3",
+                "4, 0 and 1",
+                "3, 0 and 2"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) 3, 0 and 1\n\n**Rationale:** \nLet's calculate the hash values for each key using $h(k) = k \\bmod 9$:\n- $h(5) = 5 \\bmod 9 = 5$\n- $h(28) = 28 \\bmod 9 = 1$\n- $h(19) = 19 \\bmod 9 = 1$\n- $h(15) = 15 \\bmod 9 = 6$\n- $h(20) = 20 \\bmod 9 = 2$\n- $h(33) = 33 \\bmod 9 = 6$\n- $h(12) = 12 \\bmod 9 = 3$\n- $h(17) = 17 \\bmod 9 = 8$\n- $h(10) = 10 \\bmod 9 = 1$\n\nDistribution of keys in slots:\n- Slot 1: {28, 19, 10} -> Length = 3 (Maximum)\n- Slot 2: {20} -> Length = 1\n- Slot 3: {12} -> Length = 1\n- Slot 5: {5} -> Length = 1\n- Slot 6: {15, 33} -> Length = 2\n- Slot 8: {17} -> Length = 1\n- Other slots in the 98-slot table are empty -> Minimum Length = 0.\n- Considering the 9 possible hash address slots (0 to 8), the average chain length is $\\text{Total Keys} / \\text{Slots} = 9/9 = 1$. Therefore, Max = 3, Min = 0, Average = 1.",
+            "answer": "Let's calculate the hash values for each key using $h(k) = k \\bmod 9$:\n- $h(5) = 5 \\bmod 9 = 5$\n- $h(28) = 28 \\bmod 9 = 1$\n- $h(19) = 19 \\bmod 9 = 1$\n- $h(15) = 15 \\bmod 9 = 6$\n- $h(20) = 20 \\bmod 9 = 2$\n- $h(33) = 33 \\bmod 9 = 6$\n- $h(12) = 12 \\bmod 9 = 3$\n- $h(17) = 17 \\bmod 9 = 8$\n- $h(10) = 10 \\bmod 9 = 1$\n\nDistribution of keys in slots:\n- Slot 1: {28, 19, 10} -> Length = 3 (Maximum)\n- Slot 2: {20} -> Length = 1\n- Slot 3: {12} -> Length = 1\n- Slot 5: {5} -> Length = 1\n- Slot 6: {15, 33} -> Length = 2\n- Slot 8: {17} -> Length = 1\n- Other slots in the 98-slot table are empty -> Minimum Length = 0.\n- Considering the 9 possible hash address slots (0 to 8), the average chain length is $\\text{Total Keys} / \\text{Slots} = 9/9 = 1$. Therefore, Max = 3, Min = 0, Average = 1.",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
         {
             "question_number": "4",
-            "question_text": "A priority queue is implements as a Max-Heap. Initially, it has 5 elements. The level-order traversal of the heap is: 10, 8, 5, 3, 2. Two new elements 1 and 7 are inserted into the heap in that order. The level-order traversal of the heap after the insertion of the element is\n(A) 10, 8, 7, 3, 2, 1, 5\n(B) 10, 8, 7, 2, 3, 1, 5\n(C) 10, 8, 7, 1, 2, 3, 5\n(D) 10, 8, 7, 5, 3, 2, 1",
+            "question_text": "A priority queue is implements as a Max-Heap. Initially, it has 5 elements. The level-order traversal of the heap is: 10, 8, 5, 3, 2. Two new elements 1 and 7 are inserted into the heap in that order. The level-order traversal of the heap after the insertion of the element is",
+            "options": [
+                "10, 8, 7, 3, 2, 1, 5",
+                "10, 8, 7, 2, 3, 1, 5",
+                "10, 8, 7, 1, 2, 3, 5",
+                "10, 8, 7, 5, 3, 2, 1"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) 10, 8, 7, 3, 2, 1, 5\n\n**Rationale:** \n1. Initial Max-Heap: `[10, 8, 5, 3, 2]`\n2. Insert 1: It is appended as the left child of 5, giving `[10, 8, 5, 3, 2, 1]`. No heapify is needed since $1 \\le 5$.\n3. Insert 7: It is appended as the right child of 5, giving `[10, 8, 5, 3, 2, 1, 7]`. Since $7 > 5$, we swap 7 and 5, resulting in `[10, 8, 7, 3, 2, 1, 5]`. Since $7 < 10$, the heap property is satisfied.",
+            "answer": "1. Initial Max-Heap: `[10, 8, 5, 3, 2]`\n2. Insert 1: It is appended as the left child of 5, giving `[10, 8, 5, 3, 2, 1]`. No heapify is needed since $1 \\le 5$.\n3. Insert 7: It is appended as the right child of 5, giving `[10, 8, 5, 3, 2, 1, 7]`. Since $7 > 5$, we swap 7 and 5, resulting in `[10, 8, 7, 3, 2, 1, 5]`. Since $7 < 10$, the heap property is satisfied.",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
         {
             "question_number": "5",
-            "question_text": "Which of the following is an example of linear DS?\n(A) Tree\n(B) Linked list\n(C) Queue\n(D) Linked list and queue",
+            "question_text": "Which of the following is an example of linear DS?",
+            "options": [
+                "Tree",
+                "Linked list",
+                "Queue",
+                "Linked list and queue"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Linked list and queue\n\n**Rationale:** Linear data structures arrange elements in a sequential/linear order where each element is connected to its previous and next elements. Both Linked Lists and Queues are linear, whereas Trees are non-linear.",
+            "answer": "Linear data structures arrange elements in a sequential/linear order where each element is connected to its previous and next elements. Both Linked Lists and Queues are linear, whereas Trees are non-linear.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
         {
             "question_number": "6",
-            "question_text": "Let G be a graph with 'n' vertices and 'm' edges. What is the tightest upper bound on the running time on Depth First Search of G? Assume that the graph is represented using adjacency matrix.\n(A) O(n)\n(B) O(n+m)\n(C) O(n^2)\n(D) O(mn)",
+            "question_text": "Let G be a graph with 'n' vertices and 'm' edges. What is the tightest upper bound on the running time on Depth First Search of G? Assume that the graph is represented using adjacency matrix.",
+            "options": [
+                "O(n)",
+                "O(n+m)",
+                "O(n^2)",
+                "O(mn)"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) O(n^2)\n\n**Rationale:** In an adjacency matrix representation of a graph, to find the neighbors of any vertex, we must traverse an entire row of size $n$. Since DFS visits all $n$ vertices, the total time complexity is $O(n \\times n) = O(n^2)$.",
+            "answer": "In an adjacency matrix representation of a graph, to find the neighbors of any vertex, we must traverse an entire row of size $n$. Since DFS visits all $n$ vertices, the total time complexity is $O(n \\times n) = O(n^2)$.",
             "answer_source": "generated",
             "chapter": "Unit 5: Graph"
         },
         {
             "question_number": "7",
-            "question_text": "Which of the following is false about a circular linked list?\n(A) Every node has a successor\n(B) Time complexity of inserting a new node at the head of the list is O(1)\n(C) Time complexity for deleting the last node is O(n)\n(D) We can traverse the whole circular linked list starting from any point",
+            "question_text": "Which of the following is false about a circular linked list?",
+            "options": [
+                "Every node has a successor",
+                "Time complexity of inserting a new node at the head of the list is O(1)",
+                "Time complexity for deleting the last node is O(n)",
+                "We can traverse the whole circular linked list starting from any point"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Time complexity of inserting a new node at the head of the list is O(1)\n\n**Rationale:** If we only maintain a pointer to the head of a circular linked list, inserting at the head requires traversing to the last node to update its `next` pointer to the new head, which takes $O(n)$ time. (Maintaining a tail pointer would make it $O(1)$, but generally, in standard implementations without it, head insertion is $O(n)$).",
+            "answer": "If we only maintain a pointer to the head of a circular linked list, inserting at the head requires traversing to the last node to update its `next` pointer to the new head, which takes $O(n)$ time. (Maintaining a tail pointer would make it $O(1)$, but generally, in standard implementations without it, head insertion is $O(n)$).",
             "answer_source": "generated",
             "chapter": "Unit 2: List Structure"
         },
         {
             "question_number": "8",
-            "question_text": "The following postfix expression with single digit operands is evaluated using a stack:\n8 2 3 ^ / 2 3 * + 5 1 * -\nNote that ^ is the exponentiation operator. The top two elements of the stack after the * is evaluated are\n(A) 6, 1\n(B) 5, 7\n(C) 3, 2\n(D) 1, 5",
+            "question_text": "The following postfix expression with single digit operands is evaluated using a stack:\n8 2 3 ^ / 2 3 * + 5 1 * -\nNote that ^ is the exponentiation operator. The top two elements of the stack after the * is evaluated are",
+            "options": [
+                "6, 1",
+                "5, 7",
+                "3, 2",
+                "1, 5"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) 6, 1\n\n**Rationale:** \nLet's evaluate the expression step-by-step:\n- Stack operations:\n  1. Push 8, 2, 3 -> Stack: `[8, 2, 3]`\n  2. Operator `^`: $2^3 = 8$ -> Stack: `[8, 8]`\n  3. Operator `/`: $8 / 8 = 1$ -> Stack: `[1]`\n  4. Push 2, 3 -> Stack: `[1, 2, 3]`\n  5. Operator `*` (first asterisk): $2 \\times 3 = 6$ -> Stack: `[1, 6]`\nAfter the first `*` is evaluated, the top two elements of the stack are 6 (top) and 1 (next to top). This corresponds to choice (A).",
+            "answer": "Let's evaluate the expression step-by-step:\n- Stack operations:\n  1. Push 8, 2, 3 -> Stack: `[8, 2, 3]`\n  2. Operator `^`: $2^3 = 8$ -> Stack: `[8, 8]`\n  3. Operator `/`: $8 / 8 = 1$ -> Stack: `[1]`\n  4. Push 2, 3 -> Stack: `[1, 2, 3]`\n  5. Operator `*` (first asterisk): $2 \\times 3 = 6$ -> Stack: `[1, 6]`\nAfter the first `*` is evaluated, the top two elements of the stack are 6 (top) and 1 (next to top). This corresponds to choice (A).",
             "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },
         {
             "question_number": "9",
-            "question_text": "What is the maximum height of any AVL-tree with 7 nodes? Assume that the height of a tree with a single node is 0.\n(A) 2\n(B) 3\n(C) 4\n(D) 5",
+            "question_text": "What is the maximum height of any AVL-tree with 7 nodes? Assume that the height of a tree with a single node is 0.",
+            "options": [
+                "2",
+                "3",
+                "4",
+                "5"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) 3\n\n**Rationale:** \nLet $N(h)$ be the minimum number of nodes required to construct an AVL tree of height $h$.\n- $N(0) = 1$\n- $N(1) = 2$\n- $N(h) = N(h-1) + N(h-2) + 1$\nCalculating for higher heights:\n- $N(2) = N(1) + N(0) + 1 = 2 + 1 + 1 = 4$\n- $N(3) = N(2) + N(1) + 1 = 4 + 2 + 1 = 7$\nSince an AVL tree of height 3 requires at least 7 nodes, 3 is the maximum height possible with exactly 7 nodes.",
+            "answer": "Let $N(h)$ be the minimum number of nodes required to construct an AVL tree of height $h$.\n- $N(0) = 1$\n- $N(1) = 2$\n- $N(h) = N(h-1) + N(h-2) + 1$\nCalculating for higher heights:\n- $N(2) = N(1) + N(0) + 1 = 2 + 1 + 1 = 4$\n- $N(3) = N(2) + N(1) + 1 = 4 + 2 + 1 = 7$\nSince an AVL tree of height 3 requires at least 7 nodes, 3 is the maximum height possible with exactly 7 nodes.",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
         {
             "question_number": "10",
-            "question_text": "Which one of the following in place sorting algorithms needs the minimum number of swaps?\n(A) Quick sort\n(B) Insertion sort\n(C) Selection sort\n(D) Heap sort",
+            "question_text": "Which one of the following in place sorting algorithms needs the minimum number of swaps?",
+            "options": [
+                "Quick sort",
+                "Insertion sort",
+                "Selection sort",
+                "Heap sort"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Selection sort\n\n**Rationale:** Selection sort finds the minimum element and places it in its correct position. It performs a maximum of $n-1$ swaps in the worst-case, which is $O(n)$ swaps. Other algorithms like Quick sort or Insertion sort perform $O(n^2)$ or $O(n \\log n)$ swaps.",
+            "answer": "Selection sort finds the minimum element and places it in its correct position. It performs a maximum of $n-1$ swaps in the worst-case, which is $O(n)$ swaps. Other algorithms like Quick sort or Insertion sort perform $O(n^2)$ or $O(n \\log n)$ swaps.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
         {
             "question_number": "11",
-            "question_text": "A queue follows\n(A) FIFO (First In First Out) principle\n(B) LIFO (Last In Last Out) principle\n(C) Ordered array\n(D) Linear tree",
+            "question_text": "A queue follows",
+            "options": [
+                "FIFO (First In First Out) principle",
+                "LIFO (Last In Last Out) principle",
+                "Ordered array",
+                "Linear tree"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) FIFO (First In First Out) principle\n\n**Rationale:** A queue operates on the principle where the first element added to the queue is the first one to be removed (FIFO).",
+            "answer": "A queue operates on the principle where the first element added to the queue is the first one to be removed (FIFO).",
             "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },
         {
             "question_number": "12",
-            "question_text": "The best data structure to check whether an arithmetic expression has balanced parentheses is\n(A) Queue\n(B) Stack\n(C) Linked list\n(D) Tree",
+            "question_text": "The best data structure to check whether an arithmetic expression has balanced parentheses is",
+            "options": [
+                "Queue",
+                "Stack",
+                "Linked list",
+                "Tree"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Stack\n\n**Rationale:** A stack is ideal because we can push opening parentheses onto the stack and pop them when matching closing parentheses are encountered, naturally handling the nested LIFO structure of nested brackets.",
+            "answer": "A stack is ideal because we can push opening parentheses onto the stack and pop them when matching closing parentheses are encountered, naturally handling the nested LIFO structure of nested brackets.",
             "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },
         {
             "question_number": "13",
-            "question_text": "What is complete binary tree?\n(A) Each node has exactly zero or two children\n(B) Binary tree, which is completely filled with possible exception of the bottom level which is filled from right to left\n(C) A binary tree, which is completely filled with the possible exception of the bottom level, which is filled from left to right\n(D) A tree in which all nodes have degree Z",
+            "question_text": "What is complete binary tree?",
+            "options": [
+                "Each node has exactly zero or two children",
+                "Binary tree, which is completely filled with possible exception of the bottom level which is filled from right to left",
+                "A binary tree, which is completely filled with the possible exception of the bottom level, which is filled from left to right",
+                "A tree in which all nodes have degree Z"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) A binary tree, which is completely filled with the possible exception of the bottom level, which is filled from left to right\n\n**Rationale:** By definition, a complete binary tree is completely filled at all levels except possibly the lowest level, which is filled progressively from left to right.",
+            "answer": "By definition, a complete binary tree is completely filled at all levels except possibly the lowest level, which is filled progressively from left to right.",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
         {
             "question_number": "14",
-            "question_text": "Level order traversal of a rooted tree can be done by starting from the root and performing?\n(A) Pre order traversal\n(B) In order traversal\n(C) Depth first search\n(D) Breadth first search",
+            "question_text": "Level order traversal of a rooted tree can be done by starting from the root and performing?",
+            "options": [
+                "Pre order traversal",
+                "In order traversal",
+                "Depth first search",
+                "Breadth first search"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Breadth first search\n\n**Rationale:** Level order traversal visits nodes level-by-level from top to bottom, which is equivalent to Breadth First Search (BFS) on the tree starting from the root.",
+            "answer": "Level order traversal visits nodes level-by-level from top to bottom, which is equivalent to Breadth First Search (BFS) on the tree starting from the root.",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
         {
             "question_number": "15",
-            "question_text": "Find the post order traversal of the binary tree shown below?\n[Image shows a tree with root P, left child Q, right child R. Under Q: left child S, right child T. Under T: left child V, right child W. Under R: right child U. Under U: left child X.]\n(A) PQRSTUVWX\n(B) WRSQPVTUX\n(C) SWTQXUVRP\n(D) STWUXVQRP",
+            "question_text": "Find the post order traversal of the binary tree shown below?\n[Image shows a tree with root P, left child Q, right child R. Under Q: left child S, right child T. Under T: left child W. Under R: left child U, right child V. Under U: left child X.]",
+            "options": [
+                "PQRSTUVWX",
+                "WRSQPVTUX",
+                "SWTQXUVRP",
+                "STWUXVQRP"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) SWTQXUVRP\n\n**Rationale:**\nPost-order traversal visits: Left Subtree, Right Subtree, Root.\n- Left subtree of P (rooted at Q):\n  - Left child is S.\n  - Right child is T:\n    - Left of T is V, right of T is W.\n    - Post-order of T = V, W, T.\n  - Post-order of Q = S, V, W, T, Q.\n- Right subtree of P (rooted at R):\n  - R has no left child.\n  - Right child is U:\n    - Left of U is X, no right child of U.\n    - Post-order of U = X, U.\n  - Post-order of R = X, U, R.\n- Complete post-order of P = `S, V, W, T, Q, X, U, R, P` (typographically represented as option C).",
+            "answer": "Post-order traversal visits: Left Subtree, Right Subtree, Root.\n- Left subtree of P (rooted at Q):\n  - Left child of Q is S.\n  - Right child of Q is T, whose left child is W, so post-order of T = W, T.\n  - Post-order of Q = S, W, T, Q.\n- Right subtree of P (rooted at R):\n  - Left child of R is U, whose left child is X, so post-order of U = X, U.\n  - Right child of R is V.\n  - Post-order of R = X, U, V, R.\n- Complete post-order of P = S, W, T, Q, X, U, V, R, P, which is option (C).",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
         {
             "question_number": "16",
-            "question_text": "What is a hash function?\n(A) A function has allocated memory to keys\n(B) A function that computes the location of the key in the array\n(C) A function that creates an array\n(D) A function that computes the location of the values in the array",
+            "question_text": "What is a hash function?",
+            "options": [
+                "A function has allocated memory to keys",
+                "A function that computes the location of the key in the array",
+                "A function that creates an array",
+                "A function that computes the location of the values in the array"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) A function that computes the location of the key in the array\n\n**Rationale:** A hash function maps keys of arbitrary size to fixed-size array indices (locations) in a hash table.",
+            "answer": "A hash function maps keys of arbitrary size to fixed-size array indices (locations) in a hash table.",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
         {
             "question_number": "17",
-            "question_text": "For the adjacency matrix of a directed graph, the row sum is the ______ degree and the column sum is the ______ degree.\n(A) In, out\n(B) Out, in\n(C) In, total\n(D) Total, out",
+            "question_text": "For the adjacency matrix of a directed graph, the row sum is the ______ degree and the column sum is the ______ degree.",
+            "options": [
+                "In, out",
+                "Out, in",
+                "In, total",
+                "Total, out"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Out, in\n\n**Rationale:** In a directed graph adjacency matrix $A$, entry $A[i][j] = 1$ if there is an edge from $i$ to $j$. Summing a row $i$ yields the number of outgoing edges from $i$ (out-degree). Summing a column $j$ yields the number of incoming edges to $j$ (in-degree).",
+            "answer": "In a directed graph adjacency matrix $A$, entry $A[i][j] = 1$ if there is an edge from $i$ to $j$. Summing a row $i$ yields the number of outgoing edges from $i$ (out-degree). Summing a column $j$ yields the number of incoming edges to $j$ (in-degree).",
             "answer_source": "generated",
             "chapter": "Unit 5: Graph"
         },
         {
             "question_number": "18",
-            "question_text": "When new data are to be inserted into a data structure, but there is not available space, this situation is usually called\n(A) Underflow\n(B) Overflow\n(C) Saturated\n(D) Houseful",
+            "question_text": "When new data are to be inserted into a data structure, but there is not available space, this situation is usually called",
+            "options": [
+                "Underflow",
+                "Overflow",
+                "Saturated",
+                "Houseful"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Overflow\n\n**Rationale:** Attempting to insert an item into a data structure that is fully occupied is termed an 'overflow' condition.",
+            "answer": "Attempting to insert an item into a data structure that is fully occupied is termed an 'overflow' condition.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
         {
             "question_number": "19",
-            "question_text": "In an unweighted, undirected connected graph, the shortest path from a node S to every other node is computed most efficiently, in term of time complexity by\n(A) Dijkstra's algorithm starting from S\n(B) Warshall's algorithm\n(C) Performing a DFS starting from S\n(D) Performing a BFS starting from S",
+            "question_text": "In an unweighted, undirected connected graph, the shortest path from a node S to every other node is computed most efficiently, in term of time complexity by",
+            "options": [
+                "Dijkstra's algorithm starting from S",
+                "Warshall's algorithm",
+                "Performing a DFS starting from S",
+                "Performing a BFS starting from S"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Performing a BFS starting from S\n\n**Rationale:** For unweighted graphs, Breadth First Search (BFS) naturally explores nodes in increasing order of distance, finding the shortest paths in $O(V + E)$ time, which is more efficient than Dijkstra's algorithm ($O(E + V \\log V)$).",
+            "answer": "For unweighted graphs, Breadth First Search (BFS) naturally explores nodes in increasing order of distance, finding the shortest paths in $O(V + E)$ time, which is more efficient than Dijkstra's algorithm ($O(E + V \\log V)$).",
             "answer_source": "generated",
             "chapter": "Unit 5: Graph"
         },
         {
             "question_number": "20",
-            "question_text": "Which of the following sorting algorithm has the lowest worst-case complexity?\n(A) Merge sort\n(B) Quick sort\n(C) Bubble sort\n(D) Selection sort",
+            "question_text": "Which of the following sorting algorithm has the lowest worst-case complexity?",
+            "options": [
+                "Merge sort",
+                "Quick sort",
+                "Bubble sort",
+                "Selection sort"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Merge sort\n\n**Rationale:** Merge sort has a worst-case time complexity of $O(n \\log n)$, whereas Quick sort, Bubble sort, and Selection sort all exhibit $O(n^2)$ worst-case complexities.",
+            "answer": "Merge sort has a worst-case time complexity of $O(n \\log n)$, whereas Quick sort, Bubble sort, and Selection sort all exhibit $O(n^2)$ worst-case complexities.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },

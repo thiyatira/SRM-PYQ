@@ -5,81 +5,151 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "The stages of 3 stage pipelining are ____.\na. Decode, Fetch, Execute\nb. Execute, Fetch, Decode\nc. Fetch, Decode, Execute\nd. Address generation, Fetch, Execute.",
+            "question_text": "The stages of 3 stage pipelining are ____.",
+            "options": [
+                "Decode, Fetch, Execute",
+                "Execute, Fetch, Decode",
+                "Fetch, Decode, Execute",
+                "Address generation, Fetch, Execute."
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "c. Fetch, Decode, Execute\n\n**Rationale:** The standard stages of a basic 3-stage instruction pipeline in order are Fetching the instruction from memory, Decoding the instruction to identify the required operation, and Executing the instruction.",
+            "answer": "The standard stages of a basic 3-stage instruction pipeline in order are Fetching the instruction from memory, Decoding the instruction to identify the required operation, and Executing the instruction.",
             "answer_source": "provided",
             "chapter": "Unit 4: Control Unit"
         },
         {
             "question_number": "2",
-            "question_text": "```\nR2out, Yin\nR3out, Select Y, Add, Zin\nZout, R1in\n```\n\nThe above sequence of operations represents\na. R3=R1+R2\nb. R1=R2+R3\nc. R2=R1+R3\nd. R3=R2-R1",
+            "question_text": "```\nR2out, Yin\nR3out, Select Y, Add, Zin\nZout, R1in\n```\n\nThe above sequence of operations represents",
+            "options": [
+                "R3=R1+R2",
+                "R1=R2+R3",
+                "R2=R1+R3",
+                "R3=R2-R1"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b. R1=R2+R3\n\n**Rationale:** \n1. `R2out, Yin` copies the contents of register R2 into the temporary register Y.\n2. `R3out, Select Y, Add, Zin` selects register Y (containing R2), adds it to R3, and stores the result in temporary register Z.\n3. `Zout, R1in` copies the result from register Z to R1. Hence, $R1 = R2 + R3$.",
+            "answer": "1. `R2out, Yin` copies the contents of register R2 into the temporary register Y.\n2. `R3out, Select Y, Add, Zin` selects register Y (containing R2), adds it to R3, and stores the result in temporary register Z.\n3. `Zout, R1in` copies the result from register Z to R1. Hence, $R1 = R2 + R3$.",
             "answer_source": "provided",
             "chapter": "Unit 4: Control Unit"
         },
         {
             "question_number": "3",
-            "question_text": "The contention for the usage of hardware device is called\na. Data hazard\nb. Instruction hazard\nc. Structural hazard\nd. Stall",
+            "question_text": "The contention for the usage of hardware device is called",
+            "options": [
+                "Data hazard",
+                "Instruction hazard",
+                "Structural hazard",
+                "Stall"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "c. Structural hazard\n\n**Rationale:** A structural hazard occurs when two or more instructions in a pipeline require the same hardware resource (e.g., memory, ALU, or bus) at the same clock cycle.",
+            "answer": "A structural hazard occurs when two or more instructions in a pipeline require the same hardware resource (e.g., memory, ALU, or bus) at the same clock cycle.",
             "answer_source": "provided",
             "chapter": "Unit 4: Control Unit"
         },
         {
             "question_number": "4",
-            "question_text": "The conditional branch instruction outcome can be predicted before the execution by using a logic called\na. Branch prediction\nb. Delayed branch\nc. Structural hazard\nd. Static prediction",
+            "question_text": "The conditional branch instruction outcome can be predicted before the execution by using a logic called",
+            "options": [
+                "Branch prediction",
+                "Delayed branch",
+                "Structural hazard",
+                "Static prediction"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "a. Branch prediction\n\n**Rationale:** Branch prediction is a hardware or software mechanism used to guess the outcome of conditional branch instructions before their execution is complete, minimizing stalls in the pipeline.",
+            "answer": "Branch prediction is a hardware or software mechanism used to guess the outcome of conditional branch instructions before their execution is complete, minimizing stalls in the pipeline.",
             "answer_source": "provided",
             "chapter": "Unit 4: Control Unit"
         },
         {
             "question_number": "5",
-            "question_text": "Which addressing mode is capable of working without fetch operation?\na. Register indirect\nb. Direct\nc. Indexed\nd. Immediate",
+            "question_text": "Which addressing mode is capable of working without fetch operation?",
+            "options": [
+                "Register indirect",
+                "Direct",
+                "Indexed",
+                "Immediate"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "d. Immediate\n\n**Rationale:** In immediate addressing mode, the operand value is embedded directly inside the instruction word, so no separate memory read/fetch cycle is required to obtain the data operand.",
+            "answer": "In immediate addressing mode, the operand value is embedded directly inside the instruction word, so no separate memory read/fetch cycle is required to obtain the data operand.",
             "answer_source": "provided",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "6",
-            "question_text": "What is the primary challenge of parallel computing related to shared resources?\na) Scalability\nb) Data synchronization\nc) Energy efficiency\nd) Algorithm complexity",
+            "question_text": "What is the primary challenge of parallel computing related to shared resources?",
+            "options": [
+                "Scalability",
+                "Data synchronization",
+                "Energy efficiency",
+                "Algorithm complexity"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b) Data synchronization\n\n**Rationale:** When multiple processors or threads simultaneously access shared resources, maintaining consistency and preventing race conditions requires careful data synchronization.",
+            "answer": "When multiple processors or threads simultaneously access shared resources, maintaining consistency and preventing race conditions requires careful data synchronization.",
             "answer_source": "provided",
             "chapter": "Unit 5: Parallelism"
         },
         {
             "question_number": "7",
-            "question_text": "Which type of parallel system is typically used for tasks that involve repetitive operations on large data sets, like graphics rendering or scientific simulations?\na) SISD\nb) SIMD\nc) MIMD\nd) MISD",
+            "question_text": "Which type of parallel system is typically used for tasks that involve repetitive operations on large data sets, like graphics rendering or scientific simulations?",
+            "options": [
+                "SISD",
+                "SIMD",
+                "MIMD",
+                "MISD"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b) SIMD\n\n**Rationale:** Single Instruction, Multiple Data (SIMD) architectures are designed to apply the same operation to a large array of data points simultaneously, making it highly effective for vector/matrix applications like graphics processing.",
+            "answer": "Single Instruction, Multiple Data (SIMD) architectures are designed to apply the same operation to a large array of data points simultaneously, making it highly effective for vector/matrix applications like graphics processing.",
             "answer_source": "provided",
             "chapter": "Unit 5: Parallelism"
         },
         {
             "question_number": "8",
-            "question_text": "In ARM assembly language, what instruction is commonly used for transferring data between memory and registers?\na) ADD\nb) MOV\nc) SUB\nd) CMP",
+            "question_text": "In ARM assembly language, what instruction is commonly used for transferring data between memory and registers?",
+            "options": [
+                "ADD",
+                "MOV",
+                "SUB",
+                "CMP"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b) MOV\n\n**Rationale:** While load/store instructions (`LDR`/`STR`) are used for memory access, among the choices provided, the `MOV` instruction is key to transferring data into and between registers.",
+            "answer": "While load/store instructions (`LDR`/`STR`) are used for memory access, among the choices provided, the `MOV` instruction is key to transferring data into and between registers.",
             "answer_source": "provided",
             "chapter": "Unit 5: Parallelism"
         },
         {
             "question_number": "9",
-            "question_text": "What is the purpose of the I/O operations in ARM architecture?\na) To perform arithmetic calculations\nb) To manage memory allocation\nc) To interact with input and output devices\nd) To control processor temperature",
+            "question_text": "What is the purpose of the I/O operations in ARM architecture?",
+            "options": [
+                "To perform arithmetic calculations",
+                "To manage memory allocation",
+                "To interact with input and output devices",
+                "To control processor temperature"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "c) To interact with input and output devices\n\n**Rationale:** I/O operations are specifically designed to coordinate and facilitate communication and data exchange between the processor and external peripheral devices.",
+            "answer": "I/O operations are specifically designed to coordinate and facilitate communication and data exchange between the processor and external peripheral devices.",
             "answer_source": "provided",
             "chapter": "Unit 5: Parallelism"
         },
         {
             "question_number": "10",
-            "question_text": "What type of instruction encoding does ARM7 architecture use?\na. Fixed-length instruction encoding\nb. Variable-length instruction encoding\nc. CISC (Complex Instruction Set Computer) encoding\nd. VLIW (Very Long Instruction Word) encoding",
+            "question_text": "What type of instruction encoding does ARM7 architecture use?",
+            "options": [
+                "Fixed-length instruction encoding",
+                "Variable-length instruction encoding",
+                "CISC (Complex Instruction Set Computer) encoding",
+                "VLIW (Very Long Instruction Word) encoding"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b. Variable-length instruction encoding\n\n**Rationale:** ARM7 features dual instruction sets: 32-bit standard ARM instructions and 16-bit Thumb instructions. This capability to switch between 16-bit and 32-bit structures provides a form of variable-length instruction encoding to improve code density.",
+            "answer": "ARM7 features dual instruction sets: 32-bit standard ARM instructions and 16-bit Thumb instructions. This capability to switch between 16-bit and 32-bit structures provides a form of variable-length instruction encoding to improve code density.",
             "answer_source": "provided",
             "chapter": "Unit 5: Parallelism"
         },

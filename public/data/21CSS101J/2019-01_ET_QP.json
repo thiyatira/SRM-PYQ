@@ -4,161 +4,301 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "The two forms of integer types are\n(A) Singed and unsigned\n(C) Short and double\n(B) Long and double\n(D) Signed and enum",
+            "question_text": "The two forms of integer types are",
+            "options": [
+                "Singed and unsigned",
+                "Long and double",
+                "Short and double",
+                "Signed and enum"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "The fundamental forms of integer types are signed and unsigned, which determine whether the variable can hold positive and negative values or only non-negative values, respectively. (A) Signed and unsigned.",
+            "answer": "The fundamental forms of integer types are signed and unsigned, which determine whether the variable can hold positive and negative values or only non-negative values, respectively.",
             "answer_source": "generated",
             "chapter": "Unit 1: Numeric Data types: integer, floating point Non-Numeric Data types: char and string"
         },
         {
             "question_number": "2",
-            "question_text": "To use sqrt function, we need to use the following header\n(A) conio.h\n(B) stdlib.h\n(C) iostream.h\n(D) math.h",
+            "question_text": "To use sqrt function, we need to use the following header",
+            "options": [
+                "conio.h",
+                "stdlib.h",
+                "iostream.h",
+                "math.h"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "The `sqrt` function, which calculates the square root of a number, is part of the C standard library's mathematics functions. These functions are declared in the `math.h` header file. (D) math.h.",
+            "answer": "The `sqrt` function, which calculates the square root of a number, is part of the C standard library's mathematics functions. These functions are declared in the `math.h` header file.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction to C: Structure of the C program"
         },
         {
             "question_number": "3",
-            "question_text": "A bitwise operator stands for\n(A) Right shift\n(B) One's complement\n(C) Bitwise exclusive OR\n(D) Bitwise inclusive OR",
+            "question_text": "A bitwise operator stands for",
+            "options": [
+                "Right shift",
+                "One's complement",
+                "Bitwise exclusive OR",
+                "Bitwise inclusive OR"
+            ],
+            "correct_option": "A,B,C,D",
             "marks": 1,
-            "answer": "All the options listed (Right shift, One's complement, Bitwise exclusive OR, Bitwise inclusive OR) are indeed bitwise operators in C. The question asks for 'A bitwise operator', implying any valid example. For example, 'Right shift' (>>) is a bitwise operator. (A) Right shift. However, if the question seeks the most general term or an encompassing concept, it's poorly phrased as all options are specific bitwise operators.",
+            "answer": "All four listed items are bitwise operators in C: right shift (>>), one's complement (~), bitwise exclusive OR (^) and bitwise inclusive OR (|).",
             "answer_source": "generated",
             "chapter": "Unit 1: Bitwise and Size-of operator"
         },
         {
             "question_number": "4",
-            "question_text": "The escape sequence \\t means\n(A) Vertical tab\n(B) Horizontal tab\n(C) Backspace\n(D) Formfeed",
+            "question_text": "The escape sequence \\t means",
+            "options": [
+                "Vertical tab",
+                "Horizontal tab",
+                "Backspace",
+                "Formfeed"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "The escape sequence `\\t` represents a horizontal tab character. (B) Horizontal tab.",
+            "answer": "The escape sequence `\\t` represents a horizontal tab character.",
             "answer_source": "generated",
             "chapter": "Unit 1: Input and output statements. Variables and identifiers, Constants, Keywords"
         },
         {
             "question_number": "5",
-            "question_text": "The condition when break statement is not used in the switch case statement is called\n(A) Fall off\n(C) Fall out\n(B) Fall through\n(D) Falling off",
+            "question_text": "The condition when break statement is not used in the switch case statement is called",
+            "options": [
+                "Fall off",
+                "Fall through",
+                "Fall out",
+                "Falling off"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "When a `break` statement is omitted from a `switch` case, execution continues from the current case into the next case, executing its code. This behavior is known as 'fall-through'. (B) Fall through.",
+            "answer": "When a `break` statement is omitted from a `switch` case, execution continues from the current case into the next case, executing its code. This behavior is known as 'fall-through'.",
             "answer_source": "generated",
             "chapter": "Unit 2: Conditional Statements : Switch case"
         },
         {
             "question_number": "6",
-            "question_text": "The continue statement is applicable to\n(A) Only loops\n(C) Switch only\n(B) Loops and switch\n(D) Control statements",
+            "question_text": "The continue statement is applicable to",
+            "options": [
+                "Only loops",
+                "Loops and switch",
+                "Switch only",
+                "Control statements"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "The `continue` statement is used to skip the rest of the current iteration of a loop and proceed to the next iteration. It is only applicable within looping control statements (`for`, `while`, `do-while`). (A) Only loops.",
+            "answer": "The `continue` statement is used to skip the rest of the current iteration of a loop and proceed to the next iteration. It is only applicable within looping control statements (`for`, `while`, `do-while`).",
             "answer_source": "generated",
             "chapter": "Unit 2: Un-conditional Control Statements : break, continue, goto"
         },
         {
             "question_number": "7",
-            "question_text": "An example for unconditional statement is\n(A) If statement\n(C) For\n(B) While\n(D) Goto",
+            "question_text": "An example for unconditional statement is",
+            "options": [
+                "If statement",
+                "While",
+                "For",
+                "Goto"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "An unconditional statement transfers control without checking any condition. The `goto` statement is an unconditional jump statement in C. `If`, `for`, and `while` are conditional or looping statements. (D) Goto.",
+            "answer": "An unconditional statement transfers control without checking any condition. The `goto` statement is an unconditional jump statement in C. `If`, `for`, and `while` are conditional or looping statements.",
             "answer_source": "generated",
             "chapter": "Unit 2: Un-conditional Control Statements : break, continue, goto"
         },
         {
             "question_number": "8",
-            "question_text": "The array size for char pattern = {'k', 'p', 'l', 'd', 'lo'} is\n(A) 6\n(C) 5\n(B) 4\n(D) 3",
+            "question_text": "The array size for char pattern = {'k', 'p', 'l', 'd', 'lo'} is",
+            "options": [
+                "6",
+                "4",
+                "5",
+                "3"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "The array initializer `{'k', 'p', 'l', 'd', 'lo'}` contains 5 distinct initializer elements. Even though `'lo'` is a multi-character literal (which might lead to a warning or implementation-defined behavior if assigned to a `char`), it counts as one element in the initializer list. Therefore, the array size would be 5 elements. (C) 5.",
+            "answer": "The array initializer `{'k', 'p', 'l', 'd', 'lo'}` contains 5 distinct initializer elements. Even though `'lo'` is a multi-character literal (which might lead to a warning or implementation-defined behavior if assigned to a `char`), it counts as one element in the initializer list. Therefore, the array size would be 5 elements.",
             "answer_source": "generated",
             "chapter": "Unit 2: One Dimensional (1D) Array Declaration and initialization"
         },
         {
             "question_number": "9",
-            "question_text": "A function calling itself directly or indirectly is called as\n(A) Function call\n(C) Recursion\n(B) Function prototype\n(D) Call by value",
+            "question_text": "A function calling itself directly or indirectly is called as",
+            "options": [
+                "Function call",
+                "Function prototype",
+                "Recursion",
+                "Call by value"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "A function that calls itself, either directly or indirectly, is known as a recursive function, and the process is called recursion. (C) Recursion.",
+            "answer": "A function that calls itself, either directly or indirectly, is known as a recursive function, and the process is called recursion.",
             "answer_source": "generated",
             "chapter": "Unit 3: Function prototype declaration, function definition"
         },
         {
             "question_number": "10",
-            "question_text": "In order to use string functions, we need which header file\n(A) conio.h\n(B) stdio.h\n(C) stdlib.h\n(D) string.h",
+            "question_text": "In order to use string functions, we need which header file",
+            "options": [
+                "conio.h",
+                "stdio.h",
+                "stdlib.h",
+                "string.h"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "The standard C library functions for string manipulation (e.g., `strlen`, `strcpy`, `strcat`, `strcmp`) are declared in the `string.h` header file. (D) string.h.",
+            "answer": "The standard C library functions for string manipulation (e.g., `strlen`, `strcpy`, `strcat`, `strcmp`) are declared in the `string.h` header file.",
             "answer_source": "generated",
             "chapter": "Unit 3: Built-inString Functions: atoi, strlen, strcat, strcmp"
         },
         {
             "question_number": "11",
-            "question_text": "The size of the following array int arr [20] [3] is\n(A) 40\n(C) 60\n(B) 23\n(D) 50",
+            "question_text": "The size of the following array int arr [20] [3] is",
+            "options": [
+                "40",
+                "23",
+                "60",
+                "50"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "A 2D array `int arr[20][3]` has 20 rows and 3 columns. The total number of integer elements in the array is `20 * 3 = 60`. (C) 60.",
+            "answer": "A 2D array `int arr[20][3]` has 20 rows and 3 columns. The total number of integer elements in the array is `20 * 3 = 60`.",
             "answer_source": "generated",
             "chapter": "Unit 2: Initializing and Accessing 2D Array, Array Programs – 2D"
         },
         {
             "question_number": "12",
-            "question_text": "The string function that is used to join two strings is\n(A) strlen\n(C) strcmp\n(B) strcat\n(D) strcpy",
+            "question_text": "The string function that is used to join two strings is",
+            "options": [
+                "strlen",
+                "strcat",
+                "strcmp",
+                "strcpy"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "The `strcat` function (string concatenate) is used to append one string to the end of another string, effectively joining them. (B) strcat.",
+            "answer": "The `strcat` function (string concatenate) is used to append one string to the end of another string, effectively joining them.",
             "answer_source": "generated",
             "chapter": "Unit 3: Built-inString Functions: atoi, strlen, strcat, strcmp"
         },
         {
             "question_number": "13",
-            "question_text": "A Null directive is of the from\n(A) #\n(C) # include\n(B) ##\n(D) #include <NULL>",
+            "question_text": "A Null directive is of the from",
+            "options": [
+                "#",
+                "##",
+                "# include",
+                "#include <NULL>"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "In C, a null directive is a single `#` character on a line by itself. It does nothing and is ignored by the preprocessor. (A) #.",
+            "answer": "In C, a null directive is a single `#` character on a line by itself. It does nothing and is ignored by the preprocessor.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction to C: Structure of the C program"
         },
         {
             "question_number": "14",
-            "question_text": "The function int tolower (int c) converts\n(A) c into lower case\n(C) c into upper case\n(B) converts c from lower case to upper case\n(D) c into integer",
+            "question_text": "The function int tolower (int c) converts",
+            "options": [
+                "c into lower case",
+                "c into upper case",
+                "converts c from lower case to upper case",
+                "c into integer"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "The `tolower()` function converts an uppercase letter to its lowercase equivalent. If the character `c` is already lowercase or not an alphabet, it returns `c` unchanged. (A) c into lower case.",
+            "answer": "The `tolower()` function converts an uppercase letter to its lowercase equivalent. If the character `c` is already lowercase or not an alphabet, it returns `c` unchanged.",
             "answer_source": "generated",
             "chapter": "Unit 3: String Functions: sprint, sscanf, strrev, strcpy, strstr, strtok"
         },
         {
             "question_number": "15",
-            "question_text": "The preprocessor directive used for processing data and time is\n(A) datatime.h\n(C) time.h\n(B) date.h\n(D) dated.h",
+            "question_text": "The preprocessor directive used for processing data and time is",
+            "options": [
+                "datatime.h",
+                "date.h",
+                "time.h",
+                "dated.h"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "The standard C library header file that provides functions for date and time manipulation is `time.h`. (C) time.h.",
+            "answer": "The standard C library header file that provides functions for date and time manipulation is `time.h`.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction to C: Structure of the C program"
         },
         {
             "question_number": "16",
-            "question_text": "In a function, if return type is omitted, it is assumed to return\n(A) Null\n(C) Double\n(B) Integer\n(D) Void",
+            "question_text": "In a function, if return type is omitted, it is assumed to return",
+            "options": [
+                "Null",
+                "Integer",
+                "Double",
+                "Void"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "In older C standards (C89/C90), if a function's return type was omitted, it was implicitly assumed to return `int`. In modern C standards (C99 and later), omitting the return type is a compilation error. Assuming the context of older C or a specific teaching curriculum, `int` is the historical answer. (B) Integer.",
+            "answer": "In older C standards (C89/C90), if a function's return type was omitted, it was implicitly assumed to return `int`. In modern C standards (C99 and later), omitting the return type is a compilation error. Assuming the context of older C or a specific teaching curriculum, `int` is the historical answer.",
             "answer_source": "generated",
             "chapter": "Unit 3: Function with and without return values"
         },
         {
             "question_number": "17",
-            "question_text": "A collection of different types of variables is referred to as\n(A) Structures\n(C) Stacks\n(B) Arrays\n(D) Queues",
+            "question_text": "A collection of different types of variables is referred to as",
+            "options": [
+                "Structures",
+                "Arrays",
+                "Stacks",
+                "Queues"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "A structure (`struct`) in C is a user-defined data type that allows you to combine items of different data types under a single name. Arrays store elements of the same type. Stacks and queues are abstract data types, not direct collections of different types of variables in this sense. (A) Structures.",
+            "answer": "A structure (`struct`) in C is a user-defined data type that allows you to combine items of different data types under a single name. Arrays store elements of the same type. Stacks and queues are abstract data types, not direct collections of different types of variables in this sense.",
             "answer_source": "generated",
             "chapter": "Unit 1: Numeric Data types: integer, floating point Non-Numeric Data types: char and string"
         },
         {
             "question_number": "18",
-            "question_text": "Members of the union are accessed by\n(A) Union-name → member\n(C) Union-name ⇒ member\n(B) Union-name = member\n(D) Union-name $ member",
+            "question_text": "Members of the union are accessed by",
+            "options": [
+                "Union-name → member",
+                "Union-name = member",
+                "Union-name ⇒ member",
+                "Union-name $ member"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "Members of a union (or struct) are accessed using the dot operator (`.`) if directly using the union variable (e.g., `myUnion.member`). If accessing via a pointer to the union, the arrow operator (`->`) is used (e.g., `union_ptr->member`). Therefore, `Union-name -> member` represents a correct way to access a member using a pointer to a union. (A) Union-name → member.",
+            "answer": "Members of a union (or struct) are accessed using the dot operator (`.`) if directly using the union variable (e.g., `myUnion.member`). If accessing via a pointer to the union, the arrow operator (`->`) is used (e.g., `union_ptr->member`). Therefore, `Union-name -> member` represents a correct way to access a member using a pointer to a union.",
             "answer_source": "generated",
             "chapter": "Unit 1: Values, Names, Scope, Binding, Storage Classes"
         },
         {
             "question_number": "19",
-            "question_text": "The line void free (void *p)\n(A) Allocates the space pointed to by p\n(B) Deallocates the space pointed to by p\n(C) Terminates the program abruptly\n(D) Sets null value to p",
+            "question_text": "The line void free (void *p)",
+            "options": [
+                "Allocates the space pointed to by p",
+                "Deallocates the space pointed to by p",
+                "Terminates the program abruptly",
+                "Sets null value to p"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "The `free()` function deallocates the memory block previously allocated by functions like `malloc()`, `calloc()`, or `realloc()`. (B) Deallocates the space pointed to by p.",
+            "answer": "The `free()` function deallocates the memory block previously allocated by functions like `malloc()`, `calloc()`, or `realloc()`.",
             "answer_source": "generated",
             "chapter": "Unit 2: Pointer Declaration and dereferencing, Void Pointers, Null pointers Pointer based Array manipulation"
         },
         {
             "question_number": "20",
-            "question_text": "Unions provide a way to\n(A) Manipulate different kinds of data in a single area of storage\n(B) Save same kind of data in continuous storage\n(C) Save different types of data in different areas\n(D) Save data of same types",
+            "question_text": "Unions provide a way to",
+            "options": [
+                "Manipulate different kinds of data in a single area of storage",
+                "Save same kind of data in continuous storage",
+                "Save different types of data in different areas",
+                "Save data of same types"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "Unions allow you to store different data types in the same memory location. Only one member of the union can hold a value at any given time. This provides a way to manipulate different kinds of data within a single, shared memory area, optimizing memory usage. (A) Manipulate different kinds of data in a single area of storage.",
+            "answer": "Unions allow you to store different data types in the same memory location. Only one member of the union can hold a value at any given time. This provides a way to manipulate different kinds of data within a single, shared memory area, optimizing memory usage.",
             "answer_source": "generated",
             "chapter": "Unit 1: Numeric Data types: integer, floating point Non-Numeric Data types: char and string"
         },

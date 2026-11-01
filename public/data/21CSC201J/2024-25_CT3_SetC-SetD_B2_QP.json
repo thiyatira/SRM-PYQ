@@ -4,65 +4,121 @@
     "questions": [
         {
             "question_number": "Set D - 1",
-            "question_text": "A stack data structure may not be used for\na) Implementation of recursive function\nb) Allocation resources and scheduling\nc) Reversing string\nd) Evaluation of string in postfix form",
+            "question_text": "A stack data structure may not be used for",
+            "options": [
+                "Implementation of recursive function",
+                "Allocation resources and scheduling",
+                "Reversing string",
+                "Evaluation of string in postfix form"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b) Allocation resources and scheduling\n\nExplanation: Resource allocation and process scheduling are typically managed using a First-In-First-Out (FIFO) queue or a priority queue, whereas function call management (recursion), string reversal, and postfix expression evaluation naturally follow Last-In-First-Out (LIFO) stack semantics.",
+            "answer": "Resource allocation and process scheduling are typically managed using a First-In-First-Out (FIFO) queue or a priority queue, whereas function call management (recursion), string reversal, and postfix expression evaluation naturally follow Last-In-First-Out (LIFO) stack semantics.",
             "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },
         {
             "question_number": "Set D - 2",
-            "question_text": "Postfix form of the following expression\n$$D + (E * F \\wedge G)$$\na) $DFG^{\\wedge}E*+$\nb) $DEFG^{\\wedge}*+$\nc) $GFED^{\\wedge}*+$\nd) $GF^{\\wedge}E*D+$",
+            "question_text": "Postfix form of the following expression\n$$D + (E * F \\wedge G)$$",
+            "options": [
+                "$DFG^{\\wedge}E*+$",
+                "$DEFG^{\\wedge}*+$",
+                "$GFED^{\\wedge}*+$",
+                "$GF^{\\wedge}E*D+$"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b) $DEFG^{\\wedge}*+$\n\nExplanation:\n1. Inside parentheses, exponentiation has higher precedence than multiplication: $F \\wedge G \\to FG^{\\wedge}$.\n2. Next, multiplication: $E * (FG^{\\wedge}) \\to EFG^{\\wedge}*$.\n3. Finally, addition with $D$: $D + (EFG^{\\wedge}*) \\to DEFG^{\\wedge}*+$.",
+            "answer": "1. Inside parentheses, exponentiation has higher precedence than multiplication: $F \\wedge G \\to FG^{\\wedge}$.\n2. Next, multiplication: $E * (FG^{\\wedge}) \\to EFG^{\\wedge}*$.\n3. Finally, addition with $D$: $D + (EFG^{\\wedge}*) \\to DEFG^{\\wedge}*+$.",
             "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },
         {
             "question_number": "Set D - 3",
-            "question_text": "A circular queue is implemented using an array of size 10. The array index starts with 0, front is 6 and rear is 9. The insertion of the next element takes place at the array index.\na) 0\nb) 7\nc) 9\nd) 10",
+            "question_text": "A circular queue is implemented using an array of size 10. The array index starts with 0, front is 6 and rear is 9. The insertion of the next element takes place at the array index.",
+            "options": [
+                "0",
+                "7",
+                "9",
+                "10"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "a) 0\n\nExplanation: In a circular queue of capacity $N = 10$, the next insertion index is calculated as:\n$$\\text{rear} = (\\text{rear} + 1) \\bmod N = (9 + 1) \\bmod 10 = 0$$",
+            "answer": "In a circular queue of capacity $N = 10$, the next insertion index is calculated as:\n$$\\text{rear} = (\\text{rear} + 1) \\bmod N = (9 + 1) \\bmod 10 = 0$$",
             "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },
         {
             "question_number": "Set D - 4",
-            "question_text": "The data structure required for Breadth First Traversal on a graph is.\na) Stack\nb) Array\nc) Queue\nd) Tree",
+            "question_text": "The data structure required for Breadth First Traversal on a graph is.",
+            "options": [
+                "Stack",
+                "Array",
+                "Queue",
+                "Tree"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "c) Queue\n\nExplanation: Breadth-First Search (BFS) explores vertices level-by-level in FIFO order, requiring a Queue data structure to keep track of discovered vertices yet to be explored.",
+            "answer": "Breadth-First Search (BFS) explores vertices level-by-level in FIFO order, requiring a Queue data structure to keep track of discovered vertices yet to be explored.",
             "answer_source": "generated",
             "chapter": "Unit 5: Graph"
         },
         {
             "question_number": "Set D - 5",
-            "question_text": "Given an empty AVL tree, how would you construct an AVL tree when a set of numbers are given without performing any rotations?\na) Build the tree directly by inserting the elements as they are given, following the binary search tree (BST) properties\nb) Construct the tree using the input values in sorted order to ensure balance.\nc) Use a recursive function to insert each number, ensuring it follows AVL properties without rotations.\nd) Use a linked list to store the input values and convert it into an AVL tree later.",
+            "question_text": "Given an empty AVL tree, how would you construct an AVL tree when a set of numbers are given without performing any rotations?",
+            "options": [
+                "Build the tree directly by inserting the elements as they are given, following the binary search tree (BST) properties",
+                "Construct the tree using the input values in sorted order to ensure balance.",
+                "Use a recursive function to insert each number, ensuring it follows AVL properties without rotations.",
+                "Use a linked list to store the input values and convert it into an AVL tree later."
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "a) Build the tree directly by inserting the elements as they are given, following the binary search tree (BST) properties\n\nExplanation: If the input sequence already arrives in an order such that at every step the balance factor of every node remains in $\\{-1, 0, +1\\}$, the tree can simply be built by standard BST insertions without triggering any rotation operations.",
+            "answer": "If the input sequence already arrives in an order such that at every step the balance factor of every node remains in $\\{-1, 0, +1\\}$, the tree can simply be built by standard BST insertions without triggering any rotation operations.",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
         {
             "question_number": "Set D - 6",
-            "question_text": "If a B-tree of order 5 has a height of 2, what is the minimum number of keys it can contain?\na) 6\nb) 5\nc) 1\nd) 10",
+            "question_text": "If a B-tree of order 5 has a height of 2, what is the minimum number of keys it can contain?",
+            "options": [
+                "6",
+                "5",
+                "1",
+                "10"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b) 5\n\nExplanation: For a B-tree of order $m = 5$ with height defined as 2 levels (level 1 = root, level 2 = leaf nodes):\n- Root contains at least 1 key and 2 children.\n- Each non-root child node must contain at least $\\lceil m/2 \\rceil - 1 = \\lceil 5/2 \\rceil - 1 = 3 - 1 = 2$ keys.\n- Minimum total keys = $1 \\text{ (root)} + 2 \\times 2 \\text{ (leaves)} = 5$ keys.",
+            "answer": "For a B-tree of order $m = 5$ with height defined as 2 levels (level 1 = root, level 2 = leaf nodes):\n- Root contains at least 1 key and 2 children.\n- Each non-root child node must contain at least $\\lceil m/2 \\rceil - 1 = \\lceil 5/2 \\rceil - 1 = 3 - 1 = 2$ keys.\n- Minimum total keys = $1 \\text{ (root)} + 2 \\times 2 \\text{ (leaves)} = 5$ keys.",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
         {
             "question_number": "Set D - 7",
-            "question_text": "Which of the following statements is true regarding topological sorting of a directed graph?\na) It can be applied to both directed and undirected graphs.\nb) A topological sort exists only if the graph has cycles.\nc) It provides a linear ordering of vertices such that for every directed edge u->v, vertex u comes before vertex v in the ordering.\nd) It can be performed in any arbitrary order.",
+            "question_text": "Which of the following statements is true regarding topological sorting of a directed graph?",
+            "options": [
+                "It can be applied to both directed and undirected graphs.",
+                "A topological sort exists only if the graph has cycles.",
+                "It provides a linear ordering of vertices such that for every directed edge u->v, vertex u comes before vertex v in the ordering.",
+                "It can be performed in any arbitrary order."
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "c) It provides a linear ordering of vertices such that for every directed edge u->v, vertex u comes before vertex v in the ordering.\n\nExplanation: By definition, topological sorting of a Directed Acyclic Graph (DAG) produces a linear sequence of vertices where for every directed edge $(u, v)$, $u$ precedes $v$.",
+            "answer": "By definition, topological sorting of a Directed Acyclic Graph (DAG) produces a linear sequence of vertices where for every directed edge $(u, v)$, $u$ precedes $v$.",
             "answer_source": "generated",
             "chapter": "Unit 5: Graph"
         },
         {
             "question_number": "Set D - 8",
-            "question_text": "Which of the following statements is /are TRUE for an undirected graph?\nP: The number of odd-degree vertices are even\nQ: Sum of degrees of all vertices are even\na) P only\nb) Q only\nc) Both P and Q\nd) Neither P nor Q",
+            "question_text": "Which of the following statements is /are TRUE for an undirected graph?\nP: The number of odd-degree vertices are even\nQ: Sum of degrees of all vertices are even",
+            "options": [
+                "P only",
+                "Q only",
+                "Both P and Q",
+                "Neither P nor Q"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "c) Both P and Q\n\nExplanation: According to the Handshaking Lemma, $\\sum_{v \\in V} \\deg(v) = 2|E|$, which is always an even number (Statement Q is TRUE). Because the total sum is even, the sum of odd degrees must also be even, which implies that the number of vertices with odd degrees must be even (Statement P is TRUE).",
+            "answer": "According to the Handshaking Lemma, $\\sum_{v \\in V} \\deg(v) = 2|E|$, which is always an even number (Statement Q is TRUE). Because the total sum is even, the sum of odd degrees must also be even, which implies that the number of vertices with odd degrees must be even (Statement P is TRUE).",
             "answer_source": "generated",
             "chapter": "Unit 5: Graph"
         },
@@ -148,65 +204,121 @@
         },
         {
             "question_number": "Set C - 1",
-            "question_text": "Given the following which involves a series of stack operations:\n\n```text\npush(10);\npush(20);\npush(30);\npop();\npush(40);\npush(50);\npop();\npop();\npush(60);\npush(70);\npop();\n\n```\n\nWhat is the sequence of elements in the stack from top to bottom after all operations have been performed?\na. 10, 20, 60\nb. 20, 10, 60\nc. 60, 20, 10\nd. 60, 10, 20",
+            "question_text": "Given the following which involves a series of stack operations:\n\n```text\npush(10);\npush(20);\npush(30);\npop();\npush(40);\npush(50);\npop();\npop();\npush(60);\npush(70);\npop();\n\n```\n\nWhat is the sequence of elements in the stack from top to bottom after all operations have been performed?",
+            "options": [
+                "10, 20, 60",
+                "20, 10, 60",
+                "60, 20, 10",
+                "60, 10, 20"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "c. 60, 20, 10\n\nExplanation:\n- push(10), push(20), push(30) $\\to$ `[10, 20, 30]`\n- pop() $\\to$ removes 30, stack = `[10, 20]`\n- push(40), push(50) $\\to$ `[10, 20, 40, 50]`\n- pop(), pop() $\\to$ removes 50, then 40, stack = `[10, 20]`\n- push(60), push(70) $\\to$ `[10, 20, 60, 70]`\n- pop() $\\to$ removes 70, stack = `[10, 20, 60]`\nReading from top to bottom: 60, 20, 10.",
+            "answer": "push(10), push(20), push(30) $\\to$ `[10, 20, 30]`\n- pop() $\\to$ removes 30, stack = `[10, 20]`\n- push(40), push(50) $\\to$ `[10, 20, 40, 50]`\n- pop(), pop() $\\to$ removes 50, then 40, stack = `[10, 20]`\n- push(60), push(70) $\\to$ `[10, 20, 60, 70]`\n- pop() $\\to$ removes 70, stack = `[10, 20, 60]`\nReading from top to bottom: 60, 20, 10.",
             "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },
         {
             "question_number": "Set C - 2",
-            "question_text": "Imagine you are developing a feature for a text editor that allows users to undo their last set of changes. You decide to use a stack to implement this feature. Each time a user makes a change, the previous state of the text is pushed onto the stack. When the user selects \"Undo\", the most recent state is popped from the stack, and the text reverts to that state.\nGiven the following sequence of text states:\n1. \"Hello\"\n2. \"Hello World\"\n3. \"Hello World!\"\n4. \"Hello World!!!\"\nIf the user makes three consecutive \"Undo\" operations, AFTER THE ABOVE 4 STATES what will be the current state of the text?\na. \"Hello World!!!\"\nb. \"Hello World\"\nc. \"Hello\"\nd. \"\"",
+            "question_text": "Imagine you are developing a feature for a text editor that allows users to undo their last set of changes. You decide to use a stack to implement this feature. Each time a user makes a change, the previous state of the text is pushed onto the stack. When the user selects \"Undo\", the most recent state is popped from the stack, and the text reverts to that state.\nGiven the following sequence of text states:\n1. \"Hello\"\n2. \"Hello World\"\n3. \"Hello World!\"\n4. \"Hello World!!!\"\nIf the user makes three consecutive \"Undo\" operations, AFTER THE ABOVE 4 STATES what will be the current state of the text?",
+            "options": [
+                "\"Hello World!!!\"",
+                "\"Hello World\"",
+                "\"Hello\"",
+                "\"\""
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "c. \"Hello\"\n\nExplanation: Each undo reverts to the previously pushed state:\n- 1st Undo: reverts from state 4 to state 3 (\"Hello World!\")\n- 2nd Undo: reverts from state 3 to state 2 (\"Hello World\")\n- 3rd Undo: reverts from state 2 to state 1 (\"Hello\")",
+            "answer": "Each undo reverts to the previously pushed state:\n- 1st Undo: reverts from state 4 to state 3 (\"Hello World!\")\n- 2nd Undo: reverts from state 3 to state 2 (\"Hello World\")\n- 3rd Undo: reverts from state 2 to state 1 (\"Hello\")",
             "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },
         {
             "question_number": "Set C - 3",
-            "question_text": "Which of the following statements represent \"circular queue is full\" condition IF an array is used to implement a queue?\na. FRONT = 0; REAR = 0\nb. FRONT = (REAR + 1 MOD LENGTH)\nc. CQ[FRONT] = ITEM\nd. CQ[REAR] = ITEM",
+            "question_text": "Which of the following statements represent \"circular queue is full\" condition IF an array is used to implement a queue?",
+            "options": [
+                "FRONT = 0; REAR = 0",
+                "FRONT = (REAR + 1 MOD LENGTH)",
+                "CQ[FRONT] = ITEM",
+                "CQ[REAR] = ITEM"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b. FRONT = (REAR + 1 MOD LENGTH)\n\nExplanation: In a circular array implementation, the queue is recognized as full when advancing `REAR` by one circular position meets `FRONT`, represented by `FRONT == (REAR + 1) % LENGTH`.",
+            "answer": "In a circular array implementation, the queue is recognized as full when advancing `REAR` by one circular position meets `FRONT`, represented by `FRONT == (REAR + 1) % LENGTH`.",
             "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },
         {
             "question_number": "Set C - 4",
-            "question_text": "Choose the incorrect statement from the given options.\na. In any binary tree, maximum number of nodes on level l is $2^l$, where $l \\ge 0$.\nb. Maximum number of nodes possible in a binary tree of height h is $2^h + 1$.\nc. Maximum number of nodes possible in a binary tree of height h is $2^h - 1$.\nd. Minimum number of nodes possible in a binary tree of height h is h.",
+            "question_text": "Choose the incorrect statement from the given options.",
+            "options": [
+                "In any binary tree, maximum number of nodes on level l is $2^l$, where $l \\ge 0$.",
+                "Maximum number of nodes possible in a binary tree of height h is $2^h + 1$.",
+                "Maximum number of nodes possible in a binary tree of height h is $2^h - 1$.",
+                "Minimum number of nodes possible in a binary tree of height h is h."
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b. Maximum number of nodes possible in a binary tree of height h is $2^h + 1$.\n\nExplanation: The maximum number of nodes in a binary tree of height $h$ (levels 1 through $h$) is $\\sum_{i=0}^{h-1} 2^i = 2^h - 1$. Hence, $2^h + 1$ is incorrect.",
+            "answer": "The maximum number of nodes in a binary tree of height $h$ (levels 1 through $h$) is $\\sum_{i=0}^{h-1} 2^i = 2^h - 1$. Hence, $2^h + 1$ is incorrect.",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
         {
             "question_number": "Set C - 5",
-            "question_text": "Which of the following is False in the case of Binary Search Tree?\na. In-order traversal on a BST gives the data in ascending order\nb. Pre-order traversal on a BST gives the data in ascending order\nc. the minimum value is at the left-most node\nd. the maximum value is at the right-most node.",
+            "question_text": "Which of the following is False in the case of Binary Search Tree?",
+            "options": [
+                "In-order traversal on a BST gives the data in ascending order",
+                "Pre-order traversal on a BST gives the data in ascending order",
+                "the minimum value is at the left-most node",
+                "the maximum value is at the right-most node."
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b. Pre-order traversal on a BST gives the data in ascending order\n\nExplanation: In-order traversal (Left-Root-Right) yields elements in sorted ascending order, whereas pre-order traversal (Root-Left-Right) does not produce sorted output.",
+            "answer": "In-order traversal (Left-Root-Right) yields elements in sorted ascending order, whereas pre-order traversal (Root-Left-Right) does not produce sorted output.",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
         {
             "question_number": "Set C - 6",
-            "question_text": "Which of the following arrays represents a level order representation of a valid Min-Heap?\na. [2, 3, 4, 5, 10, 7, 8]\nb. [5, 3, 8, 10, 12, 9, 15]\nc. [1, 4, 7, 6, 9, 8, 3]\nd. [10, 20, 40, 70, 50, 60, 30]",
+            "question_text": "Which of the following arrays represents a level order representation of a valid Min-Heap?",
+            "options": [
+                "[2, 3, 4, 5, 10, 7, 8]",
+                "[5, 3, 8, 10, 12, 9, 15]",
+                "[1, 4, 7, 6, 9, 8, 3]",
+                "[10, 20, 40, 70, 50, 60, 30]"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "a. [2, 3, 4, 5, 10, 7, 8]\n\nExplanation: In a min-heap, every parent $A[i]$ must satisfy $A[i] \\le A[2i+1]$ and $A[i] \\le A[2i+2]$:\n- For (a): $A[0]=2 \\le 3, 4$; $A[1]=3 \\le 5, 10$; $A[2]=4 \\le 7, 8$. All heap conditions are satisfied.",
+            "answer": "In a min-heap, every parent $A[i]$ must satisfy $A[i] \\le A[2i+1]$ and $A[i] \\le A[2i+2]$:\n- For (a): $A[0]=2 \\le 3, 4$; $A[1]=3 \\le 5, 10$; $A[2]=4 \\le 7, 8$. All heap conditions are satisfied.",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
         {
             "question_number": "Set C - 7",
-            "question_text": "Consider a weighted, directed graph with V vertices and E edges. Which data structure is typically suitable for efficiently finding the shortest paths between all pairs of vertices?\na. Adjacency matrix\nb. Priority queue\nc. Stack\nd. Hash table",
+            "question_text": "Consider a weighted, directed graph with V vertices and E edges. Which data structure is typically suitable for efficiently finding the shortest paths between all pairs of vertices?",
+            "options": [
+                "Adjacency matrix",
+                "Priority queue",
+                "Stack",
+                "Hash table"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "a. Adjacency matrix\n\nExplanation: The standard all-pairs shortest path algorithm (Floyd-Warshall Algorithm) operates directly on an adjacency matrix representation with $O(V^3)$ time complexity.",
+            "answer": "The standard all-pairs shortest path algorithm (Floyd-Warshall Algorithm) operates directly on an adjacency matrix representation with $O(V^3)$ time complexity.",
             "answer_source": "generated",
             "chapter": "Unit 5: Graph"
         },
         {
             "question_number": "Set C - 8",
-            "question_text": "When implementing a Depth-first search (DFS) algorithm on a graph, what data structure is typically used to keep track of vertices in the order they are visited?\na. Stack\nb. Linked list\nc. Heap\nd. Queue",
+            "question_text": "When implementing a Depth-first search (DFS) algorithm on a graph, what data structure is typically used to keep track of vertices in the order they are visited?",
+            "options": [
+                "Stack",
+                "Linked list",
+                "Heap",
+                "Queue"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "a. Stack\n\nExplanation: Depth-First Search explores as deep as possible along each branch before backtracking, which inherently follows LIFO order managed using a Stack.",
+            "answer": "Depth-First Search explores as deep as possible along each branch before backtracking, which inherently follows LIFO order managed using a Stack.",
             "answer_source": "generated",
             "chapter": "Unit 5: Graph"
         },

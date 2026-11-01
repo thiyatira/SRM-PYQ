@@ -4,161 +4,301 @@
     "questions": [
         {
             "question_number": "Q1",
-            "question_text": "According to classical free electron theory, in the absence of external electrical field, the free electrons __________\n(A) Move randomly and collide with each other\n(B) Move randomly without collision\n(C) Remain stable\n(D) Move uniformly",
+            "question_text": "According to classical free electron theory, in the absence of external electrical field, the free electrons __________",
+            "options": [
+                "Move randomly and collide with each other",
+                "Move randomly without collision",
+                "Remain stable",
+                "Move uniformly"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: In the absence of a field, electrons move in random directions due to thermal energy and undergo frequent collisions with lattice ions.",
+            "answer": "In the absence of a field, electrons move in random directions due to thermal energy and undergo frequent collisions with lattice ions.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
         {
             "question_number": "Q2",
-            "question_text": "A hole in the semiconductors treated as __________\n(A) A free electron\n(B) A incomplete part of covalent bond\n(C) A free proton\n(D) A free neutron",
+            "question_text": "A hole in the semiconductors treated as __________",
+            "options": [
+                "A free electron",
+                "A incomplete part of covalent bond",
+                "A free proton",
+                "A free neutron"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: A hole is effectively an empty state in the valence band created by the absence of an electron in a covalent bond.",
+            "answer": "A hole is effectively an empty state in the valence band created by the absence of an electron in a covalent bond.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
         {
             "question_number": "Q3",
-            "question_text": "A unit of vibrational energy due to oscillating atoms within a crystal is known as __________\n(A) Photons\n(B) Phonons\n(C) Bhor magneton\n(D) Electrons",
+            "question_text": "A unit of vibrational energy due to oscillating atoms within a crystal is known as __________",
+            "options": [
+                "Photons",
+                "Phonons",
+                "Bhor magneton",
+                "Electrons"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: Phonons are the discrete units (quanta) of lattice vibrations in a crystal.",
+            "answer": "Phonons are the discrete units (quanta) of lattice vibrations in a crystal.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
         {
             "question_number": "Q4",
-            "question_text": "The probability of finding the electron at E = Ef at 100 K\n(A) 0%\n(B) 100%\n(C) 50%\n(D) 25%",
+            "question_text": "The probability of finding the electron at E = Ef at 100 K",
+            "options": [
+                "0%",
+                "100%",
+                "50%",
+                "25%"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C)\nExplanation: According to the Fermi-Dirac distribution f(E) = 1 / [exp((E-Ef)/kT) + 1], at E=Ef, f(E) = 1/2 or 50% for any T > 0.",
+            "answer": "According to the Fermi-Dirac distribution f(E) = 1 / [exp((E-Ef)/kT) + 1], at E=Ef, f(E) = 1/2 or 50% for any T > 0.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
         {
             "question_number": "Q5",
-            "question_text": "The Fermi level of n-type semiconductor __________ while increasing temperature\n(A) Increases\n(B) Decreases\n(C) Remains constant\n(D) Depends on the doped element",
+            "question_text": "The Fermi level of n-type semiconductor __________ while increasing temperature",
+            "options": [
+                "Increases",
+                "Decreases",
+                "Remains constant",
+                "Depends on the doped element"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: As temperature increases, the semiconductor becomes more intrinsic, causing the Fermi level in an n-type material to move downward toward the middle of the bandgap.",
+            "answer": "As temperature increases, the semiconductor becomes more intrinsic, causing the Fermi level in an n-type material to move downward toward the middle of the bandgap.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
         {
             "question_number": "Q6",
-            "question_text": "The Fermi level in a p-semiconductor located at __________\n(A) The top of the valence band\n(B) The top of the conduction band\n(C) The bottom of the valence band\n(D) The bottom of the conduction band",
+            "question_text": "The Fermi level in a p-semiconductor located at __________",
+            "options": [
+                "The top of the valence band",
+                "The top of the conduction band",
+                "The bottom of the valence band",
+                "The bottom of the conduction band"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: In p-type semiconductors, the Fermi level is situated just above the top of the valence band at low temperatures.",
+            "answer": "In p-type semiconductors, the Fermi level is situated just above the top of the valence band at low temperatures.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
         {
             "question_number": "Q7",
-            "question_text": "A photon of frequency v interact with electrons and holes of specific energies and momentum is determined by __________\n(A) V-I diagram\n(B) Band diagram\n(C) E-P diagram\n(D) E-k diagram",
+            "question_text": "A photon of frequency v interact with electrons and holes of specific energies and momentum is determined by __________",
+            "options": [
+                "V-I diagram",
+                "Band diagram",
+                "E-P diagram",
+                "E-k diagram"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: The E-k (energy vs. wave vector) diagram illustrates the relationship between energy and crystal momentum for carriers.",
+            "answer": "The E-k (energy vs. wave vector) diagram illustrates the relationship between energy and crystal momentum for carriers.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
         {
             "question_number": "Q8",
-            "question_text": "Fermi’s golden rule which describes the optical __________\n(A) Transition level\n(B) Transition rate\n(C) Band theory\n(D) Block body radiation",
+            "question_text": "Fermi’s golden rule which describes the optical __________",
+            "options": [
+                "Transition level",
+                "Transition rate",
+                "Band theory",
+                "Block body radiation"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: Fermi's Golden Rule is a mathematical formula used to calculate the transition rate (probability per unit time) of a quantum system.",
+            "answer": "Fermi's Golden Rule is a mathematical formula used to calculate the transition rate (probability per unit time) of a quantum system.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
         {
             "question_number": "Q9",
-            "question_text": "If the voltage of the potential barrier is V0. A voltage V is applied to the input, at what moments will the barrier disappears?\n(A) V < V0\n(B) V > V0\n(C) V = V0\n(D) V << V0",
+            "question_text": "If the voltage of the potential barrier is V0. A voltage V is applied to the input, at what moments will the barrier disappears?",
+            "options": [
+                "V < V0",
+                "V > V0",
+                "V = V0",
+                "V << V0"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: The built-in potential barrier (V0) is overcome when the applied forward bias (V) exceeds it.",
+            "answer": "The built-in potential barrier (V0) is overcome when the applied forward bias (V) exceeds it.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
         {
             "question_number": "Q10",
-            "question_text": "Which process gives the laser its special properties as an optical source?\n(A) Dispersion\n(B) Stimulated absorption\n(C) Spontaneous emission\n(D) Stimulated emission",
+            "question_text": "Which process gives the laser its special properties as an optical source?",
+            "options": [
+                "Dispersion",
+                "Stimulated absorption",
+                "Spontaneous emission",
+                "Stimulated emission"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: Laser (Light Amplification by Stimulated Emission of Radiation) relies on stimulated emission to produce coherent, monochromatic light.",
+            "answer": "Laser (Light Amplification by Stimulated Emission of Radiation) relies on stimulated emission to produce coherent, monochromatic light.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
         {
             "question_number": "Q11",
-            "question_text": "Short circuit current (Isc) in solar cell due to\n(A) Threshold current flow\n(B) Maximum current flow\n(C) Potential across the junction\n(D) Maximum Voltage",
+            "question_text": "Short circuit current (Isc) in solar cell due to",
+            "options": [
+                "Threshold current flow",
+                "Maximum current flow",
+                "Potential across the junction",
+                "Maximum Voltage"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: Short circuit current is the maximum current that a solar cell can deliver when its terminals are connected with zero resistance.",
+            "answer": "Short circuit current is the maximum current that a solar cell can deliver when its terminals are connected with zero resistance.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
         {
             "question_number": "Q12",
-            "question_text": "If the positive terminal of the battery is connected to the anode of the diode, then it is kwn as __________\n(A) Forward biased\n(B) Reverse biased\n(C) Equilibrium\n(D) Schottky barrier",
+            "question_text": "If the positive terminal of the battery is connected to the anode of the diode, then it is kwn as __________",
+            "options": [
+                "Forward biased",
+                "Reverse biased",
+                "Equilibrium",
+                "Schottky barrier"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: Connecting the positive terminal to the p-region (anode) and negative to the n-region (cathode) constitutes forward biasing.",
+            "answer": "Connecting the positive terminal to the p-region (anode) and negative to the n-region (cathode) constitutes forward biasing.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
         {
             "question_number": "Q13",
-            "question_text": "How many times should a Monte Carlo simulation model be run?\n(A) 100 times\n(B) Hundreds or thousands of times\n(C) Three times\n(D) Once",
+            "question_text": "How many times should a Monte Carlo simulation model be run?",
+            "options": [
+                "100 times",
+                "Hundreds or thousands of times",
+                "Three times",
+                "Once"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: Monte Carlo simulations rely on statistical sampling, requiring a large number of trials to achieve accuracy and minimize variance.",
+            "answer": "Monte Carlo simulations rely on statistical sampling, requiring a large number of trials to achieve accuracy and minimize variance.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
         {
             "question_number": "Q14",
-            "question_text": "To identify the nature of semiconductor (p-type or n – type) __________ method will be used.\n(A) Two-point method\n(B) Linear four-point method\n(C) Van der Pauw four-point method\n(D) Hall effect",
+            "question_text": "To identify the nature of semiconductor (p-type or n – type) __________ method will be used.",
+            "options": [
+                "Two-point method",
+                "Linear four-point method",
+                "Van der Pauw four-point method",
+                "Hall effect"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: The Hall effect determines the sign and density of charge carriers, identifying whether a material is p-type or n-type.",
+            "answer": "The Hall effect determines the sign and density of charge carriers, identifying whether a material is p-type or n-type.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
         {
             "question_number": "Q15",
-            "question_text": "In linear four probe method the tip of probe diameter is usually __________ than the probe spacing\n(A) Larger\n(B) Cooler\n(C) Hotter\n(D) Smaller",
+            "question_text": "In linear four probe method the tip of probe diameter is usually __________ than the probe spacing",
+            "options": [
+                "Larger",
+                "Cooler",
+                "Hotter",
+                "Smaller"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D)\nExplanation: To minimize geometric errors in resistivity calculation, probe tips should be small relative to the spacing.",
+            "answer": "To minimize geometric errors in resistivity calculation, probe tips should be small relative to the spacing.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
         {
             "question_number": "Q16",
-            "question_text": "The Hall voltage is __________\n(A) Perpendicular to electric and magnetic field\n(B) Parallel to electric and magnetic field\n(C) Perpendicular to electric field\n(D) Perpendicular to Hall current",
+            "question_text": "The Hall voltage is __________",
+            "options": [
+                "Perpendicular to electric and magnetic field",
+                "Parallel to electric and magnetic field",
+                "Perpendicular to electric field",
+                "Perpendicular to Hall current"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: Hall voltage is generated in a direction perpendicular to both the electric current and the applied magnetic field (Lorentz force direction).",
+            "answer": "Hall voltage is generated in a direction perpendicular to both the electric current and the applied magnetic field (Lorentz force direction).",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
         {
             "question_number": "Q17",
-            "question_text": "Nano particles are special mainly because of their __________\n(A) Surface area\n(B) Surface charge\n(C) Volume\n(D) Force",
+            "question_text": "Nano particles are special mainly because of their __________",
+            "options": [
+                "Surface area",
+                "Surface charge",
+                "Volume",
+                "Force"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A)\nExplanation: High surface area per unit volume at the nanoscale leads to unique properties not found in bulk forms.",
+            "answer": "High surface area per unit volume at the nanoscale leads to unique properties not found in bulk forms.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
         {
             "question_number": "Q18",
-            "question_text": "Which among the following helps us in getting a 3D picture of the specimen?\n(A) TEM\n(B) SEM\n(C) Compound microscope\n(D) Simple microscope",
+            "question_text": "Which among the following helps us in getting a 3D picture of the specimen?",
+            "options": [
+                "TEM",
+                "SEM",
+                "Compound microscope",
+                "Simple microscope"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: Scanning Electron Microscopy (SEM) produces 3D-like images of the surface topography of a sample.",
+            "answer": "Scanning Electron Microscopy (SEM) produces 3D-like images of the surface topography of a sample.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
         {
             "question_number": "Q19",
-            "question_text": "In PVD chamber, the precursors are introduced to the reaction chamber in the __________ state\n(A) Liquid\n(B) Solid\n(C) Gaseous\n(D) Semi solid",
+            "question_text": "In PVD chamber, the precursors are introduced to the reaction chamber in the __________ state",
+            "options": [
+                "Liquid",
+                "Solid",
+                "Gaseous",
+                "Semi solid"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: In Physical Vapor Deposition (PVD), the material to be deposited starts in a solid state and is vaporized physically.",
+            "answer": "In Physical Vapor Deposition (PVD), the material to be deposited starts in a solid state and is vaporized physically.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
         {
             "question_number": "Q20",
-            "question_text": "The physical parameter that is probed in AFM resulting from different interactions is\n(A) Charge\n(B) Force\n(C) Potential\n(D) Field",
+            "question_text": "The physical parameter that is probed in AFM resulting from different interactions is",
+            "options": [
+                "Charge",
+                "Force",
+                "Potential",
+                "Field"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B)\nExplanation: AFM measures atomic forces between the scanning tip and the surface.",
+            "answer": "AFM measures atomic forces between the scanning tip and the surface.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         }

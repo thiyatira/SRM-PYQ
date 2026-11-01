@@ -5,81 +5,151 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "When using Branching, the usual sequencing of the PC is altered. A new instruction is loaded which is called as ______\na) Branch target\nb) Loop target\nc) Forward target\nd) Jump instruction",
+            "question_text": "When using Branching, the usual sequencing of the PC is altered. A new instruction is loaded which is called as ______",
+            "options": [
+                "Branch target",
+                "Loop target",
+                "Forward target",
+                "Jump instruction"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "a) Branch target\n\n**Rationale:** In branching, the address of the next instruction to be executed is altered. This new memory address is known as the branch target.",
+            "answer": "In branching, the address of the next instruction to be executed is altered. This new memory address is known as the branch target.",
             "answer_source": "provided",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "2",
-            "question_text": "In the following indexed addressing mode instruction, MOV 5(R1), LOC the effective address is ______\na) EA = 5+R1\nb) EA = R1\nc) EA = [R1]\nd) EA = 5+[R1]",
+            "question_text": "In the following indexed addressing mode instruction, MOV 5(R1), LOC the effective address is ______",
+            "options": [
+                "EA = 5+R1",
+                "EA = R1",
+                "EA = [R1]",
+                "EA = 5+[R1]"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "d) EA = 5+[R1]\n\n**Rationale:** In indexed addressing mode, the effective address (EA) is calculated by adding a displacement constant to the contents of the specified index register: $\\text{EA} = \\text{offset} + [\\text{Register}]$.",
+            "answer": "In indexed addressing mode, the effective address (EA) is calculated by adding a displacement constant to the contents of the specified index register: $\\text{EA} = \\text{offset} + [\\text{Register}]$.",
             "answer_source": "provided",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "3",
-            "question_text": "The microprocessor of a computer can operate on any information if it is present in ______________ only.\na) Program Counter\nb) Flag\nc) Main Memory\nd) Secondary Memory",
+            "question_text": "The microprocessor of a computer can operate on any information if it is present in ______________ only.",
+            "options": [
+                "Program Counter",
+                "Flag",
+                "Main Memory",
+                "Secondary Memory"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "c) Main Memory\n\n**Rationale:** The CPU can directly access and execute instructions or process data only when they are loaded into the main memory (RAM).",
+            "answer": "The CPU can directly access and execute instructions or process data only when they are loaded into the main memory (RAM).",
             "answer_source": "provided",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "4",
-            "question_text": "The assembler directives which are the hints using some predefined alphabetical strings are given to\na) processor\nb) memory\nc) assembler\nd) processor & assembler",
+            "question_text": "The assembler directives which are the hints using some predefined alphabetical strings are given to",
+            "options": [
+                "processor",
+                "memory",
+                "assembler",
+                "processor & assembler"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "c) assembler\n\n**Rationale:** Assembler directives (pseudo-instructions) are commands directed to the assembler program during translation, not instructions executed by the target physical processor.",
+            "answer": "Assembler directives (pseudo-instructions) are commands directed to the assembler program during translation, not instructions executed by the target physical processor.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "5",
-            "question_text": "The method used to reduce the maximum number of summands by half is _______\na) Fast multiplication\nb) Bit-pair recording\nc) Quick multiplication\nd) Booth Multiplication",
+            "question_text": "The method used to reduce the maximum number of summands by half is _______",
+            "options": [
+                "Fast multiplication",
+                "Bit-pair recording",
+                "Quick multiplication",
+                "Booth Multiplication"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b) Bit-pair recording\n\n**Rationale:** Bit-pair recoding (or Modified Booth's Algorithm) reduces the number of partial products (summands) by exactly half by grouping multiplier bits into pairs.",
+            "answer": "Bit-pair recoding (or Modified Booth's Algorithm) reduces the number of partial products (summands) by exactly half by grouping multiplier bits into pairs.",
             "answer_source": "provided",
             "chapter": "Unit 3: Design of ALU"
         },
         {
             "question_number": "6",
-            "question_text": "In IEEE 32-bit representations, the mantissa of the fraction is said to occupy ______ bits.\na) 24\nb) 23\nc) 20\nd) 16",
+            "question_text": "In IEEE 32-bit representations, the mantissa of the fraction is said to occupy ______ bits.",
+            "options": [
+                "24",
+                "23",
+                "20",
+                "16"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b) 23\n\n**Rationale:** In IEEE 754 single-precision (32-bit) format, the representation is allocated as: 1 sign bit, 8 exponent bits, and 23 mantissa/fraction bits.",
+            "answer": "In IEEE 754 single-precision (32-bit) format, the representation is allocated as: 1 sign bit, 8 exponent bits, and 23 mantissa/fraction bits.",
             "answer_source": "provided",
             "chapter": "Unit 3: Design of ALU"
         },
         {
             "question_number": "7",
-            "question_text": "Half-adders have a major limitation, they cannot __________\na) Accept a carry bit from a present stage\nb) Accept a carry bit from a next stage\nc) Accept a carry bit from a previous stage\nd) Accept a carry bit from the following stages",
+            "question_text": "Half-adders have a major limitation, they cannot __________",
+            "options": [
+                "Accept a carry bit from a present stage",
+                "Accept a carry bit from a next stage",
+                "Accept a carry bit from a previous stage",
+                "Accept a carry bit from the following stages"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "c) Accept a carry bit from a previous stage\n\n**Rationale:** A half-adder can only sum two inputs. It lacks a third input for a carry-in ($C_{\\text{in}}$) propagated from a lower-order stage, which is why a full-adder is required.",
+            "answer": "A half-adder can only sum two inputs. It lacks a third input for a carry-in ($C_{\\text{in}}$) propagated from a lower-order stage, which is why a full-adder is required.",
             "answer_source": "provided",
             "chapter": "Unit 3: Design of ALU"
         },
         {
             "question_number": "8",
-            "question_text": "Which of the following is used for binary multiplication?\na) Restoring Multiplication\nb) Booth’s Algorithm\nc) Pascal's Rule\nd) Digit-by-digit multiplication",
+            "question_text": "Which of the following is used for binary multiplication?",
+            "options": [
+                "Restoring Multiplication",
+                "Booth’s Algorithm",
+                "Pascal's Rule",
+                "Digit-by-digit multiplication"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b) Booth’s Algorithm\n\n**Rationale:** Booth’s algorithm is a standard, efficient algorithm used for multiplying signed binary numbers represented in 2's complement.",
+            "answer": "Booth’s algorithm is a standard, efficient algorithm used for multiplying signed binary numbers represented in 2's complement.",
             "answer_source": "provided",
             "chapter": "Unit 3: Design of ALU"
         },
         {
             "question_number": "9",
-            "question_text": "DeMorgan’s theorem states that _________\na) (AB)’ = A’ + B’\nb) (A + B)’ = A’ * B\nc) A’ + B’ = A’B’\nd) (AB)’ = A’ + B",
+            "question_text": "DeMorgan’s theorem states that _________",
+            "options": [
+                "(AB)’ = A’ + B’",
+                "(A + B)’ = A’ * B",
+                "A’ + B’ = A’B’",
+                "(AB)’ = A’ + B"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "a) (AB)’ = A’ + B’\n\n**Rationale:** DeMorgan's Theorem states that the complement of a product is equal to the sum of the individual complements: $\\overline{AB} = \\bar{A} + \\bar{B}$ (written as $(AB)' = A' + B'$).",
+            "answer": "DeMorgan's Theorem states that the complement of a product is equal to the sum of the individual complements: $\\overline{AB} = \\bar{A} + \\bar{B}$ (written as $(AB)' = A' + B'$).",
             "answer_source": "provided",
             "chapter": "Unit 3: Design of ALU"
         },
         {
             "question_number": "10",
-            "question_text": "The product of 1101 & 1011 is ______\na) 10001111\nb) 10101010\nc) 11110000\nd) 11001100",
+            "question_text": "The product of 1101 & 1011 is ______",
+            "options": [
+                "10001111",
+                "10101010",
+                "11110000",
+                "11001100"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "a) 10001111\n\n**Rationale:**\n$$\\begin{array}{r@{\\quad}l}\n1101 & (13_{10}) \\\\\n\\times \\ 1011 & (11_{10}) \\\\\n\\hline\n1101 & \\\\\n11010 & \\\\\n000000 & \\\\\n1101000 & \\\\\n\\hline\n10001111 & (143_{10})\n\\end{array}$$\nThus, $1101_2 \\times 1011_2 = 10001111_2$.",
+            "answer": "$$\\begin{array}{r@{\\quad}l}\n1101 & (13_{10}) \\\\\n\\times \\ 1011 & (11_{10}) \\\\\n\\hline\n1101 & \\\\\n11010 & \\\\\n000000 & \\\\\n1101000 & \\\\\n\\hline\n10001111 & (143_{10})\n\\end{array}$$\nThus, $1101_2 \\times 1011_2 = 10001111_2$.",
             "answer_source": "provided",
             "chapter": "Unit 3: Design of ALU"
         },

@@ -5,81 +5,151 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Convert the given decimal number 245 to hexadecimal\n\na) (OxF5)16\nb) (OxE5)16\nc) (OxFF)16\nd) (Ox2F)16",
+            "question_text": "Convert the given decimal number 245 to hexadecimal",
+            "options": [
+                "(OxF5)16",
+                "(OxE5)16",
+                "(OxFF)16",
+                "(Ox2F)16"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "a) (OxF5)16\n\nRationale:\nTo convert decimal 245 to hexadecimal:\n$$245 / 16 = 15 \\text{ remainder } 5$$\nSince 15 is represented as 'F' in hexadecimal, the value is $F5_{16}$ (often written with prefix as 0xF5).",
+            "answer": "To convert decimal 245 to hexadecimal:\n$$245 / 16 = 15 \\text{ remainder } 5$$\nSince 15 is represented as 'F' in hexadecimal, the value is $F5_{16}$ (often written with prefix as 0xF5).",
             "answer_source": "provided",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "2",
-            "question_text": "Which type of computer is typically used by large organizations for data processing, business applications, and centralized computing? \n\na) Minicomputer \nb) Personal Computer \nc) Mainframe Computer\nd) Tablet Computer",
+            "question_text": "Which type of computer is typically used by large organizations for data processing, business applications, and centralized computing?",
+            "options": [
+                "Minicomputer",
+                "Personal Computer",
+                "Mainframe Computer",
+                "Tablet Computer"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "c) Mainframe Computer\n\nRationale:\nMainframe computers are designed to handle large-scale database operations, high-throughput transactions, and centralized enterprise computing tasks common in large organizations.",
+            "answer": "Mainframe computers are designed to handle large-scale database operations, high-throughput transactions, and centralized enterprise computing tasks common in large organizations.",
             "answer_source": "provided",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "3",
-            "question_text": "Convert the excess-3 code 0110 to Gray code. \n\na) 0011 \nb) 0101 \nc) 1101 \nd) 1011",
+            "question_text": "Convert the excess-3 code 0110 to Gray code.",
+            "options": [
+                "0011",
+                "0101",
+                "1101",
+                "1011"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b) 0101\n\nRationale:\nIf we perform a direct binary-to-Gray conversion on the bit representation `0110`:\n- $G_3 = B_3 = 0$\n- $G_2 = B_3 \\oplus B_2 = 0 \\oplus 1 = 1$\n- $G_1 = B_2 \\oplus B_1 = 1 \\oplus 1 = 0$\n- $G_0 = B_1 \\oplus B_0 = 1 \\oplus 0 = 1$\nThis yields `0101`.",
+            "answer": "If we perform a direct binary-to-Gray conversion on the bit representation `0110`:\n- $G_3 = B_3 = 0$\n- $G_2 = B_3 \\oplus B_2 = 0 \\oplus 1 = 1$\n- $G_1 = B_2 \\oplus B_1 = 1 \\oplus 1 = 0$\n- $G_0 = B_1 \\oplus B_0 = 1 \\oplus 0 = 1$\nThis yields `0101`.",
             "answer_source": "provided",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "4",
-            "question_text": "Which of the following is true about the 2's complement representation? \n\na) The leftmost bit is the sign bit. \nb) Positive numbers are represented by a leading 0. \nc) Negative numbers are represented by a leading 1. \nd) Positive numbers have a negative counterpart. 0101.",
+            "question_text": "Which of the following is true about the 2's complement representation?",
+            "options": [
+                "The leftmost bit is the sign bit.",
+                "Positive numbers are represented by a leading 0.",
+                "Negative numbers are represented by a leading 1.",
+                "Positive numbers have a negative counterpart."
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "c) Negative numbers are represented by a leading 1.\n\nRationale:\nIn signed 2's complement representation, a leading MSB (most significant bit / leftmost bit) of 1 indicates a negative number, and 0 indicates a positive number.",
+            "answer": "In signed 2's complement representation, a leading MSB (most significant bit / leftmost bit) of 1 indicates a negative number, and 0 indicates a positive number.",
             "answer_source": "provided",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "5",
-            "question_text": "Which logic gate produces an output of 0 only when all of its inputs are 1? \n\na) AND gate\nb) OR gate\nc) NAND gate\nd) NOR gate",
+            "question_text": "Which logic gate produces an output of 0 only when all of its inputs are 1?",
+            "options": [
+                "AND gate",
+                "OR gate",
+                "NAND gate",
+                "NOR gate"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "c) NAND gate\n\nRationale:\nA NAND gate produces a high output (1) for all combinations except when all inputs are high (1), in which case it produces a low output (0).",
+            "answer": "A NAND gate produces a high output (1) for all combinations except when all inputs are high (1), in which case it produces a low output (0).",
             "answer_source": "provided",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "6",
-            "question_text": "Which integer representation is commonly used in digital computers for arithmetic operations? \n\na) Roman numeral \nb) Binary-coded decimal (BCD) \nc) Excess-3 \nd) Two's complement",
+            "question_text": "Which integer representation is commonly used in digital computers for arithmetic operations?",
+            "options": [
+                "Roman numeral",
+                "Binary-coded decimal (BCD)",
+                "Excess-3",
+                "Two's complement"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "d) Two's complement\n\nRationale:\nTwo's complement simplifies digital hardware designs for ALU addition and subtraction processes, eliminating the need to handle sign bits separately during calculation.",
+            "answer": "Two's complement simplifies digital hardware designs for ALU addition and subtraction processes, eliminating the need to handle sign bits separately during calculation.",
             "answer_source": "provided",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "7",
-            "question_text": "How are negative numbers represented in sign-magnitude? \n\na) By setting all bits to 1 \nb) By setting the sign bit to 1 and the magnitude bits to the binary representation of the absolute value \nc) By setting the sign bit to 0 and the magnitude bits to the binary representation of the absolute value \nd) By setting the sign bit to 1 and the magnitude bits to the one's complement of the absolute value",
+            "question_text": "How are negative numbers represented in sign-magnitude?",
+            "options": [
+                "By setting all bits to 1",
+                "By setting the sign bit to 1 and the magnitude bits to the binary representation of the absolute value",
+                "By setting the sign bit to 0 and the magnitude bits to the binary representation of the absolute value",
+                "By setting the sign bit to 1 and the magnitude bits to the one's complement of the absolute value"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b) By setting the sign bit to 1 and the magnitude bits to the binary representation of the absolute value\n\nRationale:\nIn sign-magnitude, the most significant bit (MSB) acts as the sign flag (1 for negative, 0 for positive), while the remaining bits carry the absolute value in plain binary.",
+            "answer": "In sign-magnitude, the most significant bit (MSB) acts as the sign flag (1 for negative, 0 for positive), while the remaining bits carry the absolute value in plain binary.",
             "answer_source": "provided",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "8",
-            "question_text": "In BCD addition, if the sum of two BCD digits is greater than 9, what additional step is necessary? \n\na) Subtract 10 \nb) Carry over to the next digit \nc) Convert to binary \nd) Round up",
+            "question_text": "In BCD addition, if the sum of two BCD digits is greater than 9, what additional step is necessary?",
+            "options": [
+                "Subtract 10",
+                "Carry over to the next digit",
+                "Convert to binary",
+                "Round up"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b) Carry over to the next digit\n\nRationale:\nWhen a BCD addition result exceeds 9, a binary correction factor of 6 ($0110_2$) is added. This forces an overflow carry-over to the next higher BCD digit position.",
+            "answer": "When a BCD addition result exceeds 9, a binary correction factor of 6 ($0110_2$) is added. This forces an overflow carry-over to the next higher BCD digit position.",
             "answer_source": "provided",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "9",
-            "question_text": "What is the minimum number of bits required to address 1024 distinct memory locations? \n\na) 6 bits \nb) 10 bits \nc) 16 bits \nd) 32 bits",
+            "question_text": "What is the minimum number of bits required to address 1024 distinct memory locations?",
+            "options": [
+                "6 bits",
+                "10 bits",
+                "16 bits",
+                "32 bits"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b) 10 bits\n\nRationale:\nSince $2^{10} = 1024$, 10 bits are required to uniquely reference 1024 individual memory locations.",
+            "answer": "Since $2^{10} = 1024$, 10 bits are required to uniquely reference 1024 individual memory locations.",
             "answer_source": "provided",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "10",
-            "question_text": "In a little-endian memory system, where is the least significant byte (LSB) of a multi-byte data stored? \n\na) At the highest memory address \nb) At the lowest memory address \nc) In the middle of the memory \nd) In a separate memory location",
+            "question_text": "In a little-endian memory system, where is the least significant byte (LSB) of a multi-byte data stored?",
+            "options": [
+                "At the highest memory address",
+                "At the lowest memory address",
+                "In the middle of the memory",
+                "In a separate memory location"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b) At the lowest memory address\n\nRationale:\nLittle-endian architectures store the least significant byte (LSB) first, which corresponds to the lowest numerical memory address assigned to that data structure.",
+            "answer": "Little-endian architectures store the least significant byte (LSB) first, which corresponds to the lowest numerical memory address assigned to that data structure.",
             "answer_source": "provided",
             "chapter": "Unit 2: Basic structure of computers"
         },

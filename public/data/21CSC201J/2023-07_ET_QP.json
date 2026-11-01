@@ -5,161 +5,301 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "______ is a variable that stores the address of another variable.\n(A) Local variable\n(B) global variable\n(C) auto variable\n(D) pointer variable",
+            "question_text": "______ is a variable that stores the address of another variable.",
+            "options": [
+                "Local variable",
+                "global variable",
+                "auto variable",
+                "pointer variable"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) pointer variable\n\n**Rationale:** A pointer variable is a special variable in programming languages like C that holds the memory address of another variable rather than storing a direct data value.",
+            "answer": "A pointer variable is a special variable in programming languages like C that holds the memory address of another variable rather than storing a direct data value.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
         {
             "question_number": "2",
-            "question_text": "What is the best case time complexity of Linear search?\n(A) O(n)\n(B) O(1)\n(C) O(nlog n)\n(D) O(log n)",
+            "question_text": "What is the best case time complexity of Linear search?",
+            "options": [
+                "O(n)",
+                "O(1)",
+                "O(nlog n)",
+                "O(log n)"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) O(1)\n\n**Rationale:** In linear search, the best-case scenario occurs when the element we are searching for is located at the first position in the list. This requires only a single comparison, yielding $O(1)$ complexity.",
+            "answer": "In linear search, the best-case scenario occurs when the element we are searching for is located at the first position in the list. This requires only a single comparison, yielding $O(1)$ complexity.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
         {
             "question_number": "3",
-            "question_text": "Which of the following data structure is non linear type?\n(A) string\n(B) list\n(C) Tree\n(D) Stack",
+            "question_text": "Which of the following data structure is non linear type?",
+            "options": [
+                "string",
+                "list",
+                "Tree",
+                "Stack"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Tree\n\n**Rationale:** Strings, lists, and stacks store elements in a sequential, linear fashion. A tree represents a hierarchical relationship among data, which is a non-linear data structure.",
+            "answer": "Strings, lists, and stacks store elements in a sequential, linear fashion. A tree represents a hierarchical relationship among data, which is a non-linear data structure.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
         {
             "question_number": "4",
-            "question_text": "Elements in an array are accessed ______\n(A) randomly\n(B) sequentially\n(C) exponentially\n(D) logarithmically",
+            "question_text": "Elements in an array are accessed ______",
+            "options": [
+                "randomly",
+                "sequentially",
+                "exponentially",
+                "logarithmically"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) randomly\n\n**Rationale:** Arrays support constant-time $O(1)$ random access. Using an index, we can directly compute the memory address of any element and access it immediately without sequential traversal.",
+            "answer": "Arrays support constant-time $O(1)$ random access. Using an index, we can directly compute the memory address of any element and access it immediately without sequential traversal.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
         {
             "question_number": "5",
-            "question_text": "The primary benefit of the Linked List data structure is ______\n(A) computation time\n(B) space utilisation\n(C) space utilisation and computation time\n(D) speed than array ds",
+            "question_text": "The primary benefit of the Linked List data structure is ______",
+            "options": [
+                "computation time",
+                "space utilisation",
+                "space utilisation and computation time",
+                "speed than array ds"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) space utilisation\n\n**Rationale:** Since linked lists allocate memory dynamically node-by-node, there is no need to pre-allocate memory. This results in optimal space utilization, avoiding the memory waste typical of fixed-size arrays.",
+            "answer": "Since linked lists allocate memory dynamically node-by-node, there is no need to pre-allocate memory. This results in optimal space utilization, avoiding the memory waste typical of fixed-size arrays.",
             "answer_source": "generated",
             "chapter": "Unit 2: List Structure"
         },
         {
             "question_number": "6",
-            "question_text": "Find the correct code for the following node structure.\n`| Prev* | Data | Next* |`\n(A) struct node {struct node *prev;int data;struct node *next;}\n(B) struct node { struct node prev; int data; struct node next;}\n(C) struct node { int *prev; int data; int *next;}\n(D) struct node { struct node *prev; struct node data; struct node *next;}",
+            "question_text": "Find the correct code for the following node structure.\n`| Prev* | Data | Next* |`",
+            "options": [
+                "struct node {struct node *prev;int data;struct node *next;}",
+                "struct node { struct node prev; int data; struct node next;}",
+                "struct node { int *prev; int data; int *next;}",
+                "struct node { struct node *prev; struct node data; struct node *next;}"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) struct node {struct node *prev;int data;struct node *next;}\n\n**Rationale:** This represents a doubly linked list node structure. `prev` and `next` must be self-referential pointers to the same structure type (`struct node *`), while `data` is an integer field representing the payload.",
+            "answer": "This represents a doubly linked list node structure. `prev` and `next` must be self-referential pointers to the same structure type (`struct node *`), while `data` is an integer field representing the payload.",
             "answer_source": "generated",
             "chapter": "Unit 2: List Structure"
         },
         {
             "question_number": "7",
-            "question_text": "Find the concept which is right for the below condition.\n“Any node can be a starting point. We can traverse the whole list by starting from any point. We just need to stop when the first visited node is visited again”.\n(A) Singly linked list\n(B) array\n(C) Circular linked list\n(D) stack",
+            "question_text": "Find the concept which is right for the below condition.\n“Any node can be a starting point. We can traverse the whole list by starting from any point. We just need to stop when the first visited node is visited again”.",
+            "options": [
+                "Singly linked list",
+                "array",
+                "Circular linked list",
+                "stack"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Circular linked list\n\n**Rationale:** In a circular linked list, the last node's link field points back to the first node. This allows continuous loop-based traversal starting from any arbitrary node, which terminates when the traversal circles back to the starting node.",
+            "answer": "In a circular linked list, the last node's link field points back to the first node. This allows continuous loop-based traversal starting from any arbitrary node, which terminates when the traversal circles back to the starting node.",
             "answer_source": "generated",
             "chapter": "Unit 2: List Structure"
         },
         {
             "question_number": "8",
-            "question_text": "______ is a collection of similar type of data items.\n(A) array\n(B) table\n(C) record\n(D) structure",
+            "question_text": "______ is a collection of similar type of data items.",
+            "options": [
+                "array",
+                "table",
+                "record",
+                "structure"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) array\n\n**Rationale:** An array is a collection of homogeneous data elements (elements of the same type) stored in contiguous memory locations. In contrast, a structure/record can store heterogeneous data types.",
+            "answer": "An array is a collection of homogeneous data elements (elements of the same type) stored in contiguous memory locations. In contrast, a structure/record can store heterogeneous data types.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
         {
             "question_number": "9",
-            "question_text": "Which data structure follows LIFO concept?\n(A) queue\n(B) array\n(C) stack\n(D) deque",
+            "question_text": "Which data structure follows LIFO concept?",
+            "options": [
+                "queue",
+                "array",
+                "stack",
+                "deque"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) stack\n\n**Rationale:** A stack works on the Last-In-First-Out (LIFO) principle, where the last element inserted is the first one to be removed.",
+            "answer": "A stack works on the Last-In-First-Out (LIFO) principle, where the last element inserted is the first one to be removed.",
             "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },
         {
             "question_number": "10",
-            "question_text": "The result evaluating the postfix expression 5 5+60 6/*10- is ______.\n(A) 110\n(B) 90\n(C) 80\n(D) 60",
+            "question_text": "The result evaluating the postfix expression 5 5+60 6/*10- is ______.",
+            "options": [
+                "110",
+                "90",
+                "80",
+                "60"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) 90\n\n**Rationale:** Let's evaluate step-by-step using a stack:\n1. Push `5`, `5` $\\rightarrow$ Stack: `[5, 5]`\n2. Operator `+` $\\rightarrow$ Pop `5`, `5`, compute $5+5 = 10$, push `10` $\\rightarrow$ Stack: `[10]`\n3. Push `60`, `6` $\\rightarrow$ Stack: `[10, 60, 6]`\n4. Operator `/` $\\rightarrow$ Pop `6`, `60`, compute $60/6 = 10$, push `10` $\\rightarrow$ Stack: `[10, 10]`\n5. Operator `*` $\\rightarrow$ Pop `10`, `10`, compute $10 \\times 10 = 100$, push `100` $\\rightarrow$ Stack: `[100]`\n6. Push `10` $\\rightarrow$ Stack: `[100, 10]`\n7. Operator `-` $\\rightarrow$ Pop `10`, `100`, compute $100 - 10 = 90$, push `90` $\\rightarrow$ Stack: `[90]`. Final result is 90.",
+            "answer": "Let's evaluate step-by-step using a stack:\n1. Push `5`, `5` $\\rightarrow$ Stack: `[5, 5]`\n2. Operator `+` $\\rightarrow$ Pop `5`, `5`, compute $5+5 = 10$, push `10` $\\rightarrow$ Stack: `[10]`\n3. Push `60`, `6` $\\rightarrow$ Stack: `[10, 60, 6]`\n4. Operator `/` $\\rightarrow$ Pop `6`, `60`, compute $60/6 = 10$, push `10` $\\rightarrow$ Stack: `[10, 10]`\n5. Operator `*` $\\rightarrow$ Pop `10`, `10`, compute $10 \\times 10 = 100$, push `100` $\\rightarrow$ Stack: `[100]`\n6. Push `10` $\\rightarrow$ Stack: `[100, 10]`\n7. Operator `-` $\\rightarrow$ Pop `10`, `100`, compute $100 - 10 = 90$, push `90` $\\rightarrow$ Stack: `[90]`. Final result is 90.",
             "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },
         {
             "question_number": "11",
-            "question_text": "In Queues, we can insert an element at ______ end and can delete an element at ______ end.\n(A) REAR, FRONT\n(B) FRONT, REAR\n(C) TOP, BOTTOM\n(D) BOTTOM, TOP",
+            "question_text": "In Queues, we can insert an element at ______ end and can delete an element at ______ end.",
+            "options": [
+                "REAR, FRONT",
+                "FRONT, REAR",
+                "TOP, BOTTOM",
+                "BOTTOM, TOP"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) REAR, FRONT\n\n**Rationale:** A FIFO queue performs insertions at the back/tail (REAR) and deletions/removals at the front (FRONT).",
+            "answer": "A FIFO queue performs insertions at the back/tail (REAR) and deletions/removals at the front (FRONT).",
             "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },
         {
             "question_number": "12",
-            "question_text": "How many queues are needed to implement a stack Data Structure? Consider there is no other Data Structure available like array and linked list.\n(A) 1\n(B) 3\n(C) 2\n(D) 4",
+            "question_text": "How many queues are needed to implement a stack Data Structure? Consider there is no other Data Structure available like array and linked list.",
+            "options": [
+                "1",
+                "3",
+                "2",
+                "4"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) 2\n\n**Rationale:** To simulate the Last-In-First-Out (LIFO) property of a stack using First-In-First-Out (FIFO) structures, you need at least 2 queues (either making the push operation costly or the pop operation costly).",
+            "answer": "To simulate the Last-In-First-Out (LIFO) property of a stack using First-In-First-Out (FIFO) structures, you need at least 2 queues (either making the push operation costly or the pop operation costly).",
             "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },
         {
             "question_number": "13",
-            "question_text": "While Inserting the elements 71, 65, 84, 69 in an empty Binary Search Tree (BST) in the sequence shown, the element in the lowest level is ______\n(A) 65\n(B) 84\n(C) 69\n(D) 71",
+            "question_text": "While Inserting the elements 71, 65, 84, 69 in an empty Binary Search Tree (BST) in the sequence shown, the element in the lowest level is ______",
+            "options": [
+                "65",
+                "84",
+                "69",
+                "71"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) 69\n\n**Rationale:** Let's build the BST sequential insert:\n- 71 (Root, Level 0)\n- 65 is smaller than 71 $\\rightarrow$ Left child of 71 (Level 1)\n- 84 is larger than 71 $\\rightarrow$ Right child of 71 (Level 1)\n- 69 is smaller than 71 (go left), larger than 65 $\\rightarrow$ Right child of 65 (Level 2)\nThus, 69 is at the deepest level (lowest level, Level 2).",
+            "answer": "Let's build the BST sequential insert:\n- 71 (Root, Level 0)\n- 65 is smaller than 71 $\\rightarrow$ Left child of 71 (Level 1)\n- 84 is larger than 71 $\\rightarrow$ Right child of 71 (Level 1)\n- 69 is smaller than 71 (go left), larger than 65 $\\rightarrow$ Right child of 65 (Level 2)\nThus, 69 is at the deepest level (lowest level, Level 2).",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
         {
             "question_number": "14",
-            "question_text": "An AVL tree is a self – balancing binary search tree, in which the heights of the two child sub trees of any node differ by ______\n(A) Atleast one\n(B) 0\n(C) Exactly one\n(D) Atmost one",
+            "question_text": "An AVL tree is a self – balancing binary search tree, in which the heights of the two child sub trees of any node differ by ______",
+            "options": [
+                "Atleast one",
+                "0",
+                "Exactly one",
+                "Atmost one"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Atmost one\n\n**Rationale:** The fundamental defining invariant of an AVL tree is that for every node, the height difference between its left and right subtrees (the balance factor) must be at most one (i.e., -1, 0, or 1).",
+            "answer": "The fundamental defining invariant of an AVL tree is that for every node, the height difference between its left and right subtrees (the balance factor) must be at most one (i.e., -1, 0, or 1).",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
         {
             "question_number": "15",
-            "question_text": "What is full binary tree?\n(A) Each node has exactly zero or two children\n(B) Each node has exactly two children\n(C) All the leaves are at the same level\n(D) Each node has exactly one or two children",
+            "question_text": "What is full binary tree?",
+            "options": [
+                "Each node has exactly zero or two children",
+                "Each node has exactly two children",
+                "All the leaves are at the same level",
+                "Each node has exactly one or two children"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Each node has exactly zero or two children\n\n**Rationale:** By formal definition, a full binary tree (sometimes called a proper or strict binary tree) is a tree in which every node has either 0 or 2 children. No node has exactly one child.",
+            "answer": "By formal definition, a full binary tree (sometimes called a proper or strict binary tree) is a tree in which every node has either 0 or 2 children. No node has exactly one child.",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
         {
             "question_number": "16",
-            "question_text": "If \"in order\" traversal is performed in BST, then the resultant is ______\n(A) Elements are in non-increasing order\n(B) Elements are in decreasing order\n(C) Elements are in increasing order\n(D) Elements are in random order",
+            "question_text": "If \"in order\" traversal is performed in BST, then the resultant is ______",
+            "options": [
+                "Elements are in non-increasing order",
+                "Elements are in decreasing order",
+                "Elements are in increasing order",
+                "Elements are in random order"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Elements are in increasing order\n\n**Rationale:** In-order traversal follows the Left-Root-Right pattern. In a Binary Search Tree (BST), because all elements in the left subtree are smaller than the root and all elements in the right subtree are larger, this traversal visits elements in sorted, increasing order.",
+            "answer": "In-order traversal follows the Left-Root-Right pattern. In a Binary Search Tree (BST), because all elements in the left subtree are smaller than the root and all elements in the right subtree are larger, this traversal visits elements in sorted, increasing order.",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
         {
             "question_number": "17",
-            "question_text": "A graph with all vertices having equal degree is known as a ______\n(A) Multi Graph\n(B) Complete Graph\n(C) Simple Graph\n(D) Regular Graph",
+            "question_text": "A graph with all vertices having equal degree is known as a ______",
+            "options": [
+                "Multi Graph",
+                "Complete Graph",
+                "Simple Graph",
+                "Regular Graph"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Regular Graph\n\n**Rationale:** A graph where every vertex has the exact same degree $k$ is called a $k$-regular graph (or simply a regular graph).",
+            "answer": "A graph where every vertex has the exact same degree $k$ is called a $k$-regular graph (or simply a regular graph).",
             "answer_source": "generated",
             "chapter": "Unit 5: Graph"
         },
         {
             "question_number": "18",
-            "question_text": "Which data structure is used to traverse the graph by using Breadth First Search\n(A) stack\n(B) queue\n(C) Array\n(D) List",
+            "question_text": "Which data structure is used to traverse the graph by using Breadth First Search",
+            "options": [
+                "stack",
+                "queue",
+                "Array",
+                "List"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) queue\n\n**Rationale:** Breadth-First Search (BFS) explores vertices level-by-level starting from the source. To manage the expansion boundary in a first-come, first-served manner, it utilizes a FIFO Queue.",
+            "answer": "Breadth-First Search (BFS) explores vertices level-by-level starting from the source. To manage the expansion boundary in a first-come, first-served manner, it utilizes a FIFO Queue.",
             "answer_source": "generated",
             "chapter": "Unit 5: Graph"
         },
         {
             "question_number": "19",
-            "question_text": "______ is a graph with no cycles.\n(A) weighted graph\n(B) cyclic graph\n(C) acyclic graph\n(D) connected graph",
+            "question_text": "______ is a graph with no cycles.",
+            "options": [
+                "weighted graph",
+                "cyclic graph",
+                "acyclic graph",
+                "connected graph"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) acyclic graph\n\n**Rationale:** A graph that contains no closed loops (cycles) is defined as an acyclic graph.",
+            "answer": "A graph that contains no closed loops (cycles) is defined as an acyclic graph.",
             "answer_source": "generated",
             "chapter": "Unit 5: Graph"
         },
         {
             "question_number": "20",
-            "question_text": "Identify the data structure that performs insertion, deletion with an average time complexity of O(1).\n(A) stack\n(B) hash table\n(C) List\n(D) queue",
+            "question_text": "Identify the data structure that performs insertion, deletion with an average time complexity of O(1).",
+            "options": [
+                "stack",
+                "hash table",
+                "List",
+                "queue"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) hash table\n\n**Rationale:** A hash table maps keys to indices using a hash function, which enables average-case $O(1)$ time complexity for search, insertion, and deletion operations.",
+            "answer": "A hash table maps keys to indices using a hash function, which enables average-case $O(1)$ time complexity for search, insertion, and deletion operations.",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },

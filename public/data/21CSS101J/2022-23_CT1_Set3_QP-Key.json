@@ -4,81 +4,151 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Every C program consists of __________ function(s).\n(a) Only one\n(b) Only two\n(c) One or two\n(d) One or many",
+            "question_text": "Every C program consists of __________ function(s).",
+            "options": [
+                "Only one",
+                "Only two",
+                "One or two",
+                "One or many"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(d) One or many",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Introduction to C: Structure of the C program"
         },
         {
             "question_number": "2",
-            "question_text": "Which of the following is not a correct variable type?\n(a) Float\n(b) Real\n(c) Int\n(d) Double",
+            "question_text": "Which of the following is not a correct variable type?",
+            "options": [
+                "Float",
+                "Real",
+                "Int",
+                "Double"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(b) Real",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Numeric Data types: integer, floating point"
         },
         {
             "question_number": "3",
-            "question_text": "Which of the following is not a valid C variable name?\na) int number;\nb) float rate;\nc) intvariable_count;\nd) int $main;",
+            "question_text": "Which of the following is not a valid C variable name?",
+            "options": [
+                "int number;",
+                "float rate;",
+                "int variable_count;",
+                "int $main;"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "d) int $main;",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Variables and identifiers, Constants, Keywords"
         },
         {
             "question_number": "4",
-            "question_text": "Which of these is NOT a relational or logical operator?\n(a) =\n(b) ||\n(c) <=\n(d) !=",
+            "question_text": "Which of these is NOT a relational or logical operator?",
+            "options": [
+                "=",
+                "||",
+                "<=",
+                "!="
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(a) =",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Arithmetic, Relational and logical Operators"
         },
         {
             "question_number": "5",
-            "question_text": "What will be the output of the following code snippet?\n\n```c\n#include <stdio.h>\nint main() {\nint a = 3, b = 5;\nint t = a;\na = b;\nb = t;\nprintf(\"%d %d\", a, b);\nreturn 0;\n}\n```\n\n(a) 3 5\n(b) 3 3\n(c) 5 5\n(d) 5 3",
+            "question_text": "What will be the output of the following code snippet?\n\n```c\n#include <stdio.h>\nint main() {\nint a = 3, b = 5;\nint t = a;\na = b;\nb = t;\nprintf(\"%d %d\", a, b);\nreturn 0;\n}\n```",
+            "options": [
+                "3 5",
+                "3 3",
+                "5 5",
+                "5 3"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(d) 5 3",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Input and output statements. Variables and identifiers"
         },
         {
             "question_number": "6",
-            "question_text": "What is the output of the following code snippet?\n\n```c\nint main() {\nint sum = 2 + 4 / 2 + 6 * 2;\nprintf(\"%d\", sum);\nreturn 0;\n}\n```\n\n(a) 2\n(b) 15\n(c) 16\n(d) 18",
+            "question_text": "What is the output of the following code snippet?\n\n```c\nint main() {\nint sum = 2 + 4 / 2 + 6 * 2;\nprintf(\"%d\", sum);\nreturn 0;\n}\n```",
+            "options": [
+                "2",
+                "15",
+                "16",
+                "18"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(d) 18",
-            "answer_source": "provided",
+            "answer": "By operator precedence, `/` and `*` are evaluated before `+`: sum = 2 + (4/2) + (6*2) = 2 + 2 + 12 = 16. (The printed key listed option d, 18, which is incorrect.)",
+            "answer_source": "generated",
             "chapter": "Unit 1: Operator Precedence"
         },
         {
             "question_number": "7",
-            "question_text": "What will be the output of the following code snippet?\n\n```c\n#include <stdio.h>\nint main() {\nint a = 3;\nint res = a++ + ++a + a++ + ++a;\nprintf(\"%d\", res);\n}\n```\n\n(a) 12\n(b) 24\n(c) 20\n(d) 18",
+            "question_text": "What will be the output of the following code snippet?\n\n```c\n#include <stdio.h>\nint main() {\nint a = 3;\nint res = a++ + ++a + a++ + ++a;\nprintf(\"%d\", res);\n}\n```",
+            "options": [
+                "12",
+                "24",
+                "20",
+                "18"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(b) 24",
+            "answer": "The expression modifies `a` several times without an intervening sequence point (undefined behavior), so the result depends on the compiler; the printed key gives 24 (GCC prints 20).",
             "answer_source": "provided",
             "chapter": "Unit 1: Expressions with pre / post increment operator"
         },
         {
             "question_number": "8",
-            "question_text": "Which of the following is true for variable names in C?\na) They can contain alphanumeric characters as well as special characters\nb) It is not an error to declare a variable to be one of the keywords(like goto, static)\nc) Variable names cannot start with a digit\nd) Variable can be of any length",
+            "question_text": "Which of the following is true for variable names in C?",
+            "options": [
+                "They can contain alphanumeric characters as well as special characters",
+                "It is not an error to declare a variable to be one of the keywords(like goto, static)",
+                "Variable names cannot start with a digit",
+                "Variable can be of any length"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "c) Variable names cannot start with a digit",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Variables and identifiers, Constants, Keywords"
         },
         {
             "question_number": "9",
-            "question_text": "Operator % in C Language is called.?\n(a) Percentage Operator\n(b) Quotient Operator\n(c) Modulus\n(d) Division",
+            "question_text": "Operator % in C Language is called.?",
+            "options": [
+                "Percentage Operator",
+                "Quotient Operator",
+                "Modulus",
+                "Division"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(c) Modulus",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Arithmetic, Relational and logical Operators"
         },
         {
             "question_number": "10",
-            "question_text": "What will be the output of the following code snippet?\n\n```c\nvoid solve() {\nprintf(\"%d \", 9 / 2);\nprintf(\"%f\", 9.0 / 2);\n}\n```\n\n(a) 4 4.5000\n(b) 4 4\n(c) 4.500 4.500\n(d) 4.5 4.50",
+            "question_text": "What will be the output of the following code snippet?\n\n```c\nvoid solve() {\nprintf(\"%d \", 9 / 2);\nprintf(\"%f\", 9.0 / 2);\n}\n```",
+            "options": [
+                "4 4.5000",
+                "4 4",
+                "4.500 4.500",
+                "4.5 4.50"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(a) 4 4.5000",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Numeric Data types: integer, floating point"
         },

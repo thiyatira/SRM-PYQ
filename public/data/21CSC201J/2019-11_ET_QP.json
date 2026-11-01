@@ -5,161 +5,301 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "What is the advantage of bubble sort over other sorting techniques?\n(A) It is faster\n(B) Consumes less memory\n(C) Detects whether the input is already sorted\n(D) Consumes more memory",
+            "question_text": "What is the advantage of bubble sort over other sorting techniques?",
+            "options": [
+                "It is faster",
+                "Consumes less memory",
+                "Detects whether the input is already sorted",
+                "Consumes more memory"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Detects whether the input is already sorted\n\n**Rationale:** Bubble sort can be optimized with a flag to detect if any swaps occurred during a pass. If no swaps occur, the array is already sorted, and the algorithm can terminate early in $O(N)$ time.",
+            "answer": "Bubble sort can be optimized with a flag to detect if any swaps occurred during a pass. If no swaps occur, the array is already sorted, and the algorithm can terminate early in $O(N)$ time.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Introduction"
         },
         {
             "question_number": "2",
-            "question_text": "How many passes does an insertion sort algorithm consist of?\n(A) N\n(B) N - 1\n(C) N + 1\n(D) N^2",
+            "question_text": "How many passes does an insertion sort algorithm consist of?",
+            "options": [
+                "N",
+                "N - 1",
+                "N + 1",
+                "N^2"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) N - 1\n\n**Rationale:** Insertion sort starts from the second element (index 1) and inserts it into its correct position relative to the sorted subarray to its left. This process is repeated up to index $N-1$, resulting in exactly $N-1$ passes.",
+            "answer": "Insertion sort starts from the second element (index 1) and inserts it into its correct position relative to the sorted subarray to its left. This process is repeated up to index $N-1$, resulting in exactly $N-1$ passes.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Introduction"
         },
         {
             "question_number": "3",
-            "question_text": "What is the worst case complexity of binary search using recursion?\n(A) O(n log n)\n(B) O(log n)\n(C) O(n)\n(D) O(n^2)",
+            "question_text": "What is the worst case complexity of binary search using recursion?",
+            "options": [
+                "O(n log n)",
+                "O(log n)",
+                "O(n)",
+                "O(n^2)"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) O(log n)\n\n**Rationale:** Both iterative and recursive binary search have a worst-case time complexity of $O(\\log n)$ because the search space is halved at each step.",
+            "answer": "Both iterative and recursive binary search have a worst-case time complexity of $O(\\log n)$ because the search space is halved at each step.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Introduction"
         },
         {
             "question_number": "4",
-            "question_text": "Which of the following are themselves a collection of different data types?\n(A) String\n(B) Structures\n(C) Char\n(D) Arrays",
+            "question_text": "Which of the following are themselves a collection of different data types?",
+            "options": [
+                "String",
+                "Structures",
+                "Char",
+                "Arrays"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Structures\n\n**Rationale:** In C programming, a structure (`struct`) is a user-defined data type that allows grouping variables of different data types under a single name.",
+            "answer": "In C programming, a structure (`struct`) is a user-defined data type that allows grouping variables of different data types under a single name.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Introduction"
         },
         {
             "question_number": "5",
-            "question_text": "Which of these best describes an array?\n(A) A data structure that shows a hierarchical behaviour\n(B) Contains objects of similar types\n(C) Contains objects of mixed types\n(D) Both similar and mixed types",
+            "question_text": "Which of these best describes an array?",
+            "options": [
+                "A data structure that shows a hierarchical behaviour",
+                "Contains objects of similar types",
+                "Contains objects of mixed types",
+                "Both similar and mixed types"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Contains objects of similar types\n\n**Rationale:** An array is defined as a collection of homogeneous (similar) data types stored in contiguous memory locations.",
+            "answer": "An array is defined as a collection of homogeneous (similar) data types stored in contiguous memory locations.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Introduction"
         },
         {
             "question_number": "6",
-            "question_text": "A linear collection of data elements where the linear node is given by means of pointer is called\n(A) Linked list\n(B) Node list\n(C) Primitive list\n(D) Array list",
+            "question_text": "A linear collection of data elements where the linear node is given by means of pointer is called",
+            "options": [
+                "Linked list",
+                "Node list",
+                "Primitive list",
+                "Array list"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Linked list\n\n**Rationale:** A linked list is a linear data structure where elements (nodes) are not stored in contiguous locations; instead, each node points to the next node using a pointer.",
+            "answer": "A linked list is a linear data structure where elements (nodes) are not stored in contiguous locations; instead, each node points to the next node using a pointer.",
             "answer_source": "generated",
             "chapter": "Unit 2 - List Structure"
         },
         {
             "question_number": "7",
-            "question_text": "What is the time complexity of searching for an element in a circular linked list?\n(A) O(n)\n(B) O(n log n)\n(C) O(1)\n(D) O(n^2)",
+            "question_text": "What is the time complexity of searching for an element in a circular linked list?",
+            "options": [
+                "O(n)",
+                "O(n log n)",
+                "O(1)",
+                "O(n^2)"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) O(n)\n\n**Rationale:** To search for an element in a circular linked list, we may have to traverse the entire list of $n$ elements in the worst case, leading to $O(n)$ time complexity.",
+            "answer": "To search for an element in a circular linked list, we may have to traverse the entire list of $n$ elements in the worst case, leading to $O(n)$ time complexity.",
             "answer_source": "generated",
             "chapter": "Unit 2 - List Structure"
         },
         {
             "question_number": "8",
-            "question_text": "Which of the following is not a disadvantage to the usage of array?\n(A) Fixed size\n(B) You know the size of the array prior to allocation\n(C) Insertion based on position\n(D) Accessing elements at specified positions",
+            "question_text": "Which of the following is not a disadvantage to the usage of array?",
+            "options": [
+                "Fixed size",
+                "You know the size of the array prior to allocation",
+                "Insertion based on position",
+                "Accessing elements at specified positions"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Accessing elements at specified positions\n\n**Rationale:** Accessing an element at a specified position (index) in an array is done in $O(1)$ constant time, which is a major advantage of using arrays.",
+            "answer": "Accessing an element at a specified position (index) in an array is done in $O(1)$ constant time, which is a major advantage of using arrays.",
             "answer_source": "generated",
             "chapter": "Unit 2 - List Structure"
         },
         {
             "question_number": "9",
-            "question_text": "Process of inserting an element in a stack is called __________.\n(A) Create\n(B) Push\n(C) Evaluation\n(D) Pop",
+            "question_text": "Process of inserting an element in a stack is called __________.",
+            "options": [
+                "Create",
+                "Push",
+                "Evaluation",
+                "Pop"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Push\n\n**Rationale:** The insertion operation in a stack is formally called a \"push\" operation.",
+            "answer": "The insertion operation in a stack is formally called a \"push\" operation.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Stack and Queue"
         },
         {
             "question_number": "10",
-            "question_text": "What is the time complexity of pop( ) operation when the stack is implemented using an array?\n(A) O(1)\n(B) O(n)\n(C) O(log n)\n(D) O(n log n)",
+            "question_text": "What is the time complexity of pop( ) operation when the stack is implemented using an array?",
+            "options": [
+                "O(1)",
+                "O(n)",
+                "O(log n)",
+                "O(n log n)"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) O(1)\n\n**Rationale:** Popping an element from an array-implemented stack only requires decrementing the top pointer/index, which is a constant time operation, $O(1)$.",
+            "answer": "Popping an element from an array-implemented stack only requires decrementing the top pointer/index, which is a constant time operation, $O(1)$.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Stack and Queue"
         },
         {
             "question_number": "11",
-            "question_text": "What data structure would you most likely to see in a non-recursive implementation of a recursive algorithm?\n(A) Linked list\n(B) Stack\n(C) Queue\n(D) Tree",
+            "question_text": "What data structure would you most likely to see in a non-recursive implementation of a recursive algorithm?",
+            "options": [
+                "Linked list",
+                "Stack",
+                "Queue",
+                "Tree"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Stack\n\n**Rationale:** Recursive algorithms implicitly use the system call stack. Therefore, converting a recursive algorithm to an iterative (non-recursive) one requires an explicit stack data structure.",
+            "answer": "Recursive algorithms implicitly use the system call stack. Therefore, converting a recursive algorithm to an iterative (non-recursive) one requires an explicit stack data structure.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Stack and Queue"
         },
         {
             "question_number": "12",
-            "question_text": "To implement a stack using queue with only enqueue and dequeue operations, how many queues will you need?\n(A) 1\n(B) 2\n(C) 3\n(D) 4",
+            "question_text": "To implement a stack using queue with only enqueue and dequeue operations, how many queues will you need?",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) 2\n\n**Rationale:** To implement a stack (LIFO behavior) using queues (FIFO behavior), we need at least two queues (one for storing elements, and another to help manipulate elements during push or pop operations).",
+            "answer": "To implement a stack (LIFO behavior) using queues (FIFO behavior), we need at least two queues (one for storing elements, and another to help manipulate elements during push or pop operations).",
             "answer_source": "generated",
             "chapter": "Unit 3 - Stack and Queue"
         },
         {
             "question_number": "13",
-            "question_text": "A node in a binary tree can have utmost __________ children.\n(A) 2\n(B) Any number of children\n(C) 0 or 1 or 2\n(D) 0 or 1",
+            "question_text": "A node in a binary tree can have utmost __________ children.",
+            "options": [
+                "2",
+                "Any number of children",
+                "0 or 1 or 2",
+                "0 or 1"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) 0 or 1 or 2\n\n**Rationale:** By definition, a binary tree node can have a maximum of 2 children. This means it can have 0, 1, or 2 children.",
+            "answer": "By definition, a binary tree node can have a maximum of 2 children. This means it can have 0, 1, or 2 children.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Trees and Hashing"
         },
         {
             "question_number": "14",
-            "question_text": "Given an empty AVL tree, how would you construct AVL tree when a set of numbers are given without performing any rotations?\n(A) Just build the tree with the given input\n(B) Find the median of the set of elements given, make it as root and construct the tree\n(C) Use trial and error\n(D) Use dynamic programming to build the tree",
+            "question_text": "Given an empty AVL tree, how would you construct AVL tree when a set of numbers are given without performing any rotations?",
+            "options": [
+                "Just build the tree with the given input",
+                "Find the median of the set of elements given, make it as root and construct the tree",
+                "Use trial and error",
+                "Use dynamic programming to build the tree"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Find the median of the set of elements given, make it as root and construct the tree\n\n**Rationale:** In order to build a balanced binary search tree (like an AVL tree) without rotations, selecting the median of the sorted list as the root (and recursively doing the same for the left and right halves) guarantees a balanced tree.",
+            "answer": "In order to build a balanced binary search tree (like an AVL tree) without rotations, selecting the median of the sorted list as the root (and recursively doing the same for the left and right halves) guarantees a balanced tree.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Trees and Hashing"
         },
         {
             "question_number": "15",
-            "question_text": "The tree traversal to obtain a prefix expression is __________.\n(A) Level-order traversal\n(B) Pre-order traversal\n(C) Post-order traversal\n(D) In-order traversal",
+            "question_text": "The tree traversal to obtain a prefix expression is __________.",
+            "options": [
+                "Level-order traversal",
+                "Pre-order traversal",
+                "Post-order traversal",
+                "In-order traversal"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Pre-order traversal\n\n**Rationale:** Pre-order traversal of an expression tree (visiting the operator first, then its operands) yields the prefix expression.",
+            "answer": "Pre-order traversal of an expression tree (visiting the operator first, then its operands) yields the prefix expression.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Trees and Hashing"
         },
         {
             "question_number": "16",
-            "question_text": "What is the maximum height of an AVL tree with P nodes?\n(A) P\n(B) log (P)\n(C) log (P) / 2\n(D) P/2",
+            "question_text": "What is the maximum height of an AVL tree with P nodes?",
+            "options": [
+                "P",
+                "log (P)",
+                "log (P) / 2",
+                "P/2"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) log (P)\n\n**Rationale:** The height of an AVL tree with $P$ nodes is strictly bounded asymptotically by $O(\\log P)$, specifically $h \\le 1.44 \\log_2(P + 2) - 0.328$. Thus, (B) is the correct option.",
+            "answer": "The height of an AVL tree with $P$ nodes is strictly bounded asymptotically by $O(\\log P)$, specifically $h \\le 1.44 \\log_2(P + 2) - 0.328$. Thus, (B) is the correct option.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Trees and Hashing"
         },
         {
             "question_number": "17",
-            "question_text": "What is direct addressing?\n(A) Distinct array position for every possible key\n(B) Fewer array positions than keys\n(C) Fewer keys than array positions\n(D) A structure used for storage",
+            "question_text": "What is direct addressing?",
+            "options": [
+                "Distinct array position for every possible key",
+                "Fewer array positions than keys",
+                "Fewer keys than array positions",
+                "A structure used for storage"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Distinct array position for every possible key\n\n**Rationale:** In direct addressing, each element has a unique spot in the array corresponding directly to its key value, meaning there is a one-to-one mapping with no collisions.",
+            "answer": "In direct addressing, each element has a unique spot in the array corresponding directly to its key value, meaning there is a one-to-one mapping with no collisions.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Trees and Hashing"
         },
         {
             "question_number": "18",
-            "question_text": "A graph with all vertices having equal degree is known as __________.\n(A) Multi graph\n(B) Regular graph\n(C) Simple graph\n(D) Complete graph",
+            "question_text": "A graph with all vertices having equal degree is known as __________.",
+            "options": [
+                "Multi graph",
+                "Regular graph",
+                "Simple graph",
+                "Complete graph"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Regular graph\n\n**Rationale:** A graph is regular if every vertex has the same degree. If the degree of each vertex is $k$, it is called a $k$-regular graph.",
+            "answer": "A graph is regular if every vertex has the same degree. If the degree of each vertex is $k$, it is called a $k$-regular graph.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Graph"
         },
         {
             "question_number": "19",
-            "question_text": "What kind of deletion is implemented by hashing using open addressing?\n(A) Active deletion\n(B) Standard deletion\n(C) Lazy deletion\n(D) Passive deletion",
+            "question_text": "What kind of deletion is implemented by hashing using open addressing?",
+            "options": [
+                "Active deletion",
+                "Standard deletion",
+                "Lazy deletion",
+                "Passive deletion"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Lazy deletion\n\n**Rationale:** When open addressing is used, standard deletion would break search chains. Therefore, \"lazy deletion\" is used, where deleted slots are marked with a special flag (e.g., \"deleted\") to indicate that searches should continue past them.",
+            "answer": "When open addressing is used, standard deletion would break search chains. Therefore, \"lazy deletion\" is used, where deleted slots are marked with a special flag (e.g., \"deleted\") to indicate that searches should continue past them.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Trees and Hashing"
         },
         {
             "question_number": "20",
-            "question_text": "A graph having an edge from each vertex to every other vertex is called __________.\n(A) Tightly connected\n(B) Strongly connected\n(C) Weakly connected\n(D) Loosely connected",
+            "question_text": "A graph having an edge from each vertex to every other vertex is called __________.",
+            "options": [
+                "Tightly connected",
+                "Strongly connected",
+                "Weakly connected",
+                "Loosely connected"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Strongly connected\n\n**Rationale:** A directed graph is strongly connected if there is a path between all pairs of vertices. In the context of the options provided, \"Strongly connected\" is the standard topological terminology used to describe full reachability among vertices.",
+            "answer": "A directed graph is strongly connected if there is a path between all pairs of vertices. In the context of the options provided, \"Strongly connected\" is the standard topological terminology used to describe full reachability among vertices.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Graph"
         },

@@ -5,81 +5,151 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Pipelining increases ____________ of the processor\na. Throughput\nb. Latency\nc. Storage\nd. Predictivity",
+            "question_text": "Pipelining increases ____________ of the processor",
+            "options": [
+                "Throughput",
+                "Latency",
+                "Storage",
+                "Predictivity"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "a. Throughput\n\nRationale: Pipelining increases the overall throughput (the number of instructions completed per unit time) by overlapping the execution of multiple instructions, although individual instruction latency is not decreased (and may slightly increase due to pipeline overhead).",
+            "answer": "Pipelining increases the overall throughput (the number of instructions completed per unit time) by overlapping the execution of multiple instructions, although individual instruction latency is not decreased (and may slightly increase due to pipeline overhead).",
             "answer_source": "provided",
             "chapter": "Unit 4: Control Unit"
         },
         {
             "question_number": "2",
-            "question_text": "Operand forwarding method does the following to overcome data dependencies\na. Introduce NULL instructions\nb. Result of the instruction is written to the temporary register\nc. Result of one instruction is directly sent to the next instruction for execution\nd. Blocking the execution of instructions",
+            "question_text": "Operand forwarding method does the following to overcome data dependencies",
+            "options": [
+                "Introduce NULL instructions",
+                "Result of the instruction is written to the temporary register",
+                "Result of one instruction is directly sent to the next instruction for execution",
+                "Blocking the execution of instructions"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "c. Result of one instruction is directly sent to the next instruction for execution\n\nRationale: Operand forwarding (or bypassing) routes the execution result of one instruction directly to the ALU inputs of the subsequent dependent instruction, bypassing the register write-back stage to avoid pipeline stalls.",
+            "answer": "Operand forwarding (or bypassing) routes the execution result of one instruction directly to the ALU inputs of the subsequent dependent instruction, bypassing the register write-back stage to avoid pipeline stalls.",
             "answer_source": "provided",
             "chapter": "Unit 4: Control Unit"
         },
         {
             "question_number": "3",
-            "question_text": "For a four-stage pipelining, the initial instruction requires _____ cycle for execution completion?\na. 2\nb. 4\nc. 3\nd. 1",
+            "question_text": "For a four-stage pipelining, the initial instruction requires _____ cycle for execution completion?",
+            "options": [
+                "2",
+                "4",
+                "3",
+                "1"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b. 4\n\nRationale: In a 4-stage pipeline, the very first instruction must go through all 4 stages (Fetch, Decode, Execute, Write-back) to complete, thus requiring 4 clock cycles. Subsequent instructions (without hazards) complete every 1 clock cycle.",
+            "answer": "In a 4-stage pipeline, the very first instruction must go through all 4 stages (Fetch, Decode, Execute, Write-back) to complete, thus requiring 4 clock cycles. Subsequent instructions (without hazards) complete every 1 clock cycle.",
             "answer_source": "provided",
             "chapter": "Unit 4: Control Unit"
         },
         {
             "question_number": "4",
-            "question_text": "When the data operands are not available then it is called ___\na. Data hazard\nb. Structural hazard\nc. Control hazard\nd. Instruction hazard",
+            "question_text": "When the data operands are not available then it is called ___",
+            "options": [
+                "Data hazard",
+                "Structural hazard",
+                "Control hazard",
+                "Instruction hazard"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "a. Data hazard\n\nRationale: A data hazard occurs when an instruction depends on the result of a previous instruction that has not yet been computed or written back to the register file (i.e., operands are not available yet).",
+            "answer": "A data hazard occurs when an instruction depends on the result of a previous instruction that has not yet been computed or written back to the register file (i.e., operands are not available yet).",
             "answer_source": "provided",
             "chapter": "Unit 4: Control Unit"
         },
         {
             "question_number": "5",
-            "question_text": "When the branch is actually not taken the state moves from ST to ____.\na. SNT\nb. LT\nc. LNT\nd. ST",
+            "question_text": "When the branch is actually not taken the state moves from ST to ____.",
+            "options": [
+                "SNT",
+                "LT",
+                "LNT",
+                "ST"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b. LT\n\nRationale: In dynamic branch prediction (using a 2-bit predictor with states: Strongly Taken (ST), Weakly Taken / Likely Taken (LT), Weakly Not Taken / Likely Not Taken (LNT), Strongly Not Taken (SNT)), if the state is ST (Strongly Taken) and the branch is actually not taken, the state transitions to LT (Likely/Weakly Taken).",
+            "answer": "In dynamic branch prediction (using a 2-bit predictor with states: Strongly Taken (ST), Weakly Taken / Likely Taken (LT), Weakly Not Taken / Likely Not Taken (LNT), Strongly Not Taken (SNT)), if the state is ST (Strongly Taken) and the branch is actually not taken, the state transitions to LT (Likely/Weakly Taken).",
             "answer_source": "provided",
             "chapter": "Unit 4: Control Unit"
         },
         {
             "question_number": "6",
-            "question_text": "Which type of parallelism involves breaking down a program into smaller tasks that can be executed concurrently?\nA. Instruction-level parallelism\nB. Data-level parallelism\nC. Task-level parallelism\nD. Pipeline parallelism",
+            "question_text": "Which type of parallelism involves breaking down a program into smaller tasks that can be executed concurrently?",
+            "options": [
+                "Instruction-level parallelism",
+                "Data-level parallelism",
+                "Task-level parallelism",
+                "Pipeline parallelism"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "C. Task-level parallelism\n\nRationale: Task-level parallelism (also known as function-level parallelism) is a form of parallelization of computer code across multiple processors in parallel computing environments, which focuses on distributing execution processes (tasks) across multiple computing nodes.",
+            "answer": "Task-level parallelism (also known as function-level parallelism) is a form of parallelization of computer code across multiple processors in parallel computing environments, which focuses on distributing execution processes (tasks) across multiple computing nodes.",
             "answer_source": "provided",
             "chapter": "Unit 5: Parallelism"
         },
         {
             "question_number": "7",
-            "question_text": "What is the primary advantage of MIMD architecture compared to SISD architecture?\nA. Lower cost\nB. Simplicity of programming\nC. Higher processing power for parallel tasks\nD. Energy efficiency",
+            "question_text": "What is the primary advantage of MIMD architecture compared to SISD architecture?",
+            "options": [
+                "Lower cost",
+                "Simplicity of programming",
+                "Higher processing power for parallel tasks",
+                "Energy efficiency"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "C. Higher processing power for parallel tasks\n\nRationale: Multiple Instruction, Multiple Data (MIMD) architectures have multiple processors that function asynchronously and independently. This offers much higher processing power for executing different parallel tasks compared to Single Instruction, Single Data (SISD) architectures.",
+            "answer": "Multiple Instruction, Multiple Data (MIMD) architectures have multiple processors that function asynchronously and independently. This offers much higher processing power for executing different parallel tasks compared to Single Instruction, Single Data (SISD) architectures.",
             "answer_source": "provided",
             "chapter": "Unit 5: Parallelism"
         },
         {
             "question_number": "8",
-            "question_text": "Which part of an ARM instruction specifies the operation to be performed?\nA. Opcode\nB. Data register\nC. Memory address\nD. Condition code",
+            "question_text": "Which part of an ARM instruction specifies the operation to be performed?",
+            "options": [
+                "Opcode",
+                "Data register",
+                "Memory address",
+                "Condition code"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "A. Opcode\n\nRationale: The opcode (operation code) is the portion of a machine language instruction that specifies the operation to be performed.",
+            "answer": "The opcode (operation code) is the portion of a machine language instruction that specifies the operation to be performed.",
             "answer_source": "provided",
             "chapter": "Unit 5: Parallelism"
         },
         {
             "question_number": "9",
-            "question_text": "Which part of an ARM-based system typically handles I/O operations and device communication?\na) Memory unit\nb) Arithmetic logic unit (ALU)\nc) Input unit\nd) Peripheral interface or controller",
+            "question_text": "Which part of an ARM-based system typically handles I/O operations and device communication?",
+            "options": [
+                "Memory unit",
+                "Arithmetic logic unit (ALU)",
+                "Input unit",
+                "Peripheral interface or controller"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "d) Peripheral interface or controller\n\nRationale: Peripheral interfaces or controllers manage communication between the ARM processor and external I/O devices.",
+            "answer": "Peripheral interfaces or controllers manage communication between the ARM processor and external I/O devices.",
             "answer_source": "provided",
             "chapter": "Unit 5: Parallelism"
         },
         {
             "question_number": "10",
-            "question_text": "What is the primary advantage of the Thumb instruction set in ARM7 architecture?\na. Greater computational power\nb. Smaller code size\nc. Enhanced multimedia capabilities\nd. Improved memory management",
+            "question_text": "What is the primary advantage of the Thumb instruction set in ARM7 architecture?",
+            "options": [
+                "Greater computational power",
+                "Smaller code size",
+                "Enhanced multimedia capabilities",
+                "Improved memory management"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b. Smaller code size\n\nRationale: The Thumb instruction set consists of 16-bit instructions (as opposed to standard 32-bit ARM instructions), which significantly reduces code size, making it highly memory-efficient for embedded systems.",
+            "answer": "The Thumb instruction set consists of 16-bit instructions (as opposed to standard 32-bit ARM instructions), which significantly reduces code size, making it highly memory-efficient for embedded systems.",
             "answer_source": "provided",
             "chapter": "Unit 5: Parallelism"
         },

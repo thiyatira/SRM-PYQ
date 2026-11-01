@@ -4,161 +4,301 @@
   "questions": [
     {
       "question_number": "1",
-      "question_text": "Diploid cell has ______ chromosomes\nA)23\nC) 46\nB) 24\nD)92",
+      "question_text": "Diploid cell has ______ chromosomes",
+      "options": [
+        "23",
+        "24",
+        "46",
+        "92"
+      ],
+      "correct_option": "C",
       "marks": 1,
-      "answer": "C) 46\nExplanation: A normal human diploid cell contains 46 chromosomes, arranged in 23 homologous pairs.",
+      "answer": "A normal human diploid cell contains 46 chromosomes, arranged in 23 homologous pairs.",
       "answer_source": "generated",
       "chapter": "Unit 1: Cell and Evolution"
     },
     {
       "question_number": "2",
-      "question_text": "Inner cell mass is obtained from ______\nA) blastocyst\nB) morula\nC) gastrula\nD) zygote",
+      "question_text": "Inner cell mass is obtained from ______",
+      "options": [
+        "blastocyst",
+        "morula",
+        "gastrula",
+        "zygote"
+      ],
+      "correct_option": "A",
       "marks": 1,
-      "answer": "A) blastocyst\nExplanation: The inner cell mass is a cluster of cells within the blastocyst, which subsequently forms the embryo proper.",
+      "answer": "The inner cell mass is a cluster of cells within the blastocyst, which subsequently forms the embryo proper.",
       "answer_source": "generated",
       "chapter": "Unit 1: Cell and Evolution"
     },
     {
       "question_number": "3",
-      "question_text": "The homologous pair of chromosomes for X is\nA)Y\nC) XY\nB) 23\nD)1",
+      "question_text": "The homologous pair of chromosomes for X is",
+      "options": [
+        "Y",
+        "23",
+        "XY",
+        "1"
+      ],
+      "correct_option": "A",
       "marks": 1,
-      "answer": "B) 23\nExplanation: In humans, diploid cells contain 23 homologous pairs of chromosomes. The X chromosome is part of these 23 pairs; in females, the homologous pair is XX, and in males, it's XY (though X and Y are only partially homologous). Option B refers to the total number of homologous pairs in a human cell.",
+      "answer": "Homologous chromosomes are a pair of chromosomes with the same genes and structure, one from each parent. In males the X chromosome pairs with the Y chromosome during meiosis (they share homologous pseudoautosomal regions), so Y is the homologous partner of X among the options. (23 is only the number of chromosome pairs, and XY is the pair itself.)",
       "answer_source": "generated",
       "chapter": "Unit 1: Cell and Evolution"
     },
     {
       "question_number": "4",
-      "question_text": "Always the new generation will have better fitness score than the older one\nA) Always true\nC) sometimes true\nB) always false\nD) sometimes false",
+      "question_text": "Always the new generation will have better fitness score than the older one",
+      "options": [
+        "Always true",
+        "always false",
+        "sometimes true",
+        "sometimes false"
+      ],
+      "correct_option": "C",
       "marks": 1,
-      "answer": "C) sometimes true\nExplanation: Evolution is about adaptation to a specific environment. While new generations often show adaptations, 'better fitness' is context-dependent and not guaranteed in every instance or for every trait. Environmental changes can also render previously fit traits less advantageous.",
+      "answer": "Evolution is about adaptation to a specific environment. While new generations often show adaptations, 'better fitness' is context-dependent and not guaranteed in every instance or for every trait. Environmental changes can also render previously fit traits less advantageous.",
       "answer_source": "generated",
       "chapter": "Unit 1: Cell and Evolution"
     },
     {
       "question_number": "5",
-      "question_text": "The blueprint for the construction of a protein is\nA)tRNA\nC) mRNA\nB) gRNA\nD) cDNA",
+      "question_text": "The blueprint for the construction of a protein is",
+      "options": [
+        "tRNA",
+        "gRNA",
+        "mRNA",
+        "cDNA"
+      ],
+      "correct_option": "C",
       "marks": 1,
-      "answer": "C) mRNA\nExplanation: Messenger RNA (mRNA) carries the genetic code from DNA to the ribosome, serving as the template for protein synthesis.",
+      "answer": "Messenger RNA (mRNA) carries the genetic code from DNA to the ribosome, serving as the template for protein synthesis.",
       "answer_source": "generated",
       "chapter": "Unit 3: Structure Biology"
     },
     {
       "question_number": "6",
-      "question_text": "GenBank is a\nA) secondary\nC) tertiary\nB) primary\nD) composite database",
+      "question_text": "GenBank is a",
+      "options": [
+        "secondary",
+        "primary",
+        "tertiary",
+        "composite database"
+      ],
+      "correct_option": "B",
       "marks": 1,
-      "answer": "B) primary\nExplanation: GenBank is a primary database that archives and makes publicly available raw nucleotide and protein sequences submitted by researchers worldwide.",
+      "answer": "GenBank is a primary database that archives and makes publicly available raw nucleotide and protein sequences submitted by researchers worldwide.",
       "answer_source": "generated",
       "chapter": "Unit 2: Basics in Biochemistry"
     },
     {
       "question_number": "7",
-      "question_text": "Production of glucagon is because of\nA)hyperglycemia\nB) Hyperkalemia\nC) Hypokalemia\nD) hypoglycemia",
+      "question_text": "Production of glucagon is because of",
+      "options": [
+        "hyperglycemia",
+        "Hyperkalemia",
+        "Hypokalemia",
+        "hypoglycemia"
+      ],
+      "correct_option": "D",
       "marks": 1,
-      "answer": "D) hypoglycemia\nExplanation: Glucagon is a hormone secreted by the pancreas in response to low blood glucose levels (hypoglycemia) to raise blood sugar.",
+      "answer": "Glucagon is a hormone secreted by the pancreas in response to low blood glucose levels (hypoglycemia) to raise blood sugar.",
       "answer_source": "generated",
       "chapter": "Unit 2: Basics in Biochemistry"
     },
     {
       "question_number": "8",
-      "question_text": "A molecule containing sugar, phosphate and a base is called\nA) nucleoside\nC) amino acid\nB) Nucleotide\nD) carbohydrate",
+      "question_text": "A molecule containing sugar, phosphate and a base is called",
+      "options": [
+        "nucleoside",
+        "Nucleotide",
+        "amino acid",
+        "carbohydrate"
+      ],
+      "correct_option": "B",
       "marks": 1,
-      "answer": "B) Nucleotide\nExplanation: A nucleotide is the monomer unit of nucleic acids (DNA and RNA), consisting of a nitrogenous base, a five-carbon sugar, and at least one phosphate group.",
+      "answer": "A nucleotide is the monomer unit of nucleic acids (DNA and RNA), consisting of a nitrogenous base, a five-carbon sugar, and at least one phosphate group.",
       "answer_source": "generated",
       "chapter": "Unit 2: Basics in Biochemistry"
     },
     {
       "question_number": "9",
-      "question_text": "A sequence of amino acid bonded together by ______ bonds\nA) hydrogen\nC) peptide\nB) glycosidic bond\nD) phosphodiester",
+      "question_text": "A sequence of amino acid bonded together by ______ bonds",
+      "options": [
+        "hydrogen",
+        "glycosidic bond",
+        "peptide",
+        "phosphodiester"
+      ],
+      "correct_option": "C",
       "marks": 1,
-      "answer": "C) peptide\nExplanation: Amino acids are linked together by peptide bonds to form polypeptide chains, which fold into proteins.",
+      "answer": "Amino acids are linked together by peptide bonds to form polypeptide chains, which fold into proteins.",
       "answer_source": "generated",
       "chapter": "Unit 3: Structure Biology"
     },
     {
       "question_number": "10",
-      "question_text": "The secondary structure prediction methods can be either Abinitio or\nA) neural\nC) hidden markov\nB) Machine learning\nD) homology",
+      "question_text": "The secondary structure prediction methods can be either Abinitio or",
+      "options": [
+        "neural",
+        "Machine learning",
+        "hidden markov",
+        "homology"
+      ],
+      "correct_option": "D",
       "marks": 1,
-      "answer": "D) homology\nExplanation: Protein secondary structure prediction methods often fall into two broad categories: ab initio (predicting from sequence alone) or homology-based (using known structures of homologous proteins). Neural networks and hidden Markov models are specific algorithmic approaches used within these categories.",
+      "answer": "Protein secondary structure prediction methods often fall into two broad categories: ab initio (predicting from sequence alone) or homology-based (using known structures of homologous proteins). Neural networks and hidden Markov models are specific algorithmic approaches used within these categories.",
       "answer_source": "generated",
       "chapter": "Unit 3: Structure Biology"
     },
     {
       "question_number": "11",
-      "question_text": "The anticodon for ACU is\nA)TGA\nC) UGA\nB) GAT\nD)UUA",
+      "question_text": "The anticodon for ACU is",
+      "options": [
+        "TGA",
+        "GAT",
+        "UGA",
+        "UUA"
+      ],
+      "correct_option": "C",
       "marks": 1,
-      "answer": "C) UGA\nExplanation: The anticodon on tRNA is complementary to the codon on mRNA. For the mRNA codon ACU, the complementary anticodon is UGA (A pairs with U, C pairs with G).",
+      "answer": "The anticodon on tRNA is complementary to the codon on mRNA. For the mRNA codon ACU, the complementary anticodon is UGA (A pairs with U, C pairs with G).",
       "answer_source": "generated",
       "chapter": "Unit 3: Structure Biology"
     },
     {
       "question_number": "12",
-      "question_text": "______ determines the propensity or intrinsic tendency of each residue to be in the helix, strand, and ẞ-turn conformation\nA) PHD\nB) Chou Fasman\nC) GOR\nD) Propred",
+      "question_text": "______ determines the propensity or intrinsic tendency of each residue to be in the helix, strand, and ẞ-turn conformation",
+      "options": [
+        "PHD",
+        "Chou Fasman",
+        "GOR",
+        "Propred"
+      ],
+      "correct_option": "B",
       "marks": 1,
-      "answer": "B) Chou Fasman\nExplanation: The Chou-Fasman method is a classic algorithm that predicts protein secondary structure based on the statistical propensities of individual amino acids to form alpha-helices, beta-strands, and beta-turns.",
+      "answer": "The Chou-Fasman method is a classic algorithm that predicts protein secondary structure based on the statistical propensities of individual amino acids to form alpha-helices, beta-strands, and beta-turns.",
       "answer_source": "generated",
       "chapter": "Unit 3: Structure Biology"
     },
     {
       "question_number": "13",
-      "question_text": "______ is also sometimes called Knowledge Discovery in Databases\nA) Machine learning\nC) neural network\nB) data mining\nD) genetic algorithm",
+      "question_text": "______ is also sometimes called Knowledge Discovery in Databases",
+      "options": [
+        "Machine learning",
+        "data mining",
+        "neural network",
+        "genetic algorithm"
+      ],
+      "correct_option": "B",
       "marks": 1,
-      "answer": "B) data mining\nExplanation: Data mining is the process of discovering patterns and insights from large datasets, and it is a crucial step within the broader process of Knowledge Discovery in Databases (KDD).",
+      "answer": "Data mining is the process of discovering patterns and insights from large datasets, and it is a crucial step within the broader process of Knowledge Discovery in Databases (KDD).",
       "answer_source": "generated",
       "chapter": "Unit 4: Neurobiology"
     },
     {
       "question_number": "14",
-      "question_text": "Transmission of an electrical signal from one neuron to the next happens at the\nA) synapse\nC) axon\nB) neurotransmitter\nD) dendrite",
+      "question_text": "Transmission of an electrical signal from one neuron to the next happens at the",
+      "options": [
+        "synapse",
+        "neurotransmitter",
+        "axon",
+        "dendrite"
+      ],
+      "correct_option": "A",
       "marks": 1,
-      "answer": "A) synapse\nExplanation: The synapse is the specialized junction between two neurons where electrical signals are transmitted, typically via chemical neurotransmitters, from the presynaptic neuron to the postsynaptic neuron.",
+      "answer": "The synapse is the specialized junction between two neurons where electrical signals are transmitted, typically via chemical neurotransmitters, from the presynaptic neuron to the postsynaptic neuron.",
       "answer_source": "generated",
       "chapter": "Unit 4: Neurobiology"
     },
     {
       "question_number": "15",
-      "question_text": "______ division allows conservation of energy\nA) sympathetic\nC) CNS\nB) parasympathetic\nD)PNS",
+      "question_text": "______ division allows conservation of energy",
+      "options": [
+        "sympathetic",
+        "parasympathetic",
+        "CNS",
+        "PNS"
+      ],
+      "correct_option": "B",
       "marks": 1,
-      "answer": "B) parasympathetic\nExplanation: The parasympathetic division of the autonomic nervous system is responsible for 'rest and digest' activities, which generally promote energy conservation and storage.",
+      "answer": "The parasympathetic division of the autonomic nervous system is responsible for 'rest and digest' activities, which generally promote energy conservation and storage.",
       "answer_source": "generated",
       "chapter": "Unit 4: Neurobiology"
     },
     {
       "question_number": "16",
-      "question_text": "In this disease, there is loss of dopaminergic neurons\nA) Alzheimer's\nC) Parkinson's\nB) nystagmus\nD) multiple sclerosis",
+      "question_text": "In this disease, there is loss of dopaminergic neurons",
+      "options": [
+        "Alzheimer's",
+        "nystagmus",
+        "Parkinson's",
+        "multiple sclerosis"
+      ],
+      "correct_option": "C",
       "marks": 1,
-      "answer": "C) Parkinson's\nExplanation: Parkinson's disease is characterized by the progressive degeneration and loss of dopaminergic neurons in the substantia nigra region of the brain.",
+      "answer": "Parkinson's disease is characterized by the progressive degeneration and loss of dopaminergic neurons in the substantia nigra region of the brain.",
       "answer_source": "generated",
       "chapter": "Unit 4: Neurobiology"
     },
     {
       "question_number": "17",
-      "question_text": "______ makes antibodies\nA) Bcell\nC) NK cell\nB) Tcell\nD) Monocytes",
+      "question_text": "______ makes antibodies",
+      "options": [
+        "Bcell",
+        "Tcell",
+        "NK cell",
+        "Monocytes"
+      ],
+      "correct_option": "A",
       "marks": 1,
-      "answer": "A) Bcell\nExplanation: B cells (B lymphocytes), upon activation, differentiate into plasma cells, which are specialized cells responsible for producing and secreting antibodies.",
+      "answer": "B cells (B lymphocytes), upon activation, differentiate into plasma cells, which are specialized cells responsible for producing and secreting antibodies.",
       "answer_source": "generated",
       "chapter": "Unit 5: Immunobiology"
     },
     {
       "question_number": "18",
-      "question_text": "All blood cells arise from a pluripotent stem cell found in\nA) heart\nB) liver\nC) bone marrow\nD) brain",
+      "question_text": "All blood cells arise from a pluripotent stem cell found in",
+      "options": [
+        "heart",
+        "liver",
+        "bone marrow",
+        "brain"
+      ],
+      "correct_option": "C",
       "marks": 1,
-      "answer": "C) bone marrow\nExplanation: Hematopoietic stem cells, which are pluripotent stem cells, reside primarily in the bone marrow and give rise to all types of blood cells.",
+      "answer": "Hematopoietic stem cells, which are pluripotent stem cells, reside primarily in the bone marrow and give rise to all types of blood cells.",
       "answer_source": "generated",
       "chapter": "Unit 1: Cell and Evolution"
     },
     {
       "question_number": "19",
-      "question_text": "Which immunity gives memory\nA) active\nB) passive\nC) artificial\nD) natural",
+      "question_text": "Which immunity gives memory",
+      "options": [
+        "active",
+        "passive",
+        "artificial",
+        "natural"
+      ],
+      "correct_option": "A",
       "marks": 1,
-      "answer": "A) active\nExplanation: Active immunity, acquired through natural infection or vaccination, involves the production of memory B and T cells that provide long-lasting protection and a robust secondary response upon re-exposure.",
+      "answer": "Active immunity, acquired through natural infection or vaccination, involves the production of memory B and T cells that provide long-lasting protection and a robust secondary response upon re-exposure.",
       "answer_source": "generated",
       "chapter": "Unit 5: Immunobiology"
     },
     {
       "question_number": "20",
-      "question_text": "MHC is present on\nA) humans\nB) bacteria\nC) virus\nD) fungus",
+      "question_text": "MHC is present on",
+      "options": [
+        "humans",
+        "bacteria",
+        "virus",
+        "fungus"
+      ],
+      "correct_option": "A",
       "marks": 1,
-      "answer": "A) humans\nExplanation: Major Histocompatibility Complex (MHC) molecules are cell surface proteins found in vertebrates (including humans) that play a critical role in antigen presentation and immune recognition.",
+      "answer": "Major Histocompatibility Complex (MHC) molecules are cell surface proteins found in vertebrates (including humans) that play a critical role in antigen presentation and immune recognition.",
       "answer_source": "generated",
       "chapter": "Unit 5: Immunobiology"
     },

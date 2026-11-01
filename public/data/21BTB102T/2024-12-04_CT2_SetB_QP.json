@@ -4,89 +4,166 @@
   "questions": [
     {
       "question_number": "1.",
-      "question_text": "How many codons code for 20 amino acids\na) 50 b) 96 c) 64 d) 46",
+      "question_text": "How many codons code for 20 amino acids",
+      "options": [
+        "50",
+        "96",
+        "64",
+        "46"
+      ],
+      "correct_option": "C",
       "marks": 1,
-      "answer": "There are 61 sense codons that specifically code for the 20 amino acids. The genetic code includes 64 codons in total, with three of these being stop codons.",
+      "answer": "The genetic code has 64 codons in total: 61 sense codons that specify the 20 amino acids and 3 stop codons.",
       "answer_source": "generated",
       "chapter": "Unit 2: Basics in Biochemistry"
     },
     {
       "question_number": "2.",
-      "question_text": "The start codon AUG codes for........\na) Methionine b) lysine c) leucine d)glycine",
+      "question_text": "The start codon AUG codes for........",
+      "options": [
+        "Methionine",
+        "lysine",
+        "leucine",
+        "glycine"
+      ],
+      "correct_option": "A",
       "marks": 1,
-      "answer": "a) Methionine",
+      "answer": "",
       "answer_source": "generated",
       "chapter": "Unit 2: Basics in Biochemistry"
     },
     {
       "question_number": "3.",
-      "question_text": "RNA polymerase is a part of…………………\na) Replication b) translation c) transcription d)splicing",
+      "question_text": "RNA polymerase is a part of…………………",
+      "options": [
+        "Replication",
+        "translation",
+        "transcription",
+        "splicing"
+      ],
+      "correct_option": "C",
       "marks": 1,
-      "answer": "c) transcription",
+      "answer": "",
       "answer_source": "generated",
       "chapter": "Unit 2: Basics in Biochemistry"
     },
     {
       "question_number": "4.",
-      "question_text": "Find the ODD feature about dendrites\na) Short b) many in number c) unbranched d)pushes electric signal towards cell body",
+      "question_text": "Find the ODD feature about dendrites",
+      "options": [
+        "Short",
+        "many in number",
+        "unbranched",
+        "pushes electric signal towards cell body"
+      ],
+      "correct_option": "C",
       "marks": 1,
-      "answer": "c) unbranched. Dendrites are typically highly branched structures that increase the surface area for receiving signals.",
+      "answer": "Dendrites are typically highly branched structures that increase the surface area for receiving signals.",
       "answer_source": "generated",
       "chapter": "Unit 4: Neurobiology"
     },
     {
       "question_number": "5.",
-      "question_text": "The action potential in a neuron is also called\na) Depolarization b) polarization c) repolarization d) refractory",
+      "question_text": "The action potential in a neuron is also called",
+      "options": [
+        "Depolarization",
+        "polarization",
+        "repolarization",
+        "refractory"
+      ],
+      "correct_option": "A",
       "marks": 1,
-      "answer": "An action potential is a rapid, transient, all-or-none change in the membrane potential of an excitable cell, often referred to as a 'nerve impulse' or 'spike'. While 'depolarization' is a critical phase of the action potential, it is not synonymous with the entire event.",
+      "answer": "The action potential (the 'spike' or nerve impulse) is the rapid depolarization of the neuronal membrane that is then followed by repolarization. Of the options given, depolarization is the term used for the spiking event.",
       "answer_source": "generated",
       "chapter": "Unit 4: Neurobiology"
     },
     {
       "question_number": "6.",
-      "question_text": "The electrical signal is converted to chemical signal at the\na) Synapse b) soma c)axon d) dendron",
+      "question_text": "The electrical signal is converted to chemical signal at the",
+      "options": [
+        "Synapse",
+        "soma",
+        "axon",
+        "dendron"
+      ],
+      "correct_option": "A",
       "marks": 1,
-      "answer": "a) Synapse",
+      "answer": "",
       "answer_source": "generated",
       "chapter": "Unit 4: Neurobiology"
     },
     {
       "question_number": "7.",
-      "question_text": "Afferent pathways conducts nerve signal\na)Away from CNS b) towards CNS c)only in PNS d)none of them",
+      "question_text": "Afferent pathways conducts nerve signal",
+      "options": [
+        "Away from CNS",
+        "towards CNS",
+        "only in PNS",
+        "none of them"
+      ],
+      "correct_option": "B",
       "marks": 1,
-      "answer": "b) towards CNS (Afferent neurons transmit sensory information from the periphery to the central nervous system).",
+      "answer": "Afferent neurons transmit sensory information from the periphery to the central nervous system.",
       "answer_source": "generated",
       "chapter": "Unit 4: Neurobiology"
     },
     {
       "question_number": "8.",
-      "question_text": "...............is part of a nonself cell\na) Epitope b) tepitope c) paratope d) bepitope",
+      "question_text": "...............is part of a nonself cell",
+      "options": [
+        "Epitope",
+        "tepitope",
+        "paratope",
+        "bepitope"
+      ],
+      "correct_option": "A",
       "marks": 1,
-      "answer": "a) Epitope (An epitope is the specific part of an antigen, often on a non-self cell or molecule, that is recognized by the immune system).",
+      "answer": "An epitope is the specific part of an antigen, often on a non-self cell or molecule, that is recognized by the immune system. The paratope is the corresponding part of the antibody.",
       "answer_source": "generated",
       "chapter": "Unit 5: Immunobiology"
     },
     {
       "question_number": "9.",
-      "question_text": "Other than the RBCs and WBCs.......makes up for the 45\" cellular content in the blood\na) Stem cells b) platelets c)bacteria d)globins",
+      "question_text": "Other than the RBCs and WBCs.......makes up for the 45\" cellular content in the blood",
+      "options": [
+        "Stem cells",
+        "platelets",
+        "bacteria",
+        "globins"
+      ],
+      "correct_option": "B",
       "marks": 1,
-      "answer": "b) platelets (Blood is composed of plasma, red blood cells (RBCs), white blood cells (WBCs), and platelets. The formed elements – RBCs, WBCs, and platelets – make up about 45% of total blood volume).",
+      "answer": "Blood is composed of plasma, red blood cells (RBCs), white blood cells (WBCs) and platelets. The formed elements (RBCs, WBCs and platelets) make up about 45% of total blood volume, so platelets complete the cellular content.",
       "answer_source": "generated",
       "chapter": "Unit 5: Immunobiology"
     },
     {
       "question_number": "10.",
-      "question_text": "Basophils are usually less than ..........% in a normal human\na) 2 b) 4 c) 1 d)20",
+      "question_text": "Basophils are usually less than ..........% in a normal human",
+      "options": [
+        "2",
+        "4",
+        "1",
+        "20"
+      ],
+      "correct_option": "C",
       "marks": 1,
-      "answer": "c) 1 (Basophils are the least common type of granulocyte, typically constituting less than 1% of circulating white blood cells).",
+      "answer": "Basophils are the least common type of granulocyte, typically constituting less than 1% of circulating white blood cells.",
       "answer_source": "generated",
       "chapter": "Unit 5: Immunobiology"
     },
     {
       "question_number": "11.",
-      "question_text": "........are produced by WBCs against allergies\na) Histamines b) morphine c)leukocrines d)prostaglandins",
+      "question_text": "........are produced by WBCs against allergies",
+      "options": [
+        "Histamines",
+        "morphine",
+        "leukocrines",
+        "prostaglandins"
+      ],
+      "correct_option": "A",
       "marks": 1,
-      "answer": "a) Histamines (Histamines are released by mast cells and basophils, which are types of white blood cells, in response to allergens, contributing to allergic symptoms).",
+      "answer": "Histamines are released by mast cells and basophils, which are types of white blood cells, in response to allergens, contributing to allergic symptoms.",
       "answer_source": "generated",
       "chapter": "Unit 5: Immunobiology"
     },

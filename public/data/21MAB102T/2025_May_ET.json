@@ -4,161 +4,301 @@
     "questions": [
         {
             "question_number": "U1Q14",
-            "question_text": "$\\int_0^1 \\int_0^x dy dx =$\n(A) 1\n(B) -1\n(C) $1/2$\n(D) $1/3$",
+            "question_text": "$\\int_0^1 \\int_0^x dy dx =$",
+            "options": [
+                "1",
+                "-1",
+                "$1/2$",
+                "$1/3$"
+            ],
+            "correct_option": "C",
             "marks": 2,
-            "answer": "(C)\nExplanation: Integrating $dy$ gives $y$ from $0$ to $x$, which leaves $x$. Then integrating $x dx$ from $0$ to $1$: $[\\frac{x^2}{2}]_0^1 = \\frac{1}{2}$.",
+            "answer": "Integrating $dy$ gives $y$ from $0$ to $x$, which leaves $x$. Then integrating $x dx$ from $0$ to $1$: $[\\frac{x^2}{2}]_0^1 = \\frac{1}{2}$.",
             "answer_source": "generated",
             "chapter": "Unit 1: Integral Calculus"
         },
         {
             "question_number": "U1Q15",
-            "question_text": "Area enclosed by a region $R$ in Cartesian coordinate system is\n(A) $\\iint_R dr d\\theta$\n(B) $\\iint_R dx dy$\n(C) $\\iint_R x dx dy$\n(D) $\\iint_R x^2 dx dy$",
+            "question_text": "Area enclosed by a region $R$ in Cartesian coordinate system is",
+            "options": [
+                "$\\iint_R dr d\\theta$",
+                "$\\iint_R dx dy$",
+                "$\\iint_R x dx dy$",
+                "$\\iint_R x^2 dx dy$"
+            ],
+            "correct_option": "B",
             "marks": 2,
-            "answer": "(B)\nExplanation: In a Cartesian coordinate system, the differential area element is $dx dy$, so the total area is given by $\\iint_R dx dy$.",
+            "answer": "In a Cartesian coordinate system, the differential area element is $dx dy$, so the total area is given by $\\iint_R dx dy$.",
             "answer_source": "generated",
             "chapter": "Unit 1: Integral Calculus"
         },
         {
             "question_number": "U1Q16",
-            "question_text": "The region of integration of the integral $\\int_0^1 \\int_0^x f(x, y) dy dx$ is\n(A) square\n(B) rectangle\n(C) triangle\n(D) circle",
+            "question_text": "The region of integration of the integral $\\int_0^1 \\int_0^x f(x, y) dy dx$ is",
+            "options": [
+                "square",
+                "rectangle",
+                "triangle",
+                "circle"
+            ],
+            "correct_option": "C",
             "marks": 2,
-            "answer": "(C)\nExplanation: The limits are $0 \\le y \\le x$ and $0 \\le x \\le 1$. These lines ($y=0$, $y=x$, and $x=1$) bound a right-angled triangle.",
+            "answer": "The limits are $0 \\le y \\le x$ and $0 \\le x \\le 1$. These lines ($y=0$, $y=x$, and $x=1$) bound a right-angled triangle.",
             "answer_source": "generated",
             "chapter": "Unit 1: Integral Calculus"
         },
         {
             "question_number": "U1Q17",
-            "question_text": "To convert Cartesian into Polar coordinates, the transformation used in double integration is\n(A) $x = r \\cos \\theta, y = r \\sin \\theta$\n(B) $x = a \\cos \\theta, y = b \\sin \\theta$\n(C) $x = r \\sin \\theta, y = r \\cos \\theta$\n(D) $x = a \\sec \\theta, y = b \\tan \\theta$",
+            "question_text": "To convert Cartesian into Polar coordinates, the transformation used in double integration is",
+            "options": [
+                "$x = r \\cos \\theta, y = r \\sin \\theta$",
+                "$x = a \\cos \\theta, y = b \\sin \\theta$",
+                "$x = r \\sin \\theta, y = r \\cos \\theta$",
+                "$x = a \\sec \\theta, y = b \\tan \\theta$"
+            ],
+            "correct_option": "A",
             "marks": 2,
-            "answer": "(A)\nExplanation: The standard substitution from Cartesian $(x,y)$ to polar $(r,\\theta)$ coordinates is $x = r \\cos \\theta$ and $y = r \\sin \\theta$.",
+            "answer": "The standard substitution from Cartesian $(x,y)$ to polar $(r,\\theta)$ coordinates is $x = r \\cos \\theta$ and $y = r \\sin \\theta$.",
             "answer_source": "generated",
             "chapter": "Unit 1: Integral Calculus"
         },
         {
             "question_number": "U2Q14",
-            "question_text": "The maximum directional derivative of $\\phi(x,y,z) = x^2+y^2+z^2$ at the point $(1, 1, 1)$ is\n(A) 0\n(B) 3\n(C) 2\n(D) $2\\sqrt{3}$",
+            "question_text": "The maximum directional derivative of $\\phi(x,y,z) = x^2+y^2+z^2$ at the point $(1, 1, 1)$ is",
+            "options": [
+                "0",
+                "3",
+                "2",
+                "$2\\sqrt{3}$"
+            ],
+            "correct_option": "D",
             "marks": 2,
-            "answer": "(D)\nExplanation: The maximum directional derivative is the magnitude of the gradient at that point. \n$\\nabla \\phi = 2x\\mathbf{i} + 2y\\mathbf{j} + 2z\\mathbf{k}$. \nAt $(1,1,1)$, $\\nabla \\phi = 2\\mathbf{i} + 2\\mathbf{j} + 2\\mathbf{k}$. \nMagnitude $|\\nabla \\phi| = \\sqrt{2^2 + 2^2 + 2^2} = \\sqrt{12} = 2\\sqrt{3}$.",
+            "answer": "The maximum directional derivative is the magnitude of the gradient at that point. \n$\\nabla \\phi = 2x\\mathbf{i} + 2y\\mathbf{j} + 2z\\mathbf{k}$. \nAt $(1,1,1)$, $\\nabla \\phi = 2\\mathbf{i} + 2\\mathbf{j} + 2\\mathbf{k}$. \nMagnitude $|\\nabla \\phi| = \\sqrt{2^2 + 2^2 + 2^2} = \\sqrt{12} = 2\\sqrt{3}$.",
             "answer_source": "generated",
             "chapter": "Unit 2: Vector Calculus"
         },
         {
             "question_number": "U2Q15",
-            "question_text": "The angle between two level surfaces $\\phi_1 = C_1$ and $\\phi_2 = C_2$ is given by\n(A) $\\sin \\theta = \\frac{\\nabla \\phi_1 \\cdot \\nabla \\phi_2}{|\\nabla \\phi_1| |\\nabla \\phi_2|}$\n(B) $\\cos \\theta = \\frac{\\nabla \\phi_1 \\cdot \\nabla \\phi_2}{|\\nabla \\phi_1| |\\nabla \\phi_2|}$\n(C) $\\tan \\theta = \\frac{\\nabla \\phi_1 \\times \\nabla \\phi_2}{|\\nabla \\phi_1| |\\nabla \\phi_2|}$\n(D) $\\cot \\theta = \\frac{\\nabla \\phi_1 \\times \\nabla \\phi_2}{|\\nabla \\phi_1| |\\nabla \\phi_2|}$",
+            "question_text": "The angle between two level surfaces $\\phi_1 = C_1$ and $\\phi_2 = C_2$ is given by",
+            "options": [
+                "$\\sin \\theta = \\frac{\\nabla \\phi_1 \\cdot \\nabla \\phi_2}{|\\nabla \\phi_1| |\\nabla \\phi_2|}$",
+                "$\\cos \\theta = \\frac{\\nabla \\phi_1 \\cdot \\nabla \\phi_2}{|\\nabla \\phi_1| |\\nabla \\phi_2|}$",
+                "$\\tan \\theta = \\frac{\\nabla \\phi_1 \\times \\nabla \\phi_2}{|\\nabla \\phi_1| |\\nabla \\phi_2|}$",
+                "$\\cot \\theta = \\frac{\\nabla \\phi_1 \\times \\nabla \\phi_2}{|\\nabla \\phi_1| |\\nabla \\phi_2|}$"
+            ],
+            "correct_option": "B",
             "marks": 2,
-            "answer": "(B)\nExplanation: The angle between two surfaces is defined as the angle between their normal vectors. The normal vectors are given by their gradients $\\nabla \\phi_1$ and $\\nabla \\phi_2$. Using the dot product formula, $\\cos \\theta = \\frac{\\nabla \\phi_1 \\cdot \\nabla \\phi_2}{|\\nabla \\phi_1| |\\nabla \\phi_2|}$.",
+            "answer": "The angle between two surfaces is defined as the angle between their normal vectors. The normal vectors are given by their gradients $\\nabla \\phi_1$ and $\\nabla \\phi_2$. Using the dot product formula, $\\cos \\theta = \\frac{\\nabla \\phi_1 \\cdot \\nabla \\phi_2}{|\\nabla \\phi_1| |\\nabla \\phi_2|}$.",
             "answer_source": "generated",
             "chapter": "Unit 2: Vector Calculus"
         },
         {
             "question_number": "U2Q16",
-            "question_text": "A vector $\\vec{r}$ is said to be solenoidal, if\n(A) $\\text{curl } \\vec{r} = 0$\n(B) $\\text{div } \\vec{r} = 0$\n(C) $\\text{curl } \\vec{r} \\neq 0$\n(D) $\\text{div } \\vec{r} \\neq 0$",
+            "question_text": "A vector $\\vec{r}$ is said to be solenoidal, if",
+            "options": [
+                "$\\text{curl } \\vec{r} = 0$",
+                "$\\text{div } \\vec{r} = 0$",
+                "$\\text{curl } \\vec{r} \\neq 0$",
+                "$\\text{div } \\vec{r} \\neq 0$"
+            ],
+            "correct_option": "B",
             "marks": 2,
-            "answer": "(B)\nExplanation: A vector field is solenoidal if it has no sources or sinks, meaning its divergence is zero throughout the field ($\\nabla \\cdot \\vec{r} = 0$).",
+            "answer": "A vector field is solenoidal if it has no sources or sinks, meaning its divergence is zero throughout the field ($\\nabla \\cdot \\vec{r} = 0$).",
             "answer_source": "generated",
             "chapter": "Unit 2: Vector Calculus"
         },
         {
             "question_number": "U2Q17",
-            "question_text": "The work done when a force $\\vec{F} = (x^2-y^2+x)\\mathbf{i} - (2xy+y)\\mathbf{j}$ displaces a particle in the $xy$-plane from $(0, 0)$ to $(1, 1)$ along the curve $y = x$ is\n(A) $-1/3$\n(B) $2/3$\n(C) $-2/3$\n(D) $1/3$",
+            "question_text": "The work done when a force $\\vec{F} = (x^2-y^2+x)\\mathbf{i} - (2xy+y)\\mathbf{j}$ displaces a particle in the $xy$-plane from $(0, 0)$ to $(1, 1)$ along the curve $y = x$ is",
+            "options": [
+                "$-1/3$",
+                "$2/3$",
+                "$-2/3$",
+                "$1/3$"
+            ],
+            "correct_option": "C",
             "marks": 2,
-            "answer": "(C)\nExplanation: Work done $W = \\int_C \\vec{F} \\cdot d\\vec{r} = \\int_C (x^2-y^2+x)dx - (2xy+y)dy$. \nGiven $y=x$, then $dy=dx$. Substituting $y$ with $x$:\n$W = \\int_0^1 (x^2-x^2+x)dx - (2x^2+x)dx = \\int_0^1 (x - 2x^2 - x) dx = \\int_0^1 -2x^2 dx$.\n$W = -2 [\\frac{x^3}{3}]_0^1 = -2/3$.",
+            "answer": "Work done $W = \\int_C \\vec{F} \\cdot d\\vec{r} = \\int_C (x^2-y^2+x)dx - (2xy+y)dy$. \nGiven $y=x$, then $dy=dx$. Substituting $y$ with $x$:\n$W = \\int_0^1 (x^2-x^2+x)dx - (2x^2+x)dx = \\int_0^1 (x - 2x^2 - x) dx = \\int_0^1 -2x^2 dx$.\n$W = -2 [\\frac{x^3}{3}]_0^1 = -2/3$.",
             "answer_source": "generated",
             "chapter": "Unit 2: Vector Calculus"
         },
         {
             "question_number": "U3Q14",
-            "question_text": "If $L[f(t)] = F(s)$, then $L[f(at)] =$\n(A) $F(s+a)$\n(B) $F(s/a)$\n(C) $\\frac{1}{a} F(s/a)$\n(D) $F(s-a)$",
+            "question_text": "If $L[f(t)] = F(s)$, then $L[f(at)] =$",
+            "options": [
+                "$F(s+a)$",
+                "$F(s/a)$",
+                "$\\frac{1}{a} F(s/a)$",
+                "$F(s-a)$"
+            ],
+            "correct_option": "C",
             "marks": 2,
-            "answer": "(C)\nExplanation: This is the Change of Scale property. By definition, $L[f(at)] = \\int_0^\\infty e^{-st} f(at) dt$. Let $u = at$, then $du = a dt$ and $t = u/a$. The integral becomes $\\int_0^\\infty e^{-s(u/a)} f(u) \\frac{du}{a} = \\frac{1}{a} \\int_0^\\infty e^{-(s/a)u} f(u) du = \\frac{1}{a} F\\left(\\frac{s}{a}\\right)$.",
+            "answer": "This is the Change of Scale property. By definition, $L[f(at)] = \\int_0^\\infty e^{-st} f(at) dt$. Let $u = at$, then $du = a dt$ and $t = u/a$. The integral becomes $\\int_0^\\infty e^{-s(u/a)} f(u) \\frac{du}{a} = \\frac{1}{a} \\int_0^\\infty e^{-(s/a)u} f(u) du = \\frac{1}{a} F\\left(\\frac{s}{a}\\right)$.",
             "answer_source": "generated",
             "chapter": "Unit 3: Laplace Transform"
         },
         {
             "question_number": "U3Q15",
-            "question_text": "$L[t e^{-t}] =$\n(A) $\\frac{1}{s-1}$\n(B) $\\frac{1}{(s-1)^2}$\n(C) $\\frac{1}{(s+1)^2}$\n(D) $\\frac{1}{(s-1)^3}$",
+            "question_text": "$L[t e^{-t}] =$",
+            "options": [
+                "$\\frac{1}{s-1}$",
+                "$\\frac{1}{(s-1)^2}$",
+                "$\\frac{1}{(s+1)^2}$",
+                "$\\frac{1}{(s-1)^3}$"
+            ],
+            "correct_option": "C",
             "marks": 2,
-            "answer": "(C)\nExplanation: The Laplace transform of $t$ is $L(t) = \\frac{1}{s^2}$. Applying the First Shifting Theorem for the $e^{-t}$ factor ($a=-1$), we shift $s$ to $s - (-1) = s+1$. Therefore, $L[t e^{-t}] = \\frac{1}{(s+1)^2}$.",
+            "answer": "The Laplace transform of $t$ is $L(t) = \\frac{1}{s^2}$. Applying the First Shifting Theorem for the $e^{-t}$ factor ($a=-1$), we shift $s$ to $s - (-1) = s+1$. Therefore, $L[t e^{-t}] = \\frac{1}{(s+1)^2}$.",
             "answer_source": "generated",
             "chapter": "Unit 3: Laplace Transform"
         },
         {
             "question_number": "U3Q16",
-            "question_text": "$L^{-1} \\left[ \\frac{1}{s^2+25} \\right] =$\n(A) $\\sin 5t$\n(B) $\\frac{1}{5} \\sin 5t$\n(C) $\\cos 5t$\n(D) $\\frac{1}{5} \\cos 5t$",
+            "question_text": "$L^{-1} \\left[ \\frac{1}{s^2+25} \\right] =$",
+            "options": [
+                "$\\sin 5t$",
+                "$\\frac{1}{5} \\sin 5t$",
+                "$\\cos 5t$",
+                "$\\frac{1}{5} \\cos 5t$"
+            ],
+            "correct_option": "B",
             "marks": 2,
-            "answer": "(B)\nExplanation: The inverse Laplace transform formula is $L^{-1}\\left[\\frac{a}{s^2+a^2}\\right] = \\sin at$. Here, $a^2 = 25 \\implies a = 5$. We can rewrite the expression as $\\frac{1}{5} \\frac{5}{s^2+5^2}$. Its inverse transform is $\\frac{1}{5} \\sin 5t$.",
+            "answer": "The inverse Laplace transform formula is $L^{-1}\\left[\\frac{a}{s^2+a^2}\\right] = \\sin at$. Here, $a^2 = 25 \\implies a = 5$. We can rewrite the expression as $\\frac{1}{5} \\frac{5}{s^2+5^2}$. Its inverse transform is $\\frac{1}{5} \\sin 5t$.",
             "answer_source": "generated",
             "chapter": "Unit 3: Laplace Transform"
         },
         {
             "question_number": "U3Q17",
-            "question_text": "If $L[f(t)] = F(s)$, then $L^{-1}[F(s-a)] =$\n(A) $e^{-at} f(t)$\n(B) $\\frac{1}{a} f(t/a)$\n(C) $\\int_0^t f(t) dt$\n(D) $e^{at} f(t)$",
+            "question_text": "If $L[f(t)] = F(s)$, then $L^{-1}[F(s-a)] =$",
+            "options": [
+                "$e^{-at} f(t)$",
+                "$\\frac{1}{a} f(t/a)$",
+                "$\\int_0^t f(t) dt$",
+                "$e^{at} f(t)$"
+            ],
+            "correct_option": "D",
             "marks": 2,
-            "answer": "(D)\nExplanation: This is the inverse formulation of the First Shifting Theorem. Since $L[e^{at}f(t)] = F(s-a)$, taking the inverse transform of both sides yields $L^{-1}[F(s-a)] = e^{at}f(t)$.",
+            "answer": "This is the inverse formulation of the First Shifting Theorem. Since $L[e^{at}f(t)] = F(s-a)$, taking the inverse transform of both sides yields $L^{-1}[F(s-a)] = e^{at}f(t)$.",
             "answer_source": "generated",
             "chapter": "Unit 3: Laplace Transform"
         },
         {
             "question_number": "U4Q14",
-            "question_text": "An analytic function with constant modulus is\n(A) zero\n(B) analytic\n(C) harmonic\n(D) constant",
+            "question_text": "An analytic function with constant modulus is",
+            "options": [
+                "zero",
+                "analytic",
+                "harmonic",
+                "constant"
+            ],
+            "correct_option": "D",
             "marks": 2,
-            "answer": "(D)\nExplanation: A standard theorem in complex analysis states that an analytic function whose absolute value (modulus) is constant throughout a domain must itself be constant.",
+            "answer": "A standard theorem in complex analysis states that an analytic function whose absolute value (modulus) is constant throughout a domain must itself be constant.",
             "answer_source": "generated",
             "chapter": "Unit 4: Analytic Functions"
         },
         {
             "question_number": "U4Q15",
-            "question_text": "A transformation that preserves angles between every pair of curves through a point only in magnitude, but not in direction is said to be ______ at that point.\n(A) isogonal\n(B) conformal\n(C) regular\n(D) irregular",
+            "question_text": "A transformation that preserves angles between every pair of curves through a point only in magnitude, but not in direction is said to be ______ at that point.",
+            "options": [
+                "isogonal",
+                "conformal",
+                "regular",
+                "irregular"
+            ],
+            "correct_option": "A",
             "marks": 2,
-            "answer": "(A)\nExplanation: A conformal mapping preserves both the magnitude and the sense (direction) of angles. A mapping that preserves the magnitude of the angle but reverses the sense (direction) is called an isogonal mapping.",
+            "answer": "A conformal mapping preserves both the magnitude and the sense (direction) of angles. A mapping that preserves the magnitude of the angle but reverses the sense (direction) is called an isogonal mapping.",
             "answer_source": "generated",
             "chapter": "Unit 4: Analytic Functions"
         },
         {
             "question_number": "U4Q16",
-            "question_text": "The invariant points of the transformation $w = \\frac{2z+6}{z+7}$ are\n(A) $6, -1$\n(B) $3, 2$\n(C) $-3, 2$\n(D) $-6, 1$",
+            "question_text": "The invariant points of the transformation $w = \\frac{2z+6}{z+7}$ are",
+            "options": [
+                "$6, -1$",
+                "$3, 2$",
+                "$-3, 2$",
+                "$-6, 1$"
+            ],
+            "correct_option": "D",
             "marks": 2,
-            "answer": "(D)\nExplanation: Set $w = z$. $z = \\frac{2z+6}{z+7} \\implies z(z+7) = 2z+6 \\implies z^2 + 7z = 2z + 6 \\implies z^2 + 5z - 6 = 0$.\nFactoring the quadratic equation: $(z+6)(z-1) = 0$. Thus, $z = -6$ and $z = 1$.",
+            "answer": "Set $w = z$. $z = \\frac{2z+6}{z+7} \\implies z(z+7) = 2z+6 \\implies z^2 + 7z = 2z + 6 \\implies z^2 + 5z - 6 = 0$.\nFactoring the quadratic equation: $(z+6)(z-1) = 0$. Thus, $z = -6$ and $z = 1$.",
             "answer_source": "generated",
             "chapter": "Unit 4: Analytic Functions"
         },
         {
             "question_number": "U4Q17",
-            "question_text": "If $w = f(z) = u+iv$ is an analytic function, then\n(A) $\\left(\\frac{\\partial^2}{\\partial x^2} + \\frac{\\partial^2}{\\partial y^2}\\right) |f(z)|^2 = 4|f'(z)|^2$\n(B) $\\left(\\frac{\\partial^2}{\\partial x^2} + \\frac{\\partial^2}{\\partial y^2}\\right) |f(z)| = 4|f'(z)|$\n(C) $\\left(\\frac{\\partial}{\\partial x} + \\frac{\\partial}{\\partial y}\\right) |f(z)|^2 = 4|f'(z)|^2$\n(D) $\\left(\\frac{\\partial}{\\partial x} + \\frac{\\partial}{\\partial y}\\right)^2 |f(z)|^2 = 2|f'(z)|^2$",
+            "question_text": "If $w = f(z) = u+iv$ is an analytic function, then",
+            "options": [
+                "$\\left(\\frac{\\partial^2}{\\partial x^2} + \\frac{\\partial^2}{\\partial y^2}\\right) |f(z)|^2 = 4|f'(z)|^2$",
+                "$\\left(\\frac{\\partial^2}{\\partial x^2} + \\frac{\\partial^2}{\\partial y^2}\\right) |f(z)| = 4|f'(z)|$",
+                "$\\left(\\frac{\\partial}{\\partial x} + \\frac{\\partial}{\\partial y}\\right) |f(z)|^2 = 4|f'(z)|^2$",
+                "$\\left(\\frac{\\partial}{\\partial x} + \\frac{\\partial}{\\partial y}\\right)^2 |f(z)|^2 = 2|f'(z)|^2$"
+            ],
+            "correct_option": "A",
             "marks": 2,
-            "answer": "(A)\nExplanation: This is a fundamental identity for analytic functions. For an analytic function $f(z)$, the Laplacian operator applied to the square of its modulus is $\\nabla^2 |f(z)|^2 = 4|f'(z)|^2$.",
+            "answer": "This is a fundamental identity for analytic functions. For an analytic function $f(z)$, the Laplacian operator applied to the square of its modulus is $\\nabla^2 |f(z)|^2 = 4|f'(z)|^2$.",
             "answer_source": "generated",
             "chapter": "Unit 4: Analytic Functions"
         },
         {
             "question_number": "U5Q14",
-            "question_text": "A zero of an analytic function $f(z)$ is a value of $z$ for which\n(A) $f(z) = 1$\n(B) $f(z) \\neq 1$\n(C) $f(z) \\neq 0$\n(D) $f(z) = 0$",
+            "question_text": "A zero of an analytic function $f(z)$ is a value of $z$ for which",
+            "options": [
+                "$f(z) = 1$",
+                "$f(z) \\neq 1$",
+                "$f(z) \\neq 0$",
+                "$f(z) = 0$"
+            ],
+            "correct_option": "D",
             "marks": 2,
-            "answer": "(D)\nExplanation: By definition, a zero (or root) of a function $f(z)$ is a point $z_0$ in the domain where the function evaluates to zero, i.e., $f(z_0) = 0$.",
+            "answer": "By definition, a zero (or root) of a function $f(z)$ is a point $z_0$ in the domain where the function evaluates to zero, i.e., $f(z_0) = 0$.",
             "answer_source": "generated",
             "chapter": "Unit 5: Complex Integration"
         },
         {
             "question_number": "U5Q15",
-            "question_text": "By Cauchy's residue theorem, the value of $\\oint_C \\frac{1}{z-3} dz$ where $C$ is the circle $|z|=2$ is\n(A) 1\n(B) $4\\pi i$\n(C) 0\n(D) $2\\pi i$",
+            "question_text": "By Cauchy's residue theorem, the value of $\\oint_C \\frac{1}{z-3} dz$ where $C$ is the circle $|z|=2$ is",
+            "options": [
+                "1",
+                "$4\\pi i$",
+                "0",
+                "$2\\pi i$"
+            ],
+            "correct_option": "C",
             "marks": 2,
-            "answer": "(C)\nExplanation: The singularity of the integrand is a simple pole at $z=3$. The curve $C$ is a circle of radius 2 centered at the origin. Since $|3| = 3 > 2$, the pole is strictly outside the contour. Therefore, by Cauchy's Theorem, the integral is 0.",
+            "answer": "The singularity of the integrand is a simple pole at $z=3$. The curve $C$ is a circle of radius 2 centered at the origin. Since $|3| = 3 > 2$, the pole is strictly outside the contour. Therefore, by Cauchy's Theorem, the integral is 0.",
             "answer_source": "generated",
             "chapter": "Unit 5: Complex Integration"
         },
         {
             "question_number": "U5Q16",
-            "question_text": "For $f(z) = \\frac{\\sin z}{z}, z=0$ is\n(A) Removable singularity\n(B) Pole of order 0\n(C) Essential singularity\n(D) Pole of order 1",
+            "question_text": "For $f(z) = \\frac{\\sin z}{z}, z=0$ is",
+            "options": [
+                "Removable singularity",
+                "Pole of order 0",
+                "Essential singularity",
+                "Pole of order 1"
+            ],
+            "correct_option": "A",
             "marks": 2,
-            "answer": "(A)\nExplanation: Expanding $\\sin z$ as a Taylor series gives $\\frac{1}{z}(z - \\frac{z^3}{3!} + \\dots) = 1 - \\frac{z^2}{3!} + \\dots$. As there are no negative powers of $z$ in the principal part of the Laurent series, $z=0$ is a removable singularity.",
+            "answer": "Expanding $\\sin z$ as a Taylor series gives $\\frac{1}{z}(z - \\frac{z^3}{3!} + \\dots) = 1 - \\frac{z^2}{3!} + \\dots$. As there are no negative powers of $z$ in the principal part of the Laurent series, $z=0$ is a removable singularity.",
             "answer_source": "generated",
             "chapter": "Unit 5: Complex Integration"
         },
         {
             "question_number": "U5Q17",
-            "question_text": "The singular points of the function $f(z) = \\frac{z+2}{(z+1)(z-3)}$ are\n(A) $0, 3$\n(B) $-1, 3$\n(C) $-2, 1$\n(D) $1, 3$",
+            "question_text": "The singular points of the function $f(z) = \\frac{z+2}{(z+1)(z-3)}$ are",
+            "options": [
+                "$0, 3$",
+                "$-1, 3$",
+                "$-2, 1$",
+                "$1, 3$"
+            ],
+            "correct_option": "B",
             "marks": 2,
-            "answer": "(B)\nExplanation: Singular points of a rational function occur where the denominator is zero. Setting $(z+1)(z-3) = 0$ gives $z = -1$ and $z = 3$.",
+            "answer": "Singular points of a rational function occur where the denominator is zero. Setting $(z+1)(z-3) = 0$ gives $z = -1$ and $z = 3$.",
             "answer_source": "generated",
             "chapter": "Unit 5: Complex Integration"
         }

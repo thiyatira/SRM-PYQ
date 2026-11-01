@@ -5,81 +5,151 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Which of the following is true about Computer Architecture?\na) It acts as the interface between hardware and software.\nb) Computer Architecture tells us how exactly all the units in the system are arranged and interconnected.\nc) Computer Architecture is concerned with the structure and behaviour of a computer system as seen by the user.\nd) It involves Physical Components",
+            "question_text": "Which of the following is true about Computer Architecture?",
+            "options": [
+                "It acts as the interface between hardware and software.",
+                "Computer Architecture tells us how exactly all the units in the system are arranged and interconnected.",
+                "Computer Architecture is concerned with the structure and behaviour of a computer system as seen by the user.",
+                "It involves Physical Components"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "a) It acts as the interface between hardware and software.",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "2",
-            "question_text": "Which among the following is a type of architecture used in the computers nowadays?\na) Microarchitecture\nb) Harvard Architecture\nc) Von-Neumann Architecture\nd) System Design",
+            "question_text": "Which among the following is a type of architecture used in the computers nowadays?",
+            "options": [
+                "Microarchitecture",
+                "Harvard Architecture",
+                "Von-Neumann Architecture",
+                "System Design"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "c) Von-Neumann Architecture",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "3",
-            "question_text": "In which of the following form the computer stores its data in memory?\na) Hexadecimal form\nb) Octal form\nc) Binary form\nd) Decimal form",
+            "question_text": "In which of the following form the computer stores its data in memory?",
+            "options": [
+                "Hexadecimal form",
+                "Octal form",
+                "Binary form",
+                "Decimal form"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "c) Binary form",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "4",
-            "question_text": "The two’s complement in binary system is useful for expressing\n(A) Decimal numbers\n(B) Positive numbers\n(C) Negative numbers\n(D) Binary numbers",
+            "question_text": "The two’s complement in binary system is useful for expressing",
+            "options": [
+                "Decimal numbers",
+                "Positive numbers",
+                "Negative numbers",
+                "Binary numbers"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Negative numbers",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "5",
-            "question_text": "The parity bit is added for the purpose of ___________?\n(A) Control key\n(B) Error detection\n(C) Indexing\n(D) Coding",
+            "question_text": "The parity bit is added for the purpose of ___________?",
+            "options": [
+                "Control key",
+                "Error detection",
+                "Indexing",
+                "Coding"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Error detection",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "6",
-            "question_text": "Gray codes are used for?\na) To count the no of bits changes\nb) To rotate a shaft\nc) Error correction\nd) Error Detection",
+            "question_text": "Gray codes are used for?",
+            "options": [
+                "To count the no of bits changes",
+                "To rotate a shaft",
+                "Error correction",
+                "Error Detection"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "c) Error correction",
-            "answer_source": "provided",
+            "answer": "Gray code changes only one bit between successive values, so it is used in shaft-position encoders (rotating-shaft sensors) to avoid reading errors during transitions. It is not an error-correcting or error-detecting code.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "7",
-            "question_text": "ASCII codes are required for representing more than ___\ncharacters.\na) 16\nb) 8\nc) 32\nd) 64",
+            "question_text": "ASCII codes are required for representing more than ___\ncharacters.",
+            "options": [
+                "16",
+                "8",
+                "32",
+                "64"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "d) 64",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "8",
-            "question_text": "Which of the following building block can be used to implement any combinational logic circuit?\na) AND\nb) OR\nc) NAND\nd) XOR",
+            "question_text": "Which of the following building block can be used to implement any combinational logic circuit?",
+            "options": [
+                "AND",
+                "OR",
+                "NAND",
+                "XOR"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "c) NAND",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "9",
-            "question_text": "_______ points to the next instructions that are to be fetched from memory.\na) Instruction register\nb) Program counter\nc) Memory Address Register\nd) Memory Data Register",
+            "question_text": "_______ points to the next instructions that are to be fetched from memory.",
+            "options": [
+                "Instruction register",
+                "Program counter",
+                "Memory Address Register",
+                "Memory Data Register"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b) Program counter",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "10",
-            "question_text": "Consider a CPU that has 64- bit, the address of the contents are 1000, 1008, 1016, 1024. Now MAR is holding an address is 1008 to fetch the content from the memory. Analyze the operation and select the following address of the content which is held by the Program Counter (PC).\na) 1000\nb) 1008\nc) 1016\nd) 1024",
+            "question_text": "Consider a CPU that has 64- bit, the address of the contents are 1000, 1008, 1016, 1024. Now MAR is holding an address is 1008 to fetch the content from the memory. Analyze the operation and select the following address of the content which is held by the Program Counter (PC).",
+            "options": [
+                "1000",
+                "1008",
+                "1016",
+                "1024"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "c) 1016",
+            "answer": "",
             "answer_source": "provided",
             "chapter": "Unit 2: Basic structure of computers"
         },

@@ -5,161 +5,301 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Reflected binary code is also known as\n(A) BCD Code\n(B) Binary Code\n(C) ASCII Code\n(D) Grey Code",
+            "question_text": "Reflected binary code is also known as",
+            "options": [
+                "BCD Code",
+                "Binary Code",
+                "ASCII Code",
+                "Grey Code"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Grey Code\n\nRationale: Gray code is called reflected binary code because each half of the code list mirrors the other with the MSB changed.",
+            "answer": "Gray code is called reflected binary code because each half of the code list mirrors the other with the MSB changed.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "2",
-            "question_text": "Which of the following is the correct hexadecimal representation for the decimal number 255\n(A) FF\n(B) F0\n(C) FE\n(D) F1",
+            "question_text": "Which of the following is the correct hexadecimal representation for the decimal number 255",
+            "options": [
+                "FF",
+                "F0",
+                "FE",
+                "F1"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) FF\n\nRationale: $255 = 15\\times16+15$ → FF.",
+            "answer": "$255 = 15\\times16+15$ → FF.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "3",
-            "question_text": "What is the 2's complement of the binary number 00001101\n(A) 11110010\n(B) 11110011\n(C) 11110001\n(D) 11101101",
+            "question_text": "What is the 2's complement of the binary number 00001101",
+            "options": [
+                "11110010",
+                "11110011",
+                "11110001",
+                "11101101"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) 11110011\n\nRationale: 1's complement 11110010 + 1 = 11110011.",
+            "answer": "1's complement 11110010 + 1 = 11110011.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "4",
-            "question_text": "What is the gray code equivalent of the binary number 11011\n(A) 10110\n(B) 10001\n(C) 11101\n(D) 10010",
+            "question_text": "What is the gray code equivalent of the binary number 11011",
+            "options": [
+                "10110",
+                "10001",
+                "11101",
+                "10010"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) 10110\n\nRationale: $G_4=1$, $1\\oplus1=0$, $1\\oplus0=1$, $0\\oplus1=1$, $1\\oplus1=0$ → 10110.",
+            "answer": "$G_4=1$, $1\\oplus1=0$, $1\\oplus0=1$, $0\\oplus1=1$, $1\\oplus1=0$ → 10110.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
             "question_number": "5",
-            "question_text": "Which of the register/s of the processor is/are connected to Memory Bus?\n(A) Personal Computer\n(B) Memory Address Register\n(C) Instruction Register\n(D) Program Counter",
+            "question_text": "Which of the register/s of the processor is/are connected to Memory Bus?",
+            "options": [
+                "Personal Computer",
+                "Memory Address Register",
+                "Instruction Register",
+                "Program Counter"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Memory Address Register\n\nRationale: MAR (with MDR) connects the processor to the memory bus; MAR drives the address lines.",
+            "answer": "MAR (with MDR) connects the processor to the memory bus; MAR drives the address lines.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "6",
-            "question_text": "Data is transferred to and from memory in groups of bits called\n(A) Words\n(B) Address\n(C) Logic gates\n(D) Bit Number",
+            "question_text": "Data is transferred to and from memory in groups of bits called",
+            "options": [
+                "Words",
+                "Address",
+                "Logic gates",
+                "Bit Number"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Words\n\nRationale: Memory transfers occur in units of words (fixed-size groups of bits).",
+            "answer": "Memory transfers occur in units of words (fixed-size groups of bits).",
             "answer_source": "generated",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "7",
-            "question_text": "1 GB is equivalent to how to many bytes\n(A) $2^{10}$ bytes\n(B) $2^{20}$ bytes\n(C) $2^{50}$ bytes\n(D) $2^{30}$ bytes",
+            "question_text": "1 GB is equivalent to how to many bytes",
+            "options": [
+                "$2^{10}$ bytes",
+                "$2^{20}$ bytes",
+                "$2^{50}$ bytes",
+                "$2^{30}$ bytes"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) $2^{30}$ bytes\n\nRationale: 1 GB = $2^{30}$ bytes.",
+            "answer": "1 GB = $2^{30}$ bytes.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "8",
-            "question_text": "A computer has 32 MB (megabytes) of memory. How many bits are needed to address any single byte in memory\n(A) 30 bits\n(B) 25 bits\n(C) 26 bits\n(D) 20 bits",
+            "question_text": "A computer has 32 MB (megabytes) of memory. How many bits are needed to address any single byte in memory",
+            "options": [
+                "30 bits",
+                "25 bits",
+                "26 bits",
+                "20 bits"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) 25 bits\n\nRationale: $32\\text{ MB} = 2^5\\times2^{20} = 2^{25}$ bytes → 25 address bits.",
+            "answer": "$32\\text{ MB} = 2^5\\times2^{20} = 2^{25}$ bytes → 25 address bits.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
             "question_number": "9",
-            "question_text": "Mention the adder circuit which can add two binary numbers and also take into account an input carry?\n(A) Half Adder\n(B) Full Adder\n(C) Ripple Adder\n(D) Look-Ahead Adder",
+            "question_text": "Mention the adder circuit which can add two binary numbers and also take into account an input carry?",
+            "options": [
+                "Half Adder",
+                "Full Adder",
+                "Ripple Adder",
+                "Look-Ahead Adder"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Full Adder\n\nRationale: A full adder adds A, B and carry-in.",
+            "answer": "A full adder adds A, B and carry-in.",
             "answer_source": "generated",
             "chapter": "Unit 3: Design of ALU"
         },
         {
             "question_number": "10",
-            "question_text": "Which algorithm is commonly used for binary multiplication in digital circuits?\n(A) Booth's algorithm\n(B) De Morgan's theorem\n(C) Ripple-carry multiplication\n(D) Carry-lookahead multiplication",
+            "question_text": "Which algorithm is commonly used for binary multiplication in digital circuits?",
+            "options": [
+                "Booth's algorithm",
+                "De Morgan's theorem",
+                "Ripple-carry multiplication",
+                "Carry-lookahead multiplication"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Booth's algorithm\n\nRationale: Booth's algorithm is the standard signed binary multiplication algorithm.",
+            "answer": "Booth's algorithm is the standard signed binary multiplication algorithm.",
             "answer_source": "generated",
             "chapter": "Unit 3: Design of ALU"
         },
         {
             "question_number": "11",
-            "question_text": "What is the primary disadvantage of using a straight forward shift-and-add multiplier\n(A) High complexity\n(B) High speed\n(C) Large area usage\n(D) Long computation time",
+            "question_text": "What is the primary disadvantage of using a straight forward shift-and-add multiplier",
+            "options": [
+                "High complexity",
+                "High speed",
+                "Large area usage",
+                "Long computation time"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Long computation time\n\nRationale: It needs n sequential add/shift cycles, so it is slow.",
+            "answer": "It needs n sequential add/shift cycles, so it is slow.",
             "answer_source": "generated",
             "chapter": "Unit 3: Design of ALU"
         },
         {
             "question_number": "12",
-            "question_text": "How many bits are used for the exponent in IEEE 754 standard for single-precision floating-point number representation\n(A) 8\n(B) 11\n(C) 23\n(D) 32",
+            "question_text": "How many bits are used for the exponent in IEEE 754 standard for single-precision floating-point number representation",
+            "options": [
+                "8",
+                "11",
+                "23",
+                "32"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) 8\n\nRationale: Single precision: 1 sign, 8 exponent, 23 mantissa bits.",
+            "answer": "Single precision: 1 sign, 8 exponent, 23 mantissa bits.",
             "answer_source": "generated",
             "chapter": "Unit 3: Design of ALU"
         },
         {
             "question_number": "13",
-            "question_text": "The stages of 3 stage pipelining are\n(A) Decode, Fetch, Execute\n(B) Execute, Fetch, Decode\n(C) Fetch, Decode, Execute\n(D) Address generation, Fetch, Execute",
+            "question_text": "The stages of 3 stage pipelining are",
+            "options": [
+                "Decode, Fetch, Execute",
+                "Execute, Fetch, Decode",
+                "Fetch, Decode, Execute",
+                "Address generation, Fetch, Execute"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Fetch, Decode, Execute\n\nRationale: A 3-stage pipeline: Fetch → Decode → Execute (e.g. ARM7).",
+            "answer": "A 3-stage pipeline: Fetch → Decode → Execute (e.g. ARM7).",
             "answer_source": "generated",
             "chapter": "Unit 4: Control Unit"
         },
         {
             "question_number": "14",
-            "question_text": "Control Hazard is otherwise called as\n(A) Data Hazard\n(B) Instruction Hazard\n(C) Structural Hazard\n(D) Information Hazard",
+            "question_text": "Control Hazard is otherwise called as",
+            "options": [
+                "Data Hazard",
+                "Instruction Hazard",
+                "Structural Hazard",
+                "Information Hazard"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Instruction Hazard\n\nRationale: Control hazards (due to branches) are also called instruction hazards.",
+            "answer": "Control hazards (due to branches) are also called instruction hazards.",
             "answer_source": "generated",
             "chapter": "Unit 4: Control Unit"
         },
         {
             "question_number": "15",
-            "question_text": "A set of microinstructions for a single machine instruction is called\n(A) Program\n(B) Command\n(C) Micro program\n(D) Micro command",
+            "question_text": "A set of microinstructions for a single machine instruction is called",
+            "options": [
+                "Program",
+                "Command",
+                "Micro program",
+                "Micro command"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Micro program\n\nRationale: The sequence of microinstructions for an instruction is its microprogram (microroutine).",
+            "answer": "The sequence of microinstructions for an instruction is its microprogram (microroutine).",
             "answer_source": "generated",
             "chapter": "Unit 4: Control Unit"
         },
         {
             "question_number": "16",
-            "question_text": "The disadvantage/s of the hardwired approach is\n(A) It is less flexible\n(B) It cannot be used for complex instructions\n(C) It is costly\n(D) Less flexible & cannot be used for complex instructions",
+            "question_text": "The disadvantage/s of the hardwired approach is",
+            "options": [
+                "It is less flexible",
+                "It cannot be used for complex instructions",
+                "It is costly",
+                "Less flexible & cannot be used for complex instructions"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Less flexible & cannot be used for complex instructions\n\nRationale: Hardwired control is inflexible and impractical for complex instruction sets.",
+            "answer": "Hardwired control is inflexible and impractical for complex instruction sets.",
             "answer_source": "generated",
             "chapter": "Unit 4: Control Unit"
         },
         {
             "question_number": "17",
-            "question_text": "Which of the following is a primary reason for using parallelism in computing\n(A) To improve software compatibility\n(B) To decrease the power consumption\n(C) To increase number of processor cores for better performance\n(D) To increase the complexity",
+            "question_text": "Which of the following is a primary reason for using parallelism in computing",
+            "options": [
+                "To improve software compatibility",
+                "To decrease the power consumption",
+                "To increase number of processor cores for better performance",
+                "To increase the complexity"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) To increase number of processor cores for better performance\n\nRationale: Parallelism is used to improve performance by using multiple processing units/cores.",
+            "answer": "Parallelism is used to improve performance by using multiple processing units/cores.",
             "answer_source": "generated",
             "chapter": "Unit 5: Parallelism"
         },
         {
             "question_number": "18",
-            "question_text": "In Flynn's classification, MIMD refers to\n(A) Single Instruction stream, Single Data stream\n(B) Multiple Instruction streams, Single fragment stream\n(C) Single Instruction stream, Multiple Data streams\n(D) Multiple Instruction streams, Multiple Data streams",
+            "question_text": "In Flynn's classification, MIMD refers to",
+            "options": [
+                "Single Instruction stream, Single Data stream",
+                "Multiple Instruction streams, Single fragment stream",
+                "Single Instruction stream, Multiple Data streams",
+                "Multiple Instruction streams, Multiple Data streams"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Multiple Instruction streams, Multiple Data streams\n\nRationale: MIMD = Multiple Instruction, Multiple Data streams.",
+            "answer": "MIMD = Multiple Instruction, Multiple Data streams.",
             "answer_source": "generated",
             "chapter": "Unit 5: Parallelism"
         },
         {
             "question_number": "19",
-            "question_text": "Instruction level Parallelism achieves more than one instruction at a time through\n(A) Dynamic scheduling\n(B) Priority scheduling\n(C) Time-slot scheduling\n(D) Double scheduling",
+            "question_text": "Instruction level Parallelism achieves more than one instruction at a time through",
+            "options": [
+                "Dynamic scheduling",
+                "Priority scheduling",
+                "Time-slot scheduling",
+                "Double scheduling"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Dynamic scheduling\n\nRationale: ILP is exploited by dynamic scheduling (out-of-order issue) along with pipelining/superscalar execution.",
+            "answer": "ILP is exploited by dynamic scheduling (out-of-order issue) along with pipelining/superscalar execution.",
             "answer_source": "generated",
             "chapter": "Unit 5: Parallelism"
         },
         {
             "question_number": "20",
-            "question_text": "Which instruction set architecture is typically used in ARM processors\n(A) Complex Instruction Set Computer\n(B) Reduced Instruction Set Computer\n(C) Very Long Instruction Word\n(D) Explicitly Parallel Instruction Computing",
+            "question_text": "Which instruction set architecture is typically used in ARM processors",
+            "options": [
+                "Complex Instruction Set Computer",
+                "Reduced Instruction Set Computer",
+                "Very Long Instruction Word",
+                "Explicitly Parallel Instruction Computing"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Reduced Instruction Set Computer\n\nRationale: ARM = Advanced RISC Machine.",
+            "answer": "ARM = Advanced RISC Machine.",
             "answer_source": "generated",
             "chapter": "Unit 5: Parallelism"
         },
