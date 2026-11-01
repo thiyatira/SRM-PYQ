@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useCallback, useEffect, useRef, useState } from "react";
-import { getSemester, getSubject } from "@/lib/pyq/data";
+import type { Catalogue } from "@/lib/pyq/data";
+import { useCatalogue } from "@/lib/pyq/CatalogueContext";
 import { NAV_KEY, readJson, writeJson } from "@/lib/pyq/storage";
 import { SemesterList, SubjectList } from "./pyq/Browse";
 import { SubjectSearch } from "./pyq/SubjectSearch";
@@ -24,7 +25,7 @@ type NavState =
 
 const HOME: NavState = { view: "semesters" };
 
-function sanitizeNav(value: unknown): NavState {
+function sanitizeNav(value: unknown, { getSubject, getSemester }: Catalogue): NavState {
   if (value && typeof value === "object") {
     const v = value as Record<string, unknown>;
     if (v.view === "questions" && typeof v.subjectCode === "string" && getSubject(v.subjectCode)) {
@@ -38,7 +39,7 @@ function sanitizeNav(value: unknown): NavState {
 }
 
 /** Parses `#pyq/<subjectCode>[/<questionId>]`. */
-function parseHash(hash: string): { code: string; focusId: string | null } | null {
+function parseHash(hash: string, { getSubject }: Catalogue): { code: string; focusId: string | null } | null {
   const m = hash.match(/^#pyq\/([^/]+)(?:\/(.+))?$/);
   if (!m) return null;
   try {
@@ -55,6 +56,8 @@ const crumbLink =
 const crumbCurrent = "text-gray-900 dark:text-gray-100 font-semibold";
 
 const PyqSection: React.FC = () => {
+  const catalogue = useCatalogue();
+  const { getSubject, getSemester } = catalogue;
   const [nav, setNav] = useState<NavState>(HOME);
   const [focusId, setFocusId] = useState<string | null>(null);
   const [restored, setRestored] = useState(false);
@@ -64,17 +67,17 @@ const PyqSection: React.FC = () => {
 
   // Restore navigation after mount (URL hash wins over stored state).
   useEffect(() => {
-    const fromHash = parseHash(window.location.hash);
+    const fromHash = parseHash(window.location.hash, catalogue);
     if (fromHash) {
       setNav({ view: "questions", subjectCode: fromHash.code });
       setFocusId(fromHash.focusId);
     } else {
-      setNav(sanitizeNav(readJson<unknown>(NAV_KEY, null)));
+      setNav(sanitizeNav(readJson<unknown>(NAV_KEY, null), catalogue));
     }
     setRestored(true);
 
     const onHashChange = () => {
-      const h = parseHash(window.location.hash);
+      const h = parseHash(window.location.hash, catalogue);
       if (h) {
         setNav({ view: "questions", subjectCode: h.code });
         setFocusId(h.focusId);
@@ -82,7 +85,7 @@ const PyqSection: React.FC = () => {
     };
     window.addEventListener("hashchange", onHashChange);
     return () => window.removeEventListener("hashchange", onHashChange);
-  }, []);
+  }, [catalogue]);
 
   // Persist navigation + keep the URL hash in sync (never before restore, or we'd clobber it).
   useEffect(() => {

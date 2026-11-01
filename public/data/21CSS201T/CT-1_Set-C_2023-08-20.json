@@ -1,0 +1,159 @@
+{
+    "formal_filename": "CT-1_Set-C_2023-08-20.json",
+    "paper_title": "SRM Institute of Science and Technology, College of Engineering and Technology, School of Computing, Department of Computational Intelligence. Academic Year: 2023-24 (ODD). Test: CLAT-1, Course Code & Title: 21CSS201T COA, Year & Sem: II & III, SET C",
+    "source": "2023-08-20 CLAT-1 Set C",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "Which component in a computer system is responsible for converting high-level language code into machine code?\nA) Compiler\nB) Assembler\nC) Interpreter\nD) Linker",
+            "marks": 1,
+            "answer": "A) Compiler. A compiler translates a high-level language program into machine code.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "2",
+            "question_text": "Which of the following levels of the computer hierarchy is closest to the physical hardware?\nA) Operating System Level\nB) Assembly Language Level\nC) Digital Logic Level\nD) High-Level Language Level",
+            "marks": 1,
+            "answer": "C) Digital Logic Level. It is the lowest level in the hierarchy, made of gates and circuits.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "3",
+            "question_text": "What is the octal equivalent of the binary number 110110?\nA) 66\nB) 32\nC) 53\nD) 62",
+            "marks": 1,
+            "answer": "A) 66. Group the bits in threes from the right: 110 110 = 6 6, so $(110110)_2 = (66)_8$ (check: $54_{10} = 6 \\times 8 + 6$). The official key marks C) 53, which is incorrect.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "4",
+            "question_text": "What is the 2's complement of the binary number 00001101?\nA) 11110010\nB) 11110011\nC) 11110001\nD) 11101101",
+            "marks": 1,
+            "answer": "B) 11110011. 1's complement of 00001101 is 11110010; adding 1 gives 11110011.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "5",
+            "question_text": "Convert the Excess-3 code 1001 to its decimal equivalent.\nA) 6\nB) 7\nC) 8\nD) 9",
+            "marks": 1,
+            "answer": "A) 6. 1001 = 9; subtracting 3 gives 6.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "6",
+            "question_text": "What does the Memory Unit of a computer do?\nA) Processes instructions and performs calculations\nB) Stores data and instructions temporarily or permanently\nC) Manages the input and output operations\nD) Controls the entire operation of the computer",
+            "marks": 1,
+            "answer": "B) Stores data and instructions temporarily or permanently.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "7",
+            "question_text": "In the context of a computer's CPU, the Program Counter (PC) is also known as:\nA) Instruction Pointer (IP)\nB) Memory Address Register (MAR)\nC) Stack Pointer (SP)\nD) Accumulator (ACC)",
+            "marks": 1,
+            "answer": "A) Instruction Pointer (IP).",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "8",
+            "question_text": "Which of the following is NOT a type of bus in a computer system?\nA) Data Bus\nB) Address Bus\nC) Control Bus\nD) Storage Bus",
+            "marks": 1,
+            "answer": "D) Storage Bus. The system bus consists of the data, address and control buses.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "9",
+            "question_text": "Consider the 32-bit integer value 0x12345678 stored in memory on a little-endian system. How would the bytes be arranged in memory starting from address 0x00?\nA) 0x12, 0x34, 0x56, 0x78\nB) 0x78, 0x56, 0x34, 0x12\nC) 0x56, 0x78, 0x12, 0x34\nD) 0x34, 0x12, 0x78, 0x56",
+            "marks": 1,
+            "answer": "B) 0x78, 0x56, 0x34, 0x12. In little-endian order the least significant byte (0x78) is stored at the lowest address. The official key marks D), which is incorrect.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "10",
+            "question_text": "Which of the following is true about an instruction set architecture (ISA) in relation to application-level programming?\nA) The ISA defines how applications should be written in high-level programming languages.\nB) The ISA specifies the machine language instructions that a CPU can execute.\nC) The ISA is responsible for managing memory allocation and garbage collection in applications.\nD) The ISA determines the user interface and experience of an application.",
+            "marks": 1,
+            "answer": "B) The ISA specifies the machine language instructions that a CPU can execute.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "11",
+            "question_text": "Given the binary numbers 101101 and 110110, perform the following tasks:\n1. Add the binary numbers and provide the result.\n2. Convert the binary result to its decimal equivalent.\n3. Convert the decimal result to hexadecimal.\nExplain how converting between number systems affects data storage and performance in an application.",
+            "marks": 4,
+            "answer": "**1. Addition:**\n```text\n  101101\n+ 110110\n--------\n 1100011\n```\n**2. Decimal:** $1100011_2 = 64 + 32 + 2 + 1 = 99_{10}$ (check: $45 + 54 = 99$).\n\n**3. Hexadecimal:** $99 / 16 = 6$ remainder 3, so $99_{10} = (63)_{16}$.\n\n**Effect on storage and performance:**\n- Data storage: computers store everything in binary because transistors have two states. Decimal is human-readable but must be converted to binary for processing, adding overhead. Hexadecimal is a compact notation for binary (one hex digit = 4 bits), useful for memory addresses and debugging.\n- Performance: conversions between number systems add computational overhead, especially for large datasets. Binary operations are performed directly by the ALU and are the fastest. Choosing a suitable representation (e.g. hex colour codes) reduces representation length and storage.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "12",
+            "question_text": "Convert $(8BF)_{16}$ to binary and Octal.",
+            "marks": 4,
+            "answer": "**Binary:** replace each hex digit with 4 bits: 8 = 1000, B = 1011, F = 1111, so $(8BF)_{16} = (100010111111)_2$.\n\n**Octal:** $8BF_{16} = 8 \\times 16^2 + 11 \\times 16 + 15 = 2239_{10}$.\n- 2239 / 8 = 279 remainder 7\n- 279 / 8 = 34 remainder 7\n- 34 / 8 = 4 remainder 2\n- 4 / 8 = 0 remainder 4\n\nReading the remainders in reverse: $(8BF)_{16} = (4277)_8$. (Check by grouping the binary in threes: 100 010 111 111 = 4 2 7 7.)",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "13",
+            "question_text": "Subtract 147.9 from 204.8 using BCD Subtraction method.",
+            "marks": 4,
+            "answer": "204.8 in BCD = 0010 0000 0100 . 1000\n147.9 in BCD = 0001 0100 0111 . 1001\n\nSubtract digit by digit from the right, borrowing where needed:\n1. 8 - 9: borrow, 18 - 9 = 9 (1001)\n2. 4 - 7 (after lending 1, 3): borrow, 13 - 7 = 6 (0110)\n3. 0 - 4 (after lending 1, now borrow from 2): 9 - 4 = 5 (0101)\n4. 2 - 1 (after lending 1): 1 - 1 = 0 (0000)\n\nResult: 0000 0101 0110 . 1001 = **56.9** (check: 204.8 - 147.9 = 56.9). All digits are valid BCD, so no correction is needed.",
+            "answer_source": "provided",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "14",
+            "question_text": "Consider the ALU, Control Unit, and Memory Unit. Describe the role of the ALU in arithmetic operations, the Control Unit in instruction execution, and the Memory Unit in data storage. Explain how these units work together to execute a program that multiplies two numbers and stores the result.",
+            "marks": 4,
+            "answer": "**ALU:** performs arithmetic (add, subtract, multiply, divide) and logic (AND, OR, NOT, XOR) operations on binary data.\n\n**Control Unit:** fetches instructions from memory, decodes them, and issues control signals to the ALU, memory and I/O so that instructions execute in the correct sequence.\n\n**Memory Unit:** stores the program instructions and data currently in use (RAM) and permanent data (ROM/secondary storage); supplies operands to the CPU and stores results.\n\n**Working together (multiply two numbers):**\n1. The program is loaded into main memory.\n2. CU fetches the instruction to load operand 1 (e.g. 6 at address 1000); memory supplies it.\n3. CU fetches the instruction to load operand 2 (e.g. 7 at address 1001); memory supplies it.\n4. CU decodes the multiply instruction and signals the ALU, which computes 6 x 7 = 42.\n5. CU fetches the store instruction and sends the result and destination address (e.g. 1002) to memory, which stores 42.\n6. CU fetches the next instruction and continues until the program ends.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "15",
+            "question_text": "Implement 8086 Assembly code to add the 8-bit numbers 0x3A and 0xC5 and store the result. Explain how the Carry Flag and Zero Flag are affected.",
+            "marks": 4,
+            "answer": "```asm\nnum1   DB 3Ah\nnum2   DB 0C5h\nresult DB ?\n\n    MOV AL, [num1]    ; AL = 3Ah\n    ADD AL, [num2]    ; AL = 3Ah + C5h\n    MOV [result], AL  ; store the sum\n```\n\n**Addition:**\n```text\n  0011 1010   (3Ah = 58)\n+ 1100 0101   (C5h = 197)\n-----------\n  1111 1111   (FFh = 255)\n```\n\n- **Carry Flag (CF):** set only when there is a carry out of bit 7. 58 + 197 = 255 fits in 8 bits, so **CF = 0**.\n- **Zero Flag (ZF):** set only when the result is 00h. The result is FFh, so **ZF = 0**.\n\nNote: the official key works the sum out as 100000111 (CF = 1), but 3Ah + C5h = FFh with no carry.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "16",
+            "question_text": "Convert the following.\ni) Convert Octal (6547.234) to the decimal form. (3)\nConvert Binary (011110100110) to Excess-3. (3)\nii) Convert decimal $(546.243)_{10}$ to Excess-3. (3)\niii) Convert Hexadecimal (4AF2) into binary number. (1)",
+            "marks": 12,
+            "answer": "**i)** Integer part: $6 \\times 8^3 + 5 \\times 8^2 + 4 \\times 8 + 7 = 3072 + 320 + 32 + 7 = 3431$.\nFraction: $2 \\times 8^{-1} + 3 \\times 8^{-2} + 4 \\times 8^{-3} = 0.25 + 0.046875 + 0.0078125 = 0.3046875$.\nSo $(6547.234)_8 = (3431.3046875)_{10}$.\n\n**Binary to Excess-3:** $(011110100110)_2 = 1024 + 512 + 256 + 128 + 32 + 4 + 2 = 1958_{10}$. Add 3 to each decimal digit: 1+3 = 4, 9+3 = 12, 5+3 = 8, 8+3 = 11, giving Excess-3 = **0100 1100 1000 1011**. (The official key groups the bits as 0111 1010 0110 and adds 3 to each group, which is not a valid conversion, since 1010 is not a decimal digit.)\n\n**ii)** Add 3 to each digit: 5 -> 1000, 4 -> 0111, 6 -> 1001; 2 -> 0101, 4 -> 0111, 3 -> 0110.\n$(546.243)_{10}$ = **1000 0111 1001 . 0101 0111 0110** (Excess-3).\n\n**iii)** Replace each hex digit with 4 bits: 4 = 0100, A = 1010, F = 1111, 2 = 0010.\n$(4AF2)_{16} = (0100\\,1010\\,1111\\,0010)_2 = (100101011110010)_2$ (= $19186_{10}$).",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "17",
+            "question_text": "i) Find the multiplication of A, B where $A = (11011.101)_2$, $B = (110.11)_2$. (5)\nii) Convert the 4-bit binary number 1010 to Gray code and then back to binary. (5)",
+            "marks": 12,
+            "answer": "**i)** $A = 11011.101_2 = 27.625$ and $B = 110.11_2 = 6.75$.\nMultiply the integers (ignoring the binary points): $11011101_2 \\times 11011_2 = 221 \\times 27 = 5967 = 1011101001111_2$. A has 3 fractional bits and B has 2, so put 5 bits after the point:\n$A \\times B = (10111010.01111)_2 = 186.46875_{10}$ (check: $27.625 \\times 6.75 = 186.46875$). (The official key's value, 1000011.010011, is incorrect.)\n\n**ii) Binary to Gray:** the MSB is copied, then each bit is XORed with the previous binary bit:\n- $g_3 = 1$\n- $g_2 = 1 \\oplus 0 = 1$\n- $g_1 = 0 \\oplus 1 = 1$\n- $g_0 = 1 \\oplus 0 = 1$\n\nGray code = **1111**.\n\n**Gray to binary:** copy the MSB, then each binary bit = previous binary bit XOR the current Gray bit:\n- $b_3 = 1$\n- $b_2 = 1 \\oplus 1 = 0$\n- $b_1 = 0 \\oplus 1 = 1$\n- $b_0 = 1 \\oplus 1 = 0$\n\nBinary = **1010** (the original number).",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Introduction to Number System and Logic Gates"
+        },
+        {
+            "question_number": "18",
+            "question_text": "A company needs to choose between a shared bus and a point-to-point bus for a new server system with multiple high-speed components.\na) What factors should be considered in selecting the bus structure? (3 marks)\nb) How would each structure affect performance and scalability? (4 marks)\nc) Which bus structure is more suitable and why? (3 marks)",
+            "marks": 12,
+            "answer": "**a) Factors:**\n1. Bandwidth requirements: total data-transfer needs of the high-speed components.\n2. Latency: acceptable delay for transfers between components.\n3. Scalability: ease of adding components without degrading performance.\n\n**b) Effect on performance and scalability:**\n- Shared bus: bandwidth is shared by all components, so simultaneous transfers cause contention, congestion and higher latency. Adding components degrades performance further, so only a limited number of devices can be supported.\n- Point-to-point: each link has dedicated bandwidth, so there is no contention and latency is lower. New components can be added with new links without affecting existing ones, so it scales better.\n\n**c) Choice:** point-to-point is more suitable for a server with many high-speed components, because it gives dedicated bandwidth and low latency, scales easily, and avoids the single point of failure and contention of a shared bus.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        },
+        {
+            "question_number": "19",
+            "question_text": "a) Describe three addressing modes and give an example of each. (6 marks)\nb) How do addressing modes impact execution speed and program efficiency? (2 marks)\nc) Discuss the trade-offs between complex and simple addressing modes in terms of instruction length and execution time. (2 marks)",
+            "marks": 12,
+            "answer": "**a) Three addressing modes:**\n1. Immediate: the operand is in the instruction itself. Example: `MOV AX, 5` loads the constant 5 into AX.\n2. Direct: the instruction holds the memory address of the operand. Example: `MOV AX, [1234h]` loads the word at address 1234h.\n3. Indexed/based: the effective address is a base/index register plus a displacement, useful for arrays. Example: `MOV AX, [BX + 4]` loads from address BX + 4.\n\n**b) Impact on speed and efficiency:** immediate (and register) modes need no extra memory access, so they are the fastest. Direct needs one memory access for the operand. Indirect/indexed modes need address calculation or extra memory references, so they are slower but let one instruction handle arrays, pointers and data structures, which reduces program size and instruction count.\n\n**c) Trade-offs:** complex modes (indirect, indexed, based-indexed) give more powerful, compact programs with fewer instructions, but need longer instruction encodings or more decode logic and take more cycles per instruction. Simple modes (register, immediate) give short, fast, easily pipelined instructions (the RISC approach) but may need more instructions to do the same job.",
+            "answer_source": "provided",
+            "chapter": "Unit 2: Basic structure of computers"
+        }
+    ]
+}

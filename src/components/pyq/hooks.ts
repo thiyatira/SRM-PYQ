@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { getSubject } from "@/lib/pyq/data";
+import { useCatalogue } from "@/lib/pyq/CatalogueContext";
 import { loadSubject, type SubjectData } from "@/lib/pyq/loader";
 import { BOOKMARKS_KEY, readJson, writeJson } from "@/lib/pyq/storage";
 
@@ -61,7 +61,7 @@ export function useSubjectData(code: string | null): {
     error?: string;
   } | null>(null);
 
-  const subject = getSubject(code);
+  const subject = useCatalogue().getSubject(code);
   const hasFiles = !!subject && subject.files.length > 0;
   const key = hasFiles ? `${code}#${attempt}` : null;
 

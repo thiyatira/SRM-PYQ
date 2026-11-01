@@ -1,7 +1,8 @@
 "use client";
 
 import React from "react";
-import { SEMESTERS, type SemesterInfo } from "@/lib/pyq/data";
+import type { SemesterInfo } from "@/lib/pyq/data";
+import { useCatalogue } from "@/lib/pyq/CatalogueContext";
 import { ForwardArrowIcon, getSemesterBadgeIcon, getSubjectBadgeIcon } from "./icons";
 
 const CARD =
@@ -17,6 +18,7 @@ const ARROW =
   "relative z-10 flex-shrink-0 w-10 sm:w-12 h-10 sm:h-12 flex items-center justify-center text-[#9A7420] dark:text-amber-400 group-hover:text-[#8D6B24] dark:group-hover:text-amber-300 group-hover:translate-x-1 transition-all duration-300";
 
 export function SemesterList({ onSelect }: { onSelect: (semesterId: number) => void }) {
+  const { semesters } = useCatalogue();
   return (
     <section className="max-w-2xl mx-auto" aria-labelledby="pyq-sem-heading">
       <div className="text-center mb-6">
@@ -29,7 +31,7 @@ export function SemesterList({ onSelect }: { onSelect: (semesterId: number) => v
       </div>
 
       <div className="space-y-3.5 sm:space-y-4">
-        {SEMESTERS.map((sem) => {
+        {semesters.map((sem) => {
           const paperCount = sem.subjects.reduce((sum, s) => sum + s.files.length, 0);
           return (
             <button key={sem.id} type="button" onClick={() => onSelect(sem.id)} className={CARD}>
@@ -67,6 +69,7 @@ export function SubjectList({
   onSelectSubject: (code: string) => void;
   onBack: () => void;
 }) {
+  const { semesters } = useCatalogue();
   return (
     <section className="max-w-2xl mx-auto" aria-labelledby="pyq-subj-heading">
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
@@ -86,7 +89,7 @@ export function SubjectList({
           aria-label="Switch semester"
           className="flex items-center gap-1 p-1 rounded-xl bg-gray-200/70 dark:bg-neutral-800 border border-gray-300/60 dark:border-neutral-700/60 text-xs self-start sm:self-auto overflow-x-auto max-w-full"
         >
-          {SEMESTERS.map((s) => (
+          {semesters.map((s) => (
             <button
               key={s.id}
               type="button"
