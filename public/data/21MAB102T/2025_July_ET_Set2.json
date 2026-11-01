@@ -72,7 +72,7 @@
             ],
             "correct_option": "B",
             "marks": 2,
-            "answer": "$\\text{grad } \\phi = \\nabla \\phi = \\frac{\\partial \\phi}{\\partial x}\\mathbf{i} + \\frac{\\partial \\phi}{\\partial y}\\mathbf{j} + \\frac{\\partial \\phi}{\\partial z}\\mathbf{k} = 2x\\mathbf{i} + 2y\\mathbf{j} + 2z\\mathbf{k}$.\nAt the point $(2,0,2)$, $\\nabla \\phi = 2(2)\\mathbf{i} + 2(0)\\mathbf{j} + 2(2)\\mathbf{k} = 4\\mathbf{i} + 4\\mathbf{k}$.",
+            "answer": "$\\nabla\\phi=(2x,2y,2z)$, which at $(2,0,2)$ is $4\\mathbf i+4\\mathbf k$.",
             "answer_source": "generated",
             "chapter": "Unit 2: Vector Calculus"
         },
@@ -87,7 +87,7 @@
             ],
             "correct_option": "A",
             "marks": 2,
-            "answer": "The Laplacian $\\nabla^2 \\phi = \\frac{\\partial^2 \\phi}{\\partial x^2} + \\frac{\\partial^2 \\phi}{\\partial y^2}$. \n$\\frac{\\partial \\phi}{\\partial x} = 2x \\implies \\frac{\\partial^2 \\phi}{\\partial x^2} = 2$.\n$\\frac{\\partial \\phi}{\\partial y} = -2y \\implies \\frac{\\partial^2 \\phi}{\\partial y^2} = -2$.\n$\\nabla^2 \\phi = 2 + (-2) = 0$.",
+            "answer": "$\\nabla^2\\phi=\\phi_{xx}+\\phi_{yy}=2+(-2)=0$.",
             "answer_source": "generated",
             "chapter": "Unit 2: Vector Calculus"
         },
@@ -102,7 +102,7 @@
             ],
             "correct_option": "A",
             "marks": 2,
-            "answer": "Define the surface as $\\phi = x^2+y^2-z = 0$. \n$\\nabla \\phi = 2x\\mathbf{i} + 2y\\mathbf{j} - 1\\mathbf{k}$.\nAt the point $(1,2,5)$, $\\nabla \\phi = 2(1)\\mathbf{i} + 2(2)\\mathbf{j} - \\mathbf{k} = 2\\mathbf{i} + 4\\mathbf{j} - \\mathbf{k}$.\nThe magnitude is $\\sqrt{2^2 + 4^2 + (-1)^2} = \\sqrt{4 + 16 + 1} = \\sqrt{21}$.\nUnit normal vector = $\\frac{2\\mathbf{i}+4\\mathbf{j}-\\mathbf{k}}{\\sqrt{21}}$.",
+            "answer": "With $\\phi=x^2+y^2-z$, $\\nabla\\phi=(2,4,-1)$ at $(1,2,5)$; magnitude $\\sqrt{21}$, so the unit normal is $\\frac{2\\mathbf i+4\\mathbf j-\\mathbf k}{\\sqrt{21}}$.",
             "answer_source": "generated",
             "chapter": "Unit 2: Vector Calculus"
         },
@@ -117,7 +117,7 @@
             ],
             "correct_option": "B",
             "marks": 2,
-            "answer": "$\\int_C \\vec{F} \\cdot d\\vec{r} = \\int_C (x^2 dx + xy^2 dy)$.\nAlong the line $y=x$, we have $dy = dx$. \nSubstituting $y$ and $dy$: $\\int_0^1 (x^2 dx + x(x^2) dx) = \\int_0^1 (x^2 + x^3) dx$.\nIntegrating: $[\\frac{x^3}{3} + \\frac{x^4}{4}]_0^1 = \\frac{1}{3} + \\frac{1}{4} = \\frac{4+3}{12} = \\frac{7}{12}$.",
+            "answer": "On $y=x$, $dy=dx$: $\\int_0^1(x^2+x\\cdot x^2)dx=\\frac13+\\frac14=\\frac7{12}$.",
             "answer_source": "generated",
             "chapter": "Unit 2: Vector Calculus"
         },
@@ -162,7 +162,7 @@
             ],
             "correct_option": "C",
             "marks": 2,
-            "answer": "We need to find $L^{-1}(\\frac{s}{(s+2)^2})$. Rewrite the numerator as $s+2-2$:\n$L^{-1}(\\frac{s+2-2}{(s+2)^2}) = L^{-1}(\\frac{s+2}{(s+2)^2}) - L^{-1}(\\frac{2}{(s+2)^2})$\n$= L^{-1}(\\frac{1}{s+2}) - 2 L^{-1}(\\frac{1}{(s+2)^2})$\n$= e^{-2t} - 2 (t e^{-2t}) = e^{-2t}(1 - 2t)$.",
+            "answer": "$\\frac{s}{(s+2)^2}=\\frac1{s+2}-\\frac2{(s+2)^2}$, so $f(t)=e^{-2t}-2te^{-2t}=e^{-2t}(1-2t)$.",
             "answer_source": "generated",
             "chapter": "Unit 3: Laplace Transform"
         },
@@ -177,7 +177,7 @@
             ],
             "correct_option": "B",
             "marks": 2,
-            "answer": "The Laplace transform of an integral $\\int_0^t g(u)du$ is $\\frac{1}{s} L(g(t))$. Here, $g(t) = e^{-t} \\cos t$.\n$L(\\cos t) = \\frac{s}{s^2+1}$. By shifting theorem, $L(e^{-t}\\cos t) = \\frac{s+1}{(s+1)^2+1} = \\frac{s+1}{s^2+2s+2}$.\nThus, $L[\\int_0^t e^{-u} \\cos u du] = \\frac{1}{s} \\left(\\frac{s+1}{s^2+2s+2}\\right) = \\frac{s+1}{s(s^2+2s+2)}$.",
+            "answer": "$L\\left[\\int_0^t g\\right]=\\frac1sL[g]$ with $L[e^{-t}\\cos t]=\\frac{s+1}{(s+1)^2+1}$, giving $\\frac{s+1}{s(s^2+2s+2)}$.",
             "answer_source": "generated",
             "chapter": "Unit 3: Laplace Transform"
         },
@@ -192,7 +192,7 @@
             ],
             "correct_option": "B",
             "marks": 2,
-            "answer": "If $f(z) = u+iv$ is analytic, C-R equations hold: $u_x = v_y$ and $u_y = -v_x$. Here $v = c$ (a constant), so $v_x = 0$ and $v_y = 0$. Therefore, $u_x = 0$ and $u_y = 0$, meaning $u$ must be a constant function.",
+            "answer": "With $v=c$, $v_x=v_y=0$; C-R then gives $u_x=u_y=0$, so $u$ is constant.",
             "answer_source": "generated",
             "chapter": "Unit 4: Analytic Functions"
         },
@@ -207,7 +207,7 @@
             ],
             "correct_option": "D",
             "marks": 2,
-            "answer": "$f(z) = |z|^2 = x^2+y^2$. So $u=x^2+y^2$ and $v=0$. C-R equations demand $u_x=v_y \\implies 2x=0$ and $u_y=-v_x \\implies 2y=0$. They are only satisfied at the origin $(0,0)$. Since it's not satisfied in any neighborhood of $(0,0)$, the function is nowhere analytic.",
+            "answer": "Here $u=x^2+y^2,\\,v=0$; C-R ($2x=0,\\,2y=0$) holds only at the origin, so $f$ is nowhere analytic.",
             "answer_source": "generated",
             "chapter": "Unit 4: Analytic Functions"
         },
@@ -222,7 +222,7 @@
             ],
             "correct_option": "C",
             "marks": 2,
-            "answer": "Set $w = z$. $z = \\frac{3z-5}{z+1} \\implies z^2+z = 3z-5 \\implies z^2-2z+5 = 0$.\n$z = \\frac{2 \\pm \\sqrt{4-20}}{2} = \\frac{2 \\pm \\sqrt{-16}}{2} = \\frac{2 \\pm 4i}{2} = 1 \\pm 2i$.",
+            "answer": "Put $w=z$: $z^2-2z+5=0\\Rightarrow z=1\\pm2i$.",
             "answer_source": "generated",
             "chapter": "Unit 4: Analytic Functions"
         },
@@ -252,7 +252,7 @@
             ],
             "correct_option": "B",
             "marks": 2,
-            "answer": "Expand $e^z$ as a Taylor series: $e^z = 1 + z + \\frac{z^2}{2!} + \\frac{z^3}{3!} + \\dots$\nThen $1 - e^z = -z - \\frac{z^2}{2!} - \\frac{z^3}{3!} - \\dots$\nSubstitute into the function: $f(z) = \\frac{-z - z^2/2 - z^3/6 - \\dots}{z^4} = -\\frac{1}{z^3} - \\frac{1}{2z^2} - \\frac{1}{6z} - \\dots$\nThe highest negative power of $z$ is $3$, meaning $z=0$ is a pole of order 3.",
+            "answer": "$1-e^z=-z-\\frac{z^2}{2}-\\dots$, so $f(z)=-\\frac1{z^3}-\\frac1{2z^2}-\\dots$; the highest negative power is 3, a pole of order 3.",
             "answer_source": "generated",
             "chapter": "Unit 5: Complex Integration"
         },
@@ -282,7 +282,7 @@
             ],
             "correct_option": "C",
             "marks": 2,
-            "answer": "Simplify the function first:\n$f(z) = \\frac{(z-1)(z+1)}{(z-1)^2(z+2)} = \\frac{z+1}{(z-1)(z+2)}$.\nThe roots of the denominator in lowest terms give the poles. The factors are $(z-1)^1$ and $(z+2)^1$.\nThus, $z=1$ and $z=-2$ are both simple poles (poles of order 1).",
+            "answer": "Cancel one factor: $f=\\frac{z+1}{(z-1)(z+2)}$, so $z=1$ and $z=-2$ are both simple poles.",
             "answer_source": "generated",
             "chapter": "Unit 5: Complex Integration"
         },
@@ -297,7 +297,7 @@
             ],
             "correct_option": "D",
             "marks": 2,
-            "answer": "The function has a simple pole at $z=1$. The contour $C$ is a circle of radius $1.5$ centered at the origin, which encloses the pole $z=1$.\nBy Cauchy's Integral Formula: $\\int_C \\frac{f(z)}{z-a} dz = 2\\pi i f(a)$.\nHere $f(z) = \\cos \\pi z$ and $a = 1$.\nIntegral $= 2\\pi i \\cos(\\pi \\cdot 1) = 2\\pi i (-1) = -2\\pi i$.",
+            "answer": "The pole $z=1$ lies inside $|z|=3/2$; Cauchy's formula gives $2\\pi i\\cos\\pi=-2\\pi i$.",
             "answer_source": "generated",
             "chapter": "Unit 5: Complex Integration"
         }

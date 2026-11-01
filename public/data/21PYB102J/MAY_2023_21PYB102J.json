@@ -43,7 +43,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "At T = 0K, the Fermi distribution is a step function; all states above Ef are empty (probability = 0).",
+            "answer": "At 0 K, $F(E)$ is a step function: 1 below $E_F$, 0 above.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -58,7 +58,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "For common 2D lattices (like the hexagonal/honeycomb lattice of graphene), the first Brillouin zone is hexagonal.",
+            "answer": "The 2D hexagonal lattice (as in graphene) has a hexagonal first Brillouin zone.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -88,7 +88,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "At 0K, the Fermi level in an n-type semiconductor lies exactly halfway between the donor level (Ed) and the bottom of the conduction band (Ec).",
+            "answer": "At 0 K the Fermi level of n-type lies midway between $E_d$ and $E_c$: $(E_c+E_d)/2$.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
@@ -103,7 +103,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "In reverse bias, only the saturation current due to minority carriers flows, which is typically in the micro-to-nano ampere range.",
+            "answer": "Reverse bias passes only a minority-carrier saturation current, microamperes to nanoamperes.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },

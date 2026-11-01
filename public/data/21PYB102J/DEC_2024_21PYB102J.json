@@ -13,7 +13,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The Schrödinger equation is the fundamental equation in quantum mechanics that describes how the quantum state of a physical system changes with time.",
+            "answer": "The Schrödinger equation gives the wavefunction and time evolution of electrons in quantum mechanics.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -28,7 +28,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "A phonon is a collective excitation in a periodic, elastic arrangement of atoms or molecules in condensed matter, representing a quantized mode of vibration.",
+            "answer": "A phonon is the quantum of lattice (atomic) vibrations.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -43,7 +43,7 @@
             ],
             "correct_option": "C,D",
             "marks": 1,
-            "answer": "Both Ge and Si are indirect bandgap semiconductors (conduction band minimum and valence band maximum occur at different wave vectors), whereas GaAs is direct.",
+            "answer": "Ge and Si have band extrema at different k-values (indirect); GaAs is direct.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -58,7 +58,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "As temperature increases, an n-type semiconductor becomes more intrinsic, and the Fermi level moves downwards from the donor level toward the center of the bandgap.",
+            "answer": "Higher temperature makes n-type more intrinsic, so the Fermi level drops from near the donor level toward mid-gap.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
@@ -73,7 +73,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "A Schottky barrier is a potential energy barrier for electrons formed at a metal–semiconductor junction that has rectifying characteristics.",
+            "answer": "A Schottky junction is the rectifying metal-semiconductor contact; an ohmic contact is non-rectifying.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
@@ -88,7 +88,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "For an intrinsic semiconductor, the Fermi level lies exactly in the middle of the forbidden energy gap at 0 K.",
+            "answer": "In an intrinsic semiconductor the Fermi level lies at the middle of the band gap.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
@@ -103,7 +103,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Photon absorption occurs only if the energy of the incident photon (hv) is greater than or equal to the bandgap energy (Eg) of the semiconductor.",
+            "answer": "Absorption needs photon energy $h\\nu \\ge E_g$ to lift an electron across the gap.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
@@ -118,7 +118,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The Fill Factor (FF) is defined as the ratio of the maximum power (Pm) to the product of the open-circuit voltage (Voc) and short-circuit current (Isc).",
+            "answer": "$FF = P_m/(I_{sc}V_{oc})$: maximum power divided by the product of short-circuit current and open-circuit voltage.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
@@ -133,7 +133,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Fermi's Golden Rule is a way to calculate the transition rate (probability of transition per unit time) from one energy eigenstate of a quantum system into a continuum of energy eigenstates.",
+            "answer": "Fermi's golden rule gives the transition rate (probability per unit time) between quantum states.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
@@ -148,7 +148,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Light is emitted in a semiconductor when an electron from the conduction band recombines with a hole in the valence band, releasing energy as a photon.",
+            "answer": "Light is emitted when a conduction-band electron recombines with a valence-band hole and releases a photon.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
@@ -163,7 +163,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The hot point probe method uses the thermoelectric effect to determine the majority carrier type (n or p) of a semiconductor material quickly.",
+            "answer": "Hot point probe uses the thermoelectric (Seebeck) effect to identify carrier type quickly.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
@@ -178,7 +178,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "TCAD stands for Technology Computer-Aided Design, which is used for the modeling and simulation of semiconductor fabrication and device operation.",
+            "answer": "TCAD = Technology Computer-Aided Design, used to simulate semiconductor fabrication and devices.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
@@ -193,7 +193,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The two-probe method is typically used for high-resistivity materials where the contact resistance is negligible compared to the large sample resistance.",
+            "answer": "For very high resistivity the sample resistance far exceeds contact resistance, so two probes suffice.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
@@ -208,7 +208,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The built-in potential barrier for a Silicon p-n junction diode is typically about 0.7 V at room temperature.",
+            "answer": "The built-in barrier of a silicon p-n junction is about 0.7 V.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
@@ -223,7 +223,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Richard Feynman's 1959 talk, \"There's Plenty of Room at the Bottom,\" is often cited as the conceptual beginning of nanotechnology.",
+            "answer": "Richard Feynman gave this 1959 lecture, often seen as the start of nanotechnology.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
@@ -238,7 +238,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "In a 0D system (quantum dot), carriers are confined in all directions, leading to a discrete energy spectrum and a density of states represented by delta functions.",
+            "answer": "A 0D quantum dot confines carriers in all directions, giving discrete levels and a delta-function DOS.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
@@ -253,7 +253,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Nanosheets (like graphene) are 2D materials where carriers are confined in one dimension and free in two dimensions.",
+            "answer": "A nanosheet (e.g. graphene) is confined in one dimension and free in two, so it is 2D.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
@@ -268,7 +268,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "In CVD, gaseous precursors react and/or decompose on a substrate surface to produce the desired thin film.",
+            "answer": "CVD uses volatile precursors in gaseous form, which react on the heated substrate to form the film.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
@@ -283,7 +283,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The Schrödinger equation is the foundational equation of quantum mechanics used to describe the wave function and quantum state of electrons.",
+            "answer": "The Schrödinger equation gives the wavefunction and time evolution of electrons in quantum mechanics.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -298,7 +298,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "For a 1D lattice of spacing a, the reciprocal lattice unit length is 1/a in the crystallographic convention (2π/a if the 2π factor is included).",
+            "answer": "In 1D the reciprocal lattice period is $2\\pi/a$, i.e. $1/a$ in the crystallographic convention; only $1/a$ is offered.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -328,7 +328,7 @@
             ],
             "correct_option": "C,D",
             "marks": 1,
-            "answer": "Both Ge and Si are indirect bandgap semiconductors (conduction band minimum and valence band maximum occur at different wave vectors), whereas GaAs is direct.",
+            "answer": "Ge and Si have band extrema at different k-values (indirect); GaAs is direct.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -343,7 +343,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "As temperature increases, an n-type semiconductor becomes more intrinsic, causing the Fermi level to move downward toward the middle of the bandgap.",
+            "answer": "Higher temperature makes n-type more intrinsic, so the Fermi level drops from near the donor level toward mid-gap.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
@@ -373,7 +373,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "In an intrinsic semiconductor at absolute zero, the Fermi level lies precisely in the middle of the forbidden energy gap.",
+            "answer": "In an intrinsic semiconductor the Fermi level lies at the middle of the band gap.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
@@ -388,7 +388,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Diffusion is the process where charge carriers move from regions of higher concentration to lower concentration due to random thermal motion.",
+            "answer": "Diffusion is carrier movement from high to low concentration through random thermal motion.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
@@ -403,7 +403,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "For a photon to be absorbed and excite an electron across the bandgap, its energy (hv) must be greater than or equal to the bandgap energy (Eg).",
+            "answer": "Absorption needs photon energy $h\\nu \\ge E_g$ to lift an electron across the gap.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
@@ -418,7 +418,7 @@
             ],
             "correct_option": "A,C",
             "marks": 1,
-            "answer": "Fill factor (FF) in a solar cell is defined as the ratio of maximum power (Pm) to the product of short-circuit current (Isc) and open-circuit voltage (Voc).",
+            "answer": "$FF = P_m/(I_{sc}V_{oc})$; options A and C are identical, so both are correct.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
@@ -433,7 +433,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Fermi's golden rule is used to calculate the transition probability rate for a particle transitioning from one energy eigenstate to another.",
+            "answer": "Fermi's golden rule gives the transition rate (probability per unit time) between quantum states.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
@@ -448,7 +448,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Radiative recombination of an electron and a hole releases energy in the form of a photon (light emission).",
+            "answer": "Radiative recombination of an electron-hole pair emits a photon.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
@@ -463,7 +463,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The hot point probe method relies on the Seebeck effect and is a very quick, simple way to determine the majority carrier type in a semiconductor.",
+            "answer": "Hot point probe uses the thermoelectric (Seebeck) effect to identify carrier type quickly.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
@@ -478,7 +478,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "TCAD stands for Technology Computer-Aided Design, which is used to model semiconductor fabrication and device operation.",
+            "answer": "TCAD = Technology Computer-Aided Design, used to simulate semiconductor fabrication and devices.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
@@ -493,7 +493,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "For very high resistivity samples, the two-probe method is often suitable because the contact resistance is negligible compared to the massive sample resistance.",
+            "answer": "For very high resistivity the sample resistance far exceeds contact resistance, so two probes suffice.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
@@ -508,7 +508,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The built-in potential (barrier voltage) for a typical silicon p-n junction at room temperature is approximately 0.7 V.",
+            "answer": "The built-in barrier of a silicon p-n junction is about 0.7 V.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
@@ -523,7 +523,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Physicist Richard Feynman gave a famous 1959 lecture titled \"There's Plenty of Room at the Bottom,\" which conceptually founded nanotechnology.",
+            "answer": "Richard Feynman gave this 1959 lecture, often seen as the start of nanotechnology.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
@@ -538,7 +538,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "In a 0D structure (quantum dot), electrons are confined in all three dimensions, resulting in discrete energy levels characterized by delta function density of states.",
+            "answer": "A 0D quantum dot confines carriers in all directions, giving discrete levels and a delta-function DOS.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
@@ -553,7 +553,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Nanosheets (like graphene) confine electrons in one dimension while allowing them to move freely in the other two, making them 2D materials.",
+            "answer": "A nanosheet (e.g. graphene) is confined in one dimension and free in two, so it is 2D.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
@@ -568,7 +568,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Chemical Vapor Deposition (CVD) utilizes volatile precursors in the gaseous state to react and deposit thin films on a substrate.",
+            "answer": "CVD uses volatile precursors in gaseous form, which react on the heated substrate to form the film.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         }

@@ -14,8 +14,8 @@
             ],
             "correct_option": "B",
             "marks": null,
-            "answer": "`ptr` starts at `head` (5), prints 5, then moves two steps ahead via `ptr.next.next` to 25.\n- `ptr` is now 25, prints 25, then moves two steps to 45.\n- `ptr` is now 45, prints 45, then moves two steps to NULL.\n- The loop terminates since `ptr == NULL`.",
-            "answer_source": "provided",
+            "answer": "It prints 5, then `ptr.next.next` jumps to 25, then 45, then NULL. Output: 5 25 45.",
+            "answer_source": "generated",
             "chapter": "Unit 2: List Structure"
         },
         {
@@ -37,8 +37,8 @@
             ],
             "correct_option": "A",
             "marks": null,
-            "answer": "1. PUSH(10) -> Stack: [10]\n2. PUSH(20) -> Stack: [10, 20]\n3. POP() -> Stack: [10] (removes 20)\n4. PUSH(30) -> Stack: [10, 30]\n5. PUSH(40) -> Stack: [10, 30, 40]\n6. PUSH(50) -> Stack: [10, 30, 40, 50]\nThe final elements from bottom to top are 10, 30, 40, 50.",
-            "answer_source": "provided",
+            "answer": "Pop removes 20, leaving 10; then push 30, 40, 50 reaches size 4 without overflow: 10, 30, 40, 50.",
+            "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },
         {

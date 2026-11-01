@@ -13,8 +13,8 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "A C program must have `main()` and may define any number of other functions: one or many.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Introduction to C: Structure of the C program"
         },
         {
@@ -28,8 +28,8 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "`Real` is not a C data type; `float`, `int` and `double` are.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Numeric Data types: integer, floating point"
         },
         {
@@ -43,8 +43,8 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "`$` is not allowed in identifiers (letters, digits and `_` only).",
+            "answer_source": "generated",
             "chapter": "Unit 1: Variables and identifiers, Constants, Keywords"
         },
         {
@@ -58,8 +58,8 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "`=` is the assignment operator; `||`, `<=` and `!=` are logical or relational.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Arithmetic, Relational and logical Operators"
         },
         {
@@ -73,8 +73,8 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "The swap through `t` gives a=5, b=3, so it prints `5 3`.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Input and output statements. Variables and identifiers"
         },
         {
@@ -88,7 +88,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "By operator precedence, `/` and `*` are evaluated before `+`: sum = 2 + (4/2) + (6*2) = 2 + 2 + 12 = 16. (The printed key listed option d, 18, which is incorrect.)",
+            "answer": "`/` and `*` bind tighter than `+`: 2 + (4/2) + (6*2) = 2 + 2 + 12 = 16.",
             "answer_source": "generated",
             "chapter": "Unit 1: Operator Precedence"
         },
@@ -118,8 +118,8 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "Names cannot start with a digit; special characters are not allowed, keywords are reserved and length is limited.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Variables and identifiers, Constants, Keywords"
         },
         {
@@ -133,8 +133,8 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "`%` gives the remainder of integer division and is called the modulus operator.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Arithmetic, Relational and logical Operators"
         },
         {
@@ -148,8 +148,8 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "`9/2` is integer division (4); `9.0/2` is 4.5, which `%f` shows as 4.500000, so `4 4.5000` is the closest option.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Numeric Data types: integer, floating point"
         },
         {

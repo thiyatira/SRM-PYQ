@@ -14,7 +14,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "VxWorks, Windows CE, and RT Linux are designed for real-time operating environments with deterministic timing guarantees. Palm OS is a handheld PDA operating system designed for general-purpose mobile computing, not real-time tasks.",
+            "answer": "VxWorks, Windows CE and RT Linux are real-time OSes; Palm OS is a general-purpose handheld OS.",
             "answer_source": "generated",
             "chapter": "Unit 1"
         },
@@ -29,7 +29,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Mutual exclusion is a fundamental requirement in synchronization which ensures that if process $P_i$ is executing in its critical section, then no other process can be executing in its critical section at the same time.",
+            "answer": "Mutual exclusion: at most one process may be in its critical section at a time.",
             "answer_source": "generated",
             "chapter": "Unit 2"
         },
@@ -44,7 +44,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Executing `fork()` inside a loop of size $n$ doubles the total number of running processes at each iteration. Total processes after the loop becomes $2^n$. Since 1 process is the original parent process, the number of newly created child processes is $2^n - 1$.",
+            "answer": "Each fork() doubles the process count, giving $2^n$ in total; excluding the original gives $2^n - 1$ children.",
             "answer_source": "generated",
             "chapter": "Unit 2"
         },
@@ -59,7 +59,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Switching between user mode and kernel mode (mode switch, $t_2$) requires saving and restoring minimal register state within the same process context. Context switching between two distinct processes ($t_1$) requires saving complete process registers, switching memory translation tables (TLB flush), and process control blocks. Therefore, process context switch time $t_1$ is significantly larger than mode switch time $t_2$ ($t_1 > t_2$).",
+            "answer": "A process switch ($t_1$) saves/restores full process state and memory mappings; a mode switch ($t_2$) does not, so $t_1 > t_2$.",
             "answer_source": "generated",
             "chapter": "Unit 1"
         },
@@ -104,7 +104,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The four necessary Coffman conditions for deadlock are: Mutual Exclusion, Hold and Wait, No Preemption, and Circular Wait. \"Preemption\" is a mechanism to prevent deadlocks, whereas \"No preemption\" is the condition required for a deadlock to occur.",
+            "answer": "The four deadlock conditions are mutual exclusion, hold and wait, no preemption and circular wait. Preemption is the opposite of the third.",
             "answer_source": "generated",
             "chapter": "Unit 3"
         },
@@ -164,7 +164,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Segment number requires: $\\log_2(32) = 5$ bits.\n- Segment offset requires: $1\\text{ KB} = 1024\\text{ bytes} = 2^{10}$ bytes $\\implies 10$ bits.\n- Total logical address size = $5 + 10 = 15$ bits.",
+            "answer": "Segment number: $\\log_2 32 = 5$ bits; offset: 1 KB $= 2^{10}$ gives 10 bits. Total = 15 bits.",
             "answer_source": "generated",
             "chapter": "Unit 4"
         },
@@ -254,7 +254,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "The time taken for the desired sector of the disk to rotate under the read-write head is called rotational latency (or rotational delay). Among the given structural component choices, accessing the target sector requires this rotational delay.",
+            "answer": "Rotational latency is the delay for the desired sector to rotate under the head; of the given choices, only sector fits.",
             "answer_source": "generated",
             "chapter": "Unit 4"
         },
@@ -299,7 +299,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Initial head position = 20. Nearest request is 25 (distance 5). From 25 the nearest remaining request is 12 (distance 13, versus 21 for 46 and 22 for 3). From 12 the nearest is 3 (distance 9), and finally 46. Service order: 25, 12, 3, 46, which matches option D (printed as \"25, 13, 3, 46\" in the paper; 13 is a typo for 12).",
+            "answer": "SSTF always picks the nearest request: 20→25 (5), 25→12 (13), 12→3 (9), then 46. Order 25, 12, 3, 46 (printed '13' is a typo for 12).",
             "answer_source": "generated",
             "chapter": "Unit 4"
         },

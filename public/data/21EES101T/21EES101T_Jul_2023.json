@@ -13,7 +13,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "From the power formula P = VI, Current I = P / V = 60W / 120V = 0.5 A.",
+            "answer": "$I=P/V=60/120=0.5$ A.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -28,7 +28,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "In a balanced star configuration, the phase voltage Vph = VLine / √3 = 400 / 1.732 ≈ 230.94 V.",
+            "answer": "$V_{ph}=V_L/\\sqrt{3}=400/1.732=230.94$ V.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -43,7 +43,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "An ideal current source has infinite internal resistance, so to deactivate or 'neglect' it during equivalent resistance calculation, it must be open-circuited.",
+            "answer": "An ideal current source has infinite resistance, so it is open-circuited.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -58,7 +58,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "In a pure resistive AC circuit, voltage and current are perfectly in phase, making the phase angle 0°. Thus, Power Factor = cos(0) = 1.",
+            "answer": "In a resistive circuit the phase angle is 0, so $\\text{PF}=\\cos0=1$.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -73,7 +73,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "MOSFET stands for Metal-Oxide-Semiconductor Field-Effect Transistor, where the gate is electrically isolated from the channel by a thin layer of silicon dioxide.",
+            "answer": "A MOSFET's gate is insulated from the channel by a silicon dioxide layer.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -88,7 +88,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Inverting the output of an AND gate produces a Not-AND logic, universally referred to as a NAND gate.",
+            "answer": "AND followed by NOT is NAND.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -103,7 +103,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The central base region of an NPN transistor is formed from P-type semiconductor material, making 'holes' the majority charge carriers.",
+            "answer": "The base of an NPN transistor is P-type, so holes are the majority carriers.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -118,7 +118,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The typical forward threshold or knee voltage required to overcome the depletion region barrier in a standard silicon PN junction diode is approximately 0.7 V.",
+            "answer": "A silicon diode's knee voltage is about 0.7 V.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -133,7 +133,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "A Brushless DC (BLDC) motor eliminates physical brushes by having permanent magnets mounted directly on its rotor and the electromagnets on the stator.",
+            "answer": "A BLDC motor has permanent magnets on the rotor.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -148,7 +148,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "In power electronics, a chopper is a solid-state DC-to-DC converter that regulates a fixed DC input into a controlled, variable DC output.",
+            "answer": "A chopper converts fixed DC to variable DC.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -163,7 +163,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Fleming's Left-Hand Rule is classically utilized to determine the direction of the mechanical force on a current-carrying conductor in a magnetic field, perfectly describing motor action.",
+            "answer": "Fleming's left-hand rule gives the force direction in motors.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -178,7 +178,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "A stepper motor is inherently a digital electromechanical device that moves the rotor in precise incremental steps based on input pulses.",
+            "answer": "A stepper motor moves in incremental steps for each pulse.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -193,7 +193,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "PMMC (Permanent Magnet Moving Coil) instruments utilize an aluminum former for the coil. Movement through the magnetic field induces eddy currents in the former, creating excellent eddy current damping.",
+            "answer": "In a PMMC meter, eddy currents in the aluminium coil former provide damping.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -208,7 +208,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Moving Iron instruments operate based on magnetic attraction or repulsion, which functions regardless of current direction, making them suitable to measure both AC and DC quantities.",
+            "answer": "Moving iron meters work on magnetic force that does not depend on current direction, so they read AC and DC.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -223,7 +223,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Silicon is extensively used to fabricate solar cells due to its ideal bandgap for solar spectrum absorption and the maturity of silicon manufacturing processes.",
+            "answer": "Silicon is the most widely used solar cell material.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
@@ -238,7 +238,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Thermocouples measure temperature differences by relying on the Seebeck effect, which generates an electromotive force (EMF) at the junction of two dissimilar metals.",
+            "answer": "A thermocouple works on the Seebeck effect.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -253,7 +253,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Hydrogen is the primary energy carrier and most common fuel used in commercial fuel cells to generate electricity, with water as the only byproduct.",
+            "answer": "Hydrogen is the most common fuel cell fuel.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
@@ -268,7 +268,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Lithium-ion batteries offer an outstanding combination of high energy density, reduced weight, and long cycle life, making them the superior choice for Electric Vehicles (EVs).",
+            "answer": "Li-ion has high energy density, low weight and long life, so it is preferred in EVs.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
@@ -283,7 +283,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Earth wires must be appropriately sized to safely conduct maximum possible fault currents, which is directly proportional to the ampere capacity rating of the main service line.",
+            "answer": "The earth wire must carry the fault current, so its size follows the ampere capacity of the service wire.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
@@ -298,7 +298,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The central standard for commercial electrical AC power transmission and distribution in India is set universally at 50 Hz.",
+            "answer": "The Indian standard frequency is 50 Hz.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         }

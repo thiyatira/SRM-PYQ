@@ -28,7 +28,7 @@
             ],
             "correct_option": "D",
             "marks": 2,
-            "answer": "The original region is bounded by $y=0$, $y=x$, and $x=a$. This is a triangle. Changing the order means taking horizontal strips: $x$ varies from $y$ to $a$, and $y$ varies from $0$ to $a$. Hence, $\\int_0^a \\int_y^a dx dy$.",
+            "answer": "Region: $0\\le y\\le x\\le a$. With horizontal strips, $y$ runs $0$ to $a$ and $x$ runs $y$ to $a$.",
             "answer_source": "generated",
             "chapter": "Unit 1: Integral Calculus"
         },
@@ -73,7 +73,7 @@
             ],
             "correct_option": "A",
             "marks": 2,
-            "answer": "Inner integral: $\\int_0^{\\sin \\theta} r^4 dr = \\frac{\\sin^5 \\theta}{5}$. Outer integral: $\\frac{1}{5} \\int_0^{\\pi/2} \\sin^5 \\theta d\\theta$. Using Wallis' reduction formula: $\\frac{1}{5} \\times (\\frac{4}{5} \\times \\frac{2}{3} \\times 1) = \\frac{8}{75}$.",
+            "answer": "Inner: $\\sin^5\\theta/5$. Then $\\frac15\\int_0^{\\pi/2}\\sin^5\\theta\\,d\\theta=\\frac15\\cdot\\frac45\\cdot\\frac23=\\frac{8}{75}$ (Wallis).",
             "answer_source": "generated",
             "chapter": "Unit 1: Integral Calculus"
         },
@@ -148,7 +148,7 @@
             ],
             "correct_option": "B",
             "marks": 2,
-            "answer": "Position vector $\\vec{r} = x\\mathbf{i} + y\\mathbf{j} + z\\mathbf{k}$. Divergence $\\nabla \\cdot \\vec{r} = \\frac{\\partial x}{\\partial x} + \\frac{\\partial y}{\\partial y} + \\frac{\\partial z}{\\partial z} = 1 + 1 + 1 = 3$.",
+            "answer": "$\\nabla\\cdot\\vec r=\\partial_x x+\\partial_y y+\\partial_z z=1+1+1=3$.",
             "answer_source": "generated",
             "chapter": "Unit 2: Vector Calculus"
         },
@@ -253,7 +253,7 @@
             ],
             "correct_option": "D",
             "marks": 2,
-            "answer": "The principal branch of the complex logarithm, $\\log z$, is analytic on the complex plane excluding the branch point at the origin ($z=0$) and the branch cut (usually the negative real axis). Among the given options, (D) captures the lack of analyticity at the origin.",
+            "answer": "$\\log z$ is not defined at $z=0$ (and has a branch cut), so it is analytic everywhere except the origin.",
             "answer_source": "generated",
             "chapter": "Unit 4: Analytic Functions"
         },
@@ -268,7 +268,7 @@
             ],
             "correct_option": "D",
             "marks": 2,
-            "answer": "Let $|f(z)| = c$. If $c=0$, $f(z)=0$ (constant). If $c \\neq 0$, $|u+iv|^2 = u^2+v^2 = c^2$. Differentiating w.r.t $x$ and $y$ and applying Cauchy-Riemann equations leads to $u_x = u_y = v_x = v_y = 0$, meaning $f(z)$ must be a constant function.",
+            "answer": "If $|f|=c\\ne0$, then $u^2+v^2=c^2$; differentiating and using C-R gives $u_x=u_y=v_x=v_y=0$, so $f$ is constant.",
             "answer_source": "generated",
             "chapter": "Unit 4: Analytic Functions"
         },
@@ -313,7 +313,7 @@
             ],
             "correct_option": "B",
             "marks": 2,
-            "answer": "The function has a pole of order 2 at $z=1$, which lies inside $|z|=2$.\nUsing Cauchy's Integral Formula for derivatives: $\\oint_C \\frac{f(z)}{(z-a)^{n+1}} dz = \\frac{2\\pi i}{n!} f^{(n)}(a)$.\nHere $f(z) = z$, $a = 1$, and $n = 1$.\n$f'(z) = 1$.\nIntegral $= \\frac{2\\pi i}{1!} f'(1) = 2\\pi i (1) = 2\\pi i$.",
+            "answer": "Double pole at $z=1$ inside $C$. By the derivative formula, integral $=2\\pi i f'(1)$ with $f(z)=z$, so $2\\pi i$.",
             "answer_source": "generated",
             "chapter": "Unit 5: Complex Integration"
         },
@@ -373,7 +373,7 @@
             ],
             "correct_option": "B",
             "marks": 2,
-            "answer": "$f(z) = \\cot z = \\frac{\\cos z}{\\sin z}$. The poles occur where $\\sin z = 0$, i.e., $z = n\\pi$.\nThe residue at a simple pole $z=n\\pi$ is given by $\\frac{\\cos(n\\pi)}{\\frac{d}{dz}(\\sin z)|_{z=n\\pi}} = \\frac{\\cos(n\\pi)}{\\cos(n\\pi)} = 1$.\nSpecifically, at $z=0$, the residue is 1.",
+            "answer": "$\\cot z=\\cos z/\\sin z$ has a simple pole at $z=0$ with residue $\\cos 0/\\cos 0=1$.",
             "answer_source": "generated",
             "chapter": "Unit 5: Complex Integration"
         }

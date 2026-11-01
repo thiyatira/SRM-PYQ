@@ -193,8 +193,8 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "A filled diamond represents composition (a strong \"has-a\" relationship where the child's lifecycle depends on the parent). An empty diamond would mean aggregation.",
-            "answer_source": "General UML Knowledge",
+            "answer": "A filled diamond on the whole (Company) denotes composition: a strong has-a link where the Department cannot outlive the Company.",
+            "answer_source": "generated",
             "chapter": "Unit 1"
         },
         {
@@ -298,8 +298,8 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "seekg (seek get) repositions the read pointer of an input stream, e.g. seekg(-n, ios::end) positions n bytes back from the end of the file; seekp is its counterpart for the write pointer.",
-            "answer_source": "General C++ Knowledge",
+            "answer": "`seekg(-n, ios::end)` moves the get (read) pointer n bytes back from the end of the file; `seekp` does the same for the write pointer.",
+            "answer_source": "generated",
             "chapter": "Unit 1"
         },
         {

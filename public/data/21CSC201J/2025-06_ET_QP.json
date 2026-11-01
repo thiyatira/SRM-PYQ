@@ -14,7 +14,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "In C, when accessing members of a structure through a pointer, the arrow operator (`->`) is used. It is equivalent to dereferencing the pointer first and then using the dot operator: `(*ptr).member`.",
+            "answer": "Through a pointer, members are accessed with `ptr->member`, equivalent to `(*ptr).member`.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
@@ -29,7 +29,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The pointer `p` is assigned the memory address of `x`. The expression `*p` dereferences the pointer, returning the integer value stored at that address, which is `10`.",
+            "answer": "`*p` dereferences the pointer to `x`, so it prints 10.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
@@ -44,7 +44,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Matrix multiplication is generally not commutative ($AB \\neq BA$). However, it is associative ($A(BC) = (AB)C$) and distributive over addition ($A(B+C) = AB + AC$).",
+            "answer": "Matrix multiplication is not commutative, but it is associative and distributive over addition.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
@@ -59,7 +59,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The best-case scenario occurs when the target element is located at the first position (index 0) of the list/array, resulting in a constant time complexity of $O(1)$.",
+            "answer": "Best case: the target is the first element, so one comparison: $O(1)$.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
@@ -74,7 +74,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Inserting a node at the beginning of a singly linked list involves setting the `next` pointer of the newly created node to point to the current `head` node, and then updating the `head` pointer to point to this new node.",
+            "answer": "Create a node, point its `next` to the old head, then make the head point to the new node.",
             "answer_source": "generated",
             "chapter": "Unit 2: List Structure"
         },
@@ -89,7 +89,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "In a contiguous memory array-based implementation, inserting an element at index 0 requires shifting all existing $n$ elements one index to the right to make space, which takes $O(n)$ time.",
+            "answer": "Inserting at index 0 shifts all $n$ elements one place right, which is $O(n)$.",
             "answer_source": "generated",
             "chapter": "Unit 2: List Structure"
         },
@@ -104,7 +104,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "In a circular singly linked list, there are no `NULL` pointers; the `next` pointer of the last node points back to the `head` of the list.",
+            "answer": "No pointer is NULL; the last node's `next` points back to the head, which marks the end.",
             "answer_source": "generated",
             "chapter": "Unit 2: List Structure"
         },
@@ -119,7 +119,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The classic Josephus problem involves eliminating every $k$-th person (where $k$ is a fixed number of steps) in a circle until only one survivor remains.",
+            "answer": "Josephus eliminates every $k$-th person in the circle, i.e. after a fixed number of steps.",
             "answer_source": "generated",
             "chapter": "Unit 2: List Structure"
         },
@@ -134,7 +134,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Inserting a new element on top of an array-based stack involves checking for overflow, incrementing the `top` index variable, and assigning the value, which are all constant-time operations.",
+            "answer": "Push increments `top` and stores the value, a constant-time $O(1)$ operation.",
             "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },
@@ -149,7 +149,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "1. Evaluate parenthesized expressions first:\n   - `(A + B)` becomes `AB+`\n   - `(C + D)` becomes `CD+`\n2. Multiply the two terms:\n   - `(AB+) * (CD+)` becomes `AB+ CD+ *`",
+            "answer": "$(A+B) \\to AB+$, $(C+D) \\to CD+$, then multiply: $AB+CD+*$.",
             "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },
@@ -164,7 +164,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The minimum number of moves required to solve the Tower of Hanoi problem with $n$ disks is $2^n - 1$. For $n = 4$, the required moves are $2^4 - 1 = 16 - 1 = 15$.",
+            "answer": "Minimum moves for $n$ disks is $2^n - 1 = 2^4 - 1 = 15$.",
             "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },
@@ -179,7 +179,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "A circular queue of capacity `size` is full when the circular successor of the `rear` index matches the `front` index, meaning no more elements can be written without overwriting `front`.",
+            "answer": "The circular queue is full when the next position after `rear` is `front`: `(rear + 1) % size == front`.",
             "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },
@@ -194,7 +194,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "By convention, if the root node is at level $0$, the maximum number of nodes at level $L$ is $2^L$. (e.g., Level 0: $2^0=1$ node, Level 1: $2^1=2$ nodes, Level 2: $2^2=4$ nodes).",
+            "answer": "With the root at level 0, level $L$ holds at most $2^L$ nodes.",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
@@ -209,7 +209,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "In a complete binary tree, every level except possibly the last is completely filled, and all nodes in the last level are as far left as possible.",
+            "answer": "A complete binary tree has all levels full except possibly the last, which fills from the left.",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
@@ -224,7 +224,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "This represents the Left-to-Left (LL) imbalance scenario. A single right rotation around the unbalanced node balances the tree.",
+            "answer": "A new node in the left subtree of the left child is an LL imbalance, fixed by a single right rotation.",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
@@ -239,7 +239,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Due to Red-Black Tree properties (no consecutive red nodes, equal black height), the maximum height of a Red-Black tree containing $n$ internal nodes is bounded by $2 \\log_2(n+1)$.",
+            "answer": "Red-black properties (equal black heights, no two consecutive reds) bound the height by $2\\log_2(n+1)$.",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
@@ -254,7 +254,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Quadratic probing resolves collisions in a hash table and avoids the issue of \"primary clustering\" (which is prevalent in linear probing) by looking for vacant spots at quadratic intervals.",
+            "answer": "Quadratic probing steps by $i^2$, which avoids the primary clustering of linear probing.",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
@@ -269,7 +269,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "A Directed Acyclic Graph (DAG) may have more than one valid topological sort depending on the graph's structure and the specific paths of dependency.",
+            "answer": "A DAG can have several valid topological orders; the graph must be acyclic and directed.",
             "answer_source": "generated",
             "chapter": "Unit 5: Graph"
         },
@@ -284,7 +284,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Kruskal's algorithm uses the Disjoint Set (Union-Find) data structure to keep track of connected components and detect cycles in $O(\\log V)$ or $O(\\alpha(V))$ time.",
+            "answer": "Kruskal's uses Union-Find (disjoint sets) to detect cycles when adding edges.",
             "answer_source": "generated",
             "chapter": "Unit 5: Graph"
         },
@@ -299,7 +299,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "A min-priority queue (typically implemented as a binary min-heap) is used to efficiently select and extract the vertex with the minimum tentative distance.",
+            "answer": "Dijkstra extracts the unvisited vertex with the least distance using a min-priority queue (min-heap).",
             "answer_source": "generated",
             "chapter": "Unit 5: Graph"
         },

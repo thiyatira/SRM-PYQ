@@ -13,7 +13,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "A C variable name must start with an alphabet (A-Z, a-z) or an underscore (_), followed by zero or more alphabets, digits (0-9), or underscores. Special characters like '$' are not allowed in standard C variable names. Therefore, `int $main;` is not a valid C variable name because it contains the '$' character.",
+            "answer": "`$` is not allowed in identifiers (letters, digits and `_` only).",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages - Variables and identifiers, Keywords"
         },
@@ -28,7 +28,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Let's determine the typical size (in bytes) of each data type and then evaluate the expression:\n-   `float s`: Typically 4 bytes.\n-   `double a`: Typically 8 bytes.\n-   `char b`: Typically 1 byte.\n\nThe expression is `sizeof(s) + sizeof(a) * sizeof(b)`. According to operator precedence, multiplication (`*`) is performed before addition (`+`).\nSo, the expression evaluates as:\n`4 + 8 * 1`\n`4 + 8`\n`12`\n\nThe `printf(\"%d\", ...)` statement will correctly print the integer result of 12.",
+            "answer": "float 4 + double 8 * char 1: `*` goes first, so 4 + 8 = 12.",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages - Numeric Data types: integer, floating point Non-Numeric Data types: char and string - Size-of operator - Operator Precedence"
         },
@@ -43,7 +43,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "In C, a variable cannot be declared more than once within the same scope. The code attempts to declare `int value` twice in the `main` function:\n1.  `int value = 350;`\n2.  `int value = 892;`\nThis constitutes a redefinition of the variable `value`, which will lead to a compilation error. The compiler will report an error like \"redefinition of 'value'\".",
+            "answer": "Declaring `value` twice in the same scope is a redefinition error.",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages - Variables and identifiers, Scope, Binding"
         },
@@ -58,7 +58,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The expression `y == z` is a relational expression. It checks if the value of `y` is equal to the value of `z`. Since `y` is 5 and `z` is 5, the condition `y == z` is true.\nIn C, a true relational expression evaluates to the integer value 1, and a false expression evaluates to 0. Therefore, `y == z` results in 1, which is then assigned to the integer variable `x`. The `printf(\"%d\", x);` statement will print the value of `x`, which is 1.",
+            "answer": "`==` binds tighter than `=`: `y == z` is true (1), so `x` = 1.",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages - Relational and logical Operators - L value and R value in expression"
         },
@@ -73,7 +73,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Let's trace the execution of the code line by line:\n1.  `x = 10;`\n    *   `x` is 10.\n2.  `y = -x;`\n    *   `y` becomes -10. `x` remains 10.\n3.  `z = x++;`\n    *   This is a postfix increment. The current value of `x` (10) is assigned to `z`, and *then* `x` is incremented.\n    *   `z` becomes 10.\n    *   `x` becomes 11.\n4.  `k = ++x;`\n    *   This is a prefix increment. `x` is incremented *first*, and *then* its new value is assigned to `k`.\n    *   `x` (which was 11) becomes 12.\n    *   `k` becomes 12.\n\nAt the end of the `main` function, the values are: `x = 12`, `y = -10`, `z = 10`, `k = 12`.\n\nNow, let's evaluate the given options:\na) Value of y will be -10 and k will be 12. (Correct, as `y` is -10 and `k` is 12)\nb) Value of z will be 11 (Incorrect, `z` is 10)\nc) Value of k will be 10 and k will be 11 (Incorrect, `k` is 12)\nd) Value of k will be 11 (Incorrect, `k` is 12)\n\nTherefore, option 'a' is the correct statement.",
+            "answer": "`y = -10`; `z = x++` gives z=10, x=11; `k = ++x` gives x=12, k=12. So y=-10 and k=12.",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages - Increment and decrement operator - Expressions with pre / post increment operator"
         },
@@ -88,7 +88,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "In C, a string literal like `\"GeeksQuiz\"` is stored in memory, and its name (e.g., `\"GeeksQuiz\"`) acts as a pointer to its first character. When an integer is added to a character pointer (pointer arithmetic), the pointer is advanced by that many character positions.\n\nThe string \"GeeksQuiz\" consists of the characters: 'G', 'e', 'e', 'k', 's', 'Q', 'u', 'i', 'z', '\\0'.\nIf `\"GeeksQuiz\"` points to 'G' (at index 0), then `5 + \"GeeksQuiz\"` will point to the character at index 5. Counting from 0:\n-   G (index 0)\n-   e (index 1)\n-   e (index 2)\n-   k (index 3)\n-   s (index 4)\n-   Q (index 5)\n\nSo, `5 + \"GeeksQuiz\"` points to the character 'Q'. The `printf()` function, when used with a string format specifier (which is implicit here as it's passed a `char*`), will print the string starting from the memory location pointed to until it encounters a null terminator (`\\0`). Thus, it will print \"Quiz\".",
+            "answer": "`5 + \"GeeksQuiz\"` points 5 characters in, at `Q`, so it prints `Quiz`.",
             "answer_source": "generated",
             "chapter": "Unit 3: String Basics - String Functions: printf() - Operations on Strings - Pointer and address-of operators"
         },
@@ -103,7 +103,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "C is widely recognized as a **Middle-Level Language**. It possesses characteristics of both high-level languages (like structured programming features, portability across different hardware platforms, and abstraction from machine details) and low-level languages (such as direct memory manipulation using pointers, bitwise operations, and close interaction with hardware). This versatility makes C suitable for a wide range of applications, from operating systems to embedded systems and general-purpose software.",
+            "answer": "C mixes high-level features with low-level access (pointers, bit operations), so it is called a middle-level language.",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
         },
@@ -118,7 +118,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "In the C programming language, the operator used to test if two values are equal is `==` (double equals sign). The single equals sign (`=`) is the assignment operator, used to assign a value to a variable.",
+            "answer": "`==` tests equality; `=` is assignment, and the others belong to other languages.",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages - Relational and logical Operators - Assignment operator"
         },
@@ -133,7 +133,7 @@
             ],
             "correct_option": null,
             "marks": 1,
-            "answer": "`11 ^ 5` is a bitwise XOR: 1011 XOR 0101 = 1110, which is 14. The printed options (5, 6, 11, 13) do not include 14, so none of them is correct.",
+            "answer": "`^` is bitwise XOR: 1011 ^ 0101 = 1110 = 14, which is not among the printed options.",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages - Bitwise and Size-of operator"
         },
@@ -148,7 +148,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The `+=` operator in C is a compound assignment operator. It is a shorthand for expressing an operation where the result of an arithmetic operation is assigned back to the same variable. Specifically, `a += 4` is equivalent to `a = a + 4`. This means the current value of `a` is incremented by 4, and the new value is stored back into `a`.",
+            "answer": "`a += 4` is shorthand for `a = a + 4`.",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages - Assignment operator"
         },
@@ -179,7 +179,7 @@
             ],
             "correct_option": "A",
             "marks": 2,
-            "answer": "In standard C, there is no built-in `String` data type as a primitive type. Strings are typically represented as arrays of characters (e.g., `char greeting[] = \"Hello\";`) or as pointers to characters (e.g., `char *name = \"Alice\";`).\n\nLet's analyze the given options:\na) `String str;`: This declaration uses `String` as a data type. Since `String` is not a fundamental or standard library type in C (like `int`, `float`, `char`, or a custom `typedef`), this declaration is not supported by the C language.\nb) `char *str;`: This is a valid declaration for a pointer to a character, which is commonly used to handle strings in C.\nc) `float str = 3e2;`: This is a valid declaration. `3e2` is a floating-point literal in scientific notation, meaning `3 * 10^2 = 300.0`. This is correctly assigned to a `float` variable.\n\nTherefore, `a) String str;` is the declaration not supported by the C language.",
+            "answer": "C has no built-in `String` type, so `String str;` is unsupported; the other declarations are valid.",
             "answer_source": "generated",
             "chapter": "Unit 3: String Basics - String Declaration and Initialization - Non-Numeric Data types: char and string"
         },
@@ -194,7 +194,7 @@
             ],
             "correct_option": "C",
             "marks": 2,
-            "answer": "Let's trace the execution of the C program:\n1.  `int a = 5;` initializes integer `a` with the value 5.\n2.  `int b = 10;` initializes integer `b` with the value 10.\n3.  `int c;` declares an integer variable `c`.\n4.  `c = a + b;` calculates the sum of `a` and `b` (`5 + 10 = 15`) and assigns this result to `c`. So, `c` now holds 15.\n5.  `printf(\"%i\", c);` prints the integer value of `c` to the console. The `%i` format specifier is a valid way to print an integer (it's equivalent to `%d`).\n\nThus, the program will print `15` to the console.",
+            "answer": "`c = 5 + 10 = 15`; `%i` prints it like `%d`.",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages - Input and output statements. Variables and identifiers, Arithmetic, Relational and logical Operators"
         },

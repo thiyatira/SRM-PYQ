@@ -57,9 +57,9 @@
                 "01110000",
                 "00110101"
             ],
-            "correct_option": "C",
+            "correct_option": null,
             "marks": 1,
-            "answer": "None of the options is correct. $+16=00010000$; inverting gives 11101111, adding 1 gives $11110000$. (Option (C) 01110000 differs only in the sign bit and appears to be a misprint of 11110000.)",
+            "answer": "$+16=00010000$; invert and add 1 gives $11110000$. None of the options matches (C, 01110000, differs in the sign bit), so no valid answer is printed.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },

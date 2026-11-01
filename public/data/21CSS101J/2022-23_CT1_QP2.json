@@ -103,7 +103,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "With the usual left-to-right evaluation, `a++` gives 3 (a=4), `++a` gives 5, `a++` gives 5 (a=6), `++a` gives 7, so res = 3 + 5 + 5 + 7 = 20. (The expression modifies `a` several times without sequence points, so the result is compiler-dependent; GCC prints 20.)",
+            "answer": "`a++` gives 3, `++a` gives 5, `a++` gives 5, `++a` gives 7, so 3+5+5+7 = 20. The expression is undefined behaviour; GCC prints 20.",
             "answer_source": "generated",
             "chapter": "Unit 1: Increment and decrement operator, Expressions with pre / post increment operator"
         },
@@ -118,7 +118,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Variable names may contain letters, digits and underscores only and cannot start with a digit, so C is true. A is false (special characters are not allowed), B is false (keywords are reserved and cannot be used as variable names) and D is false (only a limited number of initial characters are significant, so length is not unlimited).",
+            "answer": "Names cannot start with a digit. A is false (special characters aren't allowed), B is false (keywords are reserved), D is false (length is limited).",
             "answer_source": "generated",
             "chapter": "Unit 1: Variables and identifiers, Keywords"
         },

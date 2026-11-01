@@ -14,7 +14,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "In a batch operating system, multiple users can share the system resources without direct interaction with the CPU, and batches of jobs from multiple users are processed sequentially to keep CPU utilization high.",
+            "answer": "A batch OS lets many users share the system by queuing their jobs and running them sequentially without interaction.",
             "answer_source": "generated",
             "chapter": "Unit 1"
         },
@@ -29,7 +29,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "An operating system is system software that acts as an intermediary/interface between the user/applications and the computer hardware, not an application software.",
+            "answer": "An OS is system software that interfaces applications with hardware, so it is not application software.",
             "answer_source": "generated",
             "chapter": "Unit 1"
         },
@@ -104,7 +104,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The correctness of a real-time operating system depends not only on the logical result of the computation but also on completing the task before its strict deadline.",
+            "answer": "A real-time OS must complete every task by its deadline; correct timing matters as much as the result.",
             "answer_source": "generated",
             "chapter": "Unit 3"
         },
@@ -194,7 +194,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "In the given hierarchy (TLB $\\rightarrow$ Main Memory $\\rightarrow$ Flash drives $\\rightarrow$ Secondary Memory / Magnetic Disk / Optical / Tapes), secondary/tertiary storage sits at the base with the highest capacity and slowest access speed.",
+            "answer": "Hierarchy order is TLB, main memory, flash, then secondary memory, which is the largest and slowest at the bottom.",
             "answer_source": "generated",
             "chapter": "Unit 4"
         },
@@ -224,7 +224,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Internal fragmentation occurs when fixed-sized memory blocks are allocated to a process that requests less space than the block size, leaving the unused portion inside the partition wasted.",
+            "answer": "Internal fragmentation: a fixed block larger than the request is allocated, wasting the leftover space inside it.",
             "answer_source": "generated",
             "chapter": "Unit 4"
         },
@@ -254,7 +254,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The PCI (Peripheral Component Interconnect) / PCIe bus connects high-speed devices (graphics cards, fast network adapters) to the CPU and memory subsystem.",
+            "answer": "PCI/PCIe is the high-bandwidth bus linking fast devices to the CPU and memory.",
             "answer_source": "generated",
             "chapter": "Unit 4"
         },
@@ -269,7 +269,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Once the DMA controller finishes transferring the entire block of data between memory and I/O device, it raises an interrupt to notify the CPU.",
+            "answer": "After finishing the transfer, the DMA controller raises an interrupt to notify the CPU.",
             "answer_source": "generated",
             "chapter": "Unit 1"
         },
@@ -284,7 +284,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "A file is an abstract data type defined by the operating system that encapsulates a collection of related information along with predefined operations (create, open, read, write, close).",
+            "answer": "A file is an abstract data type: it is defined by its operations (create, open, read, write, close), not its representation.",
             "answer_source": "generated",
             "chapter": "Unit 4"
         },
@@ -299,7 +299,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Low-level formatting (or physical formatting) fills the disk with a special data structure consisting of sectors, headers, and trailers that the disk controller can read and write.",
+            "answer": "Low-level (physical) formatting lays out sectors with headers and trailers so the controller can read and write them.",
             "answer_source": "generated",
             "chapter": "Unit 4"
         },

@@ -43,7 +43,7 @@
             ],
             "correct_option": "B",
             "marks": 2,
-            "answer": "Converting to polar: $x^2+y^2=r^2$ and $dx dy = r dr d\\theta$. The first quadrant limits are $r \\in [0, \\infty)$ and $\\theta \\in [0, \\pi/2]$.\nIntegral becomes $\\int_0^{\\pi/2} d\\theta \\int_0^\\infty e^{-r^2} r dr$.\nInner integral: substitute $u=r^2$, $du=2r dr$. $\\int_0^\\infty \\frac{1}{2} e^{-u} du = \\frac{1}{2}$.\nOuter integral: $\\frac{1}{2} \\cdot [\\theta]_0^{\\pi/2} = \\frac{1}{2} \\cdot \\frac{\\pi}{2} = \\frac{\\pi}{4}$.",
+            "answer": "In polar form ($dx\\,dy=r\\,dr\\,d\\theta$, first quadrant): $\\int_0^{\\pi/2}d\\theta\\int_0^\\infty re^{-r^2}dr=\\frac\\pi2\\cdot\\frac12=\\frac\\pi4$.",
             "answer_source": "generated",
             "chapter": "Unit 1: Integral Calculus"
         },
@@ -73,7 +73,7 @@
             ],
             "correct_option": "A",
             "marks": 2,
-            "answer": "The maximum directional derivative is $|\\nabla \\phi|$.\n$\\nabla \\phi = \\frac{\\partial \\phi}{\\partial x}\\mathbf{i} + \\frac{\\partial \\phi}{\\partial y}\\mathbf{j} + \\frac{\\partial \\phi}{\\partial z}\\mathbf{k} = yz^2\\mathbf{i} + xz^2\\mathbf{j} + 2xyz\\mathbf{k}$.\nAt $(1,0,3)$, $\\nabla \\phi = (0)(3^2)\\mathbf{i} + (1)(3^2)\\mathbf{j} + 2(1)(0)(3)\\mathbf{k} = 0\\mathbf{i} + 9\\mathbf{j} + 0\\mathbf{k}$.\nMagnitude = $\\sqrt{0^2 + 9^2 + 0^2} = 9$.",
+            "answer": "Maximum directional derivative $=|\\nabla\\phi|$. $\\nabla\\phi=(yz^2,xz^2,2xyz)=(0,9,0)$ at $(1,0,3)$, so $|\\nabla\\phi|=9$.",
             "answer_source": "generated",
             "chapter": "Unit 2: Vector Calculus"
         },
@@ -103,7 +103,7 @@
             ],
             "correct_option": "B",
             "marks": 2,
-            "answer": "A vector field is solenoidal if its divergence is zero. \n$\\nabla \\cdot \\vec{F} = \\frac{\\partial}{\\partial x}(x+z) + \\frac{\\partial}{\\partial y}(3x+ay) + \\frac{\\partial}{\\partial z}(x-5z) = 0$.\n$1 + a - 5 = 0 \\implies a - 4 = 0 \\implies a = 4$.",
+            "answer": "Solenoidal means $\\nabla\\cdot\\vec F=0$: $1+a-5=0\\Rightarrow a=4$.",
             "answer_source": "generated",
             "chapter": "Unit 2: Vector Calculus"
         },
@@ -118,7 +118,7 @@
             ],
             "correct_option": "D",
             "marks": 2,
-            "answer": "By Stokes' theorem, the line integral of $\\vec{F}$ around a closed curve $C$ equals the surface integral of its curl over a surface $S$ bounded by $C$: $\\oint_C \\vec{F} \\cdot d\\vec{r} = \\iint_S \\text{curl } \\vec{F} \\cdot \\hat{n}\\, ds$. The divergence theorem relates surface and volume integrals, so it does not apply here.",
+            "answer": "Stokes' theorem: $\\oint_C\\vec F\\cdot d\\vec r=\\iint_S\\text{curl}\\,\\vec F\\cdot\\hat n\\,dS$. The divergence theorem relates surface and volume integrals instead.",
             "answer_source": "generated",
             "chapter": "Unit 2: Vector Calculus"
         },
@@ -148,7 +148,7 @@
             ],
             "correct_option": "B",
             "marks": 2,
-            "answer": "The function $\\tan t$ possesses infinite, non-integrable singularities (at $t = \\pi/2, 3\\pi/2$, etc.) on the positive real axis, making it fail the piecewise continuity requirement for the existence of a Laplace transform.",
+            "answer": "$\\tan t$ has infinite discontinuities at $t=\\pi/2,3\\pi/2,\\dots$, so it is not piecewise continuous and has no Laplace transform.",
             "answer_source": "generated",
             "chapter": "Unit 3: Laplace Transform"
         },
@@ -193,7 +193,7 @@
             ],
             "correct_option": "B",
             "marks": 2,
-            "answer": "For $u+iv$ to be analytic, it is not enough for $u$ and $v$ to merely be harmonic; they must be harmonic conjugates, meaning they must specifically satisfy the Cauchy-Riemann equations. Any two random harmonic functions added as $u+iv$ need not be analytic.",
+            "answer": "Two arbitrary harmonic functions need not satisfy the C-R equations; $u+iv$ is analytic only if $v$ is a harmonic conjugate of $u$.",
             "answer_source": "generated",
             "chapter": "Unit 4: Analytic Functions"
         },
@@ -208,7 +208,7 @@
             ],
             "correct_option": "D",
             "marks": 2,
-            "answer": "Set $w=z$. $z = \\frac{1-iz}{z-i} \\implies z(z-i) = 1-iz \\implies z^2 - iz = 1 - iz \\implies z^2 = 1$.\nTherefore, $z = \\pm 1$.",
+            "answer": "Put $w=z$: $z^2-iz=1-iz\\Rightarrow z^2=1\\Rightarrow z=\\pm1$.",
             "answer_source": "generated",
             "chapter": "Unit 4: Analytic Functions"
         },
@@ -253,7 +253,7 @@
             ],
             "correct_option": "A",
             "marks": 2,
-            "answer": "The integrand $f(z) = \\frac{z}{z-3}$ has a simple pole at $z=3$. The contour $C$ is $|z|=1$. Because $|3| = 3 > 1$, the pole lies outside the contour. By Cauchy's Integral Theorem, the integral evaluates to 0.",
+            "answer": "The pole $z=3$ lies outside $|z|=1$, so the integrand is analytic inside $C$ and the integral is 0.",
             "answer_source": "generated",
             "chapter": "Unit 5: Complex Integration"
         },

@@ -14,7 +14,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "In complexity theory, we analyze algorithmic performance using Best, Worst, and Average cases. 'Base case' is a term used in recursion or mathematical induction, not as a standard complexity analysis classification.",
+            "answer": "Best, worst and average are standard cases of analysis; 'base case' belongs to recursion/induction.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
@@ -29,7 +29,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The loop variable `i` starts at 1 and increments by 1 in each iteration, continuing as long as `i` is less than or equal to 50. This results in exactly 50 iterations.",
+            "answer": "`i` runs from 1 to 50 inclusive, so the body executes 50 times.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
@@ -74,7 +74,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Linked lists allow dynamic memory allocation, allocating memory only when needed, which helps prevent wasted memory overhead that can occur with pre-allocated static arrays.",
+            "answer": "Linked lists allocate nodes on demand, so memory is not wasted as in fixed-size arrays.",
             "answer_source": "generated",
             "chapter": "Unit 2: List Structure"
         },
@@ -89,7 +89,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Implementing a doubly linked list is actually more complex than a singly linked list because we have to maintain both `next` and `prev` pointers for every operation.",
+            "answer": "A doubly linked list is harder to implement because every operation must maintain both `next` and `prev` pointers.",
             "answer_source": "generated",
             "chapter": "Unit 2: List Structure"
         },
@@ -104,7 +104,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Round-robin CPU scheduling commonly uses a circular list to loop through processes continuously.",
+            "answer": "Round-robin CPU scheduling cycles through processes continuously, which fits a circular list.",
             "answer_source": "generated",
             "chapter": "Unit 2: List Structure"
         },
@@ -119,7 +119,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The loop traverses the list until it reaches the last node (where `cur.getNext() == null`), and then appends the new node to the end of the list, updating the size.",
+            "answer": "The loop walks to the last node and the new node is attached there, so it appends at the end.",
             "answer_source": "generated",
             "chapter": "Unit 2: List Structure"
         },
@@ -134,7 +134,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "In an array-based stack implementation, a `top` value of `-1` indicates that there are no elements in the stack, so the function checks if the stack is empty.",
+            "answer": "`top == -1` means no elements are stored, so the function checks for an empty stack.",
             "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },
@@ -149,7 +149,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Convert step by step:\n1. $(A + B) \\rightarrow AB+$\n2. $(C * D - E) \\rightarrow CD*E-$\n3. $(A+B) * (C*D - E) \\rightarrow AB+CD*E-*$\n4. multiplying by $F$ gives $AB+CD*E-*F*$\n5. dividing by $G$ gives $AB+CD*E-*F*G/$\n\nThis matches option (C). Option (B) places both $*$ operators after $F$ and so does not correspond to $((A+B)*(C*D-E))*F$.",
+            "answer": "Postfix: $(A+B)\\to AB+$; $(C*D-E)\\to CD*E-$; multiply: $AB+CD*E-*$; then $F*$; then $G/$.",
             "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },
@@ -164,7 +164,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "A queue operates on a FIFO (First-In, First-Out) basis, where insertion (enqueue) occurs at the rear end and deletion (dequeue) occurs at the front end.",
+            "answer": "A queue inserts at the rear and deletes from the front (FIFO).",
             "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },
@@ -179,7 +179,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "(Double Ended Queue). A deque allows insertion and deletion of elements at both the front and rear ends, but not in the middle.",
+            "answer": "A deque (double-ended queue) allows insertion and deletion at both ends only.",
             "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },
@@ -194,7 +194,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Pre-order traversal follows the Root -> Left -> Right traversal path. Starting from root A, we visit B, then D, then D's left child H, then its right child I, then B's right child E. Then we traverse the right side starting at C, visiting F, G, and subsequent children J and K.",
+            "answer": "Preorder is Root, Left, Right: A, B, D, H, I, E, then C, F, G, J, K.",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
@@ -209,7 +209,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "In direct addressing (or a direct address table), each key corresponds directly to a unique slot in the array, avoiding collisions entirely but requiring a universe of keys that fits in memory.",
+            "answer": "Direct addressing gives each possible key its own array slot, so there are no collisions.",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
@@ -224,7 +224,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Reconstructing the BST from the pre-order sequence:\n- Root is $35$.\n- Left subtree contains $13, 7, 8, 26$ with $13$ as root, $7$ as left child of $13$, $8$ as right child of $7$, and $26$ as right child of $13$.\n- Right subtree contains $70, 40, 75$ with $70$ as root, $40$ as left child, and $75$ as right child.\nTracing post-order (Left, Right, Root) yields: $8, 7, 26, 13, 40, 75, 70, 35$.",
+            "answer": "Reconstruct the BST from the preorder: 35 (left 13 with 7 then right child 8, and 26; right 70 with 40, 75). Post-order: 8,7,26,13,40,75,70,35.",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
@@ -239,7 +239,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Hash tables primarily use an array (often called the hash table directory or bucket array) to store key-value pairs or pointers to them, accessing slots directly via hash codes.",
+            "answer": "A hash table stores entries in an array indexed by the hash code.",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
@@ -254,7 +254,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "For a graph with 4 vertices, the adjacency matrix size is $4 \\times 4 = 16$ elements. If the graph is interpreted as an undirected graph with 3 edges (e.g., missing one of the connections in the diagram), it has $3 \\times 2 = 6$ non-zero entries, leaving $16 - 6 = 10$ zeros. Alternatively, if it is a directed graph with 6 edges, it has $16 - 6 = 10$ zeros.",
+            "answer": "The figure is not available as text; assuming 6 non-zero entries of the $4\\times4=16$ matrix, 10 entries are zero.",
             "answer_source": "generated",
             "chapter": "Unit 5: Graph"
         },
@@ -269,7 +269,7 @@
             ],
             "correct_option": null,
             "marks": 1,
-            "answer": "The graph figure for this question is not available, so the answer cannot be verified. (A previously stored explanation was self-contradictory and has been removed.)",
+            "answer": "The graph figure is not available as text, so the answer cannot be verified.",
             "answer_source": "generated",
             "chapter": "Unit 5: Graph"
         },
@@ -284,7 +284,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "While the Traveling Salesperson Problem (TSP) is NP-hard, approximation algorithms (such as the twice-around-the-MST heuristic or Christofides' algorithm) utilize a Minimum Spanning Tree (MST) as a base to find a near-optimal tour.",
+            "answer": "A minimum spanning tree gives the base tour in the standard TSP approximations (twice-around-the-MST, Christofides).",
             "answer_source": "generated",
             "chapter": "Unit 5: Graph"
         },
@@ -299,7 +299,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Applying Kruskal's algorithm on the given graph:\n1. Sort the edges by weight:\n   - $(a, c) = 2$\n   - $(b, f) = 2$\n   - $(c, f) = 4$\n   - $(d, f) = 4$\n   - $(a, b) = 6$\n   - $(c, d) = 7$\n   - $(d, e) = 7$\n   - $(f, e) = 10$\n2. Select edges in ascending order that do not form a cycle:\n   - Choose $(a, c)$ (weight 2)\n   - Choose $(b, f)$ (weight 2)\n   - Choose $(c, f)$ (weight 4)\n   - Choose $(d, f)$ (weight 4)\n   - Choose $(d, e)$ (weight 7)\nTotal MST weight = $2 + 2 + 4 + 4 + 7 = 19$.",
+            "answer": "Kruskal picks the cheapest non-cycle edges: 2 + 2 + 4 + 4 + 7 = 19.",
             "answer_source": "generated",
             "chapter": "Unit 5: Graph"
         },

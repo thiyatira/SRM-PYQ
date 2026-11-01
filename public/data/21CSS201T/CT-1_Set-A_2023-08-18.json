@@ -14,8 +14,8 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "To convert decimal 245 to hexadecimal:\n$$245 / 16 = 15 \\text{ remainder } 5$$\nSince 15 is represented as 'F' in hexadecimal, the value is $F5_{16}$ (often written with prefix as 0xF5).",
-            "answer_source": "provided",
+            "answer": "$245 = 15\\times16 + 5$, and 15 is F, so $245_{10} = F5_{16}$.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
@@ -44,8 +44,8 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "If we perform a direct binary-to-Gray conversion on the bit representation `0110`:\n- $G_3 = B_3 = 0$\n- $G_2 = B_3 \\oplus B_2 = 0 \\oplus 1 = 1$\n- $G_1 = B_2 \\oplus B_1 = 1 \\oplus 1 = 0$\n- $G_0 = B_1 \\oplus B_0 = 1 \\oplus 0 = 1$\nThis yields `0101`.",
-            "answer_source": "provided",
+            "answer": "Taking 0110 as the binary input: $G_3=0$, $0\\oplus1=1$, $1\\oplus1=0$, $1\\oplus0=1$ gives 0101.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {

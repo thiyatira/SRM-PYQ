@@ -103,7 +103,7 @@
             ],
             "correct_option": "A",
             "marks": 2,
-            "answer": "$\\nabla \\phi = (y+z)\\mathbf{i} + (x+z)\\mathbf{j} + (x+y)\\mathbf{k}$.\nAt $(-1, 1, 1)$, $\\nabla \\phi = (1+1)\\mathbf{i} + (-1+1)\\mathbf{j} + (-1+1)\\mathbf{k} = 2\\mathbf{i}$.",
+            "answer": "$\\nabla\\phi=(y+z)\\mathbf i+(x+z)\\mathbf j+(x+y)\\mathbf k$; at $(-1,1,1)$ this is $2\\mathbf i+0\\mathbf j+0\\mathbf k=2\\mathbf i$.",
             "answer_source": "generated",
             "chapter": "Unit 2: Vector Calculus"
         },
@@ -192,7 +192,7 @@
             ],
             "correct_option": "A",
             "marks": 2,
-            "answer": "The necessary conditions for a function $f(z) = u(x,y) + iv(x,y)$ to be analytic are the Cauchy-Riemann equations: $\\frac{\\partial u}{\\partial x} = \\frac{\\partial v}{\\partial y}$ and $\\frac{\\partial u}{\\partial y} = -\\frac{\\partial v}{\\partial x}$.",
+            "answer": "Analytic requires the Cauchy-Riemann equations: $u_x=v_y$ and $u_y=-v_x$.",
             "answer_source": "generated",
             "chapter": "Unit 4: Analytic Functions"
         },
@@ -222,7 +222,7 @@
             ],
             "correct_option": "D",
             "marks": 2,
-            "answer": "Set $w = z$ to find invariant points.\n$z = \\frac{z-1}{z+1} \\implies z(z+1) = z-1 \\implies z^2 + z = z - 1 \\implies z^2 = -1$.\nSolving $z^2 = -1$ gives $z = i$ and $z = -i$.",
+            "answer": "Put $w=z$: $z^2+z=z-1\\Rightarrow z^2=-1\\Rightarrow z=\\pm i$.",
             "answer_source": "generated",
             "chapter": "Unit 4: Analytic Functions"
         },
@@ -281,7 +281,7 @@
             ],
             "correct_option": "C",
             "marks": 2,
-            "answer": "The integrand has a singularity at $z = -1$. The contour $C$ is a circle centered at the origin with radius $1/2$. Because $|-1| = 1 > 1/2$, the singularity lies outside the contour. By Cauchy's Integral Theorem, the integral evaluates to 0.",
+            "answer": "The only singularity $z=-1$ lies outside $|z|=1/2$, so the integrand is analytic inside $C$ and the integral is 0.",
             "answer_source": "generated",
             "chapter": "Unit 5: Complex Integration"
         },

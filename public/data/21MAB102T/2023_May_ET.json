@@ -118,7 +118,7 @@
             ],
             "correct_option": "A",
             "marks": 2,
-            "answer": "We use the vector identity: $\\nabla \\cdot (\\vec{u} \\times \\vec{v}) = \\vec{v} \\cdot (\\nabla \\times \\vec{u}) - \\vec{u} \\cdot (\\nabla \\times \\vec{v})$. Since $\\vec{u}$ and $\\vec{v}$ are irrotational, $\\nabla \\times \\vec{u} = \\vec{0}$ and $\\nabla \\times \\vec{v} = \\vec{0}$. Thus, the divergence of their cross product is 0, meaning $\\vec{u} \\times \\vec{v}$ is a solenoidal vector.",
+            "answer": "$\\nabla\\cdot(\\vec u\\times\\vec v)=\\vec v\\cdot(\\nabla\\times\\vec u)-\\vec u\\cdot(\\nabla\\times\\vec v)=0$ when both are irrotational, so the cross product is solenoidal.",
             "answer_source": "generated",
             "chapter": "Unit 2: Vector Calculus"
         },
@@ -163,7 +163,7 @@
             ],
             "correct_option": "B",
             "marks": 2,
-            "answer": "By the First Shifting Theorem, $L^{-1}[F(s-a)] = e^{at} f(t)$. We know $L^{-1}(\\frac{1}{s^2}) = t$. Here $F(s) = \\frac{1}{s^2}$ is shifted to $s-1$ (so $a=1$). Thus, the inverse is $e^{1t} \\cdot t = te^t$.",
+            "answer": "$L^{-1}(1/s^2)=t$, and the shift $s\\to s-1$ multiplies by $e^{t}$, giving $te^{t}$.",
             "answer_source": "generated",
             "chapter": "Unit 3: Laplace Transform"
         },
@@ -178,7 +178,7 @@
             ],
             "correct_option": "A",
             "marks": 2,
-            "answer": "The Final Value Theorem states $\\lim_{t \\to \\infty} f(t) = \\lim_{s \\to 0} sF(s)$. Evaluating directly in the time domain: $\\lim_{t \\to \\infty} [1 + e^{-t}(\\sin t + \\cos t)] = 1 + 0 \\times (\\text{bounded function}) = 1$.",
+            "answer": "As $t\\to\\infty$, $e^{-t}(\\sin t+\\cos t)\\to0$, so $f(t)\\to1$.",
             "answer_source": "generated",
             "chapter": "Unit 3: Laplace Transform"
         },
@@ -253,7 +253,7 @@
             ],
             "correct_option": "A",
             "marks": 2,
-            "answer": "The integrand $f(z) = \\frac{z}{z-2}$ has a simple pole at $z=2$. The contour $C$ is a circle centered at the origin with radius 1. Since $|2| = 2 > 1$, the pole lies strictly outside the contour. Thus, the function is analytic inside $C$, and by Cauchy's Integral Theorem, the integral is 0.",
+            "answer": "The pole $z=2$ lies outside $|z|=1$, so $f$ is analytic inside $C$ and the integral is 0 by Cauchy's theorem.",
             "answer_source": "generated",
             "chapter": "Unit 5: Complex Integration"
         },
@@ -268,7 +268,7 @@
             ],
             "correct_option": "C",
             "marks": 2,
-            "answer": "An annulus is the region between two concentric circles. If $R_2 < R_1$, the region is bounded by $R_2 < |z-a| < R_1$. Geometrically, this means the region is inside the larger circle $C_1$ and outside the smaller circle $C_2$.",
+            "answer": "An annulus lies between the circles: $R_2<|z-a|<R_1$, i.e. inside $C_1$ and outside $C_2$.",
             "answer_source": "generated",
             "chapter": "Unit 5: Complex Integration"
         },

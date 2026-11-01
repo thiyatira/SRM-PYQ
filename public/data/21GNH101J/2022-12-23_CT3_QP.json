@@ -13,7 +13,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "In the scientific method, the process typically involves forming a hypothesis (an educated guess or proposed explanation), designing an experiment to test it, conducting the experiment, collecting data, analyzing the results, and then drawing conclusions to either support or refute the hypothesis. This cyclical process is fundamental to scientific inquiry. Engineering design, while also systematic, focuses more on creating solutions to problems, often starting with defining requirements and moving through conceptual design, detailed design, implementation, and testing, rather than primarily testing a hypothesis about natural phenomena.",
+            "answer": "The scientific method forms and tests a hypothesis; engineering design starts from a need and builds a solution.",
             "answer_source": "generated",
             "chapter": "Unit 3:"
         },
@@ -28,7 +28,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "ADDIE is a widely used instructional design model that provides a framework for building effective training and performance support tools. The acronym stands for:\n*   **A**nalysis: Defining the problem, target audience, and learning objectives.\n*   **D**esign: Outlining learning objectives, content, activities, and assessment methods.\n*   **D**evelopment: Creating the actual learning materials and activities.\n*   **I**mplementation: Delivering the instruction to the target audience.\n*   **E**valuation: Assessing the effectiveness of the instruction and making improvements.",
+            "answer": "ADDIE = Analysis, Design, Development, Implementation, Evaluation (an instructional design model).",
             "answer_source": "generated",
             "chapter": "Unit 4:"
         },
@@ -43,7 +43,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "CDIO is an innovative educational framework for producing the next generation of engineers. It stands for:\n*   **C**onceive: Defining the problem, understanding customer needs, and developing initial concepts.\n*   **D**esign: Translating the concepts into detailed designs, including system architecture, components, and processes.\n*   **I**mplement: Building or fabricating the product, process, or system.\n*   **O**perate: Using the implemented system in its intended environment, including maintenance and eventual retirement.",
+            "answer": "CDIO = Conceive, Design, Implement, Operate.",
             "answer_source": "generated",
             "chapter": "Unit 4:"
         },
@@ -58,7 +58,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "The Conceive phase in the CDIO framework (and similar design processes) focuses on identifying the problem, understanding context, and generating initial ideas. Activities like defining customer needs, considering enterprise strategy and regulations, and developing a business plan are all part of forming the initial concept and understanding the project's feasibility and scope. Design and drawings, however, are typically the output of the subsequent 'Design' phase, where detailed specifications and blueprints are created based on the concepts developed during the Conceive phase.",
+            "answer": "Design and drawings belong to the Design phase; Conceive covers customer needs, strategy/regulations and business plan.",
             "answer_source": "generated",
             "chapter": "Unit 4:"
         },
@@ -73,7 +73,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "In the ADDIE model:\n*   **Analysis:** Problem identification and goal setting.\n*   **Design:** Planning the solution's structure and specifications.\n*   **Development:** Creating the actual materials, tools, or systems. This is where prototypes are built, content is written, and systems are coded.\n*   **Implementation:** Deploying or launching the solution.\n*   **Evaluation:** Assessing the solution's effectiveness.\n\nTherefore, a prototype, being a preliminary version of the final product, is created during the Development phase.",
+            "answer": "Prototypes and materials are built in the Development phase, after Design plans them.",
             "answer_source": "generated",
             "chapter": "Unit 4:"
         },
@@ -88,7 +88,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "While 'Test and Evaluate' is a critical late stage where the design is refined and validated, the ultimate final step in many formal engineering design processes is the communication of the design, its performance, and findings to stakeholders. 'Prototype' is part of development, and 'Solution' is the outcome, not a stage. After a solution has been tested and evaluated, the results, recommendations, and finalized design must be effectively communicated to others (clients, manufacturing, etc.) to complete the design cycle for that iteration.",
+            "answer": "After testing and evaluating, results are communicated to stakeholders, which completes the process. Prototype and solution are not stages that end it.",
             "answer_source": "generated",
             "chapter": "Unit 4:"
         },
@@ -103,7 +103,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Axiology is the philosophical study of value. It investigates concepts such as goodness, rightness, beauty, and virtue. In the context of engineering, axiology often deals with the ethical dimensions, values, and societal impacts of engineering work. This includes topics like professional ethics, social responsibility, and the moral implications of technology, which are directly related to the field of ethics.",
+            "answer": "Axiology is the study of value, which covers ethics.",
             "answer_source": "generated",
             "chapter": "Unit 5:"
         },
@@ -118,7 +118,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The 3Es of sustainability used in this course are Environmental, Economic and Ethical: minimizing environmental impact, ensuring economic viability and upholding ethical standards for societal well-being.",
+            "answer": "The 3Es of sustainability are Environmental, Economic and Ethical.",
             "answer_source": "generated",
             "chapter": "Unit 5:"
         },
@@ -133,7 +133,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Regardless of the specific engineering design model (e.g., iterative, waterfall), the foundational first step is always to clearly understand and define the problem that needs to be solved. Without a well-defined problem, engineers cannot effectively set objectives, gather requirements, or embark on designing a suitable solution. The other options are later stages or outcomes of the process.",
+            "answer": "Every design process starts by defining the problem; the other options are later stages or outcomes.",
             "answer_source": "generated",
             "chapter": "Unit 4:"
         },
@@ -148,7 +148,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Operational factors in system design refer to characteristics that influence how a system functions and behaves once it is deployed and in use. These include:\n*   **Integrity and Consistency:** Ensuring data and processes remain correct and reliable.\n*   **Performance and Scalability:** How well the system performs under load and how easily it can be expanded.\n*   **Security:** Protecting the system from unauthorized access or malicious attacks.\n\nA **product prototype**, however, is a preliminary version of a product created during the development or design phase to test concepts or functionalities. It is a tool or output of the design process, not an inherent characteristic of the system's operation in its final environment.",
+            "answer": "Integrity, performance/scalability and security are operational qualities; a prototype is a design-phase output.",
             "answer_source": "generated",
             "chapter": "Unit 4:"
         },

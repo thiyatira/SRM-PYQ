@@ -73,7 +73,7 @@
             ],
             "correct_option": "D",
             "marks": 2,
-            "answer": "The maximum directional derivative is the magnitude of the gradient at that point. \n$\\nabla \\phi = 2x\\mathbf{i} + 2y\\mathbf{j} + 2z\\mathbf{k}$. \nAt $(1,1,1)$, $\\nabla \\phi = 2\\mathbf{i} + 2\\mathbf{j} + 2\\mathbf{k}$. \nMagnitude $|\\nabla \\phi| = \\sqrt{2^2 + 2^2 + 2^2} = \\sqrt{12} = 2\\sqrt{3}$.",
+            "answer": "Maximum directional derivative $=|\\nabla\\phi|$. $\\nabla\\phi=(2,2,2)$ at $(1,1,1)$, so $|\\nabla\\phi|=\\sqrt{12}=2\\sqrt3$.",
             "answer_source": "generated",
             "chapter": "Unit 2: Vector Calculus"
         },
@@ -88,7 +88,7 @@
             ],
             "correct_option": "B",
             "marks": 2,
-            "answer": "The angle between two surfaces is defined as the angle between their normal vectors. The normal vectors are given by their gradients $\\nabla \\phi_1$ and $\\nabla \\phi_2$. Using the dot product formula, $\\cos \\theta = \\frac{\\nabla \\phi_1 \\cdot \\nabla \\phi_2}{|\\nabla \\phi_1| |\\nabla \\phi_2|}$.",
+            "answer": "The angle between surfaces is the angle between their normals $\\nabla\\phi_1,\\nabla\\phi_2$, so $\\cos\\theta=\\frac{\\nabla\\phi_1\\cdot\\nabla\\phi_2}{|\\nabla\\phi_1||\\nabla\\phi_2|}$ (dot product).",
             "answer_source": "generated",
             "chapter": "Unit 2: Vector Calculus"
         },
@@ -118,7 +118,7 @@
             ],
             "correct_option": "C",
             "marks": 2,
-            "answer": "Work done $W = \\int_C \\vec{F} \\cdot d\\vec{r} = \\int_C (x^2-y^2+x)dx - (2xy+y)dy$. \nGiven $y=x$, then $dy=dx$. Substituting $y$ with $x$:\n$W = \\int_0^1 (x^2-x^2+x)dx - (2x^2+x)dx = \\int_0^1 (x - 2x^2 - x) dx = \\int_0^1 -2x^2 dx$.\n$W = -2 [\\frac{x^3}{3}]_0^1 = -2/3$.",
+            "answer": "On $y=x$, $dy=dx$: $W=\\int_0^1[x-(2x^2+x)]dx=\\int_0^1-2x^2dx=-\\frac23$.",
             "answer_source": "generated",
             "chapter": "Unit 2: Vector Calculus"
         },
@@ -133,7 +133,7 @@
             ],
             "correct_option": "C",
             "marks": 2,
-            "answer": "This is the Change of Scale property. By definition, $L[f(at)] = \\int_0^\\infty e^{-st} f(at) dt$. Let $u = at$, then $du = a dt$ and $t = u/a$. The integral becomes $\\int_0^\\infty e^{-s(u/a)} f(u) \\frac{du}{a} = \\frac{1}{a} \\int_0^\\infty e^{-(s/a)u} f(u) du = \\frac{1}{a} F\\left(\\frac{s}{a}\\right)$.",
+            "answer": "Substituting $u=at$ in $\\int_0^\\infty e^{-st}f(at)\\,dt$ gives $\\frac1aF\\left(\\frac sa\\right)$ (change of scale).",
             "answer_source": "generated",
             "chapter": "Unit 3: Laplace Transform"
         },
@@ -148,7 +148,7 @@
             ],
             "correct_option": "C",
             "marks": 2,
-            "answer": "The Laplace transform of $t$ is $L(t) = \\frac{1}{s^2}$. Applying the First Shifting Theorem for the $e^{-t}$ factor ($a=-1$), we shift $s$ to $s - (-1) = s+1$. Therefore, $L[t e^{-t}] = \\frac{1}{(s+1)^2}$.",
+            "answer": "$L(t)=\\frac1{s^2}$; the factor $e^{-t}$ shifts $s\\to s+1$, giving $\\frac1{(s+1)^2}$.",
             "answer_source": "generated",
             "chapter": "Unit 3: Laplace Transform"
         },
@@ -163,7 +163,7 @@
             ],
             "correct_option": "B",
             "marks": 2,
-            "answer": "The inverse Laplace transform formula is $L^{-1}\\left[\\frac{a}{s^2+a^2}\\right] = \\sin at$. Here, $a^2 = 25 \\implies a = 5$. We can rewrite the expression as $\\frac{1}{5} \\frac{5}{s^2+5^2}$. Its inverse transform is $\\frac{1}{5} \\sin 5t$.",
+            "answer": "$\\frac1{s^2+25}=\\frac15\\cdot\\frac5{s^2+5^2}$, whose inverse is $\\frac15\\sin5t$.",
             "answer_source": "generated",
             "chapter": "Unit 3: Laplace Transform"
         },
@@ -208,7 +208,7 @@
             ],
             "correct_option": "A",
             "marks": 2,
-            "answer": "A conformal mapping preserves both the magnitude and the sense (direction) of angles. A mapping that preserves the magnitude of the angle but reverses the sense (direction) is called an isogonal mapping.",
+            "answer": "Angle-magnitude preserved but sense reversed is isogonal; a conformal map preserves both magnitude and sense.",
             "answer_source": "generated",
             "chapter": "Unit 4: Analytic Functions"
         },
@@ -223,7 +223,7 @@
             ],
             "correct_option": "D",
             "marks": 2,
-            "answer": "Set $w = z$. $z = \\frac{2z+6}{z+7} \\implies z(z+7) = 2z+6 \\implies z^2 + 7z = 2z + 6 \\implies z^2 + 5z - 6 = 0$.\nFactoring the quadratic equation: $(z+6)(z-1) = 0$. Thus, $z = -6$ and $z = 1$.",
+            "answer": "Put $w=z$: $z^2+5z-6=0\\Rightarrow(z+6)(z-1)=0\\Rightarrow z=-6,1$.",
             "answer_source": "generated",
             "chapter": "Unit 4: Analytic Functions"
         },
@@ -268,7 +268,7 @@
             ],
             "correct_option": "C",
             "marks": 2,
-            "answer": "The singularity of the integrand is a simple pole at $z=3$. The curve $C$ is a circle of radius 2 centered at the origin. Since $|3| = 3 > 2$, the pole is strictly outside the contour. Therefore, by Cauchy's Theorem, the integral is 0.",
+            "answer": "The pole $z=3$ lies outside $|z|=2$, so the integrand is analytic inside $C$ and the integral is 0.",
             "answer_source": "generated",
             "chapter": "Unit 5: Complex Integration"
         },
@@ -283,7 +283,7 @@
             ],
             "correct_option": "A",
             "marks": 2,
-            "answer": "Expanding $\\sin z$ as a Taylor series gives $\\frac{1}{z}(z - \\frac{z^3}{3!} + \\dots) = 1 - \\frac{z^2}{3!} + \\dots$. As there are no negative powers of $z$ in the principal part of the Laurent series, $z=0$ is a removable singularity.",
+            "answer": "$\\frac{\\sin z}{z}=1-\\frac{z^2}{3!}+\\dots$ has no negative powers, so $z=0$ is a removable singularity.",
             "answer_source": "generated",
             "chapter": "Unit 5: Complex Integration"
         },

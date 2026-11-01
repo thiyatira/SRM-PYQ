@@ -59,8 +59,8 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Converting 542 to binary by successive division by 2:\n- $542 / 2 = 271$, remainder 0\n- $271 / 2 = 135$, remainder 1\n- $135 / 2 = 67$, remainder 1\n- $67 / 2 = 33$, remainder 1\n- $33 / 2 = 16$, remainder 1\n- $16 / 2 = 8$, remainder 0\n- $8 / 2 = 4$, remainder 0\n- $4 / 2 = 2$, remainder 0\n- $2 / 2 = 1$, remainder 0\n- $1 / 2 = 0$, remainder 1\nReading remainder from bottom to top gives $1000011110_2$.",
-            "answer_source": "provided",
+            "answer": "$542 = 512+16+8+4+2$, so $542_{10} = 1000011110_2$.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
@@ -74,8 +74,8 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Grouping the binary number from right to left in groups of 4:\n- $0101_2 = 5_{16}$\n- $1011_2 = B_{16}$ (which is 11 in decimal)\nCombining them gives $5B_{16}$.",
-            "answer_source": "provided",
+            "answer": "Group in fours from the right: 0101 1011 = 5B.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
@@ -134,7 +134,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "In BCD each decimal digit is encoded as a separate 4-bit nibble: 8 = 1000 and 9 = 1001, so 89 is 1000 1001 (option A). The printed answer key marked option B, which is the BCD of 99, so the key appears to be wrong.",
+            "answer": "BCD codes each digit separately: 8 = 1000, 9 = 1001, so 89 = 1000 1001. (Option B is the BCD of 99.)",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },

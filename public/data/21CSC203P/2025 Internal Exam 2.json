@@ -14,7 +14,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "A new thread inherits the priority of its creating thread; the main thread has `Thread.NORM_PRIORITY`, which is 5 (`MIN_PRIORITY` = 1, `MAX_PRIORITY` = 10).",
+            "answer": "A new thread inherits its creator's priority; main runs at `NORM_PRIORITY` = 5 (min 1, max 10).",
             "answer_source": "generated",
             "chapter": "Unit 3: Advanced Java Programming Paradigms"
         },
@@ -29,7 +29,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "A thread is created (New), `start()` makes it Runnable, the scheduler picks it (Running), it may go to Waiting/Blocked and finally ends (Terminated). A waiting thread must become Runnable again before it can run, but of the given options (A) is the intended standard sequence.",
+            "answer": "A thread goes New, then `start()` makes it Runnable, then Running, then Waiting if it blocks, and finally Terminated.",
             "answer_source": "generated",
             "chapter": "Unit 3: Advanced Java Programming Paradigms"
         },
@@ -44,7 +44,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "`ExecutorService.shutdown()` stops accepting new tasks and lets already submitted tasks finish, then the pool threads terminate. (`shutdownNow()` attempts an immediate stop; `stop()`, `terminate()`, `exit()` are not ExecutorService methods.)",
+            "answer": "`shutdown()` stops accepting new tasks and lets submitted ones finish; `stop()`, `terminate()` and `exit()` are not ExecutorService methods.",
             "answer_source": "generated",
             "chapter": "Unit 3: Advanced Java Programming Paradigms"
         },
@@ -59,7 +59,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "`FlowLayout` places components one after another in a row (left to right), wrapping to a new row when the container is full. BorderLayout uses 5 regions, GridLayout a fixed grid and CardLayout stacks components like cards. (Among the given options FlowLayout is the intended answer; strictly, BoxLayout is the manager for a single row/column.)",
+            "answer": "`FlowLayout` lays components out in a row, wrapping when full. BorderLayout, GridLayout and CardLayout use regions, grids and stacked cards.",
             "answer_source": "generated",
             "chapter": "Unit 3: Advanced Java Programming Paradigms"
         },
@@ -74,7 +74,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "`filter` keeps the elements for which the lambda returns True, i.e. the even numbers 2 and 4, so the output is `[2, 4]`.",
+            "answer": "`filter` keeps elements for which the lambda is True, i.e. the even numbers 2 and 4.",
             "answer_source": "generated",
             "chapter": "Unit 4: Pythonic Programming Paradigm"
         },
@@ -89,7 +89,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The `multiprocessing` module creates separate processes (each with its own interpreter and memory), bypassing the GIL. `threading` provides threads, `asyncio` provides asynchronous I/O and `socket` is for networking.",
+            "answer": "`multiprocessing` creates separate processes, each with its own interpreter, bypassing the GIL; `threading` only gives threads.",
             "answer_source": "generated",
             "chapter": "Unit 4: Pythonic Programming Paradigm"
         },
@@ -104,7 +104,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Shared-memory and distributed-memory models are the two architectures/models of parallel programming (processors share one address space vs. each has private memory and communicates by message passing).",
+            "answer": "Shared-memory and distributed-memory are the two models of parallel programming.",
             "answer_source": "generated",
             "chapter": "Unit 4: Pythonic Programming Paradigm"
         },
@@ -119,7 +119,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The syntax is `map(function, iterable)`. Only (B) has a function taking one argument followed by an iterable (it yields 2, 4, 6). (A) passes an extra argument, (C) has the arguments reversed and (D) uses a lambda with no parameter and an undefined `x`.",
+            "answer": "The syntax is `map(function, iterable)`, so only `map(lambda x: x*2, [1,2,3])` is valid, giving 2, 4, 6.",
             "answer_source": "generated",
             "chapter": "Unit 4: Pythonic Programming Paradigm"
         },
@@ -134,7 +134,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "SymPy's `expr.subs(x, value)` substitutes a value (or expression) for a symbol, e.g. `(x**2 + 3*x).subs(x, 2)` gives 10.",
+            "answer": "SymPy's `expr.subs(x, value)` substitutes a value for a symbol, e.g. `(x**2 + 3*x).subs(x, 2)` gives 10.",
             "answer_source": "generated",
             "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
         },
@@ -149,7 +149,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "In Tkinter a Button takes the callback through its `command=` option, e.g. `Button(root, text='OK', command=func)`. `bind()` is for general event binding (such as `<Button-1>`); `onClick` and `trigger` do not exist in Tkinter.",
+            "answer": "A Tkinter Button takes its callback via `command=`, e.g. `Button(root, command=func)`. `bind()` is for generic events; `onClick` and `trigger` don't exist.",
             "answer_source": "generated",
             "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
         },
@@ -164,7 +164,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "`sympy.simplify(x**2 - 2*x + 1)` returns `x**2 - 2*x + 1` (verified with SymPy): simplify does not factor because the factored form is not shorter; `factor()` would give `(x - 1)**2`.",
+            "answer": "`simplify` leaves `x**2 - 2*x + 1` unchanged because the factored form is not simpler; `factor()` would return `(x - 1)**2`.",
             "answer_source": "generated",
             "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
         },
@@ -179,7 +179,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "A finite automaton is defined as a 5-tuple $(Q, \\Sigma, \\delta, q_0, F)$: set of states, input alphabet, transition function, start state and set of final (accepting) states.",
+            "answer": "A finite automaton is a 5-tuple $(Q, \\Sigma, \\delta, q_0, F)$: states, alphabet, transition function, start state, final states.",
             "answer_source": "generated",
             "chapter": "Unit 5: Formal and Symbolic Programming Paradigm"
         },

@@ -14,8 +14,8 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "$64 \\text{ KB} = 64 \\times 1024 \\text{ bytes} = 2^6 \\times 2^{10} \\text{ bytes} = 2^{16} \\text{ bytes}$. Therefore, 16 address lines are required to address $2^{16}$ memory locations.",
-            "answer_source": "provided",
+            "answer": "$64\\text{ KB} = 2^6\\times2^{10} = 2^{16}$ locations, so 16 address lines.",
+            "answer_source": "generated",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
@@ -104,8 +104,8 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Booth's recoding: digit $i$ = (bit $i-1$) - (bit $i$), with an extra 0 appended on the right of 11010.\n- Digit 0: $0 - 0 = 0$\n- Digit 1: $0 - 1 = -1$\n- Digit 2: $1 - 0 = +1$\n- Digit 3: $0 - 1 = -1$\n- Digit 4: $1 - 1 = 0$\nRecoded multiplier (MSB first) is `0 -1 +1 -1 0`.",
-            "answer_source": "provided",
+            "answer": "Digit $i$ = bit$_{i-1}$ - bit$_i$ with a 0 appended on the right: 110100 gives 0, -1, +1, -1, 0 (MSB first).",
+            "answer_source": "generated",
             "chapter": "Unit 3: Design of ALU"
         },
         {

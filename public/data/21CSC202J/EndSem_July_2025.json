@@ -14,7 +14,7 @@
       ],
       "correct_option": "C",
       "marks": 1,
-      "answer": "CPU registers reside directly inside the processor core and operate at the same speed as the CPU clock, making them the fastest storage location in the memory hierarchy.",
+      "answer": "CPU registers are inside the processor and run at CPU speed, making them the fastest level.",
       "answer_source": "generated",
       "chapter": "Unit 1: Computer-System Organization"
     },
@@ -44,7 +44,7 @@
       ],
       "correct_option": "D",
       "marks": 1,
-      "answer": "File system manipulation (creating, reading, writing, deleting files) is an OS service designed directly to assist users and applications, whereas resource allocation, logging, and protection serve system maintenance and administrative functions.",
+      "answer": "File system manipulation (create, read, write, delete files) is a service for users; the others are system-level functions.",
       "answer_source": "generated",
       "chapter": "Unit 1: Operating-System Services"
     },
@@ -104,7 +104,7 @@
       ],
       "correct_option": "C",
       "marks": 1,
-      "answer": "The short-term scheduler (CPU scheduler) runs extremely frequently (often every few milliseconds) to select from ready memory processes, so it must execute very quickly.",
+      "answer": "The short-term scheduler runs every few milliseconds to pick the next process, so it must be the fastest.",
       "answer_source": "generated",
       "chapter": "Unit 2: Process Scheduling"
     },
@@ -134,7 +134,7 @@
       ],
       "correct_option": "B",
       "marks": 1,
-      "answer": "Per the standard textbook definition (also used in the official FJ2 answer key), soft real-time systems only guarantee that critical processes get preference over noncritical ones, with no guarantee of when they run, whereas hard real-time systems guarantee that deadlines are met. Option A is also loosely true, but the textbook wording is the expected answer.",
+      "answer": "Soft real-time only gives critical processes preference with no guaranteed schedule time; hard real-time guarantees deadlines. (A is also loosely true.)",
       "answer_source": "generated",
       "chapter": "Unit 3: Real-Time CPU Scheduling"
     },
@@ -164,7 +164,7 @@
       ],
       "correct_option": "D",
       "marks": 1,
-      "answer": "In standard Multilevel Queue Scheduling, processes are permanently assigned to one queue upon entering the system, and each separate queue has its own scheduling algorithm. (Moving between queues occurs in Multilevel Feedback Queue Scheduling).",
+      "answer": "In a multilevel queue, processes stay permanently in one queue and each queue has its own algorithm. Moving between queues is multilevel feedback.",
       "answer_source": "generated",
       "chapter": "Unit 3: Scheduling Algorithms"
     },
@@ -209,7 +209,7 @@
       ],
       "correct_option": "B",
       "marks": 1,
-      "answer": "Statement (B) is false because virtual memory increases the degree of multiprogramming by requiring only portions of processes to be present in main memory at any one time.",
+      "answer": "Virtual memory keeps only parts of processes in memory, so it increases (not reduces) the degree of multiprogramming.",
       "answer_source": "generated",
       "chapter": "Unit 4: Virtual Memory"
     },
@@ -224,7 +224,7 @@
       ],
       "correct_option": "C",
       "marks": 1,
-      "answer": "Virtual-memory segmentation has no internal fragmentation (segments are sized to fit), allows a higher degree of multiprogramming (only some segments need be resident), gives a large virtual address space, and supports protection and sharing per segment. Efficient use of main memory in the sense of (iii) is not listed as a distinguishing strength of virtual-memory segmentation (it also suffers from external fragmentation), so the correct combination is i, ii, iv and v.",
+      "answer": "Segmentation has no internal fragmentation, supports higher multiprogramming, a large virtual space, and per-segment protection and sharing. It still suffers external fragmentation, so (iii) is not a strength.",
       "answer_source": "generated",
       "chapter": "Unit 4: Segmentation"
     },
@@ -239,7 +239,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "1. Virtual Address Space = $2^{32}$ bytes = 4 GB.\n2. Page Size = $4\\text{ KB} = 2^{12}$ bytes.\n3. Number of Pages = $2^{32} / 2^{12} = 2^{20} = 1,048,576$ entries.\n4. Physical Memory = $64\\text{ MB} = 2^{26}$ bytes, giving $2^{26} / 2^{12} = 2^{14} = 16,384$ frames.\n5. To address $2^{14}$ frames, frame number requires 14 bits. With valid/dirty flags, 16 bits (2 bytes) per entry is sufficient.\n6. Page Table Size = $2^{20} \\text{ entries} \\times 2 \\text{ bytes} = 2 \\text{ MB}$.",
+      "answer": "Pages = $2^{32}/2^{12} = 2^{20}$. Frames = $2^{26}/2^{12} = 2^{14}$, so 2-byte entries suffice: $2^{20} \\times 2$ B = 2 MB.",
       "answer_source": "generated",
       "chapter": "Unit 4: Structure of the Page Table"
     },
@@ -254,7 +254,7 @@
       ],
       "correct_option": "B",
       "marks": 1,
-      "answer": "According to the principle of least privilege and protection policies, a process must only access resources for which it holds explicit authorization.",
+      "answer": "A process should access only the resources it is authorized for (least privilege).",
       "answer_source": "generated",
       "chapter": "Unit 5: Principles of Protection"
     },
@@ -269,7 +269,7 @@
       ],
       "correct_option": "C",
       "marks": 1,
-      "answer": "Both Hydra and the Cambridge CAP system are classical operating systems designed around capability-based protection mechanisms.",
+      "answer": "Hydra and the Cambridge CAP system are both capability-based protection systems.",
       "answer_source": "generated",
       "chapter": "Unit 5: Capability-Based Systems"
     },
@@ -284,7 +284,7 @@
       ],
       "correct_option": "D",
       "marks": 1,
-      "answer": "The access matrix model incorporates domains (rows), objects (columns), and access rights/functions defining allowable operations on object types.",
+      "answer": "The access matrix has domains (rows), objects (columns) and access rights, so it includes all of the listed items.",
       "answer_source": "generated",
       "chapter": "Unit 5: Access Matrix"
     },
@@ -299,7 +299,7 @@
       ],
       "correct_option": "B",
       "marks": 1,
-      "answer": "A virus signature is a specific sequence of bytes or pattern of code used by antivirus software to recognize and detect known malware.",
+      "answer": "A virus signature is a recognizable byte pattern that antivirus software uses to detect a known virus.",
       "answer_source": "generated",
       "chapter": "Unit 5: Program Threats"
     },

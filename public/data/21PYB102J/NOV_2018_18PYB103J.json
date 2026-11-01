@@ -13,7 +13,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Mean free path is the average distance a particle travels between successive collisions with other particles.",
+            "answer": "Mean free path is the average distance between two successive collisions.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -28,7 +28,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "In a direct bandgap semiconductor, the maximum of the valence band and minimum of the conduction band occur at the same momentum (k-value).",
+            "answer": "In a direct gap the valence-band maximum and conduction-band minimum share the same k, so a photon can be emitted directly.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -58,7 +58,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The effective mass accounts for the influence of the internal periodic potential of the crystal lattice on the electron's motion.",
+            "answer": "Effective mass absorbs the lattice's periodic-potential effects on how an electron responds to forces.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -73,7 +73,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "A Light Emitting Diode (LED) operates specifically under forward bias to allow recombination and photon emission.",
+            "answer": "An LED is a forward-biased p-n junction; recombination emits photons.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
@@ -103,7 +103,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Pentavalent impurities (like Phosphorus) provide extra electrons to the lattice, creating an n-type semiconductor.",
+            "answer": "Pentavalent donors (e.g. P) add free electrons: n-type.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
@@ -118,7 +118,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Cathodoluminescence is an optical and electrical phenomenon whereby electrons impacting on a luminescent material cause the emission of photons.",
+            "answer": "Cathodoluminescence is light emission by electron-beam bombardment.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
@@ -133,7 +133,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The absorption edge corresponds to the photon energy equal to the band gap, where absorption begins to occur rapidly.",
+            "answer": "At the absorption edge ($h\\nu\\approx E_g$) the material turns from transparent to strongly absorbing.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
@@ -148,7 +148,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Drude's classical theory assumes electrons behave like a gas and their speed is defined by the RMS velocity from kinetic theory.",
+            "answer": "Drude treated electrons as a classical gas, with rms speed from kinetic theory.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -163,7 +163,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The photovoltaic effect is the generation of voltage and electric current in a material upon exposure to light.",
+            "answer": "The photovoltaic effect produces voltage and current from light.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
@@ -178,7 +178,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Stimulated emission typically relies on a metastable state where electrons remain longer than in normal excited states, allowing for population inversion.",
+            "answer": "A metastable state has a long lifetime, enabling population inversion for stimulated emission.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
@@ -193,7 +193,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "In four-point probe measurements, contact diameter must be much smaller than the probe spacing (gap) to assume point-contact geometry.",
+            "answer": "Contacts must be much smaller than the probe spacing to act as point contacts.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
@@ -208,7 +208,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "C-V profiling is used to determine semiconductor parameters like doping concentration and threshold voltage.",
+            "answer": "C-V profiling gives the doping concentration and built-in potential.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
@@ -223,7 +223,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The hot point probe test utilizes the Seebeck effect to determine the majority carrier type based on the direction of thermal current.",
+            "answer": "Hot point probe uses the Seebeck effect to find the carrier type quickly.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
@@ -253,7 +253,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Nanoparticles have a very high surface-to-volume ratio, which significantly alters their physical and chemical properties compared to bulk materials.",
+            "answer": "Nanoparticles have a very large surface-to-volume ratio, which changes their properties.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
@@ -268,7 +268,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "A quantum wire exhibits quantum confinement in two dimensions, leaving freedom of movement in the third dimension.",
+            "answer": "A quantum wire is confined in two directions and free in one.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
@@ -283,7 +283,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Precursors in Chemical Vapor Deposition (CVD) are always in a gaseous phase to react at the surface of the substrate.",
+            "answer": "CVD precursors are gases that react on the substrate surface.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
@@ -298,7 +298,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Atomic Force Microscopy (AFM) measures the forces (like Van der Waals) between a sharp tip and the sample surface.",
+            "answer": "AFM senses the tip-sample force (e.g. van der Waals).",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         }

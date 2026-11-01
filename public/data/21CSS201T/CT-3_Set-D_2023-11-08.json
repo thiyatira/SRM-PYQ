@@ -89,8 +89,8 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Sequential execution is a characteristic of traditional single-threaded computing, whereas load balancing, scalability, and data consistency are major challenges when designing and optimizing parallel computing systems.",
-            "answer_source": "provided",
+            "answer": "Load balancing, scalability and data consistency are parallel-computing challenges; sequential execution is just ordinary one-after-another processing.",
+            "answer_source": "generated",
             "chapter": "Unit 5: Parallelism"
         },
         {
@@ -149,8 +149,8 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "In standard MIPS32 pipeline with forwarding, data hazards are resolved without stalls for ALU-to-ALU dependencies. However, a load-use hazard (LOAD followed by an instruction that uses the loaded data immediately, such as ADD) cannot be completely resolved by forwarding alone and always requires a one-cycle pipeline stall if no instruction scheduling is done.",
-            "answer_source": "provided",
+            "answer": "With forwarding, ALU-to-ALU dependencies need no stall, but a load-use pair (LOAD then ADD) still needs a 1-cycle stall because the data arrives only after the memory stage.",
+            "answer_source": "generated",
             "chapter": "Unit 4: Control Unit"
         },
         {

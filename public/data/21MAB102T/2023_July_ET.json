@@ -88,7 +88,7 @@
             ],
             "correct_option": "A",
             "marks": 2,
-            "answer": "Let $\\phi = x^2+y^2-z^2$. $\\nabla \\phi = 2x\\mathbf{i} + 2y\\mathbf{j} - 2z\\mathbf{k}$.\nAt $(1,1,1)$, $\\nabla \\phi = 2\\mathbf{i} + 2\\mathbf{j} - 2\\mathbf{k}$.\nMagnitude $= \\sqrt{2^2 + 2^2 + (-2)^2} = \\sqrt{12} = 2\\sqrt{3}$.\nUnit vector $= \\frac{2\\mathbf{i} + 2\\mathbf{j} - 2\\mathbf{k}}{2\\sqrt{3}} = \\frac{\\mathbf{i}+\\mathbf{j}-\\mathbf{k}}{\\sqrt{3}}$.",
+            "answer": "$\\nabla\\phi=(2x,2y,-2z)=(2,2,-2)$ at $(1,1,1)$; magnitude $2\\sqrt3$, so the unit normal is $\\frac{\\mathbf i+\\mathbf j-\\mathbf k}{\\sqrt3}$.",
             "answer_source": "generated",
             "chapter": "Unit 2: Vector Calculus"
         },
@@ -223,7 +223,7 @@
             ],
             "correct_option": "C",
             "marks": 2,
-            "answer": "When $C$ is a purely real constant ($C \\neq 0$), multiplying $z$ by $C$ simply scales the magnitude of $z$ ($|w| = C|z|$) without altering its argument (angle). This transformation is a magnification (or scaling).",
+            "answer": "For real $C$, $|w|=C|z|$ and the argument is unchanged, so it only scales (magnification).",
             "answer_source": "generated",
             "chapter": "Unit 4: Analytic Functions"
         },
@@ -298,7 +298,7 @@
             ],
             "correct_option": "A",
             "marks": 2,
-            "answer": "The function is a rational function. The roots of its denominator are $z=1$ and $z=2$, neither of which cancel with the numerator. Thus, it has a pole of order 2 at $z=1$ and a simple pole at $z=2$. It has \"only poles\" as its singularities in the finite complex plane.",
+            "answer": "Denominator zeros $z=1$ (double) and $z=2$ (simple) do not cancel with the numerator, so all singularities are poles.",
             "answer_source": "generated",
             "chapter": "Unit 5: Complex Integration"
         }

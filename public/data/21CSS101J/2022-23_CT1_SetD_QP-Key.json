@@ -13,8 +13,8 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "`$` is not allowed in identifiers (letters, digits and `_` only).",
+            "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
         {
@@ -28,8 +28,8 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "float 4 + double 8 * char 1: `*` goes first, so 4 + 8 = 12.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
         {
@@ -58,8 +58,8 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "`==` binds tighter than `=`: `y == z` is true (1), so `x` = 1.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
         {
@@ -73,8 +73,8 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "`y = -10`; `z = x++` gives z=10, x=11; `k = ++x` gives x=12, k=12. So y=-10 and k=12.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
         {
@@ -88,8 +88,8 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "`5 + \"GeeksQuiz\"` points 5 characters in, at `Q`, so it prints `Quiz`.",
+            "answer_source": "generated",
             "chapter": "Unit 3: String Basics"
         },
         {
@@ -103,8 +103,8 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "C mixes high-level features with low-level access (pointers, bit operations), so it is called a middle-level language.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
         {
@@ -118,8 +118,8 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "`==` tests equality; `=` is assignment, and the others belong to other languages.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
         {
@@ -148,8 +148,8 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "`a += 4` is shorthand for `a = a + 4`.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
         {
@@ -179,8 +179,8 @@
             ],
             "correct_option": "A",
             "marks": 2,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "C has no built-in `String` type, so `String str;` is unsupported; the other declarations are valid.",
+            "answer_source": "generated",
             "chapter": "Unit 3: String Basics"
         },
         {
@@ -194,8 +194,8 @@
             ],
             "correct_option": "C",
             "marks": 2,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "`c = 5 + 10 = 15`; `%i` prints it like `%d`.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
         {

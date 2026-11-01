@@ -13,7 +13,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The string \"C Programming\" is stored as a character array. In C, arrays are 0-indexed. Therefore, `str[3]` refers to the character at the fourth position in the string. Counting from 0:\n- `str[0]` is 'C'\n- `str[1]` is ' '\n- `str[2]` is 'P'\n- `str[3]` is 'r'\nSo, the `printf(\"%c\", str[3]);` statement will print the character 'r'.",
+            "answer": "Index 0 is `C`, 1 is a space, 2 is `P` and 3 is `r`.",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages - Non-Numeric Data types: char and string"
         },
@@ -28,7 +28,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The `atoi()` function (ASCII to Integer) is a standard library function in C that converts a string (null-terminated character array) representation of an integer to its integer equivalent. When passed the string \"1234\", it will convert it into the integer value 1234.",
+            "answer": "`atoi` converts the numeric string to the integer 1234.",
             "answer_source": "generated",
             "chapter": "Unit 3: String Basics - Built-inString Functions: atoi"
         },
@@ -43,7 +43,7 @@
             ],
             "correct_option": "A,B",
             "marks": 1,
-            "answer": "In C, when an array is passed to a function, the array name itself 'decays' into a pointer to its first element. This pointer does not carry information about the array's size. Therefore:\n-   **A) Just the array name**: This is essential as it provides the starting address of the array (a pointer to the first element).\n-   **B) The array's size**: This is crucial because the function needs to know how many elements to process to avoid accessing out-of-bounds memory. Without the size, the function cannot reliably iterate through the entire array.\n-   C) The data type of array elements: While important for pointer arithmetic, the type is typically defined in the function signature (e.g., `int *arr`), so it's implicitly known if the pointer type is correctly specified. It's not usually passed as a separate piece of information alongside the array name and size.\n-   D) A pointer to the last element: This is not a standard or necessary piece of information to pass. Knowing the start address and size is sufficient.\n\nTherefore, to properly process an array within a function, both the array name (which provides the base address) and the array's size must be passed. Options A and B are correct.",
+            "answer": "An array parameter becomes a bare pointer with no size information, so the function needs the array name (base address) and its size; the element type comes from the parameter declaration.",
             "answer_source": "generated",
             "chapter": "Unit 3: String Basics - Function prototype declaration, function definition - Passing Array to Function"
         },
@@ -58,7 +58,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "In Python:\n-   `#` is used for single-line comments.\n-   `/* */` is used for multi-line comments in languages like C, C++, and Java.\n-   `//` is used for single-line comments in languages like C++, Java, and JavaScript.\n-   `\"\"\"` (triple double quotes) or `'''` (triple single quotes) are used for multi-line strings, which can also serve as multi-line comments if not assigned to a variable.\n\nTherefore, the correct option is D.",
+            "answer": "A triple-quoted string is used as a multi-line comment in Python; `#` is single-line only, and `/* */` and `//` are not Python.",
             "answer_source": "generated",
             "chapter": "Unit 4: Python: Introduction to Python - Python-Single and Multi-line Comments/ Error Handling"
         },
@@ -73,7 +73,7 @@
             ],
             "correct_option": "A,C,D",
             "marks": 1,
-            "answer": "Let's evaluate each statement:\n-   **A) Python lists are mutable, meaning their elements can be modified after creation.** This statement is **correct**. Lists are dynamic and their contents can be changed, added, or removed.\n-   **B) Python tuples are mutable and can store elements of any data type.** This statement is **incorrect**. Tuples are immutable; once created, their elements cannot be changed, added, or removed. They can, however, store elements of any data type.\n-   **C) Strings in Python are immutable.** This statement is **correct**. Once a string is created, its characters cannot be changed in place. Any operation that appears to modify a string actually creates a new string.\n-   **D) Python dictionaries cannot have duplicate keys.** This statement is **correct**. Dictionary keys must be unique. If you try to assign a value to an existing key, it will overwrite the old value. Duplicate values are allowed, but not duplicate keys.\n\nTherefore, options A, C, and D are correct.",
+            "answer": "Lists are mutable, strings are immutable and dictionary keys are unique. Tuples are immutable, so B is false.",
             "answer_source": "generated",
             "chapter": "Unit 4: Python: Basic Data Types: Integers, Floating Points, Boolean types - Working with String functions - Working with List structures - Working with Tuples data structures - Working with Dictionaries"
         },
@@ -88,7 +88,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The `get()` method of a Python dictionary is used to retrieve the value associated with a specified key. It takes two arguments: the key to search for and an optional default value. If the key is found, `get()` returns its corresponding value. If the key is not found, `get()` returns the default value provided.\n\nIn this code:\n-   `my_dict` is `{\"apple\": 3, \"banana\": 5}`.\n-   We are calling `my_dict.get(\"orange\", 0)`.\n-   The key \"orange\" is not present in `my_dict`.\n-   The default value provided is `0`.\n\nTherefore, the `get()` method will return `0`.",
+            "answer": "`get(key, default)` returns the default, 0, when the key is missing.",
             "answer_source": "generated",
             "chapter": "Unit 4: Python: Working with Dictionaries"
         },
@@ -103,7 +103,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The `np.array([[1, 2, 3], [4, 5, 6]])` creates a 2-dimensional NumPy array. It has two rows and three columns.\n-   The first dimension (rows) has a size of 2.\n-   The second dimension (columns) has a size of 3.\n\nThe `a.shape` attribute returns a tuple indicating the dimensions of the array. For this array, the shape will be (2, 3).",
+            "answer": "The array has 2 rows and 3 columns, so `shape` is `(2, 3)`.",
             "answer_source": "generated",
             "chapter": "Unit 5: Creating NumPy Array - Numpy Array attributes"
         },
@@ -118,7 +118,7 @@
             ],
             "correct_option": "A,B,D",
             "marks": 1,
-            "answer": "Let's evaluate each option for creating NumPy arrays:\n-   **A) `np.array([1, 2, 3])`**: This is a **valid** way to create a NumPy array from a Python list.\n-   **B) `np.zeros((3, 3))`**: This is a **valid** way to create a 3x3 NumPy array filled with zeros. The `(3, 3)` tuple specifies the shape.\n-   **C) `np.ones[3]`**: This is **invalid**. `np.ones()` is a function that takes a shape as an argument (e.g., `np.ones(3)` for a 1D array of 3 ones, or `np.ones((3, 3))` for a 2D array). Using square brackets `[]` as if for indexing immediately after the function name is incorrect syntax for creation.\n-   **D) `np.arange(5)`**: This is a **valid** way to create a NumPy array with elements starting from 0 up to (but not including) 5, similar to Python's `range()` function.\n\nTherefore, options A, B, and D are correct.",
+            "answer": "`np.ones[3]` is invalid (it must be called as `np.ones(3)`); the others are valid constructors.",
             "answer_source": "generated",
             "chapter": "Unit 5: Creating NumPy Array"
         },

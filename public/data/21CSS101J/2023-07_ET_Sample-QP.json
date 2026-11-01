@@ -13,7 +13,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The first step in the problem-solving process is to (B) Define the problem. Before attempting to solve any problem, it's crucial to clearly understand and define what the problem is.",
+            "answer": "Understanding the problem must come first, before generating or evaluating solutions.",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
         },
@@ -28,7 +28,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "An algorithm is (A) A step-by-step procedure to solve a problem. It is a finite set of well-defined instructions to accomplish a specific task.",
+            "answer": "An algorithm is a finite, step-by-step procedure for solving a problem.",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages - Writing algorithms & Pseudo code"
         },
@@ -43,7 +43,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The characteristic that is NOT of a good algorithm is (C) Ambiguity. Good algorithms must be unambiguous, meaning each step must be clear and precisely defined.",
+            "answer": "A good algorithm must be unambiguous: every step is precisely defined.",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages - Writing algorithms & Pseudo code"
         },
@@ -58,7 +58,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "A flowchart is (C) A graphical representation of a process or algorithm. It uses standard symbols to depict the steps and decision points in a process.",
+            "answer": "A flowchart is a diagram of a process or algorithm drawn with standard symbols.",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages - Writing algorithms & Pseudo code"
         },
@@ -73,7 +73,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "The flowchart symbol used to represent a decision point is (D) Diamond. This symbol indicates a point where a choice must be made, typically resulting in different paths.",
+            "answer": "The diamond marks a decision point with branching paths.",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages - Writing algorithms & Pseudo code"
         },
@@ -88,7 +88,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The `scanf()` function in C (B) Reads input from the user. It is used to get formatted input from the standard input device, typically the keyboard.",
+            "answer": "`scanf()` reads formatted input from the keyboard.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction to C: Structure of the C program - Input and output statements"
         },
@@ -103,7 +103,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "To compare two strings in C, you use (B) `strcmp(str1, str2)`. The `==` operator compares memory addresses for pointers, not the content of the strings.",
+            "answer": "`strcmp(s1, s2)` compares string contents; `==` compares only addresses.",
             "answer_source": "generated",
             "chapter": "Unit 3: Built-inString Functions: atoi, strlen, strcat, strcmp"
         },
@@ -118,7 +118,7 @@
             ],
             "correct_option": null,
             "marks": 1,
-            "answer": "In C, `^` is the bitwise XOR operator.\nDecimal 11 in binary is `1011`.\nDecimal 5 in binary is `0101`.\nPerforming bitwise XOR:\n  `1011` (11)\n`^ 0101` (5)\n------\n  `1110` (14)\nSo, the output of the expression 11^5 is 14. None of the provided options (A) 12, (B) 13, (C) 10, (D) 11 are correct.",
+            "answer": "`^` is bitwise XOR: 1011 ^ 0101 = 1110 = 14, which is not among the options.",
             "answer_source": "generated",
             "chapter": "Unit 1: Arithmetic, Relational and logical Operators - Bitwise and Size-of operator"
         },
@@ -133,7 +133,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The purpose of the `strlen()` function in C is (C) To calculate the length of a string. It returns the number of characters in a string, excluding the null terminator.",
+            "answer": "`strlen()` returns the number of characters before the null terminator.",
             "answer_source": "generated",
             "chapter": "Unit 3: Built-inString Functions: atoi, strlen, strcat, strcmp"
         },
@@ -148,7 +148,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "To use the `strcpy()` function in C, the library that should be included is (C) `string.h`. This header file contains declarations for string manipulation functions.",
+            "answer": "`strcpy()` is declared in `string.h`.",
             "answer_source": "generated",
             "chapter": "Unit 3: Built-inString Functions: sprint, sscanf, strrev, strcpy, strstr, strtok"
         },
@@ -163,7 +163,7 @@
             ],
             "correct_option": "B,C",
             "marks": 1,
-            "answer": "Both (B) `char s[];` and (C) `char* s;` are valid ways to declare a string variable in C, depending on the specific use case. However, `char s[];` is typically used for declaring a character array that can hold a string, requiring either an explicit size (e.g., `char s[100];`) or initialization with a string literal (e.g., `char s[] = \"hello\";`). `char* s;` declares a pointer to a character, which can point to a string, often a string literal or dynamically allocated memory.",
+            "answer": "`char* s;` is valid, and `char s[]` is accepted when sized or initialised (e.g. `char s[] = \"hi\";`). `string` and `str` are not C types.",
             "answer_source": "generated",
             "chapter": "Unit 1: Non-Numeric Data types: char and string"
         },
@@ -178,7 +178,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "This is a Python string indexing question. In Python, negative indexing accesses characters from the end of the string. `s[-2]` refers to the second-to-last character.\nFor `s = 'foobar'`, the characters are:\nf o o b a r\n-6 -5 -4 -3 -2 -1\nSo, `s[-2]` is 'a'. The output is (D) a.",
+            "answer": "Negative indices count from the end, so `s[-2]` is the second-last character, `a`.",
             "answer_source": "generated",
             "chapter": "Unit 4: Python: Introduction to Python - Working with String functions"
         },
@@ -193,7 +193,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "In Python, we can combine strings and numbers using the (D) `format()` method (or f-strings). For example, `\"My number is {}\".format(10)`.",
+            "answer": "`str.format()` (or f-strings) inserts numbers into strings.",
             "answer_source": "generated",
             "chapter": "Unit 4: Python: Introduction to Python - Working with Input, Output functions"
         },
@@ -208,7 +208,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "To print hexadecimal values in C using formatted output functions like `printf()`, the format specifier (D) `%x` (or `%X` for uppercase) is used.",
+            "answer": "`%x` prints an integer in hexadecimal.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction to C: Structure of the C program - Input and output statements"
         },
@@ -223,7 +223,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "In Python, the string function that converts a character into its corresponding integer (Unicode code point) is (C) `ord()`. For example, `ord('A')` returns 65.",
+            "answer": "`ord(c)` returns the integer code point of a character, e.g. `ord('A')` = 65.",
             "answer_source": "generated",
             "chapter": "Unit 4: Python: Introduction to Python - Working with String functions"
         },
@@ -238,7 +238,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "In Python, with respect to string operations, the `+` operator (B) Concatenates the given strings. For example, `'Hello' + 'World'` results in `'HelloWorld'`.",
+            "answer": "On strings, `+` joins them: `'Hello' + 'World'` gives `'HelloWorld'`.",
             "answer_source": "generated",
             "chapter": "Unit 4: Python: Introduction to Python - Working with String functions"
         },
@@ -253,7 +253,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Pandas is used when data is in tabular format. It provides data structures like DataFrames and Series, which are ideal for handling structured and tabular data.",
+            "answer": "Pandas DataFrames handle tabular data.",
             "answer_source": "generated",
             "chapter": "Unit 5: Introduction to Pandas - Creating Series Objects, Data Frame Objects"
         },
@@ -268,7 +268,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The primary interface of Matplotlib used for data visualization is (C) Pyplot. It provides a MATLAB-like interface for making plots and visualizations.",
+            "answer": "`matplotlib.pyplot` is the MATLAB-like plotting interface.",
             "answer_source": "generated",
             "chapter": "Unit 4: Introduction to Python Libraries"
         },
@@ -283,7 +283,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Keras is a high-level API built on TensorFlow (and other backends such as Theano or CNTK). It is designed for fast experimentation with deep neural networks.",
+            "answer": "Keras is the high-level neural-network API that runs on TensorFlow.",
             "answer_source": "generated",
             "chapter": "Unit 4: Introduction to Python Libraries"
         },
@@ -298,7 +298,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "To create Series objects, the (C) Pandas module needs to be imported. Series is a one-dimensional labeled array in Pandas.",
+            "answer": "`pd.Series` is a Pandas object, so import Pandas.",
             "answer_source": "generated",
             "chapter": "Unit 5: Introduction to Pandas - Creating Series Objects, Data Frame Objects"
         },

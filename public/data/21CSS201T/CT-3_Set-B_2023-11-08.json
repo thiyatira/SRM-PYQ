@@ -29,8 +29,8 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "1. `R2out, Yin` copies the contents of register R2 into the temporary register Y.\n2. `R3out, Select Y, Add, Zin` selects register Y (containing R2), adds it to R3, and stores the result in temporary register Z.\n3. `Zout, R1in` copies the result from register Z to R1. Hence, $R1 = R2 + R3$.",
-            "answer_source": "provided",
+            "answer": "R2 goes to Y, R3 is added to Y (giving R2 + R3) into Z, and Z is written to R1, so $R1 = R2 + R3$.",
+            "answer_source": "generated",
             "chapter": "Unit 4: Control Unit"
         },
         {
@@ -104,8 +104,8 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Single Instruction, Multiple Data (SIMD) architectures are designed to apply the same operation to a large array of data points simultaneously, making it highly effective for vector/matrix applications like graphics processing.",
-            "answer_source": "provided",
+            "answer": "SIMD applies the same operation to many data elements at once, which suits graphics and scientific array workloads.",
+            "answer_source": "generated",
             "chapter": "Unit 5: Parallelism"
         },
         {
@@ -119,8 +119,8 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "While load/store instructions (`LDR`/`STR`) are used for memory access, among the choices provided, the `MOV` instruction is key to transferring data into and between registers.",
-            "answer_source": "provided",
+            "answer": "LDR/STR do the actual memory transfers but are not listed; MOV is the closest listed data-transfer instruction.",
+            "answer_source": "generated",
             "chapter": "Unit 5: Parallelism"
         },
         {
@@ -149,8 +149,8 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "ARM7 features dual instruction sets: 32-bit standard ARM instructions and 16-bit Thumb instructions. This capability to switch between 16-bit and 32-bit structures provides a form of variable-length instruction encoding to improve code density.",
-            "answer_source": "provided",
+            "answer": "ARM7 supports 32-bit ARM and 16-bit Thumb instructions, so the course treats its encoding as variable-length (each state alone is fixed-length).",
+            "answer_source": "generated",
             "chapter": "Unit 5: Parallelism"
         },
         {

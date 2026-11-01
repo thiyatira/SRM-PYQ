@@ -13,7 +13,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "According to Ohm's Law, I = V / R = 10 V / 2.5 Ω = 4 A.",
+            "answer": "$I=V/R=10/2.5=4$ A.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -28,7 +28,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Kirchhoff's Current Law states that the sum of incoming currents equals the sum of outgoing currents at a node (i1 + i2 = i3 + i4).",
+            "answer": "KCL: current in equals current out, so $i_1+i_2=i_3+i_4$.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -43,7 +43,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "In a parallel electrical circuit, the voltage (potential difference) across all connected branches is identical.",
+            "answer": "In parallel every branch has the same voltage; the currents divide.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -58,7 +58,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "This is the mathematical definition of the Root Mean Square (RMS) value of an alternating quantity.",
+            "answer": "Square, then mean, then root is the definition of RMS.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -73,7 +73,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The 'Base' is a terminal of a Bipolar Junction Transistor (BJT). A MOSFET has Gate, Drain, and Source terminals.",
+            "answer": "Base belongs to a BJT; a MOSFET has gate, drain and source.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -88,7 +88,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "BJT stands for Bipolar Junction Transistor. 'Bipolar' indicates that its operation involves both majority and minority charge carriers (holes and electrons).",
+            "answer": "A BJT is bipolar: both electrons and holes carry current.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -103,7 +103,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "An Insulated Gate Bipolar Transistor (IGBT) combines the isolated gate control of a MOSFET with the high-current handling of a BJT.",
+            "answer": "An IGBT has a MOSFET-type input stage driving a BJT output stage.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -118,7 +118,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "A NOR gate is the inverse of an OR gate. It only outputs a '1' (HIGH) when all its inputs are '0' (LOW).",
+            "answer": "NOR is the inverted OR, so its output is 1 only for input 00.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -133,7 +133,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "A transformer is a static device used to step up or step down the level of AC voltage while keeping the frequency and power level (ideally) constant.",
+            "answer": "A transformer steps AC voltage up or down; power and frequency stay (ideally) the same.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -148,7 +148,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Synchronous speed Ns = 120 * f / P. Rearranging for P: P = 120 * 50 / 1000 = 6000 / 1000 = 6 poles.",
+            "answer": "$P=\\dfrac{120f}{N}=\\dfrac{120\\times50}{1000}=6$ poles.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -163,7 +163,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Fleming's Left-Hand Rule determines the direction of the force (and therefore rotation) acting on a current-carrying conductor in a magnetic field.",
+            "answer": "Fleming's left-hand rule gives the direction of force on a current-carrying conductor, i.e. motor rotation.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -178,7 +178,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "A stepper motor moves precisely by dividing a full rotation into a large number of discrete angular steps.",
+            "answer": "A stepper motor turns in fixed discrete steps for each input pulse.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -193,7 +193,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Transducers act as sensors that convert a physical, non-electrical parameter (like temperature, pressure, displacement) into an equivalent measurable electrical signal.",
+            "answer": "A transducer converts a non-electrical quantity (temperature, pressure, etc.) into an electrical signal.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -208,7 +208,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "When exposed to higher light intensity, a semiconductor photo-device generates more electron-hole pairs, which increases conductivity and directly decreases its internal resistance.",
+            "answer": "Light generates more carriers, raising conductivity, so resistance falls.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -223,7 +223,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "A Linear Variable Differential Transformer (LVDT) works on the principle of variable mutual inductance between a primary coil and two secondary coils depending on core position.",
+            "answer": "An LVDT works on the mutual inductance between its primary and two secondary coils.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -238,7 +238,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Liquid Crystal Displays (LCDs) function by applying an electric field to change the orientation and alignment of the liquid crystal molecules.",
+            "answer": "An electric field reorients the liquid-crystal molecules, which is how LCDs switch pixels.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -253,7 +253,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "In the Indian electrical standard, the typical single-phase domestic residential AC supply is maintained at 230 V.",
+            "answer": "Indian single-phase domestic supply is 230 V.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
@@ -268,7 +268,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Battery capacity indicates the total electrical charge it can deliver and is universally expressed in Ampere-hours (Ah).",
+            "answer": "Battery capacity (charge it can deliver) is given in ampere-hours.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
@@ -283,7 +283,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "A fuel cell creates an electrochemical reaction (using a fuel like hydrogen) to convert chemical energy directly into electrical energy.",
+            "answer": "A fuel cell converts chemical energy directly into electrical energy.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
@@ -298,7 +298,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Operating near unity, specifically around 0.95 lagging, minimizes reactive power penalties without incurring excessive capacitor bank costs, making it the most economic target.",
+            "answer": "Near-unity PF (about 0.95 lagging) cuts reactive-power penalties without costly capacitor banks.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         }

@@ -73,7 +73,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "When a `break` statement is omitted from a `switch` case, execution continues from the current case into the next case, executing its code. This behavior is known as 'fall-through'.",
+            "answer": "Without `break`, execution continues into the next case; this is called fall-through.",
             "answer_source": "generated",
             "chapter": "Unit 2: Conditional Statements : Switch case"
         },
@@ -88,7 +88,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The `continue` statement is used to skip the rest of the current iteration of a loop and proceed to the next iteration. It is only applicable within looping control statements (`for`, `while`, `do-while`).",
+            "answer": "`continue` skips the rest of the current iteration and moves to the next; it applies only to loops (`for`, `while`, `do-while`).",
             "answer_source": "generated",
             "chapter": "Unit 2: Un-conditional Control Statements : break, continue, goto"
         },
@@ -103,7 +103,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "An unconditional statement transfers control without checking any condition. The `goto` statement is an unconditional jump statement in C. `If`, `for`, and `while` are conditional or looping statements.",
+            "answer": "`goto` jumps unconditionally; `if`, `while` and `for` all depend on a condition.",
             "answer_source": "generated",
             "chapter": "Unit 2: Un-conditional Control Statements : break, continue, goto"
         },
@@ -118,7 +118,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The array initializer `{'k', 'p', 'l', 'd', 'lo'}` contains 5 distinct initializer elements. Even though `'lo'` is a multi-character literal (which might lead to a warning or implementation-defined behavior if assigned to a `char`), it counts as one element in the initializer list. Therefore, the array size would be 5 elements.",
+            "answer": "The initializer lists 5 elements (`'lo'` is one multi-character constant), so the array size is 5.",
             "answer_source": "generated",
             "chapter": "Unit 2: One Dimensional (1D) Array Declaration and initialization"
         },
@@ -208,7 +208,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The `tolower()` function converts an uppercase letter to its lowercase equivalent. If the character `c` is already lowercase or not an alphabet, it returns `c` unchanged.",
+            "answer": "`tolower(c)` returns the lowercase form of an uppercase letter and leaves other characters unchanged.",
             "answer_source": "generated",
             "chapter": "Unit 3: String Functions: sprint, sscanf, strrev, strcpy, strstr, strtok"
         },
@@ -238,7 +238,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "In older C standards (C89/C90), if a function's return type was omitted, it was implicitly assumed to return `int`. In modern C standards (C99 and later), omitting the return type is a compilation error. Assuming the context of older C or a specific teaching curriculum, `int` is the historical answer.",
+            "answer": "In old C (C89) a missing return type defaults to `int` (implicit int); modern C disallows it.",
             "answer_source": "generated",
             "chapter": "Unit 3: Function with and without return values"
         },
@@ -253,7 +253,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "A structure (`struct`) in C is a user-defined data type that allows you to combine items of different data types under a single name. Arrays store elements of the same type. Stacks and queues are abstract data types, not direct collections of different types of variables in this sense.",
+            "answer": "A `struct` groups members of different types; an array holds only one type, and stacks/queues are abstract structures.",
             "answer_source": "generated",
             "chapter": "Unit 1: Numeric Data types: integer, floating point Non-Numeric Data types: char and string"
         },
@@ -268,7 +268,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Members of a union (or struct) are accessed using the dot operator (`.`) if directly using the union variable (e.g., `myUnion.member`). If accessing via a pointer to the union, the arrow operator (`->`) is used (e.g., `union_ptr->member`). Therefore, `Union-name -> member` represents a correct way to access a member using a pointer to a union.",
+            "answer": "A union member is accessed with `.` or, through a pointer, with `->`; only the arrow form among the options is valid.",
             "answer_source": "generated",
             "chapter": "Unit 1: Values, Names, Scope, Binding, Storage Classes"
         },
@@ -298,7 +298,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Unions allow you to store different data types in the same memory location. Only one member of the union can hold a value at any given time. This provides a way to manipulate different kinds of data within a single, shared memory area, optimizing memory usage.",
+            "answer": "All members of a union share one memory location, so different kinds of data can be held in the same storage (one at a time).",
             "answer_source": "generated",
             "chapter": "Unit 1: Numeric Data types: integer, floating point Non-Numeric Data types: char and string"
         },

@@ -13,7 +13,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Sommerfeld's quantum free electron theory models the interior of the metal as a uniform, zero-potential region bounded by infinite potential walls.",
+            "answer": "In Sommerfeld's model the potential inside the metal is zero (constant); infinite walls confine electrons at the surface.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -28,7 +28,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The first Brillouin zone is defined uniquely as the Wigner-Seitz primitive cell constructed in the reciprocal lattice (k-space).",
+            "answer": "The first Brillouin zone is the Wigner-Seitz primitive cell of the reciprocal lattice (k-space).",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -43,7 +43,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Metals feature a zero bandgap because their valence and conduction bands overlap, allowing electrons to move freely.",
+            "answer": "In metals the valence and conduction bands overlap, so the gap is zero.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -58,7 +58,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "The Fermi surface of Copper (FCC) touches the hexagonal faces of the first Brillouin zone in the L-directions, creating 8 distinct \"necks\".",
+            "answer": "Cu's Fermi surface touches the 8 hexagonal faces of the first BZ (L-points), forming 8 necks.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -73,7 +73,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The depletion region forms when majority charge carriers (electrons from N-type and holes from P-type) diffuse across the junction due to the concentration gradient.",
+            "answer": "Majority electrons and holes diffuse across the junction (concentration gradient), leaving uncovered ions that form the depletion region.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
@@ -118,7 +118,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "TDDFT is a quantum mechanical computational method used to investigate the properties and dynamics of many-body systems in the presence of time-dependent potentials.",
+            "answer": "TDDFT is a quantum mechanical computational method for many-electron systems under time-dependent potentials.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -133,7 +133,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Light is emitted during radiative recombination, a process where an electron in the conduction band returns to the valence band and releases a photon.",
+            "answer": "Radiative recombination: a conduction-band electron falls to the valence band and emits a photon.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
@@ -148,7 +148,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Fermi's Golden Rule is fundamental for calculating the transition rate (probability of transition per unit time) of a quantum system.",
+            "answer": "Fermi's golden rule gives the transition rate (probability per unit time) between quantum states under a perturbation.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
@@ -163,7 +163,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The joint density of states describes the availability of states for simultaneous optical transitions linking initial states (holes in the valence band) to final states (electrons in the conduction band).",
+            "answer": "Joint DOS counts paired initial (valence) and final (conduction) states, i.e. electron-hole transitions.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
@@ -178,7 +178,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "According to the Pauli Exclusion Principle, a single spatial quantum energy state can hold a maximum of 2 electrons, provided they have opposite spins.",
+            "answer": "Pauli exclusion principle: a level holds at most 2 electrons, with opposite spins.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -193,7 +193,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The Boltzmann Transport Equation in semiconductor physics evaluates the statistical distribution functions of electrons and holes moving through the crystal lattice.",
+            "answer": "Semiconductor transport involves electrons and holes, so the Boltzmann equation tracks both.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
@@ -208,7 +208,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "TCAD stands for Technology Computer-Aided Design, which is used to model semiconductor fabrication processes and device operation.",
+            "answer": "TCAD = Technology Computer-Aided Design, used to simulate semiconductor fabrication and device operation.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
@@ -223,7 +223,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "By measuring how the capacitance of a junction varies with applied voltage, the doping concentration profile and built-in potential can be mapped accurately.",
+            "answer": "C-V data give the doping concentration profile and built-in potential of the junction.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
@@ -238,7 +238,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "A nanosheet (like graphene) confines electron movement along its thickness (1 dimension), allowing 2 degrees of freedom, making it a 2D nanomaterial.",
+            "answer": "A nanosheet (e.g. graphene) is confined in one dimension and free in two, so it is 2D.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
@@ -268,7 +268,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The density of states corresponds to 3D bulk material (A: E^(1/2)), 2D quantum well (B: constant steps), and 1D quantum wire (C: E^(-1/2) peaks).",
+            "answer": "DOS shapes: 3D $\\propto E^{1/2}$ (A), 2D constant steps (B), 1D $\\propto E^{-1/2}$ (C).",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
@@ -283,7 +283,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Integrating machine learning algorithms in electron microscopy aids in noise reduction, thereby improving the signal-to-noise ratio and effectively enhancing detection limits.",
+            "answer": "ML models trained on prior data suppress noise, raising signal-to-noise ratio and improving detection limits.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         }

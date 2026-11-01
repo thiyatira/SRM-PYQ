@@ -13,7 +13,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Using current division rule, the current through the 12 Ω resistor is I = 10A * (3Ω / (12Ω + 3Ω)) = 10 * (3 / 15) = 2 A.",
+            "answer": "Current divider: $I=10\\times\\dfrac{3}{12+3}=2$ A.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -28,7 +28,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "The total current entering the parallel circuit is 6A. The current through the 5Ω resistor is 4A. Hence, the current through R is 6A - 4A = 2A. The voltage across the parallel branches is equal: 4A * 5Ω = 20V. Therefore, R = V/I = 20V / 2A = 10 Ω.",
+            "answer": "R carries $6-4=2$ A at $4\\times5=20$ V, so $R=20/2=10\\ \\Omega$.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -43,7 +43,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "In a delta connected system, Phase Voltage = Line Voltage = 1100 V. Phase Current = Line Current / √3 = 500 / 1.732 = 288.67 A.",
+            "answer": "Delta: $V_{ph}=V_L=1100$ V and $I_{ph}=I_L/\\sqrt{3}=500/1.732=288.67$ A.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -58,7 +58,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "The terminals of a BJT are Emitter, Base, and Collector. Gate is a terminal used in FET devices.",
+            "answer": "A BJT has emitter, base and collector; gate belongs to FETs.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -73,7 +73,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The logical expression for an Ex-NOR gate is AB + A'B'.",
+            "answer": "XNOR $=AB+A'B'$.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -88,7 +88,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Since all the possible minterms for 3 variables are present, the logical output is always high (1).",
+            "answer": "All 8 minterms are present, so $Y=1$.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -103,7 +103,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "FPGA is the acronym for Field Programmable Gate Array.",
+            "answer": "FPGA = Field Programmable Gate Array.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -118,7 +118,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Laminating the transformer core increases electrical resistance parallel to the core's surface, which directly reduces eddy current losses.",
+            "answer": "Laminations break up the paths of eddy currents, reducing eddy current loss.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -133,7 +133,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Three-phase windings in induction motors are practically connected in either star (wye) or delta configuration.",
+            "answer": "Three-phase windings are connected in star (or delta).",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -148,7 +148,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "A chopper is a static power electronic device that converts a fixed DC input voltage to a variable DC output voltage.",
+            "answer": "A chopper converts fixed DC to variable DC.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -163,7 +163,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "For an ideal transformer, input power = output power (1000V * 20A = 20,000 VA). A step-down transformer lowers the voltage, so 100V is valid, making the current 200A to conserve power.",
+            "answer": "Power is conserved: $V_2=100$ V needs $I_2=20{,}000/100=200$ A.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -178,7 +178,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Permanent Magnet Moving Coil (PMMC) instruments respond only to average values and are exclusively used for DC measurements.",
+            "answer": "A moving coil (PMMC) meter reads the average value, so it measures DC only.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -193,7 +193,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "A standard digital multimeter is capable of measuring voltage, current, and resistance, but it cannot measure electrical power directly.",
+            "answer": "A multimeter measures V, I and R; power needs a wattmeter.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -208,7 +208,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The Linear Variable Differential Transformer (LVDT) is an inductive transducer primarily used for measuring linear displacement.",
+            "answer": "An LVDT measures displacement.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -223,7 +223,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The symbol of a resistor enclosed in a circle with incoming light arrows denotes a Light Dependent Resistor (LDR).",
+            "answer": "A resistor-in-circle symbol with light arrows is an LDR.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -238,7 +238,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Standard operational high-capacity extra-high voltage (EHV) AC transmission lines in India commonly operate up to 765 kV.",
+            "answer": "765 kV is the highest operating AC transmission voltage in India.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
@@ -253,7 +253,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Thermal power generally relies on fossil fuels (like coal), which are non-renewable resources.",
+            "answer": "Thermal power burns fossil fuels, which are non-renewable.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
@@ -268,7 +268,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The most widely used fuel in modern fuel cells to generate electricity is hydrogen.",
+            "answer": "Hydrogen is the most common fuel cell fuel.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
@@ -282,7 +282,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Lithium-ion batteries are heavily preferred for Electric Vehicles (EVs) due to their high energy density and lightweight characteristics.",
+            "answer": "Li-ion has high energy density and low weight, so it is preferred for EVs.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         }

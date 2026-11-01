@@ -13,7 +13,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "The comma operator (`,`) has the lowest precedence among the given options in C. Parentheses `()` are used for grouping and have the highest precedence. The `++` (increment) is a unary operator with high precedence. `&&` (logical AND) has lower precedence than unary operators but higher than the comma operator.",
+            "answer": "The comma operator has the lowest precedence of all C operators.",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
@@ -28,7 +28,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The correct order of evaluation for the expression `D = 50 + 12 * 4 / 32 % 4 - 10` (following standard C operator precedence and associativity) is as follows:\n1. Multiplication (`*`), Division (`/`), Modulo (`%`) are evaluated first, from left to right, due to their higher precedence.\n2. Addition (`+`), Subtraction (`-`) are evaluated next, from left to right.\n3. Assignment (`=`) is evaluated last, as it has the lowest precedence among these operators.\nTherefore, the order of operator evaluation is `*/%+- =`.",
+            "answer": "Precedence order: `* / %` first (left to right), then `+ -`, and finally `=`.",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
@@ -43,7 +43,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "`int$main;` is not a valid C variable name. C variable names (identifiers) must start with an alphabet or an underscore (`_`), and can contain letters, digits, or underscores. Special characters like `$` are not allowed in C identifiers.",
+            "answer": "`$` is not allowed in C identifiers (only letters, digits and `_`).",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
@@ -58,7 +58,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The format specifier `%c` is used in C's `printf()` and `scanf()` functions to read or write a single character.",
+            "answer": "`%c` reads or writes a single character.",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
@@ -73,7 +73,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "In C, logical and relational expressions evaluate to `0` for false and `1` for true. C does not have explicit `True` or `False` boolean types; instead, it uses integer values where `0` is false and any non-zero value (typically `1` for true results) is considered true.",
+            "answer": "Relational and logical expressions yield exactly 1 (true) or 0 (false).",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
@@ -88,7 +88,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Relational operators are used to compare two values. Examples include `==` (equal to), `!=` (not equal to), `<`, `>`, `<=` and `>=`. `Equal` refers to a single operator (`==`), whereas `Relational` is the type of operator used for comparison.",
+            "answer": "Relational operators (`<`, `>`, `==`, ...) compare two values.",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
@@ -103,7 +103,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The `sizeof()` operator is a unary operator because it takes only one operand (either a type name or an expression) to determine its size in bytes.",
+            "answer": "`sizeof` takes a single operand, so it is a unary operator.",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
@@ -118,7 +118,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "`Result =/ 4;` is invalid: after `=` the `/` operator has no left operand, so it is a syntax error. The other three are valid: `a++ -b * 2` and `++a * 5` are ordinary expressions, and `Result = 2, 4;` is valid via the comma operator (`Result` gets 2, then 4 is evaluated and discarded).",
+            "answer": "`Result =/ 4;` is a syntax error since `/` has no left operand. The others are valid; `Result = 2, 4;` uses the comma operator.",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
@@ -133,7 +133,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Indentation is commonly used in pseudocode to show the hierarchical structure and control flow of an algorithm, making nested blocks clear and readable.",
+            "answer": "Pseudocode shows hierarchy (nesting) with indentation.",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
@@ -148,7 +148,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "A binding is considered **dynamic** if it first occurs **during** execution or can change during the execution of the program. This means the association between a name and an attribute (like a memory address or type) is resolved at runtime.",
+            "answer": "A dynamic binding is formed or can change during execution (run time); a static one is fixed before execution.",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },

@@ -43,7 +43,7 @@
             ],
             "correct_option": "C",
             "marks": 2,
-            "answer": "The initial region is defined by $0 \\le y \\le x$ and $0 \\le x \\le a$. Reversing limits means horizontal strips: $y$ ranges from $0$ to $a$, and $x$ bounds go from the line $x=y$ up to $x=a$. Result: $\\int_0^a \\int_y^a dx dy$.",
+            "answer": "Region: $0\\le y\\le x\\le a$. Taking horizontal strips, $y$ runs $0$ to $a$ and $x$ runs $y$ to $a$.",
             "answer_source": "generated",
             "chapter": "Unit 1: Integral Calculus"
         },
@@ -73,7 +73,7 @@
             ],
             "correct_option": "A",
             "marks": 2,
-            "answer": "Let $\\phi = x^2+y^2-z^2$. The gradient $\\nabla \\phi = 2x\\mathbf{i} + 2y\\mathbf{j} - 2z\\mathbf{k}$. At point $(1,1,1)$, $\\nabla \\phi = 2\\mathbf{i} + 2\\mathbf{j} - 2\\mathbf{k}$. The magnitude is $\\sqrt{2^2+2^2+(-2)^2} = \\sqrt{12} = 2\\sqrt{3}$. The unit normal is $\\frac{2\\mathbf{i} + 2\\mathbf{j} - 2\\mathbf{k}}{2\\sqrt{3}} = \\frac{\\mathbf{i}+\\mathbf{j}-\\mathbf{k}}{\\sqrt{3}}$.",
+            "answer": "$\\nabla\\phi=(2,2,-2)$ at $(1,1,1)$ with magnitude $2\\sqrt3$, so the unit normal is $\\frac{\\mathbf i+\\mathbf j-\\mathbf k}{\\sqrt3}$.",
             "answer_source": "generated",
             "chapter": "Unit 2: Vector Calculus"
         },
@@ -118,7 +118,7 @@
             ],
             "correct_option": "A",
             "marks": 2,
-            "answer": "Computing the gradient: $\\frac{\\partial}{\\partial x}(xyz)\\mathbf{i} + \\frac{\\partial}{\\partial y}(xyz)\\mathbf{j} + \\frac{\\partial}{\\partial z}(xyz)\\mathbf{k} = yz\\mathbf{i} + xz\\mathbf{j} + xy\\mathbf{k}$.",
+            "answer": "$\\nabla\\phi=\\left(\\partial_x,\\partial_y,\\partial_z\\right)(xyz)=yz\\,\\mathbf i+xz\\,\\mathbf j+xy\\,\\mathbf k$.",
             "answer_source": "generated",
             "chapter": "Unit 2: Vector Calculus"
         },
@@ -238,7 +238,7 @@
             ],
             "correct_option": "A",
             "marks": 2,
-            "answer": "Put $w = z$: $z(iz+1) = -(2z+4i) \\implies iz^2 + 3z + 4i = 0$. Dividing by $i$ gives $z^2 - 3iz + 4 = 0$, so $z = \\frac{3i \\pm \\sqrt{-9-16}}{2} = \\frac{3i \\pm 5i}{2}$, i.e. $z = 4i$ and $z = -i$. (The minus sign in the transformation is needed for any of the listed options to be correct; without it the fixed points are $\\frac{-i \\pm \\sqrt{15}}{2}$.)",
+            "answer": "Put $w=z$: $iz^2+3z+4i=0\\Rightarrow z^2-3iz+4=0\\Rightarrow z=\\frac{3i\\pm5i}{2}=4i,-i$.",
             "answer_source": "generated",
             "chapter": "Unit 4: Analytic Functions"
         },
@@ -268,7 +268,7 @@
             ],
             "correct_option": "D",
             "marks": 2,
-            "answer": "By the generalized Cauchy Integral Formula for derivatives: $f^{(n)}(a) = \\frac{n!}{2\\pi i} \\oint_C \\frac{f(z)}{(z-a)^{n+1}} dz$. \nHere, $n+1 = 2$, so $n=1$. The integral becomes $\\frac{2\\pi i}{1!} f^{(1)}(a) = 2\\pi i f'(a)$.",
+            "answer": "Derivative form of Cauchy's formula: $\\oint\\frac{f(z)}{(z-a)^2}dz=2\\pi i f'(a)$.",
             "answer_source": "generated",
             "chapter": "Unit 5: Complex Integration"
         },
@@ -298,7 +298,7 @@
             ],
             "correct_option": "B",
             "marks": 2,
-            "answer": "The function has a simple pole at $z=2$.\nThe residue at $z=2$ is $\\lim_{z \\to 2} (z-2) f(z) = \\lim_{z \\to 2} (z-2) \\frac{z}{z-2} = \\lim_{z \\to 2} z = 2$.",
+            "answer": "Simple pole at $z=2$; residue $=\\lim_{z\\to2}(z-2)f(z)=2$.",
             "answer_source": "generated",
             "chapter": "Unit 5: Complex Integration"
         }

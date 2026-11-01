@@ -118,7 +118,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Bragg's law gives d_min = λ/2 for the first order diffraction.",
+            "answer": "From $n\\lambda = 2d\\sin\\theta$ with $\\sin\\theta \\le 1$, the smallest usable spacing is $d = \\lambda/2$ (n = 1).",
             "answer_source": "generated",
             "chapter": "Unit 5: Surface Characterisation techniques - XRD"
         },
@@ -133,7 +133,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "The effective nuclear charge (Zeff) for 4s electron in K is 2.20.",
+            "answer": "Slater's rules: $Z_{eff} = 19 - (8\\times0.85 + 10\\times1.00) = 19 - 16.8 = 2.20$.",
             "answer_source": "generated",
             "chapter": "Unit 1: Effective nuclear charge"
         },
@@ -268,7 +268,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Both the double bond (geometrical) and OH group (chiral center) give 2×2=4 stereoisomers.",
+            "answer": "One stereocentre (C2) gives 2 forms and the C3=C4 double bond gives cis/trans, so $2\\times2 = 4$ stereoisomers.",
             "answer_source": "generated",
             "chapter": "Unit 3: Stereochemistry - Structural isomers and stereoisomers"
         },

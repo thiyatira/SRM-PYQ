@@ -14,7 +14,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "**Rationale:** The primary role of an operating system (OS) is to act as an intermediary between user application software and physical hardware, allocating and managing system resources such as CPU time, memory, file storage, and I/O devices efficiently and safely.",
+            "answer": "The OS sits between applications and hardware and manages resources such as CPU, memory, storage and I/O.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction, Computer-System Organization"
         },
@@ -29,7 +29,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "**Rationale:** The kernel is the essential central core of an operating system that resides permanently in memory. It directly controls hardware resources, process management, memory management, and low-level system operations.",
+            "answer": "The kernel is the core of the OS: it stays in memory and controls hardware, processes and memory.",
             "answer_source": "generated",
             "chapter": "Unit 1: Operating-System Structure"
         },
@@ -44,7 +44,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "**Rationale:** A multiprogramming operating system keeps several jobs/programs in main memory simultaneously so that the CPU always has one program to execute, maximizing CPU utilization.",
+            "answer": "Multiprogramming keeps several programs in memory at once so the CPU always has one to run.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction, Computer-System Organization"
         },
@@ -59,7 +59,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "**Rationale:** `fork()` is a POSIX system call used to create a new process by duplicating the calling process. `printf()` and `scanf()` are C standard library functions, and `main()` is the user entry point.",
+            "answer": "`fork()` is a system call that creates a process. `printf()` and `scanf()` are library functions, and `main()` is just an entry point.",
             "answer_source": "generated",
             "chapter": "Unit 1: System Calls"
         },
@@ -74,7 +74,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "**Rationale:** In a microkernel architecture, the core operating system is kept minimal, while non-essential OS services (like file systems and device drivers) run as separate user-space processes (servers) communicating via interprocess communication (IPC).",
+            "answer": "In a microkernel, only minimal functions stay in the kernel; services like file systems and drivers run as separate user-space processes communicating via IPC.",
             "answer_source": "generated",
             "chapter": "Unit 1: Operating-System Structure"
         },
@@ -89,7 +89,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "**Rationale:** A blocking semaphore puts a process to sleep (moves it to a waiting queue) when a resource is unavailable, rather than continuously polling in a loop (busy waiting) like a spinlock, thereby conserving CPU resources.",
+            "answer": "A blocking semaphore puts the waiting process to sleep in a queue instead of looping like a spinlock, so no CPU is wasted on busy waiting.",
             "answer_source": "generated",
             "chapter": "Unit 2: Process Synchronization"
         },
@@ -104,7 +104,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "**Rationale:** Peterson's algorithm is a classic software-based solution for two processes that correctly guarantees all three critical section requirements: Mutual Exclusion, Progress, and Bounded Waiting.",
+            "answer": "Peterson's algorithm gives mutual exclusion, progress and bounded waiting for two processes using software only.",
             "answer_source": "generated",
             "chapter": "Unit 2: Peterson's Solution"
         },
@@ -119,7 +119,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "**Rationale:** Message passing allows processes to communicate and synchronize actions through OS kernel primitives (`send` and `receive`) without requiring a shared address space, making it ideal for distributed or isolated systems.",
+            "answer": "Message passing uses send/receive through the kernel, so processes can exchange data without a shared memory region.",
             "answer_source": "generated",
             "chapter": "Unit 2: Interprocess Communication"
         },
@@ -134,7 +134,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "**Rationale:** In the many-to-one model, multiple user-level threads map to a single kernel thread. Since the kernel is aware of only one thread, if one thread makes a blocking system call, the entire process blocks, and threads cannot run in parallel on multicore systems.",
+            "answer": "In many-to-one, all user threads map to one kernel thread, so they cannot run in parallel on multiple cores and one blocking call blocks all.",
             "answer_source": "generated",
             "chapter": "Unit 2: Multithreading Models"
         },
@@ -149,7 +149,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "**Rationale:** The classic Dining Philosophers problem primary illustrates the potential for deadlock (e.g., when all philosophers pick up their left chopstick concurrently and wait indefinitely for the right chopstick) along with starvation.",
+            "answer": "Dining Philosophers shows deadlock risk: if all pick up their left chopstick, each waits forever for the right one.",
             "answer_source": "generated",
             "chapter": "Unit 2: Classic Problems of Synchronization"
         },

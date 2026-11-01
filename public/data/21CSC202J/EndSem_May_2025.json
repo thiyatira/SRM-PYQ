@@ -14,7 +14,7 @@
       ],
       "correct_option": "C",
       "marks": 1,
-      "answer": "**Rationale:** CPU registers reside directly inside the processor core and operate at CPU clock cycle speed, making them the fastest category in the memory hierarchy with typical access times under 1 nanosecond.",
+      "answer": "CPU registers are inside the core and run at clock speed, so they are the fastest level.",
       "answer_source": "generated",
       "chapter": "Unit 1: Computer-System Organization"
     },
@@ -29,7 +29,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "**Rationale:** When an I/O device controller completes its operation (such as reading a disk sector or receiving a network packet), it asserts a hardware interrupt line on the system bus to notify the CPU to service the event.",
+      "answer": "On finishing an operation, the device controller raises a hardware interrupt to notify the CPU.",
       "answer_source": "generated",
       "chapter": "Unit 1: Computer-System Organization"
     },
@@ -44,7 +44,7 @@
       ],
       "correct_option": "B",
       "marks": 1,
-      "answer": "**Rationale:** In Unix and Linux systems, `fork()` creates a new duplicate child process. `exec()` replaces the process image with a new executable, `wait()` blocks the parent until a child terminates, and `kill()` sends signals.",
+      "answer": "`fork()` creates a process; `exec()` replaces a process image, `wait()` waits for a child and `kill()` sends a signal.",
       "answer_source": "generated",
       "chapter": "Unit 1: System Calls"
     },
@@ -59,7 +59,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "**Rationale:** Paging divides virtual and physical memory into fixed-sized blocks (eliminating external fragmentation), while segmentation divides memory into logical user-centric segments. Both allow non-contiguous allocation and maximize physical memory utilization.",
+      "answer": "Paging and segmentation allow non-contiguous allocation, reducing fragmentation and using memory efficiently.",
       "answer_source": "generated",
       "chapter": "Unit 4: Memory Management"
     },
@@ -74,7 +74,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "**Rationale:** An operating system process may consist of a single thread of execution (traditional heavy-weight process) or contain multiple concurrent threads sharing the same address space and resources.",
+      "answer": "A process may have one thread or several threads sharing its address space.",
       "answer_source": "generated",
       "chapter": "Unit 2: Threads"
     },
@@ -89,8 +89,8 @@
       ],
       "correct_option": "B",
       "marks": 1,
-      "answer": "A system that permits only a single process to execute at any given time is a uniprocessing system, as given in the official answer key for the matching FJ2 question.",
-      "answer_source": "provided",
+      "answer": "Uniprocessing is the term for allowing only one process to run at a time (per the official key).",
+      "answer_source": "generated",
       "chapter": "Unit 2: Process Concept"
     },
     {
@@ -104,7 +104,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "**Rationale:** A semaphore is a synchronization variable providing atomic `wait()` ($P$) and `signal()` ($V$) operations to coordinate access to shared critical sections and shared resources among cooperating processes.",
+      "answer": "A semaphore provides atomic `wait()` and `signal()` operations to coordinate access to shared resources with mutual exclusion.",
       "answer_source": "generated",
       "chapter": "Unit 2: Process Synchronization"
     },
@@ -119,7 +119,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "**Rationale:** Pipes are a message-passing mechanism managed by the kernel that allow unidirectional byte stream communication between processes without sharing user address space.",
+      "answer": "Pipes are kernel-managed byte streams, so processes communicate without shared memory.",
       "answer_source": "generated",
       "chapter": "Unit 2: Interprocess Communication"
     },
@@ -134,7 +134,7 @@
       ],
       "correct_option": "D",
       "marks": 1,
-      "answer": "**Rationale:** LRU is a page replacement algorithm used in virtual memory management to select which page to evict, whereas FCFS, RR, and SRTN are CPU scheduling algorithms.",
+      "answer": "LRU is a page replacement algorithm; FCFS, RR and SRTN are CPU scheduling algorithms.",
       "answer_source": "generated",
       "chapter": "Unit 3: CPU Scheduling"
     },
@@ -149,8 +149,8 @@
       ],
       "correct_option": "C",
       "marks": 1,
-      "answer": "Round Robin time slicing and frequent context switching make each process wait through many other processes' quanta before it finishes, giving a large average waiting time (matches the official answer key for the matching FJ2 question).",
-      "answer_source": "provided",
+      "answer": "In Round Robin each process repeatedly waits for others' time slices, so average waiting time is large.",
+      "answer_source": "generated",
       "chapter": "Unit 3: CPU Scheduling"
     },
     {
@@ -164,7 +164,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "**Rationale:** Deadlock Prevention designs resource allocation protocols to structurally negate at least one of the four Coffman conditions (Mutual Exclusion, Hold and Wait, No Preemption, Circular Wait) so that deadlocks can never physically occur.",
+      "answer": "Prevention ensures at least one of the four necessary conditions can never hold.",
       "answer_source": "generated",
       "chapter": "Unit 3: Deadlocks"
     },
@@ -179,7 +179,7 @@
       ],
       "correct_option": "B",
       "marks": 1,
-      "answer": "**Rationale:** Dijkstra's Banker's Algorithm is a Deadlock Avoidance algorithm. It dynamically inspects resource requests against maximum claims to ensure the system never enters an unsafe state.",
+      "answer": "Banker's algorithm checks requests against maximum claims to stay in a safe state, which is deadlock avoidance.",
       "answer_source": "generated",
       "chapter": "Unit 3: Deadlocks"
     },
@@ -194,7 +194,7 @@
       ],
       "correct_option": "B",
       "marks": 1,
-      "answer": "**Rationale:** The page table maps logical/virtual page numbers generated by the CPU to corresponding physical memory frame numbers in main RAM.",
+      "answer": "The page table maps page numbers to frame numbers, translating logical to physical addresses.",
       "answer_source": "generated",
       "chapter": "Unit 4: Memory Management"
     },
@@ -209,7 +209,7 @@
       ],
       "correct_option": "C",
       "marks": 1,
-      "answer": "**Rationale:** An opcode (operation code) is a machine instruction field specifying the operation to be performed (e.g. ADD, MOV). Instruction cache, registers, and TLBs are hardware memory storage structures.",
+      "answer": "An opcode is a field of an instruction, not a memory; the instruction cache, instruction register and TLB are all storage.",
       "answer_source": "generated",
       "chapter": "Unit 4: Memory Management"
     },
@@ -224,7 +224,7 @@
       ],
       "correct_option": "B",
       "marks": 1,
-      "answer": "**Rationale:** RAID 1 utilizes disk mirroring, where exact duplicated copies of data blocks are written concurrently to two separate disks to ensure full fault tolerance against drive failure.",
+      "answer": "RAID 1 mirrors data on two disks, so it survives a disk failure.",
       "answer_source": "generated",
       "chapter": "Unit 4: Storage Management"
     },
@@ -239,7 +239,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "**Rationale:** The instruction set architecture (ISA) specifies addressing modes and maximum operands referenced by a single machine instruction, defining the minimum frames required so that an instruction can execute to completion without recursive page faults.",
+      "answer": "A single instruction may touch several pages (set by its addressing modes), so the ISA fixes the minimum frames needed.",
       "answer_source": "generated",
       "chapter": "Unit 4: Virtual Memory"
     },
@@ -254,7 +254,7 @@
       ],
       "correct_option": "B",
       "marks": 1,
-      "answer": "**Rationale:** A Denial-of-Service (DoS) attack is categorized as a System and Network threat, whereas Trojan Horses, Viruses, and Worms are Program threats executing rogue code.",
+      "answer": "DoS is a system/network threat; Trojan horse, virus and worm are program threats.",
       "answer_source": "generated",
       "chapter": "Unit 5: Program Threats"
     },
@@ -269,7 +269,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "**Rationale:** Role-Based Access Control (RBAC) assigns access permissions to specific roles (e.g. administrator, student, faculty), granting users rights based on their organizational roles.",
+      "answer": "RBAC gives permissions to roles, and users get access through their roles.",
       "answer_source": "generated",
       "chapter": "Unit 5: Access Control"
     },
@@ -284,7 +284,7 @@
       ],
       "correct_option": "B",
       "marks": 1,
-      "answer": "**Rationale:** Protection provides a mechanism for controlling the access of programs, processes, and users to the resources defined by a computer system, enforcing established security policies.",
+      "answer": "Protection ensures resources are used only as the system's policies allow.",
       "answer_source": "generated",
       "chapter": "Unit 5: Goals of Protection"
     },
@@ -299,7 +299,7 @@
       ],
       "correct_option": "B",
       "marks": 1,
-      "answer": "**Rationale:** The Principle of Least Privilege dictates that any user, program, or system component should have only the minimum access rights and privileges necessary to complete its legitimate task.",
+      "answer": "Least privilege: give each user, program or system only the minimum rights needed for its task.",
       "answer_source": "generated",
       "chapter": "Unit 5: Principles of Protection"
     },

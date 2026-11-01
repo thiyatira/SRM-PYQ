@@ -13,7 +13,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "To find the equivalent Thevenin resistance (Rth) of a linear circuit, ideal voltage sources are short-circuited and ideal current sources are open-circuited.",
+            "answer": "Rth: short the voltage sources and open the current sources.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -28,7 +28,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The Maximum Power Transfer Theorem dictates that maximum power is delivered to the load when the source's internal resistance is exactly equal to the load resistance.",
+            "answer": "Maximum power transfer needs source resistance equal to load resistance.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -43,7 +43,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "For resistors in a simple series combination, equivalent resistance is the sum: R_total = 2 Ω + 3 Ω = 5 Ω.",
+            "answer": "Series resistances add: $2+3=5\\ \\Omega$.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -58,7 +58,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Because the line and the respective phase coil are in series in a star (Y) connection, the line current is exactly equal to the phase current (IL = Iph).",
+            "answer": "In a star connection the line is in series with the phase, so $I_L=I_{ph}$.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -73,7 +73,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The expression has two product terms (A.B and C.D), each requiring one AND gate, totaling 2 AND gates. The results (along with E) are then passed through an OR gate.",
+            "answer": "$AB+CD+E$ has two product terms, so 2 AND gates (then an OR gate).",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -88,7 +88,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The internal physical structure of an IGBT is a four-layer semiconductor (P-N-P-N) configuration governed by a MOSFET-style insulated gate.",
+            "answer": "An IGBT is a P-N-P-N structure with a MOS gate.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -103,7 +103,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "A Silicon Controlled Rectifier (SCR) is fundamentally a four-layer device (P-N-P-N structure) possessing exactly three internal PN junctions (J1, J2, and J3).",
+            "answer": "An SCR has four layers (PNPN) and three junctions.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -118,7 +118,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "By constructing magnetic cores using thin laminated steel sheets separated by insulation, the pathway for circulating eddy currents is restricted, thus dramatically reducing eddy current losses.",
+            "answer": "Thin laminations cut the paths of eddy currents, reducing eddy current loss.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -133,7 +133,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Even in a DC generator, the internal current generated within the rotating armature coils is alternating (AC). The commutator serves as a mechanical rectifier to convert it into unidirectional DC at the terminals.",
+            "answer": "The armature emf is alternating; the commutator rectifies it into DC at the terminals.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -148,7 +148,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Cast iron provides high mechanical strength, good damping characteristics, and is cost-effective, making it standard for manufacturing induction motor exterior frames.",
+            "answer": "Cast iron is strong, cheap and damps vibration, so it is used for motor frames.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -163,7 +163,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Elevators require motoring and braking actions in both upward and downward moving directions, which necessitates comprehensive four-quadrant drive operation.",
+            "answer": "An elevator needs motoring and braking in both up and down directions, i.e. four quadrants.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -178,7 +178,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Gallium Arsenide (GaAs) semiconductors inherently possess a bandgap that corresponds to photon emissions located in the non-visible infrared spectrum.",
+            "answer": "GaAs LEDs emit in the infrared region.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -193,7 +193,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "An optocoupler (or optoisolator) packages a light-emitting diode and a photodetector (like a photo transistor) to transfer signals optically while maintaining electrical isolation.",
+            "answer": "An LED with a phototransistor in one package is an optocoupler.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -208,7 +208,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Ultrasonic sensors use the 'Time of Flight' principle, analyzing the exact time it takes for an emitted high-frequency sound wave to strike a target and echo back.",
+            "answer": "An ultrasonic sensor measures the time for a sound pulse to echo back (time of flight).",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -223,7 +223,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The Linear Variable Differential Transformer calculates displacement by taking advantage of varying mutual magnetic inductance between a primary and secondary coils.",
+            "answer": "An LVDT works on mutual inductance.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -238,7 +238,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "For a highly reliable and safe grounding system, the continuity path and overall earth resistance are ideally maintained well below 1 ohm.",
+            "answer": "Good earthing needs very low resistance, taken here as at most 1 ohm.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
@@ -253,7 +253,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "A protective relay constantly monitors the circuit conditions and, upon detecting a fault, actively sends a trip signal to the circuit breaker to disconnect the line.",
+            "answer": "A protective relay senses the fault and sends the trip signal to the circuit breaker.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
@@ -268,7 +268,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Fully electric vehicles (EVs) utilize purely electric powertrains, entirely omitting the internal combustion engine found in hybrid models.",
+            "answer": "A pure EV has no internal combustion engine; hybrids do.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
@@ -283,7 +283,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "At a fully commercial operational scale, the highest operational AC power transmission voltage utilized across the Indian power grid is 765 kV.",
+            "answer": "765 kV is the highest transmission voltage in operation in India.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         }

@@ -14,7 +14,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "An operating system serves as an interface between user applications and hardware, manages system resources efficiently, and provides a platform for applications to execute services.",
+            "answer": "An OS is the interface between hardware and applications, manages hardware resources and provides services, so all three statements hold.",
             "answer_source": "generated",
             "chapter": "Unit 1"
         },
@@ -29,7 +29,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Multiprogramming OS relies on CPU scheduling to switch the CPU among processes to maximize CPU utilization.",
+            "answer": "Multiprogramming switches the CPU among processes, which is exactly what CPU scheduling decides.",
             "answer_source": "generated",
             "chapter": "Unit 1"
         },
@@ -44,7 +44,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Devices, timers, and power failure events generate hardware interrupts. A scheduled job is a software entity managed by the scheduler, not an asynchronous interrupt event.",
+            "answer": "Devices, timers and power failures raise interrupts; a scheduled job is just work handled by the scheduler.",
             "answer_source": "generated",
             "chapter": "Unit 1"
         },
@@ -59,7 +59,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The command interpreter (shell) reads commands specified by the user and executes them by invoking the corresponding system programs or system calls.",
+            "answer": "The command interpreter (shell) reads the user's command and executes it.",
             "answer_source": "generated",
             "chapter": "Unit 1"
         },
@@ -74,7 +74,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "A Process Control Block (PCB) is a data structure used by the operating system to store all the information related to a specific process.",
+            "answer": "The PCB is the OS data structure holding all information about one process.",
             "answer_source": "generated",
             "chapter": "Unit 2"
         },
@@ -89,7 +89,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "A single thread represents a single sequential flow of control, executing only one instruction/task at any given instant.",
+            "answer": "A single thread follows one sequential flow, so it does one task at a time.",
             "answer_source": "generated",
             "chapter": "Unit 2"
         },
@@ -104,7 +104,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Upon process termination, the operating system unlinks the process from all scheduling and ready/wait queues and reclaims its resources.",
+            "answer": "On termination, the process is unlinked from all scheduling queues and its resources are reclaimed.",
             "answer_source": "generated",
             "chapter": "Unit 2"
         },
@@ -119,7 +119,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The dispatcher module assigns control of the CPU to the process selected by the short-term scheduler, handling context switching and switching to user mode.",
+            "answer": "The dispatcher hands the CPU to the process chosen by the short-term scheduler (context switch, switch to user mode).",
             "answer_source": "generated",
             "chapter": "Unit 2"
         },
@@ -164,7 +164,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Deadlock avoidance algorithms (such as Banker's algorithm) monitor the resource-allocation state dynamically to ensure the system always remains in a safe state.",
+            "answer": "Avoidance (e.g., Banker's algorithm) checks the resource-allocation state so that the system always stays safe.",
             "answer_source": "generated",
             "chapter": "Unit 3"
         },
@@ -179,7 +179,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "An unsafe state is not necessarily a deadlock state; rather, it is a state from which the system cannot guarantee avoiding a future deadlock under worst-case resource requests.",
+            "answer": "An unsafe state only means deadlock is possible, not that it has occurred.",
             "answer_source": "generated",
             "chapter": "Unit 3"
         },
@@ -194,7 +194,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Internal fragmentation occurs when allocated memory is slightly larger than the requested size, leaving unused wasted memory internal to the partition.",
+            "answer": "Internal fragmentation is leftover space inside an allocated partition, which is allocated but not used.",
             "answer_source": "generated",
             "chapter": "Unit 4"
         },
@@ -209,7 +209,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "In paging memory management, logical address space is divided into fixed-size blocks called pages, while physical memory is divided into frames.",
+            "answer": "Paging splits logical memory into equal-sized pages (physical memory into frames).",
             "answer_source": "generated",
             "chapter": "Unit 4"
         },
@@ -224,7 +224,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The logical address generated by the CPU consists of a page number ($p$) and page offset ($d$). $p$ is used as an index into the page table to retrieve the physical frame number.",
+            "answer": "The page number $p$ indexes the page table to get the frame number; the offset $d$ stays unchanged.",
             "answer_source": "generated",
             "chapter": "Unit 4"
         },
@@ -239,7 +239,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Paging increases context-switching overhead because the operating system must update hardware registers pointing to page tables or flush the TLB cache when switching processes.",
+            "answer": "Each process switch must reload the page-table register and flush the TLB, which raises context-switch time.",
             "answer_source": "generated",
             "chapter": "Unit 4"
         },
@@ -269,7 +269,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "To enforce protection, processes must strictly be limited to accessing only authorized resources defined within their protection domain.",
+            "answer": "A process should access only resources it is authorized for, within its protection domain.",
             "answer_source": "generated",
             "chapter": "Unit 5"
         },
@@ -284,7 +284,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "A Denial-of-Service (DoS) attack aims to disrupt targeted services, making hardware or network resources inaccessible to authorized users.",
+            "answer": "A DoS attack makes a machine or network resource unavailable to its intended users.",
             "answer_source": "generated",
             "chapter": "Unit 5"
         },
@@ -299,7 +299,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Capability lists are distributed among various domains/processes throughout the system, making global searches and dynamic revocation complex.",
+            "answer": "Capabilities are scattered across many domains and processes, so finding and revoking all copies is hard.",
             "answer_source": "generated",
             "chapter": "Unit 5"
         },

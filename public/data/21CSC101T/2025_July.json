@@ -223,8 +223,8 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The finally block executes after try and catch blocks to ensure resource cleanup, regardless of whether an exception occurred.",
-            "answer_source": "General C++ Knowledge",
+            "answer": "`finally` does not exist in C++ (cleanup is done via destructors/RAII); among the options, resource cleanup is its purpose in languages that have it.",
+            "answer_source": "generated",
             "chapter": "Unit 4"
         },
         {
@@ -253,8 +253,8 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Double-ended queues (deque) allow fast insertions and deletions at both the front and rear.",
-            "answer_source": "General C++ Knowledge",
+            "answer": "A deque gives O(1) insertion and deletion at both ends; vector and array do not (list also does, but deque is the intended pick).",
+            "answer_source": "generated",
             "chapter": "Unit 5"
         },
         {

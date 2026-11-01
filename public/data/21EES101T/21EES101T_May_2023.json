@@ -13,7 +13,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Current I = Power (P) / Voltage (V) = 100 / 220 = 0.4545 A.",
+            "answer": "$I=P/V=100/220=0.4545$ A.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -28,7 +28,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "In Thevenin's theorem, to find the equivalent resistance, ideal voltage sources are turned off by replacing them with a short circuit.",
+            "answer": "To find Thevenin resistance, voltage sources are replaced by short circuits.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -43,7 +43,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "In a purely inductive circuit, the current lags the applied voltage by an angle of exactly 90 degrees.",
+            "answer": "In a pure inductor the current lags the voltage by 90 degrees.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -58,7 +58,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Nodal voltage analysis is fundamentally based on the application of Kirchhoff's Current Law (KCL) at each circuit node.",
+            "answer": "Nodal analysis applies KCL at each node.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -73,7 +73,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The typical forward knee voltage (cut-in voltage) for a standard silicon PN junction diode is approximately 0.7 V.",
+            "answer": "A silicon diode's knee voltage is about 0.7 V.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -88,7 +88,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "A Bipolar Junction Transistor (BJT) is a current-controlled device because its collector current is controlled by the input base current.",
+            "answer": "A BJT's collector current is controlled by the base current.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -103,7 +103,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The Boolean algebraic expression for an Exclusive-OR (XOR) gate is xy' + x'y.",
+            "answer": "XOR $=xy'+x'y$.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -118,7 +118,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "FPGA is the acronym for Field Programmable Gate Array.",
+            "answer": "FPGA = Field Programmable Gate Array.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -133,7 +133,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The primary purpose of laminating a magnetic core in a transformer is to restrict the path of circulating eddy currents, thereby reducing eddy current losses.",
+            "answer": "Laminations break up eddy current paths, reducing eddy current loss.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -148,7 +148,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The armature of a DC generator produces alternating current (AC). The commutator acts as a mechanical rectifier to convert this AC into DC for the external circuit.",
+            "answer": "The armature emf is alternating; the commutator rectifies it into DC.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -163,7 +163,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "In 3-phase machines, the windings are conventionally connected in either Star or Delta configurations.",
+            "answer": "Three-phase windings are connected in star (or delta).",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -178,7 +178,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "A stepper motor is an electromechanical device that converts electrical pulses into discrete incremental mechanical steps.",
+            "answer": "A stepper motor moves in incremental steps for each pulse.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -193,7 +193,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Permanent Magnet Moving Coil (PMMC) instruments respond only to the average value of the current and are used exclusively for measuring DC quantities.",
+            "answer": "A moving coil (PMMC) meter reads the average value, so it measures DC only.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -208,7 +208,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "A diode symbol with outward pointing arrows indicates that the device emits light, representing a Light Emitting Diode (LED).",
+            "answer": "A diode symbol with outgoing arrows is an LED.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -223,7 +223,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "A thermocouple self-generates an electromotive force (EMF) based on temperature differences without the need for external power, making it an active transducer.",
+            "answer": "A thermocouple generates its own voltage, so it is active; the others need excitation.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -238,7 +238,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "A Linear Variable Differential Transformer (LVDT) operates based on varying mutual inductance between a primary coil and two secondary coils as the core moves.",
+            "answer": "An LVDT works on mutual inductance.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -253,7 +253,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The standard frequency for AC power generation and distribution in India is 50 Hz.",
+            "answer": "The Indian standard frequency is 50 Hz.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
@@ -268,7 +268,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Thermal power generally relies on burning fossil fuels such as coal, which are finite and non-renewable.",
+            "answer": "Thermal power burns fossil fuels, which are non-renewable.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
@@ -283,7 +283,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "The primary purpose of earthing equipment is to provide a safe discharge path for leakage currents, thus protecting users from fatal electric shocks.",
+            "answer": "Earthing protects against electric shock by giving leakage current a path to ground.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
@@ -298,7 +298,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Pure Electric Vehicles (EVs) operate entirely on electric power and do not contain an Internal Combustion Engine (ICE), unlike Hybrid vehicles.",
+            "answer": "A pure EV has no internal combustion engine; hybrids do.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         }

@@ -13,7 +13,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "",
+            "answer": "A thread's life cycle includes states such as ready (runnable), running and sleeping. The other options are false: Java is multithreaded and its GC runs at low priority.",
             "answer_source": "generated",
             "chapter": "Unit 3: Advanced Java Programming Paradigms"
         },
@@ -43,7 +43,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "",
+            "answer": "`DriverManager` keeps track of registered JDBC drivers and creates connections through `getConnection()`.",
             "answer_source": "generated",
             "chapter": "Unit 3: Advanced Java Programming Paradigms"
         },
@@ -58,7 +58,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "",
+            "answer": "`JFrame` is a top-level Swing container (with `JDialog`, `JApplet`); `JPanel` is a lightweight container and the others are components.",
             "answer_source": "generated",
             "chapter": "Unit 3: Advanced Java Programming Paradigms"
         },
@@ -88,7 +88,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "",
+            "answer": "A higher-order function takes a function as an argument or returns one.",
             "answer_source": "generated",
             "chapter": "Unit 4: Pythonic Programming Paradigm"
         },
@@ -111,7 +111,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "",
+            "answer": "Python's `multiprocessing` module provides parallel execution across processes (it is imported, not a header file).",
             "answer_source": "generated",
             "chapter": "Unit 4: Pythonic Programming Paradigm"
         },
@@ -126,7 +126,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "",
+            "answer": "A socket is created with `socket.socket()` from Python's socket module.",
             "answer_source": "generated",
             "chapter": "Unit 4: Pythonic Programming Paradigm"
         },
@@ -141,7 +141,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "",
+            "answer": "`send()` transmits data over a connected TCP socket; `sendto()` is for UDP datagrams, and `write`/`transmit` do not exist.",
             "answer_source": "generated",
             "chapter": "Unit 4: Pythonic Programming Paradigm"
         },
@@ -220,7 +220,7 @@
             ],
             "correct_option": "B",
             "marks": null,
-            "answer": "",
+            "answer": "`obj` is null, so calling `obj.print()` compiles fine but throws `NullPointerException` at run time.",
             "answer_source": "generated",
             "chapter": "Unit 2: Java Programming Paradigms"
         },
@@ -235,7 +235,7 @@
             ],
             "correct_option": "C",
             "marks": null,
-            "answer": "",
+            "answer": "Defining a parameterised constructor removes the default one, so `new MyClass()` fails to compile.",
             "answer_source": "generated",
             "chapter": "Unit 2: Java Programming Paradigms"
         },
@@ -250,7 +250,7 @@
             ],
             "correct_option": "B",
             "marks": null,
-            "answer": "",
+            "answer": "Casting `double` to `int` truncates the fractional part: 8.75 becomes 8.",
             "answer_source": "generated",
             "chapter": "Unit 2: Java Programming Paradigms"
         },
@@ -265,7 +265,7 @@
             ],
             "correct_option": "B",
             "marks": null,
-            "answer": "",
+            "answer": "`5 / 2` with `int` operands is integer division, giving 2.",
             "answer_source": "generated",
             "chapter": "Unit 2: Java Programming Paradigms"
         },
@@ -280,7 +280,7 @@
             ],
             "correct_option": "A",
             "marks": null,
-            "answer": "",
+            "answer": "`i` runs from 0 while `i < 5`, so it prints 0 to 4.",
             "answer_source": "generated",
             "chapter": "Unit 2: Java Programming Paradigms"
         },
@@ -295,7 +295,7 @@
             ],
             "correct_option": "C",
             "marks": null,
-            "answer": "",
+            "answer": "Execution enters at `case 2` and falls through (no break) to `case 3`, printing Tuesday and Wednesday, then `break`.",
             "answer_source": "generated",
             "chapter": "Unit 2: Java Programming Paradigms"
         },
@@ -310,7 +310,7 @@
             ],
             "correct_option": "C",
             "marks": null,
-            "answer": "",
+            "answer": "Using local variable `arr` before it is initialised is a compile-time error (\"might not have been initialized\"), not a runtime NullPointerException.",
             "answer_source": "generated",
             "chapter": "Unit 2: Java Programming Paradigms"
         }

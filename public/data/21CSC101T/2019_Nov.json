@@ -13,8 +13,8 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "In Object-Oriented Programming, private members and functions of a class are strictly hidden from outside access to ensure encapsulation. Only the member functions of that specific class have the privilege to access them.",
-            "answer_source": "General Knowledge",
+            "answer": "Private members are hidden from outside code; only member functions of the same class (and friends) can access them, which enforces encapsulation.",
+            "answer_source": "generated",
             "chapter": "Unit 1"
         },
         {
@@ -28,8 +28,8 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "A constructor is a special member function that is automatically called when an object of a class is created. Its primary purpose is to initialize the object's data members and allocate necessary memory.",
-            "answer_source": "General Knowledge",
+            "answer": "A constructor runs automatically when an object is created and initializes that object's data members.",
+            "answer_source": "generated",
             "chapter": "Unit 2"
         },
         {
@@ -58,8 +58,8 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "A Use Case Diagram represents the dynamic behavior of a system. It shows the interaction between the system's use cases and the external entities (actors), making it a key tool for requirements gathering.",
-            "answer_source": "General Knowledge",
+            "answer": "A use case diagram shows how external actors interact with the system's functions, so it is used to gather requirements.",
+            "answer_source": "generated",
             "chapter": "Unit 1"
         },
         {
@@ -73,8 +73,8 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "(i) is True because C++ does not allow the creation of new operators; only existing ones like +, -, *, etc., can be overloaded. (ii) is False because you cannot change the fundamental grammatical syntax or basic meaning (e.g., you cannot change operator precedence or arity).",
-            "answer_source": "General Knowledge",
+            "answer": "(i) True: new operators cannot be created, only existing ones overloaded. (ii) False: an operator's basic meaning, precedence and arity cannot be changed.",
+            "answer_source": "generated",
             "chapter": "Unit 2"
         },
         {
@@ -118,8 +118,8 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "In UML, behavioral diagrams illustrate the dynamic behavior of the system, such as how data moves, how objects interact over time, and the flow of control. Activity, Use Case, Collaboration, and Sequence diagrams all fall under this category.",
-            "answer_source": "General Knowledge",
+            "answer": "All four show system behaviour (interactions and flow over time), so they are behavioural diagrams; structural diagrams show the static layout.",
+            "answer_source": "generated",
             "chapter": "Unit 1"
         },
         {
@@ -133,8 +133,8 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "In C++ inheritance there are 3 access (visibility) modes: public, private and protected. If forms of inheritance were meant (single, multiple, multilevel, hierarchical, hybrid) there would be 5, which is not an option, so 3 is the intended answer.",
-            "answer_source": "General Knowledge",
+            "answer": "Taking the three inheritance access modes (public, private, protected) as the basic types gives 3, the only fitting option.",
+            "answer_source": "generated",
             "chapter": "Unit 3"
         },
         {
@@ -208,8 +208,8 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "If an exception is thrown in a C++ program and is not caught by any matching `catch` block (e.g., thrown outside a `try` block), the program invokes the `std::terminate()` function, which aborts the program.",
-            "answer_source": "General Knowledge",
+            "answer": "An exception thrown outside a try block (or not caught) has no handler, so C++ calls `std::terminate()`, which aborts the program.",
+            "answer_source": "generated",
             "chapter": "Unit 4"
         },
         {

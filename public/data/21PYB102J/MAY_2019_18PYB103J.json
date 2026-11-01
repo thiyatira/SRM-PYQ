@@ -13,7 +13,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Electrons are fermions with half-integer spin and obey the Pauli exclusion principle, thus following Fermi-Dirac statistics.",
+            "answer": "Electrons are fermions, so they obey Fermi-Dirac statistics.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -28,7 +28,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "At 0K, the valence band of a semiconductor is completely full and the conduction band is empty, meaning no free carriers are available for conduction.",
+            "answer": "At low T the valence band is full and the conduction band empty, so no free carriers: an insulator.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
@@ -43,7 +43,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "A phonon is a collective excitation in a periodic, elastic arrangement of atoms or molecules in condensed matter, specifically a quantized mode of vibration.",
+            "answer": "A phonon is the quantum of elastic (lattice) waves.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -58,7 +58,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Acceptor atoms create energy levels near the valence band; they accept electrons from the valence band, thereby creating holes in the valence band.",
+            "answer": "Acceptors take electrons from the valence band, leaving holes there.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
@@ -73,7 +73,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Diamine derivatives are commonly used as Hole Transport Layers (HTL) in Organic Light Emitting Diodes because of their high hole mobility.",
+            "answer": "Diamine layers have high hole mobility, so they serve as the hole transport layer (HTL).",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
@@ -88,7 +88,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Thermal energy provides the necessary excitation for electrons to jump from the valence band to the conduction band, creating electron-hole pairs.",
+            "answer": "Thermal energy lifts electrons across the gap, creating electron-hole pairs.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
@@ -103,7 +103,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "A Light Emitting Diode (LED) emits light through electroluminescence when electrical current passes through it in the forward-biased direction.",
+            "answer": "A forward-biased LED converts electrical energy into light (electroluminescence).",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
@@ -118,7 +118,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "As temperature increases, more charge carriers are generated in a semiconductor, decreasing its resistance, which defines a negative temperature coefficient.",
+            "answer": "Heating generates more carriers, so resistance falls: a negative temperature coefficient.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
@@ -133,7 +133,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Drift velocity is the net velocity an electron gains due to the influence of an external electric field.",
+            "answer": "Drift velocity is the net velocity gained in an electric field.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
@@ -148,7 +148,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Spontaneous emission is a natural decay process where an electron returns to a lower energy state without external stimulation.",
+            "answer": "Spontaneous emission occurs without any external stimulus.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
@@ -163,7 +163,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The Fill Factor (FF) is the ratio of the actual maximum power output (Pmax) to the theoretical power (Voc x Isc).",
+            "answer": "$FF = P_{max}/(V_{oc}I_{sc})$: maximum power over the ideal power.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
@@ -178,7 +178,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "According to Ohm's law (J = σE), current density (J) is directly proportional to the applied electric field (E).",
+            "answer": "$J=\\sigma E$: current density is proportional to the applied field.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
@@ -193,7 +193,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "An ideal monochromator isolates a single wavelength, so its effective bandwidth should be infinitely narrow.",
+            "answer": "An ideal monochromator isolates one wavelength, so its bandwidth should be infinitely narrow.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
@@ -208,7 +208,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Photomultiplier tubes (PMT) use the photoelectric effect to eject electrons, which are then multiplied via secondary emission through dynodes.",
+            "answer": "In a PMT, photoemitted electrons are multiplied by secondary emission at dynodes.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
@@ -223,7 +223,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Alkali metals have low work functions, making them excellent materials for photoemissive surfaces (ejecting electrons when exposed to light).",
+            "answer": "Alkali metals have low work functions, so they emit electrons easily under light.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
@@ -238,7 +238,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "A monochromator is an optical device that transmits a mechanically selectable narrow band of wavelengths of light or other radiation.",
+            "answer": "A monochromator separates the wavelengths of the source radiation.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
@@ -253,7 +253,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Atomic Force Microscopy (AFM) requires a very sharp tip (typically < 10-20nm) to achieve high-resolution imaging of atomic surfaces.",
+            "answer": "A sharp tip (radius below ~20-50 nm) is needed for high-resolution AFM.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
@@ -268,7 +268,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "A quantum wire is a structure where carriers are confined in two directions and are free to move in only one direction.",
+            "answer": "A quantum wire is confined in two directions and free in one.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
@@ -283,7 +283,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The chemical reactivity of CNTs depends on their curvature; smaller diameter tubes have higher curvature and higher strain, making them more reactive.",
+            "answer": "Smaller diameter means higher curvature and strain, hence higher reactivity.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
@@ -298,7 +298,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Chemical Vapor Deposition (CVD) involves chemical reactions of gaseous reactants (precursors) on or near a heated substrate.",
+            "answer": "CVD precursors are gases that react on a heated substrate.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         }

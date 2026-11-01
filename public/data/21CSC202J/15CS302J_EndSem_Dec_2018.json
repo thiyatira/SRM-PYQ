@@ -142,7 +142,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "**Rationale:** Both the Hydra operating system and the Cambridge CAP computer system are classic capability-based protection systems where access rights are associated directly with capabilities held by processes.",
+            "answer": "Hydra and the Cambridge CAP system both protect resources through capabilities held by processes.",
             "answer_source": "generated",
             "chapter": "Unit 5: PROTECTION AND SECURITY"
         },
@@ -157,7 +157,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "**Rationale:** In UNIX, domain switching is accomplished through the file system mechanism using the setuid (Set User ID) bit associated with executable files.",
+            "answer": "UNIX switches domains via the file system: the setuid bit on an executable makes it run with its owner's rights.",
             "answer_source": "generated",
             "chapter": "Unit 5: PROTECTION AND SECURITY"
         },
@@ -172,7 +172,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "**Rationale:** The principle of least privilege dictates that any module, user, or process must be granted only the minimal set of privileges required to complete its designated task.",
+            "answer": "Least privilege: give each user, program or system only the minimum rights needed for its task.",
             "answer_source": "generated",
             "chapter": "Unit 5: PROTECTION AND SECURITY"
         },
@@ -187,7 +187,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "**Rationale:** Role-Based Access Control (RBAC) restricts system access to authorized users by assigning privileges to defined organizational roles rather than individual accounts.",
+            "answer": "RBAC grants permissions to roles, and only users assigned to a role get access.",
             "answer_source": "generated",
             "chapter": "Unit 5: PROTECTION AND SECURITY"
         }

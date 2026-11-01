@@ -344,7 +344,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "LRU page replacement requires hardware support, typically implemented via a logical clock/counter or a stack of page numbers.",
+            "answer": "LRU needs hardware support: either a counter (time-of-use stamp per page) or a stack of page numbers kept in order of use.",
             "answer_source": "generated",
             "chapter": "Unit 4: Page Replacement"
         },

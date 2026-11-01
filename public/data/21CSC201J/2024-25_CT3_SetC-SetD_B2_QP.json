@@ -13,7 +13,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Resource allocation and process scheduling are typically managed using a First-In-First-Out (FIFO) queue or a priority queue, whereas function call management (recursion), string reversal, and postfix expression evaluation naturally follow Last-In-First-Out (LIFO) stack semantics.",
+            "answer": "Scheduling and resource allocation are FIFO (queue) tasks; recursion, string reversal and postfix evaluation are LIFO and suit a stack.",
             "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },
@@ -28,7 +28,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "1. Inside parentheses, exponentiation has higher precedence than multiplication: $F \\wedge G \\to FG^{\\wedge}$.\n2. Next, multiplication: $E * (FG^{\\wedge}) \\to EFG^{\\wedge}*$.\n3. Finally, addition with $D$: $D + (EFG^{\\wedge}*) \\to DEFG^{\\wedge}*+$.",
+            "answer": "$F\\wedge G \\to FG\\wedge$ (highest precedence), then $E*(\\dots) \\to EFG\\wedge*$, then $D+(\\dots) \\to DEFG\\wedge*+$.",
             "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },
@@ -43,7 +43,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "In a circular queue of capacity $N = 10$, the next insertion index is calculated as:\n$$\\text{rear} = (\\text{rear} + 1) \\bmod N = (9 + 1) \\bmod 10 = 0$$",
+            "answer": "Next index $= (rear+1) \\bmod 10 = (9+1) \\bmod 10 = 0$.",
             "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },
@@ -58,7 +58,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Breadth-First Search (BFS) explores vertices level-by-level in FIFO order, requiring a Queue data structure to keep track of discovered vertices yet to be explored.",
+            "answer": "BFS explores level by level in FIFO order, so it needs a queue.",
             "answer_source": "generated",
             "chapter": "Unit 5: Graph"
         },
@@ -71,9 +71,9 @@
                 "Use a recursive function to insert each number, ensuring it follows AVL properties without rotations.",
                 "Use a linked list to store the input values and convert it into an AVL tree later."
             ],
-            "correct_option": "A",
+            "correct_option": "B",
             "marks": 1,
-            "answer": "If the input sequence already arrives in an order such that at every step the balance factor of every node remains in $\\{-1, 0, +1\\}$, the tree can simply be built by standard BST insertions without triggering any rotation operations.",
+            "answer": "Sort the keys and recursively make the median the root of each half; this gives a balanced tree with no rotations. Inserting in the given order may need rotations.",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
@@ -88,7 +88,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "For a B-tree of order $m = 5$ with height defined as 2 levels (level 1 = root, level 2 = leaf nodes):\n- Root contains at least 1 key and 2 children.\n- Each non-root child node must contain at least $\\lceil m/2 \\rceil - 1 = \\lceil 5/2 \\rceil - 1 = 3 - 1 = 2$ keys.\n- Minimum total keys = $1 \\text{ (root)} + 2 \\times 2 \\text{ (leaves)} = 5$ keys.",
+            "answer": "Root has at least 1 key and 2 children; each child has at least $\\lceil 5/2\\rceil - 1 = 2$ keys. Minimum $= 1 + 2\\times 2 = 5$.",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
@@ -103,7 +103,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "By definition, topological sorting of a Directed Acyclic Graph (DAG) produces a linear sequence of vertices where for every directed edge $(u, v)$, $u$ precedes $v$.",
+            "answer": "A topological sort orders the vertices of a DAG so that for every edge $u \\to v$, $u$ comes before $v$.",
             "answer_source": "generated",
             "chapter": "Unit 5: Graph"
         },
@@ -118,7 +118,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "According to the Handshaking Lemma, $\\sum_{v \\in V} \\deg(v) = 2|E|$, which is always an even number (Statement Q is TRUE). Because the total sum is even, the sum of odd degrees must also be even, which implies that the number of vertices with odd degrees must be even (Statement P is TRUE).",
+            "answer": "Sum of degrees $= 2|E|$ is even (Q), so the number of odd-degree vertices must be even (P).",
             "answer_source": "generated",
             "chapter": "Unit 5: Graph"
         },
@@ -213,7 +213,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "push(10), push(20), push(30) $\\to$ `[10, 20, 30]`\n- pop() $\\to$ removes 30, stack = `[10, 20]`\n- push(40), push(50) $\\to$ `[10, 20, 40, 50]`\n- pop(), pop() $\\to$ removes 50, then 40, stack = `[10, 20]`\n- push(60), push(70) $\\to$ `[10, 20, 60, 70]`\n- pop() $\\to$ removes 70, stack = `[10, 20, 60]`\nReading from top to bottom: 60, 20, 10.",
+            "answer": "Stack after each step: [10,20,30] → pop 30 → push 40, 50 → pop 50, 40 → push 60, 70 → pop 70 leaves [10,20,60]; top to bottom: 60, 20, 10.",
             "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },
@@ -228,7 +228,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Each undo reverts to the previously pushed state:\n- 1st Undo: reverts from state 4 to state 3 (\"Hello World!\")\n- 2nd Undo: reverts from state 3 to state 2 (\"Hello World\")\n- 3rd Undo: reverts from state 2 to state 1 (\"Hello\")",
+            "answer": "Each undo pops one state: state 4 → 3 → 2 → 1, leaving \"Hello\".",
             "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },
@@ -243,7 +243,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "In a circular array implementation, the queue is recognized as full when advancing `REAR` by one circular position meets `FRONT`, represented by `FRONT == (REAR + 1) % LENGTH`.",
+            "answer": "The circular queue is full when advancing `REAR` by one (mod length) would hit `FRONT`.",
             "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },
@@ -258,7 +258,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The maximum number of nodes in a binary tree of height $h$ (levels 1 through $h$) is $\\sum_{i=0}^{h-1} 2^i = 2^h - 1$. Hence, $2^h + 1$ is incorrect.",
+            "answer": "A level-based tree of height $h$ has at most $2^h - 1$ nodes, so $2^h + 1$ is wrong.",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
@@ -273,7 +273,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "In-order traversal (Left-Root-Right) yields elements in sorted ascending order, whereas pre-order traversal (Root-Left-Right) does not produce sorted output.",
+            "answer": "Only in-order gives ascending order on a BST; pre-order (Root, Left, Right) does not.",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
@@ -288,7 +288,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "In a min-heap, every parent $A[i]$ must satisfy $A[i] \\le A[2i+1]$ and $A[i] \\le A[2i+2]$:\n- For (a): $A[0]=2 \\le 3, 4$; $A[1]=3 \\le 5, 10$; $A[2]=4 \\le 7, 8$. All heap conditions are satisfied.",
+            "answer": "Only [2, 3, 4, 5, 10, 7, 8] has every parent smaller than both children; the others violate it (e.g. 5 > 3, 7 > 3, 40 > 30).",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
@@ -303,7 +303,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The standard all-pairs shortest path algorithm (Floyd-Warshall Algorithm) operates directly on an adjacency matrix representation with $O(V^3)$ time complexity.",
+            "answer": "Floyd-Warshall (all-pairs shortest paths) works on an adjacency matrix in $O(V^3)$.",
             "answer_source": "generated",
             "chapter": "Unit 5: Graph"
         },
@@ -318,7 +318,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Depth-First Search explores as deep as possible along each branch before backtracking, which inherently follows LIFO order managed using a Stack.",
+            "answer": "DFS goes deep then backtracks (LIFO), so it uses a stack.",
             "answer_source": "generated",
             "chapter": "Unit 5: Graph"
         },

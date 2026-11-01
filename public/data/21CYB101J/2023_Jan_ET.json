@@ -13,7 +13,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Crystal field splitting energy increases with the oxidation state of the metal ion because higher oxidation states increase the attraction between the metal and the ligands, leading to a greater splitting.",
+            "answer": "A higher oxidation state pulls ligands in more strongly, so the splitting $\\Delta_o$ increases with the metal's charge.",
             "answer_source": "generated",
             "chapter": "Unit 1: Crystal field theory"
         },
@@ -28,7 +28,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The 1s electron in helium feels an effective nuclear charge of about 1.70 due to shielding from the other electron.",
+            "answer": "Slater's rules: $Z_{eff} = 2 - 0.30 = 1.70$.",
             "answer_source": "generated",
             "chapter": "Unit 1: Effective nuclear charge"
         },
@@ -58,7 +58,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Cr(CO)6 is a low-spin complex with all electrons paired due to strong field CO ligands, resulting in zero magnetic moment.",
+            "answer": "Cr(0) is $d^6$ and CO is a strong-field ligand, so all electrons are paired and $\\mu = 0$.",
             "answer_source": "generated",
             "chapter": "Unit 1: Optical & magnetic properties of transition metal complexes"
         },
@@ -73,7 +73,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "A small equilibrium constant (K<1) indicates that standard Gibbs free energy change (∆G°) is positive.",
+            "answer": "$\\Delta G^\\circ = -RT\\ln K$; since $K<1$, $\\ln K$ is negative and $\\Delta G^\\circ$ is positive.",
             "answer_source": "generated",
             "chapter": "Unit 2: Use of free energy in chemical equilibria"
         },
@@ -88,7 +88,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "According to the second law of thermodynamics, the entropy (∆S) of an isolated system never decreases; it can either increase or remain the same.",
+            "answer": "For an isolated system entropy never decreases, so $\\Delta S \\ge 0$ (zero only for a reversible process).",
             "answer_source": "generated",
             "chapter": "Unit 2: Thermodynamic functions: Entropy"
         },
@@ -178,7 +178,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "According to CIP rules, ethyl (CH2CH3) has the lowest priority due to its lower atomic number connections compared to the others.",
+            "answer": "Ranking by atoms on the first carbon: –CHO (O,O,H) > –CH(OH)CH₃ (O,C,H) > –CH=CH₂ (C,C,H) > –CH₂CH₃ (C,H,H), so ethyl is lowest.",
             "answer_source": "generated",
             "chapter": "Unit 3: Stereochemistry - Configurations"
         },
@@ -253,7 +253,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "In most fiber-reinforced composites, the matrix usually fails after the fibers because the fibers bear most of the load.",
+            "answer": "Fibres usually fail at lower strain than the ductile matrix, so they break first and the matrix fails last.",
             "answer_source": "generated",
             "chapter": "Unit 5: Fibre Reinforced Composites"
         },
@@ -268,7 +268,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Beyond the proportionality limit the material reaches the elastic limit, where it still deforms elastically although stress and strain are no longer proportional (Hooke's law is not followed).",
+            "answer": "Beyond the proportionality limit (Hooke's law no longer obeyed) the material is still elastic up to the elastic limit.",
             "answer_source": "generated",
             "chapter": "Unit 5: Mechanical properties of solid"
         },
@@ -283,7 +283,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The Bragg's condition is satisfied when the interplanar spacing is at least λ/2, where λ is the wavelength of the incident X-ray.",
+            "answer": "From $n\\lambda = 2d\\sin\\theta$ with $\\sin\\theta \\le 1$, $d \\ge \\lambda/2$.",
             "answer_source": "generated",
             "chapter": "Unit 5: Surface Characterisation techniques - XRD"
         },

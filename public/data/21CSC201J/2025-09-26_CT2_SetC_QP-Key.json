@@ -14,8 +14,8 @@
             ],
             "correct_option": null,
             "marks": null,
-            "answer": "The correct output is 10 20 40 50, which does not match any of the printed options (the options contain a typographical error).\n- Iteration 1: `i = 0`. Prints `arr[0]` which is `10`. `i` becomes `0 + (10 % 3) = 1`.\n- Iteration 2: `i = 1`. Prints `arr[1]` which is `20`. `i` becomes `1 + (20 % 3) = 3`.\n- Iteration 3: `i = 3`. Prints `arr[3]` which is `40`. `i` becomes `3 + (40 % 3) = 4`.\n- Iteration 4: `i = 4`. Prints `arr[4]` which is `50`. `i` becomes `4 + (50 % 3) = 6`.\n- Since `i = 6` is not less than 5, the loop terminates.",
-            "answer_source": "provided",
+            "answer": "Print then update: 10 (i=1), 20 (i=3), 40 (i=4), 50 (i=6, stop). Output is 10 20 40 50, which matches no option.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
         {
@@ -37,7 +37,7 @@
             ],
             "correct_option": "A",
             "marks": null,
-            "answer": "1. `enqueue(10)` -> front = 0, rear = 0, array: `[10, _, _, _, _]`\n2. `enqueue(20)` -> front = 0, rear = 1, array: `[10, 20, _, _, _]`\n3. `dequeue()` -> front = 1, rear = 1, array: `[_, 20, _, _, _]`\n4. `enqueue(30)` -> front = 1, rear = 2, array: `[_, 20, 30, _, _]`\n5. `enqueue(40)` -> front = 1, rear = 3, array: `[_, 20, 30, 40, _]`\n6. `enqueue(50)` -> front = 1, rear = 4, array: `[_, 20, 30, 40, 50]`",
+            "answer": "enqueue 10, 20 gives front 0, rear 1; dequeue moves front to 1; enqueue 30, 40, 50 moves rear to 4. So front = 1, rear = 4.",
             "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },

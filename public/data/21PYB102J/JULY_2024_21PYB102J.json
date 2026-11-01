@@ -13,7 +13,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "In the absence of an external electric field, free electrons in a metal move randomly due to thermal energy.",
+            "answer": "With no field, free electrons move randomly due to thermal energy.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -28,7 +28,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The tight-binding model uses a Linear Combination of Atomic Orbitals (LCAO) to calculate the electronic band structure.",
+            "answer": "Tight binding uses a linear combination of atomic orbitals (LCAO).",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -43,7 +43,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "For a free electron, the energy E is proportional to the square of the wave vector k (E = ħ²k²/2m), which represents a parabola.",
+            "answer": "$E=\\hbar^2k^2/2m$ is quadratic in k: a parabola.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -58,7 +58,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Band theory explains the electrical properties of materials based on the energy gap between the valence and conduction bands.",
+            "answer": "Band theory explains metals, semiconductors and insulators through the energy gap between valence and conduction bands.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -73,7 +73,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "In an intrinsic semiconductor, every electron excited to the conduction band leaves behind exactly one hole in the valence band.",
+            "answer": "Each electron excited to the conduction band leaves one hole, so $n=p$.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
@@ -88,7 +88,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Electron affinity is the energy released when an electron is added to the conduction band from the vacuum level.",
+            "answer": "Electron affinity is the energy from the vacuum level down to the conduction band edge.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
@@ -118,7 +118,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Auger recombination is a non-radiative process involving three carriers (e.g., two electrons and one hole).",
+            "answer": "Auger recombination involves three carriers.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
@@ -133,7 +133,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Fermi's golden rule is used to calculate the probability of a quantum transition (transition rate) per unit time.",
+            "answer": "Fermi's golden rule gives the transition rate per unit time.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
@@ -148,7 +148,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "For bulk semiconductors with parabolic bands, the joint density of states is proportional to the square root of the energy.",
+            "answer": "Parabolic bands give a joint DOS $\\propto (E-E_g)^{1/2}$, i.e. $\\propto E^{1/2}$.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
@@ -163,7 +163,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Stimulated emission occurs when an incoming photon induces an excited electron to drop to a lower state and emit a second, identical photon.",
+            "answer": "Stimulated emission: an incoming photon triggers emission of an identical second photon.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
@@ -178,7 +178,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "In a solar cell, the total current is the diode dark current minus the light-generated photocurrent (IL).",
+            "answer": "Net current = diode dark current minus photocurrent: $I=I_0(e^{qV/\\beta kT}-1)-I_L$.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
@@ -193,7 +193,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Resistivity ρ = R * (Area/Length). For a bar with width 'w' and height 'h', Area = w * h. Thus ρ = Rwh/l.",
+            "answer": "$R=\\rho l/(wh)$, so $\\rho=Rwh/l$.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
@@ -208,7 +208,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "The Boltzmann Transport Equation (BTE) describes the statistical distribution of particles and is fundamental for calculating transport coefficients.",
+            "answer": "The Boltzmann transport equation yields conductivities and thermoelectric power from the carrier distribution.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
@@ -223,7 +223,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The built-in potential barrier (Vbi) for a standard Silicon p-n junction is typically around 0.6 to 0.7 V.",
+            "answer": "Silicon's built-in barrier is about 0.6-0.7 V.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
@@ -253,7 +253,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "In a 2D quantum well system, the density of states is a constant step function, making it independent of energy within each subband.",
+            "answer": "In 2D the DOS is a constant step function, independent of energy.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
@@ -268,7 +268,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Properties of nanomaterials change significantly based on both their size (quantum confinement) and their specific shape/morphology.",
+            "answer": "At the nanoscale, properties depend on both size (quantum confinement) and shape.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
@@ -298,7 +298,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Physical Vapour Deposition (PVD) techniques, such as laser ablation or sputtering, are typically conducted under high vacuum conditions.",
+            "answer": "PVD (evaporation, sputtering, laser ablation) is carried out under high vacuum.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         }

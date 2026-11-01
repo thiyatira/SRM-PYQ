@@ -88,8 +88,8 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "All four operators (*, (), ->, =) can be overloaded in C++; only ::, ., .*, ?: and sizeof cannot. The answer key marks () (the function call operator) as the choice.",
-            "answer_source": "General C++ Knowledge",
+            "answer": "Every listed operator can be overloaded (only `::`, `.`, `.*`, `?:` and `sizeof` cannot); the key marks `()`, the function-call operator.",
+            "answer_source": "generated",
             "chapter": "Unit 2"
         },
         {
@@ -201,7 +201,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The Use Case diagram gives the static (use case) view of a system, whereas State Chart, Collaboration and Activity diagrams show dynamic behaviour.",
+            "answer": "Use case diagram captures the system's functional requirements rather than runtime flow; state chart, collaboration and activity diagrams model dynamic behaviour.",
             "answer_source": "generated",
             "chapter": "Unit 2"
         },
@@ -231,7 +231,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "int (*fp)(char *) declares fp as a pointer to a function that takes a char * argument and returns an int. Option D is the closest choice (it is a pointer to a function; its wording about returning a pointer to int is loose).",
+            "answer": "`int (*fp)(char *)` is a pointer to a function taking `char *` and returning `int`; D is the closest option, though it loosely says it returns a pointer to int.",
             "answer_source": "generated",
             "chapter": "Unit 1"
         },
@@ -291,8 +291,8 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "",
-            "answer_source": "General UML Knowledge",
+            "answer": "A package diagram consists of package symbols plus the grouped use cases, classes and components, so the combined option is complete.",
+            "answer_source": "generated",
             "chapter": "Unit 4"
         },
         {
@@ -306,8 +306,8 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "",
-            "answer_source": "General C++ Knowledge",
+            "answer": "STL is a set of template classes and functions that provide common data structures (vector, list, map) and algorithms.",
+            "answer_source": "generated",
             "chapter": "Unit 5"
         },
         {
@@ -321,8 +321,8 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "",
-            "answer_source": "General C++ Knowledge",
+            "answer": "Containers are STL classes that store objects and data, e.g. vector, list, map.",
+            "answer_source": "generated",
             "chapter": "Unit 5"
         },
         {

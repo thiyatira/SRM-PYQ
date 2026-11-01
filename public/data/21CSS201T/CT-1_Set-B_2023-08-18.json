@@ -14,8 +14,8 @@
             ],
             "correct_option": "B",
             "marks": null,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "Hex to binary: 1E.53 = 0001 1110 . 0101 0011; regroup in threes: 011 110 . 010 100 110 = 36.246.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
@@ -29,8 +29,8 @@
             ],
             "correct_option": "B",
             "marks": null,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "ASCII-8 (extended ASCII) uses 8 bits, so $2^8=256$ characters (7-bit ASCII gives 128).",
+            "answer_source": "generated",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
@@ -44,8 +44,8 @@
             ],
             "correct_option": "D",
             "marks": null,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "$14=1110$; Gray: 1, $1\\oplus1=0$, $1\\oplus1=0$, $1\\oplus0=1$ gives 1001.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
@@ -59,8 +59,8 @@
             ],
             "correct_option": "C",
             "marks": null,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "Invert 1010 to get 0101, then add 1 to get 0110.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
@@ -74,8 +74,8 @@
             ],
             "correct_option": "A",
             "marks": null,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "The output is 1 when the inputs are equal, which is XNOR (the heading says XOR, but the table matches XNOR).",
+            "answer_source": "generated",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
@@ -104,8 +104,8 @@
             ],
             "correct_option": "C",
             "marks": null,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "Sign bit 1 for negative, then magnitude $9=0001001$, giving 10001001.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
@@ -119,8 +119,8 @@
             ],
             "correct_option": "A",
             "marks": null,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "BCD codes each digit in 4 bits: 3 = 0011, 5 = 0101, 7 = 0111.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
@@ -134,8 +134,8 @@
             ],
             "correct_option": "C",
             "marks": null,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "MAR holds the address of the instruction being fetched (1008); the PC already points to the next one, 1008 + 8 = 1016.",
+            "answer_source": "generated",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
@@ -147,10 +147,10 @@
                 "1000",
                 "0001"
             ],
-            "correct_option": "C",
+            "correct_option": "B",
             "marks": null,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "Little-endian stores the least significant bit/byte first, so the order is reversed: 0010 becomes 0100.",
+            "answer_source": "generated",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {

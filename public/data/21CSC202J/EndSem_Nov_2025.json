@@ -14,7 +14,7 @@
       ],
       "correct_option": "D",
       "marks": 1,
-      "answer": "**Rationale:** A process is defined as a program in execution. A program is a passive entity (like a file stored on disk), whereas a process is an active entity with a program counter and associated resources.",
+      "answer": "A process is a program in execution; a program is just a passive file on disk.",
       "answer_source": "generated",
       "chapter": "Unit 1: Process Management"
     },
@@ -29,7 +29,7 @@
       ],
       "correct_option": "D",
       "marks": 1,
-      "answer": "**Rationale:** A trap (or exception) is a software-generated interrupt caused by an error (e.g., division by zero, invalid memory access) or a specific request from a user program (e.g., a system call).",
+      "answer": "A trap is a software-generated interrupt caused by an error (e.g., divide by zero) or a user request such as a system call.",
       "answer_source": "generated",
       "chapter": "Unit 1: Introduction"
     },
@@ -44,7 +44,7 @@
       ],
       "correct_option": "B",
       "marks": 1,
-      "answer": "**Rationale:** The bootstrap program (stored in ROM or EEPROM) initializes all aspects of the system, locates the operating system kernel, and loads it into memory to start execution.",
+      "answer": "The bootstrap program, kept in ROM/EEPROM, loads the OS kernel into memory and starts it.",
       "answer_source": "generated",
       "chapter": "Unit 1: System Boot"
     },
@@ -59,7 +59,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "**Rationale:** Hardware devices notify the CPU that an I/O operation has completed by asserting a signal on the bus, causing a hardware interrupt.",
+      "answer": "When an I/O operation completes, the device controller signals the CPU with a hardware interrupt.",
       "answer_source": "generated",
       "chapter": "Unit 1: Computer-System Organization"
     },
@@ -74,7 +74,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "**Rationale:** A race condition occurs when multiple processes access and manipulate shared data concurrently, and the outcome depends on the specific order in which the statements execute.",
+      "answer": "A race condition: the outcome depends on the order in which concurrent processes access shared data.",
       "answer_source": "generated",
       "chapter": "Unit 2: Process Synchronization"
     },
@@ -89,7 +89,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "**Rationale:** Classic Peterson's solution is a software-based solution designed specifically for two processes ($P_0$ and $P_1$) sharing two data items: `turn` and `flag[2]`.",
+      "answer": "Peterson's solution works for exactly two processes, using the shared `turn` and `flag[2]` variables.",
       "answer_source": "generated",
       "chapter": "Unit 2: Peterson's Solution"
     },
@@ -104,7 +104,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "**Rationale:** A weak semaphore does not specify the order in which processes are removed from the queue (e.g., random order), whereas a strong semaphore removes processes in First-In, First-Out (FIFO) order.",
+      "answer": "A weak semaphore does not fix the order in which waiting processes are released; a strong one uses FIFO.",
       "answer_source": "generated",
       "chapter": "Unit 2: Semaphores"
     },
@@ -119,7 +119,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "**Rationale:** A Mutex (Mutual Exclusion) lock is a synchronization tool used to protect critical regions and prevent race conditions by allowing only one process at a time to access a shared resource.",
+      "answer": "A mutex allows only one process at a time into the critical section, so it synchronizes access to a resource.",
       "answer_source": "generated",
       "chapter": "Unit 2: Mutex Locks"
     },
@@ -134,7 +134,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "**Rationale:** In Round-Robin scheduling, a smaller time quantum ($t_Q$) provides a shorter response time, as processes get the CPU more frequently.",
+      "answer": "With Round Robin, a smaller quantum gives each process the CPU sooner and so a shorter response time; 15 ms is smallest.",
       "answer_source": "generated",
       "chapter": "Unit 3: CPU Scheduling"
     },
@@ -149,7 +149,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "**Rationale:** The short-term scheduler, or CPU scheduler, selects from among the processes that are ready to execute in memory and allocates the CPU to one of them.",
+      "answer": "The short-term scheduler is the CPU scheduler: it picks the next ready process to run.",
       "answer_source": "generated",
       "chapter": "Unit 3: Basic Concepts"
     },
@@ -164,7 +164,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "**Rationale:** The four necessary conditions for deadlock (Coffman conditions) are: Mutual Exclusion, Hold and Wait, No Preemption, and Circular Wait. Progress and Fairness is a synchronization criteria, not a deadlock condition.",
+      "answer": "The four deadlock conditions are mutual exclusion, hold and wait, no preemption and circular wait. Progress and fairness is not one of them.",
       "answer_source": "generated",
       "chapter": "Unit 3: Deadlock Characterization"
     },
@@ -179,7 +179,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "**Rationale:** In the classic bounded-buffer solution, semaphore `empty` is initialized to $N$ (the number of empty buffer slots available) and `full` is initialized to $0$ (the number of occupied buffer slots/items).",
+      "answer": "`empty` starts at $N$ and counts free slots; `full` starts at 0 and counts filled slots.",
       "answer_source": "generated",
       "chapter": "Unit 3: Classic Problems of Synchronization"
     },
@@ -194,7 +194,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "**Rationale:** A page fault exception occurs when a process attempts to access a virtual page whose valid-invalid bit in the page table is set to invalid (i.e., not present in main memory).",
+      "answer": "A page fault happens when the referenced page is not in main memory (invalid bit in the page table).",
       "answer_source": "generated",
       "chapter": "Unit 4: Demand Paging"
     },
@@ -209,7 +209,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "**Rationale:** A File Control Block (FCB) is a system structure containing details about a file, such as ownership, permissions, size, and location of data blocks.",
+      "answer": "A File Control Block (FCB) holds a file's details such as owner, permissions, size and block locations.",
       "answer_source": "generated",
       "chapter": "Unit 4: File Concept"
     },
@@ -224,7 +224,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "**Rationale:** A page table is used by the operating system to map virtual addresses to physical frame addresses and holds control bits like the valid-invalid bit.",
+      "answer": "The page table maps pages to frames and holds the valid-invalid bit.",
       "answer_source": "generated",
       "chapter": "Unit 4: Structure of the Page Table"
     },
@@ -239,7 +239,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "**Rationale:** Worst-fit allocates the process to the largest available memory partition (hole), leaving the largest remaining sub-hole.",
+      "answer": "Worst fit picks the largest available hole; best fit picks the smallest one that fits.",
       "answer_source": "generated",
       "chapter": "Unit 4: Contiguous Memory Allocation"
     },
@@ -254,7 +254,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "**Rationale:** In the Access Matrix model, $Access(k, l)$ defines the specific set of access rights/operations that a domain $D_k$ possesses for object $F_l$.",
+      "answer": "$Access(k,l)$ is the set of operations that domain $D_k$ may perform on object $O_l$.",
       "answer_source": "generated",
       "chapter": "Unit 5: Access Matrix"
     },
@@ -269,7 +269,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "**Rationale:** A trapdoor (or backdoor) is a secret or hidden entry point into a system/program left intentionally or accidentally by a developer, allowing security mechanisms to be bypassed.",
+      "answer": "A trap door (back door) is a hidden entry point that lets an attacker bypass normal security.",
       "answer_source": "generated",
       "chapter": "Unit 5: Program Threats"
     },
@@ -284,7 +284,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "**Rationale:** A worm is a standalone malware program that replicates itself automatically over network connections to infect other systems without requiring a host program.",
+      "answer": "A worm is a standalone program that replicates itself across networks without a host program.",
       "answer_source": "generated",
       "chapter": "Unit 5: Program Threats"
     },
@@ -299,7 +299,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "**Rationale:** An application proxy firewall (or application-level gateway) acts as an intermediary for application traffic, inspecting and controlling specific commands and input/output requests at the application level.",
+      "answer": "An application proxy firewall sits between the application and the network and controls its I/O and system calls.",
       "answer_source": "generated",
       "chapter": "Unit 5: Firewalling to Protect Systems and Networks"
     },

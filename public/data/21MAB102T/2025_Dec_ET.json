@@ -42,7 +42,7 @@
             ],
             "correct_option": "A",
             "marks": 2,
-            "answer": "Original limits: $1 \\le x \\le \\sqrt{4-y^2}$ and $0 \\le y \\le 2$. The upper limit $x = \\sqrt{4-y^2}$ is the circle $x^2 + y^2 = 4$. Changing the order maps vertical strips where $0 \\le y \\le \\sqrt{4-x^2}$ and $x$ goes from 1 to 2.",
+            "answer": "The region is $1\\le x\\le2$, $0\\le y\\le\\sqrt{4-x^2}$ (bounded by the circle $x^2+y^2=4$), so integrate $y$ first from $0$ to $\\sqrt{4-x^2}$, then $x$ from 1 to 2.",
             "answer_source": "generated",
             "chapter": "Unit 1: Integral Calculus"
         },
@@ -72,7 +72,7 @@
             ],
             "correct_option": "A",
             "marks": 2,
-            "answer": "$\\nabla \\phi = \\frac{\\partial \\phi}{\\partial x}\\mathbf{i} + \\frac{\\partial \\phi}{\\partial y}\\mathbf{j} + \\frac{\\partial \\phi}{\\partial z}\\mathbf{k}$.\n$\\frac{\\partial \\phi}{\\partial x} = 2xy + y^2$. At (1,1,1) $\\rightarrow 2+1 = 3$.\n$\\frac{\\partial \\phi}{\\partial y} = x^2 + 2xy$. At (1,1,1) $\\rightarrow 1+2 = 3$.\n$\\frac{\\partial \\phi}{\\partial z} = 2z$. At (1,1,1) $\\rightarrow 2(1) = 2$.\nTherefore, $\\nabla \\phi = 3\\mathbf{i} + 3\\mathbf{j} + 2\\mathbf{k}$.",
+            "answer": "$\\phi_x=2xy+y^2=3$, $\\phi_y=x^2+2xy=3$, $\\phi_z=2z=2$ at $(1,1,1)$, so $\\nabla\\phi=3\\mathbf i+3\\mathbf j+2\\mathbf k$.",
             "answer_source": "generated",
             "chapter": "Unit 2: Vector Calculus"
         },
@@ -192,7 +192,7 @@
             ],
             "correct_option": "B",
             "marks": 2,
-            "answer": "If $f(z) = u+iv$ is analytic, then $u$ and $v$ satisfy the Cauchy-Riemann equations. Taking second derivatives shows that both $u$ and $v$ satisfy Laplace's equation ($u_{xx}+u_{yy}=0$), meaning they are harmonic functions.",
+            "answer": "If $f=u+iv$ is analytic, C-R equations imply $u_{xx}+u_{yy}=0$ and $v_{xx}+v_{yy}=0$, so both parts are harmonic.",
             "answer_source": "generated",
             "chapter": "Unit 4: Analytic Functions"
         },

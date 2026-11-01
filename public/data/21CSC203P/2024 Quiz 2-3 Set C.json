@@ -21,8 +21,8 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "`Thread.yield()` only hints to the scheduler that the current thread is willing to give up the CPU; it does not pause or kill the thread.",
+            "answer_source": "generated",
             "chapter": "Unit 3: Advanced Java Programming Paradigms"
         },
         {
@@ -36,8 +36,8 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "`DriverManager.getConnection(\"jdbc:mysql://host:port/db\")` is the correct call; `connect(...)` is not a `DriverManager` method and `Connection` cannot be instantiated.",
+            "answer_source": "generated",
             "chapter": "Unit 3: Advanced Java Programming Paradigms"
         },
         {
@@ -59,8 +59,8 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "In MVC the View is the user interface and presentation layer; Model holds data and Controller holds logic.",
+            "answer_source": "generated",
             "chapter": "Unit 3: Advanced Java Programming Paradigms"
         },
         {
@@ -90,8 +90,8 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "A query ending in `?-` asks Prolog to check whether the fact `likes(john, pizza)` holds (true/false).",
+            "answer_source": "generated",
             "chapter": "Unit 4: Pythonic Programming Paradigm"
         },
         {

@@ -42,9 +42,9 @@
                 "NAND",
                 "EXOR"
             ],
-            "correct_option": "C",
+            "correct_option": "C,D",
             "marks": 1,
-            "answer": "A NAND gate outputs 0 only when both inputs are 1, since $\\overline{1\\cdot1} = 0$. Note: EX-OR also gives 0 for inputs 1,1 ($1\\oplus1 = 0$), so (D) is equally valid; the standard expected answer is NAND.",
+            "answer": "NAND ($\\overline{1\\cdot1}=0$) and EX-OR ($1\\oplus1=0$) both output 0 for inputs 1,1; AND and OR output 1.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
@@ -119,7 +119,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "",
+            "answer": "In a multi-bus datapath the general-purpose registers are grouped into a register file with multiple read/write ports.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basic structure of computers"
         },
@@ -179,7 +179,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The 8-bit signed scale factor (exponent) has range $-2^7$ to $2^7-1$. (In IEEE 754 excess-127 form, $E'$ is 0 to 255 and the normal exponents are -126 to +127.)",
+            "answer": "The 8-bit signed scale factor (exponent) ranges from $-2^7$ to $2^7-1$, i.e. $-128$ to $127$.",
             "answer_source": "generated",
             "chapter": "Unit 3: Design of ALU"
         },
@@ -209,7 +209,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Less flexible and cannot be used for complex instructions. Changes need redesign of the circuitry, and complex instruction sets make the logic unmanageable.",
+            "answer": "Hardwired control is less flexible (any change needs a circuit redesign) and becomes unmanageable for complex instruction sets.",
             "answer_source": "generated",
             "chapter": "Unit 4: Control Unit"
         },
@@ -254,7 +254,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "",
+            "answer": "MIMD means Multiple Instruction, Multiple Data: several processors run different instructions on different data.",
             "answer_source": "generated",
             "chapter": "Unit 5: Parallelism"
         },
@@ -284,7 +284,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Instruction-mix studies of RISC/ARM programs (Furber) show data-movement (load/store) instructions at about 40% of executed instructions, the largest single class.",
+            "answer": "Instruction-mix studies show load/store (data movement) instructions make up about 40% of executed instructions, the largest class.",
             "answer_source": "generated",
             "chapter": "Unit 5: Parallelism"
         },
@@ -299,7 +299,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "",
+            "answer": "A write miss occurs when the block being written is not in the cache.",
             "answer_source": "generated",
             "chapter": "Unit 5: Parallelism"
         },

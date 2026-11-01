@@ -29,8 +29,8 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "In a 32-bit word-addressable or byte-addressable system, each instruction occupies 4 bytes (32 bits). Therefore, the Program Counter (PC) must be incremented by 4 to point to the next instruction.",
-            "answer_source": "provided",
+            "answer": "Each instruction is a 32-bit word, i.e. 4 bytes in byte-addressable memory, so the PC advances by 4.",
+            "answer_source": "generated",
             "chapter": "Unit 4: Control Unit"
         },
         {
@@ -44,8 +44,8 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "In a single-bus processor organization, registers Y, Z, and Temp are internal temporary registers used by the processor to hold operand values during execution without altering user-visible general-purpose registers.",
-            "answer_source": "provided",
+            "answer": "Y, Z and Temp are internal temporary registers that hold operands and results during execution; they are not user-visible.",
+            "answer_source": "generated",
             "chapter": "Unit 4: Control Unit"
         },
         {
@@ -59,7 +59,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "A pipeline with $k$ stages needs $k-1$ inter-stage buffers: a 2-stage pipeline needs 1 buffer and a 4-stage pipeline needs 3 buffers, so the answer is (1, 3). (The printed answer key marked option C, which does not match this.)",
+            "answer": "A $k$-stage pipeline needs $k-1$ inter-stage buffers: 1 for 2 stages and 3 for 4 stages. The printed key's C does not match.",
             "answer_source": "generated",
             "chapter": "Unit 4: Control Unit"
         },
@@ -134,8 +134,8 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Because Multiple Instruction, Multiple Data (MIMD) systems have autonomous processors executing independent programs, managing shared resources, avoiding race conditions, and synchronizing data across nodes create substantial communication overhead.",
-            "answer_source": "provided",
+            "answer": "MIMD processors run independent programs on shared resources, so synchronizing data and communicating between them adds overhead.",
+            "answer_source": "generated",
             "chapter": "Unit 5: Parallelism"
         },
         {
@@ -149,8 +149,8 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "According to the provided key, variable-length instruction encoding (e.g., supporting both standard 32-bit ARM and 16-bit Thumb instructions) is highlighted as a key architectural feature.",
-            "answer_source": "provided",
+            "answer": "ARM5 supports 32-bit ARM and 16-bit Thumb instructions, so the course treats its encoding as variable-length.",
+            "answer_source": "generated",
             "chapter": "Unit 5: Parallelism"
         },
         {

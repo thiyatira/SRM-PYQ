@@ -29,7 +29,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Taking 17 = 10001, inverting gives 01110 and adding 1 gives 01111 (the intended answer). Note: a correct signed representation of $-17$ needs at least 6 bits ($101111$), since 5-bit 2's complement only covers $-16$ to $+15$.",
+            "answer": "$17=10001$; invert to 01110, add 1 gives 01111. (Strictly, $-17$ needs 6 bits, 101111; 01111 is its low 5 bits.)",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
@@ -269,7 +269,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "",
+            "answer": "SIMD means Single Instruction, Multiple Data: one instruction operates on several data items at once.",
             "answer_source": "generated",
             "chapter": "Unit 5: Parallelism"
         },
@@ -297,9 +297,9 @@
                 "circuit complexity",
                 "power complexity"
             ],
-            "correct_option": "A",
+            "correct_option": "C",
             "marks": 1,
-            "answer": "The cost of a parallel algorithm is defined as (parallel run time) × (number of processors), so it is governed by time complexity.",
+            "answer": "The cost of a parallel processing system is determined mainly by its circuit (hardware) complexity, i.e. the number of processing elements and interconnect.",
             "answer_source": "generated",
             "chapter": "Unit 5: Parallelism"
         },

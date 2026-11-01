@@ -88,7 +88,7 @@
             ],
             "correct_option": "C",
             "marks": 2,
-            "answer": "A vector field $\\vec{F}$ is conservative if it can be expressed as the gradient of a scalar potential. A necessary and sufficient condition for this is that its curl is zero ($\\nabla \\times \\vec{F} = \\vec{0}$), which defines an irrotational vector field.",
+            "answer": "Conservative means $\\vec F=\\nabla\\phi$, which requires $\\nabla\\times\\vec F=\\vec 0$, i.e. irrotational. Solenoidal ($\\nabla\\cdot\\vec F=0$) is a different condition.",
             "answer_source": "generated",
             "chapter": "Unit 2: Vector Calculus"
         },
@@ -103,7 +103,7 @@
             ],
             "correct_option": "B",
             "marks": 2,
-            "answer": "The normal to the surface is along $\\nabla \\phi = (y+z)\\mathbf{i} + (x+z)\\mathbf{j} + (x+y)\\mathbf{k}$. At $(-1, 1, 1)$ this is $2\\mathbf{i}$, whose magnitude is 2. The unit normal is therefore $\\frac{2\\mathbf{i}}{2} = \\mathbf{i}$.",
+            "answer": "$\\nabla\\phi=(y+z)\\mathbf i+(x+z)\\mathbf j+(x+y)\\mathbf k=2\\mathbf i$ at $(-1,1,1)$. Dividing by its magnitude 2 gives $\\mathbf i$.",
             "answer_source": "generated",
             "chapter": "Unit 2: Vector Calculus"
         },
@@ -133,7 +133,7 @@
             ],
             "correct_option": "C",
             "marks": 2,
-            "answer": "For a Laplace transform to exist, the function must be piecewise continuous and of exponential order. The function $\\tan t$ has infinite discontinuities (vertical asymptotes) at $t = \\pi/2, 3\\pi/2, \\dots$ within the interval $[0, \\infty)$. Therefore, it is not piecewise continuous and its Laplace transform does not exist.",
+            "answer": "$\\tan t$ has infinite discontinuities at $t=\\pi/2,3\\pi/2,\\dots$, so it is not piecewise continuous on $[0,\\infty)$ and has no Laplace transform. The others are of exponential order.",
             "answer_source": "generated",
             "chapter": "Unit 3: Laplace Transform"
         },
@@ -148,7 +148,7 @@
             ],
             "correct_option": "B",
             "marks": 2,
-            "answer": "This is the statement of the First Shifting Theorem. Multiplying a function by $e^{-at}$ in the time domain corresponds to shifting the variable in the $s$-domain by $+a$. Thus, $L\\{e^{-at}f(t)\\} = F(s+a)$.",
+            "answer": "First shifting theorem: multiplying by $e^{-at}$ replaces $s$ by $s+a$, so the result is $F(s+a)$.",
             "answer_source": "generated",
             "chapter": "Unit 3: Laplace Transform"
         },
@@ -193,7 +193,7 @@
             ],
             "correct_option": "D",
             "marks": 2,
-            "answer": "The Cauchy-Riemann equations in polar coordinates $(r, \\theta)$ are given by $\\frac{\\partial u}{\\partial r} = \\frac{1}{r} \\frac{\\partial v}{\\partial \\theta}$ and $\\frac{\\partial v}{\\partial r} = -\\frac{1}{r} \\frac{\\partial u}{\\partial \\theta}$.",
+            "answer": "Writing $z=re^{i\\theta}$, the C-R equations become $u_r=\\frac1r v_\\theta$ and $v_r=-\\frac1r u_\\theta$.",
             "answer_source": "generated",
             "chapter": "Unit 4: Analytic Functions"
         },
@@ -223,7 +223,7 @@
             ],
             "correct_option": "B",
             "marks": 2,
-            "answer": "Fixed points (or invariant points) occur where $w = z$. \n$z = \\frac{2iz-4}{z-i} \\implies z(z-i) = 2iz-4 \\implies z^2 - iz = 2iz - 4 \\implies z^2 - 3iz + 4 = 0$.\nUsing the quadratic formula: $z = \\frac{3i \\pm \\sqrt{(-3i)^2 - 4(1)(4)}}{2} = \\frac{3i \\pm \\sqrt{-9 - 16}}{2} = \\frac{3i \\pm \\sqrt{-25}}{2} = \\frac{3i \\pm 5i}{2}$.\nThe roots are $\\frac{8i}{2} = 4i$ and $\\frac{-2i}{2} = -i$.",
+            "answer": "Fixed points satisfy $w=z$: $z(z-i)=2iz-4\\Rightarrow z^2-3iz+4=0$, so $z=\\frac{3i\\pm5i}{2}=4i,-i$.",
             "answer_source": "generated",
             "chapter": "Unit 4: Analytic Functions"
         },
@@ -238,7 +238,7 @@
             ],
             "correct_option": "A",
             "marks": 2,
-            "answer": "For an analytic function $f(z) = u(x,y) + iv(x,y)$, the Cauchy-Riemann equations imply that the gradient vectors of $u$ and $v$ are orthogonal ($\\nabla u \\cdot \\nabla v = 0$). Hence, the level curves $u=c_1$ and $v=c_2$ form orthogonal trajectories.",
+            "answer": "C-R equations give $\\nabla u\\cdot\\nabla v=0$, so the level curves $u=c_1$ and $v=c_2$ cut orthogonally.",
             "answer_source": "generated",
             "chapter": "Unit 4: Analytic Functions"
         },
@@ -253,7 +253,7 @@
             ],
             "correct_option": "A",
             "marks": 2,
-            "answer": "The singularities of $f(z)$ are at $z=0$ and $z=1$. The Laurent series about $z=0$ is valid in the punctured disc $0 < |z| < 1$ (and in $|z| > 1$). Of the given options, $0 < |z| < 1$ is the annular region of expansion.",
+            "answer": "$f$ is singular at $z=0$ and $z=1$; its Laurent series about $z=0$ is valid in $0<|z|<1$ (the only listed option that is a valid annulus).",
             "answer_source": "generated",
             "chapter": "Unit 5: Complex Integration"
         },
@@ -283,7 +283,7 @@
             ],
             "correct_option": "A",
             "marks": 2,
-            "answer": "The singularity is at $z=2$. The contour $C$ is a circle of radius 1 centered at the origin. Since $z=2$ lies strictly outside $|z|=1$, the function is analytic everywhere inside and on $C$. By Cauchy's Integral Theorem, the integral evaluates to 0.",
+            "answer": "The singularity $z=2$ lies outside $|z|=1$, so $f$ is analytic inside $C$ and the integral is 0 by Cauchy's theorem.",
             "answer_source": "generated",
             "chapter": "Unit 5: Complex Integration"
         },

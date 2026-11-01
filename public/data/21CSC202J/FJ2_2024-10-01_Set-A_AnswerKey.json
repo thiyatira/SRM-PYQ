@@ -14,8 +14,8 @@
       ],
       "correct_option": "B",
       "marks": 1,
-      "answer": "",
-      "answer_source": "provided",
+      "answer": "A system running only one process at a time is a uniprocessing system (per the official key).",
+      "answer_source": "generated",
       "chapter": "Unit 1: Introduction, Computer-System Organization, Computer-System Architecture"
     },
     {
@@ -29,8 +29,8 @@
       ],
       "correct_option": "B",
       "marks": 1,
-      "answer": "",
-      "answer_source": "provided",
+      "answer": "Processes in main memory that are ready to execute wait in the ready queue.",
+      "answer_source": "generated",
       "chapter": "Unit 2: PROCESS MANAGEMENT: Process Concept, Process Scheduling"
     },
     {
@@ -44,8 +44,8 @@
       ],
       "correct_option": "C",
       "marks": 1,
-      "answer": "",
-      "answer_source": "provided",
+      "answer": "The short-term scheduler is the CPU scheduler: it chooses the next process and gives it the CPU.",
+      "answer_source": "generated",
       "chapter": "Unit 3: CPU Scheduling: Basic Concepts, Scheduling Criteria"
     },
     {
@@ -59,8 +59,8 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "",
-      "answer_source": "provided",
+      "answer": "Inter-process communication (IPC) covers the mechanisms that let concurrent processes communicate and coordinate.",
+      "answer_source": "generated",
       "chapter": "Unit 2: PROCESS MANAGEMENT: Interprocess Communication"
     },
     {
@@ -74,8 +74,8 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "",
-      "answer_source": "provided",
+      "answer": "Asynchronous cancellation terminates the target thread immediately; deferred cancellation waits for the thread to check.",
+      "answer_source": "generated",
       "chapter": "Unit 2: Threads, Threading Issues"
     },
     {
@@ -89,8 +89,8 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "",
-      "answer_source": "provided",
+      "answer": "In preemptive scheduling, a newly arrived process enters the ready queue and may preempt the running one (per the official key).",
+      "answer_source": "generated",
       "chapter": "Unit 3: CPU Scheduling: Scheduling Algorithms"
     },
     {
@@ -104,8 +104,8 @@
       ],
       "correct_option": "C",
       "marks": 1,
-      "answer": "",
-      "answer_source": "provided",
+      "answer": "Soft real-time only gives critical processes preference over others; hard real-time guarantees deadlines are met.",
+      "answer_source": "generated",
       "chapter": "Unit 3: Real-Time CPU Scheduling"
     },
     {
@@ -119,8 +119,8 @@
       ],
       "correct_option": "B",
       "marks": 1,
-      "answer": "",
-      "answer_source": "provided",
+      "answer": "Deadlock detection looks for cycles in the resource-allocation graph.",
+      "answer_source": "generated",
       "chapter": "Unit 3: Deadlocks: Deadlock Detection"
     },
     {
@@ -134,8 +134,8 @@
       ],
       "correct_option": "C",
       "marks": 1,
-      "answer": "",
-      "answer_source": "provided",
+      "answer": "Round Robin's frequent time slicing makes each process wait through many other quanta, giving a large average waiting time.",
+      "answer_source": "generated",
       "chapter": "Unit 3: CPU Scheduling: Scheduling Algorithms"
     },
     {
@@ -149,8 +149,8 @@
       ],
       "correct_option": "D",
       "marks": 1,
-      "answer": "",
-      "answer_source": "provided",
+      "answer": "Mutual exclusion: only one process may be in the critical section while others are kept out.",
+      "answer_source": "generated",
       "chapter": "Unit 2: Process Synchronization: The Critical-Section Problem"
     },
     {

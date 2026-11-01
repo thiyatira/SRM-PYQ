@@ -59,7 +59,7 @@
       ],
       "correct_option": "B",
       "marks": 1,
-      "answer": "`multiprocessing.Pipe()` returns a pair of connection objects for two-way communication between processes (Queue also supports communication, but Pipe is the primitive intended here). Locks are for synchronisation and Pool for distributing work.",
+      "answer": "`multiprocessing.Pipe()` gives two connected endpoints for passing data between processes. Locks only synchronise; Pool only distributes work.",
       "answer_source": "generated",
       "chapter": "Unit 4: Pythonic Programming Paradigm"
     },

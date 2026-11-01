@@ -13,7 +13,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "For two equal resistors in parallel, the effective resistance is R/2 = 6/2 = 3 Ω.",
+            "answer": "Two equal resistors in parallel: $R/2=6/2=3\\ \\Omega$.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -28,7 +28,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "The condition for maximum power transfer requires that the internal resistance of the source must equal the load resistance.",
+            "answer": "Maximum power transfer needs source resistance equal to load resistance.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -43,7 +43,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Power factor is the cosine of the phase angle, which in an impedance triangle is given by the ratio of True Resistance (R) to Total Impedance (Z), hence R/Z.",
+            "answer": "$\\text{PF}=\\cos\\phi=R/Z$ from the impedance triangle.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -58,7 +58,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "In a balanced three-phase star (Y) connection, the line voltage is equal to √3 times the phase voltage.",
+            "answer": "In star, $V_L=\\sqrt{3}\\,V_{ph}$.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -73,7 +73,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Connecting the positive terminal to the P-type (anode) and negative to the N-type (cathode) reduces the depletion region, which defines a forward-biased condition.",
+            "answer": "Positive to P-type and negative to N-type is forward bias.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -88,7 +88,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Input characteristics of a Common Emitter (CE) transistor are obtained by plotting base current (I_B) versus base-emitter voltage (V_{BE}) while maintaining a constant Collector-Emitter voltage (V_{CE}).",
+            "answer": "Input characteristics ($I_B$ vs $V_{BE}$) are plotted at constant $V_{CE}$.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -103,7 +103,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "A Junction Field Effect Transistor (JFET) possesses three terminals: Source, Drain, and Gate.",
+            "answer": "A JFET has source, drain and gate.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -118,7 +118,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "An inverter is a power electronic device utilized to convert a Direct Current (DC) input into an Alternating Current (AC) output.",
+            "answer": "An inverter converts DC to AC.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -133,7 +133,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Brushes in DC machines are typically constructed using Carbon (or graphite) because of its self-lubricating properties and low wear coefficient.",
+            "answer": "Carbon brushes are self-lubricating and wear gently on the commutator.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -148,7 +148,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Transformers function based on Faraday's law of mutual electromagnetic induction, allowing power transfer between magnetically coupled coils.",
+            "answer": "A transformer works on electromagnetic induction (Faraday's law).",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -163,7 +163,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "An encoder is a critical feedback sensor in a servomotor system used directly to track the rotor's exact position and rotational speed.",
+            "answer": "An encoder gives feedback on the rotor's position and speed.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -178,7 +178,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Three-phase induction motors come primarily in two rotor types: Squirrel-cage rotors and wound Slip-ring rotors.",
+            "answer": "Slip-ring rotors are used in three-phase induction motors.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -193,7 +193,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Controlling torque (provided by hairsprings or gravity weights) constantly acts on the pointer system to return it to zero, regardless of whether the instrument is energized.",
+            "answer": "Controlling torque is always present; it returns the pointer to zero when there is no supply.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -208,7 +208,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "According to Lenz's law, the direction of induced eddy currents is such that it opposes the physical motion (change in magnetic flux) that caused it, thus providing damping.",
+            "answer": "By Lenz's law the eddy currents oppose the motion that causes them, giving damping.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -223,7 +223,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "A Digital Storage Oscilloscope (DSO) converts analog signals to a digital format and stores them into memory, allowing continuous waveform observation.",
+            "answer": "A digital storage oscilloscope (DSO) stores digitised waveforms.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -238,7 +238,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "A thermocouple acts as an active transducer because it self-generates an output voltage directly proportional to a temperature difference without requiring an external supply.",
+            "answer": "A thermocouple generates its own voltage, so it is active; the others need excitation.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -253,7 +253,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Because direct current (DC) has a frequency of 0 Hz, there is zero reactance in the steady state, meaning no reactive power is generated, keeping the power factor always at unity (1).",
+            "answer": "DC has no reactance in steady state, so the power factor is unity.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
@@ -268,7 +268,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Porcelain has excellent dielectric strength, mechanical robustness, and resistance to environmental elements, making it the most traditional and common material for high voltage insulators.",
+            "answer": "Porcelain has high dielectric and mechanical strength and resists weather, so it is the usual insulator material.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
@@ -283,7 +283,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "A fuse is an essential safety device designed to automatically melt and break the circuit when excessive overcurrent flows through it.",
+            "answer": "A fuse melts and breaks the circuit when current is excessive.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
@@ -298,7 +298,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Solar energy harnesses the power of the sun, which is naturally replenishing, qualifying it as a renewable energy resource.",
+            "answer": "Solar energy is replenished naturally, so it is renewable.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         }

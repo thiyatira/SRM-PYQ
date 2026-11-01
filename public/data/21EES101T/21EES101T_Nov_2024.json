@@ -13,7 +13,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "In a linear circuit with ideal voltage sources, uniformly doubling all resistance values halves the currents but leaves the voltage distribution across the resistors unchanged.",
+            "answer": "Doubling all resistances halves the currents, so each voltage drop ($IR$) stays the same.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -28,7 +28,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "To convert a balanced Star (Y) network to a Delta (Δ) network, the equivalent resistance is multiplied by 3. R_delta = 3 * R_star = 3 * 10 = 30 Ω.",
+            "answer": "Star to delta: $R_\\Delta=3R_Y=30\\ \\Omega$.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -43,7 +43,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "According to the Maximum Power Transfer Theorem for AC circuits, maximum real power is transferred to the load when the load impedance is the complex conjugate of the source impedance.",
+            "answer": "For maximum power, the load impedance is the complex conjugate of the source impedance.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -58,7 +58,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Power factor is defined as the ratio of true (or average/active) power to the apparent power in an AC circuit.",
+            "answer": "$\\text{PF}=\\dfrac{\\text{average (real) power}}{\\text{apparent power}}$.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -73,7 +73,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Ideally, a reverse-biased diode completely blocks current flow, effectively acting as an open circuit with infinite resistance.",
+            "answer": "A reverse-biased diode blocks current, so its resistance is ideally infinite.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -88,7 +88,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The theoretical maximum efficiency of a full-wave rectifier is 81.2%, which is exactly double that of a half-wave rectifier (40.6%).",
+            "answer": "Full-wave rectifier $\\eta_{max}=81.2\\%$, twice the half-wave 40.6%.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -103,7 +103,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "A MOSFET uses only one type of charge carrier (unipolar), operates by controlling the electric field via gate voltage (voltage-controlled), and features three terminals (Gate, Drain, Source).",
+            "answer": "A MOSFET is unipolar, voltage-controlled and has three terminals (gate, drain, source).",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -118,7 +118,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "By the Boolean algebra absorption law, A + A'B simplifies directly to A + B.",
+            "answer": "$A+A'B=A+B$.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -133,7 +133,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "For a motor to maintain a steady state (constant speed), the driving electrical torque must perfectly balance the opposing mechanical load torque, making them equal and opposite.",
+            "answer": "At steady speed the electrical torque equals and opposes the load torque.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -148,7 +148,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Laminated cores increase the electrical resistance parallel to the magnetic field, effectively minimizing the flow of induced eddy currents and the associated losses.",
+            "answer": "Laminations break up eddy current paths, reducing eddy current loss.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -163,7 +163,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The absolute difference between the synchronous speed of the rotating magnetic field and the actual speed of the rotor is officially termed the slip speed.",
+            "answer": "Synchronous speed minus rotor speed is the slip speed.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -178,7 +178,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "High torque-to-weight ratio, low hysteresis, and a uniform scale are advantages. Being highly delicate and susceptible to mechanical damage is its main physical disadvantage.",
+            "answer": "A PMMC meter is delicate; high torque/weight, low hysteresis and a uniform scale are advantages.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -193,7 +193,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Thermistors offer extremely high sensitivity (large resistance change per degree) but are highly non-linear, making them suitable only for a narrow or low temperature span.",
+            "answer": "A thermistor changes resistance greatly per degree (high sensitivity) but is non-linear, so only a narrow span is usable.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -208,7 +208,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "A Light Dependent Resistor (LDR) works on the principle of photoconductivity; as incident light intensity increases, it frees more charge carriers, thus decreasing its electrical resistance.",
+            "answer": "Light frees more charge carriers in an LDR, so its resistance falls.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -223,7 +223,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Proximity sensors are specifically designed to detect the presence or distance of nearby objects without any physical contact.",
+            "answer": "A proximity sensor detects nearby objects without contact.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -238,7 +238,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Water/moisture contains dissolved ions which significantly increase the conductivity of the soil, thereby directly decreasing the overall soil resistance.",
+            "answer": "Moisture adds ions that make the soil more conductive, so its resistance falls.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
@@ -253,7 +253,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "In an electrical distribution system, the primary lines delivering power from substations or distribution transformers directly to distribution points are called feeders.",
+            "answer": "Feeders carry power from the distribution transformer to the distributors.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
@@ -268,7 +268,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "A Bipolar (Biplor) HVDC transmission link uses two active conductors, one operating at a positive voltage and the other at a negative voltage relative to the ground.",
+            "answer": "A bipolar HVDC link has one positive and one negative conductor with respect to earth.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
@@ -283,7 +283,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Solar cells operate on the photovoltaic effect to generate voltage and current from sunlight, hence they are also known as photovoltaic cells.",
+            "answer": "A solar cell works on the photovoltaic effect.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         }

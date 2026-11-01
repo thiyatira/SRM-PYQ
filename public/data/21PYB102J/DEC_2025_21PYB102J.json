@@ -13,7 +13,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "In the absence of a field, electrons move in random directions due to thermal energy and undergo frequent collisions with lattice ions.",
+            "answer": "With no field, electrons move randomly (thermal motion) and collide frequently.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -28,7 +28,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "A hole is effectively an empty state in the valence band created by the absence of an electron in a covalent bond.",
+            "answer": "A hole is the empty state left by a missing electron in a covalent bond.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
@@ -58,7 +58,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "According to the Fermi-Dirac distribution f(E) = 1 / [exp((E-Ef)/kT) + 1], at E=Ef, f(E) = 1/2 or 50% for any T > 0.",
+            "answer": "Fermi-Dirac: $f(E_F)=1/(e^0+1)=1/2$ at any $T>0$, i.e. 50%.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -73,7 +73,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "As temperature increases, the semiconductor becomes more intrinsic, causing the Fermi level in an n-type material to move downward toward the middle of the bandgap.",
+            "answer": "Higher T excites intrinsic carriers, so the n-type Fermi level moves down toward mid-gap.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
@@ -88,7 +88,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "In p-type semiconductors, the Fermi level is situated just above the top of the valence band at low temperatures.",
+            "answer": "Acceptor levels lie just above the valence band, so the Fermi level sits near its top.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
@@ -103,7 +103,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "The E-k (energy vs. wave vector) diagram illustrates the relationship between energy and crystal momentum for carriers.",
+            "answer": "The E-k diagram shows carrier energy versus crystal momentum, which fixes the allowed photon transitions.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -118,7 +118,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Fermi's Golden Rule is a mathematical formula used to calculate the transition rate (probability per unit time) of a quantum system.",
+            "answer": "Fermi's golden rule gives the transition rate (probability per unit time).",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
@@ -148,7 +148,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Laser (Light Amplification by Stimulated Emission of Radiation) relies on stimulated emission to produce coherent, monochromatic light.",
+            "answer": "Lasing relies on stimulated emission, which produces coherent, monochromatic light.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
@@ -163,7 +163,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Short circuit current is the maximum current that a solar cell can deliver when its terminals are connected with zero resistance.",
+            "answer": "Isc is the maximum current, delivered when the terminals are shorted (zero load resistance).",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
@@ -178,7 +178,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Connecting the positive terminal to the p-region (anode) and negative to the n-region (cathode) constitutes forward biasing.",
+            "answer": "Positive terminal on the anode (p-side) means forward bias.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
@@ -193,7 +193,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Monte Carlo simulations rely on statistical sampling, requiring a large number of trials to achieve accuracy and minimize variance.",
+            "answer": "Monte Carlo relies on random sampling, so hundreds or thousands of runs are needed for accuracy.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
@@ -208,7 +208,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "The Hall effect determines the sign and density of charge carriers, identifying whether a material is p-type or n-type.",
+            "answer": "The Hall effect gives the sign of the Hall voltage, and hence the carrier type (n or p).",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
@@ -223,7 +223,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "To minimize geometric errors in resistivity calculation, probe tips should be small relative to the spacing.",
+            "answer": "Tips much smaller than the spacing act as point contacts, minimizing geometric error.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
@@ -238,7 +238,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Hall voltage is generated in a direction perpendicular to both the electric current and the applied magnetic field (Lorentz force direction).",
+            "answer": "Hall voltage appears across the sample, perpendicular to both current and magnetic field.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -253,7 +253,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "High surface area per unit volume at the nanoscale leads to unique properties not found in bulk forms.",
+            "answer": "At the nanoscale the surface-area-to-volume ratio is very large, giving unique properties.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
@@ -283,7 +283,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "In Physical Vapor Deposition (PVD), the material to be deposited starts in a solid state and is vaporized physically.",
+            "answer": "In PVD the source material is a solid that is vaporized (evaporation/sputtering) and deposited.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },

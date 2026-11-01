@@ -133,8 +133,8 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "In multilevel inheritance, a class acts as a base class for a derived class, which in turn acts as a base class for another derived class. At each level, a derived class inherits directly from only one base class.",
-            "answer_source": "General C++ Knowledge",
+            "answer": "In multilevel inheritance each class derives from exactly one direct base class, forming a chain A -> B -> C.",
+            "answer_source": "generated",
             "chapter": "Unit 3"
         },
         {
@@ -251,10 +251,10 @@
                 "Class definition",
                 "Function declaration"
             ],
-            "correct_option": "B",
+            "correct_option": "C",
             "marks": 1,
-            "answer": "When an object of a class template is created (instantiated), the specific data types are provided to replace the generic types.",
-            "answer_source": "General C++ Knowledge",
+            "answer": "Generic types are declared in the class definition (`template <class T> class X`); creating an object supplies concrete types to replace them.",
+            "answer_source": "generated",
             "chapter": "Unit 4"
         },
         {

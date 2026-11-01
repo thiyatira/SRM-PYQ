@@ -14,7 +14,7 @@
       ],
       "correct_option": "B",
       "marks": 1,
-      "answer": "System calls provide the formal interface between a running user program and the operating system services.",
+      "answer": "System calls are the interface through which programs request OS services.",
       "answer_source": "generated",
       "chapter": "Unit 1"
     },
@@ -29,7 +29,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "The `wait()` system call blocks the execution of the calling parent process until one of its child processes terminates.",
+      "answer": "`wait()` blocks the parent until a child terminates.",
       "answer_source": "generated",
       "chapter": "Unit 2"
     },
@@ -44,7 +44,7 @@
       ],
       "correct_option": "B",
       "marks": 1,
-      "answer": "The long-term scheduler (job scheduler) selects programs from the mass-storage disk (secondary memory) and loads them into main memory for execution.",
+      "answer": "The long-term (job) scheduler loads processes from disk into main memory.",
       "answer_source": "generated",
       "chapter": "Unit 2"
     },
@@ -59,7 +59,7 @@
       ],
       "correct_option": "D",
       "marks": 1,
-      "answer": "Using Amdahl's Law:\n$$\\text{Speedup} = \\frac{1}{(1 - P) + \\frac{P}{N}}$$\nwhere parallel fraction $P = 0.8$, number of cores $N = 4$.\n$$\\text{Speedup} = \\frac{1}{(1 - 0.8) + \\frac{0.8}{4}} = \\frac{1}{0.2 + 0.2} = \\frac{1}{0.4} = 2.5$$",
+      "answer": "Amdahl's law: speedup $= 1/[(1-0.8) + 0.8/4] = 1/0.4 = 2.5$.",
       "answer_source": "generated",
       "chapter": "Unit 1"
     },
@@ -74,7 +74,7 @@
       ],
       "correct_option": "B",
       "marks": 1,
-      "answer": "The ready queue holds the set of all processes residing in main memory that are ready and waiting to execute on a CPU core.",
+      "answer": "Processes in memory that are ready and waiting for the CPU sit in the ready queue.",
       "answer_source": "generated",
       "chapter": "Unit 2"
     },
@@ -89,7 +89,7 @@
       ],
       "correct_option": "C",
       "marks": 1,
-      "answer": "A race condition occurs when multiple processes access and manipulate the same shared data concurrently, and the final outcome depends on the order of execution.",
+      "answer": "A race condition: the result depends on the order in which processes access shared data.",
       "answer_source": "generated",
       "chapter": "Unit 2"
     },
@@ -104,7 +104,7 @@
       ],
       "correct_option": "B",
       "marks": 1,
-      "answer": "Each call to `fork()` duplicates all existing processes. Executing `fork()` in a loop $n$ times creates $2^n$ processes in total, including the original parent process.",
+      "answer": "Each fork() doubles the process count, so a loop of $n$ forks gives $2^n$ processes including the parent.",
       "answer_source": "generated",
       "chapter": "Unit 2"
     },
@@ -119,7 +119,7 @@
       ],
       "correct_option": "C",
       "marks": 1,
-      "answer": "The Process Control Block (PCB) maintains all information related to a specific process, including state, program counter, registers, memory limits, and open files.",
+      "answer": "The PCB holds a process's state, registers, memory limits and open files.",
       "answer_source": "generated",
       "chapter": "Unit 2"
     },

@@ -58,8 +58,8 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "While strictly private members are never inherited, if the intent is for derived classes to have access to members that are otherwise hidden from the outside, the 'protected' access specifier is used.",
-            "answer_source": "General C++ Knowledge",
+            "answer": "Private members are never inherited; protected members stay hidden from outside code but are accessible in derived classes.",
+            "answer_source": "generated",
             "chapter": "Unit 1"
         },
         {
@@ -163,8 +163,8 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "In UML state chart diagrams, a final state is depicted as a solid circle surrounded by a hollow circle (double line filled circle).",
-            "answer_source": "General UML Knowledge",
+            "answer": "In a state chart diagram, the final state is a filled circle inside a hollow circle.",
+            "answer_source": "generated",
             "chapter": "Unit 3"
         },
         {

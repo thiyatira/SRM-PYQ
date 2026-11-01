@@ -12,10 +12,10 @@
                 "Computer Architecture is concerned with the structure and behaviour of a computer system as seen by the user.",
                 "It involves Physical Components"
             ],
-            "correct_option": "A",
+            "correct_option": "A,C",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "Architecture is the programmer-visible view of the system (instruction set, behaviour) and is the interface between hardware and software; option B describes organization.",
+            "answer_source": "generated",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
@@ -29,8 +29,8 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "Most present-day general-purpose computers follow the Von Neumann (stored-program) architecture.",
+            "answer_source": "generated",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
@@ -44,8 +44,8 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "Digital hardware works with two voltage levels, so data is stored in binary form.",
+            "answer_source": "generated",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
@@ -59,8 +59,8 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "Two's complement is the standard way to represent negative binary numbers (and makes subtraction an addition).",
+            "answer_source": "generated",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
@@ -74,8 +74,8 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "A parity bit makes the count of 1s even (or odd), so a single-bit error can be detected.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
@@ -89,7 +89,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Gray code changes only one bit between successive values, so it is used in shaft-position encoders (rotating-shaft sensors) to avoid reading errors during transitions. It is not an error-correcting or error-detecting code.",
+            "answer": "Gray code changes only one bit between successive values, so shaft-position encoders use it to avoid misreads. It is not an error-correcting code.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
@@ -104,8 +104,8 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "Plain ASCII is a 7-bit code with 128 characters, so it is needed for more than 64 characters.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
@@ -119,8 +119,8 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "NAND is a universal gate: NOT, AND and OR can all be built from NAND alone, hence any combinational circuit.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
         {
@@ -134,8 +134,8 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "The Program Counter holds the address of the next instruction to fetch.",
+            "answer_source": "generated",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
@@ -149,8 +149,8 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "MAR holds the address being fetched (1008); the PC already points to the next instruction, 1008 + 8 = 1016.",
+            "answer_source": "generated",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {

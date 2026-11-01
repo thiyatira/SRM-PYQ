@@ -44,7 +44,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Group the bits in threes from the right: 110 110 = 6 6, so $(110110)_2 = (66)_8$ (check: $54_{10} = 6 \\times 8 + 6$). The official key marks C) 53, which is incorrect.",
+            "answer": "Group bits in threes: 110 110 = 66 (octal). The printed key's 53 is wrong.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction to Number System and Logic Gates"
         },
@@ -89,8 +89,8 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "The memory unit stores programs and data, temporarily (RAM) or permanently (ROM, disk).",
+            "answer_source": "generated",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
@@ -104,8 +104,8 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "The Program Counter holds the address of the next instruction; in some architectures it is called the Instruction Pointer (IP).",
+            "answer_source": "generated",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {
@@ -134,7 +134,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "In little-endian order the least significant byte (0x78) is stored at the lowest address. The official key marks D), which is incorrect.",
+            "answer": "Little-endian puts the least significant byte (0x78) at the lowest address, so the order is 78 56 34 12. The printed key's D is wrong.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basic structure of computers"
         },
@@ -149,8 +149,8 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "The ISA is the interface that defines the machine instructions a CPU can execute.",
+            "answer_source": "generated",
             "chapter": "Unit 2: Basic structure of computers"
         },
         {

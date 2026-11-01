@@ -14,8 +14,8 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "",
-      "answer_source": "provided",
+      "answer": "Multitasking time-slices the CPU among tasks, so each gets frequent turns and users see fast response.",
+      "answer_source": "generated",
       "chapter": "Unit 1: Operating-System Operations"
     },
     {
@@ -29,8 +29,8 @@
       ],
       "correct_option": "C",
       "marks": 1,
-      "answer": "",
-      "answer_source": "provided",
+      "answer": "CPU registers sit inside the processor and are the fastest level of the hierarchy.",
+      "answer_source": "generated",
       "chapter": "Unit 1: Computer-System Organization"
     },
     {
@@ -44,8 +44,8 @@
       ],
       "correct_option": "C",
       "marks": 1,
-      "answer": "",
-      "answer_source": "provided",
+      "answer": "`fork()` creates a new process, so it is the process-control call; `pipe()`, `open()` and `close()` deal with IPC or files.",
+      "answer_source": "generated",
       "chapter": "Unit 1: Types of System Calls"
     },
     {
@@ -59,8 +59,8 @@
       ],
       "correct_option": "B",
       "marks": 1,
-      "answer": "",
-      "answer_source": "provided",
+      "answer": "The bootstrap loader is stored in non-volatile ROM so it is available at power-on, before RAM holds anything.",
+      "answer_source": "generated",
       "chapter": "Unit 1: System Boot"
     },
     {
@@ -74,8 +74,8 @@
       ],
       "correct_option": "B",
       "marks": 1,
-      "answer": "",
-      "answer_source": "provided",
+      "answer": "Multithreading means several concurrent execution paths (threads) within one process.",
+      "answer_source": "generated",
       "chapter": "Unit 2: Threads: Multicore Programming"
     },
     {

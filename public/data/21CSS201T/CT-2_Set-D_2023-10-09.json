@@ -59,8 +59,8 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "According to De Morgan's theorem, the complement of a sum is equal to the product of the complements of individual terms: $\\overline{A + BC} = \\bar{A} \\cdot \\overline{BC} = \\bar{A}(\\bar{B} + \\bar{C})$.",
-            "answer_source": "provided",
+            "answer": "By De Morgan, $\\overline{A+BC} = \\bar A\\cdot\\overline{BC} = \\bar A(\\bar B+\\bar C)$.",
+            "answer_source": "generated",
             "chapter": "Unit 3: Design of ALU"
         },
         {

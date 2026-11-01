@@ -13,8 +13,8 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "`%` (modulus) requires integer operands; `+` and `/` also work on floats.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming - Writing algorithms & Pseudo code - Single line and multiline comments - Introduction to C: Structure of the C program - Input and output statements. Variables and identifiers, Constants, Keywords - Values, Names, Scope, Binding, Storage Classes - Numeric Data types: integer, floating point Non-Numeric Data types: char and string - L value and R value in expression, Increment and decrement operator - Comma, Arrow and Assignment operator, Bitwise and Size-of operator - Arithmetic, Relational and logical Operators - Condition Operators, Operator Precedence - Expressions with pre / post increment operator."
         },
         {
@@ -28,8 +28,8 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "`||` evaluates left to right and stops (short-circuits) as soon as an operand is true.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming - Writing algorithms & Pseudo code - Single line and multiline comments - Introduction to C: Structure of the C program - Input and output statements. Variables and identifiers, Constants, Keywords - Values, Names, Scope, Binding, Storage Classes - Numeric Data types: integer, floating point Non-Numeric Data types: char and string - L value and R value in expression, Increment and decrement operator - Comma, Arrow and Assignment operator, Bitwise and Size-of operator - Arithmetic, Relational and logical Operators - Condition Operators, Operator Precedence - Expressions with pre / post increment operator."
         },
         {
@@ -43,8 +43,8 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "`i++` gives 0 (false, i=1), then `j++` gives 1 (true, j=2); short-circuiting skips `k++`. So m=1, i=1, j=2, k=2.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming - Writing algorithms & Pseudo code - Single line and multiline comments - Introduction to C: Structure of the C program - Input and output statements. Variables and identifiers, Constants, Keywords - Values, Names, Scope, Binding, Storage Classes - Numeric Data types: integer, floating point Non-Numeric Data types: char and string - L value and R value in expression, Increment and decrement operator - Comma, Arrow and Assignment operator, Bitwise and Size-of operator - Arithmetic, Relational and logical Operators - Condition Operators, Operator Precedence - Expressions with pre / post increment operator."
         },
         {
@@ -58,8 +58,8 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "The comma operator yields its last operand, `y = 0`, so the condition is false and nothing is printed.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming - Writing algorithms & Pseudo code - Single line and multiline comments - Introduction to C: Structure of the C program - Input and output statements. Variables and identifiers, Constants, Keywords - Values, Names, Scope, Binding, Storage Classes - Numeric Data types: integer, floating point Non-Numeric Data types: char and string - L value and R value in expression, Increment and decrement operator - Comma, Arrow and Assignment operator, Bitwise and Size-of operator - Arithmetic, Relational and logical Operators - Condition Operators, Operator Precedence - Expressions with pre / post increment operator."
         },
         {
@@ -73,8 +73,8 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "The comma operator has the lowest precedence of all C operators.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming - Writing algorithms & Pseudo code - Single line and multiline comments - Introduction to C: Structure of the C program - Input and output statements. Variables and identifiers, Constants, Keywords - Values, Names, Scope, Binding, Storage Classes - Numeric Data types: integer, floating point Non-Numeric Data types: char and string - L value and R value in expression, Increment and decrement operator - Comma, Arrow and Assignment operator, Bitwise and Size-of operator - Arithmetic, Relational and logical Operators - Condition Operators, Operator Precedence - Expressions with pre / post increment operator."
         },
         {
@@ -88,8 +88,8 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "Array elements occupy contiguous (sequential) memory locations.",
+            "answer_source": "generated",
             "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else - Conditional Statements : else if and nested if - Conditional Statements : Switch case - Un-conditional Control Statements : break, continue, goto - Looping Control Statements: for, while, do.while - Looping Control Statements: nested for, nested while - Introduction to Arrays -One Dimensional (1D) Array Declaration and initialization - Accessing, Indexing and operations with 1D Arrays - Array Programs – 1D - Initializing and Accessing 2D Array, Array Programs – 2D - Pointer and address-of operators -Pointer Declaration and dereferencing, Void Pointers, Null pointers Pointer based Array manipulation."
         },
         {
@@ -103,7 +103,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "An array name `x` is a constant address, so it cannot be modified. `++x` (I) and `x++` (III) try to modify it and are illegal; `x*2` (IV) multiplies an address by an integer, which is also illegal. `x+1` (II) is legal pointer arithmetic that only computes a new address. So I, III and IV are illegal.",
+            "answer": "An array name is a non-modifiable address: `++x` and `x++` modify it and `x*2` multiplies an address, so all are illegal. `x+1` is valid pointer arithmetic.",
             "answer_source": "generated",
             "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else - Conditional Statements : else if and nested if - Conditional Statements : Switch case - Un-conditional Control Statements : break, continue, goto - Looping Control Statements: for, while, do.while - Looping Control Statements: nested for, nested while - Introduction to Arrays -One Dimensional (1D) Array Declaration and initialization - Accessing, Indexing and operations with 1D Arrays - Array Programs – 1D - Initializing and Accessing 2D Array, Array Programs – 2D - Pointer and address-of operators -Pointer Declaration and dereferencing, Void Pointers, Null pointers Pointer based Array manipulation."
         },
@@ -118,8 +118,8 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "`a[1]` is changed to 20, so the loop prints `10 20 14`.",
+            "answer_source": "generated",
             "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else - Conditional Statements : else if and nested if - Conditional Statements : Switch case - Un-conditional Control Statements : break, continue, goto - Looping Control Statements: for, while, do.while - Looping Control Statements: nested for, nested while - Introduction to Arrays -One Dimensional (1D) Array Declaration and initialization - Accessing, Indexing and operations with 1D Arrays - Array Programs – 1D - Initializing and Accessing 2D Array, Array Programs – 2D - Pointer and address-of operators -Pointer Declaration and dereferencing, Void Pointers, Null pointers Pointer based Array manipulation."
         },
         {
@@ -133,8 +133,8 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "`%s` prints or reads a character array (string); `%c` is for a single character.",
+            "answer_source": "generated",
             "chapter": "Unit 3: String Basics - String Declaration and Initialization - String Functions: gets(), puts(), getchar(),putchar(), printf() - Built-inString Functions: atoi, strlen, strcat, strcmp -String Functions: sprint, sscanf, strrev, strcpy, strstr, strtok - Operations on Strings - Function prototype declaration, function definition - Actual and formal parameters - Function with and without Arguments - Function with and without return values - Call by Value, Call by Reference - Passing Array to Function - Passing Array elements to Function - Function Pointers."
         },
         {
@@ -148,7 +148,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Declaring `foo` and `f` inside `main` is a valid (local) declaration, and both are defined later in the file. `f()` prints `1 `, then calls `foo()`, which prints `2 `, so the output is `1 2`.",
+            "answer": "Declaring functions inside `main` is legal. `f()` prints `1 ` then calls `foo()`, which prints `2 `: output `1 2`.",
             "answer_source": "generated",
             "chapter": "Unit 3: String Basics - String Declaration and Initialization - String Functions: gets(), puts(), getchar(),putchar(), printf() - Built-inString Functions: atoi, strlen, strcat, strcmp -String Functions: sprint, sscanf, strrev, strcpy, strstr, strtok - Operations on Strings - Function prototype declaration, function definition - Actual and formal parameters - Function with and without Arguments - Function with and without return values - Call by Value, Call by Reference - Passing Array to Function - Passing Array elements to Function - Function Pointers."
         },

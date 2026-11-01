@@ -14,7 +14,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "A program is a passive entity, such as a file containing a list of instructions stored on disk (an executable file), whereas a process is an active entity, with a program counter specifying the next instruction to execute and a set of associated resources.",
+            "answer": "A program is a passive file of instructions on disk; a process is an active entity with a program counter and resources.",
             "answer_source": "generated",
             "chapter": "Unit 2: PROCESS MANAGEMENT"
         },
@@ -44,7 +44,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The medium-term (mid-term) scheduler reduces the degree of multiprogramming by swapping processes out of main memory to disk (swap space) when memory is overcommitted or a process is waiting for I/O.",
+            "answer": "The medium-term scheduler swaps processes out of memory to disk, which lowers the degree of multiprogramming.",
             "answer_source": "generated",
             "chapter": "Unit 2: PROCESS MANAGEMENT"
         },
@@ -74,7 +74,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "The operating system kernel maintains signal status information—specifically pending and blocked signal bit masks/vectors—within each process's context / Process Control Block (PCB).",
+            "answer": "The kernel maintains each process's pending and blocked signal bit vectors in its PCB.",
             "answer_source": "generated",
             "chapter": "Unit 2: PROCESS MANAGEMENT"
         },
@@ -134,7 +134,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Deadlock detection allows the system to enter a deadlock state, periodically runs an algorithm to examine the system state to identify deadlock, and then applies recovery techniques, whereas prevention actively constrains resource requests to ensure deadlocks never occur.",
+            "answer": "Detection lets deadlock happen, then finds it and recovers; prevention and avoidance stop it beforehand.",
             "answer_source": "generated",
             "chapter": "Unit 3: Deadlocks"
         },
@@ -149,7 +149,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Under non-preemptive scheduling, once a process is allocated the CPU, it keeps the CPU until it either voluntarily releases it (such as by requesting I/O and switching to the waiting state) or terminates upon completing its CPU burst.",
+            "answer": "Non-preemptive: a process keeps the CPU until it finishes its burst or blocks on its own (e.g., for I/O).",
             "answer_source": "generated",
             "chapter": "Unit 3: CPU Scheduling"
         },

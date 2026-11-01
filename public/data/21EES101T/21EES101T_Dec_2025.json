@@ -13,7 +13,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Out of the 6A total supply current, 4A flows through the 5Ω resistor. By KCL, 2A must flow through R. Since the parallel branches share the same voltage (4A * 5Ω = 20V), R = 20V / 2A = 10 Ω.",
+            "answer": "R carries $6-4=2$ A at $4\\times5=20$ V, so $R=20/2=10\\ \\Omega$.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -28,7 +28,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "V1 is defined across the 10Ω resistor against the current direction (making it -10*I). V2 is defined across the 5Ω resistor in the current direction (5*I). Their ratio V2/V1 is (5I)/(-10I) = -0.5.",
+            "answer": "$V_2/V_1=5I/(-10I)=-0.5$, since $V_1$ is taken opposite to the current direction.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -43,7 +43,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "To properly calculate the equivalent Thevenin impedance, independent ideal voltage sources are shorted (0V) and independent ideal current sources are opened (0A).",
+            "answer": "For Thevenin impedance, short voltage sources and open current sources.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -58,7 +58,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "The Insulated Gate Bipolar Transistor (IGBT) provides the high input impedance (voltage control) of a MOSFET while retaining the low ON-state conduction losses typical of a BJT.",
+            "answer": "The IGBT has MOSFET-type voltage control and BJT-like low conduction loss.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -73,7 +73,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Zener diodes maintain a highly stable constant voltage when operating in their reverse-breakdown region, making them primarily useful for voltage regulation circuits.",
+            "answer": "A Zener diode holds a constant voltage in reverse breakdown, so it regulates voltage.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -88,7 +88,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Inverters are power electronic devices engineered explicitly to transform direct current (DC) power into alternating current (AC) power.",
+            "answer": "An inverter converts DC to AC.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -103,7 +103,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "In AC circuits, the supply voltage automatically crosses zero during its cycle, causing thyristor current to naturally fall to zero. This is termed line or natural commutation.",
+            "answer": "In AC circuits the supply current crosses zero by itself, turning off the thyristor (natural commutation).",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -118,7 +118,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "DC series motor drives historically provide exceptionally high starting torque, making them ideal for heavy lifting applications like electric cranes and hoists.",
+            "answer": "DC (series) motors give very high starting torque, which suits cranes.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -133,7 +133,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "PMSM stands for Permanent Magnet Synchronous Motor. Its rotor generates a constant magnetic field through the use of mounted permanent magnets rather than wound field coils.",
+            "answer": "A PMSM rotor carries permanent magnets.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -148,7 +148,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The Lorentz force on a straight current-carrying conductor located in a magnetic field is calculated by the formula F = B * I * L.",
+            "answer": "Force on a conductor is $F=BIL$.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -163,7 +163,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Due to their excellent efficiency, high power density, and compact size, Brushless DC (BLDC) motors and Permanent Magnet Synchronous Motors are universally preferred for Electric Vehicle powertrains.",
+            "answer": "BLDC motors are efficient, compact and power-dense, so they suit EVs.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -178,7 +178,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "An IR (Infrared) sensor functions by emitting or detecting infrared radiation to sense its surroundings or measure heat signatures.",
+            "answer": "An IR sensor works by detecting infrared radiation.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -193,7 +193,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Photodiodes are operated in reverse bias because it widens the depletion region, making the device highly sensitive to incident light generating measurable leakage current.",
+            "answer": "Reverse bias widens the depletion region, so light-generated carriers are collected as photocurrent.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -208,7 +208,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The Linear Variable Differential Transformer (LVDT) is an electromechanical transducer designed explicitly to measure linear displacement.",
+            "answer": "An LVDT measures linear displacement.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -223,7 +223,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Permanent Magnet Moving Coil (PMMC) instruments respond strictly to the average value of current, restricting their application exclusively to DC measurements.",
+            "answer": "A moving coil (PMMC) meter responds to the average current, so it measures DC only.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -238,7 +238,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Energy = Power × time = 700 Watts × 5 hours = 3500 Watt-hours, which converts to 3.5 kWh.",
+            "answer": "$E=700\\ \\text{W}\\times5\\ \\text{h}=3500\\ \\text{Wh}=3.5$ kWh.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
@@ -253,7 +253,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "While standard HEVs only charge batteries through regenerative braking and the engine, Plug-in Hybrids (PHEVs) feature larger battery packs that can be recharged externally directly from the power grid.",
+            "answer": "A PHEV has a bigger battery that can be charged from the grid; a plain HEV cannot.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
@@ -268,7 +268,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Globally, pumped-storage hydroelectricity accounts for the vast majority of grid-scale energy storage capacity for balancing variable renewable energy.",
+            "answer": "Pumped hydro provides most of the world's grid energy storage.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
@@ -283,7 +283,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "System earthing connects equipment chassis to the earth, creating a low-resistance path for fault currents to safely discharge, preventing electric shocks.",
+            "answer": "Earthing gives fault current a low-resistance path to ground, protecting people.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         }

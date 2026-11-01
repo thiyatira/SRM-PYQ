@@ -13,7 +13,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The classical free electron theory (Drude model) applies classical Maxwell-Boltzmann statistics to the electron gas in metals.",
+            "answer": "Classical (Drude) theory treats electrons as a gas obeying Maxwell-Boltzmann statistics.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -28,7 +28,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "In bulk (3D) materials, the density of states g(E) is directly proportional to the square root of energy (E^(1/2)).",
+            "answer": "In 3D, $g(E)\\propto E^{1/2}$.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -43,7 +43,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The first Brillouin zone is defined as the Wigner-Seitz primitive cell in the reciprocal lattice (k-space).",
+            "answer": "The first Brillouin zone is the Wigner-Seitz cell of k-space.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -58,7 +58,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The Tight Binding Method constructs band structures using a Linear Combination of Atomic Orbitals (LCAO).",
+            "answer": "Tight binding builds bands from a linear combination of atomic orbitals (LCAO).",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -73,7 +73,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "At absolute zero (0 K), the Fermi level represents the highest energy state occupied by electrons in a metal.",
+            "answer": "At 0 K the Fermi level is the highest occupied energy level.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -88,7 +88,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "In an indirect bandgap semiconductor, the conduction band minimum and valence band maximum occur at different momenta (k-values).",
+            "answer": "In an indirect-gap semiconductor the band extrema lie at different k-values.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -103,7 +103,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "In p-type semiconductors, holes are the majority charge carriers, making their concentration much greater than that of electrons.",
+            "answer": "Holes are the majority carriers in p-type material.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
@@ -118,7 +118,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Drift current occurs when charge carriers are forced to move directionally under the influence of an applied external electric field.",
+            "answer": "Drift current is carrier motion under an applied electric field.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
@@ -133,7 +133,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The rate of spontaneous emission depends solely on the number of atoms already present in the excited state.",
+            "answer": "Spontaneous emission rate is proportional to the number of atoms in the excited state.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
@@ -148,7 +148,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Optical processes in semiconductors specifically deal with the interaction, absorption, and emission of light (photons).",
+            "answer": "Optical processes involve absorption and emission of photons.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
@@ -163,7 +163,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "A solar cell utilizes the photovoltaic effect to convert incoming light energy (photons) directly into electricity.",
+            "answer": "Solar cells convert light into electricity (photovoltaic effect).",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
@@ -178,7 +178,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Radiative recombination is highly probable in direct bandgap semiconductors because electrons can recombine with holes without a change in momentum.",
+            "answer": "Direct-gap semiconductors let electrons recombine with holes without a momentum change, so radiative recombination is likely.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
@@ -193,7 +193,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Capacitance-voltage profiling allows the extraction of the built-in potential (diffusion potential) along with the doping concentration profile.",
+            "answer": "C-V profiling gives the built-in (diffusion) potential and doping profile.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
@@ -208,7 +208,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The hot-point probe method uses thermoelectric effects (Seebeck effect) for a fast, qualitative check of a semiconductor's conductivity type.",
+            "answer": "Hot point probe uses the Seebeck effect for a quick n/p-type check.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
@@ -223,7 +223,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "From R = ρl/A, solving for resistivity gives ρ = R*A/l. Assuming a rectangular wire cross section A = width(w) * height(h), ρ = Rwh/l.",
+            "answer": "$R=\\rho l/A$ with $A=wh$, so $\\rho=Rwh/l$.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
@@ -238,7 +238,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "The Van der Pauw technique is classically used to measure both the sheet resistance and the charge carrier density (through Hall measurements) of a sample.",
+            "answer": "Van der Pauw gives the sheet resistance and, via Hall measurement, the charge carrier density.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
@@ -253,7 +253,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Due to their extreme mechanical strength and resilience, carbon nanotubes make excellent, robust tips for atomic force microscopy (AFM).",
+            "answer": "CNTs are very strong and resilient, making durable AFM tips.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
@@ -268,7 +268,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Nanoparticles (like quantum dots) are confined in all three dimensions, categorizing them as 0-Dimensional nanomaterials.",
+            "answer": "A nanoparticle (quantum dot) is confined in all three dimensions: 0D.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
@@ -283,7 +283,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Atomic Force Microscopy (AFM) fundamentally measures the physical forces (like Van der Waals) between the tip and the sample.",
+            "answer": "AFM senses the force (e.g. van der Waals) between tip and sample.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
@@ -298,7 +298,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Transmission Electron Microscopy (TEM) utilizes electrons that are transmitted entirely through an ultra-thin specimen to form an image.",
+            "answer": "TEM images with electrons transmitted through a thin specimen.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         }

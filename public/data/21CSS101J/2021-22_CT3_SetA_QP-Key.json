@@ -13,8 +13,8 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "Passing the array name `a` hands the function a pointer to its first element, the standard way to pass an array.",
+            "answer_source": "generated",
             "chapter": "Unit 3: String Basics"
         },
         {
@@ -28,8 +28,8 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "`#pragma` is a preprocessor directive, so it is handled before compilation.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
         {
@@ -43,8 +43,8 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "`NULL` is a macro for a null pointer constant, not a variable, so `datatype *NULL = ptr;` is wrong.",
+            "answer_source": "generated",
             "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
         },
         {
@@ -58,8 +58,8 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "`foo` changes only its local copy of the pointer, so it prints 2 (`j`), while `main`'s `*p` is still 97: output `2 97`.",
+            "answer_source": "generated",
             "chapter": "Unit 3: String Basics"
         },
         {
@@ -73,8 +73,8 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "`p` is an `int *`, so `**p` dereferences an `int`, which is invalid: compile-time error.",
+            "answer_source": "generated",
             "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
         },
         {
@@ -88,8 +88,8 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "`#pragma` passes extra, implementation-specific instructions to the compiler.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
         {
@@ -103,8 +103,8 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "`*ary` is the first element, `ary[0]` = 1.",
+            "answer_source": "generated",
             "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
         },
         {
@@ -118,8 +118,8 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "Pointer arithmetic needs a known element size; `void *` has none, so it cannot be incremented.",
+            "answer_source": "generated",
             "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
         },
         {
@@ -133,7 +133,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "A pointer to an array of 6 floats is declared as `float (*ptr)[6]`. The parentheses make `ptr` a pointer first; `float *ptr[6]` is an array of 6 float pointers, and `float (*ptr)(6)` is not a valid declaration. (The printed key listed option d, which is incorrect.)",
+            "answer": "`float (*ptr)[6]` makes `ptr` a pointer to an array of 6 floats; `float *ptr[6]` is an array of 6 float pointers.",
             "answer_source": "generated",
             "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
         },
@@ -148,8 +148,8 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "All members share the same memory, so a union is as large as its biggest member.",
+            "answer_source": "generated",
             "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
         },
         {

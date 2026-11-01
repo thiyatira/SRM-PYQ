@@ -93,7 +93,7 @@
       ],
       "correct_option": "C",
       "marks": 1,
-      "answer": "`result = %a;` is invalid: `%` (modulo) is a binary operator and needs two operands (for example `b % a`); it cannot be used as a unary operator.\n- `result = a+++b;` is valid and is parsed as `result = (a++) + b;`.\n- `result =+++a*5;` is intended as an increment of `a` multiplied by 5. (Strictly, `+++a` is tokenized as `++ +a`, which is not a valid C lvalue operation, but option C is the clearly invalid expression the question is after.)\n- `result =-2.4;` is valid: unary minus applied to the literal 2.4.",
+      "answer": "`%a` is invalid since `%` is binary and needs two operands. `a+++b` parses as `(a++)+b` and `=-2.4` is a unary minus. (`+++a*5` is also dubious, but `%a` is the clear error.)",
       "answer_source": "generated",
       "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
     },
@@ -123,7 +123,7 @@
       ],
       "correct_option": "C",
       "marks": 1,
-      "answer": "Both `%i` and `%d` are valid format specifiers for reading and writing integer values in C's `printf()` and `scanf()` functions. While `%d` is more commonly used, `%i` also works for decimal integers. `%s` is used for strings.",
+      "answer": "Both `%i` and `%d` read and write decimal integers (`%i` also accepts octal/hex prefixes in `scanf`).",
       "answer_source": "generated",
       "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
     },
@@ -138,7 +138,7 @@
       ],
       "correct_option": "C",
       "marks": 1,
-      "answer": "*   **(A) `static`**: Is a storage class specifier.\n*   **(B) `auto`**: Is a storage class specifier (default for local variables).\n*   **(C) `struct`**: Is a keyword used to define a user-defined data type (structure), not a storage class.\n*   **(D) `extern`**: Is a storage class specifier.",
+      "answer": "`struct` defines a user-defined type; the storage classes are `auto`, `register`, `static` and `extern`.",
       "answer_source": "generated",
       "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
     },
@@ -153,7 +153,7 @@
       ],
       "correct_option": "C",
       "marks": 1,
-      "answer": "The post-increment operator `a++` means that the *current value* of `a` is used in the expression, and *then* `a` is incremented. So, `printf` will print the value `a` had *before* the increment.",
+      "answer": "Post-increment yields the current value of `a` first, then increments it.",
       "answer_source": "generated",
       "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
     },
@@ -168,7 +168,7 @@
       ],
       "correct_option": "B",
       "marks": 1,
-      "answer": "In C, relational and logical expressions evaluate to exactly `0` (false) or `1` (true); C has no distinct boolean result type for them (before `_Bool` in C99, int is used). Any non-zero value is treated as true when tested, but the result produced by the operators themselves is always 0 or 1.",
+      "answer": "Relational and logical expressions in C always evaluate to 1 (true) or 0 (false).",
       "answer_source": "generated",
       "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
     },
@@ -183,7 +183,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "The array `a` is initialized with elements `{1, 2, 3, 4}`. Array indices in C start from `0`. Therefore, `a[0]` refers to the first element of the array, which is `1`.",
+      "answer": "Indexing starts at 0, so `a[0]` is 1.",
       "answer_source": "generated",
       "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
     },
@@ -198,7 +198,7 @@
       ],
       "correct_option": "B",
       "marks": 1,
-      "answer": "*   **(A) A data structure that shows a hierarchical behavior**: This describes data structures like trees or graphs, not arrays.\n*   **(B) Container of objects of similar objects**: An array is a collection of elements of the *same* data type, stored in contiguous memory locations. So it's a container for similar objects.\n*   **(C) Arrays are immutable once initialized**: This is false. Array elements can be modified after initialization.\n*   **(D) Array is not a data structure**: This is false. An array is a fundamental data structure.",
+      "answer": "An array holds elements of the same type; it is a data structure but not a hierarchical one, and its elements can be modified.",
       "answer_source": "generated",
       "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
     },
@@ -213,7 +213,7 @@
       ],
       "correct_option": "D",
       "marks": 1,
-      "answer": "*   `(A) +`, `(B) *`, `(C) /`: These arithmetic operators can operate on both integer and floating-point operands.\n*   `(D) %`: The modulo operator (`%`) computes the remainder of a division and requires both its operands to be of integer type.",
+      "answer": "`%` (modulus) needs integer operands; `+`, `*` and `/` also work on floats.",
       "answer_source": "generated",
       "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
     },
@@ -228,7 +228,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "*   **Initialization**: `j = 1`\n*   **Condition**: `j <= 10`\n*   **Update**: `j = j - 1` (decrements `j`)\n\nThe loop starts with `j = 1`. In each iteration, `j` is decremented. Since `j` starts at `1` and keeps decreasing (`0`, `-1`, `-2`, ...), the condition `j <= 10` will always remain true. For example, if `j` is `1`, `1 <= 10` is true. If `j` becomes `0`, `0 <= 10` is true. If `j` becomes `-5`, `-5 <= 10` is true. Thus, the loop will never terminate and will execute forever.",
+      "answer": "`j` starts at 1 and decreases (0, -1, ...), so `j <= 10` is always true: an infinite loop.",
       "answer_source": "generated",
       "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
     },
@@ -243,7 +243,7 @@
       ],
       "correct_option": "D",
       "marks": 1,
-      "answer": "From a performance perspective, `for`, `while`, and `do...while` loops generally execute at the same speed. The choice between them is typically based on the logical structure of the problem, readability, and convenience, not on inherent speed differences. A good compiler will optimize them to very similar machine code. Any minor differences would be negligible and highly dependent on the specific compiler, optimization settings, and target architecture.",
+      "answer": "All three loops compile to similar conditional-jump code, so there is no inherent speed difference.",
       "answer_source": "generated",
       "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
     },
@@ -258,7 +258,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "*   **(A) Character array, ary is a string**: In C, strings are fundamentally character arrays terminated by a null character (`\\0`). `char ary[] = \"Hello...!\";` correctly declares `ary` as a character array and initializes it with a string literal, including the implicit null terminator.\n*   **(B) Ary has no null character at the end**: This is false. When a string literal is used for initialization, the compiler automatically appends a null character (`\\0`) at the end.\n*   **(C) String size is not mentioned**: This is false. When initializing a character array with a string literal without specifying a size, the compiler automatically determines the size based on the length of the string literal plus one for the null terminator.\n*   **(D) String cannot contain special characters**: This is false. C strings can contain various special characters, including punctuation, spaces, and escape sequences.",
+      "answer": "`char ary[] = \"Hello...!\"` is a character array ending with an automatic null character, which makes it a C string; its size is deduced and special characters are allowed.",
       "answer_source": "generated",
       "chapter": "Unit 3: String Basics - String Declaration and Initialization"
     },
@@ -273,7 +273,7 @@
       ],
       "correct_option": "B",
       "marks": 1,
-      "answer": "The declaration `char str[] = {'P', 'E', 'T', '\\0'};` creates a character array initialized with the characters 'P', 'E', 'T', and a null terminator `\\0`. In C, a string is a sequence of characters terminated by a null character. When `printf(\"%s\", str);` is called, it prints characters from the `str` array until it encounters the null terminator `\\0`. Thus, it will print \"PET\".",
+      "answer": "`%s` stops at the null terminator, so the intended array {'P','E','T',0} prints `PET` (the printed quotes and missing `[]` are typos).",
       "answer_source": "generated",
       "chapter": "Unit 3: String Basics - String Declaration and Initialization"
     },
@@ -288,7 +288,7 @@
       ],
       "correct_option": "B",
       "marks": 1,
-      "answer": "*   **(A) `strcpy()`**: Copies one string to another.\n*   **(B) `strcat()`**: Concatenates (joins) two strings. It appends the source string to the destination string.\n*   **(C) `strjoin()`**: This is not a standard C library function.\n*   **(D) `strncat()`**: Concatenates a specified number of characters from one string to another.",
+      "answer": "`strcat()` appends one string to another, joining them; `strjoin()` does not exist and `strcpy()` only copies.",
       "answer_source": "generated",
       "chapter": "Unit 3: String Basics - String Declaration and Initialization"
     },
@@ -303,7 +303,7 @@
       ],
       "correct_option": "D",
       "marks": 1,
-      "answer": "*   **(D) Compares the string**: The `strcmp()` function (string compare) compares two strings lexicographically. It returns `0` if the strings are equal, a negative value if the first string is less than the second, and a positive value if the first string is greater than the second.\n*   **(A) Compares the first 'n' characters of the object**: This describes `strncmp()`, not `strcmp()`.\n*   **(C) Copies the string**: This describes `strcpy()` or `strncpy()`.",
+      "answer": "`strcmp()` compares two strings (0 if equal); comparing only `n` characters is `strncmp()`.",
       "answer_source": "generated",
       "chapter": "Unit 3: String Basics - String Declaration and Initialization"
     },
@@ -318,7 +318,7 @@
       ],
       "correct_option": "B",
       "marks": 1,
-      "answer": "In C, macros are defined using the preprocessor directive `#define`. For example, `#define PI 3.14159` defines a macro named `PI`.",
+      "answer": "Macros are defined with the preprocessor directive `#define`, so `define` is the keyword.",
       "answer_source": "generated",
       "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
     },
@@ -333,7 +333,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "*   **(A) `const` (keyword `constant` is not a C keyword, but `const` is)**: The `const` keyword is used to declare variables whose values cannot be changed after initialization. When declared globally, it creates a global constant.\n*   **(C) `define`**: `#define` is a preprocessor directive used to create symbolic constants (macros), not a keyword to declare variables.\n\nWhile `#define` can also create global symbolic constants, `const` is the keyword used to declare a variable as constant.",
+      "answer": "No option is the exact `const` keyword; `constant` is the intended choice for a global constant, while `define` is only a preprocessor directive for macros.",
       "answer_source": "generated",
       "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
     },
@@ -348,7 +348,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "In C, the `*` operator binds to the variable name, not the type. So, in the declaration `int *ptr, P;`:\n*   `*ptr` means `ptr` is a pointer to an `int`.\n*   `P` (without `*`) means `P` is a regular `int` variable.",
+      "answer": "`*` binds to the name, so only `ptr` is a pointer to `int`; `P` is a plain `int`.",
       "answer_source": "generated",
       "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
     },
@@ -363,7 +363,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "While a pointer variable stores a memory address (which is a numerical value), the type of *address itself* is typically conceptualized as an unsigned integer, representing a location in memory. When referring to the *value* stored in a pointer variable, it's an address, which is essentially an integer. Though `void*` can point to any type, the underlying address is a numerical representation.",
+      "answer": "A pointer stores a memory address, which is an integer-valued quantity, so among the options it is integer.",
       "answer_source": "generated",
       "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
     },
@@ -378,7 +378,7 @@
       ],
       "correct_option": "D",
       "marks": 1,
-      "answer": "A function that calls itself is known as a recursive function. Recursion is a programming technique where a function solves a problem by calling itself with smaller instances of the same problem until a base case is reached.",
+      "answer": "A function that calls itself is a recursive function.",
       "answer_source": "generated",
       "chapter": "Unit 3: String Basics - String Declaration and Initialization"
     },
@@ -393,7 +393,7 @@
       ],
       "correct_option": "C",
       "marks": 1,
-      "answer": "A `union` is a special data type in C that allows storing different data types in the same memory location. The `sizeof` a union is determined by the size of its largest member. On most 64-bit systems:\n*   `int` typically takes 4 bytes.\n*   `char` typically takes 1 byte.\n\nTherefore, the largest member is `int` (4 bytes). The `sizeof(v1)` will be 4 bytes. Padding might occur for alignment, but for `int` and `char` in a union, the size will be `sizeof(int)`. (It's common for an `int` to be 4 bytes on both 32-bit and 64-bit systems; a `long int` might be 8 bytes on 64-bit). Assuming `int` is 4 bytes, the output is 4.",
+      "answer": "A union is as large as its largest member, `int` (4 bytes), so the size is 4.",
       "answer_source": "generated",
       "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
     },
@@ -408,7 +408,7 @@
       ],
       "correct_option": "D",
       "marks": 1,
-      "answer": "1.  `char *p = \"SRM Test Paper\";` declares `p` as a pointer to a `char` and makes it point to a string literal. String literals like \"SRM Test Paper\" are typically stored in read-only memory segments.\n2.  `p[0] = 'a';` and `p[1] = 'b';` attempt to modify the characters in this read-only string literal. This action leads to *undefined behavior*. While some compilers might allow it and produce output like \"abM Test Paper\", standard C guarantees that modifying a string literal is undefined behavior, which often results in a runtime error such as a segmentation fault.",
+      "answer": "`p` points to a string literal, which is read-only; writing to `p[0]`/`p[1]` is undefined behaviour and typically crashes at run time.",
       "answer_source": "generated",
       "chapter": "Unit 3: String Basics - String Declaration and Initialization"
     },
@@ -423,7 +423,7 @@
       ],
       "correct_option": "C",
       "marks": 1,
-      "answer": "`EOF` (End Of File) is a macro defined in `stdio.h` that represents a special integer value (typically -1). It's used to indicate that the end of a file has been reached or that an input function encountered an error.",
+      "answer": "`EOF` is a macro defined as -1 in `stdio.h`.",
       "answer_source": "generated",
       "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
     },
@@ -438,7 +438,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "*   The standard C library function for opening files is `fopen()`, not `open()` (which is a POSIX system call).\n*   `fopen()` takes two arguments: the filename (a string, typically `const char*`) and the mode (another string, `const char*`).\n*   It returns a `FILE*` pointer, which is used to refer to the opened file.\n*   Thus, `FILE *fopen (const char *filename, const char *mode);` is the correct prototype. Option (A) has `const *filename` instead of `const char *filename`, but it's the closest representation of the correct arguments and return type among the choices.",
+      "answer": "The standard function is `fopen(filename, mode)`; `open` is a POSIX call. Option A is the intended prototype (its `const *filename` is a typo for `const char *`).",
       "answer_source": "generated",
       "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming"
     },
@@ -453,7 +453,7 @@
       ],
       "correct_option": "D",
       "marks": 1,
-      "answer": "Given an array of structures `s[50]` where each element is of type `struct temp` with a member `b`:\n*   To access the `i`-th structure in the array, you use `s[i]`. `s[i]` itself is a `struct temp` variable.\n*   To access a member (`b`) of that specific structure `s[i]`, you then use the dot operator (`.`).\n*   Therefore, the correct syntax is `s[i].b`.",
+      "answer": "`s[i]` is the i-th structure and `.b` selects its member, giving `s[i].b`.",
       "answer_source": "generated",
       "chapter": "Unit 2: Conditional Control -Statements :Simple if, if...else"
     }

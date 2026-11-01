@@ -14,8 +14,8 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "VxWorks, Windows CE and RT Linux are real-time OSes; Palm OS is a general-purpose handheld OS.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Open-Source Operating Systems / Introduction"
         },
         {
@@ -44,8 +44,8 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "A mode switch needs far less saving and restoring than a full process context switch, so $t_2 < t_1$.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Operating-System Operations"
         },
         {
@@ -59,8 +59,8 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "Each fork() doubles the number of processes, so after $n$ iterations there are $2^n$ in total.",
+            "answer_source": "generated",
             "chapter": "Unit 2: Operations on Processes"
         },
         {
@@ -74,8 +74,8 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "Job scheduling is done by the long-term scheduler, which admits jobs from the pool into memory.",
+            "answer_source": "generated",
             "chapter": "Unit 2: Process Scheduling"
         },
         {

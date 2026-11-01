@@ -13,7 +13,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Maximum power is transferred when RL = Rth = 2.5 Ω. Power P_max = (Vth^2) / (4*Rth) = (10^2) / (4 * 2.5) = 100 / 10 = 10 W.",
+            "answer": "$P_{max}=\\dfrac{V_{th}^2}{4R_{th}}=\\dfrac{10^2}{4\\times2.5}=10$ W.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -28,7 +28,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Nodal voltage analysis relies systematically on applying Kirchhoff's Current Law (KCL) at each node.",
+            "answer": "Nodal analysis applies KCL at each node.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -43,7 +43,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "In a star-connected system, V_phase = V_line / √3 = 400 / 1.732 = 230.94 V.",
+            "answer": "$V_{ph}=400/\\sqrt{3}=230.94$ V.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -58,7 +58,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "From P = VI, Current I = P / V = 100W / 220V = 0.4545 A.",
+            "answer": "$I=P/V=100/220=0.4545$ A.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -73,7 +73,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "By the principles of superposition, to eliminate their effect, ideal voltage sources are replaced by a short circuit (0 V).",
+            "answer": "Superposition: voltage sources not under consideration are short-circuited.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -88,7 +88,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Gate is associated with FET devices. A BJT has Emitter, Base, and Collector terminals.",
+            "answer": "A BJT has emitter, base and collector; gate belongs to FETs.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -103,7 +103,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "A Junction Field Effect Transistor (JFET) operates by controlling the current using the input voltage applied to its gate, making it a voltage-controlled device.",
+            "answer": "A JFET's drain current is controlled by the gate voltage.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -118,7 +118,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "A rectifier is utilized specifically to convert alternating current (AC) to direct current (DC).",
+            "answer": "A rectifier converts AC to DC.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -133,7 +133,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "For an EX-NOR gate, the output is '1' when all inputs are identical, meaning EX-NOR(0,0) evaluates to '1'.",
+            "answer": "XNOR(0,0)=1; XNOR outputs 1 when its inputs are equal.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -148,7 +148,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Grouping minterms {0,1,2,3} yields A' and grouping {2,6} yields BC'. The simplified equation is Y = A' + BC'.",
+            "answer": "Minterms 0-3 give $\\overline{A}$ and minterms 2, 6 give $B\\overline{C}$, so $Y=\\overline{A}+B\\overline{C}$.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -163,7 +163,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Carbon brushes ride on the commutator to collect the generated current and transfer the electrical power developed in the rotating armature to the external stationary load circuit.",
+            "answer": "Brushes collect current from the commutator and deliver the generated power to the external load.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -178,7 +178,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The outer body (stator frame) of induction motors provides structural support and protection and is traditionally made of robust cast iron.",
+            "answer": "Cast iron gives the stator frame strength and protection.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -193,7 +193,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Standard 3-phase induction motors generally have a high operational efficiency typically in the range of 80% to 90%.",
+            "answer": "Induction motor efficiency is typically 80-90%.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -208,7 +208,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Because BLDC motors lack mechanical commutators, they are low-maintenance and long-lasting, but they require complex electronic controllers which makes them more expensive than conventional DC motors.",
+            "answer": "BLDC motors need costly electronic controllers, so low cost is not an advantage.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -223,7 +223,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "A thermocouple is an active transducer because it self-generates an output voltage upon experiencing a temperature gradient without the need for an external excitation supply.",
+            "answer": "A thermocouple generates its own voltage (Seebeck effect), so it is active.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -238,7 +238,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The Linear Variable Differential Transformer operates on the principle of variable mutual inductance between a primary and two secondary coils.",
+            "answer": "An LVDT works on mutual inductance.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -253,7 +253,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The circuit symbol showing a standard diode with outgoing arrows represents light emission, meaning it is a Light Emitting Diode (LED).",
+            "answer": "A diode symbol with outgoing arrows is an LED.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -268,7 +268,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "A photodiode is operated in reverse bias mode to widen its depletion region, allowing light to generate electron-hole pairs effectively increasing the reverse leakage current.",
+            "answer": "A photodiode is used in reverse bias, where light changes the reverse current.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -283,7 +283,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "A photoresistor or LDR (Light Dependent Resistor) decreases in resistance as the incident light intensity (concentration of light) increases.",
+            "answer": "A photoresistor (LDR) has resistance that falls as light increases.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -298,7 +298,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Earthing ensures that any leakage currents are diverted safely to the ground, offering primary protection against electric shocks.",
+            "answer": "Earthing protects against electric shock by giving leakage current a path to ground.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
@@ -313,7 +313,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The gauge/thickness of an earth wire must be sufficiently large to carry safely any potential fault current, hence it is directly based on the ampere capacity rating of the service wire.",
+            "answer": "The earth wire must carry the fault current, so its size follows the ampere capacity of the service wire.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
@@ -328,7 +328,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Pure Electric Vehicles run strictly on electricity. Hybrid vehicles, however, combine an Internal Combustion Engine (ICE) with an electric propulsion system.",
+            "answer": "A pure EV has no internal combustion engine; hybrids do.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
@@ -343,7 +343,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Solar or photovoltaic cells use the photovoltaic effect to directly convert incident solar radiation (light) into electrical energy.",
+            "answer": "A solar (photovoltaic) cell converts solar radiation into electricity.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
@@ -358,7 +358,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The standard frequency for AC power supply uniformly maintained across the Indian grid is 50 Hz.",
+            "answer": "The Indian standard frequency is 50 Hz.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         }

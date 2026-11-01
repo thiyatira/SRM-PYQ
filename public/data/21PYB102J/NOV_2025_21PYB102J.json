@@ -13,7 +13,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "GaAs is a direct bandgap semiconductor because the conduction band minimum and valence band maximum occur at the same k-value.",
+            "answer": "GaAs has its band extrema at the same k (direct); Si and Ge are indirect.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -28,7 +28,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Indirect bandgap means the extrema of the bands occur at different wavevectors (k), and they necessarily correspond to different energy levels.",
+            "answer": "Indirect gap: the CB minimum and VB maximum lie at different k and at different energies.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -58,7 +58,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "The tight-binding method (also known as LCAO) treats electrons as being tightly bound to their atoms and calculates the band structure using a linear combination of atomic orbitals.",
+            "answer": "Tight binding builds bands from atomic orbitals (LCAO).",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -73,7 +73,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "With increasing temperature, the semiconductor tends to become intrinsic, causing the Fermi level to shift from near the conduction band toward the center of the bandgap.",
+            "answer": "Heating adds intrinsic carriers, moving the Fermi level down toward mid-gap.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
@@ -88,7 +88,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "SRH recombination is a non-radiative process where charge carriers are captured by deep-level traps (impurities or defects) within the bandgap.",
+            "answer": "SRH recombination is non-radiative recombination through deep traps in the gap.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
@@ -103,7 +103,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "LEDs emit light via electroluminescence when forward biased, which allows electrons and holes to recombine at the junction.",
+            "answer": "An LED emits light (electroluminescence) when forward biased: electrons and holes recombine at the junction.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
@@ -118,7 +118,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Reverse bias increases the potential barrier and pulls majority carriers away from the junction, widening the depletion region.",
+            "answer": "Reverse bias raises the barrier and pulls carriers away, widening the depletion region.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
@@ -133,7 +133,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Intra-band transitions occur within the same energy band (e.g., an electron moving from one energy state to another within the conduction band), which is typical for free carriers.",
+            "answer": "Free-carrier transitions occur within one band (intraband); the others cross bands or levels.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
@@ -148,7 +148,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "By using separate pairs of probes for current injection and voltage measurement, the four-point probe method removes the influence of contact and lead resistance from the result.",
+            "answer": "Separate current and voltage probes remove contact and lead resistance errors.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
@@ -163,7 +163,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "It is a quick qualitative method to distinguish between n-type and p-type semiconductors based on the thermoelectric effect.",
+            "answer": "Hot-point probe quickly identifies n- or p-type via the thermoelectric effect.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
@@ -208,7 +208,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "In an indirect bandgap material, the minimum of the conduction band and maximum of the valence band occur at different values of crystal momentum (k).",
+            "answer": "Indirect gap: the CB minimum and VB maximum lie at different k and at different energies.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -223,7 +223,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The Fermi-Dirac distribution states that the probability of occupation at the Fermi energy (E = Ef) is exactly 1/2 for any temperature > 0 K.",
+            "answer": "Fermi-Dirac: $f(E_F)=1/2$ at any $T>0$.",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -238,7 +238,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "The tight-binding method, also known as LCAO (Linear Combination of Atomic Orbitals), constructs energy bands using atomic orbital functions.",
+            "answer": "Tight binding builds bands from atomic orbitals (LCAO).",
             "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
@@ -253,7 +253,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "As temperature increases, more intrinsic carriers are generated, causing the Fermi level to shift downward from near the conduction band towards the intrinsic level (middle of the gap).",
+            "answer": "Heating adds intrinsic carriers, moving the Fermi level down toward mid-gap.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
@@ -268,7 +268,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The SRH recombination mechanism involves defect states or \"traps\" within the bandgap that facilitate the recombination of electrons and holes.",
+            "answer": "SRH recombination is non-radiative recombination through deep traps in the gap.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
@@ -283,7 +283,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "An LED emits light under forward bias, where electrons and holes are injected across the junction and recombine to release photons.",
+            "answer": "An LED emits light (electroluminescence) when forward biased: electrons and holes recombine at the junction.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
@@ -298,7 +298,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Reverse bias pulls majority charge carriers away from the junction, increasing the width of the depletion region.",
+            "answer": "Reverse bias raises the barrier and pulls carriers away, widening the depletion region.",
             "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
@@ -313,7 +313,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Intra-band transitions involve a carrier moving from one energy state to another within the same band, also known as free-carrier absorption.",
+            "answer": "Free-carrier transitions occur within one band (intraband); the others cross bands or levels.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
@@ -328,7 +328,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Fermi's Golden Rule computes the transition probability rate for quantum systems subjected to perturbations.",
+            "answer": "Fermi's golden rule gives the transition rate between quantum states.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
@@ -343,7 +343,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "If upward transitions (absorption) exceed downward transitions (emission), there is net absorption, i.e. optical loss. Optical gain requires downward transitions to exceed upward ones (population inversion).",
+            "answer": "More upward than downward transitions means net absorption (optical loss); gain needs population inversion.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
@@ -358,7 +358,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Recombination of generated electron-hole pairs before they can be collected at the electrodes represents a primary efficiency loss in solar cells.",
+            "answer": "Recombination of electron-hole pairs before collection is a key efficiency loss.",
             "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
@@ -373,7 +373,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "By separating current supply and voltage measurement, the four-point probe method bypasses the voltage drop across the contacts, providing accurate sheet resistance.",
+            "answer": "Separate current and voltage probes remove contact and lead resistance errors.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
@@ -388,7 +388,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The hot-point probe test uses the thermoelectric (Seebeck) effect to determine the majority carrier type of a semiconductor.",
+            "answer": "Hot-point probe quickly identifies n- or p-type via the thermoelectric effect.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
@@ -403,7 +403,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Capacitance-Voltage (C-V) profiling is fundamentally used to extract built-in potential and doping concentration profiles in junctions.",
+            "answer": "C-V data give the doping concentration and built-in potential.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
@@ -418,7 +418,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The BTE evaluates the statistical distribution of particles experiencing external driving forces, diffusion, and scattering processes.",
+            "answer": "The BTE gives the carrier distribution under external forces and scattering.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
@@ -433,7 +433,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "In a quantum dot, charge carriers are quantum-confined in all three spatial dimensions, behaving as an artificial atom.",
+            "answer": "A quantum dot is confined in all three dimensions (0D).",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
@@ -448,7 +448,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Carbon nanotubes are renowned for having extremely high thermal conductivity, making \"poor thermal conductivity\" an incorrect property.",
+            "answer": "CNTs have very high thermal conductivity, so 'poor thermal conductivity' is wrong.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
@@ -463,7 +463,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "AFM works by physically scanning a sharp tip across the surface and measuring the tiny deflections of the cantilever to map out topography.",
+            "answer": "AFM maps topography from the deflection of a cantilever tip scanning the surface.",
             "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
@@ -478,7 +478,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "TCAD simulations model device fabrication processes and electrical behavior computationally, saving time and money prior to physical manufacturing.",
+            "answer": "TCAD predicts device behavior by simulation before fabrication, saving time and cost.",
             "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         }

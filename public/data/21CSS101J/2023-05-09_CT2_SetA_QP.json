@@ -13,7 +13,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The `strcmp` function compares two strings lexicographically. It returns a negative value if the first string is lexicographically smaller than the second, 0 if they are equal, and a positive value if the first string is lexicographically larger. In this case, 'H' (from \"Hello\") comes before 'W' (from \"World\"), so \"Hello\" is lexicographically smaller than \"World\". Therefore, `strcmp(\"Hello\",\"World\")` will return a negative value. Among the given options, -1 is the only negative value.",
+            "answer": "`strcmp` returns a negative value when the first string is smaller; 'H' < 'W', so -1.",
             "answer_source": "generated",
             "chapter": "Unit 3: String Basics - String Declaration"
         },
@@ -28,7 +28,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The `strrchr()` function (string reverse character) searches for the last occurrence of a specific character in a given string and returns a pointer to that location. `strchr()` finds the first occurrence.",
+            "answer": "`strrchr` finds the last occurrence of a character; `strchr` finds the first.",
             "answer_source": "generated",
             "chapter": "Unit 3: String Basics - String Declaration"
         },
@@ -43,7 +43,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The `strncat()` function is used to concatenate (append) a specified number of characters from a source string to a destination string. It appends at most `n` characters.",
+            "answer": "`strncat` appends at most `n` characters; `strcat` has no limit.",
             "answer_source": "generated",
             "chapter": "Unit 3: String Basics - String Declaration"
         },
@@ -58,7 +58,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "In Python, the hash symbol (`#`) is used to denote a single-line comment. Any text following `#` on the same line is ignored by the interpreter.",
+            "answer": "`#` starts a single-line comment in Python.",
             "answer_source": "generated",
             "chapter": "Unit 4: Python: Introduction to Python"
         },
@@ -73,7 +73,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "This paper uses Python 2 style code (for example `print \"Hello ...\"` elsewhere in it), where `input()` evaluates what is typed, so `x` is the integer 20 and `10 + x` prints 30. (In Python 3, `input()` returns a string and `10 + x` would raise a `TypeError`.)",
+            "answer": "In the Python 2 style used here, `input()` evaluates the typed text, so `x` is the integer 20 and the result is 30. (Python 3 would raise a `TypeError`.)",
             "answer_source": "generated",
             "chapter": "Unit 4: Python: Introduction to Python"
         },
@@ -88,7 +88,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "A variable defined outside any function, typically at the top level of a script or program, is known as a global variable. It can be accessed and modified from anywhere within the program, including inside functions (though modification usually requires specific keywords in some languages, like `global` in Python).",
+            "answer": "A variable defined outside every function is global.",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages"
         },
@@ -103,7 +103,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Python is a case-sensitive language. This means that `myVariable`, `myvariable`, and `MyVariable` are all treated as distinct identifiers. For example, `print` is a built-in function, but `Print` would be an undefined name.",
+            "answer": "Python identifiers are case sensitive: `Name` and `name` differ.",
             "answer_source": "generated",
             "chapter": "Unit 4: Python: Introduction to Python"
         },
@@ -118,7 +118,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The `while` loop condition is `i < 0 and i > 2`. When `i` is initialized to `0`, the first part of the condition `i < 0` (i.e., `0 < 0`) is `False`. Since the condition uses `and`, if any part is `False`, the entire condition is `False`. Therefore, `False and i > 2` evaluates to `False`. The loop condition is `False` from the very beginning, so the code inside the loop will never be executed.",
+            "answer": "`i = 0`, so `i < 0` is already false; the loop body never runs (0 times).",
             "answer_source": "generated",
             "chapter": "Unit 4: Python: Introduction to Python"
         },

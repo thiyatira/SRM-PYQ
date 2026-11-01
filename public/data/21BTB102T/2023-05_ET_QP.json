@@ -13,7 +13,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Uracil is a nitrogenous base found in RNA, replacing thymine which is found in DNA. DNA contains Adenine, Guanine, Cytosine, and Thymine.",
+            "answer": "Uracil is found only in RNA; DNA uses thymine.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
@@ -28,7 +28,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The central dogma of molecular biology describes the flow of genetic information from DNA to RNA to Protein. Viruses are biological entities but are not a fundamental component of the central dogma itself, although they interact with host cellular machinery that follows the dogma.",
+            "answer": "The central dogma is DNA to RNA to protein; a virus is not a component of that flow.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
@@ -43,7 +43,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Transcriptomics is the study of the complete set of RNA transcripts produced by an organism or in a specific cell type under specific conditions, reflecting total gene expression. Genomics is the study of the entire genome, Proteomics is the study of the entire set of proteins, and Lipidomics is the study of lipids.",
+            "answer": "Transcriptomics studies all RNA transcripts, i.e. total gene expression. (Genomics = genes, proteomics = proteins.)",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
@@ -58,7 +58,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "UAG is one of the three standard stop codons (UAA, UAG, UGA) that signal the termination of protein synthesis. AUG is the start codon.",
+            "answer": "UAG is a stop codon (UAA, UAG, UGA); AUG is the start codon.",
             "answer_source": "generated",
             "chapter": "Unit 3: Structure Biology"
         },
@@ -73,7 +73,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Uniprot is a comprehensive, high-quality, and freely accessible database of protein sequences and functional information. GenBank, EMBL (European Molecular Biology Laboratory), and DDBJ (DNA Data Bank of Japan) are major nucleotide sequence databases.",
+            "answer": "UniProt is a protein sequence database; GenBank, EMBL and DDBJ hold nucleotide sequences.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
@@ -88,7 +88,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "PDB (Protein Data Bank) format is used for representing the 3D atomic coordinates of proteins and nucleic acids, not for genomic sequence data itself. FASTQ, BAM, and GenBank are common formats for storing nucleotide sequence data and related genomic information.",
+            "answer": "PDB stores 3D atomic coordinates of structures, not genomic sequence data (FASTQ, BAM, GenBank do).",
             "answer_source": "generated",
             "chapter": "Unit 3: Structure Biology"
         },
@@ -103,7 +103,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Gene Ontology (GO) is a hierarchical classification system for describing gene and protein functions. It has three main categories: Biological Process, Molecular Function, and Cellular Component. 'Enzyme Action' is a specific type of Molecular Function, not a separate top-level category.",
+            "answer": "GO's three ontologies are Biological Process, Molecular Function and Cellular Component; 'enzyme action' is not one of them.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
@@ -118,7 +118,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Parasitology is the study of parasites and their relationships with their hosts. Orthology, Paralogy, and Xenology are different types of homologous relationships between genes or proteins, describing their evolutionary origins (e.g., speciation, duplication, horizontal transfer).",
+            "answer": "Orthology, paralogy and xenology are homology types; parasitology is the study of parasites.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
@@ -133,7 +133,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "R data frames can store various data types in their columns, including numeric, character, and factor. 'Special function' is not a fundamental data type in R in the same way as numeric, character, or factor.",
+            "answer": "Data frame columns can be numeric, factor or character, but not a function.",
             "answer_source": "generated",
             "chapter": "Unit 4: Neurobiology"
         },
@@ -148,7 +148,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "In Python, `int` (integers), `float` (floating-point numbers), and `complex` (complex numbers) are numeric data types. `bytes` is a sequence type representing immutable sequences of single bytes.",
+            "answer": "int, float and complex are numeric types; bytes is a sequence type.",
             "answer_source": "generated",
             "chapter": "Unit 4: Neurobiology"
         },
@@ -163,7 +163,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "In Python, the `+` operator (addition) is used for concatenating sequences like strings and lists. `concat()` and `paste()` are functions often found in other languages or libraries (e.g., R, pandas for `concat`).",
+            "answer": "The + operator concatenates strings and lists in Python.",
             "answer_source": "generated",
             "chapter": "Unit 4: Neurobiology"
         },
@@ -178,7 +178,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "In R, a data frame is converted to a matrix with as.matrix() (or data.matrix()). Of the listed options, matrix() is the intended function; matr(), matrixf() and matrixfunc() do not exist.",
+            "answer": "as.matrix() does this; matrix() is the only listed name that exists, so it is the intended choice.",
             "answer_source": "generated",
             "chapter": "Unit 4: Neurobiology"
         },
@@ -193,7 +193,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "In R, `library()` is used to load an installed package into the current R session, making its functions and data available for use. `install.packages()` is for installing, and `update.packages()` is for updating.",
+            "answer": "library() loads an installed package into the session; install() only installs it.",
             "answer_source": "generated",
             "chapter": "Unit 4: Neurobiology"
         },
@@ -208,7 +208,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "DESeq, edgeR, and limma are popular R/Bioconductor packages specifically designed and widely used for performing differential gene expression analysis on RNA-seq data. RSEM (RNA-Seq Expectation-Maximization) is a software package for quantifying gene and isoform expression levels from RNA-seq data, which is a precursor step to differential expression analysis, but RSEM itself does not perform the differential analysis.",
+            "answer": "RSEM only quantifies expression; DESeq, edgeR and limma test differential expression.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
@@ -223,7 +223,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Vignettes are introductory documents, tutorials, or guides for R packages. They are typically written in R Markdown or Sweave and can be rendered into various formats, including HTML, to provide rich documentation.",
+            "answer": "Vignettes are long-form package guides that R builds into HTML or PDF.",
             "answer_source": "generated",
             "chapter": "Unit 4: Neurobiology"
         },
@@ -238,7 +238,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "ggplot2 is a powerful and widely used R package for creating elegant and complex data visualizations based on the Grammar of Graphics. It allows users to build plots layer by layer, offering extensive control over aesthetics and data mapping.",
+            "answer": "ggplot2 builds complex plots from data frames layer by layer (Grammar of Graphics).",
             "answer_source": "generated",
             "chapter": "Unit 4: Neurobiology"
         },
@@ -261,7 +261,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Bio.Alphabet.IUPAC defines IUPACProtein, IUPACUnambiguousDNA, IUPACUnambiguousRNA (and ambiguous/extended variants), but there is no plain IUPACDNA class, so IUPACDNA is the odd option. The stem as printed is incomplete (it appears to ask which name is not defined in the module), so this reading is a best interpretation.",
+            "answer": "IUPAC defines IUPACProtein, IUPACUnambiguousDNA and IUPACUnambiguousRNA but no plain IUPACDNA.",
             "answer_source": "generated",
             "chapter": "Unit 4: Neurobiology"
         },
@@ -276,7 +276,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "In Biopython, a `Seq` object represents an immutable biological sequence. This means its content cannot be changed after creation; it is essentially 'readable' or read-only.",
+            "answer": "Biopython Seq objects are immutable, so they are read-only rather than writable.",
             "answer_source": "generated",
             "chapter": "Unit 4: Neurobiology"
         },
@@ -291,7 +291,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The `SeqRecord` class, which combines a `Seq` object with additional annotation like an ID, name, description, and features, is defined in the `Bio.SeqRecord` module of Biopython.",
+            "answer": "SeqRecord is defined in the Bio.SeqRecord module.",
             "answer_source": "generated",
             "chapter": "Unit 4: Neurobiology"
         },

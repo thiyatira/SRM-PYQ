@@ -14,7 +14,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Asymptotic analysis can evaluate an algorithm's behavior across all cases depending on the bound used: Big-O represents the upper bound (worst-case), Omega ($\\Omega$) represents the lower bound (best-case), and Theta ($\\Theta$) represents the tight bound (often average-case).",
+            "answer": "Asymptotic notations bound an algorithm's growth: $O$ for the worst case, $\\Omega$ for the best case, $\\Theta$ for a tight bound, so all three scenarios can be analysed.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Introduction"
         },
@@ -29,7 +29,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Since 'p' is an integer pointer, it must store the memory address of an integer. '&a[0]' extracts the address of the first element of the integer array 'a', which is a valid pointer assignment.",
+            "answer": "`&a[0]` is the address of the first int of `a`, which is what an int pointer can hold.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Introduction"
         },
@@ -44,7 +44,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "A self-referential structure contains a pointer to a structure of the same type. In C, the complete struct definition (prefixed by `struct node`) is required inside the declaration, and it must end with a semicolon.",
+            "answer": "A self-referential struct holds a pointer to its own type: `struct node *link;`, and the declaration ends with `;`.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Introduction"
         },
@@ -74,7 +74,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "To allocate memory for a new node, `sizeof(NODE)` determines the size of the structure in bytes, `malloc` dynamically allocates this space, and `(NODE*)` casts the returned generic `void*` pointer to the corresponding node pointer type.",
+            "answer": "`sizeof(NODE)` gives the node size, `malloc` allocates it, and the `(NODE*)` cast converts the returned `void*`.",
             "answer_source": "generated",
             "chapter": "Unit 2 - List Structure"
         },
@@ -89,7 +89,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "A quest with backtracking/retry capabilities represents dynamic bi-directional navigation (moving to the next stage or returning to a previous stage), which maps perfectly to the forward and backward pointer structures of a doubly linked list.",
+            "answer": "Retrying stages needs moving both forward and back, which a doubly linked list's `next` and `prev` pointers provide.",
             "answer_source": "generated",
             "chapter": "Unit 2 - List Structure"
         },
@@ -104,7 +104,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Polynomials are typically represented dynamically where each term is a node containing coefficient, exponent, and a pointer to the next term, making Linked Lists ideal for performing variable-length operations like addition.",
+            "answer": "Each term (coefficient, exponent) is a node linked to the next, so terms are easily merged during addition.",
             "answer_source": "generated",
             "chapter": "Unit 2 - List Structure"
         },
@@ -119,7 +119,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Inserting a node in a circular singly linked list at a typical position requires updating two pointers: the pointer from the preceding node to the new node, and the pointer from the new node to its successor.",
+            "answer": "Two pointers change: the predecessor's link to the new node, and the new node's link to the successor.",
             "answer_source": "generated",
             "chapter": "Unit 2 - List Structure"
         },
@@ -134,7 +134,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Let's trace the Stack state and output:\n1. `PUSH(30)` -> Stack: `[30]`\n2. `PUSH(40)` -> Stack: `[30, 40]`\n3. `POP` -> Pops `40`. Stack: `[30]`\n4. `PUSH(30)` -> Stack: `[30, 30]`\n5. `PUSH(40)` -> Stack: `[30, 30, 40]`\n6. `POP` -> Pops `40`. Stack: `[30, 30]`\n7. `POP` -> Pops `30`. Stack: `[30]`\n8. `POP` -> Pops `30`. Stack: `[]`\n9. `PUSH(40)` -> Stack: `[40]`\n10. `POP` -> Pops `40`. Stack: `[]`\nPopped elements: 40, 40, 30, 30, 40.",
+            "answer": "Trace pops: 40, 40, 30, 30, 40.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Stack and Queue"
         },
@@ -149,7 +149,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The `Peek` (or `Top`) operation returns the element at the top of the stack without removing it, whereas `Pop` retrieves and deletes it.",
+            "answer": "Peek (top) returns the top element without removing it; Pop removes it.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Stack and Queue"
         },
@@ -164,7 +164,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "In a circular queue, the next insertion position is given by `(rear + 1) % Size`. Here, `(9 + 1) % 10 = 0`.",
+            "answer": "Next index is $(rear+1) \\bmod 10 = (9+1) \\bmod 10 = 0$.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Stack and Queue"
         },
@@ -179,7 +179,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "A stack follows the Last-In-First-Out (LIFO) property. Inserting the letters of a word into a stack and then popping them results in a reversed sequence.",
+            "answer": "A stack is LIFO: pushing the letters and popping them gives the word in reverse.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Stack and Queue"
         },
@@ -194,7 +194,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Preorder traversal follows the sequence: Root $\\rightarrow$ Left Subtree $\\rightarrow$ Right Subtree.",
+            "answer": "Preorder visits Root, then Left, then Right.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Trees and Hashing"
         },
@@ -209,7 +209,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Quadratic probing resolves collision by checking slots according to a quadratic polynomial in $i$. Usually, $F(i) = c_1 \\cdot i + c_2 \\cdot i^2$, represented simplistically as adding $i^2$ ($F(i^2)$) to the hash address modulo the table size.",
+            "answer": "Quadratic probing probes $(hash(x) + i^2) \\bmod \\text{table size}$ for $i = 1, 2, \\dots$",
             "answer_source": "generated",
             "chapter": "Unit 4 - Trees and Hashing"
         },
@@ -224,7 +224,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Postorder traversal order is Left, Right, Root:\n- For Left Subtree (Rooted at Q):\n  - Left of Q is S.\n  - Right of Q is T (which has left child W, making T's postorder: `W, T`).\n  - Postorder of Q: `S, W, T, Q`.\n- For Right Subtree (Rooted at R):\n  - Left of R is U (which has right child X, making U's postorder: `X, U`).\n  - Right of R is V.\n  - Postorder of R: `X, U, V, R`.\n- Root node: `P`.\nCombining these gives: `S, W, T, Q, X, U, V, R, P`.",
+            "answer": "Post-order is Left, Right, Root: Q-subtree gives S, W, T, Q; R-subtree gives X, U, V, R; then P.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Trees and Hashing"
         },
@@ -239,7 +239,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The balance factor of a node in an AVL tree is defined as the difference between the height of its left subtree and the height of its right subtree (i.e., $BalanceFactor = Height(LeftSubtree) - Height(RightSubtree)$).",
+            "answer": "Balance factor = height of left subtree minus height of right subtree.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Trees and Hashing"
         },
@@ -254,7 +254,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Based on standard direct analysis of the visual layout:\n- Incoming edges to E: from node C and node D. (Indegree = 2).\n- Outgoing edges from E: to node F. \n*Note: Although the visual layout indicates exactly 2 incoming edges (C$\\rightarrow$E, D$\\rightarrow$E) and 1 outgoing edge (E$\\rightarrow$F) leading to a theoretical outdegree of 1, option (B) represents the closest designated response for indegree = 2 under potential exam design constraints.*",
+            "answer": "Read from the graph figure (not available as text): E has two incoming and two outgoing edges. This could not be independently verified.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Graph"
         },
@@ -269,7 +269,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Depth First Search (DFS) processes vertices by diving as deep as possible along each branch before backtracking to previous vertices to find unexplored paths.",
+            "answer": "DFS goes as deep as possible along a path, then backtracks to explore other branches.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Graph"
         },
@@ -284,7 +284,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "In a complete undirected graph with $n$ vertices, each node is connected to every other $n-1$ nodes. Since each edge is counted twice (once for each endpoint), the total number of edges is $\\frac{n(n-1)}{2}$.",
+            "answer": "Each of the $n$ vertices connects to $n-1$ others and each edge is counted twice, giving $n(n-1)/2$ edges.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Graph"
         },
@@ -299,7 +299,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Topological sorting of a directed acyclic graph (DAG) produces a linear ordering of vertices such that for every directed edge $uv$, vertex $u$ comes before $v$. This is the standard method for determining task dependencies and scheduling constraints.",
+            "answer": "Topological sorting orders the vertices of a DAG so each prerequisite comes before the places that depend on it.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Graph"
         },

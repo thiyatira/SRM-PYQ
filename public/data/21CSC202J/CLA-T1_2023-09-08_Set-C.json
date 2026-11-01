@@ -14,7 +14,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "**Explanation:** Multiprogramming increases CPU utilization by keeping several jobs in memory simultaneously. When one process needs to wait (e.g., for I/O operations), the operating system switches the CPU to another active process, thereby preventing the CPU from sitting idle.",
+            "answer": "While one process waits for I/O, the OS runs another, so the CPU stays busy and utilization rises.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction, Computer-System Organization, Operating-System Operations"
         },
@@ -29,7 +29,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "**Explanation:** Privileged instructions perform critical tasks such as direct hardware access, timer management, or memory manipulation. To protect system stability and security, the hardware allows privileged instructions to execute only when the CPU is running in kernel (supervisor) mode.",
+            "answer": "Privileged instructions (hardware access, timers, memory control) can run only in kernel mode, which protects the system.",
             "answer_source": "generated",
             "chapter": "Unit 1: Operating-System Structure, Operating-System Operations, User and Operating-System Interface"
         },
@@ -44,7 +44,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "**Explanation:** The Process Control Block (PCB) is the primary data structure maintained by the operating system for each process. It stores process state, program counter, register values, memory allocation details (text section, data section, stack pointer, memory limits), and open file descriptors.",
+            "answer": "The PCB stores a process's state, registers, memory limits and the text, data and stack details.",
             "answer_source": "generated",
             "chapter": "Unit 2: PROCESS MANAGEMENT: Process Concept"
         },
@@ -59,7 +59,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "**Explanation:** Multithreading is the capability of an operating system to allow multiple threads (lightweight units of execution) to run concurrently within the context of a single process, sharing the same address space and process resources.",
+            "answer": "Multithreading means several threads run concurrently inside one process, sharing its address space.",
             "answer_source": "generated",
             "chapter": "Unit 2: Threads: Multicore Programming, Multithreading Models"
         },
@@ -74,7 +74,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "**Explanation:** The program stack contains activation records for active procedure calls, storing parameters, local variables, and return addresses. Identification data like child process IDs (PIDs) are maintained by the operating system inside the Process Control Block (PCB), not on the stack.",
+            "answer": "The stack holds parameters, local variables and return addresses; child PIDs are kept in the PCB.",
             "answer_source": "generated",
             "chapter": "Unit 2: PROCESS MANAGEMENT: Process Concept"
         },

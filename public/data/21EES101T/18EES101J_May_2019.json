@@ -13,7 +13,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "KVL relates to the work done per unit charge, which means it is fundamentally based on the law of conservation of energy.",
+            "answer": "KVL says the net energy gained/lost around a closed loop is zero, i.e. conservation of energy.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -28,7 +28,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The Superposition theorem requires the circuit network components to be linear and bilateral to be applicable.",
+            "answer": "Superposition needs linearity (and bilateral elements); it fails for non-linear circuits and works for AC as well as DC.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -43,7 +43,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "For an equivalent star-to-delta transformation with equal resistors, R_delta = 3 * R_star = 3 * 3 Ω = 9 Ω.",
+            "answer": "Delta resistance = $3R_Y = 3\\times3 = 9\\ \\Omega$.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -58,7 +58,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Apparent power S = √(P^2 + Q^2) = √(2^2 + 3.5^2) = √(4 + 12.25) = √16.25 ≈ 4.03 VA.",
+            "answer": "$S=\\sqrt{P^2+Q^2}=\\sqrt{2^2+3.5^2}=\\sqrt{16.25}\\approx4.03$ VA.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -73,7 +73,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "A power factor of 0 implies a phase angle of 90 degrees, which is characteristic of a purely inductive or purely capacitive element. Of the given choices, only the purely inductive element (B) fits.",
+            "answer": "$\\text{PF}=0$ means a 90 degree phase shift, so the element is purely reactive; of the given choices only the purely inductive one fits.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -88,7 +88,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Silicon steel is widely used for transformer cores to reduce hysteresis losses due to its high permeability.",
+            "answer": "Silicon steel has high permeability and low hysteresis loss, and is laminated to cut eddy losses.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -103,7 +103,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The choke provides a high inductive voltage surge to initiate the gas discharge when the starter breaks the circuit.",
+            "answer": "The choke produces a high inductive voltage kick when the starter opens the circuit, which strikes the discharge.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
@@ -118,7 +118,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "For linear amplification without distortion, a transistor must be biased to operate in the active region.",
+            "answer": "Linear amplification needs the active region; saturation and cut-off distort the signal.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -133,7 +133,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "MOSFET stands for Metal-Oxide-Semiconductor Field-Effect Transistor.",
+            "answer": "MOSFET = Metal Oxide Semiconductor Field Effect Transistor.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -148,7 +148,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Permanent Magnet Moving Coil (PMMC) instruments strictly measure direct current (DC).",
+            "answer": "A PMMC (moving coil) meter deflects in proportion to the average current, so it reads DC only.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -163,7 +163,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "An ideal strain gauge should have a high gauge factor and high sensitivity to measure very small mechanical strains effectively.",
+            "answer": "A good strain gauge has a high gauge factor ($\\Delta R/R$ per unit strain) and high sensitivity to detect small strains.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -178,7 +178,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "A thermocouple is fundamentally a temperature-sensing transducer, unlike the others which can be used in pressure sensing configurations.",
+            "answer": "A thermocouple senses temperature (Seebeck effect); piezoelectric, strain gauge and LVDT-based sensors are used for pressure.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -193,7 +193,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "De Morgan's Law states that the complement of a logical OR is the logical AND of the complements: (A+B)' = A'.B'.",
+            "answer": "De Morgan: $\\overline{A+B}=\\overline{A}\\cdot\\overline{B}$.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -208,7 +208,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "By De Morgan's theorem, an AND gate with inverted inputs functions identically to a NOR gate: A'.B' = (A+B)'.",
+            "answer": "Inverting each input of an AND gate gives $\\overline{A}\\,\\overline{B}=\\overline{A+B}$, which is NOR.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         }

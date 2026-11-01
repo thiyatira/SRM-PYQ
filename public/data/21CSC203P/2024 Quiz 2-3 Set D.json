@@ -21,8 +21,8 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Standard JDBC driver classifications only range from Type 1 to Type 4 (Type 1: JDBC-ODBC Bridge, Type 2: Native-API, Type 3: Network Protocol, Type 4: Native-Protocol/Thin). Type 5 is not a standard JDBC driver type.",
-            "answer_source": "provided",
+            "answer": "JDBC drivers are Type 1 (JDBC-ODBC bridge), 2 (Native-API), 3 (Network protocol) and 4 (Thin/native protocol). There is no Type 5.",
+            "answer_source": "generated",
             "chapter": "Unit 3: Advanced Java Programming Paradigms"
         },
         {
@@ -36,8 +36,8 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "In JDBC, the `next()` method of the `ResultSet` interface moves the cursor forward one row from its current position and returns true if the new current row is valid.",
-            "answer_source": "provided",
+            "answer": "`ResultSet.next()` moves the cursor to the next row and returns false when no rows remain.",
+            "answer_source": "generated",
             "chapter": "Unit 3: Advanced Java Programming Paradigms"
         },
         {
@@ -67,8 +67,8 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "`JFileChooser` is a Java Swing component that presents a GUI dialogue window allowing users to navigate and select files or directories.",
-            "answer_source": "provided",
+            "answer": "`JFileChooser` is the Swing component that shows a file-selection dialog.",
+            "answer_source": "generated",
             "chapter": "Unit 3: Advanced Java Programming Paradigms"
         },
         {

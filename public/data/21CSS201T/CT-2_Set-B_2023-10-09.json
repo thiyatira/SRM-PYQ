@@ -149,8 +149,8 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "$$\\begin{array}{r@{\\quad}l}\n1101 & (13_{10}) \\\\\n\\times \\ 1011 & (11_{10}) \\\\\n\\hline\n1101 & \\\\\n11010 & \\\\\n000000 & \\\\\n1101000 & \\\\\n\\hline\n10001111 & (143_{10})\n\\end{array}$$\nThus, $1101_2 \\times 1011_2 = 10001111_2$.",
-            "answer_source": "provided",
+            "answer": "$1101\\times1011 = 13\\times11 = 143 = 10001111_2$.",
+            "answer_source": "generated",
             "chapter": "Unit 3: Design of ALU"
         },
         {

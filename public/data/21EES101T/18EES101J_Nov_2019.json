@@ -13,7 +13,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "The voltage across a capacitor as a function of time is derived from the relation i = C(dV/dt), giving V = (1/C) ∫ i dt.",
+            "answer": "From $i=C\\,dv/dt$, $v=\\frac{1}{C}\\int i\\,dt$.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -28,7 +28,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "In a series circuit, Kirchhoff's Voltage Law dictates that the source voltage is the sum of the individual voltage drops: 5 + 5 + 5 + 5 = 20 V.",
+            "answer": "In a series circuit the drops add (KVL): $4\\times5=20$ V.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -43,7 +43,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The resistance transformation equation from a balanced Star to Delta connection is R_delta = 3 * R_star.",
+            "answer": "Star to delta: $R_\\Delta=3R_Y$.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -58,7 +58,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "In a simple single-loop DC generator (using a commutator), the rectified output voltage pulses to a maximum twice during every full revolution. Therefore, 50 rev/sec * 2 = 100 times.",
+            "answer": "A simple one-loop generator with a commutator gives 2 voltage peaks per revolution: $50\\times2=100$ per second.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -73,7 +73,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The voltages in an AC RC series circuit add as phasors: V_source = √(V_R^2 + V_C^2) = √(12^2 + 15^2) = √(144 + 225) = √369 ≈ 19.2 V.",
+            "answer": "$V=\\sqrt{V_R^2+V_C^2}=\\sqrt{12^2+15^2}=\\sqrt{369}\\approx19.2$ V, since the voltages are 90 degrees apart.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -88,7 +88,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "For a Permanent Magnet Moving Coil (PMMC) instrument, the deflecting torque Td = BINA, making it directly proportional to the measured current (I).",
+            "answer": "In a PMMC meter $T_d=BINA\\propto I$.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -103,7 +103,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Decreasing the area of contact (plate area) will increase earth resistance, therefore it cannot be used to reduce it.",
+            "answer": "Earth resistance falls with more area, depth, moisture or parallel electrodes; decreasing plate area raises it.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
@@ -118,7 +118,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "When operated in the reverse breakdown (Zener) region, the Zener diode maintains a constant voltage, hence it acts as a voltage regulator.",
+            "answer": "In reverse breakdown the Zener holds an almost constant voltage, so it works as a voltage regulator.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -133,7 +133,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The theoretical maximum power conversion efficiency for a single-phase half-wave rectifier is 40.6%.",
+            "answer": "For a half-wave rectifier $\\eta_{max}=40.6\\%$.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -148,7 +148,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Passive transducers require an external power supply to operate. LVDT requires external AC excitation, unlike the other self-generating active transducers listed.",
+            "answer": "LVDT needs an external AC excitation (passive); the others generate their own output (active).",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -163,7 +163,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Typical commonly used thermocouples (like K-type or J-type) generate voltages generally in the order of 40-50 μV / °C.",
+            "answer": "Common thermocouples (J, K types) give roughly 40-50 $\\mu$V/$^\\circ$C.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -178,7 +178,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "The Gauge factor is defined as the ratio of fractional change in electrical resistance to the fractional change in length (strain).",
+            "answer": "Gauge factor $G=\\dfrac{\\Delta R/R}{\\Delta l/l}$, the fractional resistance change per unit strain.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -193,7 +193,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Quartz, Rochelle salt, and Barium titanate are common crystalline piezoelectric materials. Constantan is an alloy typically used for resistance elements and strain gauges, not a piezoelectric crystal.",
+            "answer": "Constantan is a metal alloy used for strain gauges; quartz, Rochelle salt and barium titanate are piezoelectric crystals.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -208,7 +208,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "By Boolean algebra absorption law, A + AB = A(1 + B) = A(1) = A.",
+            "answer": "$A+AB=A(1+B)=A$ (absorption law).",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         }

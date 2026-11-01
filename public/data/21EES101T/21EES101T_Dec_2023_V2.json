@@ -13,7 +13,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "For a pure sinusoidal AC waveform, the Root Mean Square (RMS) value is always the peak voltage (Vm) divided by the square root of 2.",
+            "answer": "For a sinusoid, $V_{rms}=V_m/\\sqrt{2}$.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -28,7 +28,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Ohm's Law states that current is directly proportional to voltage, provided physical conditions like temperature remain strictly constant.",
+            "answer": "Ohm's law ($V\\propto I$) holds only when temperature (and other physical conditions) stays constant.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -43,7 +43,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "In an ideal purely inductive AC circuit, the current lags the applied voltage by an exact phase angle of 90 degrees.",
+            "answer": "In a pure inductor the current lags the voltage by 90 degrees.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -58,7 +58,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "In Superposition Theorem, when analyzing the effect of one source, ideal voltage sources are deactivated by being short-circuited (0 V).",
+            "answer": "Superposition: voltage sources not under consideration are short-circuited.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Electric Circuits"
         },
@@ -73,7 +73,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Standard PN junction diodes are two-terminal devices without a control gate, making them the main component of uncontrolled rectifiers.",
+            "answer": "Plain diodes have no control terminal, so they form uncontrolled rectifiers.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -88,7 +88,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Unlike BJTs which are current-controlled, a MOSFET operates by adjusting the channel conductivity using the voltage applied to the gate terminal.",
+            "answer": "A MOSFET's channel is controlled by gate voltage; a BJT is current-controlled.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -103,7 +103,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Y=AB+AC features product terms (AND operations like AB, AC) that are summed (OR operation) together, fitting the definition of Sum of Product (SOP) form.",
+            "answer": "$AB+AC$ is a sum of product terms (SOP); it is not standard (canonical) since not every term has all variables.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -118,7 +118,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "An EX-NOR (Exclusive-NOR) gate acts as an equivalence detector, yielding a high output ('1') only when its inputs match exactly.",
+            "answer": "XNOR outputs 1 when both inputs are equal.",
             "answer_source": "generated",
             "chapter": "Unit 2 - Electronics"
         },
@@ -133,7 +133,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "While the yoke also serves as an outer mechanical cover, its functional electromechanical purpose is to provide a low-reluctance return path for the magnetic flux.",
+            "answer": "The yoke carries the magnetic flux (low-reluctance path) in addition to supporting the machine.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -148,7 +148,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "A Squirrel cage induction motor utilizes solid aluminum or copper conductor bars shorted by end rings instead of traditional wound coils on the rotor.",
+            "answer": "A squirrel cage rotor has bars shorted by end rings, not rotor windings.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -163,7 +163,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Brushless DC (BLDC) motors (along with PMSMs) provide high power density, reliability, and excellent efficiency, making them a premier choice for Electric Vehicle (EV) propulsion.",
+            "answer": "BLDC motors have high efficiency and power density, so they suit EVs.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Machines and Drives"
         },
@@ -178,7 +178,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "When the core of an LVDT is exactly at the geometric center (null position), the induced voltages in the two identical secondary coils cancel each other perfectly, giving zero net output.",
+            "answer": "At the centre the two secondary voltages are equal and opposite, so the net output is zero.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -193,7 +193,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Strain gauges measure mechanical deformation or strain caused by forces, making them the standard tool for structural load and stress testing.",
+            "answer": "Strain gauges measure strain from load, so they are used for structural load testing.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -208,7 +208,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The current generated in a semiconductor device purely as a result of incident photons creating electron-hole pairs is explicitly termed 'photo current'.",
+            "answer": "The current produced by light on a photodiode junction is the photo current.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -223,7 +223,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "A photo transistor is an active light-detecting sensor that converts light photons into a corresponding electrical signal.",
+            "answer": "A phototransistor senses light and converts it to an electrical signal.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Transducers and Sensors"
         },
@@ -238,7 +238,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "For overhead transmission lines and general robust grounding applications, Galvanized steel (GI) is commonly used for earth wires because of its high tensile strength and rust resistance.",
+            "answer": "Overhead earth wires are galvanized steel for strength and rust resistance.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
@@ -253,7 +253,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Standard commercial silicon-based solar photovoltaic panels typically operate at an energy conversion efficiency of roughly 15% to 22%.",
+            "answer": "Typical commercial solar cell efficiency is about 10-20%.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
@@ -268,7 +268,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Due to its suitable bandgap, abundance, and extensive manufacturing infrastructure, Silicon is overwhelmingly the dominant material for solar cell fabrication.",
+            "answer": "Silicon is the most widely used because of its bandgap, abundance and mature technology.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         },
@@ -283,7 +283,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Crystalline silicon dominates the Photovoltaic (PV) industry market as the primary semiconductor material.",
+            "answer": "Silicon is the predominant PV cell material.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Power Engineering"
         }

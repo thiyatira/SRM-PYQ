@@ -14,8 +14,8 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Pipelining increases the overall throughput (the number of instructions completed per unit time) by overlapping the execution of multiple instructions, although individual instruction latency is not decreased (and may slightly increase due to pipeline overhead).",
-            "answer_source": "provided",
+            "answer": "Overlapping instructions completes more instructions per unit time (higher throughput), though the latency of a single instruction does not drop.",
+            "answer_source": "generated",
             "chapter": "Unit 4: Control Unit"
         },
         {
@@ -29,8 +29,8 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Operand forwarding (or bypassing) routes the execution result of one instruction directly to the ALU inputs of the subsequent dependent instruction, bypassing the register write-back stage to avoid pipeline stalls.",
-            "answer_source": "provided",
+            "answer": "Forwarding (bypassing) sends an instruction's result straight to the ALU input of the dependent next instruction, avoiding a stall.",
+            "answer_source": "generated",
             "chapter": "Unit 4: Control Unit"
         },
         {
@@ -44,8 +44,8 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "In a 4-stage pipeline, the very first instruction must go through all 4 stages (Fetch, Decode, Execute, Write-back) to complete, thus requiring 4 clock cycles. Subsequent instructions (without hazards) complete every 1 clock cycle.",
-            "answer_source": "provided",
+            "answer": "The first instruction must pass through all 4 stages, taking 4 cycles; after that one instruction completes per cycle.",
+            "answer_source": "generated",
             "chapter": "Unit 4: Control Unit"
         },
         {
@@ -59,8 +59,8 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "A data hazard occurs when an instruction depends on the result of a previous instruction that has not yet been computed or written back to the register file (i.e., operands are not available yet).",
-            "answer_source": "provided",
+            "answer": "A data hazard occurs when an instruction needs an operand that an earlier instruction has not produced yet.",
+            "answer_source": "generated",
             "chapter": "Unit 4: Control Unit"
         },
         {
@@ -74,8 +74,8 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "In dynamic branch prediction (using a 2-bit predictor with states: Strongly Taken (ST), Weakly Taken / Likely Taken (LT), Weakly Not Taken / Likely Not Taken (LNT), Strongly Not Taken (SNT)), if the state is ST (Strongly Taken) and the branch is actually not taken, the state transitions to LT (Likely/Weakly Taken).",
-            "answer_source": "provided",
+            "answer": "In the 2-bit predictor, a not-taken outcome moves ST (strongly taken) only one step, to LT (likely taken).",
+            "answer_source": "generated",
             "chapter": "Unit 4: Control Unit"
         },
         {
@@ -89,8 +89,8 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Task-level parallelism (also known as function-level parallelism) is a form of parallelization of computer code across multiple processors in parallel computing environments, which focuses on distributing execution processes (tasks) across multiple computing nodes.",
-            "answer_source": "provided",
+            "answer": "Task-level parallelism splits a program into separate tasks that run concurrently on different processors.",
+            "answer_source": "generated",
             "chapter": "Unit 5: Parallelism"
         },
         {
@@ -104,8 +104,8 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Multiple Instruction, Multiple Data (MIMD) architectures have multiple processors that function asynchronously and independently. This offers much higher processing power for executing different parallel tasks compared to Single Instruction, Single Data (SISD) architectures.",
-            "answer_source": "provided",
+            "answer": "MIMD processors run different instruction streams on different data independently, giving more processing power for parallel tasks than SISD.",
+            "answer_source": "generated",
             "chapter": "Unit 5: Parallelism"
         },
         {

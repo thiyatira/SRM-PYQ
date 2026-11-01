@@ -13,8 +13,8 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Arnold Sommerfeld proposed the quantum free electron theory by introducing Fermi-Dirac statistics to Drude's classical model.",
-            "answer_source": "source",
+            "answer": "Sommerfeld added Fermi-Dirac statistics to Drude's classical model.",
+            "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
         {
@@ -28,8 +28,8 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "By definition of the Fermi-Dirac distribution, the occupation probability at the exact Fermi energy is 0.5 for any temperature above absolute zero.",
-            "answer_source": "source",
+            "answer": "Fermi-Dirac: $f(E_F)=1/2$ for any $T>0$.",
+            "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
         {
@@ -43,8 +43,8 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "At 0 K, the valence band is completely full and the conduction band is completely empty, preventing any charge transport and making it a perfect insulator.",
-            "answer_source": "source",
+            "answer": "At 0 K the valence band is full and the conduction band empty, so no conduction: an insulator.",
+            "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
         {
@@ -58,8 +58,8 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "An eigenfunction returns a multiple of itself when operated on. The derivative of e^{2x} is 2e^{2x}, meaning e^{2x} is the eigenfunction with an eigenvalue of 2.",
-            "answer_source": "source",
+            "answer": "$\\frac{d}{dx}e^{2x}=2e^{2x}$, so $e^{2x}$ is an eigenfunction with eigenvalue 2.",
+            "answer_source": "generated",
             "chapter": "Unit 1-Energy Bands in Solids"
         },
         {
@@ -103,8 +103,8 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Drift current is defined as the organized directional movement of charge carriers under the influence of an externally applied electric field.",
-            "answer_source": "source",
+            "answer": "Drift current is carrier motion under an applied electric field.",
+            "answer_source": "generated",
             "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
         },
         {
@@ -133,8 +133,8 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "GaAs has a direct bandgap of roughly 1.42 eV. The corresponding photon wavelength is λ = hc/E ≈ 1240 / 1.42 ≈ 873 nm or 0.87 μm.",
-            "answer_source": "source",
+            "answer": "$\\lambda = hc/E \\approx 1240\\ \\text{eV nm}/1.42\\ \\text{eV} \\approx 873$ nm $= 0.87\\ \\mu$m.",
+            "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
         {
@@ -148,8 +148,8 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The rate of spontaneous emission depends solely on the population of atoms currently residing in the excited state.",
-            "answer_source": "source",
+            "answer": "Spontaneous emission rate $=AN_2$, proportional to the number of atoms in the excited state.",
+            "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
         {
@@ -163,8 +163,8 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Fermi's Golden Rule is a key principle in quantum mechanics used for calculating the transition rate of a system due to a weak perturbation.",
-            "answer_source": "source",
+            "answer": "Fermi's golden rule gives transition rates under a perturbation.",
+            "answer_source": "generated",
             "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
         },
         {
@@ -178,8 +178,8 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The Beam Propagation Method (BPM) is the standard computational tool for analyzing light propagation in integrated photonic waveguides.",
-            "answer_source": "source",
+            "answer": "BPM simulates the propagation of optical fields in waveguides.",
+            "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
         {
@@ -193,8 +193,8 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "The Van der Pauw method is widely used in semiconductor physics to precisely measure the specific resistivity and sheet resistance of uniform samples.",
-            "answer_source": "source",
+            "answer": "Van der Pauw measures the resistivity (sheet resistance) of a sample.",
+            "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
         {
@@ -208,8 +208,8 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "C-V profiling of a semiconductor junction effectively reveals the built-in diffusion potential and maps the dopant concentration.",
-            "answer_source": "source",
+            "answer": "C-V profiling gives the built-in (diffusion) potential and the doping concentration.",
+            "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
         {
@@ -223,8 +223,8 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Current is passed through the outer tips and the voltage is measured across the inner tips, so the measured resistance is R = V/I.",
-            "answer_source": "source",
+            "answer": "Current flows through the outer tips and voltage is read across the inner tips, so $R=V/I$.",
+            "answer_source": "generated",
             "chapter": "Unit 4- Electrical and Optical Measurements"
         },
         {
@@ -253,8 +253,8 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "By standard definition, nanomaterials have at least one external dimension in the size range from approximately 1 to 100 nanometers.",
-            "answer_source": "source",
+            "answer": "Nanomaterials have sizes of about 1-100 nm.",
+            "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
         {
@@ -268,8 +268,8 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "A quantum dot is a 0D structure, which means charge carriers are quantum confined across all three spatial dimensions.",
-            "answer_source": "source",
+            "answer": "A quantum dot (0D) confines carriers in all three dimensions.",
+            "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
         {
@@ -283,8 +283,8 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Chemical Vapor Deposition inherently utilizes precursors in the gaseous phase that react chemically upon a heated substrate.",
-            "answer_source": "source",
+            "answer": "CVD uses gaseous precursors that react on a heated substrate.",
+            "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         },
         {
@@ -298,8 +298,8 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Atomic Force Microscopy measures surface forces directly and does not require a vacuum or conductive staining, making it suitable for natural state imaging.",
-            "answer_source": "source",
+            "answer": "AFM images by force sensing, so it needs no staining or vacuum.",
+            "answer_source": "generated",
             "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
         }
     ]
