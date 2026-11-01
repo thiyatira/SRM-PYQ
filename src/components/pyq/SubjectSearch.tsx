@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useEffect, useId, useMemo, useRef, useState } from "react";
-import { ALL_SUBJECTS, type SubjectEntry } from "@/lib/pyq/data";
+import type { SubjectEntry } from "@/lib/pyq/data";
+import { useCatalogue } from "@/lib/pyq/CatalogueContext";
 import { ForwardArrowIcon, getSubjectBadgeIcon } from "./icons";
 import { useDebouncedValue, useOutsideDismiss } from "./hooks";
 
@@ -12,23 +13,25 @@ interface IndexedSubject {
   haystack: string;
 }
 
-// Built once: lower-cased searchable text, plus acronym ("DSA", "OS", ...).
-const INDEX: IndexedSubject[] = ALL_SUBJECTS.map((subject) => {
-  const initials = subject.name
-    .split(/[^A-Za-z0-9]+/)
-    .filter((w) => w && !STOP_WORDS.has(w.toLowerCase()))
-    .map((w) => w[0])
-    .join("");
-  return {
-    subject,
-    haystack: `${subject.code} ${subject.name} ${subject.semester.name} sem${subject.semester.id} ${initials}`.toLowerCase(),
-  };
-});
+// Lower-cased searchable text, plus acronym ("DSA", "OS", ...).
+function buildIndex(subjects: SubjectEntry[]): IndexedSubject[] {
+  return subjects.map((subject) => {
+    const initials = subject.name
+      .split(/[^A-Za-z0-9]+/)
+      .filter((w) => w && !STOP_WORDS.has(w.toLowerCase()))
+      .map((w) => w[0])
+      .join("");
+    return {
+      subject,
+      haystack: `${subject.code} ${subject.name} ${subject.semester.name} sem${subject.semester.id} ${initials}`.toLowerCase(),
+    };
+  });
+}
 
-export function searchSubjects(query: string): SubjectEntry[] {
+function searchSubjects(index: IndexedSubject[], query: string): SubjectEntry[] {
   const tokens = query.toLowerCase().split(/\s+/).filter(Boolean);
   if (tokens.length === 0) return [];
-  return INDEX.filter(({ haystack }) => tokens.every((t) => haystack.includes(t))).map((i) => i.subject);
+  return index.filter(({ haystack }) => tokens.every((t) => haystack.includes(t))).map((i) => i.subject);
 }
 
 export function SubjectSearch({ onSelect }: { onSelect: (code: string) => void }) {
@@ -38,8 +41,10 @@ export function SubjectSearch({ onSelect }: { onSelect: (code: string) => void }
   const rootRef = useRef<HTMLDivElement>(null);
   const listId = useId();
 
+  const { allSubjects } = useCatalogue();
+  const index = useMemo(() => buildIndex(allSubjects), [allSubjects]);
   const debounced = useDebouncedValue(query, 150);
-  const results = useMemo(() => searchSubjects(debounced), [debounced]);
+  const results = useMemo(() => searchSubjects(index, debounced), [index, debounced]);
   const hasQuery = query.trim().length > 0;
   const showList = open && hasQuery;
 
