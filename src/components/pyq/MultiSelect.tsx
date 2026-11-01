@@ -72,38 +72,52 @@ export function MultiSelect({
             style={{ minWidth }}
             className="absolute left-0 top-full z-20 mt-1 max-w-[85vw] bg-white dark:bg-neutral-800 border border-gray-300 dark:border-neutral-600 rounded-lg shadow-lg max-h-72 overflow-y-auto text-gray-900 dark:text-gray-100 py-1"
           >
-            <label
-              className={`flex w-full items-center gap-3 px-3 py-2.5 cursor-pointer select-none hover:bg-gray-100 dark:hover:bg-neutral-700 border-b border-gray-200 dark:border-neutral-600 ${
-                selected.size === 0 ? "bg-blue-50 dark:bg-blue-900/20" : ""
-              }`}
-            >
-              <input
-                type="checkbox"
-                className="h-4 w-4 cursor-pointer accent-blue-600"
-                checked={selected.size === 0}
-                onChange={() => onChange(new Set())}
-              />
-              <span className="font-medium text-sm flex-1">All</span>
-            </label>
+            <Row checked={selected.size === 0} onClick={() => onChange(new Set())} divider>
+              <span className="font-medium">All</span>
+            </Row>
             {options.map((o) => (
-              <label
-                key={o}
-                className={`flex w-full items-center gap-3 px-3 py-2.5 cursor-pointer select-none hover:bg-gray-100 dark:hover:bg-neutral-700 ${
-                  selected.has(o) ? "bg-blue-50 dark:bg-blue-900/20" : ""
-                }`}
-              >
-                <input
-                  type="checkbox"
-                  className="h-4 w-4 cursor-pointer accent-blue-600"
-                  checked={selected.has(o)}
-                  onChange={() => toggle(o)}
-                />
-                <span className="text-sm break-all flex-1">{o}</span>
-              </label>
+              <Row key={o} checked={selected.has(o)} onClick={() => toggle(o)}>
+                <span className="break-all">{o}</span>
+              </Row>
             ))}
           </div>
         )}
       </div>
     </div>
+  );
+}
+
+/** One full-width clickable option row with a visual checkbox. */
+function Row({
+  checked,
+  onClick,
+  divider,
+  children,
+}: {
+  checked: boolean;
+  onClick: () => void;
+  divider?: boolean;
+  children: React.ReactNode;
+}) {
+  return (
+    <button
+      type="button"
+      role="checkbox"
+      aria-checked={checked}
+      onClick={onClick}
+      className={`flex w-full items-center gap-3 px-3 py-2.5 text-left text-sm cursor-pointer select-none hover:bg-gray-100 dark:hover:bg-neutral-700 focus:outline-none focus-visible:bg-gray-100 dark:focus-visible:bg-neutral-700 ${
+        checked ? "bg-blue-50 dark:bg-blue-900/20" : ""
+      } ${divider ? "border-b border-gray-200 dark:border-neutral-600" : ""}`}
+    >
+      <span
+        aria-hidden="true"
+        className={`flex h-4 w-4 flex-shrink-0 items-center justify-center rounded border text-[10px] leading-none text-white ${
+          checked ? "bg-blue-600 border-blue-600" : "bg-white dark:bg-neutral-800 border-gray-400 dark:border-neutral-500"
+        }`}
+      >
+        {checked ? "✓" : ""}
+      </span>
+      <span className="flex-1">{children}</span>
+    </button>
   );
 }
