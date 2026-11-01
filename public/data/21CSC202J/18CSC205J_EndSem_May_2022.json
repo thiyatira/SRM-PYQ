@@ -5,201 +5,376 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Termination of the process terminates __________.\n(A) First thread of the process\n(B) First two threads of the process\n(C) All threads within the process\n(D) No thread within the process",
+            "question_text": "Termination of the process terminates __________.",
+            "options": [
+                "First thread of the process",
+                "First two threads of the process",
+                "All threads within the process",
+                "No thread within the process"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) All threads within the process\n\nRationale: Threads exist within the execution context of a process. Terminating a process reclaims all its memory and resources, thereby terminating all threads belonging to that process.",
+            "answer": "Threads exist within the execution context of a process. Terminating a process reclaims all its memory and resources, thereby terminating all threads belonging to that process.",
             "answer_source": "generated",
             "chapter": "Unit 2: PROCESS MANAGEMENT"
         },
         {
             "question_number": "2",
-            "question_text": "A __________ is an active entity whereas __________ is said to be as passive entity.\n(A) Process, program\n(B) Program, process\n(C) Processor, process\n(D) Program, processor",
+            "question_text": "A __________ is an active entity whereas __________ is said to be as passive entity.",
+            "options": [
+                "Process, program",
+                "Program, process",
+                "Processor, process",
+                "Program, processor"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Process, program\n\nRationale: A program is a passive entity stored on disk (executable file), whereas a process is an active entity with a program counter and associated resources currently executing in memory.",
+            "answer": "A program is a passive entity stored on disk (executable file), whereas a process is an active entity with a program counter and associated resources currently executing in memory.",
             "answer_source": "generated",
             "chapter": "Unit 1: Process Management"
         },
         {
             "question_number": "3",
-            "question_text": "__________ system call is used after a fork () to replace the process memory space with a new program.\n(A) wait ()\n(B) exec ()\n(C) Sleep ()\n(D) kill ()",
+            "question_text": "__________ system call is used after a fork () to replace the process memory space with a new program.",
+            "options": [
+                "wait ()",
+                "exec ()",
+                "Sleep ()",
+                "kill ()"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) exec ()\n\nRationale: The `exec()` system call loads a binary file into memory and replaces the existing process memory image with the new program.",
+            "answer": "The `exec()` system call loads a binary file into memory and replaces the existing process memory image with the new program.",
             "answer_source": "generated",
             "chapter": "Unit 1: System Calls"
         },
         {
             "question_number": "4",
-            "question_text": "Consider process P is in run state, during the execution it needs, to read a file sample.text from memory. Identify the current state of P.\n(A) idle\n(B) sleep\n(C) run\n(D) Blocked",
+            "question_text": "Consider process P is in run state, during the execution it needs, to read a file sample.text from memory. Identify the current state of P.",
+            "options": [
+                "idle",
+                "sleep",
+                "run",
+                "Blocked"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Blocked\n\nRationale: When a running process requests I/O (like reading a file), it cannot continue execution until the I/O completes, so it transitions to the Blocked (or Waiting) state.",
+            "answer": "When a running process requests I/O (like reading a file), it cannot continue execution until the I/O completes, so it transitions to the Blocked (or Waiting) state.",
             "answer_source": "generated",
             "chapter": "Unit 2: Process Concept"
         },
         {
             "question_number": "5",
-            "question_text": "Identify the two functions which are used in message passing system.\n(A) send(msg), delete(msg)\n(B) send(msg), write(msg)\n(C) send(msg), receive(msg)\n(D) write(msg), delete(msg)",
+            "question_text": "Identify the two functions which are used in message passing system.",
+            "options": [
+                "send(msg), delete(msg)",
+                "send(msg), write(msg)",
+                "send(msg), receive(msg)",
+                "write(msg), delete(msg)"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) send(msg), receive(msg)\n\nRationale: Message passing IPC mechanisms rely on two fundamental primitive operations: `send(message)` and `receive(message)`.",
+            "answer": "Message passing IPC mechanisms rely on two fundamental primitive operations: `send(message)` and `receive(message)`.",
             "answer_source": "generated",
             "chapter": "Unit 2: Interprocess Communication"
         },
         {
             "question_number": "6",
-            "question_text": "Peterson's solution for process synchronization is restricted to __________ process.\n(A) 1\n(B) 2\n(C) 3\n(D) Multiple processes",
+            "question_text": "Peterson's solution for process synchronization is restricted to __________ process.",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "Multiple processes"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) 2\n\nRationale: Peterson's solution is a classic software-based solution to the critical-section problem designed specifically for two processes that alternate execution.",
+            "answer": "Peterson's solution is a classic software-based solution to the critical-section problem designed specifically for two processes that alternate execution.",
             "answer_source": "generated",
             "chapter": "Unit 2: Peterson's Solution"
         },
         {
             "question_number": "7",
-            "question_text": "Which statement is false about semaphore operations?\n(A) When a process is in critical section the other process loops indefinite\n(B) Counting semaphore values are restricted\n(C) Binary semaphore values range between 0 and 1\n(D) Avoids critical section problems in a concurrent system such as multitasking operating system",
+            "question_text": "Which statement is false about semaphore operations?",
+            "options": [
+                "When a process is in critical section the other process loops indefinite",
+                "Counting semaphore values are restricted",
+                "Binary semaphore values range between 0 and 1",
+                "Avoids critical section problems in a concurrent system such as multitasking operating system"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Counting semaphore values are restricted\n\nRationale: Counting semaphores can take values over an unrestricted domain (any non-negative integer), whereas binary semaphores are restricted to 0 and 1.",
+            "answer": "Counting semaphores can take values over an unrestricted domain (any non-negative integer), whereas binary semaphores are restricted to 0 and 1.",
             "answer_source": "generated",
             "chapter": "Unit 2: Semaphores"
         },
         {
             "question_number": "8",
-            "question_text": "A __________ is a segment and observe which of the following can summarize trials that function on shared data structure.\n(A) Monitor\n(B) Semaphore\n(C) Critical section\n(D) Mutex locks",
+            "question_text": "A __________ is a segment and observe which of the following can summarize trials that function on shared data structure.",
+            "options": [
+                "Monitor",
+                "Semaphore",
+                "Critical section",
+                "Mutex locks"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Critical section\n\nRationale: The critical section is a code segment in which a process accesses and manipulates shared data structures.",
+            "answer": "The critical section is a code segment in which a process accesses and manipulates shared data structures.",
             "answer_source": "generated",
             "chapter": "Unit 2: The Critical-Section Problem"
         },
         {
             "question_number": "9",
-            "question_text": "The time from arrival of interrupt to start of routine that services interrupt is called\n(A) Interrupt latency\n(B) Scheduler\n(C) Dispatch latency\n(D) Hardware latency",
+            "question_text": "The time from arrival of interrupt to start of routine that services interrupt is called",
+            "options": [
+                "Interrupt latency",
+                "Scheduler",
+                "Dispatch latency",
+                "Hardware latency"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Interrupt latency\n\nRationale: Interrupt latency is the duration from the arrival of an interrupt signal at the CPU to the start of execution of the Interrupt Service Routine (ISR).",
+            "answer": "Interrupt latency is the duration from the arrival of an interrupt signal at the CPU to the start of execution of the Interrupt Service Routine (ISR).",
             "answer_source": "generated",
             "chapter": "Unit 3: Real-Time CPU Scheduling"
         },
         {
             "question_number": "10",
-            "question_text": "A system is in safe state only if there exists a __________\n(A) Safe allocation\n(B) Safe resource\n(C) Safe sequence\n(D) Safe deallocation",
+            "question_text": "A system is in safe state only if there exists a __________",
+            "options": [
+                "Safe allocation",
+                "Safe resource",
+                "Safe sequence",
+                "Safe deallocation"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Safe sequence\n\nRationale: By definition, a system is in a safe state if there exists at least one safe sequence of processes such that all processes can run to completion without deadlock.",
+            "answer": "By definition, a system is in a safe state if there exists at least one safe sequence of processes such that all processes can run to completion without deadlock.",
             "answer_source": "generated",
             "chapter": "Unit 3: Deadlock Avoidance"
         },
         {
             "question_number": "11",
-            "question_text": "Operating system maintains the page table for __________\n(A) each process\n(B) each thread\n(C) each instruction\n(D) each address",
+            "question_text": "Operating system maintains the page table for __________",
+            "options": [
+                "each process",
+                "each thread",
+                "each instruction",
+                "each address"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) each process\n\nRationale: In a paged memory system, the operating system maintains a separate page table for each individual process to manage its virtual-to-physical memory mapping.",
+            "answer": "In a paged memory system, the operating system maintains a separate page table for each individual process to manage its virtual-to-physical memory mapping.",
             "answer_source": "generated",
             "chapter": "Unit 4: Paging"
         },
         {
             "question_number": "12",
-            "question_text": "Memory binding instruction generates __________ for known memory location and generate __________ for unknown memory location during the compile time.\n(A) Physical address, virtual address\n(B) Absolute code, relocatable code\n(C) Base address, limit address\n(D) Absolute code, binary code",
+            "question_text": "Memory binding instruction generates __________ for known memory location and generate __________ for unknown memory location during the compile time.",
+            "options": [
+                "Physical address, virtual address",
+                "Absolute code, relocatable code",
+                "Base address, limit address",
+                "Absolute code, binary code"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Absolute code, relocatable code\n\nRationale: If memory locations are known at compile time, absolute code is generated. If unknown at compile time, relocatable code must be generated.",
+            "answer": "If memory locations are known at compile time, absolute code is generated. If unknown at compile time, relocatable code must be generated.",
             "answer_source": "generated",
             "chapter": "Unit 4: Main Memory"
         },
         {
             "question_number": "13",
-            "question_text": "Which statement is true about static partitioning scheme?\n(A) Partition are made before execution\n(B) Partitions are allocated to the process as they arrive\n(C) Each partition is allowed to store only one process\n(D) Memory contains a set of holes of various sizes",
+            "question_text": "Which statement is true about static partitioning scheme?",
+            "options": [
+                "Partition are made before execution",
+                "Partitions are allocated to the process as they arrive",
+                "Each partition is allowed to store only one process",
+                "Memory contains a set of holes of various sizes"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Partition are made before execution\n\nRationale: In static (fixed) partitioning, main memory is divided into fixed-size partitions prior to system operation/execution.",
+            "answer": "In static (fixed) partitioning, main memory is divided into fixed-size partitions prior to system operation/execution.",
             "answer_source": "generated",
             "chapter": "Unit 4: Contiguous Memory Allocation"
         },
         {
             "question_number": "14",
-            "question_text": "__________ aids in having lesser effective access time.\n(A) Memory compaction\n(B) Translation look aside buffer\n(C) Static partitioning\n(D) Dynamic partitioning",
+            "question_text": "__________ aids in having lesser effective access time.",
+            "options": [
+                "Memory compaction",
+                "Translation look aside buffer",
+                "Static partitioning",
+                "Dynamic partitioning"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Translation look aside buffer\n\nRationale: A Translation Lookaside Buffer (TLB) acts as a high-speed associative hardware cache for page table entries, significantly reducing Effective Access Time (EAT).",
+            "answer": "A Translation Lookaside Buffer (TLB) acts as a high-speed associative hardware cache for page table entries, significantly reducing Effective Access Time (EAT).",
             "answer_source": "generated",
             "chapter": "Unit 4: Paging"
         },
         {
             "question_number": "15",
-            "question_text": "A process may have few longer CPU bursts if it is in __________\n(A) I/O bound\n(B) CPU bound\n(C) Critical section\n(D) Mutex lock",
+            "question_text": "A process may have few longer CPU bursts if it is in __________",
+            "options": [
+                "I/O bound",
+                "CPU bound",
+                "Critical section",
+                "Mutex lock"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) CPU bound\n\nRationale: A CPU-bound process spends most of its time performing computation and thus exhibits a few long CPU bursts.",
+            "answer": "A CPU-bound process spends most of its time performing computation and thus exhibits a few long CPU bursts.",
             "answer_source": "generated",
             "chapter": "Unit 3: CPU Scheduling"
         },
         {
             "question_number": "16",
-            "question_text": "System libraries are used by various processes where each processes are mapped to shared object into a\n(A) Physical address space\n(B) Virtual address space\n(C) Memory address space\n(D) Contiguous address space",
+            "question_text": "System libraries are used by various processes where each processes are mapped to shared object into a",
+            "options": [
+                "Physical address space",
+                "Virtual address space",
+                "Memory address space",
+                "Contiguous address space"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Virtual address space\n\nRationale: Shared libraries/objects are mapped into the virtual address space of each individual process.",
+            "answer": "Shared libraries/objects are mapped into the virtual address space of each individual process.",
             "answer_source": "generated",
             "chapter": "Unit 4: Virtual Memory"
         },
         {
             "question_number": "17",
-            "question_text": "In copy on write technique, the pages which are altered by either process are copied while the __________ pages are shared between parent and child processes.\n(A) Altered\n(B) Modified\n(C) Unaltered\n(D) Unmodified",
+            "question_text": "In copy on write technique, the pages which are altered by either process are copied while the __________ pages are shared between parent and child processes.",
+            "options": [
+                "Altered",
+                "Modified",
+                "Unaltered",
+                "Unmodified"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Unmodified\n\nRationale: Under Copy-on-Write (COW), parent and child processes initially share physical pages. Unmodified pages remain shared; only when a process modifies a page is a copy created.",
+            "answer": "Under Copy-on-Write (COW), parent and child processes initially share physical pages. Unmodified pages remain shared; only when a process modifies a page is a copy created.",
             "answer_source": "generated",
             "chapter": "Unit 4: Copy-on-Write"
         },
         {
             "question_number": "18",
-            "question_text": "A user's entire program is loaded in the physical memory even though it is not needed during program execution time is known as\n(A) Pure demand paging\n(B) Demand paging\n(C) Not demand paging\n(D) Virtual paging",
+            "question_text": "A user's entire program is loaded in the physical memory even though it is not needed during program execution time is known as",
+            "options": [
+                "Pure demand paging",
+                "Demand paging",
+                "Not demand paging",
+                "Virtual paging"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Not demand paging\n\nRationale: Loading the complete program into physical memory prior to execution rather than loading pages on demand is non-demand paging.",
+            "answer": "Loading the complete program into physical memory prior to execution rather than loading pages on demand is non-demand paging.",
             "answer_source": "generated",
             "chapter": "Unit 4: Virtual Memory"
         },
         {
             "question_number": "19",
-            "question_text": "During page fault, the tables which are referred are kept in\n(A) Page table\n(B) Dynamic table\n(C) Process control block\n(D) Demand table",
+            "question_text": "During page fault, the tables which are referred are kept in",
+            "options": [
+                "Page table",
+                "Dynamic table",
+                "Process control block",
+                "Demand table"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Page table\n\nRationale: When a page fault occurs, the OS references the process's page table to check the valid/invalid bit and frame location.",
+            "answer": "When a page fault occurs, the OS references the process's page table to check the valid/invalid bit and frame location.",
             "answer_source": "generated",
             "chapter": "Unit 4: Demand Paging"
         },
         {
             "question_number": "20",
-            "question_text": "A ratio on which the effective memory access time depends on\n(A) Miss ratio\n(B) Hit ratio\n(C) Both hit and miss ratio\n(D) Bit ratio",
+            "question_text": "A ratio on which the effective memory access time depends on",
+            "options": [
+                "Miss ratio",
+                "Hit ratio",
+                "Both hit and miss ratio",
+                "Bit ratio"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Hit ratio\n\nRationale: Effective Access Time (EAT) = $\\text{Hit Ratio} \\times \\text{TLB Access Time} + (1 - \\text{Hit Ratio}) \\times \\text{Memory Access Time}$. Hence it depends directly on the TLB hit ratio.",
+            "answer": "Effective Access Time (EAT) = $\\text{Hit Ratio} \\times \\text{TLB Access Time} + (1 - \\text{Hit Ratio}) \\times \\text{Memory Access Time}$. Hence it depends directly on the TLB hit ratio.",
             "answer_source": "generated",
             "chapter": "Unit 4: Paging"
         },
         {
             "question_number": "21",
-            "question_text": "The free space list in disk can be utilized by\n(A) Frames\n(B) Pages\n(C) Bitmap\n(D) Arrays",
+            "question_text": "The free space list in disk can be utilized by",
+            "options": [
+                "Frames",
+                "Pages",
+                "Bitmap",
+                "Arrays"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Bitmap\n\nRationale: A bitmap (or bit vector) is a widely used data structure for tracking free disk blocks, where 0 represents an allocated block and 1 represents a free block.",
+            "answer": "A bitmap (or bit vector) is a widely used data structure for tracking free disk blocks, where 0 represents an allocated block and 1 represents a free block.",
             "answer_source": "generated",
             "chapter": "Unit 4: STORAGE MANAGEMENT"
         },
         {
             "question_number": "22",
-            "question_text": "`-rwxr-xr--` meaning of this command for owner is\n(A) Owner has execute permission\n(B) Owner has read, write and execute permission\n(C) Owner has read permission only\n(D) Owner has read and execute permission",
+            "question_text": "`-rwxr-xr--` meaning of this command for owner is",
+            "options": [
+                "Owner has execute permission",
+                "Owner has read, write and execute permission",
+                "Owner has read permission only",
+                "Owner has read and execute permission"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Owner has read, write and execute permission\n\nRationale: In Unix file permissions `-rwxr-xr--`, the first permission triad `rwx` corresponds to the file owner, giving read (r), write (w), and execute (x) rights.",
+            "answer": "In Unix file permissions `-rwxr-xr--`, the first permission triad `rwx` corresponds to the file owner, giving read (r), write (w), and execute (x) rights.",
             "answer_source": "generated",
             "chapter": "Unit 5: Access Control"
         },
         {
             "question_number": "23",
-            "question_text": "The methods how LRU page replacement policy can be implemented in hardware are\n(A) Counters\n(B) RAM and Register\n(C) Stack and counter\n(D) Registers",
+            "question_text": "The methods how LRU page replacement policy can be implemented in hardware are",
+            "options": [
+                "Counters",
+                "RAM and Register",
+                "Stack and counter",
+                "Registers"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Stack and counter\n\nRationale: LRU page replacement requires hardware support, typically implemented via a logical clock/counter or a stack of page numbers.",
+            "answer": "LRU page replacement requires hardware support, typically implemented via a logical clock/counter or a stack of page numbers.",
             "answer_source": "generated",
             "chapter": "Unit 4: Page Replacement"
         },
         {
             "question_number": "24",
-            "question_text": "Sequential access methods are used in\n(A) Remote file systems\n(B) Distributed file system\n(C) Networked file systems\n(D) Tape drives",
+            "question_text": "Sequential access methods are used in",
+            "options": [
+                "Remote file systems",
+                "Distributed file system",
+                "Networked file systems",
+                "Tape drives"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Tape drives\n\nRationale: Magnetic tape drives physically enforce sequential access because records must be accessed in order.",
+            "answer": "Magnetic tape drives physically enforce sequential access because records must be accessed in order.",
             "answer_source": "generated",
             "chapter": "Unit 4: File-System Interface"
         },
         {
             "question_number": "25",
-            "question_text": "Which algorithm is similar to SCAN scheduling techniques where that algorithm prevents the extra delay to traverse the end of the disk?\n(A) SSTF\n(B) C-SCAN\n(C) Look\n(D) C-Look",
+            "question_text": "Which algorithm is similar to SCAN scheduling techniques where that algorithm prevents the extra delay to traverse the end of the disk?",
+            "options": [
+                "SSTF",
+                "C-SCAN",
+                "Look",
+                "C-Look"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Look\n\nRationale: LOOK scheduling is a variation of SCAN that only moves as far as the final request in each direction before reversing, avoiding unnecessary travel to the disk ends.",
+            "answer": "LOOK scheduling is a variation of SCAN that only moves as far as the final request in each direction before reversing, avoiding unnecessary travel to the disk ends.",
             "answer_source": "generated",
             "chapter": "Unit 4: Disk Scheduling"
         },

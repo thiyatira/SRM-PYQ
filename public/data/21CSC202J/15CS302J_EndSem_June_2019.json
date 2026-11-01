@@ -5,81 +5,151 @@
     "questions": [
         {
             "question_number": "Part A - 1",
-            "question_text": "Program is --------- entity stored on disk and process is ---------\na) passive, active\nb) active, passive\nc) passive, passive\nd) active, active",
+            "question_text": "Program is --------- entity stored on disk and process is ---------",
+            "options": [
+                "passive, active",
+                "active, passive",
+                "passive, passive",
+                "active, active"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "a) passive, active\n\nA program is a passive entity, such as a file containing a list of instructions stored on disk (an executable file), whereas a process is an active entity, with a program counter specifying the next instruction to execute and a set of associated resources.",
+            "answer": "A program is a passive entity, such as a file containing a list of instructions stored on disk (an executable file), whereas a process is an active entity, with a program counter specifying the next instruction to execute and a set of associated resources.",
             "answer_source": "generated",
             "chapter": "Unit 2: PROCESS MANAGEMENT"
         },
         {
             "question_number": "Part A - 2",
-            "question_text": "A process can be ---------\na) both single-threaded and multithreaded\nb) multithreaded\nc) single-threaded\nd) stack",
+            "question_text": "A process can be ---------",
+            "options": [
+                "both single-threaded and multithreaded",
+                "multithreaded",
+                "single-threaded",
+                "stack"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "a) both single-threaded and multithreaded\n\nA process can execute a single thread of control (single-threaded process) or multiple threads of control concurrently (multithreaded process).",
+            "answer": "A process can execute a single thread of control (single-threaded process) or multiple threads of control concurrently (multithreaded process).",
             "answer_source": "generated",
             "chapter": "Unit 2: PROCESS MANAGEMENT"
         },
         {
             "question_number": "Part A - 3",
-            "question_text": "---------- Scheduler reduces the degree of multiprogramming\na) Mid-Term Scheduler\nb) CPU Scheduler\nc) Short Term Scheduler\nd) Long Term Scheduler",
+            "question_text": "---------- Scheduler reduces the degree of multiprogramming",
+            "options": [
+                "Mid-Term Scheduler",
+                "CPU Scheduler",
+                "Short Term Scheduler",
+                "Long Term Scheduler"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "a) Mid-Term Scheduler\n\nThe medium-term (mid-term) scheduler reduces the degree of multiprogramming by swapping processes out of main memory to disk (swap space) when memory is overcommitted or a process is waiting for I/O.",
+            "answer": "The medium-term (mid-term) scheduler reduces the degree of multiprogramming by swapping processes out of main memory to disk (swap space) when memory is overcommitted or a process is waiting for I/O.",
             "answer_source": "generated",
             "chapter": "Unit 2: PROCESS MANAGEMENT"
         },
         {
             "question_number": "Part A - 4",
-            "question_text": "Which of the following two operations are provided by the IPC facility?\na) write & delete message\nb) delete & receive message\nc) send & delete message\nd) send & receive message",
+            "question_text": "Which of the following two operations are provided by the IPC facility?",
+            "options": [
+                "write & delete message",
+                "delete & receive message",
+                "send & delete message",
+                "send & receive message"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "d) send & receive message\n\nA message-passing interprocess communication (IPC) facility provides at minimum two primary operations: send(message) and receive(message).",
+            "answer": "A message-passing interprocess communication (IPC) facility provides at minimum two primary operations: send(message) and receive(message).",
             "answer_source": "generated",
             "chapter": "Unit 2: PROCESS MANAGEMENT"
         },
         {
             "question_number": "Part A - 5",
-            "question_text": "The _________ keeps track of pending and blocked bit vectors within each process's context.\na) CPU\nb) Memory\nc) Process\nd) Kernel",
+            "question_text": "The _________ keeps track of pending and blocked bit vectors within each process's context.",
+            "options": [
+                "CPU",
+                "Memory",
+                "Process",
+                "Kernel"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "d) Kernel\n\nThe operating system kernel maintains signal status information—specifically pending and blocked signal bit masks/vectors—within each process's context / Process Control Block (PCB).",
+            "answer": "The operating system kernel maintains signal status information—specifically pending and blocked signal bit masks/vectors—within each process's context / Process Control Block (PCB).",
             "answer_source": "generated",
             "chapter": "Unit 2: PROCESS MANAGEMENT"
         },
         {
             "question_number": "Part A - 6",
-            "question_text": "What does the term \"throughput\" mean in scheduling terms?\na) The amount of time the CPU is idle\nb) The number of processes completed per unit time\nc) The total time a process spends in the system\nd) The total time taken from process submission to completion",
+            "question_text": "What does the term \"throughput\" mean in scheduling terms?",
+            "options": [
+                "The amount of time the CPU is idle",
+                "The number of processes completed per unit time",
+                "The total time a process spends in the system",
+                "The total time taken from process submission to completion"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b) The number of processes completed per unit time\n\nIn CPU scheduling, throughput is defined as the measure of work performed by the CPU, specifically the number of processes that complete their execution per unit of time.",
+            "answer": "In CPU scheduling, throughput is defined as the measure of work performed by the CPU, specifically the number of processes that complete their execution per unit of time.",
             "answer_source": "generated",
             "chapter": "Unit 3: CPU Scheduling"
         },
         {
             "question_number": "Part A - 7",
-            "question_text": "Identify the deadlock handling technique in the Banker's Algorithm.\na) Deadlock Prevention\nb) Deadlock Avoidance\nc) Deadlock Detection and Recovery\nd) Deadlock Ignorance",
+            "question_text": "Identify the deadlock handling technique in the Banker's Algorithm.",
+            "options": [
+                "Deadlock Prevention",
+                "Deadlock Avoidance",
+                "Deadlock Detection and Recovery",
+                "Deadlock Ignorance"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b) Deadlock Avoidance\n\nBanker's Algorithm is a classic deadlock avoidance algorithm that dynamically examines the resource-allocation state to ensure that a circular wait condition can never exist.",
+            "answer": "Banker's Algorithm is a classic deadlock avoidance algorithm that dynamically examines the resource-allocation state to ensure that a circular wait condition can never exist.",
             "answer_source": "generated",
             "chapter": "Unit 3: Deadlocks"
         },
         {
             "question_number": "Part A - 8",
-            "question_text": "What does interrupt latency refer to in real-time operating systems?\na) The time taken for a process to complete its execution.\nb) The time from the arrival of an interrupt to the start of the interrupt service routine (ISR).\nc) The time from the completion of an interrupt service routine (ISR) to the start of the next interrupt.\nd) The time from the arrival of an interrupt to the completion of the interrupt service routine (ISR).",
+            "question_text": "What does interrupt latency refer to in real-time operating systems?",
+            "options": [
+                "The time taken for a process to complete its execution.",
+                "The time from the arrival of an interrupt to the start of the interrupt service routine (ISR).",
+                "The time from the completion of an interrupt service routine (ISR) to the start of the next interrupt.",
+                "The time from the arrival of an interrupt to the completion of the interrupt service routine (ISR)."
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "b) The time from the arrival of an interrupt to the start of the interrupt service routine (ISR).\n\nInterrupt latency refers to the elapsed time from when an interrupt is generated/received by the CPU until the CPU begins executing the corresponding interrupt service routine (ISR).",
+            "answer": "Interrupt latency refers to the elapsed time from when an interrupt is generated/received by the CPU until the CPU begins executing the corresponding interrupt service routine (ISR).",
             "answer_source": "generated",
             "chapter": "Unit 3: CPU Scheduling"
         },
         {
             "question_number": "Part A - 9",
-            "question_text": "Deadlock detection algorithms differ from deadlock prevention algorithms in that they ______\na) Prevent deadlocks from occurring in the first place.\nb) Avoid deadlocks by pre-allocating resources.\nc) Detect and recover from deadlocks after they occur.\nd) Use priority scheduling to avoid resource conflicts.",
+            "question_text": "Deadlock detection algorithms differ from deadlock prevention algorithms in that they ______",
+            "options": [
+                "Prevent deadlocks from occurring in the first place.",
+                "Avoid deadlocks by pre-allocating resources.",
+                "Detect and recover from deadlocks after they occur.",
+                "Use priority scheduling to avoid resource conflicts."
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "c) Detect and recover from deadlocks after they occur.\n\nDeadlock detection allows the system to enter a deadlock state, periodically runs an algorithm to examine the system state to identify deadlock, and then applies recovery techniques, whereas prevention actively constrains resource requests to ensure deadlocks never occur.",
+            "answer": "Deadlock detection allows the system to enter a deadlock state, periodically runs an algorithm to examine the system state to identify deadlock, and then applies recovery techniques, whereas prevention actively constrains resource requests to ensure deadlocks never occur.",
             "answer_source": "generated",
             "chapter": "Unit 3: Deadlocks"
         },
         {
             "question_number": "Part A - 10",
-            "question_text": "Which statement is true about the non-preemptive scheduling algorithm?\na) Resources are allocated to a process for a limited time\nb) Process can be interrupted in between\nc) High Priority process frequently arrives in the ready Queue\nd) Process holds the resources till it completes its burst time or switches to wait state",
+            "question_text": "Which statement is true about the non-preemptive scheduling algorithm?",
+            "options": [
+                "Resources are allocated to a process for a limited time",
+                "Process can be interrupted in between",
+                "High Priority process frequently arrives in the ready Queue",
+                "Process holds the resources till it completes its burst time or switches to wait state"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "d) Process holds the resources till it completes its burst time or switches to wait state\n\nUnder non-preemptive scheduling, once a process is allocated the CPU, it keeps the CPU until it either voluntarily releases it (such as by requesting I/O and switching to the waiting state) or terminates upon completing its CPU burst.",
+            "answer": "Under non-preemptive scheduling, once a process is allocated the CPU, it keeps the CPU until it either voluntarily releases it (such as by requesting I/O and switching to the waiting state) or terminates upon completing its CPU burst.",
             "answer_source": "generated",
             "chapter": "Unit 3: CPU Scheduling"
         },
@@ -141,7 +211,7 @@
         },
         {
             "question_number": "Set A - Part B - 9 (OR)",
-            "question_text": "Identify and explain the type of system call and give an equivalent system call for Unix operating system.\na) SetFileSecurity()\nb) GetCurrentProcessID()\nc) ReadFile()\nd) SetConsoleMode()",
+            "question_text": "Identify and explain the type of system call and give an equivalent system call for Unix operating system.\n**a)** SetFileSecurity()\n**b)** GetCurrentProcessID()\n**c)** ReadFile()\n**d)** SetConsoleMode()",
             "marks": 10,
             "answer": "The provided Windows API system calls, their respective categories, and their Unix equivalents are:\n\n1. **a) `SetFileSecurity()`**\n   - **Type of System Call:** **Protection and Security / File Management System Call**.\n   - **Explanation:** It sets the security descriptor (access control list, owner, permissions) of an existing file or directory object.\n   - **Equivalent Unix System Call:** `chmod()` (to change file mode/permissions) or `chown()` (to change file ownership).\n\n2. **b) `GetCurrentProcessID()`**\n   - **Type of System Call:** **Process Control System Call**.\n   - **Explanation:** Retrieves the unique numeric process identifier (PID) assigned by the operating system to the calling process.\n   - **Equivalent Unix System Call:** `getpid()`.\n\n3. **c) `ReadFile()`**\n   - **Type of System Call:** **File Management System Call**.\n   - **Explanation:** Reads data from a specified file, device, or pipe starting at the position indicated by the file pointer.\n   - **Equivalent Unix System Call:** `read()`.\n\n4. **d) `SetConsoleMode()`**\n   - **Type of System Call:** **Device Management System Call**.\n   - **Explanation:** Sets the input or output mode of a console's input buffer or screen buffer (controlling line input, echo mode, processed input, etc.).\n   - **Equivalent Unix System Call:** `ioctl()` or `tcsetattr()` (terminal control functions).",
             "answer_source": "generated",

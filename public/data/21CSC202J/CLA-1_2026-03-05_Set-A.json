@@ -5,81 +5,151 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "Define the primary role of an Operating System.\nA) Designing hardware\nB) Managing computer resources\nC) Writing application programs\nD) Performing compilation",
+            "question_text": "Define the primary role of an Operating System.",
+            "options": [
+                "Designing hardware",
+                "Managing computer resources",
+                "Writing application programs",
+                "Performing compilation"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "B) Managing computer resources\n\n**Rationale:** The primary role of an operating system (OS) is to act as an intermediary between user application software and physical hardware, allocating and managing system resources such as CPU time, memory, file storage, and I/O devices efficiently and safely.",
+            "answer": "**Rationale:** The primary role of an operating system (OS) is to act as an intermediary between user application software and physical hardware, allocating and managing system resources such as CPU time, memory, file storage, and I/O devices efficiently and safely.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction, Computer-System Organization"
         },
         {
             "question_number": "2",
-            "question_text": "Recall which component acts as the core of the Operating System.\nA) Shell\nB) Kernel\nC) Compiler\nD) Loader",
+            "question_text": "Recall which component acts as the core of the Operating System.",
+            "options": [
+                "Shell",
+                "Kernel",
+                "Compiler",
+                "Loader"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "B) Kernel\n\n**Rationale:** The kernel is the essential central core of an operating system that resides permanently in memory. It directly controls hardware resources, process management, memory management, and low-level system operations.",
+            "answer": "**Rationale:** The kernel is the essential central core of an operating system that resides permanently in memory. It directly controls hardware resources, process management, memory management, and low-level system operations.",
             "answer_source": "generated",
             "chapter": "Unit 1: Operating-System Structure"
         },
         {
             "question_number": "3",
-            "question_text": "List the type of Operating System that allows multiple programs to run simultaneously.\nA) Batch OS\nB) Multiprogramming OS\nC) Single-user OS\nD) Distributed OS",
+            "question_text": "List the type of Operating System that allows multiple programs to run simultaneously.",
+            "options": [
+                "Batch OS",
+                "Multiprogramming OS",
+                "Single-user OS",
+                "Distributed OS"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "B) Multiprogramming OS\n\n**Rationale:** A multiprogramming operating system keeps several jobs/programs in main memory simultaneously so that the CPU always has one program to execute, maximizing CPU utilization.",
+            "answer": "**Rationale:** A multiprogramming operating system keeps several jobs/programs in main memory simultaneously so that the CPU always has one program to execute, maximizing CPU utilization.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction, Computer-System Organization"
         },
         {
             "question_number": "4",
-            "question_text": "Select the correct example of a system call.\nA) printf()\nB) fork()\nC) main()\nD) scanf()",
+            "question_text": "Select the correct example of a system call.",
+            "options": [
+                "printf()",
+                "fork()",
+                "main()",
+                "scanf()"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "B) fork()\n\n**Rationale:** `fork()` is a POSIX system call used to create a new process by duplicating the calling process. `printf()` and `scanf()` are C standard library functions, and `main()` is the user entry point.",
+            "answer": "**Rationale:** `fork()` is a POSIX system call used to create a new process by duplicating the calling process. `printf()` and `scanf()` are C standard library functions, and `main()` is the user entry point.",
             "answer_source": "generated",
             "chapter": "Unit 1: System Calls"
         },
         {
             "question_number": "5",
-            "question_text": "Choose the structure where different OS services are implemented as separate processes.\nA) Monolithic structure\nB) Layered structure\nC) Microkernel structure\nD) Batch structure",
+            "question_text": "Choose the structure where different OS services are implemented as separate processes.",
+            "options": [
+                "Monolithic structure",
+                "Layered structure",
+                "Microkernel structure",
+                "Batch structure"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "C) Microkernel structure\n\n**Rationale:** In a microkernel architecture, the core operating system is kept minimal, while non-essential OS services (like file systems and device drivers) run as separate user-space processes (servers) communicating via interprocess communication (IPC).",
+            "answer": "**Rationale:** In a microkernel architecture, the core operating system is kept minimal, while non-essential OS services (like file systems and device drivers) run as separate user-space processes (servers) communicating via interprocess communication (IPC).",
             "answer_source": "generated",
             "chapter": "Unit 1: Operating-System Structure"
         },
         {
             "question_number": "6",
-            "question_text": "Explain which synchronization mechanism can ensure mutual exclusion while avoiding busy waiting and justify your choice.\nA) Spinlock\nB) Blocking semaphore\nC) Shared memory\nD) Pipe",
+            "question_text": "Explain which synchronization mechanism can ensure mutual exclusion while avoiding busy waiting and justify your choice.",
+            "options": [
+                "Spinlock",
+                "Blocking semaphore",
+                "Shared memory",
+                "Pipe"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "B) Blocking semaphore\n\n**Rationale:** A blocking semaphore puts a process to sleep (moves it to a waiting queue) when a resource is unavailable, rather than continuously polling in a loop (busy waiting) like a spinlock, thereby conserving CPU resources.",
+            "answer": "**Rationale:** A blocking semaphore puts a process to sleep (moves it to a waiting queue) when a resource is unavailable, rather than continuously polling in a loop (busy waiting) like a spinlock, thereby conserving CPU resources.",
             "answer_source": "generated",
             "chapter": "Unit 2: Process Synchronization"
         },
         {
             "question_number": "7",
-            "question_text": "Interpret which synchronization solution satisfies mutual exclusion, progress, and bounded waiting for two processes.\nA) Peterson's solution\nB) Pipe\nC) Message queue\nD) Context switching",
+            "question_text": "Interpret which synchronization solution satisfies mutual exclusion, progress, and bounded waiting for two processes.",
+            "options": [
+                "Peterson's solution",
+                "Pipe",
+                "Message queue",
+                "Context switching"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "A) Peterson's solution\n\n**Rationale:** Peterson's algorithm is a classic software-based solution for two processes that correctly guarantees all three critical section requirements: Mutual Exclusion, Progress, and Bounded Waiting.",
+            "answer": "**Rationale:** Peterson's algorithm is a classic software-based solution for two processes that correctly guarantees all three critical section requirements: Mutual Exclusion, Progress, and Bounded Waiting.",
             "answer_source": "generated",
             "chapter": "Unit 2: Peterson's Solution"
         },
         {
             "question_number": "8",
-            "question_text": "Relate the appropriate IPC mechanism to a situation where processes must exchange data without a common memory region.\nA) Shared memory\nB) Message passing\nC) Mutex\nD) Monitor",
+            "question_text": "Relate the appropriate IPC mechanism to a situation where processes must exchange data without a common memory region.",
+            "options": [
+                "Shared memory",
+                "Message passing",
+                "Mutex",
+                "Monitor"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "B) Message passing\n\n**Rationale:** Message passing allows processes to communicate and synchronize actions through OS kernel primitives (`send` and `receive`) without requiring a shared address space, making it ideal for distributed or isolated systems.",
+            "answer": "**Rationale:** Message passing allows processes to communicate and synchronize actions through OS kernel primitives (`send` and `receive`) without requiring a shared address space, making it ideal for distributed or isolated systems.",
             "answer_source": "generated",
             "chapter": "Unit 2: Interprocess Communication"
         },
         {
             "question_number": "9",
-            "question_text": "Infer why the many-to-one threading model limits system performance.\nA) High overhead\nB) No parallelism\nC) More CPU use\nD) Large memory",
+            "question_text": "Infer why the many-to-one threading model limits system performance.",
+            "options": [
+                "High overhead",
+                "No parallelism",
+                "More CPU use",
+                "Large memory"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "B) No parallelism\n\n**Rationale:** In the many-to-one model, multiple user-level threads map to a single kernel thread. Since the kernel is aware of only one thread, if one thread makes a blocking system call, the entire process blocks, and threads cannot run in parallel on multicore systems.",
+            "answer": "**Rationale:** In the many-to-one model, multiple user-level threads map to a single kernel thread. Since the kernel is aware of only one thread, if one thread makes a blocking system call, the entire process blocks, and threads cannot run in parallel on multicore systems.",
             "answer_source": "generated",
             "chapter": "Unit 2: Multithreading Models"
         },
         {
             "question_number": "10",
-            "question_text": "Summarize the main synchronization issue illustrated by the Dining Philosophers problem.\nA) Starvation only\nB) Deadlock risk\nC) Scheduling error\nD) Memory leak",
+            "question_text": "Summarize the main synchronization issue illustrated by the Dining Philosophers problem.",
+            "options": [
+                "Starvation only",
+                "Deadlock risk",
+                "Scheduling error",
+                "Memory leak"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "B) Deadlock risk\n\n**Rationale:** The classic Dining Philosophers problem primary illustrates the potential for deadlock (e.g., when all philosophers pick up their left chopstick concurrently and wait indefinitely for the right chopstick) along with starvation.",
+            "answer": "**Rationale:** The classic Dining Philosophers problem primary illustrates the potential for deadlock (e.g., when all philosophers pick up their left chopstick concurrently and wait indefinitely for the right chopstick) along with starvation.",
             "answer_source": "generated",
             "chapter": "Unit 2: Classic Problems of Synchronization"
         },

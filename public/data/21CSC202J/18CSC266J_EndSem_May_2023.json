@@ -5,161 +5,301 @@
     "questions": [
         {
             "question_number": "1",
-            "question_text": "The main advantages of batch operating system is ______.\n(A) Low cost\n(B) Multiple users can share the batch system\n(C) Easy debug\n(D) Suitable for managing small work",
+            "question_text": "The main advantages of batch operating system is ______.",
+            "options": [
+                "Low cost",
+                "Multiple users can share the batch system",
+                "Easy debug",
+                "Suitable for managing small work"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Multiple users can share the batch system\nRationale: In a batch operating system, multiple users can share the system resources without direct interaction with the CPU, and batches of jobs from multiple users are processed sequentially to keep CPU utilization high.",
+            "answer": "In a batch operating system, multiple users can share the system resources without direct interaction with the CPU, and batches of jobs from multiple users are processed sequentially to keep CPU utilization high.",
             "answer_source": "generated",
             "chapter": "Unit 1"
         },
         {
             "question_number": "2",
-            "question_text": "Operating system is not a ______.\n(A) System software\n(B) First loaded program by boot program\n(C) Hardware software interface\n(D) Application software",
+            "question_text": "Operating system is not a ______.",
+            "options": [
+                "System software",
+                "First loaded program by boot program",
+                "Hardware software interface",
+                "Application software"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Application software\nRationale: An operating system is system software that acts as an intermediary/interface between the user/applications and the computer hardware, not an application software.",
+            "answer": "An operating system is system software that acts as an intermediary/interface between the user/applications and the computer hardware, not an application software.",
             "answer_source": "generated",
             "chapter": "Unit 1"
         },
         {
             "question_number": "3",
-            "question_text": "Hardware interrupt is made by ______.\n(A) IRQ line\n(B) Interrupt handles\n(C) Special instructions\n(D) Interrupt condition",
+            "question_text": "Hardware interrupt is made by ______.",
+            "options": [
+                "IRQ line",
+                "Interrupt handles",
+                "Special instructions",
+                "Interrupt condition"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) IRQ line\nRationale: Hardware devices signal an interrupt to the CPU by sending an electrical signal along an Interrupt Request (IRQ) line on the system bus.",
+            "answer": "Hardware devices signal an interrupt to the CPU by sending an electrical signal along an Interrupt Request (IRQ) line on the system bus.",
             "answer_source": "generated",
             "chapter": "Unit 1"
         },
         {
             "question_number": "4",
-            "question_text": "Virtual machine is used for ______.\n(A) Utilization of memory\n(B) Running different operating systems simultaneously\n(C) Frequently used program\n(D) Multithreading",
+            "question_text": "Virtual machine is used for ______.",
+            "options": [
+                "Utilization of memory",
+                "Running different operating systems simultaneously",
+                "Frequently used program",
+                "Multithreading"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Running different operating systems simultaneously\nRationale: Virtual machines abstract hardware, allowing multiple guest operating systems to execute concurrently on the same physical host machine.",
+            "answer": "Virtual machines abstract hardware, allowing multiple guest operating systems to execute concurrently on the same physical host machine.",
             "answer_source": "generated",
             "chapter": "Unit 1"
         },
         {
             "question_number": "5",
-            "question_text": "Purpose of process scheduling is to ______.\n(A) Maximize waiting time\n(B) Maximize throughput\n(C) Maximize response time\n(D) Maximize turnaround time",
+            "question_text": "Purpose of process scheduling is to ______.",
+            "options": [
+                "Maximize waiting time",
+                "Maximize throughput",
+                "Maximize response time",
+                "Maximize turnaround time"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Maximize throughput\nRationale: Process scheduling aims to maximize CPU utilization and throughput (number of processes completed per unit time) while minimizing waiting, response, and turnaround times.",
+            "answer": "Process scheduling aims to maximize CPU utilization and throughput (number of processes completed per unit time) while minimizing waiting, response, and turnaround times.",
             "answer_source": "generated",
             "chapter": "Unit 2"
         },
         {
             "question_number": "6",
-            "question_text": "Round Robin scheduling falls under the category of ______.\n(A) Non-preemptive scheduling\n(B) Preemptive scheduling\n(C) Multiple level queue scheduling\n(D) Priority scheduling",
+            "question_text": "Round Robin scheduling falls under the category of ______.",
+            "options": [
+                "Non-preemptive scheduling",
+                "Preemptive scheduling",
+                "Multiple level queue scheduling",
+                "Priority scheduling"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Preemptive scheduling\nRationale: Round Robin scheduling uses a fixed time quantum; if a process does not complete within this quantum, it is preempted and placed at the tail of the ready queue.",
+            "answer": "Round Robin scheduling uses a fixed time quantum; if a process does not complete within this quantum, it is preempted and placed at the tail of the ready queue.",
             "answer_source": "generated",
             "chapter": "Unit 3"
         },
         {
             "question_number": "7",
-            "question_text": "In real time operating system, ______.\n(A) Kernel is not required\n(B) Process scheduling can be done only once\n(C) All process must be serviced by its deadline period\n(D) All process have the same priority",
+            "question_text": "In real time operating system, ______.",
+            "options": [
+                "Kernel is not required",
+                "Process scheduling can be done only once",
+                "All process must be serviced by its deadline period",
+                "All process have the same priority"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) All process must be serviced by its deadline period\nRationale: The correctness of a real-time operating system depends not only on the logical result of the computation but also on completing the task before its strict deadline.",
+            "answer": "The correctness of a real-time operating system depends not only on the logical result of the computation but also on completing the task before its strict deadline.",
             "answer_source": "generated",
             "chapter": "Unit 3"
         },
         {
             "question_number": "8",
-            "question_text": "A shell script is a file that contains ______.\n(A) Set of statements\n(B) Scheduling algorithm\n(C) Interrupt routine\n(D) Sequence of operating system commands and shell commands",
+            "question_text": "A shell script is a file that contains ______.",
+            "options": [
+                "Set of statements",
+                "Scheduling algorithm",
+                "Interrupt routine",
+                "Sequence of operating system commands and shell commands"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Sequence of operating system commands and shell commands\nRationale: A shell script is an executable text file containing a series of shell and OS commands executed by the command-line interpreter.",
+            "answer": "A shell script is an executable text file containing a series of shell and OS commands executed by the command-line interpreter.",
             "answer_source": "generated",
             "chapter": "Unit 1"
         },
         {
             "question_number": "9",
-            "question_text": "The hardware implementation which provides mutual exclusion is ______.\n(A) Counting semaphore\n(B) Binary semaphore\n(C) Test and set lock\n(D) Scheduling algorithm",
+            "question_text": "The hardware implementation which provides mutual exclusion is ______.",
+            "options": [
+                "Counting semaphore",
+                "Binary semaphore",
+                "Test and set lock",
+                "Scheduling algorithm"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Test and set lock\nRationale: `Test-and-Set` (or `Compare-and-Swap`) is an atomic hardware instruction used to implement low-level synchronization and mutual exclusion locks.",
+            "answer": "`Test-and-Set` (or `Compare-and-Swap`) is an atomic hardware instruction used to implement low-level synchronization and mutual exclusion locks.",
             "answer_source": "generated",
             "chapter": "Unit 2"
         },
         {
             "question_number": "10",
-            "question_text": "The reader-writer problem and its solutions, have been generalized to provide reader writer locks on some systems. The process wishing to modify the shared data must request the lock in ______.\n(A) Read mode\n(B) Write mode\n(C) Read and write mode\n(D) Exclusive mode",
+            "question_text": "The reader-writer problem and its solutions, have been generalized to provide reader writer locks on some systems. The process wishing to modify the shared data must request the lock in ______.",
+            "options": [
+                "Read mode",
+                "Write mode",
+                "Read and write mode",
+                "Exclusive mode"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Write mode\nRationale: In reader-writer locks, writers require exclusive/write mode access so no other readers or writers can access the shared data concurrently.",
+            "answer": "In reader-writer locks, writers require exclusive/write mode access so no other readers or writers can access the shared data concurrently.",
             "answer_source": "generated",
             "chapter": "Unit 2"
         },
         {
             "question_number": "11",
-            "question_text": "The circular wait condition can be prevented by ______.\n(A) Defining a linear ordering of resources type\n(B) Using thread\n(C) Using pipes\n(D) Thread and pipes",
+            "question_text": "The circular wait condition can be prevented by ______.",
+            "options": [
+                "Defining a linear ordering of resources type",
+                "Using thread",
+                "Using pipes",
+                "Thread and pipes"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Defining a linear ordering of resources type\nRationale: To prevent circular wait, a total/linear ordering of all resource types can be established, requiring that each process requests resources only in strictly increasing order of enumeration.",
+            "answer": "To prevent circular wait, a total/linear ordering of all resource types can be established, requiring that each process requests resources only in strictly increasing order of enumeration.",
             "answer_source": "generated",
             "chapter": "Unit 3"
         },
         {
             "question_number": "12",
-            "question_text": "For non sharable resources like a printer, mutual exclusion ______.\n(A) Must exist\n(B) Must not exist\n(C) May exist\n(D) Partially exist",
+            "question_text": "For non sharable resources like a printer, mutual exclusion ______.",
+            "options": [
+                "Must exist",
+                "Must not exist",
+                "May exist",
+                "Partially exist"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Must exist\nRationale: Non-shareable resources such as printers can only be used by one process at a time, so mutual exclusion must hold.",
+            "answer": "Non-shareable resources such as printers can only be used by one process at a time, so mutual exclusion must hold.",
             "answer_source": "generated",
             "chapter": "Unit 3"
         },
         {
             "question_number": "13",
-            "question_text": "The last on the hierarchy scale of memory device is ______.\n(A) Main memory\n(B) Secondary memory\n(C) TLB\n(D) Flash drives",
+            "question_text": "The last on the hierarchy scale of memory device is ______.",
+            "options": [
+                "Main memory",
+                "Secondary memory",
+                "TLB",
+                "Flash drives"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Secondary memory\nRationale: In the given hierarchy (TLB $\\rightarrow$ Main Memory $\\rightarrow$ Flash drives $\\rightarrow$ Secondary Memory / Magnetic Disk / Optical / Tapes), secondary/tertiary storage sits at the base with the highest capacity and slowest access speed.",
+            "answer": "In the given hierarchy (TLB $\\rightarrow$ Main Memory $\\rightarrow$ Flash drives $\\rightarrow$ Secondary Memory / Magnetic Disk / Optical / Tapes), secondary/tertiary storage sits at the base with the highest capacity and slowest access speed.",
             "answer_source": "generated",
             "chapter": "Unit 4"
         },
         {
             "question_number": "14",
-            "question_text": "In contiguous memory allocation ______.\n(A) Each process is contained in a single contiguous section of memory\n(B) All process are contained in a single contiguous section of memory\n(C) The memory space is contiguous\n(D) The memory space is not contiguous",
+            "question_text": "In contiguous memory allocation ______.",
+            "options": [
+                "Each process is contained in a single contiguous section of memory",
+                "All process are contained in a single contiguous section of memory",
+                "The memory space is contiguous",
+                "The memory space is not contiguous"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Each process is contained in a single contiguous section of memory\nRationale: Contiguous memory allocation allocates a single contiguous block of physical memory addresses to each individual process.",
+            "answer": "Contiguous memory allocation allocates a single contiguous block of physical memory addresses to each individual process.",
             "answer_source": "generated",
             "chapter": "Unit 4"
         },
         {
             "question_number": "15",
-            "question_text": "Internal fragmentation occurs when a ______.\n(A) Memory area remain unused because it is too large to be allocated\n(B) Memory area remain unused because it is too small to be allocated\n(C) More memory is allocated than requested by processor\n(D) Less memory is allocated than requested by processor",
+            "question_text": "Internal fragmentation occurs when a ______.",
+            "options": [
+                "Memory area remain unused because it is too large to be allocated",
+                "Memory area remain unused because it is too small to be allocated",
+                "More memory is allocated than requested by processor",
+                "Less memory is allocated than requested by processor"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) More memory is allocated than requested by processor\nRationale: Internal fragmentation occurs when fixed-sized memory blocks are allocated to a process that requests less space than the block size, leaving the unused portion inside the partition wasted.",
+            "answer": "Internal fragmentation occurs when fixed-sized memory blocks are allocated to a process that requests less space than the block size, leaving the unused portion inside the partition wasted.",
             "answer_source": "generated",
             "chapter": "Unit 4"
         },
         {
             "question_number": "16",
-            "question_text": "In virtual memory, swap space exist in ______.\n(A) Cache\n(B) Registers\n(C) RAM\n(D) Secondary storage",
+            "question_text": "In virtual memory, swap space exist in ______.",
+            "options": [
+                "Cache",
+                "Registers",
+                "RAM",
+                "Secondary storage"
+            ],
+            "correct_option": "D",
             "marks": 1,
-            "answer": "(D) Secondary storage\nRationale: Swap space is allocated on secondary storage (hard disk or SSD) to hold memory pages or processes that are temporarily swapped out of physical RAM.",
+            "answer": "Swap space is allocated on secondary storage (hard disk or SSD) to hold memory pages or processes that are temporarily swapped out of physical RAM.",
             "answer_source": "generated",
             "chapter": "Unit 4"
         },
         {
             "question_number": "17",
-            "question_text": "Which one of the following connects high-speed high-bandwidth device to memory subsystem and CPU?\n(A) Expansion bus\n(B) PCI bus\n(C) SCSI bus\n(D) External bus",
+            "question_text": "Which one of the following connects high-speed high-bandwidth device to memory subsystem and CPU?",
+            "options": [
+                "Expansion bus",
+                "PCI bus",
+                "SCSI bus",
+                "External bus"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) PCI bus\nRationale: The PCI (Peripheral Component Interconnect) / PCIe bus connects high-speed devices (graphics cards, fast network adapters) to the CPU and memory subsystem.",
+            "answer": "The PCI (Peripheral Component Interconnect) / PCIe bus connects high-speed devices (graphics cards, fast network adapters) to the CPU and memory subsystem.",
             "answer_source": "generated",
             "chapter": "Unit 4"
         },
         {
             "question_number": "18",
-            "question_text": "After the completion of DMA transfer, the processor is notified by ______.\n(A) Acknowledgement signal\n(B) Interrupt signal\n(C) WMFC signal\n(D) Control signal",
+            "question_text": "After the completion of DMA transfer, the processor is notified by ______.",
+            "options": [
+                "Acknowledgement signal",
+                "Interrupt signal",
+                "WMFC signal",
+                "Control signal"
+            ],
+            "correct_option": "B",
             "marks": 1,
-            "answer": "(B) Interrupt signal\nRationale: Once the DMA controller finishes transferring the entire block of data between memory and I/O device, it raises an interrupt to notify the CPU.",
+            "answer": "Once the DMA controller finishes transferring the entire block of data between memory and I/O device, it raises an interrupt to notify the CPU.",
             "answer_source": "generated",
             "chapter": "Unit 1"
         },
         {
             "question_number": "19",
-            "question_text": "A file is a/an ______ data type.\n(A) Abstract\n(B) Primitive\n(C) Public\n(D) Private",
+            "question_text": "A file is a/an ______ data type.",
+            "options": [
+                "Abstract",
+                "Primitive",
+                "Public",
+                "Private"
+            ],
+            "correct_option": "A",
             "marks": 1,
-            "answer": "(A) Abstract\nRationale: A file is an abstract data type defined by the operating system that encapsulates a collection of related information along with predefined operations (create, open, read, write, close).",
+            "answer": "A file is an abstract data type defined by the operating system that encapsulates a collection of related information along with predefined operations (create, open, read, write, close).",
             "answer_source": "generated",
             "chapter": "Unit 4"
         },
         {
             "question_number": "20",
-            "question_text": "The process of dividing a disk into sectors that the disk controller can read and write, before a disk can store data is known as ______.\n(A) Partitioning\n(B) Swap space creation\n(C) Low level formatting\n(D) Fragmentation",
+            "question_text": "The process of dividing a disk into sectors that the disk controller can read and write, before a disk can store data is known as ______.",
+            "options": [
+                "Partitioning",
+                "Swap space creation",
+                "Low level formatting",
+                "Fragmentation"
+            ],
+            "correct_option": "C",
             "marks": 1,
-            "answer": "(C) Low level formatting\nRationale: Low-level formatting (or physical formatting) fills the disk with a special data structure consisting of sectors, headers, and trailers that the disk controller can read and write.",
+            "answer": "Low-level formatting (or physical formatting) fills the disk with a special data structure consisting of sectors, headers, and trailers that the disk controller can read and write.",
             "answer_source": "generated",
             "chapter": "Unit 4"
         },

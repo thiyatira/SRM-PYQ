@@ -1,79 +1,114 @@
 {
-    "formal_filename": "FJ1_2024-08-07_Set-A_AnswerKey.json",
-    "paper_title": "SRM Institute of Science and Technology - School of Computing - 21CSC202J Operating Systems - FJ1 Answer Key",
-    "source": "FJ1 Aug 2024",
-    "questions": [
-        {
-            "question_number": "1",
-            "question_text": "What is the primary advantage provided by multitasking over multiprogramming strategy?\nA. Fast response time\nB. Optimum CPU utilization\nC. Optimum Memory utilization\nD. Higher Security",
-            "marks": 1,
-            "answer": "A. Fast response time",
-            "answer_source": "provided",
-            "chapter": "Unit 1: Operating-System Operations"
-        },
-        {
-            "question_number": "2",
-            "question_text": "Which among the following is the fastest among all the categories in a memory hierarchy\nA. Main memory\nB. L1 Cache memory\nC. CPU registers\nD. Secondary Memory",
-            "marks": 1,
-            "answer": "C. CPU registers",
-            "answer_source": "provided",
-            "chapter": "Unit 1: Computer-System Organization"
-        },
-        {
-            "question_number": "3",
-            "question_text": "________ system call in Linux is aimed at process control.\nA. pipe()\nB. open()\nC. fork()\nD. close()",
-            "marks": 1,
-            "answer": "C. fork()",
-            "answer_source": "provided",
-            "chapter": "Unit 1: Types of System Calls"
-        },
-        {
-            "question_number": "4",
-            "question_text": "Bootstrap loader available in _______\nA. RAM\nB. ROM\nC. Dispatcher\nD. Main memory",
-            "marks": 1,
-            "answer": "B. ROM",
-            "answer_source": "provided",
-            "chapter": "Unit 1: System Boot"
-        },
-        {
-            "question_number": "5",
-            "question_text": "------------------is named as the ability of an operating system to support multiple concurrent paths of execution within a single process.\nA. multi-programming\nB. multi-threading\nC. multi-way processing\nD. concurrent processing",
-            "marks": 1,
-            "answer": "B. multi-threading",
-            "answer_source": "provided",
-            "chapter": "Unit 2: Threads: Multicore Programming"
-        },
-        {
-            "question_number": "6",
-            "question_text": "Describe in detail the various services provided by an operating system, explaining how each service contributes to the overall functionality and performance of the system.",
-            "marks": 10,
-            "answer": "Operating systems provide an environment for execution of programs and services to programs and users. One set of operating-system services provides functions that are helpful to the user:\n– User interface - Almost all operating systems have a user interface (UI). Varies between Command-Line (CLI), Graphics User Interface (GUI), Batch\n– Program execution - The system must be able to load a program into memory and to run that program, end execution, either normally or abnormally (indicating error)\n– I/O operations - A running program may require I/O, which may involve a file or an I/O device\n– File-system manipulation - The file system is of particular interest. Programs need to read and write files and directories, create and delete them, search them, list file Information, permission management.\n– Communications – Processes may exchange information, on the same computer or between computers over a network. Communications may be via shared memory or through message passing (packets moved by the OS)\n– Error detection – OS needs to be constantly aware of possible errors. May occur in the CPU and memory hardware, in I/O devices, in user Program. For each type of error, OS should take the appropriate action to ensure correct and consistent computing.\n– Debugging facilities can greatly enhance the user’s and programmer’s abilities to efficiently use the system\n\nResource allocation - When multiple users or multiple jobs running concurrently, resources must be allocated to each of them\n• Many types of resources - CPU cycles, main memory, file storage, I/O devices.\n– Accounting - To keep track of which users use how much and what kinds of computer resources\n– Protection and security - The owners of information stored in a multiuser, or networked computer system may want to control use of that information, concurrent processes should not interfere with each other\n• Protection involves ensuring that all access to system resources is controlled\n• Security of the system from outsiders requires user authentication, extends to defending external I/O devices from invalid access attempts",
-            "answer_source": "provided",
-            "chapter": "Unit 1: Operating-System Services"
-        },
-        {
-            "question_number": "7",
-            "question_text": "Imagine that you are a software developer working on the project to design a new Operating system. You need to satisfy the following requirements of loosely coupled system, changes in one component do not affect another component and successfully run in computer networks and web applications. Identify the suitable operating structure for these requirements and justify it.",
-            "marks": 10,
-            "answer": "ANS:\nLayered approach: Such a system is divided into separate, smaller components that have specific and limited functionality. All these components together comprise the kernel. The advantage of this modular approach is that changes in one component affect only that component, and no others, allowing system implementers more freedom in creating and changing the inner workings of the system. A system can be made modular in many ways. One method is the layered approach, in which the operating system is broken into a number of layers (levels). The bottom layer (layer 0) is the hardware; the highest (layer N) is the user interface. This approach simplifies debugging and system verification. The first layer can be debugged without any concern for the rest of the system, because, by definition, it uses only the basic hardware (which is assumed correct) to implement its functions. Once the first layer is debugged, its correct functioning can be assumed while the second layer is debugged, and so on. If an error is found during the debugging of a particular layer, the error must be on that layer, because the layers below it are already debugged. Thus, the design and implementation of the system are simplified. Each layer is implemented only with operations provided by lower-level layers. A layer does not need to know how these operations are implemented; it needs to know only what these operations do. Hence, each layer hides the existence of certain data structures, operations, and hardware from higher level layers.\nLayered systems have been successfully used in computer networks (such as TCP/IP) and web applications.",
-            "answer_source": "provided",
-            "chapter": "Unit 1: Operating-System Structure"
-        },
-        {
-            "question_number": "8",
-            "question_text": "Describe the client–server and peer-to-peer models of distributed systems.",
-            "marks": 10,
-            "answer": "ANS:\nClient-Server Model:\nContemporary network architecture features arrangements in which server systems satisfy requests generated by client systems. This form of specialized distributed system, called a client–server system.\nServer systems can be broadly categorized as compute servers and file servers:\n• The compute-server system provides an interface to which a client can send a request to perform an action (for example, read data). In response, the server executes the action and sends the results to the client. A server running a database that responds to client requests for data is an example of such a system.\n• The file-serve system provides a file-system interface where clients can create, update, read, and delete files. An example of such a system is a web server that delivers files to clients running web browsers. The actual contents of the files can vary greatly, ranging from traditional web pages to rich multimedia content such as high-definition video.\n\nPeer-to-peer models:\nAnother structure for a distributed system is the peer-to-peer (P2P) system model. In this model, clients and servers are not distinguished from one another. Instead, all nodes within the system are considered peers, and each may act as either a client or a server, depending on whether it is requesting or providing a service. Peer-to-peer systems offer an advantage over traditional client–server systems. In a client–server system, the server is a bottleneck; but in a peer-to-peer system, services can be provided by several nodes distributed throughout the network.\nTo participate in a peer-to-peer system, a node must first join the network of peers. Once a node has joined the network, it can begin providing services to—and requesting services from—other nodes in the network. Determining what services are available is accomplished in one of two general ways:\n• When a node joins a network, it registers its service with a centralized lookup service on the network. Any node desiring a specific service first contacts this centralized lookup service to determine which node provides the service. The remainder of the communication takes place between the client and the service provider.\n• An alternative scheme uses no centralized lookup service. Instead, a peer acting as a client must discover what node provides a desired service by broadcasting a request for the service to all other nodes in the network. The node (or nodes) providing that service responds to the peer making the request. To support this approach, a discovery protocol must be provided that allows peers to discover services provided by other peers in the network.",
-            "answer_source": "provided",
-            "chapter": "Unit 2: Communication in Client– Server Systems"
-        },
-        {
-            "question_number": "9",
-            "question_text": "Identify and explain the type of system call and give an equivalent system call for Unix operating system.\n\na) SetFileSecurity()\nb) CreateProcess()\nc) GetCurrentProcessID()\nd) ReadFile()\ne) SetConsoleMode()",
-            "marks": 10,
-            "answer": "a) SetFileSecurity()\nUNIX - chmod()\nProtection\n◦ get file permissions\n◦ set file permissions\n\nb) CreateProcess()\nUNIX - fork()\nProcess control\n◦ create process, terminate process\n◦ load, execute\n◦ get process attributes, set process attributes\n◦ wait event, signal event\n◦ allocate and free memory\n\nc) GetCurrentProcessID()\nUNIX – getpid()\nInformation maintenance\n◦ get time or date, set time or date\n◦ get system data, set system data\n◦ get process, file, or device attributes\n◦ set process, file, or device attributes\n\nd) ReadFile()\nUNIX – read()\nFile management\n◦ create file, delete file\n◦ open, close\n◦ read, write, reposition\n◦ get file attributes, set file attributes\n\ne) SetConsoleMode()\nUNIX – ioctl()\nDevice management\n◦ request device, release device\n◦ read, write, reposition\n◦ get device attributes, set device attributes\n◦ logically attach or detach devices",
-            "answer_source": "provided",
-            "chapter": "Unit 1: Types of System Calls"
-        }
-    ]
+  "formal_filename": "FJ1_2024-08-07_Set-A_AnswerKey.json",
+  "paper_title": "SRM Institute of Science and Technology - School of Computing - 21CSC202J Operating Systems - FJ1 Answer Key",
+  "source": "FJ1 Aug 2024",
+  "questions": [
+    {
+      "question_number": "1",
+      "question_text": "What is the primary advantage provided by multitasking over multiprogramming strategy?",
+      "options": [
+        "Fast response time",
+        "Optimum CPU utilization",
+        "Optimum Memory utilization",
+        "Higher Security"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "",
+      "answer_source": "provided",
+      "chapter": "Unit 1: Operating-System Operations"
+    },
+    {
+      "question_number": "2",
+      "question_text": "Which among the following is the fastest among all the categories in a memory hierarchy",
+      "options": [
+        "Main memory",
+        "L1 Cache memory",
+        "CPU registers",
+        "Secondary Memory"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "",
+      "answer_source": "provided",
+      "chapter": "Unit 1: Computer-System Organization"
+    },
+    {
+      "question_number": "3",
+      "question_text": "________ system call in Linux is aimed at process control.",
+      "options": [
+        "pipe()",
+        "open()",
+        "fork()",
+        "close()"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "",
+      "answer_source": "provided",
+      "chapter": "Unit 1: Types of System Calls"
+    },
+    {
+      "question_number": "4",
+      "question_text": "Bootstrap loader available in _______",
+      "options": [
+        "RAM",
+        "ROM",
+        "Dispatcher",
+        "Main memory"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "",
+      "answer_source": "provided",
+      "chapter": "Unit 1: System Boot"
+    },
+    {
+      "question_number": "5",
+      "question_text": "------------------is named as the ability of an operating system to support multiple concurrent paths of execution within a single process.",
+      "options": [
+        "multi-programming",
+        "multi-threading",
+        "multi-way processing",
+        "concurrent processing"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "",
+      "answer_source": "provided",
+      "chapter": "Unit 2: Threads: Multicore Programming"
+    },
+    {
+      "question_number": "6",
+      "question_text": "Describe in detail the various services provided by an operating system, explaining how each service contributes to the overall functionality and performance of the system.",
+      "marks": 10,
+      "answer": "Operating systems provide an environment for execution of programs and services to programs and users. One set of operating-system services provides functions that are helpful to the user:\n– User interface - Almost all operating systems have a user interface (UI). Varies between Command-Line (CLI), Graphics User Interface (GUI), Batch\n– Program execution - The system must be able to load a program into memory and to run that program, end execution, either normally or abnormally (indicating error)\n– I/O operations - A running program may require I/O, which may involve a file or an I/O device\n– File-system manipulation - The file system is of particular interest. Programs need to read and write files and directories, create and delete them, search them, list file Information, permission management.\n– Communications – Processes may exchange information, on the same computer or between computers over a network. Communications may be via shared memory or through message passing (packets moved by the OS)\n– Error detection – OS needs to be constantly aware of possible errors. May occur in the CPU and memory hardware, in I/O devices, in user Program. For each type of error, OS should take the appropriate action to ensure correct and consistent computing.\n– Debugging facilities can greatly enhance the user’s and programmer’s abilities to efficiently use the system\n\nResource allocation - When multiple users or multiple jobs running concurrently, resources must be allocated to each of them\n• Many types of resources - CPU cycles, main memory, file storage, I/O devices.\n– Accounting - To keep track of which users use how much and what kinds of computer resources\n– Protection and security - The owners of information stored in a multiuser, or networked computer system may want to control use of that information, concurrent processes should not interfere with each other\n• Protection involves ensuring that all access to system resources is controlled\n• Security of the system from outsiders requires user authentication, extends to defending external I/O devices from invalid access attempts",
+      "answer_source": "provided",
+      "chapter": "Unit 1: Operating-System Services"
+    },
+    {
+      "question_number": "7",
+      "question_text": "Imagine that you are a software developer working on the project to design a new Operating system. You need to satisfy the following requirements of loosely coupled system, changes in one component do not affect another component and successfully run in computer networks and web applications. Identify the suitable operating structure for these requirements and justify it.",
+      "marks": 10,
+      "answer": "ANS:\nLayered approach: Such a system is divided into separate, smaller components that have specific and limited functionality. All these components together comprise the kernel. The advantage of this modular approach is that changes in one component affect only that component, and no others, allowing system implementers more freedom in creating and changing the inner workings of the system. A system can be made modular in many ways. One method is the layered approach, in which the operating system is broken into a number of layers (levels). The bottom layer (layer 0) is the hardware; the highest (layer N) is the user interface. This approach simplifies debugging and system verification. The first layer can be debugged without any concern for the rest of the system, because, by definition, it uses only the basic hardware (which is assumed correct) to implement its functions. Once the first layer is debugged, its correct functioning can be assumed while the second layer is debugged, and so on. If an error is found during the debugging of a particular layer, the error must be on that layer, because the layers below it are already debugged. Thus, the design and implementation of the system are simplified. Each layer is implemented only with operations provided by lower-level layers. A layer does not need to know how these operations are implemented; it needs to know only what these operations do. Hence, each layer hides the existence of certain data structures, operations, and hardware from higher level layers.\nLayered systems have been successfully used in computer networks (such as TCP/IP) and web applications.",
+      "answer_source": "provided",
+      "chapter": "Unit 1: Operating-System Structure"
+    },
+    {
+      "question_number": "8",
+      "question_text": "Describe the client–server and peer-to-peer models of distributed systems.",
+      "marks": 10,
+      "answer": "ANS:\nClient-Server Model:\nContemporary network architecture features arrangements in which server systems satisfy requests generated by client systems. This form of specialized distributed system, called a client–server system.\nServer systems can be broadly categorized as compute servers and file servers:\n• The compute-server system provides an interface to which a client can send a request to perform an action (for example, read data). In response, the server executes the action and sends the results to the client. A server running a database that responds to client requests for data is an example of such a system.\n• The file-serve system provides a file-system interface where clients can create, update, read, and delete files. An example of such a system is a web server that delivers files to clients running web browsers. The actual contents of the files can vary greatly, ranging from traditional web pages to rich multimedia content such as high-definition video.\n\nPeer-to-peer models:\nAnother structure for a distributed system is the peer-to-peer (P2P) system model. In this model, clients and servers are not distinguished from one another. Instead, all nodes within the system are considered peers, and each may act as either a client or a server, depending on whether it is requesting or providing a service. Peer-to-peer systems offer an advantage over traditional client–server systems. In a client–server system, the server is a bottleneck; but in a peer-to-peer system, services can be provided by several nodes distributed throughout the network.\nTo participate in a peer-to-peer system, a node must first join the network of peers. Once a node has joined the network, it can begin providing services to—and requesting services from—other nodes in the network. Determining what services are available is accomplished in one of two general ways:\n• When a node joins a network, it registers its service with a centralized lookup service on the network. Any node desiring a specific service first contacts this centralized lookup service to determine which node provides the service. The remainder of the communication takes place between the client and the service provider.\n• An alternative scheme uses no centralized lookup service. Instead, a peer acting as a client must discover what node provides a desired service by broadcasting a request for the service to all other nodes in the network. The node (or nodes) providing that service responds to the peer making the request. To support this approach, a discovery protocol must be provided that allows peers to discover services provided by other peers in the network.",
+      "answer_source": "provided",
+      "chapter": "Unit 2: Communication in Client– Server Systems"
+    },
+    {
+      "question_number": "9",
+      "question_text": "Identify and explain the type of system call and give an equivalent system call for Unix operating system.\n\n- **(a)** SetFileSecurity()\n- **(b)** CreateProcess()\n- **(c)** GetCurrentProcessID()\n- **(d)** ReadFile()\n- **(e)** SetConsoleMode()",
+      "marks": 10,
+      "answer": "a) SetFileSecurity()\nUNIX - chmod()\nProtection\n◦ get file permissions\n◦ set file permissions\n\nb) CreateProcess()\nUNIX - fork()\nProcess control\n◦ create process, terminate process\n◦ load, execute\n◦ get process attributes, set process attributes\n◦ wait event, signal event\n◦ allocate and free memory\n\nc) GetCurrentProcessID()\nUNIX – getpid()\nInformation maintenance\n◦ get time or date, set time or date\n◦ get system data, set system data\n◦ get process, file, or device attributes\n◦ set process, file, or device attributes\n\nd) ReadFile()\nUNIX – read()\nFile management\n◦ create file, delete file\n◦ open, close\n◦ read, write, reposition\n◦ get file attributes, set file attributes\n\ne) SetConsoleMode()\nUNIX – ioctl()\nDevice management\n◦ request device, release device\n◦ read, write, reposition\n◦ get device attributes, set device attributes\n◦ logically attach or detach devices",
+      "answer_source": "provided",
+      "chapter": "Unit 1: Types of System Calls"
+    }
+  ]
 }

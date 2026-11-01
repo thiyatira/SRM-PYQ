@@ -1,263 +1,403 @@
 {
-    "formal_filename": "EndSem_May_2025.json",
-    "paper_title": "B.TECH/ M.Tech (Integrated) DEGREE EXAMINATION, MAY 2025 - Third & Fourth Semester - 21CSC202J - OPERATING SYSTEMS",
-    "source": "EndSem May 2025",
-    "questions": [
-        {
-            "question_number": "1",
-            "question_text": "Which among the following is the fastest among all the categories in a memory hierarchy ?\n(A) Main memory\n(B) L1 Cache memory\n(C) CPU registers\n(D) Secondary Memory",
-            "marks": 1,
-            "answer": "(C) CPU registers\n\n**Rationale:** CPU registers reside directly inside the processor core and operate at CPU clock cycle speed, making them the fastest category in the memory hierarchy with typical access times under 1 nanosecond.",
-            "answer_source": "generated",
-            "chapter": "Unit 1: Computer-System Organization"
-        },
-        {
-            "question_number": "2",
-            "question_text": "Device controller informs CPU that it has finished its operation by causing ______ .\n(A) Interrupt\n(B) Message\n(C) Information\n(D) Command",
-            "marks": 1,
-            "answer": "(A) Interrupt\n\n**Rationale:** When an I/O device controller completes its operation (such as reading a disk sector or receiving a network packet), it asserts a hardware interrupt line on the system bus to notify the CPU to service the event.",
-            "answer_source": "generated",
-            "chapter": "Unit 1: Computer-System Organization"
-        },
-        {
-            "question_number": "3",
-            "question_text": "Which of the following system calls is used for process creation in Unix-based operating systems?\n(A) exec()\n(B) fork()\n(C) wait()\n(D) kill()",
-            "marks": 1,
-            "answer": "(B) fork()\n\n**Rationale:** In Unix and Linux systems, `fork()` creates a new duplicate child process. `exec()` replaces the process image with a new executable, `wait()` blocks the parent until a child terminates, and `kill()` sends signals.",
-            "answer_source": "generated",
-            "chapter": "Unit 1: System Calls"
-        },
-        {
-            "question_number": "4",
-            "question_text": "Which of the following memory management techniques does an operating system use to ensure efficient memory utilization?\n(A) Paging and Segmentation\n(B) Virtualization and Scheduling\n(C) Swapping and Pipelining\n(D) Multithreading and Synchronization",
-            "marks": 1,
-            "answer": "(A) Paging and Segmentation\n\n**Rationale:** Paging divides virtual and physical memory into fixed-sized blocks (eliminating external fragmentation), while segmentation divides memory into logical user-centric segments. Both allow non-contiguous allocation and maximize physical memory utilization.",
-            "answer_source": "generated",
-            "chapter": "Unit 4: Memory Management"
-        },
-        {
-            "question_number": "5",
-            "question_text": "A process can be ___________\n(A) Both single threaded and multithreaded\n(B) Multithreaded\n(C) Single threaded\n(D) Stack",
-            "marks": 1,
-            "answer": "(A) Both single threaded and multithreaded\n\n**Rationale:** An operating system process may consist of a single thread of execution (traditional heavy-weight process) or contain multiple concurrent threads sharing the same address space and resources.",
-            "answer_source": "generated",
-            "chapter": "Unit 2: Threads"
-        },
-        {
-            "question_number": "6",
-            "question_text": "Systems that permit only a single process to execute at any given time are referred to as\n(A) Uniprogramming systems\n(B) Uniprocessing systems\n(C) Unitasking systems\n(D) Multiprocessing systems",
-            "marks": 1,
-            "answer": "(A) Uniprogramming systems\n\n**Rationale:** A uniprogramming system holds only one program in main memory at a time to execute sequentially on the CPU (often contrasting with multiprogramming). In hardware context, a system with a single CPU core is a uniprocessor system.",
-            "answer_source": "generated",
-            "chapter": "Unit 2: Process Concept"
-        },
-        {
-            "question_number": "7",
-            "question_text": "Which synchronization mechanism allows multiple processes to access a resource while ensuring mutual exclusion?\n(A) Semaphore\n(B) Deadlock\n(C) Context Switching\n(D) Paging",
-            "marks": 1,
-            "answer": "(A) Semaphore\n\n**Rationale:** A semaphore is a synchronization variable providing atomic `wait()` ($P$) and `signal()` ($V$) operations to coordinate access to shared critical sections and shared resources among cooperating processes.",
-            "answer_source": "generated",
-            "chapter": "Unit 2: Process Synchronization"
-        },
-        {
-            "question_number": "8",
-            "question_text": "In Interprocess Communication (IPC), which of the following methods allows processes to communicate without using shared memory?\n(A) Pipes\n(B) Semaphores\n(C) Mutex Locks\n(D) Threads",
-            "marks": 1,
-            "answer": "(A) Pipes\n\n**Rationale:** Pipes are a message-passing mechanism managed by the kernel that allow unidirectional byte stream communication between processes without sharing user address space.",
-            "answer_source": "generated",
-            "chapter": "Unit 2: Interprocess Communication"
-        },
-        {
-            "question_number": "9",
-            "question_text": "Which of the following is NOT a CPU scheduling algorithm?\n(A) First-Come, First-Served (FCFS)\n(B) Round Robin (RR)\n(C) Shortest Remaining Time Next (SRTN)\n(D) Least Recently Used (LRU)",
-            "marks": 1,
-            "answer": "(D) Least Recently Used (LRU)\n\n**Rationale:** LRU is a page replacement algorithm used in virtual memory management to select which page to evict, whereas FCFS, RR, and SRTN are CPU scheduling algorithms.",
-            "answer_source": "generated",
-            "chapter": "Unit 3: CPU Scheduling"
-        },
-        {
-            "question_number": "10",
-            "question_text": "Select the type of CPU Scheduling algorithm that has a large average waiting time?\n(A) First come First Serve (FCFS)\n(B) Priority based Scheduling Algorithm\n(C) Round Robin Scheduling Algorithm (RR)\n(D) Multilevel Feedback Queue Algorithm",
-            "marks": 1,
-            "answer": "(A) First come First Serve (FCFS)\n\n**Rationale:** Non-preemptive FCFS suffers from the \"convoy effect\", where multiple short I/O-bound processes are blocked waiting behind a lengthy CPU-bound process, drastically inflating average waiting times.",
-            "answer_source": "generated",
-            "chapter": "Unit 3: CPU Scheduling"
-        },
-        {
-            "question_number": "11",
-            "question_text": "Which deadlock handling method involves ensuring that at least one of the necessary conditions for deadlock cannot hold?\n(A) Deadlock Prevention\n(B) Deadlock Avoidance\n(C) Deadlock Detection\n(D) Recovery from Deadlock",
-            "marks": 1,
-            "answer": "(A) Deadlock Prevention\n\n**Rationale:** Deadlock Prevention designs resource allocation protocols to structurally negate at least one of the four Coffman conditions (Mutual Exclusion, Hold and Wait, No Preemption, Circular Wait) so that deadlocks can never physically occur.",
-            "answer_source": "generated",
-            "chapter": "Unit 3: Deadlocks"
-        },
-        {
-            "question_number": "12",
-            "question_text": "Identify the deadlock handling technique in the Banker's Algorithm.\n(A) Deadlock Prevention\n(B) Deadlock Avoidance\n(C) Deadlock Detection and Recovery\n(D) Deadlock Ignorance",
-            "marks": 1,
-            "answer": "(B) Deadlock Avoidance\n\n**Rationale:** Dijkstra's Banker's Algorithm is a Deadlock Avoidance algorithm. It dynamically inspects resource requests against maximum claims to ensure the system never enters an unsafe state.",
-            "answer_source": "generated",
-            "chapter": "Unit 3: Deadlocks"
-        },
-        {
-            "question_number": "13",
-            "question_text": "In a paging system, what is the primary function of a page table?\n(A) To store executable code of a process\n(B) To translate logical addresses to physical addresses\n(C) To allocate contiguous memory blocks\n(D) To manage file system permissions",
-            "marks": 1,
-            "answer": "(B) To translate logical addresses to physical addresses\n\n**Rationale:** The page table maps logical/virtual page numbers generated by the CPU to corresponding physical memory frame numbers in main RAM.",
-            "answer_source": "generated",
-            "chapter": "Unit 4: Memory Management"
-        },
-        {
-            "question_number": "14",
-            "question_text": "Which of the following is not a form of memory?\n(A) Instruction cache\n(B) Instruction register\n(C) Instruction opcode\n(D) Translation lookaside buffer",
-            "marks": 1,
-            "answer": "(C) Instruction opcode\n\n**Rationale:** An opcode (operation code) is a machine instruction field specifying the operation to be performed (e.g. ADD, MOV). Instruction cache, registers, and TLBs are hardware memory storage structures.",
-            "answer_source": "generated",
-            "chapter": "Unit 4: Memory Management"
-        },
-        {
-            "question_number": "15",
-            "question_text": "In RAID (Redundant Array of Independent Disks), which level provides data mirroring for fault tolerance?\n(A) RAID 0\n(B) RAID 1\n(C) RAID 5\n(D) RAID 6",
-            "marks": 1,
-            "answer": "(B) RAID 1\n\n**Rationale:** RAID 1 utilizes disk mirroring, where exact duplicated copies of data blocks are written concurrently to two separate disks to ensure full fault tolerance against drive failure.",
-            "answer_source": "generated",
-            "chapter": "Unit 4: Storage Management"
-        },
-        {
-            "question_number": "16",
-            "question_text": "The minimum number of page frames that must be allocated to a running process in a virtual memory environment is determined by\n(A) The instruction set architecture\n(B) Page size\n(C) Physical memory size\n(D) Number of processes in memory",
-            "marks": 1,
-            "answer": "(A) The instruction set architecture\n\n**Rationale:** The instruction set architecture (ISA) specifies addressing modes and maximum operands referenced by a single machine instruction, defining the minimum frames required so that an instruction can execute to completion without recursive page faults.",
-            "answer_source": "generated",
-            "chapter": "Unit 4: Virtual Memory"
-        },
-        {
-            "question_number": "17",
-            "question_text": "Which of the following is NOT a common type of program threat?\n(A) Trojan Horse\n(B) Denial-of-Service (DoS) Attack\n(C) Virus\n(D) Worm",
-            "marks": 1,
-            "answer": "(B) Denial-of-Service (DoS) Attack\n\n**Rationale:** A Denial-of-Service (DoS) attack is categorized as a System and Network threat, whereas Trojan Horses, Viruses, and Worms are Program threats executing rogue code.",
-            "answer_source": "generated",
-            "chapter": "Unit 5: Program Threats"
-        },
-        {
-            "question_number": "18",
-            "question_text": "______ is an approach to restricting system access to authorized users.\n(A) Role-based access control\n(B) Process-based access control\n(C) Job-based access control\n(D) None of the mentioned",
-            "marks": 1,
-            "answer": "(A) Role-based access control\n\n**Rationale:** Role-Based Access Control (RBAC) assigns access permissions to specific roles (e.g. administrator, student, faculty), granting users rights based on their organizational roles.",
-            "answer_source": "generated",
-            "chapter": "Unit 5: Access Control"
-        },
-        {
-            "question_number": "19",
-            "question_text": "What is the primary goal of protection in an operating system?\n(A) To prevent hardware failures\n(B) To ensure that system resources are used only according to policies\n(C) To optimize CPU scheduling algorithms\n(D) To speed up program execution",
-            "marks": 1,
-            "answer": "(B) To ensure that system resources are used only according to policies\n\n**Rationale:** Protection provides a mechanism for controlling the access of programs, processes, and users to the resources defined by a computer system, enforcing established security policies.",
-            "answer_source": "generated",
-            "chapter": "Unit 5: Goals of Protection"
-        },
-        {
-            "question_number": "20",
-            "question_text": "Which principle states that programs, users and even the systems be given just enough privileges to perform their task?\n(A) Principle of operating system\n(B) Principle of least privilege\n(C) Principle of process scheduling\n(D) None of the mentioned",
-            "marks": 1,
-            "answer": "(B) Principle of least privilege\n\n**Rationale:** The Principle of Least Privilege dictates that any user, program, or system component should have only the minimum access rights and privileges necessary to complete its legitimate task.",
-            "answer_source": "generated",
-            "chapter": "Unit 5: Principles of Protection"
-        },
-        {
-            "question_number": "21. a.",
-            "question_text": "Describe in detail the various services provided by an operating system, explaining how each service contributes to the overall functionality and performance of the system.",
-            "marks": 8,
-            "answer": "### Operating System Services\n\nAn operating system provides an environment for program execution and delivers core services to users and applications:\n\n1. **User Interface (UI):**\n   - Provides Command-Line Interfaces (CLI), Graphical User Interfaces (GUI), and batch interfaces to allow direct user control of system activities.\n\n2. **Program Execution:**\n   - The OS loads program instructions and data into main memory, initializes hardware contexts and runtime stacks, allocates resources, and manages execution to normal termination or error handling.\n\n3. **I/O Operations:**\n   - Hides device-specific controller details behind standardized system-call abstractions (e.g., read, write, ioctl), providing buffering, caching, and spooling to optimize I/O throughput.\n\n4. **File-System Manipulation:**\n   - Manages directories, files, block allocations on storage media, access permissions, and navigation (create, delete, read, write, search).\n\n5. **Interprocess Communications (IPC):**\n   - Enables processes to exchange information on the same machine or over a network via shared memory or message passing (pipes, sockets, queues).\n\n6. **Error Detection & Handling:**\n   - Continuously monitors CPU, memory parity, I/O connection, and program violations (arithmetic overflow, illegal memory access) to maintain system stability without catastrophic crashes.\n\n7. **Resource Allocation:**\n   - Dynamically manages multi-user resource contention for CPU time slices, main memory partitions, storage, and peripheral devices.\n\n8. **Accounting, Protection, and Security:**\n   - Tracks system usage metrics for billing and performance profiling, ensuring that all access to system resources is strictly authenticated and authorized.",
-            "answer_source": "generated",
-            "chapter": "Unit 1: Operating-System Services"
-        },
-        {
-            "question_number": "21. b.",
-            "question_text": "Write a note on Monolithic, Layered and microkernel OS structure and discuss pros and cons for the same.",
-            "marks": 8,
-            "answer": "### Operating System Structures: Monolithic, Layered, and Microkernel\n\n#### 1. Monolithic Architecture:\n- **Structure:** All OS components (kernel core, scheduler, memory manager, file systems, device drivers, network stacks) reside in a single large address space in kernel mode.\n- **Pros:** Maximum execution performance and minimal function-call overhead between subsystems.\n- **Cons:** Poor fault isolation; a single bug in any third-party driver can crash the entire operating system. Difficult to maintain and verify.\n\n#### 2. Layered Architecture:\n- **Structure:** The OS is decomposed into hierarchical layers ($L_0$ to $L_N$), where Layer 0 represents hardware and Layer $N$ represents user interfaces. Each layer is constructed strictly on top of lower-level interfaces.\n- **Pros:** Simplicity of construction and debugging. Each layer can be tested and verified independently.\n- **Cons:** Difficult to define clean layer ordering; performance penalty from cascading function-call parameters across multiple layer boundaries.\n\n#### 3. Microkernel Architecture:\n- **Structure:** Retains only minimal core mechanisms (IPC, basic virtual memory paging, low-level thread scheduling) inside kernel mode. Non-essential services (file system, device drivers, networking) run as user-space server processes communicating via message passing.\n- **Pros:** High reliability, security, and extensibility. A failure in a user-space file server does not bring down the kernel.\n- **Cons:** Noticeable performance overhead caused by frequent user-to-kernel context switching and message serialization during IPC.",
-            "answer_source": "generated",
-            "chapter": "Unit 1: Operating-System Structure"
-        },
-        {
-            "question_number": "22. a.",
-            "question_text": "Explain the Process Control Block (PCB) and its significance in process management. What are the key attributes stored in a PCB?",
-            "marks": 8,
-            "answer": "### Process Control Block (PCB)\n\nThe Process Control Block (also known as a Task Control Block) is the primary data structure maintained by the OS kernel for each active process. It serves as the physical manifestation of a process in memory.\n\n#### Key Attributes Stored in a PCB:\n1. **Process State:** Current state of the process (New, Ready, Running, Waiting/Blocked, Terminated).\n2. **Program Counter (PC):** Points to the memory address of the next machine instruction to be executed by this process.\n3. **CPU Registers:** Saved context of accumulators, index registers, stack pointers, and general-purpose registers when the process is interrupted.\n4. **CPU-Scheduling Information:** Process priority, pointers to scheduling queues, and scheduling parameters.\n5. **Memory-Management Information:** Value of base and limit registers, page tables, or segment tables depending on the memory architecture.\n6. **Accounting Information:** Amount of CPU time utilized, real-time elapsed, time limits, and account/user identification.\n7. **I/O Status Information:** List of open file descriptors, allocated I/O devices, and outstanding pending I/O requests.\n\n#### Significance in Process Management:\nDuring a CPU context switch, the kernel suspends the currently running process by saving its entire CPU hardware state into its PCB, and then loads the register values of the next scheduled process from its respective PCB. This provides complete state preservation for seamless multiprogramming.",
-            "answer_source": "generated",
-            "chapter": "Unit 2: Process Concept"
-        },
-        {
-            "question_number": "22. b.",
-            "question_text": "What is the Critical-Section Problem? Explain Peterson's Solution and how it ensures mutual exclusion in process synchronization.",
-            "marks": 8,
-            "answer": "### The Critical-Section Problem\n\nA critical section is a segment of code in which a process accesses and modifies shared variables, memory, or tables. The Critical-Section problem requires designing a protocol so that cooperating processes execute safely without race conditions.\n\n#### Requirements for a Valid Solution:\n1. **Mutual Exclusion:** If process $P_i$ is executing in its critical section, no other processes can be executing in their critical sections.\n2. **Progress:** If no process is executing in its critical section and some processes want to enter, only those processes not executing in their remainder section can participate in deciding who enters next.\n3. **Bounded Waiting:** There must be a bound on the number of times other processes are allowed to enter their critical sections after a process has requested entry.\n\n#### Peterson's Solution (for 2 processes, $P_0$ and $P_1$):\nPeterson's algorithm utilizes two shared variables:\n```c\nint turn;\nboolean flag[2];\n```\n- `flag[i] = true;` indicates process $i$ is ready to enter.\n- `turn = j;` yields priority to the other process $j$.\n\n**Algorithm for Process $P_i$ ($j = 1 - i$):**\n```c\ndo {\n    flag[i] = true;\n    turn = j;\n    while (flag[j] && turn == j);\n    \n    // CRITICAL SECTION\n    \n    flag[i] = false;\n    \n    // REMAINDER SECTION\n} while (true);\n```\n\n#### Proof of Correctness:\n- **Mutual Exclusion:** For both processes to be in the critical section, `flag[0] == true` and `flag[1] == true`. However, `turn` can only hold one value ($0$ or $1$) at any instant. Thus, one process must remain blocked in the `while` loop.\n- **Progress and Bounded Waiting:** A process exiting sets `flag[i] = false`, immediately freeing the waiting process to enter after at most one turn.",
-            "answer_source": "generated",
-            "chapter": "Unit 2: Process Synchronization"
-        },
-        {
-            "question_number": "23. a.",
-            "question_text": "Discuss the concept of real-time CPU scheduling. How do real-time scheduling algorithms differ from traditional scheduling algorithms, and what challenges are involved in real-time scheduling?",
-            "marks": 8,
-            "answer": "### Real-Time CPU Scheduling\n\nReal-time CPU scheduling coordinates task execution in systems where correctness depends not only on logical output but also on meeting strict timing constraints (deadlines).\n\n#### Classification:\n1. **Hard Real-Time Systems:** Critical tasks must complete within their assigned deadlines; missing a deadline constitutes total system failure (e.g. flight control, pacemaker).\n2. **Soft Real-Time Systems:** Deadlines are desirable; missing a deadline degrades quality of service but does not cause catastrophic failure (e.g. video streaming).\n\n#### Differences from Traditional Scheduling:\n- **Goal:** Traditional scheduling optimizes fairness, throughput, and average response time (e.g., Round Robin, CFS). Real-time scheduling optimizes predictability and deadline satisfaction (e.g., Rate-Monotonic Scheduling [RMS], Earliest-Deadline-First [EDF]).\n- **Determinism:** Real-time scheduling relies on predictable, bounded execution times and low dispatch latencies.\n\n#### Challenges in Real-Time Scheduling:\n1. **Interrupt Latency:** Minimizing the time between receiving a hardware interrupt and dispatching the interrupt service routine (ISR).\n2. **Dispatch Latency:** Time taken to preempt the currently running kernel task and context-switch to the real-time process.\n3. **Priority Inversion:** Occurs when a high-priority task is blocked waiting for a lock held by a low-priority task, which is preempted by a medium-priority task. Solved using Priority Inheritance Protocols.\n4. **Task Admission & Schedulability:** Ensuring total CPU utilization $\\sum \\frac{C_i}{T_i} \\le 1$ can be guaranteed mathematically before admitting periodic tasks.",
-            "answer_source": "generated",
-            "chapter": "Unit 3: Real-Time CPU Scheduling"
-        },
-        {
-            "question_number": "23. b.",
-            "question_text": "What are the necessary conditions for a deadlock to occur? Explain different methods for handling deadlocks, including prevention, avoidance, and detection.",
-            "marks": 8,
-            "answer": "### Deadlock Conditions and Handling Methods\n\nA deadlock occurs when a set of processes are blocked because each process holds resources and waits for other resources held by other processes in the set.\n\n#### Four Coffman Necessary Conditions:\n1. **Mutual Exclusion:** At least one resource must be held in a non-shareable mode.\n2. **Hold and Wait:** A process must currently hold at least one resource and be waiting to acquire additional resources held by other processes.\n3. **No Preemption:** Resources cannot be forcibly preempted; they are released only voluntarily by the holding process.\n4. **Circular Wait:** A closed chain of processes exists: $P_0 \\rightarrow P_1 \\rightarrow P_2 \\dots \\rightarrow P_0$, where each process waits for a resource held by the next.\n\n#### Deadlock Handling Methods:\n1. **Deadlock Prevention:**\n   - Eliminates deadlocks by negating at least one necessary condition:\n     - Prevent Hold & Wait: Require processes to request all resources at once.\n     - Allow Preemption: Preempt held resources if a new request cannot be satisfied.\n     - Prevent Circular Wait: Impose a strict global numerical ordering on all resources.\n2. **Deadlock Avoidance:**\n   - Uses advance dynamic knowledge of maximum resource demands (e.g. Banker's Algorithm) to evaluate whether granting a request keeps the system in a safe state.\n3. **Deadlock Detection & Recovery:**\n   - Permits deadlocks to happen, invokes detection algorithms (checking for cycles in Resource Allocation Graphs / Wait-for Graphs), and recovers by process termination or resource preemption.",
-            "answer_source": "generated",
-            "chapter": "Unit 3: Deadlocks"
-        },
-        {
-            "question_number": "24. a.",
-            "question_text": "Explain the concept of paging and segmentation in memory management. What are their advantages and disadvantages?",
-            "marks": 8,
-            "answer": "### Paging and Segmentation\n\n#### 1. Paging:\n- **Concept:** Physical memory is divided into fixed-sized blocks called **frames**, and logical address space is divided into same-sized blocks called **pages**. The OS maintains a page table mapping each logical page to a physical frame.\n- **Advantages:**\n  - Completely eliminates **external fragmentation**.\n  - Simplifies memory allocation and protection.\n  - Supports demand paging in virtual memory.\n- **Disadvantages:**\n  - Suffers from **internal fragmentation** (on average, half a page per process).\n  - Page table lookups add memory access overhead (mitigated by TLBs).\n\n#### 2. Segmentation:\n- **Concept:** Supports the user and compiler view of memory. Address space is split into variable-length logical units called **segments** (e.g. code, stack, data, heap, subroutine). A segment table stores the base physical address and limit length of each segment.\n- **Advantages:**\n  - Closely matches program modular structure, making code/data sharing and protection straightforward.\n  - Dynamic segment growth is natural.\n- **Disadvantages:**\n  - Leads to severe **external fragmentation** as segments are allocated and freed, requiring expensive memory compaction.",
-            "answer_source": "generated",
-            "chapter": "Unit 4: Memory Management"
-        },
-        {
-            "question_number": "24. b.",
-            "question_text": "Describe different disk scheduling algorithms used in operating systems.",
-            "marks": 8,
-            "answer": "### Disk Scheduling Algorithms\n\nDisk scheduling minimizes seek time (the time taken for the disk arm to move the read/write head to the desired cylinder) and maximizes bandwidth:\n\n1. **First-Come, First-Served (FCFS):**\n   - Serves requests in arrival order.\n   - *Pros:* Completely fair, no starvation.\n   - *Cons:* Heavy head movement across cylinders, high average seek time.\n\n2. **Shortest Seek Time First (SSTF):**\n   - Selects the request with the minimum seek distance from current head position.\n   - *Pros:* Substantial seek time reduction compared to FCFS.\n   - *Cons:* Can cause starvation for peripheral cylinder requests.\n\n3. **SCAN (Elevator Algorithm):**\n   - Head moves in one direction servicing all requests until it reaches the physical end of the disk, then reverses direction servicing requests on the way back.\n   - *Pros:* Prevents starvation, predictable seek behavior.\n   - *Cons:* Requests at the far end wait longer as the head reverses.\n\n4. **C-SCAN (Circular SCAN):**\n   - Head moves in one direction to the disk end, then immediately jumps back to the opposite end without servicing requests on the return trip, restarting the sweep.\n   - *Pros:* Provides uniform wait time across all cylinders.\n\n5. **LOOK and C-LOOK:**\n   - Enhanced versions of SCAN/C-SCAN where the head reverses or jumps immediately upon reaching the last pending request in that direction, rather than traveling all the way to the physical boundary (0 or 199).",
-            "answer_source": "generated",
-            "chapter": "Unit 4: Disk Scheduling"
-        },
-        {
-            "question_number": "25. a.",
-            "question_text": "Explain the goals and principles of protection in an operating system. How does protection help in ensuring system security and efficient resource utilization?",
-            "marks": 8,
-            "answer": "### Goals and Principles of Protection\n\n#### Goals of Protection:\n1. Ensure that each active program component executes only in authorized domains.\n2. Prevent inadvertent or intentional interference between processes sharing memory and resources.\n3. Guarantee system integrity, availability, and user privacy.\n\n#### Key Principles of Protection:\n1. **Principle of Least Privilege:** Users and programs must receive only the minimum access rights strictly required to complete their designated task.\n2. **Separation of Policy and Mechanism:** Mechanisms dictate *how* access is controlled (e.g. access matrices, capability lists), while policies determine *which* access is granted. This allows policy updates without rewriting kernel code.\n3. **Domain of Protection:** An execution domain defines the set of object-right pairs $\\langle Object, \\{Rights\\} \\rangle$ that a process can invoke at any time.\n\n#### Role in Security and Resource Utilization:\n- **Security:** Strict protection enforces domain boundaries, preventing malware, buffer overflows, and unauthorized access to kernel memory and system files.\n- **Efficient Utilization:** Prevents rogue processes from monopolizing hardware or corrupting shared structures, ensuring deterministic, orderly resource sharing.",
-            "answer_source": "generated",
-            "chapter": "Unit 5: Goals of Protection"
-        },
-        {
-            "question_number": "25. b.",
-            "question_text": "Explain with example Threats to Protection and Security.",
-            "marks": 8,
-            "answer": "### Threats to Protection and Security\n\nOperating system threats generally fall into program threats and system/network threats:\n\n#### 1. Program Threats (Rogue Software):\n- **Trojan Horse:** Software that appears benign (e.g. calculator app) but covertly executes unauthorized actions, such as capturing passwords or exfiltrating files.\n- **Trap Door / Backdoor:** An undocumented entry point left by a developer that bypasses normal security authentication checks.\n- **Logic Bomb:** Malicious code designed to execute when specific conditions are triggered (e.g., deleting financial records on a specific date).\n- **Buffer Overflow:** Occurs when unvalidated user input exceeds allocated buffer size, overwriting the return address on the stack to execute arbitrary injected shellcode.\n- **Viruses and Worms:** Self-replicating code that infects host files (Virus) or propagates autonomously over networks (Worm) exploiting vulnerabilities.\n\n#### 2. System and Network Threats:\n- **Denial of Service (DoS / DDoS):** Flooding the system with bogus traffic or exhausting kernel connection pools to deny legitimate users access.\n- **Man-in-the-Middle (MitM) Attacks:** Intercepting and modifying communication between two parties without their knowledge.\n- **Port Scanning & Sniffing:** Passively capturing network packets to extract plaintext credentials and map vulnerable ports.",
-            "answer_source": "generated",
-            "chapter": "Unit 5: Program Threats"
-        },
-        {
-            "question_number": "26",
-            "question_text": "Consider four processes with the length of CPU burst time, Arrival time and Priority (small value means high priority):\n| PROCESS | BURST TIME | ARRIVAL TIME | PRIORITY TIME |\n|---|---|---|---|\n| P1 | 40 | 0 | 2 |\n| P2 | 55 | 15 | 4 |\n| P3 | 35 | 15 | 1 |\n| P4 | 10 | 35 | 3 |\n\n(i) Create Gantt charts illustrating the execution of these processes using FCFS, non preemptive SJF, priority scheduling and Round Robin scheduling (quantum = 5 ms) algorithms for this set of processes.\n(ii) Calculate the turnaround time for process P3 under each of the above algorithms.\n(iii) Calculate average waiting time for each algorithm and find out which algorithm would give the minimum average waiting time.",
-            "marks": 15,
-            "answer": "### Complete Calculations and Gantt Charts\n\nGiven Process Data:\n- $P_1$: Arrival $= 0$, Burst $= 40$, Priority $= 2$\n- $P_2$: Arrival $= 15$, Burst $= 55$, Priority $= 4$\n- $P_3$: Arrival $= 15$, Burst $= 35$, Priority $= 1$ (Highest priority)\n- $P_4$: Arrival $= 35$, Burst $= 10$, Priority $= 3$\n\n---\n\n### (i) Gantt Charts & Execution Schedules\n\n#### 1. First-Come, First-Served (FCFS):\n- At $t = 0$: $P_1$ arrives and executes to completion ($t = 40$).\n- At $t = 40$: Ready queue has $P_2$ (arrived at 15), $P_3$ (arrived at 15), and $P_4$ (arrived at 35). $P_2$ executes next ($t = 40$ to $95$).\n- At $t = 95$: $P_3$ executes ($t = 95$ to $130$).\n- At $t = 130$: $P_4$ executes ($t = 130$ to $140$).\n\n**Gantt Chart (FCFS):**\n```text\n|    P1    |        P2        |      P3      |  P4  |\n0         40                 95             130    140\n```\n- Completion Times: $P_1 = 40$, $P_2 = 95$, $P_3 = 130$, $P_4 = 140$\n- Turnaround Times ($\\text{TAT} = \\text{CT} - \\text{AT}$): $P_1 = 40$, $P_2 = 80$, $P_3 = 115$, $P_4 = 105$\n- Waiting Times ($\\text{WT} = \\text{TAT} - \\text{BT}$): $P_1 = 0$, $P_2 = 25$, $P_3 = 80$, $P_4 = 95$\n- **Average Waiting Time (FCFS):** $\\frac{0 + 25 + 80 + 95}{4} = \\frac{200}{4} = 50.0\\text{ ms}$\n\n---\n\n#### 2. Non-Preemptive Shortest Job First (SJF):\n- At $t = 0$: Only $P_1$ is available; executes from $t = 0$ to $40$.\n- At $t = 40$: Available processes are $P_2$ (BT=55), $P_3$ (BT=35), $P_4$ (BT=10). Shortest burst is $P_4$ (10).\n- $P_4$ executes from $t = 40$ to $50$.\n- At $t = 50$: Shortest remaining is $P_3$ (35); executes from $t = 50$ to $85$.\n- At $t = 85$: $P_2$ (55) executes from $t = 85$ to $140$.\n\n**Gantt Chart (SJF):**\n```text\n|    P1    |  P4  |      P3      |        P2        |\n0         40     50             85                140\n```\n- Completion Times: $P_1 = 40$, $P_4 = 50$, $P_3 = 85$, $P_2 = 140$\n- Turnaround Times: $P_1 = 40$, $P_2 = 125$, $P_3 = 70$, $P_4 = 15$\n- Waiting Times: $P_1 = 0$, $P_2 = 70$, $P_3 = 35$, $P_4 = 5$\n- **Average Waiting Time (SJF):** $\\frac{0 + 70 + 35 + 5}{4} = \\frac{110}{4} = 27.5\\text{ ms}$\n\n---\n\n#### 3. Priority Scheduling (Non-Preemptive):\n- At $t = 0$: $P_1$ runs from $t = 0$ to $40$.\n- At $t = 40$: Ready processes: $P_3$ (Priority 1), $P_4$ (Priority 3), $P_2$ (Priority 4). Highest priority is $P_3$.\n- $P_3$ executes from $t = 40$ to $75$.\n- At $t = 75$: Highest priority remaining is $P_4$ (Priority 3); runs from $t = 75$ to $85$.\n- At $t = 85$: $P_2$ (Priority 4) runs from $t = 85$ to $140$.\n\n**Gantt Chart (Priority):**\n```text\n|    P1    |      P3      |  P4  |        P2        |\n0         40             75     85                140\n```\n- Completion Times: $P_1 = 40$, $P_3 = 75$, $P_4 = 85$, $P_2 = 140$\n- Turnaround Times: $P_1 = 40$, $P_2 = 125$, $P_3 = 60$, $P_4 = 50$\n- Waiting Times: $P_1 = 0$, $P_2 = 70$, $P_3 = 25$, $P_4 = 40$\n- **Average Waiting Time (Priority):** $\\frac{0 + 70 + 25 + 40}{4} = \\frac{135}{4} = 33.75\\text{ ms}$\n\n---\n\n#### 4. Round Robin Scheduling (Quantum = 5 ms):\nProcesses are rotated every 5 ms in arrival order:\n- $P_1$ runs slices until $t = 15$; $P_2, P_3$ arrive. At $t = 35$, $P_4$ arrives.\n- Total execution cycles alternate through the ready queue until completion:\n  - $P_4$ completes at $t = 70$\n  - $P_1$ completes at $t = 100$\n  - $P_3$ completes at $t = 120$\n  - $P_2$ completes at $t = 140$\n\n**Gantt Chart (Round Robin Summary):**\n```text\n|P1|P1|P1|P2|P3|P1|P2|P3|P4|P1|P2|P3|P4|P1|P2|P3|P1|P2|P3|P1|P2|P3|P1|P2|P3|P2|P2|P2|\n0  5  10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100...                   140\n```\n- Completion Times: $P_1 = 100$, $P_2 = 140$, $P_3 = 120$, $P_4 = 70$\n- Turnaround Times: $P_1 = 100 - 0 = 100$, $P_2 = 140 - 15 = 125$, $P_3 = 120 - 15 = 105$, $P_4 = 70 - 35 = 35$\n- Waiting Times: $P_1 = 60$, $P_2 = 70$, $P_3 = 70$, $P_4 = 25$\n- **Average Waiting Time (RR):** $\\frac{60 + 70 + 70 + 25}{4} = \\frac{225}{4} = 56.25\\text{ ms}$\n\n---\n\n### (ii) Turnaround Time for Process P3:\n- **FCFS:** $\\text{TAT}(P_3) = 130 - 15 = \\mathbf{115\\text{ ms}}$\n- **SJF:** $\\text{TAT}(P_3) = 85 - 15 = \\mathbf{70\\text{ ms}}$\n- **Priority Scheduling:** $\\text{TAT}(P_3) = 75 - 15 = \\mathbf{60\\text{ ms}}$\n- **Round Robin ($q=5$):** $\\text{TAT}(P_3) = 120 - 15 = \\mathbf{105\\text{ ms}}$\n\n---\n\n### (iii) Average Waiting Times Comparison:\n- **FCFS:** $50.0\\text{ ms}$\n- **SJF:** $\\mathbf{27.5\\text{ ms}}$\n- **Priority:** $33.75\\text{ ms}$\n- **Round Robin:** $56.25\\text{ ms}$\n\n**Conclusion:** **Non-Preemptive SJF** provides the **minimum average waiting time (27.5 ms)**.",
-            "answer_source": "generated",
-            "chapter": "Unit 3: CPU Scheduling"
-        },
-        {
-            "question_number": "27",
-            "question_text": "A disk has 200 cylinders, numbered from 0 to 199. The disk head is currently at cylinder 100. The following requests are in the queue:\n- Request 1: Cylinder 50\n- Request 2: Cylinder 120\n- Request 3: Cylinder 30\n- Request 4: Cylinder 180\n- Request 5: Cylinder 70\n\nUsing each of the following disk scheduling algorithms, determine the order in which the requests are serviced and the total distance traveled by the disk head:\n1. First-Come-First-Served (FCFS)\n2. Shortest-Seek-Time-First (SSTF)\n3. SCAN (Elevator Algorithm)\n4. C-SCAN (Circular SCAN)\n5. LOOK\n6. C-LOOK",
-            "marks": 15,
-            "answer": "### Disk Scheduling Calculations\n\nGiven Parameters:\n- Total Cylinders: $0$ to $199$\n- Initial Head Position: $100$\n- Request Queue: $[50, 120, 30, 180, 70]$\n\n---\n\n#### 1. First-Come, First-Served (FCFS):\n- **Service Order:** $100 \\rightarrow 50 \\rightarrow 120 \\rightarrow 30 \\rightarrow 180 \\rightarrow 70$\n- **Head Movement:**\n  - $|50 - 100| = 50$\n  - $|120 - 50| = 70$\n  - $|30 - 120| = 90$\n  - $|180 - 30| = 150$\n  - $|70 - 180| = 110$\n- **Total Distance:** $50 + 70 + 90 + 150 + 110 = \\mathbf{470\\text{ cylinders}}$\n\n---\n\n#### 2. Shortest-Seek-Time-First (SSTF):\nAt each step, select the closest unserviced request:\n- From $100$: Closest is $120$ (distance 20)\n- From $120$: Closest is $70$ (distance 50; distance to 180 is 60)\n- From $70$: Closest is $50$ (distance 20)\n- From $50$: Closest is $30$ (distance 20)\n- From $30$: Closest is $180$ (distance 150)\n- **Service Order:** $100 \\rightarrow 120 \\rightarrow 70 \\rightarrow 50 \\rightarrow 30 \\rightarrow 180$\n- **Head Movement:** $20 + 50 + 20 + 20 + 150 = \\mathbf{260\\text{ cylinders}}$\n\n---\n\n#### 3. SCAN (Elevator Algorithm - moving towards higher cylinders):\nHead sweeps to the higher boundary (199), then reverses towards cylinder 0:\n- **Service Order:** $100 \\rightarrow 120 \\rightarrow 180 \\rightarrow (199) \\rightarrow 70 \\rightarrow 50 \\rightarrow 30$\n- **Head Movement:**\n  - From $100$ to $199$: $199 - 100 = 99$\n  - From $199$ down to $30$: $199 - 30 = 169$\n- **Total Distance:** $99 + 169 = \\mathbf{268\\text{ cylinders}}$\n*(Note: If moving downwards first: $100 \\rightarrow 70 \\rightarrow 50 \\rightarrow 30 \\rightarrow 0 \\rightarrow 120 \\rightarrow 180 = 100 + 180 = 280\\text{ cylinders}$)*\n\n---\n\n#### 4. C-SCAN (Circular SCAN - moving towards higher cylinders):\nHead moves to upper boundary (199), jumps to cylinder 0 without servicing, then sweeps up to remaining requests:\n- **Service Order:** $100 \\rightarrow 120 \\rightarrow 180 \\rightarrow (199) \\rightarrow (0) \\rightarrow 30 \\rightarrow 50 \\rightarrow 70$\n- **Head Movement:**\n  - Up to $199$: $199 - 100 = 99$\n  - Return to $0$: $199 - 0 = 199$\n  - Up to $70$: $70 - 0 = 70$\n- **Total Distance:** $99 + 199 + 70 = \\mathbf{368\\text{ cylinders}}$\n*(If the return jump is not counted as seek distance, total = $99 + 70 = 169\\text{ cylinders}$)*\n\n---\n\n#### 5. LOOK (moving towards higher cylinders):\nSimilar to SCAN, but only travels as far as the final request in each direction (stops at 180 and 30, never going to 199 or 0):\n- **Service Order:** $100 \\rightarrow 120 \\rightarrow 180 \\rightarrow 70 \\rightarrow 50 \\rightarrow 30$\n- **Head Movement:**\n  - From $100$ to $180$: $180 - 100 = 80$\n  - From $180$ down to $30$: $180 - 30 = 150$\n- **Total Distance:** $80 + 150 = \\mathbf{230\\text{ cylinders}}$\n\n---\n\n#### 6. C-LOOK (moving towards higher cylinders):\nSimilar to C-SCAN, but only travels as far as the highest request (180), jumps to lowest request (30), and services upwards to 70:\n- **Service Order:** $100 \\rightarrow 120 \\rightarrow 180 \\rightarrow 30 \\rightarrow 50 \\rightarrow 70$\n- **Head Movement:**\n  - From $100$ to $180$: $180 - 100 = 80$\n  - Return jump to $30$: $180 - 30 = 150$\n  - From $30$ up to $70$: $70 - 30 = 40$\n- **Total Distance:** $80 + 150 + 40 = \\mathbf{270\\text{ cylinders}}$\n*(If return jump is excluded, total = $80 + 40 = 120\\text{ cylinders}$)*",
-            "answer_source": "generated",
-            "chapter": "Unit 4: Disk Scheduling"
-        }
-    ]
+  "formal_filename": "EndSem_May_2025.json",
+  "paper_title": "B.TECH/ M.Tech (Integrated) DEGREE EXAMINATION, MAY 2025 - Third & Fourth Semester - 21CSC202J - OPERATING SYSTEMS",
+  "source": "EndSem May 2025",
+  "questions": [
+    {
+      "question_number": "1",
+      "question_text": "Which among the following is the fastest among all the categories in a memory hierarchy ?",
+      "options": [
+        "Main memory",
+        "L1 Cache memory",
+        "CPU registers",
+        "Secondary Memory"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "**Rationale:** CPU registers reside directly inside the processor core and operate at CPU clock cycle speed, making them the fastest category in the memory hierarchy with typical access times under 1 nanosecond.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Computer-System Organization"
+    },
+    {
+      "question_number": "2",
+      "question_text": "Device controller informs CPU that it has finished its operation by causing ______ .",
+      "options": [
+        "Interrupt",
+        "Message",
+        "Information",
+        "Command"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "**Rationale:** When an I/O device controller completes its operation (such as reading a disk sector or receiving a network packet), it asserts a hardware interrupt line on the system bus to notify the CPU to service the event.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Computer-System Organization"
+    },
+    {
+      "question_number": "3",
+      "question_text": "Which of the following system calls is used for process creation in Unix-based operating systems?",
+      "options": [
+        "exec()",
+        "fork()",
+        "wait()",
+        "kill()"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "**Rationale:** In Unix and Linux systems, `fork()` creates a new duplicate child process. `exec()` replaces the process image with a new executable, `wait()` blocks the parent until a child terminates, and `kill()` sends signals.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: System Calls"
+    },
+    {
+      "question_number": "4",
+      "question_text": "Which of the following memory management techniques does an operating system use to ensure efficient memory utilization?",
+      "options": [
+        "Paging and Segmentation",
+        "Virtualization and Scheduling",
+        "Swapping and Pipelining",
+        "Multithreading and Synchronization"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "**Rationale:** Paging divides virtual and physical memory into fixed-sized blocks (eliminating external fragmentation), while segmentation divides memory into logical user-centric segments. Both allow non-contiguous allocation and maximize physical memory utilization.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Memory Management"
+    },
+    {
+      "question_number": "5",
+      "question_text": "A process can be ___________",
+      "options": [
+        "Both single threaded and multithreaded",
+        "Multithreaded",
+        "Single threaded",
+        "Stack"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "**Rationale:** An operating system process may consist of a single thread of execution (traditional heavy-weight process) or contain multiple concurrent threads sharing the same address space and resources.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Threads"
+    },
+    {
+      "question_number": "6",
+      "question_text": "Systems that permit only a single process to execute at any given time are referred to as",
+      "options": [
+        "Uniprogramming systems",
+        "Uniprocessing systems",
+        "Unitasking systems",
+        "Multiprocessing systems"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "A system that permits only a single process to execute at any given time is a uniprocessing system, as given in the official answer key for the matching FJ2 question.",
+      "answer_source": "provided",
+      "chapter": "Unit 2: Process Concept"
+    },
+    {
+      "question_number": "7",
+      "question_text": "Which synchronization mechanism allows multiple processes to access a resource while ensuring mutual exclusion?",
+      "options": [
+        "Semaphore",
+        "Deadlock",
+        "Context Switching",
+        "Paging"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "**Rationale:** A semaphore is a synchronization variable providing atomic `wait()` ($P$) and `signal()` ($V$) operations to coordinate access to shared critical sections and shared resources among cooperating processes.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Process Synchronization"
+    },
+    {
+      "question_number": "8",
+      "question_text": "In Interprocess Communication (IPC), which of the following methods allows processes to communicate without using shared memory?",
+      "options": [
+        "Pipes",
+        "Semaphores",
+        "Mutex Locks",
+        "Threads"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "**Rationale:** Pipes are a message-passing mechanism managed by the kernel that allow unidirectional byte stream communication between processes without sharing user address space.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Interprocess Communication"
+    },
+    {
+      "question_number": "9",
+      "question_text": "Which of the following is NOT a CPU scheduling algorithm?",
+      "options": [
+        "First-Come, First-Served (FCFS)",
+        "Round Robin (RR)",
+        "Shortest Remaining Time Next (SRTN)",
+        "Least Recently Used (LRU)"
+      ],
+      "correct_option": "D",
+      "marks": 1,
+      "answer": "**Rationale:** LRU is a page replacement algorithm used in virtual memory management to select which page to evict, whereas FCFS, RR, and SRTN are CPU scheduling algorithms.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: CPU Scheduling"
+    },
+    {
+      "question_number": "10",
+      "question_text": "Select the type of CPU Scheduling algorithm that has a large average waiting time?",
+      "options": [
+        "First come First Serve (FCFS)",
+        "Priority based Scheduling Algorithm",
+        "Round Robin Scheduling Algorithm (RR)",
+        "Multilevel Feedback Queue Algorithm"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "Round Robin time slicing and frequent context switching make each process wait through many other processes' quanta before it finishes, giving a large average waiting time (matches the official answer key for the matching FJ2 question).",
+      "answer_source": "provided",
+      "chapter": "Unit 3: CPU Scheduling"
+    },
+    {
+      "question_number": "11",
+      "question_text": "Which deadlock handling method involves ensuring that at least one of the necessary conditions for deadlock cannot hold?",
+      "options": [
+        "Deadlock Prevention",
+        "Deadlock Avoidance",
+        "Deadlock Detection",
+        "Recovery from Deadlock"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "**Rationale:** Deadlock Prevention designs resource allocation protocols to structurally negate at least one of the four Coffman conditions (Mutual Exclusion, Hold and Wait, No Preemption, Circular Wait) so that deadlocks can never physically occur.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Deadlocks"
+    },
+    {
+      "question_number": "12",
+      "question_text": "Identify the deadlock handling technique in the Banker's Algorithm.",
+      "options": [
+        "Deadlock Prevention",
+        "Deadlock Avoidance",
+        "Deadlock Detection and Recovery",
+        "Deadlock Ignorance"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "**Rationale:** Dijkstra's Banker's Algorithm is a Deadlock Avoidance algorithm. It dynamically inspects resource requests against maximum claims to ensure the system never enters an unsafe state.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Deadlocks"
+    },
+    {
+      "question_number": "13",
+      "question_text": "In a paging system, what is the primary function of a page table?",
+      "options": [
+        "To store executable code of a process",
+        "To translate logical addresses to physical addresses",
+        "To allocate contiguous memory blocks",
+        "To manage file system permissions"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "**Rationale:** The page table maps logical/virtual page numbers generated by the CPU to corresponding physical memory frame numbers in main RAM.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Memory Management"
+    },
+    {
+      "question_number": "14",
+      "question_text": "Which of the following is not a form of memory?",
+      "options": [
+        "Instruction cache",
+        "Instruction register",
+        "Instruction opcode",
+        "Translation lookaside buffer"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "**Rationale:** An opcode (operation code) is a machine instruction field specifying the operation to be performed (e.g. ADD, MOV). Instruction cache, registers, and TLBs are hardware memory storage structures.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Memory Management"
+    },
+    {
+      "question_number": "15",
+      "question_text": "In RAID (Redundant Array of Independent Disks), which level provides data mirroring for fault tolerance?",
+      "options": [
+        "RAID 0",
+        "RAID 1",
+        "RAID 5",
+        "RAID 6"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "**Rationale:** RAID 1 utilizes disk mirroring, where exact duplicated copies of data blocks are written concurrently to two separate disks to ensure full fault tolerance against drive failure.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Storage Management"
+    },
+    {
+      "question_number": "16",
+      "question_text": "The minimum number of page frames that must be allocated to a running process in a virtual memory environment is determined by",
+      "options": [
+        "The instruction set architecture",
+        "Page size",
+        "Physical memory size",
+        "Number of processes in memory"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "**Rationale:** The instruction set architecture (ISA) specifies addressing modes and maximum operands referenced by a single machine instruction, defining the minimum frames required so that an instruction can execute to completion without recursive page faults.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Virtual Memory"
+    },
+    {
+      "question_number": "17",
+      "question_text": "Which of the following is NOT a common type of program threat?",
+      "options": [
+        "Trojan Horse",
+        "Denial-of-Service (DoS) Attack",
+        "Virus",
+        "Worm"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "**Rationale:** A Denial-of-Service (DoS) attack is categorized as a System and Network threat, whereas Trojan Horses, Viruses, and Worms are Program threats executing rogue code.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Program Threats"
+    },
+    {
+      "question_number": "18",
+      "question_text": "______ is an approach to restricting system access to authorized users.",
+      "options": [
+        "Role-based access control",
+        "Process-based access control",
+        "Job-based access control",
+        "None of the mentioned"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "**Rationale:** Role-Based Access Control (RBAC) assigns access permissions to specific roles (e.g. administrator, student, faculty), granting users rights based on their organizational roles.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Access Control"
+    },
+    {
+      "question_number": "19",
+      "question_text": "What is the primary goal of protection in an operating system?",
+      "options": [
+        "To prevent hardware failures",
+        "To ensure that system resources are used only according to policies",
+        "To optimize CPU scheduling algorithms",
+        "To speed up program execution"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "**Rationale:** Protection provides a mechanism for controlling the access of programs, processes, and users to the resources defined by a computer system, enforcing established security policies.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Goals of Protection"
+    },
+    {
+      "question_number": "20",
+      "question_text": "Which principle states that programs, users and even the systems be given just enough privileges to perform their task?",
+      "options": [
+        "Principle of operating system",
+        "Principle of least privilege",
+        "Principle of process scheduling",
+        "None of the mentioned"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "**Rationale:** The Principle of Least Privilege dictates that any user, program, or system component should have only the minimum access rights and privileges necessary to complete its legitimate task.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Principles of Protection"
+    },
+    {
+      "question_number": "21. a.",
+      "question_text": "Describe in detail the various services provided by an operating system, explaining how each service contributes to the overall functionality and performance of the system.",
+      "marks": 8,
+      "answer": "### Operating System Services\n\nAn operating system provides an environment for program execution and delivers core services to users and applications:\n\n1. **User Interface (UI):**\n   - Provides Command-Line Interfaces (CLI), Graphical User Interfaces (GUI), and batch interfaces to allow direct user control of system activities.\n\n2. **Program Execution:**\n   - The OS loads program instructions and data into main memory, initializes hardware contexts and runtime stacks, allocates resources, and manages execution to normal termination or error handling.\n\n3. **I/O Operations:**\n   - Hides device-specific controller details behind standardized system-call abstractions (e.g., read, write, ioctl), providing buffering, caching, and spooling to optimize I/O throughput.\n\n4. **File-System Manipulation:**\n   - Manages directories, files, block allocations on storage media, access permissions, and navigation (create, delete, read, write, search).\n\n5. **Interprocess Communications (IPC):**\n   - Enables processes to exchange information on the same machine or over a network via shared memory or message passing (pipes, sockets, queues).\n\n6. **Error Detection & Handling:**\n   - Continuously monitors CPU, memory parity, I/O connection, and program violations (arithmetic overflow, illegal memory access) to maintain system stability without catastrophic crashes.\n\n7. **Resource Allocation:**\n   - Dynamically manages multi-user resource contention for CPU time slices, main memory partitions, storage, and peripheral devices.\n\n8. **Accounting, Protection, and Security:**\n   - Tracks system usage metrics for billing and performance profiling, ensuring that all access to system resources is strictly authenticated and authorized.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Operating-System Services"
+    },
+    {
+      "question_number": "21. b.",
+      "question_text": "Write a note on Monolithic, Layered and microkernel OS structure and discuss pros and cons for the same.",
+      "marks": 8,
+      "answer": "### Operating System Structures: Monolithic, Layered, and Microkernel\n\n#### 1. Monolithic Architecture:\n- **Structure:** All OS components (kernel core, scheduler, memory manager, file systems, device drivers, network stacks) reside in a single large address space in kernel mode.\n- **Pros:** Maximum execution performance and minimal function-call overhead between subsystems.\n- **Cons:** Poor fault isolation; a single bug in any third-party driver can crash the entire operating system. Difficult to maintain and verify.\n\n#### 2. Layered Architecture:\n- **Structure:** The OS is decomposed into hierarchical layers ($L_0$ to $L_N$), where Layer 0 represents hardware and Layer $N$ represents user interfaces. Each layer is constructed strictly on top of lower-level interfaces.\n- **Pros:** Simplicity of construction and debugging. Each layer can be tested and verified independently.\n- **Cons:** Difficult to define clean layer ordering; performance penalty from cascading function-call parameters across multiple layer boundaries.\n\n#### 3. Microkernel Architecture:\n- **Structure:** Retains only minimal core mechanisms (IPC, basic virtual memory paging, low-level thread scheduling) inside kernel mode. Non-essential services (file system, device drivers, networking) run as user-space server processes communicating via message passing.\n- **Pros:** High reliability, security, and extensibility. A failure in a user-space file server does not bring down the kernel.\n- **Cons:** Noticeable performance overhead caused by frequent user-to-kernel context switching and message serialization during IPC.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Operating-System Structure"
+    },
+    {
+      "question_number": "22. a.",
+      "question_text": "Explain the Process Control Block (PCB) and its significance in process management. What are the key attributes stored in a PCB?",
+      "marks": 8,
+      "answer": "### Process Control Block (PCB)\n\nThe Process Control Block (also known as a Task Control Block) is the primary data structure maintained by the OS kernel for each active process. It serves as the physical manifestation of a process in memory.\n\n#### Key Attributes Stored in a PCB:\n1. **Process State:** Current state of the process (New, Ready, Running, Waiting/Blocked, Terminated).\n2. **Program Counter (PC):** Points to the memory address of the next machine instruction to be executed by this process.\n3. **CPU Registers:** Saved context of accumulators, index registers, stack pointers, and general-purpose registers when the process is interrupted.\n4. **CPU-Scheduling Information:** Process priority, pointers to scheduling queues, and scheduling parameters.\n5. **Memory-Management Information:** Value of base and limit registers, page tables, or segment tables depending on the memory architecture.\n6. **Accounting Information:** Amount of CPU time utilized, real-time elapsed, time limits, and account/user identification.\n7. **I/O Status Information:** List of open file descriptors, allocated I/O devices, and outstanding pending I/O requests.\n\n#### Significance in Process Management:\nDuring a CPU context switch, the kernel suspends the currently running process by saving its entire CPU hardware state into its PCB, and then loads the register values of the next scheduled process from its respective PCB. This provides complete state preservation for seamless multiprogramming.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Process Concept"
+    },
+    {
+      "question_number": "22. b.",
+      "question_text": "What is the Critical-Section Problem? Explain Peterson's Solution and how it ensures mutual exclusion in process synchronization.",
+      "marks": 8,
+      "answer": "### The Critical-Section Problem\n\nA critical section is a segment of code in which a process accesses and modifies shared variables, memory, or tables. The Critical-Section problem requires designing a protocol so that cooperating processes execute safely without race conditions.\n\n#### Requirements for a Valid Solution:\n1. **Mutual Exclusion:** If process $P_i$ is executing in its critical section, no other processes can be executing in their critical sections.\n2. **Progress:** If no process is executing in its critical section and some processes want to enter, only those processes not executing in their remainder section can participate in deciding who enters next.\n3. **Bounded Waiting:** There must be a bound on the number of times other processes are allowed to enter their critical sections after a process has requested entry.\n\n#### Peterson's Solution (for 2 processes, $P_0$ and $P_1$):\nPeterson's algorithm utilizes two shared variables:\n```c\nint turn;\nboolean flag[2];\n```\n- `flag[i] = true;` indicates process $i$ is ready to enter.\n- `turn = j;` yields priority to the other process $j$.\n\n**Algorithm for Process $P_i$ ($j = 1 - i$):**\n```c\ndo {\n    flag[i] = true;\n    turn = j;\n    while (flag[j] && turn == j);\n    \n    // CRITICAL SECTION\n    \n    flag[i] = false;\n    \n    // REMAINDER SECTION\n} while (true);\n```\n\n#### Proof of Correctness:\n- **Mutual Exclusion:** For both processes to be in the critical section, `flag[0] == true` and `flag[1] == true`. However, `turn` can only hold one value ($0$ or $1$) at any instant. Thus, one process must remain blocked in the `while` loop.\n- **Progress and Bounded Waiting:** A process exiting sets `flag[i] = false`, immediately freeing the waiting process to enter after at most one turn.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Process Synchronization"
+    },
+    {
+      "question_number": "23. a.",
+      "question_text": "Discuss the concept of real-time CPU scheduling. How do real-time scheduling algorithms differ from traditional scheduling algorithms, and what challenges are involved in real-time scheduling?",
+      "marks": 8,
+      "answer": "### Real-Time CPU Scheduling\n\nReal-time CPU scheduling coordinates task execution in systems where correctness depends not only on logical output but also on meeting strict timing constraints (deadlines).\n\n#### Classification:\n1. **Hard Real-Time Systems:** Critical tasks must complete within their assigned deadlines; missing a deadline constitutes total system failure (e.g. flight control, pacemaker).\n2. **Soft Real-Time Systems:** Deadlines are desirable; missing a deadline degrades quality of service but does not cause catastrophic failure (e.g. video streaming).\n\n#### Differences from Traditional Scheduling:\n- **Goal:** Traditional scheduling optimizes fairness, throughput, and average response time (e.g., Round Robin, CFS). Real-time scheduling optimizes predictability and deadline satisfaction (e.g., Rate-Monotonic Scheduling [RMS], Earliest-Deadline-First [EDF]).\n- **Determinism:** Real-time scheduling relies on predictable, bounded execution times and low dispatch latencies.\n\n#### Challenges in Real-Time Scheduling:\n1. **Interrupt Latency:** Minimizing the time between receiving a hardware interrupt and dispatching the interrupt service routine (ISR).\n2. **Dispatch Latency:** Time taken to preempt the currently running kernel task and context-switch to the real-time process.\n3. **Priority Inversion:** Occurs when a high-priority task is blocked waiting for a lock held by a low-priority task, which is preempted by a medium-priority task. Solved using Priority Inheritance Protocols.\n4. **Task Admission & Schedulability:** Ensuring total CPU utilization $\\sum \\frac{C_i}{T_i} \\le 1$ can be guaranteed mathematically before admitting periodic tasks.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Real-Time CPU Scheduling"
+    },
+    {
+      "question_number": "23. b.",
+      "question_text": "What are the necessary conditions for a deadlock to occur? Explain different methods for handling deadlocks, including prevention, avoidance, and detection.",
+      "marks": 8,
+      "answer": "### Deadlock Conditions and Handling Methods\n\nA deadlock occurs when a set of processes are blocked because each process holds resources and waits for other resources held by other processes in the set.\n\n#### Four Coffman Necessary Conditions:\n1. **Mutual Exclusion:** At least one resource must be held in a non-shareable mode.\n2. **Hold and Wait:** A process must currently hold at least one resource and be waiting to acquire additional resources held by other processes.\n3. **No Preemption:** Resources cannot be forcibly preempted; they are released only voluntarily by the holding process.\n4. **Circular Wait:** A closed chain of processes exists: $P_0 \\rightarrow P_1 \\rightarrow P_2 \\dots \\rightarrow P_0$, where each process waits for a resource held by the next.\n\n#### Deadlock Handling Methods:\n1. **Deadlock Prevention:**\n   - Eliminates deadlocks by negating at least one necessary condition:\n     - Prevent Hold & Wait: Require processes to request all resources at once.\n     - Allow Preemption: Preempt held resources if a new request cannot be satisfied.\n     - Prevent Circular Wait: Impose a strict global numerical ordering on all resources.\n2. **Deadlock Avoidance:**\n   - Uses advance dynamic knowledge of maximum resource demands (e.g. Banker's Algorithm) to evaluate whether granting a request keeps the system in a safe state.\n3. **Deadlock Detection & Recovery:**\n   - Permits deadlocks to happen, invokes detection algorithms (checking for cycles in Resource Allocation Graphs / Wait-for Graphs), and recovers by process termination or resource preemption.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Deadlocks"
+    },
+    {
+      "question_number": "24. a.",
+      "question_text": "Explain the concept of paging and segmentation in memory management. What are their advantages and disadvantages?",
+      "marks": 8,
+      "answer": "### Paging and Segmentation\n\n#### 1. Paging:\n- **Concept:** Physical memory is divided into fixed-sized blocks called **frames**, and logical address space is divided into same-sized blocks called **pages**. The OS maintains a page table mapping each logical page to a physical frame.\n- **Advantages:**\n  - Completely eliminates **external fragmentation**.\n  - Simplifies memory allocation and protection.\n  - Supports demand paging in virtual memory.\n- **Disadvantages:**\n  - Suffers from **internal fragmentation** (on average, half a page per process).\n  - Page table lookups add memory access overhead (mitigated by TLBs).\n\n#### 2. Segmentation:\n- **Concept:** Supports the user and compiler view of memory. Address space is split into variable-length logical units called **segments** (e.g. code, stack, data, heap, subroutine). A segment table stores the base physical address and limit length of each segment.\n- **Advantages:**\n  - Closely matches program modular structure, making code/data sharing and protection straightforward.\n  - Dynamic segment growth is natural.\n- **Disadvantages:**\n  - Leads to severe **external fragmentation** as segments are allocated and freed, requiring expensive memory compaction.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Memory Management"
+    },
+    {
+      "question_number": "24. b.",
+      "question_text": "Describe different disk scheduling algorithms used in operating systems.",
+      "marks": 8,
+      "answer": "### Disk Scheduling Algorithms\n\nDisk scheduling minimizes seek time (the time taken for the disk arm to move the read/write head to the desired cylinder) and maximizes bandwidth:\n\n1. **First-Come, First-Served (FCFS):**\n   - Serves requests in arrival order.\n   - *Pros:* Completely fair, no starvation.\n   - *Cons:* Heavy head movement across cylinders, high average seek time.\n\n2. **Shortest Seek Time First (SSTF):**\n   - Selects the request with the minimum seek distance from current head position.\n   - *Pros:* Substantial seek time reduction compared to FCFS.\n   - *Cons:* Can cause starvation for peripheral cylinder requests.\n\n3. **SCAN (Elevator Algorithm):**\n   - Head moves in one direction servicing all requests until it reaches the physical end of the disk, then reverses direction servicing requests on the way back.\n   - *Pros:* Prevents starvation, predictable seek behavior.\n   - *Cons:* Requests at the far end wait longer as the head reverses.\n\n4. **C-SCAN (Circular SCAN):**\n   - Head moves in one direction to the disk end, then immediately jumps back to the opposite end without servicing requests on the return trip, restarting the sweep.\n   - *Pros:* Provides uniform wait time across all cylinders.\n\n5. **LOOK and C-LOOK:**\n   - Enhanced versions of SCAN/C-SCAN where the head reverses or jumps immediately upon reaching the last pending request in that direction, rather than traveling all the way to the physical boundary (0 or 199).",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Disk Scheduling"
+    },
+    {
+      "question_number": "25. a.",
+      "question_text": "Explain the goals and principles of protection in an operating system. How does protection help in ensuring system security and efficient resource utilization?",
+      "marks": 8,
+      "answer": "### Goals and Principles of Protection\n\n#### Goals of Protection:\n1. Ensure that each active program component executes only in authorized domains.\n2. Prevent inadvertent or intentional interference between processes sharing memory and resources.\n3. Guarantee system integrity, availability, and user privacy.\n\n#### Key Principles of Protection:\n1. **Principle of Least Privilege:** Users and programs must receive only the minimum access rights strictly required to complete their designated task.\n2. **Separation of Policy and Mechanism:** Mechanisms dictate *how* access is controlled (e.g. access matrices, capability lists), while policies determine *which* access is granted. This allows policy updates without rewriting kernel code.\n3. **Domain of Protection:** An execution domain defines the set of object-right pairs $\\langle Object, \\{Rights\\} \\rangle$ that a process can invoke at any time.\n\n#### Role in Security and Resource Utilization:\n- **Security:** Strict protection enforces domain boundaries, preventing malware, buffer overflows, and unauthorized access to kernel memory and system files.\n- **Efficient Utilization:** Prevents rogue processes from monopolizing hardware or corrupting shared structures, ensuring deterministic, orderly resource sharing.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Goals of Protection"
+    },
+    {
+      "question_number": "25. b.",
+      "question_text": "Explain with example Threats to Protection and Security.",
+      "marks": 8,
+      "answer": "### Threats to Protection and Security\n\nOperating system threats generally fall into program threats and system/network threats:\n\n#### 1. Program Threats (Rogue Software):\n- **Trojan Horse:** Software that appears benign (e.g. calculator app) but covertly executes unauthorized actions, such as capturing passwords or exfiltrating files.\n- **Trap Door / Backdoor:** An undocumented entry point left by a developer that bypasses normal security authentication checks.\n- **Logic Bomb:** Malicious code designed to execute when specific conditions are triggered (e.g., deleting financial records on a specific date).\n- **Buffer Overflow:** Occurs when unvalidated user input exceeds allocated buffer size, overwriting the return address on the stack to execute arbitrary injected shellcode.\n- **Viruses and Worms:** Self-replicating code that infects host files (Virus) or propagates autonomously over networks (Worm) exploiting vulnerabilities.\n\n#### 2. System and Network Threats:\n- **Denial of Service (DoS / DDoS):** Flooding the system with bogus traffic or exhausting kernel connection pools to deny legitimate users access.\n- **Man-in-the-Middle (MitM) Attacks:** Intercepting and modifying communication between two parties without their knowledge.\n- **Port Scanning & Sniffing:** Passively capturing network packets to extract plaintext credentials and map vulnerable ports.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Program Threats"
+    },
+    {
+      "question_number": "26",
+      "question_text": "Consider four processes with the length of CPU burst time, Arrival time and Priority (small value means high priority):\n| PROCESS | BURST TIME | ARRIVAL TIME | PRIORITY TIME |\n|---|---|---|---|\n| P1 | 40 | 0 | 2 |\n| P2 | 55 | 15 | 4 |\n| P3 | 35 | 15 | 1 |\n| P4 | 10 | 35 | 3 |\n\n(i) Create Gantt charts illustrating the execution of these processes using FCFS, non preemptive SJF, priority scheduling and Round Robin scheduling (quantum = 5 ms) algorithms for this set of processes.\n(ii) Calculate the turnaround time for process P3 under each of the above algorithms.\n(iii) Calculate average waiting time for each algorithm and find out which algorithm would give the minimum average waiting time.",
+      "marks": 15,
+      "answer": "### Complete Calculations and Gantt Charts\n\nGiven Process Data:\n- $P_1$: Arrival $= 0$, Burst $= 40$, Priority $= 2$\n- $P_2$: Arrival $= 15$, Burst $= 55$, Priority $= 4$\n- $P_3$: Arrival $= 15$, Burst $= 35$, Priority $= 1$ (Highest priority)\n- $P_4$: Arrival $= 35$, Burst $= 10$, Priority $= 3$\n\n---\n\n### (i) Gantt Charts & Execution Schedules\n\n#### 1. First-Come, First-Served (FCFS):\n- At $t = 0$: $P_1$ arrives and executes to completion ($t = 40$).\n- At $t = 40$: Ready queue has $P_2$ (arrived at 15), $P_3$ (arrived at 15), and $P_4$ (arrived at 35). $P_2$ executes next ($t = 40$ to $95$).\n- At $t = 95$: $P_3$ executes ($t = 95$ to $130$).\n- At $t = 130$: $P_4$ executes ($t = 130$ to $140$).\n\n**Gantt Chart (FCFS):**\n```text\n|    P1    |        P2        |      P3      |  P4  |\n0         40                 95             130    140\n```\n- Completion Times: $P_1 = 40$, $P_2 = 95$, $P_3 = 130$, $P_4 = 140$\n- Turnaround Times ($\\text{TAT} = \\text{CT} - \\text{AT}$): $P_1 = 40$, $P_2 = 80$, $P_3 = 115$, $P_4 = 105$\n- Waiting Times ($\\text{WT} = \\text{TAT} - \\text{BT}$): $P_1 = 0$, $P_2 = 25$, $P_3 = 80$, $P_4 = 95$\n- **Average Waiting Time (FCFS):** $\\frac{0 + 25 + 80 + 95}{4} = \\frac{200}{4} = 50.0\\text{ ms}$\n\n---\n\n#### 2. Non-Preemptive Shortest Job First (SJF):\n- At $t = 0$: Only $P_1$ is available; executes from $t = 0$ to $40$.\n- At $t = 40$: Available processes are $P_2$ (BT=55), $P_3$ (BT=35), $P_4$ (BT=10). Shortest burst is $P_4$ (10).\n- $P_4$ executes from $t = 40$ to $50$.\n- At $t = 50$: Shortest remaining is $P_3$ (35); executes from $t = 50$ to $85$.\n- At $t = 85$: $P_2$ (55) executes from $t = 85$ to $140$.\n\n**Gantt Chart (SJF):**\n```text\n|    P1    |  P4  |      P3      |        P2        |\n0         40     50             85                140\n```\n- Completion Times: $P_1 = 40$, $P_4 = 50$, $P_3 = 85$, $P_2 = 140$\n- Turnaround Times: $P_1 = 40$, $P_2 = 125$, $P_3 = 70$, $P_4 = 15$\n- Waiting Times: $P_1 = 0$, $P_2 = 70$, $P_3 = 35$, $P_4 = 5$\n- **Average Waiting Time (SJF):** $\\frac{0 + 70 + 35 + 5}{4} = \\frac{110}{4} = 27.5\\text{ ms}$\n\n---\n\n#### 3. Priority Scheduling (Non-Preemptive):\n- At $t = 0$: $P_1$ runs from $t = 0$ to $40$.\n- At $t = 40$: Ready processes: $P_3$ (Priority 1), $P_4$ (Priority 3), $P_2$ (Priority 4). Highest priority is $P_3$.\n- $P_3$ executes from $t = 40$ to $75$.\n- At $t = 75$: Highest priority remaining is $P_4$ (Priority 3); runs from $t = 75$ to $85$.\n- At $t = 85$: $P_2$ (Priority 4) runs from $t = 85$ to $140$.\n\n**Gantt Chart (Priority):**\n```text\n|    P1    |      P3      |  P4  |        P2        |\n0         40             75     85                140\n```\n- Completion Times: $P_1 = 40$, $P_3 = 75$, $P_4 = 85$, $P_2 = 140$\n- Turnaround Times: $P_1 = 40$, $P_2 = 125$, $P_3 = 60$, $P_4 = 50$\n- Waiting Times: $P_1 = 0$, $P_2 = 70$, $P_3 = 25$, $P_4 = 40$\n- **Average Waiting Time (Priority):** $\\frac{0 + 70 + 25 + 40}{4} = \\frac{135}{4} = 33.75\\text{ ms}$\n\n---\n\n#### 4. Round Robin Scheduling (Quantum = 5 ms):\nProcesses are rotated every 5 ms in arrival order:\n- $P_1$ runs slices until $t = 15$; $P_2, P_3$ arrive. At $t = 35$, $P_4$ arrives.\n- Total execution cycles alternate through the ready queue until completion:\n  - $P_4$ completes at $t = 70$\n  - $P_1$ completes at $t = 100$\n  - $P_3$ completes at $t = 120$\n  - $P_2$ completes at $t = 140$\n\n**Gantt Chart (Round Robin Summary):**\n```text\n|P1|P1|P1|P2|P3|P1|P2|P3|P4|P1|P2|P3|P4|P1|P2|P3|P1|P2|P3|P1|P2|P3|P1|P2|P3|P2|P2|P2|\n0  5  10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100...                   140\n```\n- Completion Times: $P_1 = 100$, $P_2 = 140$, $P_3 = 120$, $P_4 = 70$\n- Turnaround Times: $P_1 = 100 - 0 = 100$, $P_2 = 140 - 15 = 125$, $P_3 = 120 - 15 = 105$, $P_4 = 70 - 35 = 35$\n- Waiting Times: $P_1 = 60$, $P_2 = 70$, $P_3 = 70$, $P_4 = 25$\n- **Average Waiting Time (RR):** $\\frac{60 + 70 + 70 + 25}{4} = \\frac{225}{4} = 56.25\\text{ ms}$\n\n---\n\n### (ii) Turnaround Time for Process P3:\n- **FCFS:** $\\text{TAT}(P_3) = 130 - 15 = \\mathbf{115\\text{ ms}}$\n- **SJF:** $\\text{TAT}(P_3) = 85 - 15 = \\mathbf{70\\text{ ms}}$\n- **Priority Scheduling:** $\\text{TAT}(P_3) = 75 - 15 = \\mathbf{60\\text{ ms}}$\n- **Round Robin ($q=5$):** $\\text{TAT}(P_3) = 120 - 15 = \\mathbf{105\\text{ ms}}$\n\n---\n\n### (iii) Average Waiting Times Comparison:\n- **FCFS:** $50.0\\text{ ms}$\n- **SJF:** $\\mathbf{27.5\\text{ ms}}$\n- **Priority:** $33.75\\text{ ms}$\n- **Round Robin:** $56.25\\text{ ms}$\n\n**Conclusion:** **Non-Preemptive SJF** provides the **minimum average waiting time (27.5 ms)**.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: CPU Scheduling"
+    },
+    {
+      "question_number": "27",
+      "question_text": "A disk has 200 cylinders, numbered from 0 to 199. The disk head is currently at cylinder 100. The following requests are in the queue:\n- Request 1: Cylinder 50\n- Request 2: Cylinder 120\n- Request 3: Cylinder 30\n- Request 4: Cylinder 180\n- Request 5: Cylinder 70\n\nUsing each of the following disk scheduling algorithms, determine the order in which the requests are serviced and the total distance traveled by the disk head:\n1. First-Come-First-Served (FCFS)\n2. Shortest-Seek-Time-First (SSTF)\n3. SCAN (Elevator Algorithm)\n4. C-SCAN (Circular SCAN)\n5. LOOK\n6. C-LOOK",
+      "marks": 15,
+      "answer": "### Disk Scheduling Calculations\n\nGiven Parameters:\n- Total Cylinders: $0$ to $199$\n- Initial Head Position: $100$\n- Request Queue: $[50, 120, 30, 180, 70]$\n\n---\n\n#### 1. First-Come, First-Served (FCFS):\n- **Service Order:** $100 \\rightarrow 50 \\rightarrow 120 \\rightarrow 30 \\rightarrow 180 \\rightarrow 70$\n- **Head Movement:**\n  - $|50 - 100| = 50$\n  - $|120 - 50| = 70$\n  - $|30 - 120| = 90$\n  - $|180 - 30| = 150$\n  - $|70 - 180| = 110$\n- **Total Distance:** $50 + 70 + 90 + 150 + 110 = \\mathbf{470\\text{ cylinders}}$\n\n---\n\n#### 2. Shortest-Seek-Time-First (SSTF):\nAt each step, select the closest unserviced request:\n- From $100$: Closest is $120$ (distance 20)\n- From $120$: Closest is $70$ (distance 50; distance to 180 is 60)\n- From $70$: Closest is $50$ (distance 20)\n- From $50$: Closest is $30$ (distance 20)\n- From $30$: Closest is $180$ (distance 150)\n- **Service Order:** $100 \\rightarrow 120 \\rightarrow 70 \\rightarrow 50 \\rightarrow 30 \\rightarrow 180$\n- **Head Movement:** $20 + 50 + 20 + 20 + 150 = \\mathbf{260\\text{ cylinders}}$\n\n---\n\n#### 3. SCAN (Elevator Algorithm - moving towards higher cylinders):\nHead sweeps to the higher boundary (199), then reverses towards cylinder 0:\n- **Service Order:** $100 \\rightarrow 120 \\rightarrow 180 \\rightarrow (199) \\rightarrow 70 \\rightarrow 50 \\rightarrow 30$\n- **Head Movement:**\n  - From $100$ to $199$: $199 - 100 = 99$\n  - From $199$ down to $30$: $199 - 30 = 169$\n- **Total Distance:** $99 + 169 = \\mathbf{268\\text{ cylinders}}$\n*(Note: If moving downwards first: $100 \\rightarrow 70 \\rightarrow 50 \\rightarrow 30 \\rightarrow 0 \\rightarrow 120 \\rightarrow 180 = 100 + 180 = 280\\text{ cylinders}$)*\n\n---\n\n#### 4. C-SCAN (Circular SCAN - moving towards higher cylinders):\nHead moves to upper boundary (199), jumps to cylinder 0 without servicing, then sweeps up to remaining requests:\n- **Service Order:** $100 \\rightarrow 120 \\rightarrow 180 \\rightarrow (199) \\rightarrow (0) \\rightarrow 30 \\rightarrow 50 \\rightarrow 70$\n- **Head Movement:**\n  - Up to $199$: $199 - 100 = 99$\n  - Return to $0$: $199 - 0 = 199$\n  - Up to $70$: $70 - 0 = 70$\n- **Total Distance:** $99 + 199 + 70 = \\mathbf{368\\text{ cylinders}}$\n*(If the return jump is not counted as seek distance, total = $99 + 70 = 169\\text{ cylinders}$)*\n\n---\n\n#### 5. LOOK (moving towards higher cylinders):\nSimilar to SCAN, but only travels as far as the final request in each direction (stops at 180 and 30, never going to 199 or 0):\n- **Service Order:** $100 \\rightarrow 120 \\rightarrow 180 \\rightarrow 70 \\rightarrow 50 \\rightarrow 30$\n- **Head Movement:**\n  - From $100$ to $180$: $180 - 100 = 80$\n  - From $180$ down to $30$: $180 - 30 = 150$\n- **Total Distance:** $80 + 150 = \\mathbf{230\\text{ cylinders}}$\n\n---\n\n#### 6. C-LOOK (moving towards higher cylinders):\nSimilar to C-SCAN, but only travels as far as the highest request (180), jumps to lowest request (30), and services upwards to 70:\n- **Service Order:** $100 \\rightarrow 120 \\rightarrow 180 \\rightarrow 30 \\rightarrow 50 \\rightarrow 70$\n- **Head Movement:**\n  - From $100$ to $180$: $180 - 100 = 80$\n  - Return jump to $30$: $180 - 30 = 150$\n  - From $30$ up to $70$: $70 - 30 = 40$\n- **Total Distance:** $80 + 150 + 40 = \\mathbf{270\\text{ cylinders}}$\n*(If return jump is excluded, total = $80 + 40 = 120\\text{ cylinders}$)*",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Disk Scheduling"
+    }
+  ]
 }
