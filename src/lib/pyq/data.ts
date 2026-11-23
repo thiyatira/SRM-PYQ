@@ -121,6 +121,11 @@ const COURSES: SemesterMeta[] = [
         name: "Operating Systems",
         title: "21CSC202J: Operating Systems",
       },
+      {
+        code: "21MAB201T",
+        name: "Transforms and Boundary Value Problems",
+        title: "21MAB201T: Transforms and Boundary Value Problems",
+      },
     ],
   },
   {

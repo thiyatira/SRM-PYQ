@@ -1,0 +1,443 @@
+{
+  "formal_filename": "2023-06_ET_18MAB201T_QP.json",
+  "paper_title": "B.Tech. DEGREE EXAMINATION, JUNE 2023 - Third Semester - 18MAB201T - TRANSFORMS AND BOUNDARY VALUE PROBLEMS",
+  "source": "2023-06 ET 18MAB201T",
+  "questions": [
+    {
+      "question_number": "1",
+      "question_text": "The order of the partial differential equation $\\frac{d^2y}{dx^2}+2y=\\left(\\frac{dy}{dx}\\right)^3$ is",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "The highest derivative appearing is $d^2y/dx^2$, so the order is 2. The printed equation is an ordinary differential equation.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "2",
+      "question_text": "The notation of the partial derivative $\\frac{\\partial^2 z}{\\partial y^2}$ is",
+      "options": [
+        "p",
+        "q",
+        "r",
+        "t"
+      ],
+      "correct_option": "D",
+      "marks": 1,
+      "answer": "In the standard notation $r=z_{xx}$, $s=z_{xy}$ and $t=z_{yy}$.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "3",
+      "question_text": "A solution which is obtained from complete integral by eliminating arbitrary constants is known as",
+      "options": [
+        "Complete integral",
+        "Singular integral",
+        "General integral",
+        "Particular integral"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "The singular integral is obtained as the envelope of the complete integral by eliminating its arbitrary constants using the corresponding parameter derivatives.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "4",
+      "question_text": "The PDE of the form $Pp+Qq=R$ is known as",
+      "options": [
+        "Laplace equation",
+        "Lagrange’s equation",
+        "Clairaut’s equation",
+        "Higher order equation"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "This is the standard first-order Lagrange linear equation, with auxiliary equations $dx/P=dy/Q=dz/R$.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "5",
+      "question_text": "$\\tan x$ is a periodic function with period",
+      "options": [
+        "$\\pi/2$",
+        "$\\pi$",
+        "$2\\pi$",
+        "$3\\pi$"
+      ],
+      "correct_option": "B,C,D",
+      "marks": 1,
+      "answer": "$\\tan(x+\\pi)=\\tan x$ wherever defined; $\\pi$ is its fundamental period. The listed $2\\pi$ and $3\\pi$ are also periods.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "6",
+      "question_text": "If $\\int_{-a}^{a} f(x)\\,dx=0$, then the function $f(x)$ is",
+      "options": [
+        "Odd",
+        "Even",
+        "Neither odd nor even",
+        "Periodic"
+      ],
+      "correct_option": null,
+      "marks": 1,
+      "answer": "Every integrable odd function has zero integral on a symmetric interval, which is the likely intended answer. The converse is false: for example $f(x)=x^2-a^2/3$ is even and also has zero integral, so the stated condition alone does not determine the answer.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "7",
+      "question_text": "If $f(x+T)=f(x)$, for all $x$ then the function $f(x)$ is called",
+      "options": [
+        "Odd",
+        "Even",
+        "Bounded",
+        "Periodic"
+      ],
+      "correct_option": "D",
+      "marks": 1,
+      "answer": "A nonzero $T$ satisfying $f(x+T)=f(x)$ is a period of $f$.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "8",
+      "question_text": "The value of $a_n$ in the Fourier series expansion of $f(x)=x^3$ in $(-l,l)$ is",
+      "options": [
+        "$\\pi/2$",
+        "$l/2$",
+        "$\\pi$",
+        "0"
+      ],
+      "correct_option": "D",
+      "marks": 1,
+      "answer": "$x^3\\cos(n\\pi x/l)$ is odd, so $a_n=l^{-1}\\int_{-l}^{l}x^3\\cos(n\\pi x/l)\\,dx=0$.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "9",
+      "question_text": "The one dimensional heat equation is",
+      "options": [
+        "$\\frac{\\partial^2 y}{\\partial t^2}=\\alpha^2\\frac{\\partial^2 y}{\\partial x^2}$",
+        "$\\frac{\\partial u}{\\partial t}=\\alpha^2\\frac{\\partial^2u}{\\partial x^2}$",
+        "$\\frac{\\partial^2u}{\\partial t^2}=\\alpha^2\\frac{\\partial^2u}{\\partial x^2}$",
+        "$\\frac{\\partial^2 y}{\\partial x^2}=\\alpha^2\\frac{\\partial^2y}{\\partial t^2}$"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "The heat equation is first order in time and second order in space: $u_t=\\alpha^2u_{xx}$.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "10",
+      "question_text": "In one dimensional wave equation, $\\alpha^2$ stands for",
+      "options": [
+        "$K/\\rho C$",
+        "$T/m$",
+        "$\\rho C/K$",
+        "$K/\\rho$"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "For a stretched string, $y_{tt}=(T/m)y_{xx}$, where $T$ is tension and $m$ is mass per unit length.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "11",
+      "question_text": "The classification of the PDE $u_{xx}-2u_{xy}+u_{yy}=x+y$ is",
+      "options": [
+        "Elliptic",
+        "Parabolic",
+        "Hyperbolic",
+        "Both parabolic and hyperbolic"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "Here $A=1$, $2B=-2$, $C=1$, so $B^2-AC=0$ and the equation is parabolic.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "12",
+      "question_text": "How many initial and boundary conditions are required to solve one dimensional wave equation",
+      "options": [
+        "Two",
+        "Three",
+        "Four",
+        "Five"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "On a finite interval, two initial conditions specify displacement and velocity, and two boundary conditions specify the behavior at the two ends.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "13",
+      "question_text": "If $F[f(x)]=F(s)$, then $F[f(x+a)]=$",
+      "options": [
+        "$e^{-iax}F(x)$",
+        "$e^{+iax}F(x)$",
+        "$e^{+ias}F(s)$",
+        "$e^{-ias}F(s)$"
+      ],
+      "correct_option": "D",
+      "marks": 1,
+      "answer": "With the convention $F(s)=\\int_{-\\infty}^{\\infty}f(x)e^{isx}\\,dx$, put $u=x+a$ to get $e^{-ias}F(s)$. The opposite Fourier sign convention gives option C.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "14",
+      "question_text": "The Fourier cosine transform of $e^{-ax}$, $a>0$ is",
+      "options": [
+        "$\\sqrt{\\frac{\\pi}{2}}\\left(\\frac{a}{s^2+a^2}\\right)$",
+        "$\\sqrt{\\frac{2}{\\pi}}\\left(\\frac{a}{s^2+a^2}\\right)$",
+        "$\\sqrt{\\frac{\\pi}{2}}\\left(\\frac{s}{s^2+a^2}\\right)$",
+        "$\\sqrt{\\frac{2}{\\pi}}\\left(\\frac{s}{s^2+a^2}\\right)$"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "Using $F_c(s)=\\sqrt{2/\\pi}\\int_0^\\infty f(x)\\cos(sx)\\,dx$, the integral is $a/(a^2+s^2)$.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "15",
+      "question_text": "The value of $F_s[f(ax)]$ is",
+      "options": [
+        "$\\frac1a F_s\\left(\\frac{s}{a}\\right)$",
+        "$\\frac1a F_c\\left(\\frac{s}{a}\\right)$",
+        "$\\frac1a F_s\\left(\\frac{a}{s}\\right)$",
+        "$\\frac1s F_c\\left(\\frac{a}{s}\\right)$"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "For $a>0$, substituting $u=ax$ in the sine-transform integral gives $a^{-1}F_s(s/a)$.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "16",
+      "question_text": "The value of $F_c[f(x)\\cos ax]$ is",
+      "options": [
+        "$\\frac12[F_s(s+a)+F_s(s-a)]$",
+        "$\\frac12[F_s(s+a)-F_s(s-a)]$",
+        "$\\frac12[F_c(s+a)+F_c(s-a)]$",
+        "$\\frac12[F_c(s+a)-F_c(s-a)]$"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "Apply $\\cos ax\\cos sx=\\frac12[\\cos((s+a)x)+\\cos((s-a)x)]$ inside the transform.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "17",
+      "question_text": "Z-transform of 5 is",
+      "options": [
+        "$\\frac{z}{z-1}$",
+        "$\\frac{z}{z-5}$",
+        "$\\frac{5z}{z-1}$",
+        "$\\frac{5z}{z-5}$"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "$\\sum_{n=0}^{\\infty}5z^{-n}=5z/(z-1)$ for $|z|>1$.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Z-Transforms"
+    },
+    {
+      "question_number": "18",
+      "question_text": "Z-transform of $f(n)=a^n$ is",
+      "options": [
+        "$\\frac{z}{z-a}$",
+        "$\\frac{z}{z+a}$",
+        "$\\frac{az}{z-1}$",
+        "$\\frac{az}{z-a}$"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "$\\sum_{n=0}^{\\infty}a^nz^{-n}=z/(z-a)$ for $|z|>|a|$.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Z-Transforms"
+    },
+    {
+      "question_number": "19",
+      "question_text": "Z-transform of $f(t)=t$ is",
+      "options": [
+        "$\\frac{z}{(z-1)^2}$",
+        "$\\frac{Tz}{(z-1)^2}$",
+        "$\\frac{z}{z-T}$",
+        "$\\frac{Tz}{z-T}$"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "Sampling at $t=nT$ gives $\\sum_{n\\ge0}nTz^{-n}=Tz/(z-1)^2$, for $|z|>1$.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Z-Transforms"
+    },
+    {
+      "question_number": "20",
+      "question_text": "The inverse Z-transform $F(z)=\\frac{z^2+z}{(z-1)^3}$",
+      "options": [
+        "$n$",
+        "$n^2$",
+        "$n(n-1)$",
+        "$n(n+1)$"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "Differentiating the geometric series gives $\\sum_{n\\ge0}n^2z^{-n}=z(z+1)/(z-1)^3$, for $|z|>1$.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Z-Transforms"
+    },
+    {
+      "question_number": "21.",
+      "question_text": "Form the PDE by eliminating the arbitrary function from $z=f(x^2+y^2)$.",
+      "marks": 4,
+      "answer": "Let $p=z_x=2xf\\prime(x^2+y^2)$ and $q=z_y=2yf\\prime(x^2+y^2)$. Eliminating $f\\prime$ gives $yp-xq=0$, or $y z_x-x z_y=0$.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "22.",
+      "question_text": "Find the Root Mean Square value of $f(x)=x$ in $(-l,l)$.",
+      "marks": 4,
+      "answer": "The RMS value is $\\sqrt{\\frac1{2l}\\int_{-l}^{l}x^2\\,dx}=\\sqrt{l^2/3}=l/\\sqrt3$ for $l>0$.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "23.",
+      "question_text": "What are the possible solutions of one dimensional heat equation?",
+      "marks": 4,
+      "answer": "For $u_t=\\alpha^2u_{xx}$, set $u=X(x)T(t)$, giving $X\\prime\\prime/X=T\\prime/(\\alpha^2T)=\\lambda$. If $\\lambda=-k^2<0$, $u=(A\\cos kx+B\\sin kx)e^{-\\alpha^2k^2t}$. If $\\lambda=0$, $u=A+Bx$. If $\\lambda=k^2>0$, $u=(Ae^{kx}+Be^{-kx})e^{\\alpha^2k^2t}$. Boundary and initial conditions select and combine these modes; for zero temperatures at $x=0,l$, $u=\\sum_{n\\ge1}b_n\\sin(n\\pi x/l)e^{-\\alpha^2n^2\\pi^2t/l^2}$.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "24.",
+      "question_text": "State and prove change of scale property for Fourier transform.",
+      "marks": 4,
+      "answer": "With $F(s)=\\frac1{\\sqrt{2\\pi}}\\int_{-\\infty}^{\\infty}f(x)e^{isx}\\,dx$ and real $a\\ne0$, $\\mathcal F\\{f(ax)\\}(s)=|a|^{-1}F(s/a)$. Put $u=ax$ in the integral. The Jacobian contributes $1/|a|$; for $a<0$ the reversed limits account for the absolute value. The same scaling holds for the opposite exponential convention.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "25.",
+      "question_text": "If $F(z)=\\frac{5z^2}{(z+1)(5z+1)}$, then find $f(0)$.",
+      "marks": 4,
+      "answer": "For the unilateral Z-transform, the initial-value theorem gives $f(0)=\\lim_{z\\to\\infty}F(z)=1$.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Z-Transforms"
+    },
+    {
+      "question_number": "26.",
+      "question_text": "Solve $p^2+q^2=npq$.",
+      "marks": 4,
+      "answer": "Write $p=z_x$, $q=z_y$ and regard $n$ as a constant. Factor as $(p-m_+q)(p-m_-q)=0$, where $m_\\pm=(n\\pm\\sqrt{n^2-4})/2$. Each real branch satisfies $z_x=m_\\pm z_y$ and has solution $z=\\phi(y+m_\\pm x)$ for arbitrary differentiable $\\phi$. For real solutions with $|n|<2$, the quadratic form vanishes only when $p=q=0$, so $z$ is locally constant. At $|n|=2$ the two branches coincide.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "27.",
+      "question_text": "A rod, 30 cm long has its ends A and B kept at $40^\\circ\\mathrm C$ and $70^\\circ\\mathrm C$ respectively, until steady state conditions prevail. Find $u(x)$ in the rod.",
+      "marks": 4,
+      "answer": "At steady state $u_{xx}=0$, so $u=A+Bx$. Taking $x=0$ at A, $u(0)=40$ and $u(30)=70$, hence $u(x)=40+x$ degrees Celsius, with $x$ measured in cm.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "28. a.",
+      "question_text": "Solve $(D^2+5DD\\prime+6D\\prime^2)z=\\cos(x+2y)+x^2y$.",
+      "marks": 12,
+      "answer": "With $D=\\partial_x$ and $D\\prime=\\partial_y$, the operator factors as $(D+2D\\prime)(D+3D\\prime)$. The complementary function is $\\phi_1(y-2x)+\\phi_2(y-3x)$. The cosine eigenvalue is $-(1+10+24)=-35$, giving $-\\cos(x+2y)/35$. Also $L(x^4y/12)=x^2y+5x^3/3$ and $L(x^5/12)=5x^3/3$. Thus $z=\\phi_1(y-2x)+\\phi_2(y-3x)-\\cos(x+2y)/35+(x^4y-x^5)/12$.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "28. b.",
+      "question_text": "Solve $(mz-ny)p+(nx-lz)q=ly-mx$.",
+      "marks": 12,
+      "answer": "The auxiliary equations are $dx/(mz-ny)=dy/(nx-lz)=dz/(ly-mx)$. Multipliers $(x,y,z)$ give $d(x^2+y^2+z^2)=0$, and multipliers $(l,m,n)$ give $d(lx+my+nz)=0$. Hence the general integral is $\\Phi(x^2+y^2+z^2,lx+my+nz)=0$ for arbitrary $\\Phi$, wherever the two first integrals are independent.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "29. a.",
+      "question_text": "Find the Fourier series of $f(x)=\\begin{cases}1+\\frac{2x}{l},&-l\\le x\\le0,\\\\1-\\frac{2x}{l},&0\\le x\\le l\\end{cases}$ in $(-l,l)$ and deduce that $\\frac1{1^2}+\\frac1{3^2}+\\frac1{5^2}+\\cdots=\\frac{\\pi^2}{8}$.",
+      "marks": 12,
+      "answer": "The function is even. Its mean is zero, $b_n=0$, and $a_n=\\frac2l\\int_0^l(1-2x/l)\\cos(n\\pi x/l)\\,dx=\\frac{4(1-(-1)^n)}{n^2\\pi^2}$. Therefore $f(x)=\\frac8{\\pi^2}\\sum_{k=0}^{\\infty}\\frac{\\cos((2k+1)\\pi x/l)}{(2k+1)^2}$. At $x=0$, $f(0)=1$, giving the stated sum $\\pi^2/8$.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "29. b.",
+      "question_text": "Find the Fourier series upto second harmonics from the following data: $x: 0,1,2,3,4,5$; $f(x): 9,18,24,28,26,20$.",
+      "marks": 12,
+      "answer": "Treat the six equally spaced values as one period, so $\\theta=2\\pi x/6=\\pi x/3$. The discrete coefficients are $a_0/2=125/6$, $a_1=-25/3$, $b_1=-2\\sqrt3/3$, $a_2=-7/3$, and $b_2=0$, using $a_k=\\frac13\\sum_{j=0}^5 f_j\\cos(2\\pi kj/6)$ and the analogous formula for $b_k$. Thus, through the second harmonic, $f(x)\\approx\\frac{125}{6}-\\frac{25}{3}\\cos(\\pi x/3)-\\frac{2\\sqrt3}{3}\\sin(\\pi x/3)-\\frac73\\cos(2\\pi x/3)$.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "30. a.",
+      "question_text": "A tightly stretched string with fixed end points $x=0$ and $x=l$ is initially at rest in its equilibrium position. If it is set vibrating giving each point a velocity $30\\sin\\frac{\\pi x}{l}$, find the displacement function $y(x,t)$.",
+      "marks": 12,
+      "answer": "Let the wave equation be $y_{tt}=c^2y_{xx}$. Zero initial displacement leaves sine-in-time modes, and the given initial velocity excites only the first mode. Therefore $y(x,t)=\\frac{30l}{\\pi c}\\sin(\\pi x/l)\\sin(\\pi ct/l)$. It satisfies the fixed endpoints, $y(x,0)=0$ and $y_t(x,0)=30\\sin(\\pi x/l)$.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "30. b.",
+      "question_text": "A rod, 30 cm. long, has its ends A and B kept at $20^\\circ\\mathrm C$ and $80^\\circ\\mathrm C$ respectively, until steady state conditions prevail. The temperature at each end is then suddenly reduced to $0^\\circ\\mathrm C$ and kept so. Find the resulting temperature function $u(x,t)$.",
+      "marks": 12,
+      "answer": "Take $x=0$ at A and $u_t=\\alpha^2u_{xx}$. The initial steady profile is $u(x,0)=20+2x$, and the subsequent endpoint temperatures are zero. Expanding in sine modes, $b_n=\\frac2{30}\\int_0^{30}(20+2x)\\sin(n\\pi x/30)\\,dx=\\frac{40-160(-1)^n}{n\\pi}$. Hence $u(x,t)=\\sum_{n=1}^{\\infty}\\frac{40-160(-1)^n}{n\\pi}\\sin(n\\pi x/30)e^{-\\alpha^2n^2\\pi^2t/900}$. The initial values at the endpoints are incompatible with the sudden boundary change, as expected.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "31. a.",
+      "question_text": "Find the Fourier transform of $f(x)=\\begin{cases}a^2-x^2,&|x|\\le a,\\\\0,&|x|>a\\end{cases}$ and hence deduce that $\\int_0^\\infty\\frac{\\sin t-t\\cos t}{t^3}\\,dt=\\frac\\pi4$.",
+      "marks": 12,
+      "answer": "For $a>0$, using $\\widehat f(s)=\\int_{-\\infty}^{\\infty}f(x)e^{-isx}\\,dx$, evenness and integration by parts yield $\\widehat f(s)=4[\\sin(as)-as\\cos(as)]/s^3$, with continuous value $4a^3/3$ at $s=0$. Fourier inversion at $x=0$ gives $a^2=\\pi^{-1}\\int_0^\\infty\\widehat f(s)\\,ds$. Substituting $t=as$ gives $a^2=(4a^2/\\pi)\\int_0^\\infty(\\sin t-t\\cos t)/t^3\\,dt$, proving the result.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "31. b.",
+      "question_text": "Evaluate the following by using transforms methods: (i) $\\int_0^\\infty\\frac{x^2}{(x^2+a^2)(x^2+b^2)}\\,dx$; (ii) $\\int_0^\\infty\\frac{dx}{(x^2+a^2)(x^2+b^2)}$.",
+      "marks": 12,
+      "answer": "For $a,b>0$, use the normalized cosine transform $F_c[e^{-ax}](s)=\\sqrt{2/\\pi}\\,a/(a^2+s^2)$ and Parseval: $\\int_0^\\infty F_c[e^{-ax}]F_c[e^{-bx}]\\,ds=\\int_0^\\infty e^{-(a+b)x}\\,dx=1/(a+b)$. Thus (ii) is $\\pi/[2ab(a+b)]$. Since $s^2/(s^2+a^2)=1-a^2/(s^2+a^2)$, (i) equals $\\int_0^\\infty ds/(s^2+b^2)-a^2$(ii) $=\\pi/[2(a+b)]$. These formulas include $a=b$ by continuity.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "32. a.",
+      "question_text": "Find inverse Z-transform of $F(z)=\\frac{3z^2-18z+26}{(z-2)(z-3)(z-4)}$ by the method of partial fraction.",
+      "marks": 12,
+      "answer": "Partial fractions give $F(z)=1/(z-2)+1/(z-3)+1/(z-4)$. For the unilateral transform and $|z|>4$, $1/(z-a)=\\sum_{n=1}^\\infty a^{n-1}z^{-n}$. Consequently $f(0)=0$ and $f(n)=2^{n-1}+3^{n-1}+4^{n-1}$ for $n\\ge1$.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Z-Transforms"
+    },
+    {
+      "question_number": "32. b.",
+      "question_text": "Solve using Z-transform $y_{n+2}-3y_{n+1}+2y_n=2^n$, given $y_0=y_1=0$.",
+      "marks": 12,
+      "answer": "Let $Y(z)=\\sum_{n\\ge0}y_nz^{-n}$. The shift formulas and zero initial values give $(z^2-3z+2)Y(z)=z/(z-2)$, so $Y(z)=z/[(z-1)(z-2)^2]$. Decomposing into standard transforms, $Y(z)=z/(z-1)-z/(z-2)+z/(z-2)^2$. Thus $y_n=1-2^n+n2^{n-1}=1+(n-2)2^{n-1}$ for $n\\ge0$, satisfying both initial values and the recurrence.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Z-Transforms"
+    }
+  ]
+}

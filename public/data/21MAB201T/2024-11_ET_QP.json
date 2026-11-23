@@ -1,0 +1,403 @@
+{
+  "formal_filename": "2024-11_ET_QP.json",
+  "paper_title": "B.Tech. / M.Tech. (Integrated) DEGREE EXAMINATION, NOVEMBER 2024 - Third Semester - 21MAB201T - TRANSFORMS AND BOUNDARY VALUE PROBLEMS",
+  "source": "2024-11 ET",
+  "questions": [
+    {
+      "question_number": "1",
+      "question_text": "The partial differential equation formed by eliminating arbitrary constants in $z=ax+by$ is",
+      "options": [
+        "$z=px+qy$",
+        "$z=qx+py$",
+        "$z=px-qy$",
+        "$z=qx-py$"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "$p=z_x=a$ and $q=z_y=b$; substitution gives $z=xp+yq$.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "2",
+      "question_text": "The partial differential equation formed by eliminating arbitrary function in $z=f(xy)$ is",
+      "options": [
+        "$xp-yq=1$",
+        "$xp=yq$",
+        "$p+q=1$",
+        "$p-q=0$"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "$p=yf\\prime(xy)$ and $q=xf\\prime(xy)$, so $xp=yq$.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "3",
+      "question_text": "The solution which has number of arbitrary constants equal to number of independent variables is called",
+      "options": [
+        "general integral",
+        "complete integral",
+        "particular integral",
+        "singular integral"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "A complete integral of a first-order PDE in two independent variables contains two independent arbitrary constants.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "4",
+      "question_text": "The complete integral of $q=2py$ is",
+      "options": [
+        "$z=ax+ay^2+b$",
+        "$z=ax^2-ay^2+b$",
+        "$z=ax+by$",
+        "$z=2xy$"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "For $z=ax+ay^2+b$, $p=a$ and $q=2ay=2py$; $a,b$ are arbitrary.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "5",
+      "question_text": "The root mean square value of $f(x)=x$ in $(0,L)$ is",
+      "options": [
+        "$L^2/\\sqrt{3}$",
+        "$L/3$",
+        "1",
+        "$L/\\sqrt{3}$"
+      ],
+      "correct_option": "D",
+      "marks": 1,
+      "answer": "The root mean square is $\\sqrt{L^{-1}\\int_0^L x^2\\,dx}=L/\\sqrt{3}$ for $L>0$.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "6",
+      "question_text": "The value of the Fourier series of $f(x)=x$ in $0<x<2l$ at $x=0$ is",
+      "options": [
+        "0",
+        "$l$",
+        "1",
+        "$l/2$"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "The periodic extension has one-sided limits $0$ and $2l$ at the endpoint, so the series converges to their average $l$.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "7",
+      "question_text": "The Fourier coefficient $a_0$ in the Fourier series expansion of $f(x)=(\\pi-x)$ in $(0,2\\pi)$ is",
+      "options": [
+        "$1/\\pi$",
+        "1",
+        "0",
+        "$\\pi/2$"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "$a_0=\\pi^{-1}\\int_0^{2\\pi}(\\pi-x)\\,dx=0$.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "8",
+      "question_text": "In the Fourier series expansion of $f(x)=x^2$, $-\\pi<x<\\pi$, the value of $b_n$ is",
+      "options": [
+        "0",
+        "1",
+        "$1/n$",
+        "$1/n^2$"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "$x^2$ is even and $\\sin(nx)$ is odd, so $b_n=\\pi^{-1}\\int_{-\\pi}^{\\pi}x^2\\sin(nx)\\,dx=0$.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "9",
+      "question_text": "In the partial differential equation $\\frac{\\partial^2 y}{\\partial t^2}=a^2\\frac{\\partial^2 y}{\\partial x^2}$, $a^2$ stands for",
+      "options": [
+        "$T/m$",
+        "$\\kappa/c$",
+        "$m/T$",
+        "$kc$"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "The wave speed satisfies $a^2=T/m$, where $T$ is tension and $m$ is mass per unit length.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "10",
+      "question_text": "How many initial and boundary conditions are required to solve $\\frac{\\partial u}{\\partial t}=\\alpha^2\\frac{\\partial^2 u}{\\partial x^2}$?",
+      "options": [
+        "Four",
+        "Two",
+        "Three",
+        "Five"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "For a finite interval, the usual heat problem requires one initial condition and one boundary condition at each end, totaling three.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "11",
+      "question_text": "In one dimensional wave equation the tension T caused by stretching the string before fixing it at the end points is assumed to be",
+      "options": [
+        "Large",
+        "Decreasing",
+        "Constant",
+        "Zero"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "In the ideal small-displacement string model, tension is treated as constant.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "12",
+      "question_text": "The partial differential equation $\\frac{\\partial^2 z}{\\partial x^2}-5\\frac{\\partial^2 z}{\\partial y^2}=0$ is classified as",
+      "options": [
+        "Elliptic",
+        "parabolic",
+        "Hyperbolic",
+        "Circle"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "With $A=1$, $B=0$, $C=-5$ in $Az_{xx}+2Bz_{xy}+Cz_{yy}=0$, $B^2-AC=5>0$.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "13",
+      "question_text": "If $F(f(x))=F(s)$, then $F[f(x)\\cos ax]=$",
+      "options": [
+        "$\\frac12[F(s+a)*F(s-a)]$",
+        "$\\frac12[F(s+a)-F(s-a)]$",
+        "$\\frac12[F(s+a)+F(s-a)]$",
+        "$\\frac12[F(sa)+F(s+a)]$"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "Writing $\\cos ax=(e^{iax}+e^{-iax})/2$ shifts the transform in both directions and gives their half-sum.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "14",
+      "question_text": "If $F(f(x))=F(s)$, then $F(x^n f(x))=$",
+      "options": [
+        "$(-i)^n\\frac{d^n}{ds^n}F(s)$",
+        "$i^n\\frac{d^n}{ds^n}F(s)$",
+        "$(-i)\\frac{d^n}{ds^n}F(s)$",
+        "$\\frac{d^n}{ds^n}F(s)$"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "With the convention $F(s)=\\frac1{\\sqrt{2\\pi}}\\int_{-\\infty}^{\\infty}f(x)e^{isx}\\,dx$, differentiating $n$ times gives $F^{(n)}(s)=i^nF[x^nf(x)]$. With the opposite exponential convention the sign changes.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "15",
+      "question_text": "The Fourier cosine transform of $e^{-ax}$, $a>0$ is",
+      "options": [
+        "$\\sqrt{\\frac1\\pi}\\frac{a}{a^2+s^2}$",
+        "$\\sqrt{\\frac2\\pi}\\frac{a}{a^2+s^2}$",
+        "$\\sqrt{\\frac1\\pi}\\frac{s}{a^2+s^2}$",
+        "$\\sqrt{\\frac2\\pi}\\frac{s}{a^2+s^2}$"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "$F_c(s)=\\sqrt{2/\\pi}\\int_0^\\infty e^{-ax}\\cos(sx)\\,dx=\\sqrt{2/\\pi}\\,a/(a^2+s^2)$.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "16",
+      "question_text": "If $F_s(s),G_s(s)$ are the Fourier sine transforms of $f(x)$ and $g(x)$ respectively, then $\\int_0^\\infty f(x)g(x)\\,dx=$",
+      "options": [
+        "$\\int_0^\\infty F_s(s)G_s(s)\\,ds$",
+        "$\\int_{-\\infty}^\\infty F_s(s)G_s(s)\\,ds$",
+        "$\\sqrt{\\frac2\\pi}\\int_0^\\infty F_s(s)G_s(s)\\,ds$",
+        "$\\sqrt{\\frac2\\pi}\\int_{-\\infty}^\\infty F_s(s)G_s(s)\\,ds$"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "Parseval’s identity for the normalized Fourier sine transform gives equality of the two integrals over the positive half-line.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "17",
+      "question_text": "The value of $Z[(-2)^n]$ is",
+      "options": [
+        "$\\frac{z}{z+2}$",
+        "$\\frac{z}{z-2}$",
+        "$\\frac{z^2}{z+2}$",
+        "$\\frac{2}{z+2}$"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "The geometric series gives $\\sum_{n=0}^{\\infty}(-2)^nz^{-n}=z/(z+2)$ for $|z|>2$.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Z-Transforms"
+    },
+    {
+      "question_number": "18",
+      "question_text": "$Z[f(n)*g(n)]=$",
+      "options": [
+        "$F(z)G^{-1}(z)$",
+        "$F^{-1}(z)G^{-1}(z)$",
+        "$F(z)G(z)$",
+        "$F^{-1}(z)G(z)$"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "The Z-transform of the discrete convolution $\\sum_{k=0}^n f(k)g(n-k)$ is $F(z)G(z)$.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Z-Transforms"
+    },
+    {
+      "question_number": "19",
+      "question_text": "The value of $Z^{-1}\\left[\\frac{z}{(z-1)^2}\\right]$ is",
+      "options": [
+        "$n+1$",
+        "$n-1$",
+        "$n$",
+        "$1/n$"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "The standard transform $Z[n]=z/(z-1)^2$ follows by differentiating the geometric series.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Z-Transforms"
+    },
+    {
+      "question_number": "20",
+      "question_text": "The poles of $f(z)=\\frac{z^n}{(z-1)(z-2)}$ are",
+      "options": [
+        "$z=1,0$",
+        "$z=0,2$",
+        "$z=-1,-2$",
+        "$z=1,2$"
+      ],
+      "correct_option": "D",
+      "marks": 1,
+      "answer": "The denominator vanishes at $z=1$ and $z=2$; the numerator does not cancel either factor.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Z-Transforms"
+    },
+    {
+      "question_number": "21. a.",
+      "question_text": "Solve $x(y-z)p+y(z-x)q=z(x-y)$.",
+      "marks": 8,
+      "answer": "The characteristic equations are $\\frac{dx}{x(y-z)}=\\frac{dy}{y(z-x)}=\\frac{dz}{z(x-y)}$. Along them, $d(x+y+z)=0$ and $d(xyz)=0$, since the corresponding derivative sums vanish. Hence the general integral is $\\Phi(x+y+z,xyz)=0$, for arbitrary $\\Phi$.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "21. b.",
+      "question_text": "Solve $(D^2-2DD\\prime)z=e^{x+2y}+\\sin(2x+3y)$.",
+      "marks": 8,
+      "answer": "Here $D=\\partial/\\partial x$ and $D\\prime=\\partial/\\partial y$. The complementary function for $D(D-2D\\prime)$ is $\\phi(y)+\\psi(y+2x)$. The operator multiplies $e^{x+2y}$ by $1-4=-3$ and $\\sin(2x+3y)$ by $-4+12=8$. Thus $z=\\phi(y)+\\psi(y+2x)-\\frac13e^{x+2y}+\\frac18\\sin(2x+3y)$.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "22. a.",
+      "question_text": "Find the Fourier series for the function $f(x)=x^2$, $-\\pi<x<\\pi$. Hence find the value of $\\frac1{1^2}-\\frac1{2^2}+\\frac1{3^2}-\\frac1{4^2}+\\cdots$.",
+      "marks": 8,
+      "answer": "The function is even, so $b_n=0$. Integration gives $a_0=2\\pi^2/3$ and $a_n=4(-1)^n/n^2$. Hence $x^2=\\frac{\\pi^2}{3}+4\\sum_{n=1}^\\infty\\frac{(-1)^n\\cos(nx)}{n^2}$. At $x=0$, $0=\\pi^2/3-4\\sum_{n=1}^\\infty(-1)^{n-1}/n^2$, so the requested sum is $\\pi^2/12$.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "22. b.",
+      "question_text": "Find the half-range sine series for the function $f(x)=x(\\pi-x)$ in the interval $(0,\\pi)$ and hence deduce the value of $\\frac1{1^3}-\\frac1{3^3}+\\frac1{5^3}-\\frac1{7^3}+\\cdots$.",
+      "marks": 8,
+      "answer": "$b_n=\\frac2\\pi\\int_0^\\pi x(\\pi-x)\\sin(nx)\\,dx=\\frac{4(1-(-1)^n)}{\\pi n^3}$. Therefore $x(\\pi-x)=\\frac8\\pi\\sum_{k=0}^\\infty\\frac{\\sin((2k+1)x)}{(2k+1)^3}$. Setting $x=\\pi/2$ gives $\\pi^2/4=(8/\\pi)\\sum_{k=0}^\\infty(-1)^k/(2k+1)^3$, so the sum is $\\pi^3/32$.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "23. a.",
+      "question_text": "A tightly stretched string with fixed ends $x=0$ and $x=l$ is initially in a position $y(x,0)=\\sin^3(\\pi x/l)$. It is released from rest from this position, find the displacement of the string $y(x,t)$.",
+      "marks": 8,
+      "answer": "For $y_{tt}=c^2y_{xx}$ with fixed ends and zero initial velocity, each initial sine mode evolves by $\\cos(n\\pi ct/l)$. Since $\\sin^3\\theta=(3\\sin\\theta-\\sin3\\theta)/4$, the displacement is $y(x,t)=\\frac34\\sin(\\pi x/l)\\cos(\\pi ct/l)-\\frac14\\sin(3\\pi x/l)\\cos(3\\pi ct/l)$, where $c$ is the wave speed.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "23. b.",
+      "question_text": "Heat flows through a uniform rod of length $l$ which has its sides insulated and the temperature at the ends kept at zero. If the initial temperature at the interior points of the rod is given by $k(l-x)$, find the temperature distribution in the rod at time $t$.",
+      "marks": 8,
+      "answer": "For $u_t=\\alpha^2u_{xx}$, separation with $u(0,t)=u(l,t)=0$ gives $u=\\sum_{n\\ge1}b_n\\sin(n\\pi x/l)e^{-\\alpha^2n^2\\pi^2t/l^2}$. The initial coefficients are $b_n=\\frac{2k}{l}\\int_0^l(l-x)\\sin(n\\pi x/l)\\,dx=\\frac{2kl}{n\\pi}$. Thus $u(x,t)=\\frac{2kl}{\\pi}\\sum_{n=1}^\\infty\\frac{\\sin(n\\pi x/l)}{n}e^{-\\alpha^2n^2\\pi^2t/l^2}$. The initial profile is imposed on the interior; the endpoint value at $x=0$ is incompatible at $t=0$ but the boundary holds for $t>0$.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "24. a.",
+      "question_text": "Find the Fourier transforms of the function $f(x)=\\begin{cases}1&\\text{for }|x|<1,\\\\0&\\text{for }|x|>1\\end{cases}$ and hence evaluate $\\int_0^\\infty\\frac{\\sin x}{x}\\,dx$.",
+      "marks": 8,
+      "answer": "Using $F(s)=(2\\pi)^{-1/2}\\int_{-\\infty}^\\infty f(x)e^{isx}\\,dx$, direct integration gives $F(s)=\\sqrt{2/\\pi}\\,\\sin s/s$, with limiting value $\\sqrt{2/\\pi}$ at zero. Fourier inversion at $x=0$, where $f$ is continuous, yields $1=\\frac2\\pi\\int_0^\\infty\\sin s/s\\,ds$. Therefore the integral is $\\pi/2$.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "24. b.",
+      "question_text": "Evaluate $\\int_0^\\infty\\frac{x^2}{(x^2+a^2)(x^2+b^2)}\\,dx$, $(a,b>0)$ using transforms techniques.",
+      "marks": 8,
+      "answer": "The normalized sine transform of $e^{-at}$ is $F_s(s)=\\sqrt{2/\\pi}\\,s/(a^2+s^2)$, and similarly for $b$. Parseval’s identity gives $\\int_0^\\infty e^{-(a+b)t}\\,dt=\\frac2\\pi\\int_0^\\infty\\frac{s^2\\,ds}{(s^2+a^2)(s^2+b^2)}$. Thus the integral is $\\frac{\\pi}{2(a+b)}$, including $a=b$.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "25. a.",
+      "question_text": "Find (i) $Z(n^2)$, (ii) $Z(\\cos n\\theta)$.",
+      "marks": 8,
+      "answer": "Using $Z[f_n]=\\sum_{n=0}^\\infty f_n z^{-n}$ and differentiating the geometric series gives $Z(n^2)=\\frac{z(z+1)}{(z-1)^3}$, $|z|>1$. Taking the mean of the geometric transforms of $e^{\\pm in\\theta}$ gives $Z(\\cos n\\theta)=\\frac{z(z-\\cos\\theta)}{z^2-2z\\cos\\theta+1}$, $|z|>1$.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Z-Transforms"
+    },
+    {
+      "question_number": "25. b.",
+      "question_text": "Find $Z^{-1}\\left[\\frac{z^2}{(z-a)(z-b)}\\right]$, $a>b$ using convolution theorem.",
+      "marks": 8,
+      "answer": "Write the expression as $\\frac{z}{z-a}\\frac{z}{z-b}=Z[a^n]Z[b^n]$. The convolution theorem yields $\\sum_{k=0}^n a^k b^{n-k}=\\frac{a^{n+1}-b^{n+1}}{a-b}$ for $n\\ge0$, with the causal transform region $|z|>\\max(|a|,|b|)$.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Z-Transforms"
+    },
+    {
+      "question_number": "26.",
+      "question_text": "Compute the first three harmonics of the Fourier series for the following data: $x=0,\\frac\\pi3,\\frac{2\\pi}3,\\pi,\\frac{4\\pi}3,\\frac{5\\pi}3$ and corresponding $y=1.0,1.4,1.9,1.7,1.5,1.2$.",
+      "marks": 15,
+      "answer": "For six equally spaced values use $a_0=\\frac{2}{6}\\sum y_j$, $a_n=\\frac{2}{6}\\sum y_j\\cos(nx_j)$ and $b_n=\\frac{2}{6}\\sum y_j\\sin(nx_j)$. This gives $a_0=29/10$, $(a_1,b_1)=(-11/30,\\sqrt3/10)$ and $(a_2,b_2)=(-1/10,-\\sqrt3/30)$. The third harmonic lies at the Nyquist frequency: $b_3=0$ and the interpolating coefficient of $\\cos3x$ is $\\frac16\\sum(-1)^jy_j=1/60$. Thus the trigonometric interpolant is $y=\\frac{29}{20}-\\frac{11}{30}\\cos x+\\frac{\\sqrt3}{10}\\sin x-\\frac1{10}\\cos2x-\\frac{\\sqrt3}{30}\\sin2x+\\frac1{60}\\cos3x$. Six samples cannot independently determine a $\\sin3x$ term.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "27.",
+      "question_text": "(i) Solve the difference equation $y_{n+2}-7y_{n+1}+12y_n=2^n$ given $y_0=y_1=0$, using z-transforms. (8 Marks) (ii) Find the inverse Z-transform of $\\frac{z}{(z+1)^2}$ by long division method. (7 Marks)",
+      "marks": 15,
+      "answer": "(i) Put $Y(z)=Z[y_n]$. The initial values give $(z^2-7z+12)Y(z)=z/(z-2)$, so $Y(z)=\\frac{z}{(z-2)(z-3)(z-4)}=\\frac12\\frac{z}{z-2}-\\frac{z}{z-3}+\\frac12\\frac{z}{z-4}$. Hence $y_n=\\frac12 2^n-3^n+\\frac12 4^n$ for $n\\ge0$. (ii) Dividing in powers of $z^{-1}$ gives $\\frac{z}{(z+1)^2}=z^{-1}-2z^{-2}+3z^{-3}-4z^{-4}+\\cdots$. Thus $Z^{-1}$ is $n(-1)^{n-1}$ for $n\\ge1$, with value $0$ at $n=0$; the expansion is valid for $|z|>1$.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Z-Transforms"
+    }
+  ]
+}
