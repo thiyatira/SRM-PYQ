@@ -1,0 +1,443 @@
+{
+  "formal_filename": "2018-06_ET_MA1013_QP.json",
+  "paper_title": "B.Tech. DEGREE EXAMINATION, JUNE 2018 - MA1013 - FOURIER SERIES, PARTIAL DIFFERENTIAL EQUATIONS AND ITS APPLICATIONS",
+  "source": "2018-06 ET MA1013",
+  "questions": [
+    {
+      "question_number": "1",
+      "question_text": "The partial differential equation formed by eliminating the arbitrary constants $a$ and $b$ from $z=(x^2+a)(y^2+b)$ is",
+      "options": [
+        "$pq=8$",
+        "$xz=pq$",
+        "$8pq=xyz$",
+        "$pq=4xyz$"
+      ],
+      "correct_option": "D",
+      "marks": 1,
+      "answer": "$p=2x(y^2+b)$ and $q=2y(x^2+a)$, so $pq=4xyz$.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "2",
+      "question_text": "The particular integral of $(D^2-D\\prime^2)z=e^{x+y}$ is",
+      "options": [
+        "$2xe^{x+y}$",
+        "$\\frac{x}{2}e^{x+y}$",
+        "$0$",
+        "$e^{x+y}$"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "The forcing is resonant. Applying the operator to $xe^{x+y}/2$ gives $e^{x+y}$.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "3",
+      "question_text": "The general integral of $px+qy=z$ is",
+      "options": [
+        "$\\phi(x/y,y/z)=0$",
+        "$\\phi(xy,y/z)=0$",
+        "$\\phi(x/y,xy)=0$",
+        "$\\phi(xy,yz)=0$"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "From $dx/x=dy/y=dz/z$, two invariants are $x/y$ and $y/z$.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "4",
+      "question_text": "The complementary function of $(D^2-4DD\\prime+4D\\prime^2)z=0$ is",
+      "options": [
+        "$f(y+3x)+\\phi(y+2x)$",
+        "$f(y+5x)+x\\phi(y+x)$",
+        "$f(y+2x)+x\\phi(y+2x)$",
+        "$f(y+2x)+\\phi(y+3x)$"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "The operator is $(D-2D\\prime)^2$, giving a repeated characteristic.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "5",
+      "question_text": "The constant $a_0$ of the Fourier series for $f(x)=x^2$ in $(-\\pi,\\pi)$ is",
+      "options": [
+        "$2\\pi^2/3$",
+        "$\\pi^2/3$",
+        "$8\\pi^2/3$",
+        "$\\pi^2$"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "$a_0=\\pi^{-1}\\int_{-\\pi}^{\\pi}x^2dx=2\\pi^2/3$.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "6",
+      "question_text": "Pick out the even function",
+      "options": [
+        "$\\sin x$",
+        "$\\tan x$",
+        "$x\\sin x$",
+        "$e^x$"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "The product of two odd functions is even.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "7",
+      "question_text": "Parseval’s identity for the half range Fourier sine series of $f(x)$ in $(0,1)$ is",
+      "options": [
+        "$\\int_0^1[f(x)]^2dx=\\sum_{n=1}^\\infty a_n^2+a_0^2/2$",
+        "$\\int_0^1[f(x)]^2dx=\\sum_{n=1}^\\infty b_n^2$",
+        "$\\int_0^1f(x)dx=\\sum_{n=1}^\\infty b_n^2$",
+        "$\\int_0^1[f(x)]^2dx=a_0^2/2+\\sum_{n=1}^\\infty(a_n^2+b_n^2)$"
+      ],
+      "correct_option": null,
+      "marks": 1,
+      "answer": "With the standard sine coefficients, Parseval gives $\\int_0^1 f(x)^2dx=\\frac12\\sum b_n^2$. None of the printed options includes the required factor $1/2$.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "8",
+      "question_text": "The value of $b_n$ in the expansion of $x\\sin x$ in $(-\\pi,\\pi)$ is",
+      "options": [
+        "$\\pi$",
+        "$2\\pi^2/3$",
+        "$\\pi^2$",
+        "$0$"
+      ],
+      "correct_option": "D",
+      "marks": 1,
+      "answer": "$x\\sin x$ is even, hence all sine coefficients vanish.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "9",
+      "question_text": "The one dimensional wave equation is",
+      "options": [
+        "$y_t=ay_{xx}$",
+        "$y_{tt}=a^2y_x$",
+        "$y_{tt}=a^2y_{xx}$",
+        "$y_t=ay_x$"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "The wave equation relates the second time derivative to the second spatial derivative.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "10",
+      "question_text": "In heat equation $u_t=\\alpha^2u_{xx}$, $\\alpha^2$ stands for",
+      "options": [
+        "$k/\\rho c$",
+        "$T/m$",
+        "$k/c$",
+        "$k/\\rho$"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "Thermal diffusivity is conductivity divided by density times specific heat.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "11",
+      "question_text": "The partial differential equation $u_{xx}+2u_{xy}+u_{yy}=0$ is classified as",
+      "options": [
+        "Elliptic",
+        "Parabolic",
+        "Conic",
+        "Hyperbolic"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "$B^2-AC=1-1=0$.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "12",
+      "question_text": "The one dimensional heat equation is used to find",
+      "options": [
+        "Density",
+        "Displacement",
+        "Time",
+        "Temperature distribution"
+      ],
+      "correct_option": "D",
+      "marks": 1,
+      "answer": "Its dependent variable is temperature as a function of position and time.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "13",
+      "question_text": "The two dimensional heat flow equation in steady state in Cartesian coordinates is given by",
+      "options": [
+        "$u_t=\\alpha^2(u_{xx}+u_{yy})$",
+        "$u_{tt}=\\alpha^2u_{xx}$",
+        "$u_{tt}+u_{xx}=0$",
+        "$u_{xx}+u_{yy}=0$"
+      ],
+      "correct_option": "D",
+      "marks": 1,
+      "answer": "At steady state $u_t=0$, yielding Laplace’s equation.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "14",
+      "question_text": "The boundary conditions for the steady state temperature in a circular plate of radius 10 cm having 0°C at one half of its circumference and $k$°C at the other half.",
+      "options": [
+        "$u(10,\\theta)=\\theta$, $0<\\theta<\\pi$; $u(10,\\theta)=0$, $\\pi<\\theta<2\\pi$",
+        "$u(0,\\theta)=\\pi$, $0<\\theta<\\pi$; $u(10,\\theta)=0$, $\\pi<\\theta<2\\pi$",
+        "$u(10,\\theta)=k$, $0<\\theta<\\pi$; $u(10,\\theta)=0$, $\\pi<2<2\\pi$",
+        "$u(10,\\theta)=k$, $0<\\theta<\\pi$; $u(10,\\theta)=2\\pi$, $\\pi<\\theta<2\\pi$"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "The intended option specifies $k$ and zero on the two halves; its second range has a printed $2$ in place of $\\theta$.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "15",
+      "question_text": "Laplace equation in polar coordinates (two dimensional steady state equation) is",
+      "options": [
+        "$u_{xx}+u_{yy}=0$",
+        "$u_r+ru_{rr}+r^{-2}u_{rr}=0$",
+        "$u_{rr}+ru_{\\theta\\theta}+r^{-2}u_{\\theta\\theta}=0$",
+        "$u_{rr}+r^{-1}u_r+r^{-2}u_{\\theta\\theta}=0$"
+      ],
+      "correct_option": "D",
+      "marks": 1,
+      "answer": "This is the polar form of $\\nabla^2u=0$.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "16",
+      "question_text": "If $F\\{f(x)\\}=F(x)$, then $F\\{f(ax)\\}=$",
+      "options": [
+        "$F(a/s)/a$",
+        "$F(s/a)/|a|$",
+        "$F(as/a)/s$",
+        "$F(s/a)/s$"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "Substitute $u=ax$ in the transform; orientation yields the factor $1/|a|$.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "17",
+      "question_text": "The Fourier transform of $f(x)=e^{-x^2/2}$ is",
+      "options": [
+        "$e^{-s^2/2}$",
+        "$e^{-s^2}$",
+        "$e^{s^2/2}$",
+        "$e^{x^2}$"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "Under the symmetric normalization, a standard Gaussian is its own Fourier transform.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "18",
+      "question_text": "If $F\\{f(x)\\}=F(s)$, then $F\\{e^{-iax}f(x)\\}$ is",
+      "options": [
+        "$F(s-a)$",
+        "$F(s+a)$",
+        "$F(as)$",
+        "$F(s/a)$"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "Using the positive-exponent convention explicitly printed in question 24, modulation by $e^{-iax}$ shifts the argument to $s-a$.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "19",
+      "question_text": "The Fourier sine transform of $f(x)$ is",
+      "options": [
+        "$\\sqrt{2/\\pi}\\int_0^\\infty f(x)\\sin sx\\,dx$",
+        "$\\sqrt{2/\\pi}\\int_0^\\infty f(x)\\sin sx\\,ds$",
+        "$\\sqrt{2/\\pi}\\int_\\infty^\\infty f(x)\\sin sx\\,dx$",
+        "$\\sqrt{2/\\pi}\\int_{-\\infty}^\\infty f(x)\\sin sx\\,ds$"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "This is the normalized half-line sine transform.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "20",
+      "question_text": "The period of the temperature function in steady state temperature distribution in a circular annulus is",
+      "options": [
+        "$2\\pi$",
+        "$\\pi$",
+        "$0$",
+        "$\\pi/2$"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "The angular coordinate returns to the same point after $2\\pi$.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "21",
+      "question_text": "Find the half range sine series of $f(x)=x$ in $0<x<l$.",
+      "marks": 4,
+      "answer": "$b_n=(2/l)\\int_0^l x\\sin(n\\pi x/l)dx=2l(-1)^{n+1}/(n\\pi)$. Thus $x=(2l/\\pi)\\sum_{n\\ge1}(-1)^{n+1}\\sin(n\\pi x/l)/n$.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "22",
+      "question_text": "Find the complete integral of $p(1+q)=qz$.",
+      "marks": 4,
+      "answer": "The two-parameter family $z=a+b e^{x+y/a}$ satisfies $p=b e^{x+y/a}$ and $q=p/a$, so $p(1+q)=qz$.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "23",
+      "question_text": "What are the three possible solutions of one dimensional heat equation and which is the proper solution?",
+      "marks": 4,
+      "answer": "Separating $u=X(x)T(t)$ yields trigonometric, linear, or exponential spatial factors according as the separation constant is negative, zero, or positive. For a finite rod with both ends held at zero, the nontrivial admissible modes are $\\sin(n\\pi x/l)e^{-\\alpha^2n^2\\pi^2t/l^2}$; other boundary conditions can select different modes.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "24",
+      "question_text": "Prove that $F\\{f(x-a)\\}=e^{ias}F(s)$.",
+      "marks": 4,
+      "answer": "With the positive-exponent convention $F(s)=\\int f(x)e^{isx}dx$, substitute $u=x-a$ to obtain $e^{ias}F(s)$.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "25",
+      "question_text": "Write the various possible solutions of $r^2u_{rr}+ru_r+u_{\\theta\\theta}=0$ and the suitable solution for it.",
+      "marks": 4,
+      "answer": "Separation yields the zero mode $A+B\\log r+C\\theta+D\\theta\\log r$ and, for integer $n\\ge1$, $(A_nr^n+B_nr^{-n})(C_n\\cos n\\theta+D_n\\sin n\\theta)$. Periodicity removes terms linear in $\\theta$; regularity at the origin removes $\\log r$ and $r^{-n}$. The boundary geometry selects the remaining modes.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "26",
+      "question_text": "Find the Fourier transform of $f(x)=1$ for $|x|\\le1$ and $f(x)=0$ for $|x|>1$.",
+      "marks": 4,
+      "answer": "For the symmetric convention, $F(s)=\\frac1{\\sqrt{2\\pi}}\\int_{-1}^1e^{isx}dx=\\sqrt{2/\\pi}\\,\\sin s/s$, with limiting value $\\sqrt{2/\\pi}$ at zero.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "27",
+      "question_text": "If $f(x)=x^2$, in $-\\pi<x<\\pi$, then find the root mean square value of the function $f(x)$.",
+      "marks": 4,
+      "answer": "$\\sqrt{\\frac1{2\\pi}\\int_{-\\pi}^{\\pi}x^4dx}=\\pi^2/\\sqrt5$.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "28. a.",
+      "question_text": "(i) Find the singular integral of $z=px+qy+p^2-q^2$. (ii) Solve $(D^2+DD\\prime-6D\\prime^2)z=x^2y$.",
+      "marks": 12,
+      "answer": "(i) The complete integral is $z=ax+by+a^2-b^2$. Its envelope satisfies $a=-x/2,b=y/2$, giving $z=(y^2-x^2)/4$. (ii) Factoring gives $(D-2D\\prime)(D+3D\\prime)$. One particular integral is $x^4y/12-x^5/60$; hence $z=\\phi(y+2x)+\\psi(y-3x)+x^4y/12-x^5/60$.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "28. b.",
+      "question_text": "(i) Solve $x(y^2-z^2)p+y(z^2-x^2)q=z(x^2-y^2)$. (ii) Form the partial differential equation by eliminating the arbitrary function $f$ from $z=x+y+f(xy+z)=0$.",
+      "marks": 12,
+      "answer": "(i) The characteristic equations preserve $xyz$ and $x^2+y^2+z^2$, so $\\Phi(xyz,x^2+y^2+z^2)=0$. (ii) Interpreting the printed expression as $z=x+y+f(xy+z)$, differentiation yields $(p-1)/(y+p)=(q-1)/(x+q)$, or $(p-1)(x+q)=(q-1)(y+p)$. The trailing $=0$ in the scan makes the statement ambiguous.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "29. a.",
+      "question_text": "Find the Fourier series of period $2\\pi$ for $f(x)=x^2-x$ in $(-\\pi,\\pi)$. Hence deduce the sum of the series (i) $1-1/2^2+1/3^2-\\cdots$ (ii) $1+1/2^4+1/3^4+\\cdots$.",
+      "marks": 12,
+      "answer": "$x^2-x=\\pi^2/3+\\sum_{n\\ge1}[4(-1)^n\\cos nx/n^2+2(-1)^n\\sin nx/n]$. At $x=0$ the cosine part gives $\\sum(-1)^{n+1}/n^2=\\pi^2/12$. Parseval for the even function $x^2$, together with $\\sum 1/n^2=\\pi^2/6$, gives $\\sum1/n^4=\\pi^4/90$.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "29. b.",
+      "question_text": "Find the first three harmonics of the Fourier series from the following table: $x=0,\\pi/3,2\\pi/3,\\pi,4\\pi/3,5\\pi/3,2\\pi$; $f(x)=1.98,1.3,1.05,1.3,-0.88,-0.25,1.98$.",
+      "marks": 12,
+      "answer": "Using the six distinct observations, the trigonometric interpolant is $3/4+(28/75)\\cos x+(29\\sqrt3/50)\\sin x+(89/100)\\cos2x-(19\\sqrt3/300)\\sin2x-(1/30)\\cos3x$. The third harmonic is the Nyquist term and has half the ordinary coefficient normalization.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "30. a.",
+      "question_text": "A tightly stretched string with fixed end points $x=0$ and $x=l$ is initially at rest in its equilibrium position. If it is set to vibrate by giving each point a velocity $v_0\\sin^3(\\pi x/l)$, find the displacement of any point of the string at any subsequent time.",
+      "marks": 12,
+      "answer": "Using $\\sin^3\\theta=(3\\sin\\theta-\\sin3\\theta)/4$ and wave speed $c$, $y=\\frac{v_0l}{4\\pi c}[3\\sin(\\pi x/l)\\sin(\\pi ct/l)-\\frac13\\sin(3\\pi x/l)\\sin(3\\pi ct/l)]$.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "30. b.",
+      "question_text": "A rod of length $l$ has its ends A and B kept at 0°C and 100°C until steady state condition prevail. If the temperature at B is reduced suddenly to 0°C and kept so while that of A is maintained, find the temperature $u(x,t)$ at a distance $x$ from A at time $t$.",
+      "marks": 12,
+      "answer": "The initial profile is $100x/l$ and both ends subsequently vanish. Its sine coefficients are $200(-1)^{n+1}/(n\\pi)$. Thus $u(x,t)=\\sum_{n\\ge1}\\frac{200(-1)^{n+1}}{n\\pi}\\sin(n\\pi x/l)e^{-\\alpha^2n^2\\pi^2t/l^2}$.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "31. a.",
+      "question_text": "A semi circular plate of radius $a$ cm has insulated faces and heat flows in plane curves. The bounding diameter is kept at 0°C and the semi circumference is maintained at temperature $u(a,\\theta)=50(\\pi\\theta-\\theta^2)$ in $0\\le\\theta\\le\\pi$. Find the steady state temperature distribution.",
+      "marks": 12,
+      "answer": "Fourier sine coefficients of the boundary value are $b_n=200[1-(-1)^n]/(\\pi n^3)$. The regular harmonic solution is $u(r,\\theta)=\\sum_{n\\ge1}b_n(r/a)^n\\sin n\\theta$.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "31. b.",
+      "question_text": "A rectangular plate with insulated surfaces is 8 cm wide and so long compared to its width that it may be considered as an infinite plate. If the temperature along short-edge $y=0$ is $u(x,0)=100\\sin(\\pi x/8)$, $0<x<8$, while two long edges $x=0$, $x=8$ as well as the other short edge are kept at 0°C, find the steady state temperature at any point of the plate.",
+      "marks": 12,
+      "answer": "The decaying separated harmonic solution is $u(x,y)=100e^{-\\pi y/8}\\sin(\\pi x/8)$.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "32. a.",
+      "question_text": "Find the Fourier transform of $f(x)=a^2-x^2$ if $|x|<a$, and $f(x)=0$ if $|x|>a$. Hence prove that $\\int_0^\\infty(\\sin x-x\\cos x)/x^3\\,dx=\\pi/4$.",
+      "marks": 12,
+      "answer": "Under the unnormalized convention $F(s)=\\int f(x)e^{-isx}dx=4[\\sin(as)-as\\cos(as)]/s^3$. Inversion at $x=0$ gives $a^2=(4/\\pi)\\int_0^\\infty[\\sin(as)-as\\cos(as)]/s^3\\,ds$; changing variable $x=as$ proves the result.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "32. b.",
+      "question_text": "(i) Evaluate $\\int_0^\\infty dx/[(x^2+a^2)(x^2+b^2)]$ using transform techniques. (ii) Show that $F_s(xf(x))=-\\frac{d}{ds}F_c(s)$ and $F_c(xf(x))=\\frac{d}{ds}F_s(s)$.",
+      "marks": 12,
+      "answer": "(i) For $a,b>0$, Parseval applied to $F_c(e^{-ax})=\\sqrt{2/\\pi}\\,a/(a^2+s^2)$ yields $\\pi/[2ab(a+b)]$. (ii) Differentiate the cosine and sine transform integrals under the integral sign to obtain the two identities.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    }
+  ]
+}

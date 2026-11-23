@@ -1,0 +1,443 @@
+{
+  "formal_filename": "2018-12_ET_MA1013_QP.json",
+  "paper_title": "B.Tech. DEGREE EXAMINATION, DECEMBER 2018 - MA1013 - FOURIER SERIES, PARTIAL DIFFERENTIAL EQUATIONS AND ITS APPLICATIONS",
+  "source": "2018-12 ET MA1013",
+  "questions": [
+    {
+      "question_number": "1",
+      "question_text": "The partial differential equation formed by eliminating arbitrary constant in $z=(x+a)(y+b)$ is",
+      "options": [
+        "$z=p+q$",
+        "$z=p-q$",
+        "$z=p/q$",
+        "$z=pq$"
+      ],
+      "correct_option": "D",
+      "marks": 1,
+      "answer": "$p=y+b$ and $q=x+a$, hence $pq=z$.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "2",
+      "question_text": "The complete integral of $p=q$ is",
+      "options": [
+        "$z=ax+by$",
+        "$z=a(x+y)+b$",
+        "$z=ax+by+c$",
+        "$z=ax-by+a$"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "$p=q=a$ and the two independent constants are $a,b$.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "3",
+      "question_text": "Solve $(D^3-3D^2D\\prime)z=0$",
+      "options": [
+        "$z=f_1(y-x)+f_2(y-2x)+f_3(y+2x)$",
+        "$z=f_1(y)+f_2(y)+f_3(y+3x)$",
+        "$z=f_1(y)+xf_2(y)+f_3(y+3x)$",
+        "$z=f_1(y)+f_2(y)+f_3(y-3x)$"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "The operator factors as $D^2(D-3D\\prime)$; the repeated $D$ factor supplies $f_1(y)+xf_2(y)$.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "4",
+      "question_text": "The particular integral of $(D^3-2D^2D\\prime)z=e^{x+2y}$ is",
+      "options": [
+        "$e^{x+2y}/3$",
+        "$e^x/3$",
+        "$e^{x+2y}$",
+        "$-e^{x+2y}/3$"
+      ],
+      "correct_option": "D",
+      "marks": 1,
+      "answer": "Substituting $D=1,D\\prime=2$ gives $1-4=-3$.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "5",
+      "question_text": "The RMS value of $f(x)$ in $a\\le x\\le b$ is",
+      "options": [
+        "$0$",
+        "$\\sqrt{\\int_a^b [f(x)]^2/(b-a)\\,dx}$",
+        "$\\sqrt{\\int_a^b [f(x)]^2/(b+a)\\,dx}$",
+        "$\\sqrt{\\int_a^b f(x)/(b-a)\\,dx}$"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "RMS is the square root of the mean of $f^2$.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "6",
+      "question_text": "The value of Fourier series of $f(x)$ in $0<x<2\\pi$ at $x=0$ is",
+      "options": [
+        "$f(0)$",
+        "$f(2\\pi)$",
+        "$[f(0)+f(2\\pi)]/2$",
+        "$0$"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "At the periodic boundary the series converges to the mean of the one-sided limits.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "7",
+      "question_text": "Half range cosine series for $f(x)$ in $(0,\\pi)$ is",
+      "options": [
+        "$a_0/2+\\sum_{n=1}^\\infty a_n\\cos nx$",
+        "$a_0^2/4+\\frac12\\sum_{n=1}^\\infty(a_n^2+b_n^2)$",
+        "$\\sum_{n=1}^\\infty b_n\\sin nx$",
+        "$\\sum_{n=1}^\\infty a_n\\cos nx$"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "The even extension has a constant term and cosine harmonics only.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "8",
+      "question_text": "For half range cosine series of $f(x)=\\sin x$ in $(0,\\pi)$ the value of $a_0$ is",
+      "options": [
+        "$4$",
+        "$2/\\pi$",
+        "$4/\\pi$",
+        "$1$"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "$a_0=(2/\\pi)\\int_0^\\pi\\sin x\\,dx=4/\\pi$.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "9",
+      "question_text": "Classify the equation $u_{xx}+2u_{xy}+u_{yy}=0$",
+      "options": [
+        "Parabolic",
+        "Cyclic",
+        "Elliptic",
+        "Hyperbolic"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "For $A=1,B=1,C=1$, $B^2-AC=0$.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "10",
+      "question_text": "The general solution for the displacement $y(x,t)$ of a string of length $l$ vibrating between fixed end points with initial velocity zero and initial displacement $f(x)$ is",
+      "options": [
+        "$\\sum B_n\\sin(n\\pi x/l)\\cos(n\\pi at/l)$",
+        "$\\sum B_n\\sin(n\\pi x/l)\\sin(n\\pi at/l)$",
+        "$\\sum B_n\\cos(n\\pi x/l)\\sin(n\\pi at/l)$",
+        "$\\sum B_n\\sin(n\\pi x/l)$"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "Fixed ends require spatial sines and zero initial velocity eliminates temporal sines.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "11",
+      "question_text": "The one dimensional heat equation in steady state is",
+      "options": [
+        "$u_{xx}+u_{yy}=0$",
+        "$u_t=0$",
+        "$u_{xx}-u_t=0$",
+        "$u_{xx}=0$"
+      ],
+      "correct_option": "D",
+      "marks": 1,
+      "answer": "The heat equation $u_t=\\alpha^2u_{xx}$ reduces to $u_{xx}=0$ at steady state.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "12",
+      "question_text": "A rod of length 10 cm has its ends A and B kept at 20°C and 40°C respectively, until steady state condition prevail. Then the initial condition is given by",
+      "options": [
+        "$u(x,0)=100x/3$",
+        "$u(x,0)=2x+20$",
+        "$u(x,0)=20x+40$",
+        "$u(x,0)=800x$"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "The steady temperature is linear, with slope $(40-20)/10=2$.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "13",
+      "question_text": "The two dimensional heat equation in steady state is",
+      "options": [
+        "$u_{tt}=\\alpha^2u_{xx}$",
+        "$u_t=\\alpha^2u_{xx}$",
+        "$u_t=\\alpha^2(u_{xx}+u_{yy})$",
+        "$u_{xx}+u_{yy}=0$"
+      ],
+      "correct_option": "D",
+      "marks": 1,
+      "answer": "Setting $u_t=0$ in the two-dimensional heat equation gives Laplace’s equation.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "14",
+      "question_text": "A semicircular plate of radius $a$ is kept at 0°C along the bounding diameter and at $f(\\theta)$, $0<\\theta<\\pi$, along the circumference. The steady state temperature is $u(r,\\theta)=\\sum_{n=1}^\\infty b_n(r/a)^n\\sin n\\theta$ where $b_n$ is",
+      "options": [
+        "$\\frac1\\pi\\int_0^\\pi f(\\theta)\\sin n\\theta\\,d\\theta$",
+        "$\\frac2\\pi\\int_0^\\pi f(\\theta)\\sin n\\theta\\,d\\theta$",
+        "$\\frac1\\pi\\int_0^\\pi f(\\theta)\\sin\\theta\\,d\\theta$",
+        "$\\frac1\\pi\\int_0^\\pi f(\\theta)\\cos n\\theta\\,d\\theta$"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "At $r=a$, orthogonality gives the Fourier sine coefficient.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "15",
+      "question_text": "The equation of steady state heat conduction in a plate is",
+      "options": [
+        "$r^2u_{rr}+ru_r+u_{\\theta\\theta}=0$",
+        "$r^2u_{rr}+ru_r+u_{\\theta\\theta}=1$",
+        "$r^2u_{rr}+r^2u_r+u_{\\theta\\theta}=0$",
+        "$r^2u_{rr}+2ru_r+u_{\\theta\\theta}=0$"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "Multiply the polar-coordinate Laplace equation by $r^2$.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "16",
+      "question_text": "A suitable expression for the steady state temperature in a rectangular plate when its edges $x=0$ and $x=a$ are kept at 0°C is",
+      "options": [
+        "$(c_1\\cos px+c_2\\sin px)e^{py}$",
+        "$(c_1e^{px}+c_2e^{-px})\\sin py$",
+        "$x(x-a)\\sin py$",
+        "$\\sin(n\\pi x/a)\\sin(n\\pi y/b)$"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "Choose $c_1=0$ and $p=n\\pi/a$; the resulting separated function is harmonic and vanishes on both edges.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "17",
+      "question_text": "If $F\\{f(x)\\}=F(s)$ then $F\\{e^{iax}f(x)\\}$ is",
+      "options": [
+        "$F(s+a)$",
+        "$F(s-a)$",
+        "$F(s/a)$",
+        "$f(sa)$"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "With the positive-exponent Fourier convention used in the related papers, modulation shifts the argument to $s+a$. The opposite convention gives $F(s-a)$.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "18",
+      "question_text": "The Fourier sine transform of $xf(x)$ is",
+      "options": [
+        "$F_c\\prime(s)$",
+        "$F_s\\prime(s)$",
+        "$-F_c\\prime(s)$",
+        "$-F_s\\prime(s)$"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "Differentiating the cosine transform under the integral gives $F_c\\prime(s)=-F_s\\{xf(x)\\}$.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "19",
+      "question_text": "$F\\left\\{\\int_a^x f(x)\\,dx\\right\\}$ is equal to",
+      "options": [
+        "$F(s)/(is)$",
+        "$F(s)/s$",
+        "$F(s)/(-is)$",
+        "$F(s)e^{ia}/(-is)$"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "With the positive-exponent Fourier convention, differentiation transforms to $-is$ times the transform, yielding $F(s)/(-is)$ away from $s=0$. The integration constant may contribute a distribution at zero frequency.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "20",
+      "question_text": "The Fourier sine transform of $1/x$ is",
+      "options": [
+        "$\\pi$",
+        "$\\pi/2$",
+        "$\\sqrt{\\pi/2}$",
+        "$2\\pi$"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "With the normalized sine transform, $\\sqrt{2/\\pi}\\int_0^\\infty\\sin(sx)/x\\,dx=\\sqrt{\\pi/2}$ for $s>0$.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "21",
+      "question_text": "Solve $\\sqrt p+\\sqrt q=\\sqrt x$.",
+      "marks": 4,
+      "answer": "Set $q=a^2$ and $p=(\\sqrt{x}-a)^2$. Integration gives $z=x^2/2-(4a/3)x^{3/2}+a^2x+a^2y+b$, on a domain where the chosen square-root branches hold.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "22",
+      "question_text": "Find the partial differential equation of all spheres whose centre lie on the $z$ axis.",
+      "marks": 4,
+      "answer": "From $x^2+y^2+(z-a)^2=b^2$, differentiation gives $x+(z-a)p=0$ and $y+(z-a)q=0$. Eliminating $a$ yields $yp-xq=0$.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "23",
+      "question_text": "If $f(x)=x^2$ in $-\\pi\\le x\\le\\pi$, then find the RMS value of the function $f(x)$.",
+      "marks": 4,
+      "answer": "$\\sqrt{(1/2\\pi)\\int_{-\\pi}^{\\pi}x^4\\,dx}=\\pi^2/\\sqrt5$.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "24",
+      "question_text": "A tightly stretched string of length $l$ with fixed ends is initially in equilibrium position. It is set vibrating by giving each point a velocity $V_0\\sin^3(\\pi x/l)$. State its boundary conditions.",
+      "marks": 4,
+      "answer": "For displacement $y$, the fixed ends give $y(0,t)=y(l,t)=0$. The initial data are $y(x,0)=0$ and $y_t(x,0)=V_0\\sin^3(\\pi x/l)$.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "25",
+      "question_text": "What are the possible solutions of two dimensional heat equation.",
+      "marks": 4,
+      "answer": "The transient equation is $u_t=\\alpha^2(u_{xx}+u_{yy})$. Separation gives modes such as $u=(A\\cos kx+B\\sin kx)(C\\cos my+D\\sin my)e^{-\\alpha^2(k^2+m^2)t}$; superpositions are chosen to satisfy the boundary and initial data. At steady state $u_{xx}+u_{yy}=0$, with harmonic separated solutions.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "26",
+      "question_text": "If $F[f(x)]=F(s)$ then show that $P[\\cos ax\\,f(x)]=\\frac12[F(s+a)+F(s-a)]$.",
+      "marks": 4,
+      "answer": "Using $\\cos ax=(e^{iax}+e^{-iax})/2$ and the Fourier shift theorem, linearity gives the stated identity. The printed $P$ is interpreted as the Fourier transform $F$.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "27",
+      "question_text": "Find the Fourier sine transform of $f(x)=e^{-ax}$; $a>0$.",
+      "marks": 4,
+      "answer": "$F_s(s)=\\sqrt{2/\\pi}\\int_0^\\infty e^{-ax}\\sin(sx)\\,dx=\\sqrt{2/\\pi}\\,s/(a^2+s^2)$.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "28. a.",
+      "question_text": "Solve (i) $x(y-z)p+q(z-x)q=z(x-y)$ (ii) $z=px+qy+\\sqrt{p^2+q^2+1}$.",
+      "marks": 12,
+      "answer": "(i) The printed coefficient is $q$, making this nonlinear; the usual cyclic Lagrange equation instead uses $y$. If that is the intended equation, its two characteristic invariants are $x+y+z$ and $x^2+y^2+z^2$, so $\\Phi(x+y+z,x^2+y^2+z^2)=0$. This does not solve the equation as printed. (ii) The complete integral of the Clairaut equation is $z=ax+by+\\sqrt{a^2+b^2+1}$. Its envelope satisfies $x=-a/\\sqrt{a^2+b^2+1}$, $y=-b/\\sqrt{a^2+b^2+1}$, giving $z=\\sqrt{1-x^2-y^2}$ on the corresponding real domain.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "28. b.",
+      "question_text": "(i) Solve $(D^2-DD\\prime-20D\\prime^2)z=e^{5x+y}+\\sin(4x-y)$. (ii) Find the partial differential equation by eliminating the function $f$ from $z=y^2+2f(1/x+\\log y)$.",
+      "marks": 12,
+      "answer": "(i) The operator factors as $(D-5D\\prime)(D+4D\\prime)$. Both forcing terms are resonant; a solution is $z=\\phi(y+5x)+\\psi(y-4x)+xe^{5x+y}/9-x\\cos(4x-y)/9$. (ii) $p=-2f\\prime/x^2$ and $q=2y+2f\\prime/y$; eliminating $f\\prime$ gives $x^2p+yq-2y^2=0$.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "29. a.",
+      "question_text": "Find the Fourier series upto third harmonic from the following data: $x=0,\\pi/3,2\\pi/3,\\pi,4\\pi/3,5\\pi/3,2\\pi$; $y=1,1.4,1.9,1.7,1.5,1.2,1$.",
+      "marks": 12,
+      "answer": "Using the six distinct equally spaced values and discrete Fourier coefficients gives $a_0/2=29/20$, $a_1=-11/30$, $b_1=\\sqrt3/10$, $a_2=-1/10$, $b_2=-\\sqrt3/30$, and Nyquist cosine coefficient $1/60$. Thus $y\\approx29/20-(11/30)\\cos x+(\\sqrt3/10)\\sin x-(1/10)\\cos2x-(\\sqrt3/30)\\sin2x+(1/60)\\cos3x$.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "29. b.",
+      "question_text": "(i) Find half-range Fourier cosine series for $f(x)=x(\\pi-x)$ in $0<x<\\pi$. (ii) Find the Fourier series of $f(x)=x^2$ in $-\\pi<x<\\pi$.",
+      "marks": 12,
+      "answer": "(i) $a_0/2=\\pi^2/6$, and $a_n=-2(1+(-1)^n)/n^2$, so $x(\\pi-x)=\\pi^2/6-\\sum_{k=1}^\\infty k^{-2}\\cos(2kx)$. (ii) Evenness gives $x^2=\\pi^2/3+4\\sum_{n=1}^\\infty(-1)^n\\cos(nx)/n^2$.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "30. a.",
+      "question_text": "A tightly stretched string of length $l$ has its end fastened at $x=0$ and $x=l$. At $t=0$, the string is in the form $f(x)=kx(l-x)$ and then released. Find the displacement at any point on the string at a distance $x$ from one end and at any time $t>0$.",
+      "marks": 12,
+      "answer": "For wave speed $c$, the sine coefficients of $kx(l-x)$ are $4kl^2[1-(-1)^n]/(n^3\\pi^3)$. With zero initial velocity, $y(x,t)=\\sum_{n=1}^\\infty\\frac{4kl^2[1-(-1)^n]}{n^3\\pi^3}\\sin(n\\pi x/l)\\cos(n\\pi ct/l)$.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "30. b.",
+      "question_text": "A rod, 30 cms long has its ends A and B kept at 20°C and 80°C respectively, until steady state conditions prevail. The temperature at each end is then suddenly reduced to 0°C and kept so. Find the resulting temperature function $u(x,t)$, taking $x=0$ at A.",
+      "marks": 12,
+      "answer": "The initial profile is $20+2x$. Its sine coefficients on $(0,30)$ are $b_n=\\frac{2}{n\\pi}[20-80(-1)^n]$. For diffusivity $\\alpha^2$, $u(x,t)=\\sum_{n=1}^\\infty b_n\\sin(n\\pi x/30)e^{-\\alpha^2n^2\\pi^2t/900}$.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "31. a.",
+      "question_text": "A rectangular plate with insulated surfaces is 10 cm wide and so long compared to its width that it may be considered as an infinite plate. If the temperature along short edge $y=0$ is $u(x,0)=8\\sin(\\pi x/10)$, $0<x<10$, while two long edges $x=0$ and $x=10$ as well as the other short edge are kept at 0°C, find the steady state temperature at any point of the plate.",
+      "marks": 12,
+      "answer": "The bounded separated harmonic mode satisfying the two long edges and the given short edge is $u(x,y)=8e^{-\\pi y/10}\\sin(\\pi x/10)$. It decays to zero as $y\\to\\infty$.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "31. b.",
+      "question_text": "A semi circular plate of radius $a$ has insulated faces and heat flows in plane curve. The bounding diameter is kept at 0°C and on the circumference the temperature is maintained as $u(a,\\theta)=\\frac{k\\theta}{\\pi}(\\pi-\\theta)$. Determine the steady state temperature distribution in the plate.",
+      "marks": 12,
+      "answer": "Expand the boundary data in sine modes: $b_n=\\frac{2k}{\\pi^2}\\int_0^\\pi\\theta(\\pi-\\theta)\\sin n\\theta\\,d\\theta=\\frac{4k[1-(-1)^n]}{\\pi^2n^3}$. Regularity at the origin gives $u(r,\\theta)=\\sum_{n=1}^\\infty b_n(r/a)^n\\sin n\\theta$.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "32. a.",
+      "question_text": "Find the Fourier transform of $f(x)=1-x^2$ if $|x|\\le1$, and $f(x)=0$ if $|x|>1$. Hence prove that $\\int_0^\\infty\\frac{\\sin s-s\\cos s}{s^3}\\cos(s/2)\\,ds=3\\pi/16$.",
+      "marks": 12,
+      "answer": "With $F(s)=\\int_{-\\infty}^\\infty f(x)e^{-isx}dx$, direct integration gives $F(s)=4(\\sin s-s\\cos s)/s^3$ (and $F(0)=4/3$). Fourier inversion at $x=1/2$ yields $3/4=(4/\\pi)\\int_0^\\infty(\\sin s-s\\cos s)\\cos(s/2)/s^3\\,ds$, proving the result.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "32. b.",
+      "question_text": "Find the Fourier sine transform of $f(x)=\\frac{x}{1+x^2}$.",
+      "marks": 12,
+      "answer": "Using $\\int_0^\\infty\\cos(sx)/(1+x^2)\\,dx=(\\pi/2)e^{-s}$ for $s>0$ and differentiating, $\\int_0^\\infty x\\sin(sx)/(1+x^2)\\,dx=(\\pi/2)e^{-s}$. The normalized sine transform is $\\sqrt{\\pi/2}e^{-s}$ for $s>0$.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    }
+  ]
+}

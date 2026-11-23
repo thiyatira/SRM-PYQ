@@ -1,0 +1,443 @@
+{
+  "formal_filename": "2018-06_ET_MA1003_QP.json",
+  "paper_title": "B.Tech. DEGREE EXAMINATION, JUNE 2018 - MA1003 - TRANSFORMS AND BOUNDARY VALUE PROBLEMS",
+  "source": "2018-06 ET MA1003",
+  "questions": [
+    {
+      "question_number": "1",
+      "question_text": "The partial differential equation formed by eliminating arbitrary function from $z=f(x^2+y^2)$ is",
+      "options": [
+        "$xp=yq$",
+        "$py=qx$",
+        "$x+p=y+q$",
+        "$xy=pq$"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "$p=2xf\\prime$, $q=2yf\\prime$, giving $yp=xq$.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "2",
+      "question_text": "The complete integral of $p^2+q^2=1$ is",
+      "options": [
+        "$z=ax^2+(1-a^2)y+c$",
+        "$z=ax+(1-a^2)y+c$",
+        "$z=ax\\pm\\sqrt{1-a^2}\\,y+c$",
+        "$z=ax^2\\pm\\sqrt{1-a^2}\\,y+c$"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "Set $p=a$ and $q=\\pm\\sqrt{1-a^2}$ and integrate.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "3",
+      "question_text": "The particular integral of $(D^2+4DD\\prime^2)z=e^x$ is",
+      "options": [
+        "$e^x/2$",
+        "$e^x$",
+        "$xe^x/2$",
+        "$x^2e^x/2!$"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "Substitute $D=1,D\\prime=0$ in the operator.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "4",
+      "question_text": "Classify the PDE $xf_{xx}+yf_{yy}=0$, $x>0$, $y>0$.",
+      "options": [
+        "Parabolic",
+        "Hyperbolic",
+        "Elliptic",
+        "Poisson"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "The discriminant is $B^2-AC=-xy<0$.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "5",
+      "question_text": "The value of $a_n$ in the Fourier series of $f(x)=x$ in $(-\\pi,\\pi)$ is",
+      "options": [
+        "$0$",
+        "$\\pi/3$",
+        "$2\\pi^2/3$",
+        "$\\pi$"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "$x$ is odd, so its cosine coefficients vanish.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "6",
+      "question_text": "The sum of the Fourier series of $f(x)=x+x^2$, $-\\pi<x<\\pi$, at $x=\\pi$ is",
+      "options": [
+        "$\\pi^2$",
+        "$\\pi/2$",
+        "$\\pi^2/2$",
+        "$\\pi$"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "The periodic endpoint value is $[f(\\pi^-)+f(-\\pi^+)]/2=\\pi^2$.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "7",
+      "question_text": "The root mean square value of $f(x)=1-x$, $0<x<1$ is",
+      "options": [
+        "$1/3$",
+        "$1/\\sqrt3$",
+        "$1/2$",
+        "$\\sqrt{1/2}$"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "$\\sqrt{\\int_0^1(1-x)^2dx}=1/\\sqrt3$.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "8",
+      "question_text": "If $f(x)=\\sum_{n=1}^\\infty b_n\\sin(n\\pi x/l)$ in $(0,l)$ then $\\int_0^l[f(x)]^2dx$ is",
+      "options": [
+        "$\\frac l2\\sum b_n^2$",
+        "$\\frac14\\sum b_n^2$",
+        "$\\frac{l^2}2\\sum b_n^2$",
+        "$\\frac{l^3}2\\sum b_n^2$"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "Sine orthogonality gives $\\int_0^l\\sin^2(n\\pi x/l)dx=l/2$.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "9",
+      "question_text": "The suitable solution of one dimensional wave equation is",
+      "options": [
+        "$(Ae^{px}+Be^{-px})(Ce^{pat}+De^{-pat})$",
+        "$(Ax+B)(Ct+D)$",
+        "$(Ae^{px}+Be^{-px})(C\\cos pat+D\\sin pat)$",
+        "$(A\\cos px+B\\sin px)(C\\cos pat+D\\sin pat)$"
+      ],
+      "correct_option": "D",
+      "marks": 1,
+      "answer": "Trigonometric spatial and temporal factors satisfy $y_{tt}=a^2y_{xx}$ and are suitable for fixed ends. Other forms may solve the PDE without those boundaries.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "10",
+      "question_text": "In one dimensional heat equation $u_t=\\alpha^2u_{xx}$, $\\alpha^2$ stands for",
+      "options": [
+        "$T/m$",
+        "$k/\\rho$",
+        "$k/(\\rho c)$",
+        "$kc/\\rho$"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "Thermal diffusivity equals conductivity divided by volumetric heat capacity.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "11",
+      "question_text": "The steady state temperature of a rod of length 10 cm whose ends are kept at 20°C and 70°C is",
+      "options": [
+        "$u=2x+20$",
+        "$u=5x+20$",
+        "$u=2x+70$",
+        "$u=2x+2$"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "The steady profile is linear with slope $(70-20)/10=5$.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "12",
+      "question_text": "How many initial and boundary conditions required to solve $u_t=\\alpha^2u_{xx}$?",
+      "options": [
+        "Three",
+        "Four",
+        "Two",
+        "Five"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "For a finite rod, one initial profile and one boundary condition at each end are required.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "13",
+      "question_text": "Fourier sine transform of $e^{-ax}$ is",
+      "options": [
+        "$\\sqrt{2/\\pi}\\,s/(s^2+a^2)$",
+        "$\\sqrt{2/\\pi}\\,a/(s^2+a^2)$",
+        "$\\sqrt{2/\\pi}\\,s/(x^2+a^2)$",
+        "$\\sqrt{2/\\pi}\\,a/(x^2+a^2)$"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "Integrating $e^{-ax}\\sin sx$ gives $s/(a^2+s^2)$ for $a>0$.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "14",
+      "question_text": "If $F(s)$ is the Fourier transform of $f(t)$ then the Fourier transform of $f(t-a)$ is",
+      "options": [
+        "$F(s-a)$",
+        "$F(s+a)$",
+        "$e^{ias}F(s)$",
+        "$e^{-ias}F(s)$"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "Using the positive-exponent convention employed in this paper, substituting $u=t-a$ gives $e^{ias}F(s)$. With the opposite convention the other sign applies.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "15",
+      "question_text": "If $F_s[f(x)]=F_s(s)$ then $F_s[f(ax)]$ is",
+      "options": [
+        "$F_c(s/a)/a$",
+        "$F_s(s/a)/a$",
+        "$F_s(as)/a$",
+        "$F_c(as)/a$"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "For $a>0$ substitute $u=ax$ in the sine transform.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "16",
+      "question_text": "If $F(f(x))=F(s)$ and $F(g(x))=G(s)$ then $F(f(x)*g(x))$ is",
+      "options": [
+        "$F(s)+G(s)$",
+        "$F(s)-G(s)$",
+        "$F(s)G(s)$",
+        "$F(s)/G(s)$"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "The convolution theorem gives the product under the unnormalized transform convention.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "17",
+      "question_text": "Z-transform of $1/n!$ is",
+      "options": [
+        "$e^{1/z}$",
+        "$e^z$",
+        "$z/(z-1)$",
+        "$z/(z-1)^2$"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "$\\sum_{n\\ge0}z^{-n}/n!=e^{1/z}$.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Z-Transforms"
+    },
+    {
+      "question_number": "18",
+      "question_text": "Z-transform of $\\sin(n\\pi/2)$ is",
+      "options": [
+        "$z^2/(z^2+1)$",
+        "$z/(z^2+1)$",
+        "$z/(z+1)$",
+        "$z/(z-1)$"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "The transform of $\\sin n\\theta$ is $z\\sin\\theta/(z^2-2z\\cos\\theta+1)$.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Z-Transforms"
+    },
+    {
+      "question_number": "19",
+      "question_text": "$Z^{-1}\\{z/(z-a)\\}$ is",
+      "options": [
+        "$n(n-1)$",
+        "$a^n$",
+        "$na^{n-1}$",
+        "$a^{n-1}$"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "$z/(z-a)=\\sum_{n\\ge0}a^nz^{-n}$ for $|z|>|a|$.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Z-Transforms"
+    },
+    {
+      "question_number": "20",
+      "question_text": "The solution of $y_{n+1}-2y_n=0$ given $y_0=3$ is",
+      "options": [
+        "$3^n$",
+        "$2\\cdot3^n$",
+        "$3\\cdot2^n$",
+        "$2^n$"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "The recurrence doubles each term and $y_0=3$.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Z-Transforms"
+    },
+    {
+      "question_number": "21",
+      "question_text": "Eliminate the arbitrary function $f$ from $z=f(xy/z)$ and form the partial differential equation.",
+      "marks": 4,
+      "answer": "The relation implies locally that $z$ depends only on $xy$. Thus $p=yh\\prime(xy)$, $q=xh\\prime(xy)$, and $xp=yq$.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "22",
+      "question_text": "Solve $9(p^2z+q^2)=4$.",
+      "marks": 4,
+      "answer": "Charpit’s equations imply $q/p=a$ on a nondegenerate branch. Then $p=2/[3\\sqrt{z+a^2}]$, so integrating $dz=p(dx+a\\,dy)$ gives $(z+a^2)^{3/2}=x+ay+b$. Sign choices give other local branches.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "23",
+      "question_text": "Find the root mean square value of $f(x)=x^2$ in $(0,\\pi)$.",
+      "marks": 4,
+      "answer": "$\\sqrt{\\pi^{-1}\\int_0^\\pi x^4dx}=\\pi^2/\\sqrt5$.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "24",
+      "question_text": "Write down the initial condition when a taut string of length $2l$ is fastened on both ends. The midpoint of the string is taken to a height $b$ and released from the rest in that position.",
+      "marks": 4,
+      "answer": "$y(x,0)=bx/l$ for $0\\le x\\le l$, $y(x,0)=b(2l-x)/l$ for $l\\le x\\le2l$, and $y_t(x,0)=0$. The fixed ends also give $y(0,t)=y(2l,t)=0$.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "25",
+      "question_text": "Prove that $F[f(ax)]=\\frac1aF(s/a)$, $a>0$.",
+      "marks": 4,
+      "answer": "In the Fourier integral put $u=ax$; then $dx=du/a$ and the exponential frequency becomes $s/a$.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "26",
+      "question_text": "Find the Fourier sine transform of $f(x)=e^{-x}$.",
+      "marks": 4,
+      "answer": "$F_s(s)=\\sqrt{2/\\pi}\\int_0^\\infty e^{-x}\\sin sx\\,dx=\\sqrt{2/\\pi}\\,s/(1+s^2)$.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "27",
+      "question_text": "Prove that $Z[1/(n+1)]=z\\log(z/(z-1))$.",
+      "marks": 4,
+      "answer": "For $|z|>1$, $\\sum_{n\\ge0}z^{-n}/(n+1)=z\\sum_{m\\ge1}z^{-m}/m=-z\\log(1-z^{-1})=z\\log[z/(z-1)]$.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Z-Transforms"
+    },
+    {
+      "question_number": "28. a.",
+      "question_text": "(i) Find the singular integral of $z=px+qy+p^2-q^2$. (ii) Solve $x(y-z)p+y(z-x)q=z(x-y)$.",
+      "marks": 12,
+      "answer": "(i) The envelope of $z=ax+by+a^2-b^2$ is $z=(y^2-x^2)/4$. (ii) The characteristic system has invariants $x+y+z$ and $x^2+y^2+z^2$, so $\\Phi(x+y+z,x^2+y^2+z^2)=0$.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "28. b.",
+      "question_text": "Solve $(D^2-2DD\\prime)z=e^{2x}+x^3y$.",
+      "marks": 12,
+      "answer": "Factoring $D(D-2D\\prime)$ gives the complementary function $\\phi(y)+\\psi(y+2x)$. The particular integral is $e^{2x}/4+x^5y/20+x^6/60$, as direct substitution verifies.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "29. a.",
+      "question_text": "Expand $x(2\\pi-x)$ as Fourier series in $(0,2\\pi)$. Deduce the sum of $1+1/2^2+1/3^2+\\cdots$.",
+      "marks": 12,
+      "answer": "Writing $u=x-\\pi$ gives $\\pi^2-u^2$, hence $x(2\\pi-x)=2\\pi^2/3-4\\sum_{n\\ge1}\\cos(nx)/n^2$. At $x=0$ this gives $\\sum1/n^2=\\pi^2/6$.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "29. b.",
+      "question_text": "Find the Fourier series upto second harmonics from the following data: $x=0,\\pi/3,2\\pi/3,\\pi,4\\pi/3,5\\pi/3,2\\pi$; $y=1,1.4,1.9,1.7,1.5,1.2,1$.",
+      "marks": 12,
+      "answer": "The discrete coefficients from the six distinct values give $y\\approx29/20-(11/30)\\cos x+(\\sqrt3/10)\\sin x-(1/10)\\cos2x-(\\sqrt3/30)\\sin2x$.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "30. a.",
+      "question_text": "A tightly stretched string with end points $x=0$ and $x=l$ is initially at rest in its equilibrium position. If it is set vibrating giving each point a velocity $\\lambda x(l-x)$ find the displacement of the string.",
+      "marks": 12,
+      "answer": "The initial velocity coefficients are $B_n=4\\lambda l^2[1-(-1)^n]/(n^3\\pi^3)$. For wave speed $c$, $y(x,t)=\\sum_{n\\ge1}\\frac{B_nl}{n\\pi c}\\sin(n\\pi x/l)\\sin(n\\pi ct/l)$.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "30. b.",
+      "question_text": "A rectangular plate with insulated surfaces is 10 cm wide and so long compared to its width that it may be considered as an infinite plate. If the temperature along short edge $y=0$ is $u(x,0)=8\\sin(\\pi x/l)$, $0<x<10$, while two long edges $x=0$ and $x=10$ as well as the other short edge are kept at 0°, find the steady state temperature at any point of the plate.",
+      "marks": 12,
+      "answer": "If the printed $l$ denotes the width $10$, separation gives $u=8e^{-\\pi y/10}\\sin(\\pi x/10)$. For general $l$, expand the prescribed short-edge function in the sine basis on $(0,10)$ and multiply each mode by $e^{-n\\pi y/10}$.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "31. a.",
+      "question_text": "Find the Fourier transform of $f(x)=a^2-x^2$ for $|x|<a$, $f(x)=0$ for $|x|>a>0$, and show that $\\int_0^\\infty[(\\sin t-t\\cos t)/t^3]^2dt=\\pi/15$.",
+      "marks": 12,
+      "answer": "$F(s)=4[\\sin(as)-as\\cos(as)]/s^3$ for the unnormalized convention. Parseval gives $\\int_{-a}^a(a^2-x^2)^2dx=16a^5/15=(1/\\pi)\\int_0^\\infty F(s)^2ds$. Substitution $t=as$ yields the stated integral.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "31. b.",
+      "question_text": "Find the Fourier sine and cosine transforms of $x^{n-1}$. Hence deduce that $1/\\sqrt{x}$ is self reciprocal under both transforms. Also find $F[1/\\sqrt{|x|}]$.",
+      "marks": 12,
+      "answer": "For $0<n<1$ and $s>0$, $F_s=\\sqrt{2/\\pi}\\Gamma(n)\\sin(n\\pi/2)s^{-n}$ and $F_c=\\sqrt{2/\\pi}\\Gamma(n)\\cos(n\\pi/2)s^{-n}$. At $n=1/2$ both equal $s^{-1/2}$. With symmetric full Fourier normalization, the transform of $|x|^{-1/2}$ is $|s|^{-1/2}$, interpreted as an improper integral or distribution.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "32. a.",
+      "question_text": "(i) Determine the Z-transform of $\\sin(n\\pi/2)$ and $\\cos(n\\pi/2)$. (ii) Find $Z^{-1}\\{(z^2+z)/(z-1)^3\\}$ by long division method.",
+      "marks": 12,
+      "answer": "(i) Geometric sums give $z/(z^2+1)$ and $z^2/(z^2+1)$ respectively, for $|z|>1$. (ii) In powers of $z^{-1}$, $(z^2+z)/(z-1)^3=\\sum_{n\\ge0}n^2z^{-n}$, so the inverse is $n^2$.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Z-Transforms"
+    },
+    {
+      "question_number": "32. b.",
+      "question_text": "Solve $y_{n+2}-7y_{n+1}+12y_n=2^n$ given $y_0=y_1=0$.",
+      "marks": 12,
+      "answer": "The characteristic roots are $3,4$ and a particular solution is $2^{n-1}$. Applying the initial values to $y_n=A3^n+B4^n+2^{n-1}$ yields $A=-1$, $B=1/2$, so $y_n=2^{n-1}-3^n+4^n/2$.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Z-Transforms"
+    }
+  ]
+}
