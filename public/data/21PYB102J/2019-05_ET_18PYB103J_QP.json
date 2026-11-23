@@ -1,0 +1,306 @@
+{
+    "paper_title": "MAY_2019_18PYB103J",
+    "source": "MAY_2019_18PYB103J",
+    "questions": [
+        {
+            "question_number": "Q1",
+            "question_text": "The free electrons in metals always obey",
+            "options": [
+                "Fermi-Dirac statistics",
+                "Widemann Franz law",
+                "Bose Einstein statistics",
+                "Drude Lorentz theory"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Electrons are fermions, so they obey Fermi-Dirac statistics.",
+            "answer_source": "generated",
+            "chapter": "Unit 1-Energy Bands in Solids"
+        },
+        {
+            "question_number": "Q2",
+            "question_text": "At low temperatures, semiconductors will become",
+            "options": [
+                "Conductors",
+                "Insulators",
+                "Ferroelectrics",
+                "superconductors"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "At low T the valence band is full and the conduction band empty, so no free carriers: an insulator.",
+            "answer_source": "generated",
+            "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
+        },
+        {
+            "question_number": "Q3",
+            "question_text": "The quantum of energy in elastic wave is known as",
+            "options": [
+                "Photon",
+                "Electron",
+                "Phonon",
+                "Magnon"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "A phonon is the quantum of elastic (lattice) waves.",
+            "answer_source": "generated",
+            "chapter": "Unit 1-Energy Bands in Solids"
+        },
+        {
+            "question_number": "Q4",
+            "question_text": "The acceptor atoms in extrinsic p-type semiconductor contribute",
+            "options": [
+                "Holes to conduction band",
+                "Holes to valence band",
+                "Electrons to conduction band",
+                "Electrons to valence band"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Acceptors take electrons from the valence band, leaving holes there.",
+            "answer_source": "generated",
+            "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
+        },
+        {
+            "question_number": "Q5",
+            "question_text": "In a basic OLED structure, the diamine layer is used as a",
+            "options": [
+                "CCL",
+                "ETL",
+                "ITL",
+                "HTL"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "Diamine layers have high hole mobility, so they serve as the hole transport layer (HTL).",
+            "answer_source": "generated",
+            "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
+        },
+        {
+            "question_number": "Q6",
+            "question_text": "Electron-Hole pairs are produced due to",
+            "options": [
+                "Recombination",
+                "Thermal energy",
+                "Ionization",
+                "Doping"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Thermal energy lifts electrons across the gap, creating electron-hole pairs.",
+            "answer_source": "generated",
+            "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
+        },
+        {
+            "question_number": "Q7",
+            "question_text": "LED is a semiconductor p-n junction diode which converts ________ under forward bias",
+            "options": [
+                "Light energy into electrical energy",
+                "Thermal energy into electrical energy",
+                "Electrical energy into light energy",
+                "Electrical energy into thermal energy"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "A forward-biased LED converts electrical energy into light (electroluminescence).",
+            "answer_source": "generated",
+            "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
+        },
+        {
+            "question_number": "Q8",
+            "question_text": "A semiconductor has _________ temperature coefficient of resistance.",
+            "options": [
+                "Positive",
+                "Zero",
+                "Large",
+                "Negative"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "Heating generates more carriers, so resistance falls: a negative temperature coefficient.",
+            "answer_source": "generated",
+            "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
+        },
+        {
+            "question_number": "Q9",
+            "question_text": "The average velocity acquired by the electron in a particular direction during the presence of electric field is called",
+            "options": [
+                "Relaxation time",
+                "Drift velocity",
+                "Collision time",
+                "Diffusion current"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Drift velocity is the net velocity gained in an electric field.",
+            "answer_source": "generated",
+            "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
+        },
+        {
+            "question_number": "Q10",
+            "question_text": "The ________ does not require any external energy for process to take place.",
+            "options": [
+                "Stimulated emission",
+                "Spontaneous emission",
+                "Stimulated absorption",
+                "Stimulated radiation"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Spontaneous emission occurs without any external stimulus.",
+            "answer_source": "generated",
+            "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
+        },
+        {
+            "question_number": "Q11",
+            "question_text": "The Ratio of the maximum power that can be extracted from solar cell to the ideal power is called",
+            "options": [
+                "Short circuit voltage",
+                "Open circuit voltage",
+                "Fill factor",
+                "Drift voltage"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "$FF = P_{max}/(V_{oc}I_{sc})$: maximum power over the ideal power.",
+            "answer_source": "generated",
+            "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
+        },
+        {
+            "question_number": "Q12",
+            "question_text": "The current density is directly proportional to the __________",
+            "options": [
+                "Rest mass of electron",
+                "Applied electric field",
+                "Density of core electron",
+                "Collision time"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "$J=\\sigma E$: current density is proportional to the applied field.",
+            "answer_source": "generated",
+            "chapter": "Unit 4- Electrical and Optical Measurements"
+        },
+        {
+            "question_number": "Q13",
+            "question_text": "An ideal monochromator should have an _________ narrow effective band width",
+            "options": [
+                "Infinitely",
+                "Small",
+                "Zero",
+                "Finite"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "An ideal monochromator isolates one wavelength, so its bandwidth should be infinitely narrow.",
+            "answer_source": "generated",
+            "chapter": "Unit 4- Electrical and Optical Measurements"
+        },
+        {
+            "question_number": "Q14",
+            "question_text": "In a _________, the electrons are ejected from a photoemissive surface and are amplified within the cell.",
+            "options": [
+                "Photomultiplier tube",
+                "Bolometer",
+                "Electrode",
+                "Photodiode"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "In a PMT, photoemitted electrons are multiplied by secondary emission at dynodes.",
+            "answer_source": "generated",
+            "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
+        },
+        {
+            "question_number": "Q15",
+            "question_text": "Alkali metals and their oxides are best ________ materials.",
+            "options": [
+                "Photoemissive",
+                "Conducting",
+                "Insulating",
+                "Semiconducting"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Alkali metals have low work functions, so they emit electrons easily under light.",
+            "answer_source": "generated",
+            "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
+        },
+        {
+            "question_number": "Q16",
+            "question_text": "_________ is used for separating source radiation wavelengths.",
+            "options": [
+                "Antenna",
+                "Detector",
+                "Monochromator",
+                "Display device"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "A monochromator separates the wavelengths of the source radiation.",
+            "answer_source": "generated",
+            "chapter": "Unit 4- Electrical and Optical Measurements"
+        },
+        {
+            "question_number": "Q17",
+            "question_text": "The AFM tip should have a radius of curvature of",
+            "options": [
+                "Greater than 20 – 50 nm",
+                "Around 100 nm",
+                "More than 100 nm",
+                "Lesser than 20 – 50 nm"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "A sharp tip (radius below ~20-50 nm) is needed for high-resolution AFM.",
+            "answer_source": "generated",
+            "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
+        },
+        {
+            "question_number": "Q18",
+            "question_text": "In a quantum wire, the material size is reduced",
+            "options": [
+                "In three directions",
+                "In one direction",
+                "In two direction",
+                "In zero directions"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "A quantum wire is confined in two directions and free in one.",
+            "answer_source": "generated",
+            "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
+        },
+        {
+            "question_number": "Q19",
+            "question_text": "Carbon nanotube reactivity is related to",
+            "options": [
+                "Volume",
+                "Length",
+                "Diameter",
+                "Width"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Smaller diameter means higher curvature and strain, hence higher reactivity.",
+            "answer_source": "generated",
+            "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
+        },
+        {
+            "question_number": "Q20",
+            "question_text": "In CVD chamber, the precursors are introduced to the reaction chamber in the ________ state.",
+            "options": [
+                "Liquid",
+                "Solid",
+                "Gaseous",
+                "Semisolid"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "CVD precursors are gases that react on a heated substrate.",
+            "answer_source": "generated",
+            "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
+        }
+    ]
+}

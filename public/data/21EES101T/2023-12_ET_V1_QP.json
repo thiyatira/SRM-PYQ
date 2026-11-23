@@ -1,0 +1,306 @@
+{
+    "paper_title": "21EES101T_Dec_2023_V1",
+    "source": "21EES101T_Dec_2023_V1",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "A potential difference of 10 V is applied across a conductor whose resistance is 2.5 ohm. What is the value of current flowing through it?",
+            "options": [
+                "4 amperes",
+                "2 amperes",
+                "6 amperes",
+                "10 amperes"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "$I=V/R=10/2.5=4$ A.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "2",
+            "question_text": "Which of the following formulas defines KCL, where i1, i2 represent incoming currents and i3, i4 represent outgoing currents from a circuit node?",
+            "options": [
+                "i1+i2=i3+i4",
+                "i1+i3=i2+i4",
+                "i1-i2=i3-i4",
+                "i4-i1=i2+i3"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "KCL: current in equals current out, so $i_1+i_2=i_3+i_4$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "3",
+            "question_text": "Pick out the correct statement from the following about parallel combination of resistors.",
+            "options": [
+                "The current across the resistors are the same",
+                "The resistance offered by all resistors are the same",
+                "The potential difference is same across each resistor",
+                "The equivalent overall resistance is larger than the largest resistor"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "In parallel every branch has the same voltage; the currents divide.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "4",
+            "question_text": "What is the type of current obtained by finding the square of the currents and then finding their average and then finding the square root?",
+            "options": [
+                "RMS current",
+                "Average current",
+                "Instantaneous current",
+                "Total current"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Square, then mean, then root is the definition of RMS.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "5",
+            "question_text": "Which of the following terminal does not belong to the MOSFET?",
+            "options": [
+                "Drain",
+                "Gate",
+                "Base",
+                "Source"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Base belongs to a BJT; a MOSFET has gate, drain and source.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "6",
+            "question_text": "Which of the following the charge carrier is available in BJT?",
+            "options": [
+                "Holes",
+                "Electrons",
+                "Neutrons",
+                "Both holes and electrons"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "A BJT is bipolar: both electrons and holes carry current.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "7",
+            "question_text": "The approximate equivalent circuit of an IGBT consists of",
+            "options": [
+                "a BJT & a MOSFET",
+                "a MOSFET & a MCT",
+                "two BJTs",
+                "two MOSFETs"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "An IGBT has a MOSFET-type input stage driving a BJT output stage.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "8",
+            "question_text": "The NOR gate output will be high if the two inputs are _______",
+            "options": [
+                "00",
+                "01",
+                "10",
+                "11"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "NOR is the inverted OR, so its output is 1 only for input 00.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "9",
+            "question_text": "The basic function of a transformer is to change",
+            "options": [
+                "the level of the voltage",
+                "the power level",
+                "the power factor",
+                "the frequency"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "A transformer steps AC voltage up or down; power and frequency stay (ideally) the same.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "10",
+            "question_text": "An 50 Hz induction motor with 1000 rpm speed will have",
+            "options": [
+                "2 poles",
+                "6 poles",
+                "4 poles",
+                "8 poles"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "$P=\\dfrac{120f}{N}=\\dfrac{120\\times50}{1000}=6$ poles.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "11",
+            "question_text": "The direction of rotation of motor is determined by _______",
+            "options": [
+                "Faraday's law",
+                "Lenz's law",
+                "Coulomb's law",
+                "Fleming's left-hand rule"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "Fleming's left-hand rule gives the direction of force on a current-carrying conductor, i.e. motor rotation.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "12",
+            "question_text": "Which of the following motor rotates in discrete angular steps?",
+            "options": [
+                "Servo motor",
+                "DC motor",
+                "Stepper motor",
+                "Linear Induction Motor"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "A stepper motor turns in fixed discrete steps for each input pulse.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "13",
+            "question_text": "The function of transducer is to convert",
+            "options": [
+                "Electrical signal into non electrical quantity",
+                "Non electrical quantity into electrical signal",
+                "Electrical signal into mechanical quantity",
+                "Non electrical quantity into mechanical signal"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "A transducer converts a non-electrical quantity (temperature, pressure, etc.) into an electrical signal.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "14",
+            "question_text": "With the increase in the intensity of light, the resistance of a photovoltaic cell",
+            "options": [
+                "Increases",
+                "Decreases",
+                "Remains same",
+                "become negative"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Light generates more carriers, raising conductivity, so resistance falls.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "15",
+            "question_text": "What is the principle of operation of LVDT?",
+            "options": [
+                "Mutual inductance",
+                "Self-inductance",
+                "Permanence",
+                "Reluctance"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "An LVDT works on the mutual inductance between its primary and two secondary coils.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "16",
+            "question_text": "By which properties, the orientation of molecules in a layer of liquid crystals can be changed?",
+            "options": [
+                "Magnetic field",
+                "Electric field",
+                "Electromagnetic field",
+                "Galois field"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "An electric field reorients the liquid-crystal molecules, which is how LCDs switch pixels.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "17",
+            "question_text": "The voltage of the single phase supply to residential consumers is",
+            "options": [
+                "110 V",
+                "210 V",
+                "230 V",
+                "400 V"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Indian single-phase domestic supply is 230 V.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "18",
+            "question_text": "The capacity of a battery is expressed in terms of",
+            "options": [
+                "Current rating",
+                "Voltage rating",
+                "Ampere hour rating",
+                "Power rating"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Battery capacity (charge it can deliver) is given in ampere-hours.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "19",
+            "question_text": "Chemical energy is converted to _______ energy by a fuel cell",
+            "options": [
+                "solar",
+                "electrical",
+                "potential",
+                "mechanical"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "A fuel cell converts chemical energy directly into electrical energy.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "20",
+            "question_text": "For a consumer most economic power factor is",
+            "options": [
+                "0.5 lagging",
+                "0.5 leading",
+                "0.95 lagging",
+                "0.95 leading"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Near-unity PF (about 0.95 lagging) cuts reactive-power penalties without costly capacitor banks.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        }
+    ]
+}

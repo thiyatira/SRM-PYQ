@@ -13,7 +13,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "In a flowchart, the rectangle is the process symbol (processing step or assignment). The parallelogram is used for input/output, the diamond for decisions and the oval/circle for start/end connectors.",
+            "answer": "The rectangle is the process symbol; the parallelogram is I/O, the diamond is a decision and the oval/circle is start/end.",
             "answer_source": "generated",
             "chapter": "Unit 1: Evolution of Programming & Languages - Problem solving through programming - Writing algorithms & Pseudo code"
         },
@@ -66,7 +66,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Variable names in C must start with an alphabet or an underscore, and can contain alphanumeric characters or underscores. Special characters like `$` are not allowed in identifiers.",
+            "answer": "Identifiers may use only letters, digits and `_`, so `$main` is invalid.",
             "answer_source": "generated",
             "chapter": "Unit 1: Variables and identifiers, Constants, Keywords"
         },
@@ -126,7 +126,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Variable names must begin with an alphabet or an underscore. Option (a) is false (only underscore allowed as special char). Option (b) is false (keywords are reserved). Option (d) is false (only a certain number of initial characters are significant, not arbitrary length).",
+            "answer": "Names cannot start with a digit. The others are false: only `_` is allowed as a special character, keywords are reserved, and length is limited.",
             "answer_source": "generated",
             "chapter": "Unit 1: Variables and identifiers, Constants, Keywords"
         },
@@ -141,7 +141,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Variable names in C cannot contain special characters like '%'. 'friend' and 'export' are not C keywords and are valid identifiers (though 'friend' is a keyword in C++). 'value_ab' is a valid identifier.",
+            "answer": "`%` is not allowed in identifiers. `friend` and `export` are not C keywords, so they are valid names.",
             "answer_source": "generated",
             "chapter": "Unit 1: Variables and identifiers, Constants, Keywords"
         },

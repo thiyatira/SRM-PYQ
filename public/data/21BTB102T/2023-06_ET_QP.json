@@ -13,7 +13,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Cytokinesis is the process of cell division in which the cytoplasm of a single eukaryotic cell divides into two daughter cells. It usually occurs concurrently with the nuclear division (mitosis or meiosis).",
+            "answer": "Cytokinesis divides the cytoplasm after nuclear division.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
@@ -28,7 +28,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Bacteria, being prokaryotes, do not have a membrane-bound nucleus. Their genetic material (a single circular chromosome) is located in a region of the cytoplasm called the nucleoid.",
+            "answer": "Bacteria are prokaryotes with no nucleus; their DNA lies in the nucleoid.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
@@ -43,7 +43,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Robert Hooke observed cork cells under a microscope in 1665 and coined the term 'cell' to describe the small, box-like structures he saw.",
+            "answer": "Robert Hooke coined 'cell' in 1665 from cork under a microscope.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
@@ -58,7 +58,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Ribosomes are often called the 'workhorses' of the cell because they are responsible for protein synthesis, translating messenger RNA into proteins.",
+            "answer": "Ribosomes make proteins, the cell's main workers.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
@@ -73,7 +73,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "tRNA (transfer RNA) molecules are responsible for carrying specific amino acids to the ribosome during protein synthesis (translation) and ensuring they are added to the polypeptide chain in the correct order.",
+            "answer": "tRNA brings specific amino acids to the ribosome during translation.",
             "answer_source": "generated",
             "chapter": "Unit 3: Structure Biology"
         },
@@ -88,7 +88,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "A blastocyst is a multicellular stage of a developing embryo, formed about 5-6 days after fertilization, consisting of an inner cell mass and an outer layer of cells (trophectoderm).",
+            "answer": "A blastocyst is a multicellular embryo stage (inner cell mass plus trophectoderm), not a single cell or 8-cell stage.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
@@ -103,7 +103,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "In DNA, adenine (A) always pairs with thymine (T) via two hydrogen bonds, while guanine (G) pairs with cytosine (C) via three hydrogen bonds.",
+            "answer": "A pairs with T through 2 hydrogen bonds (G-C has 3).",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
@@ -118,7 +118,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "BLASTX compares a nucleotide sequence translated in all six reading frames against a protein sequence database. BLASTN compares nucleotide to nucleotide, BLASTP protein to protein, and TBLASTX compares translated nucleotide query against translated nucleotide database.",
+            "answer": "BLASTx translates a nucleotide query in six frames and searches a protein database.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
@@ -133,7 +133,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "UGA is one of the three stop codons (UAA, UAG, UGA) in the genetic code. When a ribosome encounters a UGA codon during translation, it signals the termination of protein synthesis, and the polypeptide chain is released.",
+            "answer": "UGA is a stop codon, so translation terminates.",
             "answer_source": "generated",
             "chapter": "Unit 3: Structure Biology"
         },
@@ -148,7 +148,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Amino acids are the building blocks that are joined together by peptide bonds to form polypeptide chains, which then fold into functional proteins.",
+            "answer": "Amino acids joined by peptide bonds form a polypeptide, i.e. a protein.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
@@ -163,7 +163,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "A cofactor is a non-protein chemical compound or metallic ion that is required for an enzyme's activity. Many vitamins, particularly B vitamins, function as cofactors (or their precursors, coenzymes) in various metabolic reactions.",
+            "answer": "A cofactor is a non-protein helper such as a metal ion; vitamins are coenzyme precursors, not the listed answer.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
@@ -178,7 +178,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "PyMOL is a widely used open-source molecular visualization system for rendering 3D chemical structures, particularly biological macromolecules like proteins.",
+            "answer": "PyMOL renders 3D molecular structures; BLAST and NCBI are not visualizers.",
             "answer_source": "generated",
             "chapter": "Unit 3: Structure Biology"
         },
@@ -193,7 +193,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Astrocytes are a type of glial cell in the brain and spinal cord that are star-shaped and have numerous functions, including supporting neurons and maintaining the blood-brain barrier.",
+            "answer": "Astrocytes are star-shaped glial cells.",
             "answer_source": "generated",
             "chapter": "Unit 4: Neurobiology"
         },
@@ -208,7 +208,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Neurotransmitters are chemical messengers released from the presynaptic neuron into the synaptic cleft, where they bind to receptors on the postsynaptic neuron to transmit signals.",
+            "answer": "Neurotransmitters are released into the synaptic cleft.",
             "answer_source": "generated",
             "chapter": "Unit 4: Neurobiology"
         },
@@ -223,7 +223,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "An artificial neural network is built from artificial neurons with inputs (analogous to dendrites), outputs (analogous to axons) and weighted connections (analogous to synapses). There is no component called an 'N' population, so that is the option an ANN does not contain.",
+            "answer": "An ANN has input (dendrite), output (axon) and weights (synapse) analogues, but no 'N population'.",
             "answer_source": "generated",
             "chapter": "Unit 4: Neurobiology"
         },
@@ -238,7 +238,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Alzheimer's disease is pathologically characterized by the accumulation of amyloid plaques (extracellular deposits of amyloid-beta protein) and neurofibrillary tangles (intracellular aggregates of tau protein) in the brain. While 'plaques' are a hallmark, the term 'caused by' implies direct etiology. However, amongst the choices, plaques are the most directly linked characteristic related to the disease's mechanism, distinguishing it from Parkinson's (dopamine-related neurons) or general brain inflammation (encephalitis).",
+            "answer": "Amyloid plaques (with tau tangles) are the hallmark of Alzheimer's; dopamine loss is Parkinson's.",
             "answer_source": "generated",
             "chapter": "Unit 4: Neurobiology"
         },
@@ -253,7 +253,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Lymph circulates through the lymphatic system and is especially rich in lymphocytes, the cells of the immune system. Blood also carries white cells, but lymph (with the lymph nodes) is the fluid most characteristically rich in immune cells, whereas saliva and the pancreas are not.",
+            "answer": "Lymph, with its lymph nodes, is especially rich in lymphocytes.",
             "answer_source": "generated",
             "chapter": "Unit 5: Immunobiology"
         },
@@ -268,7 +268,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The oral polio vaccine (OPV), administered as drops, is a live attenuated vaccine, meaning it contains a weakened (attenuated) form of the poliovirus that can replicate in the gut but not cause disease, eliciting a strong immune response.",
+            "answer": "Oral polio drops contain live attenuated poliovirus.",
             "answer_source": "generated",
             "chapter": "Unit 5: Immunobiology"
         },
@@ -283,7 +283,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "An epitope is the specific part of an antigen that is recognized by the immune system, specifically by antibodies or T-cell receptors. Therefore, epitopes are present *on* antigens.",
+            "answer": "An epitope is the part of an antigen recognised by antibodies or T-cell receptors.",
             "answer_source": "generated",
             "chapter": "Unit 5: Immunobiology"
         },
@@ -298,7 +298,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Bcepred is a tool specifically designed for predicting B-cell epitopes. In contrast, NetChop, Propred, and NetMHC are tools related to the prediction of T-cell epitopes (e.g., proteasomal cleavage sites for MHC class I presentation, and MHC binding prediction).",
+            "answer": "BCEPred predicts B-cell epitopes; NetChop, ProPred and NetMHCpan are T-cell epitope tools.",
             "answer_source": "generated",
             "chapter": "Unit 5: Immunobiology"
         },

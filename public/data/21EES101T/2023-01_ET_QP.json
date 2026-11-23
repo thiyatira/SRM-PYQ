@@ -1,0 +1,290 @@
+{
+    "paper_title": "21EES101T_Jan_2023",
+    "source": "21EES101T_Jan_2023",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "In the circuit shown below, find the current flowing through 12 Ω resistor.",
+            "options": [
+                "8 A",
+                "5 A",
+                "2 A",
+                "4 A"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Current divider: $I=10\\times\\dfrac{3}{12+3}=2$ A.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "2",
+            "question_text": "What is the value of R in the circuit shown",
+            "options": [
+                "2.5 Ω",
+                "5 Ω",
+                "7.5 Ω",
+                "10 Ω"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "R carries $6-4=2$ A at $4\\times5=20$ V, so $R=20/2=10\\ \\Omega$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "4",
+            "question_text": "For a three phase delta connected system, the line voltage is 1100 V and line current is 500 A, Calculate the value of phase voltage and phase current.",
+            "options": [
+                "1100 V, 500 A",
+                "1100 V, 288.67 A",
+                "635.08 V, 500 A",
+                "635.08 V, 288.67 A"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Delta: $V_{ph}=V_L=1100$ V and $I_{ph}=I_L/\\sqrt{3}=500/1.732=288.67$ A.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "5",
+            "question_text": "Which of the following is not a terminal of BJT?",
+            "options": [
+                "Emitter",
+                "Base",
+                "Collector",
+                "Gate"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "A BJT has emitter, base and collector; gate belongs to FETs.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "6",
+            "question_text": "The Algebraic function for Ex-NOR Gate is",
+            "options": [
+                "A'B+AB'",
+                "AB+A'B'",
+                "AB+A'B",
+                "AB+AB'"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "XNOR $=AB+A'B'$.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "7",
+            "question_text": "The minimal SOP for the function Y(A,B,C) = Σm(0,1,2,3,4,5,6,7) is",
+            "options": [
+                "0",
+                "1",
+                "A",
+                "A'"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "All 8 minterms are present, so $Y=1$.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "8",
+            "question_text": "FPGA stands for",
+            "options": [
+                "Flexible Programmable Gate Array",
+                "Field Programmable Gate Acceleration",
+                "Flexible Programmable Gate Acceleration",
+                "Field Programmable Gate Array"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "FPGA = Field Programmable Gate Array.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "9",
+            "question_text": "The transformer core is made up of laminations to reduce",
+            "options": [
+                "iron losses",
+                "hysteresis losses",
+                "eddy current losses",
+                "Stray losses"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Laminations break up the paths of eddy currents, reducing eddy current loss.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "10",
+            "question_text": "In a three phase induction motor, the three phase winding R,Y,B are connected in",
+            "options": [
+                "series",
+                "parallel",
+                "series and parallel",
+                "star"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "Three-phase windings are connected in star (or delta).",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "11",
+            "question_text": "A chopper is a device that converts",
+            "options": [
+                "fixed AC to variable AC",
+                "fixed DC to variable AC",
+                "fixed AC to variable DC",
+                "fixed DC to variable DC"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "A chopper converts fixed DC to variable DC.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "12",
+            "question_text": "A step down transformer has a primary voltage and current of 1000 V, 20 A. Its secondary voltage and current are",
+            "options": [
+                "100 V, 200 A",
+                "10000 V, 2 A",
+                "10000 V, 20 A",
+                "100 V, 20 A"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Power is conserved: $V_2=100$ V needs $I_2=20{,}000/100=200$ A.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "13",
+            "question_text": "Moving coil instruments are used to measure",
+            "options": [
+                "DC quantity only",
+                "AC quantity only",
+                "both AC and DC quantity",
+                "power and energy"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "A moving coil (PMMC) meter reads the average value, so it measures DC only.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "14",
+            "question_text": "Digital multimeter cannot measure",
+            "options": [
+                "voltage",
+                "current",
+                "power",
+                "Resistance"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "A multimeter measures V, I and R; power needs a wattmeter.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "15",
+            "question_text": "A LVDT is used to measure",
+            "options": [
+                "frequency",
+                "displacement",
+                "temperature",
+                "speed"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "An LVDT measures displacement.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "16",
+            "question_text": "The symbol represents _______ device",
+            "options": [
+                "LDR",
+                "LED",
+                "LCD",
+                "Photo resist transducer"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "A resistor-in-circle symbol with light arrows is an LDR.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "17",
+            "question_text": "What is the highest AC transmission line voltage in India?",
+            "options": [
+                "400 kV",
+                "765 kV",
+                "1100 kV",
+                "1265 kV"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "765 kV is the highest operating AC transmission voltage in India.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "18",
+            "question_text": "Which of the following is not a renewable energy resource?",
+            "options": [
+                "Solar power",
+                "Wind power",
+                "Thermal power",
+                "Tidal power"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Thermal power burns fossil fuels, which are non-renewable.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "19",
+            "question_text": "What is the most common fuel used in fuel cells?",
+            "options": [
+                "Water",
+                "Hydrogen",
+                "Nitrogen",
+                "Sulphur"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Hydrogen is the most common fuel cell fuel.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "20",
+            "question_text": "Which types of battery is highly preffered for EVs?",
+            "options": [
+                "Lead acid battery",
+                "Nickel cadmium battery",
+                "Lithium ion battery"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Li-ion has high energy density and low weight, so it is preferred for EVs.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        }
+    ]
+}

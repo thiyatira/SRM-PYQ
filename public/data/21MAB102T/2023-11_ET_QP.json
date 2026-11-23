@@ -1,0 +1,306 @@
+{
+    "paper_title": "2023_Nov_ET",
+    "source": "2023_Nov_ET",
+    "questions": [
+        {
+            "question_number": "U1Q38",
+            "question_text": "Evaluation of $\\int_0^1 \\int_0^1 dx dy$ is",
+            "options": [
+                "1",
+                "0",
+                "2",
+                "4"
+            ],
+            "correct_option": "A",
+            "marks": 2,
+            "answer": "$[x]_0^1 \\cdot [y]_0^1 = 1 \\times 1 = 1$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Integral Calculus"
+        },
+        {
+            "question_number": "U1Q39",
+            "question_text": "Area of the double integral in Cartesian co-ordinate is equal to",
+            "options": [
+                "$\\iint_R dy dx$",
+                "$\\iint_R r dr d\\theta$",
+                "$\\iint_R x dx dy$",
+                "$\\iint_R x^2 dx dy$"
+            ],
+            "correct_option": "A",
+            "marks": 2,
+            "answer": "Area is given by $\\iint_R dA$, and in Cartesian coordinates $dA = dy dx$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Integral Calculus"
+        },
+        {
+            "question_number": "U1Q40",
+            "question_text": "Change the order of integration in $\\int_0^a \\int_0^x dy dx$ is",
+            "options": [
+                "$\\int_0^a \\int_0^x dx dy$",
+                "$\\int_0^a \\int_0^x x dy dx$",
+                "$\\int_0^a \\int_y^a dx dy$",
+                "$\\int_0^a \\int_0^y dx dy$"
+            ],
+            "correct_option": "C",
+            "marks": 2,
+            "answer": "Region: $0\\le y\\le x\\le a$. Taking horizontal strips, $y$ runs $0$ to $a$ and $x$ runs $y$ to $a$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Integral Calculus"
+        },
+        {
+            "question_number": "U1Q41",
+            "question_text": "$\\int_0^1 \\int_0^2 \\int_0^3 dx dy dz$ is equal to",
+            "options": [
+                "3",
+                "4",
+                "2",
+                "6"
+            ],
+            "correct_option": "D",
+            "marks": 2,
+            "answer": "Triple integral with constant limits simply multiplies the bounds: $(3-0) \\times (2-0) \\times (1-0) = 6$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Integral Calculus"
+        },
+        {
+            "question_number": "U2Q38",
+            "question_text": "The unit vector normal to the surface $x^2+y^2-z^2=1$ at $(1,1,1)$ is",
+            "options": [
+                "$\\frac{\\mathbf{i}+\\mathbf{j}-\\mathbf{k}}{\\sqrt{3}}$",
+                "$\\frac{2\\mathbf{i}+2\\mathbf{j}-2\\mathbf{k}}{\\sqrt{2}}$",
+                "$\\frac{3\\mathbf{i}+3\\mathbf{j}-3\\mathbf{k}}{2\\sqrt{3}}$",
+                "$\\frac{\\mathbf{i}+\\mathbf{j}-\\mathbf{k}}{3\\sqrt{2}}$"
+            ],
+            "correct_option": "A",
+            "marks": 2,
+            "answer": "$\\nabla\\phi=(2,2,-2)$ at $(1,1,1)$ with magnitude $2\\sqrt3$, so the unit normal is $\\frac{\\mathbf i+\\mathbf j-\\mathbf k}{\\sqrt3}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Vector Calculus"
+        },
+        {
+            "question_number": "U2Q39",
+            "question_text": "If $\\vec{r}$ is the position vector of the point $(x, y, z)$ w.r.t to the origin, then $\\nabla \\cdot \\vec{r}$ is",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "correct_option": "C",
+            "marks": 2,
+            "answer": "$\\nabla \\cdot \\vec{r} = \\frac{\\partial x}{\\partial x} + \\frac{\\partial y}{\\partial y} + \\frac{\\partial z}{\\partial z} = 1 + 1 + 1 = 3$.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Vector Calculus"
+        },
+        {
+            "question_number": "U2Q40",
+            "question_text": "The connection between a surface integral and a volume integral is known as",
+            "options": [
+                "Green's theorem",
+                "Gauss Divergence theorem",
+                "Cauchy's theorem",
+                "Stoke's theorem"
+            ],
+            "correct_option": "B",
+            "marks": 2,
+            "answer": "The Gauss Divergence Theorem states that the outward flux of a vector field through a closed surface is equal to the volume integral of the divergence over the region inside the surface.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Vector Calculus"
+        },
+        {
+            "question_number": "U2Q41",
+            "question_text": "If $\\phi = xyz$, then $\\nabla \\phi$ is",
+            "options": [
+                "$yz \\mathbf{i} + zx \\mathbf{j} + xy \\mathbf{k}$",
+                "$xy \\mathbf{i} + yz \\mathbf{j}$",
+                "$xy \\mathbf{i} + yz \\mathbf{j} + zx \\mathbf{k}$",
+                "$zx \\mathbf{i} + xy \\mathbf{j} + yz \\mathbf{k}$"
+            ],
+            "correct_option": "A",
+            "marks": 2,
+            "answer": "$\\nabla\\phi=\\left(\\partial_x,\\partial_y,\\partial_z\\right)(xyz)=yz\\,\\mathbf i+xz\\,\\mathbf j+xy\\,\\mathbf k$.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Vector Calculus"
+        },
+        {
+            "question_number": "U3Q38",
+            "question_text": "$L(t^4) =$",
+            "options": [
+                "$\\frac{4!}{s^5}$",
+                "$\\frac{3!}{s^4}$",
+                "$\\frac{4!}{s^4}$",
+                "$\\frac{5!}{s^4}$"
+            ],
+            "correct_option": "A",
+            "marks": 2,
+            "answer": "$L(t^n) = \\frac{n!}{s^{n+1}}$. For $n=4$, $L(t^4) = \\frac{4!}{s^5}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Laplace Transform"
+        },
+        {
+            "question_number": "U3Q39",
+            "question_text": "$L(\\cosh t) =$",
+            "options": [
+                "$\\frac{s}{s^2+1}$",
+                "$\\frac{s}{s^2-1}$",
+                "$\\frac{1}{s^2+1}$",
+                "$\\frac{1}{s^2-1}$"
+            ],
+            "correct_option": "B",
+            "marks": 2,
+            "answer": "$\\cosh t = \\frac{e^t + e^{-t}}{2}$. Taking the transform: $\\frac{1}{2}(\\frac{1}{s-1} + \\frac{1}{s+1}) = \\frac{1}{2}(\\frac{s+1+s-1}{s^2-1}) = \\frac{s}{s^2-1}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Laplace Transform"
+        },
+        {
+            "question_number": "U3Q40",
+            "question_text": "Using the initial value theorem, find the value of the function $f(t) = 1+e^{-t}+t^2$",
+            "options": [
+                "0",
+                "1",
+                "2",
+                "3"
+            ],
+            "correct_option": "C",
+            "marks": 2,
+            "answer": "The initial value theorem evaluates the function as $t \\to 0$. $\\lim_{t \\to 0} (1 + e^{-t} + t^2) = 1 + e^0 + 0^2 = 1 + 1 = 2$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Laplace Transform"
+        },
+        {
+            "question_number": "U3Q41",
+            "question_text": "The period of $\\tan t$ is",
+            "options": [
+                "0",
+                "$\\pi$",
+                "$\\pi/2$",
+                "$\\pi/4$"
+            ],
+            "correct_option": "B",
+            "marks": 2,
+            "answer": "The tangent function repeats its values every $\\pi$ radians. Hence, its fundamental period is $\\pi$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Laplace Transform"
+        },
+        {
+            "question_number": "U4Q38",
+            "question_text": "The function $f(z) = u+iv$ is analytic if",
+            "options": [
+                "$u_x = v_y, u_y = -v_x$",
+                "$u_x = -v_y, u_y = v_x$",
+                "$u_x+v_y=0, u_y-v_x=0$",
+                "$u_y=v_y, u_x=v_x$"
+            ],
+            "correct_option": "A",
+            "marks": 2,
+            "answer": "The Cauchy-Riemann equations are $\\frac{\\partial u}{\\partial x} = \\frac{\\partial v}{\\partial y}$ and $\\frac{\\partial u}{\\partial y} = -\\frac{\\partial v}{\\partial x}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Analytic Functions"
+        },
+        {
+            "question_number": "U4Q39",
+            "question_text": "The transformation $w = cz$ where $c$ is real constant known as",
+            "options": [
+                "rotation",
+                "reflection",
+                "magnification",
+                "translation"
+            ],
+            "correct_option": "C",
+            "marks": 2,
+            "answer": "Because $c$ is purely real, the magnitude of $z$ is scaled by $|c|$ while its phase remains unchanged. This represents magnification.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Analytic Functions"
+        },
+        {
+            "question_number": "U4Q40",
+            "question_text": "The real part of $f(z) = e^{2z}$ is",
+            "options": [
+                "$e^x \\cos y$",
+                "$e^x \\sin y$",
+                "$e^{2x} \\cos 2y$",
+                "$e^{2x} \\sin 2y$"
+            ],
+            "correct_option": "C",
+            "marks": 2,
+            "answer": "Substitute $z = x+iy$. $e^{2z} = e^{2(x+iy)} = e^{2x}e^{i2y} = e^{2x}(\\cos 2y + i \\sin 2y)$. The real part is $e^{2x} \\cos 2y$.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Analytic Functions"
+        },
+        {
+            "question_number": "U4Q41",
+            "question_text": "The invariant points of $w = -\\frac{2z+4i}{iz+1}$ are",
+            "options": [
+                "$z=4i, -i$",
+                "$z=2i, i$",
+                "$z=-4i, i$",
+                "$z=-2i, i$"
+            ],
+            "correct_option": "A",
+            "marks": 2,
+            "answer": "Put $w=z$: $iz^2+3z+4i=0\\Rightarrow z^2-3iz+4=0\\Rightarrow z=\\frac{3i\\pm5i}{2}=4i,-i$.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Analytic Functions"
+        },
+        {
+            "question_number": "U5Q38",
+            "question_text": "If $f(z)$ is analytic inside and on $C$, the value of $\\oint_C f(z) dz$, where $C$ is the simple closed curve, is",
+            "options": [
+                "0",
+                "$f(a)$",
+                "$2\\pi i f(a)$",
+                "$\\pi i f(a)$"
+            ],
+            "correct_option": "A",
+            "marks": 2,
+            "answer": "By Cauchy's Integral Theorem, if a function is analytic everywhere inside and on a simple closed contour, its contour integral around that path is exactly zero.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Complex Integration"
+        },
+        {
+            "question_number": "U5Q39",
+            "question_text": "If $f(z)$ is analytic inside and on $c$, the value of $\\int_c \\frac{f(z)}{(z-a)^2} dz$, where $c$ is the simple closed curve and $a$ is any point within $c$, is",
+            "options": [
+                "$f(a)$",
+                "$2\\pi i f(a)$",
+                "$\\pi i f(a)$",
+                "$2\\pi i f'(a)$"
+            ],
+            "correct_option": "D",
+            "marks": 2,
+            "answer": "Derivative form of Cauchy's formula: $\\oint\\frac{f(z)}{(z-a)^2}dz=2\\pi i f'(a)$.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Complex Integration"
+        },
+        {
+            "question_number": "U5Q40",
+            "question_text": "Let $C_1: |z-a| = R_1$ and $C_2: |z-a| = R_2$ be two concentric circles $(R_2 < R_1)$, the $f(z)$ can be expanded as a Laurent's series if",
+            "options": [
+                "$f(z)$ is analytic within $C_2$",
+                "$f(z)$ is not analytic within $C_2$",
+                "$f(z)$ is analytic in the annular region",
+                "$f(z)$ is not analytic in the annular region"
+            ],
+            "correct_option": "C",
+            "marks": 2,
+            "answer": "Laurent's Theorem states that a complex function $f(z)$ can be represented by a Laurent series provided it is analytic in the annular region between two concentric circles.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Complex Integration"
+        },
+        {
+            "question_number": "U5Q41",
+            "question_text": "The residue of $f(z) = \\frac{z}{(z-2)}$ is",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "correct_option": "B",
+            "marks": 2,
+            "answer": "Simple pole at $z=2$; residue $=\\lim_{z\\to2}(z-2)f(z)=2$.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Complex Integration"
+        }
+    ]
+}

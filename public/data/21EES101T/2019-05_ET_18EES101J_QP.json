@@ -1,0 +1,216 @@
+{
+    "paper_title": "18EES101J_May_2019",
+    "source": "18EES101J_May_2019",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "Krichoff's voltage law is based on",
+            "options": [
+                "Law of conservation of energy",
+                "Law of conservation of charge",
+                "Faraday's law of electromagnetic induction",
+                "Fleming's right hand rule"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "KVL says the net energy gained/lost around a closed loop is zero, i.e. conservation of energy.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "2",
+            "question_text": "Superposition theorem is applied to",
+            "options": [
+                "Only linear circuit",
+                "Only non linear circuit",
+                "Either on linear or non linear circuit",
+                "Only on DC circuit"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Superposition needs linearity (and bilateral elements); it fails for non-linear circuits and works for AC as well as DC.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "3",
+            "question_text": "Three equal resistances of 3 Ω are connected in star. What is the resistance in one of the arms in an equivalent delta circuit?",
+            "options": [
+                "10 Ω",
+                "27 Ω",
+                "9 Ω",
+                "3 Ω"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Delta resistance = $3R_Y = 3\\times3 = 9\\ \\Omega$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "4",
+            "question_text": "In a certain series RC circuit, the true power is 2W, and the reactive power is 3.5 VAR. What is the apparent power?",
+            "options": [
+                "3.5 VA",
+                "2.03 VA",
+                "4.03 VA",
+                "3 VA"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "$S=\\sqrt{P^2+Q^2}=\\sqrt{2^2+3.5^2}=\\sqrt{16.25}\\approx4.03$ VA.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "5",
+            "question_text": "A power factor of '0' indicates",
+            "options": [
+                "Purely resistive element",
+                "Purely inductive element",
+                "Combination of both (A) and (B)",
+                "Purely capacitive element and resistive element"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "$\\text{PF}=0$ means a 90 degree phase shift, so the element is purely reactive; of the given choices only the purely inductive one fits.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "8",
+            "question_text": "Material used for the construction of transformer core is usually",
+            "options": [
+                "Wood",
+                "Copper",
+                "Aluminium",
+                "Silicon steel"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "Silicon steel has high permeability and low hysteresis loss, and is laminated to cut eddy losses.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "9",
+            "question_text": "The function of choke and starter in a fluorescent lamp circuit is to",
+            "options": [
+                "Reduce the power consumed by the fluorescent lamp",
+                "Create a high voltage across the tube during starting",
+                "Help to draw very high current during starting",
+                "Improve the power factor of the fluorescent lamp circuit"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "The choke produces a high inductive voltage kick when the starter opens the circuit, which strikes the discharge.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "11",
+            "question_text": "Transistor can be used as an amplifier when it is operated",
+            "options": [
+                "In the saturation region",
+                "In the active region",
+                "In the cut-off region",
+                "In both saturation and cut-off regions"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Linear amplification needs the active region; saturation and cut-off distort the signal.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "12",
+            "question_text": "MOSFET stands for",
+            "options": [
+                "Metal oxide semiconductor field effect transistor",
+                "Metal oxide silicon field effect transistor",
+                "Metal oxide semiconductor field excited transistor",
+                "Metal oxide silicon field excited transistor"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "MOSFET = Metal Oxide Semiconductor Field Effect Transistor.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "13",
+            "question_text": "Moving coil instruments can be used on",
+            "options": [
+                "DC only",
+                "Sinusoidal AC only",
+                "All AC waveforms",
+                "AC and DC both"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "A PMMC (moving coil) meter deflects in proportion to the average current, so it reads DC only.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "14",
+            "question_text": "A strain gauge should have",
+            "options": [
+                "High gauge factor and low sensitivity",
+                "High gauge factor and high sensitivity",
+                "Low gauge factor and low sensitivity",
+                "Low gauge factor and high sensitivity"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "A good strain gauge has a high gauge factor ($\\Delta R/R$ per unit strain) and high sensitivity to detect small strains.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "16",
+            "question_text": "Which of the following is not a pressure measurement transducers?",
+            "options": [
+                "Piezo electric tansducer",
+                "Strain gauge",
+                "LVDT",
+                "Thermocouple"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "A thermocouple senses temperature (Seebeck effect); piezoelectric, strain gauge and LVDT-based sensors are used for pressure.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "18",
+            "question_text": "Which of the following statements is true, according to Demorgan's theorem",
+            "options": [
+                "$\\overline{A+B} = \\overline{A}.\\overline{B}$",
+                "$\\overline{A}+\\overline{B} = \\overline{A}.\\overline{B}$",
+                "$\\overline{A+B} = \\overline{A.B}$",
+                "$A.B = \\overline{A} + \\overline{B}$"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "De Morgan: $\\overline{A+B}=\\overline{A}\\cdot\\overline{B}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "19",
+            "question_text": "Connecting of inverters at all the inputs of an AND gate produces a",
+            "options": [
+                "NAND gate",
+                "OR gate",
+                "NOR gate",
+                "XOR gate"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Inverting each input of an AND gate gives $\\overline{A}\\,\\overline{B}=\\overline{A+B}$, which is NOR.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        }
+    ]
+}

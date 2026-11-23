@@ -3,6 +3,7 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import type { Catalogue } from "@/lib/pyq/data";
 import { useCatalogue } from "@/lib/pyq/CatalogueContext";
+import { migrateQuestionId } from "@/lib/pyq/legacyNames";
 import { NAV_KEY, readJson, writeJson } from "@/lib/pyq/storage";
 import { SemesterList, SubjectList } from "./pyq/Browse";
 import { SubjectSearch } from "./pyq/SubjectSearch";
@@ -45,7 +46,7 @@ function parseHash(hash: string, { getSubject }: Catalogue): { code: string; foc
   try {
     const code = decodeURIComponent(m[1]);
     if (!getSubject(code)) return null;
-    return { code, focusId: m[2] ? decodeURIComponent(m[2]) : null };
+    return { code, focusId: m[2] ? migrateQuestionId(code, decodeURIComponent(m[2])) : null };
   } catch {
     return null;
   }

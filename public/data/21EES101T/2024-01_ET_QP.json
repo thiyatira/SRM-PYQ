@@ -1,0 +1,291 @@
+{
+    "paper_title": "21EES101T_Jan_2024",
+    "source": "21EES101T_Jan_2024",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "Thevenin's resistance is found by _______",
+            "options": [
+                "Shorting all voltage sources",
+                "Opening all current sources",
+                "Shorting all voltage sources and opening all current sources",
+                "Opening all voltage sources and shorting all current sources"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Rth: short the voltage sources and open the current sources.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "2",
+            "question_text": "The internal resistance for the maximum transfer of power should be _______",
+            "options": [
+                "equal to load resistance",
+                "greater than load resistance",
+                "zero",
+                "lesser than load resistance"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Maximum power transfer needs source resistance equal to load resistance.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "3",
+            "question_text": "The 2ohm and 3 ohm resistor are in series the equivalent resistance is",
+            "options": [
+                "1.2 ohm",
+                "5 ohm",
+                "4.2 ohm",
+                "9 ohm"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Series resistances add: $2+3=5\\ \\Omega$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "4",
+            "question_text": "In a star connected system, the current flowing through the line is _______",
+            "options": [
+                "Greater than the phase current",
+                "Equal to the phase current",
+                "Lesser than the phase current",
+                "zero"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "In a star connection the line is in series with the phase, so $I_L=I_{ph}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "5",
+            "question_text": "How many AND gates are required to realize A.B+C.D+E",
+            "options": [
+                "2",
+                "4",
+                "3",
+                "1"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "$AB+CD+E$ has two product terms, so 2 AND gates (then an OR gate).",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "7",
+            "question_text": "The structure of the IGBT is a",
+            "options": [
+                "P-N-P structure connected by a MOS gate",
+                "N-N-P-P structure connected by a MOS gate",
+                "P-N-P-N structure connected by a MOS gate",
+                "N-P-N-P structure connected by a MOS gate"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "An IGBT is a P-N-P-N structure with a MOS gate.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "8",
+            "question_text": "An SCR is a _______",
+            "options": [
+                "four layer, four junction device",
+                "four layer, three junction device",
+                "four layer, two junction device",
+                "three layer, single junction device"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "An SCR has four layers (PNPN) and three junctions.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "9",
+            "question_text": "Thin laminations are used in a machine in order to reduce _______",
+            "options": [
+                "Eddy current losses",
+                "Hysteresis losses",
+                "Copper losses",
+                "Interference"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Thin laminations cut the paths of eddy currents, reducing eddy current loss.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "10",
+            "question_text": "Commutator in DC generator is used for _______",
+            "options": [
+                "collecting of current",
+                "reduce losses",
+                "increase efficiency",
+                "convert AC armature current in to DC"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "The armature emf is alternating; the commutator rectifies it into DC at the terminals.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "11",
+            "question_text": "The frame of an induction motor is usually made of",
+            "options": [
+                "Silicon steel",
+                "Cast iron",
+                "Aluminum",
+                "Bronze"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Cast iron is strong, cheap and damps vibration, so it is used for motor frames.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "12",
+            "question_text": "An elevator drive is required to operate in",
+            "options": [
+                "one quadrant only",
+                "two quadrants.",
+                "three quadrants.",
+                "four quadrants."
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "An elevator needs motoring and braking in both up and down directions, i.e. four quadrants.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "13",
+            "question_text": "LEDs fabricated from the gallium arsenide emit radiation in the",
+            "options": [
+                "Visible Range",
+                "Infrared Region",
+                "Ultra violet Region",
+                "Ultrasonic Region"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "GaAs LEDs emit in the infrared region.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "14",
+            "question_text": "A device consists of a photo transistor and a led is _______",
+            "options": [
+                "Photo diode",
+                "Opto coupler",
+                "Opto isolator",
+                "Photo multiplier"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "An LED with a phototransistor in one package is an optocoupler.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "15",
+            "question_text": "In Ultrasonic proximity sensors the distance between the sensor and the target is determined by",
+            "options": [
+                "time taken by reflected light to reach back to sensor.",
+                "time taken by the sound to reflect back to the sensor.",
+                "measuring voltage at the output.",
+                "measuring changes in output current."
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "An ultrasonic sensor measures the time for a sound pulse to echo back (time of flight).",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "16",
+            "question_text": "_______ is the principle of operation of LVDT",
+            "options": [
+                "Mutual inductance",
+                "Self-inductance",
+                "Permanence",
+                "Reluctance"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "An LVDT works on mutual inductance.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "17",
+            "question_text": "For proper earthing, what should be the maximum value of earth resistance while carrying out the testing of the earth's continuity path?",
+            "options": [
+                "1 ohm",
+                "2 ohm",
+                "5 ohm",
+                "10 ohm"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Good earthing needs very low resistance, taken here as at most 1 ohm.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "18",
+            "question_text": "Identify the device which is used to give the signal to the circuit breaker at the time of fault",
+            "options": [
+                "Fuse",
+                "Isolator",
+                "Relay",
+                "CT"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "A protective relay senses the fault and sends the trip signal to the circuit breaker.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "19",
+            "question_text": "Electric vehicles and inductionhybrid vehicles have the following components in common except _______",
+            "options": [
+                "Battery",
+                "ECU",
+                "Generator",
+                "Internal combustion engine"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "A pure EV has no internal combustion engine; hybrids do.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "20",
+            "question_text": "The highest transmission voltage used in India is",
+            "options": [
+                "230 kV",
+                "1100 kV",
+                "765 kV",
+                "400 kV"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "765 kV is the highest transmission voltage in operation in India.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        }
+    ]
+}

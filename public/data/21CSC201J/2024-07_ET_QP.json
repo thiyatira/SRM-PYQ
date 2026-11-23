@@ -14,7 +14,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Arrays support constant time $O(1)$ random access to any element via its index because the memory is contiguous.",
+            "answer": "Contiguous memory plus the index lets any element be reached directly in $O(1)$ (random access).",
             "answer_source": "generated",
             "chapter": "Unit 1 - Introduction"
         },
@@ -29,7 +29,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The pointer `s` of type `struct student *` is a wild pointer that is not initialized to point to any valid memory address. Dereferencing it using `s->c` causes a segmentation fault at runtime.",
+            "answer": "`s` is an uninitialized (wild) pointer, so `s->c` dereferences invalid memory: segmentation fault.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Introduction"
         },
@@ -44,7 +44,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "The `continue` statement is used to skip the current iteration of a loop (`for`, `while`, or `do-while`). It has no meaning and cannot be used directly within a `switch` block unless the `switch` is nested inside a loop.",
+            "answer": "`continue` only applies to loops (`for`, `while`, `do-while`), not to a bare `switch`.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Introduction"
         },
@@ -89,7 +89,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Each node in a linked list consists of at least two fields: one for storing the actual data (payload) and another for storing a pointer/link to the next node.",
+            "answer": "Each node stores its data and a link (pointer) to the next node.",
             "answer_source": "generated",
             "chapter": "Unit 2 - List Structure"
         },
@@ -104,7 +104,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "In a standard circular linked list with only a `head` pointer, inserting a new node at the head requires traversing to the last node to update its `next` pointer to point to the new head. This operation takes $O(n)$ time. (If a `tail` pointer is maintained, it can be optimized to $O(1)$, but in general, without extra references, it is $O(n)$).",
+            "answer": "With only a head pointer, inserting at the head needs a traversal to the last node to relink it, so it is $O(n)$, not $O(1)$.",
             "answer_source": "generated",
             "chapter": "Unit 2 - List Structure"
         },
@@ -119,7 +119,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Round-robin CPU scheduling allocates fixed time slots to processes in a circular cycle, which is naturally implemented using a circular queue or circular linked list.",
+            "answer": "Round-robin scheduling cycles through processes repeatedly, which a circular list models naturally.",
             "answer_source": "generated",
             "chapter": "Unit 2 - List Structure"
         },
@@ -134,7 +134,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Stacks utilize the Last-In-First-Out (LIFO) property. When scanning an expression, opening parentheses are pushed onto the stack, and closing parentheses trigger a pop, verifying the correct nesting sequence.",
+            "answer": "Push each opening bracket and pop on each closing one; the pop must match (LIFO).",
             "answer_source": "generated",
             "chapter": "Unit 3 - Stack and Queue"
         },
@@ -149,7 +149,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Convert step by step using operator precedence:\n1. Inside the parentheses, $\\wedge$ binds tighter than $*$: $D \\wedge E \\rightarrow \\wedge D E$.\n2. Then $C * (\\wedge D E) \\rightarrow \\ast C \\wedge D E$.\n3. Now the expression is $A - B / (\\ast C \\wedge D E)$.\n4. Division binds tighter than subtraction: $B / (\\ast C \\wedge D E) \\rightarrow / B \\ast C \\wedge D E$.\n5. Finally $A - (/ B \\ast C \\wedge D E) \\rightarrow - A / B \\ast C \\wedge D E$.",
+            "answer": "$D\\wedge E \\to \\wedge DE$; $C*(\\dots) \\to *C\\wedge DE$; $B/(\\dots) \\to /B*C\\wedge DE$; $A-(\\dots) \\to -A/B*C\\wedge DE$.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Stack and Queue"
         },
@@ -164,7 +164,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "A queue is a linear structure where elements are inserted at the rear (enqueue) and removed from the front (dequeue), maintaining chronological FIFO ordering.",
+            "answer": "A queue inserts at the rear and removes from the front: first in, first out.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Stack and Queue"
         },
@@ -179,7 +179,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "In a standard linear (non-circular) queue array implementation, the array is full when the `rear` index reaches the last index of the array, which is `max_size - 1`.",
+            "answer": "In a linear array queue, rear reaches the last index `max_size - 1` when full.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Stack and Queue"
         },
@@ -194,7 +194,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "A complete binary tree is a binary tree in which every level, except possibly the last, is completely filled, and all nodes in the last level are as far left as possible.",
+            "answer": "A complete binary tree fills every level except possibly the last, which fills left to right.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Trees and Hashing"
         },
@@ -209,7 +209,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "By definition, a Binary Search Tree (BST) is a node-based binary tree data structure where the left subtree of a node contains only nodes with keys lesser than the parent node's key, and the right subtree contains only nodes with keys greater.",
+            "answer": "In a BST every left key is smaller and every right key is larger than the parent.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Trees and Hashing"
         },
@@ -224,7 +224,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Post-order traversal follows the rule: Left Subtree, Right Subtree, Root.\n- Let's traverse the left subtree rooted at Q:\n  - Left child: S\n  - Right child: T (its left is W, so post-order of subtree T is W -> T)\n  - Root: Q\n  - Combined left subtree traversal: S, W, T, Q\n- Let's traverse the right subtree rooted at R:\n  - Left child: U\n  - Right child: V\n  - Root: R\n  - Combined right subtree traversal: U, V, R\n- Finally, visit Root: P\n- Combining everything: S, W, T, Q, U, V, R, P.",
+            "answer": "Post-order is Left, Right, Root: Q-subtree gives S, W, T, Q; R-subtree gives U, V, R; then P.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Trees and Hashing"
         },
@@ -239,7 +239,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "A hash function takes a key as an input and maps it to a specific index (location) in the hash table array where the key-value pair can be stored.",
+            "answer": "A hash function maps a key to its index (location) in the table array.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Trees and Hashing"
         },
@@ -254,7 +254,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "In a directed graph's adjacency matrix $M$, an entry $M[i][j] = 1$ indicates a directed edge from vertex $i$ to vertex $j$. Thus, the sum of elements in row $i$ gives the number of outgoing edges (out-degree) from vertex $i$, and the sum of elements in column $j$ gives the number of incoming edges (in-degree) to vertex $j$.",
+            "answer": "Entry $M[i][j]$ is an edge $i \\to j$, so row $i$'s sum is the out-degree and column $j$'s sum is the in-degree.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Graph"
         },
@@ -269,7 +269,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "BFS explores neighbors level-by-level starting from the source node A:\n- Level 0: A\n- Level 1 (Neighbors of A): B, D\n- Level 2 (Neighbors of B and D): C (from B), E (from D)\n- Level 3 (Neighbor of E): F\nThis results in the sequence: A, B, D, C, E, F.",
+            "answer": "BFS goes level by level from A: A; B, D; C, E; F. Order: A B D C E F.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Graph"
         },
@@ -284,7 +284,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Applying Kruskal's or Prim's algorithm on the graph:\n- Sorted edge weights (approximated from visual representations):\n  - (d, c) = 4\n  - (a, d) = 6\n  - (a, c) = 9\n  - (d, b) = 15\n  - (d, e) = 20\n  - (a, b) = 26\n- Selecting minimum weight edges without creating cycles:\n  1. Select (d, c) [weight 4]\n  2. Select (a, d) [weight 6]\n  3. Select (d, b) [weight 15]\n  4. Select (d, e) [weight 20]\nThis connects all nodes {a, b, c, d, e} with 4 edges, yielding option (C).",
+            "answer": "Smallest non-cycle edges: (d-c) 4, (a-d) 6, (d-b) 15, (d-e) 20 connect all five vertices. (a-c) 9 would form a cycle.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Graph"
         },
@@ -299,7 +299,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Bellman-Ford is a single-source shortest path algorithm (capable of handling negative edge weights). Boruvka's, Prim's, and Kruskal's are algorithms designed to find a Minimum Spanning Tree (MST).",
+            "answer": "Bellman-Ford finds single-source shortest paths; Boruvka, Prim and Kruskal find MSTs.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Graph"
         },

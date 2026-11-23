@@ -1,0 +1,291 @@
+{
+    "paper_title": "21EES101T_Jul_2025",
+    "source": "21EES101T_Jul_2025",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "In a pure resistive circuit, the current _______ the voltage.",
+            "options": [
+                "InPhase",
+                "Lags",
+                "Leads",
+                "Greater than or equal to"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "In a resistor, voltage and current are in phase.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "2",
+            "question_text": "R1 = 1Ω, R2 = 3Ω, R3 = 5Ω and R4 = 7Ω connected in series. If the total applied voltage is 20V, the current flowing through the circuit is",
+            "options": [
+                "2.25 A",
+                "1.25 A",
+                "12.5 A",
+                "125A"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "$R=1+3+5+7=16\\ \\Omega$, so $I=20/16=1.25$ A.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "3",
+            "question_text": "For a three-phase star connected system with a line voltage of 440 V, calculate the value of phase voltage.",
+            "options": [
+                "440V",
+                "331.3V",
+                "254.03V",
+                "230V"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "$V_{ph}=440/\\sqrt{3}=254.03$ V.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "4",
+            "question_text": "The internal resistance for the maximum transfer of power should be",
+            "options": [
+                "Equal to load resistance",
+                "Greater than load resistance",
+                "Zero",
+                "Lesser than load resistance"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Maximum power transfer needs source resistance equal to load resistance.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "5",
+            "question_text": "Which of the following terminal does not belong to BJT?",
+            "options": [
+                "Base",
+                "Emitter",
+                "Collector",
+                "Drain"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "A BJT has base, emitter and collector; drain belongs to FETs.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "6",
+            "question_text": "SMPS stands for",
+            "options": [
+                "Switched Mode Power Supply",
+                "Switch Maximum Power Supply",
+                "Silicon Mode Power Supply",
+                "Switched Mode Power Section"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "SMPS = Switched Mode Power Supply.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "7",
+            "question_text": "The AND gate output C=1, if the two inputs are",
+            "options": [
+                "A=0, B=0",
+                "A=0, B=1",
+                "A=1, B=0",
+                "A=1, B=1"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "An AND gate gives 1 only when all inputs are 1.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "8",
+            "question_text": "An SCR is a",
+            "options": [
+                "Four junction device",
+                "Two junction device",
+                "Three junction device",
+                "One Junction device"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "An SCR has four layers (PNPN) and three junctions.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "9",
+            "question_text": "The brushes in DC machine are made of",
+            "options": [
+                "Rubber",
+                "Carbon",
+                "Aluminum",
+                "Copper"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Carbon brushes are self-lubricating and wear gently on the commutator.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "10",
+            "question_text": "Which of the following is not a part of transformer?",
+            "options": [
+                "Breather",
+                "Conservator",
+                "Buchholz relay",
+                "Commutator"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "A commutator belongs to DC machines; a transformer is static with no moving parts.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "11",
+            "question_text": "Which of the following motor rotates in incremental step angle?",
+            "options": [
+                "Servo motor",
+                "DC motor",
+                "Stepper motor",
+                "Linear Induction Motor"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "A stepper motor turns in fixed incremental steps for each pulse.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "12",
+            "question_text": "The stator core of a 3- phase induction motor is laminated in order to reduce the",
+            "options": [
+                "Eddy current loss",
+                "Hysteresis loss",
+                "Both eddy current and hysteresis loss",
+                "Weight of the stator"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Laminations cut the paths of eddy currents, reducing eddy current loss.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "13",
+            "question_text": "Moving coil instruments are used to measure",
+            "options": [
+                "DC quantity only",
+                "AC quantity only",
+                "Both AC and DC quantity",
+                "Either AC or DC"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "A moving coil (PMMC) meter reads the average value, so it measures DC only.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "14",
+            "question_text": "_______ is the example of an active transducer.",
+            "options": [
+                "Strain gauge",
+                "Thermistor",
+                "LVDT",
+                "Thermocouple"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "A thermocouple generates its own voltage (Seebeck effect), so it is active; the others need excitation.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "15",
+            "question_text": "LEDs fabricated from the gallium arsenide emit radiation in the",
+            "options": [
+                "Infrared Region",
+                "Visible Range",
+                "Ultraviolet Region",
+                "Ultrasonic Region"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "GaAs LEDs emit in the infrared region.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "16",
+            "question_text": "In PMMC instruments, the damping torque is provided by",
+            "options": [
+                "Air friction",
+                "Magnetic damping",
+                "Gravity",
+                "Eddy current damping"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "In a PMMC meter, eddy currents in the aluminium former give the damping.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "18",
+            "question_text": "A device that converts optical radiation into electrical energy is",
+            "options": [
+                "Diode",
+                "BJT",
+                "MOSFET",
+                "Solar cell"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "A solar cell converts light directly into electricity (photovoltaic effect).",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "19",
+            "question_text": "Which of the following is not a renewable energy recourse?",
+            "options": [
+                "Solar power",
+                "Wind power",
+                "Thermal power",
+                "Tidal power"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Thermal power burns fossil fuels, which are non-renewable.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "20",
+            "question_text": "The most common fuel used in fuel cell is",
+            "options": [
+                "Water",
+                "Hydrogen",
+                "Thermal Power",
+                "Sulphur"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Hydrogen is the most common fuel cell fuel.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        }
+    ]
+}

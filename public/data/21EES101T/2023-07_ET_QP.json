@@ -1,0 +1,306 @@
+{
+    "paper_title": "21EES101T_Jul_2023",
+    "source": "21EES101T_Jul_2023",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "A 60 Watts lamp is connected across 120 V D.C. supply. Determine the value of current drawn by the lamp.",
+            "options": [
+                "0.75A",
+                "0.5A",
+                "0.25A",
+                "1A"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "$I=P/V=60/120=0.5$ A.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "2",
+            "question_text": "For a three phase star connected system with a line voltage of 400V, calculate the value of phase voltage.",
+            "options": [
+                "210.54V",
+                "275.28V",
+                "331.33V",
+                "230.94V"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "$V_{ph}=V_L/\\sqrt{3}=400/1.732=230.94$ V.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "3",
+            "question_text": "To neglect the current source in Thevenin's theorem, the terminals across the sources are _______",
+            "options": [
+                "Replaced by source resistance",
+                "Replaced by capacitance",
+                "Short circuited",
+                "Open circuited"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "An ideal current source has infinite resistance, so it is open-circuited.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "4",
+            "question_text": "For a purely resistive circuit, the power factor is _______.",
+            "options": [
+                "1",
+                "0.75",
+                "0.5",
+                "Zero"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "In a resistive circuit the phase angle is 0, so $\\text{PF}=\\cos0=1$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "5",
+            "question_text": "Among the following, which transistor has silicon dioxide insulating layer?",
+            "options": [
+                "Diode",
+                "BJT",
+                "FET",
+                "MOSFET"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "A MOSFET's gate is insulated from the channel by a silicon dioxide layer.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "6",
+            "question_text": "A combination of AND function and NOT function is results in",
+            "options": [
+                "AND",
+                "OR",
+                "NAND",
+                "NOR"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "AND followed by NOT is NAND.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "7",
+            "question_text": "In an NPN transistors, the majority carriers in the base are _______.",
+            "options": [
+                "Free electrons",
+                "Holes",
+                "Both holes and electrons",
+                "Neither holes nor electrons"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "The base of an NPN transistor is P-type, so holes are the majority carriers.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "8",
+            "question_text": "The knee voltage (cut-in voltage) of silicon diode is _______.",
+            "options": [
+                "0.2 V",
+                "0.5 V",
+                "0.7 V",
+                "1 V"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "A silicon diode's knee voltage is about 0.7 V.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "9",
+            "question_text": "Among the following, which motor has permanent magnets in their rotor construction?",
+            "options": [
+                "DC motor",
+                "Transformer",
+                "Induction motor",
+                "BLDC motor"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "A BLDC motor has permanent magnets on the rotor.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "10",
+            "question_text": "A chopper is a device that converts _______.",
+            "options": [
+                "Fixed AC to variable AC",
+                "Fixed DC to variable AC",
+                "Fixed AC to variable DC",
+                "Fixed DC to variable DC"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "A chopper converts fixed DC to variable DC.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "11",
+            "question_text": "Fleming left hand rule is applicable to _______.",
+            "options": [
+                "DC motor",
+                "Transformer",
+                "DC generator",
+                "AC motor"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Fleming's left-hand rule gives the force direction in motors.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "12",
+            "question_text": "Stepper motor is a _______ device.",
+            "options": [
+                "Mechanical",
+                "Analog",
+                "Incremental",
+                "Storage"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "A stepper motor moves in incremental steps for each pulse.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "13",
+            "question_text": "In PMMC instruments, the damping torque is provided by",
+            "options": [
+                "Air friction",
+                "Magnetic damping",
+                "Gravity",
+                "Eddy current damping"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "In a PMMC meter, eddy currents in the aluminium coil former provide damping.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "14",
+            "question_text": "Moving iron instruments are mainly preferred to measure _______ quantities.",
+            "options": [
+                "DC",
+                "AC",
+                "Both AC and DC",
+                "Neither AC nor DC"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Moving iron meters work on magnetic force that does not depend on current direction, so they read AC and DC.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "15",
+            "question_text": "The commonly used material in fabricating solar cell is _______.",
+            "options": [
+                "Germanium",
+                "Silicon",
+                "Aluminium",
+                "Silver"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Silicon is the most widely used solar cell material.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "16",
+            "question_text": "Thermocouple is working under _______ effect.",
+            "options": [
+                "Peltier",
+                "Seebeck",
+                "Thomson",
+                "Hall"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "A thermocouple works on the Seebeck effect.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "17",
+            "question_text": "Which one is the most common fuel used in fuel cells?",
+            "options": [
+                "Water",
+                "Hydrogen",
+                "Nitrogen",
+                "Sulphur"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Hydrogen is the most common fuel cell fuel.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "18",
+            "question_text": "Which types of battery is highly preferred for EVs?",
+            "options": [
+                "Lithium-ion battery",
+                "Lead-acid battery",
+                "Nickel-cadmium battery",
+                "Sodium-sulphur"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Li-ion has high energy density, low weight and long life, so it is preferred in EVs.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "19",
+            "question_text": "The size of the earth wire is determined on the basis of _______.",
+            "options": [
+                "The atmospheric condition",
+                "The voltage of the service wire",
+                "The ampere capacity of the service wire",
+                "The frequency range of the service wire"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "The earth wire must carry the fault current, so its size follows the ampere capacity of the service wire.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "20",
+            "question_text": "What is the frequency range of AC supply followed in Indian standard?",
+            "options": [
+                "50 Hz",
+                "60 Hz",
+                "100 Hz",
+                "1000 Hz"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "The Indian standard frequency is 50 Hz.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        }
+    ]
+}

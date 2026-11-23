@@ -13,7 +13,7 @@
       ],
       "correct_option": "C",
       "marks": 1,
-      "answer": "A normal human diploid cell contains 46 chromosomes, arranged in 23 homologous pairs.",
+      "answer": "A human diploid cell has 46 chromosomes (23 pairs).",
       "answer_source": "generated",
       "chapter": "Unit 1: Cell and Evolution"
     },
@@ -28,7 +28,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "The inner cell mass is a cluster of cells within the blastocyst, which subsequently forms the embryo proper.",
+      "answer": "The inner cell mass is the cluster inside the blastocyst that forms the embryo.",
       "answer_source": "generated",
       "chapter": "Unit 1: Cell and Evolution"
     },
@@ -43,7 +43,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "Homologous chromosomes are a pair of chromosomes with the same genes and structure, one from each parent. In males the X chromosome pairs with the Y chromosome during meiosis (they share homologous pseudoautosomal regions), so Y is the homologous partner of X among the options. (23 is only the number of chromosome pairs, and XY is the pair itself.)",
+      "answer": "In males X pairs with Y in meiosis (shared pseudoautosomal regions), so Y is its homolog partner; 23 is the number of pairs, XY the pair itself.",
       "answer_source": "generated",
       "chapter": "Unit 1: Cell and Evolution"
     },
@@ -58,7 +58,7 @@
       ],
       "correct_option": "C",
       "marks": 1,
-      "answer": "Evolution is about adaptation to a specific environment. While new generations often show adaptations, 'better fitness' is context-dependent and not guaranteed in every instance or for every trait. Environmental changes can also render previously fit traits less advantageous.",
+      "answer": "Fitness can drop through mutation or environment change, so improvement is only sometimes true.",
       "answer_source": "generated",
       "chapter": "Unit 1: Cell and Evolution"
     },
@@ -73,7 +73,7 @@
       ],
       "correct_option": "C",
       "marks": 1,
-      "answer": "Messenger RNA (mRNA) carries the genetic code from DNA to the ribosome, serving as the template for protein synthesis.",
+      "answer": "mRNA carries the code from DNA and is the template for protein synthesis.",
       "answer_source": "generated",
       "chapter": "Unit 3: Structure Biology"
     },
@@ -88,7 +88,7 @@
       ],
       "correct_option": "B",
       "marks": 1,
-      "answer": "GenBank is a primary database that archives and makes publicly available raw nucleotide and protein sequences submitted by researchers worldwide.",
+      "answer": "GenBank holds original submitted sequences, so it is a primary database.",
       "answer_source": "generated",
       "chapter": "Unit 2: Basics in Biochemistry"
     },
@@ -103,7 +103,7 @@
       ],
       "correct_option": "D",
       "marks": 1,
-      "answer": "Glucagon is a hormone secreted by the pancreas in response to low blood glucose levels (hypoglycemia) to raise blood sugar.",
+      "answer": "Low blood glucose (hypoglycemia) triggers glucagon release, which raises glucose.",
       "answer_source": "generated",
       "chapter": "Unit 2: Basics in Biochemistry"
     },
@@ -118,7 +118,7 @@
       ],
       "correct_option": "B",
       "marks": 1,
-      "answer": "A nucleotide is the monomer unit of nucleic acids (DNA and RNA), consisting of a nitrogenous base, a five-carbon sugar, and at least one phosphate group.",
+      "answer": "Nucleotide = base + sugar + phosphate. A nucleoside lacks the phosphate.",
       "answer_source": "generated",
       "chapter": "Unit 2: Basics in Biochemistry"
     },
@@ -133,7 +133,7 @@
       ],
       "correct_option": "C",
       "marks": 1,
-      "answer": "Amino acids are linked together by peptide bonds to form polypeptide chains, which fold into proteins.",
+      "answer": "Amino acids are joined by peptide bonds.",
       "answer_source": "generated",
       "chapter": "Unit 3: Structure Biology"
     },
@@ -148,7 +148,7 @@
       ],
       "correct_option": "D",
       "marks": 1,
-      "answer": "Protein secondary structure prediction methods often fall into two broad categories: ab initio (predicting from sequence alone) or homology-based (using known structures of homologous proteins). Neural networks and hidden Markov models are specific algorithmic approaches used within these categories.",
+      "answer": "Secondary-structure prediction is either ab initio or homology based (neural nets and HMMs are algorithms inside them).",
       "answer_source": "generated",
       "chapter": "Unit 3: Structure Biology"
     },
@@ -163,7 +163,7 @@
       ],
       "correct_option": "C",
       "marks": 1,
-      "answer": "The anticodon on tRNA is complementary to the codon on mRNA. For the mRNA codon ACU, the complementary anticodon is UGA (A pairs with U, C pairs with G).",
+      "answer": "Codon ACU pairs A-U, C-G, U-A, so the anticodon is UGA (antiparallel).",
       "answer_source": "generated",
       "chapter": "Unit 3: Structure Biology"
     },
@@ -178,7 +178,7 @@
       ],
       "correct_option": "B",
       "marks": 1,
-      "answer": "The Chou-Fasman method is a classic algorithm that predicts protein secondary structure based on the statistical propensities of individual amino acids to form alpha-helices, beta-strands, and beta-turns.",
+      "answer": "Chou-Fasman uses each residue's helix, strand and turn propensity.",
       "answer_source": "generated",
       "chapter": "Unit 3: Structure Biology"
     },
@@ -193,7 +193,7 @@
       ],
       "correct_option": "B",
       "marks": 1,
-      "answer": "Data mining is the process of discovering patterns and insights from large datasets, and it is a crucial step within the broader process of Knowledge Discovery in Databases (KDD).",
+      "answer": "Data mining is another name for Knowledge Discovery in Databases.",
       "answer_source": "generated",
       "chapter": "Unit 4: Neurobiology"
     },
@@ -208,7 +208,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "The synapse is the specialized junction between two neurons where electrical signals are transmitted, typically via chemical neurotransmitters, from the presynaptic neuron to the postsynaptic neuron.",
+      "answer": "Signals pass from one neuron to the next at the synapse.",
       "answer_source": "generated",
       "chapter": "Unit 4: Neurobiology"
     },
@@ -223,7 +223,7 @@
       ],
       "correct_option": "B",
       "marks": 1,
-      "answer": "The parasympathetic division of the autonomic nervous system is responsible for 'rest and digest' activities, which generally promote energy conservation and storage.",
+      "answer": "The parasympathetic division ('rest and digest') conserves energy.",
       "answer_source": "generated",
       "chapter": "Unit 4: Neurobiology"
     },
@@ -238,7 +238,7 @@
       ],
       "correct_option": "C",
       "marks": 1,
-      "answer": "Parkinson's disease is characterized by the progressive degeneration and loss of dopaminergic neurons in the substantia nigra region of the brain.",
+      "answer": "Parkinson's involves loss of dopaminergic neurons in the substantia nigra.",
       "answer_source": "generated",
       "chapter": "Unit 4: Neurobiology"
     },
@@ -253,7 +253,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "B cells (B lymphocytes), upon activation, differentiate into plasma cells, which are specialized cells responsible for producing and secreting antibodies.",
+      "answer": "B cells become plasma cells that secrete antibodies.",
       "answer_source": "generated",
       "chapter": "Unit 5: Immunobiology"
     },
@@ -268,7 +268,7 @@
       ],
       "correct_option": "C",
       "marks": 1,
-      "answer": "Hematopoietic stem cells, which are pluripotent stem cells, reside primarily in the bone marrow and give rise to all types of blood cells.",
+      "answer": "Blood cells arise from hematopoietic stem cells in bone marrow.",
       "answer_source": "generated",
       "chapter": "Unit 1: Cell and Evolution"
     },
@@ -283,7 +283,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "Active immunity, acquired through natural infection or vaccination, involves the production of memory B and T cells that provide long-lasting protection and a robust secondary response upon re-exposure.",
+      "answer": "Active immunity produces memory B and T cells.",
       "answer_source": "generated",
       "chapter": "Unit 5: Immunobiology"
     },
@@ -298,7 +298,7 @@
       ],
       "correct_option": "A",
       "marks": 1,
-      "answer": "Major Histocompatibility Complex (MHC) molecules are cell surface proteins found in vertebrates (including humans) that play a critical role in antigen presentation and immune recognition.",
+      "answer": "MHC molecules are on vertebrate (human) cells, not microbes.",
       "answer_source": "generated",
       "chapter": "Unit 5: Immunobiology"
     },

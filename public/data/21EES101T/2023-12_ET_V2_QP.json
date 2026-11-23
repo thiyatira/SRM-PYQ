@@ -1,0 +1,291 @@
+{
+    "paper_title": "21EES101T_Dec_2023_V2",
+    "source": "21EES101T_Dec_2023_V2",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "The expression for rms voltage of an AC sinusoid is given by",
+            "options": [
+                "$Vm/2$",
+                "$Vm/\\sqrt{2}$",
+                "$Vdc/\\sqrt{2}$",
+                "$Vdc/\\sqrt{3}$"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "For a sinusoid, $V_{rms}=V_m/\\sqrt{2}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "2",
+            "question_text": "The law proposed by ohm is relevant in condition with",
+            "options": [
+                "Temperature constant",
+                "Pressure constant",
+                "Volume constant",
+                "Constant pressure and temperature"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Ohm's law ($V\\propto I$) holds only when temperature (and other physical conditions) stays constant.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "3",
+            "question_text": "In a pure inductive circuit (L), the current _______ by a voltage of 90 degree.",
+            "options": [
+                "Leads",
+                "Lags",
+                "In phase",
+                "Greater than and equal"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "In a pure inductor the current lags the voltage by 90 degrees.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "4",
+            "question_text": "According to superposition theorem, while considering an individual source, all other voltage sources can be .",
+            "options": [
+                "Replaced by current sources",
+                "Short circuited",
+                "Open circuited",
+                "Replaced by external resistor"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Superposition: voltage sources not under consideration are short-circuited.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "5",
+            "question_text": "The diode is used in",
+            "options": [
+                "Uncontrolled rectifiers",
+                "Stepping down AC voltage circuits",
+                "Stepping up AC voltage circuits",
+                "Controlled rectifiers"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Plain diodes have no control terminal, so they form uncontrolled rectifiers.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "6",
+            "question_text": "The voltage controlled semiconductor device is",
+            "options": [
+                "Zener diode",
+                "BJT",
+                "PN diode",
+                "MOSFET"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "A MOSFET's channel is controlled by gate voltage; a BJT is current-controlled.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "7",
+            "question_text": "The logical expression Y=AB+AC is known as",
+            "options": [
+                "Standard sum of product form",
+                "Sum of product form",
+                "Standard product of sum form",
+                "Product of sum form"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "$AB+AC$ is a sum of product terms (SOP); it is not standard (canonical) since not every term has all variables.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "8",
+            "question_text": "The input X-NOR gate gives high output",
+            "options": [
+                "When one input is high and other is low",
+                "Only when both inputs are low",
+                "When both inputs are same",
+                "Only when both the inputs are high"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "XNOR outputs 1 when both inputs are equal.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "9",
+            "question_text": "The material used for the yoke of a DC machine is to provide a",
+            "options": [
+                "Current path",
+                "Flux path",
+                "Mechanical support",
+                "Conversion from AC to DC"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "The yoke carries the magnetic flux (low-reluctance path) in addition to supporting the machine.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "10",
+            "question_text": "Rotor windings are not present in",
+            "options": [
+                "DC shunt motor",
+                "DC series motor",
+                "Squirrel cage induction motor",
+                "Slip ring induction motor"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "A squirrel cage rotor has bars shorted by end rings, not rotor windings.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "11",
+            "question_text": "Which of the following motor is more suitable for EV applications?",
+            "options": [
+                "BLDC motor",
+                "Stepper motor",
+                "DC shunt motor",
+                "Induction motor"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "BLDC motors have high efficiency and power density, so they suit EVs.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "13",
+            "question_text": "In LVDT, when the iron core is exactly at centre, then net output of transducer is",
+            "options": [
+                "Zero",
+                "Maximum",
+                "Average",
+                "Unpredictable"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "At the centre the two secondary voltages are equal and opposite, so the net output is zero.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "14",
+            "question_text": "Which type of transducer is most commonly used in testing of structural load bearing limitations?",
+            "options": [
+                "Thermocouple",
+                "Thermistor",
+                "LDR",
+                "Strain gauge"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "Strain gauges measure strain from load, so they are used for structural load testing.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "15",
+            "question_text": "The current flow in photodiode when light fall on its junction is called",
+            "options": [
+                "Knee current",
+                "Saturation current",
+                "Photo current",
+                "Pinchoff current"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "The current produced by light on a photodiode junction is the photo current.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "16",
+            "question_text": "Which transducer is used for light spectrum detection?",
+            "options": [
+                "Laser",
+                "Photo transistor",
+                "LED",
+                "LVDT"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "A phototransistor senses light and converts it to an electrical signal.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "17",
+            "question_text": "Earth wire is made up of",
+            "options": [
+                "Copper",
+                "Iron",
+                "Aluminium",
+                "Galvanized steel"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "Overhead earth wires are galvanized steel for strength and rust resistance.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "18",
+            "question_text": "Solar efficiency will be commonly in the range of",
+            "options": [
+                "3% to 5%",
+                "90% to 95%",
+                "40% to 50%",
+                "10% to 20%"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "Typical commercial solar cell efficiency is about 10-20%.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "19",
+            "question_text": "The most widely used material for solar cell fabrication is",
+            "options": [
+                "Germanium",
+                "Silicon",
+                "Aluminium",
+                "Silver"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Silicon is the most widely used because of its bandgap, abundance and mature technology.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "20",
+            "question_text": "The predominant material used for PV cell manufacturing is",
+            "options": [
+                "Silicon",
+                "Titanium",
+                "Arsenide",
+                "Gallium"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Silicon is the predominant PV cell material.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        }
+    ]
+}

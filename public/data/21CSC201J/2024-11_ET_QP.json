@@ -14,7 +14,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "ADTs define only the interface and behavior of data structures without specifying their implementation details, thus hiding the execution logic.",
+            "answer": "An abstract data type (ADT) specifies operations (the interface) while hiding the implementation.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Introduction"
         },
@@ -29,7 +29,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "On a 32-bit processor, a pointer variable (such as `int *p`) occupies exactly 4 bytes of memory, regardless of the size of dynamic memory allocated to it.",
+            "answer": "`sizeof(p)` is the size of the pointer itself: 4 bytes on a 32-bit machine, whatever was malloc'd.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Introduction"
         },
@@ -44,7 +44,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The standard library function `calloc` takes two parameters (number of blocks and size of each block) and allocates memory dynamically, initializing all bytes to zero.",
+            "answer": "`calloc(n, size)` allocates $n$ blocks of equal size and zero-initializes them.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Introduction"
         },
@@ -59,7 +59,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Asymptotic analysis uses mathematical notations (Big O, Omega, Theta) to characterize the scaling behavior of an algorithm under all execution scenarios.",
+            "answer": "Big-O, Omega and Theta describe growth in the worst, best and tight/average cases, so all scenarios can be analysed.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Introduction"
         },
@@ -74,7 +74,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "To allocate memory for a list node, you must allocate the size of the structure itself (`sizeof(struct node)`) and cast the returned pointer to a node pointer (`struct node *`).",
+            "answer": "Allocate `sizeof(struct node)` (the node, not a pointer) and cast the result to `struct node *`.",
             "answer_source": "generated",
             "chapter": "Unit 2 - List Structure"
         },
@@ -89,7 +89,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "A sparse matrix is defined as a matrix in which the majority of its elements are zero (typically, more than half of the total $m \\times n$ positions).",
+            "answer": "A sparse matrix has most elements zero, i.e. more than $(m \\times n)/2$ zeros.",
             "answer_source": "generated",
             "chapter": "Unit 2 - List Structure"
         },
@@ -104,7 +104,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "To append a node to the end of a singly linked list, the previous terminal node's next-pointer is updated to link to the new node, and the new node's next-pointer is set to NULL.",
+            "answer": "Append: the old last node links to the new node, and the new node's next is NULL.",
             "answer_source": "generated",
             "chapter": "Unit 2 - List Structure"
         },
@@ -119,7 +119,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "In game flow design, a doubly linked list allows players to navigate both forward (to the next stage) and backward (to retry/replay previous stages).",
+            "answer": "Retrying stages needs moving forward and back, which `next` and `prev` links of a doubly linked list provide.",
             "answer_source": "generated",
             "chapter": "Unit 2 - List Structure"
         },
@@ -134,7 +134,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Resource allocation and process scheduling tasks require First-In-First-Out (FIFO) behavior, which is implemented using Queues rather than Stacks.",
+            "answer": "Scheduling and resource allocation are FIFO, which needs a queue, not a stack.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Stack and Queue"
         },
@@ -149,7 +149,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Trace:\n1. Stack: [Allen, Brindha, Chitra, Divya, Elon] (Elon is Top)\n2. Pop 4 times: Elon, Divya, Chitra, Brindha are popped and inserted into Queue.\n   Queue (front to rear): [Elon, Divya, Chitra, Brindha]. Stack remaining: [Allen]\n3. Delete 2 names from Queue: Elon, then Divya. These are pushed back to Stack.\n   Stack (bottom to top): [Allen, Elon, Divya]\n4. Pop once from Stack: Divya is popped.",
+            "answer": "Pops give Elon, Divya, Chitra, Brindha into the queue. Dequeuing Elon, Divya and pushing them leaves the stack Allen, Elon, Divya, so Divya pops.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Stack and Queue"
         },
@@ -164,7 +164,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Queues process elements strictly under First-In, First-Out (FIFO) rules, which means elements are removed in the identical sequence of their insertion.",
+            "answer": "A queue is FIFO, so elements leave in insertion order: A B C D.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Stack and Queue"
         },
@@ -179,7 +179,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Derivation:\n$D + (E * (F \\wedge G))$\n$= D + (E * (FG\\wedge))$\n$= D + (EFG\\wedge*)$\n$= DEFG\\wedge*+$",
+            "answer": "Postfix of $D+(E*(F\\wedge G))$: $FG\\wedge$, then $EFG\\wedge*$, then $DEFG\\wedge*+$.",
             "answer_source": "generated",
             "chapter": "Unit 3 - Stack and Queue"
         },
@@ -194,7 +194,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "In-order traversal follows the pattern: Left subtree, Root, Right subtree. For this tree, we traverse node 2's left child (4), node 2, node 2's right child (5), root node 1, and node 3's subtree (3 then 6).",
+            "answer": "In-order is Left, Root, Right: 4, 2, 5, then 1, then 3, 6.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Trees and Hashing"
         },
@@ -209,7 +209,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "In a B-Tree of order $m$ and height $h$ (where the root is at level 0), the maximum number of keys is given by $N = m^{h+1} - 1$. Here, for $m = 4$ and height $h = 3$, the maximum keys are $4^4 - 1 = 255$. (Alternatively, if root is at height 1, max keys = $4^3 - 1 = 63$ (Option B)). Typically, height is counted by edges (height 3 = 4 levels), which yields 255.",
+            "answer": "With height counted in edges (root at height 0), max keys $= m^{h+1}-1 = 4^4-1 = 255$.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Trees and Hashing"
         },
@@ -224,7 +224,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "A hash table uses a mathematical hash function to compute index mappings, matching arbitrary keys directly to their stored values in constant average time.",
+            "answer": "A hash table maps keys to values using a hash function, with $O(1)$ average access.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Trees and Hashing"
         },
@@ -239,7 +239,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "A collision occurs in hashing when two distinct keys hash to the exact same array index.",
+            "answer": "When different keys hash to the same bucket, it is a collision.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Trees and Hashing"
         },
@@ -254,7 +254,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "According to the handshaking lemma, $\\sum deg(v) = 2|E|$, which is always even (making statement Q true). This parity requirement directly implies that the number of vertices with odd degrees must also be even (making statement P true).",
+            "answer": "Sum of degrees $= 2|E|$ is even (Q), so the number of odd-degree vertices must be even (P).",
             "answer_source": "generated",
             "chapter": "Unit 5 - Graph"
         },
@@ -269,7 +269,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "BFS visits vertices in non-decreasing order of distance from the source. If $u$ is visited before $v$, the distance of $u$ from the root $r$ must be less than or equal to that of $v$.",
+            "answer": "BFS visits vertices in non-decreasing order of distance, so $d(r,u) \\le d(r,v)$.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Graph"
         },
@@ -284,7 +284,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The average search and insertion performance in open addressing depend directly on the load factor $\\alpha = N/M$ (number of elements divided by table capacity).",
+            "answer": "Open-addressing probe counts depend on the load factor $\\alpha = n/m$ (elements and table size).",
             "answer_source": "generated",
             "chapter": "Unit 4 - Trees and Hashing"
         },
@@ -299,7 +299,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Kruskal's is a greedy algorithm designed to find a Minimum Spanning Tree (MST) of a weighted undirected graph by sorting and sequentially evaluating edges.",
+            "answer": "Kruskal's greedy algorithm builds an MST by adding the cheapest edges that form no cycle.",
             "answer_source": "generated",
             "chapter": "Unit 5 - Graph"
         },

@@ -99,24 +99,22 @@ Your task is to analyze a university examination question paper (or answer key) 
 7. CRITICAL - Code Formatting: Whenever questions or answers contain code snippets, program fragments, or pseudocode (C, C++, Java, Python, SQL, etc.), you MUST wrap them in standard markdown code fences with the language identifier (e.g. ```java\n...\n```, ```c\n...\n```, ```python\n...\n```) and preserve exact indentation. Put MCQ options in the `options` array (keep code inside an option fenced) and keep the question stem outside the code block.
 
 ### File Naming Specification for `formal_filename`:
-Pattern: `[Date/Year]_[ExamType]_[SetInfo]_[DocumentType].json`
-- `[Date/Year]`:
-    - Year-Month for End Term (e.g., `2023-12`, `2024-01`, `2023-05`)
-    - Full Date if present for Cycle Tests (e.g., `2024-04-01`, `2023-11-03`)
-    - Academic Year if specific date not available (e.g., `2023-24`, `2024-25`)
-- `[ExamType]`: `ET` (End Term) or `CT1`, `CT2`, `CT3` (Cycle Test 1, 2, 3) or `Quiz`
-- `[SetInfo]` (Optional): `SetA`, `SetB`, `SetC`, `Set1`, `SetA_B1`, etc. (Omit if not specified)
-- `[DocumentType]`:
-    - `QP`: Question Paper only
+Pattern: `<Date>_<ExamType>[_<SetInfo>][_<Extra>...]_<DocType>.json` (tokens joined by `_`; inside a token use `-` only, no spaces)
+- `<Date>`: `YYYY-MM` for End Term (e.g. `2023-12`); `YYYY-MM-DD` when the exact date is known (cycle tests, quizzes); `YYYY-YY` if only the academic year is known (e.g. `2024-25`); `YYYY` or `XXXX` if even less is known
+- `<ExamType>`: `ET` (End Term), `CT1`/`CT2`/`CT3` (cycle / CLA tests, internal exams, assessments I-III), `FT2`, `FJ1`/`FJ2`, `OBA`, `Quiz2`
+- `<SetInfo>` (optional): `SetA`, `SetB`, `Set1`, `Set5-6`, `SetC-D`, `SetNA` (omit if not specified)
+- `<Extra>` (optional): batch `B1`/`B2`, `PartA`/`Paper2`, `V1`/`V2` (two different papers for the same exam), campus (`DelhiNCR`), the old course code for an earlier regulation (`18PYB103J`), `Sample`
+- `<DocType>` (always last):
+    - `QP`: Question Paper (also when we added the answers)
+    - `QP-Key`: Question Paper with the official Answer Key
     - `Key`: Answer Key only
-    - `QP-Key`: Question Paper with Answer Key
-    - `Sample-QP`: Sample / Model Paper
     - `MCQ-Key`: MCQ Answer Key only
 
 Examples of `formal_filename`:
 - "2023-12_ET_SetA_QP.json"
 - "2024-04-01_CT2_SetB_QP.json"
 - "2023-11-03_CT2_SetD_B2_QP-Key.json"
+- "2019-05_ET_18PYB103J_QP.json"
 - "2024-01_ET_QP.json"
 
 ### JSON Structure:

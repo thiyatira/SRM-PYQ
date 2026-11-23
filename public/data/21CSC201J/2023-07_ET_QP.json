@@ -89,7 +89,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "This represents a doubly linked list node structure. `prev` and `next` must be self-referential pointers to the same structure type (`struct node *`), while `data` is an integer field representing the payload.",
+            "answer": "A doubly linked node needs `prev` and `next` pointers of type `struct node *` (self-referential) and an `int` data field.",
             "answer_source": "generated",
             "chapter": "Unit 2: List Structure"
         },
@@ -104,7 +104,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "In a circular linked list, the last node's link field points back to the first node. This allows continuous loop-based traversal starting from any arbitrary node, which terminates when the traversal circles back to the starting node.",
+            "answer": "In a circular list the last node points back to the first, so traversal can start anywhere and stops on returning to the start.",
             "answer_source": "generated",
             "chapter": "Unit 2: List Structure"
         },
@@ -119,7 +119,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "An array is a collection of homogeneous data elements (elements of the same type) stored in contiguous memory locations. In contrast, a structure/record can store heterogeneous data types.",
+            "answer": "An array holds homogeneous elements; a structure or record can hold mixed types.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
@@ -149,7 +149,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Let's evaluate step-by-step using a stack:\n1. Push `5`, `5` $\\rightarrow$ Stack: `[5, 5]`\n2. Operator `+` $\\rightarrow$ Pop `5`, `5`, compute $5+5 = 10$, push `10` $\\rightarrow$ Stack: `[10]`\n3. Push `60`, `6` $\\rightarrow$ Stack: `[10, 60, 6]`\n4. Operator `/` $\\rightarrow$ Pop `6`, `60`, compute $60/6 = 10$, push `10` $\\rightarrow$ Stack: `[10, 10]`\n5. Operator `*` $\\rightarrow$ Pop `10`, `10`, compute $10 \\times 10 = 100$, push `100` $\\rightarrow$ Stack: `[100]`\n6. Push `10` $\\rightarrow$ Stack: `[100, 10]`\n7. Operator `-` $\\rightarrow$ Pop `10`, `100`, compute $100 - 10 = 90$, push `90` $\\rightarrow$ Stack: `[90]`. Final result is 90.",
+            "answer": "Evaluate: 5+5=10; 60/6=10; 10*10=100; 100-10=90.",
             "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },
@@ -179,7 +179,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "To simulate the Last-In-First-Out (LIFO) property of a stack using First-In-First-Out (FIFO) structures, you need at least 2 queues (either making the push operation costly or the pop operation costly).",
+            "answer": "A stack can be built from two queues (move elements between them on push or pop to reverse the order).",
             "answer_source": "generated",
             "chapter": "Unit 3: Stack and Queue"
         },
@@ -194,7 +194,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Let's build the BST sequential insert:\n- 71 (Root, Level 0)\n- 65 is smaller than 71 $\\rightarrow$ Left child of 71 (Level 1)\n- 84 is larger than 71 $\\rightarrow$ Right child of 71 (Level 1)\n- 69 is smaller than 71 (go left), larger than 65 $\\rightarrow$ Right child of 65 (Level 2)\nThus, 69 is at the deepest level (lowest level, Level 2).",
+            "answer": "Insert 71 (root), 65 (left), 84 (right), 69 (left of 71, right of 65). 69 is at the deepest level.",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
@@ -209,7 +209,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "The fundamental defining invariant of an AVL tree is that for every node, the height difference between its left and right subtrees (the balance factor) must be at most one (i.e., -1, 0, or 1).",
+            "answer": "AVL balance factor is $h_L - h_R \\in \\{-1,0,1\\}$, i.e. subtree heights differ by at most one.",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
@@ -224,7 +224,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "By formal definition, a full binary tree (sometimes called a proper or strict binary tree) is a tree in which every node has either 0 or 2 children. No node has exactly one child.",
+            "answer": "A full binary tree has every node with 0 or 2 children.",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
@@ -239,7 +239,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "In-order traversal follows the Left-Root-Right pattern. In a Binary Search Tree (BST), because all elements in the left subtree are smaller than the root and all elements in the right subtree are larger, this traversal visits elements in sorted, increasing order.",
+            "answer": "In-order (Left, Root, Right) on a BST visits keys in increasing order.",
             "answer_source": "generated",
             "chapter": "Unit 4: Trees and Hashing"
         },
@@ -269,7 +269,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Breadth-First Search (BFS) explores vertices level-by-level starting from the source. To manage the expansion boundary in a first-come, first-served manner, it utilizes a FIFO Queue.",
+            "answer": "BFS visits vertices level by level, so it uses a FIFO queue.",
             "answer_source": "generated",
             "chapter": "Unit 5: Graph"
         },

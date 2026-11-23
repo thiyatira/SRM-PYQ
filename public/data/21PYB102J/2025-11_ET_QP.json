@@ -1,0 +1,486 @@
+{
+    "paper_title": "NOV_2025_21PYB102J",
+    "source": "NOV_2025_21PYB102J",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "Which of the following is a direct band-gap semiconductor?",
+            "options": [
+                "Ge",
+                "Si",
+                "GaAs",
+                "Both Si and Ge"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "GaAs has its band extrema at the same k (direct); Si and Ge are indirect.",
+            "answer_source": "generated",
+            "chapter": "Unit 1-Energy Bands in Solids"
+        },
+        {
+            "question_number": "2",
+            "question_text": "In an indirect band-gap semiconductor, the conduction band minimum and valence band maximum are located....................",
+            "options": [
+                "At the same energy and momentum",
+                "At different energies but same momentum",
+                "At the same energy but different momentum",
+                "At different energies and different momentum"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "Indirect gap: the CB minimum and VB maximum lie at different k and at different energies.",
+            "answer_source": "generated",
+            "chapter": "Unit 1-Energy Bands in Solids"
+        },
+        {
+            "question_number": "3",
+            "question_text": "At a finite temperature, the probability of electron occupancy at the Fermi level Ef is:",
+            "options": [
+                "0",
+                "0.25",
+                "0.5",
+                "1"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Based on the Fermi-Dirac distribution, at E = Ef, the probability f(E) is exactly 0.5 for any T > 0.",
+            "answer_source": "generated",
+            "chapter": "Unit 1-Energy Bands in Solids"
+        },
+        {
+            "question_number": "4",
+            "question_text": "Which computational method uses the atomic orbital approach to determine electronic band structure?",
+            "options": [
+                "Cellular method",
+                "APW method",
+                "Pseudopotential method",
+                "Tight-binding method"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "Tight binding builds bands from atomic orbitals (LCAO).",
+            "answer_source": "generated",
+            "chapter": "Unit 1-Energy Bands in Solids"
+        },
+        {
+            "question_number": "5",
+            "question_text": "As temperature increases, the Fermi level in an n-type semiconductor .....................",
+            "options": [
+                "Moves upward",
+                "Moves downward",
+                "Remains Constant",
+                "Disappears"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Heating adds intrinsic carriers, moving the Fermi level down toward mid-gap.",
+            "answer_source": "generated",
+            "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
+        },
+        {
+            "question_number": "6",
+            "question_text": "The Shockley–Read–Hall (SRH) mechanism describes .....................",
+            "options": [
+                "Trap-assisted recombination",
+                "Direct band-to-band transition",
+                "Auger recombination",
+                "Photon emission only"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "SRH recombination is non-radiative recombination through deep traps in the gap.",
+            "answer_source": "generated",
+            "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
+        },
+        {
+            "question_number": "7",
+            "question_text": "A light-emitting diode (LED) emits light when it is .....................",
+            "options": [
+                "Reverse-biased",
+                "Not biased",
+                "Forward-biased",
+                "Unbiased"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "An LED emits light (electroluminescence) when forward biased: electrons and holes recombine at the junction.",
+            "answer_source": "generated",
+            "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
+        },
+        {
+            "question_number": "8",
+            "question_text": "Under which bias condition does the depletion region width increase in a PN junction?",
+            "options": [
+                "Reverse bias",
+                "Forward bias",
+                "Both reverse and forward bias",
+                "No bias"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Reverse bias raises the barrier and pulls carriers away, widening the depletion region.",
+            "answer_source": "generated",
+            "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
+        },
+        {
+            "question_number": "9",
+            "question_text": "Which of the following represents an intra band transition?",
+            "options": [
+                "Band-to-band transition",
+                "Impurity level to band transition",
+                "Free-carrier transition",
+                "Trap level to band transition"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Free-carrier transitions occur within one band (intraband); the others cross bands or levels.",
+            "answer_source": "generated",
+            "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
+        },
+        {
+            "question_number": "13",
+            "question_text": "The four-point probe method is superior to the two-point probe method because it .....................",
+            "options": [
+                "Provides easier sample handling",
+                "Eliminates contact and lead resistance errors",
+                "Measures pressure directly",
+                "Measures temperature directly"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Separate current and voltage probes remove contact and lead resistance errors.",
+            "answer_source": "generated",
+            "chapter": "Unit 4- Electrical and Optical Measurements"
+        },
+        {
+            "question_number": "14",
+            "question_text": "The hot-point probe method is primarily used to .....................",
+            "options": [
+                "Thermal conductivity",
+                "Determine effective mass",
+                "Identify semiconductor type (n or p)",
+                "Lattice constant"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Hot-point probe quickly identifies n- or p-type via the thermoelectric effect.",
+            "answer_source": "generated",
+            "chapter": "Unit 4- Electrical and Optical Measurements"
+        },
+        {
+            "question_number": "17",
+            "question_text": "A quantum dot exhibits confinement in .....................",
+            "options": [
+                "One dimension",
+                "Two dimensions",
+                "Three dimensions",
+                "Four dimensions"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Quantum dots are 0D structures where charge carriers are confined in all three spatial dimensions.",
+            "answer_source": "generated",
+            "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
+        },
+        {
+            "question_number": "1",
+            "question_text": "Which of the following is a direct band-gap semiconductor?",
+            "options": [
+                "Ge",
+                "Si",
+                "GaAs",
+                "Both Si and Ge"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Gallium Arsenide (GaAs) is a classic direct bandgap semiconductor widely used in optoelectronics.",
+            "answer_source": "generated",
+            "chapter": "Unit 1-Energy Bands in Solids"
+        },
+        {
+            "question_number": "2",
+            "question_text": "In an indirect band-gap semiconductor, the conduction band minimum and valence band maximum are located..............",
+            "options": [
+                "At the same energy and momentum",
+                "At different energies but same momentum",
+                "At the same energy but different momentum",
+                "At different energies and different momentum"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "Indirect gap: the CB minimum and VB maximum lie at different k and at different energies.",
+            "answer_source": "generated",
+            "chapter": "Unit 1-Energy Bands in Solids"
+        },
+        {
+            "question_number": "3",
+            "question_text": "At a finite temperature, the probability of electron occupancy at the Fermi level Ef is:",
+            "options": [
+                "0",
+                "0.25",
+                "0.5",
+                "1"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Fermi-Dirac: $f(E_F)=1/2$ at any $T>0$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1-Energy Bands in Solids"
+        },
+        {
+            "question_number": "4",
+            "question_text": "Which computational method uses the atomic orbital approach to determine electronic band structure?",
+            "options": [
+                "Cellular method",
+                "APW method",
+                "Pseudopotential method",
+                "Tight-binding method"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "Tight binding builds bands from atomic orbitals (LCAO).",
+            "answer_source": "generated",
+            "chapter": "Unit 1-Energy Bands in Solids"
+        },
+        {
+            "question_number": "5",
+            "question_text": "As temperature increases, the Fermi level in an n-type semiconductor ..................",
+            "options": [
+                "Moves upward",
+                "Moves downward",
+                "Remains Constant",
+                "Disappears"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Heating adds intrinsic carriers, moving the Fermi level down toward mid-gap.",
+            "answer_source": "generated",
+            "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
+        },
+        {
+            "question_number": "6",
+            "question_text": "The Shockley–Read–Hall (SRH) mechanism describes .................",
+            "options": [
+                "Trap-assisted recombination",
+                "Direct band-to-band transition",
+                "Auger recombination",
+                "Photon emission only"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "SRH recombination is non-radiative recombination through deep traps in the gap.",
+            "answer_source": "generated",
+            "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
+        },
+        {
+            "question_number": "7",
+            "question_text": "A light-emitting diode (LED) emits light when it is ........................",
+            "options": [
+                "Reverse-biased",
+                "Not biased",
+                "Forward-biased",
+                "Unbiased"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "An LED emits light (electroluminescence) when forward biased: electrons and holes recombine at the junction.",
+            "answer_source": "generated",
+            "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
+        },
+        {
+            "question_number": "8",
+            "question_text": "Under which bias condition does the depletion region width increase in a PN junction?",
+            "options": [
+                "Reverse bias",
+                "Forward bias",
+                "Both reverse and forward bias",
+                "No bias"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Reverse bias raises the barrier and pulls carriers away, widening the depletion region.",
+            "answer_source": "generated",
+            "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
+        },
+        {
+            "question_number": "9",
+            "question_text": "Which of the following represents an intra band transition?",
+            "options": [
+                "Band-to-band transition",
+                "Impurity level to band transition",
+                "Free-carrier transition",
+                "Trap level to band transition"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Free-carrier transitions occur within one band (intraband); the others cross bands or levels.",
+            "answer_source": "generated",
+            "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
+        },
+        {
+            "question_number": "10",
+            "question_text": "Fermi’s Golden Rule is used to determine the ........................",
+            "options": [
+                "Velocity of light",
+                "Momentum of electrons",
+                "Absorption energy of electrons",
+                "Transition rate per unit volume"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "Fermi's golden rule gives the transition rate between quantum states.",
+            "answer_source": "generated",
+            "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
+        },
+        {
+            "question_number": "11",
+            "question_text": "When upward transitions exceed downward transitions, what condition is achieved?",
+            "options": [
+                "Optical gain",
+                "Optical loss",
+                "Equilibrium",
+                "Zero absorption"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "More upward than downward transitions means net absorption (optical loss); gain needs population inversion.",
+            "answer_source": "generated",
+            "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
+        },
+        {
+            "question_number": "12",
+            "question_text": "Which of the following is a major loss mechanism in photovoltaic cells?",
+            "options": [
+                "Production of Charge Carriers",
+                "Recombination of electron-hole pairs",
+                "High conductivity of the material",
+                "Low resistivity of the material"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Recombination of electron-hole pairs before collection is a key efficiency loss.",
+            "answer_source": "generated",
+            "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
+        },
+        {
+            "question_number": "13",
+            "question_text": "The four-point probe method is superior to the two-point probe method because it ........................",
+            "options": [
+                "Provides easier sample handling",
+                "Eliminates contact and lead resistance errors",
+                "Measures pressure directly",
+                "Measures temperature directly"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Separate current and voltage probes remove contact and lead resistance errors.",
+            "answer_source": "generated",
+            "chapter": "Unit 4- Electrical and Optical Measurements"
+        },
+        {
+            "question_number": "14",
+            "question_text": "The hot-point probe method is primarily used to ........................",
+            "options": [
+                "Thermal conductivity",
+                "Determine effective mass",
+                "Identify semiconductor type (n or p)",
+                "Lattice constant"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Hot-point probe quickly identifies n- or p-type via the thermoelectric effect.",
+            "answer_source": "generated",
+            "chapter": "Unit 4- Electrical and Optical Measurements"
+        },
+        {
+            "question_number": "15",
+            "question_text": "C–V measurements in a PN junction or MOS capacitor are used to extract ........................",
+            "options": [
+                "Crystalline properties",
+                "Thermal conductivity",
+                "Doping concentration and built-in potential",
+                "Lattice constant"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "C-V data give the doping concentration and built-in potential.",
+            "answer_source": "generated",
+            "chapter": "Unit 4- Electrical and Optical Measurements"
+        },
+        {
+            "question_number": "16",
+            "question_text": "The Boltzmann Transport Equation (BTE) describes ........................",
+            "options": [
+                "Quantum tunneling of electrons",
+                "Distribution of charge carriers under external forces and scattering",
+                "Diffusion of photons in a medium",
+                "Variation of capacitance with frequency"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "The BTE gives the carrier distribution under external forces and scattering.",
+            "answer_source": "generated",
+            "chapter": "Unit 4- Electrical and Optical Measurements"
+        },
+        {
+            "question_number": "17",
+            "question_text": "A quantum dot exhibits confinement in ........................",
+            "options": [
+                "One dimension",
+                "Two dimensions",
+                "Three dimensions",
+                "Four dimensions"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "A quantum dot is confined in all three dimensions (0D).",
+            "answer_source": "generated",
+            "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
+        },
+        {
+            "question_number": "18",
+            "question_text": "Which is NOT a typical property of carbon nanotubes (CNTs)?",
+            "options": [
+                "High tensile strength",
+                "Excellent electrical conductivity",
+                "Poor thermal conductivity",
+                "High aspect ratio"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "CNTs have very high thermal conductivity, so 'poor thermal conductivity' is wrong.",
+            "answer_source": "generated",
+            "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
+        },
+        {
+            "question_number": "19",
+            "question_text": "In Atomic Force Microscopy (AFM), surface topography is obtained by ........................",
+            "options": [
+                "Measuring X-ray absorption",
+                "Detecting cantilever deflection of a sharp tip scanning the surface",
+                "Measuring transmitted electrons",
+                "Using optical interference patterns"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "AFM maps topography from the deflection of a cantilever tip scanning the surface.",
+            "answer_source": "generated",
+            "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
+        },
+        {
+            "question_number": "20",
+            "question_text": "TCAD (Technology Computer-Aided Design) tools are primarily used to ........................",
+            "options": [
+                "Measure experimental resistivity",
+                "Predict semiconductor device behavior before fabrication",
+                "Calibrate instruments",
+                "Synthesize new materials"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "TCAD predicts device behavior by simulation before fabrication, saving time and cost.",
+            "answer_source": "generated",
+            "chapter": "Unit 4- Electrical and Optical Measurements"
+        }
+    ]
+}

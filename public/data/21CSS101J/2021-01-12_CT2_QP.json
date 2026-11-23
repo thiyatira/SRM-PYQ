@@ -13,7 +13,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The modulo operator (`%`) in C primarily takes only integer operands. While `+` (addition) and `/` (division) can operate on both integer and floating-point types, the `%` operator is specifically for finding the remainder of an integer division. Therefore, option C is correct.",
+            "answer": "`%` (modulus) requires integer operands; `+` and `/` also work on floats.",
             "answer_source": "generated",
             "chapter": "Unit 1: Arithmetic, Relational and logical Operators"
         },
@@ -28,7 +28,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "The logical OR operator (`||`) in C uses short-circuit evaluation. This means:\nII) Evaluation will be stopped if one of its components evaluates to true, because if any operand is true, the entire OR expression is true, and there's no need to evaluate further operands.\nIV) Evaluation takes place from left to right.\nTherefore, options II and IV are correct, making D the correct choice.",
+            "answer": "`||` evaluates left to right and stops (short-circuits) as soon as an operand is true.",
             "answer_source": "generated",
             "chapter": "Unit 1: Arithmetic, Relational and logical Operators, Operator Precedence"
         },
@@ -43,7 +43,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Let's trace the execution:\n1.  `int i=0, j=1, k=2, m;`\n2.  `m = i++ || j++ || k++;`\n    *   `i++` evaluates to `0` (false). `i` becomes `1`. \n    *   Since the left operand of `||` was false, `j++` is evaluated. `j++` evaluates to `1` (true). `j` becomes `2`. \n    *   Due to short-circuiting, `k++` is NOT evaluated because the result of `j++` being true already determines the outcome of the `||` expression. `k` remains `2`. \n    *   The entire expression `i++ || j++ || k++` evaluates to true, which, when assigned to an integer `m`, typically results in `1` (or a non-zero value, often `1` by convention).\n    *   So, `m` becomes `1`.\n3.  `printf(\"%d %d %d %d\", m, i, j, k);` prints the current values of `m`, `i`, `j`, and `k`.\n    *   `m` is `1`\n    *   `i` is `1`\n    *   `j` is `2`\n    *   `k` is `2`\n\nThe output is `1 1 2 2`. Therefore, option B is correct.",
+            "answer": "`i++` gives 0 (false, i=1), then `j++` gives 1 (true, j=2); short-circuiting skips `k++`. So m=1, i=1, j=2, k=2.",
             "answer_source": "generated",
             "chapter": "Unit 1: Expressions with pre / post increment operator, Logical Operators"
         },
@@ -58,7 +58,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "The `if` statement evaluates the expression `(a,b,x,y)`. This uses the comma operator. The comma operator evaluates its operands from left to right and the result of the entire expression is the value of its rightmost operand. In this case, the expression `(a,b,x,y)` evaluates to the value of `y`. Since `y` is initialized to `0`, the condition `if(0)` is false. Therefore, the `printf(“EXAM”);` statement inside the `if` block will not be executed, and the program will print nothing. Option D is correct.",
+            "answer": "The comma operator yields its last operand, `y = 0`, so the condition is false and nothing is printed.",
             "answer_source": "generated",
             "chapter": "Unit 1: Comma, Arrow and Assignment operator, Conditional Operators"
         },
@@ -73,7 +73,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "In C operator precedence:\n*   The Dot operator (`.`) has very high precedence (highest in the options).\n*   Division (`/`) has high precedence (arithmetic operators).\n*   Assignment (`=`) has lower precedence than arithmetic but higher than comma.\n*   The Comma operator (`,`) has the lowest precedence among all C operators. \nTherefore, option C is correct.",
+            "answer": "The comma operator has the lowest precedence of all C operators.",
             "answer_source": "generated",
             "chapter": "Unit 1: Comma, Arrow and Assignment operator, Operator Precedence"
         },
@@ -88,7 +88,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Array elements in C are always stored in contiguous (sequential) memory locations. This property is fundamental to how arrays work and allows for efficient direct access to elements using an index. Therefore, option A is correct.",
+            "answer": "Array elements occupy contiguous (sequential) memory locations.",
             "answer_source": "generated",
             "chapter": "Unit 2: Introduction to Arrays -One Dimensional (1D) Array Declaration and initialization"
         },
@@ -103,7 +103,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "In C, an array name `x` acts as a constant pointer to its first element. This means its address value cannot be changed after declaration.\n*   `I) ++x`: Illegal. You cannot increment a constant pointer.\n*   `II) x+1`: Legal. This is valid pointer arithmetic, which results in a pointer to the next element. It does not modify `x` itself, but rather computes a new address.\n*   `III) x++`: Illegal. You cannot increment a constant pointer.\n*   `IV) x*2`: Illegal. You cannot multiply a pointer by an integer directly.\n\nTherefore, I, III and IV are illegal operations.",
+            "answer": "An array name is a non-modifiable address: `++x` and `x++` modify it and `x*2` multiplies an address, so all are illegal. `x+1` is valid pointer arithmetic.",
             "answer_source": "generated",
             "chapter": "Unit 2: Pointer based Array manipulation"
         },
@@ -118,7 +118,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Let's trace the program execution:\n1.  `int a[3] = {10,12,14};` initializes the array `a` as `a[0]=10, a[1]=12, a[2]=14`.\n2.  `a[1]=20;` modifies the array. Now `a` is `{10, 20, 14}`.\n3.  `int i=0;` initializes `i` to 0.\n4.  The `while (i<3)` loop starts:\n    *   **i=0:** `i < 3` is true. `printf(\"%d \", a[0]);` prints `10 `. `i` becomes `1`.\n    *   **i=1:** `i < 3` is true. `printf(\"%d \", a[1]);` prints `20 `. `i` becomes `2`.\n    *   **i=2:** `i < 3` is true. `printf(\"%d \", a[2]);` prints `14 `. `i` becomes `3`.\n    *   **i=3:** `i < 3` is false. The loop terminates.\n\nThe final output is `10 20 14 `. Therefore, option B is correct.",
+            "answer": "`a[1]` is changed to 20, so the loop prints `10 20 14`.",
             "answer_source": "generated",
             "chapter": "Unit 2: Looping Control Statements: while, Accessing, Indexing and operations with 1D Arrays"
         },
@@ -133,7 +133,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The format specifier `%s` is used to print or read a null-terminated string (character array) in C's `printf` and `scanf` functions. `%c` is used for a single character. Therefore, option C is correct.",
+            "answer": "`%s` prints or reads a character array (string); `%c` is for a single character.",
             "answer_source": "generated",
             "chapter": "Unit 3: String Functions: gets(), puts(), getchar(),putchar(), printf()"
         },
@@ -148,7 +148,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Declaring `foo` and `f` inside `main` is a valid (local) declaration, and both are defined later in the file. `f()` prints `1 `, then calls `foo()`, which prints `2 `, so the output is `1 2`.",
+            "answer": "Declaring functions inside `main` is legal. `f()` prints `1 ` then calls `foo()`, which prints `2 `: output `1 2`.",
             "answer_source": "generated",
             "chapter": "Unit 3: Function prototype declaration, function definition"
         },

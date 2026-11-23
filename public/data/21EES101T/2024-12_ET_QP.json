@@ -1,0 +1,306 @@
+{
+    "paper_title": "21EES101T_Dec_2024",
+    "source": "21EES101T_Dec_2024",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "How many loops are there in the given circuit?",
+            "options": [
+                "3",
+                "5",
+                "4",
+                "2"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "A bridge circuit with its source has 6 branches and 4 nodes, so it has $6-4+1=3$ independent loops.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "2",
+            "question_text": "Consider the following pairs\nSeries circuit: Voltage division rule\nParallel circuit: Current division rule\nOpen circuit: Resistance is zero\nShort circuit: Resistance is maximum\nHow many of the above pairs are correctly matched?",
+            "options": [
+                "3",
+                "4",
+                "1",
+                "2"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "Only the first two pairs are correct; open circuit has infinite resistance and short circuit has zero, so 2 are correct.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "3",
+            "question_text": "Consider the following Statements\n1. In a parallel circuit, the current is the same through all the elements\n2. Current will not flow in an open circuit\n3. Ohm's law does not apply to parallel circuits\n4. In a series circuit, voltage is the same across all the resistors\nHow many statements given above are correct?",
+            "options": [
+                "2",
+                "3",
+                "1",
+                "4"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Only statement 2 is true: parallel elements share voltage, series elements share current, and Ohm's law applies everywhere.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "4",
+            "question_text": "The expression for RMS voltage in half wave rectifier is",
+            "options": [
+                "2Vm/π",
+                "Vm/2",
+                "Vm/π",
+                "Vm/2π"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "For a half-wave rectifier $V_{rms}=V_m/2$.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "5",
+            "question_text": "What does the equivalent circuit of the diode shown represent?",
+            "options": [
+                "Forward biased condition",
+                "Reverse biased condition",
+                "Open circuit",
+                "Cutoff"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "A reverse-biased diode acts as an open switch.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "6",
+            "question_text": "MOSFET is a type of transistor that uses an _______ to control",
+            "options": [
+                "amplifier",
+                "fuse",
+                "electric field",
+                "instrument"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "A MOSFET's gate electric field controls the channel conductivity.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "7",
+            "question_text": "SCR terminals are",
+            "options": [
+                "Anode, Gate, Collector",
+                "Base , Emitter, Collector",
+                "Gate , Emitter, Collector",
+                "Anode, Gate, Cathode"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "An SCR has anode, cathode and gate.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "8",
+            "question_text": "_______ impuritie is tri-valent.",
+            "options": [
+                "Antimony",
+                "Arsenic",
+                "Boron",
+                "Phosphorous"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Boron (group III) is trivalent; antimony, arsenic and phosphorus are pentavalent.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "9",
+            "question_text": "_______ of the DC generator is in the form of a laminated slotted drum.",
+            "options": [
+                "Brushes",
+                "Armature",
+                "Split rings",
+                "Pole shoe"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "The armature is the laminated slotted drum that carries the windings.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "10",
+            "question_text": "_______ is a polyphase synchronous motor with a permanent magnet rotor.",
+            "options": [
+                "Brushless DC motor",
+                "Induction motor",
+                "Transformer",
+                "DC motor"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "A BLDC motor is a polyphase synchronous machine with a permanent-magnet rotor.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "11",
+            "question_text": "_______ is a combination of an electric motor, a transmission, and a control system",
+            "options": [
+                "Sensor",
+                "Transducer",
+                "UPS",
+                "Electric drive"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "An electric drive = motor + transmission + control system.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "12",
+            "question_text": "_______ is a motor that can rotate with great precision",
+            "options": [
+                "Chopper",
+                "Crane",
+                "Servomotor",
+                "DC motor"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "A servomotor gives precise position and speed control using feedback.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "13",
+            "question_text": "_______ ensures that the moving system takes just the required time to reach its final deflected position",
+            "options": [
+                "Deflecting torque",
+                "Damping torque",
+                "Inertia torque",
+                "Spring torque"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Damping torque stops oscillation so the pointer settles quickly at its final reading.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "14",
+            "question_text": "_______ is a device which converts the energy from one form to another form",
+            "options": [
+                "DSO",
+                "Multimeter",
+                "Transducer",
+                "Thermocouple"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "A transducer converts energy from one form to another.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "15",
+            "question_text": "Which device works on the simple principle of change in resistance due to a change in temperature?",
+            "options": [
+                "Photoconductive cell",
+                "Photoemissive cell",
+                "LVDT",
+                "Thermistor"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "A thermistor's resistance changes with temperature.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "16",
+            "question_text": "_______ is an electronically modulated optical device",
+            "options": [
+                "Proximity Sensor",
+                "LCD",
+                "Optocoupler",
+                "IR sensor"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "An LCD modulates light electronically using liquid crystals.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "17",
+            "question_text": "_______ are attached to the poles or towers and are used to support the conductors",
+            "options": [
+                "Cross arms",
+                "Conductors",
+                "Insulators",
+                "Fuse"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Cross arms are fixed to poles or towers to support insulators and conductors.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "18",
+            "question_text": "_______ transmission system is more economical when the distance of transmission is more than 600 km.",
+            "options": [
+                "AC",
+                "Bulk",
+                "HVDC",
+                "Offshore"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Beyond about 600 km, HVDC is cheaper because of lower line cost and losses.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "19",
+            "question_text": "_______ is an equipment which can open or close a circuit under normal as well as fault conditions.",
+            "options": [
+                "Isolator",
+                "Circuit breaker",
+                "Busbar",
+                "Power transformer"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "A circuit breaker can make and break a circuit under normal and fault conditions; an isolator works only off-load.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "20",
+            "question_text": "A large number of solar cells are interconnected to form _______",
+            "options": [
+                "battery",
+                "photovoltaic cell",
+                "solar inverter",
+                "solar module"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "Many cells joined in series/parallel make a solar module (panel).",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        }
+    ]
+}

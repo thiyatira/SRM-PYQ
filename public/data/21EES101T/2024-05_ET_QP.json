@@ -1,0 +1,306 @@
+{
+    "paper_title": "21EES101T_May_2024",
+    "source": "21EES101T_May_2024",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "When two resistors of 6 Ω are connected in parallel, the effective resistance value in the circuit is",
+            "options": [
+                "9 Ω",
+                "3 Ω",
+                "12 Ω",
+                "0.33 Ω"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Two equal resistors in parallel: $R/2=6/2=3\\ \\Omega$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "2",
+            "question_text": "The conduction for maximum power transfer in the circuit is the effective resistance of the circuit is equal to the",
+            "options": [
+                "Square of load resistance",
+                "2 * load resistance",
+                "1/2 load resistance",
+                "Load resistance"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "Maximum power transfer needs source resistance equal to load resistance.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "3",
+            "question_text": "The power factor can be determined by the formula",
+            "options": [
+                "R^2 / Z",
+                "Z^2 / R",
+                "Z / R",
+                "R / Z"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "$\\text{PF}=\\cos\\phi=R/Z$ from the impedance triangle.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "4",
+            "question_text": "The line voltage is expressed in star connected network as",
+            "options": [
+                "$V_L = \\sqrt{2} V_{ph}$",
+                "$V_L = V_{ph} / 2$",
+                "$V_L = V_{ph}$",
+                "$V_L = \\sqrt{3} V_{ph}$"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "In star, $V_L=\\sqrt{3}\\,V_{ph}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "5",
+            "question_text": "When +ve terminal of the battery is connected P-type and -ve terminal to the N-type of PN junction diode, the bias applied",
+            "options": [
+                "Forward bias",
+                "Reverse bias",
+                "Barrier bias",
+                "Saturation bias"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Positive to P-type and negative to N-type is forward bias.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "6",
+            "question_text": "To determine the input characteristics of CE configuration NPN transistor _______ is kept constant.",
+            "options": [
+                "Collector - Emitter voltage (V_{CE})",
+                "Base-Emitter voltage (V_{BE})",
+                "Base current (I_B)",
+                "Collector current (I_C)"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Input characteristics ($I_B$ vs $V_{BE}$) are plotted at constant $V_{CE}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "7",
+            "question_text": "The terminals of JFET are",
+            "options": [
+                "Anode and cathode",
+                "Emitter, base, collector",
+                "Source, drain and gate",
+                "Emitter, gate, collector"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "A JFET has source, drain and gate.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "8",
+            "question_text": "The device that are designed to convert DC signal into AC signal are known as",
+            "options": [
+                "Choppers",
+                "Inverters",
+                "Battery",
+                "Rectifier"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "An inverter converts DC to AC.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "9",
+            "question_text": "The brushes in DC machine are made of",
+            "options": [
+                "Lamination sheets",
+                "Carbon",
+                "Copper",
+                "Aluminium"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Carbon brushes are self-lubricating and wear gently on the commutator.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "10",
+            "question_text": "The transformer works on the principle of",
+            "options": [
+                "Electromagnetic induction",
+                "Fleming's right hand rule",
+                "Len'z law",
+                "Fleming's left hand rule"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "A transformer works on electromagnetic induction (Faraday's law).",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "11",
+            "question_text": "The encoder in the servometer is used to determine the",
+            "options": [
+                "Stator current of the motor",
+                "Rotor current of the motor",
+                "Stator voltage of the motor",
+                "Speed of the motor"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "An encoder gives feedback on the rotor's position and speed.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "12",
+            "question_text": "Slip-ring rotor is a type of rotor of",
+            "options": [
+                "Stepper motor",
+                "BLDC motor",
+                "DC motor",
+                "Three phase induction motor"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "Slip-ring rotors are used in three-phase induction motors.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "13",
+            "question_text": "The torque which is always present in the instrument whether it is connected to the supply or not is",
+            "options": [
+                "Moving torque",
+                "Damping torque",
+                "Controlling torque",
+                "Deflecting torque"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Controlling torque is always present; it returns the pointer to zero when there is no supply.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "14",
+            "question_text": "The eddy current produce the required damping torque opposing the motion of the moving coil in PMMC as per",
+            "options": [
+                "Len's law",
+                "Faraday's law",
+                "Fleming's law",
+                "Self induction"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "By Lenz's law the eddy currents oppose the motion that causes them, giving damping.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "15",
+            "question_text": "The instrument which gives the storage of a digital waveform is",
+            "options": [
+                "Digital storage motor",
+                "Digital graph meter",
+                "Digital storage oscilloscope",
+                "Digital multimeter"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "A digital storage oscilloscope (DSO) stores digitised waveforms.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "16",
+            "question_text": "One example for active transducer is",
+            "options": [
+                "Capacitance",
+                "Thermocouple",
+                "Inductive",
+                "Hall effect"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "A thermocouple generates its own voltage, so it is active; the others need excitation.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "17",
+            "question_text": "The power factor in dc transmission system is",
+            "options": [
+                "0.866 lagging",
+                "0.5 lagging",
+                "Unity",
+                "0.5 leading"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "DC has no reactance in steady state, so the power factor is unity.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "18",
+            "question_text": "The most commonly used material for the manufacture of insulator in power system is",
+            "options": [
+                "Copper",
+                "Carbon",
+                "Aluminium",
+                "Porcelain"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "Porcelain has high dielectric and mechanical strength and resists weather, so it is the usual insulator material.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "19",
+            "question_text": "An electrical safety device that has the capability to protect the circuit from excessive current is",
+            "options": [
+                "Fuse",
+                "Insulator",
+                "Switch",
+                "Regulator"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "A fuse melts and breaks the circuit when current is excessive.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "20",
+            "question_text": "One example for renewable energy source is",
+            "options": [
+                "Nuclear energy",
+                "Solar energy",
+                "Thermal energy",
+                "Coal energy"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Solar energy is replenished naturally, so it is renewable.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        }
+    ]
+}

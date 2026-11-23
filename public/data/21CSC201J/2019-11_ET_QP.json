@@ -29,7 +29,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Insertion sort starts from the second element (index 1) and inserts it into its correct position relative to the sorted subarray to its left. This process is repeated up to index $N-1$, resulting in exactly $N-1$ passes.",
+            "answer": "Insertion sort inserts each element from index 1 onward into the sorted left part, so $N-1$ passes are needed.",
             "answer_source": "generated",
             "chapter": "Unit 1 - Introduction"
         },
@@ -209,7 +209,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "In order to build a balanced binary search tree (like an AVL tree) without rotations, selecting the median of the sorted list as the root (and recursively doing the same for the left and right halves) guarantees a balanced tree.",
+            "answer": "Taking the median as root and recursing on each half gives a perfectly balanced BST, so no rotations are needed.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Trees and Hashing"
         },
@@ -239,7 +239,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The height of an AVL tree with $P$ nodes is strictly bounded asymptotically by $O(\\log P)$, specifically $h \\le 1.44 \\log_2(P + 2) - 0.328$. Thus, (B) is the correct option.",
+            "answer": "An AVL tree is height-balanced, so its height is $O(\\log P)$ (at most about $1.44\\log_2 P$).",
             "answer_source": "generated",
             "chapter": "Unit 4 - Trees and Hashing"
         },
@@ -284,7 +284,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "When open addressing is used, standard deletion would break search chains. Therefore, \"lazy deletion\" is used, where deleted slots are marked with a special flag (e.g., \"deleted\") to indicate that searches should continue past them.",
+            "answer": "Open addressing marks deleted slots with a flag (lazy deletion) so probe chains stay intact and searches continue past them.",
             "answer_source": "generated",
             "chapter": "Unit 4 - Trees and Hashing"
         },
@@ -299,7 +299,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "A directed graph is strongly connected if there is a path between all pairs of vertices. In the context of the options provided, \"Strongly connected\" is the standard topological terminology used to describe full reachability among vertices.",
+            "answer": "No option names a complete graph; with an edge between every pair, every vertex reaches every other, i.e. strongly connected (closest option).",
             "answer_source": "generated",
             "chapter": "Unit 5 - Graph"
         },

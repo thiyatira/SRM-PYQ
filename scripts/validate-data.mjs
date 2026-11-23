@@ -98,7 +98,12 @@ function answerLetter(answer) {
 
 /* ── per-file validation ──────────────────────────────────────────────── */
 
+const NAME_RE =
+  /^(?:\d{4}(?:-(?:\d{2}|XX|\d{2}))*|XXXX)_(?:ET|CT[123]|FT2|FJ[12]|OBA|Quiz2(?:-3)?)(?:_[A-Za-z0-9-]+)*_(?:QP-Key|MCQ-Key|QP|Key)\.json$/;
+
 function readJson(rel, abs) {
+  if (!NON_PAPER.has(path.basename(abs)) && !NAME_RE.test(path.basename(abs)))
+    warn(rel, "file name does not follow <Date>_<ExamType>[_<Set>][_<Extra>]_<DocType>.json (see public/scripts/transcribe.md, section 2)");
   const buf = fs.readFileSync(abs);
   if (buf.length === 0) {
     err(rel, "file is empty (0 bytes); client fetch will fail JSON parse and skip it");

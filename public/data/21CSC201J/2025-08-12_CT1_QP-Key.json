@@ -134,8 +134,8 @@
             ],
             "correct_option": "A,C,D",
             "marks": null,
-            "answer": "ADTs focus on what operations can be performed rather than how they are implemented, thereby hiding the implementation details (A). Stack and Queue are classic examples of ADTs (C), defined by their operations such as push, pop, enqueue and dequeue (D). ADTs are not restricted to primitive data types, so (B) is false.",
-            "answer_source": "provided",
+            "answer": "A, C and D are true: ADTs hide the implementation, are defined by their operations, and Stack and Queue are examples. B is false: ADTs are not limited to primitive types.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
         {
@@ -149,7 +149,7 @@
             ],
             "correct_option": "C",
             "marks": null,
-            "answer": "`ptr` is an uninitialized (wild) pointer: it is never made to point to allocated memory. Dereferencing it with `ptr->x = 10` is undefined behavior and typically causes a segmentation fault at run time. (The printed key marked option A, but a program that writes through an uninitialized pointer cannot be relied on to print 10.)",
+            "answer": "`ptr` is an uninitialized (wild) pointer, so `ptr->x = 10` writes through an invalid address: undefined behaviour, typically a segmentation fault.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
@@ -269,8 +269,8 @@
             ],
             "correct_option": "A,D",
             "marks": null,
-            "answer": "The statement allocates memory dynamically (on the heap) for an array of `n` elements of `struct Item` (A and D). Accessing `arr[n]` is out of bounds and is undefined behavior, so (C) is false. Option (B) is not guaranteed since the members of `struct Item` are not shown in the question.",
-            "answer_source": "provided",
+            "answer": "A and D hold: `malloc` gives dynamic memory for $n$ items. C is false: valid indices are $0$ to $n-1$. B cannot be confirmed since the members of `struct Item` are not shown.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
         {
@@ -284,7 +284,7 @@
             ],
             "correct_option": "A,C,D",
             "marks": null,
-            "answer": "The code allocates an array of $n$ pointers and then a separate row of $n$ integers for each pointer, creating a dynamic $n \\times n$ 2D array (A). Elements are accessed validly with `mat[i][j]` (C). Each row comes from a separate `malloc`, so rows are not guaranteed to be contiguous (B is false), and not freeing each `mat[i]` leaks memory (D). (The printed key highlighted only A.)",
+            "answer": "A, C and D hold. B is false: each row is a separate `malloc`, so rows need not be contiguous. Each `mat[i]` must be freed to avoid a leak.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
@@ -299,7 +299,7 @@
             ],
             "correct_option": "A,B",
             "marks": null,
-            "answer": "`*p` directly accesses `a` and gives 5 (A). `&p` has type `int **`, so `*(&p)` is `p` and `**(&p)` is `*p`, which is also 5 (B). Options C and D print an address, not the value. (The printed key highlighted only B.)",
+            "answer": "`*p` is `a` (5). `*(&p)` is `p`, so `**(&p)` is `*p`, also 5. `&p` and `p` are addresses.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
@@ -389,8 +389,8 @@
             ],
             "correct_option": "A,D",
             "marks": null,
-            "answer": "`arr[1]` is an `int*` holding `&b`, so `*arr[1]` gives 20 (A). `**(&arr[1])` is `*(arr[1])`, which also gives 20 (D). `*(arr + 1)` and `arr[1]` are addresses, not 20.",
-            "answer_source": "provided",
+            "answer": "`arr[1]` holds `&b`, so `*arr[1]` and `**(&arr[1])` both give 20. `*(arr + 1)` and `arr[1]` are addresses.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
         {
@@ -419,7 +419,7 @@
             ],
             "correct_option": "A,B,C,D",
             "marks": null,
-            "answer": "$T(n) = 3n^2 + 2n + 1$ has quadratic order of growth, so it is $O(n^2)$ (upper bound), $\\Omega(n^2)$ (lower bound) and therefore $\\Theta(n^2)$ (tight bound). Since $n^2$ grows at least as fast as $n$, $T(n) = \\Omega(n)$ is also true. (The printed key listed only A, B, C.)",
+            "answer": "$3n^2+2n+1$ is quadratic, so it is $O(n^2)$, $\\Omega(n^2)$ and $\\Theta(n^2)$, and also $\\Omega(n)$ since $n^2$ grows faster than $n$.",
             "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
@@ -434,8 +434,8 @@
             ],
             "correct_option": "A,B,D",
             "marks": null,
-            "answer": "`Outer` embeds a complete `struct Inner in` inside itself, so Inner's memory is allocated within Outer (A, B). `a` is a member of `Inner`, not of `Outer`, so `Outer.a` is not valid; it must be accessed as `variable.in.a` (so C is false).",
-            "answer_source": "provided",
+            "answer": "`Outer` embeds a full `Inner` (A, B). `a` belongs to `Inner`, so `Outer.a` is invalid, and `in.a` is valid only through an Outer variable (D).",
+            "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
         {
@@ -479,8 +479,8 @@
             ],
             "correct_option": "B",
             "marks": null,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "An ADT defines the logical behaviour (operations) of a data structure without fixing how it is implemented.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
         {
@@ -494,8 +494,8 @@
             ],
             "correct_option": "B",
             "marks": null,
-            "answer": "`realloc(NULL, size)` behaves like `malloc`, so the allocated memory is uninitialized and `p[0]`, `p[1]` hold indeterminate (garbage) values. (Some systems may happen to return zeroed memory, but this is not guaranteed.)",
-            "answer_source": "provided",
+            "answer": "`realloc(NULL, n)` acts like `malloc`; on a fresh heap the block is usually zero, so it typically prints 0 0 (strictly, the contents are indeterminate).",
+            "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
         {
@@ -509,8 +509,8 @@
             ],
             "correct_option": "B,C,D",
             "marks": null,
-            "answer": "A structure cannot contain a member of its own (incomplete) type, so `struct Node next;` causes a compilation error (B). It can, however, contain a pointer to its own type (self-referential structure), so `struct Node *next;` is valid (C, D).",
-            "answer_source": "provided",
+            "answer": "`struct Node next;` is invalid (incomplete type). A struct may hold a pointer to its own type (`struct Node *next;`), but not an instance of itself.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
         {
@@ -599,8 +599,8 @@
             ],
             "correct_option": "B",
             "marks": null,
-            "answer": "`*arr` resolves to the base pointer of the first row (`arr[0]`). Thus `*arr + 1` shifts to the second integer address in that row (`&arr[0][1]`), and dereferencing evaluates to `20`.",
-            "answer_source": "provided",
+            "answer": "`*arr` is `arr[0]`, so `*arr + 1` is `&arr[0][1]` and `*(*arr + 1)` is 20.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         }
     ]

@@ -1,0 +1,291 @@
+{
+    "paper_title": "21EES101T_Dec_2025",
+    "source": "21EES101T_Dec_2025",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "What is the value of R in the circuit shown in Fig below",
+            "options": [
+                "2.5 Ω",
+                "5 Ω",
+                "7.5 Ω",
+                "10 Ω"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "R carries $6-4=2$ A at $4\\times5=20$ V, so $R=20/2=10\\ \\Omega$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "2",
+            "question_text": "In the circuit shown in Fig the ratio of V_2 / V_1 is",
+            "options": [
+                "- 0.5",
+                "0.5",
+                "- 2",
+                "2"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "$V_2/V_1=5I/(-10I)=-0.5$, since $V_1$ is taken opposite to the current direction.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "3",
+            "question_text": "While finding Thevenin's impedance of a circuit containing a few independent voltage and current sources, we have to",
+            "options": [
+                "Open circuit all the sources",
+                "Short circuit all the sources",
+                "Open circuit voltage sources and short circuit current sources.",
+                "Open circuit current sources and short circuit voltage sources"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "For Thevenin impedance, short voltage sources and open current sources.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "5",
+            "question_text": "Which power device combines the advantages of MOSFET (voltage control) and BJT (low conduction loss)?",
+            "options": [
+                "SCR",
+                "UJT",
+                "Power diode",
+                "IGBT"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "The IGBT has MOSFET-type voltage control and BJT-like low conduction loss.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "6",
+            "question_text": "A Zener diode is primarily used for",
+            "options": [
+                "Rectification",
+                "Voltage regulation",
+                "Amplification",
+                "Oscillation"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "A Zener diode holds a constant voltage in reverse breakdown, so it regulates voltage.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "7",
+            "question_text": "A device that converts DC power directly to AC is known as",
+            "options": [
+                "Inverter",
+                "Rectifier",
+                "Chopper",
+                "Cycloconverter"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "An inverter converts DC to AC.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "8",
+            "question_text": "In which type of commutation does the current naturally fall to zero due to the alternating supply?",
+            "options": [
+                "Forced commutation",
+                "Resonant commutation",
+                "Natural commutation",
+                "Load commutation"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "In AC circuits the supply current crosses zero by itself, turning off the thyristor (natural commutation).",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "9",
+            "question_text": "Which type of drive is best suited for cranes due to high starting torque?",
+            "options": [
+                "Induction motor drive",
+                "BLDC drive",
+                "DC motor drive",
+                "Stepper motor drive"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "DC (series) motors give very high starting torque, which suits cranes.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "10",
+            "question_text": "The rotor of a PMSM contains ........................",
+            "options": [
+                "Field winding with DC supply",
+                "Permanent magnets",
+                "Induced windings only",
+                "Copper shading coils"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "A PMSM rotor carries permanent magnets.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "11",
+            "question_text": "In a DC motor, the force experienced by a conductor is given by",
+            "options": [
+                "E = BLV",
+                "F = BIL",
+                "T = kφI",
+                "P = VI"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Force on a conductor is $F=BIL$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "12",
+            "question_text": "The most suitable motor drive for Electric Vehicles is ........................",
+            "options": [
+                "Squirrel-cage Induction Motor",
+                "BLDC Motor",
+                "Repulsion Motor",
+                "Shunt DC Motor"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "BLDC motors are efficient, compact and power-dense, so they suit EVs.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "13",
+            "question_text": "The principle of an IR sensor is ........................",
+            "options": [
+                "Piezoelectric effect",
+                "Detection of infrared radiation",
+                "Change in magnetic flux",
+                "Seebeck effect"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "An IR sensor works by detecting infrared radiation.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "14",
+            "question_text": "A photodiode operates mostly in ........................",
+            "options": [
+                "Forward bias",
+                "Reverse bias",
+                "Zero bias",
+                "Saturation"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Reverse bias widens the depletion region, so light-generated carriers are collected as photocurrent.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "15",
+            "question_text": "An LVDT is used for measuring ........................",
+            "options": [
+                "Temperature",
+                "Displacement",
+                "Pressure",
+                "Speed"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "An LVDT measures linear displacement.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "16",
+            "question_text": "Moving coil instruments are generally used for ........................",
+            "options": [
+                "AC only",
+                "DC only",
+                "Both AC and DC",
+                "Power measurement"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "A moving coil (PMMC) meter responds to the average current, so it measures DC only.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "17",
+            "question_text": "An electric motor draws 700 W for 5 hours. The energy consumed is",
+            "options": [
+                "3.5 kWh",
+                "3.5 Wh",
+                "3500 kWh",
+                "140 kWh"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "$E=700\\ \\text{W}\\times5\\ \\text{h}=3500\\ \\text{Wh}=3.5$ kWh.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "18",
+            "question_text": "PHEV (Plug-in Hybrid Electric Vehicle) differs from HEV because:",
+            "options": [
+                "It cannot use IC engine",
+                "It has larger batteries and can be charged from grid",
+                "It runs only on hydrogen",
+                "It eliminates electric motor"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "A PHEV has a bigger battery that can be charged from the grid; a plain HEV cannot.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "19",
+            "question_text": "The most common form of energy storage for renewable energy is ........................",
+            "options": [
+                "Pumped hydro storage",
+                "Coal reserves",
+                "Gas turbines",
+                "Diesel generators"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Pumped hydro provides most of the world's grid energy storage.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "20",
+            "question_text": "The main purpose of earthing is to ................",
+            "options": [
+                "Reduce copper losses",
+                "Protect equipment from overload",
+                "Provide a safe path for fault current",
+                "Improve insulation resistance"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Earthing gives fault current a low-resistance path to ground, protecting people.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        }
+    ]
+}

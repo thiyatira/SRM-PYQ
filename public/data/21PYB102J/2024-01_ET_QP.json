@@ -1,0 +1,306 @@
+{
+    "paper_title": "JANUARY_2024_21PYB102J",
+    "source": "JANUARY_2024_21PYB102J",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "Quantum free electron theory was proposed by..................",
+            "options": [
+                "Bloch",
+                "Drude & Lorentz",
+                "Sommerfeld",
+                "Newton"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Sommerfeld added Fermi-Dirac statistics to Drude's classical model.",
+            "answer_source": "generated",
+            "chapter": "Unit 1-Energy Bands in Solids"
+        },
+        {
+            "question_number": "2",
+            "question_text": "The probability that an electron in a metal occupies the Fermi-level, at any temperature above 0 K is..................",
+            "options": [
+                "0",
+                "0.5",
+                "1",
+                "100"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Fermi-Dirac: $f(E_F)=1/2$ for any $T>0$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1-Energy Bands in Solids"
+        },
+        {
+            "question_number": "3",
+            "question_text": "A semiconductor behave like a _________ at absolute zero temperature.",
+            "options": [
+                "Conductor",
+                "Insulator",
+                "Protection device",
+                "Quasi conductor"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "At 0 K the valence band is full and the conduction band empty, so no conduction: an insulator.",
+            "answer_source": "generated",
+            "chapter": "Unit 1-Energy Bands in Solids"
+        },
+        {
+            "question_number": "4",
+            "question_text": "_________ the eigen function of d/dx.",
+            "options": [
+                "X^2",
+                "2 Sin(x)",
+                "e^{2x}",
+                "Sin (2x)"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "$\\frac{d}{dx}e^{2x}=2e^{2x}$, so $e^{2x}$ is an eigenfunction with eigenvalue 2.",
+            "answer_source": "generated",
+            "chapter": "Unit 1-Energy Bands in Solids"
+        },
+        {
+            "question_number": "5",
+            "question_text": "Germanium is the example of ............... semiconductor",
+            "options": [
+                "Intrinsic",
+                "Extrinsic",
+                "Metal Doped",
+                "Oxide Doped"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Pure Germanium is an elemental semiconductor and an example of an intrinsic semiconductor.",
+            "answer_source": "source",
+            "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
+        },
+        {
+            "question_number": "6",
+            "question_text": "The photo diode accepts..............energy as input to generate..............",
+            "options": [
+                "Sound, Electric current",
+                "Heat, Electric current",
+                "Electric current, Light",
+                "Light, Electric current"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "A photodiode absorbs incident light (photons) as input and converts it into an electrical current.",
+            "answer_source": "source",
+            "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
+        },
+        {
+            "question_number": "7",
+            "question_text": "In a semiconductor the drift current is due to ...............",
+            "options": [
+                "Random motion of electrons in the absence of electric field",
+                "Random motion of holes in the absence of electric field",
+                "Movement of charge carriers in the presence of applied electric field.",
+                "Movement of the positive ions in the presence of applied electric field."
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Drift current is carrier motion under an applied electric field.",
+            "answer_source": "generated",
+            "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
+        },
+        {
+            "question_number": "8",
+            "question_text": "............... converts electrical energy into light energy.",
+            "options": [
+                "Solar Cell",
+                "Light Emitting Diode",
+                "Dynamo",
+                "Liquid crystal display"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "A Light Emitting Diode (LED) relies on electroluminescence to convert electrical current directly into light.",
+            "answer_source": "source",
+            "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
+        },
+        {
+            "question_number": "9",
+            "question_text": "Band to Band transition in GaAs can results absorption and emission of photons with wavelength of...............",
+            "options": [
+                "0.087 nm",
+                "0.087 mm",
+                "0.87 μm",
+                "0.087 Å"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "$\\lambda = hc/E \\approx 1240\\ \\text{eV nm}/1.42\\ \\text{eV} \\approx 873$ nm $= 0.87\\ \\mu$m.",
+            "answer_source": "generated",
+            "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
+        },
+        {
+            "question_number": "10",
+            "question_text": "Spontaneous emission processes is directly proportional to...............",
+            "options": [
+                "Number of atoms in excited state",
+                "Number of atoms in ground state",
+                "Energy density of radiation",
+                "Number of holes in ground state"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Spontaneous emission rate $=AN_2$, proportional to the number of atoms in the excited state.",
+            "answer_source": "generated",
+            "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
+        },
+        {
+            "question_number": "11",
+            "question_text": "...............rule is a simple expression for the transition probabilities between states of a quantum system, which are subjected to a perturbation",
+            "options": [
+                "Ampere",
+                "Maxwell",
+                "Einstein",
+                "Fermi Golden"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "Fermi's golden rule gives transition rates under a perturbation.",
+            "answer_source": "generated",
+            "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
+        },
+        {
+            "question_number": "12",
+            "question_text": "...............is a popular simulation technique for evaluating the evolution of optical fields in waveguides and photonic devices, and Optoelectronic Integrated Circuits",
+            "options": [
+                "Beam Propagation Method",
+                "Transfer Matrix Method",
+                "Pseudo Potential Method",
+                "Density Function Method"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "BPM simulates the propagation of optical fields in waveguides.",
+            "answer_source": "generated",
+            "chapter": "Unit 4- Electrical and Optical Measurements"
+        },
+        {
+            "question_number": "13",
+            "question_text": "The ............... method is used to measure the resistance",
+            "options": [
+                "Hydrogenation",
+                "Electrolysis",
+                "Rectification",
+                "Vander Pauw"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "Van der Pauw measures the resistivity (sheet resistance) of a sample.",
+            "answer_source": "generated",
+            "chapter": "Unit 4- Electrical and Optical Measurements"
+        },
+        {
+            "question_number": "14",
+            "question_text": "C-V measurements are capable of yielding information about the ............... and concentration of charge carriers",
+            "options": [
+                "Drift potential",
+                "Diffusion potential",
+                "Bonding",
+                "Structure"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "C-V profiling gives the built-in (diffusion) potential and the doping concentration.",
+            "answer_source": "generated",
+            "chapter": "Unit 4- Electrical and Optical Measurements"
+        },
+        {
+            "question_number": "15",
+            "question_text": "In four probe method, the resistance due to the superposition of current at outer tips R =...............",
+            "options": [
+                "V/2I",
+                "V/I",
+                "2V/I",
+                "2VI"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Current flows through the outer tips and voltage is read across the inner tips, so $R=V/I$.",
+            "answer_source": "generated",
+            "chapter": "Unit 4- Electrical and Optical Measurements"
+        },
+        {
+            "question_number": "16",
+            "question_text": "The resistivity of the given material is _______, whose resistance is 2Ω; area of cross-section and length are 25 cm^2 and 15 cm respectively.",
+            "options": [
+                "333 Ohm m",
+                "3.33 Ohm m",
+                "0.0333 Ohm m",
+                "0.333 Ohm m"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "ρ = R·A/L = 2 × (25×10⁻⁴ m²) / (0.15 m) = 0.0333 Ω m.",
+            "answer_source": "generated",
+            "chapter": "Unit 4- Electrical and Optical Measurements"
+        },
+        {
+            "question_number": "17",
+            "question_text": "Nano scale materials has their size in between...............nm",
+            "options": [
+                "10-100",
+                "100-1000",
+                "1000-2000",
+                "1-100"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "Nanomaterials have sizes of about 1-100 nm.",
+            "answer_source": "generated",
+            "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
+        },
+        {
+            "question_number": "18",
+            "question_text": "In a quantum dot the electron confinement is along _________",
+            "options": [
+                "One dimension",
+                "all the three dimensions",
+                "Two dimensions",
+                "zero dimension"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "A quantum dot (0D) confines carriers in all three dimensions.",
+            "answer_source": "generated",
+            "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
+        },
+        {
+            "question_number": "19",
+            "question_text": "In CVD process , the precursor in the form of...............",
+            "options": [
+                "Liquid",
+                "Solid",
+                "Gas",
+                "Semi solid"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "CVD uses gaseous precursors that react on a heated substrate.",
+            "answer_source": "generated",
+            "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
+        },
+        {
+            "question_number": "20",
+            "question_text": "............... technique allows surfaces of objects to be seen in their natural state without staining",
+            "options": [
+                "XEM",
+                "AFM",
+                "TEM",
+                "XRD"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "AFM images by force sensing, so it needs no staining or vacuum.",
+            "answer_source": "generated",
+            "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
+        }
+    ]
+}

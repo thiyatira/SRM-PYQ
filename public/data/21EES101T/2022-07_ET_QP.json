@@ -1,0 +1,366 @@
+{
+    "paper_title": "21EES101T_July_2022",
+    "source": "21EES101T_July_2022",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "Find the maximum power transferred to the load for given Thevenin's equivalent circuit?",
+            "options": [
+                "5W",
+                "2.5W",
+                "10W",
+                "25W"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "$P_{max}=\\dfrac{V_{th}^2}{4R_{th}}=\\dfrac{10^2}{4\\times2.5}=10$ W.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "2",
+            "question_text": "The nodal method of circuit analysis is based on",
+            "options": [
+                "Kirchhoff current law",
+                "Kirchhoff voltage law",
+                "Thevenin's theorem",
+                "Norton's theorem"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Nodal analysis applies KCL at each node.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "3",
+            "question_text": "For a three phase star connected system with a line voltage of 400V, calculate the value of phase voltage.",
+            "options": [
+                "210.54 V",
+                "275.28 V",
+                "331.33 V",
+                "230.94 V"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "$V_{ph}=400/\\sqrt{3}=230.94$ V.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "4",
+            "question_text": "A 100 Watts lamp is connected across 220V DC supply. Find the value of current drawn by the lamp?",
+            "options": [
+                "2.2A",
+                "0.454A",
+                "10A",
+                "5A"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "$I=P/V=100/220=0.4545$ A.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "5",
+            "question_text": "According to superposition theorem, while considering an individual source, all other voltage sources can be substituted as",
+            "options": [
+                "Current sources",
+                "Short circuit",
+                "Open circuit",
+                "External resistor"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Superposition: voltage sources not under consideration are short-circuited.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "6",
+            "question_text": "Which of the following is not a terminal of BJT?",
+            "options": [
+                "Gate",
+                "Base",
+                "Emitter",
+                "Collector"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "A BJT has emitter, base and collector; gate belongs to FETs.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "7",
+            "question_text": "JFET is _______ device.",
+            "options": [
+                "Voltage controlled",
+                "Current controlled",
+                "Impedance controlled",
+                "Frequency controlled"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "A JFET's drain current is controlled by the gate voltage.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "8",
+            "question_text": "Which of the following device is used to convert AC to DC supply?",
+            "options": [
+                "Rectifier",
+                "Inverter",
+                "Cyclo converter",
+                "Chopper"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "A rectifier converts AC to DC.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "9",
+            "question_text": "The output of a logic gate is '1' when all its input is at logic '0'. The gate is",
+            "options": [
+                "AND",
+                "EX-OR",
+                "OR",
+                "EX-NOR"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "XNOR(0,0)=1; XNOR outputs 1 when its inputs are equal.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "10",
+            "question_text": "Simplify the following Boolean expression Y(A,B,C) = Σm(0,1,2,3,6)",
+            "options": [
+                "$Y = \\overline{A} + B\\overline{C}$",
+                "$Y = A + B\\overline{C}$",
+                "$Y = \\overline{A} + BC$",
+                "$Y = BC$"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Minterms 0-3 give $\\overline{A}$ and minterms 2, 6 give $B\\overline{C}$, so $Y=\\overline{A}+B\\overline{C}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "11",
+            "question_text": "The function of brushes in a DC generator is _______",
+            "options": [
+                "To increase the voltage",
+                "To increase the current",
+                "To bring the power developed to the load",
+                "To provide flux density in air gap"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Brushes collect current from the commutator and deliver the generated power to the external load.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "13",
+            "question_text": "The stator frame of an induction motor is usually made of _______",
+            "options": [
+                "Silicon steel",
+                "Cast iron",
+                "Aluminum",
+                "Bronze"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Cast iron gives the stator frame strength and protection.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "14",
+            "question_text": "The efficiency of an induction motor is about _______",
+            "options": [
+                "100%",
+                "80 – 90%",
+                "50 – 60%",
+                "Less than 50%"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Induction motor efficiency is typically 80-90%.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "15",
+            "question_text": "Which of the following is not an advantage of BLDC motor over conventional DC motor?",
+            "options": [
+                "Less maintenance",
+                "Long life",
+                "No risk of explosion or possibility of RF radiation",
+                "Low cost"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "BLDC motors need costly electronic controllers, so low cost is not an advantage.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "16",
+            "question_text": "Which of the following represent active transducer?",
+            "options": [
+                "Strain gauge",
+                "Thermistor",
+                "LVDT",
+                "Thermocouple"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "A thermocouple generates its own voltage (Seebeck effect), so it is active.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "17",
+            "question_text": "What is the principle of operation of LVDT?",
+            "options": [
+                "Mutual inductance",
+                "Self-inductance",
+                "Permanence",
+                "Reluctance"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "An LVDT works on mutual inductance.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "18",
+            "question_text": "The symbol represents _______ device.",
+            "options": [
+                "LED",
+                "Photodiode",
+                "LCD",
+                "Laser diode"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "A diode symbol with outgoing arrows is an LED.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "19",
+            "question_text": "The photodiode will be generally connected in _______",
+            "options": [
+                "Forward bias",
+                "Reverse bias",
+                "No biasing required",
+                "Neutral"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "A photodiode is used in reverse bias, where light changes the reverse current.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "20",
+            "question_text": "A device is an adjustable resistor whose resistance differs inversely with the concentration of light?",
+            "options": [
+                "Photoresistor",
+                "Thermistor",
+                "Photo transistor",
+                "Thermocouple"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "A photoresistor (LDR) has resistance that falls as light increases.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "21",
+            "question_text": "Earthing is an essential protection to provide against.",
+            "options": [
+                "Danger of electric shock",
+                "Overloading",
+                "Voltage fluctuation",
+                "High temperature of the conductors"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Earthing protects against electric shock by giving leakage current a path to ground.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "22",
+            "question_text": "The size of the earth wire is determined by",
+            "options": [
+                "The atmospheric conditions",
+                "The voltage of the service wire",
+                "The ampere capacity of the service wire",
+                "The frequency range of service wire"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "The earth wire must carry the fault current, so its size follows the ampere capacity of the service wire.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "23",
+            "question_text": "Electric vehicles and hybrid vehicles have the following components common except _______",
+            "options": [
+                "Battery",
+                "ECU",
+                "Generator",
+                "Internal combustion engine"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "A pure EV has no internal combustion engine; hybrids do.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "24",
+            "question_text": "Photovoltaic cell or solar cell converts _______",
+            "options": [
+                "Thermal energy into electricity",
+                "Solar radiation into electricity",
+                "Solar radiation into thermal energy",
+                "Solar radiation into kinetic energy"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "A solar (photovoltaic) cell converts solar radiation into electricity.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "25",
+            "question_text": "What is the frequency range of AC supply followed in Indian standard?",
+            "options": [
+                "50 Hz",
+                "60 Hz",
+                "40 Hz",
+                "75 Hz"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "The Indian standard frequency is 50 Hz.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        }
+    ]
+}

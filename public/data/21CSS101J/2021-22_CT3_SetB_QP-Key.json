@@ -13,8 +13,8 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "An array name decays to a pointer to its first element, so only the base address is passed.",
+            "answer_source": "generated",
             "chapter": "Unit 3: Function prototype declaration, function definition"
         },
         {
@@ -28,8 +28,8 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "`#include` is handled by the preprocessor, which pastes the header's contents in before compilation.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Introduction to C: Structure of the C program"
         },
         {
@@ -43,8 +43,8 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "C sets no fixed limit on pointer levels (`*`, `**`, `***`, ...); only a large practical compiler limit exists.",
+            "answer_source": "generated",
             "chapter": "Unit 2: Pointer Declaration and dereferencing"
         },
         {
@@ -58,8 +58,8 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "`p++` passes the old value of `p` (address of `i`) and then increments `p`, so `foo` prints `*p` = 10.",
+            "answer_source": "generated",
             "chapter": "Unit 2: Pointer Declaration and dereferencing"
         },
         {
@@ -73,8 +73,8 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "`**m` is `k`, so `**m = 6` sets `k` to 6.",
+            "answer_source": "generated",
             "chapter": "Unit 2: Pointer Declaration and dereferencing"
         },
         {
@@ -88,7 +88,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "The code does not compile: the member declaration `boat1, boat2;` inside the struct is invalid, `boat2` and `boat1` are not declared as variables in `main`, and `boat2.size` is not a member. So the result is a compiler error. (The printed key listed option c.)",
+            "answer": "Compile error: `boat1, boat2;` is not a valid member declaration, and `boat2` and `.size` are undeclared.",
             "answer_source": "generated",
             "chapter": "Unit 1: Numeric Data types: integer, floating point Non-Numeric Data types: char and string"
         },
@@ -103,8 +103,8 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "A union is as large as its biggest member: `int b[10]` = 40 bytes (already a multiple of the 8-byte alignment).",
+            "answer_source": "generated",
             "chapter": "Unit 2: One Dimensional (1D) Array Declaration and initialization"
         },
         {
@@ -118,8 +118,8 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "As printed, `integer j=1` after a comma is invalid and `*ptr` would be 1, which is not an option; the key's 10 matches `ptr` pointing to `i`, so the code looks garbled. Key kept.",
+            "answer_source": "generated",
             "chapter": "Unit 2: Pointer Declaration and dereferencing"
         },
         {
@@ -133,8 +133,8 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "`fprintf` and `fscanf` take the file pointer first, then the format string and variables.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Input and output statements"
         },
         {
@@ -148,8 +148,8 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "",
-            "answer_source": "provided",
+            "answer": "`free()` returns `void`, so assigning its result to `*ptr2` (an uninitialised pointer) is an error.",
+            "answer_source": "generated",
             "chapter": "Unit 2: Pointer Declaration and dereferencing"
         },
         {

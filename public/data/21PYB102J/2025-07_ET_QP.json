@@ -1,0 +1,606 @@
+{
+    "paper_title": "JULY_2025_21PYB102J",
+    "source": "JULY_2025_21PYB102J",
+    "questions": [
+        {
+            "question_number": "Q1",
+            "question_text": "What type of material is obtained when an intrinsic semiconductor is doped with Boron atoms?",
+            "options": [
+                "N-type semiconductor",
+                "P-type semiconductor",
+                "Superconductor",
+                "Insulator"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Boron is trivalent: it accepts electrons and creates holes (p-type).",
+            "answer_source": "generated",
+            "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
+        },
+        {
+            "question_number": "Q2",
+            "question_text": "The density of states for a given material is ________.",
+            "options": [
+                "Directly proportional to square root of energy",
+                "Inversely proportional to square root of energy",
+                "Directly proportional to cube root of energy",
+                "Inversely proportional to cube root of energy"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "In 3D bulk materials, the Density of States (DOS) g(E) is proportional to E¹/².",
+            "answer_source": "generated",
+            "chapter": "Unit 1-Energy Bands in Solids"
+        },
+        {
+            "question_number": "Q3",
+            "question_text": "What is the shape of E-K diagram for a free electron?",
+            "options": [
+                "Parabola",
+                "Straight line",
+                "Square",
+                "Circle"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "E = ħ²k²/2m is a quadratic relationship, appearing as a parabola in the E-k plot.",
+            "answer_source": "generated",
+            "chapter": "Unit 1-Energy Bands in Solids"
+        },
+        {
+            "question_number": "Q4",
+            "question_text": "Which of the following method uses ‘primitive cell approach’ to compute electronic band structure computationally?",
+            "options": [
+                "Wigner-seitz method",
+                "APW method",
+                "Pseudopotential method",
+                "Tight binding method"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "The Wigner-Seitz method solves the band problem within a single primitive (Wigner-Seitz) cell.",
+            "answer_source": "generated",
+            "chapter": "Unit 1-Energy Bands in Solids"
+        },
+        {
+            "question_number": "Q5",
+            "question_text": "The Fermi level of a P-type semiconductor at room temperature lies ________.",
+            "options": [
+                "In the middle of forbidden gap",
+                "Near to conduction band edge",
+                "Near to valance band edge",
+                "Inside the valence band"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Acceptor levels pull the Fermi level toward the valence band edge.",
+            "answer_source": "generated",
+            "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
+        },
+        {
+            "question_number": "Q6",
+            "question_text": "Which of the below statements is RIGHT regarding the diffusion current density?",
+            "options": [
+                "It depends on applied electric field",
+                "It does not depend on the concentration gradient",
+                "It depends on the concentration gradient",
+                "It is equal to zero"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Diffusion current flows due to a carrier concentration gradient; drift current needs an electric field.",
+            "answer_source": "generated",
+            "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
+        },
+        {
+            "question_number": "Q7",
+            "question_text": "In LED, what is the shape of domes made from plastics used to minimize the losses caused by bulk absorption thereby increasing the external efficiency?",
+            "options": [
+                "Spherical",
+                "Octahedral",
+                "Hexagonal",
+                "Hemispherical"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "Hemispherical domes reduce total internal reflection losses.",
+            "answer_source": "generated",
+            "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
+        },
+        {
+            "question_number": "Q8",
+            "question_text": "Auger generation/recombination is also known as ________.",
+            "options": [
+                "Two particle transitions",
+                "Four particle transitions",
+                "Three particle transitions",
+                "Single particle transitions"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Auger recombination involves three carriers: the released energy goes to a third electron or hole.",
+            "answer_source": "generated",
+            "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
+        },
+        {
+            "question_number": "Q9",
+            "question_text": "The generation of electron-hole pairs by the electron bombardment followed by heir radiative recombination is known as ________.",
+            "options": [
+                "Photoluminescence",
+                "Electroluminescence",
+                "Thermoluminescence",
+                "Cathodoluminescence"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "Cathodoluminescence is light emission caused by electron-beam bombardment.",
+            "answer_source": "generated",
+            "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
+        },
+        {
+            "question_number": "Q10",
+            "question_text": "If the number of upward transition per seconds exceeds the number of downward transition ________ is achieved.",
+            "options": [
+                "Optical gain",
+                "Optical loss",
+                "Equilibrium",
+                "Absorption"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "More upward than downward transitions means net absorption, i.e. optical loss; gain needs population inversion.",
+            "answer_source": "generated",
+            "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
+        },
+        {
+            "question_number": "Q11",
+            "question_text": "In a semiconductor, the number of electrons undergoing spontaneous emission depends on ---",
+            "options": [
+                "Energy density of incident radiation only",
+                "Number of electrons in ground state only",
+                "Number of electrons in excited state only",
+                "Energy density of incident radiation and number of electrons in excited state"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Spontaneous emission depends only on the excited-state population (rate $=AN_2$).",
+            "answer_source": "generated",
+            "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
+        },
+        {
+            "question_number": "Q12",
+            "question_text": "Which of the below is an inter-band transition.",
+            "options": [
+                "Impurity to band transition",
+                "Band to band transition",
+                "Free carrier transition",
+                "Phonon transition"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Interband transitions go between the valence and conduction bands.",
+            "answer_source": "generated",
+            "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
+        },
+        {
+            "question_number": "Q13",
+            "question_text": "In linear four probe method the tip of probe diameter is usually ________ than the probe spacing.",
+            "options": [
+                "Larger",
+                "Cooler",
+                "Hotter",
+                "Smaller"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "Tips much smaller than the spacing act as point contacts.",
+            "answer_source": "generated",
+            "chapter": "Unit 4- Electrical and Optical Measurements"
+        },
+        {
+            "question_number": "Q14",
+            "question_text": "Van der Pauw technique measures the resistivity and ________ of the sample.",
+            "options": [
+                "Coefficient of Friction",
+                "Absorption",
+                "Hall coefficient",
+                "Emission"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Van der Pauw measures the resistivity and the Hall coefficient.",
+            "answer_source": "generated",
+            "chapter": "Unit 4- Electrical and Optical Measurements"
+        },
+        {
+            "question_number": "Q15",
+            "question_text": "C-V technique uses a metal – semiconductor junction ( Schottky barrier ) of a p–n junction to create a ________.",
+            "options": [
+                "Depletion Region",
+                "Hole generation",
+                "Electron – hole pairs",
+                "Electron generation"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "C-V profiling uses the junction's depletion region: its capacitance versus voltage gives the doping profile.",
+            "answer_source": "generated",
+            "chapter": "Unit 4- Electrical and Optical Measurements"
+        },
+        {
+            "question_number": "Q16",
+            "question_text": "Which of the following is used in electron microscope?",
+            "options": [
+                "Electron beams",
+                "Magnetic fields",
+                "Light waves",
+                "Electron beam and magnetic fields"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "Electron beams illuminate the sample and magnetic fields act as lenses.",
+            "answer_source": "generated",
+            "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
+        },
+        {
+            "question_number": "Q17",
+            "question_text": "Scanning electron microscopy helps us to see the ________.",
+            "options": [
+                "Surface texture of a sample",
+                "Inside of a sample",
+                "Atoms of a sample",
+                "Electrons of a sample"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "SEM is primarily used for high-resolution imaging of the surface morphology/texture of samples.",
+            "answer_source": "generated",
+            "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
+        },
+        {
+            "question_number": "Q18",
+            "question_text": "Which of these is the best visualization of a carbon nanotube?",
+            "options": [
+                "A rolled-up piece of chicken wire",
+                "A hollowed-out piece of pottery",
+                "A PVC pipes",
+                "A spring"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "A CNT is a graphene sheet rolled into a cylinder, like rolled chicken wire.",
+            "answer_source": "generated",
+            "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
+        },
+        {
+            "question_number": "Q19",
+            "question_text": "In CVD chamber, the precursors are introduced to the reaction chamber in the ________ state.",
+            "options": [
+                "Liquid",
+                "Solid",
+                "Gaseous",
+                "Semisolid"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Chemical Vapor Deposition (CVD) involves gaseous reactants reacting on a heated substrate.",
+            "answer_source": "generated",
+            "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
+        },
+        {
+            "question_number": "Q20",
+            "question_text": "Electron cannot move freely in all directions ________ structure.",
+            "options": [
+                "Quantum well",
+                "Quantum wire",
+                "Quantum dot",
+                "Quantum cone"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "In a quantum dot (0D) electrons are confined in all three directions.",
+            "answer_source": "generated",
+            "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
+        },
+        {
+            "question_number": "1",
+            "question_text": "Which of the following computational method assumes ‘muffing-tin potential’ for the electronic band structure calculation?",
+            "options": [
+                "Tight binding model",
+                "APW method",
+                "Pseudopotential method",
+                "Cellular method"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "APW assumes a muffin-tin potential: spherical near atoms, constant in between.",
+            "answer_source": "generated",
+            "chapter": "Unit 1-Energy Bands in Solids"
+        },
+        {
+            "question_number": "2",
+            "question_text": "The barrier strength of periodic potential in Kronig-Penney model is denoted as",
+            "options": [
+                "b",
+                "P",
+                "bv_o",
+                "b/v_o"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "P is the barrier strength (scattering power) in the Kronig-Penney model.",
+            "answer_source": "generated",
+            "chapter": "Unit 1-Energy Bands in Solids"
+        },
+        {
+            "question_number": "3",
+            "question_text": "The probability of a radiative recombination is _________ for indirect band gap semiconductor.",
+            "options": [
+                "High",
+                "Low",
+                "Zero",
+                "Infinity"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "An indirect gap needs a phonon to conserve momentum, so radiative recombination is unlikely.",
+            "answer_source": "generated",
+            "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
+        },
+        {
+            "question_number": "4",
+            "question_text": "According to classical free electron theory, the potential energy of the electron is _________",
+            "options": [
+                "Zero",
+                "Infinite",
+                "Equal to Kinetic energy",
+                "Equal to total energy"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Classical free electron theory assumes a constant, zero potential inside the metal.",
+            "answer_source": "generated",
+            "chapter": "Unit 1-Energy Bands in Solids"
+        },
+        {
+            "question_number": "5",
+            "question_text": "The Fermi level of a N-type semiconductor at room temperature lies",
+            "options": [
+                "In the middle of forbidden gap",
+                "Near to conduction band edge",
+                "Near to valance band edge",
+                "Inside the conduction band"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Donor levels pull the Fermi level close to the conduction band edge.",
+            "answer_source": "generated",
+            "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
+        },
+        {
+            "question_number": "6",
+            "question_text": "For a PN junction diode the current in reverse bias may be",
+            "options": [
+                "Few milliamperes",
+                "Few amperes",
+                "Few milliamperes to several amperes",
+                "Few microamperes"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "Reverse bias carries only a tiny minority-carrier saturation current, microamperes or less.",
+            "answer_source": "generated",
+            "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
+        },
+        {
+            "question_number": "7",
+            "question_text": "In semiconductors, photons interact with _________",
+            "options": [
+                "Atoms",
+                "Protons",
+                "Neutrons",
+                "Charge carriers"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "Photons interact with charge carriers, exciting electrons across the gap.",
+            "answer_source": "generated",
+            "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
+        },
+        {
+            "question_number": "8",
+            "question_text": "If ϕ_p and ϕ_m are the work function of P type semiconductor and a metal, respectively, the rectifying junction is formed when _________",
+            "options": [
+                "ϕ_p = ϕ_m",
+                "ϕ_p < ϕ_m",
+                "ϕ_p > ϕ_m",
+                "ϕ_p = ϕ_m/2"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "A rectifying (Schottky) contact on p-type needs $\\phi_p>\\phi_m$.",
+            "answer_source": "generated",
+            "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
+        },
+        {
+            "question_number": "9",
+            "question_text": "The optical joint density of states is directly proportional to _________",
+            "options": [
+                "E^(1/2)",
+                "E^(-1/2)",
+                "E",
+                "2E"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Joint DOS $\\propto (E-E_g)^{1/2}$, i.e. $\\propto E^{1/2}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
+        },
+        {
+            "question_number": "10",
+            "question_text": "The fermi golden rule helps to identify the _________",
+            "options": [
+                "Velocity of light",
+                "Momentum of electrons",
+                "Absorption energy of electrons",
+                "Transition rate per unit volume"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "Fermi's golden rule gives the transition rate.",
+            "answer_source": "generated",
+            "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
+        },
+        {
+            "question_number": "11",
+            "question_text": "Solar cell operates on",
+            "options": [
+                "Forward bias",
+                "Reverse bias",
+                "Zero bias",
+                "High forward bias"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "A solar cell works with no external bias; the light itself generates the voltage.",
+            "answer_source": "generated",
+            "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
+        },
+        {
+            "question_number": "12",
+            "question_text": "Which of the following is an advantage of using the finite element method?",
+            "options": [
+                "It is computationally efficient",
+                "It works well for complex geometries",
+                "It is easy to implement",
+                "It is more accurate then other numerical method"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "FEM handles complex geometries well.",
+            "answer_source": "generated",
+            "chapter": "Unit 4- Electrical and Optical Measurements"
+        },
+        {
+            "question_number": "13",
+            "question_text": "As an industrialist, I want to have an idea about dimensions of the MOSFET, then TCAD simulation _________ the production cost.",
+            "options": [
+                "Increases",
+                "Reduces",
+                "Keeps constant",
+                "Exponentially increases"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "TCAD simulates devices virtually, so fewer fabrication trials and lower cost.",
+            "answer_source": "generated",
+            "chapter": "Unit 4- Electrical and Optical Measurements"
+        },
+        {
+            "question_number": "14",
+            "question_text": "Which of the following is not a term in the Boltzmann transport equation?",
+            "options": [
+                "Bandgap",
+                "Position",
+                "Velocity",
+                "Momentum"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "The BTE depends on position, momentum/velocity and time; bandgap is not a variable.",
+            "answer_source": "generated",
+            "chapter": "Unit 4- Electrical and Optical Measurements"
+        },
+        {
+            "question_number": "15",
+            "question_text": "In Hall effect, electron placed in magnetic field experiences _________ force",
+            "options": [
+                "Lenz",
+                "Faradays",
+                "Lorentz",
+                "Gauss"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Moving charges in a magnetic field feel the Lorentz force.",
+            "answer_source": "generated",
+            "chapter": "Unit 4- Electrical and Optical Measurements"
+        },
+        {
+            "question_number": "16",
+            "question_text": "C-V measurements are capable of yielding information about the _________ and the concentration of charge carriers.",
+            "options": [
+                "Drift potential",
+                "Diffusion potential",
+                "Bonding",
+                "Crystal structure"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "C-V gives the built-in (diffusion) potential and doping concentration.",
+            "answer_source": "generated",
+            "chapter": "Unit 4- Electrical and Optical Measurements"
+        },
+        {
+            "question_number": "17",
+            "question_text": "The physical parameter that is probed in AFM resulting from different interaction is _________",
+            "options": [
+                "Charge",
+                "Force",
+                "Potential",
+                "Current"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "AFM senses the tip-sample force (e.g. van der Waals).",
+            "answer_source": "generated",
+            "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
+        },
+        {
+            "question_number": "18",
+            "question_text": "The type of machine learning employed in robots to achieve decision making is called as",
+            "options": [
+                "Supervised learning",
+                "Reinforcement learning",
+                "Unsupervised learning",
+                "Deep learning"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Reinforcement learning learns decisions by trial, using rewards and penalties.",
+            "answer_source": "generated",
+            "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
+        },
+        {
+            "question_number": "19",
+            "question_text": "The notation for zig zag carbon nanotube can be written as",
+            "options": [
+                "(n, 0)",
+                "(n, n)",
+                "(n, m)",
+                "(0, 0)"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Zigzag CNTs are $(n,0)$.",
+            "answer_source": "generated",
+            "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
+        },
+        {
+            "question_number": "20",
+            "question_text": "In a _________ the material size is reduced in two directions and electron can move freely in one direction only.",
+            "options": [
+                "Bulk",
+                "Quantum dot",
+                "Quantum well",
+                "Quantum wire"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "A quantum wire (1D) is confined in two directions and free in one.",
+            "answer_source": "generated",
+            "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
+        }
+    ]
+}

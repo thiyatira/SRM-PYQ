@@ -1,0 +1,305 @@
+{
+    "paper_title": "2025_July_ET_Set2",
+    "source": "2025_July_ET_Set2",
+    "questions": [
+        {
+            "question_number": "U1Q42",
+            "question_text": "The value of $\\int_1^a \\int_1^b \\frac{dx dy}{xy}$ is",
+            "options": [
+                "$\\log a \\log b$",
+                "$a \\cdot b$",
+                "$\\log(ab)$",
+                "$\\log a + \\log b$"
+            ],
+            "correct_option": "A",
+            "marks": 2,
+            "answer": "The integral separates into $(\\int_1^a \\frac{1}{x} dx) \\cdot (\\int_1^b \\frac{1}{y} dy) = [\\log x]_1^a \\cdot [\\log y]_1^b = (\\log a - 0)(\\log b - 0) = \\log a \\log b$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Integral Calculus"
+        },
+        {
+            "question_number": "U1Q43",
+            "question_text": "Changing to polar coordinates, the double integral $\\iint f(x,y) dx dy$ becomes",
+            "options": [
+                "$\\iint \\phi(r, \\theta) dr d\\theta$",
+                "$\\iint \\phi(r, \\theta) r dr d\\theta$",
+                "$\\iint \\phi(r, \\theta) r^2 dr d\\theta$"
+            ],
+            "correct_option": "B",
+            "marks": 2,
+            "answer": "In changing to polar coordinates $(x=r\\cos\\theta, y=r\\sin\\theta)$, the Cartesian area element $dx dy$ is replaced by the Jacobian times $dr d\\theta$, which is $r dr d\\theta$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Integral Calculus"
+        },
+        {
+            "question_number": "U1Q44",
+            "question_text": "The integral $\\int_0^1 \\int_x^1 dy dx$, after change of order of integration becomes",
+            "options": [
+                "$\\int_0^y \\int_0^1 dx dy$",
+                "$\\int_0^1 \\int_0^y dx dy$",
+                "$\\int_0^1 \\int_0^x dx dy$",
+                "$\\int_0^1 \\int_x^1 dx dy$"
+            ],
+            "correct_option": "B",
+            "marks": 2,
+            "answer": "Original limits: $x \\le y \\le 1$ and $0 \\le x \\le 1$. Reversing means placing horizontal strips from $x=0$ to $x=y$, with $y$ going from $0$ to $1$. Resulting integral: $\\int_0^1 \\int_0^y dx dy$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Integral Calculus"
+        },
+        {
+            "question_number": "U1Q45",
+            "question_text": "$\\int_0^1 \\int_0^1 \\int_0^1 e^{x+y+z} dx dy dz$ is equal to",
+            "options": [
+                "$(e-1)^3$",
+                "$e^3$",
+                "$(e-1)^2$",
+                "$3e$"
+            ],
+            "correct_option": "A",
+            "marks": 2,
+            "answer": "Using property of exponents $e^{x+y+z} = e^x e^y e^z$. It separates into $(\\int_0^1 e^x dx)(\\int_0^1 e^y dy)(\\int_0^1 e^z dz) = [e^x]_0^1 [e^y]_0^1 [e^z]_0^1 = (e-1)(e-1)(e-1) = (e-1)^3$.",
+            "answer_source": "generated",
+            "chapter": "Unit 1: Integral Calculus"
+        },
+        {
+            "question_number": "U2Q42",
+            "question_text": "If $\\phi = x^2+y^2+z^2-8$, then $\\text{grad } \\phi$ at $(2,0,2)$",
+            "options": [
+                "$\\mathbf{i} + 4\\mathbf{k}$",
+                "$4\\mathbf{i} + 4\\mathbf{k}$",
+                "$4\\mathbf{i} + \\mathbf{k}$",
+                "$4\\mathbf{i} + 4\\mathbf{j} + 4\\mathbf{k}$"
+            ],
+            "correct_option": "B",
+            "marks": 2,
+            "answer": "$\\nabla\\phi=(2x,2y,2z)$, which at $(2,0,2)$ is $4\\mathbf i+4\\mathbf k$.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Vector Calculus"
+        },
+        {
+            "question_number": "U2Q43",
+            "question_text": "If $\\phi = x^2 - y^2$, then $\\nabla^2 \\phi$ is equal to",
+            "options": [
+                "0",
+                "2",
+                "-2",
+                "1"
+            ],
+            "correct_option": "A",
+            "marks": 2,
+            "answer": "$\\nabla^2\\phi=\\phi_{xx}+\\phi_{yy}=2+(-2)=0$.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Vector Calculus"
+        },
+        {
+            "question_number": "U2Q44",
+            "question_text": "The unit normal vector to the surface $x^2+y^2=z$ at the point $(1,2,5)$ is",
+            "options": [
+                "$\\frac{2\\mathbf{i}+4\\mathbf{j}-\\mathbf{k}}{\\sqrt{21}}$",
+                "$\\frac{\\mathbf{i}+\\mathbf{j}-\\mathbf{k}}{\\sqrt{3}}$",
+                "$\\frac{\\mathbf{i}+4\\mathbf{j}-5\\mathbf{k}}{\\sqrt{42}}$",
+                "$\\frac{\\mathbf{i}-\\mathbf{j}-\\mathbf{k}}{\\sqrt{2}}$"
+            ],
+            "correct_option": "A",
+            "marks": 2,
+            "answer": "With $\\phi=x^2+y^2-z$, $\\nabla\\phi=(2,4,-1)$ at $(1,2,5)$; magnitude $\\sqrt{21}$, so the unit normal is $\\frac{2\\mathbf i+4\\mathbf j-\\mathbf k}{\\sqrt{21}}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Vector Calculus"
+        },
+        {
+            "question_number": "U2Q45",
+            "question_text": "If $\\vec{F} = x^2 \\mathbf{i} + xy^2 \\mathbf{j}$, value of $\\int_C \\vec{F} \\cdot d\\vec{r}$ where $C$ is the segment on $y=x$ from $(0,0)$ to $(1,1)$ is",
+            "options": [
+                "$7/6$",
+                "$7/12$",
+                "$7$",
+                "$7/2$"
+            ],
+            "correct_option": "B",
+            "marks": 2,
+            "answer": "On $y=x$, $dy=dx$: $\\int_0^1(x^2+x\\cdot x^2)dx=\\frac13+\\frac14=\\frac7{12}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 2: Vector Calculus"
+        },
+        {
+            "question_number": "U3Q42",
+            "question_text": "$L[t^2 e^{2t}]$ is",
+            "options": [
+                "$\\frac{1}{(s-2)^2}$",
+                "$\\frac{1}{(s-\\log 2)^2}$",
+                "$\\frac{2}{(s-2)^3}$",
+                "$\\frac{2}{(s-2)^2}$"
+            ],
+            "correct_option": "C",
+            "marks": 2,
+            "answer": "First, $L(t^2) = \\frac{2!}{s^{2+1}} = \\frac{2}{s^3}$. Applying the First Shifting Theorem for $e^{2t}$, we replace $s$ with $s-2$. This gives $\\frac{2}{(s-2)^3}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Laplace Transform"
+        },
+        {
+            "question_number": "U3Q43",
+            "question_text": "$L[e^{2t} \\sin t]$ is",
+            "options": [
+                "$\\frac{s}{(s-2)^2}$",
+                "$\\frac{1}{(s-\\log 2)^2}$",
+                "$\\frac{1}{(s-2)^2+1}$",
+                "$\\frac{1}{(s-2)^2}$"
+            ],
+            "correct_option": "C",
+            "marks": 2,
+            "answer": "The Laplace transform of $\\sin t$ is $\\frac{1}{s^2+1^2} = \\frac{1}{s^2+1}$. Multiplying by $e^{2t}$ shifts the transform by replacing $s$ with $s-2$, yielding $\\frac{1}{(s-2)^2+1}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Laplace Transform"
+        },
+        {
+            "question_number": "U3Q44",
+            "question_text": "If $L[f(t)] = \\frac{s}{(s+2)^2}$, then $f(t)$ is equal to",
+            "options": [
+                "$e^t \\cos t$",
+                "$e^{-2t} \\cdot t$",
+                "$e^{-2t}(1-2t)$",
+                "$e^{-t} 2t$"
+            ],
+            "correct_option": "C",
+            "marks": 2,
+            "answer": "$\\frac{s}{(s+2)^2}=\\frac1{s+2}-\\frac2{(s+2)^2}$, so $f(t)=e^{-2t}-2te^{-2t}=e^{-2t}(1-2t)$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Laplace Transform"
+        },
+        {
+            "question_number": "U3Q45",
+            "question_text": "$L[\\int_0^t e^{-u} \\cos u du]$ is",
+            "options": [
+                "$\\frac{s+1}{s^2+2s+2}$",
+                "$\\frac{s+1}{s(s^2+2s+2)}$",
+                "$\\frac{s}{s^2+2s+2}$",
+                "$\\frac{s+1}{(s+1)^2}$"
+            ],
+            "correct_option": "B",
+            "marks": 2,
+            "answer": "$L\\left[\\int_0^t g\\right]=\\frac1sL[g]$ with $L[e^{-t}\\cos t]=\\frac{s+1}{(s+1)^2+1}$, giving $\\frac{s+1}{s(s^2+2s+2)}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3: Laplace Transform"
+        },
+        {
+            "question_number": "U4Q42",
+            "question_text": "If $f(z) = u+ic$ is analytic where $c$ is a constant, then $u$ is",
+            "options": [
+                "analytic",
+                "constant",
+                "differentiable",
+                "harmonic"
+            ],
+            "correct_option": "B",
+            "marks": 2,
+            "answer": "With $v=c$, $v_x=v_y=0$; C-R then gives $u_x=u_y=0$, so $u$ is constant.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Analytic Functions"
+        },
+        {
+            "question_number": "U4Q43",
+            "question_text": "The function $f(z) = |z|^2$",
+            "options": [
+                "constant",
+                "is analytic",
+                "does not satisfy C-R equations at $(0,0)$",
+                "is not analytic"
+            ],
+            "correct_option": "D",
+            "marks": 2,
+            "answer": "Here $u=x^2+y^2,\\,v=0$; C-R ($2x=0,\\,2y=0$) holds only at the origin, so $f$ is nowhere analytic.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Analytic Functions"
+        },
+        {
+            "question_number": "U4Q44",
+            "question_text": "The invariant points of the transformation $w = \\frac{3z-5}{z+1}$ are",
+            "options": [
+                "$i, -i$",
+                "$2i, -2i$",
+                "$1 \\pm 2i$",
+                "$2-i, 2+i$"
+            ],
+            "correct_option": "C",
+            "marks": 2,
+            "answer": "Put $w=z$: $z^2-2z+5=0\\Rightarrow z=1\\pm2i$.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Analytic Functions"
+        },
+        {
+            "question_number": "U4Q45",
+            "question_text": "The image of the circle $|z|=2$ under the map $w = 1/z$ is",
+            "options": [
+                "a circle of radius 2",
+                "a circle of radius $1/2$",
+                "a circle through the origin",
+                "unit circle"
+            ],
+            "correct_option": "B",
+            "marks": 2,
+            "answer": "Given $|z|=2$ and $w = 1/z$. Then $|w| = |1/z| = 1/|z| = 1/2$. This represents a circle centered at the origin with radius $1/2$.",
+            "answer_source": "generated",
+            "chapter": "Unit 4: Analytic Functions"
+        },
+        {
+            "question_number": "U5Q42",
+            "question_text": "The order of the pole $z=0$ for $\\frac{1-e^z}{z^4}$ is",
+            "options": [
+                "2",
+                "3",
+                "5",
+                "4"
+            ],
+            "correct_option": "B",
+            "marks": 2,
+            "answer": "$1-e^z=-z-\\frac{z^2}{2}-\\dots$, so $f(z)=-\\frac1{z^3}-\\frac1{2z^2}-\\dots$; the highest negative power is 3, a pole of order 3.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Complex Integration"
+        },
+        {
+            "question_number": "U5Q43",
+            "question_text": "For $\\frac{\\sin z}{z}, z=0$ is ______ singularity.",
+            "options": [
+                "removable singularity",
+                "pole",
+                "essential singularity",
+                "Not a singularity"
+            ],
+            "correct_option": "A",
+            "marks": 2,
+            "answer": "The limit $\\lim_{z \\to 0} \\frac{\\sin z}{z} = 1$. Since the function is undefined at $z=0$ but has a finite limit as it approaches 0, the singularity is removable.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Complex Integration"
+        },
+        {
+            "question_number": "U5Q44",
+            "question_text": "The Poles of $f(z) = \\frac{z^2-1}{(z-1)^2(z+2)}$ are",
+            "options": [
+                "$z=1, -2$ are of order 2",
+                "$z=1$ is of order 2, $z=-2$ is of order 1",
+                "$z=1, -2$ are of order 1",
+                "$z=1$ is of order 1, $z=-2$ is order 2"
+            ],
+            "correct_option": "C",
+            "marks": 2,
+            "answer": "Cancel one factor: $f=\\frac{z+1}{(z-1)(z+2)}$, so $z=1$ and $z=-2$ are both simple poles.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Complex Integration"
+        },
+        {
+            "question_number": "U5Q45",
+            "question_text": "The value of the integral $\\int_C \\frac{\\cos \\pi z}{z-1} dz$, if $C$ is $|z|=3/2$ is",
+            "options": [
+                "$2\\pi i$",
+                "$4\\pi i$",
+                "$\\pi i$",
+                "$-2\\pi i$"
+            ],
+            "correct_option": "D",
+            "marks": 2,
+            "answer": "The pole $z=1$ lies inside $|z|=3/2$; Cauchy's formula gives $2\\pi i\\cos\\pi=-2\\pi i$.",
+            "answer_source": "generated",
+            "chapter": "Unit 5: Complex Integration"
+        }
+    ]
+}

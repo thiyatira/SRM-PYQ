@@ -26,7 +26,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "While genetic algorithms and natural selection generally drive towards higher fitness, it is not guaranteed that *every* new generation will have a better fitness score than the older one, as random mutations or environmental changes can lead to fluctuations.",
+            "answer": "Mutation and random selection can lower fitness, so a new generation is not guaranteed to be fitter.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
@@ -49,7 +49,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The inner cell mass is obtained from blastocyst. The inner cell mass is a cluster of cells within the blastocyst that will eventually form the embryo.",
+            "answer": "The inner cell mass is the cluster inside the blastocyst that forms the embryo.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
@@ -64,7 +64,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "For males, the homologous pair for the X chromosome is Y. In females, two X chromosomes form a homologous pair. For males, the sex chromosomes are XY, making the Y chromosome the homolog of the X.",
+            "answer": "X and Y are the sex-chromosome pair in males; Y is treated as X's homolog (partial homology).",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
@@ -79,7 +79,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "GenBank is a primary database. Primary databases store original experimental data, such as nucleotide and protein sequences, directly submitted by researchers.",
+            "answer": "GenBank stores original submitted sequences, so it is a primary database.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
@@ -94,7 +94,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The rough draft of the human genome was published through HGP (Human Genome Project). The HGP was an international scientific research project with the goal of determining the base pair sequence of the human genome.",
+            "answer": "The Human Genome Project (HGP) published the rough draft of the human genome.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
@@ -109,7 +109,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The blueprint for the construction of a protein is mRNA (messenger RNA). mRNA carries the genetic information from DNA in the nucleus to the ribosomes in the cytoplasm, where proteins are synthesized.",
+            "answer": "mRNA carries the gene's code from DNA to ribosomes, where the protein is built.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
@@ -124,7 +124,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "A molecule containing sugar, phosphate, and a base is called Nucleotide. Nucleotides are the basic building blocks of nucleic acids (DNA and RNA). A nucleoside is just a sugar and a base without the phosphate group.",
+            "answer": "Nucleotide = sugar + phosphate + base. A nucleoside lacks the phosphate.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
@@ -139,7 +139,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Production of glucagon is because of hypoglycemia (low blood glucose). Glucagon is a hormone secreted by the pancreas that raises blood glucose levels, counteracting hypoglycemia.",
+            "answer": "Low blood glucose (hypoglycemia) triggers pancreatic alpha cells to release glucagon, which raises glucose.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
@@ -202,7 +202,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "A haploid cell in humans has 23 chromosomes. Haploid cells, such as gametes (sperm and egg), contain a single set of chromosomes (n).",
+            "answer": "Haploid (n) gametes carry 23 chromosomes, half of the diploid 46.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
@@ -217,7 +217,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The transfer of genetic material through viruses is called transduction. This process involves a virus infecting a bacterium or other cell and transferring genetic material from one cell to another.",
+            "answer": "Transduction is gene transfer between cells carried by a virus (phage).",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
@@ -240,7 +240,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "An afferent pathway is sensory neuron to brain. Afferent neurons carry sensory information from the peripheral nervous system towards the central nervous system (brain and spinal cord).",
+            "answer": "Afferent neurons carry sensory signals toward the CNS (brain).",
             "answer_source": "generated",
             "chapter": "Unit 4: Neurobiology"
         },
@@ -255,7 +255,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Sister chromatids are joined by centromere. The centromere is the constricted region of a chromosome where sister chromatids are attached to each other and where spindle fibers attach during cell division.",
+            "answer": "The centromere holds sister chromatids together until anaphase.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
@@ -270,7 +270,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Cholesterol is a steroid. It is a type of lipid and a crucial component of animal cell membranes, also serving as a precursor for steroid hormones.",
+            "answer": "Cholesterol is a lipid with a four-ring steroid nucleus.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
@@ -285,7 +285,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The bond between carbohydrates is glycosidic. A glycosidic bond links monosaccharide units together to form disaccharides and polysaccharides.",
+            "answer": "Glycosidic bonds join monosaccharides into di- and polysaccharides.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
@@ -300,7 +300,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The mechanism of delivering amino acids for translation is done by tRNA (transfer RNA). tRNA molecules carry specific amino acids to the ribosome, where they are matched to mRNA codons during protein synthesis.",
+            "answer": "tRNA carries specific amino acids to the ribosome and matches them to mRNA codons.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
@@ -315,7 +315,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "DNA is different from RNA because of the base uracil. RNA contains uracil (U) in place of thymine (T), which is found in DNA. Both contain adenine, guanine, and cytosine.",
+            "answer": "RNA has uracil instead of thymine.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
@@ -330,7 +330,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The algorithm that compares a protein query sequence against a nucleotide sequence database dynamically translated in all reading frames is tBLASTn. This tool is useful for finding distant relationships between proteins and nucleotide sequences.",
+            "answer": "tBLASTn searches a protein query against a nucleotide database translated in all six reading frames.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
@@ -393,7 +393,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Meiosis produces Haploid cells. It is a reductional division that halves the chromosome number, producing gametes with a single set of chromosomes.",
+            "answer": "Meiosis halves the chromosome number, giving haploid cells (gametes).",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
@@ -408,7 +408,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The genetic algorithm is inspired by evolution, specifically the principles of natural selection and genetics.",
+            "answer": "Genetic algorithms mimic evolution: selection, crossover and mutation.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
@@ -431,7 +431,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "An efferent pathway is brain to motor neurons. Efferent neurons carry signals from the central nervous system (brain and spinal cord) to muscles and glands, initiating a response.",
+            "answer": "Efferent neurons carry commands from the CNS (brain) to motor neurons, muscles and glands.",
             "answer_source": "generated",
             "chapter": "Unit 4: Neurobiology"
         },
@@ -446,7 +446,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Sister chromatids are separated in mitosis at anaphase. During anaphase, the cohesin proteins holding sister chromatids together are cleaved, allowing them to move to opposite poles.",
+            "answer": "At anaphase the centromeres split and sister chromatids move to opposite poles.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
@@ -461,7 +461,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Starch is a polysaccharide. It is a complex carbohydrate made up of many glucose units, serving as the primary energy storage in plants.",
+            "answer": "Starch is a long chain of glucose units, so a polysaccharide.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
@@ -476,7 +476,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "The bond between nucleotides is phosphodiester. Phosphodiester bonds form the sugar-phosphate backbone of DNA and RNA by linking the 5' phosphate of one nucleotide to the 3' hydroxyl of the next.",
+            "answer": "Phosphodiester bonds link the 3' OH of one nucleotide to the 5' phosphate of the next.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
@@ -491,7 +491,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "The RNA attached to ribosomes are rRNA (ribosomal RNA). rRNA is a structural and catalytic component of ribosomes, which are the cellular machinery for protein synthesis.",
+            "answer": "rRNA is the structural and catalytic RNA of ribosomes.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
@@ -506,7 +506,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "RNA is typically single-stranded, contains uracil in place of thymine and is less stable than DNA, so these are genuine differences. Both DNA and RNA have a 5' phosphate/oxygen linkage in the backbone (the real sugar difference is at the 2' position), so \"5' oxygen\" is the odd one out.",
+            "answer": "Single-stranded, uracil and lower stability are real RNA differences; both DNA and RNA have 5' phosphate linkages (the sugar difference is at 2'), so '5' oxygen' is the odd one.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
@@ -521,7 +521,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The algorithm that compares a protein query sequence against a nucleotide sequence database dynamically translated in all reading frames is tBLASTn. (Note: The question text has a slight ambiguity: 'protein sequence database dynamically translated'. Assuming it meant a *nucleotide* database dynamically translated, tBLASTn is the correct choice).",
+            "answer": "tBLASTn compares a protein query against a nucleotide database translated in all six frames.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
@@ -582,7 +582,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Mitosis produces two genetically identical diploid somatic cells. Gametes (sex cells) are produced by meiosis, which results in haploid cells.",
+            "answer": "Mitosis gives identical diploid somatic cells; gametes come from meiosis.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
@@ -597,7 +597,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The organism that is unicellular but eukaryotic is protist. Protists are a diverse kingdom of largely unicellular eukaryotic organisms (e.g., amoebas, paramecia). Monera refers to prokaryotes (bacteria and archaea), which are unicellular but not eukaryotic.",
+            "answer": "Protists are unicellular eukaryotes; Monera (bacteria) are prokaryotes.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
@@ -620,7 +620,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The control system primarily involved in coordinating overall homeostasis is the CNS (Central Nervous System), especially the hypothalamus. While kidneys, heart, and stomach play roles in specific homeostatic processes, the CNS acts as the central regulatory hub.",
+            "answer": "The CNS (hypothalamus) is the control centre that coordinates homeostasis; the others are effectors.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
@@ -635,7 +635,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Meiosis I leads to the separation of homologous chromosomes. This is the reductional division where homologous pairs move to opposite poles, reducing the chromosome number by half.",
+            "answer": "Meiosis I is reductional: homologous chromosomes separate (sister chromatids separate in meiosis II).",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
@@ -650,7 +650,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Estrogen is a steroid. It is a type of lipid-based hormone characterized by a four-ring carbon structure.",
+            "answer": "Estrogen is a steroid hormone derived from cholesterol.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
@@ -665,7 +665,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Ribose, fructose and glucose are monosaccharides. Sucrose, formed from glucose and fructose, is the disaccharide.",
+            "answer": "Sucrose (glucose + fructose) is a disaccharide; the rest are monosaccharides.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
@@ -680,7 +680,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "gRNA (guide RNA) is the odd one out. tRNA, mRNA, and rRNA are the three main types of RNA directly involved in protein synthesis. gRNA has a role in RNA editing or gene editing (e.g., CRISPR-Cas9), which is distinct from the primary roles of the other three.",
+            "answer": "tRNA, mRNA and rRNA are the three RNAs of protein synthesis; gRNA is a guide RNA for editing.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
@@ -695,7 +695,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "UniProtKB (Universal Protein Resource Knowledgebase) is a sequence database for proteins. It provides comprehensive, high-quality, and freely accessible protein sequence and functional information.",
+            "answer": "UniProtKB is the protein sequence and function knowledgebase.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
@@ -710,7 +710,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Two similar protein sequences generally indicate Similar function. High sequence similarity often implies conserved structure and, consequently, conserved function due to evolutionary pressure.",
+            "answer": "Similar sequences usually mean conserved structure and hence similar function.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },

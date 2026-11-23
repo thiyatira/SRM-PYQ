@@ -1,0 +1,306 @@
+{
+    "paper_title": "21EES101T_May_2023",
+    "source": "21EES101T_May_2023",
+    "questions": [
+        {
+            "question_number": "1",
+            "question_text": "A 100 W lamp is connected across 220 V DC supply. Determine the value of current drawn by the lamp?",
+            "options": [
+                "2.5A",
+                "10A",
+                "0.45A",
+                "5A"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "$I=P/V=100/220=0.4545$ A.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "2",
+            "question_text": "To neglect the voltage source in Thevenin's theorem, the terminal across the sources are _______",
+            "options": [
+                "Replaced by load resistance",
+                "Replaced by capacitance",
+                "Short circuited",
+                "Open circuited"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "To find Thevenin resistance, voltage sources are replaced by short circuits.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "3",
+            "question_text": "In a circuit with pure inductance, the current _______ the voltage by 90°.",
+            "options": [
+                "Leads",
+                "Lags",
+                "In phase",
+                "Greater than and equal"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "In a pure inductor the current lags the voltage by 90 degrees.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "4",
+            "question_text": "The nodal method of circuit analysis is based on _______",
+            "options": [
+                "Thevenin's theorem",
+                "Norton's theorem",
+                "Kirchoff voltage law",
+                "Kirchoff current law"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "Nodal analysis applies KCL at each node.",
+            "answer_source": "generated",
+            "chapter": "Unit 1 - Electric Circuits"
+        },
+        {
+            "question_number": "5",
+            "question_text": "The knee voltage of silicon diode is _______",
+            "options": [
+                "0.2 V",
+                "0.7 V",
+                "0.8 V",
+                "1.0 V"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "A silicon diode's knee voltage is about 0.7 V.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "6",
+            "question_text": "Which among the following is a current controlled device?",
+            "options": [
+                "BJT",
+                "MOSFET",
+                "JFET",
+                "Diode"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "A BJT's collector current is controlled by the base current.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "7",
+            "question_text": "The algebraic function of XOR gate is _______",
+            "options": [
+                "xy'+x'y",
+                "xy+x'y'",
+                "xy+x'y",
+                "xy+xy'"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "XOR $=xy'+x'y$.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "8",
+            "question_text": "FPGA stands for _______",
+            "options": [
+                "Flexible Programmable Gate Array",
+                "Flexible Programmable Gate Acceleration",
+                "Field Programmable Gate Accelerator",
+                "Field Programmable Gate Array"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "FPGA = Field Programmable Gate Array.",
+            "answer_source": "generated",
+            "chapter": "Unit 2 - Electronics"
+        },
+        {
+            "question_number": "9",
+            "question_text": "The transformer core is made up of laminations to reduce",
+            "options": [
+                "Eddy current losses",
+                "Iron losses",
+                "Stray losses",
+                "Hysteresis loss"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Laminations break up eddy current paths, reducing eddy current loss.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "10",
+            "question_text": "The function of a commutator in DC generator is to",
+            "options": [
+                "Convert DC to DC",
+                "Convert AC to DC",
+                "Convert AC to AC",
+                "Convert DC to AC"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "The armature emf is alternating; the commutator rectifies it into DC.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "11",
+            "question_text": "In a three phase induction motor, the three phase winding R, Y, B are connected in _______",
+            "options": [
+                "Series",
+                "Parallel",
+                "Series and parallel",
+                "Star"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "Three-phase windings are connected in star (or delta).",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "12",
+            "question_text": "Stepper motor is a _______ device.",
+            "options": [
+                "Mechanical",
+                "Analog",
+                "Incremental",
+                "Storage"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "A stepper motor moves in incremental steps for each pulse.",
+            "answer_source": "generated",
+            "chapter": "Unit 3 - Machines and Drives"
+        },
+        {
+            "question_number": "13",
+            "question_text": "Moving coil instruments are used to measure _______",
+            "options": [
+                "DC quantity only",
+                "AC quantity only",
+                "Both AC and DC quantity",
+                "Either AC or DC"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "A moving coil (PMMC) meter reads the average value, so it measures DC only.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "14",
+            "question_text": "The below symbol represents _______ device.",
+            "options": [
+                "LED",
+                "LCD",
+                "Photodiode",
+                "Laser diode"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "A diode symbol with outgoing arrows is an LED.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "15",
+            "question_text": "Which of the following represents active transducer?",
+            "options": [
+                "Strain gauge",
+                "LVDT",
+                "Thermistor",
+                "Thermocouple"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "A thermocouple generates its own voltage, so it is active; the others need excitation.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "16",
+            "question_text": "What is the principle employed in operation of LVDT?",
+            "options": [
+                "Mutual inductance",
+                "Self inductance",
+                "Permeance",
+                "Reluctance"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "An LVDT works on mutual inductance.",
+            "answer_source": "generated",
+            "chapter": "Unit 4 - Transducers and Sensors"
+        },
+        {
+            "question_number": "17",
+            "question_text": "What is the frequency of AC supply followed in India?",
+            "options": [
+                "50 Hz",
+                "60 Hz",
+                "40 Hz",
+                "75 Hz"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "The Indian standard frequency is 50 Hz.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "18",
+            "question_text": "Which of the following is a non-renewable energy resource?",
+            "options": [
+                "Solar power",
+                "Wind power",
+                "Thermal power",
+                "Tidal power"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Thermal power burns fossil fuels, which are non-renewable.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "19",
+            "question_text": "Earthing is an essential protection to provide against _______",
+            "options": [
+                "Overloading",
+                "Voltage fluctuation",
+                "Heating issues",
+                "Danger of electric shock"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "Earthing protects against electric shock by giving leakage current a path to ground.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        },
+        {
+            "question_number": "20",
+            "question_text": "Electric vehicles and hybrid vehicles have the following components common EXCEPT:",
+            "options": [
+                "Battery",
+                "Electronic control unit",
+                "Motor",
+                "Internal combustion engine"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "A pure EV has no internal combustion engine; hybrids do.",
+            "answer_source": "generated",
+            "chapter": "Unit 5 - Power Engineering"
+        }
+    ]
+}

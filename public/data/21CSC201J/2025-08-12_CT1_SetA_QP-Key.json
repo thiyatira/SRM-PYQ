@@ -74,8 +74,8 @@
             ],
             "correct_option": "B",
             "marks": null,
-            "answer": "The outer loop variables $i$ takes the values: $n, n/2, n/4, \\dots, 1$. For each $i$, the inner loop executes $i$ times. Thus, the total iterations are given by the sum: $n + n/2 + n/4 + \\dots + 1 \\approx 2n$, which simplifies to $O(n)$.",
-            "answer_source": "provided",
+            "answer": "Outer loop: $i = n, n/2, n/4, \\dots$; inner loop runs $i$ times. Total $= n + n/2 + \\dots \\approx 2n = O(n)$.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
         {
@@ -89,8 +89,8 @@
             ],
             "correct_option": "A",
             "marks": null,
-            "answer": "The swap function receives pointers to `x` and `y` but only swaps the local copies of the pointers `a` and `b`. The values stored in the actual memory locations of `x` and `y` are never swapped, so they remain 10 and 20.",
-            "answer_source": "provided",
+            "answer": "`swap` exchanges only its local pointer copies `a` and `b`, not the values at `*a` and `*b`, so x and y stay 10 and 20.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
         {
@@ -104,8 +104,8 @@
             ],
             "correct_option": "B",
             "marks": null,
-            "answer": "Big-O notation represents an asymptotic upper bound. By definition, $f(n) = O(g(n))$ implies $f(n) \\le c \\cdot g(n)$ for some positive constant $c$ and sufficiently large $n$. Thus, it takes at most $c \\cdot n^2$ time.",
-            "answer_source": "provided",
+            "answer": "Big-O is an upper bound: $f(n) \\le c\\,n^2$ for large $n$. It does not mean always equal to or at least $n^2$.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
         {
@@ -119,8 +119,8 @@
             ],
             "correct_option": "C",
             "marks": null,
-            "answer": "`p` is a pointer containing the address of `a`. `pp` is a pointer to a pointer containing the address of pointer `p`. Therefore, double dereferencing `**pp` yields the value of `a`, which is 5.",
-            "answer_source": "provided",
+            "answer": "`**pp` follows `pp` to `p`, then `p` to `a`, giving 5.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
         {
@@ -134,8 +134,8 @@
             ],
             "correct_option": "A,C,D",
             "marks": null,
-            "answer": "A, C and D are true.\n- A is correct because abstraction hides the implementation details from the client.\n- B is incorrect because ADTs can include both primitive and non-primitive custom data models.\n- C is correct as Stack and Queue are standard examples of ADTs.\n- D is correct as ADTs are specified strictly in terms of their operations and behaviors.",
-            "answer_source": "provided",
+            "answer": "A, C and D are true: ADTs hide the implementation, are defined by their operations, and Stack and Queue are examples. B is false: ADTs are not limited to primitive types.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         },
         {
@@ -149,8 +149,8 @@
             ],
             "correct_option": "C",
             "marks": null,
-            "answer": "The pointer `ptr` is an uninitialized pointer (wild pointer). It points to an arbitrary or restricted memory address. Attempting to dereference it using `ptr->x = 10` causes a runtime segmentation fault.",
-            "answer_source": "provided",
+            "answer": "`ptr` is an uninitialized (wild) pointer, so `ptr->x = 10` writes to an invalid address: segmentation fault.",
+            "answer_source": "generated",
             "chapter": "Unit 1: Introduction"
         }
     ]

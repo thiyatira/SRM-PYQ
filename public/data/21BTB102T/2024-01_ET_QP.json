@@ -28,7 +28,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "In human males, the X chromosome pairs with the Y chromosome during meiosis, making Y its homologous partner in this context.",
+            "answer": "X and Y pair as the sex-chromosome pair in males, so Y is treated as X's homolog.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
@@ -43,7 +43,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "The inner cell mass is a cluster of cells within the blastocyst, which eventually forms the embryo.",
+            "answer": "The inner cell mass is the cell cluster inside the blastocyst that forms the embryo.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
@@ -58,7 +58,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Transduction is the process by which genetic material is transferred from one bacterium to another by a virus.",
+            "answer": "Transduction is virus-mediated gene transfer between cells.",
             "answer_source": "generated",
             "chapter": "Unit 1: Cell and Evolution"
         },
@@ -73,7 +73,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Cholesterol is a type of lipid classified as a steroid, essential for cell membranes and hormone synthesis.",
+            "answer": "Cholesterol is a lipid with a steroid ring nucleus.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
@@ -88,7 +88,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "DNA contains Adenine, Guanine, Cytosine, and Thymine, while RNA contains Adenine, Guanine, Cytosine, and Uracil (instead of Thymine).",
+            "answer": "RNA has uracil in place of DNA's thymine.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
@@ -103,7 +103,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "BLASTX. BLASTX compares a protein query sequence against a nucleotide sequence database that has been dynamically translated in all six reading frames.",
+            "answer": "tBLASTn searches a protein query against a nucleotide database translated in all six frames. (BLASTx is the reverse.)",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
@@ -118,7 +118,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Transfer RNA (tRNA) molecules carry specific amino acids to the ribosome during protein synthesis (translation) according to the mRNA codons.",
+            "answer": "tRNA carries amino acids to the ribosome and matches mRNA codons.",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
@@ -148,7 +148,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "The Chou-Fasman method is an early and widely used algorithm that predicts protein secondary structures (alpha-helices, beta-sheets, and beta-turns) based on the amino acid sequence and their propensities for certain conformations.",
+            "answer": "Chou-Fasman predicts secondary structure from each residue's helix, strand and turn propensity.",
             "answer_source": "generated",
             "chapter": "Unit 3: Structure Biology"
         },
@@ -163,7 +163,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Space-fill, Ribbon, and Ball-and-stick are common general visualization styles for protein structures. \"Side chain model\" describes a specific component of a protein (the side chains) rather than a holistic representation style.",
+            "answer": "Space fill, ribbon and ball-and-stick are whole-structure display styles; 'side chain model' is not.",
             "answer_source": "generated",
             "chapter": "Unit 3: Structure Biology"
         },
@@ -178,7 +178,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "The anticodon on tRNA is complementary and antiparallel to the mRNA codon. For mRNA codon ACU, the complementary base pairs are U-A, G-C, U-A, so the anticodon is UGA.",
+            "answer": "Codon ACU pairs A-U, C-G, U-A, so the anticodon is UGA (antiparallel).",
             "answer_source": "generated",
             "chapter": "Unit 2: Basics in Biochemistry"
         },
@@ -193,7 +193,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Clustering is a machine learning technique used to group data points into clusters based on their similarity without prior labeled data, hence it is unsupervised.",
+            "answer": "Clustering groups unlabeled data by similarity, so it is unsupervised.",
             "answer_source": "generated",
             "chapter": "Unit 4: Neurobiology"
         },
@@ -208,7 +208,7 @@
             ],
             "correct_option": "B",
             "marks": 1,
-            "answer": "Studies of Albert Einstein's brain suggested he had an unusually high number of glial cells relative to neurons in certain cortical areas, particularly the inferior parietal lobe.",
+            "answer": "Studies of Einstein's brain found an unusually high glial-to-neuron ratio.",
             "answer_source": "generated",
             "chapter": "Unit 4: Neurobiology"
         },
@@ -223,7 +223,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Following an action potential (spiking), a neuron enters a refractory period during which it is less responsive or completely unresponsive to further stimulation, preventing immediate re-firing and ensuring unidirectional signal propagation.",
+            "answer": "After a spike the neuron is in a refractory period and cannot fire again at once.",
             "answer_source": "generated",
             "chapter": "Unit 4: Neurobiology"
         },
@@ -238,7 +238,7 @@
             ],
             "correct_option": "C",
             "marks": 1,
-            "answer": "Alzheimer's disease is a neurodegenerative disorder characterized by progressive loss of memory, thinking skills, and other cognitive abilities.",
+            "answer": "Alzheimer's causes progressive loss of cognition (memory and thinking).",
             "answer_source": "generated",
             "chapter": "Unit 4: Neurobiology"
         },
@@ -253,7 +253,7 @@
             ],
             "correct_option": "D",
             "marks": 1,
-            "answer": "Diphtheria and tetanus vaccines are toxoid vaccines, which means they are made from inactivated bacterial toxins (toxoids) that stimulate an immune response without causing the disease.",
+            "answer": "Diphtheria and tetanus vaccines use inactivated toxins (toxoids).",
             "answer_source": "generated",
             "chapter": "Unit 5: Immunobiology"
         },
@@ -268,7 +268,7 @@
             ],
             "correct_option": "C,D",
             "marks": 1,
-            "answer": "Leukocytes are classified into granulocytes (neutrophils, eosinophils, basophils) and agranulocytes (lymphocytes and monocytes). Both monocytes and lymphocytes are agranular, so options C and D are correct; basophils and eosinophils are granular.",
+            "answer": "Monocytes and lymphocytes are agranulocytes; basophils and eosinophils are granulocytes.",
             "answer_source": "generated",
             "chapter": "Unit 5: Immunobiology"
         },
@@ -283,7 +283,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "Major Histocompatibility Complex (MHC) molecules are proteins found on the surface of most nucleated cells in vertebrates, including human cells, playing a critical role in presenting antigens to T cells and initiating immune responses.",
+            "answer": "MHC molecules are on human (vertebrate) cell surfaces and present antigen to T cells.",
             "answer_source": "generated",
             "chapter": "Unit 5: Immunobiology"
         },
@@ -298,7 +298,7 @@
             ],
             "correct_option": "A",
             "marks": 1,
-            "answer": "B lymphocytes (B cells) are the primary cells responsible for producing antibodies. Upon activation, B cells differentiate into plasma cells, which are antibody-secreting factories.",
+            "answer": "B cells differentiate into plasma cells, which secrete antibodies.",
             "answer_source": "generated",
             "chapter": "Unit 5: Immunobiology"
         },

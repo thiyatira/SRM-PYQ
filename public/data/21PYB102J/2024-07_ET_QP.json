@@ -1,0 +1,306 @@
+{
+    "paper_title": "JULY_2024_21PYB102J",
+    "source": "JULY_2024_21PYB102J",
+    "questions": [
+        {
+            "question_number": "Q1",
+            "question_text": "Free electron moves always in _______ direction.",
+            "options": [
+                "Random directions",
+                "Positive directions",
+                "Negative directions",
+                "Up and down"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "With no field, free electrons move randomly due to thermal energy.",
+            "answer_source": "generated",
+            "chapter": "Unit 1-Energy Bands in Solids"
+        },
+        {
+            "question_number": "Q2",
+            "question_text": "Which of the following method for the band structure calculation is also known as “LCAO” approximation?",
+            "options": [
+                "Cellular method",
+                "Tight binding method",
+                "APW method",
+                "Pseudo potential method"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Tight binding uses a linear combination of atomic orbitals (LCAO).",
+            "answer_source": "generated",
+            "chapter": "Unit 1-Energy Bands in Solids"
+        },
+        {
+            "question_number": "Q3",
+            "question_text": "What is the shape of E-K diagram for a free electron?",
+            "options": [
+                "Square",
+                "Circle",
+                "Parabola",
+                "Straight line"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "$E=\\hbar^2k^2/2m$ is quadratic in k: a parabola.",
+            "answer_source": "generated",
+            "chapter": "Unit 1-Energy Bands in Solids"
+        },
+        {
+            "question_number": "Q4",
+            "question_text": "_______ explains the behaviour of metal, semiconductor and insulator.",
+            "options": [
+                "Classical free electron theory",
+                "Band theory",
+                "Drude and Lorentz theory",
+                "Quantum free electron theory"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Band theory explains metals, semiconductors and insulators through the energy gap between valence and conduction bands.",
+            "answer_source": "generated",
+            "chapter": "Unit 1-Energy Bands in Solids"
+        },
+        {
+            "question_number": "Q5",
+            "question_text": "If “n” is number of electrons in the conduction band “p” is number of holes in the valence band, for an intrinsic semiconductor ________.",
+            "options": [
+                "n = p",
+                "n > p",
+                "n < p",
+                "n ≠ p at T = ok"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Each electron excited to the conduction band leaves one hole, so $n=p$.",
+            "answer_source": "generated",
+            "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
+        },
+        {
+            "question_number": "Q6",
+            "question_text": "The energy difference between vacuum level to the conduction band edge is termed as ________.",
+            "options": [
+                "Fermi energy",
+                "Work function",
+                "Ionization potential",
+                "Electron affinity"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "Electron affinity is the energy from the vacuum level down to the conduction band edge.",
+            "answer_source": "generated",
+            "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
+        },
+        {
+            "question_number": "Q7",
+            "question_text": "In LED what is the shape of domes made from plastics which is used to minimize the losses caused by bulk absorption thereby increasing the external efficiency?",
+            "options": [
+                "Hemispherical",
+                "Cylindrical",
+                "Octahedral",
+                "Spherical"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Hemispherical domes help in reducing total internal reflection and bulk absorption losses.",
+            "answer_source": "generated",
+            "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
+        },
+        {
+            "question_number": "Q8",
+            "question_text": "Which one of the following is a three particle transition?",
+            "options": [
+                "Auger transition",
+                "Photon transition",
+                "Phonon transition",
+                "Band to band transition"
+            ],
+            "correct_option": "A",
+            "marks": 1,
+            "answer": "Auger recombination involves three carriers.",
+            "answer_source": "generated",
+            "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
+        },
+        {
+            "question_number": "Q9",
+            "question_text": "The Fermi’s golden rule helps to identify the ________.",
+            "options": [
+                "Momentum of electrons",
+                "Transition rate per unit volume",
+                "Velocity of light",
+                "Absorption energy of electron"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Fermi's golden rule gives the transition rate per unit time.",
+            "answer_source": "generated",
+            "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
+        },
+        {
+            "question_number": "Q10",
+            "question_text": "The optical joint density of states is directly proportional to ________.",
+            "options": [
+                "E⁻¹/²",
+                "E",
+                "E¹/²",
+                "E²"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "Parabolic bands give a joint DOS $\\propto (E-E_g)^{1/2}$, i.e. $\\propto E^{1/2}$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
+        },
+        {
+            "question_number": "Q11",
+            "question_text": "The process of inducing radiative emission from a molecule with a help of another photon is called ________.",
+            "options": [
+                "Carrier generation",
+                "Stimulated emission",
+                "Stimulated absorption",
+                "Spontaneous emission"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Stimulated emission: an incoming photon triggers emission of an identical second photon.",
+            "answer_source": "generated",
+            "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
+        },
+        {
+            "question_number": "Q12",
+            "question_text": "The total current, through the junction of a photovoltaic cell is ________.",
+            "options": [
+                "Itotal = -IL",
+                "Itotal = Io(e^(qv/βKT) - 1)",
+                "Itotal = Io(e^(qv/βKT) - 1) + IL",
+                "Itotal = Io(e^(qv/βKT) - 1) - IL"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "Net current = diode dark current minus photocurrent: $I=I_0(e^{qV/\\beta kT}-1)-I_L$.",
+            "answer_source": "generated",
+            "chapter": "Unit 3-Optoelectronic Properties of Semiconductors"
+        },
+        {
+            "question_number": "Q13",
+            "question_text": "The resistivity of a bar measured through two probes 1 and 2 is ________.",
+            "options": [
+                "ρ = RV / l",
+                "ρ = Rl / V",
+                "ρ = Rwh / l",
+                "ρ = Rl / wh"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "$R=\\rho l/(wh)$, so $\\rho=Rwh/l$.",
+            "answer_source": "generated",
+            "chapter": "Unit 4- Electrical and Optical Measurements"
+        },
+        {
+            "question_number": "Q14",
+            "question_text": "________ equation is very useful in understanding the transport properties such as electrical conductivity, thermal conductivity and thermoelectric power.",
+            "options": [
+                "Planck Einstein equation",
+                "Heisenberg equation",
+                "Euler equation",
+                "Boltzmann transport equation"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "The Boltzmann transport equation yields conductivities and thermoelectric power from the carrier distribution.",
+            "answer_source": "generated",
+            "chapter": "Unit 4- Electrical and Optical Measurements"
+        },
+        {
+            "question_number": "Q15",
+            "question_text": "At room temperature, the voltage across the depletion layer for silicon is about ________ Volts.",
+            "options": [
+                "0.3 - 0.4 Volts",
+                "0.6 - 0.7 Volts",
+                "0.5 - 0.6 Volts",
+                "0.2 - 0.3 Volts"
+            ],
+            "correct_option": "B",
+            "marks": 1,
+            "answer": "Silicon's built-in barrier is about 0.6-0.7 V.",
+            "answer_source": "generated",
+            "chapter": "Unit 2- Carrier Transport Mechanism in Semiconductors"
+        },
+        {
+            "question_number": "Q16",
+            "question_text": "What is the bandgap of GaAs semiconductor whose energy of top of valence band and bottom of conduction band comes to be 0.8 eV and 2.2 eV.",
+            "options": [
+                "Eg = 1.1 eV",
+                "Eg = 2.2 eV",
+                "Eg = 0.8 eV",
+                "Eg = 1.4 eV"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "Bandgap Eg = Ec - Ev = 2.2 eV - 0.8 eV = 1.4 eV.",
+            "answer_source": "generated",
+            "chapter": "Unit 1-Energy Bands in Solids"
+        },
+        {
+            "question_number": "Q17",
+            "question_text": "________ density of states is independent of energy.",
+            "options": [
+                "3D",
+                "0D",
+                "1D",
+                "2D"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "In 2D the DOS is a constant step function, independent of energy.",
+            "answer_source": "generated",
+            "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
+        },
+        {
+            "question_number": "Q18",
+            "question_text": "In nanometer length scale the corresponding property is ________ dependent.",
+            "options": [
+                "Shape",
+                "Size",
+                "Size and shape",
+                "Shape and volume"
+            ],
+            "correct_option": "C",
+            "marks": 1,
+            "answer": "At the nanoscale, properties depend on both size (quantum confinement) and shape.",
+            "answer_source": "generated",
+            "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
+        },
+        {
+            "question_number": "Q19",
+            "question_text": "In an armchair carbon nanotube, the geometry is ________.",
+            "options": [
+                "(n, 0)",
+                "(n, m)",
+                "(n, 1)",
+                "(n, n)"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "Armchair carbon nanotubes are identified by the chiral indices where n = m, denoted as (n, n).",
+            "answer_source": "generated",
+            "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
+        },
+        {
+            "question_number": "Q20",
+            "question_text": "________ is the fabrication process for carbon nanotubes carried out at vacuum conditions.",
+            "options": [
+                "Chemical vapour deposition",
+                "Arc-discharge method",
+                "Powder method",
+                "Physical vapour deposition"
+            ],
+            "correct_option": "D",
+            "marks": 1,
+            "answer": "PVD (evaporation, sputtering, laser ablation) is carried out under high vacuum.",
+            "answer_source": "generated",
+            "chapter": "Unit 5-Low Dimensional Semiconductor Materials"
+        }
+    ]
+}
