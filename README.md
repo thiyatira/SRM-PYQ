@@ -21,6 +21,7 @@ A modern, fast, and comprehensive web application designed for SRM Institute of 
   - `21CSC201J` — Data Structures & Algorithms (DSA)
   - `21CSC203P` — Advanced Programming Practice (APP)
   - `21MAB102T` — Advanced Calculus & Complex Analysis
+  - `21MAB201T` — Transforms & Boundary Value Problems (TBVP)
   - `21PYB102J` — Semiconductor Physics
   - `21CYB101J` — Chemistry
   - `21EES101T` — Basic Electrical & Electronics Engineering (BEEE)

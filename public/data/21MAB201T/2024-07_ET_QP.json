@@ -1,0 +1,403 @@
+{
+  "formal_filename": "2024-07_ET_QP.json",
+  "paper_title": "B.Tech. / M.Tech. (Integrated) DEGREE EXAMINATION, JULY 2024 - 21MAB201T - TRANSFORMS AND BOUNDARY VALUE PROBLEMS",
+  "source": "2024-07 ET",
+  "questions": [
+    {
+      "question_number": "1",
+      "question_text": "The complete integral of $p=q$ is",
+      "options": [
+        "$z=ax+by$",
+        "$z=a(x+y)+b$",
+        "$z=ax+by+c$",
+        "$z=ax-by+a$"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "Setting $p=q=a$ and integrating gives $z=a(x+y)+b$, with two arbitrary constants.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "2",
+      "question_text": "The complementary function of $(D^2+DD'-2D'^2)z=x^2y$ is",
+      "options": [
+        "$z=\\phi_1(y-x)+\\phi_2(y-2x)$",
+        "$z=\\phi_1(y+x)+\\phi_2(y+2x)$",
+        "$z=\\phi_1(y-x)+\\phi_2(y+2x)$",
+        "$z=\\phi_1(y+x)+\\phi_2(y-2x)$"
+      ],
+      "correct_option": "D",
+      "marks": 1,
+      "answer": "The operator factors as $(D-D')(D+2D')$, giving characteristic arguments $y+x$ and $y-2x$.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "3",
+      "question_text": "The particular integral of $(D^2-2DD')z=e^{2x}$ is",
+      "options": [
+        "$e^{-2x}/2$",
+        "$xe^{-2x}/4$",
+        "$x^2e^{2x}/2$",
+        "$x^2e^{2x}/4$"
+      ],
+      "correct_option": null,
+      "marks": 1,
+      "answer": "Since $D'$ annihilates $e^{2x}$, a particular integral is $e^{2x}/4$. None of the printed options gives this result.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "4",
+      "question_text": "The complete integral of $z=px+qy+2pq$ is",
+      "options": [
+        "$z=px+qy+ab$",
+        "$z=ax+by+2ab$",
+        "$z=ax+by+2pq$",
+        "$z=px+qy+2pq$"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "This is a Clairaut equation: put $p=a$, $q=b$ to obtain the two-parameter integral.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "5",
+      "question_text": "The period of the periodic function $\\sin x$ is",
+      "options": [
+        "$\\pi$",
+        "$2\\pi$",
+        "$3\\pi$",
+        "0"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "The least positive period of $\\sin x$ is $2\\pi$.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "6",
+      "question_text": "If $f(x)$ is even then $\\int_{-a}^{a}f(x)\\,dx$ is",
+      "options": [
+        "$0$",
+        "$2\\int_0^a f(x)\\,dx$",
+        "$2\\int_{-a}^0 f(x)\\,dx$",
+        "$\\int_0^a f(x)\\,dx$"
+      ],
+      "correct_option": "B,C",
+      "marks": 1,
+      "answer": "Evenness makes the integrals over $[-a,0]$ and $[0,a]$ equal, so both printed expressions are correct.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "7",
+      "question_text": "The RMS value of $f(x)=x$ in $-1\\leq x\\leq1$ is",
+      "options": [
+        "$1$",
+        "$0$",
+        "$1/\\sqrt3$",
+        "$-1$"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "The RMS value is $\\sqrt{\\frac12\\int_{-1}^1 x^2\\,dx}=1/\\sqrt3$.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "8",
+      "question_text": "Half range cosine series for $f(x)$ in $(0,\\pi)$ is",
+      "options": [
+        "$\\frac{a_0}{2}+\\sum_{n=1}^{\\infty}a_n\\cos nx$",
+        "$\\frac{a_0^2}{4}+\\frac12\\sum_{n=1}^{\\infty}(a_n^2+b_n^2)$",
+        "$\\sum_{n=1}^{\\infty}b_n\\sin nx$",
+        "$\\sum_{n=1}^{\\infty}a_n\\cos nx$"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "The even extension has a constant term and cosine terms; its sine coefficients vanish.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "9",
+      "question_text": "In wave equation $\\frac{\\partial^2y}{\\partial t^2}=\\alpha^2\\frac{\\partial^2y}{\\partial x^2}$ where $\\alpha^2$ stands for",
+      "options": [
+        "$T/m$",
+        "$k/c$",
+        "$m/T$",
+        "$k/m$"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "For a stretched string with tension $T$ and mass per unit length $m$, wave speed squared is $T/m$.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "10",
+      "question_text": "One dimensional heat equation is used to find",
+      "options": [
+        "Density",
+        "Temperature distribution",
+        "Time",
+        "Displacement"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "The heat equation describes the evolution of temperature along the bar.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "11",
+      "question_text": "A string is stretched between two fixed points $x=0$ and $x=l$. The initial conditions are",
+      "options": [
+        "$y(0,t)=y(x,t)=0$",
+        "$y(x,0)=\\frac{\\partial y}{\\partial t}(x,0)=0$",
+        "$y(0,t)=y(l,t)=0$",
+        "$\\frac{\\partial y}{\\partial t}(0,t)=\\frac{\\partial y}{\\partial t}(l,t)=0$"
+      ],
+      "correct_option": null,
+      "marks": 1,
+      "answer": "Fixed ends imply the boundary conditions $y(0,t)=y(l,t)=0$ (option C), and hence zero endpoint velocities if differentiable. They do not determine the initial displacement and velocity throughout the string; the printed question says initial conditions.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "12",
+      "question_text": "How many initial and boundary conditions are required to solve $\\frac{\\partial^2y}{\\partial t^2}=\\alpha^2\\frac{\\partial^2y}{\\partial x^2}$",
+      "options": [
+        "Two",
+        "Three",
+        "Five",
+        "Four"
+      ],
+      "correct_option": "D",
+      "marks": 1,
+      "answer": "A finite string problem normally requires two initial conditions (displacement and velocity) and two endpoint boundary conditions.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "13",
+      "question_text": "The Fourier transform of a function $f(x)$ is",
+      "options": [
+        "$\\frac1{\\sqrt{2\\pi}}\\int_{-\\infty}^{\\infty} f(x)e^{ist}\\,dt$",
+        "$\\frac1{\\sqrt{2\\pi}}\\int_{-\\infty}^{\\infty} f(x)e^{isx}\\,dx$",
+        "$\\frac1{\\sqrt{2\\pi}}\\int_{-\\infty}^{\\infty} f(t)e^{isx}\\,dx$",
+        "$\\frac1{\\sqrt{2\\pi}}\\int_{-\\infty}^{\\infty} f(s)e^{isx}\\,dx$"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "With the positive-exponent convention used in the paper, the integration variable is $x$ and the transform variable is $s$.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "14",
+      "question_text": "$F[f(x)\\cos ax]=$",
+      "options": [
+        "$\\frac12[F(a)+F(s-a)]$",
+        "$\\frac12[F(as)+F(s+a)]$",
+        "$\\frac12[F(s+a)+F(s-a)]$",
+        "$\\frac12[F(s+a)-F(s-a)]$"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "Use $\\cos ax=(e^{iax}+e^{-iax})/2$ and the frequency-shift property.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "15",
+      "question_text": "$F[f(x)*g(x)]=$",
+      "options": [
+        "$F(s)+G(s)$",
+        "$F(s)-G(s)$",
+        "$F(s)G(s)$",
+        "$F(s)/G(s)$"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "The convolution theorem gives the product when convolution is normalized consistently with the symmetric transform. For the usual unnormalized integral convolution and the symmetric transform of question 13, the result instead has a factor $\\sqrt{2\\pi}$.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "16",
+      "question_text": "Under Fourier cosine transform $f(x)=1/\\sqrt{x}$ is",
+      "options": [
+        "Complex",
+        "Inverse function",
+        "Cosine function",
+        "Self-reciprocal function"
+      ],
+      "correct_option": "D",
+      "marks": 1,
+      "answer": "Using the symmetric cosine transform, $\\sqrt{2/\\pi}\\int_0^\\infty x^{-1/2}\\cos(sx)\\,dx=s^{-1/2}$ for $s>0$.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "17",
+      "question_text": "Radius of curvature of $Z[a^n]$ is",
+      "options": [
+        "$|z|<a$",
+        "$|z|>a$",
+        "$|z|>|a|$",
+        "$|z|<|a|$"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "The geometric series $\\sum_{n=0}^\\infty a^nz^{-n}$ converges for $|z|>|a|$. The paper appears to mean region of convergence.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Z-Transforms"
+    },
+    {
+      "question_number": "18",
+      "question_text": "$Z[e^{-5n}]=$",
+      "options": [
+        "$\\frac{z}{z+e^{-5}}$",
+        "$\\frac{z}{z-e^{-5}}$",
+        "$\\frac{z}{z-e^{-1}}$",
+        "$\\frac{z}{z+e^{-1}}$"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "Sum the geometric series $\\sum_{n\\ge0}(e^{-5}/z)^n$ for $|z|>e^{-5}$.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Z-Transforms"
+    },
+    {
+      "question_number": "19",
+      "question_text": "$Z^{-1}\\left[\\frac1{z-a}\\right]$",
+      "options": [
+        "$na^{n-1}$",
+        "$a^{n+1}$",
+        "$a^{n-1}$",
+        "$na^n$"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "Expand $1/(z-a)=\\sum_{n=1}^{\\infty}a^{n-1}z^{-n}$ for $|z|>|a|$. The sequence is zero at $n=0$ and $a^{n-1}$ for $n\\ge1$.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Z-Transforms"
+    },
+    {
+      "question_number": "20",
+      "question_text": "The difference equation formed by eliminating $a$ in $u_n=a2^{n+1}$ is",
+      "options": [
+        "$u_{n+1}-2u_n=0$",
+        "$u_{n+1}=0$",
+        "$u_{n+1}-u_n=0$",
+        "$u_n=0$"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "$u_{n+1}=a2^{n+2}=2u_n$.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Z-Transforms"
+    },
+    {
+      "question_number": "21. a.",
+      "question_text": "Solve $x(y^2+z)p-y(x^2+z)q=z(x^2-y^2)$.",
+      "marks": 8,
+      "answer": "The characteristic equations are $\\frac{dx}{x(y^2+z)}=\\frac{dy}{-y(x^2+z)}=\\frac{dz}{z(x^2-y^2)}$. Along characteristics, $d(xyz)/ds=0$ and $d(x^2+y^2-2z)/ds=0$. Hence the general solution is $\\Phi(xyz,x^2+y^2-2z)=0$, for an arbitrary function $\\Phi$.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "21. b.",
+      "question_text": "Solve $(D^2+3DD'-4D'^2)z=\\sin y$.",
+      "marks": 8,
+      "answer": "The operator factors as $(D-D')(D+4D')$, so the complementary function is $\\phi_1(y+x)+\\phi_2(y-4x)$. A particular integral is $\\sin y/4$, since $-4D'^2(\\sin y/4)=\\sin y$. Thus $z=\\phi_1(y+x)+\\phi_2(y-4x)+\\sin y/4$.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "22. a.",
+      "question_text": "Express $f(x)=(\\pi-x)^2$ as a Fourier series of period $2\\pi$ in the interval $0<x<2\\pi$.",
+      "marks": 8,
+      "answer": "With $u=x-\\pi$, the standard even series for $u^2$ on $(-\\pi,\\pi)$ is $u^2=\\pi^2/3+4\\sum_{n=1}^{\\infty}(-1)^n\\cos(nu)/n^2$. Since $\\cos(n(x-\\pi))=(-1)^n\\cos nx$, the result is $$(\\pi-x)^2=\\frac{\\pi^2}{3}+4\\sum_{n=1}^{\\infty}\\frac{\\cos nx}{n^2}.$$ ",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "22. b.",
+      "question_text": "Expand $f(x)=x$ as a half range cosine series in $(0,l)$.",
+      "marks": 8,
+      "answer": "$a_0=\\frac2l\\int_0^l x\\,dx=l$ and $a_n=\\frac2l\\int_0^l x\\cos(n\\pi x/l)\\,dx=\\frac{2l[(-1)^n-1]}{n^2\\pi^2}$. Therefore $$x=\\frac l2-\\frac{4l}{\\pi^2}\\sum_{j=0}^{\\infty}\\frac{\\cos((2j+1)\\pi x/l)}{(2j+1)^2}.$$ ",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "23. a.",
+      "question_text": "A tightly stretched string of length $l$ has its ends fastened at $x=0$, $x=l$. At $t=0$, the string is in the form $f(x)=k(lx-x^2)$ and then released. Find the displacement at any point on the string at a distance $x$ from one end and at any time $t>0$.",
+      "marks": 8,
+      "answer": "Let the wave speed be $c$. Zero endpoint displacement and zero initial velocity give $y=\\sum_{n\\ge1}b_n\\sin(n\\pi x/l)\\cos(n\\pi ct/l)$, with $b_n=\\frac{2k}{l}\\int_0^l(lx-x^2)\\sin(n\\pi x/l)\\,dx=\\frac{4kl^2[1-(-1)^n]}{n^3\\pi^3}$. Hence $$y(x,t)=\\frac{8kl^2}{\\pi^3}\\sum_{j=0}^\\infty\\frac{\\sin((2j+1)\\pi x/l)\\cos((2j+1)\\pi ct/l)}{(2j+1)^3}.$$ ",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "23. b.",
+      "question_text": "Heat flows through a uniform bar of length $l$ which has its side insulated and the temperature at the ends kept at zero. If the initial temperature at the interior points of the bar is given by $x^3$, $0<x<l$. Find the temperature distribution in the bar at time $t$.",
+      "marks": 8,
+      "answer": "For $u_t=\\kappa u_{xx}$ with zero end temperatures, $u=\\sum_{n\\ge1}b_n\\sin(n\\pi x/l)e^{-\\kappa n^2\\pi^2t/l^2}$. Integrating by parts gives $b_n=\\frac2l\\int_0^l x^3\\sin(n\\pi x/l)\\,dx=2l^3(-1)^n\\left(-\\frac1{n\\pi}+\\frac6{n^3\\pi^3}\\right)$. Substituting these coefficients gives the temperature distribution for $t>0$; the initial profile is attained at interior points as $t\\downarrow0$.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "24. a.",
+      "question_text": "Evaluate $\\int_0^\\infty\\frac{dx}{(x^2+a^2)(x^2+b^2)}$ using Fourier transform methods.",
+      "marks": 8,
+      "answer": "For $a,b>0$, the symmetric cosine transform of $e^{-at}$ is $F_c(s)=\\sqrt{2/\\pi}\\,a/(a^2+s^2)$, and similarly for $b$. Parseval gives $\\int_0^\\infty F_c(s)G_c(s)\\,ds=\\int_0^\\infty e^{-(a+b)t}\\,dt=1/(a+b)$. Thus $$\\int_0^\\infty\\frac{ds}{(s^2+a^2)(s^2+b^2)}=\\frac{\\pi}{2ab(a+b)}.$$ For nonzero real parameters replace $a,b$ by their absolute values.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "24. b.",
+      "question_text": "Use Parseval’s identity and evaluate $\\int_0^\\infty\\frac{x^2\\,dx}{(x^2+a^2)^2}$.",
+      "marks": 8,
+      "answer": "For $a>0$, the symmetric sine transform of $e^{-at}$ is $F_s(s)=\\sqrt{2/\\pi}\\,s/(a^2+s^2)$. Parseval gives $\\frac2\\pi\\int_0^\\infty\\frac{s^2}{(s^2+a^2)^2}\\,ds=\\int_0^\\infty e^{-2at}\\,dt=1/(2a)$. Therefore the integral equals $\\pi/(4a)$, or $\\pi/(4|a|)$ for nonzero real $a$.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "25. a.",
+      "question_text": "Find the Z-transform of $\\frac1{(n+1)(n+2)}$, $n>0$.",
+      "marks": 8,
+      "answer": "Write $1/[(n+1)(n+2)]=1/(n+1)-1/(n+2)$ and put $r=z^{-1}$. The sum from $n=0$ is $\\sum_{n=0}^\\infty r^n/[(n+1)(n+2)]=[r+(1-r)\\log(1-r)]/r^2$. Thus the standard unilateral transform, if the displayed formula is also used at $n=0$, is $z+z(z-1)\\log(1-1/z)$ for $|z|>1$. If the stated $n>0$ means the sequence starts at $n=1$ with zero at $n=0$, subtract $1/2$.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Z-Transforms"
+    },
+    {
+      "question_number": "25. b.",
+      "question_text": "Find $Z^{-1}\\left[\\frac{z^2+z}{(z-1)^3}\\right]$ by long division method.",
+      "marks": 8,
+      "answer": "Dividing in powers of $z^{-1}$ gives $\\frac{z^2+z}{(z-1)^3}=z^{-1}+4z^{-2}+9z^{-3}+16z^{-4}+\\cdots$. Therefore $Z^{-1}=n^2$ for $n\\ge0$ (with region $|z|>1$).",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Z-Transforms"
+    },
+    {
+      "question_number": "26.",
+      "question_text": "Determine the first three harmonics of the Fourier series for the following data: $x=0,\\pi/3,2\\pi/3,\\pi,4\\pi/3,5\\pi/3$ and $y=1.98,1.30,1.05,1.30,-0.88,-0.25$, respectively.",
+      "marks": 15,
+      "answer": "For six equally spaced samples, use $a_0=\\frac13\\sum y_j=1.5$, $a_n=\\frac13\\sum y_j\\cos(nx_j)$ and $b_n=\\frac13\\sum y_j\\sin(nx_j)$ for $n=1,2$. This yields $a_1=0.37333$, $b_1=1.00459$, $a_2=0.89$, $b_2=-0.10970$. The third harmonic is the Nyquist term: its coefficient is $\\frac16\\sum(-1)^j y_j=-0.03333$, and $\\sin(3x_j)=0$ for every sample. Hence the interpolating series is $$y\\approx0.75+0.37333\\cos x+1.00459\\sin x+0.89\\cos2x-0.10970\\sin2x-0.03333\\cos3x.$$ The third sine coefficient cannot be determined from these samples.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "27.",
+      "question_text": "A rod 30 cm long has its ends A and B kept at 20°C and 80°C respectively, until steady state conditions prevail. The temperature at each end is then suddenly reduced to 0°C and kept so. Find the resulting temperature function $u(x,t)$, taking $x=0$ at A.",
+      "marks": 15,
+      "answer": "Before cooling, the steady profile is $u(x,0)=20+2x$ for $0<x<30$. With $u_t=\\kappa u_{xx}$ and zero boundary temperatures, expand this profile in sines: $b_n=\\frac{2}{30}\\int_0^{30}(20+2x)\\sin(n\\pi x/30)\\,dx=\\frac{40-160(-1)^n}{n\\pi}$. Thus $$u(x,t)=\\sum_{n=1}^{\\infty}\\frac{40-160(-1)^n}{n\\pi}\\sin\\left(\\frac{n\\pi x}{30}\\right)e^{-\\kappa n^2\\pi^2t/900},\\quad 0<x<30,\\ t>0.$$ Here $\\kappa$ is the thermal diffusivity.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    }
+  ]
+}

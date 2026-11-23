@@ -1,0 +1,403 @@
+{
+  "formal_filename": "2025-07_ET_QP.json",
+  "paper_title": "B.Tech. / M.Tech. (Integrated) DEGREE EXAMINATION, JULY 2025 - 21MAB201T - TRANSFORMS AND BOUNDARY VALUE PROBLEMS",
+  "source": "2025-07 ET",
+  "questions": [
+    {
+      "question_number": "1",
+      "question_text": "The partial differential equation formed by eliminating arbitrary constant is $z=(x+a)(y+b)$.",
+      "options": [
+        "$z=p+q$",
+        "$z=p-q$",
+        "$z=p/q$",
+        "$z=pq$"
+      ],
+      "correct_option": "D",
+      "marks": 1,
+      "answer": "Differentiation gives $p=y+b$ and $q=x+a$, hence $z=pq$.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "2",
+      "question_text": "The general integral of $z=xp+yq$ is",
+      "options": [
+        "$\\Phi(x+y,y+z)=0$",
+        "$\\Phi\\left(\\frac{x}{y}+\\frac{y}{z}\\right)=0$",
+        "$\\Phi\\left(x-y,\\frac{x}{z}\\right)=0$",
+        "$\\Phi\\left(\\frac{x}{y},y+z\\right)=0$"
+      ],
+      "correct_option": null,
+      "marks": 1,
+      "answer": "The characteristic equations are $dx/x=dy/y=dz/z$, giving the general integral $\\Phi(x/y,y/z)=0$. The printed option B has a plus sign instead of a comma and describes only a restricted family, so no printed option gives the general integral.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "3",
+      "question_text": "The particular integral of $(D^3-2D^2D\\prime)z=e^{x+2y}$ is",
+      "options": [
+        "$e^{x+2y}/3$",
+        "$e^x/3$",
+        "$e^{x+2y}$",
+        "$-e^{x+2y}/3$"
+      ],
+      "correct_option": "D",
+      "marks": 1,
+      "answer": "Substituting $(D,D\\prime)=(1,2)$ gives $1-4=-3$, so the particular integral is $-e^{x+2y}/3$.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "4",
+      "question_text": "Solve $(D^3-7DD\\prime^2-6D\\prime^3)z=0$.",
+      "options": [
+        "$z=f_1(y-x)+f_2(y-2x)+f_3(y+3x)$",
+        "$z=f_1(y-x)+f_2(y+2x)+f_3(y-3x)$",
+        "$z=f_1(y+x)+f_2(y-2x)+f_3(y+3x)$",
+        "$z=f_1(y+x)+f_2(y+2x)+f_3(y+3x)$"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "$m^3-7m-6=(m+1)(m+2)(m-3)$; each factor $D-mD\\prime$ contributes an arbitrary function of $y+mx$.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "5",
+      "question_text": "$\\tan x$ is a periodic function with period",
+      "options": [
+        "$2\\pi$",
+        "$\\pi$",
+        "$3\\pi$",
+        "$\\pi/2$"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "$\\tan(x+\\pi)=\\tan x$ wherever defined; its fundamental period is $\\pi$.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "6",
+      "question_text": "The constant $a_0$ of the Fourier series for the function $f(x)=k$, $0\\leq x\\leq 2\\pi$ is",
+      "options": [
+        "$k$",
+        "$2k$",
+        "$0$",
+        "$k/2$"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "With the series convention $a_0/2+\\sum(a_n\\cos nx+b_n\\sin nx)$, $a_0=\\pi^{-1}\\int_0^{2\\pi}k\\,dx=2k$.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "7",
+      "question_text": "The RMS value of $f(x)$ in $a\\leq x\\leq b$ is",
+      "options": [
+        "$\\sqrt{\\frac{\\int_a^b[f(x)]^2\\,dx}{b-a}}$",
+        "$0$",
+        "$\\sqrt{\\frac{\\int_a^b[f(x)]^2\\,dx}{b+a}}$",
+        "$\\sqrt{\\frac{\\sqrt{\\int_a^b f(x)\\,dx}}{b-a}}$"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "Take the mean of $f^2$ over the interval and then its nonnegative square root.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "8",
+      "question_text": "For half range cosine series of $f(x)=\\cos x$ in $(0,\\pi)$ the value of $a_0$ is",
+      "options": [
+        "$4$",
+        "$2/\\pi$",
+        "$4/\\pi$",
+        "$0$"
+      ],
+      "correct_option": "D",
+      "marks": 1,
+      "answer": "$a_0=(2/\\pi)\\int_0^\\pi\\cos x\\,dx=0$.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "9",
+      "question_text": "How many initial and boundary conditions are required to solve $\\frac{\\partial^2 y}{\\partial t^2}=a^2\\frac{\\partial^2 y}{\\partial x^2}$?",
+      "options": [
+        "Two",
+        "Three",
+        "Five",
+        "Four"
+      ],
+      "correct_option": "D",
+      "marks": 1,
+      "answer": "For a finite string one normally specifies initial displacement and velocity and one boundary condition at each end: four conditions.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "10",
+      "question_text": "In heat equation $\\frac{\\partial u}{\\partial t}=\\alpha^2\\frac{\\partial^2u}{\\partial x^2}$, $\\alpha^2$ stands for",
+      "options": [
+        "$k/\\rho$",
+        "$T/m$",
+        "$k/(\\rho c)$",
+        "$k/c$"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "Thermal diffusivity is $\\alpha^2=k/(\\rho c)$, where $k$ is conductivity, $\\rho$ density and $c$ specific heat.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "11",
+      "question_text": "One dimensional wave equation is used to find",
+      "options": [
+        "Temperature",
+        "Displacement",
+        "Time",
+        "Mass"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "For a vibrating string, its dependent variable gives the transverse displacement as a function of position and time.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "12",
+      "question_text": "The steady state temperature of a rod of length. Whose ends are kept at $30^\\circ$ and $40^\\circ$ is",
+      "options": [
+        "$u=10x/l+30$",
+        "$u=20x/l+30$",
+        "$u=10x/l+20$",
+        "$u=10x/l$"
+      ],
+      "correct_option": "A",
+      "marks": 1,
+      "answer": "At steady state $u_{xx}=0$. Using $u(0)=30$ and $u(l)=40$ gives $u=30+10x/l$.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "13",
+      "question_text": "The Fourier cosine transform of $e^{-ax}$ is",
+      "options": [
+        "$\\sqrt{2/\\pi}\\,a/(a^2+x^2)$",
+        "$\\sqrt{1/\\pi}\\,s/(s^2+a^2)$",
+        "$\\sqrt{1/\\pi}\\,a/(s^2+a^2)$",
+        "$\\sqrt{2/\\pi}\\,a/(s^2+a^2)$"
+      ],
+      "correct_option": "D",
+      "marks": 1,
+      "answer": "For $a>0$, $F_c(s)=\\sqrt{2/\\pi}\\int_0^\\infty e^{-ax}\\cos(sx)\\,dx=\\sqrt{2/\\pi}\\,a/(a^2+s^2)$.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "14",
+      "question_text": "$F[f(x)\\cos ax]=$",
+      "options": [
+        "$\\frac12[F(a)+F(s-a)]$",
+        "$\\frac12[F(as)+F(s+a)]$",
+        "$\\frac12[F(s+a)+F(s-a)]$",
+        "$\\frac12[F(s+a)-F(s-a)]$"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "Use $\\cos ax=(e^{iax}+e^{-iax})/2$ and the frequency-shift property.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "15",
+      "question_text": "$F[e^{iax}f(x)]=$",
+      "options": [
+        "$F(s+a)$",
+        "$F(s-a)$",
+        "$F(sa)$",
+        "$F(s/a)$"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "With the convention $F(s)=\\int_{-\\infty}^{\\infty} f(x)e^{-isx}\\,dx$, combining exponentials gives $F(s-a)$. The sign reverses under the opposite Fourier convention.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "16",
+      "question_text": "$F[f(x)*g(x)]=$",
+      "options": [
+        "$F(s)+G(s)$",
+        "$F(s)-G(s)$",
+        "$F(s)G(s)$",
+        "$F(s)/G(s)$"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "For the unnormalized Fourier transform and standard convolution, the convolution theorem gives $F(s)G(s)$. Other normalizations introduce a constant factor.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "17",
+      "question_text": "$Z\\left[\\sin\\frac{n\\pi}{2}\\right]=$",
+      "options": [
+        "$z^2/(z^2-1)$",
+        "$z/(z^2+4)$",
+        "$z/(z^2+1)$",
+        "$z^2/(z^2+1)$"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "$Z\\{\\sin n\\theta\\}=z\\sin\\theta/(z^2-2z\\cos\\theta+1)$; set $\\theta=\\pi/2$.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Z-Transforms"
+    },
+    {
+      "question_number": "18",
+      "question_text": "Find $Z\\left[1/7^n\\right]$.",
+      "options": [
+        "$7z/(z-1)$",
+        "$7z/(7z-1)$",
+        "$z/(7z-1)$",
+        "$z/(z-1)$"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "The geometric series gives $Z\\{(1/7)^n\\}=z/(z-1/7)=7z/(7z-1)$ for $|z|>1/7$.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Z-Transforms"
+    },
+    {
+      "question_number": "19",
+      "question_text": "$Z^{-1}(e^{1/z})=$",
+      "options": [
+        "$1/(n+1)$",
+        "$1/(n+1)!$",
+        "$1/n!$",
+        "$1/n$"
+      ],
+      "correct_option": "C",
+      "marks": 1,
+      "answer": "$e^{1/z}=\\sum_{n=0}^\\infty z^{-n}/n!$, so the sequence is $1/n!$.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Z-Transforms"
+    },
+    {
+      "question_number": "20",
+      "question_text": "Find $Z^{-1}\\left[\\frac{z}{(z-1)^2}\\right]$.",
+      "options": [
+        "$n+1$",
+        "$n$",
+        "$n-1$",
+        "$1/n$"
+      ],
+      "correct_option": "B",
+      "marks": 1,
+      "answer": "$\\sum_{n=0}^\\infty nz^{-n}=z/(z-1)^2$ for $|z|>1$.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Z-Transforms"
+    },
+    {
+      "question_number": "21. a.",
+      "question_text": "Find the general solution $x(z^2-y^2)p+y(x^2-z^2)q=z(y^2-x^2)$.",
+      "marks": 8,
+      "answer": "The characteristic equations are $\\frac{dx}{x(z^2-y^2)}=\\frac{dy}{y(x^2-z^2)}=\\frac{dz}{z(y^2-x^2)}$. Along them, $d(x^2+y^2+z^2)=0$ and $d(xyz)=0$. Thus the general integral is $\\Phi(x^2+y^2+z^2,xyz)=0$, for arbitrary $\\Phi$.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "21. b.",
+      "question_text": "Solve $(D^2-2DD\\prime)z=x^3y+e^{2x}$.",
+      "marks": 8,
+      "answer": "The complementary function of $D(D-2D\\prime)$ is $f(y)+g(y+2x)$. A polynomial particular integral is $x^5y/20+x^6/60$, because applying $D^2-2DD\\prime$ yields $x^3y$; the exponential particular integral is $e^{2x}/4$. Hence $z=f(y)+g(y+2x)+x^5y/20+x^6/60+e^{2x}/4$.",
+      "answer_source": "generated",
+      "chapter": "Unit 1: Partial Differential Equations"
+    },
+    {
+      "question_number": "22. a.",
+      "question_text": "Expand $f(x)=(x-1)^2$ in $0<x<1$ in a Fourier sine series.",
+      "marks": 8,
+      "answer": "With $b_n=2\\int_0^1(1-x)^2\\sin(n\\pi x)\\,dx$, integration by parts gives $b_n=\\frac{2}{n\\pi}+\\frac{4((-1)^n-1)}{n^3\\pi^3}$. Therefore $(x-1)^2=\\sum_{n=1}^{\\infty}\\left[\\frac{2}{n\\pi}+\\frac{4((-1)^n-1)}{n^3\\pi^3}\\right]\\sin(n\\pi x)$ for $0<x<1$.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "22. b.",
+      "question_text": "Express $f(x)=x(\\pi-x)$, $0<x<\\pi$, as a Fourier sine series.",
+      "marks": 8,
+      "answer": "$b_n=\\frac{2}{\\pi}\\int_0^\\pi x(\\pi-x)\\sin(nx)\\,dx=\\frac{4(1-(-1)^n)}{\\pi n^3}$. Consequently $x(\\pi-x)=\\frac{8}{\\pi}\\sum_{j=0}^{\\infty}\\frac{\\sin((2j+1)x)}{(2j+1)^3}$.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    },
+    {
+      "question_number": "23. a.",
+      "question_text": "A tightly stretched string has its ends fixed at $x=0$ and $x=l$. Initially the string is in the form $y=kx(l-x)$, where $k$ is a constant, and then released form rest. Find the displacement at any point $x$ and any time $t>0$.",
+      "marks": 8,
+      "answer": "Let $c$ be the wave speed. The fixed-end wave solution is $y=\\sum_{n\\ge1}(A_n\\cos(n\\pi ct/l)+B_n\\sin(n\\pi ct/l))\\sin(n\\pi x/l)$. Release from rest gives $B_n=0$. From the initial shape, $A_n=\\frac{2k}{l}\\int_0^l x(l-x)\\sin(n\\pi x/l)\\,dx=\\frac{4kl^2(1-(-1)^n)}{n^3\\pi^3}$. Thus $y=\\frac{8kl^2}{\\pi^3}\\sum_{j=0}^\\infty\\frac{\\sin((2j+1)\\pi x/l)\\cos((2j+1)\\pi ct/l)}{(2j+1)^3}$.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "23. b.",
+      "question_text": "A rod of length $l$ has its end A and B kept at $0^\\circ\\mathrm{C}$ and $100^\\circ\\mathrm{C}$ until steady state conditions prevail. If the temperature at B is reduced suddenly to $0^\\circ\\mathrm{C}$ and kept so while that of A is maintained, find the temperature $u(x,t)$ at a distance $x$ from A and at time $t$.",
+      "marks": 8,
+      "answer": "Let $\\alpha^2$ be the thermal diffusivity. Before cooling, the steady temperature is $u(x,0)=100x/l$. Afterward $u(0,t)=u(l,t)=0$ and $u_t=\\alpha^2u_{xx}$. Separation of variables gives $u=\\sum_{n\\ge1}b_n\\sin(n\\pi x/l)e^{-\\alpha^2n^2\\pi^2t/l^2}$, with $b_n=(2/l)\\int_0^l(100x/l)\\sin(n\\pi x/l)\\,dx=200(-1)^{n+1}/(n\\pi)$. Substitute these coefficients into the series.",
+      "answer_source": "generated",
+      "chapter": "Unit 3: Applications of Partial Differential Equations"
+    },
+    {
+      "question_number": "24. a.",
+      "question_text": "Find $F_s(e^{-ax})$ and $F_c(e^{-ax})$ and hence derive the inversion formula.",
+      "marks": 8,
+      "answer": "For $a>0$ and $F_s(s)=\\sqrt{2/\\pi}\\int_0^\\infty f(x)\\sin(sx)\\,dx$, $F_c(s)=\\sqrt{2/\\pi}\\int_0^\\infty f(x)\\cos(sx)\\,dx$, direct integration yields $F_s(s)=\\sqrt{2/\\pi}\\,s/(a^2+s^2)$ and $F_c(s)=\\sqrt{2/\\pi}\\,a/(a^2+s^2)$. Fourier sine and cosine inversion give, for $x>0$, $e^{-ax}=\\frac{2}{\\pi}\\int_0^\\infty\\frac{s\\sin(sx)}{a^2+s^2}\\,ds=\\frac{2a}{\\pi}\\int_0^\\infty\\frac{\\cos(sx)}{a^2+s^2}\\,ds$.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "24. b.",
+      "question_text": "Prove that $e^{-x^2/2}$ is self-reciprocal under Fourier transforms.",
+      "marks": 8,
+      "answer": "Use the symmetric convention $F(s)=\\frac1{\\sqrt{2\\pi}}\\int_{-\\infty}^\\infty f(x)e^{-isx}\\,dx$. Let $I(s)=\\int_{-\\infty}^\\infty e^{-x^2/2}e^{-isx}\\,dx$. Integration by parts gives $I\\prime(s)=-sI(s)$, and the Gaussian integral gives $I(0)=\\sqrt{2\\pi}$. Thus $I(s)=\\sqrt{2\\pi}e^{-s^2/2}$ and $F(s)=e^{-s^2/2}$, the same function.",
+      "answer_source": "generated",
+      "chapter": "Unit 4: Fourier Transforms"
+    },
+    {
+      "question_number": "25. a.",
+      "question_text": "Find the inverse z-transform of $\\frac{1+2z^{-1}}{1-z^{-1}}$ by long division method.",
+      "marks": 8,
+      "answer": "Long division in $z^{-1}$ gives $1+3z^{-1}+3z^{-2}+3z^{-3}+\\cdots$ for $|z|>1$. Therefore $x_0=1$ and $x_n=3$ for $n\\ge1$.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Z-Transforms"
+    },
+    {
+      "question_number": "25. b.",
+      "question_text": "Find the inverse z-transform of $\\frac{4z^2-12z}{z^3-3z+2}$ by partial fraction method.",
+      "marks": 8,
+      "answer": "$z^3-3z+2=(z-1)^2(z+2)$. Decomposition in standard transform pairs gives $X(z)=\\frac{20}{9}\\frac{z}{z-1}-\\frac{8}{3}\\frac{z}{(z-1)^2}-\\frac{20}{9}\\frac{z}{z+2}$. For the unilateral transform, $x_n=\\frac{20}{9}-\\frac{8n}{3}-\\frac{20}{9}(-2)^n$, $n\\ge0$, with $|z|>2$.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Z-Transforms"
+    },
+    {
+      "question_number": "26.",
+      "question_text": "Solve $y_{n+2}-7y_{n+1}+12y_n=2^n$, given $y_0=0$, $y_1=0$ using Z transform method.",
+      "marks": 15,
+      "answer": "With $Y(z)=Z\\{y_n\\}$ and the stated initial values, $(z^2-7z+12)Y(z)=z/(z-2)$. Hence $Y=\\frac{z}{(z-2)(z-3)(z-4)}=\\frac12\\frac{z}{z-2}-\\frac{z}{z-3}+\\frac12\\frac{z}{z-4}$. Taking inverse transforms yields $y_n=\\frac12 2^n-3^n+\\frac12 4^n$, $n\\ge0$.",
+      "answer_source": "generated",
+      "chapter": "Unit 5: Z-Transforms"
+    },
+    {
+      "question_number": "27.",
+      "question_text": "Compute first three harmonics of the half-range cosine series of $y=f(x)$ from: $\\begin{array}{c|rrrrrr}x&0&1&2&3&4&5\\\\\\hline f(x)&4&8&15&7&6&2\\end{array}$.",
+      "marks": 15,
+      "answer": "The data alone do not uniquely determine the continuous Fourier coefficients; using the standard trapezoidal harmonic analysis on $0\\le x\\le5$, $a_n\\approx\\frac25[\\frac12 f(0)+\\sum_{j=1}^4f(j)\\cos(n\\pi j/5)+\\frac12f(5)(-1)^n]$. This gives $a_0=15.6$, $a_1=\\sqrt5-0.2\\approx2.0361$, $a_2=-(12+4\\sqrt5)/5\\approx-4.1889$, and $a_3=-\\sqrt5-0.2\\approx-2.4361$. Thus the estimated series through three harmonics is $7.8+2.0361\\cos(\\pi x/5)-4.1889\\cos(2\\pi x/5)-2.4361\\cos(3\\pi x/5)$.",
+      "answer_source": "generated",
+      "chapter": "Unit 2: Fourier Series"
+    }
+  ]
+}
